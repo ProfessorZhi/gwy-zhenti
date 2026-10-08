@@ -3059,6 +3059,10 @@ def cmd_export(args):
     print("  卷 %d | md %d | 图片 %d" % (rep.papers, rep.files, rep.images))
     if rep.skipped:
         print("  跳过 %d 项（详见报告）" % len(rep.skipped))
+    if rep.collided:
+        # 撞 slug：同一键在 xingcezhenti 侧有多名 ⇒ 只导了第一个，其余记在此。**必须显式打印** ——
+        # 它与「没导出」是两种事故，混在 skipped 里会让人以为只是上游缺文件（裁定 R-T8-1）。
+        print("  撞 slug 未导的卷名 %d 条（详见报告）" % len(rep.collided))
     return 0
 
 
@@ -3105,7 +3109,8 @@ cd D:/projects/gwy-zhenti/tools
 python -X utf8 -m gwyzhenti.cli export --catalog ../work/catalog --upstream "D:/projects/_gwy-upstream" --repo ".."
 python -X utf8 -m gwyzhenti.cli gate   --catalog ../work/catalog --upstream "D:/projects/_gwy-upstream" --repo ".."
 ```
-Expected: 六闸全 OK；`sources` 不含正文的卷（纯 linfukai186）列入 `skipped` 并在报告中如实列出。
+Expected: 六闸全 OK；`sources` 不含正文的卷（纯 linfukai186）列入 `skipped` 并在报告中如实列出；
+`collided` 非空时（撞 slug 的卷）**另行列出**，不得并入 `skipped` 一句带过（裁定 R-T8-1）。
 
 - [ ] **Step 4: 写交付报告（如实，不美化）**
 
