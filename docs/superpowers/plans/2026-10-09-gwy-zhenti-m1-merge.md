@@ -2972,13 +2972,38 @@ git commit -m "feat(tools): export / gate 子命令"
     `shengkao-shenlun`（808 键，**686 份省考申论真题**，2010–2026）。
     **它是 spec §9 所称「最大缺口」（申论）的实际目录源** ⇒ M1 段一**四类目全接入**；
     申论**正文**的导出仍排 M3。此源**无卷型字段、无卷级图片**。
-- **已识别、未接入**：`zzcc-nb/gongkao-tiku`（**行测题库为空**，实为申论源，归 M3）；
-  `shiwuooo/shangantong-papers-v2-c1/c2`（**行测**源，498 卷，2008–2026，HTML+webp，**独缺西藏**
-  ⇒ 不提升地域齐全，留作交叉验证与老年份纵深，归 M2）。
-- **同源 fork 家族**：`r1172464137/xingcezhenti` 等只算 1 个家族；`jangviktor-web/GongkaoNaoku`
-  与 `ERRRC/kaogongzhentizhengliu` 是 `xingcezhenti` 的**衍生物**（无新地区），不另接入；
-  `SGHCN0762/civil-country-exam-xingce`、`Yaoyuan-Zhang319/AdministrativeAptitudeTest` 为
-  **PDF-only**，按用户口径「PDF 只作补充」，不作为 md 源。
+- **已识别、未接入**：
+  - `ERRRC/kaogong-shuati`（47★，**已入库 750 MB**）—— 考公刷题 App，**本地 SQLite 题库**，
+    走 `node tools/reassemble-tiku.mjs` 从 `tiku.db.part-00..03`（94+94+94+34 MB）重组。**实测 schema**：
+    `materials.db` = `materials(paperId, pdf, title, idx, text)` **申论材料正文**；
+    `tiku.db` 的 `papers(id, subject, subjectName, category, name, …)` 中 `subject ∈ {xingce, shenlun, sydw}`、
+    `category` 是**归一化的地区/类别**（注释示例 `国考 / 山东省考 / 四川 …`），
+    `questions(id, questionId, paperId, …)` 的 `questionId` 是**粉笔原题 id**。
+    README 注明题库版权属粉笔等来源方、已获授权随仓分发、**请勿商用或二次分发**。
+    ⇒ **归 M3**（它的价值在申论材料 + 独立地区归一可做交叉验证）；M1 不接（749 MB 下载 + 分片重组 +
+    SQLite adapter 会拉长关键路径，且不改变 M1 任何交付物）。
+  - `ERRRC/kaogongzhentizhengliu`（725★）—— 同作者**按考点重组**的 判断推理 + 资料分析 部分：
+    22,380 md + 21,829 png，`10-真题/<模块>/<子类>/<qid> <考点>.md`（**文件名带 qid**，与
+    `xingcezhenti` 的 `<sub>qid NNNN · 考点</sub>` 同源）。**实测两仓 `90-图片/` 文件名：
+    交集 21,591 / 仅本仓 17,870 / 仅 zhengliu 有 238** ⇒ 有 238 张图是主源没有的。
+    ⇒ **归 M2**（两项价值：① 补图候选 ② 细粒度考点标签）。⚠️ 238 张是**两仓平行渲染**的差集，
+    **不等于「主源丢了 238 张」**，M2 必须逐题比对再定，不得直接宣称。
+  - `zzcc-nb/gongkao-tiku`（**行测题库为空**，实为申论源，归 M3）。
+  - `shiwuooo/shangantong-papers-v2-c1/c2`（**行测**源，498 卷，2008–2026，HTML+webp，**独缺西藏**
+    ⇒ 不提升地域齐全，留作交叉验证与老年份纵深，归 M2）。
+- **主源的图片来源底账（正面结论，须进交付报告）**：`xingcezhenti` 自带的 `图片缺失清单.txt`
+  **只有 2 行**（`90-图片/公式图/formula-4daf9a3762c10376.png` 与 `formula-2c7a9ff6774e3af2.png`）
+  ⇒ 上游自认**仅缺 2 张公式图、题目图 0 缺**。全仓图片 39,461 张（题目图 6,152 + 公式图 33,309）。
+  **交付报告必须照实写这 2 张缺图，不许声称「零缺失」。**
+- **同源 fork 家族**：`r1172464137/xingcezhenti` 等只算 1 个家族；
+  `jangviktor-web/GongkaoNaoku` 是 `xingcezhenti` 的**衍生物**（无新地区），不另接入。
+- **PDF-only（按用户口径「PDF 只作补充」，不作为 md 源）**：`SGHCN0762/civil-country-exam-xingce`、
+  `SGHCN0762/civil-provice-exam-xingce`（1,294 份 PDF、**0 个 md**、1.09 GB，**2003 年起**，
+  含云南/广东/广州/浙江 ⇒ 老年份纵深）、`Yaoyuan-Zhang319/AdministrativeAptitudeTest`。
+- **实测判为不接入**（避免以后重复搜）：`zhangxiangliang/civil-service-exam`（984★，专业大类**攻略**）、
+  `kuriv/civil-service-exam`（1005★，知识**思维导图**）、`dfds2989-source/kaogong-materials`（推广落地页）、
+  `andesiwangzhiyi-alt/gongkao-shangantong`（应用，90 道**原创**题）、`gesu14/xingce-practice`、
+  `steven-xjx/fenbi-xingce`、`Gnotes/gwy`、`TaiMaBenJi/knowledge-commons`（`exam/` 仅 59 项）。
 
 - [ ] **Step 2: 更新 tools/README.md**
 
