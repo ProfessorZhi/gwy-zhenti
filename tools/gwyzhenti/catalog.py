@@ -8,8 +8,7 @@ import json
 import os
 from dataclasses import dataclass, field
 
-from .model import PaperKey
-from .naming import LEVEL_GUOKAO, LEVEL_SHENGKAO, PROVINCES as _PROVINCES_BY_LEN, Unparsed, classify
+from .naming import LEVEL_GUOKAO, PROVINCES as _PROVINCES_BY_LEN, Unparsed, classify
 from .slug import paper_slug
 from .sources import ADAPTERS
 
@@ -50,7 +49,12 @@ def build(uproots, out_dir):
         all_excluded.extend(res.excluded)
 
     # —— 按 (层级, 地区, 年份, 科目, 卷型) 聚合；原始卷名保真 ——
+    # 每卷键的三种卷名视图（改动 B 的三件套）：
+    #   `title`   = **首个**被聚合进来的原始卷名（顺序由 `sorted(uproots)` 决定）；
+    #   `titles`  = 逐源家族保留的**全部不同**原始卷名（去重、排序后的列表），**不再后写覆盖**；
+    #   `dubious` = 非空 ⇒ 同源多名里存在**互不为子串**者 ⇒ 该键**可能撞 slug**（见 `_dubious`）。
     papers = {}
+    rep = Report()          # `records` 只在 classify **成功**时累加（评审 F3）
     for r in all_records:
         try:
             # 科目**取自记录**（各 adapter 已按目录/模块判定过）—— **不得在此写死**：
@@ -63,6 +67,7 @@ def build(uproots, out_dir):
             bucket = all_unparsed if exc.kind == Unparsed.UNPARSED else all_excluded
             bucket.append(dict(r, reason=exc.reason))
             continue
+        rep.records += 1                    # 只有**进了 catalog** 的记录才算（评审 F3）
         key = c.key
         p = papers.setdefault(key, {
             "title": r["title"], "nature": c.nature, "form": c.form,
@@ -70,14 +75,18 @@ def build(uproots, out_dir):
         })
         p["modules"][r["module"]] = p["modules"].get(r["module"], 0) + r["n_questions"]
         p["sources"].add(r["family"])
-        # **逐源保真**：同一卷键被多源提供时，各留各的原始卷名 —— 冲突页拿它当证据
-        p["titles"][r["family"]] = r["title"]
+        # **逐源保真**：同一卷键被多源提供时，各留各的原始卷名 —— 冲突页拿它当证据。
+        # 同一个（家族 × 卷键）被**多个不同卷名**喂入时**全部保留**（曾经的覆盖写法会丢名，
+        # 正是 F2 的最小复现），由 `_dubious` 再判这是命名变体还是疑似撞 slug。
+        p["titles"].setdefault(r["family"], set()).add(r["title"])
         if r.get("declared_questions", -1) > 0:
             p["declared"] += r["declared_questions"]
 
+    # 未入选的去向在**循环之后**才齐（兜底也会往桶里追加），此处按最终桶长回填。
+    rep.unparsed = len(all_unparsed)
+    rep.excluded = len(all_excluded)
+
     rows = []
-    rep = Report(records=len(all_records),
-                 unparsed=len(all_unparsed), excluded=len(all_excluded))
     for key in sorted(papers):
         p = papers[key]
         n = sum(p["modules"].values())
@@ -89,18 +98,19 @@ def build(uproots, out_dir):
             "modules": p["modules"], "n_questions": n,
             "declared_questions": p["declared"],
             "sources": sorted(p["sources"]),
-            "titles": {k: p["titles"][k] for k in sorted(p["titles"])},
+            "titles": {k: sorted(p["titles"][k]) for k in sorted(p["titles"])},
+            "dubious": _dubious(p["titles"]),
         })
         rep.papers += 1
         rep.questions += n
-        rep.by_region[key.region or "国考"] = rep.by_region.get(key.region or "国考", 0) + 1
+        rep.by_region[key.region or LEVEL_GUOKAO] = rep.by_region.get(key.region or LEVEL_GUOKAO, 0) + 1
         rep.by_subject[key.subject] = rep.by_subject.get(key.subject, 0) + 1
 
     _dump_jsonl(os.path.join(out_dir, "catalog.jsonl"), rows)
     _dump_jsonl(os.path.join(out_dir, "excluded.jsonl"), all_excluded)
     _dump_jsonl(os.path.join(out_dir, "unparsed.jsonl"), all_unparsed)
     _write_coverage(out_dir, rows, rep)
-    _write_gaps(out_dir, rows, rep)
+    _write_gaps(out_dir, rows)
     _write_conflicts(out_dir, rows)
     return rep
 
@@ -112,20 +122,47 @@ def _region_rows(rows):
     （实测有 `多省联考`）。不加这一项的话，这类卷存在于 `catalog.jsonl` 却在
     `coverage.md` / `gaps.md` 里**凭空消失** —— 恰好违背「地域齐全 > 时间齐全」的第一优先级。
     """
-    seen = {r["region"] or "国考" for r in rows}
-    extra = sorted(seen - {"国考"} - set(PROVINCES))
-    return ["国考"] + list(PROVINCES) + extra
+    seen = {r["region"] or LEVEL_GUOKAO for r in rows}
+    extra = sorted(seen - {LEVEL_GUOKAO} - set(PROVINCES))
+    return [LEVEL_GUOKAO] + list(PROVINCES) + extra
+
+
+def _subject_rows(rows):
+    """覆盖/缺口两表共用的科目行序列。
+
+    固定行 = `SUBJECTS`；**再加** catalog 里实际出现但不在 `SUBJECTS` 的科目（排序）。
+    同 `_region_rows` 的 `extra` 一个道理：不加这一项，第三科目等**非固定科目**的卷
+    存在于 `catalog.jsonl` 却在 `coverage.md` / `gaps.md` 里**凭空消失**（评审 F6）。
+    """
+    seen = {r["subject"] for r in rows}
+    extra = sorted(seen - set(SUBJECTS))
+    return list(SUBJECTS) + extra
+
+
+def _dubious(titles_by_family):
+    """同源多名里，若**存在两个互不为子串**的卷名 ⇒ 说明这可能是**两份不同的卷**被算成了同一个键。
+
+    只看「互不为子串」是为了把**命名变体**（`2015·北京市公考` ⊂ `2015·北京市公考《申论》题`）
+    放过 —— 那是同一份卷的两种写法。返回**全部**卷名（排序、去重），供人核对；空则返回 `[]`。
+    """
+    for fam in sorted(titles_by_family):
+        ts = sorted(titles_by_family[fam])
+        for i, a in enumerate(ts):
+            for b in ts[i + 1:]:
+                if a not in b and b not in a:
+                    return sorted({t for f in titles_by_family for t in titles_by_family[f]})
+    return []
 
 
 def _write_coverage(out_dir, rows, rep):
     have = {}
     for r in rows:
-        have.setdefault((r["region"] or "国考", r["subject"]), []).append(r["year"])
+        have.setdefault((r["region"] or LEVEL_GUOKAO, r["subject"]), []).append(r["year"])
     L = ["# 覆盖矩阵（地区 × 科目）", "",
          "> 由 catalog.jsonl 实算得出。**地域齐全 > 时间齐全**：先看地区行是否空白，再看年份纵深。", "",
          "| 地区 | 科目 | 卷数 | 年份跨度 | 年份数 |", "|---|---|---:|---|---:|"]
     for region in _region_rows(rows):
-        for subject in SUBJECTS:
+        for subject in _subject_rows(rows):
             ys = have.get((region, subject), [])
             if ys:
                 L.append("| %s | %s | %d | %s–%s | %d |"
@@ -136,19 +173,19 @@ def _write_coverage(out_dir, rows, rep):
     _w(os.path.join(out_dir, "coverage.md"), L)
 
 
-def _write_gaps(out_dir, rows, rep):
-    have = {(r["region"] or "国考", r["subject"]) for r in rows}
+def _write_gaps(out_dir, rows):
+    have = {(r["region"] or LEVEL_GUOKAO, r["subject"]) for r in rows}
     L = ["# 缺口清单", "",
          "> 排序 = **地域优先**、年份次之、**新卷先于老卷**。", ""]
     L.append("## 一、地区级缺口（最高优先）")
     for region in _region_rows(rows):
-        missing = [s for s in SUBJECTS if (region, s) not in have]
+        missing = [s for s in _subject_rows(rows) if (region, s) not in have]
         if missing:
             L.append("- **%s**：缺 %s" % (region, "、".join(missing)))
     L.append("")
     L.append("## 二、年次级缺口（地区齐了再看）")
     for region in _region_rows(rows):
-        ys = sorted({r["year"] for r in rows if (r["region"] or "国考") == region})
+        ys = sorted({r["year"] for r in rows if (r["region"] or LEVEL_GUOKAO) == region})
         if not ys:
             continue
         full = {str(y) for y in range(2016, 2027)}
@@ -170,7 +207,18 @@ def _write_conflicts(out_dir, rows):
         L.append("- `%s` ← %s（%d 题 / %d 模块）"
                  % (r["slug"], "、".join(r["sources"]), r["n_questions"], len(r["modules"])))
         for fam in r["sources"]:
-            L.append("    - `%s`：%s" % (fam, r["titles"].get(fam, "—")))
+            ts = r["titles"].get(fam)
+            L.append("    - `%s`：%s" % (fam, "、".join(ts) if ts else "—"))
+    L += ["", "## 同源多名（疑似撞 slug）", "",
+          "> 同一「来源家族 × 卷键」下有**互不为子串**的几个卷名 ⇒ 可能是**两份不同的卷**塌到了同一个",
+          "> `slug`。段二导出会因此把两份卷合进一个文件。**此处只列证，不裁决。**", ""]
+    doubtful = [r for r in rows if r["dubious"]]
+    if not doubtful:
+        L.append("（本次无。）")
+    for r in doubtful:
+        L.append("- `%s` ← %s" % (r["slug"], "、".join(r["sources"])))
+        for t in r["dubious"]:
+            L.append("    - `%s`" % t)
     _w(os.path.join(out_dir, "conflicts.md"), L)
 
 

@@ -4,11 +4,15 @@ import os
 import shutil
 import sys
 import tempfile
+import types
 import unittest
+from unittest import mock
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from gwyzhenti import catalog        # noqa: E402
+from gwyzhenti.model import PaperKey  # noqa: E402
+from gwyzhenti.naming import Classified, Unparsed  # noqa: E402
 
 FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures")
 
@@ -63,11 +67,14 @@ class TestCatalog(unittest.TestCase):
         # 简报原文写的是 ["常识判断","资料分析","数量关系"]（「逻辑序」），`sorted()` 给不出它。
         self.assertEqual(sorted(r["modules"]), ["常识判断", "数量关系", "资料分析"])
         self.assertEqual(r["sources"], ["linfukai186", "xingcezhenti"])
-        # **逐源保真**：两个源的原始卷名各自留存
+        # **逐源保真**：两个源的原始卷名各自留存。改动 B1 后 `titles` 的值是
+        # **排序去重的列表**（同源多名**全部**保留，不再后写覆盖），非单串。
         self.assertEqual(r["titles"], {
-            "linfukai186": "2016·423四川公务员考试《行测》题",
-            "xingcezhenti": "2016年423联考《行测》题（四川卷）",
+            "linfukai186": ["2016·423四川公务员考试《行测》题"],
+            "xingcezhenti": ["2016年423联考《行测》题（四川卷）"],
         })
+        # 该卷是**跨源合并**（两源两写法），同源下各只有一名 ⇒ **不是**疑似撞 slug。
+        self.assertEqual(r["dubious"], [])
 
     def test_gukao_rows_have_empty_region_field(self):
         # 国考卷在 `PaperKey.region` 里是**空串**（`classify` 的规定），报告里才折成 `国考`
@@ -114,3 +121,89 @@ class TestCatalog(unittest.TestCase):
         with open(os.path.join(self.out, "gaps.md"), encoding="utf-8") as fh:
             gaps = fh.read()
         self.assertIn("地域优先", gaps)
+
+
+class TestDubious(unittest.TestCase):
+    """`_dubious`：同源多名里「互不为子串」⇒ 疑似撞 slug；纯命名变体放过。"""
+
+    def test_naming_variant_is_not_dubious(self):
+        # 一个是另一个的子串 ⇒ 同一份卷的两种写法，不是撞 slug
+        self.assertEqual(
+            catalog._dubious({"linfukai186": {"2015·北京市公考", "2015·北京市公考《申论》题"}}),
+            [])
+
+    def test_single_name_is_not_dubious(self):
+        self.assertEqual(catalog._dubious({"x": {"某卷"}, "y": {"某卷"}}), [])
+
+    def test_non_substring_pair_is_dubious_and_returns_all_names(self):
+        # 互不为子串 ⇒ 疑似撞 slug；返回**全部**卷名（排序、去重）
+        self.assertEqual(catalog._dubious({"x": {"甲卷", "乙卷"}}), ["乙卷", "甲卷"])
+
+
+class TestFallbackRouting(unittest.TestCase):
+    """评审 F4：`build` 的 `classify` 兜底**必须按 `kind` 分流**，否则有意排除的卷会挤进 `unparsed`。
+
+    此前把兜底那句改成恒 `all_unparsed`，**74 条全绿、无人抓** —— 这两条就是那颗钉子。
+    """
+
+    def _run(self, exc):
+        out = tempfile.mkdtemp(prefix="gwycat-")
+        rec = {"family": "stub", "region": "四川", "year": "2016", "title": "某卷",
+               "subject": "行测", "module": "常识判断", "n_questions": 1}
+        stub = types.SimpleNamespace(
+            scan=lambda root: types.SimpleNamespace(records=[rec], unparsed=[], excluded=[]))
+        try:
+            with mock.patch.object(catalog, "ADAPTERS", {"stub": stub}), \
+                 mock.patch.object(catalog, "classify", side_effect=exc):
+                rep = catalog.build({"stub": "/x"}, out)
+            return (jl(os.path.join(out, "catalog.jsonl")),
+                    jl(os.path.join(out, "unparsed.jsonl")),
+                    jl(os.path.join(out, "excluded.jsonl")), rep)
+        finally:
+            shutil.rmtree(out, ignore_errors=True)
+
+    def test_excluded_kind_lands_in_excluded_bucket(self):
+        cat, unp, exc, rep = self._run(Unparsed("某新理由", "卷", kind=Unparsed.EXCLUDED))
+        self.assertEqual(cat, [])                                   # 没进 catalog
+        self.assertEqual(unp, [])                                   # 不得挤进缺陷桶
+        self.assertEqual(len(exc), 1)
+        self.assertEqual(exc[0]["reason"], "某新理由")
+        self.assertEqual((rep.records, rep.unparsed, rep.excluded), (0, 0, 1))
+
+    def test_unparsed_kind_lands_in_unparsed_bucket(self):
+        cat, unp, exc, rep = self._run(Unparsed("地区字段为空", "卷"))   # 默认 kind = UNPARSED
+        self.assertEqual(cat, [])
+        self.assertEqual(len(unp), 1)
+        self.assertEqual(unp[0]["reason"], "地区字段为空")
+        self.assertEqual(exc, [])
+        self.assertEqual((rep.records, rep.unparsed, rep.excluded), (0, 1, 0))
+
+
+class TestDubiousIntegration(unittest.TestCase):
+    """改动 B：`dubious` 进 `catalog.jsonl`，并在 `conflicts.md` 的「同源多名」一节逐条留证。"""
+
+    def test_same_source_two_names_is_flagged(self):
+        key = PaperKey("省考", "四川", "2016", "行测", "统考")
+        recs = [{"family": "stub", "region": "四川", "year": "2016", "title": t,
+                 "subject": "行测", "module": "常识判断", "n_questions": 1}
+                for t in ("甲卷", "乙卷")]
+        stub = types.SimpleNamespace(
+            scan=lambda root: types.SimpleNamespace(records=recs, unparsed=[], excluded=[]))
+        out = tempfile.mkdtemp(prefix="gwycat-")
+        try:
+            with mock.patch.object(catalog, "ADAPTERS", {"stub": stub}), \
+                 mock.patch.object(catalog, "classify",
+                                   return_value=Classified(key, "正式真题", "单独命题")):
+                catalog.build({"stub": "/x"}, out)
+            rows = jl(os.path.join(out, "catalog.jsonl"))
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]["title"], "甲卷")          # title = 首个被聚合进来的
+            self.assertEqual(rows[0]["titles"]["stub"], ["乙卷", "甲卷"])   # 全部保真、排序
+            self.assertEqual(rows[0]["dubious"], ["乙卷", "甲卷"])         # 疑似撞 slug
+            with open(os.path.join(out, "conflicts.md"), encoding="utf-8") as fh:
+                con = fh.read()
+            self.assertIn("同源多名（疑似撞 slug）", con)
+            self.assertIn("甲卷", con)
+            self.assertIn("乙卷", con)
+        finally:
+            shutil.rmtree(out, ignore_errors=True)

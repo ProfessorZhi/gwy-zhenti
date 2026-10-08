@@ -94,15 +94,22 @@ class TestClassify(unittest.TestCase):
                          "统考")
 
     def test_trailing_juan_is_absorbed_only_when_it_lands_in_the_vocabulary(self):
-        # 尾缀「卷」的容差是**窄的**：剥掉后能落回已声明词表才剥（`行政执法卷`→`行政执法`），
-        # 否则逐字保留 —— 真库里 `（省直）` 与 `（黑龙江省直卷）` 同时存在，宽泛地剥会让
-        # 两者收敛成同一个 ptype ⇒ 撞 slug ⇒ 丢卷。
+        # 尾缀「卷」的容差是**窄的**：剥掉后能落回已声明词表才剥（`行政执法卷`→`行政执法`、
+        # `省直卷`→`省直` —— 二者的干都已在词表内），否则**逐字保留**（`县级、乡镇统一卷` 的干
+        # `县级、乡镇统一` 不在词表 ⇒ 原样保留，免与别的卷塌成同一个 slug）。
         self.assertEqual(classify("国考", "2026", "…（行政执法卷网友回忆版）").key.ptype, "行政执法")
-        self.assertEqual(classify("黑龙江", "2016", "…（黑龙江省直卷）").key.ptype, "省直卷")
+        self.assertEqual(classify("河南", "2016", "…（县级、乡镇统一卷）").key.ptype, "县级、乡镇统一卷")
+        # **任务 6 修复轮改了这里的期望**：spec §卷型归一表 `:141-144` 实测列出的后缀词表**含 `省直`**
+        # （不含「省直卷」），故 `省直` 现在**在词表内** ⇒ `省直卷` 窄容差剥「卷」后落回 `省直`，
+        # 与 `（省直）` **归一为同一个值**。此前 ruling R-T2-2 靠「`省直` 不在词表」刻意让两者不同；
+        # 本次实测真库 `（省直）` 只在 2018、`（黑龙江省直卷）` 只在 2019，**从不同年** ⇒ 归一不撞 slug；
+        # 而归一前 linfukai 侧两者都回落 `统考`，反与 xingcezhenti 的 `省直`/`省直卷` **跨源撞键** ——
+        # 归一**消除**了那处撞键（见 task-6-fix1-report）。
+        self.assertEqual(classify("黑龙江", "2016", "…（黑龙江省直卷）").key.ptype, "省直")
         shi = classify("黑龙江", "2016", "…（省直）").key.ptype
         hl = classify("黑龙江", "2016", "…（黑龙江省直卷）").key.ptype
         self.assertEqual(shi, "省直")
-        self.assertNotEqual(shi, hl)
+        self.assertEqual(shi, hl)
 
     def test_compound_suffix_keeps_nature_word_out_of_ptype(self):
         # 性质词在复合后缀里是**尾巴** ⇒ 必须在 token 内部剔除，精确匹配会漏
