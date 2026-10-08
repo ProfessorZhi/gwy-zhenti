@@ -1,14 +1,40 @@
 # -*- coding: utf-8 -*-
+import io
 import os
+import shutil
 import sys
+import tempfile
 import unittest
 from unittest import mock
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from gwyzhenti import naming                                              # noqa: E402
+from gwyzhenti import naming, render                                      # noqa: E402
 from gwyzhenti.sources import xingcezhenti as xz_mod                      # noqa: E402
-from gwyzhenti.sources.xingcezhenti import XingceZhentiAdapter, MODULE_DIRS   # noqa: E402
+from gwyzhenti.sources.xingcezhenti import (                              # noqa: E402
+    MODULE_DIRS, NON_MODULE_DIRS, XingceZhentiAdapter,
+)
+
+# 一张最小可解析的模块 md：只要 frontmatter 能判出 (地区, 年份, 试卷) 就算一条 record。
+_OK_MD = """---
+试卷: "2016年423联考《行测》题（四川卷）"
+模块: "资料分析"
+地区: "四川"
+年份: "2016"
+题数: "1"
+---
+
+#### 第 1 题
+
+题干。
+
+- **A**. 甲
+
+**答案**：A
+
+---
+"""
+
 
 FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "xingcezhenti")
 ROUTING_FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)),
@@ -108,3 +134,56 @@ class TestRoutingFollowsKindNotReasonText(unittest.TestCase):
         self.assertEqual(len(res.records), 0)
         self.assertEqual(len(res.unparsed), 0)
         self.assertEqual(len(res.excluded), 3)
+
+
+class TestUnmappedDirsLedger(unittest.TestCase):
+    """整改 F2·C / 评审 I3：模块目录白名单外的目录**不得静默跳过**（只报不收）。
+
+    `MODULE_DIRS` 是硬编码 6 项、`scan()` 只遍历它 ⇒ 源根下任何别的目录此前被**静默**丢掉，
+    丢了多少题无人知。现在表外目录（跳过显式列出的噪声白名单）**记进 `unmapped` 台账**，
+    但它们的正文**不进** `records`（`catalog.jsonl` 的行数因此不变）。
+    """
+
+    def setUp(self):
+        self.root = tempfile.mkdtemp(prefix="gwyxz-up-")
+        self.addCleanup(shutil.rmtree, self.root, ignore_errors=True)
+
+    def _put(self, rel, text):
+        p = os.path.join(self.root, rel.replace("/", os.sep))
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        with io.open(p, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(text)
+
+    def test_module_dirs_agree_with_render_module_order(self):
+        """防两张硬编码表漂移：`MODULE_DIRS` 的目录后缀必须逐项等于 `render.MODULE_ORDER`。
+
+        此前这两张表各写一份、无人对账 —— 哪天加了第 7 个模块却忘了同步任一张，
+        段一与段二的模块口径就会分叉（导出漏模块 / 合并顺序错）。
+        """
+        self.assertEqual([d.split("-", 1)[1] for d in MODULE_DIRS],
+                         list(render.MODULE_ORDER))
+
+    def test_off_whitelist_dir_is_recorded_and_in_whitelist_is_scanned(self):
+        self._put("06-资料分析/ok.md", _OK_MD)          # 白名单内 ⇒ 正常收
+        self._put("07-新模块/x.md", "---\n试卷: \"某卷\"\n---\n")   # 表外 ⇒ 只报不收
+        res = XingceZhentiAdapter().scan(self.root)
+        # ① 白名单内的照旧进 records
+        self.assertEqual([r["relpath"] for r in res.records], ["06-资料分析/ok.md"])
+        # ② 表外目录**出现在台账里**（不再是静默跳过），计数非零
+        self.assertEqual([u["dir"] for u in res.unmapped], ["07-新模块"])
+        self.assertEqual(res.unmapped[0]["reason"], "模块目录不在白名单: 07-新模块")
+        self.assertEqual(res.unmapped[0]["relpath"], "07-新模块")
+        self.assertEqual(res.unmapped[0]["family"], "xingcezhenti")
+
+    def test_declared_noise_dirs_are_not_recorded(self):
+        # `.git` 与 `90-图片` 是**显式**列出的噪声白名单（各带理由）⇒ 不留痕；
+        # 文件（README.md 等，非目录）也不进这条对账。
+        for d in NON_MODULE_DIRS:
+            os.makedirs(os.path.join(self.root, d), exist_ok=True)
+        self._put("README.md", "# 说明\n")
+        res = XingceZhentiAdapter().scan(self.root)
+        self.assertEqual(res.unmapped, [])
+
+    def test_real_fixture_root_has_no_unmapped(self):
+        # 夹具根下只有 `02-常识判断`/`06-资料分析`（白名单内）与 `90-图片`（噪声白名单）
+        self.assertEqual(XingceZhentiAdapter().scan(FIX).unmapped, [])

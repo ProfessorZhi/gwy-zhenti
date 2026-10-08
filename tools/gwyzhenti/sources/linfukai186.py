@@ -23,6 +23,15 @@ CATS = (
     ("guokao-shenlun", "申论"),
     ("shengkao-shenlun", "申论"),
 )
+
+# **噪声/有意排除白名单**：`root/data/` 下**确知不属 `CATS`** 的目录，逐项显式列出 + 写明理由。
+# 真树实测（`D:\projects\_gwy-upstream\gongkao-tiku\data`）除 4 个 `CATS` 目录外只有这三个，
+# 而它们都是 **spec §2 有意排除**的非目标（整改 F2·C；白名单外的目录一律记台账、不静默）：
+NON_CAT_DIRS = {
+    "practice": "模考（spec §2 非目标：模考不属真题）",
+    "shiyebian-gongji": "事业编·公共基础知识（spec §2 非目标）",
+    "shiyebian-zongying": "事业编·综合应用能力（spec §2 非目标）",
+}
 YEAR_RE = re.compile(r"^y(\d{4})\.json$")
 YEAR_IN_KEY = re.compile(r"(\d{4})")
 # 题级文本里出现即计一次（实测本机样本多为 0；不假设，按内容数）
@@ -44,7 +53,27 @@ class Linfukai186Adapter(SourceAdapter):
                     continue                      # index.json 等非 `y<年>.json` 一律跳过
                 self._one(os.path.join(cat_dir, name),
                           "data/%s/%s" % (cat, name), m.group(1), subject, res)
+        self._record_unmapped_cats(root, res)
         return res
+
+    def _record_unmapped_cats(self, root, res):
+        """列 `root/data/` 下**实际存在**的目录，凡不在 `CATS`/`NON_CAT_DIRS` 者**记台账**。
+
+        **只报不收**：这些目录的正文**不进** `records`，但不再被静默跳过（整改 F2·C，评审 I3）。
+        """
+        data_dir = os.path.join(root, "data")
+        if not os.path.isdir(data_dir):
+            return
+        known = {c for c, _ in CATS}
+        for name in sorted(os.listdir(data_dir)):
+            if not os.path.isdir(os.path.join(data_dir, name)):
+                continue                            # `shenlun-guokao.json` 等文件不进这条对账
+            if name in known or name in NON_CAT_DIRS:
+                continue
+            res.unmapped.append({
+                "family": FAMILY, "dir": name, "relpath": "data/%s" % name,
+                "reason": "类目目录不在白名单: %s" % name,
+            })
 
     def _one(self, abspath, relpath, fallback_year, subject, res):
         with open(abspath, encoding="utf-8") as fh:

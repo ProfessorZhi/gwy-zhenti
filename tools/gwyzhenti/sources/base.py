@@ -11,6 +11,10 @@ class ScanResult:
     records: list = field(default_factory=list)
     unparsed: list = field(default_factory=list)    # [{family, title, region, year, subject, module, relpath, reason}]
     excluded: list = field(default_factory=list)    # [{family, title, region, year, subject, module, relpath, reason}]
+    # 硬编码的目录白名单**之外**、被**显式记录**（不静默跳过）的目录。判据见整改 F2·C：
+    # 只报不收 —— 表外目录的正文**不进** `catalog.jsonl`，但必须在台账里可查、计数非零。
+    # [{family, dir, relpath, reason}]
+    unmapped: list = field(default_factory=list)
 
 
 class SourceAdapter:

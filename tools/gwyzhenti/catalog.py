@@ -8,9 +8,16 @@ import json
 import os
 from dataclasses import dataclass, field
 
+from . import export   # 见下方 import 环论证
 from .naming import LEVEL_GUOKAO, PROVINCES as _PROVINCES_BY_LEN, Unparsed, classify
 from .slug import paper_slug
 from .sources import ADAPTERS
+
+# **导入环论证（整改 F2·D4，实查结论）**：`catalog` 需要 `export._parts_for` 来判「M1 有正文」。
+# 实查依赖方向：`export` 只 import `mdread, render, model`（**不** import `catalog`），
+# 而 `render` 只 import `mdread, model`，`model`/`mdread` 无内部依赖 ⇒ `catalog → export` 是**单向边，不成环**。
+# 反向只有 `cli` 单向 import `catalog`（`gates` 也只 import `export, mdread, render, model`）。
+# 故此处**模块级**导入安全；无需（也不必）在函数体内延迟导入。
 
 SUBJECTS = ("行测", "申论")
 # 省级地区全集（用于「地域齐全」度量）。**单一真源**：`naming.PROVINCES`（Task 5 引入，
@@ -26,6 +33,9 @@ class Report:
     questions: int = 0
     unparsed: int = 0
     excluded: int = 0
+    # 硬编码目录白名单**之外**、被显式记录的目录数（见 `sources/*` 的 `unmapped`；整改 F2·C）。
+    # 真树应为 **0**（表外目录一个也没有）；非零即「有题被静默跳过」的告警。
+    unmapped: int = 0
     by_region: dict = field(default_factory=dict)
     by_subject: dict = field(default_factory=dict)
 
@@ -38,7 +48,7 @@ def _dump_jsonl(path, rows):
 
 def build(uproots, out_dir):
     os.makedirs(out_dir, exist_ok=True)
-    all_records, all_unparsed, all_excluded = [], [], []
+    all_records, all_unparsed, all_excluded, all_unmapped = [], [], [], []
     for family, root in sorted(uproots.items()):
         adapter = ADAPTERS.get(family)
         if adapter is None:
@@ -47,6 +57,7 @@ def build(uproots, out_dir):
         all_records.extend(res.records)
         all_unparsed.extend(res.unparsed)
         all_excluded.extend(res.excluded)
+        all_unmapped.extend(res.unmapped)
 
     # —— 按 (层级, 地区, 年份, 科目, 卷型) 聚合；原始卷名保真 ——
     # 每卷键的三种卷名视图（改动 B 的三件套）：
@@ -85,6 +96,7 @@ def build(uproots, out_dir):
     # 未入选的去向在**循环之后**才齐（兜底也会往桶里追加），此处按最终桶长回填。
     rep.unparsed = len(all_unparsed)
     rep.excluded = len(all_excluded)
+    rep.unmapped = len(all_unmapped)
 
     rows = []
     for key in sorted(papers):
@@ -109,8 +121,14 @@ def build(uproots, out_dir):
     _dump_jsonl(os.path.join(out_dir, "catalog.jsonl"), rows)
     _dump_jsonl(os.path.join(out_dir, "excluded.jsonl"), all_excluded)
     _dump_jsonl(os.path.join(out_dir, "unparsed.jsonl"), all_unparsed)
-    _write_coverage(out_dir, rows, rep)
-    _write_gaps(out_dir, rows)
+    # **新开一个 `unmapped` 台账**（整改 F2·C 的二选一）：不塞进 `unparsed.jsonl`。
+    # 理由：`unparsed` 是 G1 盯的**缺陷桶**、长期必须为 0，它的语义已在多份文档里冻结为
+    # 「卷解析失败」；把「目录不在白名单」混进去会让 0/非 0 的含义变模糊。单列一个台账，
+    # 事件类型一眼可辨，且真树应为 0 行（表外目录一个也没有）。
+    xingce_root = uproots.get("xingcezhenti")
+    _dump_jsonl(os.path.join(out_dir, "unmapped.jsonl"), all_unmapped)
+    _write_coverage(out_dir, rows, rep, xingce_root)
+    _write_gaps(out_dir, rows, xingce_root)
     _write_conflicts(out_dir, rows)
     return rep
 
@@ -154,26 +172,56 @@ def _dubious(titles_by_family):
     return []
 
 
-def _write_coverage(out_dir, rows, rep):
+def _body_by_cell(rows, xingce_root):
+    """`(地区, 科目)` → **M1 真能导出正文**的卷数（`export._parts_for` 非空）。
+
+    `xingce_root` 为假值（本次未接入 `xingcezhenti` 源）⇒ 返回空 dict，该列全 0 并由脚注声明
+    「不可判」——**绝不用「有目录行」冒充「有正文」**（整改 F2·D/I6）。
+    """
+    out = {}
+    if not xingce_root:
+        return out
+    for r in rows:
+        parts, _ = export._parts_for(r, xingce_root)
+        if parts:
+            cell = (r["region"] or LEVEL_GUOKAO, r["subject"])
+            out[cell] = out.get(cell, 0) + 1
+    return out
+
+
+def _write_coverage(out_dir, rows, rep, xingce_root=None):
     have = {}
     for r in rows:
         have.setdefault((r["region"] or LEVEL_GUOKAO, r["subject"]), []).append(r["year"])
+    body = _body_by_cell(rows, xingce_root)
     L = ["# 覆盖矩阵（地区 × 科目）", "",
          "> 由 catalog.jsonl 实算得出。**地域齐全 > 时间齐全**：先看地区行是否空白，再看年份纵深。", "",
-         "| 地区 | 科目 | 卷数 | 年份跨度 | 年份数 |", "|---|---|---:|---|---:|"]
+         "| 地区 | 科目 | 卷数 | 正文(M1) | 年份跨度 | 年份数 |",
+         "|---|---|---:|---:|---|---:|"]
     for region in _region_rows(rows):
         for subject in _subject_rows(rows):
             ys = have.get((region, subject), [])
             if ys:
-                L.append("| %s | %s | %d | %s–%s | %d |"
-                         % (region, subject, len(ys), min(ys), max(ys), len(set(ys))))
+                L.append("| %s | %s | %d | %d | %s–%s | %d |"
+                         % (region, subject, len(ys), body.get((region, subject), 0),
+                            min(ys), max(ys), len(set(ys))))
             else:
-                L.append("| %s | %s | 0 | — | 0 | **缺**" % (region, subject))
+                L.append("| %s | %s | 0 | 0 | — | 0 | **缺**" % (region, subject))
     L += ["", "**合计**：%d 卷 / %d 题。" % (rep.papers, rep.questions)]
+    # **两种口径必须并列写清**（整改 F2·D3/E，评审 I6/I1）：
+    if xingce_root:
+        L += ["", "> **口径**：`卷数` = `catalog.jsonl` 里该 (地区,科目) 的**目录行数**（有目录行）；"
+                  "`正文(M1)` = 其中 M1 **能导出正文**的卷数（`export._parts_for` 非空）；"
+                  "两者之差 = **有目录无正文**（申论整片在此列，见 `gaps.md` 专段）。"]
+    else:
+        L += ["", "> **口径**：`卷数` = `catalog.jsonl` 里该 (地区,科目) 的**目录行数**；"
+                  "**本次未接入 xingcezhenti 源，`正文(M1)` 该列不可判**（一律记 0）。"]
+    L += ["> `catalog` 侧的**题数**是按**源累加**（同一卷键被多源提供时，各源各报一份相加）；"
+          "而本表的 `卷数` / `正文(M1)` 是**卷键数**（**不累加**）—— 两个口径不可互相换算。"]
     _w(os.path.join(out_dir, "coverage.md"), L)
 
 
-def _write_gaps(out_dir, rows):
+def _write_gaps(out_dir, rows, xingce_root=None):
     have = {(r["region"] or LEVEL_GUOKAO, r["subject"]) for r in rows}
     L = ["# 缺口清单", "",
          "> 排序 = **地域优先**、年份次之、**新卷先于老卷**。", ""]
@@ -183,7 +231,28 @@ def _write_gaps(out_dir, rows):
         if missing:
             L.append("- **%s**：缺 %s" % (region, "、".join(missing)))
     L.append("")
-    L.append("## 二、年次级缺口（地区齐了再看）")
+    # 整改 F2·D5：在「一、地区级缺口」之后加一段 —— 「有目录行」但 M1 **不出正文**的组合。
+    # 这一段的全部意义就是不让 `coverage.md` 的「已覆盖」冒充「可交付」。
+    L.append("## 二、有目录行但 M1 无正文")
+    if not xingce_root:
+        L.append("（本次未接入 xingcezhenti 源，**该段不可判**。）")
+    else:
+        body = _body_by_cell(rows, xingce_root)
+        nobody = []
+        for region in _region_rows(rows):
+            for subject in _subject_rows(rows):
+                cell = (region, subject)
+                if cell not in have or body.get(cell):
+                    continue
+                n = sum(1 for r in rows
+                        if (r["region"] or LEVEL_GUOKAO) == region and r["subject"] == subject)
+                nobody.append((region, subject, n))
+        if not nobody:
+            L.append("（无）")
+        for region, subject, n in nobody:
+            L.append("- **%s** %s：有 %d 卷目录行，M1 **0 卷**有正文" % (region, subject, n))
+    L.append("")
+    L.append("## 三、年次级缺口（地区齐了再看）")
     for region in _region_rows(rows):
         ys = sorted({r["year"] for r in rows if (r["region"] or LEVEL_GUOKAO) == region})
         if not ys:

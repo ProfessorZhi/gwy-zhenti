@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
+import io
+import json
 import os
+import shutil
 import sys
+import tempfile
 import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from gwyzhenti.sources.linfukai186 import Linfukai186Adapter      # noqa: E402
+from gwyzhenti.sources.linfukai186 import (                       # noqa: E402
+    CATS, NON_CAT_DIRS, Linfukai186Adapter,
+)
 
 FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "linfukai186")
 
@@ -87,3 +93,43 @@ class TestLinfukai186Adapter(unittest.TestCase):
         # index.json 是 list，若被当 `y<年>.json` 读取，`papers.items()` 会 AttributeError
         self.assertTrue(all(r["relpath"].endswith(".json") for r in self.res.records))
         self.assertFalse(any(r["relpath"].endswith("index.json") for r in self.res.records))
+
+
+class TestUnmappedCatsLedger(unittest.TestCase):
+    """整改 F2·C / 评审 I3（`linfukai186` 侧）：`data/` 下不在 `CATS` 白名单的目录不得静默跳过。
+
+    真树 `data/` 实测另有三项 —— `practice` / `shiyebian-gongji` / `shiyebian-zongying`，
+    它们是 **spec §2 有意排除**的非目标，故进 `NON_CAT_DIRS` 白名单（各带理由）；**白名单之外**
+    的目录一律记 `unmapped` 台账（只报不收）。
+    """
+
+    def setUp(self):
+        self.root = tempfile.mkdtemp(prefix="gwylfk-up-")
+        self.addCleanup(shutil.rmtree, self.root, ignore_errors=True)
+
+    def _put_json(self, rel, obj):
+        p = os.path.join(self.root, rel.replace("/", os.sep))
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        with io.open(p, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(json.dumps(obj, ensure_ascii=False))
+
+    def test_off_whitelist_cat_dir_is_recorded_and_whitelisted_is_scanned(self):
+        self._put_json("data/guokao-xingce/y2016.json",
+                       {"2016·国家公务员考试": [{"t": "常识判断", "q": "题干"}]})
+        self._put_json("data/03-新类目/y2016.json", {})
+        for d in NON_CAT_DIRS:                       # 真树那三个：有意排除、白名单内 ⇒ 不留痕
+            self._put_json("data/%s/y2016.json" % d, {})
+        res = Linfukai186Adapter().scan(self.root)
+        self.assertTrue(res.records, "白名单内的类目应照常收")
+        self.assertEqual([u["dir"] for u in res.unmapped], ["03-新类目"])
+        self.assertEqual(res.unmapped[0]["reason"], "类目目录不在白名单: 03-新类目")
+        self.assertEqual(res.unmapped[0]["relpath"], "data/03-新类目")
+
+    def test_declared_non_cat_dirs_are_the_three_excluded_ones(self):
+        self.assertEqual(set(NON_CAT_DIRS),
+                         {"practice", "shiyebian-gongji", "shiyebian-zongying"})
+
+    def test_real_fixture_data_has_no_unmapped(self):
+        self.assertEqual(Linfukai186Adapter().scan(FIX).unmapped, [])
+        self.assertEqual({c for c, _ in CATS},
+                         {"guokao-xingce", "shengkao-xingce", "guokao-shenlun", "shengkao-shenlun"})

@@ -123,6 +123,120 @@ class TestCatalog(unittest.TestCase):
         self.assertIn("地域优先", gaps)
 
 
+def _row_of(cov, region, subject):
+    """从 coverage.md 取 `| 地区 | 科目 | … |` 那一行的单元格（已 strip）。"""
+    hits = [l for l in cov.splitlines() if l.startswith("| %s | %s |" % (region, subject))]
+    assert len(hits) == 1, (region, subject, hits)
+    return [c.strip() for c in hits[0].strip("|").split("|")]
+
+
+class TestCoverageBodyColumn(unittest.TestCase):
+    """整改 F2·D / 评审 I6：覆盖表必须分清「有目录行」与「M1 有正文」两种口径。
+
+    旧表只有「卷数」= 有目录行的卷数 ⇒ **申论整片**（有 catalog 行、M1 不出正文）显示成「已覆盖」，
+    与交付事实**相反**。新的 `正文(M1)` 列 = 该 (地区,科目) 下 `export._parts_for` 非空的卷数。
+    """
+
+    def setUp(self):
+        self.out = tempfile.mkdtemp(prefix="gwycov-")
+        self.addCleanup(shutil.rmtree, self.out, ignore_errors=True)
+        self.rep = catalog.build({"xingcezhenti": os.path.join(FIX, "xingcezhenti"),
+                                 "linfukai186": os.path.join(FIX, "linfukai186")}, self.out)
+
+    def _read(self, name):
+        with open(os.path.join(self.out, name), encoding="utf-8") as fh:
+            return fh.read()
+
+    def test_header_has_body_column(self):
+        cov = self._read("coverage.md")
+        self.assertIn("| 地区 | 科目 | 卷数 | 正文(M1) | 年份跨度 | 年份数 |", cov)
+
+    def test_linfukai_only_cell_has_rows_but_no_body(self):
+        cov = self._read("coverage.md")
+        cells = _row_of(cov, "黑龙江", "申论")      # 只由 linfukai186 提供 ⇒ 有目录行、M1 无正文
+        # cells = [地区, 科目, 卷数, 正文(M1), 年份跨度, 年份数]
+        self.assertEqual(cells[0], "黑龙江")
+        self.assertEqual(cells[1], "申论")
+        self.assertEqual(cells[2], "1")             # 卷数（有目录行）非 0
+        self.assertEqual(cells[3], "0")             # 正文(M1) = 0 —— 这正是旧表看不出的那件事
+
+    def test_xingce_backed_cell_has_body(self):
+        cells = _row_of(self._read("coverage.md"), "四川", "行测")
+        self.assertEqual(cells[2], "1")
+        self.assertEqual(cells[3], "1")             # 有 xingcezhenti 源 ⇒ M1 真出正文
+
+    def test_caliber_footnotes_are_explicit(self):
+        # D3 + E1：两种口径并列写清（「有目录行 / 正文(M1)」；「题数按源累加 / 卷数是卷键数」）
+        cov = self._read("coverage.md")
+        self.assertIn("有目录无正文", cov)
+        self.assertIn("按**源累加**", cov)
+        self.assertIn("卷键数", cov)
+
+    def test_gaps_has_catalog_without_body_section(self):
+        gaps = self._read("gaps.md")
+        self.assertIn("## 二、有目录行但 M1 无正文", gaps)
+        self.assertIn("- **黑龙江** 申论：有 1 卷目录行", gaps)
+        # 申论整片在此列 ⇒ 该段**非空**（空则须明写「（无）」）
+        self.assertNotIn("（无）", gaps.split("## 二、")[1].split("## 三、")[0])
+
+    def test_missing_xingce_source_marks_column_unjudgeable(self):
+        # D3：`uproots` 缺 `xingcezhenti` 键 ⇒ `正文(M1)` 全 0，且脚注/专段写明「不可判」
+        out2 = tempfile.mkdtemp(prefix="gwycov-")
+        self.addCleanup(shutil.rmtree, out2, ignore_errors=True)
+        catalog.build({"linfukai186": os.path.join(FIX, "linfukai186")}, out2)
+        with open(os.path.join(out2, "coverage.md"), encoding="utf-8") as fh:
+            cov = fh.read()
+        self.assertIn("正文(M1)", cov)
+        self.assertIn("不可判", cov)
+        cells = _row_of(cov, "黑龙江", "申论")
+        self.assertEqual(cells[2], "1")             # 卷数照旧（catalog 行数）
+        self.assertEqual(cells[3], "0")             # 无 xingce 源 ⇒ 该列一律 0
+        with open(os.path.join(out2, "gaps.md"), encoding="utf-8") as fh:
+            gaps = fh.read()
+        self.assertIn("## 二、有目录行但 M1 无正文", gaps)
+        self.assertIn("该段不可判", gaps)
+
+    def test_unmapped_ledger_exists_and_is_empty_on_the_fixture(self):
+        # C 的落地面：`work/catalog/` 下多一个 `unmapped.jsonl`；夹具上游无表外目录 ⇒ 0 行
+        self.assertTrue(os.path.exists(os.path.join(self.out, "unmapped.jsonl")))
+        self.assertEqual(jl(os.path.join(self.out, "unmapped.jsonl")), [])
+        self.assertEqual(self.rep.unmapped, 0)
+
+
+class TestCrossSourceAccumulation(unittest.TestCase):
+    """整改 F2·E / 评审 I1·裁定 R-FF-3：**不改 schema**，但把「跨源累加」这条关系**用测试锁住**。
+
+    同一个卷键被**两个源**各以 `n_questions=k` 喂入 ⇒ `n_questions == 2*k`（跨源口径，`catalog` 侧
+    题数就是**按源累加**的）；`sources` 有 2 个；`declared_questions` 同样累加。
+    这条断言就是**将来改语义时的报警器**：谁把累加改成 max / 去重，它立刻红。
+    """
+
+    def test_two_families_double_the_totals(self):
+        key = PaperKey("省考", "四川", "2016", "行测", "统考")
+
+        def stub(family, n, declared):
+            rec = {"family": family, "region": "四川", "year": "2016", "title": "某卷",
+                   "subject": "行测", "module": "常识判断", "n_questions": n,
+                   "declared_questions": declared}
+            return types.SimpleNamespace(
+                scan=lambda root, r=rec: types.SimpleNamespace(
+                    records=[r], unparsed=[], excluded=[], unmapped=[]))
+
+        out = tempfile.mkdtemp(prefix="gwyacc-")
+        self.addCleanup(shutil.rmtree, out, ignore_errors=True)
+        with mock.patch.object(catalog, "ADAPTERS",
+                               {"a": stub("a", 5, 7), "b": stub("b", 5, 7)}), \
+             mock.patch.object(catalog, "classify",
+                               return_value=Classified(key, "正式真题", "单独命题")):
+            catalog.build({"a": "/x", "b": "/y"}, out)
+        rows = jl(os.path.join(out, "catalog.jsonl"))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["n_questions"], 10)           # 5 + 5：**跨源累加**
+        self.assertEqual(len(rows[0]["sources"]), 2)
+        self.assertEqual(rows[0]["sources"], ["a", "b"])
+        self.assertEqual(rows[0]["declared_questions"], 14)    # 7 + 7：同样按源累加
+
+
 class TestDubious(unittest.TestCase):
     """`_dubious`：同源多名里「互不为子串」⇒ 疑似撞 slug；纯命名变体放过。"""
 
@@ -151,7 +265,8 @@ class TestFallbackRouting(unittest.TestCase):
         rec = {"family": "stub", "region": "四川", "year": "2016", "title": "某卷",
                "subject": "行测", "module": "常识判断", "n_questions": 1}
         stub = types.SimpleNamespace(
-            scan=lambda root: types.SimpleNamespace(records=[rec], unparsed=[], excluded=[]))
+            scan=lambda root: types.SimpleNamespace(
+                records=[rec], unparsed=[], excluded=[], unmapped=[]))
         try:
             with mock.patch.object(catalog, "ADAPTERS", {"stub": stub}), \
                  mock.patch.object(catalog, "classify", side_effect=exc):
@@ -188,7 +303,8 @@ class TestDubiousIntegration(unittest.TestCase):
                  "subject": "行测", "module": "常识判断", "n_questions": 1}
                 for t in ("甲卷", "乙卷")]
         stub = types.SimpleNamespace(
-            scan=lambda root: types.SimpleNamespace(records=recs, unparsed=[], excluded=[]))
+            scan=lambda root: types.SimpleNamespace(
+                records=recs, unparsed=[], excluded=[], unmapped=[]))
         out = tempfile.mkdtemp(prefix="gwycat-")
         try:
             with mock.patch.object(catalog, "ADAPTERS", {"stub": stub}), \
