@@ -259,6 +259,7 @@ import unittest
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from gwyzhenti.naming import classify, Unparsed      # noqa: E402
+from gwyzhenti.slug import paper_slug                # noqa: E402
 
 
 class TestClassify(unittest.TestCase):
@@ -314,6 +315,44 @@ class TestClassify(unittest.TestCase):
             self.assertIn("选调", e.reason)
         else:
             self.fail("应当抛 Unparsed")
+
+    def test_zhejiang_ab_juan_do_not_collide(self):
+        # 实测：2016/2017 浙江联考同时有 A卷 与 B卷（同年同省同科目）
+        # —— 卷型若默认成「统考」，两卷会塌成同一个 slug，导出时后写覆盖先写
+        a = classify("浙江", "2016", "2016年423联考《行测》题（浙江A卷）")
+        b = classify("浙江", "2016", "2016年423联考《行测》题（浙江B卷）")
+        self.assertEqual(a.key.ptype, "A类")
+        self.assertEqual(b.key.ptype, "B类")
+        self.assertNotEqual(paper_slug(a.key), paper_slug(b.key))
+
+    def test_unknown_suffix_is_carried_verbatim_not_defaulted(self):
+        # 实测存在（甲级/乙级/下半年/县级以上/定向乡镇/省直卷/…）：
+        # 认不出就**逐字**带上，绝不静默塌成「统考」
+        self.assertEqual(classify("吉林", "2016", "2016年吉林省公务员考试《行测》题（甲级）").key.ptype,
+                         "甲级")
+        self.assertEqual(classify("浙江", "2019", "2019年浙江省公务员考试《行测》题（下半年）").key.ptype,
+                         "下半年")
+
+    def test_memory_marker_is_not_a_ptype(self):
+        # 「网友回忆版」是**性质**，不是卷型 —— 不能进 slug
+        c = classify("云南", "2016", "2016年423联考《行测》题（云南网友回忆版）")
+        self.assertEqual(c.key.ptype, "统考")
+        self.assertEqual(c.nature, "网友回忆版")
+
+    def test_region_marker_is_not_a_ptype(self):
+        # `（四川卷）` 里的「四川」是地区标记，剥掉后为空 ⇒ 统考
+        self.assertEqual(classify("四川", "2016", "2016年423联考《行测》题（四川卷）").key.ptype,
+                         "统考")
+
+    def test_no_suffix_is_tongkao(self):
+        # spec §6.1：标题里没有括号后缀 ⇒ 统考
+        self.assertEqual(classify("江西", "2016", "2016年江西省公务员考试《行测》题").key.ptype,
+                         "统考")
+
+    def test_gongjianfa_is_excluded(self):
+        # 「公检法」与 spec 已排除的「法检」同属系统内招录 ⇒ 一并排除
+        with self.assertRaises(Unparsed):
+            classify("黑龙江", "2016", "2016年黑龙江省公务员考试《行测》题（公检法卷）")
 ```
 
 - [ ] **Step 2: 跑测试确认失败**
@@ -335,23 +374,61 @@ from .model import LEVEL_GUOKAO, LEVEL_SHENGKAO, PaperKey
 # 实测存在的非国省考地区值
 EXCLUDE_REGIONS = {"选调", "深圳市考", "广州市考"}
 # 标题里的排除词（实测样本：法检统一考录、司法所、事业编、职测、综应、模考）
-EXCLUDE_TITLE = re.compile(r"选调|法检|司法所|事业编|事业单位|职测|综应|模考|公开课|模拟")
+EXCLUDE_TITLE = re.compile(r"选调|法检|司法所|公检法|事业编|事业单位|职测|综应|模考|公开课|模拟")
 
-# 卷型：**长模式在前**，先命中先返回
+# 卷型：**长模式在前**，先命中先返回。**只归一到 spec 已声明的词表**，其余一律不推测。
 PTYPE_RULES = (
     (re.compile(r"副省级"), "副省级"),
     (re.compile(r"地市级"), "地市级"),
     (re.compile(r"行政执法"), "行政执法"),
-    (re.compile(r"A类"), "A类"),
-    (re.compile(r"B类"), "B类"),
-    (re.compile(r"C类"), "C类"),
-    (re.compile(r"D类"), "D类"),
+    (re.compile(r"A类|A卷"), "A类"),
+    (re.compile(r"B类|B卷"), "B类"),
+    (re.compile(r"C类|C卷"), "C类"),
+    (re.compile(r"D类|D卷"), "D类"),
     (re.compile(r"乡镇卷|乡镇"), "乡镇卷"),
     (re.compile(r"县级卷|县级"), "县级卷"),
 )
 MEMORY = re.compile(r"网友回忆版")
 SELECTED = re.compile(r"精选")
 LIANKAO = re.compile(r"联考")
+
+# 标题里的括号内容（全角与半角都认）
+PAREN = re.compile(r"[（(]([^）)]*)[）)]")
+# 括号里这些词是**性质/形式**，不是卷型 —— 不能进 slug
+NOT_PTYPE = re.compile(r"^(?:网友回忆版|精选|联考)$")
+
+
+def _ptype_tokens(region, title):
+    """取出标题括号里的「卷型/批次」token：先剥掉其中的地区标记（`浙江A卷`→`A卷`、`四川卷`→空），
+    再**逐字**返回剩下的部分。性质/形式词（网友回忆版/精选/联考）不算卷型。
+    """
+    out = []
+    for raw in PAREN.findall(title):
+        s = raw.strip()
+        if region and s.startswith(region):
+            s = s[len(region):]
+        if s == "卷":
+            s = ""
+        if s and not NOT_PTYPE.match(s):
+            out.append(s)
+    return out
+
+
+def _ptype(region, title):
+    """卷型判定。**塌成同一个值 = 撞 slug = 丢卷**，故认不出时逐字带上，绝不默认。"""
+    tokens = _ptype_tokens(region, title)
+    for t in tokens:
+        for rx, value in PTYPE_RULES:
+            if rx.fullmatch(t):
+                return value
+    if tokens:
+        return "+".join(sorted(set(tokens)))
+    # 没有括号后缀 —— 回落到全标题扫描（覆盖 `2026·国家公务员考试副省级` 这种无括号写法）
+    for rx, value in PTYPE_RULES:
+        if rx.search(title):
+            return value
+    # spec §6.1：无后缀 ⇒ 统考
+    return "统考"
 
 
 class Unparsed(Exception):
@@ -381,11 +458,7 @@ def classify(region, year, title, subject="行测"):
         raise Unparsed("试卷名含排除词: %s" % m.group(0), title)
 
     level = LEVEL_GUOKAO if region == LEVEL_GUOKAO else LEVEL_SHENGKAO
-    ptype = "统考"
-    for rx, value in PTYPE_RULES:
-        if rx.search(title):
-            ptype = value
-            break
+    ptype = _ptype(region, title)
 
     if MEMORY.search(title):
         nature = "网友回忆版"
@@ -402,7 +475,7 @@ def classify(region, year, title, subject="行测"):
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_naming -v`
-Expected: PASS，9 tests OK
+Expected: PASS，15 tests OK
 
 - [ ] **Step 5: 提交**
 
