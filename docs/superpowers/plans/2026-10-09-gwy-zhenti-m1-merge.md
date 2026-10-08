@@ -1289,8 +1289,9 @@ def region_from_text(text):
 }
 ```
 
-`tools/tests/fixtures/linfukai186/data/shengkao-shenlun/y2016.json`（钉两件事：**申论科目由目录决定**、
-**申论目录里可以躺着国考卷** —— 实测 `shengkao-shenlun` 里有 46 个 `国家公考` 键）：
+`tools/tests/fixtures/linfukai186/data/shengkao-shenlun/y2016.json`（钉三件事：**申论科目由目录决定**、
+**申论目录里可以躺着国考卷**（实测 `shengkao-shenlun` 里有 46 个 `国家公考` 键）、
+以及**无地区的模考卷进 `excluded` 而非 `unparsed`**（真实数据 56 条的同形样本））：
 ```json
 {
   "2016·黑龙江公务员考试《申论》题": [
@@ -1299,6 +1300,9 @@ def region_from_text(text):
   ],
   "2016·国家公考《申论》题（副省级）": [
     {"t":"综合分析题","s":"材料1\n……","q":"请分析……","a":"参考答案……"}
+  ],
+  "2016·省考行测申论联合模考大赛《申论》": [
+    {"t":"归纳概括题","s":"材料1","q":"请概括……","a":"参考答案……"}
   ]
 }
 ```
@@ -1374,8 +1378,18 @@ class TestLinfukai186Adapter(unittest.TestCase):
 
     def test_mock_and_shenzhen_are_excluded_not_unparsed(self):
         reasons = sorted(e["reason"].split(":")[0].strip() for e in self.res.excluded)
-        self.assertEqual(reasons, sorted(["试卷名含排除词", "非国省考地区"]))
-        self.assertEqual(len(self.res.excluded), 2)
+        self.assertEqual(reasons, sorted(["试卷名含排除词", "试卷名含排除词", "非国省考地区"]))
+        self.assertEqual(len(self.res.excluded), 3)
+
+    def test_regionless_mock_paper_lands_in_excluded_not_unparsed(self):
+        """无地区 + 含「模考」⇒ **有意排除**，不是缺陷。
+
+        真实数据实测 56 条这类卷（100% 在 `shengkao-shenlun`，100% 含「模考」）。
+        若 `classify` 把「地区为空」检查挪回**标题排除词之前**，本条会变红 —— 这就是它的用途。
+        """
+        titles = {e["title"] for e in self.res.excluded}
+        self.assertIn("2016·省考行测申论联合模考大赛《申论》", titles)
+        self.assertEqual(self.res.unparsed, [])
 
     def test_record_and_bucket_keys_are_frozen(self):
         for r in self.res.records:
