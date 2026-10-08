@@ -2779,6 +2779,18 @@ git commit -m "feat(tools): 段二导出（按 catalog 落盘 + 只复制被引�
 - Produces: `gates.run_all(catalog_dir, upstream, repo_root, limit=None) -> GatesReport`；
   `GatesReport` 的 `results: list[(闸名, 通过?, 说明)]`、`ok: bool`
 
+> ⚠️ **本节的代码草图已被实现取代，权威实现 = `tools/gwyzhenti/gates.py`（`c391c3f`，353 行）。**
+> 实现者在落地时**实捕获了草图里 3 处缺陷**，已回填到下面（都是「会让闸门失效」的那一类）：
+> 1. **`_g1` 的 `QHEAD` 漏 `re.M`** —— 草图在**整篇文本**上 `QHEAD.finditer(text)`，`^` 只匹配字符串开头
+>    ⇒ 每卷都取不到题号 ⇒ **G1 对每一卷都报「无题目」而恒负**。（`mdread` 那份 `QHEAD` 是逐行 `match`，**不需要** `re.M`。）
+> 2. **`_g2` 的反向检查有假绿口子** —— 草图从**引用**反推目录根集合 ⇒ 一卷引用被**删光**时根集合为空、
+>    反向**整支跳过**。已改为**锚在 catalog 行给的 `图片/<slug>/`**（`_img_root(row)`），降级时如实记录。
+> 3. **G6 在草图里是恒 `True` 的占位** —— **一条永远不会红的闸门比没有更糟**（给的是假的安心）。
+>    已改为真判据：**catalog → 落盘的反向对账**（抓**整卷静默丢失**）。
+>
+> 实现者据此**多加了 2 条测试**（4→6：锁「清单内缺图点名不判负」与「G6 抓整卷丢失」）——
+> 这两条正是派单点名、而草图测试覆盖不到的判据，**准**。
+
 - [ ] **Step 1: 写失败的测试**
 
 `tools/tests/test_gates.py`：
@@ -2852,7 +2864,16 @@ from . import export, mdread, render
 from .model import PaperKey
 
 IMG = re.compile(r'<img\b[^>]*?src="([^"]+)"[^>]*>')
-QHEAD = re.compile(r'^#{2,4}\s*第\s*(\d+)\s*题')
+# ⚠️ **必须带 `re.M`**（Task 10 实捕获的简报 bug）：`_g1` 是在**整篇文本**上跑 `QHEAD.finditer(text)`，
+# 没有 `re.M` 时 `^` 只匹配**字符串开头** ⇒ 每卷都取不到题号 ⇒ G1 **对每一卷都报「无题目」而恒负**。
+# （`mdread` 里那份 `QHEAD` 是 `text.split("\n")` 后逐行 `match`，故**不需要** `re.M`，别一并改。）
+QHEAD = re.compile(r'^#{2,4}\s*第\s*(\d+)\s*题', re.M)
+# **上游已知缺图**（`xingcezhenti/图片缺失清单.txt` 的 2 行，但**只有落在 M1 范围内的那张**才会被引用）：
+# 实测 `formula-4daf9a3762c10376.png` 只被 **2016 深圳市考**引用（已排除，不在 M1），
+# `formula-2c7a9ff6774e3af2.png` 被 **2018 湖北 421联考**引用（**在 M1 内**）⇒ 真库命中恰 1 张。
+# **点名而非静默放过**：命中清单的缺失**不判负**，但必须出现在 G2/G4 的说明里。
+KNOWN_SOURCE_GAPS = frozenset({"formula-2c7a9ff6774e3af2.png"})
+IMG_SEGS = ("题目图", "公式图")
 
 
 @dataclass
@@ -2884,32 +2905,61 @@ def _g1(md_path):
     return True, "%d 题" % len(nums)
 
 
-def _g2(md_path, repo_root):
+def _img_root(row):
+    """catalog 行 → 该卷图片目录（`图片/<slug>`）的**权威**相对路径；行找不到时返回 `None`
+    （调用方据此退回「引用反推」并如实降级 —— 降级绝不能变成静默通过）。"""
+    if row is None:
+        return None
+    return export.repo_paths(
+        PaperKey(row["level"], row["region"], row["year"], row["subject"], row["ptype"]),
+        row["slug"])[1].replace("/", os.sep)
+
+
+def _g2(md_path, img_root, repo_root):
+    """图片**导出侧**双向闭合：① md 里每个 `src=` 都真实落盘；② 该卷图片目录里无「落了盘但无人引用」。
+
+    缺失按 `KNOWN_SOURCE_GAPS` 分类：清单内 → 收进第三个返回值（由调用方**点名**、不判负）；
+    清单外 → 缺陷。**返回 (ok, 说明, 命中的清单名集合)。**
+
+    ⚠️ **反向必须锚在 `图片/<slug>/` 上，不能只锚在「引用出现过的目录」上**（Task 10 实捕获的简报 bug）：
+    原稿 `dirs = {os.path.dirname(p) for p in used}` 是从**引用反推**根集合 —— 一卷若引用被**删光**
+    （`used` 为空 ⇒ 根集合为空），反向检查会**整支跳过**而**假绿**。变异实测捕获（见报告 ③）。
+    `img_root` 由 catalog 行的 slug **权威给出**；行找不到时退回「引用反推」，并如实降级。
+    """
     with io.open(md_path, encoding="utf-8") as fh:
         text = fh.read()
-    missing = []
-    used = set()
+    base = os.path.dirname(md_path)
+    used, missing, known = set(), [], set()
     for src in IMG.findall(text):
-        abs_p = os.path.normpath(os.path.join(os.path.dirname(md_path), src.replace("/", os.sep)))
-        used.add(os.path.normpath(abs_p))
-        if not os.path.exists(abs_p):
-            missing.append(src)
-    # 反向：该卷图片目录里有没有没被引用的
-    slug = os.path.basename(os.path.dirname(os.path.normpath(md_path)))
-    # 卷标识由 图片/<slug> 目录名给出 —— 用 md 里的引用反推目录集合更稳
-    dirs = {os.path.dirname(p) for p in used}
+        abs_p = os.path.normpath(os.path.join(base, src.replace("/", os.sep)))
+        used.add(abs_p)
+        if os.path.exists(abs_p):
+            continue
+        name = os.path.basename(src.replace("\\", "/"))
+        if name in KNOWN_SOURCE_GAPS:
+            known.add(name)
+        else:
+            missing.append(name)
+    # 反向：该卷图片目录**整棵子树**里，不许有落盘却无人引用的文件
+    # （整棵而非仅出现过的图类子目录 ⇒「整类图落了盘但引用全丢」也看得见）。
+    roots = set()
+    if img_root:
+        roots.add(os.path.normpath(os.path.join(repo_root, img_root)))
+    roots |= {os.path.dirname(os.path.dirname(p)) for p in used}
     orphan = []
-    for d in dirs:
-        if os.path.isdir(d):
-            for fn in os.listdir(d):
-                p = os.path.normpath(os.path.join(d, fn))
+    for root in roots:
+        if not os.path.isdir(root):
+            continue
+        for dp, _, fns in os.walk(root):
+            for fn in fns:
+                p = os.path.normpath(os.path.join(dp, fn))
                 if p not in used:
-                    orphan.append(fn)
+                    orphan.append(os.path.relpath(p, root).replace(os.sep, "/"))
     if missing:
-        return False, "引用但缺文件: %s" % missing[:5]
+        return False, "引用但未落盘: %s" % sorted(set(missing))[:5], known
     if orphan:
-        return False, "复制了但未被引用: %s" % orphan[:5]
-    return True, "双向闭合 %d 张" % len(used)
+        return False, "复制了但未被引用: %s" % sorted(set(orphan))[:5], known
+    return True, "双向闭合 %d 张" % len(used), known
 
 
 def _g3(md_path):
@@ -2962,12 +3012,17 @@ def run_all(catalog_dir, uproots, repo_root, limit=None):
             detail.append("%s: %s" % (os.path.basename(md), d))
     rep.results.append(("G1 卷内题号连续", ok, "；".join(detail[:3]) or "全部通过"))
 
-    ok, detail = True, []
+    ok, detail, known = True, [], set()
     for md in mds:
-        good, d = _g2(md, repo_root)
+        row = index.get(os.path.relpath(md, repo_root))
+        # 三返回值：`k` = 命中的「上游已知缺图」名集合，**点名**、**不判负**（清单见 `KNOWN_SOURCE_GAPS`）。
+        good, d, k = _g2(md, _img_root(row), repo_root)
+        known |= k
         if not good:
             ok = False
             detail.append("%s: %s" % (os.path.basename(md), d))
+    if known:
+        detail.append("已知上游缺图 %d 张（清单内，非缺陷）：%s" % (len(known), sorted(known)))
     rep.results.append(("G2 图片双向闭合", ok, "；".join(detail[:3]) or "全部通过"))
 
     ok, detail = True, []
@@ -3005,8 +3060,16 @@ def run_all(catalog_dir, uproots, repo_root, limit=None):
             detail.append("%s: %s" % (os.path.basename(md), d))
     rep.results.append(("G5 保真（源↔导出逐行多重集）", ok, "；".join(detail[:3]) or "全部通过"))
 
-    rep.results.append(("G6 覆盖账（catalog 实算）", True,
-                        "见 work/catalog/coverage.md；已入库数 = 通过 G1–G5 的卷数"))
+    # ⚠️ **G6 不许是恒 True 的占位**（Task 10 实捕获）：原稿在此直接 append `True`，
+    # 等于一条**永远不会红**的闸门 —— 比没有更糟，它给的是**假的安心**。
+    # 真判据 = **catalog → 落盘的反向对账**（抓**整卷静默丢失**，本任务最贵的事故）：
+    # ① catalog 里**取得到正文**的每一卷都必须在导出树里落盘；
+    # ② 不设 `limit` 时，落盘 md 数必须**恰好等于**可导出卷数。
+    # 方向与 G5 相反：G5 从 md 出发找 catalog 行，**看不见**「catalog 声称有、树里没有」的整卷。
+    # `limit` 生效时**不做**②（`export.run` 按 catalog 行序切片、`mds` 按路径排序切片，硬比会假红）。
+    # 实现见 `gates._g6(catalog_dir, upstream_xingce, repo_root, mds, limit, failed)`。
+    good, d = _g6(catalog_dir, uproots["xingcezhenti"], repo_root, mds, limit, failed)
+    rep.results.append(("G6 覆盖账（catalog → 落盘反向对账）", good, d))
 
     rep.ok = all(x for _, x, _ in rep.results)
     return rep
