@@ -3170,9 +3170,17 @@ Run:
 cd D:/projects/gwy-zhenti/tools
 export PYTHONIOENCODING=utf-8
 python -X utf8 -m gwyzhenti.cli export --catalog ../work/catalog --upstream "D:/projects/_gwy-upstream" --repo "../work/out20" --limit 20
-python -X utf8 -m gwyzhenti.cli gate --catalog ../work/catalog --upstream "D:/projects/_gwy-upstream" --repo "../work/out20"
+python -X utf8 -m gwyzhenti.cli gate --catalog ../work/catalog --upstream "D:/projects/_gwy-upstream" --repo "../work/out20" --limit 20
 ```
-Expected: 六闸全 OK。**任一 FAIL 就停下来修，不许带着红灯进全量。**
+
+> ⚠️ **`gate` 这一行必须带 `--limit 20`，与上面 `export` 的 `--limit 20` 同口径** —— 否则 **G6 必然假红**。
+> `_g6` 的对账范围 = `rows[:limit] if limit else rows`（`gates.py:233`），而 `export.run` 按**同一 catalog 行序**切片
+> ⇒ 两条命令**必须共用同一个 `limit` 才是同一子集**。若 `gate` 不带 `--limit`，它就按**全部 1263 行**对账，
+> 而 `out20` 里只有 20 卷 ⇒ G6 会报 ~410 卷「未落盘」而红。**这是命令组合错，不是产物缺陷。**
+> （`_g6` 在 `limit` 生效时**已自动跳过**「落盘 md 数 == 可导出卷数」那条 —— 因为 `mds` 按**路径**排序切片、
+> catalog 按**行序**切片，两者不是同一子集，硬比同样会假红。见 `gates.py:239-241`。）
+
+Expected: 六闸全 OK（`limit` 生效时 G6 的说明里会带「limit 生效，未做『数相等』对账」）。**任一 FAIL 就停下来修，不许带着红灯进全量。**
 
 - [ ] **Step 3: 全量导出**
 
@@ -3184,6 +3192,12 @@ python -X utf8 -m gwyzhenti.cli gate   --catalog ../work/catalog --upstream "D:/
 ```
 Expected: 六闸全 OK；`sources` 不含正文的卷（纯 linfukai186）列入 `skipped` 并在报告中如实列出；
 `collided` 非空时（撞 slug 的卷）**另行列出**，不得并入 `skipped` 一句带过（裁定 R-T8-1）。
+
+> ⚠️ **若 G6 在全量里报负，先查一个假设再信它**（Task 10 评审 Minor 2，裁定 R-T10-R2）：
+> `_g6` 的「数相等」判据是 `len(mds) != exportable`，它**默认 `国考/`、`省考/` 下每个 `.md` 都是 catalog 的导出**。
+> 评审已查当前树**无游离 md**、且 `export.run` 只写 `repo_paths()[0]` ⇒ 今天成立。
+> 但若你**自己在 `国考/` 或 `省考/` 下**放过任何非 catalog 的 md（README / index / 手工笔记），G6 会**假红**。
+> **该假设不成立时就地报告**，不要为了「让它绿」而去动判据。
 
 - [ ] **Step 4: 写交付报告（如实，不美化）**
 
