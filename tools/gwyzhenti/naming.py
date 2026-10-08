@@ -85,11 +85,14 @@ def _ptype(region, title):
 
 class Unparsed(Exception):
     """解析不了 —— 进 unparsed.jsonl，绝不静默丢弃。"""
+    UNPARSED = "unparsed"    # 缺陷：必须被 G1 盯住
+    EXCLUDED = "excluded"    # 有意排除：spec §2 非目标
 
-    def __init__(self, reason, title=""):
+    def __init__(self, reason, title="", kind=UNPARSED):
         super().__init__("%s | %s" % (reason, title))
         self.reason = reason
         self.title = title
+        self.kind = kind
 
 
 @dataclass(frozen=True)
@@ -104,10 +107,10 @@ def classify(region, year, title, subject="行测"):
     if not region:
         raise Unparsed("地区字段为空", title)
     if region in EXCLUDE_REGIONS:
-        raise Unparsed("非国省考地区: %s" % region, title)
+        raise Unparsed("非国省考地区: %s" % region, title, kind=Unparsed.EXCLUDED)
     m = EXCLUDE_TITLE.search(title)
     if m:
-        raise Unparsed("试卷名含排除词: %s" % m.group(0), title)
+        raise Unparsed("试卷名含排除词: %s" % m.group(0), title, kind=Unparsed.EXCLUDED)
 
     level = LEVEL_GUOKAO if region == LEVEL_GUOKAO else LEVEL_SHENGKAO
     ptype = _ptype(region, title)

@@ -8,6 +8,10 @@ from .base import ScanResult, SourceAdapter
 
 FAMILY = "xingcezhenti"
 
+# 本 adapter 全部是行测：目录本身即行测六模块。**必须显式带出**，不能靠 classify 默认 ——
+# `classify` 不校验科目，缺省会静默把后续接入的申论源错标成行测。
+SUBJECT = "行测"
+
 # 目录序 **就是** 行测标准顺序（政治理论在最前，覆盖 2025+ 国考新增）
 MODULE_DIRS = (
     "01-政治理论", "02-常识判断", "03-言语理解与表达",
@@ -42,12 +46,12 @@ class XingceZhentiAdapter(SourceAdapter):
         try:
             classify(region, year, title)
         except Unparsed as exc:
-            # 分流：**有意排除**（非国省考地区 / 试卷名含排除词）进 excluded；
-            # **解析不了**（如「地区字段为空」）是缺陷，必须进 unparsed 被 G1 盯住。
-            bucket = res.unparsed if exc.reason.startswith("地区字段为空") else res.excluded
+            # 分流依据是**结构化 kind**，不是 reason 前缀 —— 新增任何 reason 都不会把「缺陷」错分进
+            # 「有意排除」（excluded 不被 G1 盯）。UNPARSED = 缺陷，进 unparsed；EXCLUDED = spec §2 有意排除。
+            bucket = res.unparsed if exc.kind == Unparsed.UNPARSED else res.excluded
             bucket.append({
                 "family": FAMILY, "title": title, "region": region, "year": year,
-                "module": module, "relpath": relpath, "reason": exc.reason,
+                "subject": SUBJECT, "module": module, "relpath": relpath, "reason": exc.reason,
             })
             return
         imgs = mdread.iter_images(text)
@@ -58,6 +62,7 @@ class XingceZhentiAdapter(SourceAdapter):
             "title": title,
             "region": region,
             "year": year,
+            "subject": SUBJECT,
             "module": module,
             "n_questions": actual,
             "relpath": relpath,
