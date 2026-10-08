@@ -2733,7 +2733,13 @@ def run(catalog_dir, uproots, repo_root, limit=None):
             if not os.path.exists(src_abs):
                 rep.skipped.append({"slug": row["slug"], "reason": "源图片缺失: %s" % name})
                 continue
-            dest_abs = os.path.join(repo_root, dest_rel.replace("/", os.sep))
+            # ⚠️ `dest_rel` 是**相对 md 文件**的链接（`../../../图片/…`，写进正文的就是它）；
+            # 落盘必须把它**锚在 md 所在目录**再归一化。**原稿直接 `join(repo_root, dest_rel)`
+            # 是错的** —— 那串 `../` 会从 `repo_root` 再往上跳，图片落到**仓库外**
+            # （Task 9 实现者实测：fixture 下落到 `…\AppData\Local\图片\`，真库会落到 `D:\图片`，
+            # 既污染盘符根、又让 `图片/` 目录根本没建）。此处为已实测的最小修复。
+            dest_abs = os.path.normpath(os.path.join(
+                repo_root, os.path.dirname(md_rel), dest_rel.replace("/", os.sep)))
             if os.path.exists(dest_abs):
                 continue
             os.makedirs(os.path.dirname(dest_abs), exist_ok=True)
