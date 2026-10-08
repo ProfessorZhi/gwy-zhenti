@@ -296,10 +296,15 @@ class TestClassify(unittest.TestCase):
         with self.assertRaises(Unparsed):
             classify("", "2020", "某卷")
 
+    def test_xuandiao_in_title_is_excluded(self):
+        # 地区字段是「四川」，但标题是选调卷 —— 必须由**标题**排除词拦下
+        with self.assertRaises(Unparsed):
+            classify("四川", "2016",
+                     "2016年3月四川省选调优秀大学生到基层工作考试 行政职业能力测验试卷（精选）")
+
     def test_selected_nature(self):
-        c = classify("四川", "2016", "2016年3月四川省选调优秀大学生到基层工作考试 行政职业能力测验试卷（精选）")
-        # 「选调」在标题里但地区不是选调 —— 由标题排除词拦下
-        self.assertTrue(True)
+        c = classify("四川", "2016", "2016年四川省公务员录用考试《行测》题（精选）")
+        self.assertEqual(c.nature, "精选")
 
     def test_reason_is_populated(self):
         try:
@@ -329,7 +334,7 @@ from .model import LEVEL_GUOKAO, LEVEL_SHENGKAO, PaperKey
 # 实测存在的非国省考地区值
 EXCLUDE_REGIONS = {"选调", "深圳市考", "广州市考"}
 # 标题里的排除词（实测样本：法检统一考录、司法所、事业编、职测、综应、模考）
-EXCLUDE_TITLE = re.compile(r"法检|司法所|事业编|事业单位|职测|综应|模考|公开课|模拟")
+EXCLUDE_TITLE = re.compile(r"选调|法检|司法所|事业编|事业单位|职测|综应|模考|公开课|模拟")
 
 # 卷型：**长模式在前**，先命中先返回
 PTYPE_RULES = (
@@ -370,8 +375,9 @@ def classify(region, year, title, subject="行测"):
         raise Unparsed("地区字段为空", title)
     if region in EXCLUDE_REGIONS:
         raise Unparsed("非国省考地区: %s" % region, title)
-    if EXCLUDE_TITLE.search(title):
-        raise Unparsed("试卷名含排除词", title)
+    m = EXCLUDE_TITLE.search(title)
+    if m:
+        raise Unparsed("试卷名含排除词: %s" % m.group(0), title)
 
     level = LEVEL_GUOKAO if region == LEVEL_GUOKAO else LEVEL_SHENGKAO
     ptype = "统考"
@@ -750,6 +756,7 @@ git commit -m "feat(tools): Markdown 读取原语 + 微型上游样本"
 - Create: `tools/gwyzhenti/sources/base.py`
 - Create: `tools/gwyzhenti/sources/xingcezhenti.py`
 - Create: `tools/tests/test_src_xingcezhenti.py`
+- Create: `tools/tests/smoke_xingcezhenti.py`（手工冒烟，不进 `unittest discover`）
 
 **Interfaces:**
 - Consumes: `PaperKey`（Task 1）、`paper_slug`（Task 1）、`classify/Unparsed`（Task 2）、`mdread`（Task 3）
@@ -946,17 +953,48 @@ Expected: PASS，5 tests OK
 
 - [ ] **Step 5: 真库冒烟（**唯一读 340MB 真库的测试**，慢）**
 
+写 `tools/tests/smoke_xingcezhenti.py`（**不作为 unittest**；不用 `python -c`，免得引号被 shell 吃掉）：
+```python
+# -*- coding: utf-8 -*-
+"""真库冒烟：读本机 xingcezhenti 克隆，核对题数与排除项。手工运行。"""
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from gwyzhenti.sources.xingcezhenti import XingceZhentiAdapter      # noqa: E402
+
+ROOT = r"D:\projects\_gwy-upstream\xingcezhenti"
+
+
+def main():
+    res = XingceZhentiAdapter().scan(ROOT)
+    total = sum(r["n_questions"] for r in res.records)
+    print("records %d | unparsed %d | excluded %d | 题数合计 %d"
+          % (len(res.records), len(res.unparsed), len(res.excluded), total))
+    reasons = {}
+    for e in res.excluded:
+        reasons[e["reason"]] = reasons.get(e["reason"], 0) + 1
+    for k in sorted(reasons):
+        print("  excluded %4d  %s" % (reasons[k], k))
+    assert total == 58890, "题数合计应为 58890，实得 %d" % total
+
+
+if __name__ == "__main__":
+    main()
+```
+
 Run:
 ```bash
-cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -c "import sys,os;sys.path.insert(0,'.');from gwyzhenti.sources.xingcezhenti import XingceZhentiAdapter as A;r=A().scan(r'D:\projects\_gwy-upstream\xingcezhenti');print('records',len(r.records),'unparsed',len(r.unparsed),'excluded',len(r.excluded));print('题数合计',sum(x['n_questions'] for x in r.records))"
+cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 tests/smoke_xingcezhenti.py
 ```
-Expected: `题数合计 58890`（与 README 一致）；`excluded` 含 `选调`/`深圳市考`/`广州市考` 三类。
+Expected: `题数合计 58890`；`excluded` 理由分布含 `非国省考地区: 选调` / `非国省考地区: 深圳市考` / `非国省考地区: 广州市考`。
 
 - [ ] **Step 6: 提交**
 
 ```bash
 cd D:/projects/gwy-zhenti
-git add tools/gwyzhenti/sources/__init__.py tools/gwyzhenti/sources/base.py tools/gwyzhenti/sources/xingcezhenti.py tools/tests/test_src_xingcezhenti.py
+git add tools/gwyzhenti/sources/__init__.py tools/gwyzhenti/sources/base.py tools/gwyzhenti/sources/xingcezhenti.py tools/tests/test_src_xingcezhenti.py tools/tests/smoke_xingcezhenti.py
 git commit -m "feat(tools): xingcezhenti adapter（卷×模块清单 + 排除/未解析分流）"
 ```
 
@@ -1186,11 +1224,12 @@ class TestCatalog(unittest.TestCase):
 
     def test_catalog_one_paper_one_line(self):
         rows = jl(os.path.join(self.out, "catalog.jsonl"))
-        # fixture: 四川卷 2016（两模块）+ 江苏A类 2020 ⇒ 2 卷
-        self.assertEqual(len(rows), 2)
+        # fixture: 四川卷 2016（两模块）+ 江苏A类 2020 + linfukai186 的 2026 国考副省级 ⇒ 3 卷
+        self.assertEqual(len(rows), 3)
         titles = {r["title"] for r in rows}
         self.assertEqual(titles, {"2016年423联考《行测》题（四川卷）",
-                                  "2020年江苏省公务员录用考试《行测》题（A类）"})
+                                  "2020年江苏省公务员录用考试《行测》题（A类）",
+                                  "2026·国家公务员考试副省级"})
 
     def test_catalog_row_shape(self):
         rows = jl(os.path.join(self.out, "catalog.jsonl"))
@@ -1205,9 +1244,9 @@ class TestCatalog(unittest.TestCase):
         self.assertEqual(r["sources"], ["xingcezhenti"])
 
     def test_report_totals(self):
-        self.assertEqual(self.rep.papers, 2)
-        self.assertEqual(self.rep.records, 3)          # 卷×模块
-        self.assertEqual(self.rep.questions, 4)        # 1+2+1
+        self.assertEqual(self.rep.papers, 3)           # 含 linfukai186 的 2026 国考副省级
+        self.assertEqual(self.rep.records, 4)          # 卷×模块
+        self.assertEqual(self.rep.questions, 5)        # 1+2+1 + 1（linfukai186）
 
     def test_coverage_matrix_has_region_rows(self):
         with open(os.path.join(self.out, "coverage.md"), encoding="utf-8") as fh:
@@ -1541,6 +1580,9 @@ from gwyzhenti import render        # noqa: E402
 from gwyzhenti.model import PaperKey    # noqa: E402
 
 FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "xingcezhenti")
+# 源里的写法 → 导出后应有的写法（测试与 image_map 共用同一常量，避免两处各写一遍写岔）
+SRC_IMG = "../90-图片/题目图/154428b1a538147.png"
+IMG_OUT = "../../../图片/省考-四川-2016-行测-统考/题目图/154428b1a538147.png"
 
 
 def load(*p):
@@ -1558,7 +1600,7 @@ class TestRender(unittest.TestCase):
         self.out = render.render_paper(
             self.parts, self.key, nature="正式真题", form="联考",
             sources=["xingcezhenti"], modules=["常识判断", "资料分析"],
-            image_map={"../90-图片/题目图/154428b1a538147.png": "../../../图片/省考-四川-2016-行测-统考/题目图/154428b1a538147.png"},
+            image_map={SRC_IMG: IMG_OUT},
         )
 
     def test_no_checkmark_anywhere(self):
@@ -1580,22 +1622,32 @@ class TestRender(unittest.TestCase):
         self.assertEqual(nums, [1, 2, 3])
 
     def test_images_rewritten_and_collected(self):
-        self.assertIn("../../../图片/省考-四川-2016-行测-统考/题目图/154428b1a538147.png", self.out.body)
+        self.assertIn(IMG_OUT, self.out.body)
         self.assertNotIn("../90-图片/", self.out.body)
-        self.assertEqual(self.out.images_used,
-                         ["../../..//图片/省考-四川-2016-行测-统考/题目图/154428b1a538147.png"])
+        self.assertEqual(self.out.images_used, [IMG_OUT])
 
     def test_frontmatter_contract(self):
         head = self.out.body.split("---")[1]
         for k in ("考试", "地区", "年份", "科目", "卷型", "真题性质", "来源", "校验状态", "题号口径"):
             self.assertIn(k, head)
 
-    def test_revert_restores_source_lines(self):
-        for part in self.parts:
-            self.assertEqual(render.revert_to_lines(self.out.body, part), part.split("\n"))
+    def test_g5_diff_is_empty_against_source(self):
+        # 导出 vs 源：除声明过的结构性差异外，逐行多重集必须相等（零内容增删）
+        removed, added = render.diff_report(self.out.body, self.parts)
+        self.assertEqual(removed, [], "源里有、导出里没有的行")
+        self.assertEqual(added, [], "导出里多出来、源里没有的行")
+
+    def test_g5_diff_catches_a_perturbation(self):
+        # 把正文里**第一处 A 选项行**的数字改掉 ⇒ 必须被判为「源里有、导出没有」
+        bad = re.sub(r"(?m)^(- \*\*A\*\*\. )(\d+)", r"\g<1>999999", self.out.body, count=1)
+        self.assertNotEqual(bad, self.out.body, "fixture 里没有可扰动的 A 选项行")
+        removed, _ = render.diff_report(bad, self.parts)
+        self.assertTrue(removed, "扰动后 diff 必须非空")
 ```
 
-> 注：`images_used` 的期望值在实现时以**写入 image_map 的字符串原样**为准 —— 测试里刻意用同一常量避免重复书写。
+> 注：`images_used` 的期望值与 `image_map` 共用 `IMG_OUT` 常量，避免同一路径两处各写一遍写岔。
+> `diff_report` 是 G5 的判据 —— **不要求**导入导出互为逆变换（题号重建本就不是逆变换），
+> 要求的是「除声明项外逐行多重集相等」。图片路径按**文件名**比对（源 `../90-图片/…` vs 导出 `../../../图片/…`）。
 
 - [ ] **Step 2: 跑测试确认失败**
 
@@ -1616,8 +1668,8 @@ Expected: FAIL —— `ModuleNotFoundError: No module named 'gwyzhenti.render'`
   4 图片重写（相对路径按输出深度计算）
   5 frontmatter 契约
 """
-import io
 import re
+from collections import Counter
 from dataclasses import dataclass, field
 
 from . import mdread
@@ -1685,27 +1737,29 @@ def render_paper(parts, key, *, nature, form, sources, modules, image_map):
     standard = [m for m in MODULE_ORDER if m in set(modules)]
     numbering = "原卷重建" if standard == list(modules) else "模块内序号"
 
-    head, blocks, answers, used = [], [], [], []
+    blocks, answers, used = [], [], []
     offset = 0
     for part, module in zip(parts, modules):
         pre, qblocks = mdread.split_question_blocks(part)
-        if not head:
-            head = [ln for ln in pre if ln.strip() != "---" and not mdread.FM_LINE.match(ln)]
-            # 丢掉源 frontmatter、标题一级标题与引言块，稍后重建
-            head = _body_head(pre)
+        # 每个部分的前导正文（含 `## 材料 N` 与材料图）按**原位**进正文 ——
+        # 只取第一部分会把后续部分的材料整段丢掉（资料分析作第二模块时必现）。
+        seg = mdread.strip_leak(_body_head(pre))
+        if seg:
+            if blocks:
+                blocks += [""]
+            blocks += seg
         for b in qblocks:
             stem, ans, tail = mdread.split_answer(b)
-            blocks.append(_renumber(mdread.strip_leak(stem), offset))
+            blocks += _renumber(mdread.strip_leak(stem), offset)
             if tail:
-                blocks.append(mdread.strip_leak(tail))
+                blocks += mdread.strip_leak(tail)
             if ans:
                 answers.append((int(mdread.QHEAD.match(b[0]).group(1)) + offset,
                                 mdread.strip_leak(ans)))
         offset += len(qblocks)
 
     # 4) 图片重写（在正文与答案里都要做）
-    flat = [ln for blk in blocks for ln in blk]
-    flat, u1 = _rewrite_images(flat, image_map)
+    flat, u1 = _rewrite_images(blocks, image_map)
     used.extend(u1)
     ans_lines = []
     for num, al in answers:
@@ -1754,45 +1808,69 @@ def _body_head(pre):
     return out
 
 
-def revert_to_lines(body, source_text):
-    """G5 的反函数：把导出正文还原成**源文件**的行序列（用于逐行对账）。
+LEAK_SUB = re.compile(r"[　\s]*✅")
+QNUM_ANY = re.compile(r"^(#{2,4})\s*第\s*\d+\s*题(.*)$")
+SRC_ATTR = re.compile(r'(src=")(?:[^"]*/)?([^"/]+)(")')
+# 我们**声明过**要新增或删除的结构行；G5 在两侧都剔除它们
+STRUCTURAL = re.compile(
+    r"^\s*(---|#{1,2}\s*答案与解析|<details>|</details>|<summary>.*</summary>)\s*$")
+FM_BLOCK = re.compile(r"\A(?:---\n.*?\n---\n)", re.S)
 
-    构造性验证：从 body 里取回题干行（剥掉我们新增的前导/frontmatter/答案区），
-    再把答案块按题号插回各自位置，最后补回 ✅。任何一步对不上就返回不等的结果。
+
+def _strip_declared(text):
+    """剔除双方共有的「声明过的结构性差异」：frontmatter 块、一级标题、引言、答案区容器、空行。"""
+    text = FM_BLOCK.sub("", text)
+    out = []
+    for ln in text.split("\n"):
+        if not ln.strip():
+            continue
+        if ln.startswith("# ") or ln.startswith("> "):
+            continue
+        if STRUCTURAL.match(ln):
+            continue
+        out.append(ln)
+    return out
+
+
+def _normalize(lines):
+    """可比较形态：去 ✅（连前导全角空格）、`第 N 题` 编号抹成 `?`、图片路径只留文件名。"""
+    out = []
+    for ln in lines:
+        ln = LEAK_SUB.sub("", ln)
+        ln = QNUM_ANY.sub(lambda m: "%s 第 ? 题%s" % (m.group(1), m.group(2)), ln)
+        ln = SRC_ATTR.sub(lambda m: m.group(1) + m.group(2) + m.group(3), ln)
+        out.append(ln)
+    return out
+
+
+def diff_report(out_text, src_texts):
+    """G5 判据：导出 vs 源，返回 (源里有而导出没有的行, 导出有而源里没有的行)，各为排序后的列表。
+
+    两侧都剔除**声明过的**结构性差异后做逐行多重集比较 —— 即**零内容增删**。
+    刻意**不**做「导入导出互为逆变换」：题号重建本就不是逆变换，硬构造逆向只会把判据做脆。
     """
-    src = source_text.split("\n")
-    # 1) 去掉我们新增的前导（frontmatter + 一级标题 + 引言块），从源的前导重建
-    src_pre, src_blocks = mdread.split_question_blocks(source_text)
-    # 2) 从 body 里抽出所有题干行与答案块
-    body_lines = body.split("\n")
-    b_pre, b_blocks = mdread.split_question_blocks(body)
-    if len(b_blocks) != len(src_blocks):
-        return src  # 长度不符 —— 交由 G5 报错
-    body_answers = {}
-    for blk in b_blocks:
-        n = int(mdread.QHEAD.match(blk[0]).group(1))
-        body_answers[n] = blk
-    return src
+    src_lines = []
+    for t in src_texts:
+        src_lines += _strip_declared(t)
+    cs = Counter(_normalize(src_lines))
+    co = Counter(_normalize(_strip_declared(out_text)))
+    return sorted((cs - co).elements()), sorted((co - cs).elements())
 ```
 
-> **实现提示（务必按此收口，避免测试失败）**：`revert_to_lines` 的**完整可用版**需要：
-> ① 把 body 的题干块按 `第 N 题` 号映射回源块号；
-> ② 从 `## 答案与解析` 区里的 `<details>` 取回每题的答案行；
-> ③ 重建源行序 = `源前导 + Σ(题干(含 ✅ 补回) + 答案 + 尾)`；
-> ④ `✅` 补回 = 在 `- **X**.` 行尾追加 `　✅`，X 取 `**答案**：X` 的字母。
-> 先用 Steps 1 的测试把接口钉住，再把它写实；**测试期望的是与源逐行相等**。
+> **实现提示**：`import` 段要把 `from collections import Counter` 加上。G5 的判据是**多重集相等**，
+> 不是逆变换 —— 别去写「把导出还原成源」的反函数，那条路会为了对齐 ✅ 与题号把判据做脆。
 
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_render -v`
-Expected: PASS，7 tests OK
+Expected: PASS，8 tests OK
 
 - [ ] **Step 5: 提交**
 
 ```bash
 cd D:/projects/gwy-zhenti
 git add tools/gwyzhenti/render.py tools/tests/test_render.py
-git commit -m "feat(tools): 段二单卷渲染（合并/题号/去泄露/图片/frontmatter + 反函数）"
+git commit -m "feat(tools): 段二单卷渲染（合并/题号/去泄露/图片/frontmatter + G5 对账）"
 ```
 
 ---
@@ -1948,7 +2026,6 @@ def _parts_for(row, upstream_xingce):
     want = [m for m in render.MODULE_ORDER if m in row["modules"]]
     parts, got = [], []
     for module in want:
-        rel = "%s/%s.md" % (module, row["title"])
         # 模块目录前缀
         prefix = {"政治理论": "01-政治理论", "常识判断": "02-常识判断",
                   "言语理解与表达": "03-言语理解与表达", "数量关系": "04-数量关系",
@@ -2085,7 +2162,7 @@ class TestGates(unittest.TestCase):
         with open(md, encoding="utf-8") as fh:
             text = fh.read()
         text = text.replace("154428b1a538147.png", "missing-zzz.png")
-        with open(md, "w", encoding="utf-8") as fh:
+        with open(md, "w", encoding="utf-8", newline="\n") as fh:
             fh.write(text)
         rep = gates.run_all(self.cat, {"xingcezhenti": os.path.join(FIX, "xingcezhenti")}, self.repo)
         self.assertFalse(rep.ok)
@@ -2110,7 +2187,8 @@ import os
 import re
 from dataclasses import dataclass, field
 
-from . import mdread, render
+from . import export, mdread, render
+from .model import PaperKey
 
 IMG = re.compile(r'<img\b[^>]*?src="([^"]+)"[^>]*>')
 QHEAD = re.compile(r'^#{2,4}\s*第\s*(\d+)\s*题')
@@ -2185,13 +2263,28 @@ def _g3(md_path):
     return True, "无泄露"
 
 
-def _g5(md_path, upstream_xingce):
-    """保真：渲染出的行多重集 == 源行多重集，扣除已声明的结构性差异。"""
+def _g5(md_path, catalog_dir, upstream_xingce, repo_root):
+    """保真：导出正文 vs 源，逐行**多重集**比较（`render.diff_report`），要求零内容增删。"""
+    rel = os.path.relpath(md_path, repo_root).replace(os.sep, "/")
+    row = None
+    for r in export.load_catalog(catalog_dir):
+        md_rel, _ = export.repo_paths(
+            PaperKey(r["level"], r["region"], r["year"], r["subject"], r["ptype"]), r["slug"])
+        if md_rel == rel:
+            row = r
+            break
+    if row is None:
+        return False, "catalog 里找不到该卷: %s" % rel
+    parts, _ = export._parts_for(row, upstream_xingce)
+    if not parts:
+        return False, "源文件缺失"
     with io.open(md_path, encoding="utf-8") as fh:
-        out_lines = fh.read().split("\n")
-    # 由 md 路径推回源卷名：用 md 里的一级标题 × 模块目录穷举匹配成本高；
-    # 这里改用 manifest 反查（见 _load_manifest）——由调用方注入。
-    return True, "见 run_all 中的逐卷实现"
+        out_text = fh.read()
+    removed, added = render.diff_report(out_text, parts)
+    if removed or added:
+        return False, "源有导出无 %d 行 / 导出有源无 %d 行；例：%s" % (
+            len(removed), len(added), (removed or added)[:2])
+    return True, "零内容增删"
 
 
 def run_all(catalog_dir, uproots, repo_root, limit=None):
@@ -2243,28 +2336,46 @@ def run_all(catalog_dir, uproots, repo_root, limit=None):
                     detail.append("sha 不符 %s" % e["path"])
     rep.results.append(("G4 manifest 与文件一致", ok, "；".join(detail[:3]) or "一致"))
 
-    rep.results.append(("G5 保真（源↔导出逐行）", True, "由 render.revert_to_lines 逐卷对账，见 Task 8 测试"))
+    ok, detail = True, []
+    for md in mds:
+        good, d = _g5(md, catalog_dir, uproots["xingcezhenti"], repo_root)
+        if not good:
+            ok = False
+            detail.append("%s: %s" % (os.path.basename(md), d))
+    rep.results.append(("G5 保真（源↔导出逐行多重集）", ok, "；".join(detail[:3]) or "全部通过"))
+
     rep.results.append(("G6 覆盖账（catalog 实算）", True,
-                        "见 work/catalog/coverage.md；已入库数 = 通过 G1–G3 的卷数"))
+                        "见 work/catalog/coverage.md；已入库数 = 通过 G1–G5 的卷数"))
 
     rep.ok = all(x for _, x, _ in rep.results)
     return rep
 ```
 
-> **注**：`_g5` 与 G6 在本任务里只落**接口与占位说明**，其真实校验分别在 Task 8 的 `revert_to_lines` 测试与
-> `coverage.md` 里完成。**Step 5 要求你把 `_g5` 改成逐卷真跑**（用 manifest 反查源文件），并在测试里
-> 加一条「故意改一个字符 ⇒ G5 报错」。
+> **注**：G6 在本任务里只落**接口与占位说明**，其口径核对在 `coverage.md` 与 Task 11 Step 4 的报告里完成
+> （「已入库」只能指**通过 G1–G5** 的卷）。`_g5` 是**逐卷真跑**，不是占位。
 
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_gates -v`
 Expected: PASS，3 tests OK
 
-- [ ] **Step 5: 把 `_g5` 写成逐卷真跑**
+- [ ] **Step 5: 加 G5 扰动测试**
 
-在 `run_all` 里用 `manifest.jsonl` 反查每卷的源文件绝对路径（由 `path` 推回 `title` 与模块），
-对每卷执行 `render.revert_to_lines(导出正文, 源文本)` 并要求**逐行相等**；不等则 G5 不通过并列出错卷。
-随后补一条测试：把某卷 md 的一个字符改掉 ⇒ `G5` 报错。
+在 `tools/tests/test_gates.py` 追加（**必须能证明 G5 真的会失败**，否则它只是一条永远绿的闸）：
+```python
+    def test_g5_detects_content_change(self):
+        md = os.path.join(self.repo, "省考/四川/2016/行测-统考.md")
+        with open(md, encoding="utf-8") as fh:
+            text = fh.read()
+        perturbed = re.sub(r"(?m)^(- \*\*A\*\*\. )(\d+)", r"\g<1>999999", text, count=1)
+        self.assertNotEqual(perturbed, text, "fixture 里没有可扰动的 A 选项行")
+        with open(md, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(perturbed)
+        rep = gates.run_all(self.cat, {"xingcezhenti": os.path.join(FIX, "xingcezhenti")}, self.repo)
+        self.assertFalse(rep.ok)
+        self.assertTrue(any(n.startswith("G5") and not ok for n, ok, _ in rep.results))
+```
+（`test_gates.py` 顶部若无 `import re` 请补上。）
 
 - [ ] **Step 6: 提交**
 
@@ -2414,5 +2525,5 @@ git commit -m "docs: 登记实测接入的源与管线用法"
 **3. 类型一致性**：`ScanResult` / 记录键在 Task 4 定义、Task 5 复用；`PaperKey` 字段名在 Task 1/2/6/9 一致；`RenderedPaper` 字段在 Task 8/9 一致；`ExportReport.manifest_path` 在 Task 9/10 一致。
 
 **已知缺口（交付时必须照实说）**：
-- `render.revert_to_lines` 的**完整实现**是本计划里最难的一段，Task 8 Step 3 给了骨架与明确收口要求，Step 4 的测试是唯一验收标准 —— 实现时若发现骨架与测试冲突，**以测试为准**。
+- G5 的判据是**「除声明项外逐行多重集相等」**（`render.diff_report`），**不是**「导入导出互为逆变换」—— 题号重建本就不是逆变换，构造逆向只会把判据做脆。`_strip_declared` 会把两侧的 `# ` / `> ` 开头行一并剔除，故**改动只发生在这类行**时 G5 看不见（已知的窄面）。
 - G6 的「已入库 = 通过 G1–G5 的卷」需要 CLI 把两次 `gate` 的结果汇总，Task 11 Step 4 的报告里手工确保口径一致。
