@@ -538,7 +538,7 @@ git commit -m "feat(tools): 试卷名解析表（层级/卷型/性质/排除）"
   - `count_questions(text) -> int`
   - `iter_images(text) -> list[tuple[str, str]]`（`(类型, 相对路径)`，类型 ∈ `{题目图, 公式图}`）
   - `split_question_blocks(text) -> tuple[list[str], list[list[str]]]`（`(前导行, 题块列表)`）
-  - `split_answer(block) -> tuple[list[str], list[str], list[str]]`（`(题干行, 答案行, 尾行)`）
+  - `split_answer(block) -> tuple[list[str], list[str], list[str]]`（`(题干行, 答案行, 尾行)`；**尾行去掉尾随空行**，行内空行保留）
   - `strip_leak(lines) -> list[str]`
   - `correct_option(block) -> str | None`（从 `**答案**：X` 取字母）
   - 常量 `QHEAD`, `ANS`, `IMG`
@@ -730,6 +730,28 @@ class TestMdRead(unittest.TestCase):
         self.assertTrue(any("公路最大" in ln for ln in ans2))
         self.assertEqual(tail2, [])
 
+    def test_tail_drops_trailing_blanks_but_keeps_material(self):
+        # 尾行是 Task 8 把 `## 材料 N` 及其图片**送回正文**的通道 —— 只丢尾随空行，
+        # 行内空行与内容行必须原样保留（`split("\n")` 会为文件末尾换行多产一个 ""）
+        block = ["### 第 1 题　<sub>qid 1 · 综合</sub>",
+                 "- **A**. 340.2",
+                 "**答案**：A",
+                 "",
+                 "---",
+                 "",
+                 "## 材料 2",
+                 "",
+                 '<img width="700px" height="173px" src="../90-图片/题目图/154428b1a538147.png" />',
+                 "",
+                 ""]
+        stem, ans, tail = mdread.split_answer(block)
+        self.assertEqual(stem[:2], ["### 第 1 题　<sub>qid 1 · 综合</sub>", "- **A**. 340.2"])
+        self.assertEqual(ans, ["**答案**：A", "", "---"])
+        self.assertEqual(tail, ["",
+                                "## 材料 2",
+                                "",
+                                '<img width="700px" height="173px" src="../90-图片/题目图/154428b1a538147.png" />'])
+
     def test_strip_leak_removes_checkmark_only(self):
         lines = ["- **B**. 353.9　✅", "- **A**. 340.2", "**答案**：B"]
         self.assertEqual(mdread.strip_leak(lines),
@@ -810,6 +832,9 @@ def split_answer(block):
 
     答案行 = 首个 `**答案**：` 起，到其后**第一个** `---` 分隔线（含）。
     尾行 = 该分隔线之后的内容（例如下一段 `## 材料 N`），必须回正文，不能算答案。
+    **尾随空行不计入尾行** —— 题块之间/文件末尾的空行是 `split("\\n")` 的排版噪声，不是内容
+    （`（20 行 fixture 末尾的换行 ⇒ 多出一个 ""`）；**行内的空行保留**，`## 材料 N` 与其图片
+    之间的空行属于正文结构。
     无答案标记时 → (block, [], [])。
     """
     start = None
@@ -826,7 +851,10 @@ def split_answer(block):
             break
     if end is None:
         return block, [], []
-    return block[:start], block[start:end + 1], block[end + 1:]
+    tail = block[end + 1:]
+    while tail and not tail[-1].strip():
+        tail.pop()
+    return block[:start], block[start:end + 1], tail
 
 
 def strip_leak(lines):
@@ -846,7 +874,7 @@ def correct_option(block):
 - [ ] **Step 5: 跑测试确认通过**
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_mdread -v`
-Expected: PASS，10 tests OK
+Expected: PASS，11 tests OK
 
 - [ ] **Step 6: 提交**
 
