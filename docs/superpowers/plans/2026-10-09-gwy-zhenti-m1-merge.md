@@ -14,6 +14,7 @@
 
 - **落点**：管线代码 `gwy-zhenti/tools/`；上游只读克隆 `D:\projects\_gwy-upstream\<repo>`；中间产物 `gwy-zhenti/work/`；导出 `gwy-zhenti/{国考,省考,图片}/`。
 - **本计划只写 `gwy-zhenti`**。绝不写 `gwy-material-ops/knowledge/`。
+- **换行**：导出产物一律 **LF**；仓库根 `.gitattributes` 钉 `*.md text eol=lf` + 图片 `binary`。**产物逐字节稳定是 G4/G5 的判据**，不得放宽。
 - **不改写题干 / 选项 / 答案 / 解析**；除 §六项变换外零改写。
 - **Windows 执行约定**：所有 Python 调用用 `PYTHONIOENCODING=utf-8 PYTHONDONTWRITEBYTECODE=1 python -X utf8 …`；**带引号的长 Python 一律写成文件再跑，不用 heredoc**。
 - **D 盘是 HDD + `sfavsvc`**：读可并发，**写盘串行**；测试用 `tools/tests/fixtures/` 小样本，只有显式标注的冒烟测试才读真库。
@@ -98,6 +99,7 @@ gwy-zhenti/
 
 **Files:**
 - Create: `D:\projects\gwy-zhenti\.gitignore`
+- Create: `D:\projects\gwy-zhenti\.gitattributes`
 - Create: `tools/gwyzhenti/__init__.py`
 - Create: `tools/gwyzhenti/model.py`
 - Create: `tools/gwyzhenti/slug.py`
@@ -206,6 +208,17 @@ __pycache__/
 *.pyc
 ```
 
+`.gitattributes`（仓库根）—— **本仓产物必须逐字节稳定**：本机 `core.autocrlf=true`，检出时会把 `.md` 变成 CRLF，
+使 G4/G5 的 sha 在别的机器上失真，故在此钉死：
+```
+*.md text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+```
+
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_slug -v`
@@ -215,7 +228,7 @@ Expected: PASS，5 tests OK
 
 ```bash
 cd D:/projects/gwy-zhenti
-git add .gitignore tools/gwyzhenti/__init__.py tools/gwyzhenti/model.py tools/gwyzhenti/slug.py tools/tests/__init__.py tools/tests/test_slug.py
+git add .gitignore .gitattributes tools/gwyzhenti/__init__.py tools/gwyzhenti/model.py tools/gwyzhenti/slug.py tools/tests/__init__.py tools/tests/test_slug.py
 git commit -m "feat(tools): 骨架 + 卷键 + 确定性卷标识"
 ```
 
