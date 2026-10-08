@@ -1707,7 +1707,8 @@ class TestCatalog(unittest.TestCase):
         self.assertEqual(r["slug"], "省考-四川-2016-行测-统考")
         # **跨源合并**：xingcezhenti 的 常识 1 + 资料 2，与 linfukai186 的 数量关系 1
         self.assertEqual(r["n_questions"], 4)
-        self.assertEqual(sorted(r["modules"]), ["常识判断", "资料分析", "数量关系"])
+        # 码点序（常 U+5E38 < 数 U+6570 < 资 U+8D44）；**不是**逻辑序 —— 这里刻意用 sorted() 钉死可复现性
+        self.assertEqual(sorted(r["modules"]), ["常识判断", "数量关系", "资料分析"])
         self.assertEqual(r["sources"], ["linfukai186", "xingcezhenti"])
         # **逐源保真**：两个源的原始卷名各自留存
         self.assertEqual(r["titles"], {
@@ -1728,7 +1729,7 @@ class TestCatalog(unittest.TestCase):
         self.assertEqual(self.rep.records, 11)      # xingcezhenti 3 + linfukai186 8（卷×模块）
         self.assertEqual(self.rep.questions, 12)    # xingcezhenti 4 + linfukai186 8
         self.assertEqual(self.rep.unparsed, 0)
-        self.assertEqual(self.rep.excluded, 2)      # 深圳市考卷 + 模考卷
+        self.assertEqual(self.rep.excluded, 3)      # 深圳市考 1 + 模考 2（Task 5 fixture 另有一条无地区模考卷）
         self.assertEqual(dict(self.rep.by_subject), {"行测": 5, "申论": 2})
 
     def test_coverage_matrix_has_region_rows(self):
