@@ -2,9 +2,12 @@
 import os
 import sys
 import unittest
+from unittest import mock
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from gwyzhenti import naming                                              # noqa: E402
+from gwyzhenti.sources import xingcezhenti as xz_mod                      # noqa: E402
 from gwyzhenti.sources.xingcezhenti import XingceZhentiAdapter, MODULE_DIRS   # noqa: E402
 
 FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "xingcezhenti")
@@ -78,3 +81,30 @@ class TestRouting(unittest.TestCase):
     def test_bucket_keys_are_frozen(self):
         for b in self.res.unparsed + self.res.excluded:
             self.assertEqual(set(b), BUCKET_KEYS)
+
+
+class TestRoutingFollowsKindNotReasonText(unittest.TestCase):
+    """钉死分流判据是 `exc.kind`，**不是** `reason` 文本。
+
+    旧写法 `reason.startswith("地区字段为空")` 会把「前缀不认识的新 reason」错分进
+    `excluded` 桶（不被 G1 盯）。这组测试用**与任何既有 reason 都不同**的陌生 reason
+    构造输入，故：**改回前缀分流 → 必红**。
+    """
+
+    def _route(self, exc):
+        with mock.patch.object(xz_mod, "classify", side_effect=exc):
+            return XingceZhentiAdapter().scan(FIX)
+
+    def test_unfamiliar_reason_with_unparsed_kind_lands_in_unparsed(self):
+        res = self._route(naming.Unparsed("年份缺失", "某卷",
+                                          kind=naming.Unparsed.UNPARSED))
+        self.assertEqual(len(res.records), 0)
+        self.assertEqual(len(res.excluded), 0)
+        self.assertEqual(len(res.unparsed), 3)      # FIX 下共有 3 个 md，全部命中
+
+    def test_unfamiliar_reason_with_excluded_kind_lands_in_excluded(self):
+        res = self._route(naming.Unparsed("某种新排除", "某卷",
+                                          kind=naming.Unparsed.EXCLUDED))
+        self.assertEqual(len(res.records), 0)
+        self.assertEqual(len(res.unparsed), 0)
+        self.assertEqual(len(res.excluded), 3)

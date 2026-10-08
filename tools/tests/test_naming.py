@@ -117,3 +117,30 @@ class TestClassify(unittest.TestCase):
         # 「公检法」与 spec 已排除的「法检」同属系统内招录 ⇒ 一并排除
         with self.assertRaises(Unparsed):
             classify("黑龙江", "2016", "2016年黑龙江省公务员考试《行测》题（公检法卷）")
+
+
+class TestUnparsedKind(unittest.TestCase):
+    """锁死 `classify` 抛错时的 `kind` —— 分流只认它，不认 `reason` 文本。"""
+
+    def test_region_and_title_exclusions_are_excluded_kind(self):
+        # 三组输入各自走一条排除路径（地区排除 / 标题排除词），都必须是 EXCLUDED
+        for region, title in (
+            ("选调", "2016年某省行测真题"),
+            ("深圳市考", "2016年深圳市公务员考试《行测》题"),
+            ("四川", "2016年四川省考行测模考大赛"),
+        ):
+            with self.assertRaises(Unparsed) as cm:
+                classify(region, "2016", title)
+            self.assertEqual(cm.exception.kind, Unparsed.EXCLUDED, title)
+
+    def test_empty_region_is_unparsed_kind(self):
+        with self.assertRaises(Unparsed) as cm:
+            classify("", "2016", "2016年某省行测真题")
+        self.assertEqual(cm.exception.kind, Unparsed.UNPARSED)
+        self.assertTrue(cm.exception.reason.startswith("地区字段为空"))
+
+    def test_kind_defaults_to_unparsed(self):
+        # **默认值就是判据的一部分**：将来新增 reason（如「年份缺失」）若忘了标 kind，
+        # 默认必须落在 UNPARSED（缺陷侧，被 G1 盯）；默认成 EXCLUDED 会让新缺陷
+        # **静默**落进 excluded.jsonl。
+        self.assertEqual(Unparsed("某个新理由", "某卷").kind, Unparsed.UNPARSED)
