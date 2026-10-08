@@ -2496,7 +2496,16 @@ git commit -m "feat(tools): 段二单卷渲染（合并/题号/去泄露/图片/
 - Produces:
   - `export.repo_paths(key, slug) -> tuple[str, str]`（`(md 相对路径, 图片目录相对路径)`）
   - `export.run(catalog_dir, upstream, repo_root, limit=None) -> ExportReport`
-  - `ExportReport`：`papers`、`files`、`images`、`manifest_path`
+  - `ExportReport`：`papers`、`files`、`images`、`manifest_path`、`skipped`、`collided`
+  - `export._xingce_titles(row) -> list[str]`（**取 xingcezhenti 源自己的卷名**，见 Step 3）
+
+> ⚠️ **本任务最会静默吃掉交付量的一处（裁定 R-T8-1，已实测量化）**：
+> 文件名**必须**用 `row["titles"]["xingcezhenti"]`，**绝不能**用 `row["title"]`。理由与实测数字见
+> Step 3 里 `_xingce_titles` 的 docstring。**Step 1 必须有一条专门锁它的测试**：
+> 造一条 `title` 与 `titles["xingcezhenti"][0]` **不同**的 row（模拟两源同键的真库形态），
+> 断言取到的是 `titles["xingcezhenti"][0]` 那个文件 —— 拿 `row["title"]` 去拼会**落空**，
+> 该测试必须因此**变红**。对照组：真库实测 `429` 个有 xingcezhenti 的卷里，
+> 用 `row["title"]` **286 个落空**、用 `titles["xingcezhenti"][0]` **0 个落空**。
 
 - [ ] **Step 1: 写失败的测试**
 
@@ -2604,6 +2613,9 @@ class ExportReport:
     images: int = 0
     manifest_path: str = ""
     skipped: list = field(default_factory=list)
+    # 撞 slug：同一键在 xingcezhenti 源里有**多个卷名** ⇒ 只导第一个，其余在此如实记下。
+    # 与 `skipped` 分开，是因为「少导了一份卷」和「这份卷没导出」是**两种不同的事故**（裁定 R-T8-1）。
+    collided: list = field(default_factory=list)
 
 
 def repo_paths(key, slug):
@@ -2631,8 +2643,32 @@ def load_catalog(catalog_dir):
         return [json.loads(l) for l in fh if l.strip()]
 
 
+def _xingce_titles(row):
+    """该卷在 **xingcezhenti 源**里的卷名（排序列表）。空 = 该源根本没有此卷。
+
+    **绝不能用 `row["title"]` 当文件名**（裁定 R-T8-1）。`title` 是**首个被聚合进来的原始卷名**，
+    而聚合按 `sorted(uproots.items())` 走、`linfukai186` 排在 `xingcezhenti` 之前 ⇒
+    凡是**两源都有的键**，`title` 就是 **linfukai186** 的卷名。实测这种键 **286** 个，
+    且 **286/286** 两侧卷名**完全不是同一串**：
+
+        2016·国家公务员考试副省级            （linfukai186）
+        2016年国家公务员录用考试《行测》题（副省级）  （xingcezhenti）
+
+    拿前者去 xingcezhenti 根下拼路径 ⇒ **全数落空** ⇒ 整卷被错判成「上游文件缺失」而丢。
+    这是本任务**最会静默吃掉交付量**的一处，故单独成函数、单独可测。
+    """
+    return sorted(row.get("titles", {}).get("xingcezhenti", []))
+
+
 def _parts_for(row, upstream_xingce):
-    """按 MODULE_ORDER 取该卷各模块源文本；模块缺失则跳过（并如实记录）。"""
+    """按 MODULE_ORDER 取该卷各模块源文本；模块缺失则跳过（并如实记录）。
+
+    文件名用 **xingcezhenti 源自己的卷名**（见 `_xingce_titles`）。同名多值（`len > 1`）
+    = 该键疑似撞 slug ⇒ 只取第一个，**多出来的**卷名由调用方记进 `rep.collided`（不静默丢）。
+    """
+    names = _xingce_titles(row)
+    if not names:
+        return [], []
     want = [m for m in render.MODULE_ORDER if m in row["modules"]]
     parts, got = [], []
     for module in want:
@@ -2640,7 +2676,7 @@ def _parts_for(row, upstream_xingce):
         prefix = {"政治理论": "01-政治理论", "常识判断": "02-常识判断",
                   "言语理解与表达": "03-言语理解与表达", "数量关系": "04-数量关系",
                   "判断推理": "05-判断推理", "资料分析": "06-资料分析"}[module]
-        path = os.path.join(upstream_xingce, prefix, row["title"] + ".md")
+        path = os.path.join(upstream_xingce, prefix, names[0] + ".md")
         if os.path.exists(path):
             with io.open(path, encoding="utf-8") as fh:
                 parts.append(fh.read())
@@ -2661,6 +2697,11 @@ def run(catalog_dir, uproots, repo_root, limit=None):
             rep.skipped.append({"slug": row["slug"], "reason": "本批只导出有正文的源"})
             continue
         key = PaperKey(row["level"], row["region"], row["year"], row["subject"], row["ptype"])
+        # xingcezhenti 侧同名多值 ⇒ 该键疑似撞 slug，只导第一个，**其余如实记进 `collided`**
+        # （不是静默丢；见裁定 R-T8-1）。
+        extra = _xingce_titles(row)[1:]
+        if extra:
+            rep.collided.append({"slug": row["slug"], "titles": extra})
         parts, modules = _parts_for(row, uproots["xingcezhenti"])
         if not parts:
             rep.skipped.append({"slug": row["slug"], "reason": "上游文件缺失"})
