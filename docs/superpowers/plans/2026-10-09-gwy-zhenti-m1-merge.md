@@ -2062,7 +2062,7 @@ git commit -m "feat(tools): 段一 —— catalog/coverage/gaps/conflicts/exclud
 
 **Interfaces:**
 - Consumes: `catalog.build`（Task 6）
-- Produces: `python -m gwyzhenti.cli catalog --up-upstream <root> --out <dir>`；后续 Task 11 在同一 `cli.py` 加 `export` / `gate` 子命令
+- Produces: `python -m gwyzhenti.cli catalog --upstream <root> --out <dir>`；后续 Task 11 在同一 `cli.py` 加 `export` / `gate` 子命令
 
 - [ ] **Step 1: 写 CLI**
 
@@ -3115,7 +3115,14 @@ Expected: 六闸全 OK；`sources` 不含正文的卷（纯 linfukai186）列入
 - [ ] **Step 4: 写交付报告（如实，不美化）**
 
 `work/REPORT-M1.md` 必须含：
-- **数量账**：catalog 卷数 / 已导出卷数 / 跳过卷数（及理由分布）/ 未解析卷数 / 已排除卷数（及理由分布）。
+- **数量账**：catalog 卷数 / 已导出卷数 / 跳过卷数（及理由分布）/ **撞 slug 未导卷数** / 未解析卷数 /
+  已排除卷数（及理由分布）。
+- **⚠️ 题数口径必须写清（裁定 R-T7-2，Task 7 评审 F2 实测）**：`catalog.jsonl` 的 `n_questions`
+  是**各源按模块名相加**，而一个卷常**两源都有**（实测 286 个键；281/286 存在同名模块）
+  ⇒ **跨源相加会高估**（评审按「同卷同模块取 max」复算，合计 79639 **偏高约 5,901**）。
+  故交付报告里的 **「本次交付题数」= 导出侧口径**（xingcezhenti 正文侧，实测约 **51,010**），
+  并在同一行注明 `79639` 是**跨源相加**的 catalog 口径。**两个数都不许裸写、都必须带口径**。
+  （口径不同的两个数都是对的；错的是**不写口径**让人以为它们可比。）
 - **六闸结果**：逐闸通过与否 + 说明（**不得抽样伪装成全量**）。
 - **覆盖账**：`coverage.md` 的地区×科目表；明确「哪些省份已覆盖、哪些为缺」。
 - **诚实边界**（照抄 spec §9，并更新实测数字）：ERRRC 自报 515 ≠ 已入库；**申论「有目录行」但 M1 不出正文**
@@ -3140,6 +3147,12 @@ git commit -m "feat(tools): export / gate 子命令"
 - Modify: `tools/README.md`
 
 - [ ] **Step 1: 更新 SOURCES.md**
+
+> ⚠️ **顺手改掉 `tools/README.md` 里一句不实的话（Task 7 评审 F4）**：README 末行说
+> 「加新源 = 写 adapter + 注册一行」，但 `cli._uproots` 是**硬编码**的那两个源目录
+> （上游实有 4 个目录），**新注册的源不会自动进 catalog**。改成如实说法：
+> 「加新源 = 写 adapter + 注册到 `sources.ADAPTERS` + **在 `cli._uproots` 里补一条源根**」。
+> （这是**简报原文**带进来的，非 Task 7 实现者的错；Task 12 本来就要动这个文件，故在此收口。）
 
 在 `SOURCES.md` 里补一节「本仓实际接入的源（2026-10-09 实测）」，写明：
 - **已接入（M1）**：
