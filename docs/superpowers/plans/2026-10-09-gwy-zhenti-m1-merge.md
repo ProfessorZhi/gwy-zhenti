@@ -1972,7 +1972,7 @@ def _write_gaps(out_dir, rows):
         if missing:
             L.append("- **%s**：缺 %s" % (region, "、".join(missing)))
     L.append("")
-    L.append("## 二、年次级缺口（地区齐了再看）")
+    L.append("## 三、年次级缺口（地区齐了再看）")
     for region in _region_rows(rows):
         ys = sorted({r["year"] for r in rows if (r["region"] or "国考") == region})
         if not ys:

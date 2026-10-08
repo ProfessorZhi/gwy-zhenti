@@ -158,10 +158,15 @@ class TestUnparsedKind(unittest.TestCase):
 
 
 class TestPtypeTableGuards(unittest.TestCase):
-    """整改 F2·F / 裁定 R-T6-2：卷型词表**表驱动**护栏 —— 新增/删除 `PTYPE_RULES` 条目都会被抓。
+    """整改 F2·F / 裁定 R-T6-2：卷型词表护栏。
 
-    旧测试只对约 7 个卷型值有断言 ⇒ **其余条目删掉也全绿**（`_match_value` 少一条分支无人知，
-    后果是卷型判错 ⇒ 撞 slug ⇒ 丢卷）。这里改成遍历**全表**。
+    **钉住**由**硬编码字面量**给出（`test_rule_table_is_pinned` / `test_ptype_values_are_pinned`），
+    故删/增/改任一条规则都会红；其余三条为表内一致性检查（`test_every_rule_round_trips_through_match_value`
+    / `test_ptype_values_equals_the_rule_values` / `test_no_dead_value_in_ptype_values`）。
+
+    （旧的三条两侧都从 `PTYPE_RULES` 派生（连 `PTYPE_VALUES` 亦然）⇒ **自反**：删一条规则时被遍历的表
+    与被比对的集合同步缩小 ⇒ 恒真；旧测试更只对约 7 个卷型值有断言，其余条目删掉也全绿。硬编码钉住
+    切断了自反 —— 复评 R-T6-2。）
     """
 
     @staticmethod
@@ -193,6 +198,27 @@ class TestPtypeTableGuards(unittest.TestCase):
         self.assertLess(order.index("县级以上"), order.index("县级卷|县级"))
         self.assertLess(order.index("定向乡镇"), order.index("乡镇卷|乡镇"))
         self.assertLess(order.index("县乡卷|县乡"), order.index("县级卷|县级"))
+
+    def test_rule_table_is_pinned(self):
+        # 硬编码字面量：**不从表派生**，否则删一条规则时两侧同步缩小 ⇒ 恒真（复评 R-T6-2）。
+        # 逐字照抄 `naming.PTYPE_RULES`（2026-10-09 的 20 条），顺序也算判据（长模式在前）。
+        self.assertEqual(
+            tuple(rx.pattern for rx, _ in PTYPE_RULES),
+            ("副省级", "地市级", "行政执法", "A类|A卷", "B类|B卷", "C类|C卷", "D类|D卷",
+             "甲级|甲卷", "乙级|乙卷", "上半年", "下半年", "县乡卷|县乡", "省直卷|省直",
+             "兵团", "县级以上", "区级及以上", "定向乡镇", "单考区卷",
+             "乡镇卷|乡镇", "县级卷|县级"),
+        )
+
+    def test_ptype_values_are_pinned(self):
+        # 同上：硬编码 20 个值。删/改任一条规则的**值**都会红。
+        self.assertEqual(
+            PTYPE_VALUES,
+            frozenset({"副省级", "地市级", "行政执法", "A类", "B类", "C类", "D类",
+                       "甲级", "乙级", "上半年", "下半年", "县乡卷", "省直",
+                       "兵团", "县级以上", "区级及以上", "定向乡镇", "单考区卷",
+                       "乡镇卷", "县级卷"}),
+        )
 
 
 class TestExclusionWordGuards(unittest.TestCase):
