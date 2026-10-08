@@ -983,15 +983,13 @@ Expected: FAIL —— `ModuleNotFoundError: No module named 'gwyzhenti.sources'`
 """所有源 adapter 的统一接口。段一只认这个接口，段二只认 catalog.jsonl。"""
 from dataclasses import dataclass, field
 
-RECORD_KEYS = (
-    "family", "title", "region", "year", "module", "n_questions",
-    "relpath", "images_题目", "images_公式",
-)
-
-
 @dataclass
 class ScanResult:
-    records: list = field(default_factory=list)     # 卷×模块 粒度
+    # records 每条 = **卷×模块** 粒度，键固定为：
+    #   family / title / region / year / module / n_questions / relpath /
+    #   images_题目 / images_公式 / declared_questions
+    # `declared_questions` = 源 frontmatter 自报题数（非数字则 -1），**只供 G1 对账，不参与导出**。
+    records: list = field(default_factory=list)
     unparsed: list = field(default_factory=list)    # [{family, title, region, year, module, relpath, reason}]
     excluded: list = field(default_factory=list)    # [{family, title, region, year, module, relpath, reason}]
 
@@ -1049,7 +1047,10 @@ class XingceZhentiAdapter(SourceAdapter):
         try:
             classify(region, year, title)
         except Unparsed as exc:
-            res.excluded.append({
+            # 分流：**有意排除**（非国省考地区 / 试卷名含排除词）进 excluded；
+            # **解析不了**（如「地区字段为空」）是缺陷，必须进 unparsed 被 G1 盯住。
+            bucket = res.unparsed if exc.reason.startswith("地区字段为空") else res.excluded
+            bucket.append({
                 "family": FAMILY, "title": title, "region": region, "year": year,
                 "module": module, "relpath": relpath, "reason": exc.reason,
             })
@@ -1074,18 +1075,7 @@ class XingceZhentiAdapter(SourceAdapter):
 
 > 说明：`classify` 在这里**只用于筛除**（排除项进 `excluded`）；是否进 `unparsed` 由上层的固化逻辑决定 ——
 > `classify` 抛异常时区分「排除」与「解析不了」：`reason` 以「非国省考地区」「试卷名含排除词」开头者入 `excluded`，
-> 其余（如「地区字段为空」）入 `unparsed`。在 `_one` 里按这一条分流。
-
-把上面 `_one` 的 `except` 分支改为：
-```python
-        except Unparsed as exc:
-            bucket = res.unparsed if exc.reason.startswith(("地区字段为空",)) else res.excluded
-            bucket.append({
-                "family": FAMILY, "title": title, "region": region, "year": year,
-                "module": module, "relpath": relpath, "reason": exc.reason,
-            })
-            return
-```
+> 其余（如「地区字段为空」）入 `unparsed`。**上面的 `_one` 已按这一条分流，直接照写即可，无需二次修改。**
 
 `tools/gwyzhenti/sources/__init__.py`：
 ```python
