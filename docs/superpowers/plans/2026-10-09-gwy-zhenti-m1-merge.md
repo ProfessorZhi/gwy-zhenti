@@ -344,6 +344,23 @@ class TestClassify(unittest.TestCase):
         self.assertEqual(classify("四川", "2016", "2016年423联考《行测》题（四川卷）").key.ptype,
                          "统考")
 
+    def test_trailing_juan_is_absorbed_only_when_it_lands_in_the_vocabulary(self):
+        # 尾缀「卷」的容差是**窄的**：剥掉后能落回已声明词表才剥（`行政执法卷`→`行政执法`），
+        # 否则逐字保留 —— 真库里 `（省直）` 与 `（黑龙江省直卷）` 同时存在，宽泛地剥会让
+        # 两者收敛成同一个 ptype ⇒ 撞 slug ⇒ 丢卷。
+        self.assertEqual(classify("国考", "2026", "…（行政执法卷网友回忆版）").key.ptype, "行政执法")
+        self.assertEqual(classify("黑龙江", "2016", "…（黑龙江省直卷）").key.ptype, "省直卷")
+        shi = classify("黑龙江", "2016", "…（省直）").key.ptype
+        hl = classify("黑龙江", "2016", "…（黑龙江省直卷）").key.ptype
+        self.assertEqual(shi, "省直")
+        self.assertNotEqual(shi, hl)
+
+    def test_compound_suffix_keeps_nature_word_out_of_ptype(self):
+        # 性质词在复合后缀里是**尾巴** ⇒ 必须在 token 内部剔除，精确匹配会漏
+        c = classify("国考", "2026", "2026年国家公务员录用考试《行测》题（副省级网友回忆版）")
+        self.assertEqual(c.key.ptype, "副省级")
+        self.assertEqual(c.nature, "网友回忆版")
+
     def test_no_suffix_is_tongkao(self):
         # spec §6.1：标题里没有括号后缀 ⇒ 统考
         self.assertEqual(classify("江西", "2016", "2016年江西省公务员考试《行测》题").key.ptype,
@@ -394,8 +411,11 @@ LIANKAO = re.compile(r"联考")
 
 # 标题里的括号内容（全角与半角都认）
 PAREN = re.compile(r"[（(]([^）)]*)[）)]")
-# 括号里这些词是**性质/形式**，不是卷型 —— 不能进 slug
-NOT_PTYPE = re.compile(r"^(?:网友回忆版|精选|联考)$")
+# 括号里这些词是**性质/形式**，不是卷型 —— 不能进 slug。用 `sub` 在 token **内部**剔除，
+# 因为复合后缀（`行政执法卷网友回忆版`）里它们只是尾巴；精确匹配会漏 ⇒ 性质词被带上 slug。
+NOT_PTYPE = re.compile(r"网友回忆版|精选|联考")
+# 已声明词表的**值**集合 —— 尾缀 `卷` 只在剥掉后能落回词表时才允许剥（见 `_match_value`）。
+PTYPE_VALUES = frozenset(v for _, v in PTYPE_RULES)
 
 
 def _ptype_tokens(region, title):
@@ -407,20 +427,35 @@ def _ptype_tokens(region, title):
         s = raw.strip()
         if region and s.startswith(region):
             s = s[len(region):]
+        s = NOT_PTYPE.sub("", s)
         if s == "卷":
             s = ""
-        if s and not NOT_PTYPE.match(s):
+        if s:
             out.append(s)
     return out
+
+
+def _match_value(token):
+    """token → 已声明卷型值；认不出返回 `None`。
+
+    尾缀 `卷` 的容差是**窄的**：只在剥掉后能落回 `PTYPE_VALUES` 时才剥。真库同时存在
+    `（省直）` 与 `（黑龙江省直卷）`，宽容差会把两者收敛成同一个 ptype ⇒ 撞 slug ⇒ **丢卷**。
+    """
+    for rx, value in PTYPE_RULES:
+        if rx.fullmatch(token):
+            return value
+    if token.endswith("卷") and token[:-1] in PTYPE_VALUES:
+        return token[:-1]
+    return None
 
 
 def _ptype(region, title):
     """卷型判定。**塌成同一个值 = 撞 slug = 丢卷**，故认不出时逐字带上，绝不默认。"""
     tokens = _ptype_tokens(region, title)
     for t in tokens:
-        for rx, value in PTYPE_RULES:
-            if rx.fullmatch(t):
-                return value
+        value = _match_value(t)
+        if value:
+            return value
     if tokens:
         return "+".join(sorted(set(tokens)))
     # 没有括号后缀 —— 回落到全标题扫描（覆盖 `2026·国家公务员考试副省级` 这种无括号写法）
@@ -475,7 +510,7 @@ def classify(region, year, title, subject="行测"):
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_naming -v`
-Expected: PASS，15 tests OK
+Expected: PASS，17 tests OK
 
 - [ ] **Step 5: 提交**
 
