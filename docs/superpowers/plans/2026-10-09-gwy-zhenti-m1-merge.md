@@ -478,10 +478,14 @@ def _ptype(region, title):
 class Unparsed(Exception):
     """解析不了 —— 进 unparsed.jsonl，绝不静默丢弃。"""
 
-    def __init__(self, reason, title=""):
+    UNPARSED = "unparsed"    # 缺陷：必须被 G1 盯住
+    EXCLUDED = "excluded"    # 有意排除：spec §2 非目标
+
+    def __init__(self, reason, title="", kind=UNPARSED):
         super().__init__("%s | %s" % (reason, title))
         self.reason = reason
         self.title = title
+        self.kind = kind
 
 
 @dataclass(frozen=True)
@@ -493,13 +497,19 @@ class Classified:
 
 def classify(region, year, title, subject="行测"):
     title = title or ""
-    if not region:
-        raise Unparsed("地区字段为空", title)
+    # **检查顺序是有意的**：排除族 → 标题排除词 → 地区为空。
+    # 理由（Task 5 修复轮实测）：模考/选调这类卷是 spec §2 的**非目标**（有意排除），
+    # 而它们常常**根本没有地区**（实测 `2021·省考行测申论联合终极模考大赛`，共 56 条）。
+    # 若把「地区为空」放在最前，这些卷会在走到标题判断**之前**就抛错 ⇒ 落进
+    # `unparsed`（**G1 盯的缺陷桶**），而 `unparsed` 长期非零会让人习惯性忽略它 ——
+    # 缺陷桶就废了。`模考` 由 `EXCLUDE_TITLE` 判定，故必须让它**先**有机会命中。
     if region in EXCLUDE_REGIONS:
-        raise Unparsed("非国省考地区: %s" % region, title)
+        raise Unparsed("非国省考地区: %s" % region, title, kind=Unparsed.EXCLUDED)
     m = EXCLUDE_TITLE.search(title)
     if m:
-        raise Unparsed("试卷名含排除词: %s" % m.group(0), title)
+        raise Unparsed("试卷名含排除词: %s" % m.group(0), title, kind=Unparsed.EXCLUDED)
+    if not region:
+        raise Unparsed("地区字段为空", title)
 
     level = LEVEL_GUOKAO if region == LEVEL_GUOKAO else LEVEL_SHENGKAO
     ptype = _ptype(region, title)
@@ -1056,9 +1066,11 @@ class XingceZhentiAdapter(SourceAdapter):
         try:
             classify(region, year, title)
         except Unparsed as exc:
-            # 分流：**有意排除**（非国省考地区 / 试卷名含排除词）进 excluded；
-            # **解析不了**（如「地区字段为空」）是缺陷，必须进 unparsed 被 G1 盯住。
-            bucket = res.unparsed if exc.reason.startswith("地区字段为空") else res.excluded
+            # 分流**只认 `exc.kind`，不认 `reason` 文本**（Task 4 修复轮 2 的结论，有回归测试护栏）：
+            # **有意排除**（非国省考地区 / 试卷名含排除词）kind=EXCLUDED 进 excluded；
+            # **解析不了**（如「地区字段为空」）kind=UNPARSED 是缺陷，必须进 unparsed 被 G1 盯住。
+            # 若改回按 `reason.startswith(...)` 分流，将来新增的陌生 reason 会被**静默**错分进 excluded。
+            bucket = res.unparsed if exc.kind == Unparsed.UNPARSED else res.excluded
             bucket.append({
                 "family": FAMILY, "title": title, "region": region, "year": year,
                 "module": module, "relpath": relpath, "reason": exc.reason,
@@ -1082,9 +1094,10 @@ class XingceZhentiAdapter(SourceAdapter):
         })
 ```
 
-> 说明：`classify` 在这里**只用于筛除**（排除项进 `excluded`）；是否进 `unparsed` 由上层的固化逻辑决定 ——
-> `classify` 抛异常时区分「排除」与「解析不了」：`reason` 以「非国省考地区」「试卷名含排除词」开头者入 `excluded`，
-> 其余（如「地区字段为空」）入 `unparsed`。**上面的 `_one` 已按这一条分流，直接照写即可，无需二次修改。**
+> 说明：`classify` 在这里**只用于筛除**（排除项进 `excluded`）；是否进 `unparsed` 由 `classify` 抛出的
+> `Unparsed.kind` 决定 —— `kind == Unparsed.EXCLUDED`（非国省考地区 / 试卷名含排除词）入 `excluded`，
+> `kind == Unparsed.UNPARSED`（如「地区字段为空」）入 `unparsed`。**分流判据是 `kind`，不是 `reason` 文本**；
+> 上面 `_one` 的写法即最终形态。
 
 `tools/gwyzhenti/sources/__init__.py`：
 ```python
@@ -1319,7 +1332,9 @@ class TestLinfukai186Adapter(unittest.TestCase):
         self.by = {(r["title"], r["module"]): r for r in self.res.records}
 
     def test_no_unparsed_for_clean_fixture(self):
-        # 实测本机三个 index.json 共 1,416 个键，地区全部可判 ⇒ 样本也必须零未解析
+        # 本 fixture **有意只放能判出地区的键** ⇒ 零未解析。真实数据的账另有断言（见 Step 7 哨兵）：
+        # 四个类目共 1,475 个键，其中 56 条是**无地区的模考卷**，按 `classify` 的新检查顺序落
+        # `excluded`（有意排除）而非 `unparsed` —— 所以**不是**「地区全部可判」。
         self.assertEqual(self.res.unparsed, [])
 
     def test_guokao_paper_has_two_modules(self):
@@ -1472,8 +1487,11 @@ class Linfukai186Adapter(SourceAdapter):
             # 报「非国省考地区」比报「模考」更贴近它的身份。
             region = region_exclusion(rest) or region_from_text(rest) or ""
             try:
-                if not region:
-                    raise Unparsed("地区无法判定", rest)
+                # **不要在此预判「地区为空」**（本任务初稿曾写 `if not region: raise ...`）：
+                # 模考卷（实测 `2021·省考行测申论联合终极模考大赛`，56 条）**往往没有地区**，
+                # 预判会让它们在 `classify` 之前就抛错、落进 `unparsed`（**G1 盯的缺陷桶**），
+                # 而它们其实是 spec §2 的**有意排除**。一律交给 `classify`，由它的
+                # **检查顺序**（排除族 → 标题排除词 → 地区为空）给出正确的 `kind`。
                 classify(region, year, title, subject=subject)
             except Unparsed as exc:
                 # 用**结构化判据** `exc.kind`，不比对 reason 前缀（前缀会在新增 reason 时错分）
@@ -1525,8 +1543,12 @@ Expected: PASS，全部通过（`test_naming` 由 17 增至 23，`test_src_linfu
 # -*- coding: utf-8 -*-
 """真库冒烟：读本机 gongkao-tiku 克隆，核对四个类目的分桶。手工运行。
 
-`unparsed == 0` 是**实测结论**（本机三个 index.json 共 1,416 个键，地区全部可判）——
-若它不为 0，说明地区别名表漏了词，必须补表而不是放宽断言。
+`unparsed == 0` 是**实测结论**（四个类目共 **1,475** 个键 —— 48+560+59+808；
+`guokao-shenlun` 那 59 个初稿漏数过）。**若它不为 0**，先分辨两种成因：
+- 键的地区**根本判不出**且标题也不含排除词 ⇒ 地区别名表**漏词**，**补表**，别放宽断言；
+- 键是**模考/选调**这类非目标卷（实测 56 条，全在 `shengkao-shenlun`、全部含「模考」、
+  **全部没有地区**）⇒ 它们应经 `classify` 的**标题排除词**判定落进 `excluded`。
+  若它们出现在 `unparsed` 里，说明 `classify` 的检查顺序被改坏了，**修顺序**，不是补表。
 """
 import os
 import sys
@@ -1573,9 +1595,13 @@ Run:
 cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 tests/smoke_linfukai186.py
 ```
 Expected: `unparsed 0`；行测、申论两个科目**都有**非零记录；`excluded` 理由分布含
-`非国省考地区` 与 `试卷名含排除词`。
+`非国省考地区` 与 `试卷名含排除词`（后者应含那 56 条无地区的模考卷）。
 **把打印出的 `records` / `excluded` 实际数字回填成断言**（像 Task 4 的 `(2497, 0, 459)` 那样冻结成
 哨兵，并在报告里写明数字来源是本机克隆实测），再跑一次确认通过。
+⚠️ **同时必须在 `test_src_linfukai186.py` 里补一条回归测试**：造一个**没有地区但标题含「模考」**
+的键（例如加进 `shengkao-shenlun/y2016.json` 的 fixture：`"2016·省考行测申论联合模考大赛《申论》"`），
+断言它落进 **`excluded`**（reason 以 `试卷名含排除词` 开头）**而不是 `unparsed`**。
+理由：这正是本任务实测踩到的坑（初稿会把它错分进缺陷桶），没有回归测试就会被无声改回去。
 
 - [ ] **Step 8: 提交**
 
@@ -1787,7 +1813,10 @@ def build(uproots, out_dir):
             # 而 classify 不校验科目 ⇒ 错标会**静默**进 coverage.md。
             c = classify(r["region"], r["year"], r["title"], subject=r["subject"])
         except Unparsed as exc:            # 理论上 adapter 已分流；此处兜底
-            all_unparsed.append(dict(r, reason=exc.reason))
+            # 兜底也**必须按 `kind` 分流**（同 Task 4）：否则「有意排除」的卷会挤进 `unparsed`
+            # ——那是 G1 盯的缺陷桶，长期非零会让它失去告警意义。
+            bucket = all_unparsed if exc.kind == Unparsed.UNPARSED else all_excluded
+            bucket.append(dict(r, reason=exc.reason))
             continue
         key = c.key
         p = papers.setdefault(key, {
