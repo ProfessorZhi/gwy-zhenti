@@ -44,16 +44,25 @@
 - 全库「第 N 题」标题合计 **58,890**，与 README 逐模块数字**完全一致** ⇒ `题数` 字段可信，可直接当 G1 基准。
 - `图片缺失清单.txt` 实测仅 1 行（`90-图片/公式图/formula-4daf9a3762c10376.png`）。
 
-**B. `linfukai186-arch/gongkao-tiku`（行测交叉对照源，本机 `D:\projects\_gwy-upstream\gongkao-tiku`）**
+**B. `linfukai186-arch/gongkao-tiku`（行测交叉对照 + 申论目录源，本机 `D:\projects\_gwy-upstream\gongkao-tiku`）**
 
-- `data/<类>/index.json` = `[{"key":"<卷标识>","count":N}, …]`，`<类> ∈ {guokao-xingce, shengkao-xingce, guokao-shenlun, shengkao-shenlun, …}`
-- `data/<类>/y<YYYY>.json` = `{"<卷标识>":[{"t":"<模块>","s":"<材料>","q":"<题干>","o":["选项",…],"a":"<答案>","e":"<解析>"}, …]}`
-- 卷标识样例：`2026·国家公务员考试行政执法`、`2020·江苏公务员考试《行测》真题C类`、`2027·国考行测申论联合模考大赛（第二十三季）`（**模考须排除**）。
+- `data/<类>/index.json` = `[{"key":"<卷标识>","count":N}, …]`
+- `data/<类>/y<YYYY>.json` = `{"<卷标识>":[{"t":"<模块>","s":"<材料>","q":"<题干>","o":["选项",…],"a":"<答案>","e":"<解析>"}, …]}`（申论类**无 `o`/`e`**，题形为 `{t,s,q,a}`）
+- **四类实测**（逐一量过 `index.json`）：`guokao-xingce` 48 键 / 2000–2027；`shengkao-xingce` 560 键 / 2004–2025；
+  `guokao-shenlun` 59 键但 **100% 含「模考」⇒ 真卷 0**；`shengkao-shenlun` 808 键、**真卷 686** / 2010–2026。
+  ⇒ 它是 spec §9 所称「最大缺口」的**实际申论目录源**，**四个类目全部接入**（申论在 M1 只入 catalog）。
+- 卷标识样例：`2026·国家公务员考试行政执法`、`2016·423四川公务员考试《行测》题`、`2026·国考行测申论联合模考大赛（第四十季）`（**模考须排除**）。
+- **卷名里的地区不一定在开头**：实测有 `4月吉林公务员考试…`（月份前缀）、`公务员录用考试《行测》甘肃真题`（地区在中间）、
+  `2020·度浙江省党政机关选调…`（`年度` 的残尾）。⇒ **禁止 `[:2]` 切片**（会把 `黑龙江` 切成 `黑龙`、把 `0822` 切成 `08`），
+  一律走 `naming.region_from_text` 的**全串最长匹配**。
 
 **C. 已判定的范围事实**
 
 - `zzcc-nb/gongkao-tiku`：`行测题库/`、`职测题库/` **为空**（README 自述「待采集」）⇒ **申论源，归 M3**，不进 M1。
 - `shiwuooo/shangantong-papers-v2-c1/c2`：**行测源（非申论）**，每卷 `paper_*/{index.html,index_static.html,assets/*.webp}`，共 **498 卷**、**2008–2026**（2016+ 331 卷），`<title>` 即卷名；地区覆盖 30 省 + 国考，**独缺西藏**（ERRRC 有）⇒ **不提升「地域齐全」**，价值在交叉验证与老年份纵深。**归 M2，M1 不接。**
+- `linfukai186` 的**申论侧在 M1 接入 catalog**：M1 的定义是「段一接入全部候选源（行测 + 申论）」，漏掉 `shengkao-shenlun`
+  的 686 份真题，`coverage.md` 的申论列就会是假空白，M3 还得重做段一。**`zzcc-nb` 仍留 M3** —— 它的粒度是逐题、
+  与 `linfukai186` 的逐卷不同层，适配器写法要等 M3 的导出设计定了再定；段一是**可增量重跑**的，后加 adapter 只是再跑一次扫描，不是"重做"。
 
 ## 文件结构
 
@@ -72,7 +81,7 @@ gwy-zhenti/
 │  │  │  ├─ __init__.py             # ADAPTERS 注册表
 │  │  │  ├─ base.py                 # SourceAdapter 接口
 │  │  │  ├─ xingcezhenti.py         # 正文主源
-│  │  │  └─ linfukai186.py          # 交叉对照源
+│  │  │  └─ linfukai186.py          # 行测交叉对照 + 申论目录源
 │  │  ├─ catalog.py                 # 段一：6 个产物
 │  │  ├─ render.py                  # 段二：单卷五项变换 + revert
 │  │  ├─ export.py                  # 段二：遍历导出 + 图片 + manifest
@@ -1143,36 +1152,145 @@ git commit -m "feat(tools): xingcezhenti adapter（卷×模块清单 + 排除/�
 
 ---
 
-### Task 5: `linfukai186` adapter（交叉对照源）
+### Task 5: `linfukai186` adapter（行测交叉对照 + 申论目录）
+
+> **本任务相对初稿已按实测重写**（见 spec §3「2026-10-09 二次实测」）。两处改动是**硬需求**，不是优化：
+> ① 原稿只接行测两类，漏掉 `shengkao-shenlun` 的 **686 份省考申论真题** —— 而 M1 的定义就是
+> 「段一接入全部候选源（行测 + 申论）」；② 原稿用 `title.split("·")[1][:2]` 取地区，是**切片**：
+> 实测卷名里地区**不一定在开头**（`4月吉林公务员考试…`、`公务员录用考试《行测》甘肃真题`），
+> 切片会把 `黑龙江` 变成 `黑龙`、把联考日期码 `0822` 变成 `08`；而 `classify` **不校验省份**
+> ⇒ 脏地区会**静默写进 catalog**。本任务改用 `naming` 里的地区别名表 + **全串最长匹配**。
 
 **Files:**
+- Modify: `tools/gwyzhenti/naming.py`（新增地区别名表 + 两个纯函数）
 - Create: `tools/gwyzhenti/sources/linfukai186.py`
 - Create: `tools/tests/fixtures/linfukai186/data/guokao-xingce/index.json`
 - Create: `tools/tests/fixtures/linfukai186/data/guokao-xingce/y2026.json`
-- Create: `tools/tests/fixtures/linfukai186/data/guokao-xingce/y2027.json`
+- Create: `tools/tests/fixtures/linfukai186/data/shengkao-xingce/y2016.json`
+- Create: `tools/tests/fixtures/linfukai186/data/shengkao-shenlun/y2016.json`
 - Create: `tools/tests/test_src_linfukai186.py`
+- Modify: `tools/tests/test_naming.py`（新增地区解析测试）
 - Modify: `tools/gwyzhenti/sources/__init__.py`
+- Create: `tools/tests/smoke_linfukai186.py`（手工冒烟，不进 `unittest discover`）
 
 **Interfaces:**
-- Consumes: `ScanResult`（Task 4）
-- Produces: `Linfukai186Adapter`（`family = "linfukai186"`），记录键同上，另加 `n_questions` = 该卷**题级条目数**（此源无「题数」字段）
+- Consumes: `ScanResult`（Task 4）、`classify` / `Unparsed`（Task 2，`Unparsed.kind` 由 Task 4 的修复轮引入）
+- Produces:
+  - `naming.PROVINCES: tuple[str, ...]`（按长度倒序）
+  - `naming.region_exclusion(text) -> str | None`（卷名 → 要排除的地区值）
+  - `naming.region_from_text(text) -> str | None`（卷名 → 地区；认不出返回 `None`）
+  - `Linfukai186Adapter`（`family = "linfukai186"`），记录键与 Task 4 **完全一致**（含 `subject`）；
+    `n_questions` = 该**模块**的题级条目数（此源无「题数」字段，故 `declared_questions = -1`）
 
-- [ ] **Step 1: 建微型样本**
+- [ ] **Step 1: `naming.py` 加地区别名表**
 
-`tools/tests/fixtures/linfukai186/data/guokao-xingce/index.json`：
-```json
-[{"key":"2026·国家公务员考试副省级","count":1},{"key":"2027·国考行测申论联合模考大赛（第二十三季）","count":1}]
+在 `naming.py` 里 `EXCLUDE_REGIONS` 之后追加（`EXCLUDE_REGIONS` 本身**加一个成员** `"公安院校"` —— 与 `公检法` 同族，见 Task 2 的裁定）：
+
+```python
+# 卷名里出现「地区」时的排除族。**值必须是 `EXCLUDE_REGIONS` 的成员** ——
+# 这样 adapter 只需把 `region_exclusion()` 的结果交给 `classify`，排除逻辑只有一处。
+REGION_EXCLUDE_RULES = (
+    (re.compile(r"选调"), "选调"),
+    (re.compile(r"深圳"), "深圳市考"),
+    (re.compile(r"广州"), "广州市考"),
+    (re.compile(r"公安院校"), "公安院校"),
+)
+# 23 省 + 5 自治区 + 4 直辖市。**按长度倒序**：保证 `黑龙江` 不被更短的别名先命中。
+# 深圳/广州是**市**不是省 —— 它们只走上面的排除族，不进这张表。
+PROVINCES = tuple(sorted((
+    "北京", "天津", "上海", "重庆",
+    "河北", "山西", "辽宁", "吉林", "黑龙江", "江苏", "浙江", "安徽", "福建",
+    "江西", "山东", "河南", "湖北", "湖南", "广东", "海南", "四川", "贵州",
+    "云南", "陕西", "甘肃", "青海",
+    "内蒙古", "广西", "西藏", "宁夏", "新疆",
+), key=len, reverse=True))
+GUOKAO_TEXT = re.compile(r"国家公务员|国家公考|国考")
+LIANKAO_TEXT = re.compile(r"多省联考|联考")
+
+
+def region_exclusion(text):
+    """卷名文本 → 要排除的地区值；没有则 `None`。"""
+    for rx, value in REGION_EXCLUDE_RULES:
+        if rx.search(text):
+            return value
+    return None
+
+
+def region_from_text(text):
+    """卷名文本 → 地区。**全串最长匹配，绝不切片。**
+
+    实测卷名里地区**不一定在开头**（`9月吉林公务员考试《行测》甲级`、
+    `公务员录用考试《行测》甘肃真题`、`2020年度浙江省…`），切 `[:2]` 会把 `黑龙江` 截成
+    `黑龙`、把联考日期码 `0822` 截成 `08`；而 `classify` **不校验省份**（只在 `EXCLUDE_REGIONS`
+    三值上抛错）⇒ 脏地区会**静默写进 catalog**。故只认词表命中，认不出返回 `None`，
+    由调用方抛 `Unparsed`。
+    """
+    if GUOKAO_TEXT.search(text):
+        return LEVEL_GUOKAO
+    for p in PROVINCES:
+        if p in text:
+            return p
+    if LIANKAO_TEXT.search(text):
+        # 无省份的多省联考卷（实测 `2016·公务员多省联考`）。**不猜省份** —— 填一个
+        # 非省份的类别值，catalog 里一眼可辨。
+        return "多省联考"
+    return None
 ```
+
+- [ ] **Step 2: 建微型样本（四类都要有）**
+
+`tools/tests/fixtures/linfukai186/data/guokao-xingce/index.json`（**用来验证 `index.json` 被跳过**）：
+```json
+[{"key":"2026·国家公务员考试行政执法","count":2},{"key":"2026·国考行测申论联合模考大赛（第四十季）","count":1}]
+```
+
 `tools/tests/fixtures/linfukai186/data/guokao-xingce/y2026.json`：
 ```json
-{"2026·国家公务员考试副省级":[{"t":"资料分析","s":"","q":"增长率为多少？","o":["5%","7%"],"a":"B","e":"计算得7%。"}]}
-```
-`tools/tests/fixtures/linfukai186/data/guokao-xingce/y2027.json`：
-```json
-{"2027·国考行测申论联合模考大赛（第二十三季）":[{"t":"公文写作题","s":"材料1","q":"请拟写一份通知。","o":[],"a":"","e":""}]}
+{
+  "2026·国家公务员考试行政执法": [
+    {"t":"政治理论","s":"","q":"下列说法正确的是：","o":["甲","乙","丙","丁"],"a":"B","e":"乙正确。"},
+    {"t":"资料分析","s":"","q":"增长率约为：","o":["5%","7%"],"a":"B","e":"计算得7%。"}
+  ],
+  "2026·国考行测申论联合模考大赛（第四十季）": [
+    {"t":"公文写作题","s":"材料1","q":"请拟写一份通知。","o":[],"a":"","e":""}
+  ]
+}
 ```
 
-- [ ] **Step 2: 写失败的测试**
+`tools/tests/fixtures/linfukai186/data/shengkao-xingce/y2016.json`（四个键各自钉一个危险点：
+**3 字省名**、**地区在中间且前面有日期码**、**深圳市考须排除**、**无省份的多省联考**）：
+```json
+{
+  "2016·黑龙江公务员考试《行测》题": [
+    {"t":"常识判断","s":"","q":"下列属于……的是：","o":["甲","乙"],"a":"A","e":"甲正确。"}
+  ],
+  "2016·423四川公务员考试《行测》题": [
+    {"t":"数量关系","s":"","q":"……是多少？","o":["1","2"],"a":"C","e":"略。"}
+  ],
+  "2016·深圳市公务员考试《行测》真题": [
+    {"t":"言语理解与表达","s":"","q":"……","o":["甲"],"a":"A","e":"略。"}
+  ],
+  "2016·公务员多省联考《行测》题": [
+    {"t":"判断推理","s":"","q":"……","o":["甲"],"a":"A","e":"略。"}
+  ]
+}
+```
+
+`tools/tests/fixtures/linfukai186/data/shengkao-shenlun/y2016.json`（钉两件事：**申论科目由目录决定**、
+**申论目录里可以躺着国考卷** —— 实测 `shengkao-shenlun` 里有 46 个 `国家公考` 键）：
+```json
+{
+  "2016·黑龙江公务员考试《申论》题": [
+    {"t":"归纳概括题","s":"材料1\n……","q":"请概括……","a":"参考答案……"},
+    {"t":"文章写作题","s":"材料2\n……","q":"请以……为题写一篇文章。","a":"范文……"}
+  ],
+  "2016·国家公考《申论》题（副省级）": [
+    {"t":"综合分析题","s":"材料1\n……","q":"请分析……","a":"参考答案……"}
+  ]
+}
+```
+
+- [ ] **Step 3: 写失败的测试**
 
 `tools/tests/test_src_linfukai186.py`：
 ```python
@@ -1187,51 +1305,141 @@ from gwyzhenti.sources.linfukai186 import Linfukai186Adapter      # noqa: E402
 
 FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "linfukai186")
 
+# 与 Task 4 的 `base.py` 契约**完全一致**（多一个 `subject` 就会在下游 KeyError）
+RECORD_KEYS = {
+    "family", "title", "region", "year", "subject", "module", "n_questions",
+    "relpath", "images_题目", "images_公式", "declared_questions",
+}
+BUCKET_KEYS = {"family", "title", "region", "year", "subject", "module", "relpath", "reason"}
+
 
 class TestLinfukai186Adapter(unittest.TestCase):
     def setUp(self):
         self.res = Linfukai186Adapter().scan(FIX)
+        self.by = {(r["title"], r["module"]): r for r in self.res.records}
 
-    def test_records_per_paper_module(self):
-        self.assertEqual(len(self.res.records), 1)
-        r = self.res.records[0]
-        self.assertEqual(r["family"], "linfukai186")
-        self.assertEqual(r["module"], "资料分析")
-        self.assertEqual(r["n_questions"], 1)
-        self.assertEqual(r["year"], "2026")
+    def test_no_unparsed_for_clean_fixture(self):
+        # 实测本机三个 index.json 共 1,416 个键，地区全部可判 ⇒ 样本也必须零未解析
+        self.assertEqual(self.res.unparsed, [])
 
-    def test_mock_exam_excluded(self):
-        self.assertTrue(any("模考" in e["reason"] for e in self.res.excluded))
+    def test_guokao_paper_has_two_modules(self):
+        got = [r for r in self.res.records if r["title"] == "2026·国家公务员考试行政执法"]
+        self.assertEqual(len(got), 2)
+        self.assertEqual({r["module"] for r in got}, {"政治理论", "资料分析"})
+        self.assertEqual({r["region"] for r in got}, {"国考"})
+        self.assertEqual({r["subject"] for r in got}, {"行测"})
 
-    def test_relpath_points_at_year_file(self):
-        self.assertTrue(self.res.records[0]["relpath"].endswith("y2026.json"))
+    def test_three_char_province_is_not_truncated(self):
+        # `[:2]` 会把 `黑龙江` 切成 `黑龙` —— 这条测试就是钉死它
+        r = self.by[("2016·黑龙江公务员考试《行测》题", "常识判断")]
+        self.assertEqual(r["region"], "黑龙江")
+        self.assertEqual(r["year"], "2016")
+
+    def test_province_found_after_date_code(self):
+        # 实测存在 `2016·423四川…` / `2016·0822…`：地区在日期码**之后**
+        r = self.by[("2016·423四川公务员考试《行测》题", "数量关系")]
+        self.assertEqual(r["region"], "四川")
+
+    def test_shenlun_subject_comes_from_directory(self):
+        a = self.by[("2016·黑龙江公务员考试《申论》题", "归纳概括题")]
+        b = self.by[("2016·黑龙江公务员考试《申论》题", "文章写作题")]
+        self.assertEqual(a["subject"], "申论")
+        self.assertEqual(b["subject"], "申论")
+        self.assertEqual(a["n_questions"], 1)
+
+    def test_shenlun_dir_can_hold_a_guokao_paper(self):
+        # 实测 `shengkao-shenlun` 里有 46 个 `国家公考` 键 ⇒ 地区取自**卷名**，不取自目录
+        r = self.by[("2016·国家公考《申论》题（副省级）", "综合分析题")]
+        self.assertEqual(r["region"], "国考")
+        self.assertEqual(r["subject"], "申论")
+
+    def test_multi_province_liankao_gets_its_own_region_value(self):
+        r = self.by[("2016·公务员多省联考《行测》题", "判断推理")]
+        self.assertEqual(r["region"], "多省联考")
+
+    def test_mock_and_shenzhen_are_excluded_not_unparsed(self):
+        reasons = sorted(e["reason"].split(":")[0].strip() for e in self.res.excluded)
+        self.assertEqual(reasons, sorted(["试卷名含排除词", "非国省考地区"]))
+        self.assertEqual(len(self.res.excluded), 2)
+
+    def test_record_and_bucket_keys_are_frozen(self):
+        for r in self.res.records:
+            self.assertEqual(set(r), RECORD_KEYS)
+        for e in self.res.excluded + self.res.unparsed:
+            self.assertEqual(set(e), BUCKET_KEYS)
+
+    def test_index_json_is_not_parsed_as_a_year_file(self):
+        # index.json 是 list，若被当 `y<年>.json` 读取，`papers.items()` 会 AttributeError
+        self.assertTrue(all(r["relpath"].endswith(".json") for r in self.res.records))
+        self.assertFalse(any(r["relpath"].endswith("index.json") for r in self.res.records))
 ```
 
-- [ ] **Step 3: 跑测试确认失败**
+`tools/tests/test_naming.py` **追加**（放在已有测试类之后，import 行补 `region_exclusion, region_from_text`）：
+```python
+class TestRegionFromText(unittest.TestCase):
+    def test_longest_match_beats_truncation(self):
+        self.assertEqual(region_from_text("黑龙江公务员录用考试《行测》题"), "黑龙江")
+        self.assertEqual(region_from_text("9月吉林公务员考试《行测》甲级"), "吉林")
 
-Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_src_linfukai186 -v`
+    def test_region_may_sit_after_a_date_code(self):
+        self.assertEqual(region_from_text("423四川公务员考试《行测》题"), "四川")
+        self.assertEqual(region_from_text("0822河南公务员考试《行测》题"), "河南")
+
+    def test_guokao_variants(self):
+        self.assertEqual(region_from_text("国家公务员考试行政执法"), "国考")
+        self.assertEqual(region_from_text("国家公考《申论》题（副省级）"), "国考")
+
+    def test_liankao_without_province_is_its_own_value(self):
+        self.assertEqual(region_from_text("公务员多省联考《行测》题"), "多省联考")
+
+    def test_unknown_returns_none(self):
+        self.assertIsNone(region_from_text("公安院校联考"))
+
+    def test_exclusion_is_checked_before_region(self):
+        self.assertEqual(region_exclusion("深圳市公务员考试《行测》题"), "深圳市考")
+        self.assertEqual(region_exclusion("广州市公务员考试《行测》真题"), "广州市考")
+        self.assertEqual(region_exclusion("2025·四川省考_选调公务员录用考试"), "选调")
+        self.assertIsNone(region_exclusion("黑龙江省公务员考试"))
+```
+
+- [ ] **Step 4: 跑测试确认失败**
+
+Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_src_linfukai186 tests.test_naming -v`
 Expected: FAIL —— `ModuleNotFoundError: No module named 'gwyzhenti.sources.linfukai186'`
 
-- [ ] **Step 4: 写最小实现**
+- [ ] **Step 5: 写最小实现**
 
 `tools/gwyzhenti/sources/linfukai186.py`：
 ```python
 # -*- coding: utf-8 -*-
 """linfukai186-arch/gongkao-tiku adapter：题级 JSON，按 **卷标识** 归组。
 
-此源**无 卷型 字段、无图片**；仅作覆盖交叉对照与补洞提示，不参与段二导出。
+四个类目：`guokao-xingce` / `shengkao-xingce`（行测）、`guokao-shenlun` / `shengkao-shenlun`（申论）。
+**科目由目录决定，地区由卷名决定** —— 实测 `shengkao-shenlun` 里有 46 个 `国家公考` 键，
+反过来也会成立，故两者不可互相推导。此源**无卷型字段、无卷级图片**（图片按题级文本实测计数，
+实测多为 0）。行测用于覆盖交叉对照；申论在 M1 只入 catalog，**不给正文**。
 """
 import json
 import os
 import re
 
-from ..naming import Unparsed, classify
+from ..naming import Unparsed, classify, region_exclusion, region_from_text
 from .base import ScanResult, SourceAdapter
 
 FAMILY = "linfukai186"
-CATS = ("guokao-xingce", "shengkao-xingce")     # M1 只接行测两类
+
+# (目录名, 科目) —— 实测四类都存在；`guokao-shenlun` 的键 100% 含「模考」，会全数进 excluded，
+# 仍然接入：excluded 台账本身就是对账证据。
+CATS = (
+    ("guokao-xingce", "行测"),
+    ("shengkao-xingce", "行测"),
+    ("guokao-shenlun", "申论"),
+    ("shengkao-shenlun", "申论"),
+)
 YEAR_RE = re.compile(r"^y(\d{4})\.json$")
 YEAR_IN_KEY = re.compile(r"(\d{4})")
+# 题级文本里出现即计一次（实测本机样本多为 0；不假设，按内容数）
+IMGISH = re.compile(r"<img|\.png|\.jpg|\.jpeg|\.webp|/media/")
 
 
 class Linfukai186Adapter(SourceAdapter):
@@ -1239,51 +1447,60 @@ class Linfukai186Adapter(SourceAdapter):
 
     def scan(self, root):
         res = ScanResult()
-        data = os.path.join(root, "data")
-        for cat in CATS:
-            cat_dir = os.path.join(data, cat)
+        for cat, subject in CATS:
+            cat_dir = os.path.join(root, "data", cat)
             if not os.path.isdir(cat_dir):
                 continue
             for name in sorted(os.listdir(cat_dir)):
                 m = YEAR_RE.match(name)
                 if not m:
-                    continue
-                relpath = "data/%s/%s" % (cat, name)
-                self._one(os.path.join(cat_dir, name), relpath, m.group(1), res)
+                    continue                      # index.json 等非 `y<年>.json` 一律跳过
+                self._one(os.path.join(cat_dir, name),
+                          "data/%s/%s" % (cat, name), m.group(1), subject, res)
         return res
 
-    def _one(self, abspath, relpath, fallback_year, res):
+    def _one(self, abspath, relpath, fallback_year, subject, res):
         with open(abspath, encoding="utf-8") as fh:
             papers = json.load(fh)
         for title, items in papers.items():
             if not items:
                 continue
-            ym = YEAR_IN_KEY.search(title)
-            year = ym.group(1) if ym else fallback_year
-            region = "国考" if title.startswith(str(year) + "·国家公务员") else \
-                (title.split("·", 1)[1][:2] if "·" in title else "")
+            m = YEAR_IN_KEY.search(title)
+            year = m.group(1) if m else fallback_year
+            rest = title.split("·", 1)[1] if "·" in title else title
+            # 排除族先于地区匹配：`2025·深圳行测申论联合终极模考大赛` 两个族都命中，
+            # 报「非国省考地区」比报「模考」更贴近它的身份。
+            region = region_exclusion(rest) or region_from_text(rest) or ""
             try:
-                classify(region, year, title)
+                if not region:
+                    raise Unparsed("地区无法判定", rest)
+                classify(region, year, title, subject=subject)
             except Unparsed as exc:
-                bucket = res.unparsed if exc.reason.startswith("地区字段为空") else res.excluded
+                # 用**结构化判据** `exc.kind`，不比对 reason 前缀（前缀会在新增 reason 时错分）
+                bucket = res.unparsed if exc.kind == Unparsed.UNPARSED else res.excluded
                 bucket.append({
                     "family": FAMILY, "title": title, "region": region, "year": year,
-                    "module": "", "relpath": relpath, "reason": exc.reason,
+                    "subject": subject, "module": "", "relpath": relpath,
+                    "reason": exc.reason,
                 })
                 continue
-            by_module = {}
+            n_by_module, img_by_module = {}, {}
             for it in items:
-                by_module.setdefault(it.get("t", ""), 0)
-                by_module[it["t"]] += 1
-            for module, n in by_module.items():
+                mod = it.get("t", "")
+                n_by_module[mod] = n_by_module.get(mod, 0) + 1
+                n_img = len(IMGISH.findall(json.dumps(it, ensure_ascii=False)))
+                if n_img:
+                    img_by_module[mod] = img_by_module.get(mod, 0) + n_img
+            for module, n in n_by_module.items():
                 res.records.append({
                     "family": FAMILY, "title": title, "region": region, "year": year,
-                    "module": module, "n_questions": n, "relpath": relpath,
-                    "images_题目": 0, "images_公式": 0,
+                    "subject": subject, "module": module, "n_questions": n,
+                    "relpath": relpath, "images_题目": img_by_module.get(module, 0),
+                    "images_公式": 0, "declared_questions": -1,
                 })
 ```
 
-`tools/gwyzhenti/sources/__init__.py`（追加一行）：
+`tools/gwyzhenti/sources/__init__.py`（整体替换）：
 ```python
 # -*- coding: utf-8 -*-
 """adapter 注册表。加新源 = 在这里多一行。"""
@@ -1296,18 +1513,78 @@ ADAPTERS = {
 }
 ```
 
-- [ ] **Step 5: 跑测试确认通过**
+- [ ] **Step 6: 跑测试确认通过**
 
-Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_src_linfukai186 -v`
-Expected: PASS，3 tests OK
+Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 PYTHONDONTWRITEBYTECODE=1 python -X utf8 -m unittest discover -s tests -v`
+Expected: PASS，全部通过（`test_naming` 由 17 增至 23，`test_src_linfukai186` 新增 10 条；条数不符以实际为准，不许为凑数增删测试）
 
-- [ ] **Step 6: 提交**
+- [ ] **Step 7: 真库冒烟（冻结哨兵）**
+
+写 `tools/tests/smoke_linfukai186.py`（**不作为 unittest**；不用 `python -c`，免得引号被 shell 吃掉）：
+```python
+# -*- coding: utf-8 -*-
+"""真库冒烟：读本机 gongkao-tiku 克隆，核对四个类目的分桶。手工运行。
+
+`unparsed == 0` 是**实测结论**（本机三个 index.json 共 1,416 个键，地区全部可判）——
+若它不为 0，说明地区别名表漏了词，必须补表而不是放宽断言。
+"""
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from gwyzhenti.sources.linfukai186 import Linfukai186Adapter      # noqa: E402
+
+ROOT = r"D:\projects\_gwy-upstream\gongkao-tiku"
+
+
+def main():
+    res = Linfukai186Adapter().scan(ROOT)
+    per = {}
+    for r in res.records:
+        k = (r["subject"], r["region"])
+        per[k] = per.get(k, 0) + r["n_questions"]
+    print("records %d | unparsed %d | excluded %d | 题数合计 %d"
+          % (len(res.records), len(res.unparsed), len(res.excluded),
+             sum(r["n_questions"] for r in res.records)))
+    for subj in ("行测", "申论"):
+        rows = [r for r in res.records if r["subject"] == subj]
+        provs = sorted({r["region"] for r in rows})
+        print("  %s: %d 卷·模块行 | %d 个地区 | 地区: %s"
+              % (subj, len(rows), len(provs), " ".join(provs)))
+    reasons = {}
+    for e in res.excluded:
+        reasons[e["reason"].split(":")[0].strip()] = \
+            reasons.get(e["reason"].split(":")[0].strip(), 0) + 1
+    for k in sorted(reasons):
+        print("  excluded %4d  %s" % (reasons[k], k))
+
+    assert res.unparsed == [], "地区别名表漏词：%s" % [u["title"] for u in res.unparsed[:5]]
+    assert [r for r in res.records if r["subject"] == "行测"], "行测一条都没有："
+    assert [r for r in res.records if r["subject"] == "申论"], "申论一条都没有："
+
+
+if __name__ == "__main__":
+    main()
+```
+
+Run:
+```bash
+cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 tests/smoke_linfukai186.py
+```
+Expected: `unparsed 0`；行测、申论两个科目**都有**非零记录；`excluded` 理由分布含
+`非国省考地区` 与 `试卷名含排除词`。
+**把打印出的 `records` / `excluded` 实际数字回填成断言**（像 Task 4 的 `(2497, 0, 459)` 那样冻结成
+哨兵，并在报告里写明数字来源是本机克隆实测），再跑一次确认通过。
+
+- [ ] **Step 8: 提交**
 
 ```bash
 cd D:/projects/gwy-zhenti
-git add tools/gwyzhenti/sources/linfukai186.py tools/gwyzhenti/sources/__init__.py tools/tests/test_src_linfukai186.py tools/tests/fixtures/linfukai186
-git commit -m "feat(tools): linfukai186 adapter（行测交叉对照，模考排除）"
+git add tools/gwyzhenti/naming.py tools/gwyzhenti/sources/linfukai186.py tools/gwyzhenti/sources/__init__.py tools/tests/test_naming.py tools/tests/test_src_linfukai186.py tools/tests/smoke_linfukai186.py tools/tests/fixtures/linfukai186
+git commit -m "feat(tools): linfukai186 adapter（四类目，行测交叉对照 + 申论目录）"
 ```
+（若冒烟哨兵是随后单独一次提交，可以，但每个 commit 必须语义完整。）
 
 ---
 
@@ -1367,12 +1644,18 @@ class TestCatalog(unittest.TestCase):
 
     def test_catalog_one_paper_one_line(self):
         rows = jl(os.path.join(self.out, "catalog.jsonl"))
-        # fixture: 四川卷 2016（两模块）+ 江苏A类 2020 + linfukai186 的 2026 国考副省级 ⇒ 3 卷
-        self.assertEqual(len(rows), 3)
+        # 卷键去重后 = 7 卷：
+        #   四川 2016 行测（**两源合并**）、江苏 2020 行测 A 类、国考 2026 行测 行政执法、
+        #   黑龙江 2016 行测、多省联考 2016 行测、黑龙江 2016 申论、国考 2016 申论 副省级
+        self.assertEqual(len(rows), 7)
+        self.assertEqual(len({r["slug"] for r in rows}), 7, "slug 必须一一对应")
         titles = {r["title"] for r in rows}
-        self.assertEqual(titles, {"2016年423联考《行测》题（四川卷）",
-                                  "2020年江苏省公务员录用考试《行测》题（A类）",
-                                  "2026·国家公务员考试副省级"})
+        # `title` 取**首个遇到的源**（`sorted(uproots)` ⇒ linfukai186 在前），故四川卷存的是
+        # linfukai186 的卷名；xingcezhenti 的原名在 `titles` 里逐源保留。
+        self.assertIn("2016·423四川公务员考试《行测》题", titles)
+        self.assertIn("2020年江苏省公务员录用考试《行测》题（A类）", titles)
+        self.assertIn("2016·公务员多省联考《行测》题", titles)
+        self.assertIn("2016·国家公考《申论》题（副省级）", titles)
 
     def test_catalog_row_shape(self):
         rows = jl(os.path.join(self.out, "catalog.jsonl"))
@@ -1382,21 +1665,52 @@ class TestCatalog(unittest.TestCase):
         self.assertEqual(r["year"], "2016")
         self.assertEqual(r["ptype"], "统考")
         self.assertEqual(r["slug"], "省考-四川-2016-行测-统考")
-        self.assertEqual(r["n_questions"], 3)          # 常识 1 + 资料 2
-        self.assertEqual(sorted(r["modules"]), ["常识判断", "资料分析"])
-        self.assertEqual(r["sources"], ["xingcezhenti"])
+        # **跨源合并**：xingcezhenti 的 常识 1 + 资料 2，与 linfukai186 的 数量关系 1
+        self.assertEqual(r["n_questions"], 4)
+        self.assertEqual(sorted(r["modules"]), ["常识判断", "资料分析", "数量关系"])
+        self.assertEqual(r["sources"], ["linfukai186", "xingcezhenti"])
+        # **逐源保真**：两个源的原始卷名各自留存
+        self.assertEqual(r["titles"], {
+            "linfukai186": "2016·423四川公务员考试《行测》题",
+            "xingcezhenti": "2016年423联考《行测》题（四川卷）",
+        })
+
+    def test_gukao_rows_have_empty_region_field(self):
+        # 国考卷在 `PaperKey.region` 里是**空串**（`classify` 的规定），报告里才折成 `国考`
+        rows = jl(os.path.join(self.out, "catalog.jsonl"))
+        gk = [x for x in rows if x["level"] == "国考"]
+        self.assertEqual(len(gk), 2)                        # 2026 行测行政执法 + 2016 申论副省级
+        self.assertEqual({x["region"] for x in gk}, {""})
+        self.assertEqual(self.rep.by_region.get("国考"), 2)
 
     def test_report_totals(self):
-        self.assertEqual(self.rep.papers, 3)           # 含 linfukai186 的 2026 国考副省级
-        self.assertEqual(self.rep.records, 4)          # 卷×模块
-        self.assertEqual(self.rep.questions, 5)        # 1+2+1 + 1（linfukai186）
+        self.assertEqual(self.rep.papers, 7)
+        self.assertEqual(self.rep.records, 11)      # xingcezhenti 3 + linfukai186 8（卷×模块）
+        self.assertEqual(self.rep.questions, 12)    # xingcezhenti 4 + linfukai186 8
+        self.assertEqual(self.rep.unparsed, 0)
+        self.assertEqual(self.rep.excluded, 2)      # 深圳市考卷 + 模考卷
+        self.assertEqual(dict(self.rep.by_subject), {"行测": 5, "申论": 2})
 
     def test_coverage_matrix_has_region_rows(self):
         with open(os.path.join(self.out, "coverage.md"), encoding="utf-8") as fh:
             cov = fh.read()
         self.assertIn("四川", cov)
         self.assertIn("江苏", cov)
-        self.assertIn("申论", cov)      # 申论列必须存在，且标为未接入（M3）
+        self.assertIn("申论", cov)      # 申论**已接入段一**（正文导出仍排 M3）
+        # 非省份的地区类（多省联考）**不得从覆盖矩阵里消失** —— 否则 catalog 里有卷、
+        # 报告里查不到，正好违背「地域齐全」的第一优先级。
+        self.assertIn("多省联考", cov)
+        self.assertNotIn("未接入（M3）", cov)
+
+    def test_conflicts_lists_both_source_names(self):
+        with open(os.path.join(self.out, "conflicts.md"), encoding="utf-8") as fh:
+            con = fh.read()
+        # 四川卷是同键多源的**唯一**例子；两个源的原始卷名都要出现（留证不裁决）
+        self.assertIn("省考-四川-2016-行测-统考", con)
+        self.assertIn("2016·423四川公务员考试《行测》题", con)
+        self.assertIn("2016年423联考《行测》题（四川卷）", con)
+        self.assertIn("xingcezhenti", con)
+        self.assertIn("linfukai186", con)
 
     def test_gaps_ordered_region_first(self):
         with open(os.path.join(self.out, "gaps.md"), encoding="utf-8") as fh:
@@ -1470,17 +1784,22 @@ def build(uproots, out_dir):
     papers = {}
     for r in all_records:
         try:
-            c = classify(r["region"], r["year"], r["title"], subject="行测")
+            # 科目**取自记录**（各 adapter 已按目录/模块判定过）—— **不得在此写死**：
+            # 写死 `行测` 会把 linfukai186 的 686 份申论卷全部错标成行测，
+            # 而 classify 不校验科目 ⇒ 错标会**静默**进 coverage.md。
+            c = classify(r["region"], r["year"], r["title"], subject=r["subject"])
         except Unparsed as exc:            # 理论上 adapter 已分流；此处兜底
             all_unparsed.append(dict(r, reason=exc.reason))
             continue
         key = c.key
         p = papers.setdefault(key, {
             "title": r["title"], "nature": c.nature, "form": c.form,
-            "modules": {}, "sources": set(), "declared": 0,
+            "modules": {}, "sources": set(), "titles": {}, "declared": 0,
         })
         p["modules"][r["module"]] = p["modules"].get(r["module"], 0) + r["n_questions"]
         p["sources"].add(r["family"])
+        # **逐源保真**：同一卷键被多源提供时，各留各的原始卷名 —— 冲突页拿它当证据
+        p["titles"][r["family"]] = r["title"]
         if r.get("declared_questions", -1) > 0:
             p["declared"] += r["declared_questions"]
 
@@ -1498,6 +1817,7 @@ def build(uproots, out_dir):
             "modules": p["modules"], "n_questions": n,
             "declared_questions": p["declared"],
             "sources": sorted(p["sources"]),
+            "titles": {k: p["titles"][k] for k in sorted(p["titles"])},
         })
         rep.papers += 1
         rep.questions += n
@@ -1513,6 +1833,18 @@ def build(uproots, out_dir):
     return rep
 
 
+def _region_rows(rows):
+    """覆盖/缺口两表共用的地区行序列。
+
+    固定行 = `国考` + 31 省；**再加** catalog 里实际出现的**非省份地区类**
+    （实测有 `多省联考`）。不加这一项的话，这类卷存在于 `catalog.jsonl` 却在
+    `coverage.md` / `gaps.md` 里**凭空消失** —— 恰好违背「地域齐全 > 时间齐全」的第一优先级。
+    """
+    seen = {r["region"] or "国考" for r in rows}
+    extra = sorted(seen - {"国考"} - set(PROVINCES))
+    return ["国考"] + list(PROVINCES) + extra
+
+
 def _write_coverage(out_dir, rows, rep):
     have = {}
     for r in rows:
@@ -1520,15 +1852,14 @@ def _write_coverage(out_dir, rows, rep):
     L = ["# 覆盖矩阵（地区 × 科目）", "",
          "> 由 catalog.jsonl 实算得出。**地域齐全 > 时间齐全**：先看地区行是否空白，再看年份纵深。", "",
          "| 地区 | 科目 | 卷数 | 年份跨度 | 年份数 |", "|---|---|---:|---|---:|"]
-    for region in ["国考"] + list(PROVINCES):
+    for region in _region_rows(rows):
         for subject in SUBJECTS:
             ys = have.get((region, subject), [])
             if ys:
                 L.append("| %s | %s | %d | %s–%s | %d |"
                          % (region, subject, len(ys), min(ys), max(ys), len(set(ys))))
             else:
-                note = "**未接入（M3）**" if subject == "申论" else "**缺**"
-                L.append("| %s | %s | 0 | — | 0 | %s" % (region, subject, note))
+                L.append("| %s | %s | 0 | — | 0 | **缺**" % (region, subject))
     L += ["", "**合计**：%d 卷 / %d 题。" % (rep.papers, rep.questions)]
     _w(os.path.join(out_dir, "coverage.md"), L)
 
@@ -1538,13 +1869,13 @@ def _write_gaps(out_dir, rows, rep):
     L = ["# 缺口清单", "",
          "> 排序 = **地域优先**、年份次之、**新卷先于老卷**。", ""]
     L.append("## 一、地区级缺口（最高优先）")
-    for region in ["国考"] + list(PROVINCES):
+    for region in _region_rows(rows):
         missing = [s for s in SUBJECTS if (region, s) not in have]
         if missing:
             L.append("- **%s**：缺 %s" % (region, "、".join(missing)))
     L.append("")
     L.append("## 二、年次级缺口（地区齐了再看）")
-    for region in ["国考"] + list(PROVINCES):
+    for region in _region_rows(rows):
         ys = sorted({r["year"] for r in rows if (r["region"] or "国考") == region})
         if not ys:
             continue
@@ -1552,7 +1883,8 @@ def _write_gaps(out_dir, rows, rep):
         miss = sorted(full - set(ys), reverse=True)      # 新的在前
         if miss:
             L.append("- %s：有 %s；缺 %s" % (region, "、".join(ys), "、".join(miss)))
-    L += ["", "> 未接入的申论源见 spec §3 与 SOURCES.md；M3 前不宣称申论覆盖。"]
+    L += ["", "> 本表只反映**已 catalog 的源**。申论正文的导出排在 M3（见 spec §3）；"
+              "**「有目录行」不等于「有可交付正文」** —— 转 M3 前不宣称申论覆盖。"]
     _w(os.path.join(out_dir, "gaps.md"), L)
 
 
@@ -1563,7 +1895,10 @@ def _write_conflicts(out_dir, rows):
     if not hit:
         L.append("（本次无同键多源卷。）")
     for r in hit:
-        L.append("- `%s` ← %s" % (r["slug"], "、".join(r["sources"])))
+        L.append("- `%s` ← %s（%d 题 / %d 模块）"
+                 % (r["slug"], "、".join(r["sources"]), r["n_questions"], len(r["modules"])))
+        for fam in r["sources"]:
+            L.append("    - `%s`：%s" % (fam, r["titles"].get(fam, "—")))
     _w(os.path.join(out_dir, "conflicts.md"), L)
 
 
@@ -1575,7 +1910,7 @@ def _w(path, lines):
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_catalog -v`
-Expected: PASS，6 tests OK
+Expected: PASS，8 tests OK
 
 - [ ] **Step 5: 提交**
 
@@ -2605,7 +2940,9 @@ Expected: 六闸全 OK；`sources` 不含正文的卷（纯 linfukai186）列入
 - **数量账**：catalog 卷数 / 已导出卷数 / 跳过卷数（及理由分布）/ 未解析卷数 / 已排除卷数（及理由分布）。
 - **六闸结果**：逐闸通过与否 + 说明（**不得抽样伪装成全量**）。
 - **覆盖账**：`coverage.md` 的地区×科目表；明确「哪些省份已覆盖、哪些为缺」。
-- **诚实边界**（照抄 spec §9，并更新实测数字）：ERRRC 自报 515 ≠ 已入库；申论未接入；公式为位图非数学表达式；卷型与层级由名字解析、拿不准的已进 `unparsed.jsonl`。
+- **诚实边界**（照抄 spec §9，并更新实测数字）：ERRRC 自报 515 ≠ 已入库；**申论「有目录行」但 M1 不出正文**
+  （686 份省考申论真题只在 `catalog.jsonl` 里，`coverage.md` 的申论行**不代表可交付**）；公式为位图非数学表达式；
+  卷型与层级由名字解析、拿不准的已进 `unparsed.jsonl`；`linfukai186` 的行测卷**无正文**，只作交叉对照与补洞提示。
 
 - [ ] **Step 5: 提交**
 
@@ -2627,9 +2964,21 @@ git commit -m "feat(tools): export / gate 子命令"
 - [ ] **Step 1: 更新 SOURCES.md**
 
 在 `SOURCES.md` 里补一节「本仓实际接入的源（2026-10-09 实测）」，写明：
-- **已接入（M1）**：`ERRRC/xingcezhenti`（行测正文主源；自报 515 卷 / 58,890 题；实测标题合计一致；**无 LICENSE**，私有仓内导入 + 逐卷记来源）；`linfukai186-arch/gongkao-tiku`（题级 JSON，行测交叉对照）。
-- **已识别、未接入**：`zzcc-nb/gongkao-tiku`（**行测题库为空**，实为申论源，归 M3）；`shiwuooo/shangantong-papers-v2-c1/c2`（**行测**源，498 卷，2008–2026，HTML+webp，**独缺西藏** ⇒ 不提升地域齐全，留作交叉验证与老年份纵深，归 M2）。
-- **同源 fork 家族**：`r1172464137/xingcezhenti` 等只算 1 个家族。
+- **已接入（M1）**：
+  - `ERRRC/xingcezhenti` —— **行测正文主源**；自报 515 卷 / 58,890 题；实测标题合计一致；
+    **无 LICENSE**，私有仓内导入 + 逐卷记来源。
+  - `linfukai186-arch/gongkao-tiku` —— 题级 JSON 四类目：`guokao-xingce` / `shengkao-xingce`
+    （行测，**交叉对照**）、`guokao-shenlun`（59 键 **100% 模考 ⇒ 0 真卷**，全数进 excluded）、
+    `shengkao-shenlun`（808 键，**686 份省考申论真题**，2010–2026）。
+    **它是 spec §9 所称「最大缺口」（申论）的实际目录源** ⇒ M1 段一**四类目全接入**；
+    申论**正文**的导出仍排 M3。此源**无卷型字段、无卷级图片**。
+- **已识别、未接入**：`zzcc-nb/gongkao-tiku`（**行测题库为空**，实为申论源，归 M3）；
+  `shiwuooo/shangantong-papers-v2-c1/c2`（**行测**源，498 卷，2008–2026，HTML+webp，**独缺西藏**
+  ⇒ 不提升地域齐全，留作交叉验证与老年份纵深，归 M2）。
+- **同源 fork 家族**：`r1172464137/xingcezhenti` 等只算 1 个家族；`jangviktor-web/GongkaoNaoku`
+  与 `ERRRC/kaogongzhentizhengliu` 是 `xingcezhenti` 的**衍生物**（无新地区），不另接入；
+  `SGHCN0762/civil-country-exam-xingce`、`Yaoyuan-Zhang319/AdministrativeAptitudeTest` 为
+  **PDF-only**，按用户口径「PDF 只作补充」，不作为 md 源。
 
 - [ ] **Step 2: 更新 tools/README.md**
 
@@ -2653,7 +3002,7 @@ git commit -m "docs: 登记实测接入的源与管线用法"
 |---|---|
 | §1 目标 / M1 | Task 6（段一全域接入 → 覆盖图）、Task 9/11（行测导出） |
 | §2 非目标 | Task 2 排除词表；Task 4 分流；Task 8 零改写 |
-| §3 数据源 | Task 4（ERRRC）、Task 5（linfukai186）、Task 12（登记 zzcc-nb / shiwuooo） |
+| §3 数据源 | Task 4（ERRRC 行测正文主源）、Task 5（linfukai186 **四类目**：行测交叉对照 + 申论**目录**）、Task 12（登记 zzcc-nb / shiwuooo 与 PDF-only 源） |
 | §4 两段式架构 | Task 6（段一）↔ Task 9（段二），接口 = `catalog.jsonl` |
 | §5 卷键 / adapter 字段 / 六产物 | Task 1（卷键）、Task 4（记录字段）、Task 6（六产物） |
 | §6 五项变换 | Task 8 |
