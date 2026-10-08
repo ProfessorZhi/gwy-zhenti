@@ -355,14 +355,21 @@ class TestClassify(unittest.TestCase):
 
     def test_trailing_juan_is_absorbed_only_when_it_lands_in_the_vocabulary(self):
         # 尾缀「卷」的容差是**窄的**：剥掉后能落回已声明词表才剥（`行政执法卷`→`行政执法`），
-        # 否则逐字保留 —— 真库里 `（省直）` 与 `（黑龙江省直卷）` 同时存在，宽泛地剥会让
-        # 两者收敛成同一个 ptype ⇒ 撞 slug ⇒ 丢卷。
+        # 否则**逐字保留**。
+        # ⚠️ 本测试的原断言（`省直卷` ≠ `省直`）**已被裁定 R-T6-1 取代**：`省直` 现在**在**词表里，
+        # 故 `（省直）` 与 `（黑龙江省直卷）` **归一为同一个值**。原断言的依据（「真库同时存在
+        # 这两者」）**实测不成立** —— `（省直）` 只在 2018、`（黑龙江省直卷）` 只在 2019，
+        # **从不同年** ⇒ 本就不同 `PaperKey`，归一零碰撞风险；且归一**反而消除了**一组撞键
+        # （此前 linfukai 侧回落 `统考`，与 xingcezhenti 侧的 `省直` 撞上）。
+        # 窄容差这条**原则**仍在：下面用一个**确实不在词表**的 token 证明它。
         self.assertEqual(classify("国考", "2026", "…（行政执法卷网友回忆版）").key.ptype, "行政执法")
-        self.assertEqual(classify("黑龙江", "2016", "…（黑龙江省直卷）").key.ptype, "省直卷")
-        shi = classify("黑龙江", "2016", "…（省直）").key.ptype
-        hl = classify("黑龙江", "2016", "…（黑龙江省直卷）").key.ptype
+        shi = classify("黑龙江", "2018", "…（省直）").key.ptype
+        hl = classify("黑龙江", "2019", "…（黑龙江省直卷）").key.ptype
         self.assertEqual(shi, "省直")
-        self.assertNotEqual(shi, hl)
+        self.assertEqual(hl, "省直")          # 归一（R-T6-1）
+        # 不落词表的 token ⇒ **逐字保留**，不剥「卷」
+        self.assertEqual(classify("黑龙江", "2016", "…（县级、乡镇统一卷）").key.ptype,
+                         "县级、乡镇统一卷")
 
     def test_compound_suffix_keeps_nature_word_out_of_ptype(self):
         # 性质词在复合后缀里是**尾巴** ⇒ 必须在 token 内部剔除，精确匹配会漏
@@ -465,8 +472,12 @@ def _ptype_tokens(region, title):
 def _match_value(token):
     """token → 已声明卷型值；认不出返回 `None`。
 
-    尾缀 `卷` 的容差是**窄的**：只在剥掉后能落回 `PTYPE_VALUES` 时才剥。真库同时存在
-    `（省直）` 与 `（黑龙江省直卷）`，宽容差会把两者收敛成同一个 ptype ⇒ 撞 slug ⇒ **丢卷**。
+    尾缀 `卷` 的容差是**窄的**：只在剥掉后能落回 `PTYPE_VALUES` 时才剥 ——
+    真库里有 `（县级、乡镇统一卷）` 这种 token，其「剥掉卷」后的形态**不在**词表里 ⇒
+    必须**逐字保留**，不得收敛。
+    ⚠️ 本 docstring 原先举的例子是「`（省直）` 与 `（黑龙江省直卷）` 同时存在」，**该依据实测不成立**
+    （两者分别在 2018 / 2019，从不同年 ⇒ 本就不同键）；`省直` 现已进词表，两者**归一**（裁定 R-T6-1）。
+    窄容差这条**原则**不受影响，只是换了个真实例子。
     """
     for rx, value in PTYPE_RULES:
         if rx.fullmatch(token):
