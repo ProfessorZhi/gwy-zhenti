@@ -403,6 +403,11 @@ EXCLUDE_REGIONS = {"选调", "深圳市考", "广州市考"}
 EXCLUDE_TITLE = re.compile(r"选调|法检|司法所|公检法|事业编|事业单位|职测|综应|模考|公开课|模拟")
 
 # 卷型：**长模式在前**，先命中先返回。**只归一到 spec 已声明的词表**，其余一律不推测。
+# 词表 = spec §卷型归一表（`:137` 的第一张表 + `:141-144` **实测**的后缀词表）。
+# ⚠️ **顺序有讲究**：`县级以上` 必须排在 `县级卷|县级` 之前，`定向乡镇` 必须排在 `乡镇卷|乡镇` 之前 ——
+# 否则前者的 search 会被更短的后者抢先命中 ⇒ 卷型判错 ⇒ **可能撞 slug**（见下）。
+# （裁定 R-T6-1：`:141-144` 那批后缀词原先没进代码，实测导致 **2016+ 行测 30 条真撞键** ——
+# 两份不同的卷（甲卷/乙卷、县乡卷/省直卷、兵团/非兵团…）全部回落 `统考`，算出同一个 slug。）
 PTYPE_RULES = (
     (re.compile(r"副省级"), "副省级"),
     (re.compile(r"地市级"), "地市级"),
@@ -411,6 +416,19 @@ PTYPE_RULES = (
     (re.compile(r"B类|B卷"), "B类"),
     (re.compile(r"C类|C卷"), "C类"),
     (re.compile(r"D类|D卷"), "D类"),
+    # —— spec :141-144 实测的后缀词表（R-T6-1 补入）——
+    (re.compile(r"甲级|甲卷"), "甲级"),
+    (re.compile(r"乙级|乙卷"), "乙级"),
+    (re.compile(r"上半年"), "上半年"),
+    (re.compile(r"下半年"), "下半年"),
+    (re.compile(r"县乡卷|县乡"), "县乡卷"),
+    (re.compile(r"省直卷|省直"), "省直"),
+    (re.compile(r"兵团"), "兵团"),
+    (re.compile(r"县级以上"), "县级以上"),
+    (re.compile(r"区级及以上"), "区级及以上"),
+    (re.compile(r"定向乡镇"), "定向乡镇"),
+    (re.compile(r"单考区卷"), "单考区卷"),
+    # —— 原有的两级，必须排在「定向乡镇」「县级以上」之后 ——
     (re.compile(r"乡镇卷|乡镇"), "乡镇卷"),
     (re.compile(r"县级卷|县级"), "县级卷"),
 )
@@ -1710,11 +1728,13 @@ class TestCatalog(unittest.TestCase):
         # 码点序（常 U+5E38 < 数 U+6570 < 资 U+8D44）；**不是**逻辑序 —— 这里刻意用 sorted() 钉死可复现性
         self.assertEqual(sorted(r["modules"]), ["常识判断", "数量关系", "资料分析"])
         self.assertEqual(r["sources"], ["linfukai186", "xingcezhenti"])
-        # **逐源保真**：两个源的原始卷名各自留存
+        # **逐源保真**：两个源的原始卷名各自留存（R-T6-1 起值从**字符串**改为**排序去重列表**）
         self.assertEqual(r["titles"], {
-            "linfukai186": "2016·423四川公务员考试《行测》题",
-            "xingcezhenti": "2016年423联考《行测》题（四川卷）",
+            "linfukai186": ["2016·423四川公务员考试《行测》题"],
+            "xingcezhenti": ["2016年423联考《行测》题（四川卷）"],
         })
+        # 两源卷名互不为子串，但**跨源**不算撞键（跨源本来就是要合并的）⇒ `dubious` 只看**同源**
+        self.assertEqual(r["dubious"], [])
 
     def test_gukao_rows_have_empty_region_field(self):
         # 国考卷在 `PaperKey.region` 里是**空串**（`classify` 的规定），报告里才折成 `国考`
@@ -1820,6 +1840,11 @@ def build(uproots, out_dir):
         all_excluded.extend(res.excluded)
 
     # —— 按 (层级, 地区, 年份, 科目, 卷型) 聚合；原始卷名保真 ——
+    # 行里三个卷名字段的语义（裁定 R-T6-1）：
+    #   `title`   = **首个**被聚合进来的原始卷名（稳定、但**不代表全部**）
+    #   `titles`  = 逐源**全部**不同卷名（排序去重；**不是**覆盖式的单个值）
+    #   `dubious` = 非空 ⇒ 该键下**存在互不为子串的两个卷名** ⇒ **疑似撞 slug**（两份不同的卷
+    #               塌到了同一键）。段二导出会把它们合进一个文件 —— 故必须**摆到明面**，绝不静默。
     papers = {}
     for r in all_records:
         try:
@@ -1840,14 +1865,16 @@ def build(uproots, out_dir):
         })
         p["modules"][r["module"]] = p["modules"].get(r["module"], 0) + r["n_questions"]
         p["sources"].add(r["family"])
-        # **逐源保真**：同一卷键被多源提供时，各留各的原始卷名 —— 冲突页拿它当证据
-        p["titles"][r["family"]] = r["title"]
+        # **逐源保真**：同一卷键被多源提供时，各留各的原始卷名 —— 冲突页拿它当证据。
+        # **用集合收**（R-T6-1）：先前是 `p["titles"][r["family"]] = r["title"]` 的**后写覆盖**，
+        # 同源多名时只留最后一个，而 `title` 留的是第一个 ⇒ 两个字段指向两个不同卷名，且
+        # 冲突页只列跨源 ⇒ **丢卷这件事一个字都不说**。
+        p["titles"].setdefault(r["family"], set()).add(r["title"])
         if r.get("declared_questions", -1) > 0:
             p["declared"] += r["declared_questions"]
 
     rows = []
-    rep = Report(records=len(all_records),
-                 unparsed=len(all_unparsed), excluded=len(all_excluded))
+    rep = Report(unparsed=len(all_unparsed), excluded=len(all_excluded))
     for key in sorted(papers):
         p = papers[key]
         n = sum(p["modules"].values())
@@ -1859,8 +1886,12 @@ def build(uproots, out_dir):
             "modules": p["modules"], "n_questions": n,
             "declared_questions": p["declared"],
             "sources": sorted(p["sources"]),
-            "titles": {k: p["titles"][k] for k in sorted(p["titles"])},
+            "titles": {k: sorted(p["titles"][k]) for k in sorted(p["titles"])},
+            "dubious": _dubious(p["titles"]),
         })
+        # `records` 只数**真正进了 catalog 的**记录（R-T6-1 修评审 F3）：
+        # 先前是 `records=len(all_records)` ⇒ 已被改判进 unparsed/excluded 的记录**重复计入**。
+        rep.records += 1
         rep.papers += 1
         rep.questions += n
         rep.by_region[key.region or "国考"] = rep.by_region.get(key.region or "国考", 0) + 1
@@ -1870,7 +1901,7 @@ def build(uproots, out_dir):
     _dump_jsonl(os.path.join(out_dir, "excluded.jsonl"), all_excluded)
     _dump_jsonl(os.path.join(out_dir, "unparsed.jsonl"), all_unparsed)
     _write_coverage(out_dir, rows, rep)
-    _write_gaps(out_dir, rows, rep)
+    _write_gaps(out_dir, rows)
     _write_conflicts(out_dir, rows)
     return rep
 
@@ -1882,20 +1913,30 @@ def _region_rows(rows):
     （实测有 `多省联考`）。不加这一项的话，这类卷存在于 `catalog.jsonl` 却在
     `coverage.md` / `gaps.md` 里**凭空消失** —— 恰好违背「地域齐全 > 时间齐全」的第一优先级。
     """
-    seen = {r["region"] or "国考" for r in rows}
-    extra = sorted(seen - {"国考"} - set(PROVINCES))
-    return ["国考"] + list(PROVINCES) + extra
+    seen = {r["region"] or LEVEL_GUOKAO for r in rows}
+    extra = sorted(seen - {LEVEL_GUOKAO} - set(PROVINCES))
+    return [LEVEL_GUOKAO] + list(PROVINCES) + extra
+
+
+def _subject_rows(rows):
+    """覆盖/缺口两表共用的**科目**行序列 —— 同 `_region_rows` 的道理，**只是换一维**：
+
+    固定行 = `SUBJECTS`；再加 catalog 里实际出现但不在 `SUBJECTS` 的科目。
+    不加这一项，第三科目（如将来引入的其它卷种）会**在覆盖表里凭空消失**。
+    """
+    extra = sorted({r["subject"] for r in rows} - set(SUBJECTS))
+    return list(SUBJECTS) + extra
 
 
 def _write_coverage(out_dir, rows, rep):
     have = {}
     for r in rows:
-        have.setdefault((r["region"] or "国考", r["subject"]), []).append(r["year"])
+        have.setdefault((r["region"] or LEVEL_GUOKAO, r["subject"]), []).append(r["year"])
     L = ["# 覆盖矩阵（地区 × 科目）", "",
          "> 由 catalog.jsonl 实算得出。**地域齐全 > 时间齐全**：先看地区行是否空白，再看年份纵深。", "",
          "| 地区 | 科目 | 卷数 | 年份跨度 | 年份数 |", "|---|---|---:|---|---:|"]
     for region in _region_rows(rows):
-        for subject in SUBJECTS:
+        for subject in _subject_rows(rows):
             ys = have.get((region, subject), [])
             if ys:
                 L.append("| %s | %s | %d | %s–%s | %d |"
@@ -1906,13 +1947,13 @@ def _write_coverage(out_dir, rows, rep):
     _w(os.path.join(out_dir, "coverage.md"), L)
 
 
-def _write_gaps(out_dir, rows, rep):
-    have = {(r["region"] or "国考", r["subject"]) for r in rows}
+def _write_gaps(out_dir, rows):
+    have = {(r["region"] or LEVEL_GUOKAO, r["subject"]) for r in rows}
     L = ["# 缺口清单", "",
          "> 排序 = **地域优先**、年份次之、**新卷先于老卷**。", ""]
     L.append("## 一、地区级缺口（最高优先）")
     for region in _region_rows(rows):
-        missing = [s for s in SUBJECTS if (region, s) not in have]
+        missing = [s for s in _subject_rows(rows) if (region, s) not in have]
         if missing:
             L.append("- **%s**：缺 %s" % (region, "、".join(missing)))
     L.append("")
@@ -1930,6 +1971,22 @@ def _write_gaps(out_dir, rows, rep):
     _w(os.path.join(out_dir, "gaps.md"), L)
 
 
+def _dubious(titles_by_family):
+    """同源多名里，若**存在两个互不为子串**的卷名 ⇒ 这可能是**两份不同的卷**被算成了同一个键。
+
+    只看「互不为子串」是为了放过**命名变体**（`2015·北京市公考` ⊂ `2015·北京市公考《申论》题`）。
+    命中时返回**全部**卷名（排序去重），供人核对；否则 `[]`。
+    **这是「不对劲就摆到明面」的兜底**，不是判定 —— 拆键要人来看（spec :88 留的 `[, 变体]` 那一维）。
+    """
+    for fam in sorted(titles_by_family):
+        ts = sorted(titles_by_family[fam])
+        for i, a in enumerate(ts):
+            for b in ts[i + 1:]:
+                if a not in b and b not in a:
+                    return sorted({t for f in titles_by_family for t in titles_by_family[f]})
+    return []
+
+
 def _write_conflicts(out_dir, rows):
     L = ["# 同卷多源冲突", "",
          "> 同一卷键被多个来源家族同时提供时列出，**留证不裁决**。", ""]
@@ -1940,7 +1997,18 @@ def _write_conflicts(out_dir, rows):
         L.append("- `%s` ← %s（%d 题 / %d 模块）"
                  % (r["slug"], "、".join(r["sources"]), r["n_questions"], len(r["modules"])))
         for fam in r["sources"]:
-            L.append("    - `%s`：%s" % (fam, r["titles"].get(fam, "—")))
+            L.append("    - `%s`：%s" % (fam, "；".join(r["titles"].get(fam, []))))
+    L += ["", "## 同源多名（疑似撞 slug）", "",
+          "> 同一「来源家族 × 卷键」下有**互不为子串**的几个卷名 ⇒ 可能是**两份不同的卷**塌到了同一个",
+          "> `slug`。段二导出会因此把两份卷合进一个文件。**此处只列证，不裁决。**", ""]
+    dub = [r for r in rows if r["dubious"]]
+    if not dub:
+        L.append("（本次无。）")
+    for r in dub:
+        L.append("- `%s` ← %s（%d 题 / %d 模块）"
+                 % (r["slug"], "、".join(r["sources"]), r["n_questions"], len(r["modules"])))
+        for t in r["dubious"]:
+            L.append("    - `%s`" % t)
     _w(os.path.join(out_dir, "conflicts.md"), L)
 
 
@@ -1953,6 +2021,17 @@ def _w(path, lines):
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_catalog -v`
 Expected: PASS，8 tests OK
+
+> **⚠️ 修复轮 1 的追加要求（裁定 R-T6-1，施行细节见
+> `.superpowers/sdd/2026-10-09-gwy-zhenti-m1-merge/task-6-fix1-brief.md`）** ——
+> 真实数据里**两份不同的卷会撞同一个 `slug`**（实测 2016+ 行测 30 条），故本任务追加：
+> ① `naming.PTYPE_RULES` 补 spec `:141-144` 测出的后缀词表；
+> ② `titles` 值改为**排序去重列表**、行内新增 `dubious`、`conflicts.md` 增「同源多名（疑似撞 slug）」一节；
+> ③ 清掉未用 import 并把字面量 `"国考"` 换成 `LEVEL_GUOKAO`；
+> ④ `records` 只数**真正进了 catalog 的**记录；
+> ⑤ 给 `except Unparsed` 的 `kind` 兜底补**双向**护栏测试（评审实测：改成恒 `all_unparsed` 时全绿无人抓）；
+> ⑥ `_write_gaps` 去掉死参数 `rep`；⑦ 新增 `_subject_rows`（第三科目不得静默消失）。
+> 测试条数随之上升，**不许为凑数增删测试**。
 
 - [ ] **Step 5: 提交**
 
