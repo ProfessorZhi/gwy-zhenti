@@ -19,6 +19,7 @@
 - **Windows 执行约定**：所有 Python 调用用 `PYTHONIOENCODING=utf-8 PYTHONDONTWRITEBYTECODE=1 python -X utf8 …`；**带引号的长 Python 一律写成文件再跑，不用 heredoc**。
 - **D 盘是 HDD + `sfavsvc`**：读可并发，**写盘串行**；测试用 `tools/tests/fixtures/` 小样本，只有显式标注的冒烟测试才读真库。
 - **测试跑法**：`cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest discover -s tests -v`。
+- **各步 `Expected: PASS，N tests OK` 里的 N 是示意值，不是闸门** —— 闸门是「全部测试通过 + 输出无噪声」。实际条数与 N 不符时**以实际为准**，并在报告里写明，**绝不为了凑数字增删测试**。
 - **提交**：每个任务末尾一次 **本地** commit 到分支 **`feat/m1-merge`**（该分支在提交 spec/plan 时已创建，**实现时不要 `git checkout -b`**，直接 `git add` 指定文件 + `git commit`）。**绝不 push、绝不 force、绝不 `git add .`**。
 - **凭据**：本计划全链路不接触任何 token / dlink / cookie。
 
@@ -401,7 +402,7 @@ def classify(region, year, title, subject="行测"):
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_naming -v`
-Expected: PASS，8 tests OK
+Expected: PASS，9 tests OK
 
 - [ ] **Step 5: 提交**
 
