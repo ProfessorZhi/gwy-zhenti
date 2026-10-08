@@ -2,3 +2,10 @@ work/
 __pycache__/
 *.pyc
 .superpowers/
+
+# 段二交付树：由 tools/gwyzhenti 从上游再生，体积 512.7 MB / 92,169 图（F1 轮重建实测）——
+# 防误 git add -A 灌进历史（实测 git add -A 会 stage 92,597 个文件）。
+# 若决定入库（直接提交 / LFS / 分仓），删掉这三行即可。
+国考/
+省考/
+图片/
