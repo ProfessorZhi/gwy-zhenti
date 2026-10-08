@@ -1595,7 +1595,7 @@ git commit -m "feat(tools): linfukai186 adapter（四类目，行测交叉对照
 - Create: `tools/tests/test_catalog.py`
 
 **Interfaces:**
-- Consumes: `ADAPTERS`（Task 4/5）、`classify`（Task 2）、`paper_slug`（Task 1）
+- Consumes: `ADAPTERS`（Task 4/5）、`classify`（Task 2）、`paper_slug`（Task 1）、`naming.PROVINCES`（Task 5）
 - Produces:
   - `build(uproots: dict[str, str], out_dir: str) -> Report`
     （`uproots` 形如 `{"xingcezhenti": r"D:\...\xingcezhenti", "linfukai186": r"D:\...\gongkao-tiku"}`）
@@ -1738,17 +1738,15 @@ import os
 from dataclasses import dataclass, field
 
 from .model import PaperKey
-from .naming import LEVEL_GUOKAO, LEVEL_SHENGKAO, Unparsed, classify
+from .naming import LEVEL_GUOKAO, LEVEL_SHENGKAO, PROVINCES as _PROVINCES_BY_LEN, Unparsed, classify
 from .slug import paper_slug
 from .sources import ADAPTERS
 
 SUBJECTS = ("行测", "申论")
-# 省级地区全集（用于「地域齐全」度量；实测 ERRRC 出现过的 31 个 + 国考）
-PROVINCES = (
-    "北京", "天津", "河北", "山西", "内蒙古", "辽宁", "吉林", "黑龙江", "上海", "江苏",
-    "浙江", "安徽", "福建", "江西", "山东", "河南", "湖北", "湖南", "广东", "广西",
-    "海南", "重庆", "四川", "贵州", "云南", "西藏", "陕西", "甘肃", "青海", "宁夏", "新疆",
-)
+# 省级地区全集（用于「地域齐全」度量）。**单一真源**：`naming.PROVINCES`（Task 5 引入，
+# 那里按**长度倒序**是为了最长匹配）。这里 `sorted()` 重排成**码点序**，只为覆盖表的行序
+# 稳定可复现 —— 两份硬编码的省份表迟早会漂移，故不另抄一份。
+PROVINCES = tuple(sorted(_PROVINCES_BY_LEN))
 
 
 @dataclass
