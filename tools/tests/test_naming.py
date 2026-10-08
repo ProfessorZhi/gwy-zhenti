@@ -5,7 +5,9 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from gwyzhenti.naming import classify, Unparsed      # noqa: E402
+from gwyzhenti.naming import (                       # noqa: E402
+    classify, Unparsed, region_exclusion, region_from_text,
+)
 from gwyzhenti.slug import paper_slug                # noqa: E402
 
 
@@ -144,3 +146,29 @@ class TestUnparsedKind(unittest.TestCase):
         # 默认必须落在 UNPARSED（缺陷侧，被 G1 盯）；默认成 EXCLUDED 会让新缺陷
         # **静默**落进 excluded.jsonl。
         self.assertEqual(Unparsed("某个新理由", "某卷").kind, Unparsed.UNPARSED)
+
+
+class TestRegionFromText(unittest.TestCase):
+    def test_longest_match_beats_truncation(self):
+        self.assertEqual(region_from_text("黑龙江公务员录用考试《行测》题"), "黑龙江")
+        self.assertEqual(region_from_text("9月吉林公务员考试《行测》甲级"), "吉林")
+
+    def test_region_may_sit_after_a_date_code(self):
+        self.assertEqual(region_from_text("423四川公务员考试《行测》题"), "四川")
+        self.assertEqual(region_from_text("0822河南公务员考试《行测》题"), "河南")
+
+    def test_guokao_variants(self):
+        self.assertEqual(region_from_text("国家公务员考试行政执法"), "国考")
+        self.assertEqual(region_from_text("国家公考《申论》题（副省级）"), "国考")
+
+    def test_liankao_without_province_is_its_own_value(self):
+        self.assertEqual(region_from_text("公务员多省联考《行测》题"), "多省联考")
+
+    def test_unknown_returns_none(self):
+        self.assertIsNone(region_from_text("公安院校联考"))
+
+    def test_exclusion_is_checked_before_region(self):
+        self.assertEqual(region_exclusion("深圳市公务员考试《行测》题"), "深圳市考")
+        self.assertEqual(region_exclusion("广州市公务员考试《行测》真题"), "广州市考")
+        self.assertEqual(region_exclusion("2025·四川省考_选调公务员录用考试"), "选调")
+        self.assertIsNone(region_exclusion("黑龙江省公务员考试"))

@@ -6,7 +6,61 @@ from dataclasses import dataclass
 from .model import LEVEL_GUOKAO, LEVEL_SHENGKAO, PaperKey
 
 # 实测存在的非国省考地区值
-EXCLUDE_REGIONS = {"选调", "深圳市考", "广州市考"}
+EXCLUDE_REGIONS = {"选调", "深圳市考", "广州市考", "公安院校"}
+
+# 卷名里出现「地区」时的排除族。**值必须是 `EXCLUDE_REGIONS` 的成员** ——
+# 这样 adapter 只需把 `region_exclusion()` 的结果交给 `classify`，排除逻辑只有一处。
+REGION_EXCLUDE_RULES = (
+    (re.compile(r"选调"), "选调"),
+    (re.compile(r"深圳"), "深圳市考"),
+    (re.compile(r"广州"), "广州市考"),
+    (re.compile(r"公安院校"), "公安院校"),
+)
+# 23 省 + 5 自治区 + 4 直辖市。**按长度倒序**：保证 `黑龙江` 不被更短的别名先命中。
+# 深圳/广州是**市**不是省 —— 它们只走上面的排除族，不进这张表。
+PROVINCES = tuple(sorted((
+    "北京", "天津", "上海", "重庆",
+    "河北", "山西", "辽宁", "吉林", "黑龙江", "江苏", "浙江", "安徽", "福建",
+    "江西", "山东", "河南", "湖北", "湖南", "广东", "海南", "四川", "贵州",
+    "云南", "陕西", "甘肃", "青海",
+    "内蒙古", "广西", "西藏", "宁夏", "新疆",
+), key=len, reverse=True))
+GUOKAO_TEXT = re.compile(r"国家公务员|国家公考|国考")
+LIANKAO_TEXT = re.compile(r"多省联考|联考")
+
+
+def region_exclusion(text):
+    """卷名文本 → 要排除的地区值；没有则 `None`。"""
+    for rx, value in REGION_EXCLUDE_RULES:
+        if rx.search(text):
+            return value
+    return None
+
+
+def region_from_text(text):
+    """卷名文本 → 地区。**全串最长匹配，绝不切片。**
+
+    实测卷名里地区**不一定在开头**（`9月吉林公务员考试《行测》甲级`、
+    `公务员录用考试《行测》甘肃真题`、`2020年度浙江省…`），切 `[:2]` 会把 `黑龙江` 截成
+    `黑龙`、把联考日期码 `0822` 截成 `08`；而 `classify` **不校验省份**（只在 `EXCLUDE_REGIONS`
+    三值上抛错）⇒ 脏地区会**静默写进 catalog**。故只认词表命中，认不出返回 `None`，
+    由调用方抛 `Unparsed`。
+    """
+    # 排除族**不是地区** —— 认不出（返回 `None`），由调用方的 `region_exclusion()` 负责给出
+    # 排除值。缺这道闸 `公安院校联考` 会被下面误判成 `多省联考`（实测该串属排除族，
+    # 且 adapter 的顺序是 `region_exclusion() or region_from_text()`，故此处返回 None 不影响分流）。
+    if region_exclusion(text):
+        return None
+    if GUOKAO_TEXT.search(text):
+        return LEVEL_GUOKAO
+    for p in PROVINCES:
+        if p in text:
+            return p
+    if LIANKAO_TEXT.search(text):
+        # 无省份的多省联考卷（实测 `2016·公务员多省联考`）。**不猜省份** —— 填一个
+        # 非省份的类别值，catalog 里一眼可辨。
+        return "多省联考"
+    return None
 # 标题里的排除词（实测样本：法检统一考录、司法所、事业编、职测、综应、模考）
 EXCLUDE_TITLE = re.compile(r"选调|法检|司法所|公检法|事业编|事业单位|职测|综应|模考|公开课|模拟")
 
@@ -104,13 +158,19 @@ class Classified:
 
 def classify(region, year, title, subject="行测"):
     title = title or ""
-    if not region:
-        raise Unparsed("地区字段为空", title)
+    # **检查顺序是有意的**：排除族 → 标题排除词 → 地区为空。
+    # 理由（Task 5 修复轮实测）：模考/选调这类卷是 spec §2 的**非目标**（有意排除），
+    # 而它们常常**根本没有地区**（实测 `2021·省考行测申论联合终极模考大赛`，共 56 条）。
+    # 若把「地区为空」放在最前，这些卷会在走到标题判断**之前**就抛错 ⇒ 落进
+    # `unparsed`（**G1 盯的缺陷桶**），而 `unparsed` 长期非零会让人习惯性忽略它 ——
+    # 缺陷桶就废了。`模考` 由 `EXCLUDE_TITLE` 判定，故必须让它**先**有机会命中。
     if region in EXCLUDE_REGIONS:
         raise Unparsed("非国省考地区: %s" % region, title, kind=Unparsed.EXCLUDED)
     m = EXCLUDE_TITLE.search(title)
     if m:
         raise Unparsed("试卷名含排除词: %s" % m.group(0), title, kind=Unparsed.EXCLUDED)
+    if not region:
+        raise Unparsed("地区字段为空", title)
 
     level = LEVEL_GUOKAO if region == LEVEL_GUOKAO else LEVEL_SHENGKAO
     ptype = _ptype(region, title)
