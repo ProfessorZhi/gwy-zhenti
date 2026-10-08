@@ -147,7 +147,7 @@
 （1,294 份 PDF、**0 个 md**、1.09 GB，**2003 年起**，含云南/广东/广州/浙江 ⇒ 老年份纵深）、
 `Yaoyuan-Zhang319/AdministrativeAptitudeTest`。以上均**未经本机复核**。
 
-### 6.6 实测判为不接入（避免以后重复搜）（未经本机复核——本机无副本）
+### 6.6 判为不接入（避免以后重复搜）（**未经本机复核** —— 本机无这些仓的副本）
 
 `zhangxiangliang/civil-service-exam`（984★，专业大类**攻略**）、
 `kuriv/civil-service-exam`（1005★，知识**思维导图**）、`dfds2989-source/kaogong-materials`（推广落地页）、
