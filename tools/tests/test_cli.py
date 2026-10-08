@@ -129,13 +129,82 @@ class TestCollidedAndSkippedAreSeparateLines(_CliCase):
         # 两行都在，且各只一次
         self.assertEqual(len(collided), 1, out)
         self.assertEqual(len(skipped), 1, out)
-        # collided 的计数为 1（只有 1 条卷名被撞掉）
-        self.assertIn("1", collided[0])
+        # **整行断言**（原为 `assertIn("1", ...)` —— 计数误成 10 / 21 仍会过，太弱）：
+        # 串取自 `cli.cmd_export` 的实际 `print`（`"  撞 slug 未导的卷名 %d 条（详见报告）"`）。
+        self.assertEqual(collided[0], "  撞 slug 未导的卷名 1 条（详见报告）")
+        self.assertEqual(skipped[0], "  跳过 1 项（详见报告）")
         # **分行**：两句互不为对方的一部分
         self.assertNotIn("跳过", collided[0])
         self.assertNotIn("撞 slug", skipped[0])
         # 只导了排序后第一个卷名，第二卷名未被导出
         self.assertTrue(os.path.exists(os.path.join(repo, "省考/四川/2016/行测-统考.md")))
+
+
+class TestGateSubcommand(_CliCase):
+    """整改 F2·G：`cli.py` 的 `gate` 子命令此前**没有**回归（Task 11 复审 Minor）。
+
+    覆盖三件事：干净夹具仓 ⇒ 返回 0；弄坏一卷 ⇒ 返回 1（接线到 `gates.run_all` 且**退出码**可判）；
+    `--limit` 语义（缺省 `0` = 不限、`--limit 1` = 截断）**不改判据**，两者都返回 0。
+    """
+
+    def _exportable_catalog(self):
+        # 2 行**都可导出**（都有 xingcezhenti 正文），避免「跳过」干扰闸门对账
+        return self._write_catalog([
+            _row("省考-四川-2016-行测-统考", level="省考", region="四川", year="2016",
+                 subject="行测", ptype="统考", modules={"常识判断": 1, "资料分析": 1},
+                 sources=["linfukai186", "xingcezhenti"], titles={"xingcezhenti": _SICHUAN_TITLES}),
+            _row("省考-江苏-2020-行测-A类", level="省考", region="江苏", year="2020",
+                 subject="行测", ptype="A类", modules={"资料分析": 1},
+                 sources=["xingcezhenti"], titles={"xingcezhenti": _JIANGSU_TITLES}),
+        ])
+
+    def _clean_repo(self):
+        cat = self._exportable_catalog()
+        repo = os.path.join(self.tmp, "repo-gate")
+        code, _ = self._run_export(cat, repo)
+        self.assertEqual(code, 0)
+        return cat, repo
+
+    def _run_gate(self, catalog_dir, repo, *extra):
+        argv = ["gate", "--catalog", catalog_dir, "--upstream", FIX, "--repo", repo]
+        argv += list(extra)
+        s = io.StringIO()
+        with redirect_stdout(s):
+            code = cli.main(argv)
+        return code, s.getvalue()
+
+    def test_gate_returns_zero_on_clean_fixture_repo(self):
+        cat, repo = self._clean_repo()
+        code, out = self._run_gate(cat, repo)
+        self.assertEqual(code, 0, out)
+        self.assertIn("[OK] G1", out)
+        self.assertIn("[OK] G6", out)
+
+    def test_gate_returns_one_when_a_paper_is_broken(self):
+        # 破坏 A1 那种：把第 1 题题号改成第 8 题 ⇒ G1 判负 ⇒ 退出码 1
+        cat, repo = self._clean_repo()
+        md = os.path.join(repo, "省考", "四川", "2016", "行测-统考.md")
+        with io.open(md, encoding="utf-8") as fh:
+            text = fh.read()
+        with io.open(md, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(text.replace("## 第 1 题", "## 第 8 题", 1))
+        code, out = self._run_gate(cat, repo)
+        self.assertEqual(code, 1, out)
+        self.assertIn("[FAIL] G1", out)
+
+    def test_gate_limit_defaults_to_unlimited_and_limit_one_still_passes(self):
+        # `--limit` 缺省（0）= 不限；`--limit 1` = 截断（只对账 catalog 第 1 行 / 前 1 个 md）。
+        # **它不改判据**，只改**对账范围** ⇒ 干净仓上两者都必须返回 0。
+        cat, repo = self._clean_repo()
+        code0, out0 = self._run_gate(cat, repo)                       # 不传 --limit ⇒ 0
+        self.assertEqual(code0, 0, out0)
+        code0b, out0b = self._run_gate(cat, repo, "--limit", "0")      # 显式 0 ⇒ 同「不限」
+        self.assertEqual(code0b, 0, out0b)
+        self.assertIn("本次对账 2", out0b)                              # 0 ⇒ 全量对账
+        code1, out1 = self._run_gate(cat, repo, "--limit", "1")
+        self.assertEqual(code1, 0, out1)
+        self.assertIn("本次对账 1", out1)                              # 1 ⇒ 截断
+        self.assertIn("limit 生效", out1)
 
 
 if __name__ == "__main__":

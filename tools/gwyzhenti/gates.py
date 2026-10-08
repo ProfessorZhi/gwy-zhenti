@@ -221,6 +221,10 @@ def _g5(md_path, row, upstream_xingce, repo_root):
 def _g6(catalog_dir, upstream_xingce, repo_root, mds, limit, failed):
     """覆盖账（**catalog → 落盘**的反向对账）。判据对全量成立：
 
+      * **导出树为空 ⇒ 直接判负**（整改 F2·B / 评审 I5）。空树上 G1–G5 会「真空通过 0 卷」、
+        而 G6 在 `limit` 生效时又跳过「数相等」⇒ 六闸**全绿**，给的是**假的安心**
+        （真实事故形态：`--limit 20` 切到的前 20 行全是无正文的 `linfukai186` 卷 ⇒ 落盘 0 md）。
+        把它并进 G6 作为**前置判据**（不新增第 7 条闸门 ⇒ 报告与计划的 G1–G6 命名不变）。
       * catalog 里**取得到正文**的每一卷，都必须在导出树里落盘（抓**整卷静默丢失** —— 本任务最贵的事故）；
       * 不设 `limit` 时，落盘 md 数必须**恰好等于**可导出卷数（抓多出来的 / 少掉的卷）。
 
@@ -230,6 +234,10 @@ def _g6(catalog_dir, upstream_xingce, repo_root, mds, limit, failed):
     「已入库」只指**通过 G1–G5** 的卷（spec §7 G6），故在此如实报出。
     """
     rows = export.load_catalog(catalog_dir)
+    if not mds:
+        # 判负必须体现在 `GatesReport`（不能只 print）：G6 判负 ⇒ `rep.ok` 由 `run_all` 汇总为 False。
+        return False, ("导出树为空（`国考/`、`省考/` 下 **0 个 md**）—— 空树一律判负"
+                       "（`limit=%s` 亦然）；catalog %d 卷" % (limit, len(rows)))
     scope = rows[:limit] if limit else rows
     exportable, absent = 0, []
     for r in scope:

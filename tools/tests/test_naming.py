@@ -5,8 +5,10 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from gwyzhenti import naming                         # noqa: E402
 from gwyzhenti.naming import (                       # noqa: E402
-    classify, Unparsed, region_exclusion, region_from_text,
+    EXCLUDE_TITLE, PTYPE_RULES, PTYPE_VALUES, classify, Unparsed,
+    region_exclusion, region_from_text,
 )
 from gwyzhenti.slug import paper_slug                # noqa: E402
 
@@ -153,6 +155,91 @@ class TestUnparsedKind(unittest.TestCase):
         # 默认必须落在 UNPARSED（缺陷侧，被 G1 盯）；默认成 EXCLUDED 会让新缺陷
         # **静默**落进 excluded.jsonl。
         self.assertEqual(Unparsed("某个新理由", "某卷").kind, Unparsed.UNPARSED)
+
+
+class TestPtypeTableGuards(unittest.TestCase):
+    """整改 F2·F / 裁定 R-T6-2：卷型词表**表驱动**护栏 —— 新增/删除 `PTYPE_RULES` 条目都会被抓。
+
+    旧测试只对约 7 个卷型值有断言 ⇒ **其余条目删掉也全绿**（`_match_value` 少一条分支无人知，
+    后果是卷型判错 ⇒ 撞 slug ⇒ 丢卷）。这里改成遍历**全表**。
+    """
+
+    @staticmethod
+    def _sample(rx):
+        """给一条规则造一个 `rx.fullmatch` 能命中的 token（取**第一个**候选）。
+
+        `PTYPE_RULES` 的每条模式都是「字面量 或 `|` 连接的字面量」，故第一个候选即合格 token。
+        """
+        return rx.pattern.split("|")[0]
+
+    def test_every_rule_round_trips_through_match_value(self):
+        for rx, value in PTYPE_RULES:
+            token = self._sample(rx)
+            self.assertTrue(rx.fullmatch(token), (rx.pattern, token))
+            self.assertEqual(naming._match_value(token), value, (rx.pattern, token))
+
+    def test_ptype_values_equals_the_rule_values(self):
+        self.assertEqual(PTYPE_VALUES, frozenset(v for _, v in PTYPE_RULES))
+
+    def test_no_dead_value_in_ptype_values(self):
+        # 每个已声明值都必须**至少能被某个 token 命中**（否则是个永远判不出来的死值）
+        reachable = {naming._match_value(self._sample(rx)) for rx, _ in PTYPE_RULES}
+        self.assertNotIn(None, reachable)
+        self.assertEqual(reachable, set(PTYPE_VALUES))
+
+    def test_rules_are_ordered_so_longer_suffixes_win(self):
+        # 顺序是判据的一部分（`县级以上` 必须早于 `县级`、`定向乡镇` 早于 `乡镇`）—— 钉住这两处
+        order = [rx.pattern for rx, _ in PTYPE_RULES]
+        self.assertLess(order.index("县级以上"), order.index("县级卷|县级"))
+        self.assertLess(order.index("定向乡镇"), order.index("乡镇卷|乡镇"))
+        self.assertLess(order.index("县乡卷|县乡"), order.index("县级卷|县级"))
+
+
+class TestExclusionWordGuards(unittest.TestCase):
+    """整改 F2·F·4：F1 新增排除词（`法院` / `检察院` / `招警`）的**单元行为**护栏。
+
+    （真库零误伤由 F1 的实跑验证；此处锁住单元行为，防词表被误删/误改。）
+    """
+
+    def test_f1_exclusion_words_raise_excluded_kind(self):
+        for region, year, title in (
+            ("青海", "2019", "2019年青海省法院、检察院录用考试《行测》题"),
+            ("江西", "2018", "江西省2018年市县两级法院、检察院统一考录公务员笔试《行测》题"),
+            ("四川", "2007", "2007年9月四川省招警考试《行测》题"),
+        ):
+            with self.assertRaises(Unparsed) as cm:
+                classify(region, year, title)
+            self.assertEqual(cm.exception.kind, Unparsed.EXCLUDED, title)
+
+    def test_gongan_juan_is_a_legit_shengkao_post_not_excluded(self):
+        # **反面**：`公安卷` 是省考的**公安岗位**卷（正当省考），F1 刻意**不收**单字「公安」——
+        # 收「公安」会把它误伤掉。词表若被改成含「公安」，本条立刻红。
+        title = "2017·辽宁公务员考试《行测》真题公安卷"
+        self.assertIsNone(EXCLUDE_TITLE.search(title), "「公安卷」不得命中排除词（会误伤正当省考）")
+        c = classify("辽宁", "2017", title)
+        self.assertEqual(c.key.level, "省考")
+        self.assertEqual(c.key.region, "辽宁")
+
+
+class TestMemoryZhengliVariant(unittest.TestCase):
+    """整改 F2·F·5：F1 新增的 `网友回忆(整理)?版` 性质词 —— 走**性质**，不逐字回落成卷型。
+
+    旧词表只认 `网友回忆版` ⇒ `网友回忆整理版` 既非性质也非卷型 ⇒ `_ptype` 逐字回落
+    ⇒ 卷型真的成了 `网友回忆整理版` ⇒ 与 `统考` 分成两个键 ⇒ 同一份卷交付两遍（F1 的 C2）。
+    """
+
+    def test_zhengli_variant_is_a_nature_not_a_ptype_value(self):
+        c = classify("广西", "2016", "2016年423联考《行测》题（广西网友回忆整理版）")
+        self.assertEqual(c.nature, "网友回忆版")
+        self.assertNotEqual(c.key.ptype, "网友回忆整理版")
+        self.assertIn(c.key.ptype, PTYPE_VALUES | {"统考"})
+
+    def test_zhengli_variant_collapses_into_the_same_key_as_the_plain_juan(self):
+        # 与 `（广西卷）` 必须**归一到同一个键**（否则就是「同卷两交付」）
+        a = classify("广西", "2016", "2016年423联考《行测》题（广西网友回忆整理版）")
+        b = classify("广西", "2016", "2016年423联考《行测》题（广西卷）")
+        self.assertEqual(a.key, b.key)
+        self.assertEqual(a.key.ptype, "统考")
 
 
 class TestRegionFromText(unittest.TestCase):
