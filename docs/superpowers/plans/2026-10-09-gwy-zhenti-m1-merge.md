@@ -63,7 +63,7 @@
 **C. 已判定的范围事实**
 
 - `zzcc-nb/gongkao-tiku`：`行测题库/`、`职测题库/` **为空**（README 自述「待采集」）⇒ **申论源，归 M3**，不进 M1。
-- `shiwuooo/shangantong-papers-v2-c1/c2`：**行测源（非申论）**，每卷 `paper_*/{index.html,index_static.html,assets/*.webp}`，共 **498 卷**、**2008–2026**（2016+ 331 卷），`<title>` 即卷名；地区覆盖 30 省 + 国考，**独缺西藏**（ERRRC 有）⇒ **不提升「地域齐全」**，价值在交叉验证与老年份纵深。**归 M2，M1 不接。**
+- `shiwuooo/shangantong-papers-v2-c1/c2`：**行测源（非申论）**，每卷 `paper_*/{index.html,index_static.html,assets/*.webp}`，共 **496 卷**（Task 12 本机实测：c1 310 + c2 186；原稿写 498 是**误记**）、**2008–2026**，`<title>` 即卷名；地区覆盖 30 省 + 国考，**独缺西藏**（ERRRC 有）⇒ **不提升「地域齐全」**，价值在交叉验证与老年份纵深。**归 M2，M1 不接。**
 - `linfukai186` 的**申论侧在 M1 接入 catalog**：M1 的定义是「段一接入全部候选源（行测 + 申论）」，漏掉 `shengkao-shenlun`
   的 686 份真题，`coverage.md` 的申论列就会是假空白，M3 还得重做段一。**`zzcc-nb` 仍留 M3** —— 它的粒度是逐题、
   与 `linfukai186` 的逐卷不同层，适配器写法要等 M3 的导出设计定了再定；段一是**可增量重跑**的，后加 adapter 只是再跑一次扫描，不是"重做"。
@@ -3210,7 +3210,7 @@ git commit -m "feat(tools): export / gate 子命令"
     ⇒ **归 M2**（两项价值：① 补图候选 ② 细粒度考点标签）。⚠️ 238 张是**两仓平行渲染**的差集，
     **不等于「主源丢了 238 张」**，M2 必须逐题比对再定，不得直接宣称。
   - `zzcc-nb/gongkao-tiku`（**行测题库为空**，实为申论源，归 M3）。
-  - `shiwuooo/shangantong-papers-v2-c1/c2`（**行测**源，498 卷，2008–2026，HTML+webp，**独缺西藏**
+  - `shiwuooo/shangantong-papers-v2-c1/c2`（**行测**源，**496 卷**（本机实测 c1 310 + c2 186），2008–2026，HTML+webp，**独缺西藏**
     ⇒ 不提升地域齐全，留作交叉验证与老年份纵深，归 M2）。
 - **主源的图片来源底账（正面结论，须进交付报告）**：`xingcezhenti` 自带的 `图片缺失清单.txt`
   **2 行**（`90-图片/公式图/formula-4daf9a3762c10376.png` 与 `formula-2c7a9ff6774e3af2.png`）。
