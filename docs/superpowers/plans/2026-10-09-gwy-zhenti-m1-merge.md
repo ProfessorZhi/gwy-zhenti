@@ -630,6 +630,8 @@ git commit -m "feat(tools): 试卷名解析表（层级/卷型/性质/排除）"
 **官方解析**
 
 <p>A项错误。B项正确，故正确答案为B。</p>
+
+---
 ```
 
 `tools/tests/fixtures/xingcezhenti/06-资料分析/2020年江苏省公务员录用考试《行测》题（A类）.md`：
@@ -679,6 +681,7 @@ from gwyzhenti import mdread      # noqa: E402
 
 FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures", "xingcezhenti")
 ZL = os.path.join(FIX, "06-资料分析", "2016年423联考《行测》题（四川卷）.md")
+CS = os.path.join(FIX, "02-常识判断", "2016年423联考《行测》题（四川卷）.md")
 
 
 def load(path):
@@ -764,6 +767,20 @@ class TestMdRead(unittest.TestCase):
 
     def test_correct_option_none_when_no_answer(self):
         self.assertIsNone(mdread.correct_option(["### 第 1 题", "无答案"]))
+
+    def test_commonsense_fixture_uses_h2_and_terminating_separator(self):
+        # 02-常识判断 真源用 `## 第 N 题`（两个井号）且**末块也以 `---` 收尾** —— 这是
+        # `QHEAD` 的 `#{2,4}` 与 `split_answer` 的 `---` 切分在真实 02 文件上的形态；
+        # 若 fixture 末块漏了 `---`，答案会整块落进题干、`ans` 为空（本测试正是为此而设）
+        text = load(CS)
+        self.assertEqual(mdread.count_questions(text), 1)
+        _, blocks = mdread.split_question_blocks(text)
+        self.assertEqual(len(blocks), 1)
+        self.assertTrue(blocks[0][0].startswith("## 第 1 题"))
+        stem, ans, tail = mdread.split_answer(blocks[0])
+        self.assertTrue(any(ln.startswith("**答案**：B") for ln in ans))
+        self.assertTrue(any("官方解析" in ln for ln in ans))
+        self.assertEqual(tail, [])
 ```
 
 - [ ] **Step 3: 跑测试确认失败**
@@ -873,7 +890,7 @@ def correct_option(block):
 - [ ] **Step 5: 跑测试确认通过**
 
 Run: `cd D:/projects/gwy-zhenti/tools && PYTHONIOENCODING=utf-8 python -X utf8 -m unittest tests.test_mdread -v`
-Expected: PASS，11 tests OK
+Expected: PASS，12 tests OK
 
 - [ ] **Step 6: 提交**
 
