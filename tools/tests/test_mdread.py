@@ -60,6 +60,28 @@ class TestMdRead(unittest.TestCase):
         self.assertTrue(any("公路最大" in ln for ln in ans2))
         self.assertEqual(tail2, [])
 
+    def test_tail_drops_trailing_blanks_but_keeps_material(self):
+        # 尾行是 Task 8 把 `## 材料 N` 及其图片**送回正文**的通道 —— 只丢尾随空行，
+        # 行内空行与内容行必须原样保留（`split("\n")` 会为文件末尾换行多产一个 ""）
+        block = ["### 第 1 题　<sub>qid 1 · 综合</sub>",
+                 "- **A**. 340.2",
+                 "**答案**：A",
+                 "",
+                 "---",
+                 "",
+                 "## 材料 2",
+                 "",
+                 '<img width="700px" height="173px" src="../90-图片/题目图/154428b1a538147.png" />',
+                 "",
+                 ""]
+        stem, ans, tail = mdread.split_answer(block)
+        self.assertEqual(stem[:2], ["### 第 1 题　<sub>qid 1 · 综合</sub>", "- **A**. 340.2"])
+        self.assertEqual(ans, ["**答案**：A", "", "---"])
+        self.assertEqual(tail, ["",
+                                "## 材料 2",
+                                "",
+                                '<img width="700px" height="173px" src="../90-图片/题目图/154428b1a538147.png" />'])
+
     def test_strip_leak_removes_checkmark_only(self):
         lines = ["- **B**. 353.9　✅", "- **A**. 340.2", "**答案**：B"]
         self.assertEqual(mdread.strip_leak(lines),
