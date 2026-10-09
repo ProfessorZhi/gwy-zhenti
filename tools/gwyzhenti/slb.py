@@ -60,9 +60,12 @@ MIN_CHARS = 2000
 # 交付下限（与 `expect` 的 `--since` 一致）。
 MIN_YEAR = "2016"
 
-# 非国省考类 → `reason` 细分标签（**按序**，先中先出）。
-VERIFY_REASONS = (("选调", "选调"), ("招警", "招警"), ("政法干警", "政法干警"),
-                  ("公安院校", "公安院校联考"), ("到基层", "基层项目"))
+# 非国省考类 → `reason` 细分标签。**词集以 `expect.VERIFY_WORDS` 为键构建**（修轮 1 #3）：
+# 不另立一份词表，避免与共享层漂移；本表只负责「词 → 人读标签」。
+_VERIFY_LABELS = {"选调": "选调", "招警": "招警", "公安院校": "公安院校联考",
+                  "政法干警": "政法干警", "到基层": "基层项目"}
+VERIFY_REASONS = tuple((w, _VERIFY_LABELS[w]) for w in expect.VERIFY_WORDS)
+assert set(VERIFY_REASONS) and all(w in expect.VERIFY_WORDS for w, _l in VERIFY_REASONS)
 
 # `work/slb-INDEX.jsonl` 每行的字段，**固定 15 个且顺序固定**（简令 S2）。
 INDEX_FIELDS = ("tid", "file", "title", "province_raw", "exam_type_raw", "year", "chars",
@@ -124,7 +127,7 @@ def extract_body(rest):
 
 
 def multi_ptypes(title):
-    """标题里命中的**全部** distinct 规范卷型（`>=2` ⇒ **合卷**，需在 `校验状态` 标注）。
+    """标题里命中的**全部** distinct 规范卷型。
 
     **别名按最长优先**（`expect.ALIASES` 已排序）：被更长命中**包含**的短语**丢弃**
     （否则 `副省级` 里的 `省级` 会被误判成第二个卷型）。
@@ -136,6 +139,23 @@ def multi_ptypes(title):
             continue
         kept.append(a)
     return sorted({expect.ALIAS_TO_CANON[a] for a in kept})
+
+
+# 显式「多卷并列」分隔符（修轮 1 #2）——「合卷」**只**由此判定。
+_HEJUAN_SEP = re.compile(u"[；;、+＋/／]")
+
+
+def hejuan_marker(title):
+    """标题 → **合卷**的 distinct 卷型列表；**非合卷 ⇒ `[]`**（修轮 1 #2）。
+
+    判据 = **显式多卷分隔符**（`；`/`、`/`+` …）**且**命中 `>=2` 个 distinct 卷型。
+    **不得**仅凭「命中 ≥2 个别名」推断：`A卷：省直`（字母卷 + 层级限定）不是合卷，
+    `州市`（`广州市` 的子串）等**层级词**也不是。
+    """
+    if not _HEJUAN_SEP.search(title or ""):
+        return []
+    mp = multi_ptypes(title)
+    return mp if len(mp) >= 2 else []
 
 
 def count_questions(body):
@@ -259,7 +279,12 @@ def plan_paths(rows):
         rel = cand_relpath(row)
         if rel in used:
             base, ext = os.path.splitext(rel)
-            rel = "%s__t%s%s" % (base, row["tid"], ext)
+            cand = "%s__t%s%s" % (base, row["tid"], ext)
+            n = 1
+            while cand in used:      # 同 tid 同键两行 ⇒ 后缀自身也会撞（修轮 1 #5）
+                n += 1
+                cand = "%s__t%s_%d%s" % (base, row["tid"], n, ext)
+            rel = cand
         used.add(rel)
         out.append((row, rel))
     return out
@@ -307,8 +332,8 @@ def write_candidates(src_dir, work_dir, rows):
         if base != rel:
             collided.append((row["tid"], base, rel))
             notes.append(u"同格重名，文件名加 tid 后缀（不覆盖）")
-        mp = multi_ptypes(row["title"])
-        if len(mp) >= 2:
+        mp = hejuan_marker(row["title"])
+        if mp:
             notes.append(u"源标题含合卷标记（%s 同卷）" % u"/".join(mp))
         fm, body, crawled = _load_body(src_dir, row)
         n, method = count_questions(body)
@@ -332,7 +357,8 @@ def write_candidates(src_dir, work_dir, rows):
 def _load_body(src_dir, row):
     """源 md → `(fm, body, crawled_at)`。"""
     p = os.path.join(src_dir, row["file"])
-    text = io.open(p, encoding="utf-8", newline="").read()
+    with io.open(p, encoding="utf-8", newline="") as fh:
+        text = fh.read()
     fm, rest = split_fm(text)
     _h1, body = extract_body(rest)
     return fm, body, fm.get("crawled_at", "")

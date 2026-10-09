@@ -169,6 +169,41 @@ class TestBody(unittest.TestCase):
         self.assertEqual(slb.multi_ptypes(u"2016年国家公务员考试《申论》（副省级）试题"), ["副省级"])
         self.assertEqual(slb.multi_ptypes(u"2022年内蒙古公务员考试《申论》试题（内蒙古盟市卷）"), ["盟市"])
 
+    def test_hejuan_marker_true_positive(self):
+        # 真合卷：显式分隔符 + >=2 卷型
+        self.assertEqual(slb.hejuan_marker(u"2019年深圳市公务员考试《申论》试题（一卷；二卷）"),
+                         ["一卷", "二卷"])
+        self.assertEqual(slb.hejuan_marker(u"2019年深圳市公务员考试《申论》试题（A卷+B卷）"),
+                         ["A类", "B类"])
+        self.assertEqual(slb.hejuan_marker(u"2018年深圳市公务员考试《申论》试题（A卷、B卷）"),
+                         ["A类", "B类"])
+
+    def test_hejuan_marker_level_qualified_not_hejuan(self):
+        """修轮 1 #2：`A卷：省直`（字母卷 + 层级限定）**不是**合卷 ⇒ 不得写「同卷」说明。"""
+        # 原始信号确实命中 2 个规范卷型（A类 + 省直），但**无分隔符** ⇒ 不构成合卷
+        self.assertEqual(slb.multi_ptypes(u"2019年黑龙江公务员考试《申论》试题（A卷：省直）"),
+                         ["A类", "省直"])
+        self.assertEqual(slb.hejuan_marker(u"2019年黑龙江公务员考试《申论》试题（A卷：省直）"), [])
+        self.assertEqual(slb.hejuan_marker(u"2020年浙江公务员考试《申论》试题（A卷）"), [])
+        self.assertEqual(slb.hejuan_marker(u"2016年国家公务员考试《申论》（副省级）试题"), [])
+
+    def test_hejuan_note_only_for_real_hejuan(self):
+        """修轮 1 #2（端到端）：`A卷：省直` 的候选 md **不得**写合卷说明；真合卷仍标注。"""
+        recs = [_rec(50, u"2019年黑龙江公务员考试《申论》试题（A卷：省直）", file="hlj_a.md"),
+                _rec(51, u"2019年深圳市公务员考试《申论》试题（一卷；二卷）", file="sz_12.md")]
+        d = _src_dir(recs)
+        work = tempfile.mkdtemp()
+        rows = slb.build_index(slb.read_index(d))
+        out, _coll = slb.write_candidates(d, work, rows)
+        self.assertEqual(len(out), 2)
+        note = {}
+        for _row, rel, ap in out:
+            with io.open(ap, encoding="utf-8") as fh:
+                fm, _rest = slb.split_fm(fh.read())
+            note[_row["tid"]] = fm[u"校验状态"]
+        self.assertNotIn(u"合卷", note["50"])      # A卷：省直 ⇒ 非合卷
+        self.assertIn(u"合卷", note["51"])         # 一卷；二卷 ⇒ 合卷
+
 
 class TestPaths(unittest.TestCase):
     def test_cand_relpath_shengkao(self):
@@ -191,6 +226,16 @@ class TestPaths(unittest.TestCase):
         self.assertEqual(len(set(rels)), 2)
         self.assertTrue(any(rel.endswith("__t33.md") for rel in rels))
         self.assertEqual(plan[0][1], os.path.join("省考", "江苏", "2019", "申论-A类.md"))
+
+    def test_plan_paths_same_tid_same_key_no_overwrite(self):
+        """修轮 1 #5：同 `tid` 同键两行 ⇒ `__t<tid>` 自身也会撞 ⇒ 必须再递增（不覆盖）。"""
+        a = slb.classify(_rec(77, u"2019年江苏公务员考试《申论》试题（A卷）"))
+        b = slb.classify(_rec(77, u"2019年江苏公务员考试《申论》试题（A类）"))
+        plan = slb.plan_paths([a, b])
+        rels = [rel for _r, rel in plan]
+        self.assertEqual(len(rels), 2)
+        self.assertEqual(len(set(rels)), 2)          # 两份路径互不相同
+        self.assertNotEqual(rels[0], rels[1])
 
 
 class TestRenderCandidate(unittest.TestCase):
@@ -271,8 +316,8 @@ class TestEndToEnd(unittest.TestCase):
         rows = slb.build_index(records)
         slb.write_index(os.path.join(work, "slb-INDEX.jsonl"), rows)
         # 索引行数 == 源记录数；采用行 == 已写候选数
-        idx = [json.loads(l) for l in io.open(os.path.join(work, "slb-INDEX.jsonl"),
-                                              encoding="utf-8")]
+        with io.open(os.path.join(work, "slb-INDEX.jsonl"), encoding="utf-8") as fh:
+            idx = [json.loads(l) for l in fh]
         self.assertEqual(len(idx), 4)
         adopted = [r for r in idx if r["verdict"] == "采用"]
         self.assertEqual(len(adopted), 2)
@@ -280,7 +325,8 @@ class TestEndToEnd(unittest.TestCase):
         self.assertEqual(len(out), len(adopted))
         for _row, rel, ap in out:
             self.assertTrue(os.path.exists(ap))
-            fm, _rest = slb.split_fm(io.open(ap, encoding="utf-8").read())
+            with io.open(ap, encoding="utf-8") as fh:
+                fm, _rest = slb.split_fm(fh.read())
             self.assertTrue(fm[u"来源"])
             self.assertIn(u"未人工通读", fm[u"校验状态"])
 
