@@ -664,5 +664,200 @@ class TestJsonlContract(unittest.TestCase):
         self.assertIn("被归一压平的组", txt)
 
 
+def _write_toc(d, **files):
+    """临时 TOC 快照目录（`<name>.txt`）。"""
+    os.makedirs(d, exist_ok=True)
+    for name, lines in files.items():
+        with io.open(os.path.join(d, name), "w", encoding="utf-8") as fh:
+            fh.write("\n".join(lines) + "\n")
+    return d
+
+
+class TestSghcnSource(unittest.TestCase):
+    """task-1b：源 6「sghcn」的**文件名清单**（只读并入证据，不导入）。"""
+
+    def _one(self, line, fn="sghcn_provice.txt", subj="申论", lv="省考"):
+        d = _write_toc(tempfile.mkdtemp(), **{fn: [line]})
+        evs = expect.ev_sghcn(d)
+        self.assertEqual(len(evs), 1, evs)
+        return evs[0]
+
+    def test_liankao_with_province_keeps_province_and_precise_ptype(self):
+        # 关键解析规则 1：region **优先于**「多省联考」⇒ 取省名（R-COV-1）。
+        e = self._one("2023年公务员多省联考《申论》真题及答案（安徽A卷）.pdf")
+        self.assertEqual((e["level"], e["region"], e["year"]), ("省考", "安徽", "2023"))
+        self.assertEqual((e["subject"], e["ptype"], e["session"]), ("申论", "A类", ""))
+        self.assertFalse(e["bingjuan"])
+        self.assertEqual(e["src"], "sghcn")
+
+    def test_country_file_gives_guokao_region_guokao(self):
+        # R-COV-22：国考行 `level="国考"` 且 `region="国考"`（既有形态，绝不改 ""）。
+        e = self._one("2019年国家公务员考试申论真题（副省级）.pdf",
+                      fn="sghcn_country.txt")
+        self.assertEqual((e["level"], e["region"]), ("国考", "国考"))
+        self.assertEqual(e["ptype"], "副省级")
+
+    def test_level_hint_fills_level_but_region_is_never_guessed(self):
+        # 国考清单可给来源级 `level_hint`（标题本身判不出时兜底）；**region 仍不猜**（R-COV-1）。
+        d = _write_toc(tempfile.mkdtemp(), **{"sghcn_country.txt": ["2019年申论真题.pdf"]})
+        evs = expect.ev_sghcn(d)
+        self.assertEqual(len(evs), 1)
+        self.assertEqual(evs[0]["level"], "国考")       # level_hint 兜底
+        self.assertEqual(evs[0]["region"], "")          # 不猜
+
+    def test_xingce_json_suffix_stripped_and_subject_detected(self):
+        e = self._one("2020年广东省公务员考试《行测》真题.json",
+                      fn="sghcn_provice_xingce_json.txt", subj="行测")
+        self.assertEqual((e["region"], e["subject"], e["year"]), ("广东", "行测", "2020"))
+
+    def test_yearless_and_junk_lines_are_dropped(self):
+        # 清单里混入的非试卷名（`issues.txt` / `analyze_data.py`）与无年份串 ⇒ 丢弃，不猜。
+        d = _write_toc(tempfile.mkdtemp(), **{"sghcn_country_xingce_json.txt":
+                                              ["issues.txt", "results.txt",
+                                               "2019年国家公务员考试行测真题.json"]})
+        evs = expect.ev_sghcn(d)
+        self.assertEqual(len(evs), 1)
+        self.assertEqual(evs[0]["year"], "2019")
+
+    def test_verify_class_titles_are_flagged_for_the_non_gs_path(self):
+        # 招警/选调/政法干警 类 ⇒ `verify=True` ⇒ 走非国省考通路（R-COV-9）。
+        e = self._one("2016年重庆市选调应届优秀大学毕业生到基层工作考试 行政职业能力测验"
+                      "试卷.json", fn="sghcn_provice_xingce_json.txt", subj="行测")
+        self.assertTrue(e["verify"])
+
+    def test_drop_words_still_excluded(self):
+        d = _write_toc(tempfile.mkdtemp(), **{"sghcn_provice.txt":
+                                              ["2023年山东省考《申论》模拟卷.pdf"]})
+        self.assertEqual(expect.ev_sghcn(d), [])
+
+    def test_missing_dir_is_empty_not_error(self):
+        self.assertEqual(expect.ev_sghcn(os.path.join(tempfile.mkdtemp(), "nope")), [])
+
+    def test_shipped_snapshots_have_the_expected_sizes(self):
+        # W1 的可红化：随仓的四份快照在、且能被解析出证据（行数由 `len()` 实算）。
+        sizes = {}
+        for fn, _subj, _lv in expect.SGHCN_TOC_FILES:
+            p = os.path.join(expect.SGHCN_TOC_DIR, fn)
+            self.assertTrue(os.path.isfile(p), p)
+            sizes[fn] = len([l for l in io.open(p, encoding="utf-8") if l.strip()])
+        self.assertEqual(sizes, {"sghcn_country.txt": 47,
+                                 "sghcn_country_xingce_json.txt": 50,
+                                 "sghcn_provice.txt": 837,
+                                 "sghcn_provice_xingce_json.txt": 632})
+        self.assertTrue(expect.ev_sghcn())
+
+    def test_never_produces_region_liankao(self):
+        d = _write_toc(tempfile.mkdtemp(), **{"sghcn_provice.txt": [
+            "2023年公务员多省联考《申论》真题及答案（安徽A卷）.pdf",
+            "2023年公务员多省联考《申论》真题（河南县级卷）及参考答案.pdf"]})
+        evs = expect.ev_sghcn(d)
+        self.assertEqual(sorted(e["region"] for e in evs), ["安徽", "河南"])
+        self.assertFalse(any(e["region"] == "多省联考" for e in evs))
+
+
+class TestA0AuditFixes(unittest.TestCase):
+    """task-1b 的 A0-1～A0-4：审计面缺陷的可红测试。"""
+
+    def test_a0_1_tongkao_criterion_is_match_ptype_same_exit(self):
+        # A0-1/W9：判据 = `match_ptype(raw)[0] is None`（与 `canon_ptype` 同一出口），
+        # **不是** `raw not in ALIAS_TO_CANON`（精确键 membership）。
+        raws = [r for r in expect.ALIAS_TO_CANON] + ["统考", "市县卷", "急需紧缺岗位",
+                                                     "A卷：省直", "上半年乡镇卷",
+                                                     "上半年", "下半年"]
+        got = {r for r in raws if expect.match_ptype(r)[0] is None}
+        self.assertEqual(got, {"统考", "市县卷", "急需紧缺岗位", "上半年", "下半年"})
+        # 反例：这些**能**匹配到别名（子串），旧判据（精确键 membership）会误列。
+        for r in ("A卷：省直", "上半年乡镇卷", "下半年省市县卷", "兵团一卷"):
+            self.assertNotIn(r, expect.ALIAS_TO_CANON, r)   # 旧判据：不在精确键表 ⇒ 误列
+            self.assertIsNotNone(expect.match_ptype(r)[0], r)
+            self.assertNotIn(r, got, r)                     # 新判据：正确排除
+
+    def test_a0_1_ptype_map_lists_the_tongkao_set_by_name(self):
+        d = _catalog_dir([_cat("省考-山东-2019-申论-统考", "省考", "山东", "2019",
+                               "申论", "统考"),
+                          _cat("省考-山东-2019-申论-市县卷", "省考", "山东", "2019",
+                               "申论", "市县卷"),
+                          _cat("省考-山东-2019-申论-A卷：省直", "省考", "山东", "2019",
+                               "申论", "A卷：省直")])
+        txt = expect.render_ptype_map(expect.ev_catalog(d), "2016")
+        line = [l for l in txt.splitlines() if "落 canonical `统考`" in l][0]
+        self.assertIn("match_ptype(raw)[0] is None", line)
+        self.assertIn("`统考`×1", line)
+        self.assertIn("`市县卷`×1", line)
+        self.assertNotIn("A卷：省直", line)         # 能匹配到 `省直` ⇒ 不进该集合
+        self.assertNotIn("11/16", txt)
+
+    def test_a0_2_ptype_map_totals_print_a_check_formula(self):
+        d = _catalog_dir([_cat("a", "省考", "山东", "2019", "申论", "统考"),
+                          _cat("b", "省考", "山东", "2019", "申论", "乡镇卷")])
+        txt = expect.render_ptype_map(expect.ev_catalog(d), "2016", delivered=set())
+        self.assertIn("**合计**", txt)
+        self.assertIn("校验式", txt)
+        self.assertIn("`sum(条数) = 1+1 = 2`", txt)
+        self.assertIn("**合计（匹配到别名）**", txt)
+
+    def test_a0_4_section7_example_is_generated_and_never_in_the_table(self):
+        # A0-4：§七 前言举的例须**从数据生成**（主行集里带 verify 标题的行），
+        # 不得是硬编码的、且**恰好**与本表（已移出行）冲突的那一串。
+        delivered = {"省考/安徽/2018/申论-统考.md"}
+        cat = [_cat("省考-安徽-2018-申论-统考", "省考", "安徽", "2018", "申论", "统考")]
+        evs = expect.ev_catalog(_catalog_dir(cat))          # → md_rel 恰为上面那行
+        # 只**提及**选调（canon 同为 `统考`）⇒ 挂到已交付行 ⇒ **留在主账**
+        main_v = _ev("2018·公务员多省联考《申论》题（安徽A、普通选调卷）", "SLB")
+        other = _ev("2020·公安院校联考《申论》题", "linfukai186")   # 整行移出
+        rows, bj, ngs = expect.merge_rows(evs + [main_v, other], "2016", delivered,
+                                          ["2018", "2020"], grid=False)
+        self.assertEqual(len(ngs), 1)
+        ngs_titles = [t for r in ngs for t in r["titles"]]
+        self.assertTrue(any(r["verify_titles"] for r in rows), "主账应有带 verify 标题的行")
+        txt = expect.render_md(rows + bj, bj, ngs, "2016", 3)
+        head, body = txt.split("## 七、")[1].split("| level |", 1)
+        self.assertIn("**留在主账**", head)
+        self.assertIn(main_v["title"], head)                # 示例**取自主账**那一串
+        for t in ngs_titles:
+            self.assertNotIn(t, head)                       # 绝不在前言里出现（不冲突）
+            self.assertIn(t, body)                          # 而它确实在 §七 表里
+
+    def test_a0_3_bounds_section_states_366_equals_344_plus_22(self):
+        # 22 行：**19 行有同伴 + 3 行整格零交付**（与实测同形，见 brief A0-3）。
+        orph = [{"level": "省考", "region": "青海", "year": "2020", "subject": "行测",
+                 "ptype": "C类", "n": 79, "srcs": ["linfukai186"], "sibling": i < 19,
+                 "md_rel": "省考/青海/2020/行测-C类.md"}
+                for i in range(22)]
+        bounds = {"catalog_total": 1261, "catalog_since": 917, "manifest": 895,
+                  "lt_since": 344, "delivered_evidence": 895, "orphans": orph,
+                  "orphan_has": 19, "orphan_none": 3}
+        rows, bj, ngs = expect.merge_rows([], "2016", set(), ["2016"], grid=True)
+        txt = expect.render_md(rows + bj, bj, ngs, "2016", 0, bounds)
+        self.assertIn("## 九、账的边界", txt)
+        self.assertIn("`catalog − 交付树 = 1261 − 895 = 366`", txt)
+        self.assertIn("**`344`（`< 2016`，按设计不在范围）+ `22`（`>= 2016`", txt)
+        self.assertIn("`366 = 344 + 22`", txt)
+        self.assertIn("**19 行有同伴**", txt)
+        self.assertIn("**3 行整格零交付**", txt)
+        self.assertIn("`22 = 19（有同伴）+ 3（零交付）`", txt)
+        self.assertIn("xingcezhenti\" not in row[\"sources\"]", txt)
+
+    def test_render_md_without_bounds_omits_bounds_section(self):
+        rows, bj, ngs = expect.merge_rows([], "2016", set(), ["2016"], grid=True)
+        txt = expect.render_md(rows + bj, bj, ngs, "2016", 0)
+        self.assertNotIn("## 九、账的边界", txt)
+        self.assertIn("## 十、来源可导入性", txt)   # §十 **不**依赖 bounds
+
+    def test_a0_5_importability_section_marks_sghcn_as_not_a_source(self):
+        rows, bj, ngs = expect.merge_rows([], "2016", set(), ["2016"], grid=True)
+        txt = expect.render_md(rows + bj, bj, ngs, "2016", 0)
+        sec = txt.split("## 十、来源可导入性")[1]
+        self.assertIn("`sghcn`", sec)
+        self.assertIn("**否 —— 仅 TOC / 原件对照**", sec)
+        for name in ("交付树", "`shangantong`", "`linfukai186`", "`SLB`"):
+            self.assertIn(name, sec)
+
+    def test_a0_6_evidence_source_names_include_sghcn(self):
+        rows, bj, ngs = expect.merge_rows([], "2016", set(), ["2016"], grid=True)
+        txt = expect.render_md(rows + bj, bj, ngs, "2016", 0)
+        self.assertIn("`sghcn`", txt.split("## 一、口径声明")[1].split("## 二、")[0])
+
+
 if __name__ == "__main__":
     unittest.main()

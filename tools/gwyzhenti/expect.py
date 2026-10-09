@@ -11,8 +11,11 @@
       - 规则骨架 = 用户点名的检查格：31 省级地区 + 国考，× 2016–2026，× 行测/申论。
         骨架**只**表达「该地区该年该科应有一卷待查」，**不**声称该卷存在（无证据即为
         `尚未找到`）。骨架是**用户口径**，不是模型记忆。
-      - 证据并集 = 5 个来源 TOC 解析出的 `(level, region, year, subject, ptype, session)`；
+      - 证据并集 = 6 个来源 TOC 解析出的 `(level, region, year, subject, ptype, session)`；
         同一格内每个 distinct 卷型各占一行（**卷型级**），故行数多于格数。
+        **源 6「sghcn」**（`SGHCN0762` 的文件名清单，见 `ev_sghcn`）**只作证据、不可导入**：
+        它带**精确卷型**（`（安徽A卷）`/`（广西C卷）`/`（河南县级卷）`），是拆并卷的权威卷型地图，
+        但正文是 PDF/无图 JSON ⇒ **不作卷源**（§十「来源可导入性」）。
   * `尚未找到` **只**表示「本机所有来源都没提到」这一件事，**绝不**表示「该考试没举行」。
   * `多省联考` 是**源并卷键**、不是地区 ⇒ 单列 `ptype="并卷"`，**不得**产出
     `region="多省联考"` 的行。
@@ -32,6 +35,16 @@
 `work/PTYPE-MAP.md`。不导入任何内容、不改正文/答案、不做跨卷去重、不碰 PDF。
 
 风格照 `tools/gwyzhenti/report_accept.py`（同包、argparse + main + 打印路径与字节数）。
+
+**源 6「sghcn」的 TOC 快照**：`tools/gwyzhenti/data/sghcn_toc/*.txt`（随仓提交的**文件名
+清单**，事实性标题，非正文）。**不联网**；刷新（本机 HTTPS 直连 GitHub，不绕行、不镜像）：
+
+    gh api "repos/SGHCN0762/<repo>/git/trees/HEAD?recursive=1" \
+        --jq '.tree[]|select(.type=="blob")|.path'
+
+四份快照：`sghcn_provice.txt`（省考申论 PDF 名）、`sghcn_country.txt`（国考申论 PDF 名）、
+`sghcn_provice_xingce_json.txt`（省考行测 JSON 名）、`sghcn_country_xingce_json.txt`
+（国考行测 JSON 名）。重取时**逐字覆盖同名文件**即可。
 """
 import argparse
 import collections
@@ -78,6 +91,16 @@ JSONL_FIELDS = ("level", "region", "year", "subject", "session", "ptype",
 
 LEVEL_GUOKAO = "国考"
 LEVEL_SHENGKAO = "省考"
+
+# 源 6「sghcn」的 TOC 快照（随仓提交的**文件名清单**；生成器**从该目录读**，不联网）。
+# 目录默认取**本模块同级**的 `data/sghcn_toc` ⇒ 不依赖 CWD / 不依赖 `--upstream`。
+SGHCN_TOC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             "data", "sghcn_toc")
+# (快照文件, 科目兜底, level 兜底)。**顺序固定** ⇒ 证据顺序确定、产物逐字节可复现。
+SGHCN_TOC_FILES = (("sghcn_country.txt", "申论", LEVEL_GUOKAO),
+                   ("sghcn_country_xingce_json.txt", "行测", LEVEL_GUOKAO),
+                   ("sghcn_provice.txt", "申论", LEVEL_SHENGKAO),
+                   ("sghcn_provice_xingce_json.txt", "行测", LEVEL_SHENGKAO))
 
 # 交付树（catalog）里那个**伪地区**：源并卷的产物，不是考点。
 PSEUDO_REGION = "多省联考"
@@ -336,6 +359,49 @@ def ev_slb(repo_root):
     return [e for e in out if e]
 
 
+def ev_sghcn(toc_dir=SGHCN_TOC_DIR):
+    """源 6「sghcn」（`SGHCN0762`）：**文件名清单**（`data/sghcn_toc/*.txt`），不联网。
+
+    价值：其申论/行测文件名把**真实省份 + 精确卷型**写进了名字
+    （`2023年公务员多省联考《申论》真题及答案（安徽A卷）` ⇒ `region="安徽"`, `ptype="A类"`），
+    是**拆并卷的权威卷型地图**。
+
+    口径（与其余 5 源**完全同路**，**不另起词表** —— 这正是修轮 1 修掉的 F1）：
+      * 一律走共享的 `parse_title` ⇒ `canon_ptype` / `match_ptype`；本函数**只**做
+        「读文件 → 去扩展名 → 交给 `parse_title`」。
+      * **region 优先于「多省联考」**：`parse_title` 先按 `REGION_WORDS` 取省名，
+        取不到才可能落并卷键 ⇒ **绝不**产出 `region="多省联考"`（R-COV-1）。
+      * **国考**（含 `国家公务员`/`国考`）⇒ `level="国考"`, `region="国考"`（R-COV-22：
+        与既有各行一致，「国考」本就是 region 轴的一个取值）。
+      * 年份取 `(20\\d\\d)`，**取不到 ⇒ 丢弃**；科目含「申论」/「行测」，取不到 ⇒ 丢弃；
+        命中过滤词（模考/模拟/…）⇒ 丢弃。`招警`/`选调`/`政法干警`/`公安院校联考` 类
+        由 `parse_title` 打 `verify=True` ⇒ 走**非国省考**通路（R-COV-9），不进主账。
+      * `level_hint`：`sghcn_country*` 两份给 `国考`（其文件名可能不含「国家公务员」），
+        `sghcn_provice*` 两份给 `省考`。**它只是兜底**（标题本身能判时以标题为准）。
+      * **`--since` 不在本函数过滤**：与其余 5 源同路，`since` 统一在 `merge_rows` /
+        `render_ptype_map` 层执行（否则 §二「证据条数」在源间口径不一）。
+      * 清单里混入的非试卷名（如 `issues.txt`/`analyze_data.py`）**无年份 ⇒ 自然丢弃**，
+        不需要特判。
+    """
+    out = []
+    for fn, subj, lv in SGHCN_TOC_FILES:
+        p = os.path.join(toc_dir, fn)
+        if not os.path.isfile(p):
+            continue
+        with io.open(p, encoding="utf-8") as fh:
+            for line in fh:
+                name = line.strip()
+                if not name:
+                    continue
+                for ext in (".pdf", ".json"):
+                    if name.lower().endswith(ext):
+                        name = name[:-len(ext)]
+                        break
+                out.append(_ev(parse_title(name, subject_hint=subj, level_hint=lv),
+                               "sghcn"))
+    return [e for e in out if e]
+
+
 # ---- 并账 --------------------------------------------------------------------
 
 def _row(level, region, year, subject, ptype, session):
@@ -549,7 +615,54 @@ def merge_rows(evidences, since, delivered, years, grid=True):
     return rows, bjrows, ngs
 
 
-def build(catalog_dir, uproots, repo_root, since):
+def _catalog_bounds(catalog_dir, repo_root, delivered, since):
+    """`catalog` 与交付树的差集构成（**A0-3**）：**全部实算**，为 `EXPECTED.md` §九 供数。
+
+    「交付树」的权威数取 `work/manifest.jsonl` 的 path 数（与 `delivered` 逐项交叉核对）；
+    「≥since 的 catalog 行」逐行重算 `export.repo_paths`，路径不在 manifest ⇒ 该行**无落盘 md**。
+    同格（`level/region/year/subject`）已有落盘件 ⇒ 该行「**有同伴**」（并卷/拼写差），
+    否则是**整格零交付**。
+    """
+    manifest = os.path.join(repo_root, "work", "manifest.jsonl")
+    mpaths = set()
+    if os.path.exists(manifest):
+        with io.open(manifest, encoding="utf-8") as fh:
+            for line in fh:
+                if line.strip():
+                    mpaths.add(json.loads(line)["path"])
+    cells = set()                                   # 交付树里「已有的格」
+    for p in mpaths:
+        seg = p.replace("\\", "/").split("/")
+        if len(seg) == 4:                           # 省考/<region>/<year>/<subject>-<ptype>.md
+            cells.add((seg[0], seg[1], seg[2], seg[3].split("-")[0]))
+        elif len(seg) == 3 and seg[0] == LEVEL_GUOKAO:   # 国考/<year>/<subject>-<ptype>.md
+            cells.add((LEVEL_GUOKAO, LEVEL_GUOKAO, seg[1], seg[2].split("-")[0]))
+    cat = export.load_catalog(catalog_dir)
+    cat_since = [r for r in cat if r["year"] >= since]
+    orph = []
+    for r in cat_since:
+        key = PaperKey(r["level"], "" if r["level"] == LEVEL_GUOKAO else r["region"],
+                       r["year"], r["subject"], r["ptype"])
+        md, _ = export.repo_paths(key, r["slug"])
+        md = md.replace("\\", "/")
+        if md in mpaths:
+            continue                                # 盘上有 ⇒ 不是差集
+        reg = LEVEL_GUOKAO if r["level"] == LEVEL_GUOKAO else r["region"]
+        orph.append({"level": r["level"], "region": reg, "year": r["year"],
+                     "subject": r["subject"], "ptype": r["ptype"],
+                     "n": r.get("n_questions"),
+                     "srcs": sorted(r.get("sources") or []), "md_rel": md,
+                     "sibling": (r["level"], reg, r["year"], r["subject"]) in cells})
+    orph.sort(key=lambda x: (x["year"], x["level"], x["region"], x["ptype"]))
+    return {"catalog_total": len(cat), "catalog_since": len(cat_since),
+            "manifest": len(mpaths), "lt_since": len(cat) - len(cat_since),
+            "delivered_evidence": len(delivered),
+            "orphans": orph,
+            "orphan_has": sum(1 for x in orph if x["sibling"]),
+            "orphan_none": sum(1 for x in orph if not x["sibling"])}
+
+
+def build(catalog_dir, uproots, repo_root, since, sghcn_dir=SGHCN_TOC_DIR):
     """→ `(md_text, ptype_map_text, jsonl_rows, stats)`。只读；不写任何文件。"""
     since = str(since)
     years = [str(y) for y in range(int(since), 2027)]
@@ -558,7 +671,8 @@ def build(catalog_dir, uproots, repo_root, since):
                  + ev_shangantong(uproots["shangantong_c1"])
                  + ev_shangantong(uproots["shangantong_c2"])
                  + ev_linfukai186(uproots["linfukai186"])
-                 + ev_slb(repo_root))
+                 + ev_slb(repo_root)
+                 + ev_sghcn(sghcn_dir))
     delivered = set()
     for e in evidences:
         md = e.get("md_rel")
@@ -568,10 +682,11 @@ def build(catalog_dir, uproots, repo_root, since):
             delivered.add(md)
     rows, bjrows, ngs = merge_rows(evidences, since, delivered, years)
     all_rows = rows + bjrows
+    bounds = _catalog_bounds(catalog_dir, repo_root, delivered, since)
     stats = {"delivered": delivered, "n_ev": len(evidences),
-             "n_delivered_paths": len(delivered)}
-    return (render_md(all_rows, bjrows, ngs, since, len(evidences)),
-            render_ptype_map(evidences, since), all_rows, stats)
+             "n_delivered_paths": len(delivered), "bounds": bounds}
+    return (render_md(all_rows, bjrows, ngs, since, len(evidences), bounds),
+            render_ptype_map(evidences, since, delivered), all_rows, stats)
 
 
 # ---- 人读账 ------------------------------------------------------------------
@@ -600,8 +715,12 @@ def _blank_section(L, all_rows):
     return L
 
 
-def render_md(all_rows, bjrows, ngs, since, n_ev):
-    """`all_rows` = **最终写盘的整行集**（含并卷行）。所有计数只从这里导出（A5）。"""
+def render_md(all_rows, bjrows, ngs, since, n_ev, bounds=None):
+    """`all_rows` = **最终写盘的整行集**（含并卷行）。所有计数只从这里导出（A5）。
+
+    `bounds` = `_catalog_bounds(...)` 的产物（A0-3）；缺省 `None` ⇒ **不渲染 §九**
+    （既有单测以 5 参调用，仍得八节）。行集内的计数**一律**从 `all_rows` 导出。
+    """
     n = len(all_rows)
     cnt = collections.Counter(r["status"] for r in all_rows)
     years = sorted({r["year"] for r in all_rows}, reverse=True)
@@ -628,8 +747,10 @@ def render_md(all_rows, bjrows, ngs, since, n_ev):
           "3. **`多省联考` 是源并卷键、不是地区**：本账**不产出** `region=\"多省联考\"` 的行；"
           "并卷键单列 `ptype=\"并卷\"`（§五），其落盘件计入 `delivered_md` 以保账闭合。",
           "4. **证据并集，不由记忆断言**：每一行的 `attested_by` 都真枚举自下列来源的 TOC。"
-          "来源名 ∈ `{catalog, xingcezhenti, shangantong, linfukai186, SLB}`，其中 `catalog` = "
-          "交付树（`work/catalog/catalog.jsonl` + `export.repo_paths` 判盘上 md 是否存在）。",
+          "来源名 ∈ `{catalog, xingcezhenti, shangantong, linfukai186, SLB, sghcn}`，其中 "
+          "`catalog` = 交付树（`work/catalog/catalog.jsonl` + `export.repo_paths` 判盘上 md "
+          "是否存在）；`sghcn` = `SGHCN0762` 的**文件名清单**（§十）。"
+          "**注意**：来源 ∈ `attested_by` **≠** 该来源可导入 —— 见 §十「来源可导入性」。",
           "5. **卷型归一（修轮 1 / A1，控制器裁定 R-COV-16）**：`canon_ptype` **只在匹配层**用 —— "
           "**已交付行按交付侧原始串落键**（一行一路径，与 manifest 一一对应），源侧证据按 "
           "canonical 匹配到已交付行。⇒ 交付侧 `A类` 与源侧 `A卷` 归一为**同一行**（幻影缺口消失），"
@@ -731,13 +852,22 @@ def render_md(all_rows, bjrows, ngs, since, n_ev):
     L = _blank_section(L, all_rows)
 
     # ---- 七、非国省考 ----
+    # A0-4：前言的示例**从数据生成**（不得硬编码一个与本表冲突的例子）。
+    ngs_titles = {t for r in ngs for t in (r["titles"] or [])}
+    main_vt_rows = [r for r in all_rows if r.get("verify_titles")]
+    main_vt = sorted({t for r in main_vt_rows for t in r["verify_titles"]
+                      if t not in ngs_titles})
+    ex = ("（如 `%s`）" % main_vt[0]) if main_vt else ""
     L += ["## 七、非国省考（选调/招警/公安院校联考/政法干警/基层，**不计入应有**）", "",
           "> 口径（A3）：**整行只由非国省考类标题组成**的行 ⇒ 移出主账、**不计入四数**、"
           "也不生成格级占位，在此单列。共 **%d** 条（按 `(level, region, year, subject, "
           "ptype, session)` 聚合）。" % len(ngs),
-          "> 只**提及**选调/招警而实为国省考卷的标题（如 "
-          "`2018·公务员多省联考《申论》题（安徽A、普通选调卷）`）**留在主账**："
-          "它是安徽 A 卷的一体两面，不是另一场考试；这类行在 §四 的 `note` 里标明。", "",
+          "> 只**提及**选调/招警而实为国省考卷的标题%s**留在主账**（本账共 **%d** 行带此类"
+          "标题，逐行见 §四 的 `note`）：它与主行**同格同卷型**、是同一份卷的一体两面，"
+          "**不是**另一场考试。" % (ex, len(main_vt_rows)),
+          "> ⇔ 对照：**上表**列出的 %d 条才是**移出**主账的（整行皆非国省考类）。"
+          "前言示例由上表**反选**生成（取主行集里出现、且**不在**上表内的标题）⇒ "
+          "二者**不可能**冲突。" % len(ngs), "",
           "| level | region | year | subject | ptype | session | 原始 title |",
           "|---|---|---|---|---|---|---|"]
     for r in ngs:
@@ -766,16 +896,99 @@ def render_md(all_rows, bjrows, ngs, since, n_ev):
           "- `region=\"\"` 的行**不计入**覆盖率（§六）。",
           "- 空格行 `ptype=\"统考\"` 是**占位**：本账不声称该年该科只有一卷或只有一种卷型。",
           "- **`尚未找到` 不等于考试未举行**；要判「未举行」需独立证据，本账没有。", ""]
+
+    # ---- 九、账的边界：catalog 与交付树的差集构成（A0-3） ----
+    if bounds is not None:
+        b = bounds
+        L += ["## 九、账的边界：`catalog` 与交付树的差集构成", "",
+              "> 本节**全部实算**（`expect._catalog_bounds`）——**没有一处手写求和**。"
+              "它划清「本账（`EXPECTED.jsonl`）」「`catalog`（候选清单）」「交付树（盘上 md）」"
+              "三者的边界。", "",
+              "| 量 | 值 | 实算式 |", "|---|---:|---|",
+              "| `work/catalog/catalog.jsonl` 总行数 | %d | `len(load_catalog())` |"
+              % b["catalog_total"],
+              "| 其中 `year >= %s` | %d | `len([r for r in cat if r.year >= \"%s\"])` |"
+              % (since, b["catalog_since"], since),
+              "| 其中 `< %s` | %d | `%d - %d` |"
+              % (since, b["lt_since"], b["catalog_total"], b["catalog_since"]),
+              "| `work/manifest.jsonl` 的 path 数（= 交付树） | %d | `len(set(paths))` |"
+              % b["manifest"],
+              "| 本账 `delivered_md` 覆盖的 path（V1，双向差集为空） | %d | "
+              "`len({r.delivered_md})` |" % b["delivered_evidence"],
+              "",
+              "**`catalog − 交付树 = %d − %d = %d` 行，正确分解为**："
+              "**`%d`（`< %s`，按设计不在范围）+ `%d`（`>= %s`，**有行但盘上无 md**）**。"
+              % (b["catalog_total"], b["manifest"],
+                 b["catalog_total"] - b["manifest"],
+                 b["lt_since"], since, len(b["orphans"]), since),
+              "",
+              "> 旧稿写「`catalog − manifest = 366`，**全是 2016 前**」——**错**。"
+              "`366 = %d + %d`，其中 **%d** 行是 `>= %s` 的行测卷**有出处却没有落盘 md**。"
+              % (b["lt_since"], len(b["orphans"]), len(b["orphans"]), since), "",
+              "### 那 %d 行（`>= %s` 的 catalog 行，路径不在 manifest 里）" % (
+                  len(b["orphans"]), since), "",
+              "- **全部是行测**：%d / %d。" % (
+                  sum(1 for x in b["orphans"] if x["subject"] == "行测"), len(b["orphans"])),
+              "- **全部只由 `linfukai186` 一个源提供**：%d / %d。" % (
+                  sum(1 for x in b["orphans"] if x["srcs"] == ["linfukai186"]),
+                  len(b["orphans"])),
+              "- **根因**（`export.py:run` 实读）：", "",
+              "  ```python",
+              "  if \"xingcezhenti\" not in row[\"sources\"]:",
+              "      rep.skipped.append({\"slug\": row[\"slug\"], \"reason\": \"本批只导出有正文的源\"})",
+              "  ```", "",
+              "  ⇒ **行测只导「带 `xingcezhenti` 源」的行**（申论无此过滤）。"
+              "故这 %d 行是「**该源的导出器尚未写**」，**不是「源里没有」** —— "
+              "除非该格另有进路，否则它们**在交付树里恒缺**。" % len(b["orphans"]),
+              "- **分类**（逐行实算）：**%d 行有同伴**（同格已按**别的卷型**落盘，"
+              "属并卷/拼写差）＋ **%d 行整格零交付**。" % (
+                  b["orphan_has"], b["orphan_none"]),
+              "- **补导归 Task 4**（裁定 **R-COV-21**）：本件**只**把差集写清，"
+              "**不导任何内容、不动交付树**。", "",
+              "| year | level | region | subject | ptype | 题数 | 同格有交付件 | 目标路径（缺） |",
+              "|---|---|---|---|---|---:|---|---|"]
+        for x in b["orphans"]:
+            L.append("| %s | %s | %s | %s | %s | %s | %s | `%s` |" % (
+                x["year"], x["level"], x["region"] or "（未归位）", x["subject"],
+                x["ptype"], "—" if x["n"] is None else x["n"],
+                "有" if x["sibling"] else "**无**", x["md_rel"]))
+        L += ["",
+              "> 合计行数 `%d = %d（有同伴）+ %d（零交付）`。" % (
+                  len(b["orphans"]), b["orphan_has"], b["orphan_none"]),
+              "> 其中「同格只交付了**别的卷型**」的典型：`国考 2019 行测-统考`（124 题）"
+              "↔ 已交付 `副省级` + `地市级`；`吉林 2017 甲级/乙级` ↔ 交付侧拼作 "
+              "`卷甲级`/`卷乙级`；`青海 2020 行测 C类`（79 题）↔ 同格只交付 `A类`/`B类`。", ""]
+
+    # ---- 十、来源可导入性（W5） ----
+    L += ["## 十、来源可导入性（哪些源能当**卷源**）", "",
+          "> `attested_by` 里出现的来源**不等于**可补源。本节逐源交代「能不能拿它把缺卷"
+          "补成交付件」，**防止把 `sghcn` 误当可补源**。", "",
+          "| 源 | 形式 | 可否作**卷源** | 说明 |", "|---|---|---|---|",
+          "| 交付树 / `xingcezhenti` | md | 是（已交付） | 交付树本体；`xingcezhenti` 是其"
+          "上游正文本（md，含图） |",
+          "| `shangantong` | html | 是（含图） | `paper_*/index.html` |",
+          "| `linfukai186` | json | 是（题级，须成卷） | 题级 JSON，须按卷重组 |",
+          "| `SLB` | md | 是（逐卷记来源） | 已下载的 md 清单（`chars < 2000` 的存根除外） |",
+          "| **`sghcn`** | **pdf（申论）/ json（行测，无图）** | **否 —— 仅 TOC / 原件对照** | "
+          "**R-COV-11** |", "",
+          "> **`sghcn` 为什么是「否」**：它会让一批行变成 `源有未导入`（本账的 `attested_by` "
+          "里会出现 `sghcn`），但它的**行测 JSON 无图**、**申论为 PDF** ⇒ 本批**不可导入**。"
+          "它的价值是**卷型地图**（给 Task 3 拆并卷用），**不是**内容源。", ""]
     return "\n".join(L)
 
 
-def render_ptype_map(evidences, since):
+def render_ptype_map(evidences, since, delivered=None):
     """`work/PTYPE-MAP.md`：**本轮评审的主要审计面**（A1/V7）。
 
     交付侧**全部**原始值 → `(canonical, session)` + 条数；源侧观察到的别名；未匹配原串；
     归一后剩余的不同 canonical 值；**被压平的组**；以及裁定带来的「原始串落键」说明。
+
+    `delivered` = 盘上 md 的 path 集合（`build` 传入）。用于把 §2 的**合计**拆成
+    「盘上有 md」/「有行无 md」两半 —— **合计一律由 `len()`/`sum()` 实算并打印校验式**
+    （A0-2：**禁止手写求和**）。缺省 `None` ⇒ 只打印纯合计。
     """
     deliv = collections.Counter()
+    on_disk = collections.Counter()
     src = collections.Counter()
     unmapped_src = collections.Counter()
     for e in evidences:
@@ -787,6 +1000,8 @@ def render_ptype_map(evidences, since):
         if e["src"] == "catalog":
             if raw:
                 deliv[raw] += 1
+                if delivered and e.get("md_rel") in delivered:
+                    on_disk[raw] += 1
         elif raw:
             src[raw] += 1
         else:
@@ -815,29 +1030,54 @@ def render_ptype_map(evidences, since):
         need = "否" if (canon == raw and not sess) else "**是**"
         L.append("| `%s` | %d | `%s` | %s | %s |" % (
             raw, k, canon, sess or "—", need))
+    # A0-2：**合计必须实算**（`sum(...)`），并在同处打印**校验式**（逐项和式 == 结果）。
+    _items = sorted(deliv.items(), key=lambda x: (-x[1], x[0]))
+    _total = sum(k for _, k in _items)
+    _expr = "+".join(str(k) for _, k in _items)
+    _disk = sum(on_disk.values())
+    L.append("| **合计** | **%d** | — | — | **校验式**：`sum(条数) = %s = %d`；"
+             "其中 `%d` 条盘上有 md（已交付）+ `%d` 条有行无 md（见 `EXPECTED.md` §九）"
+             % (_total, _expr, _total, _disk, _total - _disk))
     uniq_canon = sorted({canon_ptype(r)[0] for r in deliv},
                         key=lambda c: _IDX.get(c, 99))
+    # A0-1：判据必须与 `canon_ptype` **同一出口** —— `match_ptype(raw)[0] is None`
+    # （子串最长优先），**不得**手写 `raw not in ALIAS_TO_CANON` 这类精确键 membership。
+    _tk = sorted(((r, k) for r, k in deliv.items() if match_ptype(r)[0] is None),
+                 key=lambda x: (-x[1], x[0]))
     L += ["",
-          "> 交付侧原始值 **%d** 个；**归一后剩余的不同 canonical 值：%d 个** —— %s。"
+          "> 交付侧原始值 **%d** 个（`len(deliv)`）；**归一后剩余的不同 canonical 值：%d "
+          "个**（`len(set(canon))`）—— %s。"
           % (len(deliv), len(uniq_canon),
              "、".join("`%s`" % c for c in uniq_canon)), "",
-          "> **未匹配任何别名**的交付侧原始串（落 canonical `统考`）：%s。"
-          % ("、".join("`%s`×%d" % (r, k) for r, k in
-                       sorted(((r, k) for r, k in deliv.items()
-                               if r not in ALIAS_TO_CANON),
-                              key=lambda x: (-x[1], x[0]))) or "（无）"), ""]
+          "> **落 canonical `统考` 的交付侧原始串**（判据 = **`match_ptype(raw)[0] is None`**，"
+          "即**与 `canon_ptype` 同一出口**；共 **%d** 个 / %d 条 —— `len(...)` / `sum(...)` "
+          "实算）：%s。"
+          % (len(_tk), sum(k for _, k in _tk),
+             "、".join("`%s`×%d" % (r, k) for r, k in _tk) or "（无）"), "",
+          "> 注：判据**不是**「`raw` 不在别名表里」—— 那是**精确键** membership，会把 "
+          "`A卷：省直`（含 `省直`）、`上半年乡镇卷`（含 `乡镇卷`）这类**能匹配到别名**的串"
+          "误列进来。此处改用与 `canon_ptype` 完全同一出口的子串匹配（最长优先）。", ""]
 
     L += ["## 3. 源侧：观察到的卷型词（匹配到的别名）", "",
           "| 别名 | 条数 | canonical |", "|---|---:|---|"]
-    for raw, k in sorted(src.items(), key=lambda x: (-x[1], x[0])):
+    _src_items = sorted(src.items(), key=lambda x: (-x[1], x[0]))
+    for raw, k in _src_items:
         L.append("| `%s` | %d | `%s` |" % (raw, k, ALIAS_TO_CANON[raw]))
+    # A0-2：源侧两半**实算**并给校验式：匹配到的 + 未匹配的 == 源侧非并卷证据总数。
+    _src_tot = sum(k for _, k in _src_items)
+    _src_um = sum(unmapped_src.values())
+    L.append("| **合计（匹配到别名）** | **%d** | **校验式**：`sum(条数) = %s = %d` |" % (
+        _src_tot, "+".join(str(k) for _, k in _src_items) or "0", _src_tot))
     L += ["",
           "> 源侧标题里**未匹配**任何别名的证据 **%d** 条 ⇒ canonical `统考`"
           "（即「源标题未指明卷型」）；这类证据**只**匹配同格 canonical 也是 `统考` 的已交付行，"
-          "否则新建行（`note` 记原串）。示例（前 10 条）：" % sum(unmapped_src.values()), ""]
+          "否则新建行（`note` 记原串）。示例（前 10 条）：" % _src_um, ""]
     for t, k in sorted(unmapped_src.items(), key=lambda x: (-x[1], x[0]))[:10]:
         L.append("- （%d 条）`%s`" % (k, t))
-    L.append("")
+    L += ["",
+          "> **源侧非并卷证据（`year >= %s`）合计的校验式**：匹配到别名 `%d` + 未匹配 `%d` "
+          "= **%d**；未匹配那半覆盖 `len(distinct 标题) = %d` 个标题。" % (
+              since, _src_tot, _src_um, _src_tot + _src_um, len(unmapped_src)), ""]
 
     L += ["## 4. 被归一压平的组（同一 canonical 下的多个交付侧原始串）", "",
           "| canonical | 交付侧原始串（含条数） | 合计条数 |", "|---|---|---:|"]
@@ -845,16 +1085,24 @@ def render_ptype_map(evidences, since):
     for raw, k in deliv.items():
         groups[canon_ptype(raw)[0]].append((raw, k))
     flat = 0
+    flat_sum = 0
+    single_sum = 0
     for canon in sorted(groups, key=lambda c: (-sum(k for _, k in groups[c]), c)):
         members = sorted(groups[canon], key=lambda x: (-x[1], x[0]))
         if len(members) < 2:
+            single_sum += sum(k for _, k in members)
             continue
         flat += 1
+        flat_sum += sum(k for _, k in members)
         L.append("| `%s` | %s | %d |" % (
             canon, "、".join("`%s`×%d" % (r, k) for r, k in members),
             sum(k for _, k in members)))
+    # A0-2：本表三个数**全由 `sum(...)` 实算**，并打印**校验式**（多值组 + 单值组 == §2 合计）。
+    L.append("| **合计（多值组）** | **%d 组** | **%d** |" % (flat, flat_sum))
     L += ["",
-          "> 只列**多于一个原始串**的组（共 **%d** 组）；单值组见 §2。压平是**有损**的，"
+          "> **校验式**：多值组 `%d` 条 + 单值组 `%d` 条 = **%d** == §2 的合计 `sum(条数) = %d`。"
+          % (flat_sum, single_sum, flat_sum + single_sum, _total), "",
+          "> 只列**多于一个原始串**的组（共 **%d** 组，`len(...)` 实算）；单值组见 §2。压平是**有损**的，"
           "但正是它消灭了「交付侧 `A类` vs 源侧 `A卷`」这类**幻影缺口**；"
           "而它**不会**并掉两个已交付件 —— 已交付行按原始串落键"
           "（如 `统考` 组含 `急需紧缺岗位`，但黑龙江 2019 申论两个交付件**仍各占一行**）。"
