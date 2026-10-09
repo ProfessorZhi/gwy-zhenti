@@ -24,7 +24,8 @@ def cmd_catalog(args):
 
 def cmd_export(args):
     from . import export
-    rep = export.run(args.catalog, _uproots(args), args.repo, limit=args.limit)
+    rep = export.run(args.catalog, _uproots(args), args.repo,
+                     limit=args.limit, since=(args.since or None))
     print("段二完成 →", args.repo)
     print("  卷 %d | md %d | 图片 %d" % (rep.papers, rep.files, rep.images))
     if rep.skipped:
@@ -58,6 +59,7 @@ def main(argv=None):
     e.add_argument("--upstream", required=True)
     e.add_argument("--repo", required=True)
     e.add_argument("--limit", type=int, default=0)
+    e.add_argument("--since", default="", help="只导出该年及以后（如 2016）；空 = 不过滤")
     e.set_defaults(func=cmd_export)
 
     g = sub.add_parser("gate", help="跑 G1–G6")

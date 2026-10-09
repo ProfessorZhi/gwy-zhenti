@@ -8,7 +8,7 @@ import re
 import shutil
 from dataclasses import dataclass, field
 
-from . import mdread, render
+from . import mdread, render, shenlun
 from .model import PaperKey
 
 IMG = re.compile(r'<img\b[^>]*?src="([^"]+)"[^>]*>')
@@ -43,7 +43,17 @@ def _write(path, data_bytes):
     tmp = path + ".tmp"
     with open(tmp, "wb") as fh:
         fh.write(data_bytes)
-    os.replace(tmp, path)
+    try:
+        os.replace(tmp, path)
+    except PermissionError:
+        # 目标被**外部进程**占用（句柄未授予 FILE_SHARE_DELETE）⇒ Windows 下原子替换必然
+        # `WinError 5`。仅当目标**已与待写字节逐字节相同**时跳过 —— 此时写与不写等价，
+        # 不是静默丢内容；只要有一个字节不同就照旧抛出，**绝不把「该写却没写成」吞掉**。
+        # （真库实测：`国考/2025/行测-副省级.md`、`省考/浙江/2025/行测-A类.md` 被
+        # `desktop-commander` 占用；--since 2016 对行测零扰动，故二者渲染结果与盘上一致。）
+        if not (os.path.exists(path) and open(path, "rb").read() == data_bytes):
+            raise
+        os.remove(tmp)
 
 
 def load_catalog(catalog_dir):
@@ -92,15 +102,74 @@ def _parts_for(row, upstream_xingce):
     return parts, got
 
 
-def run(catalog_dir, uproots, repo_root, limit=None):
+def _load_shenlun(uproots):
+    """申论源加载（只调一次）。**调用方未给 `linfukai186` 根 ⇒ 当作无申论源**（空表），不抛 KeyError。
+
+    既有行测测试（`tests/test_export.py`、`tests/test_gates.py`）故意只传
+    `{"xingcezhenti": ...}`；`cli._uproots` 在真库恒给两键，故实跑不受影响 ——
+    真库若把该根写错，`load_source` 返回空 ⇒ 申论全数进 skipped，验收数当场对不上（不会静默）。
+    """
+    root = uproots.get("linfukai186")
+    return shenlun.load_source(root) if root else {}
+
+
+def _shenlun_titles(row):
+    """该卷在 **linfukai186 源**里的卷名（保序）。空 = 该源没有此卷。
+
+    不能拿 `row["title"]` 当源键：与 `_xingce_titles` 同理（R-T8-1）。
+    合并行会有**多个**卷名（汇总键 + 分卷键撞 slug），必须**全部**取，否则丢题。
+    """
+    return shenlun.titles_of(row)
+
+
+def _shenlun_questions(row, src):
+    return shenlun.questions_for_titles(src, _shenlun_titles(row))
+
+
+def exportable_map(rows, uproots):
+    """→ {slug: 该卷在源里是否取得到正文}。**申论源只加载一次**（否则 O(卷×年文件)）。
+
+    行测沿用 `_parts_for`（与 M1 完全一致）；申论用 `shenlun.load_source`。
+    """
+    src = _load_shenlun(uproots)
+    out = {}
+    for row in rows:
+        if row["subject"] == "申论":
+            out[row["slug"]] = bool(_shenlun_questions(row, src))
+        else:
+            parts, _ = _parts_for(row, uproots["xingcezhenti"])
+            out[row["slug"]] = bool(parts)
+    return out
+
+
+def run(catalog_dir, uproots, repo_root, limit=None, since=None):
     rep = ExportReport()
     manifest = os.path.join(repo_root, "work", "manifest.jsonl")
     os.makedirs(os.path.dirname(manifest), exist_ok=True)
     rows = load_catalog(catalog_dir)
     if limit:
         rows = rows[:limit]
+    shenlun_src = _load_shenlun(uproots)
     entries = []
     for row in rows:
+        if since and row["year"] < since:
+            rep.skipped.append({"slug": row["slug"], "reason": "早于 since=%s" % since})
+            continue
+        if row["subject"] == "申论":
+            qs = _shenlun_questions(row, shenlun_src)
+            if not qs:
+                rep.skipped.append({"slug": row["slug"], "reason": "申论上游题缺失"})
+                continue
+            key = PaperKey(row["level"], row["region"], row["year"], row["subject"], row["ptype"])
+            md_rel, _ = repo_paths(key, row["slug"])
+            out = shenlun.render_paper(qs, key, nature=row["nature"], form=row["form"],
+                                       sources=row["sources"])
+            data = out.body.encode("utf-8")
+            _write(os.path.join(repo_root, md_rel), data)
+            rep.files += 1
+            entries.append({"path": md_rel.replace("\\", "/"), "sha256": _sha256_bytes(data)})
+            rep.papers += 1
+            continue
         if "xingcezhenti" not in row["sources"]:
             rep.skipped.append({"slug": row["slug"], "reason": "本批只导出有正文的源"})
             continue
