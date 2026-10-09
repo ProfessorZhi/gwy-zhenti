@@ -11,15 +11,25 @@
       - 规则骨架 = 用户点名的检查格：31 省级地区 + 国考，× 2016–2026，× 行测/申论。
         骨架**只**表达「该地区该年该科应有一卷待查」，**不**声称该卷存在（无证据即为
         `尚未找到`）。骨架是**用户口径**，不是模型记忆。
-      - 证据并集 = 5 个来源 TOC 解析出的 `(level, region, year, subject, ptype)`；
-        同一格内每个 distinct `ptype` 各占一行（**卷型级**），故行数多于格数。
+      - 证据并集 = 5 个来源 TOC 解析出的 `(level, region, year, subject, ptype, session)`；
+        同一格内每个 distinct 卷型各占一行（**卷型级**），故行数多于格数。
   * `尚未找到` **只**表示「本机所有来源都没提到」这一件事，**绝不**表示「该考试没举行」。
   * `多省联考` 是**源并卷键**、不是地区 ⇒ 单列 `ptype="并卷"`，**不得**产出
     `region="多省联考"` 的行。
 
+**卷型归一（修轮 1 / A1）**：`canon_ptype` 是交付侧与源侧**共用的唯一归一出口**。
+控制器裁定（R-COV-16）把「归一」**只**放在**匹配层**：
+  * **已交付行**（`repo_paths` 有落盘）**一律以交付侧原始串落键**（`ptype`），
+    行内**另存** canonical 供匹配 —— 保证 `delivered_md` 与 manifest 的 895 个 path
+    **一一对应、绝不并掉异形件**（如 `急需紧缺岗位` 与 `统考` 并存于黑龙江 2019 申论）。
+  * **源侧证据**用 canonical 匹配：同 `(level, region, year, subject)` 格内先找 canonical
+    相同的**已交付行**挂 `attested_by`；**找不到才**新建（非交付）行。
+  * ⇒ 交付侧 `A类` 与源侧 `A卷` 归一后**同一行**（幻影缺口消失），而交付侧两个**不同**
+    交付件**不会**被并成一行（账闭合）。**归一化只发生在比较层，交付树文件名一字未动。**
+
 **只读**：绝不写交付树 / `work/catalog/` / `work/manifest.jsonl` /
-`work/slb_shenlun_manifest.json`；只写 `work/EXPECTED.md` 与 `work/EXPECTED.jsonl`。
-不导入任何内容、不改正文/答案、不做跨卷去重、不碰 PDF。
+`work/slb_shenlun_manifest.json`；只写 `work/EXPECTED.md`、`work/EXPECTED.jsonl`、
+`work/PTYPE-MAP.md`。不导入任何内容、不改正文/答案、不做跨卷去重、不碰 PDF。
 
 风格照 `tools/gwyzhenti/report_accept.py`（同包、argparse + main + 打印路径与字节数）。
 """
@@ -33,33 +43,33 @@ import re
 from . import export
 from .model import PaperKey
 
-# ---- 口径常量（**逐字**取自 task-1 brief） --------------------------------------
+# ---- 口径常量 ----------------------------------------------------------------
 
+# 用户口径的 31 个省级地区（骨架用）。
 PROVINCES = (
     "北京 天津 上海 重庆 河北 山西 辽宁 吉林 黑龙江 江苏 浙江 安徽 福建 江西 山东 河南 "
     "湖北 湖南 广东 海南 四川 贵州 云南 陕西 甘肃 青海 内蒙古 广西 西藏 宁夏 新疆"
 ).split()
 
+# A4：region 白名单**只**补深圳/广州（真实地方公务员考试地区）。
+# **不入骨架**：骨架 = 用户点名的 31 省 + 国考 = 704 格，不因白名单扩张而变。
+EXTRA_REGIONS = ("深圳", "广州")
+REGION_WORDS = tuple(PROVINCES) + EXTRA_REGIONS
+
 # 国考的写法（标题里出现任一 ⇒ level=国考、region="国考"）。
 GUOKAO_TOKENS = ("国考", "国家公考", "国家公务员")
 
-# 卷型序列词（**最长优先**）。
-PTYPE_WORDS = (
-    "副省级", "地市级", "行政执法", "A卷", "B卷", "C卷", "A类", "B类", "C类",
-    "甲级", "乙级", "县级", "乡镇", "县乡", "省市", "执法", "上半年", "下半年",
-    "定向乡镇", "旗县", "盟市", "州市", "兵团", "公安",
-)
-
-# 过滤词：命中即丢弃，**不得混入应有账**（模考/模拟/预测/押题/密卷/冲刺/精选）。
+# 过滤词：命中即丢弃，**不得混入应有账**。
 DROP_WORDS = ("模考", "模拟", "大赛", "预测", "押题", "密卷", "冲刺", "精选")
 
-# 非国省考类：**可保留**，但 status 记「待核实」（用户要的「考试是否实际举行待核实」档）。
+# 非国省考类（A3）：**移出主账**，单列一节。
 VERIFY_WORDS = ("选调", "招警", "公安院校", "政法干警", "到基层")
 
 # 并卷键的标记词（`20XX·公务员多省联考` 一族）。
 BINGJUAN_WORD = "多省联考"
+BINGJUAN_PTYPE = "并卷"
 
-# 用户点名的检查格：31 省 + 国考。
+# 用户点名的检查格：31 省 + 国考（**不含** 深圳/广州）。
 GRID_REGIONS = list(PROVINCES) + ["国考"]
 
 # `work/EXPECTED.jsonl` 每行的字段，**固定 10 个且顺序固定**。
@@ -69,12 +79,94 @@ JSONL_FIELDS = ("level", "region", "year", "subject", "session", "ptype",
 LEVEL_GUOKAO = "国考"
 LEVEL_SHENGKAO = "省考"
 
-_PTYPE_RE = re.compile("|".join(sorted(PTYPE_WORDS, key=len, reverse=True)))
-_YEAR_RE = re.compile(r"(20\d\d)")
-_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
-
 # 交付树（catalog）里那个**伪地区**：源并卷的产物，不是考点。
 PSEUDO_REGION = "多省联考"
+
+_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S)
+_YEAR_RE = re.compile(r"(20\d\d)")
+
+# ---- A1：卷型归一（**只**在匹配层用） ------------------------------------------
+
+# 规范词表。**注**：task-1 fix-1 简令写「共 27 个允许值」却列举了 **28** 项，且其别名表
+# 要求 `县级卷 / 县级 -> 县级` 而 `县级` **不在**那 28 项里。控制器裁定（R-COV-16-1）把
+# `县级` 补进词表：**自洽读法 = 28 列举项 + `县级`**。本账按此实现，并在 PTYPE-MAP.md
+# 与报告里如实记录该计数差异（27 声称 / 28 列举 / 29 实需）。
+CANON_PTYPES = (
+    "副省级", "地市级", "行政执法", "A类", "B类", "C类", "甲级", "乙级", "丙级",
+    "乡镇", "县乡", "省市", "州市", "州县", "旗县", "盟市", "区县", "区级",
+    "省级", "市级", "省直", "县级以上", "县级",
+    "一卷", "二卷", "三卷", "兵团", "通用", "统考",
+)
+
+# (别名, 规范词)。**排序 = 最长优先；同长按规范词在上表的次序**（保证 `A卷：省直` → `A类`
+# 而不是 `省直`，`兵团一卷` → `一卷` 而不是 `兵团`）。
+_ALIAS_PAIRS = (
+    ("副省级", "副省级"), ("地市级", "地市级"), ("市地级", "地市级"),
+    ("行政执法", "行政执法"),
+    ("A卷", "A类"), ("A类", "A类"), ("B卷", "B类"), ("B类", "B类"), ("C卷", "C类"),
+    ("C类", "C类"),
+    ("卷甲级", "甲级"), ("甲卷", "甲级"), ("甲级", "甲级"),
+    ("卷乙级", "乙级"), ("乙卷", "乙级"), ("乙级", "乙级"),
+    ("丙卷", "丙级"), ("丙级", "丙级"),
+    ("定向乡镇", "乡镇"), ("乡镇卷", "乡镇"), ("乡镇", "乡镇"),
+    ("县级、乡镇统一卷", "县乡"), ("县级+乡镇", "县乡"), ("县乡卷", "县乡"), ("县乡", "县乡"),
+    ("县级以上", "县级以上"),
+    ("县级卷", "县级"), ("县级", "县级"),
+    ("省市县卷", "省市"), ("省市州级", "省市"), ("省市卷", "省市"), ("省市", "省市"),
+    ("州市卷", "州市"), ("州市", "州市"),
+    ("州县卷", "州县"), ("州县", "州县"),
+    ("旗县卷", "旗县"), ("旗县", "旗县"),
+    ("盟市卷", "盟市"), ("盟市", "盟市"),
+    ("区县卷", "区县"), ("区县", "区县"),
+    ("区级及以上", "区级"), ("区级卷", "区级"), ("区级", "区级"),
+    ("省级卷", "省级"), ("省级", "省级"),
+    ("市级卷", "市级"), ("市级", "市级"),
+    ("省直", "省直"),
+    ("一卷", "一卷"), ("二卷", "二卷"), ("三卷", "三卷"),
+    ("兵团", "兵团"),
+    ("通用卷", "通用"), ("通用", "通用"),
+)
+_IDX = {c: i for i, c in enumerate(CANON_PTYPES)}
+ALIASES = tuple(sorted(_ALIAS_PAIRS, key=lambda p: (-len(p[0]), _IDX[p[1]])))
+ALIAS_TO_CANON = dict(ALIASES)
+SESSIONS = ("上半年", "下半年")
+
+
+def match_ptype(s):
+    """→ `(命中的别名 or None, session)`。别名 = **最长优先**（同长按规范词序）。"""
+    s = s or ""
+    session = ""
+    for w in SESSIONS:
+        if w in s:
+            session = w
+            break
+    for alias, _canon in ALIASES:
+        if alias in s:
+            return alias, session
+    return None, session
+
+
+def canon_ptype(s):
+    """原始串（交付侧 `row["ptype"]` **或**整条标题）→ `(规范 ptype, session)`。
+
+    `session` **独立成字段**（A6）：规范 ptype 里**永不**含「上半年/下半年」。取不到别名 ⇒
+    `统考`。**注意**：本函数**只用于匹配层**；已交付行落键用交付侧原始串（见 `_strip_session`）。
+    """
+    alias, session = match_ptype(s)
+    return (ALIAS_TO_CANON[alias] if alias else "统考"), session
+
+
+def _strip_session(raw):
+    """交付侧原始串 → `(原始串去掉 session 词, session)`；空串 ⇒ `统考`（A6）。"""
+    s = raw or ""
+    sess = ""
+    for w in SESSIONS:
+        if w in s:
+            sess = w
+            s = s.replace(w, "")
+            break
+    s = s.strip()
+    return (s or "统考"), sess
 
 
 # ---- 共享解析 ----------------------------------------------------------------
@@ -83,8 +175,7 @@ def parse_title(s, subject_hint=None, level_hint=None):
     """标题/键名 → 证据 dict；取不到年份/科目或命中过滤词 ⇒ **None（丢弃，不猜）**。
 
     `subject_hint` / `level_hint` 是**来源级**兜底（如 linfukai186 的 `guokao-xingce`
-    目录、xingcezhenti 的 6 个模块目录）：**只在标题本身解析不出时**才用。这样
-    `2016·国家公务员考试地市级`（不含「行测」二字）不会因为目录名可知而无谓丢失。
+    目录、xingcezhenti 的 6 个模块目录）：**只在标题本身解析不出时**才用。
     """
     if not s:
         return None
@@ -111,22 +202,17 @@ def parse_title(s, subject_hint=None, level_hint=None):
     else:
         level = level_hint or LEVEL_SHENGKAO
         region = ""
-        for p in PROVINCES:
+        for p in REGION_WORDS:
             if p in s:
                 region = p
                 break
 
-    pm = _PTYPE_RE.search(s)
-    ptype = pm.group(0) if pm else "统考"
-    session = ""
-    if "上半年" in s:
-        session = "上半年"
-    elif "下半年" in s:
-        session = "下半年"
+    ptype, session = canon_ptype(s)
+    alias, _ = match_ptype(s)
     return {"level": level, "region": region, "year": year, "subject": subject,
-            "ptype": ptype, "session": session,
+            "ptype": ptype, "session": session, "ptype_raw": alias or "",
             "verify": any(w in s for w in VERIFY_WORDS),
-            "bingjuan": ("多省联考" in s) and (region == ""),
+            "bingjuan": (BINGJUAN_WORD in s) and (region == ""),
             "title": s}
 
 
@@ -143,23 +229,30 @@ def _ev(parsed, src, **extra):
 # ---- 5 个证据源 --------------------------------------------------------------
 
 def ev_catalog(catalog_dir):
-    """源 1「交付树」= `work/catalog/catalog.jsonl`（结构化，无需解析标题）。
+    """源 1「交付树」= `work/catalog/catalog.jsonl`。
 
-    伪地区 `多省联考` 的行**不入账**（见 `merge_rows` / md §5）。
+    伪地区 `多省联考` 的行**不产出 `region="多省联考"` 的行**，而是转成**并卷行**（A2），
+    以便 11 份并卷落盘也有 `delivered_md`（账闭合到 895）。
     """
     out = []
     for row in export.load_catalog(catalog_dir):
-        if row["region"] == PSEUDO_REGION:
-            continue
         key = PaperKey(row["level"],
                        "" if row["level"] == LEVEL_GUOKAO else row["region"],
                        row["year"], row["subject"], row["ptype"])
         md_rel, _ = export.repo_paths(key, row["slug"])
-        out.append({"level": row["level"],
-                    "region": "国考" if row["level"] == LEVEL_GUOKAO else row["region"],
-                    "year": row["year"], "subject": row["subject"], "ptype": row["ptype"],
-                    "session": "", "verify": False, "bingjuan": False,
-                    "title": row.get("title", ""), "src": "catalog", "md_rel": md_rel})
+        base = {"level": row["level"],
+                "region": "国考" if row["level"] == LEVEL_GUOKAO else row["region"],
+                "year": row["year"], "subject": row["subject"],
+                "title": row.get("title", ""), "src": "catalog", "md_rel": md_rel,
+                "ptype_raw": row["ptype"]}
+        if row["region"] == PSEUDO_REGION:
+            base.update({"ptype": BINGJUAN_PTYPE, "session": "", "verify": False,
+                         "bingjuan": True})
+        else:
+            pt, sess = canon_ptype(row["ptype"])
+            base.update({"ptype": pt, "session": sess, "verify": False,
+                         "bingjuan": False})
+        out.append(base)
     return out
 
 
@@ -229,7 +322,7 @@ def ev_slb(repo_root):
     """源 5「SLB」：本机已下载的 `work/slb_shenlun_manifest.json`。
 
     **不信 `province`/`exam_type` 前缀**（实测 `国考_*` 下混有广州/深圳/招警/政法干警卷），
-    一律按 `title` 重新归位；`chars < 2000` 的**存根**排除（recon §5 的 17 份）。
+    一律按 `title` 重新归位；`chars < 2000` 的**存根**排除。
     """
     p = os.path.join(repo_root, "work", "slb_shenlun_manifest.json")
     out = []
@@ -245,116 +338,219 @@ def ev_slb(repo_root):
 
 # ---- 并账 --------------------------------------------------------------------
 
-def _status(row):
-    """`status` 判定（**严格按序**）。见 brief §status 判定。
+def _row(level, region, year, subject, ptype, session):
+    """空白行累加器（内部键由 `JSONL_FIELDS` 投影剥掉）。"""
+    return {"level": level, "region": region, "year": year, "subject": subject,
+            "ptype": ptype, "session": session, "canon": ptype, "ptype_raw": "",
+            "srcs": set(), "mds": set(), "plain_titles": [], "verify_titles": []}
 
-    `verify_titles` / `plain_titles` 是**内部**字段（jsonl 投影时由 `JSONL_FIELDS` 滤掉），
-    用来判「该行是否**只**由选调/招警/…类标题产生」。
+
+def _status(row):
+    """`status` 判定（**严格按序**）。
+
+    1. 交付树有 md ⇒ `已有`；2. 只由非国省考类标题产生 ⇒ `待核实`（A3 后主账预期 0 行）；
+    3. `attested_by` 非空 ⇒ `源有未导入`；4. 否则 ⇒ `尚未找到`。
+
+    入参是**最终行 dict**（`attested_by` 已物化）—— A7：不再出现
+    `row["attested_by"] or row["srcs"]` 这种二者恒等的死代码。
     """
     if row["delivered_md"]:
         return "已有"
     if row["verify_titles"] and not row["plain_titles"]:
         return "待核实"
-    if row["attested_by"] or row["srcs"]:
+    if row["attested_by"]:
         return "源有未导入"
     return "尚未找到"
 
 
 def _short(seq, n=5):
     """note 里保留原串但**不无限长**：最多 `n` 条 + 「…等 N 条」。"""
-    uniq = sorted(set(seq))
+    uniq = sorted(set(x for x in seq if x))
     if len(uniq) <= n:
         return "、".join(uniq)
     return "、".join(uniq[:n]) + "…等 %d 条" % len(uniq)
 
 
-def merge_rows(evidences, since, delivered, years, grid=True):
-    """证据并集 + 规则骨架 → `(rows, bingjuan_rows)`。
+def _match_delivered(dela, e):
+    """源侧证据 → 同格 `canonical` 相同的**已交付行**（裁定口径：找不到才新建）。
 
-    * `delivered` = {(level, region, year, subject, ptype): 交付树相对路径}。
-    * 骨架只在 `grid=True` 时生成空格行（`ptype="统考"` 占位、`attested_by=[]`）。
-    * **同一 (level, region, year, subject, ptype) 只产一行**，来源并集写进 `attested_by`；
-      `session` 取各行证据的并集（通常 0/1 个）。
+    优先 `session` 相同；再优先 `ptype == canonical`（如 `统考` 证据只挂 `统考` 那一行，
+    不挂同格的 `急需紧缺岗位`）；仍并列则按 `ptype` 排序取首（确定性）。
     """
-    by = {}
-    bj = {}
+    cell = (e["level"], e["region"], e["year"], e["subject"])
+    cands = [r for r in dela.values()
+             if (r["level"], r["region"], r["year"], r["subject"]) == cell
+             and r["canon"] == e["ptype"]]
+    if not cands:
+        return None
+    same = [r for r in cands if r["session"] == e["session"]]
+    pool = same or cands
+    exact = [r for r in pool if r["ptype"] == e["ptype"]]
+    return sorted(exact or pool, key=lambda r: (r["ptype"], r["session"]))[0]
+
+
+def merge_rows(evidences, since, delivered, years, grid=True):
+    """证据并集 + 规则骨架 → `(rows, bingjuan_rows, non_gs_rows)`。
+
+    * **已交付行**：`delivered`（落盘存在的 `md_rel` 集合）里的 catalog 证据，
+      **以交付侧原始串落键**（`_strip_session`），一行一路径 ⇒ 与 manifest 一一对应。
+    * **其余证据**：先按 canonical 匹配已交付行（`_match_delivered`），找不到才新建行
+      （键 = canonical ptype + session）。
+    * 行键 = `(level, region, year, subject, ptype, session)`；`session` 与 ptype **脱钩**（A6）。
+    * 非国省考类证据（A3）**不进主账**，归入 `non_gs_rows`；其独占的格**不生成**骨架占位。
+    * 骨架只在 `grid=True` 时生成空格行（`ptype="统考"` 占位、`srcs` 为空）。
+    """
+    dela = {}
+    for e in evidences:                                   # ① 已交付行（原始串落键）
+        if since and e["year"] < since:
+            continue
+        if e.get("bingjuan") or e.get("verify"):
+            continue
+        md = e.get("md_rel")
+        if not md or md not in delivered:
+            continue
+        pt, sess = _strip_session(e.get("ptype_raw") or "")
+        k = (e["level"], e["region"], e["year"], e["subject"], pt, sess)
+        r = dela.get(k)
+        if r is None:
+            r = _row(e["level"], e["region"], e["year"], e["subject"], pt, sess)
+            r["canon"] = canon_ptype(e.get("ptype_raw") or "")[0]
+            r["ptype_raw"] = e.get("ptype_raw") or ""
+            dela[k] = r
+        r["mds"].add(md)                                  # 不变量：一行一路径
+        r["srcs"].add(e["src"])
+        r["plain_titles"].append(e.get("title") or "")
+
+    # A3 判定：哪些「键」是**整行只由非国省考类标题组成**（= 现状 41 行 `待核实` 的同型行）
+    # ⇒ 整行移出主账、单列 §七；其余提及选调/招警的标题**照常**归属主行（如
+    # `2018·公务员多省联考《申论》题（安徽A、普通选调卷）` 是安徽 A 卷的一体两面，不是另一场考试）。
+    grp = collections.defaultdict(list)
     for e in evidences:
         if since and e["year"] < since:
             continue
         if e["bingjuan"]:
-            b = bj.setdefault(e["year"], {"srcs": set(), "keys": []})
+            continue
+        k = (e["level"], e["region"], e["year"], e["subject"], e["ptype"], e["session"])
+        grp[k].append(e)
+    diverted = set()
+    for k, v in grp.items():
+        if not all(x.get("verify") for x in v):
+            continue
+        probe = {"level": k[0], "region": k[1], "year": k[2], "subject": k[3],
+                 "ptype": k[4], "session": k[5]}
+        if _match_delivered(dela, probe) is None:         # 交付树有 md ⇒ 该行仍是 `已有`
+            diverted.add(k)
+
+    src_rows = {}
+    non_gs = {}
+    vonly = set()
+    bj = {}
+    for e in evidences:                                   # ② 其余证据
+        if since and e["year"] < since:
+            continue
+        if e["bingjuan"]:
+            b = bj.setdefault(e["year"], {"srcs": set(), "keys": [], "md": ""})
             b["srcs"].add(e["src"])
+            if e.get("md_rel") and e["md_rel"] in delivered:
+                b["md"] = e["md_rel"]
             if e.get("keyname"):
                 b["keys"].append((e["keyname"], e.get("n") or 0))
             continue
-        k = (e["level"], e["region"], e["year"], e["subject"], e["ptype"])
-        r = by.setdefault(k, {"key": k, "srcs": set(), "sessions": set(),
-                              "verify_titles": [], "plain_titles": []})
+        k6 = (e["level"], e["region"], e["year"], e["subject"], e["ptype"],
+              e["session"])
+        if e.get("verify") and k6 in diverted:             # A3：整行移出主账
+            non_gs.setdefault(k6, {"titles": []})["titles"].append(e.get("title") or "")
+            vonly.add(k6[:4])
+            continue
+        md = e.get("md_rel")
+        if md and md in delivered:                        # 已由 ① 落行
+            continue
+        tgt = _match_delivered(dela, e)
+        if tgt is not None:
+            tgt["srcs"].add(e["src"])
+            tgt["plain_titles"].append(e.get("title") or "")
+            if e.get("verify"):
+                tgt["verify_titles"].append(e.get("title") or "")
+            continue
+        r = src_rows.get(k6)
+        if r is None:
+            r = _row(e["level"], e["region"], e["year"], e["subject"], e["ptype"],
+                     e["session"])
+            r["canon"] = e["ptype"]
+            src_rows[k6] = r
         r["srcs"].add(e["src"])
-        if e.get("session"):
-            r["sessions"].add(e["session"])
-        (r["verify_titles"] if e.get("verify") else r["plain_titles"]).append(e.get("title") or "")
+        r["plain_titles"].append(e.get("title") or "")
+        if e.get("verify"):
+            r["verify_titles"].append(e.get("title") or "")
 
+    # 非国省考**独占**的格不生成占位（A3：否则虚增 `尚未找到`）
     if grid:
-        # 骨架判据是**格级**：该 (level, region, year, subject) 只要有任何证据（任何卷型）就不空格。
-        # （早期版本拿 `(…, "统考")` 这个**具体键**去比，会把国考/浙江这类「有证据但不是统考卷型」
-        #  的格误判成空格 ⇒ 空格数虚高。此处按格去重后判。）
-        covered = {(k[0], k[1], k[2], k[3]) for k in by}
+        blocked = {(k[0], k[1], k[2], k[3]) for k in list(dela) + list(src_rows)}
+        blocked |= {c for c in vonly if c not in blocked}
         for region in GRID_REGIONS:
             level = LEVEL_GUOKAO if region == "国考" else LEVEL_SHENGKAO
             for year in years:
                 for subject in ("行测", "申论"):
-                    if (level, region, year, subject) in covered:
+                    if (level, region, year, subject) in blocked:
                         continue
-                    k = (level, region, year, subject, "统考")
-                    by.setdefault(k, {"key": k, "srcs": set(), "sessions": set(),
-                                      "verify_titles": [], "plain_titles": []})
+                    k = (level, region, year, subject, "统考", "")
+                    src_rows.setdefault(k, _row(level, region, year, subject,
+                                                "统考", ""))
 
-    bj_years = set(bj)
     rows = []
-    for k, r in by.items():
-        level, region, year, subject, ptype = k
-        delivered_md = delivered.get(k, "")
+    for r in list(dela.values()) + list(src_rows.values()):
         notes = []
-        if r["verify_titles"] and not r["plain_titles"]:
-            notes.append("非国省考类标题（选调/招警/公安院校联考/政法干警/基层）："
-                         "考试是否实际举行待核实")
-        if not r["srcs"] and not delivered_md:
-            if level == LEVEL_SHENGKAO and subject == "申论" and year in bj_years:
-                notes.append("该年源内可能位于并卷键中，待拆")
-        if region == "" and r["plain_titles"]:
+        if r["ptype"] not in CANON_PTYPES and r["ptype"] != BINGJUAN_PTYPE:
+            if r["mds"]:
+                notes.append("交付侧异形卷型原串 `%s`（规范词表只用于匹配；本行按交付侧原样"
+                             "保留，以保交付路径不丢）" % r["ptype"])
+            else:
+                notes.append("规范词表外的卷型原串 `%s`（该格已交付件与本串不同，分列以保路径）"
+                             % r["ptype"])
+        if r["region"] == "" and r["plain_titles"]:
             notes.append("地区未归位，原串：" + _short(r["plain_titles"]))
-        row = {"level": level, "region": region, "year": year, "subject": subject,
-               "session": "、".join(sorted(r["sessions"])), "ptype": ptype,
-               "attested_by": sorted(r["srcs"]), "delivered_md": delivered_md,
+        if r["verify_titles"]:
+            notes.append("含非国省考类标题（选调/招警/…）：与本行同格同卷型，"
+                         "**不是**另一场考试")
+        if (not r["srcs"] and not r["mds"] and r["level"] == LEVEL_SHENGKAO
+                and r["subject"] == "申论" and r["year"] in {str(y) for y in bj}):
+            notes.append("该年源内可能位于并卷键中，待拆")
+        if not r["mds"] and not r["srcs"]:
+            notes.append("无任何来源提到（≠ 考试未举行）")
+        row = {"level": r["level"], "region": r["region"], "year": r["year"],
+               "subject": r["subject"], "session": r["session"], "ptype": r["ptype"],
+               "attested_by": sorted(r["srcs"]),
+               "delivered_md": (sorted(r["mds"])[0] if r["mds"] else ""),
                "note": "；".join(notes),
-               # 内部字段（jsonl 投影时滤掉）
-               "srcs": sorted(r["srcs"]), "plain_titles": r["plain_titles"],
-               "verify_titles": r["verify_titles"],
-               "_verify": bool(r["verify_titles"] and not r["plain_titles"])}
+               "plain_titles": r["plain_titles"], "verify_titles": r["verify_titles"]}
         row["status"] = _status(row)
         rows.append(row)
 
-    rows.sort(key=lambda x: (x["level"], x["region"], x["year"], x["subject"], x["ptype"]))
+    rows.sort(key=lambda x: (x["level"], x["region"], x["year"], x["subject"],
+                             x["ptype"], x["session"]))
 
     bjrows = []
     for year in sorted(bj):
         b = bj[year]
-        keys = [k for k, _ in b["keys"]]
-        detail = "、".join("%s = %d 题并卷" % (k, n) for k, n in b["keys"])
         bjrows.append({
             "level": LEVEL_SHENGKAO, "region": "", "year": year, "subject": "申论",
-            "session": "", "ptype": "并卷", "status": "源有未导入",
-            "attested_by": sorted(b["srcs"]), "delivered_md": "",
-            "note": "linfukai186 %s；须拆分到真实省份" % detail if detail
-                    else "linfukai186 并卷键（%s）；须拆分到真实省份" % _short(keys),
-            "srcs": sorted(b["srcs"]), "plain_titles": [], "verify_titles": [],
-            "keys": sorted(b["keys"]), "_verify": False})
-    return rows, bjrows
+            "session": "", "ptype": BINGJUAN_PTYPE,
+            "attested_by": sorted(b["srcs"]), "delivered_md": b["md"],
+            "note": "源并卷产物；待按真实省份拆分为独立卷型",
+            "keys": sorted(b["keys"]), "plain_titles": [], "verify_titles": []})
+        bjrows[-1]["status"] = _status(bjrows[-1])
+    bjrows.sort(key=lambda x: x["year"])
+
+    ngs = []
+    for k, r in non_gs.items():
+        ngs.append({"level": k[0], "region": k[1], "year": k[2], "subject": k[3],
+                    "ptype": k[4], "session": k[5], "titles": sorted(set(r["titles"]))})
+    ngs.sort(key=lambda x: (x["year"], x["level"], x["region"], x["subject"], x["ptype"]))
+    return rows, bjrows, ngs
 
 
 def build(catalog_dir, uproots, repo_root, since):
-    """→ (md_text, jsonl_rows)。只读；不写任何文件。"""
+    """→ `(md_text, ptype_map_text, jsonl_rows, stats)`。只读；不写任何文件。"""
     since = str(since)
     years = [str(y) for y in range(int(since), 2027)]
     evidences = (ev_catalog(catalog_dir)
@@ -363,33 +559,63 @@ def build(catalog_dir, uproots, repo_root, since):
                  + ev_shangantong(uproots["shangantong_c2"])
                  + ev_linfukai186(uproots["linfukai186"])
                  + ev_slb(repo_root))
-    delivered = {}
+    delivered = set()
     for e in evidences:
-        if e.get("md_rel") and e["year"] >= since:
-            p = os.path.join(repo_root, e["md_rel"].replace("/", os.sep))
-            if os.path.exists(p):
-                delivered[(e["level"], e["region"], e["year"], e["subject"], e["ptype"])] = e["md_rel"]
-    rows, bjrows = merge_rows(evidences, since, delivered, years)
+        md = e.get("md_rel")
+        if not md or e["year"] < since:
+            continue
+        if os.path.exists(os.path.join(repo_root, md.replace("/", os.sep))):
+            delivered.add(md)
+    rows, bjrows, ngs = merge_rows(evidences, since, delivered, years)
     all_rows = rows + bjrows
-    return render_md(rows, bjrows, since, len(evidences)), all_rows
+    stats = {"delivered": delivered, "n_ev": len(evidences),
+             "n_delivered_paths": len(delivered)}
+    return (render_md(all_rows, bjrows, ngs, since, len(evidences)),
+            render_ptype_map(evidences, since), all_rows, stats)
 
 
 # ---- 人读账 ------------------------------------------------------------------
 
-def render_md(rows, bjrows, since, n_ev):
-    n = len(rows) + len(bjrows)
-    cnt = collections.Counter(r["status"] for r in rows + bjrows)
-    years = sorted({r["year"] for r in rows}, reverse=True)
-    subj_rows = [r for r in rows if r["subject"] == "行测"]
-    subj_sl = [r for r in rows if r["subject"] == "申论"]
-    empty = [r for r in rows if r["status"] == "尚未找到"]
+def _blank_section(L, all_rows):
+    """§六 `region=""` 行（A4）：并卷行 + 无省名行，分列。"""
+    blank = [r for r in all_rows if r["region"] == ""]
+    bj_only = [r for r in blank if r["ptype"] == BINGJUAN_PTYPE]
+    rest = [r for r in blank if r["ptype"] != BINGJUAN_PTYPE]
+    L += ["## 六、`region=\"\"` 行（**允许非零**，不计入覆盖率）", "",
+          "> 白名单只补了 `深圳`/`广州`（A4）；补完后 `region=\"\"` **允许非零**，但须逐条可解释。"
+          "本账共 **%d** 行 = ① 并卷行 **%d** + ② 无省名行 **%d**。" % (
+              len(blank), len(bj_only), len(rest)),
+          "", "### ① 并卷行（`ptype=\"并卷\"`，恰 %d 行）" % len(bj_only), ""]
+    for r in bj_only:
+        L.append("- `%s` 年：`%s`（源并卷键，待拆）" % (r["year"], r["delivered_md"]))
+    L += ["", "### ② 无省名行（源标题里没有可归位的地区名，**不瞎填**）", ""]
+    if not rest:
+        L.append("- （无）")
+    for r in sorted(rest, key=lambda x: (x["year"], x["level"], x["subject"], x["ptype"])):
+        L.append("- `%s / %s / %s / %s / %s` %s ← 原串：%s（来源 %s）" % (
+            r["level"], r["year"], r["subject"], r["ptype"], r["session"] or "—",
+            r["status"], _short(r["plain_titles"], 3),
+            ", ".join(r["attested_by"]) or "—"))
+    L.append("")
+    return L
+
+
+def render_md(all_rows, bjrows, ngs, since, n_ev):
+    """`all_rows` = **最终写盘的整行集**（含并卷行）。所有计数只从这里导出（A5）。"""
+    n = len(all_rows)
+    cnt = collections.Counter(r["status"] for r in all_rows)
+    years = sorted({r["year"] for r in all_rows}, reverse=True)
+    xc = sum(1 for r in all_rows if r["subject"] == "行测")
+    sl = sum(1 for r in all_rows if r["subject"] == "申论")
+    empty = [r for r in all_rows if r["status"] == "尚未找到"]
     empty_x = sum(1 for r in empty if r["subject"] == "行测")
     empty_s = sum(1 for r in empty if r["subject"] == "申论")
 
     L = []
     L += ["# 应有试卷清单（全量·机器算·人可审计）", "",
-          "> 机器生成（`tools/gwyzhenti/expect.py`）。范围：`year >= %s`、`国考 + 31 省级地区`、"
-          "行测/申论。**只读**：本账不导入任何内容、不改交付树、不做跨卷去重。" % since, ""]
+          "> 机器生成（`tools/gwyzhenti/expect.py`）。范围：`year >= %s`、`国考 + 31 省级地区"
+          "（+ 深圳/广州）`、行测/申论。**只读**：本账不导入任何内容、不改交付树、"
+          "不做跨卷去重。" % since, ""]
 
     # ---- 一、口径声明 ----
     L += ["## 一、口径声明", "",
@@ -400,15 +626,23 @@ def render_md(rows, bjrows, since, n_ev):
           "2. **`尚未找到` 只表示「本机所有来源都没提到」**这一件事，"
           "**绝不表示该考试没有举行**。判定某考试未举行需要**独立证据**，本账没有那种证据。",
           "3. **`多省联考` 是源并卷键、不是地区**：本账**不产出** `region=\"多省联考\"` 的行；"
-          "并卷键单列 `ptype=\"并卷\"`（§五）。",
-          "4. **证据并集，不由记忆断言**：每一行的 `attested_by` 都真的枚举自下列来源的 TOC，"
-          "未提到的地区/年份**不写死**。来源名 ∈ `{catalog, xingcezhenti, shangantong, "
-          "linfukai186, SLB}`，其中 `catalog` = 交付树（`work/catalog/catalog.jsonl` + "
-          "`export.repo_paths` 判盘上是否存在 md）。",
-          "5. 一行 = 一个 `(level, region, year, subject, ptype)`；同一格内 distinct `ptype` 各占"
-          "一行 ⇒ **行数是卷型级的、多于格级**。空格行的 `ptype` 是占位 `统考`（无证据，"
-          "不声称卷型）。",
-          "6. 本账**不做跨卷去重**：同名不同来源各记一条证据，合并只按上述键。", ""]
+          "并卷键单列 `ptype=\"并卷\"`（§五），其落盘件计入 `delivered_md` 以保账闭合。",
+          "4. **证据并集，不由记忆断言**：每一行的 `attested_by` 都真枚举自下列来源的 TOC。"
+          "来源名 ∈ `{catalog, xingcezhenti, shangantong, linfukai186, SLB}`，其中 `catalog` = "
+          "交付树（`work/catalog/catalog.jsonl` + `export.repo_paths` 判盘上 md 是否存在）。",
+          "5. **卷型归一（修轮 1 / A1，控制器裁定 R-COV-16）**：`canon_ptype` **只在匹配层**用 —— "
+          "**已交付行按交付侧原始串落键**（一行一路径，与 manifest 一一对应），源侧证据按 "
+          "canonical 匹配到已交付行。⇒ 交付侧 `A类` 与源侧 `A卷` 归一为**同一行**（幻影缺口消失），"
+          "而交付侧两个**不同**交付件（如黑龙江 2019 申论 `统考` 与 `急需紧缺岗位`）"
+          "**各占一行、两个路径都在**。映射与压平组见 `work/PTYPE-MAP.md`。"
+          "**归一化只发生在比较层，交付树文件名一字未动。**",
+          "6. **账闭合（A2）**：`{delivered_md}` == `work/manifest.jsonl` 的全部 path"
+          "（**双向差集为空**）。",
+          "7. **非国省考移出主账（A3）**：选调/招警/公安院校联考/政法干警/基层项目类"
+          "**不计入四数**，单列 §七；其独占的格**不生成** `尚未找到` 占位。",
+          "8. 一行 = 一个 `(level, region, year, subject, ptype, session)`；同格 distinct 卷型各占"
+          "一行 ⇒ **行数是卷型级的、多于格级**。`session` 与 `ptype` **脱钩**（A6）："
+          "`ptype` 永不含「上半年/下半年」。", ""]
 
     # ---- 二、总量四数 ----
     L += ["## 二、总量（四数 + 待核实单列）", "",
@@ -417,79 +651,218 @@ def render_md(rows, bjrows, since, n_ev):
           "| 其中 `已有`（交付树有 md） | %d |" % cnt["已有"],
           "| 其中 `源有未导入` | %d |" % cnt["源有未导入"],
           "| 其中 `尚未找到` | %d |" % cnt["尚未找到"],
-          "| 其中 `待核实`（非国省考类，单列） | %d |" % cnt["待核实"],
+          "| 其中 `待核实`（单列，预期 0） | %d |" % cnt["待核实"],
           "",
-          "> `尚未找到` **≠** 考试未举行（见 §一.2）。其中**行测 %d 行 / 申论 %d 行**。"
+          "> **四数之和 = `已有 %d` + `源有未导入 %d` + `尚未找到 %d` + `待核实 %d` = %d**"
+          " == `EXPECTED.jsonl` 行数 **%d**。" % (
+              cnt["已有"], cnt["源有未导入"], cnt["尚未找到"], cnt["待核实"], n, n),
+          "> `尚未找到` **≠** 考试未举行（§一.2）：**行测 %d 行 / 申论 %d 行**。"
           % (empty_x, empty_s),
-          "> 范围：`year >= %s`，共 %d 个年份（%s–%s）；"
-          "`行测 %d 行 / 申论 %d 行`。" % (since, len(years), years[-1], years[0],
-                                          len(subj_rows), len(subj_sl)),
-          "> 并卷键另计 **%d 行**（`ptype=\"并卷\"`，已含在总数内）。" % len(bjrows),
+          "> 范围：`year >= %s`，共 %d 个年份（%s–%s）；`行测 %d 行 / 申论 %d 行`。"
+          % (since, len(years), years[-1], years[0], xc, sl),
+          "> 并卷键 **%d 行**（`ptype=\"并卷\"`，已含在本表与总数内）。" % len(bjrows),
           "> 证据条数（未合并前）共 **%d** 条。" % n_ev, ""]
 
     # ---- 三、交叉表 ----
     L += ["## 三、按 `status` × 科目（交叉表）", "",
+          "> 本表由**最终写盘行集**导出，故各行列和 == §二 的 `行测 %d + 申论 %d = %d`（A5）。"
+          % (xc, sl, n), "",
           "| status | 行测 | 申论 | 合计 |", "|---|---:|---:|---:|"]
     for st in ("已有", "源有未导入", "尚未找到", "待核实"):
-        a = sum(1 for r in rows if r["status"] == st and r["subject"] == "行测")
-        b = sum(1 for r in rows if r["status"] == st and r["subject"] == "申论")
+        a = sum(1 for r in all_rows if r["status"] == st and r["subject"] == "行测")
+        b = sum(1 for r in all_rows if r["status"] == st and r["subject"] == "申论")
         L.append("| %s | %d | %d | %d |" % (st, a, b, a + b))
-    a = sum(1 for r in bjrows if r["subject"] == "行测")
-    b = sum(1 for r in bjrows if r["subject"] == "申论")
-    L.append("| 并卷键（`ptype=\"并卷\"`，单列） | %d | %d | %d |" % (a, b, a + b))
-    L += ["| **合计** | **%d** | **%d** | **%d** |"
-          % (len(subj_rows) + a, len(subj_sl) + b, n),
+    L += ["| **合计** | **%d** | **%d** | **%d** |" % (xc, sl, n),
           "",
-          "> 并卷键单列一行：其 %d 行已计入 §二的 `源有未导入`，故 §二 `475 = 本表 464 + 并卷 %d`。"
-          % (len(bjrows), len(bjrows)), ""]
+          "> 并卷行 %d 行（申论侧）已计入上表的 `已有` 列，**不再另列**（§二 与 §三 同源）。"
+          % len(bjrows), ""]
 
     # ---- 四、缺卷清单 ----
-    miss = [r for r in rows if r["status"] != "已有"]
-    miss.sort(key=lambda r: (r["year"], r["level"], r["region"], r["subject"], r["ptype"]),
-              reverse=True)
-    L += ["## 四、缺卷清单（**非 `已有`**，按年份倒序、地区名排序）", "",
+    miss = [r for r in all_rows if r["status"] != "已有"]
+    miss.sort(key=lambda r: (r["year"], r["level"], r["region"], r["subject"],
+                             r["ptype"], r["session"]), reverse=True)
+    L += ["## 四、缺卷清单（**非 `已有`**，按年份倒序）", "",
           "> 共 **%d** 行（`源有未导入` %d + `尚未找到` %d + `待核实` %d）。"
-          "逐年给：地区 / 年 / 科 / 卷型 / status / 来源。空格行 `ptype=统考` 为占位。"
-          % (len(miss), cnt["源有未导入"] - len(bjrows), cnt["尚未找到"], cnt["待核实"]), ""]
+          % (len(miss), cnt["源有未导入"], cnt["尚未找到"], cnt["待核实"]), ""]
     for year in sorted({r["year"] for r in miss}, reverse=True):
         grp = [r for r in miss if r["year"] == year]
-        L += ["### %s 年（缺 %d 行）" % (year, len(grp)), "",
-              "| level | region | subject | ptype | status | attested_by | note |",
-              "|---|---|---|---|---|---|---|"]
-        for r in sorted(grp, key=lambda x: (x["level"], x["region"], x["subject"], x["ptype"])):
-            L.append("| %s | %s | %s | %s | %s | %s | %s |" % (
-                r["level"], r["region"] or "（未归位）", r["subject"], r["ptype"], r["status"],
-                ", ".join(r["attested_by"]) or "—", (r["note"] or "").replace("|", "\\|")))
+        L += ["### %s 年（缺 %d 行；行测 %d / 申论 %d）" % (
+                  year, len(grp),
+                  sum(1 for r in grp if r["subject"] == "行测"),
+                  sum(1 for r in grp if r["subject"] == "申论")), "",
+              "| level | region | subject | ptype | session | status | attested_by | note |",
+              "|---|---|---|---|---|---|---|---|"]
+        for r in sorted(grp, key=lambda x: (x["level"], x["region"], x["subject"],
+                                            x["ptype"], x["session"])):
+            L.append("| %s | %s | %s | %s | %s | %s | %s | %s |" % (
+                r["level"], r["region"] or "（未归位）", r["subject"], r["ptype"],
+                r["session"] or "—", r["status"],
+                ", ".join(r["attested_by"]) or "—",
+                (r["note"] or "").replace("|", "\\|")))
         L.append("")
 
     # ---- 五、并卷键清单 ----
     L += ["## 五、并卷键清单（`ptype=\"并卷\"`，**不是**一个地区）", "",
           "> `linfukai186` 的 `shengkao-shenlun` 把多个省塞进**一个**键 ⇒ 该键**不是**地区。"
-          "本账据此单列，**不产出** `region=\"多省联考\"` 的行；对应各省的格照常判 `尚未找到`"
+          "本账据此单列，**不产出** `region=\"多省联考\"` 的行；对应各省的格照常判"
           "（`note` 注明「该年源内可能位于并卷键中，待拆」）。", "",
-          "| year | 键名 | 题数 | source |", "|---|---|---:|---|"]
+          "| year | 键名 | 题数 | status | delivered_md | source |",
+          "|---|---|---:|---|---|---|"]
     for r in bjrows:
-        for name, cnt in r.get("keys", []):
-            L.append("| %s | `%s` | %d | %s |" % (r["year"], name, cnt,
-                                                  ", ".join(r["attested_by"])))
-    L += ["",
-          "> 交付树里那一坨并卷落盘（`省考/多省联考/<年>/申论-统考.md`，%d 个年份）"
-          "**不**被本账计为「单省已有卷」；它是**待拆分**的合并件。" % len(bjrows),
-          "> 2020 年有两批（`0725` / `0822`），按行键合并为 1 行、键名同时在 `note` 里列出。", ""]
+        for name, cnt_i in r.get("keys", []):
+            L.append("| %s | `%s` | %d | %s | `%s` | %s |" % (
+                r["year"], name, cnt_i, r["status"], r["delivered_md"],
+                ", ".join(r["attested_by"])))
+    if bjrows:
+        _byrs = sorted({r["year"] for r in bjrows})
+        _span = _byrs[0] if len(_byrs) == 1 else "%s–%s" % (_byrs[0], _byrs[-1])
+        _multi = sum(1 for r in bjrows if len(r.get("keys", [])) > 1)
+        L += ["",
+              "> 并卷行 **%d** 行（%s；同一年源内若有多批键则合为**一行**、"
+              "键名与题数俱列 —— 本期多批键的年份计 %d 个）。" % (
+                  len(bjrows), _span, _multi),
+              "> 交付树里这一坨并卷落盘**已计入** `delivered_md`（账闭合到 manifest），"
+              "但**不**被计为「单省已有卷」；它是**待拆分**的合并件。", ""]
+    else:
+        L += ["",
+              "> 并卷行 **0** 行（本账的行集里没有 `ptype=\"并卷\"` 的落键）。", ""]
 
-    # ---- 六、诚实边界 ----
-    L += ["## 六、诚实边界（未做的事）", "",
+    # ---- 六、region="" ----
+    L = _blank_section(L, all_rows)
+
+    # ---- 七、非国省考 ----
+    L += ["## 七、非国省考（选调/招警/公安院校联考/政法干警/基层，**不计入应有**）", "",
+          "> 口径（A3）：**整行只由非国省考类标题组成**的行 ⇒ 移出主账、**不计入四数**、"
+          "也不生成格级占位，在此单列。共 **%d** 条（按 `(level, region, year, subject, "
+          "ptype, session)` 聚合）。" % len(ngs),
+          "> 只**提及**选调/招警而实为国省考卷的标题（如 "
+          "`2018·公务员多省联考《申论》题（安徽A、普通选调卷）`）**留在主账**："
+          "它是安徽 A 卷的一体两面，不是另一场考试；这类行在 §四 的 `note` 里标明。", "",
+          "| level | region | year | subject | ptype | session | 原始 title |",
+          "|---|---|---|---|---|---|---|"]
+    for r in ngs:
+        L.append("| %s | %s | %s | %s | %s | %s | %s |" % (
+            r["level"], r["region"] or "（未归位）", r["year"], r["subject"], r["ptype"],
+            r["session"] or "—", _short(r["titles"], 3).replace("|", "\\|")))
+    L += ["",
+          "> `status=\"待核实\"` **保留为合法取值**，但按 A3 主行集内预期为 **0** 行 —— "
+          "这类考试**不进「应有」**，故不产生缺口。", ""]
+
+    # ---- 八、诚实边界 ----
+    L += ["## 八、诚实边界（未做的事）", "",
           "- 本账只证明「**有来源提到**」这样一份卷，**不证明**该卷真实存在、"
           "更**不证明**来源内容完整或与原卷一致。",
           "- `attested_by` 仅 **1** 个来源的行**可信度低**（可能是源自己的转写/回忆版）；"
           "本账**未做任何内容核对**，未打开任何 md/PDF，未比对原卷。",
-          "- **未做跨卷去重**：同名卷在不同来源各记一条证据；键相同即并成一行，"
-          "否则各行其是。",
-          "- **未导入任何内容**、未改正文/答案、未碰 PDF、未动交付树与 `work/mirror/`。",
-          "- `region=\"\"` 的行是**地区未归位**的（如深圳/广州/「全国」等，不在 31 省白名单内）："
-          "其原串保留在 `note`，**未瞎填**；这类行**不计入**用户口径的地区覆盖率。",
+          "- **源标题若未指明卷型**（归一后落 `统考`）而同格已交付的是**别的**卷型，"
+          "本账**不会**猜着并进去，而是新建一行 `源有未导入` 并在 `note` 记原串 —— "
+          "宁可多一行可疑、也不并错一份卷。",
+          "- **未做跨卷去重**：同名卷在不同来源各记一条证据；归一后行键相同即并成一行。",
+          "- **未导入任何内容**、未改正文/答案、未碰 PDF、未动交付树与 `work/mirror/`；"
+          "**交付树文件名一字未改**（归一化只在比较层）。",
+          "- **归一有损**：`canon_ptype` 会把别名压平（如 `乡镇卷/乡镇/定向乡镇 → 乡镇`）。"
+          "压平组逐条列在 `work/PTYPE-MAP.md`。该表**只用于匹配**：已交付行的 `ptype` 仍"
+          "保留交付侧原始串（故账里会同时出现 `乡镇卷`（已交付行）与 `乡镇`（源侧行））。",
+          "- `region=\"\"` 的行**不计入**覆盖率（§六）。",
           "- 空格行 `ptype=\"统考\"` 是**占位**：本账不声称该年该科只有一卷或只有一种卷型。",
           "- **`尚未找到` 不等于考试未举行**；要判「未举行」需独立证据，本账没有。", ""]
+    return "\n".join(L)
+
+
+def render_ptype_map(evidences, since):
+    """`work/PTYPE-MAP.md`：**本轮评审的主要审计面**（A1/V7）。
+
+    交付侧**全部**原始值 → `(canonical, session)` + 条数；源侧观察到的别名；未匹配原串；
+    归一后剩余的不同 canonical 值；**被压平的组**；以及裁定带来的「原始串落键」说明。
+    """
+    deliv = collections.Counter()
+    src = collections.Counter()
+    unmapped_src = collections.Counter()
+    for e in evidences:
+        if since and e["year"] < since:
+            continue
+        if e.get("bingjuan"):
+            continue
+        raw = e.get("ptype_raw") or ""
+        if e["src"] == "catalog":
+            if raw:
+                deliv[raw] += 1
+        elif raw:
+            src[raw] += 1
+        else:
+            unmapped_src[e.get("title") or ""] += 1
+
+    L = ["# 卷型归一映射表（`canon_ptype`）—— 修轮 1 / A1 的审计面", "",
+         "> 机器生成（`tools/gwyzhenti/expect.py`）。范围 `year >= %s`。" % since,
+         "> **归一化只发生在比较层**：交付树文件名一字未动。按控制器裁定 R-COV-16，"
+         "**已交付行以交付侧原始串落键**（保交付路径），本表给出的 canonical 值"
+         "**只用于把源侧证据匹配到已交付行**。", "",
+         "## 1. 规范词表（canonical `ptype`）", "",
+         "共 **%d** 个允许值。**计数差异如实记录**：简令正文写「共 **27** 个允许值」，"
+         "但其后列举了 **28** 项，且其别名表另需 `县级`（`县级卷 / 县级 -> 县级`）。"
+         "按控制器裁定 R-COV-16-1 补入 `县级` ⇒ **自洽词表 = 28 列举项 + `县级`**（下例）。"
+         % len(CANON_PTYPES), "",
+         "```", " ".join(CANON_PTYPES), "```", "",
+         "`session ∈ {\"\", \"上半年\", \"下半年\"}`，**独立字段**，规范 ptype 里永不含它。", "",
+         "## 2. 交付侧：%d 个原始值 → `(canonical, session)`" % len(deliv), "",
+         "> **V7 要求覆盖交付侧全部原始值**（简令写「50」，实测 **%d** 个）。"
+         "已交付行的 `ptype` **保留左列原始串**；右列 canonical 只用于匹配源侧证据。"
+         % len(deliv), "",
+         "| 原始串 | 条数 | canonical（匹配用） | session | 是否需归一 |",
+         "|---|---:|---|---|---|"]
+    for raw, k in sorted(deliv.items(), key=lambda x: (-x[1], x[0])):
+        canon, sess = canon_ptype(raw)
+        need = "否" if (canon == raw and not sess) else "**是**"
+        L.append("| `%s` | %d | `%s` | %s | %s |" % (
+            raw, k, canon, sess or "—", need))
+    uniq_canon = sorted({canon_ptype(r)[0] for r in deliv},
+                        key=lambda c: _IDX.get(c, 99))
+    L += ["",
+          "> 交付侧原始值 **%d** 个；**归一后剩余的不同 canonical 值：%d 个** —— %s。"
+          % (len(deliv), len(uniq_canon),
+             "、".join("`%s`" % c for c in uniq_canon)), "",
+          "> **未匹配任何别名**的交付侧原始串（落 canonical `统考`）：%s。"
+          % ("、".join("`%s`×%d" % (r, k) for r, k in
+                       sorted(((r, k) for r, k in deliv.items()
+                               if r not in ALIAS_TO_CANON),
+                              key=lambda x: (-x[1], x[0]))) or "（无）"), ""]
+
+    L += ["## 3. 源侧：观察到的卷型词（匹配到的别名）", "",
+          "| 别名 | 条数 | canonical |", "|---|---:|---|"]
+    for raw, k in sorted(src.items(), key=lambda x: (-x[1], x[0])):
+        L.append("| `%s` | %d | `%s` |" % (raw, k, ALIAS_TO_CANON[raw]))
+    L += ["",
+          "> 源侧标题里**未匹配**任何别名的证据 **%d** 条 ⇒ canonical `统考`"
+          "（即「源标题未指明卷型」）；这类证据**只**匹配同格 canonical 也是 `统考` 的已交付行，"
+          "否则新建行（`note` 记原串）。示例（前 10 条）：" % sum(unmapped_src.values()), ""]
+    for t, k in sorted(unmapped_src.items(), key=lambda x: (-x[1], x[0]))[:10]:
+        L.append("- （%d 条）`%s`" % (k, t))
+    L.append("")
+
+    L += ["## 4. 被归一压平的组（同一 canonical 下的多个交付侧原始串）", "",
+          "| canonical | 交付侧原始串（含条数） | 合计条数 |", "|---|---|---:|"]
+    groups = collections.defaultdict(list)
+    for raw, k in deliv.items():
+        groups[canon_ptype(raw)[0]].append((raw, k))
+    flat = 0
+    for canon in sorted(groups, key=lambda c: (-sum(k for _, k in groups[c]), c)):
+        members = sorted(groups[canon], key=lambda x: (-x[1], x[0]))
+        if len(members) < 2:
+            continue
+        flat += 1
+        L.append("| `%s` | %s | %d |" % (
+            canon, "、".join("`%s`×%d" % (r, k) for r, k in members),
+            sum(k for _, k in members)))
+    L += ["",
+          "> 只列**多于一个原始串**的组（共 **%d** 组）；单值组见 §2。压平是**有损**的，"
+          "但正是它消灭了「交付侧 `A类` vs 源侧 `A卷`」这类**幻影缺口**；"
+          "而它**不会**并掉两个已交付件 —— 已交付行按原始串落键"
+          "（如 `统考` 组含 `急需紧缺岗位`，但黑龙江 2019 申论两个交付件**仍各占一行**）。"
+          % flat, "",
+          "## 5. 本表的边界", "",
+          "- 本表**不**声称任何原始串与 canonical 的映射是「考纲事实」，它只是**比较层**的"
+          "去重口径；映射由简令别名表逐字照用（最长优先 + 同长按规范词序）。",
+          "- 未匹配的原始串**不猜**：一律落 `统考` 并在账内保留原串。", ""]
     return "\n".join(L)
 
 
@@ -506,9 +879,10 @@ def main(argv=None):
                "shangantong_c1": os.path.join(a.upstream, "shangantong-papers-v2-c1"),
                "shangantong_c2": os.path.join(a.upstream, "shangantong-papers-v2-c2"),
                "linfukai186": os.path.join(a.upstream, "gongkao-tiku")}
-    md_txt, rows = build(a.catalog, uproots, a.repo, a.since)
+    md_txt, map_txt, rows, _stats = build(a.catalog, uproots, a.repo, a.since)
     out_md = os.path.join(a.repo, "work", "EXPECTED.md")
     out_jsonl = os.path.join(a.repo, "work", "EXPECTED.jsonl")
+    out_map = os.path.join(a.repo, "work", "PTYPE-MAP.md")
     os.makedirs(os.path.dirname(out_md), exist_ok=True)
     with io.open(out_md, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(md_txt)
@@ -516,8 +890,11 @@ def main(argv=None):
         json.dumps({k: r[k] for k in JSONL_FIELDS}, ensure_ascii=False) + "\n" for r in rows)
     with io.open(out_jsonl, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(lines)
+    with io.open(out_map, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write(map_txt)
     print("→", out_md, len(md_txt.encode("utf-8")), "字节")
     print("→", out_jsonl, len(lines.encode("utf-8")), "字节")
+    print("→", out_map, len(map_txt.encode("utf-8")), "字节")
     return 0
 
 
