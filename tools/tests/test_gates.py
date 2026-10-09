@@ -467,8 +467,9 @@ class TestCliGateForwardsSince(unittest.TestCase):
 
     评审实测：删掉 `cmd_gate` 里的 `since=(args.since or None)` ⇒ 原有 174 条仍全绿
     ⇒ 这条接线此前**没有网**。此处用 `mock.patch.object(gates, "run_all")` 截住调用，
-    直接断言 `since` 真的传到了：`--since 2016` ⇒ `"2016"`；不传 `--since` ⇒ `None`
-    （**不得**把空串 `""` 透传下去，否则 `run_all` 里的 `if since` 判真会误筛）。
+    直接断言 `since` 真的传到了：`--since 2016` ⇒ `"2016"`；不传 `--since` ⇒ **默认值来自
+    `export.SCOPE_SINCE`**（= `"2016"`，本项目交付下限，**不再**折成 `None`）；
+    显式 `--since ""` ⇒ `None`（不过滤的逃生门，原意保留）。
     """
 
     class _Rep:
@@ -485,8 +486,11 @@ class TestCliGateForwardsSince(unittest.TestCase):
         return m
 
     def test_cli_gate_forwards_since(self):
-        m = self._call("--since", "2016")
+        m = self._call("--since", "2016")   # 显式传值照旧
         self.assertEqual(m.call_args.kwargs.get("since"), "2016")
-        m = self._call()          # 不传 --since ⇒ 空串须被折成 None
+        m = self._call()                    # **新默认 = 交付下限**（回归网）
+        self.assertEqual(m.call_args.kwargs.get("since"), "2016",
+                         "`--since` 缺省时必须落到交付下限 2016，否则裸 gate 会误红 G6")
+        m = self._call("--since", "")       # 显式空串 = 不过滤（原意保留）
         self.assertIsNone(m.call_args.kwargs.get("since"),
-                          "`--since` 缺省时不得把空串透传给 run_all")
+                          "显式 `--since \"\"` 须被折成 None（不过滤）")

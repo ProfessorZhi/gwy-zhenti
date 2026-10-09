@@ -210,6 +210,9 @@ def _g5(md_path, row, upstream_xingce, repo_root):
     parts, _ = export._parts_for(row, upstream_xingce)
     if not parts:
         return False, "源文件缺失"
+    # 行测侧用**默认**通用换行读法，与 `_parts_for`（也走 I/O 翻译）**对称**，故当前正确。
+    # 仅当行测 md 里没有 `\r` 时成立 —— 实测 427/427 份行测 md 的 `\r` 数为 0。
+    # 将来行测源出现 CR，这里会像 `_g5_shenlun` 在 R-M3-11 里那样误红，届时应改用 `newline=""`。
     with io.open(md_path, encoding="utf-8") as fh:
         out_text = fh.read()
     removed, added = render.diff_report(out_text, parts)

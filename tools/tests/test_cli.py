@@ -17,10 +17,11 @@ import sys
 import tempfile
 import unittest
 from contextlib import redirect_stdout
+from unittest import mock
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from gwyzhenti import cli  # noqa: E402
+from gwyzhenti import cli, export  # noqa: E402
 
 FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures")
 
@@ -205,6 +206,40 @@ class TestGateSubcommand(_CliCase):
         self.assertEqual(code1, 0, out1)
         self.assertIn("本次对账 1", out1)                              # 1 ⇒ 截断
         self.assertIn("limit 生效", out1)
+
+
+class TestCliExportSinceDefault(_CliCase):
+    """R-M3-18 回归：**裸** `export`（不传 `--since`）的 `since` 必须落到交付下限 2016。
+
+    与 `TestCliGateForwardsSince`（`gate` 侧）同款：`--since` 缺省若为空串 ⇒ `cmd_export`
+    的 `or None` ⇒ 不过滤 ⇒ catalog 可导出 1003 vs 落盘 895 ⇒ 误报「未落盘」。这条钉死缺省 =
+    `export.SCOPE_SINCE`；`--since ""` 仍折成 `None`（不过滤的逃生门）。
+    """
+
+    class _Rep:
+        papers = 0
+        files = 0
+        images = 0
+        skipped = []
+        collided = []
+
+    def _call(self, *extra):
+        s = io.StringIO()
+        with mock.patch.object(export, "run", return_value=self._Rep()) as m:
+            with redirect_stdout(s):
+                code = cli.main(["export", "--catalog", "cat", "--upstream", "up",
+                                 "--repo", "repo"] + list(extra))
+        self.assertEqual(code, 0, s.getvalue())
+        return m
+
+    def test_cli_export_since_defaults_to_the_scope_floor(self):
+        m = self._call()                    # 不传 --since ⇒ 交付下限
+        self.assertEqual(m.call_args.kwargs.get("since"), "2016",
+                         "裸 export 的 since 必须是交付下限 2016，否则会误报未落盘")
+        m = self._call("--since", "2016")   # 显式传值照旧
+        self.assertEqual(m.call_args.kwargs.get("since"), "2016")
+        m = self._call("--since", "")       # 显式空串 = 不过滤（原意保留）
+        self.assertIsNone(m.call_args.kwargs.get("since"))
 
 
 if __name__ == "__main__":

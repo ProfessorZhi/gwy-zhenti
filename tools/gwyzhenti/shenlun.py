@@ -15,7 +15,6 @@ import os
 import re
 
 from . import render
-from .model import PaperKey
 
 CATS = ("shengkao-shenlun", "guokao-shenlun")
 NUMBERING = "源无卷内题号，按源序编号"

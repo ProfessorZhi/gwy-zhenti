@@ -47,6 +47,7 @@ def cmd_gate(args):
 
 
 def main(argv=None):
+    from .export import SCOPE_SINCE
     ap = argparse.ArgumentParser(prog="gwyzhenti")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
@@ -60,7 +61,8 @@ def main(argv=None):
     e.add_argument("--upstream", required=True)
     e.add_argument("--repo", required=True)
     e.add_argument("--limit", type=int, default=0)
-    e.add_argument("--since", default="", help="只导出该年及以后（如 2016）；空 = 不过滤")
+    e.add_argument("--since", default=SCOPE_SINCE,
+                   help="只导出该年及以后；默认 2016（本项目交付下限）；`--since 0` 或 `--since \"\"` = 不过滤")
     e.set_defaults(func=cmd_export)
 
     g = sub.add_parser("gate", help="跑 G1–G6")
@@ -68,7 +70,8 @@ def main(argv=None):
     g.add_argument("--upstream", required=True)
     g.add_argument("--repo", required=True)
     g.add_argument("--limit", type=int, default=0)
-    g.add_argument("--since", default="", help="只对账该年及以后（如 2016）；空 = 不过滤")
+    g.add_argument("--since", default=SCOPE_SINCE,
+                   help="只对账该年及以后；默认 2016（本项目交付下限）；`--since 0` 或 `--since \"\"` = 不过滤")
     g.set_defaults(func=cmd_gate)
 
     args = ap.parse_args(argv)

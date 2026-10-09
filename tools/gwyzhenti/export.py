@@ -146,6 +146,13 @@ def exportable_map(rows, uproots):
     return out
 
 
+# 本项目交付下限（spec §19 与计划 Global Constraints：「2016 年及以后为本次导出范围」）。
+# 作为 CLI `--since` 的**默认值** —— 裸调用的范围必须与交付树的实际范围一致，否则闸门会误红。
+# 实测（2026-10-09）：M3 加入申论行后 catalog 可导出 1003 卷 vs 落盘 895 卷 ⇒ 裸 `gate`
+# 报 G6 FAIL(exit 1)，而缺的卷**全是 <2016、按设计不在范围**；M3 之前裸 gate 是绿的 ⇒ 这是回归。
+SCOPE_SINCE = "2016"
+
+
 def run(catalog_dir, uproots, repo_root, limit=None, since=None):
     rep = ExportReport()
     manifest = os.path.join(repo_root, "work", "manifest.jsonl")

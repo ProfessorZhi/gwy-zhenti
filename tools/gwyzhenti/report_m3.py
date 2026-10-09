@@ -115,6 +115,7 @@ def main(argv=None):
                "linfukai186": os.path.join(a.upstream, "gongkao-tiku")}
     txt = build(a.catalog, uproots, a.repo, a.since)
     out = os.path.join(a.repo, "work", "M3-REPORT.md")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
     with io.open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(txt)
     print("→", out, len(txt.encode("utf-8")), "字节")
