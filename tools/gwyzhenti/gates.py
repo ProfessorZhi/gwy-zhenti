@@ -10,6 +10,7 @@
   * 「被引用但源缺失」的图**恰好一类**（见 `KNOWN_SOURCE_GAPS`），它被**点名**而**非**静默放过；
     清单之外的一切缺失 = 缺陷 ⇒ 判负。
 """
+import collections
 import hashlib
 import io
 import json
@@ -17,7 +18,7 @@ import os
 import re
 from dataclasses import dataclass, field
 
-from . import export, mdread, render
+from . import export, mdread, render, shenlun
 from .model import PaperKey
 
 IMG = re.compile(r'<img\b[^>]*?src="([^"]+)"[^>]*>')
@@ -218,7 +219,33 @@ def _g5(md_path, row, upstream_xingce, repo_root):
     return True, "零内容增删"
 
 
-def _g6(catalog_dir, upstream_xingce, repo_root, mds, limit, failed):
+def _g5_shenlun(md_path, row, shenlun_src, repo_root):
+    """申论保真：源 JSON 的 s/q/a/e 行 vs 导出正文行，逐行**多重集**相等。
+
+    源不是 md 文件，故不能走 `_g5`（它读 `_parts_for` 的模块 md）。
+    两侧的过滤**共用** `shenlun._keep_line`（Step 3a）—— 与行测 `_strip_declared` 同口径。
+    """
+    if row is None:
+        return False, "catalog 里找不到该卷: %s" % os.path.relpath(md_path, repo_root).replace(os.sep, "/")
+    qs = shenlun.questions_for_titles(shenlun_src, shenlun.titles_of(row))
+    if not qs:
+        return False, "申论源题缺失"
+    # 读盘必须**原样**（`newline=""`，裁定 R-M3-11）：源侧是**内存 JSON**，从不经 I/O 的通用换行
+    # 翻译；导出侧若用默认读法，源行尾的 `\r\r`（上游硬换行残留）会被折掉 ⇒ 两侧不对称。
+    # 实测：盘上字节 == 新渲染字节 **0 卷有差异**、按原样读 **0 卷有差异**，而按默认读法
+    # **372/468 卷**假红（那些卷的源侧有 56,776 行内容行行尾带 `\r`）。
+    with io.open(md_path, encoding="utf-8", newline="") as fh:
+        out_text = fh.read()
+    cs = collections.Counter(shenlun.source_lines(qs))
+    co = collections.Counter(shenlun.strip_structure(out_text))
+    removed, added = sorted((cs - co).elements()), sorted((co - cs).elements())
+    if removed or added:
+        return False, "源有导出无 %d 行 / 导出有源无 %d 行；例：%s" % (
+            len(removed), len(added), (removed or added)[:2])
+    return True, "零内容增删"
+
+
+def _g6(catalog_dir, uproots, repo_root, mds, limit, failed, since=None):
     """覆盖账（**catalog → 落盘**的反向对账）。判据对全量成立：
 
       * **导出树为空 ⇒ 直接判负**（整改 F2·B / 评审 I5）。空树上 G1–G5 会「真空通过 0 卷」、
@@ -239,10 +266,13 @@ def _g6(catalog_dir, upstream_xingce, repo_root, mds, limit, failed):
         return False, ("导出树为空（`国考/`、`省考/` 下 **0 个 md**）—— 空树一律判负"
                        "（`limit=%s` 亦然）；catalog %d 卷" % (limit, len(rows)))
     scope = rows[:limit] if limit else rows
-    exportable, absent = 0, []
+    exp = export.exportable_map(rows, uproots)
+    exportable, absent, scoped = 0, [], 0
     for r in scope:
-        parts, _ = export._parts_for(r, upstream_xingce)
-        if not parts:
+        if since and r["year"] < since:
+            continue
+        scoped += 1
+        if not exp.get(r["slug"]):
             continue
         exportable += 1
         md_rel, _ = export.repo_paths(
@@ -256,8 +286,10 @@ def _g6(catalog_dir, upstream_xingce, repo_root, mds, limit, failed):
         note = "；落盘 md 数 %d != 可导出卷数 %d" % (len(mds), exportable)
     if limit:
         note += "；limit 生效，未做「数相等」对账"
+    if not since:
+        note += "；未限定年份（`--since` 为空）—— catalog 里早于本次范围的卷不落盘属预期"
     return ok, "catalog %d 卷（本次对账 %d）| 可导出 %d | 落盘 md %d | 通过 G1–G5 的卷 %d%s%s" % (
-        len(rows), len(scope), exportable, len(mds), len(mds) - len(failed), note,
+        len(rows), scoped, exportable, len(mds), len(mds) - len(failed), note,
         "；未落盘: %s" % absent[:3] if absent else "")
 
 
@@ -279,12 +311,13 @@ def _img_root(row):
         row["slug"])[1].replace("/", os.sep)
 
 
-def run_all(catalog_dir, uproots, repo_root, limit=None):
+def run_all(catalog_dir, uproots, repo_root, limit=None, since=None):
     rep = GatesReport()
     mds = _md_files(repo_root)
     if limit:
         mds = mds[:limit]
     xingce = uproots["xingcezhenti"]
+    shenlun_src = shenlun.load_source(uproots.get("linfukai186", ""))
     index = _index(catalog_dir)
     failed = set()          # 未通过 G1–G5 的 md（G6 用它报「已入库」）
 
@@ -345,7 +378,11 @@ def run_all(catalog_dir, uproots, repo_root, limit=None):
     # ---- G5 保真（源↔导出逐行多重集） ----
     ok, detail = True, []
     for md in mds:
-        good, d = _g5(md, index.get(os.path.relpath(md, repo_root)), xingce, repo_root)
+        row = index.get(os.path.relpath(md, repo_root))
+        if row is not None and row["subject"] == "申论":
+            good, d = _g5_shenlun(md, row, shenlun_src, repo_root)
+        else:
+            good, d = _g5(md, row, xingce, repo_root)
         if not good:
             ok = False
             failed.add(md)
@@ -354,7 +391,7 @@ def run_all(catalog_dir, uproots, repo_root, limit=None):
                         " | ".join(detail[:3]) if detail else "全部通过 %d 卷" % len(mds)))
 
     # ---- G6 覆盖账（catalog 实算） ----
-    ok6, detail6 = _g6(catalog_dir, xingce, repo_root, mds, limit, failed)
+    ok6, detail6 = _g6(catalog_dir, uproots, repo_root, mds, limit, failed, since=since)
     rep.results.append(("G6 覆盖账（catalog→落盘反向对账）", ok6, detail6))
 
     rep.ok = all(x for _, x, _ in rep.results)

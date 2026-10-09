@@ -39,7 +39,8 @@ def cmd_export(args):
 
 def cmd_gate(args):
     from . import gates
-    rep = gates.run_all(args.catalog, _uproots(args), args.repo, limit=args.limit)
+    rep = gates.run_all(args.catalog, _uproots(args), args.repo,
+                        limit=args.limit, since=(args.since or None))
     for name, ok, detail in rep.results:
         print("  [%s] %s —— %s" % ("OK" if ok else "FAIL", name, detail))
     return 0 if rep.ok else 1
@@ -67,6 +68,7 @@ def main(argv=None):
     g.add_argument("--upstream", required=True)
     g.add_argument("--repo", required=True)
     g.add_argument("--limit", type=int, default=0)
+    g.add_argument("--since", default="", help="只对账该年及以后（如 2016）；空 = 不过滤")
     g.set_defaults(func=cmd_gate)
 
     args = ap.parse_args(argv)

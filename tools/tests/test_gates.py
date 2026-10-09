@@ -8,11 +8,12 @@ import shutil
 import sys
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from unittest import mock
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from gwyzhenti import catalog, export, gates      # noqa: E402
+from gwyzhenti import catalog, cli, export, gates      # noqa: E402
 
 FIX = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fixtures")
 
@@ -329,3 +330,163 @@ class TestEmptyTreeNeverGreen(unittest.TestCase):
             self.assertTrue(hit, "limit=%s 时 G6 未判负：%s"
                                  % (limit, [(n, ok, d) for n, ok, d in rep.results]))
             self.assertIn("导出树为空", hit[0][1])
+
+
+class TestG5ShenlunBranch(unittest.TestCase):
+    """申论保真：源 JSON 的 s/q/a/e 行必须逐行出现在导出里（多重集相等）。"""
+
+    def _pair(self):
+        from gwyzhenti import shenlun
+        from gwyzhenti.model import PaperKey
+        qs = [{"t": "单一题", "s": "材料甲\n材料乙", "q": "请概括", "a": "", "e": "范文一",
+               "source": "x"}]
+        key = PaperKey("省考", "山东", "2019", "申论", "统考")
+        return qs, shenlun.render_paper(qs, key, nature="正式真题", form="单独命题",
+                                        sources=["linfukai186"]).body
+
+    def test_clean_render_has_no_diff(self):
+        from gwyzhenti import shenlun
+        qs, body = self._pair()
+        self.assertEqual(shenlun.strip_structure(body), shenlun.source_lines(qs))
+
+    def test_dropped_source_line_is_caught(self):
+        from gwyzhenti import shenlun
+        qs, body = self._pair()
+        broken = body.replace("材料乙", "")
+        self.assertNotEqual(sorted(shenlun.strip_structure(broken)),
+                            sorted(shenlun.source_lines(qs)))
+
+    def test_injected_line_is_caught(self):
+        from gwyzhenti import shenlun
+        qs, body = self._pair()
+        broken = body.replace("范文一", "范文一\n凭空多出来的一行")
+        self.assertNotEqual(shenlun.strip_structure(broken), shenlun.source_lines(qs))
+
+    def test_blank_line_asymmetry_is_not_a_diff(self):
+        """R-M3-7 扩容回归：源里带空白行 / 渲染器折叠空行，都不得判成差异。
+
+        实测背景：控制器全量扫 468 卷，现状下 460/468 卷报差异，差异行全是空白行。
+        这条测试把它钉死 —— 谓词必须两侧共用（含剔空白行）。
+        """
+        from gwyzhenti import shenlun
+        from gwyzhenti.model import PaperKey
+        qs = [{"t": "单一题", "s": "材料甲\n\n\n材料乙", "q": "请概括", "a": "",
+               "e": "范文一\n", "source": "x"}]
+        key = PaperKey("省考", "山东", "2019", "申论", "统考")
+        body = shenlun.render_paper(qs, key, nature="正式真题", form="单独命题",
+                                    sources=["linfukai186"]).body
+        self.assertEqual(sorted(shenlun.strip_structure(body)),
+                         sorted(shenlun.source_lines(qs)))
+
+    def test_gate_reads_the_delivered_file_verbatim(self):
+        """R-M3-11 回归：源侧是**内存字符串**（不经 I/O 翻译），导出侧读盘也必须**原样**。
+
+        源行尾带 `\r\r`（上游硬换行残留，实测真库 56,776 行）时，闸门若用默认读法读盘，
+        `X\r\r\n` 被折成 `X\n\n` ⇒ 两侧不对称 ⇒ 真库 **372/468 卷**假红。
+        这条**能红**：把 `_g5_shenlun` 的 `newline=""` 去掉，它立刻失败。
+        """
+        from gwyzhenti import gates, shenlun
+        from gwyzhenti.model import PaperKey
+        qs = [{"t": "单一题", "s": "材料甲\r\r\n材料乙", "q": "请概括", "a": "",
+               "e": "范文一\r\r", "source": "x"}]
+        key = PaperKey("省考", "山东", "2019", "申论", "统考")
+        body = shenlun.render_paper(qs, key, nature="正式真题", form="单独命题",
+                                    sources=["linfukai186"]).body
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "a.md")
+            with open(p, "wb") as fh:
+                fh.write(body.encode("utf-8"))
+            good, detail = gates._g5_shenlun(p, {"titles": {"linfukai186": ["卷T"]}},
+                                             {"卷T": qs}, d)
+        self.assertTrue(good, detail)
+
+
+class TestShenlunDispatchIsPinned(unittest.TestCase):
+    """F1/F2：申论的**分派**与 **G6 计数**必须能红（评审实测：删掉分支后 174 仍全绿）。"""
+
+    def _fixture(self, d):
+        """最小真库：1 份申论 md + 对应 catalog 行 + 申论源。"""
+        from gwyzhenti import shenlun
+        from gwyzhenti.model import PaperKey
+        qs = [{"t": "单一题", "s": "材料甲", "q": "请概括", "a": "", "e": "范文一", "source": "x"}]
+        key = PaperKey("省考", "山东", "2019", "申论", "统考")
+        body = shenlun.render_paper(qs, key, nature="正式真题", form="单独命题",
+                                    sources=["linfukai186"]).body
+        repo = os.path.join(d, "repo")
+        md_rel, _ = export.repo_paths(key, "省考-山东-2019-申论-统考")
+        p = os.path.join(repo, md_rel.replace("/", os.sep))
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        with open(p, "wb") as fh:
+            fh.write(body.encode("utf-8"))
+        cat = os.path.join(d, "cat")
+        os.makedirs(cat, exist_ok=True)
+        row = {"level": "省考", "region": "山东", "year": "2019", "subject": "申论",
+               "ptype": "统考", "slug": "省考-山东-2019-申论-统考", "sources": ["linfukai186"],
+               "nature": "正式真题", "form": "单独命题", "n_questions": 1, "modules": [],
+               "titles": {"linfukai186": ["卷T"]}}
+        with io.open(os.path.join(cat, "catalog.jsonl"), "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+        up = os.path.join(d, "up")
+        sd = os.path.join(up, "gongkao-tiku", "data", "shengkao-shenlun")
+        os.makedirs(sd, exist_ok=True)
+        with io.open(os.path.join(sd, "y2019.json"), "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(json.dumps({"卷T": qs}, ensure_ascii=False))
+        os.makedirs(os.path.join(up, "xingcezhenti"), exist_ok=True)
+        return cat, {"xingcezhenti": os.path.join(up, "xingcezhenti"),
+                     "linfukai186": os.path.join(up, "gongkao-tiku")}, repo
+
+    def _row(self, rep, prefix):
+        for name, ok, detail in rep.results:
+            if name.startswith(prefix):
+                return ok, detail
+        self.fail("结果里没有 %s 这一条" % prefix)
+
+    def test_shenlun_goes_through_the_shenlun_branch(self):
+        """删掉 `run_all` 的申论分派 ⇒ 这份 md 落到 `_g5`（行测路径，无 xingcezhenti 卷名）
+        ⇒ G5 报「源文件缺失」而变红。"""
+        from gwyzhenti import gates
+        with tempfile.TemporaryDirectory() as d:
+            cat, uproots, repo = self._fixture(d)
+            rep = gates.run_all(cat, uproots, repo, since="2016")
+            ok, detail = self._row(rep, "G5")
+        self.assertTrue(ok, detail)
+
+    def test_g6_counts_shenlun_as_exportable(self):
+        """把申论从 `exportable_map` 摘掉 ⇒ 可导出 0 vs 落盘 1 ⇒ G6 变红。"""
+        from gwyzhenti import gates
+        with tempfile.TemporaryDirectory() as d:
+            cat, uproots, repo = self._fixture(d)
+            rep = gates.run_all(cat, uproots, repo, since="2016")
+            ok, detail = self._row(rep, "G6")
+        self.assertTrue(ok, detail)
+        self.assertIn("可导出 1", detail)
+
+
+class TestCliGateForwardsSince(unittest.TestCase):
+    """F3：`cli` 的 `gate` 子命令必须把 `--since` 接到 `gates.run_all(since=...)`。
+
+    评审实测：删掉 `cmd_gate` 里的 `since=(args.since or None)` ⇒ 原有 174 条仍全绿
+    ⇒ 这条接线此前**没有网**。此处用 `mock.patch.object(gates, "run_all")` 截住调用，
+    直接断言 `since` 真的传到了：`--since 2016` ⇒ `"2016"`；不传 `--since` ⇒ `None`
+    （**不得**把空串 `""` 透传下去，否则 `run_all` 里的 `if since` 判真会误筛）。
+    """
+
+    class _Rep:
+        ok = True
+        results = []
+
+    def _call(self, *extra):
+        s = io.StringIO()
+        with mock.patch.object(gates, "run_all", return_value=self._Rep()) as m:
+            with redirect_stdout(s):
+                code = cli.main(["gate", "--catalog", "cat", "--upstream", "up", "--repo", "repo"]
+                                + list(extra))
+        self.assertEqual(code, 0, s.getvalue())
+        return m
+
+    def test_cli_gate_forwards_since(self):
+        m = self._call("--since", "2016")
+        self.assertEqual(m.call_args.kwargs.get("since"), "2016")
+        m = self._call()          # 不传 --since ⇒ 空串须被折成 None
+        self.assertIsNone(m.call_args.kwargs.get("since"),
+                          "`--since` 缺省时不得把空串透传给 run_all")
