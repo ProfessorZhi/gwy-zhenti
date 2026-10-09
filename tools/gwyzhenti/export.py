@@ -51,7 +51,11 @@ def _write(path, data_bytes):
         # 不是静默丢内容；只要有一个字节不同就照旧抛出，**绝不把「该写却没写成」吞掉**。
         # （真库实测：`国考/2025/行测-副省级.md`、`省考/浙江/2025/行测-A类.md` 被
         # `desktop-commander` 占用；--since 2016 对行测零扰动，故二者渲染结果与盘上一致。）
-        if not (os.path.exists(path) and open(path, "rb").read() == data_bytes):
+        same = False
+        if os.path.exists(path):
+            with open(path, "rb") as fh:
+                same = fh.read() == data_bytes
+        if not same:
             raise
         os.remove(tmp)
 

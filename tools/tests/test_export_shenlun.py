@@ -4,6 +4,7 @@ import json
 import os
 import tempfile
 import unittest
+from unittest import mock
 
 from gwyzhenti import export
 
@@ -81,6 +82,46 @@ class TestExportShenlun(unittest.TestCase):
             a = open(md, "rb").read()
             export.run(cat, _uproots(up), repo, since="2016")
             self.assertEqual(a, open(md, "rb").read())
+
+
+class TestWritePermissionFallback(unittest.TestCase):
+    """`_write` 的文件锁兜底（评审 Important）：它是本任务唯一的写路径，必须有覆盖。
+
+    判据必须**能红**：把 `export.py` 里那句守卫的 `not (...)` 去掉，下面第 2、3 条就会失败。
+    """
+
+    def _call(self, path, data):
+        with mock.patch("os.replace", side_effect=PermissionError):
+            export._write(path, data)
+
+    def test_identical_destination_skips_without_raising(self):
+        """目标被占用、但盘上字节与新字节完全相同 ⇒ 跳过替换、不抛、不留 .tmp。"""
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "a.md")
+            with open(p, "wb") as fh:
+                fh.write(b"same")
+            self._call(p, b"same")
+            with open(p, "rb") as fh:
+                self.assertEqual(fh.read(), b"same")
+            self.assertFalse(os.path.exists(p + ".tmp"))
+
+    def test_differing_destination_reraises(self):
+        """目标被占用、盘上字节不同 ⇒ **必须抛出**，绝不静默丢内容。"""
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "a.md")
+            with open(p, "wb") as fh:
+                fh.write(b"old")
+            with self.assertRaises(PermissionError):
+                self._call(p, b"new")
+            with open(p, "rb") as fh:
+                self.assertEqual(fh.read(), b"old")
+
+    def test_missing_destination_reraises(self):
+        """目标根本不存在 ⇒ **必须抛出**（不能把「该写却没写成」吞掉）。"""
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "a.md")
+            with self.assertRaises(PermissionError):
+                self._call(p, b"new")
 
 
 if __name__ == "__main__":
