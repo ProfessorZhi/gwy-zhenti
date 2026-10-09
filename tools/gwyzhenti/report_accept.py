@@ -29,11 +29,13 @@ import os
 from . import export, shenlun
 from .model import PaperKey
 
-# `work/ACCEPTANCE.jsonl` 每行一卷、字段固定为这些（brief 逐字）。
-# `t4`/`t5` 是**定义里的分级字段**，其卷数在 md 分级表给出；逐卷布尔值不进 jsonl
-# （jsonl 章节的「字段固定为」清单不含它们）。见报告里的口径说明。
+# `work/ACCEPTANCE.jsonl` 每行一卷、字段固定为这些。
+# 修轮 1（裁定 A）：`t4_原卷核验` / `t5_人工通读` 是**逐卷布尔分级列**，一并写入 jsonl
+# （`grade_row` 早已算出，纯投影、零副作用）。原 brief 的「14 项」与「分级定义」自相矛盾，
+# 以修轮裁定为准 ⇒ 共 16 列。
 JSONL_FIELDS = (
     "slug", "level", "region", "year", "subject", "md", "t1_已转写", "t2_幂等一致",
+    "t4_原卷核验", "t5_人工通读",
     "empty_requirement", "n_questions", "truncated", "has_cr", "form_suspect", "img_markers",
 )
 
@@ -135,7 +137,10 @@ def grade_row(row, src, manifest, verify, suspects, repo_root):
         "t4_原卷核验": t4, "t5_人工通读": t5,
         "empty_requirement": empty, "n_questions": row["n_questions"],
         "truncated": trunc, "has_cr": has_cr, "cr_n": cr_n,
-        "form_suspect": (row["level"], row["region"], row["year"]) in suspects,
+        # 修轮 1（Minor 1）：`form_suspect` 语义 = 「本卷是并卷受害者」⇒ **只对申论行**置 True；
+        # 行测侧是**成因**不是受害者（否则 62 行 True 会被下游误当 62 卷）。
+        "form_suspect": (row["subject"] == "申论"
+                         and (row["level"], row["region"], row["year"]) in suspects),
         "img_markers": img,
     }
 
@@ -251,6 +256,8 @@ def render_md(recs, suspects, since):
     L += ["### 3.4 卷型不对称（`form_suspect`，**指示不是证明**）", "",
           "- 命中组：**%d 组**（同 `(level, region, year)` 下行测 distinct `ptype` ≥ 2 且申论 == 1）。"
           % len(suspects),
+          "- **组内仅申论行被标记**（`form_suspect=True`）：行测侧是**成因**、申论侧才是**受害者**；"
+          "故 `form_suspect=True` 的行数 = 组数（每组合 1 个申论卷型）。",
           "- **指示不是证明**：行测有三套**不蕴含**申论必然有三套；坐实须外部核对。",
           "- 命中组清单：", "",
           "| level | region | year | 行测卷型 | 申论卷型 |", "|---|---|---|---|---|"]

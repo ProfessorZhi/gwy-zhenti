@@ -158,6 +158,14 @@ class TestFormSuspect(unittest.TestCase):
             rec = report_accept.grade_row(row, {}, {}, {}, suspects, d)
         self.assertTrue(rec["form_suspect"])
 
+    def test_grade_row_does_not_mark_xingce_row(self):
+        # 修轮 1（Minor 1）：命中组内的**行测**行一律 False（行测是成因、非受害者）
+        row = _row(subject="行测", ptype="A类", slug="s-行测-A", title="t-a")
+        suspects = {("省考", "山东", "2019"): {"行测": ["A类", "B类"], "申论": ["统考"]}}
+        with tempfile.TemporaryDirectory() as d:
+            rec = report_accept.grade_row(row, {}, {}, {}, suspects, d)
+        self.assertFalse(rec["form_suspect"])
+
 
 class TestTruncated(unittest.TestCase):
     def test_material_len_ge_6000_counts(self):
@@ -201,9 +209,9 @@ class TestEndToEnd(unittest.TestCase):
             self.assertIn(sec, md_text)
         projected = {k: recs[0][k] for k in report_accept.JSONL_FIELDS}
         self.assertEqual(sorted(projected), sorted(report_accept.JSONL_FIELDS))
-        # `t4`/`t5` 是定义里的分级字段，但**不进** jsonl（见 brief「字段固定为」）
-        self.assertNotIn("t4_原卷核验", report_accept.JSONL_FIELDS)
-        self.assertNotIn("t5_人工通读", report_accept.JSONL_FIELDS)
+        # 修轮 1（裁定 A）：t4/t5 逐卷布尔列**已并入** jsonl 固定字段
+        self.assertIn("t4_原卷核验", report_accept.JSONL_FIELDS)
+        self.assertIn("t5_人工通读", report_accept.JSONL_FIELDS)
 
 
 if __name__ == "__main__":
