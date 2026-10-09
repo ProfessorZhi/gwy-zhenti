@@ -74,6 +74,8 @@ def render_paper(questions, key, *, nature, form, sources):
     status = ("机器校验（并卷/题号/去泄露/G1–G5）；未人工通读"
               "；材料截断 %d 题（源内硬截断于 %d 字）" % (n_trunc, TRUNCATED_LEN))
     head = render._frontmatter(key, nature, form, sources, NUMBERING)
+    if sum(1 for ln in head if ln.startswith("校验状态:")) != 1:
+        raise ValueError("render._frontmatter 未产出唯一的 校验状态: 行，截断声明会静默丢失")
     head = [ln if not ln.startswith('校验状态:') else '校验状态: "%s"' % status for ln in head]
 
     body = head + [""]
@@ -100,25 +102,34 @@ def render_paper(questions, key, *, nature, form, sources):
     return render.RenderedPaper(text, [], len(questions), NUMBERING)
 
 
+def _keep_line(ln):
+    """保真判据**两侧共用**的过滤谓词：空白行与结构行都不算「内容行」。
+
+    为什么必须共用（裁定 R-M3-7）：`strip_structure` 原本剔空白行而 `source_lines` 不剔
+    ⇒ 不对称。控制器全量实测：不对称让 G5 在 **460/468 卷**上假红（差异行全是
+    `''` / `'\r\r'`）；两侧都过本谓词后 **468/468 卷零差异**。
+    谓词对空白行安全（不承载内容）；对 `# `/`> `/`STRUCT` 行在源侧命中数为 **0**
+    （373,956 行中 0 条）。
+    """
+    if not ln.strip():
+        return False
+    if ln.startswith("# ") or ln.startswith("> "):
+        return False
+    return not STRUCT.match(ln)
+
+
 def source_lines(questions):
-    """保真判据的**源侧**行：只有 s/q/a/e 的文本行（空字段不计）。"""
+    """保真判据的**源侧**行：只有 s/q/a/e 的文本行（空字段不计），过了共用谓词。"""
     out = []
     for q in questions:
         for f in ("s", "q", "a", "e"):
             v = q.get(f) or ""
             if v:
-                out += _lines(v)
+                out += [ln for ln in _lines(v) if _keep_line(ln)]
     return out
 
 
 def strip_structure(text):
-    """保真判据的**导出侧**行：剔 frontmatter 块、H1、引言、我们声明的结构行、空行。"""
+    """保真判据的**导出侧**行：先剔 frontmatter 块，其余过共用谓词。"""
     text = FM_BLOCK.sub("", text)
-    out = []
-    for ln in text.split("\n"):
-        if not ln.strip() or ln.startswith("# ") or ln.startswith("> "):
-            continue
-        if STRUCT.match(ln):
-            continue
-        out.append(ln)
-    return out
+    return [ln for ln in text.split("\n") if _keep_line(ln)]

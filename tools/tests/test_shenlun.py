@@ -93,12 +93,19 @@ class TestRenderPaper(unittest.TestCase):
         self.assertEqual(out.n_questions, 3)
         self.assertEqual(out.body.count("## 第 "), 3)
 
+    def _split_frontmatter(self, text):
+        lines = text.split("\n")
+        self.assertEqual(lines[0], "---")
+        end = lines.index("---", 1)
+        return "\n".join(lines[1:end]), "\n".join(lines[end + 1:])
+
     def test_truncation_is_declared_in_frontmatter_only(self):
         long_s = "字" * 6000
         out = self._render([_q("单一题", long_s, "q", "e")])
-        self.assertIn("材料截断 1 题", out.body.split("---")[1])
+        fm, body = self._split_frontmatter(out.body)
+        self.assertIn("材料截断 1 题", fm)
         # 正文里不得新增任何提示行
-        self.assertNotIn("截断", out.body.split("---")[2])
+        self.assertNotIn("截断", body)
 
 
 class TestSourceLinesRoundTrip(unittest.TestCase):
@@ -111,6 +118,32 @@ class TestSourceLinesRoundTrip(unittest.TestCase):
         want = shenlun.source_lines(qs)
         self.assertEqual(sorted(got), sorted(want))
         self.assertEqual(sorted(want), sorted(["材料一", "第二行", "请概括。", "范文行"]))
+
+    def test_blank_and_cr_lines_do_not_break_the_pair(self):
+        """R-M3-7 回归：源里的空白行 / `\r` 行 / 尾随换行不得让两侧不等。
+
+        真数据背景（控制器全量扫 468 卷）：现状下 **460/468 卷**两侧不等，
+        差异行**全是**空白行（例 `''`、`'\r\r'`）；两侧共用谓词后 **468/468 卷零差异**。
+        """
+        qs = [_q("单一题", "材料一\n\n\n材料二", "请概括。", "范文一\n"),
+              _q("单一题", "材料三\r\r\n\r\r\n材料四", "q2", "e2")]
+        key = PaperKey("省考", "山东", "2019", "申论", "统考")
+        out = shenlun.render_paper(qs, key, nature="正式真题", form="单独命题",
+                                   sources=["linfukai186"])
+        self.assertEqual(sorted(shenlun.strip_structure(out.body)),
+                         sorted(shenlun.source_lines(qs)))
+        self.assertNotIn("", shenlun.source_lines(qs))
+        self.assertNotIn("\r\r", shenlun.source_lines(qs))
+
+    def test_a_genuinely_dropped_line_is_still_caught(self):
+        """判据不能「绿得没边」：真丢了一行内容，两侧必须不等。"""
+        qs = [_q("单一题", "材料甲\n材料乙", "请概括。", "范文一")]
+        key = PaperKey("省考", "山东", "2019", "申论", "统考")
+        out = shenlun.render_paper(qs, key, nature="正式真题", form="单独命题",
+                                   sources=["linfukai186"])
+        broken = out.body.replace("材料乙", "")
+        self.assertNotEqual(sorted(shenlun.strip_structure(broken)),
+                            sorted(shenlun.source_lines(qs)))
 
 
 if __name__ == "__main__":
