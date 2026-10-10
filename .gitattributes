@@ -4,3 +4,5 @@
 *.jpeg binary
 *.webp binary
 *.gif binary
+*.bmp binary
+*.bin binary
