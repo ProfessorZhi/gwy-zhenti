@@ -1,4 +1,8 @@
+# 文本一律 LF 存盘/检出（本机 core.autocrlf=true，若不声明这两行，
+# .gitignore/.gitattributes 会被检出成 CRLF，git status 长期显示假改动并刷警告）
 *.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
 *.png binary
 *.jpg binary
 *.jpeg binary
