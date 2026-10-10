@@ -12,6 +12,15 @@ FAMILY = "xingcezhenti"
 # `classify` 不校验科目，缺省会静默把后续接入的申论源错标成行测。
 SUBJECT = "行测"
 
+# 市考：源 frontmatter 的「地区」写 `深圳市考`/`广州市考`，而交付树的 region 轴用 `深圳`/`广州`
+# （与 `expect.EXTRA_REGIONS` 一致）。不归一则 `PaperKey.region` 会是 `深圳市考` ⇒ 落成
+# `省考/深圳市考/…`，与 `EXPECTED` 的 region 不匹配、树的口径也不一致。
+#
+# **只在本 adapter 归一**：`naming.EXCLUDE_REGIONS` 一字不动 —— `linfukai186` 侧的卷名
+# 仍由 `region_exclusion()` 判成 `深圳市考`/`广州市考` 并被排除（那一侧是把市考卷混进了
+# 省级源，与本源的同名 md 是两回事，其排除**不放开**）。
+REGION_ALIAS = {"深圳市考": "深圳", "广州市考": "广州"}
+
 # 目录序 **就是** 行测标准顺序（政治理论在最前，覆盖 2025+ 国考新增）
 MODULE_DIRS = (
     "01-政治理论", "02-常识判断", "03-言语理解与表达",
@@ -71,7 +80,9 @@ class XingceZhentiAdapter(SourceAdapter):
         fm = mdread.read_frontmatter(text)
         title = fm.get("试卷", os.path.splitext(os.path.basename(relpath))[0])
         module = fm.get("模块", os.path.basename(os.path.dirname(relpath)))
-        region = fm.get("地区", "")
+        # 归一在**进入 classify 之前**（见 `REGION_ALIAS`）：`classify` 只认交付树的 region 轴，
+        # 而它仍在 `EXCLUDE_REGIONS` 上对 `深圳市考`/`广州市考` 抛错（那是给别的源用的）。
+        region = REGION_ALIAS.get(fm.get("地区", ""), fm.get("地区", ""))
         year = fm.get("年份", "")
         try:
             classify(region, year, title)

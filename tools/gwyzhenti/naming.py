@@ -76,7 +76,19 @@ def region_from_text(text):
 # **刻意不收单字「公安」**：`2017·辽宁公务员考试《行测》真题公安卷` 是辽宁省考的**公安岗位**卷，
 # 属正当省考；收「公安」会误伤（`公安院校` 归 `EXCLUDE_REGIONS` 单独处理）。
 # 实测零误伤：新判排除恰 5 个卷名（青海2019×2、江西2018×1、四川2007×1、河南2011×1），辽宁公安卷仍在。
-EXCLUDE_TITLE = re.compile(r"选调|法检|司法所|公检法|事业编|事业单位|职测|综应|模考|公开课|模拟|法院|检察院|招警")
+EXCLUDE_TITLE = re.compile(r"法检|司法所|公检法|事业编|事业单位|职测|综应|模考|公开课|模拟|法院|检察院|招警")
+
+# `选调` **不能**放进 `EXCLUDE_TITLE`（2026-10-09 收尾轮实测修正）。
+# 实情：`选调` 有两种出现形态，语义完全相反 ——
+#   ① **独立选调生考试**（非目标）：`2017年重庆市选调优秀大学生到基层工作考试《行测》题`、
+#      `2024年浙江省选调生考试《申论》参考题本` ⇒ 必须排除。
+#   ② **同年省考的伴随卷型名**（正当省考）：上游把省考与普通选调**合卷发布**，卷名写
+#      `安徽A、普通选调卷` / `河北、普通选调卷` / `县乡卷、普通选调卷` ⇒ 是省考卷，**不能排**。
+# 口径与 `expect.py:240/:848`「**提及 ≠ 是**」一致（那里早已按此判）。此前把 `选调` 塞进
+# `EXCLUDE_TITLE` ⇒ ② 被整族误杀（实测 5 例误杀 4），正是交付树里 20 份 `卷型源` 含
+# 「普通选调卷」的卷所踩的坑。**只认字面「普通选调卷」为伴随卷型**（窄而可证），
+# 其它一切含 `选调` 的卷名仍按非目标排除 —— 方向上宁可漏收，不可把选调考试当省考真题收进来。
+XUANDIAO_COMPANION = re.compile(r"[、,，]?\s*普通选调卷")
 
 # 卷型：**长模式在前**，先命中先返回。**只归一到 spec 已声明的词表**，其余一律不推测。
 # 词表来源 = spec §卷型归一表（:137 的第一张表 + :141-144 实测的后缀词表）。
@@ -86,10 +98,13 @@ PTYPE_RULES = (
     (re.compile(r"副省级"), "副省级"),
     (re.compile(r"地市级"), "地市级"),
     (re.compile(r"行政执法"), "行政执法"),
-    (re.compile(r"A类|A卷"), "A类"),
-    (re.compile(r"B类|B卷"), "B类"),
-    (re.compile(r"C类|C卷"), "C类"),
-    (re.compile(r"D类|D卷"), "D类"),
+    # `X、` 形态 = 省考与普通选调**合卷发布**时上游的写法（`安徽A、普通选调卷`、
+    # `广西A、普通选调卷`、`河北B、普通选调卷`，实测 20 份）。缺它 ⇒ `_ptype` 逐字回落
+    # ⇒ 卷型真的成了 `A、普通选调卷` ⇒ 与 `A类` 分成两键（同 `网友回忆整理版` 那一类缺陷）。
+    (re.compile(r"A类|A卷|A"), "A类"),
+    (re.compile(r"B类|B卷|B"), "B类"),
+    (re.compile(r"C类|C卷|C"), "C类"),
+    (re.compile(r"D类|D卷|D"), "D类"),
     # —— spec :141-144 实测的后缀词表（此前缺失，正是撞 slug 的根因）——
     (re.compile(r"甲级|甲卷"), "甲级"),
     (re.compile(r"乙级|乙卷"), "乙级"),
@@ -116,6 +131,18 @@ LIANKAO = re.compile(r"联考")
 
 # 标题里的括号内容（全角与半角都认）
 PAREN = re.compile(r"[（(]([^）)]*)[）)]")
+# 标题里的**书名号**内容。书名号在卷名里**绝大多数时候就是科目名本身**（《行测》3321 次、
+# 《申论》573 次，实测全库 4431 条标题），故它**不能**整体当卷型 token 源 —— 现由
+# `ANGLE_PTYPE` 只取下面明确列出的两个形态。
+ANGLE = re.compile(r"《([^》]*)》")
+# 书名号里的**卷型**标记：**整段**必须是下列形态之一，否则当科目名忽略。
+# 成因（实测，深圳 2020）：同一次考试拆成多套卷时，源把**序号**写进书名号
+# （`《行测1》`/`《行测2》`），序号只在书名号里出现 ⇒ 只扫括号（PAREN）会漏 ⇒ 三卷同判 `统考`
+# ⇒ **撞 slug 丢两卷**。深圳另有独立一份《思维能力测验》卷（同《行测》并列的第二科目）。
+# 口径刻意**窄**：`行测\d+` 认「科目+序号」的通用形态（不限年份/地区），`思维能力测验` 是
+# 词表级的一个卷型词；其余《…》（《行政职业能力测验》《综合能力测试》…）**一律不算**卷型 ——
+# 实测宽口径会把 24 条《行政职业能力测验》、5 条《综合能力测试》等误判成卷型。
+ANGLE_PTYPE = re.compile(r"行测\d+|思维能力测验")
 # 括号里这些词是**性质/形式**，不是卷型 —— 不能进 slug。用 `sub` 在 token **内部**剔除，
 # 因为复合后缀（`行政执法卷网友回忆版`）里它们只是尾巴；精确匹配会漏 ⇒ 性质词被带上 slug。
 # **与 `MEMORY` 同一词表**（两者分掌不同字段：`MEMORY` 定 `真题性质`、`NOT_PTYPE` 定卷型 token），
@@ -128,6 +155,9 @@ PTYPE_VALUES = frozenset(v for _, v in PTYPE_RULES)
 def _ptype_tokens(region, title):
     """取出标题括号里的「卷型/批次」token：先剥掉其中的地区标记（`浙江A卷`→`A卷`、`四川卷`→空），
     再**逐字**返回剩下的部分。性质/形式词（网友回忆版/精选/联考）不算卷型。
+
+    书名号里的 `ANGLE_PTYPE` 形态（`行测1`/`行测2`/`思维能力测验`）**同样**算卷型 token ——
+    它们的卷型信息**只在书名号里**，见 `ANGLE_PTYPE` 的注释。整段命中才取，其余书名号当科目名。
     """
     out = []
     for raw in PAREN.findall(title):
@@ -135,9 +165,18 @@ def _ptype_tokens(region, title):
         if region and s.startswith(region):
             s = s[len(region):]
         s = NOT_PTYPE.sub("", s)
+        # `选调` 伴随后缀：上游合卷发布时写 `安徽A、普通选调卷`/`县乡卷、普通选调卷`，
+        # 这里当**性质词**剥掉，剩下的才是本卷卷型（`A、`→`A类`、`县乡卷`→`县乡卷`）。
+        # 不剥 ⇒ token 整串不 `fullmatch` 任何规则（`_match_value` 用 fullmatch）⇒ 逐字回落
+        # ⇒ 卷型真的成了 `A、普通选调卷` ⇒ 与 `A类` 分键（同 `网友回忆整理版` 那一类缺陷）。
+        s = XUANDIAO_COMPANION.sub("", s).strip("、,， \t　")
         if s == "卷":
             s = ""
         if s:
+            out.append(s)
+    for raw in ANGLE.findall(title):
+        s = raw.strip()
+        if ANGLE_PTYPE.fullmatch(s):
             out.append(s)
     return out
 
@@ -205,6 +244,9 @@ def classify(region, year, title, subject="行测"):
     m = EXCLUDE_TITLE.search(title)
     if m:
         raise Unparsed("试卷名含排除词: %s" % m.group(0), title, kind=Unparsed.EXCLUDED)
+    # `选调`：**只**在不是「普通选调卷」伴随卷型时才排除（理由见 `XUANDIAO_COMPANION` 上方的长注释）。
+    if "选调" in title and not XUANDIAO_COMPANION.search(title):
+        raise Unparsed("独立选调考试: 选调", title, kind=Unparsed.EXCLUDED)
     if not region:
         raise Unparsed("地区字段为空", title)
 

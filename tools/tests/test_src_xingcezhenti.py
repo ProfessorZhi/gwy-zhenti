@@ -136,6 +136,66 @@ class TestRoutingFollowsKindNotReasonText(unittest.TestCase):
         self.assertEqual(len(res.excluded), 3)
 
 
+class TestRegionAlias(unittest.TestCase):
+    """Task 4A · S1：市考的 region 归一（`深圳市考`/`广州市考` → `深圳`/`广州`）。
+
+    源 frontmatter 的「地区」写 `深圳市考`/`广州市考`，而交付树的 region 轴（以及
+    `expect.EXTRA_REGIONS`）用 `深圳`/`广州`。不归一时 `PaperKey.region` 会是 `深圳市考`
+    ⇒ 落成 `省考/深圳市考/…`，与 `EXPECTED` 对不上。归一**只在 adapter 内**做 ——
+    `naming.EXCLUDE_REGIONS` 一字不动（`linfukai186` 侧的把市考卷混进省级源，仍要排除）。
+    """
+
+    def setUp(self):
+        self.root = tempfile.mkdtemp(prefix="gwyxz-region-")
+        self.addCleanup(shutil.rmtree, self.root, ignore_errors=True)
+
+    def _put(self, rel, text):
+        p = os.path.join(self.root, rel.replace("/", os.sep))
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        with io.open(p, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(text)
+
+    @staticmethod
+    def _md(title, region, year):
+        return ('---\n试卷: "%s"\n模块: "资料分析"\n地区: "%s"\n年份: "%s"\n题数: "1"\n---\n\n'
+                "#### 第 1 题\n\n题干。\n\n- **A**. 甲\n\n**答案**：A\n\n---\n"
+                % (title, region, year))
+
+    def test_alias_table_is_exactly_the_two_city_exams(self):
+        self.assertEqual(xz_mod.REGION_ALIAS, {"深圳市考": "深圳", "广州市考": "广州"})
+
+    def test_shenzhen_and_guangzhou_regions_are_normalized(self):
+        self._put("06-资料分析/sz.md",
+                  self._md("2020年深圳市考公务员录用考试《行测1》试题（网友回忆版）", "深圳市考", "2020"))
+        self._put("06-资料分析/gz.md",
+                  self._md("2016年广州市公务员录用考试《行测》题", "广州市考", "2016"))
+        res = XingceZhentiAdapter().scan(self.root)
+        self.assertEqual(len(res.records), 2)
+        self.assertEqual(res.excluded, [])          # 归一后**不再**落 excluded
+        self.assertEqual(res.unparsed, [])
+        got = {r["title"]: r["region"] for r in res.records}
+        self.assertEqual(got["2020年深圳市考公务员录用考试《行测1》试题（网友回忆版）"], "深圳")
+        self.assertEqual(got["2016年广州市公务员录用考试《行测》题"], "广州")
+
+    def test_exclusions_are_not_opened_by_the_alias(self):
+        # 归一**只**覆盖 深圳/广州：`选调`/`公安院校` 等仍走排除族（`EXCLUDE_REGIONS` 未动）
+        self.assertIn("深圳市考", naming.EXCLUDE_REGIONS)
+        self.assertIn("广州市考", naming.EXCLUDE_REGIONS)
+        self._put("06-资料分析/xd.md",
+                  self._md("2017年重庆市选调优秀大学生到基层工作考试《行测》题", "选调", "2017"))
+        res = XingceZhentiAdapter().scan(self.root)
+        self.assertEqual(res.records, [])
+        self.assertEqual(len(res.excluded), 1)
+        self.assertTrue(res.excluded[0]["reason"].startswith("非国省考地区"))
+
+    def test_record_keys_unchanged_by_normalization(self):
+        # 归一改的是**值**，不是**形状**：记录键集一字不变（无新增键）
+        self._put("06-资料分析/sz.md",
+                  self._md("2020年深圳市考公务员录用考试《行测1》试题（网友回忆版）", "深圳市考", "2020"))
+        res = XingceZhentiAdapter().scan(self.root)
+        self.assertEqual(set(res.records[0]), RECORD_KEYS)
+
+
 class TestUnmappedDirsLedger(unittest.TestCase):
     """整改 F2·C / 评审 I3：模块目录白名单外的目录**不得静默跳过**（只报不收）。
 

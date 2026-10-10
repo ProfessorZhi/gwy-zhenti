@@ -469,6 +469,48 @@ class TestWhitelist(unittest.TestCase):
         self.assertIn("地区未归位", rows[0]["note"])
 
 
+class TestRegionIsNotAPtype(unittest.TestCase):
+    """R-COV-26：地区名里的**子串**不得冒充卷型（Task 4A 的 `match_ptype` 缺陷）。
+
+    `州市` 是规范词表里的**合法卷型**，但它整段落在地区名 `广州市` 里 ⇒ 旧实现（裸子串）
+    把 `2016年广州市…《行测》题` 判成卷型 `州市`（`EXPECTED` 里广州 4 行的 `ptype` 曾因此
+    全错、与交付树对不上）。判据 = **完全落在地区名区间内的命中一律丢弃** —— 只丢跨不出
+    地区名的命中，`天津市级` 里的 `市级` 跨出 `天津市` 一个字符 ⇒ 照旧命中。
+    """
+
+    def test_guangzhou_does_not_match_the_zhoushi_ptype(self):
+        s = "2016年广州市公务员录用考试《行测》题"
+        # 修前：`("州市", "")`；修后：不命中 ⇒ 走 `统考` 兜底
+        self.assertEqual(expect.match_ptype(s), (None, ""))
+        self.assertEqual(expect.canon_ptype(s), ("统考", ""))
+
+    def test_all_four_guangzhou_titles_canon_to_tongkao(self):
+        for t in ("2016年广州市公务员录用考试《行测》题",
+                  "2017年广州市公务员录用考试《行测》题（单考区卷）",
+                  "2018年广州市公务员录用考试 《行测》题（3月24日网友回忆版）",
+                  "2018年广州市公务员录用考试 《行测》题（3月25日网友回忆版）"):
+            self.assertEqual(expect.canon_ptype(t)[0], "统考", t)
+            p = expect.parse_title(t)
+            self.assertEqual(p["ptype"], "统考", t)
+            self.assertEqual(p["region"], "广州", t)
+            self.assertEqual(p["ptype_raw"], "", t)
+
+    def test_alias_crossing_out_of_a_region_name_still_matches(self):
+        # **反面**（判据必须窄）：这些是真卷型，跨出地区名 ⇒ 照旧命中
+        # `天津市级`：`市级` 从 `天津市` 的第 3 个字起 ⇒ 不算被地区名吞掉
+        self.assertEqual(expect.match_ptype("2020年天津市级机关公务员录用考试《申论》题"),
+                         ("市级", ""))
+        # `州市卷` 在**没有** `广州市` 的串里仍是合法卷型
+        self.assertEqual(expect.match_ptype("2016年云南省州市卷《行测》题"), ("州市卷", ""))
+
+    def test_pure_region_words_never_become_ptypes(self):
+        # 逐个地区（含 `+市`/`+省` 形态）在**只有地区名、没有任何后缀**时都不得命中
+        for region in expect.REGION_WORDS:
+            for form in (region, region + "市", region + "省"):
+                self.assertEqual(expect.match_ptype(
+                    "2016年%s公务员录用考试《行测》题" % form), (None, ""), form)
+
+
 class TestGrid(unittest.TestCase):
     def test_skeleton_is_704_cells(self):
         years = [str(y) for y in range(2016, 2027)]

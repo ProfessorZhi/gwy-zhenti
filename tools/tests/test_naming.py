@@ -55,6 +55,26 @@ class TestClassify(unittest.TestCase):
             classify("四川", "2016",
                      "2016年3月四川省选调优秀大学生到基层工作考试 行政职业能力测验试卷（精选）")
 
+    def test_putong_xuandiao_companion_is_shengkao(self):
+        # 「普通选调卷」是同年省考的**伴随卷型名**，不是独立选调考试 ⇒ 必须放行，
+        # 且卷型归一到省考那一个（A类/县乡…），不能因含「选调」二字整卷丢掉。
+        # 实测样本 = 交付树里 20 份 `卷型源` 含「普通选调卷」的卷所踩的坑。
+        self.assertEqual(
+            classify("安徽", "2024", "2018·公务员多省联考《申论》题（安徽A、普通选调卷）").key.ptype, "A类")
+        self.assertEqual(
+            classify("广西", "2024", "2024·广西公务员考试《申论》A、普通选调卷").key.ptype, "A类")
+        self.assertEqual(
+            classify("黑龙江", "2025", "2025·黑龙江省考《申论》县乡卷、普通选调卷").key.ptype, "县乡卷")
+        # 只有「选调」没有字母 ⇒ 剥掉伴随后缀后无卷型 token ⇒ 落 `统考`
+        # （与 `expect.py:240` 那条「提及选调、canon 同为统考」同口径）
+        self.assertEqual(
+            classify("河北", "2024", "2018·公务员多省联考《申论》题（河北、普通选调卷）").key.ptype, "统考")
+        # 反向：真的**独立选调考试**（无「普通选调卷」）仍必须排除，不放宽。
+        for reg, y, t in (("浙江", "2024", "2024年浙江省选调生考试《申论》参考题本"),
+                          ("四川", "2016", "2016年3月四川省选调优秀大学生到基层工作考试 行政职业能力测验试卷")):
+            with self.assertRaises(Unparsed):
+                classify(reg, y, t)
+
     def test_selected_nature(self):
         c = classify("四川", "2016", "2016年四川省公务员录用考试《行测》题（精选）")
         self.assertEqual(c.nature, "精选")
@@ -128,6 +148,73 @@ class TestClassify(unittest.TestCase):
         # 「公检法」与 spec 已排除的「法检」同属系统内招录 ⇒ 一并排除
         with self.assertRaises(Unparsed):
             classify("黑龙江", "2016", "2016年黑龙江省公务员考试《行测》题（公检法卷）")
+
+
+class TestAnglePtypeToken(unittest.TestCase):
+    """Task 4A · S2：`《…》` 里的卷型 token（深圳 2020 三套必须落**三个不同的键**）。
+
+    成因：同一次考试拆成多套卷时，源把**序号**写进书名号（`《行测1》`），而序号**只在**
+    书名号里出现 ⇒ 只扫圆括号（`PAREN`）会漏 ⇒ 三套同判 `统考` ⇒ 撞同一个 slug ⇒ **丢两套**。
+
+    口径是**窄的**（`naming.ANGLE_PTYPE`）：书名号**绝大多数时候就是科目名本身**（实测全库
+    `《行测》` 3321 次、`《申论》` 573 次），故只认 `行测<N>` 与 `思维能力测验` 两个形态，
+    其余一律当科目名 —— 宽口径会把 `《行政职业能力测验》`（24 次）、`《综合能力测试》`（5 次）
+    误判成卷型。规则**由标题驱动**：不认年份、不认地区。
+    """
+
+    def test_shenzhen_2020_three_papers_get_three_distinct_keys(self):
+        a = classify("深圳", "2020", "2020年深圳市考公务员录用考试《行测1》试题（网友回忆版）")
+        b = classify("深圳", "2020", "2020年深圳市考公务员录用考试《行测2》试题（网友回忆版）")
+        c = classify("深圳", "2020",
+                     "2020年深圳市考公务员录用考试《思维能力测验》试题（网友回忆版）")
+        self.assertEqual(a.key.ptype, "行测1")
+        self.assertEqual(b.key.ptype, "行测2")
+        self.assertEqual(c.key.ptype, "思维能力测验")
+        # 三套三键三 slug —— 撞 slug 就是丢卷（导出时后写覆盖先写）
+        self.assertEqual(len({paper_slug(x.key) for x in (a, b, c)}), 3)
+        self.assertEqual(a.nature, "网友回忆版")
+
+    def test_numbered_angle_token_is_general_not_shenzhen_specific(self):
+        # **由标题驱动**：同样的形态在任何地区都要认（不硬编码年份/地区）
+        for region, year in (("四川", "2021"), ("深圳", "2021")):
+            self.assertEqual(
+                classify(region, year,
+                         "%s年%s公务员录用考试《行测2》试题" % (year, region)).key.ptype,
+                "行测2")
+        # 序号**只**在书名号里、连圆括号都没有时也要认
+        self.assertEqual(
+            classify("深圳", "2020", "2020·1213深圳公务员考试《行测2》真题").key.ptype, "行测2")
+
+    def test_bare_subject_angle_is_not_a_ptype_token(self):
+        # 书名号里只有科目名（或别的测验名）⇒ 照旧 `统考`，绝不逐字回落成卷型
+        self.assertEqual(
+            classify("广州", "2016", "2016年广州市公务员录用考试《行测》题").key.ptype, "统考")
+        self.assertEqual(
+            classify("国考", "2026",
+                     "2026年国家公务员录用考试《行政职业能力测验》题（副省级网友回忆版）"
+                     ).key.ptype, "副省级")
+        self.assertEqual(
+            classify("江西", "2016", "2016年江西省公务员考试《行测》题").key.ptype, "统考")
+
+    def test_guangzhou_four_papers_keep_their_own_ptypes(self):
+        # S3 的**权威口径** = `naming._ptype`（交付树路径由它生成）：四套各不相同 ⇒ 不撞 slug。
+        # 与 task-4-brief 的四个字面量**逐字一致**（无歧义，无需上报差异）。
+        got = [
+            classify("广州", "2016", "2016年广州市公务员录用考试《行测》题").key.ptype,
+            classify("广州", "2017", "2017年广州市公务员录用考试《行测》题（单考区卷）").key.ptype,
+            classify("广州", "2018",
+                     "2018年广州市公务员录用考试 《行测》题（3月24日网友回忆版）").key.ptype,
+            classify("广州", "2018",
+                     "2018年广州市公务员录用考试 《行测》题（3月25日网友回忆版）").key.ptype,
+        ]
+        self.assertEqual(got, ["统考", "单考区卷", "3月24日", "3月25日"])
+        self.assertEqual(len(set(got)), 4)
+
+    def test_angle_rule_does_not_change_the_vocabulary(self):
+        # 新增的是 **token 来源**，不是**词表**：`PTYPE_VALUES` 一字不动
+        # （`TestPtypeTableGuards` 的钉表测试因此仍绿）
+        self.assertNotIn("行测1", PTYPE_VALUES)
+        self.assertNotIn("思维能力测验", PTYPE_VALUES)
 
 
 class TestUnparsedKind(unittest.TestCase):
@@ -204,7 +291,7 @@ class TestPtypeTableGuards(unittest.TestCase):
         # 逐字照抄 `naming.PTYPE_RULES`（2026-10-09 的 20 条），顺序也算判据（长模式在前）。
         self.assertEqual(
             tuple(rx.pattern for rx, _ in PTYPE_RULES),
-            ("副省级", "地市级", "行政执法", "A类|A卷", "B类|B卷", "C类|C卷", "D类|D卷",
+            ("副省级", "地市级", "行政执法", "A类|A卷|A", "B类|B卷|B", "C类|C卷|C", "D类|D卷|D",
              "甲级|甲卷", "乙级|乙卷", "上半年", "下半年", "县乡卷|县乡", "省直卷|省直",
              "兵团", "县级以上", "区级及以上", "定向乡镇", "单考区卷",
              "乡镇卷|乡镇", "县级卷|县级"),

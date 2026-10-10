@@ -69,6 +69,33 @@ PROVINCES = (
 EXTRA_REGIONS = ("深圳", "广州")
 REGION_WORDS = tuple(PROVINCES) + EXTRA_REGIONS
 
+# 地区名（含 `+市`/`+省` 形态）的**区间判据**（R-COV-26）。`州市` 是规范词表里的合法卷型，
+# 但它同时是地区名 `广州市` 的**子串** —— 裸子串匹配会把 `2016年广州市…《行测》题` 的
+# `ptype` 判成 `州市`（`EXPECTED` 里广州 4 行的 `ptype` 曾因此全错）。
+# 判据：**完全落在地区名区间内的别名命中一律丢弃**。
+#
+# 为什么是「区间内丢弃」而不是「先剥地区名」：剥法**过宽** —— 它会把 `天津市级`（`天津市`
+# 之后紧跟 `级`）剥成 `级`，而那里的 `市级` 是**真卷型**（实测：剥法让 34 个键的 `attested_by`
+# 漂移、凭空多出 15 行）。区间判据只丢**跨不出地区名**的命中：`州市 ⊆ 广州市` 被丢，
+# `市级 ⊄ 天津市`（`市级` 跨出 `天津市` 一个字符）**照旧命中**。
+REGION_STRIP = tuple(sorted(
+    {w for w in REGION_WORDS}
+    | {w + "市" for w in REGION_WORDS}
+    | {w + "省" for w in REGION_WORDS},
+    key=len, reverse=True))
+
+
+def _region_spans(s):
+    """s 里所有地区名（含 `+市`/`+省`）出现的 `[start, end)` 区间（全枚举，去重）。"""
+    out = set()
+    for w in REGION_STRIP:
+        i = s.find(w)
+        while i >= 0:
+            out.add((i, i + len(w)))
+            i = s.find(w, i + 1)
+    return out
+
+
 # 国考的写法（标题里出现任一 ⇒ level=国考、region="国考"）。
 GUOKAO_TOKENS = ("国考", "国家公考", "国家公务员")
 
@@ -156,16 +183,26 @@ SESSIONS = ("上半年", "下半年")
 
 
 def match_ptype(s):
-    """→ `(命中的别名 or None, session)`。别名 = **最长优先**（同长按规范词序）。"""
+    """→ `(命中的别名 or None, session)`。别名 = **最长优先**（同长按规范词序）。
+
+    **完全落在地区名区间内**的命中被丢弃（`_region_spans`，R-COV-26）：`州市` 是合法卷型，
+    但它整段落在地区名 `广州市` 里 ⇒ 不算命中；`广州市` 因此不再被误判成卷型 `州市`。
+    同一条判据**不动** `天津市级` 里的 `市级`（跨出 `天津市` 一个字符 ⇒ 是真卷型）。
+    """
     s = s or ""
     session = ""
     for w in SESSIONS:
         if w in s:
             session = w
             break
+    spans = _region_spans(s)
     for alias, _canon in ALIASES:
-        if alias in s:
-            return alias, session
+        pos = s.find(alias)
+        while pos >= 0:
+            end = pos + len(alias)
+            if not any(a <= pos and end <= b for a, b in spans):
+                return alias, session
+            pos = s.find(alias, pos + 1)
     return None, session
 
 
@@ -763,7 +800,16 @@ def render_md(all_rows, bjrows, ngs, since, n_ev, bounds=None):
           "**不计入四数**，单列 §七；其独占的格**不生成** `尚未找到` 占位。",
           "8. 一行 = 一个 `(level, region, year, subject, ptype, session)`；同格 distinct 卷型各占"
           "一行 ⇒ **行数是卷型级的、多于格级**。`session` 与 `ptype` **脱钩**（A6）："
-          "`ptype` 永不含「上半年/下半年」。", ""]
+          "`ptype` 永不含「上半年/下半年」。",
+          # S5 / A6：深圳/广州 是**市考**（地级市），不在「31 省级地区 + 国考」的用户骨架里。
+          # 本账为它们列**行**（证据驱动），但**不**给它们生成骨架占位格 ⇒ 它们既不在 704 格的
+          # 分子、也不在其分母。判据印在 md 里是**硬要求**（不然读者无从知道这些行是否已被计入）。
+          "9. **骨架外地区**：`省考/深圳`、`省考/广州` 是**市考**，**不在官方骨架内** —— "
+          "骨架 = 31 省级地区 + 国考 = **%d** 个地区 × %d 年 × 2 科 = **%d** 格，**不含**二者。"
+          "本账为它们列**行**（全部由证据驱动：交付树 / 各源 TOC），但**不**生成骨架占位格 ⇒ "
+          "二者的行**不进** 704 格的**分子/分母**（R-COV-10 不变）；本账**不**判定市考是否举行。"
+          % (len(GRID_REGIONS), len(years), len(GRID_REGIONS) * len(years) * 2),
+          ""]
 
     # ---- 二、总量四数 ----
     L += ["## 二、总量（四数 + 待核实单列）", "",
@@ -782,7 +828,16 @@ def render_md(all_rows, bjrows, ngs, since, n_ev, bounds=None):
           "> 范围：`year >= %s`，共 %d 个年份（%s–%s）；`行测 %d 行 / 申论 %d 行`。"
           % (since, len(years), years[-1], years[0], xc, sl),
           "> 并卷键 **%d 行**（`ptype=\"并卷\"`，已含在本表与总数内）。" % len(bjrows),
-          "> 证据条数（未合并前）共 **%d** 条。" % n_ev, ""]
+          "> 证据条数（未合并前）共 **%d** 条。" % n_ev,
+          "> **骨架外**（§一.9）：`省考/深圳` + `省考/广州` 共 **%d 行**"
+          "（`已有 %d` / `源有未导入 %d` / `尚未找到 %d`）—— **不计入 704 格的分子/分母**。"
+          % (sum(1 for r in all_rows if r["region"] in ("深圳", "广州")),
+             sum(1 for r in all_rows
+                 if r["region"] in ("深圳", "广州") and r["status"] == "已有"),
+             sum(1 for r in all_rows
+                 if r["region"] in ("深圳", "广州") and r["status"] == "源有未导入"),
+             sum(1 for r in all_rows
+                 if r["region"] in ("深圳", "广州") and r["status"] == "尚未找到")), ""]
 
     # ---- 三、交叉表 ----
     L += ["## 三、按 `status` × 科目（交叉表）", "",
