@@ -25,5 +25,7 @@ jobs:
           python -m unittest cloud_quality_test -v
       - name: Install pinned image validator
         run: python -m pip install --disable-pip-version-check Pillow==11.3.0
-      - name: Read-only corpus, image-decoding and inventory verification
+      - name: Read-only corpus and inventory verification
         run: python tools/cloud_quality.py --check --verify-images
+      - name: Decode actual pixels of every referenced image
+        run: python tools/verify_image_pixels.py
