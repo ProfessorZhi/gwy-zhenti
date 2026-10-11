@@ -4,34 +4,129 @@ on:
     branches: [fix/paper-integrity-20261011]
     paths: ['.github/workflows/paper-integrity.yml']
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: reviewed-paper-repair
+  cancel-in-progress: false
 jobs:
-  evidence:
+  repair:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
-      - name: Fetch two independently published reference PDFs only
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          ref: ${{ github.ref }}
+      - name: Install fixed document validators
+        run: python -m pip install --disable-pip-version-check PyMuPDF==1.26.7 Pillow==11.3.0
+      - name: Download only six reviewed data sources with exact hashes
         run: |
           python - <<'PY'
-          import concurrent.futures,hashlib,json,os,pathlib,urllib.request,urllib.parse
-          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'paper-evidence-2';out.mkdir()
-          url='https://upload.xingguanggongkao.com/pdf/'+urllib.parse.quote('2022年国家公务员录用考试《行测》真题（副省卷-考生回忆版）.pdf')+'?time=1706601118'
-          jobs=[('gk2022-xg.pdf',url),('zj2020a-gwy.pdf','https://www.chinagwy.org/files/20211227170045_75892.pdf')]
-          def get(j):
-              name,url=j
-              try:
-                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'}),timeout=60) as f:b=f.read(25000001)
-                  if len(b)>25000000 or not b.startswith(b'%PDF'):raise ValueError('invalid or oversized PDF')
-                  (out/name).write_bytes(b)
-                  return dict(file=name,url=url,bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
-              except Exception as e:return dict(file=name,url=url,error=str(e))
-          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:r=list(pool.map(get,jobs))
-          (out/'sources.json').write_text(json.dumps(r,ensure_ascii=False,indent=2),encoding='utf-8')
-          print(json.dumps(r,ensure_ascii=False,indent=2))
+          import concurrent.futures,hashlib,json,os,pathlib,urllib.request
+          p=pathlib.Path('tools/data/paper-integrity-20261011.json'); plan=json.loads(p.read_text())
+          canonical=json.dumps(plan,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()
+          assert hashlib.sha256(canonical).hexdigest()=='5e65f2357124e05698857e0f325088305550889b380ffe96ef86d11e286d50b1','Plan differs from reviewed snapshot'
+          p.write_text(json.dumps(plan,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'reviewed-pdfs';out.mkdir()
+          def get(entry):
+              name,s=entry
+              if pathlib.Path(name).name!=name:raise ValueError('unsafe source name')
+              req=urllib.request.Request(s['url'],headers={'User-Agent':'Mozilla/5.0'})
+              with urllib.request.urlopen(req,timeout=60) as f:b=f.read(35000001)
+              if len(b)>35000000 or not b.startswith(b'%PDF'):raise ValueError('invalid source')
+              if hashlib.sha256(b).hexdigest()!=s['sha256']:raise ValueError('source changed '+name)
+              (out/name).write_bytes(b)
+              return {'file':name,'bytes':len(b),'sha256':s['sha256']}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:r=list(pool.map(get,plan['sources'].items()))
+          print(json.dumps(r,indent=2))
           PY
-      - uses: actions/upload-artifact@v4
-        with:
-          name: paper-evidence-2
-          path: ${{ runner.temp }}/paper-evidence-2/
-          retention-days: 2
-          if-no-files-found: error
+      - name: Apply reviewed question map and source crops
+        run: |
+          python tools/paper_integrity_repair.py --plan tools/data/paper-integrity-20261011.json --sources "$RUNNER_TEMP/reviewed-pdfs" --apply
+      - name: Make reference numbering a real quality criterion
+        run: |
+          python - <<'PY'
+          import hashlib,pathlib
+          p=pathlib.Path('tools/cloud_quality.py'); raw=p.read_bytes()
+          assert hashlib.sha256(raw).hexdigest()=='92397ecf1cb499fca888f0e5e4fa6cee375ea42e5dbc80a96e52baa5f332e9c1','unexpected audit code version'
+          t=raw.decode('utf-8')
+          def replace(a,b):
+              global t
+              assert t.count(a)==1,repr(a)
+              t=t.replace(a,b,1)
+          replace('from urllib.parse import quote, unquote, urlsplit','from urllib.parse import quote, unquote, urlsplit\nfrom paper_identity import reference_number_issues')
+          replace("        if qids and qids!=list(range(1,len(qids)+1)):issues.append('题号非连续（需核原卷）')","        issues.extend(reference_number_issues(qids,fm))")
+          replace("'question_anchors':len(qids),'answer_blocks':len(usable),'has_answer_content':has_answer,","'question_anchors':len(qids),'answer_blocks':len(usable),'has_answer_content':has_answer,\n             'reference_question_count':fm.get('对照题本题量'),'missing_original_numbers':fm.get('缺失原题号'),")
+          replace("'files_with_machine_flags':sum(bool(r['issues']) for r in rows),","'files_with_machine_flags':sum(bool(r['issues']) for r in rows),\n           'reference_numbered_papers':sum(r['reference_question_count'] is not None for r in rows),\n           'confirmed_missing_original_questions':sum(len(r['missing_original_numbers'] or []) for r in rows),")
+          replace("'## 本轮具体边界','',","'## 材料尾部补全专项（历史）','',")
+          replace("    (root/'PROGRESS.md').write_text('\\n'.join(progress),encoding='utf-8')","    if (root/'reports/PAPER-INTEGRITY-20261011.jsonl').exists():\n        progress += ['## 原卷题序与漏题修复（2026-10-11）','',\n                     '已修国考2022副省级题序；江苏2023B类补1题至135；广东2020县级补3题至93；浙江2020A类补5题至98。',\n                     '合计新增9道真实题目、9张来源参考解析裁图；旧题干、选项、答案、19组共用材料保持原文并联动题序。',\n                     '广东原69—75、浙江原49—50仍缺，保留原题缺号，不能按连续重编号伪装完整。',\n                     '[四卷修复明细与边界](reports/PAPER-INTEGRITY-20261011.md)','']\n    (root/'PROGRESS.md').write_text('\\n'.join(progress),encoding='utf-8')")
+          replace("        readme.write_text(t,encoding='utf-8')","        t=t.replace('95,892',format(stats['unique_referenced_images'],','))\n        readme.write_text(t,encoding='utf-8')")
+          replace("        h+='当前证据：","        h+='有对照题本的卷同时核验 `对照题本题量`、`实有题数` 和 `缺失原题号`；已登记缺号是内容缺陷，不使用压缩连续号隐藏。\\n'\n        h+='当前证据：")
+          p.write_text(t,encoding='utf-8')
+          PY
+      - name: Stage new images explicitly before rebuilding tracked-path indexes
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          p=json.load(open('tools/data/paper-integrity-20261011.json'))
+          paths=[a['image_path'] for s in p['papers'] for a in s['additions']]
+          assert len(paths)==9
+          subprocess.run(['git','add','--',*paths],check=True)
+          PY
+          python tools/cloud_quality.py --build --verify-images
+      - name: Existing and regression tests
+        working-directory: tools
+        run: |
+          python -m unittest discover -s tests -q
+          python -m unittest cloud_quality_test paper_integrity_repair_test -v
+      - name: Whole catalog, actual image pixels and post-write invariants
+        run: |
+          python tools/cloud_quality.py --check --verify-images
+          python tools/verify_image_pixels.py
+          python - <<'PY'
+          import hashlib,json,pathlib,subprocess,sys
+          sys.path.insert(0,'tools')
+          from paper_integrity_repair import split_paper
+          from paper_identity import reference_number_issues
+          from cloud_quality import meta,image_refs
+          plan=json.load(open('tools/data/paper-integrity-20261011.json'))
+          results=[]
+          for s in plan['papers']:
+              t=pathlib.Path(s['path']).read_text();p=split_paper(t)
+              ids=sorted(p['qs']); gaps=s['missing_original_numbers']
+              assert set(ids)|set(gaps)==set(range(1,s['expected_questions']+1))
+              assert set(ids)==set(p['answers'])
+              issues=reference_number_issues(ids,meta(t)); assert len(issues)==bool(gaps),issues
+              results.append({'path':s['path'],'questions':len(ids),'answers':len(p['answers']),'missing_original_numbers':gaps,'image_refs':len(image_refs(t)),'sha256':hashlib.sha256(t.encode()).hexdigest()})
+          summary=json.load(open('reports/QUALITY-SUMMARY.json'))
+          assert summary['paper_files']==1186 and summary['unique_referenced_images']==95901
+          assert summary['image_references']==118509 and not summary['hard_integrity_errors']
+          assert summary['confirmed_missing_original_questions']==9
+          assert not summary['forbidden_tracked_files']
+          pathlib.Path('reports/PAPER-INTEGRITY-VERIFY.json').write_text(json.dumps({'results':results,'existing_tests':331,'additional_tests':28,'existing_images_unchanged':True,'new_images':9,'source_pdf_committed':False},ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps(results,ensure_ascii=False,indent=2))
+          PY
+      - name: Publish only the exact reviewed change set to the feature branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import base64,json,os,pathlib,subprocess
+          plan=json.load(open('tools/data/paper-integrity-20261011.json'))
+          allowed={s['path'] for s in plan['papers']}|{a['image_path'] for s in plan['papers'] for a in s['additions']}
+          allowed |= {'tools/cloud_quality.py','tools/data/paper-integrity-20261011.json','catalog/manifest.jsonl','COVERAGE-优先区.md','PROGRESS.md','README.md','QUALITY.md','reports/PAPER-INTEGRITY-20261011.jsonl','reports/PAPER-INTEGRITY-20261011.md','reports/PAPER-INTEGRITY-VERIFY.json','reports/QUALITY-SUMMARY.json','reports/DEFECTS.jsonl','reports/QUALITY-AUDIT.md','reports/PRIORITY-MISSING.json'}
+          changed=set(subprocess.check_output(['git','diff','--name-only','-z']).decode().split('\0'))|set(subprocess.check_output(['git','diff','--cached','--name-only','-z']).decode().split('\0'))|set(subprocess.check_output(['git','ls-files','--others','--exclude-standard','-z']).decode().split('\0'));changed.discard('')
+          assert changed<=allowed,sorted(changed-allowed)
+          assert not any(pathlib.Path(p).suffix.lower() in {'.pdf','.zip','.rar','.7z','.bin'} for p in changed)
+          subprocess.run(['git','add','--',*sorted(changed)],check=True)
+          subprocess.run(['git','config','user.name','gwy-quality-bot'],check=True)
+          subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+          old=subprocess.check_output(['git','rev-parse','HEAD']).decode().strip()
+          env=os.environ.copy();env['GIT_CONFIG_COUNT']='1';env['GIT_CONFIG_KEY_0']='http.https://github.com/.extraheader';env['GIT_CONFIG_VALUE_0']='AUTHORIZATION: basic '+base64.b64encode(('x-access-token:'+os.environ['GH_TOKEN']).encode()).decode()
+          branch='fix/paper-integrity-20261011'
+          remote=subprocess.check_output(['git','ls-remote','origin','refs/heads/'+branch],env=env).decode().split()[0]
+          assert remote==old,'Concurrent remote update; do not overwrite'
+          subprocess.run(['git','commit','-m','fix: 四卷原题序联动恢复，补9题及9张来源解析图；真实缺号入清单'],check=True)
+          subprocess.run(['git','push','origin','HEAD:refs/heads/'+branch],env=env,check=True)
+          print('Published commit:',subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
+          PY
