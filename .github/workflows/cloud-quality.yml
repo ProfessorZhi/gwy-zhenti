@@ -1,100 +1,29 @@
 name: Cloud quality review
 on:
   push:
-    branches: [docs/progress-20261011]
-    paths:
-      - '.github/workflows/cloud-quality.yml'
-      - 'tools/cloud_quality.py'
-      - 'tools/cloud_quality_test.py'
+    branches: [main, docs/progress-20261011]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 concurrency:
-  group: cloud-quality-${{ github.ref }}
-  cancel-in-progress: false
+  group: cloud-quality-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   review:
-    if: github.ref == 'refs/heads/docs/progress-20261011'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          persist-credentials: true
-      - name: Test existing pipeline and new safeguards
+          persist-credentials: false
+      - name: Test existing pipeline and exact-source safeguards
         working-directory: tools
         run: |
           python -m unittest discover -s tests -q
           python -m unittest cloud_quality_test -v
       - name: Install pinned image validator
         run: python -m pip install --disable-pip-version-check Pillow==11.3.0
-      - name: Read immutable candidate text only; never execute source code
-        run: |
-          python - <<'PY'
-          import hashlib, io, json, os, pathlib, urllib.request, zipfile
-          commit='ef3c7def82544fb8fe8a4913bebc6024910a6dc0'
-          url='https://codeload.github.com/zzcc-nb/gongkao-tiku/zip/'+commit
-          req=urllib.request.Request(url,headers={'User-Agent':'gwy-quality-source-check'})
-          with urllib.request.urlopen(req,timeout=120) as response:
-              data=response.read(100*1024*1024+1)
-          if len(data)>100*1024*1024: raise RuntimeError('Source archive exceeds cap')
-          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'source-review'
-          out.mkdir()
-          count=0
-          with zipfile.ZipFile(io.BytesIO(data)) as src:
-              for info in src.infolist():
-                  parts=pathlib.PurePosixPath(info.filename).parts
-                  if len(parts)<3 or '..' in parts or info.is_dir(): continue
-                  rel='/'.join(parts[1:])
-                  if rel.startswith('申论题库/') and rel.endswith('.md') and info.file_size<=2*1024*1024:
-                      target=out/rel; target.parent.mkdir(parents=True,exist_ok=True)
-                      target.write_bytes(src.read(info)); count+=1
-          (out/'_source.json').write_text(json.dumps({'repository':'zzcc-nb/gongkao-tiku','commit':commit,'source_archive_sha256':hashlib.sha256(data).hexdigest(),'candidate_md_count':count}))
-          print('Pinned candidate Markdown files:',count)
-          PY
-      - name: Apply exact-source tails and rebuild current catalog
-        run: |
-          python tools/cloud_quality.py --repair-source "$RUNNER_TEMP/source-review" --build --verify-images
-          python tools/cloud_quality.py --check --verify-images
-      - name: Verify scope and publish only reviewed files to this PR branch
-        env:
-          TARGET_BRANCH: docs/progress-20261011
-        run: |
-          python - <<'PY'
-          import json, os, pathlib, subprocess
-          root=pathlib.Path.cwd()
-          rows=[json.loads(s) for s in (root/'reports/REPAIRS-20261011.jsonl').read_text().splitlines() if s]
-          assert len(rows)==96, len(rows)
-          assert sum(x['restored_material_instances'] for x in rows)==172
-          summary=json.loads((root/'reports/QUALITY-SUMMARY.json').read_text())
-          assert summary['paper_files']==1186
-          assert summary['current_truncated_questions']==0
-          assert not summary['hard_integrity_errors']
-          assert summary['image_decode_check_performed']
-          documents={'README.md','QUALITY.md','PROGRESS.md','COVERAGE-优先区.md','catalog/manifest.jsonl','reports/REPAIRS-20261011.jsonl','reports/QUALITY-SUMMARY.json','reports/DEFECTS.jsonl','reports/QUALITY-AUDIT.md','reports/PRIORITY-MISSING.json'}
-          allowed=documents|{r['path'] for r in rows}
-          def output(*args): return subprocess.check_output(args).decode('utf-8')
-          changed=set(filter(None,output('git','diff','--name-only','-z').split('\0')))
-          changed|=set(filter(None,output('git','ls-files','--others','--exclude-standard','-z').split('\0')))
-          assert changed<=allowed, sorted(changed-allowed)
-          assert not any(pathlib.Path(x).suffix.lower() in {'.pdf','.zip','.rar','.7z'} for x in changed)
-          for rel in sorted(changed):subprocess.run(['git','add','--',rel],check=True)
-          head=output('git','rev-parse','HEAD').strip()
-          remote=output('git','ls-remote','origin','refs/heads/'+os.environ['TARGET_BRANCH']).split()[0]
-          if head!=remote:raise RuntimeError('PR branch advanced concurrently; refusing overwrite')
-          subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
-          subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
-          if subprocess.run(['git','diff','--cached','--quiet']).returncode:
-              subprocess.run(['git','commit','-m','fix: 同题原文补齐96份申论的172处已记录尾部截断；更新版本化质量清单'],check=True)
-              subprocess.run(['git','push','origin','HEAD:refs/heads/'+os.environ['TARGET_BRANCH']],check=True)
-          print('DELIVERY_HEAD='+output('git','rev-parse','HEAD').strip())
-          PY
-      - name: Upload only review evidence (private artifact, short retention)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: cloud-quality-evidence
-          path: |
-            reports/
-            catalog/manifest.jsonl
-          retention-days: 2
-          if-no-files-found: warn
+      - name: Read-only corpus, image-decoding and inventory verification
+        run: python tools/cloud_quality.py --check --verify-images
