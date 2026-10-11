@@ -1,0 +1,68 @@
+[
+  {
+    "area": "浙江",
+    "year": 2022,
+    "subject": "申论",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "江苏",
+    "year": 2026,
+    "subject": "行测",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "江苏",
+    "year": 2026,
+    "subject": "申论",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "上海",
+    "year": 2024,
+    "subject": "行测",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "北京",
+    "year": 2024,
+    "subject": "行测",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "北京",
+    "year": 2026,
+    "subject": "行测",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "北京",
+    "year": 2026,
+    "subject": "申论",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "深圳",
+    "year": 2021,
+    "subject": "行测",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "深圳",
+    "year": 2021,
+    "subject": "申论",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "深圳",
+    "year": 2026,
+    "subject": "行测",
+    "state": "not_collected_exam_identity_pending"
+  },
+  {
+    "area": "深圳",
+    "year": 2026,
+    "subject": "申论",
+    "state": "not_collected_exam_identity_pending"
+  }
+]
