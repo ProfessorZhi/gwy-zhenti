@@ -8,54 +8,30 @@ permissions:
 jobs:
   evidence:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        with:
-          persist-credentials: false
-      - name: Fetch fixed public exam sources as data only
+      - name: Fetch two independently published reference PDFs only
         run: |
           python - <<'PY'
-          import concurrent.futures, hashlib, json, os, pathlib, re, urllib.request, urllib.parse, zipfile
-          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'paper-evidence';out.mkdir()
-          def get(url, limit=35000000):
-              req=urllib.request.Request(url,headers={'User-Agent':'gwy-zhenti-source-audit/1.0'})
-              with urllib.request.urlopen(req,timeout=40) as f:
-                  b=f.read(limit+1)
-              if len(b)>limit: raise ValueError('oversized source')
-              return b
-          repo='Yaoyuan-Zhang319/AdministrativeAptitudeTest'; commit='1896de17764058dc1199d668edbf9f7e96cbc77a'
-          tree=json.loads(get(f'https://api.github.com/repos/{repo}/git/trees/{commit}?recursive=1',10000000))
-          if tree.get('truncated'):raise ValueError('truncated public source tree')
-          jobs=[('js2023b.pdf','https://static.32xueyuan.com/zq/u/cms/zj/202411/22141018p80w.pdf'),('zj2020a-zh.pdf','https://static.32xueyuan.com/zq/u/cms/zj/202109/25143430n6ok.pdf'),('gd2020-wensi.pdf','https://www.wensiedu.cn/wp-content/uploads/2022/06/b1a8c2d4f60a30d.pdf')]
-          selected=[]
-          for e in tree['tree']:
-              p=e['path']; b=p.rsplit('/',1)[-1]
-              if e['type']!='blob' or not p.lower().endswith('.pdf'):continue
-              target=(p.startswith('国考/') and '2022' in b and '副省' in b and '行测' in b) or ('浙江省考/' in p and '2020' in b and '行测' in b and re.search('[（(]A[类卷]?[）)]',b)) or ('广东省考/' in p and '2020' in b and '行测' in b and '县' in b)
-              if target:
-                  name=f'upstream-{len(selected):02d}.pdf';url=f'https://raw.githubusercontent.com/{repo}/{commit}/'+urllib.parse.quote(p,safe='/');selected.append({'file':name,'source_path':p,'source_commit':commit,'source_blob':e['sha'],'url':url});jobs.append((name,url))
-          (out/'selected.json').write_text(json.dumps(selected,ensure_ascii=False,indent=2),encoding='utf-8')
-          def fetch(j):
+          import concurrent.futures,hashlib,json,os,pathlib,urllib.request,urllib.parse
+          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'paper-evidence-2';out.mkdir()
+          url='https://upload.xingguanggongkao.com/pdf/'+urllib.parse.quote('2022年国家公务员录用考试《行测》真题（副省卷-考生回忆版）.pdf')+'?time=1706601118'
+          jobs=[('gk2022-xg.pdf',url),('zj2020a-gwy.pdf','https://www.chinagwy.org/files/20211227170045_75892.pdf')]
+          def get(j):
               name,url=j
               try:
-                  b=get(url)
-                  if not b.startswith(b'%PDF'):raise ValueError('not a PDF')
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'}),timeout=60) as f:b=f.read(25000001)
+                  if len(b)>25000000 or not b.startswith(b'%PDF'):raise ValueError('invalid or oversized PDF')
                   (out/name).write_bytes(b)
-                  return {'file':name,'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
-              except Exception as ex:return {'file':name,'url':url,'error':str(ex)}
-          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(fetch,jobs))
-          (out/'download-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
-          with zipfile.ZipFile(out/'repo-text.zip','w',zipfile.ZIP_DEFLATED) as z:
-              for prefix in ['国考/2022','省考/江苏/2023','省考/广东/2020','省考/浙江/2020','tools','catalog','reports']:
-                  for p in pathlib.Path(prefix).rglob('*'):
-                      if p.is_file() and p.suffix.lower() in {'.md','.py','.json','.jsonl','.txt'}:z.write(p,p.as_posix())
-              for p in ['README.md','QUALITY.md','PROGRESS.md','COVERAGE-优先区.md']:z.write(p,p)
-          print(json.dumps(results,ensure_ascii=False,indent=2))
+                  return dict(file=name,url=url,bytes=len(b),sha256=hashlib.sha256(b).hexdigest())
+              except Exception as e:return dict(file=name,url=url,error=str(e))
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:r=list(pool.map(get,jobs))
+          (out/'sources.json').write_text(json.dumps(r,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(r,ensure_ascii=False,indent=2))
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: paper-integrity-evidence
-          path: ${{ runner.temp }}/paper-evidence/
+          name: paper-evidence-2
+          path: ${{ runner.temp }}/paper-evidence-2/
           retention-days: 2
           if-no-files-found: error
