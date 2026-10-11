@@ -17,6 +17,7 @@ import subprocess
 import sys
 import unicodedata
 from urllib.parse import quote, unquote, urlsplit
+from paper_identity import reference_number_issues
 
 SOURCE_REPO = 'zzcc-nb/gongkao-tiku'
 SOURCE_COMMIT = 'ef3c7def82544fb8fe8a4913bebc6024910a6dc0'
@@ -267,7 +268,7 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
             if resolved not in tracked:image_missing.append(resolved)
         if image_missing:hard.extend({'path':rel,'missing':x} for x in image_missing);issues.append('图片文件缺失')
         if len(set(qids))!=len(qids):issues.append('题号重复')
-        if qids and qids!=list(range(1,len(qids)+1)):issues.append('题号非连续（需核原卷）')
+        issues.extend(reference_number_issues(qids,fm))
         if now is not None and now>0:issues.append('材料尾部截断')
         if count and usable and len(usable)!=count:issues.append('答案数量与题量不一致')
         if not has_answer:issues.append('未检测到参考答案（需复核正文）')
@@ -281,6 +282,7 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
         row={'path':rel,'sha256':sha(raw),'bytes':len(raw),'area':area,'year':str(fm.get('年份',p.parent.name)),
              'subject':subject,'paper_type':str(fm.get('卷型','未标注')),'declared_questions':count,
              'question_anchors':len(qids),'answer_blocks':len(usable),'has_answer_content':has_answer,
+             'reference_question_count':fm.get('对照题本题量'),'missing_original_numbers':fm.get('缺失原题号'),
              'historical_truncated_questions':old,'current_truncated_questions':now,
              'image_references':len(image_refs(t)),'issues':sorted(set(issues)),'notes':notes,
              'source_validation':state,'whole_paper_acceptance':'not_certified_by_this_audit'}
@@ -312,6 +314,8 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
            'current_truncated_files':sum(bool(r['current_truncated_questions']) for r in rows),
            'current_truncated_questions':sum(r['current_truncated_questions'] or 0 for r in rows),
            'files_with_machine_flags':sum(bool(r['issues']) for r in rows),
+           'reference_numbered_papers':sum(r['reference_question_count'] is not None for r in rows),
+           'confirmed_missing_original_questions':sum(len(r['missing_original_numbers'] or []) for r in rows),
            'whole_paper_acceptance':'not_established_by_structural_checks'}
     return rows,stats
 
@@ -385,7 +389,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
               '- [质量汇总数据](reports/QUALITY-SUMMARY.json)',
               '- [逐题补全来源与前后 SHA](reports/REPAIRS-20261011.jsonl)',
               '- [非重点地区资料缺失](资料缺失/README.md)','',
-              '## 本轮具体边界','',
+              '## 材料尾部补全专项（历史）','',
               '仅对已标记尾部截断的既有材料，使用固定版本的同题来源逐题校对，补入原文尾部。题干、作答要求、答案、原题号和图片未由补全程序改写。',
               '接回尾部不等于整卷原文已逐字验真，亦不等于已补全所有缺卷、缺答案或中间漏段。',
               '来源候选中的模考、训练和题干/材料不能精确对齐的项不会自动入库。未收录状态继续保留；非重点地区不主动找新卷。',
@@ -395,6 +399,12 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
               '```bash','python tools/cloud_quality.py --build --verify-images',
               'python tools/cloud_quality.py --check --verify-images','```','',
               '`catalog/manifest.jsonl` 是 GitHub 可直接读取的版本化清单；Windows `work/manifest.jsonl` 是工作台副本，拉取新提交后须由本地管线刷新。','']
+    if (root/'reports/PAPER-INTEGRITY-20261011.jsonl').exists():
+        progress += ['## 原卷题序与漏题修复（2026-10-11）','',
+                     '已修国考2022副省级题序；江苏2023B类补1题至135；广东2020县级补3题至93；浙江2020A类补5题至98。',
+                     '合计新增9道真实题目、9张来源参考解析裁图；旧题干、选项、答案、19组共用材料保持原文并联动题序。',
+                     '广东原69—75、浙江原49—50仍缺，保留原题缺号，不能按连续重编号伪装完整。',
+                     '[四卷修复明细与边界](reports/PAPER-INTEGRITY-20261011.md)','']
     (root/'PROGRESS.md').write_text('\n'.join(progress),encoding='utf-8')
     readme=root/'README.md'
     if readme.exists():
@@ -404,6 +414,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
         else:t=t.replace('\n','\n\n'+banner,1)
         t=t.replace('逐卷见 `work/manifest.jsonl`','逐卷见 `catalog/manifest.jsonl`')
         t=t.replace('详见下方「交付与同步」','当前核验见 [质量汇总](reports/QUALITY-SUMMARY.json)')
+        t=t.replace('95,892',format(stats['unique_referenced_images'],','))
         readme.write_text(t,encoding='utf-8')
     quality=root/'QUALITY.md'
     if quality.exists():
@@ -412,6 +423,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
         h+='当前截断数量读取 `现仍截断题数`；没有锚点仅列格式提醒，不推断题面缺失。\n'
         h+=f"最新重新生成：历史 {stats['historical_truncated_files']} 份 / {stats['historical_truncated_questions']} 道受影响题；现仍 {stats['current_truncated_files']} 份 / {stats['current_truncated_questions']} 道受影响题。\n"
         h+='以前的阶段数字和规则记录是历史，不覆盖当前字段。机器检查通过不等于逐字、逐图、逐答案验真。\n'
+        h+='有对照题本的卷同时核验 `对照题本题量`、`实有题数` 和 `缺失原题号`；已登记缺号是内容缺陷，不使用压缩连续号隐藏。\n'
         h+='当前证据：[逐卷清单](catalog/manifest.jsonl)、[告警](reports/QUALITY-AUDIT.md)、[本轮逐题补全证据](reports/REPAIRS-20261011.jsonl)。\n'
         t=re.sub(r'\n## GitHub 当前质量清单[\s\S]*\Z','',t)
         quality.write_text(t.rstrip()+'\n'+h,encoding='utf-8')

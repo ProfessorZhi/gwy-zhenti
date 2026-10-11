@@ -87,6 +87,7 @@
 {"area": "广州", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "双考区", "path": "省考/广东/2017/申论-广州市考-双考区.md", "subject": "申论", "year": "2017"}
 {"area": "广州", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月24日", "path": "省考/广东/2018/申论-广州市考-3月24日.md", "subject": "申论", "year": "2018"}
 {"area": "广州", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月25日", "path": "省考/广东/2018/申论-广州市考-3月25日.md", "subject": "申论", "year": "2018"}
+{"area": "广东", "current_truncated_questions": null, "issues": ["已确认仍缺原题号：69、70、71、72、73、74、75"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "县级卷", "path": "省考/广东/2020/行测-县级卷.md", "subject": "行测", "year": "2020"}
 {"area": "广东", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "乡镇卷", "path": "省考/广东/2023/申论-乡镇卷.md", "subject": "申论", "year": "2023"}
 {"area": "广东", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "公安", "path": "省考/广东/2024/申论-公安.md", "subject": "申论", "year": "2024"}
 {"area": "广东", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "县镇", "path": "省考/广东/2024/申论-县镇.md", "subject": "申论", "year": "2024"}
@@ -166,6 +167,7 @@
 {"area": "河南", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "市级卷", "path": "省考/河南/2025/申论-市级卷.md", "subject": "申论", "year": "2025"}
 {"area": "河南", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "县级卷", "path": "省考/河南/2026/申论-县级卷.md", "subject": "申论", "year": "2026"}
 {"area": "河南", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "市级卷", "path": "省考/河南/2026/申论-市级卷.md", "subject": "申论", "year": "2026"}
+{"area": "浙江", "current_truncated_questions": null, "issues": ["已确认仍缺原题号：49、50"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "A类", "path": "省考/浙江/2020/行测-A类.md", "subject": "行测", "year": "2020"}
 {"area": "浙江", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "A类", "path": "省考/浙江/2023/申论-A类.md", "subject": "申论", "year": "2023"}
 {"area": "浙江", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "B类", "path": "省考/浙江/2023/申论-B类.md", "subject": "申论", "year": "2023"}
 {"area": "浙江", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "A类", "path": "省考/浙江/2024/申论-A类.md", "subject": "申论", "year": "2024"}

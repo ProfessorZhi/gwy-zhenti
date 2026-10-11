@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "path": "国考/2022/行测-副省级.md",
+      "questions": 135,
+      "answers": 135,
+      "missing_original_numbers": [],
+      "image_refs": 189,
+      "sha256": "47e7a49f0553267069221fc62522d24eb91bf9129355d1a1dc656a3ce0be0ff5"
+    },
+    {
+      "path": "省考/江苏/2023/行测-B类.md",
+      "questions": 135,
+      "answers": 135,
+      "missing_original_numbers": [],
+      "image_refs": 283,
+      "sha256": "db340687c52940e3d2bcd81667dd5054bc4211299f2c76b7f82f0ffd8f632581"
+    },
+    {
+      "path": "省考/广东/2020/行测-县级卷.md",
+      "questions": 93,
+      "answers": 93,
+      "missing_original_numbers": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "image_refs": 440,
+      "sha256": "75c1b3f02e5b98bb0b0f534c72a406d33b3d928c3b5a1f5cd5dd0165f3f76be8"
+    },
+    {
+      "path": "省考/浙江/2020/行测-A类.md",
+      "questions": 98,
+      "answers": 98,
+      "missing_original_numbers": [
+        49,
+        50
+      ],
+      "image_refs": 462,
+      "sha256": "d5af560acbaeb4f93e4f4da23d9b4b643d1e8a4287dd3095924aa0450bdbe2f1"
+    }
+  ],
+  "existing_tests": 331,
+  "additional_tests": 28,
+  "existing_images_unchanged": true,
+  "new_images": 9,
+  "source_pdf_committed": false
+}
