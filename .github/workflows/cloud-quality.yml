@@ -28,7 +28,7 @@ jobs:
           root = pathlib.Path.cwd()
           paths = [p for p in subprocess.check_output(['git','ls-files','-z']).decode().split('\0') if p]
           out = pathlib.Path(os.environ['RUNNER_TEMP'])/'quality-review'
-          out.mkdir()
+          out.mkdir(exist_ok=True)
           with zipfile.ZipFile(out/'text-snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:
               for rel in paths:
                   p = root/rel
@@ -37,7 +37,28 @@ jobs:
               z.writestr('_tracked-paths.json', json.dumps(paths,ensure_ascii=False))
               z.writestr('_snapshot.json', json.dumps({'commit':subprocess.check_output(['git','rev-parse','HEAD']).decode().strip(),'paths':len(paths)}))
           print('Tracked files:',len(paths))
-          print('Text snapshot bytes:',(out/'text-snapshot.zip').stat().st_size)
+          PY
+      - name: Read pinned public candidate materials; never execute source code
+        run: |
+          python - <<'PY'
+          import hashlib, io, json, os, pathlib, urllib.request, zipfile
+          commit='ef3c7def82544fb8fe8a4913bebc6024910a6dc0'
+          url='https://codeload.github.com/zzcc-nb/gongkao-tiku/zip/'+commit
+          request=urllib.request.Request(url,headers={'User-Agent':'gwy-quality-source-check'})
+          with urllib.request.urlopen(request,timeout=120) as response:
+              data=response.read(100*1024*1024+1)
+          if len(data)>100*1024*1024: raise RuntimeError('Source archive exceeds review cap')
+          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'quality-review'
+          count=0
+          with zipfile.ZipFile(io.BytesIO(data)) as src, zipfile.ZipFile(out/'source-candidate.zip','w',zipfile.ZIP_DEFLATED) as dst:
+              for info in src.infolist():
+                  parts=pathlib.PurePosixPath(info.filename).parts
+                  if len(parts)<3 or '..' in parts or info.is_dir(): continue
+                  rel='/'.join(parts[1:])
+                  if rel.startswith('申论题库/') and rel.endswith('.md') and info.file_size<=2*1024*1024:
+                      dst.writestr(rel,src.read(info)); count+=1
+              dst.writestr('_source.json',json.dumps({'repository':'zzcc-nb/gongkao-tiku','commit':commit,'source_archive_sha256':hashlib.sha256(data).hexdigest(),'candidate_md_count':count}))
+          print('Public candidate Markdown files:',count)
           PY
       - name: Run repository-side audit when installed
         run: |
@@ -45,6 +66,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: private-text-review
-          path: ${{ runner.temp }}/quality-review/text-snapshot.zip
+          path: ${{ runner.temp }}/quality-review/*.zip
           retention-days: 2
           if-no-files-found: error
