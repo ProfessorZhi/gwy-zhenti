@@ -1,0 +1,42 @@
+name: Target image review
+on:
+  push:
+    branches: [fix/paper-integrity-20261011]
+    paths: ['.github/workflows/target-image-review.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Export images referenced by the four audited papers only
+        run: |
+          python - <<'PY'
+          import os, pathlib, zipfile, sys
+          sys.path.insert(0,'tools')
+          from cloud_quality import image_refs, resolve_image
+          paths=['国考/2022/行测-副省级.md','省考/江苏/2023/行测-B类.md','省考/广东/2020/行测-县级卷.md','省考/浙江/2020/行测-A类.md']
+          root=pathlib.Path.cwd(); out=pathlib.Path(os.environ['RUNNER_TEMP'])/'target-images.zip'
+          images=set()
+          for p in paths:
+              for ref in image_refs((root/p).read_text(encoding='utf-8')):
+                  rel=resolve_image(p,ref)
+                  if rel is None or rel.startswith('!'):raise ValueError('bad path')
+                  images.add(rel)
+          with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:
+              for rel in sorted(images):
+                  p=root/rel
+                  if p.is_symlink() or not p.is_file():raise ValueError('missing image')
+                  z.write(p,rel)
+          print('Images exported:',len(images),'bytes:',out.stat().st_size)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: target-images
+          path: ${{ runner.temp }}/target-images.zip
+          retention-days: 2
+          if-no-files-found: error
