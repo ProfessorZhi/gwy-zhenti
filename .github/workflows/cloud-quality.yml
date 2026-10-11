@@ -1,0 +1,50 @@
+name: Cloud quality review
+on:
+  push:
+    branches: [docs/progress-20261011]
+    paths:
+      - '.github/workflows/cloud-quality.yml'
+      - 'tools/cloud_quality.py'
+      - 'tools/cloud_quality_test.py'
+      - 'tools/cloud_repair.py'
+      - 'tools/cloud_repair_test.py'
+permissions:
+  contents: read
+concurrency:
+  group: cloud-quality-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Export tracked text for review (no PDFs, images or credentials)
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, subprocess, zipfile
+          root = pathlib.Path.cwd()
+          paths = [p for p in subprocess.check_output(['git','ls-files','-z']).decode().split('\0') if p]
+          out = pathlib.Path(os.environ['RUNNER_TEMP'])/'quality-review'
+          out.mkdir()
+          with zipfile.ZipFile(out/'text-snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for rel in paths:
+                  p = root/rel
+                  if not p.is_symlink() and p.suffix.lower() in {'.md','.py','.json','.jsonl','.toml','.ini'}:
+                      z.write(p, rel)
+              z.writestr('_tracked-paths.json', json.dumps(paths,ensure_ascii=False))
+              z.writestr('_snapshot.json', json.dumps({'commit':subprocess.check_output(['git','rev-parse','HEAD']).decode().strip(),'paths':len(paths)}))
+          print('Tracked files:',len(paths))
+          print('Text snapshot bytes:',(out/'text-snapshot.zip').stat().st_size)
+          PY
+      - name: Run repository-side audit when installed
+        run: |
+          if test -f tools/cloud_quality.py; then python tools/cloud_quality.py --check; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: private-text-review
+          path: ${{ runner.temp }}/quality-review/text-snapshot.zip
+          retention-days: 2
+          if-no-files-found: error
