@@ -8,32 +8,47 @@ permissions:
 jobs:
   sources:
     runs-on: ubuntu-24.04
-    timeout-minutes: 8
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
-      - name: Read bounded publisher pages, data only
+      - name: Read public answer links, no login or access bypass
         run: |
           python - <<'PY'
-          import concurrent.futures,hashlib,json,os,pathlib,urllib.request
-          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'confirmed-sources';out.mkdir()
-          jobs=[('js2026-b-full.html','https://www.congzhenggk.com/bishiti/shenlun/4421.html'),('js2026-b-reference.html','https://www.yeyulingfeng.com/a/1134499.html'),('js2026-a-reference.html','https://www.yeyulingfeng.com/a/1110030.html'),('congzheng-directory.html','https://www.congzhenggk.com/bishiti/shenlun/'),('bj2025-index.html','https://www.jike.vip/shuati/category/100984/100990.html')]
-          def get(j):
-              name,url=j
+          import concurrent.futures,hashlib,json,os,pathlib,re,urllib.request,urllib.parse
+          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'answer-evidence';out.mkdir()
+          def get(url):
+              with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'gwy-zhenti-source-review/1.0'}),timeout=30) as r:b=r.read(6000001)
+              if len(b)>6000000:raise ValueError('oversized')
+              return b
+          jobs=[]
+          for area in ['江苏','浙江']:
+              url='https://gwy.gkzhenti.cn/api/json?'+urllib.parse.urlencode({'cls':'申论','province':area})
+              index=json.loads(get(url))
+              for e in index:
+                  title=e['Title'];y=re.search(r'20\d{2}',title)
+                  if not y or not 2016<=int(y[0])<=2026 or re.search('模拟|模考|选调生考试|定向选调',title):continue
+                  paper=e['No'];pid=paper.rsplit('/',1)[-1]
+                  raw=get(paper).decode('utf-8',errors='replace')
+                  links=re.findall(r'href=[\"\']([^\"\']+)[\"\']',raw)
+                  for endpoint in ['answer','explain']:
+                      rel='/'+endpoint+'/'+pid
+                      if rel in links or 'https://gwy.gkzhenti.cn'+rel in links:
+                          jobs.append((endpoint+'-'+pid+'.html','https://gwy.gkzhenti.cn'+rel,title))
+          def fetch(j):
+              name,url,title=j
               try:
-                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'gwy-zhenti-source-review/1.0'}),timeout=35) as f:b=f.read(5000001)
-                  if len(b)>5000000:raise ValueError('oversized')
-                  (out/name).write_bytes(b)
-                  return {'file':name,'url':url,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)}
-              except Exception as e:return {'file':name,'url':url,'error':str(e)}
-          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:rows=list(ex.map(get,jobs))
+                  b=get(url);(out/name).write_bytes(b)
+                  return {'file':name,'url':url,'title':title,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+              except Exception as e:return {'file':name,'url':url,'title':title,'error':str(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:rows=list(ex.map(fetch,jobs))
           (out/'results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
-          print(json.dumps(rows,ensure_ascii=False))
+          print('read linked pages',len(rows),'success',sum('error' not in r for r in rows))
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: confirmed-2026-source-evidence
-          path: ${{ runner.temp }}/confirmed-sources/
+          name: core-answer-evidence
+          path: ${{ runner.temp }}/answer-evidence/
           retention-days: 2
           if-no-files-found: error
