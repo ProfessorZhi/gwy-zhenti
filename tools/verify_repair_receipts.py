@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-"""Verify current files against the ordered repair receipts and follow-up hashes.
-
-This checks traceability and unchanged delivered bytes, not factual truth of an
-exam source. A later authorized repair must append a superseding hash receipt.
+"""Verify current files against ordered repair receipts and follow-up hashes.
+Checks traceability and unchanged delivered bytes, not source factual truth.
 """
 from __future__ import annotations
 import argparse
@@ -22,6 +20,7 @@ RECEIPTS = (
     'WHITESPACE-FOLLOWUP-20261012.jsonl',
     'ROUND2-ESSAY-20261012.jsonl',
     'ROUND2-LAYOUT-20261012.jsonl',
+    'ROUND3-ANSWERS-20261012.jsonl',
 )
 
 def verify(root: Path) -> dict:
