@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-12",
+  "round": 2,
+  "base_commit": "54ec8064ba92f8bf1ffd41af5696e26ce0b6b104",
+  "modified_paper_files": 9,
+  "new_paper_files": 0,
+  "partial_essay_papers_restored": 8,
+  "old_questions_in_restored_papers": 11,
+  "restored_papers_question_count": 30,
+  "questions_added": 19,
+  "reference_answers_added": 21,
+  "existing_answer_bodies_preserved": 11,
+  "source_material_stem_requirement_paragraphs_checked": 351,
+  "layout_only_papers": 1,
+  "tests_passed": 412,
+  "referenced_images": 95903,
+  "current_paper_files": 1191,
+  "known_original_questions_still_missing": 25,
+  "priority_annual_subject_empty_cells": 10,
+  "official_verbatim_certification": false
+}

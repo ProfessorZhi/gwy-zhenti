@@ -10,6 +10,7 @@ import hashlib
 import json
 from pathlib import Path
 from paper_integrity_repair import split_paper
+from verify_essay_transcripts import verify as verify_essays
 
 RECEIPTS = (
     'REFERENCE-SEQUENCE-20261012.jsonl',
@@ -19,6 +20,8 @@ RECEIPTS = (
     'LAYOUT-FOLLOWUP-20261012.jsonl',
     'IMAGE-CROP-FOLLOWUP-20261012.jsonl',
     'WHITESPACE-FOLLOWUP-20261012.jsonl',
+    'ROUND2-ESSAY-20261012.jsonl',
+    'ROUND2-LAYOUT-20261012.jsonl',
 )
 
 def verify(root: Path) -> dict:
@@ -48,7 +51,8 @@ def verify(root: Path) -> dict:
         if n not in d['qs'] or n not in d['answers']:raise ValueError('Added question or answer lost: '+path+':'+str(n))
         for text,key in [(d['qs'][n]['text'],'question_sha256'),(d['answers'][n],'answer_sha256')]:
             if hashlib.sha256(text.encode()).hexdigest()!=a[key]:raise ValueError('Added question/answer body changed: '+path+':'+str(n))
-    return {'receipt_records':len(records),'distinct_delivered_files':len(latest),
+    essay_result=verify_essays(root)
+    return {**essay_result,'receipt_records':len(records),'distinct_delivered_files':len(latest),
             'paper_files':sum(p.endswith('.md') for p in latest),
             'image_files':sum(not p.endswith('.md') for p in latest),
             'added_question_answer_pairs_checked':len(questions),'status':'passed',
