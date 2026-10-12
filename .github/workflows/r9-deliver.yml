@@ -1,0 +1,74 @@
+name: R9 verified original answer checkpoint 93
+on:
+  push:
+    branches: [complete/essay-r9-all-20261013]
+    paths: ['.github/workflows/r9-deliver.yml']
+permissions:
+  contents: write
+concurrency:
+  group: r9-verified-delivery-single-writer
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.repository == 'ProfessorZhi/gwy-zhenti'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+      - name: Pinned existing test dependencies
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0 beautifulsoup4==4.13.4
+      - name: Verify all currently authored text and apply only exact corresponding answers
+        run: |
+          python -m py_compile tools/r9_apply_authored.py tools/verify_round9_authored.py tools/r9_report.py
+          python tools/r9_check_authored.py
+          python tools/r9_apply_authored.py --apply
+      - name: Rebuild corpus metadata without touching old source receipts
+        run: python tools/cloud_quality.py --build --verify-images
+      - name: Verify actual delivered prose and R1-R9 source-preservation chain
+        run: |
+          python tools/verify_round9_authored.py
+          python tools/verify_repair_receipts.py
+      - name: Recalculate honest per-task progress and reading-map aids
+        run: python tools/r9_report.py
+      - name: Full existing regression and actual image pixels
+        run: |
+          (cd tools && python -m unittest discover -s tests -q)
+          (cd tools && python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test round3_repair_test -q)
+          python tools/cloud_quality.py --check --verify-images
+          python tools/verify_image_pixels.py
+      - name: Push only verified source Markdown and current reports with concurrency check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          branch='complete/essay-r9-all-20261013'
+          assert os.environ['GITHUB_REPOSITORY']=='ProfessorZhi/gwy-zhenti'
+          assert os.environ['GITHUB_REF']=='refs/heads/'+branch
+          rs=[json.loads(x) for x in Path('reports/ROUND9-AUTHORED-20261013.jsonl').read_text(encoding='utf-8').splitlines() if x]
+          assert sum(len(r['added_references']) for r in rs)==93
+          exam_paths={r['path'] for r in rs}
+          allow=exam_paths | {'PROGRESS.md','README.md','QUALITY.md','COVERAGE-优先区.md',
+            'catalog/manifest.jsonl','reports/DEFECTS.jsonl','reports/QUALITY-AUDIT.md',
+            'reports/QUALITY-SUMMARY.json','reports/PRIORITY-MISSING.json','reports/PRIORITY-QUALITY-20261012.md',
+            'reports/ROUND9-AUTHORED-20261013.jsonl','reports/REPAIR-SUMMARY-20261013-R9.json',
+            'reports/ROUND9-COVERAGE-20261013.json','reports/ROUND9-REMAINING-20261013.json',
+            'reports/QUALITY-REPAIR-20261013-R9.md','reports/r9-context/read-map.md'}
+          helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f'
+          git=['git','-c','credential.helper='+helper]
+          def paths(args):return {p for p in subprocess.check_output(git+args).decode('utf-8').split('\0') if p}
+          changed=paths(['diff','--name-only','-z'])|paths(['ls-files','--others','--exclude-standard','-z'])
+          assert changed<=allow,'Unreviewed changed files: '+str(changed-allow)
+          assert {'reports/ROUND9-AUTHORED-20261013.jsonl','reports/REPAIR-SUMMARY-20261013-R9.json','PROGRESS.md'}<=changed
+          assert changed & exam_paths,'No actual exam Markdown changed'
+          subprocess.run(git+['add','--',*sorted(changed)],check=True)
+          subprocess.run(git+['-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','content: 第九轮实际回填93道原创参考作答并通过全库保真验收'],check=True)
+          head=subprocess.check_output(git+['ls-remote','origin','refs/heads/'+branch],text=True).split()[0]
+          assert head==os.environ['GITHUB_SHA'],'Concurrent branch change; refuse overwrite'
+          subprocess.run(git+['push','origin','HEAD:refs/heads/'+branch],check=True)
+          print('R9_ACTUAL_COMMIT='+subprocess.check_output(git+['rev-parse','HEAD'],text=True).strip())
+          PY
