@@ -20,4 +20,5 @@ jobs:
             /国考/
             /省考/
             /reports/
-      - run: python tools/round5_bulk.py
+      - run: python tools/round5_delivery.py
+      - run: python tools/round5_requests.py
