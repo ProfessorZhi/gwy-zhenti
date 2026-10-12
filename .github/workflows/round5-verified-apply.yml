@@ -1,0 +1,87 @@
+name: Round5 verified answer repair
+on:
+  push:
+    branches: [fix/r5-verified-answers-20261013]
+    paths:
+      - .github/workflows/round5-verified-apply.yml
+permissions:
+  contents: write
+jobs:
+  repair:
+    if: github.repository == 'ProfessorZhi/gwy-zhenti' && github.ref == 'refs/heads/fix/r5-verified-answers-20261013'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 1
+          show-progress: false
+      - name: Install pinned validators
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0 beautifulsoup4==4.13.4
+      - name: Test all source matching guards
+        working-directory: tools
+        run: |
+          python -m unittest discover -s tests -q
+          python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test round3_repair_test -q
+      - name: Apply only fixed repository sourced answers
+        run: |
+          python tools/round5_delivery.py --apply
+          python tools/verify_round5_repairs.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('reports/REPAIR-SUMMARY-20261012-R5.json')
+          s=json.loads(p.read_text(encoding='utf-8'))
+          assert (s['modified_papers'],s['answers_added'],s['recognized_missing_slots_before'])==(41,102,901)
+          assert not s['rejected'], s['rejected']
+          PY
+      - name: Rebuild manifest and author fact based delivery report
+        run: |
+          python tools/cloud_quality.py --build --verify-images
+          python tools/round5_report.py
+      - name: Verify current corpus and all historical source receipts
+        run: |
+          python tools/cloud_quality.py --check --verify-images
+          python tools/verify_round5_repairs.py
+          python tools/verify_repair_receipts.py
+          python tools/verify_image_pixels.py
+      - name: Commit exact verified changes on branch only
+        env:
+          EXPECTED_BRANCH: fix/r5-verified-answers-20261013
+        run: |
+          python - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          branch=os.environ['EXPECTED_BRANCH']
+          assert os.environ['GITHUB_REPOSITORY']=='ProfessorZhi/gwy-zhenti'
+          assert os.environ['GITHUB_REF']=='refs/heads/'+branch
+          rr=[json.loads(x) for x in Path('reports/ROUND5-ANSWERS-20261012.jsonl').read_text(encoding='utf-8').splitlines() if x]
+          paper_paths={x['path'] for x in rr}
+          assert len(paper_paths)==41
+          allowed=paper_paths|{
+            'reports/ROUND5-ANSWERS-20261012.jsonl',
+            'reports/ROUND5-UNRESOLVED-20261012.json',
+            'reports/REPAIR-SUMMARY-20261012-R5.json',
+            'reports/QUALITY-REPAIR-20261013-R5.md',
+            'reports/QUALITY-SUMMARY.json','reports/QUALITY-AUDIT.md',
+            'reports/DEFECTS.jsonl','reports/PRIORITY-MISSING.json',
+            'reports/PRIORITY-QUALITY-20261012.md',
+            'catalog/manifest.jsonl','COVERAGE-优先区.md',
+            'PROGRESS.md','README.md','QUALITY.md'
+          }
+          def filenames(cmd):
+            return set(filter(None,subprocess.check_output(cmd).decode('utf-8').split('\0')))
+          changed=filenames(['git','diff','--name-only','-z'])|filenames(['git','ls-files','--others','--exclude-standard','-z'])
+          assert changed<=allowed,'Unexpected file changes: '+str(sorted(changed-allowed))
+          assert paper_paths<=changed,'Some planned papers not actually written'
+          remote=subprocess.check_output(['git','ls-remote','origin','refs/heads/'+branch],text=True).split()[0]
+          assert remote==os.environ['GITHUB_SHA'],'Ref moved; refusing concurrent overwrite'
+          subprocess.run(['git','add','--',*sorted(changed)],check=True)
+          subprocess.run(['git','-c','user.name=github-actions[bot]',
+                          '-c','user.email=41898282+github-actions[bot]@users.noreply.github.com',
+                          'commit','-m','fix: 库内同题来源补齐41份申论的102处参考答案'],check=True)
+          subprocess.run(['git','push','origin','HEAD:refs/heads/'+branch],check=True)
+          print('DELIVERED_SHA='+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          print('DELIVERED_ANSWER_COUNT=102')
+          PY
