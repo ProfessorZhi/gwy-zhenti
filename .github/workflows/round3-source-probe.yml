@@ -3,7 +3,7 @@ on:
   push:
     branches: [fix/priority-source-repair-r3-20261012]
     paths:
-      - tools/round3_source_probe.py
+      - tools/round3_source_detail.py
       - .github/workflows/round3-source-probe.yml
 permissions:
   contents: read
@@ -18,4 +18,4 @@ jobs:
       - name: Install source readers
         run: python -m pip install --disable-pip-version-check beautifulsoup4==4.13.4 PyMuPDF==1.26.3
       - name: Inspect selected sources and existing target papers
-        run: python tools/round3_source_probe.py
+        run: python tools/round3_source_detail.py
