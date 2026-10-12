@@ -1,4 +1,4 @@
-name: R9 prepare grounded essay work packets
+name: R9 prepare line-addressable grounded essay packets
 on:
   push:
     branches: [complete/essay-r9-all-20261013]
@@ -22,9 +22,11 @@ jobs:
             /reports/
             /国考/
             /省考/
-      - name: Extract only existing task and material text
-        run: python tools/r9_prepare.py
-      - name: Store packets on the dedicated work branch only
+      - name: Extract existing task text and reflow long source lines without loss
+        run: |
+          python tools/r9_prepare.py
+          python tools/r9_reflow_packets.py
+      - name: Store reading packets only on the dedicated branch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -40,7 +42,7 @@ jobs:
           changed=paths(['diff','--name-only','-z']) | paths(['ls-files','--others','--exclude-standard','-z'])
           assert changed and all(p.startswith('reports/r9-context/') and p.endswith(('.md','.json')) for p in changed)
           subprocess.run(cmd+['add','--',*sorted(changed)],check=True)
-          subprocess.run(cmd+['-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','audit: 存储剩余申论逐题原材料与字数要求，未改写原卷'],check=True)
+          subprocess.run(cmd+['-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','audit: 原题材料阅读副本长行折行，原卷与全部非换行字符保持'],check=True)
           head=subprocess.check_output(cmd+['ls-remote','origin','refs/heads/'+branch],text=True).split()[0]
           assert head==os.environ['GITHUB_SHA'],'Concurrent branch change; refuse push'
           subprocess.run(cmd+['push','origin','HEAD:refs/heads/'+branch],check=True)
