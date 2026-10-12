@@ -1,0 +1,36 @@
+name: Priority corpus completion
+on:
+  push:
+    branches: [fix/priority-completion-20261012]
+    paths: ['.github/workflows/priority-completion.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Export current tracked text and hashes for review
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,pathlib,subprocess,zipfile
+          root=pathlib.Path.cwd(); out=pathlib.Path(os.environ['RUNNER_TEMP'])/'review';out.mkdir()
+          paths=[p for p in subprocess.check_output(['git','ls-files','-z']).decode().split('\0') if p]
+          with zipfile.ZipFile(out/'current-text.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for rel in paths:
+                  p=root/rel
+                  if p.is_file() and not p.is_symlink() and p.suffix.lower() in {'.md','.py','.json','.jsonl','.txt','.yml','.toml','.ini'}:
+                      z.write(p,rel)
+              z.writestr('_tracked-paths.json',json.dumps(paths,ensure_ascii=False))
+              z.writestr('_snapshot.json',json.dumps({'commit':subprocess.check_output(['git','rev-parse','HEAD']).decode().strip(),'path_count':len(paths)}))
+          print('Exported tracked text only:',len(paths),'paths')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: current-priority-text
+          path: ${{ runner.temp }}/review/current-text.zip
+          retention-days: 2
+          if-no-files-found: error
