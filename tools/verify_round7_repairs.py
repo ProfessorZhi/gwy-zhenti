@@ -16,7 +16,7 @@ def records(root):
  return [json.loads(z) for z in p.read_text(encoding='utf-8').splitlines() if z.strip()]
 
 def verify(root):
- root=Path(root).resolve();rr=records(root)
+ root=Path(root).resolve();rr=records(root);cache_by_path={r['path']:r for r in rr}
  expected=list(sorted([*root.glob('国考/*/申论*.md'),*root.glob('省考/*/*/申论*.md')]))
  if len(rr)!=len(expected) or len(rr)!=738:raise ValueError('Not all essay documents covered')
  expected_paths={p.relative_to(root).as_posix() for p in expected}
@@ -79,7 +79,6 @@ def verify(root):
   else:
    if r['added_references'] or r['questions_before']:raise ValueError('Unparsed paper must not add guessed answers')
   if r['guide_only']:guideonly+=1
- cache_by_path  # validate dictionary presence at function entry
  if added<10 or filled<9:raise ValueError('Unexpected low reference count')
  return {'status':'passed','documents':len(rr),'guide_only_documents':guideonly,'new_reference_blocks':added,
          'newly_filled_answer_positions':filled,'new_example_essays':essays,'question_blocks_preserved':questions,
@@ -108,7 +107,6 @@ def snapshot(root,dest):
  (dest/'reports'/RECEIPT).unlink()
 
 def main():
- global cache_by_path
- root=Path(__file__).resolve().parents[1];rr=records(root);cache_by_path={r['path']:r for r in rr}
+ root=Path(__file__).resolve().parents[1]
  print(json.dumps(verify(root),ensure_ascii=False))
 if __name__=='__main__':main()
