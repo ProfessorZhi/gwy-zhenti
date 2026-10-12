@@ -20,24 +20,4 @@ jobs:
             /国考/
             /省考/
             /reports/
-      - run: python tools/round5_probe.py
-      - name: Inspect source corpus actual contents without copying answers
-        run: |
-          python - <<'PY'
-          import json,re
-          from urllib.request import Request,urlopen
-          from urllib.parse import quote
-          from concurrent.futures import ThreadPoolExecutor
-          base='https://raw.githubusercontent.com/mkih76/SLB/d04d48e4bb0553cffe35aab91c468b07c835074e/data/shenlun_zhenti/'
-          def read(url):
-            with urlopen(Request(url,headers={'User-Agent':'source-audit'}),timeout=30) as r:return r.read(1500000).decode('utf-8')
-          rows=json.loads(read(base+'_manifest.json'))
-          selected=[r for r in rows if r['year']>=2016 and r['province'] in ['浙江','江苏','北京','上海']]
-          def check(r):
-            try:
-              s=read(base+quote(r['file']));hs=[x for x in s.splitlines() if re.search('答案|解析|作答要求',x)]
-              return {'title':r['title'],'file':r['file'],'answer_mentions':sum('答案' in x for x in hs),'chars':len(s),'tail':s[-450:]}
-            except Exception as e:return {'file':r['file'],'error':str(e)}
-          res=list(ThreadPoolExecutor(max_workers=6).map(check,selected))
-          print('EXTERNAL_CORPUS',json.dumps({'total':len(rows),'inspected':len(res),'with_answer_mentions':sum(r.get('answer_mentions',0)>0 for r in res),'details':res[:12],'priority_2022_2026':[r for r in res if ('浙江_2022' in r['file'] or '江苏_2026' in r['file'] or '北京_2026' in r['file'])]},ensure_ascii=False))
-          PY
+      - run: python tools/round5_bulk.py
