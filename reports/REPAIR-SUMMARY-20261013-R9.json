@@ -1,0 +1,122 @@
+{
+  "status": "verified",
+  "baseline": "8c23683610441d82836b907e20c586f2b4622646",
+  "all_essay_files": 738,
+  "parsed_essay_files": 729,
+  "unparsed_documents": [
+    {
+      "path": "省考/广东/2016/申论-广州市考.md",
+      "error": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-单考区.md",
+      "error": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-双考区.md",
+      "error": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+      "error": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+      "error": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广西/2018/申论-A类.md",
+      "error": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广西/2025/申论-B类.md",
+      "error": "Missing explicit requirements"
+    },
+    {
+      "path": "省考/陕西/2024/申论-B类.md",
+      "error": "Missing explicit requirements"
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-统考.md",
+      "error": "No unambiguous explicit task sequence"
+    }
+  ],
+  "actual_authored_answer_positions": 93,
+  "actual_edited_papers": 33,
+  "remaining_incomplete_positions": 496,
+  "remaining_blank_positions": 492,
+  "remaining_old_length_or_image_warnings": 4,
+  "authored_full_essays": 21,
+  "classification": {
+    "小题参考作答/已收录": 1796,
+    "作文范文/已收录": 213,
+    "小题参考作答/待补": 393,
+    "作文范文/待补": 99,
+    "小题参考作答/正文或图像待复核": 3,
+    "作文范文/正文偏短待复核": 1
+  },
+  "source_limitations": [
+    {
+      "id": "R9-0001",
+      "path": "省考/上海/2017/申论-行政执法卷.md",
+      "number": 1,
+      "source_limit": "原题中的材料编号已损坏为‘给定资料给定资料-给定资料’，无法核实指定范围；本稿按当前卷全部材料归纳，保留原题异文，不冒称范围已核实。"
+    },
+    {
+      "id": "R9-0014",
+      "path": "省考/云南/2022/申论-省市卷.md",
+      "number": 4,
+      "source_limit": "原题同时出现‘以城、乡、人为题’和‘自拟题目’，为避免改变命题范围，本文保留‘城、乡、人’作正题，另设副题。"
+    },
+    {
+      "id": "R9-0039",
+      "path": "省考/内蒙古/2024/申论-盟市卷.md",
+      "number": 4,
+      "source_limit": "原转录未保留划线样式；结合材料末段及成公教育同题解读，以见势、借势、造势为论述主线，不擅自恢复原卷划线位置。"
+    },
+    {
+      "id": "R9-0056",
+      "path": "省考/四川/2016/申论-下半年.md",
+      "number": 1,
+      "source_limit": "当前转录的材料十末句及个别材料存在残缺。本稿只概括可读材料中的明确措施，不补造残缺政策表述。"
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "modified_papers": 33,
+    "actual_original_answer_positions": 93,
+    "original_question_blocks_preserved": 127,
+    "nonempty_previous_answers_preserved": 34,
+    "frozen_pending_positions": 589,
+    "not_yet_written": 496,
+    "source_limitations": [
+      {
+        "id": "R9-0001",
+        "path": "省考/上海/2017/申论-行政执法卷.md",
+        "number": 1,
+        "source_limit": "原题中的材料编号已损坏为‘给定资料给定资料-给定资料’，无法核实指定范围；本稿按当前卷全部材料归纳，保留原题异文，不冒称范围已核实。"
+      },
+      {
+        "id": "R9-0014",
+        "path": "省考/云南/2022/申论-省市卷.md",
+        "number": 4,
+        "source_limit": "原题同时出现‘以城、乡、人为题’和‘自拟题目’，为避免改变命题范围，本文保留‘城、乡、人’作正题，另设副题。"
+      },
+      {
+        "id": "R9-0039",
+        "path": "省考/内蒙古/2024/申论-盟市卷.md",
+        "number": 4,
+        "source_limit": "原转录未保留划线样式；结合材料末段及成公教育同题解读，以见势、借势、造势为论述主线，不擅自恢复原卷划线位置。"
+      },
+      {
+        "id": "R9-0056",
+        "path": "省考/四川/2016/申论-下半年.md",
+        "number": 1,
+        "source_limit": "当前转录的材料十末句及个别材料存在残缺。本稿只概括可读材料中的明确措施，不补造残缺政策表述。"
+      }
+    ],
+    "unparsed_documents": 9,
+    "boundary": "Verified full draft bytes, word limits and source alignment; not an exam score or automatic semantic certification."
+  },
+  "boundary": "Authored study references, not institution originals or scored answer sheets; unparsed/source-limited tasks remain explicitly qualified."
+}
