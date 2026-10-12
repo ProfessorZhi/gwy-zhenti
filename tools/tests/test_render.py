@@ -45,7 +45,7 @@ class TestRender(unittest.TestCase):
 
     def test_question_count_across_modules(self):
         self.assertEqual(self.out.n_questions, 3)
-        self.assertEqual(self.out.numbering, "原卷重建")
+        self.assertEqual(self.out.numbering, "模块拼接序号（未核对原卷）")
 
     def test_numbering_is_rebuilt_contiguously(self):
         nums = [int(m) for m in re.findall(r"^#{2,4}\s*第\s*(\d+)\s*题", self.out.body, re.M)]

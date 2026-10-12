@@ -1,0 +1,22 @@
+{
+  "base_commit": "7eb640e8fc4457fb9eb46f2abf56050e50e1ac8d",
+  "date": "2026-10-12",
+  "paper_files_modified_or_added": 133,
+  "existing_paper_files_modified": 128,
+  "new_paper_files": 5,
+  "xingce_papers_reviewed": 79,
+  "xingce_original_question_bodies_preserved_before_whitespace_cleanup": 10134,
+  "xingce_questions_added": 68,
+  "essay_whole_text_formatted": 30,
+  "essay_whole_sources_restored": 23,
+  "essay_questions_added": 45,
+  "essay_source_answers_added": 105,
+  "new_images": 2,
+  "current_paper_count": 1191,
+  "current_image_count": 95903,
+  "current_image_references": 118521,
+  "current_annual_subject_empty_cells": 10,
+  "known_original_questions_still_missing": 25,
+  "local_unit_tests_passed": 386,
+  "source_status_boundary": "Public fixed reconstructions and publisher reference answers; no official whole-corpus verbatim certification."
+}
