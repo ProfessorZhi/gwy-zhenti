@@ -32,6 +32,8 @@ jobs:
           subprocess.run(['git','-c','credential.helper='+helper,'fetch','--no-tags','--depth=1','origin','53c4646b3b63b1661e2dca41bc6437d46bc7254a'],check=True)
           PY
       - name: Verify extraction and preservation without writing
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           python -m py_compile tools/round6_source_merge.py
           python tools/round6_source_merge.py
