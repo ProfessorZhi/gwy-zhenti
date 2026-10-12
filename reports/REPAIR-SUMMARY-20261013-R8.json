@@ -1,0 +1,34 @@
+{
+  "papers": 4,
+  "authored_answer_versions": 9,
+  "newly_filled": 7,
+  "new_full_essay_versions": 3,
+  "errors": [],
+  "apply": true,
+  "status": "verified",
+  "verification": {
+    "status": "passed",
+    "papers": 4,
+    "new_original_versions": 9,
+    "newly_filled_positions": 7,
+    "new_full_essay_versions": 3,
+    "previous_nonempty_answers_preserved": 6,
+    "boundary": "Original AI study examples only; no certified examination scores."
+  },
+  "actual_coverage": {
+    "status": "verified",
+    "corpus_essay_documents": 738,
+    "parsed": 729,
+    "unparsed": 9,
+    "known_answer_positions": 2505,
+    "available_reference_positions": 1916,
+    "missing_reference_positions": 585,
+    "needs_text_layout_review": 4,
+    "missing_example_essays": 120,
+    "new_original_reference_versions": 9,
+    "original_newly_filled_positions": 7,
+    "original_full_essay_versions": 3,
+    "full_corpus_machine_flags": 584,
+    "boundary": "AI-authored educational examples; these are not independently scored high-mark essays."
+  }
+}
