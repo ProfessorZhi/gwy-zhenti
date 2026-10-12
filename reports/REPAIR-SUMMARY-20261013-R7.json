@@ -1,0 +1,20 @@
+{
+  "status": "verified",
+  "essay_papers": 738,
+  "parsed": 729,
+  "unparsed": 9,
+  "missing_answer_slots_before": 609,
+  "missing_answer_slots_after": 602,
+  "completed_original_examples_added": 7,
+  "updated_exam_papers": 4,
+  "machine_flagged_files": 584,
+  "reference_kind": "Independent AI-assisted example, not institutional transcript or graded exam answer",
+  "verification": {
+    "status": "passed",
+    "modified_papers": 4,
+    "answers_added": 7,
+    "original_question_blocks_preserved": 13,
+    "existing_reference_answers_preserved": 6,
+    "boundary": "AI-assisted independently written study references, NOT scored exam scripts or copied institutional answer texts."
+  }
+}

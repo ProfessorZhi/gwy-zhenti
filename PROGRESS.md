@@ -1,6 +1,6 @@
 # 真题库总进度
 
-更新批次：2026-10-12。机器清单指纹：`04ee512a3fbedc9bf9e5a7a3342ba675a02049b71027b40da55bca8bab7fcc8f`。
+更新批次：2026-10-12。机器清单指纹：`ba2b18de5b810bfde05e11097d71e069dcca7535cd0c8a0dfedabe80ea2eeac1`。
 
 **图文库已交付；内容质量分项维护，不宣称全国所有原卷已经完整。**
 
@@ -94,3 +94,9 @@ python tools/cloud_quality.py --check --verify-images
 全库25道已登记行测缺题、10个重点地区年度科目空白及47个待核实/资料缺失占位仍未消除。
 
 [第六轮逐卷说明](reports/QUALITY-REPAIR-20261013-R6.md) · [第六轮可核对统计](reports/REPAIR-SUMMARY-20261013-R6.json)
+
+## 第七轮：全库申论答案覆盖（2026-10-13）
+
+已建立全部738份申论的逐卷答案台账，729份题目/答案可识别、9份待复核。本轮对江苏2026B、浙江2025A及浙江2026A/C四卷新增7个明确标注AI辅助原创的完整示范作答，保留机构同题对照入口，不将原创稿冒充已获实考分数的高分答卷。识别出的缺完整参考答案位置609→602；这不是独立真题数量。
+
+[全库逐卷统计](reports/SHENLUN-QUALITY-COVERAGE-20261013.md) · [完整逐题JSONL](reports/SHENLUN-COVERAGE-ALL-738-20261013.jsonl) · [可逆验收记录](reports/REPAIR-SUMMARY-20261013-R7.json)
