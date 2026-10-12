@@ -20,10 +20,10 @@ jobs:
           persist-credentials: false
       - name: Install pinned validators
         run: python -m pip install --disable-pip-version-check requests==2.32.3 beautifulsoup4==4.13.4 Pillow==11.3.0
-      - name: Apply reviewed missing answers
-        run: python tools/priority_r3_answers.py
       - name: Inspect full national and Zhejiang source identity
         run: python tools/priority_r3_whole.py
+      - name: Apply reviewed missing answers
+        run: python tools/priority_r3_answers.py
       - name: Existing regression tests
         working-directory: tools
         run: |
