@@ -57,7 +57,6 @@ def main():
  progress=ROOT/'PROGRESS.md';cur=progress.read_text(encoding='utf-8')
  m=re.search(r'(?m)^## 第三轮：',base)
  if m:cur=re.sub(r'\n## 第三轮：[\s\S]*\Z','',cur).rstrip()+'\n\n'+base[m.start():].rstrip()+'\n'
- cur+='#'+'' if False else ''  # explicit no-op, retained only for deterministic text generation
  cur+='\n## 第六轮：不同来源补录合并（2026-10-13）\n\n'
  cur+=f"第五轮已经合并102处来源参考答案，此轮在不覆盖已有答案的条件下又补190处，累计292处；识别出的缺完整答案位置由{before}降到{after}，另9份申论尚无法严格结构解析。这些是文档位置，不是独立原题数。\n\n"
  cur+='全库25道已登记行测缺题、10个重点地区年度科目空白及47个待核实/资料缺失占位仍未消除。\n\n'
