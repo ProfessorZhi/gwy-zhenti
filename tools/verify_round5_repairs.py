@@ -23,6 +23,8 @@ def reverse(text,r):
 def verify(root):
  root=Path(root).resolve();rr=records(root);by={r['path']:r for r in rr};cache={};count=0;oldanswers=0;questions=0
  if len(by)!=len(rr):raise ValueError('Duplicate receipt paths')
+ from round5_owned import load_pack,evidence,SOURCE_REPO,SOURCE_REV
+ data=load_pack() if (root/'tools/data/round5-owned/manifest.json').exists() else None
  def prior(rel):
   p=(root/rel).resolve()
   if not p.is_relative_to(root) or not p.is_file():raise ValueError('Unsafe or absent file')
@@ -52,6 +54,29 @@ def verify(root):
     k=b.qkey(od['questions'][n]);dk=b.qkey(d['questions'][dn]);sim=1. if k==dk else __import__('difflib').SequenceMatcher(None,k,dk,autojunk=False).ratio()
     gg=b.shingles(d['materials'][dn]);tm=b.norm(od['materials'][n]);cov=sum(x in tm for x in gg)/max(1,len(gg))
     if sim<.97 or (joint and sim!=1) or len(gg)<35 or cov<(.985 if joint else .95):raise ValueError('Evidence below threshold')
+   elif a['kind']=='user_owned_transcript':
+    if a.get('source_repository')!=SOURCE_REPO or a.get('source_revision')!=SOURCE_REV:
+     raise ValueError('Unexpected original source identity')
+    n_chars=a.get('source_answer_chars')
+    if not isinstance(n_chars,int) or n_chars<60 or n_chars>15000:
+     raise ValueError('Missing bounded source answer length')
+    delivered=nd['answers'][n]
+    source_text=delivered[:n_chars]
+    if g.digest(source_text)!=a.get('source_answer_sha256') or not delivered[n_chars:].startswith('\\n\\n'):
+     raise ValueError('Original source answer bytes differ')
+    if len(a.get('source_sha256',''))!=64 or len(a.get('source_blob',''))!=40 or not a.get('source_path'):
+     raise ValueError('Missing original source identity/hash')
+    if data:
+     idx=a['source_packet_row']
+     if not isinstance(idx,int) or idx<0 or idx>=len(data['answers']):
+      raise ValueError('Source packet index out of range')
+     row=data['answers'][idx];src=data['sources'][row['source']]
+     if (row['answer']!=source_text or row['answer_sha256']!=a['source_answer_sha256'] or
+         src['path']!=a['source_path'] or src['sha256']!=a['source_sha256'] or src['blob']!=a['source_blob']):
+      raise ValueError('Source packet contents and receipt disagree')
+     proof=evidence(od,n,src,row)
+     if not proof or abs(proof['stem_similarity']-a['proof']['stem_similarity'])>1e-8 or proof['material_sample_hits']!=a['proof']['material_sample_hits']:
+      raise ValueError('Original task/material evidence could not be reproduced')
    else:raise ValueError('Unknown answer source kind')
    count+=1
  return {'status':'passed','papers':len(rr),'added_answers':count,'original_question_blocks_preserved':questions,'existing_answers_preserved':oldanswers,'boundary':'Source matching and byte preservation, not official answer certification.'}
