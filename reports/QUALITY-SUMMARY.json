@@ -81,8 +81,8 @@
       "行测": 18
     },
     "江苏": {
-      "files": 66,
-      "申论": 37,
+      "files": 70,
+      "申论": 41,
       "行测": 29
     },
     "江西": {
@@ -101,8 +101,8 @@
       "行测": 11
     },
     "浙江": {
-      "files": 57,
-      "申论": 30,
+      "files": 58,
+      "申论": 31,
       "行测": 27
     },
     "海南": {
@@ -171,31 +171,31 @@
       "行测": 16
     }
   },
-  "confirmed_missing_original_questions": 9,
+  "confirmed_missing_original_questions": 25,
   "current_truncated_files": 0,
   "current_truncated_questions": 0,
-  "files_with_machine_flags": 287,
+  "files_with_machine_flags": 640,
   "forbidden_tracked_files": [],
   "hard_integrity_errors": [],
   "historical_truncated_files": 112,
   "historical_truncated_questions": 207,
   "image_decode_check_performed": true,
   "image_decode_errors": [],
-  "image_references": 118509,
-  "inventory_sha256": "2cf1a51f36a95f2d57ff5179cf2c30aab53d578d435750414c33d5e47be287a9",
+  "image_references": 118521,
+  "inventory_sha256": "3115fc8dabc32d956cee211377d5d3263370221bde2c77075b61046befe3fa8a",
   "missing_image_references": 0,
-  "paper_files": 1186,
+  "paper_files": 1191,
   "placeholder_files": 47,
   "placeholder_states": {
     "待核实": 18,
     "资料缺失": 29
   },
-  "reference_numbered_papers": 4,
+  "reference_numbered_papers": 134,
   "schema_version": 1,
   "subjects": {
-    "申论": 733,
+    "申论": 738,
     "行测": 453
   },
-  "unique_referenced_images": 95901,
+  "unique_referenced_images": 95903,
   "whole_paper_acceptance": "not_established_by_structural_checks"
 }

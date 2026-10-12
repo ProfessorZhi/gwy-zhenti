@@ -22,7 +22,7 @@ from paper_identity import reference_number_issues
 SOURCE_REPO = 'zzcc-nb/gongkao-tiku'
 SOURCE_COMMIT = 'ef3c7def82544fb8fe8a4913bebc6024910a6dc0'
 PRIORITY = ('浙江','江苏','上海','北京','天津','广东','广州','深圳','福建')
-DATE = '2026-10-11'
+DATE = '2026-10-12'
 FM = re.compile(r'\A---\r?\n(.*?)\r?\n---(?:\r?\n|$)', re.S)
 QBLOCK = re.compile(r'^## 第 (\d+) 题[^\n]*\n(.*?)(?=^## |\Z)', re.M | re.S)
 MAT = re.compile(r'^### 给定材料[^\S\n]*\n(.*?)\n### 作答要求[^\S\n]*\n(.*)', re.M | re.S)
@@ -253,7 +253,14 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
         count=int(declared.group(1)) if declared else len(qids)
         details=DETAIL.findall(t)
         usable=[int(n) for n,body in details if (re.search(r'\*\*答案\*\*[：:]\s*(?:[A-G]+|正确|错误)', body) or len(re.sub(r'<[^>]*>','',body).strip())>40) and not re.fullmatch(r'\s*(?:答案缺失|待核实|暂无答案)[。\s]*',body)]
-        has_answer=bool(usable) or bool(re.search(r'^##\s*(?:参考答案|答案与解析)\s*\n[\s\S]{100,}',t,re.M))
+        declared_answer_ids=fm.get('已收录参考答案题号')
+        if isinstance(declared_answer_ids,list):
+            # Explicit adjudication outranks body-length heuristics: a long warning
+            # saying that an answer is missing is not itself a usable answer.
+            usable=[n for n in usable if n in declared_answer_ids]
+            has_answer=bool(usable)
+        else:
+            has_answer=bool(usable) or bool(re.search(r'^##\s*(?:参考答案|答案与解析)\s*\n[\s\S]{100,}',t,re.M))
         now=fm.get('现仍截断题数')
         if now is None:
             m=re.search(r'材料截断\s*(\d+)\s*题',str(fm.get('校验状态','')))
@@ -271,7 +278,12 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
         issues.extend(reference_number_issues(qids,fm))
         if now is not None and now>0:issues.append('材料尾部截断')
         if count and usable and len(usable)!=count:issues.append('答案数量与题量不一致')
+        sequence_reviewed=bool(fm.get('题序证据') or fm.get('原卷题号映射记录'))
+        if subject=='行测' and not sequence_reviewed and '原卷重建' in str(fm.get('题号口径','')):
+            issues.append('历史模块拼接题序未获原卷证据核对')
         if not has_answer:issues.append('未检测到参考答案（需复核正文）')
+        if fm.get('缺参考答案题号'):issues.append('已核实部分或全部参考答案未收录')
+        if '单一完整题面来源' in str(fm.get('校验状态','')):issues.append('单一整理版来源，完整原件真实性待交叉复核')
         if not qids:notes.append('题号未结构化；不据此认定题面残缺')
         state=str(fm.get('校验状态',''))
         if '★来源无图片' in state:issues.append('来源声明题图或共用材料缺失')
@@ -281,7 +293,8 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
         notes.append('有参考答案不代表其为官方答案或已经验真')
         row={'path':rel,'sha256':sha(raw),'bytes':len(raw),'area':area,'year':str(fm.get('年份',p.parent.name)),
              'subject':subject,'paper_type':str(fm.get('卷型','未标注')),'declared_questions':count,
-             'question_anchors':len(qids),'answer_blocks':len(usable),'has_answer_content':has_answer,
+             'question_anchors':len(qids),'answer_blocks':len(usable),'has_answer_content':has_answer,'missing_answer_numbers':fm.get('缺参考答案题号'),
+             'review_scope':fm.get('整卷核验状态'),'sequence_basis':fm.get('题号口径'),
              'reference_question_count':fm.get('对照题本题量'),'missing_original_numbers':fm.get('缺失原题号'),
              'historical_truncated_questions':old,'current_truncated_questions':now,
              'image_references':len(image_refs(t)),'issues':sorted(set(issues)),'notes':notes,
@@ -385,6 +398,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
               '## 当前入口','',
               '- [重点地区逐年图文试卷](COVERAGE-优先区.md)',
               '- [当前质量事项](reports/QUALITY-AUDIT.md)',
+              '- [2026-10-12 已修内容与残余缺口](reports/QUALITY-REPAIR-20261012.md)',
               '- [逐卷机器清单及 SHA-256](catalog/manifest.jsonl)',
               '- [质量汇总数据](reports/QUALITY-SUMMARY.json)',
               '- [逐题补全来源与前后 SHA](reports/REPAIRS-20261011.jsonl)',
@@ -405,6 +419,19 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
                      '合计新增9道真实题目、9张来源参考解析裁图；旧题干、选项、答案、19组共用材料保持原文并联动题序。',
                      '广东原69—75、浙江原49—50仍缺，保留原题缺号，不能按连续重编号伪装完整。',
                      '[四卷修复明细与边界](reports/PAPER-INTEGRITY-20261011.md)','']
+    receipt_path=root/'reports/REFERENCE-SEQUENCE-20261012.jsonl'
+    if receipt_path.exists():
+        seq=[json.loads(l) for l in receipt_path.read_text(encoding='utf-8').splitlines() if l.strip()]
+        ew=[json.loads(l) for l in (root/'reports/ESSAY-WHOLE-20261012.jsonl').read_text(encoding='utf-8').splitlines() if l.strip()]
+        ef=[json.loads(l) for l in (root/'reports/ESSAY-REPAIR-20261012.jsonl').read_text(encoding='utf-8').splitlines() if l.strip()]
+        newp=[json.loads(l) for l in (root/'reports/NEW-PAPERS-20261012.jsonl').read_text(encoding='utf-8').splitlines() if l.strip()]
+        progress += ['## 重点区整卷与题序专项（2026-10-12）','',
+                     f"{len(set(r['path'] for r in seq))} 份行测恢复固定同题来源顺序、答案和共用材料关联；补回 {sum(len(r['additions']) for r in seq)} 道题。顺序依据为固定回忆题本，不冒充官方原件。",
+                     f"{len(ef)} 份申论整卷增加材料/题目导航，另 {len(ew)} 份按公开整卷来源恢复材料和作答要求（其中 {sum(r['action']=='new_variant' for r in ew)} 份为新分卷）。",
+                     f"新增江苏2026申论B类机构公开整理版 {len(newp)} 份；单一完整题面来源，未取得第二份完整原件，且没有参考答案。A/C及该年行测仍未取得。",
+                     '江苏2024行测A原76、96、110、111及江苏2025行测C的12题仍缺；广东2020原69—75、浙江2020A原49—50也仍未补到可靠原文。',
+                     '历史“统考”桶可能包含重叠小题；年度科目有文件不等于全部分卷齐全。',
+                     '[本轮修复与残余缺口](reports/QUALITY-REPAIR-20261012.md)；[国考、江苏、浙江逐卷质量台账](reports/PRIORITY-QUALITY-20261012.md)。','']
     (root/'PROGRESS.md').write_text('\n'.join(progress),encoding='utf-8')
     readme=root/'README.md'
     if readme.exists():
@@ -424,7 +451,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
         h+=f"最新重新生成：历史 {stats['historical_truncated_files']} 份 / {stats['historical_truncated_questions']} 道受影响题；现仍 {stats['current_truncated_files']} 份 / {stats['current_truncated_questions']} 道受影响题。\n"
         h+='以前的阶段数字和规则记录是历史，不覆盖当前字段。机器检查通过不等于逐字、逐图、逐答案验真。\n'
         h+='有对照题本的卷同时核验 `对照题本题量`、`实有题数` 和 `缺失原题号`；已登记缺号是内容缺陷，不使用压缩连续号隐藏。\n'
-        h+='当前证据：[逐卷清单](catalog/manifest.jsonl)、[告警](reports/QUALITY-AUDIT.md)、[本轮逐题补全证据](reports/REPAIRS-20261011.jsonl)。\n'
+        h+='当前证据：[逐卷清单](catalog/manifest.jsonl)、[告警](reports/QUALITY-AUDIT.md)、[历史尾部补全证据](reports/REPAIRS-20261011.jsonl)、[当前专项修复](reports/QUALITY-REPAIR-20261012.md)。\n'
         t=re.sub(r'\n## GitHub 当前质量清单[\s\S]*\Z','',t)
         quality.write_text(t.rstrip()+'\n'+h,encoding='utf-8')
 

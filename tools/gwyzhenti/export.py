@@ -39,6 +39,17 @@ def _sha256_bytes(b):
 
 
 def _write(path, data_bytes):
+    # A stale source export must never silently replace a source-reviewed paper.
+    # Equal bytes are safe; changed reviewed files require an explicit repair plan.
+    path = os.fspath(path)
+    if path.endswith('.md') and os.path.isfile(path):
+        with open(path, 'rb') as fh:
+            existing = fh.read()
+        if existing != data_bytes:
+            text = existing.decode('utf-8-sig', errors='replace')
+            front = re.match(r'\A---\r?\n(.*?)\r?\n---', text, re.S)
+            if front and re.search(r'(?m)^(?:题序证据|分卷核对证据|原卷校核证据|原卷题号映射记录|完整性证据|补全证据):', front.group(1)):
+                raise ValueError('Refusing to overwrite source-reviewed paper from stale export: ' + path)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     tmp = path + ".tmp"
     with open(tmp, "wb") as fh:

@@ -73,9 +73,9 @@ def _frontmatter(key, nature, form, sources, numbering):
 
 def render_paper(parts, key, *, nature, form, sources, modules, image_map):
     """parts 必须已按 MODULE_ORDER 排好；modules 与之等长，给出模块名。"""
-    # 1) frontmatter 契约（先按「模块内序号」估，若模块齐则用「原卷重建」）
+    # 1) frontmatter 契约（先按「模块内序号」估，模块齐也只证明拼接顺序，不证明原卷题序）
     standard = [m for m in MODULE_ORDER if m in set(modules)]
-    numbering = "原卷重建" if standard == list(modules) else "模块内序号"
+    numbering = "模块拼接序号（未核对原卷）" if standard == list(modules) else "模块内序号"
 
     blocks, answers, used = [], [], []
     offset = 0
