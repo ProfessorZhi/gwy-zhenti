@@ -13,42 +13,39 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
-      - name: Read public answer links, no login or access bypass
+      - name: Fetch fixed public PDF evidence and publisher candidate page
         run: |
           python - <<'PY'
           import concurrent.futures,hashlib,json,os,pathlib,re,urllib.request,urllib.parse
-          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'answer-evidence';out.mkdir()
-          def get(url):
-              with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'gwy-zhenti-source-review/1.0'}),timeout=30) as r:b=r.read(6000001)
-              if len(b)>6000000:raise ValueError('oversized')
+          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'old-answer-evidence';out.mkdir()
+          def get(url,limit=35000000):
+              with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'gwy-zhenti-evidence/1.0'}),timeout=35) as f:b=f.read(limit+1)
+              if len(b)>limit:raise ValueError('oversized')
               return b
+          repo='Yaoyuan-Zhang319/AdministrativeAptitudeTest';commit='1896de17764058dc1199d668edbf9f7e96cbc77a'
+          tree=json.loads(get('https://api.github.com/repos/'+repo+'/git/trees/'+commit+'?recursive=1',10000000))
+          if tree.get('truncated'):raise ValueError('tree incomplete')
           jobs=[]
-          for area in ['江苏','浙江']:
-              url='https://gwy.gkzhenti.cn/api/json?'+urllib.parse.urlencode({'cls':'申论','province':area})
-              index=json.loads(get(url))
-              for e in index:
-                  title=e['Title'];y=re.search(r'20\d{2}',title)
-                  if not y or not 2016<=int(y[0])<=2026 or re.search('模拟|模考|选调生考试|定向选调',title):continue
-                  paper=e['No'];pid=paper.rsplit('/',1)[-1]
-                  raw=get(paper).decode('utf-8',errors='replace')
-                  links=re.findall(r'href=[\"\']([^\"\']+)[\"\']',raw)
-                  for endpoint in ['answer','explain']:
-                      rel='/'+endpoint+'/'+pid
-                      if rel in links or 'https://gwy.gkzhenti.cn'+rel in links:
-                          jobs.append((endpoint+'-'+pid+'.html','https://gwy.gkzhenti.cn'+rel,title))
+          for x in tree['tree']:
+              p=x['path'];b=p.rsplit('/',1)[-1]
+              if x['type']!='blob' or not b.endswith('.pdf') or '申论' not in b:continue
+              if not (('江苏' in p and '2016' in b) or ('浙江' in p and ('2016' in b or '2017' in b))):continue
+              jobs.append((f'evidence-{len(jobs):02d}.pdf','https://raw.githubusercontent.com/'+repo+'/'+commit+'/'+urllib.parse.quote(p,safe='/'),p))
+          jobs += [('js2026-xc-listing.html','https://sjds.net/796945.html','publisher listing'),('gz2017-double.html','https://www.eol.cn/gongwuyuan/difang/zhenti/201703/t20170327_1501555.shtml','double examination area listing')]
           def fetch(j):
-              name,url,title=j
+              name,url,source=j
               try:
-                  b=get(url);(out/name).write_bytes(b)
-                  return {'file':name,'url':url,'title':title,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
-              except Exception as e:return {'file':name,'url':url,'title':title,'error':str(e)}
-          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:rows=list(ex.map(fetch,jobs))
-          (out/'results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
-          print('read linked pages',len(rows),'success',sum('error' not in r for r in rows))
+                  b=get(url)
+                  if name.endswith('.pdf') and not b.startswith(b'%PDF'):raise ValueError('not PDF')
+                  (out/name).write_bytes(b)
+                  return {'file':name,'url':url,'source':source,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)}
+              except Exception as e:return {'file':name,'url':url,'source':source,'error':str(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:rows=list(ex.map(fetch,jobs))
+          (out/'results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps(rows,ensure_ascii=False))
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: core-answer-evidence
-          path: ${{ runner.temp }}/answer-evidence/
+          name: old-answer-evidence
+          path: ${{ runner.temp }}/old-answer-evidence/
           retention-days: 2
           if-no-files-found: error
