@@ -8,7 +8,10 @@ _parse_original=app.parse_complete
 
 def parse_complete(ps,expected):
     corrected=[];edits=[]
-    for text in ps:
+    for original in ps:
+        text=original.replace('\r\n','\n').replace('\r','\n')
+        if text!=original:
+            edits.append({'kind':'line_endings','source_paragraph_sha256':sha(original),'normalized_paragraph_sha256':sha(text),'conversion':'CRLF/CR to LF; non-whitespace content unchanged'})
         m=re.fullmatch(r'(材料|资料)(\d+)[（(](\d{5,})[）)]',text)
         if m:
             clean=m[1]+m[2];edits.append({'source_header':text,'rendered_header':clean,'source_internal_id':m[3]});text=clean
@@ -45,6 +48,7 @@ _render_original=app.render
 
 def render(rel,parsed,src,extras=None):
     new,r=_render_original(rel,parsed,src,extras)
+    if '\r' in new:raise ValueError('Carriage return would make read-back hashes unstable: '+rel)
     r['source_header_corrections']=parsed.get('source_header_corrections',[])
     return new,r
 
