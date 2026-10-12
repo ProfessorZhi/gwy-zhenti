@@ -2,13 +2,16 @@ name: Round5 bulk source audit
 on:
   push:
     branches: [fix/bulk-gap-r5-20261012]
-    paths: ['tools/round5*', '.github/workflows/round5-bulk.yml']
+    paths:
+      - 'tools/round5*'
+      - 'tools/data/round5-owned/**'
+      - '.github/workflows/round5-bulk.yml'
 permissions:
   contents: read
 jobs:
   inspect:
     runs-on: ubuntu-24.04
-    timeout-minutes: 12
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -20,5 +23,7 @@ jobs:
             /国考/
             /省考/
             /reports/
-      - run: python tools/round5_delivery.py
-      - run: python tools/round5_requests.py
+      - name: Verify 25-source-part data and match candidates, read-only
+        run: python tools/round5_apply_all.py
+      - name: Identify unresolved topic pools without guessing
+        run: python tools/round5_requests.py
