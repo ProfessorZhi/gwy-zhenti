@@ -22,7 +22,7 @@ jobs:
           show-progress: false
       - name: Install pinned readers and validators
         run: python -m pip install --disable-pip-version-check beautifulsoup4==4.13.4 Pillow==11.3.0
-      - name: Apply exact reviewed scope
+      - name: Apply exact reviewed scope and check read-back hashes
         run: |
           python tools/round3_source_boundaries.py --apply
           python - <<'PY'
@@ -34,6 +34,7 @@ jobs:
           assert sum(r['new_questions'] for r in rs)==3
           assert sum(len(r['added_answers']) for r in rs)==5
           PY
+          python tools/verify_round3_repairs.py
       - name: Regenerate current inventory and truthful report
         run: |
           python tools/cloud_quality.py --build --verify-images
