@@ -2,7 +2,7 @@ name: R7 whole essay reference audit
 on:
   push:
     branches: [fix/shenlun-all-r7-20261013]
-    paths: ['tools/r7_reference_audit.py','tools/r7_reference_matching.py','.github/workflows/r7-reference-audit.yml']
+    paths: ['tools/r7_reference_audit.py','tools/r7_reference_matching.py','tools/r7_owned_matching.py','tools/data/r7-owned/**','.github/workflows/r7-reference-audit.yml']
 permissions:
   contents: read
 jobs:
@@ -16,11 +16,13 @@ jobs:
           show-progress: false
           sparse-checkout-cone-mode: false
           sparse-checkout: |
+            /.gitattributes
+            /.gitignore
             /tools/
             /国考/
             /省考/
             /reports/
       - name: Audit every essay and identify exact source requests
         run: python tools/r7_reference_audit.py
-      - name: Match same-question reference versions without requiring identical wording
-        run: python tools/r7_reference_matching.py
+      - name: Verify fixed source parts and target question matches
+        run: python tools/r7_owned_matching.py
