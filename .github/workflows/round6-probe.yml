@@ -1,0 +1,30 @@
+name: Round6 source-safe conflict resolution preview
+on:
+  push:
+    branches: [fix/source-owned-r6-20261013]
+    paths:
+      - 'tools/round6*'
+      - '.github/workflows/round6-probe.yml'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tools/
+            /国考/
+            /省考/
+            /reports/
+      - name: Fetch fixed prior preview as DATA, not execution code
+        run: git fetch --no-tags --depth=1 origin 53c4646b3b63b1661e2dca41bc6437d46bc7254a
+      - name: Verify extraction and preservation without writing
+        run: |
+          python -m py_compile tools/round6_source_merge.py
+          python tools/round6_source_merge.py
