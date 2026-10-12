@@ -1,0 +1,24 @@
+name: R9 authored text checkpoint
+on:
+  push:
+    branches: [complete/essay-r9-all-20261013]
+    paths: ['.github/workflows/r9-draft-check.yml']
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.gitignore
+            /.gitattributes
+            /tools/r9_check_authored.py
+            /reports/r9-context/manifest.json
+            /reports/r9-authored/
+      - run: python tools/r9_check_authored.py
