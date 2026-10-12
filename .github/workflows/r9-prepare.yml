@@ -16,6 +16,8 @@ jobs:
           show-progress: false
           sparse-checkout-cone-mode: false
           sparse-checkout: |
+            /.gitignore
+            /.gitattributes
             /tools/
             /reports/
             /国考/
@@ -31,16 +33,16 @@ jobs:
           branch='complete/essay-r9-all-20261013'
           assert os.environ['GITHUB_REPOSITORY']=='ProfessorZhi/gwy-zhenti'
           assert os.environ['GITHUB_REF']=='refs/heads/'+branch
-          def paths(args):
-            return {x for x in subprocess.check_output(['git',*args]).decode().split('\0') if x}
-          changed=paths(['diff','--name-only','-z']) | paths(['ls-files','--others','--exclude-standard','-z'])
-          assert changed and all(p.startswith('reports/r9-context/') and p.endswith(('.md','.json')) for p in changed)
-          subprocess.run(['git','add','--',*sorted(changed)],check=True)
-          subprocess.run(['git','-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','audit: 存储剩余申论逐题原材料与字数要求，未改写原卷'],check=True)
           helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f'
           cmd=['git','-c','credential.helper='+helper]
+          def paths(args):
+            return {x for x in subprocess.check_output(cmd+args).decode().split('\0') if x}
+          changed=paths(['diff','--name-only','-z']) | paths(['ls-files','--others','--exclude-standard','-z'])
+          assert changed and all(p.startswith('reports/r9-context/') and p.endswith(('.md','.json')) for p in changed)
+          subprocess.run(cmd+['add','--',*sorted(changed)],check=True)
+          subprocess.run(cmd+['-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','audit: 存储剩余申论逐题原材料与字数要求，未改写原卷'],check=True)
           head=subprocess.check_output(cmd+['ls-remote','origin','refs/heads/'+branch],text=True).split()[0]
           assert head==os.environ['GITHUB_SHA'],'Concurrent branch change; refuse push'
           subprocess.run(cmd+['push','origin','HEAD:refs/heads/'+branch],check=True)
-          print('R9_PACKET_COMMIT='+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          print('R9_PACKET_COMMIT='+subprocess.check_output(cmd+['rev-parse','HEAD'],text=True).strip())
           PY
