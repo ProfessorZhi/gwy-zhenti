@@ -1,4 +1,4 @@
-name: R9 authored text checkpoint 68
+name: R9 authored text and MD preview 93
 on:
   push:
     branches: [complete/essay-r9-all-20261013]
@@ -19,12 +19,12 @@ jobs:
             /.gitignore
             /.gitattributes
             /tools/
-            /reports/r9-context/manifest.json
-            /reports/r9-authored/
-            /reports/r9-authored-corrections.json
+            /reports/
             /国考/
             /省考/
       - name: Strict per-answer draft checks
         run: python tools/r9_check_authored.py
+      - name: Preview original Markdown writeback and body preservation
+        run: python tools/r9_apply_authored.py
       - name: Read-only exact-question material-evidence reuse discovery
         run: python tools/r9_find_reuse.py
