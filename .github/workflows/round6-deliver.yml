@@ -1,4 +1,4 @@
-name: Round6 verified 190-answer delivery
+name: Round6 verified 190-answer delivery (full receipts)
 on:
   push:
     branches: [fix/source-owned-r6-20261013]
