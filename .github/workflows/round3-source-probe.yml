@@ -3,7 +3,7 @@ on:
   push:
     branches: [fix/priority-source-repair-r3-20261012]
     paths:
-      - tools/round3_priority_repair.py
+      - tools/round3_source_boundaries.py
       - tools/round3_repair_apply.py
       - .github/workflows/round3-source-probe.yml
 permissions:
@@ -16,7 +16,10 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
+          show-progress: false
       - name: Install source readers
         run: python -m pip install --disable-pip-version-check beautifulsoup4==4.13.4 PyMuPDF==1.26.3
+      - name: Test safeguards
+        run: cd tools && python -m unittest round3_repair_test -v
       - name: Dry-run source-backed essay repairs
-        run: python tools/round3_repair_apply.py
+        run: python tools/round3_source_boundaries.py
