@@ -1,4 +1,4 @@
-name: Round9 three-exam complete answer delivery
+name: Round9 verified eleven answers (isolated R8 baseline)
 on:
   push:
     branches: [feat/essay-r9-more-complete-20261013]
