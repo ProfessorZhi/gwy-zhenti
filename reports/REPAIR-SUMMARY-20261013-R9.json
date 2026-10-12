@@ -1,0 +1,55 @@
+{
+  "status": "verified",
+  "apply": true,
+  "papers": 3,
+  "complete_model_authored_answers_added": 11,
+  "authored_answers_with_external_comparison_urls": 11,
+  "scope": "Original AI-assisted training answers only, with public same-paper comparison links.",
+  "docs": [
+    {
+      "path": "省考/上海/2019/申论-行政执法卷.md",
+      "numbers": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "省考/安徽/2026/申论-A类.md",
+      "numbers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "path": "省考/重庆/2024/申论-一卷.md",
+      "numbers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "baseline": "8c23683610441d82836b907e20c586f2b4622646",
+  "missing_answers_before": 585,
+  "missing_answers_after": 574,
+  "all_essay_MD": 738,
+  "parsed_exam_MD": 729,
+  "unparsed_exam_MD": 9,
+  "now_readable_reference_positions": 1927,
+  "body_or_layout_warnings": 4,
+  "new_full_length_example_essays": 3,
+  "new_short_question_references": 8,
+  "machine_flagged_files": 581,
+  "verification": {
+    "status": "passed",
+    "modified_papers": 3,
+    "answers_added": 11,
+    "original_question_blocks_preserved": 11,
+    "existing_reference_answers_preserved": 0,
+    "boundary": "AI-assisted independently written study references, NOT scored exam scripts or copied institutional answer texts."
+  }
+}
