@@ -44,7 +44,7 @@ def main():
     lines += [
         '', '## 本轮已确认的数量','',
         '- 修改既有申论文件 '+str(len(rows))+' 份；补录已存在来源参考答案 '+str(checked['added_answers'])+' 处；不新增试卷，也不改行测。',
-        '- 严格与扩展解析器合计识别到 '+str(info['parsed_essays'])+' 份申论，原有缺答案位置 '+str(info['recognized_missing_slots_before'])+'，补录后仍缺 '+str(len(unresolved['parsed_missing']))+'；另有 '+str(len(unresolved['unparsed']))+' 份暂不能安全解析。与第四轮统计口径不同，因此不能简单用两轮差值估算新增缺口。',
+        '- 严格与扩展解析器合计识别到 '+str(info['parsed_essays'])+' 份申论，原有缺答案位置 '+str(info['recognized_missing_slots_before'])+'，补录后仍缺 '+str(len(unresolved['parsed_missing']))+'；另有 '+str(len(unresolved['unparsed']))+' 份暂不能安全解析。第四轮仅解析670份，记录676个缺答案位置并有68份未解析；第五轮扩展至729份可解析、9份未解析，新口径原有901个缺位，补102后剩799个。统计基数扩大不代表旧答案被删。',
         '- 已识别内容包括历史重叠卷，不能据此推断唯一真题数量。',
         '- 前四轮修复凭据保持原有字节，逆向还原 R5 修订后连续验证。既有答案 '+str(checked['existing_answers_preserved'])+' 处保持、题目 '+str(checked['original_question_blocks_preserved'])+' 处保持。',
         '- 行测已登记缺题 '+str(stats['confirmed_missing_original_questions'])+' 道（江苏浙江18、广东7），重点年度科目空白 '+str(len(json.loads((ROOT/'reports/PRIORITY-MISSING.json').read_text())))+' 格，另有 '+str(stats['placeholder_files'])+' 个缺失或待核实占位，本轮未消除。',
