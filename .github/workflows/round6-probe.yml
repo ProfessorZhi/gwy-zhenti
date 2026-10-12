@@ -23,7 +23,14 @@ jobs:
             /省考/
             /reports/
       - name: Fetch fixed prior preview as DATA, not execution code
-        run: git fetch --no-tags --depth=1 origin 53c4646b3b63b1661e2dca41bc6437d46bc7254a
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import subprocess
+          helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f'
+          subprocess.run(['git','-c','credential.helper='+helper,'fetch','--no-tags','--depth=1','origin','53c4646b3b63b1661e2dca41bc6437d46bc7254a'],check=True)
+          PY
       - name: Verify extraction and preservation without writing
         run: |
           python -m py_compile tools/round6_source_merge.py
