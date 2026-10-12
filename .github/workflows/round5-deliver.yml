@@ -85,7 +85,7 @@ jobs:
           }
           allow |= {'tools/data/round5-owned/manifest.json'} | {'tools/data/round5-owned/part-%03d.json'%i for i in range(25)}
           def lines(args):
-            return {s for s in subprocess.check_output(['git',*args]).decode('utf-8').split('\\0') if s}
+            return {s for s in subprocess.check_output(['git',*args]).decode('utf-8').split('\0') if s}
           changed=lines(['diff','--name-only','-z']) | lines(['ls-files','--others','--exclude-standard','-z'])
           assert expected<=changed,'Missing modified Markdown documents'
           assert {'reports/ROUND5-ANSWERS-20261012.jsonl','reports/QUALITY-REPAIR-20261013-R5.md','PROGRESS.md'}<=changed
