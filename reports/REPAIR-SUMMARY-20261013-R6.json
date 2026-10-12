@@ -1,0 +1,29 @@
+{
+  "baseline": "95de886482d2982cc9a7671dd56a9c562f4fdd84",
+  "old_transcript_result": "53c4646b3b63b1661e2dca41bc6437d46bc7254a",
+  "modified_papers": 80,
+  "new_reference_answers": 190,
+  "r5_existing_answers_untouched": 102,
+  "refused": [],
+  "apply": true,
+  "known_original_question_gaps_still_missing": 25,
+  "boundary": "Only reference-answer positions: not independent question or official-paper certification",
+  "status": "verified",
+  "verification": {
+    "status": "passed",
+    "papers": 80,
+    "new_reference_answers": 190,
+    "original_question_blocks_preserved": 309,
+    "previous_real_answers_preserved": 20,
+    "boundary": "Integrity and fixed-source receipt verification, not official answer certification."
+  },
+  "recognized_missing_before": 799,
+  "recognized_missing_after": 609,
+  "total_new_answers_since_round4": 292,
+  "parsed_documents": 729,
+  "unparsed_documents": 9,
+  "corpus_papers": 1191,
+  "machine_flagged_files": 587,
+  "key_year_subject_blanks": 10,
+  "remaining_xingce_original_question_gaps": 25
+}
