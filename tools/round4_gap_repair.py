@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Conservative answer-gap discovery with same-year/area identity and material proof."""
 from __future__ import annotations
-import argparse, collections, hashlib, json, re, unicodedata
+import argparse,collections,hashlib,json,re,unicodedata
 from pathlib import Path
 from difflib import SequenceMatcher
 from urllib.parse import quote
@@ -40,8 +40,7 @@ def parse_text(text,rel):
  if not all(ident):raise ValueError('Missing year/area')
  ah=list(AH.finditer(text))
  if len(ah)>1:raise ValueError('Ambiguous answer section')
- front=text[:ah[0].start()] if ah else text
- ans={}
+ front=text[:ah[0].start()] if ah else text;ans={}
  if ah:
   for m in DETAIL.finditer(text[ah[0].end():]):
    n=int(m[2])
@@ -51,19 +50,18 @@ def parse_text(text,rel):
  elif '<details>' in text or re.search(r'(?m)^#{1,3}.*(?:答案|解析)',text):raise ValueError('Unrecognized existing answers; do not append')
  qh=list(QH.finditer(front));qs={};mats={};spans={}
  if qh:
-  mode='details' if ah else 'headings'
+  mode='details' if ah else 'headings';global_material=front[:qh[0].start()]
   for j,h in enumerate(qh):
    n=int(h[1]);end=qh[j+1].start() if j+1<len(qh) else len(front)
    if n in qs:raise ValueError('Duplicate question')
    raw=front[h.end():end];qs[n]=clean_q(raw);spans[n]=h.start()
-   mats[n]=raw.split('### 作答要求')[0] if '### 作答要求' in raw else front[:qh[0].start()]
+   local_material=raw.split('### 作答要求')[0] if '### 作答要求' in raw else ''
+   mats[n]=local_material if len(plain(local_material))>=80 else global_material
  else:
   mode='unstructured'
   boundaries=list(re.finditer(r'(?m)^\s*(?:#{1,3}\s*)?(?:[一二三四五][、.．]\s*)?(?:作答要求|答题要求|申论要求)\s*[：:]?\s*$',front))
   start=boundaries[-1].end() if boundaries else 0
-  # Require scored task paragraphs and complete requirements; never infer from filenames.
-  ps=[m for m in re.finditer(r'\S[\s\S]*?(?=\n\s*\n|\Z)',front[start:]) if m[0].strip()]
-  starts=[]
+  ps=[m for m in re.finditer(r'\S[\s\S]*?(?=\n\s*\n|\Z)',front[start:]) if m[0].strip()];starts=[]
   for i,m in enumerate(ps):
    t=m[0].strip();s=SCORE.search(t)
    explicit=bool(re.match(r'^(?:问题|第[一二三四五六七八九十\d]+题|[（(]?[一二三四五六七八九十\d]+[）)、.．])',t))
@@ -71,15 +69,13 @@ def parse_text(text,rel):
   if not 2<=len(starts)<=6 or sum(s for _,s in starts)!=100:raise ValueError('Cannot prove complete scored task boundaries')
   first=start+ps[starts[0][0]].start();material=front[:first]
   for j,(i,_) in enumerate(starts):
-   a=start+ps[i].start();b=start+ps[starts[j+1][0]].start() if j+1<len(starts) else len(front)
-   q=front[a:b].strip()
+   a=start+ps[i].start();b=start+ps[starts[j+1][0]].start() if j+1<len(starts) else len(front);q=front[a:b].strip()
    if not re.search(r'\d+\s*(?:[-—～~]\s*\d+\s*)?字',q) or '要求' not in q:raise ValueError('Missing requirement or word limit')
    qs[j+1]=q;mats[j+1]=material;spans[j+1]=a
  if not qs or set(ans)-set(qs):raise ValueError('Unmatched answers/questions')
  return {'path':rel,'text':text,'identity':ident,'variant':str(field(text,'卷型')),'questions':qs,'answers':ans,'materials':mats,'mode':mode,'question_spans':spans,'answer_heading':ah[0][0] if ah else None,'missing':[n for n in qs if empty(ans.get(n,''))]}
 def read_paper(p):return parse_text(p.read_text(encoding='utf-8'),p.relative_to(ROOT).as_posix())
-def suitable_answer(a):
- return not empty(a) and len(plain(a))>=50 and '\ufffd' not in a and not re.search(r'<img|!\[|data:|javascript:',a,re.I)
+def suitable_answer(a):return not empty(a) and len(plain(a))>=50 and '\ufffd' not in a and not re.search(r'<img|!\[|data:|javascript:',a,re.I)
 def match(target,n,donors):
  a=key(target['questions'][n]);rank=[]
  if len(a)<18:return None,'short_stem'
@@ -125,8 +121,7 @@ def discover():
  return papers,unparsed,plans,unresolved
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--inspect',action='store_true');ap.parse_args()
- papers,unparsed,plans,unresolved=discover()
+ ap=argparse.ArgumentParser();ap.add_argument('--inspect',action='store_true');ap.parse_args();papers,unparsed,plans,unresolved=discover()
  print('SUMMARY',json.dumps({'parsed':len(papers),'unparsed':len(unparsed),'papers_with_missing_answers':sum(bool(p['missing']) for p in papers),'missing_answers':sum(len(p['missing']) for p in papers),'internal_candidate_papers':len(plans),'internal_candidate_answers':sum(len(a) for _,a in plans)},ensure_ascii=False),flush=True)
  for t,a in plans:print('CANDIDATE',json.dumps({'path':t['path'],'mode':t['mode'],'additions':[{'n':x['number'],'donor':x['donor_path'],'dn':x['donor_number'],'stem':x['stem_similarity'],'material':x['material_coverage']} for x in a]},ensure_ascii=False),flush=True)
  print('UNPARSED',json.dumps(unparsed,ensure_ascii=False),flush=True)
