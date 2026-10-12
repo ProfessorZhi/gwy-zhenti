@@ -1,6 +1,6 @@
-"""Apply only reviewed source answers; keep all pre-existing question text intact."""
+"""Apply reviewed source answers, preserving pre-existing question and answer text."""
 from __future__ import annotations
-import hashlib,json,re,unicodedata
+import difflib,hashlib,json,re,unicodedata
 from pathlib import Path
 DETAIL=re.compile(r'<details>\s*<summary>\s*第\s*(\d+)\s*题\s*</summary>(.*?)</details>',re.S)
 RECEIPT='reports/ROUND3-ANSWERS-20261012.jsonl'
@@ -52,17 +52,17 @@ def main():
  assert '消极影响' in answer16 and '磨刀老人' in answer16 and '(247字)' in answer16
  doc=sources['js16a_doc'];dp=[x['text'] for x in doc['paragraphs']];i=dp.index('三、作答要求')
  source_prompt=''.join(dp[i+1:i+3]);assert key(source_prompt)==key(get_prompt(a,1))
- assert key(get_prompt(a,1))==key(get_prompt(b,1))
- ma,mb=materials(a),materials(b)
- # A and B share this task and exactly the same complete eight materials.
- # If not exact, the B reuse is rejected instead of borrowing another class.
- assert len(ma)==len(mb)==8 and ma==mb,'A/B material identity not established'
- evidence16={'url':ref['url'],'raw_sha256':ref['sha256'],'source_question':source_prompt,'question_identity':'A/B同年同题题干一致；现有8则完整材料去空白和标点后的文字完全一致','material_sha256':{str(k):digest(v) for k,v in ma.items()},'crosscheck_url':doc['url']}
- plans=[]
- for p in [a_path,b_path]:
-  note='参考答案原文来自明确标注的2016江苏A卷来源。' + ('本卷B类第1题与A类第1题题干及8则给定材料逐项匹配后复用；并非用C卷答案猜配。' if p==b_path else '')
-  answer='**来源参考答案（非官方）**\n\n'+answer16+'\n\n> '+note+'\n\n[来源与同题核对]('+ref['url']+')'
-  plans.append((p,{1:answer},{'1':evidence16}))
+ ma,mb=materials(a),materials(b);abdiff=[]
+ for n in sorted(set(ma)|set(mb)):
+  x,y=ma.get(n,''),mb.get(n,'');sm=difflib.SequenceMatcher(None,x,y,autojunk=False)
+  changes=[{'a':x[i:j],'b':y[k:l]} for tag,i,j,k,l in sm.get_opcodes() if tag!='equal']
+  if changes:abdiff.append({'material':n,'ratio':sm.ratio(),'changes':changes})
+ print('AB_MATERIAL_DIFFERENCES '+json.dumps(abdiff,ensure_ascii=False))
+ evidence16={'url':ref['url'],'raw_sha256':ref['sha256'],'source_question':source_prompt,'question_identity':'2016江苏A卷题干与完整题本对应','crosscheck_url':doc['url'],'B_class_automatic_reuse':'rejected unless eight materials are exactly identical','AB_material_differences':abdiff}
+ answer='**来源参考答案（非官方）**\n\n'+answer16+'\n\n[明确标注2016江苏A卷的参考答案来源]('+ref['url']+')'
+ plans=[(a_path,{1:answer},{'1':evidence16})]
+ if len(ma)==len(mb)==8 and ma==mb and key(get_prompt(a,1))==key(get_prompt(b,1)):
+  plans.append((b_path,{1:answer+'\n\n> 本卷题干及8则给定材料与A卷逐项完全对应后引用。'},{'1':evidence16}))
  source=sources['js18a'];ps=[x['text'] for x in source['paragraphs']]
  p='省考/江苏/2018/申论-A类.md';s=Path(p).read_text();adds={};ev={}
  for n in [1,3,4]:
@@ -73,8 +73,8 @@ def main():
    if t.startswith('参考答案说明') or t.startswith('文章分析') or re.match(r'^第\s*\d+\s*题',t):break
    parts.append(t)
   content='\n\n'.join(parts)
-  if n==3:assert '李XX' in content and '陈XX' not in content and 'XXXX年XX月XX日' in content
-  if n==4:assert '民族精神的传承' in content and len(content)>950
+  if n==3:assert '李XX' in content and '陈XX' not in content and 'XXXX年XX月XX日' in content,content
+  if n==4:assert '民族精神的传承' in content and len(content)>950,content
   adds[n]='**来源参考答案（非官方；范文不等于唯一答案）**\n\n'+content+'\n\n[同年同卷同题来源]('+source['url']+')'
   ev[str(n)]={'url':source['url'],'raw_sha256':source['sha256'],'source_prompt':stem,'source_answer_sha256':digest(content),'paragraph_sha256':[digest(x) for x in parts],'review':'同年A卷题干匹配；感谢信李XX/小张/刘医生及医院角色核对；不导入选调独立卷'}
  plans.append((p,adds,ev));records=[]
@@ -85,5 +85,5 @@ def main():
   Path(path).write_text(after,encoding='utf-8')
   records.append({'path':path,'before_sha256':digest(before),'after_sha256':digest(after),'added_answers':sorted(adds),'preserved_answers':oldhash,'answer_sources':ev,'delivered_answer_sha256':{str(n):digest(m[2].strip()) for m in DETAIL.finditer(after) if (n:=int(m[1])) in adds},'body_sha256':digest(after.split('---',2)[2].split('## 答案与解析')[0])})
  Path(RECEIPT).write_text(''.join(json.dumps(x,ensure_ascii=False)+'\n' for x in records),encoding='utf-8')
- print(json.dumps({'modified_papers':len(records),'added_reference_answers':sum(len(x['added_answers']) for x in records),'receipts':records},ensure_ascii=False))
+ print(json.dumps({'modified_papers':len(records),'added_reference_answers':sum(len(x['added_answers']) for x in records)},ensure_ascii=False))
 if __name__=='__main__':main()
