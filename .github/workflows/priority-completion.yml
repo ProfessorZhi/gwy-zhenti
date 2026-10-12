@@ -8,50 +8,18 @@ permissions:
 jobs:
   sources:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
-      - name: Read public candidate data only
-        run: |
-          python - <<'PY'
-          import concurrent.futures,hashlib,json,os,pathlib,urllib.request,urllib.parse,zipfile
-          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'priority-sources';out.mkdir()
-          def get(url,limit=30000000):
-              req=urllib.request.Request(url,headers={'User-Agent':'gwy-zhenti-integrity-audit/1.0'})
-              with urllib.request.urlopen(req,timeout=35) as r:b=r.read(limit+1)
-              if len(b)>limit:raise ValueError('oversized')
-              return b
-          targets=[('zj2022-a.pdf','https://static.32xueyuan.com/zq/u/cms/zj/202308/291549382748.pdf'),('zj2023-a.pdf','https://static.32xueyuan.com/zq/u/cms/zj/202308/29155041hzer.pdf'),('zj2024-a.pdf','https://static.32xueyuan.com/zq/u/cms/www/202406/190859482sts.pdf'),('zj-directory.html','https://www.chinagwy.net/zjsk/317178.jhtml'),('zj-directory-old.html','https://www.chinagwy.net/zjsk/202250.jhtml'),('all-2024-directory.html','https://www.chinagwy.org/index.php?c=article&m=view&tid=670814')]
-          for province in ('浙江','江苏','北京','上海','深圳','广州'):
-              for cls in ('行测','申论'):
-                  targets.append((f'index-{province}-{cls}.json','https://gwy.gkzhenti.cn/api/json?'+urllib.parse.urlencode({'cls':cls,'province':province})))
-          repo='mkih76/SLB';commit='d04d48e4bb0553cffe35aab91c468b07c835074e'
-          root='https://raw.githubusercontent.com/'+repo+'/'+commit+'/data/shenlun_zhenti/'
-          raw=get(root+'_manifest.json');(out/'slb-manifest.json').write_bytes(raw)
-          manifest=json.loads(raw)
-          for row in manifest:
-              if row.get('province') not in ('浙江','江苏','国考','北京','上海','深圳','广州','天津','广东','福建'):continue
-              if not 2016<=int(row.get('year',0))<=2026:continue
-              f=row['file'];f=f.split('/')[-1]
-              targets.append(('slb/'+f,root+urllib.parse.quote(f)))
-          def fetch(job):
-              name,url=job
-              try:
-                  b=get(url)
-                  if name.endswith('.pdf') and not b.startswith(b'%PDF'):raise ValueError('not PDF')
-                  p=out/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b)
-                  return {'file':name,'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
-              except Exception as e:return {'file':name,'url':url,'error':str(e)}
-          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:results=list(ex.map(fetch,targets))
-          (out/'download-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
-          (out/'source-version.json').write_text(json.dumps({'repository':repo,'commit':commit}),encoding='utf-8')
-          print('Candidates',len(results),'read',sum('error' not in r for r in results))
-          PY
+      - name: Download bounded exam source evidence only
+        env:
+          EVIDENCE_DIR: ${{ runner.temp }}/priority-full-sources
+        run: python tools/priority_sources_probe.py
       - uses: actions/upload-artifact@v4
         with:
-          name: priority-source-evidence
-          path: ${{ runner.temp }}/priority-sources/
+          name: priority-full-source-evidence
+          path: ${{ runner.temp }}/priority-full-sources/
           retention-days: 2
           if-no-files-found: error
