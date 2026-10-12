@@ -1,0 +1,217 @@
+[
+  {
+    "url": "https://www.kkgwy.com/sl/zt/2016/04/14/140742.html",
+    "title": "2016年江苏公务员考试申论真题及答案（A类） - 考考公务员",
+    "status": "read",
+    "sha256": "75f41bc2f842765a1fa4e2205084032feb4137906a6201b29d4d9302f0452ac1",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.jsgkw.org/2017/0314/22546.html",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.jsgkw.org', port=443): Max retries exceeded with url: /2017/0314/22546.html (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.hqwx.com/gjgwy-kaoshi/news/15011462694550.html",
+    "title": "【2017年浙江公务员考试申论真题及答案(A卷)】- 环球青藤",
+    "status": "read",
+    "sha256": "585a0849f8b82d237a852afdd6ab49c64f1f926b9e05f87bf5c73fc0ad8fe2bd",
+    "disposition": "used_as_primary_transcript"
+  },
+  {
+    "url": "https://edu.newdu.com/Official/Class944/Class966/201606/208443.html",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='edu.newdu.com', port=443): Max retries exceeded with url: /Official/Class944/Class966/201606/208443.html (Caused by ConnectTimeoutError(<HTTPSConnection(h",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.chinagwy.net/zjsk/202250.jhtml",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.chinagwy.net', port=443): Read timed out. (read timeout=6)",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://static.32xueyuan.com/zq/u/cms/zj/202212/07183022bn59.pdf",
+    "status": "read",
+    "sha256": "4781d909890f9ef13ebcb6028bc72bbce24df20159772c77502f97ea409585dd",
+    "pages": 7,
+    "disposition": "rejected_pending_identity_and_verbatim_validation"
+  },
+  {
+    "url": "https://www.chinagwy.net/zjsk/314066.jhtml",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.chinagwy.net', port=443): Read timed out. (read timeout=6)",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.kkgwy.com/sl/index_11.html",
+    "title": "申论 - 考考公务员",
+    "status": "read",
+    "sha256": "13532b0b1c4626b21d89e98c963bd1126df2e2f2f35bb64025e07795e10630ba",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.kkgwy.com/sl/zt/2017/04/19/195629.html",
+    "title": "2017年江苏公务员考试申论真题及解析（C类） - 考考公务员",
+    "status": "read",
+    "sha256": "eff5ca5c47596049b63e42a79b2e8552e848662d94bf4532ee7531cfd2ab863b",
+    "disposition": "used_as_primary_transcript"
+  },
+  {
+    "url": "https://www.kkgwy.com/sl/zt/2017/04/19/195627.html",
+    "title": "2017年江苏公务员考试申论真题及解析（A类） - 考考公务员",
+    "status": "read",
+    "sha256": "c333fad3e8f7d065963f96cc4c5a22d6517005a9e45837ce9f01eca4bd4b44c4",
+    "disposition": "used_as_primary_transcript"
+  },
+  {
+    "url": "https://www.kkgwy.com/sl/zt/2017/04/28/196964.html",
+    "title": "2017年浙江公务员考试申论真题及答案（B卷） - 考考公务员",
+    "status": "read",
+    "sha256": "0699fd30c24907884838fbe2a242069df725c4f418ff7fa027ef0e798ca0187b",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.kkgwy.com/sl/zt/2017/04/28/196963.html",
+    "title": "2017年浙江公务员考试申论真题及答案（A卷） - 考考公务员",
+    "status": "read",
+    "sha256": "6554371b10c73be0efe517b583561d17044ccb17350ac148abd47e2174e7b3fe",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.hqwx.com/gjgwy-kaoshi/news/15011467719439.html",
+    "title": "【2017年浙江公务员考试申论真题及答案(B卷)】- 环球青藤",
+    "status": "read",
+    "sha256": "9f64a5ffcc4e9ae347c53b65818f3d34e0c27277a1fa48ed9de10d66beee5f47",
+    "disposition": "used_as_primary_transcript"
+  },
+  {
+    "url": "https://www.hqwx.com/gjgwy-kaoshi/news/14615761344559.html",
+    "title": "【浙江2016年公务员考试申论真题参考答案(A卷)】- 环球青藤",
+    "status": "read",
+    "sha256": "83fe987519c7fcec1b7426b201498b0d9662226555238bff4dd73a9ff526ac02",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.hqwx.com/gjgwy-kaoshi/news/14615762385297.html",
+    "title": "【浙江2016年公务员考试申论真题参考答案(B卷)】- 环球青藤",
+    "status": "read",
+    "sha256": "2b43fe918ceb31986ee5d7d428a7360394a53985d10ef113d7d792432904ba82",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.chinagwy.org/files/20180503150627_39246.pdf",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.chinagwy.org', port=443): Max retries exceeded with url: /files/20180503150627_39246.pdf (Caused by NameResolutionError(\"HTTPSConn",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.gkzenti.cn/paper/1512709672238",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.gkzenti.cn', port=443): Max retries exceeded with url: /paper/1512709672238 (Caused by NameResolutionError(\"HTTPSConnection(host='",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://m.jinbiaochi.com/qggwy/news_96597.html",
+    "title": "2016年省公考《申论》试题（B卷）-金标尺教育",
+    "status": "read",
+    "sha256": "91b0c6637910632515257cf98ed2b523ab673a9dc3f1565d67602e56f0c0bc7a",
+    "disposition": "used_as_primary_transcript"
+  },
+  {
+    "url": "http://www.chinagwy.net/zjsk/202250.jhtml",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.chinagwy.net', port=443): Read timed out. (read timeout=6)",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "http://www.chinagwy.net/zjsk/314066.jhtml",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='www.chinagwy.net', port=443): Read timed out. (read timeout=6)",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.kkgwy.com/stk/js/14924.html",
+    "title": "江苏省公务员考试《行测》+《申论》真题汇总【答案+解析】 - 考考公务员",
+    "status": "read",
+    "sha256": "a1632d520b4f340d58e195ea455b7b4d4fc45f6ac2ea3a2f607b0445b19b8fd7",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.kkgwy.com/sl/zt/2017/04/19/195628.html",
+    "title": "2017年江苏公务员考试申论真题及解析（B类） - 考考公务员",
+    "status": "read",
+    "sha256": "d8b15720df33ea4a7621457a9ba662d459f2e516911b89004d78312dc8302084",
+    "disposition": "used_as_primary_transcript"
+  },
+  {
+    "url": "https://m.jinbiaochi.com/qggwy/news_96596.html",
+    "title": "2016年公务员考试《申论》A卷-金标尺教育",
+    "status": "read",
+    "sha256": "1468765a47b3c634c0d209ef28e7cd12168fb158683d28b3751b60aaab5d174c",
+    "disposition": "used_as_primary_transcript"
+  },
+  {
+    "url": "https://m.jinbiaochi.com/qggwy/news_96597.html",
+    "title": "2016年省公考《申论》试题（B卷）-金标尺教育",
+    "status": "read",
+    "sha256": "0db0ee21b08b6bb82b4d140c60922b173bda49a454adbed9321196e919d991eb",
+    "disposition": "used_as_primary_transcript"
+  },
+  {
+    "url": "https://m.jinbiaochi.com/qggwy/news_96598.html",
+    "title": "2016年省公考《申论》试题（C卷）-金标尺教育",
+    "status": "read",
+    "sha256": "5696bfd569de9149c80d865a119e3204cf73b34b90bf536c8e297c15fa831602",
+    "disposition": "used_as_primary_transcript"
+  },
+  {
+    "url": "https://m.jinbiaochi.com/qggwy/news_96589.html",
+    "title": "2017年公务员考试《申论》A卷-金标尺教育",
+    "status": "read",
+    "sha256": "ddd45ae82e6948b3a4122c9792ea437780640ad6631425687185ba3b7aae76c1",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://m.jinbiaochi.com/qggwy/news_96573.html",
+    "title": "2019年省公考《申论》试题（A类）-金标尺教育",
+    "status": "read",
+    "sha256": "b0732bbca59d033da75570335aa5ccc665c23a562ecfcfcd9f4f048148dff24c",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://www.kkgwy.com/sl/zt/2016/04/24/141756.html",
+    "title": "2016年浙江公务员考试申论真题及答案（A卷） - 考考公务员",
+    "status": "read",
+    "sha256": "4c42c5202bc861047b08af98a3dcf9a0c6fdfa777c76daa1282210de64bad775",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://gwysydw.com/bs/dqgwy/news_88726.html/",
+    "title": "2016年浙江公务员考试《申论》A卷-注意事项/给定材料/作答要求-公务员事业单位最新题库",
+    "status": "read",
+    "sha256": "9a532f11cdbe4c07ec32a5e7e45b22d648d8813a7c89b557fb211ee0393d0697",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://new.zbgwy.com/index.php/essay/detail.html?id=8920",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='new.zbgwy.com', port=443): Max retries exceeded with url: /index.php/essay/detail.html?id=8920 (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILE",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://gwysydw.com/bs/dqgwy/news_88726.html?page=1",
+    "title": "2016年浙江公务员考试《申论》A卷-注意事项/给定材料/作答要求-公务员事业单位最新题库-第2页",
+    "status": "read",
+    "sha256": "0ec350401fe2a45db0734d8ed7f948c742478eb700ba1446b67511eb7eb31867",
+    "disposition": "candidate_only_not_imported_as_paper"
+  },
+  {
+    "url": "https://gwysydw.com/bs/dqgwy/news_88726.html?page=2",
+    "title": "2016年浙江公务员考试《申论》A卷-注意事项/给定材料/作答要求-公务员事业单位最新题库-第3页",
+    "status": "read",
+    "sha256": "6cb7c3d3f75d26de319a7d6f889a5afa010b6a87093eb5fdc32d0bbf5add33df",
+    "disposition": "candidate_only_not_imported_as_paper"
+  }
+]

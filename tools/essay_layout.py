@@ -19,7 +19,7 @@ def parse_whole(text:str,expected:int)->dict:
     anchors=list(re.finditer(r'(?m)^[ \t\u3000]*(?:三[、．.]\s*)?作答要求[ \t\u3000]*$',body))
     if anchors:start=anchors[-1].end()
     else:
-        anchors=list(re.finditer(r'(?m)^[ \t\u3000]*(?:作答任务|申论要求|问题及要求|作答要求及问题)[：:]?[ \t\u3000]*$',body))
+        anchors=list(re.finditer(r'(?m)^[ \t\u3000]*(?:答题要求|作答任务|申论要求|问题及要求|作答要求及问题)[：:]?[ \t\u3000]*$',body))
         if not anchors:raise ValueError('Explicit question section missing')
         start=anchors[-1].end()
     head,part=body[:start],body[start:];labels=list(LABEL.finditer(part));ids=[];questions=[]
