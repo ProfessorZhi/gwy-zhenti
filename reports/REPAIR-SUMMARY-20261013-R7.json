@@ -1,0 +1,128 @@
+{
+  "baseline": "1ee302b18cb864cadc6bf7cfb0376a9da018e203",
+  "all_essay_files": 738,
+  "updated_documents": 738,
+  "guide_only_documents": 728,
+  "documents_with_new_reference_text": 10,
+  "new_reference_blocks": 15,
+  "newly_filled_answer_positions": 14,
+  "expanded_existing_examples": 1,
+  "new_example_essays": 4,
+  "new_short_task_references": 11,
+  "source_candidates_processed": {
+    "parts_read": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "source_candidates": 116,
+    "matched_answers": 9,
+    "remaining_diagnosis": {
+      "no_source_question": 556,
+      "insufficient_source_material": 38,
+      "source_answer_incomplete_or_wrong_limit": 2
+    }
+  },
+  "unparsed_documents": [
+    {
+      "path": "省考/广东/2016/申论-广州市考.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-单考区.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-双考区.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广西/2018/申论-A类.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广西/2025/申论-B类.md",
+      "reason": "Missing explicit requirements"
+    },
+    {
+      "path": "省考/陕西/2024/申论-B类.md",
+      "reason": "Missing explicit requirements"
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-统考.md",
+      "reason": "No unambiguous explicit task sequence"
+    }
+  ],
+  "errors": [],
+  "apply": true,
+  "boundary": "Per-document guides are not newly completed answers. Only actual inserted full reference text is counted as an answer addition.",
+  "status": "verified",
+  "actual_coverage": {
+    "status": "verified",
+    "papers": 738,
+    "parsed_papers": 729,
+    "unparsed_papers": 9,
+    "answer_slots": 2505,
+    "available_full_or_readable": 1909,
+    "missing_reference_answer_positions": 592,
+    "length_or_layout_warning_positions": 4,
+    "essay_missing": 121,
+    "essay_short_or_layout_warning": 1,
+    "added_sourced_reference_blocks": 15,
+    "newly_filled_answer_positions": 14,
+    "new_exemplar_essays": 4,
+    "guide_only_files": 728,
+    "source_references_by_region": {
+      "云南": 1,
+      "山东": 1,
+      "山西": 1,
+      "河北": 2,
+      "海南": 2,
+      "湖北": 1,
+      "西藏": 2,
+      "陕西": 3,
+      "青海": 2
+    },
+    "classification": {
+      "小题参考作答/已收录": 1718,
+      "作文范文/已收录": 191,
+      "小题参考作答/待补": 471,
+      "作文范文/待补": 121,
+      "未解析文档": 9,
+      "小题参考作答/正文或图像待复核": 3,
+      "作文范文/正文偏短待复核": 1
+    },
+    "scope": "All 738 existing MD papers. Length/structure classification only; quality and exam scores are not certified."
+  },
+  "verification": {
+    "status": "passed",
+    "documents": 738,
+    "guide_only_documents": 728,
+    "new_reference_blocks": 15,
+    "newly_filled_answer_positions": 14,
+    "new_example_essays": 4,
+    "question_blocks_preserved": 2505,
+    "nonempty_old_answer_blocks_preserved": 1896,
+    "boundary": "Guides do not count as answers; sourced reference hashes and old bytes are checked, not scoring authority."
+  }
+}

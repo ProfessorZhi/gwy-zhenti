@@ -301,7 +301,7 @@
 {"area": "江西", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/江西/2026/行测-统考.md", "subject": "行测", "year": "2026"}
 {"area": "河北", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/河北/2016/行测-统考.md", "subject": "行测", "year": "2016"}
 {"area": "河北", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/河北/2017/行测-统考.md", "subject": "行测", "year": "2017"}
-{"area": "河北", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["题号未结构化；不据此认定题面残缺", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "乡镇", "path": "省考/河北/2018/申论-乡镇.md", "subject": "申论", "year": "2018"}
+{"area": "河北", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "乡镇", "path": "省考/河北/2018/申论-乡镇.md", "subject": "申论", "year": "2018"}
 {"area": "河北", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/河北/2018/行测-统考.md", "subject": "行测", "year": "2018"}
 {"area": "河北", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "县级+乡镇", "path": "省考/河北/2019/行测-县级+乡镇.md", "subject": "行测", "year": "2019"}
 {"area": "河北", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/河北/2020/行测-统考.md", "subject": "行测", "year": "2020"}
