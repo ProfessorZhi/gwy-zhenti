@@ -182,7 +182,7 @@
   "image_decode_check_performed": true,
   "image_decode_errors": [],
   "image_references": 118521,
-  "inventory_sha256": "477f94e32c5c6e47bdceb3f977a5c2c5c74efbb35bcefe24c21877afd4cc4fe3",
+  "inventory_sha256": "ac87d99ec95cf0714a4bad7a1e6d8c81c687ff1d888e612eb324d55a3a64d15f",
   "missing_image_references": 0,
   "paper_files": 1191,
   "placeholder_files": 47,
@@ -190,7 +190,7 @@
     "待核实": 18,
     "资料缺失": 29
   },
-  "reference_numbered_papers": 143,
+  "reference_numbered_papers": 145,
   "schema_version": 1,
   "subjects": {
     "申论": 738,

@@ -1,18 +1,102 @@
 {
- "answers_added": 2,
+ "answers_added": 6,
  "answers_replaced": 0,
  "base_sha": "74cd629e6318af0a30c77c0a3f0c8b0befaf4d22",
- "boundary": "机构公开整理参考答案，非官方标准答案；排版诊断为只读检出，本轮未改版式；检出项由当前规则定义，未检出不等于不存在。",
+ "boundary": "机构公开整理参考答案，非官方标准答案；排版诊断为只读检出，检出项由当前规则定义，未检出不等于不存在；浙江2016 两卷的旧版本内容全部保留在 Git 历史与回执的 moved_blocks/excluded_blocks 中；本轮未合并 main，未改动其他项目或服务。",
  "branch": "repair/20261012-r3-gap-layout",
+ "cloud_quality": {
+  "command": "tools/cloud_quality.py --build --verify-images；--check --verify-images",
+  "forbidden_files": 0,
+  "hard_errors": 0,
+  "image_refs": 118521,
+  "images": 95903,
+  "papers": 1191,
+  "truncated_files": 0,
+  "truncated_questions": 0
+ },
  "date": "2026-10-12",
- "layout_findings": "作答要求项被并入答案区（题块止于“要求：”）166 题/77 份；作答要求子块无字数说明 1088 题/406 份；无分值 935 题/345 份；题目缺作答要求子块 238 题/63 份；答案锚点无题目锚点 2 份（省考/辽宁/2017/申论-公安.md 4 题悬空，另 1 份为 docs 计划文档）；行测题号缺口 4 份，均为此前已声明缺题；重复材料 0、材料锚点缺口 0、共用材料跨题不符 0、图片引用缺失 0、代码围栏不平衡 0",
- "layout_scanned_md": 1261,
- "modified_paper_files": 3,
+ "layout_findings": "作答要求项被并入答案区（题块止于“要求：”）166 题/77 份（本轮未改，待排版候选）；作答要求子块无字数说明 1085 题/404 份；无分值 932 题/343 份（两项较修复前各减 3 题，因浙江2016 A/B 三题题块已补入分值与字数）；题目缺 `### 作答要求` 子块 244 题/65 份；答案锚点无题目锚点 3 份（省考/辽宁/2017/申论-公安.md 4 题悬空，另 2 份为 docs 计划文档与本报告自身示例，属文档误报）；重复答案区 3 份（均为文档）；题干题号不递增/非从1起 1 份（文档）；行测题号缺口 4 份，均为此前已声明缺题；重复材料 0、材料锚点缺口 0、共用材料跨题不符 0、图片引用缺失 0、代码围栏不平衡 0",
+ "layout_findings_after": {
+  "answer_without_question": 3,
+  "answer_without_question_files": 3,
+  "delta_vs_before": {
+   "explain": "前两项各减 3 题正是浙江2016 A/B 三题题块补入分值与字数的结果；第三项增 6 条（A/B 各 3 题）是因为修复后采用浙江2021 A/B/C 同款结构（`## 作答要求` 整卷标题 + `## 第 N 题` 题干内联，题干内含“要求：”），不再保留 `### 作答要求` 子块——该类别对浙江系列是全系列结构特征：浙江 2016–2026 共 25 份全部命中，含作为结构模板的浙江2021 A/B/C 各 3 题，故这 6 条是与模板一致的结果，不是本轮引入的缺陷",
+   "shenlun_no_requirement_heading": 6,
+   "shenlun_requirement_no_score": -3,
+   "shenlun_requirement_no_wordcount": -3
+  },
+  "note": "浙江2016 A/B 未出现在任何类别中；166 题/77 卷与另一排版项目口径一致，本轮未改动那 77 卷中任何一份",
+  "question_number_gap": 4,
+  "question_order_broken": 1,
+  "shenlun_no_requirement_heading": 244,
+  "shenlun_no_requirement_heading_files": 65,
+  "shenlun_requirement_no_score": 932,
+  "shenlun_requirement_no_score_files": 343,
+  "shenlun_requirement_no_wordcount": 1085,
+  "shenlun_requirement_no_wordcount_files": 404,
+  "shenlun_requirement_truncated": 166,
+  "zhejiang2016_in_findings": [
+   "shenlun_no_requirement_heading（第1/2/3题各1条）"
+  ]
+ },
+ "layout_scanned_md": 1263,
+ "md_inventory": {
+  "all_md": 1263,
+  "documentation_md": 24,
+  "missing_paper_placeholders": 48,
+  "note": "上一轮报告时点 1261；本轮新增 2 份报告文档。正式报告不把 1263 当试卷数。",
+  "paper_scope": 1191,
+  "paper_scope_breakdown": {
+   "国考": 54,
+   "省考": 1137
+  }
+ },
+ "modified_paper_files": 5,
+ "old_answer_blocks_kept_verbatim": 1,
+ "old_answer_blocks_relocated": 2,
  "provenance_annotations_added": 1,
  "questions_added": 0,
+ "questions_restored": 3,
  "receipts": [
   "reports/ROUND3-ESSAY-20261012.jsonl",
+  "reports/ROUND3-ZHEJIANG-WHOLE-20261012.jsonl",
   "reports/LAYOUT-DIAGNOSIS-20261012-R3.json"
  ],
- "round": "r3"
+ "round": "r3",
+ "unit_tests": {
+  "command": "cd tools && python -m unittest discover -s tests -q",
+  "ran": 331,
+  "result": "OK"
+ },
+ "zhejiang2016": {
+  "after_sha256": {
+   "省考/浙江/2016/申论-A类.md": "04e2a95ef7fbb0b3fe09217cbf6721034b04088a716e8e9378a98289908881c3",
+   "省考/浙江/2016/申论-B类.md": "49b0d8c4a0dcdceda7c78d1e082f8ca0549cd26cc94d318c68283f459d254175"
+  },
+  "before_sha256": {
+   "省考/浙江/2016/申论-A类.md": "6a05425f4d355d6f9d5dcf6e503cd6e5b677de323a3408cdbd03335695ab7939",
+   "省考/浙江/2016/申论-B类.md": "dff9fa27446020d2be059e7c95bb71e999ecc64525a93d71f11e1f7c1833f9c4"
+  },
+  "boundary": "机构公开整理参考答案与评分标准/参考例文，非考试机关标准答案；旧块来源 linfukai186 与卷本源不同族，两份文本并列标注、互不覆盖",
+  "cross_version_policy": "每份试卷使用其自身卷本版本；27 处逐字异文逐条记录、未统一；字形瑕疵未校正",
+  "cross_version_variants": 27,
+  "files": [
+   "省考/浙江/2016/申论-A类.md",
+   "省考/浙江/2016/申论-B类.md"
+  ],
+  "pdf_cross_check": {
+   "A": {
+    "pages": 5,
+    "sent_ok": 153,
+    "sent_total": 153
+   },
+   "B": {
+    "pages": 5,
+    "sent_ok": 153,
+    "sent_total": 153
+   },
+   "result": "网页题本与打印版 PDF 句级（去标点与数字）全部命中，唯一差异为 PDF 页眉与页码数字"
+  },
+  "source_family": "sanlianbook.com（同卷题本页 + 同卷答案页 + 同站打印版 PDF）"
+ }
 }
