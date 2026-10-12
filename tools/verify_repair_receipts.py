@@ -40,18 +40,27 @@ def verify_prior(root:Path)->dict:
    if hashlib.sha256(text.encode()).hexdigest()!=a[key]:raise ValueError('Added question/answer body changed: '+path+':'+str(n))
  return {**verify_essays(root),'round3':verify_round3(root),'receipt_records':len(records),'distinct_delivered_files':len(latest),'paper_files':sum(p.endswith('.md') for p in latest),'image_files':sum(not p.endswith('.md') for p in latest),'added_question_answer_pairs_checked':len(questions),'status':'passed','boundary':'Hash, identity and preservation verification; not source factual certification.'}
 
-def verify(root:Path)->dict:
+def verify_to_round4(root:Path)->dict:
  root=Path(root).resolve()
  if not (root/'reports/ROUND4-ANSWERS-20261012.jsonl').exists():return verify_prior(root)
  from verify_round4_repairs import verify as verify_round4, historical_snapshot,records
  fourth=verify_round4(root)
- # Older immutable receipts describe the older bytes. Verify all of them against
- # an independently reconstructed temporary snapshot, never change the checkout.
  with tempfile.TemporaryDirectory(prefix='gwy-receipt-baseline-') as tmp:
   original_paths=historical_snapshot(root,Path(tmp),RECEIPTS)
   result=verify_prior(Path(tmp))
  r4=records(root);paths=original_paths|{r['path'] for r in r4}
  result.update({'round4':fourth,'receipt_records':result['receipt_records']+len(r4),'distinct_delivered_files':len(paths),'paper_files':sum(p.endswith('.md') for p in paths)})
+ return result
+
+def verify(root:Path)->dict:
+ root=Path(root).resolve()
+ if not (root/'reports/ROUND5-ANSWERS-20261012.jsonl').exists():return verify_to_round4(root)
+ from verify_round5_repairs import verify as verify_round5,snapshot,records
+ fifth=verify_round5(root)
+ with tempfile.TemporaryDirectory(prefix='gwy-r5-baseline-') as tmp:
+  snapshot(root,Path(tmp),RECEIPTS+('ROUND4-ANSWERS-20261012.jsonl',))
+  result=verify_to_round4(Path(tmp))
+ result['round5']=fifth;result['receipt_records']+=len(records(root))
  return result
 
 def main():
