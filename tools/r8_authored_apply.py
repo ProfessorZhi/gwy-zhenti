@@ -11,7 +11,7 @@ from r7_reference_audit import assess
 ROOT=g.ROOT
 DATA=ROOT/'tools/data/r8-authored-references.json'
 RECEIPT='ROUND8-AUTHORED-20261013.jsonl'
-SECTION=re.compile(r'(?m)^## 参考答案收录情况\n\n4道题的参考答案均尚未核实取得。本文件只收录题面，不生成或冒充发布方答案。\s*
+SECTION=re.compile(r'(?m)^## 参考答案收录情况\n\n4道题的参考答案均尚未核实取得。本文件只收录题面，不生成或冒充发布方答案。\s*$')
 
 def inner(item):
  typ=item['type']
