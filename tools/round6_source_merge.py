@@ -16,7 +16,10 @@ SOURCE_REV='710cb9f85b9ae5e4167cbdd5172c59309a51c80e'
 RECEIPT='ROUND6-OWNED-ANSWERS-20261013.jsonl'
 
 def from_original(path):
- return subprocess.check_output(['git','show',OLD_HEAD+':'+path]).decode('utf-8')
+ import os
+ if not os.environ.get('GH_TOKEN'):raise ValueError('Authenticated read-only source required')
+ helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f'
+ return subprocess.check_output(['git','-c','credential.helper='+helper,'show',OLD_HEAD+':'+path]).decode('utf-8')
 def assemble():
  old_receipts=[json.loads(x) for x in from_original('reports/ROUND5-ANSWERS-20261012.jsonl').splitlines() if x]
  out=[];errors=[];seen=set()
