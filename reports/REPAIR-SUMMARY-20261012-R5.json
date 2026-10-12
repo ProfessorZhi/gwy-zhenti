@@ -1,0 +1,33 @@
+{
+  "baseline": "69929cdd0b198ad498832552d1249f36f1cff715",
+  "parsed_essays": 729,
+  "unparsed_essays": 9,
+  "recognized_missing_slots_before": 901,
+  "modified_papers": 115,
+  "answers_added": 292,
+  "remaining_recognized_slots": 609,
+  "filled_fraction": 0.324084,
+  "user_sources": {
+    "available": true,
+    "source_files": 120,
+    "source_answer_candidates": 284,
+    "added_user_source_answers": 190
+  },
+  "rejected": [],
+  "apply": true,
+  "known_xingce_questions_fixed": 0,
+  "known_xingce_questions_still_missing": 25,
+  "priority_year_subject_blanks_remaining": 10,
+  "boundary": "Document answer positions include overlapping historic records; no full-corpus authenticity certification.",
+  "status": "verified",
+  "verification": {
+    "status": "passed",
+    "papers": 115,
+    "added_answers": 292,
+    "original_question_blocks_preserved": 437,
+    "existing_answers_preserved": 26,
+    "boundary": "Source matching and byte preservation, not official answer certification."
+  },
+  "files_with_machine_flags": 587,
+  "corpus_papers": 1191
+}
