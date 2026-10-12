@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""Fill proved answer gaps using the user's existing corpus; never generate answers.
-Cross-region joint-exam reuse requires an exact normalized stem and 98% material proof.
-"""
+"""Fill proved answer gaps using the existing corpus; never generate answers."""
 from __future__ import annotations
 import argparse,json,re
 from pathlib import Path
@@ -10,6 +8,7 @@ import round4_gap_repair as g
 ROOT=g.ROOT
 RECEIPT='ROUND4-ANSWERS-20261012.jsonl'
 PENDING='未收录同卷同题的完整参考答案；不以自动生成内容冒充来源答案。'
+ANCHOR=re.compile(r'\n<!-- R4 question anchor (\d+) -->\n## 第 \1 题\n\n')
 
 def is_missing(a):
  s=re.sub(r'^[\s>*]+','',a)
@@ -34,7 +33,7 @@ def add_proved_answers(paper,adds):
   if any(n not in paper['answers'] for n in byid):raise ValueError('Unmatched existing answer block')
  else:
   if paper['mode']=='unstructured':
-   for n,at in sorted(paper['question_spans'].items(),key=lambda v:v[1],reverse=True):new=new[:at]+f'## 第 {n} 题\n\n'+new[at:]
+   for n,at in sorted(paper['question_spans'].items(),key=lambda v:v[1],reverse=True):new=new[:at]+f'\n<!-- R4 question anchor {n} -->\n## 第 {n} 题\n\n'+new[at:]
   sections=['## 答案与解析','> 本轮只补已有同题来源答案。题面、材料和原作答要求保持原文；尚未取得的答案逐题保留缺项。']
   for n in paper['questions']:sections.append(f'<details>\n<summary>第 {n} 题</summary>\n\n'+(body(n) if n in byid else PENDING)+'\n\n</details>')
   new=new.rstrip()+'\n\n'+'\n\n'.join(sections)+'\n'
@@ -47,11 +46,10 @@ def nonmetadata(t):
  return t.split('---',2)[2]
 def body_without_inserted_headers(t,original_mode):
  m=g.AH.search(t);front=t[:m.start()] if m else t;b=nonmetadata(front)
- if original_mode=='unstructured':b=re.sub(r'(?m)^## 第 \d+ 题\n\n','',b)
+ if original_mode=='unstructured':b=ANCHOR.sub('',b)
  return b.rstrip()
 def operations(old,new):
- a=old.splitlines(keepends=True);b=new.splitlines(keepends=True)
- ai=[0];bi=[0]
+ a=old.splitlines(keepends=True);b=new.splitlines(keepends=True);ai=[0];bi=[0]
  for s in a:ai.append(ai[-1]+len(s))
  for s in b:bi.append(bi[-1]+len(s))
  return [{'old_start':ai[i],'old_end':ai[j],'new_start':bi[k],'new_end':bi[l],'old':old[ai[i]:ai[j]],'new':new[bi[k]:bi[l]]} for kind,i,j,k,l in SequenceMatcher(None,a,b,autojunk=False).get_opcodes() if kind!='equal']
@@ -68,8 +66,7 @@ def scan():
  for p in sorted([*ROOT.glob('国考/*/申论*.md'),*ROOT.glob('省考/*/*/申论*.md'),*ROOT.glob('市考/*/*/申论*.md')]):
   try:
    d=g.read_paper(p)
-   if d:
-    d['missing']=[n for n in d['questions'] if is_missing(d['answers'].get(n,''))];papers.append(d)
+   if d:d['missing']=[n for n in d['questions'] if is_missing(d['answers'].get(n,''))];papers.append(d)
   except Exception as e:unparsed.append({'path':p.relative_to(ROOT).as_posix(),'reason':str(e)})
  donors={};joint={}
  for d in papers:
@@ -82,9 +79,7 @@ def scan():
   for n in t['missing']:
    a,why=g.match(t,n,donors.get(t['identity'],[]))
    if not a and why!='conflicting_supported_answers':
-    same=joint.get((t['identity'][1],g.key(t['questions'][n])),[])
-    # The cross-region fallback is deliberately stricter than within a corpus variant.
-    same=[(d,k) for d,k in same if d['identity'][0]!=t['identity'][0]]
+    same=[(d,k) for d,k in joint.get((t['identity'][1],g.key(t['questions'][n])),[]) if d['identity'][0]!=t['identity'][0]]
     a,why=g.match(t,n,same)
     if a:
      if a['stem_similarity']!=1 or a['material_coverage']<.98:a=None;why='joint_exam_material_proof_insufficient'
@@ -100,7 +95,11 @@ def main():
  papers,unparsed,plans,unresolved=scan();ready=[];rejected=[]
  for t,adds in plans:
   try:new=add_proved_answers(t,adds);r=receipt(t['text'],new,t,adds);ready.append((t,new,r))
-  except Exception as e:rejected.append({'path':t['path'],'error':str(e)})
+  except Exception as e:
+   rejected.append({'path':t['path'],'error':str(e)})
+   if 'content changed' in str(e):
+    a=body_without_inserted_headers(t['text'],t['mode']);b=body_without_inserted_headers(new,t['mode']);i=next((i for i,(x,y) in enumerate(zip(a,b)) if x!=y),min(len(a),len(b)))
+    print('BODY_DIFF',t['path'],i,repr(a[max(0,i-25):i+75]),repr(b[max(0,i-25):i+75]),flush=True)
  summary={'baseline':g.BASE,'parsed_essays':len(papers),'unparsed_essays':len(unparsed),'missing_answer_slots_before':sum(len(t['missing']) for t in papers),'candidate_papers':len(plans),'modified_papers':len(ready),'answers_added':sum(len(r['added_answers']) for _,_,r in ready),'joint_exam_answers':sum(a['kind']=='repository_joint_exam_question' for _,_,r in ready for a in r['added_answers']),'rejected':rejected,'apply':args.apply}
  print('ROUND4_SUMMARY',json.dumps(summary,ensure_ascii=False),flush=True)
  for t,_,r in ready:print('ROUND4_READY',json.dumps({'path':t['path'],'added':[a['number'] for a in r['added_answers']],'joint':[a['number'] for a in r['added_answers'] if a['kind']=='repository_joint_exam_question']},ensure_ascii=False),flush=True)
