@@ -1,0 +1,39 @@
+name: Priority R3 source repair
+on:
+  push:
+    branches: [fix/priority-source-r3-20261012]
+    paths: ['tools/priority_r3_*.py', 'tools/data/priority-r3.json', '.github/workflows/priority-r3.yml']
+permissions:
+  contents: write
+concurrency:
+  group: priority-r3-source-repair
+  cancel-in-progress: false
+jobs:
+  inspect:
+    if: github.ref == 'refs/heads/fix/priority-source-r3-20261012'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Install bounded source readers
+        run: python -m pip install --disable-pip-version-check requests==2.32.3 beautifulsoup4==4.13.4 Pillow==11.3.0
+      - name: Inspect exact requested sources
+        run: python tools/priority_r3_sources.py
+      - name: Commit only the source inspection report
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "${GITHUB_REF_NAME}" = 'fix/priority-source-r3-20261012'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- reports/R3-SOURCE-SCOUT.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'data: 第三轮定向题源读取结果及既有卷题干核对底账 [skip ci]'
+          gh auth setup-git
+          remote=$(git ls-remote origin "refs/heads/${GITHUB_REF_NAME}" | cut -f1)
+          test "$remote" = "$GITHUB_SHA" || { echo 'Branch advanced; refuse overwrite'; exit 1; }
+          git push origin "HEAD:refs/heads/${GITHUB_REF_NAME}"
