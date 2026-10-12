@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "papers": 23,
+  "preserved_answers": 98,
+  "checked_material_blocks": 103,
+  "checked_full_question_blocks": 95,
+  "added_reference_answers": 5,
+  "new_major_questions": 3,
+  "boundary": "Source-backed transcription and historical answer preservation, not official-original certification.",
+  "baseline": "74cd629e6318af0a30c77c0a3f0c8b0befaf4d22",
+  "known_xingce_questions_fixed": 0,
+  "jiangsu_zhejiang_missing_xingce_questions": 18,
+  "official_original_certification": false
+}
