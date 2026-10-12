@@ -1,0 +1,103 @@
+name: Round5 verified answer delivery
+on:
+  push:
+    branches: [fix/bulk-gap-r5-20261012]
+    paths: ['.github/workflows/round5-deliver.yml']
+permissions:
+  contents: write
+concurrency:
+  group: gwy-round5-single-delivery
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.repository == 'ProfessorZhi/gwy-zhenti'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+      - name: Install pinned checks
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0 beautifulsoup4==4.13.4
+      - name: Verify copied private source identity and scripts
+        run: |
+          python -m py_compile tools/round5_bulk.py tools/round5_owned.py tools/round5_delivery.py tools/round5_apply_all.py tools/round5_report.py tools/verify_round5_repairs.py
+          python - <<'PY'
+          import sys
+          sys.path.insert(0,'tools')
+          from round5_owned import load_pack
+          d=load_pack()
+          assert len(d['sources'])==120 and len(d['answers'])==284
+          print('SOURCE_PACK_VERIFIED',len(d['sources']),len(d['answers']))
+          PY
+      - name: Apply exactly the previously checked answers to MD
+        run: python tools/round5_apply_all.py --apply
+      - name: Rebuild complete corpus indexes
+        run: python tools/cloud_quality.py --build --verify-images
+      - name: Publish verified report and retain historical progress
+        run: python tools/round5_report.py
+      - name: Validate full paper and source receipt chains
+        run: |
+          python tools/verify_round5_repairs.py
+          python tools/verify_repair_receipts.py
+      - name: Test all existing and additional safety guards
+        run: |
+          (cd tools && python -m unittest discover -s tests -q)
+          (cd tools && python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test round3_repair_test -q)
+          python tools/cloud_quality.py --check --verify-images
+          python tools/verify_image_pixels.py
+      - name: Drop temporary source packet and single-use workflows, verify without packet
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          pack=Path('tools/data/round5-owned')
+          files=sorted(pack.glob('*'))
+          assert len(files)==26 and all(p.name=='manifest.json' or (p.name.startswith('part-') and p.name.endswith('.json')) for p in files)
+          for p in files:p.unlink()
+          pack.rmdir()
+          for p in (Path('.github/workflows/round5-bulk.yml'),Path('.github/workflows/round5-deliver.yml')):
+            assert p.is_file()
+            p.unlink()
+          print('TEMP_PACK_AND_SINGLE_USE_WORKFLOWS_REMOVED')
+          PY
+          python tools/verify_repair_receipts.py
+      - name: Commit only reviewed Markdown and reports, with remote-head concurrency guard
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          branch='fix/bulk-gap-r5-20261012'
+          assert os.environ['GITHUB_REPOSITORY']=='ProfessorZhi/gwy-zhenti'
+          assert os.environ['GITHUB_REF']=='refs/heads/'+branch
+          rs=[json.loads(line) for line in Path('reports/ROUND5-ANSWERS-20261012.jsonl').read_text(encoding='utf-8').splitlines() if line]
+          expected={r['path'] for r in rs}
+          assert len(rs)==115 and sum(len(r['added_answers']) for r in rs)==292
+          allow=expected | {
+            'PROGRESS.md','README.md','QUALITY.md','COVERAGE-优先区.md','catalog/manifest.jsonl',
+            'reports/QUALITY-SUMMARY.json','reports/QUALITY-AUDIT.md','reports/DEFECTS.jsonl',
+            'reports/PRIORITY-MISSING.json','reports/PRIORITY-QUALITY-20261012.md',
+            'reports/ROUND5-ANSWERS-20261012.jsonl','reports/ROUND5-UNRESOLVED-20261012.json',
+            'reports/REPAIR-SUMMARY-20261012-R5.json','reports/QUALITY-REPAIR-20261013-R5.md',
+            '.github/workflows/round5-bulk.yml','.github/workflows/round5-deliver.yml'
+          }
+          allow |= {'tools/data/round5-owned/manifest.json'} | {'tools/data/round5-owned/part-%03d.json'%i for i in range(25)}
+          def lines(args):
+            return {s for s in subprocess.check_output(['git',*args]).decode('utf-8').split('\\0') if s}
+          changed=lines(['diff','--name-only','-z']) | lines(['ls-files','--others','--exclude-standard','-z'])
+          assert expected<=changed,'Missing modified Markdown documents'
+          assert {'reports/ROUND5-ANSWERS-20261012.jsonl','reports/QUALITY-REPAIR-20261013-R5.md','PROGRESS.md'}<=changed
+          assert changed<=allow,'Unreviewed changed paths: '+str(changed-allow)
+          assert all(not x.startswith('图片/') for x in changed)
+          subprocess.run(['git','add','--',*sorted(changed)],check=True)
+          subprocess.run(['git','-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','fix: 来源证据补录115份申论的292个答案位置并更新全库质量凭据'],check=True)
+          helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f'
+          git=['git','-c','credential.helper='+helper]
+          remote=subprocess.check_output(git+['ls-remote','origin','refs/heads/'+branch],text=True).split()[0]
+          assert remote==os.environ['GITHUB_SHA'],'Concurrent branch modification: refuse push'
+          subprocess.run(git+['push','origin','HEAD:refs/heads/'+branch],check=True)
+          print('R5_DELIVERED_COMMIT='+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          print('R5_VERIFIED_PAPERS='+str(len(rs))+'; VERIFIED_ANSWERS=292')
+          PY
