@@ -1,0 +1,21 @@
+name: Round3 source verification
+on:
+  push:
+    branches: [fix/priority-source-repair-r3-20261012]
+    paths:
+      - tools/round3_source_probe.py
+      - .github/workflows/round3-source-probe.yml
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install source readers
+        run: python -m pip install --disable-pip-version-check beautifulsoup4==4.13.4 PyMuPDF==1.26.3
+      - name: Inspect selected sources and existing target papers
+        run: python tools/round3_source_probe.py
