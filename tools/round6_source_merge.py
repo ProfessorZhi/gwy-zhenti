@@ -32,6 +32,9 @@ def assemble():
   original=from_original(rel)
   if g.digest(original)!=r['after_sha256']:raise ValueError('Original source SHA mismatch '+rel)
   od=b.parse(original,rel)
+  from verify_round5_repairs import reverse
+  before_original=reverse(original,r)
+  bod=b.parse(before_original,rel)
   target=ROOT/rel
   if not target.is_file():raise ValueError('Missing new target '+rel)
   t=b.parse(target.read_text(encoding='utf-8'),rel)
@@ -43,11 +46,14 @@ def assemble():
       not od['answers'][n][length:].startswith('\n\n')):
     raise ValueError('Original private source answer/identity mismatch '+rel+':'+str(n))
    if (n not in t['questions'] or not is_missing(t['answers'].get(n,'')) or
-       g.digest(t['questions'][n])!=a['target_question_sha256']):
-    raise ValueError('Existing GitHub-main target is changed or non-empty '+rel+':'+str(n))
+       n not in bod['questions'] or g.digest(bod['questions'][n])!=a['target_question_sha256'] or
+       b.qkey(bod['questions'][n])!=b.qkey(t['questions'][n])):
+    raise ValueError('Pre-existing or mismatched GitHub-main target '+rel+':'+str(n))
    if body_text(t['text'])!=body_text(original):
     raise ValueError('Original document material/task body moved since first verification '+rel)
-   additions.append({**a,'answer':source})
+   additions.append({**a,'answer':source,
+                    'original_round5_target_question_sha256':a['target_question_sha256'],
+                    'target_question_sha256':g.digest(t['questions'][n])})
   try:
    new,pre=render(t,additions)
    if not re.search(r'(?m)^第五轮修复凭据:',t['text']):
