@@ -21,7 +21,7 @@ jobs:
       - name: Install bounded source readers
         run: python -m pip install --disable-pip-version-check requests==2.32.3 beautifulsoup4==4.13.4 Pillow==11.3.0
       - name: Inspect exact requested sources
-        run: python tools/priority_r3_sources.py
+        run: python tools/priority_r3_probe2.py
       - name: Commit only the source inspection report
         env:
           GH_TOKEN: ${{ github.token }}
@@ -30,9 +30,9 @@ jobs:
           test "${GITHUB_REF_NAME}" = 'fix/priority-source-r3-20261012'
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- reports/R3-SOURCE-SCOUT.json
+          git add -- reports/R3-SOURCE-PROBE2.json
           git diff --cached --quiet && exit 0
-          git commit -m 'data: 第三轮定向题源读取结果及既有卷题干核对底账 [skip ci]'
+          git commit -m 'data: 第二批同卷完整题面及缺答案候选来源 [skip ci]'
           gh auth setup-git
           remote=$(git ls-remote origin "refs/heads/${GITHUB_REF_NAME}" | cut -f1)
           test "$remote" = "$GITHUB_SHA" || { echo 'Branch advanced; refuse overwrite'; exit 1; }
