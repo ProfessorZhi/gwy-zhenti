@@ -1,0 +1,23 @@
+name: R7 all-essay reference audit
+on:
+  push:
+    branches: [fix/essay-reference-r7-20261013]
+    paths: ['tools/r7_essay_audit.py', '.github/workflows/r7-essay-audit.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tools/
+            /国考/
+            /省考/
+            /reports/
+      - run: python tools/r7_essay_audit.py
