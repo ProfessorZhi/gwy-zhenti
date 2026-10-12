@@ -5,7 +5,7 @@ from pathlib import Path
 import round4_gap_repair as g
 import round5_bulk as b
 from round4_delivery import is_missing
-from round5_delivery import body_text
+from r7_delivery import base_body as body_text, parse as r7_parse, strip_guide
 from verify_round5_repairs import reverse
 ROOT=Path(__file__).resolve().parents[1]
 NAME='ROUND8-PRIORITY-ESSAY-20261013.jsonl'
@@ -21,7 +21,7 @@ def verify(root):
  for r in rs:
   rel=r['path'];p=(root/rel).resolve()
   if not p.is_relative_to(root) or rel not in bypath:raise ValueError('Unknown or unsafe path')
-  new=p.read_text(encoding='utf-8');old=reverse(new,r);od=b.parse(old,rel);nd=b.parse(new,rel)
+  new=p.read_text(encoding='utf-8');old=reverse(new,r);od=r7_parse(old,rel);nd=r7_parse(new,rel)
   if body_text(old)!=body_text(new) or g.digest(body_text(old))!=r['body_sha256']:raise ValueError('Paper body changed')
   if set(od['questions'])!=set(nd['questions']) or len(od['questions'])!=r['question_count']:raise ValueError('Question set changed')
   questions+=len(od['questions'])
@@ -54,7 +54,7 @@ def snapshot(root,dest):
  for r in records(root):
   p=dest/r['path'];p.write_text(reverse(p.read_text(encoding='utf-8'),r),encoding='utf-8',newline='\n')
  from verify_repair_receipts import RECEIPTS
- older=RECEIPTS+('ROUND4-ANSWERS-20261012.jsonl','ROUND5-ANSWERS-20261012.jsonl','ROUND6-OWNED-ANSWERS-20261013.jsonl')
+ older=RECEIPTS+('ROUND4-ANSWERS-20261012.jsonl','ROUND5-ANSWERS-20261012.jsonl','ROUND6-OWNED-ANSWERS-20261013.jsonl','ROUND7-REFERENCES-20261013.jsonl')
  for name in older:
   source=root/'reports'/name
   if not source.is_file():continue
