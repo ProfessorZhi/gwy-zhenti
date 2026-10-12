@@ -68,7 +68,7 @@ def extend(papers,plans,unresolved):
    if not matches:continue
    matches.sort(key=lambda x:(x[0],x[1],not x[5]['cross_province']),reverse=True)
    _,_,idx,s,row,proof=matches[0]
-   a={'number':n,'answer':row['answer'],'kind':'user_owned_transcript','source_url':'https://github.com/'+SOURCE_REPO+'/blob/'+SOURCE_REV+'/'+quote(s['path'],safe='/'),'source_variant':s['title'],'source_repository':SOURCE_REPO,'source_revision':SOURCE_REV,'source_path':s['path'],'source_blob':s['blob'],'source_sha256':s['sha256'],'source_answer_sha256':row['answer_sha256'],'source_packet_row':idx,'target_question_sha256':g.digest(t['questions'][n]),'proof':proof,'alternative_supported_versions':len(matches)}
+   a={'number':n,'answer':row['answer'],'kind':'user_owned_transcript','source_url':'https://github.com/'+SOURCE_REPO+'/blob/'+SOURCE_REV+'/'+quote(s['path'],safe='/'),'source_variant':s['title'],'source_repository':SOURCE_REPO,'source_revision':SOURCE_REV,'source_path':s['path'],'source_blob':s['blob'],'source_sha256':s['sha256'],'source_answer_sha256':row['answer_sha256'],'source_answer_chars':len(row['answer']),'source_packet_row':idx,'target_question_sha256':g.digest(t['questions'][n]),'proof':proof,'alternative_supported_versions':len(matches)}
    selected.setdefault(t['path'],(t,[]))[1].append(a);added+=1
  fixed={(t['path'],a['number']) for t,aa in selected.values() for a in aa}
  return list(selected.values()),[x for x in unresolved if (x['path'],x['number']) not in fixed],{'available':True,'source_files':len(data['sources']),'source_answer_candidates':len(data['answers']),'added_user_source_answers':added}
