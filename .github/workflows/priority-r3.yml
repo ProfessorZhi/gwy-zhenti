@@ -18,11 +18,24 @@ jobs:
         with:
           ref: ${{ github.sha }}
           persist-credentials: false
-      - name: Install bounded source readers
+      - name: Install pinned validators
         run: python -m pip install --disable-pip-version-check requests==2.32.3 beautifulsoup4==4.13.4 Pillow==11.3.0
-      - name: Inspect exact requested sources
-        run: python tools/priority_r3_probe2.py
-      - name: Commit only the source inspection report
+      - name: Apply reviewed missing answers
+        run: python tools/priority_r3_answers.py
+      - name: Inspect full national and Zhejiang source identity
+        run: python tools/priority_r3_whole.py
+      - name: Existing regression tests
+        working-directory: tools
+        run: |
+          python -m unittest discover -s tests -q
+          python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test -v
+      - name: Build and verify inventory plus preserved receipts
+        run: |
+          python tools/cloud_quality.py --build --verify-images
+          python tools/cloud_quality.py --check --verify-images
+          python tools/verify_repair_receipts.py
+          python tools/verify_image_pixels.py
+      - name: Commit explicit reviewed files only
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -30,9 +43,9 @@ jobs:
           test "${GITHUB_REF_NAME}" = 'fix/priority-source-r3-20261012'
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- reports/R3-SOURCE-PROBE2.json
+          git add -- '省考/江苏/2016/申论-A类.md' '省考/江苏/2016/申论-B类.md' '省考/江苏/2018/申论-A类.md' reports/ROUND3-ANSWERS-20261012.jsonl reports/R3-WHOLE-PROBE.json catalog/manifest.jsonl 'COVERAGE-优先区.md' PROGRESS.md README.md QUALITY.md reports/QUALITY-SUMMARY.json reports/QUALITY-AUDIT.md reports/DEFECTS.jsonl reports/PRIORITY-MISSING.json
           git diff --cached --quiet && exit 0
-          git commit -m 'data: 第二批同卷完整题面及缺答案候选来源 [skip ci]'
+          git commit -m 'fix: 补录江苏三卷五份来源答案，保持旧题面和答案不变 [skip ci]'
           gh auth setup-git
           remote=$(git ls-remote origin "refs/heads/${GITHUB_REF_NAME}" | cut -f1)
           test "$remote" = "$GITHUB_SHA" || { echo 'Branch advanced; refuse overwrite'; exit 1; }
