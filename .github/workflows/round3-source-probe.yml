@@ -22,7 +22,7 @@ jobs:
           show-progress: false
       - name: Install pinned readers and validators
         run: python -m pip install --disable-pip-version-check beautifulsoup4==4.13.4 Pillow==11.3.0
-      - name: Apply exact reviewed scope and check read-back hashes
+      - name: Apply reviewed content and verify complete read-back
         run: |
           python tools/round3_source_boundaries.py --apply
           python - <<'PY'
