@@ -66,6 +66,21 @@ def snapshot(root,dest):
  for r in records(root):
   p=dest/r['path']
   p.write_text(reverse(p.read_text(encoding='utf-8'),r),encoding='utf-8',newline='\n')
+ # Earlier repair receipts include a small number of image crops. The original
+ # R1-R5 verifiers require those exact bytes in a reconstructed baseline.
+ from verify_repair_receipts import RECEIPTS
+ for name in RECEIPTS+('ROUND4-ANSWERS-20261012.jsonl','ROUND5-ANSWERS-20261012.jsonl'):
+  rp=root/'reports'/name
+  if not rp.is_file():continue
+  for line in rp.read_text(encoding='utf-8').splitlines():
+   if not line.strip():continue
+   rec=json.loads(line);rel=rec['path'];src=(root/rel).resolve()
+   if not src.is_relative_to(root) or not src.is_file():raise ValueError('Unsafe older receipt path')
+   out=(dest/rel).resolve()
+   if not out.is_relative_to(dest):raise ValueError('Unsafe historical copy')
+   if not out.exists():
+    out.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copyfile(src,out)
  (dest/'reports'/RECEIPT).unlink()
 
 if __name__=='__main__':
