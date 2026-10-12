@@ -54,6 +54,15 @@ def verify_to_round4(root:Path)->dict:
 
 def verify(root:Path)->dict:
  root=Path(root).resolve()
+ if (root/'reports/ROUND6-OWNED-ANSWERS-20261013.jsonl').exists():
+  from verify_round6_repairs import verify as verify_round6, snapshot as snapshot_r6, records as r6_records
+  sixth=verify_round6(root)
+  with tempfile.TemporaryDirectory(prefix='gwy-r6-prior-') as tmp:
+   snapshot_r6(root,Path(tmp))
+   result=verify(Path(tmp))
+  result['round6']=sixth
+  result['receipt_records']+=len(r6_records(root))
+  return result
  if not (root/'reports/ROUND5-ANSWERS-20261012.jsonl').exists():return verify_to_round4(root)
  from verify_round5_repairs import verify as verify_round5,snapshot,records
  fifth=verify_round5(root)
