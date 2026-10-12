@@ -1,0 +1,100 @@
+name: Round6 verified 190-answer delivery
+on:
+  push:
+    branches: [fix/source-owned-r6-20261013]
+    paths: ['.github/workflows/round6-deliver.yml']
+permissions:
+  contents: write
+concurrency:
+  group: round6-single-verified-delivery
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.repository == 'ProfessorZhi/gwy-zhenti'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+      - name: Install pinned verification dependencies
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0 beautifulsoup4==4.13.4
+      - name: Authenticated read-only fetch of fixed historical source proof
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import subprocess
+          helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f'
+          subprocess.run(['git','-c','credential.helper='+helper,'fetch','--no-tags','--depth=1','origin','53c4646b3b63b1661e2dca41bc6437d46bc7254a'],check=True)
+          PY
+      - name: Recheck exactly the 190 non-overlapping source answers then write MD
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python -m py_compile tools/round6_source_merge.py tools/verify_round6_repairs.py tools/round6_report.py
+          python tools/round6_source_merge.py --apply
+      - name: Refresh entire corpus inventory and image references
+        run: python tools/cloud_quality.py --build --verify-images
+      - name: Build actual verified report with correct baseline
+        run: python tools/round6_report.py
+      - name: Independently verify all reversible source receipts R1 through R6
+        run: |
+          python tools/verify_round6_repairs.py
+          python tools/verify_repair_receipts.py
+      - name: Existing complete regression and all 95903 images
+        run: |
+          (cd tools && python -m unittest discover -s tests -q)
+          (cd tools && python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test round3_repair_test -q)
+          python tools/cloud_quality.py --check --verify-images
+          python tools/verify_image_pixels.py
+      - name: Remove single-use write workflow before submitting
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          for p in (Path('.github/workflows/round6-probe.yml'),Path('.github/workflows/round6-deliver.yml')):
+            assert p.is_file()
+            p.unlink()
+          PY
+          python tools/verify_repair_receipts.py
+      - name: Commit only validated Markdown and reports, refuse concurrent writes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          branch='fix/source-owned-r6-20261013'
+          assert os.environ['GITHUB_REPOSITORY']=='ProfessorZhi/gwy-zhenti'
+          assert os.environ['GITHUB_REF']=='refs/heads/'+branch
+          records=[json.loads(line) for line in Path('reports/ROUND6-OWNED-ANSWERS-20261013.jsonl').read_text(encoding='utf-8').splitlines() if line]
+          assert len(records)==80 and sum(len(r['added_answers']) for r in records)==190
+          files={r['path'] for r in records}
+          assert len(files)==len(records)
+          allow=files | {
+            'PROGRESS.md','README.md','QUALITY.md','COVERAGE-优先区.md','catalog/manifest.jsonl',
+            'reports/QUALITY-SUMMARY.json','reports/QUALITY-AUDIT.md','reports/DEFECTS.jsonl',
+            'reports/PRIORITY-MISSING.json','reports/PRIORITY-QUALITY-20261012.md',
+            'reports/ROUND6-OWNED-ANSWERS-20261013.jsonl','reports/REPAIR-SUMMARY-20261013-R6.json',
+            'reports/QUALITY-REPAIR-20261013-R6.md',
+            '.github/workflows/round6-probe.yml','.github/workflows/round6-deliver.yml'
+          }
+          def changed_set(args):
+            return {s for s in subprocess.check_output(['git',*args]).decode('utf-8').split('\0') if s}
+          changed=changed_set(['diff','--name-only','-z']) | changed_set(['ls-files','--others','--exclude-standard','-z'])
+          assert files<=changed,'Missing modified papers: '+str(files-changed)
+          assert {'reports/ROUND6-OWNED-ANSWERS-20261013.jsonl','reports/QUALITY-REPAIR-20261013-R6.md','PROGRESS.md'}<=changed
+          assert changed<=allow,'Unexpected modified paths: '+str(changed-allow)
+          assert not any(x.startswith('图片/') or x.startswith('tools/data/round5-owned/') for x in changed)
+          subprocess.run(['git','add','--',*sorted(changed)],check=True)
+          subprocess.run(['git','-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com',
+                          'commit','-m','fix: 在已合并102份参考答案基础上补齐190处独立原始资料答案'],check=True)
+          helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f'
+          git=['git','-c','credential.helper='+helper]
+          remote=subprocess.check_output(git+['ls-remote','origin','refs/heads/'+branch],text=True).split()[0]
+          assert remote==os.environ['GITHUB_SHA'],'Concurrent remote head moved; refuse push'
+          subprocess.run(git+['push','origin','HEAD:refs/heads/'+branch],check=True)
+          print('ROUND6_COMMIT='+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          print('ROUND6_VERIFIED_PAPERS='+str(len(records))+' ADDED_SOURCE_ANSWERS=190')
+          PY
