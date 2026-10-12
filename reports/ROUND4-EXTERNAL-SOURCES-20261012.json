@@ -1,0 +1,26 @@
+{
+  "added": [
+    {
+      "path": "省考/浙江/2016/申论-A类.md",
+      "url": "https://www.gzu521.net/gwy/2016/04/72826.htm",
+      "sha256": "7e324ebd7e6d67671dcacebb77f120aa4fb7ab2933e581cc8b06a769aab3e156",
+      "title": "浙江省2016年公务员考试申论A卷真题参考答案_浙江公务员考试 - 贵考易：贵州好工作信息聚合平台www.gzu521.net",
+      "question_ids": [
+        3
+      ],
+      "counted_as_full_answers": false
+    },
+    {
+      "path": "省考/浙江/2016/申论-B类.md",
+      "url": "https://www.gzu521.net/gwy/2016/04/72803.htm",
+      "sha256": "4f59507c98a5df1f5ddedcc0f8168f21e2a45d611168f9ffdee9ca86f4b64b96",
+      "title": "浙江省2016年公务员考试申论B卷真题参考答案_浙江公务员考试 - 贵考易：贵州好工作信息聚合平台www.gzu521.net",
+      "question_ids": [
+        2,
+        3
+      ],
+      "counted_as_full_answers": false
+    }
+  ],
+  "not_added": []
+}

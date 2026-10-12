@@ -1,0 +1,4335 @@
+{
+  "parsed_missing": [
+    {
+      "path": "省考/上海/2017/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请概括给定资料给定资料-给定资料的主要内容。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2017/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：结合给定资料，谈谈在规范和发展共享单车上，政府、共享单车企业、用户各应尽到哪些责任？（25分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2017/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：结合给定资料，围绕“行政执法如何跟上科技的快速发展”这一主题写一篇文章。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2019/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定材料”，概括当前我国应急管理面临形势的主要特征。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2019/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定材料”，总结近年我国实施应急管理的主要经验。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2019/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：阅读给定材料，围绕“生命至上，安全第一”这一主题写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2020/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "short_stem",
+      "stem": "问题一：结合给定材料，概括红色家风的特点。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2020/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "short_stem",
+      "stem": "问题二：结合给定材料，分析家风失范的主要原因。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2020/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：阅读给定材料，结合“家风”这一主题写一篇文章。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2024/申论-B卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：结合给定资料，阐述如何理解“跳出上海看上海”的定位，并界定“全球资源配置功能”的内涵。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2024/申论-B卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：上海的高质量发展与全国其他地区有很多共性，但作为中国最大的经济中心城市，上海高质量发展又有一些个性特征。结合给定资料，论述上海高质量发展的个性特征和共性特征。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2024/申论-B卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：目前，全国已经建有数十家数据交易机构，但场内交易至今仍处于探索阶段。阅读给定资料，分析当前场内数据交易面临哪些难点。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2024/申论-B卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：阅读但不拘泥于给定资料，以“领跑新时代高质量发展”为主题写一篇文章。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2025/申论-A卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：结合给定资料，简述零工经济作为新就业形态的“新”特征，并阐述零工经济的价值功能。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2025/申论-A卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：中国目前灵活就业人员已达2亿人，占全国就业人口的27%。结合给定资料，分析灵活就业人员可能面临的职业风险。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2025/申论-A卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：为贯彻习近平总书记“确保外来人口进得来、留得下、住得安、能成业”的指示精神，结合给定资料，概括上海所采取的保障性安居创新举措。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2025/申论-A卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：以“增强公共服务均衡性可及性，提高人民生活品质”为主题写一篇文章。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2025/申论-B卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：结合给定资料，分析出现“内卷”和“躺平”现象的原因。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2025/申论-B卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：结合给定资料，概括当前政府在缓解青年压力方面采取了哪些举措。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2025/申论-B卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：结合给定资料，分析青年在日常生活中应如何辨别“真实需求”与“虚假需求”。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/上海/2025/申论-B卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：以“如何增强青年政治自觉和拒腐防变能力”为主题，写一篇文章。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2022/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "根据给定资料1，请谈谈你对“村里的发展，既要摘掉‘穷帽子’，又要改变‘老样子’，还要留住‘好根子’”这句话的理解。（20 分）\n"
+    },
+    {
+      "path": "省考/云南/2022/申论-县乡卷.md",
+      "number": 2,
+      "reason": "conflicting_supported_answers",
+      "stem": "请根据给定资料2，梳理当前K 县农村寄递物流体系存在的问题，并提出相应的改进建议。（25分）\n"
+    },
+    {
+      "path": "省考/云南/2022/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "根据“给定资料1”，概括T 市柠檬产业发展的主要措施。（15 分）\n"
+    },
+    {
+      "path": "省考/云南/2022/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "根据“给定资料2”，分析G 省“新动能”制造业迅猛发展的主要原因。（20 分）\n"
+    },
+    {
+      "path": "省考/云南/2022/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "假如你是J 省发改委的工作人员，根据“给定资料3”，写一份题为“J 省纺织服装产业发展调研报告”的提纲。（25 分）\n"
+    },
+    {
+      "path": "省考/云南/2022/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "“请结合给定资料4”，以“城、乡、人”为题，联系实际，自选角度，自拟题目，写一篇文章。（40 分）\n"
+    },
+    {
+      "path": "省考/云南/2023/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，谈谈石桥街道是如何“让温暖传递到更多角落”的？（15分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2023/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，概括L县山核桃产业发展过程中存在的问题及解决措施。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2023/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：省发改委调研组准备来Q区调研“整村经营”情况。假如你是区发展改革局工作人员，请根据“给定资料3”，拟写一份书面汇报材料。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2023/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：S县准备举办招商引资推介会，请根据“给定资料4”，为黄书记拟写推介会开幕式上的讲话稿。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2023/申论-省州市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，谈谈对划线句子“Z省正以其硬核实力实现从‘走出去’到‘走进去’的新飞跃”的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2023/申论-省州市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，梳理D市虚拟产业园发展中存在的问题，并提出解决问题的建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2023/申论-省州市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：M省发改委调研组目前赴G省调研了“工业上楼”相关情况。假如你是调研组工作人员，请根据“给定资料3”，拟写调研报告提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2023/申论-省州市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中划线句子提到，“我们必须心无旁骛，在大变局的喧嚣中守住‘本分’，切实增强好‘本领’，推动高质量发展的步伐就能坚实稳健，我们就能走向更广阔的未来”。请结合对这句话的理解，参考给定资料，联系实际，自选角度，以“本分本领”为题，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2024/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：“给定资料1”提到“从0到1”和“从1到100”，请谈谈“科技副总”在“从0到100”的过程中发挥了哪些作用。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2024/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如你是D市城管局工作人员，请根据“给定资料2”，起草一份舆情摘要供领导参阅。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2024/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是刚入职乡党政办的工作人员，领导安排你去庙坝村了解桑蚕产业发展情况，请根据“给定资料3”，起草一份汇报材料提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2024/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到：“对机会的把握就像拔河，一头是危机，一头是新机，用力才可能赢得新机，泄力就可能输给危机。”请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2025/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈对“‘边城’，还是那座城，但却已不再‘边’”这句话的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2025/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，梳理M县沟渠、坑塘等相关小型农田水利设施管理存在的问题，并提出相应解决措施。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2025/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是W市政协委员，请根据“给定资3”，拟写一篇关于在全市加强乡村档案管理工作的提案。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/云南/2025/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“我们应当把更多精力投入在‘种树’，而非静待成熟再‘摘果’。”请对这句话进行深入系统的思考，联系实际，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2021/申论-乡镇.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：资料1中提到，“尽管有些磕磕绊绊，但日子越过越有奔头。”请你根据给定资料谈谈对这句话的理解。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2021/申论-乡镇.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据资料3，请分别谈谈高大妈和老姚的“喜”和“盼”。（10分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2022/申论-盟市.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“成长的烦恼总是在成长中化解的”，发展难免会带来新问题，而新问题是新发展的契机，请联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2023/申论-旗县.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括S省在帮扶“新农人”工作中的主要做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2023/申论-旗县.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈M市夜市有哪些特点。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2023/申论-旗县.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假设A市要在国家级媒体上发布一则三分钟的视频，推介该市的苹果以及相关产品，请根据“给定资料3”，为该视频撰写一则推介稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2023/申论-旗县.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请深入思考“给定资料4”中肖教授说的一段话，结合你对这段话的理解，联系实际，自拟题目，自选角度，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-旗县卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：“给定资料1”介绍了张家村创建“张家联播”的做法，省乡村振兴局要将其做法纳入乡村治理案例库。假如你是张家村党支部符书记，请撰写一份案例介绍材料。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-旗县卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中提到，“从整合土地开始种植魔芋，到打造魔芋产业园，再到推出‘芋胖胖’魔芋小食，老尹仅仅用了一年多的时间。”请你谈谈老尹能迅速做成这些事的原因。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-旗县卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是S市调研组工作人员，请根据“给定资料3”，在明确S市地理标志产品发展困境的基础上，提出推进S市地理标志产品品牌建设的对策建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-旗县卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到，“模仿可以是创新的开始，但也只是个开始。”根据你对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-盟市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，分析Q镇农业产业发展存在的问题，并提出解决这些问题的具体办法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-盟市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：《A市日报》报道了“南山小学坚持开展日记教育活动”的做法，请根据“给定资料2”，为这篇报道写一则短评。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-盟市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是T市发改委的工作人员，请根据“给定资料3”，对T市“以竹代塑”产业实现高质量发展提出建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-盟市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请深入思考“给定资料4”中划线的句子，根据你对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/北京/2022/申论-区级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目4：“治未病”思想，不仅对城市应急管理，而且对城市的日常管理有深刻启示。请你参考给定材料，联系实际，以“从‘治未病’想到的___”为题，题中画线部分自拟，自选角度，写一篇文章。（40分）\n\n      "
+    },
+    {
+      "path": "省考/吉林/2019/申论-甲级.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "一、根据给定资料2、3，概括我国民间智库发展过程中面临的困难。（20分） \n\n      "
+    },
+    {
+      "path": "省考/吉林/2019/申论-甲级.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "二、为了解高校智库发展情况，发现和解决问题，B市派出调研组对该市高校和相关部门进行专项调研。假如你是调研组成员，根据给定资料4、5，拟写一份“B市高校智库建设情况调研报告”，供领导参考。（25 分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2019/申论-甲级.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "三、给定资料5介绍了东北地区“柔性引才”的情况。结合给定资料，谈谈你对“柔性”的理解。（15分）\n\n      "
+    },
+    {
+      "path": "省考/吉林/2019/申论-甲级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "四、给定资料7提到“大厦之成，非一木之才也；大海之阔，非一流之归也。”根据你对这句话的理解，结合给定资料，围绕“智库”这一话题，联系实际，自拟题目，自选角度，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-丙卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，概括茂源镇袜子产业实现转型升级的做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-丙卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如你是N市应急管理局的相关工作人员。请根据“给定资料2”，梳理N市民间救援组织发展中存在的问题，并就如何实现N市民间救援组织良性发展提出建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-丙卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：C市北湖区司法局拟开展“金牌调解员”评选活动，假如你是福林社区相关工作人员，请根据“给定资料3”，为郝晓玲撰写一份参评材料。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-丙卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：省法院拟在微信公众号“基层巡礼”栏目介绍D市设立“共享法庭”的经验，请根据“给定资料4”，以“法庭映初心·法官在行动”为题，写一篇宣传稿。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-乙级.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，概括A县实施“乡村公共资源共享行动”的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-乙级.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：省里拟建立“污染防治攻坚战”典型案例库，T市露天矿改造案例成功入选。假如你是T市生态环境局相关工作人员，请根据“给定资料2”，将T市露天矿改造的经验做法整理成案例材料入库，供大家学习参考。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-乙级.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是S市乡村振兴局调研组成员，请根据“给定资料3”，就S市如何支持传统技艺发展，写一份工作建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-乙级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：结合“给定资料4”，以“心路·辛路·新路”为题，联系实际，自选角度，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-甲卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，概括W市是如何成为青年人归宿的。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-甲卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，谈谈你对“‘新村民’体现的是一种人与土地、自然连接的方式”这句话的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-甲卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是B市商务局调研组的成员，请根据“给定资料3”，梳理B市小店发展面临的问题并提出建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/吉林/2023/申论-甲卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请深入思考“给定资料4”中三则“逆行者”的事例，联系实际，自拟题目，自选角度，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2016/申论-下半年.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据给定资料，请概括总结四川省为了做好公务员招录考试采取了哪些措施。(20分)\n\n　　"
+    },
+    {
+      "path": "省考/四川/2016/申论-下半年.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：2016年下半年四川省公务员录用考试在即，为倡导考生诚信参考，四川省人事考试中心将通过四川人事考试网发布《致考生公开信》，请代拟此公开信。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2016/申论-下半年.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：针对给定资料，结合社会生活实际，请以“——我看公务员招录考试”为副标题，自选角度，自拟题目，写一篇议论文。(50分)\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-上半年行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，概括Z省在融合型大社区治理过程中遇到的新问题以及运用的新解法。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-上半年行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如你是N市市场监管局工作人员，请根据“给定资料2”，对座谈会上反映的问题提出解决的初步建议，供领导参考。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-上半年行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料3”中，海港街道有12个小区获评“五星级平安小区”，请结合材料里该街道管理的成功做法，拟写一份经验交流材料。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-上半年行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：根据“给定资料4”，以“面子、里子”为话题，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，归纳概括A县发展山核桃产业的措施。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如你是B县政府办工作人员，请根据“给定资料2”，就B县上澳湾海域养殖用海改革实践写一份简报。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：C县将参加全市托育服务典型案例评选，假如你是C县卫健委工作人员，请根据“给定资料3”，拟写一份参评材料。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请根据“给定资料4”，围绕“精度·温度·力度”这一主题，联系实际，自选角度，自拟题目，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-省市.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，归纳概括A省推进农业高质量发展的举措。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-省市.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，对B省“工业上楼”模式进行简要介绍。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-省市.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是C省文旅厅负责宣传的工作人员，请根据“给定资料3”，拟写一篇C省文物资源保护与利用情况的宣传稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2023/申论-省市.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中的画线句子提到，“我们必须心无旁骛，在大变局的喧嚣中始终坚守住‘本分’，切实增强好‘本领’，推动高质量发展的步伐就能坚实稳健，我们就能走向更加广阔的未来。”请结合对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2024/申论-县乡、普通选调卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈莲花社区为什么能“脱胎换骨”。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2024/申论-县乡、普通选调卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：C市拟对全市市政公用设施进行优化提升。假如你是市政部门的工作人员，请根据“给定资料2”，对该市公共座椅存在的问题进行梳理，并提出优化建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2024/申论-县乡、普通选调卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：四川省拟召开推进现代种业发展现场会，天府现代种业园将在会上做交流发言。假如你是该种业园的工作人员，请根据“给定资料3”，撰写一份发言提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2024/申论-县乡、普通选调卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到：“我们的乡村，要知道从何处来，更要明白往何处去。”请你对这句话进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，撰写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2024/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，归纳概括K省各地服务型行政执法工作的具体做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2024/申论-行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料4中提到“法治建设既要抓末端、治已病，更要抓前端、治未病”，请结合对这句话的理解，联系实际，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-县乡、普通选调卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括Z市各地在开展农民工回引工作方面的举措。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-县乡、普通选调卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如你是华林坝街道办工作人员小谢，请根据“给定资料2”，就如何平衡好家和苑小区的文旅发展与居民日常生活，提出工作建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-县乡、普通选调卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“优势”“顺势”“借势”，请你结合对“势”的理解，参考给定资料，联系实际，自选角度，自拟题目，撰写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括Z市各地在开展农民工回引工作方面的举措。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：调研组将根据调研情况撰写调研报告，假如你是调研组成员，请根据“给定资料3”，拟写一份调研报告提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请参考给定资料1-4，围绕“以‘通路’谋同路”这一话题，联系实际，自选角度，自拟题目，撰写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”。概括“亮晶晶”未检团队在保护未成年工作方面的举措。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈你对“纽扣法庭”为守护长江黄河干支流长久安澜扣好“同心扣”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是华林坝街道办工作人员小谢，请根据“给定资料3”，就如何平衡好家和苑小区的文旅发展与居民日常生活，提出工作建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2025/申论-行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中的划线句子提到“中国法治的根基在人民，只有让法治在广大人民的心中落地生根，才能实现全面依法治国”。请你深入思考这句话，参考“给定资料4”，联系实际，自选角度，自拟题目，撰写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2026/申论-县乡、普通选调卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括S省在发展工业文旅方面的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2026/申论-县乡、普通选调卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：J县“报表通”的探索与实践入选“全省基层治理先进典型案例”，将向全省推广。请根据“给定资料2”，撰写一份案例摘要。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2026/申论-县乡、普通选调卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：农创客是农村创业创新的引领者，也是实施乡村振兴战略的生力军。假如你是参与调研的工作人员，请根据“给定资料3”，梳理农创客在创新创业中面临的问题并提出对策建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/四川/2026/申论-县乡、普通选调卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“静候风至不如勇造风口，‘无中生有’才会样样都有”。请你对此进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，撰写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-乡镇卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请谈谈E县在规范小微权力运行方面都有哪些做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-乡镇卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理当前宽石镇乡村旅游规划中存在的问题，并提出相应的改进建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-乡镇卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：市里准备召开主题为“惠民纾困解难，营造良好营商环境”的工作经验交流研讨会。假设你是“货车司机之家”工作专班负责人，请根据“给定资料3”，写一份发言提纲，介绍Q县货车司机之家开展方法。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-乡镇卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到：“社区‘吹哨’，既要吹得‘准’，还要吹得‘响’、吹得‘久’”。请根据对这句话的理解，结合社区治理，自选角度，自拟题目，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-市区卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你概括Z县打造现代田园综合体的过程对推进乡村振兴工作有哪些值得借鉴的经验。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-市区卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如孙书记要参加市里召开的基层协商议事试点工作经验交流会，请你根据“给定资料2”为他撰写一份发言提纲。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-市区卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料3”，请你概括占唐路零工市场存在的问题，并提出解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-市区卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中，林主任说“我们要以不变应万变”，程馆长说“我们要以变应变”，请深入思考这两句话，联系实际，自选角度，自拟题目，写一篇议论性文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你概括N市采取了哪些措施推进基层普法工作。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如你是阳春县宣传部门工作人员，请你根据“给定资料2”以“从‘黑脏臭’到‘清净美’”为题目，撰写一篇新闻宣传稿。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是蓝阳区城管部门的一名工作人员，请根据“给定资料3”，对步行街周边的问题进行分类汇总，并分别提出解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2023/申论-行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“社保是我一生的事业，也是每个人一生的事业”，请你深入思考这句话，联系实际，自选角度，自拟题目，写一篇议论性文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2024/申论-市级.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈F市大力开展城市绿化的经验。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2024/申论-市级.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，剖析南山工业社区的治理模式。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2024/申论-市级.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料3”是C市晚报报道当地推进全龄友好型城市建设的一篇文章，请你以《照亮每一个角落——推进全龄友好型城市建设》为题目，为这篇报道稿写一则短评。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2024/申论-市级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中划线部分提到“创新是有风险的，但它又是规避风险的最好方式”。请深入思考这句话，联系实际，自选角度，自拟题目，写一篇议论性文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2025/申论-市区卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：“给定资料1”中提到“反向旅游，成为了一场双向奔赴”，请谈谈你对这句话的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2025/申论-市区卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：近年来，年轻人从城市到乡村就业的现象逐渐增多。请根据“给定资料2”，分析这种现象出现的原因。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2025/申论-市区卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：为学习新疆积极推进渔业发展的经验，某市组团赴新疆调研考察。假设你是考察团的一名工作人员，请根据“给定资料3”，撰写一份调研报告提纲，供领导参阅。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2025/申论-市区卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“一定程度上，反向思维，也能推动事物的正向前行”，请你深入理解这句话，联系实际，自选角度，自拟题目，写一篇议论性文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2025/申论-街镇卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料2”，谈谈你对“文化特派员”的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2025/申论-街镇卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料3”，总结天津水稻在新时代焕发新活力的原因。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2025/申论-街镇卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：为学习借鉴D县义务教育优质均衡发展经验，H县教育局计划赴D县开展学习考察活动。请根据“给定资料4”，为D县教育局拟定一份座谈会上的经验交流提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2025/申论-街镇卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请你对“给定资料5”中提到的“科技是这个时代最大的公益”进行深入思考，联系实际，自拟题目，写一篇议论性文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2026/申论-行政执法.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目1：“给定资料1”是T市市场监管部门今年的一部分工作，请你为市场监管部门公众号写一篇宣传稿。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2026/申论-行政执法.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目2：王圆圆一天的工作，展示了M市公安局以大数据推动警务现代化的生动实践。请根据“给定资料2”，说明M市公安局是如何成功用大数据赋能公共服务的。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2026/申论-行政执法.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目3：座谈会结束后，X市政务服务数据管理局拟写一份总结报告供后续工作参考。请根据“给定资料3”，撰写报告中“问题”与“建议”这两部分内容的提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/天津/2026/申论-行政执法.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目4：根据“给定资料”，请以执法服务的“点、线、面”为主题，进行深入系统的思考，联系实际，自选角度，自拟题目，写一篇议论性文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2019/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料2”，概括信用体系建设对当前社会具有的积极影响。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2019/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料3”介绍了龙台村开展信用村创建的具体做法，请归纳其主要经验，供G县在全县范围内开展信用村创建工作时借鉴。（20分)\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2019/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请结合“给定资料6”，假定你是某高校团委负责人，请给学校党委写一份“加大信用教育力度”的建议书（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2019/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料2”中提到，“信用既是一种道德品质，也是一种制度和规则。”请你根据对这句话的理解，自拟题目，写一篇文章（40分)\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2022/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据给定资料1，归纳H市的中小学校在开展课后服务方面的主要举措。（15分）\n\n"
+    },
+    {
+      "path": "省考/安徽/2022/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：给定资料2介绍了F县帮扶小微企业的具体做法，请概括其主要经验，供F县在市政府召开的帮扶小微企业经验交流会上介绍。（20分）\n\n"
+    },
+    {
+      "path": "省考/安徽/2022/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据给定资料3，就S市开办社区食堂的情况拟写一份工作简报。（25分）\n\n"
+    },
+    {
+      "path": "省考/安徽/2022/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料5中画线句子写道：“成长的烦恼总是在成长中化解的”，请结合你对这句话的思考，联系实际，自选角度，自拟题目，写一篇议论文。（40分）\n\n"
+    },
+    {
+      "path": "省考/安徽/2023/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请概括A市为优化营商环境采取了哪些措施、取得了哪些成效。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请结合“给定资料2”，谈谈你对“新局蕴新机，新机生新局”这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假设你是C市老龄办工作人员，请根据“给定资料3”，以“让‘鸿沟’变‘红利’，一个都不能少”为题，为本市《老龄报》写一篇宣传报道稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“现代让传统更亲切鲜活，传统让现代更丰富厚重”，请结合你对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请谈谈E县在规范小微权力运行方面都有哪些做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理当前宽石镇乡村旅游规划中存在的问题，并提出相应的改进建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：Q县开发区党工委拟召开专题会议，听取“货车司机之家”建设工作汇报。假设你是“货车司机之家”工作专班负责人，请根据“给定资料3”，起草一份汇报材料提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：假设你是S区商务局工作人员，请根据“给定资料4”，以“暖心家政在行动”为题，为T市《质量服务报》写一篇宣传报道稿。（35分)\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-C类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请谈谈N市采取了哪些措施推进基层普法工作。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-C类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中介绍了桃花县市场监管局亲商助企、开展“菜单式”服务的做法，请概括其主要经验。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2023/申论-C类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：S县住建局拟进一步宣传农村自建房建设规范"
+    },
+    {
+      "path": "省考/安徽/2023/申论-C类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：阳春县农村黑臭水体治理工作入选全省生态环境治理典型案例汇编。请根据“给定资料4”，为阳春县拟写一份案例介绍材料。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2024/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括F市开展城市绿化工作的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2024/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料3”中提到“每次下乡，乡亲们总是高接远送，不是亲人胜似亲人”。是什么让乡亲们对戏剧团产生如此深厚的感情？对此，请谈谈你的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2024/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假设你是W市农业农村局的工作人员，请根据“给定资料4”，拟写一篇W市发展庭院经济的调研报告提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2024/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料5”中提到“青山绿水是无价之宝”，又提到“生态有价”。生活中也有许多既有价又无价的事物，请对此进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2024/申论-C类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据给定资料1，概括Z县处置农药包装废弃物的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2024/申论-C类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如你是交警部门工作人员，请根据给定资料2，对B市实施机动车禁鸣措施中出现的问题提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2024/申论-C类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：近期，不少群众向H市市场监督管理局来信咨询临期食品的安全问题，假设你是该局工作人员，请根据给定资料3草拟一封公开信，以回应群众关切。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2024/申论-C类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料4中提到“我们就是要把每件小事都做好，让阳光照亮城市的每一个角落”。请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2025/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据给定资料1，概括Z县推广家庭签约医生制度的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2025/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据给定资2，梳理当前H县在农用地膜使用、回收方面存在的问题，并提出相应的改进建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2025/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：C县将举办全县“十四五”经济社会发展成果展，请根据给定资料3，为其中的“绿色转型发展”展板撰写相应的文字材料，介绍其主要做法和成效。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2025/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料4提到“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”，请结合你对这句话的理解，参考给定资料，联系乡村发展，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2025/申论-C类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：A市通过建设高标准农田激活了农村的“一池春水”，根据“给定资料1”，请概括当地农村出现的新变化。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2025/申论-C类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理Z市火车站停车场存在的问题，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2025/申论-C类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：在此次新时代文明实践赶大集活动之前，县融媒体中心拟通过平台和乡广播站开展宣传，吸引广大群众参与。请根据“给定资料3”，写一份广播稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2025/申论-C类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到“我们将继续按照‘轻车’与‘壮马’相结合的原则，持续改进和创新工作模式，努力绘就基层治理新画卷”，请深入思考这句话对执法工作的借鉴意义，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈你对三位企业家所说的“至关重要”的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理调研组在F市菜市场调研中发现的问题，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：S市文旅局将在公众号上发布一封公开信，邀请游客前来南门社区旅行。假设你是市文旅局的工作人员，请根据“给定资料3”，拟写这封公开信。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“时代的风总是在吹，关键在找准‘风向’，驾驭‘风力’，引领‘风头’。”请深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据给定资料1，概括Y县通过国际交流合作发展竹产业的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据给定资料2，梳理S市乡村新职业从业者在工作中遇到的主要问题，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：市里将举办传统产业转型升级经验交流会，D县王县长将参加会议并发言。请根据给定资料3，为王县长写一份发言提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料4中提到“弱鸟要飞高飞远，既要找到适合的飞行路径，又要丰满自身的羽翼”，请深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-C类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据给定资料1，概括E市在优化法治化营商环境方面的举措。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-C类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据给定资料2，梳理M省外来入侵物种防控工作面临的问题，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-C类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：D市准备在全市范围内征集人才队伍建设创新案例，请根据给定资料3，为闻岭小镇管委会拟写一份案例介绍材料。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/安徽/2026/申论-C类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料4中提到“有‘老’的气韵，又有‘新’的气象，方寸之地大有乾坤。”请你结合对这句话的理解，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2019/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "一、根据“给定资料1”，概括总结J市12345热线的成功经验。（15分） \n\n      "
+    },
+    {
+      "path": "省考/山东/2019/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "二、根据“给定资料2”，分析C市目前幼儿教育发展的主要问题。（20分） \n\n       "
+    },
+    {
+      "path": "省考/山东/2019/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "三、根据“给定资料4”，谈一下你对棚户区改造“A市速度”的理解。（25分） \n\n       "
+    },
+    {
+      "path": "省考/山东/2019/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "四、参考给定资料，以“‘民生’跟着‘民声’走”为主题，自选角度，自拟题目，写一篇文章。（40分) \n\n       "
+    },
+    {
+      "path": "省考/山东/2023/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "(二)假如你是小张，结合给定资料3,为S市工信局相关负责人草拟一份宣讲提纲。(30分)\n\n　　"
+    },
+    {
+      "path": "省考/山东/2023/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "(三)新春伊始，齐鲁大地动能澎湃，焕发蓬勃生机，结合给定资料，以“脉动的力量”为主题，自拟标题，自选角度，撰写一篇文章。(50分)\n\n　　"
+    },
+    {
+      "path": "省考/山东/2024/申论-A卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括F市如何实现“从过去的‘能办’到现在的‘方便办’‘高效办’”。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2024/申论-A卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈对划线句子“点燃了乡村文化振兴的星火”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2024/申论-A卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料4”为新闻媒体拟发表的一篇报道，请撰写一篇同时配发的短评。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2024/申论-A卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请以“给定资料6”中的划线句子“众力并，则万钧举”为主题，结合全部给定资料，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2024/申论-B卷.md",
+      "number": 1,
+      "reason": "short_stem",
+      "stem": "问题一：请根据“给定资料1”，概述“好品山东”好在哪里。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2024/申论-B卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料3”，谈谈对划线句子“东梁村如今可谓‘只此青绿’，但未来不能‘只有青绿’”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2024/申论-B卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：近期，S市将评选全市社会治理创新典型案例。请根据“给定资料4”，撰写一篇关于“滨海模式”的案例摘要，参加评选。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2024/申论-B卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请根据所有给定资料，以“桥”为主题，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2025/申论-A卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈对划线句子“‘新时代的印加古道’新起点”的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2025/申论-A卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料3”，列出A省交通运输厅接受问政后需整改的“问题清单”。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2025/申论-A卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：T市拟制定《关于进一步促进全市物流行业数字化发展的若干措施》，请根据“给定资料5”，草拟出主要内容。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2025/申论-A卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请围绕对“给定资料6”中划线句子“万物奔流，经济天下”的理解，结合全部给定资料，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2025/申论-C卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料2”归纳概括土味怎样转化成品位。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2025/申论-C卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料3”分析西村党支部书记李伟民为何能够入选《咱们的村干部》系列节目。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2025/申论-C卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料4”，为湖西街道办事处主任草拟一份片区更新改造宣传动员会的讲话提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山东/2025/申论-C卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请围绕对“给定资料5”中划线句子“因为热爱，所以燃烧”的理解，结合全部给定资料，自拟题目，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2022/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中画线部分提到，“村里的发展，既要摘掉‘穷帽子’，又要改变‘老样子’，还要留住‘好根子’”。请结合你对这句话的理解，分析梨洋村的发展思路。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2023/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈T市为守护市民“舌尖上的安全”采取了哪些信息化手段。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2023/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中画线部分提到，“社区‘吹哨’，既要吹得‘准’，还要吹得‘响’、吹得‘久’。”请你谈谈对这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2023/申论-县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料3”，请你梳理当前宽石镇乡村旅游中存在的问题，并提出相应的改进建议。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2023/申论-县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：假定你是S区商务局工作人员，请根据“给定资料4”，以“政在行动”为题目，在市《质量服务报》上撰写一篇宣传报道稿。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2023/申论-省市.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请概括H市为优化营商环境采取了哪些措施，取得了哪些成效。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2023/申论-省市.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中画线部分提到，“新局蕴新机，新机生新局。”请你谈谈对这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2023/申论-省市.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：邻市有关部门拟到W市考察“15分钟文化服务圈”建设问题。假如你是W市政府工作人员，请根据“给定资料3”拟写一份介绍“15分钟文化服务圈”建设情况的提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2023/申论-省市.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中，两处画线部分先后提到，“我们要以不变应万变”，“我们要以变应变”。请你深入思考这两句话之间的关系，参考给定资料，联系实际，自选角度，自拟题目，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2024/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括W县推进茶旅融合发展的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2024/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，请你谈谈F市“背包银行”在推动乡村振兴过程中起到了哪些作用，并分析产生这些作用的原因。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2024/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，对当前S县大学生租房面临的问题进行梳理，并提出相应的解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2024/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：A市计划召开“社区充分就业经验交流座谈会”，裕民社区党支部张书记将在座谈会上发言，为张书记草拟一份发言稿。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2024/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：H市拟在全市进一步推广工业社区治理模式，请根据“给定资料1”，谈谈南山工业社区有哪些经验值得借鉴推广。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2024/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中画线部分提到“每次下乡，乡亲们总是高接远送，不是亲人胜似亲人”。请根据“给定资料2”，谈谈是什么让乡亲们对戏剧团产生了如此深厚的感情。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2024/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，对W市在发展庭院经济时遇到的问题进行梳理，并提出相应的解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2024/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中画线部分提到“青山绿水是无价之宝”，又提到“生态有价”。既有价又无价的事物在现实中还有很多，请对此进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2025/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈F市在破解基层治理“小马拉大车”难题方面有哪些值得推广的经验。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2025/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理当前H县在农用地膜使用回收方面存在的问题，并提出改进建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2025/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是县卫健局的工作人员，请根据“给定资料3”，以“让医患成朋友”为主题写一篇宣传稿，介绍Z县家庭签约医生制度的推广情况。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2025/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中画线部分提到“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”。请深入系统思考这句话，参考给定资料，联系乡村发展的实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2025/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据给定资料1，请概括D市“让小农户搭上现代化农业快车”的主要措施。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2025/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中提到“过去，向南河是分界线，把两地划分开来；现在，向南河是联结带，把两地结合起来。”请分析为什么向南河能从分界线变成联结带。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2025/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：省政府拟召开KMN都市圈阶段性建设成果报告会，吴主任将在会上汇报工作进展情况，请根据“给定资料3”，为吴主任撰写一份发言稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2025/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请对划线句子“在当今这个充满活力的时代，我们要善于汇聚各种力量形成合力，联结好当下，就能畅通奔向未来的路”进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2026/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你对F省推动“政采贷”政策落实落地的主要措施进行概括。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2026/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”反映了S市部分乡村新职业代表在工作中遇到的一些问题，请你对这些问题进行梳理，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2026/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：市里将举办传统产业转型升级经验交流会，P县杜县长将以“坚持变中求进 推动产业发展”为题目作会议发言。请你根据“给定资料3”，为杜县长拟写一份发言提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/山西/2026/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“一个产业就像一条赛道，不同企业在赛道上前行，即使赛道相同也不意味着只能横冲直撞、搞内卷式竞争。要走好自己的路，关键是校准方向、持续发力、发挥所长，从而互相促进，共生共赢。”请你以“赛道”为话题，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2023/申论-乡镇卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：推动乡村全面振兴，关键靠人。根据材料1，简要概括人才在北山镇乡村振兴工作中发挥的作用。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2023/申论-乡镇卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据材料2，请你谈谈榕泉村是如何利用自身文化资源吸引游客的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2023/申论-乡镇卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据材料3，如果要在全镇推广大围村实行积分制的经验，你认为临溪镇应重点把握哪些方面？（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2023/申论-乡镇卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：根据材料4，假如你是小麦，此次会议对你今后做好应急管理工作有什么启示？（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2023/申论-乡镇卷.md",
+      "number": 5,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题五：县里计划召开农村集体经济工作交流会，根据安排，杨组长将介绍上塘镇当地推动村集体经济增收的做法。假如你是杨组长，请根据材料5，列出发言提纲。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2024/申论-县镇.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：高质量发展是全面建设社会主义现代化国家的首要任务。请结合给定材料，联系实际，围绕“‘百千万工程’是广东推动高质量发展的头号工程”，自拟题目，撰写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2025/申论-县镇.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据材料3，概括A县做好荔枝“土特产”文章的主要做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2025/申论-县镇.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：广东聚焦实施“百县千镇万村高质量发展工程”，始终抓住产业这个高质量发展的根本，推动乡村全面振兴。请结合给定材料，联系实际，围绕“乡村振兴关键在产业振兴”进行深入思考，自拟题目，撰写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2026/申论-县镇.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据材料5，谈谈“绿色工厂”的“绿”体现在哪些方面。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2026/申论-县镇.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：S市调研组经过实地走访和召开座谈会，了解了当地古树名木的保护情况。假如你是调研组成员，请根据材料7，梳理S市古树名木保护遇到的问题，并就做好全市古树名木保护工作提出对策建议。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2026/申论-县镇.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：习近平总书记指出：“良好生态环境是最普惠的民生福祉。”请结合给定材料，联系实际，围绕“绿美广东生态建设是关系广东长远发展和民生福祉的重要工程”进行深入思考，自拟题目，撰写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2026/申论-省市.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据材料3，谈谈“绿色工厂”的“绿”体现在哪些方面。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广东/2026/申论-省市.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请结合给定材料，联系广东实际，围绕“绿色发展是高质量发展的底色”进行深入思考，自拟题目，撰写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2019/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "一、根据给定资料1，概括Y县古民居保护的主要措施。(15分)\n\n    "
+    },
+    {
+      "path": "省考/广西/2019/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "二、 根据给定资料2，谈谈你对划线部分“如果说交通是一个城市写在山川河流上的史书，那么C城书写的内容，肯定是丰富而精彩的”的理解。(20分)\n\n    "
+    },
+    {
+      "path": "省考/广西/2019/申论-A类.md",
+      "number": 3,
+      "reason": "conflicting_supported_answers",
+      "stem": "三、根据给定资料3，分析部分城市马拉松赛事存在的主要问题并提出相应的改进措施。(25分)\n\n    "
+    },
+    {
+      "path": "省考/广西/2019/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "四、根据给定资料4中划线部分“‘静’会给予很多‘如果’的假想，可唯有‘动’能带来‘但是’的希望”，自选角度，自拟题目，写一篇文章。(40分)\n\n    "
+    },
+    {
+      "path": "省考/广西/2022/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，概括T市柠檬产业发展的主要措施。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2022/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，分析G省“新动能”制造业迅猛发展的主要原因。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2022/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是J省发改委的工作人员，根据“给定资料3”，写一份题为“J省纺织服装产业发展调研报告”的提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2022/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到，“社会在‘变身’，人也在‘变身’，人与社会相互成就。”根据你的理解，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2023/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括L县山核桃产业发展过程中存在的问题及解决措施。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2023/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，分析W县能够做好绿色发展的原因。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2023/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：近期，市里将评选基层治理先进社区，假如你是白沙社区所在街道工作人员，请根据“给定资料3”，拟写白沙社区在基层治理工作中可推广的做法和推荐理由。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2023/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：S县近期准备举办全县工业企业家联谊会，请根据“给定资料4”，为黄县长拟写讲话稿。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2023/申论-C类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括海港街道开展平安小区建设的做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2023/申论-C类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，谈谈C市此次生态环境执法行动对你有哪些启发？（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2023/申论-C类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是N市市场监管局工作人员，请根据“给定资料3”，对座谈会上反映的问题提出解决的初步建议，供领导参考。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2023/申论-C类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：根据给定资料，以“里子”和“面子”为话题，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2024/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：“给定资料1”中提到“只有学会以‘一米’高度看城市，才能让儿童真正感受到城市的关怀与温暖。”，请谈谈N市围绕这个方面做了哪些工作？（15分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2024/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，分析Q市数字化服务能力提升的原因。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2024/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：市相关领导计划近期召开专题会议，听取Z市《慈善事业高质量发展规划》落实情况，假如你是慈善总会工作人员，请根据“给定资料3”，拟写一份汇报提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2024/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到“文明之所以文明，就是因为它既容纳了现代的行为方式，也包容了传统的生活习惯。”请深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2024/申论-C类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，谈谈F县是如何在清兰镇农村土地数字化改革过程中做好法治保障工作的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2024/申论-C类.md",
+      "number": 2,
+      "reason": "short_stem",
+      "stem": "问题二：根据“给定资料2”，分析“数字法院”有什么优势？（20分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2024/申论-C类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料3”，梳理H市营商环境存在的问题，并提出解决建议。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/广西/2024/申论-C类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：根据“给定资料4”，以“基层治理共联动，民声一键解民忧”为题，拟写一篇宣传稿，登载在J市政府官网上。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2018/申论-下半年.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：“给定资料3”中列举了几位90后初入职场的一些事例，请归纳概括他们的择业观念。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2018/申论-下半年.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请结合“给定资料4-5”，对社会各群体间互贴标签的现象进行评析。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2018/申论-下半年.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请结合对“给定资料6”中“历史是一个连续的过程，每一代都有自己的历史责任，要继续发展。”这句话的理解和思考，以“时代和使命”为主题，自拟标题，写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2019/申论-县级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "四、参考给定资料并联系实际，自拟题目，写一篇议论文。(40分)\n\n        "
+    },
+    {
+      "path": "省考/新疆/2021/申论-一卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，请你谈谈对文中划线句子“这是一辆开往春天的列车，为乡亲们带来了温暖和希望”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2021/申论-一卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“努力让民生服务更有‘温度’，让民生福祉更有‘质感’，让人民群众的获得感更足”。请你深入思考这句话，联系实际，自选角度，自拟题目，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2024/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括A县探索“医养一体、两院融合”的主要举措。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2024/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：县里准备召开“社区充分就业经验交流座谈会”，张书记将代表裕民社区在座谈会上发言。请根据“给定资料2”，为张书记拟写一份发言提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2024/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料3”，请针对兴旺区老旧小区改造存在的主要问题提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2024/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“创新是有风险的，但它又是规避风险的最好方式”。请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2025/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈F市在破解基层治理“小马拉大车”的难题方面有哪些值得推广的经验。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2025/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理当前H县在农用地膜使用、回收方面存在的问题，并提出相应的改进建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2025/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：市里组织特色产业发展优秀案例评选，K县拟参评，根据“给定资料3”，请你为K县拟写一份申报材料。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2025/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”，请你结合对这句话的理解，参考给定资料，联系乡村发展的实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2025/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈A市是如何通过建设高标准农田激活当地农村“一池春水”的。（10分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2025/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，请你梳理Z市火车站停车场存在的问题，并提出解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2025/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是市农业农村局的工作人员，根据“给定资料3”，请你就E市“三资”治理工作情况写一份工作简报，供领导参考。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/新疆/2025/申论-行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“保护古树名木单靠我们是远远不够的，不仅要让大家认识、了解古树名木，还要唤醒大家的保护意识，引导全社会共同参与”，请你深入思考这句话对做好执法工作的借鉴意义，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2019/申论-乡镇.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目二：请结合给定资料2，谈谈对划线句子“40年巨变之后，说走就走，路不再长” 的理解。(20分)\n\n      "
+    },
+    {
+      "path": "省考/江西/2019/申论-县级.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目三：根据“给定资料4”，假定你是N市旅游协会的会长，请对全市旅游企业写一份“加强行业自律，为创建文明旅游城市出力”的倡议书。(25分)\n\n　　"
+    },
+    {
+      "path": "省考/江西/2019/申论-县级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目四：“给定资料6”中提到，“信用既是一种道德品质，也是一种制度和规则”。请根据对这句话的理解，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2022/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请结合给定资料1，谈谈D市在老旧小区进步新村的试点改造中采取了哪些措施，使其重新焕发生机活力。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2022/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：S市准备对开办社区食堂的做法进行总结，假设你是S市民政局的工作人员，根据给定资料2，拟写一份简报，供领导参阅。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2022/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：给定资料3反映了老沈所在的镇文化站在开展基层文化工作中遇到的一些问题，请你梳理这些问题并提出解决的对策建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2022/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料4提到，“村村通”变成了“村村痛”，“村村痛”又变成了“村村通”，从“通”到“痛”，又从“痛”到“通”，这样的变化带给我们很多思考。请深刻理解给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2023/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈G区在保证“社区‘吹哨’，既要吹得‘准’，还要吹得‘响’、吹得‘久’”方面做了哪些工作。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2023/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理当前宽石镇乡村旅游规划中存在的问题，并提出相应的改进建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2023/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是J县农业农村局的工作人员，请根据“给定资料3”，就J县解决备耕农资供应等问题的做法写一份汇报提纲，供调研组参阅。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2023/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：区里拟将高岗村校地合作建设乡村振兴工作站推动乡村振兴的情况作为典型案例上报市里。根据“给定资料4”，请撰写一份案例介绍材料。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2023/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请谈谈N市采取了哪些措施推进基层普法工作。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2023/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”介绍了桃花县市场监管局亲商助企、开展“菜单式”服务的做法，请概括其主要经验。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2023/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：S县住建局拟进一步宣传农村自建房建设规范"
+    },
+    {
+      "path": "省考/江西/2023/申论-行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：阳春县农村黑臭水体治理工作入选全省生态环境治理典型案例汇编，请根据“给定资料4”，为阳春县拟写一份案例介绍材料。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定材料1”，请你谈谈F市“背包银行”模式的特点及其在推动乡村振兴过程中起到了哪些作用。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：县里准备召开“社区充分就业经验交流座谈会”，裕民社区将在座谈会上发言，请根据“给定材料2”，为裕民社区张书记拟写一份发言提纲。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定材料3”，对当前S县大学生租房面临的问题进行梳理，并提出相应的解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定材料4”中提到“创新是有风险的，但它又是规避风险的最好方式”，请深入思考这句话，参考给定材料，联系实际，自选角度，自拟题目，写一篇文章。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，谈谈南山工业社区的治理模式有哪些特点。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，请对W市在发展庭院经济时遇到的问题进行梳理，并结合实际给出合理的建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料3”是C市晚报报导当地推进全龄友好型城市建设的一篇文章，请你以《照亮每一个角落——推进全龄友好型城市建设》为题，为这篇报导稿写一则短评。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“青山绿水是无价之宝”，又提到“生态有价”。生活中也有许多既有价又无价的事物，请对此进行深入思考，参考给定材料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-行政执法.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请简述Z县处置农药包装废弃物的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-行政执法.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈H区人力资源和社会保障局在推进劳动争议调解工作方面采取了哪些措施。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-行政执法.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：某市市场监督局近期收到不少群众的咨询件，询问临期食品是否可以放心食用。假如你是该市场监督管理局的工作人员，请根据“给定资料3”草拟一封公开信，回应群众关切的问题。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2024/申论-行政执法.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“我们就是要把每件小事都做好，让阳光照亮城市的每一个角落”。请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，谈谈A县发展林药产业的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如你是H县农业农村局工作人员，请你根据“给定资料2”，以H县农业农村局的名义写一份倡议书，倡导农民科学使用、回收农用地膜。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是Z县卫健委的工作人员，请根据“给定资料3”，以“让医患成朋友”为主题，写一篇宣传稿，介绍Z县家庭签约医生制度的推广情况。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”。请结合你对这句话的理解，参考给定资料，联系乡村发展的实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈E县“做实每一项”调研工作机制的“做实”体现在哪些地方。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理S省乡村旅游中存在的问题，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：省政府即将召开KMN都市圈阶段性建设成果报告会，吴主任将在会上汇报工作进展情况。请根据“给定资料3”，为吴主任拟写一份汇报提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“在当今这个充满活力的时代，我们要善于汇聚各种力量形成合力。联结好当下，就能畅通奔向未来的路”。请你对此进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，概括P县保护古树名木的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”中反映的S市幼儿托育工程，请分析该工程解决了什么问题，具体是如何解决的。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是E市农业农村局的工作人员，请根据“给定资料3”，就本市“三资”治理工作情况写一份情况简报，供领导参阅。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2025/申论-行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“分工的表象在‘分’，但其实质是分背后的‘合’，真正考验我们的是‘合’的能力。”请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2026/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈Y县通过国际交流合作发展竹产业的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2026/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”反映了S市部分乡村新职业代表在工作中遇到的一些问题，请你对这些问题进行梳理，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2026/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：市里将举办传统产业转型升级经验交流会，P县杜县长将以“坚持变中求进 推动产业发展”为题作会议发言。请你根据“给定资料3”，为杜县长拟写一份发言提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/江西/2026/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“弱鸟要飞高飞远，既要找到适合的飞行轨迹，又要丰满自身的羽翼”，请你结合对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2021/申论-乡镇.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：给定资料3中提到：“尽管有些磕磕绊绊，但日子越过越有奔头”请根据给定资料3，谈谈你的理解。(20分)\n\n　　"
+    },
+    {
+      "path": "省考/河北/2021/申论-乡镇.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料4中提到：“微光虽微，但可不断点燃火种。”“火种汇聚，终成烈焰之势。”结合你对给定资料的思考和对这两句话的感悟，以“微光与烈焰”为话题，自选角度，自拟题目，写一篇议论文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：R市拟召开相关部门参加的促进零工市场规范发展主题会，你作为调研组成员将会在会上就占唐路零工市场发言，请你根据“给定资料1”，撰写一份发言提纲。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，谈谈Z县打造现代田园综合体的过程对推进乡村振兴工作有哪些值得借鉴的经验。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料3”，谈谈你对“运用柔的方法，取得好的效果”这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“现代让传统更亲切鲜活，传统让现代更丰富厚重”，结合你对这句话的理解，和对给定资料的思考，自选角度，自拟题目，联系实际，写一篇议论性文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请梳理宽石镇乡村旅游规划中存在的问题，并提出相应的改进建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，概括梳理L县兰花产业发展的具体做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料3”中，画线部分提到，“社区‘吹哨’，既要吹得‘准’，还要吹得‘响’、吹得‘久’。”请你谈谈对这句话的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“干好工作就要不断积累和沉淀，不断积累和沉淀要永远在路上。”请根据对这句话的理解和对给定资料的思考，自选角度，自拟题目，写一篇议论文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-C类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：市里拟召开以“暖企惠企纾困解难，营造良好营商环境”为主题的工作经验交流座谈会，请你根据给定资料1，草拟一份发言提纲，介绍桃叶县市场监管局亲商助企、开展“菜单式”集成服务的经验。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-C类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如你是F县住建局工作人员，请根据给定资料2，为本县村民拟写一份农村自建房建设流程。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-C类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请你根据给定资料3，概括J县在春耕备耕农资供应使用等方面遇到的问题及采取的措施。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2023/申论-C类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请结合给定资料4，深入思考“干好工作需要积累和沉淀，不断积累和沉淀要永远在路上”这句话，自选角度，自拟题目，联系实际，写一篇议论文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2024/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：B县准备召开“社区充分就业经验交流会”，假如你是B县东城街道办一名工作人员，由你代表裕民社区在经验交流会上发言，请你根据“给定资料1”，拟写一份发言提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2024/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈你对“只要找准新路径，就能让乡村产业发展进入新赛道”这句话的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2024/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，概括A县探索“医养一体、两院融合”的具体做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2024/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到：“浪头会不断起伏，但浪潮永远向前。”请你结合对这句话的理解和对给定资料的思考，自选角度，自拟题目，联系实际，写一篇议论文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：省级组织社区治理优秀案例评选，S县拟推荐向阳街道社区的案例。假如你是S县政府办的工作人员，请根据“给定资料1”，拟写这份推荐材料的主要内容要点。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，概括A、B两省共同治理向南河的经验。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料3”中提到“建设数字游民社区，不仅吸引更多年轻人‘游进来’，也让村民‘有奔头’。”请分析沈书记这样说的原因。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“在当今这个充满活力的时代，我们要善于汇聚各种力量形成合力。联结好当下，就能畅通奔向未来的路”，请对此进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：假如你是调研组成员，请根据“给定资料1”，写一份关于地膜问题的调研报告提纲。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，概括A县发展林药产业的主要做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：给定资料3中提到，K县“发挥全产业链优势，打响‘金蒜盘’，实现了整个产业的高质量发展。”请根据该资料，谈谈你对这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生。”请根据你对这句话的理解，结合对给定资料的思考，自选角度，自拟题目，联系实际，写一篇议论文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-C类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：假如你是康安乡政府宣传部门的一名工作人员，请根据“给定资料1”，就康安乡举办的文明实践活动写一份简报。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-C类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，概括S市实施“幼有善育工程”的主要做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-C类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料3”中提到，K县“发挥全产业链优势，打响‘金蒜盘’，实现了整个产业的高质量发展”。请根据资料3，谈谈你对这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河北/2025/申论-C类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：资料4中提到：“分工的表象在‘分’，但其实质是背后的‘合’，真正考验我们的是‘合’的能力。”请你对此进行深度思考，结合材料，以“分”与“合”为题，联系实际，自选角度，写一篇议论文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2018/申论-统考.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "“给定资料1”中提到，一带制造业者正面临“不变等死，变则找死”的发展困境。请谈谈你对划线句子的理解。（20 分）\n"
+    },
+    {
+      "path": "省考/河南/2018/申论-统考.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "“德国制造”成为精品的代名词，离不开政府和企业的共同努力。请根据“给定资料2-3”，对此进行概括，（25 分）\n"
+    },
+    {
+      "path": "省考/河南/2018/申论-统考.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "X 市港务集团准备宣传小冯的先进事迹，请结合“给定资料5”拟写一份宣传提纲。（15 分）\n"
+    },
+    {
+      "path": "省考/河南/2018/申论-统考.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "“给定资料6”中提到“一旦新的思维方式建立起来，许多旧问题就会自动消失。”请结合你对这句话的思考，参考“给定资料”，联系实际，自拟题目，写一篇文章。（40 分）\n"
+    },
+    {
+      "path": "省考/河南/2019/申论-统考.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "一、 请结合“给定资料1”和“给定资料2”，对比分析概括两地民居保护工作的不同之处。(25 分)\n\n       "
+    },
+    {
+      "path": "省考/河南/2019/申论-统考.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "二、请分析理解“给定资料4”中划线部分“新的方式”的内涵。(15 分)\n\n       "
+    },
+    {
+      "path": "省考/河南/2019/申论-统考.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "三、为了促进咖啡产业的发展，Y省政府拟出台指导意见。请结合“给定资料5”，提出可行性建议。(20 分)\n\n       "
+    },
+    {
+      "path": "省考/河南/2019/申论-统考.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "四、“给定资料6”中提到“我们与世界相交，与时代相通，才能让一切保值增值，更添赋流通的美”，请结合你对这句话的思考，参考“给定资料”，联系实际，自拟题目，写一篇文章。（40分）\n\n       "
+    },
+    {
+      "path": "省考/河南/2022/申论-县级.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请结合“给定资料2”，分析理解“新的枝桠”的含义。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2022/申论-县级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料5”中提到“这一过程决非一日之功，但必须完成”请结合你对这句话的理解，参考“给定资料”，联系现实，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2023/申论-县级.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：石桥街道办易主任被邀请参加全市先进街道创建经验交流会。请根据“给定资料1”，为他拟写一份发言提纲。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2023/申论-县级.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，对比分析A镇、B镇两种探索的发展理念、路径选择的不同之处。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2023/申论-县级.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：S县通过“强链、补链、延链”实现了产业链式发展。请根据“给定资料3”，梳理概括其主要做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2023/申论-县级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请结合“给定资料4”，谈谈你对画线句子“‘近邻’为基、‘聚邻’为要、‘惠邻’为本”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2023/申论-县级.md",
+      "number": 5,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "市政府召集相关部门开会，专题研讨夜市摆摊的禁放问题。请你结合“给定资料5”中的调研情况，代表街道提出工作建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2023/申论-市级.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请结合“给定资料1”，为参加座谈会的市领导拟写一份总结发言稿。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2023/申论-市级.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：多年来，为当好企业的“引路人、推车手、服务员”，J市不断推出新举措，请根据“给定资料2”，对此进行梳理概括。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2023/申论-市级.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请结合“给定资料3”，谈谈你对画线词语“新阶段”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2023/申论-市级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料6”提到“在大变局的喧嚣中始终坚守住‘本分’，切实增强好‘本领’，不断突破创新，推动高质量发展的步伐就能坚实稳健，我们就能走向广阔的未来”，请结合对这句话的理解，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2024/申论-县级卷.md",
+      "number": 1,
+      "reason": "short_stem",
+      "stem": "问题一：G市准备召开“妈妈岗”就业新模式座谈会，"
+    },
+    {
+      "path": "省考/河南/2024/申论-县级卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理概括N市在儿童友好城市建设中的有益探索。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2024/申论-县级卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料3”提到：“良好的政务服务环境如同‘清新的空气’，同时也是个‘易碎品’。”请深入分析理解点评专家的这一观点。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2024/申论-县级卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料5”提到：“有效的社会治理，需要‘硬设施’和‘软服务’的完美结合，离不开参与各方的相互成就。”请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2024/申论-市级卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，代表工作组给市政府拟写一份暗访情况汇报。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2024/申论-市级卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”提到：“就是要实现从政府‘有什么、给什么’逐步向企业‘要什么、给什么’升级。”请深入理解这句话，结合资料，分析伴随这一升级过程政务服务需要做出哪些改变。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2024/申论-市级卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请结合“给定资料3”，为N省商务厅负责人拟写一份总结发言稿。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2024/申论-市级卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料5”提到：“‘数字’将让更多道路更畅通。当然，这些道路有些是有形的，有些是无形的。”请深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2025/申论-县级卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，梳理总结南营街道在基层治理工作中是如何坚持群众视角的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2025/申论-县级卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：上级部门近期将派工作组到M县开展小型农田水利设施相关情况调研。请根据“给定资料2”，为M县拟写一份汇报稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2025/申论-县级卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请理解分析“给定资料3”的画线句子“我们应当把更多精力投入在‘种树’上，而非静待成熟再‘摘果’。”（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2025/申论-县级卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”是《Q市日报》刊登的一篇专题报道。请以“尝鲜·长鲜”为话题，写一篇短评。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2025/申论-县级卷.md",
+      "number": 5,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题五：请根据“给定资料5”，梳理总结B市在“城市社区嵌入式服务设施”建设中，既实现“建设轰轰烈烈”，又避免“服务冷冷清清”的探索。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2025/申论-市级卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，梳理概括A区与B县在推动同城化发展中的举措和成效。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2025/申论-市级卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，为参会的工信厅领导写一个总结发言提纲。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2025/申论-市级卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料3”，分析理解画线词语“可能性”的所指。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2025/申论-市级卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：参考给定资料，以“聚·变”为话题，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2026/申论-县级卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：结合“给定资料1”提到的“乡村文化产业运营师的价值，不仅在于‘我为你做了什么’，更在于‘我们一起成就了什么’。”请谈一谈你对这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2026/申论-县级卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，请你谈谈B区是如何实现“宽而有制，从容以和”的？（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2026/申论-县级卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：近期，G市拟召开推进基层治理现代化工作交流会，北城街道办主任将在会上发言，根据“给定资料3”，拟写一份发言提纲，介绍本街道社区治理工作经验。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2026/申论-县级卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到：“当每一处变化都呼应人的需求，每一个人都焕发新的价值，社区便能获得持续生长的内在力量。”请结合你对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2026/申论-市级卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，梳理概括A市公交集团是如何“放下‘主角’架子，主动当好‘配角’”的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2026/申论-市级卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请结合“给定资料2”，以“人人皆是创作者”为主题，代政府拟写一份倡议书。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2026/申论-市级卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请分析理解“给定资料3”中提及的“新瓶装新酒”的内涵。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/河南/2026/申论-市级卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到，“那些‘沉睡’的存量资源，就像炉膛里的炭火，看似不旺，但只需要找到合适的时机与力道‘拨动’一下，便能释放意想不到的能量。”请结合你对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/浙江/2016/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "英国登山家乔治·马洛里的名句“因为山在那里”影响了无数勇于探索、勇于攀登的人。请从给定资料出发，联系实际，以“创业者心中的山”为题写一篇议论性文章。（50分）\n\n"
+    },
+    {
+      "path": "省考/浙江/2016/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "假如你是某企业孵化园的工作人员，现要制作一块介绍创业众筹经验的展板。请根据给定资料3-5，列出展板的主要内容。（30分）\n\n"
+    },
+    {
+      "path": "省考/浙江/2016/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "英国登山家乔治.马洛里的名句“因为山在那里”影响了无数勇于探索、勇于攀登的人。请以给定资料出发，联系实际，以“创业者心中的山”为题，写一篇议论性文章（50分）。\n\n"
+    },
+    {
+      "path": "省考/浙江/2023/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“资料2”“资料3”，为A村拟写一份农村职业经理人招聘启事。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/浙江/2024/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据资料7，归纳西湖区智慧养老产业的工作亮点。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/浙江/2025/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据资料4、5，聚焦“服务型制造的浙江实践”话题，写一则短评。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/浙江/2026/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目2：根据资料8、9，围绕“中国电力‘扬帆出海’”话题，写一则短评。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/浙江/2026/申论-C类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "题目2：根据资料6、7，围绕“中国电力‘扬帆出海’”话题，写一则短评。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈X省推进农业高质量发展的举措。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：省金融办近期准备召开助力小微企业发展经验交流会，假如你是C市金融办工作人员小王，将代表C市在会上发言，请根据“给定资料2”，拟写一篇发言稿，介绍C市金融服务港湾建设情况。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料4”提到，“在大变局的喧嚣中始终坚守住‘本分’，切实增强好‘本领’，不断突破创断，推动高质量发展的步伐就能坚实稳健，我们就能走向广阔的未来”。请结合对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈椰林社区是如何做好“村改居”后半篇文章的。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈对画线句子“让温暖传递到更多角落”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，概括L县山核桃产业发展过程中存在的问题及解决措施。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：省发改委调研组准备来Q区调研“整村经营”情况。假如你是区发展改革局工作人员，请根据“给定资料4”，拟写一份书面汇报材料。（35分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-C类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈J市是如何推进诉源治理工作的。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-C类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈对画线句子“‘烟火气’管不好，很可能就变成了‘火气’”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-C类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，概括Z省在融合型大社区治理过程中遇到的新问题以及运用的新解法。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2023/申论-C类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：假如你是L市市场监管局工作人员小符，请根据“给定资料4”，对座谈会上提出的问题和建议进行整理和归纳，拟写一份会议情况报告供领导参阅。（35分)\n\n　　"
+    },
+    {
+      "path": "省考/海南/2024/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈H市能够加“数”前行的原因。（10分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2024/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈Q省在加快推动内外贸一体化发展过程中为什么会“好事多磨”，并提出推动“好事成真”的建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2024/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：S市相关领导计划近期召开专题会议，听取《S市慈善事业高质量发展规划》落实情况。假如你是S市慈善总会工作人员，请根据“给定资料3”拟写一份汇报提纲。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2024/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到：“文明之所以文明，就是因为它既容纳了现代的行为方式，也包容了传统的生活习惯。”请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2025/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈Z省三个调出县为何能脱颖而出。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2025/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中提到“乡村档案，不仅是岁月留痕，也蕴藏着发展动能”，谈谈对这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2025/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：省相关部门近期将派工作组到M县开展小型农田水利设施相关情况调研，假设你是县里工作人员，请根据“给定资料3”，拟写一份书面汇报材料，反映情况，提出建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/海南/2025/申论-B类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“我们应当把更多精力投入在‘种树’上，而非静待成熟再‘摘果’”，请对这句话进行深入系统思考，联系实际，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2016/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“材料给定资料”，提炼概括新加坡在国际化进程中四个方面的做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2016/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“材料给定资料”，梳理外籍人员遇到的问题并提出对策。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2016/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据给定材料，围绕“把深圳建成更具有竞争力影响力的国际化城市”这个主题，自拟标题。写一篇对策性议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2016/申论-B类.md",
+      "number": 1,
+      "reason": "short_stem",
+      "stem": "问题一：根据材料给定资料，归纳硅谷的成功经验。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2016/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“第五届深圳国际文化艺术周”已顺利结束（材料给定资料），假如深圳正筹备下一届文化艺术周，"
+    },
+    {
+      "path": "省考/深圳/2016/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：推进城市国际化需要大量人才，请就“深圳如何创造条件吸引和留住国际化人才”，自拟标题，写一篇对策性议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2017/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据【材料2】到【材料9】，提炼概括互联网对政府治理的促进作用。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2017/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据【材料14】，请就N市公安系统微信公众号存在的问题提出完善建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2017/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请围绕“移动互联与政府治理创新”这个主题，自拟标题，写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2017/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据【材料13】，请概括Z市建设信息惠民公共服务平台的五点主要做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2017/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：S市法制办拟于近期在法制大厦301会议室就《S市网络预约出租车经营服务管理暂行办法（征求意见稿）》举行座谈会征求意见。假设你负责筹备该座谈会，需通知相关人员参会，请根据【材料10】草拟一份会议通知书。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2017/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：阅读所给的材料，基层政府服务于人民群众。请就基层政府如何利用互联网改善政府管理与公共服务，题目自拟，写一篇对策性议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2018/申论-B类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据【资料4】，请归纳出祁连山生态保护方面存在的主要问题。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2018/申论-B类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据【材料7】，请就M河存在的问题提出治理举措。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2018/申论-B类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如A市正在开展建设“美丽A市”意见征集活动，你准备给市委市政府建言献策，请结合给定材料，写一篇文章。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2019/申论-二卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据【材料15】，对S市存在的垃圾问题进行概括。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2019/申论-二卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据【材料16】，就如何解决城中村存在的问题提出对策。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2019/申论-二卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据给定材料，围绕“以新发展理念为引领，深入推进深圳高质量发展”这个主题，自拟题目，写一篇对策性议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2020/申论-一卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据材料5和材料6，概括深圳营造良好人才生态的做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2020/申论-一卷.md",
+      "number": 2,
+      "reason": "short_stem",
+      "stem": "问题二：阅读材料9，提炼出“链长制”的内涵。（10分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2020/申论-一卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：针对材料10反映的困难，提出疫情防控常态化下政府可采取的长效化中小企业扶持措施。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2020/申论-一卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：当前，深圳全市上下都在深入学习贯彻习近平总书记出席深圳经济特区建立40周年庆祝大会和视察广东重要讲话、重要指示精神。深圳市公务员主管部门计划向全市公务员发出倡议，号召全市公务员永葆“闯”的精神、“创”的劲头、“干”的作风，勇于担当，积极作为，服务“双区”建设。请你草拟这份倡议书。（45分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2020/申论-二卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：阅读材料8，针对市民赵先生的诉求，街道办决定开展调查研究，为是否设立长者食堂提供决策参考，请就本次调研需要了解的情况拟出提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2020/申论-二卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：准确理解材料11第一段中的比喻，列出其中隐含的城市治理问题。（10分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2020/申论-二卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据材料12，概括G市城市治理中全周期管理举措的特点。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2020/申论-二卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：当前，深圳全市上下都在深入学习贯彻习近平总书记出席深圳经济特区建立40周年庆祝大会和视察广东重要讲话、重要指示精神，深圳市公务员主管部门计划向全市公务员发出倡议，号召全市公务员永葆“闯”的精神、“创”的劲头、“干”的作风，勇于担当，积极作为，服务“双区”建设。请你草拟这份倡议书。（45分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2022/申论-二卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据材料7，请提炼出Z街道在推进政务服务标准化、规范化建设方面的5条举措。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2022/申论-二卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：阅读材料13，该座谈会即将召开，需要通知相关企业参会，请代拟一份会议通知。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2022/申论-二卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：围绕“新时代超大城市治理”为主题，某知名研究机构计划在深圳举办高端论坛，将邀请深圳市政府相关领导做主题演讲。请结合给定材料，起草一份演讲稿。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2023/申论-二卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请提炼材料8中所述3个社区的工作亮点。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2023/申论-二卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：某研究机构准备围绕“工业上楼”开展深入调研。你作为调研组成员，请结合材料11，撰写一份调研提纲。(30分)\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2023/申论-二卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请结合给定材料，围绕“谱写中国式现代化的深圳新篇章”主题，自拟标题，写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2024/申论-二卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据材料5，提炼M市推进法治化营商环境建设的经验做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2024/申论-二卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据材料12，针对低空经济发展存在的问题提出对策。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2024/申论-二卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：一年之计在于春，乘势而上正当时。请结合所有给定材料，围绕“M进一步增强信心和底气”这一主题，自拟标题，写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2025/申论-一卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据材料5，提炼出深圳在公共文化服务方面的特色做法。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2025/申论-一卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据材料12，针对文化消费方面存在的问题，提出对策。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2025/申论-一卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：文化厚度铸就发展高度。请结合给定材料，围绕“深圳切实担负起新时代新的文化使命，增强发展新动能，持续提升城市影响力”这一主题，自拟标题，写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2025/申论-二卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：某区拟召开“基层治理经验交流会”，H街道应邀在会上作经验交流发言，请根据材料9，草拟发言的主要内容。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2025/申论-二卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：假如第二十届中国（深圳）国际文化产业博览交易会组委会准备向参展的A协会发一封感谢信，请结合材料13，草拟感谢信。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/深圳/2025/申论-二卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：文化厚度铸就发展高度。请结合给定材料，围绕“深圳切实担负起新时代新的文化使命，增强发展新动能，持续提升城市影响力”这一主题，自拟标题，写一篇议论文。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2023/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题1：根据“给定资料3”，概括东风街道在基层治理中最值得推广的两条做法，请简要说明理由。（15分)\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2023/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题2：根据“给定资料4”，请对居民反映步行街的问题先进行分类汇总，然后提出解决对策。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2023/申论-县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题3：区里拟将永林村与N大学“校地合作共同推进乡村振兴”的经验作为先进典型进行宣传。请根据“给定资料5”，以通讯员张某某的名义给报社撰写一篇宣传稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2023/申论-县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题4：根据给定资料，围绕“共建共治共享，创造美好生活”主题，联系实际，自拟题目，写一篇策论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2023/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料2”，请谈谈A市在提升公共服务质量，优化服务企业方面有哪些工作创新？（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2023/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料3、资料4、资料5”，请指出三个城市在提高人民生活品质工作方面的共同点以及各自的侧重点。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2023/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：H省准备召开“全省深入打好碧水保卫战经验交流会”，请根据“给定资料6”，为F市拟写一份发言稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2023/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料7”中，S市的龙市长说“要准确识变、科学应变、主动求变，以变促变”；“给定资料8”中，G市林主任说“要以不变应万变”。请围绕上述观点，联系实际，自拟题目，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2024/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“资料2”，请你概括A市“背包银行”模式的特点及其在推动乡村建设的过程中起到哪些作用。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2024/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“资料3”，对B市在发展庭院经济时遇到的问题进行整理，并提出解决的建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2024/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：县里准备召开“社区充分就业经验交流座谈会”，裕民社区将在座谈会上发言，请根据“资料4”，为裕民社区拟写一份发言提纲。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2024/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“资料5”中提到“我们就是要把每件小事都做好，让阳光照亮城市的每一个角落”。请深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2024/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料2”，请你概括A县是如何通过数字化手段推动玫瑰产业高质量发展的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2024/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料3”，请你分析永林新村为什么能实现从“卖石头”到“卖梨子”再到“卖生态”的转变。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2024/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料4”，梳理兴旺区老旧小区改造后存在的问题，并提出解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2024/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料5”中提到“创新是有风险的，但它又是规避风险的最好方式”，请深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2025/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料2”，谈谈向阳街道是如何“以声聚能”，开展社区为民服务和基层治理的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2025/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料3”，请谈谈A市“幼有善育工程”满足了幼儿托育的哪些需求，采取了哪些措施。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2025/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是B县卫健局的工作人员，请根据“给定资料4”，以“让医患成朋友”为主题写一篇宣传稿，介绍B县家庭签约医生制度的实施情况。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2025/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请你对资料中的“轻车”“壮马”进行深入系统思考，围绕办好民生实事，联系实际，自选角度，自拟题目，写一篇策论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2025/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“资料2”，谈谈为什么说“发展乡村旅游，既要守，也要新”。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2025/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“资料3”，先归纳B市农业发展中存在的主要难题，然后指出破解的主要措施。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2025/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：省政府即将召开CDE都市圈阶段性建设成果报告会，请以CDE都市圈办公室工作人员的身份，根据“资料4”，起草一份汇报提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖北/2025/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请对资料中的画线句子进行深入思考，围绕加快建成支点，自选角度，自拟题目，写一份策论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2019/申论-乡镇.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据给定资料1,谈谈你对划线句子“40年巨变之后，‘说走就走，路不再长”’的理解。(25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2019/申论-乡镇.md",
+      "number": 2,
+      "reason": "conflicting_supported_answers",
+      "stem": "问题二：给定资料2提到了F县在2013年发展苗木产业时遇到的困难，请谈谈F县是如何破解这一难题的？(25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2019/申论-乡镇.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据给定资料3，归纳提炼改革开放以来赵家村发生的变化。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2019/申论-乡镇.md",
+      "number": 4,
+      "reason": "joint_exam_material_proof_insufficient",
+      "stem": "问题四：假设你是某市人社部门的工作人员，需要进社区向群众推广电子社保卡，请结合给定材料4,草拟一份介绍电子社保卡的宣传稿 (35分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2021/申论-乡镇.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料3”，请你谈谈对划线句子“别人‘筑巢引凤’，而我们是‘引凤筑巢’”的理解。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2022/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定材料1”谈谈对“古道已成为沿途城镇乡村迈向未来的新动力”的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈曾林社区治理是如何实现“近邻”“聚邻”“惠邻”的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈B市是如何答好“幼有善育”这道民生考题的。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料3”，对比分析S县和M县在推动产业转型升级上存在的差异。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：市发改委调研组近期准备来T县调研“整村经营”情况，假如你是T县政府一名工作人员，请根据“给定资料4”，拟写一份书面汇报材料。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-省市.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题1：请根据“给定资料1”，概括J市政府是如何当好企业的“引路人、推车手、服务员”的。（10分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-省市.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题2：请根据“给定资料2”，谈谈你对“工业上楼”的理解。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-省市.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题3：为进一步推进虚拟产业园，D市准备在官方平台做一场网络直播，请结合“给定资料3”，写一篇推介宣传稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-省市.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题4：结合给定资料，写一篇关于“本分·本领”的文章，联系实际，自定标题，自定格式。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括海港街道开展平安小区建设的做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，分析J市是如何推进诉源治理工作的。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：N市市场监管局召开关于儿童手表问题的座谈会，请根据“给定资料3”，对会上讲的问题和建议进行归纳。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2023/申论-行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：根据“给定资料4”，以“面子、里子”为话题，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2024/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈H市是如何加“数”前行的。（10分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2024/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，结合Z市在公益慈善事业方面的做法，谈谈你对画线句子中“‘温柔之手’可感可及”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2024/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：市妇联刘主席代表N市在省首届儿童友好城市建设研讨会上做主题发言，请根据“给定资料3”，为刘主席拟写一份发言稿。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2024/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“文明的道路，有些是有形的，有些是无形的”，请你深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你概括G县在保护低级别文物方面的做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理座谈会上提出的关于H县在农用地膜使用、回收方面存在的问题，并提出相应的改进建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是Z县卫生健康局的工作人员，请根据“给定资料3”，以“让医患成朋友”为主题写一篇宣传稿，介绍Z县家庭签约医生制度的实施情况。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”，请结合你对这句话的理解，参考给定资料，联系乡村发展的实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈K、M、N三市是如何打造KMN都市圈的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，请你谈谈D市通过农业社会化服务破解了哪些本地农业发展难题，又是如何破解的。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如“给定资料3”是当地日报上的一篇报道，请你以“以声聚能”为题，为这篇报道写一则短评。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到“在当今这个充满活力的时代，我们要善于汇聚各种力量形成合力。联结好当下，就能畅通奔向未来的路”，请对此进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈E市是如何做好“三资”治理工作的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请你根据“给定资料2”，分析Z市火车站打车难、行车慢、停车乱问题的原因，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：在新时代文明实践赶大集活动开展前，为了吸引广大群众参与，F县融媒体中心拟通过乡广播站开展宣传。请你根据“给定资料3”，拟写一份广播稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2025/申论-行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“保护古树名木单靠我们是远远不够的，不仅要让大家认识、了解古树名木，还要唤醒大家的保护意识，引导全社会共同参与”。请你深入思考这句话对做好执法工作的借鉴意义，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2026/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请你谈谈Y县通过国际交流合作发展竹产业的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2026/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”反映了S市部分乡村新职业代表在工作中遇到的一些问题，请你对这些问题进行梳理，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2026/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：市里将举办传统产业转型升级经验交流会，P县杜县长将以“坚持变中求进 推动产业发展”为题作会议发言。请你根据“给定资料3”，为杜县长拟写一份发言提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/湖南/2026/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“弱鸟要飞高飞远，既要找到适合的飞行轨迹，又要丰满自身的羽翼”，请你结合对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/甘肃/2021/申论-县级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：根据“给定资料4”中提到“复活容易，活好难”，请你深入思考这句话，联系实际展开联想，自选角度，自拟题目写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/甘肃/2023/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈W县是如何探索“绿水青山就是金山银山”的转化路径的。（10分）\n\n　　"
+    },
+    {
+      "path": "省考/甘肃/2023/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：上级部门将在L县召开县域经济发展经验交流会，请根据“给定资料2”，为县领导起草一份会议发言稿提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/甘肃/2023/申论-县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：近期市里将举办基层社区治理典型案例评选，假如你是曾林社区所在街道工作人员，请根据“给定资料3”拟写一份参评推荐材料。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/甘肃/2023/申论-县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：A市调研组日前赴B市调研托育服务工作，假如你是调研组工作人员，请根据“给定资料4”，拟写一份调研报告。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/甘肃/2024/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：“给定资料1”提到“从0到1”和“从1到100”，请谈谈“科技副总”在“从0到100”的过程中发挥了哪些作用。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/甘肃/2024/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”谈谈光华街道是如何通过“社区合伙人”制度“变‘旁观者’为‘建设者’”的。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/甘肃/2024/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是刚入职乡党政办的工作人员，领导安排你去庙坝村了解桑蚕产业发展情况，请根据“给定资料3”，起草一份汇报材料提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/甘肃/2024/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到：“对机会的把握就像拔河，一头是危机，一头是新机，用力才可能赢得新机，泄力就可能输给危机。”请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2021/申论-乡镇.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈你对“旧曲新唱”的理解。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2021/申论-县级.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料5”中提到“努力让民生服务更有‘温度’，民生福祉更有‘质感’，让人民群众的获得感更足”。请你深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（50分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2022/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈对“古道已成为沿途村镇迈向未来的新动力”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈曾林社区是如何做好“村改居”后半篇文章的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，概括L县山核桃产业发展过程中存在的问题及解决措施。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：石桥街道准备开展2023年度“社区阳光基金”募捐活动，请根据“给定资料3”，拟写一份募捐倡议书。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：S县近期准备举办招商引资推介会，请根据“给定资料4”，为黄书记拟写在推介会开幕式上的讲话稿。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-省市.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料2”，谈谈X省推进农业高质量发展的举措。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-省市.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料3”，谈谈对画线句子“A省正以其硬核实力实现从‘走出去’到‘走进去’的新飞跃”的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-省市.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料4”，梳理D市虚拟产业园发展中存在的问题，并提出解决问题的建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-省市.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料5”提到，“在大变局的喧嚣中始终坚守住‘本分’，切实增强好‘本领’，不断突破创新，推动高质量发展的步伐就能坚实稳健，我们就能走向广阔的未来。”请结合对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（45分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-行政执法.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈对画线句子“‘烟火气’管不好，很可能就变成了‘火气’”的理解。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-行政执法.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈J市是如何推进诉源治理工作的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-行政执法.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，以“从‘门前海’到‘共富海’”为题，拟写一篇将在C县政府门户网站上登载的宣传稿，反映C县乡村振兴建设成果。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2023/申论-行政执法.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：A市调研组日前赴B市调研托育服务工作，假如你是调研组工作人员，请根据“给定资料4”，拟写一份调研报告。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-县乡卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈A市是如何“氢”装前行的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-县乡卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：光华街道准备扩大“社区合伙人”队伍，请根据“给定资料2”，为光华街道拟写一份“社区合伙人”招募书。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-县乡卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，梳理H市营商环境存在的问题，并提出解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-县乡卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请根据“给定资料4”，拟写一篇F区开展“科技副总”进企业专项行动工作的情况报告，供领导参阅。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈Q市能够加“数”前行的原因。（10分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理F省在加快推动内外贸一体化发展过程中遇到的问题，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：N市妇联刘主席应邀在首届儿童友好城市建设研讨会上作主旨发言，请根据“给定资料3”，为刘主席拟写一份主旨发言提纲。（30分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到：“文明之所以文明，就是因为它既容纳了现代的行为方式，也包容了传统的生活习惯。”请深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-行政执法.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈A市是如何“氢”装前行的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-行政执法.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：L省打算借鉴J省工业园区限值限量管理工作做法，假如你是L省生态环境厅工作人员，请根据“给定资料2”，拟写一份推进本省工业园区限值限量管理的工作计划。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-行政执法.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，梳理H市营商环境存在的问题，并提出解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2024/申论-行政执法.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到：“‘民声一键办’接听的是民意，解决的是民生，体现的是民本，凝聚的是民心，提高的是我们服务人民的水平。”请深入思考这句话，参考给定资料，自选角度，自拟题目，写一篇文章。（45分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2025/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈A区与B县是如何推动两地同城化发展形成“1+1＞2”区域发展格局的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2025/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，梳理M县沟渠、坑塘等相关小型农田水利设施管理存在的问题，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2025/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：“给定资料3”是《K省日报》近期刊登的一篇专题报道，请自拟题目，为这篇报道写一篇短评。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2025/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：不同的事物集聚在一起时，可能会相互影响、碰撞融合，进而催生新变化，请以“聚·变”为话题，参考全部给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2025/申论-通用卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈A区与B县是如何推动两地同城化发展形成“1+1＞2”区域发展格局的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2025/申论-通用卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，梳理M县沟渠、坑塘等相关小型农田水利设施管理存在的问题，并提出解决建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2025/申论-通用卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：省里拟开展“城市社区嵌入式服务设施”建设典型案例评选。请根据“给定资料3”，为F市拟写一份参评材料。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2025/申论-通用卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“我们应当把更多精力投入在‘种树’上，而非静待成熟再‘摘果’。”请对这句话进行深入系统的思考，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概括C市开展城市更新的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：调研结束后，调研组拟向领导汇报相关情况。假如你是调研组工作人员，请根据“给定资料2”，拟写调研报告的“存在问题”和“解决建议”部分。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，为Z市个体工商户学院撰写一份宣传材料，吸引更多个体工商户报名参训。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“宽而有制，从容以和”。请对这句话进行深入系统的思考，结合社会治理工作，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/辽宁/2024/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈M市的泡菜是如何从小手艺变成大产业的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/辽宁/2024/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中提到“小陈有了离开的打算，这个念头也在脑海里不停地经历着怀疑与推翻”，请分析小陈为什么“不停地经历着怀疑与推翻。”（20分）\n\n　　"
+    },
+    {
+      "path": "省考/辽宁/2024/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：《K市日报》报道了“南山小学坚持开展日记教育活动”的做法，请根据“给定资料3”，为这篇报道写一则短评。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/辽宁/2024/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请根据对“给定资料4”中划线句子的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/辽宁/2026/申论-A类.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请谈谈新大众文艺“新”在哪里？（15分）\n\n　　"
+    },
+    {
+      "path": "省考/辽宁/2026/申论-A类.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，请谈谈你对划线句子“小区给业主发红包，看似简单，实际上不是那么容易实现的”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/辽宁/2026/申论-A类.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：C市派出代表团到D市学习交流大米产业高质量发展经验，假如你是D市政府工作人员，请根据“给定资料3”，拟写一篇经验交流座谈会发言提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/辽宁/2026/申论-A类.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“当今人们喜欢说书，不是为了听那些一字不差的脚本复述，而是要在老腔调中体悟老故事里的老道理”。请你对此进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-一卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈H市为优化营商环境采取了哪些措施，取得了哪些成效？（15分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-一卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理新唐路零工市场存在的问题，并提出解决问题的建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-一卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是调研组工作人员，请根据“给定资料3”，拟写一份调研报告提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-一卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“以变促变，以新求新”。请结合对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-三卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：假如你是F县住建局工作人员，请根据“给定资料1”，为本县村民拟写一份农村自建房建设流程。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-三卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”提到“运用柔的方法，取得好的效果”。请谈谈对“柔”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-三卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是蓝阳区城市管理局工作人员，请根据“给定资料3”，对步行街周边的问题进行梳理分类，并分别提出解决建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-三卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“以变促变，以新求新”，请结合对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-二卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈Z县打造现代田园综合体的过程对推进乡村振兴工作有哪些值得借鉴的经验。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-二卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”提到“运用柔的方法，取得好的效果”，请谈谈对“柔”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-二卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，梳理当前宽石镇乡村旅游规划中存在的问题，并提出相应的改进建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2023/申论-二卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“以变促变，以新求新”，请结合对这句话的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-一卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈黛湖社区为什么能吸引数字游民“‘游’来、留下”。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-一卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，谈谈C县通过农业社会化服务破解了本地农村农业发展的哪些难题，又是如何破解的？（20分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-一卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，谈谈D县“做实每一项”调研工作机制的“做实”体现在哪些地方？（25分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-一卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：不同的要素汇聚在一起时，可能会相互影响、碰撞融合，进而催生新变化。请以“聚·变”为主题，参考全部给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-三卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈向南河是怎样实现“分段治”变“全域治”、“分片治”变“整体治”的？（15分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-三卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理当前H县在农用地膜使用、回收方面存在的问题，并提出相应的改进建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-三卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是市农业农村局的工作人员，请根据“给定资料3”，就F市“三资”治理工作情况写一份情况简报，供领导参阅。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-三卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“分工的表象在分，但其实质是背后的合，真正考验的是合的能力”。请对此进行深入系统思考，参考给定材料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-二卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈G县在保护低级别文物方面的做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-二卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料2”，梳理当前H县在农用地膜使用、回收方面存在的问题，并提出相应的改进建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-二卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是市农业农村局的工作人员，请根据“给定资料3”，就F市“三资”治理工作情况写一份情况简报，供领导参阅。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2025/申论-二卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”。请深入系统思考这句话，参考给定资料，联系乡村发展的实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-一卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概述L县通过国际交流合作发展竹产业的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-一卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：2026年，海京市将举办第二届城市礼物创意大赛。假如你是大赛主办方工作人员，请根据“给定资料2”，以“创意海京，有礼有你”为标题，拟写一份宣介材料，吸引更多人来参赛观赛。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-一卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，总结C省发展入境旅游所取得的成绩，梳理存在的问题，并提出相应的对策建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-一卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到：“那些‘被忽略的角落’，就像炉膛里的炭火，看似不旺，但只需要找到合适的时机与力道‘拨动’一下，便能释放意想不到的能量。”请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-三卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：F市拟在总结前期经验的基础上出台《关于优化法治化营商环境 助力经济高质量发展的若干举措》。假如你是市政府办公室的工作人员，请根据“给定资料1”，拟写该文件中举措的部分内容。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-三卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：2026年，海京市将举办第二届城市礼物创意大赛。假如你是大赛主办方工作人员，请根据“给定资料2”，以“创意海京，有礼有你”为标题，拟写一份宣介材料，吸引更多人来参赛观赛。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-三卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，总结M省加强外来入侵物种防控工作所采取的主要做法，梳理存在的问题，并提出相应的对策建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-三卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到：“三分靠改造、七分靠管理，改造只是阶段性任务，而管理则是长期的。”这句话对政府加强社会治理，提供高质量公共服务有一定启发。请对此进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-二卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，概述L县通过国际交流合作发展竹产业的主要做法。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-二卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：2026年，海京市将举办第二届城市礼物创意大赛。假如你是大赛主办方工作人员，请根据“给定资料2”，以“创意海京，有礼有你”为标题，拟写一份宣介材料，吸引更多人来参赛观赛。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-二卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：请根据“给定资料3”，总结S市菜市场改造升级工作的具体做法；梳理记者实地走访菜市场期间所发现的问题，并提出相应的对策建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/重庆/2026/申论-二卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”提到：“有‘老’的气韵，又有‘新’的气象，方寸之地大有乾坤。”请深入思考这句话，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2016/申论-C卷：县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据给定资料给定资料和给定资料，分析指出当前我国农村纠纷的特点及其表现。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2016/申论-C卷：县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据给定资料给定资料，总结A县推行人民调解制度化解农村纠纷的做法有哪些经验？（15分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2016/申论-C卷：县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假设你是F村的一名驻村干部，请你针对给定资料给定资料中所反映的问题，就如何更好地化解农村纠纷提出合理化建议。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2016/申论-C卷：县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请以“德”、“礼”、“法”为关键字，结合给定资料，联系实际，自拟题目，自选角度，写一篇议论文。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2019/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，归纳提炼改革开放以来赵家村发生的变化。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2019/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请结合“给定资料2”，谈谈对划线句子:40年巨变之后，‘说走就走，路不在长”’的理解。(20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2019/申论-县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：某市正准备推行电子社保卡，假设你是该市人社部门的工作人员，请根据“给定资料3”，就各地在推行电子社保卡过程中的经 验，写一份总结提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2019/申论-县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“改革开放富百姓，党的政策暖人心；发展是条致富路，奔向小康永不停。”请结合对这句话的思考，联系实际，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-乡镇.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请谈谈高大妈和老姚各自的“喜”和“盼”。(15分)\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-乡镇.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：　“给定资料2”中提到“尽管有些磕磕绊绊，但日子越过越有奔头”，请谈谈你对这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-乡镇.md",
+      "number": 3,
+      "reason": "conflicting_supported_answers",
+      "stem": "问题三：杨华受邀参加市里举办的城市基层社区治理工作会议，并准备在会上交流香江小区的经验。请你根据“给定资料3”，为他拟写一份发言提纲。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-乡镇.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：　“给定资料4”中提到“种下满地金黄的庄稼，才是为旷野除草的最好办法”，深入思考这句话，联系实际，写一篇文章。(40分)\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-省级.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "第&#12032;题：根据“给定材料2”，概括F省医保从“卡时代”跨&#12042;“码时代”发&#12131;的变化。（15分）\n\n      "
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-省级.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "第&#12038;题：根据“给定材料3”，&#12073;王、&#12073;孙、&#12073;李三&#12040;打算“返乡”的想法有何不同，并分析原因。（20分）\n\n      "
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-省级.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "第三题：阅读“给定材料4”，反映了C市个别部&#11988;、单位在&#12079;作作&#11995;建设&#12101;&#12207;存在的问题，梳理问题，并提出对策。（25分）\n\n      "
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-省级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "第四题：“给定材料5”中提到“&#11995;后&#12207;是&#11995;，天空上&#12207;是天空，道路的前&#12207;还是道路”，深&#12042;思考这句话，联系实际，&#12163;拟题&#12140;，写&#12032;篇&#12098;章。（40分）\n\n      "
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请谈谈胡城街道驿道社区嵌入式养老服务模式的特点。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，谈谈对“村里的发展，既要摘掉‘穷帽子’，又要改变‘老样子’，还要留住‘好根子’”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：根据“给定资料3”，请梳理Z县农村寄送物流体系存在的问题，并提出相应的改进建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到，“‘村村通’变成了‘村村痛’”“‘村村痛’又变成了‘村村通’”。从“通”到“痛”，又从“痛”到“通”，这样的变化带给我们很多思考。请深刻理解“给定资料”，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-省级.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料4中提到，“成长的烦恼总是在成长中化解的”，结合你对这句话的理解，联系实际，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2023/申论-行政执法卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料给定资料”，请概括社会上赞成和反对P市部分企业招聘设立共享“黑名单”的理由有哪些。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2023/申论-行政执法卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据“给定资料给定资料”，谈谈你对“执法观察期制度，是‘减压’，也是‘增压’”这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2023/申论-行政执法卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：县里准备宣传马家岭村，请根据“给定资料给定资料”，以“马家岭村的变化”为题，写一篇宣传稿。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2023/申论-行政执法卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请深入思考“给定资料给定资料”中J市新区行政审批局邢局长说的话，以“无感与有感”为话题，联系实际，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈“早上好”精神给达兴村带来了哪些变化？（15分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：给定资料2中提到“青年驿站不仅是我们到这个城市的落脚点”，请你根据“给定资料2”，谈谈对这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是P市联合调研组工作人员，请根据“给定资料3”，在明确P市地理标志产品发展困境的基础上，提出推进P市地理标志产品品牌建设的对策建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请根据对“给定资料4”中划线句子的理解，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据“给定资料1”，请谈谈H市南山小学是怎样开展日记教育的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：“给定资料2”中提到“青年驿站不仅是我们到这个城市的落脚点”，请你根据“给定资料2”，谈谈对这句话的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是T市发改委的工作人员，请根据“给定资料3”，对T市“以竹代塑”产业实现高质量发展提出建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：根据“给定资料4”中学者的一段话，请深入思考，联系实际，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-行政执法.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据“给定资料1”，谈谈M县的泡菜是如何从小手艺变成大产业的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-行政执法.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：根据“给定资料2”，谈谈“你指我探”的执法方式为什么会受到消费者和商家认可和点赞。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-行政执法.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是A市公交集团工作人员，请根据“给定资料3”，就如何让A市公交便民驿栈更好地融入生活提出建议。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-行政执法.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：“给定资料4”中提到“我们越专业，群众就越安心”，请深入思考这句话，联系实际，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2025/申论-县乡.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：根据给定资料1，谈谈非遗传承者们是如何让非遗技艺更好地融入当代生活的。（15分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2025/申论-县乡.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：给定资料2中提到“产业社区是产业园区的升级版，不仅要重视产业发展，还要关注人的需求”，请谈谈为什么说“产业社区是产业园区的升级版”？（20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2025/申论-县乡.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：D县拟推荐众信农业科技发展有限公司的总经理石X参加W省优秀农民企业家评选，请根据给定资料3，以D县农业农村局的名义为其写一份参评推荐材料。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2025/申论-县乡.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：请深入思考给定资料4中划线的一段话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2025/申论-省市卷.md",
+      "number": 1,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题一：请根据给定资料1，谈谈蒙联县是如何把牛油果这个“洋水果”变成“土特产”的？（15分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2025/申论-省市卷.md",
+      "number": 2,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题二：请根据给定资料2，谈谈你对划线句子“‘再野化’实际是我们对城市生态治理工作的一种反思，一种‘否定之否定’，一种更高级的回归”的理解。（20分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2025/申论-省市卷.md",
+      "number": 3,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题三：假如你是F市规划勘测设计研究院的夏总工程师，请根据给定资料3，起草一份《关于F市桥下公共空间改造需重点关注的问题》，供有关部门参考。（25分）\n\n　　"
+    },
+    {
+      "path": "省考/黑龙江/2025/申论-省市卷.md",
+      "number": 4,
+      "reason": "no_matching_answer_with_material_evidence",
+      "stem": "问题四：给定资料4中提到“投入与反哺应该是聚力融合的一场双向奔赴”，请对此进行深入思考，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n　　"
+    }
+  ],
+  "unparsed": [
+    {
+      "path": "省考/云南/2024/申论-州市.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/吉林/2018/申论-甲级.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/天津/2017/申论-统考__t443.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/天津/2022/申论-县级.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/天津/2022/申论-市级.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/宁夏/2016/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/宁夏/2023/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/宁夏/2023/申论-C类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/宁夏/2024/申论-C类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/安徽/2018/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/安徽/2024/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/安徽/2025/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/山东/2023/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/山西/2018/申论-乡镇.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/山西/2019/申论-乡镇.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/山西/2022/申论-省市.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2016/申论-广州市考.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-单考区.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-双考区.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2024/申论-公安.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2024/申论-行政执法.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2025/申论-公安.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2025/申论-行政执法.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2026/申论-公安.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广东/2026/申论-行政执法.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广西/2018/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广西/2020/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/广西/2025/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/江苏/2026/申论-B类.md",
+      "reason": "Unrecognized existing answers; do not append"
+    },
+    {
+      "path": "省考/江西/2023/申论-省市.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/河北/2018/申论-乡镇.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/河北/2021/申论-县级.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/河北/2022/申论-县级.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/河北/2024/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/河北/2024/申论-C类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/河南/2024/申论-市级.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/海南/2019/申论-县级.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/深圳/2018/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/深圳/2019/申论-一卷.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/深圳/2022/申论-一卷.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/深圳/2023/申论-一卷.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/湖北/2024/申论-省市.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/福建/2018/申论-县级卷.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/西藏/2019/申论-统考.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/贵州/2019/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/贵州/2024/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/贵州/2024/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/贵州/2025/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/贵州/2026/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/辽宁/2024/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/辽宁/2025/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/辽宁/2025/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/重庆/2024/申论-一卷.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/重庆/2024/申论-三卷.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/重庆/2024/申论-二卷.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/陕西/2021/申论-C类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/陕西/2024/申论-B类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/陕西/2024/申论-C类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/陕西/2025/申论-A类.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/青海/2023/申论-行政执法.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/青海/2025/申论-县乡卷.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/青海/2025/申论-行政执法卷.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-省市.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-统考.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/黑龙江/2018/申论-省直.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    },
+    {
+      "path": "省考/黑龙江/2018/申论-统考.md",
+      "reason": "Cannot prove complete scored task boundaries"
+    }
+  ],
+  "boundary": "Unparsed documents are not declared complete; counts cover recognized source answer slots only."
+}

@@ -1,0 +1,33 @@
+{
+  "baseline": "3b2c9aa91813b97b80231f2055d5bfab7eb96173",
+  "parsed_essays": 670,
+  "unparsed_essays": 68,
+  "missing_answer_slots_before": 743,
+  "candidate_papers": 29,
+  "modified_papers": 31,
+  "answers_added": 67,
+  "joint_exam_answers": 2,
+  "rejected": [],
+  "apply": true,
+  "status": "verified",
+  "papers_with_answers_added": 29,
+  "source_note_papers": 2,
+  "source_note_question_slots": 3,
+  "complete_reference_answers_added": 67,
+  "remaining_recognized_answer_slots": 676,
+  "unparsed_documents_not_certified": 68,
+  "known_xingce_questions_fixed": 0,
+  "known_xingce_questions_still_missing": 25,
+  "priority_year_subject_blanks_remaining": 10,
+  "corpus_papers": 1191,
+  "machine_flagged_files": 636,
+  "verification": {
+    "status": "passed",
+    "papers": 31,
+    "added_existing_source_answers": 67,
+    "joint_exam_answers": 2,
+    "original_answers_preserved": 5,
+    "original_question_blocks_preserved": 114,
+    "boundary": "Reference answer reuse with same-question evidence; not official answer or complete-corpus certification."
+  }
+}
