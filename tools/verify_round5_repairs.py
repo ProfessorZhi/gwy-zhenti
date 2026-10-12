@@ -62,7 +62,7 @@ def verify(root):
      raise ValueError('Missing bounded source answer length')
     delivered=nd['answers'][n]
     source_text=delivered[:n_chars]
-    if g.digest(source_text)!=a.get('source_answer_sha256') or not delivered[n_chars:].startswith('\\n\\n'):
+    if g.digest(source_text)!=a.get('source_answer_sha256') or not delivered[n_chars:].startswith('\n\n'):
      raise ValueError('Original source answer bytes differ')
     if len(a.get('source_sha256',''))!=64 or len(a.get('source_blob',''))!=40 or not a.get('source_path'):
      raise ValueError('Missing original source identity/hash')
