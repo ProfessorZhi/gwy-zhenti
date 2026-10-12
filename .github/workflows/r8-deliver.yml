@@ -1,0 +1,91 @@
+name: R8 verified authored exemplars delivery
+on:
+  push:
+    branches: [fix/shenlun-authored-exemplars-r8-20261013]
+    paths: ['.github/workflows/r8-deliver.yml']
+permissions:
+  contents: write
+concurrency:
+  group: gwy-r8-once
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.repository == 'ProfessorZhi/gwy-zhenti'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+      - name: Install pinned verification dependencies
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0 beautifulsoup4==4.13.4
+      - name: Apply exactly nine verified authored reference versions
+        run: |
+          python -m py_compile tools/r8_authored_apply.py tools/r8_authored_report.py tools/verify_round8_repairs.py
+          python tools/r8_authored_apply.py --apply
+      - name: Rebuild entire inventory and image references
+        run: python tools/cloud_quality.py --build --verify-images
+      - name: Report actual essay coverage and explicit AI provenance
+        run: python tools/r8_authored_report.py
+      - name: Verify full R1 through R8 historical receipt chains
+        run: |
+          python tools/verify_round8_repairs.py
+          python tools/verify_repair_receipts.py
+      - name: Full regression and 95903 actual image pixels
+        run: |
+          (cd tools && python -m unittest discover -s tests -q)
+          (cd tools && python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test round3_repair_test -q)
+          python tools/cloud_quality.py --check --verify-images
+          python tools/verify_image_pixels.py
+      - name: Remove one-time workflow files and reverify delivered bytes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          for name in ('r8-preview.yml','r8-deliver.yml'):
+            p=Path('.github/workflows')/name
+            assert p.is_file()
+            p.unlink()
+          PY
+          python tools/verify_repair_receipts.py
+      - name: Commit only verified answer documents with remote guard
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          branch='fix/shenlun-authored-exemplars-r8-20261013'
+          assert os.environ['GITHUB_REPOSITORY']=='ProfessorZhi/gwy-zhenti'
+          assert os.environ['GITHUB_REF']=='refs/heads/'+branch
+          recs=[json.loads(line) for line in Path('reports/ROUND8-AUTHORED-20261013.jsonl').read_text(encoding='utf-8').splitlines() if line]
+          assert len(recs)==4 and sum(len(r['added_answers']) for r in recs)==9
+          papers={r['path'] for r in recs}
+          assert len(papers)==4
+          allow=papers|{
+             'PROGRESS.md','README.md','COVERAGE-优先区.md','catalog/manifest.jsonl',
+             'reports/QUALITY-SUMMARY.json','reports/QUALITY-AUDIT.md',
+             'reports/DEFECTS.jsonl','reports/PRIORITY-MISSING.json',
+             'reports/PRIORITY-QUALITY-20261012.md',
+             'reports/ROUND8-AUTHORED-20261013.jsonl',
+             'reports/REPAIR-SUMMARY-20261013-R8.json',
+             'reports/QUALITY-REPAIR-20261013-R8.md',
+             '.github/workflows/r8-preview.yml','.github/workflows/r8-deliver.yml'
+          }
+          def names(args):
+            return {s for s in subprocess.check_output(['git',*args]).decode('utf-8').split('\0') if s}
+          changed=names(['diff','--name-only','-z'])|names(['ls-files','--others','--exclude-standard','-z'])
+          assert papers<=changed,'Missing paper changes '+str(papers-changed)
+          assert {'reports/ROUND8-AUTHORED-20261013.jsonl','reports/REPAIR-SUMMARY-20261013-R8.json','PROGRESS.md'}<=changed
+          assert changed<=allow,'Unexpected changed paths '+str(changed-allow)
+          assert not any(x.startswith('图片/') for x in changed)
+          subprocess.run(['git','add','--',*sorted(changed)],check=True)
+          subprocess.run(['git','-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','commit','-m','feat: 申论江苏2026B四题和浙江专题原创示范作答与范文'],check=True)
+          helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f'
+          git=['git','-c','credential.helper='+helper]
+          remote=subprocess.check_output(git+['ls-remote','origin','refs/heads/'+branch],text=True).split()[0]
+          assert remote==os.environ['GITHUB_SHA'],'Concurrent remote branch changed: refuse push'
+          subprocess.run(git+['push','origin','HEAD:refs/heads/'+branch],check=True)
+          print('R8_DELIVERED_SHA='+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          print('R8_VERIFIED_FOUR_PAPERS_NINE_REFERENCES')
+          PY
