@@ -1,0 +1,108 @@
+name: R7 verified full essay reference delivery
+on:
+  push:
+    branches: [fix/shenlun-all-r7-20261013]
+    paths: ['.github/workflows/r7-deliver.yml']
+permissions:
+  contents: write
+concurrency:
+  group: gwy-r7-single-delivery
+  cancel-in-progress: false
+jobs:
+  deliver:
+    if: github.repository == 'ProfessorZhi/gwy-zhenti'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+      - name: Install pinned repository validators
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0 beautifulsoup4==4.13.4
+      - name: Compile and verify exact source manifest
+        run: |
+          python -m py_compile tools/r7_delivery.py tools/r7_reference_matching.py tools/r7_owned_matching.py tools/r7_report.py tools/verify_round7_repairs.py
+          python - <<'PY'
+          import sys
+          sys.path.insert(0,'tools')
+          import r7_owned_matching
+          rows,seen=r7_owned_matching.load()
+          assert seen==list(range(15)) and len(rows)==116,(seen,len(rows))
+          print('R7_VALID_SOURCE_CANDIDATES',len(rows))
+          PY
+      - name: Apply all 738 guides and the verified source text
+        run: python tools/r7_delivery.py --apply
+      - name: Rebuild inventory and current index
+        run: python tools/cloud_quality.py --build --verify-images
+      - name: Produce actual per-paper and per-question status report
+        run: python tools/r7_report.py
+      - name: Verify R1-R7 source receipts and all old content
+        run: |
+          python tools/verify_round7_repairs.py
+          python tools/verify_repair_receipts.py
+      - name: Entire existing regression and pixel integrity
+        run: |
+          (cd tools && python -m unittest discover -s tests -q)
+          (cd tools && python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test round3_repair_test -q)
+          python tools/cloud_quality.py --check --verify-images
+          python tools/verify_image_pixels.py
+      - name: Delete transient private source fragments and write workflows before final commit
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('tools/data/r7-owned');files=sorted(p.glob('part-*.json'))
+          assert len(files)==15 and [x.name for x in files]==['part-%03d.json'%i for i in range(15)]
+          for x in files:x.unlink()
+          p.rmdir()
+          for x in ('r7-reference-audit.yml','r7-delivery-preview.yml','r7-deliver.yml'):
+            f=Path('.github/workflows')/x
+            assert f.is_file()
+            f.unlink()
+          print('R7_TEMP_SOURCE_AND_SINGLE_USE_WORKFLOWS_REMOVED')
+          PY
+          python tools/verify_repair_receipts.py
+      - name: Commit only exact verified paper and report changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          branch='fix/shenlun-all-r7-20261013'
+          assert os.environ['GITHUB_REPOSITORY']=='ProfessorZhi/gwy-zhenti'
+          assert os.environ['GITHUB_REF']=='refs/heads/'+branch
+          rs=[json.loads(x) for x in Path('reports/ROUND7-REFERENCES-20261013.jsonl').read_text(encoding='utf-8').splitlines() if x]
+          paper_paths={r['path'] for r in rs}
+          assert len(rs)==len(paper_paths)==738
+          total=sum(len(r['added_references']) for r in rs)
+          new=sum(bool(a['was_missing']) for r in rs for a in r['added_references'])
+          assert total==15 and new==14,(total,new)
+          allow=paper_paths | {
+            'PROGRESS.md','README.md','COVERAGE-优先区.md','catalog/manifest.jsonl',
+            'reports/DEFECTS.jsonl','reports/QUALITY-AUDIT.md','reports/QUALITY-SUMMARY.json',
+            'reports/PRIORITY-MISSING.json','reports/PRIORITY-QUALITY-20261012.md',
+            'reports/ROUND7-REFERENCES-20261013.jsonl','reports/REPAIR-SUMMARY-20261013-R7.json',
+            'reports/ROUND7-COVERAGE-20261013.json','reports/QUALITY-REPAIR-20261013-R7.md',
+            '.github/workflows/r7-reference-audit.yml','.github/workflows/r7-delivery-preview.yml',
+            '.github/workflows/r7-deliver.yml'
+          }
+          allow |= {'tools/data/r7-owned/part-%03d.json'%i for i in range(15)}
+          def paths(args):
+            return {s for s in subprocess.check_output(['git',*args]).decode('utf-8').split('\0') if s}
+          changed=paths(['diff','--name-only','-z'])|paths(['ls-files','--others','--exclude-standard','-z'])
+          assert paper_paths<=changed,'Incomplete paper delivery: '+str(paper_paths-changed)
+          assert {'reports/ROUND7-REFERENCES-20261013.jsonl','reports/QUALITY-REPAIR-20261013-R7.md','PROGRESS.md'}<=changed
+          assert changed<=allow,'Unreviewed modifications: '+str(changed-allow)
+          assert not any(x.startswith('图片/') for x in changed)
+          subprocess.run(['git','add','--',*sorted(changed)],check=True)
+          subprocess.run(['git','-c','user.name=github-actions[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com',
+                          'commit','-m','feat: 738份申论逐题导读及15处同题来源参考全文与可逆凭据'],check=True)
+          helper='!f() { echo username=x-access-token; echo password=$GH_TOKEN; }; f'
+          git=['git','-c','credential.helper='+helper]
+          remote=subprocess.check_output(git+['ls-remote','origin','refs/heads/'+branch],text=True).split()[0]
+          assert remote==os.environ['GITHUB_SHA'],'Concurrent branch write: refuse to overwrite'
+          subprocess.run(git+['push','origin','HEAD:refs/heads/'+branch],check=True)
+          print('R7_FINAL_COMMIT='+subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+          print('R7_VERIFIED_PAPERS='+str(len(rs))+' NEW_REFERENCES='+str(total)+' NEW_FILLED='+str(new))
+          PY
