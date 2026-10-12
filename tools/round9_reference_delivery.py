@@ -10,7 +10,7 @@ from round4_delivery import operations,is_missing
 ROOT=g.ROOT
 DRAFT=ROOT/'reports/ROUND9-ORIGINAL-ANSWER-DRAFTS-20261013.json'
 RECEIPT='ROUND9-ORIGINAL-ANSWERS-20261013.jsonl'
-SUMMARY='REPAIR-SUMMARY-20261013-R8.json'
+SUMMARY='REPAIR-SUMMARY-20261013-R9.json'
 PENDING='本题参考答案尚未核实收录，不以空白或默认选项冒充答案。'
 DETAIL=re.compile(r'(<summary>第\s*(\d+)\s*题</summary>)(.*?)(</details>)',re.S)
 HEADING=re.compile(r'(?m)^## 答案与解析\s*$')
