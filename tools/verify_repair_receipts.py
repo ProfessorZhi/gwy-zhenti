@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Verify current files against the ordered repair receipts and follow-up hashes.
-
-This checks traceability and unchanged delivered bytes, not factual truth of an
-exam source. A later authorized repair must append a superseding hash receipt.
-"""
+"""Verify current files against ordered repair receipts, not source factual truth."""
 from __future__ import annotations
 import argparse
 import hashlib
@@ -11,6 +7,7 @@ import json
 from pathlib import Path
 from paper_integrity_repair import split_paper
 from verify_essay_transcripts import verify as verify_essays
+from verify_round3_repairs import verify as verify_round3
 
 RECEIPTS = (
     'REFERENCE-SEQUENCE-20261012.jsonl',
@@ -22,6 +19,7 @@ RECEIPTS = (
     'WHITESPACE-FOLLOWUP-20261012.jsonl',
     'ROUND2-ESSAY-20261012.jsonl',
     'ROUND2-LAYOUT-20261012.jsonl',
+    'ROUND3-ESSAY-20261012.jsonl',
 )
 
 def verify(root: Path) -> dict:
@@ -52,7 +50,8 @@ def verify(root: Path) -> dict:
         for text,key in [(d['qs'][n]['text'],'question_sha256'),(d['answers'][n],'answer_sha256')]:
             if hashlib.sha256(text.encode()).hexdigest()!=a[key]:raise ValueError('Added question/answer body changed: '+path+':'+str(n))
     essay_result=verify_essays(root)
-    return {**essay_result,'receipt_records':len(records),'distinct_delivered_files':len(latest),
+    third_result=verify_round3(root)
+    return {**essay_result,'round3':third_result,'receipt_records':len(records),'distinct_delivered_files':len(latest),
             'paper_files':sum(p.endswith('.md') for p in latest),
             'image_files':sum(not p.endswith('.md') for p in latest),
             'added_question_answer_pairs_checked':len(questions),'status':'passed',
