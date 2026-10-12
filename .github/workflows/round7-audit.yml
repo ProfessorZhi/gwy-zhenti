@@ -1,0 +1,26 @@
+name: Round7 essay source-and-body precheck
+on:
+  push:
+    branches: [feat/essay-all-738-reference-20261013]
+    paths: ['tools/round7_reference_delivery.py', 'reports/ROUND7-ORIGINAL-ANSWER-DRAFTS-20261013.json', '.github/workflows/round7-audit.yml']
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /tools/
+            /reports/
+            /国考/
+            /省考/
+      - name: Check authored answer boundaries and no overwrites
+        run: |
+          python -m py_compile tools/round7_reference_delivery.py
+          python tools/round7_reference_delivery.py
