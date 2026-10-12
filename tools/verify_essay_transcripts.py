@@ -9,7 +9,7 @@ def sha(s:str)->str:return hashlib.sha256(s.encode()).hexdigest()
 
 def verify(root:Path)->dict:
     root=root.resolve();checked=0;preserved=0;new_answers=0
-    for name in ['ROUND2-ESSAY-20261012.jsonl','ROUND2-LAYOUT-20261012.jsonl']:
+    for name in ['ROUND2-ESSAY-20261012.jsonl','ROUND2-LAYOUT-20261012.jsonl','ROUND3-ESSAY-20261012.jsonl']:
         for line in (root/'reports'/name).read_text(encoding='utf-8').splitlines():
             if not line.strip():continue
             r=json.loads(line);p=(root/r['path']).resolve()

@@ -1,0 +1,18 @@
+{
+ "answers_added": 2,
+ "answers_replaced": 0,
+ "base_sha": "74cd629e6318af0a30c77c0a3f0c8b0befaf4d22",
+ "boundary": "机构公开整理参考答案，非官方标准答案；排版诊断为只读检出，本轮未改版式；检出项由当前规则定义，未检出不等于不存在。",
+ "branch": "repair/20261012-r3-gap-layout",
+ "date": "2026-10-12",
+ "layout_findings": "作答要求项被并入答案区（题块止于“要求：”）166 题/77 份；作答要求子块无字数说明 1088 题/406 份；无分值 935 题/345 份；题目缺作答要求子块 238 题/63 份；答案锚点无题目锚点 2 份（省考/辽宁/2017/申论-公安.md 4 题悬空，另 1 份为 docs 计划文档）；行测题号缺口 4 份，均为此前已声明缺题；重复材料 0、材料锚点缺口 0、共用材料跨题不符 0、图片引用缺失 0、代码围栏不平衡 0",
+ "layout_scanned_md": 1261,
+ "modified_paper_files": 3,
+ "provenance_annotations_added": 1,
+ "questions_added": 0,
+ "receipts": [
+  "reports/ROUND3-ESSAY-20261012.jsonl",
+  "reports/LAYOUT-DIAGNOSIS-20261012-R3.json"
+ ],
+ "round": "r3"
+}

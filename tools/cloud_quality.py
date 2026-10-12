@@ -439,9 +439,18 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
         progress += ['## 第二轮：早年申论残卷与导航（2026-10-12）','',
                      f"本轮修改 {second['modified_paper_files']} 份既有试卷，未新增重复文件。江苏2016/2017 A/B/C及浙江2017 A/B共8份恢复完整公开题面，补回 {second['questions_added']} 道作答题。",
                      f"江苏2019申论A类补齐题目导航；本轮新增 {second['reference_answers_added']} 份来源参考答案，保留 {second['existing_answer_bodies_preserved']} 份旧答案原文。",
-                     '江苏2016申论A/B第1题参考答案仍未核实收录；浙江2016A/B有来源编排异文，未强行拼接。标为浙江2022但内容/措辞异常的候选不入库。',
+                     '（第二轮结束时）江苏2016申论A/B第1题参考答案仍未核实收录；浙江2016A/B有来源编排异文，未强行拼接。标为浙江2022但内容/措辞异常的候选不入库。',
                      '完整公开题面不等于官方原件逐字认证；10个年度科目缺口、25个明确行测缺题仍保留。',
                      '[本轮范围与验收](reports/QUALITY-REPAIR-20261012-R2.md)；[当前逐卷质量台账](reports/PRIORITY-QUALITY-20261012.md)。','']
+    round3=root/'reports/REPAIR-SUMMARY-20261012-R3.json'
+    if round3.exists():
+        third=json.loads(round3.read_text(encoding='utf-8'))
+        progress += ['## 第三轮：江苏2016第1题来源答案与全库排版只读诊断（2026-10-12）','',
+                     f"江苏2016申论A/B第1题补入机构公开参考答案 {third['answers_added']} 份：来源页显式标注 A 卷/B 卷，附评分标准与源文件 SHA-256，同题认定另有第三方题型分析佐证。该题此前的“未收录”状态不再成立。",
+                     '江苏2016申论C类既有第1题答案正文逐字未改，仅补记溯源注记（来源文件与另一来源族的异文说明）。',
+                     f"全库只读排版诊断（{third['layout_scanned_md']} 份 MD）：{third['layout_findings']}。",
+                     '排版诊断为只读结论，本轮未改任何版式；检出项由当前规则定义，未检出不等于不存在；分值与字数的普遍缺失须逐份比对来源才能判定是源本身如此还是转录丢失。',
+                     '[本轮范围与验收](reports/QUALITY-REPAIR-20261012-R3.md)；[排版诊断报告](reports/QUALITY-LAYOUT-DIAGNOSIS-20261012-R3.md)。','']
     (root/'PROGRESS.md').write_text('\n'.join(progress),encoding='utf-8')
     readme=root/'README.md'
     if readme.exists():
