@@ -1,0 +1,27 @@
+name: R8 priority essay quality preview
+on:
+  push:
+    branches: [fix/essay-priority-references-r8-20261013]
+    paths: ['tools/r8_priority_fill.py','tools/data/r8-priority-reference-drafts.json','.github/workflows/r8-preview.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.gitattributes
+            /tools/
+            /reports/
+            /国考/
+            /省考/
+      - name: Check only seven independently drafted answers, without writing
+        run: |
+          python -m py_compile tools/r8_priority_fill.py
+          python tools/r8_priority_fill.py
