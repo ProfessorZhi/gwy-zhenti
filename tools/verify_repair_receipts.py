@@ -20,6 +20,7 @@ RECEIPTS = (
     'ROUND2-ESSAY-20261012.jsonl',
     'ROUND2-LAYOUT-20261012.jsonl',
     'ROUND3-ESSAY-20261012.jsonl',
+    'ROUND3-LAYOUT-FOLLOWUP-20261012.jsonl',
 )
 
 def verify(root: Path) -> dict:

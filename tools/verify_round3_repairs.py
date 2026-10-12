@@ -3,6 +3,7 @@
 import hashlib,json,re
 from pathlib import Path
 from paper_integrity_repair import split_paper
+from round3_layout_followup import restore_receipted_version
 
 def digest(text):return hashlib.sha256(text.encode()).hexdigest()
 def verify(root):
@@ -11,7 +12,7 @@ def verify(root):
     for r in records:
         rel=r['path'];p=(root/rel).resolve()
         if rel in seen or not p.is_relative_to(root):raise ValueError('Duplicate/unsafe path')
-        seen.add(rel);text=p.read_text(encoding='utf-8');d=split_paper(text)
+        seen.add(rel);text=restore_receipted_version(root,rel,p.read_text(encoding='utf-8'));d=split_paper(text)
         if digest(text)!=r['after_sha256']:raise ValueError('Round3 delivered hash mismatch '+rel)
         if len(d['qs'])!=r['questions_after']:raise ValueError('Question count mismatch '+rel)
         if set(d['qs'])!=set(d['answers']):raise ValueError('Question/answer ids mismatch')

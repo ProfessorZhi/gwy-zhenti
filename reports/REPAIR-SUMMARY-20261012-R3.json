@@ -10,5 +10,7 @@
   "baseline": "74cd629e6318af0a30c77c0a3f0c8b0befaf4d22",
   "known_xingce_questions_fixed": 0,
   "jiangsu_zhejiang_missing_xingce_questions": 18,
-  "official_original_certification": false
+  "official_original_certification": false,
+  "layout_followup_papers": 1,
+  "layout_followup_note": "One old answer had a misplaced question removed to an immutable reversible receipt; answer wording and all question/material bodies preserved."
 }
