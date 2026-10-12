@@ -1,0 +1,28 @@
+name: R7 all-paper reference delivery preview
+on:
+  push:
+    branches: [fix/shenlun-all-r7-20261013]
+    paths: ['tools/r7_delivery.py','tools/r7_source_diagnostics.py','tools/data/r7-owned/**','.github/workflows/r7-delivery-preview.yml']
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.gitattributes
+            /.gitignore
+            /tools/
+            /reports/
+            /国考/
+            /省考/
+      - name: Explain source rejections rather than silently weaken matching
+        run: python tools/r7_source_diagnostics.py
+      - name: Preview all essay changes without modifying files
+        run: python tools/r7_delivery.py
