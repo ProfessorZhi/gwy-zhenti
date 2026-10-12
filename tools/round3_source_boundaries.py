@@ -17,6 +17,11 @@ def parse_complete(ps,expected):
             clean=m[1]+m[2];edits.append({'source_header':text,'rendered_header':clean,'source_internal_id':m[3]});text=clean
         corrected.append(text)
     result=_parse_original(corrected,expected)
+    for n,raw in list(result['questions'].items()):
+        clean=raw.strip()
+        if raw!=clean:
+            edits.append({'kind':'question_boundary_whitespace','question':n,'source_sha256':sha(raw),'rendered_sha256':sha(clean),'conversion':'Trim empty boundary of a standalone source question-number paragraph; body unchanged'})
+            result['questions'][n]=clean
     refs={int(n) for q in result['questions'].values() for n in re.findall(r'给定[材资]料\s*(\d+)',q)}
     if not refs.issubset(result['materials']):raise ValueError('Question references absent global material '+str(sorted(refs-set(result['materials']))))
     result['source_header_corrections']=edits
