@@ -8,7 +8,7 @@ from pathlib import Path
 import round4_gap_repair as g
 import round5_bulk as b
 from round4_delivery import is_missing,operations
-from round5_delivery import body_text
+from r7_delivery import base_body as body_text, parse as r7_parse, strip_guide, insert_guide
 
 ROOT=g.ROOT
 RECEIPT='ROUND8-PRIORITY-ESSAY-20261013.jsonl'
@@ -30,7 +30,7 @@ def make(entry):
  rel=entry['path'];target=ROOT/rel
  if rel not in EXPECT or set(map(int,entry['answers']))!=set(EXPECT[rel]):raise ValueError('Unexpected paper or task')
  if not target.is_file():raise ValueError('Missing target '+rel)
- old=target.read_text(encoding='utf-8');data=b.parse(old,rel)
+ old=target.read_text(encoding='utf-8');data=r7_parse(old,rel)
  validate_source(rel,entry['source_url'])
  adds={}
  for k,ans in entry['answers'].items():
@@ -67,7 +67,15 @@ def make(entry):
     '原创练习稿性质':'AI辅助原创示范；未经过阅卷评分；不同于机构发布的参考答案原文',
     '第八轮参考作答凭据':'reports/'+RECEIPT},
     '2026-10-13第八轮：有来源链接的同题原创练习作答；非机构原文与实考高分认证')
- nd=b.parse(new,rel)
+ # Update R7 per-question navigation statuses; no existing reference block is altered.
+ no_guide=strip_guide(new)
+ for n in data['questions']:
+  link=f'<a id="r7-reference-{n}"></a>'
+  if link not in no_guide and f'<summary>第 {n} 题</summary>' in no_guide:
+   no_guide=no_guide.replace('<details>\n<summary>第 '+str(n)+' 题</summary>',link+'\n<details>\n<summary>第 '+str(n)+' 题</summary>',1)
+ nd=r7_parse(no_guide,rel)
+ new=insert_guide(no_guide,nd)
+ nd=r7_parse(new,rel)
  if set(nd['questions'])!=set(data['questions']) or body_text(old)!=body_text(new):
   raise ValueError('Paper text/task ids mutated '+rel)
  for n,a in data['answers'].items():
