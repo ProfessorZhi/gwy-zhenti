@@ -1,0 +1,27 @@
+{
+  "baseline": "69929cdd0b198ad498832552d1249f36f1cff715",
+  "parsed_essays": 729,
+  "unparsed_essays": 9,
+  "recognized_missing_slots_before": 901,
+  "modified_papers": 41,
+  "answers_added": 102,
+  "rejected": [],
+  "apply": true,
+  "boundary": "Counts are recognized document answer positions, not unique questions or proof of complete papers.",
+  "remaining_recognized_slots": 799,
+  "status": "verified",
+  "unparsed_essays_after": 9,
+  "parsed_essays_after": 729,
+  "remaining_recognized_answer_slots": 799,
+  "remaining_unparsed_files": 9,
+  "verification": {
+    "status": "passed",
+    "papers": 41,
+    "added_answers": 102,
+    "original_question_blocks_preserved": 148,
+    "existing_answers_preserved": 18,
+    "boundary": "Source matching and byte preservation, not official answer certification."
+  },
+  "documented_supplement": "reports/QUALITY-REPAIR-20261013-R5.md",
+  "official_original_certification": false
+}
