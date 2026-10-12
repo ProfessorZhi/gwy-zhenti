@@ -1,0 +1,163 @@
+{
+  "papers_modified": 5,
+  "added_tasks": 0,
+  "papers": [
+    {
+      "path": "国考/2023/申论-副省级.md",
+      "materials": 5,
+      "tasks": 5,
+      "added_tasks": 0,
+      "new_source_materials": [],
+      "old_to_original": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      },
+      "preserved_answers": 5
+    },
+    {
+      "path": "国考/2017/申论-副省级.md",
+      "materials": 5,
+      "tasks": 5,
+      "added_tasks": 0,
+      "new_source_materials": [
+        5
+      ],
+      "old_to_original": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      },
+      "preserved_answers": 5
+    },
+    {
+      "path": "国考/2017/申论-地市级.md",
+      "materials": 5,
+      "tasks": 5,
+      "added_tasks": 0,
+      "new_source_materials": [
+        5
+      ],
+      "old_to_original": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      },
+      "preserved_answers": 5
+    },
+    {
+      "path": "国考/2016/申论-地市级.md",
+      "materials": 4,
+      "tasks": 4,
+      "added_tasks": 0,
+      "new_source_materials": [
+        4
+      ],
+      "old_to_original": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4
+      },
+      "preserved_answers": 4
+    },
+    {
+      "path": "国考/2016/申论-副省级.md",
+      "materials": 6,
+      "tasks": 5,
+      "added_tasks": 0,
+      "new_source_materials": [],
+      "old_to_original": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5
+      },
+      "preserved_answers": 5
+    }
+  ],
+  "unresolved": [
+    {
+      "path": "国考/2023/申论-地市级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2023/申论-行政执法.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2022/申论-副省级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2022/申论-地市级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2022/申论-行政执法.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2021/申论-地市级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2021/申论-副省级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2020/申论-地市级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2020/申论-副省级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2019/申论-地市级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2019/申论-副省级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2018/申论-地市级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "国考/2018/申论-副省级.md",
+      "stage": "source",
+      "error": "Task scores do not sum to 100"
+    },
+    {
+      "path": "省考/浙江/2016/申论-A类.md",
+      "stage": "identity/build",
+      "error": "Independent correction source unavailable"
+    },
+    {
+      "path": "省考/浙江/2016/申论-B类.md",
+      "stage": "identity/build",
+      "error": "Independent correction source unavailable"
+    }
+  ]
+}
