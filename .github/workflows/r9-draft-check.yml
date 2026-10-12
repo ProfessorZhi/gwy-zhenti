@@ -1,4 +1,4 @@
-name: R9 authored text checkpoint
+name: R9 authored text checkpoint 68
 on:
   push:
     branches: [complete/essay-r9-all-20261013]
@@ -8,7 +8,7 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -18,7 +18,13 @@ jobs:
           sparse-checkout: |
             /.gitignore
             /.gitattributes
-            /tools/r9_check_authored.py
+            /tools/
             /reports/r9-context/manifest.json
             /reports/r9-authored/
-      - run: python tools/r9_check_authored.py
+            /reports/r9-authored-corrections.json
+            /国考/
+            /省考/
+      - name: Strict per-answer draft checks
+        run: python tools/r9_check_authored.py
+      - name: Read-only exact-question material-evidence reuse discovery
+        run: python tools/r9_find_reuse.py
