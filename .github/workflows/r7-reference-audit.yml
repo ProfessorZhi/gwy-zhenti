@@ -2,13 +2,13 @@ name: R7 whole essay reference audit
 on:
   push:
     branches: [fix/shenlun-all-r7-20261013]
-    paths: ['tools/r7_reference_audit.py', '.github/workflows/r7-reference-audit.yml']
+    paths: ['tools/r7_reference_audit.py','tools/r7_reference_matching.py','.github/workflows/r7-reference-audit.yml']
 permissions:
   contents: read
 jobs:
   audit:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -22,3 +22,5 @@ jobs:
             /reports/
       - name: Audit every essay and identify exact source requests
         run: python tools/r7_reference_audit.py
+      - name: Match same-question reference versions without requiring identical wording
+        run: python tools/r7_reference_matching.py
