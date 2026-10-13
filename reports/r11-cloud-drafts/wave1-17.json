@@ -1,0 +1,137 @@
+[
+  {
+    "id": "016-1",
+    "answer": "A县实施“乡村公共资源共享行动”的主要做法包括：加强宣传引导，提升村民共识；签订责任状和承诺书，压实基层党组织和党员责任；建立日通报、周调度机制，强化日常督导；党员干部带头清缴欠费，发挥示范作用；依法依规催收欠款，推动债权回收；盘活闲置校舍、土地等公共资源，建设共享厂房和特色产业项目，实现村集体增收和农民就业增收。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d9b3e3f9e72110b3eff22cc80eb5756d6cfc7a1a5052d01c5b439b2dae74ac68",
+    "selected_material_sha256": "4b8324466adcce0e0058775848d75c202711855ab178dae7aa1b333aec0b0264",
+    "question_sha256": "566b9e30470d84ff095b9fb5d6658c4cd04c71f1341f8158759a95560d4391e0",
+    "characters": 158,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 158,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 96,
+          "prompt_tokens": 1929,
+          "total_tokens": 2025,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "037-3",
+    "answer": "S市社区食堂建设工作简报  \nXXXX年X月X日  \n\n为切实解决居民尤其是老年人和上班族就餐难、用餐贵的问题，S市积极推进社区食堂建设，目前已在多个社区形成覆盖广、价格实、服务优的便民餐饮网络。  \n\n社区食堂普遍实行“价廉物美”原则，如松北社区食堂油条1元一根、午餐套餐8元，佳苑社区老年人餐费每月仅需300元（政府补贴210元，个人承担90元），有效减轻居民负担。部分食堂结合居民口味推出湘菜、川菜等地方特色菜品，并延长供应时段至早中晚餐及夜宵，提升服务可及性与吸引力。  \n\n在运营模式上，社区食堂呈现多元化发展态势：既有由物业主导的数字化运营（如“睦邻小食堂”采用AI机械臂取餐、刷脸支付），实现降本增效；也有由公益组织承接的助老食堂，如龙湖新村助老食堂，依托1000余名志愿者力量，保障服务可持续性。  \n\n社区食堂虽具公益性，但初期普遍面临经营亏损问题。以龙湖新村助老食堂为例，每餐成本达10元，而老人餐价仅5元，成立初期月均亏损约1万元。因此，政府高度重视，将社区食堂纳入民生工程，通过财政补贴、政策支持等方式予以扶持，对考核合格的食堂给予运营资金补助，缓解经营压力。  \n\n同时，社区食堂不仅是餐饮服务载体，更成为连接居民与社区服务的重要平台。如佳苑社区依托食堂积累的居民信任，逐步拓展理疗、康健、家政等延伸服务，实现从“吃饭”到“康养”的功能升级。  \n\n下一步，S市将持续优化社区食堂运营机制，推动政府、社区、社会力量协同发力，完善成本分担、补贴标准和监管体系，提升食堂的可持续发展能力与服务质量，真正实现“惠民、利民、便民”。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "6b7483527d7796c2a9f893f6c2635ddd65ed157cf5c298a7e7729cc7f37a82d2",
+    "selected_material_sha256": "613ff0d3ecc4690c1d436365f13230a6ceb7882d7098b47ef4ae4bdb61332020",
+    "question_sha256": "ac68eb851bc77793153e187ca49ae04498f0e400932a4500f406fc92cc6a5bdb",
+    "characters": 648,
+    "word_limits": [
+      500,
+      800
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 648,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 424,
+          "prompt_tokens": 1811,
+          "total_tokens": 2235,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "047-2",
+    "answer": "C市幼儿教育发展存在结构性矛盾：一是优质资源供给不足，公办园学位紧张，“入园难”突出；二是普惠性民办园“价惠质不优”，部分园所师资薄弱、玩教具匮乏、教育理念粗放，影响儿童身心发展；三是教师待遇偏低、职业认同感弱，导致师资不稳定，男女比例失衡；四是监管存在盲区，过度监控难以解决冷暴力等教育问题。上述问题反映出资源配置不均、质量保障机制缺失与专业发展支持不足等深层矛盾，制约了学前教育公平与质量的提升。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0c188ea30188f05b39656c04baf063b8a8c8d927e6d3059ff8e327c8432578ce",
+    "selected_material_sha256": "6ff89ae6dca46801a062d82216c77c250ce47bcd13deec1faa59b509d5c4f995",
+    "question_sha256": "f83ea2bb2f8a600871bcce7e84d4319a0c8e0891483657cc15f5e96061513a4c",
+    "characters": 200,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 200,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 123,
+          "prompt_tokens": 1803,
+          "total_tokens": 1926,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
