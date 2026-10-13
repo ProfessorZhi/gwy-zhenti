@@ -1,0 +1,182 @@
+[
+  {
+    "id": "015-4",
+    "answer": "法庭映初心·法官在行动\n\n在D市，一场司法服务的深刻变革正悄然发生——“共享法庭”以科技为笔、为民为本，绘就了司法温度与效率并重的新图景。\n\n“一根网线、一块屏”，连接起城乡之间的法治之桥。425个“共享法庭”覆盖全市镇街村社，49个特设点精准服务特殊群体，让独居老人、偏远村民、企业主“足不出户”也能参与诉讼、获得法律服务。社区老人李大爷通过社区“共享法庭”远程开庭，既保障了权益，也缓解了身体不便；在毛庄村院坝里，法官徒步行至田间，现场开庭调解赡养纠纷，高粱红了，矛盾也消了。\n\n创新不止于形式。车载便民法庭3.0版驶入街巷，融合AI识别、5G直播等功能，实现“到家的法庭”；在铁马镇商会设立“共享法庭”，开展知识产权保护讲座和用工风险提示，助力企业合规发展。三河区法院更引入政府、高校等多方力量，推动法律服务与创新资源精准对接。\n\n“共享法庭”不仅是审判场所，更是普法阵地、调解平台、服务枢纽。通过在线调解、法律咨询、风险提示，累计开展30余场法律服务，帮助18家企业完善合同、发出63条风险预警，真正实现司法服务“零距离”。\n\n从田间地头到企业园区，从家庭纠纷到产业治理，“共享法庭”以行动诠释初心——司法为民，不是口号，而是扎根基层的每一天。法官在行动，法治就走到了群众心坎上。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0387c6374b02df54c7c2eea596bedceb151ca395f47a87838cc488767fffe2ba",
+    "selected_material_sha256": "6cf583115d22a05e1421b96caaa638fba0a989453003a375400e172f70319ddb",
+    "question_sha256": "c75d76f7c20cc85056f60bf670f85c674c340975eb0ba02d50cdd4fa7106e8a2",
+    "characters": 534,
+    "word_limits": [
+      35,
+      600
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 534,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 358,
+          "prompt_tokens": 1825,
+          "total_tokens": 2183,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "027-3",
+    "answer": "占唐路零工市场存在以下问题：一是务工人员多为低技能、无合同、无保障，易被拖欠工资，安全意识薄弱；二是零工流动性强，缺乏系统培训，技术与安全水平参差不齐；三是市场管理混乱，占道经营导致交通拥堵、噪音扰民、偶发冲突；四是官方设立的劳务中心门槛过高，企业资质限制使小包工头无法入驻，且岗位匹配度低，难以吸引务工人员。\n\n建议：一是完善零工用工制度，推行实名登记与劳动合同备案，明确工资支付责任，建立欠薪预警和追偿机制；二是开展常态化技能培训，重点提升安全意识与操作技能，特别是对新人和老年务工者；三是优化劳务中心设置，降低准入门槛，增设灵活岗位，实现供需精准对接；四是加强市场监管，划定合理经营区域，实施错峰管理，规范用工行为，减少扰民与冲突。通过制度保障、能力提升与服务优化，真正发挥零工市场“蓄水池”作用。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b7e7abbbde4ecbcb3e62abf7c3859cc141f8b03b5c5c2d646207218863d7fdcc",
+    "selected_material_sha256": "b2ef9aebb78dd910ec06084ecd87b338a6cacb0d834de829b6efed799041aee7",
+    "question_sha256": "a311019caf5714e112079ec2f8b60f00b4ed61c959f4a9af4b6c46c58a8c70a5",
+    "characters": 359,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 359,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 228,
+          "prompt_tokens": 1745,
+          "total_tokens": 1973,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "037-2",
+    "answer": "F县帮扶小微企业主要经验如下：  \n一、强化政策扶持，精准落实减税降费，通过大数据筛查确保应享尽享，切实减轻企业负担。  \n二、创新金融支持，拓宽信用贷款范围，运用大数据和“以信换贷”模式，提升小微企业融资可得性与便利性。  \n三、加强技术指导，组织专业化培训，推动小微企业掌握数字化运营工具，提升管理效率和市场竞争力。  \n四、深化服务联动，建立多部门协同机制，从技术、金融到电商销售全链条提供“点对点”精准服务，打通发展堵点。  \n五、聚焦群众需求，将帮扶融入“为群众办实事”实践，增强企业获得感与发展信心，实现可持续发展。  \n\n（287字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "6b7483527d7796c2a9f893f6c2635ddd65ed157cf5c298a7e7729cc7f37a82d2",
+    "selected_material_sha256": "adfb920b2b6053678963b20236cb91e60a87dada560ba8568eb1d0266575ea55",
+    "question_sha256": "b32e05b3cc1ee61db88263e8a989c1f1fa34c4d279ec40d9359539611879a7e5",
+    "characters": 255,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 255,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 166,
+          "prompt_tokens": 1611,
+          "total_tokens": 1777,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "046-4",
+    "answer": "**题目：守旧与创新共生，方能激活城市更新的内生动力**\n\n“有‘老’的气韵，又有‘新’的气象，方寸之地大有乾坤”，这不仅是对厚德巷、古早巷和时光街三地变迁的生动写照，更是当代城市更新应秉持的核心理念。在快速发展的时代背景下，城市更新不应简单地“推倒重来”或“千篇一律”，而应在尊重历史文脉的基础上，注入时代活力，实现传统与现代的有机融合。\n\n厚德巷以“整旧如故”的理念修复老建筑，保留砖雕、花窗等传统元素，不仅延续了百年文脉，更让居民在日常生活中触摸到城市的历史温度。这种“修旧如旧”并非对旧物的简单复制，而是通过科学保护与工艺传承，使历史记忆得以活化，成为城市情感认同的根基。这说明，城市更新必须守住“老”的底色——它是文化自信的源泉，是公众归属感的精神支柱。\n\n与此同时，古早巷和时光街的蜕变展现了“新”的生命力。古早巷没有拆除摊点，而是通过统一餐车设计、安装油烟净化设备，提升经营环境与安全性，使烟火气得以有序延续；时光街则在保留旧建筑结构的基础上，引入潮流业态与美学设计，打造青年文化地标。这些实践表明，“新”不是对传统的否定，而是在尊重原有空间的前提下，通过制度创新与服务优化，激发市场活力、满足多元需求。\n\n更深层次看，城市更新的真正价值，在于实现“人”的回归。厚德巷的小店老板、古早巷的老食客、时光街的青年主理人，都是这一变革中的受益者。他们既是传统生活的见证者，也是新生活方式的创造者。城市更新的成功，不在于外表的华丽，而在于能否让普通人感受到被理解、被尊重、被赋能。\n\n从治理逻辑而言，这种“老”与“新”的共生，需要政府、社区与居民三方协同推进。政府应发挥规划引导作用，避免“一刀切”式改造；社区需建立包容性机制，推动“以旧育新”理念落地；而居民则通过参与共建，真正成为城市更新的主体。唯有如此，才能避免“千街一面”的同质化困境。\n\n当前部分城市在更新中仍存在重开发、轻生活，重形象、轻功能的问题，导致更新后空间空洞、人气流失。这提醒我们，城市更新必须回归以人为本的本质——既要留住历史记忆，也要回应现实需求；既要有文化厚度，也要有发展温度。\n\n总之，“老”是根脉，“新”是生长，二者相辅相成，方能成就一座城市真正意义上的“活态复兴”。唯有在守正中求创新，在传承中谋发展，才能让每一寸街巷都成为承载记忆与希望的生动载体，真正实现“方寸之地大有乾坤”的理想图景。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "eb92f8ce2aa6b88fde79066ebad3b3eb1acae93bc4ae52f05575ada77a4b91ec",
+    "selected_material_sha256": "b354243f634505d764e399ce6600bcbc3c2ed96ec8aa808a64dbfe8625783e2f",
+    "question_sha256": "0052955acdc632b9a54f7fd19941a5ebee6cab80d9a619eec26bb21c9c3dc948",
+    "characters": 972,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 972,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 634,
+          "prompt_tokens": 4727,
+          "total_tokens": 5361,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
