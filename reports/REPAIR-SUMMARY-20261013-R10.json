@@ -1,0 +1,22 @@
+{
+  "status": "branch_prevalidated",
+  "round": 10,
+  "date": "2026-10-13",
+  "baseline_commit": "0faccfb1ef007f8f4b100f6d605f01c719d2fb24",
+  "branch": "essay/r10-shenzhen-2025",
+  "all_essay_MD": 738,
+  "parsed_exam_MD": 729,
+  "unparsed_exam_MD": 9,
+  "papers_modified": 2,
+  "reference_positions_added": 6,
+  "new_full_length_example_essays": 2,
+  "new_short_references": 4,
+  "distinct_essay_texts_authored": 1,
+  "previous_missing_answers": 574,
+  "expected_missing_answers_after": 568,
+  "machine_flagged_files": 579,
+  "receipt": "reports/ROUND10-ORIGINAL-ANSWERS-20261013.jsonl",
+  "quality_corpus_inventory_sha256": "092f6bfa2c1d0973b2203e6872156c21b7fc2132a53d9703a80516c02cd78788",
+  "source_boundary": "Independent AI-assisted original exam training answers. Third-party pages cited only for original-paper cross-check; no high-score or official-authorship claim.",
+  "note": "待GitHub Actions验收通过后正式标记已交付。"
+}
