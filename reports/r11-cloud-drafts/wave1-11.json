@@ -178,5 +178,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "059-1",
+    "answer": "D市通过推广农业社会化服务，让小农户搭上现代化农业快车。一是成立股份经济合作社，提供从种到收的全程托管服务，统一供应农资、技术指导和病虫害防治，提升生产效率。二是开展土地细碎化整治，实现“小田”变“大田”，提高机械化作业水平和土地利用率。三是依托规模优势，降低农业生产成本，推广智慧农机和科学种植技术，实现增产降本。四是与龙头企业合作，建立统一收购机制，保障农民收益。五是运用数字化手段，构建动态监测体系，实现精准决策与精细管理，推动农业高效、智能发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0dbc5ff0c4c0c0de7d7bb15b2715379ca73ef7ca9769f44e60e80b0fae5a81b3",
+    "selected_material_sha256": "12c212df8338d82a5432fb27198ec0a884ced9c7b882c9c78e28343224fd51f0",
+    "question_sha256": "acebc5096ea3cbb40c09aa5d0531aad9c97e9d64be7f767907c2d5c78ca2368e",
+    "characters": 227,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 227,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 1858,
+          "total_tokens": 1997,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "071-3",
+    "answer": "E市“三资”治理工作简报\n\n为推进乡村振兴，E市深入开展农村集体“三资”治理工作。通过摸清家底、规范合同、盘活资源，共清收闲置土地10769亩，盘活15167亩，增收2832万元，规范问题合同10344份，清收债权6418笔，金额6840万元。\n\n坚持“一村一账户”管理，推行村级财务镇级代管、报账员制度，实现现金、账本、凭证“三代管”，所有账户纳入“银农直联”平台监管，做到全程留痕、闭环管理，有效防范资金风险。\n\n依托市级农村产权线上交易平台，构建市、镇、村三级交易体系，推行公开竞价、网上报名、阳光交易模式，部分项目溢价超3倍，提升资源市场化水平。法柳村通过盘活荒地发展夜市，实现村集体增收、群众就业增长，形成可复制推广经验。\n\n工作中注重发挥党员先锋作用，广泛开展协商议事，推动村民理解支持治理举措，确保清查工作有序推进、群众满意。下一步将持续健全监管机制，深化“三资”治理成效，助力农村集体经济发展与乡村治理提升。  \n\n市农业农村局  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "46c363a080e90c3a2e0e935304881825d235e6d981af6fdd5c0946925171a3de",
+    "selected_material_sha256": "b3930e1257a16e9ee49837bc4047f4ad3b0ac69ebf1cdf1954025303b1bfddb3",
+    "question_sha256": "b366d73b885985058a2dabe62a02b017cff48b0dfaa73ed046957f681d100de8",
+    "characters": 419,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 419,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 279,
+          "prompt_tokens": 1885,
+          "total_tokens": 2164,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "091-3",
+    "answer": "“民之所忧，我必念之，民之所盼，我必行之”体现了以人民为中心的发展思想。C市通过建设智惠食堂、社区养老服务综合体、智慧托育中心等全龄友好设施，精准回应了老人、儿童、青年及困难群体的现实需求。针对老年人，提供居家适老化改造与智能设备支持；针对婴幼儿，构建“15分钟托育服务圈”，缓解照护难题；针对青年，推出创业扶持政策，激发创新活力；对低收入群体，建立“幸福码”救助平台，实现主动帮扶。这些举措覆盖全生命周期，体现“一个都不能少”的温度与担当，将民生关切转化为可感、可及的公共服务，真正让阳光照亮每一个角落，推动城市治理向精细化、人性化发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "38cd1e3a40c05ee6ed78c457b25ce9798776295eb530a676dbf3d57b9b7c7b38",
+    "selected_material_sha256": "9c7886617f97512bb6c1c6d13b89a4984ee5c0c866b3319e804c8e88f373f178",
+    "question_sha256": "6beb43718b5ef41c845baa3d63a5e6c5cb2d8092ce3d9a755a9bc84a3a6a3b0b",
+    "characters": 270,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 270,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 167,
+          "prompt_tokens": 1888,
+          "total_tokens": 2055,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
