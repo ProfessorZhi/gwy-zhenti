@@ -712,5 +712,50 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "189-3",
+    "answer": "关于推荐石X同志参加W省优秀农民企业家评选的材料\n\nD县农业农村局推荐众信农业科技发展有限公司总经理石X同志参评W省优秀农民企业家，理由如下：\n\n石X扎根农村十余载，从农资小店起步，历经失败反思，主动学习职业农民培训，系统掌握现代农业技术。2013年，他科学规划，在海盐镇流转3000多亩土地种植马铃薯，采用机械化播种、精准灌溉、绿色防控等现代化手段，打造优质高产“小石土豆”品牌，实现产品安全、商品性优、效益显著。\n\n他创新构建“公司+基地+农户+合作社”模式，带动周边10万余亩土地标准化种植，每户年增收超万元，有效助力农民致富。同时，发展马铃薯花观光旅游，延伸产业链条，推动农业从资源型向品牌型、产业型转变。\n\n石X以现代企业理念引领传统农业转型升级，是新时代“新农民”创业致富的典范，具备强烈责任感与示范带动作用，实至名归，特此推荐。  \n\nD县农业农村局  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "87cbc510c863dee92cab701e3d6d475549df865e16aab31af8b61f8ff64518ad",
+    "selected_material_sha256": "e33d26a95d5ae650a1897259f04ddbf9a4b2b938de0b0789bb710319bd2c5687",
+    "question_sha256": "efc3a54b7a422008532660fa73adcfed4acb61ef403375f271d8eb898ee99595",
+    "characters": 379,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 379,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 243,
+          "prompt_tokens": 1882,
+          "total_tokens": 2125,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
