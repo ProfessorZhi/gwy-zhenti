@@ -358,5 +358,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "104-3",
+    "answer": "“新瓶装新酒”指D市第六代市场在保留原有市场空间形态基础上，注入数字技术、业态创新和全球视野，实现功能升级与价值重构。其内涵体现在三方面：一是空间重塑，通过更高层高、更大面积的铺面布局，满足新兴行业如智能科技、无人装备等对展示与运营的需求；二是机制革新，引入AI交互、人形机器人翻译、万兆光网等技术，构建“3D商贸综合体”，实现跨时空、跨语言的高效连接；三是模式转型，推动“创二代”主导的体验式、互动式、跨境化经营，打破传统“坐商”模式，形成以消费者需求为导向的主动营销生态。这一转变并非简单复制，而是将市场从功能场所升维为集展示、体验、交易、服务于一体的数字化、智能化商业新范式，真正实现了“市”的活力与“场”的实力深度融合。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7222dfba33468714cefdd6f24d4eefe2814aee2b2b5a93849a38c75365826252",
+    "selected_material_sha256": "ece9fc7791da34e6a204daa5ad7e0ae67566502c8a186f134a62628361b387bb",
+    "question_sha256": "97cf250ab821963dbda93ccd6161053babc26ed3ec473a1f87e0c0047b5cc28b",
+    "characters": 314,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 314,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 198,
+          "prompt_tokens": 1916,
+          "total_tokens": 2114,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "118-2",
+    "answer": "“链长制”是指由地方领导牵头，统筹产业链发展，调研现状、制定规划、协调资源，推动重点企业培育、技术创新、项目引进和问题解决，保障产业链安全稳定。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d8738e66b966ae1f0f144b25bda1a62ac98a80cc3cb9676476296bbc4e33abc3",
+    "selected_material_sha256": "53ba6228fd6b893a684b9edf52acaad8b6586e37004e9d0a8bc38362f3631b7a",
+    "question_sha256": "8d11b3f4795a954ef1f28bab7ed35aa545d9793bbc270dd1770ba4c368e02ede",
+    "characters": 72,
+    "word_limits": [
+      35,
+      100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 72,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 43,
+          "prompt_tokens": 1030,
+          "total_tokens": 1073,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "130-1",
+    "answer": "“说走就走，路不再长”体现了我国交通基础设施和出行方式的巨大变革。40年来，铁路网络不断扩展，高铁里程占世界三分之二，行程时间大幅缩短；高速公路里程居世界首位，公路通达性显著提升；民航航线日益密集，实现跨区域快速连接。同时，互联网技术赋能交通，实现“指尖购票”“实时导航”“手机约车”，出行更加便捷高效。共享单车等新型模式解决“最后一公里”问题，满足多样化需求。交通由“漫长难行”转向“高效快捷”，出行时间大幅压缩，人们不再受限于距离与路况，真正实现“说走就走”。这不仅是硬件建设的成果，更是科技与制度协同发展的体现，标志着我国交通体系进入智能化、人性化新阶段。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "98e2af77363ffd7ed3bf4a6c7b132c253ea1553759ec2485c246d40bff192f81",
+    "selected_material_sha256": "dda7af6494cad10dc34a6288160f21e88c3b27c68d7223fc2ff0d12be145223f",
+    "question_sha256": "63a983cdb0faa84a6997f193a3a526d7e5a88b06965ea6d52bfa0b5539469edf",
+    "characters": 281,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 281,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 168,
+          "prompt_tokens": 1551,
+          "total_tokens": 1719,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "142-2",
+    "answer": "“用好科技特派员的前提是科技特派员好用、够用”强调科技特派员必须真正贴近农民需求，具备实用性和可及性。当前部分特派员存在理论化、不接地气、专业不对口等问题，难以满足实际生产需要；同时，队伍年龄结构老化、培训不足、激励机制缺失，导致服务动力不足。只有实现“语言接地气、技术新实用、服务有温度”，才能让农民听得懂、学得会、用得上。此外，应建立责任连带与技术入股机制，提升服务积极性，并通过远程诊疗、订单培训等方式增强可及性。唯有科技特派员“好用、够用”，才能真正发挥其在乡村振兴中的实效作用。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa033191168316e516e15566f6109951d4ed38637eb4f295df6b387c6540d93b",
+    "selected_material_sha256": "ecbaf8d77ef0a5bc2eccaaff71e837b03461ffdd2697303c2456ea64103e7476",
+    "question_sha256": "0a383f01d41e157b28fbbb4fcfc6339df718562cdee4c3b6a34157d0eca1af06",
+    "characters": 244,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 244,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 148,
+          "prompt_tokens": 4729,
+          "total_tokens": 4877,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
