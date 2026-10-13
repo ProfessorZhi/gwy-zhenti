@@ -159,5 +159,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "058-3",
+    "answer": "让医患成朋友  \n\n在Z县，家庭签约医生已真正成为村民身边的“健康伙伴”。黄大夫骑着摩托车夜访山村，只为让老人“平时有人关心、就医不用操心”。全县375名家庭医生覆盖124个建制村，签约率达74.87%，重点人群签约率高达93.42%。  \n\n通过“一网统管”健康服务体系，家庭医生定期入户走访，开展健康讲座，建立电子健康档案，实现血压、血糖等数据实时上传与异常提醒。村民老蔡坦言：“现在医生像朋友一样，看病省钱省心。”  \n\n更可贵的是，医患关系日益亲近。曾因脾气暴躁拒医的老蔡，如今主动通过手机App咨询问诊；吴奶奶突发晕倒，村民自发抬车相送，感动于“一家人”的温情。  \n\nZ县为基层卫生院配备智能设备，建设慢病管理救治中心，实现当天体检、次日报告、当面建议，提升群众获得感。县级专科医生定期巡诊培训，推动优质资源下沉，让基层诊疗更规范、更安心。  \n\n家庭医生不仅治病，更护心。在Z县，医患已从“服务关系”走向“朋友关系”，真正实现了健康服务的温度与实效并存。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ed8703de550c3b08ef6cd8c5b6ab969a4f4c08bb2c9afd9a55ac91419358cf7b",
+    "selected_material_sha256": "d406d1fe09dbdf9732e2e0ef24756fcdce97c81513617d4bb14ccafa21de2332",
+    "question_sha256": "9de054acb76a58452e1bd6173b09e8195e40d38089d8a5d0e477597406ad711e",
+    "characters": 414,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 414,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 280,
+          "prompt_tokens": 1820,
+          "total_tokens": 2100,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "071-1",
+    "answer": "A市通过建设高标准农田激活农村“一池春水”：一是整山系推进建设，消除界埂沟渠，扩大种植面积，实现连片经营；二是发展合作社，推广机械化作业，提升生产效率；三是建设智慧农田服务中心，运用物联网技术实现精准管理；四是健全管护机制，落实四级网格责任，保障耕地用途；五是延伸马铃薯产业链，推动加工增值，带动农民增收，促进人才回流与乡村发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "46c363a080e90c3a2e0e935304881825d235e6d981af6fdd5c0946925171a3de",
+    "selected_material_sha256": "8fe6e95211a3fc8d74897066ba2a5c7f015a704c4141c197130606ccbb30509d",
+    "question_sha256": "58e7d2ea4cebdd2115411f5ae23667dac4b15de4cd670b27b5ec0482723ab0af",
+    "characters": 165,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 165,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 102,
+          "prompt_tokens": 1705,
+          "total_tokens": 1807,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "081-1",
+    "answer": "A县发展林药产业主要做法：一是立足山地资源，推行“村‘两委’+林场+农户”模式，流转林地2000多亩，推广黄精、灵芝、石斛等道地药材仿野生种植；二是创新金融支持，推出“林e贷”，解决企业融资难题，助力扩大种植规模；三是强化科技支撑，引入数字化设备实现全过程追溯，并开展深加工提升产品附加值；四是搭建产销平台，建设线上“乡村会客厅”和线下“林药展示馆”，打通供需渠道，实现高效对接，推动林药产业提质增效。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1e4a6c203547820d015d897b02a020a8f779ad78a603964c1b38eff2e2c71ef6",
+    "selected_material_sha256": "f75e4043dd533136bc2f836261044609c53d303b11a8ce8a029bc052ab8b88b9",
+    "question_sha256": "d0f3b43d383031d367160904c63ffd229927926cdb0516e79783e41f1cb500cc",
+    "characters": 201,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 201,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 133,
+          "prompt_tokens": 1851,
+          "total_tokens": 1984,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "091-1",
+    "answer": "发言提纲：\n\n一、突出茶旅融合特色。依托14万亩茶园，打造“吃住行游购娱”全链条体验，建设茶旅小镇、文化园、主题民宿等项目，实现茶产业与旅游深度融合。\n\n二、完善基础设施。建成环山道路和旅游轨道交通，优化交通条件；设立停车场、特色路灯和夜景景观，提升游客观光体验。\n\n三、创新产品业态。发展研学基地、茶道体验馆、制茶互动等沉浸式项目，增强游客参与感和文化感知力。\n\n四、强化文化传播。通过广播播放2300余集茶文化故事，举办短视频征集大赛，扩大茶文化影响力，推动全民传播。\n\n五、培育专业人才。开展茶艺传承人、茶旅从业者培训，组织“茶文化进校园”和主题文艺活动，提升从业人员素质与社会认知度。\n\n六、提升品牌价值。依托地理标识，融合文化元素，创新营销模式，实现茶产值从1.5亿元增至3亿元，年接待游客超50万人次，形成可持续富民产业。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "38cd1e3a40c05ee6ed78c457b25ce9798776295eb530a676dbf3d57b9b7c7b38",
+    "selected_material_sha256": "59ec24e6ad3a4b83a21646767d532c8f9d8f31d0048e4ac13202ee528957f3a7",
+    "question_sha256": "ceea7551eea274ac19b193fc1ab8cbc191821d9fce2bd4d9e5efcb59adc2356e",
+    "characters": 355,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 355,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 228,
+          "prompt_tokens": 1768,
+          "total_tokens": 1996,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
