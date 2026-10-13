@@ -326,5 +326,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "102-3",
+    "answer": "“可能性”指城市市集在功能、业态和文化表达上的多元拓展空间。一是消费模式上，实现人与创作者的互动交流，满足情绪疗愈、心灵休憩等非功利需求；二是形式创新上，如带宠物摆摊、非技能学习等活动，丰富消费体验；三是文化价值上，体现城市个性与生活美学，增强文化认同；四是发展路径上，需通过精细策划与顶层设计，实现市集与周边业态协同，避免同质化，形成具有代表性的地标性品牌。这些探索为市集可持续发展提供了现实可能。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3701ea8f08217daace4e07ed325195e2b09aa149558aa151fe49c17bdb18808f",
+    "selected_material_sha256": "2950d1caeb6b4a35bf147d22ead10a35a42e4be477c34e32fd391275c4cbd18c",
+    "question_sha256": "eebca34bde7d90891f6c78a14f214b629982fbd0edd7ee79e6260e956c3834f0",
+    "characters": 200,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 200,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 127,
+          "prompt_tokens": 1477,
+          "total_tokens": 1604,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "128-1",
+    "answer": "向阳街道通过建立社区发声人队伍，精准收集居民“问题清单”和“需求清单”，推动群众参与议事决策。发动居民共商共议，提出切实可行的治理建议，实现小事不出社区、难事有人解决。依托发声人发现的微需求，组建“益起”家电维修志愿服务队，开展“维修大篷车进社区”等便民服务，打通治理堵点。通过“民生微实事大家谈”平台，形成居民与基层组织双向互动机制，以群众声音凝聚治理合力，实现共商、共建、共享的基层治理新格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cd04ad24f8762a240f36ff8de6e338c0543b8c42645acc0f325f7d47326d6482",
+    "selected_material_sha256": "bbc9a3d11dc8c1e5692b72df25eb5d0eeea9bbd8ccd316ac0b05c6dd64cceac5",
+    "question_sha256": "0bc7fdf383ac8f85e5a45bde8fbde359a31f408eaa8201294f76109ab3ed43ed",
+    "characters": 199,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 199,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 127,
+          "prompt_tokens": 1701,
+          "total_tokens": 1828,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "139-1",
+    "answer": "Y县通过国际交流合作发展竹产业的主要做法：邀请国际专家团队考察指导，引进先进技术和标准，如德国专家帮助提升产品防霉处理水平；建设竹产业创新服务中心，联合高校科研院所开展国际合作研发；推动竹材在建筑材料、汽车内饰等高端领域的应用；组织技术培训与交流，向“一带一路”国家输出竹加工技术和经验，实现互利互鉴，助力绿色产业发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cf414b03e4ce32a54bbeb5ddc04d3b8b28033b474ac4d4a0a3bd761a91058a9c",
+    "selected_material_sha256": "36fe47a05f2f7c65555fc6c715ec4b63ec491d3efbf0b5f6e3558183f279f517",
+    "question_sha256": "1d35b6afc358c760deb39d58c7f7007a013531f90a2e5fe7120f963cf2893557",
+    "characters": 160,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 160,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 87,
+          "prompt_tokens": 1903,
+          "total_tokens": 1990,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
