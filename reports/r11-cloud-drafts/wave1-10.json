@@ -461,5 +461,50 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "152-1",
+    "answer": "A区与B县依托同城合作，推动“1+1＞2”发展格局：一是强化基础设施联通，开通城际公交、免费互通高速，新建改造道路，提升交通便利性；二是深化产业协同，推动企业向B县转移，形成上下游产业链生态圈，带动装备制造、新能源等新兴产业投资；三是促进要素流动，建立干部互派机制，联合打造文旅消费目的地，实现双向消费与人才互动；四是畅通就业渠道，通过市场化平台对接零工岗位，助力务工人员灵活就业；五是共建物流枢纽，发挥B县成本优势，联动A区中欧班列，提升区域供应链效率。多维协同推动资源优化配置，实现互利共赢。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9b2c5016578c1582ca04715f104ceacc318945767125021d26bb734efbe63841",
+    "selected_material_sha256": "3ade8b81c5c60a8f157cceff968585f2a7bdeed15b2a1651d04578a12c34e600",
+    "question_sha256": "5619a49f9a751fae5581e98bed52dc217cfb046a7d307b8c4dd1392d7aecaa26",
+    "characters": 248,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 248,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 147,
+          "prompt_tokens": 1783,
+          "total_tokens": 1930,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
