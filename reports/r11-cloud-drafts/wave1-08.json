@@ -519,5 +519,50 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "151-3",
+    "answer": "H市营商环境存在的主要问题包括：一是服务流程不便捷，老年人和不熟悉网络操作的群体在办理营业执照时缺乏现场指导，代办服务收费高且实际流程无需多次跑腿；二是投诉渠道不畅通，人才认定等事项审核反馈延迟，官方电话频繁改号或无人接听，群众维权难；三是政务服务智能化水平不足，公积金窗口无提醒过号功能，不动产抵押登记移动端办理在部分区县形同虚设，系统未实现互联互通；四是助企服务覆盖面窄、机制不健全，专员数量与企业主体比例失衡，政策落实存在“最后一公里”梗阻；五是信息公示过度，企业法人信息公开导致频繁骚扰，影响正常生产生活。\n\n建议：一是建立“无感代办”服务机制，对老年人等特殊群体提供现场指导或免费代办，明确流程简化要求；二是优化政务服务热线与线上平台，实行号码固定、专人接听、限时响应，设立投诉闭环管理机制；三是推动区级系统与市级平台数据互通，实现不动产登记等业务“一网通办”；四是建立助企服务动态覆盖机制，按企业规模和分布合理配置专员，建设统一政策服务平台，提升政策兑现效率；五是规范信息公示范围，对敏感信息脱敏处理，减少对企业法人正常生活干扰。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d7498526285cb30d3bcf477857c5a91914365eff0ee377c5654f7b152982d74e",
+    "selected_material_sha256": "ffaac063a9cbe8b0c6c92a9b6cc03fff0d25ff4c1d825b87cabfe599187e5cb3",
+    "question_sha256": "4016878696bb752e71fdddb21c945d3e0d82ed1eb20e39ae3ee2cacc24137f31",
+    "characters": 469,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 469,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 275,
+          "prompt_tokens": 1735,
+          "total_tokens": 2010,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
