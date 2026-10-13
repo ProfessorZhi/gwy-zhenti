@@ -1,8 +1,8 @@
 {
   "label": "wave1-11",
   "selected": 16,
-  "processed": 12,
-  "drafts_written": 10,
+  "processed": 16,
+  "drafts_written": 14,
   "failures": [
     {
       "id": "081-3",
@@ -13,7 +13,7 @@
       "error": "timed out"
     }
   ],
-  "elapsed_seconds": 3367,
+  "elapsed_seconds": 4043,
   "status": "drafts_only_not_applied_to_corpus",
   "quality_boundary": "Model self-review is not independent expert marking."
 }
