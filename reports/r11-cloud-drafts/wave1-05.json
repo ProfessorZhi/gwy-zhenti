@@ -538,5 +538,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "150-4",
+    "answer": "**文明之根：在现代与传统的交融中生长**\n\n文明之所以文明，不仅在于其制度的先进或技术的领先，更在于它能否包容差异、尊重多样，在发展进程中既拥抱现代生活方式，又守护传统的生活智慧。C市“背篓专列”这一现象，正是对这句话最生动的诠释——地铁车厢里背着菜篮的农民，用最朴素的方式连接起城乡，也映射出一个城市真正的温度与文明高度。\n\n“背篓专列”之所以能刷屏网络，不是因为其交通形式新颖，而是因为它承载了真实的生活图景。菜农们清晨赶早，背负着自家种的蔬菜，在雨中排队安检、登车，他们不为炫耀，只为卖得更远、价格更高。地铁工作人员没有拒绝，反而主动引导老人使用无障碍设施，细心处理菜叶汁水，这种服务细节体现的是一种对“人”的尊重——无论你是城市白领还是乡村农夫，都应被平等对待。这正是现代文明对传统生活方式的包容与接纳。\n\n传统习惯中蕴含着朴素的生存智慧。在石船镇，种菜是世代相传的生活方式，卖菜是农民维持生计的重要途径。这种“靠土地吃饭”的传统，并非落后，而是根植于乡土社会的韧性与自足。当城市轨道交通将这些农人纳入现代交通体系，不是简单地“现代化”他们，而是以开放的姿态，让传统生活方式在现代空间中继续存在、被看见、被理解。这说明真正的文明，不是要消灭差异，而是要为不同群体提供共存的可能。\n\n更深层看，这种包容也推动了城市治理的温度升级。一些地方曾因担心“菜叶弄脏车厢”而禁止菜农上车，实则是用现代标准去规训传统生活，忽略了公共空间的本质是服务人民而非塑造完美场景。C市地铁的开放态度，恰恰体现了公共服务从“形式合规”向“实质关怀”的转变——文明不是冷冰冰的规则执行，而是对普通人真实需求的回应。\n\n这种融合还激发了社会的情感共鸣与价值认同。“坐一块儿聊天、了解行情”，是菜农们自发形成的社交方式，它不仅缓解了出行压力，更在无形中构建了城乡之间的信任网络。当城市居民看到这些背篓里装着自家地里的菜，便意识到：城市的繁荣，不只是高楼大厦的崛起，更是无数平凡人用汗水浇灌出的生活烟火。\n\n从社会发展角度看，文明的进步不应是“去乡土化”的单向运动，而应是在现代化进程中实现城乡、群体、代际之间的相互滋养。正如N市在儿童友好空间建设中，既保留了城中村的肌理，又通过空中乐园、流动图书馆等设施赋予其新功能；C市地铁接纳背篓，也体现了对“原生生活形态”的尊重与保护。\n\n因此，文明的真正内涵，在于它既不盲目排斥传统，也不盲从习俗，而是在动态发展中找到现代性与本土性的平衡点。唯有如此，城市才能真正成为“人”的共同体——无论是背着菜篮的农民，还是在图书馆里读书的孩子，都能在城市的脉动中找到归属、获得尊严。\n\n文明之所以文明，是因为它懂得倾听，懂得理解，懂得在变化中保留温度，在进步中守护本真。这不仅是对C市“背篓专列”的致敬，更是对所有正在前行中的城市与社会的深刻启示：真正的现代化，是现代与传统的和谐共生，是人间烟火与时代节奏的共舞。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "70fbe31ab9b8a792329f4cb861b3bd17dad0434887ff9ca614d39f3ca5ca1fc5",
+    "selected_material_sha256": "1fdecf32ab46194804597ffa9ca6db71c4ab5010ad0b38ad25517877333107b9",
+    "question_sha256": "fb8ed7c462f26abda95e31ede514d62e103c450169f8201f3cc07a8cdb945ac7",
+    "characters": 1192,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1192,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 753,
+          "prompt_tokens": 5103,
+          "total_tokens": 5856,
+          "prompt_tokens_details": {
+            "cached_tokens": 582
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "160-1",
+    "answer": "新大众文艺“新”在于：创作主体多元，普通人成为主角；表达形式多样，依托网络平台实现低门槛参与；传播方式变革，直播、短视频等增强互动与在场感；生产机制转型，形成“共建共享”的集市模式，打破精英垄断，实现大众共创与价值流动。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4be71f92b093b87359d7b71f7da99489b74701cd8e81efe474911752de4c6200",
+    "selected_material_sha256": "f5a6bc1c28a2c9239943cb33553117eb2c4aa81bd0a7783951bd54579730eb51",
+    "question_sha256": "c94441341854d5045eaf64a3f32e62420c2d46e053ddf53216b5ee9016bbcd5b",
+    "characters": 110,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 110,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 67,
+          "prompt_tokens": 1713,
+          "total_tokens": 1780,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "169-2",
+    "answer": "创意海京，有礼有你  \n\n2026年，第二届城市礼物创意大赛即将启幕！我们诚邀你以匠心为笔，以城市为纸，共同书写海京的独特故事。  \n\n从非遗织锦的触感温度，到茶盒“活”起来的感官体验；从市民口述史中的深情记忆，到盲盒里的AR潮玩互动——每一款“城市礼物”，都是对海京文化的深情回响。  \n\n大赛设立专项扶持基金，优秀作品纳入“海京礼物”认证体系，享有孵化、推广与市场支持。我们鼓励深入挖掘本地“海”文化资源，打造独具辨识度的原创产品，避免同质化竞争。  \n\n无论是传统技艺的现代演绎，还是科技与人文的巧妙融合，只要你心中有海京，手中有创意，这里就是你的舞台！  \n\n带上你的灵感，来参赛、来观赛、来共筑一座可携带、可讲述、可传世的城市礼物。  \n创意海京，有礼有你！  \n海京市城市礼物创意大赛组委会  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "5332519716910535a790d2270ace63f6d3c97576f80e5cefe57c7f18098e0645",
+    "selected_material_sha256": "80d78f95966cfa2667f2e6ae925b2c0f31da181ee6285049867a17da4d0322fe",
+    "question_sha256": "b17ea6350cfe863d35bd3897d519bbd093d569c95cdad548007b3537b9f068cd",
+    "characters": 334,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 334,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 237,
+          "prompt_tokens": 1881,
+          "total_tokens": 2118,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "180-2",
+    "answer": "我国部分地方政府推行ISO9000质量管理体系，体现了提升行政效能和服务质量的积极努力。该体系强调标准化、程序化和顾客导向，有助于规范流程、提高效率、增强服务意识，推动政府从“管制”向“服务”转变。实践表明，其可显著缩短办文时间、降低差错率、提升群众满意度。但推行中需避免简单化理解，应结合实际进行调整优化，确保制度与职能匹配，真正实现管理提质增效。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "567bb08958263374db1a0df20499bfbc77b71c08d6a882c4b9e7d17ca771d5fd",
+    "selected_material_sha256": "a244a060a058038633757192546e89ddcc3d07ad6f4a1dcd15f43b81d89abdc7",
+    "question_sha256": "539141c85a843ff00cf4ffa4085bda914a10df768a6efa70f603b6f0679485cd",
+    "characters": 175,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 175,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 106,
+          "prompt_tokens": 4534,
+          "total_tokens": 4640,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
