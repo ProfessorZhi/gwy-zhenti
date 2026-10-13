@@ -493,5 +493,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "149-2",
+    "answer": "社区合伙人招募书\n\n为共建和谐美好社区，光华街道现面向辖区居民和社会组织公开招募“社区合伙人”。我们诚邀您参与社区治理，共同解决居民“身边那点事”。\n\n凡热心社区事务、愿意为邻里服务的个人或群体，均可报名成为“社区合伙人”。您可参与以下事项：协助开展反诈宣传、组织文化活动、提供居家养老照料、开设兴趣课程、参与矛盾调处、推动公共设施改善等。\n\n加入后，您将获得优先参与社区议事、享受免费老年大学课程、被推荐为“最美乐天人”等激励。街道将提供场地支持、项目引导和资源协调，确保服务有效落地。\n\n无论您是退休人员、青年群体、企业代表或社会组织，只要愿意奉献爱心、共建家园，都欢迎加入！\n\n报名方式：请至各社区服务中心咨询或通过社区公众号提交申请。\n\n光华街道党工委  \n2024年4月5日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1808d1da7191d0052a16b226ee2077505e1ed5c8b14df1c2e1875f2e3c2a2d8c",
+    "selected_material_sha256": "e6795621145f492e7df1b63a70145b04bcd70b2a52a7dafef35e59058db835e2",
+    "question_sha256": "9c57070c8f5d167af7eef0063c363a8e2b7422aa6aba47e508e95540823927dd",
+    "characters": 327,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 327,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 203,
+          "prompt_tokens": 1769,
+          "total_tokens": 1972,
+          "prompt_tokens_details": {
+            "cached_tokens": 582
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "158-4",
+    "answer": "**做自己想做的事：新时代青年回乡创业的精神自觉**\n\n“做自己想做的事并努力做好，就是最好的选择。”这一朴素而深刻的命题，在“七个兄弟”种地、小赵直播带货、阿汤开发AI果园等真实案例中得到了生动诠释。它不仅是一种生活态度的表达，更折射出当代青年在价值重构中的精神觉醒——从被动适应到主动选择，从城市追逐到乡土扎根，他们以行动回应了“谁来种地”这一时代命题，也重新定义了奋斗的意义。\n\n回乡创业并非退而求其次的选择，而是对自我价值的深刻认同。小赵放弃体面工作，在田间地头直播种地，将日常劳作转化为内容输出，既实现了个人兴趣的落地，又带动了乡村产业的升级；小张从广告文案转向茶农，用专业思维为乡亲写宣传语，把“种得好”变成“卖得出”。这些青年并非简单重复父辈的耕作模式，而是以现代思维重构农业价值链条，在“做自己想做的事”中找到人生坐标。这种选择，既满足了个体对自由与意义的渴望，也回应了乡村振兴对创新人才的需求。\n\n更重要的是，“努力做好”赋予了这一选择以现实根基。阿汤引入AI技术建立果园信息库，用科技手段提升产品品质与市场竞争力；小李通过反复试验优化辣椒种植方案，最终赢得市场认可。这些案例表明，真正的“好选择”不是逃避现实的幻想，而是在认清困境后，以行动、坚持和创新去突破边界。青年们在泥土中锤炼能力，在实践中验证价值，将“想做”转化为“能成”，从而在乡村这片广阔天地里实现了自我成长与社会贡献的统一。\n\n这种精神自觉也正契合新时代劳动观的深层转变。传统观念中，“种地是苦差事”“农业无前景”，导致人才外流。而如今，青年们看到的是农业的可持续性、科技的赋能潜力以及文化表达的空间。短视频成为新农人“看见自己”的媒介，直播带货让小村庄走向全国视野，农耕过程被赋予了诗意与温度。“被看见”带来的成就感，不仅激发了个体热情，更重塑了乡村社会对劳动的认知——劳动不再是沉默的付出，而是创造性的表达。\n\n然而，这一选择仍面临现实挑战。部分青年担忧收入不稳定、技术门槛高、市场风险大，而家庭与社会的期待往往仍将“稳定体面”置于首位。因此，政府需完善返乡创业支持体系，提供土地政策、技术培训、金融信贷等配套服务；教育系统也应加强职业引导，帮助青年建立对农业的正确认知，破除偏见。唯有如此，才能让“做自己想做的事”不再只是理想，而成为可及、可实现的现实路径。\n\n从个体选择到社会变革，“做自己想做的事”不仅是青年自我实现的路径，更是推动城乡融合与乡村振兴的重要力量。当越来越多的年轻人带着热情、智慧和创造力回到乡土，他们不仅在田间播种作物，更在心中播下了希望的种子——一种对生活本真、对劳动尊严、对人与自然和谐共生的深层信念。\n\n这正是新时代中国社会最动人的风景：青年不再盲目追逐城市光环，而是以清醒的自我认知，在泥土中扎根，在奋斗中开花。做自己想做的事，并努力做好，不仅是一种选择，更是一种文明的进步。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "bb53140bc0ae3c352832522d50d449660f133a83d80df1f53fecd4260f0ddd4b",
+    "selected_material_sha256": "d31ead6183090fbad21abf3ae81458fbd50969913945f09c1651cccb285b09fb",
+    "question_sha256": "cb2a0a82946dd912803adc6bfa84fde43bdd694defcf20da3f7a2042648f7a21",
+    "characters": 1179,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1179,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 730,
+          "prompt_tokens": 5449,
+          "total_tokens": 6179,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "167-3",
+    "answer": "F市“三资”治理工作情况简报\n\n为推进乡村振兴，F市深入开展农村集体“三资”治理工作。通过摸清家底、规范合同、盘活资源，共清收闲置土地10769亩，盘活15167亩，增收2832万元，规范问题合同10344份，清收债权6418笔，金额6840万元。\n\n坚持“一村一账户”管理，实行村级账目镇级代管、报账员制度，所有账户纳入“银农直联”平台监管，实现资金全程留痕、闭环管理，切实防范财务风险。\n\n依托市、镇、村三级农村产权交易平台，推动资源要素市场化配置。太安村通过公开竞价将荒地发展为夜市，年租金达26万元，带动村民增收，提升村集体收入与群众满意度。\n\n治理过程中注重多方参与，通过实地测量、协商议事、公开透明程序，增强群众认同感和信任度，实现资产明晰、资源变现、资金到位、民心稳定、村庄美化。\n\n下一步，将持续完善监管机制，深化交易平台应用，推动“三资”治理向制度化、规范化、长效化方向发展。  \n市农业农村局  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a14ef6f8697cb9b5f0b3ffbc67cf66fd673a9c657d4ef49c01c4da144182cd60",
+    "selected_material_sha256": "5a9edb4f334ae7ba80c27da5dbf7f2f0705c0981200ce28d17b8a6b527e02640",
+    "question_sha256": "e813fdea9bd9a71b0635b4d6aa8c4989d5e8e800fe4d2505aa6c12bb343b78a2",
+    "characters": 402,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 402,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 273,
+          "prompt_tokens": 1883,
+          "total_tokens": 2156,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
