@@ -1,0 +1,182 @@
+[
+  {
+    "id": "016-2",
+    "answer": "T市露天矿改造案例经验做法  \n\nT市坚持系统性生态修复理念，将废弃矿坑改造成生态公园，实现环境治理与民生改善双赢。通过引西林河“死水”变“活水”，治理污水排放，确保湖水水质达标，解决周边8800亩农田灌溉问题。针对土壤板结问题，采用淤泥换土、科学选种，完成9000多亩、50余万株复绿工程。改造废弃厂房建设煤炭遗址博物馆，传承煤城历史文化。建成40公里环湖公路，推动乡村旅游发展，春节期间接待游客超80万人次，带动天河村等乡村实现产业转型。举办首届生态马拉松，丰富群众文化生活。规划建设20平方公里佳人湖科教创新区，吸引四所高校入驻，三年内将集聚4万名大学生，未来形成人口规模达20万的科创小城。该案例体现生态修复与乡村振兴、文化传承、产业发展协同推进，为污染防治攻坚战提供可复制、可推广的经验。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d9b3e3f9e72110b3eff22cc80eb5756d6cfc7a1a5052d01c5b439b2dae74ac68",
+    "selected_material_sha256": "4f2570a166c9c1cc108e8caffee81ae85b13881011023eedf0fb20689986a46d",
+    "question_sha256": "9152b9b03f1b5d36a894fa156d0b1238dbda46c71d1db8a9c7b48e2f89df067e",
+    "characters": 354,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 354,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 227,
+          "prompt_tokens": 1675,
+          "total_tokens": 1902,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "028-1",
+    "answer": "N市推进基层普法工作主要采取以下措施：一是构建网格化服务体系，将10076个基础网格和4487个专属网格纳入普法平台，实现普法力量下沉；二是培育“法治带头人”和“法律明白人”，依托村干部、人民调解员等开展贴近群众的普法活动；三是配发“网格通”终端，收集社情民意，精准研判法律需求，明确不同网格的普法重点与方式；四是组织普法讲座、法律咨询、案例宣讲等形式，通过微信群、法治驿站、反诈手册等载体，以通俗易懂的方式普及法律知识；五是推动政法机关干部、律师、法学会成员下沉网格，提供专业法律服务，提升基层治理法治化水平。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cb27d4a1a38e5f2b2cb47dc3baf7e4261e8c9b72c853d33cd93981f793f4dacb",
+    "selected_material_sha256": "f7b6706ac4f802dcd6c9c8c1f05bd4b3207527305c0fa8ed7b52bc6b80a0af75",
+    "question_sha256": "447dcf60564d9a4bfcdaf2e34d6bb257e24bb82d93fd965a8c1f61fdfea17eea",
+    "characters": 256,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 256,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 159,
+          "prompt_tokens": 1855,
+          "total_tokens": 2014,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "037-4",
+    "answer": "**题目：成长之痛，亦是前行之路**\n\n“成长的烦恼总是在成长中化解的”，这句话深刻揭示了事物发展过程中矛盾与突破的辩证关系。无论是新能源汽车普及带来的充电难题，还是城市基础设施在扩张中的适应性挑战，都表明：问题本身不是终点，而是推动进步的起点。正因如此，面对发展中的阵痛，我们不应回避，而应以理性态度直面矛盾，在持续探索中实现自我超越。\n\n材料中提到，K市新能源汽车数量激增，充电桩建设虽已突破三万座、车桩比接近2:1，但“成长的烦恼”依然存在——如安装流程繁琐、物业阻挠、设备老化、峰谷电价导致车位错配等。这些看似棘手的问题，并非技术或政策的失败，而是发展过程中供需结构失衡与制度配套滞后的真实反映。例如，部分老旧小区因电力负荷不足而无法扩容，反映出基础设施更新的滞后；而充电车位在高峰时段被汽油车占用，则暴露出资源调配机制的缺失。这些问题的存在，恰恰说明社会系统正在经历结构性调整，其背后是技术进步对传统管理模式的冲击。\n\n更进一步看，这些“烦恼”并非无解，而是通过制度优化与协同治理逐步化解。例如，K市明确要求物业指定专人配合充电桩安装，从流程上打通障碍；政府推动建设快充网络，提升充电便利性；同时引入差异化电价机制，引导错峰使用，缓解资源紧张。这表明，问题的解决并非依赖“一蹴而就”的完美设计，而是通过动态调整、多方协同，在实践中不断迭代优化。正如村路从“村村痛”到“村村通”的转变，道路拓宽不仅改善了出行条件，更激发了产业活力与居民信心——成长中的阵痛，最终转化为发展的动能。\n\n此外，问题的化解也离不开技术与管理的双重赋能。充电桩运营中出现的“乱码”“设备老化”“公司倒闭”等问题，根源在于运维体系不健全、监管缺位和用户反馈机制缺失。若仅靠政府补贴，难以实现可持续运行；唯有通过智能化管理平台、实时数据监控、动态维护调度等手段，才能提升系统韧性。类似地，在社区食堂运营中，初期亏损、成本压力大等问题，也因政府补贴与市场化运营结合而逐步缓解。这说明，真正的解决之道是“制度保障”与“市场活力”并重，让发展在可控中前行。\n\n更重要的是，面对成长中的困难，公众的参与和反馈至关重要。出租车司机钟师傅为寻找充电桩下载多个APP，反映出用户对便捷性的强烈需求；新能源车主对“充不了电”的抱怨，则直接暴露了服务盲区。这些真实声音成为政策优化的重要依据，推动政府从“被动响应”转向“主动设计”。只有让群众真正参与发展进程，问题才不会被忽视，治理才能更具温度与实效。\n\n综上所述，“成长的烦恼总是在成长中化解的”，这不仅是对现实困境的客观描述，更是对发展规律的深刻洞察。它提醒我们：任何进步都伴随着阵痛，而真正的智慧在于不惧挑战、持续迭代，在矛盾中寻找路径，在实践中完善机制。唯有如此，才能让技术真正服务于民生，让发展成果惠及每一个普通百姓。成长之路或许曲折，但只要方向明确、行动坚定，烦恼终将化为前行的阶梯。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "6b7483527d7796c2a9f893f6c2635ddd65ed157cf5c298a7e7729cc7f37a82d2",
+    "selected_material_sha256": "16decd71f7d85181ba1cfdd328bc4752a114f5e88e0375e0c7dde62d6c0ace59",
+    "question_sha256": "fc1dfe9515867c8b890a71d401d31f96078e7546a06a6bb8a4257cefa9397f38",
+    "characters": 1188,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1188,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 718,
+          "prompt_tokens": 5357,
+          "total_tokens": 6075,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "047-3",
+    "answer": "“A市速度”不仅是棚户区改造工程高效推进的体现，更是科学治理与民生导向深度融合的结果。其背后是政府坚持“阳光征收、利民便民”的原则，通过政策透明化、流程标准化和群众参与化，提升公信力与执行力。项目通过8轮入户摸底、超前研判关键节点，实现签约与选房高效衔接，创下半月签约2247户的纪录。在建设环节，坚持“创新+投入”，采用新型模型、分户样板制度，严格施工标准，确保质量与进度双达标。同时，积极回应群众诉求，优化户型设计、提高过渡费标准，体现服务温度。这一速度并非简单追求效率，而是以群众满意为根本，在依法依规基础上统筹规划、精准施策，实现工程进度与民生福祉的有机统一。“A市速度”是制度保障、技术革新与群众参与协同发力的成果，彰显了政府为民服务的坚定决心和务实作风。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0c188ea30188f05b39656c04baf063b8a8c8d927e6d3059ff8e327c8432578ce",
+    "selected_material_sha256": "18e72ef659a2ff03bed116f437d61d907a32c44f300563b43ef8613ccdea6017",
+    "question_sha256": "cf9db5dea5a96df0416e7d6d28ab32a1d3ac7b6606d26e007b299dd278279a97",
+    "characters": 333,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 333,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 207,
+          "prompt_tokens": 1773,
+          "total_tokens": 1980,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
