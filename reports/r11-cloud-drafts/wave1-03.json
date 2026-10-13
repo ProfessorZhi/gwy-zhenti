@@ -538,5 +538,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "150-2",
+    "answer": "F省在推动内外贸一体化过程中面临多方面问题：一是政策信息不透明，企业“开会前才知‘三同’政策”，影响决策效率；二是跨省认定标准不一、补贴差异大，增加企业运营成本；三是高投入产品遭遇仿制和低价竞争，回报率低；四是内销涉及部门多，审批繁琐，“分身乏术”；五是市场环境不优，存在恶意刷差评、高仿款等问题，知识产权保护滞后；六是电商平台中间费用高，直播带货运营成本大，企业负担重。\n\n建议：加强政策宣传与提前告知机制，提升信息透明度；统一内外贸产品标准和补贴政策，推动区域协同；建立快速维权和备案机制，强化知识产权保护；简化内销审批流程，明确权责部门；规范平台佣金机制，降低企业运营成本；支持中小企业培育自主品牌和渠道，提升核心竞争力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "70fbe31ab9b8a792329f4cb861b3bd17dad0434887ff9ca614d39f3ca5ca1fc5",
+    "selected_material_sha256": "924519471a4d00e782bb781070ac3c6136deb5da453847f2ee77bb084c8699bb",
+    "question_sha256": "de5a4c7b694cebd72a7fa7b2402b82f391bcea1a8e70010ac724b2c6a8d3c76b",
+    "characters": 312,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 312,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 195,
+          "prompt_tokens": 1847,
+          "total_tokens": 2042,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "168-4",
+    "answer": "**在传承中创新，在融合中振兴——论乡村市集的“新与旧”共生之路**\n\n乡村市集作为农耕文明的活态记忆，承载着村民世代相传的生活方式与情感联结。“一面逐新，一面念旧”，正是L镇乡村市集发展的生动写照。它既保留了传统市集“赶场”的烟火气、人情味和社区归属感，又通过主题策划、业态升级、创意赋能等路径注入现代元素，实现了从单一交易场所向文化生活平台的跃迁。\n\n“念旧”是市集的生命根基。在L镇，清晨四点出发赶集的人们，仍为“图热闹”“买新鲜”而来，这种源自乡土生活的消费习惯，构成了市集最真实的情感基础。摊主们一句“现摘现卖”的朴实话语，不仅传递了商品的品质，更唤醒了人们对田园生活、人与人之间真诚交流的记忆。这种情感联结，是城市化进程中难以复制的“乡愁温度”，也是乡村社会凝聚力的重要来源。\n\n“逐新”则是市集发展的动能所在。L镇并未止步于传统模式，而是主动引入策展人、策划主题市集，打造“农夫市集”“非遗市集”“露营市集”等多元场景，让市集成为文化展示、艺术表达和青年参与的舞台。例如，“收获秋天·晒秋”快闪活动以多巴胺色彩激活视觉体验，“放牧的小孩”主题则融合手作与自然游憩，既满足了城市人群的审美需求，也激发了乡村的文化活力。\n\n新与旧的交融，并非简单的叠加，而是通过制度设计和资源整合实现功能重构。L镇将市集纳入乡土品牌体系，为农户搭建产销平台，支持“新农人”参与运营，形成“政府引导—平台赋能—主体参与”的良性循环。这种机制既保障了传统交易的延续性，又赋予其现代治理逻辑与市场效率，使市集真正成为连接生产、消费与文化的价值枢纽。\n\n更深层看，市集的“新生”折射出乡村发展路径的结构性转变——从资源封闭向开放共享转型，从单一经济功能向多元社会价值拓展。它不仅是商品交换的场所，更是文化认同、情感归属和公共参与的空间。正如L镇将“生态音乐节”与市集结合，把人流转化为消费力，把流量变为发展“留量”，实现了从“被动聚集”到“主动引流”的质变。\n\n乡村发展本质上是一场文化自觉与创新实践的双向奔赴。市集的演变表明，唯有尊重传统、激活记忆，同时勇于突破、拥抱变革，才能在时代浪潮中找到属于自己的节奏。当新创意扎根于乡土土壤，当现代元素服务于真实需求，乡村才真正拥有了可持续发展的内生动力。\n\n因此，乡村振兴不应只是物质层面的“建房修路”，更应是文化层面的“活化传承”。市集作为乡村生活的重要节点，其“新与旧”的共生，为其他传统业态提供了可借鉴的发展范式——在守正中求变，在融合中创新，方能实现乡土社会的自我更新与生生不息。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "19d7ed202f59422f31a275b370ddb1eb806b70ef035ffc3fb611bc53206bfbf9",
+    "selected_material_sha256": "4e6c5ef5c1198609729612acf4a8ef093c745ae179abf95328369bec7072139c",
+    "question_sha256": "cc6e538ad5097417f150314bc698df07833bddb71e8eb8f7c9b4293c81820464",
+    "characters": 1042,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1042,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 684,
+          "prompt_tokens": 5248,
+          "total_tokens": 5932,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "179-2",
+    "answer": "企业发展速度并非越快越好，需把握节奏与质量的平衡。速度能创造机遇、实现突破，如H集团以“迅速反应”在夹缝中崛起；但盲目扩张易导致管理失序、风险积聚，如J集团因忽视细节而利润下滑，F公司因标准化缺失致口碑崩塌。企业若沉迷过往辉煌，错失转型时机，终将被市场淘汰，如M公司与某手机品牌。相反，适时调整速度、注重内功修炼，方能行稳致远。W公司主动降速、提升交付质量，正是以退为进，为长远发展积蓄力量。因此，企业应以战略为引领，根据发展阶段科学调控速度，在快速响应中保持韧性，在稳健前行中实现可持续增长。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "2281fac832b980770532927eb4b712cd1bcd6a08e0f52785db5cc8a45b9b9486",
+    "selected_material_sha256": "d83bf546c53f745d050cfe71163a06743df1a46e4eb6d73e14de1adbfc41bc54",
+    "question_sha256": "718c0aed75e90367794dfe6014be1883e84a5ffe3ae1b40cf9776f990d8c3fad",
+    "characters": 247,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 247,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 164,
+          "prompt_tokens": 1568,
+          "total_tokens": 1732,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
