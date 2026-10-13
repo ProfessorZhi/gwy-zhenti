@@ -358,5 +358,153 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "099-1",
+    "answer": "尊敬的各位领导、同仁：  \n\n大家好！我是Z县成鑫电子负责人。我们县在探索“妈妈岗”就业新模式中，坚持党建引领，立足企业实际，推动形成可复制、可推广的经验。  \n\n针对女性职工“生子后就业难”的现实问题，我们创新设立“妈妈岗”，实行灵活排班、弹性上下班，允许根据孩子作息调整工时，周末和晚间不加班，切实减轻家庭负担。同时，建立“全能型”员工培养机制，通过岗位轮换与技能提升，增强队伍稳定性，保障生产连续性。  \n\n企业配套建设母婴室、托管班，安排专人照护，实现工作与育儿的有机衔接。对请假事项分类管理，既支持合理需求，又规范非必要请假，避免资源浪费。  \n\n目前，“妈妈岗”已成为稳定用工的重要抓手，不仅缓解了“爆单缺人”的困境，更让员工感受到企业温度，激发归属感与责任感。  \n\n我们建议，各地可借鉴此模式，结合本地实际，推动“妈妈岗”认定、补贴、培训等政策落地，打通就业服务“最后一公里”，真正实现“让妈妈安心工作、孩子健康成长”。  \n\n谢谢大家！",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a93921c77efb42db5e9a258ac14e3365c2aac382d410896c2d911c29d4dc448d",
+    "selected_material_sha256": "418d746e323abbb2df4e7a6a784d508a8334a06fbe13ff9c370b8085384a54c5",
+    "question_sha256": "e94ba7cd0c8c41e995e86deb961209c9aa5744d3a2f507b3f5dc59f20f8c0779",
+    "characters": 403,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 403,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 257,
+          "prompt_tokens": 4812,
+          "total_tokens": 5069,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "125-1",
+    "answer": "A市创新公共服务，推动企业服务提质增效。构建“地铁运行图”审批流程可视化管理，实现全流程实时监控；设立“周末不打烊”窗口和专人对接机制，提升服务连续性与响应效率；开通“政企直通车”智慧平台，实现诉求快速响应与政策精准推送；建立“点对点工作组”，配备首席服务官和金融官，强化企业精准服务；开展企业家培训与轮岗学习，提升企业经营管理水平。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ef351e62498a8e27364faa2bec9f275ebe7e2bd481a47ead0470f04de54a65db",
+    "selected_material_sha256": "91859a8d17fa0e831d34a9365a4d999a366adcfe2672ab0de515e028f51b396d",
+    "question_sha256": "090faea15662e0348f8d461e23be41b82618769e8528158d8cc6ffd033d79806",
+    "characters": 167,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 167,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 101,
+          "prompt_tokens": 1506,
+          "total_tokens": 1607,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "136-4",
+    "answer": "**在传承中创新，在融合中振兴——论乡村市集的新生之路**\n\n“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”，这一理念深刻揭示了乡村发展的内在逻辑。L镇乡村市集正是这一路径的生动体现：它既保留了传统“赶场”中人情往来、以物易物的生活本色，又通过主题化、艺术化、体验化的创新形式焕发出新活力。\n\n旧，是市集扎根乡土的情感根基。每逢农历逢八，村民凌晨支摊，交换农产、土货，不只是交易行为，更是一种生活仪式，承载着邻里互助、信息互通的乡土温度。正如小连所言，“图的就是热闹和生活的烟火气”。这种自发形成的集市文化，是乡村社会结构与情感网络的重要维系方式，不可替代。\n\n新，则体现在功能拓展与形式创新上。L镇打破单一交易模式，引入“农夫市集”“非遗市集”“露营市集”等主题，融合手工艺体验、艺术展演、生态环保等元素。小昀团队策划的“晒秋”快闪、“放牧的小孩”主题市集，不仅吸引年轻人参与，更让乡村生活具备审美价值与情感共鸣，实现了从“卖货场”到“文化场”的跃迁。\n\n新旧交融的关键，在于对乡土资源的系统性激活。L镇将市集作为乡土品牌的延伸平台，为1000余农户提供展示空间，推动农产品通过电商、观光采摘等新业态实现价值转化。这种模式既保留了传统集市的社区属性，又赋予其现代商业逻辑与市场竞争力。\n\n更重要的是，创新不是对传统的替代，而是对其深层价值的再发现。市集中的非遗手艺人、老摊主仍坚持“现摘现卖”“凌晨准备”的传统做法，村民也依然在市集中拉家常、品人情。这种“新形式承载旧情感”的结构，让乡村文化在变化中不被割裂。\n\n从经济到社会，市集的新生体现为多重价值的实现：它带动了消费增长，如“柿子红了”主题市集单日车流超2000辆、营收破百万；也促进了就业与创业，吸引“新农人”投身品牌运营与市场推广；更重构了乡村社会关系，使村民从被动观望者变为积极参与的共同体成员。\n\n因此，乡村振兴不能照搬城市模式，也不能固守旧有形态。真正的路径，在于尊重乡土本源，在传承中发现价值，在创新中激活潜能。唯有如此，传统市集才能在时代洪流中焕发新生，成为连接过去与未来、城乡与人心的重要桥梁。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9a6b99c16049555245c757873249b94da6b45ab2da745539128773fdcc4a39ef",
+    "selected_material_sha256": "1ed4b45a9df03e71911d1b65f4aff1eff6699d69191779fd6f16152c9ff3b61b",
+    "question_sha256": "0bdf7d5a5253e556f2234d6448865f7c472bf51ec3530f6e29da37e05eed52da",
+    "characters": 872,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1008,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 650,
+          "prompt_tokens": 5357,
+          "total_tokens": 6007,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 872,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 579,
+          "prompt_tokens": 6127,
+          "total_tokens": 6706,
+          "prompt_tokens_details": {
+            "cached_tokens": 6006
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
