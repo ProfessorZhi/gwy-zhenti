@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "062-2",
+    "answer": "交通是城市与自然互动的生动记录。C城依山环水，地形复杂，其独特的缆车、索道、扶梯、轻轨等交通方式，不仅解决了立体地形带来的出行难题，更在运行中融入了人文情怀与美学设计。这些设施承载着城市发展记忆，如1986年建成的K路电梯，成为城市标志性符号；轻轨穿楼而过、弯道如过山车，既展现技术智慧，也形成独特风景，吸引游客打卡。交通不仅是功能性的工具，更是城市文化与历史的载体。C城的交通系统，以“史书”之笔，书写了人与自然和谐共生、科技与审美交融的发展历程，其内容丰富而精彩，体现了城市在复杂地理条件下实现可持续发展的智慧与温度。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b50f09ceb6cd3537d582f078bc290b6e35f930e680456e9051438fda4c21bf59",
+    "selected_material_sha256": "db5aad5d22ec8416d51401b60f3fe6e43a7adb39c2b5f2377784a7b0e15aa0ca",
+    "question_sha256": "5b5f0fbdc87da7dbd72d4d1edfa465c4c8950e9a58522a191708de61c4e1c6e1",
+    "characters": 261,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 261,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 172,
+          "prompt_tokens": 1589,
+          "total_tokens": 1761,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "075-2",
+    "answer": "当前宽石镇乡村旅游规划中存在的问题主要有：一是规划脱离乡村实际，忽视村民意愿和生活需求，存在“城市化”设计倾向；二是旅游内容同质化严重，缺乏特色农业与文化内涵，核心竞争力不足；三是村民参与度低，收益不明显，对项目缺乏认同感；四是规划前期投入大、专业支持不足，管理与服务配套滞后，安全与宣传机制缺失；五是老宅保护政策不明，手续不清，群众办事难。\n\n改进建议：应坚持“以村为本”原则，深入调研村民需求，尊重其意愿参与决策；强化特色挖掘，结合本地农业、文化资源打造差异化旅游产品；建立镇级统筹规划机制，分类制定特色项目，形成联动效应；引入专业团队参与规划与运营，提升设计科学性与实施可行性；明确老宅修缮政策流程，设立专人指导服务，保障群众知情权与参与权；加强软环境治理和安全宣传，提升游客满意度与可持续发展能力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa49f57dd9d2bb0820debfd7c73ae7f85f62709862f428011c6160d65bd50503",
+    "selected_material_sha256": "45880b69f222d787e22f892ad47835dc3169b9c527111e822ffcdab61e636c2f",
+    "question_sha256": "e231347a41e4ce0489977ddd4e0f5a67c208f5274be417c2f1cb6bd83f197826",
+    "characters": 351,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 351,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 214,
+          "prompt_tokens": 1558,
+          "total_tokens": 1772,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "084-1",
+    "answer": "Y县通过国际交流合作发展竹产业的主要做法：一是邀请国际专家团队考察指导，引进先进理念和技术，如德国专家帮助提升产品标准；二是建设竹产业创新服务中心，联合高校科研院所共建实验室，推动竹材在建材、汽车内饰等领域的精深加工应用；三是开展多国技术交流与培训，吸引海外人才参与，传播传统竹编工艺和现代加工技术；四是依托国际竹藤组织平台，推动竹产品和技术“走出去”，在“一带一路”国家建立加工中心，实现互利互鉴、共同发展的格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "351f89dbe6e42abfa299444e1069c6df47069f9858b38b6b2d4319b12fdf1de4",
+    "selected_material_sha256": "6e1a84f37f0a3e7b10aadaceb4326362670003c8a4c8a941e0e7a5d5ca53f6ee",
+    "question_sha256": "51acd60c936ed4954070114a06d963ce950e4ca4b6d36fc8f0b718e7d3ce7565",
+    "characters": 208,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 208,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 117,
+          "prompt_tokens": 1761,
+          "total_tokens": 1878,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "094-1",
+    "answer": "康安乡新时代文明实践赶大集活动简报\n\n一、精准对接群众需求。通过党员干部“大走访”，梳理“微心愿”，形成“需求清单”，实现服务精准化。  \n二、整合资源协同发力。县文明实践中心统筹成员单位及志愿服务队伍，按需调配资源，推动民生服务直达群众。  \n三、多元参与共建共享。青年志愿者协会、爱心企业、热心群众广泛参与，提供义诊、理发、拍照、非遗体验等便民服务。  \n四、强化宣传引导作用。开展反诈、禁毒、民法典等普法宣传，提升群众法治意识和安全素养。  \n五、创新形式拓展渠道。依托直播平台推广本地特色农产品，助力乡村振兴。  \n六、坚持问题导向服务。干部下沉一线，倾听民声，化解矛盾，推动“急难愁盼”问题有效解决。  \n七、加强舆论传播效果。融媒体中心全程报道，多平台持续推送，扩大活动影响力和覆盖面。  \n\n（328字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8ae8a1533449c5cf68dbb8ca21f3c884280955089d5b8d46c49cab0a302fbadd",
+    "selected_material_sha256": "a87bfb1946313d301e79882aed7a03fc4799b6ca19372ae96c13471720d9d9c1",
+    "question_sha256": "772f91687ae14cbaa4d5ad1b1472d82eb9d32edc646e41ecc5fd10d1a4c43b9a",
+    "characters": 335,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 335,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 214,
+          "prompt_tokens": 1738,
+          "total_tokens": 1952,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
