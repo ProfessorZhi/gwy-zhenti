@@ -564,5 +564,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "157-1",
+    "answer": "C市建筑设计院城市更新服务主要做法包括：坚持“长期合伙人”理念，提供全周期服务；秉持“新旧共生”原则，预留10%-15%可生长空间，实现项目灵活迭代；运用智慧技术，如AR复原、智能楼宇系统，提升功能与节能水平；深入基层，通过入户访谈、参与决策等方式增强群众基础，推动原住民回流与商铺激活；以“微更新、轻干预”原则保护历史风貌，采用碳纤维加固等技术解决实际问题；创新产城融合模式，推动高校资源反哺城市，孵化科创项目，实现文化IP产业化。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4702e05911bc03bd7f4e63ead19e3699763b5094de8b7796adf5bc1ea45dea86",
+    "selected_material_sha256": "f5fa6253487dde5bc76479ff1ccd3ec7e63fdcfa9a33a6dc239b0ec3d5b757f6",
+    "question_sha256": "023b369c40416589cdabf2a5f8b88330b0ea335dcd68778ddec4c056c51727da",
+    "characters": 217,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 217,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 136,
+          "prompt_tokens": 1609,
+          "total_tokens": 1745,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "176-1",
+    "answer": "A县发展林药产业主要做法：依托山地资源，推行“村两委+林场+农户”模式，流转林地2000多亩，发展黄精、灵芝等道地药材；创新推出“林e贷”金融产品，缓解资金难题；引入科技特派员，实现全过程数字化监管与深加工；搭建线上“乡村会客厅”和线下“林药展示馆”，促进产销对接，畅通销售渠道，推动林药产业提质增效。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d7d7b68f5cb9c43f2141642e33d0f600c077877a4e1a1b5a78afd3db5618bb10",
+    "selected_material_sha256": "7e612a2af80eb102a8de97d8f7a411c655587474239c75b490e4424ddfd51f32",
+    "question_sha256": "97cf1a3847029bf3eba0aac352fa432bb92c609c53723d6364e8049aa96ac4dc",
+    "characters": 151,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 151,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 104,
+          "prompt_tokens": 1840,
+          "total_tokens": 1944,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "187-3",
+    "answer": "应加强“以竹代塑”产业全链条协同，推动竹林资源培育、精深加工与市场应用协调发展。针对企业技术瓶颈，设立专项研发基金，支持龙头企业带动中小微企业技术创新，提升产品附加值。建立统一行业标准，引导企业避免同质化竞争，鼓励差异化设计和高端化制造。推动政府主导的采收机械化，如推广无人机采收，降低竹材成本30%以上，缓解生产成本压力。加强政企联动，由政府牵头搭建品牌推广平台，引导大型机构、学校等采购“以竹代塑”产品，形成“大进大出”的市场需求。同时，推动价格机制优化，通过补贴或税收优惠减轻消费者负担，提升产品可及性。最终实现产业提质增效、生态与经济双赢。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d14a980083ed7bfe071d75352b86a52b6cdfec0954a49e5be5d2d3e6eeccc588",
+    "selected_material_sha256": "7431e1b8e0cc72fe02c1f19ed012a37131dbf74728910545db72a76578bd6782",
+    "question_sha256": "5ff7c90fc4b5f774587f61668b4c0f1c7a393270bc07e32eab097558d7cae46b",
+    "characters": 274,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 274,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 169,
+          "prompt_tokens": 1857,
+          "total_tokens": 2026,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
