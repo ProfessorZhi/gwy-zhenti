@@ -230,5 +230,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "062-1",
+    "answer": "Y县古民居保护主要措施包括：成立专门管理机构，实施认领、认租、认购等参与模式；建立涵盖修缮、迁移、流转等的政策体系；设立专项基金，对符合条件的老屋给予50%修缮费用补贴，并实行专家审核与分阶段支付；推动产权流转改革，将集体土地转为国有后公开出让，引导社会资本参与保护利用，实现保护与开发良性循环。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b50f09ceb6cd3537d582f078bc290b6e35f930e680456e9051438fda4c21bf59",
+    "selected_material_sha256": "be9d8784357ca07eabf9b748163d84de80c6f6d96278c71d6ad7252080386278",
+    "question_sha256": "5950a6e7f2241c159172b7cb4fda7bfdf613f8deb1308bc9f8261284c7f1726e",
+    "characters": 148,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 148,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 93,
+          "prompt_tokens": 1630,
+          "total_tokens": 1723,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "075-1",
+    "answer": "G区为确保“社区吹哨”吹得“准”“响”“久”，采取了多项举措：一是健全机制，以街道社区党组织为核心，建立“社区吹哨、党员报到”制度，明确党员到居住地报到，参与网格治理；二是精准匹配，依托“吹哨报到”微信小程序，实现居民点单、社区下单、党员接单的线上闭环，推动需求与能力精准对接；三是强化责任，要求党员每年参加组织生活、开展调研、认领“微心愿”、结对帮扶，确保服务常态化；四是完善考核，将报到情况纳入党员评优和预备党员考察内容，建立激励机制；五是注重实效，杜绝形式主义，通过满意度评价、服务记录等数据备案，确保工作持续深入。这些措施既提升了响应精度，又增强了社区治理的活力与韧性。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa49f57dd9d2bb0820debfd7c73ae7f85f62709862f428011c6160d65bd50503",
+    "selected_material_sha256": "a4a0e67bfa42fbc50988ccf2e3a115cb3566003a8c8dbee905e761c59784c655",
+    "question_sha256": "401f6026f253485cc570763d179cc37d58643b51346f343cc16295649d385cd4",
+    "characters": 289,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 289,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 186,
+          "prompt_tokens": 1783,
+          "total_tokens": 1969,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "083-4",
+    "answer": "**题目：协同共治，方能破局——论城市治理中“合”的深层价值**\n\n“分工的表象在‘分’，但其实质是分背后的‘合’”，这句话深刻揭示了现代城市治理的核心逻辑：表面看各职能部门职责分明，实则唯有打破壁垒、协同联动，才能实现系统性、长效性的治理成效。Z市火车站网约车停车乱象正是这一命题的生动注脚。当交通管理、物业运营、公安执法各自为战，仅靠现场引导和临时巡查，最终只能“头痛医头”，难以根除结构性矛盾。\n\n问题根源在于资源错配与规则缺失。地面停车场车位紧张，而网约车因超时收费被迫违停，形成“有位无用”“有位难进”的困局；私家车与网约车混行，导致通道堵塞、通行效率下降。这一困境并非单一部门可解决，而是暴露了停车资源规划、运营规则制定、执法协同机制等环节的割裂。若仅靠增设指示牌或加强巡逻，无异于“治标不治本”，更无法回应群众对便捷、安全出行的真实期待。\n\n破解之道，在于构建“横向到边、纵向到底”的协同治理体系。Z市可借鉴E市农村“三资”治理中“多方参与、阳光交易”的经验，建立跨部门联合议事机制，由交通、城管、公安、物业等单位共同参与停车资源配置方案制定。例如，明确网约车与私家车的停放分区，合理设置上车点，实现功能清晰、空间有序；同时，动态调整停车收费标准，对短时接客车辆实行优惠，降低司机违规成本，引导其规范入位。\n\n更进一步，应推动治理从“被动响应”向“主动预判”转变。通过大数据平台整合人流、车流、时段数据，提前预测高峰拥堵节点，实现资源调配的科学化与精准化。如在Z市火车站引入智能调度系统，实时监测车位使用率，动态提示司机最优停车点，并对违停行为实施分级预警与联动处置，真正实现“防患于未然”。\n\n协同治理不仅是机制创新，更是治理理念的升级。它要求打破“部门本位”思维，树立“以人民为中心”的服务导向。正如E市通过平台化交易激活农村资源，Z市也应以共享共治理念盘活城市空间，让停车管理从“管车”转向“服务人”，从“堵点”走向“亮点”。\n\n最终，城市治理的现代化，不在于分工越细越好，而在于“合”的深度与广度。唯有在制度设计、技术支撑、责任共担上形成合力，才能将碎片化的管理整合为系统性的效能，真正实现群众出行安全、便捷、有序，让城市成为有温度、有秩序、可持续发展的家园。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "29eea3586450283e7a2729773ebf8cdf4881b0aca9e4cce3cda35dede4b84cb3",
+    "selected_material_sha256": "d9fc385dae24af3899b737d310d1dfa56839def1a3a46991b9c98852c763531d",
+    "question_sha256": "e804d32b5fe5ba41f551f83bbf8b8da7eedcbb0c7b0f345ba85cbab938070d2e",
+    "characters": 925,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 925,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 597,
+          "prompt_tokens": 5279,
+          "total_tokens": 5876,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "093-4",
+    "answer": "**在守望中焕新：传统与现代的共生之道**\n\n“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”，这不仅是对G县文物保护实践的精准概括，更是新时代乡村振兴与文化传承的重要启示。传统并非静止的遗迹，而是流动的文化基因；发展也不应以牺牲历史为代价，而应在尊重根基的基础上实现创造性转化。唯有将“旧”作为精神坐标，“新”作为实践路径，才能真正实现文化自信与社会进步的双向奔赴。\n\nG县D村古桥、古祠的修缮与活化，正是“念旧”与“逐新”相统一的生动写照。这些明代文物虽属低级别，却承载着村落的历史记忆和集体情感。过去因年久失修、产权不明、资金短缺而面临倒塌风险，是典型的“有物无用”。通过系统普查、建立档案、引入专业团队实施抢救性修复，不仅让古建筑重获形态完整，更通过设立村史馆、开展研学活动，使村民在参与中感知历史、认同乡土。这说明，“念旧”不是简单的保护静态遗存，而是激活其文化生命力，使其成为凝聚乡愁、培育乡情的活态载体。\n\n与此同时，G县推动“新”与“旧”的功能融合，让文物真正融入现代生活。古桥边的“瞧瞧桥”研学活动，将历史教育转化为沉浸式体验；古祠空间被赋予文化展示与社区交流功能，成为乡村振兴中的公共客厅。这种“以文促旅、以旅兴村”的路径，既回应了群众对精神生活的需求，也激活了低级别文物的经济潜力。当游客驻足拍照、孩童聆听故事时，传统便不再是博物馆里的展品，而是日常生活中可触可感的存在。\n\n更深层看，“新”与“旧”的交融，本质上是发展理念的革新。过去许多地方在城镇化进程中“拆旧建新”，将历史建筑视作阻碍发展的障碍，结果导致文化断裂、乡愁流失。而G县通过建立文物信息监管平台、实行建设审批“一票否决”制度，实现了发展与保护的动态平衡。这表明，真正的现代化不是对传统的否定，而是以科学规划和制度设计，确保在城市更新、乡村建设中不伤及历史肌理。\n\n这种融合逻辑也适用于更广泛的领域。A县依托山地资源发展林药产业，既传承“林下种植”的传统智慧，又引入科技特派员、数字化设备与金融支持（如“林e贷”），推动药材从“土特产”走向“高附加值产品”，实现了文化记忆与现代经营的结合。K县大蒜产业通过机械化、深加工、价格保险等创新举措，将传统农事提升为现代产业链，同样体现了“在守中求变”的深层逻辑。\n\n因此，“一面逐新，一面念旧”，不是简单的并列或交替，而是一种动态平衡的系统思维。它要求我们在推进经济社会发展时，始终以文化自觉为底色，既不盲目追求速度与规模，也不陷入对传统的固守与怀旧。真正的创新，是把传统智慧转化为现代治理的资源，把历史记忆转化为发展的动能。\n\n乡村振兴的根基，在于人与土地、人与历史的情感联结。唯有在尊重传统的基础上不断创新，才能让乡村既有“根”又不失“魂”。未来的发展之路，不应是“推倒重来”，而应是“修旧如新”，在时间的长河中，让古老与现代彼此照亮、相互成就，真正实现文化传承与社会进步的双向奔赴。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "2f6ca3cc311515eb45ec83b72ee6c0930e37f2b3815ef65df7fb70dec475c223",
+    "selected_material_sha256": "c4174168b29e35f723717aa8cf4a55d269abfe0929748b0f09887879bacd5015",
+    "question_sha256": "f8e01fc576bd89d443d5c7547dcf1b6a65ebf6aaaffec71639b46dbd0dcd5154",
+    "characters": 1196,
+    "word_limits": [
+      1000,
+      1300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1214,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 781,
+          "prompt_tokens": 5137,
+          "total_tokens": 5918,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1196,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 767,
+          "prompt_tokens": 6026,
+          "total_tokens": 6793,
+          "prompt_tokens_details": {
+            "cached_tokens": 5917
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
