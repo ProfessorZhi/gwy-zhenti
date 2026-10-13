@@ -1,0 +1,208 @@
+[
+  {
+    "id": "017-4",
+    "answer": "**逆行者的选择：在平凡中书写不凡**\n\n“逆行”并非仅存在于疫情前线，它更是一种对责任、信念与价值的主动奔赴。材料中三位“逆行者”——医护人员刘晓鸽、青年农学人才东明、援藏律师小童，虽身处不同领域，却都以个体之勇，在时代洪流中选择了逆风而行。他们的选择看似平凡，实则蕴含着对社会需求的深刻洞察与对自我价值的重新定义。\n\n刘晓鸽在武汉抗疫期间逆行出征，不仅救死扶伤，更将这份担当延续至偏远山区，开展义务巡诊、普及急救知识。她所践行的，是一种从“被看见”到“主动作为”的转变。疫情之后，她并未沉溺于光环，而是选择回归基层，用行动证明：真正的成长，不在于外界的掌声，而在于面对困境时是否仍能挺身而出。\n\n东明放弃城市白领生活，投身农业创业，面对亲人的质疑与现实的挫折，他始终坚守“农村需要年轻人”的信念。现代农业已非传统耕作，而是技术驱动、产业融合的新形态。他的成功，正源于对土地的重新理解——种地不再是“落后”的代名词，而是一种可持续、有温度的乡村振兴实践。这折射出当代青年应有的担当：敢于在被忽视的领域扎根，用专业与坚持打破偏见。\n\n小童奔赴高原做援藏律师，面对缺氧、孤独与生活不便，她仍坚守岗位，为弱势群体维权，甚至垫付医药费、追回赔偿。她的选择，体现了一种“以己之能，解民之困”的社会责任感。在资源匮乏的边远地区，法律服务往往缺席，而她的出现，不仅是职业的延伸，更是对公平正义的守护。\n\n这三则事例共同揭示：所谓“逆行”，不是盲目冒险，而是基于清醒认知的主动选择。他们并非脱离现实，而是精准把握了社会最真实的需求——医疗资源下沉、乡村人才短缺、边疆法治薄弱。他们的行动，是对“人与社会关系”的重新思考：个体的价值，不在于是否被看见，而在于是否在关键时刻挺身而出。\n\n更进一步看，“逆行”精神的兴起，正是时代对青年责任意识的呼唤。在物质丰盈却精神焦虑的当下，人们更需要一种“不计得失、甘于奉献”的价值取向。这种精神，不应被浪漫化，而应成为社会激励与教育的重要内容——从学校到社区，应引导青年理解“平凡中的伟大”，在选择中学会担当。\n\n当更多青年以刘晓鸽、东明、小童为榜样，以“逆行”之姿投身基层、服务社会，我们的社会才真正走向有温度、有力量的未来。真正的成长，不是追逐风口，而是敢于在无人处坚守；真正的价值，不在于名利双收，而在于是否在关键时刻选择了责任。这种选择，既是对个人理想的践行，也是对时代需求的回应。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ce41b80a10a45a6fd04bec6e217c26eb73cf7432c4b79406315d426e2153bc6f",
+    "selected_material_sha256": "84669f040d0193fa0504321658f6bf586d3289b87c8b8a296fcaf207d8f7dbae",
+    "question_sha256": "b2ef0e62ea02383a87f795bb7974edb8b7787c4a607e18a09c7267fca6e63ce2",
+    "characters": 988,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 973,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 634,
+          "prompt_tokens": 4990,
+          "total_tokens": 5624,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 988,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 642,
+          "prompt_tokens": 5730,
+          "total_tokens": 6372,
+          "prompt_tokens_details": {
+            "cached_tokens": 5623
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "029-3",
+    "answer": "照亮每一个角落——推进全龄友好型城市建设\n\n全龄友好型城市建设，是“人民城市”理念的生动实践。C市以全生命周期服务为轴心，精准回应不同年龄群体的现实需求，走出了一条可复制、可持续的民生路径。针对老年人，通过养老服务综合体、智能报警设备等举措，实现居家养老的安心与便利；针对婴幼儿，建设社区智慧托育中心，破解“入托难、入托贵”难题，构建“15分钟服务圈”；针对青年群体，强化创业支持与就业保障，激发创新活力；针对困难群众，打造“幸福码”救助平台，实现帮扶精准化、人性化，真正让特殊群体共享发展成果。  \n\n这些举措并非孤立分散，而是以系统思维统筹规划，形成覆盖全龄段的公共服务网络。从“一老一小”到青年创业、低收入群体帮扶，C市将民生小事纳入城市治理大局，体现的是以人民为中心的发展思想。全龄友好不是口号，而是通过制度设计、资源整合与精准施策落地的现实行动。唯有把每一件小事做实、做好，才能让阳光真正照亮城市的每一个角落，推动高质量发展行稳致远。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b1ff2fb5df40166660110d9a84181cda64e589fc6501cb8f450e641a67efd164",
+    "selected_material_sha256": "c227d18b891dbf9eecb18c02104209c71fe5557b6bf71ef223c722c9803612eb",
+    "question_sha256": "e43eaa52abea83d41690063cbc0e63c185f26ae4f54a62150a05cd8392ce7bab",
+    "characters": 425,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 425,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 261,
+          "prompt_tokens": 1783,
+          "total_tokens": 2044,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "039-3",
+    "answer": "**关于“货车司机之家”建设工作情况的汇报提纲**\n\n一、建设背景与必要性  \nQ县地处重要交通枢纽，经济开发区物流企业密集，日均往来货车司机数百人，长期存在司机途中饮食无保障、休息条件差、应急服务缺失等问题。“吃住都在车上”的现状严重影响运输安全与从业幸福感。为切实解决货车司机“吃饭难、休息难、停车难、应急难”等痛点，2022年开发区党工委成立专项工作专班，深入调研实际需求，科学规划布局，推动“货车司机之家”建设。\n\n二、主要建设内容与功能设置  \n1. **选址与规模**：在物流产业集聚区选址建设，总面积约3000平方米，设50辆货车停放能力，涵盖停车、休息、服务、应急四大功能区域。  \n2. **四大服务平台**：  \n   - 安心停泊点：配备24小时视频监控和保安值守，保障车辆安全停放；  \n   - 舒心休闲湾：提供免费休息室、空调、自助厨房、洗浴房等设施，满足司机基本生活需求；  \n   - 爱心服务岗：设置爱心伞、手机充电、安全宣传栏及意见征集箱，提升服务温度；  \n   - 暖心救助站：配备应急机油、维修工具箱、医药急救箱，并预留医院值班电话，实现“突发问题即刻响应”。\n\n三、运行管理与制度保障  \n1. **公开透明机制**：明确各类经营性服务项目内容、标准和价格，接受司机监督，定期开展设施检查，确保功能完好、运行正常。  \n2. **党建引领机制**：设立临时党支部和党员先锋岗，每日至少安排3名党员在岗，提供政策咨询、安全教育、应急处置、诉求反馈等志愿服务，形成“有温度、有响应”的服务网络。\n\n四、实际成效与社会反响  \n1. 2022年国庆期间，270余名司机因突发问题获得及时帮助，其中王师傅爆胎后获党员志愿者协助维修并赠送锦旗，充分体现了服务的实效性与人文关怀。  \n2. “真食客”餐饮企业入驻提供“卡友霸王餐”（两大一小仅20元），饭菜分量足、价格实惠，得益于园区减免租金和水电费用支持，有效满足司机饮食需求。  \n3. “货车司机之家”已成为Q县营商环境的重要窗口，吸引大量司机主动前来休整，提升区域交通服务形象与吸引力。\n\n五、下一步工作建议  \n继续优化服务功能，探索引入更多社会化优质资源；完善司机诉求闭环管理机制，推动服务标准化、常态化；深化党建与民生服务融合，打造可复制、可推广的货运司机服务样板。  \n\n（全文共计748字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "56893a144d56f81ab3e157c5e4190f1cf58f1a01321d5611007dc8992ad49b20",
+    "selected_material_sha256": "8fa4215c62e7c787560410ef4998868ce7b3b034b8473669e7e764c8274bb57a",
+    "question_sha256": "66709d97b0454d83de1b479578286a59ed135659ae80c6ff191c16434a7a60e2",
+    "characters": 900,
+    "word_limits": [
+      600,
+      900
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 900,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 596,
+          "prompt_tokens": 1674,
+          "total_tokens": 2270,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "049-4",
+    "answer": "**因为热爱，所以燃烧：在坚守中照亮乡村与文化之光**\n\n“因为热爱，所以燃烧”，这句朴素而深刻的话语，揭示了个体投身基层、扎根乡土最本质的驱动力。它不是功利计算的结果，而是源于对土地、人民与传统的深切体悟。徐利民为让“上山文化”走出县域，查阅文献数十万字，走访民间艺人，亲自撰写解说词、配音，甚至在病重之际仍叮嘱修改宣传片字幕——这份执着，正是源于他对文化传承的热爱与信仰。\n\n这种热爱，是推动乡村发展的精神火种。在产业振兴中，赵慧带领果农将“丑苹果”打造成“山之芯”品牌，通过电商直播、精美包装赋予产品情感价值；刘文博推动抹茶从炒叶泡水走向冰激凌、文创产品，实现从“卖原叶”到“卖生活方式”的跃迁。他们不是简单地生产商品，而是以热爱为内核，挖掘地域特色与人文情感，让“土特产”真正成为文化符号和生活体验。\n\n更深刻的是，这种热爱贯穿于基层治理的细微之处。西村党支部书记李伟民放弃机关稳定工作返乡，面对破旧村貌、年轻人外流，他挨家走访，记录问题，推动“三改一提”，铺路通水，建起文化广场。在修建排水渠时，他十几次上门沟通，耐心解释利弊，最终赢得村民理解与支持。他的行动不是完成任务，而是源于对村民生活困境的共情与责任。\n\n热爱之所以能持续燃烧，是因为它具备穿透现实矛盾的韧性。湖西片区更新中，居民对补偿、安置、施工扰民等存在顾虑，但政府通过入户调研、公开协商、透明决策，回应关切，最终形成共建共治局面。这说明，发展必须以民心为本，唯有真正尊重群众情感与实际利益，才能在矛盾中凝聚共识。\n\n从个体到群体，从文化到产业，热爱成为乡村可持续发展的深层动力。徐利民用生命点燃“上山文化”，赵慧、刘文博将乡土资源转化为品牌价值，李伟民以实干赢得民心——这些案例共同表明：真正的振兴，不靠口号，而源于对土地的深情、对人民的担当与对传统的敬畏。\n\n因此，“因为热爱，所以燃烧”不仅是情感表达，更是行动逻辑。它要求我们在乡村振兴中摒弃功利思维，回归初心。无论是文化挖掘、产业创新，还是基层治理，都需要以热爱为起点，以责任为底色，在平凡中坚守，在坚持中创造价值。\n\n唯有当每一个基层工作者都能以真心投入、以热忱耕耘，才能让乡村真正活起来、动起来、强起来。正如徐利民临终前仍惦记宣传片的可读性，这种对“懂百姓”的执着，正是热爱最真实的写照——它不求名利，只愿让土地与人民的故事被看见、被理解、被传扬。\n\n因为热爱，所以燃烧；因为坚守，所以生长。这片土地上，每一个默默耕耘的身影，都在用自己的生命，书写属于中国的深情与希望。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "380fe9db0c44a0a157d3c21aded0086129b922d900c00e0d0a6a60d433ecef61",
+    "selected_material_sha256": "1cb57182ac62d0e1a0b9928192a0c9636959c37917f2f8912339a85dd2b870cd",
+    "question_sha256": "2c722225f27dde6a71c869a675c224e8a4e290b2c5240596d74e1428f417804c",
+    "characters": 1032,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1221,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 785,
+          "prompt_tokens": 4310,
+          "total_tokens": 5095,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1032,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 672,
+          "prompt_tokens": 5217,
+          "total_tokens": 5889,
+          "prompt_tokens_details": {
+            "cached_tokens": 4346
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
