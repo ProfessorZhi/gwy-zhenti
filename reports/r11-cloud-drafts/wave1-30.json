@@ -577,5 +577,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "158-2",
+    "answer": "艺术源于生活，是美育扎根乡村的根本逻辑。材料中宏升村从稻田、石板路到水渠柳林皆成创作素材，说明艺术应立足乡土真实场景。村民最初对“稻草人”“聊天亭”不认可，正因作品脱离实用需求，未反映其生活体验。而当艺术家将老式农具、编织技艺融入创作，村民参与“作画”“编歌”“设计产品”，艺术才真正成为生活的一部分。这体现了艺术必须回应群众需求，才能被接受。只有让村民在创作中产生共情与认同，艺术才实现从“外来审美”到“本土表达”的转化。因此，艺术要扎根于生活实践，在真实场景中激发参与感、归属感和创造力，方能真正服务于乡村振兴的文化建设。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "bb53140bc0ae3c352832522d50d449660f133a83d80df1f53fecd4260f0ddd4b",
+    "selected_material_sha256": "4c11d241458f9d1d9a8d6c03c74b60df68e10590f8b6fe08e3b1e93b1e3c2fa9",
+    "question_sha256": "53d44739dfba90f0fc7e3d7fd4b1c3cc1e395128df7cf3c5f7b04f14b810f229",
+    "characters": 263,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 263,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 174,
+          "prompt_tokens": 1898,
+          "total_tokens": 2072,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "167-1",
+    "answer": "向南河实现“分段治”向“全域治”、“分片治”向“整体治”的转变，主要通过系统治理和协同机制建设：一是建立跨省共保联治体系，两省协同立法、统一标准，推动政策同步；二是签订跨界河湖共保联治备忘录，开展常态化联合执法，提升监管效率；三是设立两省联合河长办公室，实现信息共享、“一张图”管理，统筹编制并落实年度方案；四是探索跨区域污水治理合作，如江口镇生活污水接入通惠镇污水处理厂，破解局部污染问题；五是建立横向生态补偿机制，促进上下游绿色共赢。这些举措打破行政壁垒，推动治理从分段、分片走向全域联动、整体协同，真正实现共治共享、融合发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a14ef6f8697cb9b5f0b3ffbc67cf66fd673a9c657d4ef49c01c4da144182cd60",
+    "selected_material_sha256": "f87e09e62d0eb0ff48ca56699d5cb1bd1bf42c2e929242355a9d24eec4a9a12e",
+    "question_sha256": "d015fe5245da2dfc2d15be5ee2882809de6866393b0fd3a20780221d379e4bf3",
+    "characters": 266,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 266,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 173,
+          "prompt_tokens": 1902,
+          "total_tokens": 2075,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "177-2",
+    "answer": "P县保护古树名木采取多项措施：一是开展普查建档，建立“个体档案”，赋予“身份证号”，实现信息可追溯；二是加强日常管护，配备349名专职护林员，实行巡护、监测、防灾和宣传劝导常态化；三是推进科技保护，对重点古树植入芯片实现24小时动态监控，利用无人机开展3D建模与生态巡查；四是实施“一树一策”精准养护，通过环境治理、疏伐改造、打孔注药等方式防治病虫害，注重“治未病”；五是挖掘文化价值，建设主题公园、设置保护牌、推出游览路线，组织宣教活动，提升公众参与度和保护意识；六是编撰《P县古树名木》书籍，系统展示古树生态与人文价值，推动全社会共同参与。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1b165403eaac8fa7e82268d41b77a2d2a4a06451fce8e06032766c0ca6b82591",
+    "selected_material_sha256": "a2ca974de11f91670f3b9b7d65d55c3189596306ca5c142aab4c701203d1b1ed",
+    "question_sha256": "b07edf18c8211a2081a67d0a975ca025622388a9fb3211ac97862251afb90e9c",
+    "characters": 272,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 272,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 186,
+          "prompt_tokens": 2038,
+          "total_tokens": 2224,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "188-4",
+    "answer": "**题目：专业执法，守护民心安宁**\n\n“我们越专业，群众就越安心”，这不仅是一句朴素的总结，更是基层治理现代化的核心逻辑。在社会治理日益精细化的今天，群众对公共服务的期待已从“有没有”转向“好不好”。而执法作为维护社会秩序、保障公平正义的重要手段，其专业性直接决定了群众的安全感和信任度。Y县香兰镇通过整合多部门力量，推行“一支队伍管执法”，实现了从“碎片化”到“一体化”的转变，正是这一理念的生动实践。\n\n专业执法的本质，是用科学规范的程序、扎实过硬的能力去回应群众关切。例如，香兰镇综合执法队不仅检查门店内部的食品卫生、证照合规，还延伸至门前环境、广告宣传等外部问题，做到“一次进门、查多项事”，既提高了执法效率，又避免了重复检查带来的扰民。这种“全科执法”打破了部门壁垒，真正做到了“看得见管不着”的问题不再存在，让群众感受到执法的全面性和温度。\n\n专业执法还体现在对执法标准的统一和对风险的前置防控上。Y县建立统一培训、统一考核、信息互通和案件会商机制，确保执法队伍具备专业素养和协同能力。这种制度化建设避免了“人情执法”“随意执法”，让群众在面对执法时不再感到恐惧或不公，而是看到一个有章可循、有据可依的治理体系。\n\n更进一步，专业执法并非仅靠制度约束，更需要与群众需求深度融合。香兰镇执法中注重“门前三包”“垃圾分类”等民生关切，正是将执法工作嵌入居民日常生活，从“管事”走向“服务”。这种贴近实际、回应诉求的执法方式，让群众在被管理的同时，也感受到政府的用心和温度。\n\n同时，专业执法也必须面对现实挑战。如材料中提到的，便民驿栈虽便利，但存在食品保鲜与安全管理问题；执法队伍在证照办理上仍面临标准不一的困境。这说明，专业性不仅需要制度保障，更需要持续的探索与优化，尤其在标准缺失、监管空白的领域，必须通过试点、反馈和迭代来逐步完善。\n\n因此，“我们越专业，群众就越安心”，不是一句口号，而是一种可感知、可验证的治理成果。它要求执法者具备专业知识、掌握科学方法、回应现实问题，并以透明、规范、温情的方式与群众互动。唯有如此，才能真正构建起群众信赖、社会和谐、治理有序的基层生态。\n\n专业执法，是现代政府治理能力的体现，更是民心所向的必然选择。在推进国家治理体系和治理能力现代化的征程中，我们应始终坚持以人民为中心，让专业成为执法的底色，让安心成为群众生活的常态。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "2d26fc742ab2cd0e41a616ef1f9adba626521fdd2e93cffeb914aa81905f49d2",
+    "selected_material_sha256": "228d1487d7fab45698da7b8e9d5a57a1b54b41c32f7e50096ae2ddad82ae317c",
+    "question_sha256": "30ef17f42d0f4e7f155806ace11be786ab0ca0b69be702bfe06e6d39bca89164",
+    "characters": 970,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 970,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 598,
+          "prompt_tokens": 4687,
+          "total_tokens": 5285,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
