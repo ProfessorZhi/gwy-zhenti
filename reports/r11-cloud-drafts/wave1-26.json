@@ -538,5 +538,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "157-2",
+    "answer": "A市公交集团深陷“迷雾”的原因在于：长期依赖财政补贴，服务创新乏力；面对地铁、私家车、电动自行车等竞争，运力不足、准点率低，客流量持续下滑；传统模式下公益性与市场化失衡，导致运营被动。  \n其“自救”路径包括：推进“夜归人巴士”和“红领巾”微公交，满足夜间及特定场景需求；依托数字技术实现精准调度，提升运力效率；发展“公交+物流”“公交+文旅”等新业态，拓展服务边界与收入来源；优化线路布局，提升运营灵活性与响应能力。通过精准化、差异化、多元化服务，实现从“主角”到“配角”的角色转变，增强可持续发展能力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4702e05911bc03bd7f4e63ead19e3699763b5094de8b7796adf5bc1ea45dea86",
+    "selected_material_sha256": "ac41af4a55211319d183ed6a2794be4af2f096bdea3949aa01542537a57614fa",
+    "question_sha256": "9a431b1aafe1b9953ecb895bce36ad4f0f0b04f8d91ce0d73ed043f8900e2353",
+    "characters": 250,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 250,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 164,
+          "prompt_tokens": 1996,
+          "total_tokens": 2160,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "166-1",
+    "answer": "黛湖社区吸引数字游民“游”来、“留”下，源于其独特的环境与服务优势。一是自然环境优美，绿树成荫、河水潺潺，契合数字游民追求宁静、专注的工作生活需求；二是人文氛围开放包容，社区提供共享办公、活动空间和资源对接平台，促进成员间交流与合作，形成归属感；三是政务服务高效便捷，“一件事一次办”机制实现审批流程优化，降低创业门槛；四是推动乡村资源活化，村集体参与投资、租金收益提升，激发村民参与热情，实现人与村的双向互动。此外，数字游民通过直播推广、设计服务等方式反哺乡村发展，形成良性循环，真正实现了“人在景中，心在乡间”的理想栖息状态。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c2fa7c92068b837c2a3f70b87a3e3a5907df0c362f3cf495b5b6b142f7fd8a0b",
+    "selected_material_sha256": "6b81bfde487197117ebba6b6ac993d41c17c894fcf6dec94dcc1fcc3eee0892b",
+    "question_sha256": "860e9f78577835774e9f8c8748234692aa19464d8161e7a5385c09d6bd5a2d80",
+    "characters": 265,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 265,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 166,
+          "prompt_tokens": 1861,
+          "total_tokens": 2027,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "176-2",
+    "answer": "K县大蒜产业发展曾面临种植劳动强度大、土壤退化、价格波动剧烈、销售不畅等问题。通过引进机械化设备降低劳动强度，开展太空育种提升品质；建立工程技术中心推动科技研发；建设批发市场和线上平台实现价格透明化与信息对称；实施目标价格保险和行情发布机制化解市场风险；依托电商培训培育“领头羊”，拓展销售渠道；发展黑蒜、大蒜素等深加工产品，延伸产业链，构建集种植、加工、销售于一体的全产业链格局，实现产业高质量发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d7d7b68f5cb9c43f2141642e33d0f600c077877a4e1a1b5a78afd3db5618bb10",
+    "selected_material_sha256": "324c9c02c96161450b6b9aef49e73c09211821866d8ef5b1c9b9c6fbe8ace022",
+    "question_sha256": "1f2fe216f6d4c857cfc54f0af8d4a4ebc141223d3f18e1d576e48f7d3d9d7a80",
+    "characters": 201,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 201,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 114,
+          "prompt_tokens": 1710,
+          "total_tokens": 1824,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
