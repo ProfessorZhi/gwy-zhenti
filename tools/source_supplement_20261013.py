@@ -102,7 +102,7 @@ def main():
         newpaper=b.parse(new,rel)
         have=sorted(n for n in newpaper['questions'] if assess(newpaper['questions'][n],newpaper['answers'].get(n,''))['status']=='已收录')
         missing=sorted(set(newpaper['questions'])-set(have))
-        new=g.set_fields(new,{'已收录参考答案题号':have,'缺参考答案题号':missing,'来源补录凭据':'reports/'+RECEIPT})
+        new=g.set_fields(new,{'已收录参考答案题号':have,'缺参考答案题号':missing,'来源补录凭据':'reports/'+RECEIPT},'2026-10-13来源补录：仅新增现成来源参考作答，原题及旧答案保留')
         new=insert_guide(new,b.parse(new,rel))
         newpaper=b.parse(new,rel)
         if oldpaper['questions']!=newpaper['questions'] or exam_body(old)!=exam_body(new):raise ValueError('Exam body changed: '+rel)
