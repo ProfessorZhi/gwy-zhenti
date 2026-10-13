@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "055-3",
+    "answer": "“15分钟文化服务圈”建设情况提纲\n\n一、总体目标与规划  \n围绕打造新时代文化高地，市委、市政府提出建设“15分钟文化服务圈”，明确服务阵地布局原则、建设标准和验收程序，实现文化服务全覆盖、均等化。\n\n二、科学选址与精准布局  \n结合居民分布、文化地标和旅游线路，运用无人机扫描与数据分析技术，科学测算、优化选址，确保服务半径覆盖15分钟步行范围。\n\n三、盘活资源，突出地方特色  \n整合改造冷清的非遗体验基地48个，融入本地文化基因，形成文化聚集效应，实现文化传承与产业联动双赢。\n\n四、智慧服务，提升可及性  \n开发“15分钟文化服务圈”小程序，集成设施定位、展览信息、活动报名、场馆预约、阅读传递等功能，方便群众便捷查询与参与。\n\n五、城乡统筹，满足多元需求  \n推动城乡同步建设，通过“文化点单”机制响应居民兴趣，开设公益课堂、文体活动等个性化服务，切实解决偏远地区文化服务缺失问题。\n\n六、成效与意义  \n有效提升群众获得感、幸福感，促进社会文明进步，实现物质富足与精神富有良性互动，助力城市高质量发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b7cc221e67346a9169d3ff50a2cac1dbb5ed957df40d0391498cc131867fccf0",
+    "selected_material_sha256": "9d3adb9f9687f38f6c3dea095eb5f9f5a2ab7d684a2b1b2ef3a16616352c6de7",
+    "question_sha256": "24cacb598e9f01a6affd98df117de9064e16ee17a878b469497e388f2624e7ca",
+    "characters": 428,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 428,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 264,
+          "prompt_tokens": 1895,
+          "total_tokens": 2159,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "068-3",
+    "answer": "**时代与使命：在传承中定义青年责任**\n\n历史并非断裂的片段，而是一条绵延不绝的长河，每一代人都在前人的基础上前行，肩负着属于自己的时代使命。材料六中提到“历史是一个连续的过程，每一代都有自己的历史责任，要继续发展”，这不仅是对青年群体的深刻洞察，更是对社会发展规律的准确把握。90后成长于中国快速富裕、信息爆炸的时代，他们拥有更丰富的视野与更强的独立意识，但这种“自我张扬”并非脱离现实的叛逆，而是对个体价值与社会规则重新理解的必然体现。\n\n时代赋予青年不同的任务，也要求他们以清醒的自觉回应时代之问。正如材料中所言，90后在职业选择上表现出强烈的自主性——小肖拒绝平庸工作、小文因领导无理要求而辞职、晓晓为追寻理想远赴外省，这些行为看似“叛逆”，实则是对现实不公的反抗与对自我价值的坚守。他们不是逃避责任，而是以更清醒的方式承担起属于自己的使命：在复杂现实中寻找真正契合自身发展的道路。这正体现了新时代青年在“个体自由”与“社会责任”之间寻求平衡的能力。\n\n同时，青年的自我意识发展，并非意味着集体精神的弱化。材料指出，90后在志愿服务、公共参与中表现积极，爱国情感反而比70后更强烈，说明其国家认同建立在理性认知之上，而非盲从。这表明，真正的使命担当，既包含个体觉醒，也蕴含对共同体的深切关怀。当青年能够以独立之姿思考问题，又以行动践行责任，他们才真正完成了从“被塑造”到“主动建构”的历史跃迁。\n\n更重要的是，时代使命并非仅由青年个人承担，更需要社会环境的协同支持。材料中提到，90后对现实功利化的倾向，实则源于成人社会设定的发展路径与高压环境，而非其本性。这提示我们：青年的责任意识，必须建立在公平、包容的成长土壤之上。唯有当社会尊重个体选择、提供多元发展通道时，青年才能真正以自信和理性承担时代赋予的使命。\n\n因此，时代的责任，不应被简化为“一代不如一代”的焦虑或标签化批判，而应被理解为一种动态的传承与演进。每一代人都在前人成就的基础上，面对新的挑战、提出新的答案。90后所展现的独立、理性、追求意义的精神，正是对历史连续性的生动诠释。他们不是历史的旁观者，而是主动参与其中的建设者。\n\n面向未来，青年更应以清醒的历史自觉，将个体奋斗融入国家发展大局之中。在科技变革、社会转型的浪潮中，唯有坚持“自我”与“责任”的统一，才能真正实现从“自我表达”到“使命担当”的升华。时代在变，使命不变——每一代人都要回答：我们如何在自己的时代里，书写属于我们的历史篇章？答案，正在青年的每一次选择、每一次坚守中悄然生长。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1f933e17bbb2a9a29d7b535f9246b2a6f98e4d264d63d39aa9c450d85379be72",
+    "selected_material_sha256": "a2b3095e1029a0e39f5d90c44326d7c418ebd9e908cb6316fcc1dca8dda67568",
+    "question_sha256": "05e36048b907cde0e1eba11cdfcf4521259975b12f8f74ed0308f323da3dda1e",
+    "characters": 1045,
+    "word_limits": [
+      800,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1045,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 652,
+          "prompt_tokens": 5384,
+          "total_tokens": 6036,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "078-4",
+    "answer": "**创新是破局之刃，更是风险中的清醒选择**\n\n“创新是有风险的，但它又是规避风险的最好方式”，这一论断深刻揭示了发展逻辑的本质转变——真正的安全并非固守现状，而在于以变革应对不确定性。在B市产业转型的实践中，这种辩证关系体现得尤为鲜明：传统产业的“关停并转”看似是风险，实则是对环境、资源与市场压力的主动回应；而新兴产业的布局，则是在不确定性中开辟出可持续的发展路径。\n\n以果醋产业为例，传统酿造技艺历经数代传承，却面临产能不足、效率低下之困。面对市场变化，企业选择将“手艺”转化为数据参数，借助智能化设备实现精准复制与规模化生产。这一过程虽涉及技术重构与模式转型，但正因创新打破了传统路径的僵化，才使产能跃升至年5000吨，实现了从“守旧”到“高效”的跨越。这说明，创新不是盲目冒险，而是对风险源的系统识别与科学应对。\n\n同样，在汽车制造领域，企业通过轻量化材料和新能源技术突破，不仅提升了燃油效率，更开辟了绿色出行的新赛道。新能源车型销量同比激增152.3%，正是在传统路径趋于饱和、外部环境持续变化之际，创新成为企业规避市场萎缩、技术落后等风险的核心手段。它不回避挑战，而是以前瞻布局化解危机。\n\n更为深远的是，B市柿子产业的全产业链升级，从种植到仓储、配送全程数字化，实现了“品质可控、成本可降、供应可溯”。这不仅是技术进步，更是对供需失衡与市场波动风险的有效管理。通过科技赋能农业，将自然禀赋转化为稳定收益，真正做到了以创新替代被动应对。\n\n创新之所以是“规避风险的最好方式”，在于它从根本上改变了风险的性质——从不可控的外部冲击，转变为可预测、可管理的系统性变量。当企业或地区不再依赖单一产业或资源，而是构建起动态响应机制时，风险便不再是灾难，而成为优化升级的动力。\n\n当然，创新并非没有代价，其过程中的试错、投入与不确定性仍需承担。但正如B市在转型中所展现的：每一次“破茧”，都是对旧有路径的告别，也是对未来格局的重新定义。唯有敢于在风险中前行，才能在时代浪潮中立于不败之地。\n\n因此，面对复杂多变的发展环境，我们应以更开放、更理性的态度看待创新——它不是激进的冒险，而是深思熟虑后的战略选择；不是对未知的逃避，而是对风险最清醒、最主动的掌控。唯有如此，才能在变革中赢得未来。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "e4bc02a2a7220332d4bcb43212d56a0211fc324975ffa0551cfda514c6d43d5e",
+    "selected_material_sha256": "2f6a76626121cba57a2a48691cdd276b708840738a8f1ceb56f1fe73e7ee9a23",
+    "question_sha256": "49e6f8d2036600e044a3e3270cad32ed721efaf5a6c887566f1ba37a9d675fe4",
+    "characters": 928,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 928,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 574,
+          "prompt_tokens": 5110,
+          "total_tokens": 5684,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "089-3",
+    "answer": "“社区吹哨，既要吹得准，还要吹得响、吹得久”，体现了社区治理中精准化、实效化和长效化的内在要求。“吹得准”强调问题识别要准确，依托党员熟悉社区情况的优势，及时发现居民真实需求；“吹得响”意味着响应机制必须高效畅通，通过“点单—接单—服务”平台实现资源快速联动，确保群众诉求得到及时回应；“吹得久”则要求机制持续运行，建立考核激励、台账管理与党员评优挂钩的长效机制，防止形式主义，推动治理力量真正下沉。三者相辅相成，既提升社区治理效能，又增强党组织凝聚力和群众获得感，是实现共建共治共享的现实路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "5d41dec3f26e903160ee00cdc922dcb17c3dbfae78358f7793f997c705370d3c",
+    "selected_material_sha256": "790a68f0ce9418e1cee4f83de7c03cb62a5390b3864111d2e58ee9ea5a27d064",
+    "question_sha256": "4c974e8a7262f944d9dc08c0d6953ecdf63dfe25045b936b1ca660dc4a8d51da",
+    "characters": 248,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 248,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 159,
+          "prompt_tokens": 1798,
+          "total_tokens": 1957,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
