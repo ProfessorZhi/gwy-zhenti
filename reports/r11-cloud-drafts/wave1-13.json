@@ -358,5 +358,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "103-2",
+    "answer": "B区通过“自下而上”机制实现“宽而有制，从容以和”：商户自主申报外摆位，政府审核后给予许可，保障经营活力；明确合规边界，要求不扰民、不影响交通，实行动态管理；建立月度自检与随机抽查制度，违规三次取消资格，确保秩序可控；推行“一街一策”，因地制宜设置摊位，兼顾市容与民生需求；鼓励商户提升外摆区美学与社交属性，推动品牌差异化发展。通过制度设计平衡商业活力与公共秩序，既释放城市“烟火气”，又保障居民生活安宁，实现管理精细化与群众满意度的有机统一。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "522eff20a4fd476276706df644df21ffe18a507afc17d9b55c8df348d020d154",
+    "selected_material_sha256": "3f462dc58c031a37becb54f5ba808a41aa909df2caa2b125af03669dd62aadd6",
+    "question_sha256": "454383105b3ad9493aec7496d3d4193cfc1685899bb460fd1d6994190f612d08",
+    "characters": 222,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 222,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 143,
+          "prompt_tokens": 1634,
+          "total_tokens": 1777,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "116-1",
+    "answer": "S市垃圾处理能力不足，日产生量超处理能力；大件垃圾难清运、易堵塞焚烧炉；市民有分类意识但不知如何分类，垃圾桶无标志；有毒有害垃圾未分类混收，直接填埋或焚烧，污染环境。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "73c1dc680860d434709d5c7383920b563a461bfff4dfe09ba640388824c69766",
+    "selected_material_sha256": "62b4a39dc677d4f539bdd16614c0fce382f627666e2f9e568bc0da4cfbd3d2f9",
+    "question_sha256": "0de4bee15d754270669e09ca99d981f98c6a11abc5707388cc970eeb6672ac2e",
+    "characters": 83,
+    "word_limits": [
+      35,
+      150
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 83,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 57,
+          "prompt_tokens": 4190,
+          "total_tokens": 4247,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "139-4",
+    "answer": "**题目：弱鸟当奋飞，破局需“双翼”**\n\n“弱鸟要飞高飞远，既要找到适合的飞行轨迹，又要丰满自身的羽翼”，这句话深刻揭示了发展困境中县域突破的关键路径——既要有战略定力、找准方向，也要有内生动力、强化能力。对于资源禀赋有限、基础相对薄弱的县域而言，单靠外部依赖或盲目模仿难以实现跃升，唯有在“定位”与“赋能”上同步发力，才能真正实现可持续发展。\n\nN县从传统农业县向特色产业强县转型，正是这一理念的生动实践。面对碱性土壤和干旱气候的自然限制，县政府没有照搬周边模式，而是通过深入调研，发现蜜瓜种植的适配性，并与省农科院合作培育新品种，实现了“因地制宜”的精准定位。这正是“找到适合的飞行轨迹”——立足本地实际，避开同质化竞争，走出差异化发展之路。\n\n与此同时，N县并未止步于资源发现，更注重“丰满自身羽翼”。通过建立人才库、提供创业支持、开展技能培训，吸引在外乡贤返乡创业；通过搭建平台、组织外出考察、提供电商培训，帮助本地企业实现从生产到营销的全链条能力提升。这种系统性赋能，使小提琴产业从零起步发展到100余家配套企业，产品远销海外，带动超万人就业，真正实现了“内生动力”的增强。\n\n这启示我们，县域发展不能仅靠政策“输血”，更需激发自身“造血”能力。正如P县服装产业由代工向ODM原创设计转型，从“批量生产”转向“小快灵”定制，正是通过技术创新和品牌建设，提升了产品附加值与市场竞争力。这种转变，既是对市场需求的精准回应，也是对自身能力的系统重塑。\n\n在现实层面，“飞行轨迹”需要顶层设计的科学谋划，而“羽翼丰满”则依赖于制度创新、人才培育与产业协同。N县推行“项目推进中心”整合机制，打通招商、落地、运营全链条，体现了制度优化对发展效率的放大作用；其“两会一日”机制及时收集企业诉求，实现了政企互动的常态化，增强了治理效能。\n\n此外，县域发展还需跳出“自我循环”的局限，主动融入区域协作网络。N县与高新区合作、借鉴D省经验，既拓展了视野，也获得了外部资源支持。这种开放式的思维，使“弱鸟”在协同中获得起飞空间，避免陷入“孤军奋战”的困境。\n\n综上所述，“弱鸟要飞高飞远”，不仅需要清晰的路径选择，更需要扎实的能力积累与开放的协作胸怀。唯有将战略定位与能力构建并重，将内部发展与外部联动结合，县域才能在时代变革中破局突围，真正实现从“跟跑”到“领跑”的跨越。这既是N县的实践，也是所有发展中地区应共同遵循的发展法则。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cf414b03e4ce32a54bbeb5ddc04d3b8b28033b474ac4d4a0a3bd761a91058a9c",
+    "selected_material_sha256": "a4d116d5338db18b3bf9ed3a4bf5d333b67deb740fd455ddb631438768c7702c",
+    "question_sha256": "90bdc1fd9795367db8f35744b207afcec449a6aeb496cdf86c85392681511c88",
+    "characters": 994,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 994,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 632,
+          "prompt_tokens": 5029,
+          "total_tokens": 5661,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
