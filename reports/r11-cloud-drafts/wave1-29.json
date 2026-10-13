@@ -538,5 +538,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "158-1",
+    "answer": "C市推进城市“再野化”通过生态修复实践，如宜泽苑项目，先将场地变为次生裸地，引种乡土植物，恢复自然演替；实行“貔貅原则”，不外运垃圾，促进自然分解与土壤再生；引入本地动植物，构建稳定生态系统；降低养护成本，提升生物多样性。同时，推动多方参与，开展科研合作，拓展至校园、湿地等场景，实现人与自然和谐共生，助力打造生态之城。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "bb53140bc0ae3c352832522d50d449660f133a83d80df1f53fecd4260f0ddd4b",
+    "selected_material_sha256": "341e6fd45d1cc0ec983ffa147cc7fe102b57ff3d990e53981ed2a4c46555ea24",
+    "question_sha256": "d899e1ba48ddb5dcf5862def580b75dd9f26817e2bc6f47948be90a3acc081fe",
+    "characters": 160,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 160,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 105,
+          "prompt_tokens": 1900,
+          "total_tokens": 2005,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "166-4",
+    "answer": "**聚力而生，变势成局——论要素融合驱动的深层变革**\n\n在时代发展进程中，“聚”不仅是资源的聚集，更是动能的聚合；“变”则不是偶然突现，而是多元要素碰撞融合后生成的新形态。从黛湖社区数字游民与乡村的双向互动，到C县农业托管实现“小田变大田”，再到F市产业集群通过共享平台协同创新，无不体现“聚·变”的深层逻辑：当不同主体、技术、资源在特定条件下汇聚，便可能打破原有边界，催生更具韧性与活力的新发展格局。\n\n数字游民的到来，不仅带来了远程办公的灵活模式，更以开放包容的生活理念重构了人与乡村的关系。他们与村民共同参与文化活动、设计村内标识、推广特色产品，使原本静止的乡村空间焕发生机。这种“人—地—产业”的深度融合，让自然环境与人文活力形成正向循环，推动乡村从被动观光转向可持续发展的生活共同体。\n\n在农业领域，“土地托管”并非简单替代传统耕作，而是通过合作社平台整合分散农户、科技力量与资本资源。统一采购农资、集中连片种植、引入智慧农机和专家技术指导，使每亩土地增产10%以上，成本降低13%。更关键的是，这种聚合打破了小农经济“靠天吃饭”的困境，将生产从经验驱动转向数据驱动，实现了效率与质量的双重跃升。\n\nF市打造特色产业集群，则展现了要素系统性整合的深层力量。通过设立“一群一班”专班、建设共享数据中心、推动链主企业带动中小企业协同，政府将政策、资金、技术、人才等资源进行精准配置。共享工厂将设备、厂房、技术按需开放，中小企业得以低成本试错、快速迭代，形成“接单—调度—协作—交付”的闭环体系，真正实现了资源高效利用与产业协同发展。\n\n值得注意的是，“聚”与“变”之间存在动态反馈机制。数字游民社区带动村内消费增长，反推基础设施升级；农业增产支撑村集体建厂，延伸产业链条；产业集群发展又吸引高端人才回流，形成正向循环。这种自我强化的结构，使变革不再孤立发生，而是持续深化、螺旋上升。\n\n然而，“聚”要真正“变”，必须建立制度保障与协同机制。D县推行“做实每一项”调研机制，通过“基层评、群众评、数智评”实现问题发现与解决闭环，杜绝形式主义调研，确保政策落地有实效。这说明：要素的聚合若缺乏科学评估和反馈路径，便难以激发深层变革。唯有建立透明、可追溯、可评价的运行体系，才能让“聚”产生持续的“变”。\n\n综上所述，“聚·变”是时代发展的内在规律。无论是乡村空间重构、农业模式转型，还是产业生态重塑，其背后都蕴含着要素深度整合后释放的新能量。这种变化不是被动结果，而是主动设计、系统协同下的产物。未来应更加注重不同要素之间的结构性融合，在制度保障与平台支撑下，推动从“各自为战”走向“协同共生”，在聚力中激荡出高质量发展的澎湃动能。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c2fa7c92068b837c2a3f70b87a3e3a5907df0c362f3cf495b5b6b142f7fd8a0b",
+    "selected_material_sha256": "a6aa6ceeadf8e7551385dbf31e7096294eeeb1a4b04afb0d0add058334ec6264",
+    "question_sha256": "6f90d91e6b0ebc61277704589be2e477c79481072ba312c94270083f0084cf26",
+    "characters": 1100,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1285,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 793,
+          "prompt_tokens": 5176,
+          "total_tokens": 5969,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1100,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 682,
+          "prompt_tokens": 6093,
+          "total_tokens": 6775,
+          "prompt_tokens_details": {
+            "cached_tokens": 5938
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "177-1",
+    "answer": "A市通过建设高标准农田激活农村“一池春水”：一是整山系推进建设，消除界埂沟渠，扩大种植面积，实现集中连片；二是完善田间道路与智慧农业设施，提升机械化和精准化水平；三是建立四级管护机制，强化建后管护；四是延伸马铃薯产业链，带动加工、销售和就业；五是吸引青年返乡创业，推动技术革新与品牌传播，实现产业兴、人气旺、农民富。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1b165403eaac8fa7e82268d41b77a2d2a4a06451fce8e06032766c0ca6b82591",
+    "selected_material_sha256": "702cf57c169d359f3d39974882b579eabf8d951d60c2520ffcfc3a9aedd83ebf",
+    "question_sha256": "dbb295157a79aeb216a6735796906ec9d1e795f2af646e130c340d1345f6fe4e",
+    "characters": 158,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 158,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 106,
+          "prompt_tokens": 1707,
+          "total_tokens": 1813,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "188-3",
+    "answer": "应科学规划驿栈布局，优先选址于社区集中、交通便利且服务缺失的场站，避免在高峰时段造成人流拥堵；优化运营时间，错峰开放，减少对行人和乘客的干扰。强化食品安全管理，明确冷藏设备使用标准，建立食品质量追溯机制，确保蔬菜、肉制品等新鲜安全，提升居民信任度。完善证照办理与监管流程，制定统一的经营规范，加强市场监管，防范卫生与安全风险。推动服务多样化，根据居民需求增设早餐、洗衣、理发等便民项目，丰富业态供给。注重环境设计，结合场站周边风貌，打造美观实用的驿站空间，提升城市烟火气与社区归属感。建立居民反馈机制，定期收集意见，动态调整服务内容，实现“缺什么补什么”，真正融入居民日常生活。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "2d26fc742ab2cd0e41a616ef1f9adba626521fdd2e93cffeb914aa81905f49d2",
+    "selected_material_sha256": "158bf8d6d059c02e6622cd08d4be5db99a173d115c71beca495789fb82626d26",
+    "question_sha256": "00d639ff7993893541cd7eef40b3535ed57180ea05e2a2af32ecd993c81b5232",
+    "characters": 289,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 289,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 173,
+          "prompt_tokens": 1833,
+          "total_tokens": 2006,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
