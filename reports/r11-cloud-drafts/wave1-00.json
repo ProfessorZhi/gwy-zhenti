@@ -313,5 +313,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "098-3",
+    "answer": "“新阶段”指我国产品出口从单纯“走出去”转向深度融入全球市场、实现高质量发展的新态势。这一阶段体现为：产品品质提升，如精工钢构实现毫米级精度控制，满足国际高标准；品牌建设加强，如带刺绣旗帜以高附加值赢得欧美市场；产业链协同深化，政府通过链长制推动产销对接，助力企业突破壁垒；物流通道优化，“一带一路”陆海衔接促进高效出海。同时，出口不再依赖价格竞争，而是凭借技术、品质与服务赢得认可，实现从“量的扩张”到“质的跃升”的转变，反映出我国与世界联系更加紧密、互动更深层次的发展格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "65bd045f456c39a879b2ab3221bb026551453777b9c531c07aede4d89cf0a6f4",
+    "selected_material_sha256": "63ceba9ae926eef5c920bec34a859f8600b03da820693fd22058b70abcc189ca",
+    "question_sha256": "7b6d789775591828427beb1eaf43c40621cef2283cc2fcfe2baba64edac98f8c",
+    "characters": 239,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 239,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 146,
+          "prompt_tokens": 1414,
+          "total_tokens": 1560,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "111-2",
+    "answer": "为更好体现国际化城市氛围，下一届深圳国际文化艺术周应立足“开放、多元、互动”理念，提出以下建议：\n\n一、深化国际参与，扩大合作范围。邀请全球10个以上文化城市联合主办，引入海外艺术团体、非遗项目及独立策展人，打造“全球对话”主题，增强文化共融性。\n\n二、创新活动形式，融合科技与体验。利用AR/VR技术呈现传统艺术，设置沉浸式展览空间；开展“数字艺术市集”，鼓励国际青年设计师参与创作，提升互动性和前沿感。\n\n三、强化语言服务与无障碍设计。在会场提供多语种导览、实时翻译系统及外文标识，确保外籍观众顺畅参与，体现对多元文化的尊重与包容。\n\n四、推动文化成果输出。设立“深圳原创品牌”展示区，重点推介本土原创剧目、设计作品和非遗技艺，结合国际平台推广“深圳好声音”，提升城市文化软实力。\n\n五、优化国际传播机制。通过社交媒体直播、短视频矩阵、海外KOL联动等方式扩大影响力，提升国际媒体报道量与检索热度，助力深圳国际知名度跃升。\n\n（全文共410字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a6cc0997d604798beb08f7be2cf412633fb8a52aec2d7d5ea5c65406ef90ce7d",
+    "selected_material_sha256": "1656859075a03a62e4b773f25b9e3c63ce91e730308c60f5d7c9afd2610301ae",
+    "question_sha256": "bada286572ec194c203945dbbb4b7b81b5b2ef6306d6e7513aa4a7c17b690a54",
+    "characters": 412,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 412,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 252,
+          "prompt_tokens": 3862,
+          "total_tokens": 4114,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "124-3",
+    "answer": "永林村：校地合作绘就乡村振兴新图景  \n通讯员 张某某  \n\n三年来，永林村依托N大学资源，创新“校地合作”模式，走出一条可复制、可推广的乡村振兴之路。通过设立乡村振兴工作站，大学生团队深入乡村，开展微景观设计与文化活化，将废弃采石场改造成儿童公园，让老屋焕发新生，提升村民生活品质。  \n\n在土地利用上，永林村推动集体经营性建设用地入市，经村民代表大会表决通过方案，实现农企利益联结，村民获得租金、股金和薪金“三金”收益，人均收入年均增长12%。  \n\nN大学专家团队引进优质辣椒种苗与生态养殖技术，帮助村民掌握种植与养殖技能，打造虫草鸡生态循环示范基地，降低生产成本，提升效益，带动全村集体增收近20万元。  \n\n校地合作不仅激活了闲置资源，更激发了农民内生动力，推动人才、技术、资本下乡，实现产业兴旺、生态宜居、乡风文明。永林村的实践，为全区乡村振兴提供了鲜活范本。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d6b0c742ae69412bd5180c49d9a1c6f486fb3f6858f0c42b72e400211756369b",
+    "selected_material_sha256": "3a912b49223c11bac0a728a72a4a4f5962f73c007fb80326eab2eaee559f07e1",
+    "question_sha256": "cc28a4d2808e4465e577046b66d8468cb57e6b9400dd265009b483d186f93d3e",
+    "characters": 375,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 375,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 249,
+          "prompt_tokens": 1603,
+          "total_tokens": 1852,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "136-3",
+    "answer": "让医患成朋友  \n\n在Z县，家有“医生”不再是遥远的事。夜晚骑上摩托车，穿白大褂上门看诊，已成为桃源乡家庭签约医生黄大夫的日常。面对偏远山村交通不便、留守老人看病难的现实，Z县创新构建“分级统筹、网格兜底”的全民健康管理机制，配备375名家庭医生，签约率超74%，重点人群达93.42%。  \n\n家庭医生不仅上门问诊、监测血压血糖，更用智能App实现健康数据实时共享，村民可随时查看自身指标，手机一端便能咨询问诊。长河村老蔡说：“以前和医生吵架，现在像朋友一样，定期检查、有病就问，真省心。”  \n\n过去，基层卫生院冷清、设备落后、医生收入不稳定。如今，Z县为基层添置医疗设备，建立慢病管理中心，实现“当天体检、次日报告”，让老人真正感受到健康服务的温度。家庭医生上门次数多了，感情也深了——吴奶奶晕倒，村民自发抬车相送；老村医老林感慨：“收入稳了，村民信了，我们安心当医生了。”  \n\n2021年亏损，2023年结余，卫生院门诊量同比增长超1500人次。年轻医生陆续加入，队伍壮大，服务更有底气。  \n\nZ县正推动家庭医生制度提质扩面——让医患从“陌生”走向“相知”，从“看病”走向“守健康”。在家就有“医”靠，更有一份真挚的信赖与情谊。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9a6b99c16049555245c757873249b94da6b45ab2da745539128773fdcc4a39ef",
+    "selected_material_sha256": "d43ad77346a312ce29a4ce6a485df5da406cf89354c0788f8e8ed32429ed0152",
+    "question_sha256": "917406ec4833768da1d5a2781484b59c382814e627e750700810f74bb2c0f50b",
+    "characters": 500,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 500,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 352,
+          "prompt_tokens": 1937,
+          "total_tokens": 2289,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
