@@ -718,5 +718,50 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "190-3",
+    "answer": "关于F市桥下公共空间改造需重点关注的问题\n\n一要明确管理责任。当前桥下空间由30多个单位分散管理，存在“谁都管、谁都不管”现象，亟需建立统一管理机制，厘清“谁来管”的权责边界。\n\n二要坚持因地制宜、一桥一策。部分桥下空间周边居民入住率低、配套已完善，盲目改造易造成资源浪费，应结合实际需求科学评估可行性。\n\n三要突破政策限制，探索多元利用路径。依据《F市城市桥梁隧道安全管理条例》，桥下空间不得用于商业经营，需在合规前提下，探索公益共享、微改造等模式，避免“摊大饼”。\n\n四要加强系统规划与协同推进。体育设施应侧重普及性项目，避免收费或交通拥堵；需多部门联合规划，统一入口标识和停车设计，提升使用便利性。\n\n五要注重环境整治与安全防控。对违规搭建、消防隐患、绿化失养等问题进行系统整治，提升空间品质与安全性，确保改造成果真正惠及市民。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3130264ced7447db02e7badff4416f7e6e77b7517377aa2b929be4707917b175",
+    "selected_material_sha256": "73375ed387d7c47aa1bcd2137cf4d283805144910184336a9ea3c0c0c73cb435",
+    "question_sha256": "bef282514299ff4b8b73e86e1f61418d2868075e241eb13dba62babd6dc9c03b",
+    "characters": 357,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 357,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 225,
+          "prompt_tokens": 2108,
+          "total_tokens": 2333,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
