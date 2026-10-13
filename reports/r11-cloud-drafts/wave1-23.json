@@ -1,0 +1,182 @@
+[
+  {
+    "id": "017-3",
+    "answer": "B市小店发展面临的主要问题包括：一是竞争加剧，连锁品牌快速扩张导致同质化严重，门店数量激增，客流量和销售额下降；二是经营成本高企，房租、人工等支出压力大，部分小店长期亏损；三是经营理念滞后，传统店主缺乏对年轻人消费习惯的把握，难以适应市场变化；四是供应链不完善，互联网平台虽提供数据支持，但品类、价格和服务仍无法满足小店需求；五是营销场景有限，缺乏与重大活动结合的联动机会，发展受限。\n\n针对上述问题，建议：一是加强分类扶持，对不同业态小店实施差异化政策，如支持传统小店开展免费数字化培训，提升其线上运营能力；二是优化空间布局，推动“联营模式”和“共享品牌”建设，降低入驻门槛，实现抱团发展；三是完善供应链体系，鼓励平台企业为小店提供稳定、本地化的产品供应与物流支持；四是拓展营销场景，依托节庆活动、文体赛事等契机，引导小店参与定制化服务，提升曝光度与回头率；五是强化社区功能，发挥小店“人情味”优势，推动其成为居民生活圈中的重要社交节点。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ce41b80a10a45a6fd04bec6e217c26eb73cf7432c4b79406315d426e2153bc6f",
+    "selected_material_sha256": "d4ac2f2af22d14d2455a3f068e8c1cc32a73e6f78cd0808de48a7726700e4c3b",
+    "question_sha256": "da825c3f61cc03ea9c898bb0218534cf8e1a0cf2787bc06e1cf052b4866321e3",
+    "characters": 418,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 418,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 250,
+          "prompt_tokens": 2014,
+          "total_tokens": 2264,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "029-2",
+    "answer": "南山工业社区治理模式以党建统领为核心，构建“网格+微网格”基层治理体系，实现企业、员工与社区的深度融合。通过社工统筹资源，创新开设周六托管班等服务，精准回应双职工家庭实际需求。推行志愿服务“菜单式”机制，激发职工参与共建共治热情，提升服务效率。社区工作人员主动学习经济知识，增强对产业动态的把握，推动治理从服务末端向发展主体转变。依托“供应链超市”平台，实现供需信息共享、物流协同和降本增效，助力企业形成内循环最小单元。同时，建设职工文化活动中心，开展技能培训与职业发展支持，提升职工收入与归属感，增强企业留人能力。该模式将产业园区与社区生活深度融合，实现生产、生活、服务一体化，为H市产业园区转型升级提供可复制、可推广的治理路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b1ff2fb5df40166660110d9a84181cda64e589fc6501cb8f450e641a67efd164",
+    "selected_material_sha256": "9854151b7223d1c78d7d19287d7e22f7e44cc4027ae73284f6491d1befad622f",
+    "question_sha256": "df7f893d1705b7e47f7594f1ae36e58e46c213f992815a24f17a6ba009d77d47",
+    "characters": 316,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 316,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 184,
+          "prompt_tokens": 1738,
+          "total_tokens": 1922,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "039-2",
+    "answer": "当前宽石镇乡村旅游规划中存在的主要问题：一是规划脱离乡村实际，忽视村民意愿，部分项目缺乏对游客需求的系统分析；二是旅游内容同质化严重，缺乏特色农业与文化深度挖掘，核心竞争力不足；三是管理与服务滞后，软环境治理薄弱，安全与配套不健全，宣传推介乏力；四是村民参与度低，收益分配不明确，对政策流程不了解，存在信息不对称；五是规划统筹不足，各村发展缺乏协同，未形成差异化、系统化的镇域旅游格局。\n\n改进建议：应坚持“以村民为中心”的理念，充分听取村民意见，在规划中融入本地特色，避免照搬城市模式。强化主题差异化，结合农业资源和文化禀赋，打造独具特色的旅游产品，如“造田公社”等创意场景。建立专业团队深入乡村调研，统筹镇域资源，形成红色、生态、文化等多元旅游线路。完善软环境治理，加强安全监管与配套服务建设，提升游客体验。设立村民参与机制，明确收益分配路径，提供政策咨询与操作指导，增强村民获得感和归属感。推动规划“一盘棋”实施，实现资源整合与错位发展，提升整体吸引力与可持续性。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "56893a144d56f81ab3e157c5e4190f1cf58f1a01321d5611007dc8992ad49b20",
+    "selected_material_sha256": "d044834ac8452fe2f6448217ec83f6ab266ebbc6c51deb2099bba905c62a4881",
+    "question_sha256": "d32bd13f28749094a385c36861ea81a84d7b419cfb5b1b0114fdf5b31c43f24e",
+    "characters": 442,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 442,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 269,
+          "prompt_tokens": 1531,
+          "total_tokens": 1800,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "049-3",
+    "answer": "各位居民代表、社区干部、专家学者：\n\n大家好！今天我们召开片区更新改造宣传动员会，旨在回应大家关切，凝聚共识，推进湖西片区共建共治。\n\n一、坚持群众主体，充分尊重民意。前期通过走访调研，我们了解了大家对补偿标准、安置房选址、租房补贴等方面的担忧，将切实优化方案，提高透明度和参与度。\n\n二、聚焦重点难点，分类施策。针对老人改造意愿不高问题，将加强适老化宣传与施工时间协调；对加装电梯争议，推动“一户一议”协商机制；对破路影响，科学制定施工计划，缩短工期。\n\n三、强化安置保障，提升生活品质。提高补偿标准，合理设置安置房选址，落实租房补贴，确保群众生活质量不降低。\n\n四、畅通沟通渠道，共建共治共享。设立意见收集平台，定期回应关切，推动政策宣传与群众互动常态化。\n\n我们坚信，在大家的共同参与下，湖西片区更新将真正实现“惠民、利民、便民”。  \n\n湖西街道办事处  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "380fe9db0c44a0a157d3c21aded0086129b922d900c00e0d0a6a60d433ecef61",
+    "selected_material_sha256": "a23b816d58ebfb765951fc78898a27377693bb959e5632331cdafb520bcb7ed6",
+    "question_sha256": "26ea96c4cb289fc5f1064eb3c4ddb9eb9c0a98c7fd7a4174fa243566cf9c1ce6",
+    "characters": 373,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 373,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 231,
+          "prompt_tokens": 1020,
+          "total_tokens": 1251,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
