@@ -313,5 +313,237 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "101-5",
+    "answer": "B市通过“需求导向、多元协同”路径实现服务建设与运营平衡。一是坚持“问计于民”，基于居民需求精准嵌入服务，确保供给贴近实际；二是创新空间利用模式，推广“改造新建结合”“片区统筹”和土地混合利用，提升空间利用率；三是探索政企合作机制，通过政府购买、物业承接、合资建营等方式引入市场化力量，实现服务专业化与可持续运营；四是推动功能复合集成，构建集养老、托育、健身等于一体的社区服务综合体，提升服务效能。同时，建立“打包竞标”机制，以规模效应缓解微利困境，确保设施建成即可用、长期有效运行，真正实现“建设轰轰烈烈，服务冷冷清清”。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "973992e9898aa7b9c8cf3c032438a2f30a878cb237535b540ecb172e824ce245",
+    "selected_material_sha256": "c7eb34d24399dacaffec64ea6f318e68381c8a0e666a98a32f933286638e8660",
+    "question_sha256": "c0482acec2c6874189cda727512cbfcee07135f06ee37d9103f120321a65d0e1",
+    "characters": 262,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 262,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 160,
+          "prompt_tokens": 1846,
+          "total_tokens": 2006,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "113-3",
+    "answer": "**以网为桥，赋能基层治理——关于互联网时代基层政府服务优化的路径探索**\n\n在信息技术深度融入社会生活的背景下，基层政府亟需借助互联网技术重构服务模式、提升治理效能。深圳“书记信箱”三年收信4600余封，回复率100%，办结率达72%，并建立“街道书记信箱群”，累计手写签批超5万字，充分证明网络问政能有效打通干群沟通的“最后一公里”。因此，基层政府应以互联网为桥梁，构建“感知—响应—协同—反馈”闭环体系，推动服务从被动应对向主动治理转变。\n\n首先，要强化信息采集与问题预警能力，实现精准治理。Z市通过建立统一网格化管理平台，实行“一格一员、定格定责”，实现数据一次采集、多方共享，有效避免了反复走访和信息失真。基层政府可借鉴此模式，在社区部署智能终端，实时采集交通拥堵、环境噪声、设施损坏等民生问题，结合大数据分析，提前识别风险点，做到“早发现、早处置”。\n\n其次，要畅通民意表达与响应渠道，提升互动实效。N市公安公众号调查显示，83%的群众因求助或反映问题而主动互动，但仍有53%认为“沟通不够”。这表明平台建设不能仅停留在“有入口”，更需建立闭环机制：对群众诉求分类登记、限时办结、动态反馈，并通过图文、视频等形式增强可读性与亲和力。同时，语言应贴近百姓日常表达，避免官话套话，提升信任感。\n\n再次，要推动服务流程再造，实现“一网通办”。深圳某区居民凭身份证即可完成社保、户籍等事项办理，体现“数据共享、材料免填”的巨大潜力。基层政府应打破部门壁垒，依托市级政务信息共享平台，整合审批事项，推行“一件事一次办”，减少群众重复提交资料和往返奔波，切实提升服务便利性。\n\n此外，要推动多元共治格局，激发社会参与活力。S市在网约车政策征求意见中邀请市民、司机代表座谈，既回应了公众关切，也避免了“一刀切”带来的矛盾。基层政府可借鉴此做法，通过线上听证、居民议事会等形式，让群众参与公共事务决策，推动治理从“政府单向管理”转向“多元协商共建”。\n\n同时，必须强化平台运维与责任落实，杜绝“重建设轻管理”。H省商务局长因网站长期不更新被问责，反映出部分基层单位存在“有网无用、有责无行”问题。应建立政府网络平台运行评估机制，明确责任人，定期开展舆情监测和满意度调查，确保信息及时更新、回应及时有效，防止“僵尸网站”成为形象短板。\n\n综上所述，互联网不仅是技术工具，更是重塑基层治理逻辑的重要引擎。唯有坚持问题导向、群众立场与制度保障并重，才能让网络真正成为连接政府与民众的“连心桥”，推动基层治理向更精细、更智能、更温暖的方向迈进。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "e4f87ba2c72b0f36d189db9f20f03681e2a5a666fa04cd7978ac4a3bc63ca2ac",
+    "selected_material_sha256": "5ce13d35f800535cf7025e5aba41748e4bb960016e16bdca311cb2019137c676",
+    "question_sha256": "3182e3efcb943a43edf5b71c27808d985b9c080ea55fba9bc1392ddc67ad04fa",
+    "characters": 1048,
+    "word_limits": [
+      900,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1301,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 792,
+          "prompt_tokens": 4024,
+          "total_tokens": 4816,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1157,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 711,
+          "prompt_tokens": 4937,
+          "total_tokens": 5648,
+          "prompt_tokens_details": {
+            "cached_tokens": 4815
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 1157,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 711,
+          "prompt_tokens": 4856,
+          "total_tokens": 5567,
+          "prompt_tokens_details": {
+            "cached_tokens": 4047
+          }
+        }
+      },
+      {
+        "iteration": 4,
+        "characters": 1157,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 711,
+          "prompt_tokens": 4856,
+          "total_tokens": 5567,
+          "prompt_tokens_details": {
+            "cached_tokens": 4855
+          }
+        }
+      },
+      {
+        "iteration": 5,
+        "characters": 1048,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 652,
+          "prompt_tokens": 4856,
+          "total_tokens": 5508,
+          "prompt_tokens_details": {
+            "cached_tokens": 4855
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "127-2",
+    "answer": "永林新村实现从“卖石头”到“卖梨子”再到“卖生态”的转变，得益于系统性生态修复与产业转型。矿山开采导致环境恶化，通过地质灾害治理、植被恢复和水环境整治，改善了生态环境；依托优质水源和清洁空气，推动有机种植，提升蜜梨品质，形成“焦洋翠梨”地理标志品牌；通过品牌建设、技术改良和市场拓展，实现从农产品到特色品牌的跃升；同时，生态价值被纳入资源配置，赋予土地“生态管养”属性，吸引文旅投资，发展田园观光与衍生品产业，推动乡村经济多元化。村民收入显著提高，乡风文明与治理效能同步提升，真正实现了生态优先、绿色发展与乡村振兴的有机统一。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9df7769c65c422140d5e5bea9c46b820adad3bc7d295f4fead44bc56f656536a",
+    "selected_material_sha256": "974dbec08498b2485ecc97f63602adc0463106db29f0e8eaefa72e95bc4b4d4b",
+    "question_sha256": "5cc28fd22b0546b255c198182f20b9b0c3c3937dd724116d84efe22e0ff3fa63",
+    "characters": 263,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 263,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 161,
+          "prompt_tokens": 1984,
+          "total_tokens": 2145,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "138-2",
+    "answer": "Z市火车站打车难、行车慢、停车乱问题主要源于以下原因：一是上车点设置不合理，既设于停车场内又无明确标识，导致司机违停通道、乘客难找车；二是地面与地下车位资源紧张，地面车位不足且车流密集，私家车与网约车混停加剧拥堵；三是网约车停车收费机制不完善，15分钟超时收费迫使司机频繁进出，影响接单效率；四是管理协同不足，“各自为战”，缺乏统一规划和有效执法联动。\n\n建议：一是科学划分上车区，增设明显标识与多个上车点，提升可及性与通行效率；二是优化停车资源配置，引导私家车停入地下停车场，网约车集中于地面指定区域；三是合理调整网约车停车收费标准，降低超时收费，保障司机接单便利性；四是建立多部门协同机制，推动交通、物业、交警联合执法，强化监控巡查与违停处置，实现管理闭环。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7086fb711d56537ce9a1e9a57869e01208c03ab506bef38654e5e0109dfaf796",
+    "selected_material_sha256": "078ad8b841b5406c721530ca4f63d3374db31ce1c47323dc5176f2da9d9961bb",
+    "question_sha256": "27bee3b8874540cd8cc81300a172aba80b416835f8b7ad0390b96bc87c25ffa6",
+    "characters": 329,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 329,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 208,
+          "prompt_tokens": 1778,
+          "total_tokens": 1986,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
