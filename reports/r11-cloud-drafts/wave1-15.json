@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "060-1",
+    "answer": "F省推动“政采贷”政策落实的主要措施包括：建设金融服务云平台，实现中标公告、合同和融资需求在线高效传递，打通多部门数据壁垒；明确金融机构报备机制，规范贷款额度、期限和利率，实行零抵押零担保，缩短审批与放款时间；建立政府采购交易分析风控模型，实现贷款自动化审批、回款锁定和贷后风控全流程线上闭环；对供应商和金融机构提出守信要求，严惩弄虚作假或违规行为；设立财政奖补机制，激励金融机构积极参与，推动政策精准落地。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "49b77d17d76aa7c42a67678b5fa3279b78b29542b6ea7f0424afcc1f9f1a0312",
+    "selected_material_sha256": "22dcc91298c776df280a1eaf351ac8838cf13ba89526751015fdeab29618bdb7",
+    "question_sha256": "c3ac89a09878b0cbd62e714697c282e0c210899295e3ae150e14e0fda5683226",
+    "characters": 204,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 204,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 122,
+          "prompt_tokens": 1729,
+          "total_tokens": 1851,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "073-4",
+    "answer": "**信用：道德与规则的双向奔赴**\n\n“信用既是一种道德品质，也是一种制度和规则”，这句话深刻揭示了现代社会中个体行为与社会秩序之间的内在关联。信用并非空洞的口号，而是根植于日常生活的具体实践之中。它既是人们在交往中对承诺的坚守，也是社会通过制度设计实现公平治理的重要工具。从租房免押、医疗“先诊疗后付费”到交通违规记分，信用正以看得见的方式融入公共服务与社会治理，成为连接个体责任与公共秩序的桥梁。\n\n信用作为道德品质，体现的是个体在生活中的自律与担当。正如材料中提到的张某，其电商经营之所以长久发展，关键在于“有问必答、有错必改”的诚信态度。当客户遭遇商品变质问题时，他没有推诿责任，而是主动补发并拒绝共同承担损失，赢得了客户的信任与口碑。这种基于责任感的行为，不仅塑造了个人品牌，更在无形中构建了市场信任的基石。可见，信用是道德选择的结果，也是社会交往中最基本的信任前提。\n\n与此同时，信用作为制度和规则，正通过系统化、可量化的机制将抽象的道德要求转化为可执行的管理手段。E市的“老赖”被禁止租车、S市老人“刷脸”领取养老金等场景，均体现了信用体系在公共服务中的落地应用。这些制度设计并非简单地惩罚失信者，而是通过明确规则与透明反馈，引导人们自觉遵守公共秩序。例如，闯红灯行为被纳入信用记录，本质上是将交通法规转化为个人信用的组成部分，让规则成为一种“看得见”的生活约束。\n\n更进一步看，信用制度的建立，打破了传统社会中“信任依赖关系”的脆弱性，为资源分配提供了公平基础。在共享经济中，用户信用决定是否免押金、是否享受优先服务，这既降低了交易成本，也减少了信息不对称带来的风险。向先生回收手机的案例表明，信用机制使“先收货后付款”成为可能，真正实现了供需双方的互信与共赢。这种制度安排，不仅提升了效率，更在本质上推动了社会资源的合理流动。\n\n值得注意的是，信用制度的有效运行，离不开全社会的共同参与和规则的持续完善。若仅靠惩罚手段，难以形成正向激励；若缺乏透明度，则易引发公众质疑。因此，必须建立覆盖多领域的信用评价体系，同时强化行业自律与政府监管的协同作用。正如N市旅游乱象中“违法成本过低”导致“宰客”频发，唯有提高失信成本、明确责任主体，才能真正遏制市场失序。\n\n从长远来看，信用社会的建设不仅是治理现代化的需要，更是提升公民素质的重要路径。当每一个个体都意识到自己的行为将被记录、被评估、被影响时，社会整体的规则意识与责任感便得以强化。正如“人面桃花相映红”，真正的美好风景，不仅在于自然风光，更在于人与环境、人与人之间彼此尊重、彼此守信的和谐状态。\n\n因此，信用既是个人品格的体现，也是制度建设的成果。唯有将道德自觉与制度约束有机结合，才能真正实现从“要我信”到“我要信”的转变，让社会在信任中前行，在规则中发展，最终构建一个更加公平、有序、温暖的共同体。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "dacda705ea6ef22643a6b89664bf1671b86dfb705c46f11d7c8425b3c4110eec",
+    "selected_material_sha256": "a7c0d126f69d31b4d95596684dde0c1ad5b70c79026256ee820c5d43ba444bef",
+    "question_sha256": "08e3579eece3fe0cb1103539cc22f0fac7dff54f6379a22a7f0dd9d06614af0e",
+    "characters": 1168,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1168,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 709,
+          "prompt_tokens": 6169,
+          "total_tokens": 6878,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "082-3",
+    "answer": "KMN都市圈建设工作进展情况汇报提纲\n\n一、推进交通互联，构建“一小时通勤圈”。加快高铁网和机场快联通道建设，实现三市间高效通达，缩短时空距离，提升出行便利性。\n\n二、深化政务服务“跨域通办”，提升民生福祉。建立政务服务与数据共享联席会议机制，推动公积金、医保、户籍等事项“一卡通”办理，实现公共服务同城化。\n\n三、促进产业协同联动，优化产业链布局。聚焦光电子信息、生命健康、高端装备等重点产业，推动M市主链与K、N市配套协同发展，形成“主链在中心、配套在周边”的一体化格局。\n\n四、强化科技创新驱动，激发内生动能。依托高校院所资源，共建科创平台，设立离岸科创中心，推动科技成果转化，实现产学研深度融合。\n\n五、加强生态保护，守护“绿肺”空间。三市联合制定生态绿地保护条例，推进中央公园建设，打造集生态、文化、休闲于一体的绿色公共空间，促进人与自然和谐共生。\n\n以上工作在省政府统筹下有序推进，实现了破圈协同、资源整合和民生改善的良性互动，为都市圈高质量发展奠定了坚实基础。  \n（408字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "39ac34a09b90c49c847876940c831035e99b66781f49414bbfe7fd5d0796c39e",
+    "selected_material_sha256": "06c7c62634f67cf53533d77a6c7aef80fc8eb02d10b153d3f0a51f82d0313fff",
+    "question_sha256": "b6b734e29f77c69d8d78c4483f783d61eaeb2e04c840e6a0c8bc3a43072e9993",
+    "characters": 431,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 431,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 264,
+          "prompt_tokens": 1794,
+          "total_tokens": 2058,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "092-3",
+    "answer": "建设数字游民社区，吸引年轻人“游进来”，也使村民“有奔头”，原因如下：一是社区提供共享办公、活动空间和创业支持，年轻人带来新理念、新资源，推动乡村文化与经济活力提升；二是数字游民带动消费，促进村内餐饮、农产品销售，增加村民收入；三是村民参与社区建设与服务，如老祝担任保安、协助跑腿，获得稳定收入；四是政府优化营商环境，推行“一件事一次办”等便民服务，增强村民对发展的信心；五是社区盘活闲置农房等资源，深化与村集体经济合作，实现资源双向流动，让村民共享发展成果。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ef4aab13fe43b2698408951d810962a1221bd6e0d2eca882c610f4f371a21b03",
+    "selected_material_sha256": "6b5e0611ea55dfed58522f7545298a0ae84be9453a22e3dbe811ae3e51a42df0",
+    "question_sha256": "49c83bcb3050085ad50cbbbfc25b5e0d9239a488ed19fc3b48701d9906019142",
+    "characters": 230,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 230,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 141,
+          "prompt_tokens": 1939,
+          "total_tokens": 2080,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
