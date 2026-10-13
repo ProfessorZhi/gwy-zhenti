@@ -191,5 +191,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "055-2",
+    "answer": "“新局蕴新机，新机生新局”体现了碳汇城市建设中相互促进、动态演进的发展逻辑。一方面，“新局”指碳汇理念引领下的制度创新与实践变革，如碳交易所成立、近自然造林、污泥资源化利用等，为绿色发展注入新动能；另一方面，“新机”是这些创新带来的实际机遇，如农村通过出售碳汇实现增收、市民参与积分激励形成绿色习惯。更关键的是，新机制不断激发新的发展可能：碳汇交易激活了乡村经济，绿色生活方式推动公众参与，生态治理改善环境质量，反过来又为城市可持续发展提供支撑。这种良性循环表明，以绿色发展为导向的系统性变革，不仅破解了传统难题，更催生出全新的发展模式，实现从理念到实践、从个体到城市的全方位跃迁。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b7cc221e67346a9169d3ff50a2cac1dbb5ed957df40d0391498cc131867fccf0",
+    "selected_material_sha256": "7b68a8583b7997386ca10a3ae659e22a6ad668f7e94e0da09966e9442ec8730c",
+    "question_sha256": "11ca10f54abeddd697f0c7367b329837df30acbb285d41af7eda36a44a3eb7e6",
+    "characters": 291,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 291,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 174,
+          "prompt_tokens": 1899,
+          "total_tokens": 2073,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "068-2",
+    "answer": "社会群体间互贴标签是代际认知与心理机制共同作用的结果。舆论对90后、80后的批判，实为上一代人面对自身失落时的代际投射，反映话语权更迭中的焦虑与偏见。这种标签化源于刻板印象——一种基于经验的分类思维，虽有助于快速判断，却易忽视个体差异。当标签被情感强化，便演变为偏见甚至歧视，如将“富二代”等同于“不思进取”。其根源在于信息频率与认知偏差的叠加：高频负面解读被固化，潜意识中形成固定印象。要破解此类现象，需提供多元、真实的个体案例，打破单一叙事；同时加强自我反思，警惕情感对理性的干扰。标签本身中性，关键在于是否以客观、包容的态度看待群体差异。社会应倡导理解与共情，避免以偏概全，推动代际对话从批判走向建设。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1f933e17bbb2a9a29d7b535f9246b2a6f98e4d264d63d39aa9c450d85379be72",
+    "selected_material_sha256": "9db676d46c14379fc679f99a35d422397685414470c7ec0f03ceec9936f9bb5f",
+    "question_sha256": "11d99f12799f0cbad65799fa35b06bfe1cde0baabfcbbacd8e1988077508c3d0",
+    "characters": 304,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 304,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 201,
+          "prompt_tokens": 2168,
+          "total_tokens": 2369,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "078-3",
+    "answer": "当前S县大学生租房面临的主要问题包括：中介信息虚假、价格欺诈、合同条款不透明；租期固定为一年，缺乏灵活起租机制，导致押金难以退还；房屋租金及水电费标准过高，存在乱收费现象；部分房源被认定为群租房后强制清退，租客权益受损；房东随意单方面变更合同或克扣押金，缺乏法律保障；租客因无本地户口无法享受同等公共服务，如停车、暂住证等权益受限。\n\n针对上述问题，建议如下：一是建立政府主导的住房信息平台，对房源真实性进行审核，公开透明发布信息，严惩虚假宣传行为；二是明确租房合同中租期起止时间，允许应届毕业生和实习生以最短三个月为单位灵活签约，杜绝“押二付一”等不合理条款；三是规范房屋租赁收费项目，禁止额外收取设备费、清扫费等隐形费用，统一水电价格标准；四是完善公租房供给体系，优先保障应届大学生和实习生，提供最长三个月的免费住宿；五是加强监管执法，对中介欺诈、随意清退、克扣押金等行为依法追责，切实维护租客合法权益。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "e4bc02a2a7220332d4bcb43212d56a0211fc324975ffa0551cfda514c6d43d5e",
+    "selected_material_sha256": "c4f521a59fca8b528a2f257c0e2e12ac9cfbd60c9cfcb3ff54a2fdbc0d110b49",
+    "question_sha256": "3a2542612c7a1de0611e06a5e54e844f5629b8a25bdc375ce66a1a1eba036d0f",
+    "characters": 402,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 402,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 250,
+          "prompt_tokens": 1730,
+          "total_tokens": 1980,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "089-2",
+    "answer": "L县兰花产业发展具体做法：一是打造“红领兰香”党建品牌，成立产业党支部，推行“党支部+协会+合作社+农户”模式，发挥党员带动作用；二是建设兰花博览园和产业基地，形成“一园两带三区”发展格局；三是加强科研创新，突破无性繁殖组培技术，建成种质资源库，培育百余个新品种；四是强化政策支持，出台发展意见，在用地、资金、信息等方面倾斜；五是推动电商直播销售，与拼多多、淘宝等平台合作，实现线上线下融合，年网络销售额达1.5亿元，拓展国际出口市场。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "5d41dec3f26e903160ee00cdc922dcb17c3dbfae78358f7793f997c705370d3c",
+    "selected_material_sha256": "d54505465d274b469a8121f3ab8dc91cf38d2ca82acdb57f76d00e69ed56943b",
+    "question_sha256": "778039301fa23441ba8cb628f65df0b7ec1d1cc130a43a47a9ddbcba1e67ef2a",
+    "characters": 218,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 218,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 134,
+          "prompt_tokens": 2129,
+          "total_tokens": 2263,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
