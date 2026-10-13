@@ -1,6 +1,6 @@
 # 真题库总进度
 
-更新批次：2026-10-12。机器清单指纹：`e6d7374df0ce82e10661f6d9a27d6f91f7cb43a2ad01ad1d47b0865e5c295c24`。
+更新批次：2026-10-13。机器清单指纹：`9f4db62f4b5e71fd5df877a108101ddb79efc2eebd5807b40524e97bc5e9406a`。
 
 **图文库已交付；内容质量分项维护，不宣称全国所有原卷已经完整。**
 
@@ -130,3 +130,11 @@ python tools/cloud_quality.py --check --verify-images
 [逐卷来源补录结果](reports/SOURCED-SUPPLEMENT-20261013.md) · [精确统计](reports/SOURCED-SUPPLEMENT-20261013.json)
 
 GitHub Actions 完整回归通过：465项测试、逐题来源及原题保留检查、历轮修复凭据和95,903张引用图片像素解码均通过；检查记录见[验收运行](https://github.com/ProfessorZhi/gwy-zhenti/actions/runs/38345897934)及[本轮PR检查](https://github.com/ProfessorZhi/gwy-zhenti/pull/18/checks)。
+
+## 继续查源补录：教师课程与原始答文（2026-10-13）
+
+本分支新增105处现成来源答文，涉及59份既有申论，含14处作文范文；本轮新增AI答文0处。其中文章和应用文取自原稿，原稿未署名的作者如实记录。
+
+基线缺口451处，本分支预计剩346处，另9份题号结构待核。固定源文哈希、原题正文与既有非目标答案保留已核对；Python全库回归尚未运行成功，GitHub Actions工作步骤启动前失败，具体平台原因待查。预计数不能代替主分支已合并验收数。
+
+[逐卷继续补录结果](reports/SOURCED-CONTINUATION-20261013.md) · [阶段统计](reports/SOURCED-CONTINUATION-20261013.json) · [待合并PR #19](https://github.com/ProfessorZhi/gwy-zhenti/pull/19)

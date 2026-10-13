@@ -8,6 +8,7 @@ import round5_bulk as parser
 from round4_delivery import is_missing
 from r7_reference_audit import audit,assess
 from source_supplement_20261013 import cleaned,norm,exam_body,formatted,gitsha
+from teacher_source_text_20261013 import teacher_cleaned
 ROOT=Path(__file__).resolve().parents[1]
 RECEIPT="SOURCED-CONTINUATION-20261013.jsonl"
 FULL="SOURCED-CONTINUATION-FULL-20261013.json"
@@ -68,7 +69,8 @@ def verify(root):
   for n in r["added_numbers"]:
    e=pending.pop((rel,n));src=source[e["full_source_path"]]
    if src["blob"]!=e["source_blob"] or src["revision"]!=e["source_revision"] or sha(src["text"])!=e["source_sha256"]:raise ValueError("Changed source provenance")
-   if sha(e["answer"])!=e["answer_sha256"] or norm(e["answer"]) not in norm(cleaned(src["text"])):raise ValueError("Untraceable reference text")
+   source_text=teacher_cleaned(src["text"]) if e.get("source_transform")=="teacher_layout_and_score_labels_v1" else cleaned(src["text"])
+   if sha(e["answer"])!=e["answer_sha256"] or norm(e["answer"]) not in norm(source_text):raise ValueError("Untraceable reference text")
    if not is_missing(before["answers"].get(n,"")):raise ValueError("Previously answered task")
    if parser.qkey(before["questions"][n])!=parser.qkey(e["question"]):raise ValueError("Wrong source task")
    a=after["answers"].get(n,"")
@@ -78,7 +80,7 @@ def verify(root):
  if pending or count!=summary["source_answer_positions_added"] or len(rows)!=summary["papers_modified"]:raise ValueError("Delivery count mismatch")
  with patch("r7_reference_audit.ROOT",root):current,bad,_,counts=audit()
  actual=sum(v for k,v in counts.items() if k.endswith("/待补"))
- expected=summary.get("known_missing_answers_after",summary["expected_missing_answers_after"])
+ expected=summary["known_missing_answers_after"] if "known_missing_answers_after" in summary else summary["expected_missing_answers_after"]
  if len(current)!=729 or len(bad)!=9 or actual!=expected:raise ValueError("Current actual coverage mismatch: "+str(actual))
  with tempfile.TemporaryDirectory(prefix="gwy-source-continuation-before-") as tmp:
   historical_snapshot(root,Path(tmp))
