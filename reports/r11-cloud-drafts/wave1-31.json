@@ -133,5 +133,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "066-2",
+    "answer": "Q市数字化服务能力提升得益于系统性平台建设与机制创新。一是构建一体化智能化公共数据平台，打通76个部门数据壁垒，形成303项上架能力组件，支撑“一件事一次办”高效运行；二是建立三级数字化城市运行和治理中心体系，实现市级统筹、区县实战、镇街联动的协同治理格局，覆盖7万余网格，提升应急响应与服务效能；三是聚焦民生应用场景，推动交通信号优化、医疗影像互认、智慧养老等实用化落地，增强群众获得感。同时，以“一件事思维”谋划930个场景，促进数据共享、业务融合和流程再造，实现治理精细化、服务人性化，全面提升城市运行效率与治理温度。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9f2ddd42f5ad0b0deae57a2751b137a7d268034df366d90000431a3466bb1484",
+    "selected_material_sha256": "5c418eb3b57d937fd4341abefe5a9c0cbbd66100f3b84b3e0ef8a934448c1006",
+    "question_sha256": "718b0c90d8ae2ed2d3ab0d96ea5e42d4c1e538bf1326b9901d923d2b8f551caa",
+    "characters": 262,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 262,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 154,
+          "prompt_tokens": 1857,
+          "total_tokens": 2011,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "077-4",
+    "answer": "阳春县农村黑臭水体治理案例介绍材料\n\n阳春县以“治水护村、生态惠民”为核心，坚持问题导向、系统治理，扎实推进农村黑臭水体整治工作，成功实现从“臭水坑”到“生态园”的华丽转身。2020年，阳春县委、县政府成立农村污水治理工作领导小组，全面部署黑臭水体排查与治理任务。通过乡（镇）村初步摸排、无人机技术巡查、专家现场监测和多轮论证分析，科学识别问题成因，分类制定治理方案，确保排查无死角、措施精准有效，为后续治理奠定坚实基础。\n\n在治理路径上，阳春县坚持“因地制宜、生态优先、循环利用”原则，以李家村为示范点，探索出可复制、可推广的治理模式。针对村民生活污水直排涝池导致黑臭的问题，政府科学规划，立项建设村级污水处理厂，覆盖周边3个自然村547户、2145人，采用“格栅调节池+生物接触氧化反应器+紫外线消毒”先进工艺，实现生活污水高效处理。运行数据显示，处理后的尾水清澈透明，水质达到地表准Ⅳ类标准，不仅可直接用于农田灌溉，全年节约用水约3.6万吨，还广泛应用于绿化浇灌、道路抑尘和环境清洁，真正实现了“变废为宝”。\n\n治理成效不仅体现在水质改善，更延伸至生态修复与人居环境提升。在污水处理厂周边，县财政投入专项资金，建设80亩人工湿地，构建集生态净化、景观美化、功能复合于一体的湿地生态系统。通过种植铜钱草、鸢尾、水兰等水生植物，实现对尾水的二次净化，有效提升了水体自净能力，同时将处理后的尾水排入东侧河流作为生态补水，形成“污水处理—湿地净化—河道补给”的闭环生态链。\n\n在机制创新方面，阳春县注重群众参与与长效管理。村“两委”将黑臭水体治理要求纳入村规民约，通过入户宣传、典型示范等方式提升村民环保意识，引导其自觉改变不良生活习惯。同时，发动村民自发参与日常管护工作，形成“政府主导、群众参与、社会共治”的良好格局，真正实现从“要我治”到“我要治”的转变。\n\n该案例充分体现了系统治理、科技赋能、生态循环和群众共建的深度融合，形成了“排查精准—技术先进—生态修复—机制长效”四位一体的治理路径。阳春县农村黑臭水体治理不仅解决了环境问题，更提升了村民获得感、幸福感与安全感，成为全省生态环境治理中的典型样板。\n\n（全文共958字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f5b130916a2ea4c1caf1f27be19d081ccbfa637ea4e958effe8859a4efbcac0e",
+    "selected_material_sha256": "c5bc4846a9f027ab9da1c24c41c655cd1708f6647c235e9dc54e1b3c9c76a0d4",
+    "question_sha256": "d681a31593b3af5570dfa8b1c9a1b9ed2c20afc2f17cd45a7d9b6b29abb9a61f",
+    "characters": 904,
+    "word_limits": [
+      800,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 904,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 581,
+          "prompt_tokens": 1826,
+          "total_tokens": 2407,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "088-3",
+    "answer": "“运用柔的方法，取得好的效果”指基层治理通过协商沟通、倾听民意、尊重差异，以柔性方式化解矛盾、凝聚共识。居民议事会坚持公开透明，让各方表达诉求，在平等讨论中寻求平衡，如停车难题经多轮协商兼顾有车无车户利益。议事过程不强推、不压制，而是通过充分沟通增进理解，消除怨气。通过分组讨论、代表发言、投票表决，实现多元利益协调。线上平台扩大青年参与，提升覆盖面与互动性。同时，根据专业特长聘任临时议事员，提升决策科学性。群众从被动接受转为主动参与，基层治理效率和公信力显著提升。这说明，柔性的协商机制既能回应民生关切，又促进共识形成，是实现善治的有效路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "de6602ddecee0d0454069addeee60badda90f240d6e9c068f557a9e68b4b2d1d",
+    "selected_material_sha256": "b1c24e5f81831d877ad69c96a7768a3b58a5d6648a5dbc2f72f4181e425168d2",
+    "question_sha256": "62cea251b3a11e6104f76a83b222d3054fd68db6ce8472df4a26ec3ccc696c6c",
+    "characters": 273,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 311,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 195,
+          "prompt_tokens": 1886,
+          "total_tokens": 2081,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 273,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 172,
+          "prompt_tokens": 2167,
+          "total_tokens": 2339,
+          "prompt_tokens_details": {
+            "cached_tokens": 2080
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "097-4",
+    "answer": "**必须完成的变革：高质量发展之路**\n\n“这一过程决非一日之功，但必须完成”，这句话深刻揭示了产业结构转型升级的本质特征——它既是一个长期积累、系统演进的过程，也是一项关乎国家未来竞争力的战略任务。在G省制造业加速迈向高端化、智能化的背景下，这种“非一日之功”的艰难性与“必须完成”的紧迫性，成为推动高质量发展的核心逻辑。\n\n从现实来看，新兴产业的崛起并非凭空而来。以新能源汽车、人工智能、高端医疗器械为代表的新动能产业，其发展根基建立在长期的技术积累和产业链协同之上。高达智能企业虽在疫情中快速研发出防疫机器人并实现出口，但其背后是数年对芯片、轴承等“卡脖子”技术的持续攻关，是上下游供应链自主可控能力的系统性构建。这说明，真正的突破不是短期应对，而是长期投入的结果。\n\n同时，这一转型过程也面临多重挑战。原材料涨价、物流不畅、市场需求波动等问题曾让传统企业陷入困境，如J省纺织企业的订单下滑与库存积压，正是产业链脆弱性的体现。而“专精特新”企业之所以逆势增长，正因它们聚焦细分领域，以技术创新打破垄断、提升效率，展现出更强的抗风险能力。这表明，转型不仅是技术问题，更是管理方式、市场响应机制和生态协同能力的全面升级。\n\n政府与社会力量的协同推动，是这一进程得以持续的关键支撑。G省通过政策引导、资金倾斜、人才引进等举措，为“新动能”产业营造了良好的发展环境。例如《关于强化制造业高质量发展人才支撑的意见》明确提出要培养“高精尖缺”人才，推动人才与产业集群协同发展；银行也主动调整服务重心，向高新技术企业倾斜信贷资源。这种顶层设计与市场实践的结合，为产业升级提供了制度保障和动能支持。\n\n更重要的是，产业升级不是单一企业的孤立行动，而是整个生态系统的重构。从“小单快返”到“云展会”，从数字化园区建设到产业链资源共享，“抱团发展”的模式打破了传统中小企业“各自为战”的困局，实现了资源高效配置与价值共创。这不仅是技术进步，更是组织形态和商业模式的深刻变革。\n\n回望历史，中国制造业的每一次跃迁，都经历了从模仿、追赶，到自主创新的艰难跨越。正如G省当前所走之路，看似是产业的“换挡提速”，实则是发展模式的根本性重塑。这一过程虽漫长，但其意义不可替代——它决定了国家在新一轮全球竞争中的位置与话语权。\n\n因此，“必须完成”并非口号，而是时代赋予我们的责任与使命。唯有坚持长期主义、强化创新投入、深化体制机制改革，才能真正实现从“量”的扩张到“质”的飞跃，走出一条可持续、有韧性的高质量发展之路。这条路，需要耐心，更需要坚定的信念与持续的行动。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "631d8437db434b98bd8c65f37b9a10864e86742dfc6c60536e3ff9995f8b6e3b",
+    "selected_material_sha256": "bc4e5b3647765fe3c878f29655c929b3bc01c6b467af32750e41a358ee1ead72",
+    "question_sha256": "2055fb3ec01ebfa7ae9c2ab1ba8525df56b138a32604365baf4a31e79b970385",
+    "characters": 1053,
+    "word_limits": [
+      900,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1053,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 605,
+          "prompt_tokens": 4792,
+          "total_tokens": 5397,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
