@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "056-4",
+    "answer": "尊敬的各位领导、同仁：\n\n大家好！我是裕民社区党支部书记张书记。今天非常荣幸能够在这里分享我们社区在推进“充分就业”工作中的实践与思考。\n\n裕民社区是A市“南扩北升”建设下的易地搬迁社区，外来人口多、流动性强，劳动力供给远大于需求，就业压力突出。面对这一现实，我们始终坚持“就业就是民生”的理念，把稳岗促就业作为社区治理的重中之重，探索出一条可复制、可推广的路径。\n\n首先，**强化岗位供给，拓宽就业渠道**。我们主动作为，优化营商环境，规划办牵头拉项目、谈项目，引进大型超市、公园景观廊桥及4个楼盘开发，直接创造收银员、理货员等600余个就业岗位，同时配套建筑类岗位300余个。此外，我们与辖区企业、商户签订《促进充分就业合作协议书》，实现招聘信息共享，鼓励优先就近吸纳社区群众就业。\n\n其次，**聚焦能力提升，打通“就业最后一公里”**。针对搬迁群众普遍缺乏技能、文化水平参差的问题，我们依托市人社局资源，组织月嫂、烹饪、电商直播等实用型培训，全年累计开展220人次培训，90%的参训人员实现自主就业。特别是叶女士从家庭主妇转型为电商主播的经历，充分说明“兴趣+培训”能有效激发就业潜能。\n\n再次，**健全服务机制，做到精准帮扶**。我们建立“劳动力台账”，由网格长夏大姐常态化入户摸排、动态更新，实现“一人一档、一人一策”。对就业困难群体如58岁的老周，通过精准对接、反复推荐，最终帮助其在社区企业稳定上岗，实现了“零就业”人员清零。\n\n同时，我们注重**服务流程优化和平台建设**。依托公共就业服务平台，居民只需“走进一扇门”，即可完成政策咨询、岗位推荐、技能培训等一站式办理。针对租期过长、押金难退等问题，我们也积极建议相关部门完善租房政策，推动建立更公平、透明的住房保障体系。\n\n当然，充分就业不是终点，而是持续动态管理的过程。我们深知，随着经济形势变化和人员结构调整，稳岗保就业任务依然艰巨。下一步，我们将继续加强就业形势跟踪分析，重点关注现有岗位稳定性，健全风险预警机制，切实把“稳就业”工作做深、做实、做细。\n\n总之，裕民社区的实践证明：充分就业不是靠“输血”，而是要靠“造血”；不是简单提供岗位，而是要通过服务、培训、机制创新，激发群众内生动力。这既是民生工程，更是社会治理现代化的重要体现。\n\n谢谢大家！  \n\n（全文共938字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "45c05f067bfc24d11aa6e03e8946e4ddf923c3c17455cafb7901d9874f13ba0d",
+    "selected_material_sha256": "e661296cbf5cdcb97615c6241789dffe8e9d57b4f646044ebbec279a58c978d5",
+    "question_sha256": "0b3906087678f6d6564af6118777f6293838cbf8b85982839a45bd5c291c618f",
+    "characters": 938,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 938,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 583,
+          "prompt_tokens": 4768,
+          "total_tokens": 5351,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "070-1",
+    "answer": "F市破解基层“小马拉大车”难题的经验值得推广：一是厘清职责边界，明确村社权限，推行“准入基层事、基层准确办”，严控事项准入；二是依托数字化平台，建立“事务准入”模块，实现事项全流程监管与群众反馈闭环；三是整合民政、城管等多类网格，构建“多网合一”微网格体系，提升治理效能；四是推动“两新”组织、志愿者等多元力量参与，实行“双报到、双服务”机制，实现协同共治；五是建设智慧社区平台，打通数据壁垒，实现报表自动生成、信息实时共享，减轻基层负担，增强服务能力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "17b01215034f446781a5653f7120a87ab901f0bbe81418be3ffce9847a6ec443",
+    "selected_material_sha256": "0a38b46147a1ea0ae972915a472b018476165556cd38cb8d53e6fbb9c15f12b2",
+    "question_sha256": "6729f8708aa8b046da9251804b82b1b774d47d6614e8171cadbb24fd9fcfbf34",
+    "characters": 227,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 227,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 144,
+          "prompt_tokens": 1715,
+          "total_tokens": 1859,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "079-2",
+    "answer": "W市发展庭院经济面临以下问题：一是空间受限，如老陈反映庭院面积小，难以接待游客；二是技术滞后，如小章指出产品设计与市场脱节，缺乏创新；三是生产分散，如赵村铁编产业仍为家庭作坊，缺乏统一标准和市场对接能力；四是资金不足，如小方因花卉成本高、风险大而难以扩大规模；五是利益分歧，如方沟村村民对院子流转意见不一，存在发展共识缺失。\n\n建议：一是科学规划庭院功能，根据地形与资源合理布局，提升承载力；二是加强技术培训与市场调研，建立“技术+市场”联动机制，推动产品迭代升级；三是整合分散资源，成立合作社或产业联盟，统一标准、集中营销，实现规模效益；四是引导金融支持，对初创项目提供低息贷款或风险补偿；五是通过民主协商明确利益分配，建立可操作的流转与收益共享机制，增强村民参与感。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7ec600f44fcadd3e8c17bcb4b91cbe05ac29c222fa8a3071581280c3447ad56c",
+    "selected_material_sha256": "a9f27d6bf4f83adb1c2456337e7fde363f64f4f7d75fd185af64ff5adc079a44",
+    "question_sha256": "627746b602fa70989d341661a4572e98138497a79f1fe5f7324884cd55102c02",
+    "characters": 333,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 333,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 210,
+          "prompt_tokens": 1799,
+          "total_tokens": 2009,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "090-1",
+    "answer": "一、“菜单式”集成服务精准对接企业需求。县市场监管局通过调研梳理55项服务事项，明确承办科室、责任人和联系方式，形成可视化“服务菜单”，企业可随时“点单”。  \n\n二、建立“点单—接单—办结”闭环机制。企业提出需求后，由专人对接，按权属部门分配任务，实行专班协同办理，实现“一次提交、一次办结”。  \n\n三、强化服务实效，提升企业获得感。如福多多购物广场通过“点单”获得免费食品安全培训，优化经营布局；贾潮企业四项业务一次性打包办理，节省时间成本与费用支出。  \n\n四、坚持问题导向，主动协调解决非本部门事项，形成跨科室联动机制，切实解决企业“不知道找谁、流程繁琐”等痛点。  \n\n五、服务成效显著，全年受理“点单”836件，一次办结率达100%，有效增强企业信任感与投资信心，营造良好营商环境。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "31893e42ddab48a429958668f4845e188ba7403f1f3f851f8110ef29de7ce490",
+    "selected_material_sha256": "e270f1c08a41c24952fe511f2d49252da082b6d73da7b4b135cdb79162f2457d",
+    "question_sha256": "32bcefe0efbd43948690412558a077b19bd3093138df85de673e915df400a3ac",
+    "characters": 332,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 332,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 212,
+          "prompt_tokens": 1831,
+          "total_tokens": 2043,
+          "prompt_tokens_details": {
+            "cached_tokens": 582
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
