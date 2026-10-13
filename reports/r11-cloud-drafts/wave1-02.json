@@ -1,0 +1,195 @@
+[
+  {
+    "id": "012-2",
+    "answer": "老尹能迅速推进魔芋产业发展的原因在于：一是依托互联网思维和大数据精准选品，发现魔芋市场潜力；二是坚持全产业链布局，实现从种植到终端产品的闭环；三是创新“公司+村集体”等合作模式，提升规模化与农民收益信心；四是建立产学研中心，推动数字农业技术应用；五是聚焦消费新趋势，研发“芋胖胖”系列小食，打通城乡市场。这些举措协同发力，高效推进产业落地。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9046a34c95d8ae20ef442429367fa5017994aebd4bbaeb11ea11dc27d899c7da",
+    "selected_material_sha256": "315ba9b00f10d1a414931a273cc8b0c4b2c82db38eaaa72ed3e1821dab150114",
+    "question_sha256": "12c4e45eee50000e58e14997aa5eb693bfcc10d640affbf2fdbfa70a5be6eeba",
+    "characters": 170,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 170,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 1692,
+          "total_tokens": 1795,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "021-2",
+    "answer": "B省“工业上楼”模式是盘活存量工业用地、提升土地利用效率的重要探索。通过放宽容积率至3.5以上、建筑密度至55%、配套用房占比达30%，实现产业集聚与空间集约化。园区功能涵盖研发、生产、生活、生态，推动“人城产”深度融合。项目如智全科创园、满天星产业园等，显著提升亩均产出15%、降低用地成本10%，形成融合生产、生活、生态的新型复合园区。模式强调产业优选，重点布局电子信息、智能装备、医疗器械等轻设备、轻污染行业，满足企业对空间和功能的需求。同时注重空间设计柔性，采用“折叠空间”“多首层”等创新布局，兼顾重荷载企业生产需求与低楼层入驻意愿，实现上下游企业协同联动，形成产业链闭环，提升运营效率与协作水平。该模式已成为B省工业用地提质增效的典型路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "fb2cf691fd466ced5a4acbb22357f4e3ac8b3853d9e7d5eafa03853d22bfd7f3",
+    "selected_material_sha256": "653a40b58b04527e75196e44f0bc872d4c4c9e07ec5e4dc92fc1045b19937bc1",
+    "question_sha256": "3c21a418e02a4085e907ffe2ba82187ac46d05b667abd7374ef36b6307f55b0f",
+    "characters": 326,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 326,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 208,
+          "prompt_tokens": 1789,
+          "total_tokens": 1997,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "033-4",
+    "answer": "**在变革中坚守本分，在创新中增强本领**\n\n在全球科技革命与产业变革加速演进的今天，面对百年未有之大变局，唯有坚守实业初心、夯实技术根基，才能在喧嚣中稳住航向，实现高质量发展。材料五指出“在大变局的喧嚣中始终坚守住‘本分’，切实增强好‘本领’，不断突破创新”，这不仅是对发展路径的深刻洞察，更是对现实实践的精准指引。\n\nA集团从2001年被习近平总书记嘱托“创出自己的品牌、要有创新产品”以来，始终坚持实业不动摇。面对国际市场的不确定性，企业没有转行追逐短期利益，而是持续加大研发投入，累计投入超56亿元，建成覆盖中、美、日、韩、意的全球五大设计研发中心，自主研发出空气湍流控制、高弹减阻面料等关键技术，助力中国短道速滑队赢得冬奥会金牌。这说明，真正的竞争力源于对主业的执着与技术的深耕——本分是根基，是抵御风险的底气。\n\n与此同时，N省以“东数西算”为战略支点，推动算力赋能传统产业。在西鸽酒庄，智能化系统实时监测空气温度、土壤湿度等数据，实现精准种植；在仪表公司，车间上云、机床联网使生产效率提升30%，成本下降14%；在J市，大数据建模优化交通信号灯配时，拥堵时间减少20.3%。这些案例表明，技术应用不是简单替代，而是通过数据驱动实现管理升级和效率跃迁——这正是“本领”增强的现实体现。\n\n然而，创新不能脱离基础。D市虚拟产业园虽提供注册便利、税收返还等政策支持，但部分企业入驻仅为了减税，产业链协同意愿弱，上下游联动不足，反映出“创新链断裂”的问题。这警示我们：技术赋能若缺乏系统性布局，再先进的平台也难以形成合力。真正有效的创新，必须建立在产业需求与资源匹配的基础之上。\n\nC市通过构建“科创指数”模型和“双保·科创”融资机制，对科技型企业进行能力评估，并提供无抵押、低利率的信贷支持，帮助小微企业解决融资难题。这不仅缓解了“不敢贷、难贷”的现实困境，更体现了政策对市场主体“本领”成长的系统性扶持——从识别到服务，形成闭环，是创新生态的重要支撑。\n\n值得注意的是，提升“本领”必须建立在稳健与规范之上。C市通过金融服务港湾推动银政联动，严控中介乱象，杜绝“高利贷”“套路贷”，有效防范金融风险。这一做法表明：创新不是无序扩张，而是要在制度保障下实现可持续发展，让市场主体在安全环境中敢于投入、勇于突破。\n\n因此，高质量发展必须坚持“本分—本领—创新”的逻辑链条。企业要守住实业底线，不为短期利益动摇；政府要强化技术支撑与制度供给，提升资源配置效率；社会要营造尊重创新、宽容试错的环境。唯有如此，才能在复杂多变的环境中实现行稳致远。\n\n面向未来，在新一轮科技革命浪潮中，我们更需以定力守护初心，以行动锤炼能力，以突破推动变革。从A集团到N省，从C市到D市，实践证明：坚守本分是根基，增强本领是路径，突破创新是出路。唯有如此，才能在大变局中坚定前行，走向广阔而坚实的发展未来。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f9184587d1bf13838588ffeefd0e9cc7b9edfe3b30aa34c00b867b0387a060e6",
+    "selected_material_sha256": "5607c78dd753d78d25c6efe506c37454365e94468747dbf3b21071964035c3b5",
+    "question_sha256": "15ccd9a8c39546f3934fa27e03b4e4a398233a980916fda6dd9a7a4759bd91de",
+    "characters": 1174,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1216,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 774,
+          "prompt_tokens": 4628,
+          "total_tokens": 5402,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1174,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 746,
+          "prompt_tokens": 5525,
+          "total_tokens": 6271,
+          "prompt_tokens_details": {
+            "cached_tokens": 5401
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "043-2",
+    "answer": "当前H县农用地膜使用回收存在四方面问题：一是农民盲目多用、滥用地膜，部分使用低于0.01毫米的非标膜；二是地膜残留严重，每亩达3至5公斤，且逐年累积；三是回收难，农民清理成本高、积极性低，废品收购和企业处理均不盈利；四是管理分散，部门职责不清，执法监管不到位，违规使用屡禁不止。\n\n建议：一是严格监管非标地膜生产销售，打击违法行为；二是推广全生物可降解及高强度易回收地膜，实施“以奖代补”补贴政策；三是建立“生产—使用—回收”闭环链条，设立政府补贴回收机制，降低企业与农户成本；四是加强农民宣传教育，提升环保意识，推动形成全社会参与的治理格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "604359b0fd94f33226ea0d74ce80dcc5088daf62d36d44752bf870f2839314c2",
+    "selected_material_sha256": "8f0be19aa2f3a782582fc8a52518105b3bda51c7322f7165c93876e5872e2e3a",
+    "question_sha256": "e0cd501d09ed59f89209612a9f53fbd745cacc28f8a9d5c9143e5c97a7bff5f1",
+    "characters": 270,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 270,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 175,
+          "prompt_tokens": 5399,
+          "total_tokens": 5574,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
