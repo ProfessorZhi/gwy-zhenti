@@ -519,5 +519,63 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "151-4",
+    "answer": "**民声为本，治理向深**\n\n“民声一键办”之所以能“接听民意、解决民生、体现民本、凝聚民心”，关键在于它将群众诉求从被动响应转化为系统性治理的起点。在K市北湖区，110报警、12345热线、网格上报等多渠道信息被统一汇集，通过平台分发至镇街，实现“事事有回应、件件有落实”。这一机制打破了传统基层治理中信息分散、责任推诿的局面，真正把群众声音转化为可追踪、可闭环的治理行动，是“民本”理念在基层落地的现实体现。\n\n更深层次看，“民声一键办”实现了从“碎片化处置”到“系统性响应”的跃迁。江南区渡山港针对三兴大酒店路口摆摊扰序问题，由专业执法队伍快速到场处理，恢复秩序；而面对婆媳矛盾这一情绪化纠纷，工作人员将双方带至“乡音驿站”进行文化调解，最终化解矛盾。这类案例表明，治理不仅需要效率，更需精准识别问题本质、匹配专业力量，体现对群众生活情境的共情与理解。\n\n该机制还具备前瞻性预警能力，推动治理从“事后补救”向“事前预防”转变。宁海县宏昌街道连续接到多起过期食品投诉，指挥中心迅速回溯分析，发现风险集中于某类商超，随即组织暗访检查，查处2家违规单位、下架销毁全部过期商品。这说明，民声不仅是问题反映，更是潜在风险的“早期信号”，为政府提前干预提供了数据支撑和决策依据。\n\n基层治理能力的提升，离不开专业力量与机制保障。K市通过“双处警”“跟班作业”等方式强化一线人员处置能力，并建立“警云达”远程指挥系统，当现场复杂时可由民警线上指导。同时引入“蓝天救援队”“民声大姐”等社会资源参与调解，既提升效率，也增强群众信任感，形成政府主导、多元协同的治理格局。\n\n此外，“民声一键办”倒逼服务流程透明化与响应机制优化。某科技企业因政策补贴未兑现长期困扰，最终通过民声渠道推动相关部门明确责任、加快落实，实现“政策落地”。这说明，群众诉求不仅是反馈，更是暴露制度短板的重要窗口，推动政府提升服务效能和执行力。\n\n从治理现代化角度看，“民声一键办”构建了“民声—响应—反馈—优化”的闭环系统。它不仅解决具体问题，更通过数据监测、趋势分析，为政策制定提供现实依据，使决策更具针对性与科学性，实现从“经验治理”向“精准治理”的转型。\n\n综上所述，“民声一键办”之所以能真正“接住民意、解决民生、体现民本、凝聚民心”，是因为它以群众需求为起点，通过机制创新打通信息壁垒、提升响应效率、强化协同能力，将服务人民从口号变为可操作、可持续的制度实践。这不仅是技术平台的升级，更是治理理念的根本转变——把人民放在心中最高位置，让基层治理更有温度、更有力量、更有效率。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d7498526285cb30d3bcf477857c5a91914365eff0ee377c5654f7b152982d74e",
+    "selected_material_sha256": "3aca0c705b9abde4977665890abaf42d367bd3ef4590c37f1ee95ed0d44f7e3a",
+    "question_sha256": "8b3e152a3ac2edbb6add71c3b5e8fb7e74dc3b252d09396b21bd5311b7fbbf67",
+    "characters": 1055,
+    "word_limits": [
+      900,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1223,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 771,
+          "prompt_tokens": 4724,
+          "total_tokens": 5495,
+          "prompt_tokens_details": {
+            "cached_tokens": 582
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1055,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 678,
+          "prompt_tokens": 5616,
+          "total_tokens": 6294,
+          "prompt_tokens_details": {
+            "cached_tokens": 5494
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
