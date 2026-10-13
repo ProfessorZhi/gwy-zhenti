@@ -358,5 +358,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "109-2",
+    "answer": "“乡村档案不仅是岁月留痕，也蕴藏着发展动能”深刻揭示了档案的双重价值。一方面，档案记录村庄历史变迁、土地权属、婚姻社保等关键信息，是保障村民权益、化解矛盾的重要依据；另一方面，档案为基层治理提供决策支撑，如L县社区联建、矾石镇申遗、研学项目开发等实践，均依托档案实现资源整合与创新发展。同时，族谱、方言、非遗等特色档案凝聚乡情，激发乡贤参与，助力教育振兴和文化传承。由此可见，规范管理的乡村档案不仅是历史记忆的载体，更是推动治理现代化、促进乡村振兴的重要动力源。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c57b3f74d224a0da84112a3452538e8971a0099a8e0693a0ca8cdcfca09441d3",
+    "selected_material_sha256": "bfb0f05d882d3a3d45a2575183ad577776e46b3828d4bbece377e2cddd260ddc",
+    "question_sha256": "2f807c08ba8717e46a0c205260c2a55e5d118670e9c1118a6c523762a73d65a4",
+    "characters": 231,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 231,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 1952,
+          "total_tokens": 2091,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "120-2",
+    "answer": "深圳市S街道关于召开企业面对面座谈会的通知\n\n各相关企业：\n\n为深入贯彻落实党史学习教育“我为群众办实事”实践活动要求，进一步听取企业意见建议，优化执法服务，现决定召开企业面对面座谈会，诚邀贵单位代表参会。\n\n会议时间：2023年X月X日（星期X）下午14:00—16:30  \n会议地点：S街道便民服务中心三楼会议室  \n参会对象：辖区内注册企业代表、行业负责人及经营管理人员  \n\n座谈提纲：  \n1. 介绍街道综合行政执法改革“五化”建设进展，包括职责法定化、队伍正规化、执法规范化、手段智能化和参与社会化等内容；  \n2. 汇总当前18类职责、475项执法事项的实施情况及企业关注热点问题；  \n3. 听取企业在执法服务、政策理解、营商环境等方面的意见建议；  \n4. 针对共性问题，现场交流解决方案，明确后续改进方向。  \n\n请参会企业于2023年X月X日前将参会人员名单及主要议题反馈至街道执法办（联系人：XXX，电话：XXXX-XXXXXXX）。  \n\n本次座谈旨在搭建政企沟通桥梁，提升执法服务温度与效能，欢迎广大企业积极参与、建言献策。  \n\n深圳市S街道综合行政执法办公室  \n2023年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "35eff819fd1e56cb62c71d86e68e4ee89f407cd52ebe3b09be04262f946c5cfd",
+    "selected_material_sha256": "97cc053a6db006a65ec0544aa99f77f3b91cb6f1c10bde37184989afed4dc718",
+    "question_sha256": "74dd071d8653c8962814bfbd84316d2c0f94df526d9ce8092ee64d4b3d6bcef7",
+    "characters": 461,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 461,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 294,
+          "prompt_tokens": 910,
+          "total_tokens": 1204,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "133-2",
+    "answer": "“工业上楼”是顺应人地矛盾、破解用地瓶颈的创新模式，通过提高容积率和建筑密度，实现工业用地集约高效利用。其核心在于推动“人城产”深度融合，打造集研发、生产、生活于一体的产业社区。园区空间设计注重功能匹配，如“下生产、中组装、上服务”布局，满足不同产业对层高与荷载的需求，提升运营效率。同时，“工业上楼”并非无差别推广，而是对产业进行优选，聚焦轻设备、轻污染、轻振动的电子信息、智能装备等新兴领域，实现产业链上下游协同联动，形成“一栋楼一条链”的高效协作格局。该模式不仅优化了空间利用，降低用地成本，还通过柔性设计和多维产城融合，增强企业间交流与技术协作，提升创新能力和产业韧性，是推动高质量发展的重要路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "fa814ae1fec103ef799bef666b501910c0c3ae2f92b4a0e646eb1f066fe8d21e",
+    "selected_material_sha256": "a35047e3c4ef495a24528a84fa7f85a20ed01fd3dbf81697dbcb127f8e5774c6",
+    "question_sha256": "0ac59048c9bb234c9934292aab7c6f11c4cd94dc59c50899c502ef9286e99a3a",
+    "characters": 303,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 303,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 189,
+          "prompt_tokens": 1781,
+          "total_tokens": 1970,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "147-1",
+    "answer": "X省推进农业高质量发展的举措包括：依托气候优势发展葡萄酒产业，推动产业链延伸和旅游融合；实施高标准农田建设，提升土地利用效率，促进棉花全产业链发展；推广北斗导航无人驾驶农机，提高农作物种植机械化水平；改革水资源管理体制，科学调度洪水资源，提升灌区用水效率；延伸骆驼产业链，发展深加工产品和康养旅游项目，带动农民增收。通过产业整合、技术升级和模式创新，实现农业由“块状”向“带状”转变，推动农业提质增效与融合发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "416e39cc8340aefb26c11ca8f48ee2aed5f6f4d63bb45e7ec1def7a337e917c5",
+    "selected_material_sha256": "dc0aaa19941aeb1705125d38d32fff0b90e678da16421682b84c101671562af5",
+    "question_sha256": "8b3edcd681051eaa88dd835f0dc88aba95da59fc9e5e2fd10c3d51d1bebbeda9",
+    "characters": 206,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 206,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 115,
+          "prompt_tokens": 1699,
+          "total_tokens": 1814,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
