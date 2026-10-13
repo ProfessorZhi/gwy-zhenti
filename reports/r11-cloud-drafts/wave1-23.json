@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "063-1",
+    "answer": "T市推动柠檬产业发展的主要措施包括：建设柠檬种苗繁育中心，建立脱毒三级繁育体系；推广有机肥和绿色防控技术，实现化肥农药双减；发展柠檬深加工，开发饮料、食品、美容等5大系列产品；建设“四好农村路”提升交通条件；打造柠檬小镇，发展林下采摘、民宿等旅游项目；设立 lemon 电商运营中心拓展销售渠道；引入多种保险产品，建立普惠金融基地，强化产业保障。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3a6e64ef8b58bd0c3d36a8dd4f2f2c7a23400288db095282bfe3403853cd24e0",
+    "selected_material_sha256": "9bedb6c7f981724e4c3ce2fc190cd0665a1a85e44fb9af5f5a12283727fc0509",
+    "question_sha256": "61e5d3517f0e4a1c4c86d107145346c1bda22e10e6aa5fdbd77bfe1d6c204d7f",
+    "characters": 171,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 171,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 104,
+          "prompt_tokens": 1618,
+          "total_tokens": 1722,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "075-4",
+    "answer": "高岗村校地合作推动乡村振兴典型案例介绍\n\n高岗村通过“高校+村社”校地合作模式，探索出一条可复制、可持续的乡村振兴路径。2018年，区人民政府与N大学共建乡村振兴工作站，实施整村开发，梳理农田、收储闲置农房，盘活100余亩集体建设用地，开展入市交易试点，为村庄发展提供空间保障。\n\n在制度创新方面，村民代表大会审议通过《农村集体经营性建设用地入市方案》及收益分配机制，实现农企利益联结。企业每年向村集体和农户分红，并聘用农民参与生产，既增加收入，又拓宽了开发空间。\n\n在产业培育上，N大学生物学院专家团队引进优质辣椒种苗技术，开展种植培训，推动辣椒规模化、品质化发展，预计年产量达100吨，产值约500万元。同时，建成虫草鸡生态循环示范基地，利用黑水虻和紫金草养殖生态鸡，降低饲料成本20%至30%，提升利润，带动周边农户参与，集体增收近20万元。\n\n在文化活化与民生改善方面，大学生团队立足村民需求，设计具有乡土气息的微景观、儿童游乐场、地景座椅等公共空间，将农用工具融入设计，既保留乡村风貌，又增强生活趣味。村民从“冷清”走向“热络”，外出务工人员陆续返乡，三年来人均可支配收入年均增长8%。\n\n高岗村实践表明，校地合作通过制度创新、科技赋能、文化注入与产业激活，实现了村庄治理、产业发展与群众增收的协同提升，为全区乡村振兴提供了有益借鉴。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa49f57dd9d2bb0820debfd7c73ae7f85f62709862f428011c6160d65bd50503",
+    "selected_material_sha256": "6d7ccf290d238ef1d067394168f233bbef26a794951e9d0b42335371964f11e2",
+    "question_sha256": "8684a50dbfc30fd7948c0545c019faea0e6fe4e903249f43719ebc54d99a5930",
+    "characters": 562,
+    "word_limits": [
+      35,
+      600
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 562,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 355,
+          "prompt_tokens": 1671,
+          "total_tokens": 2026,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "084-4",
+    "answer": "**弱鸟振翅：县域发展的路径选择与能力锻造**\n\n“弱鸟要飞高飞远，既要找到适合的飞行轨迹，又要丰满自身的羽翼”，这句话深刻揭示了县域发展中的核心逻辑——发展不是盲目追赶，而是立足现实、精准定位、系统赋能。对于资源禀赋有限、基础相对薄弱的县域而言，必须在“找准赛道”与“强化内功”之间实现动态平衡，才能破局突围、行稳致远。\n\n“飞行轨迹”是发展的方向选择，体现的是战略清醒与差异化思维。N县从传统农业向蜜瓜产业转型，正是基于对本地碱性土壤和干旱气候的科学研判，实现了“人无我有、人有我优”的突破。这说明，县域发展不能照搬东部强县模式，而应以资源禀赋为基底，通过实地调研、技术合作等方式，挖掘自身独特优势，走出一条符合实际的发展路径。\n\n“丰满羽翼”则是能力的系统构建，体现的是内生动力与综合支撑。N县在小提琴产业落地过程中，不仅提供厂房、补贴和政策支持，更通过建立在外人才库、开展技能培训、动态更新政策等方式，为企业“立身”“成长”提供全方位保障。这表明，发展不能仅靠外部输血，更要注重激发内生动能，提升产业链条的韧性与自我迭代能力。\n\n从产业转型看，“飞行轨迹”与“羽翼丰满”相辅相成。P县服装企业由代工向ODM原创设计转型，既瞄准了高端市场，又通过加大研发投入、建设柔性生产线，实现了生产效率和产品附加值的双重提升。这一实践证明，产业升级不仅是方向调整，更是能力升级的过程。\n\n从体制机制看，县域发展需要“内外兼修”的治理逻辑。N县通过整合审批窗口、推行“两会一日”机制，打通了企业办事“最后一公里”，提升了服务效能；同时通过组织赴外考察、支持参展出海，助力企业拓展市场。这说明，制度创新是为发展“铺路搭桥”，而市场开拓则是检验能力的“试金石”。\n\n更深层次看，县域发展必须跳出“唯规模论”的思维定式，从“被动承接”转向“主动塑造”。正如材料中所言，“弱鸟要飞高飞远”，关键在于不因起点低而自卑，也不因条件差而盲动。唯有在精准定位的基础上，持续强化技术、人才、服务与市场联动能力，才能真正实现从“跟跑”到“并跑”甚至“领跑”的跨越。\n\n因此，县域发展应以“战略清醒”为航向，以“能力锻造”为引擎，在因地制宜中找准路径，在系统施策中积蓄力量。唯有如此，弱鸟方能破风而起，展翅高飞，真正实现高质量、可持续的发展梦想。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "351f89dbe6e42abfa299444e1069c6df47069f9858b38b6b2d4319b12fdf1de4",
+    "selected_material_sha256": "6f1fb44759c59b0def191b206748940362a0b9692f6efb615281107b1ba13111",
+    "question_sha256": "90bdc1fd9795367db8f35744b207afcec449a6aeb496cdf86c85392681511c88",
+    "characters": 940,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 940,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 604,
+          "prompt_tokens": 4590,
+          "total_tokens": 5194,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "094-3",
+    "answer": "“金蒜盘”是K县通过全产业链深度融合实现产业高质量发展的生动体现。一是推动种植端机械化、标准化，提升生产效率与品质；二是依托科研力量开展太空育种，培育高产优质抗病新品种，夯实源头基础；三是建设批发市场和线上平台，实现价格透明化、信息对称化，保障农民收益；四是发展深加工，延伸产业链条，开发黑蒜、大蒜素等高附加值产品，提升附加值；五是构建“企业+村集体+农户”利益联结机制，实现利益共享、风险共担。全产业链协同发力，不仅优化了资源配置，更增强了抗风险能力，真正实现了从“种得好”到“卖得值”、从“粗放型”向“集约化”转型，为乡村振兴提供了可复制的产业路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8ae8a1533449c5cf68dbb8ca21f3c884280955089d5b8d46c49cab0a302fbadd",
+    "selected_material_sha256": "71869753a0a1087b51c7cf0ded0913484c51b5b48ec18194a540c94cb9ead322",
+    "question_sha256": "0a5acacb993c0c3e4ace5ced43c8368f4a5670150c4bfe68efa71a18aec29754",
+    "characters": 277,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 277,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 174,
+          "prompt_tokens": 1738,
+          "total_tokens": 1912,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
