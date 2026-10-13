@@ -1,0 +1,195 @@
+[
+  {
+    "id": "018-1",
+    "answer": "四川省采取多项措施保障公务员招录考试公平公正：制定《考务工作细则》，规范命题、阅卷等环节；实行专家入闱命题、全程纪检监督，严控试题安全；建立试卷专用保管库和运输跟踪系统，强化硬件安防；实施电子化评卷，采用多评机制、系统监控与异常预警，减少误差；设立省人事考试联席会议机制，加强部门协同防控；对违纪行为明确处理办法并记入诚信档案；通过宣传教育提升考务人员法治意识和保密责任。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d23c18d223ad00982467178c3497d8e0cd84bff62a0559c3f45350c480139718",
+    "selected_material_sha256": "af0ef9bbe939aa9fb3f69a4ad864f190d6382351284d1e9b19f2bf30a087c51f",
+    "question_sha256": "a3985b8a5e24d5718444f58ff30e3d15125b83cfa4401aedae084e7e35401c42",
+    "characters": 186,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 186,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 115,
+          "prompt_tokens": 5172,
+          "total_tokens": 5287,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "029-4",
+    "answer": "**创新是破局之刃，亦是前行之路**\n\n“创新是有风险的，但它又是规避风险的最好方式”，这一论断深刻揭示了在时代变革中，创新并非无本之木，而是以承担不确定性为代价，换取长远安全与可持续发展的必由之路。B市经开区汽车企业通过引入轻量化材料、发展新能源车型，实现燃油效率提升和产品结构优化，正是在传统路径遭遇瓶颈时，以技术创新主动“破茧”的生动体现。当市场需求转向绿色低碳，企业若固守旧有模式，终将被时代淘汰；唯有敢于突破，方能在竞争中掌握主动权。\n\n创新之所以具有风险性，源于其本质是探索未知、打破惯性。B市F县在环保压力下转型为生态矿区，从“粗放式开采”转向“清洁化利用”，过程中面临技术不成熟、市场接受度低等挑战，但正是这种不确定性，推动了能源结构的系统性重构。同样，在C县发展林麝养殖的过程中，产业模式未被验证，投入与回报周期长，然而通过因地制宜、资源盘活，不仅实现了农民增收，更带动了县域整体跃升。这些案例说明，风险并非创新的敌人，而是其成长过程中的必经阶段。\n\n更为关键的是，创新本质上是一种“系统性避险”机制。传统发展模式依赖资源消耗和规模扩张，一旦外部环境变化，极易陷入被动。而创新通过技术迭代、模式重构、产业链延伸，构建起更具韧性与适应性的体系。B市果醋企业将祖传酿造技艺数字化，不仅保留了文化基因，更实现了生产标准化与产能倍增，这种“传统与科技融合”的创新，既避免了经验传承的断层，也规避了市场波动带来的经营风险。可见，创新不是盲目冒险，而是以前瞻性布局化解未来不确定性。\n\n此外，创新还具备“反哺发展”的功能。B市经开区在新能源汽车领域突破，不仅提升了自身竞争力，更通过带动上下游企业协同发展，形成产业集群效应，为区域经济注入新动能。这说明，创新不仅是企业个体的突围，更是区域整体发展的引擎。当一个地区敢于在关键领域率先探索，便能在产业格局中占据主导地位，从而构建起抵御外部冲击的能力。\n\n当然，创新需建立在科学决策与风险评估之上。B市在产业转型中坚持调研先行、分类施策，既不“一刀切”关停传统产业，也不盲目跟风投资，而是根据资源禀赋和市场需求精准定位，体现了治理智慧。这提醒我们：创新不是无序试错，而应是建立在充分论证、动态调整基础上的理性跃迁。\n\n综上所述，“创新是有风险的，但它又是规避风险的最好方式”，这一判断既是对现实的深刻洞察，也是对未来的清醒指引。在高质量发展的时代背景下，城市与企业唯有勇于突破、敢于试错，在不确定性中寻找确定性，才能真正实现从“被动应对”到“主动引领”的转变。创新之路虽险，却是通往安全、繁荣与可持续的唯一路径——它不是逃避风险，而是以更智慧的方式，将风险转化为发展的动力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b1ff2fb5df40166660110d9a84181cda64e589fc6501cb8f450e641a67efd164",
+    "selected_material_sha256": "f692a7f507841e366820dcc9e52ce1fe4bf1d286dfce7606b9195062709e79fa",
+    "question_sha256": "d60db45627d85a6827b5fa542dde2d52ae84fd1979e147ff739a4bfa84e5ea9f",
+    "characters": 1097,
+    "word_limits": [
+      900,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1097,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 662,
+          "prompt_tokens": 4521,
+          "total_tokens": 5183,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "039-4",
+    "answer": "暖心家政在行动\n\n近年来，T市S区聚焦群众“急难愁盼”，深入推进“暖心家政”行动，以政策支持、标准提升、服务下沉为抓手，推动家政服务向专业化、规范化、便民化发展，切实提升居民生活品质和行业整体水平。\n\n为破解从业人员技能不足、职业认同感低等问题，S区将家政服务人员及灵活就业人员纳入职业技能培训补贴范围，按工种给予相应培训补贴。通过仿真操作、情景教学等方式，系统开展职业道德、服务技能、安全规范和沟通技巧培训。学员刘大姐便是受益者——她2022年参加免费培训后取得月嫂证、育婴员证，不仅实现稳定就业，收入也明显提高，“现在工作有尊严，生活更有希望。”这一变化折射出职业培训对个体发展的深远意义。\n\n同时，S区积极推动家政企业由中介模式向员工制转型。通过减税降费、保险返还等政策支持，引导企业建立统一服务标准、培训体系和管理制度，有效减少“跑路”“服务质量不一”等问题。截至目前，全区新增员工制家政企业10家，服务质量和稳定性显著提升。禾熙公司金牌月嫂张姐表示：“只要技术过硬、服务优质，就能获得认可，甚至被宣传报道，真正有面子。”这不仅提升了从业者的职业荣誉感，也增强了行业公信力。\n\n为加强行业自律与规范管理，S区于2022年初成立家政服务协会，发挥政府与企业之间的桥梁纽带作用。协会积极宣传“诚信经营”理念，遴选推广优秀企业和典型人物，树立行业标杆；同时建设信息平台，推动服务资源精准匹配，提升服务可及性与透明度。\n\n在服务模式创新方面，S区探索“家政+物业”路径，推动家政服务进社区、入网格。已在3个街道6个示范社区设立便民服务站，建立商务局工作人员分包机制，确保服务流程规范、管理到位。所有服务项目和服务价格均实行明码标价、上墙公示，居民可自由选择，实现“看得见、买得清、用得放心”。\n\n为进一步提升服务效率与透明度，S区正加快开发“我要家政”小程序，推动线上预约、在线评价，实现供需精准对接。同时推行“亮码上岗”制度，要求家政人员在信用平台登记信息，上门服务时亮码（牌），客户扫码即可完成服务质量评价，形成“上岗—服务—反馈”全流程闭环管理，切实保障消费者权益。\n\n目前，S区注册家政企业达174家，从业人员2402人，服务网络不断延伸，群众满意度持续提升。从“有服务”到“好服务”，再到“可信赖的服务”，S区以系统思维推动家政行业高质量发展，既解决了就业难题，也提升了城市服务质量。\n\n暖心家政，不止于服务，更在于托起千家万户的幸福生活。未来，S区将持续深化“暖心家政”行动，健全政策体系、完善服务机制，让每一份家政服务都温暖有温度、专业有标准、管理有保障，真正成为城市高质量发展的温暖底色。\n\n（全文共946字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "56893a144d56f81ab3e157c5e4190f1cf58f1a01321d5611007dc8992ad49b20",
+    "selected_material_sha256": "ff142eff3f28a22ee10d8cc9fd36794408856bfcdde20c1763b2409704df7e9d",
+    "question_sha256": "119edc13df4588bd8df187fecb783dbf040f1b11891e959fe59b1110b966b591",
+    "characters": 1095,
+    "word_limits": [
+      800,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1238,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 767,
+          "prompt_tokens": 1790,
+          "total_tokens": 2557,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1095,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 686,
+          "prompt_tokens": 2648,
+          "total_tokens": 3334,
+          "prompt_tokens_details": {
+            "cached_tokens": 2556
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "050-1",
+    "answer": "H县乡村垃圾分类成功经验：成立高规格实施小组，制定路线图，统筹推进；实行“四分类”闭环管理，环环相扣；坚持奖惩结合，分好奖励、乱丢重罚；开展全覆盖宣传教育，纳入学校考评；村民参与缴费，保障人力投入；推动垃圾资源化利用，激发村民参与积极性。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4a351eb307b423bb28218675abd144535476db7a35ced0444e07d9bcfa0d332e",
+    "selected_material_sha256": "727289e10f0ffd11dfea4dc44fde14321d1759061787d7f21a4839fc126c9684",
+    "question_sha256": "a86fb6d1f3134498df1caa0bc3651e03a1bc48d3462e16d444c5901b25288133",
+    "characters": 119,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 119,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 74,
+          "prompt_tokens": 5204,
+          "total_tokens": 5278,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
