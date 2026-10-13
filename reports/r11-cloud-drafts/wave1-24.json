@@ -526,5 +526,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "165-2",
+    "answer": "裕民社区通过多措并举创建充分就业社区：一是优化营商环境，推动项目落地，新增超市、楼盘等带来600余个就业岗位；二是开展免费技能培训，组织电商直播、烹饪等培训220人次，提升群众就业能力；三是健全就业服务机制，建立“一人一档”台账，实施精准帮扶，实现困难人员100%就业；四是加强劳动力动态管理，网格员常态化摸排、推荐岗位并跟踪回访，确保就业信息畅通。通过政策支持、技能培训与精准服务相结合，社区实现4028名劳动力就业率97%，失业人员再就业率达98%，切实提升了居民就业质量和稳定性。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c3fa7740808f0af0844548b31912cc8821841c7f16934f3be35dd9243e2ecf22",
+    "selected_material_sha256": "6a4ff6c21699e052dbbbeeeb1f0223abff5912b26903431d1071d6689f1aa582",
+    "question_sha256": "3c977e561ebea8cd489579269d060e65d8e7c2b784a7da1fd6df0ba84605391c",
+    "characters": 243,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 243,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 145,
+          "prompt_tokens": 1809,
+          "total_tokens": 1954,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "175-1",
+    "answer": "J市推进诉源治理通过多元联动机制：依托外国人服务管理平台调解邻里纠纷；建立行政争议调处中心，推动行政机关与群众高效沟通，实现案件和解；开展检察公开听证，面对面释法说理，化解信访矛盾；设立“种子法庭”，引入专家陪审员，提升涉种纠纷专业化、调解率。上述举措坚持源头预防，非诉机制挺前，将矛盾化解在基层。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7ec9a5ba748523020f879a7d9e96842ea7014e52fa535aef949d0d1d406239d5",
+    "selected_material_sha256": "998536fc51cfaa0cf8080a6a484520fc86284a9f3fe92817d8c435e8b91139ea",
+    "question_sha256": "9d16e75c41e333b5cf2025b534706adb584e11fa31e683b1b64e9f769763e786",
+    "characters": 149,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 149,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 94,
+          "prompt_tokens": 1630,
+          "total_tokens": 1724,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "187-1",
+    "answer": "H市南山小学以日记教育为抓手，推行全员育人。从语文到全科，引导学生写记事、观察、诗歌、照片等多样日记，增强生活体验与写作兴趣。开展循环日记、班级展示和交流活动，促进互学共进。教师坚持写反思日记，提升专业成长。倡导家长撰写陪伴日记，通过题目引导沟通，班主任定期批阅并评比表彰，实现家校协同育人，推动学生德智体美劳全面发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d14a980083ed7bfe071d75352b86a52b6cdfec0954a49e5be5d2d3e6eeccc588",
+    "selected_material_sha256": "10dc58cb803416aa9cfe756b20ee060bef3387eebbd5f53349734068019e8956",
+    "question_sha256": "00f948a49577d1d66c5d4d02040c3efbee36561ae41fed3d3d1efef0422ebb6d",
+    "characters": 160,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 160,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 102,
+          "prompt_tokens": 1821,
+          "total_tokens": 1923,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
