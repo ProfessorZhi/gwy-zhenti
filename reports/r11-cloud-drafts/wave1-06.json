@@ -1,0 +1,137 @@
+[
+  {
+    "id": "013-2",
+    "answer": "南山小学以日记教育为抓手，打通课堂与生活、学校与家庭的育人通道。通过引导学生记录生活、反思成长，实现德智体美劳全面发展；教师写反思日记促进专业成长，家长写陪伴日记增强亲子沟通，形成家校协同育人的良好生态。日记不仅是一种写作形式，更成为学生观察世界、思考人生、涵养品格的重要载体，体现了教育回归本真、注重过程的深层价值，为新时代基础教育提供了可推广的实践路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "629e1a620da2636e2a2169a4e8fbe571dfa3aff3cb4d1953754f3b0048c61852",
+    "selected_material_sha256": "24c285cbe4bf91cac5010461902f2ccfea7b3152a9cfccddd4bd592b02a83d9b",
+    "question_sha256": "2ee43da33f0cccfb5544c243591a1278811e6bf142397fdf8e7184136adb9e6b",
+    "characters": 179,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 179,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 106,
+          "prompt_tokens": 1932,
+          "total_tokens": 2038,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "024-1",
+    "answer": "共享经济发展的条件包括：一是闲置资源基础，如空置房屋可转化为共享房源；二是畅通的流动性，即用户流量支撑服务持续运营；三是信息互联互通机制，实现平台间资源共享与客源输送；四是健全的信用体系，保障交易诚信与履约；五是合理的产权分配与政府监管，确保公平性与可操作性。这些条件共同构成共享经济可持续发展的制度基础和运行保障。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "678ca4191cec409466d15ead41a1cb7a263162cfaa8a1e1da4ce6c90c4634931",
+    "selected_material_sha256": "6f970ec7004661ab2134bc051cbf9715f7622e54ff1feea7b3a0982d6e575f7e",
+    "question_sha256": "34d911095652c33af8e99ca351c80e0bf7829533f03a4be88f7a7c5a21201d7f",
+    "characters": 158,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 158,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 91,
+          "prompt_tokens": 4827,
+          "total_tokens": 4918,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "044-2",
+    "answer": "Z市火车站停车场存在车位严重不足、上车点设置不合理、标识不清、违停现象频发等问题。地面车位仅170个，远低于车流量需求，且上车点单一、面积小，导致乘客难找车、司机难候客。部分网约车为节省停车费违规违停通道，影响通行秩序。管理上存在“头痛医头”、多部门协同不畅问题。\n\n建议：一是科学规划增设多个明确标识的上车点，优化空间布局；二是实行差异化停车收费政策，延长免费时段或设置错峰接单机制；三是建立多部门联动机制，强化交管与物业协作，对违停行为依法依规处罚，并加强现场引导与巡查。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "dd97b62429043e73f0d80c63a00c95081a462fd256a4d5d23c2dc293cda32883",
+    "selected_material_sha256": "90d43c41a798c0425d75ef4a5c0eac455974fe1583e678ba49b96dbecafe6a5a",
+    "question_sha256": "b15b2cf518db679ad13603a66f46f8b20a921854c2a0390a7a5dff27ffc4fba9",
+    "characters": 236,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 236,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 156,
+          "prompt_tokens": 1464,
+          "total_tokens": 1620,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
