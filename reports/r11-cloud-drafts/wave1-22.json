@@ -551,5 +551,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "156-2",
+    "answer": "“边城，还是那座城，但却已不再‘边’”深刻揭示了S县从地理隔绝到发展突破的转变。过去因地形闭塞、交通不便而被视为“边”，如今依托中欧班列、西部陆海新通道等物流枢纽建设，实现了对外联通；通过现代物流园区带动商贸、产业和电商发展，激发了内生动力。同时，河坝村古鱼化石发现与地质资源开发，推动形成“地质+自然教育”特色乡村经济，实现文化赋能与乡村振兴融合。交通通达、产业兴旺、生态价值释放，使S县摆脱地理束缚，真正融入全国乃至全球发展格局。这不仅是基础设施的改变，更是发展模式和内生活力的跃迁，标志着“边城”已从被动边缘走向主动发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "47c8813fa09c98b1e17b0c3107ce80afc922a867ad859416f7708d65abd1c534",
+    "selected_material_sha256": "19d914b7072f8b17479cbfceca67952b3ffbd0dcc0bd5a394e725586cc885b92",
+    "question_sha256": "32ed18d7fd452dc4aaa10e0f3b392e11c45bb88dd762cfd54580e74e270a3eeb",
+    "characters": 264,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 264,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 170,
+          "prompt_tokens": 1753,
+          "total_tokens": 1923,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "174-5",
+    "answer": "打造特色产业集群，激发新质生产力新动能\n\nD市坚持产业链协同联动，聚焦主导产业，推动龙头企业引领、中小企业协同，加快构建高效、协同、创新的特色产业集群。依托链主企业，系统梳理产业链全景图与招商地图，精准补链延链，持续引进投资体量大、科技含量高、质态优良的重大项目，去年新注册重大产业项目52个，总投资达391亿元。\n\n聚焦“卡脖子”技术攻关，市政府设立专项基金，支持骨干企业联合组建平台，攻克核心技术和关键零部件难题，实现关键领域自主可控。同时，建设特色产业集群共享数据中心，集成5G、工业互联网等智能基础设施，实现设备、技术、产能的高效共享，破解中小企业资源不足难题，提升协同生产效率。\n\n通过建设科创飞地、创新载体，引进高端人才团队，打通科技成果转化通道，助力企业“拎包入驻”、快速成长。在产学研深度融合中，企业研发投入超营收4%，形成一批行业领先产品，带动新材料、高端装备等产业集群集聚发展。\n\n未来，D市将持续强化资源统筹与协同机制，以链主带群、以共享促优，推动产业集群向“新”而行、向“质”图强，为新型工业化和高质量发展注入强劲动能。  \n\nXXXX年X月X日  \nD市政府办公室",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a09d052d61a3be6341f5544d14d279337c1da62f3a6f8b4e74d6aa4cecee30a5",
+    "selected_material_sha256": "3c9f8fdc72b93d216d9e9f74fd1d472588bef9b46effd45dcc301e32449dfcd5",
+    "question_sha256": "b2a57088f8945966d26754b9d57f115251720fa941a8a4171248493fbea297d7",
+    "characters": 480,
+    "word_limits": [
+      400,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 480,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 282,
+          "prompt_tokens": 1640,
+          "total_tokens": 1922,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "186-3",
+    "answer": "马家岭村的变化  \n\n山峦叠翠，麦浪翻涌。曾经寂静的村落，如今因一场艺术的觉醒而焕发生机。2018年，美术学院师生走进马家岭，用麦秆搭鸟巢、以田地作画布，却起初被村民不解。后来，他们办起“关中忙罢艺术节”，让秦腔、民谣、健美操在夏收后田间响起，传统习俗重燃烟火。  \n\n村民们从旁观者变为参与者：自绘图纸改造涝池为剧场，亲手搬运黄土填地基；老徐的农家乐年收入翻倍，葡萄售价从2元涨至4元，村民笑容多了，人气也旺了。  \n\n艺术不再遥远，生活即创作。割麦、磨面、吃面成了仪式，老乡们在巨幅画像前说：“我们是麦田的主人。”如今，年轻人返乡创业，民宿、旅游、农品销售遍地开花，村子从“空壳”走向“生机”。  \n\n马家岭村证明：当艺术与乡土相遇，土地便有了温度，人心便有了归处。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d0f9e608c933ec35a9d1b31d873bd7124c6068228a3b6ccec9284e79f01a67f6",
+    "selected_material_sha256": "b171f5be92fb03650e877a6aae06dc9564f97eb0c09ffdf4db44ac8138334ae3",
+    "question_sha256": "f3c7d2e2585411f5733e4c91dcbc97a27db43af025ed7ae305a4a176097073fd",
+    "characters": 319,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 319,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 245,
+          "prompt_tokens": 3926,
+          "total_tokens": 4171,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
