@@ -397,5 +397,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "110-2",
+    "answer": "外籍人员在华常遇问题：办事效率低、服务态度差、语言不通、就医困难（费用高、信息缺失）、出行不便（公交无外文标识、拥堵）、食品安全与环境问题（雾霾、秩序差）等。\n\n对策建议：  \n一是优化行政服务，简化签证居留手续，建立多语种服务窗口和在线互动平台，提升办事效率与透明度。  \n二是加强医疗体系国际化建设，增设外文导医、提供外文诊疗信息、降低外籍就医门槛，保障药品安全与可及性。  \n三是完善公共交通系统，增加外文标识、时刻表和实时信息显示，优化线路规划，缓解拥堵问题。  \n四是提升城市治理水平，加强环境监管，改善空气质量与交通秩序，增强外籍人员生活安全感。  \n五是推动公共服务标准化、国际化，借鉴新加坡等城市经验，建立多语言、高效、便民的综合服务体系，营造更具吸引力的宜居宜业环境。  \n\n（共408字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a84cfab8401b41bf0429fae96f18b4716a45d92253194fc0779239f6d4f46e6f",
+    "selected_material_sha256": "a5b7b6776a87460b97eb56cf52a91da3186723c6f5bc56d5aac7984cdb978f58",
+    "question_sha256": "34f8e0028731e3bcf6c3146609f896328a66581be76f9cda958210498adbc293",
+    "characters": 333,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 333,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 210,
+          "prompt_tokens": 3851,
+          "total_tokens": 4061,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "122-2",
+    "answer": "调研提纲  \n\n一、项目背景与政策目标  \n了解“工业上楼”在深圳市制造业发展中的定位，明确其“三生融合、三创结合、三个平衡”的总体要求及连续五年每年提供不少于2000万平方米高品质厂房的实施路径。  \n\n二、“工业上楼”适用性与技术条件  \n调研不同产业类型对空间布局、层高、承重、通风等生产需求，分析哪些行业适合“上楼”，哪些需谨慎推进，明确技术可行性边界。  \n\n三、空间设计与功能配置  \n重点考察厂房层高、可拆合结构、流水线长度适配性、多功能复合布局（如厂房+写字楼）等设计细节，评估其对产业链供应链稳定性的支撑作用。  \n\n四、成本控制与租金机制  \n调研优质厂房月租不超过35元/平方米、年涨幅≤5%的政策执行情况，分析其对企业用房成本的保障效果及可持续性。  \n\n五、项目模式与运营机制  \n对比宝安全至园、新桥东产业园、红花岭基地、宝龙智造园等典型案例，总结“预招商+定制化”“灵活可拆合”等模式的优势与推广条件。  \n\n六、多渠道供给与土地政策创新  \n探究国有资本、市场化资本参与路径，分析土地政策创新如何实现项目资金补缺和资源盘活。  \n\n七、存在问题与优化建议  \n收集企业在空间适配、审批流程、配套服务等方面的实际困难，提出针对性改进措施。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0d5ae53f3f47051dbef86ce365d044e07937dc10cd74aee6404694519553d038",
+    "selected_material_sha256": "bed96cb743406d71cc516f92a1aeec37fafaa5bea3ca5a5872afbbe9eda1cb31",
+    "question_sha256": "308c8031e20ee5596388e717d7ce4014206a042bec92ec694cd43e55a670145e",
+    "characters": 485,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 485,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 318,
+          "prompt_tokens": 1158,
+          "total_tokens": 1476,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "136-1",
+    "answer": "G县在保护低级别文物方面采取了以下做法：一是开展集中普查，摸清家底，新发现3处未登记文物并建立信息档案；二是完善文物信息监管平台，实行建设改造项目“一票否决”制度，防止文物被拆除；三是建立“省补、县配、村民自筹”多元投入机制，解决资金难题；四是加强考核激励，将文保成效纳入高质量发展考核；五是推动保护与利用结合，通过村史馆、研学活动等方式提升公众认知，助力乡村振兴。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9a6b99c16049555245c757873249b94da6b45ab2da745539128773fdcc4a39ef",
+    "selected_material_sha256": "d494b9cefe1801a026bd4d8d414936b74ed38d4a49eb6df69d519919d8bdcf78",
+    "question_sha256": "de2ecd119384c3510cf607fe39ff8284e695aa3309e419b8465ae213820ac3a6",
+    "characters": 183,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 183,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 118,
+          "prompt_tokens": 1709,
+          "total_tokens": 1827,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "148-3",
+    "answer": "从“门前海”到“共富海”\n\n曾几何时，“祖宗海”“门前海”的争夺，让上澳湾海域纷争不断。如今，这片富饶的5万多亩海域正焕发新生——从无序争抢走向有序共享，从个体谋利迈向共同富裕。\n\nC县以“三权分置、二级发包、一证到底”改革为抓手，创新建立养殖用海管理机制：政府行使所有权，村集体行使经营权，养殖户享有承包权。通过“养民证”制度，明确权责边界，实现资源可追溯、权益可保障。无人机航拍与卫星定位技术构建电子“户口册”，为用海管理提供精准支撑。\n\n改革不仅化解了长期矛盾，更激活了发展动能。紫菜产量占全国六分之一，年产值超10亿元，带动沿岸乡镇共同致富。废弃竹竿集中清理、环保插杆替代，守护海洋生态；紫菜育苗基地、精加工产业园相继落地，“多彩上澳”渔村旅游项目蓬勃兴起。\n\n如今，兰大爷承包42亩海域，年均增收七八十万元，赤水村集体经济年均增长40%。码头修缮、道路改造、环境绿化全面推进，小渔村蝶变为生态宜居的美丽乡村。\n\n从“门前海”到“共富海”，不仅是用海方式的转变，更是乡村振兴理念的升华——以制度赋能发展，以共享成就幸福。  \n\nC县人民政府  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3fed9288427f328c1637b4fbb4deb8715936570c7bb85fdf132047f4aabfc4fc",
+    "selected_material_sha256": "8523e6f4859f316ba0d31c2c809e39f8da6f915d6ba703d10ad71c11abb81ca5",
+    "question_sha256": "8adf00d27f6e9239cabddf23bd94cd7dd8eadd33e93cdb4de3352c6a71fdda39",
+    "characters": 469,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 469,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 319,
+          "prompt_tokens": 1925,
+          "total_tokens": 2244,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
