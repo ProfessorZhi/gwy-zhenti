@@ -564,5 +564,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "154-1",
+    "answer": "C市开展城市更新的主要做法包括：坚持“微更新、轻干预”原则，修复古桥河道，保留历史风貌；创新提出“预留10%-15%可生长空间”的项目方案，实现历史建筑与现代功能的“新旧共生”；运用AR、全息投影等科技手段，增强文化体验与互动；通过入户访谈、居民参与决策，提升群众基础与认同感；实施全过程全周期服务，推动文化IP产业化，促进产城融合，实现更新成果的可持续发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8cc841a6145d074b33f051c73904872e242ea8dbbb2b22967e86b1daa2fd1af9",
+    "selected_material_sha256": "76e2acecb468cd50ae58bb6d43dffd067faa5c1ee8b9e9b348b0c50d4e1af351",
+    "question_sha256": "981d076de55bb9005d0eca501cee707ae2b52941d1db1fd9d657d1f21e848fc9",
+    "characters": 180,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 180,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 113,
+          "prompt_tokens": 1815,
+          "total_tokens": 1928,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "162-4",
+    "answer": "**以“变”促“变”：推动绿色发展的系统性变革**\n\n“以变促变，以新求新”，不仅是一句发展理念的概括，更是一种深刻的战略思维。它揭示了在时代变革中，唯有主动变革、勇于创新，才能打破固有路径依赖，激发发展新动能。在生态文明建设日益成为国家战略的今天，C市以碳汇为切入点，通过制度创新、模式重构和理念升级，实现了从“被动应对”到“主动引领”的跃迁，正是“以变促变”的生动实践。\n\nC市将传统治理方式与绿色低碳理念深度融合，推动城市空间重构。过去高架桥下的“灰色疮疤”，如今被改造为花海绿廊，不仅美化了环境，更通过市政污泥制肥、建筑渣土改良等技术手段，实现了资源循环利用和生态固碳的双重目标。这一变化并非简单修补，而是以系统思维打破“垃圾—污染—治理”的旧循环，建立起“废料—资源—生态”的新链条，真正做到了变废为宝、变害为利。\n\n更进一步，C市通过建立环境交易所、推行碳汇交易机制，赋予了生态环境以经济价值。浦上村将1.3万亩毛竹林转化为可交易的碳汇资源，村民从“守林人”变为“卖碳翁”，不仅获得稳定收入，更激发了生态保护内生动力。这说明，当环境价值被量化、被认可，个体行为便有了明确回报，从而形成“保护生态即创造财富”的正向循环。\n\n与此同时，碳汇理念已渗透至市民日常生活，通过“碳汇积分”小程序，居民的绿色出行、旧物回收等行为被记录并激励，推动了环保意识向环保行动的转化。这种由个体参与驱动的广泛社会响应，正是“以新求新”的体现——在观念层面，人们从“要我环保”转变为“我要环保”，从而构建起全民共建共享的绿色生态格局。\n\n值得注意的是，“以变促变”并非一蹴而就，而是需要顶层设计与基层实践协同发力。C市通过引入高新技术团队、建立人才库、设置特别议事员等方式，既提升了治理专业性，又增强了公众参与度。例如，高先生作为工程师参与广场改造设计，其专业建议被采纳，不仅优化了空间布局，也增强了居民对决策过程的信任感。\n\n从更宏观的视角看，“以变促变”本质上是发展模式的深刻转型。它要求我们在面对环境压力、资源约束和民生诉求时，不固守旧有路径，而是敢于打破思维定式，用创新机制破解发展难题。无论是城市空间治理，还是产业布局调整，抑或是公众行为引导，都需以系统性变革回应现实挑战。\n\n总之，“以变促变，以新求新”不仅是一种战略选择，更是一种时代责任。唯有坚持创新驱动、制度赋能和全民参与，才能真正实现人与自然和谐共生，推动经济社会发展迈向绿色、可持续的新阶段。这不仅是C市的探索路径，更是新时代中国高质量发展的必由之路。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a9d3d1542d8903b3925f2fcabc4544de2907e0ef94f28be310631a33d240850b",
+    "selected_material_sha256": "74ff507a49fb5bf67998991fd36b97aeea499a25ff9633d3db7048f7fead8eff",
+    "question_sha256": "5b355e53459c6180fdd755fcc8be25574000f04fb2cd96d2a6477f8fce81d712",
+    "characters": 1038,
+    "word_limits": [
+      900,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1038,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 654,
+          "prompt_tokens": 4803,
+          "total_tokens": 5457,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "172-4",
+    "answer": "针对S省消费市场在长假期间存在的问题，提出以下建议：\n\n一是加强公共服务设施规划与动态管理。景区应联合地图平台建立交通流量监测机制，定期更新导航路线，避免因定位错误引发拥堵；对高速服务区充电桩布局进行科学评估，提升应急服务能力。\n\n二是完善服务主体协同机制。推动景区、文旅企业、平台运营方建立信息共享和联动响应机制，明确责任分工，提升节假日人流车流的疏导效率与应急处置能力。\n\n三是强化消费秩序监管与公平性保障。严禁“插队”等违规行为，对号贩子及抢号APP实施行业禁入和信用惩戒；要求餐饮企业公开排队规则，杜绝利用技术手段破坏公平秩序。\n\n四是提升平台合规意识与服务透明度。督促地图、社交软件等平台加强内容审核与用户引导，杜绝误导性导航或诱导消费行为，切实维护消费者知情权与选择权。\n\n五是健全消费者权益保护联动机制。市场监管部门应联合行业协会，开展节前服务风险排查，建立投诉快速响应与整改闭环流程，提升整体消费环境的温度与公信力。  \n\n（448字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "655d8fb824c92fa16c5b93f4cbd9f2ca976627a284150c9f689c9fca1f809614",
+    "selected_material_sha256": "b10e71e6c6c2d287e0266f8b473e958ef1d20ea4cf8a1721f057f0d4b3e6b507",
+    "question_sha256": "fda3e578198bf3c194a66943a8c0d6306c535055573b23961cfb208e108c0d17",
+    "characters": 412,
+    "word_limits": [
+      400,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 412,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 244,
+          "prompt_tokens": 1401,
+          "total_tokens": 1645,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "184-2",
+    "answer": "“村里的发展，既要摘掉‘穷帽子’，又要改变‘老样子’，还要留住‘好根子’”体现了乡村发展的全面性与可持续性。摘掉“穷帽子”指通过产业振兴，如肉鸭养殖、党支部引领的集体经济模式，实现村民增收和经济自立；改变“老样子”强调环境整治与治理提升，通过市场化保洁、污水处理、基础设施完善，改善村容村貌和人居环境；留住“好根子”则体现文化传承，如建设“家风家训一条街”、编撰《向阳村史》，弘扬乡贤文化，增强村民凝聚力与归属感。三者相辅相成：经济基础支撑发展，环境改善提升生活品质，文化传承稳固乡村根基，共同实现乡村振兴的物质富足与精神丰盈。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c5bd08f318da4f4f47e767061713390a9e1b679667604278a4b1bf5298bd0bcb",
+    "selected_material_sha256": "93ee1a83e4771f7f27e6933ea823f95710df41c925079c4f975051a3306d2937",
+    "question_sha256": "b3177cf9f5f26cd3050297e513f30855ffcffdd43d8ec78d9dafd8f0164c87c4",
+    "characters": 264,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 264,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 175,
+          "prompt_tokens": 1606,
+          "total_tokens": 1781,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
