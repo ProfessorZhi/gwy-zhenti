@@ -5,6 +5,7 @@ on:
     paths:
       - .github/workflows/r11-prepare.yml
       - tools/r11_prepare.py
+      - tools/r11_match.py
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,7 +23,10 @@ jobs:
           persist-credentials: false
           show-progress: false
       - name: Prepare exact source writing packets
-        run: python tools/r11_prepare.py
+        run: |
+          python tools/r11_prepare.py
+          python tools/r11_match.py
+          python tools/r11_lengths.py
       - name: Commit only generated writing packets to this branch
         env:
           GH_TOKEN: ${{ github.token }}
@@ -34,6 +38,6 @@ jobs:
           gh auth setup-git
           git add reports/r11-work
           if ! git diff --cached --quiet; then
-            git commit -m 'build: 568处缺口的逐卷题目材料与精确同题映射'
+            git commit -m 'build: 568处缺口按完整相关材料逐字匹配复用来源'
             git push origin HEAD:refs/heads/essay/r11-complete-568
           fi
