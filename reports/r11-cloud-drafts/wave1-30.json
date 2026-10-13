@@ -217,5 +217,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "065-3",
+    "answer": "应加强儿童智能手表功能监管，明确禁止免密支付、诱导性语音提示及第三方App违规下载。建立产品安全标准，严查虚假宣传和隐私泄露问题，提升产品质量与售后服务水平。推动行业自律，制定并落实行业公约，规范软件权限申请与内容审核机制。强化家长教育引导，提高其对风险识别与防范能力。联合教育、公安等部门，开展校园使用行为规范治理，限制手表用于学习作弊或网络沉迷。建立多部门协同监管机制，通过技术监测、定期抽检和用户反馈闭环管理，切实保障儿童“腕上安全”。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d51353b2d65ec292391da65af372310f3ebc1ae5c53db140dbc99ea7d292b27c",
+    "selected_material_sha256": "e9a0e8a675478e2da46231f487f3dd1378c349b077efb7ac5d9b8350232fda7d",
+    "question_sha256": "9e30a8132204eb12697c34785389a0fa7b09adf21d8e832bf405e579520c8091",
+    "characters": 221,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 221,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 127,
+          "prompt_tokens": 1595,
+          "total_tokens": 1722,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "077-3",
+    "answer": "**农村自建房建设规范告知书**\n\n尊敬的村民朋友们：\n\n为规范农村自建房行为，保障住房安全和乡村有序发展，根据S县相关管理规定，现将自建房建设要求告知如下：\n\n一、建房面积不得超过120平方米，总高度不超过14米，严格遵守“一户一宅”和村庄规划要求。\n\n二、建房须依法申请审批，提交户口本、身份证等材料，经村“两委”会议审议、邻里无异议并公示15日，报镇政府审批后方可动工。\n\n三、施工前须签订施工合同及安全质量承诺书，由持证乡村工匠负责建设，确保施工过程安全规范。\n\n四、建房实行“四到场”制度：宅基地申请审查到场、批准后丈量放样到场、施工关键节点巡查到场、竣工验收到场，全过程接受镇村监管。\n\n五、未按规定办理审批或无施工公示牌的，一律停工整改，严禁擅自施工。\n\n六、房屋竣工后，须经专业机构验收合格，并依法办理产权登记手续，纳入县房屋结构安全监管范围。\n\n建房是民生大事，请广大村民务必提高安全意识，依法依规建设，共同营造安全、整洁、宜居的乡村环境。\n\nS县住房和城乡建设局  \n2024年6月10日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f5b130916a2ea4c1caf1f27be19d081ccbfa637ea4e958effe8859a4efbcac0e",
+    "selected_material_sha256": "443cc30764f4e7945bd703174d364309a0cb925bdc5f464308922b07e4125d7d",
+    "question_sha256": "1b1998fdcd4988f9afb192a9f3e2ee4fcbf688fb78debf3b2ca28ff718b12aca",
+    "characters": 427,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 427,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 286,
+          "prompt_tokens": 4605,
+          "total_tokens": 4891,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "088-2",
+    "answer": "Z县打造现代田园综合体，在推进乡村振兴中形成以下经验：一是立足产业基础，依托柑橘传统优势，构建全产业链，实现资源高效利用；二是创新运营模式，引入专业企业参与，推动公司化管理，提升市场适应能力；三是强化科技与生态融合，推广绿色种植技术，实现环境友好与可持续发展；四是发展文旅融合，建设文化博览区和休闲旅游设施，延长产业链，拓宽增收渠道；五是完善利益联结机制，通过土地流转、就业带动、分红激励等方式，切实提升农民收入。这些举措实现了产业兴旺、生态宜居、乡风文明、治理有效、生活富裕的有机统一，为乡村振兴提供了可复制、可推广的实践路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "de6602ddecee0d0454069addeee60badda90f240d6e9c068f557a9e68b4b2d1d",
+    "selected_material_sha256": "01aa36b86dbfb5ef0d8d1f96f6907c75b8baccbec827c2a486adbb06bdc36122",
+    "question_sha256": "0db4ffced89af3c4df799b9fb614120a8f2c383f72e1b39bde4fce8f60a7420e",
+    "characters": 265,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 265,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 152,
+          "prompt_tokens": 1946,
+          "total_tokens": 2098,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "097-2",
+    "answer": "“新的枝桠”指古道修复后激活的乡村发展新动能。其一，古道贯通性提升，形成串联自然景观、人文遗迹的旅游线路，如神女峰古道延伸段，实现多景点体验不走回头路；其二，古道成为乡村振兴载体，花茂村依托古道与古树资源，发展“乌养”系列产品，带动民宿、梯田种植和民俗传承，实现经济反哺；其三，古道修复推动文化活化，如筋竹岭古道承载徐霞客传说，激发游客文化体验，增强地方认同。古道从交通功能转向文旅融合载体，催生了新业态、新产业与新活力，是传统资源在新时代焕发的生长形态。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "631d8437db434b98bd8c65f37b9a10864e86742dfc6c60536e3ff9995f8b6e3b",
+    "selected_material_sha256": "71fcc16054958b30ca3b954bde7b628b5d14438c3aed34bdd60ec785d59bb934",
+    "question_sha256": "f253bf654106fd89bd6502bcbac72e989ef6ab6514bfad6561832cc490c456e3",
+    "characters": 228,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 228,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 159,
+          "prompt_tokens": 1563,
+          "total_tokens": 1722,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
