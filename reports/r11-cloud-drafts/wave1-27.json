@@ -1,0 +1,208 @@
+[
+  {
+    "id": "018-3",
+    "answer": "**坚守公平底线，守护招录考试的公信力**\n\n公务员招录考试是国家选拔人才的关键环节，其公平性直接关系到政府公信力与社会信任。近年来，从“申论题疑似泄题”到“团伙作弊”“恶意注册报名”，一系列事件暴露出考试管理中制度漏洞与监管盲区。这些乱象不仅破坏了考试的公正性，更动摇了公众对选拔机制的信心。因此，必须以制度为根基，构建科学、严密、可追溯的招录体系。\n\n材料五中“申论题泄题”风波虽被澄清，却反映出考生对命题透明度的强烈期待。当社会误以为题目可被提前掌握时，投机心理便滋生蔓延。这说明考试过程必须做到封闭、科学、可验证，避免因信息不对称引发误解。正如材料七所展现的命题全流程保密机制——专家分隔、全程监控、信息互不接触，通过制度性隔离，有效杜绝了泄密与猜题可能。\n\n与此同时，作弊行为正从个体走向组织化、技术化。材料三、四中出现的“集团作弊”团伙，利用发射器、接收器等高科技设备实施远程作弊，甚至跨省作案，暴露出传统监考模式在应对新型犯罪上的短板。这要求考试管理必须强化技术防控，如建立试卷全链条追踪系统、部署智能监控与信号屏蔽，实现从命题、运输到阅卷的全过程数字化监管。\n\n更为关键的是，诚信体系是防范违规行为的长效机制。材料二和材料九明确将恶意注册、组织作弊等行为记入“诚信档案”，记录期限长达五年甚至长期，形成强大威慑力。这不仅约束了个别行为，更让考生意识到：任何失信都将付出代价，从而从源头遏制投机心理。\n\n此外，考试过程的透明化有助于增强公信力。材料六中阅卷现场对媒体开放，公众得以了解评卷流程中的严谨性与规范性。这种“阳光操作”不仅消解了猜疑，也使社会看到制度运行的科学性与公正性，从而提升整体信任度。\n\n综上所述，公务员招录考试不仅是能力的比拼，更是公平正义的体现。面对技术迭代与利益诱惑，必须坚持“制度先行、科技赋能、诚信约束、透明运行”的原则，将公平作为底线，把公信力作为目标。唯有通过系统性改革，完善命题、监考、阅卷与失信惩戒机制，才能真正实现“让每一个有志之士在阳光下公平竞争”，为国家选贤任能提供坚实保障。\n\n这一过程需要制度设计的刚性、技术防控的精准、诚信约束的持续和公众监督的参与。只有当每一道题都经得起推敲，每一次考试都经得起检验，公务员招录才能真正成为社会信任的“风向标”，成为国家治理现代化的重要基石。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d23c18d223ad00982467178c3497d8e0cd84bff62a0559c3f45350c480139718",
+    "selected_material_sha256": "af0ef9bbe939aa9fb3f69a4ad864f190d6382351284d1e9b19f2bf30a087c51f",
+    "question_sha256": "18093514f20872fbed4d76f9a85af3f7e986b00c8fb4bead5f7e0162df1f4387",
+    "characters": 951,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 895,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 565,
+          "prompt_tokens": 5232,
+          "total_tokens": 5797,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 859,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 555,
+          "prompt_tokens": 5905,
+          "total_tokens": 6460,
+          "prompt_tokens_details": {
+            "cached_tokens": 5525
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 951,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 614,
+          "prompt_tokens": 5895,
+          "total_tokens": 6509,
+          "prompt_tokens_details": {
+            "cached_tokens": 5254
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "031-1",
+    "answer": "文化特派员是具有特殊使命的基层文化工作者，以文惠民、服务群众。他们扎根乡村，通过阅读推广、非遗传承、村史宣讲等方式，激发村民参与热情，实现“富脑袋”与“富口袋”双赢。其“特”在于将专业知识与地方实际结合，推动文化与旅游、产业深度融合，赋能乡村振兴。特派员不仅是文化传播者，更是乡村文化的组织者和参与者，让群众成为文化活动的主角，讲好本土故事，激活乡村内生发展动力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "08030f3f85aed36c60a0efc47fb1b1f1d86f41eedbb1c40146c579b5b3ed9191",
+    "selected_material_sha256": "47dfe0f2617d3a1341512be1ccda9cde40c461151f721781bd523c5577304dba",
+    "question_sha256": "d0b80ae0b8ec206b3ead8a88608ebc41b4aea6fbebc4774473ebc6d8eae56816",
+    "characters": 182,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 182,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 108,
+          "prompt_tokens": 1609,
+          "total_tokens": 1717,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "040-3",
+    "answer": "**农村自建房建设规范告知书**\n\n为规范农村自建房建设行为，保障房屋安全与村民合法权益，根据国家相关法律法规及S县实际，现就农村自建房建设规范事项告知如下：\n\n一、建房面积不得超过120平方米，总高度不超过14米，严格遵守“一户一宅”和村庄规划要求。  \n二、建房前须提交户口本、身份证等材料，经村“两委”会议审议并公示15日无异议后，方可申请审批。  \n三、所有建房项目必须取得乡村建设规划许可证，施工前须悬挂施工公示牌，明确建设人、红线图及审批信息，无牌即停工。  \n四、建房过程中实行“四到场”制度：宅基地审查到场、放样到场、关键节点巡查到场、竣工验收到场，确保全过程合规监管。  \n五、施工单位须持证上岗，优先选择经培训合格的乡村工匠，施工前须签订施工合同及安全质量承诺书，建设单位为安全和质量第一责任人。  \n六、房屋竣工后，由专业机构开展质量验收，验收合格后方可办理产权登记，并纳入县住建局房屋结构安全监管范围。\n\n请广大村民依法依规建房，共同营造安全、规范、宜居的乡村人居环境。\n\nS县住房和城乡建设局  \n2024年6月15日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b2cf1016217410d7265f446e29c5c50b9747a36205e815350de917380012cf72",
+    "selected_material_sha256": "f039f2f45c5c190518e1b440dc4bd875639e6db939fc3a8a29fc6a41a209f69e",
+    "question_sha256": "2d07004e054ec80766d0cc5249e30af9fe518720272ba5198a42d21fa1d85e66",
+    "characters": 442,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 442,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 297,
+          "prompt_tokens": 4706,
+          "total_tokens": 5003,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "051-2",
+    "answer": "“40年来经济的发展，在点滴的民生改善中，找到了生动而深刻的注脚”，体现了经济发展成果最终落脚于人民福祉提升。材料中，小岗村土地改革实现农民增收，医疗保障体系完善让老人看病更安心，棚户区改造解决住房难题，无不反映发展惠及百姓生活。这些“点滴”变化，是制度创新与政策落实的直接体现，也是人民群众获得感、幸福感的真实写照。从医疗到住房，再到农村产业和公共服务，民生改善不仅提升了生活质量，更增强了社会公平与稳定。这说明经济发展不应仅以GDP衡量，而应以人民需求为导向，通过改革不断优化资源配置，推动基本公共服务均等化。唯有将群众利益置于改革核心，才能让发展真正“落地生根”，在平凡生活中折射出国家进步的光辉。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "00edef35892ae0b4f5d3876b95c3a3debb1b46467f582e96ae52849f26bb0661",
+    "selected_material_sha256": "94aa9e4c8a2a1c02569f2649e11fc2e04282d8a7fa9438684700f2096c5b569a",
+    "question_sha256": "f230bf7b29540a30e15d072259b9c9ad96d82aaba0e296d1542a29b16eb82385",
+    "characters": 302,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 302,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 174,
+          "prompt_tokens": 1551,
+          "total_tokens": 1725,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
