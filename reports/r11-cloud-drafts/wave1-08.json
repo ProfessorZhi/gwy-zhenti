@@ -1,0 +1,150 @@
+[
+  {
+    "id": "024-3",
+    "answer": "共享经济通过优化资源配置，显著改善百姓生活。一是推动交通出行便利化，推广共享单车等模式，解决“最后一公里”难题，降低短途出行成本；二是盘活闲置资源，发展共享住宿，为居民提供低成本、接地气的居住选择，缓解住房压力。三是完善产权共享机制，如共有产权房，降低中低收入群体购房门槛，实现“住有所居”。四是强化制度保障，健全信用体系与监管机制，提升共享服务的安全性与可信赖度，避免资源浪费和纠纷。五是推动公共服务共享，通过信息平台整合交通、医疗、教育等资源，提高服务效率与可及性。六是注重发展公平性，确保共享成果惠及弱势群体，防止“数字鸿沟”和利益失衡，实现全民共享、代际共享。建议相关部门加强政策引导、标准制定与跨部门协同，推动共享经济在民生领域系统化、可持续发展，真正让百姓共享发展成果。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "678ca4191cec409466d15ead41a1cb7a263162cfaa8a1e1da4ce6c90c4634931",
+    "selected_material_sha256": "6f970ec7004661ab2134bc051cbf9715f7622e54ff1feea7b3a0982d6e575f7e",
+    "question_sha256": "bbeb2b81e15e2772e21a908d9fedaf3765f0d14db6b73b5e8d26ee05741d75b4",
+    "characters": 350,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 350,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 211,
+          "prompt_tokens": 4828,
+          "total_tokens": 5039,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "035-2",
+    "answer": "1. 转变经营理念，从产品销售转向数据共享与服务提供，实现价值重构。  \n2. 深入用户需求，依托物联网技术打造智能化、便捷化的用户体验。  \n3. 建立基于数据的实时反馈机制，提升客户参与感与信任度。  \n4. 推动商业模式创新，探索“零首付”按需计费，降低用户门槛，增强服务黏性。  \n5. 实现从单一制造向系统解决方案提供商转型，促进产业链协同与资源共享。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a1b1b00de63be05da73670821a5df5e364e4fb3dd88399d37436105be344fd3c",
+    "selected_material_sha256": "17cfa101ef616080c487b7b434ecb46cdf58e1ea3fa5c96376d0f1aefdad24ad",
+    "question_sha256": "6da6c17a561c9cef4592a90f4db92a6860fc4ce099981ada015a97d9abebc950",
+    "characters": 164,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 164,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 113,
+          "prompt_tokens": 4968,
+          "total_tokens": 5081,
+          "prompt_tokens_details": {
+            "cached_tokens": 580
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "044-4",
+    "answer": "**轻车善行，壮马有力——基层治理“轻车与壮马”原则对执法工作的启示**\n\n“轻车”与“壮马”相结合，不仅是基层治理的生动实践，也为现代执法工作提供了深刻启示。所谓“轻车”，是指通过精简流程、厘清职责，减轻一线执法人员的事务性负担；所谓“壮马”，则是指整合资源、协同联动，提升执法力量的组织力与执行力。二者相辅相成，共同指向执法效能的根本性提升。\n\n在F市成潭社区改革中，上墙制度由40项压缩至12项，基层负担显著减轻。这一变化源于对职责边界的确立和“准入基层事”机制的建立——凡属基层职能范围内的事项，必须经审核后方可下派，杜绝了“层层转嫁”的乱象。这启示执法工作应建立事项准入制度，明确哪些事项可由一线执法队伍承担，哪些需上级统筹或专业部门介入，避免重复执法、多头管理。\n\n然而，“轻车”不能以牺牲执法质量为代价。“壮马”则要求打破部门壁垒，实现力量整合。F市通过“多网合一”织密6750个微网格，将民政、城管、市场监管等职能纳入统一平台，形成专职与兼职结合的网格员队伍，实现了信息互通、响应及时。执法工作同样应推动跨领域协同，建立联合执法机制，尤其在食品安全、环境治理等复杂场景中，实现“一网联动、一案多查”。\n\n更进一步，“壮马”需依靠社会力量赋能。F市推行“双报到、双服务”机制，引导在职党员、驻地单位参与基层治理，形成多元共治格局。执法工作亦应拓展协同边界，吸纳社会组织、志愿者队伍参与风险提示、普法宣传、矛盾调解等工作，变“单兵作战”为“集团作战”，提升执法的温度与覆盖面。\n\n同时，“轻车”与“壮马”的实现离不开数字化支撑。F市通过智慧社区平台实现数据实时共享，“一键报表”“一键证明”大幅减少重复填报。执法单位也应建设执法信息数据库，实现案件预警、风险识别、执法轨迹全程可溯，既减轻基层负担，又提升决策科学性。\n\n因此，“轻车”是减负的前提，是让执法人员有精力深入一线、贴近群众的基础；“壮马”是提质的保障，是形成系统治理能力的关键。二者并非对立，而是动态平衡——减负不等于削弱责任，协同不等于形式叠加。\n\n唯有坚持“轻车善行、壮马有力”，执法工作才能真正从“被动应对”转向“主动预防”，从“机械执行”走向“精准治理”，在提升效率的同时增强群众获得感和满意度，为基层治理现代化注入持久动能。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "dd97b62429043e73f0d80c63a00c95081a462fd256a4d5d23c2dc293cda32883",
+    "selected_material_sha256": "4e39348f5cf494abc9310f8c0a0b1e4dd2ea2629a62ad4db17f3f1356a32098d",
+    "question_sha256": "53da6cd4aa265bd685722212c5bb2fc886c771a1b1a3b5436d5000e1f0cb1f2e",
+    "characters": 936,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 927,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 606,
+          "prompt_tokens": 4255,
+          "total_tokens": 4861,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 936,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 595,
+          "prompt_tokens": 4967,
+          "total_tokens": 5562,
+          "prompt_tokens_details": {
+            "cached_tokens": 4860
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
