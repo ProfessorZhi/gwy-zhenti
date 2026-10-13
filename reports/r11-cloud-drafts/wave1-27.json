@@ -204,5 +204,153 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "064-3",
+    "answer": "白沙社区基层治理可推广做法及理由：  \n坚持“党建+”引领，构建“社区党组织—网格党小组—楼栋长—党员中心户”穿透式组织体系，实现服务下沉到户；打造“一心多点”便民服务圈，减少机关化办公，增设自助机、预约热线等，提升服务亲民性；设立邻里会事厅和线上留言板，畅通民意表达渠道，推动多元共商；推进“红色网格化”管理，实行网格日巡查、上门代办，提升响应效率；整合资源建设邻里中心，涵盖养老、医疗、儿童、文化等功能，实现服务全覆盖；常态化开展文化活动，增强居民归属感。  \n该做法以党建为引领，融合群众需求与基层实际，突出服务精准性、治理协同性和居民参与度，具有可复制、可持续特点，对提升基层治理效能具有示范意义。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3eccce50351d26d404233c7ca3a90e9146ce387c6476754c537a955f2c4105f6",
+    "selected_material_sha256": "410694ebe3615862d529a9e3888cf966762102b64e3469d7b9de2f713c88d0aa",
+    "question_sha256": "c6d7c3d40916f4d96d7a200d9f5bbbce7f299d272e6e11c2a3750a744cdbb7ac",
+    "characters": 297,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 297,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 188,
+          "prompt_tokens": 1723,
+          "total_tokens": 1911,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "087-3",
+    "answer": "“只要找对思路，就会让老旧小区重新焕发生机活力”，进步新村的实践印证了这一观点。其关键在于坚持居民主体地位，通过“进步议事港”机制，让老人需求真正参与决策，实现改造从“政府主导”向“共建共治”转变。以杨老师为代表的党员志愿者深入群众，化解矛盾、凝聚共识，体现了基层治理的人文温度。同时，科学分类推进改造——基础类应改尽改，完善与提升类因地制宜，既改善环境，又满足养老等民生需求。资金共担机制引入社会资本，居民出资增强归属感，物业入驻提升管理效能，形成可持续运营模式。这表明，唯有坚持群众路线、精准施策、多元参与，老旧小区才能真正实现功能更新与生活品质提升，焕发持久活力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "93cfab844a55f1d93b52b09111cbc211ee6543003935ba5dab9e33620791e129",
+    "selected_material_sha256": "02b56f42b800bcc753e811415acf61278075afa112f82f8dd35fed21ab14b2d5",
+    "question_sha256": "cb3310b5282179d72cfb96410adbde9df3e2d1491187cade73aa9d8b22d1182a",
+    "characters": 285,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 285,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 171,
+          "prompt_tokens": 1715,
+          "total_tokens": 1886,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "095-3",
+    "answer": "一、志存高远，勤勉不辍。小冯从职高起步，秉持“功崇唯志，业广唯勤”信念，始终以钻研精神追求技术卓越。  \n二、刻苦学习，自我提升。自费报读高职班，钻研外文资料，整理设备维修手册，获多项职业资格证书。  \n三、扎根一线，勇于创新。破解龙门吊噪音高、能耗大难题，推动远程监控与理货模式革新，提升效率与精度。  \n四、专业实干，赢得认可。在德企监造中以扎实能力获德国工程师高度评价，展现中国技能人才实力与担当。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "5a5384791d2f6f062aaa1d6b7564056558eab6f6423ee8b6c255e12926a03620",
+    "selected_material_sha256": "d41c9ab4a10c9bc43b3a61b30b5df50d12d96870a3cc29e7dd7493eabfb5392d",
+    "question_sha256": "89c84ac776e4f76e695e3a08a256fef02e7ecfe45854d5c7da7a173117df8597",
+    "characters": 193,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 205,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 144,
+          "prompt_tokens": 1444,
+          "total_tokens": 1588,
+          "prompt_tokens_details": {
+            "cached_tokens": 576
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 193,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 1674,
+          "total_tokens": 1813,
+          "prompt_tokens_details": {
+            "cached_tokens": 1587
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
