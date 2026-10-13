@@ -313,5 +313,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "115-2",
+    "answer": "应加强源头管控，严格监管沿岸电镀、五金、塑胶、养殖等企业排污行为，落实环保审批和日常巡查制度，杜绝生活污水、工业废水直排入河。  \n应完善雨污分流系统，提升雨水径流的自净能力，减少污染物冲刷入河；在无水源补给期加强河道清淤与生态修复，增强水体自我净化功能。  \n针对感潮河段污水被顶回问题，应科学设置截流设施和潮汐监测系统，优化排污口布局，防止污染倒灌。  \n应推进岸线整治，清理河道两岸垃圾堆放，实施面源污染防控工程，减少农业与生活活动带来的非点源污染。  \n对底泥污染问题，应开展分段清淤与原位修复，结合生物手段逐步消解内源污染。  \n建立跨区域协同治理机制，明确流域内各城市治理责任边界，加强信息共享与联合执法，形成合力。  \n落实河长制职责，强化各级河长巡查、督办和问责机制，推动治理工作常态化、制度化。  \n\n（410字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "23705482da77b96c4de957d5b3f9d3fc11d8726fd7008c6b636595be6f84b972",
+    "selected_material_sha256": "0d1bfca61c4d2c2ffc1ed655390cf236d2624f54440a5f7f0bcb50a13f1f15f6",
+    "question_sha256": "49335b6e42aaac5de7d8a9259b34a5eb7b8ed2d7380c389982f790a0d3ba1c4a",
+    "characters": 344,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 344,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 240,
+          "prompt_tokens": 1000,
+          "total_tokens": 1240,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "128-2",
+    "answer": "A市“幼有善育工程”满足了幼儿托育的多样化需求，采取了多项有力措施。一是提供便捷托管服务，通过建设“宝宝屋”等嵌入式社区托育点，实现就近、免费、半日托管，缓解家长照护压力；二是拓展普惠性资源，推动新建和改扩建幼儿园开设托班，覆盖率达50.6%，满足家庭对优质、低价托育的需求；三是提升服务品质，推进“智慧托育”建设，应用智能系统实时监控幼儿安全与健康状况，强化保教质量监管；四是构建全链条服务体系，建立“1+16+N”早教指导网络和“育之有道”小程序，提供科学育儿知识支持，实现家庭、社区、政府多方协同。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cd04ad24f8762a240f36ff8de6e338c0543b8c42645acc0f325f7d47326d6482",
+    "selected_material_sha256": "0ceda20e1043c01e73a54236fd42699fc49b6c4001d64514996d905b1a025b89",
+    "question_sha256": "14014ab897c24b7d45c063c3ddc6ae3ba92d95110ae4c68d90fa6e5cce7f480c",
+    "characters": 252,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 252,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 166,
+          "prompt_tokens": 1784,
+          "total_tokens": 1950,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "139-2",
+    "answer": "乡村新职业发展中存在以下问题：一是农机使用受限，道路条件差、村民缺乏培训，设备运输与操作困难；二是民宿文化体验虽具特色，但基础设施薄弱，夜间照明不足易引发安全风险；三是农业项目投资大、周期长，融资难，智慧农业建设因资金短缺被迫中断；四是文旅宣传依赖传统渠道，新媒体运营能力不足，活动吸引力有限；五是电商直播网络不稳定，专业人才匮乏，缺乏协同创业机制。\n\n建议：加强农村道路改造与农机运输配套，开展农机操作培训；完善民宿夜间安全设施，提升村内路网照明；设立乡村产业专项信贷和风险补偿基金，支持生态农业项目；联合县融媒体平台，开展新媒体运营培训与联合推广；优化村级网络基础设施，引入电商人才，建立“村企共建+专业团队”协作机制。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cf414b03e4ce32a54bbeb5ddc04d3b8b28033b474ac4d4a0a3bd761a91058a9c",
+    "selected_material_sha256": "eb956cedd58837c4641bbfb99dcc00765e0c92acf79268117ce2ddce527b70f4",
+    "question_sha256": "e6194a5eefa356391e042542bd4b0aea86850241125db84973543b179c603fe5",
+    "characters": 310,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 310,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 179,
+          "prompt_tokens": 1664,
+          "total_tokens": 1843,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
