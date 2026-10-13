@@ -1,0 +1,137 @@
+[
+  {
+    "id": "014-2",
+    "answer": "“收缩”并非贬义词，而是城市发展的客观现实。材料中扬斯敦通过规划承认自身规模缩减，将闲置土地改造为绿地、滨水休闲带，提升居民生活质量，体现“量的收缩、质的提升”。D市从资源依赖转向生态旅游，实现产业与空间重构，也印证了转型中的主动调整。W指出，国内规划长期囿于增长范式，缺乏对收缩城市的系统方法论支持。但“收缩”应被正视，其背后是资源优化、功能重塑和居民福祉提升的契机。通过科学规划、生态修复与社区参与，收缩城市可实现空间品质和生活品质的双重改善，真正实现可持续发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7a0eb906df926d0d2fc4fc25c1bf67e45dc44d97042dfbee978e37ef5f56bd8c",
+    "selected_material_sha256": "91aef8b43a24ec6796be69267e72fb800ec539679275ba0543eb8c0d97bdc807",
+    "question_sha256": "8567b44ce8951badd9e55b8127208fe86683e437b26ca0e8ca1801962c6675b1",
+    "characters": 234,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 234,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 150,
+          "prompt_tokens": 1381,
+          "total_tokens": 1531,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "025-3",
+    "answer": "**破解“成长的烦恼”，方得发展真谛**\n\n“成长的烦恼总是在成长中化解的”——这一朴素话语揭示了一个深刻规律：任何发展都伴随着矛盾与挑战，而这些看似棘手的问题，恰恰是推动变革、优化路径的重要契机。以K市新能源汽车发展为例，充电桩建设提速虽带来民生便利，却也暴露出“车桩比失衡”“安装难”“管理混乱”“供需错配”等新问题。这些问题并非发展终点的倒影，而是系统演进中的必然阶段，是推动政策完善、技术升级与治理创新的起点。\n\n充电桩建设初期，因电力负荷不足、物业阻挠、审批流程繁琐等问题，导致居民安装困难。这反映出基础设施建设与基层治理之间的脱节。然而，正是在这一“痛点”中，政府推动出台物业配合机制、简化审批流程、明确责任边界，逐步建立起“属地管理+企业协同”的运行体系。可见，问题的出现并非失败，而是倒逼制度优化的信号，促使治理从“被动响应”走向“主动设计”。\n\n更深层的问题在于充电资源的空间错配与时间错配。白天商业高峰时，新能源车位被汽油车占用；夜间电价低谷期，新能源车却因无位而无法充电。这不仅暴露了资源配置的粗放性，也揭示了供需预测与动态调度的缺失。若仅靠“建更多桩”解决，终将陷入“越建越挤”的困局。唯有引入智能调度系统、实行错峰管理、推动车位共享机制，才能实现资源高效流转，真正让新能源车“充得上、停得下、用得顺”。\n\n此外，充电桩运营中的“僵尸桩”“设备老化”“平台割裂”等问题，暴露出产业生态的脆弱性。部分企业因盈利困难而退出市场，导致用户无法正常充电，形成“信任危机”。这提醒我们，发展不能只追求数量扩张，更要注重质量与可持续性。应建立统一管理平台，实现信息共享、状态实时监控、故障快速响应，并通过政府引导、保险机制和信用体系，提升运营韧性。\n\n更为重要的是，新问题的出现，往往倒逼制度与观念的更新。从“物业怕担责”到“明确权责清单”，从“用户多下载软件”到“统一平台接入”，每一次适应性调整，都是对发展逻辑的重新审视。这说明，真正的治理智慧不在于回避矛盾，而在于以问题为镜，推动制度迭代、技术融合与公众参与。\n\n因此，“成长的烦恼”不应被视作发展的障碍，而应成为深化改革的催化剂。正如新能源汽车的发展，其背后是能源结构转型、交通方式变革与城市治理升级的深度融合。唯有直面问题、系统分析、精准施策，才能在矛盾中发现机遇，在挑战中实现跃迁。\n\n发展之路，从来不是一帆风顺。当我们在建设中看到“烦恼”，正是因为我们真正踏上了前行的轨道——因为成长，才有突破；因为问题，才有答案。唯有以清醒之眼看待“烦恼”，以务实之策应对挑战，才能在时代浪潮中，走出一条既可持续又充满温度的发展之路。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a88a2404318bed29957bf88e37dfbaa94deb1186629a8a1da06810e2cda658ff",
+    "selected_material_sha256": "2b918d4c7ea0d3f73b46f4a460b1c833928f569f2ac1747099d9b29f4a7bfd04",
+    "question_sha256": "def4346ec09cac4ab2d904c381ec54589a34dafe3491a49f7c5e23413e83067b",
+    "characters": 1080,
+    "word_limits": [
+      900,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1080,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 677,
+          "prompt_tokens": 3798,
+          "total_tokens": 4475,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "045-2",
+    "answer": "S市乡村新职业从业者面临的主要问题：一是基础设施薄弱，道路狭窄、网络不稳定，制约农机运输和电商直播；二是人才短缺，村民缺乏农机操作与新媒体运营能力，专业人才引进难；三是资金不足，农业智能化投入大、周期长，融资难；四是宣传乏力，文旅活动依赖传统渠道，新媒体运营能力欠缺，引流效果差。\n\n建议：加强农村基础设施建设，拓宽道路、提升网络覆盖；开展实用技能培训，提升村民操作与数字素养；设立专项金融扶持政策，降低农业技术投入门槛；支持乡村建立新媒体运营团队，引导文旅活动融合线上推广，实现精准引流。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "187ded3df4b70aedd18d275046327bac27abdb51da1ec885be3625f24031e0d3",
+    "selected_material_sha256": "9cf4a8c25eca704d121d4ee66d005d31635516c0e2665b4a8594798230c745d2",
+    "question_sha256": "c0079ea84cf4e4a38201a00bf24ef16d0df58ea655f1b3bc8aaf534f636471a3",
+    "characters": 243,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 243,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 135,
+          "prompt_tokens": 1632,
+          "total_tokens": 1767,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
