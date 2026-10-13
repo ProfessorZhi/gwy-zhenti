@@ -1,0 +1,182 @@
+[
+  {
+    "id": "015-1",
+    "answer": "茂源镇袜子产业转型升级的做法：研发智能袜机，降低生产成本；建设数字化车间，提升生产效率；推动产品创新，打造自主品牌和功能性设计；建立设计中心，集聚创意人才；规范企业秩序，淘汰落后产能；构建大数据中心，实现精准生产和市场响应。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0387c6374b02df54c7c2eea596bedceb151ca395f47a87838cc488767fffe2ba",
+    "selected_material_sha256": "bfbbf48ca55004e28acc162f35c373518f2202f2cba27f558279226ca785d9c2",
+    "question_sha256": "37b08567d04b0498fc41e3ab09c7463d147a1421b2b45b358cf7d714dfcc2a6a",
+    "characters": 112,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 112,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 63,
+          "prompt_tokens": 1805,
+          "total_tokens": 1868,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "026-3",
+    "answer": "一、精准调研，聚焦司机实际需求。通过专员路访、线上征集、现场问需等方式，深入了解货车司机在饮食、休息、洗浴、应急等方面的痛点，确保服务设计贴合实际。\n\n二、科学规划，打造功能完备的综合服务平台。选址物流企业集中区，建成3000余平方米停车场和260平方米服务功能区，可容纳50辆货车停放，设置安心停泊点、舒心休闲湾、爱心服务岗、暖心救助站四大平台，实现停车、休息、用餐、洗浴、应急等一站式服务。\n\n三、强化党建引领，发挥党员先锋作用。成立临时党支部，设立党员先锋岗，每日至少3名党员在岗，提供政策咨询、安全教育、应急处置和诉求反馈服务，提升服务质量与响应效率。\n\n四、引入优质社会化服务，提升运营效能。免费提供部分场地，引入“真食客”等餐饮企业，推出“卡友霸王餐”等实惠套餐，兼顾成本控制与用户体验，实现惠民与可持续发展双赢。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "98d2523ddb99ac482fce0a47d839e74cd9d1548b81b7cac779f1a208b6856c24",
+    "selected_material_sha256": "44ac92bc99ba4af0a0fdc71d4bafab313587daf5ae72b15c0336732c8936fe26",
+    "question_sha256": "58a6eb2782630f906a58cf4dd7ace8822cc056fb4ebf1ce03c6ad7c112ead996",
+    "characters": 357,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 357,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 221,
+          "prompt_tokens": 1709,
+          "total_tokens": 1930,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "036-3",
+    "answer": "关于加大信用教育力度的建议书\n\n学校党委：\n\n为切实提升大学生信用安全意识，防范校园金融风险，结合“金融安全专家校园行”活动开展情况及《全国大学生信用认知调研报告》显示的现实问题，现就我校加强信用教育提出如下建议：\n\n一、建立常态化信用教育机制。建议将信用教育纳入高校思想政治教育课程体系，依托校团委、学工部等力量，定期组织信用安全讲堂、金融风险识别讲座，邀请金融专家进校园，增强学生对个人信用的认知与理解。\n\n二、强化信用知识普及与实践引导。针对近六成大学生缺乏信用知识、逾八成不了解个人信用报告的现状，应通过案例教学、互动问答、有奖竞答等形式，重点讲解迟交费用、违规套现、信息泄露等常见风险，提升学生防范意识和应对能力。\n\n三、健全信用约束与监督机制。建议推动建立学生信用档案管理制度，明确欠费、违约等行为的后果，强化诚信教育与行为管理的联动，形成“知信、守信、用信”的良好氛围。\n\n四、加强校内外协同联动。借鉴团中央、教育部等多部门联合开展“金融安全专家校园行”经验，推动校企合作、社会力量参与，构建全方位、立体化的信用教育网络。\n\n此举不仅有助于防范校园金融欺诈，更有利于培养大学生的法治意识和契约精神，助力其成长为有责任感的现代公民。\n\n此致  \n敬礼！\n\n某高校团委  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8e8c9810f4c65b3c699dc8ee18faba21789f01601e8890dfc98967fab7c1bd6f",
+    "selected_material_sha256": "d56e8665a324501cb17f57c65b9fbae451c793da88072ef942add94a1c44662c",
+    "question_sha256": "171e3a808a972a911d8ef10012402d716bb0850702d5d2df1716f4b701b6ea92",
+    "characters": 527,
+    "word_limits": [
+      450,
+      550
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 527,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 323,
+          "prompt_tokens": 1254,
+          "total_tokens": 1577,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "046-1",
+    "answer": "E市优化法治化营商环境的举措包括：推行“综合查一次”联合执法，减少企业重复检查；建立涉企行政执法“白名单”和“企业安静期”，减轻企业负担；设立警企联络站，提供法律咨询与合规指导；发放“行政执法监督卡”，实现双向监督；对涉企行政处罚开展实质性化解，支持企业分期缴纳罚款，体现执法温度。上述举措推动监管与发展的良性互动，实现企业安心、舒心经营。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "eb92f8ce2aa6b88fde79066ebad3b3eb1acae93bc4ae52f05575ada77a4b91ec",
+    "selected_material_sha256": "94f5bee72d9b3420affd192d659057f9d85a7b482117cad4247c0c7603a47c34",
+    "question_sha256": "e8a711301eecc3a4db0bdb749021dcc2dcf2b7d6c040fd4ca8cf7524955e4c2f",
+    "characters": 170,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 170,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 100,
+          "prompt_tokens": 1573,
+          "total_tokens": 1673,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
