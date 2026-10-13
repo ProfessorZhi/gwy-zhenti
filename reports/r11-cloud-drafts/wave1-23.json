@@ -538,5 +538,211 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "156-3",
+    "answer": "M县小型农田水利设施现状及建议汇报\n\n一、当前主要问题  \n1. 设计缺陷突出。早期建设以防旱为主，未考虑排涝需求，田间排水系统缺失，大棚易积水。  \n2. 管理机制不健全。设施建成后归属权、管理责任不明，缺乏统一规划和制度保障。  \n3. 维护主体缺位。农田水利使用频率低，村民维护意识弱，部分排水沟被填平或种植作物，影响排涝功能。  \n4. 历史遗留问题多。废弃方塘、闲置坑塘长期无人管理，部分被非法改建，存在产权不清和违规占用风险。  \n5. 资金与统筹不足。建设资金分散，部门间标准不一，缺乏整合支持；农户投入意愿低，公共设施维护难持续。\n\n二、建议措施  \n1. 明确权责分工。由县农业农村局牵头，联合水利、自然资源等部门，制定小型农田水利设施管理责任清单，明确建设、运营、维护主体。  \n2. 优化设计标准。在新建大棚及农田项目中，同步规划排涝系统，确保排水沟渠畅通、功能完备，并纳入设计审查环节。  \n3. 强化日常管护。建立村级巡查制度，将排水设施维护纳入村规民约，对违规填埋、占用行为依法处置。  \n4. 探索激励机制。通过财政补贴、收益共享等方式，引导村集体和农户参与设施管护，提升投入积极性。  \n5. 开展专项排查。对全县小型水利设施开展摸底，重点整治废弃坑塘、积水点，推动历史问题规范化整改。\n\nM县农业农村局  \n2024年6月10日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "47c8813fa09c98b1e17b0c3107ce80afc922a867ad859416f7708d65abd1c534",
+    "selected_material_sha256": "5112d93a4b946e6cc8d30b093a61b2f02d878fff0d4f67c2e97d549c646ef533",
+    "question_sha256": "1baf5a57f75667ae10af7fa9090db83c9f82d57a65969721174676d0ea6edc62",
+    "characters": 532,
+    "word_limits": [
+      35,
+      600
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 532,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 374,
+          "prompt_tokens": 1633,
+          "total_tokens": 2007,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "165-1",
+    "answer": "A县探索“医养一体、两院融合”的主要举措包括：一是推动医疗机构与养老机构功能融合，如乡镇卫生院增设养老服务职能，村养老院与卫生室重建一体；二是健全医养结合服务网络，鼓励二级以上医院开设老年医学科，推进“两个机构、一门服务”建设；三是完善政策支持体系，落实床位建设与运营补贴，明确资源共享、优势互补原则；四是推广家庭医生签约服务和“一键呼叫”机制，为居家老人提供上门诊疗与健康管理；五是建立长期护理险制度，实行五方共担资金筹措机制，实现医疗护理费用部分报销，减轻群众负担。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c3fa7740808f0af0844548b31912cc8821841c7f16934f3be35dd9243e2ecf22",
+    "selected_material_sha256": "aa746789cc2c66a2669946641b64cf19374c7d7f71b77e557c8d79eeff2a8891",
+    "question_sha256": "0c302b952a05411af7c37c930ab333663ae5308f11c391c2dbd7cf28942bf1f3",
+    "characters": 235,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 235,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 141,
+          "prompt_tokens": 1920,
+          "total_tokens": 2061,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "174-6",
+    "answer": "**题目：从“分界线”到“联结带”——论区域协同治理的时代路径**\n\n过去，南通河是行政边界上的“分界线”，因管理割裂、标准不一、执法脱节，导致污染问题长期难解；如今，它已成为A省与B省共同守护的“联结带”。这一转变不仅改变了河流生态面貌，更折射出区域治理从碎片化走向系统化、协同化的深刻变革。\n\n跨域环境问题的本质是系统性挑战，单靠一方难以破解。南通河两岸开发强度高、资源消耗大，污染具有跨区域特征，若仅以行政区划为界，政策不统一、监管不到位、信息不共享，治理必然“打补丁”、走形式。唯有打破行政壁垒，建立统一标准、联合执法、协同决策的共保联治体系，才能实现从“各自为政”到“整体发力”的突破。\n\n制度创新是协同治理的关键支撑。两省出台生态环境保护条例，明确法治基础；签订跨界共保联治备忘录，统一政策标准；运用遥感、无人机等技术手段提升执法精准度，实现了违法问题“发现—研判—处置”全链条闭环管理。这种多维度、技术化、常态化机制，显著提升了治理效率。\n\n更深层次的变革在于利益机制的重构。通过横向生态补偿协议，B省以水生态产品量化补偿方式投入3000多万元，支持A省青虾养殖区退养。这不仅减轻了生态压力，更建立起上下游企业与农户的绿色共担关系，使“保护环境”成为可衡量、可兑现的共同利益。\n\n治理协同的背后是治理体系的根本性重塑。联合河长办的设立，打破信息孤岛，实现涉河问题“一张图管理、一单督办、一策推进”，确保问题发现、交办、整改闭环运行。过去因责任不清、上报层层而拖延，如今通过机制联动，真正实现了“问题不过夜、响应不迟滞”。\n\n从南通河的变迁可见，区域协同不仅是技术问题，更是治理理念的升级。它要求打破“守土有责”的思维定式，转向“共治共享”的责任共同体。正如KMN都市圈三城共建产业、共享资源，跨域治理的成功，离不开顶层设计、制度创新与利益协调的深度融合。\n\n未来，各地应以系统思维推动区域协同，从“分界线”走向“联结带”，在生态共护中凝聚共识，在资源共享中激发活力，在民生改善中增进信任。唯有如此，才能真正实现高质量发展与可持续治理的有机统一。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a09d052d61a3be6341f5544d14d279337c1da62f3a6f8b4e74d6aa4cecee30a5",
+    "selected_material_sha256": "bbd2634a9b53a67f166a8a7f97ac3b5394cf60570945da9594442f765ee58f5b",
+    "question_sha256": "28cbf6d6f6a22060e863f445cce7a294d0a2608310bcb0cca8fc9d98e7ab33c9",
+    "characters": 861,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1007,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 660,
+          "prompt_tokens": 6816,
+          "total_tokens": 7476,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 861,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 553,
+          "prompt_tokens": 7596,
+          "total_tokens": 8149,
+          "prompt_tokens_details": {
+            "cached_tokens": 7475
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "186-4",
+    "answer": "**无感之中见有感：政务服务的温度与智慧**\n\n“鱼得水逝而相忘乎水，鸟乘风飞而不知有风。”J市新区行政审批局邢局长的一句话，揭示了“无感续证”背后的深层逻辑——真正的服务不在于形式上的便捷，而在于以数据为基、以信任为本，在看似“无声”的背后，始终传递着政府的主动关切与责任担当。“无感”，并非冷漠疏离，而是通过信息共享与智能预警，让企业无需奔波、无需准备，即可完成许可延续，真正实现了“办事不跑腿、服务不断档”。\n\n这一改革源于对市场主体实际需求的深刻洞察。许多中小企业因管理粗放、风险意识薄弱，在许可证到期前未能及时续办，导致无证经营甚至被处罚。过去企业需亲自跑腿、反复准备材料，不仅耗时费力，更易因疏忽而陷入困境。J市新区将“生鲜乳收购许可”等9类事项纳入“无感续证”范围，依托数据库自动识别到期时间，提前核实条件并主动通知企业，既减轻了企业负担，也保障了生产经营的连续性。\n\n“无感”不等于“无责”。改革背后是精准的风险防控机制。系统并非简单放行，而是基于企业历史记录、经营状态等数据进行合规性判断，确保企业在符合标准的前提下享受服务，避免“一刀切”式管理。这既体现了监管的温度，也维护了市场秩序的底线，实现了效率与安全的统一。\n\n这种服务模式，本质上是对市场主体生存困境的回应。中小企业普遍面临信息不对称、抗风险能力弱等问题，“无感续证”正是通过前置服务，将潜在风险化解于萌芽，让企业从“被动应对”转向“安心经营”，在稳定预期中激发创新活力。\n\n从马家岭村的艺术节到J市的政务服务，我们看到一个共同逻辑：发展需要人与环境之间的深度共鸣。村民因艺术活动重拾归属感，企业因便捷服务增强信心——这都源于制度设计中对“人”的尊重与理解。真正的治理，不是流程简化，而是情感连接。\n\n因此，“无感”应被视为一种有温度的治理智慧。它以技术为表，以关怀为里，在企业看不见的地方，默默传递着政府的责任与信任。未来政务服务的终极目标，不应是减少流程，而是在“无声”中建立“有感”的信任。\n\n唯有让“有感”成为“无感”的底色，才能在效率与温度之间找到平衡，推动治理现代化走向更深、更实的境界。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d0f9e608c933ec35a9d1b31d873bd7124c6068228a3b6ccec9284e79f01a67f6",
+    "selected_material_sha256": "b171f5be92fb03650e877a6aae06dc9564f97eb0c09ffdf4db44ac8138334ae3",
+    "question_sha256": "88b67aa9fecdecbcd35b9602dcf11c9b926fd603997769f9035005e98009be34",
+    "characters": 872,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1093,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 691,
+          "prompt_tokens": 3992,
+          "total_tokens": 4683,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 872,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 555,
+          "prompt_tokens": 4803,
+          "total_tokens": 5358,
+          "prompt_tokens_details": {
+            "cached_tokens": 4682
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
