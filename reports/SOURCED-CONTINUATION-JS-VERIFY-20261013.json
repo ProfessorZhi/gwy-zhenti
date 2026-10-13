@@ -1,20 +1,31 @@
 {
-  "source_blobs": 70,
-  "source_answer_positions": 155,
-  "papers": 85,
-  "preserved_non_target_answer_blocks": 90,
   "status": "passed_in_javascript_python_pending",
-  "verified_paper_commit": "4ddb16b8644bf4ab8222954e413279558dec6999",
+  "source_blobs": 76,
+  "source_answer_positions": 162,
+  "papers": 86,
+  "preserved_non_target_answer_blocks": 90,
+  "verified_paper_parent_commit": "c510e37719f9dc94969b02131fd7d0d38cc606d5",
+  "prior_verification_commit": "c510e37719f9dc94969b02131fd7d0d38cc606d5",
   "source_revision": "710cb9f85b9ae5e4167cbdd5172c59309a51c80e",
+  "increment": {
+    "source_blobs": 6,
+    "source_answer_positions": 7,
+    "modified_papers": 4,
+    "source_git_blob_hashes_checked": true,
+    "answer_presence_in_source_checked": true,
+    "original_exam_body_preserved": true,
+    "all_current_answer_blocks_preserved": true
+  },
   "latest_python_workflow": {
-    "run_id": 38395141569,
-    "job_id": 115288329622,
+    "run_id": 38395465944,
+    "job_id": 115530954403,
     "status": "failed_before_steps",
     "steps": null,
     "logs_url": null
   },
   "main_commit": "34439ace3ad6c0b93b0671b1f76ca4afd6cce06d",
   "main_known_missing": 451,
-  "expected_missing_after_branch": 296,
-  "new_AI_answers": 0
+  "expected_missing_after_branch": 289,
+  "new_AI_answers": 0,
+  "boundary": "Prior 155-position source proof inherited from fixed commit; 7 new positions checked, all 86 receipt before/after hashes recomputed. Python full audit pending."
 }

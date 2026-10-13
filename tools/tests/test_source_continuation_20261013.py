@@ -5,7 +5,7 @@ class SourceContinuation(unittest.TestCase):
  def test_existing_sources_original_exam_and_actual_coverage(self):
   result=verify(Path(__file__).resolve().parents[2])
   self.assertEqual(result["status"],"passed")
-  self.assertEqual(result["source_reference_positions"],155)
-  self.assertEqual(result["papers_modified"],85)
-  self.assertEqual(result["known_missing_answers_after"],296)
+  self.assertEqual(result["source_reference_positions"],162)
+  self.assertEqual(result["papers_modified"],86)
+  self.assertEqual(result["known_missing_answers_after"],289)
   self.assertGreater(result["preserved_existing_answers"],0)
