@@ -191,5 +191,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "056-3",
+    "answer": "当前S县大学生租房主要面临五类问题：一是中介欺诈、信息不透明，存在虚假房源和价格虚高现象；二是合同条款不规范，租期长期化、隐性收费（如设备费、清扫费）普遍，押金难退；三是租金与费用过高，普遍存在“押二付一”“押三付一”等不合理支付方式；四是房屋租赁管理混乱，部分群租房被举报清退，二房东失联；五是政策支持不足，人才房供给短缺，暂住证办理困难，同小区不同待遇现象突出。\n\n建议：应建立政府主导的住房信息平台，公开真实房源，严惩虚假宣传；规范租赁合同，明确租期最短为3个月，禁止随意扣押押金；推行对实习生、应届毕业生的最长3个月免费公租房政策；加强房屋租赁市场监管，依法追责中介欺诈行为；完善租户权益保障机制，统一落实暂住证办理与公共服务待遇。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "45c05f067bfc24d11aa6e03e8946e4ddf923c3c17455cafb7901d9874f13ba0d",
+    "selected_material_sha256": "a984b2e10472ff4e2bc36fd21cac0bc01e4f464fd5856ec7b17c663a1b76ad2f",
+    "question_sha256": "02b0acf0990d0d27ad85e4fce2d5895e7e12cb08fbbecfea8b189ded3597619d",
+    "characters": 318,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 318,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 207,
+          "prompt_tokens": 1740,
+          "total_tokens": 1947,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "069-4",
+    "answer": "**信用为本，赋能民生与振兴**\n\n诚信，是社会运行的基石，更是个体发展与国家治理的重要支撑。从个人借贷到公共服务，从电商经营到扶贫攻坚，信用正深刻改变着人们的生活方式和经济行为。材料中，老潘在“信用村”获得无需抵押的5万元贷款，老谭通过信用评级实现脱贫致富，张某凭借诚信经营赢得客户信赖——这些真实案例表明，信用不仅是一种道德准则，更是一种可量化、可操作、可激活的资源。\n\n信用的价值，在于其连接资源与需求的桥梁作用。在传统金融体系中，农民、贫困户因缺乏抵押物和担保人而长期被排除在外。而“信用村”“扶贫小额信贷”等创新模式，通过建立个人信用档案、实施量化评级，打破了“有资产才有资格贷款”的桎梏。M县将诚信评价、家庭劳动力与收入作为授信依据，使2.43万户贫困户获得有效授信，年均增收显著。这说明，当信用被制度化、透明化，资源便能真正流向最需要的人群，实现精准扶贫的“精准滴灌”。\n\n更进一步，信用机制不仅解决了“能不能贷”的问题，也回应了“敢不敢贷”“如何不返贫”的深层担忧。部分农户担心贷款后无法偿还，陷入“借钱还钱、越借越穷”的恶性循环。为此，M县设立风险补偿基金、推动资金入股企业、建立利益联结机制，将扶贫资金与产业发展结合，使贫困户成为股东而非单纯的借款者。这种模式既保障了资金安全，又赋予了农户长期发展的信心和动力。\n\n在商业领域，信用同样构筑起市场秩序的防线。电商平台通过建立诚信联盟、公开商家信息、设立必赔承诺，有效遏制了虚假宣传、服务缩水等乱象。张某因及时补发变质货物赢得客户信任，其案例揭示了一个朴素真理：消费者对品牌的信任，源于每一次真实、负责的回应。当企业以信用为本，市场才能形成良性循环，消费者才愿意长期投入。\n\n与此同时，信用也推动了政务服务的智能化与便民化。S市老人“刷脸”领取养老金、购房者“扫码”提取公积金，这些便捷服务背后是信用体系对身份与行为的精准识别。这不仅提升了效率，更体现了政府治理从“被动管理”向“主动服务”的转型，让诚信成为公共服务的通行证。\n\n然而，信用建设仍需制度护航与多方协同。当前部分农村地区存在信用认知不足、评级标准不一、监管缺位等问题。因此，必须健全覆盖全社会的征信系统，完善守信激励与失信惩戒机制，同时加强信用教育，尤其在青少年群体中普及信用知识，防止“信用盲区”成为新的风险点。\n\n综上所述，信用是现代社会的“无形资本”，它连接个体命运、激活市场活力、支撑国家治理。从乡村振兴到商业繁荣，从个人生活到公共管理，唯有以制度为基、以教育为翼、以监管为盾，才能真正构建起一个讲诚信、重责任、可持续的社会生态。未来，我们应继续深化信用体系建设，让“人无信不立”不仅成为一句格言，更成为每个人可触可感的现实。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d9110b2bfcefd21bc240de5563b397976b51b0d5df5ef727b7638cd3404d26ba",
+    "selected_material_sha256": "2157d5d57dad54f618d7fed1554e4cf1b84da30a4c4c9d9b64c07a186bae8bc6",
+    "question_sha256": "5af47d4021252b0eece82f5eeee33ae35cb9bdc6cd77369a35316d367f367d54",
+    "characters": 1115,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1115,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 688,
+          "prompt_tokens": 4602,
+          "total_tokens": 5290,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "079-1",
+    "answer": "南山工业社区治理模式具有以下特点：一是党建统领，强化组织引领，建立网格化、微网格化管理体系，实现精准治理；二是服务共建，推行志愿服务“菜单制”，激发职工与企业参与共治的积极性；三是功能融合，延伸政务服务触角，提供从衣食住行到子女入学、技能培训等全方位社区服务；四是资源整合，搭建“供应链超市”平台，推动信息共享、物流协同和降本增效；五是发展联动，通过组织对接会、资金池建设等方式，助力企业融资上市，促进园区经济与民生协同发展。该模式实现了产业、生活、治理的有机融合，提升了园区治理效能与职工幸福感。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7ec600f44fcadd3e8c17bcb4b91cbe05ac29c222fa8a3071581280c3447ad56c",
+    "selected_material_sha256": "3811c14f5b420e88fce3d365d3ec551519e97f5bdfe3133e38290fb396f9ae72",
+    "question_sha256": "1f2a65e45d01519ca47c32a526c87a86e8a23351564ec646f4ee848923ff8917",
+    "characters": 249,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 249,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 144,
+          "prompt_tokens": 1410,
+          "total_tokens": 1554,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "089-4",
+    "answer": "**在积累中坚守，在沉淀中前行**\n\n“干好工作就要不断积累和沉淀，不断积累和沉淀要永远在路上。”这句朴素话语，道出了公共服务岗位最本质的实践逻辑。在雷力办理养老保险转移接续的日常中，我们看到的不仅是一份业务，更是一种对责任的执着、对群众的敬畏。他从最初的手工登记到后来系统操作，始终保持着“多做一点努力，群众就能少费心”的初心，正是这种日积月累的坚持，才让复杂问题得以破解，让制度温度得以传递。\n\n积累，是专业能力生成的根基。雷力每天记录工作中的案例与难题，用小本本沉淀经验，这种习惯让他在面对老宋这类因频繁流动而缴费中断的退休难题时，能跳出政策条文的框架，提出建立“虚拟账户”的创新方案。这一做法并非凭空而来，而是基于长期对政策边界、制度逻辑和实际需求的反复观察与思考。正是这种持续积累，使他从一名普通经办人员成长为能够破解制度困境的实践者。\n\n沉淀，则是责任落地的关键。雷力深知，养老保险关乎一个人晚年生活，不能因一个疏漏影响一生。因此，他坚持每日筛查系统数据，主动跟进被拒转入申请，如张女士因年龄和缴费年限限制无法转入，便亲自联系、手工录入、人工审核，仅用一周即完成办理。这种“不推诿、不拖延”的行动，体现的不仅是业务能力，更是一种对“服务无小事”的深刻体认——真正的服务，是把群众的难处看在眼里、扛在肩上。\n\n积累与沉淀，还要求从业者具备系统思维和问题洞察力。雷力在推动业务流程优化中发现，部网平台初期仅能查看信息、无法办理转移，导致经办时限长达45天；后来通过系统对接、数据共享，将办理时间压缩至15天，并对加急业务实现“三四天办结”。这一转变背后，是长期观察制度运行痛点后形成的解决方案。这说明，公共服务的提升，不仅依赖技术迭代，更需要一线人员在实践中不断发现问题、分析成因、提出对策。\n\n同时，积累与沉淀不是孤立的个体行为，而是组织协同的结果。雷力的工作成效，离不开系统平台建设、数据共享机制完善以及上级对基层创新的支持。他的“虚拟账户”方案，也最终被纳入制度探索范畴，说明个体经验在制度演进中具有重要价值。这启示我们：只有当组织为积累提供空间、为沉淀创造路径，个人才能真正实现价值跃升。\n\n更重要的是，这种持续积累的过程，本质上是服务理念的深化。从“完成任务”到“主动发现需求”，从“被动响应”到“提前预判风险”，雷力的实践表明，真正的服务不是机械执行，而是带着温度、责任和敬畏去理解群众的困境。他用行动诠释了：社保是人一生的事业，每一个细节都关乎人的尊严与未来。\n\n因此，“积累与沉淀要永远在路上”，不仅是一种工作方法，更是一种政治品格。在新时代推进国家治理现代化的进程中，每一位基层工作者都应以雷力为榜样，在平凡岗位上深耕细作，在日复一日中锤炼专业、涵养初心、提升服务温度，让制度的温暖真正抵达每一个普通人的生活之中。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "5d41dec3f26e903160ee00cdc922dcb17c3dbfae78358f7793f997c705370d3c",
+    "selected_material_sha256": "4c02f84473385e1d4632c9452e8c2d09c2ce39cc8f4314b0aad4f6af701016be",
+    "question_sha256": "1b707f168d3e3f95f9fb8ff7cb17eaf394a4681456dcf5c5448938c2b6fefa06",
+    "characters": 1152,
+    "word_limits": [
+      1000,
+      1300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1342,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 818,
+          "prompt_tokens": 5207,
+          "total_tokens": 6025,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1152,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 716,
+          "prompt_tokens": 6148,
+          "total_tokens": 6864,
+          "prompt_tokens_details": {
+            "cached_tokens": 6024
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
