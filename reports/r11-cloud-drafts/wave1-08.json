@@ -146,5 +146,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "058-2",
+    "answer": "当前H县农用地膜使用回收存在以下问题：一是农民盲目多用、滥用地膜，部分使用厚度低于0.01毫米的非标地膜，导致土壤污染加剧；二是地膜回收机制不健全，农户清理积极性低，焚烧或随意丢弃现象普遍，残膜被农机翻埋，污染农田；三是回收成本高，非标膜处理难、效益差，企业亏损严重，缺乏可持续性；四是县乡级回收点缺失，回收体系不完善，政策支持不足，监管存在盲区。\n\n建议：一是严格监管地膜生产销售，打击非标地膜入市行为，推动全生物可降解或高强度易回收地膜普及；二是建立县、乡、村三级回收网络，设置固定回收点，配套补贴机制，提升农户参与积极性；三是推行“以奖代补”政策，对科学使用优质地膜的农户给予奖励，降低使用成本；四是加强宣传引导与农技服务，提高农民环保意识，推动形成生产—销售—使用—回收全链条闭环管理。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ed8703de550c3b08ef6cd8c5b6ab969a4f4c08bb2c9afd9a55ac91419358cf7b",
+    "selected_material_sha256": "57bc1b549dbb2f3203080518194218f79d785dd6c0e2d4395a6b55fdbae69566",
+    "question_sha256": "876b9964be889a83a05281aec9d005727499018b40aca312b112e3c443ebdcd1",
+    "characters": 345,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 345,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 228,
+          "prompt_tokens": 1878,
+          "total_tokens": 2106,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "070-4",
+    "answer": "**在传承中创新，在融合中振兴——论乡村市集的新生之路**\n\n“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”，这一表述深刻揭示了乡村发展进程中传统与现代共生共荣的本质规律。L镇乡村市集正是这一理念的生动实践：它既保留了农耕时代以物易物、邻里互助的原始烟火气，又通过创意策划、业态升级、科技赋能注入蓬勃活力，实现了从“集市交易”到“文化生活空间”的深刻转型。\n\n传统市集承载着乡民情感与乡土记忆，是乡村社会关系的重要纽带。材料中提到，“图的就是热闹和生活的烟火气”，“买到的不只是商品，更是一份好心情”。这种人情味、互动感，正是乡村社会凝聚力的根基。当摊主们热忱地讲述自家种菜、手工制作的故事时，人们在交易中收获的是温度与信任，这构成了乡村生活最本真的底色。\n\n而“逐新”则体现为对现代消费需求和表达方式的敏锐回应。L镇通过策划“非遗市集”“露营市集”“生态音乐节”等主题，将传统市集拓展为集文化体验、艺术创作与休闲消费于一体的综合性平台。这些创新不仅吸引了城市青年群体，更激发了乡村内生发展动力。例如，“收获秋天·晒秋”快闪活动以多巴胺色彩吸引年轻人参与，成为传播乡村文化的“新窗口”。\n\n更重要的是，这种“新旧交融”并非简单叠加，而是通过机制创新实现功能重构。L镇引入“策展人”角色，推动市集从自发集市走向有规划、有主题的系统化运营；同时借助“新农人”力量，发展电商销售、品牌包装等新业态，打通农产品从田间到市场的“最后一公里”。这不仅提升了产品附加值，也使传统农业与现代产业深度融合。\n\n此外，乡村市集的可持续发展离不开制度支持与文化自觉。L镇将市集作为乡土品牌的延伸，通过平台化运营赋能1000余农户，真正实现了“小农户”与“大市场”的连接。这种模式既尊重了农民的主体地位，又激发了地方活力，为其他地区提供了可复制的路径参考。\n\n综上所述，乡村发展不应是“舍旧求新”或“固守传统”的二元选择，而应以文化认同为基础，以创新思维为驱动，在传承中激活内生动力，在变革中守护乡土温度。正如L镇所展现的那样，唯有在“念旧”中找寻情感根脉，在“逐新”中探索发展路径，乡村才能真正实现从传统集市向现代生活共同体的跃迁，迎来可持续、有温度、有活力的新生。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "17b01215034f446781a5653f7120a87ab901f0bbe81418be3ffce9847a6ec443",
+    "selected_material_sha256": "ec0390ab40955ae52ec75b45312180a900d8269ff744bfe694a15b9a96fba023",
+    "question_sha256": "3e928c9dd7a62fde40a5c4ad553c086fb29732c152975c8e675179f164729559",
+    "characters": 912,
+    "word_limits": [
+      900,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 912,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 590,
+          "prompt_tokens": 5149,
+          "total_tokens": 5739,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "080-3",
+    "answer": "致广大消费者的一封公开信：\n\n您好！针对您关于临期食品是否可放心食用的关切，我们作出如下说明：\n\n临期食品指临近保质期但仍符合标准的食品，其价格实惠，符合“勤俭节约、杜绝浪费”的倡导。通过正规渠道购买、具备明确保质期标识的临期食品，一般可放心食用。\n\n目前，临期食品市场尚无统一国家标准，相关法律法规未对“临期食品”作出明确规定。但只要商品来源合法、标签清晰、保质期内，且由正规商家销售，消费者可放心购买。业内普遍认为，临近保质期3/4时打折销售，是合理商业行为，而部分商品仍可退回厂家。\n\n需提醒的是，个别商家可能存在品控不严、信息不透明等问题，建议消费者关注食品来源、包装完整性和生产日期，避免购买“三无”或来源不明产品。同时，市场管理正加强规范，要求商家对临期食品进行醒目提示，并推动建立统一的品控与追溯机制。\n\n我们鼓励理性消费，支持节约理念，也呼吁商家诚信经营、加强质量管控。市场监管部门将持续依法履职，提升食品安全治理水平，让群众买得安心、吃得放心。\n\n此致  \n敬礼！  \n\n某市市场监督局  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "845d82f5d904c0ae0347226ec53c94fa8e098a386acae561adaa73359ce93c3f",
+    "selected_material_sha256": "5ff2132411d3e7f0fd9c51eca180bfef8015a796d030c29185f2bb66266a9609",
+    "question_sha256": "31570500b272d2dce96479555017c5e36a40d329d72dd20ae465c6752cab1e4c",
+    "characters": 442,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 442,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 280,
+          "prompt_tokens": 1829,
+          "total_tokens": 2109,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "090-4",
+    "answer": "**干好工作，贵在久久为功**\n\n“干好工作需要积累和沉淀，不断积累和沉淀要永远在路上。”这句话看似朴素，却深刻揭示了公共服务与基层治理中不可或缺的长期主义精神。在雷力十年如一日办理养老保险转移接续的实践中，我们看到的不仅是一份职业的坚守，更是一种对责任、细节与群众需求的持续回应。\n\n初入岗位时，雷力面对复杂的社保政策和跨省流转难题，没有急于求成，而是坚持“边学边干、边做边记”，用小本本记录政策要点、业务流程与常见问题。这种看似琐碎的积累，实则是专业能力的根基。正如基层干部推动乡村振兴，必须在走访中积累乡土认知；医生治病救人，也需在实践中沉淀诊疗经验。没有日积月累的积累，任何工作都难以真正落地、深入群众。\n\n沉淀，则体现为责任意识的内化与制度执行的自觉。社保关系关乎退休人员一生福祉，一个数据差错可能影响一个人晚年生活。雷力深知“社保无小事”，因此坚持每日数据筛查、系统日清、异常预警，即便信息化已实现“一键办理”，仍主动介入人工审核，如为张女士手工录入数据、确保转入申请及时办结。这种对细节的执着，正是沉淀后形成的制度自觉与职业敬畏。\n\n更关键的是，积累与沉淀是破解复杂问题的智慧来源。面对老宋这类跨省流动、缴费分散的退休难题，雷力没有照搬政策模板，而是通过长期观察政策边界，创新提出建立“虚拟账户”将分散记录归集，最终实现退休条件满足。这一突破性做法，源于对制度漏洞的持续洞察与系统思考，体现了从“执行者”向“问题解决者”的转变。\n\n同时，积累与沉淀也推动工作方法的迭代与优化。从最初的挂号信函、三四个月才能办结，到如今线上提交、异地联动、数据即时传输，雷力推动了流程革新，但并未止步于技术便利。他坚持每日巡查系统、主动提醒异地机构审核，确保“卡壳”问题及时发现、快速解决。这说明：技术进步不能替代人的责任意识，反而更需要人去发现问题、补足短板。\n\n此外，积累与沉淀体现为对群众需求的持续回应。雷力始终以“群众少费周折”为目标，推动建立催办函制度，向异地经办机构发出3000余封函件，有效打破信息壁垒。这一机制不仅解决了个体难题，更优化了跨区域协作流程，成为可复制、可推广的治理经验。\n\n综上所述，“积累和沉淀要永远在路上”，既是对个人职业成长的深刻要求，也是公共治理现代化的根本遵循。在新时代背景下，无论是政务服务、民生保障还是基层治理，都需要像雷力一样，保持初心不改、脚步不停，在平凡中坚守，在坚持中突破。唯有如此，才能真正实现“服务群众”从“能办”到“办好”的跨越，让每一项工作都经得起时间检验，也经得起人民期待。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "31893e42ddab48a429958668f4845e188ba7403f1f3f851f8110ef29de7ce490",
+    "selected_material_sha256": "b943e78d39c3206878a2b22fa50f6eb300d031e5fab823c447fd26c5186a97f0",
+    "question_sha256": "f78539bf8e575655d85c1813a96cae16152beae17696322e4154f6ebea94e86a",
+    "characters": 1048,
+    "word_limits": [
+      1000,
+      1300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1227,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 769,
+          "prompt_tokens": 4983,
+          "total_tokens": 5752,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1048,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 661,
+          "prompt_tokens": 5860,
+          "total_tokens": 6521,
+          "prompt_tokens_details": {
+            "cached_tokens": 5751
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
