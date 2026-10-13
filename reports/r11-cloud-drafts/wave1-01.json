@@ -1,0 +1,182 @@
+[
+  {
+    "id": "012-1",
+    "answer": "张家村“张家联播”乡村治理案例介绍  \n\n为破解信息不畅、干群沟通不足问题，张家村创新推出“张家联播”基层治理模式。通过组建由村干部、乡贤、党员等组成的播报志愿团，每月25日开展新闻播报与互动交流，及时传递中央政策、村务动态和惠民信息，实现群众知情权、参与权、表达权。建立“三个员”机制——信息收集员、传播员、矛盾化解员，推动问题“码”上转、“码”上办。细分“文明有主‘张’”“平安有‘张’法”等主题播报团，推行积分制激励，提升村民参与度和村容村貌治理水平。引入社会组织，设立调解工作室、议事厅等服务空间，深化党建引领基层治理。同步推进线上直播与“智慧张家”App、民情二维码建设，实现线上线下融合联动，畅通诉求表达渠道。该模式有效增强群众信任感，提升乡村治理效能，为乡村振兴提供可复制、可推广的基层实践样本。  \n\nXXXX年X月X日  \n张家村党支部符书记",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9046a34c95d8ae20ef442429367fa5017994aebd4bbaeb11ea11dc27d899c7da",
+    "selected_material_sha256": "cda7e3577fef3308bb6eecdab4f75d51ea4615215a69e3e215c9851ea539b4d9",
+    "question_sha256": "dd97f75676c5beabcd56c70325f6031b753f398f6ed96ed4dafdcf225f1bfd71",
+    "characters": 369,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 369,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 240,
+          "prompt_tokens": 2048,
+          "total_tokens": 2288,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "020-3",
+    "answer": "C县托育服务典型案例参评材料\n\n为破解“幼有善育”民生难题，C县创新构建“普惠供给+专业指导+智慧监管”三位一体托育服务体系。全县建成首家公办普惠托育园“伊家托育园”，实行全日托模式，月收费1700元，切实减轻家庭负担。同步推进社区共建，设立阳光托育中心、社区照护服务站等“家门口”托位，新增托位2000个，其中普惠性托位1200个，实现托育服务可及性显著提升。\n\n聚焦服务质量，出台《家庭型托育质量评价办法》和《量级评定办法》，推动服务标准化、规范化。组建专业家庭养育指导员队伍，依托村社计生管理员转化300余名基层人员，累计入户指导3万余户次；选聘43名幼儿园教师、53名儿保医生为“家庭养育志愿者”，联合建设43个“向日葵亲子小屋”，举办活动近2000场，覆盖近万个家庭，实现医、养、教一体化服务。\n\n打造“智慧托育”平台，对安全卫生、饮食活动等200余项数据全程记录，实现托育过程可追溯、家长可查询、监管可实时掌握。平台联通卫健、民政、市场监管等部门资源，提升服务透明度与公信力。\n\nC县以普惠为基、专业为核、智慧为翼，走出了一条可复制、可持续的婴幼儿照护服务发展新路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d8fab0bbd6506b9fa66eb4be1d72672feffbd8c4c55368564971fb41a5634ccc",
+    "selected_material_sha256": "c105edf45885ae5bc9ca2e5cc49b2411b0e2ba4bee76c36d1abae8cc9098d54e",
+    "question_sha256": "5573acde2b1d5d0d35e0ac58bb528f726c6ba87f86658cafc387785f8fe35544",
+    "characters": 482,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 482,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 329,
+          "prompt_tokens": 1822,
+          "total_tokens": 2151,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "033-3",
+    "answer": "D市虚拟产业园存在以下问题：一是部分企业入驻目的以减税为主，缺乏产业链上下游协同联动意愿，创新链、服务链与产业链衔接不畅，产业集聚和供应链稳定性不足；二是盈利模式依赖政府税收返还和补贴，市场化运营能力弱，缺乏可持续的收入来源，亟需构建市场化的投入与盈利机制；三是监管机制尚不健全，存在突破行政边界后治理缺位的问题，尚未形成多方协同、动态响应的监管体系。\n\n针对上述问题，提出以下建议：一是强化产业链协同，通过平台化手段推动企业资源对接和需求匹配，引导企业开展上下游合作，提升产业生态稳定性；二是探索市场化盈利路径，鼓励园区引入专业运营主体，推行企业管理费或场地租用费等收费模式，并借鉴沿海城市经验，开展技术入股、平台服务代建等增值服务，实现自我造血；三是创新监管机制，建立触发式监管体系，推动政府、企业、社会组织协同参与，健全风险预警和动态评估机制，提升园区治理效能。  \n\n（408字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f9184587d1bf13838588ffeefd0e9cc7b9edfe3b30aa34c00b867b0387a060e6",
+    "selected_material_sha256": "ff50579fb7a71f10c907caea27d5f16961462829944a57f8aea1ecfc36d438b2",
+    "question_sha256": "363b0422bf6405d4ea39ab0b3971be4ac2134003bee5599391b38ea19633456f",
+    "characters": 388,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 388,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 224,
+          "prompt_tokens": 1641,
+          "total_tokens": 1865,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "043-1",
+    "answer": "Z县推广家庭签约医生制度的主要做法包括：一是构建“分级统筹、双线并进、网格兜底”的县乡村三级健康管理机制，实现资源统筹与网格化管理；二是加强基层医疗设施配备，为家庭医生团队配置智能检测设备，并建设集筛查、诊断、管理于一体的慢病救治中心；三是推行上门服务，通过夜间走访、定期巡诊和健康讲座提升服务可及性，尤其关注老年人等重点人群；四是建立慢病管理系统APP，实现健康数据实时传输与线上线下的融合服务；五是推动优质医疗资源下沉，开展县级专科医生巡诊和技术培训，提升基层诊疗能力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "604359b0fd94f33226ea0d74ce80dcc5088daf62d36d44752bf870f2839314c2",
+    "selected_material_sha256": "80036ac1533fc5395047b2cb162c66e8b3e21824af089d63a841a49076b59663",
+    "question_sha256": "c457c7225856016d92cb901865bf1c36947bf5284b4f7fa9a628c0367a3cd662",
+    "characters": 237,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 237,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 140,
+          "prompt_tokens": 1854,
+          "total_tokens": 1994,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
