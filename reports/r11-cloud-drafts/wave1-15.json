@@ -358,5 +358,211 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "103-4",
+    "answer": "**题目：以民为本，激发社区内生动力**\n\n“当每一处变化都呼应人的需求，每一个人都焕发新的价值，社区便能获得持续生长的内在力量。”这句话揭示了基层治理的核心逻辑——发展源于人的真实需要，成长来自人的主动参与。在D县香湖社区的实践中，从百年黄桷树下的民谣到居民自发组织的“三益”课堂，从加装电梯解决出行难题到微益坊中老人传艺、青年创业，每一项变化都直击群众生活痛点，真正实现了“小事不出社区”。\n\n社区治理的起点是倾听。过去，香湖社区因楼龄高、设施旧、归属感弱而长期沉寂。面对这一现实，社区通过宣传栏、微信群、智慧征集平台等渠道，广泛收集居民意见，让“我为人人，人人为我”的理念深入人心。当居民发现自己的诉求被回应时，参与热情自然被激发。例如，杨婆婆因无电梯常年不敢下楼，社区通过入户沟通、民意征集，最终推动五栋楼加装电梯，不仅解决了实际困难，更打破了邻里间的物理与心理隔阂。\n\n个体价值的实现是社区活力的重要来源。老李在“微益坊”学习葫芦彩绘，从一个月才掌握上色技巧到如今能独立创作，其作品甚至由学员完成，形成“传帮带”的良性循环；小唐开咖啡店后，主动发布招商帖，带动商户共同入驻，形成守望互助的商业生态。这些看似微小的行为，实则是居民在参与中找到自我价值、实现社会认同的体现。\n\n更重要的是，社区治理已从“管理”转向“共治”。物业管家不仅负责保洁维修，更被赋予社区网格员职责，可主动介入矛盾调解；“居民主理人”如张阿姨，组织15场便民活动，连接居民、物业与街道。在“物业+政务”模式下，政务服务下沉至小区，居民在家门口即可办理证照、缴费等事务，真正实现“小事不出社区”。\n\n这种共治生态还依赖资源的有效整合。香湖社区通过盘活闲置空间，打造三益剧场、文化课堂等服务场景；商户自发参与公益，如小华义务销售手工艺品，收入全部注入社区基金；老李将彩绘收益一半用于维修环境，形成“人人出力、共享成果”的良性循环。这些机制不仅缓解了资金压力，更增强了居民的归属感与责任感。\n\n社区的持续生长，本质上是人与人之间关系的重建。过去因楼龄高、空间窄而疏离的邻里，如今通过电梯、活动、议事会等场景频繁互动；居民从“事不关己”转变为“主动参与”，自觉拆除违章建筑40余处，自筹增设停车位200余个。这种转变说明，当社区真正回应人的需求，人与人之间的信任与联结便自然生长。\n\n因此，基层治理的深层逻辑，是将“人”的需求置于中心位置。唯有让每一项政策、每一场活动、每一个项目都回应居民关切，才能激发个体参与的热情，形成可持续的共治合力。香湖社区的经验表明：当居民被看见、被尊重、被赋权，社区便不再是一个静态空间，而成为一个充满温度、活力与希望的生活共同体。这种内生动力，正是社区真正“活”起来的根本所在。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "522eff20a4fd476276706df644df21ffe18a507afc17d9b55c8df348d020d154",
+    "selected_material_sha256": "f288f6c849ff3bcfea0547c5e98e0e881d56bfda982c26ffd4354557b70da005",
+    "question_sha256": "d436e8eecbbc6a22dda68e7f50e22d11f564c1c049cd66b30f6fd2142f263382",
+    "characters": 1123,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1261,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 800,
+          "prompt_tokens": 5484,
+          "total_tokens": 6284,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1108,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 715,
+          "prompt_tokens": 6407,
+          "total_tokens": 7122,
+          "prompt_tokens_details": {
+            "cached_tokens": 6283
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 1123,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 722,
+          "prompt_tokens": 6307,
+          "total_tokens": 7029,
+          "prompt_tokens_details": {
+            "cached_tokens": 5524
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "117-1",
+    "answer": "S市垃圾处理能力不足，日均产废超2万吨，处理能力仅1.7万吨/天。大件垃圾清运难、分类投放意识强但执行弱，分类标志缺失、运输车辆缺位导致分类失效。有毒有害垃圾未分类，与一般垃圾混合填埋或焚烧，造成环境污染。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "76413b7c77950ce9b5bec0ecd67954b4c939259e8fcab98b8b1c061a0d396fab",
+    "selected_material_sha256": "bd477a8afb67016f013f76cb96eccf3819de1e6daac5976d90ba7853fffbc91b",
+    "question_sha256": "bfc4e34a09df6d1879570a6e20ab49bc3af9da4882a1321b45315683df65da99",
+    "characters": 103,
+    "word_limits": [
+      35,
+      150
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 103,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 71,
+          "prompt_tokens": 916,
+          "total_tokens": 987,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "129-2",
+    "answer": "B市农业发展中主要难题：一是劳动力短缺，青壮年外出务工，种地人员老龄化；二是土地分散，田块细碎，制约机械化作业和规模化生产；三是生产成本高、议价能力弱，农资价格不透明，销售难、收益低；四是技术落后，传统经验主导，缺乏高效农业技术推广。  \n\n破解措施：成立股份经济合作社，推行农业生产托管，整合零散土地实现“小田变大田”；统一供应农资、开展病虫害防治和智慧农机技术应用，提升产量与效率；依托规模优势降低采购成本，优化灌溉管理，实现节本增效；联合龙头企业建立统一收购机制，提高农产品售价；运用卫星遥感、物联网等数字技术，构建智能化动态监测体系，推动农业社会化服务精准化、科学化。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3443ddea0d6efb8be37020c9159fb74bf7610d8e838cb77d2bf0ea086fdade85",
+    "selected_material_sha256": "e7bb79b546fc951af2c0662ba7fe20eaa9b9b3411c7cee4e53b7531ca4cb87a9",
+    "question_sha256": "6787879f16967926070c48166c744e997e59a2e9a9da3e224172f51915daaec8",
+    "characters": 284,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 284,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 174,
+          "prompt_tokens": 1792,
+          "total_tokens": 1966,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "141-2",
+    "answer": "会议发言稿提纲\n\n一、坚持标准引领，提升产品质量  \n制定并发布“天目”山核桃系列标准，明确炒制、手剥、山核桃仁三大品类技术规范，实行品牌授权准入制度，强化市场监管与违规追责，推动企业提质增效。\n\n二、培育龙头企业，带动产业升级  \n引进全国知名坚果品牌天生记总部落户，发挥其在现代化生产、科技研发、市场营销方面的示范作用，带动本地企业向标准化、数字化转型。\n\n三、推进生态修复，实现绿色发展  \n实施“退果还林”2万亩，推广自然落果与生态经营，减少农药化肥使用，恢复山核桃林生态功能，提升品质与可持续性。\n\n四、推动适度规模经营，优化生产结构  \n加快山核桃林流转，鼓励规模化、集约化经营，降低投入成本，提升机械化和数字化应用水平。\n\n五、完善加工链条，强化环节协同  \n建设政府主导、市场化运营的脱蒲中心，实现脱蒲、晒干、存储“一条龙”服务，配套数字化管理，保障产品品质与储存安全。\n\n六、深化科技赋能，推动产业创新  \n推进水肥一体化、采收机器人等试点应用，迭代升级“山核桃产业大脑”，研发深加工产品，拓展产业链价值。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "229d021866d869268c7961da28f067ef2785fd38bd73c423243012f1e6da3a3c",
+    "selected_material_sha256": "65e270ec5db0ef4002582218f8769ee51ed66918764ee4b77244cd4b0330912f",
+    "question_sha256": "b028340fdf86a25592102cd6ac2c93c0834f72c3959069527bfa1e220322eb8e",
+    "characters": 432,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 432,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 268,
+          "prompt_tokens": 1866,
+          "total_tokens": 2134,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
