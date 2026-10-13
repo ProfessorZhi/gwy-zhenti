@@ -448,5 +448,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "152-2",
+    "answer": "M县小型农田水利设施管理存在以下问题：一是规划缺失，缺乏系统性排水设计，设施建设未考虑排涝功能；二是信息不全，县水利局和农业部门无沟渠、坑塘分布及使用明细，基础数据含混不清；三是管理缺位，设施长期闲置或废弃，如方塘、水井无人维护，部分被填埋或非法占用；四是权责不明，建成后的归属、管理与维护无明确政策规定；五是投入不足，农民收益低，缺乏积极性，资金整合难，公共设施难以持续运营。\n\n建议：一是建立设施台账，动态更新沟渠、坑塘分布及使用情况；二是明确管理责任，由农业部门牵头，统筹协调水利、农村集体经济组织参与日常维护；三是推动设施功能优化，结合高标准农田建设，提升排涝能力；四是加强宣传引导，增强农户和村集体对小型水利设施价值的认知与参与意识；五是探索政府引导、村集体出资、农户共管的多元化投入机制。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9b2c5016578c1582ca04715f104ceacc318945767125021d26bb734efbe63841",
+    "selected_material_sha256": "609943f4e38d2cf92a50fc6e95f116e7e0918deaad1fa8a2014bd433f4ddce1f",
+    "question_sha256": "67698a78f9afab90f4447eff8c27b690d852e9585beebad1a65e37c3b785f81f",
+    "characters": 348,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 348,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 219,
+          "prompt_tokens": 1953,
+          "total_tokens": 2172,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "161-3",
+    "answer": "调研报告提纲\n\n一、当前农资供应形势  \n概述2022年春耕备耕期间农资价格普遍上涨情况，尿素、复合肥等化肥批发价同比大幅上涨，农药价格翻番，受国际价格、生产成本及物流影响。\n\n二、保障措施与应对举措  \n1. 企业层面：统一进货配送，压缩流通环节，启动淡季储备出库，降低农民采购成本；  \n2. 政策层面：国家和地方联动投放春耕肥储备，中央财政下达200亿元补贴，落实种粮及耕地地力保护补贴“一卡通”发放；  \n3. 物流保障：开通农资“点对点”运输绿色通道，严禁设卡封路，打通“最后一公里”。\n\n三、农技服务创新提升  \n依托“短视频+直播”模式，开展“农技专家当主播”培训，普及科学施肥用药知识，引导农民合理使用农资，促进绿色生产。\n\n四、加强市场监管与执法  \n联合公安、执法部门开展农资打假专项治理，重点整治假劣种子、肥料养分不足、农药添加禁用成分等问题，保障农民购买到放心农资。\n\n五、总结与建议  \n坚持“保供给、稳价格、强服务、严监管”原则，健全多部门协同机制，提升农资供应体系韧性，切实保障夏粮增产和粮食安全。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "dd5ebae79e5159bfc6f76a526b1a8a64ad109a8a370f722b41fdfeb94c4b12e9",
+    "selected_material_sha256": "ec6b664eb1d3252201de3c67946d4138da324a1158d7b5a03e0eb28ee6bb766b",
+    "question_sha256": "9bda51d788949e2f5e20f602b67d87be2185541cabf909cc746f4e89d801e861",
+    "characters": 430,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 430,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 293,
+          "prompt_tokens": 1660,
+          "total_tokens": 1953,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "171-3",
+    "answer": "S市菜市场改造升级的具体做法包括：推动“老牌”菜市场融合餐饮服务，实现“买菜即就餐”；嵌入花店、烘焙店、火锅店等商业业态，拓展消费场景；增设文化活动室、老人活动中心等公共空间，打造集食、购、娱于一体的“品质生活场”。\n\n记者走访发现主要问题：电商平台冲击导致客流减少，部分摊主生意难做；公共冷库功能单一、容量不足，尾货腐烂严重；智慧设备安装成本高，摊主抵触操作复杂、结算不透明；流动摊贩占道经营，管理责任主体分散，协调机制不畅。\n\n对此建议：加强政策引导与资金支持，推动智慧设备分阶段试点，简化操作流程并明确结算机制，提升摊主参与积极性；统筹规划公共冷库改造升级，实现统一管理与资源调配；对流动摊贩实行时段限流、区域集中管理，明确城管、市场监管等多部门职责边界，建立联席会议制度，形成协同治理长效机制。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "6a96d08bda5ee1a692d7c21947e6d6629c93ad16a58d007aa0a97f9a8da37eff",
+    "selected_material_sha256": "4397356cca03d4067e97f2e696683bd6c0d72a0c2b828a67ab7c41932bc2aba6",
+    "question_sha256": "e7cd904ea7a782198b114154c3b831a982a4250e24db13dbbe117ab5d0715f7d",
+    "characters": 347,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 347,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 219,
+          "prompt_tokens": 1810,
+          "total_tokens": 2029,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "183-1",
+    "answer": "F省医保从“卡时代”迈向“码时代”，实现全流程数字化转型。就医环节通过医保码完成挂号、结算、取药、复诊等操作，节省患者等待时间约43分钟；院外买药支持医保码结算，打通线上线下服务链条；推行医保个人账户家庭共济，实现家庭成员资金共享；开通跨省异地就医备案和线上报销功能，解决流动人口报销难、流程繁等问题，显著提升便民性和可及性。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7432cc51b85f2890f6a126192f95ad7354dbd69a1881facf3d42bf5b9313a4b1",
+    "selected_material_sha256": "a7482641d752b013159a06f538d91671b0408077e60e6b7df5a9c1bed91219ce",
+    "question_sha256": "e632b8c1d6b39afd826eda7450346afc9fc17c34fc145e40756f227a203f1bc9",
+    "characters": 163,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 163,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 1521,
+          "total_tokens": 1624,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
