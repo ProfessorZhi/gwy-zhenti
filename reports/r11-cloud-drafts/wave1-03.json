@@ -358,5 +358,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "101-1",
+    "answer": "南营街道坚持群众视角，从群众需求出发推进治理。针对村民夜间无路灯问题，及时响应“点单”诉求，快速安装路灯，解决照明难题；设立临时果蔬市场，优化“三摆三不摆”原则，兼顾便民与市容，满足居民买菜需求；通过议事协商、统一管理，降低摊贩经营门槛，提升服务体验；引入志愿者直播，扩大集市影响力，增强群众参与感。这些举措体现了“从群众中来、到群众中去”的治理理念，将群众关切融入基层治理全过程，实现服务精准化、管理人性化，让现代化成果切实可感。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "973992e9898aa7b9c8cf3c032438a2f30a878cb237535b540ecb172e824ce245",
+    "selected_material_sha256": "5b26fb733b36766ad80c2b4c672a4198040570f4ce8703b6e47968f66c225fbb",
+    "question_sha256": "bceb0e8d3bba75c85dd1cb9cb9c43254a84184a5420665dc73868aee82625c7a",
+    "characters": 216,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 216,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 135,
+          "prompt_tokens": 1554,
+          "total_tokens": 1689,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "112-2",
+    "answer": "N市公安系统微信公众号虽获较高满意度，但仍存在内容供给不均衡、互动机制不足等问题，应从以下方面优化：\n\n一是丰富信息发布形式。根据81%受访者希望多媒介融合的内容需求，应推动文字、图片、音频、视频等多元内容结合，提升传播吸引力和可读性。\n\n二是增强内容针对性与实用性。针对21%至42%受访者对安全防范提示、法律法规及便民信息（如交通、天气）的强烈需求，应建立分类推送机制，精准匹配公众关切，提高信息实用价值。\n\n三是强化互动沟通能力。有53%受访者反映互动不足，建议设立“留言—响应—反馈”闭环机制，明确专人跟进群众诉求，提升回应时效与透明度，增强公信力。\n\n四是优化语言表达与舆情引导。针对22%受访者认为语言不够贴近公众的问题，应采用通俗化、口语化表达，避免生硬术语；同时加强正面引导能力，及时澄清情绪性网络信息，防止误解扩散。\n\n五是提升信息发布时效性。对19%和20%受访者反映的“不及时”“内容匮乏”问题，应建立内容审核与发布流程优化机制，确保关键信息第一时间推送。\n\n上述建议兼顾公众需求与管理实际，可有效提升公众号服务效能与群众满意度。  \nN市公安局政工处  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0a226243b4d50b145a64d4f815ef13ea69def062c0b274ced9e8115c24d08edd",
+    "selected_material_sha256": "a7a4546467dad47a9d3323b5653ede2cb18d5f9fbb69d6d0d30bc7948168aa76",
+    "question_sha256": "f87ab52728065dfdad035f00cb9bbca6416035e0c1f0e3d8b1858904e9cd1448",
+    "characters": 481,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 481,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 292,
+          "prompt_tokens": 1031,
+          "total_tokens": 1323,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "125-3",
+    "answer": "尊敬的各位领导、同仁：\n\n大家好！F市围绕“绿水青山就是金山银山”理念，以黑臭水体治理为抓手，扎实推进碧水保卫战。我们坚持高位推进，成立专项领导小组，开展全覆盖排查，运用无人机巡查和专家会诊，精准识别问题成因，分类制定治理方案。\n\n以城中湖为示范点，补齐污水处理短板，建成覆盖周边3条街道的污水处理厂，实现生活污水全收集、全处理，水质达自来水标准。同步配套水生植物与亲水平台等生态设施，提升人居环境“颜值”与功能。\n\n坚持点面结合、系统治理，通过财政支持、排污许可制和现代环境治理体系构建，推动全市黑臭水体基本消除，实现从“黑脏臭”到“清净美”的转变。\n\n实践证明，科学规划、精准施策、全民参与是治理成功的关键。F市将以此次交流为契机，持续深化流域综合治理，守护水环境安全底线，为全省碧水保卫战贡献可复制、可推广的“F经验”。\n\n谢谢大家！",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ef351e62498a8e27364faa2bec9f275ebe7e2bd481a47ead0470f04de54a65db",
+    "selected_material_sha256": "4341585ddc44a5658811cf5d841eb69f5045cb09043d6926cf91a1ecf0c863d9",
+    "question_sha256": "382a967cf9ae2673b03a741a61b229f7cf9e250aa15a538a04d82ce943713d70",
+    "characters": 360,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 360,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 224,
+          "prompt_tokens": 1523,
+          "total_tokens": 1747,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "137-2",
+    "answer": "D市通过农业社会化服务破解了农村劳动力短缺、土地细碎化、生产成本高、销售难等发展难题。一是破解劳动力短缺问题，通过成立股份经济合作社，实行土地托管，吸引年长农户参与，实现“老把式”与现代农业对接。二是破解土地细碎化问题，整合零散田块，集中连片，提升机械化作业效率，新增耕地200亩，提高土地利用率。三是破解生产成本高问题，规模化采购农资，降低种养成本13%，通过智慧农业技术实现精准灌溉和病虫害防治，亩均增产11%。四是破解销售难问题，与龙头企业合作统一收购，提升议价能力，每斤多增收5分钱，打通农产品产业链，增强农户收益。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8362714a015557f78659f247b476f88936fdfd00a7668c932e26dcfcd79fd4e6",
+    "selected_material_sha256": "7429f72a8ea886c4af7101c4e7e1e2d593d46d927eed3e5571d4282fd45e6b59",
+    "question_sha256": "9fbc24fb3b762725ef1b741aac1e03db84a7d914ded4914000593ab98a5ca299",
+    "characters": 262,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 262,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 166,
+          "prompt_tokens": 1885,
+          "total_tokens": 2051,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
