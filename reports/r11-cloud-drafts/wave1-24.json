@@ -391,5 +391,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "108-1",
+    "answer": "H市加“数”前行，源于构建一体化智能化公共数据平台，实现政务事项“一件事一次办”和跨部门协同；通过三级数字化治理中心，推动“一屏掌控、一键智达”；以网格化管理精准覆盖基层治理，提升响应效率；推进医疗、养老、文化等场景数字化应用，增强服务效能，形成党建统领、全域协同的现代化治理体系。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7af78e3efae0e7ada0d04ff5c62bcc0ad8850694d12ac912240569de78f4c986",
+    "selected_material_sha256": "a33fb3d4f44c32f50b1170a9fe8a9445af94dbaa5efa938cbd26e281936a19c2",
+    "question_sha256": "eecf7eadf72085342c2e17a5ee9d9410fdfb9e4977bc6cd231524d3081ee2aef",
+    "characters": 141,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 141,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 85,
+          "prompt_tokens": 1338,
+          "total_tokens": 1423,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "132-3",
+    "answer": "S县与M县在产业转型升级中呈现不同路径：S县以技术驱动为核心，注重创新链布局，依托矿业资源和工业基础，聚焦半导体新材料领域，引进具备先进技术的旭晶半导体等企业，成立专项产业基金，通过股权投资撬动超10亿元资金，实现关键技术突破；M县则坚持产业链延伸思路，从矿产冶炼出发，逐步构建铜加工—新能源新材料完整链条，通过“链长制”推动招商精准化，由县级干部带头学习产业知识，策划项目288个、落地101个，实现产业规模五年内跨越式增长。两者差异在于：S县更强调技术创新与资本赋能，突出“技术引领+基金支持”；M县侧重产业链协同与组织机制创新，体现“链式发展+干部赋能”。二者均摒弃粗放招商思维，但S县偏重前沿技术研发，M县注重产业闭环构建，反映出不同县域在资源禀赋、人才基础和战略定位上的差异化选择。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "14f2a15ea1ddaf840170580d2228bea1d3f09c53684a1d2d916860686583f160",
+    "selected_material_sha256": "1155ce7a101969f3d65deea7d064c494152277631f6434b4483f89f57829af71",
+    "question_sha256": "86b086b563c1e77f5fd66234733d18ee6e1181d5d0a492fde4baafd742de4feb",
+    "characters": 346,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 346,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 213,
+          "prompt_tokens": 1681,
+          "total_tokens": 1894,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "146-3",
+    "answer": "**募捐倡议书**\n\n亲爱的市民朋友们：\n\n为更好地服务社区困难群体，助力邻里互助、共筑温暖，石桥街道将于2023年开展“社区阳光基金”募捐活动。该基金已累计筹集资金超180万元，用于支持特殊困难人群帮扶、青少年助学、养老服务、心理健康等公益项目。\n\n我们诚邀您参与捐赠，无论是现金还是物资，每一份爱心都将直接用于改善居民生活、提升社区福祉。过去，居民自费印制宣传卡、退休金捐出数万元，正是这份“看得见、摸得着”的信任与支持，让基金持续运转、温暖传递。\n\n本次活动将通过线上线下联动开展义卖、义诊、健康咨询等公益服务，让更多居民参与其中，感受社区温度。您的善举，不仅是一份捐赠，更是一次对家园的深情回馈。\n\n让我们携手同行，以点滴之爱汇聚成光，点亮每一个需要帮助的家庭与角落！\n\n石桥街道办事处  \n2023年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa2e4b17c68bf99980471f139a0808437e680d7cea404525ecdf66027fe86377",
+    "selected_material_sha256": "9534fddd027bf699074f83184f6257ca51dbc459f86e1f118c81fc3ca56319bd",
+    "question_sha256": "0ad9ce398c42d613329ef027bb56c78633828712ed72559375a4b117b691beec",
+    "characters": 340,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 340,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 218,
+          "prompt_tokens": 1649,
+          "total_tokens": 1867,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
