@@ -339,5 +339,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "102-1",
+    "answer": "A区与B县依托同城化战略，推动多维度协同发展。签署战略合作协议，推进80余项合作；开通城际公交，实现高速公路免费互通，加快交通互联；建立年轻干部互派机制，联合开展文旅营销，打造“美食文创街区”；强化产业协同，新能源、装备制造等项目落地B县，形成上下游供应链生态；共建物流枢纽，提升货运效率；推动人才交流，推广“找零工”App，助力就业；促进居民置业与生活迁移，实现“在A区赚钱，在B县生活”。2019—2024年两地GDP增速差距由1.6个百分点缩小至1.1个百分点，“1+1>2”发展格局初步形成。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3701ea8f08217daace4e07ed325195e2b09aa149558aa151fe49c17bdb18808f",
+    "selected_material_sha256": "16a885953ffb1806da3ebea9918e4ba8d3627931869d538fb32c719af22cbf6f",
+    "question_sha256": "3672c0c7bdf3db39635b195d8dabae46d5c7b7191a9ef0e3a7fd1a2ee6222b1e",
+    "characters": 250,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 250,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 155,
+          "prompt_tokens": 1638,
+          "total_tokens": 1793,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "114-1",
+    "answer": "祁连山生态保护主要问题：一是违规审批探矿权、采矿权，存在“未批先建”“手续不全”等问题；二是水电项目开发过度，违规审批和建设现象突出；三是企业环保不达标，如某铁合金公司长期排放超标，执法未落实；四是污染行为频发，如水电站倾倒废机油、污泥造成水体污染；五是生态破坏项目瞒报漏报，31个项目未纳入整治范围；六是地方监管失职，条例执行松散，禁止性活动被缩减，监管机制不健全。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f0465b9633d9652de165a4448468e5218e393c647e7008ee77a5336e5c15eb88",
+    "selected_material_sha256": "64847452a08574838f2030069103ad3a4a1ca7e577da9fd76a4b961b4486031c",
+    "question_sha256": "3c04754be0ac54b39ad760f7c6e2ac2250817865c92c49324a53aa1154b1f012",
+    "characters": 184,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 184,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 125,
+          "prompt_tokens": 1002,
+          "total_tokens": 1127,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "127-3",
+    "answer": "兴旺区老旧小区改造后存在以下问题：一是物业维修不作为，共用管道漏水等问题长期未解决；二是车位管理混乱，外来车辆和业主私占车位现象严重，停车难问题突出；三是物业费收取困难，部分业主认为管理无实质作用，导致运营资金不足；四是公共维修基金缺失，多数小区未归集或续筹，后期维护缺乏保障；五是改造中居民意见分歧大，如防护网拆除后安全担忧未妥善回应；六是改造资金单一，政府投入有限，提升类项目如绿化、停车、托老等难以实施；七是“造血”机制不健全，产权不清导致收益归属不明，社会资本参与难。\n\n建议：明确物业责任，建立维修响应机制；完善车位管理，推行错峰使用与共享停车制度；推动老旧小区维修基金归集与续筹，制定专项政策；强化居民参与决策，对重大改造事项开展充分协商；拓宽资金来源，探索闲置房屋租赁、文创开发等“造血”路径，健全政府、居民、社会共担机制。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9df7769c65c422140d5e5bea9c46b820adad3bc7d295f4fead44bc56f656536a",
+    "selected_material_sha256": "3d62ede10bdb64f82d00148fcf0a19e1b4e673457b91e54d63ae1ecf05f2ef8c",
+    "question_sha256": "1f6576b01e42e9ba4a78a16b8051ee8897aa1acfc1577c5ec1c72a5d8d2aa15a",
+    "characters": 367,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 367,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 226,
+          "prompt_tokens": 1660,
+          "total_tokens": 1886,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "138-3",
+    "answer": "【广播稿】\n\n亲爱的乡亲们，大家好！腊月十八，康安乡将举办一场“新时代文明实践赶大集”活动，您千万别错过！  \n\n活动现场热闹非凡——精彩纷呈的街坊邻里演出，接地气、有温度，让您感受浓浓人情味；爱心义诊、免费理发、健康咨询，贴心服务送到家门口；孩子们可以亲手体验剪纸、编织，感受非遗魅力；反诈、禁毒、民法典等知识宣传，让您知风险、懂防范。  \n\n更惊喜的是，咱们的“大礼包”可不止这些！现场还有直播带货，本地葡萄、柑橘等优质农产品火热推荐，买得实惠，吃得放心！  \n\n您关心的问题，我们也会现场解答——医保社保、道路修缮、垃圾处理等“三农”难题，乡干部亲自接访，面对面听民意、解民忧。  \n\n活动当天，赶大集、看大戏、逛摊位、解难题，精彩纷呈，幸福满满！  \n\n想了解更多？记得关注县融媒体中心报道，全程直播，精彩不断！  \n\n快来康安乡，和我们一起过一个温暖、热闹、有盼头的新年吧！  \n\n——F县融媒体中心  XXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7086fb711d56537ce9a1e9a57869e01208c03ab506bef38654e5e0109dfaf796",
+    "selected_material_sha256": "181ab8a6d4151e5e99896ac12a56f6a4f8ed3c8033b91a39e3a2609fc197b0bb",
+    "question_sha256": "eb5eacd420475bc06648242c214d313b541b5833f4f3693849fe7d241d3c369a",
+    "characters": 384,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 384,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 266,
+          "prompt_tokens": 1828,
+          "total_tokens": 2094,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
