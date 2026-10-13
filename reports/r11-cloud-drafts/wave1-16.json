@@ -384,5 +384,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "104-1",
+    "answer": "A市公交集团通过创新服务模式“放下主角架子”：推出“夜归人巴士”和“红领巾”微公交，满足夜间及特定群体出行需求；开通大型活动接驳线、文旅观光线路，对接城市流量；依托数字技术实现精准调度，提升运营效率；探索“公交+物流”“公交+医疗”等新业态，拓展服务功能。通过响应式供给、灵活调整和多元化服务，主动融入城市生活，从“单一运输”转向综合性公共服务，实现与城市发展同频共振。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7222dfba33468714cefdd6f24d4eefe2814aee2b2b5a93849a38c75365826252",
+    "selected_material_sha256": "c974c49e92c26c316658cbe3bfa288b258563b4bec131fd860dba064aca52dcc",
+    "question_sha256": "79066058c95cd77b3d0b2eb4f51051427fb2cf12a924c2ac06afbb83f0f14d99",
+    "characters": 185,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 185,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 115,
+          "prompt_tokens": 1998,
+          "total_tokens": 2113,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "117-2",
+    "answer": "应坚持“整治为主、拆建为辅”的原则，推动城中村有机更新。一是加强基础设施建设，完善停车、交通、排水等配套功能，缓解行车与停车难问题；二是规范公共空间管理，增加活动区域，提升居民生活便利性与安全性；三是依法清理电线外露、私搭乱建、无证经营等乱象，消除安全隐患；四是推动整治过程中保留原有建筑风貌和社区文化，保护“深漂”群体的城市记忆；五是通过合理规划，适度加建辅助设施，优化功能布局，提升居住品质。同时，应明确政府、村委与居民的权责分工，建立长效管理机制，确保整治工作有序、可持续推进，实现人居环境改善与社会稳定的有机统一。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "76413b7c77950ce9b5bec0ecd67954b4c939259e8fcab98b8b1c061a0d396fab",
+    "selected_material_sha256": "b2b1328fe350fe32f056c8761d34bdc3e4acef472e0452b9b16ceb6f0f7e2317",
+    "question_sha256": "cbbd0a1cf7cb6003fc54d122803719099f4518f1c1bffb563de6904c943ddaa9",
+    "characters": 261,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 261,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 160,
+          "prompt_tokens": 973,
+          "total_tokens": 1133,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "129-3",
+    "answer": "CDE都市圈阶段性建设成果汇报提纲\n\n一、通勤便利化成效显著。城际铁路实现40分钟通勤，推动“一小时通勤圈”成型，缩短时空距离，促进同城化发展。\n\n二、公共服务实现跨域通办。公积金、医保、户籍等事项在数字平台和实体大厅“跨域通办”，公立医疗机构全面实现就医“一卡通”。\n\n三、产业协同格局加快形成。电子电路企业由C市迁至E市，优化产业链配套；都市圈聚焦光电子信息、生命健康、高端装备等产业，构建“主链在C市、配套在都市圈”的一体化发展格局。\n\n四、科技创新合作持续深化。E市设立离岸科创中心，D市搭建科创平台，与C市14所高校院所开展科技合作，重点项目达99个。\n\n五、生态环境保护扎实推进。三市联合发布生态绿地总体规划和保护条例，500多平方公里“绿肺”得到有效保护，一期绿道主体建成，人与自然和谐共生图景逐步显现。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3443ddea0d6efb8be37020c9159fb74bf7610d8e838cb77d2bf0ea086fdade85",
+    "selected_material_sha256": "4f8a65db3f3160f5befb13549e0d82ddc5ab794eb16cc60dd35169ad31fccdd7",
+    "question_sha256": "718797906b8d1d1e53627a7287b9aa70ef945472c38275d102010650ea0aeb04",
+    "characters": 349,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 349,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 224,
+          "prompt_tokens": 1244,
+          "total_tokens": 1468,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "141-3",
+    "answer": "曾林社区“党建+”邻里中心治理模式参评推荐材料\n\n为提升基层社区治理效能，曾林社区以“近邻”为基、“聚邻”为要、“惠邻”为本，创新构建党建引领下的精细化、人性化服务体系。\n\n坚持“去形式化、去机关化”，改造党群服务中心，减少办公空间占比80%，增设自助机、预约热线等便民措施，提升服务可及性。建成涵盖居家养老、儿童之家、社区食堂等功能的8大服务区域，引入专业机构运营，实现服务精准覆盖。\n\n构建“红色网格化”管理机制，设立32户党员中心户、8名楼栋长，实行“党组织—网格—楼栋—家庭”穿透式组织体系，推动党员下沉一线，亮身份、担责任，实现服务触角延伸到每家每户。\n\n强化治理队伍专业化建设，选聘职业化网格长，实施“老带新”帮带机制，引入社工组织提升服务能力。健全群众参与渠道，设立意见箱、邻里会事厅和线上“微监督”平台，畅通诉求表达与共商路径。\n\n推动优质医疗资源下沉，建成卫生健康服务站，实现心电图、血常规等“一站式”体检服务，真正把健康送到家门口。\n\n累计开展各类活动20余场，参与超4000人次，以文化认同提升社区归属感，打造共建共治共享的基层治理新格局。  \n\n曾林街道  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "229d021866d869268c7961da28f067ef2785fd38bd73c423243012f1e6da3a3c",
+    "selected_material_sha256": "da1f675b9059f746f0842dffc61c7afb42e87141bbebbececa5f9f1084286768",
+    "question_sha256": "ae5239781b48c5c12051386e4f6c8b41a63393604aafd898767e0175fe6a6b0a",
+    "characters": 482,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 482,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 320,
+          "prompt_tokens": 1694,
+          "total_tokens": 2014,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
