@@ -1,0 +1,182 @@
+[
+  {
+    "id": "015-3",
+    "answer": "参评材料\n\n郝晓玲，福林社区人民调解员，自2018年退休后投身基层调解工作，现任北湖区人民调解委员会聘任调解员。她扎根社区一线，累计参与调解纠纷500余件，其中去年一年办理重大矛盾纠纷130余件，调解成功率高，群众满意度强。\n\n面对居民拒接调解的困境，她深入走访，掌握当事人心理动态，通过亲情沟通、情感疏导化解矛盾。针对专业能力不足问题，她自学心理学与《民法典》，坚持每日学习，并向资深调解员老张虚心请教，提升调解技巧。在一次夜间火灾隐患排查中，她主动排查线路故障，及时排除重大安全隐患，彰显责任担当。\n\n她始终秉持“耐心细致、入情入理”的工作原则，调解过程亲和力强，方式灵活，深受居民信赖。其调解方法被北湖区法院广泛认可，成为法院矛盾调解的重要力量。\n\n更难能可贵的是，她积极发挥传帮带作用，带动社区形成一支专业、高效、有温度的调解队伍，推动基层社会治理提质增效。\n\n郝晓玲以实际行动践行人民调解初心，用坚守与奉献诠释“老娘舅”精神，是新时代基层治理中值得表彰的优秀调解员。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0387c6374b02df54c7c2eea596bedceb151ca395f47a87838cc488767fffe2ba",
+    "selected_material_sha256": "fd0d1450e492879fe4c28731aa1523760d6550270a90692ed042905a44b01bee",
+    "question_sha256": "adbc83d47255ff901a548b34a1bdfae3f70ef70756c5d01bfafcb91afcfb6c7d",
+    "characters": 428,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 428,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 274,
+          "prompt_tokens": 1891,
+          "total_tokens": 2165,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "027-2",
+    "answer": "发言提纲：\n\n一、建立居民议事会机制，精准对接民生需求。通过征集居民建议、筛选候选清单、民主投票等方式，推动政府职能与群众期盼深度融合。\n\n二、健全程序规范，确保协商实效。实行街道主持、分组讨论、代表发言、集体表决的流程，尊重多元利益诉求，促进矛盾化解与共识形成。\n\n三、强化公开透明，提升公信力。公示项目清单，明确事项名称、方案、办理主体及进度，实现议事过程和结果可查可评。\n\n四、创新参与方式，扩大群众覆盖面。开通线上平台，便利年轻群体参与，提升议事覆盖面和响应效率。\n\n五、引入专业人才，提升议事能力。建立议事员人才库，根据议题特点聘请具备专业背景的居民担任临时议事员，增强决策科学性与可行性。\n\n六、注重落地见效，推动民生实事落地。坚持“议而能决、商而能行”，确保群众关切问题真正解决，实现共建共治共享。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b7e7abbbde4ecbcb3e62abf7c3859cc141f8b03b5c5c2d646207218863d7fdcc",
+    "selected_material_sha256": "dadce5526ffd7bf6182edf1b219c328f15ac3492b4d0c16746143c5ca1e7106d",
+    "question_sha256": "6d3f455910b6df4ec7d833ef6fa5636f02cf7af36a8244c00bc2c9182ef95176",
+    "characters": 344,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 344,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 212,
+          "prompt_tokens": 1922,
+          "total_tokens": 2134,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "037-1",
+    "answer": "H市中小学校开展课后服务的主要举措包括：一是设置三大板块（课业辅导、体育锻炼、素质拓展），满足学生多样化需求；二是根据学生兴趣自主报名，灵活安排课程内容；三是联合社会机构如市体校开展志愿活动，弥补师资不足；四是分段实施看护服务，保障学生安全与学习；五是开设情绪管理等心理健康课程，提升学生心理素养；六是加强教师培训与支持，落实课时补助和弹性上下班制度，减轻教师负担。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "6b7483527d7796c2a9f893f6c2635ddd65ed157cf5c298a7e7729cc7f37a82d2",
+    "selected_material_sha256": "8dcf146ac267250ea1f60d6b00a9ac311241957a750880438c3c2987ea0340eb",
+    "question_sha256": "ee0b581c9e10e27dc7035bbd357c607e96f7341590804706f281f5fc125e8c7b",
+    "characters": 183,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 183,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 111,
+          "prompt_tokens": 1618,
+          "total_tokens": 1729,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "046-3",
+    "answer": "闻岭小镇人才队伍建设创新案例介绍\n\n闻岭小镇立足生物技术产业方向，创新实施“引才、育才、留才”一体化人才发展战略，打造高质量发展的人才生态。一是精准引才，建立紧缺人才库，通过市领导带队走访、人才见面会、政策宣讲等方式“三顾茅庐”，成功引进金翅生物等高层次团队，团队平均年龄不足35岁，均具备博士学位。\n\n二是强化支撑，构建全链条共享科研平台，联动锦江国家实验室和D大学医学科学院，实现蛋白纯化、基因分析等高端设备资源共享，降低初创企业研发成本，破解“设备投入高”难题。\n\n三是深化留才机制，推出“产业教授”计划，吸引科技企业家进站担任导师，按需匹配项目并优先推荐申报人才项目。新办法纳入潜在独角兽企业等指标，激发人才参与积极性，提升归属感与创新动力。\n\n四是提升生活品质，配套学校、医院、商业中心等设施，建设生物科技主题社区，实现“上下楼是上下游，左右邻是产业链”。\n\n通过人才与产业深度融合，小镇新增独角兽6家、国家级科技型中小企业26家，形成“人才引得进、留得住、用得好”的良性发展格局，为全市人才队伍建设提供可复制、可推广的样板。  \n\n闻岭小镇管委会  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "eb92f8ce2aa6b88fde79066ebad3b3eb1acae93bc4ae52f05575ada77a4b91ec",
+    "selected_material_sha256": "93bd5628e442c23638d52b0a8e7419d2c5c34e9f40650f6bcbfe4584cbb261d5",
+    "question_sha256": "51dd20a4504d81b1c1ae69e7c8514a415dbbf0b14dc698dbb047f6a1a7d3f5f6",
+    "characters": 474,
+    "word_limits": [
+      405,
+      495
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 474,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 286,
+          "prompt_tokens": 1531,
+          "total_tokens": 1817,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
