@@ -1,0 +1,182 @@
+[
+  {
+    "id": "017-2",
+    "answer": "“新村民”体现的是一种人与土地、自然连接的方式。他们主动回归乡村，摒弃城市生活节奏，融入田园环境，在实践中体验农耕、养殖、种植等生产活动，建立与土地的直接联系。通过生态种植、自给自足饮食、低碳生活方式，实现人与自然的和谐共生。同时，“新村民”不以改造乡村为唯一目的，而是与老村民共建共享，推动可持续发展，促进乡村文化与生态价值的传承。他们并非简单“逃离城市”，而是在实践中重构人地关系，强调身心放松、回归本真，体现对自然规律的尊重和顺应。这种生活方式不仅丰富了乡村内涵，也为现代人提供了另一种生活选择。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ce41b80a10a45a6fd04bec6e217c26eb73cf7432c4b79406315d426e2153bc6f",
+    "selected_material_sha256": "80240d8745af3881cd8e24d9b480ce912be355a753e2f48a3e4a502fe67ca9aa",
+    "question_sha256": "3fd0577f313be871b2b7eb79eaac7601de7c0c8085099cfd57c7303d9f900a72",
+    "characters": 251,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 251,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 152,
+          "prompt_tokens": 1940,
+          "total_tokens": 2092,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "029-1",
+    "answer": "F市开展城市绿化的经验主要有四点：一是坚持民主决策，广泛征求民意，因地制宜选择乡土树种，提升成活率和适应性；二是科学养护，因树施策，通过修剪、复壮等措施保障树木健康生长；三是建立古树资源库和智慧云平台，实现数字化、精准化管理，保护城市文化记忆；四是建设口袋公园，集休闲、科普于一体，高效利用边角土地，提升绿化覆盖率与民生服务功能。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b1ff2fb5df40166660110d9a84181cda64e589fc6501cb8f450e641a67efd164",
+    "selected_material_sha256": "3636e029acc0091ceaaa2030b62c6a5de6b8a627fa7c186ce413dcf59d8c17c3",
+    "question_sha256": "48b138bf0daa682ead6491d83f36d5e19824fe5ddbb94839863c7f771e61ce1f",
+    "characters": 165,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 165,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 103,
+          "prompt_tokens": 1488,
+          "total_tokens": 1591,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "039-1",
+    "answer": "E县规范小微权力运行的做法包括：梳理村级事务，制定涵盖6大类28项的小微权力正面清单并绘制流程图；推行“村务e点通”App实现报账、查询和投诉功能；通过“村务直播间”定期直播公开村务，保障群众知情权、参与权和监督权；组织村干部培训，提升其用网能力和履职水平；明确村干部廉洁承诺，接受群众监督，推动村务透明规范运行。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "56893a144d56f81ab3e157c5e4190f1cf58f1a01321d5611007dc8992ad49b20",
+    "selected_material_sha256": "73ba9b976d4557b31d2d8be7cf2d585c5a5b3aa48d5ce0e991bb0c953a77f76b",
+    "question_sha256": "71f8143aa6e535b76a5d5e38313d2f8e3752500abd745fc1da1f69558a32f6de",
+    "characters": 157,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 157,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 101,
+          "prompt_tokens": 1774,
+          "total_tokens": 1875,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "049-2",
+    "answer": "李伟民入选《咱们的村干部》系列节目，源于其扎根基层、实干担当的务实作风。他深入群众，倾听诉求，将饮水、道路、产业等民生问题逐一解决，切实提升村民获得感。通过“三改一提”改善村容村貌，推动冬枣合作社发展，实现产业增收与集体收入突破，彰显了乡村振兴的实效。他注重人才回流，鼓励青年返乡创业，激活乡村发展活力。面对矛盾，坚持耐心沟通、公开透明协调，赢得群众信任。其工作不追求轰动效应，而是聚焦小事、做实细节，以“润物无声”的行动赢得民心。正如村民所言：“有事找李书记，准能办个明白。”这种扎根一线、为民务实的担当精神，正是该节目遴选的核心标准。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "380fe9db0c44a0a157d3c21aded0086129b922d900c00e0d0a6a60d433ecef61",
+    "selected_material_sha256": "a43ff9ac941afe99a45b03af50b36389823ada38478b07301059e20b87e9fba3",
+    "question_sha256": "657e29ab6a1662a765bffa38217d717c96dc2fcba8246546a1a787802b0434b3",
+    "characters": 269,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 269,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 172,
+          "prompt_tokens": 1381,
+          "total_tokens": 1553,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
