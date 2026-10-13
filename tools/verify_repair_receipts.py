@@ -54,6 +54,15 @@ def verify_to_round4(root:Path)->dict:
 
 def verify(root:Path)->dict:
  root=Path(root).resolve()
+ if (root/'reports/SOURCED-SUPPLEMENT-20261013.jsonl').exists():
+  from verify_sourced_supplement_20261013 import verify as verify_sourced, historical_snapshot, records as sourced_records
+  sourced=verify_sourced(root)
+  with tempfile.TemporaryDirectory(prefix='gwy-source-historical-') as tmp:
+   historical_snapshot(root,Path(tmp))
+   result=verify(Path(tmp))
+  result['sourced_supplement']=sourced
+  result['receipt_records']+=len(sourced_records(root))
+  return result
  if (root/'reports/ROUND10-ORIGINAL-ANSWERS-20261013.jsonl').exists():
   from verify_round10_reference import verify as verify_round10, historical_snapshot, records as r10_records
   tenth=verify_round10(root)
