@@ -358,5 +358,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "107-4",
+    "answer": "L市市场监管局会议情况报告\n\n近期，我局组织召开儿童智能手表安全专题座谈会，听取各方意见建议，现将主要问题及建议归纳如下：\n\n一、功能过度诱导引发安全隐患。部分手表设置免密支付、语音提示“扫码开通VIP”等功能，易导致未成年人任性消费，危及家长资金安全；恶意程序伪装成游戏App，可远程控制设备，窃取位置、通话、视频等隐私信息，存在严重信息安全风险。\n\n二、使用行为扰乱教学秩序。学生在课堂上利用手表拍照搜题、下载游戏和短视频，影响正常学习，部分答案错误或误导认知，不利于学生独立思考和健康成长。\n\n三、产品质量与售后服务不佳。近半消费者反映信号不稳定、定位不准、屏幕质量差、材质不安全等问题，部分厂商存在虚假宣传、维修困难等售后问题。\n\n四、监管机制尚不健全。当前产品功能复杂，第三方应用管理缺失，平台缺乏内容筛选和权限控制，导致血腥暴力、低俗内容传播；现有监管手段覆盖面不足，需加强跨部门协同执法。\n\n五、建议措施。应加快制定儿童智能手表相关法规或技术标准，明确功能边界与安全要求；推动行业自律，建立第三方应用审核机制；强化学校、家庭引导责任，提升未成年人安全使用意识；市场监管部门牵头联合网信、公安、工信等部门开展常态化联合监管，切实保障儿童“腕上安全”。\n\n（共491字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3bd0d3f679c4f6f69c0664c30c80622f75edaf3f2359deac99aa1efabce19e40",
+    "selected_material_sha256": "195589aca74c2d8a79193a4f0ba07a3ea6dfc3d232d290c6c8948d5f72c66290",
+    "question_sha256": "71d2815148c6d9f0d2ab6761dc1e4de783c7903c22476f50daeb2e9f0932bbce",
+    "characters": 526,
+    "word_limits": [
+      35,
+      600
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 526,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 304,
+          "prompt_tokens": 1660,
+          "total_tokens": 1964,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "119-3",
+    "answer": "G市全周期管理坚持问题导向，贯穿研判、处置、反馈、提升全流程；以党建引领统筹协同，实现跨部门、跨层级联动；明确平时与战时指挥体系，强化属地责任；依托网格化管理，落实基层力量保障；运用大数据和人工智能，推动风险预警与智能处置。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8acbf18e933d6e4a080fef68efe015fab553394fbcc4446b54bf309f33d2bd61",
+    "selected_material_sha256": "a3e584b9ce49de82e720c5ba663825500cac43f9bdf095c103465b6f882fd119",
+    "question_sha256": "e35b58e18d6cb4e3b59a9381f4e716ecc0d3e84a02c4a3daa57bef32d10c1cc6",
+    "characters": 112,
+    "word_limits": [
+      35,
+      150
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 112,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 69,
+          "prompt_tokens": 937,
+          "total_tokens": 1006,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "132-2",
+    "answer": "B市通过多措并举推动“幼有善育”落地见效。一是强化普惠供给，明确计划新增托位7500个，其中普惠性托位5000个，打造“家门口”的托育服务网络。二是创新运营模式，如伦北区建设公办托育园、西林区推进社区共建共享，提升可及性与便利性。三是健全专业支撑体系，选聘幼儿园教师、儿保医生等专业力量组建家庭养育指导员队伍，实现医养教一体化，增强育儿指导实效。四是推动智慧管理，依托“智慧托育”平台对服务全过程进行数据化记录和监管，提升服务质量与透明度。五是建立标准评价机制，出台质量评价与星级评定标准，强化服务规范性。同时，探索用人单位提供福利性托育服务，推动托育资源向社区、家庭延伸，切实减轻家长负担，实现普惠、安全、可及的婴幼儿照护服务体系。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "14f2a15ea1ddaf840170580d2228bea1d3f09c53684a1d2d916860686583f160",
+    "selected_material_sha256": "ac1bf1788cb19c296e029c2bc32fb953811f2633637b6c03c0b663c1f4b0390e",
+    "question_sha256": "2dae9e68c25fecd8794f53810f532f316bc43771e900c0cfa5068791767a657a",
+    "characters": 317,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 317,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 207,
+          "prompt_tokens": 1867,
+          "total_tokens": 2074,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "146-1",
+    "answer": "曾林社区以“近邻”为基、“聚邻”为要、“惠邻”为本，做好“村改居”后半篇文章。坚持“去形式化、去机关化”，优化党群服务中心布局，减少办公空间、增加便民服务；建设居家养老、儿童之家、社区食堂等8个功能区，引入专业机构运营；打造红色网格化管理，建立“党组织—网格—楼栋长—中心户”穿透式体系，推动党员下沉一线；拓宽群众参与渠道，设置意见箱、邻里会事厅和线上留言板，实现诉求共商；推进卫生健康服务“双下沉”，提供家门口体检服务；常态化开展文化活动，提升居民幸福感与归属感，实现治理效能与生活品质双提升。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa2e4b17c68bf99980471f139a0808437e680d7cea404525ecdf66027fe86377",
+    "selected_material_sha256": "b0e4a29730e40670e571baedf6f0f0e6f93dd823b47ffeb799c58763f2678b74",
+    "question_sha256": "aa5bce65d9c4ae31bf2c1cf019c9eb9eb097fe6d492ef1729d700bd615cccc34",
+    "characters": 248,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 248,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 161,
+          "prompt_tokens": 1650,
+          "total_tokens": 1811,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
