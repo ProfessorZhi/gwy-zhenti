@@ -1,0 +1,49 @@
+name: R11 draft body and source audit
+on:
+  push:
+    branches: [essay/r11-complete-568]
+    paths:
+      - .github/workflows/r11-draft-audit.yml
+      - tools/r11_draft_audit.py
+      - reports/r11-drafts/**
+      - reports/r11-overrides/**
+      - reports/r11-control/**
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: r11-draft-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+          sparse-checkout: |
+            tools
+            reports
+      - name: Audit actual answer bodies and source identity
+        run: python tools/r11_draft_audit.py
+      - name: Commit only candidate-review reports
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = 'essay/r11-complete-568'
+          gh auth setup-git
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/r11-review reports/r11-cloud-status/draft-audit.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'test: R11逐题原材料绑定、字数实测及完整答文审阅快照'
+          for i in 1 2 3 4 5; do
+            git fetch origin essay/r11-complete-568
+            git rebase origin/essay/r11-complete-568
+            if git push origin HEAD:refs/heads/essay/r11-complete-568; then exit 0; fi
+            sleep 2
+          done
+          exit 1
