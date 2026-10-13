@@ -352,5 +352,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "109-3",
+    "answer": "关于M县小型农田水利设施现状的调研汇报\n\n一、基本情况  \nM县水域及水利设施用地超5200公顷，但存在设施分布不清、管理缺失等问题。原有方塘、水井等多为历史遗留，长期闲置或被填埋，部分被非法改建（如驾校训练道路），产权归属不明，缺乏有效监管。农田水利设施多由农业部门管理，建成后的归属权、维护责任未明确，导致“建而不管”。\n\n二、主要问题  \n一是规划设计滞后，早期建设以防旱为主，未考虑排涝需求，设施布局不合理；二是信息缺失，无沟渠、坑塘等排水设施的动态台账和使用数据；三是管理缺位，村集体和农户维护意识弱，设施利用率低，部分被填平或种植作物；四是资金与机制不足，公共设施缺乏专项投入，部门间项目整合难。\n\n三、建议  \n1. 建立小型农田水利设施基础信息台账，全面摸清分布、功能及现状；  \n2. 明确设施建成后归属权和管理责任，推动建立“谁建设、谁管理、谁受益”的机制；  \n3. 优化排涝设计，结合地形与水文实际，科学规划排水系统，避免“临时挖沟”等应急措施；  \n4. 加大政策引导和财政支持，鼓励村集体参与运营，提升农户维护积极性。  \n\n（共410字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c57b3f74d224a0da84112a3452538e8971a0099a8e0693a0ca8cdcfca09441d3",
+    "selected_material_sha256": "6e1f987071b98d849984fdd3bf85580cad8db9601be7494b49677b5425599cbd",
+    "question_sha256": "ff4c2a6df8eaae7c98bc2eca729053a05e92ff376d9e0d63f5645ba703846b31",
+    "characters": 452,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 452,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 309,
+          "prompt_tokens": 2121,
+          "total_tokens": 2430,
+          "prompt_tokens_details": {
+            "cached_tokens": 576
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "120-3",
+    "answer": "各位嘉宾、同仁：\n\n大家好！今天，我非常荣幸站在这里，与大家共同探讨“新时代超大城市治理”这一时代命题。\n\n深圳，作为改革开放的前沿阵地，也是超大城市治理的先行者。从“i深圳”平台的“秒批”“无感申报”，到智慧交通中“灯看车、车通行”的智能调度；从城中村整治的“六字诀”蝶变，到前海改革试点的纵深推进——我们深知，城市的脉搏，不仅在高楼大厦之间，更在人与人的互动、制度与技术的融合之中。\n\n新时代的超大城市治理，必须跳出“经验判断”的惯性，走向“科学治理”。正如专家所言，城市如人体，若不科学对待，便会“生病”。我们面对暴雨成河、违建多年、系统失灵等问题，根源在于治理思维滞后、数据孤岛严重、责任链条断裂。因此，必须推动治理从被动应对向主动发现转变，从粗放管理向精细精准转变。\n\n首先，要以科技赋能，实现治理的“全感知、全分析、全响应”。深圳打造数字孪生城市、建设5G+AI指挥中枢，正是为城市构建一张“看得见、管得住、调得动”的智慧神经网络。通过“i深圳”平台汇聚8000多项服务数据，累计注册用户超1400万，实现“掌上政府、指尖服务”。在交通领域，由“车看灯”转向“灯看车”，显著提升通行效率。未来，应进一步强化大数据分析能力，推动城市运行从“响应式”向“预测性”转变，真正让数据成为决策的“眼睛”和“大脑”。\n\n其次，要以法治为基，筑牢治理的底线与规则。从《个人破产条例》到《绿色金融条例》，再到《数据条例》，深圳用制度回应社会关切，让改革有章可循、有据可依。城市治理必须在法治轨道上运行，才能实现公平、透明、可预期。尤其在新兴产业如人工智能、智能网联汽车等领域，立法先行不仅保障创新活力，更防范系统性风险。\n\n再次，要以基层为本，激活治理的“源头活水”。社区是城市的细胞。某居民因抚养费纠纷被滞留家中，通过“网格化+联调机制”，街道综治中心、司法所、社区工作人员联动调解，最终达成协议——这正是基层治理“防患于未然”的生动体现。我们应推动警力下沉、服务前移，健全“人、地、事、物、组织”五维管理，强化源头防控。同时，鼓励居民参与治理，如B市设立“市容环境提升义务宣传员”，让群众从“旁观者”变为“参与者”，真正实现共建共治共享。\n\n最后，要以系统思维，应对城市发展的复杂挑战。无论是抗震防灾、洪涝预警，还是人才竞争、空间约束，都要求我们打破部门壁垒，统筹资源、协同发力。深圳的“双区”叠加——粤港澳大湾区与先行示范区驱动，带来前所未有的发展动能，也带来治理承压加剧的现实挑战。面对此，我们推进街道综合执法改革，明确18类职责、475项执法事项，实现“职责法定化、队伍正规化、执法规范化、手段智能化、参与社会化”，既提升效率，又增强社会认同。\n\n城市治理没有标准答案，但有方向——那就是科学、法治、为民、智能。站在新时代的起点上，深圳将继续以改革为动力，以人民为中心，推动治理体系和治理能力现代化，努力成为超大型城市治理的典范。\n\n谢谢大家！",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "35eff819fd1e56cb62c71d86e68e4ee89f407cd52ebe3b09be04262f946c5cfd",
+    "selected_material_sha256": "509d65575eff4300dccd0fdd3a5a16fb313ec75837f45fcacaf0ef3f881e3ba1",
+    "question_sha256": "b6a56636eac2f5d21f80466b8fb418570b291354279a838184521188e3cdd16a",
+    "characters": 1207,
+    "word_limits": [
+      1080,
+      1320
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 870,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 568,
+          "prompt_tokens": 4366,
+          "total_tokens": 4934,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1207,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 779,
+          "prompt_tokens": 5026,
+          "total_tokens": 5805,
+          "prompt_tokens_details": {
+            "cached_tokens": 4910
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "133-3",
+    "answer": "【虚拟产业园·云端启程】\n\n各位企业朋友，欢迎来到D市虚拟产业园——跨越地理边界的创新新地标！\n\n在这里，无需搬迁、无需入驻，只需线上注册，即可在千里之外享受“云端”服务与税收优惠。无论是电商、科技还是文创企业，都能根据自身需求自由选择办公城市，实现灵活布局。\n\n我们不仅提供工商注册、政策补贴等基础服务，更打造企业资源对接平台，助力上下游协同、产供销联动。通过数据共享和精准匹配，帮助电商拓展渠道，推动产业链稳定发展。\n\n更关键的是，我们正在探索市场化运营新路径：引入园区管理费、技术入股、服务代偿等多元盈利模式，既支持企业发展，也实现园区可持续成长。\n\n同时，D市正构建“触发式监管”机制，强化企业、社会组织协同治理，确保虚拟产业园规范、高效、安全运行。\n\n借鉴沿海先进经验，我们已布局众创空间、技术孵化与专家赋能体系，助力初创项目快速成长。目前入驻企业近100家，初步形成线上规模化集聚效应。\n\n未来，D市虚拟产业园将不止是“注册地”，更是企业创新的加速器、发展的助推器！\n\n加入我们，让梦想在云端起航！  \nD市虚拟产业园官方平台直播现场，等你来探索！  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "fa814ae1fec103ef799bef666b501910c0c3ae2f92b4a0e646eb1f066fe8d21e",
+    "selected_material_sha256": "80fe119e859a6c82c508d3d02d23132f80826f0b4c1535c9ae8f31adda87862e",
+    "question_sha256": "f24f16a9bd896759d1cfa955ef74229f79debea938e2840eba0147a852c8977b",
+    "characters": 470,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 470,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 283,
+          "prompt_tokens": 1641,
+          "total_tokens": 1924,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "147-3",
+    "answer": "D市虚拟产业园发展中存在以下问题：一是企业入驻以减税为目的，缺乏产业链上下游协同联动，创新链、服务链与产业链衔接不畅，产业集聚效应不足；二是盈利模式单一，依赖政府税收返还和补贴，市场化运营能力弱，缺乏可持续收入来源；三是监管机制不健全，传统按区域治理模式难以适应跨地域虚拟园区的管理需求，存在监管盲区；四是增值服务功能有限，未能有效满足企业个性化服务需求，平台资源整合与资源嫁接能力不足。\n\n针对上述问题，提出以下建议：一是强化产业链协同，推动企业间供需对接，建立上下游联动机制，促进产供销一体化发展；二是培育市场化运营主体，探索收取管理费、场地租用费等多元化收入模式，引入技术入股、服务外包等方式参与企业经营；三是构建多方协同的监管体系，健全触发式监管机制，发挥企业、社会组织等多元主体作用，提升监管效能；四是丰富平台服务功能，针对电商、文创等企业需求，提供定制化法律、营销、设计等专业服务，打造集孵化、培训、技术支撑于一体的综合服务平台。  \n\nD市经信委  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "416e39cc8340aefb26c11ca8f48ee2aed5f6f4d63bb45e7ec1def7a337e917c5",
+    "selected_material_sha256": "3b83f418eec9af68f54b9258829aa1c863193e4ae25acea77c7ff80ac4a89409",
+    "question_sha256": "c88165e4856e8617f5edbd4b47effaa20e7c705e03b7dfcbf27ce8eb8c42abd6",
+    "characters": 433,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 433,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 248,
+          "prompt_tokens": 1659,
+          "total_tokens": 1907,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
