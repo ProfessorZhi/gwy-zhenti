@@ -26,6 +26,13 @@ def reverse(text,row):
     return text
 def historical_snapshot(root,destination):
     root=Path(root).resolve();destination=Path(destination).resolve()
+    if (root/"reports/SOURCED-CONTINUATION-20261013.jsonl").exists():
+        from verify_source_continuation_20261013 import historical_snapshot as continuation_snapshot
+        with tempfile.TemporaryDirectory(prefix="gwy-source-before-continuation-") as tmp:
+            continuation_snapshot(root,Path(tmp))
+            historical_snapshot(Path(tmp),destination)
+        return
+
     shutil.copytree(root/'reports',destination/'reports')
     for top in ('国考','省考'):
         shutil.copytree(root/top,destination/top)
@@ -42,7 +49,15 @@ def historical_snapshot(root,destination):
             if not dst.exists():dst.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,dst)
     (destination/'reports'/RECEIPT).unlink()
 def verify(root):
-    root=Path(root).resolve();rows=records(root)
+    root=Path(root).resolve()
+    if (root/"reports/SOURCED-CONTINUATION-20261013.jsonl").exists():
+        from verify_source_continuation_20261013 import historical_snapshot as continuation_snapshot
+        with tempfile.TemporaryDirectory(prefix="gwy-source-historical-") as tmp:
+            continuation_snapshot(root,Path(tmp))
+            with patch("r7_reference_audit.ROOT",Path(tmp)):
+                return verify(Path(tmp))
+    rows=records(root)
+
     full=json.loads((root/'reports'/FULL).read_text(encoding='utf-8'))
     summary=json.loads((root/'reports'/SUMMARY).read_text(encoding='utf-8'))
     sources=source_packet();pending={(a['path'],a['number']):a for a in full};seen=set()

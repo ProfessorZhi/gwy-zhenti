@@ -54,6 +54,18 @@ def verify_to_round4(root:Path)->dict:
 
 def verify(root:Path)->dict:
  root=Path(root).resolve()
+ if (root/'reports/SOURCED-CONTINUATION-20261013.jsonl').exists():
+  from verify_source_continuation_20261013 import verify as verify_continuation, historical_snapshot, records as continuation_records
+  continuation=verify_continuation(root)
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory(prefix='gwy-continuation-historical-') as tmp:
+   historical_snapshot(root,Path(tmp))
+   with patch('r7_reference_audit.ROOT',Path(tmp)):
+    result=verify(Path(tmp))
+  result['source_continuation']=continuation
+  result['receipt_records']+=len(continuation_records(root))
+  return result
+
  if (root/'reports/SOURCED-SUPPLEMENT-20261013.jsonl').exists():
   from verify_sourced_supplement_20261013 import verify as verify_sourced, historical_snapshot, records as sourced_records
   sourced=verify_sourced(root)
