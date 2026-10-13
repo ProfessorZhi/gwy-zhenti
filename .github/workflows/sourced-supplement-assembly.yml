@@ -22,3 +22,13 @@ jobs:
           else
             python tools/source_supplement_20261013.py
           fi
+      - name: Test pipeline and source preservation
+        working-directory: tools
+        run: |
+          python -m unittest discover -s tests -q
+          python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test round3_repair_test -v
+      - name: Verify corpus, historical receipts, and image pixels
+        run: |
+          python tools/cloud_quality.py --check --verify-images
+          python tools/verify_repair_receipts.py
+          python tools/verify_image_pixels.py
