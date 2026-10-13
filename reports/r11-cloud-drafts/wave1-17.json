@@ -448,5 +448,95 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "154-2",
+    "answer": "**存在问题：**  \n一是用地紧张制约产业发展，部分企业因供地不足无法扩产，成长性企业被迫外迁；二是公共服务配套滞后，医疗、教育、绿化等设施难以满足快速增长人口需求；三是基层治理压力大，“小马拉大车”导致社会管理任务重、资源供给不足；四是产业转型路径不清晰，部分镇在传统与新兴产业间缺乏科学规划，发展缺乏持续动能。\n\n**解决建议：**  \n应加快强镇扩权，提升资源配置能力，破解用地瓶颈，推动低效用地腾退再利用；加强产城融合，优化教育医疗等公共服务布局，提升民生保障水平；明确镇级治理职责，健全跨部门协作机制，增强基层治理效能；立足产业基础，因地制宜推进新兴产业培育，强化产业链协同创新，实现高质量可持续发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8cc841a6145d074b33f051c73904872e242ea8dbbb2b22967e86b1daa2fd1af9",
+    "selected_material_sha256": "cb684832c37bc30fc93cc6cea298cc4e408d185d25da179576ea2d9be1c0c889",
+    "question_sha256": "7ac65e5f847944598838a2e085895171b14fc1af8894f6b626bcd5893bf48ec6",
+    "characters": 291,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 291,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 174,
+          "prompt_tokens": 1831,
+          "total_tokens": 2005,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "163-1",
+    "answer": "Z县打造现代田园综合体，在推进乡村振兴中形成以下经验：一是立足产业基础，通过全产业链开发提升附加值，实现资源高效利用；二是创新经营模式，引入专业企业参与运作，增强市场适应能力；三是推动产业融合，发展观光旅游、文化体验等新业态，拓展增收渠道；四是强化生态环保，推广绿色生产方式，实现可持续发展；五是完善利益联结机制，通过土地流转、就业带动、分红激励等方式，让农民共享发展成果。这一路径体现了产业兴旺、生态宜居、生活富裕的乡村振兴要求，具有较强可复制性。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a182154d6759ebf9785dc0d1f09040151f8a1763ae957dad97bffa77cceaec2c",
+    "selected_material_sha256": "a476cd1fc7d0d2be73f4bce9d9d3e12ef2d47a9e619b008b83fc58c29d99565c",
+    "question_sha256": "0a38113ded66e74e918c67e33c1f794ef08509ad2e835671a65036cc29f9faef",
+    "characters": 225,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 225,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 124,
+          "prompt_tokens": 1796,
+          "total_tokens": 1920,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
