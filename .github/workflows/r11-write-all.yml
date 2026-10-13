@@ -1,0 +1,45 @@
+name: R11 all remaining original-reference drafts
+on:
+  push:
+    branches: [essay/r11-complete-568]
+    paths:
+      - .github/workflows/r11-write-all.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: r11-write-all-wave1
+  cancel-in-progress: false
+jobs:
+  write:
+    name: Original drafts ${{ matrix.shard }} of 32
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          show-progress: false
+          sparse-checkout: |
+            tools
+            reports
+          sparse-checkout-cone-mode: true
+      - name: Verify pinned public model and start local-only inference
+        run: python tools/r11_model_boot.py
+      - name: Generate full, source-bound original answers with bounded revisions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/r11_bulk_writer.py --shard ${{ matrix.shard }} --shards 32 --label wave1 --checkpoint-every 4
+      - name: Save actual drafts and explicit unresolved failures
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          LABEL=$(printf 'wave1-%02d' '${{ matrix.shard }}')
+          python tools/r11_push_outputs.py --label "$LABEL"
