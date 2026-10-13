@@ -1,0 +1,182 @@
+[
+  {
+    "id": "011-2",
+    "answer": "M市夜市具有业态多元、主题鲜明的特点。既有传统地摊，又引入大厨专业餐饮；融合潮流市集、沉浸式夜游、夜间演艺等新型消费场景。注重年轻化、时尚化布局，以主题夜市吸引人流，打造文化地标。同时，满足不同群体需求，兼具休闲娱乐与精神慰藉功能，成为城市夜间经济的重要载体和居民生活的新空间。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "91f290f23f769890605bae31737766181892ed787b78907d2a8fd6da91850be9",
+    "selected_material_sha256": "39c0e46fb568a66135460a1a50c9d9f4a38a4ccfe2884e54332dffadd4592994",
+    "question_sha256": "5fb092fa87d37dedb9595e09e2cdc5bfc4c16744f160f82589442f2727d94034",
+    "characters": 139,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 139,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 89,
+          "prompt_tokens": 1552,
+          "total_tokens": 1641,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "020-1",
+    "answer": "制定“天目”山核桃系列标准，实施品牌授权与监管；推进生态修复，“退果还林”并推广自然落果；推动山核桃林适度规模经营，提升生产效益；建设脱蒲、晒干、存储一体化中心，实现数字化管理；引进龙头品牌企业，带动产业链规范化、现代化发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d8fab0bbd6506b9fa66eb4be1d72672feffbd8c4c55368564971fb41a5634ccc",
+    "selected_material_sha256": "76bfa891525b84dcd52a9b5b2d9ca087e9eecc1745acccfbbb95054e3e3d319a",
+    "question_sha256": "c16088980fb34026dbcdcaec2c17b27c6da8cb4b027fef318f69b47acf2d4beb",
+    "characters": 113,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 113,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 71,
+          "prompt_tokens": 1700,
+          "total_tokens": 1771,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "033-2",
+    "answer": "尊敬的各位领导、同仁：\n\n大家好！我是C市金融办工作人员小王。今天，我代表C市分享金融服务港湾建设经验。\n\n为破解小微企业“融资难、融资贵”问题，我市创新打造“金融服务港湾”综合服务平台，通过政银企联动，推动金融资源下沉。我们重点构建了三大机制：一是建立“科创指数”模型，以五大能力维度、八项评价科目科学评估科技型企业，精准匹配信贷产品；二是推广“双保·科创”等专属融资模式，如“抵押+助业快e贷”“无还本续贷”，实现无抵押、低利率、快速放款；三是强化基层金融治理，依托银行网点与社区联动，主动上门服务，有效防范“套路贷”“高利贷”风险。\n\n实践表明，金融服务港湾不仅提升了融资效率——如聚狮新材料公司3天到账500万元贷款，更增强了市场主体信心。某阀门企业通过“双保·科创”获得200万元贷款，某洗衣店因“无还本续贷”得以稳定经营，一级经销商也通过低息贷款缓解了库存压力。\n\n下一步，我们将持续优化服务机制，深化政银协同，推动金融服务向更广领域、更深层次延伸，真正让“小生意”惠及“大民生”。\n\n谢谢大家！",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f9184587d1bf13838588ffeefd0e9cc7b9edfe3b30aa34c00b867b0387a060e6",
+    "selected_material_sha256": "618236a5b98180cf6874ed6656b060385a250010040be685674092dbc58a2ae7",
+    "question_sha256": "bb2a5f127fb85015293a045386c41da19b3350d0e2383e2633161056db9d2e1b",
+    "characters": 444,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 444,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 284,
+          "prompt_tokens": 1866,
+          "total_tokens": 2150,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "042-4",
+    "answer": "**汇聚合力，共筑高质量发展新未来**\n\n在当今时代，单打独斗已难以为继，唯有善于汇聚多元力量、形成协同合力，才能在复杂多变的环境中实现可持续发展。给定资料中J市依托特色产业集群建设，通过政府引导、企业联动、科技赋能和资源共享，生动诠释了“联结当下，畅通未来”的深刻内涵。这不仅是一种发展模式，更是一种治理智慧——只有打破条块分割、资源孤岛，才能真正激发创新活力，推动产业跃升。\n\nJ市打造化工新材料、智能装备等特色产业集群，正是通过“一群一班、一群一策”机制，明确责任主体，统筹资源配置，实现了从分散布局到系统协同的转变。龙头企业作为“链主”引领方向，带动上下游企业形成完整产业链条，既补链强链，又实现资源共享与风险共担。这种“龙头牵引、集群联动”的模式，有效破解了传统产业发展中“各自为政、重复建设”的困局，为新质生产力培育提供了可复制的路径。\n\n更为关键的是，J市通过建立共享数据中心和科技飞地，打通了中小企业“缺资源、缺技术、缺市场”的瓶颈。在智能平台调度下，一个订单即可激活多方协同生产，实现“小企业接单、大企业共享、平台统配”的高效运行。这不仅降低了中小企业的运营成本，更打破了传统制造中“规模门槛高”的桎梏，让创新活力在微观层面充分涌流，真正实现了资源的优化配置与价值共创。\n\n与此同时，政府角色从“管理者”向“服务者”和“赋能者”转变，通过设立专项基金、建设科创载体、推动人才引进等举措，为企业发展注入源头活水。例如，一家专注于覆铜陶瓷基板的企业，凭借政策支持实现了技术突破，打破国外垄断，这正是“政府搭台、企业唱戏”的生动体现。可见，合力的形成离不开制度设计与政策引导的精准发力。\n\n此外，资料中还体现出一种深刻的协同逻辑：发展不是零和博弈，而是多方共赢的过程。J市通过联合攻关“卡脖子”技术、组建共性平台，推动产业链上下游共同攻坚，既提升了整体韧性，也增强了企业的自主可控能力。这种从“单点突破”到“系统突围”的思维跃迁，正是应对全球科技竞争的必然选择。\n\n更进一步看，这种合力的构建，本质上是社会资源与治理能力的深度融合。它要求我们以系统性思维看待发展问题，推动政府、企业、科研机构乃至广大劳动者形成命运共同体。唯有在制度设计上打通壁垒，在运行机制上强化协同，在价值导向上凝聚共识，才能让“联结当下”真正转化为“奔向未来”的不竭动力。\n\n总之，“汇聚力量，形成合力”不仅是产业发展的现实需要，更是新时代高质量发展的重要路径。从J市的实践可见，唯有坚持系统思维、深化协同创新、优化资源配置，才能在变局中开新局，在挑战中育新机。面向未来，我们更应主动构建开放协同的生态体系，让每一份力量都成为推动社会进步的引擎，共同书写充满活力与希望的发展新篇章。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4d99f12caf232365b6ba340917f8f8293f154814f534663dad03a72d057934a1",
+    "selected_material_sha256": "f7731bea377a513eaab69a0fe24333abe2c5e9b9d9ee123900b551051df10ead",
+    "question_sha256": "e2286a1bd6b7590645aa0cf06568aff423186c0367b9440e99a68ff15e213ddc",
+    "characters": 1115,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1115,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 674,
+          "prompt_tokens": 5297,
+          "total_tokens": 5971,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
