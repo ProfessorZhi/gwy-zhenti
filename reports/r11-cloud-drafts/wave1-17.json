@@ -313,5 +313,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "104-2",
+    "answer": "人人皆是创作者  \n\n亲爱的市民朋友们：  \n\n城市更新，不仅是建筑的迭代，更是记忆的传承与生活的共创。我们倡议，每个人都是城市发展的参与者、创造者。在街区改造中，欢迎您走进社区，参与设计讨论，为公共空间提出真知灼见；在古桥修复、河道疏浚中，倾听老工匠的智慧，传递对传统技艺的敬意；在“15分钟生活圈”建设中，共同规划社区食堂、托育中心等便民设施。  \n\n我们坚持“微更新、轻干预”，尊重历史肌理，保护文化根脉，同时为未来留出发展空间。通过入户访谈、共情共建，让居民从旁观者变为决策主体，让每一份期待都被看见、被回应。  \n\n城市之美，源于人与人的连接，源于新旧之间的对话。让我们携手参与，以点滴行动书写属于我们的城市故事——人人皆是创作者，城市因你而生动。  \n\nC市人民政府  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7222dfba33468714cefdd6f24d4eefe2814aee2b2b5a93849a38c75365826252",
+    "selected_material_sha256": "16f814cdca03580590b36c5ecea62da39fd46c95994a4c81145f49d45825d8db",
+    "question_sha256": "e5dad9d5bf6a3fa05b54160e5384a535ba12ff9d9d95810777a36701c5e12967",
+    "characters": 328,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 328,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 215,
+          "prompt_tokens": 1573,
+          "total_tokens": 1788,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "118-1",
+    "answer": "打造全球开放创新平台，构建人才发展生态；创新知识产权保护机制，出台全国首部综合条例；实施“四不像”新型研发机构机制，推行社会化用人与市场化激励；优化人才政策体系，设立人才日、建设人才主题公园，推动人才智力高效转化。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d8738e66b966ae1f0f144b25bda1a62ac98a80cc3cb9676476296bbc4e33abc3",
+    "selected_material_sha256": "4d436b5768eff0f6371b6b5b44c6b0b65f09a2e35dc1f766f053c511f085cd09",
+    "question_sha256": "4c8d7e26a0afe91fd239e3026d370c727e0d02e139c83cb063631d6a3b9e5ee7",
+    "characters": 107,
+    "word_limits": [
+      35,
+      150
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 107,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 61,
+          "prompt_tokens": 1104,
+          "total_tokens": 1165,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "142-1",
+    "answer": "老叶成功的原因在于：坚持“只做小面”的专注信念，坚守传统手艺与食材品质；秉持“炮制虽繁必不敢减人工，品味虽贵必不敢减物料”的原则，亲力亲为、精益求精；面对市场压力不盲目转型，拒绝加盟连锁，保持初心与专注；通过长期实践和不断摸索，形成独特风味，赢得食客信赖。其成功源于对简单本质的坚守与极致追求。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa033191168316e516e15566f6109951d4ed38637eb4f295df6b387c6540d93b",
+    "selected_material_sha256": "ecbaf8d77ef0a5bc2eccaaff71e837b03461ffdd2697303c2456ea64103e7476",
+    "question_sha256": "690bec64e737aaa3c7decdb5dc52e34362e1eacca2810d005aa4a0db2ba8fa9c",
+    "characters": 147,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 147,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 96,
+          "prompt_tokens": 4716,
+          "total_tokens": 4812,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
