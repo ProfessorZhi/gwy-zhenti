@@ -1,0 +1,163 @@
+[
+  {
+    "id": "026-2",
+    "answer": "当前宽石镇乡村旅游规划中存在的问题：一是规划脱离乡村实际，忽视村民意愿，存在“城市化”倾向；二是旅游内容同质化严重，缺乏特色与文化深度，核心竞争力不足；三是村民参与度低，收益分配不明确，对政策不了解，积极性不高；四是管理与服务滞后，软环境治理缺失，宣传推介缺乏针对性；五是规划统筹不足，各村发展缺乏整体性，项目分散。\n\n改进建议：应坚持“以村为本”原则，深入调研村民需求，尊重其意愿参与规划；挖掘本地特色资源，打造差异化旅游产品，强化文化内涵；设立专业指导团队，明确政策流程，提升村民参与感与获得感；加强游客画像分析，精准开展宣传推介；统筹全镇布局，形成主题鲜明、联动发展的旅游项目体系，实现“一盘棋”协同发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "98d2523ddb99ac482fce0a47d839e74cd9d1548b81b7cac779f1a208b6856c24",
+    "selected_material_sha256": "fafc6809fad6a042be03997b65adb3bb42fef75d8efb9cf49700b1b316003f71",
+    "question_sha256": "45df1e2cb41cfc564de04967a5b7980a66c457ef94f06df0d256f2c0a9c924f0",
+    "characters": 304,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 304,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 183,
+          "prompt_tokens": 1565,
+          "total_tokens": 1748,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "036-2",
+    "answer": "龙台村创建信用村的主要经验如下：一是建立个人信用档案，通过身份证登记、银行核实，为农户建立永久信用基础信息，实现无抵押、无担保贷款；二是实行信用评级与“一户一策”精准帮扶，对不同群体量身定制信贷支持方案，如“信用户”授信、药农贷、红薯种植贷等；三是坚持正向激励，以先进带后进，通过“信用户”互助帮扶，推动信用建设全覆盖；四是强化党群联动，设立党群服务中心常驻办公，政府与银行协同推进，形成三方共管机制；五是注重实际成效，将信贷与扶贫结合，支持特色产业和贫困户增收，实现金融赋能乡村振兴。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8e8c9810f4c65b3c699dc8ee18faba21789f01601e8890dfc98967fab7c1bd6f",
+    "selected_material_sha256": "3cd1bc1ab97086748522cc23494cc0fd964b6dc025c8fd6f2cc593ff34cacff3",
+    "question_sha256": "4f8afc5653a995b3f44abb17a486a6eff206ea464257d6f1b40ba441c90cce16",
+    "characters": 243,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 243,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 154,
+          "prompt_tokens": 1315,
+          "total_tokens": 1469,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "045-4",
+    "answer": "**弱鸟振翅：县域发展的路径选择与能力锻造**\n\n“弱鸟要飞高飞远，既要找到适合的飞行路径，又要丰满自身的羽翼”，深刻揭示了县域发展必须立足实际、精准定位、内外兼修的核心逻辑。对于资源禀赋有限、基础相对薄弱的县域而言，盲目模仿或依赖外部输血不可持续，唯有在“找准路径”与“强化能力”之间实现动态平衡，才能真正破局突围。\n\n首先，“找到适合的飞行路径”，意味着必须立足本地资源禀赋和产业基础，走差异化发展之路。N县从传统农业向蜜瓜种植转型，正是基于对碱性土壤和干旱气候的科学研判，实现了从“种粮难”到“产蜜旺”的转变。这种因地制宜、因势利导的发展路径，避免了同质化竞争，为县域注入了独特竞争力。同样，在Y县竹产业发展中，依托竹林资源禀赋，不走粗放式开发路，而是向精深加工和国际化延伸，形成了差异化优势。\n\n其次，“丰满自身的羽翼”，强调的是内生能力的系统性提升。这不仅包括技术、人才、管理等硬实力，更涵盖政策协同、服务保障与市场开拓等软支撑。N县通过整合审批流程、设立项目推进中心，实现“一站式”服务，极大降低了企业落地门槛；同时，建立人才库、提供技能培训、开展电商培训，为返乡创业提供了坚实基础。这种从“政策扶持”到“能力赋能”的全过程支持，真正让企业在成长中“站得稳、飞得远”。\n\n再者，县域发展不能仅靠自身努力，更需跳出本地视野，加强跨区域协作与资源整合。N县与竹淮高新区建立合作机制，实现产品供应与电商培训双向联动；D县通过建设工业互联网平台，推动产业链上下游协同，均体现了协同共进的发展智慧。这说明，县域发展既要“独善其身”，更要“兼济天下”，在开放中激发活力。\n\n最后，能力的锻造必须贯穿于全生命周期。从项目引进、落地到市场拓展，企业成长过程中面临的问题层层递进。N县推行“两会一日”机制，及时收集诉求、现场办公，实现了问题闭环管理；D县通过数字化平台提升生产效率，回应了消费者对“快、精、新”的需求变化。这表明，发展不是一蹴而就的，而是需要持续优化机制、迭代能力。\n\n唯有坚持实事求是、因地制宜，既明确发展方向，又强化自身能力建设，县域才能在激烈竞争中实现可持续跃升。弱鸟之飞，不在风起，而在心有定力、翼有厚实。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "187ded3df4b70aedd18d275046327bac27abdb51da1ec885be3625f24031e0d3",
+    "selected_material_sha256": "0d95ae86a6cc0cd65fd60091c940d534b6fd07d15e100547f21ffb210e4bbc81",
+    "question_sha256": "a8d1c7a6a3f86c05873d5beb0fdc901f665725a46d715db707977b343e8a9106",
+    "characters": 896,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 956,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 598,
+          "prompt_tokens": 4918,
+          "total_tokens": 5516,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1021,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 637,
+          "prompt_tokens": 5622,
+          "total_tokens": 6259,
+          "prompt_tokens_details": {
+            "cached_tokens": 5110
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 896,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 567,
+          "prompt_tokens": 5675,
+          "total_tokens": 6242,
+          "prompt_tokens_details": {
+            "cached_tokens": 4954
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
