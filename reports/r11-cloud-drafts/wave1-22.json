@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "062-3",
+    "answer": "部分城市马拉松赛事存在同质化严重、虚假宣传、报名率低、组织管理不善等问题。一些赛事为追求声势，拉人头、请选手“撑场面”，导致比赛变味；参赛者缺乏身体和心理准备，出现伤病甚至违规行为；补给不足、路线解封、集体抄近路等现象频发，影响赛事安全与公平性；号码布倒卖、“黄牛”交易扰乱秩序，破坏赛事规则。\n\n应加强赛事规范管理，严格赛事等级评定标准，杜绝“挂名”办赛；明确参赛资格门槛，强化报名审核机制；提升赛事组织专业化水平，完善医疗、交通、安保等配套服务；推动赛事差异化发展，结合地方特色打造细分赛道；倡导跑者尊重规则、科学参与，增强健康意识与规则意识。地方政府应切实履行监管责任，建立赛事全过程监督机制，推动马拉松赛事向高质量、可持续方向发展。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b50f09ceb6cd3537d582f078bc290b6e35f930e680456e9051438fda4c21bf59",
+    "selected_material_sha256": "d19430518cd55a342405bd098b0c53a665707eb206c02f3ac3aa0526876cadc5",
+    "question_sha256": "df09f7f8eb914af293c3962d67c3e1f5192ee3fa02faca12e364700433cb5ecb",
+    "characters": 327,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 327,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 204,
+          "prompt_tokens": 1564,
+          "total_tokens": 1768,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "075-3",
+    "answer": "J县解决备耕农资供应问题主要做法提纲：\n\n一、强化价格稳控，保障农资供应量足价稳。统筹化肥储备，启动淡季储备出库，平均降价300元/吨，缓解价格上涨压力；配合国家投放300多万吨春耕肥储备，确保市场稳定。\n\n二、落实财政补贴，减轻农民负担。及时发放耕地地力保护、种粮等补贴，每亩超100元，通过“一卡通”直达农户账户，提升惠农实效。\n\n三、畅通物流通道，保障农资“进村入户”。制定疫情防控期间农资保供预案，开通“点对点”运输绿色通道，严禁设卡拦截，打通“最后一公里”。\n\n四、创新农技服务，提升科学使用水平。开展“农技专家当主播”培训，通过短视频、直播形式普及农药化肥安全使用知识，提高农民科学种植能力。\n\n五、加强执法监管，严打农资违法行为。联合公安、综合执法等部门开展打假专项行动，重点整治假劣种子、肥料养分不足、农药添加禁用成分等问题，确保农资质量安全。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa49f57dd9d2bb0820debfd7c73ae7f85f62709862f428011c6160d65bd50503",
+    "selected_material_sha256": "d7d6c69f72c9c33a5c37cd7b19b1686e94583b1ef567a9a0e2049558220977ec",
+    "question_sha256": "8b1a16280cac00cb3ec3c96390d7898d7177841e592250179c6ec46500d237d8",
+    "characters": 370,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 370,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 238,
+          "prompt_tokens": 1654,
+          "total_tokens": 1892,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "084-3",
+    "answer": "坚持变中求进 推动产业发展  \n——P县传统产业转型升级经验发言提纲  \n\n一、立足产业基础，推动模式创新。依托服装、箱包等传统优势，从OEM向ODM转型，强化原创设计能力，推动“中国制造”向“中国智造”跃升。设立原创设计备案制度，企业设计研发投入占比达5%，与知名IP联名打造中高端产品，提升品牌竞争力。  \n\n二、聚焦生产效率，深化数字赋能。针对工序等待、返工等效率瓶颈，建设柔性生产线，产线切换时间缩短至半小时；搭建工业互联网平台，实现大中小企产能协同，中小企业在细分环节找到发展空间，提升整体制造效能。  \n\n三、拓展市场路径，实现内外贸融合。依托跨境电商渠道，拓展南美等海外市场；建设网络直播基地，推动线上线下融合，强化内贸市场布局，形成“外贸稳、内贸活”的双轮驱动格局。  \n\n四、坚持新旧融合，实现持续迭代。传统产业转型升级不是颠覆式变革，而是连续更新，通过技术、模式、市场三重创新，在变中求进中增强韧性与活力，为现代化产业体系注入持久动力。  \n\n（全文共410字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "351f89dbe6e42abfa299444e1069c6df47069f9858b38b6b2d4319b12fdf1de4",
+    "selected_material_sha256": "ecae1801eb98bc04f747da3419eaa8d45f5ef3baf84c58ac36ee03d9b5ccb8d9",
+    "question_sha256": "6ee9deefed44fd9d3caba7141df163f74e30bd3bfff79f72808b598f1ec5c2c4",
+    "characters": 417,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 417,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 260,
+          "prompt_tokens": 1661,
+          "total_tokens": 1921,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "094-2",
+    "answer": "S市实施“幼有善育工程”的主要做法包括：一是依托社区公共服务设施，建设嵌入式“宝宝屋”，提供免费半天托管服务，满足临时育儿需求；二是推动公办幼儿园托班全覆盖，实现应开尽开，提升普惠性托育供给；三是推进“智慧托育”数字化转型，通过智能系统实时监控幼儿出勤、健康与安全状况；四是构建“1+16+N”早教指导服务体系，每年为家庭提供不少于6次免费服务，并开发“育之有道”小程序普及科学育儿知识；五是加强师资队伍建设，确保保育人员持证上岗，提升托育服务质量。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8ae8a1533449c5cf68dbb8ca21f3c884280955089d5b8d46c49cab0a302fbadd",
+    "selected_material_sha256": "147db0ad978dd87af4d15fc984c518e7a9ca8dfe6d015d1e28c4f1f086e6d817",
+    "question_sha256": "7492a6f52de3574316b0b5a185a47d8b842217e58cbf0954d2d4fd3046ffda45",
+    "characters": 225,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 225,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 141,
+          "prompt_tokens": 1752,
+          "total_tokens": 1893,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
