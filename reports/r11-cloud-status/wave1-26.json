@@ -1,10 +1,10 @@
 {
   "label": "wave1-26",
   "selected": 16,
-  "processed": 4,
-  "drafts_written": 4,
+  "processed": 8,
+  "drafts_written": 8,
   "failures": [],
-  "elapsed_seconds": 1517,
+  "elapsed_seconds": 2129,
   "status": "drafts_only_not_applied_to_corpus",
   "quality_boundary": "Model self-review is not independent expert marking."
 }
