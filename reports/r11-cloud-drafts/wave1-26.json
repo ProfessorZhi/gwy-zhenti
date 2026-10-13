@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "064-2",
+    "answer": "W县做好绿色发展的原因在于：一是立足资源禀赋，因地制宜发展旅游经济，打造民宿、户外运动等特色业态，实现生态与产业融合；二是创新运营模式，成立县域产业运营公司，推动农文旅一体化发展，提升资源整合效能；三是深化科技赋能，依托高校建立科技小院，推广绿色种植技术，实现增产提质；四是激活市场主体，通过“卫星办公”盘活民宿非假日经济，促进就业增收；五是强化企业服务，开展政策解读、问题帮扶和平台搭建，优化营商环境。多措并举，形成绿色发展合力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3eccce50351d26d404233c7ca3a90e9146ce387c6476754c537a955f2c4105f6",
+    "selected_material_sha256": "1c7e32484832aedfdd8cd375092aefd3e8688fe8368a1e069a3f60c0b3394e51",
+    "question_sha256": "7342c324cbffa68b3cfed6e119dbc7b1cb5eacdc885c939d00208ca787d00a57",
+    "characters": 216,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 216,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 125,
+          "prompt_tokens": 1534,
+          "total_tokens": 1659,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "076-3",
+    "answer": "占唐路零工市场存在三大问题：一是务工人员流动性大、缺乏保障，日结工资易被拖欠，且无劳动合同，维权困难；二是技术参差不齐，部分新人安全意识薄弱，存在安全隐患；三是市场管理混乱，占马路导致交通拥堵、噪音扰民，劳务中心因资质限制和岗位不匹配难以吸引企业入驻，供需对接不畅。\n\n建议：一是健全用工合同制度，推行实名制登记与工资代发机制，保障务工人员合法权益；二是加强技能培训与安全教育，特别是对新入职零工开展岗前培训，提升整体技能与安全意识；三是优化劳务中心设置，放宽中小企业准入条件，增设低技能岗位，推动供需精准匹配；四是合理规划零工市场布局，划定专用区域，实施错峰管理，减少交通与噪音影响，实现规范有序发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cee1b574a891dc7c3eed3f080a04099aa66e28677ba03ff206c49d9b7c272556",
+    "selected_material_sha256": "970ef63bcd1b1659f1ccf3f2553a333161403743c5df5fec45e9b04f9c435af0",
+    "question_sha256": "aeb0387b4853b76dc5006df2d295a1efc8ccf30daba6c10941422d1c45ab5dce",
+    "characters": 300,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 300,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 182,
+          "prompt_tokens": 1787,
+          "total_tokens": 1969,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "086-3",
+    "answer": "“形变”指企业表面的产品更新或结构调整，如仙路频繁推出新品、国欣拓展产品线，但缺乏本质创新；而“蝶变”强调在技术、模式、管理等深层维度的突破性变革。仙路依赖代工思维、换汤不换药，仅实现形式变化，终致品牌老化；国欣从圆柱到圆锥的工艺革新，再到跨领域延伸与产业链整合，体现专业深耕与系统升级，实现了真正意义上的转型。二者对比表明，“蝶变”不仅需要技术创新，更需战略重构、组织协同和价值重塑。唯有突破路径依赖，实现内生动力与可持续发展，企业才能在竞争中永葆生机，避免陷入“中年危机”。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c6d34c013a374ce1708df054cc8216a47a3decbb6115f0914d616252b5a39b10",
+    "selected_material_sha256": "a81e6617b9dfc348d85edb03f7948143977018aa5411c7ae27c6726e9af5d25e",
+    "question_sha256": "5672b91ef6e39fda15c709fb636b5f9bb765c9c5df25419e5dcfb6f30faf2c8e",
+    "characters": 239,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 239,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 158,
+          "prompt_tokens": 1738,
+          "total_tokens": 1896,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "095-2",
+    "answer": "“德国制造”成为精品，得益于政府与企业的协同努力。政府构建社会市场经济体制，通过专利保护、环保标准和产业战略引导企业创新；建立一体化科研体系，提供研发支持；完善社会保障和教育制度，提升人力资本质量；推动标准化建设，保障产品质量与生产效率。企业方面，秉持“理性严谨、精益求精”的传统，坚持长期主义，注重研发投入与产品品质；中小企业规模小而精，贴近市场，富有创造力；在制造业中形成卡特尔与行业协会合作机制，实现技术协同与产业整合。德国重视教育，从基础教育到职业教育全覆盖，培养出高素质技术工人队伍。企业对“拿来主义”进行深入研究并自主创新，形成技术领先优势。政府与企业共同作用，使“德国制造”兼具质量、创新与可持续发展能力，成为世界公认的精品代名词。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "5a5384791d2f6f062aaa1d6b7564056558eab6f6423ee8b6c255e12926a03620",
+    "selected_material_sha256": "ba7d845712702bd251e0b486ed4accf7bb7bef830bff64a58fa047249f6ee05c",
+    "question_sha256": "b80e50b274ce5cfefaf436f555f1ea95bb8cbfbdccdc04f203a7d5b4d9a7c841",
+    "characters": 323,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 323,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 179,
+          "prompt_tokens": 1838,
+          "total_tokens": 2017,
+          "prompt_tokens_details": {
+            "cached_tokens": 576
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
