@@ -133,5 +133,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "060-3",
+    "answer": "坚持变中求进 推动产业发展\n\n一、立足产业基础，推动转型升级。P县依托服装、箱包产业集群优势，从OEM向ODM、品牌化“智造”转型，提升产品附加值和市场竞争力。\n\n二、强化原创设计，激发内生动力。鼓励企业融入传统文化元素，支持原创设计研发，2023年原创款式超2万款，设计投入占销售额比重达5%。\n\n三、推进数字赋能，提升制造效率。建设工业互联网平台，打造柔性生产线，实现产线30分钟切换，有效应对小批量、个性化定制需求。\n\n四、构建协同体系，优化供应链布局。通过数字化平台实现大中小微企业产能共享，推动内外贸一体化发展，拓展南美、国内等多元市场。\n\n五、坚持新旧融合，实现持续迭代。传统产业并非断裂式更替，而是动态更新，在变中求进中展现韧性与活力，为现代化产业体系提供可复制经验。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "49b77d17d76aa7c42a67678b5fa3279b78b29542b6ea7f0424afcc1f9f1a0312",
+    "selected_material_sha256": "d346203c90f1dad50d3a904f7f2cb4d3feedebe8c8b73bfce869063ad7e614a5",
+    "question_sha256": "f8e4be0ba26b88b2414e94aa9e275284d495f6f767aee9e512a41e0104c5a171",
+    "characters": 330,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 330,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 207,
+          "prompt_tokens": 1783,
+          "total_tokens": 1990,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "074-2",
+    "answer": "S市社区食堂建设成效显著，有效解决老年人及上班族就餐难题。食堂普遍实行低价运营，如佳苑社区老人餐费仅300元/月，政府补贴与集体收入支持保障可持续性。部分食堂引入数字化管理，提升效率与安全水平，实现降本增效。运营模式多样，既有社区物业自主经营，也有公益组织承接，形成多元参与格局。为解决初期亏损问题，市政府通过财政补贴、政策扶持等方式提供支持，推动食堂“价廉物美、安全可托”。同时，社区食堂作为民生工程，逐步拓展理疗、家政等延伸服务，助力社区治理与居民福祉提升。下一步应进一步完善运营机制，强化政府引导与社会协同，推动社区食堂可持续发展。  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "617287f9ecf876495585df09fa2d2bdb2f2546cd55092accc4ca9522609c8a77",
+    "selected_material_sha256": "221e545b2f8648305b2e81038851b7babc4a39ded20c3b76a25e425419051826",
+    "question_sha256": "ef00685a8a9337b09e2f2003233aa152259b1390d97221f2a4e5f802778fd9c3",
+    "characters": 278,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 278,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 169,
+          "prompt_tokens": 1827,
+          "total_tokens": 1996,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "083-1",
+    "answer": "P县保护古树名木的主要做法包括：开展普查登记，建立“个体档案”并赋予“身份证号”；实施“一树一策”精准养护，采用专业会诊、环境治理、打孔注药等手段防治病害；加强日常巡护，配备专职护林员并运用无人机技术实现动态监测与预警；推动科技赋能，通过智能芯片、3D建模提升监管能力；挖掘生态与人文价值，建设主题公园、推出游览路线、开展宣教活动，提升公众保护意识，形成全社会共同参与的保护格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "29eea3586450283e7a2729773ebf8cdf4881b0aca9e4cce3cda35dede4b84cb3",
+    "selected_material_sha256": "49d1652659203b3f1908e8be55f3aaf7ad53e861af78e01086bd4726508bb72b",
+    "question_sha256": "060cdcb2302b9234e9c47f8a7a7c0cbb3ecdb770f0a34cc974d4378811350cac",
+    "characters": 190,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 190,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 124,
+          "prompt_tokens": 2038,
+          "total_tokens": 2162,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "093-1",
+    "answer": "地膜问题调研报告提纲\n\n一、问题现状  \n1. 农民滥用非标地膜，残留量达每亩3-5公斤，土壤污染加剧；  \n2. 地膜回收难：农民焚烧或遗弃，处理成本高，回收企业亏损严重。\n\n二、成因分析  \n1. 农民认知不足，盲目追求低成本，偏好薄地膜；  \n2. 非标地膜生产销售猖獗，监管缺位，执法不严；  \n3. 回收体系不健全，县乡村无固定回收点，缺乏激励机制。\n\n三、对策建议  \n1. 严格监管非标地膜生产与流通，加强市场监管和执法检查；  \n2. 推广全生物可降解或高强度易回收地膜，实施“以奖代补”补贴政策；  \n3. 建立县乡村三级地膜回收网络，设立固定回收点，配套财政补贴；  \n4. 加强农民宣传培训，提升科学使用与回收意识，推动形成闭环管理链条。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "2f6ca3cc311515eb45ec83b72ee6c0930e37f2b3815ef65df7fb70dec475c223",
+    "selected_material_sha256": "0dcac78b22902cdb879560fe96f5235f66099f429ce4b1ecdce4a198592d957d",
+    "question_sha256": "8a134a6267ce8bec97bf861f7fff6aeb3293fe9bfb653a741cc339e516e03b9b",
+    "characters": 288,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 288,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 229,
+          "prompt_tokens": 1806,
+          "total_tokens": 2035,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
