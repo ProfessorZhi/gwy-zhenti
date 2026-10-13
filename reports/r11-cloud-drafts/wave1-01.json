@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "054-3",
+    "answer": "当前宽石镇乡村旅游存在五大问题：一是规划脱离乡村实际，盲目照搬城市模式，忽视村民意愿和自然质朴风貌；二是村民参与度低，缺乏实际收益，对旅游项目认同感不足；三是部分村庄管理混乱，卫生、宠物等行为影响游客体验；四是旅游内容同质化严重，特色挖掘不足，缺乏文化与农业独特性；五是规划与管理脱节，前期投入大、专业支撑弱，宣传推介缺乏系统分析。\n\n改进建议：应坚持“村民主体、因地制宜”原则，充分听取村民意见，尊重乡村本貌；加强特色挖掘，结合本地农业与文化打造差异化产品；建立专业规划团队深入调研，科学统筹镇域资源，形成主题旅游链；设立专项扶持资金，支持村集体开发项目，并配备管理人才；完善软环境治理，强化安全与服务配套，精准分析游客画像，实施分类宣传推广。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "79e6bfc9ec9911c85fc8f75683478dda513cc48b7bb1d126adcb304e816ce157",
+    "selected_material_sha256": "044d7f66cbbc7228acb61b25cdf2ee296a1508c6035c6f5b9009cafedfea87a1",
+    "question_sha256": "19ed55625f460360be1eaddc9be9fbecfc65b14b3b7f51ef26cd15111267616b",
+    "characters": 321,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 321,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 196,
+          "prompt_tokens": 1591,
+          "total_tokens": 1787,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "068-1",
+    "answer": "90后择业观念表现为：追求工作意义与个人成长，拒绝平庸；重视人格尊重与团队协作，反对职场霸凌；强调自主性与理想实现，不满足于稳定但无挑战的“金饭碗”；愿为梦想付出代价，但要求工作环境公平、有发展空间。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1f933e17bbb2a9a29d7b535f9246b2a6f98e4d264d63d39aa9c450d85379be72",
+    "selected_material_sha256": "c19ec72fbbd8c8dc2b507f1b1066e8928f43516d89f69721dc9e27a3c45e1627",
+    "question_sha256": "f327bb414e7b4fd96192ce8d1c01c2f53242defe09fea52aed007e5f875657a5",
+    "characters": 100,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 100,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 68,
+          "prompt_tokens": 1795,
+          "total_tokens": 1863,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "078-2",
+    "answer": "裕民社区充分就业工作经验发言提纲\n\n一、精准摸排，建立动态台账  \n依托网格化管理，由网格长定期入户走访，全面掌握劳动力结构、技能水平和就业意愿，建立“一人一档、一人一策”动态台账，实现精准服务。\n\n二、多元开发岗位，拓宽就业渠道  \n积极引进大型超市、公园景观项目及4个楼盘建设，新增收银员、理货员、建筑类等岗位300余个；推动小微企业创业，提供证照办理、补贴申请等“店小二”服务，实现就业岗位“开源”。\n\n三、强化技能培训，提升就业能力  \n联合县人社局开展电商直播、月嫂、烹饪等免费培训，覆盖220名搬迁群众，90%参训人员实现自主就业，推动就业“单选题”向“多选题”转变。\n\n四、实施分类帮扶，兜住就业底线  \n对失业困难群体实行“托底安置”，如58岁老周通过岗位推荐实现就业，确保认定困难人员就业率100%，实现“安置一人，稳定一家”。\n\n五、健全服务体系，提升服务效能  \n依托公共就业服务平台，实现“进一扇门办所有事”；强化稳岗监测，持续跟踪就业形势变化，筑牢充分就业长效机制。  \n\n（全文共410字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "e4bc02a2a7220332d4bcb43212d56a0211fc324975ffa0551cfda514c6d43d5e",
+    "selected_material_sha256": "272785e5cd297763323b44fcf072cfa50e72dc76ac54830d65250757b4b958e9",
+    "question_sha256": "6dd5af5384e94be3f177ef3fe38ebdc686ea5b794f7422014a229762ba398f43",
+    "characters": 430,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 430,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 285,
+          "prompt_tokens": 1851,
+          "total_tokens": 2136,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "089-1",
+    "answer": "宽石镇乡村旅游规划中存在的问题：一是规划脱离乡村实际，忽视村民意愿，存在“城市化”倾向；二是旅游内容同质化严重，缺乏特色和文化深度，核心竞争力不足；三是管理与服务滞后，软环境治理不到位，安全与宣传缺失；四是村民参与度低，收益分配不明确，对政策知晓度和参与渠道有限；五是规划统筹不足，各村发展碎片化，未形成整体品牌。\n\n改进建议：应坚持“以村为本”原则，深入调研村民需求，尊重其意愿，提升参与感与获得感。强化特色挖掘，结合本地农业、文化资源打造差异化体验项目。建立专业团队指导规划与运营，推动传统村落与农田保护协调发展。完善配套服务和安全管理机制，精准分析游客画像，开展有针对性的宣传推广。统筹全镇资源，分类设计旅游产品，形成“一村一品、全镇联动”的特色旅游格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "5d41dec3f26e903160ee00cdc922dcb17c3dbfae78358f7793f997c705370d3c",
+    "selected_material_sha256": "6094ae10ca1157702bf2d04045e3892a953a862d72560d0c78532eb682e26a7f",
+    "question_sha256": "d36704f05bb1a5a1d19797316bb116c13d2a5498b749c28d61a97acdb060ed88",
+    "characters": 329,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 329,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 199,
+          "prompt_tokens": 1526,
+          "total_tokens": 1725,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
