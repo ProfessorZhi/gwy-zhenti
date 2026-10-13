@@ -1,0 +1,15 @@
+{
+  "status": "source_hash_and_preservation_checked_awaiting_python_ci",
+  "baseline_commit": "34439ace3ad6c0b93b0671b1f76ca4afd6cce06d",
+  "source_answer_positions_added": 44,
+  "papers_modified": 25,
+  "essay_example_positions_added": 7,
+  "new_AI_answers": 0,
+  "known_missing_answers_before": 451,
+  "expected_missing_answers_after": 407,
+  "unparsed_exam_files": 9,
+  "source_files_used": 25,
+  "source_body_check": "Full answers traceable to fixed original source blobs",
+  "exam_preservation": "Original exam body and existing answer text retained",
+  "validation_boundary": "Python audit and historical receipt tests pending"
+}
