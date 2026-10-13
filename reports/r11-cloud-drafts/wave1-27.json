@@ -545,5 +545,95 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "157-3",
+    "answer": "S市P+R停车场建设运营情况材料\n\n基本情况：  \n截至目前，S市已建成25个P+R停车场，配备6200余个公交换乘停车位，覆盖10条地铁线路，日均服务车辆超1.3万辆，旨在引导市民选择公共交通出行，缓解交通压力。\n\n存在问题：  \n一是部分停车场存在管理混乱。如某酒店P+R区域车位空置却仍被围挡封锁，导致车主被迫停靠外围多付费；另有停车场入口导航错误，指引至非P+R区域，车主无法刷卡通行，须按普通标准缴费，费用为P+R模式的2—4倍。  \n二是系统联动不足，部分停车场存在“二次收费”现象，因P+R与商场停车系统未实现数据互通，需人工干预方可解决。  \n三是设施建设和运营不规范。个别停车场建成即闲置，如外墙渗水导致地面龟裂；另有项目因新能源充电桩配比要求提升（由5%升至30%），改造工程未完成，仍无法投入使用。  \n四是信息更新滞后，部分P+R停车场已停止运营却仍在官方小程序中显示正常服务，缺乏统一动态管理机制。\n\n建议：  \n应建立P+R停车场统一管理平台，实现车位信息、运营状态、收费标准的实时更新与共享。  \n明确建设标准，严格落实新能源充电桩配比要求，加快改造进度，确保设施达标后投入使用。  \n规范运营管理，杜绝“空位封堵”“导航误导”等行为，实行错峰调度和动态开放机制。  \n加强系统对接，推动P+R停车场与地铁、公交、停车平台数据互通，实现自动识别、自动计费、便捷通行。  \n\n（完）  \nS市日报社  XXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4702e05911bc03bd7f4e63ead19e3699763b5094de8b7796adf5bc1ea45dea86",
+    "selected_material_sha256": "93f5bdc7b171075a250c74de83f31e4a75cae70b93c9a01c858de94ea4860873",
+    "question_sha256": "fbedd1e769b5fa15fa246ce4c943ca92e4febc3af3aa28fc235dadbadfacd11e",
+    "characters": 582,
+    "word_limits": [
+      35,
+      600
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 582,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 378,
+          "prompt_tokens": 1791,
+          "total_tokens": 2169,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "166-2",
+    "answer": "C县通过农业社会化服务破解了农村农业发展中的多重难题。一是破解劳动力短缺问题，通过成立股份经济合作社，实现土地托管，让老年人和外出务工人员安心退出耕种，由专业团队代为管理，提升生产效率。二是破解“小田碎地”制约，整合零散地块，实现连片规模化经营，提高机械化作业水平和土地利用率。三是破解农业生产成本高、技术落后问题，通过统一采购农资、引入农业科技（如一喷多防、智慧农机），降低种植成本，提高亩产。四是破解销售难、议价低问题，与龙头企业合作统一收购，提升农民收入。五是破解生产管理粗放问题，依托数字化技术构建动态监测体系，实现精准灌溉、病虫害预警和科学决策，全面提升农业生产的精细化水平。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c2fa7c92068b837c2a3f70b87a3e3a5907df0c362f3cf495b5b6b142f7fd8a0b",
+    "selected_material_sha256": "310618a55ee89bf2cc6151a0a9680841d368aabc25e13b4e847fd3a49a1af2f5",
+    "question_sha256": "3fb376e588f13ec607ec627dbbdd56e96ffce01bdb142ad51f5f25611ad8fe8d",
+    "characters": 293,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 293,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 173,
+          "prompt_tokens": 1892,
+          "total_tokens": 2065,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
