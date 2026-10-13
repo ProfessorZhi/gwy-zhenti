@@ -493,5 +493,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "156-1",
+    "answer": "W市通过“村档乡管”模式建强乡村档案体系，系统收集整理宅基地、族谱、非遗等特色档案。依托档案化解矛盾纠纷，服务民生需求；将实物档案纳入电子管理，实现资源共享与文化传承；结合档案资源打造研学项目、工业旅游，推动产业转型；利用乡贤档案凝聚社会力量，助力教育发展，充分释放乡村档案在文化传承、社会治理和经济发展中的动能。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "47c8813fa09c98b1e17b0c3107ce80afc922a867ad859416f7708d65abd1c534",
+    "selected_material_sha256": "f6c974981839f90a8bb4577ab6a86a8f6e7944c3af46c1978d54ccd044914a2a",
+    "question_sha256": "2a3b65853759900b405948440e033e70524fca92d4b2be873853bc1ed9bb00ac",
+    "characters": 157,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 157,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 94,
+          "prompt_tokens": 1741,
+          "total_tokens": 1835,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "164-3",
+    "answer": "当前S县大学生租房存在的主要问题包括：一是中介欺诈频发，房源信息虚假、价格随意上涨，存在“看房不租即扣定金”等不合理行为；二是合同条款不透明，实际租期与约定不符，房东强制延长租期并克扣押金；三是租金及附加费用高昂，水电费标准不明，普遍存在“押二付一”“押三付一”等高额支付要求；四是房屋管理混乱，群租房被举报后强制清退，“二房东”失联导致押金难退；五是政策支持不足，人才房供给严重不足，应届生和实习生难以享受免费公租房；六是租户权益保障缺失，无法办理暂住证，停车费等生活成本远高于业主，且退租时被额外收取设备、清扫等费用。\n\n建议：一是建立政府主导的住房信息平台，对房源进行真实性审核与公示，严惩虚假发布行为；二是规范租赁合同，明确租期可灵活设置为3个月，禁止“一年起租”并扣押押金；三是合理设定租金和附加费标准，公开水电价格，严禁隐形收费；四是扩大人才公寓供给，对实习期满的应届毕业生提供最长三个月的免费公租房；五是加强监管与追责，对中介欺诈、违规收费行为依法查处，切实保障租户合法权益。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa514f39469b353d27519ece7e75ed1025ea51dd192e217b8ea9d09f3bfe4750",
+    "selected_material_sha256": "29ba53587538d81907af5a686aa2f1210ce81bf86b1de62f8cc223e994d8830b",
+    "question_sha256": "07d22c9a1ba8afda3505c73a7d0a8a5be99198e8f917bcfd2df1f87b1e7c7995",
+    "characters": 443,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 443,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 289,
+          "prompt_tokens": 1731,
+          "total_tokens": 2020,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "174-4",
+    "answer": "D市通过农业社会化服务破解了农村农业发展中的多重难题。一是破解“种地难”问题。随着青年外出务工，留守老人种地力不从心，合作社提供全程托管服务，统一耕种、病虫害防治和技术指导，实现高效增产，如托管地玉米每亩多收50斤。二是破解“小田散种”难题。通过土地集中连片整治，“小田”变“大田”，提升机械化作业效率，新增耕地200亩，年增收20余万元。三是破解生产成本高、效益低问题。依托规模采购和数字技术，降低农资及灌溉成本13%，亩产提高11%。四是破解销售难问题。与龙头企业合作统一收购，每斤多卖5分钱，保障农民收益。五是推动产业链延伸，建设小麦加工厂，提升农产品附加值。上述举措通过“托管+科技+规模+产业融合”路径，有效提升了农业生产效率和农民收入水平。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a09d052d61a3be6341f5544d14d279337c1da62f3a6f8b4e74d6aa4cecee30a5",
+    "selected_material_sha256": "b23412137946868337c0cbca21efac9e4b0a896be87a3e163db1bde116615826",
+    "question_sha256": "1bcaf59787e6f92f884ac4ded256a1c563c1feea2e8cd4c0d4f31812ffc02c90",
+    "characters": 326,
+    "word_limits": [
+      300,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 326,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 210,
+          "prompt_tokens": 1884,
+          "total_tokens": 2094,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "186-2",
+    "answer": "“执法观察期制度”是“减压”也是“增压”。其“减压”体现在对企业违法行为给予宽容和整改机会，尤其对中小企业、新兴企业等主体，减轻了经营压力，优化了发展环境；其“增压”则在于倒逼企业增强法律意识与合规能力，通过观察期促使企业主动自查自纠，提升经营管理水平。制度既释放监管善意，又强化执法标准，要求监管部门依法依规审慎行使自由裁量权，提升执法专业性与公正性。同时，该制度也对基层执法能力提出更高要求，需建立科学评估机制、完善整改跟踪体系，确保执法既有温度又有力度，真正实现企业合规与监管效能的协同提升。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d0f9e608c933ec35a9d1b31d873bd7124c6068228a3b6ccec9284e79f01a67f6",
+    "selected_material_sha256": "b171f5be92fb03650e877a6aae06dc9564f97eb0c09ffdf4db44ac8138334ae3",
+    "question_sha256": "c3965498ecce5b02a8797369b3e3e2ac24a6936da7185f16577ed6068d3796d7",
+    "characters": 249,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 249,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 155,
+          "prompt_tokens": 3919,
+          "total_tokens": 4074,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
