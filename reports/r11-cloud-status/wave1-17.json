@@ -1,8 +1,8 @@
 {
   "label": "wave1-17",
   "selected": 16,
-  "processed": 12,
-  "drafts_written": 10,
+  "processed": 14,
+  "drafts_written": 12,
   "failures": [
     {
       "id": "027-4",
@@ -13,7 +13,7 @@
       "error": "No acceptable complete draft after bounded revisions: 129-4 None chars=1276"
     }
   ],
-  "elapsed_seconds": 6714,
+  "elapsed_seconds": 7038,
   "status": "drafts_only_not_applied_to_corpus",
   "quality_boundary": "Model self-review is not independent expert marking."
 }
