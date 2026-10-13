@@ -77,3 +77,7 @@
 全文来源与校验：[SOURCED-SUPPLEMENT-FULL-20261013.json](SOURCED-SUPPLEMENT-FULL-20261013.json)；可逆修复凭据：[SOURCED-SUPPLEMENT-20261013.jsonl](SOURCED-SUPPLEMENT-20261013.jsonl)。
 
 另外找到的两条公开作者同题参考作答，保留为[外部来源登记](NEW-EXTERNAL-SHENLUN-SOURCES-20261013.md)，不计入本地完整答文缺项消减。
+
+## 验收
+
+[完整回归运行](https://github.com/ProfessorZhi/gwy-zhenti/actions/runs/38345897934)通过465项测试；117处来源与原题保留校验、历轮修复凭据链及95,903张引用图片解码通过。51份补录保留62处已有答案。最终提交检查见[PR #18](https://github.com/ProfessorZhi/gwy-zhenti/pull/18/checks)。

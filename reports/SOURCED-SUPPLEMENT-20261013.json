@@ -1,5 +1,5 @@
 {
-  "status": "source_and_preservation_checked",
+  "status": "verified",
   "baseline_commit": "f0649b5c134a78bc9c5ffb38c6a8b719c369f268",
   "papers_modified": 51,
   "source_answer_positions_added": 117,
@@ -14,5 +14,11 @@
   "essay_example_positions_added": 14,
   "new_external_author_sources": 2,
   "external_author_sources_counted_as_local_full_answers": 0,
-  "full_regression_status": "awaiting_github_actions"
+  "full_regression_status": "passed",
+  "full_regression_verified_head": "efbc2daa5e128afc3174d0e47851f782bb3b68b9",
+  "full_regression_run": "https://github.com/ProfessorZhi/gwy-zhenti/actions/runs/38345897934",
+  "unit_tests_passed": 465,
+  "preserved_existing_answers": 62,
+  "decoded_referenced_images": 95903,
+  "image_decode_failures": 0
 }

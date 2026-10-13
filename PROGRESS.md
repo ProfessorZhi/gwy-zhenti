@@ -129,4 +129,4 @@ python tools/cloud_quality.py --check --verify-images
 
 [逐卷来源补录结果](reports/SOURCED-SUPPLEMENT-20261013.md) · [精确统计](reports/SOURCED-SUPPLEMENT-20261013.json)
 
-全库回归、历史修复凭据和图片像素检查待 GitHub Actions 完成。
+GitHub Actions 完整回归通过：465项测试、逐题来源及原题保留检查、历轮修复凭据和95,903张引用图片像素解码均通过；检查记录见[验收运行](https://github.com/ProfessorZhi/gwy-zhenti/actions/runs/38345897934)及[本轮PR检查](https://github.com/ProfessorZhi/gwy-zhenti/pull/18/checks)。
