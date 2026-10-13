@@ -1,0 +1,9 @@
+{
+  "label": "pilot-00",
+  "selected": 2,
+  "drafts_written": 2,
+  "failures": [],
+  "elapsed_seconds": 853,
+  "status": "drafts_only_not_applied_to_corpus",
+  "quality_boundary": "Model self-review is not independent expert marking."
+}
