@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "059-4",
+    "answer": "**汇聚合力，共筑高质量发展新未来**\n\n在当今这个充满活力的时代，单打独斗已难以为继，唯有善于汇聚各方力量、形成协同合力，才能在复杂多变的环境中把握机遇、应对挑战，真正实现可持续发展。“联结好当下，就能畅通奔向未来的路”，这不仅是对现实路径的深刻洞察，更是对现代化治理与产业发展的根本要求。\n\n从D市大有村的农业实践来看，小农户通过土地托管加入股份经济合作社，实现了“小田变大田”、技术升级和产业链延伸。这一转变并非个体自发完成，而是依靠政府引导、专业组织赋能、科技支撑与市场机制联动的结果。合作社统一采购农资、推广智慧农业、建立数字化监测体系，不仅降低了生产成本，更提升了土地利用率和粮食产量。这正是“汇聚力量”的生动体现——政府搭台、企业服务、农户参与，多方协同推动了农业现代化进程。\n\n向南河跨域治理同样印证了协同的力量。面对流域广、污染源复杂、行政壁垒突出的难题，A省与B省打破地域限制，建立共保联治机制，签订备忘录和横向生态补偿协议，设立联合河长办公室，实现信息共享、标准统一、执法联动。这种制度创新打破了“各自为政”的惯性思维，形成了上下游协同、左右岸联动的治理格局，让一条河流真正成为连接两地的纽带，也证明了区域发展必须以系统观念为基础，通过制度设计凝聚合力。\n\n都市圈一体化建设更是展现了协同发展的巨大潜力。KMN都市圈打破行政区划壁垒，在交通、医疗、教育、产业等领域实现“一卡通”“跨域通办”，推动产业链上下游联动，形成“主链在中心、配套在周边”的发展格局。M市高校与N市企业共建离岸科创中心，K市搭建研发平台，实现了科技资源的高效流动和转化，真正做到了“你中有我、我中有你”。这种深度融合不仅提升了区域竞争力，更增强了居民的获得感与幸福感。\n\n更为关键的是，协同不是简单的行政合并或政策叠加，而是基于资源互补、优势互济的深度协作。J市通过打造特色产业集群，围绕链主企业开展补链强链，设立“卡脖子”技术攻关专项，建立共享数据中心，推动中小企业在设备、技术、产能上的共享共用。这不仅解决了中小企业的融资与技术难题，更实现了资源高效配置和产业链整体跃升，体现了“合力形成”的内在逻辑。\n\n从农业到生态，从都市圈到产业集群，各类实践表明：发展之要，在于协同；突破之道，在于整合。无论是面对分散经营的农业难题，还是跨域治理的复杂挑战，抑或是区域经济一体化的深层需求，都离不开打破壁垒、强化联动、共建共享的机制创新。唯有坚持系统思维，推动政府、企业、社会多方参与，才能真正实现从“各自为战”到“协同共进”的根本转变。\n\n因此，面对新时代高质量发展的使命，我们必须深刻认识到：时代之变，呼唤合力；未来之路，始于当下。只有主动汇聚政策资源、科技力量、市场动能与社会共识，以制度创新为引擎，以协同治理为路径，才能在变革中把握主动，在挑战中赢得未来，走出一条可持续、有温度、强韧性的中国式现代化道路。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0dbc5ff0c4c0c0de7d7bb15b2715379ca73ef7ca9769f44e60e80b0fae5a81b3",
+    "selected_material_sha256": "34e7a77351939bafe58db5a4c6c3d9d3a7aba76d2f2cf558d741e3a1defe8419",
+    "question_sha256": "0a8ebde9da4a6a48ac60535e72235edd3c498f74a04057b9e4b88e03fe00308a",
+    "characters": 1183,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1183,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 707,
+          "prompt_tokens": 5010,
+          "total_tokens": 5717,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "073-3",
+    "answer": "加强行业自律，为创建文明旅游城市出力  \n——致全市旅游企业的倡议书  \n\n各位旅游企业同仁：  \n\n为助力N市打造文明旅游城市，我们倡议全体企业切实履行行业责任，共同维护良好旅游市场秩序。  \n\n一要严守服务底线，杜绝“不合理低价游”和强制购物行为，坚决不以低价吸引游客、诱导消费。二要提升服务质量，优化行程安排，确保景点游览时间充足，杜绝“拍照即走”的敷衍现象。三要加强内部管理，杜绝导游“靠回扣生存”的乱象，建立公平透明的运营机制。四要主动接受监督，将违规行为纳入信用记录，对失信企业实施行业通报、市场禁入等惩戒。  \n\n我们坚信，只有以诚信为本、以服务立身，才能赢得游客真心认可，让“人面桃花”真正相映成趣。让我们携手共进，为N市文明旅游建设贡献行业力量！  \n\nN市旅游协会  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "dacda705ea6ef22643a6b89664bf1671b86dfb705c46f11d7c8425b3c4110eec",
+    "selected_material_sha256": "dca9080295d30a5c4ac132c058e0f5cccd492e23cc01d267275fa68661806e11",
+    "question_sha256": "a24b175c52e3e3d47b031f05d09a1a7e691f20ec6d7592c25f173311bcde9b33",
+    "characters": 328,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 328,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 214,
+          "prompt_tokens": 1543,
+          "total_tokens": 1757,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "082-2",
+    "answer": "S省乡村旅游存在以下问题：一是交通不便，多依赖转乘，部分道路条件差，出行困难；二是过度商业化，景点装修华丽、噪音扰民，失去乡村宁静特质；三是旅游配套不均衡，部分民宿饭店设施落后、食材虚假，导致“劣币驱逐良币”；四是同质化严重，“百村一面”，缺乏独特文化内涵和匠心设计；五是游客消费低，人均支出不足10元，未实现有效营收。\n\n建议：一是优化交通衔接，提升道路通行条件，完善直达公共交通；二是坚持“守正创新”，深入挖掘地方历史文化，避免盲目时尚化；三是加强旅游服务质量监管，建立统一标准，规范餐饮、住宿等服务；四是强化人才培育与项目设计指导，鼓励因地制宜发展特色文旅；五是推动产品多样化，结合自驾、露营等新型方式，提升游客消费体验与停留时长。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "39ac34a09b90c49c847876940c831035e99b66781f49414bbfe7fd5d0796c39e",
+    "selected_material_sha256": "183039397c578c8153f8281df47f0911d1a77ca026e02a7c06c828868fe14012",
+    "question_sha256": "7a7cac1f2eb9a6d601b610442fa227d5baadcba0a89e243696ded015d17af3c9",
+    "characters": 317,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 317,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 192,
+          "prompt_tokens": 1457,
+          "total_tokens": 1649,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "092-2",
+    "answer": "A、B两省治理向南河的经验主要有：一是坚持系统观念，建立跨区域共保联治体系，打破行政壁垒；二是协同立法，出台生态环境保护条例，夯实法治基础；三是统一政策标准，开展常态化联合执法，运用遥感、无人机等技术提升监管效率；四是签订横向生态补偿协议，实现上下游绿色共赢；五是设立两省联合河长办公室，实现信息共享、方案共编、问题共治、责任共担；六是推动跨区域污水协同处理，破解污染源治理难题，促进流域生态环境整体改善。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ef4aab13fe43b2698408951d810962a1221bd6e0d2eca882c610f4f371a21b03",
+    "selected_material_sha256": "94394e2e3f2a4b417f0661ab6e20570f2958a053cdfcf7a9f1119ce8b0789960",
+    "question_sha256": "7fe34b6884309c29627759c0cf150c660a9c0efcaaf33a2705e9ba0381861799",
+    "characters": 203,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 203,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 124,
+          "prompt_tokens": 1825,
+          "total_tokens": 1949,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
