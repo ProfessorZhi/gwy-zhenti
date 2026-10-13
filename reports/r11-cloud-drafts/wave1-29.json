@@ -358,5 +358,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "110-1",
+    "answer": "调整经济战略，推动外向型与技术密集型发展；实行资本流动国际化，开放金融市场；优化城市规划，提升基础设施与文化魅力；推广英语，营造国际语言环境。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a84cfab8401b41bf0429fae96f18b4716a45d92253194fc0779239f6d4f46e6f",
+    "selected_material_sha256": "a5b7b6776a87460b97eb56cf52a91da3186723c6f5bc56d5aac7984cdb978f58",
+    "question_sha256": "14a0dbb3e84f44508e89b59d26fa4d716a7699045a43cfcfa322cc1c246ef0b1",
+    "characters": 71,
+    "word_limits": [
+      35,
+      100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 71,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 41,
+          "prompt_tokens": 3856,
+          "total_tokens": 3897,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "122-1",
+    "answer": "党建引领基层治理，搭建居民议事平台，广泛听取意见建议；发挥人民调解“第一道防线”作用，化解邻里纠纷；完善公共法律服务网络，普及法治理念；推动社区服务由“政府配菜”向“百姓点菜”转变，实现多元参与、共治共享。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0d5ae53f3f47051dbef86ce365d044e07937dc10cd74aee6404694519553d038",
+    "selected_material_sha256": "b87a08bcd7e4891226c69261786bf43a29e80042ac9acb5314a48c02e8cb9ac5",
+    "question_sha256": "ee1f2e496ce640abc0a469e2db0636518f5ef74438d4e27455ba0103ca589891",
+    "characters": 103,
+    "word_limits": [
+      35,
+      150
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 103,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 64,
+          "prompt_tokens": 986,
+          "total_tokens": 1050,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "135-1",
+    "answer": "H市加“数”前行，通过建设一体化智能化公共数据平台，推进政务服务“一件事一次办”；构建三级数字化治理中心，实现“一屏掌控、一键智达”；以网格化管理提升基层治理效能；推动医疗、养老、文化等场景数字化应用，促进服务精准高效，全面提升城市治理现代化水平。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c4d19fa88a68660a739c3d4c484d0eafc42fbf0fb236adeac5eb688209411205",
+    "selected_material_sha256": "b97484f6a0bf9f4ff80ce44d0428cf4f9373165895a1e0617a46970f4917d7a9",
+    "question_sha256": "aa638d54f7e5e417f77d1f0094b09fcfcda874b244664e6bc908d9681352cbaa",
+    "characters": 124,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 124,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 73,
+          "prompt_tokens": 1327,
+          "total_tokens": 1400,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "148-2",
+    "answer": "J市推进诉源治理通过多元联动、源头预防和非诉化解实现矛盾纠纷就地解决。建立外国人服务管理平台调解邻里纠纷；设立行政争议调处中心，提升行政机关与群众沟通效率，推动行政案件协调和解；检察机关常态化开展公开听证，特别是简易和上门听证，面对面释法说理，化解信访心结；联合多部门调解涉薪纠纷，实现快速解决；探索“种子法庭”模式，引入专家型人民陪审员，提升涉种纠纷专业化、调解率和效率。上述举措形成“源头预防为先、非诉机制挺前”的基层治理格局，有效预防和化解矛盾，推动法治力量向基层延伸。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3fed9288427f328c1637b4fbb4deb8715936570c7bb85fdf132047f4aabfc4fc",
+    "selected_material_sha256": "e8fbbb0e1d375696f89d1280ba60b69754b0e7625a019a3b718aba1de662d822",
+    "question_sha256": "97cc68ac83f7fe23f12aa67cdfd0a2ec2758248817ef75da4325ccbfd2fb61cb",
+    "characters": 238,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 238,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 149,
+          "prompt_tokens": 1628,
+          "total_tokens": 1777,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
