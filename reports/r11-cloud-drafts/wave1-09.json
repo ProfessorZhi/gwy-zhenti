@@ -1,0 +1,163 @@
+[
+  {
+    "id": "014-1",
+    "answer": "我国部分城市出现“收缩”现象，具体表现为：人口持续流失，连续两年人口负增长；经济结构单一，支柱产业衰退或外迁；城市功能弱化，公共设施闲置，商业活动萎缩；居民就业困难，收入下降，社会治安恶化；城市空间呈现空心化、荒芜化特征。此类问题多发于资源型或产业结构单一的城市，如东北、长三角及珠三角部分地级市和县级市。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7a0eb906df926d0d2fc4fc25c1bf67e45dc44d97042dfbee978e37ef5f56bd8c",
+    "selected_material_sha256": "02503486235316efc2bdcda1144b27c15d5cc105938c89d04111b04b89c126cd",
+    "question_sha256": "95ff19b587143c74f7e448284f67877b7437232dd69b4e0ce7cf3191d04eef84",
+    "characters": 153,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 153,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 96,
+          "prompt_tokens": 1809,
+          "total_tokens": 1905,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "035-3",
+    "answer": "**推进企业在信息化时代下转型升级讲话提纲**\n\n一、坚持共享理念，重构服务模式。借鉴“共享书店”模式，推动图书服务从“购买”向“借阅共享”转型，通过押金制、阅读任务激励等机制，提升用户参与感与服务亲民性，实现“人人可享、便捷可及”的新型阅读生态。\n\n二、深化技术赋能，提升产品智能化水平。学习S机床厂“数据驱动”经验，依托物联网与大数据技术，建立设备运行实时监测系统，实现客户端透明化管理，推动服务从传统销售向“数据共享、按需服务”转型，增强用户信任与粘性。\n\n三、聚焦用户需求，优化产品功能设计。以用户体验为核心，开发语音输入、手写识别、笔顺跟写等智能交互功能，满足多样化查字需求，提升工具类产品的实用性与可操作性，真正实现“便捷、精准、高效”。\n\n四、平衡开放共享与可持续运营，探索合理盈利路径。在坚持共享原则基础上，结合文化产品属性，设置阶梯式收费与增值服务，既保障内容更新与研发投入，又避免封闭化，实现社会效益与企业发展的统一。\n\n（全文共458字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a1b1b00de63be05da73670821a5df5e364e4fb3dd88399d37436105be344fd3c",
+    "selected_material_sha256": "17cfa101ef616080c487b7b434ecb46cdf58e1ea3fa5c96376d0f1aefdad24ad",
+    "question_sha256": "d9203c7211623d201d43e1c25c2f847cbcfc03c329507ce460e0caf6a25f7587",
+    "characters": 416,
+    "word_limits": [
+      405,
+      495
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 359,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 222,
+          "prompt_tokens": 4988,
+          "total_tokens": 5210,
+          "prompt_tokens_details": {
+            "cached_tokens": 580
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 389,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 242,
+          "prompt_tokens": 5298,
+          "total_tokens": 5540,
+          "prompt_tokens_details": {
+            "cached_tokens": 5209
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 416,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 259,
+          "prompt_tokens": 5316,
+          "total_tokens": 5575,
+          "prompt_tokens_details": {
+            "cached_tokens": 5001
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "045-1",
+    "answer": "Y县发展竹产业的主要做法：一是邀请国际专家团考察指导，学习先进经验；二是制定产业发展路线图，推动竹材精深加工，发展竹纤维、竹炭等高附加值产品；三是建设创新服务中心，引进高校科研力量，开展国际合作研发；四是组织技术培训与工艺改进，如邀请德国专家提升防霉处理标准；五是搭建国际交流平台，推动竹产品“走出去”，在“一带一路”国家建立加工中心，实现技术输出与经验共享。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "187ded3df4b70aedd18d275046327bac27abdb51da1ec885be3625f24031e0d3",
+    "selected_material_sha256": "e5b3831abfefb1827b66442ee4336e5a211c0919298b3a9a5c354adc572e9c9f",
+    "question_sha256": "287f001ada84e87a30da18f2d1b78938d520d240b42e76991838a663d241a2e8",
+    "characters": 180,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 180,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 105,
+          "prompt_tokens": 1876,
+          "total_tokens": 1981,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
