@@ -423,5 +423,50 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "105-1",
+    "answer": "X省推进农业高质量发展的举措包括：依托资源优势布局特色产业，如发展葡萄酒、棉花和骆驼产业，构建全产业链；推进高标准农田建设，提升土地利用效率和农业生产效益；加快农业机械化进程，推广北斗导航无人驾驶等技术，提高生产智能化水平；深化水资源管理改革，科学调度洪水资源，提升灌区用水效率；推动产业融合发展，延伸产业链条，发展旅游、康养、文化等新业态，带动农民增收。通过科技赋能、机制创新和全产业链协同，实现农业提质增效与乡村振兴深度融合。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a2abd28e0f1a0b0b9e842cd3d6b95ae6585fad3cbdce84fe8a4a950821a102d9",
+    "selected_material_sha256": "846a92cb9feb588c672018d8d7dbbdb021f5a2a27e9a585820ebb0d68ac41091",
+    "question_sha256": "2a68cec48b46e451082446f6fa268dfb037a88b05466a23abc7c9d2c7dff0f99",
+    "characters": 215,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 215,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 114,
+          "prompt_tokens": 1701,
+          "total_tokens": 1815,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
