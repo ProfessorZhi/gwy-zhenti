@@ -339,5 +339,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "102-2",
+    "answer": "一、明确内生项目重要性，破除“重外轻内”误区，推动形成市场主导的有效投资机制。  \n二、总结各地经验：K县强化用地保障与政策支持，提升中小企业要素可及性；L县通过“数据360”预评审，实现资源向高效益企业精准配置；M县打造设备更新平台，激活存量投资潜力；J县以智能装备改造推动产业链升级，增强集群竞争力；S县推进“内生裂变”，依托本地产业生态实现自主发展。  \n三、强调内生项目是新质生产力的重要载体，传统产业通过技术改造与模式创新，为现代化产业体系提供坚实基础。  \n四、建议全省统一完善内生项目支持政策，建立用地、资金、审批等要素协同机制，推动形成“内外并重、存量提质、增量扩容”的投资新格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3701ea8f08217daace4e07ed325195e2b09aa149558aa151fe49c17bdb18808f",
+    "selected_material_sha256": "d721c6f5c3ca3c75ffdbc46c5eddae798f12cfe9cb861ea7ac67d6c5700f7f73",
+    "question_sha256": "f6cd4b43118d27ed3dfd1fa0676e5a276b9c0c33c4ddbc8cd0291a1cc56b80d2",
+    "characters": 290,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 290,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 185,
+          "prompt_tokens": 1874,
+          "total_tokens": 2059,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "114-2",
+    "answer": "针对M河存在的问题，应采取以下治理举措：  \n一是强化源头管控，严格审批沿岸电镀、五金、养殖等企业排污许可，推行清洁生产，禁止生活污水和工业废水直排入河。二是完善截污纳管体系，加快建设雨污分流管网，提升雨水冲刷能力，减少污染物进入河道。三是加强潮汐影响应对，科学规划排水节点，在感潮段设置防倒流设施，防止污水被顶回河道。四是实施底泥污染治理，分阶段开展底泥疏浚与原位修复，控制内源污染释放。五是推进岸线环境整治，清理两岸垃圾堆存，建立常态化巡查机制，遏制面源污染。六是优化工程实施路径，统筹协调跨区域管理职责，明确属地河长责任，加快管线迁改进度，缩短治理周期。七是建立长效监管机制，引入第三方监测与评估，推动河长制从“有责”向“有效”转变，形成“预防—管控—修复—监督”闭环管理体系。  \n\n（410字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f0465b9633d9652de165a4448468e5218e393c647e7008ee77a5336e5c15eb88",
+    "selected_material_sha256": "95cf58f9af0743ed6e46986c6ba9d6c761ed94ff8020a767e3c0ba97754fd1fe",
+    "question_sha256": "1927ca4a981c5af3ad480867e303dfcb394766994c318ac679bfb34f72810fef",
+    "characters": 345,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 345,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 231,
+          "prompt_tokens": 998,
+          "total_tokens": 1229,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "127-4",
+    "answer": "**创新是破局之刃，更是规避风险的智慧选择**\n\n“创新是有风险的，但它又是规避风险的最好方式”，这句话深刻揭示了创新与风险之间的辩证关系。在时代变革加速、发展路径日益复杂的背景下，守成难以为继，唯有主动创新，才能在不确定性中把握主动权，从根本上化解潜在危机。\n\n以B市经开区为例，传统汽车产业虽有规模基础，但面临技术迭代和环保压力。若继续沿袭旧模式，不仅难以满足绿色低碳的产业要求，更可能被市场淘汰。因此，该区果断推进“破茧”行动，在新能源、新材料领域大胆布局。尽管初期投入大、技术路径不明确，存在失败风险，但正是这种敢于试错的创新，推动企业开发出新能源卡车，实现销量同比增长152.3%，有效规避了传统燃油车市场萎缩的风险。可见，创新不是冒险，而是一种前瞻性的战略选择。\n\n同样，在果醋产业转型中，传统酿造技艺面临“失传”与“效率低下”的困境。企业通过将代代相传的手艺转化为可量化、可复制的数据参数，实现了从经验操作到智能控制的跨越。这一过程虽需技术突破和系统重构，却从根本上提升了产能与品质稳定性，避免了因工艺落后导致的产品同质化和市场竞争力下降。这说明，创新不仅提升效率，更是在源头上构建抗风险能力。\n\n更深层看，创新之所以是规避风险的“最好方式”，在于它打破了路径依赖，重塑了发展逻辑。B市在生态环保压力下关停污染企业，转向绿色产业，既回应了环境诉求，也避免了“高投入、高排放、高代价”的不可持续模式；在柿子产业中，通过数字化种植、智能仓储、冷链配送等环节重构产业链，使产品从“靠天吃饭”变为“可控可调”，实现了品质稳定与市场拓展的双重目标。这些实践表明，创新不是孤立的技术升级，而是系统性风险防控的底层机制。\n\n此外，创新还赋予发展以韧性。面对外部环境波动，如市场需求变化、政策调整或自然灾害，具备创新能力的企业和区域能够快速响应、灵活调整，从而在危机中转危为机。正如B市通过产业重构实现“各领风骚”，其成功并非偶然，而是建立在对风险本质的深刻认知之上——真正的安全，不在于被动防御，而在于主动进化。\n\n总之，创新虽有代价，却是应对复杂不确定性的最优解。它既是对现状的突破，更是对未来风险的预判与化解。唯有以开放心态拥抱变革、以系统思维推动创新，才能在时代浪潮中立于不败之地，真正实现高质量发展的可持续路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9df7769c65c422140d5e5bea9c46b820adad3bc7d295f4fead44bc56f656536a",
+    "selected_material_sha256": "2dc85d42052246dab35916262fd0846372ee59a99e3fc6e3df4f0629ac7ad803",
+    "question_sha256": "0bdf98491dc7e52971bdd2f1830bc6eee21ea2d93f8a63ce031006633c2b05d2",
+    "characters": 944,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 944,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 573,
+          "prompt_tokens": 5241,
+          "total_tokens": 5814,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "138-4",
+    "answer": "**守护绿色记忆，共筑执法新生态**\n\n“保护古树名木单靠我们是远远不够的”，这一深刻洞察揭示了执法工作的本质——治理不仅需要专业力量，更需要全民参与与社会共识。在执法实践中，这一理念具有重要借鉴意义：执法不是孤军奋战，而是通过宣传教育、机制引导和多元协同，将公众从“旁观者”转变为“参与者”和“守护者”。\n\nP县的经验表明，古树名木的保护离不开科学管理与广泛宣传的结合。县里不仅为每棵古树建立“个体档案”，还通过设立有声保护牌、出版《P县古树名木》等举措，让公众在日常生活中感知其生态价值与历史温度。这启示我们，执法工作应主动打破“冷冰冰”的规则传播模式，以生动、可感的方式讲清政策背后的逻辑与意义，使群众在认知中产生情感共鸣，从而自觉遵守法规。\n\n更关键的是，执法必须唤醒公众的主体意识。护林员老石27年如一日巡山护树，村民自发参与保护，正是源于对古树“活着的历史”价值的深刻认同。这说明，执法工作若仅停留在“处罚违规”层面，难以实现长效治理。唯有通过常态化宣传、典型示范和互动体验，让群众理解破坏生态的代价，才能真正激发其内生动力，形成“人人有责、人人尽责”的社会氛围。\n\n在执法机制上，P县引入无人机巡查、智能芯片预警等科技手段，实现了从“人工巡护”到“智慧监管”的升级。这提示我们，现代执法应以技术为支撑，提升发现问题的精准性与及时性，同时将技术成果转化为公众可感知的信息——如通过APP推送古树健康状态、发布保护动态，让群众在参与中增强对执法工作的信任感和认同感。\n\n此外，执法还需强化部门联动与社会协同。P县联合林业、公安、供电等单位开展联合行动，既提升了治理效能，也体现了多元共治的格局。这启示我们，在复杂治理场景下，执法不应是“单打独斗”，而应通过建立跨部门协作机制，整合资源、明确职责、形成合力，实现从“管理”向“共治”的转变。\n\n最后，执法的根本目标是培育生态文明价值观。古树名木不仅是自然遗产，更是文化记忆的载体。当群众在参观、体验中了解其历史与生态价值时，便会在潜移默化中树立尊重自然、敬畏生态的意识。这种意识一旦内化，将成为推动依法依规行为的深层动力。\n\n综上所述，“保护古树名木单靠我们是远远不够的”这一论断，为执法工作提供了深刻的启示：唯有坚持宣传教育与制度建设并重，科技赋能与公众参与结合，才能实现从“被动执行”到“主动守护”的转变，真正让法治之光照进人心，让生态之美根植于社会肌理。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7086fb711d56537ce9a1e9a57869e01208c03ab506bef38654e5e0109dfaf796",
+    "selected_material_sha256": "8ce84b4ab5660cdd9b1c7d21d8fd13b6776e16830f5e29fe994e10dfa952c140",
+    "question_sha256": "5d626619136903873609ef33e2e648c7094ea8f6e5a460360a60d49ae8cb99a8",
+    "characters": 991,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 991,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 634,
+          "prompt_tokens": 5483,
+          "total_tokens": 6117,
+          "prompt_tokens_details": {
+            "cached_tokens": 582
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
