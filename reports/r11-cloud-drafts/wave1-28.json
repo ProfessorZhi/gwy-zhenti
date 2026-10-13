@@ -1,0 +1,195 @@
+[
+  {
+    "id": "019-1",
+    "answer": "Z省融合型大社区治理面临人口密集、结构复杂、需求多元、力量不足等问题，传统“走口手”方式难以应对。新解法包括：一是构建“基层治理综合信息平台”，实现问题上报—派发—处置的数字化闭环，提升响应效率；二是推动网格科学划分，建立“村（社区）—网格—微网格”三级体系，增强管理精度与覆盖力；三是依托“微家园”等线上平台，整合居民需求与服务资源，促进邻里互动、互助共享，重建熟人社会；四是建立多跨协同机制，通过干部下沉和部门联动，破解复杂问题，如水产市场内涝；五是推进“三方对话”机制，借助大数据和移动端提升议事效率。同时强调技术赋能不能替代“铁脚板”，须坚持线上线下结合，避免数据重复采集，确保治理实效与基层减负并重。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cc07b505dd9266e25b7eb5304b82fe4a19f439bbf0ec463c0de932177e320bfb",
+    "selected_material_sha256": "4a5c740602356be111e587a9c5b8b037b7fb89138e9a1efa531a236b445f0abe",
+    "question_sha256": "a18c968bef17d0076b6b138bcb01b0b533ec8951cd0f7ea96342392ce06e69ce",
+    "characters": 305,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 305,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 191,
+          "prompt_tokens": 1790,
+          "total_tokens": 1981,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "032-2",
+    "answer": "应加强乡镇干部教育培训，提升服务群众能力；推行“三级联评”机制，强化群众参与考核，提高工作透明度与公信力；将考核结果与干部任用、奖惩挂钩，激发干事动力；落实目标管理责任制，明确职责，限时办结，推动承诺事项落地见效。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "379154de70e44630d0931552fca13dd3d8111bc9a8cf0ccf61f44aa7af927ff4",
+    "selected_material_sha256": "3a2a4c5dcc4e869c64fa8f4cb599011a54814af06afbe19bf7ec081e7088ec58",
+    "question_sha256": "0f92b281dd85006d5b5572ffda43c29f44675a27f60480e8a0946688a5c4074f",
+    "characters": 107,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 107,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 68,
+          "prompt_tokens": 1690,
+          "total_tokens": 1758,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "041-3",
+    "answer": "致广大消费者的一封公开信\n\n您好！针对您对临期食品安全的关切，我们高度重视并作出如下说明：\n\n临期食品指临近保质期但仍在有效期内的食品，其价格实惠、性价比高，符合“勤俭节约、杜绝浪费”的倡导。目前市场存在监管标准不统一、缺乏法律定义等问题，但只要通过正规渠道购买，且商家具备合法资质和品控能力，消费者可放心选购。\n\n我们明确：临期食品并非过期食品，其安全性取决于生产与储存环节的规范管理。建议消费者选择信誉良好、有明确标识和公示信息的商家购买，并注意查看保质期、包装完整性及储存条件。\n\n目前，我局已要求相关经营主体对临期食品履行“醒目提示”义务，强化源头追溯和销售记录管理，确保可追溯、可管控。同时，督促企业建立严格的品控流程，杜绝以次充好或违规处理临期商品。\n\n下一步，我局将推动制定统一的行业标准，完善临期食品监管机制，提升食品安全治理能力。我们坚持“包容审慎、科学监管”原则，既支持合理消费，也坚决守住安全底线。\n\n感谢您对市场监管工作的理解与监督！\n\nH市市场监督管理局  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9c744811570bd62567c792eede767a43497d8a7b936f64e66e86d5f56390858e",
+    "selected_material_sha256": "2d77a40acb4094c76f0da1263df4a670da74aaae8514f09576fec6d34c3d6ee6",
+    "question_sha256": "e3784119d912ceae25f3eae16af75b5b12d110e66736cc19b39b5638de5ed874",
+    "characters": 435,
+    "word_limits": [
+      405,
+      495
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 391,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 237,
+          "prompt_tokens": 1819,
+          "total_tokens": 2056,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 435,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 270,
+          "prompt_tokens": 2143,
+          "total_tokens": 2413,
+          "prompt_tokens_details": {
+            "cached_tokens": 1834
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "051-3",
+    "answer": "F县苗木产业在2013年面临的主要难题是：市场供大于求，传统种植模式导致品种杂、标准低，难以满足城市化背景下对彩化、艺化苗木的需求，苗农收入锐减，大量土地被闲置甚至砍伐。  \n\n破解对策包括：一是转变思维，以市场需求为导向，推动苗木标准化、专业化和品牌化发展；二是实施“绿色银行”战略，将苗木产业与旅游融合，打造生态旅游景区，提升附加值；三是引进龙头企业，推行工厂化育苗新模式，优化品种结构，实现规模化、规范化生产；四是通过举办观花节、采摘节等节庆活动吸引游客，带动三产融合发展，提升产业综合效益。上述措施有效提升了苗木质量与市场竞争力，激发了农民种植积极性，实现了产业转型升级和农民增收。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "00edef35892ae0b4f5d3876b95c3a3debb1b46467f582e96ae52849f26bb0661",
+    "selected_material_sha256": "d607d1982932af330f0c95ed27e65dc19b2409f47852bdfc94812ed9b3428df5",
+    "question_sha256": "f543958a91e77608d26bf7f8a5c75b6480ea49344a236d2886f3750f10f0ca70",
+    "characters": 291,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 291,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 174,
+          "prompt_tokens": 1734,
+          "total_tokens": 1908,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
