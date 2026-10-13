@@ -133,5 +133,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "058-4",
+    "answer": "**在传承中创新，在融合中振兴——乡村市集发展的新路径**\n\n“一面逐新，一面念旧，在新与旧的交融中不断发展，迎来新生”，这一命题深刻揭示了乡村可持续发展必须坚持的辩证逻辑。L镇乡村市集正是这种理念的生动实践：它既保留了农耕时代以物易物、邻里互信的乡土本色，又通过主题策划、业态升级、创意赋能等新形式注入现代活力，实现了传统与潮流的有机融合。\n\n传统市集是乡村社会生活的重要节点，承载着村民交流、物资交换和情感联结的功能。材料中提到，“赶场”是乡民“大事”，不仅为生活提供便利，更满足了人们对烟火气与人情味的深层需求。这种“念旧”的精神内核，是乡村社会凝聚力的根基，也是现代城市生活中难以复制的情感温度。当年轻人在市集上看到摊主凌晨3点起床现做包子、亲手采摘果蔬时，他们感受到的不仅是商品，更是一种真实的生活方式和人与人之间的真诚连接。\n\n面对新时代对新鲜体验的追求，L镇并未简单摒弃传统，而是以创新思维拓展市集边界。通过举办“农夫市集”“非遗市集”“露营市集”等主题节庆，引入艺术展演、手作体验、音乐节等活动，使市集从单一交易场所转变为文化展示与休闲消费的复合空间。例如，“收获秋天·晒秋”快闪市集通过泼墨书法、乡村画作营造多巴胺色彩氛围，吸引年轻人驻足；“放牧的小孩”主题市集则融合剪纸、草场游乐园等互动项目，增强参与感和趣味性。这些创新不仅提升了市集吸引力，更激活了本地文化资源。\n\n更为关键的是，这种“逐新”并非脱离乡土根基的浮躁尝试，而是基于本地生态、产业与人文优势的深耕。小昀团队策划的创意活动、小严带领的“新农人”团队推动的电商销售和观光采摘，均立足于本地农产品与民俗特色，实现了从“卖货”到“造景”的转变。这种创新是扎根于土地的，是可持续的，避免了“为创新而创新”的空转现象。\n\n同时，市集的发展也带动了乡村人才回流与产业重构。越来越多“新农人”投身于品牌创建、包装设计、电商运维等岗位，不仅提升了农产品附加值，更推动了农业从生产型向服务型转型。例如，通过建立线上平台，农户得以将“土特产”转化为“有故事的商品”，实现了从“靠天吃饭”到“靠品质出圈”的跃迁。\n\n值得注意的是，市集的“新生”离不开系统性的制度支持与文化引导。L镇将市集作为乡土品牌的延伸，为1000余户农户搭建平台，通过组织策划、资源对接和品牌宣传，使其从自发集市演变为有组织、有内容、有影响力的区域公共空间。这种从自发到规范的转变，体现了乡村治理能力的提升，也为其他地区提供了可复制的经验路径。\n\n综上所述，乡村发展唯有在“守正”中汲取力量，在“创新”中激发活力，才能真正实现可持续的振兴。L镇市集的发展启示我们：传统不是包袱，而是根脉；创新不是颠覆，而是生长。唯有让新与旧在真实场景中彼此滋养、相互成全，乡村才能在时代浪潮中焕发持久生机，走出一条兼具温度与活力的振兴之路。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ed8703de550c3b08ef6cd8c5b6ab969a4f4c08bb2c9afd9a55ac91419358cf7b",
+    "selected_material_sha256": "7733b67ecdc4c45459fc24054dbabfff08e8ad5fdfeecdd007b9fcddf95178a6",
+    "question_sha256": "e38d3b9c008abd67f4ed5f3a6c3ad5172fe0665d74041206ae66db4d29d521fb",
+    "characters": 1161,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 967,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 626,
+          "prompt_tokens": 5234,
+          "total_tokens": 5860,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1161,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 756,
+          "prompt_tokens": 5982,
+          "total_tokens": 6738,
+          "prompt_tokens_details": {
+            "cached_tokens": 5859
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "071-2",
+    "answer": "Z市火车站停车场存在以下问题：一是车位严重不足，地面停车场仅170个，地下192个，总量不足400个，供需矛盾突出；二是上车点设置不合理，仅设一处“微缩”区域，标识不清，乘客难找车、司机难候客；三是网约车违停现象频发，因15分钟收费导致司机为接单频繁驶出，造成通道堵塞；四是管理协同不足，“头痛医头”式处置，缺乏统筹规划与联动机制。\n\n建议：一是科学扩容，合理增设上车点，明确划分专用区域，提升可识别性；二是优化停车政策，对提前预约、高铁到站前约车等情形实行差异化收费或免费时段，缓解司机接单压力；三是建立多部门协同机制，由火车站管委会牵头，联合交管、运管部门实施统一规划与执法监管，强化巡查与违停处置；四是加强现场引导，增设清晰标识和引导人员，提升乘客与司机的通行效率。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "46c363a080e90c3a2e0e935304881825d235e6d981af6fdd5c0946925171a3de",
+    "selected_material_sha256": "1889b963a67f4483cc0292718774cb8f0eeefa2a469f96ed2024d8fe7ce33c6b",
+    "question_sha256": "713e45cbacb6a1cdf5fbb6779f02814c1c7e476459ddab66aa3ce0c93bdea145",
+    "characters": 334,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 334,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 218,
+          "prompt_tokens": 1460,
+          "total_tokens": 1678,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "081-2",
+    "answer": "**关于科学使用、规范回收农用地膜的倡议书**\n\n亲爱的农民朋友们：\n\n为守护耕地生态、保障粮食安全，H县农业农村局向广大农户发出倡议：科学使用地膜，规范开展回收。\n\n请选用厚度不低于0.01毫米的优质可降解或高强度地膜，避免使用非标薄膜，减少土壤污染。废弃地膜应集中交至村级回收点，严禁随意焚烧或丢弃，防止化学残留危害农田。\n\n我们理解地膜成本较高，但厚膜、好膜更耐用、更环保，长期看更省心、更安全。县里已设立试点回收点，并对科学使用地膜给予补贴支持，欢迎积极参与。\n\n同时，县市场监管部门将加强非标地膜监管，严厉打击违规销售行为，保障市场秩序。\n\n让我们携手行动，从我做起，用绿色方式守护家园土壤，共建生态宜居的美丽乡村！\n\nH县农业农村局  \n2024年6月10日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1e4a6c203547820d015d897b02a020a8f779ad78a603964c1b38eff2e2c71ef6",
+    "selected_material_sha256": "2209a4bd5c3c8110b1c9c32fe7d420cb8ff168431de536ff474ca1677f1ed520",
+    "question_sha256": "46d16a279bec51c05171146286d7ba34dea84e9564a43b11c4c3b04019228f35",
+    "characters": 314,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 314,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 207,
+          "prompt_tokens": 1865,
+          "total_tokens": 2072,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "091-2",
+    "answer": "应区分路段和时段实施禁鸣，对安全警示性鸣笛予以明确允许；完善执法手段，加强声呐抓拍等技术应用，提升取证客观性；坚持人性化执法，听取当事人申辩，依法判断是否违法；建立鸣笛罚款公开机制，接受社会监督；在急弯、坡顶等特殊路段及紧急情况下实行例外原则；加强部门协同，优化交通路线，增设显著标志，保障交通安全与秩序平衡。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "38cd1e3a40c05ee6ed78c457b25ce9798776295eb530a676dbf3d57b9b7c7b38",
+    "selected_material_sha256": "e819612b6cd859c5b28692e17a46c82f25ad71197926e714d0878d61b29448b7",
+    "question_sha256": "714d08f8c05dfaad57c48bc73c470257e95f3ae42f1a4e8d086dae79179e78d8",
+    "characters": 155,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 155,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 97,
+          "prompt_tokens": 1616,
+          "total_tokens": 1713,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
