@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "065-2",
+    "answer": "C市执法行动启示：面对检测造假难题，应创新取证方式，善用大数据和电子数据构建证据链；坚持技术与法律协同，通过多维度交叉验证提升证据说服力；强化现场调查与视频监控分析，发现隐性违规行为；注重程序规范，明确权责分工，推动执法标准化、科学化。同时，应加强企业合规意识，完善检测全过程监管机制，实现精准执法与公平公正并重。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d51353b2d65ec292391da65af372310f3ebc1ae5c53db140dbc99ea7d292b27c",
+    "selected_material_sha256": "902dc9d21ecd944d628ad58f648d23df556babae986c7f1b19654c1a2d6886be",
+    "question_sha256": "18546f0cd498f46273d45c27b6d300a6e064d771f970b0c202e7fbf82136788b",
+    "characters": 157,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 157,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 96,
+          "prompt_tokens": 1869,
+          "total_tokens": 1965,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "077-2",
+    "answer": "桃花县市场监管局“菜单式”服务的主要经验如下：一是精准调研企业需求，通过走访调研梳理出55项服务事项，明确承办科室和责任人；二是建立“点单接单”机制，企业可通过电话或微信公众号提出服务申请，相关部门上门办理，实现“一次办结”；三是整合跨科室资源，组建专班协同办理涉及多个部门的复杂事项，提升服务效率；四是坚持问题导向，对非本部门服务事项主动协调联动，确保企业诉求得到及时响应；五是优化服务流程，推动企业只跑一趟、全程代办，显著提升办事便利度和满意度。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f5b130916a2ea4c1caf1f27be19d081ccbfa637ea4e958effe8859a4efbcac0e",
+    "selected_material_sha256": "0d39936927f7f6ed7382f3d549406899c0e5e90eb3221e96e3c8db89c4c67106",
+    "question_sha256": "588f82181d19a21d64c0e87719031bc0c771652e6b046c4fa462b6e98b9d0572",
+    "characters": 225,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 225,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 134,
+          "prompt_tokens": 1604,
+          "total_tokens": 1738,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "088-1",
+    "answer": "一、突出问题：  \n1. 零工市场管理混乱，占马路揽活导致交通拥堵、噪音扰民及偶发冲突；  \n2. 工人多为低技能、无合同，存在被拖欠工资、安全意识薄弱等风险；  \n3. 劳务中心准入门槛高，企业资质限制导致实际运营不足，供需错配严重。  \n\n二、建议措施：  \n1. 建立规范管理机制，划定零工市场合理区域，设置时段限流与交通疏导方案；  \n2. 推动“零工+培训”结合，开展安全操作与技能提升培训，提升务工人员素质与保障能力；  \n3. 完善劳动合同制度，推行日结工资备案与欠薪预警机制，强化维权保障；  \n4. 优化劳务中心准入标准，降低门槛，增设岗位匹配服务，引导企业合理用工。  \n\n（328字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "de6602ddecee0d0454069addeee60badda90f240d6e9c068f557a9e68b4b2d1d",
+    "selected_material_sha256": "c5e255b9d709d9869759e30d6da6e062305dddf79898808109cfbe6f15ba7f96",
+    "question_sha256": "c30d868c10cf2e0df1a8420a38eaf2220cbb5aa4d0194446f41802afb03233ab",
+    "characters": 267,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 267,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 198,
+          "prompt_tokens": 1818,
+          "total_tokens": 2016,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "096-2",
+    "answer": "“新的方式”指“背二歌”在新时代的传承与创新：一是内容更新，歌词融入现代生活场景，如“小小游艇荡碧波”，体现乡村振兴与产业转型；二是传播主体转变，由老年“背二哥”转向年轻一代，实现代际传承；三是功能拓展，从个人抒发情感转向面向游客的文化展示，成为乡村旅游的重要文化载体，既保留精神内核，又赋予时代新意。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1a6554cd984622b157e5ce8b354adff7153ef0d42274eec12a3ab2a9a96e6ac5",
+    "selected_material_sha256": "9fab778876790951890c49e25e9e86ec7b79cfb9550b0fd907cc2932da94a75c",
+    "question_sha256": "5ecb8c20a66a213daf16f8079acb6f1ea67ba1642abbb7619e2eaadcc14da4bf",
+    "characters": 151,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 151,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 96,
+          "prompt_tokens": 1512,
+          "total_tokens": 1608,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
