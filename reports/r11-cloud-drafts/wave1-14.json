@@ -358,5 +358,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "103-3",
+    "answer": "一、创新推出“物业+政务”服务模式，实现政务服务进小区、进网格，居民在家门口即可办理证照、缴费、投诉等事项，打通基层治理“最后一米”。  \n二、推行一体化片区管理，整合监控、停车、保洁等资源，避免重复投入，降低运营成本，提升服务效率。  \n三、强化物业管家职能，赋予其社区网格员身份，推动其参与矛盾调解、议事协商，如通过“惠·议厅”机制化解邻里漏水纠纷，实现问题“就地解决”。  \n四、探索居民合作社机制，培育“居民主理人”，发挥其在沟通协调中的桥梁作用，组织健康、就业等15场便民活动，增强社区凝聚力。  \n五、试点“六助”养老服务，由物业人员上门签约服务，满足老年人“急难愁盼”需求，提升服务精准度与可及性。  \n该模式实现政务下沉、多元共治、服务提质，为基层治理现代化提供可复制经验。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "522eff20a4fd476276706df644df21ffe18a507afc17d9b55c8df348d020d154",
+    "selected_material_sha256": "8cd02b0001f17fcb2961d4a691634c9e5c90894e31657cefef8aa9253eb48dd9",
+    "question_sha256": "1ef82590e807545e70a5f6af86d36d865cfd560303d2438b8343a26fe3605d44",
+    "characters": 330,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 330,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 214,
+          "prompt_tokens": 1930,
+          "total_tokens": 2144,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "116-2",
+    "answer": "应坚持“综合整治”为主，推动城中村有机更新。一是加强基础设施建设，完善停车、交通、排水等设施，解决行车难、乱搭乱建等问题；二是优化公共活动空间布局，增加居民休闲与社区交往场所，提升生活便利性；三是规范管理，清理电线外露、污水横流、乱贴广告等乱象，杜绝无照经营，消除安全隐患；四是合理利用土地资源，采取局部拆建、功能调整等方式，避免大规模拆除，保留城中村承载的移民文化记忆；五是建立长效管理机制，明确政府、社区、居民三方责任，推动共建共治，提升治理效能。通过分类施策、精准改造，既改善人居环境，又保障民生需求，实现城市更新与社会稳定的有机统一。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "73c1dc680860d434709d5c7383920b563a461bfff4dfe09ba640388824c69766",
+    "selected_material_sha256": "455e6b674516a1796fdf0d53f245d15ac81971caf049e85b585f108de28c3f6a",
+    "question_sha256": "02af1e9cc09c75a4f282aa6de90f99e1c19809e9a5d9e3489318ce4544b03d4c",
+    "characters": 271,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 271,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 165,
+          "prompt_tokens": 973,
+          "total_tokens": 1138,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "129-1",
+    "answer": "发展乡村旅游既要“守”，也要“新”。所谓“守”，是保护乡村独特的历史文化韵味和自然生态，避免景点同质化、过度商业化，防止喧闹失却宁静本意；所谓“新”，是顺应时代变化，提升服务品质与交通便利性，优化旅游体验，推动智慧化、多元化休闲方式发展。既要杜绝“千村一面”“豪华炫技”等乱象，也要解决基础设施不完善、配套参差等问题，真正实现“人从众”到“人留心”的转变。唯有守住本真、勇于创新，才能让乡村旅游既接地气又可持续，满足游客对宁静、真实、品质生活的期待。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3443ddea0d6efb8be37020c9159fb74bf7610d8e838cb77d2bf0ea086fdade85",
+    "selected_material_sha256": "155db8391140753e4a6a3b019bcd9558e6db79534200ce6750801517cbdb0d81",
+    "question_sha256": "f9b40e291ae267b88bf96b9c2dd5ab399946865c26385b5f98595141904c5058",
+    "characters": 225,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 225,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 142,
+          "prompt_tokens": 1430,
+          "total_tokens": 1572,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "140-4",
+    "answer": "**题目：复活易，活好难——传统技艺传承中的创新之路**\n\n“复活容易，活好难”，这句话深刻揭示了传统文化在当代复兴过程中面临的本质困境。青茂古镇的古法造纸技艺，从被遗忘到重新开张，仅需一次回乡与寻访，便实现了“复活”；但要真正让这一传统焕发持久生命力，却需要持续的创新、融合与价值重构，这正是“活好难”的真实写照。\n\n王陶然的实践表明，技艺的“复活”是基础，而“活好”则要求在时间中不断迭代。她最初尝试将南瓜叶剪成荷叶，虽有创意但最终仅停留在纹理层面，纸面缺乏艺术感染力。这说明，单纯模仿或技术复制无法赋予传统以现代意义。真正突破来自对光影与质感的发现——当纸在灯光下散发植物光泽时，技艺本身便获得了新的审美维度。这一顿悟揭示了创新的核心：不是对传统的简单复刻，而是通过感官体验的再激活，让古老技艺在当代语境中“看得见、摸得着”。\n\n更进一步，王陶然邀请书画家将世界名画搬至纸面，实现了艺术跨界。但最终，他们并未停留在“临摹”，而是将梵高的星空转化为青茂的山川河流，使作品既保留了原作的意境，又注入了本土文化血脉。这种“在地化”的创新，让传统不再遥远，而是与地方生活、自然风貌深度绑定，实现了从“外来输入”到“自我生长”的转变。\n\n这种创新不仅是技术层面的提升，更是价值体系的重构。王陶然坚持不将高溢价作品出售，而是选择留存、传播，体现了一种文化担当——真正的传承不是商业变现，而是让公众在体验中建立情感连接。这正是“活好”所要求的精神自觉：以开放心态面对时代，以人文关怀回应社会。\n\n传统技艺的“活好”，本质上是人与环境、历史与当下之间的对话。青茂的纸张，最终成为古镇文化符号的一部分，不仅吸引游客，更唤醒了人们对本土记忆的认同。这种从“物”到“情”的转化，正是传统文化在现代社会中得以延续的根本路径。\n\n因此，推动传统技艺“活好”，必须超越“技术修复”思维，转向系统性创新。需要政府、企业与民间力量协同发力：建立传承基地，完善人才培养机制；鼓励跨界融合，推动文化与科技、艺术、旅游的深度结合；同时强化公众参与，让传统不再是博物馆里的陈列品，而是生活中的日常体验。\n\n“复活”是起点，“活好”才是终点。唯有在尊重本源的基础上，以创新为动力，以情感为纽带，才能让千年技艺真正“活”进时代血脉，成为滋养民族精神的不竭源泉。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "922b9a0691ba382cedd7bd3bfa3a1b05db8159a4e56ef5478d5f22e92db52cb6",
+    "selected_material_sha256": "215a120cc4d29c2595dc3c5689a8d27444b229b12ef473b61a6dfe370bdaaef7",
+    "question_sha256": "0d8ffddfcea4d88051b3ccdc86b29ed3414e5a63b63f4bb78edc1cb1c8e05a88",
+    "characters": 943,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 943,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 606,
+          "prompt_tokens": 4123,
+          "total_tokens": 4729,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
