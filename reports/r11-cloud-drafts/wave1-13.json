@@ -178,5 +178,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "059-3",
+    "answer": "尊敬的各位领导、同仁：\n\n大家好！我是KMN都市圈建设办公室吴主任。现将阶段性建设成果汇报如下：\n\n近年来，KMN都市圈坚持“破圈协同、一体发展”，推动同城化向纵深拓展。一是交通互联提速，城际铁路与高速公路网基本建成，“一小时通勤圈”初步形成，实现跨域高效通达。二是民生服务共享，公积金、医保、户籍等事项实现“跨域通办”，公立医疗机构全面推行“一卡通”，教育领域师资交流轮岗试点有序开展，群众获得感显著提升。三是产业协同深化，三市聚焦光电子信息、生命健康等重点产业，推动产业链上下游联动，形成“主链在M市、配套在周边”的发展格局，去年GDP同比增长6.3%，占全省比重近60%。四是科创动能增强，N市设立离岸科创中心，K市搭建研发平台，与M市14所高校院所合作项目达99个，一批国内首款产品和重大科技成果涌现。五是生态共建共护，三市联合编制生态绿地保护规划，完成中央公园一期绿道建设，打造集休闲、科普、文化于一体的“绿肺”空间。\n\n下一步，我们将持续深化协同机制，推动都市圈向高质量、可持续方向迈进，真正建成民生幸福圈、发展共同体。  \n\n谢谢大家！",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0dbc5ff0c4c0c0de7d7bb15b2715379ca73ef7ca9769f44e60e80b0fae5a81b3",
+    "selected_material_sha256": "f3528bdbcf904b320a3ebdcfab8df3547c78d663f975409d0a4ae1b9cacf19bb",
+    "question_sha256": "8e06b7a8329a6a324a2de551852755c6c9a664ea8914cf2884d1887e5333a949",
+    "characters": 465,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 465,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 287,
+          "prompt_tokens": 1882,
+          "total_tokens": 2169,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "072-2",
+    "answer": "“说走就走，路不再长”体现了我国交通40年巨变带来的出行革命。过去因距离远、交通不便，出行需漫长等待与艰辛跋涉，如陈霞夫妇当年3小时颠簸、张健父亲夜半搭货车归家；如今高铁、高速公路、民航网络密集，行程大幅缩短，实现快速便捷换乘。同时，“互联网+交通”赋能出行，手机订票、实时路况、网约车等技术让规划与执行高效顺畅。交通工具迭代与数字技术融合，不仅提升效率，更满足了人们个性化、即时化的出行需求。从“自行车王国”到共享单车复兴，说明出行方式不断优化升级。因此，“路不再长”不仅是物理距离的缩短，更是时间成本、服务体验和交通体系协同的全面进步，真正实现了出行自由与便捷。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "59f96b697ba5ade70e69725550f4a7371b302eae82f06fe96b47c18abeaa2e7c",
+    "selected_material_sha256": "0904cf43c4db9fbb26979736265ee801fb4f02c6f1537fa6c0f45fb8c2b841d2",
+    "question_sha256": "cd048ae9f0393b58e797f7c15b1c69eee02dcc89026a0ed1391fd0b7e743a4ee",
+    "characters": 283,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 283,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 176,
+          "prompt_tokens": 1536,
+          "total_tokens": 1712,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "082-1",
+    "answer": "E县“做实每一项”调研机制的“做实”体现在：一是调研导向务实，聚焦群众急难愁盼和基层发展难题，将问题转化为可落地的课题；二是过程深入扎实，干部下沉一线，实地走访、面对面交流，摸清真实情况；三是评价体系科学，建立“基层评、群众评、数智评”三位一体评价机制，强化结果导向；四是调研规范高效，实行计划申报和联合调研制度，避免重复督查，提升实效性；五是成果落地见效，95%以上调研课题实现转化办结，真正解决问题。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "39ac34a09b90c49c847876940c831035e99b66781f49414bbfe7fd5d0796c39e",
+    "selected_material_sha256": "6cc392768ae8b3851bfaf72cbe0072b8c5a92b1fc052e60bc2bd0ce27654126a",
+    "question_sha256": "03e9622125b17916d29ef9677ec800f22721ce64cc78042e007ae574b82b2f92",
+    "characters": 202,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 202,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 128,
+          "prompt_tokens": 1629,
+          "total_tokens": 1757,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "092-1",
+    "answer": "向阳街道社区治理优秀案例推荐要点：  \n一是创新建立“社区发声人”机制，通过自愿报名、公开选拔，聘任12名热心居民担任发声人，聚焦居民关切，精准收集“问题清单”和“需求清单”，实现民声直达、民意共治。  \n二是构建“民生微实事大家谈”平台，每月开展居民议事活动，推动居民共商共议，形成“拉家常”式沟通氛围，有效化解邻里矛盾与急难愁盼问题。  \n三是依托社区发声人推动“微服务”落地，成立“益起”家电维修志愿服务队，开展“维修大篷车进社区”活动，打通便民服务“最后一米”。  \n四是强化监督反馈机制，发声人定期跟踪项目进展，及时向居民解释说明，提升政策透明度与居民参与感。  \n五是实现治理成效可量化：累计收集群众需求115个，确定项目106个，投入资金1611.8万元，社会资本占比超七成，形成“小而美、可持续”的社区治理新模式。  \n\n（共328字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ef4aab13fe43b2698408951d810962a1221bd6e0d2eca882c610f4f371a21b03",
+    "selected_material_sha256": "5a86fc034fd242238fef8184b84c56c1c02c6fc67b3fd95718a76b0da7fb0c29",
+    "question_sha256": "1803aa167fdfefdb4a0c40bcc18a465f87e2d72c6d5edfc8c1f5855f023c9a4a",
+    "characters": 357,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 357,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 241,
+          "prompt_tokens": 1889,
+          "total_tokens": 2130,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
