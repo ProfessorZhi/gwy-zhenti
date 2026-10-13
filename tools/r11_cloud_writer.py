@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Generate original study references on a loopback-only, pinned open model.
-No external inference API; never overwrites paper MD or previously authored drafts.
-Acceptance here means a model-reviewed draft, not human marking or a high score.
+"""Write original study drafts using a loopback-only pinned open model.
+Model self-review is NOT expert marking. No paper MD or main changes here.
 """
 from __future__ import annotations
-import argparse,hashlib,json,os,re,time,urllib.error,urllib.request
+import argparse,hashlib,json,os,re,subprocess,time,urllib.error,urllib.request
 from pathlib import Path
 from r11_lengths import limits,count
 from r11_match import MARK,REF,number
@@ -61,9 +60,9 @@ def chat(messages,max_tokens,json_mode=False):
     if not isinstance(text,str) or not text.strip():raise ValueError('Empty model output')
     return text.strip(),choice.get('finish_reason'),data.get('usage',{})
 
-def invalid_body(s):
+def invalid_body(s,essay=False):
     if any(x in s for x in ('<think>','```','<script','</details>','作为AI语言模型','以下是写作思路','此处省略','正文略')):return '包含非作答文本或占位语'
-    if not re.search(r'[。！？!?][”\"]?\s*$',s):return '正文未正常收尾，可能截断'
+    if essay and not re.search(r'[。！？!?][”\"]?\s*$',s):return '作文未正常收尾，可能截断'
     paras=[p.strip() for p in s.split('\n') if len(p.strip())>=20]
     if len(paras)!=len(set(paras)):return '存在重复段落'
     return ''
@@ -76,15 +75,16 @@ def write_one(t,provenance):
     length_hint=f'本次正文严格控制在{lo}—{hi}个非空白字符之间（含标点与题目），建议约{target}字。'
     if essay:length_hint+='请写成6—8个有实质内容的自然段，以材料实例和因果分析展开，不要只罗列论点。'
     prompt='【原卷材料，仅作依据】\n'+material+'\n\n【必须回答的原题】\n'+t['question']+'\n\n【交付要求】\n'+length_hint+'\n只输出这道题的完整作答，不要回答其他题目。'
-    messages=[{'role':'system','content':SYSTEM},{'role':'user','content':prompt}]
-    attempts=[];answer='';quality=None
+    base=[{'role':'system','content':SYSTEM},{'role':'user','content':prompt}]
+    messages=list(base);attempts=[];answer='';quality=None
     for iteration in range(5):
         answer,finish,usage=chat(messages,min(4096,max(650,int(hi*2.2))))
-        n=count(answer); issue=invalid_body(answer)
+        n=count(answer);issue=invalid_body(answer,essay)
         attempts.append({'iteration':iteration+1,'characters':n,'finish_reason':finish,'usage':usage})
         if finish=='length':issue='达到模型输出上限，正文可能截断'
         if not lo<=n<=hi:issue=f'正文实测{n}字，不符合必须满足的{lo}—{hi}字范围'
-        messages.append({'role':'assistant','content':answer})
+        # Keep only the latest draft in correction context; never discard source material.
+        messages=base+[{'role':'assistant','content':answer}]
         if issue:
             messages.append({'role':'user','content':issue+'。请重新完整写出符合原题的定稿，保留核心要点，不能机械截断或用空话凑字。'+length_hint})
             continue
@@ -98,12 +98,11 @@ def write_one(t,provenance):
                     'question_sha256':t['question_sha256'],'characters':n,'word_limits':[lo,hi],
                     'model_provenance':provenance,'model_self_review':quality,'generation_attempts':attempts,
                     'quality_boundary':'完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。'}
-        issues=quality.get('issues',[])
-        messages.append({'role':'user','content':'复核发现以下实质问题：'+json.dumps(issues,ensure_ascii=False)+'。请回到原材料重新写出整篇定稿，不要解释修改过程。'+length_hint})
+        messages.append({'role':'user','content':'复核发现以下实质问题：'+json.dumps(quality.get('issues',[]),ensure_ascii=False)+'。请回到原材料重新写出整篇定稿，不要解释修改过程。'+length_hint})
     raise ValueError('No acceptable complete draft after bounded revisions: '+t['id']+' '+str(quality)+' chars='+str(count(answer)))
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--ids',default='');ap.add_argument('--shard',type=int,default=0);ap.add_argument('--shards',type=int,default=1);ap.add_argument('--label',default='pilot');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--ids',default='');ap.add_argument('--shard',type=int,default=0);ap.add_argument('--shards',type=int,default=1);ap.add_argument('--label',default='pilot');ap.add_argument('--checkpoint-every',type=int,default=0);args=ap.parse_args()
     all_tasks=json.loads((ROOT/'reports/r11-work/to-write.json').read_text(encoding='utf-8'))
     existing=set()
     for folder in ('r11-drafts','r11-cloud-drafts'):
@@ -111,15 +110,15 @@ def main():
             existing.update(e['id'] for e in json.loads(p.read_text(encoding='utf-8')))
     wanted=set(args.ids.split(',')) if args.ids else None
     pending=[t for t in all_tasks if t['id'] not in existing and (wanted is None or t['id'] in wanted)]
+    # All workers in a workflow share a frozen checkout. Never repartition from live branch state.
     selected=[t for i,t in enumerate(pending) if i%args.shards==args.shard]
     output=ROOT/'reports/r11-cloud-drafts';output.mkdir(parents=True,exist_ok=True)
     statusdir=ROOT/'reports/r11-cloud-status';statusdir.mkdir(parents=True,exist_ok=True)
     label=args.label+'-'+str(args.shard).zfill(2);out=output/(label+'.json');statusfile=statusdir/(label+'.json')
     if out.exists():raise ValueError('Refusing to overwrite an existing shard')
     wait_ready();provenance=json.loads((WORK/'provenance.json').read_text())
-    written=[];failures=[]
-    start=time.monotonic()
-    for t in selected:
+    written=[];failures=[];start=time.monotonic()
+    for index,t in enumerate(selected,1):
         print('R11_WRITING '+t['id']+' '+t['path'],flush=True)
         try:
             entry=write_one(t,provenance);written.append(entry)
@@ -127,9 +126,11 @@ def main():
         except Exception as exc:
             failures.append({'id':t['id'],'error':str(exc)});print('R11_DRAFT_BLOCKED '+t['id']+' '+str(exc),flush=True)
         out.write_text(json.dumps(written,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-        statusfile.write_text(json.dumps({'label':label,'selected':len(selected),'drafts_written':len(written),
+        statusfile.write_text(json.dumps({'label':label,'selected':len(selected),'processed':index,'drafts_written':len(written),
            'failures':failures,'elapsed_seconds':round(time.monotonic()-start),
            'status':'drafts_only_not_applied_to_corpus','quality_boundary':'Model self-review is not independent expert marking.'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        if args.checkpoint_every and index%args.checkpoint_every==0:
+            subprocess.run(['python',str(ROOT/'tools/r11_push_outputs.py'),'--label',label],check=True)
     if not selected:
         out.write_text('[]\n',encoding='utf-8')
         statusfile.write_text(json.dumps({'label':label,'selected':0,'drafts_written':0,'failures':[]})+'\n')
