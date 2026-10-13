@@ -1,0 +1,182 @@
+[
+  {
+    "id": "017-1",
+    "answer": "W市通过完善公租房、社保、教育等保障体系，提升外来青年归属感；构建成长创业基金，提供职业培训与政策支持；设立专项服务项目，满足青年多元需求；推动青年参与社区治理，增强参与感；优化创业环境，落实免租、资金扶持等激励措施，实现人才与城市“双向奔赴”。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ce41b80a10a45a6fd04bec6e217c26eb73cf7432c4b79406315d426e2153bc6f",
+    "selected_material_sha256": "ce9250f94d2e0c6b1f7f8a0962949b276718ff18a3bd0ba8652c25a3e82dcfea",
+    "question_sha256": "72ad38f1b54b3adb23efd8f8cb0537065d1de203385f2cec59f189c09bd42294",
+    "characters": 123,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 123,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 75,
+          "prompt_tokens": 1572,
+          "total_tokens": 1647,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "028-4",
+    "answer": "**题目：社保为民，守护一生之安**\n\n“社保是我一生的事业，也是每个人一生的事业。”这句朴实而深刻的话语，不仅道出了社会保险制度的本质，更揭示了其在民生保障中的核心价值——它不是冰冷的政策条文，而是与个人命运紧密相连的生命线。从雷力科长为跨省务工者老宋“建虚拟账户”、打通缴费断点，到为参保人张女士手工录入数据、化解制度门槛，这些细节背后，是无数经办人员以责任和温度守护着每一个劳动者一生的养老希望。\n\n社保制度之所以被称为“一生的事业”，是因为它贯穿了个体从青年就业到老年退休的全过程。过去，流动人口因工作频繁变动导致缴费中断，养老金无法累计，面临“退休无保障”的困境。雷力通过创新建立虚拟账户，将分散的缴费记录整合归集，真正实现了“记录一生、服务一生”。这不仅是技术上的突破，更是制度设计从“被动合规”向“主动关怀”的转变，让每一个劳动者无论身处何地，都能在退休时拥有可预期、可信赖的养老保障。\n\n更重要的是，社保工作的背后，是无数基层工作人员日复一日的坚守与奉献。雷力每天清理系统数据、人工审核申请、协调异地经办机构，其工作节奏之紧张、责任之重大，体现了一线经办人员“不推责、不敷衍”的职业操守。他们不是在处理事务，而是在回应每一个家庭对未来的期盼——一个孩子能否安心上学，老人能否安享晚年，都与社保制度的完善息息相关。\n\n随着信息化发展，转移接续业务实现“一键办理”，从以往45天压缩至15天，甚至加急仅需三四天，极大提升了效率。然而，技术并非万能，仍需人工干预和责任担当。面对“临时账户”无法转入、缴费年限不足等复杂情况，工作人员主动联系群众、耐心解释政策、手工录入数据，这种“人性化服务”恰恰弥补了系统逻辑的刚性短板，使制度在执行中更具温度与弹性。\n\n从更宏观角度看，社保制度是国家治理体系现代化的重要体现。它不仅保障个人权益，也增强了社会公平与稳定。当劳动者不再因地域流动而担忧养老问题，社会流动性才真正成为发展的动力；当每一个家庭都能对未来有基本的预期，社会的凝聚力和幸福感才能得以提升。\n\n因此，“社保是一生的事业”不仅是对制度功能的描述，更是一种价值承诺——它要求我们以系统思维看待民生保障，以责任意识对待基层工作，以创新精神破解现实难题。无论是政策设计、技术应用，还是人员服务，都应始终坚持以人为本，把群众的“急难愁盼”放在首位。\n\n唯有如此，社保才能真正从“制度安排”走向“生命陪伴”，成为每个人心中可信赖、可依靠的坚实后盾。在新时代高质量发展的征程中，让社保制度更加公平、高效、温暖，就是守护亿万家庭幸福生活的根本所在。这，正是我们共同的责任与使命。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cb27d4a1a38e5f2b2cb47dc3baf7e4261e8c9b72c853d33cd93981f793f4dacb",
+    "selected_material_sha256": "9b6f04161ddda05d529e3f29da45c91a21963eacafe1b3661a47fe0f1f552c85",
+    "question_sha256": "636d0801cd6c4a436c681e6f90d44599b5d44f4ef503674376fb687063352302",
+    "characters": 1071,
+    "word_limits": [
+      900,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1071,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 649,
+          "prompt_tokens": 4842,
+          "total_tokens": 5491,
+          "prompt_tokens_details": {
+            "cached_tokens": 582
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "038-3",
+    "answer": "让“鸿沟”变“红利”，一个都不能少\n\n在C市，“智慧助老”正悄然改变老年人的生活。全市各级老年大学开设智能手机培训班，已有五千余名老人报名，80%实现从入门到精通，真正掌握数字生活技能。\n\n为破解“数字鸿沟”，市老龄办开展系列举措：组织“智慧助老”志愿团深入社区，面对面指导手机支付、微信使用等实操；推出适老化政务App，集成挂号、缴费等功能，采用大字体、一键操作等设计，极大提升便利性。同时，政务中心、医院、银行等窗口单位设立绿色通道，对高龄、重病老人提供上门服务，并开通子女代办权限，确保服务全覆盖。\n\n针对诈骗风险，市委政法委联合市文明办开展“助老反诈集市”和“进社区讲课”，通过游戏互动、案例讲解等形式，让老年人识破“小额贷款”“黄昏恋”等常见骗局，增强防范意识。\n\n市民捐赠手机、公益培训、志愿服务……温情举措汇聚成合力。正如一位独居奶奶所说：“现在自己能看微信群，生活圈子变大了。”  \n\n从“被抛下”到“共享红利”，C市正以精准服务和人文关怀，让科技真正惠及每一位老人，一个都不能少。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "2da43c2453a1e0e1435ea4931a748fbd929828ab6fa1bfa8dfeb3d9571241872",
+    "selected_material_sha256": "61994af549f8181d562c0bec8b5c42cd9462529ed4f656105e3738284f773fa9",
+    "question_sha256": "2fcbbff91cad443acfc937c3c67f9c2d78b1065639e6c839feeda638dec5d8d6",
+    "characters": 437,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 437,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 273,
+          "prompt_tokens": 1815,
+          "total_tokens": 2088,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "049-1",
+    "answer": "土味转化为高品位，需坚持“土”“特”“产”三要素：一是立足本土资源与文化，挖掘独特生态与人文价值；二是强化品牌意识，通过电商直播、包装设计、IP形象等提升产品辨识度与文化附加值；三是延伸产业链条，推动从初级产品向深加工、定制化、体验式产品转型；四是融合文旅元素，发展研学、采摘、体验等新业态，实现“卖产品”向“卖生活方式”转变；五是激活村民参与，推动其由生产者变为建设者和讲解员，形成共建共享的乡村产业新生态。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "380fe9db0c44a0a157d3c21aded0086129b922d900c00e0d0a6a60d433ecef61",
+    "selected_material_sha256": "af8f9a3159731ef2a3c9fe712ecf78150696ea52d0afed4b245825cba06faa0b",
+    "question_sha256": "7f76418f28d17c5e3145e6d5b7dcb491b3ffade3c3abfc254a03ba090a15c0ac",
+    "characters": 205,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 205,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 132,
+          "prompt_tokens": 1774,
+          "total_tokens": 1906,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
