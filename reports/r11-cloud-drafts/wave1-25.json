@@ -384,5 +384,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "109-1",
+    "answer": "Z省三个调出县脱颖而出，关键在于精准施策、因地制宜。P县聚焦产业项目，提前谋划、主动对接政策，推动重大产业项目落地；H县借力“一县一策”发展乡村旅游，打造特色品牌，提升文旅收入，并通过“上楼企业”模式破解土地瓶颈；L县瞄准大健康、半导体等新兴产业，实施链式招商，引才引智，强化人才支撑。三地均注重产业与民生融合，推动共富路径创新，实现经济指标领先且不“偏科”，体现了政策落地实效与区域发展协同性。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "c57b3f74d224a0da84112a3452538e8971a0099a8e0693a0ca8cdcfca09441d3",
+    "selected_material_sha256": "ca599a3b8b7120cbab2eec9b74b47f70cb663bfdac5d3a86ac79547651a7ff73",
+    "question_sha256": "3b9d9be4d4e14ba5b1d34f068fe8cee8a8df8dcf6c96850841a89169fc19defe",
+    "characters": 198,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 198,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 127,
+          "prompt_tokens": 1597,
+          "total_tokens": 1724,
+          "prompt_tokens_details": {
+            "cached_tokens": 576
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "120-1",
+    "answer": "Z街道推进政务服务标准化、规范化建设的五条举措：一是实行居民就近办理公共服务事项，优化服务布局；二是依托科技手段实现多屏联动，提升政务公开效率；三是设置资料架和流程图，提供清晰办事指引；四是统一梳理服务事项目录，推动“小事不出社区”；五是配备专业人员，落实首问负责、限时办结等制度。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "35eff819fd1e56cb62c71d86e68e4ee89f407cd52ebe3b09be04262f946c5cfd",
+    "selected_material_sha256": "de7b1c6637e6c4a9c1fa0c6c1fd27b6f7e830be9515eb4e445781f1bb641c4e8",
+    "question_sha256": "0acddeeba131d52aff72601902bb8529d0af1706925344cc47da825d3ed495e5",
+    "characters": 141,
+    "word_limits": [
+      35,
+      150
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 141,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 85,
+          "prompt_tokens": 988,
+          "total_tokens": 1073,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "132-4",
+    "answer": "关于T县“整村经营”工作情况的汇报\n\n市发改委调研组：\n\n为深入贯彻落实“绿水青山就是金山银山”理念，T县立足资源实际，积极探索农村生态资源整村运营路径，推动美丽乡村建设提质增效，现将主要做法和成效汇报如下：\n\n一是坚持因地制宜，实施“一村一策、一村一品”。结合村庄特色，科学规划发展路径。如东岩村聚焦户外旅游，打造山地摩托、滑翔伞等项目，形成“野天堂”品牌；锦里村引入房车露营、萌宠乐园等新业态，实现多元融合；塔坪村完成基础设施全面升级，提升整体承载能力。\n\n二是创新资源收储机制，激活农村闲置资产。成立康养生态和农业生态资源运营两家公司，系统摸清农村经营性、公益性及资源性资产，累计收储闲置农地13300余亩、农房235幢、林地1700余亩、山塘水库16座，吸引40个自然村、2429户农户参与，实现资源集约化管理。\n\n三是推动多元经营融合，拓展可持续发展路径。探索“非假日经济”，开展民宿“卫星办公”试点，引入科技企业常态化入住，提升日常运营效率；通过“村集体+农户+运营公司”三方持股模式（占比60%、20%、20%），实现收益共享，截至2022年9月，“行云居”项目村集体分红达18.5万元。同时，引入社会资本参与建设，如华美集团投资1300万元推进塔坪项目，预计年接待游客10万人次，带动周边300余户就业。\n\n四是强化顶层设计与规范管理。早在2016年即出台整村经营规划，明确统一建设格调、避免同质化发展，确保村庄风貌协调性与产业特色性，形成“故乡的原风景”“沉浸式康养”等10余个主题村落群。\n\n目前，T县已建成多个具有代表性的未来乡村样板，实现生态资源有效转化，获得“全国旅游百强县”称号。下一步，我县将持续深化整村经营机制，推动农创、文创、科创三创融合，提升县域发展能级。\n\nT县人民政府  \n2023年10月5日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "14f2a15ea1ddaf840170580d2228bea1d3f09c53684a1d2d916860686583f160",
+    "selected_material_sha256": "4d982210f99a1f13363e3a901c23a2cdd96c95013d19eece57cd12327d32fe8e",
+    "question_sha256": "c4184d2409818209eb2a13195fc599cc84ae68f1fc11c13fe8eca51ddab40b6b",
+    "characters": 748,
+    "word_limits": [
+      35,
+      800
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 748,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 502,
+          "prompt_tokens": 1972,
+          "total_tokens": 2474,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "146-4",
+    "answer": "尊敬的各位企业家、各位来宾：\n\n大家好！非常荣幸与大家相聚在这片充满希望的热土——S县。今天，我们在这里举办招商引资推介会，不仅是一次资源对接的盛会，更是一场产业协同、创新共进的宣言。\n\nS县地处山区，曾以采矿、水泥等传统产业为主，发展一度面临瓶颈。但近年来，我们坚持向产业链式发展要竞争力，走出了一条“资源—技术—产业”深度融合的新路子。目前，已形成金铜、半导体新材料、锂电新材料三大产业链，并正加快布局储能产业，产业基础日益坚实。\n\n我们深知，产业发展离不开创新支撑。过去五年，全县全社会研发投入强度达2.9%，拥有自主知识产权成果230项，建成省级以上科创平台28个，引进国家重大计划人才8人、省高层次人才127人，真正实现了从“跟跑”到“并跑”甚至“领跑”的转变。\n\n在招商上，我们坚持“选资为先”，摒弃“捡到篮子里都是菜”的旧观念，把技术实力、科技含量和附加值作为核心标准。无论是年产值仅1亿元的旭晶半导体公司，还是总投资超十亿元的新能源项目，我们都以专业眼光精准引进、重点服务。\n\n为此，我们设立了5亿元鼎发新材料产业投资基金，通过“政府引导+市场运作”方式，撬动风投资金超10亿元，成功支持尔德科技建成年产6000吨六氟磷酸锂项目，实现了技术突破与产能落地双丰收。\n\n同时，我们创新服务机制，推行“一次性梳理、清单式交办、并联式推进、专班式服务”，企业开办时间压缩至半个工作日，真正把营商环境建设成企业发展的“加速器”。\n\n下一步，我们将继续引进更多新能源汽车、储能电池、半导体等终端制造企业，推动产业链上下游深度融合，加快打造具有区域竞争力的产业集群。\n\n各位朋友，机遇属于有准备的人。S县，正以开放的姿态、创新的动能、务实的服务，诚邀各位企业家携手共进，共同书写高质量发展的新篇章！\n\n谢谢大家！",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "aa2e4b17c68bf99980471f139a0808437e680d7cea404525ecdf66027fe86377",
+    "selected_material_sha256": "904cf249f5e252d7081c5dbaec5e86c66ac2bc81577e9bbe68ba966dcf08eb8c",
+    "question_sha256": "a625a10d9e8bba5ee76d69f5127f175f287830df00a4e15106b41043a14bd029",
+    "characters": 739,
+    "word_limits": [
+      35,
+      800
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 739,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 444,
+          "prompt_tokens": 1714,
+          "total_tokens": 2158,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
