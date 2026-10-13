@@ -1,0 +1,182 @@
+[
+  {
+    "id": "019-2",
+    "answer": "应加强儿童智能手表功能监管，严禁设置诱导性语音提示、免密支付及过度绑定家长账户；严格审查第三方APP，下架违法不良信息和权限滥用应用，杜绝私自获取位置、通讯录等隐私信息；推动出台行业标准与自律公约，明确企业主体责任，提升产品质量与售后服务水平；强化学校、家庭协同管理，规范学生使用行为，限制课上使用及拍照搜答案等行为；建立多部门联动监管机制，联合教育、公安、消保等部门开展常态化巡查和风险预警，及时处置安全事件，切实保障儿童“腕上安全”。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cc07b505dd9266e25b7eb5304b82fe4a19f439bbf0ec463c0de932177e320bfb",
+    "selected_material_sha256": "869e3ff8b9a6add6eeacf4e28e44f6308162b37f26e789612eab14fad5bb420b",
+    "question_sha256": "0b28e0a0dfcdaeb91aa99d48489c831065564b8268a800d1dec6b201baf70cb3",
+    "characters": 219,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 219,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 126,
+          "prompt_tokens": 1583,
+          "total_tokens": 1709,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "032-3",
+    "answer": "履行好第一书记职责，必须坚持深入群众、了解实情，精准掌握社情民意。要从班子建设入手，选优配强“两委”班子，健全村级议事规则，破解“家长制”问题。聚焦发展需求，因地制宜谋划产业项目，推动集体经济壮大，实现村民增收致富。强化责任担当，主动对接资源，争取政策支持，提升基层治理能力。同时，坚持“六个精准到村到户”，因户施策，把扶贫与基层建设有机融合，真正把群众的急难愁盼解决好，让党群关系更加紧密，乡村振兴根基更牢。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "379154de70e44630d0931552fca13dd3d8111bc9a8cf0ccf61f44aa7af927ff4",
+    "selected_material_sha256": "1c580db3632696310dfda39fae2625d2a95ea0923c3055b32f4e4a6c3050c072",
+    "question_sha256": "1c6fd543c7b3c631876871f6bd3b1229446fc7246abc0877b57e2b9ed4a15d7e",
+    "characters": 205,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 205,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 130,
+          "prompt_tokens": 1947,
+          "total_tokens": 2077,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "042-1",
+    "answer": "K、M、N三市打造KMN都市圈的主要做法包括：一是构建高效交通网络，推进高铁和机场直联通道建设，形成“一小时通勤圈”；二是深化政务服务协同，实现公积金、医保、户籍等事项跨域通办和就医“一卡通”；三是推动产业协同发展，聚焦光电子信息等重点产业，实现主链在M市、配套在周边的布局；四是加强科技合作，共建离岸科创中心，推动高校院所与企业深度对接，促进成果转化；五是联合保护生态绿地，制定总体规划和保护条例，建设中央公园绿道，提升生态价值与居民生活质量。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4d99f12caf232365b6ba340917f8f8293f154814f534663dad03a72d057934a1",
+    "selected_material_sha256": "e3304906ff29ce56b5c1e12ad1a261bad00d01418141788652157b1bc0fa6a93",
+    "question_sha256": "74f3b744aaa4f674b05a2e53e96fc9729fc20df4c904665c1f4b196491f6e479",
+    "characters": 223,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 223,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 1769,
+          "total_tokens": 1908,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "051-4",
+    "answer": "电子社保卡便民又安全，现在申领超简单！只需通过支付宝、微信、政务服务APP或银行APP，点击“城市服务”“社保”入口，刷脸认证即可完成申领，整个过程不到一分钟，真正实现“一部手机走天下”。\n\n电子社保卡与实体社保卡一一对应，信息真实可靠，具备身份认证、缴费结算、业务办理等功能。您在药店购药时，只需出示手机二维码，即可直接扫码支付，无需携带实体卡，省时省心。像福州曾女士一样，现在买药不到十分钟，再也不用担心忘带卡而多花钱。\n\n目前，全国已有26个省份、230个城市发放电子社保卡，南宁、青岛、宁夏等地已实现“一码通城”——在公园、图书馆、博物馆等公共场所扫码出入；青岛市还推出了“电子时间银行”，为志愿者提供长期记录和互通服务，真正践行“记录一生、保障一生、服务一生”的承诺。\n\n更安全的是，电子社保卡采用人脸识别、密码验证、风险控制等技术手段，确保“是我办事”“是我查询”，杜绝信息泄露和冒用风险，真正做到“实人、实名、实卡”。\n\n今后，电子社保卡还将拓展至就医结算、权益查询、待遇认证等更多场景，逐步融入智慧城市、政务服务、金融服务体系。您无需再担心忘带卡，无论在家还是外出，手机一扫，服务随身。\n\n欢迎广大居民积极申领电子社保卡，让生活更便捷、更温暖！  \n——XX市人力资源和社会保障局  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "00edef35892ae0b4f5d3876b95c3a3debb1b46467f582e96ae52849f26bb0661",
+    "selected_material_sha256": "7b02e08a6623f4a489c4e31eb8028a3b0680a63c1b6e547741f2ca0ff1d77f84",
+    "question_sha256": "37abe64d63d73c28b03169436bb4b57664549848d8d5848604bdb0aca7ed465c",
+    "characters": 544,
+    "word_limits": [
+      500,
+      600
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 544,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 336,
+          "prompt_tokens": 1730,
+          "total_tokens": 2066,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
