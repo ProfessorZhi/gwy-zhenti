@@ -493,5 +493,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "151-1",
+    "answer": "A市立足化工产业基础，发挥副产氢资源优势，抢抓氢能发展窗口期，制定产业发展规划，出台扶持政策，推动氢能产业落地。通过成立产业发展平台公司、组建氢能母基金和培育基金，强化资金支持。建设氢能产业园，推进“氢能科技园”一期建设，打造全产业链布局。深化产业链协同，推动企业间氢气管道输送与综合利用，实现延链强链。联合高校共建氢能安全和运用研究中心，开展关键技术攻关。围绕核心产业链招引“八大零部件”关键项目，培育加氢、储氢、运氢等配套企业，构建以电堆为核心的氢能产业链体系，助力经济高质量发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d7498526285cb30d3bcf477857c5a91914365eff0ee377c5654f7b152982d74e",
+    "selected_material_sha256": "e460179c0919c1717fc15c02849c0decd152fc8446cda771dd987859792577d1",
+    "question_sha256": "1622f4deaeefe4d6f96580fb98e33998c3cfb9f552be339470805e6aa58698d6",
+    "characters": 243,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 243,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 139,
+          "prompt_tokens": 1617,
+          "total_tokens": 1756,
+          "prompt_tokens_details": {
+            "cached_tokens": 582
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "160-2",
+    "answer": "“小区给业主发红包，看似简单，实际上不是那么容易实现的”体现了治理背后的复杂性。首先，需建立透明机制，公开收入来源、支出明细和账户余额，杜绝“糊涂账”。其次，业委会成员专业能力不足，需通过培训和外部支持提升财务与法律素养。资金使用须科学规划，既合理分红，又保留应急和持续发展资金。多方参与议事、全过程公示接受监督，保障决策公正与透明。业主缴费习惯与公共收益管理相辅相成，形成良性循环。因此，发红包不仅是财务行为，更是制度建设、专业支撑和社区共识的综合体现，涉及治理能力、流程规范与信任构建，远非表面简单。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4be71f92b093b87359d7b71f7da99489b74701cd8e81efe474911752de4c6200",
+    "selected_material_sha256": "1abaf3a68c215a3e62a9cd8eb0beeff9f48da6f18c4d6668302fef5708867d42",
+    "question_sha256": "81442bc48f1f86f740ffbdc08d9a79897bc72374f36b56c38aa0222e49911ad1",
+    "characters": 252,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 312,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 188,
+          "prompt_tokens": 1823,
+          "total_tokens": 2011,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 252,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 151,
+          "prompt_tokens": 2097,
+          "total_tokens": 2248,
+          "prompt_tokens_details": {
+            "cached_tokens": 2010
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "169-3",
+    "answer": "C省发展入境旅游取得的主要成绩：依托区位优势和免签政策，入境市场呈现强劲发展态势；开通河内、曼谷等14条国际航线，提升国际可达性；优化机场服务流程，提供多语言支持，增强游客体验；加强口岸通关管理，保障客流安全通畅。\n\n存在的问题：旅游产品同质化严重，缺乏对城市IP和非遗文化的深度挖掘；交通产品不足，铁路沿线“慢游”服务体系缺失，高峰期车票紧张；边检设施智能化水平低，高峰期排队时间长；缺少海外游客服务中心，服务功能单一；消费支付不便，外币兑换点少、外卡受理商户少，跨境移动支付未实现互通。\n\n对策建议：应深化产品创新，开发沉浸式文化体验线路，融入本地生活与非遗元素；完善交通配套，建立旅游客流预测机制，实现铁路部门与旅行社、边检信息共享，动态增开临时列车；加快边检智能设施推广，设置潮汐通道，缩短排队时间；在重点口岸设立海外游客服务中心，提供一站式服务；推动银行网点和商户拓展外币兑换及外卡受理服务，实现跨境支付互联互通。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "5332519716910535a790d2270ace63f6d3c97576f80e5cefe57c7f18098e0645",
+    "selected_material_sha256": "ec50834a47e9459285ca56156d5da15f63c53a890facd83944c2cb65afac6687",
+    "question_sha256": "a10c74c2efb0fa10ecf5d1b78f608cc9bbc4934315861afcf6569a36e3469b09",
+    "characters": 408,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 408,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 247,
+          "prompt_tokens": 1729,
+          "total_tokens": 1976,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "181-1",
+    "answer": "改革开放以来，赵家村实现了从温饱到小康的转变。村民生活由“吃糠叶饭”到吃上白面、肉食，再到拥有冰箱、汽车等家电；住房条件改善，窑洞整齐如小区；农业结构优化，从种粮转向苹果种植，收入显著提升；基础设施完善，自来水、网络、班车全覆盖；精神文化生活丰富，图书室、广场活动、外出旅游兴起，村民获得感持续增强。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "dbaa8351762eb1711459db70da86907d09b2ae45e19dab47ffaacf4f096d122a",
+    "selected_material_sha256": "794ec35f81f5427c1b32594e13abffbbb2f3fec51afe7e491f279bfa9fbe8080",
+    "question_sha256": "8e68d4f3175d923c3b87fe241f54e99e61b375c81608f03eb083f9276a2e8947",
+    "characters": 150,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 150,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 97,
+          "prompt_tokens": 1767,
+          "total_tokens": 1864,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
