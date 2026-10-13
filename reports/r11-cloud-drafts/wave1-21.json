@@ -358,5 +358,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "106-2",
+    "answer": "“让温暖传递到更多角落”意味着社区关怀从政府供给向居民参与转变，通过阳光基金平台，将居民真实需求转化为可落地的公益项目，实现资源精准匹配。它体现的是温暖的双向流动：一方面，基金支持特殊群体帮扶、青少年心理、养老服务等项目，切实改善弱势群体生活；另一方面，居民以点子、捐款、志愿服务参与其中，成为社区治理的共建者和受益者。项目由居民提出、社会力量参与、专业团队实施，形成“需求—响应—反馈”闭环，使温暖不仅惠及个体，更在社区中不断扩散与延续。这不仅是物质援助的传递，更是责任共担、情感联结与互助精神的传播，真正实现了社区温度的可感、可见和可持续。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0dfaad140b4c1735728ddd2a103b49f70dc32a612f59c91921902b5475791bb0",
+    "selected_material_sha256": "4cb601e6b83edd7ec700ecf2cc5f8e2002aeb646e4b0fa3c9e315201df78376b",
+    "question_sha256": "1fd68713544ca1b927bda47ad6d34c79e148cea85c593d1a4a8d99c282e20412",
+    "characters": 272,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 272,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 164,
+          "prompt_tokens": 1694,
+          "total_tokens": 1858,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "119-1",
+    "answer": "一、小区老年人就餐需求调查：年龄结构、用餐频次、饮食偏好及现有就餐方式。  \n二、社区资源现状评估：可利用场地、建筑面积、基础设施条件及改造成本。  \n三、资金保障可行性：政府补贴额度、运营经费来源、社会力量参与可能性及成本测算。  \n四、服务模式设计：餐品结构、价格设定、送餐覆盖范围、服务时间安排。  \n五、居民意见与接受度：通过问卷或座谈了解居民对食堂设立的意愿和具体诉求。  \n六、政策与管理机制：是否符合现行养老政策，审批流程及后续监管要求。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8acbf18e933d6e4a080fef68efe015fab553394fbcc4446b54bf309f33d2bd61",
+    "selected_material_sha256": "b8f81be7d549214a9dd5685047b020c2983311cb51a9dfe9fdd541af2b183395",
+    "question_sha256": "3715732057086b7e2e0243df77ce91c6da04399d61f7a7ea05e196a1be42617c",
+    "characters": 211,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 211,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 134,
+          "prompt_tokens": 1027,
+          "total_tokens": 1161,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "131-1",
+    "answer": "古道不仅是历史的见证，更是乡村发展的纽带。通过系统修复与规划，古道串联起自然景观、人文遗迹与村落资源，实现文化与旅游深度融合。依托古道发展民宿、拓展基地、实景演出和特色农产品，既激活了沉睡的乡村经济，又传承了地方文化。如花茂村以“五古”为基，打造品牌IP，带动村民增收致富；天茂公司通过运营创新，实现文化活化与产业转化。古道由此成为连接生态、人文与经济的重要载体，推动沿线城镇乡村走向可持续发展，真正成为迈向未来的动力源泉。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "574630cb8cedc18d5ff56c56ef41dc4caee84377f7325d92e1ee7b6d82f94f42",
+    "selected_material_sha256": "84b079a29fb8d95114f6b2a93f3a4307eb43ec8dc4ff622c2a6242da2e0753d4",
+    "question_sha256": "22ae30bf136defa68517136be43a4f02947af798b34fd880b9542326465c6b2e",
+    "characters": 212,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 212,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 132,
+          "prompt_tokens": 1769,
+          "total_tokens": 1901,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
