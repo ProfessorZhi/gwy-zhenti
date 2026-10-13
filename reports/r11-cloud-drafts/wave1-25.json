@@ -191,5 +191,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "064-1",
+    "answer": "L县山核桃产业发展存在品质参差、品牌分散、生态破坏、经营粗放等问题。解决措施：制定并实施“天目”系列高标准，严控授权企业产品质量，强化市场监管；推动企业规模化、数字化转型，提升生产效益与产品竞争力；推进“退果还林”生态修复，推广自然落果与生态经营，改善山核桃品质；建设政府主导、市场化运营的脱蒲中心，实现脱蒲、晒干、存储一体化服务，保障产品品质与安全；鼓励品牌企业成长，带动产业链协同升级，提升整体产业价值。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3eccce50351d26d404233c7ca3a90e9146ce387c6476754c537a955f2c4105f6",
+    "selected_material_sha256": "926bb42677163a7123bcaf4dbca1f80202791f10d0a2a3d87e87c2d1e0f7c228",
+    "question_sha256": "fa2e9df4b15c97c51552af5f783ec52b1ed4d8d7c786a6875748846e6f44b6bf",
+    "characters": 204,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 204,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 124,
+          "prompt_tokens": 1690,
+          "total_tokens": 1814,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "076-2",
+    "answer": "发言提纲：  \n一、坚持群众主体，精准对接民生需求，通过居民议事会收集诉求，形成可操作的项目清单。  \n二、健全协商机制，实行“征集—筛选—讨论—投票”闭环流程，保障程序公开透明，增强居民信任。  \n三、分类配备议事员，既吸纳威望高、公道的居民，又引入专业人才担任特别议事员，提升决策科学性与可行性。  \n四、推动线上线下融合，扩大青年群体参与，实现民意广泛收集与高效表达。  \n五、强化结果落地，建立项目公示与跟踪机制，确保民生实事办到群众心坎上，真正实现“议而能决、商而能行”。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cee1b574a891dc7c3eed3f080a04099aa66e28677ba03ff206c49d9b7c272556",
+    "selected_material_sha256": "b3000c0119515311a2bce4f85e0a31398e5ed58b47c120102fcdbc36b005cb34",
+    "question_sha256": "3358da172fb1d58e85a44256512e1a7119b9e46a93efe97a451dd0d9ab45ce25",
+    "characters": 226,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 226,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 152,
+          "prompt_tokens": 1764,
+          "total_tokens": 1916,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "085-4",
+    "answer": "**微光成炬：平凡中的集体觉醒**\n\n“微光虽微，但可不断点燃火种；火种汇聚，终成烈焰之势。”这不仅是对个体行动力量的生动写照，更是对社会进步深层逻辑的深刻揭示。在现实生活中，每一个看似微不足道的努力，都可能成为推动变革的起点。李姐在村中超市设立“微光书苑”，起初只是几本书、一个角落，却因坚持与耐心，逐渐激发了村民的阅读兴趣，带动起整个村庄的文化自觉。这种从个体出发、由点及面的传播过程，正是“微光”转化为“烈焰”的真实路径。\n\n微光之所以能点燃火种，关键在于其内在的持续性和可复制性。李姐没有依赖政府或大型机构的资源，而是以自身热爱为起点，自掏腰包购书、设架、鼓励借阅，用行动传递文化价值。她深知，真正的改变不在于轰轰烈烈的口号，而在于日常中一点一滴的坚持。当一个村民因读到一本好书而开始思考人生，当一位老人主动分享自己的医学书籍时，便意味着新的火种被点燃——这正是文化自觉从个体走向群体的开端。\n\n更进一步，“火种汇聚”并非偶然现象，而是制度设计、社会支持与群众参与共同作用的结果。微光书苑在发展过程中，不仅吸引了公益组织、爱心人士和志愿者加入，还通过建立基层阅读志愿服务团队、拓展服务场景（如旅店、幼儿园）等方式实现了资源的共享与扩散。这种“众力成势”的模式，使原本分散的个体行动形成了网络化、系统化的文化支持体系。正如一位教授所言：“一座图书馆里的学校比一个学校里的图书馆更重要。”这说明，真正的教育不是单向的知识灌输，而是通过环境营造激发人的内在动力。\n\n从社会发展的角度看，“微光与烈焰”的关系也启示我们：基层治理与社会进步，往往始于个体的自觉行动。无论是香江小区业主杨华建立微信群推动物业改革，还是古城派出所民警杨副所长通过“客栈群”实现精准服务，抑或是小冯一家在搬迁后通过技能培训实现自我造血，这些看似微小的努力，都在特定情境下产生了连锁反应。它们打破了传统治理中“自上而下”的僵化模式，转而构建起以群众需求为导向、以信任为基础的互动机制。这种“微光”式的参与，最终汇聚成推动社会公平与民生改善的“烈焰”。\n\n值得注意的是，“微光”并非被动等待被点燃，而是主动传播、持续创造的过程。李姐坚持读书写诗，不因无人问津而放弃；杨华在业主群中反复沟通，不因阻力重重而退缩；小冯面对困境仍选择报名学习厨艺——这些都说明，真正的社会变革，始于个体对价值的坚守。这种坚守不是盲目的固执，而是基于对现实问题的深刻理解与对未来的理性期待。\n\n因此，“微光成炬”不仅是文化现象，更是社会治理现代化的重要启示。在当前推进乡村振兴、基层治理创新和共同富裕的过程中，我们更需要鼓励和支持那些“不声不响却始终前行”的普通人。政策制定者应为微光提供土壤——通过制度保障、资源倾斜和平台搭建，让每一个微小的善意都能被看见、被放大；社会大众也应增强对“平凡力量”的尊重与信任，形成“人人可发光、处处有火种”的良性生态。\n\n从“微光”到“烈焰”，是一场由内而外的文化觉醒，更是一次从个体自觉走向集体行动的伟大跃迁。只要我们始终相信平凡中的力量，坚持行动、彼此照亮，那束微光终将汇成燎原之势，照亮每一个角落，温暖每一颗心灵。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3f8fabd9f9a56e1c44887ac54009d6e81e81680e07fb4bf1c2545a9a12d91391",
+    "selected_material_sha256": "663eb51bfff94592b3df2ba57bc67b4d5410d9095eee8e101f24649cb4dfcc44",
+    "question_sha256": "50ebd4b354529acf422afd324a72c82cf73f7a7086b388e0d39e4f8228e498ae",
+    "characters": 1284,
+    "word_limits": [
+      1000,
+      1300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1373,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 875,
+          "prompt_tokens": 4502,
+          "total_tokens": 5377,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1284,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 814,
+          "prompt_tokens": 5500,
+          "total_tokens": 6314,
+          "prompt_tokens_details": {
+            "cached_tokens": 5376
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "095-1",
+    "answer": "“不变等死，变则找死”揭示了当前制造业发展中的两难困境：若固守传统模式，将因成本上升、技术落后、渠道被颠覆而丧失竞争力；若急于转型，又面临技术封锁、市场认知不足、资金投入大等风险。企业既难以维持原有优势，又缺乏清晰可行的转型路径。这反映出中国制造从“量”到“质”的跃迁过程中，存在技术短板、创新乏力与体制机制滞后等问题。唯有突破路径依赖，加强核心技术攻关，推动智能制造与产业链协同升级，才能在变革中实现可持续发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "5a5384791d2f6f062aaa1d6b7564056558eab6f6423ee8b6c255e12926a03620",
+    "selected_material_sha256": "84b24ecc1d5e2aa58a3c80488178ee89585c2c81be7bf996524517bdc14e617d",
+    "question_sha256": "8409f7e10333dd01323d25b4587ac3317c1671f60182ad718651715ea20b6a63",
+    "characters": 207,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 207,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 126,
+          "prompt_tokens": 1195,
+          "total_tokens": 1321,
+          "prompt_tokens_details": {
+            "cached_tokens": 576
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
