@@ -358,5 +358,198 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "107-1",
+    "answer": "J市推进诉源治理通过多元协同机制实现矛盾源头化解。依托“娘家人”平台，调解外来务工人员与居民生活冲突；设立行政争议调处中心，提升行政机关与群众沟通效率，推动行政案件协调和解；开展检察公开听证，特别是简易和上门听证，面对面释法说理，有效化解信访心结；建立联合调解机制，解决企业拖欠工资等纠纷，实现快速处置；探索“种子法庭”模式，引入专家型人民陪审员，提升涉种纠纷专业化、高效化处理水平。上述举措坚持源头预防、非诉挺前，将法治力量延伸至基层，形成多方参与、协同联动的诉源治理新格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3bd0d3f679c4f6f69c0664c30c80622f75edaf3f2359deac99aa1efabce19e40",
+    "selected_material_sha256": "1801977fad7df041fefe66ee1fb50dd330de7ba20c7d40a09dd79b15e34332c0",
+    "question_sha256": "bdca3515b2b103fa9e27559be10cd1b058effbd3893cc8c063ee6972af61dbd0",
+    "characters": 239,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 239,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 150,
+          "prompt_tokens": 1659,
+          "total_tokens": 1809,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "119-2",
+    "answer": "“各吹各的号”反映职责不清、协同缺位；“救火队”体现重应对轻预防；“一刀切”“齐步走”暴露缺乏精准施策；“眉毛胡子一把抓”“头痛医头”说明治理碎片化、系统性不足。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8acbf18e933d6e4a080fef68efe015fab553394fbcc4446b54bf309f33d2bd61",
+    "selected_material_sha256": "6c95d0630b3306e4d1e6ed62a2fc6c29e3ebbd268e2a3a7fe3279b0ba4db17ff",
+    "question_sha256": "24f7d5c90e1f4f0000f0b166be9631010e3f06be2c20412f316320ed1057a035",
+    "characters": 81,
+    "word_limits": [
+      35,
+      100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 101,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 76,
+          "prompt_tokens": 937,
+          "total_tokens": 1013,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 81,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 61,
+          "prompt_tokens": 1098,
+          "total_tokens": 1159,
+          "prompt_tokens_details": {
+            "cached_tokens": 1012
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "132-1",
+    "answer": "曾林社区通过“党建+”邻里中心建设实现“近邻”“聚邻”“惠邻”。在“近邻”方面，推动党小组建在网格上，党员沉入网格，设立党员中心户和楼栋长，形成“党组织—网格—群众”穿透式服务网络，提升响应效率。在“聚邻”方面，建设居家养老、儿童之家、社区食堂等功能区，引入专业机构运营，并通过“邻里会事厅”“留言板”等平台搭建议事协商机制，促进居民互动。在“惠邻”方面，整合卫生健康服务资源，实现“家门口看病”，配备便民自助机和预约热线，提供一站式便民服务，提升群众获得感与幸福感。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "14f2a15ea1ddaf840170580d2228bea1d3f09c53684a1d2d916860686583f160",
+    "selected_material_sha256": "3e1203ccde1cab77b9e7f7b8badab32f3327fc6fa9cb5fe6bb1624a67bbe8b11",
+    "question_sha256": "7e44228c2394e833548e9e338e0e3aef0e5d0aded1f7873bfcb5636eb2053605",
+    "characters": 234,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 234,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 152,
+          "prompt_tokens": 1475,
+          "total_tokens": 1627,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "145-2",
+    "answer": "古道已成为沿途村镇迈向未来的新动力，体现在三方面：一是作为文化纽带，串联名山、古镇、古村，推动区域联动发展；二是激发产业活力，如汝溪乡由“徒步天堂”转向“动感汝溪”，发展徒步、漂流等业态，实现从静态到动态的转变；三是激活本地资源，花茂村依托“五古”特色，开发乌米系列产品，带动农产品销售和村民增收。古道修复不仅保护了历史风貌，更通过系统规划与产业融合，将自然景观、人文遗产转化为可发展、可持续的经济动能，成为乡村振兴的重要载体，真正实现了从“历史遗迹”到“发展引擎”的转变。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b28a19a5018c38550423aeab2aad7dcd5c3a73c1502de1fa75ce6b04e0afe24d",
+    "selected_material_sha256": "38198b9b4da810ff4579b129a20022929134f40427a9a41db5f3be7ac21bbd26",
+    "question_sha256": "7ea6bb9065a2f5ea3468d519467ddacbcf149634565f405744a139049660223f",
+    "characters": 237,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 237,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 147,
+          "prompt_tokens": 1927,
+          "total_tokens": 2074,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
