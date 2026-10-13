@@ -384,5 +384,147 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "101-2",
+    "answer": "M县小型农田水利设施现状及问题汇报  \n\nM县现有水域及水利设施用地超5200公顷，其中坑塘76公顷、沟渠超46公顷，但设施分布不清、管理缺失严重。长期以来，农田水利建设重灌溉轻排涝，尤其在设施农业如大棚种植中，未统筹排水设计，导致暴雨时易发生积水灾害。部分方塘、水井废弃多年，泵房无人维护，河道淤积严重，排水能力不足。  \n\n2018-2019年“小农水”管理职能划转至农业部门，但资料未同步整合，基础信息缺失，且缺乏统一的设施台账和使用数据。建成后的设施归属、产权、管理责任不明确，导致村集体与农户维护积极性低。历史遗留问题突出，如部分坑塘被改作驾校道路，因非法占用遭通报；另有水井闲置多年，周边垃圾堆积，功能丧失。  \n\n当前，高标准农田及大型灌区管理规范，但温室大棚等设施农业多依赖农户自管，投入产出效益低，排涝意识薄弱。部分排水沟被填平或种植作物，进一步削弱了排水能力。  \n\n建议：一是建立全县小型农田水利设施台账，明确产权归属与管理责任；二是推动涉农部门资金整合，优先支持设施农业排涝能力建设；三是加强农民技术培训和价值宣传，提升其维护意识；四是探索由村集体统一管理和运营模式，形成可持续管护机制。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "973992e9898aa7b9c8cf3c032438a2f30a878cb237535b540ecb172e824ce245",
+    "selected_material_sha256": "a839feead64c291b19e709cb38ab662130a7d730f292d610c0ec3de9de0aef67",
+    "question_sha256": "a3b2e135468fc5b9d5c3eadb63037063681563d3cadac3009638a65d6862cf36",
+    "characters": 490,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 490,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 323,
+          "prompt_tokens": 2057,
+          "total_tokens": 2380,
+          "prompt_tokens_details": {
+            "cached_tokens": 582
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "112-3",
+    "answer": "**科技赋能：移动互联驱动政府治理现代化**\n\n在信息社会加速演进的背景下，移动互联正深刻重塑政府治理的逻辑与路径。从“指尖办事”到“网络问政”，技术不仅提升了服务效率，更推动政府治理由“单向管理”转向“双向互动”。深圳通过建设一体化政务服务平台，实现社保、户籍、出行等事项“一网通办、一次登录”，群众不再需辗转多个部门，真正实现了政务服务的便捷化与高效化。这表明，移动互联已从技术工具演变为优化公共服务流程的核心引擎。\n\n治理创新的根本在于回应民情民意。材料四中深圳某区“书记信箱”三年收信4600余封，累计手写签批超5万字，涵盖从下水道堵塞到城区发展建议的各类问题，体现了政府通过网络渠道深入基层、贴近群众的实践探索。群众反映的琐碎问题被及时响应，说明移动互联打破了传统治理“信息孤岛”，使民意能够真实、及时地传递至决策层，推动政府从“被动应对”走向“主动感知”。\n\n技术应用必须与责任机制同步推进。材料五中H省商务局局长因网站长期不更新被问责，A市地铁电缆问题暴露监管失职，反映出部分单位存在“重建设、轻运维”“重形式、轻实效”的倾向。这警示我们：移动互联的落地不仅依赖平台功能，更需建立常态化维护、动态评估与责任追究机制，确保信息可查、服务可溯、回应及时，避免“建而不用”“用而不实”。\n\n在公共服务场景中，技术正实现从“便利生活”到“风险防控”的升级。深圳交警通过智能过街系统和人脸识别执法，有效遏制“中国式过马路”与逃避处罚行为，既提升了执法精准度，也增强了公众安全感；“深圳供电”微信缴费功能仅需两步即可完成，还附带提醒，极大提升居民体验。这些实践表明，移动互联不仅优化流程，更在关键环节实现风险预警与主动干预。\n\n治理现代化要求多元主体协同参与。材料十五指出，政府不再是唯一的服务提供者，公民、社会组织与平台共同构成“网络状治理体系”。S市在网约车管理中邀请市民代表参与意见征集，针对疲劳驾驶、发票规范等提出建议，体现了对公众参与权的尊重。这种开放式的共治模式，使政策更具包容性、适应性和合法性，也增强了社会对治理过程的信任。\n\n唯有坚持技术赋能与责任落实并重、服务效率与群众感受并行，移动互联才能真正成为推动政府治理创新的核心动力。未来，应进一步完善数据共享机制、健全舆情响应流程、强化平台运维责任，让每一项技术应用都服务于民生改善与社会公平，使数字政府真正成为人民满意、值得信赖的“掌心之政”。通过制度设计与实践迭代双轮驱动，移动互联将不仅改变服务方式，更重塑政府与公众之间的信任关系，推动治理能力迈向更高水平。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0a226243b4d50b145a64d4f815ef13ea69def062c0b274ced9e8115c24d08edd",
+    "selected_material_sha256": "5ce13d35f800535cf7025e5aba41748e4bb960016e16bdca311cb2019137c676",
+    "question_sha256": "a51ed5460f409297ba364b8bbfbb835a6cf976472a28ae2624771d365650a82a",
+    "characters": 1050,
+    "word_limits": [
+      900,
+      1100
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1080,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 655,
+          "prompt_tokens": 4011,
+          "total_tokens": 4666,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1154,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 700,
+          "prompt_tokens": 4774,
+          "total_tokens": 5474,
+          "prompt_tokens_details": {
+            "cached_tokens": 4086
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 1159,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 702,
+          "prompt_tokens": 4832,
+          "total_tokens": 5534,
+          "prompt_tokens_details": {
+            "cached_tokens": 4012
+          }
+        }
+      },
+      {
+        "iteration": 4,
+        "characters": 1002,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 612,
+          "prompt_tokens": 4834,
+          "total_tokens": 5446,
+          "prompt_tokens_details": {
+            "cached_tokens": 4143
+          }
+        }
+      },
+      {
+        "iteration": 5,
+        "characters": 1050,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 637,
+          "prompt_tokens": 4730,
+          "total_tokens": 5367,
+          "prompt_tokens_details": {
+            "cached_tokens": 4534
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
