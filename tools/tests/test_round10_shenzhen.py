@@ -98,7 +98,16 @@ class Round10ShenzhenReferences(unittest.TestCase):
             self.assertEqual(len((ROOT / path).read_bytes()), row["bytes"])
 
     def test_global_reference_coverage_is_actual(self):
-        rows, bad, _, counts = audit()
+        if (ROOT / "reports/SOURCED-SUPPLEMENT-20261013.jsonl").exists():
+            import tempfile
+            from unittest.mock import patch
+            from verify_sourced_supplement_20261013 import historical_snapshot
+            with tempfile.TemporaryDirectory(prefix="r10-before-source-") as tmp:
+                historical_snapshot(ROOT, Path(tmp))
+                with patch("r7_reference_audit.ROOT", Path(tmp)):
+                    rows, bad, _, counts = audit()
+        else:
+            rows, bad, _, counts = audit()
         remaining = sum(n for key, n in counts.items() if key.endswith("/待补"))
         self.assertEqual(729, len(rows))
         self.assertEqual(9, len(bad))
