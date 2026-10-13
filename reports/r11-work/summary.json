@@ -1,0 +1,49 @@
+{
+  "baseline": "f0649b5c134a78bc9c5ffb38c6a8b719c369f268",
+  "papers": 190,
+  "answer_positions": 568,
+  "unique_exact_tasks": 568,
+  "duplicate_positions": 0,
+  "kinds": {
+    "小题参考作答": 453,
+    "作文范文": 115
+  },
+  "unparsed": [
+    {
+      "path": "省考/广东/2016/申论-广州市考.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-单考区.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-双考区.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广西/2018/申论-A类.md",
+      "reason": "No unambiguous explicit task sequence"
+    },
+    {
+      "path": "省考/广西/2025/申论-B类.md",
+      "reason": "Missing explicit requirements"
+    },
+    {
+      "path": "省考/陕西/2024/申论-B类.md",
+      "reason": "Missing explicit requirements"
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-统考.md",
+      "reason": "No unambiguous explicit task sequence"
+    }
+  ]
+}

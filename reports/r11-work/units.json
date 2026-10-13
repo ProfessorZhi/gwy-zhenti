@@ -1,0 +1,3040 @@
+[
+  {
+    "unit": "001",
+    "path": "省考/上海/2017/申论-行政执法卷.md",
+    "baseline_sha256": "32c84ca21716a8246d0ec26474f954c23a96ba5732a4c3c30b3d83d91ba474c9",
+    "identity": [
+      "上海",
+      "2017"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "2017年上海市公考《申论》题（行政执法卷）（网友回忆版） · tiku.db papers.id=4852633 + materials.db"
+  },
+  {
+    "unit": "002",
+    "path": "省考/上海/2020/申论-行政执法卷.md",
+    "baseline_sha256": "b4c074bece04bc4c3a26d28a3b813d5d32dc330a9dfda8cbcc42d4615123f054",
+    "identity": [
+      "上海",
+      "2020"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_上海_2020_行政执法卷 · 粉笔会员采(v6) 2020年上海市公考《申论》题（行政执法卷）（网友回忆版）"
+  },
+  {
+    "unit": "003",
+    "path": "省考/云南/2022/申论-县乡卷.md",
+    "baseline_sha256": "19770dcb9ecf7bcc3623b0660949c62fb657e2223066ce0ccfa24e94c2831386",
+    "identity": [
+      "云南",
+      "2022"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "SGHCN0762/civil-provice-exam-shenlun · 2022年0709云南公务员考试申论真题及答案（县乡卷）.pdf"
+  },
+  {
+    "unit": "004",
+    "path": "省考/云南/2022/申论-省市卷.md",
+    "baseline_sha256": "ad9c80377e21ab70d1be2d675ce589eec122e68a093ef5855604c31e196335ee",
+    "identity": [
+      "云南",
+      "2022"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "SGHCN0762/civil-provice-exam-shenlun · 2022年0709云南公务员考试申论真题及答案（省市卷）u.pdf"
+  },
+  {
+    "unit": "005",
+    "path": "省考/云南/2023/申论-县乡卷.md",
+    "baseline_sha256": "60543f27760726c10eac7bf3b5ce783ea7c822b95d22a6377adbedea811f068d",
+    "identity": [
+      "云南",
+      "2023"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_云南_2023_云南县乡卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（云南县乡卷）"
+  },
+  {
+    "unit": "006",
+    "path": "省考/云南/2023/申论-省州市卷.md",
+    "baseline_sha256": "acf383ceda2ad89b17608d5a68411a54522e038cec2bc9d003defee81c99c7a5",
+    "identity": [
+      "云南",
+      "2023"
+    ],
+    "variant": "省州市卷",
+    "missing_numbers": [
+      1,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_云南_2023_云南省州市卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（云南省州市卷）"
+  },
+  {
+    "unit": "007",
+    "path": "省考/云南/2024/申论-县乡卷.md",
+    "baseline_sha256": "b8faeaa778bf2ed6d6cea40e9e86b62945fc20116c168db43e33d039bd80e32f",
+    "identity": [
+      "云南",
+      "2024"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2227 · SRNZ-866 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/866 · content v1.3.6"
+  },
+  {
+    "unit": "008",
+    "path": "省考/云南/2025/申论-县乡卷.md",
+    "baseline_sha256": "fd4b2491a4365a6d4a1373d0f542deda0606df549071093317260be75451b926",
+    "identity": [
+      "云南",
+      "2025"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=1402 · SRNZ-867 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/867 · content v1.3.6"
+  },
+  {
+    "unit": "009",
+    "path": "省考/内蒙古/2021/申论-乡镇.md",
+    "baseline_sha256": "16391ef61814f8d2fe06e8c11c44b62fd0da66be2d97a6f6bd8cc4554d8c22e0",
+    "identity": [
+      "内蒙古",
+      "2021"
+    ],
+    "variant": "乡镇",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "shenlunhome.com tid=732 crawled_at=2026-05-29T08:15:51"
+  },
+  {
+    "unit": "010",
+    "path": "省考/内蒙古/2022/申论-盟市.md",
+    "baseline_sha256": "448861b21b87a49f2bfcc9d55888574272b8a82a071c04b004652612e722197b",
+    "identity": [
+      "内蒙古",
+      "2022"
+    ],
+    "variant": "盟市",
+    "missing_numbers": [
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=782 crawled_at=2026-05-29T08:15:52"
+  },
+  {
+    "unit": "011",
+    "path": "省考/内蒙古/2023/申论-旗县.md",
+    "baseline_sha256": "d40ae70499237c2c3b93d0c87b9220a6b69ae7e1b3159148560974d83f33535e",
+    "identity": [
+      "内蒙古",
+      "2023"
+    ],
+    "variant": "旗县",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=829 crawled_at=2026-05-29T08:15:43"
+  },
+  {
+    "unit": "012",
+    "path": "省考/内蒙古/2024/申论-旗县卷.md",
+    "baseline_sha256": "a25469a696494642b43e84e4271669fe27377df3737ca725bcf0bb341cb94b65",
+    "identity": [
+      "内蒙古",
+      "2024"
+    ],
+    "variant": "旗县卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_内蒙古_2024_内蒙古旗县卷 · 粉笔会员采(v6) 2024年公务员多省联考《申论》题（内蒙古旗县卷）"
+  },
+  {
+    "unit": "013",
+    "path": "省考/内蒙古/2024/申论-盟市卷.md",
+    "baseline_sha256": "7da1c84b6aac534f9805be950bf161a4232684c0c2db5b89d3fd251b5f654e87",
+    "identity": [
+      "内蒙古",
+      "2024"
+    ],
+    "variant": "盟市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_内蒙古_2024_内蒙古盟市卷 · 粉笔会员采(v6) 2024年公务员多省联考《申论》题（内蒙古盟市卷）"
+  },
+  {
+    "unit": "014",
+    "path": "省考/吉林/2018/申论-甲级.md",
+    "baseline_sha256": "8221f31c143459267b063a4fa881302788dd3b0e6adf469017ce5e40ece30896",
+    "identity": [
+      "吉林",
+      "2018"
+    ],
+    "variant": "甲级",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=453 crawled_at=2026-05-29T08:26:39"
+  },
+  {
+    "unit": "015",
+    "path": "省考/吉林/2023/申论-丙卷.md",
+    "baseline_sha256": "be4db7ff05c3e97cc5369cb6411bec0c3c73cef32569dc1405896771ee7b76d6",
+    "identity": [
+      "吉林",
+      "2023"
+    ],
+    "variant": "丙卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=831 crawled_at=2026-05-29T08:26:22"
+  },
+  {
+    "unit": "016",
+    "path": "省考/吉林/2023/申论-乙级.md",
+    "baseline_sha256": "9451c019158affb6c8df7b663af0f6be35327e98aede0858c92129b0c05723d9",
+    "identity": [
+      "吉林",
+      "2023"
+    ],
+    "variant": "乙级",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=830 crawled_at=2026-05-29T08:26:44"
+  },
+  {
+    "unit": "017",
+    "path": "省考/吉林/2023/申论-甲卷.md",
+    "baseline_sha256": "caaffa5dd692357a782b3c6e09d45afdbd1fa02ccebc1873d7f5e84d4447fb23",
+    "identity": [
+      "吉林",
+      "2023"
+    ],
+    "variant": "甲卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_吉林_2023_吉林甲卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（吉林甲卷）"
+  },
+  {
+    "unit": "018",
+    "path": "省考/四川/2016/申论-下半年.md",
+    "baseline_sha256": "3e86a37563248bcf47b06aa54da54f4b8896d7936059eaf149166bc6e81081d7",
+    "identity": [
+      "四川",
+      "2016"
+    ],
+    "variant": "下半年",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "2016年四川省公考《申论》题（下半年） · tiku.db papers.id=77070 + materials.db"
+  },
+  {
+    "unit": "019",
+    "path": "省考/四川/2023/申论-上半年行政执法卷.md",
+    "baseline_sha256": "ca9ea702738e20469ed5428a9832ae0627623e939bbeabe97e848458308ea7d9",
+    "identity": [
+      "四川",
+      "2023"
+    ],
+    "variant": "上半年行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_四川_2023_四川上半年行政执法卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（四川上半年行政执法卷）"
+  },
+  {
+    "unit": "020",
+    "path": "省考/四川/2023/申论-县乡.md",
+    "baseline_sha256": "9467c54aa850d0e9a11ca93a3d7849e0b0224022641fd12b7b5e06f4eceeb261",
+    "identity": [
+      "四川",
+      "2023"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      1,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=854 crawled_at=2026-05-29T08:23:28"
+  },
+  {
+    "unit": "021",
+    "path": "省考/四川/2023/申论-省市.md",
+    "baseline_sha256": "32d570a5ee9eb044b213e71d6aa8d667cbbc5fa6677407fdcc7f8fd160e13129",
+    "identity": [
+      "四川",
+      "2023"
+    ],
+    "variant": "省市",
+    "missing_numbers": [
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=853 crawled_at=2026-05-29T08:23:54"
+  },
+  {
+    "unit": "022",
+    "path": "省考/四川/2024/申论-县乡、普通选调卷.md",
+    "baseline_sha256": "040737b122185265172662bd1a34996283037b389befd6b5c101be05c6cc1ab3",
+    "identity": [
+      "四川",
+      "2024"
+    ],
+    "variant": "县乡、普通选调卷",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2119 · SRNZ-755 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/755 · content v1.3.6"
+  },
+  {
+    "unit": "023",
+    "path": "省考/四川/2026/申论-县乡、普通选调卷.md",
+    "baseline_sha256": "1a1c5d103fbf7390302e2c7ccfa583196dfa61da8136856911ee75839565a04f",
+    "identity": [
+      "四川",
+      "2026"
+    ],
+    "variant": "县乡、普通选调卷",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2301 · SRNZ-942 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/942 · content v1.3.6"
+  },
+  {
+    "unit": "024",
+    "path": "省考/天津/2017/申论-统考__t443.md",
+    "baseline_sha256": "d7553eef7458e73181b768af59b91993a8d315cba8dc09b43f2a854b1ef97ea5",
+    "identity": [
+      "天津",
+      "2017"
+    ],
+    "variant": "统考",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=443 crawled_at=2026-05-29T08:14:38"
+  },
+  {
+    "unit": "025",
+    "path": "省考/天津/2022/申论-市级.md",
+    "baseline_sha256": "55c0023db9d4e4874147337e77488259c38b58e36154515c4befcc75cd00c333",
+    "identity": [
+      "天津",
+      "2022"
+    ],
+    "variant": "市级",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=770 crawled_at=2026-05-29T08:14:20"
+  },
+  {
+    "unit": "026",
+    "path": "省考/天津/2023/申论-乡镇卷.md",
+    "baseline_sha256": "ba9842574aec7453c859dc12d1c9d791a4337f557bdde0bd96e3d60360dd6f7e",
+    "identity": [
+      "天津",
+      "2023"
+    ],
+    "variant": "乡镇卷",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_天津_2023_天津乡镇卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（天津乡镇卷）"
+  },
+  {
+    "unit": "027",
+    "path": "省考/天津/2023/申论-市区卷.md",
+    "baseline_sha256": "d37c3b97802f565f9dea6e000cef40a6395d5d0414d33e2b2e3bf5cd8dbad6d4",
+    "identity": [
+      "天津",
+      "2023"
+    ],
+    "variant": "市区卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_天津_2023_天津市区卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（天津市区卷）"
+  },
+  {
+    "unit": "028",
+    "path": "省考/天津/2023/申论-行政执法卷.md",
+    "baseline_sha256": "92d34f7fe646518f93ce151d145d6231d1020311981593b1d6d836f2f52acde4",
+    "identity": [
+      "天津",
+      "2023"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_天津_2023_天津行政执法卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（天津行政执法卷）"
+  },
+  {
+    "unit": "029",
+    "path": "省考/天津/2024/申论-市级.md",
+    "baseline_sha256": "de6d5e8f7a5870dd1f187537c415531d0af44cc10aa57a0bae84ee3a1dc4f676",
+    "identity": [
+      "天津",
+      "2024"
+    ],
+    "variant": "市级",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2150 · SRNZ-786 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/786 · content v1.3.6"
+  },
+  {
+    "unit": "030",
+    "path": "省考/天津/2025/申论-市区卷.md",
+    "baseline_sha256": "53101290d5705f3c06f3c69e78bff8750b28b15fc81060c06fdef8a0f9868e72",
+    "identity": [
+      "天津",
+      "2025"
+    ],
+    "variant": "市区卷",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2195 · SRNZ-831 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/831 · content v1.3.6"
+  },
+  {
+    "unit": "031",
+    "path": "省考/天津/2025/申论-街镇卷.md",
+    "baseline_sha256": "c0fc6fd7caca2966975364a8a78c034100474344074310efda0a51e99ca26c63",
+    "identity": [
+      "天津",
+      "2025"
+    ],
+    "variant": "街镇卷",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2194 · SRNZ-830 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/830 · content v1.3.6"
+  },
+  {
+    "unit": "032",
+    "path": "省考/宁夏/2016/申论-B类.md",
+    "baseline_sha256": "cbdb04adce8cb9f379cac1600437a2d7cfc88b60a0709e2d092c442bc89d1b9b",
+    "identity": [
+      "宁夏",
+      "2016"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=426 crawled_at=2026-05-29T08:25:33"
+  },
+  {
+    "unit": "033",
+    "path": "省考/宁夏/2023/申论-A类.md",
+    "baseline_sha256": "0b2459e695b064e04d78716789fabd39fad228306dabc0698cd5323270b75c47",
+    "identity": [
+      "宁夏",
+      "2023"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_宁夏_2023_宁夏A卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（宁夏A卷）"
+  },
+  {
+    "unit": "034",
+    "path": "省考/宁夏/2023/申论-C类.md",
+    "baseline_sha256": "c2aaf41e471ee4cbe1c40147ee6db5fc781d9213730cbbad08d48f5691dd76b2",
+    "identity": [
+      "宁夏",
+      "2023"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_宁夏_2023_宁夏C卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（宁夏C卷）"
+  },
+  {
+    "unit": "035",
+    "path": "省考/安徽/2018/申论-A类.md",
+    "baseline_sha256": "5d8d8b7ea40e4a016efb24dada622c59be9b46c293d7140907c80725b2ef20ad",
+    "identity": [
+      "安徽",
+      "2018"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=457 crawled_at=2026-05-29T08:28:30"
+  },
+  {
+    "unit": "036",
+    "path": "省考/安徽/2019/申论-A类.md",
+    "baseline_sha256": "99f084985602e78e2a43ae73989ec72b69337934ee445b91e879def01c0be446",
+    "identity": [
+      "安徽",
+      "2019"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=513 crawled_at=2026-05-29T08:28:33"
+  },
+  {
+    "unit": "037",
+    "path": "省考/安徽/2022/申论-A类.md",
+    "baseline_sha256": "7af0f46e6ff7c028ad2fde903e7a8afb2467e6b627b15c2f923530988b8a3cc9",
+    "identity": [
+      "安徽",
+      "2022"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=774 crawled_at=2026-05-29T08:29:03"
+  },
+  {
+    "unit": "038",
+    "path": "省考/安徽/2023/申论-A类.md",
+    "baseline_sha256": "ad448caa247f3ce8f40d0c80c8c330e53ed669f421a4ab2b6ec719a7ebaed559",
+    "identity": [
+      "安徽",
+      "2023"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=834 crawled_at=2026-05-29T08:29:01"
+  },
+  {
+    "unit": "039",
+    "path": "省考/安徽/2023/申论-B类.md",
+    "baseline_sha256": "eecb1133dadf9905d756c8b590569b7a87c4bba2656a15c49db5358d5465f973",
+    "identity": [
+      "安徽",
+      "2023"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_安徽_2023_安徽B卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（安徽B卷）"
+  },
+  {
+    "unit": "040",
+    "path": "省考/安徽/2023/申论-C类.md",
+    "baseline_sha256": "4f098856a70e404c56ec0bb683edebe4cb207add72612d7b14ead0274c674d16",
+    "identity": [
+      "安徽",
+      "2023"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=836 crawled_at=2026-05-29T08:29:05"
+  },
+  {
+    "unit": "041",
+    "path": "省考/安徽/2024/申论-C类.md",
+    "baseline_sha256": "8a54d7b9c3a34608748c0896673da461e49abf573e6a9069470d5fd970d552c1",
+    "identity": [
+      "安徽",
+      "2024"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2136 · SRNZ-772 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/772 · content v1.3.6"
+  },
+  {
+    "unit": "042",
+    "path": "省考/安徽/2025/申论-A类.md",
+    "baseline_sha256": "ccf2678f249ea0edf91fd66c74e03c3aa4c1a0563a5f46ea5062a2ada9201460",
+    "identity": [
+      "安徽",
+      "2025"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=971 crawled_at=2026-05-29T08:29:00"
+  },
+  {
+    "unit": "043",
+    "path": "省考/安徽/2025/申论-B类.md",
+    "baseline_sha256": "b28449422a9c443449dfbbb28bd5c936cb0f6fa99b95dada98da34ec55bbbbb7",
+    "identity": [
+      "安徽",
+      "2025"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=934 · SRNZ-909 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/909 · content v1.3.6"
+  },
+  {
+    "unit": "044",
+    "path": "省考/安徽/2025/申论-C类.md",
+    "baseline_sha256": "d36b2899f97541c66acd8554d2d4f9f8eba6aa8775bf54e6e542896bee29417c",
+    "identity": [
+      "安徽",
+      "2025"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2206 · SRNZ-842 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/842 · content v1.3.6"
+  },
+  {
+    "unit": "045",
+    "path": "省考/安徽/2026/申论-B类.md",
+    "baseline_sha256": "e54ff0386ee4053a641b4b481815a3671041a09f99d70559c8199c669c05ae0a",
+    "identity": [
+      "安徽",
+      "2026"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_安徽_2026_安徽B卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（安徽B卷）"
+  },
+  {
+    "unit": "046",
+    "path": "省考/安徽/2026/申论-C类.md",
+    "baseline_sha256": "7d118446e7f3343304dcc973ad3316178f36428a0b57522eed5a141269b85805",
+    "identity": [
+      "安徽",
+      "2026"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_安徽_2026_安徽C卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（安徽C卷）（网友回忆版）"
+  },
+  {
+    "unit": "047",
+    "path": "省考/山东/2019/申论-B类.md",
+    "baseline_sha256": "4011bf8192ba3f0f1b47d2a3353beb8bec3a16c10daf048ca403a47de4ebc5e6",
+    "identity": [
+      "山东",
+      "2019"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=518 crawled_at=2026-05-29T08:18:58"
+  },
+  {
+    "unit": "048",
+    "path": "省考/山东/2024/申论-B卷.md",
+    "baseline_sha256": "99f221391426bc1bf7c89903d780bc0de13f657822f12d68bae29d8498311c7c",
+    "identity": [
+      "山东",
+      "2024"
+    ],
+    "variant": "B卷",
+    "missing_numbers": [
+      1,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=482 · SRNZ-807 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/807 · content v1.3.6"
+  },
+  {
+    "unit": "049",
+    "path": "省考/山东/2025/申论-C卷.md",
+    "baseline_sha256": "abea09f45f7586c8366318fa7fe7e7acdb88f060900029e363fc58d05a89480f",
+    "identity": [
+      "山东",
+      "2025"
+    ],
+    "variant": "C卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=494 · SRNZ-870 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/870 · content v1.3.6"
+  },
+  {
+    "unit": "050",
+    "path": "省考/山西/2018/申论-乡镇.md",
+    "baseline_sha256": "d92a970bdd7721302d2c6c7ec70aab9cc55e0d2f39abdacbf9c890be6eea1aeb",
+    "identity": [
+      "山西",
+      "2018"
+    ],
+    "variant": "乡镇",
+    "missing_numbers": [
+      1,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=452 crawled_at=2026-05-29T08:15:25"
+  },
+  {
+    "unit": "051",
+    "path": "省考/山西/2019/申论-乡镇.md",
+    "baseline_sha256": "d697601bdaf140e459ef556df32ac5eddca986014b8f2263b207375c718cb2e5",
+    "identity": [
+      "山西",
+      "2019"
+    ],
+    "variant": "乡镇",
+    "missing_numbers": [
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=501 crawled_at=2026-05-29T08:15:21"
+  },
+  {
+    "unit": "052",
+    "path": "省考/山西/2022/申论-县乡.md",
+    "baseline_sha256": "04f294baaafbf860282747e48241852e9aff6a11377758655e6ecdc4e92670aa",
+    "identity": [
+      "山西",
+      "2022"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=781 crawled_at=2026-05-29T08:15:39"
+  },
+  {
+    "unit": "053",
+    "path": "省考/山西/2022/申论-省市.md",
+    "baseline_sha256": "8ed6242c740beb72ab4c068810c126d780e95fa9b91e316c1cd54fbcebd53536",
+    "identity": [
+      "山西",
+      "2022"
+    ],
+    "variant": "省市",
+    "missing_numbers": [
+      2,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=780 crawled_at=2026-05-29T08:15:29"
+  },
+  {
+    "unit": "054",
+    "path": "省考/山西/2023/申论-县乡.md",
+    "baseline_sha256": "db1a334aed8071ee3c8405fe4852a41d2c60594e0d2a16756d1e89abb0528170",
+    "identity": [
+      "山西",
+      "2023"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=828 crawled_at=2026-05-29T08:15:27"
+  },
+  {
+    "unit": "055",
+    "path": "省考/山西/2023/申论-省市.md",
+    "baseline_sha256": "a7b18f2f1450f1f72355df50a4666c39f43f0a346cebf71c82979e7bf792a063",
+    "identity": [
+      "山西",
+      "2023"
+    ],
+    "variant": "省市",
+    "missing_numbers": [
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=827 crawled_at=2026-05-29T08:15:14"
+  },
+  {
+    "unit": "056",
+    "path": "省考/山西/2024/申论-县乡卷.md",
+    "baseline_sha256": "5da638e11aa59f6823c12ec9a61cd4ea98f9c021e26fc143431880b47c6915f5",
+    "identity": [
+      "山西",
+      "2024"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2157 · SRNZ-793 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/793 · content v1.3.6"
+  },
+  {
+    "unit": "057",
+    "path": "省考/山西/2024/申论-省市卷.md",
+    "baseline_sha256": "7c5e5af04b0de02c94d3cd0ce5c60e2991ee06d2c2f02ab0ac9d2617f6f49f67",
+    "identity": [
+      "山西",
+      "2024"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2156 · SRNZ-792 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/792 · content v1.3.6"
+  },
+  {
+    "unit": "058",
+    "path": "省考/山西/2025/申论-县乡卷.md",
+    "baseline_sha256": "d7cb9338f5810023e834eb509d32cc48bfd10716c184abca6da8df870f9be599",
+    "identity": [
+      "山西",
+      "2025"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2191 · SRNZ-827 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/827 · content v1.3.6"
+  },
+  {
+    "unit": "059",
+    "path": "省考/山西/2025/申论-省市卷.md",
+    "baseline_sha256": "0a42ee02cd4b629d963e043a2038f49db1e65c3459680cec0b9d76cd551c3852",
+    "identity": [
+      "山西",
+      "2025"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=1387 · SRNZ-828 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/828 · content v1.3.6"
+  },
+  {
+    "unit": "060",
+    "path": "省考/山西/2026/申论-县乡卷.md",
+    "baseline_sha256": "3d47245b59792b9546bff6869b040e333b14e131565267720796e1909eef2086",
+    "identity": [
+      "山西",
+      "2026"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_山西_2026_山西县乡卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（山西县乡卷）"
+  },
+  {
+    "unit": "061",
+    "path": "省考/广东/2026/申论-行政执法.md",
+    "baseline_sha256": "84451eb01c7dba239357ac1b065a724f9012d49b914ec9011662e9800fef1f2f",
+    "identity": [
+      "广东",
+      "2026"
+    ],
+    "variant": "行政执法",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "shenlunhome.com tid=976 crawled_at=2026-05-29T08:20:43"
+  },
+  {
+    "unit": "062",
+    "path": "省考/广西/2019/申论-A类.md",
+    "baseline_sha256": "3049d255547f33362f361f4451c4e955255f19bd606491a54fe36beddc44d248",
+    "identity": [
+      "广西",
+      "2019"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=525 crawled_at=2026-05-29T08:22:11"
+  },
+  {
+    "unit": "063",
+    "path": "省考/广西/2022/申论-A类.md",
+    "baseline_sha256": "ba5fe3defafbe1ab1f105cd3fc20b7254b3257eca3c8edc61958d0c983af3ac8",
+    "identity": [
+      "广西",
+      "2022"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=791 crawled_at=2026-05-29T08:22:15"
+  },
+  {
+    "unit": "064",
+    "path": "省考/广西/2023/申论-B类.md",
+    "baseline_sha256": "6d8b27e4bf0a02a9af182a7bccb062c9b8f205b141dc2d791a24ddcdb222d821",
+    "identity": [
+      "广西",
+      "2023"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_广西_2023_广西B卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（广西B卷）"
+  },
+  {
+    "unit": "065",
+    "path": "省考/广西/2023/申论-C类.md",
+    "baseline_sha256": "8d31d614a5e129295580d58ec9e5bf86edf9a29197a73241bac3b60ace1d812a",
+    "identity": [
+      "广西",
+      "2023"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=847 crawled_at=2026-05-29T08:22:16"
+  },
+  {
+    "unit": "066",
+    "path": "省考/广西/2024/申论-A类.md",
+    "baseline_sha256": "f5f6bb6763a6ab7ce49c9430e142c9f452d7df7143bbd285cbcc9d3fce1619bf",
+    "identity": [
+      "广西",
+      "2024"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2139 · SRNZ-775 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/775 · content v1.3.6"
+  },
+  {
+    "unit": "067",
+    "path": "省考/广西/2024/申论-C类.md",
+    "baseline_sha256": "efd9f5ee16b73763c63d0da26d51869b88b27a08d6622797450c7d8e114350a8",
+    "identity": [
+      "广西",
+      "2024"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2140 · SRNZ-776 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/776 · content v1.3.6"
+  },
+  {
+    "unit": "068",
+    "path": "省考/新疆/2018/申论-下半年.md",
+    "baseline_sha256": "93f90759c9fd986690e774b190238de524875aedf4477f185f321844341c737f",
+    "identity": [
+      "新疆",
+      "2018"
+    ],
+    "variant": "下半年",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_新疆_2018_下半年 · 粉笔会员采(v6) 2018年新疆兵团公考《申论》题（下半年）"
+  },
+  {
+    "unit": "069",
+    "path": "省考/新疆/2019/申论-县级.md",
+    "baseline_sha256": "4adcff6d435c5a816a61481ca24a337c9e6b2b7d6205c6212641ed04b8648142",
+    "identity": [
+      "新疆",
+      "2019"
+    ],
+    "variant": "县级",
+    "missing_numbers": [
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=655 crawled_at=2026-05-29T08:25:38"
+  },
+  {
+    "unit": "070",
+    "path": "省考/新疆/2025/申论-县乡卷.md",
+    "baseline_sha256": "3b3943a448e3aeefca7eaef9edf5722556c5843776b963dddd2cbcda57b5c373",
+    "identity": [
+      "新疆",
+      "2025"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_新疆_2025_新疆县乡卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（新疆县乡卷）"
+  },
+  {
+    "unit": "071",
+    "path": "省考/新疆/2025/申论-行政执法卷.md",
+    "baseline_sha256": "23984f092fd3f7dd3418e74886b3d4ab7369b418956400eeb02435619acdcc36",
+    "identity": [
+      "新疆",
+      "2025"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_新疆_2025_新疆行政执法卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（新疆行政执法卷）"
+  },
+  {
+    "unit": "072",
+    "path": "省考/江西/2019/申论-乡镇.md",
+    "baseline_sha256": "83431e9af134f645de2119836cce2c9deb4d3dbaf59c44d68d6518bf84c5c80c",
+    "identity": [
+      "江西",
+      "2019"
+    ],
+    "variant": "乡镇",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=515 crawled_at=2026-05-29T08:18:40"
+  },
+  {
+    "unit": "073",
+    "path": "省考/江西/2019/申论-县级.md",
+    "baseline_sha256": "b08ed7cf7feffb625ebf1275c6eaa440a2574256acc755fce60a1d4ad309c6e9",
+    "identity": [
+      "江西",
+      "2019"
+    ],
+    "variant": "县级",
+    "missing_numbers": [
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=516 crawled_at=2026-05-29T08:18:30"
+  },
+  {
+    "unit": "074",
+    "path": "省考/江西/2022/申论-省市卷.md",
+    "baseline_sha256": "1fd82bde678dc5081dcb8f95787c6eb52d5e0dfe1c730c480d9dedf8f0f7a4b4",
+    "identity": [
+      "江西",
+      "2022"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_江西_2022_江西省市卷 · 粉笔会员采(v6) 2022年公务员多省联考《申论》题（江西省市卷）（网友回忆版）"
+  },
+  {
+    "unit": "075",
+    "path": "省考/江西/2023/申论-县乡卷.md",
+    "baseline_sha256": "018f9adf09275f8f8b6604df2ad08b5c4f532d950c1509979874f5f6aab361de",
+    "identity": [
+      "江西",
+      "2023"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_江西_2023_江西县乡卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（江西县乡卷）"
+  },
+  {
+    "unit": "076",
+    "path": "省考/江西/2023/申论-省市.md",
+    "baseline_sha256": "ffe9f5234a7c798579ca01f69baf349bdfd6dbcaf89802fd3c2108527c2fda5f",
+    "identity": [
+      "江西",
+      "2023"
+    ],
+    "variant": "省市",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=895 crawled_at=2026-05-29T08:18:04"
+  },
+  {
+    "unit": "077",
+    "path": "省考/江西/2023/申论-行政执法卷.md",
+    "baseline_sha256": "2a00ae7bdb65ab3e4befa43a756cc81cc5e668436a8da70fc11317650b44630b",
+    "identity": [
+      "江西",
+      "2023"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_江西_2023_江西行政执法卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（江西行政执法卷）"
+  },
+  {
+    "unit": "078",
+    "path": "省考/江西/2024/申论-县乡卷.md",
+    "baseline_sha256": "0ae2c874bfe5d3678a816fdf5dd743ac95939865ac20cfe13387af0f49c8f91f",
+    "identity": [
+      "江西",
+      "2024"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2170 · SRNZ-806 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/806 · content v1.3.6"
+  },
+  {
+    "unit": "079",
+    "path": "省考/江西/2024/申论-省市卷.md",
+    "baseline_sha256": "acfd1d7b4d758f270a172669e2c6580e8f88353cc64ae2db17fc5dd7f7bc92c3",
+    "identity": [
+      "江西",
+      "2024"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2169 · SRNZ-805 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/805 · content v1.3.6"
+  },
+  {
+    "unit": "080",
+    "path": "省考/江西/2024/申论-行政执法.md",
+    "baseline_sha256": "9369b63493e7fecc563a7d19b400581d78930c26e1c2794c0868720e7e08bbbd",
+    "identity": [
+      "江西",
+      "2024"
+    ],
+    "variant": "行政执法",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2152 · SRNZ-788 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/788 · content v1.3.6"
+  },
+  {
+    "unit": "081",
+    "path": "省考/江西/2025/申论-县乡卷.md",
+    "baseline_sha256": "92055e079fb053e38783955a357bea0ce6f387d4e2ef823fcf361739d0689537",
+    "identity": [
+      "江西",
+      "2025"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_江西_2025_江西县乡卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（江西县乡卷）"
+  },
+  {
+    "unit": "082",
+    "path": "省考/江西/2025/申论-省市卷.md",
+    "baseline_sha256": "ef0b7ca05366efd246890510486c5a91542e4664d1ee691c2d64099cfede6dc2",
+    "identity": [
+      "江西",
+      "2025"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_江西_2025_江西省市卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（江西省市卷）"
+  },
+  {
+    "unit": "083",
+    "path": "省考/江西/2025/申论-行政执法卷.md",
+    "baseline_sha256": "90f893fe63242215628a6bf84efc83d307404b06a8fccba802be4dbadab063b5",
+    "identity": [
+      "江西",
+      "2025"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_江西_2025_江西行政执法卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（江西行政执法卷）"
+  },
+  {
+    "unit": "084",
+    "path": "省考/江西/2026/申论-县乡卷.md",
+    "baseline_sha256": "510b0c03873eaadd62919da9b48abb2c6fffc8a6cf420c10183411f2500ac8a6",
+    "identity": [
+      "江西",
+      "2026"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_江西_2026_江西县乡卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（江西县乡卷）"
+  },
+  {
+    "unit": "085",
+    "path": "省考/河北/2021/申论-乡镇.md",
+    "baseline_sha256": "25125d6f2714fbd3f620b685c9a41f0b23d77799445c9d321abe91206d7215cb",
+    "identity": [
+      "河北",
+      "2021"
+    ],
+    "variant": "乡镇",
+    "missing_numbers": [
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=730 crawled_at=2026-05-29T08:14:57"
+  },
+  {
+    "unit": "086",
+    "path": "省考/河北/2021/申论-县级.md",
+    "baseline_sha256": "d720814409af2773c62b38fe603844271fd9560eeff6f74c5412b8dd53ee6f6d",
+    "identity": [
+      "河北",
+      "2021"
+    ],
+    "variant": "县级",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=676 crawled_at=2026-05-29T08:14:46"
+  },
+  {
+    "unit": "087",
+    "path": "省考/河北/2022/申论-县级.md",
+    "baseline_sha256": "d0a2ec22b58aad3590990a1ed798ac3789fb5b51177cd160bd1b85fe4dd98b91",
+    "identity": [
+      "河北",
+      "2022"
+    ],
+    "variant": "县级",
+    "missing_numbers": [
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=779 crawled_at=2026-05-29T08:14:59"
+  },
+  {
+    "unit": "088",
+    "path": "省考/河北/2023/申论-A类.md",
+    "baseline_sha256": "244ad0befb3f5392c3b75709371e5c2cc4a2829afb09370c47b523141e728722",
+    "identity": [
+      "河北",
+      "2023"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=826 crawled_at=2026-05-29T08:14:58"
+  },
+  {
+    "unit": "089",
+    "path": "省考/河北/2023/申论-B类.md",
+    "baseline_sha256": "95739181a5d68f0febe394f657e4a35c1fbd472cd4b3045420b53ebd31176601",
+    "identity": [
+      "河北",
+      "2023"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_河北_2023_河北B卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（河北B卷）"
+  },
+  {
+    "unit": "090",
+    "path": "省考/河北/2023/申论-C类.md",
+    "baseline_sha256": "f9e41223742ed9a840336e069f527df354aada8224064d409852f4ee01a7c9a8",
+    "identity": [
+      "河北",
+      "2023"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_河北_2023_河北C卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（河北C卷）"
+  },
+  {
+    "unit": "091",
+    "path": "省考/河北/2024/申论-C类.md",
+    "baseline_sha256": "e78022a33b2882ae7d248b2385c414cea162559519d99074d1de8a41071705fb",
+    "identity": [
+      "河北",
+      "2024"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=930 crawled_at=2026-05-29T08:14:53"
+  },
+  {
+    "unit": "092",
+    "path": "省考/河北/2025/申论-A类.md",
+    "baseline_sha256": "548b8619ae6c4ae13df6628733c1ed007cbb84a0091a26102fbd4aa2b26b9079",
+    "identity": [
+      "河北",
+      "2025"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_河北_2025_河北A卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（河北A卷）"
+  },
+  {
+    "unit": "093",
+    "path": "省考/河北/2025/申论-B类.md",
+    "baseline_sha256": "4478cb3661d90a0402672e604cb9dfd7e2674aa1a7b60acf76a0a5aa4b56c6e2",
+    "identity": [
+      "河北",
+      "2025"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_河北_2025_河北B卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（河北B卷）"
+  },
+  {
+    "unit": "094",
+    "path": "省考/河北/2025/申论-C类.md",
+    "baseline_sha256": "f5dce5037099723503cf4e4e3cb7e1ed78c7d50f59d9a3d54c9479902b256df2",
+    "identity": [
+      "河北",
+      "2025"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_河北_2025_河北C卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（河北C卷）"
+  },
+  {
+    "unit": "095",
+    "path": "省考/河南/2018/申论-统考.md",
+    "baseline_sha256": "2ecc222b8f3191c967702d11c0a56499642454e9cacbe82f44222dfe672df0d9",
+    "identity": [
+      "河南",
+      "2018"
+    ],
+    "variant": "统考",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "SGHCN0762/civil-provice-exam-shenlun · 2018年年河南公务员考试申论真题与参考答案.pdf"
+  },
+  {
+    "unit": "096",
+    "path": "省考/河南/2019/申论-统考.md",
+    "baseline_sha256": "220425a8fb7c90e8df27d51d3b5bd05a5b4479a04a3c2a4dd37ac44d8dfda0a0",
+    "identity": [
+      "河南",
+      "2019"
+    ],
+    "variant": "统考",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=519 crawled_at=2026-05-29T08:19:31"
+  },
+  {
+    "unit": "097",
+    "path": "省考/河南/2022/申论-县级.md",
+    "baseline_sha256": "8f93e2d0c5b6bc133fc227b8af42c4fdb97bde4a34d247dd99598fed31f0842a",
+    "identity": [
+      "河南",
+      "2022"
+    ],
+    "variant": "县级",
+    "missing_numbers": [
+      2,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=789 crawled_at=2026-05-29T08:19:52"
+  },
+  {
+    "unit": "098",
+    "path": "省考/河南/2023/申论-市级.md",
+    "baseline_sha256": "0a61572de98af0cd25f2a42f139200ca9384ae10ffd52cf4eb6ebc02638b2ff9",
+    "identity": [
+      "河南",
+      "2023"
+    ],
+    "variant": "市级",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=841 crawled_at=2026-05-29T08:19:36"
+  },
+  {
+    "unit": "099",
+    "path": "省考/河南/2024/申论-县级卷.md",
+    "baseline_sha256": "d2251ed4846b257e02259e7b6196cedb8407b7bc12883f601b2b04aea1ebde71",
+    "identity": [
+      "河南",
+      "2024"
+    ],
+    "variant": "县级卷",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2146 · SRNZ-782 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/782 · content v1.3.6"
+  },
+  {
+    "unit": "100",
+    "path": "省考/河南/2024/申论-市级.md",
+    "baseline_sha256": "2614ff621fa590074f937bdbb4fb27fc1adf785833f46e2e54cb00dd2167e7c8",
+    "identity": [
+      "河南",
+      "2024"
+    ],
+    "variant": "市级",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=866 crawled_at=2026-05-29T08:19:43"
+  },
+  {
+    "unit": "101",
+    "path": "省考/河南/2025/申论-县级卷.md",
+    "baseline_sha256": "04f17110904ac42cca3cc49c097ecb2444fc349569f8575a509c9a07d11e663e",
+    "identity": [
+      "河南",
+      "2025"
+    ],
+    "variant": "县级卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_河南_2025_河南县级卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（河南县级卷）"
+  },
+  {
+    "unit": "102",
+    "path": "省考/河南/2025/申论-市级卷.md",
+    "baseline_sha256": "aaccd0461c76fa3d9114f705b45daaa566984431796ec9786c92277da6ee3031",
+    "identity": [
+      "河南",
+      "2025"
+    ],
+    "variant": "市级卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_河南_2025_河南市级卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（河南市级卷）"
+  },
+  {
+    "unit": "103",
+    "path": "省考/河南/2026/申论-县级卷.md",
+    "baseline_sha256": "acee5e5c108141e7c5bae8f8857dbdbbeadb0f896e22b59df1b589e30953123a",
+    "identity": [
+      "河南",
+      "2026"
+    ],
+    "variant": "县级卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2306 · SRNZ-947 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/947 · content v1.3.6"
+  },
+  {
+    "unit": "104",
+    "path": "省考/河南/2026/申论-市级卷.md",
+    "baseline_sha256": "d451bd313df4e843325fa63efc2290265f3cd5e6ad1573114e982e7682cdbecd",
+    "identity": [
+      "河南",
+      "2026"
+    ],
+    "variant": "市级卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_河南_2026_河南市级卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（河南市级卷）（网友回忆版）"
+  },
+  {
+    "unit": "105",
+    "path": "省考/海南/2023/申论-A类.md",
+    "baseline_sha256": "910400ad9713e6e95202c9f31a6e4a035a1a28b0305139dce380094021f94d1a",
+    "identity": [
+      "海南",
+      "2023"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=850 crawled_at=2026-05-29T08:22:26"
+  },
+  {
+    "unit": "106",
+    "path": "省考/海南/2023/申论-B类.md",
+    "baseline_sha256": "1b341dcbd6f76c431b8e668116f72c6334fdfcfd227c9d84fc25c1aee562b7d5",
+    "identity": [
+      "海南",
+      "2023"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_海南_2023_海南B卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（海南B卷）"
+  },
+  {
+    "unit": "107",
+    "path": "省考/海南/2023/申论-C类.md",
+    "baseline_sha256": "d94cb0a5e1aef0606d985bd443cf451142041374c8f9aae05df01b57bd9f5ac7",
+    "identity": [
+      "海南",
+      "2023"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=851 crawled_at=2026-05-29T08:22:36"
+  },
+  {
+    "unit": "108",
+    "path": "省考/海南/2024/申论-A类.md",
+    "baseline_sha256": "8af821370ab7b8c9e121ce5a0901701113c615458c1cf8887f29048acbeed26a",
+    "identity": [
+      "海南",
+      "2024"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2142 · SRNZ-778 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/778 · content v1.3.6"
+  },
+  {
+    "unit": "109",
+    "path": "省考/海南/2025/申论-B类.md",
+    "baseline_sha256": "863f3878fd560789d213905e7aa0ee06f06e192079e24dd654a69e40bd4f8d0f",
+    "identity": [
+      "海南",
+      "2025"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_海南_2025_海南B卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（海南B卷）"
+  },
+  {
+    "unit": "110",
+    "path": "省考/深圳/2016/申论-A类.md",
+    "baseline_sha256": "9dcddc3c6c2d44fd4c6347d969d22ae498deb428c141cfecacd693d207af8269",
+    "identity": [
+      "深圳",
+      "2016"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2
+    ],
+    "source_metadata": "2016年深圳市公务员考试《申论》题（A卷） · tiku.db papers.id=75816 + materials.db"
+  },
+  {
+    "unit": "111",
+    "path": "省考/深圳/2016/申论-B类.md",
+    "baseline_sha256": "62835886b94a0cf72e20a61771be5eca5bea042ae23bb4c2bb4ead9bf8bbbef9",
+    "identity": [
+      "深圳",
+      "2016"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "2016年深圳市公务员考试《申论》题（B卷） · tiku.db papers.id=88339 + materials.db"
+  },
+  {
+    "unit": "112",
+    "path": "省考/深圳/2017/申论-A类.md",
+    "baseline_sha256": "3ad6a96ade5d76b293434412b65a196a3f002d597533b878b16a1f0b5fc34e93",
+    "identity": [
+      "深圳",
+      "2017"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_深圳_2017_A卷 · 粉笔会员采(v6) 2017年深圳市公务员考试《申论》题（A卷）"
+  },
+  {
+    "unit": "113",
+    "path": "省考/深圳/2017/申论-B类.md",
+    "baseline_sha256": "ba2d57f58208107b04fcd676e9c6a20d4123e9d57df3cf32becad036246229f2",
+    "identity": [
+      "深圳",
+      "2017"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_深圳_2017_B卷 · 粉笔会员采(v6) 2017年深圳市公务员考试《申论》题（B卷）"
+  },
+  {
+    "unit": "114",
+    "path": "省考/深圳/2018/申论-A类.md",
+    "baseline_sha256": "f1a621f6050d1aca3e868005d3a2a1cdfc8de454bec038eab348ab19497b8708",
+    "identity": [
+      "深圳",
+      "2018"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=442 crawled_at=2026-05-29T08:21:23"
+  },
+  {
+    "unit": "115",
+    "path": "省考/深圳/2018/申论-B类.md",
+    "baseline_sha256": "45f3586578699e6bc3ebfa6d59250f3db95d2a7f1a2a20e3759244eb188891f4",
+    "identity": [
+      "深圳",
+      "2018"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_深圳_2018_B卷 · 粉笔会员采(v6) 2018年深圳市公务员考试《申论》题（B卷）"
+  },
+  {
+    "unit": "116",
+    "path": "省考/深圳/2019/申论-一卷.md",
+    "baseline_sha256": "f65461530fa22716690ff451cef46d3fdb1bc5dc2073eb4f7bc0cd57e36f53f8",
+    "identity": [
+      "深圳",
+      "2019"
+    ],
+    "variant": "一卷",
+    "missing_numbers": [
+      1,
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=535 crawled_at=2026-05-29T08:21:16"
+  },
+  {
+    "unit": "117",
+    "path": "省考/深圳/2019/申论-二卷.md",
+    "baseline_sha256": "7459c7677d9f2ea522da2febaff7268b184d83132a699b4415cdf08208a23c13",
+    "identity": [
+      "深圳",
+      "2019"
+    ],
+    "variant": "二卷",
+    "missing_numbers": [
+      1,
+      2
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_深圳_2019_二卷 · 粉笔会员采(v6) 2019年深圳市公务员考试《申论》题（二卷）"
+  },
+  {
+    "unit": "118",
+    "path": "省考/深圳/2020/申论-一卷.md",
+    "baseline_sha256": "83645082d6dc24d70d938afa5f6fa4e28fe2ed5e6426a492e8aeb2c9670a71d4",
+    "identity": [
+      "深圳",
+      "2020"
+    ],
+    "variant": "一卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_深圳_2020_一卷 · 粉笔会员采(v6) 2020年深圳市公务员考试《申论》题（一卷）"
+  },
+  {
+    "unit": "119",
+    "path": "省考/深圳/2020/申论-二卷.md",
+    "baseline_sha256": "bc3e22d2e6f74419ba91f53562f1a8d8922780e2ee3541eaa37a824c3430cc22",
+    "identity": [
+      "深圳",
+      "2020"
+    ],
+    "variant": "二卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_深圳_2020_二卷 · 粉笔会员采(v6) 2020年深圳市公务员考试《申论》题（二卷）"
+  },
+  {
+    "unit": "120",
+    "path": "省考/深圳/2022/申论-一卷.md",
+    "baseline_sha256": "fc85d56cf9c53c097460285f230faf15ed84aa27d72f671e327a07704c7570d1",
+    "identity": [
+      "深圳",
+      "2022"
+    ],
+    "variant": "一卷",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=772 crawled_at=2026-05-29T08:20:52"
+  },
+  {
+    "unit": "121",
+    "path": "省考/深圳/2022/申论-二卷.md",
+    "baseline_sha256": "5ed5540bdf5006dfbd06c45e90560cf01f6182543b08535c49eda467f2d5388a",
+    "identity": [
+      "深圳",
+      "2022"
+    ],
+    "variant": "二卷",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_深圳_2022_二卷 · 粉笔会员采(v6) 2022年深圳市公务员考试《申论》题（二卷）"
+  },
+  {
+    "unit": "122",
+    "path": "省考/深圳/2023/申论-一卷.md",
+    "baseline_sha256": "8650fc9bcd8ad6d6d36d0bc781384a5af6e5bbc02498b2a5bb5557c03de70dab",
+    "identity": [
+      "深圳",
+      "2023"
+    ],
+    "variant": "一卷",
+    "missing_numbers": [
+      1,
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=846 crawled_at=2026-05-29T08:20:53"
+  },
+  {
+    "unit": "123",
+    "path": "省考/深圳/2023/申论-二卷.md",
+    "baseline_sha256": "69fb776dbdc43e0d08265aef3a99a322531f320c3f1324f3426ff91758745dc4",
+    "identity": [
+      "深圳",
+      "2023"
+    ],
+    "variant": "二卷",
+    "missing_numbers": [
+      1,
+      2
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_深圳_2023_二卷 · 粉笔会员采(v6) 2023年深圳市公务员考试《申论》题（二卷）"
+  },
+  {
+    "unit": "124",
+    "path": "省考/湖北/2023/申论-县乡.md",
+    "baseline_sha256": "594f769e88ad923ae7fe8f0a648015c94a764c647a3ab7eee4698a11df7080db",
+    "identity": [
+      "湖北",
+      "2023"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=861 crawled_at=2026-05-29T08:19:53"
+  },
+  {
+    "unit": "125",
+    "path": "省考/湖北/2023/申论-省市卷.md",
+    "baseline_sha256": "22a4ec8a055a37c1a3f1ebfd9be7301966bdf9da13afee9cdd1bd91a92f4945c",
+    "identity": [
+      "湖北",
+      "2023"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_湖北_2023_湖北省市卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（湖北省市卷）"
+  },
+  {
+    "unit": "126",
+    "path": "省考/湖北/2024/申论-省市.md",
+    "baseline_sha256": "8a91c6cc448f049d34d0353742147aa18d5593a702dd4c9912b8070058c4690e",
+    "identity": [
+      "湖北",
+      "2024"
+    ],
+    "variant": "省市",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=941 crawled_at=2026-05-29T08:20:05"
+  },
+  {
+    "unit": "127",
+    "path": "省考/湖北/2024/申论-省市卷.md",
+    "baseline_sha256": "7f568855020ea7be128423e3f15c7d1b9907e130d346d5f5a0a8b01cb6b0bfe8",
+    "identity": [
+      "湖北",
+      "2024"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2214 · SRNZ-850 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/850 · content v1.3.6"
+  },
+  {
+    "unit": "128",
+    "path": "省考/湖北/2025/申论-县乡卷.md",
+    "baseline_sha256": "48336be519b69ad04fadb59d8e0f9e452c256fae0356bc151d9b295953f8beac",
+    "identity": [
+      "湖北",
+      "2025"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_湖北_2025_湖北县乡卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（湖北县乡卷）"
+  },
+  {
+    "unit": "129",
+    "path": "省考/湖北/2025/申论-省市卷.md",
+    "baseline_sha256": "e62b4f519cb5e0958e1ffbb24a46a36f5fb617d19b484c9456ae5547c441157d",
+    "identity": [
+      "湖北",
+      "2025"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_湖北_2025_湖北省市卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（湖北省市卷）"
+  },
+  {
+    "unit": "130",
+    "path": "省考/湖南/2019/申论-乡镇.md",
+    "baseline_sha256": "abec13c0245777cd8b873b93d9a2355d52d664e50292a473a7b35e1313e2dad7",
+    "identity": [
+      "湖南",
+      "2019"
+    ],
+    "variant": "乡镇",
+    "missing_numbers": [
+      1,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=522 crawled_at=2026-05-29T08:20:33"
+  },
+  {
+    "unit": "131",
+    "path": "省考/湖南/2022/申论-县乡.md",
+    "baseline_sha256": "85703e166e5936f0428858d3926e019e290aa809f7f3f0699ca43246cc329868",
+    "identity": [
+      "湖南",
+      "2022"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "shenlunhome.com tid=790 crawled_at=2026-05-29T08:20:30"
+  },
+  {
+    "unit": "132",
+    "path": "省考/湖南/2023/申论-县乡卷.md",
+    "baseline_sha256": "57ab9c471198f940ec89f62158c11ea25d9870b7ab61471e932d0e76ba91032b",
+    "identity": [
+      "湖南",
+      "2023"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_湖南_2023_湖南县乡卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（湖南县乡卷）"
+  },
+  {
+    "unit": "133",
+    "path": "省考/湖南/2023/申论-省市.md",
+    "baseline_sha256": "5c7e02fd93dc8afd31cf03e16bdd7570056f87d121df7d24a824e9f21589e1d2",
+    "identity": [
+      "湖南",
+      "2023"
+    ],
+    "variant": "省市",
+    "missing_numbers": [
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=901 crawled_at=2026-05-29T08:20:17"
+  },
+  {
+    "unit": "134",
+    "path": "省考/湖南/2023/申论-行政执法卷.md",
+    "baseline_sha256": "ae239fde1059a062b8838e6b1bff0033da5d96a1005bfb0378a93e4c77930a9f",
+    "identity": [
+      "湖南",
+      "2023"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_湖南_2023_湖南行政执法卷 · 粉笔会员采(v6) 2023年公务员多省联考《申论》题（湖南行政执法卷）"
+  },
+  {
+    "unit": "135",
+    "path": "省考/湖南/2024/申论-省市卷.md",
+    "baseline_sha256": "8e5ee256b5c1afe5c680628784fc1a5037b5778afd4d2147cf6d7f1370c1c6a5",
+    "identity": [
+      "湖南",
+      "2024"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2151 · SRNZ-787 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/787 · content v1.3.6"
+  },
+  {
+    "unit": "136",
+    "path": "省考/湖南/2025/申论-县乡卷.md",
+    "baseline_sha256": "de42e423a47dfeb0f6da81701d896dcac1757bfd816172109b4f6f09430f5d89",
+    "identity": [
+      "湖南",
+      "2025"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_湖南_2025_湖南县乡卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（湖南县乡卷）"
+  },
+  {
+    "unit": "137",
+    "path": "省考/湖南/2025/申论-省市卷.md",
+    "baseline_sha256": "529a56cf7c4ecd15d9464a780aa14844ae60a074de1db70049adb63850c62660",
+    "identity": [
+      "湖南",
+      "2025"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_湖南_2025_湖南省市卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（湖南省市卷）"
+  },
+  {
+    "unit": "138",
+    "path": "省考/湖南/2025/申论-行政执法卷.md",
+    "baseline_sha256": "c6e0293ab5de98068e0a7537d20822c1ec498ed51cf399665fb000e36aca80b4",
+    "identity": [
+      "湖南",
+      "2025"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_湖南_2025_湖南行政执法卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（湖南行政执法卷）"
+  },
+  {
+    "unit": "139",
+    "path": "省考/湖南/2026/申论-县乡卷.md",
+    "baseline_sha256": "9ee34abb2dbd1e3291ed460512affd8b9deb4b277be77a66698587d34c564cf0",
+    "identity": [
+      "湖南",
+      "2026"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_湖南_2026_湖南县乡卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（湖南县乡卷）"
+  },
+  {
+    "unit": "140",
+    "path": "省考/甘肃/2021/申论-县级.md",
+    "baseline_sha256": "d9e30d0afcbb27402e2ff0ba17777e185ea742819cb179d810b8af1315586a17",
+    "identity": [
+      "甘肃",
+      "2021"
+    ],
+    "variant": "县级",
+    "missing_numbers": [
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=797 crawled_at=2026-05-29T08:24:46"
+  },
+  {
+    "unit": "141",
+    "path": "省考/甘肃/2023/申论-县乡.md",
+    "baseline_sha256": "ad29660fb9c74fc2a28575b15f6ed5ffb344830c8471912ea153fee683a1a370",
+    "identity": [
+      "甘肃",
+      "2023"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=855 crawled_at=2026-05-29T08:24:45"
+  },
+  {
+    "unit": "142",
+    "path": "省考/福建/2018/申论-县级卷.md",
+    "baseline_sha256": "eabea723845ac5803e393fcf895dc15921dd21a9a520012ecdf98ed89b4b7cda",
+    "identity": [
+      "福建",
+      "2018"
+    ],
+    "variant": "县级卷",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=459 crawled_at=2026-05-29T08:17:51"
+  },
+  {
+    "unit": "143",
+    "path": "省考/福建/2021/申论-乡镇.md",
+    "baseline_sha256": "f2aef1b6b79f2d76ad612d6d76a741ea6c9cc22a05939a76f154e7e6828b0112",
+    "identity": [
+      "福建",
+      "2021"
+    ],
+    "variant": "乡镇",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=735 crawled_at=2026-05-29T08:17:32"
+  },
+  {
+    "unit": "144",
+    "path": "省考/福建/2021/申论-县级.md",
+    "baseline_sha256": "e4efd6621722af3888f8de2abe54589d1c6d0c7ccc24d7226cf564fb26450826",
+    "identity": [
+      "福建",
+      "2021"
+    ],
+    "variant": "县级",
+    "missing_numbers": [
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=739 crawled_at=2026-05-29T08:17:46"
+  },
+  {
+    "unit": "145",
+    "path": "省考/福建/2022/申论-县乡.md",
+    "baseline_sha256": "5613188d12c9dbdf056e791e2d97060110810d9f00d9ddea331ce038992e41f7",
+    "identity": [
+      "福建",
+      "2022"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=788 crawled_at=2026-05-29T08:17:43"
+  },
+  {
+    "unit": "146",
+    "path": "省考/福建/2023/申论-县乡.md",
+    "baseline_sha256": "20f1349cb0d967bc117c9ddddf5ddce65fe799d605c6b602b3ab7bd85dd5f8c1",
+    "identity": [
+      "福建",
+      "2023"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=837 crawled_at=2026-05-29T08:17:57"
+  },
+  {
+    "unit": "147",
+    "path": "省考/福建/2023/申论-省市.md",
+    "baseline_sha256": "dd982206dc4ef58d45fe3cfb2074bcef4f00653ae8186903cc4b05a7c82b44d3",
+    "identity": [
+      "福建",
+      "2023"
+    ],
+    "variant": "省市",
+    "missing_numbers": [
+      1,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=838 crawled_at=2026-05-29T08:17:56"
+  },
+  {
+    "unit": "148",
+    "path": "省考/福建/2023/申论-行政执法.md",
+    "baseline_sha256": "33a320791d9b6c9be38794138e12b838e0f6456b79fe0a8216ea29beb9f99888",
+    "identity": [
+      "福建",
+      "2023"
+    ],
+    "variant": "行政执法",
+    "missing_numbers": [
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=839 crawled_at=2026-05-29T08:17:34"
+  },
+  {
+    "unit": "149",
+    "path": "省考/福建/2024/申论-县乡卷.md",
+    "baseline_sha256": "99dfaa0a3178e3772156859a2606a9f337ba88c473a43d2b2e370da603caf003",
+    "identity": [
+      "福建",
+      "2024"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2137 · SRNZ-773 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/773 · content v1.3.6"
+  },
+  {
+    "unit": "150",
+    "path": "省考/福建/2024/申论-省市卷.md",
+    "baseline_sha256": "2cc037fe0cdea6b4c1730dcec2cabbc67c83a731dede64b332e672170a1c2ef7",
+    "identity": [
+      "福建",
+      "2024"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2166 · SRNZ-802 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/802 · content v1.3.6"
+  },
+  {
+    "unit": "151",
+    "path": "省考/福建/2024/申论-行政执法.md",
+    "baseline_sha256": "76fb606b83a114e537657095017a803c6efaacd6ba53203ce0cc52169ddf00e7",
+    "identity": [
+      "福建",
+      "2024"
+    ],
+    "variant": "行政执法",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2161 · SRNZ-797 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/797 · content v1.3.6"
+  },
+  {
+    "unit": "152",
+    "path": "省考/福建/2025/申论-省市卷.md",
+    "baseline_sha256": "c6852a0ac0cc61ff1ee395d91b9cb12b3d71aee7a74b4d314f205100ddb21e89",
+    "identity": [
+      "福建",
+      "2025"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_福建_2025_福建省市卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（福建省市卷）"
+  },
+  {
+    "unit": "153",
+    "path": "省考/福建/2025/申论-通用卷.md",
+    "baseline_sha256": "aed3d0d95a362a566a04cfe4da5c098d39f2302987a8071853e49cafb8d1b68f",
+    "identity": [
+      "福建",
+      "2025"
+    ],
+    "variant": "通用卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_福建_2025_福建通用卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（福建通用卷）"
+  },
+  {
+    "unit": "154",
+    "path": "省考/福建/2026/申论-通用卷.md",
+    "baseline_sha256": "86108851ac5e83cc8aa65cd6d3ca1971cdd18741b5a0964c816d1414f6facfc4",
+    "identity": [
+      "福建",
+      "2026"
+    ],
+    "variant": "通用卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_福建_2026_福建通用卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（福建通用卷）"
+  },
+  {
+    "unit": "155",
+    "path": "省考/西藏/2019/申论-统考.md",
+    "baseline_sha256": "9cbbca6b5c4d9388e01e9474b6a0dad37a3ff14027bd4dd602175c384ec9fe52",
+    "identity": [
+      "西藏",
+      "2019"
+    ],
+    "variant": "统考",
+    "missing_numbers": [
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=651 crawled_at=2026-05-29T08:24:22"
+  },
+  {
+    "unit": "156",
+    "path": "省考/贵州/2025/申论-B类.md",
+    "baseline_sha256": "159d4b2aa4f83410a050361245b012090e152b90435417d0dbc85cb687b9efaa",
+    "identity": [
+      "贵州",
+      "2025"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_贵州_2025_贵州B卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（贵州B卷）"
+  },
+  {
+    "unit": "157",
+    "path": "省考/贵州/2026/申论-A类.md",
+    "baseline_sha256": "57ccc7702569536972def7f552d2165afd932215e6281155f2133995b31c6299",
+    "identity": [
+      "贵州",
+      "2026"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_贵州_2026_贵州A卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（贵州A卷）（网友回忆版）"
+  },
+  {
+    "unit": "158",
+    "path": "省考/辽宁/2025/申论-A类.md",
+    "baseline_sha256": "50a92daf7662c9402a526ac3149585daaae1a2f8b741095ded5f755e66450e58",
+    "identity": [
+      "辽宁",
+      "2025"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=958 crawled_at=2026-05-29T08:26:18"
+  },
+  {
+    "unit": "159",
+    "path": "省考/辽宁/2025/申论-B类.md",
+    "baseline_sha256": "529ad5165875cd0aa45b47213cddaef7673171ac80465172cba1dd93ece44407",
+    "identity": [
+      "辽宁",
+      "2025"
+    ],
+    "variant": "B类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=957 crawled_at=2026-05-29T08:25:58"
+  },
+  {
+    "unit": "160",
+    "path": "省考/辽宁/2026/申论-A类.md",
+    "baseline_sha256": "2f41abdef10ae92ec3109d1dbf27150a2dce140bf5cebbca0444149d53eecc0b",
+    "identity": [
+      "辽宁",
+      "2026"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_辽宁_2026_辽宁A卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（辽宁A卷）"
+  },
+  {
+    "unit": "161",
+    "path": "省考/重庆/2023/申论-一卷.md",
+    "baseline_sha256": "dab2028c879fe755bc17027715f996cfc33d21d0365ee4bb6c5cf904871527fd",
+    "identity": [
+      "重庆",
+      "2023"
+    ],
+    "variant": "一卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2201 · SRNZ-837 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/837 · content v1.3.6"
+  },
+  {
+    "unit": "162",
+    "path": "省考/重庆/2023/申论-三卷.md",
+    "baseline_sha256": "605d8b5fc90122fa796ce549460d35cc3ffa220aa4c3e75aacf792ac93fdbf11",
+    "identity": [
+      "重庆",
+      "2023"
+    ],
+    "variant": "三卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2103 · SRNZ-739 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/739 · content v1.3.6"
+  },
+  {
+    "unit": "163",
+    "path": "省考/重庆/2023/申论-二卷.md",
+    "baseline_sha256": "fda1a68b79d90875bef058639e35f517d66ab941ef7c23ec94c6f5f136dfd7cc",
+    "identity": [
+      "重庆",
+      "2023"
+    ],
+    "variant": "二卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=852 crawled_at=2026-05-29T08:22:54"
+  },
+  {
+    "unit": "164",
+    "path": "省考/重庆/2024/申论-三卷.md",
+    "baseline_sha256": "7467b1410f5d0baa299a9a873d62ad5592d0f8d80bc7cc6ed6cff82b98345046",
+    "identity": [
+      "重庆",
+      "2024"
+    ],
+    "variant": "三卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=938 crawled_at=2026-05-29T08:23:03"
+  },
+  {
+    "unit": "165",
+    "path": "省考/重庆/2024/申论-二卷.md",
+    "baseline_sha256": "202b3a729a436bcbc663bcb0eccfffa6c787f84df20c355755695e89748c8342",
+    "identity": [
+      "重庆",
+      "2024"
+    ],
+    "variant": "二卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=937 crawled_at=2026-05-29T08:23:13"
+  },
+  {
+    "unit": "166",
+    "path": "省考/重庆/2025/申论-一卷.md",
+    "baseline_sha256": "bf48d1c23f522bf77bfcd7f5ec071412d4939e748750383234e395e913975caa",
+    "identity": [
+      "重庆",
+      "2025"
+    ],
+    "variant": "一卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_重庆_2025_重庆一卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（重庆一卷）"
+  },
+  {
+    "unit": "167",
+    "path": "省考/重庆/2025/申论-三卷.md",
+    "baseline_sha256": "ba2f2f3b383dfaed2e210066f0195ae6efd6543945f7e78950a8a6299364d503",
+    "identity": [
+      "重庆",
+      "2025"
+    ],
+    "variant": "三卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_重庆_2025_重庆三卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（重庆三卷）"
+  },
+  {
+    "unit": "168",
+    "path": "省考/重庆/2025/申论-二卷.md",
+    "baseline_sha256": "6c74eb67b994b52b543dc7f518314f18eab6350ccaa2600e3718c4012f2cbf83",
+    "identity": [
+      "重庆",
+      "2025"
+    ],
+    "variant": "二卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_重庆_2025_重庆二卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（重庆二卷）"
+  },
+  {
+    "unit": "169",
+    "path": "省考/重庆/2026/申论-一卷.md",
+    "baseline_sha256": "dbc6a2ca8d0f6e2089fa74f8b1685b2216c39c5a0a95ce71c600cb400c6c67b3",
+    "identity": [
+      "重庆",
+      "2026"
+    ],
+    "variant": "一卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_重庆_2026_重庆一卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（重庆一卷）"
+  },
+  {
+    "unit": "170",
+    "path": "省考/重庆/2026/申论-三卷.md",
+    "baseline_sha256": "80d2b8b633ac05df7c7dc61e6ba931fc9f26dfa42f1f0467d06535ddbf8bf2f7",
+    "identity": [
+      "重庆",
+      "2026"
+    ],
+    "variant": "三卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_重庆_2026_重庆三卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（重庆三卷）"
+  },
+  {
+    "unit": "171",
+    "path": "省考/重庆/2026/申论-二卷.md",
+    "baseline_sha256": "cd8d82d7c92223839f75d768d92af5a57f27813ab23c66ee4c2b4e01ecbbc32c",
+    "identity": [
+      "重庆",
+      "2026"
+    ],
+    "variant": "二卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_重庆_2026_重庆二卷 · 粉笔会员采(v6) 2026年公务员多省联考《申论》题（重庆二卷）"
+  },
+  {
+    "unit": "172",
+    "path": "省考/陕西/2021/申论-C类.md",
+    "baseline_sha256": "1791c5f1290573f7abbce129d57a6ae4ffab79dddeb999fc6307f81b3266b4dc",
+    "identity": [
+      "陕西",
+      "2021"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_陕西_2021_陕西C卷 · 粉笔会员采(v6) 2021年公务员多省联考《申论》题（陕西C卷）（网友回忆版）"
+  },
+  {
+    "unit": "173",
+    "path": "省考/陕西/2024/申论-C类.md",
+    "baseline_sha256": "29659104f3d7b7c337831c953c2c9ffc27c9e56870c1f674b7c062d764eb3e4b",
+    "identity": [
+      "陕西",
+      "2024"
+    ],
+    "variant": "C类",
+    "missing_numbers": [
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2250 · SRNZ-889 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/889 · content v1.3.6"
+  },
+  {
+    "unit": "174",
+    "path": "省考/陕西/2025/申论-A类.md",
+    "baseline_sha256": "c4e5d9c9a6e55dc02d4d1a14a0bb7528a137237589915f094e9e3d0acb42744c",
+    "identity": [
+      "陕西",
+      "2025"
+    ],
+    "variant": "A类",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_陕西_2025_陕西A卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（陕西A卷）"
+  },
+  {
+    "unit": "175",
+    "path": "省考/青海/2023/申论-行政执法.md",
+    "baseline_sha256": "ce44029164ec8bffdc42837657be44a0a65efc580b612d5ef6cc0ec61255f2b3",
+    "identity": [
+      "青海",
+      "2023"
+    ],
+    "variant": "行政执法",
+    "missing_numbers": [
+      1
+    ],
+    "source_metadata": "shenlunhome.com tid=856 crawled_at=2026-05-29T08:25:13"
+  },
+  {
+    "unit": "176",
+    "path": "省考/青海/2025/申论-县乡卷.md",
+    "baseline_sha256": "60b97a768d1737025e82d95b35508a9c597b305e32975cbe51dcc7afc599cd5d",
+    "identity": [
+      "青海",
+      "2025"
+    ],
+    "variant": "县乡卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_青海_2025_青海县乡卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（青海县乡卷）"
+  },
+  {
+    "unit": "177",
+    "path": "省考/青海/2025/申论-行政执法卷.md",
+    "baseline_sha256": "9982b81f67e778d4cbd37a62ca8a4f88a24469cd2544e639d8baee262553df05",
+    "identity": [
+      "青海",
+      "2025"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shiwuooo/qiushi-shenlun SK_青海_2025_青海行政执法卷 · 粉笔会员采(v6) 2025年公务员多省联考《申论》题（青海行政执法卷）"
+  },
+  {
+    "unit": "178",
+    "path": "省考/黑龙江/2016/申论-C卷：县乡.md",
+    "baseline_sha256": "2511656fc7a2b5320b41f97e6d201735283568995848e24a4801f93a0a0657f2",
+    "identity": [
+      "黑龙江",
+      "2016"
+    ],
+    "variant": "C卷：县乡",
+    "missing_numbers": [
+      1,
+      2
+    ],
+    "source_metadata": "2016年公务员多省联考《申论》题（黑龙江C卷：县乡） · tiku.db papers.id=76018 + materials.db"
+  },
+  {
+    "unit": "179",
+    "path": "省考/黑龙江/2017/申论-省市.md",
+    "baseline_sha256": "58b672f8a9f14ed377a60b71142d9c354c515876eddb678a49ef80c040a2c497",
+    "identity": [
+      "黑龙江",
+      "2017"
+    ],
+    "variant": "省市",
+    "missing_numbers": [
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=400 crawled_at=2026-05-29T08:26:51"
+  },
+  {
+    "unit": "180",
+    "path": "省考/黑龙江/2018/申论-统考.md",
+    "baseline_sha256": "bee6023774d619aa0d003c52a697c9d48219e54d2c4cd5eb0342599357e125fb",
+    "identity": [
+      "黑龙江",
+      "2018"
+    ],
+    "variant": "统考",
+    "missing_numbers": [
+      1,
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=456 crawled_at=2026-05-29T08:26:53"
+  },
+  {
+    "unit": "181",
+    "path": "省考/黑龙江/2019/申论-县乡.md",
+    "baseline_sha256": "8150cc42d9c7863c30acd8fa4619a9fe88a0cab03af50febdcb9c70cf1a381fa",
+    "identity": [
+      "黑龙江",
+      "2019"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      1,
+      2,
+      3
+    ],
+    "source_metadata": "shenlunhome.com tid=508 crawled_at=2026-05-29T08:27:12"
+  },
+  {
+    "unit": "182",
+    "path": "省考/黑龙江/2021/申论-乡镇.md",
+    "baseline_sha256": "a75a3654d7e06c1eccc78043f9403e087611cd66e932ad7114938e6a81260f32",
+    "identity": [
+      "黑龙江",
+      "2021"
+    ],
+    "variant": "乡镇",
+    "missing_numbers": [
+      1,
+      2
+    ],
+    "source_metadata": "shenlunhome.com tid=734 crawled_at=2026-05-29T08:26:47"
+  },
+  {
+    "unit": "183",
+    "path": "省考/黑龙江/2021/申论-省级.md",
+    "baseline_sha256": "ddfb5c1d59f571a3c699d0d3c6e9aee2bc17b508f95b1063cb9713f48b91ddff",
+    "identity": [
+      "黑龙江",
+      "2021"
+    ],
+    "variant": "省级",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=721 crawled_at=2026-05-29T08:26:57"
+  },
+  {
+    "unit": "184",
+    "path": "省考/黑龙江/2022/申论-县乡.md",
+    "baseline_sha256": "9ceb7d7f93681041e89399a0ab2afaf011abd060e0cc0b2c6883ba74a49b1aca",
+    "identity": [
+      "黑龙江",
+      "2022"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=785 crawled_at=2026-05-29T08:27:04"
+  },
+  {
+    "unit": "185",
+    "path": "省考/黑龙江/2022/申论-省级.md",
+    "baseline_sha256": "7521050b50581a60b58df2a7c236b9de4dadbb2f461badb99d45b626c690797b",
+    "identity": [
+      "黑龙江",
+      "2022"
+    ],
+    "variant": "省级",
+    "missing_numbers": [
+      4
+    ],
+    "source_metadata": "shenlunhome.com tid=784 crawled_at=2026-05-29T08:27:20"
+  },
+  {
+    "unit": "186",
+    "path": "省考/黑龙江/2023/申论-行政执法卷.md",
+    "baseline_sha256": "a7b51f77e26eedec6daae6523d4bbda993eab41a59b23bee7a73a0087a53d279",
+    "identity": [
+      "黑龙江",
+      "2023"
+    ],
+    "variant": "行政执法卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "2023年公务员多省联考《申论》题（黑龙江行政执法卷） · tiku.db papers.id=7958638 + materials.db"
+  },
+  {
+    "unit": "187",
+    "path": "省考/黑龙江/2024/申论-省市卷.md",
+    "baseline_sha256": "fe12cb159df0dfd6d7731d5cbe4718079c4314df6febede3fbfbef1480310cd9",
+    "identity": [
+      "黑龙江",
+      "2024"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2234 · SRNZ-873 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/873 · content v1.3.6"
+  },
+  {
+    "unit": "188",
+    "path": "省考/黑龙江/2024/申论-行政执法.md",
+    "baseline_sha256": "279576fa9007564660ccbdbc1e13e42e7a288783f7b02b187c12165299f7ffba",
+    "identity": [
+      "黑龙江",
+      "2024"
+    ],
+    "variant": "行政执法",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2148 · SRNZ-784 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/784 · content v1.3.6"
+  },
+  {
+    "unit": "189",
+    "path": "省考/黑龙江/2025/申论-县乡.md",
+    "baseline_sha256": "a9fc7dad4cf0a49d9885bebce4a0d5b7f304bc8f685d9ad57457b0991c22ae38",
+    "identity": [
+      "黑龙江",
+      "2025"
+    ],
+    "variant": "县乡",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=2232 · SRNZ-871 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/871 · content v1.3.6"
+  },
+  {
+    "unit": "190",
+    "path": "省考/黑龙江/2025/申论-省市卷.md",
+    "baseline_sha256": "f27e94c6f14ee3e724d87c0d4879b417763266948f398f41d9816b6654a24199",
+    "identity": [
+      "黑龙江",
+      "2025"
+    ],
+    "variant": "省市卷",
+    "missing_numbers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_metadata": "Nullapse/研申 data/gongkao_seed.sqlite3 papers.id=1275 · SRNZ-872 · 囊中对比(srnz.net) https://www.srnz.net/community/studyRoom/paper/detail/872 · content v1.3.6"
+  }
+]
