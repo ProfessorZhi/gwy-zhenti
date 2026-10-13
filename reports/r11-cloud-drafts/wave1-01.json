@@ -506,5 +506,211 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "149-3",
+    "answer": "H市营商环境存在的主要问题：一是服务不便捷，老年人和小微企业主因不熟悉线上流程难以自主办理业务，部分窗口缺乏指导或代办服务；二是咨询渠道不畅通，人才认定等事项电话转号、无人接听现象频发，群众反映强烈；三是办事效率低，公积金取号无提醒、不动产抵押登记系统未实现区市融合，实际操作中存在“名不符实”问题；四是政策覆盖不均，助企专员数量少、覆盖面窄，中小企业获得感不足；五是信息透明带来隐私泄露风险，企业法人信息公开后频繁遭遇骚扰。\n\n建议：一是建立“适老+普惠”服务机制，在行政服务中心设置线下指导窗口，对老年人及不熟悉网络操作者提供全程帮扶；二是优化政务服务热线和在线平台，实行号码统一管理、专人值守，确保咨询有人接、问题有回应；三是推动区市系统互联互通，打通不动产登记移动端应用壁垒，实现“线上申报、邮寄送达”；四是健全助企服务网络，扩大专员覆盖范围，建立动态调整机制，精准对接中小微企业需求；五是完善企业信息保护制度，明确公开边界，对敏感信息实行脱敏处理，减少骚扰电话和短信。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1808d1da7191d0052a16b226ee2077505e1ed5c8b14df1c2e1875f2e3c2a2d8c",
+    "selected_material_sha256": "714dd29d79311db462d4aaa9146f4385bf2b48a27f733d04fe09421e87280340",
+    "question_sha256": "7269f57c94089f836638eff948b0188e70086018a4759958704ae34fb855b63c",
+    "characters": 437,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 437,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 258,
+          "prompt_tokens": 1742,
+          "total_tokens": 2000,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "159-1",
+    "answer": "滨河区产业社区特点：一是产城融合，实现产业与生活空间一体化；二是功能多元，配备教育、健身、托育等生活配套；三是资源联动，整合企业、人才、政策等要素，推动资源共享；四是注重人文关怀，开展文体活动，满足员工社交与生活需求；五是党建引领，凝聚组织力量，促进协同共治。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "030a1c785843cfb213366cd10476058c5c4554f501ad07be7b55266e90b54f14",
+    "selected_material_sha256": "34bce19be46b83186fb357650e289a01d6b4fb274d6228688e30d477956e47aa",
+    "question_sha256": "41fbadae51ad1ca334a3c4e61922b51bd5eb5cec4e0d71d38551c70380d4041b",
+    "characters": 130,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 130,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 81,
+          "prompt_tokens": 1544,
+          "total_tokens": 1625,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "167-4",
+    "answer": "**协同治理：破解城市交通顽疾的关键路径**\n\n“分工的表象在分，但其实质是背后的合”，这一判断深刻揭示了现代城市治理中的核心矛盾——职责划分清晰，却缺乏系统联动。Z市火车站网约车停车乱象正是典型例证：上车点设置模糊、违停频发、收费机制不合理、执法响应滞后，尽管公安、交通、物业等多部门各司其职，但因缺乏协同机制，治理始终停留在“临时补救”层面，群众出行体验持续恶化。\n\n要真正破解此类问题，必须跳出“各自为战”的思维，构建系统性协同治理体系。可借鉴向南河跨省共保联治经验，建立由交通、城管、公安、网约车平台等参与的“火车站停车联合治理专班”，明确职责边界，统一管理标准，实现信息共享、问题共商、责任共担。例如，通过联合制定《车站停车规范指引》，明确上车点设置、违停处罚、收费标准等规则，避免因标准不一导致执行混乱。\n\n协同治理的关键在于制度设计与流程再造。现实中，网约车与私家车混停、超时收费等问题，根源在于制度缺位。应推动建立科学的停车资源配置机制：一方面，优化上车点布局，增设清晰标识，合理划分区域，避免“微缩点”导致乘客难寻；另一方面，探索差异化收费标准，对高峰时段实施动态调价，提升供需匹配效率，缓解“打车难”与“停车乱”的矛盾。\n\n技术赋能是实现协同治理的重要支撑。目前Z市虽有监控系统，但存在死角多、响应慢等问题。可借鉴材料中遥感影像与无人机在河流治理中的应用，引入智能感知设备，对重点区域进行实时监测和自动预警。通过大数据分析客流高峰、车辆分布等信息，动态调整上车点数量与运营调度方案，实现从“被动应对”向“主动预判”的转变。\n\n协同治理不仅是管理手段的升级，更是治理体系现代化的体现。它要求政府打破条块分割，以系统思维统筹全局。正如联合河长制通过“一张图”实现跨省共治一样，火车站停车问题也需建立“一张网、一套人、一个平台”的协同机制，实现信息互通、行动同步、闭环管理，真正形成治理合力。\n\n治理成效离不开公众参与与制度反馈。网约车司机反映的“超时收费”问题，若能纳入平台定价机制调整范围，既体现公平，又提升运营效率。同时，应通过宣传引导增强市民对规范停车的理解，推动形成“人人参与、共建共享”的良好氛围，使治理更具温度与可持续性。\n\n综上所述，“分工在表，合在实质”，城市治理的深层逻辑在于协同而非分割。唯有打破部门壁垒，完善制度设计，强化技术支撑，深化公众参与，才能将碎片化管理升华为系统性能力，真正实现交通秩序优化、群众出行便捷与政府服务效能提升的有机统一。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a14ef6f8697cb9b5f0b3ffbc67cf66fd673a9c657d4ef49c01c4da144182cd60",
+    "selected_material_sha256": "e286c8da2cab471d9e2676f39b4881092df8c130e3af5012322b841b0b7fba0e",
+    "question_sha256": "4417c141076a04da541158d8149b6e5f6cde98d29455104943b0181e853ad6d2",
+    "characters": 1023,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1265,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 788,
+          "prompt_tokens": 5293,
+          "total_tokens": 6081,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1265,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 788,
+          "prompt_tokens": 6204,
+          "total_tokens": 6992,
+          "prompt_tokens_details": {
+            "cached_tokens": 6080
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 1023,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 632,
+          "prompt_tokens": 6204,
+          "total_tokens": 6836,
+          "prompt_tokens_details": {
+            "cached_tokens": 6203
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "178-1",
+    "answer": "当前我国农村纠纷具有多发性、复杂性和传统与现代交织的特点。一是纠纷类型多样，涵盖赡养、土地承包、房屋改建、征地补偿等，涉及利益分配和政策理解冲突；二是解决方式以调解为主，60%以上村民首选村干部或乡贤调解，体现“以和为贵”的传统习惯；三是纠纷成因复杂，既有习俗偏差（如敬老院赡养争议），也有政策执行不透明（如土地流转、征地信息缺失）引发矛盾；四是基层治理能力不足，部分调解员缺乏专业培训与激励，存在偏私或推诿现象，影响化解效果。同时，村民法律意识逐步提升，但司法服务可及性差、成本高，制约依法解决路径的运用。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "dfdc462caf0bbc58dff606aab34b921e7acf3c3f423a9ffb18f0ee98d7db518d",
+    "selected_material_sha256": "a21ba7297bd9622b395a5761bde7a5710084dc510e7d9a11e126afa21beb30a1",
+    "question_sha256": "a79764f2a2149d1b72adc077781562c22b34c286ba0bd1dbd4c4fe95293e9d9e",
+    "characters": 254,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 254,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 164,
+          "prompt_tokens": 5015,
+          "total_tokens": 5179,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
