@@ -1,0 +1,137 @@
+[
+  {
+    "id": "033-1",
+    "answer": "N省推动数字经济高质量发展的主要做法包括：依托“东数西算”战略，布局大型数据中心，打造西部算力之都；构建智慧应用场景，推动“云种植”“智能车间”“远程诊疗”等数字化转型，在农业、医疗、交通等领域实现精准治理与服务升级；强化数据“聚、通、用”，形成覆盖教育、生态、安全等领域的智慧应用矩阵；吸引数字企业落地，发展数字人、人工智能等前沿技术产业，促进产业链向高附加值环节延伸，提升全要素生产率，实现传统产业智能化改造和新业态培育。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f9184587d1bf13838588ffeefd0e9cc7b9edfe3b30aa34c00b867b0387a060e6",
+    "selected_material_sha256": "d8bad811151e32e19e7633bc5b845c8e10ffad7201e5a758c8308824cd35cadc",
+    "question_sha256": "57974c63f0a0a4e79632f94821a475adf87670918e57ebd1563dadd210c8cbaf",
+    "characters": 213,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 213,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 124,
+          "prompt_tokens": 1792,
+          "total_tokens": 1916,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "042-3",
+    "answer": "以声聚能：社区治理中的民意共振\n\n“以声聚能”，并非空泛口号，而是向阳街道社区治理中生动实践的缩影。在城市精细化治理的“最后一公里”，居民声音被真正听见、被有效整合，成为推动社区发展的核心动力。\n\n社区发声人作为居民与基层治理之间的桥梁，通过常态化议事机制，将群众关心的“急难愁盼”转化为可操作的治理项目。从闲置地块改造到家电维修志愿服务，再到停车位建设进度监督，一个个“微实事”背后，是居民参与、协商共治的真实路径。这种“拉家常式”的沟通，消解了信息不对称与信任鸿沟，使政策落地更接地气。\n\n更重要的是，“以声聚能”实现了治理主体的重构。过去社区治理多由干部单向推进，如今居民成为问题发现者、方案提出者和监督者，形成共建共治共享的良性循环。115个群众需求、106个项目、1611.8万元投入，正是民意汇聚后的具体成果。这不仅改善了人居环境，更重塑了邻里关系，增强了社区凝聚力。\n\n“以声聚能”本质上是治理现代化的体现——倾听是起点，回应是关键，行动是落点。它告诉我们，城市治理的温度，源于居民的参与；社区的活力，来自声音的共振。唯有把群众的声音真正“听进去、用起来”，才能让基层治理行稳致远。\n\n（498字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4d99f12caf232365b6ba340917f8f8293f154814f534663dad03a72d057934a1",
+    "selected_material_sha256": "33ed0966526b5cd0ae3ca457a5f72c8909fbebc25b418261cbe9eda094c71850",
+    "question_sha256": "1495f0990fa624fa133111ec5a9a38b015a24252a2fb3b7c771dd38271f7edf4",
+    "characters": 496,
+    "word_limits": [
+      450,
+      550
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 496,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 319,
+          "prompt_tokens": 1880,
+          "total_tokens": 2199,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "053-2",
+    "answer": "“村村通”变“村村痛”，源于道路狭窄导致车辆通行困难，引发刮擦甚至争执；随着交通需求增长，村民对出行条件改善的迫切性凸显。“村村痛”转为“村村通”，是因道路升级改造拓宽至8米，实现组组通、户户通，有效缓解了交通压力。同时，道路平整通畅提升了物流效率，促进了农产品销售和旅游发展，带动了农家乐、快递等新业态兴起，增强了村民获得感与幸福感。这一变化体现了从满足基本出行需求到提升综合发展能力的演进，反映农村基础设施建设在回应实际问题中的动态调整与持续优化，真正实现了“通”入民心、惠及民生。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0a74cae3216f99c9452e25cf84d391a7a90ece3ef34c0c085e1f2281ebf2d673",
+    "selected_material_sha256": "236cf9991e8130acaaa6208cb81b7a9ab66aafb35d1acdc10d4f5be948f0033c",
+    "question_sha256": "26c1fef868e51f0a54eedcdde75c6e807c8e3bd68029a5411154c06dd26ad31f",
+    "characters": 243,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 243,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 151,
+          "prompt_tokens": 1478,
+          "total_tokens": 1629,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
