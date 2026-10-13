@@ -506,5 +506,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "158-3",
+    "answer": "调研报告提纲\n\n一、试点成效显著，模式运行可行  \nD市第四医院“无陪护病房”试点两年来，患者及家属满意度达90%以上，有效减轻了家属陪护负担，提升了护理专业性与服务连续性，尤其在骨科、心内科等科室取得良好反馈。\n\n二、存在突出问题需系统解决  \n1. 人才结构失衡：护理人员以“4050”群体为主，平均年龄52岁，学历偏低，年轻护理人员因待遇低、职业不体面、晋升无路径而流失严重。  \n2. 服务监管缺位：第三方护理人员非医院正式员工，缺乏有效监督机制，存在服务态度差、响应迟缓等问题，患者权益保障面临风险。  \n3. 经济负担较重：当前护理费用每日120元，对中低收入家庭仍显压力；项目运营长期亏损，医院财政负担沉重。\n\n三、建议与对策  \n1. 建立统一监管机制，明确第三方护理服务标准，实行服务质量评估与问责制度，强化医院主体责任。  \n2. 推动医保支付改革，参照其他省份做法，将无陪护费用纳入医保报销范围，按比例分担，减轻患者经济压力。  \n3. 加大专业护理人才培养力度，完善薪酬激励机制，提升职业尊严，推动护理岗位专业化、年轻化发展。  \n4. 分步推进试点，结合实际评估运行效果，稳妥扩大覆盖范围，确保安全与可持续。\n\n（全文共448字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "bb53140bc0ae3c352832522d50d449660f133a83d80df1f53fecd4260f0ddd4b",
+    "selected_material_sha256": "6e23fcf37e9f3d2c581c10b45f1410019bf0a7a7dc84d21ad9d81d152565696a",
+    "question_sha256": "f5f05fa2ec72ef9d214a3e40924e833e7ec984a184ca2a8f13f92f62cab06bfa",
+    "characters": 489,
+    "word_limits": [
+      400,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 489,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 330,
+          "prompt_tokens": 1830,
+          "total_tokens": 2160,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "167-2",
+    "answer": "当前H县农用地膜使用回收存在多重问题：一是农户盲目滥用薄地膜，部分使用非标地膜，且对污染危害认识不足；二是地膜回收难，农户清理积极性低，焚烧或随意丢弃导致二次污染；三是回收成本高，非标膜处理效率低、利润微薄，企业亏损严重；四是县乡部门职责不清，管理链条断裂，执法监管不严，全链条治理缺位；五是缺乏固定回收点和有效激励机制，政策支持不足。\n\n改进建议：一是严格监管地膜生产销售，打击非标地膜入市行为；二是推广全生物可降解或高强度易回收地膜，并实施“以奖代补”补贴政策；三是设立县、乡、村三级标准化回收点，配套财政补贴，降低农户和企业回收成本；四是加强农技宣传与农资店引导，提升农户科学使用意识；五是建立地膜全链条监管机制，推动生产、使用、回收各环节协同治理。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a14ef6f8697cb9b5f0b3ffbc67cf66fd673a9c657d4ef49c01c4da144182cd60",
+    "selected_material_sha256": "6f06195db9160ec0fbbea142a67a94104cb81fa4acbb22120b59413db78a147f",
+    "question_sha256": "78634b09c94e841b49671843c9f505077c6b030b63e63953beb1d87cc97d2709",
+    "characters": 326,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 326,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 217,
+          "prompt_tokens": 1792,
+          "total_tokens": 2009,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "177-3",
+    "answer": "F市“三资”治理工作情况简报  \n\nF市扎实推进农村集体“三资”治理，坚持摸清家底、规范使用、盘活资源。通过实地测量、多方参与、公示确认等方式，全面清查资产、资源、资金，共清收闲置地10769亩，盘活15167亩，增收2832万元，规范问题合同10344份，清收债权6840万元。建立“一村一账户”机制，实行镇级代管、报账员制度，实现账目“三代管”、资金“全程留痕”，强化监管闭环。依托农村产权线上交易平台，推动资源公开交易，实现网上报名、竞价招标、阳光操作，部分项目溢价超3倍，有效提升资源变现能力。法柳村通过盘活荒地发展夜市，带动群众增收，形成可复制推广经验。治理工作既规范了村集体“三资”管理，又激发了农村发展活力，推动村庄面貌和村民福祉同步改善。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1b165403eaac8fa7e82268d41b77a2d2a4a06451fce8e06032766c0ca6b82591",
+    "selected_material_sha256": "9b41097547d012350888f855d11c2e371c6f8f369c65e4e5d557eecac6513a90",
+    "question_sha256": "8ab7043b73692c2c515398141bb5eccae9498f9e8577d1cee2045bb64292e39f",
+    "characters": 332,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 332,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 231,
+          "prompt_tokens": 1887,
+          "total_tokens": 2118,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "189-1",
+    "answer": "非遗传承者通过创新形式让技艺融入生活：如悦红门店将非遗项目嵌入体验式消费，实现日常化传播；吴山泥人结合节庆、联名设计“泥人+”产品，并运用3D打印技术打造潮流盲盒，推动年轻群体接受；小宋以跨界融合理念开发时尚文创，拓展产品应用场景；李张传承人依托博物馆和线上平台普及彩灯文化。这些举措既保留传统精髓，又契合现代生活需求，使非遗真正走进百姓日常，实现活态传承。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "87cbc510c863dee92cab701e3d6d475549df865e16aab31af8b61f8ff64518ad",
+    "selected_material_sha256": "26f8ad2651587481cf0cb8263b32f00b1e92b79fec184c759545661172ff4938",
+    "question_sha256": "e94e8f703c8f2f8a4ffb162b34e03609d84ac4a76cd78fe4db79c39c69191b9a",
+    "characters": 179,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 179,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 116,
+          "prompt_tokens": 1737,
+          "total_tokens": 1853,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
