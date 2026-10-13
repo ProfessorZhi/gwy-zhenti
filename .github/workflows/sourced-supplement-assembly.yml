@@ -1,0 +1,24 @@
+name: Sourced answer assembly
+on:
+  push:
+    branches: [essay/sourced-supplement-20261013]
+permissions:
+  contents: read
+jobs:
+  assemble:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          show-progress: false
+      - name: Install pinned validators
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0 beautifulsoup4==4.13.4
+      - name: Assemble and validate source-only references
+        run: |
+          if test -f reports/SOURCED-SUPPLEMENT-20261013.jsonl; then
+            python tools/verify_sourced_supplement_20261013.py
+          else
+            python tools/source_supplement_20261013.py
+          fi
