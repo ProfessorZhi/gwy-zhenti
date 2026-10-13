@@ -204,5 +204,192 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "063-4",
+    "answer": "**人与社会的双向奔赴：数字时代下的乡村重构**\n\n在“社会在‘变身’，人也在‘变身’，人与社会相互成就”这一命题下，乡村正从传统边陲走向充满活力的现代生活场域。以“95后”姑娘小覃创办“优选驿站”为例，她最初面临的是村民对智能手机和网络购物的陌生与排斥。面对这一现实，她没有急于推进技术应用，而是通过日常走访、拉家常、手把手教学，帮助老人从会打电话到学会加群、购物。“他们慢慢地就学会使用智能手机，也慢慢开始支持我的‘优选驿站’。”这一过程不仅打通了城乡商品流通的“最后一公里”，更让村民从被动接受者转变为积极参与者，实现了技术能力与社会参与的同步提升。\n\n这种个体层面的“变身”，是社会结构深层变革的缩影。当老年人开始使用手机，他们不再是信息孤岛中的旁观者，而是成为平台运营、邻里互动和社区治理的参与者。随着媒介素养提升，越来越多在外打拼的年轻人也加入“优选驿站”群，甚至返乡创业，参与运营。这表明，技术的普及不是单向输出，而是在人与人的持续互动中形成自我强化的正循环，真正实现了从“工具使用”到“社会融入”的跃迁。\n\n与此同时，乡村的社会形态也在发生结构性转变。如“木作艺术空间”创办人刘先生所言，村庄依水而建、民居分散，生态格局营造出久违的亲切感与生活节奏，契合了城市人群对“轻度假”式生活的向往。越来越多设计师、企业高管、手工艺者选择返乡定居，为村庄注入了新理念、新技能和个性化IP。目前村中已有170人来自城市，他们不仅带来了资本与技术，更带来了对乡村生活方式的重新定义。\n\n社会环境的改善反过来又推动个体发展。J省服装产业通过“抱团发展”平台，实现中小微企业间订单转接、产能共享，在疫情冲击下仍保持稳定生产，体现了组织化协作对个体抗风险能力的增强。类似地，“优选驿站”若能依托政府数字服务网络、物流支持和培训体系，将更具可持续性。这说明，个体的主动改变离不开制度与平台的支撑，而社会环境的优化，也为个人提供了施展才华的空间。\n\n乡村振兴的核心，在于人与社会的双向赋能。城市青年回乡，带来新思维、新技术；乡村则提供稳定的生活节奏、自然生态和文化归属感，形成“人才回流—产业激活—环境改善”的良性循环。这种循环打破了城乡二元对立，为新型城镇化提供了可复制路径——不是简单的人口迁移，而是基于价值认同与生活选择的深度融合。\n\n唯有当技术真正融入人的生活节奏，当社会环境支持个体成长与表达，才能实现人与社会的相互成就。小覃从“理想很丰满”到“现实骨感”的突破，不是偶然，而是源于对村民真实需求的尊重与耐心陪伴；而乡村从“空心村”到“文艺村落”的蜕变，也证明了当人们被看见、被理解、被赋权时，社会便会自然生长出新的活力。这种双向奔赴，既是个体选择的体现，更是社会发展趋势的必然——在数字时代，人不再只是社会的参与者，更成为推动其变革的重要力量。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3a6e64ef8b58bd0c3d36a8dd4f2f2c7a23400288db095282bfe3403853cd24e0",
+    "selected_material_sha256": "b5929c4fbb9ef7e1aa750160ba4f365472029e9ad9400efad4f305a560e2fb08",
+    "question_sha256": "15ddf20062d9480709c03843b171e0113099831748cf69a7aaa70ce8ffe414bf",
+    "characters": 1158,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1297,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 782,
+          "prompt_tokens": 4296,
+          "total_tokens": 5078,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1024,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 631,
+          "prompt_tokens": 5200,
+          "total_tokens": 5831,
+          "prompt_tokens_details": {
+            "cached_tokens": 4913
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 1065,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 656,
+          "prompt_tokens": 5035,
+          "total_tokens": 5691,
+          "prompt_tokens_details": {
+            "cached_tokens": 4330
+          }
+        }
+      },
+      {
+        "iteration": 4,
+        "characters": 1073,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 671,
+          "prompt_tokens": 5060,
+          "total_tokens": 5731,
+          "prompt_tokens_details": {
+            "cached_tokens": 4323
+          }
+        }
+      },
+      {
+        "iteration": 5,
+        "characters": 1158,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 715,
+          "prompt_tokens": 5075,
+          "total_tokens": 5790,
+          "prompt_tokens_details": {
+            "cached_tokens": 4414
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "076-1",
+    "answer": "村民生活由“空心村”变为“实心村”“开心村”，得益于产业振兴与综合发展。通过土地流转入股、建设田园综合体，实现家门口就业和土地分红；引进加工产业链，提升柑橘附加值，解决销售难题；发展生态农业与文旅融合，拓展收入来源；完善基础设施与公共服务，增强村民获得感。多方参与、政策支持与产业联动，推动了村庄经济活力与精神面貌的双重转变。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cee1b574a891dc7c3eed3f080a04099aa66e28677ba03ff206c49d9b7c272556",
+    "selected_material_sha256": "98cf4cc63e48a5e9315152d2858e9f2d679ec663ed2b14e29b52d4e1992c440e",
+    "question_sha256": "bad96ce08cf522db5cbb73a6cd0e715e3a2925e63db632bcb84f4651e0ab29a0",
+    "characters": 163,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 163,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 96,
+          "prompt_tokens": 1796,
+          "total_tokens": 1892,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "085-3",
+    "answer": "“日子越过越有奔头”体现了脱贫群众从物质改善到生活品质提升的全过程。搬迁后，住房条件改善、生活更安稳，解决了“住得安心”的基础问题；通过技能培训和创业实践，实现稳定就业，收入增加，摆脱贫困依赖；子女就近入学，教育难题得以缓解，家庭发展更具可持续性。同时，从适应新生活到理解社区管理、参与社会规则，反映出群众观念的转变与自我成长。这些变化虽有适应期和挑战，但通过政策引导、社区支持和家庭努力，逐步实现从“被动脱贫”向“主动奋斗”的转变，真正实现了生活品质的全面提升，体现了乡村振兴背景下人民群众获得感、幸福感的不断增强。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3f8fabd9f9a56e1c44887ac54009d6e81e81680e07fb4bf1c2545a9a12d91391",
+    "selected_material_sha256": "b1c9e3112288cb933f6dc4c7c01965f592a6dfb65fd47d5a5574c0e4bcf61a51",
+    "question_sha256": "358152e115f838144cfbec1660cce2e50b9afb608b5fd1410d044fdb914efdc7",
+    "characters": 259,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 259,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 149,
+          "prompt_tokens": 1760,
+          "total_tokens": 1909,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
