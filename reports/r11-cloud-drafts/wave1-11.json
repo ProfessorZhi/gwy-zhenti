@@ -1,0 +1,182 @@
+[
+  {
+    "id": "014-3",
+    "answer": "Z省特色小镇建设考察报告\n\nZ省特色小镇坚持“非镇非区”定位，不设行政区划属性，聚焦特色产业，融合产业、文化、旅游功能，形成创新创业平台。建设中注重因地制宜，如梦想小镇依托高校资源吸引创业群体，云思小镇服务企业骨干留创，大云镇发展巧克力旅游，画乡集聚画家创作，体现市场导向与形态创新。\n\n政府与市场关系处理得当，通过“放水养鱼”提供创业条件，不以GDP或税收为唯一目标，避免了“以投资挂帅”的传统路径依赖。政策支持明确：对纳入名单的小镇给予土地指标奖励和财政返还，激励非房地产类产业投资。\n\n经验表明，特色小镇需本土化设计，不可简单复制。建议我市在建设中坚持“非镇非区”定位，聚焦特色产业，避免房地产开发主导；强化规划引导与产业准入，确保项目真实发展、有效集聚；建立动态评估机制，防止“名不副实”现象，真正实现城市修补、生态修复与产业升级的协同作用。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7a0eb906df926d0d2fc4fc25c1bf67e45dc44d97042dfbee978e37ef5f56bd8c",
+    "selected_material_sha256": "edf1fbb60ad9b8c825c6f0d700f05559c024efce658de2286fb536a76bcfdb80",
+    "question_sha256": "1ba4f0cb3419ba6ed3e1bf45172155f202e0f3f75fae450625104c84394995d7",
+    "characters": 378,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 378,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 234,
+          "prompt_tokens": 2006,
+          "total_tokens": 2240,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "026-1",
+    "answer": "E县在规范小微权力运行方面采取以下做法：一是制定村级小微权力正面清单，梳理6大类28项权力，明确村干部职责和流程，堵塞人情干扰；二是通过“村务e点通”APP实现报账、查询、投诉等功能，提升透明度和便民性；三是推行“村务直播间”线上公开机制，定期直播村务进展，接受村民监督，保障知情权和参与权；四是开展村干部用网能力培训，提升其信息化履职水平；五是实行小微权力事项集体承诺制度，增强干部廉洁自律意识，推动村务公开透明化、规范化。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "98d2523ddb99ac482fce0a47d839e74cd9d1548b81b7cac779f1a208b6856c24",
+    "selected_material_sha256": "bce47cca05c438f6d3c4a4dbcf423b09063571ac11667bc23ed5ad07670b34eb",
+    "question_sha256": "2cc8573b5daef466b7dda7684784c7aadb999c1c95ec4c77e239e247bde9baf1",
+    "characters": 213,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 213,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 134,
+          "prompt_tokens": 1803,
+          "total_tokens": 1937,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "036-1",
+    "answer": "信用体系建设提升了交易效率，降低违约率；推动政务服务“刷脸”办理，提升便民水平；促进资源共享与公平发展；引导公民遵守公共规则，增强社会诚信意识，助力构建和谐有序的社会环境。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8e8c9810f4c65b3c699dc8ee18faba21789f01601e8890dfc98967fab7c1bd6f",
+    "selected_material_sha256": "ef649591e3dbe42f96ba4100416c9c17bc75a9355eeb5d8e9da21d9f8619fc7e",
+    "question_sha256": "4d5780b19b2ded27b8b36c5c81c89e88fc8159f320c30443bfde909a4c36b8e0",
+    "characters": 86,
+    "word_limits": [
+      35,
+      150
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 86,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 47,
+          "prompt_tokens": 1585,
+          "total_tokens": 1632,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "045-3",
+    "answer": "**传统产业转型升级经验交流发言提纲**\n\n一、坚持变中求进，推动产业持续迭代  \nD县立足传统制造基础，不回避挑战，主动拥抱变革，实现从代工生产向原创设计、品牌制造转型，形成“无中生有”的发展路径。\n\n二、聚焦原创设计，提升产品附加值  \n出台备案管理制度，鼓励企业开展ODM和原创设计，推动设计研发投入占销售额比重达5%，打造具有文化内涵的自主品牌，对接国际市场需求。\n\n三、推进数字赋能，提升生产效率  \n建设工业互联网平台和柔性生产线，实现产线30分钟切换，支持小批量、个性化定制，破解工序等待与返工难题，增强制造敏捷性。\n\n四、构建协同生态，优化供应链布局  \n通过数字化供应链平台，实现大企业发包、中小企业抢单，形成供需高效匹配的产业协作网络，提升整体产能利用率。\n\n五、深化内外贸融合，拓展市场空间  \n推动外贸内贸一体化发展，拓展南美等新兴市场，建设直播基地，实现线上线下协同，增强抗风险能力。\n\n六、坚持新旧融合，实现可持续发展  \n传统产业转型升级不是“另起炉灶”，而是持续更新迭代，在守正中创新，在变革中焕发韧性与活力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "187ded3df4b70aedd18d275046327bac27abdb51da1ec885be3625f24031e0d3",
+    "selected_material_sha256": "bae97649ea30fa981436e9e8bb9b29fe6e42ac1b5df8d12dc4294aae6fefb552",
+    "question_sha256": "c8099d43cd938c0ee5346bb8dc2f989e77bd2fdc8561e26bba0bd7aaf508c42e",
+    "characters": 437,
+    "word_limits": [
+      405,
+      495
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 437,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 264,
+          "prompt_tokens": 1778,
+          "total_tokens": 2042,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
