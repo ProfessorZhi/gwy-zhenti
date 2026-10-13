@@ -313,5 +313,95 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "118-3",
+    "answer": "疫情防控常态化下，政府应推动中小企业长效化扶持：一是优化营商环境，建立常态化企业服务机制，及时掌握企业运营动态，精准施策；二是强化产业链协同，推动上下游供需对接，缓解资金回笼周期长问题；三是加大技术创新支持，设立专项基金鼓励技术改造与产品升级，拓宽销售渠道；四是健全融资服务体系，推广信用贷款、供应链金融等普惠金融模式，降低融资门槛；五是完善出口支持机制，加强国际市场信息对接，协助企业开拓新兴市场。通过制度化、常态化政策供给，构建稳定可持续的发展环境，切实提升中小企业抗风险能力与综合竞争力。  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d8738e66b966ae1f0f144b25bda1a62ac98a80cc3cb9676476296bbc4e33abc3",
+    "selected_material_sha256": "071ddce258d9a130c752ab2ab1ce9ae4e84368ad9e68c9c09eb692f7538ff32b",
+    "question_sha256": "acfabfa6f4839494d02c9ad2f7459789761c6bbbdc23f5eba95e45f2cffad71e",
+    "characters": 256,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 256,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 137,
+          "prompt_tokens": 865,
+          "total_tokens": 1002,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "130-3",
+    "answer": "改革开放以来，赵家村发生显著变化：从“吃不饱”到实现温饱，再到生活富足；从单一种植粮食到发展苹果产业，实现增收致富；居住条件大幅改善，基础设施完善；村民思想观念更新，生活水平提升，精神文化生活丰富，乡村振兴步伐加快。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "98e2af77363ffd7ed3bf4a6c7b132c253ea1553759ec2485c246d40bff192f81",
+    "selected_material_sha256": "013e5f2b718116a3edcc1473a2ecdb32eb618f4976e4b28550c565e4ef0eaec9",
+    "question_sha256": "699060311c448328bf63c048465f2dc753c8796932f206fb380cc34ea603942a",
+    "characters": 108,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 108,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 65,
+          "prompt_tokens": 1789,
+          "total_tokens": 1854,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
