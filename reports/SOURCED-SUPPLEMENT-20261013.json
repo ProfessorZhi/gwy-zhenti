@@ -1,17 +1,18 @@
 {
-  "status": "awaiting_github_actions",
+  "status": "source_and_preservation_checked",
   "baseline_commit": "f0649b5c134a78bc9c5ffb38c6a8b719c369f268",
   "papers_modified": 51,
   "source_answer_positions_added": 117,
-  "new_full_essay_positions": 14,
   "new_AI_answers": 0,
   "known_missing_answers_before": 568,
   "known_missing_answers_after": 451,
   "unparsed_exam_files": 9,
   "source_files_used": 50,
   "positions_with_external_institution_crosscheck": 11,
-  "machine_flagged_files": 547,
-  "source_presence_check": "passed against user-provided original source files",
-  "preservation_check": "Original exam bodies preserved; all 51 changes reverse to original SHA256",
-  "answer_authorship": "Original source answers only; unspecified authors remain unspecified; no scored high-score claim."
+  "machine_flagged_files": 546,
+  "answer_authorship": "Original sources only; unspecified authors remain unspecified; no scored high-score claim.",
+  "essay_example_positions_added": 14,
+  "new_external_author_sources": 2,
+  "external_author_sources_counted_as_local_full_answers": 0,
+  "full_regression_status": "awaiting_github_actions"
 }
