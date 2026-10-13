@@ -178,5 +178,211 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "060-2",
+    "answer": "乡村新职业发展中面临的主要问题包括：农机使用受限，道路条件差，村民缺乏培训；民宿文化体验虽具特色，但基础设施不足，夜间照明与安全存在隐患；农业项目投资大、周期长，融资难，智慧农业系统难以持续推进；文旅活动宣传依赖传统渠道，新媒体运营能力薄弱，引流效果不佳；电商直播网络不稳定，专业人才短缺，团队力量分散，缺乏可持续发展支持。\n\n建议：加强基础设施建设，拓宽村道并完善夜间照明；建立农机操作培训机制，提升村民使用技能；设立专项金融扶持政策，缓解农业项目融资难题；联合县融媒体平台开展新媒体运营培训与联合宣传；优化网络覆盖，提升直播稳定性；鼓励返乡青年参与创业，政府统筹提供启动资金、场地及配套服务，形成人才共育、资源共享的发展格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "49b77d17d76aa7c42a67678b5fa3279b78b29542b6ea7f0424afcc1f9f1a0312",
+    "selected_material_sha256": "7f14139638db27005088a479ca4f25d2e64cdfa0ddc93ca76be7b447387a57dd",
+    "question_sha256": "fb47a863e49ca8466f8164464d982136d9adb2a94601314eea506ce5fe5a5a0f",
+    "characters": 313,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 313,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 175,
+          "prompt_tokens": 1651,
+          "total_tokens": 1826,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "074-1",
+    "answer": "D市在进步新村试点改造中，建立“进步议事港”居民议事机制，由居民共同决策改什么、怎么改；推动党员带头参与志愿服务，加强宣传动员；因地制宜实施基础类、完善类和提升类改造，新增停车位、电梯、养老休养中心等设施；引入社会资本参与建设与运营，实行物业化管理，提升服务品质，增强居民归属感和参与度，实现老旧小区环境改善与民生福祉提升。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "617287f9ecf876495585df09fa2d2bdb2f2546cd55092accc4ca9522609c8a77",
+    "selected_material_sha256": "e7afe5f1800b2ccacc41754ff322df11cb753abb5aaf70d29760a092ec8ed430",
+    "question_sha256": "8025794b1a5df60b669d255124f96fab7c079a13e9659557182143c03d781bf9",
+    "characters": 162,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 162,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 98,
+          "prompt_tokens": 1668,
+          "total_tokens": 1766,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "082-4",
+    "answer": "**汇聚合力，共筑高质量发展新未来**\n\n在当今时代，高质量发展呼唤系统性思维与协同行动。“要善于汇聚各种力量形成合力”，不仅是对资源高效配置的深刻洞察，更是推动经济社会持续进步的根本路径。J市通过打造特色产业集群、建设共享数据中心、设立攻关专项等举措，生动诠释了“联结当下，畅通未来”的实践逻辑：唯有打破孤岛式发展，实现要素流动、能力互补与协同创新，才能在复杂环境中赢得主动。\n\n产业集群的崛起，本质上是产业链上下游、大中小企业之间形成的价值共同体。J市以“一群一班、一群一策”机制设立工作专班，精准施策，既发挥龙头企业“链主”作用，又通过共享平台赋能中小微企业。例如，机器人共享工厂依托5G与工业互联网构建的共享数据中心，实现生产要素按需调配，使中小企业得以低成本接入先进制造能力，破解了“有单难做、无单可接”的困境。这种“资源共用、风险共担、利益共享”的协作模式，正是高质量发展所需的组织韧性。\n\n更深层次看，合力形成的关键，在于系统性整合科技、产业与人才等核心要素。J市设立核心技术和“卡脖子”攻关专项，引导骨干企业联合组建平台，集中力量突破关键环节，如半导体基板实现自主替代，不仅打破国外垄断，也增强了产业链安全性和抗风险能力。这说明，真正的合力不是简单的加法，而是通过顶层设计，将分散的创新资源转化为攻坚克难的协同动能。\n\n与此同时，政策引导与制度创新是激发合力的重要保障。J市建设科创飞地、提供“拎包入驻”服务、设立产业基金，打通了人才与资本的空间壁垒，让科技前沿信息能够第一时间触达本地企业。这种“前哨式布局”，不仅提升了创新效率，也构建了更具活力的产业生态。由此可见，政府的有形之手，不仅要“搭台子”，更要“引方向”“建机制”。\n\n从更宏观视角看，区域协同中的合力，体现为资源互补、功能互济与命运共担。KMN都市圈通过建立政务服务联席机制、推动医疗医保互通、实现教育师资交流，打破了行政边界，提升了居民生活便利度；在产业层面，三市围绕光电子等优势领域形成“主链在中心、配套在周边”的发展格局，实现了产业链的高效循环与互补共赢。这种跨域协同，不仅缩短了时空距离，更重构了区域发展逻辑。\n\n值得注意的是，合力的形成并非一蹴而就，需要持续机制建设与动态优化。无论是J市的共享平台，还是KMN都市圈的联席会议制度，都体现出“制度化、常态化”的治理智慧。这启示我们，推动社会进步，不能停留在口号层面，而要构建可操作、可持续的协作体系，让合作真正落地生根。\n\n综上所述，“汇聚力量”是应对时代挑战的战略选择，也是实现高质量发展的必由之路。从企业到区域，从产业到生态，唯有打破壁垒、强化协同、激发内生动力，才能在变革浪潮中把握机遇、赢得未来。正如J市与KMN都市圈的实践所昭示：联结当下，不是简单的资源拼接，而是以系统思维构建起可持续、可复制、可推广的发展共同体——这正是通往未来的坚实桥梁。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "39ac34a09b90c49c847876940c831035e99b66781f49414bbfe7fd5d0796c39e",
+    "selected_material_sha256": "529d74c0510057b26649a064025d366ee38075615546fe8ea34f25231f430c03",
+    "question_sha256": "2db0890e26f4c5e8bd98ca3c6334f0c2a942d31b9ecc81286b3d43bbe40355a2",
+    "characters": 1180,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1202,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 720,
+          "prompt_tokens": 4572,
+          "total_tokens": 5292,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1180,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 710,
+          "prompt_tokens": 5415,
+          "total_tokens": 6125,
+          "prompt_tokens_details": {
+            "cached_tokens": 5291
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "092-4",
+    "answer": "**汇聚合力，共筑高质量发展新未来**\n\n在当今时代，科技进步加速、产业变革深化，单打独斗已难以应对复杂挑战。唯有善于汇聚各类资源、力量与智慧，形成协同共振的合力，才能在激烈竞争中把握主动、实现可持续发展。“联结好当下，就能畅通奔向未来的路”，这一论断深刻揭示了协同发展的现实路径。从J市打造化工新材料产业集群到建设共享数据中心赋能中小企业，从攻克“卡脖子”技术到推动产学研深度融合，实践表明：合力的形成，是系统性布局、机制创新与精准施策的结果。\n\nJ市通过设立产业集群专班、“一群一班、一群一策”工作机制，明确责任主体，实施差异化政策，实现了资源高效配置。龙头企业带动上下游协同，形成完整产业链；共享数据中心整合设备、技术、产能等要素，使中小企业得以低成本接入先进生产链。例如，一家机器人企业通过平台获取订单后，系统自动匹配所需厂房与设备，实现“一单多产”，既缓解了中小企业的资源瓶颈，也提升了大企业的运营效率。这说明，真正的协同不是表面联结，而是基于实际需求的深度整合与高效运转。\n\n更为关键的是，合力的形成必须聚焦核心痛点，直面发展中的结构性难题。J市针对科创人才不足问题，建设“科创飞地”、设立市外孵化机构，打破地域限制，将前沿技术资源引入本地；同时设立“卡脖子”技术攻关专项，推动骨干企业联合组建平台，集中力量突破关键环节。这不仅提升了产业链自主可控能力，也验证了：唯有以问题为导向、靶向发力，才能在攻坚中凝聚共识、形成合力。\n\n共享机制的建立，打破了传统企业间因规模与资本差异带来的壁垒。机器人共享工厂将生产要素进行标准化配置，通过智能平台调度，实现资源“池化”使用。中小企业无需自建厂房或设备，即可参与研发与生产，既降低了创业门槛，也提升了响应速度。这种模式表明：发展不是“零和博弈”，而是通过开放协作实现整体效率提升，真正体现了协同共赢的价值。\n\n合力的形成，离不开制度供给与环境优化。J市通过长期稳定的政策支持、完善的公共服务体系，为各类主体提供稳定预期和成长空间。政府不仅“搭台引资”，更注重“帮企业闯出来”，从项目落地到技术攻关全程参与，有效激发了市场主体活力。这种系统性支持，推动企业从“单打独斗”转向“集群作战”，形成良性循环的发展生态。\n\n放眼全局，无论是城市治理中的社区共治、区域发展中的跨域联防，还是乡村振兴中的数字游民融入，本质上都是多元主体通过沟通协作达成的合力。在向南河治理中，两省联合执法、横向补偿、信息共享，破解了行政壁垒；在谧湖社区，年轻人与村民通过资源共享、文化互动实现双向奔赴。这些案例共同说明：发展之路上，唯有打破隔阂、建立信任、形成协同机制，才能真正打通堵点、激发活力。\n\n因此，面对充满不确定性的未来，我们应以系统思维为指引，推动政府、企业、科研机构和社会力量深度融合。通过精准施策、机制创新与开放共享，在实践中不断优化协同路径，实现资源高效配置、能力有效互补、成果共同享有。唯有如此，才能真正“联结当下”，畅通通往高质量发展的未来之路。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "ef4aab13fe43b2698408951d810962a1221bd6e0d2eca882c610f4f371a21b03",
+    "selected_material_sha256": "e610000097eb93e651c49cd5d8b9a0c5dfbd1782f0c8ac371aa92548d32cf5ba",
+    "question_sha256": "a84be08ed502827fbd7bd62ec8b38140a943037c299515d7026a7ac87703050f",
+    "characters": 1228,
+    "word_limits": [
+      1000,
+      1300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1399,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 828,
+          "prompt_tokens": 5352,
+          "total_tokens": 6180,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1228,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 715,
+          "prompt_tokens": 6303,
+          "total_tokens": 7018,
+          "prompt_tokens_details": {
+            "cached_tokens": 6179
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
