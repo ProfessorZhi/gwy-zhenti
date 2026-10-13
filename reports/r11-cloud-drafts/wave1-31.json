@@ -326,5 +326,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "111-1",
+    "answer": "硅谷成功经验：市场化运作，政府少干预；风险投资高度发达，形成良性循环；大学与企业紧密合作，促进科研转化；推行股权激励，激发员工创新动力；培育崇尚创业、宽容失败、注重合作的创新文化。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a6cc0997d604798beb08f7be2cf412633fb8a52aec2d7d5ea5c65406ef90ce7d",
+    "selected_material_sha256": "1656859075a03a62e4b773f25b9e3c63ce91e730308c60f5d7c9afd2610301ae",
+    "question_sha256": "d16c83eda03ed7de305680b50a24fdb5a2346ff8c1041ddc8320819d5df20778",
+    "characters": 90,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 90,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 53,
+          "prompt_tokens": 3834,
+          "total_tokens": 3887,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "123-1",
+    "answer": "党建引领强根基，搭建居民议事平台；发挥人民调解“第一道防线”作用；完善公共法律服务网络，普及法治理念；推动社区治理从“政府配菜”向“百姓点菜”转变，实现多元参与、共治共享。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "00950a054928e0b13cab7d78a8d1d29214affa628f35b569da73151c42c47208",
+    "selected_material_sha256": "d4011d778f039b6613609f4037c09a756e217bb5815acbafc21769de7e3551cd",
+    "question_sha256": "5ccdec7a7ef4e934d85fc6f81e51892c02aadc95dde04807eaa3d364df26aa31",
+    "characters": 86,
+    "word_limits": [
+      35,
+      150
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 86,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 56,
+          "prompt_tokens": 984,
+          "total_tokens": 1040,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "136-2",
+    "answer": "H县农用地膜使用回收方面存在以下问题：一是农民盲目滥用地膜，普遍使用厚度低于0.01毫米的非标地膜，导致土壤污染加剧；二是地膜回收难，农民清理意识弱，部分采用焚烧方式，残留物被埋入田间，造成二次污染；三是回收成本高，非标膜处理效率低、利润微薄，企业亏损严重；四是回收体系不健全，县乡村缺乏固定回收点，回收机制不完善；五是监管缺位，农资销售环节违规现象频发，执法检查流于形式。\n\n改进建议：一是严格监管地膜生产销售，打击非标地膜入市下田行为；二是推广全生物可降解或高强度易回收地膜，并通过“以奖代补”方式给予补贴，提升农民使用积极性；三是建立县、乡、村三级回收网络，设置标准化回收点，降低农户参与成本；四是加大财政补贴力度，提高企业回收收益，推动形成“生产—使用—回收”闭环管理；五是加强宣传引导，提升农民环保意识，实现科学使用与有效回收协同推进。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9a6b99c16049555245c757873249b94da6b45ab2da745539128773fdcc4a39ef",
+    "selected_material_sha256": "b6211a9c01e7dbf621492cdc179c990debc67b7527f6ddb9cf45634c34c645e1",
+    "question_sha256": "a1958a36914d7ff27179866711f7c7ab31313a14ca14c027a20f64381b5a3c9f",
+    "characters": 371,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 371,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 244,
+          "prompt_tokens": 1881,
+          "total_tokens": 2125,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "149-1",
+    "answer": "A市立足化工产业基础，发挥副产氢资源优势，抢抓氢能发展窗口期，科学谋划布局。出台产业规划与扶持政策，完成氢能产业园专项规划，组建氢能产业发展平台公司和母基金，推动项目落地。通过党建联建机制促进产业链协同，实现上下游企业联动，拓展工业用氢、发电、储运等应用场景。引进全球龙头企业，建设氢能科技园，打造“氢燃料电池电堆—膜电极—双极板”核心产业链。深化应用拓展，开通氢能公交、船舶线路，推进加氢站和储运基础设施建设，形成产业全链条发展格局，助力高质量转型发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "1808d1da7191d0052a16b226ee2077505e1ed5c8b14df1c2e1875f2e3c2a2d8c",
+    "selected_material_sha256": "978b27d77de080d0350cd306502eb895e6f1e615c8a1c68338a900871e5e50b3",
+    "question_sha256": "da8aa9c66a8a0b87dc46e6889a9d180561ec502ce0de12693ad26897fade0c13",
+    "characters": 228,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 228,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 133,
+          "prompt_tokens": 1631,
+          "total_tokens": 1764,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
