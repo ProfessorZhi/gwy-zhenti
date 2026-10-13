@@ -1,0 +1,182 @@
+[
+  {
+    "id": "015-2",
+    "answer": "N市民间救援组织发展中存在以下问题：一是经费保障不足，政府购买服务覆盖有限，企业及个人捐助多在灾情发生时集中，日常运营成本难以持续；二是缺乏专业保险和风险保障，现有险种无法覆盖救援活动中的特殊风险，队员意外伤亡无有效救济；三是法律地位不明确，未设立业务主管单位，救援行动缺乏制度性支持与法律保障；四是志愿者参与面临现实困境，家庭与工作压力导致出勤困难，公众对民间救援认知不足、支持有限。\n\n建议：一是建立常态化经费支持机制，将民间救援纳入应急专项资金，按实际支出给予合理补贴；二是推动出台专业救援保险制度，由政府引导保险公司开发针对救援活动的专项险种，保障队员人身安全；三是明确民间救援组织法律地位，赋予其相应业务主管单位，完善参与应急响应的制度流程；四是加强公众宣传与教育，提升社会对民间救援价值的认知，鼓励企业、个人长期稳定支持；五是探索“救援队+企业”合作模式，通过市场化运营实现自我造血，形成可持续发展机制。  \n\nN市应急管理局  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0387c6374b02df54c7c2eea596bedceb151ca395f47a87838cc488767fffe2ba",
+    "selected_material_sha256": "9c4aa0a8553b4e1be3e6bbee46614604f568c801c2cb5a0a0ed576fea873d481",
+    "question_sha256": "ec8925f91745593cf098192aeb8b62c331ed8e10ec15f7c5ed6805546d329fbc",
+    "characters": 422,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 422,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 245,
+          "prompt_tokens": 1687,
+          "total_tokens": 1932,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "027-1",
+    "answer": "Z县打造现代田园综合体推动乡村振兴的经验主要有：一是立足产业基础，依托柑橘传统优势，科学规划产业链，实现从种植到加工、再到综合利用的全链条发展；二是创新运营模式，引入有资质企业进行公司化运作，提升管理效率和市场适应能力；三是强化基础设施建设，完善交通、网络、生态环保等配套，提升生产与生活条件；四是推动产业融合，发展文化旅游，丰富业态，延长产业链，提升综合效益；五是注重农民增收，通过土地流转分红、就业安置、技术培训等方式实现稳定增收。这一过程体现了产业带动、生态引领、农民受益的乡村振兴路径，具有可复制推广价值。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b7e7abbbde4ecbcb3e62abf7c3859cc141f8b03b5c5c2d646207218863d7fdcc",
+    "selected_material_sha256": "ecf505fbc257e3b52c81310ee532a11d764e63c45abae3776a504e711c6057ac",
+    "question_sha256": "6c2a5c09d58e3d89f23e59828c5290fd56ccf25a6f05a5cdfe8b2ca62afb45d7",
+    "characters": 257,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 257,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 143,
+          "prompt_tokens": 1963,
+          "total_tokens": 2106,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "036-4",
+    "answer": "**信用之重：道德与制度的双向共育**\n\n“信用既是一种道德品质，也是一种制度和规则”，这一命题深刻揭示了诚信在现代社会中的双重属性。它不仅关乎个体对承诺的坚守，更体现为社会运行中一套可操作、可约束的规则体系。从个人层面看，信用是行为选择的内在尺度，是诚实守信的自我约束；从制度层面看，信用则是社会管理的工具，通过量化评估与奖惩机制，将道德规范转化为可执行的制度安排。\n\n在现实生活中，信用作为道德品质的体现，早已内化于人们的日常行为之中。材料中提到，张某因产品变质主动补发货物，虽未获直接利益，却赢得了客户长期信任，其诚信经营最终转化为市场竞争力。这说明，个体对规则的敬畏与对责任的担当，构成了信用的道德根基。同样，孟先生开设公益国画课堂，虽初衷并非“加分”，却因践行善意而获得信用加成，反映出社会对善行的正向激励——这种内在驱动，正是诚信文化在人心中的扎根。\n\n然而，仅靠个人自觉难以支撑社会信用体系的稳定运行。当交通违规、违建、欠费等行为屡见不鲜时，若缺乏制度性约束，守信者将难以获得公平回报，失信者则可能逍遥法外。材料中提到，一些城市已将闯红灯、乱停车等行为纳入个人信用记录，一旦达到一定次数即被扣分甚至限制出行，这正是制度对道德失范的有力回应。通过“一处失信、处处受限”的惩戒机制，社会规则得以具象化，使不守信的行为面临切实成本，从而倒逼个体主动遵守公共秩序。\n\n更为重要的是，信用制度不仅约束行为，更在重塑社会交往的公平性与效率。材料显示，信用免押金租房、信用借书、信用就医等场景不断涌现，说明信用已从“道德评价”演变为“可兑现的权利”。高信用者享有更多便利，低信用者则面临限制，这种差异并非惩罚，而是对责任与承诺的市场认证。它打破了传统社会中“熟人信任”的局限，在陌生群体间建立起基于规则的信任基础，为新经济形态提供了运行土壤。\n\n当然，制度建设也需兼顾公平与隐私边界。材料指出，当前信用体系覆盖度不足35%，且多集中于金融消费领域，难以全面反映个人综合行为。更令人担忧的是，公众对民营征信机构存在信息泄露的忧虑，反映出制度在透明度与安全性上的短板。因此，信用制度的建立不能以牺牲隐私为代价，必须在数据采集、使用和监管上建立明确边界，确保“合法、必要、最小化”原则，让制度真正赢得公众信任。\n\n此外，信用建设需从源头培育诚信意识。材料中提到，近六成大学生不了解个人信用，甚至误以为征信信息可随意交易，这暴露出教育的缺失。唯有通过校园讲堂、社会宣传等渠道，将信用教育融入日常，才能帮助青年群体建立正确的价值认知，避免“为便利而失信”的短视行为。\n\n综上所述，信用既是道德自律的体现，也是制度治理的工具。二者相辅相成：道德品质为制度提供内在动力，制度建设则为道德实践提供保障与反馈。唯有将诚信教育贯穿于成长全过程，以科学、透明、可操作的规则体系支撑社会运行，才能真正构建一个“守信者受益、失信者难行”的现代信用社会。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8e8c9810f4c65b3c699dc8ee18faba21789f01601e8890dfc98967fab7c1bd6f",
+    "selected_material_sha256": "5af66ea7e96cf79d64d2c47b3b06d1040d0408fcbd58efa28e278c773195def0",
+    "question_sha256": "6515681268f0202f8bbdc7f3fd98ee9d363051601d95491832ab67ac59771c50",
+    "characters": 1195,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1195,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 752,
+          "prompt_tokens": 5091,
+          "total_tokens": 5843,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "046-2",
+    "answer": "M省外来入侵物种防控面临三大问题：一是监测体系不健全，城市公园、小区等区域存在监管盲区，风险发现滞后；二是公众认知不足，缺乏生物安全知识，误以为入侵物种仅危害农村，且部分人盲目购买放生；三是跨部门协同机制缺失，信息共享不畅，执法力量薄弱，技术手段有限。\n\n建议：一是建立全省一体化监测网络，依托群众力量开展常态化巡查与举报奖励；二是加强科普宣传，通过媒体、社区普及入侵物种危害及防控知识，提升公众识别与防范能力；三是健全跨部门联动机制，推动公安、农业、海关、快递等单位信息共享与联合执法，强化源头管控和快速响应。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "eb92f8ce2aa6b88fde79066ebad3b3eb1acae93bc4ae52f05575ada77a4b91ec",
+    "selected_material_sha256": "7ee4ac72b426859bb8d41043914f26ce67f936e01e2af24a52f605efd50660b6",
+    "question_sha256": "94a50ac94ef32e8d4514a84fb13d3554fc0f6324b314d55ec41e3bf2823369d8",
+    "characters": 254,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 254,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 151,
+          "prompt_tokens": 1678,
+          "total_tokens": 1829,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
