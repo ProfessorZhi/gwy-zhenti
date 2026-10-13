@@ -1,0 +1,182 @@
+[
+  {
+    "id": "016-3",
+    "answer": "为支持S市传统技艺发展，建议：一是加强技能人才培养，推动传统技艺与现代设计融合，开展数字技术培训，提升从业者设计能力与生产效率；二是推动产品创新与品牌建设，依托大数据分析市场趋势，开发符合现代审美的新产品，打造具有地域特色的文化品牌；三是促进产销对接，借助电商平台拓展市场渠道，支持“非遗+电商”模式，实现线上线下联动销售；四是健全传承机制，鼓励青年参与技艺学习，建立“师带徒”与数字化记录并重的传承体系，激发年轻人对传统技艺的兴趣；五是强化政策扶持，对技艺创新、品牌建设、人才培养给予资金和项目支持，形成可持续发展机制。通过多方协同，推动传统技艺在乡村振兴中焕发新活力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d9b3e3f9e72110b3eff22cc80eb5756d6cfc7a1a5052d01c5b439b2dae74ac68",
+    "selected_material_sha256": "29e0ec02641487ccedd9759586af3824b37b2290fcb083a4b76711bd228e7a1f",
+    "question_sha256": "5073df2d7d292bd644ace8285027046d2ee9a1fdde26dda447147b5d079c5b56",
+    "characters": 286,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 286,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 161,
+          "prompt_tokens": 2308,
+          "total_tokens": 2469,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "028-2",
+    "answer": "从“黑脏臭”到“清净美”\n\n夏日骄阳下，阳春县屈家村中心公园碧水荡漾，生态塘中水雾氤氲，古琴悠扬，市民纷纷前来“打卡”。三年前，这里曾是臭水坑，蚊蝇乱飞，恶臭难闻。如今，通过系统治理，黑臭水体彻底消亡。\n\n阳春县委、县政府成立专项工作组，运用无人机巡查、专家监测等手段全面排查，科学分类制定治理方案。屈家村建成污水处理厂，采用“格栅调节池+生物接触氧化+紫外线消毒”工艺，尾水清澈透明，用于灌溉、抑尘、道路清洗，全年节约用水3.6万吨。\n\n为提升生态品质，县财政投入专项资金，建设80亩人工湿地，栽种铜钱草、鸢尾等水生植物，实现尾水二次净化，水质达地表准IV类，用于河道生态补水。配套彩虹桥、亲水平台等设施，村容村貌焕然一新。\n\n更可贵的是，村两委将治理要求纳入村规民约，开展环保宣传，引导村民自觉参与日常管护，真正实现“共建共治共享”。从“黑脏臭”到“清净美”，屈家村绘就了一幅生态宜居的美丽乡村新画卷。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cb27d4a1a38e5f2b2cb47dc3baf7e4261e8c9b72c853d33cd93981f793f4dacb",
+    "selected_material_sha256": "d010aa113e2a8a944eda44b76819b5ed07e81da95dfc25fe0a3a63009483e180",
+    "question_sha256": "c66f2dff6ba05846924b8ff02249dd42093ad250bfd7a2272aeee7547a4ce754",
+    "characters": 395,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 395,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 284,
+          "prompt_tokens": 1842,
+          "total_tokens": 2126,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "038-1",
+    "answer": "A市优化营商环境主要采取以下措施：建立项目“地铁运行图”审批机制，实行“周末不打烊”和专人对接服务；开通“政企直通车”智慧平台，实现诉求办理与政策推送；组建“点对点”工作组，开展常态化企业帮扶；开展企业家培训和干部轮训，提升企业治理能力。成效方面：项目审批时间减半，企业融资与订单问题得到及时解决，产品结构优化，市场竞争力增强，市场主体数量和居民收入显著提升。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "2da43c2453a1e0e1435ea4931a748fbd929828ab6fa1bfa8dfeb3d9571241872",
+    "selected_material_sha256": "3286c308e69d2383c20b3925672ccb651137c47fe852de26c882a1dba9f41155",
+    "question_sha256": "a0645f31eb1d1fb02b761e65c15ef0627d3aaa6fcdc2a84c63459830d04c65ab",
+    "characters": 180,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 180,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 108,
+          "prompt_tokens": 1863,
+          "total_tokens": 1971,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "048-1",
+    "answer": "“好品山东”好在：品质过硬，以海尔“砸冰箱”等故事彰显极致质量追求；科技赋能，如泰山体育、鲁南制药等企业实现创新突破；文化浸润，华光国瓷等产品融合传统文化，展现“中国创造”魅力；绿色低碳，国舜集团、力诺瑞特等推动节能减排，提升“含绿量”；品牌引领，从青岛港“振超效率”到青州花木经济，体现高质量发展与可持续治理的深度融合。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "13ea3863f7dcc8ca8b3fb31027e820f928c2cd156a68c2f1804cfcd1275bd0d8",
+    "selected_material_sha256": "909069840a74fc3c83397aa051c0e9c77844c5f8a055c05e3f04a3103347b656",
+    "question_sha256": "f69b9378cd5d88d5553530b696612e3389e31a4c697eb90826d71bba91ab4e75",
+    "characters": 161,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 161,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 110,
+          "prompt_tokens": 2153,
+          "total_tokens": 2263,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
