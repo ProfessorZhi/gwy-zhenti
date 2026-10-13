@@ -673,5 +673,50 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "190-1",
+    "answer": "蒙联县通过“一县一品”战略，实施“五个一批”措施扩大种植面积；依托农业科技团队提升技术含量，实现提质增效；推动土地入股、村集体参与，增加农民收入；构建生产—消费闭环，发展牛咖茶茶等深加工产品；借助电商平台流量与补贴，打通线上线下销售渠道，使牛油果从“洋水果”真正转化为本地“土特产”。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "3130264ced7447db02e7badff4416f7e6e77b7517377aa2b929be4707917b175",
+    "selected_material_sha256": "8c5ae9b2cc0b80454210286d119627454056e4e6af01b31e706a3e60efe537c3",
+    "question_sha256": "67b25c024a3197a381451ad3991abac91b09fff675d667cb7543523dd28c77e9",
+    "characters": 142,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 142,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 88,
+          "prompt_tokens": 1590,
+          "total_tokens": 1678,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
