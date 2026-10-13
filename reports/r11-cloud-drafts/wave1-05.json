@@ -1,0 +1,182 @@
+[
+  {
+    "id": "013-1",
+    "answer": "Q镇农业产业发展存在以下问题：一是地形条件限制，山地丘陵土地平整难，机械作业和厂房建设受限；二是品种选择不当、技术落后，如核桃不结果、双孢菇产量低、品质差；三是管理能力不足，养殖业病害防控和日常管理不到位；四是市场销路不畅，产品缺乏竞争力，本地消费少，外地收购意愿低；五是产业盲目跟风，项目“仓促上马”“换人就换品种”，缺乏规划与持续性；六是投入大、风险高，前期成本回收难，盈利不稳定。\n\n解决办法：应加强土地整治和规划布局，因地制宜选择适应本地生态的品种；强化技术培训与指导，提升农户种植养殖技术水平和管理能力；建立产销对接机制，拓展销售渠道，推动产品品牌化、市场化；实行“一村一品”科学规划，避免重复建设和盲目投入；推动资金整合，由村集体统一适度规模经营，降低风险；探索农产品深加工，如利用玉米淀粉建厂，提升附加值，增强抗市场波动能力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "629e1a620da2636e2a2169a4e8fbe571dfa3aff3cb4d1953754f3b0048c61852",
+    "selected_material_sha256": "4044b416e422739aeeb4146d451a3c7cff2bfe60d296dd9b4485c05b55cc2a63",
+    "question_sha256": "44f4e9d86945c6f333e0de8a09487e2dd689cc4acba3ec9310cfae0b54a3c8e3",
+    "characters": 368,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 368,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 229,
+          "prompt_tokens": 2041,
+          "total_tokens": 2270,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "023-3",
+    "answer": "农创客在创新创业中面临的问题主要有：一是融资难，尤其长周期产业如茶叶、竹笋因缺乏抵押物和还款周期不匹配导致贷款难；二是人才短缺，电商运营等技能人才招不来、留不住，乡村生活条件与城市差距明显；三是技术支撑不足，专业检测项目需外送，耗时耗力，影响产品安全与加工效率；四是产业同质化严重，民宿、咖啡馆扎堆，缺乏特色和品牌，导致恶性竞争、利润下降。\n\n对策建议：应建立“乡村创客贷”专项金融支持机制，对长周期项目提供中长期贷款，并探索以知识产权、未来收益权等作为抵押方式；加强乡村人才引进与培育，开设电商运营、新媒体营销等实用课程，完善乡村生活配套；建设县域农业检测服务平台，推动专业检测能力本地化或区域共享；鼓励农创客挖掘本地特色资源，打造差异化品牌，引导产业向优质化、特色化方向发展。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "38f7eb94c11c3f7b6716af58ea1da1277dabb4328563cc9ef4ae8979080358b5",
+    "selected_material_sha256": "3dec4c704edea5cc5d58283f2545fc8aa088c32f0af4fce0dcc14d086dee2d51",
+    "question_sha256": "41d3b6599f498cb4e9ba2d7ecc674936b1e3035482e3dca1b98ccede0a428e5c",
+    "characters": 338,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 338,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 206,
+          "prompt_tokens": 1828,
+          "total_tokens": 2034,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "034-3",
+    "answer": "平安建设经验交流发言提纲\n\n一、健全多元调解机制，化解基层矛盾。依托公证、人民、治安、司法调解融合的多元化调处中心，实现纠纷就地化解，2020年以来成功调解183起，成功率98.4%。\n\n二、创新智慧安防模式，提升治理效能。组建“闪警别动队”，配备北斗定位与高清摄像头，实现实时监控、智能派警、快速响应，增强治安防控能力。\n\n三、强化安全宣传教育，提升居民素养。依托安全教育馆，常态化开展应急救护、自救互救、心理干预等培训，累计服务超4000人次，增强群众安全意识。\n\n四、推进智慧社区建设，改善民生出行。在老旧小区试点人脸识别系统，同步修缮防盗门，实现“刷脸”进出，提升安全与便利性。\n\n五、疏堵结合治理电动车问题。因地制宜建设智能充电桩，规范停车充电行为，消除“进电梯”等安全隐患，切实解决居民“急难愁盼”。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d9c2e77d2a638c9a65ee0b480519afa53eaec5302058829cab9d0f37771f7c8d",
+    "selected_material_sha256": "85f3d8af6f4ee4185609cbc2e1e526a63fbbffa2558670f72b3ff54d15118d28",
+    "question_sha256": "c28b70122ef9bf05ef7b7545d4207e5b549bf242b793a8778426ccb7c190a2b7",
+    "characters": 346,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 346,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 219,
+          "prompt_tokens": 1487,
+          "total_tokens": 1706,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "044-1",
+    "answer": "高标准农田建设带来多方面新变化：一是土地连片集中，便于大型机械作业，大幅提升种植效率；二是建立智慧农田服务中心，实现精准灌溉、施肥和病虫害防治；三是推动马铃薯全产业链发展，促进加工增值和农民增收；四是吸引年轻人才返乡创业，带动乡村人气复苏与品牌传播；五是健全建后管护机制，保障农田长期可持续利用。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "dd97b62429043e73f0d80c63a00c95081a462fd256a4d5d23c2dc293cda32883",
+    "selected_material_sha256": "6b0fe53b04fe58a5bcb9d560032ba8c8b96fe6d772d56a488e62788f96bf252e",
+    "question_sha256": "c535c31ce3420a65a14bb242143c0b64632645350ebb3e4a1ded8554dffb870f",
+    "characters": 148,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 148,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 87,
+          "prompt_tokens": 1717,
+          "total_tokens": 1804,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
