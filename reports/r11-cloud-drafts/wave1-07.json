@@ -545,5 +545,108 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "151-2",
+    "answer": "推进本省工业园区限值限量管理工作计划  \n\n全面摸清园区排放“家底”，建设覆盖园区及企业的智慧监测网络，实现应联尽联。科学核定年度允许排放总量，依据企业综合绩效实施差别化配给，优质企业优先保障，落后企业予以限制。建立环境质量与项目审批挂钩机制，在达标前提下支持重大项目建设落地。完善在线监测数据采集和核算方法，推动覆盖全部排放口及无组织排放，提升数据准确性。健全奖惩机制，对达标园区给予激励，对环境质量恶化园区依法采取预警、限产、区域限批等措施。强化总量管控与项目准入协同，推动减存量、严增量，实现生态环境保护与园区经济高质量发展良性循环。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d7498526285cb30d3bcf477857c5a91914365eff0ee377c5654f7b152982d74e",
+    "selected_material_sha256": "0f5a21daf3c5627c335d33202b17f845185632899bc0496ff96cb84e3e59a7bd",
+    "question_sha256": "51dea30af6091bfdf924d9d98f3a07110794b0db3e5081284fb6b5fc09483f24",
+    "characters": 275,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 316,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 192,
+          "prompt_tokens": 1689,
+          "total_tokens": 1881,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 275,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 164,
+          "prompt_tokens": 1967,
+          "total_tokens": 2131,
+          "prompt_tokens_details": {
+            "cached_tokens": 1880
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "160-3",
+    "answer": "**D市大米产业高质量发展经验交流发言提纲**\n\n一、坚持科技赋能，提升种源质量。依托农业科技小院，推广阶段式控温控水育苗法，实现秧苗提质增效；推进分子模块育种，筛选17个本地适宜优良品系，打造绿色高效种源基础。\n\n二、深化模式创新，推动全产业链升级。发展“企业+村集体+合作社+农户”协同机制，建设170公顷示范基地，推广秸秆还田、抗冷栽培等绿色技术；延伸加工链条，引进全自动速食米饭生产线，提升产品附加值。\n\n三、探索有机转型，重塑品质信任。实施土壤深翻改良，完成512公顷有机水稻种植，通过高标准认证，实现“好米卖好价”，客户复购率高，形成品牌溢价能力。\n\n四、创新营销模式，拓展消费场景。推行“共享稻田”认领机制，实现销售前置与体验融合；打造稻田文旅项目，发展观景、放鸭、寻宝等亲子体验，推动“一粒米”成为文化符号。\n\n五、强化品牌建设，提升市场竞争力。建立地理标志证明商标体系，形成48个企业、109个产品品牌矩阵，25款分级产品占全省12.5%，实现中高端市场突破。\n\n（全文共446字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4be71f92b093b87359d7b71f7da99489b74701cd8e81efe474911752de4c6200",
+    "selected_material_sha256": "accc1308de078aad9143f8b7f48fb0e4e2926c758c4ab2b06d147be43328abeb",
+    "question_sha256": "a5be336d069084f7db3496b79ff63e431f1d67e245e24c0052077a938d100355",
+    "characters": 434,
+    "word_limits": [
+      400,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 434,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 291,
+          "prompt_tokens": 2207,
+          "total_tokens": 2498,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
