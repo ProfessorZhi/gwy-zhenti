@@ -133,5 +133,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "057-3",
+    "answer": "W市发展庭院经济面临以下问题：一是空间受限，如老陈家庭院面积小，难以满足游客接待需求；二是技术滞后，如小章反映产品设计与市场脱节，农户缺乏技术与市场意识；三是产业链不健全，如赵村虽形成合作社，但缺乏企业经营经验，资金管理复杂；四是规模扩张受限，如小方因资金不足、成本高，难以扩大种植和销售规模；五是发展路径分歧，如方沟村村民对院子流转意见不一，存在同质化竞争与环境扰动风险。\n\n应采取相应措施：一是优化庭院空间利用，鼓励错峰经营、分时接待，提升接待能力；二是加强技术培训与市场调研，建立“技术+市场”联动机制，引导农户掌握前沿工艺；三是推动产业组织化发展，完善合作社运营机制，引入专业管理团队，强化资金监管；四是支持小微项目试点，通过政府补贴、风险共担等方式降低创业门槛；五是建立协商议事平台，充分听取民意，科学规划民宿布局，避免同质化竞争。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "34ac183fa2f3b31b900e3b4c1850bd656487f31ae75370af2b83d453dcaf39c5",
+    "selected_material_sha256": "e4eba59b29b8f648e39de39d93c4c3efeb0132badd73402ea22b9c6496cd6e83",
+    "question_sha256": "f2066e4dc9118a813be2e3e1a59bbdb9e48d10090ce04bd57f932f7cb3bcf2a3",
+    "characters": 369,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 369,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 231,
+          "prompt_tokens": 1885,
+          "total_tokens": 2116,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "070-2",
+    "answer": "当前H县农用地膜使用、回收存在以下问题：农民盲目多用、滥用地膜，普遍使用厚度低于0.01毫米的非标地膜；废弃地膜随意丢弃或焚烧，造成土壤污染和化学残留；回收成本高、利润低，企业亏损严重，农户参与积极性不足；县乡村缺乏固定回收点，回收机制不健全；生产销售非标地膜监管缺位，违规现象屡禁不止。\n\n改进建议：应加强全生物可降解或高强度易回收地膜推广，实施“以奖代补”补贴政策，降低农民使用成本；建立县、乡、村三级回收网络，设置标准化回收点，提升回收便利性；对非标地膜生产销售实行严格监管，联合执法打击违规行为；完善回收企业补贴机制，提高非标膜处理效率与经济性；加强农技宣传，提升农户环保意识，推动形成“生产—使用—回收”全链条闭环管理。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "17b01215034f446781a5653f7120a87ab901f0bbe81418be3ffce9847a6ec443",
+    "selected_material_sha256": "2448276ef6b5acdadb3e42cfbc192bf0e02eaad7ee2b21ca8a797049c2fc2ccc",
+    "question_sha256": "9067b4c3964cfc03b2789ef3f1c665ff6c90a9e2a533b249110a0377559c2b72",
+    "characters": 313,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 313,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 211,
+          "prompt_tokens": 1865,
+          "total_tokens": 2076,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "079-3",
+    "answer": "照亮每一个角落——推进全龄友好型城市建设\n\n全龄友好型城市，是“人民城市”理念的生动实践，更是回应人口结构变化、提升民生福祉的战略选择。C市以“小事”入手，从老人的居家安全到儿童的托育需求，从青年创业扶持到低收入群体精准救助，构建起覆盖全生命周期的服务网络，真正做到了“一个都不能少”。\n\n在养老服务方面，社区综合体、智能报警设备等举措，既满足了老年人生活便利需求，也增强了其安全感与归属感；在托育服务上，通过布局优化和公建民营模式，破解“距离远、价格高”难题，推动“15分钟服务圈”落地；对青年群体的创业支持，则激发了创新活力，为城市发展注入新动能；针对特殊群体的“幸福码”救助平台，实现了帮扶精准化、人性化，彰显了治理温度。\n\n这些实践表明，全龄友好不是口号，而是系统性、协同性的民生工程。它要求政府以问题为导向，因地制宜、分类施策，在服务供给上体现公平与可及，在制度设计中兼顾效率与温度。唯有把每一件“小事”做实、做细、做到位，才能让城市真正成为每个人都能安心、舒心、幸福生活的家园。  \n\nC市的探索，为新时代城市建设提供了可复制、可推广的路径，也昭示着：发展成果应如阳光般，照亮每一个角落。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7ec600f44fcadd3e8c17bcb4b91cbe05ac29c222fa8a3071581280c3447ad56c",
+    "selected_material_sha256": "434767e63c657eaf955705b2c9f1715980999daa5b1c5b3c9ea941ce6e8bb18b",
+    "question_sha256": "dc7b8ca2cb0c371b47dd2a699b6a66b2d40451a27e31106f4b574d0f4692c3f1",
+    "characters": 490,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 490,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 303,
+          "prompt_tokens": 1835,
+          "total_tokens": 2138,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "090-2",
+    "answer": "农村自建房建设流程如下：  \n1. 村民提出建房申请，提交户口本、身份证等材料，经村两委审核，四周邻居无异议并签字确认，结果在村内公示15天。  \n2. 审核通过后，材料报镇政府审批，取得乡村建设规划许可证及施工公示牌。  \n3. 施工前，须由持证乡村工匠按图施工，并签订施工合同和安全质量承诺书。  \n4. 建房过程中，实行“四到场”监管：申请审查到场、丈量放样到场、关键节点巡查到场、竣工验收到场。  \n5. 主体完工后，由质量验收机构对照图纸进行面积、结构等检测，合格后出具验收报告。  \n6. 搞好竣工验收后，到县行政服务大厅办理产权登记手续，取得新房产权证。  \n\n（245字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "31893e42ddab48a429958668f4845e188ba7403f1f3f851f8110ef29de7ce490",
+    "selected_material_sha256": "b537420dd490e3ecf9df69428b1f3f48b5804cbea707468d9355279172bdd621",
+    "question_sha256": "41d530512930b8aa27fe9d9bc58d1ebdfdb049f0bc679c49e88a19f9a7c8888b",
+    "characters": 266,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 266,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 198,
+          "prompt_tokens": 1741,
+          "total_tokens": 1939,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
