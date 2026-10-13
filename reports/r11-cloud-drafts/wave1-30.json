@@ -1,0 +1,221 @@
+[
+  {
+    "id": "019-3",
+    "answer": "海港街道打造“五星级平安小区”经验做法如下：一是健全多元调解机制，依托公证、人民、治安、司法调解力量，建立街道多元化矛盾纠纷调处中心，2020年以来成功化解183起纠纷，成功率98.4%。二是强化基层安全防控，组建“闪警别动队”，配备北斗定位与高清摄像头，实现智能巡逻、一键报警、快速处警。三是深化安全宣传教育，联合蓝天救援队开展应急救护、心理干预等培训40余场，覆盖群众超4000人次，提升居民安全意识。四是推进智慧化社区管理，为无物业老旧小区安装人脸识别系统，修缮防盗门，提升出入安全。五是聚焦民生痛点，推动电动自行车智能充电桩建设，消除“进电梯”安全隐患，切实解决居民“急难愁盼”问题。上述举措实现了矛盾早发现、风险早化解、服务零距离，有效提升了社区治理水平和群众满意度。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cc07b505dd9266e25b7eb5304b82fe4a19f439bbf0ec463c0de932177e320bfb",
+    "selected_material_sha256": "519b937256e2c66ef73d2e2fe0df0c082fdcbbd3d476afaee6b8a6bcadd9f3b2",
+    "question_sha256": "f78fedbc26a41491b70fb9ad371138d4c467928c0562749dc041c32785feb2f6",
+    "characters": 339,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 339,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 207,
+          "prompt_tokens": 1501,
+          "total_tokens": 1708,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "032-4",
+    "answer": "**扎根一线，实干为要——论乡镇干部在脱贫攻坚中的责任担当**\n\n打赢脱贫攻坚战，关键在基层、落脚在群众。贵州迤那镇“一看房、二看粮、三看有没有读书郎、四看劳动力强不强”的识别方法，体现了精准施策的核心逻辑——从实际出发，把扶贫对象真正锁定在最需要帮助的家庭。这要求乡镇干部必须沉下心、蹲下身，走进田间地头，摸清家底，才能在复杂现实中找准症结、对症下药。\n\n实践证明，唯有实干才能改变乡村面貌。中宁县选派干部驻村帮扶，通过建强班子、化解矛盾、发展产业，推动软弱涣散村实现“路通水通、群众笑颜”。马莲梁村第一书记孟跃军带领群众硬化道路、推广枸杞种植；杨家寨村书记刘振坤引进食用菌项目，仅用46天建成大棚，年收入达46万元，村集体增收9.4万元。这些案例表明，干部主动作为、因地制宜推动产业发展的能力，是带动群众脱贫致富的根本动力。\n\n然而，扶贫过程中也常面临群众意见不一的难题。某镇在修路时，村民对路级高低各持己见，最终通过召开听证会、实行“一户一人、少数服从多数”规则，达成共识并照章执行。这一过程既尊重了群众意愿，又维护了决策的合法性与公信力，说明乡镇干部必须善于运用民主协商机制，在多元诉求中凝聚合力，避免“一刀切”引发矛盾。\n\n干部能力不足是制约扶贫成效的重要因素。材料指出，部分新进干部“不懂农事、不会说乡音”，难以深入群众开展工作。这反映出基层培训体系仍不健全。因此，乡镇干部不仅要懂政策，更应掌握农业技术、沟通技巧和矛盾调解能力。应通过“请进来”“走出去”相结合的培训机制，提升干部综合素养，真正成为“懂农业、爱农村、爱农民”的行家里手。\n\n科学的考核激励机制是激发干劲的关键。吴忠市推行“三级联评”制度——群众测评占40%、同级互评占30%、上级考评占30%，每月评选“月度之星”，每季评“闪耀之星”。这种公开透明、结果导向的评价方式，让干部感受到压力与动力，也促使他们主动兑现承诺。如青铜峡镇干部坦言：“排在后10名，脸都红了。”这说明，公平的考核机制能有效打破“干好干坏一个样”的困局，推动形成“比学赶超”的良好氛围。\n\n同时，脱贫攻坚是一项长期任务，不能止步于短期脱贫。余家村群众反映，收入增长难持续、思想转变慢、“空心化”趋势难改，反映出发展动能不足的问题。这就要求乡镇干部不仅要解决“有没有”，更要思考“好不好”。应通过培育致富带头人、开展技能培训、完善公共服务，帮助群众提升自我发展能力，实现从“被动接受”到“主动参与”的转变。\n\n综上所述，打赢脱贫攻坚战，离不开乡镇干部扎根一线、真抓实干的担当。必须坚持实事求是的识别方法，以群众需求为导向，以产业带动为路径，以民主协商为手段，以能力建设和激励机制为保障，真正把政策转化为群众看得见、摸得着的实惠。唯有如此，才能在乡村振兴的道路上，走出一条可持续、可复制、有温度的基层扶贫之路。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "379154de70e44630d0931552fca13dd3d8111bc9a8cf0ccf61f44aa7af927ff4",
+    "selected_material_sha256": "5af974675eb992139dc34d8b133ae266a62b023aa94af152be9ccd02d219f6bc",
+    "question_sha256": "99ba244e0a3a26a85379b6fcefd6c1c27dd560a8008962cd2c3e4dd7a8fe6a88",
+    "characters": 1160,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1310,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 833,
+          "prompt_tokens": 4330,
+          "total_tokens": 5163,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1215,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 786,
+          "prompt_tokens": 5286,
+          "total_tokens": 6072,
+          "prompt_tokens_details": {
+            "cached_tokens": 5162
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 1206,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 776,
+          "prompt_tokens": 5239,
+          "total_tokens": 6015,
+          "prompt_tokens_details": {
+            "cached_tokens": 4331
+          }
+        }
+      },
+      {
+        "iteration": 4,
+        "characters": 1160,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 748,
+          "prompt_tokens": 5229,
+          "total_tokens": 5977,
+          "prompt_tokens_details": {
+            "cached_tokens": 4362
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "042-2",
+    "answer": "沈书记所说的“双向奔赴”是指数字游民与乡村在资源、人才、文化等方面的相互促进与深度融合。一方面，年轻人带来新理念、新技术和创业活力，推动乡村发展新业态，如旅游项目、直播带货、文创设计等，激活乡村消费市场；另一方面，乡村提供自然环境、低成本生活空间和人文氛围，吸引年轻人长期扎根，实现从“游”到“留”的转变。同时，数字游民将城市资源与技能带入乡村，通过共享平台、创业合作实现资源对接；村民则借助社区发展获得稳定收入，参与共建共治，形成良性互动。此外，政府通过优化服务、完善基础设施，为双向流动提供制度保障。这种“双向奔赴”不仅丰富了乡村发展路径，也增强了青年群体的归属感与责任感，真正实现了城乡要素的双向流动与协同共进。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4d99f12caf232365b6ba340917f8f8293f154814f534663dad03a72d057934a1",
+    "selected_material_sha256": "17682d25fdfef7788bfdc713049f2ce8a415974263c2895cbe7bf37dddf88807",
+    "question_sha256": "c548217edcb9cbce407bd7ed3809b4523410e6ccafb583bc8894e7986ad815c8",
+    "characters": 309,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 309,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 183,
+          "prompt_tokens": 1936,
+          "total_tokens": 2119,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "052-2",
+    "answer": "“摘掉穷帽子”体现发展经济、提升收入，梨洋村通过“党支部+龙头企业+合作社”模式入股分红、推动肉鸭养殖，带动农户增收，壮大集体经济；“改变老样子”指整治人居环境，实施垃圾治理、污水处理、道路硬化和物业化保洁，改善村容村貌，提升生活品质；“留住好根子”强调文化传承与乡情凝聚，通过修订村规民约、建设家风家训一条街、挖掘村史、推进乡贤工程，弘扬传统美德，增强村民凝聚力。三者相辅相成，既推动物质富足，又涵养精神家园，实现了生态、经济与文化的协同发展，为乡村振兴提供了可复制的路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "fb3428530826e8987d7d8aecb1c3a9b47f234f477af518b768ac96b4edff4f93",
+    "selected_material_sha256": "6a6f33e1e9580229b56a3f1de731e4862e328bd9edef4176bcf612e1a8585b3c",
+    "question_sha256": "2b5109e8790a52df85c5ad6f4ab240ae3de2c362ddb261ed67326c8768707ccb",
+    "characters": 238,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 238,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 154,
+          "prompt_tokens": 1598,
+          "total_tokens": 1752,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
