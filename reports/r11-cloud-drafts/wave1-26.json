@@ -1,0 +1,182 @@
+[
+  {
+    "id": "018-2",
+    "answer": "亲爱的考生：\n\n为营造公平、公正的考试环境，倡导诚信参考，四川省人事考试中心特发布此公开信。\n\n请严格遵守考试纪律，杜绝任何形式的作弊行为。恶意注册报名、组织作弊、代考或使用非法手段获取试题，不仅违反《公务员考试录用违纪违规行为处理办法》，更严重损害考试公信力，一经查实将被取消成绩并记入诚信档案，长期影响今后报考。\n\n请知悉：考试中如发现雷同答卷，将依法依规予以处理；任何试图通过不正当手段获取优势的行为，都将被严肃追责。我们始终坚信，公平竞争才能真正体现个人能力与价值。\n\n请以诚信为本，尊重规则，珍惜机会。您的每一份努力，都是对自身负责、对社会负责的体现。考试不仅是能力的检验，更是品德的考验。\n\n愿每一位考生在公平的环境中展现真才实学，用实力赢得未来。\n\n四川省人事考试中心  \n2016年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d23c18d223ad00982467178c3497d8e0cd84bff62a0559c3f45350c480139718",
+    "selected_material_sha256": "af0ef9bbe939aa9fb3f69a4ad864f190d6382351284d1e9b19f2bf30a087c51f",
+    "question_sha256": "43ebe97d6c02fc58efa0e58cefb83532dd106f174ad3794160cc7d0e2113fd41",
+    "characters": 338,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 338,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 213,
+          "prompt_tokens": 5201,
+          "total_tokens": 5414,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "030-3",
+    "answer": "调研报告提纲\n\n一、打破刻板思维，科学定位内陆渔业发展潜力  \n立足实际，摒弃“内陆不能养鱼”固有观念，坚持因地制宜、尊重自然规律。\n\n二、强化政策支持，构建多元化投入机制  \n中央与地方联动，建立政府引导、企业自筹、社会参与的投入体系；兵团设立专项资金，制定盐碱水渔业发展专项规划。\n\n三、推进技术创新，打造生态化养殖模式  \n依托温泉水电站等资源，建设“企业+研究院所+工程中心”协同创新体系，实现健康生态养殖与技术突破。\n\n四、深化产业链布局，提升产业综合效益  \n发展良种繁育、冷水养殖、精深加工、旅游餐饮一体化产业链，延伸价值链，增强市场竞争力。\n\n五、优化物流保障，降低运输成本  \n依托能源与交通基础设施建设，加强冷链运输网络，实现优质水产品高效直达全国主要城市。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "0c4484741e86e6ebfcb0714fb0f9ea6e7bdb8dfb7b595791b73df5c45d7772e1",
+    "selected_material_sha256": "0f69bd2049e36b3629792aed54884ebcafc61c26f0aaede223f979a9ca24dcd3",
+    "question_sha256": "ec264f7bab6bc8e1126f7854a8875045974b7026b30e84dcf6d47e0f26f0e4d1",
+    "characters": 314,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 314,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 191,
+          "prompt_tokens": 1877,
+          "total_tokens": 2068,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "040-1",
+    "answer": "N市推进基层普法工作的主要措施包括：一是构建网格化服务网络，将10076个基础网格和4487个专属网格作为普法平台，配备7万多名网格员和“法治带头人”“法律明白人”。二是下沉普法力量，依托政法机关干部、律师、调解员等资源，推动普法职责、力量和资源向基层延伸。三是精准对接群众需求，通过“网格通”终端收集社情民意，分析法律需求，明确不同网格的普法重点与方式。四是创新宣传形式，针对老年人群体推出大字体、漫画版防诈手册，并以“拉家常”方式通俗讲解案例，提升普法实效。五是开展常态化的法律服务活动，如法律讲座、咨询答疑、纠纷调解等，实现普法工作贴近群众、服务实际。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "b2cf1016217410d7265f446e29c5c50b9747a36205e815350de917380012cf72",
+    "selected_material_sha256": "d30e2866fcc1af5acf41d1aaef407c4955ceb3b9f67f780022e50fcdd8b33641",
+    "question_sha256": "1c56d901eac9ae55b935016a40444009719f2b47eb81499fa3f44f25df6fc218",
+    "characters": 279,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 279,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 175,
+          "prompt_tokens": 1665,
+          "total_tokens": 1840,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "050-3",
+    "answer": "针对农民反映的种粮收益低、风险高问题，应完善农业保险制度，扩大覆盖范围，提高赔付标准，增强农户抵御自然灾害和市场波动能力。对合作社等经营主体，加大农机购置补贴和科技服务支持力度，提升生产效率与抗风险水平。针对农村基础设施短板，加快“农机路”等交通网络建设，推动农田水利、电力设施提档升级，保障农业生产基本条件。对于公共服务不足问题，推进城乡义务教育一体化，健全城乡居民基本养老保险和医疗保险制度，缩小城乡差距。同时，应转变政绩观，将资源向农业农村倾斜，在重大项目安排和财政资金分配中优先支持农业发展和民生改善。强化基层干部责任，打通政策落地“最后一公里”，切实把乡村振兴各项举措落到实处。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "4a351eb307b423bb28218675abd144535476db7a35ced0444e07d9bcfa0d332e",
+    "selected_material_sha256": "727289e10f0ffd11dfea4dc44fde14321d1759061787d7f21a4839fc126c9684",
+    "question_sha256": "1dcb4d5f758cf401d13db2e95c41e4a5974df994ab66d0cd6f819991dcf93981",
+    "characters": 294,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 294,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 160,
+          "prompt_tokens": 5210,
+          "total_tokens": 5370,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
