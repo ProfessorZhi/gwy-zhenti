@@ -1,0 +1,39 @@
+name: R11 prepare all missing essay references
+on:
+  push:
+    branches: [essay/r11-complete-568]
+    paths:
+      - .github/workflows/r11-prepare.yml
+      - tools/r11_prepare.py
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: r11-prepare
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          show-progress: false
+      - name: Prepare exact source writing packets
+        run: python tools/r11_prepare.py
+      - name: Commit only generated writing packets to this branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = 'essay/r11-complete-568'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          gh auth setup-git
+          git add reports/r11-work
+          if ! git diff --cached --quiet; then
+            git commit -m 'build: 568处缺口的逐卷题目材料与精确同题映射'
+            git push origin HEAD:refs/heads/essay/r11-complete-568
+          fi
