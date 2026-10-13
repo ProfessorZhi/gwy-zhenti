@@ -1,0 +1,182 @@
+[
+  {
+    "id": "012-3",
+    "answer": "应强化地理标志产品品牌建设的系统性与协同性。一是建立龙头企业带动机制，推动“以企带户”，提升产业组织化水平，破解“申请热、使用冷”问题。二是加强品牌宣传推广，打造亲民IP形象，通过文创、动漫、短视频等形式扩大认知度，提升市场影响力。三是健全全程质量控制体系，明确种植、采摘等关键环节标准，保障产品品质一致性，防止品质退化与“以次充好”。四是构建“标志+溯源”双重保护机制，强化市场监管与司法协同，严打假冒伪劣行为，维护品牌公信力。五是完善电商销售配套，建立冷链运输体系，推动标准化、规模化生产，助力产品走向全国市场。六是加强农民培训，提升中老年农户对数字化、智能化技术的适应能力，增强产业内生发展动力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9046a34c95d8ae20ef442429367fa5017994aebd4bbaeb11ea11dc27d899c7da",
+    "selected_material_sha256": "3568216aa3c46972a5ee98d2aa6dbf25b1ce7a2c33597dbf83a4148cac5df5d5",
+    "question_sha256": "d276eebf3560267c65c5d63e13dd3b68f621cbb8c0116cda178bd50169b4a6ee",
+    "characters": 301,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 301,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 183,
+          "prompt_tokens": 2045,
+          "total_tokens": 2228,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "021-3",
+    "answer": "【文物活起来，文化走出去——C省文物资源保护与利用新实践】\n\n在C省，文物不再“沉默”，而是生动讲述着千年故事。  \n兵马俑的“真彩”重现，靠的是与德国合作的前沿科技，新保护技术可让出土原色留存十年以上，让千年华彩重焕生机。  \n\n从延安窑洞到凤堰梯田，革命文物成为思政课堂的鲜活教材。C省推动高校与红色场馆常态化联动，让青年在沉浸式体验中感悟“坚定信念、艰苦奋斗”的延安精神。  \n\n在H县田凤村，200余年古梯田变身开放式生态博物馆——村民以古法耕作、稻鸭共养，发展民宿、民俗展演，实现“保护+致富”双赢。青山绿水间，文物成了百姓生活的“展品”，也成了乡村振兴的“引擎”。  \n\n考古的脚步不停歇。S大学团队深耕丝绸之路沿线，发现数百处文化遗存，揭示文明互鉴的东方图景。而C省文物“走出去”更走深走实：在海外举办50余场展览，从兵马俑到秦代小俑，吸引全球观众驻足；更将中国修复技术带向世界，参与缅甸、尼泊尔等国文物保护工程，让“中国智慧”闪耀国际舞台。  \n\n文物是历史的见证，更是未来的桥梁。C省坚持“在保护中发展、在发展中保护”，让每一件文物都“活”起来，让每一段记忆都传下去。  \n\n（全文共410字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "fb2cf691fd466ced5a4acbb22357f4e3ac8b3853d9e7d5eafa03853d22bfd7f3",
+    "selected_material_sha256": "d68e5f21a798217dc15dac73e2a9df6bff9706832ae5c60bb66e155a90bf7e4c",
+    "question_sha256": "51c6b037efa9fb388f5998e16d944f28009446c4543d12b98a8b62b9395fbade",
+    "characters": 481,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 481,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 334,
+          "prompt_tokens": 1769,
+          "total_tokens": 2103,
+          "prompt_tokens_details": {
+            "cached_tokens": 578
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "034-1",
+    "answer": "J市推进诉源治理坚持“源头预防为先、非诉机制挺前”。通过“娘家人”平台调解外来务工人员矛盾，构建基层纠纷化解机制；设立行政争议调处中心，推动行政机关与群众高效沟通，实现案件协调和解率超30%；常态化开展检察公开听证，特别是简易听证和上门听证，面对面释法说理，矛盾化解率达90%；探索“种子法庭”模式，引入专家型人民陪审员，提升涉种纠纷专业化、专门化审理水平，调解成功率超70%，办理周期大幅缩短。多措并举将法治力量延伸至基层，实现矛盾纠纷就地预防、及时化解。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d9c2e77d2a638c9a65ee0b480519afa53eaec5302058829cab9d0f37771f7c8d",
+    "selected_material_sha256": "2dee5b4f72992bb9baf60d377abce2a1d5ebbc11a79d01cd7600d39f6c14b81a",
+    "question_sha256": "f664aae6c6058cff23ebbba935cea664a6d342978f1006f3a7045bd2106bac98",
+    "characters": 229,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 229,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 150,
+          "prompt_tokens": 1675,
+          "total_tokens": 1825,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "043-3",
+    "answer": "绿色转型发展：生态蝶变，共筑“两山”新图景  \n\nC县坚持“绿水青山就是金山银山”，以系统治理推动绿色转型，实现生态保护与经济社会发展的有机统一。  \n\n在生态修复方面，全县累计投入7000多万元，对17处受损山体实施高次团粒喷播技术治理，裸露山体“应治尽治”。昔日光秃山体如今绿意盎然，紫椴、胡枝子等植被覆盖率达六成以上，海风拂过，如波浪翻涌，生态之美跃然眼前。同时，拆除80台陆域风机，恢复海岛原生风貌，打造“碧桃、樱花、松柏”交织的绿色岛景。  \n\n在海洋经济转型上，建成“经海”系列智能化海洋牧场平台，配备自动投饵、水下洗网机器人和大数据系统，显著提升养殖效率，降低人工成本。通过“接力养殖”模式，与周边养殖户签订协议，实现资源共享、互利共赢，推动传统养殖向生态化、集约化升级。  \n\n在生活绿色化方面，构建全域垃圾分类处理体系，破解“垃圾围岛”困局；全面推行新能源公交，淘汰燃油车辆，实现绿色出行全覆盖，年减碳2800余吨；禁放烟花爆竹、全域替代清洁能源供暖，污水处理全覆盖，让海岛更洁净、更宜居。  \n\n如今，东三岛成“万鸟岛”，东方白鹳、黄嘴白鹭频现，白江豚、斑海豹重现，生态资源焕发新生。省部共建海洋生态文明研究院落户C县，为探索双碳路径、发展海洋碳汇注入新动能。绿色转型，已融入每一片海域、每一寸土地、每一个家庭的生活。  \n\n（598字）",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "604359b0fd94f33226ea0d74ce80dcc5088daf62d36d44752bf870f2839314c2",
+    "selected_material_sha256": "116b67632ebbf1fef7ceed6be1e7a5944089da91fcf923b900b668bfdd8b04ae",
+    "question_sha256": "287868c398f2ad9c5d0189e29847f15caffdf8a03e37a1a5fb9d0a74b5da6e5d",
+    "characters": 555,
+    "word_limits": [
+      495,
+      605
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 555,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 381,
+          "prompt_tokens": 1964,
+          "total_tokens": 2345,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
