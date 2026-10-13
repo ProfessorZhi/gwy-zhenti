@@ -178,5 +178,140 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "061-1",
+    "answer": "微短剧市场乱象主要有：一是内容低俗，渲染“金钱至上”等扭曲价值观；二是缺乏未成年人保护，易引发模仿和不良影响；三是虚假宣传、诱导充值，消费者维权难；四是平台存在盗版抄袭行为，低价售卖侵权内容，侵害原创权益。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "6592bca4b74622329dab9563e1e2dd32acb04a1715afc451f6f0084a9b12cf31",
+    "selected_material_sha256": "c50ebd38c55fece29ec4ecfb12832fedc5b616b1384d75045cb6e4b9a8009e51",
+    "question_sha256": "f92ce8329fb4403e27e96c17372ea7448303ec93e73fea6d35ef25edcdbe2987",
+    "characters": 103,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 103,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 62,
+          "prompt_tokens": 1441,
+          "total_tokens": 1503,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "083-3",
+    "answer": "E市“三资”治理工作情况简报\n\n近年来，我市扎实推进农村集体“三资”治理工作，取得显著成效。一是全面摸清家底，通过实地测量、多方参与、公示确认等方式，开展资产、资源、资金清查，累计清收闲置或被侵占土地10769亩，盘活15167亩，增收2832万元，规范问题合同10344份，清收债权6418笔，金额6840万元。二是健全管理制度，推行“一村一账户”机制，村级财务由镇级代管，实行报账员制度，实现现金、账本、凭证“三代管”，所有账户纳入“银农直联”平台监管，做到全程留痕、闭环管理。三是创新资源盘活路径，依托农村产权线上交易平台，推动荒地等闲置资源公开竞价交易，法柳村通过招标将荒地发展为夜市，土地租金达年26万元，带动村民增收，提升村庄活力。目前，全市已形成市、镇、村三级交易平台体系，交易程序公开透明，部分项目溢价超3倍，有效释放农村资源要素活力，推动集体资产规范管理与乡村经济发展良性互动。\n\nE市农业农村局  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "29eea3586450283e7a2729773ebf8cdf4881b0aca9e4cce3cda35dede4b84cb3",
+    "selected_material_sha256": "a43a543473baaf057e2965bbdacb5bc44434533aa1dd06e46da76ed9c466c464",
+    "question_sha256": "ad055ba11d42151315f260daeef85825889902ab763654d59cb311ffeefba200",
+    "characters": 412,
+    "word_limits": [
+      35,
+      500
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 412,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 277,
+          "prompt_tokens": 1892,
+          "total_tokens": 2169,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "093-3",
+    "answer": "“发挥全产业链优势，打响‘金蒜盘’”体现了K县从种植到加工、销售全链条协同发展的系统思维。通过“企业+村集体+农户”利益联结，实现土地与资本高效配置；引入机械化和太空育种技术，提升生产效率与产品品质；建设批发市场与线上平台，保障价格透明、信息对称，缓解市场波动风险；推动黑蒜、大蒜素等高附加值深加工，延长产业链，提升附加值。同时，政府通过保险、培训、政策支持，强化风险防控与人才培育。全产业链融合不仅优化资源配置，更形成品牌效应，实现从“种得好”到“卖得值”、从“粗放型”向“高质量”转变，为乡村振兴提供了可复制的产业路径。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "2f6ca3cc311515eb45ec83b72ee6c0930e37f2b3815ef65df7fb70dec475c223",
+    "selected_material_sha256": "71869753a0a1087b51c7cf0ded0913484c51b5b48ec18194a540c94cb9ead322",
+    "question_sha256": "91ac2cb02cf155cd8a294d649db5dca7245fdea63fbab841e8b62fb884e6b8f6",
+    "characters": 262,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 262,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 163,
+          "prompt_tokens": 1737,
+          "total_tokens": 1900,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
