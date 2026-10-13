@@ -358,5 +358,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "101-3",
+    "answer": "“种树”比喻培育青年人才的成长过程，强调县域发展应注重长期投入与系统培养，而非短期招引、急于见效。“摘果”则反映传统“等人才来、等项目成”的被动思维。N县通过毕业设计行动，搭建实践平台，让大学生扎根一线，在真实场景中提升能力，实现从“纸上设计”到“落地应用”的转化。这种模式不仅帮助青年人才成长，也反哺县域产业创新。将精力投向“种树”，意味着转变引才理念，从结果导向转向过程赋能，构建可持续的人才生态。这既是对人才成长规律的尊重，也是县域实现高质量发展的深层逻辑——唯有持续培育、厚植土壤，才能真正实现人才与产业的双向奔赴，为未来注入源源不断的发展动能。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "973992e9898aa7b9c8cf3c032438a2f30a878cb237535b540ecb172e824ce245",
+    "selected_material_sha256": "ae884d363285353a777c2da8d7269e9f4493bc41384a4cdda05febc0abc0805d",
+    "question_sha256": "e5b12c66f979deb4d8606111ee98bf4cee874517c7e4543bb455603b98430e49",
+    "characters": 277,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 277,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 168,
+          "prompt_tokens": 1575,
+          "total_tokens": 1743,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "113-1",
+    "answer": "打破信息壁垒，构建全市统一公共信息资源库；组建统一网格管理机构和信息员队伍，实行“一格一员”标准化采集；完善矛盾纠纷分级处置联动机制；整合公共服务资源，建设贴近居民需求的社区家园网；推行统一采集、集中分发，建立自主申报与上门核实相结合的信息采集模式。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "e4f87ba2c72b0f36d189db9f20f03681e2a5a666fa04cd7978ac4a3bc63ca2ac",
+    "selected_material_sha256": "7613129de36b3745199ffe6da629a2b03491b5c49baa2560ab417a51143535d2",
+    "question_sha256": "d9cfccecd45f0efb7196f663ddab1a5f3c5c7889610e4c180222736d4d2e8301",
+    "characters": 125,
+    "word_limits": [
+      35,
+      150
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 125,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 73,
+          "prompt_tokens": 1190,
+          "total_tokens": 1263,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "126-2",
+    "answer": "乡亲们对戏剧团怀有深厚感情，源于剧团长期扎根基层、真诚服务群众。一是剧团坚持“送戏下乡”，将精彩演出送到百姓家门口，满足了群众精神文化需求；二是演出内容贴近生活，如《鸡毛蒜皮》等新戏反映现实矛盾，引发共鸣，让观众在看戏中感悟道理，实现文化育人；三是剧团不计条件，风雨无阻坚持演出，即使寒冬大雪也认真完成，用行动赢得信任；四是演员与群众建立深厚情谊，彼此互信互助，形成“不是亲人胜似亲人”的情感纽带。这种双向互动不仅丰富了乡村文化生活，更增强了群众对地方文化的认同感和归属感，使戏剧团成为基层精神家园的重要组成部分。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "e5757ea9996da3d29c7c60e7372bc8b02993848d742381e55338001c39076819",
+    "selected_material_sha256": "63d729f867f21b8706289b30512bb6d238ccfc4adc5545a082e60261c25a6e0d",
+    "question_sha256": "2b37de3da391dedb1434198286e40d757cd2a528bdfa99211815a174b492fbb2",
+    "characters": 257,
+    "word_limits": [
+      35,
+      350
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 257,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 165,
+          "prompt_tokens": 1918,
+          "total_tokens": 2083,
+          "prompt_tokens_details": {
+            "cached_tokens": 576
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "137-4",
+    "answer": "**汇聚合力，共筑高质量发展新未来**\n\n在当今时代，技术迭代加速、产业变革深刻，单打独斗已难以应对复杂多变的发展环境。唯有善于汇聚多元力量，形成协同共振的合力，才能在变革中把握主动，在挑战中赢得先机。J市依托特色产业集群建设，通过政府引导、企业联动、资源共享，构建起“龙头引领、链条协同、平台支撑”的发展格局，正是对“汇聚力量、联结当下、通向未来”这一命题的生动实践。\n\n产业集群的发展，本质上是产业链上下游、大中小企业之间协同共生的过程。J市以链主企业为牵引，设立“一群一班、一群一策”专班机制，精准施策、靶向发力，既保障了产业发展的方向性，又增强了各主体间的互动性。例如，轨道交通装备龙头企业带动新材料产业集群形成，不仅实现了技术突破，更通过产业链延伸，催生出一批配套企业，形成了“你中有我、我中有你”的共生格局。这种协同不是简单的资源堆叠，而是基于市场需求与技术路径的深度耦合，是实现产业高质量发展的内在逻辑。\n\n与此同时，共享平台的建设打破了中小企业“缺资金、缺设备、缺技术”的困境。J市打造的产业集群共享数据中心，借助5G、工业互联网等数字化手段，将厂房、设备、技术等生产要素进行动态调配，实现了资源的高效配置与价值再创造。一家机器人企业通过平台接单，迅速联结上下游企业协同生产，既降低了运营成本，又提升了响应速度。这说明，真正的合力不仅来自组织结构的优化，更源于资源配置机制的创新——让每一个主体都能在共享中获得发展机会。\n\n更深层次看，合力的形成离不开制度设计与政策引导的支撑。J市设立核心技术攻关专项、建设科创飞地、提供研发资助，既解决了“卡脖子”难题，也打通了科技成果转化的“最后一公里”。这些举措不仅激励企业投入创新，更营造了全社会协同攻坚的氛围。这启示我们，推动合力形成，必须建立系统性制度安排，通过政策引导、资金支持、平台搭建等手段，将分散的力量整合为有方向、有韧性的整体。\n\n此外，合力的凝聚也体现在治理理念的转变上。从“政府包办”到“多元共治”，从“单向管理”到“协同参与”，现代治理体系越来越强调主体间的平等互动与责任共担。J市通过设立社区发声人、组建志愿服务队等机制，将居民需求纳入决策流程，实现了治理中的“微循环”。这种基层治理的创新，不仅提升了群众满意度，也验证了：无论是在产业领域还是社会治理中，唯有让各方声音被听见、被回应，才能真正形成可持续的合力。\n\n综上所述，“汇聚力量”不是口号，而是需要系统性思维与务实行动的实践路径。它要求我们以产业链为纽带，以数字化为工具，以制度创新为保障，推动企业、政府、社会主体在目标一致中协同前行。正如J市所展现的那样，唯有联结当下、整合资源、激发活力，才能在时代的浪潮中破浪前行，真正实现高质量发展的宏伟蓝图。未来之路虽远，但只要我们善于凝聚共识、形成合力，就一定能在变革中开辟出更加广阔的发展空间。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "8362714a015557f78659f247b476f88936fdfd00a7668c932e26dcfcd79fd4e6",
+    "selected_material_sha256": "abb2b5526906d0b9b44e002e303402981d8a6444f5773a2fb1030f9628d92f97",
+    "question_sha256": "2f928cc4e4d80f8b29fe8ec8c7924cc4532a7cb6a3eef48affc49b531a55f4d5",
+    "characters": 1173,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1173,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 697,
+          "prompt_tokens": 5277,
+          "total_tokens": 5974,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
