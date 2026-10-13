@@ -1,0 +1,234 @@
+[
+  {
+    "id": "016-4",
+    "answer": "**心路·辛路·新路**\n\n乡村振兴，不仅是物质条件的改善，更是人心归聚、精神焕新的过程。从峻岭村泥泞山路到虎牙村人心涣散，再到凳子村产业突围，基层实践深刻揭示：真正的振兴之路，始于“心路”的打通，成于“辛路”的坚守，终归于“新路”的开拓。\n\n“心路”是群众对美好生活的向往与信任的起点。峻岭村道路不通，村民急切期盼；虎牙村缺水，村民却不愿领水，抱怨“太麻烦”，反映出的是人心的疏离与信任的缺失。赵波不以政策施压，而是俯身实干，从自家动手到上门帮扶，用行动消解隔阂，让村民由“被动接受”转向“主动参与”。这种情感上的共鸣，是任何制度设计都难以替代的根基——只有当群众感受到被尊重、被理解，才能真正点燃内生动力。\n\n“辛路”是基层干部扎根一线、攻坚克难的必经之路。马骁在陡峭山路上吃住工地，翻山越岭勘查，发动群众送水送饭；童猛走访调研，带领村民养殖麻黑鸡，打通销售渠道。这些看似琐碎的坚持，实则是对“为民”二字最真实的诠释。辛劳不只体现在体力付出，更在于面对困难时不退缩、在矛盾前不动摇的担当精神。正是这种“以身作则、甘于奉献”的辛路实践，才让政策落地生根，让群众从“观望者”变为“参与者”。\n\n“新路”是因地制宜、创新突破的发展路径。凳子村依托土鸡土鸭打造电商销售体系，实现从“卖产品”到“卖品牌”的跃迁；B县木雕人引入数字雕刻技术，提升效率与设计能力；梦梦通过直播传播剪纸技艺，让非遗焕发新生。这些案例表明，乡村振兴不能照搬模板，而应立足资源禀赋、顺应时代潮流，在传统与现代之间寻找融合点。唯有创新思维，才能破解“无路可走”的困境。\n\n从“心路”到“辛路”，再到“新路”，是一个层层递进的逻辑闭环。没有人心的凝聚，再辛苦的付出也难见成效；没有实干的支撑，再先进的理念也难以落地；没有创新的路径，发展终将陷入僵局。三者相辅相成，共同构成乡村振兴的完整图景。\n\n因此，新时代的基层治理，不仅要“看得见”，更要“摸得着”、能“感得到”。应进一步加强干部作风建设，鼓励下沉一线、真抓实干；推动政策与群众需求精准对接，提升服务温度；同时支持传统技艺与数字技术融合，激发乡村内生活力。唯有如此，才能真正走出一条属于中国乡村的、有温度、有力量、可持续的发展之路。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "d9b3e3f9e72110b3eff22cc80eb5756d6cfc7a1a5052d01c5b439b2dae74ac68",
+    "selected_material_sha256": "174a4f8b03606d260e958cb5b5352a2190f3066a0bc54e6279849b64c966661b",
+    "question_sha256": "ad2f6a52c2a9aedddd3f908f8a385f0cb59d6602d6f9d73e955f7246ba2bc153",
+    "characters": 909,
+    "word_limits": [
+      800,
+      1000
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 909,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 618,
+          "prompt_tokens": 5443,
+          "total_tokens": 6061,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "028-3",
+    "answer": "步行街周边问题可分类汇总如下：\n\n一、交通与停车乱象：私家车“后备箱经济”占道经营、商贩推车占人行道，影响通行安全，应划定专属停车区，设置临时集散点，并加强巡查执法。\n\n二、噪音扰民问题：工地夜间施工、摩托车“炸街”、烧烤摊及广场音乐等产生持续噪音，建议实行分时管理，明确夜间禁噪时段，对违规行为依法处罚并建立举报机制。\n\n三、环境污染与油烟排放：餐饮店直排油烟、污水倾倒，污染环境和空气，应强制安装油烟净化装置，规范下水道排污，加强日常检查与执法。\n\n四、光污染问题：商户射灯、霓虹灯夜间亮度过高，影响居民休息，建议统一设置照明标准，实行错峰亮灯，由城管与住建部门联合协调整改。\n\n以上问题需建立联席管理机制，明确责任分工，形成常态化巡查与群众参与的共治格局。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "cb27d4a1a38e5f2b2cb47dc3baf7e4261e8c9b72c853d33cd93981f793f4dacb",
+    "selected_material_sha256": "268d37d3668f651d5f1caac37ac47b7bd39355c5916c5a1c6e62bc7670a70207",
+    "question_sha256": "17212d06add022d64a3ee12729cebbab943c3d82d2d1a931fb2f94bd082e5127",
+    "characters": 321,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 321,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 216,
+          "prompt_tokens": 1441,
+          "total_tokens": 1657,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "038-2",
+    "answer": "“新局蕴新机，新机生新局”体现了碳汇城市建设中政策创新与实践反馈的良性循环。环境交易所的建立，推动碳汇交易正规化，催生市场新机遇；近自然造林、渣土改良等模式，将生态治理转化为碳汇资源，实现环境与经济双赢；碳汇积分小程序引导市民绿色行为，形成全民参与的新风尚。乡村通过出售毛竹林碳汇，激活了沉睡的生态资产，实现增收与生态保护并重。这些新举措不仅破解了城市治理难题，更激发了更多创新路径，形成“制度突破—实践探索—价值释放—再驱动”的闭环，真正实现了从观念革新到行动变革的自我迭代，为可持续发展注入持续动能。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "2da43c2453a1e0e1435ea4931a748fbd929828ab6fa1bfa8dfeb3d9571241872",
+    "selected_material_sha256": "3dca684064bd6257e69785bb506c245a3c741c10946ed99f18ec873d95d4c808",
+    "question_sha256": "33841d4958049d171b0ce2ce621ad46057c6b85df8bb631b9f1ae7f63b894426",
+    "characters": 252,
+    "word_limits": [
+      35,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 252,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 160,
+          "prompt_tokens": 2045,
+          "total_tokens": 2205,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "048-4",
+    "answer": "**桥连天地，心通民心——论高质量发展的现实路径**\n\n桥，是跨越山川的物理存在，更是连接发展与民生、创新与秩序、传统与未来的象征。从山东“好品山东”中海尔“砸冰箱”唤醒质量意识，到泰山体育研发碳纤维自行车打破欧美垄断，再到青州以花木生态构建宜居宜业新图景，这些实践无不体现一种“搭桥”逻辑——以匠心为基、以创新为桥面，连接市场与用户、技术与需求。正如“坯土经水火淬炼方成瑰宝”，真正的高质量发展，必是长期沉淀、反复打磨的成果。\n\n在产业层面，桥是技术与市场的连接点。海尔从质量金牌到全球第一白色家电品牌，靠的是将用户需求直接纳入质量标准；潍柴发动机热效率突破世界纪录，体现的是科技创新对产业格局的重塑。寿光市通过建设种质资源库、推进产学研融合，使国产蔬菜种子占有率从54%提升至70%以上，说明自主创新必须打通“育—繁—推”全链条，才能实现从“依赖进口”到“自主可控”的跨越。\n\n在生态与发展的关系中，桥是人与自然的平衡点。东梁村曾因盲目发展陷入“扬尘污水”困境，后通过关闭污染企业、建设污水处理站、推行有机种植，走出一条“生态+农业+旅游”之路。村民收入从低谷提升至人均3.8万元，村集体收入突破亿元，证明生态保护不是牺牲发展的代价，而是实现可持续增长的根基。\n\n在城市管理中，桥是秩序与民生的交汇点。S市新北夜市从混乱无序到规范有序，通过科学扩区、分类管理、增设移动厕所、引导商家开放设施，实现了“烟火气”与“文明风”的统一。李家湾便民菜市则通过调研摸底、试点设立、推选小组长、组织志愿服务，让农民摊主“安家”，居民“买得放心”，体现出治理从“硬管控”向“共治共享”转型的路径。\n\n更为深远的是，在国家战略层面，桥是开放与协同的纽带。中通新能源客车出口吉尔吉斯斯坦，不仅创下最大订单纪录，更以本地化定制提升舒适性与环保性，展现了中国品牌在“一带一路”中的责任担当。这不仅是产品输出，更是标准、服务、绿色理念的全球传播。\n\n桥的建立，源于对现实问题的精准把握，也依赖系统设计与多方协同。从一粒种子到一座村庄，从一条夜市到一个产业，每座桥都承载着发展困境的破解与未来图景的构建。高质量发展不是口号，而是通过“建桥”实现的路径选择——以创新为基，以民生为本，以生态为界，以协同为径。\n\n唯有坚持系统思维、以人民为中心、以实践为导向，才能真正架起通往美好未来的坚实之桥。这不仅是物理上的跨越，更是发展理念与治理能力的跃迁，是新时代中国式现代化的生动写照。桥在脚下，路在前方，发展之路，终将越走越稳、越走越宽。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "13ea3863f7dcc8ca8b3fb31027e820f928c2cd156a68c2f1804cfcd1275bd0d8",
+    "selected_material_sha256": "283cb6fab99fcf4a5ac7fdb0d787be438c2384c1d1710497b1b754659fa41aac",
+    "question_sha256": "59021828ead88fad7a42d64071da860e68cd215be69c95f6c8a7c3bbd6e56808",
+    "characters": 1035,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1204,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 781,
+          "prompt_tokens": 5721,
+          "total_tokens": 6502,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "characters": 1185,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 775,
+          "prompt_tokens": 6625,
+          "total_tokens": 7400,
+          "prompt_tokens_details": {
+            "cached_tokens": 6501
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "characters": 1191,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 780,
+          "prompt_tokens": 6604,
+          "total_tokens": 7384,
+          "prompt_tokens_details": {
+            "cached_tokens": 5967
+          }
+        }
+      },
+      {
+        "iteration": 4,
+        "characters": 1223,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 796,
+          "prompt_tokens": 6609,
+          "total_tokens": 7405,
+          "prompt_tokens_details": {
+            "cached_tokens": 6373
+          }
+        }
+      },
+      {
+        "iteration": 5,
+        "characters": 1035,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 681,
+          "prompt_tokens": 6640,
+          "total_tokens": 7321,
+          "prompt_tokens_details": {
+            "cached_tokens": 6490
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  }
+]
