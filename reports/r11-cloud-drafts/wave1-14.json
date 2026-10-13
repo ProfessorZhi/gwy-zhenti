@@ -538,5 +538,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "153-3",
+    "answer": "F市“城市社区嵌入式服务设施”建设典型案例参评材料\n\nF市立足居民实际需求，创新构建“民生幸福共同体”，推动社区嵌入式服务设施建设提质增效。坚持“改造与新建结合、片区统筹开发”，因地制宜推进空间整合，如南华社区2000平方米综合体、红梅社区4300平方米邻里中心，实现功能复合集成。探索土地混合利用模式，创新用地性质配置，为服务设施落地提供政策支持。\n\n坚持“问计于民”，通过问卷调研精准识别居民需求，实现服务“按需嵌入”。如仙桃社区依托楼栋空间打造养老爱心街区，覆盖近万居民日常生活所需，形成“一街一景、一站一业”的服务格局。\n\n创新运营模式，推动政企协同。政府购买服务、物业接管、“政企合资”等多元路径并行，探索可持续发展路径。通过社区打包竞标，提升规模效益，破解微利运营难题。\n\n实践表明，F市以需求为导向、空间为依托、多元共治为路径，构建了普惠优质、可持续的社区服务体系，为全国城市社区服务设施建设提供了可复制、可推广的“F模式”。  \n\nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "f87fdbd45b488b457e37584872b46651b69dc9c95dda64483b68f1fd8dee5e38",
+    "selected_material_sha256": "47d796eb852fc132d6f1f0c5e7d226fa3dc43ad86b8834d18f712cac6195b2e4",
+    "question_sha256": "40e4bb6add9b71736bee54eb86aa57bca56493a7ec3f5c506015bb29d7d2496f",
+    "characters": 421,
+    "word_limits": [
+      35,
+      450
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 421,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 262,
+          "prompt_tokens": 1772,
+          "total_tokens": 2034,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "162-2",
+    "answer": "“柔”并非软弱退让，而是以包容、协商和柔性手段化解矛盾，实现共治共赢。在居民议事中，“柔”体现为尊重多元诉求，不强求统一，通过充分沟通倾听不同声音，兼顾有车户与无车户、物业与居民等各方利益，避免简单对立。它强调过程的透明公开，通过公示清单、线上平台等方式让居民全程参与，增强信任感。同时，“柔”体现为灵活应对，如对噪声担忧提出种花补偿，既解决问题又维护情感联结。更重要的是，“柔”注重机制建设，通过建立议事员人才库、引入专业人员参与监督，提升协商的专业性与可行性。这种“柔”的方法不强求立竿见影，而是以耐心、细致和共情推动共识形成，最终实现群众利益的协调统一。正如孙书记所言，“议而能决，商而能行”，柔的方法正是在柔中见韧，在沟通中促和，在共建中凝聚民心。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "a9d3d1542d8903b3925f2fcabc4544de2907e0ef94f28be310631a33d240850b",
+    "selected_material_sha256": "0f020a5a40027fafa11f31a74d8bcd0e97d5e32ccdf75390b2e4dc1fdad87ba9",
+    "question_sha256": "8a37851c261486ed3b6322a01f560ac26d1f5ff709add9830180a17bd27ba6c4",
+    "characters": 328,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 328,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 217,
+          "prompt_tokens": 1775,
+          "total_tokens": 1992,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "172-2",
+    "answer": "X市法律顾问在执法过程中发挥了多方面作用：一是参与执法监督，深入各执法单位开展案卷评查和“三页制度”督导，纠正不规范执法行为；二是以案释法，针对难点问题一对一指导，提升执法合法性与公信力；三是参与执法争议化解，通过登门沟通、举证说明等方式，帮助企业理解法律依据，推动矛盾纠纷实质性解决；四是参与行政复议和诉讼案件代理，年均代理百余起，确保程序合法、事实清楚，实现案结事了；五是加强法治培训，组织社情民意沟通会和专题培训，提升执法人员依法行政能力。法律顾问通过“事前解惑、事中参与、事后释疑”全过程介入，有效促进执法规范化、透明化和群众满意度提升。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "655d8fb824c92fa16c5b93f4cbd9f2ca976627a284150c9f689c9fca1f809614",
+    "selected_material_sha256": "bf6d2512048309bd8109770f9b29cdfae250c17a7756d471c814da2bd44e6824",
+    "question_sha256": "8e95a84e9eeedd0c65b92b05c8bc5ecb43920b781f51e0c50122a82000bb2b96",
+    "characters": 273,
+    "word_limits": [
+      200,
+      300
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 273,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 170,
+          "prompt_tokens": 1332,
+          "total_tokens": 1502,
+          "prompt_tokens_details": {
+            "cached_tokens": 581
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "183-4",
+    "answer": "**风后面是风，天空上面是天空，道路的前面还是道路**\n\n“风后面是风，天空上面是天空，道路的前面还是道路”，这句诗看似简单，却蕴含着深刻的发展哲理——困境之后仍有希望，眼前之景之外有更广阔的空间，前行之路从未中断。它不仅描绘了事物发展的内在逻辑，也揭示了在时代变革中个体与企业不断突破、持续前行的精神力量。\n\n小李家族的煤气罐产业，正是这一哲思的生动注脚。上世纪90年代，鑫旺能源凭借敏锐的市场判断和扎实的生产管理，一度成为行业翘楚；然而，2010年之后，市场饱和、需求萎缩，企业陷入“越扩越亏”的困境，一度濒临倒闭。在产业转型的关键节点上，小李没有选择退缩，而是以开放的视野重新审视市场格局，从“本土化”转向“国际化”，通过研究海外不同型号标准、优化生产流程，最终实现了外贸突破。这一转变，不是对过往失败的简单否定，而是在困境中看到新可能，于看似无路处开辟出路。\n\n这正体现了“风后面是风”的深刻意涵——当一个产业遭遇结构性调整，表面看似萧条，实则孕育着新的方向与机遇。正如当前中国经济从高速增长转向高质量发展，传统产业面临转型升级压力，但与此同时，数字经济、绿色能源、海外拓展等新赛道不断涌现。民营企业在政策支持下，正从“被动适应”走向“主动创新”，从“守成”迈向“开拓”。小李的实践告诉我们：真正的出路不在于固守旧有模式，而在于以战略眼光洞察趋势，在变局中寻找新的生长点。\n\n“天空上面是天空”，则揭示了发展的无限性。在技术、市场和资源层面，世界始终存在尚未被充分开发的空间。国内煤气罐市场萎缩，但全球仍有200多个型号需求，尤其是发展中国家对安全、便捷能源产品的迫切需要，为民营企业提供了广阔的海外空间。互联网的普及打破了信息壁垒，降低了外贸门槛，使原本“小而散”的制造企业也能借助平台实现精准对接。这说明，发展的边界并非由资源或市场决定，而是由认知与行动力所界定。\n\n更重要的是，“道路的前面还是道路”，强调了持续前行的坚定信念。小李在创业初期遭遇5个月无订单的挫折，父亲质疑市场可靠性，但他没有放弃，而是通过实地展示、透明化生产流程赢得信任，最终实现突破。这正体现了企业家精神的核心——面对不确定性，不轻言放弃，始终相信“路就在脚下”。在当前复杂多变的国内外环境下，无论是民营企业还是基层单位，都面临转型阵痛与外部挑战，但只要保持战略定力、坚持创新探索，就一定能在新的赛道上找到属于自己的位置。\n\n展望未来，推动高质量发展，不仅需要政策支持，更需要市场主体具备“看见远方”的眼光和“脚踏实地”的行动。无论是传统产业的数字化改造，还是新兴产业的跨界融合，都要求我们以长远视角看待问题，在困境中积蓄力量，在变局中把握机遇。\n\n风在吹，天空在延展，路始终向前——只要心怀信念、勇于变革，每一个平凡的个体和企业，都能在时代的浪潮中，走出属于自己的光明之路。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7432cc51b85f2890f6a126192f95ad7354dbd69a1881facf3d42bf5b9313a4b1",
+    "selected_material_sha256": "c8229f25274b28bd09f2c102161bb2478b27053f8da1e6b9abda1bd51df8effb",
+    "question_sha256": "91c8128e6df002afd3361a202e85b7c35a83984b43283ba2315beb16afc8bf1e",
+    "characters": 1163,
+    "word_limits": [
+      1000,
+      1200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 1163,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 702,
+          "prompt_tokens": 1692,
+          "total_tokens": 2394,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
