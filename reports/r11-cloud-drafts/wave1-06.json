@@ -313,5 +313,185 @@
       }
     ],
     "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "101-4",
+    "answer": "尝鲜，是三江面业立足传统、开拓市场的生动实践；长鲜，则是其走向规模化、品牌化、产业化的必然路径。从家庭作坊到产业链集群，三江面业以组织化发展破解品质参差、标准缺失的难题，通过制定团体标准、设立传习所、开展技能大赛，既守住了手艺根脉，又提升了整体竞争力。政府搭台、市场唱戏，推动“三江面工”成为地方特色劳务品牌，实现从“一锅面”到“千家面”的跨越。企业主动转型、品牌化运营，带动上下游融合，形成产值超千亿的产业生态。更可贵的是，三江面业不满足于“尝鲜”，而是以匠心传承与创新迭代并重，推动产业可持续发展。从“一碗面”到“一座城”，其背后是文化自信与产业自觉的双重升华。未来，唯有坚持品质为本、品牌为魂、协同为基，才能真正实现从“尝鲜”到“长鲜”的跨越，让传统面食在新时代焕发持久生命力。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "973992e9898aa7b9c8cf3c032438a2f30a878cb237535b540ecb172e824ce245",
+    "selected_material_sha256": "7fc962c802764fd22da0fee95dde3303212619066553659ca48f161169d6f9ae",
+    "question_sha256": "b99b5cd1fd3a9727fef2474f915c74478a97c497fbb8dee0f64ba91f8f8250ab",
+    "characters": 342,
+    "word_limits": [
+      35,
+      400
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 342,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 234,
+          "prompt_tokens": 1568,
+          "total_tokens": 1802,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "113-2",
+    "answer": "会议通知书\n\nS市法制办通知：\n\n为广泛听取社会各界对《S市网络预约出租车经营服务管理暂行办法（征求意见稿）》的意见建议，拟于近期在法制大厦301会议室召开座谈会。现将有关事项通知如下：\n\n一、会议时间：XXXX年X月X日（星期X）下午14:30—17:00  \n二、会议地点：S市法制大厦301会议室  \n三、参会人员：网约车从业代表6名、出租车司机代表6名、市民代表10名  \n四、座谈提纲：  \n1. 网约车车辆登记条件及车型范围（5座以上7座以下乘用车）；  \n2. 驾驶员资格要求（S市户籍或有效居民证、从业资格考试合格）；  \n3. 关于驾驶员连续驾驶时间限制（建议单班驾驶运行不超过10小时，中间休息不少于10小时）；  \n4. 网约车平台是否应强制安装发票打印装置及信息完整性要求；  \n5. 平台促销行为对市场秩序的影响及现有从业人员安置问题。  \n\n请相关代表提前准备意见，准时参会，共同推动政策科学合理制定。\n\nS市法制办  \nXXXX年X月X日",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "e4f87ba2c72b0f36d189db9f20f03681e2a5a666fa04cd7978ac4a3bc63ca2ac",
+    "selected_material_sha256": "0243d61545d66b5a0a3389b1a44fa106b514f8110bc33c7481f97d7697c77fe8",
+    "question_sha256": "af860c836bf46da1c68960f765e3fc2e0b1aa747b3554f4c66fcf72bc0572454",
+    "characters": 390,
+    "word_limits": [
+      360,
+      440
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 390,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 272,
+          "prompt_tokens": 991,
+          "total_tokens": 1263,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "127-1",
+    "answer": "A县通过发放“玫瑰卡”实现花农信息与收货联动，提升采收效率；建设产业大数据平台，整合种植、加工、销售数据，推动管理定量化；对烘干车间等环节实施智能改造，提升良品率与协同效率；推进产品赋码溯源，保障消费安全；支持企业开展直播带货，拓展销售渠道，实现玫瑰产品多元化发展，全面提升产业链数字化水平。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "9df7769c65c422140d5e5bea9c46b820adad3bc7d295f4fead44bc56f656536a",
+    "selected_material_sha256": "4bf0f176de3edbae53a8a8da76e8dffc15c2e2e9a97320109208535bf0f10d99",
+    "question_sha256": "4ee1fda0e4484462db69f0c62e08cc7262edb61279a65efbd97d1613865bc57c",
+    "characters": 146,
+    "word_limits": [
+      35,
+      200
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 146,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 89,
+          "prompt_tokens": 1661,
+          "total_tokens": 1750,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
+  },
+  {
+    "id": "138-1",
+    "answer": "E市通过摸清“三资”家底，开展实地测量并多方公示确认，确保公开透明；成立工作小组，发挥党员带头作用，推动群众配合；规范合同管理，清收问题合同、债权，盘活闲置资源；建立“一村一账户”代管机制，实行账目统一监管，实现全程留痕；依托农村产权交易平台，推行公开竞价、阳光交易，促进资源高效变现。通过制度完善与多方协同，实现资产明晰、资金规范、资源活化，提升村庄治理效能和村民获得感。",
+    "author": "Qwen3-4B-Instruct-2507开源模型辅助原创（GitHub托管运行器内生成）",
+    "authorship_kind": "open_model_original",
+    "source_packet_sha256": "7086fb711d56537ce9a1e9a57869e01208c03ab506bef38654e5e0109dfaf796",
+    "selected_material_sha256": "1c3db3bbc664c5f5ab2aa47ae7df1b8d837ee1f698082ee548da8185c147db9d",
+    "question_sha256": "10f449604e9b98fb187063d8fffd47fd24c68af3991ea815f31b13847e77f4fc",
+    "characters": 187,
+    "word_limits": [
+      35,
+      250
+    ],
+    "model_provenance": {
+      "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "model_revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+      "model_file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "model_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "runtime_tag": "b11429",
+      "runtime_asset": "llama-b11429-bin-ubuntu-x64.tar.gz",
+      "runtime_sha256": "f6d25dde8f51133143d1453da4fd5f73b145127177612a283bf7995957af3392",
+      "inference_location": "ephemeral GitHub-hosted runner, loopback only",
+      "private_material_external_api_submission": false
+    },
+    "model_self_review": {
+      "ok": true,
+      "issues": []
+    },
+    "generation_attempts": [
+      {
+        "iteration": 1,
+        "characters": 187,
+        "finish_reason": "stop",
+        "usage": {
+          "completion_tokens": 118,
+          "prompt_tokens": 1854,
+          "total_tokens": 1972,
+          "prompt_tokens_details": {
+            "cached_tokens": 577
+          }
+        }
+      }
+    ],
+    "quality_boundary": "完整原创学习初稿；已按原题字数校验并经模型内容复核，未经人工阅卷或实考评分。"
   }
 ]
