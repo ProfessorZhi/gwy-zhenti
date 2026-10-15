@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-15",
+  "browser": "TinyFish only; no OpenCLI",
+  "findings": [
+    {
+      "target": "2026福建省市综合管理申论完整试卷",
+      "acquired_complete_paper": false,
+      "checked": [
+        {"url": "https://fj.huatu.com/gwy/shiti/slzt/", "result": "页面标题含2026，正文目录仍以2019及以前真题和模拟练习为主，无目标整卷。"},
+        {"url": "http://www.fjsgwy.org/category/67.html", "result": "最近真题正文为2021及以前，无2026目标整卷。"},
+        {"url": "https://www.132gk.com/web/exercise/shenlun/exam", "result": "检索可见2026通用与其他地区目录，未取得福建省市目标正文。"},
+        {"url": "https://i.offcn.com/c/1396827", "result": "公开检索目录有历年省市PDF名称，不能证明已取得2026完整正文。"}
+      ],
+      "local_search": "用户资料包的精确文件名未见2026福建申论省市；上游2026福建命中文件为行测模块，未替换为申论。"
+    },
+    {
+      "target": "2026北京申论完整试卷",
+      "acquired_complete_paper": false,
+      "checked": [{"url": "https://m.gwy.com/dfgwy/395860.html", "result": "正文是领取咨询与备考说明，无原材料、作答题及公开下载附件。"}],
+      "boundary": "不把广告或其他省份同年题面当作北京真题。北京逐年核对另见专项库存报告。"
+    },
+    {
+      "target": "2025北京行测56—58共用操作符图例",
+      "url": "https://www.33iq.com/question/588737.html",
+      "tinyfish_run_id": "7f0f8492-886d-4950-bdae-99ed79233340",
+      "terminal_state": "completed",
+      "result": "页面要求滑块验证；未取得题面或图例，不能把该候选当成补题证据。"
+    },
+    {
+      "target": "2016黑龙江县乡申论两处来源缺段",
+      "checked": [
+        {"url": "http://m.houzhiwang.com/html/202002/7732.html", "result": "同题公开回忆稿仍明确部分资料暂缺，并直接从加盖厂房起句；不能据此恢复缺段。"},
+        {"url": "http://sanlianbook.com/public/uploads/files/20201208/c284accd7ffca8e58ad1b872bbcf194c.pdf", "result": "检索候选实为2013江苏，排除。"},
+        {"url": "http://sanlianbook.com/public/uploads/files/20201208/e9d87b3ab611291ef8f7c88002732cd3.pdf", "result": "检索候选实为2020甘肃，排除。"}
+      ]
+    }
+  ],
+  "boundary": "记录已查到但不能用于补齐的来源；链接、目录、营销页与不同年份试卷都不计作目标正文。"
+}

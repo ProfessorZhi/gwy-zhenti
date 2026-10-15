@@ -1,0 +1,239 @@
+{
+  "status": "passed",
+  "papers": 6,
+  "questions": 26,
+  "ai_revised_answers": 7,
+  "results": [
+    {
+      "path": "省考/广东/2016/申论-乡镇卷.md",
+      "status": "passed",
+      "source_points": [
+        30,
+        30,
+        40
+      ],
+      "tasks": [
+        {
+          "original_number": 3,
+          "answer_characters": 448,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 2,
+          "answer_characters": 217,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 1,
+          "answer_characters": 245,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2017/申论-乡镇卷.md",
+      "status": "passed",
+      "source_points": [
+        30,
+        30,
+        40
+      ],
+      "tasks": [
+        {
+          "original_number": 3,
+          "answer_characters": 536,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 2,
+          "answer_characters": 283,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 1,
+          "answer_characters": 233,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2019/申论-乡镇卷.md",
+      "status": "passed",
+      "source_points": [
+        15,
+        15,
+        20,
+        25,
+        25
+      ],
+      "tasks": [
+        {
+          "original_number": 3,
+          "answer_characters": 200,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 5,
+          "answer_characters": 233,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 4,
+          "answer_characters": 231,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 2,
+          "answer_characters": 180,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 1,
+          "answer_characters": 158,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2020/申论-乡镇卷.md",
+      "status": "passed",
+      "source_points": [
+        15,
+        15,
+        20,
+        20,
+        30
+      ],
+      "tasks": [
+        {
+          "original_number": 5,
+          "answer_characters": 295,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 4,
+          "answer_characters": 300,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 3,
+          "answer_characters": 164,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 2,
+          "answer_characters": 195,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 1,
+          "answer_characters": 167,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2021/申论-乡镇卷.md",
+      "status": "passed",
+      "source_points": [
+        15,
+        15,
+        20,
+        20,
+        30
+      ],
+      "tasks": [
+        {
+          "original_number": 5,
+          "answer_characters": 399,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 4,
+          "answer_characters": 271,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 3,
+          "answer_characters": 281,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 2,
+          "answer_characters": 145,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 1,
+          "answer_characters": 161,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2022/申论-乡镇卷.md",
+      "status": "passed",
+      "source_points": [
+        15,
+        15,
+        20,
+        20,
+        30
+      ],
+      "tasks": [
+        {
+          "original_number": 5,
+          "answer_characters": 335,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 4,
+          "answer_characters": 287,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 3,
+          "answer_characters": 290,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 2,
+          "answer_characters": 179,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        },
+        {
+          "original_number": 1,
+          "answer_characters": 169,
+          "material_preserved_except_explicit_range_label": true,
+          "unrevised_answer_preserved_or_legacy_retained": true
+        }
+      ]
+    }
+  ],
+  "scope": "Every pre-existing material body preserved except explicitly proven material reference labels; existing nonrevised answers byte-preserved within their moved task containers; all seven revised drafts remain in source appendix; current active answers meet actual source word limits."
+}

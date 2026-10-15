@@ -1,0 +1,21 @@
+{
+  "source": "tools/data/verify_beijing51_strategy_20261015.py",
+  "source_sha256": "ec25b038483b4bfd829041ec8beb983c58119e2f4cd8f3b227bb2e87cd723585",
+  "random_cases": 50000,
+  "seed": 20261015051,
+  "top_two_order": "Every 8-to-2 output pair independently reversed with probability 1/2; strategy cannot rely on hidden within-pair rankings.",
+  "pair_order_flips": 136666,
+  "query_counts": {
+    "8": 17993,
+    "7": 32007
+  },
+  "branches": {
+    "different_groups_partner_third": 17993,
+    "same_group": 11287,
+    "different_groups_other_third": 20720
+  },
+  "status": "passed",
+  "proven_upper_bound": 8,
+  "lower_bound_status": "No global lower bound excluding all seven-query strategies has been established. The eight-query constructive strategy refutes a minimum-ten claim but alone does not prove eight is optimal.",
+  "prefix_specific_lower_bound": "In the stated four-groups-of-eight prefix, after p/q arise from different groups and third winner r is p/q partner, the fourth-best remains possible among six previously unselected devices in r group and five other heads. One last query can contain at most eight distinct devices, so that fixed prefix needs two additional queries. This is not a bound for every possible global strategy."
+}

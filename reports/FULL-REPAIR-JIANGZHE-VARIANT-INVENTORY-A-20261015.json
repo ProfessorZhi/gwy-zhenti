@@ -1,0 +1,1365 @@
+{
+  "date": "2026-10-15",
+  "scope": "2016–2026 江苏浙江真实省考申论分卷；优秀村干部综合应用能力不冒称申论D",
+  "method": "读取每年全部分卷和统考桶；逐题比较题干与12字材料片段；保留文件哈希和原始卷型标签",
+  "expected_real_variants": 61,
+  "named_variant_files": 56,
+  "missing_real_variants": 5,
+  "bucket_files": 0,
+  "rows": [
+    {
+      "region": "江苏",
+      "year": 2016,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2016/申论-A类.md",
+          "variant": "A类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "0f30c24373b8279b46a1749d430a6597f93bac8874640b455ed9ff89ddb2c816",
+          "source_title": null,
+          "source_url": "\"https://m.jinbiaochi.com/qggwy/news_96596.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2016/申论-B类.md",
+          "variant": "B类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "ef48fd7b72b79e697d5c27a38deee2337f0641990ff1befb37473b183192e009",
+          "source_title": null,
+          "source_url": "\"https://m.jinbiaochi.com/qggwy/news_96597.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2016/申论-C类.md",
+          "variant": "C类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "e9111f7aa95c06429b7dece95690c28bbedd466784c28abd1d244da65286bb5b",
+          "source_title": null,
+          "source_url": "\"https://m.jinbiaochi.com/qggwy/news_96598.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2017,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2017/申论-A类.md",
+          "variant": "A类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "f24d535af9058de59c2f1724dda8d09e489c187b7d1b6968e9fdd9734ea83beb",
+          "source_title": null,
+          "source_url": "\"https://www.kkgwy.com/sl/zt/2017/04/19/195627.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2017/申论-B类.md",
+          "variant": "B类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "5697a16f3275cc0496d85a869e85297842609da2e666bd0c26d523c9edc03d14",
+          "source_title": null,
+          "source_url": "\"https://www.kkgwy.com/sl/zt/2017/04/19/195628.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2017/申论-C类.md",
+          "variant": "C类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "18765cd5c3a3b63d2d647ff0ec2093fd7e35703aa3e38a3b12e4db04ae291b61",
+          "source_title": null,
+          "source_url": "\"https://www.kkgwy.com/sl/zt/2017/04/19/195629.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2018,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2018/申论-A类.md",
+          "variant": "A类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "abecbcbe32ae1682e61dc521e9a9cceef0e375eeb1bedb110430664013249141",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1181.html\"",
+          "source": null,
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2018/申论-B类.md",
+          "variant": "B类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "fe48401b99620ce00bb8f8d3a048db3df92e5df620a8c55419276d53fc3fd8a8",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1182.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2018/申论-C类.md",
+          "variant": "C类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "7a45c897bf66cc14e7e16ec329887d691d9b565eca7e13bdeb5b564d06fdfa7f",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1183.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2019,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2019/申论-A类.md",
+          "variant": "A类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "9622b515aa0d87becadc32fa7cec8d1e991ea4a61344213d4993940c016b36eb",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/江苏/2019/申论-B类.md",
+          "variant": "B类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "591f52c00acf0fd1bc4911a9d185098d1c8ef0814ee29d7fcc6db92bf80fbb94",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1185.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2019/申论-C类.md",
+          "variant": "C类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "de8d408969e72836870f5fc621824f4b4028bc8feae1d58ba277a84e96cbe7e5",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1186.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2020,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2020/申论-A类.md",
+          "variant": "A类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "088e734c861406eddbdb158e51da8a28c93636753c226ea9229ef839ad0c3b96",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/江苏/2020/申论-B类.md",
+          "variant": "B类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "98f9f95c91aa73a20afe84cf923ee9859c0024b4fcf57f2dc43377c01c4afa89",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1188.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2020/申论-C类.md",
+          "variant": "C类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "f95b61eda0121801ae321736e396c20d20a2e688740f821202fc1f2afcb20af5",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1189.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2021,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2021/申论-A类.md",
+          "variant": "A类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "bda45e7e55e9601eb918213bba9b2a16c11490fed2cdc8488ab7d3da86dd4c1e",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1190.html\"",
+          "source": null,
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2021/申论-B类.md",
+          "variant": "B类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "00937bd2d928e20249a048b233880768387dfc2a348fb158e3b85089062d3be4",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1191.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2021/申论-C类.md",
+          "variant": "C类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "aee3a615d37092b98ae3ed5817bd7e97f4c4630f7245cb19534a12d1d97ced58",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1192.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2022,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2022/申论-A类.md",
+          "variant": "A类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "daf2f1ce4609dc1c2da7a2290788b35e930804630617eee08bf9fc52689adc41",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1193.html\"",
+          "source": null,
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2022/申论-B类.md",
+          "variant": "B类",
+          "questions": 5,
+          "missing_answers": [],
+          "sha256": "74e2c477c17ff84a601eca4a52a1bf5ad7d195b701bf7a367089d18e6c27b667",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1194.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/江苏/2022/申论-C类.md",
+          "variant": "C类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "68752a783b76462e4c8af64a37eb0e205d68ab073db3c800be6a6d30322c3c4c",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1195.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2023,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2023/申论-A类.md",
+          "variant": "A类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "78495407817a76bdb3105d7d8fdb0b77dc4ddeaf95d03d3f25ed5909b92b7aa2",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/江苏/2023/申论-B类.md",
+          "variant": "B类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "94c1b8f3b17d56ec55c9bb47b12e9170b88664850581c1204c06d87de545374b",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/江苏/2023/申论-C类.md",
+          "variant": "C类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "313fa65f39485151da6c55135d496de42cae79ad9d4b2e1ed44b7af0c35870ca",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"qiushi\"]",
+          "bucket_comparison": []
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2024,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2024/申论-A、乡镇选调卷.md",
+          "variant": "A、乡镇选调卷",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "0af947c4d82a58b6fba52bfa430c41762adfeb9fba4a7ddb928c18b3dcb715b4",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"yanshen\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/江苏/2024/申论-B卷.md",
+          "variant": "B卷",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "1452e6c4d4d44f16fcd2ab2f5ef0f1046094df7144afb3928c68032b5dd975c4",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"yanshen\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/江苏/2024/申论-C卷.md",
+          "variant": "C卷",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "fdb37feed6c3b2876b226a358ca6211e0f7a0f8da00b798a5be9cb3fec84ca89",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"yanshen\"]",
+          "bucket_comparison": []
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2025,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/江苏/2025/申论-A、乡镇选调卷.md",
+          "variant": "A、乡镇选调卷",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "ad464fd11dfec5010311ddb6c3b2f9bbb0c0f679f73a8979ccd75ba3248b38b3",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"yanshen\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/江苏/2025/申论-B卷.md",
+          "variant": "B卷",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "cdc0e256820fb24a9dfd0c0a34f98de7a5caf4146981e2fed402bbbf9f4a5f50",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"yanshen\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/江苏/2025/申论-C卷.md",
+          "variant": "C卷",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "07bac1d669dce57370b88885ded3003953922d89edbed2d0ed330ddc44c7992e",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"yanshen\"]",
+          "bucket_comparison": []
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "江苏",
+      "year": 2026,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "B"
+      ],
+      "missing_named_variants": [
+        "A",
+        "C"
+      ],
+      "files": [
+        {
+          "path": "省考/江苏/2026/申论-B类.md",
+          "variant": "B类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "7ca71588a6c5d3a517850efb5594556e4d42301de9fa7edacac750d1ad0ab4e3",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"https://congzhenggk.com/bishiti/shenlun/4421.html\"]",
+          "bucket_comparison": []
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://www.jsgkw.org/2016/0314/12379.html",
+          "kind": "同年公共科目大纲转载",
+          "finding": "A/B/C三类每类均考行测与申论；选调借用A或C不另计省考卷"
+        },
+        {
+          "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+          "kind": "市政府发布同年官方考试大纲",
+          "finding": "A/B/C三类均有申论；乡镇选调同A不新增第四张卷"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2016,
+      "expected_variants": [
+        "A",
+        "B"
+      ],
+      "present_named_variants": [
+        "A",
+        "B"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2016/申论-A类.md",
+          "variant": "A类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "1b9e2ce4eb7bee39132264a4abb5381decdcc286761bbbd550c008fe65d0ad13",
+          "source_title": null,
+          "source_url": "\"https://gwy.gkzhenti.cn/paper/20160802100920\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/浙江/2016/申论-B类.md",
+          "variant": "B类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "21f936bb237bb3b6a403599bcf57c536b2417b8fbabffe7c80bf5aea4a8bee95",
+          "source_title": null,
+          "source_url": "\"https://gwy.gkzhenti.cn/paper/20160802100821\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2017,
+      "expected_variants": [
+        "A",
+        "B"
+      ],
+      "present_named_variants": [
+        "A",
+        "B"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2017/申论-A类.md",
+          "variant": "A类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "b929a580d39c168685fb3c65c7af111abeb19f5439e285431bf9736bb590431b",
+          "source_title": null,
+          "source_url": "\"https://www.hqwx.com/gjgwy-kaoshi/news/15011462694550.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/浙江/2017/申论-B类.md",
+          "variant": "B类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "8fc990629b8b04439cc5d4b52993191b9042853038fca4ca2212baa8b1af92d6",
+          "source_title": null,
+          "source_url": "\"https://www.hqwx.com/gjgwy-kaoshi/news/15011467719439.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2018,
+      "expected_variants": [
+        "A",
+        "B"
+      ],
+      "present_named_variants": [
+        "A",
+        "B"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2018/申论-A类.md",
+          "variant": "A类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "90df84eb529cb83e4e213763c6a79c5e9516e1fdd2473955f81cc00081dc1717",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1197.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/浙江/2018/申论-B类.md",
+          "variant": "B类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "fac7264134113ee3337672cd840356fc1bdbf4f7e68061173b9a81fc71af3e99",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1198.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2019,
+      "expected_variants": [
+        "A",
+        "B"
+      ],
+      "present_named_variants": [
+        "A",
+        "B"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2019/申论-A类.md",
+          "variant": "A类",
+          "questions": 4,
+          "missing_answers": [],
+          "sha256": "6f69d583726622e9f0259c36bda42785a297bfd9c9f175de2219b460b22a5102",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1199.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/浙江/2019/申论-B类.md",
+          "variant": "B类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "f502372af10298df437a1dc4759aa4aa1ea7971190c1abe6bf2f11e689f4ec4d",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1200.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2020,
+      "expected_variants": [
+        "A",
+        "B"
+      ],
+      "present_named_variants": [
+        "A",
+        "B"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2020/申论-A类.md",
+          "variant": "A类",
+          "questions": 2,
+          "missing_answers": [],
+          "sha256": "96ce32b8945452bf86168fd8831bf358e1adb51e5256ef5655825a48538dd69e",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1202.html\"",
+          "source": null,
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/浙江/2020/申论-B类.md",
+          "variant": "B类",
+          "questions": 2,
+          "missing_answers": [],
+          "sha256": "65f715719c70cbb00d7a1f6dbb566f7a34b5314093ac2142a09fa7d3f8fc5155",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1201.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2021,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2021/申论-A类.md",
+          "variant": "A类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "a01839786203b2c6bb0428ecba2338866ac7f128878bf917ad137408117d59c9",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1203.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/浙江/2021/申论-B类.md",
+          "variant": "B类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "3f78b96918b46c8cb7da460df84bfb3c89c89d604e48a02b15137b1375b8d5a1",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1204.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        },
+        {
+          "path": "省考/浙江/2021/申论-C类.md",
+          "variant": "C类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "b5403bf2420ee6d5fe7dce7381e2a0678f7a438e317d39b2626ab553453fddb3",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/1205.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2022,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [],
+      "missing_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "files": [],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2023,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2023/申论-A类.md",
+          "variant": "A类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "f2f0c0aedd8b9d942d18c77f1d1dd9ec4f1621cb462a8435d7728c5c76df1590",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"qiushi\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/浙江/2023/申论-B类.md",
+          "variant": "B类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "ac7f59016ec5669f71dd3eb16c2991c54fb3bf9175dfe5f4b0749f97ff76fd96",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"qiushi\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/浙江/2023/申论-C类.md",
+          "variant": "C类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "e97229a5f76935c34c880b30572adc6b3769939f343a1b7787bbd69de3d942af",
+          "source_title": null,
+          "source_url": "\"https://www.aipta.com/article/6426.html\"",
+          "source": "[\"linfukai186\"]",
+          "bucket_comparison": [],
+          "variant_identity_basis": "文件指向的同年同卷整卷机构来源；非官方逐字认证"
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2024,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2024/申论-A类.md",
+          "variant": "A类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "0f624845382b8b9207e8d530212290bbecc1e7f649c53e5904c73bf8372fecf6",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"yanshen\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/浙江/2024/申论-B类.md",
+          "variant": "B类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "61f390ab17e8941b3ab369d9c31a8addc13663cd74cf1358c97e6a459e71d5b2",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"yanshen\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/浙江/2024/申论-C类.md",
+          "variant": "C类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "0b65a9262c656b71a75d570131234ab07c0d6044e0749274d3f07e44a0282aec",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"yanshen\"]",
+          "bucket_comparison": []
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2025,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2025/申论-A类.md",
+          "variant": "A类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "37a0d7cefa0a0875be931bbdcbdc52628c658854fd2907d98cb694a992171ede",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/浙江/2025/申论-B类.md",
+          "variant": "B类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "bf5343d9e10f478891307fea5439648e5eacb6d6fe4017de67c542cf85cd327b",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/浙江/2025/申论-C类.md",
+          "variant": "C类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "5b2588a31bcffa827f8f28d44a0f23e841ac3de049a1ecac4cee4b5424e8d17f",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    },
+    {
+      "region": "浙江",
+      "year": 2026,
+      "expected_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "present_named_variants": [
+        "A",
+        "B",
+        "C"
+      ],
+      "missing_named_variants": [],
+      "files": [
+        {
+          "path": "省考/浙江/2026/申论-A类.md",
+          "variant": "A类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "db55f270635192ad7b198c9f9c120ceec023a54f0fd9a64457b45abb89253b44",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/浙江/2026/申论-B类.md",
+          "variant": "B类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "2506b1bd49301a4f2dcdb9e73080a5596898cf0163e86945228e9c8661c1c8ec",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        },
+        {
+          "path": "省考/浙江/2026/申论-C类.md",
+          "variant": "C类",
+          "questions": 3,
+          "missing_answers": [],
+          "sha256": "fb7bc53b773f0a79ca63d4f50aba59776bc0ad12fc86691082e24455a5f27c61",
+          "source_title": null,
+          "source_url": null,
+          "source": "[\"slb\"]",
+          "bucket_comparison": []
+        }
+      ],
+      "year_identity_basis": [
+        {
+          "url": "http://zjgzks.com/news/113.html",
+          "kind": "2016-03-01三部门大纲转载",
+          "finding": "申论只有A/B；行政执法考综合应用能力(一)，不能因行测C存在而制造申论C"
+        },
+        {
+          "url": "http://www.zggwy.org/zjgwy/448052.html",
+          "kind": "2022-11-18历史考情回溯，与库中2021ABC整卷互证",
+          "finding": "明述2017–2020申论A/B，2021新增行政执法C；优秀村干部D实考综合应用能力"
+        },
+        {
+          "url": "https://gx.huatu.com/2021/1101/1772759.html",
+          "kind": "浙江省公务员局2021-11-01同年大纲机构转载",
+          "finding": "综合A、基层B、执法C为申论；D为行测D+综合应用能力"
+        }
+      ],
+      "year_identity_limitation": "中间年度卷型同时据现有同年分卷来源映射；未逐年取得全部官方原始纸卷。桶仅按题干相似与材料片段覆盖映射，不能替代真实分卷完整性认证。"
+    }
+  ]
+}

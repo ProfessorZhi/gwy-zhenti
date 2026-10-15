@@ -1,0 +1,1174 @@
+{
+  "status": "passed",
+  "essay_papers": 710,
+  "parsed_papers": 710,
+  "classifications": {
+    "小题参考作答/已收录": 2076,
+    "作文范文/已收录": 370
+  },
+  "unparsed": [],
+  "incomplete_recognized_tasks": [],
+  "new_or_revised_answer_bodies_checked": 799,
+  "checked_body_authorship": {
+    "AI辅助修订": 339,
+    "同题来源参考": 112,
+    "AI辅助原创": 348
+  },
+  "answer_body_errors": [],
+  "legacy_source_length_notes": [],
+  "precise_body_counts": {
+    "papers": 710,
+    "tasks": 2446,
+    "versions": 2464,
+    "approximate_target_long": 1,
+    "explicit_maximum_exceeded": 1,
+    "composition_limit_missing": 35,
+    "empty_alternate_version_label": 1
+  },
+  "precise_body_candidate_tasks": 38,
+  "precise_body_errors": [],
+  "precise_body_review_candidates": [
+    {
+      "path": "国考/2018/申论-地市级.md",
+      "question_number": 5,
+      "question": "“给定资料6”中提到了老子关于“有”和“无”的观点，请你围绕给定资料反映的城市建设理念中的问题，联系实际，以“试谈‘有’与‘无’”为题写一篇文章。（40分）\n\n要求：\n\n（1）自选角度，见解深刻；\n\n（2）参考“给定材料”，但不拘泥于“给定资料”；\n\n（3）思路清晰，语言流畅；\n\n（4）总字数1000字左右。",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "approximate_target",
+        "target": 1000,
+        "review_minimum": 900,
+        "review_maximum": 1120,
+        "confidence": "medium",
+        "evidence": "1000字左右"
+      },
+      "version": "参考范文二",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1258,
+      "raw_answer_characters_without_urls": 1258,
+      "removed_rules": [],
+      "per_item_characters": null,
+      "body_sha256": "7b8f2b3bc35fe1c3c96ca262c7a13151e9ca1787da0962be0f510091eb505f3b",
+      "start_excerpt": "试谈“有”与“无”\n——城市建设理念的辩证法\n随着时代的发展，人们对城市有了更高的期待，传统城市建设理念中的一些问题暴露了出来。过于注重房子等\n硬件，忽视了人的真实需求，最后“景有了，人没了”；过度商业化，把历史文化古迹等都变成收费场所，结果“有了\n钱，没了文化”；私人权益扩展，公共空间被压缩，造成“有个人，无大家”的局面。\n如何化解这些问题呢？哲学家老子“有之以为利，无之以为用”的辩证思想为我们提供了一些思路。从城市建设\n的目的、功能",
+      "end_excerpt": "。这种简单粗暴的做法肯定是不合适的。同一个小区内，“头顶一片天，便如一家亲”，公\n共资源使用权应该是人人平等的。\n加快城乡一体化建设是我国建设社会主义现代化国家的必由之路。这个进程中，我们在大力发展硬件设施、经\n济商业等“有之利”的同时，更要兼顾好城市空地、历史文化、公共娱乐、社会交往空间等的“无之用”。我们要给城\n市建设留下一些空白，以便其更好的发挥功能。",
+      "issues": [
+        {
+          "rule": "approximate_target_long",
+          "confidence": "medium",
+          "detail": "正文1258字，高于约1000字目标的112%；需按题面与答题空间复核"
+        }
+      ],
+      "another_version_without_findings": true
+    },
+    {
+      "path": "国考/2019/申论-副省级.md",
+      "question_number": 5,
+      "question": "“给定资料5”结尾写道：“城市文明和乡村文明，人造文明和自然文明，都是应该而且可以互补的；理想的生活状态可能还是在城、乡之间自由游走。”请结合你对这句话的思考，自选角度，联系实际，自拟题目，写一篇文章。（40分）\n\n要求：\n\n（1）观点明确，见解深刻；\n\n（2）参考“给定资料”，但不拘泥于“给定资料”；\n\n（3）思路清晰，语言流畅；\n\n（4）字数1000～1200字。",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "explicit_range",
+        "minimum": 1000,
+        "maximum": 1200,
+        "confidence": "high",
+        "evidence": "1000~1200字"
+      },
+      "version": "参考答案一：",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1258,
+      "raw_answer_characters_without_urls": 4489,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "5dd29a4f37572a744fd791706e354358b9d7e19211f82528c1159548d900d231",
+      "start_excerpt": "文明——在乡村与城市之间\n有人认为农村的发展就是把农村人赶进城市，或者把农村变成城市，这种想法是非常片面的。他们没有看到城\n镇化带来房价高涨、交通拥堵、环境污染等各种“城市病”，没有看到农村也有自己独立的、城市不可取代的价值和\n功能。城市和乡村，人造文明和自然文明，不是谁要压过谁，而是应该互补的。理想的生活应该在城、乡之间自由\n游走。\n我们必须站在全局高度，打破单线思维，促进乡村综合发展，统筹城乡发展。要让城乡各自保持自己特色优\n势，形",
+      "end_excerpt": "里孕育了人与自\n然和谐相处的生态体系，它尊山、爱水、有乡愁……我们必须发掘乡村这些价值，展现这些价值，丰富这些价值，\n乡村完全可以在现代经济体系和现代生活图景中占据重要位置。\n理想的生活应该是在城乡之间自由游走。我们期待最先进的技术、最丰厚的物质文明与最高远的自然、最悠久\n的历史文明和谐共生。我们向往人类文明和自然文明水乳交融，让天人合一的超越境界获得新生。",
+      "issues": [
+        {
+          "rule": "explicit_maximum_exceeded",
+          "confidence": "high",
+          "detail": "正文1258字，超过题面明确上限1200字"
+        }
+      ],
+      "another_version_without_findings": true
+    },
+    {
+      "path": "省考/吉林/2016/申论-统考.md",
+      "question_number": 1,
+      "question": "参考给定资料，联系实际，以“志之难也，不在胜人，在自胜”为主题，自选⻆度，自拟题目，写一篇议论文。（40\n分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1000,
+      "raw_answer_characters_without_urls": 3542,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "9b1be97b1a1ac3992a9235270bd3c6c2e62b83f342b7e53c56f9979e4fc0c4d8",
+      "start_excerpt": "立鸿鹄之志 从战胜自己开始\n“志之难也，不在胜人，在自胜。”事物发展变化的关键在内因，个人的命运前途关键在自身。要成就事业，实\n现价值，推动社会进步，必须自信、自立、自强。\n树立人生自信，直面人生挑战。相信自己能通过努力把握、改变命运。当今社会一些年轻人面对压力，拒绝、\n退缩、逃避。毛主席说：“数⻛流人物，还看今朝。”我们不可妄自菲薄，要勇于接受挑战，扼住命运的咽喉。今天\n是一个新时代，各种新职业层出不穷，对年轻人来说是一个充满机会的时",
+      "end_excerpt": "是应该坚决摒弃的。个人的成⻓需要提升自身的职业道德，也需要良好的行业⻛气和社会环境。企业要严把质量\n关，行业要制定标准规范。政府要加强监管，理顺机制。多方合力，促进个人成⻓与社会进步的融合。\n作为年轻的一代、希望的一代，只有我们积极进取、不断战胜自己，将个人理想融入社会需求中，才能够成为\n国家的中流砥柱，才能够为实现中华⺠族伟大复兴的梦想提供源源不断的动力！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2018/申论-上半年.md",
+      "question_number": 2,
+      "question": "请根据资料，归纳小童获得“全市十佳科技特派员”荣誉的原因。",
+      "task_kind": "short_answer",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "参考答案二",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 0,
+      "raw_answer_characters_without_urls": 0,
+      "removed_rules": [],
+      "per_item_characters": null,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "start_excerpt": "",
+      "end_excerpt": "",
+      "issues": [
+        {
+          "rule": "empty_alternate_version_label",
+          "confidence": "manual",
+          "detail": "此处仅有另一个版本标签而无正文，不等于整题缺答案；应核是否是多余空标签"
+        }
+      ],
+      "another_version_without_findings": true
+    },
+    {
+      "path": "省考/四川/2019/申论-统考.md",
+      "question_number": 1,
+      "question": "“给定资料1”中提到“夜间经济成为消费领域的一个新的增⻓点，是城市发展的新引擎”，请根据你的理解，结合给定\n资料，联系社会生活实际，自选⻆度，自拟题目，写一篇议论文。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 992,
+      "raw_answer_characters_without_urls": 3335,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "cbba2f670fb677f956d0e6202865482b9a75fcc5390036d53e2e6a5592cf49c3",
+      "start_excerpt": "发展夜间新经济，助力城市新发展\n北有北京三里屯，南有成都春熙路，东有上海外滩秀，⻄有⻄安夜古都……每一座城市仿佛都有一张属于自己\n的夜间城市名片，它的名字叫“夜间经济”，是指夜间在城市特定地段发生的各种合法商业经营活动，如餐饮、娱乐\n休闲等。其既能促进消费升级、经济发展，满足⺠众人文需求，更能促进城市管理升级，打造城市品牌，为城市的\n全方位新发展提供强大支撑。\n当下，发展夜间经济，符合消费升级的时代需求，能够直接拉动城市经济发展，推动休",
+      "end_excerpt": "极作为，解决⻝品卫生、噪音扰⺠等问题；\n也需要发挥行业自律与⺠众自治，在平衡好夜间经济利益相关性的基础上谋求所有参与利益主体的最大公约数。\n满足⺠众需求是夜间经济的标配，提升城市管理与品牌形象体现夜间经济的品质，促进城市经济发展是夜间经\n济的主脉。夜间经济的效果不言而喻，其能量更是不可或缺，因此，应大力发展夜间新经济，为城市的新发展添砖\n加瓦，让城市更美好。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2020/申论-统考.md",
+      "question_number": 1,
+      "question": "请结合给定资料，联系社会实际，围绕你对“给定资料7”中划线句的理解，以“你我共建，共享美好生活”为主题，\n自选⻆度，自拟题目，写一篇议论文。（40分）\n要求：每周三下午，区机关党员干部都",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 924,
+      "raw_answer_characters_without_urls": 2942,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "3a454d02f835ed09753a64c1ba30951249447089fc33457c9687a875273bcc53",
+      "start_excerpt": "共建和谐社会 共享美好生活\n新时代开启新篇章，也呼唤新担当。当下社会的主要矛盾已经转化成为人⺠日益增⻓的美好生活需要和不平衡\n不充分的发展之间的矛盾，而这一矛盾在社会治理领域就体现在过去政府“大包大揽”“干部干，群众看”，群众没有\n参与的积极性，久而久之，产生依赖心理，让干部疲于奔命，反而得不到群众的认可。在“共享”理念的指引下，如\n何与时俱进地让市⺠参与城市的建设、管理和治理，共建共治共享美好生活，成为摆在我们面前的新命题。\n社会治理",
+      "end_excerpt": "生活的便利；还传递着正能量，扶老人过⻢路、勇救落水者……平凡的他们，为城市的有序发展增添了一\n抹亮色，鼓励他们参与社会治理，不仅能让他们更好地融入城市，于万家灯火中增强归属感，更能为社会的和谐有\n序注入强大的动力。\n完善党委领导、公众参与的社会治理体系，建设人人有责、人人尽责、人人享有的社会治理共同体……共建共\n治共享美好生活，我们每个人都是⻅证者、奉献者。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2021/申论-统考.md",
+      "question_number": 1,
+      "question": "请根据对“给定资料4”中划线句子的理解，联合实际，自选⻆度，自拟题目，写一篇议论文。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 933,
+      "raw_answer_characters_without_urls": 3173,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "32b53ee65a3c6c40f54e1a6356d838c981d096d3597318c37cfbec5de297ab18",
+      "start_excerpt": "特色小镇的守正与创新\n特色小镇是连接城市与乡村、承载乡愁与希望的重要节点。然而，实践中，一些小镇或陷入“千镇一面”的同质\n化泥潭，或沦为“圈地造城”的房地产项目，迅速归于沉寂。特色小镇的生命力，源于对“守正”与“创新”这对辩证关\n系的把握，唯有守“小而精”之正，出“有特色”之新，让守正与创新双翼共振，方能⻜得高、⻜得远。\n特色小镇要坚守“小而精”之正，摒弃贪大求全的思维，聚焦本土资源禀赋，因地制宜发展特色产业，回归乡土\n本色。浙江乌镇是",
+      "end_excerpt": "枝”，既要精心\n守护乡愁的底蕴，更要大胆运用科技、业态与美学的创新，去激活、演绎并放大其独特的文化基因与自然禀赋。唯\n有如此，特色小镇才能超越静态的⻛景，成⻓为一座既承载乡愁、又涌动生机的活态家园，在时代的激流中真正行\n稳致远。\n特色小镇的发展，当以“小而精”为本真之“锚”，以“有特色”为活力之“帆”。如此，方能在这片千帆竞发的浪潮\n中，笃定方向，满帆远航。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2021/申论-统考.md",
+      "question_number": 2,
+      "question": "“给定资料4”中提到“我一生只做了一件事，就是做了一粒小小的糖丸”。请你深入思考这句话，结合“给定资料1-\n4”，联系实际，自选⻆度，自拟题目，写一篇议论文。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 905,
+      "raw_answer_characters_without_urls": 3135,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "f068104caa4f349f0d6b65337f01c29e1854ba01f1833ef4054ee8c0a8769723",
+      "start_excerpt": "坚守一生 服务人⺠\n“敦煌女儿”樊锦诗说：“我的一生只做了一件事，就是守护和研究敦煌莫高窟。”于人生之途，一生只做一件\n事，是“虽九死其犹未悔”般对信念的坚守执着，是“蜡炬成灰泪始干”般默默付出的谦逊奉献，亦是“吾将上下而求\n索”般不断突破的探索创新。这般精神，激励着无数人以专注与热忱，书写不凡人生篇章。\n一生只做一件事，体现的是“大雪压⻘松，⻘松挺且直”的务实精神与执着坚守。事业的成功不是一蹴而就的，\n也不会从天而降，只有脚踏实地、兢",
+      "end_excerpt": "糖丸”。谦虚的语言所透露的就是他“先天下之忧而忧，后天下之乐而乐”的胸怀与格局。当研究步入人体实验阶段，\n他不惜冒着巨大的危险，用自己和自己的孩子做临床活体实验，最终取得成功。他的举动是对“苟利国家生死以，岂\n因祸福避趋之”的最高诠释。\n板凳要坐十年冷，磨剑数载方始成。一生只做一件事，凭着最纯粹的心灵和最执着的热爱，默默耕耘，披荆斩\n棘，造福人⺠，改变世界。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2021/申论-统考.md",
+      "question_number": 3,
+      "question": "“给定资料5”中提到“跨界亦是无界”。请你根据对这句话的理解，结合“给定资料1~5”，联系实际，自选⻆度，自\n拟题目，写一篇议论文。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 929,
+      "raw_answer_characters_without_urls": 2899,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "db02f92d34d4192673a7f1ade658888d0a2805d0fe9308bad5281223e9741289",
+      "start_excerpt": "行有界 跨非凡\n从演员任泉跨界经商，到中华老字号⻢应⻰跨界卖口红……跨界的例子不胜枚举。跨界，是用新的连接来完成\n自身的跃迁，跨出舒适区，界定新状态，赋予跨界者无限可能。跨界先有界，意味着受“界限”内资源与规律的影\n响；跨界终无界，就是要突破现状，发掘未来的可能；跨界重在跨，要有智慧、懂方法、肯坚持。跨界，是思维的\n升华、资源的整合，是从有界跨到无界，是从不变跨到变。行有界限，敢于跨越才能造就非凡。\n以“无界”的思维带动“有界”的创新变",
+      "end_excerpt": "法、实践的坚守。智慧是要善\n于发现事物间内在联系，善于在不断变化的环境中主动调整，守正创新；方法是寻找到切入点把不同的资源有机整\n合起来，实现裂变的功效；坚守是要有脚踏实地、务实的精神，短暂的跨界不会真正成功，深耕才有收获。\n跨界是生命的奔腾，是扬弃旧我，追求内心渴望的体现。现实世界有规律，但没剧本，愿我们都能够放⻜梦\n想，书写精彩。行——有界，跨——非凡。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2024/申论-统考.md",
+      "question_number": 7,
+      "question": "给定资料4中提到“法治建设既要抓末端、治已病，更要抓前端、治未病”，请结合对这句话的理解，联系实际，自拟\n题目，写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 971,
+      "raw_answer_characters_without_urls": 3328,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "5c1c7993aaabe0f8e34b308777f574432f4af8dd96a1540729b6e1c062371bb9",
+      "start_excerpt": "法治固本防未病，前瞻布局筑安宁\n古人云：“上医治未病，中医治欲病，下医治已病。”不仅揭示了医疗之道的精髓，更为法治建设提供了深刻的\n启示。法治，作为社会和谐的基石，既要严惩违法行为，即“治已病”，更要注重预防与疏导，即“治未病”。两者相\n辅相成，共同构筑起法治的坚固防线。\n“治已病”，是对违法行为的严厉惩治，是法治威严的体现。它如同法治之剑，锋芒毕露，对违法犯罪行为形成\n强大的震慑力。然而，仅凭“治已病”难以根治复杂多变的社会问题，甚至",
+      "end_excerpt": "助全方位、数字化的手段，更好地提升“治未病”的效果。部分地方通\n过建立执法基础信息管控平台，灵活运用无人机等现代科技工具，对违法行为进行监控、早期预警与精准干预，将\n问题解决于萌芽之时。这种“治未病”式的执法方式，为法治社会建设注入新的活力。\n法治建设“治已病”与“治未病”的结合，构建了一个公正、和谐、有序的社会环境，让法治的阳光普照大地，照\n亮前行的道路。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2024/申论-统考.md",
+      "question_number": 8,
+      "question": "“给定资料4”中提到：“我们的乡村，要知道从何处来，更要明白往何处去。”请你对这句话进行深入思考，参考给\n定资料，联系实际，自选⻆度，自拟题目，撰写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 981,
+      "raw_answer_characters_without_urls": 3102,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "f3538cd28c1db06044f4843c6e491ee055100e2b4b645750923908a03c86c36d",
+      "start_excerpt": "回顾过去、面向未来，方能实现乡村发展\n“知所从来，方明所往”，这句话指的是历史是一盏明灯，照亮我们前行的道路，启示我们要学习借鉴历史，从\n而可以继往开来、砥砺前行。乡村的发展亦是如此，我们必须要“读懂过去”，了解乡村历史，知道乡村是谁。除此\n之外，我们也要在此基础上“探索未来”及“立足当下”，明确乡村未来的发展目标与方向，顺应时代、谋取发展，如\n此，才能让群众过上更美好的生活。\n乡村要知道从何处来，就要打造村史馆，展示乡村的历史文化，⻅",
+      "end_excerpt": "运用到农业中，提\n高机械化水平；也可以将其运用到乡村治理中，打造数字乡村智能平台，优化乡村公共服务，提高精细化治理水\n平。\n回顾过去，我们可知乡村一路以来的变迁之路；探索未来，我们需知高质量发展、全方位发展的乡村振兴才是\n目标与方向；立足当下，我们应不懈奋斗，抓住新时代的机会发展乡村。只有如此，才能让村⺠过上美好的生活，\n才能实现农业的现代化、乡村的现代化！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2025/申论-统考.md",
+      "question_number": 8,
+      "question": "“给定资料4”中提到“优势”“顺势”“借势”，请你结合对“势”的理解，参考给定资料，联系实际，自选⻆度，自拟题\n目，撰写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 907,
+      "raw_answer_characters_without_urls": 2937,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "ab3fb667e781fae723c82c4e52679d90f7769d678d1be1d81c5d9bcc9e4a4d55",
+      "start_excerpt": "善用“势”力，赋能产业\n“激水之疾，至于漂石者，势也。”在当下产业发展的澎湃浪潮里，“势”是推动产业革新、塑造竞争格局的关键\n力量。敏锐洞察产业之势，巧妙借助优势，顺势谋篇布局，借势跨越腾⻜，是企业实现产业蓬勃发展的关键所在。\n巧用优势推动产业发展，需立足自身优势，充分发挥资源作用，厚植发展根基。“梅须逊雪三分白，雪却输梅一\n段香。”世间万物皆有其独特优势。贵州凭借丰富的自然景观与多彩的⺠族文化，大力发展旅游业，⻩果树瀑布的雄\n伟壮观、",
+      "end_excerpt": "的东⻛，与华东师范大学等多方合作，研发先进检测技术，从众多企业\n中脱颖而出，成⻓为全球知名的平板显示触控检测设备厂商和半导体检测设备提供商。故而，善借外势者，便如鲲\n鹏乘⻛，扶摇直上九万里，终能在时代浪潮中踏浪前行。\n在产业发展的赛道上，巧用优势是立身之本，顺势而为是前行之策，借势而进是加速之道。三者融会贯通，便\n可在复杂的产业格局中披荆斩棘，铸就非凡华章！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2025/申论-统考.md",
+      "question_number": 9,
+      "question": "“给定资料4”中的划线句子提到“中国法治的根基在人⺠，只有让法治在广大人⺠的心中落地生根，才能实现全面依\n法治国”。请你深入思考这句话，参考“给定资料4”，联系实际，自选⻆度，自拟题目，撰写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 934,
+      "raw_answer_characters_without_urls": 2986,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "06d8a69f6133265b6c371c0e7eab265dc43ad9e84ac81d76386fed4e3fe635d2",
+      "start_excerpt": "法治如树，⺠心为根\n纵观人类法治史，从《汉谟拉比法典》的石柱到英国《大宪章》的法治雏形再到《中华人⺠共和国宪法》的宣\n誓，法治从君权走向⺠权，从野蛮报复转向程序正义，赢得人⺠的真心拥护。今天的法治建设，要回答好“如何让14\n亿人⺠信仰法治”这一时代命题，实现“法治中国”的宏伟蓝图。\n让法治深入人心，要建强法治工作队伍，推动法律服务下沉，让法治信仰扎根基层。法治工作队伍是法治建设\n的主力军，其专业素养与职业操守决定着法治化水平。法律明白人",
+      "end_excerpt": "律，变“口头执法”“随意执法”为“依法执法”“规范执\n法”，要用现代的法治理念解决人⺠群众面临的各类难题，更要让人⺠群众在解纠止纷过程中感受到法律的规范、严\n谨、公平，潜移默化中引导群众在今后的生活工作中自觉守法、用法。\n古语所云：“法者，国之权衡也。”只有当法治精神真正融入百姓的日常生活，成为人们自觉遵守的行为准则，\n全面依法治国的目标才能从蓝图变为现实。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2025/申论-统考.md",
+      "question_number": 10,
+      "question": "请参考给定资料1-4，围绕“以‘通路’谋同路”这一话题，联系实际，自选⻆度，自拟题目，撰写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 904,
+      "raw_answer_characters_without_urls": 3325,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "05352137e6748893a5105989b48bc752ad38b7adaad38d5d453705c484f8a3f2",
+      "start_excerpt": "畅互联互通之路，谋共同发展之路\n中医理论中，“通”是非常重要的概念，常有经脉通，解百病之说，生活中也常言畅通无阻，快乐前行。从而可\n⻅，谋发展需畅通同进之途，努力打通堵点，畅通软硬联通，实现人才与乡村、人与文化、产业与科技以及不同区\n域之间的互通互达，高质量发展。\n搭建人才和乡村互通的道路，让人才有舞台，乡村添活力。乡村振兴的关键在于人才振兴，需聚天下人才而用\n之，打通人才流向乡村的道路，吸引优秀人才返乡共创大业。当下，各地乡村努力在事",
+      "end_excerpt": "推进产业协同发展，后有重庆和⻄南医科大学共享医疗技术，更有川渝高铁等基建开通，助推“中国制造”跨越山海，链接世界。区域协调是\n破题之策和乘胜之举，在壮阔山河之间，让我们把这篇协调发展的大文章写得更好。\n前行的道路依然充满泥泞。回顾过去，我们曾经面对很多看似难以克服的问题，但发展本身正是一个不断解决\n阻碍的过程。相信打开通路，互通有无，必将蹄疾步稳、充满活力。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/四川/2026/申论-统考.md",
+      "question_number": 4,
+      "question": "“给定资料4”中提到“静候⻛至不如勇造⻛口，‘无中生有’才会样样都有”。请你对此进行深入思考，参考给定资料，\n联系实际，自选⻆度，自拟题目，撰写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 922,
+      "raw_answer_characters_without_urls": 3353,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "91a454e95159b3d5ae85235cfbe74486f3b8c2387303b1ed950a93f0cd102118",
+      "start_excerpt": "勇造⻛口 “无”中生“有”\n习近平总书记所言“无中生有才会样样都有”，道出了突破发展瓶颈、实现提质跃升的核心密码。无论是县域发\n展、基层治理，还是产业转型，亦或是其他领域，表面的资源匮乏、条件不足从来不是绝境，若能以创新思维探寻\n新路径，激活潜在价值扬⻓补短，守住战略定力持续深耕，就能实现“无中生有”的破局与跃升。\n“无中生有”的先决条件，需要具备敏锐的洞察力与丰富的创造力，善于跳出思维局限，以敢闯敢创抢抓发展机\n遇，创造新的可能性。濮",
+      "end_excerpt": "、无人看好之时毅然入局，之后始终坚守新能源赛道，专注于核心技术研发，哪\n怕在行业低迷期也从未动摇，最终从“有”向“优”，跻身行业前列。在“有”的基础上持续精进、追求卓越，方能将先\n发优势淬炼为持久的核心竞争力。\n新征程上，唯有以洞察先机之慧眼创造可能，以整合资源之智慧激活潜力，以深耕实干之定力淬炼品质，方能\n在主动创造中赢得未来，于“无中生有”处成就新辉煌。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/安徽/2023/申论-乡镇卷.md",
+      "question_number": 4,
+      "question": "“给定资料4”中提到：“做好‘土特’文章，在‘小’土地上种出‘大’收益，让特色产业成为乡村振兴的新动能。”请深入\n理解这句话，联系实际，自选⻆度，自拟题目，写一篇文章。（35分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1050,
+      "raw_answer_characters_without_urls": 3426,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "950e846e47699d7d1283c416260f0d6216e14301a15d4393fd77cb5e62338083",
+      "start_excerpt": "小土地，大收益\n来自乡野田间的“土特产”，蕴藏着无限的发展前景。无论是巩固脱贫攻坚成果，还是推进乡村振兴战略，产业\n发展都是“根与魂”。为此，要牢牢抓住土特产这个“牛鼻子”，充分发挥土特产独有的优势和特点，在“小”土地上种\n出“大”收益，让越来越多的土特产走出村寨、跨越山海、融入市场，绘就乡村振兴新图景。\n因地制宜，用好乡村土资源。要深挖本土资源的潜力，培育特色产业，将资源优势充分转化为经济优势，促进\n乡村经济多元化发展。一方水土孕育一",
+      "end_excerpt": "多资金、技术、人才向乡村汇聚，再次激活了乡村活力，也架起了家乡与外界的桥梁，把先进的思想带回来，把优\n质的土特产带出去，他们成了农村高质量发展的“领跑人”。\n产业兴则农村兴，农村兴则国家旺。“土特产”三字大文章是产业振兴的重头戏，写就这篇文章就要下足“土”功\n夫，依靠科技与人才，让小小“土特产”种出“大收益”，结出“金果果”，带动农⺠致富增收，助力乡村振兴。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2016/申论-统考.md",
+      "question_number": 1,
+      "question": "请结合对给定资料的理解与思考，以“自由和秩序”为主题，自拟题目，写一篇议论文。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1171,
+      "raw_answer_characters_without_urls": 3338,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "4c7ec6cdf337f78652c5b33ad4745d11c7be228d50bf85a79d040afc147a8b7c",
+      "start_excerpt": "自由需底线 秩序来护航\n如果要问二十世纪最具有划时代意义的发明，那一定非互联网莫属。互联网不仅促进了经济社会的⻜跃式发\n展，也改变了人们的生产生活方式，对人们思维方法与认知能力的提升也产生了巨大的激励作用。然而，互联网的\n世界有“春天”也有“冬天”，有“光明”却也有“黑暗”。当网络谣言肆意横行，当黑客侵袭肆无忌惮，当网络诈欺花样\n频出，我们必须用秩序来击退毫无底线的自由，也只有在秩序的基础上，我们才能让互联网给我们带来更多的方便\n和快捷",
+      "end_excerpt": "公共理性，自觉维护网络秩序。⻘年人更要以维护网络空间和谐为社会责任，\n理性发声，传递正能量，充当网络生力军。\n人无信不立，“网”无法不安。要营造一个健康有序的网络环境，法律规范不可缺位。要自由自在地畅游网络世\n界，网⺠自觉守法不可缺少。只有坚持走法治化之路，依法办网、依法治网，网络世界才能更加多元化、丰富化与\n立体化，我们也才能终将迎来一个最好的互联网时代。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2016/申论-统考.md",
+      "question_number": 2,
+      "question": "“给定资料7”中提到：“互联网是人类共同发展的机遇、人类共同进步的希望，也是人类共同需要承担和完善的责\n任。”请从对这句话引发的思考说开去，写一篇议论文。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1189,
+      "raw_answer_characters_without_urls": 3951,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "c20f979b3440af4da310a651f35767a35b3c3f6ea4e4418ac803b2332a7209bb",
+      "start_excerpt": "共享成果 共同进步 共担责任\n有人说“互联网是人类共同发展的机遇、人类共同进步的希望，也是人类共同需要承担和完善的责任。”的确，\n互联网带来机遇，大大提升了生产效率，解决弱势群体难题，推动弱势行业进步；互联网带来进步，让教育更公\n平，生活更便利；同时互联网也需要责任，解决随之而来的各种问题。\n抓住互联网发展的机遇，需要我们要紧随互联网的大潮，提升生产效率，促进弱势行业的发展，关怀弱势群体\n的利益。互联网是当下生活和生产的最大增量，同时也",
+      "end_excerpt": "展还具有开放性，提供海量信息的同时，让各种网络暴力、\n网络谣言、网络色情、网络诈骗充斥生活。在网络大染缸中，我们要坚定正向的文化价值观，同时利用互联网的高\n效性、交互性，学习知识，增强自身能力，共同营造⻛清气正、积极健康的网络空间。\n互联网的作用不可忽视，正确认知、合理利用，方为科学之道。让我们拥抱互联网、参与互联网，同时保持清\n醒，与互联网共同成⻓进步吧！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2016/申论-统考.md",
+      "question_number": 3,
+      "question": "请结合对给定资料的理解与思考，从分析“保持简单，比复杂还难”这一观点出发，自拟题目，写一篇议论文。（40\n分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1165,
+      "raw_answer_characters_without_urls": 4136,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "d8bdd4b132b323bef5c873feb297cabfd835d94e47cd8df525aa462cd4bc1330",
+      "start_excerpt": "幸福，从“简单”开始\n科技日新月异，网络改变生活，⻋水⻢⻰、灯红酒绿已经成为了生活的常态，然而这种生活却并没有带来应有\n的幸福感和满足感，人们拥有的物品越来越多，得到的却越来越少；生活的节奏越来越快，身边的美景却越来越\n少。很多人都想从这“繁琐”的生活中抽身，专注重点，过上简单却更有意义的生活，但保持简单似乎比复杂还难。\n环顾当下，回归现实，确实保持简单比复杂还难，我们不由得要感叹，是什么阻挡了我们追求“简单”的步伐？\n保持简单比复杂还",
+      "end_excerpt": "\n起，绝不姑息，还社会良好⻛气；最后，保持简单还需要从自身“简化”，优化工作流程，简化审批程序，探索更弹\n性、人性化的工作制度，试行“远程办公”、“居家工作”等，为极简生活创造条件。\n“夫君子之行，非淡泊无以明志，非宁静无以致远。”幸福需要个人从简出发；稳定的社会、繁荣的国家，需要\n政府从简入手。去繁就简，回归到生活工作的本真，方能在人类梦想之路上越行越远！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2017/申论-统考.md",
+      "question_number": 1,
+      "question": "给定资料1中划线句子提到“科技是第一推动力，但有了市场，科技才有用武之地。”请结合对这句话的理解，参考给\n定资料，联系实际，自拟题目，写一篇议论文。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1090,
+      "raw_answer_characters_without_urls": 3669,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "5cd843f76e34fb3dc614f429e48c9530c51dea0c5c31994f18e34f0715c7692d",
+      "start_excerpt": "把握市场脉搏 让科技惠及生活\n人类发展的历史告诉我们，科学技术一旦渗透和作用于生产过程中，便成为现实的、直接的生产力。邓小平同\n志指出，“科技是第一生产力”，科学技术可以推动经济的发展，社会的进步，是各行各业持续发展的动力源泉。作\n为高新技术、绿色能源的光伏产业，科技先行，市场也为其提供了充足的发展空间，推动了人类节能环保事业的发\n展。因此，我们要重视科技，研发核心技术；开拓海外市场，培育国内市场，提升管理和经营水平。\n重视科技创新，要",
+      "end_excerpt": "理人才，提高管理水平，建立良好的口碑，打造世界知名品牌；在利用“有形的手”的\n主导下，各市场主体以市场需求为导向，在公平竞争的有序环境中，让“中国科技”煜煜生辉。\n吸水之木，勿忘根本。为了更好地贯彻创新、协调、绿色、开放、共享的发展理念，为了实现经济的转型升\n级，在发展的历史上留下浓墨重彩的一笔，我们要坚持让科技创新借助市场之力，把握市场脉搏，广泛惠及生活！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2017/申论-统考.md",
+      "question_number": 2,
+      "question": "资料8中提到“汽⻋文明是否‘一路绿灯’，关系到社会文明的进程。”请根据你对这句话的理解，结合给定资料联系实\n际，自选⻆度，自拟题目，写一篇议论文。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1090,
+      "raw_answer_characters_without_urls": 3667,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "ecfde57f84d490c4a246db69a3f65a11548df8652690f6736a43200b8b7de0d5",
+      "start_excerpt": "培育汽⻋文明 助推社会文明\n经济⻜速发展，我们奔跑着从自行⻋时代迈入了汽⻋时代，快的让人惊叹、诧异、欣喜。然而，当人们沉醉于\n汽⻋带来的便捷时，却忽略了对“汽⻋文明”的关注。“中国式”过⻢路、“中国式”开⻋，每天都在上演，交通拥堵成\n为许多城市不得不面对的“城市病”。汽⻋保有量与品牌档次都上去了，但是汽⻋文明却未能与其同步，此情此景迫\n切呼唤更加进步的汽⻋文明。\n文明驾驶、文明出行、文明交通，不仅关系个人，也关系每一个家庭的幸福，社会文",
+      "end_excerpt": "。此外，还要创新工作方式，不以处罚为目的，而是将法律\n的教育功能与惩罚功能相结合。近年来，出现的“贴卖萌罚单”“抄写交规”“看警示片”等有温度的执法方式，既纠正\n了一些人的违法行为，也带给大家尊重、理解和关爱。\n建设汽⻋文明社会是一项系统工程，关系到每一个人、每一个家庭的平安和幸福。需要全社会的共同努力，让\n汽⻋文明引领社会文明，让我们的社会更文明、更和谐！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2018/申论-统考.md",
+      "question_number": 1,
+      "question": "“给定资料8”中划线句子提到，“中国企业不可能总在⻛平浪静时‘走出去’，而注定只能‘在深海里练就游泳能力’，\n在一次次的弄潮中成⻓”。请围绕对这句话的思考，参考给定资料，联系实际，自选⻆度，自拟题目，写一篇文章。\n（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1144,
+      "raw_answer_characters_without_urls": 4159,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "cde40abc0a5896137ae5e638a25dcbe0f05b069c9c9f45a5b2fee9aa8b09f491",
+      "start_excerpt": "中国企业“走出去”搏击⻛浪\n当前，经济全球化不可逆转，成为全新发展趋势。企业走出国⻔，不仅有利于实现国际间资源整合、优势互\n补，还能促进互利合作，创新合作模式。可喜的是，我国日益成熟的市场机制、稳定的投资环境，为中国企业建立\n了稳定的后方。因此，中国企业应顺应潮流，主动“走出去”，迎接新挑战，探索合作共赢新模式；更应打造国际品\n牌，走高端路线，提升核心竞争力，走得更远，行得更稳。\n然而，走出去面临投资地政策限制、法律纠纷、劳资矛盾等问题",
+      "end_excerpt": "国企业却拿出相同品质的产\n品攫取高额利润。现如今，我国⺠营汽⻋品牌中，首屈一指的是吉利汽⻋。吉利汽⻋通过收购国外技术先进的汽⻋\n品牌，吸收转化技术，推陈出新，不断推动品牌上探，如今无论是销量还是利润都在自主品牌中占据第一的位置。\n中国企业要从“走进去”到“走出去”，从“走得稳”到“走得好”，就要紧跟时代步伐，抓住机遇，迎接挑战，\n为“走出去”开辟一片新天地。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2018/申论-统考.md",
+      "question_number": 2,
+      "question": "进一步思考“给定资料5”中划线句子“在我们的工作生活中，什么才是真正重要的东⻄”，参考给定资料，联系实\n际，自选⻆度，自拟题目，写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1051,
+      "raw_answer_characters_without_urls": 3544,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "5fab608f42810ef9110f40c6a57ccb108e8a4c9b4be7f5f4b15595d76d05cb91",
+      "start_excerpt": "工作生活的价值追求\n罗曼罗兰曾说过：“生活最沉重的负担不是工作，而是无聊。”而现实生活中，多少人正在承受着“无聊”带来的\n巨大压力、疲劳和不安全感，迷失了初心和方向。殊不知，在我们的工作和生活中，永葆初心的价值追求才是明确\n的方向。其实，工作生活的价值是有层次、有梯度的：从满足自我生存需求，到展示个人价值、实现人生目标；从\n增添社会活力，传递热情与正能量，到帮助他人、奉献社会。\n诚然，大部分人的工作生活是为了自我生存、获得财富。但事实上",
+      "end_excerpt": "孤独相伴，扎根海岛，家国一体……这是一个\n奋斗担当、心怀天下的时代，只有在平凡岗位奉献、付出，才能将工作的意义、人生的价值体现的淋漓尽致。\n新时代蕴藏着巨大机遇，置身于伟大新时代，我们每个人都能在平凡的岗位上收获幸福和快乐，为人生涂上了\n最美的底色。我们每个人都要立足岗位，诚实劳动、勤勉工作，在奋斗和奉献中实现自己的人生价值，收获幸福人\n生，实现更好的自己。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2018/申论-统考.md",
+      "question_number": 3,
+      "question": "“给定资料8”中划线句子提到，“共享经济意味着资源的共享，也意味着文明的共担。”结合你对这句话的思考，参\n考给定资料，联系实际，自拟题目，写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1162,
+      "raw_answer_characters_without_urls": 3889,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "887aeaf266e54747d1b50c732bebefcfc989e8a54cdfafc07e695b1a8ad253a8",
+      "start_excerpt": "共享经济开启新时代\n共享经济与传统的“占有型经济”有别，强调“享用”而非“占有”，以“物尽其用”为旨归，意在促使供给方把某段\n时间内暂时闲置的物品、设施、服务等以较低的成本、价格让渡给需求方享用。这一过程，不仅意味着“物”的共\n享，更对参与共享的人及相关主体的契约精神、协作意识等文明素养提出了要求。近几年，得益于互联网技术的成\n熟，以及政府的鼓励和支持，共享经济在我国快速兴起。\n共享经济带来社会红利的同时，也存在资源投入不足、文明素质不",
+      "end_excerpt": "会公共服务的功能，能满足⺠众需求，促进社会公平，因此还需要法律\n制度的规范和保障，让共享经济能够在法治的框架中健康有序地运行。\n共享经济一方面能挖掘存量资源，形成新的生产力，对我国经济供给侧改革和转型升级具有最重要意义；另一\n方面，其蕴含的公平精神、节约理念，对国际经济合作也有启发意义。可⻅，唯有顺从共享，共建文明，才能把握\n新机遇，迎接新挑战，开启新时代！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2020/申论-统考.md",
+      "question_number": 2,
+      "question": "请根据“给定资料3”，以“流程·服务·效能”为主题，自选⻆度，自拟题目，写一篇文章。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1192,
+      "raw_answer_characters_without_urls": 3877,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "da76d36b181373863901c1e35af9bed197fb0c5f7805df9bbfb0538a6f83957e",
+      "start_excerpt": "聚力流程再造 提升服务效能\n治国有常，利⺠为本。要成为一个为人⺠谋福祉、做群众贴心人的政府，就必须把做好政务服务工作当做要\n务。一方面，政府部⻔应当精简审批环节，优化工作流程，为公众提供便捷通道；另一方面，还要改善服务态度，\n提高服务质量，为百姓和企业提供满意服务。只有流程的事、服务的事做好，才能让政务工作发挥最大效能，让人\n⺠享受最大便利。\n经过多年努力，行政制度改革取得了显著的成绩，但是流程繁琐、质量不高、效果不好等实际问题仍频现报",
+      "end_excerpt": "价值观。只有放权，减少因层级审批、人员多乱而造成的协调成本，同时\n通过出台专项扶持政策，才能为⺠为企提供最大优惠与福利。\n面对全球疫情的残酷考验，世界经济动荡的巨大压力，2020年注定艰辛、坎坷与不易。而行政审批制度的改革\n正是政务工作中的一把利剑，让我们以全新的工作思路、严谨的工作态度、科学的工作手段聚力服务流程的再造，\n让服务效能惠群众、惠企业、惠中华！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2021/申论-统考.md",
+      "question_number": 1,
+      "question": "请根据对“给定资料5”中划线句子“治国犹如栽树，本根不摇则枝叶茂荣”的理解，结合全部给定资料，自选⻆度，\n自拟题目，写一篇文章。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1044,
+      "raw_answer_characters_without_urls": 3181,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "811f666eb3ff937503657eece1e37eddc5f938e50c8c9ef1ef278e4024746dee",
+      "start_excerpt": "党建为先 强基固本\n欲筑室者，先治其基。诚然，基层作为国家治理的最末端，服务群众的最前沿，是国家治理的基础和重心，是\n故强基固本方能国势兴盛。在我们致力提升基层治理水平的当下，更要坚持党建引领，通过强调组织先行、秉持服\n务为本、完善管理制度，才能将党的政治优势、组织优势和群众工作优势转化为治理优势，把党的力量和主张传递\n到“神经末梢”，走好基层治理的“最后一公里”。\n坚持党建引领，强调组织先行，既要推动党组织向最基层覆盖延伸，推进党员下",
+      "end_excerpt": "，才能让道德约束有制度作为底线保障，才能\n⻓期有效地赓续红色基因、砥砺奋进之志。\n国欲兴其势，必先固其本。正如习近平总书记强调的，推进国家治理体系和治理能力现代化，社区治理只能加\n强、不能削弱，维持基层有效治理一直是党和政府念兹在兹之举。当下，我们更应牢固树立大抓基层的鲜明导向，\n推进基层建设的全面进步、全面过硬，实现基层党建管思想、把方向、聚合力、固根基。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2021/申论-统考.md",
+      "question_number": 2,
+      "question": "请根据对“给定资料8”中划线句子“时代变了，文化不再是后台的配⻆，已经成⻓为台前的主力”的理解，结合全部\n给定资料，自选⻆度，自拟题目，写一篇文章。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1081,
+      "raw_answer_characters_without_urls": 3218,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "b5ae9fedf530cdb8b486abc7522ff95a549fa45fe008cdf8acf8195da047ea17",
+      "start_excerpt": "奏响文化建设的时代乐章\n文化是一个国家和⺠族的灵魂。习近平总书记指出：“要坚持中国特色社会主义文化发展道路，激发全⺠族文化\n创新创造活力，建设社会主义文化强国。”站在“两个一百年”奋斗目标的历史交汇点上，更应加强文化建设，传承优\n秀传统文化，以科技赋能助推文化产业化融合发展，同时推动文化走向⺠众，实现文化成果共享。\n千古文化薪火相传，文化建设需要传承优秀的传统文化。既要保护好物质文化遗产并加以活化利用，也要在承\n继非物质文化中融入人文精",
+      "end_excerpt": "馆，俨然已成为城市的文化地标和\n智慧灯塔，丰富的图书和安静的环境，为市⺠搭建了阅读思考的精神家园。\n参天之木，必有其根；怀山之水，必有其源。根之所系，脉之所维，这个根脉就是文化，而文化建设正是认\n识、了解这个根脉的工具。悠久历史⻓河里的文化遗珠，如同洪荒烈火淬炼出的精金，亘古⻛霜琢磨过的美玉，做\n好文化建设将为弘扬中华优秀传统文化，增强文化自信提供坚强支撑。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2022/申论-统考.md",
+      "question_number": 1,
+      "question": "请结合全部给定资料，以“大凡治事，必需通观全局”为主题，自拟题目，写一篇文章。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1091,
+      "raw_answer_characters_without_urls": 3376,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "3155daeebc6fa0b0e50a2d3cf2c3e885ac38b606a65a04f720cc24d0634e3f83",
+      "start_excerpt": "执棋者，不偏执一子\n——治事的全局观\n清代学者钱泳在《履园丛话》中曾提及“大凡治事，必需通观全局”，习总书记也曾强调“要善于观大势、谋大\n局”，这都在传递一种“治事的全局观”。所谓治事的全局观，既包括推进事物各要素协同发展的视野，也包括不执迷\n于表象、窥探本源的通透，还包括敬畏变量、不盲目不武断的审慎。在我们国家、社会的治理进程中，任何重大决\n策背后，无处不体现着这种大局观，它值得我们深入研究、学习、借鉴。\n治事的全局观，体现在统筹推进",
+      "end_excerpt": "度猎杀狼群，那么\n必然会致使羊群过量，侵蚀草原植被，对生态环境造成不可逆的损失。因此，只有把握系统中各个环节间的联系，\n才能避免陷入片面分析、主观判断等误区，维持复杂系统的平衡，推动⻓远发展。\n不谋全局者，不足谋一域。治事观全局，既要统筹兼顾，通力协作，也要透过现象看本质，还需把握联系，平\n衡各方。唯有如此，才能实现不断发展，在危机中育先机、于变局中开新局。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2022/申论-统考.md",
+      "question_number": 2,
+      "question": "请结合全部给定资料，以“把准脉，开准方”为主题，自拟题目，撰写一篇文章。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1200,
+      "raw_answer_characters_without_urls": 3718,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "fb7393228932ee8964025d2df3c4a628b029f077c030f8ffec9ca1f0f18c109f",
+      "start_excerpt": "把准社会发展脉搏 开好时代前行良方\n清代名医徐灵胎认为“医法一误，必至伤生害命，尤不可不慎也”，社会治理又何尝不是如此？医社会之疾如治\n人之病，不作为、假作为、乱作为等错误的“医法”，不仅会损害百姓的切身利益，更制约着全社会的良性运转。因\n此，若想推动社会健康有序地发展，务必应当先摸清社会肌体的脉搏，找准施策的正确方向；再有的放矢，开好治\n理社会的妙药良方。\n推动社会健康有序地发展，首先要把好公共服务之脉，一方面要做到问需于⺠，让公共决",
+      "end_excerpt": "带来管理方式\n的不断优化和蜕变。随着时代的发展，社会中既有新问题应时而生，也有老问题始终存在，这就要求管理者借助互\n联网、云技术、大数据等现代科技的力量，让治理手段更智慧，让治理方式更智能，让治理成果更显著。\n有的放矢胜于万箭⻬发，只有把好社会肌体的脉搏，摸清社会症结的源头，才能在精准施策时对症下药，从而\n让全社会在强健平稳中焕发生机，在健康有序中阔步向前！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2023/申论-统考.md",
+      "question_number": 5,
+      "question": "请结合全部给定资料，以“常⻘之道，贵在自胜”为主题，自拟题目，撰写一篇文章。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1042,
+      "raw_answer_characters_without_urls": 3424,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "2e97e1b06faa7657fbf1041c8f3eb917c55d6070bd3b1904f645e21d437a233d",
+      "start_excerpt": "以自胜之道，绘常⻘画卷\n“常⻘之道，贵在自胜。”这一古训穿越历史尘埃，在今天依然振聋发聩。它揭示了一个朴素的真理：真正的⻓\n⻘之路，源于对内生困境的清醒认知，源于打破陈规、自我革新的勇气与智慧。个人、组织乃至一个⺠族、国家，\n要保持生机活力、实现持续发展，关键在于不断超越自我、突破桎梏。在时代的浪潮中，唯有秉持自胜之道，方能\n绘就常⻘画卷。\n“自胜”需要破立并举，以解放思想为先导，推进制度改革，破除发展桎梏，释放发展活力。“穷则变，变则",
+      "end_excerpt": "格局。这启示我\n们，人⺠是历史的创造者，更是历史演进的动力源泉。唯有充分激发人⺠内心热忱、自主奋进精神与开拓创新思\n维，方可汇聚排山倒海之势，推动发展不断跃上新的台阶。\n“历史只会眷顾坚定者、奋进者、搏击者。”走在新的赶考之路上，面对更高的发展要求，我们尤须深谙“自\n胜”之道。唯有如此，我们才能向着共同富裕的美好明天稳步迈进，交出无愧于人⺠与历史的优异答卷。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2023/申论-统考.md",
+      "question_number": 6,
+      "question": "新春伊始，⻬鲁大地动能澎湃，焕发蓬勃生机。结合给定资料，以“脉动的力量”为主题，自拟标题，自选⻆度，撰\n写一篇文章。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1103,
+      "raw_answer_characters_without_urls": 3484,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "83b3cfb0719836fb9af82c7aac1bd899d33584f2b7319ad5760405a063e5f0ad",
+      "start_excerpt": "⻬鲁大地生机勃勃，发展动能澎湃涌动\n——论山东高质量发展\n从泰山之巅到⻩海之滨，从科研院所到工厂⻋间，高热效率柴油机、高速磁浮交通系统突破国外垄断，国信1\n号、蓝鲸2号、雪蜡⻋填补国内空白……这些成就展现出⻬鲁大地热潮涌动，处处迸发澎湃动能。科技的创新力量、\n产业的升级力量、政府的支持力量，这些“脉动力量”为高质量发展注入强大势能。\n高质量发展，有赖于关键核心技术突破。这既得益于全社会崇尚、鼓励、尊重创新的氛围，也从科技创新工\n程、对接",
+      "end_excerpt": "发“人才红利”，塑\n造人才新动能。未来政府部⻔还要提供更专业的优质服务，把握更精准的工作标准，滴灌更特色的政策支持，当好\n企业服务员，为释放企业创新动能提供后续保障。\n因势而谋、聚势而强、乘势而上，下一步山东将继续着力加大科技创新力度，加速产业升级速度，提升政府支\n持温度，持续增强前进动能，让各类利好因素在⻬鲁大地加速积聚，让经济高质量发展脉动更为强劲有力！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2024/申论-统考.md",
+      "question_number": 5,
+      "question": "请以“给定资料6”中的划线句子“众力并，则万钧举”为主题，结合全部给定资料，自拟题目，写一篇文章。（40\n分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1101,
+      "raw_answer_characters_without_urls": 3692,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "84eea62850db536b93fd52e9e03d825a53c106968d79eb31fc026596230bf5b3",
+      "start_excerpt": "⻬心协力谋发展，携手共筑梦想路\n“众力并，则万钧不足举”，出自晋代思想家葛洪所著《抱朴子·外篇·务正》，意谓若能汇聚众人的力量，即\n便“万钧重物”也不难举起。从古老的灌溉系统到现代的航天壮举，从微小的社会变革到宏大的国家发展，无不凝聚\n着集体的智慧与力量，托举起看似不可能实现的宏伟大愿景，充分展现了“众力并”的重要性。\n“众力并”体现在部⻔联动，打破部⻔间原有的各种壁垒，大力提升政府服务效能。⻓久以来，政府部⻔间存在\n的壁垒如同一道道无",
+      "end_excerpt": "当，同时为国家建设发展找了新的增⻓点；山东与河南的《⻩河流域（豫鲁段）横向生态保护补偿协议》，让河\n南赢得了补偿资金，山东赢得了优良水质，实现了双赢，谱写着“鲁豫同心”的美好篇章。所以，打破空间上的限\n制，要勠力同心，奋楫笃行，行而不辍，才能未来可期。\n人心⻬，泰山移。在未来的日子里，让我们携手并肩，共克艰难与挑战，共同为实现中华⺠族的伟大复兴而努\n力奋斗！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/山东/2025/申论-统考.md",
+      "question_number": 6,
+      "question": "请围绕对“给定资料6”中划线句子“万物奔流，经济天下”的理解，结合全部给定资料，自拟题目，写一篇文章。\n（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1060,
+      "raw_answer_characters_without_urls": 3580,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "d476411b863dc4c4b16cd76d008e9e214c89579ef3227b0211690413146a25b3",
+      "start_excerpt": "物流脉动，经济天下\n晨曦微露，⻘岛街巷间无人配送⻋悄然穿行；正午时分，淄博智慧物流园的分拣线高速运转；夜幕之下，中欧\n班列的铁轨声正唤醒亚欧大陆……这些流动的轨迹，勾勒出“万物奔流，经济天下”的时代图景。物流如同经济的血\n脉筋络，贯通产销、连接内外，支撑着全球资源与商品的高效流转。在全球格局深刻重塑的当下，以物流之“畅”促\n经济之“兴”，不仅是应对变局的关键之举，更是赢得未来的制胜之道。\n打造现代化物流体系，需构建内外联通、高效便捷的物",
+      "end_excerpt": "实现海关、港口、铁路数据互联互通，减少企业单证处理成本；治理层面则需注重精准施策，让高信\n用企业享受快速通关便利，提升监管效能，降低合规成本。政策、制度、治理三者协同发力，方能系统破解体制机\n制障碍，充分释放物流体系的发展潜能。\n从冷链专列到无人配送，从跨境班列到智能调度，中国物流正以奔腾之势贯通内外、赋能循环，在“万物奔\n流”中铺就“经济天下”的壮阔通途。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/广西/2018/申论-统考.md",
+      "question_number": 1,
+      "question": "请围绕微传播这一视⻆，思考“给定资料7”中的划线句子：“一切予人向上和希望、促使人不断追求、让生活变得圆\n满幸福的动力和感情就是正能量”。结合给定资料，自拟题目，自选⻆度，写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 960,
+      "raw_answer_characters_without_urls": 3276,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "a2b831e47c906485ae674862df4403f2b017c7557a00de72d1feec553d5d0509",
+      "start_excerpt": "微传播的正能量\n什么是“微传播”？就是微信、微博、新闻客户端逐渐成为主要的信息传播平台和网⺠自主参与发言、阅读、评\n论的网络舆论重心。微传播使得人人都可以为自己的利益发声，人人都有机会传播自己的观点和理念。微传播打破\n了传统媒体的话语权垄断，使人们的社会话语权更加平等。\n权利意味着责任。微传播给个人更大发言自主权的同时，要求我们传播更多积极向上的希望，传播让生活变得\n圆满幸福的社会正能量。\n微传播的正能量是积极保护自己和履行社会责任的力",
+      "end_excerpt": "侵权，\n不参与不文明行为。另一方面，要学会理性判断，对于偏激信息不传播，不转发，不分享，不议论，做文明的践行\n者，正义的捍卫者。\n正如网友们所说“与其在别处仰望，不如在这里并肩”，微传播能产生集聚效应，影响主流媒体，推动社会进\n步。因此，微传播应该激发公⺠责任意识，传播正能量，发挥其成⻛化人、凝心聚力的作用。只有这样，微传播才\n能更有传播力、影响力和公信力。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/广西/2018/申论-统考.md",
+      "question_number": 2,
+      "question": "“给定资料7”中提到，“‘活着’的历史是文化，‘死去’的文化是历史”。请从这句话引发思考，结合给定资料，联系实\n际，自选⻆度，自拟题目，写一篇文章。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1187,
+      "raw_answer_characters_without_urls": 3548,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "d955bc5ef7dd05520abea6da6c06833f9192fd69b551316d5e45ecddeb56fd6b",
+      "start_excerpt": "传承“活着”的文化 牢记“死去”的历史\n每年的4月18日，是“国际古迹遗址日”。在中国，悠久的历史历经数千年，最终形成极具分量又独具特色的中\n国文化，孕育出灿烂的中华文明。然而，文化的发展也必将经历一个新陈代谢、推陈出新的过程。这就需要我们对\n现存文化保护、传承、创新，同时牢记历史经典，不忘精神根脉。\n传承文化，需要深入学习，了解优秀文化的真正内涵；在新时代，利用多样化的传播方式，秉持开放心态，践\n行文化发展理念；将文化与经济结合，才能",
+      "end_excerpt": "，开拓创新，塑造中华⺠族优秀的品格。历史已经成为过去，我们无法、也不\n可让时间倒流，但历史精神不容遗忘，唯有继承、发扬、创新，才能让中华记忆历久弥新，塑造中华⺠族优秀的品\n格。\n“文化兴国运兴，文化强⺠族强”。传承与牢记都是对历史的尊重，对文化的尊重。我们所有人都有责任，以文\n化复兴为契机，塑造并培养中国人独有的文化情怀，让继承与发展的文化理念成为广泛共识！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/新疆/2020/申论-下半年.md",
+      "question_number": 1,
+      "question": "“给定资料4”中划线句子提到“消费的作用不仅仅只在经济方面，还有文化，消费也是一种文化传播方式。”请根据\n你对这句话的理解，结合给定资料，自拟题目，自选⻆度，写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1062,
+      "raw_answer_characters_without_urls": 3324,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "256679945d7e2314c260b61be20a4dedd9c5b0623636bf8f18393b0679205894",
+      "start_excerpt": "消费的文化传播功能\n谈及消费，很多人的第一反应是拉动经济增⻓的“三驾⻢⻋”之一，诚然，它能形成新的需求，促进生产发展，\n增加就业岗位，进而促进经济发展。但除了经济方面的功用之外，消费还是一种文化传播方式，能在消费物品实用\n性的基础上，挖掘其中的深层次精神价值，并将其转化为意识形态的美学消费，进而衍生出一种消费文化，让人们\n摆脱物质消费的虚无感，获得更高的精神体验。\n消费作为一种文化传播方式，能满足人们的情感共鸣与认同归属诉求，产生潮流文",
+      "end_excerpt": "的助推。为\n此，我们要加强自律，避免盲目支出与过度浪费；主流媒体和相关部⻔要肩负社会责任，宣传不攀比、务实的消费\n理念；商家也要避免“哄抢”营销，倡导适度购买。\n消费不仅能拉动经济发展，又能满足人们的情感诉求，产生潮流文化、怀旧之⻛，还能传递主流价值观，助推\n绿色消费文化、极简主义发展。我们要注重消费的文化传播价值，培养科学合理的消费习惯，让其助推文化发展！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/新疆/2021/申论-下半年.md",
+      "question_number": 1,
+      "question": "“给定资料7”中提到：“唯有传承红色基因，筑牢信仰之基，才能在各种⻛险挑战面前做到‘不畏浮云遮望眼’‘乱云⻜\n渡仍从容’。”请你深入理解这句话的含义，结合给定资料，联系实际，写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1134,
+      "raw_answer_characters_without_urls": 3774,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "04fb9c12581801d1d81676d11d64dffc89602ebfc6790b66240fc08c3a3bc96e",
+      "start_excerpt": "传承红色基因 践行初心使命\n习近平总书记指出：“共和国是红色的，不能淡化这个颜色。”在中国共产党建党百年的伟大革命实践中，无数\n革命先烈用自己的鲜血和生命换来了⺠族的解放、国家的稳定，并在应对各种困难挑战中，锤炼了信念坚定、敢创\n新路、百折不挠、艰苦奋斗、立党为公、忠诚为⺠的红色精神。这些精神是党领导人⺠革命的胜利之本，也是激励\n我们不断前进的力量之源，是传承百年的红色基因。\n时至今日，在这样一个新问题不断涌现，新挑战不断产生的时代，作",
+      "end_excerpt": "”战役以来，数以百万计的扶贫大军奔赴全国最偏远、最艰\n苦的地方，日夜奋战、攻坚克难，1800多名同志将生命定格在了脱贫攻坚征程上，是他们的艰苦奋斗，创造了彪炳\n史册的人间奇迹。\n征途如虹，浩荡前行。如今，以中国式现代化推进强国建设、书写中华⺠族伟大复兴的蓝图徐徐展开，在此历\n史新时期，我们更要把握方向，延续红色精神，保持江山的不变底色，谱写无愧于时代的华章！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/重庆/2017/申论-统考.md",
+      "question_number": 1,
+      "question": "从给定资料出发，以“知识的价值”为话题，自选⻆度，自拟题目，写一篇文章。（55分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 985,
+      "raw_answer_characters_without_urls": 3368,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "cf397ffe026bfbef792a2dee8be5d0ab5996eb531faab95389e60a7ff72b91b7",
+      "start_excerpt": "让知识的价值大放异彩\n高尔基说：“知识是我们这个社会的绝对价值。”知识究竟有什么价值呢？它主要体现在三个方面：知识可以给\n人们答疑解惑，增⻓智慧；知识能够滋养心灵，推动精神文化发展；知识能够激发创新创造，提高生产力，推动经\n济发展。\n但与一般物品的价值不同，知识的价值需要被人掌握和使用才得以体现，某种知识被越多的人掌握和利用，其\n方方面面的价值就越大。\n因此，知识的价值有赖于被广泛传播和分享。知识要不断传播、使用才能产生更大的价值，封闭",
+      "end_excerpt": "遵循知识共享协议，共享模式让更有价值\n的知识快速传播，实现更大价值。但不可否认，网络知识分享中存在大量侵权行为，这需要完善相关法律法规，优\n化网络版权政策环境，不断推进正版化进程，让版权保护真正成为知识传播的护身符。\n“生有涯而知无涯”，知识的价值内涵伴随互联网的发展越来越丰富，越来越多元。唯有让知识的价值大放异\n彩，才能让个人不断前进，让社会绽放智慧光芒！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    }
+  ],
+  "boundary": "Actual body lengths exclude source URLs, authorship labels and teacher commentary. A compliant alternative body can satisfy the task while historical versions remain reviewable. Ambiguous original word limits remain explicit review candidates. Missing entire papers, source factual truth, actual exam scores, and unavailable original conditions are separate inventory findings."
+}

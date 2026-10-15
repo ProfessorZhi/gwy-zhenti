@@ -1,0 +1,171 @@
+{
+  "status": "matched_existing_images",
+  "read_only_exam_content": true,
+  "new_images_generated": 0,
+  "target_md_written": false,
+  "proofs": [
+    {
+      "kind": "MOPS125_Q74_nine_grid",
+      "donor_md": "省考/湖北/2016/行测-统考.md",
+      "donor_md_sha256": "7ccb6bf2e112b5fedb9317f41a09f816a99b25222dea0b66a7ae170f9aea2f41",
+      "donor_fixed_baseline_url": "https://github.com/ProfessorZhi/gwy-zhenti/blob/f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/%E7%9C%81%E8%80%83/%E6%B9%96%E5%8C%97/2016/%E8%A1%8C%E6%B5%8B-%E7%BB%9F%E8%80%83.md",
+      "donor_questions": {
+        "74": "<p>从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：</p><p><img width=\"555px\" height=\"644px\" src=\"../../../图片/省考-湖北-2016-行测-统考/题目图/1546a306368bbfc.png\" /></p>\n\n- **A**. A\n- **B**. B\n- **C**. C\n- **D**. D"
+      },
+      "donor_answer_keys": {
+        "74": "A"
+      },
+      "images": [
+        {
+          "path": "图片/省考-湖北-2016-行测-统考/题目图/1546a306368bbfc.png",
+          "sha256": "143f40d45e27078c218414385b2299fe4f13cffa90737d7a672ecf897ef440a4",
+          "fixed_baseline_url": "https://github.com/ProfessorZhi/gwy-zhenti/blob/f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/%E5%9B%BE%E7%89%87/%E7%9C%81%E8%80%83-%E6%B9%96%E5%8C%97-2016-%E8%A1%8C%E6%B5%8B-%E7%BB%9F%E8%80%83/%E9%A2%98%E7%9B%AE%E5%9B%BE/1546a306368bbfc.png",
+          "visually_inspected": true
+        }
+      ],
+      "match_basis": {
+        "rows_of_point_counts": [
+          [
+            5,
+            6,
+            7
+          ],
+          [
+            7,
+            8,
+            9
+          ],
+          [
+            9,
+            10,
+            11
+          ]
+        ],
+        "option_point_counts": [
+          11,
+          11,
+          10,
+          12
+        ],
+        "additional_shape_constraint": "题干格内部均有三角形；选项B无三角形，A满足",
+        "target_owned_source_question": 74,
+        "target_answer": "A",
+        "not_the_wrong_variant": "不是政华120版本的2014/1928数字图。",
+        "visual_boundary": "目标MOPS文字转录未携原图，依据同年联考题面、完整点数/三角形规律、全部选项顺序同题匹配；不声称取得了丢失原图后的逐像素直接比对。"
+      }
+    },
+    {
+      "kind": "MOPS125_Q116_120_courier_shared_tables",
+      "donor_md": "省考/浙江/2016/行测-A类.md",
+      "donor_md_sha256": "af9ac425c9063998b69578644afdd21b5fd73f7c9df71e33aba009ed1c16a657",
+      "donor_fixed_baseline_url": "https://github.com/ProfessorZhi/gwy-zhenti/blob/f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/%E7%9C%81%E8%80%83/%E6%B5%99%E6%B1%9F/2016/%E8%A1%8C%E6%B5%8B-A%E7%B1%BB.md",
+      "donor_questions": {
+        "108": "2015年2月，平均每笔快递业务的收入在以下哪个范围之内？\n\n- **A**. 低于17元\n- **B**. 17～19元\n- **C**. 19～21元\n- **D**. 高于21元",
+        "109": "2015年2月，消费者对快递业务的全部申诉量约为：\n\n- **A**. 1.96万件\n- **B**. 2.36万件\n- **C**. 1.96亿件\n- **D**. 2.36亿件",
+        "110": "将4家企业按2015年1月每百万件快递业务丢失损毁的有效申诉量从高到低排序，正确的是：\n\n- **A**. 企业2，企业1，企业3，企业4\n- **B**. 企业1，企业2，企业3，企业4\n- **C**. 企业2，企业1，企业4，企业3\n- **D**. 企业1，企业2，企业4，企业3",
+        "111": "2015年2月4家企业中，有几家企业的投递服务有效申诉量占该企业当月有效申诉量的比重高于上月水平：\n\n- **A**. 1家\n- **B**. 2家\n- **C**. 3家\n- **D**. 4家",
+        "112": "能够从上述材料推出的是：\n\n- **A**. 2014年2月，全国快递业务完成量为8亿多件\n- **B**. 2015年2月，全国每百万件快递业务中，非有效申诉不到1件\n- **C**. 2015年2月，四家企业的每百万件快递业务有效申诉量都高于全国水平\n- **D**. 2015年2月，企业1的每百万快递业务延误有效申诉量超过任何企业的2倍"
+      },
+      "donor_answer_keys": {
+        "108": "A",
+        "109": "A",
+        "110": "D",
+        "111": "B",
+        "112": "B"
+      },
+      "images": [
+        {
+          "path": "图片/省考-浙江-2016-行测-A类/题目图/163388a8bbdeff6.png",
+          "sha256": "5e51cce94a809d9ebda5e131d5d49ad5a964ac7443734d00ca010a24e1f5fe8e",
+          "fixed_baseline_url": "https://github.com/ProfessorZhi/gwy-zhenti/blob/f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/%E5%9B%BE%E7%89%87/%E7%9C%81%E8%80%83-%E6%B5%99%E6%B1%9F-2016-%E8%A1%8C%E6%B5%8B-A%E7%B1%BB/%E9%A2%98%E7%9B%AE%E5%9B%BE/163388a8bbdeff6.png",
+          "visually_inspected": true
+        },
+        {
+          "path": "图片/省考-浙江-2016-行测-A类/题目图/1633883acaad97e.png",
+          "sha256": "f46aab43f7ed5a44acad1e2d09a9ae4c4f308eac05a84734513152344c94dee6",
+          "fixed_baseline_url": "https://github.com/ProfessorZhi/gwy-zhenti/blob/f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/%E5%9B%BE%E7%89%87/%E7%9C%81%E8%80%83-%E6%B5%99%E6%B1%9F-2016-%E8%A1%8C%E6%B5%8B-A%E7%B1%BB/%E9%A2%98%E7%9B%AE%E5%9B%BE/1633883acaad97e.png",
+          "visually_inspected": true
+        }
+      ],
+      "match_basis": {
+        "target_owned_question_numbers": [
+          116,
+          117,
+          118,
+          119,
+          120
+        ],
+        "donor_question_numbers": [
+          108,
+          109,
+          110,
+          111,
+          112
+        ],
+        "table_title": "2015年2月对四家企业的每百万件快递业务有效申诉量",
+        "table_units": "件；环比变化率表单位为%",
+        "visually_read_values": [
+          [
+            19.93,
+            23.79,
+            28.32,
+            3.09
+          ],
+          [
+            11.12,
+            8.89,
+            11.37,
+            1.18
+          ],
+          [
+            11.13,
+            7.07,
+            12.57,
+            1.09
+          ],
+          [
+            3.29,
+            6.37,
+            7.24,
+            0.91
+          ]
+        ],
+        "row_totals": [
+          75.13,
+          32.56,
+          31.86,
+          17.81
+        ],
+        "visually_read_growth_rates": [
+          [
+            87,
+            49,
+            53,
+            -46
+          ],
+          [
+            72,
+            87,
+            44,
+            -38
+          ],
+          [
+            217,
+            114,
+            139,
+            -9
+          ],
+          [
+            54,
+            55,
+            41,
+            -48
+          ]
+        ],
+        "context_matches": "2015年2月快递8.2亿件/136亿元，全国每百万件有效申诉23.4件，四企总计依次75.13/32.56/31.86/17.81，与MOPS125同组材料一致。",
+        "task_matches": "每笔收入、全部申诉量、1月丢失损毁排序、投递服务占比上升家数、综合判断五题对应且四选项次序一致；投递服务题个别稿“有效”字样存在行文差异，未擅自改目标原题。",
+        "not_inferred": "直接读取既有原表图像，不以解析/已知答案倒填表格。"
+      }
+    }
+  ]
+}

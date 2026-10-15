@@ -1,0 +1,2367 @@
+{
+  "audit_date": "2026-10-15",
+  "read_only": true,
+  "area_year_rows": 66,
+  "stock_files": 127,
+  "confirmed_missing_count": 15,
+  "confirmed_missing": [
+    {
+      "area": "上海",
+      "year": 2016,
+      "type": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "http://www.shgkw.org/2016/0926/9462.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2021,
+      "type": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "http://www.shgkw.org/2021/0820/40645.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "type": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://cgzf.sh.gov.cn/channel_8/20220819/1a689b735cb248ddbe238c9f4e03d319.html",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "type": "A",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://cgzf.sh.gov.cn/channel_8/20220819/1a689b735cb248ddbe238c9f4e03d319.html",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "type": "B",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.jfdaily.com/wx/detail.do?id=784997",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "type": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.shqp.gov.cn/shqp/ggfw/bmts/20240820/1183054.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "type": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.lysrsks.com/index/news/detail.html?id=2009"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2022,
+      "type": "行政执法",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2022/0224/38404.html",
+        "https://www.eoffcn.com/kszx/detail/1275187.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "type": "综合街镇",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2024/0122/46154.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "type": "行政执法",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2024/0122/46154.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2025,
+      "type": "行政执法",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://ah.huatu.com/2024/1107/2948494.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "type": "综合市区",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202511/t20251105_7170794.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "type": "综合街镇",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202511/t20251105_7170794.html"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2026,
+      "type": "省市综合管理",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/",
+        "http://fj.huatu.com/2026/0116/2509896.html"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2024,
+      "type": "Ⅰ",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226",
+        "https://www.szgm.gov.cn/xxgk/xqgwhxxgkml/rsxx/gwyzk/content/post_11029041.html"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "area": "上海",
+      "year": 2016,
+      "expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/上海/2016/申论-A类.md",
+          "title": "2016年上海市公务员考试申论（A类，完整四题核对版）"
+        },
+        {
+          "vol": "B类",
+          "path": "省考/上海/2016/申论-B类.md",
+          "title": "2016年上海市公务员考试申论（B类，完整四题核对版）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "行政执法专项"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "http://www.shgkw.org/2016/0926/9462.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "question_material_mapping_evidence": {
+        "report": "reports/FULL-REPAIR-SHANGHAI-BUCKET-MAP-A-20261015.json",
+        "tasks": [
+          {
+            "bucket_number": 1,
+            "question": "阅读给定资料，以“新形势下如何肩负起历史赋予我们的使命担当”为主题写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "05c28364e8549c882ec96ea6c1c351f339854ca60e587d0451e227fae6a5d9a8",
+            "candidates": [
+              {
+                "path": "省考/上海/2016/申论-B类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.978261,
+                "named_material_sha256": "5331cec98a9fba1dcdf9983fd78dda654aa5f655deec46b33a6cabd624d9bc3e"
+              }
+            ]
+          },
+          {
+            "bucket_number": 2,
+            "question": "阅读给定资料，以“加强市场监管”为主题写一篇文章。（40分）\n要求：全面开展电梯安全⻛险大排查，专项整治“三无”电梯，协调做好老旧电梯更新改造修理工作，加强",
+            "bucket_material_sha256": "cb93b19bd9faf326029aff03761b53bded6608b3d8be4067f997106951da246f",
+            "candidates": [
+              {
+                "path": "省考/上海/2016/申论-A类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.998193,
+                "named_material_sha256": "c64ba2cd548169a2d13481311a0f3e313b26abd80a314ebedf2c225dea3f27aa"
+              }
+            ]
+          }
+        ],
+        "unmapped_tasks": [],
+        "restoration_receipts": [
+          "reports/FULL-REPAIR-SHANGHAI-2022B-A-20261015.json",
+          "reports/FULL-REPAIR-SHANGHAI-HISTORICAL-A-20261015.jsonl"
+        ]
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2017,
+      "expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/上海/2017/申论-A类.md",
+          "title": "2017年上海市公务员考试申论（A类）"
+        },
+        {
+          "vol": "B类",
+          "path": "省考/上海/2017/申论-B类.md",
+          "title": "2017年上海市公务员考试申论（B类）"
+        },
+        {
+          "vol": "行政执法卷",
+          "path": "省考/上海/2017/申论-行政执法卷.md",
+          "title": "2017年上海公务员考试《申论》试题（行政执法卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "question_material_mapping_evidence": {
+        "report": "reports/FULL-REPAIR-SHANGHAI-BUCKET-MAP-A-20261015.json",
+        "tasks": [
+          {
+            "bucket_number": 1,
+            "question": "围绕“脚踏实地，实现⺠族复兴”这一主题，写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "e94a68d19baf7788195b501ca7ec3febfee889fa64f56164e44ed0f8a1590e25",
+            "candidates": [
+              {
+                "path": "省考/上海/2017/申论-B类.md",
+                "number": 4,
+                "question_similarity": 0.913043,
+                "bucket_material_12gram_coverage": 0.942214,
+                "named_material_sha256": "f1444affa9e969c4f27375214510185f31dcabc8e9511c57144e430164911505"
+              }
+            ]
+          },
+          {
+            "bucket_number": 2,
+            "question": "围绕“提升公共服务满意度”这一主题写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "a38d8ccbd42bd91101c1200a9fa902d2c29c45a8b296caafb90c6ba03e48dc8d",
+            "candidates": [
+              {
+                "path": "省考/上海/2017/申论-A类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.979911,
+                "named_material_sha256": "34a979fda13c032d0984a4b68f62f596037eae1c4e40f0627d0c31ed712d1fb8"
+              }
+            ]
+          }
+        ],
+        "unmapped_tasks": [],
+        "restoration_receipts": [
+          "reports/FULL-REPAIR-SHANGHAI-2022B-A-20261015.json",
+          "reports/FULL-REPAIR-SHANGHAI-HISTORICAL-A-20261015.jsonl"
+        ]
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2018,
+      "expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/上海/2018/申论-A类.md",
+          "title": "2018年上海市公务员考试申论（A类）"
+        },
+        {
+          "vol": "B类",
+          "path": "省考/上海/2018/申论-B类.md",
+          "title": "2018年上海市公务员考试申论（B类）"
+        },
+        {
+          "vol": "行政执法",
+          "path": "省考/上海/2018/申论-行政执法.md",
+          "title": "2018年上海市公务员考试申论（行政执法）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "question_material_mapping_evidence": {
+        "report": "reports/FULL-REPAIR-SHANGHAI-BUCKET-MAP-A-20261015.json",
+        "tasks": [
+          {
+            "bucket_number": 1,
+            "question": "阅读给定资料，围绕“⻓效机制”这一主题写一篇文章。（50分）\n要求：",
+            "bucket_material_sha256": "fd354cbc3507c93a088a85bed4bcb49b1d5ff847ab1c8eb61ce4b545c3995dd6",
+            "candidates": [
+              {
+                "path": "省考/上海/2018/申论-行政执法.md",
+                "number": 3,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.989935,
+                "named_material_sha256": "ff5a465faad05cd0acbab02b1bfed687ca115e343464438c5e87ede1823cc168"
+              }
+            ]
+          },
+          {
+            "bucket_number": 2,
+            "question": "结合给定资料，以“坚持信念，传承精神，开拓事业”为主题，写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "d9e38f62cd885d82c3ef3d6e2d390a16ef2fe4a36b3b1afcef2cb17786a1aa22",
+            "candidates": [
+              {
+                "path": "省考/上海/2018/申论-A类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.985976,
+                "named_material_sha256": "f69a6f344fee5d88c54d9e50e739a827ed486097362eea074402f29e13b0546c"
+              }
+            ]
+          },
+          {
+            "bucket_number": 3,
+            "question": "以“充分运用新兴科技，推动城市治理创新”为主题，写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "ddb6598163d0585b3452879baaf762961689a2e8403f7fd3b84d48f4ab096572",
+            "candidates": [
+              {
+                "path": "省考/上海/2018/申论-B类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.98408,
+                "named_material_sha256": "2bc8d56bf645e3b03a71c153546c028ada71b88cfd02bbe3621ee4134402f1f8"
+              }
+            ]
+          }
+        ],
+        "unmapped_tasks": [],
+        "restoration_receipts": [
+          "reports/FULL-REPAIR-SHANGHAI-2022B-A-20261015.json",
+          "reports/FULL-REPAIR-SHANGHAI-HISTORICAL-A-20261015.jsonl"
+        ]
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2019,
+      "expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/上海/2019/申论-A类.md",
+          "title": "2019年上海市公务员考试申论（A类）"
+        },
+        {
+          "vol": "B类",
+          "path": "省考/上海/2019/申论-B类.md",
+          "title": "2019年上海市公务员考试申论（B类）"
+        },
+        {
+          "vol": "行政执法卷",
+          "path": "省考/上海/2019/申论-行政执法卷.md",
+          "title": "2019年上海公务员考试《申论》试题（行政执法卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "question_material_mapping_evidence": {
+        "report": "reports/FULL-REPAIR-SHANGHAI-BUCKET-MAP-A-20261015.json",
+        "tasks": [
+          {
+            "bucket_number": 1,
+            "question": "海纳百川是上海城市精神的重要内容。结合给定资料，以“契约精神与海纳百川”为主题，写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "85323efef332511c26302284be1822f430a7b11a748daa1d733fecaa457e019e",
+            "candidates": [
+              {
+                "path": "省考/上海/2019/申论-B类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.979673,
+                "named_material_sha256": "285bb628a8e464cbc47e0e1eaaaadfc636a31e9e91b67a56216a7e8240b61938"
+              }
+            ]
+          },
+          {
+            "bucket_number": 2,
+            "question": "追求卓越是上海城市精神的重要内容。结合给定资料，以“创新驱动与追求卓越”为主题，写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "9d578e380aac994308e2fe48d72614e08195f5d96374abaa2cae05b6f7f3f07e",
+            "candidates": [
+              {
+                "path": "省考/上海/2019/申论-A类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.967098,
+                "named_material_sha256": "a8b73ed02ab1c11a04bd78d53f851564fd31c285b4869b87a1bc92b515e30b54"
+              }
+            ]
+          }
+        ],
+        "unmapped_tasks": [],
+        "restoration_receipts": [
+          "reports/FULL-REPAIR-SHANGHAI-2022B-A-20261015.json",
+          "reports/FULL-REPAIR-SHANGHAI-HISTORICAL-A-20261015.jsonl"
+        ]
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2020,
+      "expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/上海/2020/申论-A类.md",
+          "title": "2020年上海市公务员考试申论（A类）"
+        },
+        {
+          "vol": "B类",
+          "path": "省考/上海/2020/申论-B类.md",
+          "title": "2020年上海市公务员考试申论（B类）"
+        },
+        {
+          "vol": "行政执法卷",
+          "path": "省考/上海/2020/申论-行政执法卷.md",
+          "title": "2020年上海公务员考试《申论》试题（行政执法卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "question_material_mapping_evidence": {
+        "report": "reports/FULL-REPAIR-SHANGHAI-BUCKET-MAP-A-20261015.json",
+        "tasks": [
+          {
+            "bucket_number": 1,
+            "question": "结合习仲勋《贯彻司法工作的正确方向》的讲话，围绕“群众路线和美好生活”这一主题，写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "8887b586bb2865be893aae203c57dd88599b806d23ec87f017aef8fd8a57a7b4",
+            "candidates": [
+              {
+                "path": "省考/上海/2020/申论-A类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.979819,
+                "named_material_sha256": "491f848f36d548716930e5fb4b4a09d845e8e870d07956c28f78a2117ddc670c"
+              }
+            ]
+          },
+          {
+            "bucket_number": 2,
+            "question": "结合给定材料，以“提升放管服效能，建设有温度的城市”为主题写一篇文章。（40分）\n要求：“加快推进电子政务，构建全流程一体化在线服务平",
+            "bucket_material_sha256": "3cd980f9509981b67cb0e63c755f262610f10b70c53552fcaca830897a42cfc7",
+            "candidates": [
+              {
+                "path": "省考/上海/2020/申论-B类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.983361,
+                "named_material_sha256": "f5f9d00e624f77f3f507e2f91411fbdc3f09d857d6ab8b45dd59c1fb2d750aeb"
+              }
+            ]
+          },
+          {
+            "bucket_number": 3,
+            "question": "结合给定材料，阐述上海创新“高度”“速度”“厚度”和“浓度”的含义。（20分）\n要求：“加快推进电子政务，构建全流程一体化在线服务平",
+            "bucket_material_sha256": "3cd980f9509981b67cb0e63c755f262610f10b70c53552fcaca830897a42cfc7",
+            "candidates": [
+              {
+                "path": "省考/上海/2020/申论-B类.md",
+                "number": 3,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.983361,
+                "named_material_sha256": "f5f9d00e624f77f3f507e2f91411fbdc3f09d857d6ab8b45dd59c1fb2d750aeb"
+              }
+            ]
+          }
+        ],
+        "unmapped_tasks": [],
+        "restoration_receipts": [
+          "reports/FULL-REPAIR-SHANGHAI-2022B-A-20261015.json",
+          "reports/FULL-REPAIR-SHANGHAI-HISTORICAL-A-20261015.jsonl"
+        ]
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2021,
+      "expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/上海/2021/申论-A类.md",
+          "title": "2021年上海市公务员考试申论（A类）"
+        },
+        {
+          "vol": "B类",
+          "path": "省考/上海/2021/申论-B类.md",
+          "title": "2021年上海市公务员考试申论（B类）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "行政执法专项"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "http://www.shgkw.org/2021/0820/40645.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "question_material_mapping_evidence": {
+        "report": "reports/FULL-REPAIR-SHANGHAI-BUCKET-MAP-A-20261015.json",
+        "tasks": [
+          {
+            "bucket_number": 1,
+            "question": "时代在动荡和变革，国内外格局在调整和重组。只有每一代人肩负起使命和担当，才能确保我们的事业不断取得新\n的胜利。结合给定材料，围绕“使命”和“斗争”这两个关键词，写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "7d1e061f78114f5b99faec5ef01b084a9ae2b4a923f346f30da06d85a89b8387",
+            "candidates": [
+              {
+                "path": "省考/上海/2021/申论-B类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.981905,
+                "named_material_sha256": "0e7a8fb2cc017524c5d81ac4654b82fc95a9c70e822e7d08cd5b366f5a903984"
+              }
+            ]
+          },
+          {
+            "bucket_number": 2,
+            "question": "结合给定材料，围绕“数字时代”“公平竞争”这两个关键词，写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "f79ac2f432a9fda67722664159b5578556fbbb19af3f52baf40178ed86879562",
+            "candidates": [
+              {
+                "path": "省考/上海/2021/申论-A类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.977826,
+                "named_material_sha256": "89406f7640ac42e7e68c06e47ccc68f6a8137d3b06fba029908dacb7689b5636"
+              }
+            ]
+          },
+          {
+            "bucket_number": 3,
+            "question": "运用矛盾的普遍性原理，分析“材料2”“材料3”和“材料4”中反映出的斗争的共性。（20分）\n要求：概括准确，条理清楚，语言精练，字数不超过300字。",
+            "bucket_material_sha256": "3db23f0c109fdeda6270f33bcd9d9e0e94423220455ec785aa0a619ef9900c09",
+            "candidates": [
+              {
+                "path": "省考/上海/2021/申论-B类.md",
+                "number": 2,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.986569,
+                "named_material_sha256": "0e7a8fb2cc017524c5d81ac4654b82fc95a9c70e822e7d08cd5b366f5a903984"
+              }
+            ]
+          }
+        ],
+        "unmapped_tasks": [],
+        "restoration_receipts": [
+          "reports/FULL-REPAIR-SHANGHAI-2022B-A-20261015.json",
+          "reports/FULL-REPAIR-SHANGHAI-HISTORICAL-A-20261015.jsonl"
+        ]
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "stock": [
+        {
+          "vol": "B类",
+          "path": "省考/上海/2022/申论-B类.md",
+          "title": "2022年上海市公务员考试申论（B类）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "行政执法专项",
+        "A"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://cgzf.sh.gov.cn/channel_8/20220819/1a689b735cb248ddbe238c9f4e03d319.html",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "question_material_mapping_evidence": {
+        "report": "reports/FULL-REPAIR-SHANGHAI-BUCKET-MAP-A-20261015.json",
+        "tasks": [
+          {
+            "bucket_number": 1,
+            "question": "阅读但不拘泥于给定资料，以“一体化高质量发展”为主题写一篇文章。（40分）\n要求：",
+            "bucket_material_sha256": "ec9dcb5dabaa3292bb09a0a3f972829548e5b4f3bbecfac788c2cf05bf1215de",
+            "candidates": [
+              {
+                "path": "省考/上海/2022/申论-B类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.970124,
+                "named_material_sha256": "2d35bd4a52a58efd0c0fbc5ae31508bb6f02ce0b3fb7874f2d9d2090b2740367"
+              }
+            ]
+          }
+        ],
+        "unmapped_tasks": [],
+        "restoration_receipts": [
+          "reports/FULL-REPAIR-SHANGHAI-2022B-A-20261015.json",
+          "reports/FULL-REPAIR-SHANGHAI-HISTORICAL-A-20261015.jsonl"
+        ]
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "expected_types": [
+        "A",
+        "B"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/上海/2023/申论-A类.md",
+          "title": "2023年上海市公务员考试申论（A类）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "B"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.jfdaily.com/wx/detail.do?id=784997",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "question_material_mapping_evidence": {
+        "report": "reports/FULL-REPAIR-SHANGHAI-BUCKET-MAP-A-20261015.json",
+        "tasks": [
+          {
+            "bucket_number": 1,
+            "question": "中国式现代化是人口规模巨大的现代化，也是全体人⺠共同富裕的现代化。现代化建设的出发点和落脚点是实现人\n⺠对美好生活的向往。结合给定资料，围绕“加强基层治理，推进中国式现代化”这一主题写一篇文章。（50分）\n要求：",
+            "bucket_material_sha256": "64efd62abca17eccd460f864b1ca770add941d04485c094fe042bf24a44d4a47",
+            "candidates": [
+              {
+                "path": "省考/上海/2023/申论-A类.md",
+                "number": 4,
+                "question_similarity": 1.0,
+                "bucket_material_12gram_coverage": 0.985773,
+                "named_material_sha256": "ff77f10eb494c5d593d8acbfbae168f80c9f4313637a4aad1a29287adda74824"
+              }
+            ]
+          }
+        ],
+        "unmapped_tasks": [],
+        "restoration_receipts": [
+          "reports/FULL-REPAIR-SHANGHAI-2022B-A-20261015.json",
+          "reports/FULL-REPAIR-SHANGHAI-HISTORICAL-A-20261015.jsonl"
+        ]
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "stock": [
+        {
+          "vol": "A卷",
+          "path": "省考/上海/2024/申论-A卷.md",
+          "title": "2024年上海公务员考试《申论》试题（A卷）"
+        },
+        {
+          "vol": "B卷",
+          "path": "省考/上海/2024/申论-B卷.md",
+          "title": "2024年上海公务员考试《申论》试题（B卷）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/上海/2024/申论-统考.md",
+          "title": "2024 上海市公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "行政执法专项"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.shqp.gov.cn/shqp/ggfw/bmts/20240820/1183054.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "stock": [
+        {
+          "vol": "A卷",
+          "path": "省考/上海/2025/申论-A卷.md",
+          "title": "2025年上海公务员考试《申论》试题（A卷）"
+        },
+        {
+          "vol": "B卷",
+          "path": "省考/上海/2025/申论-B卷.md",
+          "title": "2025年上海公务员考试《申论》试题（B卷）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/上海/2025/申论-统考.md",
+          "title": "2025 上海市公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "行政执法专项"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.lysrsks.com/index/news/detail.html?id=2009"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "上海",
+      "year": 2026,
+      "expected_types": [
+        "常规单卷"
+      ],
+      "stock": [
+        {
+          "vol": "统考",
+          "path": "省考/上海/2026/申论-统考.md",
+          "title": "2026 上海市公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2023行政执法专项停招有同期媒体依据；2026取消AB分类。2024/2025统考桶8题全部逐题映射至AB各4题，不能覆盖专项。2026是否另办专项尚未取得证据。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "http://sh.xinhuanet.com/20251101/3d8662ea46834c758e48193886f6ecd7/c.html",
+        "https://shacs.gov.cn/gwyj/api/files/fetch?fid=ea6c24ce-420c-4f3f-ad4f-483f83cf2c4b"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "天津",
+      "year": 2016,
+      "expected_types": [
+        "常规单卷"
+      ],
+      "stock": [
+        {
+          "vol": "统考",
+          "path": "省考/天津/2016/申论-统考.md",
+          "title": "2016 天津市公务员录用考试 申论（统考）（完整题本核对版）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2025统考8题逐题映射至市区4题+街镇4题；2026统考4题逐题映射至执法4题（题序1→1、2→3、3→2、4→4），并非以共享材料推断整卷相同。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "天津",
+      "year": 2017,
+      "expected_types": [
+        "常规单卷",
+        "滨海新区等单位专项（12月23日）"
+      ],
+      "stock": [
+        {
+          "vol": "滨海新区等单位专项",
+          "path": "省考/天津/2017/申论-统考__t443.md",
+          "title": "2017年天津市滨海新区等单位公开招考公务员申论（12月23日专项）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/天津/2017/申论-统考.md",
+          "title": "2017 天津市公务员录用考试 申论（统考）（完整题本核对版）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "__t443为2017-12-23滨海新区等单位专项，六段材料6367规范字与当年真实试卷网页、PDF逐字相同；四道题干、要求、分值均对应。不是普通4月卷补充，不另造试卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2018/1220/24369.html",
+        "http://download.tjgwyw.org/20180411145819_14866.pdf",
+        "https://www.eol.cn/gongwuyuan/difang/skzx/201711/t20171127_1569596.shtml"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "identity_evidence_report": "reports/FULL-REPAIR-TIANJIN-2017-BINHAI-IDENTITY-20261015.json"
+    },
+    {
+      "area": "天津",
+      "year": 2018,
+      "expected_types": [
+        "常规单卷"
+      ],
+      "stock": [
+        {
+          "vol": "统考",
+          "path": "省考/天津/2018/申论-统考.md",
+          "title": "2018 天津市公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2025统考8题逐题映射至市区4题+街镇4题；2026统考4题逐题映射至执法4题（题序1→1、2→3、3→2、4→4），并非以共享材料推断整卷相同。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "天津",
+      "year": 2019,
+      "expected_types": [
+        "常规单卷"
+      ],
+      "stock": [
+        {
+          "vol": "统考",
+          "path": "省考/天津/2019/申论-统考.md",
+          "title": "2019 天津市公务员录用考试 申论（统考）（完整题本核对版）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2025统考8题逐题映射至市区4题+街镇4题；2026统考4题逐题映射至执法4题（题序1→1、2→3、3→2、4→4），并非以共享材料推断整卷相同。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "天津",
+      "year": 2020,
+      "expected_types": [
+        "A/市级",
+        "B/区县"
+      ],
+      "stock": [
+        {
+          "vol": "区县卷（历史文件名B类兼容）",
+          "path": "省考/天津/2020/申论-B类.md",
+          "title": "2020 天津市公务员录用考试 申论（B类）"
+        },
+        {
+          "vol": "市级卷（历史文件名A类兼容）",
+          "path": "省考/天津/2020/申论-A类.md",
+          "title": "2020 天津市公务员录用考试 申论（A类）（完整题本核对版）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2025统考8题逐题映射至市区4题+街镇4题；2026统考4题逐题映射至执法4题（题序1→1、2→3、3→2、4→4），并非以共享材料推断整卷相同。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "天津",
+      "year": 2021,
+      "expected_types": [
+        "市级",
+        "区县/区级",
+        "行政执法"
+      ],
+      "stock": [
+        {
+          "vol": "区县卷",
+          "path": "省考/天津/2021/申论-区县卷.md",
+          "title": "2021 天津市公务员录用考试 申论（区县卷）"
+        },
+        {
+          "vol": "市级卷",
+          "path": "省考/天津/2021/申论-市级卷.md",
+          "title": "2021 天津市公务员录用考试 申论（市级卷）"
+        },
+        {
+          "vol": "行政执法",
+          "path": "省考/天津/2021/申论-行政执法.md",
+          "title": "2021 天津市公务员录用考试 申论（行政执法）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2025统考8题逐题映射至市区4题+街镇4题；2026统考4题逐题映射至执法4题（题序1→1、2→3、3→2、4→4），并非以共享材料推断整卷相同。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "天津",
+      "year": 2022,
+      "expected_types": [
+        "综合管理市级",
+        "综合管理区级以下",
+        "行政执法"
+      ],
+      "stock": [
+        {
+          "vol": "综合管理类区级以下机关",
+          "path": "省考/天津/2022/申论-县级.md",
+          "title": "2022年天津市公务员考试申论（综合管理类区级以下机关）"
+        },
+        {
+          "vol": "综合管理类市级机关",
+          "path": "省考/天津/2022/申论-市级.md",
+          "title": "2022年天津市公务员考试申论（综合管理类市级机关）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "行政执法"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "据FULL-REPAIR-TIANJIN-2022-IDENTITY-20261015.json：原四文件为两完整三题卷+两个倒序两题片段；区级卷片段1→县级完整2、2→1，市级卷片段1→市级完整2、2→1；四题qkey均1.0，材料14gram覆盖99.4—99.5%。县级完整材料与用户区级以下题本规范化全文相同。两片段归档后不能计独立卷；第三类行政执法真实缺卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2022/0224/38404.html",
+        "https://www.eoffcn.com/kszx/detail/1275187.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。",
+      "identity_evidence_report": "reports/FULL-REPAIR-TIANJIN-2022-IDENTITY-20261015.json"
+    },
+    {
+      "area": "天津",
+      "year": 2023,
+      "expected_types": [
+        "综合市区",
+        "综合街镇",
+        "行政执法"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/天津/2023/申论-乡镇卷.md",
+          "title": "2023年天津公务员考试《申论》试题（天津乡镇卷）"
+        },
+        {
+          "vol": "市区卷",
+          "path": "省考/天津/2023/申论-市区卷.md",
+          "title": "2023年天津公务员考试《申论》试题（天津市区卷）"
+        },
+        {
+          "vol": "行政执法卷",
+          "path": "省考/天津/2023/申论-行政执法卷.md",
+          "title": "2023年天津公务员考试《申论》试题（天津行政执法卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2025统考8题逐题映射至市区4题+街镇4题；2026统考4题逐题映射至执法4题（题序1→1、2→3、3→2、4→4），并非以共享材料推断整卷相同。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "expected_types": [
+        "综合市区",
+        "综合街镇",
+        "行政执法"
+      ],
+      "stock": [
+        {
+          "vol": "市级",
+          "path": "省考/天津/2024/申论-市级.md",
+          "title": "2024年天津公务员考试《申论》试题（天津市区卷）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "综合街镇",
+        "行政执法"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2025统考8题逐题映射至市区4题+街镇4题；2026统考4题逐题映射至执法4题（题序1→1、2→3、3→2、4→4），并非以共享材料推断整卷相同。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2024/0122/46154.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "天津",
+      "year": 2025,
+      "expected_types": [
+        "综合市区",
+        "综合街镇",
+        "行政执法"
+      ],
+      "stock": [
+        {
+          "vol": "市区卷",
+          "path": "省考/天津/2025/申论-市区卷.md",
+          "title": "2025年天津公务员考试《申论》试题（市区卷）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/天津/2025/申论-统考.md",
+          "title": "2025 天津市公务员录用考试 申论（统考）"
+        },
+        {
+          "vol": "街镇卷",
+          "path": "省考/天津/2025/申论-街镇卷.md",
+          "title": "2025年天津公务员考试《申论》试题（街镇卷）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "行政执法"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2025统考8题逐题映射至市区4题+街镇4题；2026统考4题逐题映射至执法4题（题序1→1、2→3、3→2、4→4），并非以共享材料推断整卷相同。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://ah.huatu.com/2024/1107/2948494.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "expected_types": [
+        "综合市区",
+        "综合街镇",
+        "行政执法"
+      ],
+      "stock": [
+        {
+          "vol": "统考",
+          "path": "省考/天津/2026/申论-统考.md",
+          "title": "2026 天津市公务员录用考试 申论（统考）"
+        },
+        {
+          "vol": "行政执法",
+          "path": "省考/天津/2026/申论-行政执法.md",
+          "title": "2026年天津市公考《申论》试题（行政执法）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "综合市区",
+        "综合街镇"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2025统考8题逐题映射至市区4题+街镇4题；2026统考4题逐题映射至执法4题（题序1→1、2→3、3→2、4→4），并非以共享材料推断整卷相同。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202511/t20251105_7170794.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2016,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/广东/2016/申论-乡镇卷.md",
+          "title": "2016 广东省公务员录用考试 申论（乡镇卷）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/广东/2016/申论-县级卷.md",
+          "title": "2016 广东省公务员录用考试 申论（县级卷）（完整题本核对版）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2016/申论-统考.md",
+          "title": "2016 广东省公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2017,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/广东/2017/申论-乡镇卷.md",
+          "title": "2017 广东省公务员录用考试 申论（乡镇卷）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/广东/2017/申论-县级卷.md",
+          "title": "2017 广东省公务员录用考试 申论（县级卷）（完整题本核对版）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2017/申论-统考.md",
+          "title": "2017 广东省公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2018,
+      "expected_types": [
+        "县级与珠三角乡镇统一卷"
+      ],
+      "stock": [
+        {
+          "vol": "统考",
+          "path": "省考/广东/2018/申论-统考.md",
+          "title": "2018 广东省公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199",
+        "https://zhuanlan.zhihu.com/p/438641741",
+        "https://fenbi.com/page/fenxiaozixundetail/7/164/413686194537472"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2019,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/广东/2019/申论-乡镇卷.md",
+          "title": "2019 广东省公务员录用考试 申论（乡镇卷）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/广东/2019/申论-县级卷.md",
+          "title": "2019 广东省公务员录用考试 申论（县级卷）（完整题本核对版）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2019/申论-统考.md",
+          "title": "2019 广东省公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2020,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/广东/2020/申论-乡镇卷.md",
+          "title": "2020 广东省公务员录用考试 申论（乡镇卷）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/广东/2020/申论-县级卷.md",
+          "title": "2020 广东省公务员录用考试 申论（县级卷）（完整题本核对版）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2020/申论-统考.md",
+          "title": "2020 广东省公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2021,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/广东/2021/申论-乡镇卷.md",
+          "title": "2021 广东省公务员录用考试 申论（乡镇卷）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/广东/2021/申论-县级卷.md",
+          "title": "2021 广东省公务员录用考试 申论（县级卷）（完整题本核对版）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2021/申论-统考.md",
+          "title": "2021 广东省公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2022,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/广东/2022/申论-乡镇卷.md",
+          "title": "2022 广东省公务员录用考试 申论（乡镇卷）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/广东/2022/申论-县级卷.md",
+          "title": "2022 广东省公务员录用考试 申论（县级卷）（完整题本核对版）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2022/申论-统考.md",
+          "title": "2022 广东省公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2023,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/广东/2023/申论-乡镇卷.md",
+          "title": "2023年广东公务员考试《申论》试题（乡镇）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/广东/2023/申论-县级卷.md",
+          "title": "2023 广东省公务员录用考试 申论（县级卷）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2023/申论-统考.md",
+          "title": "2023 广东省公务员录用考试 申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2024,
+      "expected_types": [
+        "省市",
+        "县镇",
+        "行政执法",
+        "公安"
+      ],
+      "stock": [
+        {
+          "vol": "公安",
+          "path": "省考/广东/2024/申论-公安.md",
+          "title": "2024年广东公务员考试《申论》试题（公安）"
+        },
+        {
+          "vol": "县镇",
+          "path": "省考/广东/2024/申论-县镇.md",
+          "title": "2024年广东公务员考试《申论》试题（县镇）"
+        },
+        {
+          "vol": "省市",
+          "path": "省考/广东/2024/申论-省市.md",
+          "title": "2024年广东公务员考试《申论》试题（省市）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2024/申论-统考.md",
+          "title": "2024 广东省公务员录用考试 申论（统考）"
+        },
+        {
+          "vol": "行政执法",
+          "path": "省考/广东/2024/申论-行政执法.md",
+          "title": "2024年广东公务员考试《申论》试题（行政执法）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2025,
+      "expected_types": [
+        "省市",
+        "县镇",
+        "行政执法",
+        "公安"
+      ],
+      "stock": [
+        {
+          "vol": "公安",
+          "path": "省考/广东/2025/申论-公安.md",
+          "title": "2025年广东公务员考试《申论》试题（公安）"
+        },
+        {
+          "vol": "县镇",
+          "path": "省考/广东/2025/申论-县镇.md",
+          "title": "2025年广东公务员考试《申论》试题（县镇）"
+        },
+        {
+          "vol": "省市",
+          "path": "省考/广东/2025/申论-省市.md",
+          "title": "2025年广东公务员考试《申论》试题（省市）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2025/申论-统考.md",
+          "title": "2025 广东省公务员录用考试 申论（统考）"
+        },
+        {
+          "vol": "行政执法",
+          "path": "省考/广东/2025/申论-行政执法.md",
+          "title": "2025年广东公务员考试《申论》试题（行政执法）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广东",
+      "year": 2026,
+      "expected_types": [
+        "省市",
+        "县镇",
+        "行政执法",
+        "公安"
+      ],
+      "stock": [
+        {
+          "vol": "公安",
+          "path": "省考/广东/2026/申论-公安.md",
+          "title": "2026年广东公务员考试《申论》试题（公安）"
+        },
+        {
+          "vol": "县镇",
+          "path": "省考/广东/2026/申论-县镇.md",
+          "title": "2026年广东公务员考试《申论》试题（县镇）"
+        },
+        {
+          "vol": "省市",
+          "path": "省考/广东/2026/申论-省市.md",
+          "title": "2026年广东公务员考试《申论》试题（省市）"
+        },
+        {
+          "vol": "统考",
+          "path": "省考/广东/2026/申论-统考.md",
+          "title": "2026 广东省公务员录用考试 申论（统考）"
+        },
+        {
+          "vol": "行政执法",
+          "path": "省考/广东/2026/申论-行政执法.md",
+          "title": "2026年广东省公考《申论》试题（行政执法）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018未组织独立粤东西北乡镇卷，不能沿用相邻年两卷推算漏卷；2024起四类均有明确分卷文件。统考桶为混合/未分类来源，不额外计一套真实卷。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2016,
+      "expected_types": [
+        "统一卷"
+      ],
+      "stock": [
+        {
+          "vol": "统考",
+          "path": "省考/福建/2016/申论-统考.md",
+          "title": "2016年福建省公务员考试申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2017,
+      "expected_types": [
+        "统一卷"
+      ],
+      "stock": [
+        {
+          "vol": "统考",
+          "path": "省考/福建/2017/申论-统考.md",
+          "title": "2017年福建省公务员考试申论（统考）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2018,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/福建/2018/申论-乡镇卷.md",
+          "title": "2018年福建省公务员考试申论（乡镇卷）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/福建/2018/申论-县级卷.md",
+          "title": "2018年福建公务员考试《申论》试题（联考卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2019,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/福建/2019/申论-乡镇卷.md",
+          "title": "2019年福建省公务员考试申论（乡镇卷）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/福建/2019/申论-县级卷.md",
+          "title": "2019年福建省公务员考试申论（县级卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2020,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇卷",
+          "path": "省考/福建/2020/申论-乡镇卷.md",
+          "title": "2020年福建省公务员考试申论（乡镇卷）"
+        },
+        {
+          "vol": "县级卷",
+          "path": "省考/福建/2020/申论-县级卷.md",
+          "title": "2020年福建省公务员考试申论（县级卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2021,
+      "expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "stock": [
+        {
+          "vol": "乡镇",
+          "path": "省考/福建/2021/申论-乡镇.md",
+          "title": "2021年福建公务员考试《申论》试题 （乡镇卷）"
+        },
+        {
+          "vol": "县级",
+          "path": "省考/福建/2021/申论-县级.md",
+          "title": "2021年福建公务员考试《申论》试题 （县级卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2022,
+      "expected_types": [
+        "省市",
+        "县乡",
+        "行政执法"
+      ],
+      "stock": [
+        {
+          "vol": "县乡",
+          "path": "省考/福建/2022/申论-县乡.md",
+          "title": "2022年福建公务员考试《申论》试题 （县乡卷）"
+        },
+        {
+          "vol": "省市卷",
+          "path": "省考/福建/2022/申论-省市卷.md",
+          "title": "2022年福建省公务员考试申论（省市卷）"
+        },
+        {
+          "vol": "行政执法",
+          "path": "省考/福建/2022/申论-行政执法.md",
+          "title": "2022年福建省公务员考试申论（行政执法）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2023,
+      "expected_types": [
+        "省市",
+        "县乡",
+        "行政执法"
+      ],
+      "stock": [
+        {
+          "vol": "县乡",
+          "path": "省考/福建/2023/申论-县乡.md",
+          "title": "2023年福建公务员考试《申论》试题 （县乡卷）"
+        },
+        {
+          "vol": "省市",
+          "path": "省考/福建/2023/申论-省市.md",
+          "title": "2023年福建公务员考试《申论》试题 （省市卷）"
+        },
+        {
+          "vol": "行政执法",
+          "path": "省考/福建/2023/申论-行政执法.md",
+          "title": "2023年福建公务员考试《申论》试题 （执法卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2024,
+      "expected_types": [
+        "省市",
+        "县乡",
+        "行政执法"
+      ],
+      "stock": [
+        {
+          "vol": "县乡卷",
+          "path": "省考/福建/2024/申论-县乡卷.md",
+          "title": "2024年福建公务员考试《申论》试题（福建县乡卷）"
+        },
+        {
+          "vol": "省市卷",
+          "path": "省考/福建/2024/申论-省市卷.md",
+          "title": "2024年福建公务员考试《申论》试题（福建省市卷）"
+        },
+        {
+          "vol": "行政执法",
+          "path": "省考/福建/2024/申论-行政执法.md",
+          "title": "2024年福建公务员考试《申论》试题（福建行政执法卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2025,
+      "expected_types": [
+        "省市综合管理",
+        "通用"
+      ],
+      "stock": [
+        {
+          "vol": "省市卷",
+          "path": "省考/福建/2025/申论-省市卷.md",
+          "title": "2025年福建公务员考试《申论》试题（福建省市卷）"
+        },
+        {
+          "vol": "通用卷",
+          "path": "省考/福建/2025/申论-通用卷.md",
+          "title": "2025年福建公务员考试《申论》试题（福建通用卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "福建",
+      "year": 2026,
+      "expected_types": [
+        "省市综合管理",
+        "通用"
+      ],
+      "stock": [
+        {
+          "vol": "通用卷",
+          "path": "省考/福建/2026/申论-通用卷.md",
+          "title": "2026年福建公务员考试《申论》试题（福建通用卷）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "省市综合管理"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2018增设乡镇，2022为省市/县乡/执法，2025合并县乡与执法为通用。2026华图当年职位分析证实A类省市综合管理与A类通用并存；网页大纲仍称三类者与改革表冲突，不采用。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/",
+        "http://fj.huatu.com/2026/0116/2509896.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2016,
+      "expected_types": [
+        "单卷"
+      ],
+      "stock": [
+        {
+          "vol": "单卷",
+          "path": "省考/广东/2016/申论-广州市考.md",
+          "title": "2016年广州公务员考试《申论》试题（单卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2017单/双考区与2018两天两套原卷独立核对，不能统按每年一卷。",
+      "source_urls": [
+        "https://www.xinhuanet.com/politics/2018-03/25/c_1122586574.htm"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2017,
+      "expected_types": [
+        "单考区",
+        "双考区"
+      ],
+      "stock": [
+        {
+          "vol": "单考区",
+          "path": "省考/广东/2017/申论-广州市考-单考区.md",
+          "title": "2017年广州公务员考试《申论》试题（单考区）"
+        },
+        {
+          "vol": "双考区",
+          "path": "省考/广东/2017/申论-广州市考-双考区.md",
+          "title": "2017年广州公务员考试《申论》试题（双考区）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2017单/双考区与2018两天两套原卷独立核对，不能统按每年一卷。",
+      "source_urls": [
+        "https://www.xinhuanet.com/politics/2018-03/25/c_1122586574.htm"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2018,
+      "expected_types": [
+        "3月24日",
+        "3月25日"
+      ],
+      "stock": [
+        {
+          "vol": "3月24日",
+          "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+          "title": "2018年广州公务员考试《申论》试题（一）"
+        },
+        {
+          "vol": "3月25日",
+          "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+          "title": "2018年广州市公务员考试《申论》试题（25日）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2017单/双考区与2018两天两套原卷独立核对，不能统按每年一卷。",
+      "source_urls": [
+        "https://www.xinhuanet.com/politics/2018-03/25/c_1122586574.htm"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2019,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得本年度独立市考重启及独立试卷证据，不能计作已确认缺卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "2019起停考有二手回顾报道；2020同期报道明确很多广州岗位并入广东省考。此证据不等于逐年官方永久停考证明，保留未证实状态。",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2020,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得本年度独立市考重启及独立试卷证据，不能计作已确认缺卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "2019起停考有二手回顾报道；2020同期报道明确很多广州岗位并入广东省考。此证据不等于逐年官方永久停考证明，保留未证实状态。",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2021,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得本年度独立市考重启及独立试卷证据，不能计作已确认缺卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "2019起停考有二手回顾报道；2020同期报道明确很多广州岗位并入广东省考。此证据不等于逐年官方永久停考证明，保留未证实状态。",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2022,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得本年度独立市考重启及独立试卷证据，不能计作已确认缺卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "2019起停考有二手回顾报道；2020同期报道明确很多广州岗位并入广东省考。此证据不等于逐年官方永久停考证明，保留未证实状态。",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2023,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得本年度独立市考重启及独立试卷证据，不能计作已确认缺卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "2019起停考有二手回顾报道；2020同期报道明确很多广州岗位并入广东省考。此证据不等于逐年官方永久停考证明，保留未证实状态。",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2024,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得本年度独立市考重启及独立试卷证据，不能计作已确认缺卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "2019起停考有二手回顾报道；2020同期报道明确很多广州岗位并入广东省考。此证据不等于逐年官方永久停考证明，保留未证实状态。",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2025,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得本年度独立市考重启及独立试卷证据，不能计作已确认缺卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "2019起停考有二手回顾报道；2020同期报道明确很多广州岗位并入广东省考。此证据不等于逐年官方永久停考证明，保留未证实状态。",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "广州",
+      "year": 2026,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得本年度独立市考重启及独立试卷证据，不能计作已确认缺卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "2019起停考有二手回顾报道；2020同期报道明确很多广州岗位并入广东省考。此证据不等于逐年官方永久停考证明，保留未证实状态。",
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2016,
+      "expected_types": [
+        "A",
+        "B"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/深圳/2016/申论-A类.md",
+          "title": "2016年深圳市公务员考试《申论》试题（A卷）"
+        },
+        {
+          "vol": "B类",
+          "path": "省考/深圳/2016/申论-B类.md",
+          "title": "2016年深圳市公务员考试《申论》试题（B卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2024官方招录公告明确市直/定向港澳考Ⅰ，市直驻区/区街/执法/警察考Ⅱ；现有库存仅Ⅱ。原材料即使共用也不能复制Ⅱ题目冒充Ⅰ。已查用户私有历年目录与公开机构目录，均仅取得2024Ⅱ，未取得Ⅰ完整题面。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2017,
+      "expected_types": [
+        "A",
+        "B"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/深圳/2017/申论-A类.md",
+          "title": "2017年深圳公务员考试《申论》试题（A卷）"
+        },
+        {
+          "vol": "B类",
+          "path": "省考/深圳/2017/申论-B类.md",
+          "title": "2017年深圳公务员考试《申论》试题（B卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2024官方招录公告明确市直/定向港澳考Ⅰ，市直驻区/区街/执法/警察考Ⅱ；现有库存仅Ⅱ。原材料即使共用也不能复制Ⅱ题目冒充Ⅰ。已查用户私有历年目录与公开机构目录，均仅取得2024Ⅱ，未取得Ⅰ完整题面。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2018,
+      "expected_types": [
+        "A",
+        "B"
+      ],
+      "stock": [
+        {
+          "vol": "A类",
+          "path": "省考/深圳/2018/申论-A类.md",
+          "title": "2018年深圳市公务员考试《申论》试题（A卷）"
+        },
+        {
+          "vol": "B类",
+          "path": "省考/深圳/2018/申论-B类.md",
+          "title": "2018年深圳公务员考试《申论》试题（B卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2024官方招录公告明确市直/定向港澳考Ⅰ，市直驻区/区街/执法/警察考Ⅱ；现有库存仅Ⅱ。原材料即使共用也不能复制Ⅱ题目冒充Ⅰ。已查用户私有历年目录与公开机构目录，均仅取得2024Ⅱ，未取得Ⅰ完整题面。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2019,
+      "expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "stock": [
+        {
+          "vol": "一卷",
+          "path": "省考/深圳/2019/申论-一卷.md",
+          "title": "2019年深圳市公务员考试《申论》试题（一卷）"
+        },
+        {
+          "vol": "二卷",
+          "path": "省考/深圳/2019/申论-二卷.md",
+          "title": "2019年深圳公务员考试《申论》试题（二卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2024官方招录公告明确市直/定向港澳考Ⅰ，市直驻区/区街/执法/警察考Ⅱ；现有库存仅Ⅱ。原材料即使共用也不能复制Ⅱ题目冒充Ⅰ。已查用户私有历年目录与公开机构目录，均仅取得2024Ⅱ，未取得Ⅰ完整题面。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2020,
+      "expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "stock": [
+        {
+          "vol": "一卷",
+          "path": "省考/深圳/2020/申论-一卷.md",
+          "title": "2020年深圳公务员考试《申论》试题（一卷）"
+        },
+        {
+          "vol": "二卷",
+          "path": "省考/深圳/2020/申论-二卷.md",
+          "title": "2020年深圳公务员考试《申论》试题（二卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2024官方招录公告明确市直/定向港澳考Ⅰ，市直驻区/区街/执法/警察考Ⅱ；现有库存仅Ⅱ。原材料即使共用也不能复制Ⅱ题目冒充Ⅰ。已查用户私有历年目录与公开机构目录，均仅取得2024Ⅱ，未取得Ⅰ完整题面。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2021,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得以本年度为招录年度的独立公告/试卷；2022公告于2021年不能再造2021卷，广东2026公告不能冒深圳独立2026卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "",
+      "source_urls": [
+        "https://www.eoffcn.com/kszx/detail/1208330.html",
+        "https://hrss.sz.gov.cn/szksy/ztzl/gwyks/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2022,
+      "expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "stock": [
+        {
+          "vol": "一卷",
+          "path": "省考/深圳/2022/申论-一卷.md",
+          "title": "2022年深圳市公务员考试《申论》试题（一卷）"
+        },
+        {
+          "vol": "二卷",
+          "path": "省考/深圳/2022/申论-二卷.md",
+          "title": "2022年深圳公务员考试《申论》试题（二卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2024官方招录公告明确市直/定向港澳考Ⅰ，市直驻区/区街/执法/警察考Ⅱ；现有库存仅Ⅱ。原材料即使共用也不能复制Ⅱ题目冒充Ⅰ。已查用户私有历年目录与公开机构目录，均仅取得2024Ⅱ，未取得Ⅰ完整题面。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2023,
+      "expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "stock": [
+        {
+          "vol": "一卷",
+          "path": "省考/深圳/2023/申论-一卷.md",
+          "title": "2023年深圳市公务员考试《申论》试题（一卷）"
+        },
+        {
+          "vol": "二卷",
+          "path": "省考/深圳/2023/申论-二卷.md",
+          "title": "2023年深圳公务员考试《申论》试题（二卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2024官方招录公告明确市直/定向港澳考Ⅰ，市直驻区/区街/执法/警察考Ⅱ；现有库存仅Ⅱ。原材料即使共用也不能复制Ⅱ题目冒充Ⅰ。已查用户私有历年目录与公开机构目录，均仅取得2024Ⅱ，未取得Ⅰ完整题面。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2024,
+      "expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "stock": [
+        {
+          "vol": "二卷",
+          "path": "省考/深圳/2024/申论-二卷.md",
+          "title": "2024年深圳公务员考试《申论》试题（二卷）"
+        }
+      ],
+      "confirmed_missing_types": [
+        "Ⅰ"
+      ],
+      "identity_pending": [],
+      "status": "confirmed_missing",
+      "notes": "2024官方招录公告明确市直/定向港澳考Ⅰ，市直驻区/区街/执法/警察考Ⅱ；现有库存仅Ⅱ。原材料即使共用也不能复制Ⅱ题目冒充Ⅰ。已查用户私有历年目录与公开机构目录，均仅取得2024Ⅱ，未取得Ⅰ完整题面。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226",
+        "https://www.szgm.gov.cn/xxgk/xqgwhxxgkml/rsxx/gwyzk/content/post_11029041.html"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2025,
+      "expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "stock": [
+        {
+          "vol": "一卷",
+          "path": "省考/深圳/2025/申论-一卷.md",
+          "title": "2025年深圳公务员考试《申论》试题（一卷）"
+        },
+        {
+          "vol": "二卷",
+          "path": "省考/深圳/2025/申论-二卷.md",
+          "title": "2025年深圳公务员考试《申论》试题（二卷）"
+        }
+      ],
+      "confirmed_missing_types": [],
+      "identity_pending": [],
+      "status": "catalog_types_present",
+      "notes": "2024官方招录公告明确市直/定向港澳考Ⅰ，市直驻区/区街/执法/警察考Ⅱ；现有库存仅Ⅱ。原材料即使共用也不能复制Ⅱ题目冒充Ⅰ。已查用户私有历年目录与公开机构目录，均仅取得2024Ⅱ，未取得Ⅰ完整题面。",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    },
+    {
+      "area": "深圳",
+      "year": 2026,
+      "expected_types": [],
+      "stock": [],
+      "confirmed_missing_types": [],
+      "identity_pending": [
+        "未取得以本年度为招录年度的独立公告/试卷；2022公告于2021年不能再造2021卷，广东2026公告不能冒深圳独立2026卷"
+      ],
+      "status": "separate_exam_unconfirmed",
+      "notes": "",
+      "source_urls": [
+        "https://www.eoffcn.com/kszx/detail/1208330.html",
+        "https://hrss.sz.gov.cn/szksy/ztzl/gwyks/"
+      ],
+      "scope_boundary": "卷型库存审计；不以文件数、首材料相同或答案覆盖率作为原卷完整认证。"
+    }
+  ],
+  "source_evidence": "tools/data/priority-six-regions-source-evidence-20261015.json",
+  "question_level_mapping": "reports/PRIORITY-ESSAY-SIX-REGIONS-QUESTION-MAPS-20261015.json",
+  "limits": [
+    "这不是原卷全文逐字验真结果；目录存在不保证文件内所有原题都齐全。",
+    "未证实独立开考年份不计作已确认缺卷，也不伪称确定停考。",
+    "上海专项额外频次只有确证的一次年度考试，未以短视频标题推造上半年第二套。"
+  ]
+}

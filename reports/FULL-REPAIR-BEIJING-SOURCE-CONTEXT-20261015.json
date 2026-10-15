@@ -1,0 +1,58 @@
+{
+  "raw_files": [
+    {
+      "path": "D:\\projects\\gwy-zhenti\\work\\dtiku-raw\\paper_51836_ans.html",
+      "bytes": 262015,
+      "sha256": "c472509c081abb1c7d459c5a6425df07db394af48252270dc4244d79d5834502",
+      "image_elements": 34,
+      "images_outside_question_or_options": 0,
+      "shared_context_found": false
+    },
+    {
+      "path": "D:\\projects\\gwy-zhenti\\work\\agent2-cand\\raw\\dtiku\\v_51836.html",
+      "bytes": 213042,
+      "sha256": "902bedd0b6d0c90e823f0275a5bb309fea869558e567370ed48335e435b1bc2b",
+      "image_elements": 34,
+      "images_outside_question_or_options": 0,
+      "shared_context_found": false
+    },
+    {
+      "path": "D:\\projects\\gwy-zhenti\\work\\agent2-cand\\raw\\dtiku\\paper_51836.html",
+      "bytes": 213042,
+      "sha256": "902bedd0b6d0c90e823f0275a5bb309fea869558e567370ed48335e435b1bc2b",
+      "image_elements": 34,
+      "images_outside_question_or_options": 0,
+      "shared_context_found": false
+    }
+  ],
+  "live_detail_checks": [
+    {
+      "url": "https://gwy.dtiku.cn/question/detail/1072289",
+      "provider": "TinyFish",
+      "result": "fetched successfully; no shared itinerary rules or images; only original question/options and other related questions"
+    },
+    {
+      "url": "https://gwy.dtiku.cn/question/detail/1072266",
+      "provider": "TinyFish",
+      "result": "fetched successfully; target image 2827901 plus related-question images, no operation-symbol legend"
+    }
+  ],
+  "missing_context": [
+    {
+      "numbers": [
+        56,
+        57,
+        58
+      ],
+      "required": "Mapping from each operation icon to its specified geometric transformation."
+    },
+    {
+      "numbers": [
+        79,
+        80
+      ],
+      "required": "Professor Wang itinerary constraints including permitted days, periods, venue and friend-meeting rules."
+    }
+  ],
+  "policy": "Do not reconstruct true exam conditions from suspected shifted answer letters; the five answers remain unset."
+}

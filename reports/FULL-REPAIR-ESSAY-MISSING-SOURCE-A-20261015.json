@@ -1,0 +1,546 @@
+{
+  "date": "2026-10-15",
+  "scope": "原57格中35个申论省年格",
+  "cells_checked": 35,
+  "complete_new_papers_admitted": 0,
+  "method": "TinyFish search/fetch_content, two bounded read-only browser runs on 132, existing GitHub source snapshots and owned materials filenames",
+  "browser_runs": [
+    {
+      "run_id": "7f999c86-6485-4706-9a81-045cf50bf623",
+      "target": "2026云南申论",
+      "result": "当前132可见库中无此卷；不推导考试未举行"
+    },
+    {
+      "run_id": "12d5593a-ec65-4fa3-8b19-9000173117fe",
+      "target": "2022浙江各类申论",
+      "result": "按年份与地区筛选无可提取原卷"
+    }
+  ],
+  "owned_files_check": "用户省考PDF资料包中浙江2022、吉林2024/2025、内蒙2025只见行测文件，无对应申论；教师source-index未找到这些年省完整专卷。",
+  "records": [
+    {
+      "area": "云南",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/云南/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.huatu.com/yngwy/shiti/xl/",
+        "http://www.yngwy.org/category/67.html",
+        "https://www.132gk.com/web/exercise/shenlun/exam"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "华图标题为2026，但正文是旧栏目/推广入口，没有可提取当年完整题面。"
+    },
+    {
+      "area": "内蒙古",
+      "year": "2025",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/内蒙古/2025/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.huatu.com/nmgwy/shiti/xl/",
+        "https://www.aipta.com/zt/sk/nm/sl/",
+        "https://www.eoffcn.com/kszx/detail/1619190.html"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "内蒙古",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/内蒙古/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.huatu.com/nmgwy/shiti/xl/",
+        "https://www.aipta.com/zt/sk/nm/sl/",
+        "https://www.eoffcn.com/kszx/detail/1619190.html"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "华图标题为2026，但正文是旧栏目/推广入口，没有可提取当年完整题面。"
+    },
+    {
+      "area": "北京",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.huatu.com/bjgwy/shiti/xl/",
+        "https://www.aipta.com/zt/sk/bj/sl/",
+        "https://rsj.beijing.gov.cn/bm/ztzl/gwy/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "华图标题为2026，但正文是旧栏目/推广入口，没有可提取当年完整题面。"
+    },
+    {
+      "area": "吉林",
+      "year": "2024",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/吉林/2024/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/jl/sl/",
+        "https://jl.huatu.com/gwy/shiti/slzt/",
+        "http://www.jlgwyks.cn/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "吉林",
+      "year": "2025",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/吉林/2025/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/jl/sl/",
+        "https://jl.huatu.com/gwy/shiti/slzt/",
+        "http://www.jlgwyks.cn/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "吉林",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/吉林/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/jl/sl/",
+        "https://jl.huatu.com/gwy/shiti/slzt/",
+        "http://www.jlgwyks.cn/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "宁夏",
+      "year": "2025",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/宁夏/2025/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/nx/sl/",
+        "https://www.huatu.com/nxgwy/shiti/xl/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "宁夏",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/宁夏/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/nx/sl/",
+        "https://www.huatu.com/nxgwy/shiti/xl/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "山东",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/山东/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/article/1444.html",
+        "https://www.163.com/dy/article/KG9R4DQG05459BTA.html"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "广西",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/广西/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://gx.huatu.com/guojia/ziliao/sl/",
+        "https://www.bohuigk.com/news/19/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "新疆",
+      "year": "2023",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/新疆/2023/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "http://www.xjgwyw.org/category/67.html",
+        "https://www.aipta.com/zt/sk/xj/",
+        "https://rst.xinjiang.gov.cn/xjrst/c112678/zfxxgk_gknrz.shtml"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "新疆",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/新疆/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "http://www.xjgwyw.org/category/67.html",
+        "https://www.aipta.com/zt/sk/xj/",
+        "https://rst.xinjiang.gov.cn/xjrst/c112678/zfxxgk_gknrz.shtml"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "河北",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/河北/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/hb/sl/",
+        "https://www.huatu.com/hegwy/shiti/xl/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "浙江",
+      "year": "2022",
+      "subject": "申论",
+      "registered_path": "",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.eoffcn.com/kszx/detail/1029502.html",
+        "https://www.132gk.com/web/exercise/shenlun/exam"
+      ],
+      "existing_exam_evidence": "https://static.32xueyuan.com/zq/u/cms/zj/202212/07183022bn59.pdf",
+      "existing_evidence_note": "标题虽称2022，正文却把2020年科学家座谈会日期改为2022，且内容对应既有2021A。作为年份污染候选排除，不可复制成新真题卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "中公同年解读证实综合类主题及三题类型，但缺全部材料、精确题干与字数；132动态按年/地区均无该卷可见。排除把2021科技创新改年的展鸿PDF。"
+    },
+    {
+      "area": "海南",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/海南/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://hi.huatu.com/gwy/",
+        "https://www.rsks.cn/ziliao/shenlun/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "深圳",
+      "year": "2021",
+      "subject": "申论",
+      "registered_path": "",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.eoffcn.com/kszx/detail/1208330.html",
+        "https://hrss.sz.gov.cn/szksy/ztzl/gwyks/"
+      ],
+      "existing_exam_evidence": "https://www.eoffcn.com/kszx/detail/1208330.html ; https://hrss.sz.gov.cn/szksy/ztzl/gwyks/",
+      "existing_evidence_note": "中公历年表列2020/2022/2023；2022招录公告于2021-11-05发布，日历年不等于招录年度。官方当前列表尚未发现独立深圳2026招录，不从邻年或广东统考推造市考卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "招录年度口径需复核：中公历史表2020后为2022（公告发布于2021）；2026搜索命中广东省考及2025深圳专项，未取得独立深圳该年原卷。未据此断言未开考。"
+    },
+    {
+      "area": "深圳",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.eoffcn.com/kszx/detail/1208330.html",
+        "https://hrss.sz.gov.cn/szksy/ztzl/gwyks/"
+      ],
+      "existing_exam_evidence": "https://www.eoffcn.com/kszx/detail/1208330.html ; https://hrss.sz.gov.cn/szksy/ztzl/gwyks/",
+      "existing_evidence_note": "中公历年表列2020/2022/2023；2022招录公告于2021-11-05发布，日历年不等于招录年度。官方当前列表尚未发现独立深圳2026招录，不从邻年或广东统考推造市考卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "招录年度口径需复核：中公历史表2020后为2022（公告发布于2021）；2026搜索命中广东省考及2025深圳专项，未取得独立深圳该年原卷。未据此断言未开考。"
+    },
+    {
+      "area": "湖北",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/湖北/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.gemu.cn/hbgwy/skkm/",
+        "https://ah.huatu.com/zt/hbgwy/ksgg/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "甘肃",
+      "year": "2025",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/甘肃/2025/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/gs/sl/",
+        "http://www.gsgwy.org/category/67.html",
+        "http://gs.huatu.com/gwy/shiti/slzt/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "甘肃",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/甘肃/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/gs/sl/",
+        "http://www.gsgwy.org/category/67.html",
+        "http://gs.huatu.com/gwy/shiti/slzt/"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "西藏",
+      "year": "2016",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2016/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "https://www.kkgwy.com/sl/zt/2016/04/25/142206.html",
+      "existing_evidence_note": "检索题为2016西藏申论的页面仅为考后更新预告，未给材料和题面；不能以导航页面计补卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "西藏",
+      "year": "2017",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2017/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "西藏",
+      "year": "2018",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2018/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "西藏",
+      "year": "2020",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2020/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "https://hrss.xizang.gov.cn/xwzx/tzgg/202006/t20200610_244822.html",
+      "existing_evidence_note": "官方公告列行政职业能力测验和申论；不能把公开卷缺失改为未开考。2025定向公告明确使用同年公开考录A卷；2026常规申论有A/B/C分卷，不能只以一个覆盖格代替全卷型目录。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "西藏",
+      "year": "2021",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2021/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "西藏",
+      "year": "2022",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2022/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "https://hrss.xizang.gov.cn/xwzx/tzgg/202206/t20220607_301794.html",
+      "existing_evidence_note": "官方公告列行政职业能力测验和申论；不能把公开卷缺失改为未开考。2025定向公告明确使用同年公开考录A卷；2026常规申论有A/B/C分卷，不能只以一个覆盖格代替全卷型目录。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "西藏",
+      "year": "2023",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2023/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "https://hrss.xizang.gov.cn/xwzx/tzgg/202302/t20230208_340777.html",
+      "existing_evidence_note": "官方公告列行政职业能力测验和申论；不能把公开卷缺失改为未开考。2025定向公告明确使用同年公开考录A卷；2026常规申论有A/B/C分卷，不能只以一个覆盖格代替全卷型目录。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "西藏",
+      "year": "2024",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2024/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "https://hrss.xizang.gov.cn/xwzx/tzgg/202403/t20240329_409829.html",
+      "existing_evidence_note": "官方公告列行政职业能力测验和申论；不能把公开卷缺失改为未开考。2025定向公告明确使用同年公开考录A卷；2026常规申论有A/B/C分卷，不能只以一个覆盖格代替全卷型目录。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "西藏",
+      "year": "2025",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2025/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "https://hrss.xizang.gov.cn/xwzx/tzgg/202501/t20250124_459355.html",
+      "existing_evidence_note": "官方公告列行政职业能力测验和申论；不能把公开卷缺失改为未开考。2025定向公告明确使用同年公开考录A卷；2026常规申论有A/B/C分卷，不能只以一个覆盖格代替全卷型目录。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "西藏",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/西藏/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [],
+      "existing_exam_evidence": "https://hrss.xizang.gov.cn/xwzx/tzgg/202512/t20251202_512168.html",
+      "existing_evidence_note": "官方公告列行政职业能力测验和申论；不能把公开卷缺失改为未开考。2025定向公告明确使用同年公开考录A卷；2026常规申论有A/B/C分卷，不能只以一个覆盖格代替全卷型目录。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。",
+      "finding": "沿用C代理核验的开考证据，开考不等于取得原卷；无完整题面不能构造试卷。"
+    },
+    {
+      "area": "陕西",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/陕西/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/sa/sl/",
+        "http://www.shanxigwy.org/category/67.html"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "青海",
+      "year": "2024",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/青海/2024/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/qh/sl/",
+        "https://m.kaosheng.com/down/show.php?itemid=4411",
+        "http://qhpta.org.cn/ncms/gwyks.shtml"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "青海",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/青海/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.aipta.com/zt/sk/qh/sl/",
+        "https://m.kaosheng.com/down/show.php?itemid=4411",
+        "http://qhpta.org.cn/ncms/gwyks.shtml"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    },
+    {
+      "area": "黑龙江",
+      "year": "2026",
+      "subject": "申论",
+      "registered_path": "资料缺失/省考/黑龙江/2026/申论.md",
+      "state": "未取得可核验的完整原卷，未生成真题",
+      "source_leads": [
+        "https://www.huatu.com/hljgwy/shiti/xl/",
+        "http://www.hljgwy.org/category/67.html"
+      ],
+      "existing_exam_evidence": "",
+      "existing_evidence_note": "已查现有GitHub上游目录与用户真题素材；不能据邻年或另一科目推定具体分卷。",
+      "new_paper_added": false,
+      "source_boundary": "搜索命中不等于题面；营销目录、教材、模拟卷、国考卷、节选与题型解读均不冒充该省年完整真题。"
+    }
+  ]
+}

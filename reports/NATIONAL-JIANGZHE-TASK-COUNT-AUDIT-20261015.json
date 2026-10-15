@@ -1,0 +1,3015 @@
+{
+  "date": "2026-10-15",
+  "read_only": true,
+  "files_scanned": 83,
+  "named_papers": 83,
+  "national_files": 27,
+  "confirmed_current_task_count_gaps": 0,
+  "unresolved_count_discrepancies": [],
+  "same_year_catalog_unavailable": [
+    {
+      "path": "省考/江苏/2026/申论-B类.md",
+      "area": "江苏",
+      "year": 2026,
+      "variant": "B类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [],
+      "catalog_evidence": [],
+      "owned_source_candidates": [],
+      "status": "no_same_year_variant_catalog",
+      "sha256": "7ca71588a6c5d3a517850efb5594556e4d42301de9fa7edacac750d1ad0ab4e3",
+      "task_key_hashes": {
+        "1": "e4cd4cda877188b6a999560869dd807404188f78803c168dc224f6f52d97e713",
+        "2": "6067e3baf4c5f2700eef0bfaaf20d6c54980fcaaca1e3a694cf832855f0e4ed1",
+        "3": "969fc2ea20dcc45be32c2d9ced12dc5dcaf9277f1834dba0e41e4a4ff7939c71",
+        "4": "9bf3dac41651a2ca54465a7ce5aa535207a56ac43b47e9e6e0659880f4d00ce3"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "path": "国考/2016/申论-副省级.md",
+      "area": "国考",
+      "year": 2016,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2016年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2016,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2016年国家录用公务员考试《申论》真题卷及答案（副省级）.pdf.md",
+          "sha256": "002bf9dfbaf520a6fb50b0a1da84e78b21ebb5e156b7d17b2f9019b9831db622",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "2745e9fb3b2bfa50dd2a8531271b3d024796ab66d1a044b6a6c279a6e6463314",
+      "task_key_hashes": {
+        "1": "a52e87ca30cf4575a0a8a87a75cc89df9842167e1b9c86a089c2c7cf832cc650",
+        "2": "eebb984f73301b7f8f40f7008b9ef15f1890c034aa1bce48076a4d08ab694a78",
+        "3": "5500c12bda489ea33c781ac78cd06d55c4ba594c201357e7cb8976ed9c5037cb",
+        "4": "7d9770637de00204283cae908c0ccf7479d26cc18f5e1f74d6cfb8643a4770a0",
+        "5": "6b95084b6f1e489b7f63e1afe4168fa08122da02159db61cc6e537682be04d5a"
+      }
+    },
+    {
+      "path": "国考/2016/申论-地市级.md",
+      "area": "国考",
+      "year": 2016,
+      "variant": "地市级",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2016年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2016,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2016年国家录用公务员考试《申论》真题卷及答案（地市级）.pdf.md",
+          "sha256": "6f53387c663049f7d2e5d988e1ed8a927507aa6f1b4f5e225d0fea63929b1038",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_actual_source_structure_different_counting_unit",
+      "sha256": "0309e23fc433412024c7bfb6084b5b0cc7690df9abe51d9ba3f6e0dec1fc2b4d",
+      "task_key_hashes": {
+        "1": "b1df693e963321f46c9c99e90992d4afbf06e4e0459515a7ab735abf0074bd82",
+        "2": "9dcbf794b90e77e39b03b006b2a0011b7c469b0675899f9fade8c4925a457f53",
+        "3": "5f8513e540d56e3a11a03efa62e202fca0f261a274a4599902e8fe06d736037d",
+        "4": "f6f7e99361d086fd17fb4890c0b285c4a7f41f94ded73da60ea938ae7555d9be"
+      },
+      "actual_main_questions": 4,
+      "actual_independent_subtasks": 5,
+      "source_points_by_main_task": [
+        20,
+        20,
+        [
+          10,
+          10
+        ],
+        40
+      ],
+      "source_standard_total": 100,
+      "structure_note": "第三大题包含（1）（2）两个10分小问，两问在库内均完整。目录按5个独立作答项计，当前按4个大题容器计，不能报缺第5题。",
+      "owned_structure_source": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2016年国家录用公务员考试《申论》真题卷及答案（地市级）.pdf.md",
+      "owned_structure_source_sha256": "6f53387c663049f7d2e5d988e1ed8a927507aa6f1b4f5e225d0fea63929b1038"
+    },
+    {
+      "path": "国考/2017/申论-副省级.md",
+      "area": "国考",
+      "year": 2017,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2017年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2017,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "89fe7f0fe1b108b9c8260890900c694435a5d58c578481ea321107dbc33c6f57",
+      "task_key_hashes": {
+        "1": "73624262380f8885b0be89be921cc2255a530a2f32a305e1dc7265059c065a93",
+        "2": "87c70e93d9a375b9d5989d038f1285c1a61816c8b2dfb9368ec07511c69b46b0",
+        "3": "cbaa0b5653e0315ee2dca95a47c389b23b4e973fc03f63cd0ac4f0d4b8e4f7da",
+        "4": "93519741b72252ab728413952bcceec429e825912c0f6a93afac221ecfeca47d",
+        "5": "5ac43a5f2a9ab2bb2f844b0cb21a4fc6142d6c7e65e4bc7bf973a556907a7614"
+      }
+    },
+    {
+      "path": "国考/2017/申论-地市级.md",
+      "area": "国考",
+      "year": 2017,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2017年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2017,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2017年国家录用公务员考试《申论》真题卷及答案（地市级）（含解析共20面）.pdf.md",
+          "sha256": "b5f86f6068af48cacaf459fc037f0f8ee8950ac7960e56b530f0073bc19c63f2",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "a68a765688d4e89b0dd10a785b2b58c1f1d155eb3d50d9ba27934ce6e16ce8bc",
+      "task_key_hashes": {
+        "1": "383e1a06cb53ab9c605423b65a130a9a70c57cee5b9225e8a90b9fc51a5ac124",
+        "2": "b5600fed9efb8500ecc8f592e4823cdd19d571afa912d3c35ca8c3d10fecc7ab",
+        "3": "b0a8251bf8c807f9c31246be34d0c1f999e0969a752e1b623adfdea312cfa041",
+        "4": "2050ae6577c6b186f9ff9c13b7b5589173dfc35c667d40f4b42221f5ee345b3d",
+        "5": "852dd2e2b7f6348dee4327efe36b784c8394e1b85470770172658a9d28790f8a"
+      }
+    },
+    {
+      "path": "国考/2018/申论-副省级.md",
+      "area": "国考",
+      "year": 2018,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2018年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2018,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2018年国家录用公务员考试《申论》真题卷及答案（副省级）.pdf.md",
+          "sha256": "e9c238b4896a644e43a6084e45935643bbfc466d559366af41885a870b232528",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "6cf78c06b5b9373298da9c7ded1700cb6d435584a87ca4727a098f12622539a1",
+      "task_key_hashes": {
+        "1": "8de5a2173ee2cd4d8443a263d0b44f5eaf9cc947de61c38a4d003701bbd41147",
+        "2": "5f292ea14e98293a3706b717fd576a694f9179a15aee2275a40d9eb704a0fcc4",
+        "3": "5d2f058e8fd703ddb69126dbdfc1e087ee64aa2f84c33f4cea049405e2c72a0e",
+        "4": "c9a40aba93d5bcc28e5db9a625ea377657850b7d916a107b21446259a3729e48",
+        "5": "3dcdb8a6f8b040b8a27af27dd55d38f0bbe1bab6c0fd30e052266224610e4d6c"
+      }
+    },
+    {
+      "path": "国考/2018/申论-地市级.md",
+      "area": "国考",
+      "year": 2018,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2018年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2018,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2018年国家录用公务员考试《申论》真题卷及答案（地市级）.pdf.md",
+          "sha256": "09f505d805953513431cd7e09d16897fcb4c67bc8c976b853e11fdf2f69ce0a9",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "45233c645debb3af02fe2d9fe17e7890ba2ffb5eea3d39759b9fea5a492995e8",
+      "task_key_hashes": {
+        "1": "cdd9d476a5878130c3c08154def5814c21114804fbc7a76b833da8377675a110",
+        "2": "ed0298eb6bcc25d26a0a72c1539975d1d67811c1c60837783e14ba464dfc61c0",
+        "3": "fd1da7a24cbddb5b67ffdca04d7ddd845e4ab9152d8b635cab8e165833c62703",
+        "4": "e05889ea0dde8c6085f523551e6c38cf2a2666af19994917d0c5a34f15b2aee7",
+        "5": "761e03b9ade0b920351b464751a77a8f46e867900ae16edf95ee6e11132fab8b"
+      }
+    },
+    {
+      "path": "国考/2019/申论-副省级.md",
+      "area": "国考",
+      "year": 2019,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2019年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2019,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "84952203c7e2a0cd110e7757eb70960fc622e3b0d209ecf2f40851bb554a90af",
+      "task_key_hashes": {
+        "1": "bad2ed0273b4d28431eb6f2cda0484cb05160bcc5432760b04b631675c7e5126",
+        "2": "65a82d44e462b6aa587d6de3090670f59656b06be1d0cf45748f2603e9275120",
+        "3": "1d879e00fa68fe3c3d809115ca8a31e735c159001dd8c42064fecf8248f53941",
+        "4": "0a36b00038fc9443fa3d2e9249ae15498e5e89b121730162d67eb3dbbf5f75ef",
+        "5": "c40e86c89bb054d7c4f201e7cead3ab8e0da7147e21335e11b61e68ba9f2c796"
+      }
+    },
+    {
+      "path": "国考/2019/申论-地市级.md",
+      "area": "国考",
+      "year": 2019,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2019年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2019,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2019年国家公务员考试《申论》真题及答案（地市级）（含解析）.pdf.md",
+          "sha256": "0a239e19fbc8f99bbc73be554c63ddf7643e4c9e4b900831ffa8787f0dbe46dc",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "f89c342f04e9186a16fc7bd6923092f823bc1ffb4fc8231772ab8dfaa7e3d579",
+      "task_key_hashes": {
+        "1": "472f044421f19379638453251d3b3f629542824d82dedef99de5a71c575898e3",
+        "2": "67d7364fc8ec7d93d747ec01e77c03e7518e8a70a29a2b0f613a41bb21be5a92",
+        "3": "5ef155b04ca9bc332a43b037829c741602f44d9641a7370a51ef054ddc920ee0",
+        "4": "64842855ccca64b28a79c4ff6b832f2d5417f8fa2175bf4f17e005d8bbd0e1c1",
+        "5": "83efe124ebd7db3a5bf17d9c3aaf31927223ec7dfe4b892531cbb7999e05fe37"
+      }
+    },
+    {
+      "path": "国考/2020/申论-副省级.md",
+      "area": "国考",
+      "year": 2020,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2020年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2020,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "60e359529d2c34f78b21a8c87b93152491f7c6d9416209d518f07a9845c22283",
+      "task_key_hashes": {
+        "1": "6c99f2b0cedf98e3e7f5b659f015f07786be3360d30055f1d7928f77ec863362",
+        "2": "1e86c39ff612fb6364a9989d6cc09ef9b484b618d13604fd0145ddfa634e1501",
+        "3": "0149fa5235d1fe607e57d4f44af363f0ecc585248a42c7b172ad79ef16ce5f7c",
+        "4": "83bcc12937ba3bb9b568f1c44b43aab500ebbfdb3adf63c046fca052e333d69d",
+        "5": "b3ec5aeea62e04a1dd2ddcd1c6e5894b84f16fd8614f8499679d46d9d0702b2e"
+      }
+    },
+    {
+      "path": "国考/2020/申论-地市级.md",
+      "area": "国考",
+      "year": 2020,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2020年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2020,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2020年国家公务员考试《申论》真题及答案（地市级）.pdf.md",
+          "sha256": "1696e230ed42c638a3e2bedea433628d5533cf29e93afcea4bc4da4bffca9a26",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "13d729f73e1cfabbf67bbdc1a94bc0c5ce958c41f160a017af968ebe94aa11b8",
+      "task_key_hashes": {
+        "1": "0ed30038edd73edd1d87d1f66cb50f7ef5cc805463adc80ce7334ee5e5f74b42",
+        "2": "26e1e479d82d4252687487725b0f322d9d8156ac85dbe53d9ba710ef4dc34e96",
+        "3": "88e0637a59d04597c9a1e1b47b991a7e1c01fc0a2fffb2da567fca94f87afa22",
+        "4": "8d11eb32af02c11ffb083607b12ce1ef7bd7864e844e49f70379bfb7b0650e50",
+        "5": "d23936fe894ce6a118fa4ed2ed22de70c69471169daf443d43e4741559bab167"
+      }
+    },
+    {
+      "path": "国考/2021/申论-副省级.md",
+      "area": "国考",
+      "year": 2021,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2021年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2021,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2021年国家公务员考试《申论》真题（副省级）及参考答案(两套答案).pdf.md",
+          "sha256": "dcff52417ba512e18c29e77db67b42c3810658688f1d1f9a1ff630ca02ca7e73",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "6d38d72e8bb68dd40224bb105e642583d01bfc90f5ffb1df48aad8c0d172983f",
+      "task_key_hashes": {
+        "1": "052f15510fef51f8815e191a0416443cc56456482a7bd2e76caf4b025eac5fbd",
+        "2": "124c5e6de65fe990049939ebf7ad9cc963b53b1164d6c7c390af2a4c631ae831",
+        "3": "570951e99d2444b414bd027c849a684c05c450600e6412dacf14d9d32d6b2065",
+        "4": "436962261466b2bf4ef2e9e80e283504918fcc3a5df2357c5070d8c6c2d8860b",
+        "5": "cadd263c0a4b5bd13f4c8367eb49a0c8a9ac933a695509b2efe31705c00f3a35"
+      }
+    },
+    {
+      "path": "国考/2021/申论-地市级.md",
+      "area": "国考",
+      "year": 2021,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2021年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2021,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2021年国家公务员考试《申论》真题（地市级）及参考答案(两套答案).pdf.md",
+          "sha256": "ef66880f43f685025e843b240359ae99aedb7462cb129445fed4ca8872a67ae0",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "331558636568ecb84b5d037d76bb1cf419080ada949187d7f57cbb035bcc1169",
+      "task_key_hashes": {
+        "1": "032f1195c5170b6daee696e7739114cdd334632a62a6ff69cafd762ec506cf4c",
+        "2": "3ca49d4b4279f4963bd841bd2fa8be003ff5c4c7284abdb2320d196f275f6630",
+        "3": "18ccf94e20255e65d4b19b6e17ee8a968e3cfa69875ef226be30eb4ac439f27f",
+        "4": "d4ebe11d2e55e16648897150d8c915e705d7dbe2b9372569256af92ca2232811",
+        "5": "14ca8c288a4902cf1e3d761cfab338bc85a5fb36a3a13a1e3fbc054c41eb7601"
+      }
+    },
+    {
+      "path": "国考/2022/申论-副省级.md",
+      "area": "国考",
+      "year": 2022,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2022年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2022,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2022年国家公考《申论》真题（副省级）及参考答案.pdf.md",
+          "sha256": "eea98daabd82d90e6abf3af7aea9c7aa7aff0a199cef1a9cb185a43e076f8a9c",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "a27e30e0d74f8d134842cc434a6dc8131ba3fd194c562e3d59cd3b60e79cde6a",
+      "task_key_hashes": {
+        "1": "3edc26c3445b1571f707952e56678f05e9aaa5f7a129b892fb0a50840d34dfe3",
+        "2": "defaedf8105e86a4172b235ea93417a083b4c408a87535839943f6bbcc669eba",
+        "3": "49f969797251c428637d5e63c6358cce262708c892149585a7037cdaee023fad",
+        "4": "1e573b721cac53f334f9a2b738a6aa906c3bffcae6c6b00ce2bdddc809b16074",
+        "5": "843c47d7a6b6bb23157019dd2e972662f66728064eeceadb62b131e4d32e9fd1"
+      }
+    },
+    {
+      "path": "国考/2022/申论-地市级.md",
+      "area": "国考",
+      "year": 2022,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2022年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2022,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2022国考《申论》真题及答案解析（地市级）.pdf.md",
+          "sha256": "609d4bbafced051a8aff0a3d43f46b346183b40fade5acd596548dde8d4a42dd",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "0ec9cd1745fcdc2267586fd805f915c53f625bf44cc538db585a797d1ff26130",
+      "task_key_hashes": {
+        "1": "08eb77d85d199d895c4207dd9d356e42e32088aca52c9b80c7c16c0460f7354a",
+        "2": "f2bb97eeccd28f770c3be2d31da6e16a39cd6456b9a9cf88cd7302d6e3496f0d",
+        "3": "b8658f79de9937998ecf2c84885f67eb66954c57a6d20b3284e1aa2261c3329c",
+        "4": "e4c2a4fc381537b4f2b79fcddc9d2c92f1c4ed35d11e5230256347004ccd405b",
+        "5": "87806f35c6e9a240d2de122bbeb24fc6d0b9a728f1a535c1eeef1e9d80f23a1a"
+      }
+    },
+    {
+      "path": "国考/2022/申论-行政执法.md",
+      "area": "国考",
+      "year": 2022,
+      "variant": "行政执法",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2022年国家公考《申论》真题试卷及答案【含解析】（行政执法）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2022,
+          "variant": "行政执法"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2022年国家公务员考试申论试题（行政执法卷）及参考答案.pdf.md",
+          "sha256": "317a642ea2ddcb21cc68bd27cf6e5ec295b02b04e417d9b1c5514ad440e6d171",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "ccf03b55d4258b6d596104ee5c403b3a627439d28c73d1cf77088fd6fb39e6d7",
+      "task_key_hashes": {
+        "1": "0e566423d370a6459882c47aca86683a4e0f9236f87afe042f82124b05747c9e",
+        "2": "6152d2c6331e8fa3606fe49120792f64e3e4efa1e922f107ae767dde45c91349",
+        "3": "7b423253c16b4e77309063a755d0b9ac9eebfb84110837fa005a4041fe62f007",
+        "4": "0b5320e5ea19f3ce63a15b1cead1270376fad05b39f4b41b0acc5d41c0b11f7f",
+        "5": "7d9a37df4482a928331a91f8c02089dc97a57ce74309cfa254bfc031dc51dca8"
+      }
+    },
+    {
+      "path": "国考/2023/申论-副省级.md",
+      "area": "国考",
+      "year": 2023,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2023年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2023,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2023年国家公考《申论》真题及答案（副省卷）.pdf.md",
+          "sha256": "13ed8e55ebf1655eacfa0a7e4095fdc35ccd3331b53dda66db742c3c839173fb",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "d1888b7834e2fc266e94df40a35587449fdad9445622da13080ec612d48604d2",
+      "task_key_hashes": {
+        "1": "f915e72601a101c06fe415cfb7c95dc8f9d43873e2cf72f65d5d271f6770fcd4",
+        "2": "f1e91880bba3e58a062cb6714c6044536fd6f81ce8d4c10a95caef35ab7a2d12",
+        "3": "d626e3f6c5c309a029a3c4eee88e5bb44f60c7b839a138c22b2b49d8e3444ac6",
+        "4": "69b3c841353c43edc2264616dee15f5b94a21f99e632c4a2ba732660ad0dc428",
+        "5": "f45f1442eadede6eec26c7aced0e43c20e0409e28a725a30d0535ed1b87d9814"
+      }
+    },
+    {
+      "path": "国考/2023/申论-地市级.md",
+      "area": "国考",
+      "year": 2023,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2023年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2023,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2023年国家公考《申论》真题及答案（地市卷）.pdf.md",
+          "sha256": "ed48f412331f693e57b7318b0d810b421ae2d5f9318c4de0247b8fc5d8fe2d92",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "04e6d93a3127c36f89f9fa12f811003733cc43ef8c103df6ab3416b14a4ac7b6",
+      "task_key_hashes": {
+        "1": "bdee1f773bdb323e33cb223506059abe4f3a3ab77b275175f451848831993c69",
+        "2": "d062eb973e75b7132bda54edff037e5c395157d5f6530f766a063489b79ae985",
+        "3": "9e6614972f48c5e709aeadbfb741495efd301e0ab790721676515b3ecedd0e5d",
+        "4": "8d21039b303ff66af95af191f35399567b3744e01889c378f3a79a3ec969ee62",
+        "5": "b7e5657f75be8a72022def6b5fe4b0372849112453418dc2c08f340fbf25ff7e"
+      }
+    },
+    {
+      "path": "国考/2023/申论-行政执法.md",
+      "area": "国考",
+      "year": 2023,
+      "variant": "行政执法",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2023年国家公考《申论》真题试卷及答案【含解析】（行政执法）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2023,
+          "variant": "行政执法"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2023年国家公考《申论》真题及答案（行政执法卷）.pdf.md",
+          "sha256": "c69c9a801c82146c329233fe2d5b7527dfe3c3d99a283c94d83a604a4bf7cd10",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "efba58bcd5b7355f4ae78932d0008496cc28d88cbf4a967415b8daa6f7cc5182",
+      "task_key_hashes": {
+        "1": "bdee1f773bdb323e33cb223506059abe4f3a3ab77b275175f451848831993c69",
+        "2": "3d258a8c2c6e5f4b4ff063ba12bf7615a9b08c1f98009d03d37fb0c71150a629",
+        "3": "5b28c3ef995ddff327b4906dbbdf2b44a69a11f4148e216abf336254c1cdbef2",
+        "4": "d062eb973e75b7132bda54edff037e5c395157d5f6530f766a063489b79ae985",
+        "5": "b7e5657f75be8a72022def6b5fe4b0372849112453418dc2c08f340fbf25ff7e"
+      }
+    },
+    {
+      "path": "国考/2024/申论-副省级.md",
+      "area": "国考",
+      "year": 2024,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2024年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2024,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2024年国考申论真题（副省级）及参考答案.pdf.md",
+          "sha256": "cc0183fd505fe3a9226b6477356c30315a7dab6d0cdbb3fe9bec104493d8521f",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "3769fecfdc90a94b3577e51f4bb0ce3183e92fa658a9ab43401a27802c8b09ec",
+      "task_key_hashes": {
+        "1": "20b2de661e3697541b16461135d25579367438a68b225965bcd8ac51eaf74835",
+        "2": "2641918ade155e49f34953cef81a168624a0f4cd9430d871665d1b9214cdecac",
+        "3": "9be212adc6405950b6a751e93ab2501a40cee04e89959e851285d8386a6e1bf4",
+        "4": "352eb35f564d1bcc0a4d1d2a77457d3cd7bbc50cf10e0ba125b99386770f2bdc",
+        "5": "af08ea8f2ee26612fc68e8ec85c2a100f7f477bf90528ba2c08e0f7cf3636b3f"
+      }
+    },
+    {
+      "path": "国考/2024/申论-地市级.md",
+      "area": "国考",
+      "year": 2024,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2024年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2024,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2024年国考申论真题（地市级）及参考答案.pdf.md",
+          "sha256": "0d71f9e74ea046abf4d2677a74b0ad9a749721b5ba32a7fca8b1495b65f122a2",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "c753d37a014ba16dc41cc28a91a6046463669ea526d876ceda4bf8130a5f90dc",
+      "task_key_hashes": {
+        "1": "1ffd4f056000da72930cf489249e2fa4bf2db99a92c16b25c26bf6e8cc02c35d",
+        "2": "843ac8cec3dfcd46065c56714636b1db6b945156e42009c4544659e9f6c02363",
+        "3": "9dd807f87788b7ac4698641164661186da54dd60223ba4055ca772bd03cb1d52",
+        "4": "bccee1dfe65842cd4e93349ab958085e021cdb956278502c0183f43cae7e7ea2",
+        "5": "8fab70cf1579b78e16ce72a64fe51fd3cf86b68fbd34664b1c37b4560a4836f5"
+      }
+    },
+    {
+      "path": "国考/2024/申论-行政执法.md",
+      "area": "国考",
+      "year": 2024,
+      "variant": "行政执法",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2024年国家公考《申论》真题试卷及答案【含解析】（行政执法）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2024,
+          "variant": "行政执法"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2024年国考申论真题（行政执法卷）及参考答案.pdf.md",
+          "sha256": "be48dd5c71b4c9076d39fffcf9d19448527131efc87800dad6798c7b02290aa3",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "886f516fb53166409aa11c3bd298df0270d0457fac238db07830a187856e00b7",
+      "task_key_hashes": {
+        "1": "1ffd4f056000da72930cf489249e2fa4bf2db99a92c16b25c26bf6e8cc02c35d",
+        "2": "843ac8cec3dfcd46065c56714636b1db6b945156e42009c4544659e9f6c02363",
+        "3": "a7e623ef9fad5281c70a9ead50859d25a8f5f8db853db0c24b6adf07bfca40f1",
+        "4": "b88024932ef232cc569118408e67e22018370663c8d160e5527d65e4e4acb0df",
+        "5": "211c82d21d28466a4f46d1868df9cd733d8cf93b9804b7be5326db6be120fea1"
+      }
+    },
+    {
+      "path": "国考/2025/申论-副省级.md",
+      "area": "国考",
+      "year": 2025,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2025年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2025,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2025年国家公务员考试《申论》题（副省级）及参考答案.pdf.md",
+          "sha256": "5fdcae220d4e8329ea4bcbd724122c0292f615057b10e40f88a6cee28707c312",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "7b35cf5eee9108a93d5a13734a2f76253bb64b857d022fa93433345d5f563ed9",
+      "task_key_hashes": {
+        "1": "c5e845d399bb72d1ea2b6e2b756961d3c57bbbc99bfd564bd7c5bcfa7f53530f",
+        "2": "7ed698ad289f09e8a575a336798dedc7812678b81b03dc65a5791674ce9c9539",
+        "3": "71ae65063dd50030b3364404649ec7a08139d833a6155981e8d4a40869ce1e0b",
+        "4": "4aa4784d5c8630007aa62e7c98087d9a20db6de4bf0e724c087636c7c0476b7f",
+        "5": "8e380f3cca523f17bb6ea2a4f7d18d59f5520fb925675d4ba93e65afda8bb561"
+      }
+    },
+    {
+      "path": "国考/2025/申论-地市级.md",
+      "area": "国考",
+      "year": 2025,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2025年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2025,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2025年国家公务员考试《申论》题（地市级）及参考答案.pdf.md",
+          "sha256": "fb8c286dee5ecbf480d6748996d3798793d38ac9e56336110eb7bbc44de8ba1d",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "9e20097b921ee21def64a3ba423cce8f0e8105a736094a6574bace37eb86a386",
+      "task_key_hashes": {
+        "1": "9b6da2087aad2f3477c8c8a3310aab05956d78493592bd2eb60a8c31eb9bd379",
+        "2": "9770b1b6408caf498321ed5ddd202f2a1d9b362f0f79541c33d9a8af8b37e7d1",
+        "3": "cba456784b111b735c251c3db8e10d47968c512d4ddb4bc9eca4fb7300e72aa7",
+        "4": "aaa6701f2c6ac0d0d96252e54f0fa398701c95d8493625ff81250bf694e5cc01",
+        "5": "22dfb0a769cc1161fc0f440a58372151ab943c47caeb82e192bb2f4c38feec4b"
+      }
+    },
+    {
+      "path": "国考/2025/申论-行政执法.md",
+      "area": "国考",
+      "year": 2025,
+      "variant": "行政执法",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2025年国家公考《申论》真题试卷及答案【含解析】（行政执法）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2025,
+          "variant": "行政执法"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【国考】2000-2025真题pdf\\2000-2025国考申论PDF\\2025年国家公务员考试《申论》题（行政执法卷）及参考答案.pdf.md",
+          "sha256": "904e48c0d1f066078f68441425369a7ed1150168430012974490237bf4ae6a59",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "752bf40f25a9aa58322d76305535fabb293d7fff8b23c2b9f95bedc2b16bd0b2",
+      "task_key_hashes": {
+        "1": "56b50c2daf6b86e920301eea74776ba2c076042837864c6bcccb5d00bbf34fdd",
+        "2": "eb8c50a94dfcc31d5561c598767c0aa7a1b509acf7637c3b98acbd416a559ba7",
+        "3": "f0c217b8a9c3ef225a2a3f88beddcf47b3fecfd52d9e3149058899ed07bfa409",
+        "4": "f9dab4cb6df17dcde698acb47a0f7380625ff327745df117d104eceb27f61a1b",
+        "5": "3abbf2b422965437ff453849de79258c60361f2d9cab7c410526da330547b9aa"
+      }
+    },
+    {
+      "path": "国考/2026/申论-副省级.md",
+      "area": "国考",
+      "year": 2026,
+      "variant": "副省级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2026年国家公考《申论》真题试卷及答案【含解析】（副省级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2026,
+          "variant": "副省级"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "b05a8cbac11fbdbfb084ed0aaa19b93dbadc220e6558a0337a85be72a06f1e97",
+      "task_key_hashes": {
+        "1": "96562d04a5c359d08448304b82492d81c836464e3453ab5cdf066c5ef64a2fb9",
+        "2": "fc578824fe4d457d4ae0f538eb9b0ec10ba8afc98a66626761142d9919ab2273",
+        "3": "6cb487c9dfdfb2e7f708a5655e096b24f13888c4ee5cfbc88875ee3b17fd05d8",
+        "4": "312636bdf50c2dcb68071df3c0e6b4b43545e5447a72550bd179211f82121435",
+        "5": "ec5401577382b2b0f702e85753e45b2aa6567ca4016d32d010075246d1260d97"
+      }
+    },
+    {
+      "path": "国考/2026/申论-地市级.md",
+      "area": "国考",
+      "year": 2026,
+      "variant": "地市级",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2026年国家公考《申论》真题试卷及答案【含解析】（地市级）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2026,
+          "variant": "地市级"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "75aef5d986a4cab135e0bed3297a5925a42a3f1246fc591efb33633fad52f1c9",
+      "task_key_hashes": {
+        "1": "f12f6ac8c76179ebd0ab7656e3a3242197b517fe96c080449198fe296696c410",
+        "2": "f2938498734122a419c0115203710aed98ea6350c342a9c6bd3fea8cfbe76dc8",
+        "3": "fb1ff82273f19b515e40b85ea5139ec494294262adefe7bf8cd0451407b1ed52",
+        "4": "cde033b35c157fb555b2b7def27a6c6258bfbcadbeeef461e731e1c0cca277e2",
+        "5": "8e9b47cf16dc0421ca583ceeaa8158c5d47ca241321704625b85adb467889a14"
+      }
+    },
+    {
+      "path": "国考/2026/申论-行政执法.md",
+      "area": "国考",
+      "year": 2026,
+      "variant": "行政执法",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2026年国家公考《申论》真题试卷及答案【含解析】（行政执法）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=163",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "国考",
+          "year": 2026,
+          "variant": "行政执法"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "cb76aa059c5f38ad199207d56f5cf611e54408fbadb8bdbb8adc5e9e4ab6615d",
+      "task_key_hashes": {
+        "1": "bb3fc0a8a716736ac45ee6e5e043c8ac889ab3b37df756bd0e9b0e3d802067f3",
+        "2": "b916822621a39444c9dec20a16884e3b83bea0dbef76c9b086587bb0fe24ab19",
+        "3": "4c5ee50ee9988a90b61615d35399c34a30d23a0382f636f8d52ff9ed9a4eecab",
+        "4": "fac841d41115541f66909c464ac7378366067b1c7cac04a0fa5ff3c019529852",
+        "5": "43ad5ebbb8fb4140fbf0249a327a04a163fc5959330eafbdc461b12c62a64901"
+      }
+    },
+    {
+      "path": "省考/江苏/2016/申论-A类.md",
+      "area": "江苏",
+      "year": 2016,
+      "variant": "A类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2016年江苏省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2016,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2016年江苏公务员考试《申论》真题（A类卷）及解析.pdf.md",
+          "sha256": "fa51965a9a5d29bd648fa62bcc74d12af43bd01d18d06dc7c70a9c31a95141cc",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "0f30c24373b8279b46a1749d430a6597f93bac8874640b455ed9ff89ddb2c816",
+      "task_key_hashes": {
+        "1": "ee7526f57c2cc1708bd555cb9e911ded0977256fbb37cc453b14c0e0deb680c3",
+        "2": "80dc9ec9277c5a2b6dab0a616f34c1ffd6204abe744d04610f91c2accbad814d",
+        "3": "45c72de6235bbdac66ebef30a1fdd03d0306321871ee3e039197e72264f754ef",
+        "4": "4d4863a7a21d2086c5d754d2d6eb9745613e7e75a814d61ead066c5d432d76ca"
+      }
+    },
+    {
+      "path": "省考/江苏/2016/申论-B类.md",
+      "area": "江苏",
+      "year": 2016,
+      "variant": "B类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2016年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2016,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2016年江苏公务员考试《申论》真题（B类卷）及解析.pdf.md",
+          "sha256": "9f94745843d9c84658ebf3a2edfff4fa5a1d96996e866004a06f4e4574d6f036",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "ef48fd7b72b79e697d5c27a38deee2337f0641990ff1befb37473b183192e009",
+      "task_key_hashes": {
+        "1": "ee7526f57c2cc1708bd555cb9e911ded0977256fbb37cc453b14c0e0deb680c3",
+        "2": "38a764578a9a7f8a60056b5e0ec8c517bcc0a42519b740ae4c4f17493adeb9b2",
+        "3": "1b2772d166d7936af21fadf23f3edfff6837e894b62aa79b04cc5bf858afe605",
+        "4": "b487093bad3d1bdc80076b316939056dcd1b6f5fc41e854a53156b0788d60f4b"
+      }
+    },
+    {
+      "path": "省考/江苏/2016/申论-C类.md",
+      "area": "江苏",
+      "year": 2016,
+      "variant": "C类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2016年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2016,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2016年江苏公务员考试《申论》真题（C类卷）及解析.pdf.md",
+          "sha256": "cd9fdabdccb54c1a31240577c5a540a7e0e244a1dfed41ad3bc4a865f0a9d2dc",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "e9111f7aa95c06429b7dece95690c28bbedd466784c28abd1d244da65286bb5b",
+      "task_key_hashes": {
+        "1": "ee7526f57c2cc1708bd555cb9e911ded0977256fbb37cc453b14c0e0deb680c3",
+        "2": "c3d5863f8090d95658937c366275944587fd0407c7503ee8e7d8ef8450cbd072",
+        "3": "7aedaa9a656d3ca16aebbdfd6c8c8bc8734f6f8224328e46735dc0fdd48bf81c",
+        "4": "b487093bad3d1bdc80076b316939056dcd1b6f5fc41e854a53156b0788d60f4b"
+      }
+    },
+    {
+      "path": "省考/江苏/2017/申论-A类.md",
+      "area": "江苏",
+      "year": 2017,
+      "variant": "A类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2017年江苏省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2017,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2017年江苏公务员考试《申论》真题（A类卷）及解析.pdf.md",
+          "sha256": "59fe3290db1b0bad9144f0e9de97dfbcd049dbbea2116fcacda7a1ca17834299",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "f24d535af9058de59c2f1724dda8d09e489c187b7d1b6968e9fdd9734ea83beb",
+      "task_key_hashes": {
+        "1": "abaffec33f575c62d3d1c6911397b1cb3896414788d5355e028612643aaf637a",
+        "2": "75fefbda683d219f1f2564009e22f1f402ee1c0cc2a3faa344dfd7a65c78f779",
+        "3": "94d2ce13fb1644ba46a23031e5ffc1a8fcc457f5be7913d9fef0f71735604af1",
+        "4": "96899016a4ccae309c546e7e3ab6ece03dcb10677d28290e949598bb19294c03"
+      }
+    },
+    {
+      "path": "省考/江苏/2017/申论-B类.md",
+      "area": "江苏",
+      "year": 2017,
+      "variant": "B类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2017年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2017,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2017年江苏公务员考试《申论》真题（B类卷）及解析.pdf.md",
+          "sha256": "8a042ca91729fb3b98671304b5f7693628c6111567200b5e41e994ca6fb4a9ea",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "5697a16f3275cc0496d85a869e85297842609da2e666bd0c26d523c9edc03d14",
+      "task_key_hashes": {
+        "1": "2ddd92de2fe1fb24a09a4d6940c738c6a7425989b65ba4aa8370be3405d02c3b",
+        "2": "3d1c2afa6fe6e90ec17fbd77ee01ac5358d0a98aa765ca103553560f56fe2a8a",
+        "3": "94d2ce13fb1644ba46a23031e5ffc1a8fcc457f5be7913d9fef0f71735604af1",
+        "4": "96899016a4ccae309c546e7e3ab6ece03dcb10677d28290e949598bb19294c03"
+      }
+    },
+    {
+      "path": "省考/江苏/2017/申论-C类.md",
+      "area": "江苏",
+      "year": 2017,
+      "variant": "C类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2017年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2017,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2017年江苏公务员考试《申论》真题（C类卷）及解析.pdf.md",
+          "sha256": "7bb0df37c38181cdd57635baabde5fd5e0232c64fce171d6843950ec29c11ce0",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "18765cd5c3a3b63d2d647ff0ec2093fd7e35703aa3e38a3b12e4db04ae291b61",
+      "task_key_hashes": {
+        "1": "368fd04f3004fe56a8d4b2f217c2f896bfaf3bce21ae63ba5c2ab58944a3f55f",
+        "2": "912593cced785e7e7a57352691b67542e37e47c53aea95c6de004bca137df93b",
+        "3": "94d2ce13fb1644ba46a23031e5ffc1a8fcc457f5be7913d9fef0f71735604af1",
+        "4": "96899016a4ccae309c546e7e3ab6ece03dcb10677d28290e949598bb19294c03"
+      }
+    },
+    {
+      "path": "省考/江苏/2018/申论-A类.md",
+      "area": "江苏",
+      "year": 2018,
+      "variant": "A类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2018年江苏省公考《申论》真题试卷及答案【含解析】（A、普通选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2018,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2018年江苏省录用公务员考试《申论》真题卷A类.pdf.md",
+          "sha256": "072b7a26b42afc657a205630d91eea7805c51e412deaf9e23a393cbc68674c70",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "abecbcbe32ae1682e61dc521e9a9cceef0e375eeb1bedb110430664013249141",
+      "task_key_hashes": {
+        "1": "061aabbf6784e0d88ddc863633d5197763f9d3ac73827530172325a8dbf05790",
+        "2": "c68303bf59f4d9938d828fb4fdc43c42bdc5d3e0290acad79bf0658c5e345514",
+        "3": "502f12e167fc38b0326a623ab61bdb6981cf20842f8365101a078769eed724c4",
+        "4": "6a51f12d2ffe1e50690d355ca1fe4a58b9f2e453300753e5890ae0b4059addb2"
+      }
+    },
+    {
+      "path": "省考/江苏/2018/申论-B类.md",
+      "area": "江苏",
+      "year": 2018,
+      "variant": "B类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2018年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2018,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2018年江苏省录用公务员考试《申论》真题卷B类.pdf.md",
+          "sha256": "ea3d9a1990eca3903b74cb98144ee81c3cb4df2fa1237e1bc40ff31d5a12ae00",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "fe48401b99620ce00bb8f8d3a048db3df92e5df620a8c55419276d53fc3fd8a8",
+      "task_key_hashes": {
+        "1": "061aabbf6784e0d88ddc863633d5197763f9d3ac73827530172325a8dbf05790",
+        "2": "9f0684f0191bcabc36d5762c45b5e7f1f7c5ee40276dc4676784130bbdf0b015",
+        "3": "502f12e167fc38b0326a623ab61bdb6981cf20842f8365101a078769eed724c4",
+        "4": "6a51f12d2ffe1e50690d355ca1fe4a58b9f2e453300753e5890ae0b4059addb2"
+      }
+    },
+    {
+      "path": "省考/江苏/2018/申论-C类.md",
+      "area": "江苏",
+      "year": 2018,
+      "variant": "C类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2018年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2018,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2018年江苏省录用公务员考试《申论》真题卷C类.pdf.md",
+          "sha256": "fb38ee5d74bf57aee7b218ee5360d6de70b6e8ca47a7e22c90d79d67136ef5e0",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "7a45c897bf66cc14e7e16ec329887d691d9b565eca7e13bdeb5b564d06fdfa7f",
+      "task_key_hashes": {
+        "1": "b53be52f58ea6706f6ffc3756e1cc43196457e30698c25c7a0a4e45b6692e453",
+        "2": "05fd9b617cedc6636cadcf51ef3d16f989c11ac23796fd0f93a2fa94da16a024",
+        "3": "4ca0d4caadbb61d98cbd9186fab0400063fe07b5825a4ef39921ed5def189d3f",
+        "4": "4261afb7468d9d2898b7db7e2874ff5bf00f6de8a3b3eeb5056814342ea0327c"
+      }
+    },
+    {
+      "path": "省考/江苏/2019/申论-A类.md",
+      "area": "江苏",
+      "year": 2019,
+      "variant": "A类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2019年江苏省公考《申论》真题试卷及答案【含解析】（A、普通选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2019,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2019年江苏省公考《申论》真题（A类）试卷及答案.pdf.md",
+          "sha256": "bd9f42b21e4a23df16c9d696bc3d369760e45d5499e2970f0ac7f52df4830593",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "9622b515aa0d87becadc32fa7cec8d1e991ea4a61344213d4993940c016b36eb",
+      "task_key_hashes": {
+        "1": "67aa8689c4500ccd119cf03eeb4cd0c8f618bc9b8d40b6b16b6e93b2618bd777",
+        "2": "7139446e58869fd4553d8b1caa0627bb6e888e50e21b3a0acef3b0b2705fc274",
+        "3": "ad7995cbfd527f08ce00caa9f7d109a78b4a2c1f14f72f90320b4e396f6f7086",
+        "4": "1cdf3f64a4c73a236e0ae72bca67f72e4dc720f16a1593b31dc296c4e17d34b5"
+      }
+    },
+    {
+      "path": "省考/江苏/2019/申论-B类.md",
+      "area": "江苏",
+      "year": 2019,
+      "variant": "B类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2019年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2019,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2019年江苏省公考《申论》真题（B类）试卷及答案.pdf.md",
+          "sha256": "862425598a774b6347e4a76a5df945911866386f4c5c886648da49644b7824f1",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "591f52c00acf0fd1bc4911a9d185098d1c8ef0814ee29d7fcc6db92bf80fbb94",
+      "task_key_hashes": {
+        "1": "05353b14ce87cd1bb3312dc615d24b0edaac2c31ed317e37681095bd76faa283",
+        "2": "9f95d428d380b316ecf329313bbde4c6e6e55f1c3096b586ef74410a0a4a5970",
+        "3": "9f76ec84d6d76278c7e147911faaedd120b80f16a96ac6803508f509fd3e60ec",
+        "4": "3bea4d33fabf23bf1cb042a60b856768ea355abf644c080bdc39d597c654a38a"
+      }
+    },
+    {
+      "path": "省考/江苏/2019/申论-C类.md",
+      "area": "江苏",
+      "year": 2019,
+      "variant": "C类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2019年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2019,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2019年江苏省公考《申论》真题（C类）试卷及答案.pdf.md",
+          "sha256": "9cc59a411e0b6e1eeae09711363fc703e7c640f60d65153caf54435a40ea5278",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "de8d408969e72836870f5fc621824f4b4028bc8feae1d58ba277a84e96cbe7e5",
+      "task_key_hashes": {
+        "1": "ca3ee34dad9d6d49fd4011a0e7f8a9a2c79f6b1d7b9fba1caea9fb9457c10f7b",
+        "2": "4bdf288e657d06cbb1ec02bca010b315d3129fb082fdf8dec1a3ab07a049ed04",
+        "3": "7f7e8032880fd19404f1e924271ec651a1d7e3b89cce39b9285c06b7b01a4078",
+        "4": "eccff953ecce111a5e4eda8ac735ed49466c4c0fe6de51dd00f9b93ba4c2d8a0"
+      }
+    },
+    {
+      "path": "省考/江苏/2020/申论-A类.md",
+      "area": "江苏",
+      "year": 2020,
+      "variant": "A类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2020年江苏省公考《申论》真题试卷及答案【含解析】（A、普通选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2020,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2020年江苏公务员考试《申论》真题（A类）及参考答案.pdf.md",
+          "sha256": "fc3c027b11c337b216bb7364fbce616b75927e924bcfdfcf68e0e5a66ea9de84",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "088e734c861406eddbdb158e51da8a28c93636753c226ea9229ef839ad0c3b96",
+      "task_key_hashes": {
+        "1": "4629a7602c6aaa5f9e426452c46fd8208ba2bf51dae86e9d3ff094ae8f63529c",
+        "2": "9991bc1260b38f9e93739686dd681f7440bdc1bbffc6cfd7d7ee6bad3255141d",
+        "3": "be3a9831ccfeec314c053733eea218731d1f628ad71b8cfb0386d28cdaa63fad",
+        "4": "661e1f57de6ba2ae5b1c6db7aac12ab4edf49033b01a48384818d6a9a9a043d0"
+      }
+    },
+    {
+      "path": "省考/江苏/2020/申论-B类.md",
+      "area": "江苏",
+      "year": 2020,
+      "variant": "B类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2020年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2020,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2020年江苏公务员考试《申论》真题（B类）及参考答案.pdf.md",
+          "sha256": "a426ea81878c428ab2ad2c71ad2ce80ed9c2684d56ad376324dce0cc48a2c1f3",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "98f9f95c91aa73a20afe84cf923ee9859c0024b4fcf57f2dc43377c01c4afa89",
+      "task_key_hashes": {
+        "1": "4ab865afaf16752474f5386f24dbf95602f5f7472cc28bbd36255a084051c192",
+        "2": "2f68b1c2ad88553a2f0315f542d7dd5a4b4adb303739932d53214d51be17654e",
+        "3": "57a4f77bab810edb8b6264669a1d06c25bfc7283ce107c39c5a62cabb8a232f2",
+        "4": "0f53b457999c07fe4a19e8452f266cdd1330a8b91464cc431de8260470e2e52b"
+      }
+    },
+    {
+      "path": "省考/江苏/2020/申论-C类.md",
+      "area": "江苏",
+      "year": 2020,
+      "variant": "C类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2020年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2020,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2020年江苏公务员考试《申论》真题（C类）及参考答案.pdf.md",
+          "sha256": "394fb47079b676eaeae63840e370bbf514439bfc0398e06bae9dc39f6b717c98",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "f95b61eda0121801ae321736e396c20d20a2e688740f821202fc1f2afcb20af5",
+      "task_key_hashes": {
+        "1": "a5e4e3cc17087843b9724bbad0e35d75f62c19dee66f28a97780a81425926ecf",
+        "2": "8c229ab903e4c6d61981bb0d4c303fa0fb4f27fe5361957f3d703de29a90285e",
+        "3": "995c45f0469dbeed7618d0ec87482560b7f5122743f02bbcb70d063a484aa072",
+        "4": "a63fef5968c8ec0b242b9f01fb4b305b372607622b1904f0de6b329016781ffb"
+      }
+    },
+    {
+      "path": "省考/江苏/2021/申论-A类.md",
+      "area": "江苏",
+      "year": 2021,
+      "variant": "A类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2021年江苏省公考《申论》真题试卷及答案【含解析】（A、普通选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2021,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2021年江苏省公考《申论》题（A卷）及参考答案.pdf.md",
+          "sha256": "71b16871d40d1bb7af73631cfece87b74803d812a5832a150db016c090e63e0b",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "bda45e7e55e9601eb918213bba9b2a16c11490fed2cdc8488ab7d3da86dd4c1e",
+      "task_key_hashes": {
+        "1": "fbca2b615d1512e52efc2e433a00f429bb7417665e6ebe2fb866ff212e33f5f9",
+        "2": "f15e14c62c5d906c26e1bfa06441ca2b965dfb02b878e599f21b9a1f789813ab",
+        "3": "be8a78bbfaffeefe051aa88253219f2f7967e5277b99780d66bbbaa75157a853",
+        "4": "a51c8987a73039a438da2ab0141bde2a67eb587854690896644a77e4a5aad624"
+      }
+    },
+    {
+      "path": "省考/江苏/2021/申论-B类.md",
+      "area": "江苏",
+      "year": 2021,
+      "variant": "B类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2021年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2021,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2021年江苏省公考《申论》题（B卷）及参考答案.pdf.md",
+          "sha256": "b223f50bca1b14f718248e11f7cf8b5186768d08157066e6e513b76682f27766",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "00937bd2d928e20249a048b233880768387dfc2a348fb158e3b85089062d3be4",
+      "task_key_hashes": {
+        "1": "6c3d9ba47d3cd67ac945d1669b673e3686d153f0c567e17ef14068030267c512",
+        "2": "6f476fc20e254d9f8fcfc3efb572eebfe27f613b5f24f924c1e0c4f65794d963",
+        "3": "5f076746c4924c7a6024ca4de070a3a3264023f30fc90bcd52b4d2f58c98848e",
+        "4": "79fbabbcb2e26765430d62f9aa986215fd53b6887909b5ef6f9f751c68f75340"
+      }
+    },
+    {
+      "path": "省考/江苏/2021/申论-C类.md",
+      "area": "江苏",
+      "year": 2021,
+      "variant": "C类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2021年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2021,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2021年江苏省公考《申论》题（C卷）及参考答案.pdf.md",
+          "sha256": "b152ae61267f714085f7e125425f922e2e8dd1735478dde741a695c1e3e8694b",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "aee3a615d37092b98ae3ed5817bd7e97f4c4630f7245cb19534a12d1d97ced58",
+      "task_key_hashes": {
+        "1": "8bf4b74b2d55d4b274399a89a7304d0140af710f492ba186a96baccc52701910",
+        "2": "428c614f2ba6a1bbd23b61bc8bbf37f941cb21e99cd1a1f943b1283126341fe1",
+        "3": "bb808957517d8a143128480ecd1152baabf96408174e1f84041aff6b53daa32f",
+        "4": "2d46d8ece7f7df0dc7a3947275f6c34663899564b5e53248e26ba1da6ae9bb58"
+      }
+    },
+    {
+      "path": "省考/江苏/2022/申论-A类.md",
+      "area": "江苏",
+      "year": 2022,
+      "variant": "A类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2022年江苏省公考《申论》真题试卷及答案【含解析】（A、普通选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2022,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2022年江苏公务员考试申论真题试卷（A卷）及答案.pdf.md",
+          "sha256": "c8e7157b13b5fbf81aa9aac5c65a07f57f42835dbef7971f69a12bc7c2cff44c",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "daf2f1ce4609dc1c2da7a2290788b35e930804630617eee08bf9fc52689adc41",
+      "task_key_hashes": {
+        "1": "37bc94aa7cb9a94aee44cbe85d500ddd95505434c5d8570b2685dc1889ec3851",
+        "2": "3bfb0db3d4d2e6263885006c2069b98b508163e553106a78160e5e02fad5403b",
+        "3": "e3fdbd2ab93977271de447fbbc8dbe67ed32f86fa399dfd787c7e93e81997f71",
+        "4": "58c82cea70db6a673812e0779b60a9c5af74a9b2de31ecf4c193a5fc0a0adbfa"
+      }
+    },
+    {
+      "path": "省考/江苏/2022/申论-B类.md",
+      "area": "江苏",
+      "year": 2022,
+      "variant": "B类",
+      "actual_main_task_containers": 5,
+      "catalog_task_counts": [
+        5
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2022年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2022,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2022年江苏公务员考试申论真题试卷（B卷）及答案.pdf.md",
+          "sha256": "3ff0c79bf83a05745e9a37ed3399cb0e0f7fb80d7a8b99479837f957e891431e",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "74e2c477c17ff84a601eca4a52a1bf5ad7d195b701bf7a367089d18e6c27b667",
+      "task_key_hashes": {
+        "1": "b4eb51635e7e87ad3282b5fbac69c489c5d568253d275f2a3aacadea787d54c4",
+        "2": "f87b7bd58c8f89ac75662fc491d3aaee490978ab372279875c856eb3eaf3e9cf",
+        "3": "d9a736d3c59f44e2904183d0abe6a7a22be1d93bff4d8bdda23aaa3dd00b009e",
+        "4": "48d0d92a6a450355530de858a16f2d9d843422cbcc807d707275f13065a730b4",
+        "5": "eff2db8e26d0e4182eb9069d67c8351d04aeaad9723311521a1752d838ef5eca"
+      }
+    },
+    {
+      "path": "省考/江苏/2022/申论-C类.md",
+      "area": "江苏",
+      "year": 2022,
+      "variant": "C类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2022年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2022,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2022年江苏公务员考试申论真题试卷（C卷）及答案.pdf.md",
+          "sha256": "7921f10da5255655122289a1a8fd98ebcf07d7f413d7e63377600717b948fa85",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "68752a783b76462e4c8af64a37eb0e205d68ab073db3c800be6a6d30322c3c4c",
+      "task_key_hashes": {
+        "1": "96c31e621cb9a3261c4a6de3b1510965d8c52e79c1c57b7c21faff5d01af0bb1",
+        "2": "1558e8227d2e3f397919647a5540640297515aa7af2eb4fa077e68dfd19faba7",
+        "3": "08f060da8df80bc10bf691959a14d7be5ba869cfb3492ea41f5fa7edb75375e2",
+        "4": "bf02214f667d743ab67897f693fe9f329c5970064fb8d19ec0f3d9ecf9e3155c"
+      }
+    },
+    {
+      "path": "省考/江苏/2023/申论-A类.md",
+      "area": "江苏",
+      "year": 2023,
+      "variant": "A类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2023年江苏省公考《申论》真题试卷及答案【含解析】（A、乡镇选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2023,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2023年江苏省公考《申论》真题（A类）及参考答案.pdf.md",
+          "sha256": "cb715541ec66589ea108084f5156f4e11002651987f24903b14f2404076b54f9",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "78495407817a76bdb3105d7d8fdb0b77dc4ddeaf95d03d3f25ed5909b92b7aa2",
+      "task_key_hashes": {
+        "1": "f2722b9b1ea554ed1cf26a6d19b90e34e00357cca7fe86b81e5b7b4be83c65ef",
+        "2": "080ffc0219b6de2c87a748f6c96430cf36e4b0c0819e6955a5f5d34f72aeea4d",
+        "3": "7ea089cfd8bc9bd131c24d2f3e1f74d0a95ef093a31853c543765d1c4e862b03",
+        "4": "bc73b5892c5dc6b987c28bbfea074eb9357bc58bb3feadd8b1ff82a0076bbb87"
+      }
+    },
+    {
+      "path": "省考/江苏/2023/申论-B类.md",
+      "area": "江苏",
+      "year": 2023,
+      "variant": "B类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2023年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2023,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2023年江苏省公考《申论》真题（B类）及参考答案.pdf.md",
+          "sha256": "7e3fca8f43c31841a08ad80c30536ae5dfca3b080c31f04bd50a2648eeff5782",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "94c1b8f3b17d56ec55c9bb47b12e9170b88664850581c1204c06d87de545374b",
+      "task_key_hashes": {
+        "1": "546ca0d49236084ee5290671618d3628e7f26e431e4d69b885fe43a490442394",
+        "2": "dc30bd7c7e716bffba7ee5db71affd7ec17eb0791b686cee3f52ae687d1e4cd9",
+        "3": "5a61ef65f23fad0ac808190d07e1a423cf2f5a1a6e8528e9ccae3063e7677965",
+        "4": "6e781b0f4e91a16fb194918b77e0261de40743e3a00c4a4efacddfcc097dc4c5"
+      }
+    },
+    {
+      "path": "省考/江苏/2023/申论-C类.md",
+      "area": "江苏",
+      "year": 2023,
+      "variant": "C类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2023年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2023,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2023年江苏省公考《申论》真题（C类）及参考答案.pdf.md",
+          "sha256": "efc859d44556887a9d96c38a272d8acf2d20ceb31d925b353caa17bbf83c798c",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "313fa65f39485151da6c55135d496de42cae79ad9d4b2e1ed44b7af0c35870ca",
+      "task_key_hashes": {
+        "1": "b2b58447ed141ea4b932d30649a1ec42c98dd3598b9b96ec31488380ae483a66",
+        "2": "7545ff31dd144bf545d2664c7a9166d0eb4cb11c3c703f467f2ffe0b70bfdf72",
+        "3": "98753a58f5d7a7bbd25a04d1f829ef0ab90c388ee4141acc16683fd8f4f0d657",
+        "4": "a258b142c84da5ac7cf5a2c380c961ce68f5dc16c27448f489f7c2e242b65aac"
+      }
+    },
+    {
+      "path": "省考/江苏/2024/申论-A、乡镇选调卷.md",
+      "area": "江苏",
+      "year": 2024,
+      "variant": "A、乡镇选调卷",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2024年江苏省公考《申论》真题试卷及答案【含解析】（A、乡镇选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2024,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2024 年公务员江苏省考《申论》题（A卷）及参考答案.pdf.md",
+          "sha256": "a4d0d30d557f99cb5a8fa5b73a1e6a1fecc64991b0e4660ebb66b5962fe5bd9e",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "0af947c4d82a58b6fba52bfa430c41762adfeb9fba4a7ddb928c18b3dcb715b4",
+      "task_key_hashes": {
+        "1": "0aa48895af3f82384683b91a02143e9e28305c5e7bf9c0236e2943a95046fa28",
+        "2": "7c69e51c57990805f6aa049cd527138132d99208274acd3b65432059e931b53e",
+        "3": "94b7dec703d9d7e7d7bc12753d961952d9e78bac51ced1e1cd5494bb84d9043d",
+        "4": "816aeb2d7c1d0235f16a7604a8f7abc0f2c74a94842e350631da02d7628fbbc7"
+      }
+    },
+    {
+      "path": "省考/江苏/2024/申论-B卷.md",
+      "area": "江苏",
+      "year": 2024,
+      "variant": "B卷",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2024年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2024,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2024 年公务员江苏省考《申论》题（B卷）及参考答案.pdf.md",
+          "sha256": "8f6c9332e38fe16020cb72719bdce2466ef1aa1dd41272acc33ac115777548fe",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "1452e6c4d4d44f16fcd2ab2f5ef0f1046094df7144afb3928c68032b5dd975c4",
+      "task_key_hashes": {
+        "1": "dd091a8cc18803d7f9d62121c54726487894f620dbe8ba3bfdda8f5ea3f11376",
+        "2": "ec1af390d733bb3175d89843838811ffd262722b85bba50c11b8c3a208445863",
+        "3": "54814b10d8803c64a027c528d196c48014472f742eaf6893a21fa854619ae3de",
+        "4": "9c68e1fd69ec233590cbcaf3edf8acd96d201ea333fd54339eb43ebde99ec4e9"
+      }
+    },
+    {
+      "path": "省考/江苏/2024/申论-C卷.md",
+      "area": "江苏",
+      "year": 2024,
+      "variant": "C卷",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2024年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2024,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【15】江苏公务员考试真题pdf版\\江苏公务员考试真题——申论05-24\\2024 年公务员江苏省考《申论》题（C卷）及参考答案.pdf.md",
+          "sha256": "2aa5404ff74e339175f8940c9adc67a5a34ef04b5cde881e2e2367bf7ba58409",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "fdb37feed6c3b2876b226a358ca6211e0f7a0f8da00b798a5be9cb3fec84ca89",
+      "task_key_hashes": {
+        "1": "74536c85c4ac5ebbc6ec78f2d5e7240e625cbf1e046fcd7511b99115655ff6bc",
+        "2": "49029e68b3436b0ce65f750d56141634b4c78b1677d2da7efa09a1e06e4a7f69",
+        "3": "10f53c9f2ededfb913c167d67765301cdd6a39a6137a1eb91a284affb424fa94",
+        "4": "c7af03d56519155200253d983b888461a48bbf49223bbe61370db4a833f0713e"
+      }
+    },
+    {
+      "path": "省考/江苏/2025/申论-A、乡镇选调卷.md",
+      "area": "江苏",
+      "year": 2025,
+      "variant": "A、乡镇选调卷",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2025年江苏省公考《申论》真题试卷及答案【含解析】（A、乡镇选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2025,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "ad464fd11dfec5010311ddb6c3b2f9bbb0c0f679f73a8979ccd75ba3248b38b3",
+      "task_key_hashes": {
+        "1": "090dca64e5d353ce0f267c4a4e36b38cb24258d4b87d0fb26f1f46cfc755b1d5",
+        "2": "aacc6ae1fa7b6fc11bb3af7cac2cddc7ccd25fd4dd1b34d9d521b28487eddcd9",
+        "3": "ab1f338eaf2b49a480d9e3972b7c92994d99436d38dd4bdfe46a2b541f2a087a",
+        "4": "59f829f8115e395d74e435223c5ec41976d6b095581ede0dc73087577def2028"
+      }
+    },
+    {
+      "path": "省考/江苏/2025/申论-B卷.md",
+      "area": "江苏",
+      "year": 2025,
+      "variant": "B卷",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2025年江苏省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2025,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "cdc0e256820fb24a9dfd0c0a34f98de7a5caf4146981e2fed402bbbf9f4a5f50",
+      "task_key_hashes": {
+        "1": "e437bb8f7d6f2b94aa4e9ad499fcc8e90b9955bb1fcba67a8ff4da461503a659",
+        "2": "aedff008bf8f67626721120485a9d7a1c8b383b171ad8fdd5dd922378e9352a7",
+        "3": "eaf9982c7433495f5d050b410a582702dc428895895e2eb6d04038097c7eb544",
+        "4": "52f3ffdc958a1e422996839f76934c20e1c262770f0b2d84a1a4e57452d09e20"
+      }
+    },
+    {
+      "path": "省考/江苏/2025/申论-C卷.md",
+      "area": "江苏",
+      "year": 2025,
+      "variant": "C卷",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2025年江苏省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=209",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "江苏",
+          "year": 2025,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "07bac1d669dce57370b88885ded3003953922d89edbed2d0ed330ddc44c7992e",
+      "task_key_hashes": {
+        "1": "ec800f22326e5db710324b5058249da6051455e3c9eef1af77628f65a5e40bc7",
+        "2": "7cbb9b151f9c426112cefe2146e462fbcc814f2b0e75d71a703ca45f7e97b6a7",
+        "3": "bfffe1eb5a85a7efd3363b0c9da751ce804ef22450626961a8dd23978ee6743d",
+        "4": "0596f6a04f4cea0aee258a80f93c7918432dcdeee9b554de7c4afaa4b5d06533"
+      }
+    },
+    {
+      "path": "省考/江苏/2026/申论-B类.md",
+      "area": "江苏",
+      "year": 2026,
+      "variant": "B类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [],
+      "catalog_evidence": [],
+      "owned_source_candidates": [],
+      "status": "no_same_year_variant_catalog",
+      "sha256": "7ca71588a6c5d3a517850efb5594556e4d42301de9fa7edacac750d1ad0ab4e3",
+      "task_key_hashes": {
+        "1": "e4cd4cda877188b6a999560869dd807404188f78803c168dc224f6f52d97e713",
+        "2": "6067e3baf4c5f2700eef0bfaaf20d6c54980fcaaca1e3a694cf832855f0e4ed1",
+        "3": "969fc2ea20dcc45be32c2d9ced12dc5dcaf9277f1834dba0e41e4a4ff7939c71",
+        "4": "9bf3dac41651a2ca54465a7ce5aa535207a56ac43b47e9e6e0659880f4d00ce3"
+      }
+    },
+    {
+      "path": "省考/浙江/2016/申论-A类.md",
+      "area": "浙江",
+      "year": 2016,
+      "variant": "A类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2016年公务员多省联考《申论》真题试卷及答案【含解析】（浙江A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2016,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2016年浙江公务员考试《申论》真题（A类）及参考答案.pdf.md",
+          "sha256": "ee15579c30f228e1356ba8d557bf35f552cfc0ed74120c8e4b7636c0e9aa8677",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "1b9e2ce4eb7bee39132264a4abb5381decdcc286761bbbd550c008fe65d0ad13",
+      "task_key_hashes": {
+        "1": "8c598c2afe61b54067b269d8d8a146ebc71fca66b1f82db425ee4828f84e50c7",
+        "2": "393a5a2c0f111c5838c2c1712d5c5db530bda8ae5d95b0d42cd7854e3ac672a1",
+        "3": "c4d8c55dd10572ef2d20eaa739210ee3b358661e2971667b47ffb2046ee4b106"
+      }
+    },
+    {
+      "path": "省考/浙江/2016/申论-B类.md",
+      "area": "浙江",
+      "year": 2016,
+      "variant": "B类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2016年公务员多省联考《申论》真题试卷及答案【含解析】（浙江B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2016,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2016年浙江公务员考试《申论》真题（B类）及参考答案.pdf.md",
+          "sha256": "adba124b99137831cd6bfd1ab76e0728930db598e59cc9f9b19412ec8774b8d7",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "21f936bb237bb3b6a403599bcf57c536b2417b8fbabffe7c80bf5aea4a8bee95",
+      "task_key_hashes": {
+        "1": "ae7e8bbe8565a5d1c66ab80343c67896603763296ca139a673df3f5cab7957c8",
+        "2": "f46fb97dbfd243779f9780ce17e38db00a64fd51d34486264abf16c9928a83a7",
+        "3": "cad4eb80b69432d8d5d65d8d501f3ead0e7fedbc28116f6e0b12c9ae7ed31467"
+      }
+    },
+    {
+      "path": "省考/浙江/2017/申论-A类.md",
+      "area": "浙江",
+      "year": 2017,
+      "variant": "A类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2017年公务员多省联考《申论》真题试卷及答案【含解析】（浙江A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2017,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2017年浙江公务员考试《申论》真题（A类）及参考答案.pdf.md",
+          "sha256": "1c0cd0c6ab61fdcc8ba3297e5de019d548708352ec4104d96e9438748be07256",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "b929a580d39c168685fb3c65c7af111abeb19f5439e285431bf9736bb590431b",
+      "task_key_hashes": {
+        "1": "2028c684970cf451d5597dfc2254e3239a8e230c3aaa5d67fa06bcf3f4206a18",
+        "2": "18034d81487586d33e28e3fcfb9398c0b8e00591f6e536941bf11125b18286ab",
+        "3": "072d05b60c0c3f7ad90bdb6ea41303ed542dc6f594fcadf5b48a451ea9c8b75e"
+      }
+    },
+    {
+      "path": "省考/浙江/2017/申论-B类.md",
+      "area": "浙江",
+      "year": 2017,
+      "variant": "B类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2017年公务员多省联考《申论》真题试卷及答案【含解析】（浙江B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2017,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2017年浙江公务员考试《申论》真题（B类）及参考答案.pdf.md",
+          "sha256": "9ffd34bc49000f04c2c6281ce4261fbd80f3a4a7ad5c9c4077f1e6971e3e2383",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "8fc990629b8b04439cc5d4b52993191b9042853038fca4ca2212baa8b1af92d6",
+      "task_key_hashes": {
+        "1": "a88e56483bf2a46e36cd04d7b506d7f6422c17b1fc3ff691a80b8c6594974a02",
+        "2": "18034d81487586d33e28e3fcfb9398c0b8e00591f6e536941bf11125b18286ab",
+        "3": "d459b51bebd1ef5dae08b084647ba0f904dbadada1410087048c627b9e45bedf"
+      }
+    },
+    {
+      "path": "省考/浙江/2018/申论-A类.md",
+      "area": "浙江",
+      "year": 2018,
+      "variant": "A类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2018年浙江省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2018,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2018年浙江公务员考试《申论》真题（A类）.pdf.md",
+          "sha256": "5be60e93b70e722664f4e2c5c435a10fe79b29a9a1d5dffcfd4977bfb2980fe4",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "90df84eb529cb83e4e213763c6a79c5e9516e1fdd2473955f81cc00081dc1717",
+      "task_key_hashes": {
+        "1": "f51b1a3abfaf41b04d250278f2d2a42a4888e5a131a94beeb487781e7e3c3b1d",
+        "2": "3f738a0b4f4cdce54cbe67f05780fc3267b0237eb8db006bc3c7b021d651d4ef",
+        "3": "a0f484f15875d864158277ab0dccd910c1e0f85d783e9182b0849483d6c97726"
+      }
+    },
+    {
+      "path": "省考/浙江/2018/申论-B类.md",
+      "area": "浙江",
+      "year": 2018,
+      "variant": "B类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2018年浙江省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2018,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2018年浙江公务员考试《申论》真题（B类）.pdf.md",
+          "sha256": "60b2bb17bb10ac1fe8463a699cac9b95cea5eb4c1dde79bb2d79357b359595c4",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "fac7264134113ee3337672cd840356fc1bdbf4f7e68061173b9a81fc71af3e99",
+      "task_key_hashes": {
+        "1": "f51b1a3abfaf41b04d250278f2d2a42a4888e5a131a94beeb487781e7e3c3b1d",
+        "2": "85d6838db916d204a96bfc9e814c0ddf31eef68eca65f48cb677317f5df6484f",
+        "3": "2d34f6d7e82217f28f915a5e779eb36bdadde5fecc35d5e5ab28f379ff7bbd51"
+      }
+    },
+    {
+      "path": "省考/浙江/2019/申论-A类.md",
+      "area": "浙江",
+      "year": 2019,
+      "variant": "A类",
+      "actual_main_task_containers": 4,
+      "catalog_task_counts": [
+        4
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2019年浙江省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2019,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2019年浙江公务员考试《申论》真题（A卷）及参考答案.pdf.md",
+          "sha256": "c129af4dc94f49d5a25690dab1b4f0338cdcc44419605918a4d9ed32eaa4349f",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "6f69d583726622e9f0259c36bda42785a297bfd9c9f175de2219b460b22a5102",
+      "task_key_hashes": {
+        "1": "121ea6376b77cd6180bdcde9adbac2deb3a16dc741d6b6698c773f1766ccbcdd",
+        "2": "7743690e18ed65f325bebb149f6c37b68ea6c02713de75fe546d9285fa7451d9",
+        "3": "bb7a07a5b2941940c9d97629ffd64c5be0dac1b6d64c9747cdccd53418aad9ca",
+        "4": "26f4ac1b7d70314703f6e6b910ec4d18ef219527f767d70799593242152b6438"
+      }
+    },
+    {
+      "path": "省考/浙江/2019/申论-B类.md",
+      "area": "浙江",
+      "year": 2019,
+      "variant": "B类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2019年浙江省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2019,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2019年浙江公务员考试《申论》真题（B卷）及参考答案.pdf.md",
+          "sha256": "db686a9a211d0cd0936b8ff553d4878992e467cfb159fd6a6457e4cc97dfdb53",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "f502372af10298df437a1dc4759aa4aa1ea7971190c1abe6bf2f11e689f4ec4d",
+      "task_key_hashes": {
+        "1": "2a595c458dacc7ac3037570b0755d3ff1559c46d44aa3b26e52a786d992172d8",
+        "2": "0f9781001fd11dbf5bc4bad872301a91a359393071286f37053830768a8a2955",
+        "3": "26f4ac1b7d70314703f6e6b910ec4d18ef219527f767d70799593242152b6438"
+      }
+    },
+    {
+      "path": "省考/浙江/2020/申论-A类.md",
+      "area": "浙江",
+      "year": 2020,
+      "variant": "A类",
+      "actual_main_task_containers": 2,
+      "catalog_task_counts": [
+        2
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2020年浙江省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 2,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2020,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2020年浙江省公考《申论》题（A类）及参考答案.pdf.md",
+          "sha256": "f455aa84afbccd3f3e120a1d5ed2a1ba523bbcc1993b5a2c4e0c9a41128b6a35",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "96ce32b8945452bf86168fd8831bf358e1adb51e5256ef5655825a48538dd69e",
+      "task_key_hashes": {
+        "1": "31fc16a3460395131ee7fdd87a1ce1dfeb562f840ed7206b11334d756f4f962e",
+        "2": "ce15fe6b795be59565f51c408597b168e99afd7a4f440b57ac60bd964bd7f902"
+      }
+    },
+    {
+      "path": "省考/浙江/2020/申论-B类.md",
+      "area": "浙江",
+      "year": 2020,
+      "variant": "B类",
+      "actual_main_task_containers": 2,
+      "catalog_task_counts": [
+        2
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2020年浙江省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 2,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2020,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2020年浙江省公考《申论》题（B类）及两套参考答案.pdf.md",
+          "sha256": "6ccbd417aef023badce7f14c622a8593c9002f307308d2c6c0e10d0fdc05e01a",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "65f715719c70cbb00d7a1f6dbb566f7a34b5314093ac2142a09fa7d3f8fc5155",
+      "task_key_hashes": {
+        "1": "0c743dddc857b832e4954c5200dc69b2afb76289337cd1e7005d599f0e943fdc",
+        "2": "1a81403aaf45183c75b47269d3011d10f1ff7adfcf663a0ee2416b44d69bff8c"
+      }
+    },
+    {
+      "path": "省考/浙江/2021/申论-A类.md",
+      "area": "浙江",
+      "year": 2021,
+      "variant": "A类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2021年浙江省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2021,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2021年浙江省公考《申论》题（A类）及参考答案.pdf.md",
+          "sha256": "053bdfd2508fe9327e4127d984978c3e39281b2fa7460ea9bd05e186eb27db38",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "a01839786203b2c6bb0428ecba2338866ac7f128878bf917ad137408117d59c9",
+      "task_key_hashes": {
+        "1": "f8d979551b8bd504ac5567caf9dcc11f74a5aea59f4d0a68cfb430740ab62f2c",
+        "2": "e1b6431a69f956ed233c1a91d0f01f8e856d067032dfdcf2b91891d966571f82",
+        "3": "6332fc50624853b28101e2285deee5295b8e1ef272e13a16d7cbd9fe16ca196d"
+      }
+    },
+    {
+      "path": "省考/浙江/2021/申论-B类.md",
+      "area": "浙江",
+      "year": 2021,
+      "variant": "B类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2021年浙江省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2021,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2021年浙江省公考《申论》题（B类）及参考答案.pdf.md",
+          "sha256": "003a769bc84413369a166ec23829fdc3e7dbcfd76d711c6185e37dc2b70b46bf",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "3f78b96918b46c8cb7da460df84bfb3c89c89d604e48a02b15137b1375b8d5a1",
+      "task_key_hashes": {
+        "1": "f8d979551b8bd504ac5567caf9dcc11f74a5aea59f4d0a68cfb430740ab62f2c",
+        "2": "ec8189c9560e25ca3e9b4f979346ff2575d3990c6a187536098e5f84b8772d1d",
+        "3": "6332fc50624853b28101e2285deee5295b8e1ef272e13a16d7cbd9fe16ca196d"
+      }
+    },
+    {
+      "path": "省考/浙江/2021/申论-C类.md",
+      "area": "浙江",
+      "year": 2021,
+      "variant": "C类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2021年浙江省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2021,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2021年浙江省公考《申论》题（C类）及参考答案.pdf.md",
+          "sha256": "d297f5b52e8b8f37bba32dc5b352ef5444a8b60d3e4787b0d8237746427305a6",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "b5403bf2420ee6d5fe7dce7381e2a0678f7a438e317d39b2626ab553453fddb3",
+      "task_key_hashes": {
+        "1": "f8d979551b8bd504ac5567caf9dcc11f74a5aea59f4d0a68cfb430740ab62f2c",
+        "2": "1318678072f808dda39d71420eb32fbc1b07663e4b590e541d6a6595341d169f",
+        "3": "6332fc50624853b28101e2285deee5295b8e1ef272e13a16d7cbd9fe16ca196d"
+      }
+    },
+    {
+      "path": "省考/浙江/2023/申论-A类.md",
+      "area": "浙江",
+      "year": 2023,
+      "variant": "A类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2023年浙江省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2023,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2023年浙江省公考《申论》真题（A类）及答案.pdf.md",
+          "sha256": "0014d5c6cbf097456ef7996d1d0deaf746124f318434f32f74764e48d8870435",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "f2f0c0aedd8b9d942d18c77f1d1dd9ec4f1621cb462a8435d7728c5c76df1590",
+      "task_key_hashes": {
+        "1": "7c304a2aaee8d916dec70f3f440947c23edfdd3596dc1486a0ac0b20f824a7b3",
+        "2": "318c858d4e4c3e0ec5d49253591f18c3559cbce4604ac50f09c8ab494ba40d06",
+        "3": "230c2cb4a1611e94e5fe6e6d2ffddfe0b6ddc1c24e919fcfc01078a27777210a"
+      }
+    },
+    {
+      "path": "省考/浙江/2023/申论-B类.md",
+      "area": "浙江",
+      "year": 2023,
+      "variant": "B类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2023年浙江省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2023,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2023年浙江省公考《申论》真题（B类）及答案.pdf.md",
+          "sha256": "2ae6481f54ac37d0c90ca7463ddc69726ad8474d9041f75792d5e282dc58428f",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "ac7f59016ec5669f71dd3eb16c2991c54fb3bf9175dfe5f4b0749f97ff76fd96",
+      "task_key_hashes": {
+        "1": "b53a7e9b63b8507a43bff412d3da51ca5ac5ac26d2a8321fe2bd333471b0501d",
+        "2": "75d831fba656a2a12b6d1dda0581776764d4af3692a6edb5597a2f2707a58158",
+        "3": "f37acbd9c3c6146cd47162a21f787d8afdb5847e1b0db05294be12a05630cde3"
+      }
+    },
+    {
+      "path": "省考/浙江/2023/申论-C类.md",
+      "area": "浙江",
+      "year": 2023,
+      "variant": "C类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2023年浙江省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2023,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2023年浙江省公考《申论》真题（C类）及答案.pdf.md",
+          "sha256": "79a2806874475fdec6a387eed5cff910e28e22e8a69eb251c90605c0418a957a",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "e97229a5f76935c34c880b30572adc6b3769939f343a1b7787bbd69de3d942af",
+      "task_key_hashes": {
+        "1": "3f71eff3682571057c946d7b5dc75ae777abc7a5c03bcdf01481b0f79a722bfb",
+        "2": "9dcdf9e20e94046a6efc12f189199b1dea9ef8e379dce12e0c1d9adb6f3c75b7",
+        "3": "c22d8aedbf369a80a5c81811e223b0f68b167b94444ddec3f196c8210808d6f5"
+      }
+    },
+    {
+      "path": "省考/浙江/2024/申论-A类.md",
+      "area": "浙江",
+      "year": 2024,
+      "variant": "A类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2024年浙江省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2024,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2024年浙江申论真题（A卷）题及参考答案.pdf.md",
+          "sha256": "fc09bc8b8e9e38e892b92e1299b06d02ef2511398a3098a2457f89045769ca02",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "0f624845382b8b9207e8d530212290bbecc1e7f649c53e5904c73bf8372fecf6",
+      "task_key_hashes": {
+        "1": "0870e443858f61e0d2515e3f3aa0e37235efc22fa11395f6dfbb73ea474ba2b2",
+        "2": "f15c6cab15058b8ca511fcb19564e4123a10917da4d82c57a2957164106c6688",
+        "3": "e13b54cbbc7c9323d47ec3b4aac301a916e004a7dac34e0f4cd4746cee959e9e"
+      }
+    },
+    {
+      "path": "省考/浙江/2024/申论-B类.md",
+      "area": "浙江",
+      "year": 2024,
+      "variant": "B类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2024年浙江省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2024,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2024年浙江申论真题（B卷）题及参考答案.pdf.md",
+          "sha256": "3f44596fb3cc722c4cfbff68459e20132dbe2ec17f07ab1a23188a05431cf262",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "61f390ab17e8941b3ab369d9c31a8addc13663cd74cf1358c97e6a459e71d5b2",
+      "task_key_hashes": {
+        "1": "03e7b3ff1d7d1e7debe9b1b62df7b56b382af032803f9151800123b1f77678d6",
+        "2": "f15c6cab15058b8ca511fcb19564e4123a10917da4d82c57a2957164106c6688",
+        "3": "2d3b10cec817b8cd913a3d27a0c5e223b31829ef4ffa8b5827a41f2b6c197c6e"
+      }
+    },
+    {
+      "path": "省考/浙江/2024/申论-C类.md",
+      "area": "浙江",
+      "year": 2024,
+      "variant": "C类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2024年浙江省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2024,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [
+        {
+          "path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【30】浙江公务员考试真题pdf版\\浙江公务员考试真题——申论04-24【缺22】\\2024年浙江申论真题（C卷）题及参考答案.pdf.md",
+          "sha256": "135601680dd6fee4f3e0df76cd5635804b32ab313b3388af27053f32718b29eb",
+          "basename_identity_only": true
+        }
+      ],
+      "status": "same_catalog_task_count",
+      "sha256": "0b65a9262c656b71a75d570131234ab07c0d6044e0749274d3f07e44a0282aec",
+      "task_key_hashes": {
+        "1": "d4eb66f12df423778a05594e66b481e54f2715808f058998f19ee83a738d2e29",
+        "2": "c908d01cc18d2ec9c8f2529501a457ee36ec485e5cd3312bc558f67b412466e6",
+        "3": "fc50b393dec2d70ece841e6428d4376f98e8ab884528df5017e78a678d714279"
+      }
+    },
+    {
+      "path": "省考/浙江/2025/申论-A类.md",
+      "area": "浙江",
+      "year": 2025,
+      "variant": "A类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2025年浙江省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2025,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "37a0d7cefa0a0875be931bbdcbdc52628c658854fd2907d98cb694a992171ede",
+      "task_key_hashes": {
+        "1": "33f91f890da0ce2f271abe26dfa0d0fb7b03e71dfb852d196d23e3272aac3061",
+        "2": "e3bfbf39a5d5465f18aca6cb2c931c12f123b2f6051c22d2081df54dc86086db",
+        "3": "ae69d81b49f5589ac271131bf8ffb21a0c00100a13af4ca13bfe64b3c59f2e49"
+      }
+    },
+    {
+      "path": "省考/浙江/2025/申论-B类.md",
+      "area": "浙江",
+      "year": 2025,
+      "variant": "B类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2025年浙江省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2025,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "bf5343d9e10f478891307fea5439648e5eacb6d6fe4017de67c542cf85cd327b",
+      "task_key_hashes": {
+        "1": "23bb1296e9e6bacec33ad0820378016e724448d1313b1ff4b0d7a72ff54a82ab",
+        "2": "e6f55c2352f36c1742177f48b0b45722c02bc932f063a8b3f473a0dfc98dccc0",
+        "3": "9fc1f101df00c78c0d7e7a9c10f6d91d055e34adbd87e8e1eeb6375319384a16"
+      }
+    },
+    {
+      "path": "省考/浙江/2025/申论-C类.md",
+      "area": "浙江",
+      "year": 2025,
+      "variant": "C类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2025年浙江省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2025,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "5b2588a31bcffa827f8f28d44a0f23e841ac3de049a1ecac4cee4b5424e8d17f",
+      "task_key_hashes": {
+        "1": "68c7cf38e6b835158f88f11df0ff3c4d3dd4126c1a83acc7c293159bc0977d2e",
+        "2": "a4cf0895babdf148325ed5227ab5b6d3246f11fe7c27f89ef0acc6eaca51bafe",
+        "3": "dc4376dca8f8be900ca9988fbd3e8dc1bf46a3c823707d0b4d3a6b05569f0b9c"
+      }
+    },
+    {
+      "path": "省考/浙江/2026/申论-A类.md",
+      "area": "浙江",
+      "year": 2026,
+      "variant": "A类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2026年浙江省公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2026,
+          "variant": "A"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "db55f270635192ad7b198c9f9c120ceec023a54f0fd9a64457b45abb89253b44",
+      "task_key_hashes": {
+        "1": "e81812b08302a51f37aaff69399f580ac65c76f93b70799bdb6e791aaa4be4ae",
+        "2": "dd4837b999eff5081c1f5deab25979973947159ef2375634ee9bd72955c48998",
+        "3": "f179c7d6047fa4aa21d08c99db73ed7b21f61da2e37a2e21e33811abd16dc060"
+      }
+    },
+    {
+      "path": "省考/浙江/2026/申论-B类.md",
+      "area": "浙江",
+      "year": 2026,
+      "variant": "B类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2026年浙江省公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2026,
+          "variant": "B"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "2506b1bd49301a4f2dcdb9e73080a5596898cf0163e86945228e9c8661c1c8ec",
+      "task_key_hashes": {
+        "1": "b9c10512df73282b323ab712ae1031e01a7191e621d5b0b0110d9ef2dc571ec9",
+        "2": "b31b9d771e6ca17624fe336e7f078e047ac768edf8befbbea187ba9a7cd5fa65",
+        "3": "ff51ce1ea6a909995844318083d96c26b35dc523ba773f75736464656ffacfc8"
+      }
+    },
+    {
+      "path": "省考/浙江/2026/申论-C类.md",
+      "area": "浙江",
+      "year": 2026,
+      "variant": "C类",
+      "actual_main_task_containers": 3,
+      "catalog_task_counts": [
+        3
+      ],
+      "catalog_evidence": [
+        {
+          "title": "2026年浙江省公考《申论》真题试卷及答案【含解析】（C卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=224",
+          "retrieved": "2026-10-15",
+          "status": "fetched_catalog",
+          "area": "浙江",
+          "year": 2026,
+          "variant": "C"
+        }
+      ],
+      "owned_source_candidates": [],
+      "status": "same_catalog_task_count",
+      "sha256": "fb7bc53b773f0a79ca63d4f50aba59776bc0ad12fc86691082e24455a5f27c61",
+      "task_key_hashes": {
+        "1": "07ac2226cfb79e4c830b38bb0a754269092f2c6240f3509ff1b1de2666da9d6e",
+        "2": "dd4837b999eff5081c1f5deab25979973947159ef2375634ee9bd72955c48998",
+        "3": "85ee32e91837cd0c32be51ca95442a9b9cf5176f6df71109d1c4b6c683a84395"
+      }
+    }
+  ],
+  "boundaries": [
+    "Only existing national/Jiangsu/Zhejiang papers, no new province or unknown exam added.",
+    "Catalog count checks prove task counts, not official word-for-word material authenticity. Owned source basename candidates are explicitly not claimed as full identity verification.",
+    "Jiangsu2022B has five catalog task positions; Zhejiang2020AB have two each. Neither is forcibly changed to four/three.",
+    "National2016地市 is four main questions/five subtask positions, independently verified against the owned real paper."
+  ]
+}

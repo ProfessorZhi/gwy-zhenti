@@ -1,0 +1,1032 @@
+{
+  "scope_areas": [
+    "上海",
+    "云南",
+    "内蒙古",
+    "吉林",
+    "四川",
+    "天津",
+    "宁夏",
+    "安徽",
+    "山东",
+    "山西",
+    "广东",
+    "广西",
+    "新疆",
+    "海南",
+    "西藏",
+    "重庆",
+    "福建"
+  ],
+  "answers_delivered": 143,
+  "delivered_papers": 64,
+  "authorship_counts": {
+    "ai_original": 143
+  },
+  "parsed_task_positions": 1258,
+  "missing": [],
+  "unparsed": [],
+  "answers": [
+    {
+      "path": "省考/上海/2017/申论-行政执法卷.md",
+      "number": 1,
+      "characters": 177,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "5e13b709547b9ee37c5c0d7e254bf627d9d651e605d8b75b4cdb84c810ecff3d"
+    },
+    {
+      "path": "省考/上海/2017/申论-行政执法卷.md",
+      "number": 2,
+      "characters": 201,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "9e2979958f32217eb35038d32733a0b75147d2b02aec7d3750c7dc7be28bbf4f"
+    },
+    {
+      "path": "省考/上海/2017/申论-行政执法卷.md",
+      "number": 3,
+      "characters": 903,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "ab3fc2a0eb44597798694932316598df0c0cbc0a6f8c3c3a5c899d176e6f04cd"
+    },
+    {
+      "path": "省考/上海/2020/申论-行政执法卷.md",
+      "number": 1,
+      "characters": 141,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "85d3fbdc1eef292d24ca2cac8fbae9e9f14d31d7cc85eced4c9ea598f80ae5cb"
+    },
+    {
+      "path": "省考/上海/2020/申论-行政执法卷.md",
+      "number": 2,
+      "characters": 200,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "dfbac0774eff25a65a83238376d831feffced55d4431387c197fb942356e536c"
+    },
+    {
+      "path": "省考/上海/2020/申论-行政执法卷.md",
+      "number": 3,
+      "characters": 860,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "6d7ddcb8de0e7feb2bd72a347adab7c0d16e7201dfdd24682acd7d3e781ac96f"
+    },
+    {
+      "path": "省考/云南/2025/申论-县乡卷.md",
+      "number": 1,
+      "characters": 235,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "dd5d75fc71922505c1cb07badb85b3867ac621352d20e26142a9cfa130e94201"
+    },
+    {
+      "path": "省考/云南/2025/申论-县乡卷.md",
+      "number": 2,
+      "characters": 296,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "20224bce54a5cd4b73f3b5f76c8b4d97d526762c8cc3fe0a27bdf59a3ec0677c"
+    },
+    {
+      "path": "省考/云南/2025/申论-县乡卷.md",
+      "number": 3,
+      "characters": 407,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "81ee62a6028cfd1cd16979ef1818ff7d81eed4cedebe1195e8660edf908041ca"
+    },
+    {
+      "path": "省考/云南/2025/申论-县乡卷.md",
+      "number": 4,
+      "characters": 1067,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "2f885aae739c9ee3ef4063069b709427de6ad42ba798ab4f04f4554abf8347db"
+    },
+    {
+      "path": "省考/内蒙古/2021/申论-乡镇.md",
+      "number": 1,
+      "characters": 243,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "d123504e60b336b665c12d5d10ef98617037a25b6b99de2984133571782dfc3b"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-旗县卷.md",
+      "number": 1,
+      "characters": 330,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "58ef6e991027e1070f3dfe57a63e762d00c8587241f05d3a00bfe4fbdd8c29ba"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-旗县卷.md",
+      "number": 2,
+      "characters": 172,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "e59ed4f469d61c0ed3627b73b06aeb5d3591da19e77304d32ebfa957e81a2011"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-旗县卷.md",
+      "number": 4,
+      "characters": 863,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "6756edf264ed4819bccbba9be8f7f80f815c460cbc67911f5a013558391f027b"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-盟市卷.md",
+      "number": 1,
+      "characters": 358,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "6262e2960931df65a2aaed7000f847f000948b1e1979ec1a256708a9bfc7ff13"
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-盟市卷.md",
+      "number": 3,
+      "characters": 357,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "a6bbbd5c904f9d72d78a65a0f8bede337e006f3d707a8ee63c889601377a0483"
+    },
+    {
+      "path": "省考/吉林/2018/申论-甲级.md",
+      "number": 1,
+      "characters": 156,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "81ca9263d5175c09194f519d18bfe14177382676e40c89066071e6efbb99aab9"
+    },
+    {
+      "path": "省考/吉林/2018/申论-甲级.md",
+      "number": 2,
+      "characters": 255,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "4f59846bda64e02e172dc203f0a3572a024ac886d6b60774e01f92be8d1da16b"
+    },
+    {
+      "path": "省考/吉林/2018/申论-甲级.md",
+      "number": 3,
+      "characters": 365,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "94187696e0faba905f5d18a614ddad6e5c54710ecc74cecf6d15bc9ad17abf28"
+    },
+    {
+      "path": "省考/吉林/2018/申论-甲级.md",
+      "number": 4,
+      "characters": 936,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "17b5fa5dfa455efb8e42e9e519475dce12d3dabf99f97bef4c265f25b8550c05"
+    },
+    {
+      "path": "省考/内蒙古/2022/申论-盟市.md",
+      "number": 4,
+      "characters": 1061,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "3a26d3c352bb7a4605cc16591fa8e74850d2719c6d4cdc8a624bef3ad348a99f"
+    },
+    {
+      "path": "省考/云南/2022/申论-省市卷.md",
+      "number": 4,
+      "characters": 1113,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "2f21845bfe2351f082abaae62caf75fe5c9d21a5ef7a5c63ddee1ab1954365d2"
+    },
+    {
+      "path": "省考/四川/2016/申论-下半年.md",
+      "number": 1,
+      "characters": 233,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "2af617044d08e0e89045b4e6f8eacead8bcd85f4cc1431383c5aa1005d2a8271"
+    },
+    {
+      "path": "省考/四川/2016/申论-下半年.md",
+      "number": 2,
+      "characters": 370,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "224e8657df1c3299adc059746b2f32900a71ed3e5191f4c1815789b07b80a6e2"
+    },
+    {
+      "path": "省考/四川/2016/申论-下半年.md",
+      "number": 3,
+      "characters": 903,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "6ffd609abeb7cf71fa4fa21d664dac3529d57af32e0dc514e6735b773b4335ee"
+    },
+    {
+      "path": "省考/四川/2023/申论-上半年行政执法卷.md",
+      "number": 1,
+      "characters": 309,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "e72575414b8a6c3c66af01a9d160bf84762ffd86b537dcd33031c0f1ffca7182"
+    },
+    {
+      "path": "省考/四川/2023/申论-上半年行政执法卷.md",
+      "number": 3,
+      "characters": 309,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "129187647b21fbf0fc58970c1a163097f85fa5c358b46a364d4bae770b993ef8"
+    },
+    {
+      "path": "省考/四川/2026/申论-县乡、普通选调卷.md",
+      "number": 3,
+      "characters": 342,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "9956626660285470899657fe17fce54977ffdf2bf703f57e8f7b54abf78b908f"
+    },
+    {
+      "path": "省考/天津/2017/申论-统考__t443.md",
+      "number": 1,
+      "characters": 184,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "55cc8aac62880eed81d44da782f13c479bce54cf0dcb4f479389a8eb45535283"
+    },
+    {
+      "path": "省考/天津/2017/申论-统考__t443.md",
+      "number": 2,
+      "characters": 245,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "7c6f6f5ffd0759ce757c2cccbb6c2647fa0b9aa76b72cb25599705e67743a360"
+    },
+    {
+      "path": "省考/天津/2017/申论-统考__t443.md",
+      "number": 3,
+      "characters": 370,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "0d628859613f953b45c477c59acf9256caf056457c966e31892ac9d94eec3a8f"
+    },
+    {
+      "path": "省考/天津/2017/申论-统考__t443.md",
+      "number": 4,
+      "characters": 1072,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "dc702f4b69683a3ff39b4110707643e2af24f0f77a10c6bc1b19e4baaee70f30"
+    },
+    {
+      "path": "省考/天津/2022/申论-市级.md",
+      "number": 3,
+      "characters": 1061,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "3a26d3c352bb7a4605cc16591fa8e74850d2719c6d4cdc8a624bef3ad348a99f"
+    },
+    {
+      "path": "省考/天津/2023/申论-乡镇卷.md",
+      "number": 3,
+      "characters": 372,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "d6ac5d7c283b350d3b5544ad5f77c123c36fe17a49a1891e28fdc3fa74c6ebde"
+    },
+    {
+      "path": "省考/天津/2023/申论-市区卷.md",
+      "number": 2,
+      "characters": 346,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "33bfac7b05c409ed788ca25287d061e25e283be40e6bccde8db1f06bc6a78990"
+    },
+    {
+      "path": "省考/天津/2023/申论-市区卷.md",
+      "number": 3,
+      "characters": 346,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "85398747335900aae3cacd7d93ba66ee277ceb839284fa75d0314d08062dbc96"
+    },
+    {
+      "path": "省考/天津/2023/申论-市区卷.md",
+      "number": 4,
+      "characters": 1024,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "1b6ee3e15700ae98ff06205892391ad2de4d91293e72aae4d2029a061f7ec6d2"
+    },
+    {
+      "path": "省考/天津/2025/申论-市区卷.md",
+      "number": 3,
+      "characters": 377,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "52422d3f3a4eb9bf45e3931c833d4d6f252e9e62d441dd15c68474a7ea66f925"
+    },
+    {
+      "path": "省考/天津/2025/申论-街镇卷.md",
+      "number": 1,
+      "characters": 232,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "cf759c44feab68cbbe2afca5754797814be31bf8996468583b42829e9690b23f"
+    },
+    {
+      "path": "省考/宁夏/2023/申论-A类.md",
+      "number": 1,
+      "characters": 238,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "edad1b25db8ecfff5a3afe233d4e9eade875d54bcf12ef62c9a6e40646b30f88"
+    },
+    {
+      "path": "省考/宁夏/2023/申论-A类.md",
+      "number": 3,
+      "characters": 360,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "c85b39b8d4d927522cbe78c3febc60a49016076a894ada190e406151c25171db"
+    },
+    {
+      "path": "省考/宁夏/2023/申论-C类.md",
+      "number": 2,
+      "characters": 298,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "e1c19622c484db93ee327caae423ade223d33f46e4a9da00e0d79239e3d4f31d"
+    },
+    {
+      "path": "省考/宁夏/2023/申论-C类.md",
+      "number": 3,
+      "characters": 309,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "129187647b21fbf0fc58970c1a163097f85fa5c358b46a364d4bae770b993ef8"
+    },
+    {
+      "path": "省考/宁夏/2023/申论-C类.md",
+      "number": 4,
+      "characters": 945,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "cf1ffb24daeb666b52bede1d95e5f15215d0e755658fed181832aa874490a710"
+    },
+    {
+      "path": "省考/安徽/2025/申论-A类.md",
+      "number": 1,
+      "characters": 234,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "1faa9692fc7155928e856342eaf480cece6c26eedb729a054e792c115b3c6699"
+    },
+    {
+      "path": "省考/安徽/2025/申论-A类.md",
+      "number": 2,
+      "characters": 293,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "ba3d225b053054a73b852d6367d42a9c7afde9c0aec139def97f086e7eb50835"
+    },
+    {
+      "path": "省考/安徽/2025/申论-A类.md",
+      "number": 3,
+      "characters": 469,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "5b1ac204167f8da1ab2508a2f5c55346bbcaa34836c44a5df0f71d2a7e0c62a9"
+    },
+    {
+      "path": "省考/安徽/2025/申论-B类.md",
+      "number": 1,
+      "characters": 222,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "6e504393ddb06b05565ebbc2167adc7acc09f935b324171f979668e18955d7e6"
+    },
+    {
+      "path": "省考/安徽/2025/申论-B类.md",
+      "number": 3,
+      "characters": 509,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "5194a214b0ad96d3e0ff0baae18350be1c127adbcd7bc027f487690cc06cca39"
+    },
+    {
+      "path": "省考/安徽/2025/申论-B类.md",
+      "number": 4,
+      "characters": 883,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "ac09a7fafad09756c9df0a8829ed1ceda98a22322afe84e5c2cf93b5d8fa44ea"
+    },
+    {
+      "path": "省考/安徽/2025/申论-C类.md",
+      "number": 1,
+      "characters": 170,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "7eafe5b6242af95f3cf85586e1a0f48d45ffb6dbad4e27099574258b233d9dc4"
+    },
+    {
+      "path": "省考/安徽/2025/申论-C类.md",
+      "number": 2,
+      "characters": 238,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "b82edf69edf97f824e2d3ba769698dc2e5ea94643a3015a7bb45507ae4250cbd"
+    },
+    {
+      "path": "省考/安徽/2025/申论-C类.md",
+      "number": 3,
+      "characters": 406,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "3e36de0cea932cd3f2856c74dfec23980f8600dca1706a7559d5710b630060a6"
+    },
+    {
+      "path": "省考/安徽/2025/申论-C类.md",
+      "number": 4,
+      "characters": 960,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "8ca7ffb165345ef125ee0ceeebca8487d8ba56431422d99311f566bbf6406789"
+    },
+    {
+      "path": "省考/安徽/2026/申论-B类.md",
+      "number": 1,
+      "characters": 225,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "2bf4533df4305df756e3607f28980198cdaf96a61a298e9d995ab4df083e1cf8"
+    },
+    {
+      "path": "省考/安徽/2026/申论-B类.md",
+      "number": 3,
+      "characters": 434,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "f64edab8c80b9fdbf11f93e8cbf87c671a7ed976e3b2a8aeb7331f2d19658e14"
+    },
+    {
+      "path": "省考/安徽/2026/申论-B类.md",
+      "number": 4,
+      "characters": 908,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "c3fcb122a5bf99e84ce433753aceb42e4a9d8a430446f544866eddf2369e6544"
+    },
+    {
+      "path": "省考/安徽/2026/申论-C类.md",
+      "number": 1,
+      "characters": 195,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "01364a758221835e52d527a0d03e12156c44955de2eb53e778e9386b742a6732"
+    },
+    {
+      "path": "省考/安徽/2026/申论-C类.md",
+      "number": 2,
+      "characters": 291,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "0452beec33410a62d30e03e553eb7863d988b71075db350323ba059d944c9115"
+    },
+    {
+      "path": "省考/安徽/2026/申论-C类.md",
+      "number": 3,
+      "characters": 425,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "762e2982d33043585a63d25c5e750a23a5603ef50bd858eff046be381140a6fe"
+    },
+    {
+      "path": "省考/安徽/2026/申论-C类.md",
+      "number": 4,
+      "characters": 901,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "373bce45e330e345b986f49d6107e6b12fecbbf0cd5e5d21aa19243a75fc707f"
+    },
+    {
+      "path": "省考/山东/2019/申论-B类.md",
+      "number": 3,
+      "characters": 308,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "403c118a85c543da6043d6e1719ab3072496df4c309cf9d4957426a6204e9cac"
+    },
+    {
+      "path": "省考/山东/2024/申论-B卷.md",
+      "number": 1,
+      "characters": 207,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "f8def6d984cc907cb1e50eedf5189fd8d705555ab6ba4ac279bc5bbedbcce37f"
+    },
+    {
+      "path": "省考/山东/2024/申论-B卷.md",
+      "number": 4,
+      "characters": 1058,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "a86c89d01d803a36d76a013bf035ec3d83d558a0fc720e8d726cc36d1f8f13f4"
+    },
+    {
+      "path": "省考/山东/2025/申论-C卷.md",
+      "number": 1,
+      "characters": 195,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "6f7104574fd89395988dda6280023a025442eb5efa1ad1b38f1a4e2088a7f115"
+    },
+    {
+      "path": "省考/山东/2025/申论-C卷.md",
+      "number": 2,
+      "characters": 262,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "e213a10c8b35bdc766f94a3cc8041182cc88440028b85b3c2f479470388d1351"
+    },
+    {
+      "path": "省考/山东/2025/申论-C卷.md",
+      "number": 3,
+      "characters": 388,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "be1187c946e30c05985df8f1d5da705984ee9b3f330af59731578d4702065784"
+    },
+    {
+      "path": "省考/山东/2025/申论-C卷.md",
+      "number": 4,
+      "characters": 1017,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "080da2c32e3599a6c87be414a7b573dd5606a4341c3c56c3b38ea2d417eff849"
+    },
+    {
+      "path": "省考/山西/2019/申论-乡镇.md",
+      "number": 3,
+      "characters": 286,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "071334c6f5c96092175d09b81f98be27cef9fa00bdc1cd3097a71d6da23dc1ce"
+    },
+    {
+      "path": "省考/山西/2019/申论-乡镇.md",
+      "number": 4,
+      "characters": 514,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "5a2f8a4bbad112fe8bb433e93f5929e3f3afbf2cd3b75e71c3d859ebc13d0055"
+    },
+    {
+      "path": "省考/山西/2022/申论-县乡.md",
+      "number": 2,
+      "characters": 276,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "de54db6dbae19596eacf094eedc5e5797b2ef20c9891789731dd5832178d9b8a"
+    },
+    {
+      "path": "省考/山西/2022/申论-省市.md",
+      "number": 2,
+      "characters": 259,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "ad377f117d36867f463735dd20ba1d8b14ef4fd7955efaa7afc999ae591598f8"
+    },
+    {
+      "path": "省考/山西/2022/申论-省市.md",
+      "number": 4,
+      "characters": 1061,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "3a26d3c352bb7a4605cc16591fa8e74850d2719c6d4cdc8a624bef3ad348a99f"
+    },
+    {
+      "path": "省考/山西/2025/申论-省市卷.md",
+      "number": 1,
+      "characters": 209,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "b35dbb57a7f435b4c014cf95206544872e18135cca16ce8c6ea6c425f28f3102"
+    },
+    {
+      "path": "省考/山西/2025/申论-省市卷.md",
+      "number": 2,
+      "characters": 274,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "8e25b67345de027d72342dcffe8a0d8f7e77dad3c223b2198827c4ca7059e13b"
+    },
+    {
+      "path": "省考/山西/2026/申论-县乡卷.md",
+      "number": 1,
+      "characters": 272,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "03d1db1577ad30cf49be41e9037b7fa2060d286c8047c14b1df3cfa5d4195aef"
+    },
+    {
+      "path": "省考/山西/2026/申论-县乡卷.md",
+      "number": 2,
+      "characters": 257,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "5e19b08a6777395a14c308b9f763670e35e2aba103785e9967ae5e2c60cface7"
+    },
+    {
+      "path": "省考/山西/2026/申论-县乡卷.md",
+      "number": 3,
+      "characters": 430,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "a5c37f109052f337c69d0651173cc48b23fcd8c6276b768a433053a48728d3aa"
+    },
+    {
+      "path": "省考/山西/2026/申论-县乡卷.md",
+      "number": 4,
+      "characters": 1039,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "83222311fcf044ebba1d9473a63d04a4a27c15255e34b9fc243d2440493aac9e"
+    },
+    {
+      "path": "省考/山西/2025/申论-县乡卷.md",
+      "number": 4,
+      "characters": 1035,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "35ff25c731dd1ffb2de5aa7aca87dbdaf6e5ba18b335181d47e70e47a54ee1c5"
+    },
+    {
+      "path": "省考/广东/2026/申论-行政执法.md",
+      "number": 1,
+      "characters": 147,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "da3a4208831ccfa13f9eab38dc9a200833000372b0930f4d2e79a2fc099a45f7"
+    },
+    {
+      "path": "省考/新疆/2018/申论-下半年.md",
+      "number": 1,
+      "characters": 172,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "9d84a2ec93199a2e056c02e6ef183d0c875effd839cfdd0e4b3e4dc84297c3d1"
+    },
+    {
+      "path": "省考/新疆/2018/申论-下半年.md",
+      "number": 2,
+      "characters": 280,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "05988de619bec77609d6617d883015075fdeafe26144daa9d00ed63e636c3c53"
+    },
+    {
+      "path": "省考/新疆/2018/申论-下半年.md",
+      "number": 3,
+      "characters": 986,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "8ca0144334ceb9bcefb68a23d4742f49df12d30881c9e4007662297a1cb32dc8"
+    },
+    {
+      "path": "省考/新疆/2019/申论-县级.md",
+      "number": 4,
+      "characters": 1047,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "728a6ee7edcdaaaa2d08a39d2870772c3f1db8f97b928d2d78872233f2751ba6"
+    },
+    {
+      "path": "省考/新疆/2025/申论-县乡卷.md",
+      "number": 3,
+      "characters": 420,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "db7564784587882cf874c9774cfbf54068a8230906ba9b0b53881d4c003e7e3f"
+    },
+    {
+      "path": "省考/新疆/2025/申论-县乡卷.md",
+      "number": 4,
+      "characters": 1035,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "35ff25c731dd1ffb2de5aa7aca87dbdaf6e5ba18b335181d47e70e47a54ee1c5"
+    },
+    {
+      "path": "省考/新疆/2025/申论-行政执法卷.md",
+      "number": 1,
+      "characters": 179,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "e042e254faf4aa6538d47a82fc15280215250f8cbf69ee423286cee3a9b5e483"
+    },
+    {
+      "path": "省考/新疆/2025/申论-行政执法卷.md",
+      "number": 2,
+      "characters": 238,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "b82edf69edf97f824e2d3ba769698dc2e5ea94643a3015a7bb45507ae4250cbd"
+    },
+    {
+      "path": "省考/新疆/2025/申论-行政执法卷.md",
+      "number": 3,
+      "characters": 400,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "618bead12a9e37ae0dd21a473b9778132f5340b50d2c5d8218723a3259c778bc"
+    },
+    {
+      "path": "省考/福建/2018/申论-县级卷.md",
+      "number": 1,
+      "characters": 140,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "ae7eef4b58532c3400464877f6ba829ebb06b83ca3c9d0318d35a88f53f4c25b"
+    },
+    {
+      "path": "省考/福建/2018/申论-县级卷.md",
+      "number": 2,
+      "characters": 269,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "9d8f1b5adc42c4d8429fc87055672e66458de001af03462fee517f4f4b0d5d14"
+    },
+    {
+      "path": "省考/福建/2018/申论-县级卷.md",
+      "number": 3,
+      "characters": 1036,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "571a5cfc0464b9dda467fc616b298b5c556ef81012627d4692e8f4a225982a51"
+    },
+    {
+      "path": "省考/福建/2021/申论-县级.md",
+      "number": 3,
+      "characters": 1083,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "fef9183f98f033bf6a48cff8e2ef50d8167779fa4305c3e082933d607d1beaaf"
+    },
+    {
+      "path": "省考/福建/2022/申论-县乡.md",
+      "number": 2,
+      "characters": 279,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "bd1d23afeca3ec5379e5e2100063b1aa00081786274ea17046a43c6842a5fae0"
+    },
+    {
+      "path": "省考/福建/2024/申论-行政执法.md",
+      "number": 2,
+      "characters": 272,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "9e12565b35c477d0f5728b45683ccc898cab9b0c84ddc48fdb1331d169980833"
+    },
+    {
+      "path": "省考/福建/2025/申论-通用卷.md",
+      "number": 3,
+      "characters": 395,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "d806ff4f73db08046d66c211d3b98a70fcbd954b0b99602604cbf965a4d6d700"
+    },
+    {
+      "path": "省考/福建/2025/申论-通用卷.md",
+      "number": 4,
+      "characters": 1067,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "2f885aae739c9ee3ef4063069b709427de6ad42ba798ab4f04f4554abf8347db"
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "number": 1,
+      "characters": 203,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "91dbdfec349ad5d91a859dc02449557cdb283a46fa83cb5545fe1f99e04dd494"
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "number": 2,
+      "characters": 318,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "6ab7ee147259dd0ee1763cfe7d81840d4e2d4e811c0cc0754351cf1eb8020957"
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "number": 3,
+      "characters": 411,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "203da3af0a2e43c4fd21398dda21c9ff4feddb9560b5350d9b4c2a0661a468c1"
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "number": 4,
+      "characters": 1067,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "623402229ade9c2d06c4540a34df79a5b469180fd633ff1992511efb68332bb5"
+    },
+    {
+      "path": "省考/海南/2023/申论-B类.md",
+      "number": 2,
+      "characters": 287,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "943ef135ec61be9999b820eacf6e9649fd7173209fd9f04339277a81c5ae1eb2"
+    },
+    {
+      "path": "省考/海南/2025/申论-B类.md",
+      "number": 3,
+      "characters": 412,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "fb7a74d27d908ff2ca4906719c47de8ea2d2f9256b8655cabf20efa055fcdc97"
+    },
+    {
+      "path": "省考/海南/2025/申论-B类.md",
+      "number": 4,
+      "characters": 956,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "05efe802021c29ac2bd2992a4b937aeb207a1b101e96e3529815eb88d7ba3180"
+    },
+    {
+      "path": "省考/海南/2019/申论-县级.md",
+      "number": 3,
+      "characters": 1052,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "8d8e9e9a004ae285cdb76d0743189a9a409f3b5f0317939094e1b6cea1617e2e"
+    },
+    {
+      "path": "省考/西藏/2019/申论-统考.md",
+      "number": 1,
+      "characters": 252,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "9f9ca9df5b587f6af6c67c7f6ba93ab46a4a04c5297380f0d2571ad6f8a4b9ab"
+    },
+    {
+      "path": "省考/西藏/2019/申论-统考.md",
+      "number": 4,
+      "characters": 423,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "e184406f74b5212daa8b96f3f0331162c46fb163ac095de5cb4758a2aa33dd81"
+    },
+    {
+      "path": "省考/重庆/2023/申论-一卷.md",
+      "number": 3,
+      "characters": 395,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "e32c8db9730ec34bb2633ab069c11f2edd31279fe8e783b04deb64060287d40c"
+    },
+    {
+      "path": "省考/重庆/2023/申论-一卷.md",
+      "number": 4,
+      "characters": 1022,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "324d1c8614fc7fd78723756f3d11e98bc44370d43b6fb608d5b263be43dd34da"
+    },
+    {
+      "path": "省考/重庆/2023/申论-三卷.md",
+      "number": 1,
+      "characters": 243,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "01694f382694a8ad73167981903ad68674b7dad8a6f32e4fc5b5c917d3270481"
+    },
+    {
+      "path": "省考/重庆/2023/申论-三卷.md",
+      "number": 3,
+      "characters": 363,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "c0afbfa79470eb1165e8b9412887e026ccda4f8bec29a3406727b96aaefd4b8d"
+    },
+    {
+      "path": "省考/重庆/2023/申论-三卷.md",
+      "number": 4,
+      "characters": 1022,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "324d1c8614fc7fd78723756f3d11e98bc44370d43b6fb608d5b263be43dd34da"
+    },
+    {
+      "path": "省考/重庆/2025/申论-一卷.md",
+      "number": 2,
+      "characters": 284,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "dcb87e1d4cbf6070ecdd5bbddb424c6b89296e2cd3a42f4bb4e699e34f8e2777"
+    },
+    {
+      "path": "省考/重庆/2025/申论-一卷.md",
+      "number": 3,
+      "characters": 322,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "12a861fa3b23af9166c94ea510dd8a16b5849580ef40405480fbdce8b2c0c632"
+    },
+    {
+      "path": "省考/重庆/2025/申论-一卷.md",
+      "number": 4,
+      "characters": 1079,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "e5c131c0cc617c93d68f33c9a135a8d39bf0aa20d5499ad4b77799dd1c6d89f1"
+    },
+    {
+      "path": "省考/重庆/2025/申论-三卷.md",
+      "number": 1,
+      "characters": 230,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "0e695f863606226e4ff4d1abe45c6136ab7f0775ec629929a4aae79de829553b"
+    },
+    {
+      "path": "省考/重庆/2025/申论-三卷.md",
+      "number": 4,
+      "characters": 1109,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "ac370a7957c623df9e43a71d1aa27d479e36ec96e948fda13746818a46746721"
+    },
+    {
+      "path": "省考/重庆/2025/申论-二卷.md",
+      "number": 4,
+      "characters": 1035,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "35ff25c731dd1ffb2de5aa7aca87dbdaf6e5ba18b335181d47e70e47a54ee1c5"
+    },
+    {
+      "path": "省考/重庆/2026/申论-一卷.md",
+      "number": 1,
+      "characters": 204,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "fb17807f240d99cd8530b673cac88017bfe915362954d2c25132f12fbbe21610"
+    },
+    {
+      "path": "省考/重庆/2026/申论-一卷.md",
+      "number": 2,
+      "characters": 322,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "b7b8dc6c3f65201293af2592f9c96fbf55a12611499b75645a5d452f7bf4ad56"
+    },
+    {
+      "path": "省考/重庆/2026/申论-一卷.md",
+      "number": 4,
+      "characters": 1023,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "f1adf26d2a170d1fcb405aaa04683e1ed3abfe2b2720dbf7634811fa56b263a3"
+    },
+    {
+      "path": "省考/重庆/2026/申论-三卷.md",
+      "number": 1,
+      "characters": 207,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "b0924a954f1990e4884e654483890ad1e66c471d3e0dcba80e5097c086779aa4"
+    },
+    {
+      "path": "省考/重庆/2026/申论-三卷.md",
+      "number": 2,
+      "characters": 322,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "b7b8dc6c3f65201293af2592f9c96fbf55a12611499b75645a5d452f7bf4ad56"
+    },
+    {
+      "path": "省考/重庆/2026/申论-三卷.md",
+      "number": 3,
+      "characters": 367,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "613c8c9c0e17c6ef7d97906e6a98367af172984018b7e8f72041fcb17423dfc3"
+    },
+    {
+      "path": "省考/重庆/2026/申论-三卷.md",
+      "number": 4,
+      "characters": 1069,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "25fa0666968f2dabb2484ba66e882e27fa2756cefe43b23030a01f24d02da6b2"
+    },
+    {
+      "path": "省考/重庆/2026/申论-二卷.md",
+      "number": 1,
+      "characters": 204,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "fb17807f240d99cd8530b673cac88017bfe915362954d2c25132f12fbbe21610"
+    },
+    {
+      "path": "省考/重庆/2026/申论-二卷.md",
+      "number": 2,
+      "characters": 322,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "b7b8dc6c3f65201293af2592f9c96fbf55a12611499b75645a5d452f7bf4ad56"
+    },
+    {
+      "path": "省考/重庆/2026/申论-二卷.md",
+      "number": 3,
+      "characters": 393,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "c1febea1b4976b368fcc35923c90e14997c90b0ef40359fd6b7e04a5f3173600"
+    },
+    {
+      "path": "省考/重庆/2026/申论-二卷.md",
+      "number": 4,
+      "characters": 1057,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "1f3a18cfd22d1de94c78bca7222b17c8dfb8bd063dbde1b07b6d45ee4525fbb3"
+    },
+    {
+      "path": "省考/广西/2018/申论-A类.md",
+      "number": 1,
+      "characters": 188,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "f9ecb11e7e3d3f3fd4083f2a6c79435d383ba4313ae2d3fdd7c457825eb0e835"
+    },
+    {
+      "path": "省考/广西/2018/申论-A类.md",
+      "number": 2,
+      "characters": 278,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "d430abc66add0caa22c02b0750ea26576d8b4711153dc7a13bb2daf74d6011c3"
+    },
+    {
+      "path": "省考/广西/2018/申论-A类.md",
+      "number": 3,
+      "characters": 313,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "0eaa0b6590749c968bab75291875d2dbbf41f6747d94daf6d38b246dec178d89"
+    },
+    {
+      "path": "省考/广西/2018/申论-A类.md",
+      "number": 4,
+      "characters": 1114,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "d6db6502ac7b6d177708b199abe1b1702415f0a1ef711381516c248d94ad3fc2"
+    },
+    {
+      "path": "省考/广西/2025/申论-B类.md",
+      "number": 1,
+      "characters": 235,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "dd5d75fc71922505c1cb07badb85b3867ac621352d20e26142a9cfa130e94201"
+    },
+    {
+      "path": "省考/广西/2025/申论-B类.md",
+      "number": 2,
+      "characters": 265,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "43e2b7b4bc55261ee03a7f15c9c0565ec499162b8aaa62dc4ae1e4634361af05"
+    },
+    {
+      "path": "省考/广西/2025/申论-B类.md",
+      "number": 3,
+      "characters": 296,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "20224bce54a5cd4b73f3b5f76c8b4d97d526762c8cc3fe0a27bdf59a3ec0677c"
+    },
+    {
+      "path": "省考/广西/2025/申论-B类.md",
+      "number": 4,
+      "characters": 956,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "05efe802021c29ac2bd2992a4b937aeb207a1b101e96e3529815eb88d7ba3180"
+    },
+    {
+      "path": "省考/广东/2016/申论-广州市考.md",
+      "number": 1,
+      "characters": 1342,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "53ba9739a63b944c147120733223771b7d1ade0d2a369479f278068bda10841f"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-单考区.md",
+      "number": 1,
+      "characters": 1645,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "1d7de6d21de969fd417bf91878037f4353fb57c44bbcf5b343b2adaac2d06e2c"
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-双考区.md",
+      "number": 1,
+      "characters": 1605,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "34499ce1c8dd7f6e5e17128e37d15c1d260f0dfe4a7876c36046a65318ddabf6"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+      "number": 1,
+      "characters": 1416,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "37b3f8793cc24dc2dd2a14300bd5900669aee9186c3400201da938f78c25f41c"
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+      "number": 1,
+      "characters": 1509,
+      "attribution_kind": "ai_original",
+      "answer_sha256": "e3b3ca496d48a523e49de193da0510938eced022fab94fb6ba69a0709b35096f"
+    }
+  ]
+}

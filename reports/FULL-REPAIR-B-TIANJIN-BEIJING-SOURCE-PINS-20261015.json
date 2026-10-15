@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "repository": "ProfessorZhi/gwy-material-ops",
+  "fixed_revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+  "sources_checked": 7,
+  "sources": [
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【02】北京公务员考试真题pdf版/北京申论09-23/2020年北京公务员考试申论真题及答案（区级及以上）.pdf.md",
+      "expected_normalized_sha256": "cf2c46efeb98828a47e2aeef5606b9c386b3d5bb2d5714e66f75333282ecdfe6",
+      "used_by": "省考/北京/2020/申论-区级.md",
+      "git_blob": "5d3e1bbeea166b32c3f224f100d4e929e410ae5f",
+      "bytes": 28635,
+      "blob_sha256": "cf2c46efeb98828a47e2aeef5606b9c386b3d5bb2d5714e66f75333282ecdfe6",
+      "normalized_sha256": "cf2c46efeb98828a47e2aeef5606b9c386b3d5bb2d5714e66f75333282ecdfe6",
+      "status": "passed"
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【02】北京公务员考试真题pdf版/北京申论09-23/2020年北京公务员考试申论真题及答案(乡镇).pdf.md",
+      "expected_normalized_sha256": "c8961dabf1add1b343bc6ba86844cbffe3df137bfc74636af683173d76f3f5fb",
+      "used_by": "省考/北京/2020/申论-乡镇卷.md",
+      "git_blob": "081799b4c403eb249d9432006a32d93a98e42c5d",
+      "bytes": 31269,
+      "blob_sha256": "c8961dabf1add1b343bc6ba86844cbffe3df137bfc74636af683173d76f3f5fb",
+      "normalized_sha256": "c8961dabf1add1b343bc6ba86844cbffe3df137bfc74636af683173d76f3f5fb",
+      "status": "passed"
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【02】北京公务员考试真题pdf版/北京申论09-23/2021年北京公务员考试申论真题及答案（区级试卷）.pdf.md",
+      "expected_normalized_sha256": "53995e3e7081f86ea726cdadf90b77cddc7d71914ba6073c61a68478bc9ea998",
+      "used_by": "省考/北京/2021/申论-区级.md",
+      "git_blob": "469844d93c42f8f50fe92cc2cf209951bc387e86",
+      "bytes": 27983,
+      "blob_sha256": "53995e3e7081f86ea726cdadf90b77cddc7d71914ba6073c61a68478bc9ea998",
+      "normalized_sha256": "53995e3e7081f86ea726cdadf90b77cddc7d71914ba6073c61a68478bc9ea998",
+      "status": "passed"
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【02】北京公务员考试真题pdf版/北京申论09-23/2021年北京公务员考试申论真题及答案（乡镇试卷）.pdf.md",
+      "expected_normalized_sha256": "bc1d1b14178de114207b4b4690cc65eac8fefa1e8075a661c23a96b68ff5f020",
+      "used_by": "省考/北京/2021/申论-乡镇卷.md",
+      "git_blob": "080311af4d1ef8c2190ab9fc98f5c238432f431a",
+      "bytes": 28209,
+      "blob_sha256": "bc1d1b14178de114207b4b4690cc65eac8fefa1e8075a661c23a96b68ff5f020",
+      "normalized_sha256": "bc1d1b14178de114207b4b4690cc65eac8fefa1e8075a661c23a96b68ff5f020",
+      "status": "passed"
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【02】北京公务员考试真题pdf版/北京申论09-23/2023年北京市公考《申论》真题与答案.pdf.md",
+      "expected_normalized_sha256": "44d6eb71c4701fbcca4163eecdca552217697b9ed558664802c85d03eb8b97bd",
+      "used_by": "省考/北京/2023/申论-统考.md",
+      "git_blob": "3d8f9ea364a3b00765fe390236d7d34c173af7bb",
+      "bytes": 91760,
+      "blob_sha256": "44d6eb71c4701fbcca4163eecdca552217697b9ed558664802c85d03eb8b97bd",
+      "normalized_sha256": "44d6eb71c4701fbcca4163eecdca552217697b9ed558664802c85d03eb8b97bd",
+      "status": "passed"
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【26】天津公务员考试真题pdf版/天津公务员考试真题——申论【05-25】/2022年公务员多省联考《申论》（天津区级卷）题及参考答案.pdf.md",
+      "expected_normalized_sha256": "136ec8b06bf78c3159085564bacb59dfa090c9b51b4b17efb9a3d2a3ad97e16b",
+      "used_by": "天津2022区级以下",
+      "git_blob": "242804f6d15cdad275948ff65894a68e902b2c49",
+      "bytes": 27892,
+      "blob_sha256": "136ec8b06bf78c3159085564bacb59dfa090c9b51b4b17efb9a3d2a3ad97e16b",
+      "normalized_sha256": "136ec8b06bf78c3159085564bacb59dfa090c9b51b4b17efb9a3d2a3ad97e16b",
+      "status": "passed"
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【26】天津公务员考试真题pdf版/天津公务员考试真题——申论【05-25】/2022年公务员多省联考《申论》题（天津市级卷）.pdf.md",
+      "expected_normalized_sha256": "08242d10f7dcefbe604fe9db28830a1215a7513542f698ffd03ae60ef3124a96",
+      "used_by": "天津2022市级",
+      "git_blob": "35b899ab7190af151f52f627b6df85486f05d6c2",
+      "bytes": 16510,
+      "blob_sha256": "08242d10f7dcefbe604fe9db28830a1215a7513542f698ffd03ae60ef3124a96",
+      "normalized_sha256": "08242d10f7dcefbe604fe9db28830a1215a7513542f698ffd03ae60ef3124a96",
+      "status": "passed"
+    }
+  ],
+  "verification": "git ls-tree at fixed commit confirms path existence; git cat-file reads committed blob; SHA256 of newline-normalized blob exactly equals captured source used for restoration; no assumption from current filesystem"
+}

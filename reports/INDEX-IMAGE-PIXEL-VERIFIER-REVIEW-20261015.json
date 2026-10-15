@@ -1,0 +1,56 @@
+{
+  "status": "fixed_and_focused_tests_passed",
+  "date": "2026-10-15",
+  "findings": [
+    {
+      "severity": "high",
+      "issue": "Pre-change reference inventory read worktree Markdown, while image bytes came from the index. Staged broken-image references could be hidden by removing the reference only in the worktree.",
+      "fix": "Read every stage-zero exam Markdown blob via cat-file and validate its Git object hash before collecting references."
+    },
+    {
+      "severity": "high",
+      "issue": "Pre-change final guard compared only initially selected images; new/deleted indexed images and changed/new/deleted indexed papers were not comprehensively guarded.",
+      "fix": "Compare complete scoped image and exam-Markdown index maps before/after; additions, removals and changed blobs fail."
+    }
+  ],
+  "verification": {
+    "command": "python tools/test_verify_index_image_pixels_20261015.py",
+    "tests": 12,
+    "passed": 12,
+    "duration_seconds": 16.861,
+    "test_isolation": "Real temporary Git repositories under D:/artifacts/gwy-quality-audit-20261015; shared repair index was never staged or mutated by these tests.",
+    "cases": [
+      "staged bad image remains detected after worktree Markdown removes its reference",
+      "corrupt worktree image does not override staged good blob",
+      "deleted worktree Markdown remains in staged reference inventory",
+      "three GIF frames decode",
+      "a truncated later GIF frame fails with strict truncation policy even when caller policy was permissive",
+      "caller Pillow truncation policy restored",
+      "missing staged image fails",
+      "new staged exam Markdown fails final guard",
+      "changed staged exam Markdown fails final guard",
+      "new staged image fails final guard",
+      "deleted unreferenced staged image fails final guard",
+      "real loose Git object corruption fails recomputed hash",
+      "truncated Git batch stream fails"
+    ]
+  },
+  "files": [
+    {
+      "path": "tools/verify_index_image_pixels_20261015.py",
+      "sha256": "17eb3136f8a77cc61c114c1e4dde2ea0107bc3717e2e81d294c858984d43d49d"
+    },
+    {
+      "path": "tools/test_verify_index_image_pixels_20261015.py",
+      "sha256": "7bc860997a4e759c7a5281822f04adeb4d2ff8ef142ae66b9a7f502bacd80ec9"
+    }
+  ],
+  "scope_boundaries": [
+    "Pixel decoding covers images referenced by staged exam Markdown. Counts separately disclose all indexed images and unreferenced indexed images; unreferenced images are included in the concurrency guard but not falsely claimed as pixel-decoded.",
+    "Both Markdown and image Git blob IDs are recomputed, supporting SHA-1 and SHA-256 repositories.",
+    "Every image frame is loaded with Pillow truncation tolerance explicitly disabled.",
+    "No per-image worktree file open is performed. Git index enumeration and two batch object streams replace Windows individual image file reads.",
+    "The final guard certifies equality at the final snapshot. It cannot hold the index immutable after process exit or prevent an ABA change reverted to the exact same final blob maps; final staging/commit orchestration must freeze publication inputs.",
+    "Full corpus pixel validation remains a separate final run after all parallel document changes are frozen and staged. This focused test result does not claim the 95,904-image production run passed."
+  ]
+}

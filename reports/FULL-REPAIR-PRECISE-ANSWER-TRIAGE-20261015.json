@@ -1,0 +1,5549 @@
+{
+  "source_report": "reports/FULL-REPAIR-PRECISE-ANSWER-CANDIDATES-20261015.json",
+  "meaning": "分组为复核分工，不把同题多个版本或多个规则重复算题，不将人工确认项当作已证缺答案",
+  "areas": [
+    {
+      "area": "上海",
+      "high_confidence_tasks": 14,
+      "medium_tasks": 0,
+      "manual_tasks": 5,
+      "candidates": [
+        {
+          "path": "省考/上海/2019/申论-行政执法卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 333,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文333字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2019/申论-行政执法卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 434,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文434字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2019/申论-行政执法卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 1146,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1146字，超过题面明确上限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2024/申论-A卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2024/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2024/申论-统考.md",
+          "question_number": 6,
+          "version": "main",
+          "characters": 941,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2024/申论-统考.md",
+          "question_number": 7,
+          "version": "main",
+          "characters": 964,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-A卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 201,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文201字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-A卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文305字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-B卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-B卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文305字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 201,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文201字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-统考.md",
+          "question_number": 6,
+          "version": "main",
+          "characters": 922,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-统考.md",
+          "question_number": 7,
+          "version": "main",
+          "characters": 916,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2025/申论-统考.md",
+          "question_number": 8,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2026/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 303,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文303字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/上海/2026/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 952,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "云南",
+      "high_confidence_tasks": 3,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/云南/2022/申论-县乡卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/云南/2022/申论-县乡卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 474,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文474字，低于题面明确下限500字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/云南/2022/申论-县乡卷.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 590,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文590字，低于题面明确下限800字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "内蒙古",
+      "high_confidence_tasks": 2,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/内蒙古/2021/申论-乡镇.md",
+          "question_number": 3,
+          "version": "参考答案一：",
+          "characters": 207,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文207字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": true
+        },
+        {
+          "path": "省考/内蒙古/2021/申论-乡镇.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 669,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文669字，低于题面明确下限800字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "北京",
+      "high_confidence_tasks": 7,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/北京/2016/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1074,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1074字，超过题面明确上限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/北京/2017/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1201,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1201字，超过题面明确上限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/北京/2018/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1146,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1146字，超过题面明确上限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/北京/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1070,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1070字，超过题面明确上限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/北京/2022/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 303,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文303字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/北京/2023/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 308,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文308字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/北京/2025/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 1035,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1035字，超过题面明确上限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "吉林",
+      "high_confidence_tasks": 3,
+      "medium_tasks": 0,
+      "manual_tasks": 1,
+      "candidates": [
+        {
+          "path": "省考/吉林/2016/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1000,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/吉林/2016/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1126,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1126字，超过题面明确上限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/吉林/2019/申论-甲级.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 6347,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文6347字，超过题面明确上限450字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/吉林/2019/申论-甲级.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 3669,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文3669字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "四川",
+      "high_confidence_tasks": 1,
+      "medium_tasks": 0,
+      "manual_tasks": 12,
+      "candidates": [
+        {
+          "path": "省考/四川/2018/申论-上半年.md",
+          "question_number": 2,
+          "version": "参考答案二",
+          "characters": 0,
+          "issues": [
+            {
+              "rule": "empty_alternate_version_label",
+              "confidence": "manual",
+              "detail": "此处仅有另一个版本标签而无正文，不等于整题缺答案；应核是否是多余空标签"
+            }
+          ],
+          "another_version_without_findings": true
+        },
+        {
+          "path": "省考/四川/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 992,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2020/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 924,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2021/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 933,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2021/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 905,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2021/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 929,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2023/申论-省市.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 201,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文201字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2024/申论-统考.md",
+          "question_number": 7,
+          "version": "main",
+          "characters": 971,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2024/申论-统考.md",
+          "question_number": 8,
+          "version": "main",
+          "characters": 981,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2025/申论-统考.md",
+          "question_number": 8,
+          "version": "main",
+          "characters": 907,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2025/申论-统考.md",
+          "question_number": 9,
+          "version": "main",
+          "characters": 934,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2025/申论-统考.md",
+          "question_number": 10,
+          "version": "main",
+          "characters": 904,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/四川/2026/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 922,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "国考",
+      "high_confidence_tasks": 34,
+      "medium_tasks": 2,
+      "manual_tasks": 2,
+      "candidates": [
+        {
+          "path": "国考/2016/申论-副省级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 205,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文205字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2016/申论-副省级.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 152,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文152字，超过题面明确上限150字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2016/申论-副省级.md",
+          "question_number": 5,
+          "version": "参考范文一",
+          "characters": 1204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1204字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2016/申论-副省级.md",
+          "question_number": 5,
+          "version": "参考范文二",
+          "characters": 1795,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1795字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2016/申论-地市级.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 453,
+          "issues": [
+            {
+              "rule": "multiple_limits_manual_review",
+              "confidence": "manual",
+              "detail": "识别到不同小问字数上限，不把它们合成整题上限"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2016/申论-地市级.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1228,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2017/申论-副省级.md",
+          "question_number": 5,
+          "version": "参考范文一：",
+          "characters": 1240,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1240字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2017/申论-副省级.md",
+          "question_number": 5,
+          "version": "参考范文二：",
+          "characters": 1331,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1331字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2017/申论-地市级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 153,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文153字，超过题面明确上限150字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2018/申论-副省级.md",
+          "question_number": 1,
+          "version": "参考答案一",
+          "characters": 355,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文355字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2018/申论-副省级.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 314,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文314字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2018/申论-副省级.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 1222,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1222字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2018/申论-地市级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 213,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文213字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2018/申论-地市级.md",
+          "question_number": 5,
+          "version": "参考范文二",
+          "characters": 1258,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1258字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": true
+        },
+        {
+          "path": "国考/2019/申论-副省级.md",
+          "question_number": 5,
+          "version": "参考答案一：",
+          "characters": 1258,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1258字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": true
+        },
+        {
+          "path": "国考/2019/申论-地市级.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2019/申论-地市级.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 1308,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1308字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2020/申论-副省级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2020/申论-副省级.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 585,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文585字，低于题面明确下限800字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2020/申论-地市级.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 522,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文522字，超过题面明确上限500字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2020/申论-地市级.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 668,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文668字，低于题面明确下限800字"
+            },
+            {
+              "rule": "possible_truncated_final_word",
+              "confidence": "medium",
+              "detail": "末尾为疑似未完成词组“最美家”；须按来源逐字核对，不能仅凭标点自动改写"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2022/申论-副省级.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 405,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文405字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2022/申论-行政执法.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 252,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文252字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2022/申论-行政执法.md",
+          "question_number": 5,
+          "version": "参考答案一",
+          "characters": 483,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文483字，低于题面明确下限800字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2023/申论-地市级.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 1271,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1271字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2023/申论-行政执法.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 1271,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1271字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2024/申论-副省级.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 353,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文353字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2024/申论-地市级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 254,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文254字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2024/申论-地市级.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文305字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2024/申论-行政执法.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 254,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文254字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2024/申论-行政执法.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文305字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2025/申论-副省级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 361,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文361字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2025/申论-副省级.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 404,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文404字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2025/申论-地市级.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 452,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文452字，超过题面明确上限450字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2026/申论-副省级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 255,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文255字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2026/申论-副省级.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 352,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文352字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2026/申论-地市级.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 455,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文455字，超过题面明确上限450字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2026/申论-行政执法.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "国考/2026/申论-行政执法.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 253,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文253字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "天津",
+      "high_confidence_tasks": 1,
+      "medium_tasks": 1,
+      "manual_tasks": 2,
+      "candidates": [
+        {
+          "path": "省考/天津/2023/申论-乡镇卷.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1135,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1135字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/天津/2025/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 1009,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/天津/2025/申论-统考.md",
+          "question_number": 8,
+          "version": "main",
+          "characters": 251,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文251字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/天津/2026/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1031,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "宁夏",
+      "high_confidence_tasks": 1,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/宁夏/2024/申论-C类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "安徽",
+      "high_confidence_tasks": 10,
+      "medium_tasks": 4,
+      "manual_tasks": 1,
+      "candidates": [
+        {
+          "path": "省考/安徽/2016/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 426,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文426字，少于约500字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2019/申论-A类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 410,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文410字，少于约500字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2022/申论-A类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 471,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文471字，低于题面明确下限500字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2023/申论-C类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 719,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文719字，低于题面明确下限800字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2023/申论-乡镇卷.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1050,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2024/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2024/申论-A类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 432,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文432字，少于约500字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2024/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2024/申论-B类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 351,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文351字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2024/申论-C类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 205,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文205字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2024/申论-C类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 351,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文351字，少于约450字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2026/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 401,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文401字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2026/申论-A类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 504,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文504字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2026/申论-A类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 537,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文537字，超过题面明确上限500字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/安徽/2026/申论-A类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1342,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1342字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "山东",
+      "high_confidence_tasks": 20,
+      "medium_tasks": 0,
+      "manual_tasks": 17,
+      "candidates": [
+        {
+          "path": "省考/山东/2016/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1171,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2016/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1189,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2016/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 1165,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2016/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2017/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1090,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2017/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1090,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2017/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 252,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文252字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2018/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1144,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2018/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1051,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2018/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 1162,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2018/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 251,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文251字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2019/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 514,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文514字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2019/申论-B类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1283,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1283字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2020/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1192,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2020/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 355,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文355字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2020/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 352,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文352字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2021/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1044,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2021/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1081,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2022/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1091,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2022/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1200,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2023/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文305字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2023/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文305字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2023/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文305字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2023/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文305字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2023/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 1042,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2023/申论-统考.md",
+          "question_number": 6,
+          "version": "main",
+          "characters": 1103,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2024/申论-A卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 252,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文252字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2024/申论-B卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 306,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文306字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2024/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 252,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文252字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2024/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 254,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文254字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2024/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 1101,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2024/申论-统考.md",
+          "question_number": 7,
+          "version": "main",
+          "characters": 306,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文306字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2025/申论-A卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 254,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文254字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2025/申论-A卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2025/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2025/申论-统考.md",
+          "question_number": 6,
+          "version": "main",
+          "characters": 1060,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山东/2025/申论-统考.md",
+          "question_number": 8,
+          "version": "main",
+          "characters": 254,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文254字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "山西",
+      "high_confidence_tasks": 4,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/山西/2022/申论-县乡.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 657,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文657字，低于题面明确下限800字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山西/2023/申论-县乡.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 255,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文255字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山西/2023/申论-省市.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 354,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文354字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/山西/2024/申论-县乡卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 252,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文252字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "广东",
+      "high_confidence_tasks": 19,
+      "medium_tasks": 0,
+      "manual_tasks": 15,
+      "candidates": [
+        {
+          "path": "省考/广东/2016/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 925,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2017/申论-广州市考-单考区.md",
+          "question_number": 1,
+          "version": "marker_1",
+          "characters": 1645,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2017/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1117,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+          "question_number": 1,
+          "version": "marker_1",
+          "characters": 1416,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+          "question_number": 1,
+          "version": "marker_1",
+          "characters": 1509,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2018/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 882,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 955,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2020/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1040,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2021/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 916,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2022/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1114,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2023/申论-统考.md",
+          "question_number": 6,
+          "version": "main",
+          "characters": 980,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2024/申论-县镇.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2024/申论-省市.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2024/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2024/申论-统考.md",
+          "question_number": 9,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2024/申论-统考.md",
+          "question_number": 11,
+          "version": "main",
+          "characters": 978,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2024/申论-统考.md",
+          "question_number": 12,
+          "version": "main",
+          "characters": 934,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-公安.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-县镇.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-县镇.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-县镇.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 3442,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文3442字，超过题面明确上限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-省市.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-省市.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 306,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文306字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-统考.md",
+          "question_number": 9,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2025/申论-统考.md",
+          "question_number": 11,
+          "version": "main",
+          "characters": 3442,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2026/申论-公安.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 207,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文207字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2026/申论-县镇.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 307,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文307字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2026/申论-省市.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 310,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文310字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2026/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 207,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文207字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2026/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 307,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文307字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2026/申论-统考.md",
+          "question_number": 11,
+          "version": "main",
+          "characters": 842,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广东/2026/申论-行政执法.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 307,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文307字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "广西",
+      "high_confidence_tasks": 3,
+      "medium_tasks": 1,
+      "manual_tasks": 2,
+      "candidates": [
+        {
+          "path": "省考/广西/2018/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 960,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广西/2018/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1187,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广西/2020/申论-B类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 331,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文331字，少于约400字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广西/2023/申论-B类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 714,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文714字，低于题面明确下限800字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广西/2024/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 255,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文255字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/广西/2024/申论-C类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 403,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文403字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "新疆",
+      "high_confidence_tasks": 4,
+      "medium_tasks": 0,
+      "manual_tasks": 2,
+      "candidates": [
+        {
+          "path": "省考/新疆/2019/申论-县级.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文305字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/新疆/2020/申论-下半年.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1062,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/新疆/2021/申论-一卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 202,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文202字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/新疆/2021/申论-下半年.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1134,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/新疆/2024/申论-县乡卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/新疆/2024/申论-县乡卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 351,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文351字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "江苏",
+      "high_confidence_tasks": 20,
+      "medium_tasks": 45,
+      "manual_tasks": 16,
+      "candidates": [
+        {
+          "path": "省考/江苏/2016/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 253,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文253字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2016/申论-A类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文302字，少于约350字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2016/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 349,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文349字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2016/申论-B类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1107,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1107字，高于约800字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2016/申论-C类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 260,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文260字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2016/申论-C类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1105,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1105字，高于约800字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2016/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 215,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文215字，少于约250字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2017/申论-A类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 268,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文268字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2017/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 312,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文312字，少于约350字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2017/申论-B类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 268,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文268字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2017/申论-C类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 253,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文253字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2017/申论-统考.md",
+          "question_number": 6,
+          "version": "main",
+          "characters": 222,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文222字，少于约250字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-A类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 351,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文351字，少于约400字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-B类.md",
+          "question_number": 2,
+          "version": "参考答案二：",
+          "characters": 309,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文309字，高于约250字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": true
+        },
+        {
+          "path": "省考/江苏/2018/申论-B类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 351,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文351字，少于约400字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-C类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 291,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文291字，少于约350字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-C类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 282,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文282字，高于约250字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-C类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1146,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1146字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1135,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1028,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2018/申论-统考.md",
+          "question_number": 4,
+          "version": "参考答案二：",
+          "characters": 296,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文296字，高于约250字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": true
+        },
+        {
+          "path": "省考/江苏/2019/申论-A类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 399,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文399字，高于约350字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2019/申论-B类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 208,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文208字，少于约300字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2019/申论-B类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1178,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1178字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1167,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2019/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1033,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2020/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 264,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文264字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2020/申论-A类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1125,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1125字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2020/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 343,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文343字，高于约300字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2020/申论-C类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 561,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文561字，少于约1000字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2020/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1114,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2020/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1066,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 257,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文257字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-A类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 288,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文288字，少于约350字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-A类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1147,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1147字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-B类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 359,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文359字，高于约300字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-C类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 253,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文253字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-C类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 311,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文311字，高于约250字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-C类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 306,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文306字，少于约350字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1136,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 1056,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 348,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文348字，高于约300字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2021/申论-统考.md",
+          "question_number": 6,
+          "version": "main",
+          "characters": 300,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文300字，高于约250字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2022/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 259,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文259字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2022/申论-A类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 306,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文306字，高于约250字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2022/申论-B类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 305,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文305字，高于约250字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2022/申论-B类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 236,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文236字，高于约200字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2022/申论-C类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 308,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文308字，少于约350字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2022/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1041,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2022/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1020,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2022/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 295,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文295字，高于约250字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2023/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 257,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文257字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2023/申论-A类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 288,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文288字，高于约250字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2023/申论-B类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1195,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1195字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2023/申论-C类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 252,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文252字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2023/申论-统考.md",
+          "question_number": 10,
+          "version": "main",
+          "characters": 1042,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2023/申论-统考.md",
+          "question_number": 11,
+          "version": "main",
+          "characters": 1184,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2024/申论-A、乡镇选调卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 261,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文261字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2024/申论-A、乡镇选调卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 411,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文411字，高于约350字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2024/申论-B卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 257,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文257字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2024/申论-B卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 356,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文356字，少于约400字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2024/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 400,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文400字，高于约350字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2024/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 345,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文345字，少于约400字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2024/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 355,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文355字，少于约400字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2024/申论-统考.md",
+          "question_number": 9,
+          "version": "main",
+          "characters": 1108,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2024/申论-统考.md",
+          "question_number": 10,
+          "version": "main",
+          "characters": 1007,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2025/申论-A、乡镇选调卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 258,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文258字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2025/申论-A、乡镇选调卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 355,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文355字，高于约300字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2025/申论-B卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 257,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文257字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2025/申论-C卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 259,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文259字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2025/申论-C卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 313,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文313字，少于约350字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2025/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文302字，少于约350字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2025/申论-统考.md",
+          "question_number": 8,
+          "version": "main",
+          "characters": 1031,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2025/申论-统考.md",
+          "question_number": 9,
+          "version": "main",
+          "characters": 1025,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2025/申论-统考.md",
+          "question_number": 10,
+          "version": "main",
+          "characters": 344,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文344字，高于约300字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2026/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 382,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文382字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2026/申论-B类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 480,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文480字，高于约300字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2026/申论-B类.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 495,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文495字，高于约350字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江苏/2026/申论-B类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1263,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1263字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "江西",
+      "high_confidence_tasks": 4,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/江西/2019/申论-乡镇.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 205,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文205字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江西/2019/申论-乡镇.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 481,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文481字，低于题面明确下限500字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江西/2023/申论-行政执法卷.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 719,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文719字，低于题面明确下限800字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/江西/2024/申论-行政执法.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "河北",
+      "high_confidence_tasks": 2,
+      "medium_tasks": 0,
+      "manual_tasks": 2,
+      "candidates": [
+        {
+          "path": "省考/河北/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1137,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河北/2019/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1170,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河北/2022/申论-县级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 413,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文413字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河北/2024/申论-A类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 303,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文303字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "河南",
+      "high_confidence_tasks": 9,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/河南/2016/申论-统考.md",
+          "question_number": 1,
+          "version": "参考文章一：",
+          "characters": 3864,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文3864字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河南/2016/申论-统考.md",
+          "question_number": 1,
+          "version": "参考文章二：",
+          "characters": 1980,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1980字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河南/2017/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1450,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1450字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河南/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 351,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文351字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河南/2019/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1265,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1265字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河南/2023/申论-县级.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 405,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文405字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河南/2024/申论-市级.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河南/2024/申论-市级.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 997,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文997字，低于题面明确下限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河南/2024/申论-市级卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/河南/2024/申论-市级卷.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 997,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文997字，低于题面明确下限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "浙江",
+      "high_confidence_tasks": 21,
+      "medium_tasks": 1,
+      "manual_tasks": 16,
+      "candidates": [
+        {
+          "path": "省考/浙江/2017/申论-A类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 515,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文515字，超过题面明确上限500字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2017/申论-A类.md",
+          "question_number": 3,
+          "version": "参考范文1",
+          "characters": 3377,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文3377字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2017/申论-A类.md",
+          "question_number": 3,
+          "version": "参考范文2",
+          "characters": 3732,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文3732字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2017/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 254,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文254字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2018/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1063,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2018/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1126,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2019/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 356,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文356字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2019/申论-A类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 105,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文105字，超过题面明确上限100字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2019/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1117,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2019/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1117,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2020/申论-B类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1205,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1205字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2020/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1032,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2020/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1194,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2021/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 254,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文254字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2021/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 254,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文254字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2021/申论-B类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 409,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文409字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2021/申论-C类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 254,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文254字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2021/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1114,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2021/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 1114,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2021/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 1114,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2023/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 353,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文353字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2023/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 997,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2023/申论-统考.md",
+          "question_number": 6,
+          "version": "main",
+          "characters": 1022,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2023/申论-统考.md",
+          "question_number": 7,
+          "version": "main",
+          "characters": 1122,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2024/申论-C类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 313,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文313字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2024/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 463,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            },
+            {
+              "rule": "composition_appears_short",
+              "confidence": "medium",
+              "detail": "仅463字且题干写文章，需先核完整原题限制及是否为提纲"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2024/申论-统考.md",
+          "question_number": 5,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2024/申论-统考.md",
+          "question_number": 7,
+          "version": "main",
+          "characters": 1144,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2024/申论-统考.md",
+          "question_number": 8,
+          "version": "main",
+          "characters": 1001,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2024/申论-统考.md",
+          "question_number": 9,
+          "version": "main",
+          "characters": 1001,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2025/申论-A类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 654,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文654字，超过题面明确上限600字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2025/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 312,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文312字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2025/申论-C类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 302,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文302字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2026/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 366,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文366字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2026/申论-A类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 619,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文619字，超过题面明确上限600字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2026/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 320,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文320字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/浙江/2026/申论-C类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 643,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文643字，超过题面明确上限600字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "海南",
+      "high_confidence_tasks": 1,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/海南/2019/申论-县级.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 402,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文402字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "深圳",
+      "high_confidence_tasks": 4,
+      "medium_tasks": 3,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/深圳/2024/申论-二卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 303,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文303字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/深圳/2024/申论-二卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 1012,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文1012字，少于约1200字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/深圳/2025/申论-一卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 280,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文280字，超过题面明确上限150字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/深圳/2025/申论-一卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 522,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文522字，超过题面明确上限500字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/深圳/2025/申论-一卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 1375,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1375字，高于约1200字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/深圳/2025/申论-二卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 414,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文414字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/深圳/2025/申论-二卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 1375,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1375字，高于约1200字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "湖北",
+      "high_confidence_tasks": 4,
+      "medium_tasks": 1,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/湖北/2023/申论-县乡.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/湖北/2024/申论-县乡卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 303,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文303字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/湖北/2024/申论-县乡卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 359,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文359字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/湖北/2024/申论-省市.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/湖北/2024/申论-省市.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 432,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文432字，少于约500字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "湖南",
+      "high_confidence_tasks": 5,
+      "medium_tasks": 1,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/湖南/2019/申论-乡镇.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 468,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文468字，低于题面明确下限500字"
+            },
+            {
+              "rule": "possible_truncation_inside_final_quote",
+              "confidence": "medium",
+              "detail": "正文止于最后一处未闭引号内且距引号不足70字；需查原文，不因缺标点自动修改"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/湖南/2021/申论-乡镇.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 204,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文204字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/湖南/2021/申论-乡镇.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 307,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文307字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/湖南/2023/申论-省市.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 5120,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文5120字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/湖南/2024/申论-省市卷.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 974,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文974字，低于题面明确下限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "甘肃",
+      "high_confidence_tasks": 1,
+      "medium_tasks": 0,
+      "manual_tasks": 2,
+      "candidates": [
+        {
+          "path": "省考/甘肃/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1066,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/甘肃/2021/申论-乡镇卷.md",
+          "question_number": 4,
+          "version": "参考答案二：",
+          "characters": 0,
+          "issues": [
+            {
+              "rule": "empty_alternate_version_label",
+              "confidence": "manual",
+              "detail": "此处仅有另一个版本标签而无正文，不等于整题缺答案；应核是否是多余空标签"
+            }
+          ],
+          "another_version_without_findings": true
+        },
+        {
+          "path": "省考/甘肃/2021/申论-县级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 202,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文202字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "福建",
+      "high_confidence_tasks": 1,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/福建/2021/申论-县级.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 301,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文301字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "西藏",
+      "high_confidence_tasks": 2,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/西藏/2019/申论-统考.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 202,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文202字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/西藏/2019/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 406,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文406字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "贵州",
+      "high_confidence_tasks": 1,
+      "medium_tasks": 1,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/贵州/2019/申论-A类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/贵州/2019/申论-A类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1217,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1217字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "辽宁",
+      "high_confidence_tasks": 2,
+      "medium_tasks": 0,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/辽宁/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1221,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1221字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/辽宁/2024/申论-B类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "重庆",
+      "high_confidence_tasks": 4,
+      "medium_tasks": 1,
+      "manual_tasks": 1,
+      "candidates": [
+        {
+          "path": "省考/重庆/2016/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1237,
+          "issues": [
+            {
+              "rule": "approximate_target_long",
+              "confidence": "medium",
+              "detail": "正文1237字，高于约1000字目标的112%；需按题面与答题空间复核"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/重庆/2017/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 985,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/重庆/2024/申论-一卷.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 350,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文350字，超过题面明确上限250字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/重庆/2024/申论-一卷.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 495,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文495字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/重庆/2024/申论-一卷.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 565,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文565字，超过题面明确上限500字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/重庆/2024/申论-一卷.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1334,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1334字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "陕西",
+      "high_confidence_tasks": 2,
+      "medium_tasks": 1,
+      "manual_tasks": 0,
+      "candidates": [
+        {
+          "path": "省考/陕西/2024/申论-C类.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 205,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文205字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/陕西/2024/申论-C类.md",
+          "question_number": 2,
+          "version": "main",
+          "characters": 304,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文304字，超过题面明确上限300字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/陕西/2024/申论-C类.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 351,
+          "issues": [
+            {
+              "rule": "approximate_target_short",
+              "confidence": "medium",
+              "detail": "正文351字，少于约450字目标的90%；这是候选阈值，不是假定官方最低分界"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "青海",
+      "high_confidence_tasks": 0,
+      "medium_tasks": 0,
+      "manual_tasks": 1,
+      "candidates": [
+        {
+          "path": "省考/青海/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 991,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    },
+    {
+      "area": "黑龙江",
+      "high_confidence_tasks": 6,
+      "medium_tasks": 0,
+      "manual_tasks": 1,
+      "candidates": [
+        {
+          "path": "省考/黑龙江/2018/申论-省直.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1345,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1345字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/黑龙江/2018/申论-统考.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 485,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文485字，超过题面明确上限350字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/黑龙江/2018/申论-统考.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 1270,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文1270字，超过题面明确上限1200字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/黑龙江/2019/申论-统考.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 1068,
+          "issues": [
+            {
+              "rule": "composition_limit_missing",
+              "confidence": "manual",
+              "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/黑龙江/2021/申论-乡镇.md",
+          "question_number": 4,
+          "version": "main",
+          "characters": 982,
+          "issues": [
+            {
+              "rule": "explicit_minimum_not_met",
+              "confidence": "high",
+              "detail": "正文982字，低于题面明确下限1000字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/黑龙江/2022/申论-省级.md",
+          "question_number": 3,
+          "version": "main",
+          "characters": 413,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文413字，超过题面明确上限400字"
+            }
+          ],
+          "another_version_without_findings": false
+        },
+        {
+          "path": "省考/黑龙江/2024/申论-县乡.md",
+          "question_number": 1,
+          "version": "main",
+          "characters": 203,
+          "issues": [
+            {
+              "rule": "explicit_maximum_exceeded",
+              "confidence": "high",
+              "detail": "正文203字，超过题面明确上限200字"
+            }
+          ],
+          "another_version_without_findings": false
+        }
+      ]
+    }
+  ]
+}

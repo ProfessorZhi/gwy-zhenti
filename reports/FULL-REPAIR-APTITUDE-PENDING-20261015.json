@@ -1,0 +1,109 @@
+{
+  "missing_original_questions": [
+    {
+      "path": "省考/广东/2020/行测-县级卷.md",
+      "questions": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "sources": [
+        "https://upload.xingguanggongkao.com/pdf/2020年广东省公务员录用考试《行测》真题（县级卷-考生回忆版）.pdf"
+      ],
+      "finding": "星光卷为100题版，但69—75仍逐题写“本题暂无收集到”，默认答案A不可当原题。用户题本文件名也明确“7道题暂缺”。"
+    },
+    {
+      "path": "省考/江苏/2024/行测-A类.md",
+      "questions": [
+        76,
+        96,
+        110,
+        111
+      ],
+      "sources": [
+        "https://www.chinagwy.org/files/20240925145840_94072.pdf",
+        "https://static.32xueyuan.com/zq//u/cms/zj/202411/221409378lxq.pdf"
+      ],
+      "finding": "公考通/展鸿的原题本对应题位仍缺；不同版本另有题干差异，不能从其他年度同号套入。"
+    },
+    {
+      "path": "省考/江苏/2025/行测-C类.md",
+      "questions": [
+        27,
+        29,
+        35,
+        36,
+        37,
+        42,
+        75,
+        77,
+        78,
+        80,
+        81,
+        85
+      ],
+      "sources": [
+        "https://ah.huatu.com/tiku/dfgwy/2024jsskgfc/",
+        "https://www.gwyeasy.com/archives/20285",
+        "https://iget100.wuhoushu.com/gongkao/shengkao/jiangsu/2025/xingce-c"
+      ],
+      "finding": "华图独立同C卷网页逐题均为“题目缺失”，杨柳同卷亦暂缺。该网页考试日2024-12-08，对应2025招录年度，不能按URL年号误填2024卷。"
+    },
+    {
+      "path": "省考/浙江/2020/行测-A类.md",
+      "questions": [
+        49,
+        50
+      ],
+      "sources": [
+        "https://static.32xueyuan.com/upload/images/2021/11/04/1636024826627.pdf"
+      ],
+      "finding": "展鸿题本和解析明示“49-50.缺”，用户同卷文件名也为“缺2题”。"
+    }
+  ],
+  "remaining_options": [],
+  "beijing_missing_materials": {
+    "path": "省考/北京/2025/行测-统考.md",
+    "questions": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      79,
+      80
+    ],
+    "finding": "基线93题文件与源HTML无共用材料；已交根agent用四海自有题本同题恢复，不应以整体字母减1代替人工解题。",
+    "status_note": "这是基线发现，已移交根/B修复；不代表最终当前缺项数，当前以根/B的交付与总验收为准"
+  },
+  "new_source_conflicts": [
+    {
+      "path": "省考/江西/2019/行测-法检.md",
+      "question": 41,
+      "finding": "题面每日300元、2017-10-01至07并称10-04中秋；原解析计算5400元却标A6300，四项均无5400。用户同卷原题也如此，待取得可靠原卷解决。",
+      "repair_state": "已撤销错误字母A，以5400元完整数值参考作答；保留原四项并显著说明题源不严谨"
+    },
+    {
+      "path": "省考/黑龙江/2019/行测-边境县.md",
+      "question": 5,
+      "finding": "来源把单选题判B、D均正确；补录时已显著保留争议，未冒称官方唯一答案。"
+    }
+  ],
+  "public_supplement_not_official_original": [
+    {
+      "path": "省考/山东/2023/行测-统考.md",
+      "question": 42,
+      "source": "https://zhuanlan.zhihu.com/p/642333448",
+      "finding": "已据2023-08-27公开补充版补齐A60～100/B40～100/C40～80/D50～130，原创等比解析选B；原官方印刷卷尚未取得，版本边界在题面显著保留。"
+    }
+  ]
+}

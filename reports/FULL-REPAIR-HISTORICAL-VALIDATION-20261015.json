@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "receipts": 1207,
+  "changed_papers": 1195,
+  "base_commit": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab",
+  "historical": {
+    "base_files_restored": 1467,
+    "created_papers_excluded": 5,
+    "status": "passed",
+    "checks": [
+      {
+        "command": [
+          "C:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\verify_repair_receipts.py",
+          "--root",
+          "C:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8"
+        ],
+        "returncode": 0,
+        "stdout": "{\"added_question_answer_pairs_checked\": 68, \"boundary\": \"Hash, identity and preservation verification; not source factual certification.\", \"distinct_delivered_files\": 192, \"essay_new_answers_checked\": 21, \"essay_old_answers_preserved\": 11, \"essay_source_paragraphs_checked\": 351, \"image_files\": 2, \"paper_files\": 190, \"receipt_records\": 1318, \"round10\": {\"boundary\": \"AI-assisted original examples; not official or scored high-score scripts\", \"historical_restoration\": \"exact R9 file bytes restored and SHA256 verified\", \"modified_papers\": 2, \"new_complete_answer_positions\": 6, \"new_full_length_essay_positions\": 2, \"preserved_original_exam_questions\": 6, \"status\": \"passed\"}, \"round3\": {\"added_reference_answers\": 5, \"boundary\": \"Source-backed transcription and historical answer preservation, not official-original certification.\", \"checked_full_question_blocks\": 95, \"checked_material_blocks\": 103, \"new_major_questions\": 3, \"papers\": 23, \"preserved_answers\": 98, \"status\": \"passed\"}, \"round4\": {\"added_existing_source_answers\": 67, \"boundary\": \"Reference answer reuse with same-question evidence; not official answer or complete-corpus certification.\", \"joint_exam_answers\": 2, \"original_answers_preserved\": 5, \"original_question_blocks_preserved\": 114, \"papers\": 31, \"status\": \"passed\"}, \"round5\": {\"added_answers\": 102, \"boundary\": \"Source matching and byte preservation, not official answer certification.\", \"existing_answers_preserved\": 18, \"original_question_blocks_preserved\": 148, \"papers\": 41, \"status\": \"passed\"}, \"round6\": {\"boundary\": \"Integrity and fixed-source receipt verification, not official answer certification.\", \"new_reference_answers\": 190, \"original_question_blocks_preserved\": 309, \"papers\": 80, \"previous_real_answers_preserved\": 20, \"status\": \"passed\"}, \"round7\": {\"boundary\": \"Guides do not count as answers; sourced reference hashes and old bytes are checked, not scoring authority.\", \"documents\": 738, \"guide_only_documents\": 728, \"new_example_essays\": 4, \"new_reference_blocks\": 15, \"newly_filled_answer_positions\": 14, \"nonempty_old_answer_blocks_preserved\": 1896, \"question_blocks_preserved\": 2505, \"status\": \"passed\"}, \"round8\": {\"answers_added\": 7, \"boundary\": \"AI-assisted independently written study references, NOT scored exam scripts or copied institutional answer texts.\", \"existing_reference_answers_preserved\": 6, \"modified_papers\": 4, \"original_question_blocks_preserved\": 13, \"status\": \"passed\"}, \"round9\": {\"answers_added\": 11, \"boundary\": \"AI-assisted independently written study references, NOT scored exam scripts or copied institutional answer texts.\", \"existing_reference_answers_preserved\": 0, \"modified_papers\": 3, \"original_question_blocks_preserved\": 11, \"status\": \"passed\"}, \"source_continuation\": {\"boundary\": \"Existing source text and exact exam preservation; original author statements retained.\", \"known_missing_answers_after\": 289, \"papers_modified\": 86, \"preserved_existing_answers\": 89, \"source_reference_positions\": 162, \"status\": \"passed\"}, \"sourced_supplement\": {\"known_missing_answers_after\": 451, \"material_preservation\": \"All original materials/tasks and previous answers retained; exact preimage restoration verified\", \"papers_modified\": 51, \"preserved_existing_answers\": 62, \"source_authorship\": \"Existing source answers only; original authors remain as stated\", \"source_reference_positions\": 117, \"status\": \"passed\"}, \"status\": \"passed\"}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-q"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "C:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_expect.py:784: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\gwy-full-repair-pr19-u_jqgem8\\\\tools\\\\gwyzhenti\\\\data\\\\sghcn_toc\\\\sghcn_country.txt' mode='r' encoding='utf-8'>\n  sizes[fn] = len([l for l in io.open(p, encoding=\"utf-8\") if l.strip()])\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_expect.py:784: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\gwy-full-repair-pr19-u_jqgem8\\\\tools\\\\gwyzhenti\\\\data\\\\sghcn_toc\\\\sghcn_country_xingce_json.txt' mode='r' encoding='utf-8'>\n  sizes[fn] = len([l for l in io.open(p, encoding=\"utf-8\") if l.strip()])\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_expect.py:784: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\gwy-full-repair-pr19-u_jqgem8\\\\tools\\\\gwyzhenti\\\\data\\\\sghcn_toc\\\\sghcn_provice.txt' mode='r' encoding='utf-8'>\n  sizes[fn] = len([l for l in io.open(p, encoding=\"utf-8\") if l.strip()])\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_expect.py:784: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\gwy-full-repair-pr19-u_jqgem8\\\\tools\\\\gwyzhenti\\\\data\\\\sghcn_toc\\\\sghcn_provice_xingce_json.txt' mode='r' encoding='utf-8'>\n  sizes[fn] = len([l for l in io.open(p, encoding=\"utf-8\") if l.strip()])\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_export.py:66: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\gwyexp-9fguqnb1\\\\repo\\\\省考/四川/2016/行测-统考.md'>\n  before = open(md, \"rb\").read()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_export.py:68: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\gwyexp-9fguqnb1\\\\repo\\\\省考/四川/2016/行测-统考.md'>\n  self.assertEqual(open(md, \"rb\").read(), before)\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_export_shenlun.py:82: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\tmpvvhim43f\\\\省考\\\\山东\\\\2019\\\\申论-统考.md'>\n  a = open(md, \"rb\").read()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_export_shenlun.py:84: ResourceWarning: unclosed file <_io.BufferedReader name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\tmpvvhim43f\\\\省考\\\\山东\\\\2019\\\\申论-统考.md'>\n  self.assertEqual(a, open(md, \"rb\").read())\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_export_shenlun.py:55: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\tmppyly6_ch\\\\省考\\\\山东\\\\2019\\\\申论-统考.md' mode='r' encoding='utf-8'>\n  text = io.open(md, encoding=\"utf-8\").read()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Users\\vince.huang\\AppData\\Local\\Temp\\gwy-full-repair-pr19-u_jqgem8\\tools\\tests\\test_export_shenlun.py:59: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\\\Users\\\\vince.huang\\\\AppData\\\\Local\\\\Temp\\\\tmppyly6_ch\\\\work\\\\manifest.jsonl' mode='r' encoding='utf-8'>\n  self.assertEqual(len([l for l in io.open(man, encoding=\"utf-8\") if l.strip()]), 1)\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n----------------------------------------------------------------------\nRan 369 tests in 17.956s\n\nOK\n"
+      },
+      {
+        "command": [
+          "-m",
+          "unittest",
+          "cloud_quality_test",
+          "paper_integrity_repair_test",
+          "priority_quality_test",
+          "essay_transcript_restore_test",
+          "round3_repair_test",
+          "-q"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "----------------------------------------------------------------------\nRan 97 tests in 0.216s\n\nOK\n"
+      }
+    ]
+  }
+}

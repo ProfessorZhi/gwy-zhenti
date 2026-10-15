@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "global_counts": {
+    "papers": 710,
+    "tasks": 2446,
+    "versions": 2464,
+    "approximate_target_long": 1,
+    "explicit_maximum_exceeded": 1,
+    "composition_limit_missing": 35,
+    "empty_alternate_version_label": 1
+  },
+  "scope_candidates": [],
+  "scope_regions": [
+    "江西",
+    "河北",
+    "河南",
+    "湖北",
+    "湖南",
+    "甘肃",
+    "贵州",
+    "辽宁",
+    "陕西",
+    "青海",
+    "黑龙江"
+  ]
+}

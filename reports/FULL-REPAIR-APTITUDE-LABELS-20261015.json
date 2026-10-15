@@ -1,0 +1,2696 @@
+[
+  {
+    "path": "国考/2016/行测-副省级.md",
+    "before_sha256": "fb332b2a65296df74a04e00388a4bf901128806c38df4d83bee2d5eb0e4d3e1a",
+    "after_sha256": "30fdd6d0a4e0c26c60fe4076030e5518a19cd5853a778f3e0dba8e6abe3c4b46",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2016/行测-地市级.md",
+    "before_sha256": "3895801499c5958792e52b6ece8ac3c69435831f6d7cfe22ea7882f24fc10efc",
+    "after_sha256": "b3be461a74a74b1aa31b1445f4f7046084cfc71841eae2cf3d121de9477cbcf4",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2017/行测-副省级.md",
+    "before_sha256": "a0debe9aa340f62c603b225fcf8783dae48fddff98f6c65922816021a4af2fc7",
+    "after_sha256": "50c4dce2ab474bccdd6db11c178a072f2368cfa2eb19fd46707eedcf1a6c6196",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2017/行测-地市级.md",
+    "before_sha256": "560b5f15eb5c05203d6611d57130d23e079db8cdadb812c93567fe5848e904a5",
+    "after_sha256": "bc2ebc0275ab0a0cf67c8662c47783df036329009af69d2ee745d86c2edc045a",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2018/行测-副省级.md",
+    "before_sha256": "dd8a45fa0204757e24d75a6d8df028725e7beaa1b3f2730ee4ce8a64646b830d",
+    "after_sha256": "944f5e6e535d296afc40949386fe6023dba88150c2b6a6a106ef4944ccf64e7e",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2018/行测-地市级.md",
+    "before_sha256": "0179e1fd56126824cf7e82ba1813c01dff2b2aa6a7fa4a3b1c5519676991bbba",
+    "after_sha256": "ba5ed263f8f5bbc2fca48f079e734eaaeb03be2b8c390f933f58b333d235d3c4",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2019/行测-副省级.md",
+    "before_sha256": "7e2ff26446f3e4ad5257a5701b7b1ec7185477cedbc8c7e15784f8eff565fd1e",
+    "after_sha256": "6e00937cd21218dcf75040cb5cd38297fc8b4952780fb595230666cedde65fb2",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2019/行测-地市级.md",
+    "before_sha256": "8e7d0b630d0eab5c8db294dfa7bb62a6fe237126f394a2c12fcd7838154839de",
+    "after_sha256": "c6c2717e1112f9c5364efa58a598c8658cf6e144349978478ba2cd7d4000170f",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2020/行测-副省级.md",
+    "before_sha256": "49ae2bacdb0623e3c95b409d1ce21ae9509b1862103ad2196671017e7d4cfe12",
+    "after_sha256": "7050139764953de8d76991b1e6b839007954c290aee12c94fcac9a29d1603271",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2020/行测-地市级.md",
+    "before_sha256": "c8ecfcc05317dc40ed2ec476fe2901868cb967f4f504b77927c66ad45418cbb8",
+    "after_sha256": "315633fde9f9a06385f1273f3222cb56c9cf27dc23f60a1dbc2857ae49cd5cdb",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2021/行测-副省级.md",
+    "before_sha256": "2de5e097c9d199dc634cdda4613e259e03e9bb9fe403d39c18601b208152ed56",
+    "after_sha256": "d11488a9d13b2cdd227ff50399e29aed47175ec44f3dba99d58fd15e44f66cc2",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2021/行测-地市级.md",
+    "before_sha256": "495bb5a23ba477c8b99d2436e1829bee793dfb21ac360ea16e1849263cdeedad",
+    "after_sha256": "45ae16f8b3fbbb59842a95dc8f63a2aba55d6077fb127a69720c21bd7d43fa5a",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2022/行测-副省级.md",
+    "before_sha256": "2522e1150c27f4fdcbd7b8e66b6529fe22b7ff7136840f161f479746ae84372b",
+    "after_sha256": "85b32405cee8bd9bfe2752eb443a795504e0a84054ce024896e64a4055bc2275",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2022/行测-地市级.md",
+    "before_sha256": "3cb8b79473b630e8b86d0e4e87e65ce10f96c8f65e369996a886682d042295ea",
+    "after_sha256": "54fc1121714914101632588ccab08dca9f66d8f70ce971c6d4bc66a7de0eeaf1",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2022/行测-行政执法.md",
+    "before_sha256": "6b0aabc5cd12352486235e9a6aa2ff93a256c19ef505f72884daebe088a6cb14",
+    "after_sha256": "31577022581645403dc3e9e618d8c51d1853a5d6f269a85945a0e23e1de39c25",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2023/行测-副省级.md",
+    "before_sha256": "f5cb62b88ad7409b907e0be361814c67d9f69ce310238341c3c182183fe5c309",
+    "after_sha256": "2c4b90974155c0f0d72dd11026c0c6670c01c61162e7c4181bb127e0a31e86f2",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2023/行测-地市级.md",
+    "before_sha256": "01bf42312e23d28351513dc0cc7a8bbfb1043a491131a16dd7b69ff9e14e153c",
+    "after_sha256": "f2a961a780a04819a1033a292a1f7d9636be9c31c5fd0445cdff7d5903b0edf5",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2023/行测-行政执法.md",
+    "before_sha256": "d8609a541669224cde4cbf735266e6a3c8d16a0594a8ca38c54dfb487cc410f8",
+    "after_sha256": "1ae134b4f50a8a7f25e6f63a6ef429117326ffc4a7e0d4ac07be495e56e3b241",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2024/行测-副省级.md",
+    "before_sha256": "7143c421fd65621b7c2c993fb2a571e2235f929fc7546a818fcd67eda3b82507",
+    "after_sha256": "10963e0da47a6c6a657d570ed28bec0177e53b8d56941234d6cacec93446da1e",
+    "replacements": 134
+  },
+  {
+    "path": "国考/2024/行测-地市级.md",
+    "before_sha256": "6b922260d79f4c6cceda427a127b5669489913f221b411c185a811a93d76723b",
+    "after_sha256": "783c7d2cb62609fb06e84ce5641cfa34ad6bb73630633a55581109fccd2a7bf1",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2024/行测-行政执法.md",
+    "before_sha256": "a910a7fdc026ae2b8abe9fddf067eb6b346bf636af50c336409c271e2ce052f0",
+    "after_sha256": "3d1e384e6f765236f5c440d2f43e4b07bf08087f00764ea644162498b87bebaf",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2025/行测-副省级.md",
+    "before_sha256": "a273992f3dc505bb12c2865307fc66292ce5ee4364130229ca02c67268c6006a",
+    "after_sha256": "28781221e998d623c6094eebd173a1e49d5127623e22ed462a4d27bcb5e7ebaf",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2025/行测-地市级.md",
+    "before_sha256": "fa093fb8eed05adca152b6494420fca07bf57eb046b4cc46bf4bc629c99991ea",
+    "after_sha256": "e1931efe161498f804ed925ac5dd27d903cb6e66da3b8e41cdec8d2a5ef79b32",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2025/行测-行政执法.md",
+    "before_sha256": "c62df6659929e07932d2f9bd5784658b889742d0da5a0785910e2ee7cfb1bc73",
+    "after_sha256": "289befbd05dded678b4bdd2f4e40cd773b929679aa9d763a68bc6759e9c06a9a",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2026/行测-副省级.md",
+    "before_sha256": "ace6768333693447364fb704787e8ee5743792a5637a292af4e8a595eb1cef02",
+    "after_sha256": "5aeb692ed45af7c85ef5a50d83e8566530e039ad6f0d4be15df115fb0c6968f2",
+    "replacements": 135
+  },
+  {
+    "path": "国考/2026/行测-地市级.md",
+    "before_sha256": "98b83f753ff231f7e2d1d35f8bb13a4830f22ccc01433afaa40e1f0e2d1d5815",
+    "after_sha256": "83540248fcdc59003143e8e2965e2f6be86fb192fe246352d9900d033b6a5113",
+    "replacements": 130
+  },
+  {
+    "path": "国考/2026/行测-行政执法.md",
+    "before_sha256": "cd96dc380f234c5a1ffada0c3dfa427df87de907e5d59b200f1ee9c31eccbdd2",
+    "after_sha256": "541d3e87afe898aec8adf132d416a22d5175cc4723b82fd1fa4c5b2eedf46c31",
+    "replacements": 130
+  },
+  {
+    "path": "省考/上海/2016/行测-A类.md",
+    "before_sha256": "28bf87626e44a2848bad12ca636478f5d08372487ef835a869f609e65735345d",
+    "after_sha256": "48a001f48ac2ae9a4df60e517ee0b0eb04adbcfb58e708521d9b9b554ad26fe8",
+    "replacements": 100
+  },
+  {
+    "path": "省考/上海/2016/行测-B类.md",
+    "before_sha256": "b64f819fc8ba8d38c6cb6dd2d385aceed93491e175002d075ef602e6d1e4fd19",
+    "after_sha256": "cf2c84c70e3373b512abf26349958f62de35e2a1c165d07cc81bdaa3dbdbff20",
+    "replacements": 140
+  },
+  {
+    "path": "省考/上海/2016/行测-行政执法.md",
+    "before_sha256": "d94ab3f0edc47361d04000a843d0fd1049d67766b6dc820ca8c4d5b554967b00",
+    "after_sha256": "586809063cf494a519b6c5c7aad483801495eb7a5b5ea3f88c50cf23580321bd",
+    "replacements": 105
+  },
+  {
+    "path": "省考/上海/2017/行测-统考.md",
+    "before_sha256": "c6144506854dcd9cb2a8c262d05bc071c9e00cda5f906c6c64cce45f19d713f1",
+    "after_sha256": "6d402ec36a87b08a80d3168085825a5fb76cbfd07d1483695ea5c10af31c502b",
+    "replacements": 136
+  },
+  {
+    "path": "省考/上海/2017/行测-行政执法.md",
+    "before_sha256": "6092246c50de28019f8eef486c75b18e4251936be8e6b62920ce335911bd37df",
+    "after_sha256": "fa78c9ea6bb292d3b463b67ec61fb1160bae760c518776fbc845f69aa9313b80",
+    "replacements": 100
+  },
+  {
+    "path": "省考/上海/2018/行测-A类.md",
+    "before_sha256": "d5cde563ae6b86235d34694772f0f94879c0df3cf305f8d66f5e55145eb61ae1",
+    "after_sha256": "49c9c392e6fcb867b4ebd2200388b24b7d960d21f5020b19803cc25e8d241f06",
+    "replacements": 135
+  },
+  {
+    "path": "省考/上海/2018/行测-B类.md",
+    "before_sha256": "1cf96f1a99f67f80802f90da50850a91d68949ce3aed39549773e2ba2a804574",
+    "after_sha256": "338089247a081b7e5b4094d34178a4f6e57488e227bd8a3be54952c736773853",
+    "replacements": 135
+  },
+  {
+    "path": "省考/上海/2018/行测-行政执法.md",
+    "before_sha256": "616b65ab999834a3f3edd21b8bafe3ee1619549b28daeb225ce75233fc3f1831",
+    "after_sha256": "cf75254ed3068c7f7ce2098994470dd4903f30ae4b4147ba00fd7266a77d760c",
+    "replacements": 99
+  },
+  {
+    "path": "省考/上海/2019/行测-A类.md",
+    "before_sha256": "4d675630088d2750150f3bb72563c98479d83e4a698c689dcf26f1a21abd20a4",
+    "after_sha256": "16caf5ba5d7db104501cfafc32aec290753df0e82076d1820cb5bbe5744bfc05",
+    "replacements": 130
+  },
+  {
+    "path": "省考/上海/2019/行测-B类.md",
+    "before_sha256": "654b23be84919cbb6b02f562ace7db168e5353ff2fe9de658f348039b91def88",
+    "after_sha256": "f29fcabc3b086df906ebce2edec598357212bcec02bb1d9b99fe166f172fd5ac",
+    "replacements": 130
+  },
+  {
+    "path": "省考/上海/2019/行测-行政执法.md",
+    "before_sha256": "833295d1b4ab9a64be5100ea4b21712f94da2644ea08decca572097cc19599eb",
+    "after_sha256": "6352cf2e94d95ecc526d88fabc20d7f8b084ce2678bc8a4647ded6367856d533",
+    "replacements": 99
+  },
+  {
+    "path": "省考/上海/2020/行测-A类.md",
+    "before_sha256": "41022bfb83ef65267014e7bfb408a473aed2ca2fc4158ece314d2b939477101a",
+    "after_sha256": "5d5265b6a2bfb16fe5bf311d4576455e2563a3f8c5bc0eec025df7a87aabdd29",
+    "replacements": 130
+  },
+  {
+    "path": "省考/上海/2020/行测-B类.md",
+    "before_sha256": "3302c4b9e7edad90e6da76e028a88f543dfb12400c96f5f1ae0a3d34b0302e46",
+    "after_sha256": "e2d908393f274ad556cf7406644c19c4fc2041ba8f5533fcaa2e8a9e2a4e09a1",
+    "replacements": 130
+  },
+  {
+    "path": "省考/上海/2020/行测-行政执法.md",
+    "before_sha256": "5f1be94c4fe6dd19687691d5aea38aad7d1a0c2d0ce7c74f57020b53ab523e23",
+    "after_sha256": "fd7361f0c33d21037f246513eae9f5394e2ce03ede7e1b4516cdd49be6a10fac",
+    "replacements": 100
+  },
+  {
+    "path": "省考/上海/2021/行测-A类.md",
+    "before_sha256": "9245d42f119631ce2fdf1d06fe8396eac1e80e63e75a777b1cbabc9894701879",
+    "after_sha256": "8dbdaf7e5f2cc42aeb7f7b172cc5482003099beb42037db4a6281576b6ac8c45",
+    "replacements": 130
+  },
+  {
+    "path": "省考/上海/2021/行测-B类.md",
+    "before_sha256": "51258d8103ad29d19cb5d3dabe90f1cee70659b7a95a88188e9e76a2c27f7a2f",
+    "after_sha256": "29173edf26ffe382569fa13363a6876cfe3395c9bb5afb3743f9d6b734fd3820",
+    "replacements": 116
+  },
+  {
+    "path": "省考/上海/2021/行测-行政执法.md",
+    "before_sha256": "8572d9779099a5e242b22fac8a8ca39c6efdd7102a340866ef3f437f27a17d61",
+    "after_sha256": "11bef6fd8363612b715c8e2bce7d28d35ec32ce8aee2a7497c0cc34b266103fa",
+    "replacements": 109
+  },
+  {
+    "path": "省考/上海/2022/行测-B类.md",
+    "before_sha256": "b9c2be34a382a69158cda330939759c2b547e8962c81cd7c17a0487ad9419d8d",
+    "after_sha256": "7c5b05a35ddaa1c4a3c5c6ff223f135913f85ecd5ae65869dba2f566bc645d6e",
+    "replacements": 130
+  },
+  {
+    "path": "省考/上海/2023/行测-A类.md",
+    "before_sha256": "e4dfc3367c895c98fc7382d0d4d81b2ecaeaac8df53193567241498bf3b68636",
+    "after_sha256": "d74d9648238904c7233d4a2b080838656775090a1997386dd26eab1e5833f17e",
+    "replacements": 129
+  },
+  {
+    "path": "省考/上海/2025/行测-A类.md",
+    "before_sha256": "54a4c3fc6223f11516764c8248f7a1d701dc4de7f07ed8c8064ebb8db490ea83",
+    "after_sha256": "3cbba501296d9f6f2cd63326e40f8836c109e2af295150c234fcba4b4a8b1669",
+    "replacements": 130
+  },
+  {
+    "path": "省考/上海/2025/行测-B类.md",
+    "before_sha256": "28c455c5a5c3cbbe1fe92adad69c0dac93e68a7555d9ade4a013679f0088eacc",
+    "after_sha256": "e9019f154c0da9dee370857404186e170f47e228a3f7f08c503c5d3fddf9ae50",
+    "replacements": 130
+  },
+  {
+    "path": "省考/上海/2026/行测-统考.md",
+    "before_sha256": "70103ffc377a44bd49545b2b6eafa319f675fa9d336b4945dc49f9c7864eaaab",
+    "after_sha256": "0982afb174df8d71027c31247f5df8e2fe1682484bb0be6dd11d4ab38c37da00",
+    "replacements": 129
+  },
+  {
+    "path": "省考/云南/2016/行测-统考.md",
+    "before_sha256": "7c1ee486444dae121b7f3bb6dfd6bf51b7be52dcb89a821a49e92dd74bd4d22c",
+    "after_sha256": "637f49a17e603749ef19f81776993c2af41598b7d692cd1a1e9d5faa4bb220ba",
+    "replacements": 120
+  },
+  {
+    "path": "省考/云南/2017/行测-统考.md",
+    "before_sha256": "ca1b3b1e5b7c33759039273c36c94c02d6596197549495624171c83aec5af021",
+    "after_sha256": "f201174845464c77774233bebe4c68d502259dd0651110c6fcfc6ce835f78d4e",
+    "replacements": 120
+  },
+  {
+    "path": "省考/云南/2018/行测-统考.md",
+    "before_sha256": "f7e78ae12b43d76641059ed7656dbba97554d203021ffdde744d69d4de6d3764",
+    "after_sha256": "19ab08f422d68d50f77996bae7f11fc0efacd1f2ed42d864e1b890bc2f36d70e",
+    "replacements": 120
+  },
+  {
+    "path": "省考/云南/2019/行测-统考.md",
+    "before_sha256": "054dfb76efe380de11d25c1af33b369a31ef0404c9100f391d4a3e5759559ecc",
+    "after_sha256": "34f5febe03091a890aba7690e9965629bc000b55471dc93f212dbe43775750e0",
+    "replacements": 120
+  },
+  {
+    "path": "省考/云南/2020/行测-统考.md",
+    "before_sha256": "79ae5d66d5c58626c948b5b5bc2a4ca713724f75d33b13bf681bbe5b827ea65d",
+    "after_sha256": "85b4b4d4a28b706b9ba32dec0b6458f15bbd5fccaeb17a4cb10fca50c0dfdce8",
+    "replacements": 120
+  },
+  {
+    "path": "省考/云南/2021/行测-统考.md",
+    "before_sha256": "06fee40b713ee1acbaf08e29be5755a77e18ac73b1956816a0a029ab7763b4fb",
+    "after_sha256": "df1a15e23f596a82d4f977385f7f2bc54702d435d3d7ffa40abbc5256df30bfe",
+    "replacements": 100
+  },
+  {
+    "path": "省考/云南/2022/行测-统考.md",
+    "before_sha256": "43ef097a13851cc456bb78f857b6398fa0f8663cd463cd76d7a8735b170559bd",
+    "after_sha256": "bcb3d3f13ce1fb1492056b0f49391d9c2053c718f866d16130aa1ed0493c7aee",
+    "replacements": 99
+  },
+  {
+    "path": "省考/云南/2023/行测-统考.md",
+    "before_sha256": "7369f1e70f180f0d112d023ccf45859cee136592af0eec981e0e01994d4dac19",
+    "after_sha256": "686bb71b5586cfefbf7be000c50d4187587c99d13825b0631fd6cdc9425b05a5",
+    "replacements": 99
+  },
+  {
+    "path": "省考/云南/2024/行测-统考.md",
+    "before_sha256": "cb343b31f1caf3462e8bd71f2a1f3c04cda83f27ac8cd3446c89ccb7767ed011",
+    "after_sha256": "eb2c688fa6ba8cb128a207b80e5bf7bd215970dacaf14515438505e88e104709",
+    "replacements": 100
+  },
+  {
+    "path": "省考/云南/2025/行测-统考.md",
+    "before_sha256": "adc4d3817954b9a674747ca7e7242c6c600b045abf75747ae4685a2bdac301d8",
+    "after_sha256": "513c7da42e9f4bfd960f200510be4891484a54acb9a3b46e1fe3173afe2eb2d3",
+    "replacements": 109
+  },
+  {
+    "path": "省考/云南/2026/行测-统考.md",
+    "before_sha256": "44028c2d2ba9a3fa4baaeddb1ad0327905f891df60a35b4e25e6969b43afe7d9",
+    "after_sha256": "9717ba0b6455dcd133fbd14ccd031241a6d889f4a5d07a62b2940e2b481a3cf7",
+    "replacements": 107
+  },
+  {
+    "path": "省考/内蒙古/2016/行测-统考.md",
+    "before_sha256": "fb5f496e48cbe7ac347833d776f8b01706e8cc5981fc9fc565241589efdc79ca",
+    "after_sha256": "8788cb148f4add3859ae874dc2ec29aeeadc1d797046f5696c89a957028d4691",
+    "replacements": 120
+  },
+  {
+    "path": "省考/内蒙古/2017/行测-统考.md",
+    "before_sha256": "31facece8be97abfcea772b51b406d8d567114772fd3a18b2bf3d6e9ec5d3562",
+    "after_sha256": "a91eb7359cd58fd0bf30eab0309883ea23f2961cf51863604c67eed339c21c60",
+    "replacements": 120
+  },
+  {
+    "path": "省考/内蒙古/2018/行测-统考.md",
+    "before_sha256": "2ead7120c9da0133e5838c606c849bd0e03300fa1d764f47823e7e934f14b606",
+    "after_sha256": "d1b8adaf6cdcddfab26de1c757b323671720e637033328bac61030918a40a15e",
+    "replacements": 120
+  },
+  {
+    "path": "省考/内蒙古/2019/行测-统考.md",
+    "before_sha256": "c120788910752e36a87acb36b7ed127c5f947346d4c63d92a8c7150ed2f6c275",
+    "after_sha256": "c072672f2d4a08263aef7354fd403bbce42b7f507b2671143d51a22d6fd1ecb2",
+    "replacements": 120
+  },
+  {
+    "path": "省考/内蒙古/2021/行测-统考.md",
+    "before_sha256": "c0d82d66a0044e615f0d3b4378abd0e8f9da601009afbea285d69d75d2e8f76b",
+    "after_sha256": "7398d0497ccd5d38b0fee8093278e8101e035d47a5dcf1dddb30d5ec06471067",
+    "replacements": 120
+  },
+  {
+    "path": "省考/内蒙古/2022/行测-统考.md",
+    "before_sha256": "e4dca5d04869c3e7a2474c80761ef38033793f765b5bdea08d945b6213089d47",
+    "after_sha256": "8731dfe519b3c0a5e803dd02b2fb29e1e28ee6a5f3d2d080a5b11f5ec4323d44",
+    "replacements": 120
+  },
+  {
+    "path": "省考/内蒙古/2023/行测-统考.md",
+    "before_sha256": "741abc2d7c0b9153b0c3f28e6117879c0fabd9d7bd8614f0d695c03ca0ba4c04",
+    "after_sha256": "806c671104edd3228eb5f8b6d4985ef2ca87b43e064dccebf186eee734e9b388",
+    "replacements": 119
+  },
+  {
+    "path": "省考/内蒙古/2025/行测-统考.md",
+    "before_sha256": "6dd41ff49dffcb7942ad172e9046900356c215fdffd0c4e96a1810916002c185",
+    "after_sha256": "17e78c4bfa14fc9664cd15ddb924debcda2a21f6e995b299ea9fb57cccbbef75",
+    "replacements": 125
+  },
+  {
+    "path": "省考/内蒙古/2026/行测-统考.md",
+    "before_sha256": "fb05704a243f2e5cfeb74d55d5e7bcd133d640204400d293ef2fa63e1d6790cf",
+    "after_sha256": "e7eefe375a516c4b2079985e45ee0e9c1a3856d72ae6e210234bc485739ec394",
+    "replacements": 120
+  },
+  {
+    "path": "省考/北京/2016/行测-统考.md",
+    "before_sha256": "3589f34e273d7d1b4d408cc22bbec0228f9a63a27d07ed6fb4cf4ba7bf016771",
+    "after_sha256": "a5e0468f5d2aefd45d04d6831ae0cbbfdd61d6229352875f4c7c72e32c465350",
+    "replacements": 135
+  },
+  {
+    "path": "省考/北京/2017/行测-统考.md",
+    "before_sha256": "5b8f260187221b88e6339e7c44b6dacd880cf8ae25eaf3adf88d460453bd7ab5",
+    "after_sha256": "1f81021137d4d242d7c0ded415aa4af9d75a4b3ca5f9c74dcdff27960292451c",
+    "replacements": 135
+  },
+  {
+    "path": "省考/北京/2018/行测-统考.md",
+    "before_sha256": "0bc7a53dd0186441922c53702e3e5d812a09ecf94b0bed9bb8806a2061868852",
+    "after_sha256": "53e38e7e1bcced570d2f5872630f9089020e0298ea3ce6f81ed6d4d816fef399",
+    "replacements": 135
+  },
+  {
+    "path": "省考/北京/2019/行测-统考.md",
+    "before_sha256": "cbfdb8fdce88691a3f438c744491ab0ff5a79f8a700512e0d843cc07b13a4cf2",
+    "after_sha256": "f71873ce080a668943fddb2fb7cfbca14718e2a44a9a840da5d87a098b3949ab",
+    "replacements": 135
+  },
+  {
+    "path": "省考/北京/2020/行测-乡镇卷.md",
+    "before_sha256": "9a6177dcf2e384b616034715656806e1383a021a4a49c5c127e6450030624e4d",
+    "after_sha256": "990fb1f804190bface2ace1be3df602258bf9930e3968fd3a562ebb6ed36aad5",
+    "replacements": 128
+  },
+  {
+    "path": "省考/北京/2020/行测-区级及以上.md",
+    "before_sha256": "b3ab48951a4e4b0780e51fc9bb34d4f51b3cf9c8bb303badd71d201bdd88bfe2",
+    "after_sha256": "d751141a66cea94be32f34dfb2c572e3a32b30b13d0a1bbbd2c9e034b76779f7",
+    "replacements": 135
+  },
+  {
+    "path": "省考/北京/2021/行测-乡镇卷.md",
+    "before_sha256": "88d794bf0c8a552827ab4dfdf413351ab35535dcd2cc656ef2078b9fddca5a14",
+    "after_sha256": "68e10f3d981bdebcb562291a45af9caed94b7750984c085863e096c57b929010",
+    "replacements": 130
+  },
+  {
+    "path": "省考/北京/2021/行测-区级及以上.md",
+    "before_sha256": "2e48088ea356543044946cb5fd9fd488523b3193b4c08b3ebdd9fc0953f7c8c1",
+    "after_sha256": "58680f20be07e2504d2e83f8c8458e97ce8562e2e87889193aa36a4ac7eee0c8",
+    "replacements": 135
+  },
+  {
+    "path": "省考/北京/2022/行测-统考.md",
+    "before_sha256": "0cc89a990f9485ee77f07c17b4d14973be5ac8094b53f087c6e05488d7eeade0",
+    "after_sha256": "01c07e9760dd8ddc83c125bf61d2e269b54403415e825db8b2aa192ae97c35f3",
+    "replacements": 135
+  },
+  {
+    "path": "省考/北京/2023/行测-统考.md",
+    "before_sha256": "9e18d93327718c199d0ef8901c3f789ffb6af9f5932229d7e362486a2da599d3",
+    "after_sha256": "a71743c9aaf186618a40c1d81aeb99c281f372c9b2813d1dd236c351d9fbe3b5",
+    "replacements": 100
+  },
+  {
+    "path": "省考/吉林/2016/行测-乙级.md",
+    "before_sha256": "04f84e6312b8a8d4928a3ca059a6546dfe2d36b3acb6f17d852985815b33dde8",
+    "after_sha256": "65bb6280035c34089554b7100ca7864209372dae57e3a7854c9da56a47e3cd1e",
+    "replacements": 100
+  },
+  {
+    "path": "省考/吉林/2016/行测-甲级.md",
+    "before_sha256": "718a203e3736e29fe1d6998eff6f19154a9a8a7144b802925f15962a4a5db318",
+    "after_sha256": "c7fa70914df13f12b685ac763b8511edc116bd29b1ad83f124d1542824eb16f1",
+    "replacements": 104
+  },
+  {
+    "path": "省考/吉林/2017/行测-卷乙级.md",
+    "before_sha256": "9056f007599f3f173ec337b5e0e70f6ed06f091e0abe2d59d9d26bb8c51ab9b1",
+    "after_sha256": "4aa983b1d7e5c8273a5c106442263434186fbf007b7937bcaa4dff6470dd401e",
+    "replacements": 98
+  },
+  {
+    "path": "省考/吉林/2017/行测-卷甲级.md",
+    "before_sha256": "30c7dcbb5bf98873aab74d9df8b294cdff7c7813f39d52fa9e7562af06c84753",
+    "after_sha256": "93ea77e00a4affe3d728545b873905a04bae23abb3173fd4577fa4a4a6c36751",
+    "replacements": 103
+  },
+  {
+    "path": "省考/吉林/2018/行测-乙级.md",
+    "before_sha256": "5e9bc8074b7e71be04d1752987db3585976ced142beafe7a0709b6bce8f0cce0",
+    "after_sha256": "35453191125deabde44b77dc6d4b191118f57abf5a18fcf7518ada437559b9f9",
+    "replacements": 98
+  },
+  {
+    "path": "省考/吉林/2018/行测-甲级.md",
+    "before_sha256": "be2b649ece85207704618bd1277c0b0b203fd4e6f7d0f63477b9446d587b68b7",
+    "after_sha256": "5be9b988437ecb0bfe3fd9f78aafb20438f2c7d0766520c8a627f865b2c9bfed",
+    "replacements": 104
+  },
+  {
+    "path": "省考/吉林/2019/行测-乙级.md",
+    "before_sha256": "401bd81a8e80e91b778c2b824034f0a7cd95ae9ddf7a46f72e3d7a61bf63dbb8",
+    "after_sha256": "2a66fc641de86d315acf60a0202f8d5e7306dbce4941b118c88ad81b76981ea9",
+    "replacements": 97
+  },
+  {
+    "path": "省考/吉林/2019/行测-甲级.md",
+    "before_sha256": "a662f24f0c4b0c5aa5d0f1478c7e3f0b29d1330524e1d83becb7b5ff58d9023e",
+    "after_sha256": "b04d859d5853e4a8c5c2e55fa02aa6c5d0ea78b14feaae55abcc7a2ed37213ca",
+    "replacements": 104
+  },
+  {
+    "path": "省考/吉林/2020/行测-统考.md",
+    "before_sha256": "6929e3ad8339c0cdaf2b3d8411077a09ddac45ae2022a89d20424a88aa2cb553",
+    "after_sha256": "9b7ccbe932bf53525b85dc4bca644cf741e74e6fe41aa6e6eac7d9eb58973764",
+    "replacements": 100
+  },
+  {
+    "path": "省考/吉林/2021/行测-统考.md",
+    "before_sha256": "df269e401520cde28b82055d2a183a0c3ecb2de7681ee52dd81f48cd4f6ec782",
+    "after_sha256": "13faa6beb56580efa140a6cc415fbab356da9299095df47c0ab06f0915eb8dd0",
+    "replacements": 100
+  },
+  {
+    "path": "省考/吉林/2022/行测-统考.md",
+    "before_sha256": "46cf1fb2e758e449a4925cd598631b00dc8e190bdcc719d628d961b0f8a19d75",
+    "after_sha256": "7420bd0c07dce35aab598c10f9595a2ec821afcbc1a5846a3ee8abf4e2d71f32",
+    "replacements": 100
+  },
+  {
+    "path": "省考/吉林/2023/行测-统考.md",
+    "before_sha256": "8920315d90a77e0462be7fbca8cd9ebfc4119ee284a5c214d27abc114b2c8dc3",
+    "after_sha256": "30cdf2caa9efb2ab755cc00ff03e86813633dc6ace0c0e258f364221bdc9b62f",
+    "replacements": 100
+  },
+  {
+    "path": "省考/吉林/2024/行测-统考.md",
+    "before_sha256": "8cef826f04f4f927f2ac1b6124fb23dadf66c665dc395883c0bcea71fb221d46",
+    "after_sha256": "7617de938b08ed3873e2d7492c0a407d34e0468f66a063354b89dd9574e52b7c",
+    "replacements": 87
+  },
+  {
+    "path": "省考/吉林/2026/行测-统考.md",
+    "before_sha256": "66f8b9cfcd9a61f37ee365d82310be33f713063eeadd75803e853c1d92352a10",
+    "after_sha256": "71c9bbd4e6efe355e4b07880e6272e368709466362a750a78d42f767e784db87",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2016/行测-下半年.md",
+    "before_sha256": "17f15b150f2383f34505ac18f753dac789fb70a466daa65847c0c454c32b6939",
+    "after_sha256": "e0e8089718a26681e3385e075c24820f6049fca9e1c140e479e7f8acdb9b2734",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2016/行测-统考.md",
+    "before_sha256": "14c673e969054478c43553cecc7feed86d161ceb97bc144d8c83f8ea0149ee6e",
+    "after_sha256": "d83e55eb01bca07c88882e534fe8379552b1d6a65046f8aa535138a27284eea0",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2017/行测-下半年.md",
+    "before_sha256": "5ae37b14ec50567cfb29a4b6040d32012999c9465e0ef7b003e1f6b0d40bb54d",
+    "after_sha256": "49430e403eb5c7a1b93a1d472afadc9578c0adcd3231c8cd16c272ffce90bf2f",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2017/行测-定向乡镇.md",
+    "before_sha256": "73472bea8b802a53305c9ae1e832653ee7c67adba928b1adb46c32a00bd44365",
+    "after_sha256": "944c79c18b3eed1ba7da5d03ade822abb5bab1c06379c63f93815819e609748e",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2017/行测-统考.md",
+    "before_sha256": "8c51ebda8bfcd90456ce6ebea8af6f8e3274126b4d66fc020707b07e10784cdf",
+    "after_sha256": "5e4c5988efb6df9615d99531d679d0c4e9b0789db828199ecf0aaae939813863",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2018/行测-下半年.md",
+    "before_sha256": "fb910e457bf84c627981789d8098d63ffad18de49e70ac49358a58a4d1dc0f84",
+    "after_sha256": "b3e4557def974ba7a34282b0e013f0f765e760994226d51f7b23061bcf72ec06",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2018/行测-统考.md",
+    "before_sha256": "4e63840a2361aade312bfe63995ec2aa4e83b97f6cd20a3e00cb47dcba2fc904",
+    "after_sha256": "cc79d6d050111cfbef846ff35f07976d6963227aa17062e094825f2370b2914c",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2019/行测-下半年.md",
+    "before_sha256": "7a5af82c4d950f2dc0a0f44cfb1093b6aac12871089f7a373e78b69ac6bd49e8",
+    "after_sha256": "18a9d8d080e98ce03fdc79dc4bcf3b674be61c8bda7b5ec2d997f0d5d76cf454",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2019/行测-统考.md",
+    "before_sha256": "e62a0693841270d2a6a1671b974749651af478506d80d132444b9c695406adc6",
+    "after_sha256": "4d4bd3471c37b8ce7527e109d0b61efe937808bb34f6b297f7dd2426278fe89c",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2020/行测-下半年.md",
+    "before_sha256": "90203928c67814e8e6bb020dd2b96b96c5a47ec4954d9d0696a1669f827e182e",
+    "after_sha256": "76813ac0eba63f9cd554e92619055fe7ec73b587d6c7cebe6ba0759db3d828ff",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2020/行测-统考.md",
+    "before_sha256": "b9dfb94d820ba65c0e243f2f671c8ba0d823d15a9a2465abf2c74cad21cb99ae",
+    "after_sha256": "f064205b5dbb0456871d44cbc13a249ad855bbabb562c3055eafa63b4c36eb15",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2021/行测-下半年.md",
+    "before_sha256": "86e14b7dd6ada7505a0e0b6f934aba68ee94190cec708dadbed9cb7576af6209",
+    "after_sha256": "df04131627ec59c742fb84f81e8b701a2906d68df71900dab17dfecd2f9ca14f",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2021/行测-统考.md",
+    "before_sha256": "1982b4e7bc11e972f1810c190d20a0bd496e75875a77976c3c21feba655b614f",
+    "after_sha256": "371f3a16300ddbf3197668c1e5d9f0ecd11728753d433a4d60b7bda50dbe8f88",
+    "replacements": 97
+  },
+  {
+    "path": "省考/四川/2022/行测-下半年.md",
+    "before_sha256": "41972c17acc6bb160d70051fd8cb9f6300c65ab2eb5147dfda6de4a0e1626932",
+    "after_sha256": "a26db440f410236d000672c9a0ce7c384d17e8e592cdf36efb96aed34591595f",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2022/行测-统考.md",
+    "before_sha256": "ea2d1ae1bb3d0c4be94f2a6b20d175bc20c049040aecc66e4079ef73d48cff3d",
+    "after_sha256": "fdc3e1a9274bd1f6a61b3e254d1ff6d5baeccd0368b6157e2984fa2f134651e6",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2023/行测-统考.md",
+    "before_sha256": "b4ec383faeb972084a433fd73ca45a07466283f7efa3b4373780503b5b69a886",
+    "after_sha256": "71d5ba5e8cf309f8378383e90812830f0db8c04d76934bf4557c9fcf0acaf93b",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2024/行测-统考.md",
+    "before_sha256": "40b9efd762178b9303cc84dd230eea903ebad19d06d0bd67c812787408b46e43",
+    "after_sha256": "4716d925a7df94ac50aed50e69828732aa5aa2314a83ca53313387f941e3acfe",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2025/行测-统考.md",
+    "before_sha256": "efc251204fb54f25997383c0bebaba954d32b8b6cd2f8dc1af6553f3a31a58d3",
+    "after_sha256": "0d17ae327454999a5b69db6deeb2a495802a6dc75b1f36f39014fdcd315a3bd6",
+    "replacements": 100
+  },
+  {
+    "path": "省考/四川/2026/行测-统考.md",
+    "before_sha256": "f02bd6763f055a147bc32d8233d9adfa514d834de698e6f5ab9eabd8c5361756",
+    "after_sha256": "5fc887ec6196b0180532990c5619367de7e8e2e0145c3dbec022354b619a7a4a",
+    "replacements": 100
+  },
+  {
+    "path": "省考/天津/2016/行测-统考.md",
+    "before_sha256": "8b7f835bbf8a9963f2e35f32b82e34f7725a46bf294ad61829dd4929ca158d9f",
+    "after_sha256": "87f95b0e9e48889e055018e4514510b2a9ac37dba5c5a461fb7784a7c6c48a08",
+    "replacements": 120
+  },
+  {
+    "path": "省考/天津/2017/行测-统考.md",
+    "before_sha256": "6c06f0899aa74c05d8374ba6d186bbd2616c539cb7a1de40135e641cdd4f2d09",
+    "after_sha256": "844e805189f85c63eddf713e597eb372936d81d0af186097566335652f70d23a",
+    "replacements": 120
+  },
+  {
+    "path": "省考/天津/2018/行测-统考.md",
+    "before_sha256": "4db7f603c3a87a10b8c0274b103fefb0290a9f2b4102a46273536630e53f54c3",
+    "after_sha256": "f5f0970c81791c7e1f329f8da52125a87f32123a501e1e8307ec9cac8d4d45ee",
+    "replacements": 120
+  },
+  {
+    "path": "省考/天津/2019/行测-统考.md",
+    "before_sha256": "9389eb58a3a49c2f73593f9e0b64b56fb8ff26e9ccbaebea17d4cbf80ec48fb1",
+    "after_sha256": "63138ece8345e8758351b78e4e20d3c5a2b89b5b9fe65689c9b68f80b5d567d2",
+    "replacements": 120
+  },
+  {
+    "path": "省考/天津/2020/行测-统考.md",
+    "before_sha256": "582a5f69955ebe30a17ba7b28ace1c660863d3f4f01b5043ba8af7306c433349",
+    "after_sha256": "1c60bfea59e992a63f798b23111ffde80d6d398e8ec5d30032f275c916c4ab0b",
+    "replacements": 120
+  },
+  {
+    "path": "省考/天津/2021/行测-统考.md",
+    "before_sha256": "0ce8e63290024473df199c3ccf251b00a42d83ce9d5ea506cfa3ff0985d7d57f",
+    "after_sha256": "a50f3eecdc060e0a7a13366f3620f8ee688f71f6f21f42272789ea59219bebbe",
+    "replacements": 120
+  },
+  {
+    "path": "省考/天津/2022/行测-统考.md",
+    "before_sha256": "fecc377741a990131c131a954128442649ce935f9ec4d8f6d65eab87dbebebb2",
+    "after_sha256": "3ece96f8d7e4ab765d5e687b6d8b714237c1022b8d832ab7983f2bdbc297e730",
+    "replacements": 90
+  },
+  {
+    "path": "省考/天津/2023/行测-统考.md",
+    "before_sha256": "c4d1e025e32319ffb4d963ce4f93d3a9c6e29b03863e2555421a3c43dbecd4d5",
+    "after_sha256": "e5cebe06afc19b873768435b814b2ce3bcd39a982ec97b985984e4a87b5942ee",
+    "replacements": 120
+  },
+  {
+    "path": "省考/天津/2024/行测-统考.md",
+    "before_sha256": "03ea48a3c075b43d4a1f9c8b3c417a2d12417b39707751f165049f1529bd4321",
+    "after_sha256": "8eb08d07c97f238406d1fe6a50627a82e1c31208bcb5e2d26dab937e5d4be18a",
+    "replacements": 120
+  },
+  {
+    "path": "省考/天津/2025/行测-统考.md",
+    "before_sha256": "279127056260b2b57bbf87e8595470c2a5fead7973862947c739ebadbc22656a",
+    "after_sha256": "e35355b6aa3dbb54d034db3271c79523151dada999a5f179b24d89f76b58f755",
+    "replacements": 120
+  },
+  {
+    "path": "省考/天津/2026/行测-统考.md",
+    "before_sha256": "8a1f94107ab75b1b8b52798e1e283be25c36f5b960d01c1efea477d4fd02aedf",
+    "after_sha256": "5f1a65a0997df6fc4ec44ab8cc65b2c8992c7ac3083e87bb1740fa19db21f975",
+    "replacements": 120
+  },
+  {
+    "path": "省考/宁夏/2016/行测-统考.md",
+    "before_sha256": "1152463eab03ec7f62cd271e85cb275f4f39a2d85065d88cfb814d1e6b165f6d",
+    "after_sha256": "e07afff78c37be00ee6d1bbdbc47ea73e02fa9dde3550d969303075f4cf0f327",
+    "replacements": 120
+  },
+  {
+    "path": "省考/宁夏/2017/行测-统考.md",
+    "before_sha256": "aaa238ff45ab10bca2f2b2b0b1519ee629ea62a96d114d969dae193b5b6cec2a",
+    "after_sha256": "443f2f9d5e433975dc9aa6a88b3c82ae2f26a29e7fd83c662344b8aff32eb9c6",
+    "replacements": 120
+  },
+  {
+    "path": "省考/宁夏/2018/行测-统考.md",
+    "before_sha256": "7c777abe83251e0e00314342b9310da314e215dbd9f7fcf5f104cb84c415bf33",
+    "after_sha256": "85b3c2d4eb4554c3673b9d8e4f106fbfdca0e193c38f63d9e47dcf8a2d45f11a",
+    "replacements": 120
+  },
+  {
+    "path": "省考/宁夏/2019/行测-统考.md",
+    "before_sha256": "eea8fadf3d16de1fc1aa870bff00d5acd8a897ee8a9c4e2cf14af4914a05f216",
+    "after_sha256": "ebcca40dece559501cb62ac2509d20e2998a59b145bdc647b65c4093e26fe065",
+    "replacements": 120
+  },
+  {
+    "path": "省考/宁夏/2020/行测-统考.md",
+    "before_sha256": "884805d5408142de7fe871df187a75f6126ff86fe7993c75a758f5680ca6f2a6",
+    "after_sha256": "baf4c221bed92e1d295c977affeb6dfb952e9306cf82ca624ed2ad8c1cebc0b6",
+    "replacements": 120
+  },
+  {
+    "path": "省考/宁夏/2021/行测-统考.md",
+    "before_sha256": "f5145626ee47b2d98d33a237248f653742cbe555c8a781a34020cd64da057d8f",
+    "after_sha256": "c5b13bd22aad499e8b7506bc54d0c5e3c375a41452dc95541eea44fbe4e4d544",
+    "replacements": 119
+  },
+  {
+    "path": "省考/宁夏/2023/行测-统考.md",
+    "before_sha256": "6fb60d04460617237ad793a8631326851b1b12937d27f729fdf6bbe75691ebc5",
+    "after_sha256": "e55c7cdd6748a98e59c6d34c16906fbeaf6b22e77a23aedb3c23429c6a6b413d",
+    "replacements": 120
+  },
+  {
+    "path": "省考/宁夏/2024/行测-统考.md",
+    "before_sha256": "5c7e70bc22f18399322e5dfe478f73528affd36b48f73d3bc8568ddaa5b8c462",
+    "after_sha256": "76a202b1b2808ff65bed928274a9478aed7b1243c1e3c3567a76a193b89cc573",
+    "replacements": 116
+  },
+  {
+    "path": "省考/宁夏/2025/行测-统考.md",
+    "before_sha256": "5907e4c0dbce945adcc1fa12b4806d0b6b8c608c104e57e88c7956e4184d7147",
+    "after_sha256": "224f1510c0131ebc4451d1ab37401f9a7278c5bbcf84da623c95bd5eefd40b55",
+    "replacements": 113
+  },
+  {
+    "path": "省考/安徽/2016/行测-统考.md",
+    "before_sha256": "8ca43951845be0187a1dabdef175e26eddd8dc3b348c973da1d8f48b272898d3",
+    "after_sha256": "69017b2839e1f131bb5fa173a3cd644c1e0cfa75456c716742478eaf6ac08b01",
+    "replacements": 110
+  },
+  {
+    "path": "省考/安徽/2017/行测-统考.md",
+    "before_sha256": "fc2d37b71a7aa14b520c6db2e3a52f253fa25ae5cec8ae183b3336063d00d02f",
+    "after_sha256": "7c35d5e3b6ec532a05869524ece2a90d9bea77962436646066cd17e9995c7cd0",
+    "replacements": 110
+  },
+  {
+    "path": "省考/安徽/2018/行测-统考.md",
+    "before_sha256": "5a4fe692f301fb15557feeaf1c0e20a161d3a000a2ab4a6b6872dc8a0dee8935",
+    "after_sha256": "661bbd59362a9c9e9679a68516de78f595b606f1d84f730edbad20385c732722",
+    "replacements": 110
+  },
+  {
+    "path": "省考/安徽/2019/行测-统考.md",
+    "before_sha256": "07c7572affaefff35f24ebf9cf112f0e79abe7306ae0992e4d22134a548c5716",
+    "after_sha256": "ed4b69f0af269434ab36eddf834674f06aa8ca9b53ef99cbd25e43e6f910f02e",
+    "replacements": 110
+  },
+  {
+    "path": "省考/安徽/2020/行测-统考.md",
+    "before_sha256": "d8255a2aa387a62b123f2313d1d91aaf5bfc78e49fd705a1bdce7f868b312b9f",
+    "after_sha256": "ea58dc0b73ef4cea3defe2defe2e77aa3add13b486c889867aefc95459243db7",
+    "replacements": 110
+  },
+  {
+    "path": "省考/安徽/2021/行测-统考.md",
+    "before_sha256": "5df4d4bf9dea7fb600fe356e75236d6a042c00f599db502786ae61654e82f421",
+    "after_sha256": "60152dbe4526c0feca3b4379f306f226c95cd0f9ac0fb92d93cf0580ab03a644",
+    "replacements": 110
+  },
+  {
+    "path": "省考/安徽/2022/行测-统考.md",
+    "before_sha256": "194d18dc029beda4c80a0578d62d44cf0b66f35d4355c3ebd2ffdf15f4be5eae",
+    "after_sha256": "159a0fd022d8fbb02ab5543b2a18b3b54912066f63a538d9dfb4d7a64ad21d05",
+    "replacements": 110
+  },
+  {
+    "path": "省考/安徽/2023/行测-统考.md",
+    "before_sha256": "74bf0538076345cc60d27d03e3b0a537a0bbacab21ef1466508d0242e7200f19",
+    "after_sha256": "388f9c2c71604ee9fdcdaf5bdb5d27406bab7e861be4da5d1540da4f2160ab6d",
+    "replacements": 110
+  },
+  {
+    "path": "省考/安徽/2024/行测-统考.md",
+    "before_sha256": "8ba3f2aea8ef9e468e82ee6ac01959a87ede9cd02c67981b7f11f8e0532032f6",
+    "after_sha256": "5e847842cf7a22eab4770d44a58a2cc3e41dac2930ec339f51a45c6d4ca3cb44",
+    "replacements": 110
+  },
+  {
+    "path": "省考/安徽/2025/行测-统考.md",
+    "before_sha256": "f6e0d9489f1bcae7843cf90e03e8c0628145fb55f426478174b8506398dde5d5",
+    "after_sha256": "02c28cdcb6fe48d31b97dace442a866bd661ea2a45627c2ed9db7bc0dc315c2f",
+    "replacements": 125
+  },
+  {
+    "path": "省考/安徽/2026/行测-统考.md",
+    "before_sha256": "47fddac29aac0215f8fb82fb642d60f5171f5c95b58ead539733a7e239765e05",
+    "after_sha256": "23c32078529d91429ffa18e2b33cef20d0601d8df062e28c9334f4daf0a97b71",
+    "replacements": 125
+  },
+  {
+    "path": "省考/山东/2016/行测-统考.md",
+    "before_sha256": "475984fa0345a007d0952e705e3540757acc6c2bd59b8da8c57961695e0d6dd3",
+    "after_sha256": "4a189426c461f57f39cd46c2f3e8b210a77d3dffc18504105e770e4adcc9c04e",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山东/2017/行测-统考.md",
+    "before_sha256": "e0673a8dc2db8366a7f8a2668b74206462f2b69711a9ad658888af0f66844533",
+    "after_sha256": "63746426a006df039cfa3d0150958275b97244847581375c7aedd8e84a1af41a",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山东/2018/行测-统考.md",
+    "before_sha256": "5377828632530d85e1afc5ce541ea0526822fef90cff0e7b64d89a3116d1e142",
+    "after_sha256": "de84e8476c5dbba15a894fc0913309212a31439f1eb0672404e050e92aadbea8",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山东/2019/行测-统考.md",
+    "before_sha256": "0e004b1176b3e3561c15d1472b38b9f7ba817bca759e504a8ae855b62abb54da",
+    "after_sha256": "aa1e67f9d9e4951082aece00fb743a7d3e92bb01d53df43cee3c22f6d2fff5f2",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山东/2020/行测-统考.md",
+    "before_sha256": "c95ed71d5e49204b53f968b344d5b0f336abd4aad0e2c13a776e0cf0b434c8f7",
+    "after_sha256": "383552ca1d8d18e10b62ff8df8509acbd9c1a7ea55d1e88b1aad089a409d40fe",
+    "replacements": 90
+  },
+  {
+    "path": "省考/山东/2021/行测-统考.md",
+    "before_sha256": "1403aaf3ebd59c3df0972e029570760fc3d781df625beca6699cf852a6605f93",
+    "after_sha256": "442ff49b4ae23ce29612bd2dd3983e262b1e135092c3eebec23d92cd9138e02f",
+    "replacements": 90
+  },
+  {
+    "path": "省考/山东/2022/行测-统考.md",
+    "before_sha256": "797730da3315501182727462fe24fd0f75159f93fb5321c38444a87cd9c8365a",
+    "after_sha256": "4eda853f8e060d786cfd1e0bd3203d2340fe51c05a156fa8a2c12b91fe71ae0f",
+    "replacements": 88
+  },
+  {
+    "path": "省考/山东/2023/行测-统考.md",
+    "before_sha256": "71a7c61e3415e05316f93368639c197ffdadb004add556c9bef95d364168e27e",
+    "after_sha256": "ce140b80ff24796822de21e5b76ab324ba8b2f7ea2aa0678506500578937b517",
+    "replacements": 90
+  },
+  {
+    "path": "省考/山东/2024/行测-统考.md",
+    "before_sha256": "5c0d211c52f93ebebb9c4d83743c4c476047d7909e9d79f3c8dd5e55d7eaa8ed",
+    "after_sha256": "abd5c6e35b5c7a656094bf40f97bf9b455398b93ad62a0b7fe018d35adcbd1dd",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山东/2025/行测-统考.md",
+    "before_sha256": "edf3dbef8a7f13d2c2dfa9e8392794f3c9735917ee41905a92e25ec7c780b6b4",
+    "after_sha256": "12eb97c034a402c0fde0a8fa3d12253af3a6c3108ccd74f5dd59e3695ae1d140",
+    "replacements": 112
+  },
+  {
+    "path": "省考/山西/2016/行测-统考.md",
+    "before_sha256": "f036490c0577047e339fabd4eff29e0aa5576d43cdf9737c624b5513f59150f9",
+    "after_sha256": "f3a1e49b8b6a1a193fb0eee56ebb0b577b0648e66bdcdc63dc2ddd8cd2961078",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山西/2017/行测-统考.md",
+    "before_sha256": "1dc0ec8a5c8d3a1cf030578364f7b9e1e7f8e924b4dc66980044f503af102beb",
+    "after_sha256": "8297750fe1e1a3c5419971da158baa21d0f238c63965ca005c1acf00f48ab8eb",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山西/2018/行测-统考.md",
+    "before_sha256": "db307ef23df7a0967669c6cd41d5fa8bec5ad68805e290675a27ad821bb9d719",
+    "after_sha256": "6b860489c6f33a897936be15d28fc74d381cac46cc7cff0e3b92c20bf551deb3",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山西/2019/行测-县级+乡镇.md",
+    "before_sha256": "76a4e18de4579f4b77e0f068d9fedabc192bfefcf8fd98ca44d200a62dca47b9",
+    "after_sha256": "ba25e5851c48e688eaaf4a8d7fc791f98ca34794bfef48a4f883dc06bcab02bd",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山西/2020/行测-统考.md",
+    "before_sha256": "19b873e64fa3f95c4ef921c217c0423e1e5987db667dde7e77c92c74d07835b9",
+    "after_sha256": "afb3a26056dc7ca6480df8a5b31ff9a9320952650d38d34bc6cd69f10e700d2f",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山西/2021/行测-统考.md",
+    "before_sha256": "998e1c7238b6fd6e9520b6ec3bbb63a2379aecb71c0787ba179e4010562ba26f",
+    "after_sha256": "b178573fe5c35f2337f3cb037bb77862962a6a09603e02bcbdca79b8ef7c6680",
+    "replacements": 125
+  },
+  {
+    "path": "省考/山西/2022/行测-统考.md",
+    "before_sha256": "1f480dd488941852fa985569ec3b3448c72afa9ae69fc579ecd953f93489d0a1",
+    "after_sha256": "33179ce88945a3a533da87f06148be1caca86e261627d923c4e7604350ef1b07",
+    "replacements": 125
+  },
+  {
+    "path": "省考/山西/2023/行测-统考.md",
+    "before_sha256": "031dbae593e9b5a8edddeacb99a6b5b0911815af8308675c081a4acd993d67c4",
+    "after_sha256": "5c08fc1fd40b88f8e1a12b7b92b733b36c9c947f09852223123c07792e0daec7",
+    "replacements": 125
+  },
+  {
+    "path": "省考/山西/2024/行测-县级卷.md",
+    "before_sha256": "0e63c9f1fe4dd6d8149e0f197621e90c8b3035addc0ea61236392aa5cb5094a6",
+    "after_sha256": "747dd4284d8f04088e0ffb7e87e0d927756c4131c5659f5c12e7f3097a10df4f",
+    "replacements": 120
+  },
+  {
+    "path": "省考/山西/2024/行测-统考.md",
+    "before_sha256": "30d900c0a5f62a11722b6b5d1b42e83f5248259604aa5c77630c12d8dd7db86d",
+    "after_sha256": "31829d8284baa6db4e8412bc69a3e2a619643558a83f282a794d2a2fb642b8b0",
+    "replacements": 125
+  },
+  {
+    "path": "省考/山西/2025/行测-统考.md",
+    "before_sha256": "f8cb00969cd387aca10279f7a5ae66f12b19e3da148887e880a490a111f3e2c1",
+    "after_sha256": "1a0c24ee933f4cd02b228468e0762fa0773d83f08b71fe40c3834e9dceae81e1",
+    "replacements": 125
+  },
+  {
+    "path": "省考/山西/2026/行测-统考.md",
+    "before_sha256": "cb2d807c9ca0636dd54f50f88b33959b22d2638422d7050fc423083d8ce813ca",
+    "after_sha256": "e0b3577188f5e2e64938c046a4c45339928ba2361f9415578394c3feafa760b9",
+    "replacements": 125
+  },
+  {
+    "path": "省考/广东/2016/行测-乡镇卷.md",
+    "before_sha256": "334310c4c60613171a7fb40ef5413934f6b8f990f8f2ed3a9ea73f09172cedcc",
+    "after_sha256": "116a3ad71442e0e0cd422441538570293783b688744f515ed0b6158ce2958c3a",
+    "replacements": 100
+  },
+  {
+    "path": "省考/广东/2016/行测-县级以上.md",
+    "before_sha256": "1e3c6b122060d55ea66c406f73c401be2df9a3930981f43ec38d33fd4d3ecfa3",
+    "after_sha256": "f6a09e0833e7190826b2d4c98d2ff12680c091714ae41d054675db1bbe11415f",
+    "replacements": 98
+  },
+  {
+    "path": "省考/广东/2016/行测-广州市考.md",
+    "before_sha256": "bcfe8de79a1efb1372d80e586352fe71758bb1be70445e6ca1db57f4388fcfb0",
+    "after_sha256": "d8362dd113b202628fe03fc22654d3304cc4c1cef51f83d98d5fc766301cada6",
+    "replacements": 100
+  },
+  {
+    "path": "省考/广东/2017/行测-县级、乡镇统一卷.md",
+    "before_sha256": "b5d19f8f74b979ba20efc257539f3234e231226438a469adaf99e0b6d13cb987",
+    "after_sha256": "030331dc7260f58bdb4d87164383a21af9513b4c8a42e18a2ae774d976a2c464",
+    "replacements": 100
+  },
+  {
+    "path": "省考/广东/2017/行测-广州市考-单考区.md",
+    "before_sha256": "3164cb0183c0dcb767a94427840ebf7a8c42a5029c236384d00274a3090d4f89",
+    "after_sha256": "f8bd0c84ec49dda723df4c71a3b5d3d6e8b64f82a3e5e4b335a0352d80f121b8",
+    "replacements": 98
+  },
+  {
+    "path": "省考/广东/2018/行测-县级、乡镇统一卷.md",
+    "before_sha256": "c66b985b5fabee8040564a990e5a34c638faab7957e69f7bcac02eb269c3aeb2",
+    "after_sha256": "8b1e81a11a6f59abe648a4ffbe1b7bf5baa94494f949eaf3013e12f5165dd54a",
+    "replacements": 100
+  },
+  {
+    "path": "省考/广东/2018/行测-广州市考-3月24日.md",
+    "before_sha256": "50d38f567f3999765ee661e85123e14f30ab3cd91ad109492814a602e2656ff2",
+    "after_sha256": "71111a9b90da41cd881e813da699d1c09fff3b38a93384fae3c7039dc58bacd9",
+    "replacements": 97
+  },
+  {
+    "path": "省考/广东/2018/行测-广州市考-3月25日.md",
+    "before_sha256": "4079dd6edaa40ebdfb123dc283599acc523f10efc97a2c7b33e4505753c44a40",
+    "after_sha256": "11b5ffa8cd3270dc26d795e7feb955564a4a0fd72e9894845b15587a88a79da0",
+    "replacements": 95
+  },
+  {
+    "path": "省考/广东/2019/行测-乡镇卷.md",
+    "before_sha256": "03847d9a3077c17cbbc4d70f684363159a29d5ae56273994a11c9ec4a029d948",
+    "after_sha256": "50bb04160e0dd05d1c1541b4f19185433a8587c7082741257800ee6342c4e8c0",
+    "replacements": 100
+  },
+  {
+    "path": "省考/广东/2019/行测-县级卷.md",
+    "before_sha256": "cb76f0a57afd577b4c6844382d215c560da2510d79bdc001351ba36bee9bf61f",
+    "after_sha256": "4b970811a77993f478f44e30dfeddcaacc3bff0879116f34dd676bf6888f5e62",
+    "replacements": 100
+  },
+  {
+    "path": "省考/广东/2020/行测-乡镇卷.md",
+    "before_sha256": "d812df4975171ef8c1bfb19817b7d6ea92a8f29d822d4a61231b83ac203007b5",
+    "after_sha256": "9601a7d34c814cc627be4a3fcf17c03d2a2a803f10f9514b3bee30de2776b238",
+    "replacements": 97
+  },
+  {
+    "path": "省考/广东/2020/行测-县级卷.md",
+    "before_sha256": "75c1b3f02e5b98bb0b0f534c72a406d33b3d928c3b5a1f5cd5dd0165f3f76be8",
+    "after_sha256": "64f6c511918541c91d6a8bf57f564f2aa296625a6b0eb093bcc433e18d36728b",
+    "replacements": 90
+  },
+  {
+    "path": "省考/广东/2021/行测-乡镇卷.md",
+    "before_sha256": "0f3266bcafcea3ff4f0c2330da33b3ed5a3b0ccff1c71b3825a8c52c119d5429",
+    "after_sha256": "4f151076c691f04b227a49cc48da41dcb5dfac7d4aed2edf73a95e87597cf6ff",
+    "replacements": 91
+  },
+  {
+    "path": "省考/广东/2021/行测-县级卷.md",
+    "before_sha256": "eb43dc079981341ccd7876a9e1245942ce7ff641a194e99a82c40d04d0203588",
+    "after_sha256": "6ae5a9a2c1b053a183444ec4f19e901f18c8f465a004c858178bbcfe3c56057b",
+    "replacements": 96
+  },
+  {
+    "path": "省考/广东/2022/行测-乡镇卷.md",
+    "before_sha256": "5de9966367f87e77f4c5bc27099aa7234803c04fd517b3a3dd847e535dd41f80",
+    "after_sha256": "295058b0911bdd76d7e145effdd5cea5ce680ae7bacfb795fe86223a8a3301c4",
+    "replacements": 98
+  },
+  {
+    "path": "省考/广东/2022/行测-县级卷.md",
+    "before_sha256": "6bacb947357bcfadbefb30847d89dd5663a69188cd71cc88357cea808aeacfef",
+    "after_sha256": "e8b1bc375820374b559d7bb16593b8f0fc2c5071de8b768246877008d1b2f201",
+    "replacements": 96
+  },
+  {
+    "path": "省考/广东/2023/行测-乡镇卷.md",
+    "before_sha256": "436edaa421efadf714cb5a6a9a0fd6c5456cf6fd93ef7659c36686772356c1b5",
+    "after_sha256": "b05614eea7806f96f60ba72e6459794219500a8b9b152fd21e54fc48cf2f8384",
+    "replacements": 98
+  },
+  {
+    "path": "省考/广东/2023/行测-县级卷.md",
+    "before_sha256": "cadc27d9b7ca74fbea1db3c283adae9a2f91df3c471abaf164b793de8913dc81",
+    "after_sha256": "779763dc57f6c3c9d5390181e833720f496dde78a95156412a51259166c44da1",
+    "replacements": 99
+  },
+  {
+    "path": "省考/广东/2024/行测-统考.md",
+    "before_sha256": "3e3b634b78a4db165571a38b95cd033f81abbc2c6e813bba023d100423720683",
+    "after_sha256": "4ba4d02831b24a6efa1d21eec8c5c95c72cbb2da07ab3795c24031d2b5d4baac",
+    "replacements": 89
+  },
+  {
+    "path": "省考/广东/2025/行测-统考.md",
+    "before_sha256": "2540f636250e9adb608d3ac78d1583c18c0f2bd9360d6cffad8159903d770067",
+    "after_sha256": "946ef517856da4f0bb1bcb5b9d60418c4e2d4cd135b7c830dea7e3838f723fd3",
+    "replacements": 87
+  },
+  {
+    "path": "省考/广东/2026/行测-统考.md",
+    "before_sha256": "176cda257ad4aba9757a4e74af3c2e40b85fbad7d6317a08f22bd3840678fde6",
+    "after_sha256": "aa3c8e3b092127cf31c9057202ae78b85e2911f2179c2ffd217baf84e811d58e",
+    "replacements": 86
+  },
+  {
+    "path": "省考/广西/2016/行测-统考.md",
+    "before_sha256": "f1e7abedf468499ea6bec4aed7b22c2122e6e8d2633ee71da25dee5ba813e873",
+    "after_sha256": "37f373887e1f3c03473af3f90a7ad9d9152770215516c833138d185e1db0cfc0",
+    "replacements": 120
+  },
+  {
+    "path": "省考/广西/2017/行测-统考.md",
+    "before_sha256": "b402d9e08c1b00a6226d6730f2a340398fb0605ee103b6209780055c27b73ae8",
+    "after_sha256": "19cd33a9dc9e5057256e04085a119176901827d62fa09a88c73555d954da71a5",
+    "replacements": 120
+  },
+  {
+    "path": "省考/广西/2018/行测-统考.md",
+    "before_sha256": "a7783a61122f28d05d3f8ffbdb2006d21527da46e33ce958887dc24968e65916",
+    "after_sha256": "6e65bc582d55b89a0d1b7389b35c6aec976635effdab461a8f50848c3f5b8b96",
+    "replacements": 110
+  },
+  {
+    "path": "省考/广西/2019/行测-统考.md",
+    "before_sha256": "fa9abb2f91b58522c25a8dc1eeb9ff9628923d967f608d7cb5f6a18151c8b331",
+    "after_sha256": "a7805788708a1ab8ad3b13874326e3b1f85b0dfca72f74309132af053980d55f",
+    "replacements": 100
+  },
+  {
+    "path": "省考/广西/2020/行测-统考.md",
+    "before_sha256": "8aff40fcf327f2bb43329e82e4525fbc01d3478e707527c0d89f16700439925f",
+    "after_sha256": "9f691372916aeec5d1b0482015549b3953b5685334c7ec3f871557d3ab9b7d5b",
+    "replacements": 100
+  },
+  {
+    "path": "省考/广西/2021/行测-统考.md",
+    "before_sha256": "98ab3a6d4c64ff1c99a66fd6e87dff1f52c50ff6bdcc6b3b01ac82bacaa41566",
+    "after_sha256": "e5b0bda14948fb0bfbf4bac24acc55c8f458a1ce23fc88651311fe9995f86563",
+    "replacements": 110
+  },
+  {
+    "path": "省考/广西/2022/行测-统考.md",
+    "before_sha256": "2fba38d956de575917a58122bdd4ecb174219af71565241000e4312f51d5bf51",
+    "after_sha256": "77fef5ed1dace4b92c3974e1396bb318eef1d09381a9ce61b08615203bfb10de",
+    "replacements": 109
+  },
+  {
+    "path": "省考/广西/2023/行测-统考.md",
+    "before_sha256": "7581c406b10232f6bb7daee262a7c51fc3940a0c6eac4d510f0083de4781aad4",
+    "after_sha256": "bcbbd70a190dfd2e5e75a34df201fb1d13f36d7ed225db44c597589a44977089",
+    "replacements": 110
+  },
+  {
+    "path": "省考/广西/2024/行测-统考.md",
+    "before_sha256": "8d6bd6175529063b3c751fabc8afe18fc018538a3a92e24b86af6afb9ccc48e4",
+    "after_sha256": "b0ce7998973544e28a7234c3eeffe94566c9b1b94170322e6114fbccba43037b",
+    "replacements": 110
+  },
+  {
+    "path": "省考/广西/2025/行测-统考.md",
+    "before_sha256": "5d32164916aeb9d8b222caa5379421a1e7d14354d8e2df93715a2550de47c803",
+    "after_sha256": "5712ac2ffc2f75fb4911ce1e9b6df7ddd97d76796a72c9b0a6235549dc0d9662",
+    "replacements": 103
+  },
+  {
+    "path": "省考/广西/2026/行测-统考.md",
+    "before_sha256": "de4dced8abee1e5960cfb503bce223556c7b1e4d6120896c4906e6b1c560680a",
+    "after_sha256": "4a63d7d747c6a0d2cffc824526bf62c893230287fe1d243e364e69f5bf0ee0db",
+    "replacements": 105
+  },
+  {
+    "path": "省考/新疆/2016/行测-兵团.md",
+    "before_sha256": "3a3face3a0e4d8055a24a260df6a24c6d64c74b8baa3ff39f7196ec3783b0490",
+    "after_sha256": "e73d953bf816daa78b19a4808bd70f43016187445cb6c3756bff7863d7060cd8",
+    "replacements": 120
+  },
+  {
+    "path": "省考/新疆/2016/行测-统考.md",
+    "before_sha256": "6ea1fff2d7e4312b4860cb4b9ecd12717af4249fb2b7bd75d0b82fd54e6da03e",
+    "after_sha256": "b8b860590d19d42b87791215108d840963e5df23358876dd05a10ceb7cf4abeb",
+    "replacements": 120
+  },
+  {
+    "path": "省考/新疆/2017/行测-兵团.md",
+    "before_sha256": "13ccb8b9b17e66acaa6958a6d5287a24c50551750920427b1433589c8584c226",
+    "after_sha256": "a959e6cac06f8c13cfb4f0025c3999462f60e344e663d1214d907051298b9319",
+    "replacements": 107
+  },
+  {
+    "path": "省考/新疆/2017/行测-统考.md",
+    "before_sha256": "5fa5e7e3f967ae4b5997d9720956dbb48f6e205323bbe4476f5f547554d60c49",
+    "after_sha256": "e7dae094563e2622e0c243693167da169c79d31674d53e4176005916e71b0d70",
+    "replacements": 116
+  },
+  {
+    "path": "省考/新疆/2018/行测-兵团.md",
+    "before_sha256": "4af7740a1c5baa8f386f30a632e8b9ed43bd443b5b05622a8eeb759364b76aee",
+    "after_sha256": "66dba2507d33c921388e2e6deab44ef90f932e21608f6b776e5f14e49777e2ea",
+    "replacements": 110
+  },
+  {
+    "path": "省考/新疆/2018/行测-统考.md",
+    "before_sha256": "916017207bafca519a2b239ee1ca25092b7c1d173adbc36d6d6ca17349a9815c",
+    "after_sha256": "673d5a6c978f525cdd81cc8ec98650b8b5406071c9f5b20f26b14d2ea4369f2e",
+    "replacements": 115
+  },
+  {
+    "path": "省考/新疆/2019/行测-兵团.md",
+    "before_sha256": "a7c00c120467ed8a62ac72007e91ec362294b569979b8de81f60e7e08c8defd3",
+    "after_sha256": "cf2525dce9db57fa76f7295d39357e8b682b99e9d324bbcfa2112ee609538c4c",
+    "replacements": 114
+  },
+  {
+    "path": "省考/新疆/2019/行测-统考.md",
+    "before_sha256": "1dcaf9971c690620d39f687890d562d7722c5a5c66cf628f41f21e94811c7697",
+    "after_sha256": "4cc05bb9b9676e1d41a244853ac72e985296a6dfb5b1dd3217dfc5d59ef6ebb1",
+    "replacements": 116
+  },
+  {
+    "path": "省考/新疆/2020/行测-统考.md",
+    "before_sha256": "d79f02bb881c854dfaceadc157dc455acf6be95eadfa4c67e2a4f0c8cffe5a4f",
+    "after_sha256": "898ebccb1fed7db52c47173ae089603023afc852ede0db7a8cda043661b063ee",
+    "replacements": 115
+  },
+  {
+    "path": "省考/新疆/2021/行测-兵团.md",
+    "before_sha256": "640784ea013a8109460ff648eda1d17e143d169a138392a98dc29ddd4a49b742",
+    "after_sha256": "083c5f0fc64f6b35b564c70cbc39e67f0f8aad252cb92a16e67f8e52691a21ad",
+    "replacements": 115
+  },
+  {
+    "path": "省考/新疆/2021/行测-统考.md",
+    "before_sha256": "03349f2292cf93c40bca394b2268920275c8fbaa48e09e2e68014df30403153b",
+    "after_sha256": "0009879c110e81d57e23172a21a67b7a5872719f0705539acf884b9a0fc463fb",
+    "replacements": 106
+  },
+  {
+    "path": "省考/新疆/2021/行测-行政执法.md",
+    "before_sha256": "0cd02047db21f40821243b0e88f2f6addc21bcec206fd07d74b552a970347b46",
+    "after_sha256": "4804da6ec5902b2d19414b50a3af5a5400d32a60645a4a7e4c1ce49c89b3d099",
+    "replacements": 115
+  },
+  {
+    "path": "省考/新疆/2023/行测-统考.md",
+    "before_sha256": "e8943cb383329780e7397b258800604b546d4f10cde6a502dd3c6716570952ea",
+    "after_sha256": "fd7f3978df2e017057f5976801385e4857e7de5811858799edd8760fe3049f6e",
+    "replacements": 96
+  },
+  {
+    "path": "省考/新疆/2024/行测-兵团.md",
+    "before_sha256": "278dd0af67ec5c22c22b918de570ba660bed0ca6d293a2965335d96a740221ab",
+    "after_sha256": "6accc7a667dd78c9ba3f1f6de5cf4435c44cf7f22b4d39662f837964d32923b2",
+    "replacements": 115
+  },
+  {
+    "path": "省考/新疆/2024/行测-统考.md",
+    "before_sha256": "17942aa123f9ca20a250f0960fbb90f69044b59157fd5765e3d18fcc4a7bf846",
+    "after_sha256": "8042ce4361c22d2a3929c1381ac49b9933b2a5f8a20e393119c9c1b9af7f4acc",
+    "replacements": 115
+  },
+  {
+    "path": "省考/新疆/2025/行测-兵团.md",
+    "before_sha256": "23788affdf6edc128692fabcfd87735cb0424c1b95117db76ed97057e57dfc8c",
+    "after_sha256": "78341ede42f401fe6034a4bc93199bd5cbedb5f70cdd3b7841c139749bb2fdee",
+    "replacements": 114
+  },
+  {
+    "path": "省考/新疆/2025/行测-统考.md",
+    "before_sha256": "7fcb21afea4b5c4ff0d7aafc49930728f08ed96b8674ef05b49c8d842b3cbc3f",
+    "after_sha256": "354a033b14cf1cd98991b1e14f1f2e34d8a0dba2a0fc6377fdc61822ecbf2394",
+    "replacements": 104
+  },
+  {
+    "path": "省考/新疆/2026/行测-统考.md",
+    "before_sha256": "4207278e1920d4930e98584262847e70b6a3a36af6eac1e198e8f6dd3c9dbd7f",
+    "after_sha256": "06bbb4d9cbaf12abb9dea6dacedf8e4eff21e4cae7854ef8240f97351530ef51",
+    "replacements": 104
+  },
+  {
+    "path": "省考/江苏/2016/行测-A类.md",
+    "before_sha256": "bc8ada26b024f243658db407a0fcd1dc514ac39ebadfea7c0691f6688727d17c",
+    "after_sha256": "8499aae6f1b91c99880cd01f2c6635ce92f292f43ee0741b776c38010fc408f1",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2016/行测-B类.md",
+    "before_sha256": "ce1bf085d2d911760021222787a763eb3fb59b5fc17e353fa2425388e96f1645",
+    "after_sha256": "464f794635517e4fb1e00051afb1621fa0bddde7df234b75470706552cdd476d",
+    "replacements": 133
+  },
+  {
+    "path": "省考/江苏/2016/行测-C类.md",
+    "before_sha256": "b5adcf939a6f2b39b1444f6abaf1d58f0c4de7c1ab944f9296c5c61b2c7fcd75",
+    "after_sha256": "960cf54d73096d122b0844cc0dab803b9619b3ded53425851bff9cc7bdb21d59",
+    "replacements": 128
+  },
+  {
+    "path": "省考/江苏/2017/行测-A类.md",
+    "before_sha256": "75f4cc6ab0587994785d378076044bc29da7c0cc9a40122e1ff07178bb4aa027",
+    "after_sha256": "f8836ce4d9cdc559472c340d44b8f8f300498e3d5d4a37b8b674bef25a6b97b1",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2017/行测-B类.md",
+    "before_sha256": "4c9011d0f630db8c20977423b1ea58967caf3d5801ac44941285ec75afcb5fd2",
+    "after_sha256": "5cc9ca207db1b9372c399483585bb0e62f835ef533d1e9d66d5b5a5aa504b407",
+    "replacements": 133
+  },
+  {
+    "path": "省考/江苏/2017/行测-C类.md",
+    "before_sha256": "a399185ca8fc6291ac0d0f4fb2df8181866d03867999f6300f4f47133fc635d3",
+    "after_sha256": "adcc1e2a5e691dcd27809c600e49c942d297fa27a73d0ef1ff1b379b836db4ed",
+    "replacements": 128
+  },
+  {
+    "path": "省考/江苏/2018/行测-A类.md",
+    "before_sha256": "35887d75ec2c1dd9525c551b90d58589d775df6f5a3ef5332997917ab52eb09b",
+    "after_sha256": "0f3908c6f32fe632b5d6d8aa8a3a031a3b67bc20b0a15799cb7c35c122fa40aa",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江苏/2018/行测-B类.md",
+    "before_sha256": "d3e727c323dc1780ae3ce073bae7c0c12127e99af2e13564e41491e1352ba744",
+    "after_sha256": "3e2484e9416c42a0a42dfe647f4a344ac41f026011ef9a19eab859d2ee83aff5",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2018/行测-C类.md",
+    "before_sha256": "00b09c419fc5a8c2ce6b63d0511b0fca39558fc52c0743cbc23c2f5c16c0541c",
+    "after_sha256": "ee62d04370adf3cef368a8919f855761d15b131ee76426668b654ba591f37eeb",
+    "replacements": 129
+  },
+  {
+    "path": "省考/江苏/2019/行测-A类.md",
+    "before_sha256": "8c267317b16c4c6039d98114ba1af74db1fccb612d99288917e04a01cd220925",
+    "after_sha256": "cd4a5e99f591ab5f1f7d42b4062acd26d403a5d940893685e17f15db248c13cb",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2019/行测-B类.md",
+    "before_sha256": "c5dbb356be4b23883605f76e60eb9016c320dae4d9e0f164a017aa12cd078e1e",
+    "after_sha256": "bddbb19dce72ae0b6141a4698d231715ec79bb5a845b5ca55b8eead8f38c3128",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2019/行测-C类.md",
+    "before_sha256": "be4213f3f0dd157b0908a5bcfce5039e51ab22acfa86442b388d7f9bd08410ef",
+    "after_sha256": "52b534513dfbe36563d7f33298ed9c11a6860663981ed746a3e48bfd0ea4a0e7",
+    "replacements": 128
+  },
+  {
+    "path": "省考/江苏/2020/行测-A类.md",
+    "before_sha256": "05aea123d1304f73d1c3f68a3d510685a9f4f22c9e41428eed274663e4256fa1",
+    "after_sha256": "478c62bb449e452307f25e89a5bff886f4f25d0fe89cb111c9d0468a71a7c143",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2020/行测-B类.md",
+    "before_sha256": "fc88589e67304cc0dddbd22e0a1cf6d326619d2d0b7c6ba6449e8dc943373c09",
+    "after_sha256": "e882fa1203e41596655ab87dccaec3f0436868b4a0faad53c68e8c96e162fab0",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2020/行测-C类.md",
+    "before_sha256": "ff564daa5d2e1ca3dd6f8176f6f42a01814424931774e1e873330ddecb0e414e",
+    "after_sha256": "79900ece9985a803e02dac6a8ca4cf69da243251980132b97b04fa2336a13da3",
+    "replacements": 129
+  },
+  {
+    "path": "省考/江苏/2021/行测-A类.md",
+    "before_sha256": "b7ae8c40dcf5cd32e812a0ced86379504652a801566f905c448a2bad74b50dc4",
+    "after_sha256": "96d6a7420d07fe77a88dbcc64e294e3779e482a6b000dcb437716566718a2e83",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2021/行测-B类.md",
+    "before_sha256": "0bf116950473479883cb202c61b89d269a8ad13d40b95dd7e733fc739cebf02d",
+    "after_sha256": "48911bfa0d3541fea06416e57ca88258982ffbbb945e38769683b2da4b572435",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2021/行测-C类.md",
+    "before_sha256": "c1077b20f3c6c69a5bca78520e5158c7e6012d3d850aa5175073b553708d4866",
+    "after_sha256": "55a45d2f8cefff404bb7b3996c48f1527e9de020bb3a6316ed14edc449f59cef",
+    "replacements": 129
+  },
+  {
+    "path": "省考/江苏/2022/行测-A类.md",
+    "before_sha256": "0966b3a6e9fa1c9f618697db7c6a59b2a17428e03b22fec97856919a95ba9be2",
+    "after_sha256": "0550032703e3f472d1434a943833c11dcb7d29bddec911eeea75183cadd48229",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江苏/2022/行测-B类.md",
+    "before_sha256": "e25fb08bd741ff98ed4ed44caff2db9bb9e98b3cc4fbc2960ad8aacca68a1de5",
+    "after_sha256": "fbb939c1543a9277bbdb3426696a74e506455e1fefdca600241b736bf320eb23",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江苏/2022/行测-C类.md",
+    "before_sha256": "cb6d14d17ca182162ced4c8aa30846429fc9be302c580e83d3b42c4f794c0aca",
+    "after_sha256": "5949a46251ad79c405b97334836e232333c294bb05bd436b27f23f733c9166ba",
+    "replacements": 129
+  },
+  {
+    "path": "省考/江苏/2023/行测-A类.md",
+    "before_sha256": "7f442b68097845cb2df5cdabf6b1b760bee012ce5f4f6781f64405ecf09a39e9",
+    "after_sha256": "3c4a7fc61c1340bd78cb9b2869f3c8d0f532a74800bc652d0dbc299ad130d060",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2023/行测-B类.md",
+    "before_sha256": "f16c046b899cdc62e7450d73ec068d030c5607eba2e164de26eb56fd8471c9dc",
+    "after_sha256": "6cccf664452eec573834bd5d32f396dddd78c2ee35396363872a3eaaf79223fc",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2024/行测-A类.md",
+    "before_sha256": "1f31a772b8062a118bd34e261caba7582be44bf42ddb608ca240511d863673bb",
+    "after_sha256": "98b2e57b915290a20b11c26481d5fabd8a25a3810395daef6d5ee728dc951871",
+    "replacements": 130
+  },
+  {
+    "path": "省考/江苏/2024/行测-B类.md",
+    "before_sha256": "cd899d0caa6f65d2fe802acb96948ed8ae1bba80a36ac9c7a634a246a6ba31e0",
+    "after_sha256": "32ba9d1fe7cb065d108dfe1b2b2b0b111498407579b7583603e88d182fe510fa",
+    "replacements": 134
+  },
+  {
+    "path": "省考/江苏/2024/行测-C类.md",
+    "before_sha256": "a508ab06f9477f18dc7822be64ccec013b787bc91c573e3e667ee22c613f6d08",
+    "after_sha256": "0849e58897bc6b2af1358512b4298076e163d42c9c783431c0cd54fa7d7747b0",
+    "replacements": 128
+  },
+  {
+    "path": "省考/江苏/2025/行测-A类.md",
+    "before_sha256": "e6211a2d4a6dbcb1ab3e6cf273f520fef900df7b6b35355562b4552ced334c1e",
+    "after_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+    "replacements": 133
+  },
+  {
+    "path": "省考/江苏/2025/行测-B类.md",
+    "before_sha256": "c3278bafc08bad5cad0a0d87b625fc43212d54c9da8ba84de0e23faf1c020230",
+    "after_sha256": "1435c63e92993e28c19bbd8ddcb94becd24f37c32a4dfd0b6e5e74b327845e73",
+    "replacements": 133
+  },
+  {
+    "path": "省考/江苏/2025/行测-C类.md",
+    "before_sha256": "517103730d778915dbefad3f76bc70eef5c25f0d5ff7a9263ee13955d77bcef9",
+    "after_sha256": "87934a51464c6a3f8e5b507ee0931140d44502a98e8d3e9ca8f18c81198e362c",
+    "replacements": 117
+  },
+  {
+    "path": "省考/江西/2016/行测-统考.md",
+    "before_sha256": "027f80cb5947174f3e01d4ecdf34f0c3dc76734891831e454549df55f0395ffb",
+    "after_sha256": "dfe26019669498f25485f7da2a6ec84328d43f8c4828a9d447ccd375efda96bb",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2017/行测-统考.md",
+    "before_sha256": "d6f2764c624e9d9dc3c3945c1ccae81a890cdab0d8d764a978b55001a06bcefc",
+    "after_sha256": "e2792f07f40da87dff3b4745d63de7bb3f23fcdb7045b89f8175c7bc11c8e779",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2018/行测-统考.md",
+    "before_sha256": "6d3ab48abeb96df3989b410c39346471432d9fa58e9a82cbcb2d371a211901c8",
+    "after_sha256": "50c83d9829dbe357aa3a9162061225882f5a008bc8a3d2d94df6b05dbaec848b",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2019/行测-乡镇卷.md",
+    "before_sha256": "2bc6a25b761bae8ddb75ee20174f17ef32b75b1a286d99f2db3502553e239208",
+    "after_sha256": "def73cacf083beadf97ed922879affec212cb7c08a1d0a60a57380baeb3171b0",
+    "replacements": 120
+  },
+  {
+    "path": "省考/江西/2019/行测-县级以上.md",
+    "before_sha256": "7a2adab6a646c320072f767788b9bf3e6bb3c3ca523690ed3ee6715b0c1d710c",
+    "after_sha256": "befc9b1ba4403ea564e3cf16e3cb77c8738275f9483d35369b1bfc0fc8be7fa4",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2019/行测-法检.md",
+    "before_sha256": "f2adbb66400c057311c8a2fd37f3950319c1cf705c5ad8b9c2f15f8cfb67644a",
+    "after_sha256": "46af6771ae3cf9aa88b9d3db04314eb87fbf6ea99d54aa154de4fb167123c761",
+    "replacements": 117
+  },
+  {
+    "path": "省考/江西/2020/行测-乡镇卷.md",
+    "before_sha256": "8aaa7002a415e85a6b9bcfbcca45f4f099be2a36b02d3a2fac7855cc9dbb884c",
+    "after_sha256": "aad3485299c2762fbdbf40ed68cc7235dcacad8a966b78d7d1513deb8b0ec7a2",
+    "replacements": 120
+  },
+  {
+    "path": "省考/江西/2020/行测-县级卷.md",
+    "before_sha256": "e085610170925a1f53394a8edcf718010fcccde1d3ea4409aa94f49b00602cb0",
+    "after_sha256": "c4c925d50d5e84bbfe38bbbac8925056efc34c208838108973546164701d111c",
+    "replacements": 130
+  },
+  {
+    "path": "省考/江西/2020/行测-省级.md",
+    "before_sha256": "4ed1c66caf0df343af93c61ff59448b5cbc696da1f73274a8e259f455ba0040b",
+    "after_sha256": "22692904e4808e0489a4043d910e0a53d91a14bb97c8050fdcf295b665760955",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2021/行测-统考.md",
+    "before_sha256": "f2b6c5fefcd253992a8cd018ddff6f42d8e2786ddc100159c33a388d1bebd235",
+    "after_sha256": "d877709a2e435ed51e2c3d31369e199f6b84ba3267e744be5d78d9b16cd45911",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2022/行测-统考.md",
+    "before_sha256": "669942c105c1dc0598189be9d9b496b151ea58eae34ce9972de73c58b1e02449",
+    "after_sha256": "4ce89bba57f61543beae5adb25f7ea758a8f344aad690c48a025c48cc9e73e2e",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2023/行测-统考.md",
+    "before_sha256": "0d898de326e86910f07d972917ea77785663ddfb9a76165616d28472e202ed5a",
+    "after_sha256": "00cfa8d6fc05bb6795b835bed289f10be27f1ec3bf297c080263753dd69d2ef7",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2024/行测-统考.md",
+    "before_sha256": "3f808ffeddc1efd05deb2199cd0d1f4010cebf3d44b7b1c9d15fe88eced34a7a",
+    "after_sha256": "f715956d0d0658a15d3e03815b6e142e027d13cbe46b7b6cb2f32f66528226c9",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2025/行测-统考.md",
+    "before_sha256": "0271206b8736590aaa2d97441bdcaf57d19f336eeed80ae9868469909e726204",
+    "after_sha256": "276e88ac1a03f708de854700869e8828c990af8abb75a01f3d367f9dadc2d184",
+    "replacements": 135
+  },
+  {
+    "path": "省考/江西/2026/行测-统考.md",
+    "before_sha256": "f03b1630d4836256fbfe6cdefda114f1d92e9aa150fcd9ea62c5b0bfd1f81a83",
+    "after_sha256": "9ebfa8d1807017258f72edb1f7c6366d48b654a7c8f8904c8f376242c37e61d1",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2016/行测-统考.md",
+    "before_sha256": "2e1a673b88d77b4a0c8c3ce9bcedc0e62c86462630c2e157b25d8bf5600dc358",
+    "after_sha256": "0c744ea0bf98e778e1929480fa6855be38d88f65e1a70dbc06f68b65b3351d7f",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2017/行测-统考.md",
+    "before_sha256": "7b07ffef028cce1f33ac60981c82c29349d5c68c222179f931e0ebfa6a1ae905",
+    "after_sha256": "baa43703f6529f525a3981b095ae4b6eb20df7266b5f765cbe31896249c1da63",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2018/行测-统考.md",
+    "before_sha256": "22d2310c19adf354b110d8d971ceadbf0b0b2344e980cab21f0676fcef389d0a",
+    "after_sha256": "90954e7840b20709ae513df223dba933f2b264669b2dc75cfdfe314d90a2738d",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2019/行测-县级+乡镇.md",
+    "before_sha256": "ff3ffbd43e12821f28f14ccfc0f5bbf78256c38aaf1c6d8f49eee01151f44a21",
+    "after_sha256": "5da5a62d526771c86193bbbcb55dcb2f9abf650cc07efd4b72ef6341fa322cb8",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2020/行测-统考.md",
+    "before_sha256": "f7f243f453a2071d95ccdc77172e6784fce8344472e8d3ea9375c3aaa2509446",
+    "after_sha256": "bfdbf27f1f95f66e72a034459faaa32a3d5bd69ce1c9ff8c01cf63653b0ad68a",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2021/行测-统考.md",
+    "before_sha256": "f202e272fc1ad1d5863924f8fa263db7ec53f931eee048b53afcb9945f334419",
+    "after_sha256": "eb64f09332eb5c59dc7d0ca03b7c1c15627dbc22cb16e7b58d473cd65cd49d30",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2022/行测-统考.md",
+    "before_sha256": "e14cac0429834afef709ee2dcaaa9c02fe314d27ea77d23d375444dd0bb19900",
+    "after_sha256": "a51f082eca131ba9aa87e0c95c2eeb53676c3a72cbc75eb69658d0a821d283e7",
+    "replacements": 128
+  },
+  {
+    "path": "省考/河北/2023/行测-统考.md",
+    "before_sha256": "75ac0c3eb87d8ec6fafcee8c7c52d65b3b4b3e613fd4359f2a356dc2421737e8",
+    "after_sha256": "97a2d7e8de9bfdeec4764d13f719a4f6aa85ac2eeaff2852d1616b6371af3bff",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2024/行测-统考.md",
+    "before_sha256": "d04abb4424d4640d3971c33742bb540c62abd3089f9da3418032826ca2d21f79",
+    "after_sha256": "10914911395a3dc893caa72d3dc0f67b1d6e6b6ecbb9ab86bed6774b4fa6642f",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2025/行测-统考.md",
+    "before_sha256": "41565c761c03d6efbc2ebad078ab3020e18ca7938fdc45b45a1c0fb35ef4e085",
+    "after_sha256": "ec0d4cf854baa2afbdc15c41828cf7ee3008bb1858cd702b4d98a573adc8d773",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河北/2026/行测-统考.md",
+    "before_sha256": "cfaaa2ddd24b4a952ed865637ff9980c34c2537f89401497e82d07b150cfdcbc",
+    "after_sha256": "25bfd0f738de29107d8e5dcfff6334ca43280f3cf9f37449d4548b199febece6",
+    "replacements": 130
+  },
+  {
+    "path": "省考/河南/2016/行测-统考.md",
+    "before_sha256": "eb3e7fe6e35a942af4ecd7b1a376cc704bdb1bc2230c1548c2d94aacefda2515",
+    "after_sha256": "12a976a54dee2dd7f55de60ed20a6892440be9727bde8acf7b3b5e81656d77ac",
+    "replacements": 120
+  },
+  {
+    "path": "省考/河南/2017/行测-统考.md",
+    "before_sha256": "b86bc52cc94706b3f379909ac918a5d33be5a72c7a836c9bb9c2008468253942",
+    "after_sha256": "aa2eec914f28b39d51ed6aef9c0a36bf3eb04952f65278a3271347551352987d",
+    "replacements": 120
+  },
+  {
+    "path": "省考/河南/2019/行测-县级以上.md",
+    "before_sha256": "c84e268e725042e910848727a9cfdd93c189b2c4513f730c993d0cdab01f6beb",
+    "after_sha256": "4f604316e487d47eec47d6f10b854e5daf39e4bf705d4a09d14524f101b4133c",
+    "replacements": 120
+  },
+  {
+    "path": "省考/河南/2019/行测-司法所.md",
+    "before_sha256": "a7f62619b366f8f9932565ea04a014fcd156d05202769a9c73486b2e4b498000",
+    "after_sha256": "91b41c843502b649f7c7399f088ae10d2d4a616d8083b0ab6ac1069d4e8020ab",
+    "replacements": 104
+  },
+  {
+    "path": "省考/河南/2020/行测-统考.md",
+    "before_sha256": "4de54bec20db8d45c78ab9b5d13e7c8e0561a8f76e4dbe42133227b5ee7fcdd5",
+    "after_sha256": "4611f80d8dcd3378d1822307026f41a93198ce434878e9e314663eef37770fb7",
+    "replacements": 120
+  },
+  {
+    "path": "省考/河南/2021/行测-统考.md",
+    "before_sha256": "3eff99ec6096fdea91ba7c722b9c02566300686da776a70dc8b113508b70b60f",
+    "after_sha256": "ad250ecb2653fb84820b945d3c73f4cae21eb7965fcf563e8365a10ca8b96439",
+    "replacements": 120
+  },
+  {
+    "path": "省考/河南/2022/行测-统考.md",
+    "before_sha256": "8d142f6daf8f05483afa8219434294590ec69c7701194cd37f8fce6a9abab1c9",
+    "after_sha256": "39aca15200a2561336a6fc49c387c82c4c0fc404591f34ac5355b6671e87349e",
+    "replacements": 120
+  },
+  {
+    "path": "省考/河南/2023/行测-统考.md",
+    "before_sha256": "54123cbd3947e96f87921fb43217f2b24c2b72da8006c711f7d7a4f28a364fba",
+    "after_sha256": "d28a9d56552cba0e38a54a2fbf739fcd082177ecf19652cadfb5bb442e4d435c",
+    "replacements": 120
+  },
+  {
+    "path": "省考/河南/2024/行测-统考.md",
+    "before_sha256": "d249d2329727795e99f2f09fbe8cd70d854a3a7959f6ea6731ef7f68c6739679",
+    "after_sha256": "f01f8e00a8949bb93880258c9e6be354256083ffee685fad9d3e3deb23442fb2",
+    "replacements": 120
+  },
+  {
+    "path": "省考/河南/2025/行测-统考.md",
+    "before_sha256": "abdd0367aff7dbb94efba0dc8dc0f29eed396adeed6361b5c122034c76954bd0",
+    "after_sha256": "bede5c90a38692e2ef2696cbe153c2a1af52ebc721e8c914219922ffcbb6f0a0",
+    "replacements": 120
+  },
+  {
+    "path": "省考/河南/2026/行测-统考.md",
+    "before_sha256": "940d2824bcfc9fc2877a167fe3677e6b2e604910798a81b348a18fe169fb76c6",
+    "after_sha256": "4a5bc7f188849ef8b6c80f17e0b3ccaec54442f4ffe18176f181a689a6729b0b",
+    "replacements": 120
+  },
+  {
+    "path": "省考/浙江/2016/行测-A类.md",
+    "before_sha256": "dac0c2aa2e3402770b79b98e0408c3a9f7ac7a090a9b47473c7ee7f33d6d3696",
+    "after_sha256": "af9ac425c9063998b69578644afdd21b5fd73f7c9df71e33aba009ed1c16a657",
+    "replacements": 122
+  },
+  {
+    "path": "省考/浙江/2016/行测-B类.md",
+    "before_sha256": "fee05cfda81806dcc77de32716bf562e449b97f8ec6af0ea8956087e3766efd6",
+    "after_sha256": "fce47334f00e9dadcd77c6e5cdc6b68420c6f3e853de13266a4d81536437ab47",
+    "replacements": 115
+  },
+  {
+    "path": "省考/浙江/2017/行测-A类.md",
+    "before_sha256": "31199226eea8b60740ec94a2a70b49fd608fda71100a33fd79773acf32968ce4",
+    "after_sha256": "3d09238e53a68016d5c51ed83849d0775fb4f9913b06b0c9da1761b85f7fc663",
+    "replacements": 120
+  },
+  {
+    "path": "省考/浙江/2017/行测-B类.md",
+    "before_sha256": "31677e3c7f7151e17ca1a245fb0847ce165a412bbbfbae300844c580872ebf9d",
+    "after_sha256": "2abead4c19f0c757ee60cb52beace4e3f4ecef908297e40be2515e41f10a9d3d",
+    "replacements": 113
+  },
+  {
+    "path": "省考/浙江/2018/行测-A类.md",
+    "before_sha256": "cdf60e235e70142bf0696169eaf1acd258a9ed20adca5210983c101c3efb6fab",
+    "after_sha256": "4515ce5ea4f0af6f394f7566be3b830ffa01ef6a64d698ab84b42c38158e1e8f",
+    "replacements": 140
+  },
+  {
+    "path": "省考/浙江/2018/行测-B类.md",
+    "before_sha256": "1c06d3a71d7423753c0d044a045ed92a480afe84ad2bfbb577690050fc48d770",
+    "after_sha256": "baaafa627fd9084cf7301dbd4c641f622add89ca6feba52b5ef21678788379f4",
+    "replacements": 140
+  },
+  {
+    "path": "省考/浙江/2019/行测-A类.md",
+    "before_sha256": "908f166b9d805023dbccbd1ddabc2c8ec1de5cfa2f9cdf767041e7cd003b26ce",
+    "after_sha256": "b16e7fe516463123d00660038b6ffdce7b9fea813bf67dac14b48e9dfab6194b",
+    "replacements": 130
+  },
+  {
+    "path": "省考/浙江/2019/行测-B类.md",
+    "before_sha256": "7d4e5574fb58dc1738cc85a59de98f308a06a9819147fb8ac5b5ea90cd199f88",
+    "after_sha256": "8518e5de664af90f4354d6669730b3f7d8ccb8be83c49d07ba2aa7cdc7a87b73",
+    "replacements": 130
+  },
+  {
+    "path": "省考/浙江/2020/行测-A类.md",
+    "before_sha256": "2c576dd2fc480feb57320767d4ea2150f319162110360cb660bd333819bd29c3",
+    "after_sha256": "005839ffbff73d64e72dac3ac7391300ad2aec0951fb5369267b72ae58a03a76",
+    "replacements": 93
+  },
+  {
+    "path": "省考/浙江/2020/行测-B类.md",
+    "before_sha256": "821f7786228ceab3c55430f1b296c41b2b4fc2b8aa8cd9aef47a630114af988a",
+    "after_sha256": "17497400f891feeddbe733bff01bf27d041d54aef33d529d1af7ecbd6bf45d3f",
+    "replacements": 95
+  },
+  {
+    "path": "省考/浙江/2021/行测-A类.md",
+    "before_sha256": "a21ac231855b3d52ef495ceb3b1727c9b1b4aaa7b07126160bd209c2f796e11a",
+    "after_sha256": "7c859322e06f27ade07032c539cf7f07fa80c2c9f5dd2928227b0d2ac68a4d41",
+    "replacements": 125
+  },
+  {
+    "path": "省考/浙江/2021/行测-B类.md",
+    "before_sha256": "d529c46100dd7107cb33576363dcc2bbbddb6563e6ead7d6b310e8c51e529abf",
+    "after_sha256": "1fe756747d8c39a29a538c427f8ded12c742f4712dce9f6b258a6297c3a13df1",
+    "replacements": 120
+  },
+  {
+    "path": "省考/浙江/2021/行测-C类.md",
+    "before_sha256": "11e6400bafb7fea9ba066814518e9c9710d98aa92781d77c88bb3b300d30c474",
+    "after_sha256": "b485738e9e983c878609eb6ad575ea4eb95cc0ed62689eddb152815da46017a1",
+    "replacements": 115
+  },
+  {
+    "path": "省考/浙江/2022/行测-A类.md",
+    "before_sha256": "021ef784452e714de852f867b3ab1a9a094cfacc85bff278594642385abe4dd9",
+    "after_sha256": "fd6eab3cc9e1cffb3e0d5d095cfdf3ce38d3508a97e88f0214a2ce0aa5834d13",
+    "replacements": 123
+  },
+  {
+    "path": "省考/浙江/2022/行测-C类.md",
+    "before_sha256": "99b8d90483d8e630ff4f9b9c4a878b42607b665334b928d2c429614e654baf0d",
+    "after_sha256": "a5ecbacc33722659759ba539ee7d9191e5c54f29fbbd131822412f1c5dae9a5c",
+    "replacements": 118
+  },
+  {
+    "path": "省考/浙江/2023/行测-A类.md",
+    "before_sha256": "f5e24daedbc089c77c1bf4b43cb12d14bb27661cad4c6ca6a571878eeee9dfde",
+    "after_sha256": "80290871306e9722190a97f3431e7a593e2af135695e7520cada04d66be27d2b",
+    "replacements": 124
+  },
+  {
+    "path": "省考/浙江/2023/行测-B类.md",
+    "before_sha256": "a5b3b3642668ac5e3f15aa20d42495a5a6cb41658cd4dc625fc739ba43d16fc8",
+    "after_sha256": "72b3d84dc1b94d6f825ac286076c168bc8e27fb34ad94732537a360b872825d9",
+    "replacements": 119
+  },
+  {
+    "path": "省考/浙江/2023/行测-C类.md",
+    "before_sha256": "897d6cc9a0d44af43cfc45da9b5a3c3d041b51c86260086d978f6e3382cd62f5",
+    "after_sha256": "c9b076058e2cbd74348dd120bb36dd189f7551b55959d301886e346e221f56d9",
+    "replacements": 114
+  },
+  {
+    "path": "省考/浙江/2024/行测-A类.md",
+    "before_sha256": "83f214cebe68c99a19900c9d9005a4e663e377c24710f57e64b084172802f636",
+    "after_sha256": "4663bb9baa5a95379f5747d8d6eac844989507d2528f3344009dce746c934111",
+    "replacements": 124
+  },
+  {
+    "path": "省考/浙江/2024/行测-B类.md",
+    "before_sha256": "f35f84a17c53fa97f339feab2c1ee7e7e97ed0e460b0396e7109706d33e41344",
+    "after_sha256": "99250c538936e66176fc411afebacd6f77227a72f05860ce895ffa08de01ce42",
+    "replacements": 119
+  },
+  {
+    "path": "省考/浙江/2024/行测-C类.md",
+    "before_sha256": "306e0c91ee9d166c1d9c50d8577d4d1b02e10c45d6288b7536e46ca5e4950594",
+    "after_sha256": "790307ed3955ea607af313b770363de6227084453a661ee70f10c76578ccc8b0",
+    "replacements": 114
+  },
+  {
+    "path": "省考/浙江/2025/行测-A类.md",
+    "before_sha256": "9d4783a95b67eda098a87193c8fdca49249bef0da3266a8639db89f45ee732bc",
+    "after_sha256": "30d8c3feeb72b8863b4da88704f16d824c70a2753aaf30f4fdab5328fb824cb2",
+    "replacements": 123
+  },
+  {
+    "path": "省考/浙江/2025/行测-B类.md",
+    "before_sha256": "a85c8793aa6b8772ae87287f4742581666b33182afae121b00c2a566f31ad2a4",
+    "after_sha256": "0e6bc046d6ad4d56b1a4a7a8e6eadb932d6b95a33f37531207d9b4cb9ce744db",
+    "replacements": 118
+  },
+  {
+    "path": "省考/浙江/2025/行测-C类.md",
+    "before_sha256": "fc1c78e90f0aa1630756a7450f0b0ac05404fccf2b72e04053ef5968490848c6",
+    "after_sha256": "c7ed6884f05836472b482ded0f5e9ebeeb48391b5630f720c51a61889c5487b6",
+    "replacements": 113
+  },
+  {
+    "path": "省考/浙江/2026/行测-A类.md",
+    "before_sha256": "a6c74d92f6d9c73165166c5278cc7ee2db2d0aa559ef9a4b4f19c958546a43b2",
+    "after_sha256": "fbddc01fd85804e6f9a8ea4b47aa57e83181a6060136076bc58f6bc0c227a189",
+    "replacements": 120
+  },
+  {
+    "path": "省考/浙江/2026/行测-B类.md",
+    "before_sha256": "b1399fafd5fa6881ef1d098901da3d526520e06134d62fd0b3d139efafe1bdca",
+    "after_sha256": "1d96e50603c6455fd562ec17378c8ccf7cce0e8a8386a628c4fcd67c87be2d9b",
+    "replacements": 115
+  },
+  {
+    "path": "省考/浙江/2026/行测-C类.md",
+    "before_sha256": "29ee08187df455b063d82881e8d102764ce5049b03f19e33b6fbb44d33a6e5c3",
+    "after_sha256": "c3cc60cb152f375e1517ff47e2055544bd640f57493476337737db66a7451c03",
+    "replacements": 110
+  },
+  {
+    "path": "省考/海南/2016/行测-统考.md",
+    "before_sha256": "1c1c3c81f18f8cd1086bbb49ec2f98d2f152b045f9f47666fe7ea2019ab0e672",
+    "after_sha256": "6a5b38092657ccd2124fb4ccd25714a793e26473c50c3b793dfb42719e7eac00",
+    "replacements": 110
+  },
+  {
+    "path": "省考/海南/2017/行测-统考.md",
+    "before_sha256": "2083515a478b9456299179f5defc8c8b2d22fdcca7ae486acf7ef9e4c84c5ac4",
+    "after_sha256": "23cc350344ce36f6a5e5ac775ee98b6e7c9a38a68e5da76e90e6f491179bc3d6",
+    "replacements": 110
+  },
+  {
+    "path": "省考/海南/2018/行测-统考.md",
+    "before_sha256": "f5032347e8adffffacd4728dc950a646f7c444656945a957e3cac1cd9951d757",
+    "after_sha256": "b70f119faae972f995b5facbe55c04bf664d5c4433e6e501f7d4c4ca9079daf2",
+    "replacements": 110
+  },
+  {
+    "path": "省考/海南/2019/行测-统考.md",
+    "before_sha256": "48b97513753f1a843e707a4a98456addac87535380bf326fd4da77eb11e87b20",
+    "after_sha256": "cb5dfea2bbd28e6cc9897de0aa40fdfe111a35c802f22828b663c127fa8f11d1",
+    "replacements": 109
+  },
+  {
+    "path": "省考/海南/2020/行测-统考.md",
+    "before_sha256": "9a3d08587deb6e22d59d98d06b98be24fbf90f01fc819059dd4a709bfd072730",
+    "after_sha256": "3e08902d311eb72e1e04afecd716ae784e7026d9bd2bf90af98a4ee825f8d544",
+    "replacements": 110
+  },
+  {
+    "path": "省考/海南/2021/行测-统考.md",
+    "before_sha256": "c0fe188494db8a760aff3749270408fcf9cd4b468fcbbebecd62691a36b331ed",
+    "after_sha256": "dbcbf8c72e39207ffd1c3a6749ce05e0376165beda2a82e9cc157cac7ada6e26",
+    "replacements": 110
+  },
+  {
+    "path": "省考/海南/2022/行测-统考.md",
+    "before_sha256": "55e4f06c6f85ff516b55080efdc2ab93768ed49ab09a5af6a4b0da67562b3e4c",
+    "after_sha256": "1e870f33aa64723fcb3f464de6ed310c3053a6c916b7e5eb615ec325d1d725c7",
+    "replacements": 110
+  },
+  {
+    "path": "省考/海南/2023/行测-统考.md",
+    "before_sha256": "1752bc7c629558ccaf1d33cb2893ed572b28faf36082160d70116dac33d3f101",
+    "after_sha256": "66728a05cd1e3bf60bd5fb43333e0112aab47486ea4c161958b4b1559de3cb85",
+    "replacements": 110
+  },
+  {
+    "path": "省考/海南/2024/行测-统考.md",
+    "before_sha256": "e542fcb581eead373a07e5c3e143c4924df057742108ca99cfa1de2b927022e1",
+    "after_sha256": "9e620ac01221fcb0166e1a4bb3c58877e250bc5cdbc55e2a8b5f025b78a4c6bd",
+    "replacements": 106
+  },
+  {
+    "path": "省考/海南/2025/行测-统考.md",
+    "before_sha256": "8835767dc68e659e4c444452ecbf31f6710812191accfe0a08c5d01e4240b4f2",
+    "after_sha256": "e92e69aeff29aeb249fe216f2cf33f10af050457cf53ccc3edb49fc8aeb27375",
+    "replacements": 109
+  },
+  {
+    "path": "省考/海南/2026/行测-统考.md",
+    "before_sha256": "d3901404a65142e5b5cf2368eda96b55186ebf0f5f889d326183e9f3441c0c8e",
+    "after_sha256": "52bac8fa31fee6ec7987dd02e94d904654ffb6d2ddc3fbbcc1805d9b0339c50e",
+    "replacements": 105
+  },
+  {
+    "path": "省考/深圳/2016/行测-统考.md",
+    "before_sha256": "fb6da5fddeb843823ac7e26bb4a5e9f0b8798c6f3d6b107baa3621140628866f",
+    "after_sha256": "3e52b263bc3755a456ef8539637eea946ad0eb48190361f3e32df8476b43bb1f",
+    "replacements": 95
+  },
+  {
+    "path": "省考/深圳/2017/行测-统考.md",
+    "before_sha256": "b9c3b6a7aa14a71fbc66b4484574d573d85b8b246a26782af19064c6275dd97d",
+    "after_sha256": "fd8e84b86a7657fd08dcb69e1669153d82b489bf0ff4bc456c70ea0d76b62691",
+    "replacements": 96
+  },
+  {
+    "path": "省考/深圳/2018/行测-统考.md",
+    "before_sha256": "22c1284e39e229999ed651fc01b9780f66e99c0292b8206a6186867da9a1d76f",
+    "after_sha256": "8d4b8d108300e6eb6554e2cc8cb39c2ea46a35ff079d403a6e8864dce8963b32",
+    "replacements": 98
+  },
+  {
+    "path": "省考/深圳/2019/行测-统考.md",
+    "before_sha256": "3955efe1fe0111447238a2e6feb85da2533c0f348446ae0bc45e0624b367e3c9",
+    "after_sha256": "35e12e3c75338bf8fffa117c48bcda1001fec5377ceb33b0cad86a642ab97893",
+    "replacements": 97
+  },
+  {
+    "path": "省考/深圳/2020/行测-思维能力测验.md",
+    "before_sha256": "ae809ff9d8d310907a35cff6d3ed5781be7491f8863dbafacfbc58840fcdcbbc",
+    "after_sha256": "89f4a0214faeededf144c71991187693bfbdc96e9aeb376e8994cd042523f078",
+    "replacements": 68
+  },
+  {
+    "path": "省考/深圳/2020/行测-行测1.md",
+    "before_sha256": "fdfb49f846d8d55d0543b4c1803f72dcec74b0f72ea2ce70a12604ecab77cbe3",
+    "after_sha256": "1b9e7d7510cf40ee49233d88bcbb5146569cbef3b962d2648a94fb846085b4d2",
+    "replacements": 97
+  },
+  {
+    "path": "省考/深圳/2020/行测-行测2.md",
+    "before_sha256": "b5fb8b3cb54151314ccf940763f8b16222fcebdf19b9f4cddeffa072173d06ce",
+    "after_sha256": "d31394b0d226ecf5de40e6a3818b01dede4fd9815eadecd91129950c39b67493",
+    "replacements": 74
+  },
+  {
+    "path": "省考/深圳/2022/行测-统考.md",
+    "before_sha256": "2a3e2809944bc668d92427b6cee498d5e8b493544252bce0ca8ee4b5f1aef620",
+    "after_sha256": "c1d63243685397112485eec1fd9e770b43704bf079551aecee7cafbf5fcb0fa2",
+    "replacements": 97
+  },
+  {
+    "path": "省考/深圳/2023/行测-统考.md",
+    "before_sha256": "cfe205d8b90d53016d128962d5727a3f8e93316db570f9f7686dad6481bf9944",
+    "after_sha256": "9dd93ab34f963b301a4a4b11eb986e42e43b09d0692c087792c5f06f1103c286",
+    "replacements": 96
+  },
+  {
+    "path": "省考/深圳/2024/行测-统考.md",
+    "before_sha256": "12da60d753cba115b20ec642b1886a0023bbd1d2c9410946aafbc7c890442221",
+    "after_sha256": "892cae8dc77f6155680ecaca32f88e0d91254ef26c7b121eb1ab898fa5115099",
+    "replacements": 98
+  },
+  {
+    "path": "省考/深圳/2025/行测-统考.md",
+    "before_sha256": "582a925d3b14cfe452e20d33cbb808bf800218c0dfb02d91c3b0cb4372515826",
+    "after_sha256": "37983bec86485f60e9688d15b757e5793406cf8a71a2d0a4a40661d04cbed500",
+    "replacements": 97
+  },
+  {
+    "path": "省考/湖北/2016/行测-统考.md",
+    "before_sha256": "5f55d4e8a22c86b33a9de4e96c932307f36626568d61e4680815dee734cbbd21",
+    "after_sha256": "7ccb6bf2e112b5fedb9317f41a09f816a99b25222dea0b66a7ae170f9aea2f41",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖北/2017/行测-统考.md",
+    "before_sha256": "91599d0c57d21727dd05c074a1d811c90e63a867f926f7f110f56ac42fc48e43",
+    "after_sha256": "ab70be2f3ba8051b1dcd423ee3763957deba94141c9dd049239dd49cedfa420d",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖北/2018/行测-统考.md",
+    "before_sha256": "48f03cab3aab924e27d7f1fc8f12c4f00c1dbdebb5c021cc17be3cb70fd618cf",
+    "after_sha256": "96757e62f7e4981043bd9f10cad72b622031dee23bdfa31587777e0a8ec77927",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖北/2019/行测-统考.md",
+    "before_sha256": "42b4ccf8c421e7b7ee6c96b592aeae729393aaaa43d1838abcda5ce0e8c53889",
+    "after_sha256": "c111e8f5d951758dedd591c958bae12fa032d588443ee70846db0e4ac27445fc",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖北/2020/行测-统考.md",
+    "before_sha256": "f6f043e7ad66d12baf79baefda2c7b2603bc1ea6a1d96ea114b5297c139a7437",
+    "after_sha256": "24a7d52e50ad512659d850fc77a1199287545867c70489fb093ae1a877ac6808",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖北/2021/行测-统考.md",
+    "before_sha256": "2382f2d053c4060040acb5143f6d3e603d347a97858370b91fb727eeb6abd771",
+    "after_sha256": "6da2418b5b80322ebf42966f437b66b9fe7b82a0559411b03821d20108df8775",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖北/2022/行测-统考.md",
+    "before_sha256": "099dcdac81891a7342c2e958ba45e1d76d0715a490485c963ce1e5cffd514186",
+    "after_sha256": "7ddc25302b30355044a2a9a444dabb5c499b48c78f3a418230fb6ca2e97cd016",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖北/2023/行测-统考.md",
+    "before_sha256": "c88c1929aff238772ff1992de3b6f64c6f9c6bb281dbb5006ced00e05fd7b45d",
+    "after_sha256": "218511c844b30d0cb3eff46296b7d6c1043e95a2def5665b776efa734d247d48",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖北/2024/行测-统考.md",
+    "before_sha256": "573c40bc89df2b9cb67d6345286f679b207ed492aa8c6f185055def5a913f8b9",
+    "after_sha256": "5f8bf20dd0519e673feefacbef2ded9c56e8ba47b901dc328bfcbde2099146db",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖北/2025/行测-统考.md",
+    "before_sha256": "0b75830cf2d0a81d7622e87d3f4a70db9670a1d437b5c60b3d3a84152997e0e3",
+    "after_sha256": "be02b77c12764cc450726235f2de2a489fb7f71ad4589bf9be80bacd4eae0f47",
+    "replacements": 123
+  },
+  {
+    "path": "省考/湖北/2026/行测-统考.md",
+    "before_sha256": "5ab8feb4e26aa78ed6d67794a4d9906c3bea2fe76c27d65e73674c4bb9dcd411",
+    "after_sha256": "cc1862e69f7752b410f07c4a3b41acc9d8fb13c59679b1e73b8d5a8e233ed074",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖南/2016/行测-统考.md",
+    "before_sha256": "24f81d2ef6c37531fd67dc49a87c39d70bc1327049de3b29cb649f5ee85b6650",
+    "after_sha256": "689d3a8704f495ebd97b75df58e92452220ccf0597f292857cccc023b6739d87",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖南/2017/行测-统考.md",
+    "before_sha256": "59b067abfbd752091347afe9ad9bb02cd66db985ee6f042db5fd841a8a9a53f9",
+    "after_sha256": "89b777446aba3d6bde65bfcf48df6c976479af210d791f424867a94cf9ec4d2d",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖南/2018/行测-统考.md",
+    "before_sha256": "3a65a0e5ddb97d1b1865e8e9651ae6c06356698f9db9ab4610f8e1497b032d3f",
+    "after_sha256": "5a6984008d5a5f1f03a3fde63b4c9a0356ef57dfb916c8a5a72a995d42e3ed87",
+    "replacements": 125
+  },
+  {
+    "path": "省考/湖南/2019/行测-统考.md",
+    "before_sha256": "45c27a26bb88473d3b4240fd4d43e71121eba1b7e1ec7575a0d421b0f4cc037b",
+    "after_sha256": "7e1b3ec5f60c5757ef733627e5734093f663d149996a63b66e24c57ef9614690",
+    "replacements": 120
+  },
+  {
+    "path": "省考/湖南/2020/行测-统考.md",
+    "before_sha256": "cd9e6aa888c3f857f85ee7742644c30b26fa0a9bc557db1363eb46289ad15e43",
+    "after_sha256": "c597522ccdeb6cb23aff13e7a37c39bad533c44f638882fc10617fd190d5eb76",
+    "replacements": 120
+  },
+  {
+    "path": "省考/湖南/2021/行测-统考.md",
+    "before_sha256": "16d3bbf612e92431469643a6b584c304fa8e657a99d5bb8be03e25c9b036d34f",
+    "after_sha256": "08ff5aff4a391ac4ae72fa8a14907b03dd3d5080193b35a6981a8f6dca7a40b4",
+    "replacements": 120
+  },
+  {
+    "path": "省考/湖南/2022/行测-统考.md",
+    "before_sha256": "77d1f70e2e782790b0f041a8c7c958d5de5c46dd19a2cb45c3aaae6fe0d5b897",
+    "after_sha256": "1da2502b49b04cc7ef1718a171c97017e73de68bd41d2bfb7ced862c1b8615e4",
+    "replacements": 120
+  },
+  {
+    "path": "省考/湖南/2023/行测-统考.md",
+    "before_sha256": "2b40928c4bfa2defaad72aa221637b4c5d0f8285e02231e9ebbda5706fe4448b",
+    "after_sha256": "9acfd4cb0f77ca952f47aebb0da2b06c676fbb735655d36b7ac671610fff5c09",
+    "replacements": 117
+  },
+  {
+    "path": "省考/湖南/2024/行测-统考.md",
+    "before_sha256": "09a91d3ef0a94adb554a7690e8c22f51a685047da740f9e9381bf96c164c753a",
+    "after_sha256": "6779cd43aa098cb1351fd85392715d62cb85466faa7a09f56c19a73d602fb05d",
+    "replacements": 119
+  },
+  {
+    "path": "省考/湖南/2025/行测-统考.md",
+    "before_sha256": "f0c40ae391e3a1f7d5d4ff8abe29f036d409d2863b900f9a22f5fe1a851ceed2",
+    "after_sha256": "d4f686af5b6bf199f3c5f90148ca8ed5c5b81373c5614f144b1348c4d5016e2c",
+    "replacements": 119
+  },
+  {
+    "path": "省考/湖南/2026/行测-统考.md",
+    "before_sha256": "6bdcb9da8db6306950bb5bf8f17c623931faeb627078a49e2c7bcfa5d517d01d",
+    "after_sha256": "0b3a64bb88af6814a58a8b0d712e6c60165812778e9244bcc685a102b4db0b46",
+    "replacements": 120
+  },
+  {
+    "path": "省考/甘肃/2016/行测-统考.md",
+    "before_sha256": "bfb30efd769729999813f86e47f4f2599a4a1f0e6368cee22178548b949bdb0d",
+    "after_sha256": "923f615156e8b8db203fe950eaa8e69c03de17e17194d2920292b7682d692612",
+    "replacements": 120
+  },
+  {
+    "path": "省考/甘肃/2017/行测-统考.md",
+    "before_sha256": "7ed3319229f0ea0035c470431b567dd47a2bf943b2ce18fa814a27d853c06925",
+    "after_sha256": "40111730f5e024999f4718f20ae1c0a9744f8fca05678a77b3a3beeb507dbf34",
+    "replacements": 120
+  },
+  {
+    "path": "省考/甘肃/2018/行测-统考.md",
+    "before_sha256": "b9ffaa3117304d0126545efa76edc2bbdd7bebfb5d69e8505048f144de9c9026",
+    "after_sha256": "a46caee7bb48f416a387525547945af23da480a22dd7df4925fbf6e345d548d3",
+    "replacements": 120
+  },
+  {
+    "path": "省考/甘肃/2019/行测-统考.md",
+    "before_sha256": "66d86530ea60ebfb96dabd46d9733f7f0ba5077c9a24f01cd5ed20e895d524a1",
+    "after_sha256": "53c14fe2f252392c5b9c11a9f8bc7ef86b342a051dcd69b9de2a1f45fcf062b1",
+    "replacements": 115
+  },
+  {
+    "path": "省考/甘肃/2020/行测-统考.md",
+    "before_sha256": "bb5c0af8d8af0c09c4462500757792419c36fda850fbead05bba946ad1b888bf",
+    "after_sha256": "214916c03e0703eaab0a7d79e6e71d1690b0fa360c8ffe55cb39187d77316cfd",
+    "replacements": 120
+  },
+  {
+    "path": "省考/甘肃/2021/行测-统考.md",
+    "before_sha256": "bb694d7a2b3b3138475ae1685a939df5e12eeb38eb2d3c566156658de3552e01",
+    "after_sha256": "e8d5d7d8558096b3f3016eb59a34e00701955b956396e570b78a16c9b957ba8a",
+    "replacements": 120
+  },
+  {
+    "path": "省考/甘肃/2022/行测-统考.md",
+    "before_sha256": "9fd7500ac46086fc62abed75ae419b548e4124fde62ddc6fea500affeb8a55cf",
+    "after_sha256": "3b50f198521887b8d9a449d21c72642e67cf138528acd34db0739170cae58888",
+    "replacements": 120
+  },
+  {
+    "path": "省考/甘肃/2023/行测-统考.md",
+    "before_sha256": "f9cab79c73b094aabd43fe3831c621b3452960ebf4271508565f485b5ffde9e4",
+    "after_sha256": "15e53b308f4b5f639d2750a929c4b04a1421d81e41318ce2b9cbf4c25ff8c740",
+    "replacements": 120
+  },
+  {
+    "path": "省考/甘肃/2024/行测-统考.md",
+    "before_sha256": "81658a6c27d6dee38874b5c5810c8144380a1dfb9625afd34ce18e37e6f31d2e",
+    "after_sha256": "3a622398f03605a1c61c4ee1cb57adf74e9dfbeb04cf6d8c2a195ecdf71c274f",
+    "replacements": 112
+  },
+  {
+    "path": "省考/甘肃/2025/行测-统考.md",
+    "before_sha256": "ebc33d500342945b431fd8f9ff1351a330d9b02bce8b29f857b0e916266f4acb",
+    "after_sha256": "6ab139d077adabf89762530294b061a4a3438187ad64de50ad470d00db607b91",
+    "replacements": 120
+  },
+  {
+    "path": "省考/甘肃/2026/行测-统考.md",
+    "before_sha256": "c8c777778dbdf061792738bec17d3b8222c309760c44b66641db573d8f996aac",
+    "after_sha256": "5f5dbf841e081580facba868223c7e0dc71cb79196648154c0d3793db8cdb8dc",
+    "replacements": 117
+  },
+  {
+    "path": "省考/福建/2016/行测-统考.md",
+    "before_sha256": "4d04faa34ea5161b137a4693f41a243fa29171333b66c7f91c32efa4769f2d51",
+    "after_sha256": "47554af552097c13d012ff16f6cb02e0532c425f4999c330907d91dab438363c",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2017/行测-统考.md",
+    "before_sha256": "c79e300b0c0f44eb4a11b347af85bf8f572029c2a0919860298ddeb73502ec87",
+    "after_sha256": "b02425e063c3a5aee20b670622a606a960a065f0aac4b7416ce70cd629c41dd3",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2018/行测-统考.md",
+    "before_sha256": "b7de50bb1a52bf6d8aa8c1f517264010a66ae806f3a1890aae96afb77983ef3a",
+    "after_sha256": "3a19931571c0395f33ec79dd80c8ca37040c23e92f8e8d28258dc4199cbfe96c",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2019/行测-统考.md",
+    "before_sha256": "d315b3d9b83d9dbe4b9040400a5883493f13686556f79c4116d0cc60e7a276ea",
+    "after_sha256": "20d6b6694922f1d468323828f3a02f9441c7b4220dea4d1a4d644411c547a539",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2020/行测-统考.md",
+    "before_sha256": "c1fd4691b5196873c8004785172b5b029190b9dff37be4199ddd7e6d18dfe6ed",
+    "after_sha256": "378745dcbb14f0c3baf3c0ed82996e5156c98afeb76380b9c9d7a7de3dc1438e",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2021/行测-统考.md",
+    "before_sha256": "6126ddd4188877c731dcfdad17bef98628892c59614c15cb635a7da3a5433853",
+    "after_sha256": "1a82de97f60124b336f5c870bd1f96d148e5800463a58dc27dd8b88118406a27",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2022/行测-统考.md",
+    "before_sha256": "b958bf5272586d61eef787186aa2a34b4073e4e7330bfc9e83ea98686941e5b4",
+    "after_sha256": "f329ab05a5f4ac794326bfac73fa42838ff6fb7bdc6b744dc09186a48e964057",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2023/行测-统考.md",
+    "before_sha256": "9f841440f0085ffd228d40165b4083ece3da9257afa70863b0944b00bd4aa9b2",
+    "after_sha256": "07087fe207cf8b844dcf1417431808e28eb31392d07191e79f5e7d9a5fc10c7f",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2024/行测-统考.md",
+    "before_sha256": "dd2ac809d34be17aadfb7aacc95fecfb4081be92c5785897ad8204ee3acfe272",
+    "after_sha256": "9315e74be1e28a5d94b25e05626323db6ffb0b723d6c7d383e246e4d29d2417f",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2025/行测-统考.md",
+    "before_sha256": "af294d4fa11ef51fbcc7da77446b6ba6619a4aa7436de3d0d4629d5d5e1dd468",
+    "after_sha256": "b51edbecffc9aefe4e640a1c980f729c44e3a01c580bf146ba3fc1e3d07daa6a",
+    "replacements": 120
+  },
+  {
+    "path": "省考/福建/2026/行测-统考.md",
+    "before_sha256": "d5d4bd76dd30db8d68fdcc4ea70417165f2382d7449b0c58fab9bd42abd4d7f2",
+    "after_sha256": "70c0117cefc341978f48e7b353d1f0ccafda8836f78d53c0db074caa176b408e",
+    "replacements": 120
+  },
+  {
+    "path": "省考/西藏/2016/行测-统考.md",
+    "before_sha256": "d6df8c5295bbb640029a4141570ef4dde566f42e133b7034b0550b98538e8a96",
+    "after_sha256": "a38bc8e7f2f8ce57e6a4060b35f02cfa10021831b50a8cbb702cfd7f995ec725",
+    "replacements": 120
+  },
+  {
+    "path": "省考/西藏/2019/行测-统考.md",
+    "before_sha256": "0eebdd37e905540b7f555c68d6aaa210b8da2b67cb50b00a6009f11837ba6275",
+    "after_sha256": "7967306ce12f40652dae3d0875ce9a73d6a59392f8a0b6ce9eb85c9e55a0e74f",
+    "replacements": 100
+  },
+  {
+    "path": "省考/贵州/2016/行测-统考.md",
+    "before_sha256": "d37bf2f4c2c37a12a92102922561464c136be0e83a3a7f9f4164702b4819e983",
+    "after_sha256": "b43d7362e96659cd1ca37b8d0194c77e07f31f2d5fdece78a378017dc2dbae2f",
+    "replacements": 120
+  },
+  {
+    "path": "省考/贵州/2017/行测-统考.md",
+    "before_sha256": "8a472a3f11133d7e977bb9c30f93caa595e77d3086b86bcbc945474bbe007d5d",
+    "after_sha256": "50c7ce5ac81567399db3ebeb6554c02ca59d6ae5562f1b8acd3c491dc9aa1d32",
+    "replacements": 120
+  },
+  {
+    "path": "省考/贵州/2018/行测-统考.md",
+    "before_sha256": "e53d961caaa3e88ebac92c4f03f92362249cddf9b769b6c73301abadc9cf8a4f",
+    "after_sha256": "c0a717ad3494765d8ed18540b44762717d5633cfbdd70cd1be66e10d76afad4a",
+    "replacements": 115
+  },
+  {
+    "path": "省考/贵州/2019/行测-统考.md",
+    "before_sha256": "037abbf2b38b3c3a5de7cdef012a3f7a880dc784fc77bf11705c3d2ec8ee10b6",
+    "after_sha256": "fd893e4beffc41303b7b95f7ceae540df1a536814b3282e57564848f5918167d",
+    "replacements": 115
+  },
+  {
+    "path": "省考/贵州/2020/行测-统考.md",
+    "before_sha256": "3a8eca65a3d83b6393440a266055d65b4d54634149a65b7b0bc77e6e8ae14eff",
+    "after_sha256": "478ab02789cb121f28663c43fbd63c42325347cf9499ae5af704aa584052dd79",
+    "replacements": 115
+  },
+  {
+    "path": "省考/贵州/2021/行测-统考.md",
+    "before_sha256": "53cb0c19df841ccf053020c8bd0560ebfd81896ad2f96b1b749257f087d19e7f",
+    "after_sha256": "8a776ea91f40299fe16d3f422cfdfc49840fbd6148f460ba1720f06dd6febcd4",
+    "replacements": 115
+  },
+  {
+    "path": "省考/贵州/2022/行测-统考.md",
+    "before_sha256": "db43fa70ae699713a0ae516466431f5b6d7bb617f41a9a6700b195f978f4e6b0",
+    "after_sha256": "2365ad43cac7817d76e9cfd2ce83cfbe0b6f56985528a357222435e05a33207c",
+    "replacements": 115
+  },
+  {
+    "path": "省考/贵州/2023/行测-统考.md",
+    "before_sha256": "97fc81394213a314abc1f28b2a9b662493119df20462ef39b53f0710c5e077ea",
+    "after_sha256": "d4767dfb65d338c199e91ccde3d1fee804019d01d68ac17d5f1a3b77d9b9470e",
+    "replacements": 110
+  },
+  {
+    "path": "省考/贵州/2024/行测-统考.md",
+    "before_sha256": "76cbb6578654eb1b0744b070c9a3d40480b6515b7c82688afa67c3dd4b68c70f",
+    "after_sha256": "6404b4c653b776136db9f4f2a5398dd4aa362f1420dd5115f31922d013d4e8f4",
+    "replacements": 110
+  },
+  {
+    "path": "省考/贵州/2025/行测-统考.md",
+    "before_sha256": "c69c1511d9b9a553daefed861049674206e9cceb0262d74c7f4506ae18ae7219",
+    "after_sha256": "7d52ab46b908c8bfe3281b6c91d9e002f55e912e05b1afec533ab6d02af167fe",
+    "replacements": 110
+  },
+  {
+    "path": "省考/贵州/2026/行测-统考.md",
+    "before_sha256": "e92e055ea6aa046f2cf96d25c90d143587bc5ae1b3f4fcea59173d59961f6fdc",
+    "after_sha256": "d333351a09328cc2ed4b01abcbd309b17be7d09414d410f2792b781abb72dd4c",
+    "replacements": 110
+  },
+  {
+    "path": "省考/辽宁/2016/行测-统考.md",
+    "before_sha256": "0d0f6a37594aeaa2f9031f434c94269780dedf85bb17ad89d1899f7169b96fdb",
+    "after_sha256": "3afd90d938e959c19bf9035320f9ed9623da9834e709407d3d9c5ca46f2231a8",
+    "replacements": 120
+  },
+  {
+    "path": "省考/辽宁/2018/行测-统考.md",
+    "before_sha256": "4a8dfdf7b67cb2c328ed66acaf1e51cc4f0375e69199fb9d5d702db6db458b39",
+    "after_sha256": "0280834608d136e752a0044a4d869b0a6b34edabe53a94b8bf7dcefae2e515ff",
+    "replacements": 120
+  },
+  {
+    "path": "省考/辽宁/2019/行测-统考.md",
+    "before_sha256": "ed26c8a5279b1ef2ae377bdb52b0e7497c9180d30f6908c5939102a5fa5b0a10",
+    "after_sha256": "808af82b943323b2de7e49bafddaa4fe0d90c83723939713dfd445709fc63701",
+    "replacements": 120
+  },
+  {
+    "path": "省考/辽宁/2020/行测-统考.md",
+    "before_sha256": "0b9ed51d55816dc0dab683618b1fc80217c4f2c0f95554332e1df6c4da7f28c0",
+    "after_sha256": "1c3e3e9e0854c93e78efba0db568aac59bad08903eaff4f2ae3a2613806abb0f",
+    "replacements": 120
+  },
+  {
+    "path": "省考/辽宁/2021/行测-统考.md",
+    "before_sha256": "0ecc0f5d18703560acd12bb388160ab3e37933eccab94087c3ce5c88269c63c9",
+    "after_sha256": "c9c127c2d35441509db7de4b04ad8188efc85e7839ab2c1bab491c1e08d7c2e2",
+    "replacements": 120
+  },
+  {
+    "path": "省考/辽宁/2022/行测-统考.md",
+    "before_sha256": "fcab30203c5a3326fef8a53a4ba1812afce1f5ddea13cb81f83f6320b8385808",
+    "after_sha256": "972a103f953c179091f175f0d3d228d765fb1ae34a31f1635f884acaa1c076c0",
+    "replacements": 120
+  },
+  {
+    "path": "省考/辽宁/2023/行测-统考.md",
+    "before_sha256": "ee8f277ffa33c73766a6fd443b45929997d5dfe5334057030319064fe8d6483e",
+    "after_sha256": "223475ed2a97111f65490c4dc0e22bcaac6f56cb8df1af937c1330500c17ec2a",
+    "replacements": 120
+  },
+  {
+    "path": "省考/辽宁/2024/行测-统考.md",
+    "before_sha256": "4f1d2cd840ee1769411455bfc4d285209110729816b5c17b9ff02a74358ea3d8",
+    "after_sha256": "8f6ecf52837f1e87c0846e4ab6c7869b5ef4424fcd76af0cbfaf95e7e441b6ab",
+    "replacements": 120
+  },
+  {
+    "path": "省考/辽宁/2025/行测-统考.md",
+    "before_sha256": "505483854f91931e177bebd04504f8cace79854dfd178da851798bb21de584c9",
+    "after_sha256": "07d0653be1542ecaeaf1d1250a2a872b65e1ba089a4758b6f89ea8ccf897f090",
+    "replacements": 120
+  },
+  {
+    "path": "省考/辽宁/2026/行测-统考.md",
+    "before_sha256": "c76a0f9219067eab6e6d24e704bc2b6083edfd3687107473cf74f727cd3f3095",
+    "after_sha256": "cedb87756537dd1de5e2a37e2e75bcb67dbfbf764fa46e30719abf8f8875261f",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2016/行测-下半年.md",
+    "before_sha256": "d8b3d73ee97b39ea0e81dc2ce44eaedb31825f8a1eb39d1e8c5fa65b26829e0a",
+    "after_sha256": "a6fd69800de79c86d60279714a3dc3ce8d23a9e4bdd54de01516a3e05aca5688",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2016/行测-统考.md",
+    "before_sha256": "ed457860b99333e644853455e7d1defd3209f04ef383b51a4ffc464ceb81309e",
+    "after_sha256": "91493dbb5862557df0c14c889d88ebf2b440a1c49a001dd70febdf2bc7b8e5d4",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2017/行测-下半年.md",
+    "before_sha256": "b7edeb452d049c19bf00903cc323e1a977dec17c7435e49dcdde2f7f64ce849a",
+    "after_sha256": "da4ad5732ae303fef7bfcfa1de4b4b96cf57dcf87f1783aab987a0c4f84cda2b",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2017/行测-统考.md",
+    "before_sha256": "b0682b8ebe82a96aec7e83c6f8779d8e44e705d9c24cbde22620a4f84928e4e2",
+    "after_sha256": "a248245c0759d1d8be60a5a0d5f51fb6e53cfa02443509183ecffe1876721e05",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2018/行测-下半年.md",
+    "before_sha256": "fba9831816ded79ed7f90c94b321f5f9dd061a74d4cff782e815214aed1ac538",
+    "after_sha256": "2096001275259d0fe3062fc6f5c17c1c0b2d2dcb99aa0de5cf52ed7e7d36206a",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2018/行测-统考.md",
+    "before_sha256": "d4041c6bb654ddabc8f72c548e567a772cbd5e1c6ec0d1f7d739a370e2bff34d",
+    "after_sha256": "3f1f98debaf3370282632ac5b6b9e9155a36e12b19a136a60bb3365541a52da2",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2019/行测-统考.md",
+    "before_sha256": "b77dbc1fa3220c2f807dc13e9a7f1f305113fba81edbed5e55fc9b9ae42f5dbf",
+    "after_sha256": "2e6a134c4e7b2af5b0eeb3cbbe3a2a236185fbc1f030aff25c5b7962a75c97f7",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2020/行测-统考.md",
+    "before_sha256": "f8c08d109de83755d2f20a3b4a5f1e745caa1b124d8326cd3f4a28c8bc7972ef",
+    "after_sha256": "4a134e60cc70028b73ab3f15798e22225fe239fe4eedff5d2602fdbc6f3cdba4",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2021/行测-统考.md",
+    "before_sha256": "18a5513028c1c57730e481d8d8c596ea4d036e75312442383176f4f54beaa25f",
+    "after_sha256": "259d47b8cf8f9d01cc52d48fdafe5cf014ab8f541342eac61b9e29096e1c57d4",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2022/行测-统考.md",
+    "before_sha256": "ec48114391e2d9c28c5ee6a529f2a3062a6402b3781031f0d266d40c4821ede0",
+    "after_sha256": "1499552f62703f14143b80c30ced044e28833f2b1aa633119e5da9f48a48814d",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2023/行测-统考.md",
+    "before_sha256": "1989dc5ec4c59350fa4a4485f70c10aabe2535f39d1de99a27f3d10ba7ef2523",
+    "after_sha256": "8cb4c4df0bc9c62d46fd3fe8460273704fa8b7f8231977e6742d4c5b1dc43d5a",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2024/行测-统考.md",
+    "before_sha256": "29267dd2ff5f8aeecd27e4285cb934443f6db874ab94638a53170e17e0e1e030",
+    "after_sha256": "4446f07d6d13a461c4ddbece12059d9ee7ef8f6cc1dc8a6b9c8b2399b4bdb7e2",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2025/行测-统考.md",
+    "before_sha256": "a53a1a4b2596d88f9a0bdd1fcfd6738b4fe708d08abd3f9d8137b0b3489901c4",
+    "after_sha256": "026494b4b77dd052c5073761f56b23cb404c036fa986a95262b99880f082aaf6",
+    "replacements": 120
+  },
+  {
+    "path": "省考/重庆/2026/行测-统考.md",
+    "before_sha256": "8e98fdd03ea7d978dd2f5e80fa93df249120af552ebafd715e64550f80131e9f",
+    "after_sha256": "cef9dd3f6df5e031aa58bf81c9cff055cd0c3682d53cbdafd8c5a29be4ac1301",
+    "replacements": 120
+  },
+  {
+    "path": "省考/陕西/2016/行测-统考.md",
+    "before_sha256": "6f457c452d859851495a823dd466a9bc312223425303ea507231f4cb339338b4",
+    "after_sha256": "335f395f5f271f4a0f5434f84d9db82cfe18260b19c2b4e7fc26a122153648f5",
+    "replacements": 125
+  },
+  {
+    "path": "省考/陕西/2017/行测-统考.md",
+    "before_sha256": "6b0765298d097c99a891f76719dde8c490a5bdf0173ee3a33755fedef3f281af",
+    "after_sha256": "bc33c5bacbef2ad5b1d9022d15732604b1d7570cb6dfcfe39b35365e0e23e3eb",
+    "replacements": 130
+  },
+  {
+    "path": "省考/陕西/2018/行测-统考.md",
+    "before_sha256": "b51108428f08ed4a05b1a8415cd268e4034e85266e8a55805a8439330666fe1c",
+    "after_sha256": "f89df436355dd4e77c39cc5973e30aa86087776911a876d4f9b3727ee13307bf",
+    "replacements": 118
+  },
+  {
+    "path": "省考/陕西/2019/行测-统考.md",
+    "before_sha256": "bcb297da804a4bd0df74d0f31c814933001f2f95d6f34cb632114c51e236b4be",
+    "after_sha256": "b1b96d966bdcb611f614a8b5fde017a62402cd2ce55dd780215ef13e25a73cea",
+    "replacements": 120
+  },
+  {
+    "path": "省考/陕西/2020/行测-统考.md",
+    "before_sha256": "1d84fc494cb54e7f981c7b3541f75874a2cb01ff8924f8c7525c49db77520f48",
+    "after_sha256": "7d16f0c0c85270cd4bf095e03ce4b7d1526bac6038ca0d84a9f1d33f97873a96",
+    "replacements": 120
+  },
+  {
+    "path": "省考/陕西/2021/行测-统考.md",
+    "before_sha256": "3467994180a6ed74fcd8fa2dc59fed26e03e41d7b42daf5c4138571965da5b62",
+    "after_sha256": "96d40bd134758d4b890f113b95c6fbdc7d9951e0a6fe8119f153e0e9fd22ccf0",
+    "replacements": 120
+  },
+  {
+    "path": "省考/陕西/2022/行测-统考.md",
+    "before_sha256": "93da77b90f6b60f75fdd89f26e8086b281ea52a7e3fab4e511700d5a0a9141aa",
+    "after_sha256": "3e7b2a76420b7a2c36fce9d1e8b8580870a35810ff86b638dc29eeb609ccc49c",
+    "replacements": 120
+  },
+  {
+    "path": "省考/陕西/2023/行测-统考.md",
+    "before_sha256": "b6a2bd6ffd1c1af889387b5f05aa38220754150b968b8df0676d799b1938e094",
+    "after_sha256": "82dad66acb59f921d38c7dee58976024b2dee3208e3ec14c592651eeb9f18988",
+    "replacements": 120
+  },
+  {
+    "path": "省考/陕西/2024/行测-统考.md",
+    "before_sha256": "495c6bb06d2e0eacc0aaa6a06eb3ab7403e2ec3ea1dcdb7db475c7cdef19e18d",
+    "after_sha256": "6b3c7855ac04e71ae6eacb1ae961e13ae21e895cc9dc7ff87b78450dc0267d86",
+    "replacements": 120
+  },
+  {
+    "path": "省考/陕西/2025/行测-统考.md",
+    "before_sha256": "5f09ff7ed249baf9dd0139e58a92dfa36598b67acb53ca46fc2e411bc1254324",
+    "after_sha256": "64b175eeeb5677a8c26fa54b0f905b8e52fe13971a4013a0e481b7952e34f1bb",
+    "replacements": 119
+  },
+  {
+    "path": "省考/陕西/2026/行测-统考.md",
+    "before_sha256": "fff7b1b9bc7d79118656ec30bbd80161bbf91e8b403adc3d5a4a5e510db81bfe",
+    "after_sha256": "4f3f5f53b7aa40a284261b1966c17b70a798bca2d0d585f16a8d6689779fa757",
+    "replacements": 120
+  },
+  {
+    "path": "省考/青海/2016/行测-统考.md",
+    "before_sha256": "e601ecf130165bd59bd503f1bc498ba47087c5ebb62a46dfc3df35fb1c37e237",
+    "after_sha256": "9df9b1ac368daa8cc22530208c8c10066ba3d71f2e85cf696557e02b879f6b53",
+    "replacements": 120
+  },
+  {
+    "path": "省考/青海/2017/行测-统考.md",
+    "before_sha256": "4035a5ee79f4a36eb95c1f68ef68eedbfeea803c5847c305f272c860819fbab5",
+    "after_sha256": "60bf47da4b4fff8bb4e179738f926ad4c8858a8590f6ef0c2bc178eea7107163",
+    "replacements": 120
+  },
+  {
+    "path": "省考/青海/2018/行测-统考.md",
+    "before_sha256": "6ea8bc7dab684e05c0f70dc2cf7a36dba78a423921b37a9964e6e4383666090a",
+    "after_sha256": "fc1e336c2f00d88d7f273f88eff75f6b8565a01b97159b735946471e0991a7a5",
+    "replacements": 120
+  },
+  {
+    "path": "省考/青海/2019/行测-A类.md",
+    "before_sha256": "8f4596b46b88f0768370d50f97c63b7346f88a34c38bec9a5ae771adb46e826d",
+    "after_sha256": "d726c5cf6e18c6d2bce30f26740d2f629980306934b1e53c7c816f301f819e4e",
+    "replacements": 120
+  },
+  {
+    "path": "省考/青海/2020/行测-A类.md",
+    "before_sha256": "18dc437833b1e8ddd8a75d9a7c81178b55b578384155e8c4d2201813f1b164f0",
+    "after_sha256": "01b59aadf700a59a4b86c1ffb963e558db5686242927aca1b7067781e5c10c12",
+    "replacements": 135
+  },
+  {
+    "path": "省考/青海/2020/行测-B类.md",
+    "before_sha256": "c0f540e6d9c7296d239eee4b0114c7925043bfd42d7e5924a135047c3cb62c13",
+    "after_sha256": "1f707d5ebff575ec0fdcb485e8543af215741c5a0051b67e0b244df33666abb3",
+    "replacements": 122
+  },
+  {
+    "path": "省考/青海/2021/行测-统考.md",
+    "before_sha256": "27ae61efb0d79d11f90a3c20a5f49a762c79736087b0014c558f1c7ceb095846",
+    "after_sha256": "ce188627821c47b6ec193a5c963b6502594f3b7bbb708c96c1d0bf07033b366e",
+    "replacements": 120
+  },
+  {
+    "path": "省考/青海/2022/行测-统考.md",
+    "before_sha256": "27800a55c5757dd3d1d1370d6979bff73fb2a6455db126c79c6797d86db83efd",
+    "after_sha256": "8a2d5e4a2b3720f52d20be9ee2fa8ad03493df8bcd599d3ddd391be7f239376f",
+    "replacements": 115
+  },
+  {
+    "path": "省考/青海/2023/行测-统考.md",
+    "before_sha256": "b436bcce1e24c42e64dc1e43a8a84384fc08cb87d7ddf3c0287eb89a44feeda9",
+    "after_sha256": "c2b3269cc2f45646d305d90b68a5bb94a455c0e107b908c9af45ab102e8fafaa",
+    "replacements": 120
+  },
+  {
+    "path": "省考/青海/2024/行测-统考.md",
+    "before_sha256": "c7163c22982813541e9c8d7abbeaa495450a733a36596e30016ce22eb9752c21",
+    "after_sha256": "babfd3d6dd7df3e3b9e9880a8e0e4d3c48f4134baa16fef209fde5b6f8525c18",
+    "replacements": 117
+  },
+  {
+    "path": "省考/青海/2025/行测-统考.md",
+    "before_sha256": "866d15da08b2a794925b475389678d3a40ca51aa79dd3b9ee82df15837580e17",
+    "after_sha256": "c85cc62ec2e678127b9b6ab528fddb5b0b02b364a7d028b606383f09514a3b9a",
+    "replacements": 119
+  },
+  {
+    "path": "省考/青海/2026/行测-统考.md",
+    "before_sha256": "2c28ecf23399e0b88464d7da82da80d9e18042dd6d9bc67c30524c5cbae99eaa",
+    "after_sha256": "e5e5b2ba6a9a9821bc32effe3e48c138d2f5db0738659b2dff075a632db5e984",
+    "replacements": 118
+  },
+  {
+    "path": "省考/黑龙江/2016/行测-县乡卷.md",
+    "before_sha256": "0161684ada123eb2c0bbf76f0d8c581bb81f6cd116cd28b6754394a0078f5d79",
+    "after_sha256": "f78304cc20b9d0c2e68a4a0290da19b43e2c33b90215c014121781334083a7bd",
+    "replacements": 120
+  },
+  {
+    "path": "省考/黑龙江/2016/行测-统考.md",
+    "before_sha256": "94f73ae13f28ee4d9d6a172895bf7c15fc70a6a481899a58fe32a44b8e15090d",
+    "after_sha256": "8551a5609bf24375981bd252a16ec4e859877817954e451cd44b777ef25cf2cd",
+    "replacements": 120
+  },
+  {
+    "path": "省考/黑龙江/2017/行测-统考.md",
+    "before_sha256": "3393f397276ebfc982aea6284b1d5f741570624d6015f3193233e69971cca696",
+    "after_sha256": "7a19eadb852952bd0e20db882b01c29b8490bccaa40f178d54e46995c98a7b1e",
+    "replacements": 130
+  },
+  {
+    "path": "省考/黑龙江/2018/行测-乡镇卷.md",
+    "before_sha256": "88ab601808b477f5d849db7a255605b450ff9579d63a59402c0143332f4bd3b4",
+    "after_sha256": "a5b887c07c1656dbad5f2e01a92a9bacad5277d8be535eed77722e5092abe0e2",
+    "replacements": 120
+  },
+  {
+    "path": "省考/黑龙江/2018/行测-公检法.md",
+    "before_sha256": "cbc91bd7bea256915b6e4e019748cece1b781a3c3423d7fb0593138388060d3f",
+    "after_sha256": "506976d2ffcdfe2ead1aafe932566b321ff70fe89226c071a1aa2c4d7ce97e05",
+    "replacements": 123
+  },
+  {
+    "path": "省考/黑龙江/2018/行测-省直.md",
+    "before_sha256": "e44672a70576e88e40670564aa4b105c00c34f8c69bfc93cd5388509a5e1d162",
+    "after_sha256": "af01f9a632697fb60354e00760153b86603995f7278071e6f98c9141f01c416e",
+    "replacements": 130
+  },
+  {
+    "path": "省考/黑龙江/2019/行测-县乡卷.md",
+    "before_sha256": "4d3197355b58b761da9e09717310460b8995073fcddc5e7bc1eaa8456557a8d9",
+    "after_sha256": "f0ff9d72648513a4f7d2cfcf45ea8248819ae4c7d6175124186e2ab48b2a3aac",
+    "replacements": 120
+  },
+  {
+    "path": "省考/黑龙江/2019/行测-省直.md",
+    "before_sha256": "7460eeef1a09f148915b6bc1f6cf8b2d11502986f079f1bc21bfcf9d929414ab",
+    "after_sha256": "940f4ef088dbd0ade315629f38b8678b691727088e289c3af060550c08c6f573",
+    "replacements": 130
+  },
+  {
+    "path": "省考/黑龙江/2020/行测-统考.md",
+    "before_sha256": "723e4facc3ff540d1047e44e710cb1c2fde2405c5eecb78218a024f0250b1ffc",
+    "after_sha256": "162ad58400553508367eeed84edd4e7d63d7555e4753fd5ce03f23df1aa4ab6f",
+    "replacements": 125
+  },
+  {
+    "path": "省考/黑龙江/2021/行测-统考.md",
+    "before_sha256": "3e813d5ef562f295c1bde4b2c36dbb14e77e39dcc438c394c8f1350f2fa95d65",
+    "after_sha256": "2a10789366d94c58ece171b910069ff153a65fac09ba9cfa7ed72a703de4de91",
+    "replacements": 120
+  },
+  {
+    "path": "省考/黑龙江/2022/行测-统考.md",
+    "before_sha256": "e3ffebd339eb128f4852ce544b69faf4274e6a8533abe9b9b3f3f3c74b474e4f",
+    "after_sha256": "75aafe069588bb0bb788e57444c0930a3c2efd0c121913d0a483a669eb914612",
+    "replacements": 120
+  },
+  {
+    "path": "省考/黑龙江/2023/行测-统考.md",
+    "before_sha256": "a91b27ab35c339c3da80ea46e147c0172179d12369ba8e4db8993e583cf6f4eb",
+    "after_sha256": "5483a4e1e025706458abefe1d93221bb260e2f7886212e36f7970f5d41e7d810",
+    "replacements": 120
+  },
+  {
+    "path": "省考/黑龙江/2024/行测-统考.md",
+    "before_sha256": "15f441448def287949f13b70caf49321b9cd423c96949931756caf71bfe9e452",
+    "after_sha256": "0887ecd138207752a14a510f0f343226f6d83ebd249aedeaaf1ff90c8faaa02d",
+    "replacements": 120
+  },
+  {
+    "path": "省考/黑龙江/2025/行测-统考.md",
+    "before_sha256": "e4f0754cec6c3e68c72e812221339b3a193cc528246063ade0f188fc948ddbf9",
+    "after_sha256": "9dabb573416a58f22fae9fde1aec4539bea1fe70fd4d36f8e3676fb240323cd7",
+    "replacements": 118
+  },
+  {
+    "path": "省考/黑龙江/2026/行测-统考.md",
+    "before_sha256": "5d5e608d1c846fd81f671b9695b2df0c516c34660b91466e7e0ca67e12fbcd25",
+    "after_sha256": "45eabc45992426abc13413b7b41234bfceaece227245f0ab4988fd1be9cdfa07",
+    "replacements": 119
+  }
+]

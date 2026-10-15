@@ -1,0 +1,50 @@
+{
+  "source_pdf_sha256": "6b2679510c52d570520271dc06303927d8f5c2785bb09af68a87275a1037e5ea",
+  "method": "original embedded bytes; all four values and option order visually checked against original full page",
+  "images": [
+    {
+      "path": "图片/修复-20261015/西藏2016-MOPS62-选项A.jpeg",
+      "sha256": "8a57827422435780a26f543c742979f6aae1a6f36f938f06313997876b00d96c",
+      "source_page": 14,
+      "source_xref": 56,
+      "pdf_question": 66,
+      "target_reference_question": 62,
+      "letter": "A",
+      "visually_read_formula": "50(√3−1)",
+      "unit": "米（PDF原式外的独立文字）"
+    },
+    {
+      "path": "图片/修复-20261015/西藏2016-MOPS62-选项B.jpeg",
+      "sha256": "df2effed4cbed01d18847f69f06ee3164adaf5c422bcfba6a9209699543b50df",
+      "source_page": 14,
+      "source_xref": 58,
+      "pdf_question": 66,
+      "target_reference_question": 62,
+      "letter": "B",
+      "visually_read_formula": "50√3",
+      "unit": "米（PDF原式外的独立文字）"
+    },
+    {
+      "path": "图片/修复-20261015/西藏2016-MOPS62-选项C.jpeg",
+      "sha256": "58f2f24db22cc6f5d8ce13f43a3717edc92826623f2461a08c445c7d806bfea3",
+      "source_page": 14,
+      "source_xref": 60,
+      "pdf_question": 66,
+      "target_reference_question": 62,
+      "letter": "C",
+      "visually_read_formula": "25(√2+1)",
+      "unit": "米（PDF原式外的独立文字）"
+    },
+    {
+      "path": "图片/修复-20261015/西藏2016-MOPS62-选项D.jpeg",
+      "sha256": "514cfcd360e915488cb348c155954d406c3221025bf2f8c5da8410dbe5824e21",
+      "source_page": 14,
+      "source_xref": 62,
+      "pdf_question": 66,
+      "target_reference_question": 62,
+      "letter": "D",
+      "visually_read_formula": "50√2",
+      "unit": "米（PDF原式外的独立文字）"
+    }
+  ]
+}

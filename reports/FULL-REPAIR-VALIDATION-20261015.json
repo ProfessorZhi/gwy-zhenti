@@ -1,0 +1,67 @@
+{
+  "status": "passed_with_explicit_source_gaps",
+  "scope_complete": false,
+  "date": "2026-10-15",
+  "base_commit": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab",
+  "outer_receipts": {
+    "status": "passed",
+    "receipts": 1207,
+    "changed_papers": 1195,
+    "base_commit": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab"
+  },
+  "historical_original_test_counts": [
+    369,
+    97
+  ],
+  "historical_original_test_total": 466,
+  "current_safeguard_tests": 48,
+  "current_native": {
+    "papers": 1163,
+    "essay_markdown": 710,
+    "aptitude_markdown": 453,
+    "hard_errors": 0,
+    "forbidden_files": 0,
+    "machine_flagged_files": 372
+  },
+  "answer_audit": {
+    "recognized_positions": 2448,
+    "empty_recognized_positions": 0,
+    "new_or_revised_bodies": 813,
+    "unverified_original_word_limit_positions": 1
+  },
+  "git_index_image_pixels": {
+    "status": "passed",
+    "publication_boundary": "Stage-zero exam Markdown and referenced image blobs",
+    "staged_exam_markdown": 1163,
+    "indexed_images": 95921,
+    "unique_images": 95921,
+    "unreferenced_index_images": 0,
+    "decoded_frames": 34906,
+    "validated_image_path_frames": 95921,
+    "unique_git_image_blobs": 34906,
+    "deduplication_basis": "Every path is bound to an unchanged stage-zero Git object id; each distinct blob is hash-verified and fully decoded",
+    "failed_images": 0,
+    "image_index_fingerprint_sha256": "da95177b11d272f2b39cb8792d2c99d41cd0711757bd46b3a498cc1e4f354cee",
+    "paper_index_fingerprint_sha256": "94304b1c57e3f9a3f9776fd2da5d142230b76632f0b1b88ee3e305b97b26c364",
+    "referenced_image_fingerprint_sha256": "da95177b11d272f2b39cb8792d2c99d41cd0711757bd46b3a498cc1e4f354cee",
+    "index_stable_at_final_snapshot": true,
+    "errors": []
+  },
+  "remaining_source_gaps": {
+    "confirmed_missing_priority_essay_whole_papers": 21,
+    "missing_aptitude_original_questions": 25,
+    "missing_shared_condition_questions": 5,
+    "incomplete_option_questions": 1,
+    "missing_main_stem_figure_questions": 1,
+    "missing_main_stem_condition_questions": 1,
+    "essay_material_gaps": 2,
+    "unverified_essay_original_requirements": 1,
+    "shanghai2017_source_ambiguities": 2
+  },
+  "boundary": "Counts are not unique official exams or actual scored scripts. Some deficits affect the same question. Existing Beijing 2025 recollection contains only 93 questions and has additional unquantified whole-paper gaps. Machine integrity checks do not certify source completeness or unique correct answers.",
+  "evidence": {
+    "historical": "FULL-REPAIR-HISTORICAL-VALIDATION-20261015.json",
+    "image_pixels": "FULL-REPAIR-INDEX-IMAGE-PIXELS-20261015.json",
+    "remaining_gaps": "FULL-REPAIR-20261015.md"
+  }
+}

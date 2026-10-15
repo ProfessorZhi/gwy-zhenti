@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scope": ["江西", "河南", "河北", "黑龙江", "湖南", "湖北", "陕西", "贵州", "辽宁", "青海", "甘肃"],
+  "papers_scanned": 215,
+  "papers_modified": 50,
+  "answers_added": 149,
+  "short_answers": 115,
+  "full_essays": 34,
+  "attribution": "AI辅助原创示范；依据本卷给定材料和要求编写；非官方答案、未经实考评分",
+  "remaining_recognized_answer_gaps": [],
+  "unparsed_papers": [],
+  "merged_title_flags": [],
+  "strict_answer_length_validation": "passed by full_repair_answers_20261015.py",
+  "data": "tools/data/full-repair-essay-b-20261015.json",
+  "answer_receipt": "reports/FULL-REPAIR-ESSAY-B-20261015.jsonl",
+  "layout_receipt": "reports/FULL-REPAIR-ESSAY-B-LAYOUT-20261015.jsonl",
+  "material_caveat": "黑龙江2016县乡源内仍有回忆资料缺文，不能因答案补齐宣称原卷完整。已向总修复任务报告本地原稿可恢复的截句及仍待替代源确认的片段。",
+  "verification_boundary": "本范围已识别题目均有完整可读参考作答，并校验作答字数和题号；不构成真实实考评分或全部官方原卷逐字认证。"
+}

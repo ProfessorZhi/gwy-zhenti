@@ -1,0 +1,334 @@
+{
+  "date": "2026-10-15",
+  "method": "全部任务题干相似度和逐任务材料12字片段覆盖，未用首句替代全卷对照",
+  "old_bucket_mutated": false,
+  "rows": [
+    {
+      "year": 2016,
+      "bucket_path": "省考/上海/2016/申论-统考.md",
+      "read_source_path": "省考/上海/2016/申论-统考.md",
+      "already_archived": false,
+      "read_source_sha256": "2d76baf2514fb822b0cc73f99d1120b2cb3701fd45316a07e18340c39d3873ac",
+      "bucket_tasks": 2,
+      "tasks": [
+        {
+          "bucket_number": 1,
+          "question": "阅读给定资料，以“新形势下如何肩负起历史赋予我们的使命担当”为主题写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "05c28364e8549c882ec96ea6c1c351f339854ca60e587d0451e227fae6a5d9a8",
+          "candidates": [
+            {
+              "path": "省考/上海/2016/申论-B类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.978261,
+              "named_material_sha256": "5331cec98a9fba1dcdf9983fd78dda654aa5f655deec46b33a6cabd624d9bc3e"
+            }
+          ]
+        },
+        {
+          "bucket_number": 2,
+          "question": "阅读给定资料，以“加强市场监管”为主题写一篇文章。（40分）\n要求：全面开展电梯安全⻛险大排查，专项整治“三无”电梯，协调做好老旧电梯更新改造修理工作，加强",
+          "bucket_material_sha256": "cb93b19bd9faf326029aff03761b53bded6608b3d8be4067f997106951da246f",
+          "candidates": [
+            {
+              "path": "省考/上海/2016/申论-A类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.998193,
+              "named_material_sha256": "c64ba2cd548169a2d13481311a0f3e313b26abd80a314ebedf2c225dea3f27aa"
+            }
+          ]
+        }
+      ],
+      "unmapped_tasks": []
+    },
+    {
+      "year": 2017,
+      "bucket_path": "省考/上海/2017/申论-统考.md",
+      "read_source_path": "省考/上海/2017/申论-统考.md",
+      "already_archived": false,
+      "read_source_sha256": "69356c2375ab75512e667f4f6789a0701617ba0b036ecf3c3f6f0c9f391c287f",
+      "bucket_tasks": 2,
+      "tasks": [
+        {
+          "bucket_number": 1,
+          "question": "围绕“脚踏实地，实现⺠族复兴”这一主题，写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "e94a68d19baf7788195b501ca7ec3febfee889fa64f56164e44ed0f8a1590e25",
+          "candidates": [
+            {
+              "path": "省考/上海/2017/申论-B类.md",
+              "number": 4,
+              "question_similarity": 0.913043,
+              "bucket_material_12gram_coverage": 0.942214,
+              "named_material_sha256": "f1444affa9e969c4f27375214510185f31dcabc8e9511c57144e430164911505"
+            }
+          ]
+        },
+        {
+          "bucket_number": 2,
+          "question": "围绕“提升公共服务满意度”这一主题写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "a38d8ccbd42bd91101c1200a9fa902d2c29c45a8b296caafb90c6ba03e48dc8d",
+          "candidates": [
+            {
+              "path": "省考/上海/2017/申论-A类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.979911,
+              "named_material_sha256": "34a979fda13c032d0984a4b68f62f596037eae1c4e40f0627d0c31ed712d1fb8"
+            }
+          ]
+        }
+      ],
+      "unmapped_tasks": []
+    },
+    {
+      "year": 2018,
+      "bucket_path": "省考/上海/2018/申论-统考.md",
+      "read_source_path": "docs/来源校勘/上海2018申论-原统考混合或重复来源.md",
+      "already_archived": true,
+      "read_source_sha256": "8f107e89aa4f5df7e6736496720b77cb5e65dbb97d04724bd6dfd767bb52b9a7",
+      "bucket_tasks": 3,
+      "tasks": [
+        {
+          "bucket_number": 1,
+          "question": "阅读给定资料，围绕“⻓效机制”这一主题写一篇文章。（50分）\n要求：",
+          "bucket_material_sha256": "fd354cbc3507c93a088a85bed4bcb49b1d5ff847ab1c8eb61ce4b545c3995dd6",
+          "candidates": [
+            {
+              "path": "省考/上海/2018/申论-行政执法.md",
+              "number": 3,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.989935,
+              "named_material_sha256": "ff5a465faad05cd0acbab02b1bfed687ca115e343464438c5e87ede1823cc168"
+            }
+          ]
+        },
+        {
+          "bucket_number": 2,
+          "question": "结合给定资料，以“坚持信念，传承精神，开拓事业”为主题，写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "d9e38f62cd885d82c3ef3d6e2d390a16ef2fe4a36b3b1afcef2cb17786a1aa22",
+          "candidates": [
+            {
+              "path": "省考/上海/2018/申论-A类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.985976,
+              "named_material_sha256": "f69a6f344fee5d88c54d9e50e739a827ed486097362eea074402f29e13b0546c"
+            }
+          ]
+        },
+        {
+          "bucket_number": 3,
+          "question": "以“充分运用新兴科技，推动城市治理创新”为主题，写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "ddb6598163d0585b3452879baaf762961689a2e8403f7fd3b84d48f4ab096572",
+          "candidates": [
+            {
+              "path": "省考/上海/2018/申论-B类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.98408,
+              "named_material_sha256": "2bc8d56bf645e3b03a71c153546c028ada71b88cfd02bbe3621ee4134402f1f8"
+            }
+          ]
+        }
+      ],
+      "unmapped_tasks": []
+    },
+    {
+      "year": 2019,
+      "bucket_path": "省考/上海/2019/申论-统考.md",
+      "read_source_path": "docs/来源校勘/上海2019申论-原统考混合或重复来源.md",
+      "already_archived": true,
+      "read_source_sha256": "b8cea2a68c44d1c3f7462216beb1a8b16a6bb44fdf68d1e4ceba31ee79eed89a",
+      "bucket_tasks": 2,
+      "tasks": [
+        {
+          "bucket_number": 1,
+          "question": "海纳百川是上海城市精神的重要内容。结合给定资料，以“契约精神与海纳百川”为主题，写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "85323efef332511c26302284be1822f430a7b11a748daa1d733fecaa457e019e",
+          "candidates": [
+            {
+              "path": "省考/上海/2019/申论-B类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.979673,
+              "named_material_sha256": "285bb628a8e464cbc47e0e1eaaaadfc636a31e9e91b67a56216a7e8240b61938"
+            }
+          ]
+        },
+        {
+          "bucket_number": 2,
+          "question": "追求卓越是上海城市精神的重要内容。结合给定资料，以“创新驱动与追求卓越”为主题，写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "9d578e380aac994308e2fe48d72614e08195f5d96374abaa2cae05b6f7f3f07e",
+          "candidates": [
+            {
+              "path": "省考/上海/2019/申论-A类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.967098,
+              "named_material_sha256": "a8b73ed02ab1c11a04bd78d53f851564fd31c285b4869b87a1bc92b515e30b54"
+            }
+          ]
+        }
+      ],
+      "unmapped_tasks": []
+    },
+    {
+      "year": 2020,
+      "bucket_path": "省考/上海/2020/申论-统考.md",
+      "read_source_path": "docs/来源校勘/上海2020申论-原统考混合或重复来源.md",
+      "already_archived": true,
+      "read_source_sha256": "7a3a61788602ff3775e35a255e194e1106fe668a6be0d46d01c95e630fa13eaf",
+      "bucket_tasks": 3,
+      "tasks": [
+        {
+          "bucket_number": 1,
+          "question": "结合习仲勋《贯彻司法工作的正确方向》的讲话，围绕“群众路线和美好生活”这一主题，写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "8887b586bb2865be893aae203c57dd88599b806d23ec87f017aef8fd8a57a7b4",
+          "candidates": [
+            {
+              "path": "省考/上海/2020/申论-A类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.979819,
+              "named_material_sha256": "491f848f36d548716930e5fb4b4a09d845e8e870d07956c28f78a2117ddc670c"
+            }
+          ]
+        },
+        {
+          "bucket_number": 2,
+          "question": "结合给定材料，以“提升放管服效能，建设有温度的城市”为主题写一篇文章。（40分）\n要求：“加快推进电子政务，构建全流程一体化在线服务平",
+          "bucket_material_sha256": "3cd980f9509981b67cb0e63c755f262610f10b70c53552fcaca830897a42cfc7",
+          "candidates": [
+            {
+              "path": "省考/上海/2020/申论-B类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.983361,
+              "named_material_sha256": "f5f9d00e624f77f3f507e2f91411fbdc3f09d857d6ab8b45dd59c1fb2d750aeb"
+            }
+          ]
+        },
+        {
+          "bucket_number": 3,
+          "question": "结合给定材料，阐述上海创新“高度”“速度”“厚度”和“浓度”的含义。（20分）\n要求：“加快推进电子政务，构建全流程一体化在线服务平",
+          "bucket_material_sha256": "3cd980f9509981b67cb0e63c755f262610f10b70c53552fcaca830897a42cfc7",
+          "candidates": [
+            {
+              "path": "省考/上海/2020/申论-B类.md",
+              "number": 3,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.983361,
+              "named_material_sha256": "f5f9d00e624f77f3f507e2f91411fbdc3f09d857d6ab8b45dd59c1fb2d750aeb"
+            }
+          ]
+        }
+      ],
+      "unmapped_tasks": []
+    },
+    {
+      "year": 2021,
+      "bucket_path": "省考/上海/2021/申论-统考.md",
+      "read_source_path": "docs/来源校勘/上海2021申论-原统考混合或重复来源.md",
+      "already_archived": true,
+      "read_source_sha256": "e6a2d686c9fcfb7a897d25c27f1ed21ff8555c176d54c5de1a4fded17a26a77d",
+      "bucket_tasks": 3,
+      "tasks": [
+        {
+          "bucket_number": 1,
+          "question": "时代在动荡和变革，国内外格局在调整和重组。只有每一代人肩负起使命和担当，才能确保我们的事业不断取得新\n的胜利。结合给定材料，围绕“使命”和“斗争”这两个关键词，写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "7d1e061f78114f5b99faec5ef01b084a9ae2b4a923f346f30da06d85a89b8387",
+          "candidates": [
+            {
+              "path": "省考/上海/2021/申论-B类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.981905,
+              "named_material_sha256": "0e7a8fb2cc017524c5d81ac4654b82fc95a9c70e822e7d08cd5b366f5a903984"
+            }
+          ]
+        },
+        {
+          "bucket_number": 2,
+          "question": "结合给定材料，围绕“数字时代”“公平竞争”这两个关键词，写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "f79ac2f432a9fda67722664159b5578556fbbb19af3f52baf40178ed86879562",
+          "candidates": [
+            {
+              "path": "省考/上海/2021/申论-A类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.977826,
+              "named_material_sha256": "89406f7640ac42e7e68c06e47ccc68f6a8137d3b06fba029908dacb7689b5636"
+            }
+          ]
+        },
+        {
+          "bucket_number": 3,
+          "question": "运用矛盾的普遍性原理，分析“材料2”“材料3”和“材料4”中反映出的斗争的共性。（20分）\n要求：概括准确，条理清楚，语言精练，字数不超过300字。",
+          "bucket_material_sha256": "3db23f0c109fdeda6270f33bcd9d9e0e94423220455ec785aa0a619ef9900c09",
+          "candidates": [
+            {
+              "path": "省考/上海/2021/申论-B类.md",
+              "number": 2,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.986569,
+              "named_material_sha256": "0e7a8fb2cc017524c5d81ac4654b82fc95a9c70e822e7d08cd5b366f5a903984"
+            }
+          ]
+        }
+      ],
+      "unmapped_tasks": []
+    },
+    {
+      "year": 2022,
+      "bucket_path": "省考/上海/2022/申论-统考.md",
+      "read_source_path": "docs/来源校勘/上海2022申论-原统考混合或重复来源.md",
+      "already_archived": true,
+      "read_source_sha256": "56265156c4fbd18f21cf86c1fffacae1f67113cca9d0aefaa7e2799fe2de0a4d",
+      "bucket_tasks": 1,
+      "tasks": [
+        {
+          "bucket_number": 1,
+          "question": "阅读但不拘泥于给定资料，以“一体化高质量发展”为主题写一篇文章。（40分）\n要求：",
+          "bucket_material_sha256": "ec9dcb5dabaa3292bb09a0a3f972829548e5b4f3bbecfac788c2cf05bf1215de",
+          "candidates": [
+            {
+              "path": "省考/上海/2022/申论-B类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.970124,
+              "named_material_sha256": "2d35bd4a52a58efd0c0fbc5ae31508bb6f02ce0b3fb7874f2d9d2090b2740367"
+            }
+          ]
+        }
+      ],
+      "unmapped_tasks": []
+    },
+    {
+      "year": 2023,
+      "bucket_path": "省考/上海/2023/申论-统考.md",
+      "read_source_path": "docs/来源校勘/上海2023申论-原统考混合或重复来源.md",
+      "already_archived": true,
+      "read_source_sha256": "4a7e08bfb261d612788fca21a06d86870d890175d79017c4c0ce68813cfabb98",
+      "bucket_tasks": 1,
+      "tasks": [
+        {
+          "bucket_number": 1,
+          "question": "中国式现代化是人口规模巨大的现代化，也是全体人⺠共同富裕的现代化。现代化建设的出发点和落脚点是实现人\n⺠对美好生活的向往。结合给定资料，围绕“加强基层治理，推进中国式现代化”这一主题写一篇文章。（50分）\n要求：",
+          "bucket_material_sha256": "64efd62abca17eccd460f864b1ca770add941d04485c094fe042bf24a44d4a47",
+          "candidates": [
+            {
+              "path": "省考/上海/2023/申论-A类.md",
+              "number": 4,
+              "question_similarity": 1.0,
+              "bucket_material_12gram_coverage": 0.985773,
+              "named_material_sha256": "ff77f10eb494c5d593d8acbfbae168f80c9f4313637a4aad1a29287adda74824"
+            }
+          ]
+        }
+      ],
+      "unmapped_tasks": []
+    }
+  ],
+  "note": "A/B/执法混题桶不是单独真实分卷。归档必须保留源文与可审计逐题去向；该文件不执行归档。2023旧桶唯一作文只映射A第4题，不能充B覆盖。"
+}

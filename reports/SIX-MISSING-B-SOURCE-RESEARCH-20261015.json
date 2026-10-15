@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-15",
+  "scope": [
+    "北京2026统一",
+    "江苏2026A",
+    "江苏2026C",
+    "浙江2022A",
+    "浙江2022B",
+    "浙江2022C"
+  ],
+  "mode": "只读查源；未修改任何试卷MD",
+  "queries": 40,
+  "network_evidence": "D:/artifacts/gwy-quality-audit-20261015/six-missing-b-tinyfish-evidence-20261015.json",
+  "verified_full_papers_obtained": 0,
+  "unverified_full_candidates": 1,
+  "missing_count_reduction": 0,
+  "papers": [
+    {
+      "id": "北京2026统一",
+      "status": "未取得完整原卷",
+      "evidence": [
+        {
+          "url": "https://www.eoffcn.com/kszx/detail/1918050.html",
+          "nature": "中公同年试题解读",
+          "finding": "4题：政务信息做法、综合理解、北京案例提出措施、以通为用/全国统一大市场作文；无完整材料或各题要求"
+        },
+        {
+          "url": "https://www.sjds.net/a/515493.html",
+          "nature": "号称2006–2026汇总",
+          "finding": "正文目录明确申论只有05–25，2026仅行测，不可补2026申论"
+        }
+      ],
+      "local": "文件名检索只命中2026京考终极密押一至五和旧年原题；密押不作为真题"
+    },
+    {
+      "id": "江苏2026A",
+      "status": "未取得完整原卷",
+      "evidence": [
+        {
+          "url": "https://www.eoffcn.com/kszx/detail/1918049.html",
+          "nature": "中公试题解读",
+          "finding": "4题：品牌出海创新实践、谈对标准看法、市民讲座总结、标准推动高质量发展品牌助力中国式现代化；有主题无全材料/完整要求"
+        },
+        {
+          "url": "https://yyxz.cust.edu.cn/xzlljs/zl/3196847faa534b808d895dfbb280189e.htm",
+          "nature": "史为恒《申论命题的现代视野》，应用写作杂志社2026-09-21",
+          "finding": "独立引述2026江苏A第4题、给定资料8；只能验证单题主题不能复原全卷"
+        },
+        {
+          "url": "https://www.fenbi.com/fpr/doc-user-v2/dir/23059",
+          "nature": "粉笔江苏历年卷合集",
+          "finding": "实际14文件只2022/2023；搜索标题相似不等于2026"
+        }
+      ],
+      "local": "文件名命中2026江苏A密卷一二、2025江苏原题，未得真实2026A"
+    },
+    {
+      "id": "江苏2026C",
+      "status": "取得完整候选、真实性待核，不减少缺卷",
+      "candidate": "reports/SIX-MISSING-B-JIANGSU-2026C-CANDIDATE-20261015.json",
+      "evidence": [
+        {
+          "url": "https://www.sjds.net/a/508597.html",
+          "nature": "四季读书网‘网友回忆版’，无原始整理机构/作者/扫描件",
+          "finding": "6651字，6材料、4题，20/20/20/40分，≤250/约300/约350/约1000字"
+        },
+        {
+          "url": "https://sjds.net/790540.html",
+          "nature": "同站另路径镜像",
+          "finding": "同全文；属于同一来源，不能充当独立交叉证据"
+        },
+        {
+          "url": "https://www.sjds.net/a/519959.html",
+          "nature": "同站作文范文",
+          "finding": "同仙峰村/花菇情节；仍非独立原卷"
+        },
+        {
+          "url": "https://www.rsks.cn/ziliao/shenlun/267440.html",
+          "nature": "转载中公试题解读",
+          "finding": "无人机源头治理/花菇宣讲/灵气正气主题吻合，仅证明概要，不证6材料中的具体人名地名数字逐字可靠"
+        }
+      ],
+      "boundary": "页面日期会随访问更新；详细材料仅此站，部分口语段落不明是否改写。无证据不能断言伪造，也不能据标题当可靠原卷。"
+    },
+    {
+      "id": "浙江2022A/B/C",
+      "status": "三卷均未取得完整原卷",
+      "evidence": [
+        {
+          "url": "https://www.eoffcn.com/kszx/detail/1029502.html",
+          "nature": "中公2022综合类试题解读",
+          "finding": "实际2022主题为为民生办实事，充电桩问题建议、小微企业发言提纲、作文三题；无全部材料/题面要求。明确不可拿2021科技创新替代"
+        },
+        {
+          "url": "https://static.32xueyuan.com/zq//u/cms/zj/202411/07163021u9x9.pdf",
+          "nature": "展鸿2021–2024考情分析",
+          "finding": "2022 A/B/C表格明确‘民生建议（缺）’，不提供题本"
+        },
+        {
+          "url": "https://www.chinagwy.net/wap/zjsk/311794_2.jhtml",
+          "nature": "展鸿历年下载列表",
+          "finding": "2022年末两附件都是行测；已实际取08150021sk9k.pdf，内标题行政职业能力测验A卷，不是申论"
+        },
+        {
+          "url": "http://www.houzhiwang.com/html/202012/74196.html",
+          "nature": "2020年预建2022页面",
+          "finding": "明确‘暂未考试/暂未发布’，无2022题本"
+        },
+        {
+          "url": "https://m.aipta.com/zt/sk/zj/sl/",
+          "nature": "爱真题目录",
+          "finding": "2023/2024/2025/2026以及2021以下，跳过2022；发表日期2022不能当考试年2022"
+        },
+        {
+          "url": "https://www1.haedu.cn/uploads/articlefiles/20231017/169750762121784.pdf",
+          "nature": "搜索未名PDF候选",
+          "finding": "TinyFish实际获取target_unreachable，内容未取得，不能当卷"
+        }
+      ],
+      "local": "用户MOPS浙江申论原题目录自身命名‘申论04-24【缺22】’。课程2027《疯狂刷2500申论46题》命中的是2022浙江选调卷J市三治融合简报，不能替代省考ABC；梦圆精刷讲义命中2022只是后年材料内统计年份。"
+    }
+  ],
+  "next_evidence_needed": "江苏2026C应找到原整理机构题本/扫描PDF或独立机构完整材料对照；其余需全部给定材料+全部作答要求。目录、单篇范文、考情解读均不算获得整卷。",
+  "local_exact_topic_search": {
+    "scope": "knowledge/gwy/001【公务员国省考】/课程2027中*申论*.md",
+    "pattern": "标准推动高质量发展|仙峰村|以通为用",
+    "exit_code": 1,
+    "matches": 0,
+    "boundary": "限定文件名含申论的2027课程笔记检索；不宣称已经阅读MOPS每一页"
+  }
+}

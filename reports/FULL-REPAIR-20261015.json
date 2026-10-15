@@ -1,0 +1,467 @@
+{
+  "date": "2026-10-15",
+  "scope_complete": false,
+  "scope": "2016–2026国考及浙江江苏上海北京天津广东福建，含广州深圳；其他省份仅维护已有质量",
+  "current_essay_markdown_files": 710,
+  "readable_answer_positions": 2448,
+  "current_answer_audit": {
+    "status": "passed",
+    "essay_papers": 710,
+    "parsed_papers": 710,
+    "classifications": {
+      "小题参考作答/已收录": 2039,
+      "作文范文/已收录": 409
+    },
+    "unparsed": [],
+    "incomplete_recognized_tasks": [],
+    "new_or_revised_answer_bodies_checked": 813,
+    "checked_body_authorship": {
+      "AI辅助修订": 343,
+      "同题来源参考": 123,
+      "AI辅助原创": 347
+    },
+    "answer_body_errors": [],
+    "legacy_source_length_notes": [],
+    "precise_body_counts": {
+      "papers": 710,
+      "tasks": 2448,
+      "versions": 2463,
+      "composition_limit_missing": 1
+    },
+    "precise_body_candidate_tasks": 1,
+    "precise_body_errors": [],
+    "precise_body_review_candidates": [
+      {
+        "path": "省考/新疆/2021/申论-下半年.md",
+        "question_number": 1,
+        "question": "“给定资料7”中提到：“唯有传承红色基因，筑牢信仰之基，才能在各种⻛险挑战面前做到‘不畏浮云遮望眼’‘乱云⻜\n渡仍从容’。”请你深入理解这句话的含义，结合给定资料，联系实际，写一篇文章。（40分）\n要求：",
+        "task_kind": "composition",
+        "word_rules": {
+          "kind": "unspecified",
+          "confidence": "manual",
+          "evidence": ""
+        },
+        "version": "main",
+        "extraction_method": "legacy_body_boundaries",
+        "characters": 1134,
+        "raw_answer_characters_without_urls": 3774,
+        "removed_rules": [
+          "teacher_analysis_boundary"
+        ],
+        "per_item_characters": null,
+        "body_sha256": "04fb9c12581801d1d81676d11d64dffc89602ebfc6790b66240fc08c3a3bc96e",
+        "start_excerpt": "传承红色基因 践行初心使命\n习近平总书记指出：“共和国是红色的，不能淡化这个颜色。”在中国共产党建党百年的伟大革命实践中，无数\n革命先烈用自己的鲜血和生命换来了⺠族的解放、国家的稳定，并在应对各种困难挑战中，锤炼了信念坚定、敢创\n新路、百折不挠、艰苦奋斗、立党为公、忠诚为⺠的红色精神。这些精神是党领导人⺠革命的胜利之本，也是激励\n我们不断前进的力量之源，是传承百年的红色基因。\n时至今日，在这样一个新问题不断涌现，新挑战不断产生的时代，作",
+        "end_excerpt": "”战役以来，数以百万计的扶贫大军奔赴全国最偏远、最艰\n苦的地方，日夜奋战、攻坚克难，1800多名同志将生命定格在了脱贫攻坚征程上，是他们的艰苦奋斗，创造了彪炳\n史册的人间奇迹。\n征途如虹，浩荡前行。如今，以中国式现代化推进强国建设、书写中华⺠族伟大复兴的蓝图徐徐展开，在此历\n史新时期，我们更要把握方向，延续红色精神，保持江山的不变底色，谱写无愧于时代的华章！",
+        "issues": [
+          {
+            "rule": "composition_limit_missing",
+            "confidence": "manual",
+            "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+          }
+        ],
+        "another_version_without_findings": false
+      }
+    ],
+    "boundary": "Actual body lengths exclude source URLs, authorship labels and teacher commentary. A compliant alternative body can satisfy the task while historical versions remain reviewable. Ambiguous original word limits remain explicit review candidates. Missing entire papers, source factual truth, actual exam scores, and unavailable original conditions are separate inventory findings."
+  },
+  "native_summary": {
+    "schema_version": 2,
+    "inventory_sha256": "be172d80beb1a31d1e1ac7b321312006580cae69becbe981b1828aaf50b7dc97",
+    "paper_files": 1163,
+    "subjects": {
+      "申论": 710,
+      "行测": 453
+    },
+    "areas": {
+      "上海": {
+        "files": 47,
+        "申论": 25,
+        "行测": 22
+      },
+      "云南": {
+        "files": 28,
+        "申论": 17,
+        "行测": 11
+      },
+      "内蒙古": {
+        "files": 25,
+        "申论": 15,
+        "行测": 10
+      },
+      "北京": {
+        "files": 23,
+        "申论": 12,
+        "行测": 11
+      },
+      "吉林": {
+        "files": 31,
+        "申论": 17,
+        "行测": 14
+      },
+      "四川": {
+        "files": 57,
+        "申论": 38,
+        "行测": 19
+      },
+      "国考": {
+        "files": 54,
+        "申论": 27,
+        "行测": 27
+      },
+      "天津": {
+        "files": 32,
+        "申论": 21,
+        "行测": 11
+      },
+      "宁夏": {
+        "files": 25,
+        "申论": 16,
+        "行测": 9
+      },
+      "安徽": {
+        "files": 40,
+        "申论": 29,
+        "行测": 11
+      },
+      "山东": {
+        "files": 42,
+        "申论": 32,
+        "行测": 10
+      },
+      "山西": {
+        "files": 35,
+        "申论": 23,
+        "行测": 12
+      },
+      "广东": {
+        "files": 54,
+        "申论": 37,
+        "行测": 17
+      },
+      "广州": {
+        "files": 9,
+        "申论": 5,
+        "行测": 4
+      },
+      "广西": {
+        "files": 30,
+        "申论": 19,
+        "行测": 11
+      },
+      "新疆": {
+        "files": 39,
+        "申论": 21,
+        "行测": 18
+      },
+      "江苏": {
+        "files": 60,
+        "申论": 31,
+        "行测": 29
+      },
+      "江西": {
+        "files": 41,
+        "申论": 26,
+        "行测": 15
+      },
+      "河北": {
+        "files": 35,
+        "申论": 24,
+        "行测": 11
+      },
+      "河南": {
+        "files": 31,
+        "申论": 20,
+        "行测": 11
+      },
+      "浙江": {
+        "files": 52,
+        "申论": 25,
+        "行测": 27
+      },
+      "海南": {
+        "files": 28,
+        "申论": 17,
+        "行测": 11
+      },
+      "深圳": {
+        "files": 28,
+        "申论": 17,
+        "行测": 11
+      },
+      "湖北": {
+        "files": 27,
+        "申论": 16,
+        "行测": 11
+      },
+      "湖南": {
+        "files": 33,
+        "申论": 22,
+        "行测": 11
+      },
+      "甘肃": {
+        "files": 24,
+        "申论": 13,
+        "行测": 11
+      },
+      "福建": {
+        "files": 33,
+        "申论": 22,
+        "行测": 11
+      },
+      "西藏": {
+        "files": 3,
+        "行测": 2,
+        "申论": 1
+      },
+      "贵州": {
+        "files": 28,
+        "申论": 17,
+        "行测": 11
+      },
+      "辽宁": {
+        "files": 28,
+        "申论": 17,
+        "行测": 11
+      },
+      "重庆": {
+        "files": 43,
+        "申论": 29,
+        "行测": 14
+      },
+      "陕西": {
+        "files": 28,
+        "申论": 17,
+        "行测": 11
+      },
+      "青海": {
+        "files": 26,
+        "申论": 14,
+        "行测": 12
+      },
+      "黑龙江": {
+        "files": 44,
+        "申论": 28,
+        "行测": 16
+      }
+    },
+    "image_references": 118573,
+    "unique_referenced_images": 95921,
+    "missing_image_references": 0,
+    "image_decode_check_performed": false,
+    "image_decode_errors": [],
+    "forbidden_tracked_files": [],
+    "hard_integrity_errors": [],
+    "placeholder_files": 47,
+    "placeholder_states": {
+      "资料缺失": 29,
+      "待核实": 18
+    },
+    "historical_truncated_files": 75,
+    "historical_truncated_questions": 128,
+    "current_truncated_files": 0,
+    "current_truncated_questions": 0,
+    "files_with_machine_flags": 372,
+    "reference_numbered_papers": 233,
+    "confirmed_missing_original_questions": 25,
+    "confirmed_missing_option_questions": 1,
+    "confirmed_missing_shared_condition_questions": 5,
+    "confirmed_material_gap_segments": 2,
+    "declared_source_analysis_disagreement_questions": 2,
+    "confirmed_missing_stem_figure_questions": 1,
+    "confirmed_missing_stem_condition_questions": 1,
+    "whole_paper_acceptance": "not_established_by_structural_checks"
+  },
+  "confirmed_missing_real_papers": 21,
+  "missing_real_papers_by_area": {
+    "上海": 7,
+    "北京": 1,
+    "天津": 6,
+    "江苏": 2,
+    "浙江": 3,
+    "深圳": 1,
+    "福建": 1
+  },
+  "missing_real_papers": [
+    {
+      "area": "上海",
+      "year": 2016,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "http://www.shgkw.org/2016/0926/9462.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2021,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "http://www.shgkw.org/2021/0820/40645.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://cgzf.sh.gov.cn/channel_8/20220819/1a689b735cb248ddbe238c9f4e03d319.html",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "variant": "A",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://cgzf.sh.gov.cn/channel_8/20220819/1a689b735cb248ddbe238c9f4e03d319.html",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "variant": "B",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.jfdaily.com/wx/detail.do?id=784997",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.shqp.gov.cn/shqp/ggfw/bmts/20240820/1183054.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.lysrsks.com/index/news/detail.html?id=2009"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2022,
+      "variant": "行政执法",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2022/0224/38404.html",
+        "https://www.eoffcn.com/kszx/detail/1275187.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "variant": "综合街镇",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2024/0122/46154.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "variant": "行政执法",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2024/0122/46154.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2025,
+      "variant": "行政执法",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://ah.huatu.com/2024/1107/2948494.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "variant": "综合市区",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202511/t20251105_7170794.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "variant": "综合街镇",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202511/t20251105_7170794.html"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2026,
+      "variant": "省市综合管理",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/",
+        "http://fj.huatu.com/2026/0116/2509896.html"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2024,
+      "variant": "Ⅰ",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226",
+        "https://www.szgm.gov.cn/xxgk/xqgwhxxgkml/rsxx/gwyzk/content/post_11029041.html"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "variant": "A",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "variant": "C",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "variant": "A",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "variant": "B",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "variant": "C",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "variant": "统一卷",
+      "evidence_report": "FULL-REPAIR-BEIJING-ESSAY-INVENTORY-20261015.json"
+    }
+  ],
+  "confirmed_missing_original_aptitude_questions": 25,
+  "missing_aptitude_shared_condition_questions": 5,
+  "missing_option_questions": 1,
+  "missing_material_segments": 2,
+  "boundary": "Current Markdown/answer positions are not unique real exams or verified exam scores. Confirmed missing real papers and unavailable original source text remain unresolved; machine pass does not mean zero content defects."
+}

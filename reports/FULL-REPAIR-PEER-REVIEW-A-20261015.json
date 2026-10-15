@@ -1,0 +1,498 @@
+{
+  "date": "2026-10-15",
+  "role": "independent_peer_review",
+  "mutated_existing_MD": false,
+  "essay_tasks_reviewed": [
+    {
+      "path": "省考/江西/2026/申论-县乡卷.md",
+      "number": 4,
+      "characters": 892,
+      "result": "pass_within_review_scope",
+      "assessment": "892字，满足800—1000；选路与增强能力两条逻辑完整，小提琴、蜜瓜、机构整合和全周期服务对应资料4；引用全卷竹产业/传统制造符合参考给定资料的开放要求。",
+      "question_sha256": "a5779dd5e8904c93d9056b64f544467f746991fd407ae3890d99f0c233ec4cd0",
+      "reviewed_file_sha256": "0b3f3163b3d6f951597b4db824a880fe00f722baceb1404010f00627265d0120",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-统考.md",
+      "number": 1,
+      "characters": 150,
+      "result": "pass_within_review_scope",
+      "assessment": "150字，不超200；分表现/危害，谣言、网络暴力、直播失序及个体现实伤害均对应资料2。",
+      "question_sha256": "9f7f7fb38338a200ffb1d0a1d2b180e85ce00aae9e5251b8ba65b39e8618e42d",
+      "reviewed_file_sha256": "b5e72998ed1c86de20c6c3addec441c79605b7844116bb9243ffc3070ba71e0e",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-统考.md",
+      "number": 2,
+      "characters": 226,
+      "result": "pass_within_review_scope",
+      "assessment": "226字，不超250；从刺激诱惑、虚拟角色、匿名约束弱、碎片化解释成因，未仅重复危害替代原因。",
+      "question_sha256": "be56a921613c75903caf38f34230d3da57bc7f4de02662964dc8b3c22a8a32d3",
+      "reviewed_file_sha256": "b5e72998ed1c86de20c6c3addec441c79605b7844116bb9243ffc3070ba71e0e",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-统考.md",
+      "number": 3,
+      "characters": 336,
+      "result": "pass_within_review_scope",
+      "assessment": "336字，不超400；建议紧扣资料5—6的教育、文化内涵、数字传播、受众态度与长期养成，未错写成一般监管执法题。",
+      "question_sha256": "ac7e1003f9817353511423300e0b78e23f70c7110e385f3e13b7d3f06bebee4c",
+      "reviewed_file_sha256": "b5e72998ed1c86de20c6c3addec441c79605b7844116bb9243ffc3070ba71e0e",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-统考.md",
+      "number": 4,
+      "characters": 1064,
+      "result": "pass_within_review_scope",
+      "assessment": "1064字，满足1000—1200；约束与自觉关系明确，后续论述落实教化、文化滋养和个人养成，外在规则未完全取代道德主题。",
+      "question_sha256": "dc429d13a577143e867bea04103e001fbe969330056d4eeeb068fb9a30cbaf53",
+      "reviewed_file_sha256": "b5e72998ed1c86de20c6c3addec441c79605b7844116bb9243ffc3070ba71e0e",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    },
+    {
+      "path": "省考/陕西/2024/申论-B类.md",
+      "number": 1,
+      "characters": 177,
+      "result": "pass_within_review_scope",
+      "assessment": "177字，满足150—200；覆盖医养框架、资源整合、家庭医生、长护险与专业服务，均有资料1依据。",
+      "question_sha256": "b3c39a2b1f1d0961ce872efcf4711b997f1215dfe084f8f387321a3c9a369295",
+      "reviewed_file_sha256": "7f608816174a6d458e0cee8496cd3322d95692df1b5c5acd5a1663c6da9c5ccc",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    },
+    {
+      "path": "省考/陕西/2024/申论-B类.md",
+      "number": 2,
+      "characters": 228,
+      "result": "pass_within_review_scope",
+      "assessment": "228字，满足200—250；分别回答特点与作用，信贷、技术营销、信用文明与青年下沉均对应资料2。",
+      "question_sha256": "b2c4c2d6d91a70c1f66dfbfb6dca7b74336a37269bf165355568a5cd69dc7624",
+      "reviewed_file_sha256": "7f608816174a6d458e0cee8496cd3322d95692df1b5c5acd5a1663c6da9c5ccc",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    },
+    {
+      "path": "省考/陕西/2024/申论-B类.md",
+      "number": 3,
+      "characters": 308,
+      "result": "pass_within_review_scope",
+      "assessment": "308字，满足300—350；五类问题与建议逐项对应，未把改造前问题替代改造后物业、维修、资金及个性需求。",
+      "question_sha256": "aa5386e25e15aeafe836048a518a8bd3b8dc53d12a1bdb1e2aeee3f316ecb6d7",
+      "reviewed_file_sha256": "7f608816174a6d458e0cee8496cd3322d95692df1b5c5acd5a1663c6da9c5ccc",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    },
+    {
+      "path": "省考/陕西/2024/申论-B类.md",
+      "number": 4,
+      "characters": 418,
+      "result": "pass_within_review_scope",
+      "assessment": "418字，满足400—500；发言提纲具称谓、经验、成效和下一步，数据97%、98%、100%与资料4一致。",
+      "question_sha256": "b81687e2584d87e28a4ed7e9743ce56919c35dd174384edd20ffd45cfae29575",
+      "reviewed_file_sha256": "7f608816174a6d458e0cee8496cd3322d95692df1b5c5acd5a1663c6da9c5ccc",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    },
+    {
+      "path": "省考/陕西/2024/申论-B类.md",
+      "number": 5,
+      "characters": 1089,
+      "result": "pass_within_review_scope",
+      "assessment": "1089字，满足1000—1100；同时讨论创新风险、不创新风险及科学控险，果醋数字化、存量用地、能源与柿子例证对应资料5。",
+      "question_sha256": "731300a5b5f8c4f9658caedf74b90e155a2791a4323adc76d3c6716a26041827",
+      "reviewed_file_sha256": "7f608816174a6d458e0cee8496cd3322d95692df1b5c5acd5a1663c6da9c5ccc",
+      "authorship": "ai_original",
+      "material_scope_reviewed": true
+    }
+  ],
+  "essay_actionable_findings": [],
+  "source_identity_note": {
+    "path": "省考/陕西/2024/申论-B类.md",
+    "finding": "5题合计150分曾触发混卷疑点；同年中公县乡级解读明确第五题创新风险作文，华图大纲解读明确B/C类5题，故不凭100分惯例删除第五题。",
+    "sources": [
+      "https://www.eoffcn.com/kszx/detail/1303181.html",
+      "https://sn.huatu.com/2024/0201/1205544.html",
+      "https://www.aipta.com/article/10244.html"
+    ]
+  },
+  "beijing_53": {
+    "answer": "D",
+    "confidence": "high",
+    "proof": "两套均黑9白10，每图黑圆分3组三圆；第一套组形依次直线、等边小三角、V形折线。第二套前2图对应直线与三角，故第三应V形，只有D。第二套还具120°旋转对称。A同为三角，B每组4黑，C黑白反转、黑圆连为整体。",
+    "pitfall": "仅黑9+120°旋转不足排A；A也满足二者，须用三圆组形对应顺序。",
+    "source_image": "图片/省考-北京-2025-行测-统考/题目图/2827896.png",
+    "method": "Native local-image inspection plus 19-center hex-lattice sampling; no image modification",
+    "circle_sampling": [
+      {
+        "figure": "g1a",
+        "black": 9,
+        "white": 10,
+        "black_components": [
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              4
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              4
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              4
+            ]
+          }
+        ],
+        "rotation_120_invariant": false
+      },
+      {
+        "figure": "g1b",
+        "black": 9,
+        "white": 10,
+        "black_components": [
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "rotation_120_invariant": false
+      },
+      {
+        "figure": "g1c",
+        "black": 9,
+        "white": 10,
+        "black_components": [
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              3
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              3
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              3
+            ]
+          }
+        ],
+        "rotation_120_invariant": false
+      },
+      {
+        "figure": "g2a",
+        "black": 9,
+        "white": 10,
+        "black_components": [
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              4
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              4
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              4
+            ]
+          }
+        ],
+        "rotation_120_invariant": true
+      },
+      {
+        "figure": "g2b",
+        "black": 9,
+        "white": 10,
+        "black_components": [
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "rotation_120_invariant": true
+      },
+      {
+        "figure": "A",
+        "black": 9,
+        "white": 10,
+        "black_components": [
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "rotation_120_invariant": true
+      },
+      {
+        "figure": "B",
+        "black": 12,
+        "white": 7,
+        "black_components": [
+          {
+            "size": 4,
+            "squared_pair_distances": [
+              1,
+              1,
+              1,
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "size": 4,
+            "squared_pair_distances": [
+              1,
+              1,
+              1,
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "size": 4,
+            "squared_pair_distances": [
+              1,
+              1,
+              1,
+              1,
+              3,
+              4
+            ]
+          }
+        ],
+        "rotation_120_invariant": true
+      },
+      {
+        "figure": "C",
+        "black": 10,
+        "white": 9,
+        "black_components": [
+          {
+            "size": 10,
+            "squared_pair_distances": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              7,
+              7,
+              7,
+              7,
+              7,
+              7,
+              9,
+              9,
+              9,
+              12,
+              12,
+              12
+            ]
+          }
+        ],
+        "rotation_120_invariant": true
+      },
+      {
+        "figure": "D",
+        "black": 9,
+        "white": 10,
+        "black_components": [
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              3
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              3
+            ]
+          },
+          {
+            "size": 3,
+            "squared_pair_distances": [
+              1,
+              1,
+              3
+            ]
+          }
+        ],
+        "rotation_120_invariant": true
+      }
+    ]
+  },
+  "beijing_56_58": {
+    "result": "unresolved_missing_shared_operation_definitions",
+    "figures": [
+      {
+        "number": 56,
+        "path": "D:\\projects\\gwy-zhenti-full-repair-20261015\\图片\\省考-北京-2025-行测-统考\\题目图\\2827901.png",
+        "sha256": "6decd50ac45efb5cd5bade5f24abfb6099a28932bcb501ae443dd20d93209e95"
+      },
+      {
+        "number": 57,
+        "path": "D:\\projects\\gwy-zhenti-full-repair-20261015\\图片\\省考-北京-2025-行测-统考\\题目图\\2827905.png",
+        "sha256": "744c654e864f18747ef133026355763015e250eb992d219f0adb3d647d2b4db5"
+      },
+      {
+        "number": 58,
+        "path": "D:\\projects\\gwy-zhenti-full-repair-20261015\\图片\\省考-北京-2025-行测-统考\\题目图\\2827909.png",
+        "sha256": "db370d0a27cff26995dece790dd01f54b16aceac940301ea8cc178734c54c524"
+      }
+    ],
+    "finding": "现有MD各题仅通用问句，图片仅初图、三符号和选项，未见符号与具体操作的定义/总图例。不能因候选字母或符号外形倒推规则。",
+    "source_leads": [
+      {
+        "url": "https://www.33iq.com/question/588737.html",
+        "status": "TinyFish同句搜索命中，fetch_content回503，尚未见图例正文"
+      },
+      {
+        "url": "https://gwy.dtiku.cn/paper/51836",
+        "status": "TinyFish fetch_content timeout，已交根代查"
+      }
+    ]
+  },
+  "beijing_62": {
+    "answer_supported": "B",
+    "confidence": "medium",
+    "image": "D:/artifacts/gwy-quality-audit-20261015/beijing-q62-large.png",
+    "assessment": "独立看原图支持B：切平面含顶部水平整边AB，各水平面截线与AB平行，须反映阶梯间凹口。A斜折角、C缺凹口、D多顶凸台均不符。该判断为图形拓扑复核，未取得精确尺寸或机构同题解析。"
+  },
+  "boundary": "10题已对照当前题面、材料与正文，不等同全库逐字官方原卷认证，也不鉴定实考分数。"
+}

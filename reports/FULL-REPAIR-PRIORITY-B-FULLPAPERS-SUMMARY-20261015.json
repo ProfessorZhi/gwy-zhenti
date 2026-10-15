@@ -1,0 +1,305 @@
+{
+  "status": "passed",
+  "papers": [
+    {
+      "path": "省考/天津/2016/申论-统考.md",
+      "question_count": 4,
+      "new_tasks": [
+        4
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 199,
+          "kind": "preserved_existing",
+          "old_number": 3
+        },
+        {
+          "number": 2,
+          "characters": 286,
+          "kind": "preserved_existing",
+          "old_number": 2
+        },
+        {
+          "number": 3,
+          "characters": 303,
+          "kind": "preserved_existing",
+          "old_number": 1
+        },
+        {
+          "number": 4,
+          "characters": 1015,
+          "kind": "ai_original",
+          "old_number": null
+        }
+      ]
+    },
+    {
+      "path": "省考/天津/2017/申论-统考.md",
+      "question_count": 4,
+      "new_tasks": [
+        2,
+        4
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 197,
+          "kind": "preserved_existing",
+          "old_number": 2
+        },
+        {
+          "number": 2,
+          "characters": 280,
+          "kind": "owned_source",
+          "old_number": null
+        },
+        {
+          "number": 3,
+          "characters": 418,
+          "kind": "preserved_existing",
+          "old_number": 1
+        },
+        {
+          "number": 4,
+          "characters": 1083,
+          "kind": "owned_source",
+          "old_number": null
+        }
+      ]
+    },
+    {
+      "path": "省考/天津/2019/申论-统考.md",
+      "question_count": 4,
+      "new_tasks": [
+        1,
+        4
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 207,
+          "kind": "owned_source",
+          "old_number": null
+        },
+        {
+          "number": 2,
+          "characters": 284,
+          "kind": "preserved_existing",
+          "old_number": 2
+        },
+        {
+          "number": 3,
+          "characters": 428,
+          "kind": "preserved_existing",
+          "old_number": 1
+        },
+        {
+          "number": 4,
+          "characters": 1066,
+          "kind": "owned_source",
+          "old_number": null
+        }
+      ]
+    },
+    {
+      "path": "省考/天津/2020/申论-A类.md",
+      "question_count": 4,
+      "new_tasks": [
+        4
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 240,
+          "kind": "preserved_existing",
+          "old_number": 3
+        },
+        {
+          "number": 2,
+          "characters": 250,
+          "kind": "preserved_existing",
+          "old_number": 2
+        },
+        {
+          "number": 3,
+          "characters": 373,
+          "kind": "preserved_existing",
+          "old_number": 1
+        },
+        {
+          "number": 4,
+          "characters": 1074,
+          "kind": "ai_revision",
+          "old_number": null
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2016/申论-县级卷.md",
+      "question_count": 3,
+      "new_tasks": [
+        3
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 195,
+          "kind": "ai_revision",
+          "old_number": 2
+        },
+        {
+          "number": 2,
+          "characters": 293,
+          "kind": "ai_revision",
+          "old_number": 1
+        },
+        {
+          "number": 3,
+          "characters": 942,
+          "kind": "ai_revision",
+          "old_number": null
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2017/申论-县级卷.md",
+      "question_count": 3,
+      "new_tasks": [
+        3
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 182,
+          "kind": "ai_revision",
+          "old_number": 2
+        },
+        {
+          "number": 2,
+          "characters": 285,
+          "kind": "preserved_existing",
+          "old_number": 1
+        },
+        {
+          "number": 3,
+          "characters": 917,
+          "kind": "ai_revision",
+          "old_number": null
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2019/申论-县级卷.md",
+      "question_count": 3,
+      "new_tasks": [
+        3
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 190,
+          "kind": "preserved_existing",
+          "old_number": 2
+        },
+        {
+          "number": 2,
+          "characters": 252,
+          "kind": "preserved_existing",
+          "old_number": 1
+        },
+        {
+          "number": 3,
+          "characters": 986,
+          "kind": "ai_revision",
+          "old_number": null
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2020/申论-县级卷.md",
+      "question_count": 3,
+      "new_tasks": [
+        3
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 191,
+          "kind": "preserved_existing",
+          "old_number": 2
+        },
+        {
+          "number": 2,
+          "characters": 288,
+          "kind": "preserved_existing",
+          "old_number": 1
+        },
+        {
+          "number": 3,
+          "characters": 988,
+          "kind": "ai_revision",
+          "old_number": null
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2021/申论-县级卷.md",
+      "question_count": 3,
+      "new_tasks": [
+        2,
+        3
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 199,
+          "kind": "ai_revision",
+          "old_number": 1
+        },
+        {
+          "number": 2,
+          "characters": 248,
+          "kind": "ai_revision",
+          "old_number": null
+        },
+        {
+          "number": 3,
+          "characters": 986,
+          "kind": "ai_revision",
+          "old_number": null
+        }
+      ]
+    },
+    {
+      "path": "省考/广东/2022/申论-县级卷.md",
+      "question_count": 3,
+      "new_tasks": [
+        3
+      ],
+      "answers": [
+        {
+          "number": 1,
+          "characters": 193,
+          "kind": "preserved_existing",
+          "old_number": 2
+        },
+        {
+          "number": 2,
+          "characters": 281,
+          "kind": "ai_revision",
+          "old_number": 1
+        },
+        {
+          "number": 3,
+          "characters": 964,
+          "kind": "ai_revision",
+          "old_number": null
+        }
+      ]
+    }
+  ],
+  "restored_papers": 10,
+  "added_original_task_positions": 13,
+  "boundary": "Complete same-paper sources, not directory-count inference; lower-quality source variants do not overwrite better existing paragraphs."
+}

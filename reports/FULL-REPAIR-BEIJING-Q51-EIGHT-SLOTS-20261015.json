@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "random_cases": 200000,
+  "all_queries_exactly_eight_participants": true,
+  "each_query_returns_two_unordered_winners": true,
+  "query_count_distribution": {
+    "7": 128090,
+    "8": 71910
+  },
+  "branches": {
+    "same_group": 45304,
+    "different_groups_other_third": 82786,
+    "different_groups_partner_third": 71910
+  },
+  "padding_wins_cases_explicitly_handled": 3096,
+  "upper_bound": 8,
+  "global_lower_bound_proved": false,
+  "boundary": "A constructive at-most-eight bound only; no claim that every seven-query strategy is impossible."
+}

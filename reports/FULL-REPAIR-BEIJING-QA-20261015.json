@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "path": "省考/北京/2025/行测-统考.md",
+  "questions": 93,
+  "answer_blocks": 88,
+  "pending_numbers": [
+    56,
+    57,
+    58,
+    79,
+    80
+  ],
+  "errors": [],
+  "q51_correction": "source ten-query key disproved by an eight-query upper bound; A retained as corrected reference, global seven-query impossibility not proved",
+  "qualification_notes": [
+    {
+      "number": 5,
+      "note": "Institution reference D retained with geographic convention / Russia-only route qualification."
+    }
+  ],
+  "boundary": "Original question/option/image retention and parser roundtrip verified; five source-context gaps remain, not counted as solved."
+}

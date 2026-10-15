@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "essay_papers": 735,
+  "parsed_papers": 735,
+  "classifications": {
+    "小题参考作答/已收录": 2207,
+    "作文范文/已收录": 332
+  },
+  "unparsed": [],
+  "incomplete_recognized_tasks": [],
+  "new_or_revised_answer_bodies_checked": 457,
+  "checked_body_authorship": {
+    "AI辅助原创": 336,
+    "同题来源参考": 33,
+    "AI辅助修订": 88
+  },
+  "answer_body_errors": [],
+  "legacy_source_length_notes": [],
+  "boundary": "Readable answers and added/revised body requirements are checked, with authorship categories kept separate. Missing entire papers, source factual truth, actual exam scores, and unresolved source conditions are separate inventory findings."
+}

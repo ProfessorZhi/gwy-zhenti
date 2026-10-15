@@ -1,0 +1,147 @@
+{
+  "status": "passed",
+  "scope": "24 changed MD source/data/answers retention and native count read-only QA; image pixel/source-original review separate",
+  "files": [
+    {
+      "path": "国考/2021/行测-副省级.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "国考/2021/行测-地市级.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/上海/2020/行测-B类.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/北京/2019/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/吉林/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/四川/2019/行测-下半年.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/天津/2025/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/安徽/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/山西/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/广东/2024/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/广东/2025/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/广东/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/新疆/2024/行测-兵团.md",
+      "answer_details_preserved": "54原C在legacy区保留，主答案如实待补条件"
+    },
+    {
+      "path": "省考/新疆/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/河北/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/河南/2017/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/浙江/2023/行测-A类.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/浙江/2023/行测-B类.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/浙江/2023/行测-C类.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/湖北/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/湖南/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/重庆/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/陕西/2026/行测-统考.md",
+      "answer_details_preserved": true
+    },
+    {
+      "path": "省考/青海/2026/行测-统考.md",
+      "answer_details_preserved": true
+    }
+  ],
+  "xinjiang54_native": {
+    "path": "省考/新疆/2024/行测-兵团.md",
+    "sha256": "81ba8ba9cde6185fa7b706ee2a73ed3628f7388fd7a1ed2d0c8d92854222e2f1",
+    "bytes": 226885,
+    "area": "新疆",
+    "year": "2024",
+    "subject": "行测",
+    "paper_type": "兵团",
+    "declared_questions": 115,
+    "question_anchors": 115,
+    "answer_blocks": 114,
+    "has_answer_content": true,
+    "missing_answer_numbers": [
+      54
+    ],
+    "review_scope": null,
+    "sequence_basis": "原卷重建",
+    "reference_question_count": null,
+    "missing_original_numbers": null,
+    "missing_option_numbers": null,
+    "missing_shared_condition_numbers": null,
+    "known_material_gaps": null,
+    "source_analysis_disagreement_numbers": null,
+    "missing_stem_figure_numbers": [
+      54
+    ],
+    "missing_stem_condition_numbers": [
+      54
+    ],
+    "historical_truncated_questions": null,
+    "current_truncated_questions": null,
+    "image_references": 125,
+    "issues": [
+      "历史模块拼接题序未获原卷证据核对",
+      "已核实部分或全部参考答案未收录",
+      "已确认题干主图缺失：54",
+      "已确认题干关键条件缺失：54",
+      "答案数量与题量不一致"
+    ],
+    "notes": [
+      "有参考答案不代表其为官方答案或已经验真"
+    ],
+    "source_validation": "机器校验（并卷/题号/图片/去泄露/G1–G5）；未人工通读；2026-10-15逐题实际内容扫描发现第54题主体图及A点关键条件在原源缺失；原C仅作未经核实的来源记录，不计完整可验证主答案。",
+    "whole_paper_acceptance": "not_certified_by_this_audit"
+  }
+}

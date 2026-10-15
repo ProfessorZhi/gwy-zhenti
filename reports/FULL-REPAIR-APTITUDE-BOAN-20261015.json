@@ -1,0 +1,18 @@
+{
+  "path": "省考/江苏/2024/行测-C类.md",
+  "before_sha256": "0849e58897bc6b2af1358512b4298076e163d42c9c783431c0cd54fa7d7747b0",
+  "after_sha256": "3a74965edf9cd6369249bfd10546583f18c731c8e53119ca4138c2c498965738",
+  "question": 110,
+  "answer": "B",
+  "image_path": "图片/修复-20261015/江苏2024C110-options.png",
+  "image_sha256": "02ef3024ec0bb3a4b9b79402e61a9af6c2c02ed288b9915c63c83edf1376df71",
+  "source_url": "https://www.sohu.com/a/988893344_121124033",
+  "source_image_url": "https://q2.itc.cn/q_70/images03/20260221/afb1f2537bff4f86850cdf199135e3d4.png",
+  "source_kind": "公开同题选项图；独立原创校核解析",
+  "restored_options": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ]
+}

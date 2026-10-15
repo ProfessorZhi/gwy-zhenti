@@ -1,0 +1,375 @@
+{
+  "status": "passed",
+  "date": "2026-10-15",
+  "MD_frozen": true,
+  "new_or_restored_papers": 11,
+  "full_tasks": 43,
+  "authorship": {
+    "同题来源参考": 33,
+    "AI辅助修订": 10
+  },
+  "source_git_blob_validation": [
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2018年上海市公务员考试《申论》真题（B类）及参考答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "5371a0d1f2bb34c4675a6ae1d5a642b6ad95a636f2c853d9d17074d522b4ba76",
+      "git_blob_matches_local_source": true
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2019年上海公务员考试《申论》真题（B卷）及参考答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "23f3923e6cec90bcc42252df18c29a21d02fd0297833d41a5a213316f700f184",
+      "git_blob_matches_local_source": true
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2020年上海公务员考试《申论》真题（B类）及参考答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "397724084fe4fe3ed9090a674a6ead669e525f1731e5af477ec9d2485d574f44",
+      "git_blob_matches_local_source": true
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2021年上海市公考《申论》题（B卷）及参考答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "7401768327929026f7858f3eef0795f1ab8ba633ebf568f2d636a1c2be7f22f1",
+      "git_blob_matches_local_source": true
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2022年上海市公考《申论》（B卷）真题及答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "c2b183a44f67c31df22d53bc891cf604649a70e6606c0c3fb7d18e35bb47473b",
+      "git_blob_matches_local_source": true
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2023年上海市公考《申论》（A卷）真题及答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "8acedd3e614b378e6baff5de01412a14e19f1e6ef7fb9801f0a54d4f5bb63765",
+      "git_blob_matches_local_source": true
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2018年上海市公务员考试《申论》真题（A卷）及参考答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "84f78b1d8b8c968661598db88c2e21e37f67fec459aac15fd3b0ff626b821be6",
+      "git_blob_matches_local_source": true
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2019年上海公务员考试《申论》真题（A卷）及参考答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "a7bf4fc5eec7b120b506d234403e0afdc077e010b81a699f2a3c05f6f5f00566",
+      "git_blob_matches_local_source": true
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2020年上海公务员考试《申论》真题（A类）及参考答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "577d5189216645fc5da3c69b78648aa98f88c0a1d3bdd55287ffa2e79bc9b8d9",
+      "git_blob_matches_local_source": true
+    },
+    {
+      "path": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【24】上海公务员考试真题pdf版/上海公务员考试真题——申论03-24/2021年上海市公考《申论》题（A卷）及参考答案.pdf.md",
+      "revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+      "sha256": "a295f03973aa5438a2c20c57764a0c5f696d6dac0e2ec60da48d32b5457f7108",
+      "git_blob_matches_local_source": true
+    }
+  ],
+  "papers": [
+    {
+      "path": "省考/上海/2018/申论-A类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 186,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 235,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 285,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 4,
+          "characters": 988,
+          "kind": "AI辅助修订"
+        }
+      ],
+      "checked_document_sha256": "09c56b0fe8cf0da9a186dd19c26dc060780f9d38af2b2dfa3b8d8f75e3e2f3da"
+    },
+    {
+      "path": "省考/上海/2018/申论-B类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 272,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 189,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 296,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 4,
+          "characters": 990,
+          "kind": "同题来源参考"
+        }
+      ],
+      "checked_document_sha256": "b11f097e8be91ac25b25a8ac0806cb735a10064e754287576321898a2fbccd97"
+    },
+    {
+      "path": "省考/上海/2018/申论-行政执法.md",
+      "questions": 3,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 197,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 275,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 960,
+          "kind": "AI辅助修订"
+        }
+      ],
+      "checked_document_sha256": "271c2501ed087b2b367fd2932497cc11d3d85a07830c1453181a0842c229d8fe"
+    },
+    {
+      "path": "省考/上海/2019/申论-A类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 273,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 285,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 271,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 4,
+          "characters": 979,
+          "kind": "AI辅助修订"
+        }
+      ],
+      "checked_document_sha256": "3bcaa152cf3801f3dadd6653fea3e64a055130410dc35c9086103d00c08e27ff"
+    },
+    {
+      "path": "省考/上海/2019/申论-B类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 272,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 232,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 300,
+          "kind": "AI辅助修订"
+        },
+        {
+          "number": 4,
+          "characters": 956,
+          "kind": "AI辅助修订"
+        }
+      ],
+      "checked_document_sha256": "6b6c759b8b9fe7ce58df3a8936122bd64aaf2fc9b3314d02b78bf20420aefd8b"
+    },
+    {
+      "path": "省考/上海/2020/申论-A类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 255,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 257,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 289,
+          "kind": "AI辅助修订"
+        },
+        {
+          "number": 4,
+          "characters": 984,
+          "kind": "AI辅助修订"
+        }
+      ],
+      "checked_document_sha256": "45be83c30212f225e0b82d892c8b5efe22cecea43300979b7855f2496a1b755a"
+    },
+    {
+      "path": "省考/上海/2020/申论-B类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 296,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 285,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 300,
+          "kind": "AI辅助修订"
+        },
+        {
+          "number": 4,
+          "characters": 975,
+          "kind": "同题来源参考"
+        }
+      ],
+      "checked_document_sha256": "078026836d6afe4706c4dd0e0233fb58054e9a35a492936fa26ddeef6dd6de50"
+    },
+    {
+      "path": "省考/上海/2021/申论-A类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 293,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 293,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 300,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 4,
+          "characters": 999,
+          "kind": "AI辅助修订"
+        }
+      ],
+      "checked_document_sha256": "b693a6aade7624ef12b7d636c618572857c30c8c9657c1689252c2d87ab642ed"
+    },
+    {
+      "path": "省考/上海/2021/申论-B类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 298,
+          "kind": "AI辅助修订"
+        },
+        {
+          "number": 2,
+          "characters": 296,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 289,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 4,
+          "characters": 995,
+          "kind": "同题来源参考"
+        }
+      ],
+      "checked_document_sha256": "e0514980868bb95b9805e7e358e7389ec77a1d37e2cb011792c138d41eb1313f"
+    },
+    {
+      "path": "省考/上海/2022/申论-B类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 285,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 240,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 300,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 4,
+          "characters": 944,
+          "kind": "同题来源参考"
+        }
+      ],
+      "checked_document_sha256": "30d0f87dd815b7490af21a26c3fac02a27b2e1b3d2df9c993c260b90dbea2b02"
+    },
+    {
+      "path": "省考/上海/2023/申论-A类.md",
+      "questions": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "characters": 244,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 2,
+          "characters": 286,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 3,
+          "characters": 281,
+          "kind": "同题来源参考"
+        },
+        {
+          "number": 4,
+          "characters": 991,
+          "kind": "同题来源参考"
+        }
+      ],
+      "checked_document_sha256": "ce9fa5ccaf9ad9e48edf8fc91565c9419489dd9aa0455c82b48b1d4f49a36090"
+    }
+  ],
+  "public_crosschecks": [
+    "https://www.aipta.com/article/3663.html",
+    "https://www.aipta.com/article/1219.html",
+    "https://www.aipta.com/article/6692.html",
+    "http://www.houzhiwang.com/html/201910/2344.html"
+  ],
+  "remaining_whole_paper": "2023上海B科创中心仍缺完整原文；不得以A卷基层治理作文替代。",
+  "receipt_boundary": "前三份A中间阶段前像未保存，采用经过Git逐字节核对的f9c固定基线，非即时前像；根外层receipt覆盖基线到终态。当前文件hash为根最终统一标题/归档前的只读检查快照。"
+}

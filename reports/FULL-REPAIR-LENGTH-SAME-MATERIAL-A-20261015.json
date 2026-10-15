@@ -1,0 +1,8 @@
+{
+  "target": "省考/重庆/2024/申论-二卷.md",
+  "target_number": 4,
+  "donor": "省考/陕西/2024/申论-B类.md",
+  "donor_number": 5,
+  "material_12gram_coverage": 0.9921875,
+  "basis": "current original target material matches independently reviewed same-exam donor material; target word limit revalidated separately"
+}

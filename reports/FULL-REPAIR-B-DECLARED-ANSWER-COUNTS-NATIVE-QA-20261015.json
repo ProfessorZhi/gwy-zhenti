@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "scope": "native counter isolated to 5 actual files; no public auditor change; image QA separate",
+  "rows": [
+    {
+      "path": "省考/山东/2023/申论-B类.md",
+      "declared_questions": 3,
+      "question_anchors": 3,
+      "answer_blocks": 3,
+      "missing_shared_condition_numbers": null,
+      "issues": []
+    },
+    {
+      "path": "省考/深圳/2019/申论-一卷.md",
+      "declared_questions": 3,
+      "question_anchors": 3,
+      "answer_blocks": 3,
+      "missing_shared_condition_numbers": null,
+      "issues": []
+    },
+    {
+      "path": "省考/黑龙江/2018/申论-省直.md",
+      "declared_questions": 4,
+      "question_anchors": 4,
+      "answer_blocks": 4,
+      "missing_shared_condition_numbers": null,
+      "issues": []
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-省级.md",
+      "declared_questions": 4,
+      "question_anchors": 4,
+      "answer_blocks": 4,
+      "missing_shared_condition_numbers": null,
+      "issues": []
+    },
+    {
+      "path": "省考/北京/2025/行测-统考.md",
+      "declared_questions": 93,
+      "question_anchors": 93,
+      "answer_blocks": 88,
+      "missing_shared_condition_numbers": [
+        56,
+        57,
+        58,
+        79,
+        80
+      ],
+      "issues": [
+        "已核实部分或全部参考答案未收录",
+        "已确认共用题干条件缺失：56、57、58、79、80",
+        "来源声明回忆版不全",
+        "答案数量与题量不一致"
+      ]
+    }
+  ],
+  "remaining_true_count_mismatch": 1
+}

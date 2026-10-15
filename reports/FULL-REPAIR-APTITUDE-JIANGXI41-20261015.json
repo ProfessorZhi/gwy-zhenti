@@ -1,0 +1,13 @@
+{
+  "path": "省考/江西/2019/行测-法检.md",
+  "question": 41,
+  "before_sha256": "46af6771ae3cf9aa88b9d3db04314eb87fbf6ea99d54aa154de4fb167123c761",
+  "after_sha256": "d88cedfc3b3d49771523c3b9ee010d72f98d7014b7b56d9b9d2637277eea65e3",
+  "old_invalid_key": "A",
+  "answer_kind": "题源选项与计算冲突；完整数值参考作答",
+  "reference_value": "5400元",
+  "original_options_preserved": true,
+  "source": "用户同卷题本与答案解析第41题；来源F，整理杨柳",
+  "source_exact_short_note": "本题出题不严谨，正确答案应当为5400",
+  "unresolved_boundary": "未取得官方原题/勘误，不伪造一个新的原选项，不给错误单选字母。"
+}

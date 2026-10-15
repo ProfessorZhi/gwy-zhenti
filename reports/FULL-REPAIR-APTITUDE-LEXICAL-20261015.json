@@ -1,0 +1,134 @@
+[
+  {
+    "path": "省考/云南/2020/行测-统考.md",
+    "question": 37,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/内蒙古/2020/行测-统考.md",
+    "question": 22,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/安徽/2020/行测-统考.md",
+    "question": 22,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/山西/2020/行测-统考.md",
+    "question": 60,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/广西/2020/行测-统考.md",
+    "question": 12,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/江西/2020/行测-乡镇卷.md",
+    "question": 60,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/江西/2020/行测-县级卷.md",
+    "question": 28,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/河北/2020/行测-统考.md",
+    "question": 42,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/海南/2020/行测-统考.md",
+    "question": 49,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/湖北/2020/行测-统考.md",
+    "question": 54,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/重庆/2020/行测-统考.md",
+    "question": 22,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  },
+  {
+    "path": "省考/青海/2020/行测-B类.md",
+    "question": 28,
+    "classification": "false_positive",
+    "reason": "A选项“缺失”是与薄弱/不力/缺乏并列的完整词语，不是题面占位。",
+    "sources": [
+      "https://www.chinagwy.org/files/20240109103656_86849.pdf",
+      "https://www.chinagwy.org/files/20211111144841_16731.pdf",
+      "https://www.chinagwy.org/files/20200822200015_81477.pdf"
+    ]
+  }
+]

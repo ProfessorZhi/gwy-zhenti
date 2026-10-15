@@ -22,7 +22,7 @@ from paper_identity import reference_number_issues
 SOURCE_REPO = 'zzcc-nb/gongkao-tiku'
 SOURCE_COMMIT = 'ef3c7def82544fb8fe8a4913bebc6024910a6dc0'
 PRIORITY = ('浙江','江苏','上海','北京','天津','广东','广州','深圳','福建')
-DATE = '2026-10-12'
+DATE = '2026-10-15'
 FM = re.compile(r'\A---\r?\n(.*?)\r?\n---(?:\r?\n|$)', re.S)
 QBLOCK = re.compile(r'^## 第 (\d+) 题[^\n]*\n(.*?)(?=^## |\Z)', re.M | re.S)
 MAT = re.compile(r'^### 给定材料[^\S\n]*\n(.*?)\n### 作答要求[^\S\n]*\n(.*)', re.M | re.S)
@@ -231,12 +231,24 @@ def resolve_image(rel: str, ref: str) -> str | None:
 
 def tracked_paths(root: Path) -> set[str]:
     try:
-        return {s for s in subprocess.check_output(['git','ls-files','-z'],cwd=root,stderr=subprocess.DEVNULL).decode('utf-8').split('\0') if s}
+        task_env=dict(os.environ)
+        if os.name=='nt':task_env.update(GIT_CONFIG_GLOBAL='NUL',GIT_CONFIG_NOSYSTEM='1')
+        return {s for s in subprocess.check_output(['git','-c','core.fsmonitor=false','ls-files','-z'],cwd=root,env=task_env,stderr=subprocess.DEVNULL,timeout=120).decode('utf-8').split('\0') if s}
     except (subprocess.CalledProcessError,FileNotFoundError):
         snapshot=root/'_tracked-paths.json'
         if not snapshot.exists():
             raise RuntimeError('A tracked repository or exported tree is required')
         return set(json.loads(snapshot.read_text(encoding='utf-8')))
+
+
+def inline_answer_numbers(text: str) -> list[int]:
+    """Recognize actual inline multiple-choice keys without counting gap notices."""
+    result=[]
+    for block in QBLOCK.finditer(text):
+        body=block.group(2).split('<details>',1)[0]
+        if re.search(r'(?m)^\*\*答案\*\*[：:]\s*(?:[A-G]+|正确|错误)(?:\s|[。；，;,(（]|$)',body):
+            result.append(int(block.group(1)))
+    return result
 
 
 def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
@@ -253,6 +265,7 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
         count=int(declared.group(1)) if declared else len(qids)
         details=DETAIL.findall(t)
         usable=[int(n) for n,body in details if (re.search(r'\*\*答案\*\*[：:]\s*(?:[A-G]+|正确|错误)', body) or len(re.sub(r'<[^>]*>','',body).strip())>40) and not re.fullmatch(r'\s*(?:答案缺失|待核实|暂无答案)[。\s]*',body)]
+        if subject=='行测':usable=sorted(set(usable)|set(inline_answer_numbers(t)))
         declared_answer_ids=fm.get('已收录参考答案题号')
         if isinstance(declared_answer_ids,list):
             # Explicit adjudication outranks body-length heuristics: a long warning
@@ -283,6 +296,12 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
             issues.append('历史模块拼接题序未获原卷证据核对')
         if not has_answer:issues.append('未检测到参考答案（需复核正文）')
         if fm.get('缺参考答案题号'):issues.append('已核实部分或全部参考答案未收录')
+        if fm.get('缺失选项题号'):issues.append('已确认选项缺失：'+ '、'.join(map(str,fm['缺失选项题号'])))
+        if fm.get('现仍缺失共用条件题号'):issues.append('已确认共用题干条件缺失：'+ '、'.join(map(str,fm['现仍缺失共用条件题号'])))
+        if fm.get('原材料缺段说明'):issues.append('已确认原材料中间缺段')
+        if fm.get('解析来源争议题号'):issues.append('原题或来源解析条件存在争议：'+ '、'.join(map(str,fm['解析来源争议题号'])))
+        if fm.get('缺失题干图片题号'):issues.append('已确认题干主图缺失：'+ '、'.join(map(str,fm['缺失题干图片题号'])))
+        if fm.get('缺失题干条件题号'):issues.append('已确认题干关键条件缺失：'+ '、'.join(map(str,fm['缺失题干条件题号'])))
         if '单一完整题面来源' in str(fm.get('校验状态','')):issues.append('单一整理版来源，完整原件真实性待交叉复核')
         if not qids:notes.append('题号未结构化；不据此认定题面残缺')
         state=str(fm.get('校验状态',''))
@@ -296,6 +315,9 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
              'question_anchors':len(qids),'answer_blocks':len(usable),'has_answer_content':has_answer,'missing_answer_numbers':fm.get('缺参考答案题号'),
              'review_scope':fm.get('整卷核验状态'),'sequence_basis':fm.get('题号口径'),
              'reference_question_count':fm.get('对照题本题量'),'missing_original_numbers':fm.get('缺失原题号'),
+             'missing_option_numbers':fm.get('缺失选项题号'),'missing_shared_condition_numbers':fm.get('现仍缺失共用条件题号'),'known_material_gaps':fm.get('原材料缺段说明'),
+             'source_analysis_disagreement_numbers':fm.get('解析来源争议题号'),
+             'missing_stem_figure_numbers':fm.get('缺失题干图片题号'),'missing_stem_condition_numbers':fm.get('缺失题干条件题号'),
              'historical_truncated_questions':old,'current_truncated_questions':now,
              'image_references':len(image_refs(t)),'issues':sorted(set(issues)),'notes':notes,
              'source_validation':state,'whole_paper_acceptance':'not_certified_by_this_audit'}
@@ -312,9 +334,9 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
         hard.extend(decode_errors)
     forbidden=sorted(p for p in tracked if Path(p).suffix.lower() in {'.pdf','.zip','.rar','.7z','.doc','.docx','.xls','.xlsx','.ppt','.pptx','.tar','.gz'})
     placeholder_index=root/'资料缺失/INDEX.jsonl'
-    placeholders=[json.loads(s) for s in placeholder_index.read_text(encoding='utf-8-sig').splitlines() if s.strip()] if placeholder_index.exists() else []
+    placeholders=[json.loads(s) for s in placeholder_index.read_text(encoding='utf-8-sig').split('\n') if s.strip()] if placeholder_index.exists() else []
     digest=sha(''.join(r['path']+'\0'+r['sha256']+'\n' for r in rows).encode('utf-8'))
-    stats={'schema_version':1,'inventory_sha256':digest,'paper_files':len(rows),
+    stats={'schema_version':2,'inventory_sha256':digest,'paper_files':len(rows),
            'subjects':dict(collections.Counter(r['subject'] for r in rows)),
            'areas':{k:dict(v) for k,v in sorted(by_area.items())},
            'image_references':len(refs_all),'unique_referenced_images':len(unique),
@@ -329,6 +351,12 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
            'files_with_machine_flags':sum(bool(r['issues']) for r in rows),
            'reference_numbered_papers':sum(r['reference_question_count'] is not None for r in rows),
            'confirmed_missing_original_questions':sum(len(r['missing_original_numbers'] or []) for r in rows),
+           'confirmed_missing_option_questions':sum(len(r['missing_option_numbers'] or []) for r in rows),
+           'confirmed_missing_shared_condition_questions':sum(len(r['missing_shared_condition_numbers'] or []) for r in rows),
+           'confirmed_material_gap_segments':sum(len(r['known_material_gaps'] or []) for r in rows),
+           'declared_source_analysis_disagreement_questions':sum(len(r['source_analysis_disagreement_numbers'] or []) for r in rows),
+           'confirmed_missing_stem_figure_questions':sum(len(r['missing_stem_figure_numbers'] or []) for r in rows),
+           'confirmed_missing_stem_condition_questions':sum(len(r['missing_stem_condition_numbers'] or []) for r in rows),
            'whole_paper_acceptance':'not_established_by_structural_checks'}
     return rows,stats
 
@@ -338,6 +366,10 @@ def md_link(label: str, path: str, up: str='') -> str:
 
 
 def build(root: Path, rows: list[dict], stats: dict) -> None:
+    progress_file=root/'PROGRESS.md'
+    previous_progress=progress_file.read_text(encoding='utf-8') if progress_file.exists() else ''
+    preserved=re.search(r'<!-- PRESERVED-PROGRESS-HISTORY -->\n(.*?)\n<!-- /PRESERVED-PROGRESS-HISTORY -->',previous_progress,re.S)
+    history=preserved[1] if preserved else previous_progress.rstrip()
     for d in ('catalog','reports'):(root/d).mkdir(exist_ok=True)
     (root/'catalog/manifest.jsonl').write_text(''.join(json.dumps(r,ensure_ascii=False,sort_keys=True)+'\n' for r in rows),encoding='utf-8')
     (root/'reports/QUALITY-SUMMARY.json').write_text(json.dumps(stats,ensure_ascii=False,indent=2,sort_keys=True)+'\n',encoding='utf-8')
@@ -347,7 +379,8 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
            '由 `tools/cloud_quality.py --build` 读取已收录文件生成。以 `现仍截断题数` 为准，不再把历史截断当作现行缺陷。',
            '没有题号锚点仅表示格式尚未结构化；没有发现机器告警不等于原卷内容已全部验真。',
            '“未收录”只描述本库；同年另一科目或邻年存在，不能单独证明该卷当年必然开考。',
-           '广州按独立考试系列列出，广东行不重复计算广州。2019年起不展开独立广州市考缺卷矩阵。','']
+           '广州按独立考试系列列出，广东行不重复计算广州。2019年起不展开独立广州市考缺卷矩阵。',
+           '本表仍是年度科目视图。真实细分卷型、漏收整卷及来源问题以 [本轮总验收](reports/FULL-REPAIR-20261015.md) 和其逐年卷型证据为准。','']
     missing=[]
     for area in PRIORITY:
         cover+=['## '+area,'','| 年份 | 行测 | 申论 |','|---|---|---|']
@@ -378,7 +411,8 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
     (root/'reports/PRIORITY-MISSING.json').write_text(json.dumps(missing,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     defect_md=['# 当前内容与质量待办','',
                '这是当前规则检出的事项，不是全库缺陷全集。保留来源限定，不把未检测到等同于不存在。',
-               f"正文文件 {len(rows)} 份；有规则告警 {len(defects)} 份；当前仍有尾部截断 {stats['current_truncated_files']} 份 / {stats['current_truncated_questions']} 道受影响题。",'',
+               f"正文文件 {len(rows)} 份；有规则告警 {len(defects)} 份；当前仍有尾部截断 {stats['current_truncated_files']} 份 / {stats['current_truncated_questions']} 道受影响题。",
+               f"另已明确缺原题 {stats['confirmed_missing_original_questions']} 道、缺选项 {stats['confirmed_missing_option_questions']} 题、缺共用条件 {stats['confirmed_missing_shared_condition_questions']} 题、原材料中间缺段 {stats['confirmed_material_gap_segments']} 处。整卷漏收另见 [真实卷型总验收](FULL-REPAIR-20261015.md)。",'',
                '| 试卷 | 当前事项 |','|---|---|']
     for r in defects:defect_md.append('| '+md_link(r['path'],r['path'],'../')+' | '+'；'.join(r['issues'])+' |')
     defect_md+=['','## 仍需原卷证据的部分','','来源标记为未截断并不能证明中间没有漏材料；本轮未逐字验全卷。',
@@ -395,6 +429,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
               f'| 历史已标记材料截断 | {stats["historical_truncated_files"]} 份 / {stats["historical_truncated_questions"]} 道受影响题 |',
               f'| 当前仍有该截断项 | {stats["current_truncated_files"]} 份 / {stats["current_truncated_questions"]} 道受影响题 |',
               f'| 重点区年度科目未收录 | {len(missing)} 格（不等于全部卷型缺口） |','',
+              '**本轮真实卷型和逐题验收：[2026-10-15总报告](reports/FULL-REPAIR-20261015.md)。上面的年度格子数量不能代替整卷缺口。**','',
               '## 当前入口','',
               '- [重点地区逐年图文试卷](COVERAGE-优先区.md)',
               '- [当前质量事项](reports/QUALITY-AUDIT.md)',
@@ -442,7 +477,10 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
                      '江苏2016申论A/B第1题参考答案仍未核实收录；浙江2016A/B有来源编排异文，未强行拼接。标为浙江2022但内容/措辞异常的候选不入库。',
                      '完整公开题面不等于官方原件逐字认证；10个年度科目缺口、25个明确行测缺题仍保留。',
                      '[本轮范围与验收](reports/QUALITY-REPAIR-20261012-R2.md)；[当前逐卷质量台账](reports/PRIORITY-QUALITY-20261012.md)。','']
-    (root/'PROGRESS.md').write_text('\n'.join(progress),encoding='utf-8')
+    if history:
+        progress += ['','<details>','<summary>修复前历史进度（原文保留，旧数字不作当前状态）</summary>','',
+                     '<!-- PRESERVED-PROGRESS-HISTORY -->',history,'<!-- /PRESERVED-PROGRESS-HISTORY -->','','</details>','']
+    progress_file.write_text('\n'.join(progress),encoding='utf-8')
     readme=root/'README.md'
     if readme.exists():
         t=readme.read_text(encoding='utf-8')
@@ -460,6 +498,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
         h+='当前截断数量读取 `现仍截断题数`；没有锚点仅列格式提醒，不推断题面缺失。\n'
         h+=f"最新重新生成：历史 {stats['historical_truncated_files']} 份 / {stats['historical_truncated_questions']} 道受影响题；现仍 {stats['current_truncated_files']} 份 / {stats['current_truncated_questions']} 道受影响题。\n"
         h+='以前的阶段数字和规则记录是历史，不覆盖当前字段。机器检查通过不等于逐字、逐图、逐答案验真。\n'
+        h+=f"当前另有缺原题 {stats['confirmed_missing_original_questions']} 道、选项未全 {stats['confirmed_missing_option_questions']} 题、共用条件未全 {stats['confirmed_missing_shared_condition_questions']} 题、材料中段缺文 {stats['confirmed_material_gap_segments']} 处；漏收整卷见 [本轮总验收](reports/FULL-REPAIR-20261015.md)。\n"
         h+='有对照题本的卷同时核验 `对照题本题量`、`实有题数` 和 `缺失原题号`；已登记缺号是内容缺陷，不使用压缩连续号隐藏。\n'
         h+='当前证据：[逐卷清单](catalog/manifest.jsonl)、[告警](reports/QUALITY-AUDIT.md)、[历史尾部补全证据](reports/REPAIRS-20261011.jsonl)、[当前专项修复](reports/QUALITY-REPAIR-20261012.md)。\n'
         t=re.sub(r'\n## GitHub 当前质量清单[\s\S]*\Z','',t)
@@ -480,7 +519,7 @@ def main() -> int:
     if args.check:
         manifest=root/'catalog/manifest.jsonl'
         if not manifest.exists():raise RuntimeError('Versioned inventory is missing')
-        saved=[json.loads(s) for s in manifest.read_text(encoding='utf-8').splitlines() if s]
+        saved=[json.loads(s) for s in manifest.read_text(encoding='utf-8').split('\n') if s]
         if saved != rows:raise RuntimeError('Inventory stale or content changed; run --build and review')
     print(json.dumps({'papers':len(rows),'images':stats['unique_referenced_images'],
                       'image_refs':stats['image_references'],'truncated_files':stats['current_truncated_files'],

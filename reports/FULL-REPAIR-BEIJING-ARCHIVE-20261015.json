@@ -1,0 +1,52 @@
+{
+  "archived": [
+    {
+      "path": "省考/北京/2020/申论-统考.md",
+      "destination": "docs/来源校勘/北京2020申论-原统考混卷来源.md",
+      "before_sha256": "87a421044ed70ac0426f1fa2e399652d835ad86aa28bad005ec89a2e451d9889",
+      "after_sha256": "2b97e9909d96e8275adcc01f4cbd21a5bec806f1b74a41633d43777140023a6f"
+    },
+    {
+      "path": "省考/北京/2021/申论-统考.md",
+      "destination": "docs/来源校勘/北京2021申论-原统考混卷来源.md",
+      "before_sha256": "88c13fae6bb2b6e4c7777ec2a16a0ea4e1daab5f034bb6c12ac2e814f6369dc3",
+      "after_sha256": "5680de49c6aef280b6f7a0c045f5e257667126a7900e91d8c6614a72c2b30ad0"
+    },
+    {
+      "path": "省考/北京/2022/申论-统考.md",
+      "destination": "docs/来源校勘/北京2022申论-原统考重复来源.md",
+      "before_sha256": "adfba22278c13adfafd977453d3d8c030b7b3b8c308fc20b1fc4110690dbd293",
+      "after_sha256": "f2a33b96f33c364a6fcf4f3c37f48b05edcad753b671bf120cdd3d66138a1e6c"
+    }
+  ],
+  "canonical_rename": {
+    "old": "省考/北京/2022/申论-区级.md",
+    "new": "省考/北京/2022/申论-统考.md",
+    "before_sha256": "217b700006bb6de3bc52531e4703cd9bd8b859a947edcd667b83d3ba8eb81edf",
+    "after_sha256": "4d34826e1b942cdb478011cd4e4f223f8becd36a3b1dc26f8717f12acac8464b"
+  },
+  "same_2022_question_matches": [
+    {
+      "old": 1,
+      "canonical": 4,
+      "similarity": 1.0
+    },
+    {
+      "old": 2,
+      "canonical": 3,
+      "similarity": 1.0
+    },
+    {
+      "old": 3,
+      "canonical": 2,
+      "similarity": 1.0
+    },
+    {
+      "old": 4,
+      "canonical": 1,
+      "similarity": 1.0
+    }
+  ],
+  "unified_exam_evidence": "https://bj.people.com.cn/n2/2021/1213/c82840-35047589.html",
+  "boundary": "No source text discarded. Canonical filenames reflect actual exam variants; all historical files are recoverable from the outer receipts."
+}

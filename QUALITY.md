@@ -87,10 +87,11 @@
 台账见 `work/qa/PHASEC-SLB-REPAIR-APPLIED.jsonl` 与 `…-APPLIED2.jsonl`（含 `sha_before/after`、
 `ins_at`、`note_len`、`ins_at_final`，可逐条回滚）。
 
-## GitHub 当前质量清单（2026-10-12）
+## GitHub 当前质量清单（2026-10-15）
 
 当前截断数量读取 `现仍截断题数`；没有锚点仅列格式提醒，不推断题面缺失。
-最新重新生成：历史 112 份 / 207 道受影响题；现仍 0 份 / 0 道受影响题。
+最新重新生成：历史 75 份 / 128 道受影响题；现仍 0 份 / 0 道受影响题。
 以前的阶段数字和规则记录是历史，不覆盖当前字段。机器检查通过不等于逐字、逐图、逐答案验真。
+当前另有缺原题 25 道、选项未全 1 题、共用条件未全 5 题、材料中段缺文 2 处；漏收整卷见 [本轮总验收](reports/FULL-REPAIR-20261015.md)。
 有对照题本的卷同时核验 `对照题本题量`、`实有题数` 和 `缺失原题号`；已登记缺号是内容缺陷，不使用压缩连续号隐藏。
 当前证据：[逐卷清单](catalog/manifest.jsonl)、[告警](reports/QUALITY-AUDIT.md)、[历史尾部补全证据](reports/REPAIRS-20261011.jsonl)、[当前专项修复](reports/QUALITY-REPAIR-20261012.md)。

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "国考/2024/行测-副省级.md",
+    "before_sha256": "7363282a466095087bbdd5911d8a34459e1a7330007ee6302adbe2bc65aadf7a",
+    "after_sha256": "7143c421fd65621b7c2c993fb2a571e2235f929fc7546a818fcd67eda3b82507",
+    "reason": "补C项、纠B项转录、按法规与完整题本重核答案C",
+    "sources": [
+      "https://static.32xueyuan.com/zq/u/cms/www/202410/09100412q9dd.pdf",
+      "https://paper.people.com.cn/rmrb/images/2023-02/17/10/rmrb2023021710.pdf"
+    ]
+  },
+  {
+    "path": "省考/西藏/2016/行测-统考.md",
+    "before_sha256": "29d5dddccaa9c9b3fb685db0e61b311526ed02bf61659aa5b8aed24cb2f9054e",
+    "after_sha256": "d6df8c5295bbb640029a4141570ef4dde566f42e133b7034b0550b98538e8a96",
+    "reason": "补回第96题空白A选项，原答案A及解析无需改动",
+    "sources": [
+      "https://www.xingguanggongkao.com/pc/wb/quesView/id/10637.html"
+    ]
+  },
+  {
+    "path": "省考/江苏/2024/行测-C类.md",
+    "before_sha256": "c3f7a43f546a2b309f3da34291f2543e52ad69d5b53a3fb1dbb5f2595b006c2e",
+    "after_sha256": "a508ab06f9477f18dc7822be64ccec013b787bc91c573e3e667ee22c613f6d08",
+    "reason": "撤销缺失选项题的来源默认答案B，保留真实待补状态",
+    "sources": [
+      "https://www.chinagwy.org/files/20241206160947_16977.pdf"
+    ]
+  }
+]

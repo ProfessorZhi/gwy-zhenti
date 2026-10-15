@@ -1,0 +1,19 @@
+{
+  "path": "省考/山东/2023/行测-统考.md",
+  "question": 42,
+  "before_sha256": "ce140b80ff24796822de21e5b76ab324ba8b2f7ea2aa0678506500578937b517",
+  "after_sha256": "5364d2441f948d1a009543f80020767a2f6c76921f7a8b7f6fffac3d24b2a8f1",
+  "restored_options": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "source_url": "https://zhuanlan.zhihu.com/p/642333448",
+  "source_date": "2023-08-27",
+  "source_author": "署名未明确；主页标识jing-ye-si-3000",
+  "source_kind": "公开作者补充选项版本，未取得官方原卷逐字认证",
+  "answer": "B",
+  "original_source_conflict": "金标尺29页PDF第16页A略/B40毫克/C略/D略；原库同样残缺。补充版显式标注版本，不伪装原件。",
+  "old_formula_images_preserved": true
+}

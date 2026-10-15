@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "mixed_path": "省考/上海/2016/申论-统考.md",
+  "maps": [
+    {
+      "old_path": "省考/上海/2016/申论-统考.md",
+      "old_number": 2,
+      "canonical": "省考/上海/2016/申论-A类.md",
+      "canonical_number": 4,
+      "old_question": "阅读给定资料，以“加强市场监管”为主题写一篇文章。（40分）\n要求：全面开展电梯安全⻛险大排查，专项整治“三无”电梯，协调做好老旧电梯更新改造修理工作，加强",
+      "restored_question": "阅读给定资料，以“加强市场监管”为主题写一篇文章。\n\n要求：（1）自选角度，自拟题目；（2）观点明确，联系实际，分析具体，条理清楚，语言流畅；（3）总字数800~1000 字。",
+      "answer_characters": 993,
+      "materials_same_exam": "Old full composition material matches corresponding A/B subject; original current mixed packet retained in preimages."
+    },
+    {
+      "old_path": "省考/上海/2016/申论-统考.md",
+      "old_number": 1,
+      "canonical": "省考/上海/2016/申论-B类.md",
+      "canonical_number": 4,
+      "old_question": "阅读给定资料，以“新形势下如何肩负起历史赋予我们的使命担当”为主题写一篇文章。（40分）\n要求：",
+      "restored_question": "阅读给定资料，以“新形势下如何肩负起历史赋予我们的使命担当”为主题，写一篇文章。（40\n\n分）\n要求：（1）自选角度，自拟题目；（2）观点明确，联系实际，分析具体，条理清楚，语言流畅；（3）总字数800~1000 字。",
+      "answer_characters": 897,
+      "materials_same_exam": "Old full composition material matches corresponding A/B subject; original current mixed packet retained in preimages."
+    }
+  ],
+  "restore_papers": [
+    {
+      "path": "省考/上海/2016/申论-A类.md",
+      "four_questions": true,
+      "main_answers": 4,
+      "composition_characters": 993
+    },
+    {
+      "path": "省考/上海/2016/申论-B类.md",
+      "four_questions": true,
+      "main_answers": 4,
+      "composition_characters": 897
+    }
+  ],
+  "recommendation": "root将2016统考两题混卷完整归档；两道作文分别属于B4、A4，不是第三套独立原卷。"
+}

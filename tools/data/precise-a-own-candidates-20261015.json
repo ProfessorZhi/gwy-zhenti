@@ -1,0 +1,3104 @@
+[
+  {
+    "path": "省考/云南/2022/申论-县乡卷.md",
+    "question_number": 2,
+    "question": "请根据给定资料2，梳理当前K 县农村寄递物流体系存在的问题，并提出相应的改进建议。（25分）\n要求：\n（1）问题梳理全面、准确、有条理；\n（2）所提建议与问题相对应，具体明确、切实可行；\n（3）不超过300 字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300 字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 304,
+    "raw_answer_characters_without_urls": 406,
+    "removed_rules": [
+      "generic_answer_label",
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "6b5a6a2b8afed77c4b7ba151cb1d58583931dc2f450ec98d394206be180da96a",
+    "start_excerpt": "1.问题：取件难。村内无服务站，取件远；老人不懂取件码，难操作。对策：依托村商店建服务站，特殊人群\n\n送件上门；物流末端共配，引进统一分拣系统，提高配送效率。\n\n2.问题：管理差。包裹混运，随意堆放，用户自行翻找，易污损丢失。对策：严格内部管理，货物分类装运，\n\n专人保管分发。\n\n3.问题：多收费。代收点付费取件，快递员取货加收费用。对策：由快递公司支付代收点保管费用，打击乱收费行为。\n\n4.问题：业务少。农村网购少，收件物流少，盈利难",
+    "end_excerpt": "。\n\n3.问题：多收费。代收点付费取件，快递员取货加收费用。对策：由快递公司支付代收点保管费用，打击乱收费行为。\n\n4.问题：业务少。农村网购少，收件物流少，盈利难。对策：加强网购宣传，发展农村电商，使用快递外销农产品。\n\n5.问题：运输难。大件货物运输不便，物流成本高；农产品外运不及时，易变质。对策：企业与客运班车合作\n\n运输快递；开设生鲜农产品运输专线。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文304字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/云南/2022/申论-县乡卷.md",
+    "question_number": 3,
+    "question": "F 县纪委收到举报信后，组织调查组到嘉禾镇调查了解情况。假设你是嘉禾镇政府工作人员，请根据给定资料3，起草一份给调查组的汇报提纲。（25 分）\n要求：\n（1）紧扣资料，内容准确；\n（2）条理清晰，语言流畅；\n（3）不少于500 字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_minimum",
+      "minimum": 500,
+      "confidence": "high",
+      "evidence": "不少于500 字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 474,
+    "raw_answer_characters_without_urls": 670,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "c5e81fcb7c069d7fe986293644d84a24a1d20f2dc7738a13168e79f46c75a919",
+    "start_excerpt": "关于尚贤村村民举报信的调查汇报\n\n尚贤村村民在举报信中提出，该村礼堂球场重修中存在诸多问题。镇政府高度重视，安排工作人员实地走访、\n\n全面调查，但并未发现信中提到的情况。调查情况如下：\n\n一、不存在“村委会擅作决定”的情况。洪水突袭尚贤村后，先是村民们提出重修建议，村委会随后才召开会议研究筹资方案，此后也征求村民意见，并向镇政府做出申请。\n\n二、不存在“好好的礼堂和球场”的情况。洪水过后，礼堂部分房屋倒塌，成为危房，球场塑胶起皮，坑坑洼",
+    "end_excerpt": "求，新增了多种场馆，花费合理。\n\n四、不存在“强制村民捐款”的情况。镇里下拨款项和村集体资金与预算差距大，不足部分发动村民捐款，由于捐款活动前进行了广泛发动，得到了广大村民的积极响应。\n\n五、不存在“不公开重修资金开支项目”。重修前公开立项招投标，由中标单位施工；竣工后村委会第一时间将重修项目的资金筹集和开支情况张贴于公告栏。\n\n以上情况，请调查组研究核实。",
+    "issues": [
+      {
+        "rule": "explicit_minimum_not_met",
+        "confidence": "high",
+        "detail": "正文474字，低于题面明确下限500字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/云南/2022/申论-县乡卷.md",
+    "question_number": 4,
+    "question": "红星镇推进蚕桑产业发展工作入选省乡村振兴局拟印发的乡村振兴典型案例汇编。请根据给定资料4，为红星镇撰写一份案例介绍材料。（30 分）\n要求：\n（1）紧扣资料，内容全面；\n（2）特色鲜明，亮点突出；\n（3）条理清晰，语言流畅；\n（4）不少于800 字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_minimum",
+      "minimum": 800,
+      "confidence": "high",
+      "evidence": "不少于800 字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 590,
+    "raw_answer_characters_without_urls": 682,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "4171345f9b1bd38178ae44bd9acf3431edae3acc5294b0fa0d38856cb1263bf0",
+    "start_excerpt": "红星镇：传统蚕桑“破茧成蝶” 富民兴村奔小康\n\n红星镇围绕桑蚕产业下功夫，带领农户脱贫致富，为助力乡村振兴提供了坚实的产业基础。主要经验有：\n\n一、提升产业规模。通过旧产区“改造”、现产区“挖潜”、潜产区“扩容”等方式，扩大蚕桑种植面积，提升产量；创建高产示范基地，实现就近就业，提高工资收入，集中流转土地，提供入股分红，整合涉农资金，补助农户，稳住种养成本，提高农户积极性。\n\n二、提供技术帮扶。镇里开展培训，邀请专家和技术人员，深入田间",
+    "end_excerpt": "，仅需单人操作，不但大幅提高养蚕效率，还提供恒温恒湿的蚕房环境，突破季节限制，最大程度延长养殖时间，提升存活率和出丝率；引进自动化设备，减少人工成本和劳动强度。\n\n五、推动三产融合。依托自然资源优势，发展农业体验旅游，吸引游客采摘、游玩，推动农旅融合；延长产业链条，开发桑叶面、桑葚酒、桑葚膏等多元衍生农产品；以产品质量吸引客商上门，并由镇里推动农超对接、引入",
+    "issues": [
+      {
+        "rule": "explicit_minimum_not_met",
+        "confidence": "high",
+        "detail": "正文590字，低于题面明确下限800字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/内蒙古/2021/申论-乡镇.md",
+    "question_number": 3,
+    "question": "问题三：根据资料3，请分别谈谈高大妈和老姚的“喜”和“盼”。（10分）\n\n要求：准确、全面、有条理，不超过200字。\n\n<!-- R4 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "参考答案一：",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 207,
+    "raw_answer_characters_without_urls": 355,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "50e99bf87cc5675d0c3133862da26ced63fe77f0fa5233361f63e7ccf0061716",
+    "start_excerpt": "喜：1.村容村貌改善。设施完善，居家环境洁净。2.老有所依所养。定期放映公益电影；子女孝顺，返乡照顾父母。3.文化纪念馆建成。保留风土人情，存放文化记忆。4.经济提升。村民富裕，城乡生活水平无异。\n\n盼：1.开办养老机构。提供日常服务，满足交流需求。2.发展产业。开发旅游业，提高收入。3.完善基础设施。\n\n增设售货点，优化公交站点。4.传承乡风民俗。发挥乡贤作用；复兴并让游客体味桑蚕与农耕文化；改造文化礼堂，\n\n开展活动。",
+    "end_excerpt": "期放映公益电影；子女孝顺，返乡照顾父母。3.文化纪念馆建成。保留风土人情，存放文化记忆。4.经济提升。村民富裕，城乡生活水平无异。\n\n盼：1.开办养老机构。提供日常服务，满足交流需求。2.发展产业。开发旅游业，提高收入。3.完善基础设施。\n\n增设售货点，优化公交站点。4.传承乡风民俗。发挥乡贤作用；复兴并让游客体味桑蚕与农耕文化；改造文化礼堂，\n\n开展活动。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文207字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": true
+  },
+  {
+    "path": "省考/内蒙古/2021/申论-乡镇.md",
+    "question_number": 4,
+    "question": "问题四：假如你是调研组成员，请根据资料4中有效激活闲置农房的做法写一份调研报告提纲。（40分）\n\n要求：紧扣材料，内容全面，层次分明，逻辑清晰，署名或做特殊标记的不得分。字数800-1000字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_range",
+      "minimum": 800,
+      "maximum": 1000,
+      "confidence": "high",
+      "evidence": "800-1000字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 669,
+    "raw_answer_characters_without_urls": 756,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "7c25022b24e4e383e5c322b49b3d45a048bcae9c71f6da6f1512f694bf94d582",
+    "start_excerpt": "关于Z市有效激活闲置农房做法的调研报告提纲\n\n一、调研背景：\n\n随着城镇化进程加快，一些农村出现闲置房屋。2017年以来Z市不少地方着力探索盘活利用闲置农房，发展乡村产业的有效途径和措施，取得良好成效。为此，市发展研究中心组织了调研组进行专题调研。\n\n二、调研方式及对象：\n\n实地考察越红博物馆、越庄酒坊等经营实体以及相关村镇；访问陈副市长、岭北镇吴镇长、唐仁村唐书记等干部，泉江茶业郑董事长、越庄酒坊老孙等经营者，及茶农老周、老虞父子等村",
+    "end_excerpt": "旅游、休闲等三产开发利用。\n\n5.打造闲置农房储备平台。农户和村集体均可登记申报可供利用的闲置房屋，镇里进行预收储存，分门别类进行招商推介，集中资源，高效吸引投资，拓宽村民收入渠道。\n\n四、发展建议：\n\n今后，在开发利用闲置农房的过程中，要找准方向，善加利用，遵循“规划——设计——建设”规范，避免“一窝蜂”开发，突破同质化竞争局限，提升激活行动的质量和实效。",
+    "issues": [
+      {
+        "rule": "explicit_minimum_not_met",
+        "confidence": "high",
+        "detail": "正文669字，低于题面明确下限800字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/吉林/2016/申论-统考.md",
+    "question_number": 1,
+    "question": "参考给定资料，联系实际，以“志之难也，不在胜人，在自胜”为主题，自选⻆度，自拟题目，写一篇议论文。（40\n分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1000,
+    "raw_answer_characters_without_urls": 3542,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "9b1be97b1a1ac3992a9235270bd3c6c2e62b83f342b7e53c56f9979e4fc0c4d8",
+    "start_excerpt": "立鸿鹄之志 从战胜自己开始\n“志之难也，不在胜人，在自胜。”事物发展变化的关键在内因，个人的命运前途关键在自身。要成就事业，实\n现价值，推动社会进步，必须自信、自立、自强。\n树立人生自信，直面人生挑战。相信自己能通过努力把握、改变命运。当今社会一些年轻人面对压力，拒绝、\n退缩、逃避。毛主席说：“数⻛流人物，还看今朝。”我们不可妄自菲薄，要勇于接受挑战，扼住命运的咽喉。今天\n是一个新时代，各种新职业层出不穷，对年轻人来说是一个充满机会的时",
+    "end_excerpt": "是应该坚决摒弃的。个人的成⻓需要提升自身的职业道德，也需要良好的行业⻛气和社会环境。企业要严把质量\n关，行业要制定标准规范。政府要加强监管，理顺机制。多方合力，促进个人成⻓与社会进步的融合。\n作为年轻的一代、希望的一代，只有我们积极进取、不断战胜自己，将个人理想融入社会需求中，才能够成为\n国家的中流砥柱，才能够为实现中华⺠族伟大复兴的梦想提供源源不断的动力！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/吉林/2016/申论-统考.md",
+    "question_number": 2,
+    "question": "从“给定资料”出发，结合实际，以“敬德与立德”为题写一篇议论文。（40分）\n要求：观点明确，内容充实，逻辑严谨，语言流畅；800~1000字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_range",
+      "minimum": 800,
+      "maximum": 1000,
+      "confidence": "high",
+      "evidence": "800~1000字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1126,
+    "raw_answer_characters_without_urls": 3780,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "2259b96cddd340752228829f37712944667d5fcbeb443fc041926e622ad75e4f",
+    "start_excerpt": "敬德与立德\n《尚书》有云：“皇天无亲，惟德是辅。”周人据此提出“敬德”观念，使得“以人为本”的道德精神贯穿了中华悠\n悠五千载历史。古人崇尚“立德、立功、立言”的“三不朽”原则，“立德”亦被放在首位。可⻅，对“德”之敬畏，\n对“立德”之推崇，是中国源远流⻓的传统文化历久弥新的根本所在。\n所谓敬德，是要懂得传统文化，学习道德知识；更要涵养个人素质，秉持个人修养，还要培养助人为乐，牺牲\n奉献的精神。回顾历史，夏商的灭亡告诉我们倒行逆施、违逆德",
+    "end_excerpt": "精神，提升科学素养，了解必要的科学技术知识，掌握基本的科学方法，并且具有一定的应用科学处理实际问\n题、参与公共事务的能力，从而提升公⺠践行道德的知识与能力，展现“崛起大国的公⺠意识”，让世界听到中国的\n声音！\n唯有如此，崇尚品德并践行之，我们才能够在科技日新月异的今天，提升国⺠素养，进而提高国家综合实力，\n共同营造一个让国⺠享有安全感、信任感和自豪感的国家！",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文1126字，超过题面明确上限1000字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/吉林/2019/申论-甲级.md",
+    "question_number": 2,
+    "question": "二、为了解高校智库发展情况，发现和解决问题，B市派出调研组对该市高校和相关部门进行专项调研。假如你是调研组成员，根据给定资料4、5，拟写一份“B市高校智库建设情况调研报告”，供领导参考。（25 分）\n\n要求：\n\n1.不要求写成完整的文章，写出主要内容即可；\n\n2.紧扣资料，要点完整，内容具体，不超过450字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 450,
+      "confidence": "high",
+      "evidence": "不超过450字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 6347,
+    "raw_answer_characters_without_urls": 6496,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "ac7731cf882ffe93e204b07977f69739166492ad338ffab569c411e72ee6fe6f",
+    "start_excerpt": "关于B 市高校智库建设情况的调研报告B 市高校智库建设取得成绩。一、教师积极申报与研究课题，形成特色智库雏形；高校参与智库建设，政校深度合作；政府需求强烈、求智若渴。二、三方配合产生大量理论成果，且专家到地方挂职锻炼，参与经济建设。\n\n但智库发展中也存在问题。一是无固定、畅通沟通渠道，成果落地难；私交合作缺乏长效性，导致人走政息。\n\n二是政府网站数据不共享；高校评价机制较少考虑政策贡献和实践影响力；教师研究成果针对性不强且无法胜任智库型",
+    "end_excerpt": "大问题。\n\n【要点⑮是“保证质量”方面的对策】提升科研成果质量，提高智库成果的实践性和有效性。\n\n【以上对策没有针对问题⑥和⑧的解决方法，可根据问题反推对策，针对要点⑥中的“私交合作缺乏长效性”反推对策，可以归为“搭建平台”这一类别】搭建平台，形成长效合作机制。【针对要点⑧中的“政府网站数据不共享”反推对策，可以归为“组织机制”这一类别】开放、共享数据资源。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文6347字，超过题面明确上限450字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/吉林/2019/申论-甲级.md",
+    "question_number": 3,
+    "question": "三、给定资料5介绍了东北地区“柔性引才”的情况。结合给定资料，谈谈你对“柔性”的理解。（15分）\n\n要求：观点明确，分析合理，条理清晰，不超过300字。\n\n<!-- R5 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 3669,
+    "raw_answer_characters_without_urls": 3818,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "124ed8335dd0e7cac21d6f34d5e3c709a43042a5bb9244d0b6e38a6787979564",
+    "start_excerpt": "“柔性”引才指打破体制等限制，建立开放包容的高端智库人才引进平台。这是科学、合理的举措。\n\n其表现在：一、以业绩和结果为导向。人才引进上以吸引区域外人才；人才服务上理顺人才机制，以健全模式，搭建平台，优化生态，营造吸附效应。二、打破空间和身份限制。跨区域引才，以避免环境变化带来的不便；跨体制引才，以满足人才的多元化需求。三、打破地域和年龄限制。引进沿海人才，加强与人才所在地合作创新；引进多领域“银发”智库人才，以促进教育、医疗等事业发展",
+    "end_excerpt": "制。引进沿海人才，加强与人才所在地合作创新；引进多领域“银发”智库人才，以促进教育、医疗等事业发展。\n\n【要点⑦围绕着“用感情吸引人才”这方面的内容展开】四、用感情吸引人才。聘请谙熟省情、市情、有乡土情结的乡贤名士，以促进本省发展。\n三、总结评价\n\n【要点⑧为“柔性引才”的对策，可放在结尾】柔性引才要结合实际，因地制宜；推行科学机制、稳妥举措；建立合同契约。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文3669字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2018/申论-上半年.md",
+    "question_number": 2,
+    "question": "请根据资料，归纳小童获得“全市十佳科技特派员”荣誉的原因。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "参考答案二",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 0,
+    "raw_answer_characters_without_urls": 0,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "start_excerpt": "",
+    "end_excerpt": "",
+    "issues": [
+      {
+        "rule": "empty_alternate_version_label",
+        "confidence": "manual",
+        "detail": "此处仅有另一个版本标签而无正文，不等于整题缺答案；应核是否是多余空标签"
+      }
+    ],
+    "another_version_without_findings": true
+  },
+  {
+    "path": "省考/四川/2019/申论-统考.md",
+    "question_number": 1,
+    "question": "“给定资料1”中提到“夜间经济成为消费领域的一个新的增⻓点，是城市发展的新引擎”，请根据你的理解，结合给定\n资料，联系社会生活实际，自选⻆度，自拟题目，写一篇议论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 992,
+    "raw_answer_characters_without_urls": 3335,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "cbba2f670fb677f956d0e6202865482b9a75fcc5390036d53e2e6a5592cf49c3",
+    "start_excerpt": "发展夜间新经济，助力城市新发展\n北有北京三里屯，南有成都春熙路，东有上海外滩秀，⻄有⻄安夜古都……每一座城市仿佛都有一张属于自己\n的夜间城市名片，它的名字叫“夜间经济”，是指夜间在城市特定地段发生的各种合法商业经营活动，如餐饮、娱乐\n休闲等。其既能促进消费升级、经济发展，满足⺠众人文需求，更能促进城市管理升级，打造城市品牌，为城市的\n全方位新发展提供强大支撑。\n当下，发展夜间经济，符合消费升级的时代需求，能够直接拉动城市经济发展，推动休",
+    "end_excerpt": "极作为，解决⻝品卫生、噪音扰⺠等问题；\n也需要发挥行业自律与⺠众自治，在平衡好夜间经济利益相关性的基础上谋求所有参与利益主体的最大公约数。\n满足⺠众需求是夜间经济的标配，提升城市管理与品牌形象体现夜间经济的品质，促进城市经济发展是夜间经\n济的主脉。夜间经济的效果不言而喻，其能量更是不可或缺，因此，应大力发展夜间新经济，为城市的新发展添砖\n加瓦，让城市更美好。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2020/申论-统考.md",
+    "question_number": 1,
+    "question": "请结合给定资料，联系社会实际，围绕你对“给定资料7”中划线句的理解，以“你我共建，共享美好生活”为主题，\n自选⻆度，自拟题目，写一篇议论文。（40分）\n要求：每周三下午，区机关党员干部都",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 924,
+    "raw_answer_characters_without_urls": 2942,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3a454d02f835ed09753a64c1ba30951249447089fc33457c9687a875273bcc53",
+    "start_excerpt": "共建和谐社会 共享美好生活\n新时代开启新篇章，也呼唤新担当。当下社会的主要矛盾已经转化成为人⺠日益增⻓的美好生活需要和不平衡\n不充分的发展之间的矛盾，而这一矛盾在社会治理领域就体现在过去政府“大包大揽”“干部干，群众看”，群众没有\n参与的积极性，久而久之，产生依赖心理，让干部疲于奔命，反而得不到群众的认可。在“共享”理念的指引下，如\n何与时俱进地让市⺠参与城市的建设、管理和治理，共建共治共享美好生活，成为摆在我们面前的新命题。\n社会治理",
+    "end_excerpt": "生活的便利；还传递着正能量，扶老人过⻢路、勇救落水者……平凡的他们，为城市的有序发展增添了一\n抹亮色，鼓励他们参与社会治理，不仅能让他们更好地融入城市，于万家灯火中增强归属感，更能为社会的和谐有\n序注入强大的动力。\n完善党委领导、公众参与的社会治理体系，建设人人有责、人人尽责、人人享有的社会治理共同体……共建共\n治共享美好生活，我们每个人都是⻅证者、奉献者。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2021/申论-统考.md",
+    "question_number": 1,
+    "question": "请根据对“给定资料4”中划线句子的理解，联合实际，自选⻆度，自拟题目，写一篇议论文。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 933,
+    "raw_answer_characters_without_urls": 3173,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "32b53ee65a3c6c40f54e1a6356d838c981d096d3597318c37cfbec5de297ab18",
+    "start_excerpt": "特色小镇的守正与创新\n特色小镇是连接城市与乡村、承载乡愁与希望的重要节点。然而，实践中，一些小镇或陷入“千镇一面”的同质\n化泥潭，或沦为“圈地造城”的房地产项目，迅速归于沉寂。特色小镇的生命力，源于对“守正”与“创新”这对辩证关\n系的把握，唯有守“小而精”之正，出“有特色”之新，让守正与创新双翼共振，方能⻜得高、⻜得远。\n特色小镇要坚守“小而精”之正，摒弃贪大求全的思维，聚焦本土资源禀赋，因地制宜发展特色产业，回归乡土\n本色。浙江乌镇是",
+    "end_excerpt": "枝”，既要精心\n守护乡愁的底蕴，更要大胆运用科技、业态与美学的创新，去激活、演绎并放大其独特的文化基因与自然禀赋。唯\n有如此，特色小镇才能超越静态的⻛景，成⻓为一座既承载乡愁、又涌动生机的活态家园，在时代的激流中真正行\n稳致远。\n特色小镇的发展，当以“小而精”为本真之“锚”，以“有特色”为活力之“帆”。如此，方能在这片千帆竞发的浪潮\n中，笃定方向，满帆远航。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2021/申论-统考.md",
+    "question_number": 2,
+    "question": "“给定资料4”中提到“我一生只做了一件事，就是做了一粒小小的糖丸”。请你深入思考这句话，结合“给定资料1-\n4”，联系实际，自选⻆度，自拟题目，写一篇议论文。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 905,
+    "raw_answer_characters_without_urls": 3135,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "f068104caa4f349f0d6b65337f01c29e1854ba01f1833ef4054ee8c0a8769723",
+    "start_excerpt": "坚守一生 服务人⺠\n“敦煌女儿”樊锦诗说：“我的一生只做了一件事，就是守护和研究敦煌莫高窟。”于人生之途，一生只做一件\n事，是“虽九死其犹未悔”般对信念的坚守执着，是“蜡炬成灰泪始干”般默默付出的谦逊奉献，亦是“吾将上下而求\n索”般不断突破的探索创新。这般精神，激励着无数人以专注与热忱，书写不凡人生篇章。\n一生只做一件事，体现的是“大雪压⻘松，⻘松挺且直”的务实精神与执着坚守。事业的成功不是一蹴而就的，\n也不会从天而降，只有脚踏实地、兢",
+    "end_excerpt": "糖丸”。谦虚的语言所透露的就是他“先天下之忧而忧，后天下之乐而乐”的胸怀与格局。当研究步入人体实验阶段，\n他不惜冒着巨大的危险，用自己和自己的孩子做临床活体实验，最终取得成功。他的举动是对“苟利国家生死以，岂\n因祸福避趋之”的最高诠释。\n板凳要坐十年冷，磨剑数载方始成。一生只做一件事，凭着最纯粹的心灵和最执着的热爱，默默耕耘，披荆斩\n棘，造福人⺠，改变世界。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2021/申论-统考.md",
+    "question_number": 3,
+    "question": "“给定资料5”中提到“跨界亦是无界”。请你根据对这句话的理解，结合“给定资料1~5”，联系实际，自选⻆度，自\n拟题目，写一篇议论文。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 929,
+    "raw_answer_characters_without_urls": 2899,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "db02f92d34d4192673a7f1ade658888d0a2805d0fe9308bad5281223e9741289",
+    "start_excerpt": "行有界 跨非凡\n从演员任泉跨界经商，到中华老字号⻢应⻰跨界卖口红……跨界的例子不胜枚举。跨界，是用新的连接来完成\n自身的跃迁，跨出舒适区，界定新状态，赋予跨界者无限可能。跨界先有界，意味着受“界限”内资源与规律的影\n响；跨界终无界，就是要突破现状，发掘未来的可能；跨界重在跨，要有智慧、懂方法、肯坚持。跨界，是思维的\n升华、资源的整合，是从有界跨到无界，是从不变跨到变。行有界限，敢于跨越才能造就非凡。\n以“无界”的思维带动“有界”的创新变",
+    "end_excerpt": "法、实践的坚守。智慧是要善\n于发现事物间内在联系，善于在不断变化的环境中主动调整，守正创新；方法是寻找到切入点把不同的资源有机整\n合起来，实现裂变的功效；坚守是要有脚踏实地、务实的精神，短暂的跨界不会真正成功，深耕才有收获。\n跨界是生命的奔腾，是扬弃旧我，追求内心渴望的体现。现实世界有规律，但没剧本，愿我们都能够放⻜梦\n想，书写精彩。行——有界，跨——非凡。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2023/申论-省市.md",
+    "question_number": 1,
+    "question": "问题一：请根据“给定资料1”，归纳概括A省推进农业高质量发展的举措。（15分）\n\n要求：全面准确，条理清晰，语言简洁；不超过200字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 201,
+    "raw_answer_characters_without_urls": 345,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "d8470b9d536c0712e4fcb2cb0d492d11f2b4022969a4484d265c6d1850738a15",
+    "start_excerpt": "1.打造棉花全产业链发展集群。建设高标准农田和加工厂，机械化作业，规模化经营，标准化生产。\n\n2.机械化种植小麦。北斗导航无人驾驶机播种，配套滴灌带，方便管理采收。\n\n3.布局葡萄酒产业。整合产业链上下游，标准化栽培，研发系列产品，拓宽销售渠道；发展酒庄旅游。\n\n4.健全骆驼产业链。强化科技支撑，发展精深加工，开发多元品类；打造文旅康养一体小镇。\n\n5.改革水资源管理体制。深入灌区服务，保障灌区需求，科学利用洪水。",
+    "end_excerpt": "化作业，规模化经营，标准化生产。\n\n2.机械化种植小麦。北斗导航无人驾驶机播种，配套滴灌带，方便管理采收。\n\n3.布局葡萄酒产业。整合产业链上下游，标准化栽培，研发系列产品，拓宽销售渠道；发展酒庄旅游。\n\n4.健全骆驼产业链。强化科技支撑，发展精深加工，开发多元品类；打造文旅康养一体小镇。\n\n5.改革水资源管理体制。深入灌区服务，保障灌区需求，科学利用洪水。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文201字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2024/申论-统考.md",
+    "question_number": 7,
+    "question": "给定资料4中提到“法治建设既要抓末端、治已病，更要抓前端、治未病”，请结合对这句话的理解，联系实际，自拟\n题目，写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 971,
+    "raw_answer_characters_without_urls": 3328,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "5c1c7993aaabe0f8e34b308777f574432f4af8dd96a1540729b6e1c062371bb9",
+    "start_excerpt": "法治固本防未病，前瞻布局筑安宁\n古人云：“上医治未病，中医治欲病，下医治已病。”不仅揭示了医疗之道的精髓，更为法治建设提供了深刻的\n启示。法治，作为社会和谐的基石，既要严惩违法行为，即“治已病”，更要注重预防与疏导，即“治未病”。两者相\n辅相成，共同构筑起法治的坚固防线。\n“治已病”，是对违法行为的严厉惩治，是法治威严的体现。它如同法治之剑，锋芒毕露，对违法犯罪行为形成\n强大的震慑力。然而，仅凭“治已病”难以根治复杂多变的社会问题，甚至",
+    "end_excerpt": "助全方位、数字化的手段，更好地提升“治未病”的效果。部分地方通\n过建立执法基础信息管控平台，灵活运用无人机等现代科技工具，对违法行为进行监控、早期预警与精准干预，将\n问题解决于萌芽之时。这种“治未病”式的执法方式，为法治社会建设注入新的活力。\n法治建设“治已病”与“治未病”的结合，构建了一个公正、和谐、有序的社会环境，让法治的阳光普照大地，照\n亮前行的道路。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2024/申论-统考.md",
+    "question_number": 8,
+    "question": "“给定资料4”中提到：“我们的乡村，要知道从何处来，更要明白往何处去。”请你对这句话进行深入思考，参考给\n定资料，联系实际，自选⻆度，自拟题目，撰写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 981,
+    "raw_answer_characters_without_urls": 3102,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "f3538cd28c1db06044f4843c6e491ee055100e2b4b645750923908a03c86c36d",
+    "start_excerpt": "回顾过去、面向未来，方能实现乡村发展\n“知所从来，方明所往”，这句话指的是历史是一盏明灯，照亮我们前行的道路，启示我们要学习借鉴历史，从\n而可以继往开来、砥砺前行。乡村的发展亦是如此，我们必须要“读懂过去”，了解乡村历史，知道乡村是谁。除此\n之外，我们也要在此基础上“探索未来”及“立足当下”，明确乡村未来的发展目标与方向，顺应时代、谋取发展，如\n此，才能让群众过上更美好的生活。\n乡村要知道从何处来，就要打造村史馆，展示乡村的历史文化，⻅",
+    "end_excerpt": "运用到农业中，提\n高机械化水平；也可以将其运用到乡村治理中，打造数字乡村智能平台，优化乡村公共服务，提高精细化治理水\n平。\n回顾过去，我们可知乡村一路以来的变迁之路；探索未来，我们需知高质量发展、全方位发展的乡村振兴才是\n目标与方向；立足当下，我们应不懈奋斗，抓住新时代的机会发展乡村。只有如此，才能让村⺠过上美好的生活，\n才能实现农业的现代化、乡村的现代化！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2025/申论-统考.md",
+    "question_number": 8,
+    "question": "“给定资料4”中提到“优势”“顺势”“借势”，请你结合对“势”的理解，参考给定资料，联系实际，自选⻆度，自拟题\n目，撰写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 907,
+    "raw_answer_characters_without_urls": 2937,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "ab3fb667e781fae723c82c4e52679d90f7769d678d1be1d81c5d9bcc9e4a4d55",
+    "start_excerpt": "善用“势”力，赋能产业\n“激水之疾，至于漂石者，势也。”在当下产业发展的澎湃浪潮里，“势”是推动产业革新、塑造竞争格局的关键\n力量。敏锐洞察产业之势，巧妙借助优势，顺势谋篇布局，借势跨越腾⻜，是企业实现产业蓬勃发展的关键所在。\n巧用优势推动产业发展，需立足自身优势，充分发挥资源作用，厚植发展根基。“梅须逊雪三分白，雪却输梅一\n段香。”世间万物皆有其独特优势。贵州凭借丰富的自然景观与多彩的⺠族文化，大力发展旅游业，⻩果树瀑布的雄\n伟壮观、",
+    "end_excerpt": "的东⻛，与华东师范大学等多方合作，研发先进检测技术，从众多企业\n中脱颖而出，成⻓为全球知名的平板显示触控检测设备厂商和半导体检测设备提供商。故而，善借外势者，便如鲲\n鹏乘⻛，扶摇直上九万里，终能在时代浪潮中踏浪前行。\n在产业发展的赛道上，巧用优势是立身之本，顺势而为是前行之策，借势而进是加速之道。三者融会贯通，便\n可在复杂的产业格局中披荆斩棘，铸就非凡华章！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2025/申论-统考.md",
+    "question_number": 9,
+    "question": "“给定资料4”中的划线句子提到“中国法治的根基在人⺠，只有让法治在广大人⺠的心中落地生根，才能实现全面依\n法治国”。请你深入思考这句话，参考“给定资料4”，联系实际，自选⻆度，自拟题目，撰写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 934,
+    "raw_answer_characters_without_urls": 2986,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "06d8a69f6133265b6c371c0e7eab265dc43ad9e84ac81d76386fed4e3fe635d2",
+    "start_excerpt": "法治如树，⺠心为根\n纵观人类法治史，从《汉谟拉比法典》的石柱到英国《大宪章》的法治雏形再到《中华人⺠共和国宪法》的宣\n誓，法治从君权走向⺠权，从野蛮报复转向程序正义，赢得人⺠的真心拥护。今天的法治建设，要回答好“如何让14\n亿人⺠信仰法治”这一时代命题，实现“法治中国”的宏伟蓝图。\n让法治深入人心，要建强法治工作队伍，推动法律服务下沉，让法治信仰扎根基层。法治工作队伍是法治建设\n的主力军，其专业素养与职业操守决定着法治化水平。法律明白人",
+    "end_excerpt": "律，变“口头执法”“随意执法”为“依法执法”“规范执\n法”，要用现代的法治理念解决人⺠群众面临的各类难题，更要让人⺠群众在解纠止纷过程中感受到法律的规范、严\n谨、公平，潜移默化中引导群众在今后的生活工作中自觉守法、用法。\n古语所云：“法者，国之权衡也。”只有当法治精神真正融入百姓的日常生活，成为人们自觉遵守的行为准则，\n全面依法治国的目标才能从蓝图变为现实。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2025/申论-统考.md",
+    "question_number": 10,
+    "question": "请参考给定资料1-4，围绕“以‘通路’谋同路”这一话题，联系实际，自选⻆度，自拟题目，撰写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 904,
+    "raw_answer_characters_without_urls": 3325,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "05352137e6748893a5105989b48bc752ad38b7adaad38d5d453705c484f8a3f2",
+    "start_excerpt": "畅互联互通之路，谋共同发展之路\n中医理论中，“通”是非常重要的概念，常有经脉通，解百病之说，生活中也常言畅通无阻，快乐前行。从而可\n⻅，谋发展需畅通同进之途，努力打通堵点，畅通软硬联通，实现人才与乡村、人与文化、产业与科技以及不同区\n域之间的互通互达，高质量发展。\n搭建人才和乡村互通的道路，让人才有舞台，乡村添活力。乡村振兴的关键在于人才振兴，需聚天下人才而用\n之，打通人才流向乡村的道路，吸引优秀人才返乡共创大业。当下，各地乡村努力在事",
+    "end_excerpt": "推进产业协同发展，后有重庆和⻄南医科大学共享医疗技术，更有川渝高铁等基建开通，助推“中国制造”跨越山海，链接世界。区域协调是\n破题之策和乘胜之举，在壮阔山河之间，让我们把这篇协调发展的大文章写得更好。\n前行的道路依然充满泥泞。回顾过去，我们曾经面对很多看似难以克服的问题，但发展本身正是一个不断解决\n阻碍的过程。相信打开通路，互通有无，必将蹄疾步稳、充满活力。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/四川/2026/申论-统考.md",
+    "question_number": 4,
+    "question": "“给定资料4”中提到“静候⻛至不如勇造⻛口，‘无中生有’才会样样都有”。请你对此进行深入思考，参考给定资料，\n联系实际，自选⻆度，自拟题目，撰写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 922,
+    "raw_answer_characters_without_urls": 3353,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "91a454e95159b3d5ae85235cfbe74486f3b8c2387303b1ed950a93f0cd102118",
+    "start_excerpt": "勇造⻛口 “无”中生“有”\n习近平总书记所言“无中生有才会样样都有”，道出了突破发展瓶颈、实现提质跃升的核心密码。无论是县域发\n展、基层治理，还是产业转型，亦或是其他领域，表面的资源匮乏、条件不足从来不是绝境，若能以创新思维探寻\n新路径，激活潜在价值扬⻓补短，守住战略定力持续深耕，就能实现“无中生有”的破局与跃升。\n“无中生有”的先决条件，需要具备敏锐的洞察力与丰富的创造力，善于跳出思维局限，以敢闯敢创抢抓发展机\n遇，创造新的可能性。濮",
+    "end_excerpt": "、无人看好之时毅然入局，之后始终坚守新能源赛道，专注于核心技术研发，哪\n怕在行业低迷期也从未动摇，最终从“有”向“优”，跻身行业前列。在“有”的基础上持续精进、追求卓越，方能将先\n发优势淬炼为持久的核心竞争力。\n新征程上，唯有以洞察先机之慧眼创造可能，以整合资源之智慧激活潜力，以深耕实干之定力淬炼品质，方能\n在主动创造中赢得未来，于“无中生有”处成就新辉煌。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/宁夏/2024/申论-C类.md",
+    "question_number": 1,
+    "question": "问题一：请根据“给定资料1”，谈谈J省工业园区限值限量管理是如何推行的。（25分）\n\n要求：\n　　（1）全面、准确，有条理；\n　　（2）不超过200字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 349,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "78e8d074bf7acf965119251b7833a12b044eee6164b3a67222b1f5daef225cbb",
+    "start_excerpt": "1.布局监测监控网络。建设水质自动监测站、空气标准站、空气微站、VOCs 站、恶臭站等大气、水环境监测站点；安装在线监控设施，推进“应联尽联”智慧化管理。\n\n2.实行自动监测。基于在线监控数据，自动测算废水废气等排放量；基于园区标准空气站及微站数据，动态模拟测算大气污染物排放量。\n\n3.多部门协同治理。优化培训指导、约束激励等工作机制，用好总量储备、管理、使用等配套措施，优化环评审批服务，激发园区及经营主体能动性。",
+    "end_excerpt": "微站、VOCs 站、恶臭站等大气、水环境监测站点；安装在线监控设施，推进“应联尽联”智慧化管理。\n\n2.实行自动监测。基于在线监控数据，自动测算废水废气等排放量；基于园区标准空气站及微站数据，动态模拟测算大气污染物排放量。\n\n3.多部门协同治理。优化培训指导、约束激励等工作机制，用好总量储备、管理、使用等配套措施，优化环评审批服务，激发园区及经营主体能动性。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2016/申论-B类.md",
+    "question_number": 1,
+    "question": "XX大学网页“创业指导”专栏拟刊发一篇题为《大学生如何提高创业成功率》的文章，向X市就业指导中心发了约稿函。假定你是该就业指导中心的撰稿人，请根据给定资料并联系“创业成功是一个小概率事件”这句话，写作这篇500字左右的稿件。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "approximate_target",
+      "target": 500,
+      "review_minimum": 450,
+      "review_maximum": 560,
+      "confidence": "medium",
+      "evidence": "500字左右"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 426,
+    "raw_answer_characters_without_urls": 572,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "94a97d6144bd09d59658e2b62a0bd8fd8846929ea0f7e28dfdf2175fd88e40f3",
+    "start_excerpt": "大学生如何提高创业成功率\n\n国家大力倡导“大众创业，万众创新”，为大学生创业营造了良好的氛围。大学生创业项目越来越受重视和青睐，但失败率却居高不下。究其原因，主要有：准备不足、动机不纯、创新不足、制度不完善等原因。创业成功是一个小概率的事件，现就“大学生如何提高创业成功率”提出以下几点建议：\n\n要积累专业知识和经验。落实创业设想和方案；使创业项目知识储备、资金来源、产品销售等环节具体化、可操作化；不断积累资金、人脉、经验等相关创业资源。",
+    "end_excerpt": "需求、创造社会价值；\n\n积极参与大众创新，改善物质条件，创造“美好生活”。\n\n谨慎选择创业项目。项目选择不能异想天开，简单复制，要从现实需要出发，选择创新型、技术型的项目；熟悉市场环境，了解行业壁垒和门槛。\n\n提升市场竞争力。寻求相关部门保护原创知识产权，谨防被抄袭。\n\n塑造成熟的创业者心态和素质。保持平和的创业心态，脚踏实地，不断总结和积累经验，越挫越勇。",
+    "issues": [
+      {
+        "rule": "approximate_target_short",
+        "confidence": "medium",
+        "detail": "正文426字，少于约500字目标的90%；这是候选阈值，不是假定官方最低分界"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2019/申论-A类.md",
+    "question_number": 3,
+    "question": "问题三：请结合“给定资料6”，假定你是某高校团委负责人，请给学校党委写一份“加大信用教育力度”的建议书（25分）\n\n要求：\n\n（1）紧扣资料，针对性强；\n\n（2）层次分明，逻辑性强；\n\n（3）格式规范，文体性强；\n\n（4）500字左右。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "approximate_target",
+      "target": 500,
+      "review_minimum": 450,
+      "review_maximum": 560,
+      "confidence": "medium",
+      "evidence": "500字左右"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 410,
+    "raw_answer_characters_without_urls": 484,
+    "removed_rules": [
+      "generic_answer_label",
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "53f01251cbda6f2ab3e8248645a7b209bac009a115ae0e5b06ec101202eb79f8",
+    "start_excerpt": "**关于加大信用教育力度的建议书**\n\nXX 党委：当前部分学生信用安全知识匮乏，信用安全意识、法律意识薄弱，出现兼职刷单、信用卡违规套现，甚至被金融欺诈的情况。普及常识教育，建立信用约束机制和监管制度，既能帮学生树立科学消费观，也能推动信用意识升级和诚信体系的建设。\n\n为此，我校可积极响应由团中央、教育部、银监会等部门联合发起的“金融安全专家校园行”活动，邀请金融安全专家，举办讲座、路演等活动，来防范校园金融欺诈，培养法制意识和契约精",
+    "end_excerpt": "性活动，调动学生参加活动积极性，使学生了解个人信用报告和信用安全的重要性。\n\n二、传递信用安全知识，提高信用管理能力。引导尽早建立个人信用档案；选择优质、正规平台，保证财务和信息安全；保护个人信用，防范各类信用诈骗。\n\n三、遵守信用法律规则。\n\n普及金融、法律知识，拒绝不良网贷，杜绝过度借贷。\n\n以上建议请审阅。\n\n团委XXX\n\nXXXX 年XX 月XX 日",
+    "issues": [
+      {
+        "rule": "approximate_target_short",
+        "confidence": "medium",
+        "detail": "正文410字，少于约500字目标的90%；这是候选阈值，不是假定官方最低分界"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2022/申论-A类.md",
+    "question_number": 3,
+    "question": "问题三：根据给定资料3，就S市开办社区食堂的情况拟写一份工作简报。（25分）\n\n要求：（1）紧扣资料，内容完整；（2）条理清晰，语言准确；（3）不少于500字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_minimum",
+      "minimum": 500,
+      "confidence": "high",
+      "evidence": "不少于500字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 471,
+    "raw_answer_characters_without_urls": 548,
+    "removed_rules": [
+      "generic_answer_label",
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "a1ebbee8cded86518eac3e6a415199dcf41522d94c6243ffcf9fe15b3c11ea0e",
+    "start_excerpt": "**关于开办社区食堂的工作简报**\n\n近年来，我市不少居民小区为改善民生，开始建设社区食堂。这些社区食堂价格实惠、用餐便利，有效解决了附近居民的就餐问题。其中先进典型情况如下：\n一、松北社区食堂：由民众开办，用心经营。根据居民饮食习惯确定菜品，延长供应时段，覆盖三餐及夜宵；采购精打细算，降低成本。\n\n二、睦邻小食堂：由社区物业开办，开展数字化运营，延伸服务项目。引进智能设备，降低人力成本，配备工作人员加强日常检查，配合数字管理系统，实时",
+    "end_excerpt": "民受益；与附近企业合作，提供定制团餐、送餐上门等服务，扩大客流，降低各环节成本。\n\n四、龙湖新村助老食堂：多方力量参与建设运营。政府部门出资建设，公益组织承接日常运营；政府考核合格后提供经营补贴，缓解经营困难，维持公益性质。\n\n社区食堂不是单纯盈利的商业机构，带有一定的社会福利性质，今后既要走市场化道路，提升自身造血能力，也要政府的政策扶持来补血，方能长久。",
+    "issues": [
+      {
+        "rule": "explicit_minimum_not_met",
+        "confidence": "high",
+        "detail": "正文471字，低于题面明确下限500字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2023/申论-C类.md",
+    "question_number": 4,
+    "question": "问题四：阳春县农村黑臭水体治理工作入选全省生态环境治理典型案例汇编。请根据“给定资料4”，为阳春县拟写一份案例介绍材料。（35分）\n\n要求：\n\n（1）紧扣资料，内容全面；\n\n（2）特色鲜明，亮点突出；\n\n（3）条理清晰，语言流畅；\n\n（4）不少于800字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_minimum",
+      "minimum": 800,
+      "confidence": "high",
+      "evidence": "不少于800字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 719,
+    "raw_answer_characters_without_urls": 862,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "1737fc674d74d270291afc89da0a3b43d34c4e27298c03649f84f90488e5be05",
+    "start_excerpt": "关于阳春县农村黑臭水体治理工作的介绍材料我县农村黑臭水体治理工作入选全省生态环境治理典型案例汇编，现将治理情况介绍如下：\n一、成立专门组织，摸排分析原因。\n\n县委、县政府成立了农村污水治理工作领导小组，对全县黑臭水体排查摸底。先由乡（镇）村（社区）初步排查，后组织工作人员二次实地摸排，利用无人机技术地毯式巡查人工无法踏勘区域；请专家到难以直接判断的坑池现场做水体溶解氧、氧化还原电位监测。排查后，邀请专家召开讨论会，分析黑臭水体成因，结合",
+    "end_excerpt": "提升村民文明程度，切断黑臭水体根源。将黑臭水体治理要求纳入村规民约，挨家挨户进行环保知识宣传，积极引导村民改变不良习惯；“村两委”带动，村民们自发轮流承担农村黑臭水体治理后的日常管护工作，主动认识到生态价值。\n\n从“黑脏臭”到“清净美”，我县对农村黑臭水体的治理，实现了环境优美、人居和谐的美好局面，也收获了老百姓的好口碑，让美不胜收的美丽乡村新画卷徐徐展开。",
+    "issues": [
+      {
+        "rule": "explicit_minimum_not_met",
+        "confidence": "high",
+        "detail": "正文719字，低于题面明确下限800字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2023/申论-乡镇卷.md",
+    "question_number": 4,
+    "question": "“给定资料4”中提到：“做好‘土特’文章，在‘小’土地上种出‘大’收益，让特色产业成为乡村振兴的新动能。”请深入\n理解这句话，联系实际，自选⻆度，自拟题目，写一篇文章。（35分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1050,
+    "raw_answer_characters_without_urls": 3426,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "950e846e47699d7d1283c416260f0d6216e14301a15d4393fd77cb5e62338083",
+    "start_excerpt": "小土地，大收益\n来自乡野田间的“土特产”，蕴藏着无限的发展前景。无论是巩固脱贫攻坚成果，还是推进乡村振兴战略，产业\n发展都是“根与魂”。为此，要牢牢抓住土特产这个“牛鼻子”，充分发挥土特产独有的优势和特点，在“小”土地上种\n出“大”收益，让越来越多的土特产走出村寨、跨越山海、融入市场，绘就乡村振兴新图景。\n因地制宜，用好乡村土资源。要深挖本土资源的潜力，培育特色产业，将资源优势充分转化为经济优势，促进\n乡村经济多元化发展。一方水土孕育一",
+    "end_excerpt": "多资金、技术、人才向乡村汇聚，再次激活了乡村活力，也架起了家乡与外界的桥梁，把先进的思想带回来，把优\n质的土特产带出去，他们成了农村高质量发展的“领跑人”。\n产业兴则农村兴，农村兴则国家旺。“土特产”三字大文章是产业振兴的重头戏，写就这篇文章就要下足“土”功\n夫，依靠科技与人才，让小小“土特产”种出“大收益”，结出“金果果”，带动农⺠致富增收，助力乡村振兴。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2024/申论-A类.md",
+    "question_number": 1,
+    "question": "问题一：请根据“给定资料1”，概括F市开展城市绿化工作的主要做法。（15分）\n\n要求：\n　　（1）准确全面；\n　　（2）分条列出；\n　　（3）不超过200字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 203,
+    "raw_answer_characters_without_urls": 422,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "4100b82c13c036e59921837e27752f862ab9e134c10cddce247400b9dab5dc03",
+    "start_excerpt": "1.民主决策树种。多渠道征求民意，调研论证、因地制宜，尊重自然规律，在不同街区种植不同乡土树木。\n\n2.科学绿化管护。探索本地化的养护办法，实行精细化管理；运用科技进行数据监测和观察分析，采取针对性修复措施。\n\n3.保护利用古树。开展调查登记，建立后备资源库，挂牌管理；建立智慧云平台，全程跟踪管理；利用古树资源，打造公园绿地等。\n\n4.建设口袋公园。精准化利用土地资源，集休闲、科普等功能于一体，满足市民多样化需求。",
+    "end_excerpt": "自然规律，在不同街区种植不同乡土树木。\n\n2.科学绿化管护。探索本地化的养护办法，实行精细化管理；运用科技进行数据监测和观察分析，采取针对性修复措施。\n\n3.保护利用古树。开展调查登记，建立后备资源库，挂牌管理；建立智慧云平台，全程跟踪管理；利用古树资源，打造公园绿地等。\n\n4.建设口袋公园。精准化利用土地资源，集休闲、科普等功能于一体，满足市民多样化需求。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文203字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2024/申论-A类.md",
+    "question_number": 3,
+    "question": "问题三：假设你是W市农业农村局的工作人员，请根据“给定资料4”，拟写一篇W市发展庭院经济的调研报告提纲。（25分）\n\n要求：\n　　（1）紧扣资料，内容全面；\n　　（2）条理清晰，结构完整；\n　　（3）500字左右。\n\n<!-- R5 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "approximate_target",
+      "target": 500,
+      "review_minimum": 450,
+      "review_maximum": 560,
+      "confidence": "medium",
+      "evidence": "500字左右"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 432,
+    "raw_answer_characters_without_urls": 577,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "859a19b7d8bd3ef9df5c4d61e8d9dfbbf0352d9299eeb0e3c551981916c8689f",
+    "start_excerpt": "W 市发展庭院经济的调研报告提纲调研背景：为评估庭院经济发展情况，助力乡村振兴，我市特此开展调研工作。\n\n调研方式及对象：走访村庄，访谈村民和村干部。\n\n调研内容：一、发展经验：1.因地制宜重新装修庭院，依托自然环境，发展农家乐等旅游产业，增加经营性收入。2.依托人才，发展加工产业，借助网络对接市场，开设网店，与带货主播合作，增加销量，带动就业，辐射周边。3.成立产业合作社，专人负责采购推广，统一生产标准，市场化发展。\n二、当前问题：1",
+    "end_excerpt": "乏经营经验，资金有限，抗风险能力弱。4.发展思路不统一。\n\n结论建议：1.鼓励农户间加强合作，共享资源，招募培训服务人员，提升服务能力。2.引导经营者调研学习，积极了解市场前沿信息，引进专业人才，提供专业指导。3.政府搭建平台，提供企业经营指导培训，督促金融机构，提供普惠性金融产品。4.针对分歧，引导群众充分讨论协商，打造利益共同体，兼顾经济发展与环境保护。",
+    "issues": [
+      {
+        "rule": "approximate_target_short",
+        "confidence": "medium",
+        "detail": "正文432字，少于约500字目标的90%；这是候选阈值，不是假定官方最低分界"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2024/申论-B类.md",
+    "question_number": 1,
+    "question": "问题一：请根据给定资料1，概括A县探索“医养一体、两院融合”的主要举措。（15分）\n\n要求：（1）全面准确；（2）分条列出；（3）不超过200字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 203,
+    "raw_answer_characters_without_urls": 348,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3fc9147c74214d7c98ed06dc7a01d94d1b8cae60695a36cd85bb2febf2d807c7",
+    "start_excerpt": "1.医中有养。各级医疗机构增加老年医学科，增设养老服务；村养老院与卫生室重建在一起，直接提供医疗服务。\n\n2.养中有医。养老机构设置卫生室和护理站，派驻医护人员，提供医疗服务；政府给与补贴，开展医养技能培训；定期聘请专家会诊。\n\n3.居家有约。签约家庭医生，针对性提供“一键呼叫”、家庭病床服务，定期上门服务。\n\n4.失能有保。设置长期护理保险，医院开设医护专区，提供专业看护，报销比例高；完善五方共担的资金筹措机制。",
+    "end_excerpt": "养老院与卫生室重建在一起，直接提供医疗服务。\n\n2.养中有医。养老机构设置卫生室和护理站，派驻医护人员，提供医疗服务；政府给与补贴，开展医养技能培训；定期聘请专家会诊。\n\n3.居家有约。签约家庭医生，针对性提供“一键呼叫”、家庭病床服务，定期上门服务。\n\n4.失能有保。设置长期护理保险，医院开设医护专区，提供专业看护，报销比例高；完善五方共担的资金筹措机制。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文203字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2024/申论-B类.md",
+    "question_number": 2,
+    "question": "问题二：根据给定资料2，请针对兴旺区老旧小区改造存在的主要问题提出解决建议。（20分）\n\n要求：（1）问题梳理准确、有条理；（2）所提建议与问题相对应，具体明确、切实可行；（3）不超过350字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 350,
+      "confidence": "high",
+      "evidence": "不超过350字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 351,
+    "raw_answer_characters_without_urls": 496,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "80a20570a316a8b0d3f5891b2f576b9edda46d1e8bd1c01423d3e0aa10f595a2",
+    "start_excerpt": "1.问题：物业公司收费难、不盈利，服务质量差。对策：强化物业管理，提高居民对物业服务价值的认可，引导居民配合缴费，政府部门加强监管，督促物业公司提高服务水平。\n\n2.问题：公共维修资金缺口大，公共区域维护难。对策：完善政策规定，修改完善《物业管理条例》，针对老旧小区物业管理出台政策，填补维修基金缺口。\n\n3.问题：忽视居民诉求，强制拆除防护网。对策：重视居民意愿，搭建居民沟通议事平台，及时反馈居民诉求，安装隐形防护网，避免安全隐患。\n\n",
+    "end_excerpt": "民意愿，搭建居民沟通议事平台，及时反馈居民诉求，安装隐形防护网，避免安全隐患。\n\n4.问题：资金来源单一，投入缺少机制保障，改造不到位。对策：推动商业开发，挖掘闲置房屋再利用等“造血点”，政府、居民、社会力量共担改造资金。\n\n5.问题：设施产权不一，后期收益归属不清。对策：健全“造血”机制，出台配套政策，明确设施产权，确定后期收益归属，吸引社会资本投入运营。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文351字，超过题面明确上限350字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2024/申论-C类.md",
+    "question_number": 1,
+    "question": "问题一：请根据给定资料1，概括Z县处置农药包装废弃物的主要做法。（15分）\n\n要求：\n　　（1）准确全面；\n　　（2）分条列出；\n　　（3）不超过200字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 205,
+    "raw_answer_characters_without_urls": 350,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "ad1274ac0a91edef892bb0c3c7edbac312d80f2c69a2906f0ce33f21f5c9622d",
+    "start_excerpt": "1.探索抵押销售。销售时收取押金，收集上传相关数据，交回废弃物后退还押金。\n\n2.设置回收点。分布在农资经营门店和种植大户多的地点，暂存废弃物，等待清运。\n\n3.集中回收转运。清运公司上门有偿回收，全封闭送至资源化利用回收站，综合监管平台清点回收量，集中转运专业处置企业。\n\n4.无害化处置。统一按分类处理原则，交由已备案、有资质的单位处置。\n\n5.提供经费支持。招投标确定清运公司，专列无害化处置经费，提升各主体回收积极性。",
+    "end_excerpt": "还押金。\n\n2.设置回收点。分布在农资经营门店和种植大户多的地点，暂存废弃物，等待清运。\n\n3.集中回收转运。清运公司上门有偿回收，全封闭送至资源化利用回收站，综合监管平台清点回收量，集中转运专业处置企业。\n\n4.无害化处置。统一按分类处理原则，交由已备案、有资质的单位处置。\n\n5.提供经费支持。招投标确定清运公司，专列无害化处置经费，提升各主体回收积极性。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文205字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2024/申论-C类.md",
+    "question_number": 3,
+    "question": "问题三：近期，不少群众向H市市场监督管理局来信咨询临期食品的安全问题，假设你是该局工作人员，请根据给定资料3草拟一封公开信，以回应群众关切。（25分）\n\n要求：\n　　（1）紧扣资料，有针对性；\n　　（2）条理清晰，格式规范；\n　　（3）450字左右。\n\n<!-- R5 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "approximate_target",
+      "target": 450,
+      "review_minimum": 405,
+      "review_maximum": 504,
+      "confidence": "medium",
+      "evidence": "450字左右"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 351,
+    "raw_answer_characters_without_urls": 433,
+    "removed_rules": [
+      "generic_answer_label",
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "5412b68c359a3fbe3c68d2e6a544307251589075e1e50cb04dd06544a4da9737",
+    "start_excerpt": "**致社会各界的一封信**\n\n社会各界的朋友们：不少群众来信咨询临期食品安全问题，我局高度重视并开展调查，现回应如下：一、建议消费者通过正规渠道购买，确保临期食品质量安全。对于临期商品，经销商会进行打折出售、部分选择退回厂家，无法退回且未销售完的商品采取销毁处理；同时，对于退回商品，厂家会进行丢弃或销毁。因此，通过正规渠道购买临期食品是安全的、质量可控的。\n\n二、对于临期食品市场缺少规范、线上线下无品控统一标准的问题，我们会尽快完善相关",
+    "end_excerpt": "食品市场缺少规范、线上线下无品控统一标准的问题，我们会尽快完善相关规定，统一监管标准。我们会加快出台制度，明确临期食品的管理规定及销售要求，统一线上线下临期食品的品控标准，强化商家履行“醒目提示”义务，提高对商家的约束力。\n\n下一步，我们会推出更全面的治理措施，加强食品安全依法治理，让广大消费者获得幸福感！\n\nH 市市场监督管理局XXXX 年XX 月XX 日",
+    "issues": [
+      {
+        "rule": "approximate_target_short",
+        "confidence": "medium",
+        "detail": "正文351字，少于约450字目标的90%；这是候选阈值，不是假定官方最低分界"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2026/申论-A类.md",
+    "question_number": 1,
+    "question": "问题一：请根据“给定资料1”，谈谈你对三位企业家所说的“至关重要”的理解。（15分）\n\n要求：（1）全面准确；（2）条理清晰；（3）不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 401,
+    "raw_answer_characters_without_urls": 401,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "f2fac79a38e2bfce654c8e5d91cced9f3ed034e7a08405f4b2ae506035eb8f81",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\n三位企业家所说的“至关重要”，共同指向人工智能产业形成创新生态所需的关键条件。\n\n**一是产业链集聚至关重要。** 芯片设计、制造、封装测试及上下游企业在本地协同，有利于缩短研发周期、加速迭代和降低配套成本。\n\n**二是真实场景开放至关重要。** 政府和企业提供机场分拣、制造业等应用场景，让算法、设备接受实际需求检验，在测试和反馈中持续优化。\n\n**三是产学研联动至关重要",
+    "end_excerpt": "础设施、种子资金和人才政策，促进成果转化。\n\n其本质是把技术供给、应用需求和政策资源连接起来，让创新更快落地、产业形成竞争优势。\n\n> 写作依据：本卷给定资料1及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文401字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2026/申论-A类.md",
+    "question_number": 2,
+    "question": "问题二：请根据“给定资料2”，梳理调研组在F市菜市场调研中发现的问题，并提出解决建议。（20分）\n\n要求：（1）问题梳理全面、准确、有条理；（2）所提建议与问题相对应，具体明确、切实可行；（3）不超过400字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 400,
+      "confidence": "high",
+      "evidence": "不超过400字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 504,
+    "raw_answer_characters_without_urls": 504,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "0a70d3ca6a33737ebdd79070d93530cec4fc781b2a4238591f0da3826a4ccab1",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\nF市菜市场存在的问题与建议如下：\n\n**一、经营竞争力下降。** 电商买菜便利、品种丰富、价格低，传统摊位客流减少。应发展线上接单、即时配送和特色经营，推出平价鲜菜、便民预订等服务，提高消费黏性。\n\n**二、冷链和硬件老化。** 旧市场冷库容量小、损耗高、改造受限。应分类更新冷链、仓储和动线设施，建设共享冷库，统筹政府奖补和市场经营资金，降低摊贩负担。\n\n**三、数字化推",
+    "end_excerpt": "务场景单一。** 借鉴花园街菜市场，结合餐饮、花店、文化与社区服务开展适度改造，兼顾烟火气与便民性，建立长效运营和投诉反馈机制。\n\n> 写作依据：本卷给定资料2及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文504字，超过题面明确上限400字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2026/申论-A类.md",
+    "question_number": 3,
+    "question": "问题三：S市文旅局将在公众号上发布一封公开信，邀请游客前来南门社区旅行。假设你是市文旅局的工作人员，请根据“给定资料3”，拟写这封公开信。（25分）\n\n要求：（1）紧扣资料，亮点突出；（2）逻辑清晰，语言生动；（3）不超过500字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 500,
+      "confidence": "high",
+      "evidence": "不超过500字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 537,
+    "raw_answer_characters_without_urls": 537,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "7b958f04b0a424b6318c4a35798475d3853de43cab532404fe0295a2b625dfb1",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\n**赴一场老街与新生活的约会——南门社区邀您来走走**\n\n亲爱的游客朋友们：\n\n一座城市最动人的故事，常常藏在脚下的石板路和转角处的老店里。S市南门社区诚邀您走进街巷，开启一段有记忆、有烟火、有创意的城市微旅行。\n\n在**厚德巷**，请放慢脚步。这里保留着灰墙黛瓦、花窗砖雕和名人故居，老师傅用传统工艺修复旧建筑，中英双语标识讲述街巷往事，文创小店把城市记忆变成手中温暖的小",
+    "end_excerpt": "新实践。欢迎大家文明游览、爱护老建筑、尊重居民生活，用脚步读懂城市，也用照片与文字分享这份独特美好。\n\n**S市文化和旅游局**\n\n> 写作依据：本卷给定资料3及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文537字，超过题面明确上限500字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/安徽/2026/申论-A类.md",
+    "question_number": 4,
+    "question": "问题四：“给定资料4”中提到“时代的风总是在吹，关键在找准‘风向’，驾驭‘风力’，引领‘风头’。”请深入思考这句话，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n要求：（1）观点明确，见解深刻；（2）思路清晰，语言流畅；（3）参考给定资料，但不拘泥于给定资料；（4）1000-1200字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_range",
+      "minimum": 1000,
+      "maximum": 1200,
+      "confidence": "high",
+      "evidence": "1000-1200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1342,
+    "raw_answer_characters_without_urls": 1342,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "db30b4e60aa99d1eed69ca047ea1faaac91a97ae42444087891a29529c4aa8a5",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\n**识风而进，借风而上，以创新引领发展新局**\n\n时代浪潮从不因某个企业、某座城市的犹豫而停下。数字经济、人工智能和绿色转型重塑竞争，也孕育机遇。G市电气产业从传统产品制造向新能源、智能物联等新领域拓展，正是抓住变化主动求变的缩影。“找准风向、驾驭风力、引领风头”，揭示了高质量发展的三重要求：以敏锐眼光判断趋势，以扎实本领把握机遇，以持续创新创造未来。\n\n找准风向，首先要",
+    "end_excerpt": "，以创新开放争主动，以人民福祉定坐标，我们就能在变化中积蓄确定性，在挑战中孕育新优势，不断开辟高质量发展的广阔天地。\n\n> 写作依据：本卷给定资料1,2,3,4及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文1342字，超过题面明确上限1200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2016/申论-统考.md",
+    "question_number": 1,
+    "question": "请结合对给定资料的理解与思考，以“自由和秩序”为主题，自拟题目，写一篇议论文。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1171,
+    "raw_answer_characters_without_urls": 3338,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "4c7ec6cdf337f78652c5b33ad4745d11c7be228d50bf85a79d040afc147a8b7c",
+    "start_excerpt": "自由需底线 秩序来护航\n如果要问二十世纪最具有划时代意义的发明，那一定非互联网莫属。互联网不仅促进了经济社会的⻜跃式发\n展，也改变了人们的生产生活方式，对人们思维方法与认知能力的提升也产生了巨大的激励作用。然而，互联网的\n世界有“春天”也有“冬天”，有“光明”却也有“黑暗”。当网络谣言肆意横行，当黑客侵袭肆无忌惮，当网络诈欺花样\n频出，我们必须用秩序来击退毫无底线的自由，也只有在秩序的基础上，我们才能让互联网给我们带来更多的方便\n和快捷",
+    "end_excerpt": "公共理性，自觉维护网络秩序。⻘年人更要以维护网络空间和谐为社会责任，\n理性发声，传递正能量，充当网络生力军。\n人无信不立，“网”无法不安。要营造一个健康有序的网络环境，法律规范不可缺位。要自由自在地畅游网络世\n界，网⺠自觉守法不可缺少。只有坚持走法治化之路，依法办网、依法治网，网络世界才能更加多元化、丰富化与\n立体化，我们也才能终将迎来一个最好的互联网时代。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2016/申论-统考.md",
+    "question_number": 2,
+    "question": "“给定资料7”中提到：“互联网是人类共同发展的机遇、人类共同进步的希望，也是人类共同需要承担和完善的责\n任。”请从对这句话引发的思考说开去，写一篇议论文。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1189,
+    "raw_answer_characters_without_urls": 3951,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "c20f979b3440af4da310a651f35767a35b3c3f6ea4e4418ac803b2332a7209bb",
+    "start_excerpt": "共享成果 共同进步 共担责任\n有人说“互联网是人类共同发展的机遇、人类共同进步的希望，也是人类共同需要承担和完善的责任。”的确，\n互联网带来机遇，大大提升了生产效率，解决弱势群体难题，推动弱势行业进步；互联网带来进步，让教育更公\n平，生活更便利；同时互联网也需要责任，解决随之而来的各种问题。\n抓住互联网发展的机遇，需要我们要紧随互联网的大潮，提升生产效率，促进弱势行业的发展，关怀弱势群体\n的利益。互联网是当下生活和生产的最大增量，同时也",
+    "end_excerpt": "展还具有开放性，提供海量信息的同时，让各种网络暴力、\n网络谣言、网络色情、网络诈骗充斥生活。在网络大染缸中，我们要坚定正向的文化价值观，同时利用互联网的高\n效性、交互性，学习知识，增强自身能力，共同营造⻛清气正、积极健康的网络空间。\n互联网的作用不可忽视，正确认知、合理利用，方为科学之道。让我们拥抱互联网、参与互联网，同时保持清\n醒，与互联网共同成⻓进步吧！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2016/申论-统考.md",
+    "question_number": 3,
+    "question": "请结合对给定资料的理解与思考，从分析“保持简单，比复杂还难”这一观点出发，自拟题目，写一篇议论文。（40\n分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1165,
+    "raw_answer_characters_without_urls": 4136,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "d8bdd4b132b323bef5c873feb297cabfd835d94e47cd8df525aa462cd4bc1330",
+    "start_excerpt": "幸福，从“简单”开始\n科技日新月异，网络改变生活，⻋水⻢⻰、灯红酒绿已经成为了生活的常态，然而这种生活却并没有带来应有\n的幸福感和满足感，人们拥有的物品越来越多，得到的却越来越少；生活的节奏越来越快，身边的美景却越来越\n少。很多人都想从这“繁琐”的生活中抽身，专注重点，过上简单却更有意义的生活，但保持简单似乎比复杂还难。\n环顾当下，回归现实，确实保持简单比复杂还难，我们不由得要感叹，是什么阻挡了我们追求“简单”的步伐？\n保持简单比复杂还",
+    "end_excerpt": "\n起，绝不姑息，还社会良好⻛气；最后，保持简单还需要从自身“简化”，优化工作流程，简化审批程序，探索更弹\n性、人性化的工作制度，试行“远程办公”、“居家工作”等，为极简生活创造条件。\n“夫君子之行，非淡泊无以明志，非宁静无以致远。”幸福需要个人从简出发；稳定的社会、繁荣的国家，需要\n政府从简入手。去繁就简，回归到生活工作的本真，方能在人类梦想之路上越行越远！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2016/申论-统考.md",
+    "question_number": 4,
+    "question": "请结合“给定资料1~5”，谈谈你对文中划线句子“‘互联网+’不是要做简单的物理拼盘，而是要创造‘聚变效应’和‘乘数\n效应’”的理解。（15分）\n要求：观点明确，分析透彻，不超过200字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 380,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "f7bb6d5d75de5eaad9fcf0837f9442da54c8c86fa5ea9a24ce51376309222e36",
+    "start_excerpt": "这句话有道理，指出互联网带来质的变化、模式创新，和量的巨大增⻓。\n具体表现在：1.互联网+农业利用信息化，增加销量，转化科技成果，打通市场。2.互联网+汽⻋带来资金、技\n术，发展赶超发达国家。3.互联网+公共服务节约时间、人力，推进治理现代化。4.互联网+教育记录学习数据，推\n动针对性教学。5.互联网+金融利用大数据挖掘信用，促进服务模式升级。6.互联网+公共服务丰富服务种类，创新\n销售、管理模式，打造智慧社区。",
+    "end_excerpt": "大增⻓。\n具体表现在：1.互联网+农业利用信息化，增加销量，转化科技成果，打通市场。2.互联网+汽⻋带来资金、技\n术，发展赶超发达国家。3.互联网+公共服务节约时间、人力，推进治理现代化。4.互联网+教育记录学习数据，推\n动针对性教学。5.互联网+金融利用大数据挖掘信用，促进服务模式升级。6.互联网+公共服务丰富服务种类，创新\n销售、管理模式，打造智慧社区。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2017/申论-统考.md",
+    "question_number": 1,
+    "question": "给定资料1中划线句子提到“科技是第一推动力，但有了市场，科技才有用武之地。”请结合对这句话的理解，参考给\n定资料，联系实际，自拟题目，写一篇议论文。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1090,
+    "raw_answer_characters_without_urls": 3669,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "5cd843f76e34fb3dc614f429e48c9530c51dea0c5c31994f18e34f0715c7692d",
+    "start_excerpt": "把握市场脉搏 让科技惠及生活\n人类发展的历史告诉我们，科学技术一旦渗透和作用于生产过程中，便成为现实的、直接的生产力。邓小平同\n志指出，“科技是第一生产力”，科学技术可以推动经济的发展，社会的进步，是各行各业持续发展的动力源泉。作\n为高新技术、绿色能源的光伏产业，科技先行，市场也为其提供了充足的发展空间，推动了人类节能环保事业的发\n展。因此，我们要重视科技，研发核心技术；开拓海外市场，培育国内市场，提升管理和经营水平。\n重视科技创新，要",
+    "end_excerpt": "理人才，提高管理水平，建立良好的口碑，打造世界知名品牌；在利用“有形的手”的\n主导下，各市场主体以市场需求为导向，在公平竞争的有序环境中，让“中国科技”煜煜生辉。\n吸水之木，勿忘根本。为了更好地贯彻创新、协调、绿色、开放、共享的发展理念，为了实现经济的转型升\n级，在发展的历史上留下浓墨重彩的一笔，我们要坚持让科技创新借助市场之力，把握市场脉搏，广泛惠及生活！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2017/申论-统考.md",
+    "question_number": 2,
+    "question": "资料8中提到“汽⻋文明是否‘一路绿灯’，关系到社会文明的进程。”请根据你对这句话的理解，结合给定资料联系实\n际，自选⻆度，自拟题目，写一篇议论文。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1090,
+    "raw_answer_characters_without_urls": 3667,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "ecfde57f84d490c4a246db69a3f65a11548df8652690f6736a43200b8b7de0d5",
+    "start_excerpt": "培育汽⻋文明 助推社会文明\n经济⻜速发展，我们奔跑着从自行⻋时代迈入了汽⻋时代，快的让人惊叹、诧异、欣喜。然而，当人们沉醉于\n汽⻋带来的便捷时，却忽略了对“汽⻋文明”的关注。“中国式”过⻢路、“中国式”开⻋，每天都在上演，交通拥堵成\n为许多城市不得不面对的“城市病”。汽⻋保有量与品牌档次都上去了，但是汽⻋文明却未能与其同步，此情此景迫\n切呼唤更加进步的汽⻋文明。\n文明驾驶、文明出行、文明交通，不仅关系个人，也关系每一个家庭的幸福，社会文",
+    "end_excerpt": "。此外，还要创新工作方式，不以处罚为目的，而是将法律\n的教育功能与惩罚功能相结合。近年来，出现的“贴卖萌罚单”“抄写交规”“看警示片”等有温度的执法方式，既纠正\n了一些人的违法行为，也带给大家尊重、理解和关爱。\n建设汽⻋文明社会是一项系统工程，关系到每一个人、每一个家庭的平安和幸福。需要全社会的共同努力，让\n汽⻋文明引领社会文明，让我们的社会更文明、更和谐！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2017/申论-统考.md",
+    "question_number": 5,
+    "question": "给定资料1中画线句子提到“万物之间的‘连接’使互联网成为当前社会变革的驱动力，进而影响人类未来发展的方\n式。”请根据给定资料1，分析指出这句话的含义。（15分）\n要求：观点明确，条理清晰，语言简洁；不超过250字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 252,
+    "raw_answer_characters_without_urls": 432,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "fad51ea0eba0b834720a8f66c87fe4bf0fe440bf75694dbf156ee5a686f1e0cf",
+    "start_excerpt": "这句话是有道理的，互联网连接社会系统，重构世界、人类社会，塑造新的文化、语言、价值体系。\n带来社会变革：1.优化公共服务。整合数据，提供高效、优质便捷、丰富的一站式综合服务；以人为本，有参\n与互动、协作性。2.平衡城乡和区域发展，促进教育公平。促进资源共享、家校互动；提升教学水平，推动体育发\n展。3.带动经济发展。促进产业融合、发展，提高生产力；刺激消费，提高竞争力，促进跨越式发展。4.革新传统文\n化。改变交流习惯，重体验、互动、情感交",
+    "end_excerpt": "富的一站式综合服务；以人为本，有参\n与互动、协作性。2.平衡城乡和区域发展，促进教育公平。促进资源共享、家校互动；提升教学水平，推动体育发\n展。3.带动经济发展。促进产业融合、发展，提高生产力；刺激消费，提高竞争力，促进跨越式发展。4.革新传统文\n化。改变交流习惯，重体验、互动、情感交流。\n影响人类发展，体现以人为本：为人服务，满足需求；激发人的潜力、智慧。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文252字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2018/申论-统考.md",
+    "question_number": 1,
+    "question": "“给定资料8”中划线句子提到，“中国企业不可能总在⻛平浪静时‘走出去’，而注定只能‘在深海里练就游泳能力’，\n在一次次的弄潮中成⻓”。请围绕对这句话的思考，参考给定资料，联系实际，自选⻆度，自拟题目，写一篇文章。\n（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1144,
+    "raw_answer_characters_without_urls": 4159,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "cde40abc0a5896137ae5e638a25dcbe0f05b069c9c9f45a5b2fee9aa8b09f491",
+    "start_excerpt": "中国企业“走出去”搏击⻛浪\n当前，经济全球化不可逆转，成为全新发展趋势。企业走出国⻔，不仅有利于实现国际间资源整合、优势互\n补，还能促进互利合作，创新合作模式。可喜的是，我国日益成熟的市场机制、稳定的投资环境，为中国企业建立\n了稳定的后方。因此，中国企业应顺应潮流，主动“走出去”，迎接新挑战，探索合作共赢新模式；更应打造国际品\n牌，走高端路线，提升核心竞争力，走得更远，行得更稳。\n然而，走出去面临投资地政策限制、法律纠纷、劳资矛盾等问题",
+    "end_excerpt": "国企业却拿出相同品质的产\n品攫取高额利润。现如今，我国⺠营汽⻋品牌中，首屈一指的是吉利汽⻋。吉利汽⻋通过收购国外技术先进的汽⻋\n品牌，吸收转化技术，推陈出新，不断推动品牌上探，如今无论是销量还是利润都在自主品牌中占据第一的位置。\n中国企业要从“走进去”到“走出去”，从“走得稳”到“走得好”，就要紧跟时代步伐，抓住机遇，迎接挑战，\n为“走出去”开辟一片新天地。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2018/申论-统考.md",
+    "question_number": 2,
+    "question": "进一步思考“给定资料5”中划线句子“在我们的工作生活中，什么才是真正重要的东⻄”，参考给定资料，联系实\n际，自选⻆度，自拟题目，写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1051,
+    "raw_answer_characters_without_urls": 3544,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "5fab608f42810ef9110f40c6a57ccb108e8a4c9b4be7f5f4b15595d76d05cb91",
+    "start_excerpt": "工作生活的价值追求\n罗曼罗兰曾说过：“生活最沉重的负担不是工作，而是无聊。”而现实生活中，多少人正在承受着“无聊”带来的\n巨大压力、疲劳和不安全感，迷失了初心和方向。殊不知，在我们的工作和生活中，永葆初心的价值追求才是明确\n的方向。其实，工作生活的价值是有层次、有梯度的：从满足自我生存需求，到展示个人价值、实现人生目标；从\n增添社会活力，传递热情与正能量，到帮助他人、奉献社会。\n诚然，大部分人的工作生活是为了自我生存、获得财富。但事实上",
+    "end_excerpt": "孤独相伴，扎根海岛，家国一体……这是一个\n奋斗担当、心怀天下的时代，只有在平凡岗位奉献、付出，才能将工作的意义、人生的价值体现的淋漓尽致。\n新时代蕴藏着巨大机遇，置身于伟大新时代，我们每个人都能在平凡的岗位上收获幸福和快乐，为人生涂上了\n最美的底色。我们每个人都要立足岗位，诚实劳动、勤勉工作，在奋斗和奉献中实现自己的人生价值，收获幸福人\n生，实现更好的自己。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2018/申论-统考.md",
+    "question_number": 3,
+    "question": "“给定资料8”中划线句子提到，“共享经济意味着资源的共享，也意味着文明的共担。”结合你对这句话的思考，参\n考给定资料，联系实际，自拟题目，写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1162,
+    "raw_answer_characters_without_urls": 3889,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "887aeaf266e54747d1b50c732bebefcfc989e8a54cdfafc07e695b1a8ad253a8",
+    "start_excerpt": "共享经济开启新时代\n共享经济与传统的“占有型经济”有别，强调“享用”而非“占有”，以“物尽其用”为旨归，意在促使供给方把某段\n时间内暂时闲置的物品、设施、服务等以较低的成本、价格让渡给需求方享用。这一过程，不仅意味着“物”的共\n享，更对参与共享的人及相关主体的契约精神、协作意识等文明素养提出了要求。近几年，得益于互联网技术的成\n熟，以及政府的鼓励和支持，共享经济在我国快速兴起。\n共享经济带来社会红利的同时，也存在资源投入不足、文明素质不",
+    "end_excerpt": "会公共服务的功能，能满足⺠众需求，促进社会公平，因此还需要法律\n制度的规范和保障，让共享经济能够在法治的框架中健康有序地运行。\n共享经济一方面能挖掘存量资源，形成新的生产力，对我国经济供给侧改革和转型升级具有最重要意义；另一\n方面，其蕴含的公平精神、节约理念，对国际经济合作也有启发意义。可⻅，唯有顺从共享，共建文明，才能把握\n新机遇，迎接新挑战，开启新时代！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2018/申论-统考.md",
+    "question_number": 4,
+    "question": "“给定资料1”中划线句子提到，“这些大学是在追求失去灵魂的卓越”。请谈谈你对这句话的理解。（20分）\n要求：理解准确，分析透彻，条理清晰，不超过250字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 251,
+    "raw_answer_characters_without_urls": 325,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "71414afc109761c98cdddf2cc089e6ae612d27fb669df22516bf32e162dfda2d",
+    "start_excerpt": "1.卓越是指大学建设外在成就突出。表现在学校规模扩大，性别种族平等，社交自由，科研设施完善，追求知\n识与竞争力。\n2.失去灵魂是指学校学术水平下降，教育内涵缺失，忽略教育基本任务，学生与学校关系异化。表现在：课程\n内容“实用化”，忽略普遍理念；评分功利，忽略教学反馈；纪律制度无权威性，忽视道德、责任感的培养；体育竞\n赛重视成绩，不再磨练心智、丧失趣味。\n3.大学的学术竞争与教育任务应均衡发展，要重视通识教育，引导学生了解自我、探索生活，",
+    "end_excerpt": "涵缺失，忽略教育基本任务，学生与学校关系异化。表现在：课程\n内容“实用化”，忽略普遍理念；评分功利，忽略教学反馈；纪律制度无权威性，忽视道德、责任感的培养；体育竞\n赛重视成绩，不再磨练心智、丧失趣味。\n3.大学的学术竞争与教育任务应均衡发展，要重视通识教育，引导学生了解自我、探索生活，富有学识、智\n慧、责任心，具有善良合作同情等品质，有完善的人格和个人力量。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文251字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2019/申论-B类.md",
+    "question_number": 1,
+    "question": "一、根据“给定资料1”，概括总结J市12345热线的成功经验。（15分）\n\n要求：概括全面，思路清晰，表达准确；不超过250字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 514,
+    "raw_answer_characters_without_urls": 658,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "62370c158923bfa204648c92fbd882ae1da99ab8d656d6b112ee6a794dcdc070",
+    "start_excerpt": "一、明确职责分工。\n\n明确回复部门，规定具体服务内容，扩大覆盖面，服务专业化；规定接听热线次数，全天服务。\n二、创新服务手段。\n\n部门联动，一号受理；利用互联网技术、平台，处理渠道多元化.\n三、完善服务标准。\n\n直面问题，以市民为中心，执行及时高效；理念、方法标准化，管理规范化。\n四、完善督办办法。\n\n鼓励媒体曝光，按照原则督促落实；接受群众监督，畅通民意诉求表达渠道；对未按要求办理的事项，由监察部门追责。\n五、出台专门法律。\n\n充分调",
+    "end_excerpt": "意见反馈，数据分析，监督考核下属单位，拓展民生功能，承担省市级、人大等政务工作。四、督办问责。明确依法、实事求是、分级负责原则督促落实；对未按要求办理的，进行追责。五、整合资源，提升服务水平。一号受理，部门联动，方便决策；以市民为导向，畅通民意表达渠道，创新治理。六、立法保障。充分调研、研究论证，明确市民、热线和承办单位法律、权利义务关系，形成完整工作体系。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文514字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2019/申论-B类.md",
+    "question_number": 4,
+    "question": "四、参考给定资料，以“‘民生’跟着‘民声’走”为主题，自选角度，自拟题目，写一篇文章。（40分)\n\n要求：\n\n（1）观点明确，立意深刻；\n\n（2）思路清晰，语言流畅；\n\n（3）参考“给定资料”，但不拘泥于“给定资料”；\n\n（4）总字数1000～1200字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_range",
+      "minimum": 1000,
+      "maximum": 1200,
+      "confidence": "high",
+      "evidence": "1000~1200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1283,
+    "raw_answer_characters_without_urls": 1427,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "bbdb75db75edad3f219f48980300b7bd523a3b2daa9b17c0e0078dea41956488",
+    "start_excerpt": "听民声，惠民生从放开二孩政策到提高个税起征点，从医疗政策改革到养老金水平提升……一大批惠民政策紧锣密鼓、落地生根；然而，随着物质水平不断提高，百姓对美好生活有更多期待，对民生提出更高要求。古人云：“天视自我民视，天听自我民听”，要想做好民生，必先听取民声，让民生跟着民声走：真正的俯下身子，了解群众需要什么、盼望什么，满足群众迫切需求，让人民群众拥有获得感、幸福感、安全感。\n\n群众对于环境有需求、有民声，他们盼望良好的居住环境，期待宜居的",
+    "end_excerpt": "们的指尖，使“动动手指就能完成”的现代化生活成为现实；同时，民生工作要更加稳定长效运行，疏通民众的反馈渠道，开放多种监督途径，以民众的声音为向导，满足多元化需求。\n\n民为邦本，本固邦宁。百姓是一个国家的“中心”，也是“重心”，每位领导干部要听好百姓心声，满足民众需求，俯下身子，接好地气，抓细抓实，唯有如此，才能让民声叩响民生的大门，用民声书写好“民生”华章！",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文1283字，超过题面明确上限1200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2020/申论-统考.md",
+    "question_number": 2,
+    "question": "请根据“给定资料3”，以“流程·服务·效能”为主题，自选⻆度，自拟题目，写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1192,
+    "raw_answer_characters_without_urls": 3877,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "da76d36b181373863901c1e35af9bed197fb0c5f7805df9bbfb0538a6f83957e",
+    "start_excerpt": "聚力流程再造 提升服务效能\n治国有常，利⺠为本。要成为一个为人⺠谋福祉、做群众贴心人的政府，就必须把做好政务服务工作当做要\n务。一方面，政府部⻔应当精简审批环节，优化工作流程，为公众提供便捷通道；另一方面，还要改善服务态度，\n提高服务质量，为百姓和企业提供满意服务。只有流程的事、服务的事做好，才能让政务工作发挥最大效能，让人\n⺠享受最大便利。\n经过多年努力，行政制度改革取得了显著的成绩，但是流程繁琐、质量不高、效果不好等实际问题仍频现报",
+    "end_excerpt": "价值观。只有放权，减少因层级审批、人员多乱而造成的协调成本，同时\n通过出台专项扶持政策，才能为⺠为企提供最大优惠与福利。\n面对全球疫情的残酷考验，世界经济动荡的巨大压力，2020年注定艰辛、坎坷与不易。而行政审批制度的改革\n正是政务工作中的一把利剑，让我们以全新的工作思路、严谨的工作态度、科学的工作手段聚力服务流程的再造，\n让服务效能惠群众、惠企业、惠中华！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2020/申论-统考.md",
+    "question_number": 3,
+    "question": "请根据“给定资料1”，谈谈你对Q县干部直播带货的认识。（20分）\n要求：观点明确，分析全面，条理清晰；不超过350字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 350,
+      "confidence": "high",
+      "evidence": "不超过350字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 355,
+    "raw_answer_characters_without_urls": 527,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "634f5803dbeff7f61192b3170cc8a8d747f2c60d73f5e9b366890202e1790ebc",
+    "start_excerpt": "Q县干部直播带货值得肯定、提倡，但其他地区应理性看待，不可盲目照搬。\n一方面直播带货可以：1.畅通销售渠道。打开销路，缓解农产品滞销问题，促进农⺠增收致富。2.满足消费者需\n求。借助平台补贴降低售价，为消费者提供质优价廉的产品。3.重塑农产品供应链模式。打造农货上行体系，精准连\n接供需两端，缩短供需距离，推动农业农村现代化。4.转变农⺠心态和经营思路。带动农户直播，帮助其接受电商销\n售形式，主动拥抱互联网。5.拉近干群关系。增进与农户的",
+    "end_excerpt": "，帮助其接受电商销\n售形式，主动拥抱互联网。5.拉近干群关系。增进与农户的交流，提升农⺠幸福感，提高政府公信力。\n然而，Q县干部带货也会带来隐患：导致其他地区仓促跟⻛，由于直播经验不足，照搬电视直播套路，流程千\n篇一律，缺乏创新和⻓效机制。\n因此，干部应继续学习经验，创新直播方式，优化流程，建立⻓效机制，同时对农户进行培训，促进农产品电\n商直播健康持续发展。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文355字，超过题面明确上限350字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2020/申论-统考.md",
+    "question_number": 4,
+    "question": "请根据“给定资料1”，谈谈你对B市“一枚印章管审批”的认识。（20分）\n要求：观点明确，认识深刻，思路清晰；不超过350字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 350,
+      "confidence": "high",
+      "evidence": "不超过350字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 352,
+    "raw_answer_characters_without_urls": 529,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "bd32ed82f2f9366c6916f02b6e9fa1aad26b3ce351d83904f7d97d912f38202b",
+    "start_excerpt": "“一枚印章管审批”是行政审批制度改革和政务服务提升的具体体现。B市创造性推出“一窗办、网上办、就近\n办、简化办、舒心办、督着办”举措，提升审批服务水平，优化营商环境。应对此点赞。\n具体做法有：1.实施“窗口无否决权”。实现“一次办成”，提高审批速度，提升服务质量。2.实施“四维协同”机\n制。实现多元服务，保障审批高频顺畅运转，节省企业精力，减轻负担，高效便捷。3.发布《一次性告知清单》。事\n先介入，提前告知所需材料，避免材料不全带来反复",
+    "end_excerpt": "。3.发布《一次性告知清单》。事\n先介入，提前告知所需材料，避免材料不全带来反复办理。4.实现电子化办理。可在线办理业务，拍照上传资料即\n可；开发手机应用程序，政务服务“掌上化”。5.提供流动审批。不定期在各商务楼宇开展集中审批服务，压缩办理\n时间。\n因此，我们应继续释放“一枚印章管审批”的改革效应，以人⺠为中心，提高群众满意度，激发市场活力，培育\n新企业。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文352字，超过题面明确上限350字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2021/申论-统考.md",
+    "question_number": 1,
+    "question": "请根据对“给定资料5”中划线句子“治国犹如栽树，本根不摇则枝叶茂荣”的理解，结合全部给定资料，自选⻆度，\n自拟题目，写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1044,
+    "raw_answer_characters_without_urls": 3181,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "811f666eb3ff937503657eece1e37eddc5f938e50c8c9ef1ef278e4024746dee",
+    "start_excerpt": "党建为先 强基固本\n欲筑室者，先治其基。诚然，基层作为国家治理的最末端，服务群众的最前沿，是国家治理的基础和重心，是\n故强基固本方能国势兴盛。在我们致力提升基层治理水平的当下，更要坚持党建引领，通过强调组织先行、秉持服\n务为本、完善管理制度，才能将党的政治优势、组织优势和群众工作优势转化为治理优势，把党的力量和主张传递\n到“神经末梢”，走好基层治理的“最后一公里”。\n坚持党建引领，强调组织先行，既要推动党组织向最基层覆盖延伸，推进党员下",
+    "end_excerpt": "，才能让道德约束有制度作为底线保障，才能\n⻓期有效地赓续红色基因、砥砺奋进之志。\n国欲兴其势，必先固其本。正如习近平总书记强调的，推进国家治理体系和治理能力现代化，社区治理只能加\n强、不能削弱，维持基层有效治理一直是党和政府念兹在兹之举。当下，我们更应牢固树立大抓基层的鲜明导向，\n推进基层建设的全面进步、全面过硬，实现基层党建管思想、把方向、聚合力、固根基。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2021/申论-统考.md",
+    "question_number": 2,
+    "question": "请根据对“给定资料8”中划线句子“时代变了，文化不再是后台的配⻆，已经成⻓为台前的主力”的理解，结合全部\n给定资料，自选⻆度，自拟题目，写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1081,
+    "raw_answer_characters_without_urls": 3218,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "b5ae9fedf530cdb8b486abc7522ff95a549fa45fe008cdf8acf8195da047ea17",
+    "start_excerpt": "奏响文化建设的时代乐章\n文化是一个国家和⺠族的灵魂。习近平总书记指出：“要坚持中国特色社会主义文化发展道路，激发全⺠族文化\n创新创造活力，建设社会主义文化强国。”站在“两个一百年”奋斗目标的历史交汇点上，更应加强文化建设，传承优\n秀传统文化，以科技赋能助推文化产业化融合发展，同时推动文化走向⺠众，实现文化成果共享。\n千古文化薪火相传，文化建设需要传承优秀的传统文化。既要保护好物质文化遗产并加以活化利用，也要在承\n继非物质文化中融入人文精",
+    "end_excerpt": "馆，俨然已成为城市的文化地标和\n智慧灯塔，丰富的图书和安静的环境，为市⺠搭建了阅读思考的精神家园。\n参天之木，必有其根；怀山之水，必有其源。根之所系，脉之所维，这个根脉就是文化，而文化建设正是认\n识、了解这个根脉的工具。悠久历史⻓河里的文化遗珠，如同洪荒烈火淬炼出的精金，亘古⻛霜琢磨过的美玉，做\n好文化建设将为弘扬中华优秀传统文化，增强文化自信提供坚强支撑。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2022/申论-统考.md",
+    "question_number": 1,
+    "question": "请结合全部给定资料，以“大凡治事，必需通观全局”为主题，自拟题目，写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1091,
+    "raw_answer_characters_without_urls": 3376,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3155daeebc6fa0b0e50a2d3cf2c3e885ac38b606a65a04f720cc24d0634e3f83",
+    "start_excerpt": "执棋者，不偏执一子\n——治事的全局观\n清代学者钱泳在《履园丛话》中曾提及“大凡治事，必需通观全局”，习总书记也曾强调“要善于观大势、谋大\n局”，这都在传递一种“治事的全局观”。所谓治事的全局观，既包括推进事物各要素协同发展的视野，也包括不执迷\n于表象、窥探本源的通透，还包括敬畏变量、不盲目不武断的审慎。在我们国家、社会的治理进程中，任何重大决\n策背后，无处不体现着这种大局观，它值得我们深入研究、学习、借鉴。\n治事的全局观，体现在统筹推进",
+    "end_excerpt": "度猎杀狼群，那么\n必然会致使羊群过量，侵蚀草原植被，对生态环境造成不可逆的损失。因此，只有把握系统中各个环节间的联系，\n才能避免陷入片面分析、主观判断等误区，维持复杂系统的平衡，推动⻓远发展。\n不谋全局者，不足谋一域。治事观全局，既要统筹兼顾，通力协作，也要透过现象看本质，还需把握联系，平\n衡各方。唯有如此，才能实现不断发展，在危机中育先机、于变局中开新局。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2022/申论-统考.md",
+    "question_number": 2,
+    "question": "请结合全部给定资料，以“把准脉，开准方”为主题，自拟题目，撰写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1200,
+    "raw_answer_characters_without_urls": 3718,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "fb7393228932ee8964025d2df3c4a628b029f077c030f8ffec9ca1f0f18c109f",
+    "start_excerpt": "把准社会发展脉搏 开好时代前行良方\n清代名医徐灵胎认为“医法一误，必至伤生害命，尤不可不慎也”，社会治理又何尝不是如此？医社会之疾如治\n人之病，不作为、假作为、乱作为等错误的“医法”，不仅会损害百姓的切身利益，更制约着全社会的良性运转。因\n此，若想推动社会健康有序地发展，务必应当先摸清社会肌体的脉搏，找准施策的正确方向；再有的放矢，开好治\n理社会的妙药良方。\n推动社会健康有序地发展，首先要把好公共服务之脉，一方面要做到问需于⺠，让公共决",
+    "end_excerpt": "带来管理方式\n的不断优化和蜕变。随着时代的发展，社会中既有新问题应时而生，也有老问题始终存在，这就要求管理者借助互\n联网、云技术、大数据等现代科技的力量，让治理手段更智慧，让治理方式更智能，让治理成果更显著。\n有的放矢胜于万箭⻬发，只有把好社会肌体的脉搏，摸清社会症结的源头，才能在精准施策时对症下药，从而\n让全社会在强健平稳中焕发生机，在健康有序中阔步向前！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2023/申论-A类.md",
+    "question_number": 1,
+    "question": "(一)根据给定资料2归纳概括济钢从“靠钢吃饭”到“无钢发展”的主要经验。(20分)\n\n要求：全面、准确、有条理，不超过300字。\n\n<!-- R4 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 305,
+    "raw_answer_characters_without_urls": 516,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "cebc38f2f7b04557f0f7a23e56ccbf92f6f914b9ead3246ab3116568d706556e",
+    "start_excerpt": "要积极推动传统产业新旧动能转换，形成绿色可持续发展产业架构：\n1.规划新的发展道路。确立转型升级、发展新兴产业的战略目标，重新规划产业布局和多维度产业生态体系，\n确立新的主业定位，实施“嫁接式跨界融合”工程。\n2.成立产业化项目承接平台。与科研单位合作，对核心技术进行科研成果转化，发展高端制造业，填补细分领\n域高科技产业空白。\n3.把握时代机遇。积极对接国家战略，深度融入政府产业项目建设，着力构建产业生态圈，确立起新产业体\n系。\n4.加",
+    "end_excerpt": "科研成果转化，发展高端制造业，填补细分领\n域高科技产业空白。\n3.把握时代机遇。积极对接国家战略，深度融入政府产业项目建设，着力构建产业生态圈，确立起新产业体\n系。\n4.加强产学研合作。与大学联合成立科研机构，在高端、绿色材料应用方面进行公司研发，为打造高端产业链\n提供新动能。\n5.培育精神信念。传承老国企的拼搏精神、一团火精神，全体成员知难而上、持续奋斗。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文305字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2023/申论-B类.md",
+    "question_number": 1,
+    "question": "题目1：根据“给定资料2”，归纳W市经开区依托社区基金提升基层社会治理水平的经验做法。（20分）\n\n要求：全面，准确，有条理，不超过300字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 305,
+    "raw_answer_characters_without_urls": 484,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3f86e402335ae4ad4d1a1fd6fff25b05e4ef1a7f14bd044c44536980cb1e7103",
+    "start_excerpt": "1.党建引领相融互动。吸纳驻区单位、企业园区、社会组织、居⺠群众中的“红色力量”参与基金筹建，搭建社\n区需求与资源对接公益平台。\n2.拓展基金发展空间。依托社会组织党群服务中心，拓宽资金筹集渠道，提升招引专业社会组织、链接品牌企\n业、对接多元资源的能力。\n3.确保资金合理使用。成立基金管委会完善管理制度；编制操作手册与监测报告，规范资金使用；针对群众需\n求，实施覆盖广受益多的项目。\n4.加强志愿服务工作。成立工作室，发动老党员入驻，发挥",
+    "end_excerpt": "合理使用。成立基金管委会完善管理制度；编制操作手册与监测报告，规范资金使用；针对群众需\n求，实施覆盖广受益多的项目。\n4.加强志愿服务工作。成立工作室，发动老党员入驻，发挥先锋引领作用；设立社区微基金、募集慈善资源，\n拓宽资金来源渠道。\n5.充分发动居⺠参与。开展活动征集群众智慧，项目化吸纳服务资源，发动居⺠以无偿、低偿、有偿相结合方\n式点对点提供互助服务。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文305字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2023/申论-统考.md",
+    "question_number": 3,
+    "question": "根据“给定资料1”，归纳W市经开区依托社区基金提升基层社会治理水平的经验做法。（20分）\n要求：全面、准确、有条理，不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 305,
+    "raw_answer_characters_without_urls": 397,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3f86e402335ae4ad4d1a1fd6fff25b05e4ef1a7f14bd044c44536980cb1e7103",
+    "start_excerpt": "1.党建引领相融互动。吸纳驻区单位、企业园区、社会组织、居⺠群众中的“红色力量”参与基金筹建，搭建社\n区需求与资源对接公益平台。\n2.拓展基金发展空间。依托社会组织党群服务中心，拓宽资金筹集渠道，提升招引专业社会组织、链接品牌企\n业、对接多元资源的能力。\n3.确保资金合理使用。成立基金管委会完善管理制度；编制操作手册与监测报告，规范资金使用；针对群众需\n求，实施覆盖广受益多的项目。\n4.加强志愿服务工作。成立工作室，发动老党员入驻，发挥",
+    "end_excerpt": "合理使用。成立基金管委会完善管理制度；编制操作手册与监测报告，规范资金使用；针对群众需\n求，实施覆盖广受益多的项目。\n4.加强志愿服务工作。成立工作室，发动老党员入驻，发挥先锋引领作用；设立社区微基金、募集慈善资源，\n拓宽资金来源渠道。\n5.充分发动居⺠参与。开展活动征集群众智慧，项目化吸纳服务资源，发动居⺠以无偿、低偿、有偿相结合方\n式点对点提供互助服务。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文305字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2023/申论-统考.md",
+    "question_number": 4,
+    "question": "根据“给定资料1”，归纳概括济钢从“靠钢吃饭”到“无钢发展”的主要经验。（20分）\n要求：全面、准确、有条理，不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 305,
+    "raw_answer_characters_without_urls": 430,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "cebc38f2f7b04557f0f7a23e56ccbf92f6f914b9ead3246ab3116568d706556e",
+    "start_excerpt": "要积极推动传统产业新旧动能转换，形成绿色可持续发展产业架构：\n1.规划新的发展道路。确立转型升级、发展新兴产业的战略目标，重新规划产业布局和多维度产业生态体系，\n确立新的主业定位，实施“嫁接式跨界融合”工程。\n2.成立产业化项目承接平台。与科研单位合作，对核心技术进行科研成果转化，发展高端制造业，填补细分领\n域高科技产业空白。\n3.把握时代机遇。积极对接国家战略，深度融入政府产业项目建设，着力构建产业生态圈，确立起新产业体\n系。\n4.加",
+    "end_excerpt": "科研成果转化，发展高端制造业，填补细分领\n域高科技产业空白。\n3.把握时代机遇。积极对接国家战略，深度融入政府产业项目建设，着力构建产业生态圈，确立起新产业体\n系。\n4.加强产学研合作。与大学联合成立科研机构，在高端、绿色材料应用方面进行公司研发，为打造高端产业链\n提供新动能。\n5.培育精神信念。传承老国企的拼搏精神、一团火精神，全体成员知难而上、持续奋斗。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文305字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2023/申论-统考.md",
+    "question_number": 5,
+    "question": "请结合全部给定资料，以“常⻘之道，贵在自胜”为主题，自拟题目，撰写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1042,
+    "raw_answer_characters_without_urls": 3424,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "2e97e1b06faa7657fbf1041c8f3eb917c55d6070bd3b1904f645e21d437a233d",
+    "start_excerpt": "以自胜之道，绘常⻘画卷\n“常⻘之道，贵在自胜。”这一古训穿越历史尘埃，在今天依然振聋发聩。它揭示了一个朴素的真理：真正的⻓\n⻘之路，源于对内生困境的清醒认知，源于打破陈规、自我革新的勇气与智慧。个人、组织乃至一个⺠族、国家，\n要保持生机活力、实现持续发展，关键在于不断超越自我、突破桎梏。在时代的浪潮中，唯有秉持自胜之道，方能\n绘就常⻘画卷。\n“自胜”需要破立并举，以解放思想为先导，推进制度改革，破除发展桎梏，释放发展活力。“穷则变，变则",
+    "end_excerpt": "格局。这启示我\n们，人⺠是历史的创造者，更是历史演进的动力源泉。唯有充分激发人⺠内心热忱、自主奋进精神与开拓创新思\n维，方可汇聚排山倒海之势，推动发展不断跃上新的台阶。\n“历史只会眷顾坚定者、奋进者、搏击者。”走在新的赶考之路上，面对更高的发展要求，我们尤须深谙“自\n胜”之道。唯有如此，我们才能向着共同富裕的美好明天稳步迈进，交出无愧于人⺠与历史的优异答卷。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2023/申论-统考.md",
+    "question_number": 6,
+    "question": "新春伊始，⻬鲁大地动能澎湃，焕发蓬勃生机。结合给定资料，以“脉动的力量”为主题，自拟标题，自选⻆度，撰\n写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1103,
+    "raw_answer_characters_without_urls": 3484,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "83b3cfb0719836fb9af82c7aac1bd899d33584f2b7319ad5760405a063e5f0ad",
+    "start_excerpt": "⻬鲁大地生机勃勃，发展动能澎湃涌动\n——论山东高质量发展\n从泰山之巅到⻩海之滨，从科研院所到工厂⻋间，高热效率柴油机、高速磁浮交通系统突破国外垄断，国信1\n号、蓝鲸2号、雪蜡⻋填补国内空白……这些成就展现出⻬鲁大地热潮涌动，处处迸发澎湃动能。科技的创新力量、\n产业的升级力量、政府的支持力量，这些“脉动力量”为高质量发展注入强大势能。\n高质量发展，有赖于关键核心技术突破。这既得益于全社会崇尚、鼓励、尊重创新的氛围，也从科技创新工\n程、对接",
+    "end_excerpt": "发“人才红利”，塑\n造人才新动能。未来政府部⻔还要提供更专业的优质服务，把握更精准的工作标准，滴灌更特色的政策支持，当好\n企业服务员，为释放企业创新动能提供后续保障。\n因势而谋、聚势而强、乘势而上，下一步山东将继续着力加大科技创新力度，加速产业升级速度，提升政府支\n持温度，持续增强前进动能，让各类利好因素在⻬鲁大地加速积聚，让经济高质量发展脉动更为强劲有力！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2024/申论-A卷.md",
+    "question_number": 1,
+    "question": "问题一：请根据“给定资料1”，概括F市如何实现“从过去的‘能办’到现在的‘方便办’‘高效办’”。（15分）\n\n要求：全面、准确、有条理，不超过250字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 252,
+    "raw_answer_characters_without_urls": 423,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "b1df7ee69a3e9c3afe3ad1d1de597c92271a7a1ed0afda41d852698bd68cff5c",
+    "start_excerpt": "推行“高效办成一件事”，提升服务效能。\n1.增强问题意识。坚持问题导向，聚焦企业和群众反映强烈的问题，组织各部⻔各单位创新实践。\n2.强化政策支持。出台常态化沟通交流机制等政策文件，优化办事流程，增强服务主动性，指导群众办事。\n3.加强统筹联动。整合关联业务，实现线上线下打包办、一次办；党委、政府统筹协调，有序推动落实，提高\n工作效率。\n4.搭建服务平台。推动数据共享，打破部⻔间各种壁垒，实现网上提交、一体化办理。\n5.提升工作满意度。",
+    "end_excerpt": "化沟通交流机制等政策文件，优化办事流程，增强服务主动性，指导群众办事。\n3.加强统筹联动。整合关联业务，实现线上线下打包办、一次办；党委、政府统筹协调，有序推动落实，提高\n工作效率。\n4.搭建服务平台。推动数据共享，打破部⻔间各种壁垒，实现网上提交、一体化办理。\n5.提升工作满意度。及时解决反馈问题，现场征询、电话回访、实地走访等，及时获取办理情况反馈意⻅。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文252字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2024/申论-B卷.md",
+    "question_number": 2,
+    "question": "问题二：请根据“给定资料3”，谈谈对划线句子“东梁村如今可谓‘只此青绿’，但未来不能‘只有青绿’”的理解。（20分）\n\n要求：理解准确，分析透彻，条理清晰；不超过300字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 306,
+    "raw_answer_characters_without_urls": 548,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "f1dc2f5631acf0a2f5860dfae0310820fa32eca5d8cf468bcd582c5f0f3ac7fa",
+    "start_excerpt": "“只此⻘绿”是指东梁村生态环境得到改善：1.动员群众。发展生态旅游，村两委入户做好思想工作，争取村⺠\n理解配合。2.污染治理。关停重污染企业，建立污水站，集中处理生活污水。3.生态重建。筹措资金，开展土地复\n垦、生态修复。4.生态管控。召开村⺠代表大会，制定村规⺠约，严控生态破坏行为。\n不能“只有⻘绿”是指要将生态保护与经济发展相结合，坚持可持续发展：1.发展特色产业。因地制宜，建立合\n作社，形成“生态+农业+旅游”的绿色发展模式。2.",
+    "end_excerpt": "约，严控生态破坏行为。\n不能“只有⻘绿”是指要将生态保护与经济发展相结合，坚持可持续发展：1.发展特色产业。因地制宜，建立合\n作社，形成“生态+农业+旅游”的绿色发展模式。2.严格管控土地。统一安排种植物料，专家定期指导，责任到户。\n3.乡村整体规划。聘请专业机构设计，资源人文特色融入休闲旅游，美化道路建筑。\n东梁村的实践体现“两山”生态文明理念，值得借鉴。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文306字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2024/申论-统考.md",
+    "question_number": 3,
+    "question": "请根据“给定资料1”，概括F市如何实现“从过去的‘能办’到现在的‘方便办’‘高效办’”。（15分）\n要求：全面、准确、有条理，不超过250字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 252,
+    "raw_answer_characters_without_urls": 336,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "b1df7ee69a3e9c3afe3ad1d1de597c92271a7a1ed0afda41d852698bd68cff5c",
+    "start_excerpt": "推行“高效办成一件事”，提升服务效能。\n1.增强问题意识。坚持问题导向，聚焦企业和群众反映强烈的问题，组织各部⻔各单位创新实践。\n2.强化政策支持。出台常态化沟通交流机制等政策文件，优化办事流程，增强服务主动性，指导群众办事。\n3.加强统筹联动。整合关联业务，实现线上线下打包办、一次办；党委、政府统筹协调，有序推动落实，提高\n工作效率。\n4.搭建服务平台。推动数据共享，打破部⻔间各种壁垒，实现网上提交、一体化办理。\n5.提升工作满意度。",
+    "end_excerpt": "化沟通交流机制等政策文件，优化办事流程，增强服务主动性，指导群众办事。\n3.加强统筹联动。整合关联业务，实现线上线下打包办、一次办；党委、政府统筹协调，有序推动落实，提高\n工作效率。\n4.搭建服务平台。推动数据共享，打破部⻔间各种壁垒，实现网上提交、一体化办理。\n5.提升工作满意度。及时解决反馈问题，现场征询、电话回访、实地走访等，及时获取办理情况反馈意⻅。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文252字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2024/申论-统考.md",
+    "question_number": 4,
+    "question": "请根据“给定资料1”，概述“好品山东”好在哪里。（15分）\n要求：全面、准确、有条理，不超过250字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 254,
+    "raw_answer_characters_without_urls": 342,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "6b431fb9f0de1055157b991a662c1113e08de9bbbff6e1190659f3688605b761",
+    "start_excerpt": "1.好在产品质量。追求极致用户体验，用户制定质量标准，企业建立完善质量管理体系，夯实品质基础，打造\n过硬品牌。\n2.好在文化底蕴。借助先进技术，产品融入中国文化，展示中国创造魅力，追溯历史，传承文化。\n3.好在科技含量。进行自主研发，打破国外技术垄断；实施创新发展战略，建强国家级创新平台，提高企业科\n技创新能力。\n4.好在精神品质。坚持精神力量、技术创新、领先效率不变；不断开拓应变、创新求变、革新谋变。\n5.好在低碳环保。落实“双碳”战",
+    "end_excerpt": "展示中国创造魅力，追溯历史，传承文化。\n3.好在科技含量。进行自主研发，打破国外技术垄断；实施创新发展战略，建强国家级创新平台，提高企业科\n技创新能力。\n4.好在精神品质。坚持精神力量、技术创新、领先效率不变；不断开拓应变、创新求变、革新谋变。\n5.好在低碳环保。落实“双碳”战略，节能减排，绿色化、低碳化发展；提高城市绿化覆盖率，打造宜居宜业宜\n游型新城市。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文254字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2024/申论-统考.md",
+    "question_number": 5,
+    "question": "请以“给定资料6”中的划线句子“众力并，则万钧举”为主题，结合全部给定资料，自拟题目，写一篇文章。（40\n分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1101,
+    "raw_answer_characters_without_urls": 3692,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "84eea62850db536b93fd52e9e03d825a53c106968d79eb31fc026596230bf5b3",
+    "start_excerpt": "⻬心协力谋发展，携手共筑梦想路\n“众力并，则万钧不足举”，出自晋代思想家葛洪所著《抱朴子·外篇·务正》，意谓若能汇聚众人的力量，即\n便“万钧重物”也不难举起。从古老的灌溉系统到现代的航天壮举，从微小的社会变革到宏大的国家发展，无不凝聚\n着集体的智慧与力量，托举起看似不可能实现的宏伟大愿景，充分展现了“众力并”的重要性。\n“众力并”体现在部⻔联动，打破部⻔间原有的各种壁垒，大力提升政府服务效能。⻓久以来，政府部⻔间存在\n的壁垒如同一道道无",
+    "end_excerpt": "当，同时为国家建设发展找了新的增⻓点；山东与河南的《⻩河流域（豫鲁段）横向生态保护补偿协议》，让河\n南赢得了补偿资金，山东赢得了优良水质，实现了双赢，谱写着“鲁豫同心”的美好篇章。所以，打破空间上的限\n制，要勠力同心，奋楫笃行，行而不辍，才能未来可期。\n人心⻬，泰山移。在未来的日子里，让我们携手并肩，共克艰难与挑战，共同为实现中华⺠族的伟大复兴而努\n力奋斗！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2024/申论-统考.md",
+    "question_number": 7,
+    "question": "请根据“给定资料1”，谈谈对划线句子“东梁村如今可谓‘只此⻘绿’，但未来不能‘只有⻘绿’”的理解。（20分）\n要求：理解准确，分析透彻，条理清晰；不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 306,
+    "raw_answer_characters_without_urls": 461,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "f1dc2f5631acf0a2f5860dfae0310820fa32eca5d8cf468bcd582c5f0f3ac7fa",
+    "start_excerpt": "“只此⻘绿”是指东梁村生态环境得到改善：1.动员群众。发展生态旅游，村两委入户做好思想工作，争取村⺠\n理解配合。2.污染治理。关停重污染企业，建立污水站，集中处理生活污水。3.生态重建。筹措资金，开展土地复\n垦、生态修复。4.生态管控。召开村⺠代表大会，制定村规⺠约，严控生态破坏行为。\n不能“只有⻘绿”是指要将生态保护与经济发展相结合，坚持可持续发展：1.发展特色产业。因地制宜，建立合\n作社，形成“生态+农业+旅游”的绿色发展模式。2.",
+    "end_excerpt": "约，严控生态破坏行为。\n不能“只有⻘绿”是指要将生态保护与经济发展相结合，坚持可持续发展：1.发展特色产业。因地制宜，建立合\n作社，形成“生态+农业+旅游”的绿色发展模式。2.严格管控土地。统一安排种植物料，专家定期指导，责任到户。\n3.乡村整体规划。聘请专业机构设计，资源人文特色融入休闲旅游，美化道路建筑。\n东梁村的实践体现“两山”生态文明理念，值得借鉴。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文306字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2025/申论-A卷.md",
+    "question_number": 1,
+    "question": "问题一：请根据“给定资料1”，谈谈对划线句子“‘新时代的印加古道’新起点”的理解。（15分）\n\n要求：理解准确，分析透彻，条理清晰；不超过250字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 254,
+    "raw_answer_characters_without_urls": 530,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3cc90601cff886cb550fd3ec7ee311331168da3f82f668d3f6c6c44036778cdd",
+    "start_excerpt": "这句话是指，正如印加古道联通了安第斯山脉南北，钱凯港的修建联通了太平洋两端，推动秘鲁向海而兴，赋\n能沿岸经济体共同发展。具体意义有：\n1.有力推动中秘经贸合作。南美洲到亚洲的货物运输时间大幅缩短，物流成本大幅降低，促进商品双向流通。\n2.提供太平洋海运新选择。辐射范围可达日、韩、美等地，成为拉美地区新枢纽港和太平洋⻔户港。\n3.实现拉美和加勒比地区互联互通。与泛美公路直连，衔接海陆运输，带动地区整体发展和一体化建设，巩固\n秘鲁⻔户地位。",
+    "end_excerpt": "南美洲到亚洲的货物运输时间大幅缩短，物流成本大幅降低，促进商品双向流通。\n2.提供太平洋海运新选择。辐射范围可达日、韩、美等地，成为拉美地区新枢纽港和太平洋⻔户港。\n3.实现拉美和加勒比地区互联互通。与泛美公路直连，衔接海陆运输，带动地区整体发展和一体化建设，巩固\n秘鲁⻔户地位。\n未来，还需要推进“一带一路”建设，构建国际物流大通道，推动人类命运共同体建设。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文254字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2025/申论-A卷.md",
+    "question_number": 2,
+    "question": "问题二：请根据“给定资料3”，列出A省交通运输厅接受问政后需整改的“问题清单”。（20分）\n\n要求：全面、准确、有条理；不超过300字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 302,
+    "raw_answer_characters_without_urls": 486,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "567c81d9ccd18aff68a130328f955fce6b496c2fd75d06a24a17d2ad58d7ca1d",
+    "start_excerpt": "1.“绿通”政策执行标准不统一。各地情况不同，工作人员认知有别，理解有差异，对政策的具体标准、认定范\n围把控不够恰当，影响运输效率。\n2.物流领域“小、散、乱、杂”问题。货运市场无序，低价、恶性竞争；货运中介欺诈司机，维权渠道缺失；货\n运平台收取高额会员费、信息费及额外抽成，存在虚假订单；部分港口附近无危化品专用停⻋场，易违规停⻋导致\n扣分、罚款；高速服务区油价高，增加运输成本。\n3.缺乏新能源相关补贴政策。柴油价格持续上涨，物流企业燃",
+    "end_excerpt": "息费及额外抽成，存在虚假订单；部分港口附近无危化品专用停⻋场，易违规停⻋导致\n扣分、罚款；高速服务区油价高，增加运输成本。\n3.缺乏新能源相关补贴政策。柴油价格持续上涨，物流企业燃油成本过高；物流企业更换新能源货⻋资金压力\n大，影响企业周转。\n4.快递新规脱离实际。强制要求“送货上⻔”，增加时间、人力成本，实际投递场景难以执行，未平衡消费者权\n益与行业利益。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文302字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2025/申论-统考.md",
+    "question_number": 3,
+    "question": "请根据“给定资料1”，列出A省交通运输厅接受问政后需整改的“问题清单”。（20分）\n要求：全面、准确、有条理；不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 302,
+    "raw_answer_characters_without_urls": 399,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "567c81d9ccd18aff68a130328f955fce6b496c2fd75d06a24a17d2ad58d7ca1d",
+    "start_excerpt": "1.“绿通”政策执行标准不统一。各地情况不同，工作人员认知有别，理解有差异，对政策的具体标准、认定范\n围把控不够恰当，影响运输效率。\n2.物流领域“小、散、乱、杂”问题。货运市场无序，低价、恶性竞争；货运中介欺诈司机，维权渠道缺失；货\n运平台收取高额会员费、信息费及额外抽成，存在虚假订单；部分港口附近无危化品专用停⻋场，易违规停⻋导致\n扣分、罚款；高速服务区油价高，增加运输成本。\n3.缺乏新能源相关补贴政策。柴油价格持续上涨，物流企业燃",
+    "end_excerpt": "息费及额外抽成，存在虚假订单；部分港口附近无危化品专用停⻋场，易违规停⻋导致\n扣分、罚款；高速服务区油价高，增加运输成本。\n3.缺乏新能源相关补贴政策。柴油价格持续上涨，物流企业燃油成本过高；物流企业更换新能源货⻋资金压力\n大，影响企业周转。\n4.快递新规脱离实际。强制要求“送货上⻔”，增加时间、人力成本，实际投递场景难以执行，未平衡消费者权\n益与行业利益。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文302字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2025/申论-统考.md",
+    "question_number": 6,
+    "question": "请围绕对“给定资料6”中划线句子“万物奔流，经济天下”的理解，结合全部给定资料，自拟题目，写一篇文章。\n（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1060,
+    "raw_answer_characters_without_urls": 3580,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "d476411b863dc4c4b16cd76d008e9e214c89579ef3227b0211690413146a25b3",
+    "start_excerpt": "物流脉动，经济天下\n晨曦微露，⻘岛街巷间无人配送⻋悄然穿行；正午时分，淄博智慧物流园的分拣线高速运转；夜幕之下，中欧\n班列的铁轨声正唤醒亚欧大陆……这些流动的轨迹，勾勒出“万物奔流，经济天下”的时代图景。物流如同经济的血\n脉筋络，贯通产销、连接内外，支撑着全球资源与商品的高效流转。在全球格局深刻重塑的当下，以物流之“畅”促\n经济之“兴”，不仅是应对变局的关键之举，更是赢得未来的制胜之道。\n打造现代化物流体系，需构建内外联通、高效便捷的物",
+    "end_excerpt": "实现海关、港口、铁路数据互联互通，减少企业单证处理成本；治理层面则需注重精准施策，让高信\n用企业享受快速通关便利，提升监管效能，降低合规成本。政策、制度、治理三者协同发力，方能系统破解体制机\n制障碍，充分释放物流体系的发展潜能。\n从冷链专列到无人配送，从跨境班列到智能调度，中国物流正以奔腾之势贯通内外、赋能循环，在“万物奔\n流”中铺就“经济天下”的壮阔通途。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山东/2025/申论-统考.md",
+    "question_number": 8,
+    "question": "请根据“给定资料1”，谈谈对划线句子“‘新时代的印加古道’新起点”的理解。（15分）\n要求：理解准确，分析透彻，条理清晰；不超过250字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 254,
+    "raw_answer_characters_without_urls": 443,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3cc90601cff886cb550fd3ec7ee311331168da3f82f668d3f6c6c44036778cdd",
+    "start_excerpt": "这句话是指，正如印加古道联通了安第斯山脉南北，钱凯港的修建联通了太平洋两端，推动秘鲁向海而兴，赋\n能沿岸经济体共同发展。具体意义有：\n1.有力推动中秘经贸合作。南美洲到亚洲的货物运输时间大幅缩短，物流成本大幅降低，促进商品双向流通。\n2.提供太平洋海运新选择。辐射范围可达日、韩、美等地，成为拉美地区新枢纽港和太平洋⻔户港。\n3.实现拉美和加勒比地区互联互通。与泛美公路直连，衔接海陆运输，带动地区整体发展和一体化建设，巩固\n秘鲁⻔户地位。",
+    "end_excerpt": "南美洲到亚洲的货物运输时间大幅缩短，物流成本大幅降低，促进商品双向流通。\n2.提供太平洋海运新选择。辐射范围可达日、韩、美等地，成为拉美地区新枢纽港和太平洋⻔户港。\n3.实现拉美和加勒比地区互联互通。与泛美公路直连，衔接海陆运输，带动地区整体发展和一体化建设，巩固\n秘鲁⻔户地位。\n未来，还需要推进“一带一路”建设，构建国际物流大通道，推动人类命运共同体建设。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文254字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山西/2022/申论-县乡.md",
+    "question_number": 4,
+    "question": "问题四：新民镇推进蚕桑产业发展的成功经验入选省乡村振兴局拟印发的乡村振兴典型案例汇编，请根据“给定资料4”，为新民镇撰写一份案例介绍材料。（35分）\n\n要求：\n\n（1）紧扣资料，内容全面；\n\n（2）条理清晰，结构完整；\n\n（3）字数800-1000字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_range",
+      "minimum": 800,
+      "maximum": 1000,
+      "confidence": "high",
+      "evidence": "800-1000字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 657,
+    "raw_answer_characters_without_urls": 744,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "78eb2c0afc04afde267ece785c9ffc7aae2881fc0cbd3c8667710c8c8fe2d0fe",
+    "start_excerpt": "新民镇：传统蚕桑“破茧成蝶” 富民兴村奔小康\n\n新民镇围绕桑蚕产业下功夫，让蚕桑产业高质量发展之路越走越宽阔，带领农户脱贫致富，为助力乡村振兴提供了坚实的产业基础。主要经验有：\n\n一、提升产业规模。通过旧产区“改造”、现产区“挖潜”、潜产区“扩容”等方式，扩大蚕桑种植面积，提升产量；创建高产示范基地，实现就近就业，提高工资收入，集中流转土地，入股当地龙头企业，实现每年分红，整合涉农资金，补助农户，稳住种养成本，提高农户积极性。二、提供技",
+    "end_excerpt": "，突破传统养蚕季节限制，最大程度延长养殖时间，提升存活率和出丝率；引进自动化设备，减少人工成本和劳动强度。五、推动三\n\n产融合。依托自然资源优势，发展农业体验旅游，举办桑果采摘节，吸引游客采摘、游玩，推动农旅融合；延长产业链条，开发桑叶面、桑葚酒、桑葚膏等多元衍生农产品；以产品质量吸引客商上门，并由镇里推动农超对接、引入电商销售，打造“线上+线下”销售渠道。",
+    "issues": [
+      {
+        "rule": "explicit_minimum_not_met",
+        "confidence": "high",
+        "detail": "正文657字，低于题面明确下限800字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山西/2023/申论-县乡.md",
+    "question_number": 1,
+    "question": "问题一：根据“给定资料1”，请你谈谈T市为守护市民“舌尖上的安全”采取了哪些信息化手段。（15分）\n\n要求：全面、准确、有条理，不超过250字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 255,
+    "raw_answer_characters_without_urls": 396,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "fff44ce07c377874d4938bfd2c0fe6933ae58aa4b31e4a73c2754f38ea998ce5",
+    "start_excerpt": "1.完善学校食堂线上监督。将餐盒二维码发到家长微信群，公开餐品信息；利用食安T 市App，开放后厨监控视频，家长线上监督，提供投诉渠道。\n\n2.开展重点单位餐饮在线监管。设立智慧监管平台云中心，后厨视频实时接入；执法人员在线监控，远程识别抓拍记录预警违规行为，督促整改；系统定时二次巡查，自动下达整改、处罚通知书，同步向移动执法端发送信息。\n\n3.设置食品安全溯源系统。生成追溯码，食品信息全程查询；检查组随机扫描检查商品信息，通过App和",
+    "end_excerpt": "在线监管。设立智慧监管平台云中心，后厨视频实时接入；执法人员在线监控，远程识别抓拍记录预警违规行为，督促整改；系统定时二次巡查，自动下达整改、处罚通知书，同步向移动执法端发送信息。\n\n3.设置食品安全溯源系统。生成追溯码，食品信息全程查询；检查组随机扫描检查商品信息，通过App和行政执法信息平台现场录入；整合各方资源，实现自建、监管系统互联互通的全链条监管。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文255字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山西/2023/申论-省市.md",
+    "question_number": 1,
+    "question": "问题一：根据“给定资料1”，请概括H市为优化营商环境采取了哪些措施，取得了哪些成效。（15分）\n\n要求：全面、准确、有条理，不超过350字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 350,
+      "confidence": "high",
+      "evidence": "不超过350字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 354,
+    "raw_answer_characters_without_urls": 495,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "a6aacc8dc1f9624135cbe6d8c90f670b7d5c427a14780abc8da2752376c1aeb8",
+    "start_excerpt": "1.创新项目落地服务保障机制。设计办理流程图，标注所需文件和办理进度时限；设立周末不打烊窗口，各单位轮岗，随时服务；专人专责，超期问题督导组及时询问，提高审批效率。\n\n2.开启政企直通车智慧平台。设企业诉求板块，专人梳理分类企业诉求，推送移交属地和职能部门，全过程留痕，追踪督导办理结果、时限；设惠企政策板块，集中发布更新推送政策，提供政策解读，让服务贴心。\n\n3.建立干部常态化联系制度。成立“点对点工作组”，定期主动走访企业，帮企业打开",
+    "end_excerpt": "\n3.建立干部常态化联系制度。成立“点对点工作组”，定期主动走访企业，帮企业打开销路；督导组查询服务成效，让政府了解企业，实现精准帮扶。\n\n4.助力企业健康发展。主动帮助企业找准市场定位，更新产品结构，错位发展，获得比较优势；建设企业家之家，免费培训，提升企业家思想、业务水平；出台政策，选派年轻优秀高管，到政府经济管理部门锻炼，开阔眼界、熟悉政策、增长才干。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文354字，超过题面明确上限350字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/山西/2024/申论-县乡卷.md",
+    "question_number": 1,
+    "question": "问题一：请根据“给定资料1”，概括W县推进茶旅融合发展的主要做法。（15分）\n\n要求：内容全面，表达准确，不超过250字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 252,
+    "raw_answer_characters_without_urls": 389,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "5f464e65862fd104cb0c47b236b8e3abd12919199c79be67fc068f1d0bb91c89",
+    "start_excerpt": "1.挖掘特色，集结游客。基于茶厂不同特色，打造风格不同的接待点和“部落”;发动农户改建民居，完善交通设施布置夜景。\n\n2.展现风景，畅通交通。建设道路配备车辆;开通运营观光轨道交通项目提升游客体验。\n\n3.调整布局，发展项目。以民宿等实物为载体，融入文化内涵和山水情怀;创新产品与业态，营造全过程与全要素的体验。\n\n4.文化售卖，培养人才。开展体验式旅游，展示制茶器具和工序;不定期组织活动，推广普及技艺与文化。\n\n5.打造品牌，创新营销。",
+    "end_excerpt": "开通运营观光轨道交通项目提升游客体验。\n\n3.调整布局，发展项目。以民宿等实物为载体，融入文化内涵和山水情怀;创新产品与业态，营造全过程与全要素的体验。\n\n4.文化售卖，培养人才。开展体验式旅游，展示制茶器具和工序;不定期组织活动，推广普及技艺与文化。\n\n5.打造品牌，创新营销。依托地理标识，挖掘历史文化内涵形成多元营销模式;通过广播平台与大赛展示特色资源。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文252字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广西/2018/申论-统考.md",
+    "question_number": 1,
+    "question": "请围绕微传播这一视⻆，思考“给定资料7”中的划线句子：“一切予人向上和希望、促使人不断追求、让生活变得圆\n满幸福的动力和感情就是正能量”。结合给定资料，自拟题目，自选⻆度，写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 960,
+    "raw_answer_characters_without_urls": 3276,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "a2b831e47c906485ae674862df4403f2b017c7557a00de72d1feec553d5d0509",
+    "start_excerpt": "微传播的正能量\n什么是“微传播”？就是微信、微博、新闻客户端逐渐成为主要的信息传播平台和网⺠自主参与发言、阅读、评\n论的网络舆论重心。微传播使得人人都可以为自己的利益发声，人人都有机会传播自己的观点和理念。微传播打破\n了传统媒体的话语权垄断，使人们的社会话语权更加平等。\n权利意味着责任。微传播给个人更大发言自主权的同时，要求我们传播更多积极向上的希望，传播让生活变得\n圆满幸福的社会正能量。\n微传播的正能量是积极保护自己和履行社会责任的力",
+    "end_excerpt": "侵权，\n不参与不文明行为。另一方面，要学会理性判断，对于偏激信息不传播，不转发，不分享，不议论，做文明的践行\n者，正义的捍卫者。\n正如网友们所说“与其在别处仰望，不如在这里并肩”，微传播能产生集聚效应，影响主流媒体，推动社会进\n步。因此，微传播应该激发公⺠责任意识，传播正能量，发挥其成⻛化人、凝心聚力的作用。只有这样，微传播才\n能更有传播力、影响力和公信力。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广西/2018/申论-统考.md",
+    "question_number": 2,
+    "question": "“给定资料7”中提到，“‘活着’的历史是文化，‘死去’的文化是历史”。请从这句话引发思考，结合给定资料，联系实\n际，自选⻆度，自拟题目，写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1187,
+    "raw_answer_characters_without_urls": 3548,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "d955bc5ef7dd05520abea6da6c06833f9192fd69b551316d5e45ecddeb56fd6b",
+    "start_excerpt": "传承“活着”的文化 牢记“死去”的历史\n每年的4月18日，是“国际古迹遗址日”。在中国，悠久的历史历经数千年，最终形成极具分量又独具特色的中\n国文化，孕育出灿烂的中华文明。然而，文化的发展也必将经历一个新陈代谢、推陈出新的过程。这就需要我们对\n现存文化保护、传承、创新，同时牢记历史经典，不忘精神根脉。\n传承文化，需要深入学习，了解优秀文化的真正内涵；在新时代，利用多样化的传播方式，秉持开放心态，践\n行文化发展理念；将文化与经济结合，才能",
+    "end_excerpt": "，开拓创新，塑造中华⺠族优秀的品格。历史已经成为过去，我们无法、也不\n可让时间倒流，但历史精神不容遗忘，唯有继承、发扬、创新，才能让中华记忆历久弥新，塑造中华⺠族优秀的品\n格。\n“文化兴国运兴，文化强⺠族强”。传承与牢记都是对历史的尊重，对文化的尊重。我们所有人都有责任，以文\n化复兴为契机，塑造并培养中国人独有的文化情怀，让继承与发展的文化理念成为广泛共识！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广西/2020/申论-B类.md",
+    "question_number": 3,
+    "question": "三、N县县委县政府为鼓励大学生返乡创业，准备召集本县的应届大学毕业生，举办一场返乡创业座谈会，拟邀请小张出席。请根据给定资料3，为小张写一篇发言提纲。（20分）\n\n要求：（1）紧扣资料，针对性强；（2）层次分明，逻辑性强；（3）格式规范，文体性强；（4）正文部分400字左右。\n\n<!-- R5 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "approximate_target",
+      "target": 400,
+      "review_minimum": 360,
+      "review_maximum": 448,
+      "confidence": "medium",
+      "evidence": "400字左右"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 331,
+    "raw_answer_characters_without_urls": 479,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "7e82c135eb5bfd57ddfea1f1c923f328bf1e562c5cc1b1514ed9d69570364d22",
+    "start_excerpt": "发言提纲\n一、开场白：1.致谢。\n\n2.介绍自己及创业历程。\n\n二、优势和意义：1.顺应农村产业结构调整和电子商务发展的潮流。政府重视，提供政策保障和合作平台。2.农村为大学生提供了追逐梦想的广阔天地，能提高经济收入，和家人团聚，实现自我价值。3.促进人才回流，给农村带去新想法、生机活力，解决留守儿童和空巢老人问题。4.带动周边产业，增加村民收入；带动配套设施，给村民生活带来便利。\n\n三、创业建议：1.明确创业目标，发现机遇，抓住机遇。",
+    "end_excerpt": ".带动周边产业，增加村民收入；带动配套设施，给村民生活带来便利。\n\n三、创业建议：1.明确创业目标，发现机遇，抓住机遇。2.学习创业知识，积累创业经验，开展市场调查，选择具有市场前景的项目。3.不惧失败，遇到困难灵活调整创业思路。4.开发新产品，选择专业人才加强创新，注重原创，提升竞争力。\n\n四、结束语：1.希望各位能积极返乡创业。2.期盼政府提供更多帮助。",
+    "issues": [
+      {
+        "rule": "approximate_target_short",
+        "confidence": "medium",
+        "detail": "正文331字，少于约400字目标的90%；这是候选阈值，不是假定官方最低分界"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广西/2023/申论-B类.md",
+    "question_number": 4,
+    "question": "问题四：S县近期准备举办全县工业企业家联谊会，请根据“给定资料4”，为黄县长拟写讲话稿。（40分）\n\n要求：（1）角色定位准确，内容切合主题，语言流畅，有感染力；（2）800-1000字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_range",
+      "minimum": 800,
+      "maximum": 1000,
+      "confidence": "high",
+      "evidence": "800-1000字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 714,
+    "raw_answer_characters_without_urls": 786,
+    "removed_rules": [
+      "generic_answer_label",
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "ee185dbe82e30970f75733d573894a41583b7ca7d8937bff3c323689284edff6",
+    "start_excerpt": "**创新产业链共谋新未来**\n\n各位企业家朋友：大家好！我县曾以采矿、水泥等产业为主导，从矿产冶炼起步，逐步发展出铜杆、铜板带、铜箔等加工品生产能力，并探索废酸、废气、废渣处理，争取更高附加利润，后来开始向产业链式发展要竞争力，如今已形成金铜、半导体新材料、锂电新材料产业链，且正在建设储能产业链。在此过程中，我县做出了诸多努力：\n一、打造新能源新材料产业链，提高产业集聚能力。关停“小散乱”工厂，结合市场需求，积极引导企业向生产半导体领域",
+    "end_excerpt": "四、干部转变理念，服务工业发展。\n\n县委、县政府领导担任“链长”，带头请专家做讲座，进企业做“学生”，学习产业知识，让服务产业发展的干部成为产业专家；组织策划产业链招商图谱，引进并挂钩服务重点项目。\n\n我县工业发展的成就，离不开各位企业家朋友高瞻远瞩的眼光、坚持不懈的努力。我们也将继续拿出最大的诚意，做好各项企业服务，并与大家一起为了共同的发展目标持续前进！",
+    "issues": [
+      {
+        "rule": "explicit_minimum_not_met",
+        "confidence": "high",
+        "detail": "正文714字，低于题面明确下限800字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广西/2024/申论-A类.md",
+    "question_number": 1,
+    "question": "问题一：“给定资料1”中提到“只有学会以‘一米’高度看城市，才能让儿童真正感受到城市的关怀与温暖。”，请谈谈N市围绕这个方面做了哪些工作？（15分）\n\n要求：全面、准确、有条理，字数不超过250字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 255,
+    "raw_answer_characters_without_urls": 400,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "c7322d13d479a20cfbf8f491925c7b0d2471e5c74512cb7bad711c4127f13228",
+    "start_excerpt": "1.建设儿童友好空间。出台友好建设导则，整体调研了解情况；融合当地特色，听取家长、孩子意见，拓展公共服务空间；依托当地文化资源，定期举办文化娱教活动，融入趣味元素，建设儿童文化空间。\n\n2.打造儿童友好公共服务体系。设置流动图书馆，提供循环借阅；出台全国首个地方标准，打造均等化服务体系；在园儿童享受健康成长补贴，平等享受义务教育，儿童服务设施基本实现公共场所全覆盖。\n\n3.发展儿童友好产业。首次系统性提出概念，发布《白皮书》，从政府、企",
+    "end_excerpt": "元素，建设儿童文化空间。\n\n2.打造儿童友好公共服务体系。设置流动图书馆，提供循环借阅；出台全国首个地方标准，打造均等化服务体系；在园儿童享受健康成长补贴，平等享受义务教育，儿童服务设施基本实现公共场所全覆盖。\n\n3.发展儿童友好产业。首次系统性提出概念，发布《白皮书》，从政府、企业、消费者角度提出发展建议，把儿童友好理念融入到产业发展，提供优质产品和服务。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文255字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广西/2024/申论-C类.md",
+    "question_number": 3,
+    "question": "问题三：根据“给定资料3”，梳理H市营商环境存在的问题，并提出解决建议。（30分）\n\n要求：\n　　（1）全面、准确；\n　　（2）所提建议与问题相对应，具体明确，切实可行；\n　　（3）字数不超过400字。\n\n<!-- R5 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 400,
+      "confidence": "high",
+      "evidence": "不超过400字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 403,
+    "raw_answer_characters_without_urls": 548,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "9e7b25a7481692617e07c5ef56265f179d1796aaf30bd43cf20386d8622f9adf",
+    "start_excerpt": "1.问题：行政服务中心缺少导办、代办服务；工作人员欺骗诱导市民由服务公司代办。对策：增设导办、代办服务窗口，明确服务流程与标准；加强监督调查，对涉及黄牛、工作人员进行处罚。\n\n2.问题：高层次人才认定难，公示咨询电话无法打通，投诉后才收到回复。对策：简化认定程序，增设并公开有效的咨询电话；建立快速响应机制，对投诉及时处理并反馈。\n\n3.问题：缺少取叫号系统；不动产抵押登记系统不兼容。对策：引入取叫号系统，方便业务办理；打通区、市不动产系",
+    "end_excerpt": "移动端办理。\n\n4.问题：中小微企业扶持政策少，助企专员少，企业获得感不强；缺少集成服务平台，政策兑现慢。\n\n对策：加大中小微企业扶持力度，增加助企专员；打造集成服务平台，强化业务培训，完善跨部门服务。\n\n5.问题：数据安全保护不足，个人信息泄露，影响正常工作生活。对策：畅通反馈渠道，鼓励投诉、举报骚扰电话；政府加强数据管理，加密储存个人信息，防止信息泄露。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文403字，超过题面明确上限400字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/新疆/2019/申论-县级.md",
+    "question_number": 2,
+    "question": "二、G县拟在全县范围内开展信用村创建工作，请根据“给定资料3”，谈谈龙台村的经验对这项工作有何启示。(20分)\n\n要求：(1)紧扣资料，内容全面；(2)层次分明，有逻辑性；(3)不超过300字；\n\n<!-- R4 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 305,
+    "raw_answer_characters_without_urls": 473,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "1ef2d51bb468033220200604beeed595c9e7b6e369d6c1e6a620f0cb1f67ac7a",
+    "start_excerpt": "一、建立完善信用记录。1.成立领导小组，结合当地实际，制定实施方案。2.建立党群服务中心，派专人常驻办公。3.鼓励银行、民众参与，签订三方合约。4.采集个人信息，核实后建立永久信用基础档案，进行信用评级。\n\n二、正面激励农户使用信贷。1.宣传信用村建设工作的意义和目标。2.开展试点，发展“信用户”，根据信用等级确定授信资金额度，低利率支持创业。3.先进带动后进，“信用户”帮扶一般农户，带领其维护提升个人信用，发家致富。\n\n三、建立信贷+",
+    "end_excerpt": "意义和目标。2.开展试点，发展“信用户”，根据信用等级确定授信资金额度，低利率支持创业。3.先进带动后进，“信用户”帮扶一般农户，带领其维护提升个人信用，发家致富。\n\n三、建立信贷+精准扶贫模式。1.为有能力、有特长、缺资金的农户提供自主创业信贷支持。2.为发展优势特色产业，出台专门信贷产品。3.根据农民意愿和种植情况，发放扶贫贷款，建立合作社，规模化生产。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文305字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/新疆/2020/申论-下半年.md",
+    "question_number": 1,
+    "question": "“给定资料4”中划线句子提到“消费的作用不仅仅只在经济方面，还有文化，消费也是一种文化传播方式。”请根据\n你对这句话的理解，结合给定资料，自拟题目，自选⻆度，写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1062,
+    "raw_answer_characters_without_urls": 3324,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "256679945d7e2314c260b61be20a4dedd9c5b0623636bf8f18393b0679205894",
+    "start_excerpt": "消费的文化传播功能\n谈及消费，很多人的第一反应是拉动经济增⻓的“三驾⻢⻋”之一，诚然，它能形成新的需求，促进生产发展，\n增加就业岗位，进而促进经济发展。但除了经济方面的功用之外，消费还是一种文化传播方式，能在消费物品实用\n性的基础上，挖掘其中的深层次精神价值，并将其转化为意识形态的美学消费，进而衍生出一种消费文化，让人们\n摆脱物质消费的虚无感，获得更高的精神体验。\n消费作为一种文化传播方式，能满足人们的情感共鸣与认同归属诉求，产生潮流文",
+    "end_excerpt": "的助推。为\n此，我们要加强自律，避免盲目支出与过度浪费；主流媒体和相关部⻔要肩负社会责任，宣传不攀比、务实的消费\n理念；商家也要避免“哄抢”营销，倡导适度购买。\n消费不仅能拉动经济发展，又能满足人们的情感诉求，产生潮流文化、怀旧之⻛，还能传递主流价值观，助推\n绿色消费文化、极简主义发展。我们要注重消费的文化传播价值，培养科学合理的消费习惯，让其助推文化发展！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/新疆/2021/申论-一卷.md",
+    "question_number": 1,
+    "question": "问题一：根据“给定资料1”，分析长茂村由发展落后的乡村蝶变为远近闻名的“明星村”的原因。（15分）\n\n要求：\n\n（1）全面，准确，有条理；\n\n（2）字数不超过200字。\n\n<!-- R4 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 202,
+    "raw_answer_characters_without_urls": 401,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "80ea3073b41e82b2e920a82f6443757e1005ead1233a5d0df925f4a48dc8544d",
+    "start_excerpt": "1.集中流转土地。建立土地合作社，农民以承包经营权入股，整合经营权，规模化、高效使用土地。\n\n2.拓宽收入渠道。农民获得入股分红，二次分配增值租金；实现就业，获得工资收入；返还互助基金利息。\n\n3.发展特色产业。建设厂房和种植基地，租赁给企业，组建产业化联合体；成立产业合作社，形成“三位一体”合作模式。\n\n4.解决资金难题。成立资金互助社，设立互助基金；形成“基金担保+村集体审核+银行授信”合作方式，多渠道融资。",
+    "end_excerpt": "整合经营权，规模化、高效使用土地。\n\n2.拓宽收入渠道。农民获得入股分红，二次分配增值租金；实现就业，获得工资收入；返还互助基金利息。\n\n3.发展特色产业。建设厂房和种植基地，租赁给企业，组建产业化联合体；成立产业合作社，形成“三位一体”合作模式。\n\n4.解决资金难题。成立资金互助社，设立互助基金；形成“基金担保+村集体审核+银行授信”合作方式，多渠道融资。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文202字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/新疆/2021/申论-下半年.md",
+    "question_number": 1,
+    "question": "“给定资料7”中提到：“唯有传承红色基因，筑牢信仰之基，才能在各种⻛险挑战面前做到‘不畏浮云遮望眼’‘乱云⻜\n渡仍从容’。”请你深入理解这句话的含义，结合给定资料，联系实际，写一篇文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1134,
+    "raw_answer_characters_without_urls": 3774,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "04fb9c12581801d1d81676d11d64dffc89602ebfc6790b66240fc08c3a3bc96e",
+    "start_excerpt": "传承红色基因 践行初心使命\n习近平总书记指出：“共和国是红色的，不能淡化这个颜色。”在中国共产党建党百年的伟大革命实践中，无数\n革命先烈用自己的鲜血和生命换来了⺠族的解放、国家的稳定，并在应对各种困难挑战中，锤炼了信念坚定、敢创\n新路、百折不挠、艰苦奋斗、立党为公、忠诚为⺠的红色精神。这些精神是党领导人⺠革命的胜利之本，也是激励\n我们不断前进的力量之源，是传承百年的红色基因。\n时至今日，在这样一个新问题不断涌现，新挑战不断产生的时代，作",
+    "end_excerpt": "”战役以来，数以百万计的扶贫大军奔赴全国最偏远、最艰\n苦的地方，日夜奋战、攻坚克难，1800多名同志将生命定格在了脱贫攻坚征程上，是他们的艰苦奋斗，创造了彪炳\n史册的人间奇迹。\n征途如虹，浩荡前行。如今，以中国式现代化推进强国建设、书写中华⺠族伟大复兴的蓝图徐徐展开，在此历\n史新时期，我们更要把握方向，延续红色精神，保持江山的不变底色，谱写无愧于时代的华章！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/新疆/2024/申论-县乡卷.md",
+    "question_number": 1,
+    "question": "问题一：请根据“给定资料1”，概括A县探索“医养一体、两院融合”的主要举措。（15分）\n\n要求：（1）全面准确；\n\n（2）分条列出；\n\n（3）不超过200字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 203,
+    "raw_answer_characters_without_urls": 348,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3fc9147c74214d7c98ed06dc7a01d94d1b8cae60695a36cd85bb2febf2d807c7",
+    "start_excerpt": "1.医中有养。各级医疗机构增加老年医学科，增设养老服务；村养老院与卫生室重建在一起，直接提供医疗服务。\n\n2.养中有医。养老机构设置卫生室和护理站，派驻医护人员，提供医疗服务；政府给与补贴，开展医养技能培训；定期聘请专家会诊。\n\n3.居家有约。签约家庭医生，针对性提供“一键呼叫”、家庭病床服务，定期上门服务。\n\n4.失能有保。设置长期护理保险，医院开设医护专区，提供专业看护，报销比例高；完善五方共担的资金筹措机制。",
+    "end_excerpt": "养老院与卫生室重建在一起，直接提供医疗服务。\n\n2.养中有医。养老机构设置卫生室和护理站，派驻医护人员，提供医疗服务；政府给与补贴，开展医养技能培训；定期聘请专家会诊。\n\n3.居家有约。签约家庭医生，针对性提供“一键呼叫”、家庭病床服务，定期上门服务。\n\n4.失能有保。设置长期护理保险，医院开设医护专区，提供专业看护，报销比例高；完善五方共担的资金筹措机制。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文203字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/新疆/2024/申论-县乡卷.md",
+    "question_number": 3,
+    "question": "问题三：根据“给定资料3”，请针对兴旺区老旧小区改造存在的主要问题提出解决建议。（20分）\n\n要求：（1）问题梳理准确、有条理；\n\n（2）所提建议与问题相对应，具体明确、切实可行；\n\n（3）不超过350字。\n\n<!-- R5 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 350,
+      "confidence": "high",
+      "evidence": "不超过350字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 351,
+    "raw_answer_characters_without_urls": 496,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "80a20570a316a8b0d3f5891b2f576b9edda46d1e8bd1c01423d3e0aa10f595a2",
+    "start_excerpt": "1.问题：物业公司收费难、不盈利，服务质量差。对策：强化物业管理，提高居民对物业服务价值的认可，引导居民配合缴费，政府部门加强监管，督促物业公司提高服务水平。\n\n2.问题：公共维修资金缺口大，公共区域维护难。对策：完善政策规定，修改完善《物业管理条例》，针对老旧小区物业管理出台政策，填补维修基金缺口。\n\n3.问题：忽视居民诉求，强制拆除防护网。对策：重视居民意愿，搭建居民沟通议事平台，及时反馈居民诉求，安装隐形防护网，避免安全隐患。\n\n",
+    "end_excerpt": "民意愿，搭建居民沟通议事平台，及时反馈居民诉求，安装隐形防护网，避免安全隐患。\n\n4.问题：资金来源单一，投入缺少机制保障，改造不到位。对策：推动商业开发，挖掘闲置房屋再利用等“造血点”，政府、居民、社会力量共担改造资金。\n\n5.问题：设施产权不一，后期收益归属不清。对策：健全“造血”机制，出台配套政策，明确设施产权，确定后期收益归属，吸引社会资本投入运营。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文351字，超过题面明确上限350字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/海南/2019/申论-县级.md",
+    "question_number": 2,
+    "question": "二、根据“给定资料2”，分析部分城市马拉松赛事存在的主要问题并提出相应的改进措施。（30分）\n\n要求：（1）紧扣资料，符合实际；（2）表达准确，条理清晰；（3）字数不超过400字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 400,
+      "confidence": "high",
+      "evidence": "不超过400字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 402,
+    "raw_answer_characters_without_urls": 680,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "d001ae0003362f9e92b2e2967d30443eb3ed2bce440124cf3560967e1a8f1cf4",
+    "start_excerpt": "主要问题有：1.赛事同质化。数量多，质量差，缺乏特色；标榜国际头衔，报名率低，浪费资源，带来交通和安全隐患。2.组织管理混乱。花钱请选手，比赛变味；替跑、倒卖号码、拽停运动员，出现灰色产业链，带来风险；\n\n急功近利，过分追求经济效益。3.服务缺位。补给不足、食品过期、没有指示牌、提前解封路段。4.参赛者自身问题。未理解比赛内涵，身心准备不足；作弊和倒卖参赛资格，集体抄近路、骑单车赛跑。\n\n改进措施为：1.打造特色。减少数量，提升质量；细",
+    "end_excerpt": "，以情怀趣味为亮点；找准定位，\n\n利用有限资源办出特点和口碑。2.提升组织能力。提升管理智慧和专业能力，强化规则意识；提高赛事审核标准，加强监管，打击黄牛，加大惩处力度。3.完善服务。招标营运方、合理规划路线、配合做好封路及安保医疗工作；增派人员，做好赛事补给和食品安全工作。4.加强宣传。宣传比赛内涵，让参赛者做好身心准备；倡导参赛者坚守底线，\n\n敬畏规则。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文402字，超过题面明确上限400字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/福建/2021/申论-县级.md",
+    "question_number": 1,
+    "question": "问题一：根据“给定资料1”归纳N区试点“社区救助顾问”制度的主要做法。（20分）\n\n要求：全面、准确、有条理。不超过300字。\n\n<!-- R4 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 301,
+    "raw_answer_characters_without_urls": 541,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "add7462620e618ab89b5b1ec1399b64bcd61153c89d0a6b4f34178623ddc9c5e",
+    "start_excerpt": "N区探索政策主动“上门”、精准救助、重“造血”式救助：\n\n1.主动走访，提供帮扶。精准评估，梳理发现“沉默”困难群众、受突发事件影响的困难家庭；发挥政策、资源优势，分析现状、诊断问题、提供引导、链接资源，提供差别化救助。\n\n2.开展智慧救助。打通多部门数据，形成“可统计、可分析、可关联”的救助大数据；建设大数据信息服务平台和数据收集渠道，做好信息动态收集、分析管理工作，确保“应保尽保，不落一户”。\n\n3.实施“造血”式救助。提供全程式、",
+    "end_excerpt": "形成“可统计、可分析、可关联”的救助大数据；建设大数据信息服务平台和数据收集渠道，做好信息动态收集、分析管理工作，确保“应保尽保，不落一户”。\n\n3.实施“造血”式救助。提供全程式、陪伴式服务；实行物质保障、生活照料、精神慰藉、能力提升相结合的救助模式。\n\n4.配备“政策包”和“资源包”。包含申请救助的政策文件、爱心企业在内的各种资源及联系方式，可按需搭配。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文301字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/西藏/2019/申论-统考.md",
+    "question_number": 2,
+    "question": "二、根据“给定资料2”，概括出该村近年来遇到的问题及其原因。（25分）\n\n要求：全面、准确、简明，有条理，字数不超过200字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 202,
+    "raw_answer_characters_without_urls": 436,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "5b21bd2db4bbe953291791f68b7c3b74ff0820fb4c3ee3d573725291cd2c1074",
+    "start_excerpt": "问题：野猪成群毁坏庄稼，影响农业生产，农民损失严重。\n\n原因：\n\n1.生态环境：村落位于生态圈边缘，庄稼地与野猪聚集的林区相接；生态系统脆弱，生物链没有完全形成，野猪缺乏天敌制约。\n\n2.生物习性：土地只适合种植马铃薯、玉米等农作物，恰好是野猪喜爱的食物，且其破坏力强。\n\n3.村民观念：生态意识增强，发展旅游业，恢复林区生态，为野生动物回迁创造条件；法律意识增强，野猪是国家保护动物，不能随意捕杀，只能用温和方法驱逐。",
+    "end_excerpt": "：\n\n1.生态环境：村落位于生态圈边缘，庄稼地与野猪聚集的林区相接；生态系统脆弱，生物链没有完全形成，野猪缺乏天敌制约。\n\n2.生物习性：土地只适合种植马铃薯、玉米等农作物，恰好是野猪喜爱的食物，且其破坏力强。\n\n3.村民观念：生态意识增强，发展旅游业，恢复林区生态，为野生动物回迁创造条件；法律意识增强，野猪是国家保护动物，不能随意捕杀，只能用温和方法驱逐。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文202字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/西藏/2019/申论-统考.md",
+    "question_number": 3,
+    "question": "三、给定资料3中，扶贫对象对该村的“扶贫公示牌”认可度不高，根据“给定资料3”，概括其原因并提出改进建议。（40分）\n\n要求：（1）全面、简明、准确，条理清晰；（2）建议恰当、符合要求；（3）不超过400字。\n\n<!-- R5 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 400,
+      "confidence": "high",
+      "evidence": "不超过400字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 406,
+    "raw_answer_characters_without_urls": 509,
+    "removed_rules": [
+      "generic_answer_label",
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "e99f78291946cdd196530206887512b3564b1c314346bd0537f5f65f08342121",
+    "start_excerpt": "一、原因：\n\n1.从情感上，公示牌缺乏人性化，侵害贫困户的隐私，伤害其自尊，使其羞耻、难堪。\n\n2.从方式上，公示牌更换频率高，造成资源、金钱浪费；有电话等更快速、便捷的联系方式可替代。\n\n3.从效果上，公示牌作用小，形式大于内容，折射出基层干部错误的政绩观，引发村民质疑；村民易遭受推销、诈骗等骚扰，影响正常生活。\n\n二、改进建议：\n\n1.尊重村民隐私。科学规划公示信息，禁止出现贫困户个人隐私信息，保护其自尊心。\n\n2.注重工作实效。加",
+    "end_excerpt": "工作日常化、具体化；宣传扶贫干部事迹。\n\n3.完善扶贫制度。强化扶贫责任，建立走访、驻村考核指示体系，制定奖惩内容，倒逼扶贫干部定时走访贫困户，对不合格者予以问责。\n\n4.实施精准扶贫。加强扶贫工作针对性，因户施策、因情施策，提高扶贫效率。\n\n5.借助科技手段。节约利用资源，利用电话、“二维码”等现代电子信息手段扶贫，对贫困户信息进行实时更\n\n新，动态管理。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文406字，超过题面明确上限400字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/重庆/2016/申论-统考.md",
+    "question_number": 1,
+    "question": "请结合“给定资料”，就“给定资料3”中的画线部分，围绕某学者提出的“敬畏”写一篇议论文。（50分）\n要求：结合“给定资料”，自选⻆度，自拟题目，观点正确，内容充实，结构完整，语言流畅，1000字左右。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "approximate_target",
+      "target": 1000,
+      "review_minimum": 900,
+      "review_maximum": 1120,
+      "confidence": "medium",
+      "evidence": "1000字左右"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1237,
+    "raw_answer_characters_without_urls": 3916,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "f8e0e28ded5e8cef3df00559b227712f73412b0a9ae3b7faa8960e89e90a1595",
+    "start_excerpt": "常怀敬畏之心，传承家⻛之美\n古人云：“畏则不敢肆而德以成，无畏则从其所欲而及于祸。”这里的“畏”指的是对良知、正义、天理的畏惧。\n过去国人敬天畏地、祭祖尊宗，究其一生传承中华⺠族传统家⻛美德，如今社会结构变革，家⻛传承逐渐淡漠，随\n之产生的社会问题也频频发生，究其原因，便是由于缺少古人的敬畏之心。心存敬畏是保持内心的执着与宁静、是\n恪守底线的从容与淡定、是传承家⻛的意义与基石，个人品德、企业道德、社会公德无不需要怀揣敬畏之心，传承\n家⻛",
+    "end_excerpt": "照中共中央印发的《公⺠道德建设实施纲要》中对公⺠提出的公共道德要求，提升自\n身公德意识，在全社会传承文明礼貌、助人为乐、爱护公物、保护环境、遵纪守法的公德家⻛。\n敬畏，是一种人生态度，更是一种自省和自警；家⻛，是一种文化传承，更是一种继承和发扬。让我们常怀敬\n畏之心，在传承中华⺠族优秀家⻛之美的道路上披荆斩棘、排除万难，使中华⺠族伟大复兴的梦想之轮扬帆远航！",
+    "issues": [
+      {
+        "rule": "approximate_target_long",
+        "confidence": "medium",
+        "detail": "正文1237字，高于约1000字目标的112%；需按题面与答题空间复核"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/重庆/2017/申论-统考.md",
+    "question_number": 1,
+    "question": "从给定资料出发，以“知识的价值”为话题，自选⻆度，自拟题目，写一篇文章。（55分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 985,
+    "raw_answer_characters_without_urls": 3368,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "cf397ffe026bfbef792a2dee8be5d0ab5996eb531faab95389e60a7ff72b91b7",
+    "start_excerpt": "让知识的价值大放异彩\n高尔基说：“知识是我们这个社会的绝对价值。”知识究竟有什么价值呢？它主要体现在三个方面：知识可以给\n人们答疑解惑，增⻓智慧；知识能够滋养心灵，推动精神文化发展；知识能够激发创新创造，提高生产力，推动经\n济发展。\n但与一般物品的价值不同，知识的价值需要被人掌握和使用才得以体现，某种知识被越多的人掌握和利用，其\n方方面面的价值就越大。\n因此，知识的价值有赖于被广泛传播和分享。知识要不断传播、使用才能产生更大的价值，封闭",
+    "end_excerpt": "遵循知识共享协议，共享模式让更有价值\n的知识快速传播，实现更大价值。但不可否认，网络知识分享中存在大量侵权行为，这需要完善相关法律法规，优\n化网络版权政策环境，不断推进正版化进程，让版权保护真正成为知识传播的护身符。\n“生有涯而知无涯”，知识的价值内涵伴随互联网的发展越来越丰富，越来越多元。唯有让知识的价值大放异\n彩，才能让个人不断前进，让社会绽放智慧光芒！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/重庆/2024/申论-一卷.md",
+    "question_number": 1,
+    "question": "问题一：“给定资料1”中提到“绿化，给城市带来美，这种美应该是一种大美”。请根据“给定资料1”，谈谈对“大美”一词的理解。（15分）\n\n要求：全面、准确、有条理，不超过250字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 350,
+    "raw_answer_characters_without_urls": 350,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "cbc79e22108c4540290755ae85df68db8841b229904682430f3a5d0a16f15ab9",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\n“大美”指城市绿化带来的不仅是外观之美，更是生态、文化、民生和发展相统一的综合价值。一是**生态健康之美**：因地制宜种植乡土树木，净化空气、降低噪声、提高成活率。二是**科学长久之美**：分类养护、复壮衰弱树木，运用智慧平台守护古树名木。三是**文化记忆之美**：保留老树与城市历史，彰显地方个性。四是**宜居共享之美**：建设功能复合的口袋公园，提供休闲、健身、科普场所",
+    "end_excerpt": "设功能复合的口袋公园，提供休闲、健身、科普场所，使市民方便享受绿色空间。绿化最终应让人与自然和谐相处，使群众热爱城市、安居乐业。\n\n> 写作依据：本卷给定资料1及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文350字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/重庆/2024/申论-一卷.md",
+    "question_number": 2,
+    "question": "问题二：请根据“给定资料2”，梳理W市在发展庭院经济中遇到的问题，并提出解决问题的建议。（20分）\n\n要求：\n\n（1）问题梳理全面、准确、有条理；\n\n（2）所提建议与问题相对应，具体明确、切实可行；\n\n（3）不超过400字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 400,
+      "confidence": "high",
+      "evidence": "不超过400字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 495,
+    "raw_answer_characters_without_urls": 495,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "8defc9e4446ad384cefba8338e5d6320da25beedef9598a72a4813848057e69e",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\nW市庭院经济存在以下问题，应分类施策。\n\n一是**经营空间和劳动力不足**。农家乐院子小、座位少、人手紧。建议开展庭院合作、空间共享、合理流转和服务人员培训，提升接待能力。\n\n二是**技术与市场信息滞后**。沙发加工设计跟不上市场，村民盲目模仿。建议引入行业人才、开展技术培训和市场调研，开发差异化产品，拓展订单渠道。\n\n三是**组织经营能力薄弱**。铁编合作社规模扩张后，",
+    "end_excerpt": "转方案尚未形成共识，担忧同质竞争和扰民。建议充分协商，明确租金、分红及退出机制，完善环境和噪声管理，突出特色定位，先试点再推广。\n\n> 写作依据：本卷给定资料2及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文495字，超过题面明确上限400字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/重庆/2024/申论-一卷.md",
+    "question_number": 3,
+    "question": "问题三：省里准备召开“城市高质量发展”论坛，请根据“给定资料3”，拟写一份介绍H市南山工业社区治理模式的发言提纲。（25分）\n\n要求：\n\n（1）紧扣资料，内容全面；\n\n（2）准确简明，有逻辑性；\n\n（3）不超过500字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 500,
+      "confidence": "high",
+      "evidence": "不超过500字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 565,
+    "raw_answer_characters_without_urls": 565,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "e28eacd5f6a1be88e2de190818d7133f7a503e5ce4b35c18db31a23831ea0ca4",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\n**以工业社区治理推动产城融合高质量发展——H市南山工业社区经验介绍**\n\n各位与会代表：\n\n南山工业社区针对传统园区重生产、轻生活，配套不足、员工归属感不强等问题，把居民社区治理理念引入产业园区，实现产业发展与宜居生活相互促进。主要做法如下。\n\n**一、党建引领，织密治理网络。** 社区建立党组织和分级网格、微网格，服务触角延伸到企业和车间；通过志愿服务菜单，让职工由服",
+    "end_excerpt": "慧化、绿色化水平。\n\n通过“小社区大治理”，南山工业社区既稳企业、留人才，也促就业、增收入，为H市产业园区转型提供了可借鉴路径。\n\n> 写作依据：本卷给定资料3及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文565字，超过题面明确上限500字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/重庆/2024/申论-一卷.md",
+    "question_number": 4,
+    "question": "问题四：“给定资料4”中提到“青山绿水是无价之宝”，又提到“生态有价”。生活中有许多既有价又无价的事物，请对此进行深入思考，参考给定资料，联系实际，自选角度，自拟题目，写一篇文章。（40分）\n\n要求：\n\n（1）观点明确，见解深刻；\n\n（2）参考给定资料，但不拘泥于给定资料；\n\n（3）思路清晰，语言流畅；\n\n（4）总字数1000-1200字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_range",
+      "minimum": 1000,
+      "maximum": 1200,
+      "confidence": "high",
+      "evidence": "1000-1200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1334,
+    "raw_answer_characters_without_urls": 1334,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "7ec8f75af5b15cabd5ea1509bb097b673672766a5399abf7e9593ff63ba0cad4",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\n**守护无价底色，激活有价潜能**\n\n梨子可以标价；一片青山涵养的水源、保存的乡愁、承载的生态安全，却难以用金钱衡量。重庆申论材料中的范家塘村，从采石污染到矿山复绿，再从特色梨果走向生态旅游，生动展现了“青山绿水是无价之宝”与“生态有价”之间的关系。二者并不矛盾：无价强调不可替代的根本价值，有价体现可持续利用带来的现实收益。发展之道，在于先守护价值的底色，再通过合理制度和",
+    "end_excerpt": "市场；激活有价潜能，也不是放任逐利。只要坚持生态优先、以人为本、科学治理，就能让发展既有可见的财富，更有长久的幸福。\n\n> 写作依据：本卷给定资料1,2,3,4及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文1334字，超过题面明确上限1200字"
+      }
+    ],
+    "another_version_without_findings": false
+  }
+]

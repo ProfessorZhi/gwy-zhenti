@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-15",
+  "browser": "TinyFish",
+  "queries": [
+    "2022 浙江 申论 A类 给定资料 作答要求 全文",
+    "2026 江苏 申论 C类 给定资料 范文 真题",
+    "2026 北京 申论 真题 给定资料 作答要求"
+  ],
+  "result": "All three tool calls failed at connector transport before any search result was returned.",
+  "error_class": "Transport send error / HTTP request failed / error sending request for chatgpt.com backend-api ps/mcp",
+  "new_complete_papers_acquired": 0,
+  "interpretation": "Connectivity failure is not evidence that a paper does not exist. No paper status was changed to collected. No OpenCLI or alternate browser was used."
+}

@@ -1,0 +1,4341 @@
+{
+  "date": "2026-10-15",
+  "papers_scanned": 127,
+  "catalog_entries": 108,
+  "confirmed_count_discrepancies": [],
+  "rows": [
+    {
+      "path": "省考/上海/2016/申论-A类.md",
+      "area": "上海",
+      "year": 2016,
+      "variant": "A类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2016年上海市公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2016,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "970b1cc937963c83b57b8d568debd481c7e24a06de8bd4f594397e83dac255f7",
+      "question_keys": {
+        "1": "结合材料概括一些地方政府市场监管过程中的问题",
+        "2": "结合材料概括浦东新区等区县市场监管改革的成效与问题",
+        "3": "结合材料概括深圳模式的主要特点",
+        "4": "阅读材料以加强市场监管为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2016/申论-B类.md",
+      "area": "上海",
+      "year": 2016,
+      "variant": "B类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2016年上海市公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2016,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "9cd6b94ab286f3aaf1d2a7ab747e80c619c83cd3caa212d9afbf398653f9680f",
+      "question_keys": {
+        "1": "结合材料总结两个抗战遗址保护不力的案例中存在的共性问题并简要分析原因",
+        "2": "结合材料总结抗战遗址保护的经验",
+        "3": "结合材料对社会各界主动捍卫英雄名誉的意义作简要分析",
+        "4": "阅读材料以新形势下如何肩负起历史赋予我们的使命担当为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2017/申论-A类.md",
+      "area": "上海",
+      "year": 2017,
+      "variant": "A类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2017年上海市公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2017,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "94887900d983a586eabcc21ad10e745e962eb841c83ae25096d1637aac9519af",
+      "question_keys": {
+        "1": "结合材料谈谈政府购买公共服务的内涵及其意义",
+        "2": "结合材料概括各地居家养老服务不同的模式及优点",
+        "3": "根据材料分析Z市城管服务外包实践存在哪些问题",
+        "4": "围绕提升公共服务满意度这一主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2017/申论-B类.md",
+      "area": "上海",
+      "year": 2017,
+      "variant": "B类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2017年上海市公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2017,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "fd97f89f9861420f262ff257231ee80b4a7c1019d628cd77554b6f143322913e",
+      "question_keys": {
+        "1": "结合材料分析X公司机器人制造业获得成功的主要原因",
+        "2": "结合材料谈谈未来中国制造应具有的主要特征",
+        "3": "结合材料分析工匠精神与培育践行社会主义核心价值观之间的关系",
+        "4": "结合材料围绕脚踏实地实现民族复兴这一主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2017/申论-行政执法卷.md",
+      "area": "上海",
+      "year": 2017,
+      "variant": "行政执法卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        25,
+        25,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2017年上海市公考《申论》真题试卷及答案【含解析】（行政执法卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2017,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "a51d6390314cd34d42215721f9378bcc264cf57d80dd7963b98f1bf68238d7a4",
+      "question_keys": {
+        "1": "请概括材料的主要内容",
+        "2": "结合材料谈谈在规范和发展共享单车上政府共享单车企业用户各应尽到哪些责任",
+        "3": "结合材料围绕行政执法如何跟上科技的快速发展这一主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2018/申论-A类.md",
+      "area": "上海",
+      "year": 2018,
+      "variant": "A类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2018年上海市公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2018,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "09c56b0fe8cf0da9a186dd19c26dc060780f9d38af2b2dfa3b8d8f75e3e2f3da",
+      "question_keys": {
+        "1": "结合材料概括袁隆平南仁东等科学家克服艰难困苦完成重大科学成果的共同原因",
+        "2": "结合材料分析目前社会上一些年轻人存在的不良思想倾向",
+        "3": "材料中提到靡不有初鲜克有终结合材料请对公职人员如何做到不忘初心有始有终提出对策",
+        "4": "结合材料以坚持信念传承精神开拓事业为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2018/申论-B类.md",
+      "area": "上海",
+      "year": 2018,
+      "variant": "B类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2018年上海市公考《申论》真题试卷及答案【含解析】（B、定向选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2018,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "b11f097e8be91ac25b25a8ac0806cb735a10064e754287576321898a2fbccd97",
+      "question_keys": {
+        "1": "结合材料概述大数据与人工智能等新兴科技对人类社会与生活的影响",
+        "2": "结合材料分析国外政府大数据主要应用在智慧政府社会治理等五大领域的原因",
+        "3": "结合材料用三个关键词归纳上海公安街面防控新型警务模式的主要特点论述智慧公安与利用新兴科技之间的关系",
+        "4": "以充分运用新兴科技推动城市治理创新为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2018/申论-行政执法.md",
+      "area": "上海",
+      "year": 2018,
+      "variant": "行政执法",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        25,
+        25,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2018年上海市公考《申论》真题试卷及答案【含解析】（行政执法卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2018,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "271c2501ed087b2b367fd2932497cc11d3d85a07830c1453181a0842c229d8fe",
+      "question_keys": {
+        "1": "结合材料概括在推行精细化的社会治理过程中上海采取了哪些行之有效的做法",
+        "2": "结合材料分析推行河长制的积极意义",
+        "3": "阅读材料围绕长效机制这一主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2019/申论-A类.md",
+      "area": "上海",
+      "year": 2019,
+      "variant": "A类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年上海市公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2019,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "3bcaa152cf3801f3dadd6653fea3e64a055130410dc35c9086103d00c08e27ff",
+      "question_keys": {
+        "1": "结合材料概述张江国家自主创新示范区近年来取得的成功经验",
+        "2": "结合材料从公共管理角度分析现阶段我国在创新发展中主要存在的不足",
+        "3": "结合当前经济社会发展形势阐述为什么必须让创新成为发展新引擎",
+        "4": "追求卓越是上海城市精神的重要内容结合材料以创新驱动与追求卓越为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2019/申论-B类.md",
+      "area": "上海",
+      "year": 2019,
+      "variant": "B类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年上海市公考《申论》真题试卷及答案【含解析】（B、定向选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2019,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "6b6c759b8b9fe7ce58df3a8936122bd64aaf2fc9b3314d02b78bf20420aefd8b",
+      "question_keys": {
+        "1": "结合材料阐述上海文化形成的过程中红色文化海派文化和江南文化之间的关系",
+        "2": "结合材料阐述上海在全方位传承红色基因传播红色文化方面可以采取哪些措施",
+        "3": "结合材料概述张江国家自主创新示范区近年来取得的成功经验",
+        "4": "海纳百川是上海城市精神的重要内容结合材料以契约精神与海纳百川为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2019/申论-行政执法卷.md",
+      "area": "上海",
+      "year": 2019,
+      "variant": "行政执法卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        25,
+        25,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年上海市公考《申论》真题试卷及答案【含解析】（行政执法卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2019,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "c62c826a576a779cd3a759ab85961db86a20becee2a732de8b4a899a6d3dbc6b",
+      "question_keys": {
+        "1": "根据材料概括当前我国应急管理面临形势的主要特征",
+        "2": "根据材料总结近年我国实施应急管理的主要经验",
+        "3": "阅读材料围绕生命至上安全第一这一主题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/上海/2020/申论-A类.md",
+      "area": "上海",
+      "year": 2020,
+      "variant": "A类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2020年上海市公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2020,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "45be83c30212f225e0b82d892c8b5efe22cecea43300979b7855f2496a1b755a",
+      "question_keys": {
+        "1": "根据材料总结中国共产党能够团结带领全党全国各族人民攻坚克难从胜利走向胜利的主要原因",
+        "2": "根据材料分析调查研究的重要性",
+        "3": "结合材料从历史唯物主义角度阐述红旗渠代表了怎样的精神传承",
+        "4": "结合习仲勋贯彻司法工作的正确方向的讲话围绕群众路线和美好生活这一主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2020/申论-B类.md",
+      "area": "上海",
+      "year": 2020,
+      "variant": "B类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2020年上海市公考《申论》真题试卷及答案【含解析】（B、集中选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2020,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "078026836d6afe4706c4dd0e0233fb58054e9a35a492936fa26ddeef6dd6de50",
+      "question_keys": {
+        "1": "结合材料总结上海率先实现一网通办过程中所形成的可复制经验",
+        "2": "结合材料分析上海市场监管创新改革主要回应了实践中的哪些问题",
+        "3": "结合材料阐述上海创新高度速度厚度和浓度的含义",
+        "4": "结合材料以提升放管服效能建设有温度的城市为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2020/申论-行政执法卷.md",
+      "area": "上海",
+      "year": 2020,
+      "variant": "行政执法卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2020年上海市公考《申论》真题试卷及答案【含解析】（行政执法卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2020,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "42f5de1332cf2d54c49e51ba658de48bd113d2223039e21cae4251ec6e037185",
+      "question_keys": {
+        "1": "结合材料概括红色家风的特点",
+        "2": "结合材料分析家风失范的主要原因",
+        "3": "阅读材料结合家风这一主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2021/申论-A类.md",
+      "area": "上海",
+      "year": 2021,
+      "variant": "A类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2021年上海市公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2021,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "b693a6aade7624ef12b7d636c618572857c30c8c9657c1689252c2d87ab642ed",
+      "question_keys": {
+        "1": "根据材料材料概述数字经济中劳动者可能遭遇哪几类不利问题并分别简述其原因",
+        "2": "根据材料概括下一代互联网技术驱动的经济新业态新模式的类型及其特点",
+        "3": "根据材料材料分析平台经济发展过程中存在的主要问题",
+        "4": "结合材料围绕数字时代公平竞争这两个关键词写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2021/申论-B类.md",
+      "area": "上海",
+      "year": 2021,
+      "variant": "B类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2021年上海市公考《申论》真题试卷及答案【含解析】（B、定向选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2021,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "e0514980868bb95b9805e7e358e7389ec77a1d37e2cb011792c138d41eb1313f",
+      "question_keys": {
+        "1": "根据材料到材料的内容概括斗争的不同类型并简述主要特点",
+        "2": "运用矛盾的普遍性原理分析材料材料和材料中反映出的斗争的共性",
+        "3": "根据材料材料和材料分析我们赢得斗争胜利的主要方法",
+        "4": "时代在动荡和变革国内外格局在调整和重组只有每一代人肩负起使命和担当才能确保我们的事业不断取得新的胜利结合材料围绕使命和斗争这两个关键词写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2022/申论-B类.md",
+      "area": "上海",
+      "year": 2022,
+      "variant": "B类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年上海市公考《申论》真题试卷及答案【含解析】（B、定向选调卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2022,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "30d0f87dd815b7490af21a26c3fac02a27b2e1b3d2df9c993c260b90dbea2b02",
+      "question_keys": {
+        "1": "结合材料阐述长三角一体化发展国家战略的重大意义",
+        "2": "结合材料提炼长三角一体化干部交流合作机制的创新经验",
+        "3": "结合材料剖析联合河长制运行的基本模式",
+        "4": "阅读但不拘泥于材料以一体化高质量发展为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2023/申论-A类.md",
+      "area": "上海",
+      "year": 2023,
+      "variant": "A类",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        15,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年上海市公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2023,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "ce9fa5ccaf9ad9e48edf8fc91565c9419489dd9aa0455c82b48b1d4f49a36090",
+      "question_keys": {
+        "1": "习近平总书记指出全面建设社会主义现代化国家最艰巨最繁重的任务仍然在农村结合给定材料概述基层党的建设促进乡村振兴的主要做法",
+        "2": "结合材料概述加强新经济组织新社会组织新就业群体党的建设的主要做法",
+        "3": "在城市发展过程中住房短缺居住拥挤是世界性的问题旧区改造考验着地方破解瓶颈难题的治理能力结合材料分析上海三十年来旧改取得成功的原因",
+        "4": "中国式现代化是人口规模巨大的现代化也是全体人民共同富裕的现代化现代化建设的出发点和落脚点是实现人民对美好生活的向往结合材料围绕加强基层治理推进中国式现代化这一主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2024/申论-A卷.md",
+      "area": "上海",
+      "year": 2024,
+      "variant": "A卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        15,
+        20,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年上海市公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2024,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "f9329be9c4c8d0590da3fb5aebcd694a56e20e2cf5d86904eb0fec93de9780a4",
+      "question_keys": {
+        "1": "根据材料阐述为什么说新一代人工智能技术是颠覆性技术",
+        "2": "根据材料分析新一代人工智能技术社会风险的成因",
+        "3": "结合材料阐述全球各国应如何深化人工智能技术领域合作引导人工智能朝着有利于人类文明进步的方向发展",
+        "4": "阅读但不拘泥于材料以人工智能时代公共部门何为为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2024/申论-B卷.md",
+      "area": "上海",
+      "year": 2024,
+      "variant": "B卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        15,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年上海市公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2024,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "4184a54e385f65fb55d40f458ca6164a554610cf581b8225ae63f6b07690c9fb",
+      "question_keys": {
+        "1": "结合材料阐述如何理解跳出上海看上海的定位并界定全球资源配置功能的内涵",
+        "2": "上海的高质量发展与全国其他地区有很多共性但作为中国最大的经济中心城市上海高质量发展又有一些个性特征结合材料论述上海高质量发展的个性特征和共性特征",
+        "3": "目前全国已经建有数十家数据交易机构但场内交易至今仍处于探索阶段阅读材料分析当前场内数据交易面临哪些难点",
+        "4": "阅读但不拘泥于材料以领跑新时代高质量发展为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2024/申论-统考.md",
+      "area": "上海",
+      "year": 2024,
+      "variant": "统考",
+      "actual_question_count": 8,
+      "parsed_task_points": [
+        20,
+        15,
+        15,
+        15,
+        20,
+        50,
+        50,
+        15
+      ],
+      "parsed_points_sum": 200,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "cfc3dffc6831111738940f94a2fd39afb48bb1c23a44f09e45c29d1c3ca09958",
+      "question_keys": {
+        "1": "结合材料阐述全球各国应如何深化人工智能技术领域合作引导人工智能朝着有利于人类文明进步的方向发展",
+        "2": "根据材料分析新一代人工智能技术社会风险的成因",
+        "3": "根据材料阐述为什么说新一代人工智能技术是颠覆性技术",
+        "4": "目前全国已经建有数十家数据交易机构但场内交易至今仍处于探索阶段阅读材料分析当前场内数据交易面临哪些难点",
+        "5": "上海的高质量发展与全国其他地区有很多共性但作为中国最大的经济中心城市上海高质量发展又有一些个性特征结合材料论述上海高质量发展的个性特征和共性特征",
+        "6": "阅读但不拘泥于材料以人工智能时代公共部门何为为主题写一篇文章",
+        "7": "阅读但不拘泥于材料以领跑新时代高质量发展为主题写一篇文章",
+        "8": "结合材料阐述如何理解跳出上海看上海的定位并界定全球资源配置功能的内涵"
+      }
+    },
+    {
+      "path": "省考/上海/2025/申论-A卷.md",
+      "area": "上海",
+      "year": 2025,
+      "variant": "A卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        15,
+        15,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年上海市公考《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2025,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "145b65fd740dae4bd72909b2302ae5207f9705df96cb5f269a3886286ce3639d",
+      "question_keys": {
+        "1": "结合材料简述零工经济作为新就业形态的新特征并阐述零工经济的价值功能",
+        "2": "中国目前灵活就业人员已达2亿人占全国就业人口的27结合材料分析灵活就业人员可能面临的职业风险",
+        "3": "为贯彻习近平总书记确保外来人口进得来留得下住得安能成业的指示精神结合材料概括上海所采取的保障性安居创新举措",
+        "4": "以增强公共服务均衡性可及性提高人民生活品质为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2025/申论-B卷.md",
+      "area": "上海",
+      "year": 2025,
+      "variant": "B卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        15,
+        20,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年上海市公考《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2025,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "ba6ed344c6277f37095b99ff5abf5ff1279b498d2c5d38019927c3edf16fbb4b",
+      "question_keys": {
+        "1": "结合材料分析出现内卷和躺平现象的原因",
+        "2": "结合材料概括当前政府在缓解青年压力方面采取了哪些举措",
+        "3": "结合材料分析青年在日常生活中应如何辨别真实需求与虚假需求",
+        "4": "以如何增强青年政治自觉和拒腐防变能力为主题写一篇文章"
+      }
+    },
+    {
+      "path": "省考/上海/2025/申论-统考.md",
+      "area": "上海",
+      "year": 2025,
+      "variant": "统考",
+      "actual_question_count": 8,
+      "parsed_task_points": [
+        15,
+        15,
+        15,
+        15,
+        20,
+        50,
+        50,
+        20
+      ],
+      "parsed_points_sum": 200,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "573115ece43386c486e8bfb2920b6f43334025e254f5bcdeabe88a93ac0d752f",
+      "question_keys": {
+        "1": "结合材料概括当前政府在缓解青年压力方面采取了哪些举措",
+        "2": "结合材料分析出现内卷和躺平现象的原因",
+        "3": "为贯彻习近平总书记确保外来人口进得来留得下住得安能成业的指示精神结合材料概括上海所采取的保障性安居创新举措",
+        "4": "中国目前灵活就业人员已达2亿人占全国就业人口的27结合材料分析灵活就业人员可能面临的职业风险",
+        "5": "结合材料简述零工经济作为新就业形态的新特征并阐述零工经济的价值功能",
+        "6": "以如何增强青年政治自觉和拒腐防变能力为主题写一篇文章",
+        "7": "以增强公共服务均衡性可及性提高人民生活品质为主题写一篇文章",
+        "8": "结合材料分析青年在日常生活中应如何辨别真实需求与虚假需求"
+      }
+    },
+    {
+      "path": "省考/上海/2026/申论-统考.md",
+      "area": "上海",
+      "year": 2026,
+      "variant": "统考",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        15,
+        null
+      ],
+      "parsed_points_sum": null,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2026年上海市公考《申论》真题试卷及答案【含解析】",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=218",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "上海",
+          "year": 2026,
+          "variant": "单卷"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "8da615c309d96da04289ce826f8f22a6e5d3338a4a28403795823589bb0f493a",
+      "question_keys": {
+        "1": "从钱凯到上海的表述描述了未来的中拉陆海新通道假如你是本市经济管理部门工作人员请结合材料就钱凯港建设期间面临的挑战写一份简报",
+        "2": "结合材料提炼我国所采取的扩大高水平对外开放的举措",
+        "3": "习近平总书记在中央经济工作会议上提出统筹做好引进来和走出去扩大高水平对外开放请结合材料阐述引进来和走出去的内涵及两者之间的关系",
+        "4": "聚焦经济大省挑大梁上海为全国发展大局挑大梁作贡献在推进深层次改革和高水平开放上奋勇争先不仅是我们的光荣使命责任担当也是上海自身发展的必然"
+      }
+    },
+    {
+      "path": "省考/天津/2016/申论-统考.md",
+      "area": "天津",
+      "year": 2016,
+      "variant": "统考",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2016年公务员多省联考《申论》真题试卷及答案【含解析】（天津卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2016,
+          "variant": "单卷"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "15d7cdad5f3dc2f2b4c71bf92bb61d034ccaa2108d26d1cf1002140ebd550512",
+      "question_keys": {
+        "1": "材料提到了社会创业和社会创业家两个概念请你根据材料指出1社会创业的主要内涵2社会创业家的主要特点",
+        "2": "材料提到创业成功是一个小概率事件请你根据材料就大学生如何提高创业成功率提出建议",
+        "3": "假定你是有关部门的一名工作人员准备将比逗咖啡馆的创业经验向广大学生进行推介请根据材料归纳总结比逗咖啡馆的主要成功经验",
+        "4": "材料中提到为钱创业是肤浅的应为梦想所驱动请你根据对这句话的理解自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/天津/2017/申论-统考__t443.md",
+      "area": "天津",
+      "year": 2017,
+      "variant": "滨海新区等单位专项",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "no_direct_catalog_match",
+      "sha256": "472e200c3b0f7ba89291e0be50aa46ce99b7f29188252a8f61ade27c8f25f58d",
+      "question_keys": {
+        "1": "请根据材料分析共享经济发展的条件有哪些",
+        "2": "根据材料请你谈谈如何进行制度性的变革促进经济发展理念向共享性观念转变",
+        "3": "参阅材料请你就共享经济如何改变百姓生活给相关部门提出对策建议",
+        "4": "请结合材料以共享发展为主题自选角度自拟题目写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/天津/2017/申论-统考.md",
+      "area": "天津",
+      "year": 2017,
+      "variant": "统考",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2017年公务员天津市滨海新区《申论》真题试卷及答案【含解析】",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2017,
+          "variant": "单卷"
+        },
+        {
+          "title": "2017年公务员多省联考《申论》真题试卷及答案【含解析】（天津卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2017,
+          "variant": "单卷"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "6b0b95474200c52eb86b82bc6a71f8b58413342ad018a1f832cad7829c6cb8e3",
+      "question_keys": {
+        "1": "根据材料概括当前社会上求快风气产生的主要原因",
+        "2": "根据材料总结D公司的成功对于企业适应新常态有哪些值得借鉴的经验",
+        "3": "为推进休闲生活旅游城市建设A市政府将召开一次由市民代表专家学者参加的座谈会市长将在会上作开篇讲话请你结合材料为市长草拟一份会议讲话提纲",
+        "4": "参考材料以平衡为主标题自拟副标题自选角度写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2018/申论-统考.md",
+      "area": "天津",
+      "year": 2018,
+      "variant": "统考",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2018年公务员多省联考《申论》真题试卷及答案【含解析】（天津卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2018,
+          "variant": "单卷"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "2b88aeb659817d1926d03368580ef70b83487c83902de7e8ad50c5d86cfdeee8",
+      "question_keys": {
+        "1": "据材料概括互联网协同消费经济存在哪些问题",
+        "2": "根据材料简述材料中的做法在改善和提高公共服务方面有哪些可借鉴的经验",
+        "3": "假设你是某文化报的记者请根据材料以文化共享惠民生为题写一篇短评",
+        "4": "根据你对材料中划线部分当一件文物一幅幅佳作走出高墙深闺来到寻常百姓中间虽然它的容颜依旧它的价值却早已跨越了市场定位带给百姓的不仅仅是自豪还有自信让他们更加坚定地沿着自己民族的道路走向未来的理解自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2019/申论-统考.md",
+      "area": "天津",
+      "year": 2019,
+      "variant": "统考",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年公务员多省联考《申论》真题试卷及答案【含解析】（天津卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2019,
+          "variant": "单卷"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "38cd030decbdfc8c17309f5dfd592f51c695a377f65e5a3551e641a957a688ef",
+      "question_keys": {
+        "1": "材料中提到随着大数据时代的来临信用成为每个人的第二张身份证请你谈谈对这句话的理解",
+        "2": "根据材料假定你是某市市场监督管理局的工作人员请就加强本市电商诚信体系建设提出对策建议",
+        "3": "根据材料假定你是N市旅游协会的会长请对全市旅游企业写一份加强行业自律为创建文明旅游城市出力的倡议书",
+        "4": "材料中提到信用体系建设既要获取更多数据勾勒人格特征也要注重保护每个人的隐私请你根据对这句话的理解自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2020/申论-B类.md",
+      "area": "天津",
+      "year": 2020,
+      "variant": "区县卷（历史文件名B类兼容）",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "no_direct_catalog_match",
+      "sha256": "61ceff709f14c0a8d984762c19a3c0bb252c23c66578c1e32ba175c493b5b15e",
+      "question_keys": {
+        "1": "据材料概括S村倡导红白喜宴简单办理的新举措",
+        "2": "根据材料假如你是G县政府的工作人员请就发展G县多肉产业提出对策建议",
+        "3": "外地的相关人员来学习农村垃圾治理的经验假如你是H村的工作人员请根据材料写一篇介绍农村垃圾处理经验的发言提纲",
+        "4": "根据材料中的掌上四合院和三事三分的启示围绕社区治理自拟标题自选角度写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/天津/2020/申论-A类.md",
+      "area": "天津",
+      "year": 2020,
+      "variant": "市级卷（历史文件名A类兼容）",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "no_direct_catalog_match",
+      "sha256": "c2a1df44552eab4ee64a0591c507d870af7589b5130c463bbba5846886d9d2d0",
+      "question_keys": {
+        "1": "根据材料请你概括三位脱贫攻坚第一书记所展现的优秀品格",
+        "2": "某局机关党委拟举办张富清同志先进事迹报告会假如你是主持人请根据材料拟写一篇报告会开始时的主持词",
+        "3": "假如你是H市公安局宣传处工作人员请你根据材料以贴心的警察蓝为题目撰写一篇新闻宣传稿",
+        "4": "请你根据材料中划线部分的理解自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2021/申论-区县卷.md",
+      "area": "天津",
+      "year": 2021,
+      "variant": "区县卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2021年公务员多省联考《申论》真题试卷及答案【含解析】（天津区县卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2021,
+          "variant": "区县"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "626bc156fa8bfd209613f3a8c0be33f791b2c44401047f81037540eb794f8146",
+      "question_keys": {
+        "1": "根据材料请分别概括高大妈和老姚喜和盼的内容",
+        "2": "根据材料请谈谈古城民警在工作中遇到过哪些难题他们是如何解决的",
+        "3": "材料反映了C市个别部门单位在工作中存在的形式主义现象请你就此写一个调查报告提纲供相关部门参考",
+        "4": "请深入理解材料中的划线句子是故事者生于虑成于务失于傲不虑则不生不务则不成不傲则不失联系实际自选角度自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2021/申论-市级卷.md",
+      "area": "天津",
+      "year": 2021,
+      "variant": "市级卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2021年公务员多省联考《申论》真题试卷及答案【含解析】（天津市级卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2021,
+          "variant": "市级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "d0c1790ebefd43823fe2e4c5d3a24a64d47de0850045b6b2506f1de722f529d8",
+      "question_keys": {
+        "1": "根据材料请分析仙路控股有限公司遇到了中年危机而国欣家居却能实现蝶变的原因",
+        "2": "根据材料请谈谈Q市科技体制机制创新的具体举措及其主要成效",
+        "3": "省里召开数字城市建设座谈会F市做经验介绍假设汪副市长参加此次会议请根据材料为汪副市长拟写一份发言提纲",
+        "4": "材料中多次提到赶考请以赶考为主题联系实际自选角度自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2021/申论-行政执法.md",
+      "area": "天津",
+      "year": 2021,
+      "variant": "行政执法",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2021年公务员多省联考《申论》真题试卷及答案【含解析】（天津行政执法卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2021,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "d8980fc22088d524cb164c5a5067503842898e7a3c9c4baed80e6e1221fbb43f",
+      "question_keys": {
+        "1": "根据材料请你概括法律顾问在田头村和三水村发挥的作用",
+        "2": "材料中提到这种解决方式不仅能保障当事人和社会公众的利益而且也实现了生态修复的可持续性请你谈谈对这句话的理解",
+        "3": "根据材料针对S省消费市场在长假期间存在的部分问题请拟写消费维权情况反映中的建议部分",
+        "4": "根据材料请以法治文化创新发展为主题自拟题目联系实际写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2022/申论-县级.md",
+      "area": "天津",
+      "year": 2022,
+      "variant": "综合管理类区级以下机关",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年公务员多省联考《申论》真题试卷及答案【含解析】（天津区级卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2022,
+          "variant": "区级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "5f80ced9467e80302d4285c83e552296d3a30bdf72edde6dda551068fbef4b04",
+      "question_keys": {
+        "1": "结合材料谈一谈梨洋村是如何让村民挺直腰杆的",
+        "2": "请根据材料梳理当前Z县农村寄递物流体系存在的问题并提出相应的改进建议",
+        "3": "根据材料中的法博士和积分制围绕乡村治理写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2022/申论-市级.md",
+      "area": "天津",
+      "year": 2022,
+      "variant": "综合管理类市级机关",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年公务员多省联考《申论》真题试卷及答案【含解析】（天津市级卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2022,
+          "variant": "市级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "a15b382315954d72a8e8d6cb48d53b85545a07326cc9927cb7b5c6be585d4931",
+      "question_keys": {
+        "1": "材料中提到H市在开展中小学课后服务方面做了一些探索请概括其主要做法",
+        "2": "假设材料是A市日报上的一篇报道请你为这篇报道写一则短评",
+        "3": "材料中划线部分提到成长的烦恼总是在成长中化解的发展难免会带来新问题而新问题是新发展的契机请联系实际自选角度自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2023/申论-乡镇卷.md",
+      "area": "天津",
+      "year": 2023,
+      "variant": "乡镇卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年公务员多省联考《申论》真题试卷及答案【含解析】（天津乡镇卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2023,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "9f18b51098c2a27a3c927c1b3082e1a372961fcc8d1f8f5672f2a7f6c75a9ce4",
+      "question_keys": {
+        "1": "根据材料请谈谈E县在规范小微权力运行方面都有哪些做法",
+        "2": "请根据材料梳理当前宽石镇乡村旅游规划中存在的问题并提出相应的改进建议",
+        "3": "市里准备召开主题为惠民纾困解难营造良好营商环境的工作经验交流研讨会假设你是货车司机之家工作专班负责人请根据材料写一份发言提纲介绍Q县货车司机之家开展方法",
+        "4": "材料中提到社区吹哨既要吹得准还要吹得响吹得久请根据对这句话的理解结合社区治理自选角度自拟题目写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/天津/2023/申论-市区卷.md",
+      "area": "天津",
+      "year": 2023,
+      "variant": "市区卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年公务员多省联考《申论》真题试卷及答案【含解析】（天津市区卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2023,
+          "variant": "市区"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "2e270e9579070fb3d902f056808e3e99b9252e5e0b82a7c379921bd544aeab29",
+      "question_keys": {
+        "1": "根据材料请你概括Z县打造现代田园综合体的过程对推进乡村振兴工作有哪些值得借鉴的经验",
+        "2": "假如孙书记要参加市里召开的基层协商议事试点工作经验交流会请你根据材料为他撰写一份发言提纲",
+        "3": "根据材料请你概括占唐路零工市场存在的问题并提出解决建议",
+        "4": "材料中林主任说我们要以不变应万变程馆长说我们要以变应变请深入思考这两句话联系实际自选角度自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2023/申论-行政执法卷.md",
+      "area": "天津",
+      "year": 2023,
+      "variant": "行政执法卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年公务员多省联考《申论》真题试卷及答案【含解析】（天津行政执法卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2023,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "6de3c192b0c2ad45fde11183d1191325b6a42f9f4d95be81bdd63c9e999e4fcc",
+      "question_keys": {
+        "1": "根据材料请你概括N市采取了哪些措施推进基层普法工作",
+        "2": "假如你是阳春县宣传部门工作人员请你根据材料以从黑脏臭到清净美为题目撰写一篇新闻宣传稿",
+        "3": "假如你是蓝阳区城管部门的一名工作人员请根据材料对步行街周边的问题进行分类汇总并分别提出解决建议",
+        "4": "材料中提到社保是我一生的事业也是每个人一生的事业请你深入思考这句话联系实际自选角度自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2024/申论-市级.md",
+      "area": "天津",
+      "year": 2024,
+      "variant": "市级",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "no_direct_catalog_match",
+      "sha256": "42139fb6d1dd88bd14cd63b55e5ed3b889cbc329344411819c65be10b8e17d2e",
+      "question_keys": {
+        "1": "根据材料请你谈谈F市大力开展城市绿化的经验",
+        "2": "根据材料剖析南山工业社区的治理模式",
+        "3": "材料是C市晚报报道当地推进全龄友好型城市建设的一篇文章请你以照亮每一个角落推进全龄友好型城市建设为题目为这篇报道稿写一则短评",
+        "4": "材料中划线部分提到创新是有风险的但它又是规避风险的最好方式请深入思考这句话联系实际自选角度自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2025/申论-市区卷.md",
+      "area": "天津",
+      "year": 2025,
+      "variant": "市区卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年天津市公考《申论》真题试卷及答案【含解析】（市区卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2025,
+          "variant": "市区"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "87904c5e9ba07a71869593b5a5402932e598dc77b75cb02a8be2e1041510e861",
+      "question_keys": {
+        "1": "材料中提到反向旅游成为了一场双向奔赴请谈谈你对这句话的理解",
+        "2": "近年来年轻人从城市到乡村就业的现象逐渐增多请根据材料分析这种现象出现的原因",
+        "3": "为学习新疆积极推进渔业发展的经验某市组团赴新疆调研考察假设你是考察团的一名工作人员请根据材料撰写一份调研报告提纲供领导参阅",
+        "4": "材料中提到一定程度上反向思维也能推动事物的正向前行请你深入理解这句话联系实际自选角度自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2025/申论-统考.md",
+      "area": "天津",
+      "year": 2025,
+      "variant": "统考",
+      "actual_question_count": 8,
+      "parsed_task_points": [
+        25,
+        25,
+        20,
+        20,
+        40,
+        40,
+        15,
+        15
+      ],
+      "parsed_points_sum": 200,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "d7e5e28fded88e7c29ddc311ff04d9a59b43ce16897f2f61da5cb173258452e9",
+      "question_keys": {
+        "1": "为学习新疆积极推进渔业发展的经验某市组团赴新疆调研考察假设你是考察团的一名工作人员请根据给定资料1撰写一份调研报告提纲供领导参阅",
+        "2": "为学习借鉴D县义务教育优质均衡发展经验H县教育局计划赴D县开展学习考察活动请根据材料为D县教育局拟定一份座谈会上的经验交流提纲",
+        "3": "近年来年轻人从城市到乡村就业的现象逐渐增多请根据材料分析这种现象出现的原因",
+        "4": "请根据材料总结天津水稻在新时代焕发新活力的原因",
+        "5": "材料中提到一定程度上反向思维也能推动事物的正向前行请你深入理解这句话联系实际自选角度自拟题目写一篇议论性文章",
+        "6": "请你对材料中提到的科技是这个时代最大的公益进行深入思考联系实际自拟题目写一篇议论性文章",
+        "7": "材料中提到反向旅游成为了一场双向奔赴请谈谈你对这句话的理解",
+        "8": "根据材料谈谈你对文化特派员的理解"
+      }
+    },
+    {
+      "path": "省考/天津/2025/申论-街镇卷.md",
+      "area": "天津",
+      "year": 2025,
+      "variant": "街镇卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年天津市公考《申论》真题试卷及答案【含解析】（街镇卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2025,
+          "variant": "街镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "e1919cba6b3681f8bccd7342706ebecffe050ce5ba067d02d6534ff931e5ced5",
+      "question_keys": {
+        "1": "根据材料谈谈你对文化特派员的理解",
+        "2": "请根据材料总结天津水稻在新时代焕发新活力的原因",
+        "3": "为学习借鉴D县义务教育优质均衡发展经验H县教育局计划赴D县开展学习考察活动请根据材料为D县教育局拟定一份座谈会上的经验交流提纲",
+        "4": "请你对材料中提到的科技是这个时代最大的公益进行深入思考联系实际自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2026/申论-统考.md",
+      "area": "天津",
+      "year": 2026,
+      "variant": "统考",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        25,
+        20,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "8ccb952ea32378b3e2b042c148f58cb693b961c4a4b006b486e21da2b0194066",
+      "question_keys": {
+        "1": "材料是T市市场监管部门今年的一部分工作请你为市场监管部门公众号写一篇宣传稿",
+        "2": "座谈会结束后X市政务服务数据管理局拟写一份总结报告供后续工作参考请根据材料撰写报告中问题与建议这两部分内容的提纲",
+        "3": "王圆圆一天的工作展示了M市公安局以大数据推动警务现代化的生动实践请根据材料说明M市公安局是如何成功用大数据赋能公共服务的",
+        "4": "根据材料请以执法服务的点线面为主题进行深入系统的思考联系实际自选角度自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/天津/2026/申论-行政执法.md",
+      "area": "天津",
+      "year": 2026,
+      "variant": "行政执法",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2026年天津市公考《申论》真题试卷及答案【含解析】（行政执法卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=219",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "天津",
+          "year": 2026,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "6fad6d35b4d5649eea11ff08a6392ce56f95b49001ba6716098f7f72f1abbf06",
+      "question_keys": {
+        "1": "材料是T市市场监管部门今年的一部分工作请你为市场监管部门公众号写一篇宣传稿",
+        "2": "王圆圆一天的工作展示了M市公安局以大数据推动警务现代化的生动实践请根据材料说明M市公安局是如何成功用大数据赋能公共服务的",
+        "3": "座谈会结束后X市政务服务数据管理局拟写一份总结报告供后续工作参考请根据材料撰写报告中问题与建议这两部分内容的提纲",
+        "4": "根据材料请以执法服务的点线面为主题进行深入系统的思考联系实际自选角度自拟题目写一篇议论性文章"
+      }
+    },
+    {
+      "path": "省考/广东/2016/申论-乡镇卷.md",
+      "area": "广东",
+      "year": 2016,
+      "variant": "乡镇卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        30,
+        30,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2016年广东省公考《申论》真题试卷及答案【含解析】（乡镇）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2016,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "87371235131fdc2b434ac1d7c7a239ac28aa95d61829542dc14c6581a0f554ae",
+      "question_keys": {
+        "1": "请根据材料中驻村干部小张的工作日记简要分析导致B村贫困的主要原因",
+        "2": "假设你是C镇扶贫工作队队员请根据材料分析指出该镇扶贫工作存在的主要问题",
+        "3": "通过两轮扶贫开发双到工作D镇扶贫工作取得了一定成效但还存在一些亟待解决的问题请根据材料就D镇进一步做好精准扶贫工作提出对策建议"
+      }
+    },
+    {
+      "path": "省考/广东/2016/申论-县级卷.md",
+      "area": "广东",
+      "year": 2016,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2016年广东省公考《申论》真题试卷及答案【含解析】（县级）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2016,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "bb1d662c59565948166972045726bbba1c4c12bc10474efaac1af629e7d49113",
+      "question_keys": {
+        "1": "请概括材料所反映的我国制造业创新发展面临的主要问题",
+        "2": "请根据材料分析说明众创空间对于推动大众创业万众创新的积极作用",
+        "3": "请根据全部材料仅限材料以提高创新能力促进创新发展为题写一篇策论文"
+      }
+    },
+    {
+      "path": "省考/广东/2016/申论-统考.md",
+      "area": "广东",
+      "year": 2016,
+      "variant": "统考",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        50
+      ],
+      "parsed_points_sum": 50,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "c719a0fd8a2fe0b88690f447b2fae10c223e01d9feb33cd706f4ceaa1fe517f1",
+      "question_keys": {
+        "1": "请根据全部材料仅限材料以提高创新能力促进创新发展为题写一篇策论文"
+      }
+    },
+    {
+      "path": "省考/广东/2017/申论-乡镇卷.md",
+      "area": "广东",
+      "year": 2017,
+      "variant": "乡镇卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        30,
+        30,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2017年广东省公考《申论》真题试卷及答案【含解析】（乡镇）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2017,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "4afe2b9c7b52cd6e153dd9b068e37618e5ea3da2727683cd9e26f15dd02f3b87",
+      "question_keys": {
+        "1": "假如你是调研小组的一员请根据材料指出A镇电商产业园发展中存在的问题",
+        "2": "根据材料分析说明B镇推动菠萝产业发展的成功经验",
+        "3": "请根据材料就破解C镇休闲旅游发展难题提出对策"
+      }
+    },
+    {
+      "path": "省考/广东/2017/申论-县级卷.md",
+      "area": "广东",
+      "year": 2017,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        null,
+        null,
+        null
+      ],
+      "parsed_points_sum": null,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2017年广东省公考《申论》真题试卷及答案【含解析】（县级）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2017,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "eb1947eb7ab539cc83a33ebc469ddf31f49aa7f1257c01371a53680fa5a70017",
+      "question_keys": {
+        "1": "请根据材料指出分享经济的发展对我国经济社会产生的积极影响本题20分",
+        "2": "请根据材料分析说明政府在公共服务领域推进共享发展的主要作用本题30分",
+        "3": "请根据全部材料以共享与发展为题写一篇议论文本题50分"
+      }
+    },
+    {
+      "path": "省考/广东/2017/申论-统考.md",
+      "area": "广东",
+      "year": 2017,
+      "variant": "统考",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        50
+      ],
+      "parsed_points_sum": 50,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "ca4c87790c29428b82fba9ad55b569884c16dda81ec4772192986d23e5ad2089",
+      "question_keys": {
+        "1": "请根据全部材料以共享与发展为题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2018/申论-统考.md",
+      "area": "广东",
+      "year": 2018,
+      "variant": "统考",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        null,
+        null,
+        null
+      ],
+      "parsed_points_sum": null,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2018年广东省公考《申论》真题试卷及答案【含解析】",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2018,
+          "variant": "单卷"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "b1e59e6c349400e314ed2acd2edd9312c9f32a9d9d3234fcf2dda1ce10e58035",
+      "question_keys": {
+        "1": "请根据全部材料仅限材料就如何充分发挥人才在推动经济社会发展中的重要作用自拟题目写一篇策论文本题50分",
+        "2": "请根据材料以人才是第一资源为题目写一篇短评",
+        "3": "请根据材料总结广东技工教育的经验做法并简要说明"
+      }
+    },
+    {
+      "path": "省考/广东/2019/申论-乡镇卷.md",
+      "area": "广东",
+      "year": 2019,
+      "variant": "乡镇卷",
+      "actual_question_count": 5,
+      "parsed_task_points": [
+        15,
+        15,
+        20,
+        25,
+        25
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        5
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年广东省公考《申论》真题试卷及答案【含解析】（乡镇）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2019,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "d0010dd55098ff2656ad7e13ff524f11b849398d389aef3d075650c939fc5241",
+      "question_keys": {
+        "1": "请你根据材料列出本次观摩会A镇需完成的前期准备工作",
+        "2": "根据材料你认为此次村党组织后备干部培训应该注重哪些能力素质的提升请简要说明",
+        "3": "为动员群众广泛参与请您根据材料拟一份人居环境综合整治的入户宣讲提纲",
+        "4": "请你根据材料提出具体得的措施以妥善处理该起矛盾纠纷做好相关善后工作",
+        "5": "请你根据材料为园中村如何打造红色村党建示范工程提出建议"
+      }
+    },
+    {
+      "path": "省考/广东/2019/申论-县级卷.md",
+      "area": "广东",
+      "year": 2019,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        null,
+        null,
+        null
+      ],
+      "parsed_points_sum": null,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年广东省公考《申论》真题试卷及答案【含解析】（县级）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2019,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "5c851e9fbf46d719853d507189092bc36e76139a664f4d529d3ad8e9181c2b9f",
+      "question_keys": {
+        "1": "请根据材料简要概括广东各地解决中小微企业融资难问题的主要做法本题20分",
+        "2": "请根据材料分析说明A市灯饰知识产权快速维权中心在促进产业发展方面取得的成效本题30分",
+        "3": "请根据全部材料仅限材料就政府如何进一步优化营商环境自拟题目撰写一篇策论文本题50分"
+      }
+    },
+    {
+      "path": "省考/广东/2019/申论-统考.md",
+      "area": "广东",
+      "year": 2019,
+      "variant": "统考",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        50
+      ],
+      "parsed_points_sum": 50,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "f69cfdf6c5e9f1de120f55256f14a636dad48dcee530ee7e2b8dcde65bc42697",
+      "question_keys": {
+        "1": "请根据全部材料仅限材料就政府如何进一步优化营商环境自拟题目撰写一篇策论文"
+      }
+    },
+    {
+      "path": "省考/广东/2020/申论-乡镇卷.md",
+      "area": "广东",
+      "year": 2020,
+      "variant": "乡镇卷",
+      "actual_question_count": 5,
+      "parsed_task_points": [
+        15,
+        15,
+        20,
+        20,
+        30
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        5
+      ],
+      "catalog_sources": [
+        {
+          "title": "2020年广东省公考《申论》真题试卷及答案【含解析】（乡镇）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2020,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "9e8220cac25506695c61905573a9fc4f9a247a67d684a3c975e205ce18cd7337",
+      "question_keys": {
+        "1": "请你根据材料谈一谈乡镇公务员工作的特点",
+        "2": "根据材料你认为小温应该如何做好粤菜师傅培训班的前期准备工作请列出工作要点",
+        "3": "近日县里计划来五田镇调研重点了解发展柚子产业存在的问题你认为五田镇在这方面有哪些短板请根据材料简要说明",
+        "4": "假设你参加了5月21日五田镇脱贫攻坚工作座谈会为防止返贫和新致贫你会提出哪些针对性措施请根据材料简要说明",
+        "5": "脱贫摘帽不是终点而是新生活新奋斗的起点请你根据材料为五田镇持续推进乡村振兴提出建议"
+      }
+    },
+    {
+      "path": "省考/广东/2020/申论-县级卷.md",
+      "area": "广东",
+      "year": 2020,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2020年广东省公考《申论》真题试卷及答案【含解析】（县级）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2020,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "c9d28e71987dd1049dfe816faedd8d2617306330c93c9aae13f68b4d049f3466",
+      "question_keys": {
+        "1": "请根据材料概括深圳在促进社会治理现代化方面的主要做法",
+        "2": "请根据材料分析说明广东在应对新冠肺炎疫情影响激发市场主体活力方面取得的成效",
+        "3": "请根据全部材料仅限材料围绕推进国家治理体系和治理能力现代化推动新时代广东改革发展走在全国前列的主题自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2020/申论-统考.md",
+      "area": "广东",
+      "year": 2020,
+      "variant": "统考",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        50
+      ],
+      "parsed_points_sum": 50,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "236de4254cdde7c669d3f541e58baae97f496a3db44b96c6f6b168df9fd097cc",
+      "question_keys": {
+        "1": "请根据全部材料仅限材料围绕推进国家治理体系和治理能力现代化推动新时代广东改革发展走在全国前列的主题自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2021/申论-乡镇卷.md",
+      "area": "广东",
+      "year": 2021,
+      "variant": "乡镇卷",
+      "actual_question_count": 5,
+      "parsed_task_points": [
+        15,
+        15,
+        20,
+        20,
+        30
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        5
+      ],
+      "catalog_sources": [
+        {
+          "title": "2021年广东省公考《申论》真题试卷及答案【含解析】（乡镇）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2021,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "8975eb6381058fbccab8bcd3c345c6d0a20b1f0cb18fa994d2051404f0c3c8c0",
+      "question_keys": {
+        "1": "根据材料简要说明乡村新闻官在推动农业农村发展中的作用",
+        "2": "根据材料针对2020年12月4日南津村火情暴露出的问题提出解决建议",
+        "3": "根据材料你认为松岭镇打造松岗沙坪红山乡村旅游示范片区具有哪些有利条件",
+        "4": "根据材料总结松岭镇在春节期间引导群众就地过年做好服务保障工作方面的主要做法",
+        "5": "2021年3月2日座谈会上几位优秀干部做了交流发言假如你是小江你从他们身上可以学到什么根据材料简要说明"
+      }
+    },
+    {
+      "path": "省考/广东/2021/申论-县级卷.md",
+      "area": "广东",
+      "year": 2021,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2021年广东省公考《申论》真题试卷及答案【含解析】（县级）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2021,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "1a77c74e6bd173ef43353ebcc66090b2ba2b3d475b5a5016647f25bfea37ae7c",
+      "question_keys": {
+        "1": "请根据材料概括数字政府建设在优化政府管理与服务中的作用",
+        "2": "材料中提到在经济由高速增长转向高质量发展阶段G市加强创新驱动率先实现质量变革效率变革动力变革的密码是什么请谈谈你对材料中密码的理解",
+        "3": "请根据全部材料仅限材料围绕站在新起点迈向新征程推动广东高质量发展主题自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2021/申论-统考.md",
+      "area": "广东",
+      "year": 2021,
+      "variant": "统考",
+      "actual_question_count": 2,
+      "parsed_task_points": [
+        50,
+        30
+      ],
+      "parsed_points_sum": 80,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "a43e08c464099608a57049ca80608d65e81742e040cdb0748433fa71c5431121",
+      "question_keys": {
+        "1": "请根据全部材料仅限材料围绕站在新起点迈向新征程推动广东高质量发展主题自拟题目撰写一篇议论文",
+        "2": "材料中提到在经济由高速增长转向高质量发展阶段G市加强创新驱动率先实现质量变革效率变革动力变革的密码是什么请谈谈你对材料中密码的理解"
+      }
+    },
+    {
+      "path": "省考/广东/2022/申论-乡镇卷.md",
+      "area": "广东",
+      "year": 2022,
+      "variant": "乡镇卷",
+      "actual_question_count": 5,
+      "parsed_task_points": [
+        15,
+        15,
+        20,
+        20,
+        30
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        5
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年广东省公考《申论》真题试卷及答案【含解析】（乡镇）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2022,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "1930f5e6ee1e9d9e9cb92a1fc27353ac5c57a03b556339003244ab4a5b4c3c24",
+      "question_keys": {
+        "1": "根据材料简要概括大坪镇新时代文明实践所的作用",
+        "2": "根据材料谈谈小林村的美主要体现在哪些方面",
+        "3": "突遇寒潮天气福垌村百香果受灾严重大坪镇应如何应对根据材料列出工作要点",
+        "4": "根据材料假如你是大坪镇新入职干部这次撂荒耕地复耕复种工作的顺利完成对你今后做好基层工作有哪些启示",
+        "5": "根据材料中宋霞了解到的情况为大坪镇进一步推进农业现代化提出建议"
+      }
+    },
+    {
+      "path": "省考/广东/2022/申论-县级卷.md",
+      "area": "广东",
+      "year": 2022,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年广东省公考《申论》真题试卷及答案【含解析】（县级）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2022,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "6749e80ba8341a31c4f13ac3a914ebe34aa1412989d8b56282d495864b7b0049",
+      "question_keys": {
+        "1": "根据材料简述广东在促进粤港澳大湾区软联通方面的主要做法",
+        "2": "根据材料分析说明粤港澳三地推进文化交流合作共建人文湾区的优势",
+        "3": "近年来粤港澳大湾区建设迈出坚实步伐向着国际一流湾区和世界级城市群的目标逐浪前行结合材料联系实际围绕粤港澳大湾区建设取得的实效和经验自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2022/申论-统考.md",
+      "area": "广东",
+      "year": 2022,
+      "variant": "统考",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        50
+      ],
+      "parsed_points_sum": 50,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "58e83796c46eaf55893c670bb1ff7d4c87fefb8f86419b66b324705a411a4010",
+      "question_keys": {
+        "1": "近年来粤港澳大湾区建设迈出坚实步伐向着国际一流湾区和世界级城市群的目标逐浪前行结合材料联系实际围绕粤港澳大湾区建设取得的实效和经验自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2023/申论-乡镇卷.md",
+      "area": "广东",
+      "year": 2023,
+      "variant": "乡镇卷",
+      "actual_question_count": 5,
+      "parsed_task_points": [
+        15,
+        15,
+        20,
+        20,
+        30
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        5
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年广东省公考《申论》真题试卷及答案【含解析】（乡镇）",
+          "question_count": 5,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2023,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "a70b6394391e144f56200b6217aacc34e61b3361261ca6fa328ca7c492b1b953",
+      "question_keys": {
+        "1": "推动乡村全面振兴关键靠人根据材料简要概括人才在北山镇乡村振兴工作中发挥的作用",
+        "2": "根据材料请你谈谈榕泉村是如何利用自身文化资源吸引游客的",
+        "3": "根据材料如果要在全镇推广大围村实行积分制的经验你认为临溪镇应重点把握哪些方面",
+        "4": "根据材料假如你是小麦此次会议对你今后做好应急管理工作有什么启示",
+        "5": "县里计划召开农村集体经济工作交流会根据安排杨组长将介绍上塘镇当地推动村集体经济增收的做法假如你是杨组长请根据材料列出发言提纲"
+      }
+    },
+    {
+      "path": "省考/广东/2023/申论-县级卷.md",
+      "area": "广东",
+      "year": 2023,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年广东省公考《申论》真题试卷及答案【含解析】（县级）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2023,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "8c270e1966236f007e642ac38ad9df7bd38bc388cf21c167bc624397c27b05d1",
+      "question_keys": {
+        "1": "问题一请根据材料概括广东追求质量打造品牌擦亮广东制造金字招牌的主要举措",
+        "2": "问题二未来属于青年希望寄予青年请根据材料分析说明青年人才对推动制造业高质量发展的重要作用",
+        "3": "问题三制造业是国家经济命脉所系是立国之本强国之基请结合全部材料联系实际围绕把广东制造业这份厚实家当做优做强这一主题自拟题目撰写一篇策论文"
+      }
+    },
+    {
+      "path": "省考/广东/2023/申论-统考.md",
+      "area": "广东",
+      "year": 2023,
+      "variant": "统考",
+      "actual_question_count": 6,
+      "parsed_task_points": [
+        30,
+        20,
+        20,
+        15,
+        15,
+        50
+      ],
+      "parsed_points_sum": 150,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "83f0c2e055bd7ba1e9f3c1e1550c6c76f76fd673a1db51ad98fd6c9c32e645cf",
+      "question_keys": {
+        "1": "县里计划召开农村集体经济工作交流会根据安排杨组长将介绍上塘镇当地推动村集体经济增收的做法假如你是杨组长请根据材料列出发言提纲",
+        "2": "根据材料假如你是小麦此次会议对你今后做好应急管理工作有什么启示",
+        "3": "根据材料如果要在全镇推广大围村实行积分制的经验你认为临溪镇应重点把握哪些方面",
+        "4": "根据材料请你谈谈榕泉村是如何利用自身文化资源吸引游客的",
+        "5": "推动乡村全面振兴关键靠人根据材料简要概括人才在北山镇乡村振兴工作中发挥的作用",
+        "6": "制造业是国家经济命脉所系是立国之本强国之基请结合全部材料联系实际围绕把广东制造业这份厚实家当做优做强这一主题自拟题目撰写一篇策论文"
+      }
+    },
+    {
+      "path": "省考/广东/2024/申论-公安.md",
+      "area": "广东",
+      "year": 2024,
+      "variant": "公安",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        15,
+        20,
+        25
+      ],
+      "parsed_points_sum": 60,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年广东省公考《申论》真题试卷及答案【含解析】（公安）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2024,
+          "variant": "公安"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "d81adefac5e42cbb4bfb83836fbe748f9b160f9197835f3dcbe3bdb0460d4474",
+      "question_keys": {
+        "1": "根据材料简要概括D市快处快赔121机制的主要步骤",
+        "2": "根据材料你认为F派出所的做法是否妥当并分析说明理由",
+        "3": "请根据材料就A省公安机关出入境管理部门优化服务典型事例草拟一份工作简报"
+      }
+    },
+    {
+      "path": "省考/广东/2024/申论-县镇.md",
+      "area": "广东",
+      "year": 2024,
+      "variant": "县镇",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年广东省公考《申论》真题试卷及答案【含解析】（县镇）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2024,
+          "variant": "县镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "b9dbb98e78984fc124f54d7244efc2dc95a12b9910cce82eef46055d140411cc",
+      "question_keys": {
+        "1": "根据材料概括2024年全省高质量发展大会上广东就推进产业科技创新发展新质生产力提出的主要举措",
+        "2": "材料中反映了Z市推进百县千镇万村高质量发展工程中的一些问题调研组拟向领导汇报调研发现的问题并提出对策建议假如你是调研组成员请草拟汇报的主要内容",
+        "3": "高质量发展是全面建设社会主义现代化国家的首要任务请结合材料联系实际围绕百千万工程是广东推动高质量发展的头号工程自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2024/申论-省市.md",
+      "area": "广东",
+      "year": 2024,
+      "variant": "省市",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年广东省公考《申论》真题试卷及答案【含解析】（省市）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2024,
+          "variant": "省市"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "aa1eefcb17b36cfc107dfb8ae277fe57486515e95154b40b49dfc1e05287e64f",
+      "question_keys": {
+        "1": "请根据材料概括2024年全省高质量发展大会上广东就推进产业科技创新发展新质生产力提出的主要举措",
+        "2": "假如你是G市高质量发展座谈会组织人员请根据材料中的与会代表发言梳理问题并提出相应对策建议",
+        "3": "2023年4月习近平总书记在广东考察时强调实现高水平科技自立自强是中国式现代化建设的关键广东要在提升科技自立自强能力等方面继续走在全国前列请结合材料联系广东实际围绕高水平科技自立自强自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2024/申论-统考.md",
+      "area": "广东",
+      "year": 2024,
+      "variant": "统考",
+      "actual_question_count": 12,
+      "parsed_task_points": [
+        25,
+        25,
+        25,
+        20,
+        20,
+        15,
+        15,
+        30,
+        20,
+        30,
+        50,
+        50
+      ],
+      "parsed_points_sum": 325,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "fe44b31a13c52fc63be4430d006891b8b30c21421861c5e6dbe96e12c93afedc",
+      "question_keys": {
+        "1": "请根据材料就A省公安机关出入境管理部门优化服务典型事例草拟一份工作简报",
+        "2": "根据材料撰写一篇工作简报介绍绿美广东取得的主要成效供经验交流使用",
+        "3": "根据材料以M市消费者协会的名义草拟一份实名的公开信提醒广大市民在网购消费中注意避免消费陷阱维护自身的合法权益",
+        "4": "根据材料概括2024年全省高质量发展大会上广东就推进产业科技创新发展新质生产力提出的主要举措",
+        "5": "根据材料你认为F派出所的做法是否妥当并分析说明理由",
+        "6": "根据材料简要概括D市快处快赔121机制的主要步骤",
+        "7": "根据材料简述G省市场监督管理局在加强校园食品安全监督方面采取的主要做法",
+        "8": "假如你是G市高质量发展座谈会组织人员请根据材料中的与会代表发言梳理问题并提出相应对策建议",
+        "9": "请根据材料概括2024年全省高质量发展大会上广东就推进产业科技创新发展新质生产力提出的主要举措",
+        "10": "材料中反映了Z市推进百县千镇万村高质量发展工程中的一些问题调研组拟向领导汇报调研发现的问题并提出对策建议假如你是调研组成员请草拟汇报的主要内容",
+        "11": "2023年4月习近平总书记在广东考察时强调实现高水平科技自立自强是中国式现代化建设的关键广东要在提升科技自立自强能力等方面继续走在全国前列请结合材料联系广东实际围绕高水平科技自立自强自拟题目撰写一篇议论文",
+        "12": "高质量发展是全面建设社会主义现代化国家的首要任务请结合材料联系实际围绕百千万工程是广东推动高质量发展的头号工程自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2024/申论-行政执法.md",
+      "area": "广东",
+      "year": 2024,
+      "variant": "行政执法",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        15,
+        25,
+        25
+      ],
+      "parsed_points_sum": 65,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年广东省公考《申论》真题试卷及答案【含解析】（行政执法）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2024,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "2e77a38895ff46ff837f89848a5bc70e88ed55f4c48ee28c14346fe880e07781",
+      "question_keys": {
+        "1": "根据材料简述G省市场监督管理局在加强校园食品安全监督方面采取的主要做法",
+        "2": "根据材料以M市消费者协会的名义草拟一份实名的公开信提醒广大市民在网购消费中注意避免消费陷阱维护自身的合法权益",
+        "3": "根据材料撰写一篇工作简报介绍绿美广东取得的主要成效供经验交流使用"
+      }
+    },
+    {
+      "path": "省考/广东/2025/申论-公安.md",
+      "area": "广东",
+      "year": 2025,
+      "variant": "公安",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        20,
+        20
+      ],
+      "parsed_points_sum": 60,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年广东省公考《申论》真题试卷及答案【含解析】（公安）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2025,
+          "variant": "公安"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "c16a04b5b9a8ea93d74914f1cf151d6b47fabb4230e7fcc632553364255e618e",
+      "question_keys": {
+        "1": "根据材料围绕AI技术应用场景简要说明甲市AI警察在警务实战中的具体应用",
+        "2": "为做好高校反电诈工作甲市大学城属地派出所计划编写一份高校反电诈工作指南请根据材料草拟工作指南的主要内容",
+        "3": "假如你是桥东派出所的民警小张请根据材料总结提炼桥东派出所积极践行新时代枫桥经验的相关经验做法"
+      }
+    },
+    {
+      "path": "省考/广东/2025/申论-县镇.md",
+      "area": "广东",
+      "year": 2025,
+      "variant": "县镇",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年广东省公考《申论》真题试卷及答案【含解析】（县镇）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2025,
+          "variant": "县镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "d0493604a392110e023d230b817650dddb985b05f82c4be99c77806738b0b8d0",
+      "question_keys": {
+        "1": "请根据材料概括A县做好荔枝土特产文章的主要做法",
+        "2": "G市专题调研组准备提交一份关于全市科技赋能农业产业建设情况的调研报告如果你是调研组成员请根据材料拟写报告中存在问题和对策建议两部分的主要内容",
+        "3": "广东聚焦实施百县千镇万村高质量发展工程始终抓住产业这个高质量发展的根本推动乡村全面振兴请结合材料联系实际围绕乡村振兴关键在产业振兴进行深入思考自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2025/申论-省市.md",
+      "area": "广东",
+      "year": 2025,
+      "variant": "省市",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年广东省公考《申论》真题试卷及答案【含解析】（省市）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2025,
+          "variant": "省市"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "a007f00ad33ec06b7c398186a4e300774916efbec24d6c88bedbad99b87d0a96",
+      "question_keys": {
+        "1": "请根据材料概括S市强化企业科技创新主体地位的主要做法",
+        "2": "如果你是G市科技局的工作人员请根据材料中与会者的发言摘录梳理G市科研成果转化中存在的问题并提出对策建议",
+        "3": "习近平总书记指出新质生产力的显著特点是创新必须继续做好创新这篇大文章推动新质生产力加快发展请结合材料联系实际围绕广东继续做好创新这篇大文章进行深入思考自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2025/申论-统考.md",
+      "area": "广东",
+      "year": 2025,
+      "variant": "统考",
+      "actual_question_count": 12,
+      "parsed_task_points": [
+        20,
+        30,
+        20,
+        20,
+        20,
+        30,
+        20,
+        30,
+        20,
+        50,
+        50,
+        15
+      ],
+      "parsed_points_sum": 325,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "a5b7d6e1952a11ce254d093ba6d4da951fddbea09d9a65ab126f98c4422f07e0",
+      "question_keys": {
+        "1": "为做好高校反电诈工作甲市大学城属地派出所计划编写一份高校反电诈工作指南请根据材料草拟工作指南的主要内容",
+        "2": "如果你是G市科技局的工作人员请根据材料中与会者的发言摘录梳理G市科研成果转化中存在的问题并提出对策建议",
+        "3": "请根据材料概括S市强化企业科技创新主体地位的主要做法",
+        "4": "假如你是桥东派出所的民警小张请根据材料总结提炼桥东派出所积极践行新时代枫桥经验的相关经验做法",
+        "5": "根据材料围绕AI技术应用场景简要说明甲市AI警察在警务实战中的具体应用",
+        "6": "请针对材料中各界代表反映的问题就A市进一步发展低空经济提出对策建议",
+        "7": "根据材料梳理总结广东省推行综合查一次的主要做法",
+        "8": "G市专题调研组准备提交一份关于全市科技赋能农业产业建设情况的调研报告如果你是调研组成员请根据材料1拟写报告中存在问题和对策建议两部分的主要内容",
+        "9": "请根据材料概括A县做好荔枝土特产文章的主要做法",
+        "10": "习近平总书记指出新质生产力的显著特点是创新必须继续做好创新这篇大文章推动新质生产力加快发展请结合材料联系实际围绕广东继续做好创新这篇大文章进行深入思考自拟题目撰写一篇议论文",
+        "11": "广东聚焦实施百县千镇万村高质量发展工程始终抓住产业这个高质量发展的根本推动乡村全面振兴请结合材料联系实际围绕乡村振兴关键在产业振兴进行深入思考自拟题目撰写一篇议论文",
+        "12": "根据材料请简要阐述你对柔性执法的理解"
+      }
+    },
+    {
+      "path": "省考/广东/2025/申论-行政执法.md",
+      "area": "广东",
+      "year": 2025,
+      "variant": "行政执法",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        15,
+        20,
+        30
+      ],
+      "parsed_points_sum": 65,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年广东省公考《申论》真题试卷及答案【含解析】（行政执法）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2025,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "2a6bc9f91759b6b10c05b7d0461f6be5355876fcb5c7d93b3995258f436d1816",
+      "question_keys": {
+        "1": "根据材料请简要阐述你对柔性执法的理解",
+        "2": "根据材料梳理总结广东省推行综合查一次的主要做法",
+        "3": "请针对材料中各界代表反映的问题就A市进一步发展低空经济提出对策建议"
+      }
+    },
+    {
+      "path": "省考/广东/2026/申论-公安.md",
+      "area": "广东",
+      "year": 2026,
+      "variant": "公安",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        20,
+        20
+      ],
+      "parsed_points_sum": 60,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2026年广东省公考《申论》真题试卷及答案【含解析】（公安）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2026,
+          "variant": "公安"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "356e230a0a59868f74b1bacdaa4477970b3f2a6f0702aee471906de52ddc022c",
+      "question_keys": {
+        "1": "根据材料概括各地公安机关在高空抛物治理中的主要做法",
+        "2": "根据材料说明甲县公安局是如何做好社区警务工作的",
+        "3": "根据材料撰写一篇工作简报介绍甲市公安局车管部门创新服务供经验交流使用"
+      }
+    },
+    {
+      "path": "省考/广东/2026/申论-县镇.md",
+      "area": "广东",
+      "year": 2026,
+      "variant": "县镇",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2026年广东省公考《申论》真题试卷及答案【含解析】（县镇）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2026,
+          "variant": "县镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "eb2659e796895c749e830669317315f7f0934a5d412246aef0cfb8393f139845",
+      "question_keys": {
+        "1": "请根据材料谈谈绿色工厂的绿体现在哪些方面",
+        "2": "S市调研组经过实地走访和召开座谈会了解了当地古树名木的保护情况假如你是调研组成员请根据材料梳理S市古树名木保护遇到的问题并就做好全市古树名木保护工作提出对策建议",
+        "3": "习近平总书记指出良好生态环境是最普惠的民生福祉请结合材料联系实际围绕绿美广东生态建设是关系广东长远发展和民生福祉的重要工程进行深入思考自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2026/申论-省市.md",
+      "area": "广东",
+      "year": 2026,
+      "variant": "省市",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2026年广东省公考《申论》真题试卷及答案【含解析】（省市）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2026,
+          "variant": "省市"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "91cfbb607bfc4c49054c4d2ad940dbb838a318971abb5f3251e8a09741ce3638",
+      "question_keys": {
+        "1": "请根据材料谈谈绿色工厂的绿体现在哪些方面",
+        "2": "假如你是S市发展和改革局工作人员请根据材料梳理S市零碳园区建设遇到的问题并就进一步推进零碳园区建设提出对策建议",
+        "3": "请结合材料联系广东实际围绕绿色发展是高质量发展的底色进行深入思考自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2026/申论-统考.md",
+      "area": "广东",
+      "year": 2026,
+      "variant": "统考",
+      "actual_question_count": 12,
+      "parsed_task_points": [
+        20,
+        30,
+        20,
+        20,
+        20,
+        15,
+        30,
+        20,
+        30,
+        20,
+        50,
+        50
+      ],
+      "parsed_points_sum": 325,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "mixed_bucket_not_compared",
+      "sha256": "e6d6b7db6faefdb005575cf1baf5927b915ba33f6faa01c2cb8b07f8e0a95a54",
+      "question_keys": {
+        "1": "根据材料撰写一篇工作简报介绍甲市公安局车管部门创新服务供经验交流使用",
+        "2": "根据材料就此次研讨会各方代表的发言内容以G省海洋生态环境保护为主题草拟一份工作简报",
+        "3": "根据材料说明甲县公安局是如何做好社区警务工作的",
+        "4": "根据材料概括各地公安机关在高空抛物治理中的主要做法",
+        "5": "根据材料请概括材料中各地信用修复工作的主要做法",
+        "6": "根据材料简述微短剧市场出现的乱象",
+        "7": "S市调研组经过实地走访和召开座谈会了解了当地古树名木的保护情况假如你是调研组成员请根据材料梳理S市古树名木保护遇到的问题并就做好全市古树名木保护工作提出对策建议",
+        "8": "请根据材料谈谈绿色工厂的绿体现在哪些方面",
+        "9": "假如你是S市发展和改革局工作人员请根据材料梳理S市零碳园区建设遇到的问题并就进一步推进零碳园区建设提出对策建议",
+        "10": "请根据材料谈谈绿色工厂的绿体现在哪些方面",
+        "11": "习近平总书记指出良好生态环境是最普惠的民生福祉请结合材料联系实际围绕绿美广东生态建设是关系广东长远发展和民生福祉的重要工程进行深入思考自拟题目撰写一篇议论文",
+        "12": "请结合材料联系广东实际围绕绿色发展是高质量发展的底色进行深入思考自拟题目撰写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2026/申论-行政执法.md",
+      "area": "广东",
+      "year": 2026,
+      "variant": "行政执法",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        15,
+        20,
+        30
+      ],
+      "parsed_points_sum": 65,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2026年广东省公考《申论》真题试卷及答案【含解析】（行政执法）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=199",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "广东",
+          "year": 2026,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "e16211509e0fcbd668bc977efb3b63f17e93b07a881cc15f71fdea1a66f4b1fc",
+      "question_keys": {
+        "1": "根据材料简述微短剧市场出现的乱象",
+        "2": "根据材料请概括材料中各地信用修复工作的主要做法",
+        "3": "根据材料就此次研讨会各方代表的发言内容以G省海洋生态环境保护为主题草拟一份工作简报"
+      }
+    },
+    {
+      "path": "省考/广东/2016/申论-广州市考.md",
+      "area": "广州",
+      "year": 2016,
+      "variant": "单卷",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        100
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "no_direct_catalog_match",
+      "sha256": "efcf5c9717428f6e319495d5ed2b7eaca60c4ee96c35c6ed7a32661d60416cf6",
+      "question_keys": {
+        "1": "请以公共舆论中的公共理性为主题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-单考区.md",
+      "area": "广州",
+      "year": 2017,
+      "variant": "单考区",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        100
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "no_direct_catalog_match",
+      "sha256": "383fecdb7c6e9cf189c689b5d4c9d0fe7ce78fec840d91514d362560139c7111",
+      "question_keys": {
+        "1": "请根据全部材料以广州传承与发展为题目写作一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-双考区.md",
+      "area": "广州",
+      "year": 2017,
+      "variant": "双考区",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        100
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "no_direct_catalog_match",
+      "sha256": "c8534b833ccf4c4b43b501a8a37d93b441b4d624a1d076af7bdd6cf9d9b3de72",
+      "question_keys": {
+        "1": "阅读9则材料以透视春节之变为主题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+      "area": "广州",
+      "year": 2018,
+      "variant": "3月24日",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        100
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "no_direct_catalog_match",
+      "sha256": "f3c842ad98f34736118c1f0920d5c212fa46b412d81ac6c9638f9e787cdb0715",
+      "question_keys": {
+        "1": "请深入思考材料中划线句但愿苍生俱饱暖不辞辛苦出山林联系放管服改革实践自选角度自拟题目写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+      "area": "广州",
+      "year": 2018,
+      "variant": "3月25日",
+      "actual_question_count": 1,
+      "parsed_task_points": [
+        null
+      ],
+      "parsed_points_sum": null,
+      "catalog_count": [],
+      "catalog_sources": [],
+      "status": "no_direct_catalog_match",
+      "sha256": "ea69741651a78d812c1509643bc90c7d8caabb4914ea82d4106e080eaacdca54",
+      "question_keys": {
+        "1": "请以回乡为主题自拟题目写一篇议论文谈谈对乡村振兴战略的认识"
+      }
+    },
+    {
+      "path": "省考/深圳/2016/申论-A类.md",
+      "area": "深圳",
+      "year": 2016,
+      "variant": "A类",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2016年深圳市公务员考试《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2016,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "f6472148884141d8532bcabd85782dd899d525dafce368bb707430473f66a154",
+      "question_keys": {
+        "1": "根据材料提炼概括新加坡在国际化进程中四个方面的做法",
+        "2": "根据材料梳理外籍人员遇到的问题并提出对策",
+        "3": "根据材料围绕把深圳建成更具有竞争力影响力的国际化城市这个主题自拟标题写一篇对策性议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2016/申论-B类.md",
+      "area": "深圳",
+      "year": 2016,
+      "variant": "B类",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        null,
+        50
+      ],
+      "parsed_points_sum": null,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2016年深圳市公务员考试《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2016,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "e3ec5b235e19059e6b9b8d25dfc6f786245bdad9da6642a91d5a4d1d77cb4455",
+      "question_keys": {
+        "1": "根据材料归纳硅谷的成功经验",
+        "2": "第五届深圳国际文化艺术周已顺利结束材料假如深圳正筹备下一届文化艺术周",
+        "3": "推进城市国际化需要大量人才请就深圳如何创造条件吸引和留住国际化人才自拟标题写一篇对策性议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2017/申论-A类.md",
+      "area": "深圳",
+      "year": 2017,
+      "variant": "A类",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        25,
+        25,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2017年深圳市公务员考试《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2017,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "4a583459571b4438d17c05167fcc8760c35da10ee8dc0ba07191e51412eae46b",
+      "question_keys": {
+        "1": "根据材料到材料提炼概括互联网对政府治理的促进作用",
+        "2": "根据材料请就N市公安系统微信公众号存在的问题提出完善建议",
+        "3": "请围绕移动互联与政府治理创新这个主题自拟标题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2017/申论-B类.md",
+      "area": "深圳",
+      "year": 2017,
+      "variant": "B类",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2017年深圳市公务员考试《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2017,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "4f57651beda10e7bb1c23e271df830c2406fb4bb9442cdb247ba8ac3ab70e642",
+      "question_keys": {
+        "1": "根据材料请概括Z市建设信息惠民公共服务平台的五点主要做法",
+        "2": "S市法制办拟于近期在法制大厦301会议室就S市网络预约出租车经营服务管理暂行办法征求意见稿举行座谈会征求意见假设你负责筹备该座谈会需通知相关人员参会请根据材料草拟一份会议通知书",
+        "3": "阅读所给的材料基层政府服务于人民群众请就基层政府如何利用互联网改善政府管理与公共服务题目自拟写一篇对策性议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2018/申论-A类.md",
+      "area": "深圳",
+      "year": 2018,
+      "variant": "A类",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2018年深圳市公务员考试《申论》真题试卷及答案【含解析】（A卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2018,
+          "variant": "A"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "8464d62a1cc32e3766cc0bc8fd5364b2cee1389b7267aabdb44b2421df3a2cd9",
+      "question_keys": {
+        "1": "请就材料中反映的问题谈谈你的认识",
+        "2": "阅读材料假设你是M河的河长请你提出治理M河的工作思路",
+        "3": "请围绕建设美丽城市这个主题结合材料自拟标题写一篇对策性议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2018/申论-B类.md",
+      "area": "深圳",
+      "year": 2018,
+      "variant": "B类",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2018年深圳市公务员考试《申论》真题试卷及答案【含解析】（B卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2018,
+          "variant": "B"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "c8b182718b3621a41da211cd4c8296417a5e143f2dead9adc1e17982d49dee3f",
+      "question_keys": {
+        "1": "根据材料请归纳出祁连山生态保护方面存在的主要问题",
+        "2": "根据材料请就M河存在的问题提出治理举措",
+        "3": "假如A市正在开展建设美丽A市意见征集活动你准备给市委市政府建言献策请结合材料写一篇文章"
+      }
+    },
+    {
+      "path": "省考/深圳/2019/申论-一卷.md",
+      "area": "深圳",
+      "year": 2019,
+      "variant": "一卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年深圳市公务员考试《申论》真题试卷及答案【含解析】（一卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2019,
+          "variant": "一"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "9806fde9b390353dba18d736e214a63f09f00e8dce9521082177addc360e5e2e",
+      "question_keys": {
+        "1": "根据材料概括深圳促进实体经济健康发展的5条措施",
+        "2": "针对材料反映的电动汽车电池问题提出对策",
+        "3": "根据材料围绕以新发展理念为引领深入推进深圳高质量发展这个主题自拟题目写一篇对策性议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2019/申论-二卷.md",
+      "area": "深圳",
+      "year": 2019,
+      "variant": "二卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年深圳市公务员考试《申论》真题试卷及答案【含解析】（二卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2019,
+          "variant": "二"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "9436f8c8b28db781c870628ea7ae267f125115710f0c2782d6737506dce79026",
+      "question_keys": {
+        "1": "根据材料对S市存在的垃圾问题进行概括",
+        "2": "根据材料就如何解决城中村存在的问题提出对策",
+        "3": "根据材料围绕以新发展理念为引领深入推进深圳高质量发展这个主题自拟题目写一篇对策性议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2020/申论-一卷.md",
+      "area": "深圳",
+      "year": 2020,
+      "variant": "一卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        10,
+        25,
+        45
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2020年深圳市公务员考试《申论》真题试卷及答案【含解析】（一卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2020,
+          "variant": "一"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "8640f36f29c88a7e85ccaa570a6686b9c9559ade0a76c1271622af039e24e83c",
+      "question_keys": {
+        "1": "根据材料材料概括深圳营造良好人才生态的做法",
+        "2": "阅读材料提炼出链长制的内涵",
+        "3": "针对材料反映的困难提出疫情防控常态化下政府可采取的长效化中小企业扶持措施",
+        "4": "当前深圳全市上下都在深入学习贯彻习近平总书记出席深圳经济特区建立40周年庆祝大会和视察广东重要讲话重要指示精神深圳市公务员主管部门计划向全市公务员发出倡议号召全市公务员永葆闯的精神创的劲头干的作风勇于担当积极作为服务双区建设请你草拟这份倡议书"
+      }
+    },
+    {
+      "path": "省考/深圳/2020/申论-二卷.md",
+      "area": "深圳",
+      "year": 2020,
+      "variant": "二卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        25,
+        10,
+        20,
+        45
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2020年深圳市公务员考试《申论》真题试卷及答案【含解析】（二卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2020,
+          "variant": "二"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "bef8e0dfa214eaeced8e969b76412b299f44224969ca4caa22536564d3d25a71",
+      "question_keys": {
+        "1": "阅读材料针对市民赵先生的诉求街道办决定开展调查研究为是否设立长者食堂提供决策参考请就本次调研需要了解的情况拟出提纲",
+        "2": "准确理解材料第一段中的比喻列出其中隐含的城市治理问题",
+        "3": "根据材料概括G市城市治理中全周期管理举措的特点",
+        "4": "当前深圳全市上下都在深入学习贯彻习近平总书记出席深圳经济特区建立40周年庆祝大会和视察广东重要讲话重要指示精神深圳市公务员主管部门计划向全市公务员发出倡议号召全市公务员永葆闯的精神创的劲头干的作风勇于担当积极作为服务双区建设请你草拟这份倡议书"
+      }
+    },
+    {
+      "path": "省考/深圳/2022/申论-一卷.md",
+      "area": "深圳",
+      "year": 2022,
+      "variant": "一卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年深圳市公务员考试《申论》真题试卷及答案【含解析】（一卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2022,
+          "variant": "一"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "5a8ee9e1ffa17c272ecab6607cdc75c4fdd78cb4203d0f8e2c71e393e84ead21",
+      "question_keys": {
+        "1": "请分析材料中反映的智慧社区建设存在的问题",
+        "2": "请根据材料梳理城市治理存在的问题并就如何实现科学治理提出工作建议",
+        "3": "围绕新时代超大城市治理为主题某知名研究机构计划在深圳举办高端论坛将邀请深圳市政府相关领导做主题演讲请结合材料起草一份演讲稿"
+      }
+    },
+    {
+      "path": "省考/深圳/2022/申论-二卷.md",
+      "area": "深圳",
+      "year": 2022,
+      "variant": "二卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年深圳市公务员考试《申论》真题试卷及答案【含解析】（二卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2022,
+          "variant": "二"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "ac5457e84963543f435ab68c81acd346d3706725ad2faf144d16bea9485a52c4",
+      "question_keys": {
+        "1": "根据材料请提炼出Z街道在推进政务服务标准化规范化建设方面的5条举措",
+        "2": "阅读材料该座谈会即将召开需要通知相关企业参会请代拟一份会议通知",
+        "3": "围绕新时代超大城市治理为主题某知名研究机构计划在深圳举办高端论坛将邀请深圳市政府相关领导做主题演讲请结合材料起草一份演讲稿"
+      }
+    },
+    {
+      "path": "省考/深圳/2023/申论-一卷.md",
+      "area": "深圳",
+      "year": 2023,
+      "variant": "一卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年深圳市公务员考试《申论》真题试卷及答案【含解析】（一卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2023,
+          "variant": "一"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "38b0ba83a42c2564b0b6c0f2c97c88422f424ed63b6182f591739af76ba6ed09",
+      "question_keys": {
+        "1": "请根据材料提炼出深圳在帮扶工作实践中的经验做法",
+        "2": "假如深圳召开新一届全球招商大会请结合材料代大会组委会草拟致全球投资者的一封信向全球投资者发出邀约",
+        "3": "请结合材料围绕谱写中国式现代化的深圳新篇章主题自拟标题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2023/申论-二卷.md",
+      "area": "深圳",
+      "year": 2023,
+      "variant": "二卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年深圳市公务员考试《申论》真题试卷及答案【含解析】（二卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2023,
+          "variant": "二"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "bf3fd1850dea07bc1a4f9fc1f9ba2ec11ab6a470b2f1076d104604441c5969a2",
+      "question_keys": {
+        "1": "请提炼材料中所述3个社区的工作亮点",
+        "2": "某研究机构准备围绕工业上楼开展深入调研你作为调研组成员请结合材料撰写一份调研提纲",
+        "3": "请结合材料围绕谱写中国式现代化的深圳新篇章主题自拟标题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2024/申论-二卷.md",
+      "area": "深圳",
+      "year": 2024,
+      "variant": "二卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年深圳市公务员考试《申论》真题试卷及答案【含解析】（二卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2024,
+          "variant": "二"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "476930e70563427725890d6097a6845f79aeeb0eff46f8543194206d560280ff",
+      "question_keys": {
+        "1": "请根据材料提炼M市推进法治化营商环境建设的经验做法",
+        "2": "请根据材料针对低空经济发展存在的问题提出对策",
+        "3": "一年之计在于春乘势而上正当时请结合所有材料围绕M进一步增强信心和底气这一主题自拟标题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2025/申论-一卷.md",
+      "area": "深圳",
+      "year": 2025,
+      "variant": "一卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年深圳市公务员考试《申论》真题试卷及答案【含解析】（一卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2025,
+          "variant": "一"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "8a49c026882cc8133c7ccf6116a2ac0e89103edad63a7ad49dbeeace0771009e",
+      "question_keys": {
+        "1": "请根据材料提炼出深圳在公共文化服务方面的特色做法",
+        "2": "请根据材料针对文化消费方面存在的问题提出对策",
+        "3": "文化厚度铸就发展高度请结合材料围绕深圳切实担负起新时代新的文化使命增强发展新动能持续提升城市影响力这一主题自拟标题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/深圳/2025/申论-二卷.md",
+      "area": "深圳",
+      "year": 2025,
+      "variant": "二卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年深圳市公务员考试《申论》真题试卷及答案【含解析】（二卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?cid=226&keyboard=",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "深圳",
+          "year": 2025,
+          "variant": "二"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "53acad85cd463a0a02b56622dacde58a5d97f1e5b58dd6a784a7efb4b1ad47e6",
+      "question_keys": {
+        "1": "某区拟召开基层治理经验交流会H街道应邀在会上作经验交流发言请根据材料草拟发言的主要内容",
+        "2": "假如第二十届中国深圳国际文化产业博览交易会组委会准备向参展的A协会发一封感谢信请结合材料草拟感谢信",
+        "3": "文化厚度铸就发展高度请结合材料围绕深圳切实担负起新时代新的文化使命增强发展新动能持续提升城市影响力这一主题自拟标题写一篇议论文"
+      }
+    },
+    {
+      "path": "省考/福建/2016/申论-统考.md",
+      "area": "福建",
+      "year": 2016,
+      "variant": "统考",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2016年公务员多省联考《申论》真题试卷及答案【含解析】（福建卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2016,
+          "variant": "单卷"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "a144c11cf347792a3040fabacafa0fb510c87e553b1e8fd4f52adc61d7dbcab7",
+      "question_keys": {
+        "1": "材料提到社会创业和社会创业家两个概念请你根据材料指出1社会创业的主要内涵2社会创业家的主要特点",
+        "2": "请根据材料归纳总结创业者的主要成功经验",
+        "3": "材料中提到为钱创业是肤浅的应为梦想所驱动请你根据对这句话的理解自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2017/申论-统考.md",
+      "area": "福建",
+      "year": 2017,
+      "variant": "统考",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2017年公务员多省联考《申论》真题试卷及答案【含解析】（福建卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=2&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2017,
+          "variant": "单卷"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "964cfabcd91b315884a84c94f2008b4d556d828c936967980fb4d30dedf9bc99",
+      "question_keys": {
+        "1": "材料提到这位村干部带领群众发展致富的事迹请概括出有哪些经验做法值得借鉴",
+        "2": "根据材料分析部分老字号发展面临的困境并从政府角度提出有效帮扶措施",
+        "3": "材料中提到当红楼梦都被这个时代的读者评为最懒得看的小说时我们还有什么理由躺着谈文化复兴警钟需长鸣请根据你对这句话的理解自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2018/申论-乡镇卷.md",
+      "area": "福建",
+      "year": 2018,
+      "variant": "乡镇卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        30,
+        35
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2018年公务员多省联考《申论》真题试卷及答案【含解析】（福建乡镇卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2018,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "6b24ea36fac73249e1094ec89278080f03f74db461b39d4f38a55798a0c7549a",
+      "question_keys": {
+        "1": "请根据材料归纳县域特色农业经济发展应该吸取的教训",
+        "2": "请根据材料为农村电商的发展提出合理建议",
+        "3": "假设你是S镇镇政府负责宣传工作的人员请根据材料写一篇关于S镇请农民当老师活动的报道",
+        "4": "假设你是绣山村村支书助理请根据材料写一篇动员本村猕猴桃果农加入合作社的倡议书"
+      }
+    },
+    {
+      "path": "省考/福建/2018/申论-县级卷.md",
+      "area": "福建",
+      "year": 2018,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        null,
+        null,
+        null
+      ],
+      "parsed_points_sum": null,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2018年公务员多省联考《申论》真题试卷及答案【含解析】（福建县级卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2018,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "85c75f93efb7599b686d3f4da171d8b144292e42427f9a2871f4d41aa83369a6",
+      "question_keys": {
+        "1": "根据材料概括面馆老板老叶能够成功的原因",
+        "2": "根据材料谈谈对划线部分用好科技特派员的前提是科技特派员好用够用的理解",
+        "3": "材料中提到只有处理好简与繁的关系我们才不会在当前畏手畏脚而对三年后的世界又计划得好高骛远对十年后的未来却又鼠目寸光请你根据对这句话的理解自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2019/申论-乡镇卷.md",
+      "area": "福建",
+      "year": 2019,
+      "variant": "乡镇卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年公务员多省联考《申论》真题试卷及答案【含解析】（福建乡镇卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2019,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "d935121e641ef7a32d314915945feb0a56b245160bdf5fdf309d7d5b229d726c",
+      "question_keys": {
+        "1": "根据材料概括出该村近年来遇到的问题及其原因",
+        "2": "根据材料谈谈你对于飞所说的家乡不只是乡愁还有诗和远方这句话的理解",
+        "3": "请根据材料概括P县农家乐存在的问题并据此提出相应的改进建议",
+        "4": "王家村拟参照兴隆村的模式改进农家书屋但有些村民认为改不改没多大关系假设你是王家村农家书屋的管理员请你根据材料写一篇宣传稿向本村村民介绍兴隆村农家书屋发挥的作用"
+      }
+    },
+    {
+      "path": "省考/福建/2019/申论-县级卷.md",
+      "area": "福建",
+      "year": 2019,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2019年公务员多省联考《申论》真题试卷及答案【含解析】（福建县级卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2019,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "2b2a60e3ee7b18b83798a40cbdd2da970e3e415e0041845cd1207a9795569de5",
+      "question_keys": {
+        "1": "根据材料谈谈随着时代变迁背二歌内涵意义的变化",
+        "2": "根据材料归纳Y县古民居保护的有效措施",
+        "3": "材料中提到我们与世界相交与时代相通才能让一切保值增值更添赋流通的美请你根据对这句话的理解自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2020/申论-乡镇卷.md",
+      "area": "福建",
+      "year": 2020,
+      "variant": "乡镇卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        25,
+        25,
+        35
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2020年0725公务员多省联考《申论》真题试卷及答案【含解析】（福建乡镇卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2020,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "3bf03b46b159a6c02cd97f99d1a871c0f550cb2a34d4990d13b5b98bdcf5c0a2",
+      "question_keys": {
+        "1": "请根据材料总结T区开展把老乡留在老家专项行动的主要做法",
+        "2": "请根据材料为镇政府拟写一份关于浦水镇传统商业文化的推介稿",
+        "3": "根据材料谈谈S村是如何打造村播平台的",
+        "4": "假设你是这位记者请根据材料以老镇更新为标题写一篇关于该镇发展升级工作的报道"
+      }
+    },
+    {
+      "path": "省考/福建/2020/申论-县级卷.md",
+      "area": "福建",
+      "year": 2020,
+      "variant": "县级卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2020年0725公务员多省联考《申论》真题试卷及答案【含解析】（福建县级卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2020,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "290377ed43168aafcb625e55de47651291d9282c75ca8d437243707c47183bad",
+      "question_keys": {
+        "1": "根据材料归纳K镇打造智慧健康生活的主要做法",
+        "2": "根据材料谈谈G县是如何实现从多肉大县到多肉强县这一转变的",
+        "3": "参考材料围绕基层社区治理主题自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2021/申论-乡镇.md",
+      "area": "福建",
+      "year": 2021,
+      "variant": "乡镇",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        25,
+        25,
+        35
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2021年公务员多省联考《申论》真题试卷及答案【含解析】（福建乡镇卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2021,
+          "variant": "乡镇"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "0ff9ef58a01ecc3eba5ff37dba3bacd22faacfee7f3c1fe8597e151466d368a9",
+      "question_keys": {
+        "1": "请根据材料谈谈要如何解决便民服务站一点都不便民的问题",
+        "2": "请根据材料谈谈你对旧曲新唱的理解",
+        "3": "根据材料请总结北山县风河村是怎样引凤筑巢的",
+        "4": "G市近期准备召开整治一户多宅工作经验交流会假设你是X县县政府办公室的工作人员请根据材料为严县长起草一份在会上的经验交流发言提纲"
+      }
+    },
+    {
+      "path": "省考/福建/2021/申论-县级.md",
+      "area": "福建",
+      "year": 2021,
+      "variant": "县级",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2021年公务员多省联考《申论》真题试卷及答案【含解析】（福建县级卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2021,
+          "variant": "县级"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "50f2b3af004a391edfa0068a22fc4272da52381171c4c0721b5165005094113b",
+      "question_keys": {
+        "1": "根据材料归纳N区试点社区救助顾问制度的主要做法",
+        "2": "根据材料梳理D县基层农业专业技术人员队伍存在的主要问题并提出加强队伍建设的建议",
+        "3": "材料中提到努力让民生服务更有温度民生福祉更有质感让人民群众的获得感更足请你深入思考这句话联系实际自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2022/申论-县乡.md",
+      "area": "福建",
+      "year": 2022,
+      "variant": "县乡",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        25,
+        35
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年公务员多省联考《申论》真题试卷及答案【含解析】（福建县乡卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2022,
+          "variant": "县乡"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "c935edd8b94d55f079aa5ca7f4cfe0f224ffb6f265de7a104941f022189d1a42",
+      "question_keys": {
+        "1": "请你根据材料谈谈D村是如何通过蛋生鸡鸡生蛋的方式破解村集体经济发展密码的",
+        "2": "请根据材料谈谈对古道已成为沿途村镇迈向未来的新动力的理解",
+        "3": "平川县组织了一个考察团前往云安县参观学习假如你是考察团的成员请结合材料梳理平川县在乡镇建设中存在的问题并借鉴云安县的做法提出解决问题的建议",
+        "4": "请你根据材料撰写一篇画韵坊社区邻里中心建设特色的工作简报"
+      }
+    },
+    {
+      "path": "省考/福建/2022/申论-省市卷.md",
+      "area": "福建",
+      "year": 2022,
+      "variant": "省市卷",
+      "actual_question_count": 3,
+      "parsed_task_points": [
+        20,
+        30,
+        50
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        3
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年公务员多省联考《申论》真题试卷及答案【含解析】（福建省市卷）",
+          "question_count": 3,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2022,
+          "variant": "省市"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "2fb76ce1b83e028b4f2a65761b4901f646b5024b70ba32a743461aeed3233883",
+      "question_keys": {
+        "1": "根据材料请你谈谈为什么说巧阿姨搭建了城乡交流的桥梁串起了城和乡",
+        "2": "假如你是璧云区委宣传部的一名工作人员请根据材料拟写一篇反映璧云区四城建设成就的宣传稿",
+        "3": "请结合材料以城乡人为题联系实际自选角度写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2022/申论-行政执法.md",
+      "area": "福建",
+      "year": 2022,
+      "variant": "行政执法",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        20,
+        20,
+        25,
+        35
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2022年公务员多省联考《申论》真题试卷及答案【含解析】（福建行政执法卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2022,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "0f3ab644e169bec1f796e7013e8b6d82979b63e016c11dbb495fe552654eeec7",
+      "question_keys": {
+        "1": "根据材料请你谈谈M市和N市在开展生态环境保护跨区域合作方面做了哪些努力",
+        "2": "请根据材料概括F市保障工资支付工作的主要举措",
+        "3": "材料提到法官的审判工作就像是面对着一张包括了多种题型的试卷只有把每一道题都答好了才能得高分请你谈谈对这句话的理解",
+        "4": "省里准备举办市域社会综合治理现代化建设论坛假如你是D市综治办的一名工作人员请根据材料拟写一份在论坛上的发言提纲介绍D市社会综合治理的做法"
+      }
+    },
+    {
+      "path": "省考/福建/2023/申论-县乡.md",
+      "area": "福建",
+      "year": 2023,
+      "variant": "县乡",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年公务员多省联考《申论》真题试卷及答案【含解析】（福建县乡卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2023,
+          "variant": "县乡"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "ff38d902190c8b809e33eea1f718edaa40ebd7187cc80b4fadbf142780ea72e0",
+      "question_keys": {
+        "1": "请根据材料谈谈曾林社区是如何做好村改居后半篇文章的",
+        "2": "请根据材料概括L县山核桃产业发展过程中存在的问题及解决措施",
+        "3": "石桥街道准备开展2023年度社区阳光基金募捐活动请根据材料拟写一份募捐倡议书",
+        "4": "S县近期准备举办招商引资推介会请根据材料为黄书记拟写在推介会开幕式上的讲话稿"
+      }
+    },
+    {
+      "path": "省考/福建/2023/申论-省市.md",
+      "area": "福建",
+      "year": 2023,
+      "variant": "省市",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        15,
+        25,
+        45
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年公务员多省联考《申论》真题试卷及答案【含解析】（福建省市卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2023,
+          "variant": "省市"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "d489eb833e0e1d5c47908700420b7043b514593df7ae0bb6e4cec450ee2a77b7",
+      "question_keys": {
+        "1": "请根据材料谈谈X省推进农业高质量发展的举措",
+        "2": "请根据材料谈谈对画线句子A省正以其硬核实力实现从走出去到走进去的新飞跃的理解",
+        "3": "请根据材料梳理D市虚拟产业园发展中存在的问题并提出解决问题的建议",
+        "4": "材料提到在大变局的喧嚣中始终坚守住本分切实增强好本领不断突破创新推动高质量发展的步伐就能坚实稳健我们就能走向广阔的未来请结合对这句话的理解参考材料联系实际自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2023/申论-行政执法.md",
+      "area": "福建",
+      "year": 2023,
+      "variant": "行政执法",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        15,
+        30,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2023年公务员多省联考《申论》真题试卷及答案【含解析】（福建行政执法卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2023,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "431d1beaa8042308ae0c88a72096867061dfe9643d553cb1e84ed79bf8a843b2",
+      "question_keys": {
+        "1": "请根据材料谈谈对画线句子烟火气管不好很可能就变成了火气的理解",
+        "2": "请根据材料谈谈J市是如何推进诉源治理工作的",
+        "3": "请根据材料以从门前海到共富海为题拟写一篇将在C县政府门户网站上登载的宣传稿反映C县乡村振兴建设成果",
+        "4": "A市调研组日前赴B市调研托育服务工作假如你是调研组工作人员请根据材料拟写一份调研报告"
+      }
+    },
+    {
+      "path": "省考/福建/2024/申论-县乡卷.md",
+      "area": "福建",
+      "year": 2024,
+      "variant": "县乡卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年公务员多省联考《申论》真题试卷及答案【含解析】（福建县乡卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2024,
+          "variant": "县乡"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "6a631aa1fe1ae093cf283c7d1b49099c02a79c24ad32feb58f6008c5cbf5a607",
+      "question_keys": {
+        "1": "请根据材料谈谈A市是如何氢装前行的",
+        "2": "光华街道准备扩大社区合伙人队伍请根据材料为光华街道拟写一份社区合伙人招募书",
+        "3": "请根据材料梳理H市营商环境存在的问题并提出解决建议",
+        "4": "请根据材料拟写一篇F区开展科技副总进企业专项行动工作的情况报告供领导参阅"
+      }
+    },
+    {
+      "path": "省考/福建/2024/申论-省市卷.md",
+      "area": "福建",
+      "year": 2024,
+      "variant": "省市卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        10,
+        20,
+        30,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年公务员多省联考《申论》真题试卷及答案【含解析】（福建省市卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2024,
+          "variant": "省市"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "7f389f0e9cd485ce1c717f9293573a8e7f3943696ada86c565395b815d45280a",
+      "question_keys": {
+        "1": "请根据材料谈谈Q市能够加数前行的原因",
+        "2": "请根据材料梳理F省在加快推动内外贸一体化发展过程中遇到的问题并提出解决建议",
+        "3": "N市妇联刘主席应邀在首届儿童友好城市建设研讨会上作主旨发言请根据材料为刘主席拟写一份主旨发言提纲",
+        "4": "材料提到文明之所以文明就是因为它既容纳了现代的行为方式也包容了传统的生活习惯请深入思考这句话联系实际自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2024/申论-行政执法.md",
+      "area": "福建",
+      "year": 2024,
+      "variant": "行政执法",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        15,
+        25,
+        45
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2024年公务员多省联考《申论》真题试卷及答案【含解析】（福建行政执法卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2024,
+          "variant": "行政执法"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "2be885f101ec93e656b917f67dd08ab957d9e033678fe53a73db847b6b5718c7",
+      "question_keys": {
+        "1": "请根据材料谈谈A市是如何氢装前行的",
+        "2": "L省打算借鉴J省工业园区限值限量管理工作做法假如你是L省生态环境厅工作人员请根据材料拟写一份推进本省工业园区限值限量管理的工作计划",
+        "3": "请根据材料梳理H市营商环境存在的问题并提出解决建议",
+        "4": "材料提到民声一键办接听的是民意解决的是民生体现的是民本凝聚的是民心提高的是我们服务人民的水平请深入思考这句话参考材料自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2025/申论-省市卷.md",
+      "area": "福建",
+      "year": 2025,
+      "variant": "省市卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年公务员多省联考《申论》真题试卷及答案【含解析】（福建省市卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2025,
+          "variant": "省市"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "aa235ebef8c3f0451bab4e61804f84ca5bb170b9ec34fbc11db124f791ca19e5",
+      "question_keys": {
+        "1": "请根据材料谈谈A区与B县是如何推动两地同城化发展形成112区域发展格局的",
+        "2": "根据材料梳理M县沟渠坑塘等相关小型农田水利设施管理存在的问题并提出解决建议",
+        "3": "材料是K省日报近期刊登的一篇专题报道请自拟题目为这篇报道写一篇短评",
+        "4": "不同的事物集聚在一起时可能会相互影响碰撞融合进而催生新变化请以聚变为话题参考全部材料联系实际自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2025/申论-通用卷.md",
+      "area": "福建",
+      "year": 2025,
+      "variant": "通用卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2025年公务员多省联考《申论》真题试卷及答案【含解析】（福建通用卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2025,
+          "variant": "通用"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "65d39fc147c7d380770de5ef92684878b66c5fdf94f171e3639a943422e2bbc0",
+      "question_keys": {
+        "1": "请根据材料谈谈A区与B县是如何推动两地同城化发展形成112区域发展格局的",
+        "2": "根据材料梳理M县沟渠坑塘等相关小型农田水利设施管理存在的问题并提出解决建议",
+        "3": "省里拟开展城市社区嵌入式服务设施建设典型案例评选请根据材料为F市拟写一份参评材料",
+        "4": "材料中提到我们应当把更多精力投入在种树上而非静待成熟再摘果请对这句话进行深入系统的思考联系实际自选角度自拟题目写一篇文章"
+      }
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "area": "福建",
+      "year": 2026,
+      "variant": "通用卷",
+      "actual_question_count": 4,
+      "parsed_task_points": [
+        15,
+        20,
+        25,
+        40
+      ],
+      "parsed_points_sum": 100,
+      "catalog_count": [
+        4
+      ],
+      "catalog_sources": [
+        {
+          "title": "2026年公务员多省联考《申论》真题试卷及答案【含解析】（福建通用卷）",
+          "question_count": 4,
+          "url": "https://www.kkgwy.com/e/extend/exam/index.php?page=0&cid=197",
+          "status": "fetched_catalog",
+          "retrieved": "2026-10-15",
+          "area": "福建",
+          "year": 2026,
+          "variant": "通用"
+        }
+      ],
+      "status": "same_count",
+      "sha256": "cd991b415cd87f96d2ab7eb81d1c84febd3e78173d9867d62a9878e3ad740baf",
+      "question_keys": {
+        "1": "请根据材料概括C市开展城市更新的主要做法",
+        "2": "调研结束后调研组拟向领导汇报相关情况假如你是调研组工作人员请根据材料拟写调研报告的存在问题和解决建议部分",
+        "3": "请根据材料为Z市个体工商户学院撰写一份宣传材料吸引更多个体工商户报名参训",
+        "4": "材料中提到宽而有制从容以和请对这句话进行深入系统的思考结合社会治理工作联系实际自选角度自拟题目写一篇文章"
+      }
+    }
+  ],
+  "method": "Only actual same-year, same-region, same-variant catalog counts. No universal four-question rule; mixed buckets not equated with a complete paper. Matching task counts alone does not certify raw materials or question order."
+}

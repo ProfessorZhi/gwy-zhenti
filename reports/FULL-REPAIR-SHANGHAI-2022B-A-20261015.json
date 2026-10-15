@@ -1,0 +1,45 @@
+{
+  "path": "省考/上海/2022/申论-B类.md",
+  "source_path": "D:\\projects\\gwy-material-ops\\knowledge\\gwy\\001【公务员国省考】\\资料包\\【000】历年国省考真题\\【省考】2000-2025真题pdf\\【24】上海公务员考试真题pdf版\\上海公务员考试真题——申论03-24\\2022年上海市公考《申论》（B卷）真题及答案.pdf.md",
+  "source_sha256": "c2b183a44f67c31df22d53bc891cf604649a70e6606c0c3fb7d18e35bb47473b",
+  "after_sha256": "30d0f87dd815b7490af21a26c3fac02a27b2e1b3d2df9c993c260b90dbea2b02",
+  "materials": 15,
+  "questions": 4,
+  "score_sum": 100,
+  "answers": [
+    {
+      "number": 1,
+      "characters": 285,
+      "answer_sha256": "8426b985a0d3f714baf3f21926b81b810cb4058553ba6fa21dd8a52b51896aa7"
+    },
+    {
+      "number": 2,
+      "characters": 240,
+      "answer_sha256": "36de43a671a6c7f029a65b171930d15fac7ba881418ee8763dbc185b55043607"
+    },
+    {
+      "number": 3,
+      "characters": 300,
+      "answer_sha256": "be53a3044cf06143f3b4f2cb54adaf64ca423a666ee4e03b41b5d45c16eca395"
+    },
+    {
+      "number": 4,
+      "characters": 944,
+      "answer_sha256": "5397ab343af569896854d061282dd095b0af31992975ca6d7753b46dbdf3c4ea"
+    }
+  ],
+  "old_bucket": "省考/上海/2022/申论-统考.md",
+  "bucket_matching_tasks": [
+    {
+      "bucket_number": 1,
+      "source_number": 4,
+      "question_similarity": 1.0
+    }
+  ],
+  "old_bucket_preserved": true,
+  "source_cleaning": "移除PDF页标和紧随的独立页码、页9推广栏与材料内部数据库编号；其余题面按源保留。",
+  "cross_source": "https://www.aipta.com/article/3663.html",
+  "initial_after_sha256": "a97ea8829de92f3e9ec3cb51f0fdbc1c56294acdb63de91415ae9f616b1320a7",
+  "source_revision": "95676de3a494730fdcacd43416fd51d6bed48ab6",
+  "source_link_verification": "git cat-file -e verified source path exists at 95676, absent at older 710cb9; corrected before delivery"
+}

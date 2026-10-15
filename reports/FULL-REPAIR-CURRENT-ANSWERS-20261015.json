@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "essay_papers": 710,
+  "parsed_papers": 710,
+  "classifications": {
+    "小题参考作答/已收录": 2039,
+    "作文范文/已收录": 409
+  },
+  "unparsed": [],
+  "incomplete_recognized_tasks": [],
+  "new_or_revised_answer_bodies_checked": 813,
+  "checked_body_authorship": {
+    "AI辅助修订": 343,
+    "同题来源参考": 123,
+    "AI辅助原创": 347
+  },
+  "answer_body_errors": [],
+  "legacy_source_length_notes": [],
+  "precise_body_counts": {
+    "papers": 710,
+    "tasks": 2448,
+    "versions": 2463,
+    "composition_limit_missing": 1
+  },
+  "precise_body_candidate_tasks": 1,
+  "precise_body_errors": [],
+  "precise_body_review_candidates": [
+    {
+      "path": "省考/新疆/2021/申论-下半年.md",
+      "question_number": 1,
+      "question": "“给定资料7”中提到：“唯有传承红色基因，筑牢信仰之基，才能在各种⻛险挑战面前做到‘不畏浮云遮望眼’‘乱云⻜\n渡仍从容’。”请你深入理解这句话的含义，结合给定资料，联系实际，写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1134,
+      "raw_answer_characters_without_urls": 3774,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "04fb9c12581801d1d81676d11d64dffc89602ebfc6790b66240fc08c3a3bc96e",
+      "start_excerpt": "传承红色基因 践行初心使命\n习近平总书记指出：“共和国是红色的，不能淡化这个颜色。”在中国共产党建党百年的伟大革命实践中，无数\n革命先烈用自己的鲜血和生命换来了⺠族的解放、国家的稳定，并在应对各种困难挑战中，锤炼了信念坚定、敢创\n新路、百折不挠、艰苦奋斗、立党为公、忠诚为⺠的红色精神。这些精神是党领导人⺠革命的胜利之本，也是激励\n我们不断前进的力量之源，是传承百年的红色基因。\n时至今日，在这样一个新问题不断涌现，新挑战不断产生的时代，作",
+      "end_excerpt": "”战役以来，数以百万计的扶贫大军奔赴全国最偏远、最艰\n苦的地方，日夜奋战、攻坚克难，1800多名同志将生命定格在了脱贫攻坚征程上，是他们的艰苦奋斗，创造了彪炳\n史册的人间奇迹。\n征途如虹，浩荡前行。如今，以中国式现代化推进强国建设、书写中华⺠族伟大复兴的蓝图徐徐展开，在此历\n史新时期，我们更要把握方向，延续红色精神，保持江山的不变底色，谱写无愧于时代的华章！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    }
+  ],
+  "boundary": "Actual body lengths exclude source URLs, authorship labels and teacher commentary. A compliant alternative body can satisfy the task while historical versions remain reviewable. Ambiguous original word limits remain explicit review candidates. Missing entire papers, source factual truth, actual exam scores, and unavailable original conditions are separate inventory findings."
+}

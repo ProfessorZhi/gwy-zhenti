@@ -1,0 +1,1738 @@
+[
+  {
+    "path": "省考/上海/2019/申论-行政执法卷.md",
+    "question_number": 1,
+    "question": "问题一：根据“给定材料”，概括当前我国应急管理面临形势的主要特征。（25分）\n\n要求：概括准确，条理清楚，语言精练，字数不超过200字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 333,
+    "raw_answer_characters_without_urls": 333,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "000f33407d740581a97e7fd2ca6dd51250ce3f05a4b88412a49de673349e3de4",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\n当前我国应急管理形势具有以下特征：一是**风险多发且后果严重**，自然灾害、安全生产事故威胁生命财产安全；二是**风险交织传导**，疫情、停电、交通故障等可能产生跨区域、跨行业连锁反应；三是**新旧风险叠加**，高层建筑、地下空间及新技术应用不断带来新问题；四是**风险影响跨境扩散**，境外突发事件可能波及国内；五是**城市系统复杂、资源承压**，人口密集、交通与急救需求",
+    "end_excerpt": "能波及国内；五是**城市系统复杂、资源承压**，人口密集、交通与急救需求增长，考验预警、协同和现场处置能力。\n\n> 写作依据：本卷给定资料1,2,3,4,5,6及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文333字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2019/申论-行政执法卷.md",
+    "question_number": 2,
+    "question": "问题二：根据“给定材料”，总结近年我国实施应急管理的主要经验。（25分）\n\n要求：表达简明、清晰、客观，条理清楚，字数不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 434,
+    "raw_answer_characters_without_urls": 434,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "96faa8a7d74be46ae8eef1c59e1a595cd4041cfaa0bac73277777b83500d9189",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\n我国近年应急管理的主要经验：一是**加强统一指挥和多方联动**。整合分散职责，健全预案，确保突发事件中各部门快速协同。川航险情中机组、空管和机场联动，为紧急备降创造条件。二是**坚持专业训练和关键岗位担当**。依靠熟悉业务的专业人员沉着研判、果断处置，并持续开展岗位练兵、人才带教。三是**科学配置资源**。上海分设“120”急救与“962120”非急救服务，按轻重缓急分类",
+    "end_excerpt": "是**坚持预防与救援并重**。排查高层建筑、电网等隐患，落实分级管理与基层责任，提高公众风险意识和自救能力。\n\n> 写作依据：本卷给定资料1,2,3,4,5,6及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文434字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2019/申论-行政执法卷.md",
+    "question_number": 3,
+    "question": "问题三：阅读给定材料，围绕“生命至上，安全第一”这一主题写一篇议论文。（50分）\n\n要求：（1）参考给定材料，自选角度、自拟题目；（2）观点明确、联系实际、分析具体、条理清楚、语言流畅；（3）字数800-1000字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_range",
+      "minimum": 800,
+      "maximum": 1000,
+      "confidence": "high",
+      "evidence": "800-1000字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1146,
+    "raw_answer_characters_without_urls": 1146,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "a3111cf40f9e2562d937ed0ff4176869c516eba686667584b3c90192a527d2da",
+    "start_excerpt": "**原创示范作答（AI辅助编写；非机构原文，未经实考评分）**\n\n**把生命至上写在应急治理的每一个环节**\n\n从地震洪水到交通与生产事故，突发事件往往来得猝不及防。一座城市可以有发达的交通、繁荣的产业和先进的设施，但一旦安全失守，发展成果便会受损。“生命至上，安全第一”不能只是应急口号，而应当贯穿风险预防、资源配置、应急处置和社会参与的全过程。\n\n坚持生命至上，首先要把治理重心前移，建立预防为主的风险意识。许多重大事故并非没有征兆，而",
+    "end_excerpt": "。唯有把人民生命安全放在首位，把制度和责任落实到最细处，才能让城市在面对风雨时更有韧性，让群众生活更有底气。\n\n> 写作依据：本卷给定资料1,2,3,4,5,6及该题作答要求。本文为独立撰写的学习示例，不是考试机关答案，也不是有成绩证明的考场高分卷。\n\n同题题本／机构参考内容核对入口（此链接用于核对试题及公开参考内容，未转载其正文；不表示该页必有完整范文）。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文1146字，超过题面明确上限1000字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2024/申论-A卷.md",
+    "question_number": 1,
+    "question": "问题一：根据给定资料，阐述为什么说新一代人工智能技术是“颠覆性”技术。（15分）\n\n要求：语言精练，层次要点分明，字数不超过300字。\n\n<!-- R4 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 304,
+    "raw_answer_characters_without_urls": 474,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3224901aba65803d837fafabdecbb3bec31da2d38426be570e8f9ce08cdb4e3c",
+    "start_excerpt": "1.突破性解决科学难题。破解生物医学领域⻓期难题，增进人类对基本生物过程的理解，促进药物设计，加速\n生物和医学研究。\n2.改变学习教育方式。全面掌握学生基本情况，帮助学生多技能、针对性、创造性发展，促进教育公平；减少\n教师低级负担，改善教学工作，有效指导学生。\n3.创新内容生成方式。自动化学习知识信息，不断自我优化；充分理解和流畅表达人类语言，逻辑推理强；拥\n有自适应和迁移学习能力，自主生成各类型数据，适用于多场景和任务，促进各领域发展",
+    "end_excerpt": "3.创新内容生成方式。自动化学习知识信息，不断自我优化；充分理解和流畅表达人类语言，逻辑推理强；拥\n有自适应和迁移学习能力，自主生成各类型数据，适用于多场景和任务，促进各领域发展。\n4.代替和拓展人类能力。高效完成简单重复性及通过学习、训练得到且无需天分的技能，省时省人力；弥补人\n类感官缺陷，拓展人类感知和行动能力；催生新的产业和服务模式，推动未来社会变革。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文304字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2024/申论-统考.md",
+    "question_number": 3,
+    "question": "根据给定资料，阐述为什么说新一代人工智能技术是“颠覆性”技术。（15分）\n要求：语言精练，层次要点分明，字数不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 304,
+    "raw_answer_characters_without_urls": 388,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "3224901aba65803d837fafabdecbb3bec31da2d38426be570e8f9ce08cdb4e3c",
+    "start_excerpt": "1.突破性解决科学难题。破解生物医学领域⻓期难题，增进人类对基本生物过程的理解，促进药物设计，加速\n生物和医学研究。\n2.改变学习教育方式。全面掌握学生基本情况，帮助学生多技能、针对性、创造性发展，促进教育公平；减少\n教师低级负担，改善教学工作，有效指导学生。\n3.创新内容生成方式。自动化学习知识信息，不断自我优化；充分理解和流畅表达人类语言，逻辑推理强；拥\n有自适应和迁移学习能力，自主生成各类型数据，适用于多场景和任务，促进各领域发展",
+    "end_excerpt": "3.创新内容生成方式。自动化学习知识信息，不断自我优化；充分理解和流畅表达人类语言，逻辑推理强；拥\n有自适应和迁移学习能力，自主生成各类型数据，适用于多场景和任务，促进各领域发展。\n4.代替和拓展人类能力。高效完成简单重复性及通过学习、训练得到且无需天分的技能，省时省人力；弥补人\n类感官缺陷，拓展人类感知和行动能力；催生新的产业和服务模式，推动未来社会变革。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文304字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2024/申论-统考.md",
+    "question_number": 6,
+    "question": "阅读但不拘泥于给定资料，以“人工智能时代，公共部⻔何为？”为主题写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 941,
+    "raw_answer_characters_without_urls": 3189,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "58a6b6f8d3dfda08a5e5e61448570af856306c461e8bb2100176616a67bc7340",
+    "start_excerpt": "公共部⻔需有为 智变时代启新篇\nChatGPT的爆火，让更多人知道人工智能不仅仅是智能手机、智能家具、自动驾驶，还可能是语言、文字、思\n考的交互。但人工智能不仅改变着我们的生产方式、生活方式，也对社会治理、公共服务提出了新的挑战。面对这\n一历史性的变革，公共部⻔作为社会治理的重要力量，必须积极应对，承担起应有的⻆色与担当。\n公共部⻔要加强国际合作与交流，共同推动人工智能建设和发展。要促进国际间先进技术的共享，进行优势互\n补，助力人工智能",
+    "end_excerpt": "人工智能的⻛险化解规避亦是如此。立法要增强其预⻅性、前沿性，多⻆度、全方位健全完善法律\n法规，为技术的合规使用提供支撑，为其高速发展保驾护航，同时还要利用与监管相结合，鼓励人工智能创造，对\n不同领域、不同程度的⻛险，实施不同力度的处罚，避免一罚了之，保证发展活力。\n人工智能是新时代的星星之火，我相信在政府部⻔多⻆度的努力下定能形成燎原之势，打造未来的新期待。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2024/申论-统考.md",
+    "question_number": 7,
+    "question": "阅读但不拘泥于给定资料，以“领跑新时代高质量发展”为主题写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 964,
+    "raw_answer_characters_without_urls": 3145,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "90d528928775d8ac689b2e532b2c3bd97f35143490c6053e4cde1121b663b598",
+    "start_excerpt": "领跑高质量发展 翻开新时代篇章\n高质量发展是我们党把握发展规律、从实践认识到再实践再认识的重大理论创新，是全面建设社会主义现代化\n国家的首要任务。而上海，作为中国最大的经济中心城市，也是世界观察中国的重要窗口，必须牢牢把握高质量发\n展这一新时代的硬道理，努力在推进中国式现代化中发挥⻰头带动和示范引领作用，续写高质量发展的新篇章。\n领跑新时代高质量发展，需要坚持创新驱动发展战略，攻克关键核心技术，打造科创中心城市。谋科技就是谋\n未来，抓创",
+    "end_excerpt": "沪东中华摒弃⻔槛较低的低端船型，进军技术含量高、附加值高、绿色化的高端船型，\n助力上海成为全球唯一集⻬造船业三颗“皇冠明珠”的城市。因此，打造高端产业集群，需要培育一流企业，推动传\n统产业转型，发展先进制造业、新兴产业、未来产业。\n前程远大，使命催征。展望未来，新时代的上海一定能创造出新的奇迹，牢牢把握高质量发展这个首要任务，\n守正创新、踔厉奋发、勇毅前行。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-A卷.md",
+    "question_number": 2,
+    "question": "问题二：中国目前灵活就业人员已达2亿人，占全国就业人口的27%。结合给定资料，分析灵活就业人员可能面临的职业风险。（15分）\n\n要求：分析准确、条理清楚，语言精炼，字数不超过200字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 201,
+    "raw_answer_characters_without_urls": 386,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "9e43a8b5223611cafc7fc4b8b0b41cf2c763b819fa7a8d4ffb08e025eaee1d52",
+    "start_excerpt": "1.职业伤害⻛险高。工作时间⻓、强度大，平台算法管理严苛，为赶进度易出现违规行为，引发交通事故等安\n全⻛险。\n2.劳动保障不足。未签订劳动合同，与企业间劳动关系模糊，发生劳动争议时，劳动关系难以认定，个人维权\n困难。\n3.社会保障落实难。传统社保制度难以覆盖，保险赔付流程繁琐，赔付周期⻓；公司关怀不足，受伤后难以及\n时获得救治与赔偿。\n4.职业发展受限。缺乏系统性培训和职业晋升通道，岗位可替代性强，收入不稳定。",
+    "end_excerpt": "苛，为赶进度易出现违规行为，引发交通事故等安\n全⻛险。\n2.劳动保障不足。未签订劳动合同，与企业间劳动关系模糊，发生劳动争议时，劳动关系难以认定，个人维权\n困难。\n3.社会保障落实难。传统社保制度难以覆盖，保险赔付流程繁琐，赔付周期⻓；公司关怀不足，受伤后难以及\n时获得救治与赔偿。\n4.职业发展受限。缺乏系统性培训和职业晋升通道，岗位可替代性强，收入不稳定。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文201字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-A卷.md",
+    "question_number": 3,
+    "question": "问题三：为贯彻习近平总书记“确保外来人口进得来、留得下、住得安、能成业”的指示精神，结合给定资料，概括上海所采取的保障性安居创新举措。（15分）\n\n要求：条理清晰，内容准确全面，语言精炼，字数不超过300字。\n\n<!-- R5 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 305,
+    "raw_answer_characters_without_urls": 476,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "6e4bdf36b46e254ea02685553bcefe26449574c73bec0d2a880fc3bc7a4ad590",
+    "start_excerpt": "1.构建多元供应体系。建立公共租赁住房制度，降低准入条件，扩大保障范围；打造多层次房源，布局于产业\n园区及交通便利区域，推动职住平衡，盘活闲置资源以改建项目。\n2.创新运营模式。探索社会力量参与投资建设运营，推行用人单位共享租赁、平台承租分配机制，给予租金补\n贴优惠，明确定向保障一线公共服务从业者。\n3.优化居住品质。以“小户型、全功能、悦生活”为理念，举办设计大赛优化户型，完善生活配套设施，打造宜\n居环境。\n4.提供精细服务。推出“安",
+    "end_excerpt": "，明确定向保障一线公共服务从业者。\n3.优化居住品质。以“小户型、全功能、悦生活”为理念，举办设计大赛优化户型，完善生活配套设施，打造宜\n居环境。\n4.提供精细服务。推出“安心”服务体系，实现全流程线上管理，建立专属客服，协助办理相关事务。\n5.推进居⺠自治。设立党群服务站和法治观察点，完善协商议事机制，党员租客带头参与治理；组织多元化活\n动，丰富租户生活。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文305字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-B卷.md",
+    "question_number": 2,
+    "question": "问题二：结合给定资料，概括当前政府在缓解青年压力方面采取了哪些举措。（15分）\n\n要求：语言精练，层次要点分明，字数不超过300字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 302,
+    "raw_answer_characters_without_urls": 460,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "9100fbd95fd10f1fe9cdd37ba1a49fdfb188fabdf549755f2037557555da9894",
+    "start_excerpt": "1.完善住房保障。政校合作，通过多种方式开展⻘年宜居安居需求调查与政策改善研究，关注租房支出、租赁\n关系、租购体验及供给模式问题，缓解⻘年租房难题。\n2.创新就业帮扶。组织失业⻘年参加辩论会，促进其全面思考，增强就业意愿；精准施策，建立失业⻘年服务\n档案，实行“一人一档”，针对不同特点失业人群提供精细化就业帮扶，落实“一人一策”服务方案；开展“职业指导进\n校园”系列活动，打造“15分钟就业服务圈”，下沉资源到社区，建设“家⻔口就业服务小",
+    "end_excerpt": "实行“一人一档”，针对不同特点失业人群提供精细化就业帮扶，落实“一人一策”服务方案；开展“职业指导进\n校园”系列活动，打造“15分钟就业服务圈”，下沉资源到社区，建设“家⻔口就业服务小站”。\n3.拓展夜校服务。开办公益夜校，开设多样化专业课程，价格优惠甚至免费，满足年轻人对艺术审美、社交方\n式以及自我成⻓的新追求；整合教学资源，发布指导性文件，规范夜校管理。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文302字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-B卷.md",
+    "question_number": 3,
+    "question": "问题三：结合给定资料，分析青年在日常生活中应如何辨别“真实需求”与“虚假需求”。（20分）\n\n要求：分析有理有据，内容准确全面，字数不超过300字。\n\n<!-- R5 question anchor 4 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 302,
+    "raw_answer_characters_without_urls": 474,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "b05df3f01fec0646e61155a16f366397524f215f75583f55aa8cc6226599472e",
+    "start_excerpt": "1.辨别需求本质。真实需求是为了某种目的而必需的物品，与人的自我实现和全面发展密切相关；虚假需求是\n被资本所支配而形成的试图获得某种物品的意向性的心理状态，本质上与人的自我实现和全面发展无关，服从和服\n务于资本利润。\n2.辨别需求影响。真实需求能够维持生存发展的基本需要，促进自我实现与发展，有积极作用；虚假需求不仅\n不可能使人得到真正的幸福，而且只能使人处于越来越畸形和片面发展的异化生存状态。\n3.遵循正确价值观。习近平总书记强调⻘年要",
+    "end_excerpt": "展的基本需要，促进自我实现与发展，有积极作用；虚假需求不仅\n不可能使人得到真正的幸福，而且只能使人处于越来越畸形和片面发展的异化生存状态。\n3.遵循正确价值观。习近平总书记强调⻘年要严守纪法规矩，守住内心，节俭朴素，力戒奢靡。若追求物质享\n受、贪图虚荣，易产生虚假需求；秉持艰苦奋斗的精神，以俭修身、以俭兴业，坚持厉行节约、勤俭办一切事情有\n助于找到真实需求。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文302字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-统考.md",
+    "question_number": 1,
+    "question": "结合给定资料，概括当前政府在缓解⻘年压力方面采取了哪些举措。（15分）\n要求：语言精练，层次要点分明，字数不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 302,
+    "raw_answer_characters_without_urls": 373,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "9100fbd95fd10f1fe9cdd37ba1a49fdfb188fabdf549755f2037557555da9894",
+    "start_excerpt": "1.完善住房保障。政校合作，通过多种方式开展⻘年宜居安居需求调查与政策改善研究，关注租房支出、租赁\n关系、租购体验及供给模式问题，缓解⻘年租房难题。\n2.创新就业帮扶。组织失业⻘年参加辩论会，促进其全面思考，增强就业意愿；精准施策，建立失业⻘年服务\n档案，实行“一人一档”，针对不同特点失业人群提供精细化就业帮扶，落实“一人一策”服务方案；开展“职业指导进\n校园”系列活动，打造“15分钟就业服务圈”，下沉资源到社区，建设“家⻔口就业服务小",
+    "end_excerpt": "实行“一人一档”，针对不同特点失业人群提供精细化就业帮扶，落实“一人一策”服务方案；开展“职业指导进\n校园”系列活动，打造“15分钟就业服务圈”，下沉资源到社区，建设“家⻔口就业服务小站”。\n3.拓展夜校服务。开办公益夜校，开设多样化专业课程，价格优惠甚至免费，满足年轻人对艺术审美、社交方\n式以及自我成⻓的新追求；整合教学资源，发布指导性文件，规范夜校管理。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文302字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-统考.md",
+    "question_number": 3,
+    "question": "为贯彻习近平总书记“确保外来人口进得来、留得下、住得安、能成业”的指示精神，结合给定资料，概括上海所采\n取的保障性安居创新举措。（15分）\n要求：条理清晰，内容准确全面，语言精炼，字数不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 305,
+    "raw_answer_characters_without_urls": 389,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "6e4bdf36b46e254ea02685553bcefe26449574c73bec0d2a880fc3bc7a4ad590",
+    "start_excerpt": "1.构建多元供应体系。建立公共租赁住房制度，降低准入条件，扩大保障范围；打造多层次房源，布局于产业\n园区及交通便利区域，推动职住平衡，盘活闲置资源以改建项目。\n2.创新运营模式。探索社会力量参与投资建设运营，推行用人单位共享租赁、平台承租分配机制，给予租金补\n贴优惠，明确定向保障一线公共服务从业者。\n3.优化居住品质。以“小户型、全功能、悦生活”为理念，举办设计大赛优化户型，完善生活配套设施，打造宜\n居环境。\n4.提供精细服务。推出“安",
+    "end_excerpt": "，明确定向保障一线公共服务从业者。\n3.优化居住品质。以“小户型、全功能、悦生活”为理念，举办设计大赛优化户型，完善生活配套设施，打造宜\n居环境。\n4.提供精细服务。推出“安心”服务体系，实现全流程线上管理，建立专属客服，协助办理相关事务。\n5.推进居⺠自治。设立党群服务站和法治观察点，完善协商议事机制，党员租客带头参与治理；组织多元化活\n动，丰富租户生活。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文305字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-统考.md",
+    "question_number": 4,
+    "question": "中国目前灵活就业人员已达2亿人，占全国就业人口的27%。结合给定资料，分析灵活就业人员可能面临的职业⻛\n险。（15分）\n要求：分析准确、条理清楚，语言精炼，字数不超过200字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 201,
+    "raw_answer_characters_without_urls": 299,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "9e43a8b5223611cafc7fc4b8b0b41cf2c763b819fa7a8d4ffb08e025eaee1d52",
+    "start_excerpt": "1.职业伤害⻛险高。工作时间⻓、强度大，平台算法管理严苛，为赶进度易出现违规行为，引发交通事故等安\n全⻛险。\n2.劳动保障不足。未签订劳动合同，与企业间劳动关系模糊，发生劳动争议时，劳动关系难以认定，个人维权\n困难。\n3.社会保障落实难。传统社保制度难以覆盖，保险赔付流程繁琐，赔付周期⻓；公司关怀不足，受伤后难以及\n时获得救治与赔偿。\n4.职业发展受限。缺乏系统性培训和职业晋升通道，岗位可替代性强，收入不稳定。",
+    "end_excerpt": "苛，为赶进度易出现违规行为，引发交通事故等安\n全⻛险。\n2.劳动保障不足。未签订劳动合同，与企业间劳动关系模糊，发生劳动争议时，劳动关系难以认定，个人维权\n困难。\n3.社会保障落实难。传统社保制度难以覆盖，保险赔付流程繁琐，赔付周期⻓；公司关怀不足，受伤后难以及\n时获得救治与赔偿。\n4.职业发展受限。缺乏系统性培训和职业晋升通道，岗位可替代性强，收入不稳定。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文201字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-统考.md",
+    "question_number": 6,
+    "question": "以“如何增强⻘年政治自觉和拒腐防变能力”为主题，写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 922,
+    "raw_answer_characters_without_urls": 3075,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "57905f3c25c0aa28d51f06d88853707b8aa7b0e19fef06712c20984377b1ff12",
+    "start_excerpt": "塑⻘年干部政治自觉 筑拒腐防变坚实堡垒\n⻘年干部作为党和国家事业发展的生力军，手握“接力棒”、肩扛“时代责”，既是国家战略的具体执行者，更是\n社会发展的重要推动者。在百年未有之大变局的时代浪潮中，⻘年干部既站在干事创业的⻩金机遇期，也直面多元\n思潮的冲击与利益诱惑的严峻考验，如何淬炼政治定力、筑牢拒腐防变防线，已成为关乎党和国家事业薪火相传、\n⻓治久安的核心课题。\n强化党性教育，引导⻘年干部对照党的理论和方针政策，明确行为准则，时刻自重",
+    "end_excerpt": "作则，践行艰苦奋斗精神。⻘年应从日常点滴做起，珍惜每一粒粮\n⻝、节约每一度电，在小事中培养良好品德。同时，在面对利益诱惑时，保持清醒头脑，坚守内心的道德准则，以\n艰苦奋斗为底色，以正心明道为指引，在人生道路上筑牢拒腐防变的坚固防线。\n⻘年朋友们，让我们以党性为指引，向榜样看⻬，从点滴做起。在人生航程中，坚守拒腐防变底线，以清正之\n姿，为国家发展注入蓬勃力量！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-统考.md",
+    "question_number": 7,
+    "question": "以“增强公共服务均衡性可及性，提高人⺠生活品质”为主题写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 916,
+    "raw_answer_characters_without_urls": 3075,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "e1790d8e79dc9e099c3c1c83750cdbb59e1ff74e189ac7eb344999f97849b0a1",
+    "start_excerpt": "以均衡可及之光，照耀⺠生幸福之路\n公共服务是人⺠美好生活的基石，其质量直接关系⺠生福祉与社会和谐。当前发展中不平衡不充分的矛盾，在\n公共服务领域具体表现为优质资源在区域、城乡、人群间配置不均，部分群众面临享有难、享有不优的困境。因\n此，着力增强公共服务的均衡性与可及性，已成为破解发展瓶颈、提升人⺠生活品质、扎实推进共同富裕的核心议\n题与关键路径。\n增强公共服务均衡性，不断缩小区域、人群等之间的基本公共服务发展差距，实现资源公平配置。区域",
+    "end_excerpt": "教育领域，通过“教师编制统筹”“职称评审倾斜”等政策，促进城乡师资流动；在医疗领域，推广“医联体”模式，\n实现大医院与基层医疗机构的资源共享。此外，还需鼓励企业、社会组织通过“公益创投”“社区共建”等方式，补足\n公共服务短板。\n公共服务的均衡性与可及性，是检验社会治理能力的“试金石”。唯有以制度创新为保障，以多元协同为路径，\n才能让公共服务真正“普惠于⺠”。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2025/申论-统考.md",
+    "question_number": 8,
+    "question": "结合给定资料，分析⻘年在日常生活中应如何辨别“真实需求”与“虚假需求”。（20分）\n要求：分析有理有据，内容准确全面，字数不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 302,
+    "raw_answer_characters_without_urls": 387,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "b05df3f01fec0646e61155a16f366397524f215f75583f55aa8cc6226599472e",
+    "start_excerpt": "1.辨别需求本质。真实需求是为了某种目的而必需的物品，与人的自我实现和全面发展密切相关；虚假需求是\n被资本所支配而形成的试图获得某种物品的意向性的心理状态，本质上与人的自我实现和全面发展无关，服从和服\n务于资本利润。\n2.辨别需求影响。真实需求能够维持生存发展的基本需要，促进自我实现与发展，有积极作用；虚假需求不仅\n不可能使人得到真正的幸福，而且只能使人处于越来越畸形和片面发展的异化生存状态。\n3.遵循正确价值观。习近平总书记强调⻘年要",
+    "end_excerpt": "展的基本需要，促进自我实现与发展，有积极作用；虚假需求不仅\n不可能使人得到真正的幸福，而且只能使人处于越来越畸形和片面发展的异化生存状态。\n3.遵循正确价值观。习近平总书记强调⻘年要严守纪法规矩，守住内心，节俭朴素，力戒奢靡。若追求物质享\n受、贪图虚荣，易产生虚假需求；秉持艰苦奋斗的精神，以俭修身、以俭兴业，坚持厉行节约、勤俭办一切事情有\n助于找到真实需求。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文302字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2026/申论-统考.md",
+    "question_number": 2,
+    "question": "结合给定资料，提炼我国所采取的扩大高水平对外开放的举措。（20分）\n要求：条理清晰，内容全面，语言精练，字数不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 303,
+    "raw_answer_characters_without_urls": 400,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "7a742f41fcd90dc011d794fbc47679d065fb52e49fac551af2c4c5f6cc4c855b",
+    "start_excerpt": "1.便利人员往来交流。与多国互免签证、单方面免签，实施过境免签；设置对外表彰奖项；建设外籍人员一站\n式服务中心，打造多语种服务平台。\n2.提升经贸合作水平。扩大自贸协定签订范围；试点金融领域制度型开放；深化国际贸易综合改革，建设中欧\n班列集结中心与全球数贸中心；发展跨境电商，落地关银贸易数字化场景。\n3.持续优化外资营商环境。放宽外资准入限制，开展招商推介活动；召开优化营商环境大会，确保政策连续\n性。\n4.深化人文生态国际合作。打造融入",
+    "end_excerpt": "展跨境电商，落地关银贸易数字化场景。\n3.持续优化外资营商环境。放宽外资准入限制，开展招商推介活动；召开优化营商环境大会，确保政策连续\n性。\n4.深化人文生态国际合作。打造融入中⻄元素文化作品，在海外演出传播，开展国际濒危动物保护合作，引领\n可持续发展。\n5.高质量共建一带一路。推进互联互通项目，打造商贸新通道；与众多国家签署谅解备忘录，持续深化合作关\n系。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文303字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/上海/2026/申论-统考.md",
+    "question_number": 4,
+    "question": "聚焦“经济大省挑大梁”，上海为全国发展大局挑大梁、作贡献，在推进深层次改革和高水平开放上奋勇争先，不仅\n是我们的光荣使命、责任担当，也是上海自身发展的必然要求。请结合上海市情，以“高水平开放，高质量发展”为\n主题写一篇文章。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 952,
+    "raw_answer_characters_without_urls": 3108,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "caff6138adec91262b46d6475f653b2682f5decaa4bf0d1615f9cea334d89202",
+    "start_excerpt": "以高水平开放推动高质量发展\n作为我国经济大省和改革开放的前沿阵地，上海勇扛“挑大梁、作贡献”的使命担当，将高水平开放作为推动高\n质量发展的关键引擎。立足国家战略大局与自身发展需求，上海以改革破题、以开放赋能，在制度创新、经贸合\n作、人文共生中不断探索，树立发展标杆。\n强化制度建设，持续释放政策红利，打造国际高标准开放样板。制度型开放是高水平开放的必然要求，也是上\n海增强发展动力的关键举措。中央多次强调要稳步扩大制度型开放，上海先行先试、",
+    "end_excerpt": "法医学交流，成为中外文化互通的桥\n梁；舞剧《朱鹮》走出国⻔，以艺术为纽带展现中国生态保护成果，成为国际人文交流与生态合作的生动载体……\n文化的交流与融合不仅改善了居⺠生活，更形成全球人才磁吸效应，塑造了城市独特的人文魅力。\n开放是当代中国的鲜明标识。新征程上，上海将持续以高水平开放推动高质量发展，为开创合作共赢的开放新\n局面、书写中国式现代化新篇章添砖加瓦。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/天津/2023/申论-乡镇卷.md",
+    "question_number": 4,
+    "question": "问题四：“给定资料4”中提到：“社区‘吹哨’，既要吹得‘准’，还要吹得‘响’、吹得‘久’”。请根据对这句话的理解，结合社区治理，自选角度，自拟题目，写一篇议论文。（40分）\n\n要求：（1）观点明确，见解深刻；\n\n（2）参考给定资料，但不拘泥于给定资料；\n\n（3）思路清晰，语言流畅；\n\n（4）字数在1000字左右。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "approximate_target",
+      "target": 1000,
+      "review_minimum": 900,
+      "review_maximum": 1120,
+      "confidence": "medium",
+      "evidence": "1000字左右"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1135,
+    "raw_answer_characters_without_urls": 1279,
+    "removed_rules": [
+      "source_or_note_footer",
+      "url_not_counted"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "94c60afe06c04a9d7a59ef9cf5095ca7b4f892cfb2a07411303a1735aa307d46",
+    "start_excerpt": "创新社区治理机制，共建幸福美好家园“社区吹哨、党员报到”是将有履职能力的党员集聚至本人居住的社区，实现“社区一吹哨、党员马上到；居民有‘点单’，党员立‘接单’”的新型社区治理机制。这种治理模式打通了服务群众的“最后一公里”，解决了群众最关心、最直接、最现实的民生问题，营造了文明和谐的生活氛围。在未来的社区治理中，我们既要吹得“准”，还要吹得“响”，更要吹得“久”，以此保障人民的美好幸福生活。\n\n社区“吹哨”要吹得“准”。先是选人要准，要",
+    "end_excerpt": "的依据，惩戒不干实事的党员干部；要将“笑”作为激励标准，奖励创新上进的党员干部；更要将“哭和笑”用于培养考察预备党员，实现能者上劣者下。只要我们做好监督、考评、激励、培养，就一定能为基层选拔出更多的坚实力量，真正实现“问需于民，问政于民”。\n\n保障和改善民生没有终点，只有连续不断的新起点，我们要不断创新社区治理机制，让党旗飘扬在小区一线，让党的光辉照耀你我！",
+    "issues": [
+      {
+        "rule": "approximate_target_long",
+        "confidence": "medium",
+        "detail": "正文1135字，高于约1000字目标的112%；需按题面与答题空间复核"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/天津/2025/申论-统考.md",
+    "question_number": 5,
+    "question": "“给定资料4”中提到“一定程度上，反向思维，也能推动事物的正向前行”，请你深入理解这句话，联系实际，自选\n⻆度，自拟题目，写一篇议论性文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1009,
+    "raw_answer_characters_without_urls": 3415,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "48da8dadaa9f172bb5cae0cf7ef2b0e5ebc4f4d5f9ee7a1acaa269e076437765",
+    "start_excerpt": "用反向思维，寻找“破壁”之光\n著名管理学家查理·芒格曾说：“反过来想，总是反过来想。”这种反向思考的理念，帮助其在投资和企业管理\n方面取得了巨大成功。反向思维就是跳出常规，从结果考虑解决问题的影响因素，发现隐藏机会，弥补正向思维的\n不足，解决复杂难题，进而获得想要的效果。所以在事物发展过程中，要深刻理解反向思维的价值，主动突破认知\n惯性，灵活运用逆向视⻆解决问题、优化决策。\n树立反向思维，从结果进行思考，可以倒推发展所必需的条件，基于此",
+    "end_excerpt": "定义关键结果，溯本追源，倒推发展要素，推动创新发展，另一方面利用\n正向思维拆解实施步骤，对发展要素进行路径规划，确保项目的落地实施，实现系统化发展。唯有反向破局，正向\n赋能，双轮驱动才能实现高质量发展。\n当世界忙着向右狂奔时，向左转的岔路反而成了最短的捷径。真理从不介意被倒着书写，用“反向思维”思考问\n题，跳出思维牢笼，以逆向思维之智，开辟出崭新的发展格局。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/天津/2025/申论-统考.md",
+    "question_number": 8,
+    "question": "根据“给定资料1”，谈谈你对“文化特派员”的理解。（15分）\n要求：全面、准确、简明、有条理；不超过250字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 250,
+      "confidence": "high",
+      "evidence": "不超过250字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 251,
+    "raw_answer_characters_without_urls": 401,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "079055100c3e0af1ca06649f7cedf9d060e77207dea252adf8f4fa20e1517009",
+    "start_excerpt": "文化特派员是指政府选派的，具备文化特⻓，肩负用文化赋能乡村使命，对乡村开展帮扶工作的人。具体作用\n有：\n1.提升村⺠文化素养。完善农村文化设施，开展文化公益活动，满足村⺠文化需求。\n2.发展乡村文化产业。挖掘当地特色底蕴，探索文化产业发展路径，促进农产品销售流通，增加就业和收入。\n3.让村⺠当“⺠星”。以文惠⺠，让村⺠在宣传宣讲、文化文艺等文化活动中做主⻆，展示乡村魅力。\n4.传承发展乡村文化。增强凝聚力、归属感，讲好乡村故事，传承文化",
+    "end_excerpt": "益活动，满足村⺠文化需求。\n2.发展乡村文化产业。挖掘当地特色底蕴，探索文化产业发展路径，促进农产品销售流通，增加就业和收入。\n3.让村⺠当“⺠星”。以文惠⺠，让村⺠在宣传宣讲、文化文艺等文化活动中做主⻆，展示乡村魅力。\n4.传承发展乡村文化。增强凝聚力、归属感，讲好乡村故事，传承文化根脉，增添乡村活力。\n今后，要继续发挥文化特派员的作用，带动乡村文化发展。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文251字，超过题面明确上限250字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/天津/2026/申论-统考.md",
+    "question_number": 4,
+    "question": "根据“给定资料”，请以执法服务的“点、线、面”为主题，进行深入系统的思考，联系实际，自选⻆度，自拟题目，\n写一篇议论性文章。（40分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1031,
+    "raw_answer_characters_without_urls": 3177,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "d42a4ee7350ac141dce633ba16e84b71c2d96f58ee432eb35024f1c562cdd0e7",
+    "start_excerpt": "以“点线面”协同推进执法服务现代化\n现代化执法，既要保持法律的严肃性，坚守“刚”的底线，又要体现人文情怀，展现“柔”的关怀。唯有将“力\n度”与“温度”深度融合，方能实现执法从“管理”向“服务”的深层跃迁。面对复杂的社会治理环境，执法服务既要\n在“点”上精准发力，在“线”上全程贯通，还要在“面”上协同共享，推动执法理念与方式的深刻转变。\n要以问题为导向，精准把脉痛点堵点，通过创新解决方案，助力执法服务“点”的靶向突破。提升执法效能，要\n聚",
+    "end_excerpt": "统管”建设，需重点破解数据共享难、业务协同弱等深层梗阻，以技术创新驱动平台算法的迭代\n优化。同时，要坚持“以人为本”，立足居⺠生活实际，关注并保障特殊群体的需求，确保治理“温度”和“精度”的有\n机统一。\n“正入万山圈子里，一山放过一山拦。”执法服务的现代化转型，是一个系统工程。唯有在“点、线、面”的立体\n维度中持续精进服务水平，方能以法治之力赋能高质量发展。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2016/申论-统考.md",
+    "question_number": 1,
+    "question": "请根据全部“给定资料”（仅限“给定资料”），以“提高创新能力，促进创新发展”为题，写一篇策论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 925,
+    "raw_answer_characters_without_urls": 3749,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "6810841dfb4f68403d49b33941235ff07589fef5e7ed584b9ac0b3d9441fc279",
+    "start_excerpt": "提高创新能力 促进创新发展\n创新是立国之本、兴国之器、强国之基。创新更是我国提升综合国力、保障国家安全、建设世界强国的必由之\n路。因此，我们要进一步提高创新能力，促进创新发展。\n目前阻碍我国创新的因素有人才匮乏、科研经费投入少、知识产权保护薄弱、品牌缺乏竞争力、科技成果转化\n率低下等等。对此，建议做好以下几个方面的工作。\n大力做好人才工作。培养、引进、服务、留住创新人才，不仅做到物质留人，还要给予足够人文关怀。不仅重\n视理工类人才，还要",
+    "end_excerpt": "工人足够的精神与物质激励，尤其是物质激励，刺激其创新动力。对创新\n的奖励要落实到实实在在的报酬上，切实激发起职工搞发明、攻难关的积极性。同时，要激发年轻人创新创业的热\n情。政府和社会可以举办各类创新创业大赛，学校设置创新创业的课程。只有人人愿创新、想创新，才能真正实现\n万众创新。\n总之，全力以赴、千方百计地提升我国创新能力，促进创新发展，功在当代，利在千秋！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2017/申论-广州市考-单考区.md",
+    "question_number": 1,
+    "question": "问题一：请根据全部给定材料，以“广州：传承与发展”为题目，写作一篇议论文。（100分）\n\n要求：（1）观点明确，条理清晰，逻辑严密，论证充分，语言流畅；（2）不必提供对策；（3）不要大段摘抄材料；（4）作答时必须用黑色墨水的签字笔或钢笔，在答题卡的指定位置作答，作答在其他位置上一律无效；（5）篇幅在1500字—1800字（计入标点与空格）。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "marker_1",
+    "extraction_method": "explicit_main_body_marker",
+    "characters": 1645,
+    "raw_answer_characters_without_urls": 1645,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "1d7de6d21de969fd417bf91878037f4353fb57c44bbcf5b343b2adaac2d06e2c",
+    "start_excerpt": "广州：传承与发展\n\n从古代商船汇聚的港口，到今天连接海陆空的国际枢纽，广州的城市生命始终与开放相伴；从街巷里的岭南风物，到融合科技的广府庙会，广州的文化也始终在传承中更新。历史并非发展身后的静止背景，而是塑造未来的重要资源。理解广州的传承与发展，就是理解一座城市如何守住自己的精神与肌理，又不断回应世界变化和人民对美好生活的期待。\n\n广州的开放传统，使发展具有深厚的历史延续性。海上丝绸之路连接亚非欧的贸易往来，珠江水系又沟通广阔腹地，水运",
+    "end_excerpt": "依然能够相互支持，使变化有方向，守护有意义。\n\n从千年商都到国际枢纽，广州真正值得延续的，是与世界交往的开放、在生活中创新的务实，以及对自身文化的珍惜。把这些精神融入新的产业、技术与公共生活，城市便能在变化中保持辨识度，在传承中积蓄前行动力。广州的未来，不是离开历史重新开始，而是在深厚根脉上不断生长，让传统与现代共同成就更有活力、更宜居、也更值得认同的城市。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2017/申论-统考.md",
+    "question_number": 1,
+    "question": "请根据全部“给定资料”，以“共享与发展”为题，写一篇议论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1117,
+    "raw_answer_characters_without_urls": 3890,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "18b8daba0c9e1d1f8f82ec7a87419fcbc337b275bcd256ffee73399663879b37",
+    "start_excerpt": "共享与发展\n中共十八届五中全会上给出的“坚持共享发展，必须坚持发展为了人⺠、发展依靠人⺠、发展成果由人⺠共\n享”这一论断，掷地有声地传递出对共享与发展的统一追求。共享服务业快速发展，共享商业模式不断推出，全面改\n变着人们的消费习惯、生活方式，激发新的经济社会发展活力。毫无疑问，共享正推动着发展。\n共享不仅仅是资源的共享，更是发展成果的共享。共享已经融入到经济领域、公共服务领域、扶贫工作、治国\n经邦等方方面面，通过共享真正实现了资源的共享",
+    "end_excerpt": "了多领域的经贸合作，为沿线国家创造了可喜的\n税收和就业机会，促进了人类共同利益、地区利益与国家利益的协调与共赢。\n共享是理念，是手段，是载体，是发展的出发点和落脚点，指明了发展的价值取向。然而在一个13亿多人口的\n发展大国，实现广泛、全面的共享发展是一项十分艰巨的任务，需要连续不断的奋斗过程，我们要持续发力，人人\n参与、人人尽力，共享才有可能，发展才有方向。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+    "question_number": 1,
+    "question": "问题一：请深入思考给定材料10中划线句：“但愿苍生俱饱暖，不辞辛苦出山林”，联系“放管服”改革实践，自选角度，自拟题目，写一篇议论文。（100分）\n\n要求：（1）依据给定材料，可不拘泥于给定材料；（2）观点明确，论证充分，条理清晰，逻辑严密，语言流畅；（3）不必提供对策；（4）不要大段摘抄材料；（5）作答时必须用黑色墨水的签字笔或钢笔，在答题卡的指定位置作答，作答在其他位置上一律无效；（6）篇幅在1200字—1500字（计入标点与空格）。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "marker_1",
+    "extraction_method": "explicit_main_body_marker",
+    "characters": 1416,
+    "raw_answer_characters_without_urls": 1416,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "37b3f8793cc24dc2dd2a14300bd5900669aee9186c3400201da938f78c25f41c",
+    "start_excerpt": "以担当的辛苦换取群众的便利\n\n“但愿苍生俱饱暖，不辞辛苦出山林”，诗中的煤炭以自身燃烧换取人间温暖，映照着把他人需要放在心上的责任。联系“放管服”改革，这种精神体现为政府主动承担制度调整、流程重构与服务创新的辛苦，把便利交给企业与群众。改革的深意，不只是少几道审批，更在于公共权力重新校准自己的位置，以担当回应人民对美好生活的期待。\n\n群众办事的难，常常并非事情本身有多复杂，而是制度之间缺少衔接。信息已在某个部门保存，另一个窗口却要求再次",
+    "end_excerpt": "价和修正不足的诚恳，以持续改进而非一次表态回应群众期待。\n\n煤炭出山林，为的是苍生饱暖；权力运行于公共领域，为的是社会生活有序而便利。“放管服”改革把这种为民情怀转化为制度与能力的更新。愿意在内部协同中多费心，在专业服务中多尽力，把应该承担的辛苦留给自己，把稳定、公平和便利交给群众，公共治理就能在每一件细小实事中积累信任，改革也能不断释放推动发展的温暖力量。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+    "question_number": 1,
+    "question": "请以“回乡”为主题，自拟题目，写一篇议论文，谈谈对乡村振兴战略的认识。\n\n要求：\n\n1、依据给定材料，可不拘泥于给定材料。\n\n2、观点明确，论证充分，条理清晰，逻辑严密，语言流畅。\n\n3、不必提供对策。\n\n4、不要大段摘抄材料。\n\n5、作答时必须用黑色墨水的签字笔或钢笔，在答题卡的指定位置作答，作答在其他位置上一律无效。\n\n6、篇幅在1200字-1500字（计入标点与空格）。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "marker_1",
+    "extraction_method": "explicit_main_body_marker",
+    "characters": 1509,
+    "raw_answer_characters_without_urls": 1509,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "e3b3ca496d48a523e49de193da0510938eced022fab94fb6ba69a0709b35096f",
+    "start_excerpt": "回乡，走向共同发展的未来\n\n曾经，离开乡村意味着寻找更好的生活；今天，一些青年带着知识、经验与创意重新回来，在田野间寻找事业，也让故乡重新焕发生机。回乡不只是个人空间位置的改变，更折射出城乡关系的新可能。乡村振兴使乡村不再只是被怀念的过去，而成为可以参与、可以创造的未来；人的归来，则让这种未来拥有最重要的行动力量。\n\n回乡首先源于对乡村价值的重新认识。乡村提供食物，涵养生态，也保存着文化、伦理与共同记忆。这些价值常因收入和设施差距而被遮",
+    "end_excerpt": "须留在哪里，而在于人们能够根据所长与需要自由连接，在城与乡之间形成互补关系，让流动既有机会，也有归属。\n\n故乡值得眷恋，也值得被共同创造。把乡愁转化为理解，把知识转化为实践，让人的成长与乡村资源相互成就，回乡便能超越对过去的追忆，成为走向未来的积极选择。乡村振兴中的这条回乡之路，连接的是城市与田野，也是发展机会与文化根脉，最终指向人人能够共享的更加美好生活。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2018/申论-统考.md",
+    "question_number": 1,
+    "question": "请根据全部给定材料（仅限给定材料），就如何充分发挥人才在推动经济社会发展中的重要作用，自拟题目，写一\n篇策论文。（本题50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 882,
+    "raw_answer_characters_without_urls": 3662,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "fdd405a5467e3e53993c569d430024c85aae0da3b8dca498a4b56422a24cbb37",
+    "start_excerpt": "发挥人才作用 促进社会发展\n国以才立，业以才兴。现代化建设的宏伟目标，经济社会的全面发展，离不开人才的作用。\n当前，人才短缺是制约经济社会发展的重要因素，这背后是产教融合不深、人才补贴不足、流动不够、管理部\n⻔权责不清、服务缺位等种种问题。在经济社会发展中如何才能更好地发挥人才的作用？\n加强人才培养力度，深化校企合作，培养大量实用性、高质量的优秀人才。既要改变“重理论轻实践”的人才理\n念，又要搭建校企合作平台，推进教学和生产实践、科研紧",
+    "end_excerpt": "监管，放松管理的同时仍要加强纪律。政府购\n买人才服务，打造政府与市场主体、社会组织等有序分工的人才监管新格局。同时转变职能，把主要精力放在为人\n才提供更优的服务、更好的发展环境上来。用行政权力的“减法”，换来人才创新创业的加法。\n治国安邦，人才为要。在不断推进人才强国战略的时代背景下，当一大批人才积极投身经济社会发展时，必将\n推动⺠族复兴的宏伟目标加快实现。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2019/申论-统考.md",
+    "question_number": 1,
+    "question": "请根据全部给定材料（仅限给定材料），就政府如何进一步优化营商环境，自拟题目，撰写一篇策论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 955,
+    "raw_answer_characters_without_urls": 3852,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "4e1f4fbb06f2679ea4b33a2ef5f017d389ed93194f167d2c8839b02aa2159573",
+    "start_excerpt": "优化营商环境 助力企业发展\n习近平曾强调，“要坚持‘两个毫不动摇’，为⺠营企业发展营造良好的法治环境和营商环境，依法保护⺠营企业\n权益，鼓励、支持、引导非公有制经济继续发展壮大。”广东要依托粤港澳大湾区、一带一路、自贸区的区位和政策\n优势，打造具有国际竞争力的良好营商环境。\n要改善营商环境还面临很大挑战：企业创新能力不足，高技术人才、关键核心技术缺乏；准入⻔槛高，办证\n难；⺠营企业融资难、融资贵；办事流程繁琐、效率低下；知识产权侵权严重",
+    "end_excerpt": "乱市场秩序的行为，建立完善信用体系。打击虚假宣传、假冒伪劣、\n消费欺诈、滥用客户信息等行为。探索依据信用⻛险分类，开展双随机一公开抽查，平衡监管和企业发展的直接关\n系，优化监管方式，释放市场活力。\n优化营商环境在战略上要配合国家战略打造具有国际竞争力的营商环境；在战术上解决具体问题，让企业有获\n得感；在方向上要系统化、制度化、法治化，为经济⻓远发展保驾护航。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2020/申论-统考.md",
+    "question_number": 1,
+    "question": "请根据全部给定材料（仅限给定材料），围绕“推进国家治理体系和治理能力现代化，推动新时代广东改革发展走在\n全国前列”的主题，自拟题目撰写一篇议论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1040,
+    "raw_answer_characters_without_urls": 4043,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "4fd3b55bd0fbe8b795a5f735b28fe36b0130d85a7ade7cd49b3ca9dc0f0aaac5",
+    "start_excerpt": "提高现代化治理水平 绘就广东发展新蓝图\n几千年前，先人就秉持“周虽旧邦，其命维新”的精神，开启了缔造华夏文明的伟大实践。伴随着改革开放一声\n春雷，广东坚持创新发展，走在全国前列。然而当前社会治理难度和⻛险逐渐加大，社会矛盾逐步加深，政府的治\n理水平面临严峻考验。因循守旧没有出路，畏缩不前坐失良机。只有在社会发展中不断提高现代化治理水平，才能\n使广东在改革发展中勇立潮头，绘就发展新蓝图。\n推进社会治理现代化，打造共建共治共享社会治理格局。",
+    "end_excerpt": "进“软件”和优质“硬件”的优势互补，打造与国际规则高度衔接的营商环境。另一方面，发挥辐射带动作用，和周\n边省份合力打造协同共享的绿色生态圈和优质生态圈。\n行之力则知愈进，知之深则行愈达。社会治理是一项系统工程，靠零敲碎打不行，靠碎片化修补也不行，应使\n各个领域、各个方面的改革形成联动，方能实现国家治理体系和治理能力现代化的伟大愿景，推动广东发展走上新\n征程。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2021/申论-统考.md",
+    "question_number": 1,
+    "question": "请根据全部给定材料（仅限给定材料），围绕“站在新起点，迈向新征程，推动广东高质量发展”主题，自拟题目，\n撰写一篇议论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 916,
+    "raw_answer_characters_without_urls": 3393,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "a95a23abc6fffde6111876d9a86d3da25bbb76756cd0e8a01e16051473c493f0",
+    "start_excerpt": "践行新发展理念 实现高质量发展\n改革开放四十年来，广东敢闯敢试，谱写了一曲感天动地、气壮山河的奋斗赞歌。身处时代变局，推动高质量\n发展，既是保持经济持续健康发展的必然要求，也是保持广东改革走在全国前列的必然要求。中流击水，奋楫者\n进，新发展理念的时代号⻆已经吹响，广东正扬帆起航，谱写高质量发展的南粤新篇。\n全力推进“双区”建设，促进区域协调共享，为广东高质量发展提供不竭动力。广东为推进“双区”建设做出了一\n系列卓有成效的探索，基础设施、",
+    "end_excerpt": "事流程简化，更让交通管理愈加有序。信息化手段为推进数据共\n享、流程再造、管理创新节省了大量人力物力，让广东的网上政务服务能力跃居全国首位。\n所当乘者势也，不可失者时也。站在“两个一百年”奋斗目标的历史交汇点上，广东踏上了“十四五”发展新征\n程，大力推进区域协调发展，做好产业规划顶层设计，强化创新服务能力，书写高质量发展新篇章，必将为全国发\n展大局作出新贡献！",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2022/申论-统考.md",
+    "question_number": 1,
+    "question": "近年来，粤港澳大湾区建设迈出坚实步伐，向着国际一流湾区和世界级城市群的目标逐浪前行，结合给定材料，联\n系实际，围绕“粤港澳大湾区建设取得的实效和经验”，自拟题目，撰写一篇议论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 1114,
+    "raw_answer_characters_without_urls": 3983,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "64eeeb3ef5cf8e8727e31c20ab83064e94cfe12cef921e196eb0f4d18987d278",
+    "start_excerpt": "推进区域协同发展 构建世界级城市群\n2017年7月1日签署的《深化粤港澳合作 推进大湾区建设框架协议》，标志着粤港澳大湾区建设正式启动。五年\n来，粤港澳三地不断创新体制机制，促进要素流通，强化内部合作，大湾区建设取得了切实成效：基础设施互联互\n通水平显著提升，文化交流日益密切，人才吸引优势不断增加，区域经济活力持续加强……大湾区的建设为中国其\n他地区进行区域协同发展、打造世界级城市群提供了经验和借鉴。\n打造世界级城市群，首先需要加强顶层",
+    "end_excerpt": "彻新发\n展理念，服务构建新发展格局，进一步加强研究谋划、创新推动，实现同频共振、同心合力。不仅能推动经济产业\n高度融合发展，还能带动各地居⺠生活、学习、工作的全方位融合发展。\n打造国际一流的城市群，不仅要完善顶层设计、做好“软硬联通”、加强城市文化交流、达成深度合作，同时还\n要注重生态效益，推行绿色环保的发展理念，协调好区域内的经济需要、生活需要、生态需要。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2023/申论-统考.md",
+    "question_number": 6,
+    "question": "制造业是国家经济命脉所系，是立国之本、强国之基。请结合全部给定材料，联系实际，围绕“把广东制造业这份厚\n实家当做优做强”这一主题，自拟题目，撰写一篇策论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 980,
+    "raw_answer_characters_without_urls": 3395,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "6657e191097958f6d22b0dc91e17cb9307d11a98d519ecfd4a7d748e4e30f1b4",
+    "start_excerpt": "推动制造业高质量发展 挺起现代化建设“脊梁”\n改革开放以来，广东制造业实现了跨越式发展，然而与制造业当家的要求相比，仍有很大提升空间。要把制造\n业这份厚实家当做优做强，就要高水平谋划，扎实推进制造业高质量发展，在新高度挺起广东现代化建设“脊梁”。\n坚持“质量第一”，强化品牌建设。要在标准、技术、基础设施等方面做好扶持保障工作，引导企业提升产品质\n量，塑造竞争新优势；同时要发挥品牌标杆的示范引领作用，优化品牌服务，帮助企业锻造灵魂。产品质",
+    "end_excerpt": "事不\n扰”外，还应营造公平、开放的市场环境，激发企业创新创造活力。推进“放管服”改革，打造线上⺠生诉求系统，实\n现办事服务快速响应，推动制造业企业降低经营成本；实施“信任筹建”制度，满足市场主体需求，从“给优惠”向“给\n机会”转变，积极鼓励新兴产业与领域发展。\n岭南春早，奋楫扬帆。广东只有持续高质量发展制造业，才能更好服务大局，当好中国高质量发展“排头兵”。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2024/申论-县镇.md",
+    "question_number": 1,
+    "question": "问题一：根据材料2，概括2024年全省高质量发展大会上广东就“推进产业科技创新、发展新质生产力”提出的主要举措。（20分）\n\n要求：概括全面、准确、条理清晰，不超过200字。\n\n<!-- R4 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 364,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "a0e26f1cdadbdb390936dbe2b2aaa63fb525327ec7934860212bed97fc4115a7",
+    "start_excerpt": "1.加强人才建设。精准引进、自主培养，实施人才工程；创造平台机会，保障人才从成果中转化获益。\n2.支持企业创新。集聚创新资源，政产学研协同发力；支持运用四新技术，提升质量、效率，带动产业转型升\n级。\n3.把握市场优势。根据市场凝练科研问题，吸聚创新资源，兑现创新价值，推出新应用场景，发展创新要素市\n场。\n4.推动体制创新。推进科技管理机构改革，探索新型举国体制路径，营造利于创新的政策制度环境，推动国际\n科技产业合作。",
+    "end_excerpt": "机会，保障人才从成果中转化获益。\n2.支持企业创新。集聚创新资源，政产学研协同发力；支持运用四新技术，提升质量、效率，带动产业转型升\n级。\n3.把握市场优势。根据市场凝练科研问题，吸聚创新资源，兑现创新价值，推出新应用场景，发展创新要素市\n场。\n4.推动体制创新。推进科技管理机构改革，探索新型举国体制路径，营造利于创新的政策制度环境，推动国际\n科技产业合作。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2024/申论-省市.md",
+    "question_number": 1,
+    "question": "问题一：请根据材料2，概括2024年全省高质量发展大会上，广东就“推进产业科技创新、发展新质生产力”提出的主要举措。（20分）\n\n要求：概括全面、准确，条理清晰。篇幅不超过200字。\n\n<!-- R4 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 364,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "a0e26f1cdadbdb390936dbe2b2aaa63fb525327ec7934860212bed97fc4115a7",
+    "start_excerpt": "1.加强人才建设。精准引进、自主培养，实施人才工程；创造平台机会，保障人才从成果中转化获益。\n2.支持企业创新。集聚创新资源，政产学研协同发力；支持运用四新技术，提升质量、效率，带动产业转型升\n级。\n3.把握市场优势。根据市场凝练科研问题，吸聚创新资源，兑现创新价值，推出新应用场景，发展创新要素市\n场。\n4.推动体制创新。推进科技管理机构改革，探索新型举国体制路径，营造利于创新的政策制度环境，推动国际\n科技产业合作。",
+    "end_excerpt": "机会，保障人才从成果中转化获益。\n2.支持企业创新。集聚创新资源，政产学研协同发力；支持运用四新技术，提升质量、效率，带动产业转型升\n级。\n3.把握市场优势。根据市场凝练科研问题，吸聚创新资源，兑现创新价值，推出新应用场景，发展创新要素市\n场。\n4.推动体制创新。推进科技管理机构改革，探索新型举国体制路径，营造利于创新的政策制度环境，推动国际\n科技产业合作。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2024/申论-统考.md",
+    "question_number": 4,
+    "question": "根据材料1，概括2024年全省高质量发展大会上广东就“推进产业科技创新、发展新质生产力”提出的主要举措。\n（20分）\n要求：概括全面、准确、条理清晰，不超过200字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 278,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "a0e26f1cdadbdb390936dbe2b2aaa63fb525327ec7934860212bed97fc4115a7",
+    "start_excerpt": "1.加强人才建设。精准引进、自主培养，实施人才工程；创造平台机会，保障人才从成果中转化获益。\n2.支持企业创新。集聚创新资源，政产学研协同发力；支持运用四新技术，提升质量、效率，带动产业转型升\n级。\n3.把握市场优势。根据市场凝练科研问题，吸聚创新资源，兑现创新价值，推出新应用场景，发展创新要素市\n场。\n4.推动体制创新。推进科技管理机构改革，探索新型举国体制路径，营造利于创新的政策制度环境，推动国际\n科技产业合作。",
+    "end_excerpt": "机会，保障人才从成果中转化获益。\n2.支持企业创新。集聚创新资源，政产学研协同发力；支持运用四新技术，提升质量、效率，带动产业转型升\n级。\n3.把握市场优势。根据市场凝练科研问题，吸聚创新资源，兑现创新价值，推出新应用场景，发展创新要素市\n场。\n4.推动体制创新。推进科技管理机构改革，探索新型举国体制路径，营造利于创新的政策制度环境，推动国际\n科技产业合作。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2024/申论-统考.md",
+    "question_number": 9,
+    "question": "请根据材料1，概括2024年全省高质量发展大会上，广东就“推进产业科技创新、发展新质生产力”提出的主要举\n措。（20分）\n要求：概括全面、准确，条理清晰。篇幅不超过200字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 278,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "a0e26f1cdadbdb390936dbe2b2aaa63fb525327ec7934860212bed97fc4115a7",
+    "start_excerpt": "1.加强人才建设。精准引进、自主培养，实施人才工程；创造平台机会，保障人才从成果中转化获益。\n2.支持企业创新。集聚创新资源，政产学研协同发力；支持运用四新技术，提升质量、效率，带动产业转型升\n级。\n3.把握市场优势。根据市场凝练科研问题，吸聚创新资源，兑现创新价值，推出新应用场景，发展创新要素市\n场。\n4.推动体制创新。推进科技管理机构改革，探索新型举国体制路径，营造利于创新的政策制度环境，推动国际\n科技产业合作。",
+    "end_excerpt": "机会，保障人才从成果中转化获益。\n2.支持企业创新。集聚创新资源，政产学研协同发力；支持运用四新技术，提升质量、效率，带动产业转型升\n级。\n3.把握市场优势。根据市场凝练科研问题，吸聚创新资源，兑现创新价值，推出新应用场景，发展创新要素市\n场。\n4.推动体制创新。推进科技管理机构改革，探索新型举国体制路径，营造利于创新的政策制度环境，推动国际\n科技产业合作。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2024/申论-统考.md",
+    "question_number": 11,
+    "question": "2023年4月，习近平总书记在广东考察时强调，实现高水平科技自立自强，是中国式现代化建设的关键。广东要在\n提升科技自立自强能力等方面继续走在全国前列。请结合给定材料，联系广东实际，围绕“高水平科技自立自强”，\n自拟题目，撰写一篇议论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 978,
+    "raw_answer_characters_without_urls": 3290,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "317f1531748188f0f6e640aac26eb72c3666caf1aa0227b8c64ad7fda9a074bf",
+    "start_excerpt": "粤立科技潮头，自强驱动发展\n科技时代，日新月异，高水平科技自立自强不仅是中国式现代化建设的关键，更是国家高质量发展的核心驱动\n力。广东，作为我国的教育强省、科技创新强省和人才建设强省，肩负着在高水平自立自强道路上做好排头兵、示\n范者的重要使命。\n高水平科技自立自强，必须坚定科技发展方向。将加强基础研究作为根基，以攻克核心技术为目标，同时实现\n科技成果转化，确保科技事业实现可持续发展。基础研究是科技创新的源头活水，只有不断加强对基础科学的",
+    "end_excerpt": "对科学的无限热爱，对真理的不懈追求，以及勇于创新、敢于挑战的勇气。正是这种\n精神，为科技自立自强提供了强大的精神引领和思想保证，激励着一代又一代科研工作者不断前行。\n在高水平科技自立自强的征途上，广东承载着国家与时代的期望。只有持续推动人才培养、制度创新、科研攻\n关，才能确保科技事业蓬勃发展，为实现中国式现代化贡献力量，以强大的科技实力铸就国家的未来与希望。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2024/申论-统考.md",
+    "question_number": 12,
+    "question": "高质量发展是全面建设社会主义现代化国家的首要任务。请结合给定材料，联系实际，围绕“‘百千万工程’是广东推\n动高质量发展的头号工程”，自拟题目，撰写一篇议论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 934,
+    "raw_answer_characters_without_urls": 3201,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "bc5504ac367c39e8889e3f6d3dda8f8c75741536ed0765802b9f298539f3a181",
+    "start_excerpt": "深入实施“百千万工程” 推进广东高质量发展\n当下，高质量发展成为了全面建设社会主义现代化国家的首要任务，而习近平总书记明确指出，“城乡区域发展\n不平衡是广东高质量发展的最大短板”。为解决这一问题，“百千万工程”应运而生。在开局起步一年后，广东省强县\n促镇带村、县村镇高质量发展的势头已然形成。在新的起点上，“百千万工程”的重点应当放在发力县域经济、强村\n富⺠、推动城乡一体化发展三方面。\n深入推进“百千万工程”，必须要推动县域经济发展，强化",
+    "end_excerpt": "。在生态建\n设方面，要加强生态环保一体化建设，扎实推进绿美广东生态建设，让森林、碧道和生态景观贯穿县域。最重要\n的，还是要释放政策红利，构建起要素流动的畅通渠道，实现人才、资本、资源、技术等生产要素在城乡区域间畅\n通流动，真正消弭城乡二元结构造成的要素断层，做到城乡一体化发展。\n新起点，新征程。广东要推动“百千万工程”不断走深走实，奋力书写高质量发展新篇章。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-公安.md",
+    "question_number": 1,
+    "question": "问题一：根据材料1，围绕“AI技术+应用场景”，简要说明甲市“AI警察”在警务实战中的具体应用。（20分）\n\n要求：全面、准确，条理清晰。不超过300字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 304,
+    "raw_answer_characters_without_urls": 477,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "15e322226cee1b6dd18bbe7984166baca317e5bb287aef4db68be2ce294fc9ca",
+    "start_excerpt": "1.打击野外流动赌场。搭建全息感知应用模型，利用野外红外成像及高清人脸抓拍设备实时监测，自动抓拍、\n识别、发现赌博行为，调查取证时助力查清赌资往来、组织架构，精确预警、精准打击。\n2.治理改装摩托⻋“炸街”。运用“AI声纹识别系统”，在重点路段24小时识别，抓取途经改装摩托⻋，查处多起\n违规改装行为及非法改装团伙。\n3.预警异常交通事件。构建快速环线态势感知平台系统，通过反复学习改进，快速识别异常停留、异常拥堵等\n情形，为交警处置争取时",
+    "end_excerpt": "途经改装摩托⻋，查处多起\n违规改装行为及非法改装团伙。\n3.预警异常交通事件。构建快速环线态势感知平台系统，通过反复学习改进，快速识别异常停留、异常拥堵等\n情形，为交警处置争取时间，缓解交通拥堵。\n4.打击电信网络诈骗。读取受害人笔录，同步查询、追踪资金流向，快速完成止付、解析与自动研判笔录、锁\n定涉案资金账户与境外窝点、发布追逃令，提升破案效率，挽回损失。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文304字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-县镇.md",
+    "question_number": 1,
+    "question": "问题一：请根据材料3，概括A县做好荔枝“土特产”文章的主要做法。（20分）\n\n要求：概括全面、准确，条理清晰，篇幅不超过200字。\n\n<!-- R4 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 365,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "1c0fe6b7b9b399a76bdf9d75b4fa21107f26aa43ac17ee325449b76de8169402",
+    "start_excerpt": "1.改良本地品种。县农业推广中心与农业院校、科研院所合作，建设种质资源圃，引进国内外新品种，培育杂\n交品种。\n2.借助科技手段。建设大数据平台，实时监测果园生⻓情况，提供及时的科学指导，解决种植难题。\n3.解决保鲜难题。引进国家级科研团队，研究保鲜技术，打造气调保鲜移动集装箱汽⻋，调节荔枝呼吸，延⻓\n最佳⻝用期。\n4.延⻓产业链。发展初深加工产业，丰富加工产品；发展荔枝+旅游模式，推动农文旅融合，丰富文旅产品供\n给。",
+    "end_excerpt": "设种质资源圃，引进国内外新品种，培育杂\n交品种。\n2.借助科技手段。建设大数据平台，实时监测果园生⻓情况，提供及时的科学指导，解决种植难题。\n3.解决保鲜难题。引进国家级科研团队，研究保鲜技术，打造气调保鲜移动集装箱汽⻋，调节荔枝呼吸，延⻓\n最佳⻝用期。\n4.延⻓产业链。发展初深加工产业，丰富加工产品；发展荔枝+旅游模式，推动农文旅融合，丰富文旅产品供\n给。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-县镇.md",
+    "question_number": 2,
+    "question": "问题二：G市专题调研组准备提交一份关于全市“科技赋能农业产业建设情况”的调研报告。如果你是调研组成员，请根据材料4，拟写报告中“存在问题”和“对策建议”两部分的主要内容。（30分）\n\n要求：\n　　（1）问题梳理全面、准确；\n　　（2）对策建议合理、有针对性、具体明确；\n　　（3）紧扣材料，条理清晰；\n　　（4）篇幅不超过300字。\n\n<!-- R4 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 304,
+    "raw_answer_characters_without_urls": 545,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "72fcc31380f6e2066864653f89488edbe62d1732bf98df48e13915bdc787574f",
+    "start_excerpt": "存在问题：1.机械化滞后。机械装备使用率低，缺乏全自动化生产线；基础设施不完善，影响机械使用；部分\n农⺠观念传统，抵触智慧化设备。2.企业科研受阻。企业受申报规则制约，难以牵头开展科技项目。3.标准不完善。\n产业多环节缺乏标准，国家级标准缺失。4.专业人才匮乏。研发及深加工专业人才短缺，影响扩大发展。\n对策建议：1.推进机械化。政府设立专项资金，研发、引进推广机械设备，完善基础设施，加强宣传引导，提\n升农⺠使用意愿。2.助力企业科研。修",
+    "end_excerpt": "。研发及深加工专业人才短缺，影响扩大发展。\n对策建议：1.推进机械化。政府设立专项资金，研发、引进推广机械设备，完善基础设施，加强宣传引导，提\n升农⺠使用意愿。2.助力企业科研。修订规则，允许有科研能力的农业企业牵头申报。3.完善标准。政企学合作，加\n快推进标准化建设，积极申报国标。4.壮大人才队伍。开展技能培训，强化人才培育；完善激励机制，吸引专业人\n才。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文304字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-县镇.md",
+    "question_number": 3,
+    "question": "问题三：广东聚焦实施“百县千镇万村高质量发展工程”，始终抓住产业这个高质量发展的根本，推动乡村全面振兴。请结合给定材料，联系实际，围绕“乡村振兴关键在产业振兴”进行深入思考，自拟题目，撰写一篇议论文。（50分）\n\n要求：\n　　（1）文章主题与给定材料联系紧密，观点正确，思想深刻；\n　　（2）论点鲜明，论据确凿，论证严密，逻辑性强；\n　　（3）结构完整，条理清晰，表述准确，行文流畅；\n　　（4）篇幅在800-1000字。",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "explicit_range",
+      "minimum": 800,
+      "maximum": 1000,
+      "confidence": "high",
+      "evidence": "800-1000字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 3442,
+    "raw_answer_characters_without_urls": 3529,
+    "removed_rules": [
+      "source_or_note_footer"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "fccfdf7fb2e0da73796428c3a43df0118f4be46ecda84337f995a58322e0e9a6",
+    "start_excerpt": "以“产业兴”促“乡村兴”\n强国必先强农，农强方能国强。广东聚焦实施“百千万工程”，牢牢抓住产业这个“牛鼻子”，为乡村全面振兴注\n入强劲动力。实践证明，产业振兴是乡村振兴的重中之重，也是实际工作的切入点，要以产业振兴促进乡村全面振\n兴。\n产业振兴助力乡村经济发展。产业是经济发展的核心引擎。A县深挖本地文化资源，把荔枝“小特产”做成“大产\n业”；D县打造现代农业产业园，推动三产融合发展；G市坚持科技兴农，助力农业高质量发展……产业的蓬勃发\n",
+    "end_excerpt": "振兴助力乡村文化振兴”，论述段4又写了“产业振兴助力乡村生态振兴”，论述段5最后写了“产业振兴助力乡村组织振兴”，文章整\n体论述逻辑清晰。】\n⺠族要复兴，乡村必振兴。以产业振兴为抓手，推动乡村经济、人才、文化、生态、组织全面振兴，广东乡村\n必将绘就乡村全面振兴壮美画卷！\n【结尾的优点：范文的结尾回扣了“以产业振兴促进乡村振兴”这个主题，并且进行了总结提升。】",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文3442字，超过题面明确上限1000字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-省市.md",
+    "question_number": 1,
+    "question": "问题一：请根据材料4，概括S市强化企业科技创新主体地位的主要做法。（20分）\n\n要求：概括全面、准确，条理清晰。篇幅不超过200字。\n\n<!-- R4 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 381,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "783aab3d62ae18f1ef0a6d0064480fe1f9a727295d16d0fd5dae403d8f0ca86b",
+    "start_excerpt": "1.增强企业话语权。召开座谈会，邀请企业参会发言；制定科技政策时，征求企业意⻅。\n2.增强创新投入。健全多元科技创新投入体系，企业为主，财政投入、信贷融资、个人投入并举。\n3.优化金融服务。建立科技型企业全生命周期金融服务机制，提供多元接力式金融服务。\n4.创新科研组织模式。企业主导，推行“企业出题、研究院遴选、高校揭榜”工作机制。\n5.企业主导成果转化。出台产学研专项政策，搭建平台聚合企业需求，针对性解决问题。",
+    "end_excerpt": "技政策时，征求企业意⻅。\n2.增强创新投入。健全多元科技创新投入体系，企业为主，财政投入、信贷融资、个人投入并举。\n3.优化金融服务。建立科技型企业全生命周期金融服务机制，提供多元接力式金融服务。\n4.创新科研组织模式。企业主导，推行“企业出题、研究院遴选、高校揭榜”工作机制。\n5.企业主导成果转化。出台产学研专项政策，搭建平台聚合企业需求，针对性解决问题。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-省市.md",
+    "question_number": 2,
+    "question": "问题二：如果你是G市科技局的工作人员，请根据材料5中与会者的发言摘录，梳理G市科研成果转化中存在的问题，并提出对策建议。（30分）\n\n要求：\n　　（1）问题梳理全面、准确；\n　　（2）对策建议合理、有针对性、具体明确；\n　　（3）紧扣材料，条理清晰；\n　　（4）篇幅不超过300字。\n\n<!-- R4 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 306,
+    "raw_answer_characters_without_urls": 541,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "9af9fa49d9ed4d5713f2ef3910d004fe1a30d32994d4f599179ae04bad069715",
+    "start_excerpt": "问题：1.科研与产业脱节。科研人员缺少市场、产业意识，不了解产业现状与企业需求，成果未对接市场。2.评\n价激励不足。科研评价体系不完善，转化所占权重低；科研人员转化收益少、限制多、⻛险高；未出台鼓励转化具\n体实施办法。3.中介人才短缺。技术经理人队伍数量不足，素质低。\n对策：1.促进科研产业对接。引入第三方机构辅导，高校师生深入企业，了解市场需求和企业运营模式，结合\n实践研究；校企共建创新联合体，规划建设统一交易平台。2.优化评价激励机",
+    "end_excerpt": "低。\n对策：1.促进科研产业对接。引入第三方机构辅导，高校师生深入企业，了解市场需求和企业运营模式，结合\n实践研究；校企共建创新联合体，规划建设统一交易平台。2.优化评价激励机制。出台具体制度规定，提高转化权重\n和收益比例，简化限制；建立⻛险分担机制，加大宣传，解疑答惑。3.加强中介队伍建设。联合高校开设课程，培养\n人才；完善职业资格认证体系，强化等级培训。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文306字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-统考.md",
+    "question_number": 3,
+    "question": "请根据材料1，概括S市强化企业科技创新主体地位的主要做法。（20分）\n要求：概括全面、准确，条理清晰。篇幅不超过200字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 295,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "783aab3d62ae18f1ef0a6d0064480fe1f9a727295d16d0fd5dae403d8f0ca86b",
+    "start_excerpt": "1.增强企业话语权。召开座谈会，邀请企业参会发言；制定科技政策时，征求企业意⻅。\n2.增强创新投入。健全多元科技创新投入体系，企业为主，财政投入、信贷融资、个人投入并举。\n3.优化金融服务。建立科技型企业全生命周期金融服务机制，提供多元接力式金融服务。\n4.创新科研组织模式。企业主导，推行“企业出题、研究院遴选、高校揭榜”工作机制。\n5.企业主导成果转化。出台产学研专项政策，搭建平台聚合企业需求，针对性解决问题。",
+    "end_excerpt": "技政策时，征求企业意⻅。\n2.增强创新投入。健全多元科技创新投入体系，企业为主，财政投入、信贷融资、个人投入并举。\n3.优化金融服务。建立科技型企业全生命周期金融服务机制，提供多元接力式金融服务。\n4.创新科研组织模式。企业主导，推行“企业出题、研究院遴选、高校揭榜”工作机制。\n5.企业主导成果转化。出台产学研专项政策，搭建平台聚合企业需求，针对性解决问题。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-统考.md",
+    "question_number": 5,
+    "question": "根据材料1，围绕“AI技术+应用场景”，简要说明甲市“AI警察”在警务实战中的具体应用。（20分）\n要求：全面、准确，条理清晰。不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 304,
+    "raw_answer_characters_without_urls": 390,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "15e322226cee1b6dd18bbe7984166baca317e5bb287aef4db68be2ce294fc9ca",
+    "start_excerpt": "1.打击野外流动赌场。搭建全息感知应用模型，利用野外红外成像及高清人脸抓拍设备实时监测，自动抓拍、\n识别、发现赌博行为，调查取证时助力查清赌资往来、组织架构，精确预警、精准打击。\n2.治理改装摩托⻋“炸街”。运用“AI声纹识别系统”，在重点路段24小时识别，抓取途经改装摩托⻋，查处多起\n违规改装行为及非法改装团伙。\n3.预警异常交通事件。构建快速环线态势感知平台系统，通过反复学习改进，快速识别异常停留、异常拥堵等\n情形，为交警处置争取时",
+    "end_excerpt": "途经改装摩托⻋，查处多起\n违规改装行为及非法改装团伙。\n3.预警异常交通事件。构建快速环线态势感知平台系统，通过反复学习改进，快速识别异常停留、异常拥堵等\n情形，为交警处置争取时间，缓解交通拥堵。\n4.打击电信网络诈骗。读取受害人笔录，同步查询、追踪资金流向，快速完成止付、解析与自动研判笔录、锁\n定涉案资金账户与境外窝点、发布追逃令，提升破案效率，挽回损失。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文304字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-统考.md",
+    "question_number": 9,
+    "question": "请根据材料1，概括A县做好荔枝“土特产”文章的主要做法。（20分）\n要求：概括全面、准确，条理清晰，篇幅不超过200字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 204,
+    "raw_answer_characters_without_urls": 278,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "1c0fe6b7b9b399a76bdf9d75b4fa21107f26aa43ac17ee325449b76de8169402",
+    "start_excerpt": "1.改良本地品种。县农业推广中心与农业院校、科研院所合作，建设种质资源圃，引进国内外新品种，培育杂\n交品种。\n2.借助科技手段。建设大数据平台，实时监测果园生⻓情况，提供及时的科学指导，解决种植难题。\n3.解决保鲜难题。引进国家级科研团队，研究保鲜技术，打造气调保鲜移动集装箱汽⻋，调节荔枝呼吸，延⻓\n最佳⻝用期。\n4.延⻓产业链。发展初深加工产业，丰富加工产品；发展荔枝+旅游模式，推动农文旅融合，丰富文旅产品供\n给。",
+    "end_excerpt": "设种质资源圃，引进国内外新品种，培育杂\n交品种。\n2.借助科技手段。建设大数据平台，实时监测果园生⻓情况，提供及时的科学指导，解决种植难题。\n3.解决保鲜难题。引进国家级科研团队，研究保鲜技术，打造气调保鲜移动集装箱汽⻋，调节荔枝呼吸，延⻓\n最佳⻝用期。\n4.延⻓产业链。发展初深加工产业，丰富加工产品；发展荔枝+旅游模式，推动农文旅融合，丰富文旅产品供\n给。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文204字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2025/申论-统考.md",
+    "question_number": 11,
+    "question": "广东聚焦实施“百县千镇万村高质量发展工程”，始终抓住产业这个高质量发展的根本，推动乡村全面振兴。请结合\n给定材料，联系实际，围绕“乡村振兴关键在产业振兴”进行深入思考，自拟题目，撰写一篇议论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 3442,
+    "raw_answer_characters_without_urls": 3442,
+    "removed_rules": [],
+    "per_item_characters": null,
+    "body_sha256": "fccfdf7fb2e0da73796428c3a43df0118f4be46ecda84337f995a58322e0e9a6",
+    "start_excerpt": "以“产业兴”促“乡村兴”\n强国必先强农，农强方能国强。广东聚焦实施“百千万工程”，牢牢抓住产业这个“牛鼻子”，为乡村全面振兴注\n入强劲动力。实践证明，产业振兴是乡村振兴的重中之重，也是实际工作的切入点，要以产业振兴促进乡村全面振\n兴。\n产业振兴助力乡村经济发展。产业是经济发展的核心引擎。A县深挖本地文化资源，把荔枝“小特产”做成“大产\n业”；D县打造现代农业产业园，推动三产融合发展；G市坚持科技兴农，助力农业高质量发展……产业的蓬勃发\n",
+    "end_excerpt": "振兴助力乡村文化振兴”，论述段4又写了“产业振兴助力乡村生态振兴”，论述段5最后写了“产业振兴助力乡村组织振兴”，文章整\n体论述逻辑清晰。】\n⺠族要复兴，乡村必振兴。以产业振兴为抓手，推动乡村经济、人才、文化、生态、组织全面振兴，广东乡村\n必将绘就乡村全面振兴壮美画卷！\n【结尾的优点：范文的结尾回扣了“以产业振兴促进乡村振兴”这个主题，并且进行了总结提升。】",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2026/申论-公安.md",
+    "question_number": 1,
+    "question": "问题一：根据材料1，概括各地公安机关在高空抛物治理中的主要做法。（20分）\n\n要求：全面准确，条理清晰，字数不超过200字。\n\n<!-- R5 question anchor 2 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 207,
+    "raw_answer_characters_without_urls": 395,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "6a0be6c4a0ee5f50830b420d4d89dcd4cb157545adb3a13cbfc4500f66079062",
+    "start_excerpt": "1.A市推动智慧安防。投入资金改造老旧小区安防，构建“地面+空中”全覆盖监控网络。\n2.B市创新警社联动。成立专项工作组，搭建微信群，用于普法、发布巡查情况、上传举报线索。\n3.C市开展主题宣传。进校园科普危害，在社区设展板、发倡议书、签订承诺书、开讲座。\n4.D市联动法检部⻔。共同出台指导意⻅，统一标准流程；建立会商机制，确保衔接顺畅。\n5.各地同步开展专项整治。排查重点区域，全天候巡查值守，从严查处，公布典型案例。",
+    "end_excerpt": "中”全覆盖监控网络。\n2.B市创新警社联动。成立专项工作组，搭建微信群，用于普法、发布巡查情况、上传举报线索。\n3.C市开展主题宣传。进校园科普危害，在社区设展板、发倡议书、签订承诺书、开讲座。\n4.D市联动法检部⻔。共同出台指导意⻅，统一标准流程；建立会商机制，确保衔接顺畅。\n5.各地同步开展专项整治。排查重点区域，全天候巡查值守，从严查处，公布典型案例。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文207字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2026/申论-县镇.md",
+    "question_number": 2,
+    "question": "问题二：S市调研组经过实地走访和召开座谈会，了解了当地古树名木的保护情况。假如你是调研组成员，请根据材料7，梳理S市古树名木保护遇到的问题，并就做好全市古树名木保护工作提出对策建议。（30分）\n\n要求：\n　　（1）问题梳理全面、准确；\n　　（2）对策建议合理、有针对性、具体明确；\n　　（3）紧扣材料，条理清晰；\n　　（4）篇幅不超过300字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 307,
+    "raw_answer_characters_without_urls": 506,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "03654f8ce3d39af51234766c8131178f0ea85d37b09b63522f10cba7f5ff0df8",
+    "start_excerpt": "问题：\n1.保护性破坏，如为树木修建豪华围栏、铺设地砖等。\n2.抢救资金申请流程繁琐，容易错过⻩金救治时间。\n3.宣传工作不力，群众缺乏古树保护法律知识。\n4.表彰奖励制度落实不到位，群众保护积极性差。\n5.部分古树散落深山，保护难度大。\n建议：\n1.科学保护。召集专家，制定古树保护技术规范，要求责任单位严格落实。\n2.资金速达。采用线上审批模式，推行跨部⻔并联审批，确保抢救资金快速拨付。\n3.普及法律。利用三微一端等渠道，广泛开展古树",
+    "end_excerpt": "古树保护技术规范，要求责任单位严格落实。\n2.资金速达。采用线上审批模式，推行跨部⻔并联审批，确保抢救资金快速拨付。\n3.普及法律。利用三微一端等渠道，广泛开展古树保护普法宣传，让群众知法守法。\n4.激发意愿。切实落实表彰奖励制度；挖掘历史文化价值，结合旅游资源促进群众增收。\n5.灵活救治。借助摄像头、无人机等科技手段，掌握深山古树情况，动态监管、全程保护。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文307字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2026/申论-省市.md",
+    "question_number": 2,
+    "question": "问题二：假如你是S市发展和改革局工作人员，请根据材料5，梳理S市零碳园区建设遇到的问题，并就进一步推进零碳园区建设提出对策建议。（30分）\n\n要求：\n　　（1）问题梳理全面、准确；\n　　（2）对策建议合理、有针对性、具体明确；\n　　（3）紧扣材料，条理清晰；\n　　（4）篇幅不超过300字。\n\n<!-- R4 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 310,
+    "raw_answer_characters_without_urls": 551,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "af8f4ec07213accf4f4702a663f69696ee235196302ed3b0459ef74a2624d23c",
+    "start_excerpt": "一、问题：1.人才紧缺，缺少运营管理、复合型技术人才。2.重建设轻运营，缺少考评和持续跟踪机制。3.绿电\n交易对接机制不明、缺少配套，光伏项目补贴力度弱、缺少资金。4.专业建设运营服务公司少，无全流程服务。5.部\n分园区脱离实际盲目推进，导致中途退出。\n二、对策：1.强化人才引育。深化产学研合作，定向培养、引进专业团队。2.健全考评机制。强化运营，建立持\n续跟踪监测与动态评估体系。3.解决能源问题。能源部⻔明确交易对接渠道，建设、共享配",
+    "end_excerpt": "人才引育。深化产学研合作，定向培养、引进专业团队。2.健全考评机制。强化运营，建立持\n续跟踪监测与动态评估体系。3.解决能源问题。能源部⻔明确交易对接渠道，建设、共享配套设施；提高光伏项目补\n贴，推出“光伏贷”等金融产品。4.强化服务支撑。公开招标，引进综合性服务商，提供全链条解决方案。5.加强规划\n引导。组织专家论证，结合园区情况，出台细化明确的建设政策。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文310字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2026/申论-统考.md",
+    "question_number": 4,
+    "question": "根据材料1，概括各地公安机关在高空抛物治理中的主要做法。（20分）\n要求：全面准确，条理清晰，字数不超过200字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 200,
+      "confidence": "high",
+      "evidence": "不超过200字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 207,
+    "raw_answer_characters_without_urls": 308,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "6a0be6c4a0ee5f50830b420d4d89dcd4cb157545adb3a13cbfc4500f66079062",
+    "start_excerpt": "1.A市推动智慧安防。投入资金改造老旧小区安防，构建“地面+空中”全覆盖监控网络。\n2.B市创新警社联动。成立专项工作组，搭建微信群，用于普法、发布巡查情况、上传举报线索。\n3.C市开展主题宣传。进校园科普危害，在社区设展板、发倡议书、签订承诺书、开讲座。\n4.D市联动法检部⻔。共同出台指导意⻅，统一标准流程；建立会商机制，确保衔接顺畅。\n5.各地同步开展专项整治。排查重点区域，全天候巡查值守，从严查处，公布典型案例。",
+    "end_excerpt": "中”全覆盖监控网络。\n2.B市创新警社联动。成立专项工作组，搭建微信群，用于普法、发布巡查情况、上传举报线索。\n3.C市开展主题宣传。进校园科普危害，在社区设展板、发倡议书、签订承诺书、开讲座。\n4.D市联动法检部⻔。共同出台指导意⻅，统一标准流程；建立会商机制，确保衔接顺畅。\n5.各地同步开展专项整治。排查重点区域，全天候巡查值守，从严查处，公布典型案例。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文207字，超过题面明确上限200字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2026/申论-统考.md",
+    "question_number": 5,
+    "question": "根据材料1，请概括材料中各地信用修复工作的主要做法。（20分）\n要求：概括准确，内容全面，条理清晰，篇幅不超过300字。",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 307,
+    "raw_answer_characters_without_urls": 424,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "45d97bd15fc82025debfc9e098a4218d007b5f5316ee773822c83563023f247b",
+    "start_excerpt": "1.A市解决修复部⻔化、碎片化问题。制定系列文件，相关部⻔按照统一要求落实具体任务，明确修复平台，统\n一数据标准、规范数据共享。\n2.B市一次办成信用修复。建设跨区域、跨部⻔数据传输通道，符合条件的企业只需进一⻔，登录平台办理，或\n直接登录APP在线申请，全程网办。\n3.C市开具《信用修复告知书》。与《行政处罚决定书》一并送达，明确具体整改要求、信用修复流程，方便\n企业理解、及时修复整改。\n4.D市推出“预惩戒+信用修复”执行机制。对因",
+    "end_excerpt": "C市开具《信用修复告知书》。与《行政处罚决定书》一并送达，明确具体整改要求、信用修复流程，方便\n企业理解、及时修复整改。\n4.D市推出“预惩戒+信用修复”执行机制。对因资金紧张、暂付不出钱的被执行企业，给予两月缓冲期，暂不列\n入失信名单。\n5.E市开展广泛宣传。通过多种平台载体宣传新政策，邀请专家解读；对重点企业开展宣传，依托政务服务消息\n中心发送提醒短信。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文307字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2026/申论-统考.md",
+    "question_number": 11,
+    "question": "习近平总书记指出：“良好生态环境是最普惠的⺠生福祉。”请结合给定材料，联系实际，围绕“绿美广东生态建设是\n关系广东⻓远发展和⺠生福祉的重要工程”进行深入思考，自拟题目，撰写一篇议论文。（50分）\n要求：",
+    "task_kind": "composition",
+    "word_rules": {
+      "kind": "unspecified",
+      "confidence": "manual",
+      "evidence": ""
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 842,
+    "raw_answer_characters_without_urls": 2674,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "1c8ac22dd452ea58cc4bde8e08915b2918d4f3cf1fa6d14caa5cf1affe25719e",
+    "start_excerpt": "绿美广东生态建设 绘就靓丽南粤新画卷\n在生态文明建设成为时代命题的今天，广东率先谋划，将“绿美”擘画为发展的鲜明底色。2022年以来，省委深\n入推进绿美广东生态建设，这不仅是对人⺠群众优美生态环境期待的积极回应，更是夯实高质量发展根基、赢得⻓\n远未来的关键战略。这项关乎⺠生福祉与区域⻓远发展的系统工程，正以其生动的实践，在岭南大地徐徐展开一幅\n时代新画卷。\n绿美广东生态建设能够切实增进⺠生福祉。其最直观的成效，在于营造了优美宜居的生态环",
+    "end_excerpt": "生态为历史叙\n事增添自然语境，活化文化记忆；遍布全省的自然教育基地将生态转化为可体验的文化课堂，观⻦识木、自然笔记\n等活动培育生态美学与生命伦理。这些实践有效保护生物多样性与自然遗产，丰富岭南文化时代意蕴，筑牢永续发\n展文化根基。\n绿满南粤，福泽绵⻓。展望未来，广东必将迈出更加坚实的步伐，让绿色成为高质量发展的亮丽底色，绘就人\n与自然和谐共生的现代化新图景。",
+    "issues": [
+      {
+        "rule": "composition_limit_missing",
+        "confidence": "manual",
+        "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+      }
+    ],
+    "another_version_without_findings": false
+  },
+  {
+    "path": "省考/广东/2026/申论-行政执法.md",
+    "question_number": 2,
+    "question": "题目2：根据材料2，请概括材料中各地信用修复工作的主要做法。（20分）\n\n要求：概括准确，内容全面，条理清晰，篇幅不超过300字。\n\n<!-- R5 question anchor 3 -->",
+    "task_kind": "short_answer",
+    "word_rules": {
+      "kind": "explicit_maximum",
+      "maximum": 300,
+      "confidence": "high",
+      "evidence": "不超过300字"
+    },
+    "version": "main",
+    "extraction_method": "legacy_body_boundaries",
+    "characters": 307,
+    "raw_answer_characters_without_urls": 511,
+    "removed_rules": [
+      "teacher_analysis_boundary"
+    ],
+    "per_item_characters": null,
+    "body_sha256": "45d97bd15fc82025debfc9e098a4218d007b5f5316ee773822c83563023f247b",
+    "start_excerpt": "1.A市解决修复部⻔化、碎片化问题。制定系列文件，相关部⻔按照统一要求落实具体任务，明确修复平台，统\n一数据标准、规范数据共享。\n2.B市一次办成信用修复。建设跨区域、跨部⻔数据传输通道，符合条件的企业只需进一⻔，登录平台办理，或\n直接登录APP在线申请，全程网办。\n3.C市开具《信用修复告知书》。与《行政处罚决定书》一并送达，明确具体整改要求、信用修复流程，方便\n企业理解、及时修复整改。\n4.D市推出“预惩戒+信用修复”执行机制。对因",
+    "end_excerpt": "C市开具《信用修复告知书》。与《行政处罚决定书》一并送达，明确具体整改要求、信用修复流程，方便\n企业理解、及时修复整改。\n4.D市推出“预惩戒+信用修复”执行机制。对因资金紧张、暂付不出钱的被执行企业，给予两月缓冲期，暂不列\n入失信名单。\n5.E市开展广泛宣传。通过多种平台载体宣传新政策，邀请专家解读；对重点企业开展宣传，依托政务服务消息\n中心发送提醒短信。",
+    "issues": [
+      {
+        "rule": "explicit_maximum_exceeded",
+        "confidence": "high",
+        "detail": "正文307字，超过题面明确上限300字"
+      }
+    ],
+    "another_version_without_findings": false
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "index_file": "tools\\data\\sourced-continuation-20261013\\sources-02.json",
+    "keys": [
+      "path",
+      "text",
+      "blob",
+      "revision",
+      "repository",
+      "relative_path",
+      "year",
+      "area"
+    ],
+    "match": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【26】天津公务员考试真题pdf版/天津公务员考试真题——申论【05-25】/2024年公务员多省联考《申论》题（天津市级卷）真题及参考答案.docx.md"
+  },
+  {
+    "index_file": "tools\\data\\sourced-supplement-20261013\\sources-00.json",
+    "keys": [
+      "path",
+      "blob",
+      "revision",
+      "text"
+    ],
+    "match": "knowledge/gwy/001【公务员国省考】/资料包/【000】历年国省考真题/【省考】2000-2025真题pdf/【26】天津公务员考试真题pdf版/天津公务员考试真题——申论【05-25】/2024年公务员多省联考《申论》题（天津市级卷）真题及参考答案.docx.md"
+  }
+]

@@ -1,0 +1,746 @@
+{
+  "status": "passed",
+  "files": 28,
+  "answer_positions": 39,
+  "main_versions": 40,
+  "ai_revised_versions": 34,
+  "source_body_cleanup_versions": 6,
+  "details": [
+    {
+      "path": "省考/江西/2019/申论-乡镇.md",
+      "tasks": [
+        1,
+        4
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 195,
+          "kind": "ai_revision",
+          "reason": "合并重复生活照料表述，保留家庭、工作和精神支持三方面全部要点",
+          "new_body_sha256": "868006e718f8921596fe43279f04f636c82f6257a0eb2a491c129e1c653a8ec7"
+        },
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 509,
+          "kind": "ai_revision",
+          "reason": "按同题材料重组完整宣传稿，补足两种展示形式及安全使用提示，纠正绝对安全表述，符合500–600字",
+          "new_body_sha256": "f4ab586752960040d21c6d00a1654c1561ad162602f7a40c282133776346187f"
+        }
+      ]
+    },
+    {
+      "path": "省考/湖南/2019/申论-乡镇.md",
+      "tasks": [
+        4
+      ],
+      "references": [
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 509,
+          "kind": "ai_revision",
+          "reason": "同题材料核对后采用完整宣传稿；补全篇幅并校正旧稿未闭引号、人设移动服务错字及绝对安全表述",
+          "new_body_sha256": "f4ab586752960040d21c6d00a1654c1561ad162602f7a40c282133776346187f"
+        }
+      ]
+    },
+    {
+      "path": "省考/江西/2023/申论-行政执法卷.md",
+      "tasks": [
+        4
+      ],
+      "references": [
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 864,
+          "kind": "ai_revision",
+          "reason": "以材料中的覆盖人口、节水量、专项资金和湿地面积补充案例特色，不添加虚构措施",
+          "new_body_sha256": "018dcc7628013d266827b313630f69cccec01b6314e0cd5c3adce60e1a594278"
+        }
+      ]
+    },
+    {
+      "path": "省考/江西/2024/申论-行政执法.md",
+      "tasks": [
+        2
+      ],
+      "references": [
+        {
+          "number": 2,
+          "version": 1,
+          "characters": 242,
+          "kind": "ai_revision",
+          "reason": "合并重复诉求受理和平台叙述，保留渠道、现场、咨询、培训、回访五项完整措施",
+          "new_body_sha256": "fbedfe582637a5317f33b278a02dc90ed6bb51c81503177156246bd2303836f9"
+        }
+      ]
+    },
+    {
+      "path": "省考/陕西/2024/申论-C类.md",
+      "tasks": [
+        1,
+        2,
+        4
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 198,
+          "kind": "ai_revision",
+          "reason": "保留押金销售、回收布点、转运、分类处置和经费五环节",
+          "new_body_sha256": "d9b11d751435ac569c824c371ad86b5fa76d46a5d2e15a11b4cbfe04984b1859"
+        },
+        {
+          "number": 2,
+          "version": 1,
+          "characters": 242,
+          "kind": "ai_revision",
+          "reason": "同材料同设问，按300字要求压缩重复表达，保留调解全流程措施",
+          "new_body_sha256": "fbedfe582637a5317f33b278a02dc90ed6bb51c81503177156246bd2303836f9"
+        },
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 439,
+          "kind": "ai_revision",
+          "reason": "按材料重写完整公开信，补充定义、理性选购、监管与商家责任，避免“正规渠道就绝对安全”的失当表述",
+          "new_body_sha256": "ff88b1e3dc4227a581f1c954e1e64da61eccd701f3ea6478c0563f0ddfbbc2e2"
+        }
+      ]
+    },
+    {
+      "path": "省考/河北/2022/申论-县级.md",
+      "tasks": [
+        1
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 256,
+          "kind": "ai_revision",
+          "reason": "将原分列问题与建议逐项对应，保留六类问题，避免重复而不机械截字",
+          "new_body_sha256": "258f394417f992107616e6e5070eda32be557bc544a6921af582f584958fa325"
+        }
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-省级.md",
+      "tasks": [
+        3
+      ],
+      "references": [
+        {
+          "number": 3,
+          "version": 1,
+          "characters": 256,
+          "kind": "ai_revision",
+          "reason": "与河北2022同材料核对，按400字上限采用问题建议一一对应的完整修订稿",
+          "new_body_sha256": "258f394417f992107616e6e5070eda32be557bc544a6921af582f584958fa325"
+        }
+      ]
+    },
+    {
+      "path": "省考/河北/2024/申论-A类.md",
+      "tasks": [
+        2
+      ],
+      "references": [
+        {
+          "number": 2,
+          "version": 1,
+          "characters": 293,
+          "kind": "ai_revision",
+          "reason": "精炼末项产业衍生成效，保留六项数字经济作用",
+          "new_body_sha256": "82d87be1521a715b60243d6511381feda5009acfaede6f5a8b15203c114b8385"
+        }
+      ]
+    },
+    {
+      "path": "省考/河南/2017/申论-统考.md",
+      "tasks": [
+        1
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 1130,
+          "kind": "ai_revision",
+          "reason": "重写重复引言、精炼手机测评例子，保留人才、产品差异化与政府服务完整论证",
+          "new_body_sha256": "f55cd5f719c89121b7d3f973eac99ed6b844a331fe07b20a838acc679ea6f5b0"
+        }
+      ]
+    },
+    {
+      "path": "省考/河南/2019/申论-统考.md",
+      "tasks": [
+        1,
+        4
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 347,
+          "kind": "ai_revision",
+          "reason": "删除与六项对比重复的总括标签，保留主体、资金、依据、组织、方式和成效全部比较",
+          "new_body_sha256": "d537a7f6388590481c7db62b0a0c4b6bf9634bc5719902c177192c683ace645c"
+        },
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 1164,
+          "kind": "ai_revision",
+          "reason": "精炼重复开头，保留个人成长、乡村更新、基础设施与开放合作的完整论证",
+          "new_body_sha256": "2adfea720f08ae95371a5fe2270f6bf1e37bbd9bed08b72753413cc701f0ee40"
+        }
+      ]
+    },
+    {
+      "path": "省考/河南/2023/申论-县级.md",
+      "tasks": [
+        5
+      ],
+      "references": [
+        {
+          "number": 5,
+          "version": 1,
+          "characters": 397,
+          "kind": "ai_revision",
+          "reason": "压缩宣传效果重复句，保留规划、制度、宣传和联合监管完整建议",
+          "new_body_sha256": "b049bd857be352f8f41b68e77f73afe587805c68b9407d20173293dcc9a07c7d"
+        }
+      ]
+    },
+    {
+      "path": "省考/河南/2024/申论-市级.md",
+      "tasks": [
+        2,
+        4
+      ],
+      "references": [
+        {
+          "number": 2,
+          "version": 1,
+          "characters": 295,
+          "kind": "ai_revision",
+          "reason": "精炼总括，保留金融、平台、全周期与上市一件事四方面改变",
+          "new_body_sha256": "81a6a045fa5a0e10f6ee14d383ac96a43e794246d892e64c5af1aeb1ab26998b"
+        },
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 1069,
+          "kind": "ai_revision",
+          "reason": "补充数字治理中的服务可及性分析，修复标题粘连，使全文符合1000–1200字",
+          "new_body_sha256": "aa0529ceb24164d0ac63b154401f3b76ada133371251a4f1bcb46481b6036522"
+        }
+      ]
+    },
+    {
+      "path": "省考/河南/2024/申论-市级卷.md",
+      "tasks": [
+        2,
+        4
+      ],
+      "references": [
+        {
+          "number": 2,
+          "version": 1,
+          "characters": 295,
+          "kind": "ai_revision",
+          "reason": "精炼总括，保留金融、平台、全周期与上市一件事四方面改变",
+          "new_body_sha256": "81a6a045fa5a0e10f6ee14d383ac96a43e794246d892e64c5af1aeb1ab26998b"
+        },
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 1069,
+          "kind": "ai_revision",
+          "reason": "补充数字治理中的服务可及性分析，修复标题粘连，使全文符合1000–1200字",
+          "new_body_sha256": "aa0529ceb24164d0ac63b154401f3b76ada133371251a4f1bcb46481b6036522"
+        }
+      ]
+    },
+    {
+      "path": "省考/湖北/2023/申论-县乡.md",
+      "tasks": [
+        2
+      ],
+      "references": [
+        {
+          "number": 2,
+          "version": 1,
+          "characters": 291,
+          "kind": "ai_revision",
+          "reason": "保留五类问题与对应措施，精炼数据分析和公厕配置重复表达",
+          "new_body_sha256": "de1a4234740f2d27ec62316eec62ca6b6549d09ab28327e993927b30c25f8890"
+        }
+      ]
+    },
+    {
+      "path": "省考/湖北/2024/申论-县乡卷.md",
+      "tasks": [
+        1,
+        2
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 290,
+          "kind": "ai_revision",
+          "reason": "压缩模式定义，保留普惠金融、生产升级、信用文明和人才下沉作用",
+          "new_body_sha256": "f621caf0814750216672916566c128ea62a5e748468080f4d54a475b88af4bb1"
+        },
+        {
+          "number": 2,
+          "version": 1,
+          "characters": 348,
+          "kind": "ai_revision",
+          "reason": "把庭院整合误写的土地流转改回材料所述闲置庭院，压缩合作经营建议并保留其余四项对应问题",
+          "new_body_sha256": "3d08b580fc3bd269f048175a28dd38217d864109946524a9695832a4dd9b01b8"
+        }
+      ]
+    },
+    {
+      "path": "省考/湖北/2024/申论-省市.md",
+      "tasks": [
+        1,
+        3
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 193,
+          "kind": "ai_revision",
+          "reason": "精炼口袋公园成效，保留选树、管护、古树保护利用和公园建设四项措施",
+          "new_body_sha256": "b25b9f0d98c376a3e579d8d601b229b5cf96da26b5f36cad759cc5b10c153df9"
+        },
+        {
+          "number": 3,
+          "version": 1,
+          "characters": 504,
+          "kind": "ai_revision",
+          "reason": "补充来自材料的综合研判及风险提示，使调研报告结构完整、篇幅达到约500字",
+          "new_body_sha256": "3ab457442cc48f1c49cdd0b13064fca3c435f1538b150d56481f60c6df74b345"
+        }
+      ]
+    },
+    {
+      "path": "省考/湖南/2021/申论-乡镇.md",
+      "tasks": [
+        1,
+        2
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 197,
+          "kind": "ai_revision",
+          "reason": "合并党员队伍重复短语，保留产业、环境、文化和村规积分五项做法",
+          "new_body_sha256": "355c7f1b3559c1b3487aabb514b91ed3d59574e2f8a25c7d276fc582a73c8113"
+        },
+        {
+          "number": 2,
+          "version": 1,
+          "characters": 288,
+          "kind": "ai_revision",
+          "reason": "精炼制度落实条目，保留四类不便原因和四项针对性建议",
+          "new_body_sha256": "e81acfbec96face27cbb728d75ba187b5b46695f6f166cace9c97d19089e9721"
+        }
+      ]
+    },
+    {
+      "path": "省考/湖南/2023/申论-省市.md",
+      "tasks": [
+        1
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 181,
+          "kind": "ai_revision",
+          "reason": "剥离混入的思维导图、审题和逐段解析，再依据材料精炼五条主作答，不把5120字解析当正文",
+          "new_body_sha256": "07ce906ccf61dfecfc753ef31ce52662c2ee531789ab01ac26462c2da538de10"
+        }
+      ]
+    },
+    {
+      "path": "省考/湖南/2024/申论-省市卷.md",
+      "tasks": [
+        4
+      ],
+      "references": [
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 1078,
+          "kind": "ai_revision",
+          "reason": "以材料明确的手持安检和无障碍电梯细节强化有形与无形的结合，补足论证与篇幅",
+          "new_body_sha256": "d48225eb0a634a32bebd147bb443171a6043befb4c035da233b51e2355446e62"
+        }
+      ]
+    },
+    {
+      "path": "省考/甘肃/2021/申论-县级.md",
+      "tasks": [
+        1
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 194,
+          "kind": "ai_revision",
+          "reason": "压缩同义土地流转说明，保留增收、产业合作与融资模式",
+          "new_body_sha256": "ce2c02304a9cb38c0fbc108761c814372af9ea0c799bc39d22b55e8bd61fa26c"
+        }
+      ]
+    },
+    {
+      "path": "省考/贵州/2019/申论-A类.md",
+      "tasks": [
+        1,
+        4
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 195,
+          "kind": "owned_source",
+          "reason": "原主文已完整合限；剥离误混题面、范文点评或封装，保持答文要点并校正明显字形/ISO错序",
+          "new_body_sha256": "85354b0cb56db272db9ba68a37b16e6d47991932b76fc5df5e8c2ab5e77f97cd"
+        },
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 1112,
+          "kind": "ai_revision",
+          "reason": "压缩静与动的重复释义，保留咖啡产业的问题、因地制宜和标准品牌建设论证",
+          "new_body_sha256": "e79e91c47d5629a111ab734dffed7ca42e9ff147cb0cfee7a6e539535cd11cf9"
+        }
+      ]
+    },
+    {
+      "path": "省考/辽宁/2019/申论-统考.md",
+      "tasks": [
+        1
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 1180,
+          "kind": "ai_revision",
+          "reason": "重写冗长引言，保留奉献担当、苦干实干、改革创新三方面完整论证",
+          "new_body_sha256": "6cc4a31ead64415e68a028d8487f7d426690fb37902e9dc8ef53282542849cfa"
+        }
+      ]
+    },
+    {
+      "path": "省考/辽宁/2024/申论-B类.md",
+      "tasks": [
+        1
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 188,
+          "kind": "ai_revision",
+          "reason": "精炼治理条目，保留干部、干群关系、青年人才与治理四类变化",
+          "new_body_sha256": "c13d3fa2df4fbe89b59234a4a68467c06da702399454ba7a5b4bf46b6c8d4b27"
+        }
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2024/申论-县乡.md",
+      "tasks": [
+        1
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 188,
+          "kind": "ai_revision",
+          "reason": "精炼治理条目，保留干部、干群关系、青年人才与治理四类变化",
+          "new_body_sha256": "c13d3fa2df4fbe89b59234a4a68467c06da702399454ba7a5b4bf46b6c8d4b27"
+        }
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-乡镇.md",
+      "tasks": [
+        4
+      ],
+      "references": [
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 1035,
+          "kind": "ai_revision",
+          "reason": "修复开头与道德段的明显断句残缺，依据微光书苑的志愿服务、代际带动和便利借阅充实论证",
+          "new_body_sha256": "bd126ebb7cfa627af1addfbb426823f4ceb4051e1c24c1f0ece30293e8843789"
+        }
+      ]
+    },
+    {
+      "path": "省考/河南/2016/申论-统考.md",
+      "tasks": [
+        1
+      ],
+      "references": [
+        {
+          "number": 1,
+          "version": 1,
+          "characters": 1153,
+          "kind": "owned_source",
+          "reason": "原主文已完整合限；剥离误混题面、范文点评或封装，保持答文要点并校正明显字形/ISO错序",
+          "new_body_sha256": "d313ee68314f1d64de302c27416062ff59f0cbc0bb0737e0d6ccc6bb0ab88de0"
+        },
+        {
+          "number": 1,
+          "version": 2,
+          "characters": 1199,
+          "kind": "owned_source",
+          "reason": "原主文已完整合限；剥离误混题面、范文点评或封装，保持答文要点并校正明显字形/ISO错序",
+          "new_body_sha256": "3510d76cf6956c1ac34b607e56ec42fde491b8daaf9b3c37791d3f256b453086"
+        }
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2018/申论-省直.md",
+      "tasks": [
+        4
+      ],
+      "references": [
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 1137,
+          "kind": "owned_source",
+          "reason": "原主文已完整合限；剥离误混题面、范文点评或封装，保持答文要点并校正明显字形/ISO错序",
+          "new_body_sha256": "bd3bde4f7f47ea7142a15e4d2ee354adc417971488f3eb7a133308f1d47ff24d"
+        }
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2018/申论-统考.md",
+      "tasks": [
+        3,
+        4
+      ],
+      "references": [
+        {
+          "number": 3,
+          "version": 1,
+          "characters": 334,
+          "kind": "owned_source",
+          "reason": "原主文已完整合限；剥离误混题面、范文点评或封装，保持答文要点并校正明显字形/ISO错序",
+          "new_body_sha256": "c69601fda88310ba7800de21cd952c0f910716e7f90cb9a4efe11348f65191c2"
+        },
+        {
+          "number": 4,
+          "version": 1,
+          "characters": 1108,
+          "kind": "owned_source",
+          "reason": "原主文已完整合限；剥离误混题面、范文点评或封装，保持答文要点并校正明显字形/ISO错序",
+          "new_body_sha256": "78704f522df41460eefd6bccc5975bf0447397e4603b6a15a3f9832c527ab0ef"
+        }
+      ]
+    }
+  ],
+  "manual_only_not_guessed": [
+    {
+      "path": "省考/河北/2019/申论-统考.md",
+      "question_number": 1,
+      "question": "资料5写道：“在消费扶贫过程中，消费成了高尚的消费，脱贫成了有尊严的脱贫，物质满足之外，也有精神的享\n受，消费扶贫因此而有了高度。”请结合给定资料理解这段话，据此确定立意，自拟题目，联系实际，写一篇议论文\n章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1137,
+      "raw_answer_characters_without_urls": 3764,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "cea38b0e8a042ffa182a74a459c6bef03837b2223a61c3778e257cbcf9658ca7",
+      "start_excerpt": "消费扶贫的高度\n——物质扶贫和精神扶贫双管⻬下\n消费扶贫，顾名思义，就是打通线上线下渠道，鼓励城里的消费者去购买和消费贫困地区的特色农产品、工艺\n品等，从而带动当地群众脱贫致富。这种扶贫方式，和传统给钱、给物的慈善式扶贫方式不同。它借助了市场化的\n物质力量，同时激发了消费者的社会责任、公益精神，以及贫困户的自立自强精神，具有物质和精神双重高度。\n消费扶贫具有社会参与广泛、积极主动性高等优点。它使物质消费行为具有履行社会公德，做社会公益的",
+      "end_excerpt": "和服务\n体系。对接贫困户，做好质量监管和溯源；通过产品创新实现产品溢价和销量增⻓；完善技术检测体系杜绝虚假悲\n情营销等。\n如此，消费扶贫的重要价值会日益凸显。它是一种综合了市场力量，可以激发社会广泛参与，兼有物质扶贫和\n精神扶贫双重高度的扶贫举措。对此，我们要足够重视，充分引导各地政府、企业、电商平台、消费者和生产者等\n广泛参与，统一协调，力求做大做好做强。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/河北/2019/申论-统考.md",
+      "question_number": 2,
+      "question": "资料5中有“尤其需要勇担当、有作为的⻘年人顶上来”一句话。请结合给定资料理解这句话，据此确定立意，自拟题\n目，联系实际，写一篇议论文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1170,
+      "raw_answer_characters_without_urls": 3552,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "c4aad154bc05c24d21c2e3887be4cf98ac9de7345a929f06b3bd28a684fb4353",
+      "start_excerpt": "乡村建设呼唤有志⻘年\n一直以来，乡村的发展始终都是政府工作的重中之重。当前，乡村建设虽取得了一定成效，但人才的缺失却成\n为发展的最大障碍。一方面，人才外流、农村空心化的问题依然存在，干部队伍也不稳定；另一方面，农⺠普遍存\n在等靠要思想，不敢创新、懒于探索，乡村振兴后续乏力。作为社会发展的生力军、主力军，⻘年人要对乡村怀有\n热爱之情，积极参与乡村建设；更要有勇有谋，以自身的知识、能力助推乡村振兴，实现自我价值。\n当下的⻘年，要有眼光、有远",
+      "end_excerpt": "鉴外部资源和发展经验。⻘年要以开放的心态，积极引进资金、先进的管理和技术，发展现代农\n业，延伸产业链，推动加工业、旅游业等的发展，实现三产融合。\n乡村天地广阔，大有可为。想要让这些有志⻘年在乡村留得安心、舒心，政府还需要优化引才、留才环境，通\n过改善农村的基础设施、支持返乡下乡⻘年创业创新等举措，充分调动广大⻘年干事创业的热情，让更多的⻘春之\n花在乡村绽放！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/甘肃/2019/申论-统考.md",
+      "question_number": 1,
+      "question": "请结合给定资料，从基层公务员的视⻆，以“⻓本事，担难事”为主题，自拟题目，写一篇文章。（50分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1066,
+      "raw_answer_characters_without_urls": 3368,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "1d0f1bad63b826633530c3e86fa0eeae1ffeab9503503db8f9cecaf118c0d6f6",
+      "start_excerpt": "能⻓本事，敢担难事\n“求木之⻓者，必固其根本；欲流之远者，必浚其泉源。”基层，是国家发展的根本。基层公务员就是要承担起\n基层社区、农村稳定和发展的任务，将党和国家的顶层设计落地实践。这就要求大家“⻓本事，担难事”，既有远⻅\n卓识又能担当奉献。具体来说，应全面提高自身素质能力，改善作⻛，勇于担当，攻坚克难。只有这样才能更好地\n服务群众，提高人⺠幸福感，促进国家⻓治久安与改革发展。\n要⻓本事，就要脚踏实地，融入群众，树立良好工作作⻛，还要大",
+      "end_excerpt": "能确保工作能够顺利开展，更好地为人⺠群众服务。与此同时也要积极参与各项\n考察、推荐与选拔，主动接受检验，敢于发现问题、直面问题、解决问题，以更高标准严格要求自己。\n习近平总书记曾说：“基础不牢，地动山摇”，所以基层工作者就必须要着力解决好联系服务群众的“最后一公\n里”问题，真正做到⻓本事、担难事，融入群众，全面提高素质能力，树立良好作⻛，不怕吃苦，不负韶华。",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/甘肃/2021/申论-乡镇卷.md",
+      "question_number": 4,
+      "question": "请你根据“给定材料”，总结北营村在壮大集体经济过程中值得借鉴的做法。",
+      "task_kind": "short_answer",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "参考答案二：",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 0,
+      "raw_answer_characters_without_urls": 0,
+      "removed_rules": [],
+      "per_item_characters": null,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "start_excerpt": "",
+      "end_excerpt": "",
+      "issues": [
+        {
+          "rule": "empty_alternate_version_label",
+          "confidence": "manual",
+          "detail": "此处仅有另一个版本标签而无正文，不等于整题缺答案；应核是否是多余空标签"
+        }
+      ],
+      "another_version_without_findings": true
+    },
+    {
+      "path": "省考/青海/2019/申论-统考.md",
+      "question_number": 1,
+      "question": "根据你对给定资料5中划线部分“有获得却无感”的认识和思考，自拟题目，写一篇议论文。（50分）\n要求：周边50米是建设控制地带；停止周边拟建的商业围合建设；远期予以拆除或降层处",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 991,
+      "raw_answer_characters_without_urls": 3372,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "e39b04e932fcab1e8dc27c5a84f6b7b797cb0638d39e4ff9de45d38e59c38b50",
+      "start_excerpt": "惠⺠政策，让群众有“得”更有“感”\n建设农村文化服务中心、推行低保政策、养老金上涨、油电气降价、增值税减少……如今，我们看到了越来越\n多的“政策红包”，人们向往的美好生活似乎触手可及。但是，很多政策虽能让群众“获得”，但却难以让群众“有\n感”。这就需要政策首先应“抓得准”，在制定时贴合⺠生实际，不与既定政策相冲突；还需要政策“做得实”，既要\n严格执行、照章办事、坚守原则，又要⺠主集中、灵活变通、柔性人性。\n惠⺠政策之所以要有“得”更有“",
+      "end_excerpt": "管理，到利用新技术的智能化管理、信息化管理，比如“天眼”行\n动，再到走红网络的“朝阳群众”、“海淀网友”等群众监督力量……都为我们提供了政策落实的方法，也实践了共享\n共治的理念。\n无论政策的制定，还是政策的落实都关乎百姓的“得”与“感”。我们希冀，未来的惠⺠政策不仅想⺠所想、急⺠\n所急，更能原则与灵活并重，政府与百姓同行，真正画好社会治理和改善⺠生的同心圆！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    },
+    {
+      "path": "省考/黑龙江/2019/申论-统考.md",
+      "question_number": 1,
+      "question": "请对“给定资料5”中划线句子“健康的获得与实现对每个人都是至关重要的，永远不要放弃对健康的追求……”进行\n深入思考，联系实际，自拟题目，写一篇文章。（40分）\n要求：",
+      "task_kind": "composition",
+      "word_rules": {
+        "kind": "unspecified",
+        "confidence": "manual",
+        "evidence": ""
+      },
+      "version": "main",
+      "extraction_method": "legacy_body_boundaries",
+      "characters": 1068,
+      "raw_answer_characters_without_urls": 3477,
+      "removed_rules": [
+        "teacher_analysis_boundary"
+      ],
+      "per_item_characters": null,
+      "body_sha256": "278cc998fd55585607b1340276167b7b184a8106abccdd4463783582c6d5451a",
+      "start_excerpt": "保障健康，全面发展\n党的十九大报告将“实施健康中国战略”作为国家发展基本方略中的重要内容，在战略上确定了健康的重要性。\n正如习近平总书记所说：“没有全⺠健康，就没有全面小康。”健康不仅仅指体魄康健，而是在身体上、精神上、社\n会适应上完全处于良好的状态，生理健康、心理健康、道德健康三方面构成健康的整体概念，健康是实现一切的保\n障。\n全⺠健康是最大的生产力，是⺠生经济的增⻓点，是开创未来的现实根基。从宏观来看多年来中国的经济发展\n得益于“人",
+      "end_excerpt": "复兴的应有之义。从摘掉“东亚病夫”的帽子到“中国防控模\n式”的推广，中国在健康事业上不仅凝聚了国内共识，还赢得了世界人⺠的赞同。全⺠健康战略为人类的可持续发展\n提供了范例。\n幸福的首要条件在于健康。实现全⺠健康是亿万人⺠的共同期盼，我们有理由相信，矢志不渝地推进保障人⺠\n健康系统工程，满足人⺠健康需求，就一定能够迎来健康之光，为人类健康事业发展增添更多光彩！",
+      "issues": [
+        {
+          "rule": "composition_limit_missing",
+          "confidence": "manual",
+          "detail": "题干未保留明确字数要求，不能用解析器现状冒充完整原题约束"
+        }
+      ],
+      "another_version_without_findings": false
+    }
+  ],
+  "root_owned_exclusions": []
+}

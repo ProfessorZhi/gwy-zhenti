@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-15",
+  "github_baseline": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab",
+  "missing_original_question_count": 25,
+  "scope": "广东、江苏、浙江既有重点行测卷；用户已暂停其他地区扩卷。",
+  "source_boundary": "下列公开原题本均为机构或个人整理的考生回忆版本。官方未公布原卷不能成为编造原题的理由。完整题量标题和缺题默认字母均不能当作真实题干。",
+  "papers": [
+    {
+      "path": "省考/广东/2020/行测-县级卷.md",
+      "missing_numbers": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "fixed_library_url": "https://github.com/ProfessorZhi/gwy-zhenti/blob/f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/省考/广东/2020/行测-县级卷.md",
+      "independent_urls": [
+        "https://upload.xingguanggongkao.com/pdf/2020年广东省公务员录用考试《行测》真题（县级卷-考生回忆版）.pdf?time=1733729672",
+        "https://www.xingguanggongkao.com/XingQuestion/paperList/subject_id/2/area_id/0/year/2020.html"
+      ],
+      "observed_evidence": "星光公考对应100题版在69—75均为本题暂无收集到，四选项为正确答案是A等占位；用户同卷原题文件名亦标明7道题暂缺。已有库题序恢复刻意保留缺号，没有静默把其他题改号补满。",
+      "owned_source_filename": "2020年0809广东公务员考试《行测》真题（县级以上）（7道题暂缺）.pdf.md",
+      "recovery_state": "仍未取得这7道可靠原题",
+      "fixed_reference_url": "https://raw.githubusercontent.com/Yaoyuan-Zhang319/AdministrativeAptitudeTest/1896de17764058dc1199d668edbf9f7e96cbc77a/%E7%9C%81%E8%80%83%E4%BB%A5%E5%8F%8A%E5%B8%82%E8%80%83/%E5%B9%BF%E4%B8%9C%E7%9C%81%E8%80%83/%E8%AF%95%E5%8D%B7/2020%E5%B9%B40809%E5%B9%BF%E4%B8%9C%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88%E5%8E%BF%E7%BA%A7%E4%BB%A5%E4%B8%8A%EF%BC%89.pdf",
+      "fixed_reference_sha256": "f080ca13b64c2c74d855015ce0b9531e5504e81d573a79a131defdf73393e4c6"
+    },
+    {
+      "path": "省考/江苏/2024/行测-A类.md",
+      "missing_numbers": [
+        76,
+        96,
+        110,
+        111
+      ],
+      "fixed_library_url": "https://github.com/ProfessorZhi/gwy-zhenti/blob/f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/省考/江苏/2024/行测-A类.md",
+      "fixed_reference_url": "https://raw.githubusercontent.com/shiwuooo/shangantong-papers-v2-c1/1d07e859626fe23c12b138da522dd979c4606c11/paper_1_1_3pvr00o/index_static.html",
+      "fixed_reference_sha256": "710759ec9bacc4229d38db2eab9664a29fc27b4c7bc870d2a078efd8b9ba27af",
+      "independent_urls": [
+        "https://www.chinagwy.org/files/20240925145840_94072.pdf",
+        "https://static.32xueyuan.com/zq//u/cms/zj/202411/221409378lxq.pdf",
+        "https://exam2.gwyks.cn/papermain/downloadPDF?id=4389289&type=2"
+      ],
+      "observed_evidence": "固定上岸通版本四题都是征集占位。公考通第76题明确76题暂缺；展鸿同卷也缺76等题，其其他题位回忆版本尚有不同，不能只凭相邻题或另一卷同号猜填。",
+      "placeholder_source_keys": {
+        "76": "3_1_9ndg3",
+        "96": "3_1_229qs",
+        "110": "3_1_229qt",
+        "111": "3_1_229qu"
+      },
+      "recovery_state": "仍未取得这4道可靠原题"
+    },
+    {
+      "path": "省考/江苏/2025/行测-C类.md",
+      "missing_numbers": [
+        27,
+        29,
+        35,
+        36,
+        37,
+        42,
+        75,
+        77,
+        78,
+        80,
+        81,
+        85
+      ],
+      "fixed_library_url": "https://github.com/ProfessorZhi/gwy-zhenti/blob/f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/省考/江苏/2025/行测-C类.md",
+      "fixed_reference_url": "https://raw.githubusercontent.com/shiwuooo/shangantong-papers-v2-c1/1d07e859626fe23c12b138da522dd979c4606c11/paper_1_1_3pvqups/index_static.html",
+      "fixed_reference_sha256": "fc31099697d52cda823f3c8a6e5fbdfc9fe74e64cfb741cb927b13b1ab641f6d",
+      "independent_urls": [
+        "https://ah.huatu.com/tiku/dfgwy/2024jsskgfc/",
+        "https://www.gwyeasy.com/archives/20285",
+        "https://iget100.wuhoushu.com/gongkao/shengkao/jiangsu/2025/xingce-c"
+      ],
+      "observed_evidence": "华图C卷完整HTML已按各个题号逐项检查，这12题全为题目缺失的估分占位（不是客观题）。杨柳同卷亦标暂缺；iget100原样保留部分征集占位。华图标题是2024年12月8日考试，对应2025招录年度，不能错归2024。",
+      "local_fetch_evidence": "D:/artifacts/gwy-quality-audit-20261015/huatu-2025-js-c.html",
+      "placeholder_source_keys": {
+        "27": "3_1_2fqvi",
+        "29": "3_1_2fqvj",
+        "35": "3_1_2fqvl",
+        "36": "3_1_2fqve",
+        "37": "3_1_2fqvf",
+        "42": "3_1_2fqvh",
+        "75": "3_1_229qv",
+        "77": "3_1_229r1",
+        "78": "3_1_22afm",
+        "80": "3_1_22pci",
+        "81": "3_1_22pel",
+        "85": "3_1_22pes"
+      },
+      "recovery_state": "仍未取得这12道可靠原题，不借A卷同号无据替代"
+    },
+    {
+      "path": "省考/浙江/2020/行测-A类.md",
+      "missing_numbers": [
+        49,
+        50
+      ],
+      "fixed_library_url": "https://github.com/ProfessorZhi/gwy-zhenti/blob/f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/省考/浙江/2020/行测-A类.md",
+      "independent_urls": [
+        "https://static.32xueyuan.com/upload/images/2021/11/04/1636024826627.pdf"
+      ],
+      "observed_evidence": "展鸿2020浙江A卷题本和解析明确49-50.缺（PDF第17/34页解析处）；用户同卷文件名为缺2题。不能把题本总题量当作已取得两道正文。",
+      "owned_source_filename": "2020年0726浙江公务员考试《行测》真题（A卷）（缺2题）.pdf.md",
+      "recovery_state": "仍未取得这2道可靠原题",
+      "fixed_reference_url": "https://raw.githubusercontent.com/shiwuooo/shangantong-papers-v2-c2/18d879673fdaade056ef209345d0e8e67793be82/paper_1_1_3q00jlv/index_static.html",
+      "fixed_reference_sha256": "883be4aab8c86fe8f8d9193ba8da5013d742748218b468047bc22eb2c43fca1e",
+      "additional_fixed_question_pdf": {
+        "url": "https://raw.githubusercontent.com/Yaoyuan-Zhang319/AdministrativeAptitudeTest/1896de17764058dc1199d668edbf9f7e96cbc77a/%E7%9C%81%E8%80%83%E4%BB%A5%E5%8F%8A%E5%B8%82%E8%80%83/%E6%B5%99%E6%B1%9F%E7%9C%81%E8%80%83/%E8%AF%95%E5%8D%B7/2020%E5%B9%B40726%E6%B5%99%E6%B1%9F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89%EF%BC%88%E7%BC%BA2%E9%A2%98%EF%BC%89.pdf",
+        "sha256": "5655a4b3963c828cecf6a83d18b8b80dea3079c85bf4e1b75004a551a93daffb"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "random_cases": 200000,
+  "seed": 20261015,
+  "query_counts": {
+    "7": 128090,
+    "8": 71910
+  },
+  "branches": {
+    "same_group": 45304,
+    "different_groups_other_third": 82786,
+    "different_groups_partner_third": 71910
+  },
+  "upper_bound": 8,
+  "source_key_claim": 10,
+  "conclusion": "A source claim that at least ten queries are necessary is disproved. This script does not prove no strategy using seven queries exists."
+}

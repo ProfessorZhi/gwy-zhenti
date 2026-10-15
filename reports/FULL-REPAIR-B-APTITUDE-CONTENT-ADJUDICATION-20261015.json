@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-15",
+  "scope": "453份当前行测MD的实际正文/题目选项/独立答案details；不将图像字节解码等同于题面完整性认证",
+  "paper_files_scanned": 453,
+  "read_only_scans": [
+    "reports/FULL-REPAIR-B-APTITUDE-CONTENT-SCAN-20261015.json",
+    "reports/FULL-REPAIR-B-APTITUDE-CONTENT-SECOND-20261015.json",
+    "reports/FULL-REPAIR-B-APTITUDE-ANSWER-FORMULA-20261015.json",
+    "reports/FULL-REPAIR-B-APTITUDE-STEM-FIGURE-CANDIDATES-20261015.json"
+  ],
+  "fixes": {
+    "display_files": 23,
+    "display_positions": 33,
+    "judgment_empty_array_envelopes_removed": 13,
+    "false_graph_classifications_corrected": 20,
+    "classification_breakdown": {
+      "类比推理": 4,
+      "逻辑判断": 16
+    },
+    "receipt": "reports/FULL-REPAIR-B-APTITUDE-DISPLAY-TYPES-20261015.jsonl",
+    "summary": "reports/FULL-REPAIR-B-APTITUDE-DISPLAY-TYPES-SUMMARY-20261015.json",
+    "real_question_text_options_answers_unchanged": true
+  },
+  "new_confirmed_content_gaps": [
+    {
+      "path": "省考/新疆/2024/行测-兵团.md",
+      "number": 54,
+      "qid": 16191092,
+      "evidence": "一块长方形田地BCDE如下图所BC=40米，BE=30米……现从D点出发经A点达BE边，最短路程为多少米?",
+      "missing": [
+        "主体图",
+        "A点位置等关键条件"
+      ],
+      "source_problem_confirmed": true,
+      "upstream_commit": "278984401124db40da5163a31275b8deb9c282f4",
+      "source_module_question": 4,
+      "current_state": "已显著标注待补，旧C及‘略’保留为未经验证来源记录；115题中114可读取主答案，本题不能核定",
+      "receipt": "reports/FULL-REPAIR-B-XINJIANG2024-54-20261015.jsonl",
+      "query_evidence": "D:/artifacts/gwy-quality-audit-20261015/xinjiang2024-bingtuan54-source-search-20261015.json",
+      "metadata_fields": {
+        "缺失题干图片题号": [
+          54
+        ],
+        "缺失题干条件题号": [
+          54
+        ]
+      },
+      "new_image_created": false,
+      "source_not_obtained_reason": "上游原模块本身缺；MOPS新疆当年现成题本不是兵团；公开同卷目录仅前页预览；袋鼠知识正常live访问要求登录，未购买/绕过；没有倒推或绘造A点。",
+      "counting_boundary": "已有题的题干残缺单列1，不加入25道缺失整题，也不归黑龙江D选项缺失"
+    }
+  ],
+  "prior_known_work_excluded": [
+    {
+      "path": "省考/西藏/2016/行测-统考.md",
+      "evidence": "扫描时唯一0图片引用卷，Q16‘如图’无图、Q62四选项仅‘米’、Q101–120无共用统计资料。",
+      "owner": "root/A已取得原PDF正在恢复，未并改"
+    },
+    {
+      "path": "省考/上海/2017/行测-统考.md",
+      "numbers": [
+        75,
+        125,
+        127
+      ],
+      "evidence": [
+        "功为 ＝ ；",
+        "省级企业占比为 ，略小于 ，",
+        "增长率约为 ，"
+      ],
+      "owner": "C已接全卷公式校核，未并改"
+    }
+  ],
+  "false_positives_resolved": {
+    "unit_only_options": {
+      "raw_matches": 16,
+      "real_known_loss": 4,
+      "known_loss_path": "西藏2016Q62",
+      "other_12": "星期日/月日字段、日元、‘公平’、古汉字‘立人’均为实际文字选项，不以仅单位字形就判缺"
+    },
+    "graph_without_local_images": "20题实际为词项类比、论点支持/削弱/前提/假言推断；已据题干及原参考解析修分类",
+    "data_questions_without_local_images": {
+      "raw_candidates": 101,
+      "known_tibet_questions": 20,
+      "other_81": "位于5份卷的独立‘##材料’共享区；逐组有实际文本/图表，不能按单题块0图判缺。",
+      "evidence": "reports/FULL-REPAIR-B-APTITUDE-SHARED-DATA-REVIEW-20261015.json"
+    },
+    "formula_candidate_boundary": "解析details扫33次/30题候选；除已知沪17/藏16的真空算式外，其余‘解得，<实际公式图>’或自然计算语言均保有算式图，不算缺失。"
+  },
+  "qa": "reports/FULL-REPAIR-B-APTITUDE-CONTENT-FINAL-QA-20261015.json",
+  "important_additional_test_finding": {
+    "kind": "NDJSON Unicode separator framing",
+    "real_source": "省考/广东/2024/行测-统考.md含U+2028",
+    "evidence": "ensure_ascii=False JSONL中before/after各保留U+2028，按splitlines拆46合法记录为48伪行并JSONDecodeError；应仅按LF拆",
+    "parent_notified": true
+  },
+  "boundary": "自动候选全部需结合上下文；本报告不认证所有图片内文字/公式或所有原卷题序已验真。原365题序未核保留，不为清零伪造。新增真实残缺未解决，不能报告行测题面缺口0。"
+}

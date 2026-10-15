@@ -1,0 +1,158 @@
+{
+  "source_url": "http://zhenghuajiaoyu.cn/uploads/test/20220429/c0fd32b299da312ce4acda2bd077fd04.pdf",
+  "source_pdf_sha256": "6b2679510c52d570520271dc06303927d8f5c2785bb09af68a87275a1037e5ea",
+  "source_pages": 27,
+  "source_version_last_question": 120,
+  "version_boundary": "This public 120-task arrangement differs from the user-provided 125-task reference. Only individually matched diagrams/materials are reused. It contains no courier-material group and cannot authenticate the entire 125-task order.",
+  "images": [
+    {
+      "mops_source_task": 16,
+      "label": "地貌",
+      "path": "图片/修复-20261015/西藏2016-MOPS16-地貌.jpeg",
+      "source_page": 2,
+      "source_xref": 23,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "fe584d5f8bf4624122b3a91d3547eeddc8cba6e743cae4174bdf6a034f09c3c0",
+      "width": 700,
+      "height": 468
+    },
+    {
+      "mops_source_task": 69,
+      "label": "题干图",
+      "path": "图片/修复-20261015/西藏2016-MOPS69-题干图.jpeg",
+      "source_page": 14,
+      "source_xref": 64,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "d3964887306b1c7ccfa7dbf1ec8c0c2ec7501ef0b74f21650e5c3dc9f42f89fe",
+      "width": 233,
+      "height": 211
+    },
+    {
+      "mops_source_task": 69,
+      "label": "选项A",
+      "path": "图片/修复-20261015/西藏2016-MOPS69-选项A.jpeg",
+      "source_page": 14,
+      "source_xref": 65,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "6e3b11b64a2856d946caeb83cffea99de1cf02b940a4bc0c9bb9286efe140c64",
+      "width": 134,
+      "height": 116
+    },
+    {
+      "mops_source_task": 69,
+      "label": "选项B",
+      "path": "图片/修复-20261015/西藏2016-MOPS69-选项B.jpeg",
+      "source_page": 14,
+      "source_xref": 66,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "967f7f0d904719c4f334ed5c029830190cdb4b6ec78b4ba35eb815e4df63ac17",
+      "width": 139,
+      "height": 116
+    },
+    {
+      "mops_source_task": 69,
+      "label": "选项C",
+      "path": "图片/修复-20261015/西藏2016-MOPS69-选项C.jpeg",
+      "source_page": 15,
+      "source_xref": 69,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "fca2194a8b6cb29082d2037042ec44e7f145454c23a2b4f88852ac4907a310e8",
+      "width": 132,
+      "height": 112
+    },
+    {
+      "mops_source_task": 69,
+      "label": "选项D",
+      "path": "图片/修复-20261015/西藏2016-MOPS69-选项D.jpeg",
+      "source_page": 15,
+      "source_xref": 70,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "8d6fbe9a305224dc9e14adc6321617611a83bfce9341c81d5a89487269d0654b",
+      "width": 137,
+      "height": 133
+    },
+    {
+      "mops_source_task": 71,
+      "label": "题图与选项",
+      "path": "图片/修复-20261015/西藏2016-MOPS71-题图与选项.jpeg",
+      "source_page": 17,
+      "source_xref": 79,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "519636cc292af48930df6c81241ee63fc0a3c5c2371158e91e11a3d3136d40b3",
+      "width": 556,
+      "height": 652
+    },
+    {
+      "mops_source_task": 72,
+      "label": "题图与选项",
+      "path": "图片/修复-20261015/西藏2016-MOPS72-题图与选项.jpeg",
+      "source_page": 15,
+      "source_xref": 71,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "1e23709878c1b3990896488259b6d121df09f48fc64ac7247d8caa914842afd1",
+      "width": 700,
+      "height": 319
+    },
+    {
+      "mops_source_task": 73,
+      "label": "六图分类",
+      "path": "图片/修复-20261015/西藏2016-MOPS73-六图分类.jpeg",
+      "source_page": 16,
+      "source_xref": 75,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "f1fa045721e88344e3ea874aaf68de7b4fa231b573ecf850589ec9267b5a35f2",
+      "width": 590,
+      "height": 509
+    },
+    {
+      "mops_source_task": 75,
+      "label": "题图与选项",
+      "path": "图片/修复-20261015/西藏2016-MOPS75-题图与选项.jpeg",
+      "source_page": 16,
+      "source_xref": 76,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "de4edca17b3726e321db1b1d0d5cc034b4205a82ea98aa481b45285cb6f727be",
+      "width": 700,
+      "height": 426
+    },
+    {
+      "mops_source_task": 111,
+      "label": "运输资料原表",
+      "path": "图片/修复-20261015/西藏2016-MOPS111-运输资料原表.jpeg",
+      "source_page": 24,
+      "source_xref": 94,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "41b00dd358dc2e10b0bc685971311326fbf3febfa580e5b94982245316f929c9",
+      "width": 654,
+      "height": 388
+    },
+    {
+      "mops_source_task": 121,
+      "label": "租赁贸易资料原图",
+      "path": "图片/修复-20261015/西藏2016-MOPS121-租赁贸易资料原图.jpeg",
+      "source_page": 26,
+      "source_xref": 143,
+      "method": "unchanged original embedded image bytes",
+      "sha256": "645049003c45c258c37d31f0df5e091cf24f17ebc430951c77bf440cad0bd6da",
+      "width": 678,
+      "height": 398
+    },
+    {
+      "mops_source_task": 106,
+      "label": "国企资料原文",
+      "path": "图片/修复-20261015/西藏2016-MOPS106-国企资料原文.png",
+      "source_page": 25,
+      "clip_pdf_points": [
+        35.0,
+        60.0,
+        558.0,
+        433.0
+      ],
+      "render_scale": 2,
+      "method": "direct original page-region render; no source text or numeric data changed",
+      "sha256": "463b2f11dcfff6b78ca09eca247126fa36febc2aeaaa05687644a3c95bb4d338",
+      "width": 1046,
+      "height": 746
+    }
+  ]
+}
