@@ -1,5 +1,7 @@
 # 全国公务员考试真题库
 
+> 2026-10-16 缺卷补录：新增天津2017滨海专项、广州2017双考区两份行测整理题本，共220题及参考作答，已注明来源与校勘。50套目标仍缺48套（行测27、申论21），未将片段或疑似错年扫描计作补齐。见[逐套结果与来源](reports/MISSING50-RECOVERY-20261016.md)。
+
 <!-- CURRENT-STATUS -->
 > 当前数据以 [总进度](PROGRESS.md)、[逐卷清单](catalog/manifest.jsonl) 和 [质量事项](reports/QUALITY-AUDIT.md) 为准。下方历史阶段叙述不作为现行完整率。
 <!-- /CURRENT-STATUS -->

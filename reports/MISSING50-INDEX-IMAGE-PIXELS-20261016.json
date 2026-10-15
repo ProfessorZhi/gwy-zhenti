@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "publication_boundary": "Stage-zero exam Markdown and referenced image blobs",
+  "staged_exam_markdown": 1165,
+  "indexed_images": 96122,
+  "unique_images": 96122,
+  "unreferenced_index_images": 0,
+  "decoded_frames": 35062,
+  "validated_image_path_frames": 96122,
+  "unique_git_image_blobs": 35062,
+  "deduplication_basis": "Every path is bound to an unchanged stage-zero Git object id; each distinct blob is hash-verified and fully decoded",
+  "failed_images": 0,
+  "image_index_fingerprint_sha256": "fd6ee8e0a1ab2acff4f92faee37cfd216a4bb0f46bc6fdb0cd7edab3ecbec075",
+  "paper_index_fingerprint_sha256": "301dc0a18f7fc31f0a565addff204383f2cd98b487dbac873f421ba239311ad5",
+  "referenced_image_fingerprint_sha256": "fd6ee8e0a1ab2acff4f92faee37cfd216a4bb0f46bc6fdb0cd7edab3ecbec075",
+  "index_stable_at_final_snapshot": true,
+  "errors": []
+}

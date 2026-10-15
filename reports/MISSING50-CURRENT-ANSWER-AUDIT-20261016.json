@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "essay_papers": 710,
+  "parsed_papers": 710,
+  "classifications": {
+    "小题参考作答/已收录": 2039,
+    "作文范文/已收录": 409
+  },
+  "unparsed": [],
+  "incomplete_recognized_tasks": [],
+  "new_or_revised_answer_bodies_checked": 813,
+  "checked_body_authorship": {
+    "AI辅助修订": 343,
+    "同题来源参考": 123,
+    "AI辅助原创": 347
+  },
+  "answer_body_errors": [],
+  "precise_body_counts": {
+    "papers": 710,
+    "tasks": 2448,
+    "versions": 2463,
+    "composition_limit_missing": 1
+  },
+  "precise_body_candidate_tasks": 1,
+  "precise_body_errors": [],
+  "boundary": "Actual body lengths exclude source URLs, authorship labels and teacher commentary. A compliant alternative body can satisfy the task while historical versions remain reviewable. Ambiguous original word limits remain explicit review candidates. Missing entire papers, source factual truth, actual exam scores, and unavailable original conditions are separate inventory findings."
+}

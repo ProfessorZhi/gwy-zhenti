@@ -7340,8 +7340,8 @@
   "receipt_shards": [
     {
       "path": "reports/full-repair-20261015/receipts-001.jsonl",
-      "sha256": "642cc5454d9c324da4e8776ca2b90490a06c6ad97ad9d80c7041a1cc3c896314",
-      "bytes": 16764701
+      "sha256": "784b220b0c8775eacebb9293cea13a9e9aab3fb42cb8310f06cd44d9d54f593c",
+      "bytes": 16771395
     },
     {
       "path": "reports/full-repair-20261015/receipts-002.jsonl",
@@ -7350,8 +7350,8 @@
     },
     {
       "path": "reports/full-repair-20261015/receipts-003.jsonl",
-      "sha256": "0183aa6bdc7e8c85f3418480ccd4865ec242723e402924c560f9a74ec3dfe439",
-      "bytes": 4400387
+      "sha256": "79db4b6f88dba07781ad3f05811a0d145aa40d3b796a22427ee09522ef0ff2fa",
+      "bytes": 4400802
     }
   ],
   "created_papers": [
@@ -7359,7 +7359,9 @@
     "省考/上海/2019/申论-B类.md",
     "省考/上海/2020/申论-B类.md",
     "省考/上海/2021/申论-B类.md",
-    "省考/上海/2022/申论-B类.md"
+    "省考/上海/2022/申论-B类.md",
+    "省考/天津/2017/行测-滨海新区等单位专项.md",
+    "省考/广东/2017/行测-广州市考-双考区.md"
   ],
   "baseline_paper_files": 1191,
   "boundary": "The fixed baseline is exported directly from the exact original PR19 Git commit; each original file hash is checked on reconstruction."

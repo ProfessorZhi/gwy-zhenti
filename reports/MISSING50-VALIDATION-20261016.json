@@ -1,0 +1,67 @@
+{
+  "audit_date": "2026-10-16",
+  "status": "passed_with_explicit_source_limitations",
+  "objective_complete": false,
+  "scope_target_count": 50,
+  "new_reference_versions": 2,
+  "remaining_complete_free_originals_not_acquired": 48,
+  "new_questions": 220,
+  "new_reference_answer_blocks": 220,
+  "new_source_image_paths": 201,
+  "current_tool_tests": 48,
+  "historical_original_tests": {
+    "total": 466,
+    "groups": [
+      369,
+      97
+    ],
+    "unchanged_original_git_baseline": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab"
+  },
+  "exact_outer_receipts": {
+    "status": "passed",
+    "receipts": 1209,
+    "changed_papers": 1197,
+    "base_commit": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab"
+  },
+  "native_check": {
+    "papers": 1165,
+    "images": 96122,
+    "image_refs": 118807,
+    "truncated_files": 0,
+    "truncated_questions": 0,
+    "restored_files_this_run": 0,
+    "restored_material_instances_this_run": 0,
+    "appended_characters_this_run": 0,
+    "machine_flagged_files": 374,
+    "hard_errors": 0,
+    "forbidden_files": 0
+  },
+  "essay_current_audit": {
+    "papers": 710,
+    "recognized_positions": 2448,
+    "empty_recognized_positions": 0,
+    "body_errors": 0,
+    "unverified_original_word_limit_positions": 1
+  },
+  "git_index_pixels": {
+    "status": "passed",
+    "publication_boundary": "Stage-zero exam Markdown and referenced image blobs",
+    "staged_exam_markdown": 1165,
+    "indexed_images": 96122,
+    "unique_images": 96122,
+    "unreferenced_index_images": 0,
+    "decoded_frames": 35062,
+    "validated_image_path_frames": 96122,
+    "unique_git_image_blobs": 35062,
+    "deduplication_basis": "Every path is bound to an unchanged stage-zero Git object id; each distinct blob is hash-verified and fully decoded",
+    "failed_images": 0,
+    "image_index_fingerprint_sha256": "fd6ee8e0a1ab2acff4f92faee37cfd216a4bb0f46bc6fdb0cd7edab3ecbec075",
+    "paper_index_fingerprint_sha256": "301dc0a18f7fc31f0a565addff204383f2cd98b487dbac873f421ba239311ad5",
+    "referenced_image_fingerprint_sha256": "fd6ee8e0a1ab2acff4f92faee37cfd216a4bb0f46bc6fdb0cd7edab3ecbec075",
+    "index_stable_at_final_snapshot": true,
+    "errors": []
+  },
+  "root_and_independent_peer_review": "Original questions/options/materials preserved, explicit reference-source calibration only; current full image index verified after inherited mixed-file metadata correction.",
+  "source_limitations": "374 machine-flagged files remain; five declared source-analysis/option-condition questions plus source material-year and original-order limitations are not suppressed. Tests and readable reference bodies are not certificates of official originals or uniquely correct answers.",
+  "cloud_validation": "Local validation only. The actual GitHub Actions state is reported in PR20; this file does not claim cloud CI ran."
+}

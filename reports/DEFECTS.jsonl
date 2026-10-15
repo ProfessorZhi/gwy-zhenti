@@ -85,6 +85,7 @@
 {"area": "四川", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/四川/2025/行测-统考.md", "subject": "行测", "year": "2025"}
 {"area": "四川", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/四川/2026/行测-统考.md", "subject": "行测", "year": "2026"}
 {"area": "天津", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/天津/2016/行测-统考.md", "subject": "行测", "year": "2016"}
+{"area": "天津", "current_truncated_questions": null, "issues": ["原题或来源解析条件存在争议：60、100"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "滨海新区等单位专项", "path": "省考/天津/2017/行测-滨海新区等单位专项.md", "subject": "行测", "year": "2017"}
 {"area": "天津", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/天津/2017/行测-统考.md", "subject": "行测", "year": "2017"}
 {"area": "天津", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/天津/2018/行测-统考.md", "subject": "行测", "year": "2018"}
 {"area": "天津", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/天津/2019/行测-统考.md", "subject": "行测", "year": "2019"}
@@ -142,6 +143,7 @@
 {"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/广东/2016/行测-广州市考.md", "subject": "行测", "year": "2016"}
 {"area": "广东", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "县级、乡镇统一卷", "path": "省考/广东/2017/行测-县级、乡镇统一卷.md", "subject": "行测", "year": "2017"}
 {"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "单考区卷", "path": "省考/广东/2017/行测-广州市考-单考区.md", "subject": "行测", "year": "2017"}
+{"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对", "原题或来源解析条件存在争议：97"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "双考区卷", "path": "省考/广东/2017/行测-广州市考-双考区.md", "subject": "行测", "year": "2017"}
 {"area": "广东", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "县级、乡镇统一卷", "path": "省考/广东/2018/行测-县级、乡镇统一卷.md", "subject": "行测", "year": "2018"}
 {"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月24日", "path": "省考/广东/2018/行测-广州市考-3月24日.md", "subject": "行测", "year": "2018"}
 {"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月25日", "path": "省考/广东/2018/行测-广州市考-3月25日.md", "subject": "行测", "year": "2018"}

@@ -1,0 +1,1251 @@
+{
+  "audit_date": "2026-10-16",
+  "objective_complete": false,
+  "purchase_policy": "仅使用免费公开资料，未购买课程或积分、未充值、未改变API计划",
+  "baseline_commit": "c08ec55319590b12c44658065d3ee663c152bcf6",
+  "baseline_target_count": 50,
+  "recovered_reference_versions": 2,
+  "remaining_unacquired_complete_papers": 48,
+  "remaining_by_subject": {
+    "行测": 27,
+    "申论": 21
+  },
+  "added_question_blocks": 220,
+  "added_reference_answer_blocks": 220,
+  "added_source_image_paths": 201,
+  "current_priority_scope": {
+    "行测": {
+      "expected": 197,
+      "represented_including_fragments": 170,
+      "missing_independent_files": 27
+    },
+    "申论": {
+      "expected": 229,
+      "represented_including_fragments": 208,
+      "missing_independent_files": 21
+    }
+  },
+  "current_native_summary": {
+    "paper_files": 1165,
+    "subjects": {
+      "申论": 710,
+      "行测": 455
+    },
+    "unique_referenced_images": 96122,
+    "image_references": 118807,
+    "missing_image_references": 0,
+    "declared_source_analysis_disagreement_questions": 5,
+    "papers": 1165,
+    "images": 96122,
+    "image_refs": 118807,
+    "truncated_files": 0,
+    "truncated_questions": 0,
+    "restored_files_this_run": 0,
+    "restored_material_instances_this_run": 0,
+    "appended_characters_this_run": 0,
+    "machine_flagged_files": 374,
+    "hard_errors": 0,
+    "forbidden_files": 0
+  },
+  "targets": [
+    {
+      "area": "浙江",
+      "year": 2016,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2017,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2018,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2019,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2020,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2021,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2023,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://max.book118.com/html/2023/1216/5102303141011024.shtm"
+      ],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json",
+        "access_result": "TinyFish正常只读浏览被SafeLine WAF阻断，未取文内年份、题量、完整正文，未绕过限制。"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2025,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "多轮Serper/SerpApi谷歌及百度、TinyFish检索未取得可核完整免费题本；目录/练习/未知年份预览不计补齐。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "浙江2022公开题本目录多只含行测A/C；申论真实主题可核，完整材料仍未取得，不以模拟密卷或错年文档替代。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "江苏",
+      "year": 2023,
+      "subject": "行测",
+      "variant": "C",
+      "owner": "a",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.xingguanggongkao.com/XingQuestion/paperList/subject_id/2/area_id/331/year/2023.html",
+        "https://www.fenbi.com/fpr/doc-user-v2/dir/23059",
+        "https://www.aipta.com/zt/sk/js/",
+        "https://max.book118.com/html/2024/0303/8053006136006041.shtm",
+        "https://wenku.baidu.com/view/50e0593130687e21af45b307e87101f69f31fb77.html"
+      ],
+      "candidate_detail": {
+        "status": "not_completed",
+        "unresolved_conditions": [
+          "需要真实2023C完整130题及选项、图表、可核答案；不得用2013伪年文件补。"
+        ],
+        "partial_evidence": [
+          "确认C为独立查找目标，未因公开库只收A/B而假设共卷。",
+          "本地用户历年原稿及只读上游DB只有2023A/B，无完整C。"
+        ],
+        "exclusions": [
+          {
+            "url": "https://wenku.baidu.com/view/50e0593130687e21af45b307e87101f69f31fb77.html",
+            "reason": "题干“一是要逐步建设完整的居民收入和住房信息统计系统”实际为本地2013年江苏行测C/A旧题，排除标题2023伪年。"
+          }
+        ]
+      }
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "A",
+      "owner": "a",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.xingguanggongkao.com/XingQuestion/paperList/subject_id/2/area_id/331/year/2026.html",
+        "https://www.aipta.com/zt/sk/js/",
+        "https://www.bilibili.com/video/BV1CcmcBtErg/"
+      ],
+      "candidate_detail": {
+        "status": "not_completed",
+        "unresolved_conditions": [
+          "需要对应卷完整原题与选项、原图表和可核答案；不以单模块或营销标题计完整。"
+        ],
+        "partial_evidence": [
+          "仅取得目录/模块复盘/文档搜索线索，没有完整题本。"
+        ],
+        "exclusions": [
+          {
+            "reason": "百度/豆丁/Book118多条所谓真题为10道单选、填空或自制练习，未通过真卷形式核验；具体URL与摘要保存在该卷搜索JSON。"
+          }
+        ]
+      }
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "a",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.xingguanggongkao.com/XingQuestion/paperList/subject_id/2/area_id/331/year/2026.html",
+        "https://www.aipta.com/zt/sk/js/",
+        "https://www.bilibili.com/video/BV1CcmcBtErg/"
+      ],
+      "candidate_detail": {
+        "status": "not_completed",
+        "unresolved_conditions": [
+          "需要对应卷完整原题与选项、原图表和可核答案；不以单模块或营销标题计完整。"
+        ],
+        "partial_evidence": [
+          "仅取得目录/模块复盘/文档搜索线索，没有完整题本。"
+        ],
+        "exclusions": [
+          {
+            "reason": "百度/豆丁/Book118多条所谓真题为10道单选、填空或自制练习，未通过真卷形式核验；具体URL与摘要保存在该卷搜索JSON。"
+          }
+        ]
+      }
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "C",
+      "owner": "a",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.xingguanggongkao.com/XingQuestion/paperList/subject_id/2/area_id/331/year/2026.html",
+        "https://www.aipta.com/zt/sk/js/",
+        "https://www.bilibili.com/video/BV1CcmcBtErg/"
+      ],
+      "candidate_detail": {
+        "status": "not_completed",
+        "unresolved_conditions": [
+          "需要对应卷完整原题与选项、原图表和可核答案；不以单模块或营销标题计完整。"
+        ],
+        "partial_evidence": [
+          "仅取得目录/模块复盘/文档搜索线索，没有完整题本。"
+        ],
+        "exclusions": [
+          {
+            "reason": "百度/豆丁/Book118多条所谓真题为10道单选、填空或自制练习，未通过真卷形式核验；具体URL与摘要保存在该卷搜索JSON。"
+          }
+        ]
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2017,
+      "subject": "行测",
+      "variant": "A",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.offcn.com/shgwy/2016/1218/9447_5.html",
+        "http://www.mnw.cn/edu/gwy/tk/1504573-8.html",
+        "http://download.chinagwyw.org/2017%E4%B8%8A%E6%B5%B7%E5%85%AC%E5%8A%A1%E5%91%98%E8%A1%8C%E6%B5%8B%E7%9C%9F%E9%A2%98.pdf"
+      ],
+      "candidate_detail": {
+        "reason": "当年A类发布页可定位，但现闽南网正文原图已缺；chinagwyw下载件仅9页精选答案解析，首题22，不能作完整A卷。",
+        "status": "partial_or_unavailable"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2017,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://wenku.baidu.com/view/8fdad62424284b73f242336c1eb91a37f011321c.html",
+        "http://www.houzhiwang.com/html/202012/74198.html"
+      ],
+      "candidate_detail": {
+        "reason": "大部分库只给AB合卷；无法凭合卷136题恢复每套原序及全体题目。找到B题本标题/首题预览，未取得可信完整正文。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "行测",
+      "variant": "A",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.fenbi.com/fpr/doc-user-v2/dir/26761",
+        "https://www.scribd.com/document/973134407/2020-2024年上海市考判断考情分析兼备考指导"
+      ],
+      "candidate_detail": {
+        "reason": "粉笔公开目录仅22B，机构考情材料说明22A题目未收集完整；未得A全套。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "行测",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.scribd.com/document/982997985/2022年上海市行政执法类考试行测真题-无答案",
+        "https://www.eol.cn/gongwuyuan/xingcest/201106/t20110622_638735_8.shtml"
+      ],
+      "candidate_detail": {
+        "reason": "取得标称2022的33页100题上传扫描全体原图并解码留SHA，但内部题量标识不一致、含2009工商年检题及2019联考改选项题。身份未证，隔离保存，不计确证补卷或可练完成。",
+        "status": "labelled_2022_identity_unverified"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.fenbi.com/fpr/doc-user-v2/dir/26761",
+        "https://www.scribd.com/document/973134407/2020-2024年上海市考判断考情分析兼备考指导"
+      ],
+      "candidate_detail": {
+        "reason": "粉笔公开资料包仅23A；机构考情材料说明23B未收集完整。未得B全套。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "A",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "公开检索大量模拟/改年卷，部分把国考加上海前缀；本地母库明确缺24。没有核准完整A原卷。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.scribd.com/document/970975849/2024年上海公务员考试行测-B卷"
+      ],
+      "candidate_detail": {
+        "reason": "Scribd公开上传件标24页130题，但110至112明写缺失，116至130共用材料暂缺，且部分页有预览限制，不能计完整。",
+        "status": "incomplete_source"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://wenku.baidu.com/view/9bc5ae6888d63186bceb19e8b8f67c1cfad6eeff.html"
+      ],
+      "candidate_detail": {
+        "reason": "检索命中多为10题模拟、国家公务员执法卷加上海前缀及司法持证考试，均排除；未获专项全卷。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "subject": "行测",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "免费公开搜索仅教材课程/模拟练习/国考，不购买课程或积分，尚无可信全年专项真题。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "北京",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "统一卷",
+      "owner": "a",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.xingguanggongkao.com/XingQuestion/paperList/subject_id/2/area_id/322/year/2024.html",
+        "https://www.jbcgk.com/wp/course/detail?no=c309&brand=jbcgk&province=beijing",
+        "https://bbs.qzzn.com/thread-17299603-1-1.html",
+        "https://m.gwy.com/bjgwy/275811.html"
+      ],
+      "candidate_detail": {
+        "status": "not_completed",
+        "unresolved_conditions": [
+          "免费可读/可下载的真实2024京考完整题本、图片及可核答案；不购买或充值。"
+        ],
+        "partial_evidence": [
+          "确认存在金标尺517KB具体附件入口，但无免费可读首题/页码或公开下载，未付费。",
+          "本地用户原题目录到2023，上游只读DB也无2024完整卷。"
+        ],
+        "exclusions": [
+          {
+            "reason": "文档聚合站若把2024年春节/春运事件写入题目，晚于该届实际2023-12-03笔试，不能作真卷；仅有标题不入库。"
+          }
+        ]
+      }
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "统一卷",
+      "owner": "a",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.xingguanggongkao.com/XingQuestion/paperList/subject_id/2/area_id/322/year/2026.html",
+        "https://www.huatu.com/bjgwy/shiti/xc/",
+        "https://www.aipta.com/zt/sk/bj/",
+        "https://m.book118.com/html/2026/0805/7044146052011140.shtm"
+      ],
+      "candidate_detail": {
+        "status": "not_completed",
+        "unresolved_conditions": [
+          "完整真实2026北京统一行测原题、原图表、选项及可核答案。"
+        ],
+        "partial_evidence": [
+          "仅有合集/文库营销标题和搜索摘要，未取得完整正文。",
+          "本地课程文件名2026多为考前模拟卷，不当真题。"
+        ],
+        "exclusions": [
+          {
+            "url": "https://m.book118.com/html/2026/0805/7044146052011140.shtm",
+            "reason": "所谓行测+申论试卷实为10道自制单选，真卷形式不符。"
+          }
+        ]
+      }
+    },
+    {
+      "area": "天津",
+      "year": 2017,
+      "subject": "行测",
+      "variant": "滨海等单位专项（12月23日）",
+      "owner": "c",
+      "status": "reference_version_added_with_explicit_source_limits",
+      "counted_as_recovered": true,
+      "source_urls": [],
+      "candidate_detail": {
+        "status": "complete_reference_version_written_with_explicit_source_limits"
+      },
+      "path": "省考/天津/2017/行测-滨海新区等单位专项.md",
+      "current_sha256": "da4fb5f5ca488380c3c0052842826c59fb3108ea8b8e31a1277fb71e5fe6eecf",
+      "questions": 120,
+      "reference_answers": 120,
+      "source_image_paths": 180,
+      "official_original_certified": false,
+      "reference_answers_uniquely_correct_certified": false
+    },
+    {
+      "area": "广州",
+      "year": 2017,
+      "subject": "行测",
+      "variant": "双考区",
+      "owner": "c",
+      "status": "reference_version_added_with_explicit_source_limits",
+      "counted_as_recovered": true,
+      "source_urls": [
+        "https://m.zgsqks.com/2021/zx_0208/48056.html"
+      ],
+      "candidate_detail": {
+        "status": "complete_reference_version_written_with_explicit_source_limits"
+      },
+      "path": "省考/广东/2017/行测-广州市考-双考区.md",
+      "current_sha256": "632f43f36365637265e9170d71d2df83cf58522cb5dc933610379a5e59d16ab1",
+      "questions": 100,
+      "reference_answers": 100,
+      "source_image_paths": 21,
+      "official_original_certified": false,
+      "reference_answers_uniquely_correct_certified": false
+    },
+    {
+      "area": "上海",
+      "year": 2016,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "http://www.shgkw.org/2017/0804/12464.html"
+      ],
+      "candidate_detail": {
+        "reason": "真实三题及限制可以核对，但来源无给定资料全文；不能以题面和答案代替全卷材料。",
+        "status": "questions_and_answers_only"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2021,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://i.offcn.com/c/1822756"
+      ],
+      "candidate_detail": {
+        "reason": "中公课程目录出现2021行政执法申论试题PDF，但页面已下架/需登录且非免费正文，未下载未购买。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "免费搜索多为国考行政执法卷、模拟题或大纲；尚无上海专项完整材料。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "A",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://news.sohu.com/a/507315854_136268",
+        "https://www.bkw.cn/gwyks/zixun/1134284.html",
+        "https://www.docin.com/p-3292212141.html",
+        "https://max.book118.com/html/2024/0212/6005053054010045.shtm"
+      ],
+      "candidate_detail": {
+        "reason": "当年中公确证主题政府与市场、资本无序扩张。帮考标22全文实为20A一网通办，豆丁标22片段实为17A政府购买公共服务，均排除；118预览被WAF拒绝，未取得真卷全材料。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "subject": "申论",
+      "variant": "B",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://baijiahao.baidu.com/s?id=1753081291115870191&wfr=spider&for=pc",
+        "https://www.51test.net/show/10760512.html",
+        "https://www.scribd.com/document/948121871/2023上海B"
+      ],
+      "candidate_detail": {
+        "reason": "当年作文科创中心1000至1200字可核，但无全13则材料。51test真题Word当前403，微信公众号环境验证，其他文库多旧题改年；标题2023上海B的Scribd实内文2022B长三角，排除。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://i.offcn.com/c/1822756"
+      ],
+      "candidate_detail": {
+        "reason": "中公目录有2024上海行政执法回忆版申论PDF，但未提供免费可读取全材料；未购买。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [],
+      "candidate_detail": {
+        "reason": "公开命中题库/练习题或国考，未取得上海专项完整给定材料。",
+        "status": "not_obtained"
+      }
+    },
+    {
+      "area": "天津",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "行政执法",
+      "owner": "c",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.docin.com/p-3948820790.html"
+      ],
+      "candidate_detail": {
+        "finding": "0327题名与当年延期场次有冲突；免费正文抽取只见标题/价格，TinyFish live浏览原页超时，不能确认材料身份或完整性。",
+        "status": "complete_original_not_acquired"
+      }
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "subject": "申论",
+      "variant": "综合街镇",
+      "owner": "c",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5055204429718029078"
+      ],
+      "candidate_detail": {
+        "finding": "同期回忆已找到4题主题：多村联建、医养结合、转型发展、有价无价；完整给定材料及原题要求未齐，不用他省相似材料拼卷。",
+        "status": "question_outline_only"
+      }
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "subject": "申论",
+      "variant": "行政执法",
+      "owner": "c",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://mbd.baidu.com/newspage/data/dtlandingsuper?nid=dt_5055204429718029078",
+        "https://m.bilibili.com/video/BV1DYznYEE6z",
+        "https://www.cctalk.com/v/17333808894364"
+      ],
+      "candidate_detail": {
+        "finding": "4题回忆及教师真实讲题可核主题；完整题面/要求未齐。陕西2024C首4材料与部分主题对应，仅作比对线索，不据此生成天津整卷。",
+        "status": "question_outline_only"
+      }
+    },
+    {
+      "area": "天津",
+      "year": 2025,
+      "subject": "申论",
+      "variant": "行政执法",
+      "owner": "c",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://m.book118.com/html/2026/0511/6234043034012133.shtm",
+        "https://wenku.baidu.com/view/d321c2694f73f242336c1eb91a37f111f1850dcf.html"
+      ],
+      "candidate_detail": {
+        "finding": "前者免费读取受限，后者正文自称练习题；已排除练习题和国考改挂天津标题，不计真卷。",
+        "status": "complete_original_not_acquired"
+      }
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "综合市区",
+      "owner": "c",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.eoffcn.com/kszx/detail/1918994.html"
+      ],
+      "candidate_detail": {
+        "finding": "已核科创旅游、公物仓、地铁X号线和激活城市存量主题。用户相丽君课件含同年天津真实题干及部分限字，但没有完整对应材料；机构概要字数与课件有差异，不根据概要假造全文。",
+        "status": "same_paper_question_excerpts_only"
+      }
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "综合街镇",
+      "owner": "c",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.offcn.com/tjgwy/2025/1208/30596.html"
+      ],
+      "candidate_detail": {
+        "finding": "中公考后分析和用户题型通关册核有绿禾志愿服务、公物仓、红骑侠推荐等同题，仍缺完整给定材料和完整要求，不把单题例题算整卷。",
+        "status": "same_paper_question_excerpts_only"
+      }
+    },
+    {
+      "area": "福建",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "省市综合管理",
+      "owner": "c",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://wenku.baidu.com/view/cf221762aeea998fcc22bcd126fff705cd175c6f.html",
+        "https://m.book118.com/html/2026/0802/5122340242013301.shtm",
+        "https://www.renrendoc.com/paper/538450259.html"
+      ],
+      "candidate_detail": {
+        "finding": "搜索命中名为省市申论但有单项选择、简答等伪题型，明确排除；原版材料未取得。",
+        "status": "complete_original_not_acquired"
+      }
+    },
+    {
+      "area": "深圳",
+      "year": 2024,
+      "subject": "申论",
+      "variant": "Ⅰ",
+      "owner": "c",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://shenzhen.huatu.com/2024/1206/9447925.html",
+        "https://shenzhen.huatu.com/2023/1208/6205195.html"
+      ],
+      "candidate_detail": {
+        "finding": "免费公开页为备考目录/考前历年资料导流，并非当年完整Ⅰ题本；未购买课程/积分或登录索取，不把已有Ⅱ复制成Ⅰ。",
+        "status": "complete_original_not_acquired"
+      }
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "A",
+      "owner": "a",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.bilibili.com/opus/1239950190709833785",
+        "http://eoffcn.com/kszx/detail/1918049.html",
+        "https://www.xingguanggongkao.com/ShenQuestion/paperList/subject_id/3/area_id/291/year/2026.html",
+        "https://www.132gk.com/web/exercise/shenlun/exam",
+        "https://www.xingguanggongkao.com/MianQuestion/paperList/subject_id/4/cate_id/165/year/0.html",
+        "https://m.book118.com/html/2026/0811/5322124334013303.shtm"
+      ],
+      "candidate_detail": {
+        "status": "not_completed",
+        "unresolved_conditions": [
+          "完整真实材料1–8及A四题无截断原要求；核准Q1字数异文后才能配完整示范答案。"
+        ],
+        "partial_evidence": [
+          "题材：品牌国际化、政府标准化职能、标准化讲座总结、中国式现代化与高质量发展作文。",
+          "本地相丽君讲义再次印证同题及要求，但Q1/Q4文字截断；讲义Q1不超250字与教师回忆不超300字有异文，未擅定。",
+          "需要材料1–8；现有来源是答案分析/题干摘录，没有连续完整原材料。"
+        ],
+        "exclusions": [
+          {
+            "url": "https://www.xingguanggongkao.com/MianQuestion/paperList/subject_id/4/cate_id/165/year/0.html",
+            "reason": "面试目录，不能当江苏申论ABC原卷"
+          },
+          {
+            "url": "https://m.book118.com/html/2026/0811/5322124334013303.shtm",
+            "reason": "候选文档抓取返回468，未取得全文，真实性和完整性未认证。"
+          }
+        ]
+      }
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "C",
+      "owner": "a",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.bilibili.com/read/cv52810539/",
+        "https://mp.weixin.qq.com/s?__biz=MzAwNjgxNTA4NA==&mid=2652616360&idx=1&sn=eebf4e4c906eddf370c97a620be3365c",
+        "https://www.xingguanggongkao.com/ShenQuestion/paperList/subject_id/3/area_id/291/year/2026.html"
+      ],
+      "candidate_detail": {
+        "status": "not_completed",
+        "unresolved_conditions": [
+          "取得完整真实材料1–6，核准Q1材料范围等异文；依真材料编写/核对全套答案。"
+        ],
+        "partial_evidence": [
+          "四题主题：生活品质做法成效、正气人气财气灵气、农用无人机农药源头治理、仙峰村二十届四中全会宣讲。",
+          "本地相丽君讲义保留四题要求。Q1依据资料1–4，网络教师回忆为1–3，有异文，未当确定原题。",
+          "没有完整材料1–6，不能从示范答案反造材料。"
+        ],
+        "exclusions": []
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "A",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.eoffcn.com/kszx/detail/1029502.html",
+        "https://www.aipta.com/zt/sk/zj/"
+      ],
+      "candidate_detail": {
+        "reason": "浙江2022公开题本目录多只含行测A/C；申论真实主题可核，完整材料仍未取得，不以模拟密卷或错年文档替代。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "B",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.eoffcn.com/kszx/detail/1029502.html",
+        "https://www.aipta.com/zt/sk/zj/"
+      ],
+      "candidate_detail": {
+        "reason": "浙江2022公开题本目录多只含行测A/C；申论真实主题可核，完整材料仍未取得，不以模拟密卷或错年文档替代。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "C",
+      "owner": "root-zhejiang",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.eoffcn.com/kszx/detail/1029502.html",
+        "https://www.aipta.com/zt/sk/zj/"
+      ],
+      "candidate_detail": {
+        "reason": "浙江2022公开题本目录多只含行测A/C；申论真实主题可核，完整材料仍未取得，不以模拟密卷或错年文档替代。",
+        "evidence_manifest": "MISSING50-ZHEJIANG-SEARCH-EVIDENCE-20261016.json"
+      }
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "统一卷",
+      "owner": "a",
+      "status": "complete_free_original_not_acquired",
+      "counted_as_recovered": false,
+      "source_urls": [
+        "https://www.huatu.com/bjgwy/shiti/xl/",
+        "https://www.aipta.com/zt/sk/bj/sl/",
+        "https://www.xingguanggongkao.com/ShenQuestion/paperList/subject_id/3/area_id/282/year/2026.html",
+        "https://www.docin.com/p-4983271287.html"
+      ],
+      "candidate_detail": {
+        "status": "not_completed",
+        "unresolved_conditions": [
+          "取得完整真实材料1–8与四题同版本交叉核对；再配基于材料的完整参考答案。"
+        ],
+        "partial_evidence": [
+          "本地相丽君补弱讲义可读完整四题要求摘录：全国统一大市场政务信息20分≤300；致广大而尽精微15分≤250；通学公交对策25分≤400；以通为用作文40分800–1000。",
+          "该章节只有题干，不含材料1–8；模考中的通学公交素材与同题关键词重合，不能直接冒充真题材料7。"
+        ],
+        "exclusions": [
+          {
+            "url": "https://www.docin.com/p-4983271287.html",
+            "reason": "标题2026北京申论，正文却为10道选择题，不是真实申论整卷。"
+          }
+        ]
+      }
+    }
+  ],
+  "source_limitations": [
+    "天津为来源题库及后发布机构转载整理号，实考原序未认证；同题整理3与华图58不同。",
+    "天津60源C方向解释过强，100按现有条件A/C均成立；均有AI校核且完整保留源解析。",
+    "天津资料1标题2015、原图部分数值与2007升息序列冲突，原图不改、按给定资料作答，不当历史经济数据认证。",
+    "广州97原C年龄段45–49与图40–49有差异，原文原图保留，参考A按图计算。"
+  ],
+  "quarantined_scan": {
+    "label": "标称2022上海行政执法行测上传扫描件",
+    "pages": 33,
+    "formal_corpus_added": false,
+    "counted_as_recovered": false,
+    "identity_status": "unverified",
+    "reason": "章节题量与题号有冲突，含2009旧材料及后来题文，复用本身不单独判假，但无独立可靠来源确认整卷2022身份。",
+    "public_url": "https://www.scribd.com/document/982997985/2022年上海市行政执法类考试行测真题-无答案",
+    "preserved_locally_not_published_as_exam": true
+  },
+  "provider_comparison": {
+    "same_google_query_cases": 4,
+    "cases": [
+      {
+        "query_case": "浙江2022行测B",
+        "serper_results": 10,
+        "serpapi_google_results": 10,
+        "shared_url_count": 8,
+        "serper_unique": [
+          {
+            "title": "高教公考真题库",
+            "url": "http://www.sanlianbook.com/",
+            "snippet": "[行测] · 2022年（2021-11-28）国家公务员考试行测真题（市地级综合管理类）及答案解析 · [行测] · 2022年（2021-11-28）国家公务员考试行测真题（省级）及答案解析 · [申论] ..."
+          },
+          {
+            "title": "事业单位行测申论_事业编面试真题_公基真题及解析下载",
+            "url": "https://m.gwy.com/sydw/zt/",
+            "snippet": "公务员考试网事业单位真题库专题,为考生提供全国事业单位考试真题及解析,包括事业单位行测真题及解析、事业单位申论真题,事业单位笔试面试真题及解析等。"
+          }
+        ],
+        "serpapi_unique": [
+          {
+            "title": "2022年（2021-11-28）国家公务员考试行测真题（省级）及 ...",
+            "url": "http://www.sanlianbook.com/index.php/shows/19/1374.html",
+            "snippet": "这项测验共有五个部分，135道题，总时限为120分钟。各部分不分别计时，但都给出了参考时限，供答题时参考以分配时间。 请将姓名与准考证号用黑色字迹的笔填写在指定 ..."
+          },
+          {
+            "title": "2027杭州公务员考试行测题库-试题",
+            "url": "http://hangzhou.offcn.com/html/zhejianggongwuyuan/kaoshitiku/xingce/",
+            "snippet": "【中公杭州公务员考试频道】提供2027杭州公务员考试行测题库，含杭州公务员考试行测试题、杭州公务员考试行测模拟题及答案解析，强化考生行测做题能力。"
+          }
+        ]
+      },
+      {
+        "query_case": "浙江2022申论A",
+        "serper_results": 10,
+        "serpapi_google_results": 10,
+        "shared_url_count": 3,
+        "serper_unique": [
+          {
+            "title": "2026浙江公务员考试真题及答案解析",
+            "url": "https://www.huatu.com/zjgwy/shiti/",
+            "snippet": "【华图浙江公务员考试试题】提供2026浙江公务员考试真题及答案解析，浙江公务员考试模拟考试题库下载等内容。了解更多关于公务员真题试题资料、真题及答案解析、模拟 ..."
+          },
+          {
+            "title": "2020年2月23日浙江省公务员考试申论真题（A）参考答案",
+            "url": "http://sanlianbook.com/index.php/shows/6/499.html",
+            "snippet": "要求：（1）紧密结合给定资料；（2）主旨明确，结构完整，思路清晰；（3）内容充实，论述深刻，语言流畅；（4）字数1000～1200字。 【曹长远老师解析2020年浙江省公务员 ..."
+          },
+          {
+            "title": "浙江省考申论真题-公务员试卷/答案/解析",
+            "url": "https://m.aipta.com/zt/sk/zj/sl/",
+            "snippet": "【爱真题】本栏目为大家整理浙江公务员考试《申论》历年真题试卷，仅供广大考生学习参考使用，请勿用作其他用途，感谢关注。"
+          },
+          {
+            "title": "（2025年浙江省考备考汇总）历年真题集+备考资料+招考情况 ...",
+            "url": "https://www.chinagwy.net/wap/zjsk/311794_2.jhtml",
+            "snippet": "2015年浙江省公务员录用考试试卷《申论》（B卷）.pdf. 2016年浙江省公务员 ... 2022 年浙江省公务员录用考试试卷A卷.pdf · [上一页][1] [2] [3] [下一页]. 复制本文 ..."
+          },
+          {
+            "title": "2022年浙江省选调生考试《申论》真题试卷及答案【含解析】",
+            "url": "https://www.kkgwy.com/e/extend/exam/paper.php?id=11775",
+            "snippet": "2022年浙江省选调生考试《申论》真题试卷及答案【含解析】 需5积分 共2 题 ; 顺序练习. 按试卷原题号顺序进行练习，适合初次刷题摸底。 题目：2 ; 随机练习. 打乱题目顺序 ..."
+          },
+          {
+            "title": "2019年浙江公务员考试申论真题及答案（A卷） - 夸克文档",
+            "url": "https://doc.quark.cn/preview/4807758468D35BFE96917DFAABE6E91C",
+            "snippet": "申论. 浙江. 2022年浙江公务员考试申论真题及答案（A类）. 2022年浙江公务员考试申论真题及答案（A类）. 公考. 申论. 浙江."
+          },
+          {
+            "title": "考试学习真题资料下载",
+            "url": "https://www.maiziliao.com/ks/index_57.html",
+            "snippet": "2023年浙江省公考《申论》真题（A类）及答案下载[1.3M]. 2026-09-04 · 2023年浙江 ... 2022年浙江省公务员录用考试《行测》题（C类）及参考答案下载[3M]. 2026-09-04 ..."
+          }
+        ],
+        "serpapi_unique": [
+          {
+            "title": "2027年浙江公务员考试公告",
+            "url": "https://ah.huatu.com/zt/zjgwy/ksgg/",
+            "snippet": "公安执法勤务类职位按行政职业能力测验、申论和公安专业科目合成后的笔试总成绩划定合格分数线。面向少数民族招考职位的合格分数线单独划定。 (六)确定体(技)能测评、面试 ..."
+          },
+          {
+            "title": "浙江省考行测真题",
+            "url": "https://www.aipta.com/zt/sk/zj/",
+            "snippet": "【爱真题】本栏目为大家整理浙江公务员考试历年真题试卷，仅供广大考生学习参考使用，请勿用作其他用途，感谢关注。"
+          },
+          {
+            "title": "历年国考真题分享- 【浙江公务员考试网】 - 展鸿教育",
+            "url": "http://www.chinagwy.net/zjxds/280966.jhtml",
+            "snippet": "2019年国家公务员录用考试试卷《申论》（副省级）.pdf. 2019年国家公务员录用考试 ... 2022年国家公务员录用考试试卷《申论》（行政执法类）.pdf. 2022年国家公务员 ..."
+          },
+          {
+            "title": "公务员考试申论真题及答案解析",
+            "url": "https://www.huatu.com/gwy/shiti/xl/",
+            "snippet": "【华图公务员考试申论真题】提供公务员考试申论真题及答案解析，历年公务员考试申论真题下载等内容。了解更多关于公务员申论真题试题题库、申论真题及答案解析、申论 ..."
+          },
+          {
+            "title": "2022浙江公务员考试申论大纲解读 - 杭州中公教育",
+            "url": "http://hangzhou.offcn.com/html/2021/11/74883.html",
+            "snippet": "2022浙江公务员考试申论大纲解读 · 一、掌握六大能力. 【大纲节选】. 《申论》主要测查应考人员的阅读理解能力、归纳概括能力、逻辑思维能力、综合分析能力 ..."
+          },
+          {
+            "title": "2022年浙江省公务员录用考试《行测》真题试卷及答案【含 ...",
+            "url": "https://www.kkgwy.com/e/extend/exam/paper.php?id=10191",
+            "snippet": "2022年浙江省公务员录用考试《行测》真题试卷及答案【含解析】（A类） 需5积分 共125 题 ; 顺序练习. 按试卷原题号顺序进行练习，适合初次刷题摸底。 题目：125 ; 随机练习."
+          },
+          {
+            "title": "2024 年浙江省公务员录用考试试卷《申论》（A 卷）",
+            "url": "https://static.32xueyuan.com/zq//u/cms/zj/202411/28111359a0hf.pdf",
+            "snippet": "本卷总分100 分，限时150 分钟，其中阅读给定资料的参考时限为40 分钟。 2.用黑色字迹的钢笔（签字笔）将自己的姓名、准考证号填写在试卷和答题卡相应位置上；用2B."
+          }
+        ]
+      },
+      {
+        "query_case": "浙江村干部D",
+        "serper_results": 10,
+        "serpapi_google_results": 10,
+        "shared_url_count": 7,
+        "serper_unique": [
+          {
+            "title": "2021年1月17日浙江省公务员考试行测真题及答案解析",
+            "url": "http://www.sanlianbook.com/index.php/shows/19/1368.html",
+            "snippet": "这项测验共有五个部分，130道题，总时限为120分钟。各部分不分别计时，但都给出了参考时限，供你参考以分配时间。 请在机读答题卡上严格按照要求填写 ..."
+          },
+          {
+            "title": "行测真题- 国家公务员考试网",
+            "url": "https://www.huatu.com/guojia/shiti/xczt/",
+            "snippet": "【华图国家公务员考试行测真题】提供国家公务员考试行测真题及答案解析，历年国考行测真题下载等内容。了解更多关于国家公务员行测真题试题资料、行测真题及答案解析、 ..."
+          },
+          {
+            "title": "浙江公务员真题品牌- 淘宝",
+            "url": "https://www.taobao.com/chanpin/db31a9f133dc30070cb5273b052488c41b1908978d85ac7faf9e5194bafc8505.html",
+            "snippet": "2026年浙江省公务员招聘2025年浙江公考历年公务员考试卷真题行测申论2025年真题 pdf电子档版备考2027. ¥. 10.88. 89人付款. 北京. 考试轻松过服务 ..."
+          }
+        ],
+        "serpapi_unique": [
+          {
+            "title": "2026浙江国家公务员考试真题及答案解析",
+            "url": "https://m.zj.huatu.com/list/guojia/shiti/",
+            "snippet": "【华图浙江国家公务员试题】提供浙江国家公务员考试真题及答案解析，浙江国考模拟试题题库下载等内容。了解更多关于浙江国家公务员真题试题资料、真题及答案解析、模拟 ..."
+          },
+          {
+            "title": "2022年（2021-11-28）国家公务员考试行测真题（省级）及 ...",
+            "url": "http://www.sanlianbook.com/index.php/shows/19/1374.html",
+            "snippet": "这项测验共有五个部分，135道题，总时限为120分钟。各部分不分别计时，但都给出了参考时限，供答题时参考以分配时间。 请将姓名与准考证号用黑色字迹的笔填写在指定 ..."
+          },
+          {
+            "title": "2026年浙江省公务员录用考试《行测》题（A类）（网友回忆版）",
+            "url": "https://www.scribd.com/document/1024824511/2026%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95-%E8%A1%8C%E6%B5%8B-%E9%A2%98-A%E7%B1%BB-%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88",
+            "snippet": "本文回忆了2026年浙江省公务员录用考试《行测》题的内容，涵盖了政治理论、常识判断等多个方面的考题。试卷涉及习近平新时代中国特色社会主义思想、经济发展、农业 ..."
+          }
+        ]
+      },
+      {
+        "query_case": "江苏2026申论A",
+        "serper_results": 10,
+        "serpapi_google_results": 10,
+        "shared_url_count": 5,
+        "serper_unique": [
+          {
+            "title": "2026江苏省公务员考试申论试题深度解读（B类）",
+            "url": "http://eoffcn.com/kszx/detail/1918048.html",
+            "snippet": "第一题为归纳概括题，概括不同地区部门执法融合发展的举措和成效。题干设置规范，需要考生在给定材料中找到相应做法和所带来的效果。此类基础性概括题中公教育在以往的讲授 ..."
+          },
+          {
+            "title": "江苏省考历年真题价格报价行情- 京东",
+            "url": "https://www.jd.com/jiage/136786fabb9790701e810.html",
+            "snippet": "10000条评价. 粉笔公考2026江苏省考真题【A类行测+申论真题】80分套装公务员考试真题2册. 100000条评价. 华图江苏省考历年真题试卷省考公务员考试教材2027 行测+申论 ..."
+          },
+          {
+            "title": "江苏省2026年考试录用公务员笔试成绩查询 - 江苏人社网办大厅",
+            "url": "https://rs.jshrss.jiangsu.gov.cn/index/cjcx/2026SJ2F8UgwySearchInfo.html",
+            "snippet": "合格标准： 根据各类职位的录用计划和考试成绩，省公务员局确定江苏省2026年度考试录用公务员笔试合格分数线为： A类考试公共科目总分110分且《行政职业能力测验》单 ..."
+          },
+          {
+            "title": "江苏省考申论真题/-哔哩哔哩_Bilibili",
+            "url": "https://search.bilibili.com/all?keyword=%E6%B1%9F%E8%8B%8F%E7%9C%81%E8%80%83%E7%94%B3%E8%AE%BA%E7%9C%9F%E9%A2%98/",
+            "snippet": "26年江苏省考A卷申论真题-概括题，“给定资料1~3”列举了一些中国品牌走向世界的成功案例，请用一段话归纳概括其中蕴含的“讲好中国品牌故事”的创新方式与相应成效."
+          },
+          {
+            "title": "江苏省2026年度考试录用公务员专业参考目录",
+            "url": "https://hrss.suzhou.gov.cn/szrskszl/sydwkszt/202603/37a9a6dcb1d642b79887114ae1336b3b.shtml",
+            "snippet": "江苏省2026年度考试录用公务员专业参考目录. 来源：苏州市人力资源和社会保障局 发布日期： 2026-03-18 13:28 访问量：. 【字体: 大中小】 分享到：."
+          }
+        ],
+        "serpapi_unique": [
+          {
+            "title": "2026江苏省公务员考试申论试题深度解读（A类）",
+            "url": "http://eoffcn.com/kszx/detail/1918049.html",
+            "snippet": "本次考试以“标准”与“品牌”为主线，贯穿四道题目，体现出以下命题逻辑：1.战略契合：党的二十大强调“高质量发展是全面建设社会主义现代化国家的首要任务”，而标准与品牌正是 ..."
+          },
+          {
+            "title": "行测+申论- 面试- 题库",
+            "url": "https://www.xingguanggongkao.com/MianQuestion/paperList/subject_id/4/cate_id/165/year/0.html",
+            "snippet": "星光公考提供2025国家公务员考试网、2025省公务员考试网、公务员考试报考公告/大纲/职位表、公务员考试笔试面试辅导资料、公考历年真题下载及视频讲解、公考申论批改、 ..."
+          },
+          {
+            "title": "2027江苏省考公务员考试江苏省考真题卷行测申论模拟卷刷 ...",
+            "url": "https://www.taobao.com/list/item/965127758120.htm",
+            "snippet": "2027江苏省考公务员考试江苏省考真题卷行测申论模拟卷刷题2026江苏省考历年真题A类B类C类江苏省公务员考试公安岗. ¥88.00. 价格可能因优惠活动发生变化."
+          },
+          {
+            "title": "2026江苏公务员申论真题及答案解析",
+            "url": "https://www.huatu.com/jsgwy/shiti/xl/",
+            "snippet": "【华图江苏公务员申论真题】提供2026江苏公务员申论真题及答案解析，历年江苏公务员申论真题下载等内容。了解更多关于公务员申论真题试题题库、申论真题及答案解析、 ..."
+          },
+          {
+            "title": "最新！26江苏省考行测（A卷）答案及解析，判断推理板块全面复盘！",
+            "url": "https://www.bilibili.com/video/BV1CcmcBtErg/",
+            "snippet": "App. 12月7日江苏省考最新真题解析!2026江苏省考真题解析A类-数资模块复盘估分【君麟教育】. 【最新】2026年江苏省考（A卷）行测，言语. 1.0万 3."
+          }
+        ]
+      }
+    ],
+    "one_same_query_observed_end_to_end_seconds": {
+      "case": "江苏2026申论A",
+      "serper": 3.79,
+      "serpapi_google": 9.58
+    },
+    "boundary": "Small task-specific sample, not a general benchmark. Presence in search is not paper completeness or authentic-year certification. SerpApi Baidu separately produced extra Chinese document/forum candidates, with mock or relabeled old papers rejected."
+  },
+  "source_evidence_fingerprints": {
+    "a\\results.json": {
+      "sha256": "9dc1348665d09fbd682ed01412506906a5f02e89fc2ebba5df2e21f019d12d09",
+      "bytes": 18183
+    },
+    "b\\RESULT-SHANGHAI-16.json": {
+      "sha256": "ac4da2ea03e890f9049a96ab75619cb404d64974456aba89765b7cc64b036668",
+      "bytes": 230296
+    },
+    "c\\results.json": {
+      "sha256": "3bc18ec7cc9c34c390a87786ae284bef7439748d9892861761d88e1298213c44",
+      "bytes": 8255
+    },
+    "zhejiang\\SERPER-ALL-15-TARGETS-20261015.json": {
+      "sha256": "9e44dcb0fb4cda8eb1068ef0c21431b1cf27e4abd5330ca8645ffd8274bfcfbe",
+      "bytes": 7460
+    },
+    "b\\REVIEW-NEW-TWO-APTITUDE.json": {
+      "sha256": "bc14d2e374fd4c47f88e60ffeb3eb7cb06a3df07e0ab5aedb80870115491d4ea",
+      "bytes": 16402
+    },
+    "b\\SOURCE-CALIBRATION-BOUNDS-READONLY.json": {
+      "sha256": "a9ef35752bb3599921d03faa3a2bd84651968c877282d30b30c2cd0913e9c065",
+      "bytes": 1406
+    }
+  },
+  "boundary": "Recovered means a complete sourced reference/recollection version with disclosed limitations, not an official original, independently solved 220-question certificate or zero-quality-issue claim. Remaining free original text was not acquired after the recorded searches; this does not prove no public copy exists anywhere. Existing represented counts also include historical fragments.",
+  "inherited_mixed_file_metadata_clarified": {
+    "path": "省考/上海/2017/行测-统考.md",
+    "question_and_answer_blocks_preserved": 136,
+    "source_boundary": "原有AB合卷整理号，不认证为独立A/B实考试卷，未减少两套真实缺卷",
+    "receipt": "MISSING50-SHANGHAI2017-METADATA-CALIBRATION-20261016.json"
+  }
+}

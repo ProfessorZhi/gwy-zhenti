@@ -36,9 +36,9 @@
       "行测": 27
     },
     "天津": {
-      "files": 32,
+      "files": 33,
       "申论": 21,
-      "行测": 11
+      "行测": 12
     },
     "宁夏": {
       "files": 25,
@@ -66,9 +66,9 @@
       "行测": 17
     },
     "广州": {
-      "files": 9,
+      "files": 10,
       "申论": 5,
-      "行测": 4
+      "行测": 5
     },
     "广西": {
       "files": 30,
@@ -179,18 +179,18 @@
   "confirmed_missing_stem_figure_questions": 1,
   "current_truncated_files": 0,
   "current_truncated_questions": 0,
-  "declared_source_analysis_disagreement_questions": 2,
-  "files_with_machine_flags": 372,
+  "declared_source_analysis_disagreement_questions": 5,
+  "files_with_machine_flags": 374,
   "forbidden_tracked_files": [],
   "hard_integrity_errors": [],
   "historical_truncated_files": 75,
   "historical_truncated_questions": 128,
   "image_decode_check_performed": false,
   "image_decode_errors": [],
-  "image_references": 118573,
-  "inventory_sha256": "be172d80beb1a31d1e1ac7b321312006580cae69becbe981b1828aaf50b7dc97",
+  "image_references": 118807,
+  "inventory_sha256": "3ad6323ad4e1ff77ca53ee46917d4d2f8d65185d7d963822e4bceb25ca3802d2",
   "missing_image_references": 0,
-  "paper_files": 1163,
+  "paper_files": 1165,
   "placeholder_files": 47,
   "placeholder_states": {
     "待核实": 18,
@@ -200,8 +200,8 @@
   "schema_version": 2,
   "subjects": {
     "申论": 710,
-    "行测": 453
+    "行测": 455
   },
-  "unique_referenced_images": 95921,
+  "unique_referenced_images": 96122,
   "whole_paper_acceptance": "not_established_by_structural_checks"
 }

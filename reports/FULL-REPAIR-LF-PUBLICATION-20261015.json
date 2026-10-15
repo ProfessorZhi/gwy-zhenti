@@ -2829,6 +2829,165 @@
           "crlf_sequences": 9492
         }
       ]
+    },
+    {
+      "files": 9,
+      "rows": [
+        {
+          "path": "catalog/manifest.jsonl",
+          "before_sha256": "a0e67a196f94e65aa64492df04701628cf92df5ca5c6c2e93d49ce1af32d0148",
+          "after_sha256": "ed62be727d51bddc5bac95d705f24c4f55d8effc3bae0c33bc4d40bc88e450bd",
+          "crlf_sequences": 1165
+        },
+        {
+          "path": "COVERAGE-优先区.md",
+          "before_sha256": "6e167832c8681b70bda3afe66a62fa3119033da500ff0b451678b53fd6f68215",
+          "after_sha256": "d2357df1f16fc7858bbd313504cdb219b38d4a31f868a7ee6ff77810968614a0",
+          "crlf_sequences": 149
+        },
+        {
+          "path": "PROGRESS.md",
+          "before_sha256": "e81ce55baa917d6f19e25d682173476c88a731320263cd1b9f8a3472b72b07f6",
+          "after_sha256": "43ae7f1ec370cf31b361474cc8a6d71e9dbfa165c073e1e61d71892bf5c49825",
+          "crlf_sequences": 219
+        },
+        {
+          "path": "QUALITY.md",
+          "before_sha256": "79e64bf687cc097f8b774b5a027a93dc31b5f4b7196aca23e2cc39786de58d23",
+          "after_sha256": "51616f14d7eb6bc70250c338f7ca04ab90857a1c3a8047dfbcc6b8b7d1fd787c",
+          "crlf_sequences": 97
+        },
+        {
+          "path": "reports/DEFECTS.jsonl",
+          "before_sha256": "4f306e795e1614519eaf91b2cc17ad63a923b6e470224fa4ad968e80593a0b3e",
+          "after_sha256": "7b4d69b1302e0fba2bbbdec33b5c267d89982c5bb193e2816b96554eef5e2731",
+          "crlf_sequences": 374
+        },
+        {
+          "path": "reports/MISSING50-INDEX-IMAGE-PIXELS-20261016.json",
+          "before_sha256": "d7b3d1aae6913693ca48f60b7c8ffaeb71d8765e41e7d36f9aefee2e6ee524e7",
+          "after_sha256": "3553c467dde00701872e78d31e8b59f2e8095922f536579cff8c713f785ef71c",
+          "crlf_sequences": 18
+        },
+        {
+          "path": "reports/PRIORITY-MISSING.json",
+          "before_sha256": "ba7572eb8bfcf3261f17a6cb2f5b4746ad7ed2daf511d7e40dd00af3b9fdabe7",
+          "after_sha256": "ddd16e32045b9058d8a793e06123302ced9491866eba1abe84f5683070f1a1c3",
+          "crlf_sequences": 62
+        },
+        {
+          "path": "reports/QUALITY-AUDIT.md",
+          "before_sha256": "78c36e52c1a9bf5fc05b5d6d294e3c08317ca2169dbe6fce7edf07d93ce79d7e",
+          "after_sha256": "b32c58096e51ebc756722bc968f25ccfc8f75fcfe0eebf7985a5a8095af61e69",
+          "crlf_sequences": 388
+        },
+        {
+          "path": "reports/QUALITY-SUMMARY.json",
+          "before_sha256": "4f5d60e282c289b0f3690d1374558c068f79c4888a8c215306c92171ac4dce80",
+          "after_sha256": "65606d55644fc94cf905fa0c6d85dfd81f6d62929a27106116941b2eb7ee4c31",
+          "crlf_sequences": 207
+        }
+      ]
+    },
+    {
+      "files": 11,
+      "rows": [
+        {
+          "path": "catalog/manifest.jsonl",
+          "before_sha256": "303470d386d122a266aa2c1c0f2f36c31986d0e3cb4f88efabf04593d0608977",
+          "after_sha256": "375305fc95ab6aca54d06ebe62f544f5c3481fd3928afb512b03b77a926b1dbf",
+          "crlf_sequences": 1165
+        },
+        {
+          "path": "COVERAGE-优先区.md",
+          "before_sha256": "6e167832c8681b70bda3afe66a62fa3119033da500ff0b451678b53fd6f68215",
+          "after_sha256": "d2357df1f16fc7858bbd313504cdb219b38d4a31f868a7ee6ff77810968614a0",
+          "crlf_sequences": 149
+        },
+        {
+          "path": "PROGRESS.md",
+          "before_sha256": "46a9f153426e8195316d7ef4d5718f9c16f02ee0142f44847236133c21084ca9",
+          "after_sha256": "79a88316cdfc5c623a7c8144c47dfe0985ec932564ea3b8b717a26311d8d09a3",
+          "crlf_sequences": 219
+        },
+        {
+          "path": "QUALITY.md",
+          "before_sha256": "79e64bf687cc097f8b774b5a027a93dc31b5f4b7196aca23e2cc39786de58d23",
+          "after_sha256": "51616f14d7eb6bc70250c338f7ca04ab90857a1c3a8047dfbcc6b8b7d1fd787c",
+          "crlf_sequences": 97
+        },
+        {
+          "path": "README.md",
+          "before_sha256": "e0540b652442639a860f6d582c6249592090514ec41046506166be5b24bd586d",
+          "after_sha256": "0450ac7f2be663c2bc186007374f8f835eed2ab30ea7e7577694d327dc4ec1ad",
+          "crlf_sequences": 128
+        },
+        {
+          "path": "reports/DEFECTS.jsonl",
+          "before_sha256": "4f306e795e1614519eaf91b2cc17ad63a923b6e470224fa4ad968e80593a0b3e",
+          "after_sha256": "7b4d69b1302e0fba2bbbdec33b5c267d89982c5bb193e2816b96554eef5e2731",
+          "crlf_sequences": 374
+        },
+        {
+          "path": "reports/FULL-REPAIR-BASELINE-20261015.json",
+          "before_sha256": "2cd05051fd8266018a9257926fd197108aa404065c5d7336114f70cdf130af11",
+          "after_sha256": "447c77ab92162661c8f8e5ad30f2c6dd3a924c6bbe0a6152944369e27e0ac42e",
+          "crlf_sequences": 7368
+        },
+        {
+          "path": "reports/MISSING50-HISTORICAL-VALIDATION-20261016.json",
+          "before_sha256": "3c23be7986b9870fac0f16a64e70023b54b10aaf8319bc9602e1c8325b128c01",
+          "after_sha256": "06e696e08f83e9acec0a63e2b61eeb0f5eb526db15acfaea553e9447f35ee3f2",
+          "crlf_sequences": 51
+        },
+        {
+          "path": "reports/PRIORITY-MISSING.json",
+          "before_sha256": "ba7572eb8bfcf3261f17a6cb2f5b4746ad7ed2daf511d7e40dd00af3b9fdabe7",
+          "after_sha256": "ddd16e32045b9058d8a793e06123302ced9491866eba1abe84f5683070f1a1c3",
+          "crlf_sequences": 62
+        },
+        {
+          "path": "reports/QUALITY-AUDIT.md",
+          "before_sha256": "78c36e52c1a9bf5fc05b5d6d294e3c08317ca2169dbe6fce7edf07d93ce79d7e",
+          "after_sha256": "b32c58096e51ebc756722bc968f25ccfc8f75fcfe0eebf7985a5a8095af61e69",
+          "crlf_sequences": 388
+        },
+        {
+          "path": "reports/QUALITY-SUMMARY.json",
+          "before_sha256": "4ef92ab7a0e1531f501c591f2ccec869e9d03f63a36c39b1e1db28b59c77d2d2",
+          "after_sha256": "ebdcb63980607a9ae522e0d7aa80192489fe76a50a8f3da7c16676f488fb0d51",
+          "crlf_sequences": 207
+        }
+      ]
+    },
+    {
+      "files": 4,
+      "rows": [
+        {
+          "path": "reports/FULL-REPAIR-BASELINE-20261015.json",
+          "before_sha256": "7c78271a8184b5265c3c1fdc317df4440c91ca2de8240a4911ef4d07425070bd",
+          "after_sha256": "03819376635f4eaf9786c987d4ade8f031bafe4414a5947fa2f0138ccb9e95fb",
+          "crlf_sequences": 7368
+        },
+        {
+          "path": "reports/MISSING50-CURRENT-ANSWER-AUDIT-20261016.json",
+          "before_sha256": "38746bf84140b686b46aecc124f8bd4f106b3e57e302445ecd7f6d4c7ef56258",
+          "after_sha256": "28e3441964ef6fec6d9d81475279b414b40f38fc87fb4984be212f29f84f8c75",
+          "crlf_sequences": 27
+        },
+        {
+          "path": "reports/MISSING50-HISTORICAL-VALIDATION-20261016.json",
+          "before_sha256": "411a0f33bff4c6c29c1d0d17f06e054e7b5b490b95c3ac51914e580e39781cd7",
+          "after_sha256": "e304978aa4bc427e06e7a66d3f4690c2ae1688215bea42741f6be9c50a739560",
+          "crlf_sequences": 51
+        },
+        {
+          "path": "reports/MISSING50-INDEX-IMAGE-PIXELS-20261016.json",
+          "before_sha256": "3daa3eac284329a0b307cc5af6298c2d556728095633ae8caae3ff1f321119fa",
+          "after_sha256": "7a587b0a78213b6bbf04777393d5749b8fb2aa47f911933d07fda7c7c1d226b2",
+          "crlf_sequences": 18
+        }
+      ]
     }
   ]
 }
