@@ -1,0 +1,4934 @@
+{
+  "audit_date": "2026-10-15",
+  "exam_years": [
+    2016,
+    2026
+  ],
+  "exam_year_count": 11,
+  "scope": [
+    "国考",
+    "浙江",
+    "江苏",
+    "上海",
+    "北京",
+    "天津",
+    "广东",
+    "福建",
+    "广州",
+    "深圳"
+  ],
+  "corpus_commit": "988ac769d0b3fd27ce040cbaf964f80da25bb3a7",
+  "counting_rule": "Same year, exam series, subject and genuinely different paper category form one item. Mixed files, aliases, shared papers and auxiliary subjects are not extra independent papers. Original exam-year labels are used, not publication calendar years.",
+  "totals": {
+    "行测": {
+      "expected": 197,
+      "represented_including_fragments": 168,
+      "missing_independent_files": 29
+    },
+    "申论": {
+      "expected": 229,
+      "represented_including_fragments": 208,
+      "missing_independent_files": 21
+    },
+    "combined": {
+      "expected": 426,
+      "represented_including_fragments": 376,
+      "missing_independent_files": 50
+    }
+  },
+  "ordinary_scope_excluding_zhejiang_village_aptitude": {
+    "行测": {
+      "expected": 186,
+      "represented_including_fragments": 168,
+      "missing_independent_files": 18
+    },
+    "申论": {
+      "expected": 229,
+      "represented_including_fragments": 208,
+      "missing_independent_files": 21
+    }
+  },
+  "summary": [
+    {
+      "area": "国考",
+      "aptitude": {
+        "expected": 27,
+        "represented_including_fragments": 27,
+        "missing_independent_files": 0
+      },
+      "essay": {
+        "expected": 27,
+        "represented_including_fragments": 27,
+        "missing_independent_files": 0
+      }
+    },
+    {
+      "area": "浙江",
+      "aptitude": {
+        "expected": 39,
+        "represented_including_fragments": 27,
+        "missing_independent_files": 12
+      },
+      "essay": {
+        "expected": 28,
+        "represented_including_fragments": 25,
+        "missing_independent_files": 3
+      }
+    },
+    {
+      "area": "江苏",
+      "aptitude": {
+        "expected": 33,
+        "represented_including_fragments": 29,
+        "missing_independent_files": 4
+      },
+      "essay": {
+        "expected": 33,
+        "represented_including_fragments": 31,
+        "missing_independent_files": 2
+      }
+    },
+    {
+      "area": "上海",
+      "aptitude": {
+        "expected": 30,
+        "represented_including_fragments": 21,
+        "missing_independent_files": 9
+      },
+      "essay": {
+        "expected": 30,
+        "represented_including_fragments": 23,
+        "missing_independent_files": 7
+      }
+    },
+    {
+      "area": "北京",
+      "aptitude": {
+        "expected": 13,
+        "represented_including_fragments": 11,
+        "missing_independent_files": 2
+      },
+      "essay": {
+        "expected": 13,
+        "represented_including_fragments": 12,
+        "missing_independent_files": 1
+      }
+    },
+    {
+      "area": "天津",
+      "aptitude": {
+        "expected": 12,
+        "represented_including_fragments": 11,
+        "missing_independent_files": 1
+      },
+      "essay": {
+        "expected": 25,
+        "represented_including_fragments": 19,
+        "missing_independent_files": 6
+      }
+    },
+    {
+      "area": "广东",
+      "aptitude": {
+        "expected": 17,
+        "represented_including_fragments": 17,
+        "missing_independent_files": 0
+      },
+      "essay": {
+        "expected": 27,
+        "represented_including_fragments": 27,
+        "missing_independent_files": 0
+      }
+    },
+    {
+      "area": "福建",
+      "aptitude": {
+        "expected": 11,
+        "represented_including_fragments": 11,
+        "missing_independent_files": 0
+      },
+      "essay": {
+        "expected": 23,
+        "represented_including_fragments": 22,
+        "missing_independent_files": 1
+      }
+    },
+    {
+      "area": "广州",
+      "aptitude": {
+        "expected": 5,
+        "represented_including_fragments": 4,
+        "missing_independent_files": 1
+      },
+      "essay": {
+        "expected": 5,
+        "represented_including_fragments": 5,
+        "missing_independent_files": 0
+      }
+    },
+    {
+      "area": "深圳",
+      "aptitude": {
+        "expected": 10,
+        "represented_including_fragments": 10,
+        "missing_independent_files": 0
+      },
+      "essay": {
+        "expected": 18,
+        "represented_including_fragments": 17,
+        "missing_independent_files": 1
+      }
+    }
+  ],
+  "aptitude_annual_matrix": [
+    {
+      "area": "国考",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "国考",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（优秀村干部）"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "C（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（优秀村干部）"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "C（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（优秀村干部）"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "C（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（优秀村干部）"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "C（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（优秀村干部）"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "C（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（行政执法）",
+        "D（优秀村干部）"
+      ],
+      "confirmed_expected": 4,
+      "represented": 3,
+      "missing_independent_files": [
+        "D（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（行政执法）",
+        "D（优秀村干部）"
+      ],
+      "confirmed_expected": 4,
+      "represented": 2,
+      "missing_independent_files": [
+        "D（优秀村干部）",
+        "B"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（行政执法）",
+        "D（优秀村干部）"
+      ],
+      "confirmed_expected": 4,
+      "represented": 3,
+      "missing_independent_files": [
+        "D（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（行政执法）",
+        "D（优秀村干部）"
+      ],
+      "confirmed_expected": 4,
+      "represented": 3,
+      "missing_independent_files": [
+        "D（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（行政执法）",
+        "D（优秀村干部）"
+      ],
+      "confirmed_expected": 4,
+      "represented": 3,
+      "missing_independent_files": [
+        "D（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "浙江",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C（行政执法）",
+        "D（优秀村干部）"
+      ],
+      "confirmed_expected": 4,
+      "represented": 3,
+      "missing_independent_files": [
+        "D（优秀村干部）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "C"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 0,
+      "missing_independent_files": [
+        "A",
+        "B",
+        "C"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 1,
+      "missing_independent_files": [
+        "A",
+        "B"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 1,
+      "missing_independent_files": [
+        "A",
+        "行政执法专项"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 1,
+      "missing_independent_files": [
+        "B"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 0,
+      "missing_independent_files": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "行政执法专项"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "上海",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "区级及以上",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "区级及以上",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 0,
+      "missing_independent_files": [
+        "统一卷"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 0,
+      "missing_independent_files": [
+        "统一卷"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷",
+        "滨海等单位专项（12月23日）"
+      ],
+      "confirmed_expected": 2,
+      "represented": 1,
+      "missing_independent_files": [
+        "滨海等单位专项（12月23日）"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广东",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "福建",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "单卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "单考区",
+        "双考区"
+      ],
+      "confirmed_expected": 2,
+      "represented": 1,
+      "missing_independent_files": [
+        "双考区"
+      ],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "3月24日",
+        "3月25日"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "广州",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2016,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2017,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2018,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2019,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2020,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "行测1",
+        "行测2"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2021,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2022,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2023,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2024,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2025,
+      "subject": "行测",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "unknown_year": false,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    },
+    {
+      "area": "深圳",
+      "year": 2026,
+      "subject": "行测",
+      "confirmed_expected_types": [],
+      "confirmed_expected": 0,
+      "represented": 0,
+      "missing_independent_files": [],
+      "unknown_year": true,
+      "boundary": "Represented is a named file/category inventory, not a complete-original certificate; Shanghai2017 mixed file is excluded."
+    }
+  ],
+  "essay_annual_matrix": [
+    {
+      "area": "国考",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2016/申论-副省级.md",
+        "国考/2016/申论-地市级.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2017/申论-副省级.md",
+        "国考/2017/申论-地市级.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2018/申论-副省级.md",
+        "国考/2018/申论-地市级.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2019/申论-副省级.md",
+        "国考/2019/申论-地市级.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2020/申论-副省级.md",
+        "国考/2020/申论-地市级.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2021/申论-副省级.md",
+        "国考/2021/申论-地市级.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2022/申论-副省级.md",
+        "国考/2022/申论-地市级.md",
+        "国考/2022/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2023/申论-副省级.md",
+        "国考/2023/申论-地市级.md",
+        "国考/2023/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2024/申论-副省级.md",
+        "国考/2024/申论-地市级.md",
+        "国考/2024/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2025/申论-副省级.md",
+        "国考/2025/申论-地市级.md",
+        "国考/2025/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "国考",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "副省级",
+        "地市级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "国考/2026/申论-副省级.md",
+        "国考/2026/申论-地市级.md",
+        "国考/2026/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "national_transition_2022",
+        "national_three_classes",
+        "national_2026_actual_papers"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2016/申论-A类.md",
+        "省考/江苏/2016/申论-B类.md",
+        "省考/江苏/2016/申论-C类.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2017/申论-A类.md",
+        "省考/江苏/2017/申论-B类.md",
+        "省考/江苏/2017/申论-C类.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2018/申论-A类.md",
+        "省考/江苏/2018/申论-B类.md",
+        "省考/江苏/2018/申论-C类.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2019/申论-A类.md",
+        "省考/江苏/2019/申论-B类.md",
+        "省考/江苏/2019/申论-C类.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2020/申论-A类.md",
+        "省考/江苏/2020/申论-B类.md",
+        "省考/江苏/2020/申论-C类.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2021/申论-A类.md",
+        "省考/江苏/2021/申论-B类.md",
+        "省考/江苏/2021/申论-C类.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2022/申论-A类.md",
+        "省考/江苏/2022/申论-B类.md",
+        "省考/江苏/2022/申论-C类.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2023/申论-A类.md",
+        "省考/江苏/2023/申论-B类.md",
+        "省考/江苏/2023/申论-C类.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog",
+        "js_2023_official"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2024/申论-A、乡镇选调卷.md",
+        "省考/江苏/2024/申论-B卷.md",
+        "省考/江苏/2024/申论-C卷.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/江苏/2025/申论-A、乡镇选调卷.md",
+        "省考/江苏/2025/申论-B卷.md",
+        "省考/江苏/2025/申论-C卷.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 1,
+      "missing_independent_files": [
+        "A",
+        "C"
+      ],
+      "raw_file_paths": [
+        "省考/江苏/2026/申论-B类.md"
+      ],
+      "source_refs": [
+        "js_2016_outline",
+        "js_2026_official",
+        "js_actual_catalog"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2016/申论-A类.md",
+        "省考/浙江/2016/申论-B类.md"
+      ],
+      "source_refs": [
+        "zj_2016"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2017/申论-A类.md",
+        "省考/浙江/2017/申论-B类.md"
+      ],
+      "source_refs": [
+        "zj_2017"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2018/申论-A类.md",
+        "省考/浙江/2018/申论-B类.md"
+      ],
+      "source_refs": [
+        "zj_2018"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2019/申论-A类.md",
+        "省考/浙江/2019/申论-B类.md"
+      ],
+      "source_refs": [
+        "zj_2019"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2020/申论-A类.md",
+        "省考/浙江/2020/申论-B类.md"
+      ],
+      "source_refs": [
+        "zj_2020"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2021/申论-A类.md",
+        "省考/浙江/2021/申论-B类.md",
+        "省考/浙江/2021/申论-C类.md"
+      ],
+      "source_refs": [
+        "zj_2021"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 0,
+      "missing_independent_files": [
+        "A",
+        "B",
+        "C"
+      ],
+      "raw_file_paths": [],
+      "source_refs": [
+        "zj_2022"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2023/申论-A类.md",
+        "省考/浙江/2023/申论-B类.md",
+        "省考/浙江/2023/申论-C类.md"
+      ],
+      "source_refs": [
+        "zj_2023"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2024/申论-A类.md",
+        "省考/浙江/2024/申论-B类.md",
+        "省考/浙江/2024/申论-C类.md"
+      ],
+      "source_refs": [
+        "zj_2024"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2025/申论-A类.md",
+        "省考/浙江/2025/申论-B类.md",
+        "省考/浙江/2025/申论-C类.md"
+      ],
+      "source_refs": [
+        "zj_2025"
+      ]
+    },
+    {
+      "area": "浙江",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "C"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/浙江/2026/申论-A类.md",
+        "省考/浙江/2026/申论-B类.md",
+        "省考/浙江/2026/申论-C类.md"
+      ],
+      "source_refs": [
+        "zj_2026"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2016/申论-统考.md"
+      ],
+      "source_refs": [
+        "bj_history_2023"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2017/申论-统考.md"
+      ],
+      "source_refs": [
+        "bj_history_2023"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2018/申论-统考.md"
+      ],
+      "source_refs": [
+        "bj_history_2023"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2019/申论-统考.md"
+      ],
+      "source_refs": [
+        "bj_history_2023"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "区级及以上",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2020/申论-乡镇卷.md",
+        "省考/北京/2020/申论-区级.md"
+      ],
+      "source_refs": [
+        "bj_2020_2021_actual",
+        "bj_unified_2022"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "区级及以上",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2021/申论-乡镇卷.md",
+        "省考/北京/2021/申论-区级.md"
+      ],
+      "source_refs": [
+        "bj_2020_2021_actual",
+        "bj_unified_2022"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2022/申论-统考.md"
+      ],
+      "source_refs": [
+        "bj_unified_2022"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2023/申论-统考.md"
+      ],
+      "source_refs": [
+        "bj_unified_2022"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2024/申论-统考.md"
+      ],
+      "source_refs": [
+        "bj_2024_official",
+        "bj_paper_2024"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/北京/2025/申论-统考.md"
+      ],
+      "source_refs": [
+        "bj_outline_2025",
+        "bj_paper_2025"
+      ]
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一"
+      ],
+      "confirmed_expected": 1,
+      "represented": 0,
+      "missing_independent_files": [
+        "统一"
+      ],
+      "raw_file_paths": [],
+      "source_refs": [
+        "bj_2026_official",
+        "bj_outline_2026"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "行政执法专项"
+      ],
+      "raw_file_paths": [
+        "省考/上海/2016/申论-A类.md",
+        "省考/上海/2016/申论-B类.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/上海/2017/申论-A类.md",
+        "省考/上海/2017/申论-B类.md",
+        "省考/上海/2017/申论-行政执法卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/上海/2018/申论-A类.md",
+        "省考/上海/2018/申论-B类.md",
+        "省考/上海/2018/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/上海/2019/申论-A类.md",
+        "省考/上海/2019/申论-B类.md",
+        "省考/上海/2019/申论-行政执法卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/上海/2020/申论-A类.md",
+        "省考/上海/2020/申论-B类.md",
+        "省考/上海/2020/申论-行政执法卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "行政执法专项"
+      ],
+      "raw_file_paths": [
+        "省考/上海/2021/申论-A类.md",
+        "省考/上海/2021/申论-B类.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 1,
+      "missing_independent_files": [
+        "行政执法专项",
+        "A"
+      ],
+      "raw_file_paths": [
+        "省考/上海/2022/申论-B类.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 1,
+      "missing_independent_files": [
+        "B"
+      ],
+      "raw_file_paths": [
+        "省考/上海/2023/申论-A类.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "行政执法专项"
+      ],
+      "raw_file_paths": [
+        "省考/上海/2024/申论-A卷.md",
+        "省考/上海/2024/申论-B卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B",
+        "行政执法专项"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "行政执法专项"
+      ],
+      "raw_file_paths": [
+        "省考/上海/2025/申论-A卷.md",
+        "省考/上海/2025/申论-B卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "常规单卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/上海/2026/申论-统考.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "常规单卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/天津/2016/申论-统考.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "常规单卷",
+        "滨海新区等单位专项（12月23日）"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/天津/2017/申论-统考.md",
+        "省考/天津/2017/申论-统考__t443.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "常规单卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/天津/2018/申论-统考.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "常规单卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/天津/2019/申论-统考.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A/市级",
+        "B/区县"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/天津/2020/申论-A类.md",
+        "省考/天津/2020/申论-B类.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "市级",
+        "区县/区级",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/天津/2021/申论-区县卷.md",
+        "省考/天津/2021/申论-市级卷.md",
+        "省考/天津/2021/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "综合管理市级",
+        "综合管理区级以下",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "行政执法"
+      ],
+      "raw_file_paths": [
+        "省考/天津/2022/申论-县级.md",
+        "省考/天津/2022/申论-市级.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "综合市区",
+        "综合街镇",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/天津/2023/申论-乡镇卷.md",
+        "省考/天津/2023/申论-市区卷.md",
+        "省考/天津/2023/申论-行政执法卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "综合市区",
+        "综合街镇",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 1,
+      "missing_independent_files": [
+        "综合街镇",
+        "行政执法"
+      ],
+      "raw_file_paths": [
+        "省考/天津/2024/申论-市级.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "综合市区",
+        "综合街镇",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 2,
+      "missing_independent_files": [
+        "行政执法"
+      ],
+      "raw_file_paths": [
+        "省考/天津/2025/申论-市区卷.md",
+        "省考/天津/2025/申论-街镇卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "综合市区",
+        "综合街镇",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 1,
+      "missing_independent_files": [
+        "综合市区",
+        "综合街镇"
+      ],
+      "raw_file_paths": [
+        "省考/天津/2026/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2016/申论-统考.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2017/申论-统考.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2018/申论-乡镇卷.md",
+        "省考/福建/2018/申论-县级卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2019/申论-乡镇卷.md",
+        "省考/福建/2019/申论-县级卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2020/申论-乡镇卷.md",
+        "省考/福建/2020/申论-县级卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2021/申论-乡镇.md",
+        "省考/福建/2021/申论-县级.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "省市",
+        "县乡",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2022/申论-县乡.md",
+        "省考/福建/2022/申论-省市卷.md",
+        "省考/福建/2022/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "省市",
+        "县乡",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2023/申论-县乡.md",
+        "省考/福建/2023/申论-省市.md",
+        "省考/福建/2023/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "省市",
+        "县乡",
+        "行政执法"
+      ],
+      "confirmed_expected": 3,
+      "represented": 3,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2024/申论-县乡卷.md",
+        "省考/福建/2024/申论-省市卷.md",
+        "省考/福建/2024/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "省市综合管理",
+        "通用"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/福建/2025/申论-省市卷.md",
+        "省考/福建/2025/申论-通用卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "省市综合管理",
+        "通用"
+      ],
+      "confirmed_expected": 2,
+      "represented": 1,
+      "missing_independent_files": [
+        "省市综合管理"
+      ],
+      "raw_file_paths": [
+        "省考/福建/2026/申论-通用卷.md"
+      ],
+      "source_refs": [
+        "ESSAYREVIEW"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2016/申论-乡镇卷.md",
+        "省考/广东/2016/申论-县级卷.md",
+        "省考/广东/2016/申论-统考.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2017/申论-乡镇卷.md",
+        "省考/广东/2017/申论-县级卷.md",
+        "省考/广东/2017/申论-统考.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级与珠三角乡镇统一卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2018/申论-统考.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199",
+        "https://zhuanlan.zhihu.com/p/438641741",
+        "https://fenbi.com/page/fenxiaozixundetail/7/164/413686194537472"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2019/申论-乡镇卷.md",
+        "省考/广东/2019/申论-县级卷.md",
+        "省考/广东/2019/申论-统考.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2020/申论-乡镇卷.md",
+        "省考/广东/2020/申论-县级卷.md",
+        "省考/广东/2020/申论-统考.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2021/申论-乡镇卷.md",
+        "省考/广东/2021/申论-县级卷.md",
+        "省考/广东/2021/申论-统考.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2022/申论-乡镇卷.md",
+        "省考/广东/2022/申论-县级卷.md",
+        "省考/广东/2022/申论-统考.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "县级",
+        "乡镇"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2023/申论-乡镇卷.md",
+        "省考/广东/2023/申论-县级卷.md",
+        "省考/广东/2023/申论-统考.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "省市",
+        "县镇",
+        "行政执法",
+        "公安"
+      ],
+      "confirmed_expected": 4,
+      "represented": 4,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2024/申论-公安.md",
+        "省考/广东/2024/申论-县镇.md",
+        "省考/广东/2024/申论-省市.md",
+        "省考/广东/2024/申论-统考.md",
+        "省考/广东/2024/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "省市",
+        "县镇",
+        "行政执法",
+        "公安"
+      ],
+      "confirmed_expected": 4,
+      "represented": 4,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2025/申论-公安.md",
+        "省考/广东/2025/申论-县镇.md",
+        "省考/广东/2025/申论-省市.md",
+        "省考/广东/2025/申论-统考.md",
+        "省考/广东/2025/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广东",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "省市",
+        "县镇",
+        "行政执法",
+        "公安"
+      ],
+      "confirmed_expected": 4,
+      "represented": 4,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2026/申论-公安.md",
+        "省考/广东/2026/申论-县镇.md",
+        "省考/广东/2026/申论-省市.md",
+        "省考/广东/2026/申论-统考.md",
+        "省考/广东/2026/申论-行政执法.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=199"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "单卷"
+      ],
+      "confirmed_expected": 1,
+      "represented": 1,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2016/申论-广州市考.md"
+      ],
+      "source_refs": [
+        "https://www.xinhuanet.com/politics/2018-03/25/c_1122586574.htm"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "单考区",
+        "双考区"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2017/申论-广州市考-单考区.md",
+        "省考/广东/2017/申论-广州市考-双考区.md"
+      ],
+      "source_refs": [
+        "https://www.xinhuanet.com/politics/2018-03/25/c_1122586574.htm"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "3月24日",
+        "3月25日"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/广东/2018/申论-广州市考-3月24日.md",
+        "省考/广东/2018/申论-广州市考-3月25日.md"
+      ],
+      "source_refs": [
+        "https://www.xinhuanet.com/politics/2018-03/25/c_1122586574.htm"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ]
+    },
+    {
+      "area": "广州",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://zhuanlan.zhihu.com/p/669874062",
+        "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2016,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/深圳/2016/申论-A类.md",
+        "省考/深圳/2016/申论-B类.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2017,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/深圳/2017/申论-A类.md",
+        "省考/深圳/2017/申论-B类.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2018,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "A",
+        "B"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/深圳/2018/申论-A类.md",
+        "省考/深圳/2018/申论-B类.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2019,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/深圳/2019/申论-一卷.md",
+        "省考/深圳/2019/申论-二卷.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2020,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/深圳/2020/申论-一卷.md",
+        "省考/深圳/2020/申论-二卷.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2021,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://www.eoffcn.com/kszx/detail/1208330.html",
+        "https://hrss.sz.gov.cn/szksy/ztzl/gwyks/"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2022,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/深圳/2022/申论-一卷.md",
+        "省考/深圳/2022/申论-二卷.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2023,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/深圳/2023/申论-一卷.md",
+        "省考/深圳/2023/申论-二卷.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2024,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "confirmed_expected": 2,
+      "represented": 1,
+      "missing_independent_files": [
+        "Ⅰ"
+      ],
+      "raw_file_paths": [
+        "省考/深圳/2024/申论-二卷.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226",
+        "https://www.szgm.gov.cn/xxgk/xqgwhxxgkml/rsxx/gwyzk/content/post_11029041.html"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2025,
+      "subject": "申论",
+      "confirmed_expected_types": [
+        "Ⅰ",
+        "Ⅱ"
+      ],
+      "confirmed_expected": 2,
+      "represented": 2,
+      "missing_independent_files": [],
+      "raw_file_paths": [
+        "省考/深圳/2025/申论-一卷.md",
+        "省考/深圳/2025/申论-二卷.md"
+      ],
+      "source_refs": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2026,
+      "subject": "申论",
+      "confirmed_expected_types": [],
+      "confirmed_expected": null,
+      "represented": 0,
+      "missing_independent_files": [],
+      "raw_file_paths": [],
+      "source_refs": [
+        "https://www.eoffcn.com/kszx/detail/1208330.html",
+        "https://hrss.sz.gov.cn/szksy/ztzl/gwyks/"
+      ]
+    }
+  ],
+  "missing_aptitude_independent_files": [
+    {
+      "area": "浙江",
+      "year": 2016,
+      "variant": "C（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2017,
+      "variant": "C（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2018,
+      "variant": "C（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2019,
+      "variant": "C（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2020,
+      "variant": "C（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2021,
+      "variant": "D（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "variant": "D（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2023,
+      "variant": "D（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2024,
+      "variant": "D（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2025,
+      "variant": "D（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2026,
+      "variant": "D（优秀村干部）"
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "variant": "B"
+    },
+    {
+      "area": "江苏",
+      "year": 2023,
+      "variant": "C"
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "variant": "A"
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "variant": "B"
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "variant": "C"
+    },
+    {
+      "area": "上海",
+      "year": 2017,
+      "variant": "A"
+    },
+    {
+      "area": "上海",
+      "year": 2017,
+      "variant": "B"
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "variant": "A"
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "variant": "行政执法专项"
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "variant": "B"
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "variant": "A"
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "variant": "B"
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "variant": "行政执法专项"
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "variant": "行政执法专项"
+    },
+    {
+      "area": "北京",
+      "year": 2024,
+      "variant": "统一卷"
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "variant": "统一卷"
+    },
+    {
+      "area": "天津",
+      "year": 2017,
+      "variant": "滨海等单位专项（12月23日）"
+    },
+    {
+      "area": "广州",
+      "year": 2017,
+      "variant": "双考区"
+    }
+  ],
+  "missing_essay_independent_files": [
+    {
+      "area": "上海",
+      "year": 2016,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "http://www.shgkw.org/2016/0926/9462.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2021,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "http://www.shgkw.org/2021/0820/40645.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://cgzf.sh.gov.cn/channel_8/20220819/1a689b735cb248ddbe238c9f4e03d319.html",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "variant": "A",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://cgzf.sh.gov.cn/channel_8/20220819/1a689b735cb248ddbe238c9f4e03d319.html",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "variant": "B",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.jfdaily.com/wx/detail.do?id=784997",
+        "https://www.eoffcn.com/kszx/detail/1229673.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.shqp.gov.cn/shqp/ggfw/bmts/20240820/1183054.html"
+      ]
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "variant": "行政执法专项",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+        "https://www.lysrsks.com/index/news/detail.html?id=2009"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2022,
+      "variant": "行政执法",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2022/0224/38404.html",
+        "https://www.eoffcn.com/kszx/detail/1275187.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "variant": "综合街镇",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2024/0122/46154.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "variant": "行政执法",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "http://www.tjgwyw.org/2024/0122/46154.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2025,
+      "variant": "行政执法",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://ah.huatu.com/2024/1107/2948494.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "variant": "综合市区",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202511/t20251105_7170794.html"
+      ]
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "variant": "综合街镇",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+        "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202511/t20251105_7170794.html"
+      ]
+    },
+    {
+      "area": "福建",
+      "year": 2026,
+      "variant": "省市综合管理",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+        "https://fj.huatu.com/zt/fzfb/",
+        "http://fj.huatu.com/2026/0116/2509896.html"
+      ]
+    },
+    {
+      "area": "深圳",
+      "year": 2024,
+      "variant": "Ⅰ",
+      "source_urls": [
+        "https://www.kkgwy.com/e/extend/exam/index.php?cid=226",
+        "https://www.szgm.gov.cn/xxgk/xqgwhxxgkml/rsxx/gwyzk/content/post_11029041.html"
+      ]
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "variant": "A",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "variant": "C",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "variant": "A",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "variant": "B",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "variant": "C",
+      "evidence_report": "FULL-REPAIR-JIANGZHE-VARIANT-INVENTORY-A-20261015.json"
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "variant": "统一卷",
+      "evidence_report": "FULL-REPAIR-BEIJING-ESSAY-INVENTORY-20261015.json"
+    }
+  ],
+  "raw_priority_files": {
+    "行测_named_directory_files": 170,
+    "申论_files": 222,
+    "excluded_from_independent_aptitude": {
+      "深圳2020思维能力测验": 1,
+      "上海2017AB混合文件": 1
+    },
+    "excluded_duplicate_or_mixed_essay_files": 14
+  },
+  "source_integrity_examples": [
+    {
+      "path": "省考/上海/2016/行测-A类.md",
+      "present_items": 100,
+      "same_year_reported_original_items": 140
+    },
+    {
+      "path": "省考/上海/2021/行测-B类.md",
+      "present_items": 116,
+      "reference_original_items": 130
+    },
+    {
+      "path": "省考/上海/2026/行测-统考.md",
+      "present_items": 129,
+      "same_year_catalog_items": 130
+    },
+    {
+      "path": "省考/北京/2025/行测-统考.md",
+      "present_items": 93,
+      "nature": "回忆片段，原卷其余部分仍缺"
+    }
+  ],
+  "unknown_years_excluded": {
+    "广州": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "深圳": [
+      2021,
+      2026
+    ]
+  },
+  "limitations": [
+    "Confirmed expected totals are the currently evidenced minimum, not a declaration that all possible special recruitment series have been exhausted.",
+    "Represented categories include fragments. Missing independent file count is not the full number of deficient questions or incomplete papers.",
+    "Shanghai2017 A/B have one unassigned mixed file; neither is certified as a separate complete paper.",
+    "The previous 25 recorded missing aptitude question numbers were not a complete inventory of all fragmentary papers.",
+    "Unknown years are not asserted to be cancellations or definite missing papers.",
+    "Other provinces are outside this collection-expansion count.",
+    "This report describes the repair branch, not a claim that main has merged the changes."
+  ],
+  "source_cards": [
+    {
+      "input": "scope-count-a.json",
+      "id": "national_three_classes",
+      "url": "https://www.ncss.cn/ncss/zt/2026gk.shtml",
+      "kind": "全国高校毕业生就业官方服务平台转录招考说明",
+      "finding": "2026副省、市地、行政执法三类；不是一套题重复计数"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "national_transition_2022",
+      "url": "http://hangzhou.offcn.com/html/2021/10/74352.html",
+      "supports": "2022起新增行政执法类，三类公共科目试卷"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "national_2026_actual_papers",
+      "url": "https://gwysydw.com/bs/gk/0-4-0/",
+      "kind": "题本公开目录",
+      "finding": "2026行测列副省级/地市级/行政执法三套；库中题目ID集合与题干也不相同"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "js_2016_outline",
+      "url": "http://www.jsgkw.org/2016/0314/12379.html",
+      "kind": "2016公共科目大纲转载",
+      "finding": "2016起A/B/C均考行测与申论，三类独立用卷"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "js_2026_official",
+      "url": "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+      "kind": "苏州市政府发布官方大纲，TinyFish完整提取",
+      "finding": "每类公共科目均行测+申论；2026应届优秀大学毕业生选调乡镇街道公共科目同A，不另加第四卷"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "js_actual_catalog",
+      "url": "https://www.aipta.com/zt/sk/js/",
+      "kind": "同年分卷题本目录",
+      "finding": "已收各年AB/C独立真题对应；2023C不是B别名；2026缺整套题本，不以选调或模考替代"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "bj_2020_2021_actual",
+      "url": "https://www.fenbi.com/fpr/doc-user-v2/dir/30204",
+      "kind": "粉笔题本目录完整提取",
+      "finding": "2020、2021行测均明确列区级及以上/乡镇两个PDF，同年现有题数也不同；不能合并一卷"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "bj_unified_2022",
+      "url": "http://bj.people.com.cn/n2/2021/1213/c82840-35047589.html",
+      "kind": "北京青年报同期报道，人民网转载；已完整提取",
+      "finding": "最大变化：回归2019区级乡镇一张卷，行测不再各自成卷；下午申论也同为一类试卷"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "bj_2024_official",
+      "url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202311/t20231110_3299396.html",
+      "kind": "北京市政府官方公告，已完整提取",
+      "finding": "2024公共科目行测+申论，公告无重新分卷；与统一大纲及当年题本口径交叉"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "bj_2026_official",
+      "url": "https://www.bjdj.gov.cn/article/3000206044.html",
+      "kind": "北京市公务员局公告，已完整提取",
+      "finding": "2026年度公共科目2025-12-07举行，行测/申论分别考试；未取得完整真题，不得说未开考"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "contemporary_2022",
+      "title": "北京青年报：昨日4.8万余人参加京考（人民日报转载）",
+      "url": "http://bj.people.com.cn/n2/2021/1213/c82840-35047589.html",
+      "finding": "2022考试恢复区级与乡镇同卷，下午申论同样为一类试卷；对照应急管理四题一致。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "history_2023",
+      "title": "高顿：北京申论考情沿革（2023-05-11）",
+      "url": "https://m.gwy.com/bjgwy/275807.html",
+      "finding": "2019及以前一套，2020–2021区县与乡镇两套，2022–2023恢复一套。标题含2024，发布日期与正文证据只支持截至2023的沿革。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "outline_2024",
+      "title": "2024北京公共科目笔试大纲（陕西科技大学转载北京组工网）",
+      "url": "http://jiuye.www.sust.edu.cn/info/1140/25734.htm",
+      "finding": "大纲申论介绍为共同四项能力，无区乡分别描述；与公开2024统一题本交叉印证。单靠无分级文字不作为真实卷型的充分证明。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "paper_2024",
+      "title": "考考公务员2024北京市申论题本预览",
+      "url": "https://www.kkgwy.com/e/extend/exam/paper.php?id=10965",
+      "finding": "4题；眼低手高、小题大做、线上盲道题面与现文件相符，无新增乡镇分卷证据。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "outline_2025",
+      "title": "中公：2025北京公务员申论大纲解读（2024-11-12）",
+      "url": "http://www.eoffcn.com/kszx/detail/1509001.html",
+      "finding": "明确指出2025申论大纲介绍没有分级分类设定。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "paper_2025",
+      "title": "考考公务员2025北京市申论题本预览",
+      "url": "https://www.kkgwy.com/e/extend/exam/paper.php?id=10966",
+      "finding": "4题；三新经济、沙盒监管、幸福广场首发经济、尝新到常新与现文件相符。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "notice_2026",
+      "title": "北京市公务员局2026年度考录公告",
+      "url": "https://www.bjdj.gov.cn/article/3000206044.html",
+      "finding": "官方确认申论于2025-12-07下午考试，未给出真实试题全文；不能将未找到解释为未考试。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "outline_2026",
+      "title": "华图2026京考申论大纲解读",
+      "url": "https://bj.huatu.com/2025/1110/1250304.html",
+      "finding": "按4道题统一介绍。与官方公告相互参照，只支持统一卷工作假设，不代替原题核验。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "wrong_province",
+      "title": "北京公务员考试网2026A类深度解读",
+      "url": "http://www.bjsgwy.org/2025/1209/25217.html",
+      "finding": "正文明确为江苏A卷标准与品牌，并非北京。排除。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "marketing",
+      "title": "高顿2026北京真题领取页",
+      "url": "https://m.gwy.com/dfgwy/395860.html",
+      "finding": "需咨询领取，已提取正文未提供完整材料和题目。不能计为已取得原卷。"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2016",
+      "url": "http://zjgzks.com/news/113.html",
+      "kind": "省组织部、人社厅、公务员局2016-03-01大纲转载",
+      "fact": "行测A/B/C三卷；行政执法借用B，村干部岗位2使用C；申论仅A/B"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2017",
+      "url": "http://renshi.people.com.cn/n1/2017/0302/c139617-29118777.html",
+      "kind": "人民网转载同年招考公告",
+      "fact": "村干部职位2使用独立行测C，行政执法使用B；没有新增申论C"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2018",
+      "url": "http://www.zjrwxy.com/Art/Art_24/Art_24_731.aspx",
+      "kind": "浙江工商大学人民武装学院转载同年公告",
+      "fact": "普通职位行测A/B，村干部职位2行测C"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2019",
+      "url": "http://edu.people.com.cn/n1/2019/0410/c1053-31022961.html",
+      "kind": "人民网同期招考报道",
+      "fact": "综合类A、基层类B、村干部职位2行测C"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2020",
+      "url": "https://hznews.hangzhou.com.cn/chengshi/content/2020-06/10/content_7752796_0.htm",
+      "kind": "杭州网转载浙江发布、浙江组工的实际延期笔试安排",
+      "fact": "2020-07-26实际笔试安排列出村干部C；特警使用现有A不另造卷"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2021",
+      "url": "https://zzb.huzhou.gov.cn/gsgg/20201209/i2857282.html",
+      "kind": "湖州市委组织部原公告",
+      "fact": "行测A/B/C/D；D对应村干部，配套综合应用能力不是申论"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2022",
+      "url": "https://m.hz.bendibao.com/edu/108518.shtm",
+      "kind": "同年官方公告全文转载",
+      "fact": "行测A/B/C/D，D为村干部；不因延期重启另造新年度试卷"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2023",
+      "url": "http://gwy.zjks.gov.cn/zjgwy/website/queryDetail.htm?mkxh=2&tzid=7502",
+      "kind": "浙江省公务员考试录用网、宁波2023原公告",
+      "fact": "实际正文为2023宁波公告，四类行测含D；不能按搜索页当前日期误归2026"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2024",
+      "url": "https://m.gwy.com/zjgwy/334087.html",
+      "kind": "2023-11-03省公务员局2024大纲转载",
+      "fact": "行测A/B/C/D，申论A/B/C"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2025",
+      "url": "https://yjsy.wmu.edu.cn/info/2901/129951.htm",
+      "kind": "温州医科大学转载2025省公务员招录公告",
+      "fact": "四类行测含D，村干部另加试综合应用能力"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "zj_2026",
+      "url": "https://hznews.hangzhou.com.cn/chengshi/content/2025-11/03/content_9116049.htm",
+      "kind": "杭州网转载2026浙江省招录公告",
+      "fact": "四类行测含D，公共科目2025-12-07实际考试；不将综合应用能力算申论"
+    },
+    {
+      "input": "scope-count-a.json",
+      "id": "js_2023_official",
+      "url": "https://www.hsyf.gov.cn/p/6240.html",
+      "title": "江苏省2023年度考试录用公务员公共科目笔试考试大纲",
+      "kind": "先锋组织部门gov.cn发布同年官方大纲；TinyFish完整提取",
+      "finding": "A/B/C三类，每类公共科目笔试均包含行政职业能力测验和申论两科；C为真实独立年度分类，不能将缺C当复用B"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH16AB",
+      "url": "http://edu.people.com.cn/gongwuyuan/n1/2015/1214/c88733-27925793.html",
+      "title": "2016上海公务员考试行测题量不变，人民网2015-12-14转载中国教育在线",
+      "supports": "同年明确行测分A/B两类，两卷各140题；不能把岗位AB错误去重为一套。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH18-21AB",
+      "url": "http://www.shgkw.org/2021/1129/42363.html",
+      "title": "历年上海市考行测题型及申论主题一览，2021-11-29",
+      "supports": "分年明确2018A/B各135、2019至2021A/B各130。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH24AB",
+      "url": "https://www.jfdaily.com/wx/detail.do?id=675851",
+      "title": "解放日报上观2023-11-03上海2024招录公告报道",
+      "supports": "公共科目行测与申论、笔试AB两类；官方原文 https://shacs.gov.cn/recruits/340/article/966。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH26ONE",
+      "url": "http://sh.xinhuanet.com/20251101/3d8662ea46834c758e48193886f6ecd7/c.html",
+      "title": "新华社2025-11-01，2026上海公务员考试启动报名",
+      "supports": "2026不再区分A/B，行政执法岗位纳入本次常规招录；不能虚造B卷。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH26SYLLABUS",
+      "url": "https://shacs.gov.cn/gwyj/api/files/fetch?fid=ea6c24ce-420c-4f3f-ad4f-483f83cf2c4b",
+      "title": "上海市2026公共科目考试大纲，官方",
+      "supports": "本年常规行测和申论公共科目。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH26COUNT",
+      "url": "https://www.kkgwy.com/e/extend/exam/paper.php?id=10342",
+      "title": "2026上海行测同年题本目录",
+      "supports": "130题；当前统考129，另列题量缺口，目录不等于原件逐题认证。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH17A",
+      "url": "http://www.zggwy.org/shgwy/367298.html",
+      "title": "2017年上海市公务员考试行测真题（A），2017-05-03",
+      "supports": "独立A卷同年题录，原文链接PDF未获得可读全文，不能硬把136题AB合卷认定为完整A。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH17REVIEW",
+      "url": "https://mt.sohu.com/learning/d20161218/121910909_139324.shtml",
+      "title": "上海华图刘磊，2017行测常识分析A卷分析，2016-12-18",
+      "supports": "当年A卷135题；与本库AB合卷136的身份/题序尚不能直接等同。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH22SPECIAL",
+      "url": "https://cgzf.sh.gov.cn/channel_8/20220819/1a689b735cb248ddbe238c9f4e03d319.html",
+      "title": "上海城管局2022行政执法公务员公告",
+      "supports": "官方明确两科：行测+申论（行政执法）；2022-09-25下午13:00–14:30另考行测。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH24SPECIAL",
+      "url": "https://www.shqp.gov.cn/shqp/ggfw/bmts/20240820/1183054.html",
+      "title": "上海青浦区政府2024执法专项公告",
+      "supports": "官方明确两科：行测+申论；2024-09-21下午13:30–15:00另考行测，公安专业另加不重复计。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH25SPECIAL",
+      "url": "https://www.lysrsks.com/index/news/detail.html?id=2009",
+      "title": "上海市2025年度考试录用执法类公务员公告",
+      "supports": "公告明确两科：行测+申论；2025-09-13下午13:30–15:00另考行测，公安专业另加不重复计。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "SH23NOSPECIAL",
+      "url": "https://www.jfdaily.com/wx/detail.do?id=784997",
+      "title": "上海执法公务员2024重启招录，解放日报",
+      "supports": "停招一年后重启，2023不计算专项。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "TJ17SPECIAL",
+      "url": "https://www.eol.cn/gongwuyuan/difang/skzx/201711/t20171127_1569596.shtml",
+      "title": "2017滨海新区等单位专项大纲，天津人社局原发/中国教育在线转载",
+      "supports": "12月23日另场专项，区别4月常规。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "TJ17XC",
+      "url": "http://www.banyuetanedu.com/a/tianjinshikao/linianzhenti/bishi/291.html",
+      "title": "2017天津滨海新区行测真题",
+      "supports": "独立题本，首题三个连续自然数乘积210；当前天津2017常规首题自来水消毒，不覆盖专项。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "TJ17XCPDF",
+      "url": "http://www.houzhiwang.com/html/202003/12844.html",
+      "title": "2017天津滨海新区行测题本及答案目录",
+      "supports": "另有PDF题录与普通天津2017卷分列；完整PDF访问未获可读内容，此处用作存在/身份证据。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "TJ26OFFICIAL",
+      "url": "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202511/t20251105_7170794.html",
+      "title": "天津2026官方公告",
+      "supports": "公共科目及综合市区/街镇/执法岗位分类；没有据申论三类机械生成三份行测。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "TJXCINDEX",
+      "url": "https://m.gwysydw.com/bs/dqgwy/11-0-0/",
+      "title": "天津历年题本目录",
+      "supports": "常规行测每年单列，2017滨海另列；2021等申论分市/区/执法。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "TJ22COUNT",
+      "url": "https://www.kkgwy.com/e/extend/exam/paper.php?id=10274",
+      "title": "天津2022行测同年题本目录",
+      "supports": "90题；不可按邻年120误报本年残缺。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "FJXCINDEX",
+      "url": "https://ah.huatu.com/zt/fjgwyshiti/",
+      "title": "福建华图分年行测试题目录",
+      "supports": "常规行测逐年一套，不将福建A/B报考科目或申论类别乘成多份行测。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "FJ26TYPES",
+      "url": "http://fj.huatu.com/2026/0116/2509896.html",
+      "title": "2026福建公务员职位分析，2026-01-16",
+      "supports": "本年A类通用与A类省市综合管理；公安/英语为附加专业科目，不额外计公共行测纸卷。"
+    },
+    {
+      "input": "scope-count-b.json",
+      "id": "ESSAYREVIEW",
+      "supports": "已有申论逐卷题干/材料映射与独立卷型审计，沪30/23/7、津25/19/6、闽23/22/1；沪24/25统考和津25/26统考混合/重复来源不另计。"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "gd_2017_2018",
+      "url": "http://m.shenzhen.offcn.com/html/2020/08/63083.html",
+      "title": "2020广东省考行测科学推理备考指导",
+      "status": "TinyFish fetched 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "gd_2024_change",
+      "url": "http://www.eoffcn.com/kszx/detail/1770049.html",
+      "title": "2026广东省考新大纲有什么不同",
+      "status": "TinyFish search excerpt 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "gz_2017_single",
+      "url": "http://www.zggwy.org/guangdong/363352.html",
+      "title": "2017广州市公务员考试行测真题及答案解析（单考区）",
+      "status": "TinyFish fetched 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "gz_2017_double",
+      "url": "http://www.zggwy.org/guangdong/363354.html",
+      "title": "2017广州市公务员考试行测真题及答案解析（双考区）",
+      "status": "TinyFish fetched 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "gz_2018",
+      "url": "http://gd.sina.cn/news/gz/2018-03-26/detail-ifysqfnf6575916.d.html",
+      "title": "穗公务员考试竞争激烈程度超往年:平均竞争比119：1",
+      "status": "TinyFish fetched 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "sz_2020",
+      "url": "https://www.umainland.hk/umainland/sxjy/zxxx/yw/20201116095831470902/index.html",
+      "title": "深圳市服務“雙區”建設專項招錄公務員公告",
+      "status": "TinyFish fetched 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "sz_2020_secondary",
+      "url": "http://m.shenzhen.offcn.com/html/2021/07/76421.html",
+      "title": "历年深圳公务员考试龙岗区岗位情况分析",
+      "status": "TinyFish fetched 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "sz_2022",
+      "url": "https://csgg.gdufe.edu.cn/2021/1108/c1163a148067/page.htm",
+      "title": "深圳市2022年服务双区建设专项招录公务员公告转载",
+      "status": "TinyFish search excerpt 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "sz_2023",
+      "url": "https://szpsfy.gov.cn/fygg/content/post_1445172.html",
+      "title": "深圳市坪山区人民法院：深圳市2023年服务双区建设专项招录",
+      "status": "TinyFish fetched 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "sz_2024",
+      "url": "https://www.szgm.gov.cn/xxgk/xqgwhxxgkml/rsxx/gwyzk/content/post_11029041.html",
+      "title": "深圳市2024年服务高质量发展专项招录紧缺专业公务员公告",
+      "status": "TinyFish fetched 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "sz_2025",
+      "url": "http://www.zzb.sz.gov.cn/notice/announcement/content/post_1542373.html",
+      "title": "深圳市2025年服务高质量发展专项招录紧缺专业公务员公告",
+      "status": "TinyFish fetched 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "sz_2026_boundary",
+      "url": "http://www.zzb.sz.gov.cn/notice/announcement/content/post_1649287.html",
+      "title": "广东省2026年考试录用公务员深圳市职位资格审核等有关事项",
+      "status": "TinyFish search excerpt 2026-10-15"
+    },
+    {
+      "input": "scope-count-c.json",
+      "id": "gz_2017_official_news",
+      "url": "http://news.xinhuanet.com/politics/2017-03/25/c_1120694689.htm",
+      "title": "广州公考竞争比107:1 最热门职位冠亚军是城管",
+      "status": "TinyFish search excerpt 2026-10-15"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "http://zjgzks.com/news/113.html",
+      "kind": "省组织部、人社厅、公务员局2016-03-01大纲转载",
+      "fact": "行测A/B/C三卷；行政执法借用B，村干部岗位2使用C；申论仅A/B"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "http://renshi.people.com.cn/n1/2017/0302/c139617-29118777.html",
+      "kind": "人民网转载同年招考公告",
+      "fact": "村干部职位2使用独立行测C，行政执法使用B；没有新增申论C"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "http://www.zjrwxy.com/Art/Art_24/Art_24_731.aspx",
+      "kind": "浙江工商大学人民武装学院转载同年公告",
+      "fact": "普通职位行测A/B，村干部职位2行测C"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "http://edu.people.com.cn/n1/2019/0410/c1053-31022961.html",
+      "kind": "人民网同期招考报道",
+      "fact": "综合类A、基层类B、村干部职位2行测C"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "https://hznews.hangzhou.com.cn/chengshi/content/2020-06/10/content_7752796_0.htm",
+      "kind": "杭州网转载浙江发布、浙江组工的实际延期笔试安排",
+      "fact": "2020-07-26实际笔试安排列出村干部C；特警使用现有A不另造卷"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "https://zzb.huzhou.gov.cn/gsgg/20201209/i2857282.html",
+      "kind": "湖州市委组织部原公告",
+      "fact": "行测A/B/C/D；D对应村干部，配套综合应用能力不是申论"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "https://m.hz.bendibao.com/edu/108518.shtm",
+      "kind": "同年官方公告全文转载",
+      "fact": "行测A/B/C/D，D为村干部；不因延期重启另造新年度试卷"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "http://gwy.zjks.gov.cn/zjgwy/website/queryDetail.htm?mkxh=2&tzid=7502",
+      "kind": "浙江省公务员考试录用网、宁波2023原公告",
+      "fact": "实际正文为2023宁波公告，四类行测含D；不能按搜索页当前日期误归2026"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "https://m.gwy.com/zjgwy/334087.html",
+      "kind": "2023-11-03省公务员局2024大纲转载",
+      "fact": "行测A/B/C/D，申论A/B/C"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "https://yjsy.wmu.edu.cn/info/2901/129951.htm",
+      "kind": "温州医科大学转载2025省公务员招录公告",
+      "fact": "四类行测含D，村干部另加试综合应用能力"
+    },
+    {
+      "input": "scope-count-zj-special.json",
+      "url": "https://hznews.hangzhou.com.cn/chengshi/content/2025-11/03/content_9116049.htm",
+      "kind": "杭州网转载2026浙江省招录公告",
+      "fact": "四类行测含D，公共科目2025-12-07实际考试；不将综合应用能力算申论"
+    }
+  ],
+  "source_urls": [
+    "http://bj.people.com.cn/n2/2021/1213/c82840-35047589.html",
+    "http://download.tjgwyw.org/20180411145819_14866.pdf",
+    "http://edu.people.com.cn/gongwuyuan/n1/2015/1214/c88733-27925793.html",
+    "http://edu.people.com.cn/n1/2019/0410/c1053-31022961.html",
+    "http://fj.huatu.com/2026/0116/2509896.html",
+    "http://gd.sina.cn/news/gz/2018-03-26/detail-ifysqfnf6575916.d.html",
+    "http://gwy.zjks.gov.cn/zjgwy/website/queryDetail.htm?mkxh=2&tzid=7502",
+    "http://hangzhou.offcn.com/html/2021/10/74352.html",
+    "http://jiuye.www.sust.edu.cn/info/1140/25734.htm",
+    "http://m.shenzhen.offcn.com/html/2020/08/63083.html",
+    "http://m.shenzhen.offcn.com/html/2021/07/76421.html",
+    "http://news.xinhuanet.com/politics/2017-03/25/c_1120694689.htm",
+    "http://renshi.people.com.cn/n1/2017/0302/c139617-29118777.html",
+    "http://sh.xinhuanet.com/20251101/3d8662ea46834c758e48193886f6ecd7/c.html",
+    "http://www.banyuetanedu.com/a/tianjinshikao/linianzhenti/bishi/291.html",
+    "http://www.bjsgwy.org/2025/1209/25217.html",
+    "http://www.eoffcn.com/kszx/detail/1509001.html",
+    "http://www.eoffcn.com/kszx/detail/1770049.html",
+    "http://www.houzhiwang.com/html/202003/12844.html",
+    "http://www.jsgkw.org/2016/0314/12379.html",
+    "http://www.shgkw.org/2016/0926/9462.html",
+    "http://www.shgkw.org/2021/0820/40645.html",
+    "http://www.shgkw.org/2021/1129/42363.html",
+    "http://www.tjgwyw.org/2018/1220/24369.html",
+    "http://www.tjgwyw.org/2022/0224/38404.html",
+    "http://www.tjgwyw.org/2024/0122/46154.html",
+    "http://www.zggwy.org/guangdong/363352.html",
+    "http://www.zggwy.org/guangdong/363354.html",
+    "http://www.zggwy.org/shgwy/367298.html",
+    "http://www.zjrwxy.com/Art/Art_24/Art_24_731.aspx",
+    "http://www.zzb.sz.gov.cn/notice/announcement/content/post_1542373.html",
+    "http://www.zzb.sz.gov.cn/notice/announcement/content/post_1649287.html",
+    "http://zjgzks.com/news/113.html",
+    "https://ah.huatu.com/2024/1107/2948494.html",
+    "https://ah.huatu.com/zt/fjgwyshiti/",
+    "https://bj.huatu.com/2025/1110/1250304.html",
+    "https://cgzf.sh.gov.cn/channel_8/20220819/1a689b735cb248ddbe238c9f4e03d319.html",
+    "https://cn.chinadaily.com.cn/a/202007/03/WS5efeb5d9a310a859d09d5d86.html",
+    "https://csgg.gdufe.edu.cn/2021/1108/c1163a148067/page.htm",
+    "https://fenbi.com/page/fenxiaozixundetail/7/164/413686194537472",
+    "https://fj.huatu.com/zt/fzfb/",
+    "https://gwysydw.com/bs/gk/0-4-0/",
+    "https://hrss.sz.gov.cn/szksy/ztzl/gwyks/",
+    "https://hznews.hangzhou.com.cn/chengshi/content/2020-06/10/content_7752796_0.htm",
+    "https://hznews.hangzhou.com.cn/chengshi/content/2025-11/03/content_9116049.htm",
+    "https://m.gwy.com/bjgwy/275807.html",
+    "https://m.gwy.com/dfgwy/395860.html",
+    "https://m.gwy.com/zjgwy/334087.html",
+    "https://m.gwysydw.com/bs/dqgwy/11-0-0/",
+    "https://m.hz.bendibao.com/edu/108518.shtm",
+    "https://mt.sohu.com/learning/d20161218/121910909_139324.shtml",
+    "https://shacs.gov.cn/gwyj/api/files/fetch?fid=ea6c24ce-420c-4f3f-ad4f-483f83cf2c4b",
+    "https://shacs.gov.cn/recruits/340/article/966",
+    "https://szpsfy.gov.cn/fygg/content/post_1445172.html",
+    "https://www.aipta.com/zt/sk/js/",
+    "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202311/t20231110_3299396.html",
+    "https://www.bjdj.gov.cn/article/3000206044.html",
+    "https://www.eoffcn.com/kszx/detail/1208330.html",
+    "https://www.eoffcn.com/kszx/detail/1229673.html",
+    "https://www.eoffcn.com/kszx/detail/1275187.html",
+    "https://www.eol.cn/gongwuyuan/difang/skzx/201711/t20171127_1569596.shtml",
+    "https://www.fenbi.com/fpr/doc-user-v2/dir/30204",
+    "https://www.hsyf.gov.cn/p/6240.html",
+    "https://www.jfdaily.com/wx/detail.do?id=675851",
+    "https://www.jfdaily.com/wx/detail.do?id=784997",
+    "https://www.kkgwy.com/e/extend/exam/index.php?cid=197",
+    "https://www.kkgwy.com/e/extend/exam/index.php?cid=199",
+    "https://www.kkgwy.com/e/extend/exam/index.php?cid=218",
+    "https://www.kkgwy.com/e/extend/exam/index.php?cid=219",
+    "https://www.kkgwy.com/e/extend/exam/index.php?cid=226",
+    "https://www.kkgwy.com/e/extend/exam/paper.php?id=10274",
+    "https://www.kkgwy.com/e/extend/exam/paper.php?id=10342",
+    "https://www.kkgwy.com/e/extend/exam/paper.php?id=10965",
+    "https://www.kkgwy.com/e/extend/exam/paper.php?id=10966",
+    "https://www.lysrsks.com/index/news/detail.html?id=2009",
+    "https://www.ncss.cn/ncss/zt/2026gk.shtml",
+    "https://www.shqp.gov.cn/shqp/ggfw/bmts/20240820/1183054.html",
+    "https://www.suzhou.gov.cn/szsrmzf/gwyjsydwklxx/202510/5db8eab43b324856be70dc743b7fa4c6.shtml",
+    "https://www.szgm.gov.cn/xxgk/xqgwhxxgkml/rsxx/gwyzk/content/post_11029041.html",
+    "https://www.tj.gov.cn/zwgk/zfxxgkzl/fdzdgknr/zkly/zk/202511/t20251105_7170794.html",
+    "https://www.umainland.hk/umainland/sxjy/zxxx/yw/20201116095831470902/index.html",
+    "https://www.xinhuanet.com/politics/2018-03/25/c_1122586574.htm",
+    "https://yjsy.wmu.edu.cn/info/2901/129951.htm",
+    "https://zhuanlan.zhihu.com/p/438641741",
+    "https://zhuanlan.zhihu.com/p/669874062",
+    "https://zzb.huzhou.gov.cn/gsgg/20201209/i2857282.html"
+  ],
+  "read_only_audit_inputs": {
+    "scope-count-a.json": {
+      "sha256": "f67c327d54926a9a6d51db1c15ad69b59a9ca8b861ad0866e68645ba540ade1f",
+      "bytes": 213068
+    },
+    "scope-count-b.json": {
+      "sha256": "1b9c19bb4d4a50faf1b0e2feb69a21a104e5d6df4e228cd0a3f94756712e76fc",
+      "bytes": 82941
+    },
+    "scope-count-c.json": {
+      "sha256": "36f8b6596ce7f7ec299e79ec6eb87d81d911535c0c3ae3e2d3f201b018c57aac",
+      "bytes": 67105
+    },
+    "scope-count-zj-special.json": {
+      "sha256": "759b6bc9729cc625da50f1af3f1f42732d9f5e27148f884dacd2249dbb4a58f1",
+      "bytes": 4689
+    }
+  }
+}
