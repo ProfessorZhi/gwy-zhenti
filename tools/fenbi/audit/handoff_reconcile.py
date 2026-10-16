@@ -111,20 +111,81 @@ def library_question_view(repo, paper_rel, number, parsed):
     }
 
 
-def choose_join(strategy, library_numbers, source_count):
-    """Resolve the join strategy, returning (strategy, reason)."""
+def evaluate_joins(library_numbers, source_numbers):
+    """Score both join strategies against the actual numbers on both sides.
+
+    Returns (scores, best). `number` pairs equal numbers; `sequence` pairs by
+    position. The two disagree exactly when the library preserves original
+    numbering with gaps and the source does not — and it is the *positional*
+    join that misaligns there, not the number join.
+    """
     ordered = sorted(library_numbers)
-    has_gaps = bool(ordered) and ordered[-1] != len(ordered)
-    if strategy == "auto":
-        if has_gaps:
-            return "sequence", (
-                f"library preserves original numbering with gaps "
-                f"({len(ordered)} questions, highest {ordered[-1]}); a direct number "
-                f"join would misalign every question after the first gap")
-        return "number", "library numbering is contiguous; number join is unambiguous"
-    if strategy == "sequence":
-        return "sequence", "requested explicitly"
-    return "number", "requested explicitly"
+    library_set = set(library_numbers)
+    number_hits = sum(1 for s in source_numbers if s in library_set)
+    sequence_hits = sum(1 for i, s in enumerate(source_numbers)
+                        if i < len(ordered) and ordered[i] == s)
+    scores = {
+        "number": {"hits": number_hits, "of": len(source_numbers)},
+        "sequence": {"hits": sequence_hits, "of": len(source_numbers)},
+    }
+    best = "number" if number_hits >= sequence_hits else "sequence"
+    return scores, best
+
+
+def join_warning(library_numbers, source_numbers, scores, chosen):
+    """Flag the gap hazard whenever the library preserves gaps.
+
+    Score alone cannot tell "the source numbers some questions the same way"
+    from "the source is contiguous and the numbers merely coincide": a
+    contiguous 1..93 source against this 93/100 library scores 86 for a number
+    join, of which the last 18 are wrong. So whenever the library has gaps we
+    say so and show both scores, rather than letting the operator trust a
+    silent choice.
+    """
+    ordered = sorted(library_numbers)
+    if not ordered or ordered[-1] == len(ordered):
+        return None
+    gap_numbers = [n for n in range(1, ordered[-1] + 1) if n not in set(ordered)]
+    shifted_example = None
+    for index, source_number in enumerate(source_numbers):
+        if index < len(ordered) and ordered[index] != source_number:
+            shifted_example = {"source_number": source_number,
+                               "positional_join_would_use_library_number": ordered[index]}
+            break
+    return {
+        "reason": "library-preserves-original-numbering-with-gaps",
+        "library_gap_numbers": gap_numbers[:20],
+        "chosen": chosen,
+        "candidate_scores": scores,
+        "hazard": ("a positional join would pair source questions with the wrong "
+                   "library questions after the first gap"),
+        "example": shifted_example,
+        "action": ("confirm the source's numbering convention (gap-preserving vs "
+                   "contiguous) before trusting either join"),
+    }
+
+
+def choose_join(strategy, library_numbers, source_numbers):
+    """Resolve the join strategy, returning (strategy, reason, scores).
+
+    `auto` picks whichever strategy actually lines up more questions, rather
+    than assuming a gap-preserving library implies a contiguous source. The
+    earlier heuristic did the latter and would have mapped 广东2020 source
+    question 69 onto library question 76 — the misalignment this guard exists
+    to prevent.
+    """
+    scores, best = evaluate_joins(library_numbers, source_numbers)
+    if strategy in ("number", "sequence"):
+        return strategy, "requested explicitly", scores
+    if best == "number":
+        reason = (f"number join lines up {scores['number']['hits']} of "
+                  f"{scores['number']['of']} source questions vs "
+                  f"{scores['sequence']['hits']} positionally")
+    else:
+        reason = (f"positional join lines up {scores['sequence']['hits']} of "
+                  f"{scores['sequence']['of']} source questions vs "
+                  f"{scores['number']['hits']} by number")
+    return best, reason, scores
 
 
 def reconcile_item(source, library, join_basis):
@@ -184,7 +245,9 @@ def build(repo, handoff, strategy, library_path=None):
     parsed = parse_paper(body)
     library_numbers = sorted(parsed["questions"])
 
-    join, join_reason = choose_join(strategy, library_numbers, len(handoff["questions"]))
+    source_numbers = [q.get("source_number") for q in handoff["questions"]]
+    join, join_reason, join_scores = choose_join(
+        strategy, library_numbers, source_numbers)
     ordered = list(library_numbers)
 
     items, unmapped_source, unmapped_library = [], [], []
@@ -251,6 +314,9 @@ def build(repo, handoff, strategy, library_path=None):
             "source_question_count": len(handoff["questions"]),
         },
         "join": {"strategy": join, "reason": join_reason,
+                 "candidate_scores": join_scores,
+                 "warning": join_warning(library_numbers, source_numbers,
+                                         join_scores, join),
                  "unmapped_source_items": unmapped_source,
                  "library_numbers_not_covered": unmapped_library},
         "dimension_tally": tally,

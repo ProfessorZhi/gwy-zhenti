@@ -261,22 +261,71 @@ class ReconcileTests(unittest.TestCase, HandoffFixtureMixin):
         doc = handoff_reconcile.build(self.REPO, handoff, "auto")
         self.assertNotIn(doc["dimension_tally"]["answer"]["different"], (1,))
 
-    def test_auto_join_uses_sequence_when_library_has_gaps(self):
+    def test_auto_join_scores_both_strategies(self):
+        # A contiguous 1..93 source against a gap-preserving 93/100 library.
+        # Number still scores higher (68 real + 18 coincidental); the point of
+        # the test is that both scores are reported and the hazard is flagged,
+        # because the score alone cannot tell coincidence from alignment.
         handoff = self.library_handoff(self.REPO, self.GD_PAPER, source_numbering="sequence")
         doc = handoff_reconcile.build(self.REPO, handoff, "auto")
-        self.assertEqual(doc["join"]["strategy"], "sequence")
-        self.assertIn("gaps", doc["join"]["reason"])
-        # All 93 source questions should map onto the 93 library questions.
-        self.assertEqual(len(doc["items"]), 93)
-        self.assertEqual(doc["join"]["library_numbers_not_covered"], [])
+        scores = doc["join"]["candidate_scores"]
+        self.assertEqual(scores["number"]["hits"], 86)
+        self.assertEqual(scores["sequence"]["hits"], 68)
+        self.assertEqual(doc["join"]["strategy"], "number")
+        warning = doc["join"]["warning"]
+        self.assertIsNotNone(warning, "gap hazard must be surfaced")
+        self.assertEqual(warning["library_gap_numbers"], [69, 70, 71, 72, 73, 74, 75])
+        self.assertIn("confirm", warning["action"])
 
-    def test_sequence_join_maps_past_the_gap_correctly(self):
-        handoff = self.library_handoff(self.REPO, self.GD_PAPER, source_numbering="sequence")
+    def test_auto_join_prefers_number_for_gap_preserving_source(self):
+        # The real fenbi 广东2020 case: source 1..100 with 69-75 present, library
+        # 1..100 with 69-75 absent. A positional join here is the 69->76 error.
+        handoff = {
+            "schema": "fenbi-candidate-handoff-v1",
+            "paper": {"label": "广东2020县级卷", "library_path": self.GD_PAPER,
+                      "fenbi_source_id": "96785", "binding": "unverified"},
+            "questions": [{
+                "source_number": n, "qid": f"test-{n}", "stem": f"合成占位题干 {n}",
+                "options": [{"label": lb, "text": f"选项 {lb}"} for lb in "ABCD"],
+                "material_ids": [], "images": [], "answer": None, "explanation": None,
+            } for n in range(1, 101)],
+        }
         doc = handoff_reconcile.build(self.REPO, handoff, "auto")
-        # source position 69 (1-based) is library 76: the library omits 69-75.
-        item = doc["items"][68]
-        self.assertEqual(item["source_number"], 69)
-        self.assertEqual(item["library_number"], 76)
+        self.assertEqual(doc["join"]["strategy"], "number")
+        scores = doc["join"]["candidate_scores"]
+        self.assertEqual(scores["number"]["hits"], 93)
+        self.assertLess(scores["sequence"]["hits"], scores["number"]["hits"])
+        # Library 76 must pair with source 76 — never with source 69.
+        pair = next(i for i in doc["items"] if i["library_number"] == 76)
+        self.assertEqual(pair["source_number"], 76)
+        # The seven gap numbers exist only on the source side.
+        self.assertEqual(
+            [i["source_number"] for i in doc["join"]["unmapped_source_items"]],
+            [69, 70, 71, 72, 73, 74, 75])
+        # And the hazard is still surfaced for the operator to confirm.
+        self.assertIsNotNone(doc["join"]["warning"])
+        self.assertEqual(doc["join"]["warning"]["example"]["source_number"], 69)
+        self.assertEqual(
+            doc["join"]["warning"]["example"]["positional_join_would_use_library_number"],
+            76)
+
+    def test_forced_sequence_join_reproduces_the_69_to_76_error(self):
+        """Documents the hazard the guard exists to prevent."""
+        handoff = {
+            "schema": "fenbi-candidate-handoff-v1",
+            "paper": {"label": "广东2020县级卷", "library_path": self.GD_PAPER,
+                      "fenbi_source_id": "96785", "binding": "unverified"},
+            "questions": [{
+                "source_number": n, "qid": f"test-{n}", "stem": f"合成占位题干 {n}",
+                "options": [{"label": lb, "text": f"选项 {lb}"} for lb in "ABCD"],
+                "material_ids": [], "images": [], "answer": None, "explanation": None,
+            } for n in range(1, 101)],
+        }
+        doc = handoff_reconcile.build(self.REPO, handoff, "sequence")
+        pair = next(i for i in doc["items"] if i["library_number"] == 76)
+        self.assertEqual(pair["source_number"], 69, "positional join shifts by the gap")
+        self.assertEqual(pair["join_basis"], "shifted")
+        self.assertEqual(doc["items"][0]["dimensions"]["stem"]["status"], "different")
 
     def test_number_join_leaves_declared_gaps_unmapped(self):
         # A source that numbers its own questions 69-75 while the library omits
@@ -365,6 +414,87 @@ class ReconcileTests(unittest.TestCase, HandoffFixtureMixin):
         doc = handoff_reconcile.build(self.REPO, adapted, "auto",
                                       library_path=self.C_PAPER)
         self.assertEqual(doc["dimension_tally"]["stem"]["different"], 0)
+
+
+class EvidencePackTests(unittest.TestCase):
+    """The 11-question evidence pack must never smuggle in content or provenance."""
+
+    @classmethod
+    def setUpClass(cls):
+        import missing_evidence_pack
+        cls.doc = missing_evidence_pack.build(repo_root())
+
+    def test_covers_the_eleven_confirmed_questions(self):
+        self.assertEqual(len(self.doc["items"]), 11)
+        ids = {i["id"] for i in self.doc["items"]}
+        self.assertEqual(ids, {
+            "江苏2024A类-76", "江苏2024A类-96", "江苏2024A类-110", "江苏2024A类-111",
+            "广东2020县级卷-69", "广东2020县级卷-70", "广东2020县级卷-71",
+            "广东2020县级卷-72", "广东2020县级卷-73", "广东2020县级卷-74",
+            "广东2020县级卷-75",
+        })
+
+    def test_join_is_by_number_with_no_renumbering(self):
+        for item in self.doc["items"]:
+            self.assertEqual(item["mapping"]["join"], "number")
+            self.assertEqual(item["mapping"]["source_number"], item["original_number"])
+            self.assertEqual(item["mapping"]["insert_at_original_number"],
+                             item["original_number"])
+            self.assertFalse(item["mapping"]["renumbering_required"])
+
+    def test_guangdong_69_records_the_positional_hazard(self):
+        item = next(i for i in self.doc["items"] if i["id"] == "广东2020县级卷-69")
+        self.assertTrue(item["mapping"]["positional_join_is_wrong"])
+        self.assertEqual(item["mapping"]["positional_join_would_use_library_number"], 76)
+
+    def test_every_item_flags_the_positional_hazard(self):
+        flagged = [i["id"] for i in self.doc["items"]
+                   if i["mapping"]["positional_join_is_wrong"]]
+        self.assertEqual(len(flagged), 11)
+
+    def test_gap_numbers_are_absent_in_the_library(self):
+        for item in self.doc["items"]:
+            self.assertFalse(item["library"]["heading_present"])
+            self.assertEqual(item["library"]["state"], "absent-gap-preserved")
+
+    def test_nothing_is_claimed_official(self):
+        for item in self.doc["items"]:
+            self.assertFalse(item["source"]["is_official"])
+            self.assertEqual(item["provenance_class"], "recollection-institution")
+        for paper in self.doc["papers"]:
+            self.assertFalse(paper["is_official"])
+
+    def test_answers_and_explanations_stay_unknown(self):
+        for item in self.doc["items"]:
+            self.assertEqual(item["established"]["answer"], "unknown")
+            self.assertEqual(item["established"]["explanation"], "unknown")
+
+    def test_content_is_pending_not_present(self):
+        for item in self.doc["items"]:
+            self.assertEqual(item["established"]["content_available"], "pending-handoff")
+            self.assertEqual(item["repair_state"], "candidate-not-written")
+            self.assertEqual(item["write_authorization"], "not-confirmed")
+
+    def test_pack_carries_no_question_text(self):
+        blob = json.dumps(self.doc, ensure_ascii=False)
+        for phrase in ("巍巍华山", "国家作物种质库", "数字游民", "压舱石",
+                       "苍鹰", "极简婚礼", "治污投入"):
+            self.assertNotIn(phrase, blob)
+
+    def test_supporting_sources_are_not_presented_as_content(self):
+        for source in self.doc["supporting_sources"]:
+            self.assertIn(source["status"],
+                          ("placeholder-no-content", "number-absent-from-source"))
+
+    def test_authorization_is_not_confirmed(self):
+        self.assertEqual(self.doc["authorization_checklist"]["state"], "NOT CONFIRMED")
+
+    def test_js2025c_backfill_is_out_of_scope(self):
+        # The scope note names 2025C only to exclude it; no item may cover it.
+        self.assertIn("must not be overwritten", self.doc["scope"]["statement"])
+        for item in self.doc["items"]:
+            self.assertNotIn("江苏/2025", item["paper"])
+            self.assertNotIn("2025C", item["label"])
 
 
 class CliSmokeTests(unittest.TestCase):

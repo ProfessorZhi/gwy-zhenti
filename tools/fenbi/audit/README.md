@@ -73,6 +73,28 @@ Accepts either the reduced `fenbi-candidate-handoff-v1` projection or a framewor
 never published stay `unknown` — they are never borrowed from the library or
 from a sibling paper.
 
+`auto` scores both join strategies against the real numbers on each side. Because
+a score cannot tell an aligned join from a coincidental one, any paper whose
+library preserves numbering gaps also gets an unconditional `join.warning`
+naming the gap numbers and the specific mis-mapping a positional join would
+produce. The live capture confirmed both target papers are gap-preserving on the
+source side too, so `--join number` is the correct choice for them.
+
+## Missing-question evidence packs
+
+```bash
+python3 tools/fenbi/audit/missing_evidence_pack.py --repo . \
+    [--third-batch-file <local copy of the capture report>] --out <pack.json>
+```
+
+Builds a per-question package for the 11 questions whose gaps were confirmed to
+exist on the live source (江苏2024A 76/96/110/111, 广东2020县级 69–75): number
+mapping, what the library holds, which source establishes what, and the evidence
+still required. It emits no question text — required fields are named, not
+filled. Answers and explanations stay `unknown`, provenance is always
+`recollection-institution` (never official), and writing stays unauthorized
+until the redistribution permission is confirmed in writing.
+
 ## Tests
 
 ```bash

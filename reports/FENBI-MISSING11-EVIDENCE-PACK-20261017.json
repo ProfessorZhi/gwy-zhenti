@@ -1,0 +1,702 @@
+{
+  "pack": "missing-evidence-pack",
+  "date": "2026-10-17",
+  "repo_head": "12be252b5b58d617d215f8c7a5125a9adec8c2fb",
+  "scope": {
+    "papers": 2,
+    "questions": 11,
+    "statement": "The 11 questions whose gaps are confirmed to exist on the live source. Separate from the 江苏2025C backfill, which must not be overwritten."
+  },
+  "papers": [
+    {
+      "label": "江苏2024A类",
+      "path": "省考/江苏/2024/行测-A类.md",
+      "fenbi_source_id": "4162243",
+      "source_question_count": 135,
+      "library_question_count": 131,
+      "declared_missing": [
+        76,
+        96,
+        110,
+        111
+      ],
+      "source_kind": "recollection-institution",
+      "is_official": false,
+      "confirm_note": "Source holds 135 questions, the library 131. The four source-only numbers are exactly 76/96/110/111 — the library's declared gaps."
+    },
+    {
+      "label": "广东2020县级卷",
+      "path": "省考/广东/2020/行测-县级卷.md",
+      "fenbi_source_id": "96785",
+      "source_question_count": 100,
+      "library_question_count": 93,
+      "declared_missing": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "source_kind": "recollection-institution",
+      "is_official": false,
+      "confirm_note": "Source holds 100 questions, the library 93. The seven source-only numbers are exactly 69–75 — the library's declared gaps. The capture also flags 14 same-number content differences elsewhere in this paper, which are a separate question from these gaps."
+    }
+  ],
+  "supporting_sources": [
+    {
+      "name": "上岸通 fixed reference",
+      "role": "pinned by the repo's own report",
+      "status": "placeholder-no-content",
+      "applies_to": [
+        "江苏2024A类",
+        "广东2020县级卷"
+      ]
+    },
+    {
+      "name": "展鸿教育 2024江苏A 真题 PDF",
+      "role": "independent institution edition",
+      "status": "placeholder-no-content",
+      "applies_to": [
+        "江苏2024A类"
+      ]
+    },
+    {
+      "name": "星光公考 100题版 广东2020县级",
+      "role": "independent institution edition",
+      "status": "placeholder-no-content",
+      "applies_to": [
+        "广东2020县级卷"
+      ]
+    },
+    {
+      "name": "崖门/丫门 pinned PDF 广东2020",
+      "role": "pinned by the repo's own report",
+      "status": "number-absent-from-source",
+      "applies_to": [
+        "广东2020县级卷"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "江苏2024A类-76",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "original_number": 76,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 76,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 76,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 77,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "4162243",
+        "capture_dir": "papers/js-2024-xingce-a-4162243/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "江苏2024A类-96",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "original_number": 96,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 96,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 96,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 98,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "4162243",
+        "capture_dir": "papers/js-2024-xingce-a-4162243/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "江苏2024A类-110",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "original_number": 110,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 110,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 110,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 114,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "4162243",
+        "capture_dir": "papers/js-2024-xingce-a-4162243/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "江苏2024A类-111",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "original_number": 111,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 111,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 111,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 115,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "4162243",
+        "capture_dir": "papers/js-2024-xingce-a-4162243/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-69",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 69,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 69,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 69,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 76,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-70",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 70,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 70,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 70,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 77,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-71",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 71,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 71,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 71,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 78,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-72",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 72,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 72,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 72,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 79,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-73",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 73,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 73,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 73,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 80,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-74",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 74,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 74,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 74,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 81,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-75",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 75,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 75,
+        "join": "number",
+        "join_basis": "source captured with 偏移 = 0: it numbers questions the same way the library does, so source N == library N",
+        "insert_at_original_number": 75,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 82,
+        "positional_join_is_wrong": true
+      },
+      "source": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "source_kind": "recollection-institution",
+        "source_title_kind": "网友回忆版",
+        "is_official": false,
+        "attribution_note": "Institution/recollection edition (网友回忆版). Must not be described as an official paper.",
+        "evidence_anchor": {
+          "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+          "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+          "pr": 29,
+          "sha256_recorded": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_local": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
+          "sha256_verified": true,
+          "verify_hint": "fetch the file at the recorded commit and pass it with --third-batch-file to re-check the digest",
+          "establishes": "source-side existence of the missing numbers, with 偏移 = 0"
+        }
+      },
+      "established": {
+        "existence_on_source": "confirmed",
+        "content_available": "pending-handoff",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "stem_text",
+        "options[]",
+        "material_linkage",
+        "figure_bytes+sha256",
+        "source_number"
+      ],
+      "provenance_class": "recollection-institution",
+      "repair_state": "candidate-not-written",
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated option or answer may stand in for source text."
+    }
+  ],
+  "authorization_checklist": {
+    "state": "NOT CONFIRMED",
+    "required_before_writing": [
+      "the source's licence/permission for redistribution into this repository",
+      "confirmation that the third-batch capture may be used as a repair source",
+      "a handoff supplying the per-question evidence fields listed above"
+    ],
+    "until_confirmed": [
+      "no question text is written into 省考/ or any tracked path",
+      "full candidate material stays in a gitignored restricted directory",
+      "only a machine-readable patch plan, source pointers and digests are published"
+    ]
+  },
+  "restricted_dir_convention": {
+    "path": "work/missing25-candidates/",
+    "gitignored": true,
+    "holds": "full candidate text and image bytes, local only"
+  },
+  "boundary": [
+    "No question text, option text, answer or explanation is included in this pack.",
+    "No file under 国考/, 省考/, 图片/ or catalog/ is modified.",
+    "The 江苏2025C backfill is not touched: those 12 remain as recorded, with their own unresolved evidence question.",
+    "Nothing here is described as an official paper; the source is a recollection edition."
+  ]
+}
