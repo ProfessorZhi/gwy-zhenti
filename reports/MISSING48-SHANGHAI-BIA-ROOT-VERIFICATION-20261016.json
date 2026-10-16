@@ -1,0 +1,11 @@
+{
+  "path": "省考/上海/2026/行测-统考.md",
+  "status": "passed",
+  "before_sha256": "c43f50fee7f91b0a05181a7537547ddf85e7de2d02cbd7ebf61e4593ea57813a",
+  "after_sha256": "d9160ec76f2d92a8bc81fdc87ec46b441a5250eb3eb44bd474badba7ee372b22",
+  "question_bodies_exactly_preserved": 129,
+  "unchanged_other_answer_bodies": 128,
+  "old_answer44_completely_preserved": true,
+  "native_source_issue_number": 44,
+  "new_original_conditions": 0
+}

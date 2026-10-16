@@ -1,0 +1,7 @@
+{
+  "path": "省考/江苏/2026/行测-A类.md",
+  "action": "remove_only_extra_blank_lines_at_end_of_new_file",
+  "before_sha256": "762e18943a350f6a2bab62a9804547c3aa4439662daec2870081e1d14b55e23a",
+  "after_sha256": "2f1a2d0e5ee0d9f311f99ae322c4fb95491f5008a4fb6296273a9b073db61899",
+  "removed_bytes": 1
+}

@@ -1,0 +1,2487 @@
+{
+  "path": "省考/北京/2026/行测-统考.md",
+  "before_exists": false,
+  "after_sha256": "012bcadc0301fc178f246827035298d8b0697da836df20a246c49f6c2ee98bf0",
+  "actual_questions": 67,
+  "reference_answers": 67,
+  "source_question_numbers": [
+    1,
+    19,
+    20,
+    21,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32,
+    33,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    91,
+    92,
+    93,
+    94,
+    95,
+    111,
+    113,
+    116,
+    118
+  ],
+  "source_answer_count": 66,
+  "ai_original_answer_numbers": [
+    1
+  ],
+  "source_dispute_numbers": [
+    26
+  ],
+  "full_original_paper": false,
+  "shared_material_groups_restored": [
+    "46-50",
+    "51-55",
+    "74-75",
+    "80-82"
+  ],
+  "images": [
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-019-p02.png",
+      "sha256": "468038a8bedd3083e2e5ba99f54ac36bf74857b939452324d2bea08aaf864ba9",
+      "source_page": 2,
+      "roi": [
+        110,
+        942,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        678
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-019-p03.png",
+      "sha256": "859ff43df10b06920f750640187140beb8e5731410c438180876041ee51483db",
+      "source_page": 3,
+      "roi": [
+        110,
+        50,
+        1100,
+        178
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        128
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-020-p03.png",
+      "sha256": "e96f40560c5fac461f04159dc17253cc4ca5cda1d2e80ff1713aeb331c9a52a7",
+      "source_page": 3,
+      "roi": [
+        110,
+        438,
+        1100,
+        1437
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        999
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-021-p04.png",
+      "sha256": "f3da2201eb696af5ebaa59c6683683d32bce56ddd6f37e74cc12fb1982cd3f5e",
+      "source_page": 4,
+      "roi": [
+        110,
+        278,
+        1100,
+        1452
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        1174
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-023-p05.png",
+      "sha256": "56fae389520abc658c67167a733926df8d6f54c8887ce5e218e2d3a5e5b350bb",
+      "source_page": 5,
+      "roi": [
+        110,
+        291,
+        1100,
+        1160
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        869
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-024-p05.png",
+      "sha256": "4298506a6665dacf20f0ce48847eea111a588e863b8aa10b8d739fca19d84284",
+      "source_page": 5,
+      "roi": [
+        110,
+        1419,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        201
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-024-p06.png",
+      "sha256": "4b544d26c8688ed8b5c0364bd43065913c9084f069216708ea763c7cd8611e75",
+      "source_page": 6,
+      "roi": [
+        110,
+        50,
+        1100,
+        579
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        529
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-025-p06.png",
+      "sha256": "1ea5899793fc6f54a360a9744c784626cb5fb166a96f0e62ef8a0543615ab448",
+      "source_page": 6,
+      "roi": [
+        110,
+        838,
+        1100,
+        1516
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        678
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-026-p07.png",
+      "sha256": "23057740f1ebf1764238bb40df0c1b470330789c99bad1a95feaf578184ca04f",
+      "source_page": 7,
+      "roi": [
+        110,
+        291,
+        1100,
+        1039
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        748
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-027-p07.png",
+      "sha256": "6c763446ffa8d07b8e05c2c03c1b8b5ed6a52a3c6155ef636329b1c6d4cb47b1",
+      "source_page": 7,
+      "roi": [
+        110,
+        1299,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        321
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-027-p08.png",
+      "sha256": "cada7f54038c5c1001c22a511a287b54517c9ff57636d435a936ea4eb46ea334",
+      "source_page": 8,
+      "roi": [
+        110,
+        50,
+        1100,
+        688
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        638
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-028-p08.png",
+      "sha256": "819c13465bceaf60692d2beaf723d1ed224afc4567b598e837276a0851410abd",
+      "source_page": 8,
+      "roi": [
+        110,
+        949,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        671
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-028-p09.png",
+      "sha256": "9e38b97bf96a1d3c54ac3d638909f3fac4e219f310c7dcade5d819c28971b982",
+      "source_page": 9,
+      "roi": [
+        110,
+        50,
+        1100,
+        634
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        584
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-029-p09.png",
+      "sha256": "910398027e016ef2356a66c41f58099c737bee063bf7c71152580271f8e68097",
+      "source_page": 9,
+      "roi": [
+        110,
+        894,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        726
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-029-p10.png",
+      "sha256": "a0dc57e15cb77ae449feeec958394cb9228b93c5501eecf04399eae9061dfe86",
+      "source_page": 10,
+      "roi": [
+        110,
+        50,
+        1100,
+        235
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        185
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-030-p10.png",
+      "sha256": "ea1c9343f6a3a9c19ccd1bc13a11343f86248f24d17f68743bc0f79ef3457352",
+      "source_page": 10,
+      "roi": [
+        110,
+        394,
+        1100,
+        1165
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        771
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-032-p10.png",
+      "sha256": "c3d097c7250fd55659460c92a131418ca5eadf725198a1b6afeba4fa025a5415",
+      "source_page": 10,
+      "roi": [
+        110,
+        1323,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        297
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-032-p11.png",
+      "sha256": "7d37d5bbabe51b3d39b1b6bbab2364256a4c0a28b7f1adbc24c24e91c9d1199a",
+      "source_page": 11,
+      "roi": [
+        110,
+        50,
+        1100,
+        623
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        573
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-033-p11.png",
+      "sha256": "55ee94ece3de0331c02d6f5d52380b47ee29cca5f710c271402bd66842b24200",
+      "source_page": 11,
+      "roi": [
+        110,
+        781,
+        1100,
+        1157
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        376
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-045-p11.png",
+      "sha256": "9e6a528863e90500948f4093ec682b4ccdc73c0b663a1005b98b6295045b429a",
+      "source_page": 11,
+      "roi": [
+        110,
+        1485,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        135
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-045-p12.png",
+      "sha256": "0aeb7755896cc1d8088835a06d7783a8f95e3805c91c6f4b6833f373d7752fb4",
+      "source_page": 12,
+      "roi": [
+        110,
+        50,
+        1100,
+        325
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        275
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-046-p13.png",
+      "sha256": "1c70076f6631f0a09a48b0eb54704ea198791b86c55a49a178675af0fe5496bc",
+      "source_page": 13,
+      "roi": [
+        110,
+        481,
+        1100,
+        867
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        386
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-047-p13.png",
+      "sha256": "62cbbb4768653d83950ffbed406d634748c560681ebe79d9d871336ca44d583e",
+      "source_page": 13,
+      "roi": [
+        110,
+        1255,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        365
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-047-p14.png",
+      "sha256": "0e4f3d0c0572b018e65bebc4a6a0a683e5974b95d9fd2a48713c06c734bcff5a",
+      "source_page": 14,
+      "roi": [
+        110,
+        50,
+        1100,
+        228
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        178
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-048-p14.png",
+      "sha256": "ff215b5db2cf64b640c0df36cfe0a00aa39c6d0cc55d6008005e2a86724c8cf8",
+      "source_page": 14,
+      "roi": [
+        110,
+        800,
+        1100,
+        1177
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        377
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-049-p14.png",
+      "sha256": "c43a4773a02d89334d2fa067036e412d2d2d6259aed49cba8ce539ac1ea420c8",
+      "source_page": 14,
+      "roi": [
+        110,
+        1334,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        286
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-049-p15.png",
+      "sha256": "8a21a88363348c1587bfd738fa6914866ad5ceb12d2390bfd005fb38dabb3077",
+      "source_page": 15,
+      "roi": [
+        110,
+        50,
+        1100,
+        136
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        86
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-050-p15.png",
+      "sha256": "4e344a6a345b1e6285093bc7f66de0665847cd837161cdd0a1794cb8b5647e5e",
+      "source_page": 15,
+      "roi": [
+        110,
+        397,
+        1100,
+        728
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        331
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-051-p16.png",
+      "sha256": "1ca258e190e0b926e2a023cbf53280ff108e3a0bbbd9db5c95fe16d7e331d1fb",
+      "source_page": 16,
+      "roi": [
+        110,
+        708,
+        1100,
+        1137
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        429
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-052-p16.png",
+      "sha256": "c17d709481a1af9f116e94dee591700f02d3818d9ec7f5b35c875eb9e50cafbb",
+      "source_page": 16,
+      "roi": [
+        110,
+        1394,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        226
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-052-p17.png",
+      "sha256": "154d56369628d04e7bde5f89e3a17a855ebef28cab062ad94b350181b62f487f",
+      "source_page": 17,
+      "roi": [
+        110,
+        50,
+        1100,
+        479
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        429
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-053-p17.png",
+      "sha256": "857a01e8f5e094760366901b2c01ded081b3dba1df40f1ea6513e9873c7e0693",
+      "source_page": 17,
+      "roi": [
+        110,
+        739,
+        1100,
+        1325
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        586
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-054-p18.png",
+      "sha256": "2adde806360b91f2cf7d9bf7bf9c1806c2a09c4bf3f5ee1a11f88af091078214",
+      "source_page": 18,
+      "roi": [
+        110,
+        232,
+        1100,
+        793
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        561
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-055-p18.png",
+      "sha256": "f3a9a9ee2840dcdde2ef6b2196d09079a820d606010207f03e91ec2fa3af79eb",
+      "source_page": 18,
+      "roi": [
+        110,
+        950,
+        1100,
+        1443
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        493
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-056-p19.png",
+      "sha256": "efac48c775dc82ca1160db45fd95cccd296a65a0df219555a08848b213f2d269",
+      "source_page": 19,
+      "roi": [
+        110,
+        137,
+        1100,
+        433
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        296
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-057-p19.png",
+      "sha256": "7fb999f685a389a1974f222230ab2b0b8ffddeca9f3c1325bfccc14e7e23c72e",
+      "source_page": 19,
+      "roi": [
+        110,
+        641,
+        1100,
+        938
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        297
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-058-p19.png",
+      "sha256": "c7b39289258fe1c8c224c56bf6a0a35046e08524e04bff63daad68f20e589886",
+      "source_page": 19,
+      "roi": [
+        110,
+        1145,
+        1100,
+        1528
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        383
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-059-p20.png",
+      "sha256": "d62f5d28537eccc335b171777a786c13f2789b0e72daa1458b24ecba3fdcaa15",
+      "source_page": 20,
+      "roi": [
+        110,
+        238,
+        1100,
+        918
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        680
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-060-p20.png",
+      "sha256": "6e63a116b7c1bc0cbaaf719e09bbdb57706465377af83f4ea7fe0fdb392f1fbf",
+      "source_page": 20,
+      "roi": [
+        110,
+        1307,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        313
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-060-p21.png",
+      "sha256": "b2d84f04dd70b758d4a60502595b0faf7f80ababde6f100e54dce0183112c238",
+      "source_page": 21,
+      "roi": [
+        110,
+        50,
+        1100,
+        133
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        83
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-061-p21.png",
+      "sha256": "21d2b77581342de01ec1eea0761e216380aa7bac65b474a13e4265ffad9cfc2b",
+      "source_page": 21,
+      "roi": [
+        110,
+        334,
+        1100,
+        657
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        323
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-062-p21.png",
+      "sha256": "e5267677ade9e043f856d26ea594932a95a004e617748de247ce7de6634e9c07",
+      "source_page": 21,
+      "roi": [
+        110,
+        855,
+        1100,
+        1203
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        348
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-063-p21.png",
+      "sha256": "50474c2a9c2f5126bfbc5aa7cc483bbfaa6e72dcbeb50860fa0ff8965dc99bac",
+      "source_page": 21,
+      "roi": [
+        110,
+        1544,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        76
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-063-p22.png",
+      "sha256": "30a13e8fb5d75f1c7e99fad6822e56b43ba0edb750de728ca385019acb03ca55",
+      "source_page": 22,
+      "roi": [
+        110,
+        50,
+        1100,
+        428
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        378
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-064-p22.png",
+      "sha256": "d4f0c2415faf5d6181fcda1f63afc730fd3e945b203daa879ca9cd5761063fa0",
+      "source_page": 22,
+      "roi": [
+        110,
+        678,
+        1100,
+        1025
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        347
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-065-p22.png",
+      "sha256": "4787d4db0d8064ac69a2554d8be2e712820330968983d4d5907c0ed27729272d",
+      "source_page": 22,
+      "roi": [
+        110,
+        1225,
+        1100,
+        1565
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        340
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-066-p23.png",
+      "sha256": "aaa808240932c4f3ddb53fbbed9aa2d6517555ec6d183bc95c180028aba74cfe",
+      "source_page": 23,
+      "roi": [
+        110,
+        290,
+        1100,
+        614
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        324
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-067-p23.png",
+      "sha256": "3af35f42659f72a5e568b532a980fddccb9fd82ce81d57c1edc18233bd5e67a8",
+      "source_page": 23,
+      "roi": [
+        110,
+        813,
+        1100,
+        1213
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        400
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-068-p23.png",
+      "sha256": "2bf16cf9933ae62b7eb5f6f2d66d98aee79259943cada97dc7f017c6cc635971",
+      "source_page": 23,
+      "roi": [
+        110,
+        1412,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        208
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-068-p24.png",
+      "sha256": "5bb6af6bbc36cf6f7342cc09e5903dc5f6a915e9d5824d993fcf85e13539f427",
+      "source_page": 24,
+      "roi": [
+        110,
+        50,
+        1100,
+        272
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        222
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-069-p24.png",
+      "sha256": "353c27e2881af7086a5b12e9eaae865b69fffffd4c7627831ee98a0e5c3995e6",
+      "source_page": 24,
+      "roi": [
+        110,
+        431,
+        1100,
+        726
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        295
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-070-p24.png",
+      "sha256": "4aaacff140f0bcb0c82d063f0e532caf2731c2ad84ecd4f2a66889873b711319",
+      "source_page": 24,
+      "roi": [
+        110,
+        926,
+        1100,
+        1378
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        452
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-071-p25.png",
+      "sha256": "cc2d22c41eb26c6913e52dd9c335140f13060c4da7db58bceb4c43b9d5a0dcf0",
+      "source_page": 25,
+      "roi": [
+        110,
+        137,
+        1100,
+        497
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        360
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-072-p25.png",
+      "sha256": "eec8c51416ecfd3a04a93aac5c7375e9178ab4aadae6937a797413b2fd8208f1",
+      "source_page": 25,
+      "roi": [
+        110,
+        1038,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        582
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-072-p26.png",
+      "sha256": "82578b2088d666bcb92611f1684666ae60baa02c95b6763890f66b16e0ecb67c",
+      "source_page": 26,
+      "roi": [
+        110,
+        50,
+        1100,
+        592
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        542
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-073-p26.png",
+      "sha256": "f6bdc410b4223eb5b2ac485de8352ecef232efd162e56a532ea264fe1774cbd1",
+      "source_page": 26,
+      "roi": [
+        110,
+        800,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        820
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-073-p27.png",
+      "sha256": "aa4f9f7fdc61a8c1038cb52c7a7c37f7c7508b0dcbbaca3b0e20137f07a317e4",
+      "source_page": 27,
+      "roi": [
+        110,
+        50,
+        1100,
+        261
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        211
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-074-p27.png",
+      "sha256": "f32ff64276f1263fd4bcce4c2f834076fc69810f11af5fc95901b1a7b930719e",
+      "source_page": 27,
+      "roi": [
+        110,
+        563,
+        1100,
+        1449
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        886
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-075-p28.png",
+      "sha256": "5d1c9bfaca517c38dcfa764661394e8e7fcfd9225fb0e3260b408b6bc52186d6",
+      "source_page": 28,
+      "roi": [
+        110,
+        86,
+        1100,
+        587
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        501
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-076-p28.png",
+      "sha256": "7e9b532d0e7387137bb160673ab7d1cee2a9218b40bb70f4df4541aac4529cc7",
+      "source_page": 28,
+      "roi": [
+        110,
+        944,
+        1100,
+        1316
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        372
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-077-p29.png",
+      "sha256": "479d4a9c65028b34cde3b66977c08f22b27a1a0c19cc797b3da4035b7c97dbbb",
+      "source_page": 29,
+      "roi": [
+        110,
+        370,
+        1100,
+        741
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        371
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-078-p29.png",
+      "sha256": "3344f05ca0dda7f6041bc866f51c43192a72c59ce760535799e9b5d2426d4726",
+      "source_page": 29,
+      "roi": [
+        110,
+        1126,
+        1100,
+        1497
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        371
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-079-p30.png",
+      "sha256": "57f0f6f394198818edb0380fad6ebb2dae37daadd731ebf90efdaac281cda271",
+      "source_page": 30,
+      "roi": [
+        110,
+        386,
+        1100,
+        713
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        327
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-080-p30.png",
+      "sha256": "7ae921df729c4f21973e469952968af35974512a3e0ad4e64fd89f870373b2a6",
+      "source_page": 30,
+      "roi": [
+        110,
+        1423,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        197
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-080-p31.png",
+      "sha256": "50a673faaba0475c761e24cb16293f8946188493bcc1f87fd4165cb2c0472890",
+      "source_page": 31,
+      "roi": [
+        110,
+        50,
+        1100,
+        400
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        350
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-081-p31.png",
+      "sha256": "a0f514517074412e69c6694f0c7740d506bd14059bd313a13287abbea4f4db26",
+      "source_page": 31,
+      "roi": [
+        110,
+        602,
+        1100,
+        1058
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        456
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-082-p31.png",
+      "sha256": "42f124b7551977ebab4ac4f18c246666a31b0e306802fafda0c4e9cc6b319ab5",
+      "source_page": 31,
+      "roi": [
+        110,
+        1277,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        343
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-082-p32.png",
+      "sha256": "55cea9e115bbaac20dc8a85811d81c2a62fbae291021bf3a852ece334da8cd41",
+      "source_page": 32,
+      "roi": [
+        110,
+        50,
+        1100,
+        247
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        197
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-083-p32.png",
+      "sha256": "abfee11ba4b5daa84bd9e7fde7541d4996de354e81e82b4dbd550a858e0a21a3",
+      "source_page": 32,
+      "roi": [
+        110,
+        477,
+        1100,
+        1012
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        535
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-084-p32.png",
+      "sha256": "dce455b34cf70c0c7f4f909345b9a16872b6a7059bced5368911c6367f98a8cd",
+      "source_page": 32,
+      "roi": [
+        110,
+        1306,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        314
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-084-p33.png",
+      "sha256": "e63c2fbe30e934d8ab17cb20987158ad05f091261a2382d291a3bbcb9c3b7b82",
+      "source_page": 33,
+      "roi": [
+        110,
+        50,
+        1100,
+        323
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        273
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-085-p33.png",
+      "sha256": "d9900e45b0f29aee3113ad52158eb6315f66e18382bce01039c9f73f63be5e79",
+      "source_page": 33,
+      "roi": [
+        110,
+        574,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        1046
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-085-p34.png",
+      "sha256": "b00a52cf28cd620dec7b24d3b9a20da00b1969c4265a2f4ab8157ca251c92fbe",
+      "source_page": 34,
+      "roi": [
+        110,
+        50,
+        1100,
+        177
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        127
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-086-p34.png",
+      "sha256": "57a4d54c7bb707ad76806c722c8cfae3eee7d877bb4dc5b32e7073a82e2b4991",
+      "source_page": 34,
+      "roi": [
+        110,
+        479,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        1141
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-086-p35.png",
+      "sha256": "db165413d3aa249b8eb831fbbb28038e24b318c2d62b80aa75583533b14df02c",
+      "source_page": 35,
+      "roi": [
+        110,
+        50,
+        1100,
+        859
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        809
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-087-p35.png",
+      "sha256": "7656132f91da58f41b464aa67d6aa88dddc16ee36e737619df4632cfd0594d53",
+      "source_page": 35,
+      "roi": [
+        110,
+        1109,
+        1100,
+        1590
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        481
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-088-p36.png",
+      "sha256": "72a2cadd99905a743125802e26faa2065d6f67599d3bc19abbf501a28a9eba5d",
+      "source_page": 36,
+      "roi": [
+        110,
+        1027,
+        1100,
+        1455
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        428
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-091-p37.png",
+      "sha256": "13c4eecec9ff945b7b054cb113001dc3e26732e57294f2db94205e5e0512978c",
+      "source_page": 37,
+      "roi": [
+        110,
+        86,
+        1100,
+        653
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        567
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-092-p37.png",
+      "sha256": "1c7fc0426053b63a7881dc70f314c86a7099b24cc7900a9e2f884118bfa843ae",
+      "source_page": 37,
+      "roi": [
+        110,
+        812,
+        1100,
+        1467
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        655
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-093-p38.png",
+      "sha256": "8df2e2b78120a262365ae7f262c81d129482fc4305cdb269a0c75aca11738072",
+      "source_page": 38,
+      "roi": [
+        110,
+        136,
+        1100,
+        932
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        796
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-094-p38.png",
+      "sha256": "5205a7b682508135f63074c76209db5fe271666aa1b9f26592fef9a7b90445c7",
+      "source_page": 38,
+      "roi": [
+        110,
+        1091,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        529
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-094-p39.png",
+      "sha256": "e3ea2f4597aa79283bf60f782221a35c6a9b747db9c4ad0f227fadf2f0a23060",
+      "source_page": 39,
+      "roi": [
+        110,
+        50,
+        1100,
+        323
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        273
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-095-p39.png",
+      "sha256": "af74e1c2770d345b17fa78df728b49fb9fd4f502f8c769fcf768c37d909d08c5",
+      "source_page": 39,
+      "roi": [
+        110,
+        482,
+        1100,
+        1365
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        883
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-111-p40.png",
+      "sha256": "5108fb029524a4d303f3049be2cc35a03330e22e801ef118e5ea1939b3918fe3",
+      "source_page": 40,
+      "roi": [
+        110,
+        136,
+        1100,
+        1018
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        882
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-113-p40.png",
+      "sha256": "19d389b3dcc5e866baf6c21a0c365f37db45c284588cd6c5dfe036eb75d860a9",
+      "source_page": 40,
+      "roi": [
+        110,
+        1322,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        298
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-113-p41.png",
+      "sha256": "ca47afc9af64f7027c4bf8ebb285f17df65a27da079c0e8508ce6555c70510ac",
+      "source_page": 41,
+      "roi": [
+        110,
+        50,
+        1100,
+        655
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        605
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-116-p41.png",
+      "sha256": "07c2bef081f2b62ea9949d88b600ac42ab2d67c11c105cf9339844e7bff99a75",
+      "source_page": 41,
+      "roi": [
+        110,
+        959,
+        1100,
+        1620
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        661
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-116-p42.png",
+      "sha256": "c161b741fd31d7f45f8a72662ad5b6949b0fbbebe08d9936e1d3377cbfac66d7",
+      "source_page": 42,
+      "roi": [
+        110,
+        50,
+        1100,
+        236
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        186
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/answer-118-p42.png",
+      "sha256": "70d432863d8df2573fda2bc60c111e12d9e039910db08d802d75841a1cc12cf2",
+      "source_page": 42,
+      "roi": [
+        110,
+        435,
+        1100,
+        1375
+      ],
+      "kind": "source_answer",
+      "size": [
+        990,
+        940
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/shared-80-82-original-symbols.png",
+      "sha256": "e7235544815f24dc3d333a7653d42e141ab3bf70c0f9e63751be69e960883b46",
+      "source_page": 30,
+      "roi": [
+        160,
+        714,
+        1090,
+        1205
+      ],
+      "kind": "original_black_shared_legend",
+      "size": [
+        930,
+        491
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/shared-46-50-p12.png",
+      "sha256": "d2464d0a99ae403f2da90835a971b55f83df26fac9368a31e09e9874ffab3a85",
+      "source_page": 12,
+      "roi": [
+        110,
+        328,
+        1100,
+        1620
+      ],
+      "kind": "original_black_shared_material",
+      "size": [
+        990,
+        1292
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/shared-46-50-p13.png",
+      "sha256": "6ae0611aa330258a14081d38624c767a8eef55f163639d8baf9adde3f8e17e82",
+      "source_page": 13,
+      "roi": [
+        110,
+        50,
+        1100,
+        228
+      ],
+      "kind": "original_black_shared_material",
+      "size": [
+        990,
+        178
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/shared-51-55-p15.png",
+      "sha256": "f8d6a29099a3800290385f3c3d74f1f46bd6c2541ef6aae7a182be6995965076",
+      "source_page": 15,
+      "roi": [
+        110,
+        730,
+        1100,
+        1620
+      ],
+      "kind": "original_black_shared_material",
+      "size": [
+        990,
+        890
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/shared-51-55-p16.png",
+      "sha256": "611a7f1831dead011268a31b11639755e831a222a51bfea2811e5dacf68fdf13",
+      "source_page": 16,
+      "roi": [
+        110,
+        50,
+        1100,
+        455
+      ],
+      "kind": "original_black_shared_material",
+      "size": [
+        990,
+        405
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/shared-74-75-p27.png",
+      "sha256": "c2ff2eaae013b3e5ad2f5eae958ef61aca5bd8f525b6f49eeea5d638b8311316",
+      "source_page": 27,
+      "roi": [
+        110,
+        263,
+        1100,
+        412
+      ],
+      "kind": "original_black_shared_material",
+      "size": [
+        990,
+        149
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q001-p02.png",
+      "sha256": "9f8daaa1c78cf6b608d93b20d3f9c23c7428c469502699745779ef65cbde08a3",
+      "source_page": 2,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        493
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q019-p02.png",
+      "sha256": "ce2ed0b18827e5c0aba4a25b3c68cac25fca6df82b4de41b2644487b71de4b62",
+      "source_page": 2,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        257
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q020-p02.png",
+      "sha256": "b1bc38bd00358b21e002e16fe073d9ac4e4c5376929a4cbc31e0204223adda53",
+      "source_page": 2,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        252
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q021-p02.png",
+      "sha256": "eaa597acc251ddd384b104d614ad881e50cc8548ec66c21f7be86f4d23c74c9e",
+      "source_page": 2,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        344
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q023-p02.png",
+      "sha256": "da2c590a036b47023869e7c4c06b2a6c062f6874345a6f7a345da7addf2d0b97",
+      "source_page": 2,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        77
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q023-p03.png",
+      "sha256": "34183a87e747d971ba738ebb908e14827b52a5eda55f0beac2ded965cda9083c",
+      "source_page": 3,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        330
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q024-p03.png",
+      "sha256": "6333a07972c7077827e1866126f167cf40efad7faac92f4263c32d8d04645617",
+      "source_page": 3,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        254
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q025-p03.png",
+      "sha256": "ee6e73e1b3cc23e1090271adca97f2af0557883a10da0d8bbc76cb92db4c0212",
+      "source_page": 3,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        257
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q026-p03.png",
+      "sha256": "b460189bc0c99ecfeb396ee4f48600f000f23df8fc28e33d5ee978ea6f181175",
+      "source_page": 3,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        256
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q027-p03.png",
+      "sha256": "369074e2f36db720269037479dd4def28949d8b8b1e7cb821e6dff0756ebc69d",
+      "source_page": 3,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        255
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q028-p03.png",
+      "sha256": "96e9f15cc33ffad5dfeb5755bf6b32ce88b681a3bcd25c724cd24a42e65fcb8c",
+      "source_page": 3,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        217
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q028-p04.png",
+      "sha256": "17c448d634e7185f439f3829fc6cbe9e455ed841b2b4c6d2c08788952821f863",
+      "source_page": 4,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        89
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q029-p04.png",
+      "sha256": "3f1c1240503f0b5a67354760fa0c484474d16246dc9ed7f08ab6d5de02b7593b",
+      "source_page": 4,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        254
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q030-p04.png",
+      "sha256": "10e2c518e97e2e27882762056ed1456c23b89bfe765a26548111bbf650427dce",
+      "source_page": 4,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        155
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q032-p04.png",
+      "sha256": "20c256c21363f854c1ffa6b0bd0df4abc1d13158d6f0b65de9cc22d35413ee23",
+      "source_page": 4,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        152
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q033-p04.png",
+      "sha256": "ec62185ae320e24c8662e0abd7816c5cd5440e5f028637ab1fe2e8fdf4734dcf",
+      "source_page": 4,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        155
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q045-p04.png",
+      "sha256": "71854721a9c1ae05ec74683853f61d626a465f8788572afb4d1bc3534c0b7426",
+      "source_page": 4,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        327
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q046-p04.png",
+      "sha256": "f16d838c25898965c0005fff1c1b0d9d563b886b41e761eadc04429397fe82a4",
+      "source_page": 4,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        255
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q047-p04.png",
+      "sha256": "44101494f5db42b3e1b6347c46b9084eba91cd0f1735424900142d3294539681",
+      "source_page": 4,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        182
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q047-p05.png",
+      "sha256": "3a0c8483d918f4d6c6f74e39ed1431eeb8cd509ff66249f33461ba05dfb3aa4d",
+      "source_page": 5,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        278
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q048-p05.png",
+      "sha256": "31be3240d7545a50e3c6e269e79cb6cd3be4254f013177cd0792bd150e08ffb5",
+      "source_page": 5,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        568
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q049-p05.png",
+      "sha256": "eb9ccdbdb00cf44d7578bd24f1214e8b5a2583800deb316c8545b78a16057368",
+      "source_page": 5,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        152
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q050-p05.png",
+      "sha256": "1496038ab5df2ade8ce6326cf77c849072dbe9b08f655f66fac93b3a4036e9d3",
+      "source_page": 5,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        257
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q051-p05.png",
+      "sha256": "7cbc6d105d7199a0302ca8a39e051df245d53783c9e3f77d535239033c920b2d",
+      "source_page": 5,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        254
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q052-p05.png",
+      "sha256": "4dca30d4042799a9e2242aa49815e8ff064cab47c7b299901d288e89cf69aa11",
+      "source_page": 5,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        60
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q052-p06.png",
+      "sha256": "125c76ec0dd211dcf52683210ff89847d75e5017980b4c422dce2c28ef4f06bb",
+      "source_page": 6,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        244
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q053-p06.png",
+      "sha256": "5e1f3475c5e3074ad7f15e3a00f3a6f1231a610f451c3089d1028f5114753fbe",
+      "source_page": 6,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        254
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q054-p06.png",
+      "sha256": "d286d42472bd11d740aee83809598a366885cfa53f116e014e0fd4b002b999e5",
+      "source_page": 6,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        415
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q055-p06.png",
+      "sha256": "12a171dbf3eae1940e4f8e955c70c1e98af5ac5e3be84a6fed3a87151750ecf8",
+      "source_page": 6,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        151
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q056-p06.png",
+      "sha256": "e7db34e7431efe15b80ae271bc5a99f0b677dd3cbf8db5b7b1df9247a2ae8633",
+      "source_page": 6,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        204
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q057-p06.png",
+      "sha256": "621f898795c942a972f0ac5d8f82b0bbf8bdad424383be1fcc8fe43ab8d015f5",
+      "source_page": 6,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        207
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q058-p06.png",
+      "sha256": "52b58c836e4a49dc4ad1901378cb96e95104835fb4cbd806258074c536ffaabe",
+      "source_page": 6,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        94
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q058-p07.png",
+      "sha256": "8b1bd62f0a593a00dec2a251c3d7d38898cf6dd9f1318efcfdff178ed5f2972a",
+      "source_page": 7,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        190
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q059-p07.png",
+      "sha256": "cb7a06e95c7007d3a0cbdaf525a5d2f071078fd44061753b34ee41c2df914381",
+      "source_page": 7,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        205
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q060-p07.png",
+      "sha256": "3e8c30b99b2dda8988b513c5e7366848035415831ebc6c9685aacaddc08d1dad",
+      "source_page": 7,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        384
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q061-p07.png",
+      "sha256": "f5f21e7473c40b70e1e2f5bf15c4d304384b19a65cf29ee0234a21ea07ae6b70",
+      "source_page": 7,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        197
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q062-p07.png",
+      "sha256": "a659f3f7e0933a9d7e605264f2b2d32e28b4857a78821e8edf091f399884e631",
+      "source_page": 7,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        198
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q063-p07.png",
+      "sha256": "cada7eae44583177be9a91fbc230ab23c3c6c2d06c58d073bdd7a22ac91a76aa",
+      "source_page": 7,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        335
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q064-p07.png",
+      "sha256": "467ceaccff3e9e80a32d35cba657348a6498f79c80e9c5aa74996dece3958d8e",
+      "source_page": 7,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        60
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q064-p08.png",
+      "sha256": "bb0e50c7cb302c461ae1b11859efab2bc504dcef0d0251d53bf4f42183d75b16",
+      "source_page": 8,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        234
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q065-p08.png",
+      "sha256": "051f211997b4624c4d7d5e3e643654cca3e95517a6fb942554cf16075cb0fd76",
+      "source_page": 8,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        196
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q066-p08.png",
+      "sha256": "96132d392aa743abf8411be1c43a1321366c9f983d0cfc88a97b67345968fcdf",
+      "source_page": 8,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        206
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q067-p08.png",
+      "sha256": "71e7011475f142ca32241ee6d172ecc79aa91c9dbf3e77888d0ff13a32cafa50",
+      "source_page": 8,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        195
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q068-p08.png",
+      "sha256": "a4aa0c7eafd1f11cd750617ca12c4a82023bd2e8ab120d95bf6fe983132ef9f6",
+      "source_page": 8,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        197
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q069-p08.png",
+      "sha256": "4094de1f1e915a3bef686482b3b3461e029afe312420d44e8e067f46a15d06cd",
+      "source_page": 8,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        154
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q070-p08.png",
+      "sha256": "53528a7e1832cfd063218e59e8383da72d055b069081af2e671403eaf5090958",
+      "source_page": 8,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        195
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q071-p08.png",
+      "sha256": "2bb4c5420e27f869bc33de4d26ebc283fb1c9f6da4cb97bb836bd7a515990562",
+      "source_page": 8,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        192
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q071-p09.png",
+      "sha256": "ca9cf42c479ae182240a23b5fce41b9cf3feff8a8c3fd7acda9de4c549784438",
+      "source_page": 9,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        87
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q072-p09.png",
+      "sha256": "1c91db2e1e9a9ac2052548bb3c3473419eaa720bf60e8cb9ad6a0dd699a06495",
+      "source_page": 9,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        540
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q073-p09.png",
+      "sha256": "1d14bd82c4a7fe391eb973ac3585a4d0c6efbde79ab51aeb48d92d1633775646",
+      "source_page": 9,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        203
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q074-p09.png",
+      "sha256": "fa3d7536a2d7ce47ef7853330f797f9f0cca938a79b6909af8afddd50fdcf442",
+      "source_page": 9,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        153
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q075-p09.png",
+      "sha256": "655f50d98b6c2357a460317d4c313f6f10f41f1cac65dfd52dc13a8b34db3c55",
+      "source_page": 9,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        155
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q076-p09.png",
+      "sha256": "5b151dd46a83b0b92b7078948b40d725ea75969ae8cacdd533710edb16cb6d2a",
+      "source_page": 9,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        431
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q076-p10.png",
+      "sha256": "c8766682118b0e43046c27edd13dabce1304c83d92829c261c14bcbbf55f81f8",
+      "source_page": 10,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        38
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q077-p10.png",
+      "sha256": "003dab4a82866edd152bdf7461007ee6ad5a0e578c3a6f2d812dbb84e793b588",
+      "source_page": 10,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        377
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q078-p10.png",
+      "sha256": "5afbce249461a8cd57a7e733e39f31406cc567bf58b8ebf62e0723f99921b2ba",
+      "source_page": 10,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        381
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q079-p10.png",
+      "sha256": "4094ed7adc14be624cb43c4bcecf987cf47623ebe6dbf0d92115c0ecb1c71273",
+      "source_page": 10,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        353
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q080-p10.png",
+      "sha256": "513652ef3103ac1908f0248bb069c1ea83dcaa10d206ddc2f8462522ac9ca988",
+      "source_page": 10,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        214
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q081-p10.png",
+      "sha256": "4c0bae6545e3fad8f2de3c14c0ef9f2ba91eeccf62a4eb2a6544c6d59a17553b",
+      "source_page": 10,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        206
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q081-p11.png",
+      "sha256": "e0aedfe81fe64f9392d5973ba393b477084dd65db1f3bfd9785437f80bcbaac6",
+      "source_page": 11,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        194
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q082-p11.png",
+      "sha256": "58b88f4e4bba20db7d4d08ec9b0845d539aa4f877c882dd38f6e815bdaf6b8df",
+      "source_page": 11,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        216
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q083-p11.png",
+      "sha256": "04e462955aa21fcb918b971c72a6048c45ce4abd2f7361abd74b8513b7f6e0c2",
+      "source_page": 11,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        235
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q084-p11.png",
+      "sha256": "3b64b09f8b7df15e2b5da2bb25c4e33ae8a064373b4e11fbf2d95e1e5ada7acf",
+      "source_page": 11,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        289
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q085-p11.png",
+      "sha256": "a5a06fe8731647a75ffc4fb1001bc90310b4c7064bafee4da87356821b9684e2",
+      "source_page": 11,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        246
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q086-p11.png",
+      "sha256": "697e63fda2f9efe6fe81acf648f02ae8cba754b5b0f3b447bd9dc2ce6b8a4d7b",
+      "source_page": 11,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        295
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q087-p11.png",
+      "sha256": "0f6967e08ab70adab8b7f9a1c49f75df8630a7b6fa7d6166822b4b91415251e5",
+      "source_page": 11,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        94
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q087-p12.png",
+      "sha256": "ab9709555befb74cf0e8df396de8980bd4a22a2647dafffbcb9987fde4411dfe",
+      "source_page": 12,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        240
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q088-p12.png",
+      "sha256": "a9719b1dd87a3659606145c4b10c40bbb33d9895b4221fb407a87f8bf88fbafc",
+      "source_page": 12,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        941
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q091-p12.png",
+      "sha256": "104708a712ae2d4b5aaf42fa7672bbf1986659d510122b2317143cf663abbd73",
+      "source_page": 12,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        154
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q092-p12.png",
+      "sha256": "ff3d50d52032c13154dc9ac91abd011ee2b0d692ac8a9bdf2c71ee252f08745b",
+      "source_page": 12,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        155
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q093-p12.png",
+      "sha256": "3e201ddbdef6cdfadd3523dbb57c084d082d9ec12d7a2842657f5ff975ba0176",
+      "source_page": 12,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        79
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q093-p13.png",
+      "sha256": "00814d5177dd4de6b183e57a4a6f806ce61b0123dfd2f10c8bf6940d7319776f",
+      "source_page": 13,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        139
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q094-p13.png",
+      "sha256": "5fd25d0370f4b9613265b28ff428076a249e9831d15c3db7ac143b47607c5aac",
+      "source_page": 13,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        156
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q095-p13.png",
+      "sha256": "5fb54ebb0c69911f3e1b780d4449b8bd7fef647fe2d0b4da99c7231bbe95f01a",
+      "source_page": 13,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        153
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q111-p13.png",
+      "sha256": "9791c7324fdd107829fb444d708d9665a1964be2313aa04b223a3992c7e0052d",
+      "source_page": 13,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        298
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q113-p13.png",
+      "sha256": "364a88ec86add5c728acb7c3736d6b85fe868a77fdffd5f863b196079baf3cf9",
+      "source_page": 13,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        298
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q116-p13.png",
+      "sha256": "88be1df61d0e0e1ac2b10518839e467d532dd9b8e1cb0da97a3534bcc3eab15e",
+      "source_page": 13,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        301
+      ]
+    },
+    {
+      "path": "图片/补卷-20261015/b/北京2026行测回忆残卷/q118-p13.png",
+      "sha256": "6be8795f8a21525bfae3b0901072a0341174ba89bc2968e1c90fafb50b561257",
+      "source_page": 13,
+      "roi": null,
+      "kind": "source_question",
+      "size": [
+        1010,
+        224
+      ]
+    }
+  ],
+  "qa": {
+    "canonical_split_paper_questions": 67,
+    "canonical_split_paper_answers": 67,
+    "canonical_material_groups": 4,
+    "question_answer_bijection": true,
+    "all_67_have_ABCD": true,
+    "all_referenced_images_exist_and_decode": true,
+    "original_source_errors_preserved": [
+      26
+    ],
+    "not_complete_original_paper": true,
+    "native_cloud_detail_questions_answer_bijection": true,
+    "image_reference_count": 173
+  },
+  "formal_essay_created": false,
+  "essay_evidence_packet": "essay-source-packet.json",
+  "freeze": true
+}

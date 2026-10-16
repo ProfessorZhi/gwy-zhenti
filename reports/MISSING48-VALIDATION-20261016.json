@@ -1,0 +1,78 @@
+{
+  "audit_date": "2026-10-16",
+  "status": "passed_with_explicit_incomplete_sources",
+  "objective_complete": false,
+  "new_complete_network_recollection_versions": 2,
+  "new_incomplete_aptitude_papers": 2,
+  "remaining_targets_without_complete_reference_version": 46,
+  "current_tool_unit_tests": 48,
+  "unchanged_historical_tests": {
+    "total": 466,
+    "groups": [
+      369,
+      97
+    ],
+    "fixed_original_baseline": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab"
+  },
+  "outer_current_receipts": {
+    "status": "passed",
+    "receipts": 1214,
+    "changed_papers": 1201,
+    "base_commit": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab"
+  },
+  "native_integrity": {
+    "papers": 1169,
+    "images": 96433,
+    "image_refs": 119118,
+    "truncated_files": 0,
+    "truncated_questions": 0,
+    "restored_files_this_run": 0,
+    "restored_material_instances_this_run": 0,
+    "appended_characters_this_run": 0,
+    "machine_flagged_files": 376,
+    "hard_errors": 0,
+    "forbidden_files": 0
+  },
+  "current_essay_audit": {
+    "papers": 712,
+    "recognized_positions": 2456,
+    "recognized_missing_answers": 0,
+    "unverified_source_word_limits": 1
+  },
+  "exact_staged_image_pixels": {
+    "status": "passed",
+    "publication_boundary": "Stage-zero exam Markdown and referenced image blobs",
+    "staged_exam_markdown": 1169,
+    "indexed_images": 96433,
+    "unique_images": 96433,
+    "unreferenced_index_images": 0,
+    "decoded_frames": 35373,
+    "validated_image_path_frames": 96433,
+    "unique_git_image_blobs": 35373,
+    "deduplication_basis": "Every path is bound to an unchanged stage-zero Git object id; each distinct blob is hash-verified and fully decoded",
+    "failed_images": 0,
+    "image_index_fingerprint_sha256": "42e7f8f8c05713d628b5c207273633ba822fca46af6464ecb783f6189e58f32b",
+    "paper_index_fingerprint_sha256": "ff15f0cbcfc1b43c509dbbaec00609c7ce2ea612a07c6ea6182dfd4ee63b8bf0",
+    "referenced_image_fingerprint_sha256": "42e7f8f8c05713d628b5c207273633ba822fca46af6464ecb783f6189e58f32b",
+    "index_stable_at_final_snapshot": true,
+    "errors": []
+  },
+  "source_completeness_limits": {
+    "jiangsu_2026_aptitude_A": {
+      "represented_questions": 93,
+      "missing_original_questions": 42,
+      "represented_question_positions_with_explicit_source_defects": 25,
+      "legacy_contiguous_completeness_check": "fails on actual source gaps; no validator weakened"
+    },
+    "beijing_2026_aptitude": {
+      "represented_questions": 67,
+      "original_total_questions": "not_verified",
+      "shared_groups_recovered_from_original_black_text": 4,
+      "source_option_analysis_disagreement_questions": [
+        26
+      ]
+    },
+    "beijing_2026_essay": "materials2_to10_missing_no_formal_paper_created"
+  },
+  "cloud_boundary": "Local workflow-equivalent checks only. Cloud execution and main/PR state must be read from GitHub; this file does not claim the current CI job has executed or that main was merged."
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-16",
+  "baseline_commit": "cc5ecb26d8dd39d7f0365c556dd8ffcd27be6129",
+  "starting_missing_complete_papers": 48,
+  "starting_missing_by_subject": {
+    "行测": 27,
+    "申论": 21
+  },
+  "free_only": true,
+  "source_checks": [
+    {
+      "url": "https://www.132gk.com/web/exam",
+      "method": "TinyFish live browser, region 浙江 / year 2022",
+      "run_id": "e2db915c-9672-4467-aa1f-075252184e12",
+      "status": "completed",
+      "steps": 23,
+      "result": "Selected filters returned no listed papers. This establishes absence from this result only, not cancellation of the actual exam. No login/payment barrier encountered."
+    },
+    {
+      "url": "https://down.kaosheng.com/202503/15/4456.html",
+      "method": "TinyFish live browser and public HTML",
+      "run_id": "145f0be4-af8d-41d7-a46f-c938a203e0ec",
+      "status": "completed",
+      "steps": 5,
+      "result": "25.57MB archive title lists Zhejiang 2022 without A/B/C detail; download redirects to account login. No content inspected, no registration/purchase/points consumed; not counted as acquired."
+    },
+    {
+      "url": "https://www.xingguanggongkao.com/ShenQuestion/paperList/subject_id/3/area_id/292/year/2022.html",
+      "method": "Public HTML and exact navigation-label verification",
+      "result": "Zhejiang 2022 essay list empty. Region IDs differ between subjects; verified actual labels before interpreting list."
+    },
+    {
+      "url": "https://www.xingguanggongkao.com/XingQuestion/paperList/subject_id/2/area_id/332/year/2022.html",
+      "method": "Public HTML and exact navigation-label verification",
+      "result": "Zhejiang 2022 aptitude list empty. Does not establish absence at other providers or exam cancellation."
+    },
+    {
+      "url": "https://yuantuedu.com/list_19/10686.html",
+      "method": "Read public institution analysis",
+      "result": "2022 ABC question themes and indicative scores/lengths listed, but no complete supplied materials or verbatim task statements. Cross-province material identity alone cannot close a Zhejiang original-paper gap."
+    },
+    {
+      "url": "https://www.eoffcn.com/kszx/detail/1029502.html",
+      "method": "Read institution public analysis",
+      "result": "A themes corroborated: charging-pile problems/advice, small-business exchange speech outline, essay on serving people's livelihoods. Lacks full original materials and precise full requirements."
+    },
+    {
+      "url": "https://doc.quark.cn/preview/7CD9406BC6731094A58273BF7FC42C9D",
+      "method": "Public rendered preview",
+      "result": "7-page 2022 Zhejiang A document title only, full text not exposed. Cannot certify year or material identity."
+    },
+    {
+      "url": "https://www.kkgwy.com/stk/zj/14922.html",
+      "method": "Public collection contents",
+      "result": "Lists 2022 aptitude A/C, no B; 2022 essay absent. Download requires 19 points; no download/payment attempted."
+    },
+    {
+      "url": "https://www.houzhiwang.com/html/202012/74196.html",
+      "method": "Read original page date and contents",
+      "result": "2022 title but created 2020 and text says not yet examined. Not an actual 2022 whole-paper source."
+    },
+    {
+      "url": "https://github.com/thfyth/shenlun/tree/dcb0766f21f834f78d00954f182c78988d914a4d",
+      "method": "Exact-commit seven PDF downloads, all-page text extraction",
+      "result": "Contains 2022 multi-province practice papers and theoretical lectures including shared charging-pile material, without trustworthy whole Zhejiang target identity. No teacher copyright text copied into formal corpus."
+    }
+  ],
+  "credential_handling": "No API keys, tokens, browser cookies, profile setup capability URLs or signed download URLs belong in repository evidence.",
+  "objective_complete": false
+}

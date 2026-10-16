@@ -7340,18 +7340,18 @@
   "receipt_shards": [
     {
       "path": "reports/full-repair-20261015/receipts-001.jsonl",
-      "sha256": "784b220b0c8775eacebb9293cea13a9e9aab3fb42cb8310f06cd44d9d54f593c",
-      "bytes": 16771395
+      "sha256": "392a8411dc4fbaf12067afd0b20f137cc05de477fb887b0529a7f92218c09410",
+      "bytes": 16722350
     },
     {
       "path": "reports/full-repair-20261015/receipts-002.jsonl",
-      "sha256": "9a35597f17e024d23c3f2c68e02507d575cf53936603cc5f8feabf2a4f344f39",
-      "bytes": 16755504
+      "sha256": "31ea39a0967c855ff01f84a09119311e561b127e8cdebe3fd710921bb4ca8912",
+      "bytes": 16776234
     },
     {
       "path": "reports/full-repair-20261015/receipts-003.jsonl",
-      "sha256": "79db4b6f88dba07781ad3f05811a0d145aa40d3b796a22427ee09522ef0ff2fa",
-      "bytes": 4400802
+      "sha256": "cdba5406a6557e1694cd8529064d6fa19aec1a0485a05471c5ac9c27a23d8b7e",
+      "bytes": 4445733
     }
   ],
   "created_papers": [
@@ -7360,8 +7360,12 @@
     "省考/上海/2020/申论-B类.md",
     "省考/上海/2021/申论-B类.md",
     "省考/上海/2022/申论-B类.md",
+    "省考/北京/2026/行测-统考.md",
     "省考/天津/2017/行测-滨海新区等单位专项.md",
-    "省考/广东/2017/行测-广州市考-双考区.md"
+    "省考/广东/2017/行测-广州市考-双考区.md",
+    "省考/江苏/2026/申论-A类.md",
+    "省考/江苏/2026/申论-C类.md",
+    "省考/江苏/2026/行测-A类.md"
   ],
   "baseline_paper_files": 1191,
   "boundary": "The fixed baseline is exported directly from the exact original PR19 Git commit; each original file hash is checked on reconstruction."

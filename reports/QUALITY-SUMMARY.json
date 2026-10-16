@@ -16,9 +16,9 @@
       "行测": 10
     },
     "北京": {
-      "files": 23,
+      "files": 24,
       "申论": 12,
-      "行测": 11
+      "行测": 12
     },
     "吉林": {
       "files": 31,
@@ -81,9 +81,9 @@
       "行测": 18
     },
     "江苏": {
-      "files": 60,
-      "申论": 31,
-      "行测": 29
+      "files": 63,
+      "申论": 33,
+      "行测": 30
     },
     "江西": {
       "files": 41,
@@ -171,37 +171,37 @@
       "行测": 16
     }
   },
-  "confirmed_material_gap_segments": 2,
-  "confirmed_missing_option_questions": 1,
-  "confirmed_missing_original_questions": 25,
-  "confirmed_missing_shared_condition_questions": 5,
-  "confirmed_missing_stem_condition_questions": 1,
-  "confirmed_missing_stem_figure_questions": 1,
+  "confirmed_material_gap_segments": 3,
+  "confirmed_missing_option_questions": 5,
+  "confirmed_missing_original_questions": 118,
+  "confirmed_missing_shared_condition_questions": 10,
+  "confirmed_missing_stem_condition_questions": 20,
+  "confirmed_missing_stem_figure_questions": 2,
   "current_truncated_files": 0,
   "current_truncated_questions": 0,
-  "declared_source_analysis_disagreement_questions": 5,
-  "files_with_machine_flags": 374,
+  "declared_source_analysis_disagreement_questions": 7,
+  "files_with_machine_flags": 376,
   "forbidden_tracked_files": [],
   "hard_integrity_errors": [],
   "historical_truncated_files": 75,
   "historical_truncated_questions": 128,
   "image_decode_check_performed": false,
   "image_decode_errors": [],
-  "image_references": 118807,
-  "inventory_sha256": "3ad6323ad4e1ff77ca53ee46917d4d2f8d65185d7d963822e4bceb25ca3802d2",
+  "image_references": 119118,
+  "inventory_sha256": "085744ec5c75238d2effd1fa0f07d3512e571098e3bc95873bc8848a1b83cd0a",
   "missing_image_references": 0,
-  "paper_files": 1165,
+  "paper_files": 1169,
   "placeholder_files": 47,
   "placeholder_states": {
     "待核实": 18,
     "资料缺失": 29
   },
-  "reference_numbered_papers": 233,
+  "reference_numbered_papers": 236,
   "schema_version": 2,
   "subjects": {
-    "申论": 710,
-    "行测": 455
+    "申论": 712,
+    "行测": 457
   },
-  "unique_referenced_images": 96122,
+  "unique_referenced_images": 96433,
   "whole_paper_acceptance": "not_established_by_structural_checks"
 }

@@ -1,0 +1,267 @@
+{
+  "review_date": "2026-10-16",
+  "reviewer": "scope_counts_guangdong",
+  "status": "passed_for_transcription_and_reference_answers_of_user_provided_recall_versions",
+  "final_passed": true,
+  "read_only_review": true,
+  "source_A": {
+    "paper_pdf_sha256": "776222548615d7e36fe079028f19a84733831c4e92b8707e8c70e21a5cd2129c",
+    "answer_pdf_sha256": "d55c4fd310166f3ba69b960527260562f0dca15ab21348a4fd8d6f985b70a880",
+    "visually_read_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "visually_read_answer_pages": [
+      3,
+      4
+    ],
+    "material_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "material_topics": [
+      "D品牌羽绒服珠峰/冰雪文旅/国风",
+      "H品牌本土研发/人单合一/责任与赛事",
+      "G品牌通信服务/数字普惠",
+      "Y市智慧路灯标准联盟",
+      "速冻粽子及国际合规标准",
+      "N市李教授标准化公益讲座",
+      "江苏品牌与产业标准创新",
+      "品牌与标准促进中国式现代化、高质量发展"
+    ],
+    "questions": [
+      {
+        "number": 1,
+        "points": 20,
+        "requirement": "材料1—3，一段话概括讲好中国品牌故事的创新方式和相应成效",
+        "word_bound": "不超过300字"
+      },
+      {
+        "number": 2,
+        "points": 20,
+        "requirement": "结合材料4—5，从政府职能角度理解标准是技术语言/市场准则/连接世界桥梁",
+        "word_bound": "250字左右"
+      },
+      {
+        "number": 3,
+        "points": 20,
+        "requirement": "N市市场监督管理局办公室工作人员小颜，李教授讲座最后简要总结",
+        "word_bound": "350字左右"
+      },
+      {
+        "number": 4,
+        "points": 40,
+        "requirement": "材料8，围绕中国式现代化与高质量发展两个核心词作文",
+        "word_bound": "1000字左右"
+      }
+    ],
+    "source_identity_limit": "用户提供网友回忆整理PDF；封面明确2026江苏申论A，但第2页误套‘全部为客观题、2B填涂’等行测须知，不能充作正式申论注意事项。没有官方原卷逐字认证、原题作者或标准答案认证。材料8会议未列日期和独立出处，不把材料中的讲话转述提升为已独立核实的官方引文。"
+  },
+  "source_C": {
+    "paper_pdf_sha256": "ee02c0571aef49e82595ada8fd553eeb5c44bbb5c8f1308a265daed0ed68a1e5",
+    "visually_read_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "material_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "material_topics": [
+      "石堰村光伏农业/环境整治/有机茶",
+      "向阳社区老市场改造/代烧菜/追溯",
+      "永宁乡卫生院加养老院",
+      "D村正气带人气财气灵气",
+      "E县农用无人机药害与治理问题",
+      "仙峰村花菇产业与全会精神宣讲"
+    ],
+    "questions": [
+      {
+        "number": 1,
+        "points": 20,
+        "requirement": "概括材料1—3提升群众生活的好做法及成效",
+        "word_bound": "不超过250字"
+      },
+      {
+        "number": 2,
+        "points": 20,
+        "requirement": "结合材料4理解正气、人气、财气、灵气关系",
+        "word_bound": "300字左右"
+      },
+      {
+        "number": 3,
+        "points": 20,
+        "requirement": "针对材料5农用无人机药害从源头治理提出对策",
+        "word_bound": "350字左右"
+      },
+      {
+        "number": 4,
+        "points": 40,
+        "requirement": "材料6驻村第一书记小杨为仙峰村全会精神宣讲会写宣讲稿",
+        "word_bound": "1000字左右"
+      }
+    ],
+    "source_identity_limit": "用户提供网友回忆整理PDF，封面明确2026江苏申论C，但第2页误套‘全部为客观题、2B填涂’等行测须知，不能证明是官方原卷逐字稿；原文件附参考答案未明确机构作者、实考分数或官方身份。",
+    "OCR_issues_sent_to_author": [
+      "资料4原图‘不及格的自己辞职’需排除OCR‘审职’等错字",
+      "资料6香菇/花菇等OCR错字需据图核准",
+      "第4题要求是‘结合给定资料，不拘于给定资料’，不能混用A类要求‘参考给定资料，但不拘泥于给定资料’"
+    ],
+    "reviewer_reading_correction": "全页视图初次漏读第4题‘第一’，原PDF第8页局部4倍渲染C-q4-question-line.png明确写‘驻村第一书记小杨’；作者A原转录正确，已撤回删字建议。"
+  },
+  "C_Q4_root_revision": {
+    "reviewed_file": "local-evidence/a/ROOT-JS2026C-Q4-AI-REVISION.json",
+    "draft_nonwhitespace_characters": 1020,
+    "source_fact_alignment_passed": true,
+    "word_limit_passed": true,
+    "genre_passed": true,
+    "observed_basis": [
+      "随州学习",
+      "数字温湿度系统与手机参数",
+      "花菇品质与售价提升",
+      "加工厂商标",
+      "采摘园展览馆",
+      "电商快递与直播",
+      "五名大学生返乡",
+      "能人带农户"
+    ],
+    "new_proposals_not_claimed_as_completed_facts": [
+      "农技入棚结对培训",
+      "订单生产与质量安全",
+      "返乡服务与集体账公开"
+    ],
+    "identity_required": "AI辅助原创示范，非官方答案，不代表真实高分答卷"
+  },
+  "frozen_markdown": [
+    {
+      "paper": "江苏2026申论A类",
+      "path": "D:\\projects\\gwy-zhenti-full-repair-20261015\\省考\\江苏\\2026\\申论-A类.md",
+      "sha256": "518bd73e4ac355e657703fa93d813d3cacc240e3e0a876058277b7d9e0f61ccf",
+      "reviewed_source_materials": 8,
+      "questions": 4,
+      "points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "answers": 4,
+      "answer_nonwhitespace_characters": [
+        275,
+        248,
+        353,
+        1054
+      ],
+      "answer_han_characters": [
+        250,
+        226,
+        314,
+        959
+      ],
+      "source_and_AI_attribution_correct": true,
+      "source_identity_limits_preserved": true,
+      "root_Q4_revision_exact_normalized_match": true,
+      "material_substantive_omission_or_rewrite_found": false,
+      "question_requirements_mismatch_found": false,
+      "formatting_issue_residual_found": false,
+      "review_passed_for_provided_recall_version": true
+    },
+    {
+      "paper": "江苏2026申论C类",
+      "path": "D:\\projects\\gwy-zhenti-full-repair-20261015\\省考\\江苏\\2026\\申论-C类.md",
+      "sha256": "525a72d6922ef719a93b675c8df3f0d5957545af1ef52c007f00991a98ff1ebc",
+      "reviewed_source_materials": 6,
+      "questions": 4,
+      "points": [
+        20,
+        20,
+        20,
+        40
+      ],
+      "answers": 4,
+      "answer_nonwhitespace_characters": [
+        206,
+        323,
+        329,
+        1020
+      ],
+      "answer_han_characters": [
+        167,
+        279,
+        288,
+        901
+      ],
+      "source_and_AI_attribution_correct": true,
+      "source_identity_limits_preserved": true,
+      "root_Q4_revision_exact_normalized_match": true,
+      "material_substantive_omission_or_rewrite_found": false,
+      "question_requirements_mismatch_found": false,
+      "formatting_issue_residual_found": false,
+      "review_passed_for_provided_recall_version": true
+    }
+  ],
+  "source_bytes_verified": [
+    {
+      "name": "2026年江苏省公务员《申论》（A类）答案及解析（网友回忆版）.pdf",
+      "sha256": "d55c4fd310166f3ba69b960527260562f0dca15ab21348a4fd8d6f985b70a880",
+      "exact_source_bytes": true
+    },
+    {
+      "name": "2026年江苏省公务员《申论》（A类）真题（网友回忆版）.pdf",
+      "sha256": "776222548615d7e36fe079028f19a84733831c4e92b8707e8c70e21a5cd2129c",
+      "exact_source_bytes": true
+    },
+    {
+      "name": "2026年江苏省公务员《申论》（C类）真题（网友回忆版）.pdf",
+      "sha256": "ee02c0571aef49e82595ada8fd553eeb5c44bbb5c8f1308a265daed0ed68a1e5",
+      "exact_source_bytes": true
+    }
+  ],
+  "peer_found_issues_resolved": [
+    {
+      "paper": "C",
+      "issue": "三个破折号被OCR识别成汉字一一",
+      "locations": [
+        "资料2老市场首段",
+        "资料3卫生院变化首段",
+        "资料5飞手风力作业首段"
+      ],
+      "resolved": true,
+      "before_md_sha256": "0c8bd62c6f73c4597556574c06183237964cf7fb7e765ed5fb0397ca9aabee77",
+      "after_md_sha256": "525a72d6922ef719a93b675c8df3f0d5957545af1ef52c007f00991a98ff1ebc",
+      "legitimate_literal_yiyi_preserved": "消防栓一一到位"
+    }
+  ],
+  "review_boundary": "通过的是给定用户回忆整理版的完整结构、转录、题目要求、答案事实与篇幅及来源归属；不是对官方原卷逐字真实性、参考答案得分或全部材料现实事实的独立认证。正式题本尚未独立取得，不以文件结构闭合宣称官方原件。",
+  "word_count_method": "去空白字符计数含标点与标题；另记纯汉字数。对左右字数以±10%作本次审核容差，不冒称官方容差规则。",
+  "A_Q4_root_revision": {
+    "file": "local-evidence/a/ROOT-JS2026A-Q4-AI-REVISION.json",
+    "nonwhitespace_characters": 1054,
+    "han_characters": 959,
+    "word_limit": "1000字左右",
+    "facts_and_genre_passed": true,
+    "notes": "羽绒服、智慧路灯、家电本土研发、通信服务事实来自资料；机制建议以议论表述，无伪造企业业绩或未经核实的总书记逐字引文；最终正文与root稿归一化全文相同。"
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "audit_date": "2026-10-16",
+  "objective_complete": false,
+  "baseline_commit": "cc5ecb26d8dd39d7f0365c556dd8ffcd27be6129",
+  "starting_unacquired_complete_targets": 48,
+  "new_complete_recollection_versions": 2,
+  "remaining_targets_without_complete_reference_version": 46,
+  "new_partial_papers": 2,
+  "new_aptitude_question_positions": 160,
+  "new_essay_tasks_and_main_answers": 8,
+  "new_ai_assisted_composition_versions": 2,
+  "new_source_image_paths": 311,
+  "current_native_summary": {
+    "papers": 1169,
+    "images": 96433,
+    "image_refs": 119118,
+    "truncated_files": 0,
+    "truncated_questions": 0,
+    "restored_files_this_run": 0,
+    "restored_material_instances_this_run": 0,
+    "appended_characters_this_run": 0,
+    "machine_flagged_files": 376,
+    "hard_errors": 0,
+    "forbidden_files": 0
+  },
+  "current_essay_positions": 2456,
+  "current_scope_minimum": {
+    "行测": {
+      "expected": 197,
+      "represented_including_fragments": 172,
+      "missing_independent_files": 25
+    },
+    "申论": {
+      "expected": 229,
+      "represented_including_fragments": 210,
+      "missing_independent_files": 19
+    },
+    "combined_expected": 426,
+    "represented_including_fragments": 382,
+    "missing_independent_files": 44
+  },
+  "count_boundary": "48个原未获完整题本目标中，2个取得完整网络回忆整理版本，2个只取得残卷，另44个尚未建正式独立卷文件。因此完整参考题本目标仍缺46；不能把44文件缺口当作完整性缺口。旧库其他已建档残卷的内容缺项还需另计。",
+  "full_recollection_versions": [
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "A",
+      "owner": "a",
+      "status": "complete_user_supplied_recollection_version_transcribed",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": true,
+      "path": "省考/江苏/2026/申论-A类.md",
+      "sha256": "518bd73e4ac355e657703fa93d813d3cacc240e3e0a876058277b7d9e0f61ccf",
+      "authenticity_boundary": "材料和任务结构完整的网络回忆整理版本；未认证为官方原件或逐字原卷。"
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "C",
+      "owner": "a",
+      "status": "complete_user_supplied_recollection_version_transcribed",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": true,
+      "path": "省考/江苏/2026/申论-C类.md",
+      "sha256": "525a72d6922ef719a93b675c8df3f0d5957545af1ef52c007f00991a98ff1ebc",
+      "authenticity_boundary": "材料和任务结构完整的网络回忆整理版本；未认证为官方原件或逐字原卷。"
+    }
+  ],
+  "partial_papers": [
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "A",
+      "owner": "a",
+      "status": "partial_source_recovered_not_a_complete_paper",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false,
+      "path": "省考/江苏/2026/行测-A类.md",
+      "question_positions": 93,
+      "missing_original_questions": 42,
+      "question_positions_with_explicit_source_defects": 25,
+      "sha256": "2f1a2d0e5ee0d9f311f99ae322c4fb95491f5008a4fb6296273a9b073db61899"
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "统一卷",
+      "owner": "a",
+      "status": "partial_source_recovered_not_a_complete_paper",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false,
+      "path": "省考/北京/2026/行测-统考.md",
+      "question_positions": 67,
+      "original_total_question_count": "not_verified_from_source",
+      "restored_shared_material_groups": [
+        "46-50",
+        "51-55",
+        "74-75",
+        "80-82"
+      ],
+      "sha256": "012bcadc0301fc178f246827035298d8b0697da836df20a246c49f6c2ee98bf0"
+    }
+  ],
+  "targets": [
+    {
+      "area": "浙江",
+      "year": 2016,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2017,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2018,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2019,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2020,
+      "subject": "行测",
+      "variant": "C（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2021,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2023,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2025,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "D（优秀村干部）",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "江苏",
+      "year": 2023,
+      "subject": "行测",
+      "variant": "C",
+      "owner": "a",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "A",
+      "owner": "a",
+      "status": "partial_source_recovered_not_a_complete_paper",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false,
+      "path": "省考/江苏/2026/行测-A类.md",
+      "question_positions": 93,
+      "missing_original_questions": 42,
+      "question_positions_with_explicit_source_defects": 25,
+      "sha256": "2f1a2d0e5ee0d9f311f99ae322c4fb95491f5008a4fb6296273a9b073db61899"
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "a",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "C",
+      "owner": "a",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2017,
+      "subject": "行测",
+      "variant": "A",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2017,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "行测",
+      "variant": "A",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "行测",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "A",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "B",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "subject": "行测",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "北京",
+      "year": 2024,
+      "subject": "行测",
+      "variant": "统一卷",
+      "owner": "a",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "subject": "行测",
+      "variant": "统一卷",
+      "owner": "a",
+      "status": "partial_source_recovered_not_a_complete_paper",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false,
+      "path": "省考/北京/2026/行测-统考.md",
+      "question_positions": 67,
+      "original_total_question_count": "not_verified_from_source",
+      "restored_shared_material_groups": [
+        "46-50",
+        "51-55",
+        "74-75",
+        "80-82"
+      ],
+      "sha256": "012bcadc0301fc178f246827035298d8b0697da836df20a246c49f6c2ee98bf0"
+    },
+    {
+      "area": "上海",
+      "year": 2016,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2021,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "A",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2023,
+      "subject": "申论",
+      "variant": "B",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2024,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "上海",
+      "year": 2025,
+      "subject": "申论",
+      "variant": "行政执法专项",
+      "owner": "b",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "天津",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "行政执法",
+      "owner": "c",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "subject": "申论",
+      "variant": "综合街镇",
+      "owner": "c",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "天津",
+      "year": 2024,
+      "subject": "申论",
+      "variant": "行政执法",
+      "owner": "c",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "天津",
+      "year": 2025,
+      "subject": "申论",
+      "variant": "行政执法",
+      "owner": "c",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "综合市区",
+      "owner": "c",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "天津",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "综合街镇",
+      "owner": "c",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "福建",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "省市综合管理",
+      "owner": "c",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "深圳",
+      "year": 2024,
+      "subject": "申论",
+      "variant": "Ⅰ",
+      "owner": "c",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "A",
+      "owner": "a",
+      "status": "complete_user_supplied_recollection_version_transcribed",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": true,
+      "path": "省考/江苏/2026/申论-A类.md",
+      "sha256": "518bd73e4ac355e657703fa93d813d3cacc240e3e0a876058277b7d9e0f61ccf",
+      "authenticity_boundary": "材料和任务结构完整的网络回忆整理版本；未认证为官方原件或逐字原卷。"
+    },
+    {
+      "area": "江苏",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "C",
+      "owner": "a",
+      "status": "complete_user_supplied_recollection_version_transcribed",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": true,
+      "path": "省考/江苏/2026/申论-C类.md",
+      "sha256": "525a72d6922ef719a93b675c8df3f0d5957545af1ef52c007f00991a98ff1ebc",
+      "authenticity_boundary": "材料和任务结构完整的网络回忆整理版本；未认证为官方原件或逐字原卷。"
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "A",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "B",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "浙江",
+      "year": 2022,
+      "subject": "申论",
+      "variant": "C",
+      "owner": "root-zhejiang",
+      "status": "complete_free_reference_version_not_acquired",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false
+    },
+    {
+      "area": "北京",
+      "year": 2026,
+      "subject": "申论",
+      "variant": "统一卷",
+      "owner": "a",
+      "status": "source_has_only_material1_and_four_tasks_materials2_to10_missing",
+      "counted_as_recovered": false,
+      "counted_as_recovered_this_round": false,
+      "formal_paper_created": false
+    }
+  ],
+  "source_policy": "仅免费资料；用户手动下载，代理本机只读原件并安全解包。没有购买、积分消费、充值或计划变更。",
+  "authorship_policy": "未署名网络整理参考与AI辅助原创/修订分开标注；不冒称官方答案、机构原作者或真实实考高分卷。",
+  "cloud_validation": "实际云端执行状态以PR20检查为准；本报告仅陈述本机验证，不宣称云端已运行或已合入main。",
+  "validation": {
+    "status": "passed_with_explicit_incomplete_sources",
+    "current_tool_unit_tests": 48,
+    "unchanged_historical_tests": {
+      "total": 466,
+      "groups": [
+        369,
+        97
+      ],
+      "fixed_original_baseline": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab"
+    },
+    "outer_current_receipts": {
+      "status": "passed",
+      "receipts": 1214,
+      "changed_papers": 1201,
+      "base_commit": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab"
+    },
+    "cloud_boundary": "Local workflow-equivalent checks only. Cloud execution and main/PR state must be read from GitHub; this file does not claim the current CI job has executed or that main was merged."
+  }
+}
