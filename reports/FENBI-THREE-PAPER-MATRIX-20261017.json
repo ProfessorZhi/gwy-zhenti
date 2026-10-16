@@ -1,0 +1,1977 @@
+{
+  "audit": "three-paper-offline-matrix",
+  "dimensions": [
+    "number",
+    "stem",
+    "options",
+    "materials",
+    "images",
+    "answer",
+    "explanation"
+  ],
+  "status_vocabulary": {
+    "same": "compared and equal after the aligner's normalization",
+    "different": "compared and unequal",
+    "unknown": "cannot be decided with the evidence available",
+    "not_compared": "not a comparable value by design"
+  },
+  "papers": [
+    {
+      "label": "江苏2025C类",
+      "path": "省考/江苏/2025/行测-C类.md",
+      "fenbi_source_id": "4189916",
+      "file_sha256": "2cf80b7eb069affaf1aefa55899f9b199ffee8fcfbd8b0e81446268180a1d910",
+      "own_image_dir": "省考-江苏-2025-行测-C类",
+      "declared_missing": [],
+      "declared_total": "130",
+      "actual_questions": 130,
+      "materials": 6,
+      "note": "These 12 were restored between the report baseline and the audited head from 省考/江苏/2025/行测-A类.md. The A-class donor is NOT evidence for the C paper: nothing in the A file can establish that C question N is the same question as A question M.",
+      "questions_with_foreign_paper_images": [
+        81,
+        85
+      ],
+      "foreign_paper_image_dirs": [
+        "省考-江苏-2025-行测-A类"
+      ]
+    },
+    {
+      "label": "江苏2024A类",
+      "path": "省考/江苏/2024/行测-A类.md",
+      "fenbi_source_id": "4162243",
+      "file_sha256": "98b2e57b915290a20b11c26481d5fabd8a25a3810395daef6d5ee728dc951871",
+      "own_image_dir": "省考-江苏-2024-行测-A类",
+      "declared_missing": [
+        76,
+        96,
+        110,
+        111
+      ],
+      "declared_total": "135",
+      "actual_questions": 131,
+      "materials": 7,
+      "note": "Still absent in the library at the audited head.",
+      "questions_with_foreign_paper_images": [],
+      "foreign_paper_image_dirs": []
+    },
+    {
+      "label": "广东2020县级卷",
+      "path": "省考/广东/2020/行测-县级卷.md",
+      "fenbi_source_id": "96785",
+      "file_sha256": "64f6c511918541c91d6a8bf57f564f2aa296625a6b0eb093bcc433e18d36728b",
+      "own_image_dir": "省考-广东-2020-行测-县级卷",
+      "declared_missing": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "declared_total": "100",
+      "actual_questions": 93,
+      "materials": 3,
+      "note": "Still absent in the library at the audited head.",
+      "questions_with_foreign_paper_images": [],
+      "foreign_paper_image_dirs": []
+    }
+  ],
+  "items": [
+    {
+      "id": "江苏2025C类-27",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 27,
+      "library": {
+        "heading_present": true,
+        "qid": "13319274",
+        "stem": {
+          "present": true,
+          "chars": 233,
+          "sha256": "f3f8029c6520e37e38020a8519d0a82d7280388c428c2299922837c21d85c00a",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "61d8857f095526838b6f43e893cf7f5342e16718204b283bd3a521f2c8bda1e9",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 517,
+          "sha256": "85f4dd5be2c28f6eb82fd683708d24b6b151a5dd2264621411d602e7f61be071"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 25,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 1
+      }
+    },
+    {
+      "id": "江苏2025C类-29",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 29,
+      "library": {
+        "heading_present": true,
+        "qid": "13319271",
+        "stem": {
+          "present": true,
+          "chars": 242,
+          "sha256": "8563ed8e887542f5621a5a6ca449614052288d3d241acf93bcddfbdaf5492a67",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "af331b4675d83149a96391857f9c0db3887d46fa1d072c29ec6013f179c4394a",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 494,
+          "sha256": "ecdd455f5c07bc188c013fd1c8b0c58578e801ffdc0715a5311a0d8d3992d158"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 26,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 1
+      }
+    },
+    {
+      "id": "江苏2025C类-35",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 35,
+      "library": {
+        "heading_present": true,
+        "qid": "13319284",
+        "stem": {
+          "present": true,
+          "chars": 243,
+          "sha256": "c547e2beb4141c6f137cc11ad41f34d9427bc6fafcd15b5a488db7f9f029fd86",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "893945157a74dd925743736713feaa048dd3a87f26fe480273eabfd3a9f1d28b",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 588,
+          "sha256": "da4db6267275f7da3b035a6065920735c92428d657ea564da37663b20f9b18c9"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 35,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 2
+      }
+    },
+    {
+      "id": "江苏2025C类-36",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 36,
+      "library": {
+        "heading_present": true,
+        "qid": "13319291",
+        "stem": {
+          "present": true,
+          "chars": 150,
+          "sha256": "7e7a614307b42f938f1a20a144c8fe376727cd0c3ebb4d8e27f2736927691a66",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "cb27d0e1f8aa0a5656e7f1de7fa8fb59007bffa6b847b23c7b7b599702adab97",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 559,
+          "sha256": "4e4509b33efa20193cf61e605d2aa4044f926e8ab11b8de5bafdd1e475170833"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 36,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 1
+      }
+    },
+    {
+      "id": "江苏2025C类-37",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 37,
+      "library": {
+        "heading_present": true,
+        "qid": "13319288",
+        "stem": {
+          "present": true,
+          "chars": 147,
+          "sha256": "f7524df42d0feebc19abfa56ea6aee89b8dad111ae9c03e3b64d725294ba132e",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "c0bde4db3410ed75b7dd59d3bd2d740b7d4caf9900d856ce164efcded91e9fe8",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 565,
+          "sha256": "3b537efdcd90459b8910b3f55c12bc609b5eef72a4a1e61d69706531f2b844af"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 38,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 1
+      }
+    },
+    {
+      "id": "江苏2025C类-42",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 42,
+      "library": {
+        "heading_present": true,
+        "qid": "13319300",
+        "stem": {
+          "present": true,
+          "chars": 188,
+          "sha256": "2cc12f769ffc1169a0ecf746ba92a1331d76873883ca510325797b4f4fa66e2f",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "08bef782f62fe4c6ecee684130d26da36abb40a0f6415e92489db2c1b6567fe2",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 578,
+          "sha256": "e1874c2e8e22f5cf64cc98be6d51aa2e30d42bf69f28e046961e45acf6ee928a"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 45,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 1
+      }
+    },
+    {
+      "id": "江苏2025C类-75",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 75,
+      "library": {
+        "heading_present": true,
+        "qid": "11367763",
+        "stem": {
+          "present": true,
+          "chars": 9,
+          "sha256": "5992e2852c097e748e22d0ceaf65abada6c554dbc6b42081b5148352153a90a3",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "efbc8b88e88da35fe0d87ea4ab6c9f3468340bd821f0403504e234519cc716bb",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 506,
+          "sha256": "4e34186752fd95aa186accfadfaaf75f678c66eb5c24eaf113afe27e10bf97ec"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 75,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 0
+      }
+    },
+    {
+      "id": "江苏2025C类-77",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 77,
+      "library": {
+        "heading_present": true,
+        "qid": "11367776",
+        "stem": {
+          "present": true,
+          "chars": 14,
+          "sha256": "c35139d6060f06f1abefefa5ba36765ca6c0fa564b84a978806cff7ee989f876",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "b8071aeaf9fe1b37f8b7af4b4c33b279611ea4bbf5b2e9d2303d3a11d124012e",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 517,
+          "sha256": "c838ab90022df7ba33be8d201bbe522442f201e782486433a4cba10b32555702"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 77,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 0
+      }
+    },
+    {
+      "id": "江苏2025C类-78",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 78,
+      "library": {
+        "heading_present": true,
+        "qid": "11367766",
+        "stem": {
+          "present": true,
+          "chars": 14,
+          "sha256": "542ed56efe9e24ced7c828e16a7839c36b17c5782ffdc23ec3c2cd1714fca8eb",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "5d8c4656f93303e76a5e113e2363b3e17c7663fe961998f5cde18817882006f8",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 524,
+          "sha256": "83ae994d652cdaa269ff97ecc33a0d19449f05220cb2e0a25933715f989bab5f"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 78,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 0
+      }
+    },
+    {
+      "id": "江苏2025C类-80",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 80,
+      "library": {
+        "heading_present": true,
+        "qid": "11367771",
+        "stem": {
+          "present": true,
+          "chars": 29,
+          "sha256": "bc96db6102a881abacbe6c361677e8f6412ff62822d5f4d5ac8a6fe6dfca3084",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "643ae71fb679bb42301a1ac3c798eef4158d58e6dcc51aee9f4865de23cc2746",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 0,
+          "formula": 0,
+          "figure": 0,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 0,
+          "foreign_paper_dirs": [],
+          "digests": [],
+          "details": []
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 492,
+          "sha256": "882b205f2182a9b8e61cc388062e14ddff0bd33aac409e3da519fe132dde63c0"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 80,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 0
+      }
+    },
+    {
+      "id": "江苏2025C类-81",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 81,
+      "library": {
+        "heading_present": true,
+        "qid": "11367775",
+        "stem": {
+          "present": true,
+          "chars": 145,
+          "sha256": "ad9a98c581b15c08b3f2ec96d18628547d23ef7717b8c14400d064a0428f0ff2",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "babbfc637186b9ba22c6eda008b9537048032a6bbdfb4187535b4cceeb45c1cb",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 1,
+          "formula": 0,
+          "figure": 1,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 1,
+          "foreign_paper_dirs": [
+            "省考-江苏-2025-行测-A类"
+          ],
+          "digests": [
+            "506dc2ae006e2c1e47e4558a029ddc64629bcd71a2fea702ca03b26766b0ae8e"
+          ],
+          "details": [
+            {
+              "src": "../../../图片/省考-江苏-2025-行测-A类/题目图/194f2929b6bca3e.png",
+              "resolved": "图片/省考-江苏-2025-行测-A类/题目图/194f2929b6bca3e.png",
+              "exists": true,
+              "bytes": 44981,
+              "sha256": "506dc2ae006e2c1e47e4558a029ddc64629bcd71a2fea702ca03b26766b0ae8e",
+              "kind": "figure",
+              "flag": ""
+            }
+          ]
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 512,
+          "sha256": "771b7965f40cefd0c7a4001cc18225839acd96684697f749273d15bae56e7aef"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [
+        "image-from-another-paper:省考-江苏-2025-行测-A类"
+      ],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 81,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 0
+      }
+    },
+    {
+      "id": "江苏2025C类-85",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "fenbi_source_id": "4189916",
+      "number": 85,
+      "library": {
+        "heading_present": true,
+        "qid": "11367791",
+        "stem": {
+          "present": true,
+          "chars": 144,
+          "sha256": "48cdd7ec0e1b7143cbf2ec48692b8b6f1f9672fce74743f1adf47d5bde33e4de",
+          "placeholder_markers": []
+        },
+        "options": {
+          "count": 4,
+          "labels": "ABCD",
+          "sha256": "babbfc637186b9ba22c6eda008b9537048032a6bbdfb4187535b4cceeb45c1cb",
+          "placeholder_markers": []
+        },
+        "materials": {
+          "linked_ids": [],
+          "count": 0,
+          "present": true
+        },
+        "images": {
+          "total": 1,
+          "formula": 0,
+          "figure": 1,
+          "missing": 0,
+          "own_paper": 0,
+          "foreign_paper": 1,
+          "foreign_paper_dirs": [
+            "省考-江苏-2025-行测-A类"
+          ],
+          "digests": [
+            "faa5eff0e8c204059e3b50d061e65180abf473f393348686af7d0f684ba33f58"
+          ],
+          "details": [
+            {
+              "src": "../../../图片/省考-江苏-2025-行测-A类/题目图/194f2cbf179256d.png",
+              "resolved": "图片/省考-江苏-2025-行测-A类/题目图/194f2cbf179256d.png",
+              "exists": true,
+              "bytes": 45554,
+              "sha256": "faa5eff0e8c204059e3b50d061e65180abf473f393348686af7d0f684ba33f58",
+              "kind": "figure",
+              "flag": ""
+            }
+          ]
+        },
+        "answer": {
+          "present": true,
+          "chars": 1,
+          "sha256": "3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43"
+        },
+        "explanation": {
+          "present": true,
+          "chars": 522,
+          "sha256": "3f4e0879180e805afe0d9f00d0f53fe2930a91a19b6f7a733e64fd2d6a2e5d0c"
+        }
+      },
+      "source_alignment": {
+        "number": {
+          "status": "not_compared",
+          "reason": "number-is-the-join-key-not-a-compared-value"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        }
+      },
+      "library_internal_findings": [
+        "image-from-another-paper:省考-江苏-2025-行测-A类"
+      ],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "verified",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page, to compare stem/options/materials/images against the library copy",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 85,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 0
+      }
+    },
+    {
+      "id": "江苏2024A类-76",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "fenbi_source_id": "4162243",
+      "number": 76,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "江苏2024A类-96",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "fenbi_source_id": "4162243",
+      "number": 96,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "江苏2024A类-110",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "fenbi_source_id": "4162243",
+      "number": 110,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "江苏2024A类-111",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "fenbi_source_id": "4162243",
+      "number": 111,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "广东2020县级卷-69",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "fenbi_source_id": "96785",
+      "number": 69,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "广东2020县级卷-70",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "fenbi_source_id": "96785",
+      "number": 70,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "广东2020县级卷-71",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "fenbi_source_id": "96785",
+      "number": 71,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "广东2020县级卷-72",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "fenbi_source_id": "96785",
+      "number": 72,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "广东2020县级卷-73",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "fenbi_source_id": "96785",
+      "number": 73,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "广东2020县级卷-74",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "fenbi_source_id": "96785",
+      "number": 74,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ]
+    },
+    {
+      "id": "广东2020县级卷-75",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "fenbi_source_id": "96785",
+      "number": 75,
+      "library": {
+        "heading_present": false
+      },
+      "source_alignment": {
+        "number": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "stem": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "options": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "materials": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "images": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed",
+          "library_side": "repository-content-absent"
+        }
+      },
+      "library_internal_findings": [],
+      "verifiability": {
+        "paper_identity": "unverified",
+        "paper_identity_reason": "The fenbi catalogue response carries no paperId; binding rests on the catalogue click path and matching title. Unchanged by anything in this repository.",
+        "library_side": "repository-content-absent",
+        "source_side": "unknown",
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "what_would_resolve": [
+        "a capture of this number on the source practice page",
+        "confirmation of the source paper identity (paperId) for the whole paper"
+      ],
+      "cross_number": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 75,
+        "donor_is_evidence_for_this_paper": false,
+        "reason": "Reusing the A-class text cannot establish that this C-class number is that question; only a C-class source can.",
+        "scan_clip_metadata_recorded": 0
+      }
+    }
+  ],
+  "summary": {
+    "papers": 3,
+    "items": 23,
+    "items_with_library_content": 12,
+    "items_absent_in_library": 11,
+    "items_with_internal_findings": 2,
+    "dimensions_unknown_pending_source": 149
+  }
+}

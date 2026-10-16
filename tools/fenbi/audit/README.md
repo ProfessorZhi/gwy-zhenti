@@ -34,6 +34,54 @@ bash tools/fenbi/audit/run_gap_audit.sh /tmp/m25-out
    they are identical after folding whitespace/punctuation, and how many of them
    cross question numbers.
 
+## Three-paper evidence matrix (workstream A)
+
+```bash
+python3 tools/fenbi/audit/paper_matrix.py --repo . \
+    --out reports/FENBI-THREE-PAPER-MATRIX-20261017.json
+```
+
+Covers the 23 items in 江苏2025C / 江苏2024A / 广东2020县级 across seven dimensions
+(题号 / 题干 / 选项 / 共用材料 / 图片与公式 / 答案 / 解析), using the same four states
+as `tools/fenbi/src/align.mjs` (`same` / `different` / `unknown` / `not_compared`).
+
+Offline, every source-facing dimension is `unknown` with reason
+`source-content-not-observed` — that is the honest answer while no capture
+exists, and it is never promoted to `same` on the strength of similar text.
+
+It also reports two things that are checkable without any capture:
+
+- **cross-paper image provenance** — a question whose figures live in another
+  paper's image tree carries that paper's provenance. For figure-reasoning items
+  the figure *is* the question, so this matters. Currently the only such
+  references in the library are 江苏2025C questions 81 and 85, which point at the
+  A-class image tree.
+- **join hazard** — this library preserves original numbering with gaps, so a
+  direct number join misaligns everything after the first gap.
+
+## Reconciling a capture (handoff)
+
+See [HANDOFF.md](HANDOFF.md) for the input format and the join-strategy trap.
+
+```bash
+python3 tools/fenbi/audit/handoff_reconcile.py --repo . \
+    --handoff <captured.json> [--paper <library path>] [--join auto] --out <matrix.json>
+```
+
+Accepts either the reduced `fenbi-candidate-handoff-v1` projection or a framework
+`document.json`. Reports only; nothing is written back. Source answers that were
+never published stay `unknown` — they are never borrowed from the library or
+from a sibling paper.
+
+## Tests
+
+```bash
+python3 -m unittest discover -s tools/fenbi/audit/tests -t .
+```
+
+Fixtures are generated from the repository's own markdown at run time, so no
+question text is committed in the test suite.
+
 ## Network step (optional, no credentials)
 
 ```bash
