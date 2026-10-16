@@ -9,6 +9,7 @@ export const DEFAULTS = Object.freeze({
   entryUrl: 'https://www.fenbi.com/spa/tiku', timeoutMs: 45000,
   delayMs: 800, settleMs: 1500, maxPages: 250,
   contentSelector: null, nextQuestionSelector: null, explanationSelector: null,
+  domAdapter: null,
   fieldMap: {}, scope: { fromYear: 2016, toYear: new Date().getFullYear(),
     areas: ['国考', '浙江', '江苏', '上海', '北京', '天津', '广东', '福建', '广州', '深圳'] },
 });
@@ -50,6 +51,7 @@ export async function loadConfig(filename) {
   const config = { ...DEFAULTS, ...raw, scope: { ...DEFAULTS.scope, ...raw.scope } };
   if (!/^[a-z0-9][a-z0-9_-]{0,50}$/i.test(config.profileName)) throw new Error('Invalid profileName');
   if (!['chrome', 'msedge', 'chromium'].includes(config.channel)) throw new Error('Unsupported browser channel');
+  if (config.domAdapter !== null && config.domAdapter !== 'fenbi-xingce-v1') throw new Error('Unsupported DOM adapter');
   if (config.executablePath !== null && (typeof config.executablePath !== 'string' || !path.isAbsolute(config.executablePath))) throw new Error('executablePath must be an absolute installed browser path');
   for (const [key, min, max] of [['timeoutMs', 1000, 120000], ['delayMs', 200, 60000], ['settleMs', 100, 30000], ['maxPages', 1, 1000]]) {
     if (!Number.isInteger(config[key]) || config[key] < min || config[key] > max) throw new Error(`Invalid ${key}`);

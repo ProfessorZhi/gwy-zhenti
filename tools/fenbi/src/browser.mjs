@@ -6,7 +6,7 @@ import { observedReadUrl } from './reads.mjs';
 
 const SAFE_QUERY = new Set(['labelId', 'toPage', 'page', 'pageSize', 'paperId', 'year', 'categoryId', 'provinceId', 'id', 'type']);
 const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
-const ACCOUNT_PATH = /(?:^|\/)(?:users?|history|member\w*|auth\w*|login|logout|current|selected|submit|records?|favorites?)(?:\/|$)/i;
+const ACCOUNT_PATH = /(?:^|\/)(?:user[^/]*|history|member\w*|auth\w*|login|logout|current|selected|submit|records?|favorites?|category-exercises-unfinished)(?:\/|$)/i;
 const MAX_ASSET_BYTES = 12 * 1024 * 1024;
 const MAX_ASSETS = 256;
 const MAX_TOTAL_ASSET_BYTES = 128 * 1024 * 1024;
@@ -14,9 +14,13 @@ const MAX_TOTAL_ASSET_BYTES = 128 * 1024 * 1024;
 function parsedUrl(value) { try { return new URL(value); } catch { return null; } }
 function isFenbiHost(host) { return host === 'fenbi.com' || host.endsWith('.fenbi.com'); }
 function allowedHost(host) { return isFenbiHost(host) || host === 'fbstatic.cn' || host.endsWith('.fbstatic.cn'); }
+function allowedResource(url) {
+  // Additional image host actually referenced by the authenticated Fenbi exam DOM.
+  return allowedHost(url.hostname) || (url.hostname === 'fb.fenbike.cn' && /^\/api\/(?:tarzan\/images\/|planet\/accessories\/formulas\/?$)/.test(url.pathname));
+}
 export function isAllowedSourceUrl(value) {
   const url = parsedUrl(value);
-  return Boolean(url && url.protocol === 'https:' && allowedHost(url.hostname) && !url.username && !url.password && ![...url.searchParams.keys()].some(key => SENSITIVE_QUERY.test(key)));
+  return Boolean(url && url.protocol === 'https:' && allowedResource(url) && !url.username && !url.password && ![...url.searchParams.keys()].some(key => SENSITIVE_QUERY.test(key)));
 }
 function safeAssetUrl(value) {
   if (!isAllowedSourceUrl(value)) return null;
@@ -41,7 +45,7 @@ export function requestPolicy({ url: value, method = 'GET', navigation = false }
   if (!url || !['https:', 'http:'].includes(url.protocol) || url.username || url.password) return 'blockedUrl';
   if (url.protocol !== 'https:') return 'blockedUrl';
   if (navigation && !isFenbiHost(url.hostname)) return 'blockedNavigation';
-  if (!allowedHost(url.hostname)) return 'blockedHost';
+  if (!allowedResource(url)) return 'blockedHost';
   if (['GET', 'HEAD', 'OPTIONS'].includes(method.toUpperCase())) return null;
   if (mode === 'login' && url.hostname === 'login.fenbi.com' && /^\/api\/(?:users|sms|login|auth|passport)(?:\/|$)/i.test(url.pathname)) return null;
   return 'blockedWrites';
@@ -261,7 +265,7 @@ export async function downloadAssets(page, document, assetDir) {
   for (const [index, value] of candidates.entries()) {
     let url;
     try { url = new URL(value, document.url); } catch { result.push({ status: 'rejected_url' }); continue; }
-    if (url.protocol !== 'https:' || !allowedHost(url.hostname) || url.username || url.password || [...url.searchParams.keys()].some(key => SENSITIVE_QUERY.test(key))) {
+    if (url.protocol !== 'https:' || !allowedResource(url) || url.username || url.password || [...url.searchParams.keys()].some(key => SENSITIVE_QUERY.test(key))) {
       result.push({ status: 'rejected_url' }); continue;
     }
     const record = { url: safeAssetUrl(url.toString()), status: 'pending' };

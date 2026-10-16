@@ -1,0 +1,5202 @@
+{
+  "auditDate": "2026-10-16",
+  "source": {
+    "provider": "粉笔",
+    "sourcePaperId": "8399763",
+    "title": "2026年浙江省公务员录用考试《行测》题（C类）（网友回忆版）",
+    "version": "网友回忆版",
+    "entry": "https://www.fenbi.com/spa/tiku",
+    "capturedAt": "2026-10-16T12:30:51.812Z"
+  },
+  "repository": {
+    "path": "省考/浙江/2026/行测-C类.md",
+    "sha256": "c3cc60cb152f375e1517ff47e2055544bd640f57493476337737db66a7451c03",
+    "modified": false
+  },
+  "access": {
+    "authenticated": true,
+    "localPersistentProfile": true,
+    "exerciseInitializations": 1,
+    "subsequentRunsReusedExistingExercise": true,
+    "answerSubmissions": 0,
+    "paperSubmissions": 0,
+    "purchases": 0,
+    "externalModelCalls": 0,
+    "cloudBrowserCalls": 0
+  },
+  "sourceCounts": {
+    "declaredQuestionsFromChapterCounters": 110,
+    "observedQuestions": 110,
+    "materials": 4,
+    "sectionInstructions": 6,
+    "imageResourceUrls": 26,
+    "downloadedAndBrowserDecoded": 26,
+    "uniqueImageObjects": 25
+  },
+  "strict": {
+    "matched": 109,
+    "unmatchedSourceNumbers": [
+      54
+    ],
+    "dimensions": {
+      "qid": {
+        "same": 0,
+        "different": 0,
+        "unknown": 0,
+        "not_compared": 109
+      },
+      "number": {
+        "same": 109,
+        "different": 0,
+        "unknown": 0,
+        "not_compared": 0
+      },
+      "stem": {
+        "same": 109,
+        "different": 0,
+        "unknown": 0,
+        "not_compared": 0
+      },
+      "options": {
+        "same": 109,
+        "different": 0,
+        "unknown": 0,
+        "not_compared": 0
+      },
+      "materials": {
+        "same": 109,
+        "different": 0,
+        "unknown": 0,
+        "not_compared": 0
+      },
+      "answer": {
+        "same": 0,
+        "different": 0,
+        "unknown": 109,
+        "not_compared": 0
+      },
+      "explanation": {
+        "same": 0,
+        "different": 0,
+        "unknown": 109,
+        "not_compared": 0
+      },
+      "images": {
+        "same": 21,
+        "different": 3,
+        "unknown": 0,
+        "not_compared": 85
+      }
+    },
+    "questionCount": {
+      "status": "same",
+      "reason": "verified-source-total-comparison"
+    }
+  },
+  "reviewedRepresentationEquivalence": {
+    "question": 54,
+    "sourceText": "90°",
+    "repositoryFormula": "图片/省考-浙江-2026-行测-C类/公式图/formula-a1210bce4a4296a5.png",
+    "repositoryFormulaSha256": "8d0c3d13d3eb536dd6a669632bb71d13b557af0bb7b9d2b364925c3a9a467fce",
+    "verifiedBy": "visual inspection of unchanged original image, rendered on white background",
+    "comparisonOnlyOverlay": true,
+    "formalPaperModified": false
+  },
+  "formulaRenderingDifferences": [
+    {
+      "question": 42,
+      "values": [
+        "→"
+      ],
+      "conclusion": "bytes differ; rendered mathematical symbol verified equivalent"
+    },
+    {
+      "question": 59,
+      "values": [
+        "1/10",
+        "1/15",
+        "1/20",
+        "1/35"
+      ],
+      "conclusion": "bytes differ; all four rendered fractions verified equivalent"
+    },
+    {
+      "question": 60,
+      "values": [
+        "√2",
+        "2√2",
+        "√6"
+      ],
+      "conclusion": "bytes differ; all three rendered expressions verified equivalent"
+    }
+  ],
+  "afterReviewedRepresentationOverlay": {
+    "matched": 110,
+    "unmatched": 0,
+    "questionOrder": {
+      "status": "same",
+      "reason": "all-matched-explicit-source-and-repository-numbers-equal"
+    },
+    "limitation": "109 strict matches plus one separately reviewed representation equivalence; not 110 strict byte/text matches."
+  },
+  "sectionInstructions": {
+    "sourceSections": [
+      {
+        "title": "政治理论",
+        "questionCount": 10
+      },
+      {
+        "title": "常识判断",
+        "questionCount": 10
+      },
+      {
+        "title": "言语理解与表达",
+        "questionCount": 25
+      },
+      {
+        "title": "数量关系",
+        "questionCount": 15
+      },
+      {
+        "title": "判断推理",
+        "questionCount": 35
+      },
+      {
+        "title": "资料分析",
+        "questionCount": 15
+      }
+    ],
+    "preservedInCanonicalDocument": true,
+    "rendererNowPreservesInstructions": true,
+    "repositoryHasEquivalentSectionHeadings": false,
+    "note": "Fenbi exercise section instructions are not independently authenticated official exam front matter."
+  },
+  "answers": {
+    "compared": 0,
+    "status": "not_verified",
+    "reason": "No reference answer or explanation was exposed in the observed exercise view; no submission was made to reveal them."
+  },
+  "qualityCertified": false,
+  "authoritativeOriginalCertified": false,
+  "newPapers": 0,
+  "gapsReduced": 0,
+  "strictPerQuestionAlignment": [
+    {
+      "sourceId": "3_1_beq2d",
+      "sourceNumber": 1,
+      "repositoryId": "12019789",
+      "repositoryNumber": 1,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2c",
+      "sourceNumber": 2,
+      "repositoryId": "12019788",
+      "repositoryNumber": 2,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2e",
+      "sourceNumber": 3,
+      "repositoryId": "12019790",
+      "repositoryNumber": 3,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0o",
+      "sourceNumber": 4,
+      "repositoryId": "12019736",
+      "repositoryNumber": 4,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq12",
+      "sourceNumber": 5,
+      "repositoryId": "12019746",
+      "repositoryNumber": 5,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2j",
+      "sourceNumber": 6,
+      "repositoryId": "12019795",
+      "repositoryNumber": 6,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0m",
+      "sourceNumber": 7,
+      "repositoryId": "12019734",
+      "repositoryNumber": 7,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2h",
+      "sourceNumber": 8,
+      "repositoryId": "12019793",
+      "repositoryNumber": 8,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1a",
+      "sourceNumber": 9,
+      "repositoryId": "12019754",
+      "repositoryNumber": 9,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2o",
+      "sourceNumber": 10,
+      "repositoryId": "12019800",
+      "repositoryNumber": 10,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_housg",
+      "sourceNumber": 11,
+      "repositoryId": "18643856",
+      "repositoryNumber": 11,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_housj",
+      "sourceNumber": 12,
+      "repositoryId": "18643859",
+      "repositoryNumber": 12,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houst",
+      "sourceNumber": 13,
+      "repositoryId": "18643869",
+      "repositoryNumber": 13,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2k",
+      "sourceNumber": 14,
+      "repositoryId": "12019796",
+      "repositoryNumber": 14,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_housi",
+      "sourceNumber": 15,
+      "repositoryId": "18643858",
+      "repositoryNumber": 15,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_housp",
+      "sourceNumber": 16,
+      "repositoryId": "18643865",
+      "repositoryNumber": 16,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_housq",
+      "sourceNumber": 17,
+      "repositoryId": "18643866",
+      "repositoryNumber": 17,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houss",
+      "sourceNumber": 18,
+      "repositoryId": "18643868",
+      "repositoryNumber": 18,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_housr",
+      "sourceNumber": 19,
+      "repositoryId": "18643867",
+      "repositoryNumber": 19,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_hout4",
+      "sourceNumber": 20,
+      "repositoryId": "18643876",
+      "repositoryNumber": 20,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0t",
+      "sourceNumber": 21,
+      "repositoryId": "12019741",
+      "repositoryNumber": 21,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2g",
+      "sourceNumber": 22,
+      "repositoryId": "12019792",
+      "repositoryNumber": 22,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2b",
+      "sourceNumber": 23,
+      "repositoryId": "12019787",
+      "repositoryNumber": 23,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2f",
+      "sourceNumber": 24,
+      "repositoryId": "12019791",
+      "repositoryNumber": 24,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1d",
+      "sourceNumber": 25,
+      "repositoryId": "12019757",
+      "repositoryNumber": 25,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq11",
+      "sourceNumber": 26,
+      "repositoryId": "12019745",
+      "repositoryNumber": 26,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1b",
+      "sourceNumber": 27,
+      "repositoryId": "12019755",
+      "repositoryNumber": 27,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1c",
+      "sourceNumber": 28,
+      "repositoryId": "12019756",
+      "repositoryNumber": 28,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq35",
+      "sourceNumber": 29,
+      "repositoryId": "12019813",
+      "repositoryNumber": 29,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq37",
+      "sourceNumber": 30,
+      "repositoryId": "12019815",
+      "repositoryNumber": 30,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2i",
+      "sourceNumber": 31,
+      "repositoryId": "12019794",
+      "repositoryNumber": 31,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq27",
+      "sourceNumber": 32,
+      "repositoryId": "12019783",
+      "repositoryNumber": 32,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0g",
+      "sourceNumber": 33,
+      "repositoryId": "12019728",
+      "repositoryNumber": 33,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0n",
+      "sourceNumber": 34,
+      "repositoryId": "12019735",
+      "repositoryNumber": 34,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq25",
+      "sourceNumber": 35,
+      "repositoryId": "12019781",
+      "repositoryNumber": 35,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq3g",
+      "sourceNumber": 36,
+      "repositoryId": "12019824",
+      "repositoryNumber": 36,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq28",
+      "sourceNumber": 37,
+      "repositoryId": "12019784",
+      "repositoryNumber": 37,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq26",
+      "sourceNumber": 38,
+      "repositoryId": "12019782",
+      "repositoryNumber": 38,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq29",
+      "sourceNumber": 39,
+      "repositoryId": "12019785",
+      "repositoryNumber": 39,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq3f",
+      "sourceNumber": 40,
+      "repositoryId": "12019823",
+      "repositoryNumber": 40,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 4,
+          "repositoryCount": 4
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq10",
+      "sourceNumber": 41,
+      "repositoryId": "12019744",
+      "repositoryNumber": 41,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq3e",
+      "sourceNumber": 42,
+      "repositoryId": "12019822",
+      "repositoryNumber": 42,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "different",
+          "reason": "image-bytes-differ"
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2a",
+      "sourceNumber": 43,
+      "repositoryId": "12019786",
+      "repositoryNumber": 43,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2m",
+      "sourceNumber": 44,
+      "repositoryId": "12019798",
+      "repositoryNumber": 44,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_i3ab5",
+      "sourceNumber": 45,
+      "repositoryId": "18983269",
+      "repositoryNumber": 45,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houui",
+      "sourceNumber": 46,
+      "repositoryId": "18643922",
+      "repositoryNumber": 46,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houuh",
+      "sourceNumber": 47,
+      "repositoryId": "18643921",
+      "repositoryNumber": 47,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houuk",
+      "sourceNumber": 48,
+      "repositoryId": "18643924",
+      "repositoryNumber": 48,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houum",
+      "sourceNumber": 49,
+      "repositoryId": "18643926",
+      "repositoryNumber": 49,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houul",
+      "sourceNumber": 50,
+      "repositoryId": "18643925",
+      "repositoryNumber": 50,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houup",
+      "sourceNumber": 51,
+      "repositoryId": "18643929",
+      "repositoryNumber": 51,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houut",
+      "sourceNumber": 52,
+      "repositoryId": "18643933",
+      "repositoryNumber": 52,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houus",
+      "sourceNumber": 53,
+      "repositoryId": "18643932",
+      "repositoryNumber": 53,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houuu",
+      "sourceNumber": 54,
+      "repositoryId": null,
+      "repositoryNumber": null,
+      "matchMethod": null,
+      "status": "unmatched",
+      "reason": "no-safe-unique-match"
+    },
+    {
+      "sourceId": "3_1_houv2",
+      "sourceNumber": 55,
+      "repositoryId": "18643938",
+      "repositoryNumber": 55,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houuv",
+      "sourceNumber": 56,
+      "repositoryId": "18643935",
+      "repositoryNumber": 56,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houv0",
+      "sourceNumber": 57,
+      "repositoryId": "18643936",
+      "repositoryNumber": 57,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houv7",
+      "sourceNumber": 58,
+      "repositoryId": "18643943",
+      "repositoryNumber": 58,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houv1",
+      "sourceNumber": 59,
+      "repositoryId": "18643937",
+      "repositoryNumber": 59,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "different",
+          "reason": "image-bytes-differ"
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houv6",
+      "sourceNumber": 60,
+      "repositoryId": "18643942",
+      "repositoryNumber": 60,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "different",
+          "reason": "image-bytes-differ"
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0h",
+      "sourceNumber": 61,
+      "repositoryId": "12019729",
+      "repositoryNumber": 61,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0s",
+      "sourceNumber": 62,
+      "repositoryId": "12019740",
+      "repositoryNumber": 62,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq17",
+      "sourceNumber": 63,
+      "repositoryId": "12019751",
+      "repositoryNumber": 63,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0i",
+      "sourceNumber": 64,
+      "repositoryId": "12019730",
+      "repositoryNumber": 64,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1o",
+      "sourceNumber": 65,
+      "repositoryId": "12019768",
+      "repositoryNumber": 65,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0k",
+      "sourceNumber": 66,
+      "repositoryId": "12019732",
+      "repositoryNumber": 66,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq14",
+      "sourceNumber": 67,
+      "repositoryId": "12019748",
+      "repositoryNumber": 67,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq2l",
+      "sourceNumber": 68,
+      "repositoryId": "12019797",
+      "repositoryNumber": 68,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0l",
+      "sourceNumber": 69,
+      "repositoryId": "12019733",
+      "repositoryNumber": 69,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq15",
+      "sourceNumber": 70,
+      "repositoryId": "12019749",
+      "repositoryNumber": 70,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0j",
+      "sourceNumber": 71,
+      "repositoryId": "12019731",
+      "repositoryNumber": 71,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1t",
+      "sourceNumber": 72,
+      "repositoryId": "12019773",
+      "repositoryNumber": 72,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0q",
+      "sourceNumber": 73,
+      "repositoryId": "12019738",
+      "repositoryNumber": 73,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0u",
+      "sourceNumber": 74,
+      "repositoryId": "12019742",
+      "repositoryNumber": 74,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq0v",
+      "sourceNumber": 75,
+      "repositoryId": "12019743",
+      "repositoryNumber": 75,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq18",
+      "sourceNumber": 76,
+      "repositoryId": "12019752",
+      "repositoryNumber": 76,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq16",
+      "sourceNumber": 77,
+      "repositoryId": "12019750",
+      "repositoryNumber": 77,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq13",
+      "sourceNumber": 78,
+      "repositoryId": "12019747",
+      "repositoryNumber": 78,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1i",
+      "sourceNumber": 79,
+      "repositoryId": "12019762",
+      "repositoryNumber": 79,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1e",
+      "sourceNumber": 80,
+      "repositoryId": "12019758",
+      "repositoryNumber": 80,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq19",
+      "sourceNumber": 81,
+      "repositoryId": "12019753",
+      "repositoryNumber": 81,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1f",
+      "sourceNumber": 82,
+      "repositoryId": "12019759",
+      "repositoryNumber": 82,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1k",
+      "sourceNumber": 83,
+      "repositoryId": "12019764",
+      "repositoryNumber": 83,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1g",
+      "sourceNumber": 84,
+      "repositoryId": "12019760",
+      "repositoryNumber": 84,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1j",
+      "sourceNumber": 85,
+      "repositoryId": "12019763",
+      "repositoryNumber": 85,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1h",
+      "sourceNumber": 86,
+      "repositoryId": "12019761",
+      "repositoryNumber": 86,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1l",
+      "sourceNumber": 87,
+      "repositoryId": "12019765",
+      "repositoryNumber": 87,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1m",
+      "sourceNumber": 88,
+      "repositoryId": "12019766",
+      "repositoryNumber": 88,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1q",
+      "sourceNumber": 89,
+      "repositoryId": "12019770",
+      "repositoryNumber": 89,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1n",
+      "sourceNumber": 90,
+      "repositoryId": "12019767",
+      "repositoryNumber": 90,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq20",
+      "sourceNumber": 91,
+      "repositoryId": "12019776",
+      "repositoryNumber": 91,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1p",
+      "sourceNumber": 92,
+      "repositoryId": "12019769",
+      "repositoryNumber": 92,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq22",
+      "sourceNumber": 93,
+      "repositoryId": "12019778",
+      "repositoryNumber": 93,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1s",
+      "sourceNumber": 94,
+      "repositoryId": "12019772",
+      "repositoryNumber": 94,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_beq1v",
+      "sourceNumber": 95,
+      "repositoryId": "12019775",
+      "repositoryNumber": 95,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houv9",
+      "sourceNumber": 96,
+      "repositoryId": "18643945",
+      "repositoryNumber": 96,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 2,
+          "repositoryCount": 2
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houva",
+      "sourceNumber": 97,
+      "repositoryId": "18643946",
+      "repositoryNumber": 97,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 2,
+          "repositoryCount": 2
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvb",
+      "sourceNumber": 98,
+      "repositoryId": "18643947",
+      "repositoryNumber": 98,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 2,
+          "repositoryCount": 2
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvc",
+      "sourceNumber": 99,
+      "repositoryId": "18643948",
+      "repositoryNumber": 99,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 2,
+          "repositoryCount": 2
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvd",
+      "sourceNumber": 100,
+      "repositoryId": "18643949",
+      "repositoryNumber": 100,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 2,
+          "repositoryCount": 2
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvp",
+      "sourceNumber": 101,
+      "repositoryId": "18643961",
+      "repositoryNumber": 101,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvq",
+      "sourceNumber": 102,
+      "repositoryId": "18643962",
+      "repositoryNumber": 102,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvr",
+      "sourceNumber": 103,
+      "repositoryId": "18643963",
+      "repositoryNumber": 103,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvs",
+      "sourceNumber": 104,
+      "repositoryId": "18643964",
+      "repositoryNumber": 104,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvt",
+      "sourceNumber": 105,
+      "repositoryId": "18643965",
+      "repositoryNumber": 105,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "not_compared",
+          "reason": "no-image-references",
+          "sourceCount": 0,
+          "repositoryCount": 0
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvk",
+      "sourceNumber": 106,
+      "repositoryId": "18643956",
+      "repositoryNumber": 106,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvl",
+      "sourceNumber": 107,
+      "repositoryId": "18643957",
+      "repositoryNumber": 107,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvm",
+      "sourceNumber": 108,
+      "repositoryId": "18643958",
+      "repositoryNumber": 108,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvn",
+      "sourceNumber": 109,
+      "repositoryId": "18643959",
+      "repositoryNumber": 109,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    },
+    {
+      "sourceId": "3_1_houvo",
+      "sourceNumber": 110,
+      "repositoryId": "18643960",
+      "repositoryNumber": 110,
+      "matchMethod": "explicit-number-and-content",
+      "status": "matched",
+      "dimensions": {
+        "qid": {
+          "status": "not_compared",
+          "reason": "question-id-namespaces-incompatible"
+        },
+        "number": {
+          "status": "same",
+          "reason": "explicit-number-comparison"
+        },
+        "stem": {
+          "status": "same",
+          "reason": "normalized-text-equal",
+          "formatOnly": false
+        },
+        "options": {
+          "status": "same",
+          "reason": "all-options-equal",
+          "formatOnly": false
+        },
+        "materials": {
+          "status": "same",
+          "reason": "material-count-and-content-equal"
+        },
+        "answer": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "explanation": {
+          "status": "unknown",
+          "reason": "source-content-not-observed"
+        },
+        "images": {
+          "status": "same",
+          "reason": "all-image-bytes-equal",
+          "sourceCount": 1,
+          "repositoryCount": 1
+        }
+      }
+    }
+  ]
+}

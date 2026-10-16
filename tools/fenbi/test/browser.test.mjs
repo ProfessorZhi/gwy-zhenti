@@ -15,6 +15,11 @@ test('capture guard blocks writes, external navigation, HTTP and deceptive hosts
   assert.equal(requestPolicy({ url: 'https://img.fbstatic.cn/test.png', navigation: true }), 'blockedNavigation');
   assert.equal(requestPolicy({ url: 'https://fenbi.com.evil.invalid/test' }), 'blockedHost');
   assert.equal(requestPolicy({ url: 'http://www.fenbi.com/' }), 'blockedUrl');
+  assert.equal(requestPolicy({ url: 'https://fb.fenbike.cn/api/tarzan/images/fixture.png?width=700' }), null);
+  assert.equal(requestPolicy({ url: 'https://fb.fenbike.cn/api/planet/accessories/formulas?fontSize=18&latex=synthetic-formula' }), null);
+  assert.equal(requestPolicy({ url: 'https://fb.fenbike.cn/api/tarzan/images/fixture.png', navigation: true }), 'blockedNavigation');
+  assert.equal(requestPolicy({ url: 'https://fb.fenbike.cn/unknown' }), 'blockedHost');
+  assert.equal(requestPolicy({ url: 'https://evil.fenbike.cn/api/tarzan/images/a.png' }), 'blockedHost');
 });
 
 function response(url, payload, { status = 200, method = 'GET', length, type = 'application/json' } = {}) {
@@ -29,6 +34,8 @@ test('response observer filters account data, strips secret query and refuses tr
   const observer = observeReadResponses(page, async (payload, meta) => { received.push({ payload, meta }); }, { maxResponseBytes: 200 });
   page.emit('response', response('https://tiku.fenbi.com/api/xingce/papers?labelId=1&token=secret', { papers: [{ id: 7 }] }));
   page.emit('response', response('https://tiku.fenbi.com/api/xingce/users/info', { phone: 'private' }));
+  page.emit('response', response('https://tiku.fenbi.com/api/xingce/userCollectNoteError', { private: true }));
+  page.emit('response', response('https://tiku.fenbi.com/api/xingce/category-exercises-unfinished', { private: true }));
   page.emit('response', response('https://tiku.fenbi.com/api/shenlun/papers', {}, { status: 401 }));
   page.emit('response', response('https://tiku.fenbi.com/api/shenlun/papers', {}, { length: 201 }));
   page.emit('response', response('https://tiku.fenbi.com/api/shenlun/papers', { message: '验证码' }));

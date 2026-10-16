@@ -4,7 +4,7 @@ const SAFE_QUERY = new Set(['labelId', 'toPage', 'page', 'pageSize', 'paperId', 
 export function observedReadUrl(value) {
   const url = new URL(value);
   if (url.protocol !== 'https:' || url.hostname !== 'tiku.fenbi.com' || url.username || url.password || url.hash) throw new Error('Invalid observed read URL');
-  if (!/^\/api\/(xingce|shenlun)\//.test(url.pathname) || /(?:^|\/)(?:users?|history|member\w*|auth\w*|login|logout|current|selected|submit|records?|favorites?)(?:\/|$)/i.test(url.pathname)) throw new Error('Account endpoints cannot be replayed');
+  if (!/^\/api\/(xingce|shenlun)\//.test(url.pathname) || /(?:^|\/)(?:user[^/]*|history|member\w*|auth\w*|login|logout|current|selected|submit|records?|favorites?|category-exercises-unfinished)(?:\/|$)/i.test(url.pathname)) throw new Error('Account endpoints cannot be replayed');
   if (/\/exercises?(?:\/|$)/i.test(url.pathname) && !/^\/api\/(xingce|shenlun)\/exercises?\/[a-zA-Z0-9_-]+(?:\/(?:questions|answers|answercard|materials))?\/?$/.test(url.pathname)) throw new Error('Only existing exercise content can be read');
   for (const [key, val] of url.searchParams) if (!SAFE_QUERY.has(key) || !/^[\w,\[\].-]{0,2000}$/.test(val)) throw new Error('Read URL contains unsupported parameters');
   return url.toString();

@@ -9,11 +9,13 @@ import { acquireLock, digest, jobKey, readJson, resumeBundle, writeJson } from '
 import { createDocument, absorbPayload, collectAssetUrls } from './model.mjs';
 import { validateDocument } from './validate.mjs';
 import { openSession, observeReadResponses, captureDom, downloadAssets } from './browser.mjs';
-import { makePlan, parseInventory } from './plan.mjs';
+import { makePlan, parseInventory, inferIdentity } from './plan.mjs';
 import { exportCandidate } from './render.mjs';
 import { observedReadUrl, replayReads } from './reads.mjs';
 import { sanitizeHtml } from './privacy.mjs';
 import { normalizeCatalogPayload, mergeCatalog } from './catalog.mjs';
+import { parseFenbiExamDom } from './dom.mjs';
+import { comparePaper } from './align.mjs';
 
 const HELP = `Fenbi capture (local persistent Chrome/Edge; no model or cloud-browser calls)
   node src/cli.mjs init
@@ -28,6 +30,8 @@ const HELP = `Fenbi capture (local persistent Chrome/Edge; no model or cloud-bro
   node src/cli.mjs capture --all        # ready URLs only, one browser session
   node src/cli.mjs validate --job KEY
   node src/cli.mjs export --job KEY     # fresh candidate folder only
+  node src/cli.mjs normalize-dom --document WORK_JSON
+  node src/cli.mjs align --document WORK_JSON --paper REPO_PAPER_MD [--asset-root WORK_DIR]
 Options: --config FILE, --wait-seconds N, --materials N
 Private profile/data/output: <repository>/work/fenbi/
 Unknown totals or unmapped fields remain partial. Nothing writes formal papers.
@@ -35,7 +39,7 @@ Unknown totals or unmapped fields remain partial. Nothing writes formal papers.
 
 function args() {
   return parseArgs({ allowPositionals: true, options: Object.fromEntries([
-    ...['config', 'url', 'job', 'id', 'title', 'subject', 'area', 'year', 'variant', 'questions', 'materials', 'wait-seconds'].map(x => [x, { type: 'string' }]),
+    ...['config', 'url', 'job', 'id', 'title', 'subject', 'area', 'year', 'variant', 'questions', 'materials', 'wait-seconds', 'document', 'paper', 'asset-root'].map(x => [x, { type: 'string' }]),
     ...['all', 'manual', 'force', 'headless', 'help'].map(x => [x, { type: 'boolean', default: false }]),
   ]) });
 }
@@ -68,7 +72,10 @@ async function readRegistry(config) {
   const filename = path.join(WORK, `observed-reads-${config.profileName}.json`);
   const saved = await readJson(filename, null);
   // v2 distinguishes exact observed requests from older redacted diagnostic URLs.
-  return new Set(saved?.schemaVersion === 2 && saved.profileName === config.profileName && Array.isArray(saved.urls) ? saved.urls.map(observedReadUrl) : []);
+  const urls = saved?.schemaVersion === 2 && saved.profileName === config.profileName && Array.isArray(saved.urls) ? saved.urls : [];
+  const allowed = [];
+  for (const value of urls) { try { allowed.push(observedReadUrl(value)); } catch { /* Retired account/unsupported routes are never replayed. */ } }
+  return new Set(allowed);
 }
 
 async function saveRegistry(config, urls) {
@@ -160,7 +167,7 @@ async function getJobs(values) {
 async function captureJob(session, job, config, values) {
   if (!job.url || job.status !== 'ready') throw new Error('Job needs an observed paper URL and reviewed identity');
   const configFingerprint = digest({ contentSelector: config.contentSelector, nextQuestionSelector: config.nextQuestionSelector,
-    explanationSelector: config.explanationSelector, fieldMap: config.fieldMap });
+    explanationSelector: config.explanationSelector, fieldMap: config.fieldMap, domAdapter: config.domAdapter });
   const resumed = !values.force && await resumeBundle(WORK, job, configFingerprint, validateDocument);
   if (resumed) { console.log(`${jobKey(job)}: verified complete checkpoint, skipped`); return; }
   const directory = safeChild(WORK, `papers/${jobKey(job)}`);
@@ -173,7 +180,7 @@ async function captureJob(session, job, config, values) {
   const registeredReads = await readRegistry(config);
   const accept = (payload, meta) => {
     if (meta.subject !== job.identity.subject) return;
-    absorbPayload(document, payload, { ...meta, fieldMap: config.fieldMap });
+    if (!config.domAdapter) absorbPayload(document, payload, { ...meta, fieldMap: config.fieldMap });
     shapes.push({ url: meta.url, fields: fieldShapes(payload) });
     if (meta.replayUrl) registeredReads.add(meta.replayUrl);
   };
@@ -205,6 +212,24 @@ async function captureJob(session, job, config, values) {
         const cleaned = sanitizeHtml(dom.html);
         if (cleaned.rejected) document.conflicts.push({ scope: 'privacy', field: 'dom-references', rejectedReferences: cleaned.rejected });
         await writeJson(path.join(directory, `dom-${runId}-${index + 1}.json`), { source: dom.url, contentHtml: cleaned.html });
+        if (config.domAdapter === 'fenbi-xingce-v1') {
+          const parsed = parseFenbiExamDom(cleaned.html, job.identity, { url: dom.url, capturedAt: new Date().toISOString() });
+          document.identity.questionIdNamespace = parsed.identity.questionIdNamespace;
+          document.source.url = parsed.source.url;
+          for (const key of ['questions', 'materials']) {
+            const expected = parsed.expected[key];
+            if (expected !== null && document.expected[key] !== null && document.expected[key] !== expected) document.conflicts.push({ scope: 'expected', field: key, source: expected, previous: document.expected[key] });
+            else if (expected !== null) document.expected[key] = expected;
+          }
+          document.chapters = parsed.chapters;
+          document.evidence.push(...parsed.evidence);
+          document.conflicts.push(...parsed.conflicts);
+          absorbPayload(document, { questions: parsed.questions, materials: parsed.materials }, { url: dom.url });
+          for (const question of parsed.questions) {
+            const target = document.questions.find(item => item.id === question.id);
+            if (target) target.materialIdsObserved = question.materialIdsObserved;
+          }
+        }
       }
       if (!config.nextQuestionSelector) break;
       const next = session.page.locator(config.nextQuestionSelector);
@@ -263,6 +288,38 @@ async function main() {
   const defaultConfig = path.join(WORK, 'config.json');
   const configPath = values.config || (await fs.access(defaultConfig).then(() => defaultConfig).catch(() => null));
   const config = await loadConfig(configPath);
+  if (command === 'normalize-dom' || command === 'align') {
+    const checkedPath = async (value, root) => {
+      if (!value) throw new Error('A local input path is required');
+      const absolute = await fs.realpath(path.resolve(REPO, value));
+      const canonicalRoot = await fs.realpath(root);
+      const relative = path.relative(canonicalRoot, absolute);
+      if (!relative || relative === '..' || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) throw new Error('Input path escapes its allowed directory');
+      return absolute;
+    };
+    const filename = await checkedPath(values.document, WORK);
+    const input = await readJson(filename);
+    if (command === 'normalize-dom') {
+      const inferred = inferIdentity({ id: values.id || input.sourcePaperId, title: values.title || input.sourceTitle, subject: values.subject || input.identity?.subject || 'xingce' });
+      const identity = { ...(input.identity || inferred), ...(values.year ? { year: Number(values.year) } : {}), ...(values.area ? { area: values.area } : {}), ...(values.variant ? { variant: values.variant } : {}) };
+      const html = input.html || input.contentHtml;
+      if (!identity?.id || identity.id === 'undefined' || !html) throw new Error('DOM snapshot requires HTML and observed source identity/title metadata');
+      const document = parseFenbiExamDom(html, identity, { url: publicUrl(values.url || input.sourceUrl || input.source?.url || input.page?.url), capturedAt: input.capturedAt || input.source?.capturedAt });
+      const output = safeChild(WORK, `normalized-dom-${Date.now()}.json`);
+      await writeJson(output, document);
+      console.log(JSON.stringify({ status: 'normalized_unverified', output, questions: document.questions.length, materials: document.materials.length, expected: document.expected }, null, 2));
+      return;
+    }
+    const paperPath = await checkedPath(values.paper, REPO);
+    const relative = path.relative(REPO, paperPath).replaceAll('\\', '/');
+    if (!/^(?:国考|省考)\/.+\.md$/u.test(relative)) throw new Error('Choose a formal repository examination Markdown file');
+    const assetRoot = values['asset-root'] ? await checkedPath(values['asset-root'], WORK) : undefined;
+    const report = await comparePaper(input, await fs.readFile(paperPath, 'utf8'), { repoRoot: REPO, paperPath, assetRoot });
+    const output = safeChild(WORK, `alignment-${Date.now()}.json`);
+    await writeJson(output, report);
+    console.log(JSON.stringify({ output, paper: report.paper, summary: report.summary }, null, 2));
+    return;
+  }
   if (command === 'init') {
     await fs.writeFile(defaultConfig, JSON.stringify(DEFAULTS, null, 2) + '\n', { flag: 'wx', mode: 0o600 });
     console.log(`本地配置已创建：${defaultConfig}`); return;

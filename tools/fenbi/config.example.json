@@ -7,6 +7,7 @@
   "settleMs": 1500,
   "maxPages": 250,
   "contentSelector": null,
+  "domAdapter": null,
   "nextQuestionSelector": null,
   "explanationSelector": null,
   "fieldMap": {},

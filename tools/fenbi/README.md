@@ -2,7 +2,7 @@
 
 面向 `gwy-zhenti` 的缺卷、缺题和解析核对。使用本机 Chrome/Edge 的专用持久配置，人工短信登录一次后复用；日常采集由固定脚本执行，**不调用 LLM、TinyFish Agent 或云浏览器**。
 
-当前交付的是可运行框架与离线验证，不是“已取得粉笔全部试卷”。粉笔真实响应字段、各地区卷型覆盖、解析权限与完整性必须继续逐卷验收。`xingcezhenti` 只是补充源，不能替代粉笔核对。
+已完成一份行测的实站题面对齐小样及离线验证，不是“已取得粉笔全部试卷”。其他卷型、申论、解析权限和完整性仍需逐卷验收。`xingcezhenti` 只是补充源，不能替代粉笔核对。
 
 ## 安装与启动
 
@@ -71,7 +71,7 @@ node src/cli.mjs add --id SOURCE_ID --title "原始试卷标题" --subject xingc
 
 ## 字段映射与直接读取
 
-默认支持明示 `questions/data.questions/exercise.questions`、`materials/accessories`、`answers` 等结构。**这些候选映射尚不能代替当前粉笔实站响应核对。** 新字段通过本机 `fieldMap` 配置，示意：
+默认支持明示 `questions/data.questions/exercise.questions`、`materials/accessories`、`answers` 等结构。**这些JSON候选映射尚不能代替当前粉笔实站响应核对。** 新字段通过本机 `fieldMap` 配置，示意：
 
 ```json
 {
@@ -116,12 +116,31 @@ node src/cli.mjs export --job TASK_KEY
 
 申论单独检查作答要求和可识别的字数上下限；复杂分小问要求保守待核。“左右”的±20%只是工具复核口径，不是官方评分规则。图片浏览器解码证据绑定实际字节；正式库仍使用已有逐帧像素检查。敏感URL引用删除后标待核，不把删失内容算完整。
 
+## 已验证的行测DOM路线与逐题对齐
+
+[浙江2026行测C实站试跑](../../reports/FENBI-LIVE-TRIAL-20261016.md)已实际取得110题、4组材料和6段题型说明。该页面题面并未通过原JSON监听器取得，因此新增 `fenbi-xingce-v1` DOM适配器。它读取 `.tis-container` 内全部 `app-ti[data-question-key]`，不能只抓 `.questions-single-container`：本次后者仅93题，会漏组合题。
+
+行测专用本地配置可设置 `contentSelector: ".tis-container"`、`domAdapter: "fenbi-xingce-v1"`，再使用 `capture --manual`。先从目录进入已存在的练习，回终端确认采集；本轮直接重开旧题本深链接未取得题面，不因此判登录失效。首次打开新卷可能需要练习初始化，默认只读保护不会自动放行；本次小样仅执行过一次明确限定到该卷的初始化，之后均复用原练习，未作答/交卷。
+
+DOM模式只提取当前已验证的行测题面、选项、材料、原号、复合题目key和题型说明；不从选中状态或CSS猜答案，不冒充已验证申论DOM或解析。答案未取得时整卷仍为partial。新增观察到的静态域仅放行 `fb.fenbike.cn` 的两类图片/公式路径，未放开该域其他路径或导航。
+
+已有本地DOM快照也可离线规范化和对齐，不重新登录或启动浏览器：
+
+```powershell
+node src/cli.mjs normalize-dom --document work/fenbi/inspect.json --id SOURCE_ID --title "源试卷标题" --subject xingce --year 2026 --area 浙江 --variant C类 --url "OBSERVED_EXAM_URL"
+node src/cli.mjs align --document work/fenbi/NORMALIZED_FILE.json --paper "省考/浙江/2026/行测-C类.md" --asset-root work/fenbi/ASSET_DIRECTORY
+```
+
+输入快照需有 `html` 或 `contentHtml`，身份及来源取自实际目录/页面；示例占位符必须替换。路径参数相对于仓库根，规范化文档和图片目录必须位于 `work/fenbi/`。报告只写本地候选区，不改正式卷。
+
+粉笔DOM复合key与库内数字qid不是同一命名空间，因此不把ID格式不同判作错题；改用明确原号、完整题干和选项唯一对齐。相对图片地址按真实来源页面解析，核对实际图片字节。未采到的答案解析标记unknown；数学条件、数字、图片位置不做宽松删除。公式图和文字等价需单独留证，不能在严格统计里静默算作完全相同。
+
 退出码：`0`命令成功；`2`采集/认证/验收不完整；`1`配置、依赖或运行错误。错误不打印原始账号响应和带凭据URL。
 
 ## 测试
 
 ```powershell
-node --test test/model.test.mjs test/browser.test.mjs test/pipeline.test.mjs
+node --test test/model.test.mjs test/browser.test.mjs test/pipeline.test.mjs test/dom.test.mjs test/align.test.mjs
 node --test test/browser-smoke.test.mjs
 ```
 

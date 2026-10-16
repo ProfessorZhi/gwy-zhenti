@@ -218,6 +218,7 @@ export function collectAssetUrls(doc) {
     });
   };
   for (const material of doc.materials) scan(material.contentHtml);
+  for (const chapter of Array.isArray(doc.chapters) ? doc.chapters : []) scan(chapter.instructionsHtml);
   for (const q of doc.questions) {
     for (const key of ['contentHtml', 'answerHtml', 'explanationHtml', 'requirementsHtml']) scan(q[key]);
     for (const option of Array.isArray(q.options) ? q.options : []) scan(option.contentHtml);

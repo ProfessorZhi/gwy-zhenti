@@ -127,7 +127,7 @@ export async function validateDocument(doc, { assetRoot } = {}) {
     && String(item.paperId) === String(identity.id) && item.url === doc.source?.url && item.verified === true);
   if (!matchingPaper && !matchingSourceIdSet && !operatorVerified) add('identity', 'paper-binding-unverified', 'No matching source paper ID, paper-declared question ID set, or explicit verified source mapping binds these questions to this paper');
   const urls = collectAssetUrls(doc);
-  const htmlFields = [...doc.materials.map((m) => m.contentHtml), ...doc.questions.flatMap((q) => [q.contentHtml, q.answerHtml, q.explanationHtml, q.requirementsHtml, ...(Array.isArray(q.options) ? q.options.map((o) => o.contentHtml) : [])])];
+  const htmlFields = [...doc.materials.map((m) => m.contentHtml), ...(Array.isArray(doc.chapters) ? doc.chapters.map(chapter => chapter.instructionsHtml) : []), ...doc.questions.flatMap((q) => [q.contentHtml, q.answerHtml, q.explanationHtml, q.requirementsHtml, ...(Array.isArray(q.options) ? q.options.map((o) => o.contentHtml) : [])])];
   for (const html of htmlFields) {
     const $ = load(String(html ?? ''), null, false);
     if ($('[data-capture-rejected-reference]').length) add('images', 'reference-removed-for-privacy', 'A sensitive or unsupported source reference was removed; content needs review');

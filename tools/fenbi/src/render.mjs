@@ -65,6 +65,10 @@ export function renderCandidate(document, verdict) {
     '题号口径: "采集到的来源题号，待人工与原卷核对"',
     '校验状态: "候选；机器结构验收通过，尚未人工核验或正式入库"', '---', '', `# ${id.title}`, '',
     '> 候选采集稿。参考答案及解析来自粉笔页面，不代表官方答案或真实高分答卷；来源使用许可与原卷对应关系仍需人工核实。', ''];
+  if (document.chapters?.length) {
+    lines.push('## 题型与作答说明', '');
+    for (const chapter of document.chapters) lines.push(convert(chapter.instructionsHtml), '');
+  }
   if (document.materials.length) lines.push('## 给定材料', '');
   for (const material of document.materials) lines.push(`### 材料 ${material.id}`, '', convert(material.contentHtml), '');
   lines.push('## 题目', '');

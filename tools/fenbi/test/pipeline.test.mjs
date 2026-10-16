@@ -130,6 +130,14 @@ test('candidate renderer orders source question numbers and keeps answers folded
   assert.throws(() => renderCandidate(doc, { status: 'partial' }), /validated complete/);
 });
 
+test('source chapter instructions survive candidate rendering instead of disappearing after extraction', async () => {
+  const doc = complete();
+  doc.chapters = [{ title: '合成章节', questionCount: 1, instructionsHtml: '<p>合成章节（1题）根据材料选择唯一答案。</p>' }];
+  const output = renderCandidate(doc, await validateDocument(doc));
+  assert.ok(output.includes('## 题型与作答说明'));
+  assert.ok(output.includes('根据材料选择唯一答案。'));
+});
+
 test('candidate exports never overwrite a prior candidate and partial papers never export', async t => {
   const dir = await temporary(t), doc = complete(), verdict = await validateDocument(doc);
   const destination = path.join(dir, 'candidate');
