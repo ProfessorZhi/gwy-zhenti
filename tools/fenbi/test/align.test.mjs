@@ -192,3 +192,37 @@ test('superscript and subscript mathematics never collapse to ordinary condition
   }
   assert.equal(normalizeComparisonText('ｘ²＋１０　≥　ａ₁').strict, 'x²+10 ≥ a₁');
 });
+
+// ── collection stubs must never align ───────────────────────────────────────────────────────
+// Fenbi renders a full-looking slot for a question it has not collected. Two copies of that stub
+// are not evidence of anything, so they must not compare equal and must not establish identity.
+
+const STUB = '题目正在全力以赴征集';
+
+test('two copies of a collection stub are never reported as the same content', async () => {
+  const report = await comparePaper(fixture(question('101', 1, STUB)), mdQuestion('101', 1, STUB));
+  assert.equal(report.questions[0].dimensions.stem.status, 'unknown');
+  assert.equal(report.questions[0].dimensions.stem.reason, 'source-content-is-collection-placeholder');
+  assert.equal(report.questions[0].dimensions.stem.status !== 'same', true);
+  // The genuine pair is still compared normally, so the rule is not simply disabling the check.
+  const genuine = await comparePaper(fixture(question('101', 1, '真实的题干内容。')), mdQuestion('101', 1, '真实的题干内容。'));
+  assert.equal(genuine.questions[0].dimensions.stem.status, 'same');
+});
+
+test('a stub in the repository is a missing body, not a match', async () => {
+  const report = await comparePaper(fixture(question('101', 1, '真实的题干内容。')), mdQuestion('101', 1, STUB));
+  assert.equal(report.questions[0].dimensions.stem.status, 'different');
+  assert.equal(report.questions[0].dimensions.stem.reason, 'repository-content-is-collection-placeholder');
+});
+
+test('a stub cannot be used to establish identity when there is no qid or original number', async () => {
+  const report = await comparePaper(fixture(question('', null, STUB)), mdQuestion('', 1, STUB));
+  assert.equal(report.summary.matched, 0, 'a stub is not a content fingerprint');
+  assert.equal(report.summary.unmatchedSource, 1);
+});
+
+test('the stub rule does not fire on genuine text that mentions collection', async () => {
+  const genuine = '关于网友未回忆起的内容，下列说法正确的是：';
+  const report = await comparePaper(fixture(question('101', 1, genuine)), mdQuestion('101', 1, genuine));
+  assert.equal(report.questions[0].dimensions.stem.status, 'same');
+});
