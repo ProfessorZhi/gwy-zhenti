@@ -1,0 +1,598 @@
+{
+  "status": "repaired_and_locally_validated",
+  "path": "省考/江苏/2025/行测-C类.md",
+  "before_sha256": "87934a51464c6a3f8e5b507ee0931140d44502a98e8d3e9ca8f18c81198e362c",
+  "after_sha256": "2cf80b7eb069affaf1aefa55899f9b199ffee8fcfbd8b0e81446268180a1d910",
+  "before_questions": 118,
+  "after_questions": 130,
+  "before_answers": 118,
+  "after_answers": 130,
+  "added_original_numbers": [
+    27,
+    29,
+    35,
+    36,
+    37,
+    42,
+    75,
+    77,
+    78,
+    80,
+    81,
+    85
+  ],
+  "missing_original_numbers": [],
+  "unchanged_existing_questions": 118,
+  "unchanged_existing_answers": 118,
+  "unchanged_existing_material_groups": 6,
+  "old_question_header_body_material_associations": "exactly_equal",
+  "donor_file_hashes_unchanged": {
+    "省考/江苏/2025/行测-A类.md": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2"
+  },
+  "existing_image_reference_multiset_preserved": true,
+  "new_image_paths": 0,
+  "reused_new_question_image_reference_count": 2,
+  "source": {
+    "publisher": "王智公考／王智精英（扫描页水印）",
+    "personal_author": null,
+    "public_page": "http://www.jygwy.com/gkzt_show.aspx?id=106",
+    "public_pdf": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+    "sha256": "50153cead5a83dd8d0cb4aee8773aca3a095fa7b6dc685c7e5d4e8135ca02f37",
+    "physical_pages": 36,
+    "reference_questions": 130,
+    "source_answers_available": false
+  },
+  "questions": [
+    {
+      "number": 27,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 25,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "106d48b79d50851f96bf13faeaf651b0191aff96db1713933301122d447044b8",
+        "qid": "13319274",
+        "reference_answer_key": "B"
+      },
+      "source_pages": [
+        10
+      ],
+      "printed_pages": [
+        8
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "原扫描用六点省略号，现库用间隔点形式的省略号；内容及四选项一致。"
+      ],
+      "answer": "B",
+      "analysis": "文段先举铭文研究的例子，再列出尚待破解的青铜器问题，末句提出拓宽视野、综合多种研究方法以推动学科发展。重点在进一步深入研究的必要性与方向，B概括末句对策；A只说范围广，C、D只说意义，未概括进一步研究的主旨。",
+      "answer_nature": "AI辅助独立推导示范解析，非官方、非王智公考原解析；答案键与现库完全同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "question_type": "片段阅读",
+      "canonical_question_body_sha256": "106d48b79d50851f96bf13faeaf651b0191aff96db1713933301122d447044b8",
+      "new_answer_body_sha256": "79799f678444d077e48490bc4130d9036f3efa1b148db3020c601ecea22b0711",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": [
+        {
+          "question": 27,
+          "pdf_page": 10,
+          "printed_page": 8,
+          "roi_pixels": [
+            65,
+            515,
+            920,
+            918
+          ],
+          "sha256": "419c6d110804888cbafd441113bff2a0de0febb3c37e6fb5bc378a75f3ce872f"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 26,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "2930d419d9420fdd553f0f8369427effcaeb61da076b7717ef2b4b98f274ec62",
+        "qid": "13319271",
+        "reference_answer_key": "D"
+      },
+      "source_pages": [
+        11
+      ],
+      "printed_pages": [
+        9
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "未发现字词层面的实质差异，仅换行、空格、标点版式不同。"
+      ],
+      "answer": "D",
+      "analysis": "文段不仅解释蛭石的微孔结构为什么保温，还强调其加工污染小、废弃后可回收的可持续优势。D同时覆盖建筑节能和环境友好；A遗漏绿色可持续内容，B、C没有突出其建筑用途和主要优势。",
+      "answer_nature": "AI辅助独立推导示范解析，非官方、非王智公考原解析；答案键与现库完全同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "question_type": "片段阅读",
+      "canonical_question_body_sha256": "2930d419d9420fdd553f0f8369427effcaeb61da076b7717ef2b4b98f274ec62",
+      "new_answer_body_sha256": "5b5c2f376ded6ed6b997de4e234dccd05c14c3ada2735b412d88a1f785d92893",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": [
+        {
+          "question": 29,
+          "pdf_page": 11,
+          "printed_page": 9,
+          "roi_pixels": [
+            65,
+            108,
+            920,
+            508
+          ],
+          "sha256": "ce33a3d5e635f77496d10fcad8ab491f8b9669ce2a41787c272e77714534f751"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 35,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "d1684191f6fb69c64e1dada39f45f97a6c19cbdfd2a460b86e3700ef5a9d82ef",
+        "qid": "13319284",
+        "reference_answer_key": "B"
+      },
+      "source_pages": [
+        12,
+        13
+      ],
+      "printed_pages": [
+        10,
+        11
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "源扫描③为“水气交界面”，现库A35为“水-气交界面”。",
+        "源扫描要求为“将以上六个句子重新排列”，现库A35使用阿拉伯数字“6”。",
+        "六句内容、编号和四组选项顺序已逐图核对；保留现库正文时应将这两处异文记入来源校勘。"
+      ],
+      "answer": "B",
+      "analysis": "②先提出花样游泳水上水下同时设置音响的现象，④追问其原因；①说明机械波传播的物理基础，⑤进一步解释水与空气声阻抗差异，③由“因此”给出低透射比例，⑥总结并回扣最初的设备设置。顺序为②④①⑤③⑥。",
+      "answer_nature": "AI辅助独立推导示范解析，非官方、非王智公考原解析；答案键与现库完全同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "question_type": "语句表达",
+      "canonical_question_body_sha256": "d1684191f6fb69c64e1dada39f45f97a6c19cbdfd2a460b86e3700ef5a9d82ef",
+      "new_answer_body_sha256": "3abb6978bd29e91f4285374e5a475acc5370b26deaaecd1f9eb120c3c7f40746",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": [
+        {
+          "question": 35,
+          "pdf_page": 12,
+          "printed_page": 10,
+          "roi_pixels": [
+            65,
+            1155,
+            920,
+            1228
+          ],
+          "sha256": "25c59a336c5fb1e6fb50be7aa72f1a9d6f3d4597cbc37d21ce71f82f1dfb3972"
+        },
+        {
+          "question": 35,
+          "pdf_page": 13,
+          "printed_page": 11,
+          "roi_pixels": [
+            65,
+            103,
+            920,
+            438
+          ],
+          "sha256": "c2f59278b7d9e3258244c54ca49a8709a2f259e299ea56797b244f1dfa5c454d"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 36,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "5673f9507f180954f2581f5b585bd14f46757c315c28d1f54cda87695f2ff02f",
+        "qid": "13319291",
+        "reference_answer_key": "A"
+      },
+      "source_pages": [
+        13
+      ],
+      "printed_pages": [
+        11
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "源扫描提问为“依次填入画横线处最恰当的一项是”，现库为“依次填入画横线部分最恰当的一项是”；不影响题意。",
+        "题干实词与ABCD两组词语一致。"
+      ],
+      "answer": "A",
+      "analysis": "第一空说集群进入公布的名单，“上榜”搭配直接、自然。第二空概括江苏取得多项入选成绩，“一路凯歌”合适。四个集群入选并不等于江苏独自领先，“一枝独秀”“独占鳌头”都增加了原文没有给出的比较结论；“荣膺”通常需接荣誉称号。",
+      "answer_nature": "AI辅助独立推导示范解析，非官方、非王智公考原解析；答案键与现库完全同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "question_type": "逻辑填空",
+      "canonical_question_body_sha256": "5673f9507f180954f2581f5b585bd14f46757c315c28d1f54cda87695f2ff02f",
+      "new_answer_body_sha256": "caa7e8cf61bb6e8a4cbeb81f5205b073c8138299bf94543ebb258c1fd5fc7674",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": [
+        {
+          "question": 36,
+          "pdf_page": 13,
+          "printed_page": 11,
+          "roi_pixels": [
+            65,
+            479,
+            920,
+            690
+          ],
+          "sha256": "4102f5beae3f11e555e26646cd9944c45523856119abbd165290e16862f83dbf"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 38,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "e35c88efd2b818a4541310a483bcd7b7674803b6b27cb369786a477133ae2d3e",
+        "qid": "13319288",
+        "reference_answer_key": "A"
+      },
+      "source_pages": [
+        13
+      ],
+      "printed_pages": [
+        11
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "源扫描提问为“依次填入画横线处最恰当的一项是”，现库为“依次填入画横线部分最恰当的一项是”；不影响题意。",
+        "原扫描亦印“出版社不断”，不是擅自改成“出版业不断”；四组词语一致。"
+      ],
+      "answer": "A",
+      "analysis": "产业随技术更替被筛除，第一空“大浪淘沙”准确概括竞争淘汰过程。出版业借助新介质、新技术持续更新，第二空“推陈出新”与后文的技术演进对应。“百舸争流”只说竞相前进，另外两组没有同时概括淘汰与创新。",
+      "answer_nature": "AI辅助独立推导示范解析，非官方、非王智公考原解析；答案键与现库完全同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "question_type": "逻辑填空",
+      "canonical_question_body_sha256": "e35c88efd2b818a4541310a483bcd7b7674803b6b27cb369786a477133ae2d3e",
+      "new_answer_body_sha256": "6cea43ac02ec2a4bd651dcd2ca18860dc4edc8835404d7613b1ee84d30ebfc63",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": [
+        {
+          "question": 37,
+          "pdf_page": 13,
+          "printed_page": 11,
+          "roi_pixels": [
+            65,
+            695,
+            920,
+            914
+          ],
+          "sha256": "ef1653b7b9539683065fd873955cd41c1f9c1453d1b2cadda66cf3e17b53cefe"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 45,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "e277c36d5dee77fe3f5abb40da574f55001a10f7e83959b37548b74be6a26f06",
+        "qid": "13319300",
+        "reference_answer_key": "B"
+      },
+      "source_pages": [
+        14
+      ],
+      "printed_pages": [
+        12
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "源扫描首句使用“90度”，现库亦为“90度”；其余正文、三个空和四组选项逐项对应。",
+        "源扫描提问为“依次填入画横线处最恰当的一项是”，现库为“依次填入画横线部分最恰当的一项是”；不影响题意。"
+      ],
+      "answer": "B",
+      "analysis": "第一空写黄河流向原先受高原地形限制，“挟持”是拟人化表达。后文反复改道、到处狂奔，强调的是摆脱限制后的肆意流动，所以“肆无忌惮”比只强调速度快的“风驰电掣”贴切。泥沙逐渐沉积形成平原，第三空“淤积”也准确。",
+      "answer_nature": "AI辅助独立推导示范解析，非官方、非王智公考原解析；答案键与现库完全同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "question_type": "逻辑填空",
+      "canonical_question_body_sha256": "e277c36d5dee77fe3f5abb40da574f55001a10f7e83959b37548b74be6a26f06",
+      "new_answer_body_sha256": "86c6848ef504283757b7ac8eb8c2ffc654babe61872f33677b0a72645363937e",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": [
+        {
+          "question": 42,
+          "pdf_page": 14,
+          "printed_page": 12,
+          "roi_pixels": [
+            65,
+            575,
+            920,
+            812
+          ],
+          "sha256": "2506868b5d0b7234fb94b36d978c23e632e54ae2c992c0f7544c7bad929622a9"
+        }
+      ]
+    },
+    {
+      "number": 75,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 75,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "8d25c288d87a8d100e5728a339b3d83267b447a9d919cecf268a3604dcb0ee82",
+        "qid": "11367763",
+        "reference_answer_key": "C"
+      },
+      "source_pages": [
+        21
+      ],
+      "printed_pages": [
+        19
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "C扫描题面与本库A同题的实词、四选项及其顺序一致；保留本库已有空格、括号和排版。"
+      ],
+      "answer": "C",
+      "analysis": "题干将货币与购物车分别作为购物所用的核心工具和辅助工具。写作以文字表达内容，电脑则可由纸笔等替代，C最贴近这种关系；其余选项混入行为对象、两种必要工具或服务者等不同关系。",
+      "answer_nature": "AI辅助独立校核，非官方答案、非王智公考原解析；与本库A同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "canonical_question_body_sha256": "8d25c288d87a8d100e5728a339b3d83267b447a9d919cecf268a3604dcb0ee82",
+      "new_answer_body_sha256": "edfef6d363d5b853d86bd86fe66f139d35c6d844acc85b53a7e8e4c283970abb",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": []
+    },
+    {
+      "number": 77,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 77,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "27f4f7ae74cb187b34a09a158be79312616de7a8d3e9970289e824f56216edd3",
+        "qid": "11367776",
+        "reference_answer_key": "B"
+      },
+      "source_pages": [
+        21,
+        22
+      ],
+      "printed_pages": [
+        19,
+        20
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "C扫描题面与本库A同题的实词、四选项及其顺序一致；保留本库已有空格、括号和排版。"
+      ],
+      "answer": "B",
+      "analysis": "题干呈现自然因素引起一项变化，再进一步产生消极结果的因果链。B中连续降雪、道路结冰、出行困难依次对应，起因和结果的性质也最接近。A、D主要围绕人的主动活动，C未形成同样清晰的连续因果链。",
+      "answer_nature": "AI辅助独立校核，非官方答案、非王智公考原解析；与本库A同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "canonical_question_body_sha256": "27f4f7ae74cb187b34a09a158be79312616de7a8d3e9970289e824f56216edd3",
+      "new_answer_body_sha256": "04f96ca4fa609b100d75d57da65e020a66fbde2ee906ad577b8012ff46950641",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": []
+    },
+    {
+      "number": 78,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 78,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "2c9aade72eca8ed0d5d5f62330899567982e8747020dbc697986c2cd6554d037",
+        "qid": "11367766",
+        "reference_answer_key": "A"
+      },
+      "source_pages": [
+        22
+      ],
+      "printed_pages": [
+        20
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "C扫描题面与本库A同题的实词、四选项及其顺序一致；保留本库已有空格、括号和排版。"
+      ],
+      "answer": "A",
+      "analysis": "本土、野生、名贵从产地、生长方式和价值等不同角度限定药材，类别之间可以交叉。A中沿海、跨省、城际也从不同角度限定高铁，最符合这种关系。B、D包含明确的种属或组成关系；C所列管理概念并非题干这组独立分类角度。",
+      "answer_nature": "AI辅助独立校核，非官方答案、非王智公考原解析；与本库A同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "canonical_question_body_sha256": "2c9aade72eca8ed0d5d5f62330899567982e8747020dbc697986c2cd6554d037",
+      "new_answer_body_sha256": "82ff73d07bcd7b3b7319d05ca218b760ec061e1f20fd44ec8d211a4e7ef9d0ef",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": []
+    },
+    {
+      "number": 80,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 80,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "ccfe36d40b859194213bde7e969f6ee5ba5f819b7c88abebf49989c0b69008b6",
+        "qid": "11367771",
+        "reference_answer_key": "D"
+      },
+      "source_pages": [
+        22
+      ],
+      "printed_pages": [
+        20
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "C扫描题面与本库A同题的实词、四选项及其顺序一致；保留本库已有空格、括号和排版。"
+      ],
+      "answer": "D",
+      "analysis": "生肖动物与十二地支有逐一对应关系，红灯与禁止通行也有明确的信号对应关系。D代入后两侧关系最一致；其他选项形成交叉、种属、场景或反义等不同关系。",
+      "answer_nature": "AI辅助独立校核，非官方答案、非王智公考原解析；与本库A同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "canonical_question_body_sha256": "ccfe36d40b859194213bde7e969f6ee5ba5f819b7c88abebf49989c0b69008b6",
+      "new_answer_body_sha256": "b246a09df107e8abd79f80ba14cf77c41a856365153d6b32b3e870ce3fbbeeee",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [],
+      "source_scan_clips": []
+    },
+    {
+      "number": 81,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 81,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "621fa954b4e4de51ee0114ede88bbb38897e9a9a6f6b010dbc8867e27a6099e0",
+        "qid": "11367775",
+        "reference_answer_key": "B"
+      },
+      "source_pages": [
+        22
+      ],
+      "printed_pages": [
+        20
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "扫描C卷与本库A类通用作答指令措辞略异；题干图、全部四个选项图及A—D排列已由root和另一代理逐图核对一致，保留本库已有指令与原图。"
+      ],
+      "answer": "B",
+      "analysis": "依次观察题干中各图的轴对称性，对称轴数量为6、5、4、3、2，所选图应只有1条对称轴。B只有一条竖直对称轴，与数量递减规律一致。",
+      "answer_nature": "AI辅助独立校核，非官方答案、非王智公考原解析；与本库A同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "canonical_question_body_sha256": "621fa954b4e4de51ee0114ede88bbb38897e9a9a6f6b010dbc8867e27a6099e0",
+      "new_answer_body_sha256": "adef7370c02e5794badb4155e08cd8722302d2099686287b5c1c5d72ae6d8762",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [
+        {
+          "path": "图片/省考-江苏-2025-行测-A类/题目图/194f2929b6bca3e.png",
+          "sha256": "506dc2ae006e2c1e47e4558a029ddc64629bcd71a2fea702ca03b26766b0ae8e"
+        }
+      ],
+      "source_scan_clips": []
+    },
+    {
+      "number": 85,
+      "reused_from": {
+        "path": "省考/江苏/2025/行测-A类.md",
+        "question_number": 85,
+        "file_sha256": "c93144361b6ec5dcca0ba7df5bbe9188544528c5e3ea580de84d64b48dabdea2",
+        "question_block_sha256": "f8ce4537b8cfb5b518f70cb91bb2774f0a2b284835ad0e9828b6c21f1481eada",
+        "qid": "11367791",
+        "reference_answer_key": "D"
+      },
+      "source_pages": [
+        23
+      ],
+      "printed_pages": [
+        21
+      ],
+      "source_question_stem_is_real": true,
+      "source_options_are_real": true,
+      "source_is_placeholder": false,
+      "source_has_answer_or_analysis": false,
+      "shared_material_required": false,
+      "source_scan_vs_reused_text_variants": [
+        "扫描C卷与本库A类通用作答指令措辞略异；题干图、全部四个选项图及A—D排列已由root和另一代理逐图核对一致，保留本库已有指令与原图。"
+      ],
+      "answer": "D",
+      "analysis": "按行观察，前两格分别以横轴和竖轴对称，第三格应同时满足横轴与竖轴对称；封闭区域还体现3、4、5的递增关系。综合两项特征，D最符合第三行空缺图的位置。",
+      "answer_nature": "AI辅助独立校核，非官方答案、非王智公考原解析；与本库A同题参考键交叉一致。",
+      "answer_agreement_verified": true,
+      "canonical_question_body_sha256": "f8ce4537b8cfb5b518f70cb91bb2774f0a2b284835ad0e9828b6c21f1481eada",
+      "new_answer_body_sha256": "3347240c0f2e5bf866b1323e4b3a3542eb64ea30f8cf91f8a5b40321b368a2ea",
+      "public_source_url": "http://www.jygwy.com/upload/202604/30/202604301118531199.pdf",
+      "existing_image_reuse": [
+        {
+          "path": "图片/省考-江苏-2025-行测-A类/题目图/194f2cbf179256d.png",
+          "sha256": "faa5eff0e8c204059e3b50d061e65180abf473f393348686af7d0f684ba33f58"
+        }
+      ],
+      "source_scan_clips": []
+    }
+  ],
+  "packages": [
+    {
+      "name": "REVIEWABLE-QUESTION-PACK.json",
+      "sha256": "7bfbc0deaac95d602e220c97e5bf72ca53012f7f5a54e05c40bc31ec6efc55c4",
+      "group": "low6"
+    },
+    {
+      "name": "ROOT-HIGH6-PACK.json",
+      "sha256": "f5c5f94adc1f2a805617f7d6e68de88d1fa59483f7d0a5996cbac8859aaea6f2",
+      "group": "high6"
+    }
+  ],
+  "boundary": "仅原登记12处缺号按同题核对补录。题本为机构公开扫描整理，非官方原卷逐字认证；新增解析为AI辅助独立校核，非来源机构答案。已有其他题目的原始源内质量风险不因本次补齐而自动认证。整卷文件缺口46不因补既有卷12题变化。",
+  "fixed_original_baseline": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab",
+  "pre_batch_commit": "1d1379c38314ee8b150a8023b2a16e984f603d1c",
+  "complete_paper_campaign_targets_unchanged": 46,
+  "extra_paid_automation_calls": 0,
+  "purchases": 0,
+  "recharges": 0,
+  "free_tool_wallet_observation": {
+    "balance_changed": false,
+    "Search_unit_amount_USD": "0",
+    "Fetch_unit_amount_USD": "0",
+    "auto_reload": "unconfigured",
+    "exact_balance": "local_only"
+  },
+  "publication_boundary": "修复现有C卷原登记12个缺号；不计作新补完整缺卷，不冒称官方原卷、机构解析或实考高分。",
+  "validation": "reports/FREE-TOOLS-VALIDATION-20261016.json"
+}

@@ -1,0 +1,54 @@
+{
+  "status": "passed_local_workflow_equivalent",
+  "audit_date": "2026-10-16",
+  "fixed_original_baseline": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab",
+  "current_unit_tests": 48,
+  "historical_original_tests": 466,
+  "historical_test_groups": [
+    369,
+    97
+  ],
+  "original_baseline_files_restored": 1467,
+  "current_essay_audit": {
+    "status": "passed",
+    "essay_papers": 712,
+    "recognized_answer_positions": 2456,
+    "original_ambiguous_composition_limit_candidates": 1
+  },
+  "independent_single_paper_review": {
+    "status": "passed",
+    "old_questions_preserved": 118,
+    "old_answers_preserved": 118,
+    "old_materials_preserved": 6,
+    "new_questions": 12,
+    "questions": 130,
+    "answers": 130,
+    "new_image_paths": 0
+  },
+  "current_native": {
+    "papers": 1169,
+    "images": 96433,
+    "image_refs": 119120,
+    "truncated_files": 0,
+    "truncated_questions": 0,
+    "restored_files_this_run": 0,
+    "restored_material_instances_this_run": 0,
+    "appended_characters_this_run": 0,
+    "machine_flagged_files": 375,
+    "hard_errors": 0,
+    "forbidden_files": 0
+  },
+  "confirmed_missing_original_questions": 106,
+  "exact_staged_image_pixels": {
+    "status": "passed",
+    "paper_paths": 1169,
+    "image_paths": 96433,
+    "distinct_git_blobs": 35373,
+    "failed_images": 0,
+    "paper_index_fingerprint_sha256": "8854692c2c47f9cf907d5daa08b99482e9f5d98978fc1c2773bbd824b9fa8915",
+    "image_index_fingerprint_sha256": "42e7f8f8c05713d628b5c207273633ba822fca46af6464ecb783f6189e58f32b"
+  },
+  "source_and_attribution": "公开C卷用于卷型和题号核验；正文/图像复用用户已有A卷；新增AI辅助独立校核解析，无实考评分或官方答案声明。",
+  "complete_paper_campaign_remaining_unchanged": 46,
+  "cloud_boundary": "Only local checks are claimed here. GitHub Actions execution and merge state must be read from PR20; this report does not claim cloud success or a main merge."
+}
