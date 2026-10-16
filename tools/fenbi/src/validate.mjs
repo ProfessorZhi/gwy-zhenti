@@ -5,6 +5,19 @@ import { load } from 'cheerio';
 import { collectAssetUrls, htmlText } from './model.mjs';
 
 const PLACEHOLDER = /^(?:暂无(?:解析|答案)?|待(?:补充|完善|填写)|查看(?:答案|解析)|答案略|解析略|略|TODO|PLACEHOLDER|参考答案|参考解析|点击查看)$/iu;
+// A paid or unauthenticated exercise view renders an entitlement notice in the answer slot.
+// Such a notice is not an observed answer, so it must never satisfy the answers/explanations
+// dimension. Both bounds matter: a genuine answer can mention membership or permission, so only
+// a short body in which the notice is essentially the whole content is named. This is a review
+// trigger, not proof that the source is paywalled.
+const ACCESS_GATE = /(?:登录|登陆|开通|购买|付费|升级|充值|续费|订阅|成为)[^。；;!?！？\n]{0,20}(?:后|即可|方可|才能|才可|可)[^。；;!?！？\n]{0,6}(?:查看|阅读|浏览|解锁|获取|显示|展开)|(?:暂无|没有|无)(?:查看|访问|阅读)?(?:的)?权限|权限不足|无权(?:查看|访问)/iu;
+const EVASIVE_BODY_MAX_CHARS = 120;
+const EVASIVE_RESIDUE_MAX_CHARS = 40;
+const accessGate = (body) => {
+  if (!body || body.length > EVASIVE_BODY_MAX_CHARS || !ACCESS_GATE.test(body)) return false;
+  const residue = body.replace(new RegExp(ACCESS_GATE.source, 'giu'), '').replace(/[\s。；;，,、.:：!！?？"'“”‘’()（）]/gu, '');
+  return residue.length <= EVASIVE_RESIDUE_MAX_CHARS;
+};
 const visible = (html) => { const $ = load(String(html ?? ''), null, false); $('script,style,noscript').remove(); return $.text().replace(/\s+/gu, '').trim(); };
 const meaningful = (html) => { const body = visible(html); return Boolean(body && !PLACEHOLDER.test(body)); };
 const htmlImage = (html) => /<(?:img|image)\b/iu.test(String(html ?? ''));
@@ -91,6 +104,9 @@ export async function validateDocument(doc, { assetRoot } = {}) {
     if ((!meaningful(q.answerHtml) || !answerBody(q.answerHtml)) && !htmlImage(q.answerHtml)) add('answers', 'answer-empty', 'Reference answer has no independent body', ref);
     if (/(?:正文待补|答案暂缺|此处(?:填写|展开)|\bTODO\b|\bPLACEHOLDER\b)/iu.test(answerBody(q.answerHtml))) add('answers', 'answer-placeholder', 'Reference answer contains an explicit drafting placeholder', ref);
     if ((!meaningful(q.explanationHtml) || !answerBody(q.explanationHtml)) && !htmlImage(q.explanationHtml)) add('explanations', 'explanation-empty', 'Explanation has no substantive body', ref);
+    // A gate notice is text, so the non-empty checks above accept it. Name it explicitly.
+    if (!htmlImage(q.answerHtml) && accessGate(visible(q.answerHtml))) add('answers', 'answer-access-gate', 'Answer slot shows an access or entitlement notice instead of an observed answer', ref);
+    if (!htmlImage(q.explanationHtml) && accessGate(visible(q.explanationHtml))) add('explanations', 'explanation-access-gate', 'Explanation slot shows an access or entitlement notice instead of an observed explanation', ref);
     if (identity.subject === 'xingce') {
       const opts = Array.isArray(q.options) ? q.options : [];
       if (opts.length < 2) add('questions', 'options-missing', 'Choice question has fewer than two options', ref);

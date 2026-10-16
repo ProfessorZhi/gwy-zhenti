@@ -15,7 +15,7 @@ import { observedReadUrl, replayReads } from './reads.mjs';
 import { sanitizeHtml } from './privacy.mjs';
 import { normalizeCatalogPayload, mergeCatalog } from './catalog.mjs';
 import { parseFenbiExamDom } from './dom.mjs';
-import { comparePaper } from './align.mjs';
+import { comparePaper, alignmentExitCode } from './align.mjs';
 
 const HELP = `Fenbi capture (local persistent Chrome/Edge; no model or cloud-browser calls)
   node src/cli.mjs init
@@ -317,7 +317,10 @@ async function main() {
     const report = await comparePaper(input, await fs.readFile(paperPath, 'utf8'), { repoRoot: REPO, paperPath, assetRoot });
     const output = safeChild(WORK, `alignment-${Date.now()}.json`);
     await writeJson(output, report);
-    console.log(JSON.stringify({ output, paper: report.paper, summary: report.summary }, null, 2));
+    console.log(JSON.stringify({ output, verdict: report.verification.verdict, unverified: report.verification.unverified,
+      notApplicable: report.verification.notApplicable, paper: report.paper, summary: report.summary }, null, 2));
+    // 2 = 验收不完整. Anything short of a fully verified alignment must not exit 0.
+    process.exitCode = alignmentExitCode(report);
     return;
   }
   if (command === 'init') {
