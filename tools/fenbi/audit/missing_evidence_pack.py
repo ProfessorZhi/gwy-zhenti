@@ -1,29 +1,23 @@
 #!/usr/bin/env python3
-"""Per-question evidence packages for the 11 confirmed missing questions.
+"""Per-question evidence state for the 11 gap numbers, after the PR #33 correction.
 
-Covers the two papers whose gaps were CONFIRMED to exist on the live source in
-the third capture batch:
-
+Scope: the numbers the library leaves empty in
   江苏2024A (fenbi 4162243): 76, 96, 110, 111
   广东2020县级 (fenbi 96785): 69, 70, 71, 72, 73, 74, 75
 
-For each question it records the number mapping, what the library holds, which
-sources establish what, and exactly which evidence is still required before a
-repair candidate could be written. It emits **no question text**: the fields a
-handoff must supply are listed by name, not filled in.
+**Corrected 2026-10-17.** An earlier version of this pack asserted that these 11
+questions were "confirmed present on the source, content captured". That was
+wrong. The source lists these NUMBERS, but at every one of them the page holds a
+collection stub — "题目正在全力以赴征集…" — not question text. A question number,
+or a question container in the DOM, proves only that a slot exists.
 
-Two things it is careful about:
+`reports/FENBI-AUDIT-CORRECTION-20261017.md` (PR #33, by the capture owner) is the
+authority for that correction, having audited the captured DOM per item. This pack
+takes it as given and records, per question, that no source content is available.
 
-* **The mapping.** Both sources were captured with 偏移 = 0, i.e. the source
-  numbers questions the same way the library does — original numbering with the
-  same gaps. So the correct join is by number and each new question is inserted
-  at its own original number. A positional join would have mapped 广东 source 69
-  onto library 76; the pack records that explicitly so it cannot be repeated.
-
-* **Provenance.** The fenbi paper is a 网友回忆版 — an institution/recollection
-  edition. It is not an official paper, and nothing here may be described as
-  one. Answers and explanations are not published by the source and stay
-  unknown.
+So: candidate status is **blocked**, `source_content_available` is **false**, and
+nothing here asks anyone to authorise a repair from the fenbi capture. Writing
+stays unauthorised, and the source is never described as an official paper.
 
 Usage:
     python3 tools/fenbi/audit/missing_evidence_pack.py [--repo DIR] [--out FILE]
@@ -38,26 +32,39 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _common import (  # noqa: E402
-    default_repo_root, parse_frontmatter, parse_paper, read_text,
+    default_repo_root, detect_placeholders, parse_frontmatter, parse_paper, read_text,
 )
 
-# The capture report that establishes source-side existence for these numbers.
-# Pinned by commit and by content digest so the claim can be re-checked.
-THIRD_BATCH = {
-    "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
-    "commit": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
-    "pr": 29,
-    "sha256": "c836e2f3939982df34069819d613252fdd77ac691abd9e0d625b211e909bf599",
-    "establishes": "source-side existence of the missing numbers, with 偏移 = 0",
+# The correction that establishes what the source actually holds at these numbers.
+CORRECTION = {
+    "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+    "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+    "pr": 33,
+    "sha256": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+    "authority": ("written by the capture owner from a per-item audit of the captured "
+                  "DOM; this pack treats it as the authority for what the source holds"),
 }
 
-# What a handoff must supply for a candidate to become writable.
+# The earlier, now-retracted evidence this pack was built on.
+SUPERSEDED = {
+    "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+    "pr": 29,
+    "retracted_claim": ("that the 4 江苏2024A and 7 广东2020 gap numbers were "
+                        "'真实存在且可见' and '已被本次采集取得' — i.e. captured content"),
+    "why_wrong": ("the aligner reported `no-safe-unique-match`, which was read as "
+                  "'content differs'. It actually meant the source slot holds a "
+                  "collection stub, so there was nothing to match."),
+}
+
+# What a handoff would have to supply for a candidate to become writable — still
+# unmet, since no source currently holds any of this.
 REQUIRED_FIELDS = [
-    "stem_text",            # or a digest plus the original bytes, for verification
-    "options[]",            # label + text for every option, in order
-    "material_linkage",     # which shared material the question hangs off, if any
-    "figure_bytes+sha256",  # every figure/formula image, by content digest
-    "source_number",        # the source's own numbering for this question
+    "a non-stub stem, from a source that has actually collected the question",
+    "options[] (label + text, in order)",
+    "material_linkage (which shared material the question hangs off, if any)",
+    "figure_bytes + sha256 for every figure/formula",
+    "the source's own numbering for the question",
+    "the licence/permission to redistribute that source into this repository",
 ]
 
 PAPERS = (
@@ -68,10 +75,10 @@ PAPERS = (
         "source_question_count": 135,
         "capture": "papers/js-2024-xingce-a-4162243/",
         "numbers": [76, 96, 110, 111],
-        "source_kind": "recollection-institution",
-        "source_title_kind": "网友回忆版",
-        "confirm_note": ("Source holds 135 questions, the library 131. The four source-only "
-                         "numbers are exactly 76/96/110/111 — the library's declared gaps."),
+        "stub_numbers": [76, 96, 110, 111],
+        "note": ("The four source-only numbers coincide exactly with the library's "
+                 "declared gaps — but each is an uncollected stub, so the source "
+                 "cannot supply these questions."),
     },
     {
         "label": "广东2020县级卷",
@@ -80,42 +87,29 @@ PAPERS = (
         "source_question_count": 100,
         "capture": "papers/gd-2020-xingce-county-96785/",
         "numbers": [69, 70, 71, 72, 73, 74, 75],
-        "source_kind": "recollection-institution",
-        "source_title_kind": "网友回忆版",
-        "confirm_note": ("Source holds 100 questions, the library 93. The seven source-only "
-                         "numbers are exactly 69–75 — the library's declared gaps. The "
-                         "capture also flags 14 same-number content differences elsewhere "
-                         "in this paper, which are a separate question from these gaps."),
+        "stub_numbers": [69, 70, 71, 72, 73, 74, 75],
+        "note": ("The seven source-only numbers coincide exactly with the library's "
+                 "declared gaps, and all seven are uncollected stubs. Separately, 14 "
+                 "OTHER numbers in this paper are genuine content differences "
+                 "(18,22,64,66,67,79,87,91,92,94,96,98,99,100) — a different question "
+                 "from these gaps, and it still needs per-item manual review."),
     },
 )
 
-# Other sources checked in the earlier audit: they confirm the gap but carry no
-# content, so they must not be presented as supplying it.
+# Every source consulted so far, and what it actually contributes.
 SUPPORTING_SOURCES = [
-    {
-        "name": "上岸通 fixed reference",
-        "role": "pinned by the repo's own report",
-        "status": "placeholder-no-content",
-        "applies_to": ["江苏2024A类", "广东2020县级卷"],
-    },
-    {
-        "name": "展鸿教育 2024江苏A 真题 PDF",
-        "role": "independent institution edition",
-        "status": "placeholder-no-content",
-        "applies_to": ["江苏2024A类"],
-    },
-    {
-        "name": "星光公考 100题版 广东2020县级",
-        "role": "independent institution edition",
-        "status": "placeholder-no-content",
-        "applies_to": ["广东2020县级卷"],
-    },
-    {
-        "name": "崖门/丫门 pinned PDF 广东2020",
-        "role": "pinned by the repo's own report",
-        "status": "number-absent-from-source",
-        "applies_to": ["广东2020县级卷"],
-    },
+    {"name": "上岸通 fixed reference", "role": "pinned by the repo's own report",
+     "status": "placeholder-no-content", "supplies_content": False},
+    {"name": "展鸿教育 2024江苏A 真题 PDF", "role": "independent institution edition",
+     "status": "placeholder-no-content", "supplies_content": False},
+    {"name": "星光公考 100题版 广东2020", "role": "independent institution edition",
+     "status": "placeholder-no-content", "supplies_content": False},
+    {"name": "崖门/丫门 pinned PDF 广东2020", "role": "pinned by the repo's own report",
+     "status": "number-absent-from-source", "supplies_content": False},
+    {"name": "粉笔 third-batch capture", "role": "vendor recollection edition",
+     "status": "uncollected-placeholder-stub", "supplies_content": False,
+     "note": ("at every one of the 11 numbers the page holds a collection stub, per "
+              "the PR #33 per-item DOM audit")},
 ]
 
 
@@ -132,18 +126,25 @@ def sha256_file(path):
         return hashlib.sha256(fh.read()).hexdigest()
 
 
-def build(repo, third_batch_file=None):
-    # The capture report lives on the capture branch, not on this one. Prefer a
-    # local copy when given one, so the recorded digest can be re-verified.
-    third_batch_local = None
-    for candidate in (third_batch_file,
-                      os.path.join(repo, THIRD_BATCH["path"])):
+def anchor(repo, spec, local_file=None):
+    path = None
+    for candidate in (local_file, os.path.join(repo, spec["path"])):
         if candidate and os.path.isfile(candidate):
-            third_batch_local = candidate
+            path = candidate
             break
-    third_batch_sha = sha256_file(third_batch_local) if third_batch_local else None
-    third_batch_verified = (third_batch_sha == THIRD_BATCH["sha256"]
-                            if third_batch_sha else None)
+    digest = sha256_file(path) if path else None
+    return {
+        "path": spec["path"],
+        "commit": spec.get("commit"),
+        "pr": spec.get("pr"),
+        "sha256_recorded": spec.get("sha256"),
+        "sha256_local": digest,
+        "sha256_verified": (digest == spec["sha256"]) if (digest and spec.get("sha256")) else None,
+    }
+
+
+def build(repo, correction_file=None):
+    correction_anchor = anchor(repo, CORRECTION, correction_file)
 
     items = []
     for spec in PAPERS:
@@ -152,81 +153,94 @@ def build(repo, third_batch_file=None):
         parsed = parse_paper(body)
         library_numbers = sorted(parsed["questions"])
         library_set = set(library_numbers)
-        # The correct join, derived from the actual numbers on both sides.
-        source_numbers = list(range(1, spec["source_question_count"] + 1))
         positional_would_use = {
-            n: sorted(library_numbers)[n - 1]
+            n: library_numbers[n - 1]
             for n in spec["numbers"]
-            if n - 1 < len(library_numbers) and sorted(library_numbers)[n - 1] != n
+            if n - 1 < len(library_numbers) and library_numbers[n - 1] != n
         }
 
         for number in spec["numbers"]:
-            present_in_library = number in library_set
-            item = {
+            is_stub = number in spec["stub_numbers"]
+            items.append({
                 "id": f"{spec['label']}-{number}",
                 "paper": spec["path"],
                 "label": spec["label"],
                 "original_number": number,
                 "library": {
-                    "heading_present": present_in_library,
-                    "state": "already-present" if present_in_library else "absent-gap-preserved",
+                    "heading_present": number in library_set,
+                    "state": ("already-present" if number in library_set
+                              else "absent-gap-preserved"),
                 },
                 "mapping": {
                     "source_number": number,
                     "join": "number",
-                    "join_basis": ("source captured with 偏移 = 0: it numbers questions the "
-                                   "same way the library does, so source N == library N"),
+                    "join_basis": ("the source numbers questions the same way the library "
+                                   "does (偏移 = 0), so source N == library N"),
                     "insert_at_original_number": number,
                     "renumbering_required": False,
                     "positional_join_would_use_library_number": positional_would_use.get(number),
                     "positional_join_is_wrong": number in positional_would_use,
                 },
-                "source": {
+                "source_slot": {
                     "fenbi_source_id": spec["fenbi_source_id"],
                     "capture_dir": spec["capture"],
-                    "source_kind": spec["source_kind"],
-                    "source_title_kind": spec["source_title_kind"],
-                    "is_official": False,
-                    "attribution_note": ("Institution/recollection edition (网友回忆版). Must "
-                                         "not be described as an official paper."),
-                    "evidence_anchor": {
-                        "path": THIRD_BATCH["path"],
-                        "commit": THIRD_BATCH["commit"],
-                        "pr": THIRD_BATCH["pr"],
-                        "sha256_recorded": THIRD_BATCH["sha256"],
-                        "sha256_local": third_batch_sha,
-                        "sha256_verified": third_batch_verified,
-                        "verify_hint": ("fetch the file at the recorded commit and pass it "
-                                        "with --third-batch-file to re-check the digest"),
-                        "establishes": THIRD_BATCH["establishes"],
-                    },
+                    "slot_exists": True,
+                    "slot_kind": ("uncollected-placeholder-stub" if is_stub
+                                  else "unknown-needs-audit"),
+                    "source_content_available": False if is_stub else None,
+                    "observed": ("the page holds a collection stub ('题目正在全力以赴征集…'), "
+                                 "not question text" if is_stub
+                                 else "not established by the available evidence"),
+                    "evidence_anchor": correction_anchor,
                 },
+                "candidate_status": "blocked",
+                "repair_state": "blocked-no-source-content",
+                "blocked_reason": (
+                    "The source lists this number but has not collected the question; "
+                    "there is no source text to repair from." if is_stub
+                    else "No source content established."),
                 "established": {
-                    "existence_on_source": "confirmed",
-                    "content_available": "pending-handoff",
+                    "number_listed_on_source": True,
+                    "content_available": False,
                     "answer": "unknown",
                     "explanation": "unknown",
                 },
                 "required_evidence": list(REQUIRED_FIELDS),
-                "provenance_class": spec["source_kind"],
-                "repair_state": "candidate-not-written",
+                "provenance_class": "recollection-institution",
+                "is_official": False,
                 "write_authorization": "not-confirmed",
                 "answer_policy": ("The source publishes no answers or explanations. They stay "
                                   "unknown; they are not to be inferred, and no AI-generated "
-                                  "option or answer may stand in for source text."),
-            }
-            items.append(item)
+                                  "question or option text may stand in for source text."),
+            })
 
     return {
         "pack": "missing-evidence-pack",
         "date": "2026-10-17",
+        "revision": "2 — corrected after PR #33",
         "repo_head": repo_head(repo),
+        "correction": {
+            "date": "2026-10-17",
+            "supersedes": ("revision 1 of this pack, which asserted the 11 questions were "
+                           "'confirmed present on the source with content captured'"),
+            "authority": correction_anchor,
+            "superseded_evidence": SUPERSEDED,
+            "what_actually_holds": ("at all 11 numbers the source page holds an uncollected "
+                                    "collection stub; a question number or DOM container "
+                                    "proves a slot exists, not that content was collected"),
+            "corroboration": ("the same stub string is what the pinned third-party "
+                              "references print at these numbers (verified in the PR #24 "
+                              "probe of 上岸通/展鸿/星光), so the two directions agree"),
+            "not_claimed": ("PR #33 corrects a misreading of the capture; it is NOT an "
+                            "official-paper certification of anything, and this pack does "
+                            "not present it as one"),
+        },
         "scope": {
             "papers": len(PAPERS),
             "questions": sum(len(p["numbers"]) for p in PAPERS),
-            "statement": ("The 11 questions whose gaps are confirmed to exist on the live "
-                          "source. Separate from the 江苏2025C backfill, which must not be "
-                          "overwritten."),
+            "statement": ("The 11 gap numbers. Their source slots exist but hold no content, "
+                          "so no repair is possible from the fenbi capture. Separate from "
+                          "the 江苏2025C backfill, which must not be overwritten."),
         },
         "papers": [{
             "label": p["label"],
@@ -238,18 +252,29 @@ def build(repo, third_batch_file=None):
             "declared_missing": [int(x) for x in __import__("re").findall(
                 r"\d+", parse_frontmatter(
                     read_text(os.path.join(repo, p["path"])))[0].get("缺失原题号", "") or "")],
-            "source_kind": p["source_kind"],
+            "stub_numbers": p["stub_numbers"],
+            "source_content_available": False,
             "is_official": False,
-            "confirm_note": p["confirm_note"],
+            "note": p["note"],
         } for p in PAPERS],
         "supporting_sources": SUPPORTING_SOURCES,
         "items": items,
+        "summary": {
+            "questions": len(items),
+            "candidate_status_blocked": sum(1 for i in items
+                                            if i["candidate_status"] == "blocked"),
+            "source_content_available": sum(1 for i in items
+                                            if i["established"]["content_available"]),
+            "waiting_on_a_source_that_has_the_question": len(items),
+        },
         "authorization_checklist": {
             "state": "NOT CONFIRMED",
+            "note": ("No repair can be authorised from the fenbi capture for these 11: there "
+                     "is no content there to authorise. A different source is needed first."),
             "required_before_writing": [
-                "the source's licence/permission for redistribution into this repository",
-                "confirmation that the third-batch capture may be used as a repair source",
-                "a handoff supplying the per-question evidence fields listed above",
+                "a source that has actually collected these questions",
+                "the licence/permission to redistribute that source into this repository",
+                "a handoff supplying the per-question evidence fields above",
             ],
             "until_confirmed": [
                 "no question text is written into 省考/ or any tracked path",
@@ -265,10 +290,11 @@ def build(repo, third_batch_file=None):
         "boundary": [
             "No question text, option text, answer or explanation is included in this pack.",
             "No file under 国考/, 省考/, 图片/ or catalog/ is modified.",
-            "The 江苏2025C backfill is not touched: those 12 remain as recorded, with their "
-            "own unresolved evidence question.",
-            "Nothing here is described as an official paper; the source is a recollection "
-            "edition.",
+            "The 江苏2025C backfill is not touched.",
+            "Nothing here is described as an official paper; every source consulted is an "
+            "institution or recollection edition.",
+            "This pack does not ask anyone to authorise a repair from the fenbi capture, "
+            "because that capture holds no question content for these numbers.",
         ],
     }
 
@@ -277,12 +303,13 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--repo", default=default_repo_root())
-    ap.add_argument("--third-batch-file", default=None,
-                    help="local copy of the capture report, to re-verify its digest")
+    ap.add_argument("--correction-file", default=None,
+                    help="local copy of the PR #33 correction report, to re-verify its digest")
+    ap.add_argument("--third-batch-file", dest="correction_file", help=argparse.SUPPRESS)
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
-    doc = build(args.repo, third_batch_file=args.third_batch_file)
+    doc = build(args.repo, correction_file=args.correction_file)
     text = json.dumps(doc, ensure_ascii=False, indent=2)
     if args.out:
         with open(args.out, "w", encoding="utf-8") as fh:
@@ -291,14 +318,14 @@ def main():
     else:
         print(text)
 
-    print(json.dumps(doc["scope"], ensure_ascii=False))
+    print(json.dumps(doc["summary"], ensure_ascii=False))
+    print("correction anchor verified:",
+          doc["correction"]["authority"]["sha256_verified"])
     for paper in doc["papers"]:
         print(f"  {paper['label']:14} library={paper['library_question_count']:>4} "
               f"source={paper['source_question_count']:>4} "
-              f"declared_missing={paper['declared_missing']}")
-    shifted = [i["id"] for i in doc["items"]
-               if i["mapping"]["positional_join_is_wrong"]]
-    print("  items where a positional join would mis-map:", shifted)
+              f"stub_numbers={paper['stub_numbers']} "
+              f"content_available={paper['source_content_available']}")
     return 0
 
 

@@ -122,6 +122,25 @@ def detect_placeholders(text):
             if re.search(pattern, text, re.M)]
 
 
+# A stub is boilerplate standing in for a question the source never collected,
+# e.g. "题目正在全力以赴征集，将会第一时间上传". Real stems can be short (analogy
+# items), so a marker must be present AND the whole body must be about that
+# marker — length alone is not the test.
+STUB_MAX_CHARS = 60
+
+
+def looks_like_placeholder_stub(text):
+    """True when the text is a collection stub rather than question content.
+
+    The presence of a question number or a question container proves only that
+    a slot exists. This is the check that distinguishes a slot from content.
+    """
+    normalized = normalize_comparison_text(text)["strict"]
+    if not normalized or len(normalized) > STUB_MAX_CHARS:
+        return False
+    return bool(detect_placeholders(normalized))
+
+
 IMAGE_TOKEN = " ⟦IMAGE⟧ "
 
 import html as _html  # noqa: E402

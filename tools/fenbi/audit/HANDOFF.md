@@ -83,6 +83,12 @@ python3 tools/fenbi/audit/handoff_reconcile.py \
 广东2020 源 100 / 库 93，源侧多出的正是 69–75。两卷 `偏移 = 0`。
 **因此正确做法是按号对接（`--join number`），每题按原号插入，不需重编号。**
 
+> **上限提醒（PR #33 更正）**：上句说的是**题号槽位**，**不是内容**。
+> 这些槽位在粉笔处是**未征集占位存根**，没有正文。见
+> `reports/FENBI-MISSING11-EVIDENCE-PACK-20261017.md`。
+> 对账器已把"占位存根"判为 `unknown`（`source-is-uncollected-placeholder-stub`），
+> **不会**判成 `different`——"源侧没内容"与"源侧内容不同"是两回事。
+
 | 策略 | 行为 |
 |---|---|
 | `number` | 来源题号 == 本库题号。**本场景正确** |

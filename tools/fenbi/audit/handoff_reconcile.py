@@ -40,7 +40,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _common import (  # noqa: E402
     compare_images, compare_options, compare_text, default_repo_root,
-    parse_frontmatter, parse_paper, read_text, resolve_image_ref, image_refs,
+    looks_like_placeholder_stub, parse_frontmatter, parse_paper, read_text,
+    resolve_image_ref, image_refs,
 )
 
 DIMENSIONS = ("number", "stem", "options", "materials", "images", "answer", "explanation")
@@ -189,7 +190,15 @@ def choose_join(strategy, library_numbers, source_numbers):
 
 
 def reconcile_item(source, library, join_basis):
-    """Per-dimension comparison for one matched pair."""
+    """Per-dimension comparison for one matched pair.
+
+    If the source's stem is a collection stub ("题目正在全力以赴征集…") then the
+    capture established only that a slot exists — not what it contains. Every
+    content dimension is then `unknown` with an explicit reason, never
+    `different`, because "the source has no content here" and "the source has
+    different content here" are different findings and only one of them is
+    evidence of a disagreement.
+    """
     dims = {}
     dims["number"] = {
         "status": "same" if join_basis == "same" else "not_compared",
@@ -198,6 +207,19 @@ def reconcile_item(source, library, join_basis):
         "library_number": library.get("library_number"),
         "source_number": source.get("source_number"),
     }
+
+    if looks_like_placeholder_stub(source.get("stem", "")):
+        stub = {"status": "unknown",
+                "reason": "source-is-uncollected-placeholder-stub",
+                "note": ("the source slot exists but holds no question content; ask the "
+                         "capture side for a non-stub source")}
+        for field in ("stem", "options", "materials", "images", "answer", "explanation"):
+            dims[field] = dict(stub)
+        dims["options"] = dict(stub, sourceCount=len(source.get("options") or []))
+        dims["materials"] = dict(stub, sourceCount=len(source.get("material_ids") or []),
+                                 repositoryCount=len(library["material_ids"]))
+        return dims
+
     dims["stem"] = compare_text(source.get("stem", ""), library["stem"])
     dims["options"] = compare_options(source.get("options") or [], library["options"])
 
@@ -252,20 +274,36 @@ def build(repo, handoff, strategy, library_path=None):
 
     items, unmapped_source, unmapped_library = [], [], []
     used_library = set()
+
+    def describe_unmapped(index, source, reason):
+        """An unmatched source slot is only content if it is not a stub."""
+        stem = source.get("stem", "")
+        is_stub = looks_like_placeholder_stub(stem)
+        return {
+            "index": index,
+            "source_number": source.get("source_number"),
+            "reason": reason,
+            "content_kind": ("uncollected-placeholder-stub" if is_stub
+                             else "unmatched-content"),
+            "counts_as_source_content": not is_stub,
+            "note": ("the slot exists but the source has not collected this question; "
+                     "this is not evidence that the library is missing real content"
+                     if is_stub else
+                     "the source holds content here and the library does not"),
+        }
+
     for index, source in enumerate(handoff["questions"]):
         if join == "number":
             library_number = source.get("source_number")
             if library_number not in parsed["questions"]:
-                unmapped_source.append({"index": index,
-                                        "source_number": source.get("source_number"),
-                                        "reason": "no-library-question-with-this-number"})
+                unmapped_source.append(describe_unmapped(
+                    index, source, "no-library-question-with-this-number"))
                 continue
             basis = "same"
         else:
             if index >= len(ordered):
-                unmapped_source.append({"index": index,
-                                        "source_number": source.get("source_number"),
-                                        "reason": "beyond-library-question-count"})
+                unmapped_source.append(describe_unmapped(
+                    index, source, "beyond-library-question-count"))
                 continue
             library_number = ordered[index]
             basis = ("same" if library_number == source.get("source_number")
@@ -299,10 +337,30 @@ def build(repo, handoff, strategy, library_path=None):
             counts[item["dimensions"][dim]["status"]] += 1
         tally[dim] = counts
 
+    stub_numbers = [item["library_number"] for item in items
+                    if (item["dimensions"]["stem"].get("reason")
+                        == "source-is-uncollected-placeholder-stub")]
+    stub_only_slots = [u["source_number"] for u in unmapped_source
+                       if u["content_kind"] == "uncollected-placeholder-stub"]
+    unmatched_content = [u["source_number"] for u in unmapped_source
+                         if u["content_kind"] == "unmatched-content"]
+
     return {
         "audit": "three-paper-handoff-reconcile",
         "handoff_schema": handoff.get("schema"),
         "adapted_from": handoff.get("adapted_from"),
+        "source_content_note": (
+            "A question number or container appearing on the source proves only that a "
+            "slot exists. Where the slot holds a collection stub, the content dims are "
+            "`unknown`, not `different`."),
+        "placeholder_stub_items": stub_numbers,
+        "placeholder_stub_count": len(stub_numbers),
+        "unmatched_source_slots": {
+            "stub_only": stub_only_slots,
+            "with_content": unmatched_content,
+            "note": ("`stub_only` slots are numbers the source lists but has not "
+                     "collected; they are NOT recoverable content."),
+        },
         "paper": {
             "label": paper.get("label"),
             "library_path": paper_rel,
@@ -325,6 +383,10 @@ def build(repo, handoff, strategy, library_path=None):
             "Reports only; nothing is written back into the repository.",
             "Missing source answers/explanations stay unknown; they are never "
             "inferred from the library or from a sibling paper.",
+            "A source collection stub is `unknown`, never `different`: an uncollected "
+            "slot is not evidence that the two sides disagree.",
+            "An unmatched source slot is counted as recoverable content only when it "
+            "actually holds text; stub-only slots are not.",
             "Paper identity is reported as unverified unless the capture proves it.",
         ],
     }

@@ -21,8 +21,8 @@ sys.path.insert(0, AUDIT)
 
 from _common import (  # noqa: E402
     compare_images, compare_options, compare_text, image_refs,
-    normalize_comparison_text, parse_frontmatter, parse_paper,
-    resolve_image_ref,
+    looks_like_placeholder_stub, normalize_comparison_text, parse_frontmatter,
+    parse_paper, resolve_image_ref,
 )
 import handoff_reconcile  # noqa: E402
 import paper_matrix  # noqa: E402
@@ -459,7 +459,7 @@ class EvidencePackTests(unittest.TestCase):
 
     def test_nothing_is_claimed_official(self):
         for item in self.doc["items"]:
-            self.assertFalse(item["source"]["is_official"])
+            self.assertFalse(item["is_official"])
             self.assertEqual(item["provenance_class"], "recollection-institution")
         for paper in self.doc["papers"]:
             self.assertFalse(paper["is_official"])
@@ -469,22 +469,59 @@ class EvidencePackTests(unittest.TestCase):
             self.assertEqual(item["established"]["answer"], "unknown")
             self.assertEqual(item["established"]["explanation"], "unknown")
 
-    def test_content_is_pending_not_present(self):
+    def test_content_is_unavailable_and_candidates_are_blocked(self):
+        """The PR #33 correction: no source content, so nothing can be repaired."""
+        self.assertEqual(self.doc["summary"]["source_content_available"], 0)
+        self.assertEqual(self.doc["summary"]["candidate_status_blocked"], 11)
         for item in self.doc["items"]:
-            self.assertEqual(item["established"]["content_available"], "pending-handoff")
-            self.assertEqual(item["repair_state"], "candidate-not-written")
+            self.assertEqual(item["established"]["content_available"], False)
+            self.assertFalse(item["source_slot"]["source_content_available"])
+            self.assertEqual(item["source_slot"]["slot_kind"],
+                             "uncollected-placeholder-stub")
+            self.assertEqual(item["candidate_status"], "blocked")
+            self.assertEqual(item["repair_state"], "blocked-no-source-content")
             self.assertEqual(item["write_authorization"], "not-confirmed")
+
+    def test_slots_exist_but_that_is_not_content(self):
+        for item in self.doc["items"]:
+            self.assertTrue(item["source_slot"]["slot_exists"])
+            self.assertTrue(item["established"]["number_listed_on_source"])
+            # The distinction the whole correction turns on:
+            self.assertFalse(item["established"]["content_available"])
+
+    def test_correction_block_cites_the_pr33_authority(self):
+        correction = self.doc["correction"]
+        self.assertEqual(correction["authority"]["commit"],
+                         "f19ff2fadb6ee765a2f5c842f1827029460ca623")
+        self.assertEqual(correction["authority"]["pr"], 33)
+        self.assertIn("stub", correction["what_actually_holds"])
+        # It must not dress the correction up as an official-paper certification.
+        self.assertIn("NOT an official-paper certification", correction["not_claimed"])
+
+    def test_correction_records_the_retracted_claim(self):
+        superseded = self.doc["correction"]["superseded_evidence"]
+        self.assertEqual(superseded["pr"], 29)
+        self.assertIn("retracted_claim", superseded)
+
+    def test_supporting_sources_all_lack_content(self):
+        for source in self.doc["supporting_sources"]:
+            self.assertFalse(source["supplies_content"], source["name"])
+            self.assertIn(source["status"],
+                          ("placeholder-no-content", "number-absent-from-source",
+                           "uncollected-placeholder-stub"))
+
+    def test_pack_does_not_ask_for_authorisation_to_repair_from_fenbi(self):
+        checklist = self.doc["authorization_checklist"]
+        self.assertEqual(checklist["state"], "NOT CONFIRMED")
+        self.assertIn("no content there to authorise", checklist["note"])
+        self.assertIn("a source that has actually collected these questions",
+                      checklist["required_before_writing"][0])
 
     def test_pack_carries_no_question_text(self):
         blob = json.dumps(self.doc, ensure_ascii=False)
         for phrase in ("巍巍华山", "国家作物种质库", "数字游民", "压舱石",
                        "苍鹰", "极简婚礼", "治污投入"):
             self.assertNotIn(phrase, blob)
-
-    def test_supporting_sources_are_not_presented_as_content(self):
-        for source in self.doc["supporting_sources"]:
-            self.assertIn(source["status"],
-                          ("placeholder-no-content", "number-absent-from-source"))
 
     def test_authorization_is_not_confirmed(self):
         self.assertEqual(self.doc["authorization_checklist"]["state"], "NOT CONFIRMED")
@@ -495,6 +532,132 @@ class EvidencePackTests(unittest.TestCase):
         for item in self.doc["items"]:
             self.assertNotIn("江苏/2025", item["paper"])
             self.assertNotIn("2025C", item["label"])
+
+
+class PlaceholderStubTests(unittest.TestCase):
+    """A question number existing on the source is not the same as content.
+
+    This is the rule that PR #29/#27 got wrong: an uncollected stub at a number
+    was read as content that differed from the library.
+    """
+
+    # The exact stub texts observed on the source.
+    STUBS = (
+        "题目正在全力以赴征集，将会第一时间上传",
+        "题目正在全力以赴征集，将会在征集到后第一时间上传",
+        "本题暂无收集到",
+        "网友未回忆起",
+    )
+
+    def test_known_stub_texts_are_detected(self):
+        for stub in self.STUBS:
+            self.assertTrue(looks_like_placeholder_stub(stub), stub)
+
+    def test_stub_detected_with_surrounding_markup(self):
+        self.assertTrue(looks_like_placeholder_stub(
+            f"<p>{self.STUBS[0]}</p>"))
+
+    def test_real_short_analogy_stem_is_not_a_stub(self):
+        # Short stems are legitimate (类比推理); only a marker makes a stub.
+        for stem in ("压舱石：就业：社会稳定", "苍鹰∶鸿雁∶书信", "森林 之于 （ ）"):
+            self.assertFalse(looks_like_placeholder_stub(stem), stem)
+
+    def test_long_text_mentioning_collection_is_not_a_stub(self):
+        self.assertFalse(looks_like_placeholder_stub(
+            "下列关于文物征集的说法，与文意相符的是：" + "甲" * 80))
+
+    def test_empty_text_is_not_a_stub(self):
+        self.assertFalse(looks_like_placeholder_stub(""))
+
+    def test_stub_only_unmatched_slots_are_not_counted_as_content(self):
+        """The real shape: the 11 numbers are slots the source never collected.
+
+        They do not exist in the library either, so they land in
+        unmapped_source_items — and they must be labelled stub-only rather than
+        treated as recoverable content.
+        """
+        cases = (("省考/江苏/2024/行测-A类.md", [76, 96, 110, 111]),
+                 ("省考/广东/2020/行测-县级卷.md", [69, 70, 71, 72, 73, 74, 75]))
+        for path, numbers in cases:
+            handoff = {
+                "schema": "fenbi-candidate-handoff-v1",
+                "paper": {"label": path, "library_path": path,
+                          "fenbi_source_id": "t", "binding": "unverified"},
+                "questions": [{
+                    "source_number": n, "qid": f"stub-{n}", "stem": self.STUBS[1],
+                    "options": [], "material_ids": [], "images": [],
+                    "answer": None, "explanation": None,
+                } for n in numbers],
+            }
+            doc = handoff_reconcile.build(repo_root(), handoff, "number")
+            slots = doc["unmatched_source_slots"]
+            self.assertEqual(slots["stub_only"], numbers, path)
+            self.assertEqual(slots["with_content"], [], path)
+            for entry in doc["join"]["unmapped_source_items"]:
+                self.assertEqual(entry["content_kind"], "uncollected-placeholder-stub")
+                self.assertFalse(entry["counts_as_source_content"])
+            # A stub slot must never read as a content disagreement.
+            self.assertEqual(doc["dimension_tally"]["stem"]["different"], 0, path)
+
+    def test_unmatched_slot_with_real_text_is_counted_as_content(self):
+        handoff = {
+            "schema": "fenbi-candidate-handoff-v1",
+            "paper": {"label": "广东2020县级卷",
+                      "library_path": "省考/广东/2020/行测-县级卷.md",
+                      "fenbi_source_id": "96785", "binding": "unverified"},
+            "questions": [{
+                "source_number": 69, "qid": "real-69",
+                "stem": "合成占位题干：这是一道尚未入库但来源确有正文的题。",
+                "options": [{"label": lb, "text": f"选项 {lb}"} for lb in "ABCD"],
+                "material_ids": [], "images": [], "answer": None, "explanation": None,
+            }],
+        }
+        doc = handoff_reconcile.build(repo_root(), handoff, "number")
+        slots = doc["unmatched_source_slots"]
+        self.assertEqual(slots["stub_only"], [])
+        self.assertEqual(slots["with_content"], [69])
+        self.assertTrue(doc["join"]["unmapped_source_items"][0]["counts_as_source_content"])
+
+    def test_stub_at_a_number_the_library_has_is_unknown_not_different(self):
+        """Source slot exists, library has content, but the source slot is a stub."""
+        handoff = {
+            "schema": "fenbi-candidate-handoff-v1",
+            "paper": {"label": "江苏2024A类",
+                      "library_path": "省考/江苏/2024/行测-A类.md",
+                      "fenbi_source_id": "4162243", "binding": "unverified"},
+            "questions": [{
+                "source_number": 1, "qid": "stub-1", "stem": self.STUBS[0],
+                "options": [{"label": lb, "text": "缺失"} for lb in "ABCD"],
+                "material_ids": [], "images": [],
+                "answer": None, "explanation": None,
+            }],
+        }
+        doc = handoff_reconcile.build(repo_root(), handoff, "number")
+        item = doc["items"][0]
+        for dim in ("stem", "options", "materials", "images", "answer", "explanation"):
+            self.assertEqual(item["dimensions"][dim]["status"], "unknown", dim)
+            self.assertEqual(item["dimensions"][dim]["reason"],
+                             "source-is-uncollected-placeholder-stub", dim)
+        self.assertEqual(doc["placeholder_stub_items"], [1])
+        self.assertEqual(doc["dimension_tally"]["stem"]["different"], 0)
+
+    def test_a_real_stem_still_compares_normally(self):
+        """Guard against the stub rule swallowing genuine comparisons."""
+        handoff = {
+            "schema": "fenbi-candidate-handoff-v1",
+            "paper": {"label": "广东2020县级卷",
+                      "library_path": "省考/广东/2020/行测-县级卷.md",
+                      "fenbi_source_id": "96785", "binding": "unverified"},
+            "questions": [{
+                "source_number": 1, "qid": "real-1",
+                "stem": "合成占位题干：这是一道题的真实题干文本。",
+                "options": [{"label": lb, "text": f"选项 {lb}"} for lb in "ABCD"],
+                "material_ids": [], "images": [], "answer": None, "explanation": None,
+            }],
+        }
+        doc = handoff_reconcile.build(repo_root(), handoff, "number")
+        self.assertEqual(doc["placeholder_stub_count"], 0)
+        self.assertIn(doc["items"][0]["dimensions"]["stem"]["status"], ("same", "different"))
 
 
 class CliSmokeTests(unittest.TestCase):

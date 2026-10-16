@@ -87,13 +87,22 @@ python3 tools/fenbi/audit/missing_evidence_pack.py --repo . \
     [--third-batch-file <local copy of the capture report>] --out <pack.json>
 ```
 
-Builds a per-question package for the 11 questions whose gaps were confirmed to
-exist on the live source (江苏2024A 76/96/110/111, 广东2020县级 69–75): number
-mapping, what the library holds, which source establishes what, and the evidence
-still required. It emits no question text — required fields are named, not
-filled. Answers and explanations stay `unknown`, provenance is always
-`recollection-institution` (never official), and writing stays unauthorized
-until the redistribution permission is confirmed in writing.
+Builds a per-question package for the 11 gap numbers (江苏2024A 76/96/110/111,
+广东2020县级 69–75): number mapping, what the library holds, what the source
+actually holds, and the evidence still required.
+
+**These 11 numbers are slots the source has not collected.** The page lists the
+number but holds a collection stub ("题目正在全力以赴征集…"), so there is no
+source text to repair from. Every item is therefore `candidate_status: blocked`
+and `source_content_available: false`, and the pack does not request
+authorisation to repair from that capture — there is nothing there to authorise.
+A question number, or a question container in the DOM, proves only that a slot
+exists. The correction is anchored to PR #33's per-item DOM audit; the pack also
+records the earlier claim it supersedes.
+
+It emits no question text — required fields are named, not filled. Answers and
+explanations stay `unknown`, and provenance is always `recollection-institution`
+(never official).
 
 ## Tests
 
