@@ -1,0 +1,5686 @@
+{
+  "generated": "2026-10-17",
+  "baseline": {
+    "pr": 20,
+    "head": "e1feb5187ec3544cde62a1a128a6269a8d63011b"
+  },
+  "shenlun_files_audited": 712,
+  "missing_whole_papers": {
+    "registered_in_report": 21,
+    "confirmed_still_missing": 19,
+    "reconciled_present": [
+      {
+        "region": "江苏",
+        "year": "2026",
+        "paper_type": "A",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-A类.md",
+          "申论-B类.md",
+          "申论-C类.md"
+        ],
+        "matched_file": "申论-A类.md",
+        "status": "present"
+      },
+      {
+        "region": "江苏",
+        "year": "2026",
+        "paper_type": "C",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-A类.md",
+          "申论-B类.md",
+          "申论-C类.md"
+        ],
+        "matched_file": "申论-C类.md",
+        "status": "present"
+      }
+    ],
+    "entries": [
+      {
+        "region": "上海",
+        "year": "2016",
+        "paper_type": "行政执法专项",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-A类.md",
+          "申论-B类.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "上海",
+        "year": "2021",
+        "paper_type": "行政执法专项",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-A类.md",
+          "申论-B类.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "上海",
+        "year": "2022",
+        "paper_type": "A",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-B类.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "上海",
+        "year": "2022",
+        "paper_type": "行政执法专项",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-B类.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "上海",
+        "year": "2023",
+        "paper_type": "B",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-A类.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "上海",
+        "year": "2024",
+        "paper_type": "行政执法专项",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-A卷.md",
+          "申论-B卷.md",
+          "申论-统考.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "上海",
+        "year": "2025",
+        "paper_type": "行政执法专项",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-A卷.md",
+          "申论-B卷.md",
+          "申论-统考.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "北京",
+        "year": "2026",
+        "paper_type": "统一卷",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "天津",
+        "year": "2022",
+        "paper_type": "行政执法",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-县级.md",
+          "申论-市级.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "天津",
+        "year": "2024",
+        "paper_type": "综合街镇",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-市级.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "天津",
+        "year": "2024",
+        "paper_type": "行政执法",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-市级.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "天津",
+        "year": "2025",
+        "paper_type": "行政执法",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-市区卷.md",
+          "申论-统考.md",
+          "申论-街镇卷.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "天津",
+        "year": "2026",
+        "paper_type": "综合市区",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-统考.md",
+          "申论-行政执法.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "天津",
+        "year": "2026",
+        "paper_type": "综合街镇",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-统考.md",
+          "申论-行政执法.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "江苏",
+        "year": "2026",
+        "paper_type": "A",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-A类.md",
+          "申论-B类.md",
+          "申论-C类.md"
+        ],
+        "matched_file": "申论-A类.md",
+        "status": "present"
+      },
+      {
+        "region": "江苏",
+        "year": "2026",
+        "paper_type": "C",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-A类.md",
+          "申论-B类.md",
+          "申论-C类.md"
+        ],
+        "matched_file": "申论-C类.md",
+        "status": "present"
+      },
+      {
+        "region": "浙江",
+        "year": "2022",
+        "paper_type": "A",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "浙江",
+        "year": "2022",
+        "paper_type": "B",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "浙江",
+        "year": "2022",
+        "paper_type": "C",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "深圳",
+        "year": "2024",
+        "paper_type": "Ⅰ",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-二卷.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      },
+      {
+        "region": "福建",
+        "year": "2026",
+        "paper_type": "省市综合管理",
+        "dir_exists": true,
+        "shenlun_files_in_dir": [
+          "申论-通用卷.md"
+        ],
+        "matched_file": null,
+        "status": "absent"
+      }
+    ]
+  },
+  "dangling_answer_source_pointers": [
+    {
+      "path": "国考/2024/申论-副省级.md",
+      "line": 150,
+      "pointer": "国考/2024/申论-统考.md",
+      "target_exists": false,
+      "in_git_history": false
+    },
+    {
+      "path": "国考/2024/申论-地市级.md",
+      "line": 160,
+      "pointer": "国考/2024/申论-统考.md",
+      "target_exists": false,
+      "in_git_history": false
+    },
+    {
+      "path": "国考/2024/申论-行政执法.md",
+      "line": 155,
+      "pointer": "国考/2024/申论-统考.md",
+      "target_exists": false,
+      "in_git_history": false
+    },
+    {
+      "path": "国考/2025/申论-副省级.md",
+      "line": 159,
+      "pointer": "国考/2025/申论-统考.md",
+      "target_exists": false,
+      "in_git_history": false
+    },
+    {
+      "path": "国考/2025/申论-地市级.md",
+      "line": 155,
+      "pointer": "国考/2025/申论-统考.md",
+      "target_exists": false,
+      "in_git_history": false
+    },
+    {
+      "path": "国考/2025/申论-行政执法.md",
+      "line": 150,
+      "pointer": "国考/2025/申论-统考.md",
+      "target_exists": false,
+      "in_git_history": false
+    },
+    {
+      "path": "国考/2026/申论-副省级.md",
+      "line": 149,
+      "pointer": "国考/2026/申论-统考.md",
+      "target_exists": false,
+      "in_git_history": false
+    },
+    {
+      "path": "国考/2026/申论-地市级.md",
+      "line": 160,
+      "pointer": "国考/2026/申论-统考.md",
+      "target_exists": false,
+      "in_git_history": false
+    },
+    {
+      "path": "国考/2026/申论-行政执法.md",
+      "line": 158,
+      "pointer": "国考/2026/申论-统考.md",
+      "target_exists": false,
+      "in_git_history": false
+    }
+  ],
+  "zhenti_label_tiers": {
+    "机构公开整理真题；非官方原件": 28,
+    "源未标注": 87,
+    "公开整理真题，同题来源核对版": 2,
+    "机构整理/考生回忆真题，非官方原件": 22,
+    "网友回忆版": 9,
+    "正式真题": 532,
+    "公开整理真题；用户题本核对版": 4,
+    "专项考试公开整理真题，非官方公布原件": 1,
+    "来源标注为真题；完整原卷和原始作答要求未独立核实": 1,
+    "机构公开整理真题（非官方原件）": 23,
+    "用户提供的完整网络回忆整理版；不是官方原件，原卷真实性未独立逐字认证": 2,
+    "机构公开网络整理版；非官方原件": 1
+  },
+  "bare_zhengshi_zhenti": [
+    {
+      "path": "省考/上海/2024/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/上海/2025/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/上海/2026/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2019/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2019/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2020/申论-州县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2020/申论-省级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/云南/2022/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "SGHCN0762"
+      ],
+      "source_tiers": [
+        "第三方PDF集"
+      ]
+    },
+    {
+      "path": "省考/云南/2022/申论-省市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "SGHCN0762"
+      ],
+      "source_tiers": [
+        "第三方PDF集"
+      ]
+    },
+    {
+      "path": "省考/云南/2023/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/云南/2023/申论-省州市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/云南/2024/申论-州市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2020/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2021/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2022/申论-旗县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2022/申论-盟市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2022/申论-盟市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2023/申论-旗县.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-旗县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/内蒙古/2024/申论-盟市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/北京/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/北京/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/北京/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/北京/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/北京/2022/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/北京/2023/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/北京/2024/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/北京/2025/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2016/申论-乙级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2016/申论-甲级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2017/申论-乙级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2017/申论-甲级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2018/申论-乙级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2018/申论-甲级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2019/申论-乙级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2019/申论-甲级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2020/申论-乙级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2020/申论-甲级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2021/申论-乙级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2021/申论-甲级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2022/申论-丙卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2023/申论-丙卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2023/申论-乙级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/吉林/2023/申论-甲卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/四川/2016/申论-上半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2016/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "kaogong-shuati"
+      ],
+      "source_tiers": [
+        "第三方题库APP(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/四川/2017/申论-上半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2017/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2018/申论-上半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2018/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2019/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2020/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2020/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2020/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2020/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2021/申论-上半年乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2021/申论-上半年省市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2021/申论-上半年行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2021/申论-下半年乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2021/申论-下半年省市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2021/申论-下半年行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2021/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2022/申论-上半年县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2022/申论-上半年省市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2022/申论-上半年行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2022/申论-下半年行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2022/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2023/申论-上半年行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/四川/2023/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/四川/2023/申论-省市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/四川/2024/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2025/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/四川/2026/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2020/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2020/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2021/申论-区县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2021/申论-市级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2021/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2022/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/天津/2022/申论-市级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/天津/2023/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/天津/2023/申论-市区卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/天津/2023/申论-行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/天津/2025/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2026/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/天津/2026/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2016/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2016/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2020/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2020/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2021/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2021/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2021/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2022/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2022/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2022/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2023/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/宁夏/2023/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2016/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2016/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2017/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2017/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2018/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2018/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2019/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2019/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2020/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2020/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2020/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2021/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2021/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2022/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2022/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2022/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2023/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2023/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2023/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2024/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2025/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2026/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2026/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/安徽/2026/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/山东/2016/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2016/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2016/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2017/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2017/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2017/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2018/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2018/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2018/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2019/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2019/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/山东/2020/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2020/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2020/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2021/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2021/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2021/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2022/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2022/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2022/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2023/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/山东/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/山东/2023/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2024/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山东/2025/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2018/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/山西/2018/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2018/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2019/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/山西/2019/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2020/申论-市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2020/申论-省级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2022/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/山西/2022/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2022/申论-省市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/山西/2022/申论-省市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/山西/2023/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/山西/2023/申论-省市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/山西/2026/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/广东/2016/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2016/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2016/申论-广州市考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/广东/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2017/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2017/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-单考区.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/广东/2017/申论-广州市考-双考区.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/广东/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月24日.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/广东/2018/申论-广州市考-3月25日.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/广东/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2019/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2019/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2020/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2020/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2021/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2022/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2022/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2022/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2023/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/广东/2023/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2023/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2024/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2025/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2026/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广东/2026/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/广西/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2018/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/广西/2018/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2019/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/广西/2019/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2020/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2020/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/广西/2020/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2020/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2021/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2021/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/广西/2022/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/广西/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/广西/2023/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2018/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2018/申论-兵团.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2019/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2019/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2019/申论-兵团.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2019/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2019/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2020/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2020/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2021/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2021/申论-兵团一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2021/申论-兵团二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2022/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2024/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2025/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/新疆/2025/申论-行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/江苏/2019/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/江苏/2020/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/江苏/2023/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/江苏/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/江苏/2023/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/江西/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2019/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/江西/2019/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2019/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/江西/2019/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2020/申论-市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2020/申论-省级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2021/申论-省市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2021/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2022/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2022/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/江西/2023/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/江西/2023/申论-省市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/江西/2023/申论-行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/江西/2025/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/江西/2025/申论-省市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/江西/2025/申论-行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/江西/2026/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/河北/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2018/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河北/2019/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2019/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2020/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2021/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河北/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2021/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河北/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2022/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2022/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河北/2022/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河北/2023/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河北/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/河北/2023/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/河北/2024/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河北/2024/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河北/2025/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/河北/2025/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/河北/2025/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/河南/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河南/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河南/2019/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河南/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河南/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河南/2020/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河南/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河南/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河南/2022/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河南/2022/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河南/2022/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/河南/2023/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河南/2023/申论-市级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河南/2024/申论-市级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/河南/2025/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/河南/2025/申论-市级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/浙江/2023/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/浙江/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/浙江/2025/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/浙江/2025/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/浙江/2025/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/浙江/2026/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/浙江/2026/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/浙江/2026/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/海南/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2019/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2019/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/海南/2019/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2020/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2022/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2022/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/海南/2023/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/海南/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/海南/2023/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/海南/2025/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2016/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "kaogong-shuati"
+      ],
+      "source_tiers": [
+        "第三方题库APP(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2016/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "kaogong-shuati"
+      ],
+      "source_tiers": [
+        "第三方题库APP(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2017/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2017/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2018/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2018/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2019/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2019/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2020/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2020/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2022/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2022/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2023/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/深圳/2023/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2019/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2019/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2020/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2022/申论-省市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2023/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2023/申论-省市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2024/申论-省市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2025/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/湖北/2025/申论-省市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2018/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2018/申论-通用卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2019/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2019/申论-通用卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2020/申论-通用卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2021/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2021/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2021/申论-通用卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2022/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2022/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2022/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2023/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2023/申论-省市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2023/申论-行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2025/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2025/申论-省市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2025/申论-行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/湖南/2026/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2020/申论-市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2020/申论-省级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2021/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2021/申论-省市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2022/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/甘肃/2023/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/福建/2018/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/福建/2021/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/福建/2021/申论-县级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/福建/2022/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/福建/2023/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/福建/2023/申论-省市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/福建/2023/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/福建/2025/申论-省市卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/福建/2025/申论-通用卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/福建/2026/申论-通用卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/西藏/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2018/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2019/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2019/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2020/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2020/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2020/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2021/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2021/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2022/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2023/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2025/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/贵州/2026/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2017/申论-公安.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "huatu-zhenti"
+      ],
+      "source_tiers": [
+        "培训机构整理"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2020/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2020/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2021/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2021/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2022/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2022/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2023/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2024/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/辽宁/2026/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2016/申论-上半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2016/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2017/申论-上半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2017/申论-下半年.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2018/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2018/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2019/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2019/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2020/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2020/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2021/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2021/申论-三卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2021/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2022/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2022/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2023/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "yanshen"
+      ],
+      "source_tiers": [
+        "第三方站点(囊中对比 srnz.net)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2023/申论-三卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "yanshen"
+      ],
+      "source_tiers": [
+        "第三方站点(囊中对比 srnz.net)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2023/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2024/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2024/申论-三卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2024/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2025/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2025/申论-三卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2025/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2026/申论-一卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2026/申论-三卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/重庆/2026/申论-二卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2019/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2019/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2020/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2020/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2021/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2021/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2022/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2022/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2022/申论-C类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2023/申论-B类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/陕西/2025/申论-A类.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/青海/2016/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2019/申论-省市州级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2020/申论-州县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2020/申论-省直.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2021/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2021/申论-县级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2022/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/青海/2023/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/青海/2025/申论-县乡卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/青海/2025/申论-行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "qiushi"
+      ],
+      "source_tiers": [
+        "第三方站点(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2016/申论-A卷：省直.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2016/申论-C卷：县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "kaogong-shuati"
+      ],
+      "source_tiers": [
+        "第三方题库APP(粉柿系)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-A卷：省直.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-省市.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2017/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2018/申论-A卷：省直.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2018/申论-省直.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2018/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2019/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2019/申论-急需紧缺岗位.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2019/申论-统考.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2020/申论-乡镇卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2020/申论-市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2020/申论-省级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-乡镇.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-市县卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-省级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2021/申论-省级卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-县乡.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-省直.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-省级.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "slb"
+      ],
+      "source_tiers": [
+        "第三方站点(shenlunhome.com，裸格式)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2022/申论-行政执法.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "linfukai186"
+      ],
+      "source_tiers": [
+        "第三方聚合(题级JSON，无卷型字段)"
+      ]
+    },
+    {
+      "path": "省考/黑龙江/2023/申论-行政执法卷.md",
+      "declared": "正式真题",
+      "source_ids": [
+        "kaogong-shuati"
+      ],
+      "source_tiers": [
+        "第三方题库APP(粉柿系)"
+      ]
+    }
+  ],
+  "receipt_coverage": {
+    "files": 712,
+    "current_hash_recorded": 712,
+    "unrecorded": []
+  }
+}
