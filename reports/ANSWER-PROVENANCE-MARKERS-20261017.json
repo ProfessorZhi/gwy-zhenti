@@ -1,0 +1,758 @@
+{
+  "aiDerivedBlocks": 808,
+  "aiDerivedFiles": 349,
+  "answerBlocks": 56047,
+  "authorityClasses": {
+    "ai_derived": 808,
+    "institution_reference": 52427,
+    "solver_dispute": 511,
+    "unclassified": 746
+  },
+  "canonicalMarkers": [
+    "**来源参考解析（非官方标准答案）**",
+    "**AI辅助独立校核解析（非官方答案，非王智公考原解析，未经实考评分）**"
+  ],
+  "declared": 54492,
+  "filesScanned": 1169,
+  "findingsTruncatedTo": 40,
+  "formatVariantFindings": [
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2016/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2016/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2016/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2016/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2016/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2017/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2017/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2018/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2018/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2018/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2018/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2018/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2019/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2019/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2019/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2020/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2020/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2020/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2020/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2022/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2022/申论-行政执法.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2022/申论-行政执法.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2023/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2023/申论-行政执法.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2024/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2024/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2024/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2024/申论-行政执法.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2024/申论-行政执法.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2024/行测-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 12
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2025/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2025/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2025/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2026/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2026/申论-副省级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2026/申论-地市级.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2026/申论-行政执法.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": "ai_derived",
+      "file": "国考/2026/申论-行政执法.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "省考/上海/2016/申论-A类.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": null,
+      "file": "省考/上海/2016/申论-A类.md",
+      "issue": "format_variant",
+      "marker": null,
+      "question_no": 2
+    }
+  ],
+  "formatVariants": 1564,
+  "formatVariantsByMarker": {
+    "(declared in prose, no bold marker)": 1482,
+    "**来源参考解析**（不是官方公布答案）": 15,
+    "**来源参考解析（非官方标准答案；第100题原解析存在上述逻辑问题）**": 1,
+    "**来源参考解析（非官方）**": 4,
+    "**答案性质**": 62
+  },
+  "root": "/home/fjd/workspaces/gwy-zhenti-answersource-20261017/repo",
+  "schemaVersion": 1,
+  "undeclared": 1555,
+  "undeclaredFiles": 514,
+  "undeclaredFindings": [
+    {
+      "authority_class": null,
+      "file": "国考/2016/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2016/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2016/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2016/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2017/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2017/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2017/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2017/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2017/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2017/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2017/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2017/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2018/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2018/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2018/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2018/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2018/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2019/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2019/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2019/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2019/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2019/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2019/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2019/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2020/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2020/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2020/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2020/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2020/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2020/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-副省级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 5
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 1
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 2
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 3
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 4
+    },
+    {
+      "authority_class": null,
+      "file": "国考/2021/申论-地市级.md",
+      "issue": "undeclared",
+      "marker": null,
+      "question_no": 5
+    }
+  ],
+  "worstAiDerivedFiles": [
+    [
+      "省考/黑龙江/2019/行测-边境县.md",
+      31
+    ],
+    [
+      "省考/上海/2017/行测-统考.md",
+      22
+    ],
+    [
+      "省考/北京/2026/行测-统考.md",
+      18
+    ],
+    [
+      "省考/西藏/2016/行测-统考.md",
+      15
+    ],
+    [
+      "省考/江苏/2025/行测-C类.md",
+      12
+    ],
+    [
+      "省考/河南/2019/行测-司法所.md",
+      7
+    ],
+    [
+      "省考/陕西/2025/申论-A类.md",
+      6
+    ],
+    [
+      "省考/河南/2025/申论-县级卷.md",
+      5
+    ],
+    [
+      "省考/陕西/2021/申论-C类.md",
+      5
+    ],
+    [
+      "省考/陕西/2024/申论-B类.md",
+      5
+    ],
+    [
+      "省考/上海/2025/申论-统考.md",
+      4
+    ],
+    [
+      "省考/云南/2022/申论-县乡卷.md",
+      4
+    ],
+    [
+      "省考/云南/2025/申论-县乡卷.md",
+      4
+    ],
+    [
+      "省考/北京/2020/申论-乡镇卷.md",
+      4
+    ],
+    [
+      "省考/北京/2020/申论-区级.md",
+      4
+    ],
+    [
+      "省考/北京/2021/申论-乡镇卷.md",
+      4
+    ],
+    [
+      "省考/北京/2021/申论-区级.md",
+      4
+    ],
+    [
+      "省考/吉林/2018/申论-甲级.md",
+      4
+    ],
+    [
+      "省考/吉林/2023/申论-甲卷.md",
+      4
+    ],
+    [
+      "省考/天津/2017/申论-统考__t443.md",
+      4
+    ]
+  ],
+  "worstUndeclaredFiles": [
+    [
+      "省考/内蒙古/2020/行测-统考.md",
+      120
+    ],
+    [
+      "省考/辽宁/2017/行测-公安.md",
+      120
+    ],
+    [
+      "省考/四川/2025/申论-统考.md",
+      12
+    ],
+    [
+      "省考/广东/2024/申论-统考.md",
+      10
+    ],
+    [
+      "省考/广东/2026/申论-统考.md",
+      10
+    ],
+    [
+      "省考/四川/2024/申论-统考.md",
+      8
+    ],
+    [
+      "省考/广东/2025/申论-统考.md",
+      8
+    ],
+    [
+      "省考/上海/2024/申论-统考.md",
+      7
+    ],
+    [
+      "省考/天津/2025/申论-统考.md",
+      7
+    ],
+    [
+      "省考/山东/2025/申论-统考.md",
+      6
+    ],
+    [
+      "省考/广东/2023/申论-统考.md",
+      6
+    ],
+    [
+      "国考/2021/申论-副省级.md",
+      5
+    ],
+    [
+      "国考/2021/申论-地市级.md",
+      5
+    ],
+    [
+      "国考/2022/申论-地市级.md",
+      5
+    ],
+    [
+      "国考/2023/申论-副省级.md",
+      5
+    ],
+    [
+      "国考/2025/申论-行政执法.md",
+      5
+    ],
+    [
+      "省考/陕西/2020/申论-A类.md",
+      5
+    ],
+    [
+      "省考/陕西/2021/申论-A类.md",
+      5
+    ],
+    [
+      "国考/2017/申论-副省级.md",
+      4
+    ],
+    [
+      "国考/2017/申论-地市级.md",
+      4
+    ]
+  ]
+}
