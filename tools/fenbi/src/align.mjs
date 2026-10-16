@@ -2,6 +2,7 @@ import { load } from 'cheerio';
 import { createHash } from 'node:crypto';
 import { readFile, realpath } from 'node:fs/promises';
 import path from 'node:path';
+import { publicUrl } from './config.mjs';
 
 const sha = value => createHash('sha256').update(value).digest('hex');
 const str = value => value == null ? '' : String(value);
@@ -124,9 +125,128 @@ async function compareImages(source, repository, doc, options) {
   } catch { return result('unknown', 'image-file-could-not-be-verified'); }
 }
 
+const DIMENSION_NAMES = ['qid', 'number', 'stem', 'options', 'materials', 'answer', 'explanation', 'images'];
+const PAPER_CHECKS = ['questionCount', 'qidSet', 'order', 'orderById', 'materialCount'];
+const emptyCounts = () => ({ same: 0, different: 0, unknown: 0, not_compared: 0 });
+
+/**
+ * Collapse the four per-row observation states into one explicit disposition. A dimension with
+ * nothing but `not_compared` rows is inapplicable here (for example essay options, or a question-ID
+ * namespace the repository does not share); a dimension with no comparable row at all is unknown,
+ * never silently absent. Callers must never read a missing dimension as a pass.
+ */
+function dispositionOf(counts) {
+  if (counts.same + counts.different + counts.unknown === 0) return 'not_applicable';
+  if (counts.different > 0) return 'conflicting';
+  if (counts.same > 0 && counts.unknown === 0) return 'verified';
+  return counts.same > 0 ? 'partial' : 'unknown';
+}
+
+const paperDisposition = (item) => ({ same: 'verified', different: 'conflicting', unknown: 'unknown',
+  not_compared: 'not_applicable' }[item?.status] ?? 'unknown');
+
+const MANUAL_METHOD = /^[\w .:/-]{0,64}$/u;
+// Manual evidence covers a dimension only when every matched question carries an agreeing record;
+// a single confirmed answer must not read as "the whole paper's answers were observed".
+const manualDispositionOf = (records, matchedQuestions) => {
+  if (!records.length) return 'none';
+  if (records.some((record) => record.status === 'conflicting')) return 'conflicting';
+  const verified = records.filter((record) => record.status === 'verified').length;
+  return verified > 0 && verified >= matchedQuestions ? 'verified' : 'partial';
+};
+
+/**
+ * Operator-observed answer/explanation evidence for pages the framework itself cannot read.
+ * Binding is strict: a record must resolve to exactly one captured source question that the
+ * automated pass also matched. Manual records are reported alongside — never merged into — the
+ * automated counts, so they can never turn the automated verdict into a pass. Only hashes and
+ * lengths of the observed value reach the report, keeping it free of question text.
+ */
+function normalizeManualEvidence(document, questions, targetBySource) {
+  const source = document.questions || [], result = { answer: [], explanation: [] };
+  for (const entry of Array.isArray(document.manualEvidence) ? document.manualEvidence : []) {
+    if (!entry || !['answer', 'explanation'].includes(entry.dimension)) continue;
+    const record = { dimension: entry.dimension, questionId: entry.questionId == null ? null : str(entry.questionId),
+      sourceNumber: Number.isInteger(entry.number) ? entry.number : null,
+      method: MANUAL_METHOD.test(str(entry.method)) ? str(entry.method) : null,
+      operator: MANUAL_METHOD.test(str(entry.operator)) ? str(entry.operator) : null,
+      observedAt: Number.isNaN(Date.parse(entry.observedAt)) ? null : new Date(entry.observedAt).toISOString(),
+      observedUrl: null, status: 'incomplete', reason: null,
+      repositoryId: null, repositoryNumber: null, matchMethod: null,
+      valueLength: typeof entry.value === 'string' ? entry.value.length : null,
+      valueSha256: typeof entry.value === 'string' ? sha(entry.value) : null };
+    // Observed deep links may carry credentials; keep only what publicUrl would persist.
+    try { record.observedUrl = publicUrl(entry.observedUrl); } catch { record.observedUrl = null; }
+    const candidates = record.questionId !== null ? source.filter((q) => str(q.id) === record.questionId)
+      : record.sourceNumber !== null ? source.filter((q) => q.number === record.sourceNumber) : [];
+    const target = candidates.length === 1 ? targetBySource.get(candidates[0]) : null;
+    if (typeof entry.value !== 'string' || !entry.value.trim() || !record.observedAt || !record.method) record.reason = 'incomplete-manual-evidence-record';
+    else if (candidates.length !== 1) { record.status = 'unbound'; record.reason = candidates.length > 1 ? 'ambiguous-source-question' : 'no-captured-source-question'; }
+    else if (!target) { record.status = 'unmatched-source'; record.reason = 'source-question-was-not-matched-to-the-repository'; }
+    else {
+      const expected = normalizeComparisonText(entry.dimension === 'answer' ? target.answerHtml : target.explanationHtml).strict;
+      record.repositoryId = target.id || null; record.repositoryNumber = target.number;
+      record.matchMethod = questions.find((row) => row.repositoryId === target.id && row.sourceNumber === candidates[0].number)?.matchMethod ?? null;
+      if (!expected) { record.status = 'conflicting'; record.reason = 'repository-content-absent'; }
+      else { record.status = normalizeComparisonText(entry.value).strict === expected ? 'verified' : 'conflicting'; record.reason = 'manual-value-compared-with-repository'; }
+    }
+    result[entry.dimension].push(record);
+  }
+  return result;
+}
+
+/** A CLI gate must fail closed: only a fully verified alignment may exit 0. */
+export function alignmentExitCode(report) {
+  return report?.verification?.verdict === 'verified' ? 0 : 2;
+}
+
+/**
+ * Build the explicit verdict surface. Every dimension is always present with zeroed counts, so a
+ * report with no matched question can never be read as "no differences found".
+ */
+function buildVerification({ dimensions, paper, manual, matched, unmatchedSource, unmatchedRepository }) {
+  const entries = Object.fromEntries(DIMENSION_NAMES.map((name) => [name, { counts: dimensions[name] ?? emptyCounts(), manual: { disposition: 'none', records: [] } }]));
+  for (const name of DIMENSION_NAMES) entries[name].disposition = dispositionOf(entries[name].counts);
+  for (const name of ['answer', 'explanation']) entries[name].manual = { matchedQuestions: matched,
+    disposition: manualDispositionOf(manual[name], matched), records: manual[name] };
+  const checks = Object.fromEntries(PAPER_CHECKS.map((name) => [name, { ...paper[name], disposition: paperDisposition(paper[name]) }]));
+  const all = [...Object.keys(entries).map((name) => ({ name, disposition: entries[name].disposition })),
+    ...PAPER_CHECKS.map((name) => ({ name, disposition: checks[name].disposition }))];
+  // `not_applicable` never blocks: a paper with no images, or a question-ID namespace the
+  // repository does not share, has nothing here to verify. It is listed separately instead.
+  const comparable = all.filter((item) => item.disposition !== 'not_applicable');
+  // Per-question conflicts are evidence even from a partial capture. Paper-level checks are not:
+  // when some rows stayed unmatched an ID-set difference is an artefact of the gap, so those
+  // checks are still reported but do not by themselves decide the verdict.
+  const rowConflict = Object.keys(entries).some((name) => entries[name].disposition === 'conflicting');
+  const incomplete = !matched || unmatchedSource > 0 || unmatchedRepository > 0;
+  const verdict = rowConflict ? 'conflicting'
+    : incomplete ? 'unknown'
+      : PAPER_CHECKS.some((name) => checks[name].disposition === 'conflicting') ? 'conflicting'
+        : comparable.length && comparable.every((item) => item.disposition === 'unknown') ? 'unknown'
+          : comparable.some((item) => item.disposition !== 'verified') ? 'partial' : 'verified';
+  return { schemaVersion: 1,
+    states: ['verified', 'partial', 'conflicting', 'unknown', 'not_applicable'],
+    definitions: {
+      verified: 'Every comparable row on both sides observed the same content.',
+      partial: 'Some rows were verified; others were never observed and remain unverified.',
+      conflicting: 'Observed on both sides and disagreeing, including a repository body that is absent.',
+      unknown: 'Nothing could be verified, or the papers could not be matched row for row.',
+      not_applicable: 'Nothing to compare in this pairing, such as a paper with no images or a question-ID namespace the repository does not share. Neither a pass nor a known gap; listed separately in notApplicable and never silently dropped.',
+    },
+    requirement: 'Answers and explanations are verified only by observed content on both sides. Manually observed evidence is reported under dimension.manual and never changes these automated counts, so it can never produce a pass on its own.',
+    dimensions: entries, paper: checks,
+    unmatched: { source: unmatchedSource, repository: unmatchedRepository },
+    unverified: all.filter((item) => ['unknown', 'partial', 'conflicting'].includes(item.disposition)).map((item) => item.name),
+    notApplicable: all.filter((item) => item.disposition === 'not_applicable').map((item) => item.name),
+    verdict,
+    limitation: 'Machine alignment measures observed equivalence between a capture and a repository paper. Manual evidence is never merged into the automated counts.',
+  };
+}
+
 /** Read-only comparison. Reports contain identifiers/statuses, never question text or credentials. */
 export async function comparePaper(document, markdownText, options = {}) {
-  const repo = parseRepositoryPaper(markdownText), source = document.questions || [], matched = new Set(), questions = [];
+  const repo = parseRepositoryPaper(markdownText), source = document.questions || [], matched = new Set(), questions = [], targetBySource = new Map();
   const repositoryQuestionIdNamespace = options.repositoryQuestionIdNamespace ?? 'repository-qid';
   // Legacy callers historically provide repository qids. An explicitly declared
   // DOM key namespace must never be treated as those numeric repository IDs.
@@ -148,6 +268,7 @@ export async function comparePaper(document, markdownText, options = {}) {
         matchMethod: null, status: 'unmatched', reason: candidates.length > 1 ? 'ambiguous-match' : 'no-safe-unique-match' }); continue;
     }
     matched.add(target);
+    targetBySource.set(q, target);
     const sourceMaterials = (q.materialIds || []).map(id => (document.materials || []).find(m => str(m.id) === str(id)));
     const repositoryMaterials = target.materialIds.map(id => repo.materials.find(m => m.id === id));
     const materialResults = sourceMaterials.map((m, index) => m && repositoryMaterials[index]
@@ -179,9 +300,9 @@ export async function comparePaper(document, markdownText, options = {}) {
   const completeIds = allSourceIds.every(Boolean) && allRepoIds.every(Boolean);
   const uniqueSourceIds = duplicateIds(allSourceIds), uniqueRepoIds = duplicateIds(allRepoIds);
   const idSetEqual = completeIds && !uniqueSourceIds.length && !uniqueRepoIds.length && allSourceIds.length === allRepoIds.length && allSourceIds.every(id => allRepoIds.includes(id));
-  const dimensions = {};
+  const dimensions = Object.fromEntries(DIMENSION_NAMES.map((name) => [name, emptyCounts()]));
   for (const row of questions.filter(q => q.status === 'matched')) for (const [name, value] of Object.entries(row.dimensions)) {
-    dimensions[name] ??= { same: 0, different: 0, unknown: 0, not_compared: 0 }; dimensions[name][value.status]++;
+    (dimensions[name] ??= emptyCounts())[value.status]++;
   }
   const countKnown = Number.isInteger(document.expected?.questions);
   const sourceMaterialCountKnown = Number.isInteger(document.expected?.materials);
@@ -192,21 +313,33 @@ export async function comparePaper(document, markdownText, options = {}) {
     : !source.length || numberedRows.length !== source.length || duplicateNumbers.length
       ? result('unknown', 'not-all-source-questions-uniquely-matched-with-explicit-numbers')
       : result('same', 'all-matched-explicit-source-and-repository-numbers-equal');
+  const paper = {
+    questionCount: !countKnown ? result('unknown', 'source-total-not-observed')
+      : document.expected.questions !== source.length ? result('unknown', 'source-capture-incomplete', { expected: document.expected.questions, observed: source.length })
+        : result(source.length === repo.questions.length ? 'same' : 'different', 'verified-source-total-comparison'),
+    qidSet: !compatibleIds ? result('not_compared', 'question-id-namespaces-incompatible')
+      : !completeIds ? result('unknown', 'not-all-question-ids-observed') : result(idSetEqual ? 'same' : 'different', 'question-id-set-comparison'),
+    order: orderByNumber,
+    orderById: !compatibleIds ? result('not_compared', 'question-id-namespaces-incompatible')
+      : !completeIds ? result('unknown', 'not-all-question-ids-observed') : result(idSetEqual && allSourceIds.every((id, index) => id === allRepoIds[index]) ? 'same' : 'different', 'captured-id-sequence-comparison'),
+    materialCount: sourceMaterialCountKnown ? result(document.expected.materials === repo.materials.length ? 'same' : 'different', 'explicit-source-material-total-comparison') : result('unknown', 'source-material-total-not-observed'),
+  };
+  const unmatchedSource = questions.filter(q => q.status === 'unmatched').length;
+  const unmatchedRepository = repo.questions.length - matched.size;
+  const verification = buildVerification({ dimensions, paper, manual: normalizeManualEvidence(document, questions, targetBySource),
+    matched: matched.size, unmatchedSource, unmatchedRepository });
   return { schemaVersion: 1, identity: { sourcePaperId: str(document.identity?.id) || null,
-    sourceQuestionIdNamespace, repositoryQuestionIdNamespace },
-    paper: {
-      questionCount: !countKnown ? result('unknown', 'source-total-not-observed')
-        : document.expected.questions !== source.length ? result('unknown', 'source-capture-incomplete', { expected: document.expected.questions, observed: source.length })
-          : result(source.length === repo.questions.length ? 'same' : 'different', 'verified-source-total-comparison'),
-      qidSet: !compatibleIds ? result('not_compared', 'question-id-namespaces-incompatible')
-        : !completeIds ? result('unknown', 'not-all-question-ids-observed') : result(idSetEqual ? 'same' : 'different', 'question-id-set-comparison'),
-      order: orderByNumber,
-      orderById: !compatibleIds ? result('not_compared', 'question-id-namespaces-incompatible')
-        : !completeIds ? result('unknown', 'not-all-question-ids-observed') : result(idSetEqual && allSourceIds.every((id, index) => id === allRepoIds[index]) ? 'same' : 'different', 'captured-id-sequence-comparison'),
-      materialCount: sourceMaterialCountKnown ? result(document.expected.materials === repo.materials.length ? 'same' : 'different', 'explicit-source-material-total-comparison') : result('unknown', 'source-material-total-not-observed'),
-    }, summary: { sourceQuestions: source.length, repositoryQuestions: repo.questions.length, matched: matched.size,
-      unmatchedSource: questions.filter(q => q.status === 'unmatched').length, unmatchedRepository: repo.questions.length - matched.size,
-      duplicateSourceIds: uniqueSourceIds, duplicateRepositoryIds: uniqueRepoIds, dimensionCounts: dimensions,
-      allQualityPassed: false, limitation: 'Alignment measures observed equivalence; it does not certify authoritative exam accuracy or unobserved content.' },
+    sourceQuestionIdNamespace, repositoryQuestionIdNamespace,
+    // An undeclared namespace is treated as the repository's own; say so instead of implying a check.
+    questionIdNamespaceAssumed: !document.identity?.questionIdNamespace },
+    paper, verification,
+    summary: { sourceQuestions: source.length, repositoryQuestions: repo.questions.length, matched: matched.size,
+      unmatchedSource, unmatchedRepository,
+      duplicateSourceIds: uniqueSourceIds, duplicateRepositoryIds: uniqueRepoIds,
+      // Always all eight dimensions, zero-filled, so "no differences" cannot pass vacuously.
+      dimensionCounts: Object.fromEntries(Object.entries(verification.dimensions).map(([name, entry]) => [name, entry.counts])),
+      verdict: verification.verdict, unverified: verification.unverified,
+      allQualityPassed: verification.verdict === 'verified',
+      limitation: 'Alignment measures observed equivalence; it does not certify authoritative exam accuracy or unobserved content.' },
     questions, unmatchedRepository: repo.questions.filter(q => !matched.has(q)).map(q => ({ id: q.id || null, number: q.number })) };
 }
