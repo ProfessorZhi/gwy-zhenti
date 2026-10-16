@@ -8,6 +8,7 @@ import { captureDom, observeReadResponses, downloadAssets, openSession } from '.
 import { createDocument, absorbPayload, collectAssetUrls } from '../src/model.mjs';
 import { validateDocument } from '../src/validate.mjs';
 import { exportCandidate } from '../src/render.mjs';
+import { runBounded } from '../src/schedule.mjs';
 
 const channel = process.env.FENBI_TEST_BROWSER_CHANNEL || 'chrome';
 // Playwright resolves channel 'chrome' only to a system-wide install (on Linux, /opt/google/chrome/chrome).
@@ -63,4 +64,63 @@ test('installed browser: dedicated profile preserves synthetic cookies across re
   const second = await openSession(config, { headless: true });
   try { assert.ok((await second.context.cookies()).some(cookie => cookie.name === 'synthetic_test_cookie')); }
   finally { await second.close(); }
+});
+
+// Two papers at once, inside the one profile. Synthetic content only; the pages' own route handlers
+// take precedence for fenbi hosts, and anything else falls back to the context-level read-only
+// guard — which is how the guard is shown to still cover a page opened after the session started.
+test('installed browser: two pages of one profile capture different papers concurrently, offline only', async t => {
+  const profileDir = await fs.mkdtemp(path.join(os.tmpdir(), 'gwy-fenbi-concurrent-'));
+  t.after(() => fs.rm(profileDir, { recursive: true, force: true }));
+  // Read the override here rather than relying on any other change to this file, so this test is
+  // self-contained and can land before or after a separate browser-path change.
+  const explicitBrowser = process.env.FENBI_TEST_BROWSER_EXECUTABLE || undefined;
+  const session = await openSession({ profileDir, channel, ...(explicitBrowser ? { executablePath: explicitBrowser } : {}),
+    entryUrl: 'https://www.fenbi.com/spa/tiku' }, { headless: true });
+  try {
+    const papers = [{ id: 'fixture-c', title: '离线合成C卷', questions: 3 }, { id: 'fixture-a', title: '离线合成A卷', questions: 2 }];
+    const payloadFor = (paper) => ({ paperId: paper.id, questionCount: paper.questions, materialCount: 0,
+      questions: Array.from({ length: paper.questions }, (_unused, index) => ({ id: `${paper.id}-q${index + 1}`, number: index + 1,
+        content: `合成题干${index + 1}`, options: [{ label: 'A', content: '甲' }, { label: 'B', content: '乙' }], answer: 'A', analysis: '离线合成解析，不是真题。' })) });
+
+    const pages = [session.page, await session.context.newPage()];
+    await Promise.all(pages.map((page, index) => page.route('**/*', async route => {
+      const url = new URL(route.request().url());
+      if (url.hostname === 'tiku.fenbi.com') return route.fulfill({ contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: JSON.stringify(payloadFor(papers[index])) });
+      if (url.hostname === 'www.fenbi.com') return route.fulfill({ contentType: 'text/html; charset=utf-8',
+        body: `<meta charset="utf-8"><title>${papers[index].title}</title><main class="question"><p>合成题干</p></main>`
+          + '<script>fetch("https://tiku.fenbi.com/api/xingce/questions").then(r=>r.json()).then(()=>document.documentElement.dataset.ready="yes")</script>' });
+      return route.fallback();
+    })));
+
+    const documents = papers.map(paper => createDocument({ id: paper.id, title: paper.title, subject: 'xingce', year: 2025, area: '江苏', variant: 'C类' },
+      { url: `https://www.fenbi.com/spa/tiku/${paper.id}` }));
+    const observers = pages.map((page, index) => observeReadResponses(page, (body, meta) => absorbPayload(documents[index], body, meta)));
+    const titles = [];
+    const run = await runBounded([0, 1], async (index, { slot }) => {
+      const page = pages[slot];
+      await page.goto(documents[index].source.url, { waitUntil: 'domcontentloaded' });
+      await page.waitForFunction(() => document.documentElement.dataset.ready === 'yes');
+      await observers[index].flush();
+      titles.push(await page.title());
+      return documents[index].questions.length;
+    }, { concurrency: 2 });
+    for (const observer of observers) observer.stop();
+
+    assert.equal(run.concurrency, 2);
+    assert.equal(run.failures.length, 0, 'neither paper may fail the other');
+    assert.deepEqual([...titles].sort(), ['离线合成A卷', '离线合成C卷']);
+    // Each page observed only its own paper: independent listeners, independent documents.
+    assert.equal(documents[0].questions.length, 3);
+    assert.equal(documents[1].questions.length, 2);
+    assert.equal(observers[0].stats.accepted, 1);
+    assert.equal(observers[1].stats.accepted, 1);
+    assert.ok(documents[0].questions.every((q) => q.id.startsWith('fixture-c')));
+    assert.ok(documents[1].questions.every((q) => q.id.startsWith('fixture-a')));
+
+    // The guard installed when the session opened still covers the page created afterwards.
+    const outcome = await pages[1].evaluate(async () => { try { await fetch('https://blocked.invalid/anything'); return 'allowed'; } catch { return 'blocked'; } });
+    assert.equal(outcome, 'blocked');
+    assert.ok(session.guardStats.blockedHost > 0, 'the guard recorded the blocked host');
+  } finally { await session.close(); }
 });

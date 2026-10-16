@@ -151,7 +151,7 @@ function observationTarget(response) {
 export function observeReadResponses(page, onPayload, { maxResponseBytes = 8 * 1024 * 1024 } = {}) {
   if (!Number.isSafeInteger(maxResponseBytes) || maxResponseBytes < 1) throw error('INVALID_RESPONSE_LIMIT', 'Response byte limit must be a positive integer.');
   const pending = new Set();
-  const stats = { observed: 0, accepted: 0, oversized: 0, unauthorized: 0, captcha: 0, failed: 0, nonJson: 0 };
+  const stats = { observed: 0, accepted: 0, oversized: 0, unauthorized: 0, captcha: 0, rateLimited: 0, failed: 0, nonJson: 0 };
   let stopped = false;
   async function inspect(response) {
     const meta = observationTarget(response);
@@ -159,6 +159,8 @@ export function observeReadResponses(page, onPayload, { maxResponseBytes = 8 * 1
     stats.observed += 1;
     const status = response.status();
     if (status === 401 || status === 403) { stats.unauthorized += 1; return; }
+    // Counted separately from generic failures so a scheduler can back off instead of only retrying.
+    if (status === 429 || status === 503) { stats.rateLimited += 1; return; }
     if (/captcha|verifycode|verification/i.test(parsedUrl(response.url()).pathname)) { stats.captcha += 1; return; }
     if (status < 200 || status >= 300) { stats.failed += 1; return; }
     const headers = response.headers();

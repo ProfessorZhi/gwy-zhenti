@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { MAX_CONCURRENCY } from './schedule.mjs';
 
 export const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 export const WORK = path.join(REPO, 'work', 'fenbi');
@@ -8,6 +9,8 @@ export const DEFAULTS = Object.freeze({
   profileName: 'fenbi-main', channel: 'chrome', executablePath: null,
   entryUrl: 'https://www.fenbi.com/spa/tiku', timeoutMs: 45000,
   delayMs: 800, settleMs: 1500, maxPages: 250,
+  // Pages inside the single persistent context. 1 = the original strictly sequential behaviour.
+  concurrency: 1,
   contentSelector: null, nextQuestionSelector: null, explanationSelector: null,
   domAdapter: null,
   fieldMap: {}, scope: { fromYear: 2016, toYear: new Date().getFullYear(),
@@ -53,7 +56,8 @@ export async function loadConfig(filename) {
   if (!['chrome', 'msedge', 'chromium'].includes(config.channel)) throw new Error('Unsupported browser channel');
   if (config.domAdapter !== null && config.domAdapter !== 'fenbi-xingce-v1') throw new Error('Unsupported DOM adapter');
   if (config.executablePath !== null && (typeof config.executablePath !== 'string' || !path.isAbsolute(config.executablePath))) throw new Error('executablePath must be an absolute installed browser path');
-  for (const [key, min, max] of [['timeoutMs', 1000, 120000], ['delayMs', 200, 60000], ['settleMs', 100, 30000], ['maxPages', 1, 1000]]) {
+  for (const [key, min, max] of [['timeoutMs', 1000, 120000], ['delayMs', 200, 60000], ['settleMs', 100, 30000], ['maxPages', 1, 1000],
+    ['concurrency', 1, MAX_CONCURRENCY]]) {
     if (!Number.isInteger(config[key]) || config[key] < min || config[key] > max) throw new Error(`Invalid ${key}`);
   }
   for (const key of ['contentSelector', 'nextQuestionSelector', 'explanationSelector']) {

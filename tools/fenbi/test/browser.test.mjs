@@ -257,3 +257,53 @@ test('captureDom still strips account state, handlers and credential-shaped ques
   assert.equal(dom.images.length, 1);
   assert.equal(dom.blocked, null, 'a well-formed page reports no capture block');
 });
+
+// ── concurrency safety: one guard for every page of one profile ─────────────────────────────
+// Extra pages are created inside the single persistent context, so the read-only route guard is
+// installed once and covers them all. Nothing here opens a real browser or touches an account.
+
+test('the read-only guard is installed once per context, so every concurrently opened page is covered', async () => {
+  const profile = await mkdtemp(path.join(os.tmpdir(), 'fenbi-profile-'));
+  const context = new EventEmitter();
+  context.setDefaultTimeout = () => {};
+  context.newPage = async () => ({ goto: async () => {} });
+  context.close = async () => {};
+  const routes = [];
+  context.route = async (pattern, handler) => routes.push({ pattern, handler });
+  const launcher = { launchPersistentContext: async () => context };
+  const config = { profileDir: profile, channel: 'chrome', entryUrl: 'https://www.fenbi.com/spa/tiku' };
+  try {
+    const session = await openSession(config, { launcher });
+    assert.equal(routes.length, 1, 'exactly one context-level route, never one per page');
+    assert.equal(routes[0].pattern, '**/*');
+    const aborts = [], continues = [];
+    const send = (url, method) => routes[0].handler({
+      request: () => ({ url: () => url, method: () => method, isNavigationRequest: () => false }),
+      abort: async () => aborts.push(url), continue: async () => continues.push(url),
+    });
+    // The second batch's papers have no existing exercise, so they would need exactly these writes.
+    await send('https://tiku.fenbi.com/api/xingce/exercises', 'POST');
+    await send('https://tiku.fenbi.com/api/xingce/exercises/4189916/answers', 'POST');
+    await send('https://tiku.fenbi.com/api/xingce/exercises/4189916/submit', 'PUT');
+    await send('https://tiku.fenbi.com/api/xingce/papers/v2?labelId=1&toPage=0&pageSize=15', 'GET');
+    assert.deepEqual(aborts, ['https://tiku.fenbi.com/api/xingce/exercises',
+      'https://tiku.fenbi.com/api/xingce/exercises/4189916/answers',
+      'https://tiku.fenbi.com/api/xingce/exercises/4189916/submit']);
+    assert.equal(continues.length, 1, 'only the observed read-only list request is allowed through');
+    assert.equal(session.guardStats.blockedWrites, 3, 'guard statistics are shared by the whole context');
+    await session.close();
+  } finally { await rm(profile, { recursive: true, force: true }); }
+});
+
+test('429 and 503 are counted as rate limits so a scheduler can back off instead of retrying blindly', async () => {
+  const page = new EventEmitter(), received = [];
+  const observer = observeReadResponses(page, (payload, meta) => received.push(meta));
+  page.emit('response', response('https://tiku.fenbi.com/api/xingce/papers', { message: 'slow down' }, { status: 429 }));
+  page.emit('response', response('https://tiku.fenbi.com/api/xingce/papers', { message: 'unavailable' }, { status: 503 }));
+  page.emit('response', response('https://tiku.fenbi.com/api/xingce/papers', { message: 'boom' }, { status: 500 }));
+  await observer.flush(); observer.stop();
+  assert.equal(observer.stats.rateLimited, 2);
+  assert.equal(observer.stats.failed, 1);
+  assert.equal(observer.stats.accepted, 0);
+  assert.equal(received.length, 0, 'a rate-limited response is never treated as data');
+});
