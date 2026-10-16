@@ -10,11 +10,14 @@ import { validateDocument } from '../src/validate.mjs';
 import { exportCandidate } from '../src/render.mjs';
 
 const channel = process.env.FENBI_TEST_BROWSER_CHANNEL || 'chrome';
+// Playwright resolves channel 'chrome' only to a system-wide install (on Linux, /opt/google/chrome/chrome).
+// A user-scope Chrome for Testing build is not discoverable by channel name, so allow an explicit path.
+const executablePath = process.env.FENBI_TEST_BROWSER_EXECUTABLE || undefined;
 const pixel = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jQnQAAAAASUVORK5CYII=', 'base64');
 
 test('installed browser: observed JSON → normalized paper → actual image decode → validated Markdown, offline only', async t => {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'gwy-fenbi-browser-'));
-  const browser = await chromium.launch({ channel, headless: true });
+  const browser = await chromium.launch({ channel, headless: true, ...(executablePath ? { executablePath } : {}) });
   t.after(async () => { await browser.close(); await fs.rm(directory, { recursive: true, force: true }); });
   const page = await browser.newPage();
   const identity = { id: 'synthetic-paper', title: '2025江苏行测C类（离线合成测试）', subject: 'xingce', year: 2025, area: '江苏', variant: 'C类' };
@@ -53,7 +56,7 @@ test('installed browser: observed JSON → normalized paper → actual image dec
 test('installed browser: dedicated profile preserves synthetic cookies across restarts, without visiting a site', async t => {
   const profileDir = await fs.mkdtemp(path.join(os.tmpdir(), 'gwy-fenbi-profile-'));
   t.after(() => fs.rm(profileDir, { recursive: true, force: true }));
-  const config = { profileDir, channel, entryUrl: 'https://www.fenbi.com/spa/tiku' };
+  const config = { profileDir, channel, ...(executablePath ? { executablePath } : {}), entryUrl: 'https://www.fenbi.com/spa/tiku' };
   const first = await openSession(config, { headless: true });
   try { await first.context.addCookies([{ name: 'synthetic_test_cookie', value: 'not-a-credential', domain: '.fenbi.com', path: '/', expires: Math.floor(Date.now() / 1000) + 3600, secure: true }]); }
   finally { await first.close(); }
