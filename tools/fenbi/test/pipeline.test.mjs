@@ -4,7 +4,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import { loadConfig, publicUrl, safeChild, WORK } from '../src/config.mjs';
-import { digest, jobKey, writeJson, acquireLock, resumeBundle } from '../src/store.mjs';
+import { digest, jobKey, readJson, writeJson, acquireLock, resumeBundle } from '../src/store.mjs';
+import { MAX_CONCURRENCY, clampConcurrency, createControl, createHostThrottle, createSerialQueue, runBounded } from '../src/schedule.mjs';
 import { makePlan } from '../src/plan.mjs';
 import { createDocument, absorbPayload } from '../src/model.mjs';
 import { validateDocument } from '../src/validate.mjs';
@@ -173,4 +174,157 @@ test('HTTP login errors, HTML envelopes, oversized JSON and captcha cannot count
     const result = await replayReads(context, [url], [url], () => assert.fail('must not accept'), { sleep: async () => {} });
     assert.equal(result[0].outcome, expected);
   }
+});
+
+// ── bounded concurrency for one persistent profile ─────────────────────────────────────────
+// Offline only: no browser, no account, no network. These pin the properties that make a second
+// page inside the same context safe, and the properties that must stop it.
+
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+test('concurrency is clamped to one page minimum and three pages maximum', () => {
+  assert.equal(MAX_CONCURRENCY, 3);
+  assert.equal(clampConcurrency(1), 1);
+  assert.equal(clampConcurrency(2), 2);
+  assert.equal(clampConcurrency(MAX_CONCURRENCY), MAX_CONCURRENCY);
+  for (const value of [4, 99, 0, -1, 1.5, 'two', null, undefined]) {
+    const clamped = clampConcurrency(value);
+    assert.ok(clamped >= 1 && clamped <= MAX_CONCURRENCY, `${value} -> ${clamped}`);
+  }
+  assert.equal(clampConcurrency(4), MAX_CONCURRENCY);
+  assert.equal(clampConcurrency('3'), 3);
+  assert.equal(clampConcurrency(undefined, 2), 2);
+});
+
+test('a configured concurrency above the ceiling is rejected rather than silently honoured', async (t) => {
+  const dir = await temporary(t), filename = path.join(dir, 'config.json');
+  await writeJson(filename, { concurrency: 2 });
+  assert.equal((await loadConfig(filename)).concurrency, 2);
+  await writeJson(filename, { concurrency: MAX_CONCURRENCY });
+  assert.equal((await loadConfig(filename)).concurrency, MAX_CONCURRENCY);
+  for (const bad of [0, -1, MAX_CONCURRENCY + 1, 1.5, 'two']) {
+    await writeJson(filename, { concurrency: bad });
+    await assert.rejects(loadConfig(filename), /Invalid concurrency/, `concurrency=${bad}`);
+  }
+  assert.equal((await loadConfig()).concurrency, 1, 'default stays strictly sequential');
+});
+
+test('the runner never exceeds its cap, keeps order, and gives each task an exclusive slot', async () => {
+  const active = new Set(), duplicated = [], order = [];
+  let inFlight = 0, peak = 0;
+  const items = [1, 2, 3, 4, 5, 6, 7];
+  const run = await runBounded(items, async (item, { slot }) => {
+    if (active.has(slot)) duplicated.push(slot);
+    active.add(slot); inFlight += 1; peak = Math.max(peak, inFlight);
+    await delay(4);
+    order.push(item); inFlight -= 1; active.delete(slot);
+    return item * 10;
+  }, { concurrency: 2 });
+  assert.equal(run.concurrency, 2);
+  assert.ok(peak <= 2, `peak in flight was ${peak}`);
+  assert.deepEqual(duplicated, [], 'a slot must never hold two tasks at once — it owns one page');
+  assert.deepEqual(run.results.map((entry) => entry.value), items.map((item) => item * 10));
+  assert.equal(run.failures.length, 0);
+  assert.deepEqual(run.skipped, []);
+  assert.equal(run.stopped, false);
+  assert.equal(order.length, items.length);
+});
+
+test('concurrency 1 stays strictly sequential, matching the original behaviour', async () => {
+  let inFlight = 0, peak = 0;
+  await runBounded([1, 2, 3, 4], async () => { inFlight += 1; peak = Math.max(peak, inFlight); await delay(2); inFlight -= 1; }, { concurrency: 1 });
+  assert.equal(peak, 1);
+});
+
+test('one failing paper never aborts the others, and a stop leaves the rest unstarted', async () => {
+  const isolated = await runBounded([1, 2, 3, 4], async (item) => {
+    if (item === 2) throw Object.assign(new Error('boom'), { code: 'TASK_FAILED' });
+    return item;
+  }, { concurrency: 2 });
+  assert.equal(isolated.failures.length, 1);
+  assert.equal(isolated.failures[0].item, 2);
+  assert.deepEqual(isolated.results.map((entry) => entry.ok), [true, false, true, true]);
+  assert.deepEqual(isolated.skipped, []);
+
+  for (const reason of ['authentication-required', 'captcha', 'rate-limited']) {
+    const control = createControl(), started = [];
+    const run = await runBounded([1, 2, 3, 4, 5], async (item) => {
+      started.push(item);
+      if (item === 2) control.stop(reason);
+      await delay(1);
+      return item;
+    }, { concurrency: 1, control });
+    assert.equal(run.stopped, true);
+    assert.equal(run.reason, reason);
+    assert.deepEqual(started, [1, 2], `${reason} must not launch further papers`);
+    assert.deepEqual(run.skipped, [2, 3, 4]);
+  }
+});
+
+test('one host is spaced by the shared gate and two hosts never block each other', async () => {
+  // The gate hands out consecutive time slots, so measure the waits it imposed and the span covered.
+  const sleeps = [];
+  let clock = 0;
+  const throttle = createHostThrottle({ minIntervalMs: 1000, now: () => clock, sleep: async (ms) => { sleeps.push(ms); clock += ms; } });
+  await Promise.all([1, 2, 3].map(() => throttle.acquire('tiku.fenbi.com')));
+  assert.deepEqual(sleeps, [1000, 1000], 'the second and third caller each wait one interval');
+  assert.equal(clock, 2000, 'three callers on one host span two intervals');
+  const before = clock, sleepsBefore = sleeps.length;
+  await throttle.acquire('img.fbstatic.cn');
+  assert.equal(clock, before, 'a different host is not held up by the first host queue');
+  assert.equal(sleeps.length, sleepsBefore, 'its first request goes out with no wait at all');
+});
+
+test('429 and 503 widen the spacing, saturate the throttle, and decay back after clean reads', () => {
+  let clock = 0;
+  const throttle = createHostThrottle({ minIntervalMs: 500, maxIntervalMs: 4000, factor: 2, now: () => clock, sleep: async (ms) => { clock += ms; } });
+  assert.equal(throttle.saturated(), false);
+  assert.deepEqual([1, 2, 3].map((n) => throttle.penalize('tiku.fenbi.com').intervalMs), [1000, 2000, 4000]);
+  assert.equal(throttle.penalize('tiku.fenbi.com').intervalMs, 4000, 'the ceiling holds');
+  assert.equal(throttle.saturated(), true, 'three penalties on one host stop the run');
+  assert.equal(throttle.state().hosts['tiku.fenbi.com'].penalties, 4);
+  assert.equal(throttle.settle('tiku.fenbi.com'), 2000);
+  assert.equal(throttle.settle('tiku.fenbi.com'), 1000);
+  assert.equal(throttle.settle('tiku.fenbi.com'), 500);
+  assert.equal(throttle.saturated(), false, 'a recovered host is no longer saturated');
+  assert.equal(throttle.settle('tiku.fenbi.com'), null, 'settling an already-clean host is a no-op');
+});
+
+test('the shared registry is written one task at a time, so simultaneous pages cannot lose an update', async (t) => {
+  const url1 = 'https://tiku.fenbi.com/api/xingce/exercises/1/questions';
+  const url2 = 'https://tiku.fenbi.com/api/xingce/exercises/2/questions';
+  const events = [];
+
+  // Without the queue the two writes overlap — this is the regression being guarded against.
+  await Promise.all([1, 2].map(async (n) => { events.push(`raw-start${n}`); await delay(5); events.push(`raw-end${n}`); }));
+  assert.deepEqual(events, ['raw-start1', 'raw-start2', 'raw-end1', 'raw-end2']);
+  events.length = 0;
+
+  const dir = await temporary(t);
+  const filename = path.join(dir, 'observed-reads-fenbi-main.json');
+  const registry = new Set(['https://tiku.fenbi.com/api/xingce/papers?labelId=1']);
+  const serialize = createSerialQueue();
+  const write = () => serialize(async () => {
+    events.push('write-start'); await delay(5);
+    await writeJson(filename, { schemaVersion: 2, profileName: 'fenbi-main', urls: [...registry] });
+    events.push('write-end');
+  });
+  await Promise.all([
+    (async () => { registry.add(url1); await write(); })(),
+    (async () => { registry.add(url2); await write(); })(),
+  ]);
+  assert.deepEqual(events, ['write-start', 'write-end', 'write-start', 'write-end'], 'writes are serialised');
+  const saved = await readJson(filename, null);
+  assert.equal(saved.schemaVersion, 2);
+  assert.equal(saved.urls.length, 3);
+  assert.deepEqual([...saved.urls].sort(), ['https://tiku.fenbi.com/api/xingce/papers?labelId=1', url1, url2].sort());
+});
+
+test('a rejected concurrency flag cannot open more pages than the ceiling', async () => {
+  // The CLI clamps rather than trusting the flag; the ceiling is the same constant config enforces.
+  for (const flag of ['2', '3', '4', '99', '0', 'abc']) {
+    const clamped = clampConcurrency(flag);
+    assert.ok(clamped >= 1 && clamped <= MAX_CONCURRENCY, `--concurrency ${flag} -> ${clamped}`);
+  }
+  assert.equal(clampConcurrency('99'), MAX_CONCURRENCY);
 });
