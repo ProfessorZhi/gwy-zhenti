@@ -49,13 +49,49 @@ SOURCE_IDS = {
     "省考/浙江/2020/行测-B类.md": ("96455", "PR#27 paged directory, labelId=31"),
 }
 
-# Papers that have actually been compared against the vendor source. Only one
-# reaches a strict comparison today; everything else stays unknown by rule.
+# Papers that have actually been compared against the vendor source, and the
+# result. Everything absent from this table stays `unknown` by rule.
+#
+# Provenance: reports/FENBI-LIVE-TRIAL-20261016 (浙江2026C), and the live batch
+# reports FENBI-LIVE-FIRST/SECOND/THIRD-BATCH-20261017. The third batch captured
+# the three former gap papers after the operator authorised one exercise
+# initialisation each -- so "cannot capture" is no longer the blocker for them;
+# what the capture FOUND is now the finding.
 SOURCE_COMPARED = {
     "省考/浙江/2026/行测-C类.md": {
         "images": "partial",
         "note": "109/110 strict exact; q54 representation equivalence reviewed "
                 "separately; answers not exposed by the exercise view",
+    },
+    # captured 130, matched 118: the 12 formerly-missing numbers match by NUMBER
+    # but not by CONTENT. This is direct vendor evidence against the A-class
+    # donor transplant, so the dimension is conflicting, not merely unverified.
+    "省考/江苏/2025/行测-C类.md": {
+        "stem": "conflicting", "options": "conflicting", "number": "partial",
+        "images": "unknown",
+        "note": "captured 130 / matched 118; unmatchedRepository=12 at the SAME "
+                "numbers 27,29,35,36,37,42,75,77,78,80,81,85 (content differs, no "
+                "number offset). The 12 backfilled blocks came from the A-class "
+                "donor and do not match the vendor C-paper.",
+    },
+    # captured 135 / matched 131: the 4 missing numbers exist and are visible.
+    "省考/江苏/2024/行测-A类.md": {
+        "stem": "partial", "options": "partial", "number": "partial",
+        "images": "unknown",
+        "note": "captured 135 / matched 131; the 4 source-only questions are "
+                "exactly 76,96,110,111 -- the recorded gaps. Source evidence now "
+                "exists to fill them; the formal paper is unchanged.",
+    },
+    # captured 100 / matched 79: 69-75 exist, PLUS 14 same-number content
+    # differences and 7 material + 7 image differences that the manifest does
+    # not record at all.
+    "省考/广东/2020/行测-县级卷.md": {
+        "stem": "conflicting", "options": "conflicting", "number": "partial",
+        "materials": "conflicting", "images": "conflicting",
+        "note": "captured 100 / matched 79. The 7 recorded gaps 69-75 exist in the "
+                "source. Additionally 14 same-number content differences "
+                "(18,22,64,66,67,79,87,91,92,94,96,98,99,100) with 7 material and 7 "
+                "image differences -- NOT recorded anywhere in the manifest.",
     },
 }
 
@@ -246,10 +282,10 @@ def main():
                 "evidence": "ABSENT: no per-paper explanation count exists in this repository",
             },
             "labels": {
-                "stem": "verified" if compared else "unknown",
-                "options": "verified" if compared else "unknown",
-                "number": "verified" if compared else "unknown",
-                "materials": "verified" if compared else "unknown",
+                "stem": (compared or {}).get("stem", "verified" if compared else "unknown"),
+                "options": (compared or {}).get("options", "verified" if compared else "unknown"),
+                "number": (compared or {}).get("number", "verified" if compared else "unknown"),
+                "materials": (compared or {}).get("materials", "verified" if compared else "unknown"),
                 "images": (compared or {}).get("images", "unknown"),
                 "answer": "unknown",        # never established against source
                 "explanation": "unknown",   # no per-paper evidence exists at all
@@ -265,7 +301,8 @@ def main():
                 ("missing_answer", "missing_answer_numbers"),
                 ("source_analysis_disagreement", "source_analysis_disagreement_numbers"),
                 ("material_gap", "known_material_gaps"))},
-            "provenance": {"issues": m.get("issues") or [], "review_scope": m.get("review_scope")},
+            "provenance": {"issues": m.get("issues") or [], "review_scope": m.get("review_scope"),
+                           "source_comparison_note": (compared or {}).get("note")},
         })
 
     with open(args.out, "w", encoding="utf-8") as fh:
