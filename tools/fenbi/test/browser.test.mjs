@@ -5,6 +5,8 @@ import { mkdtemp, readFile, rm, access, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { openSession, requestPolicy, observeReadResponses, captureDom, downloadAssets } from '../src/browser.mjs';
+import { parseFenbiExamDom } from '../src/dom.mjs';
+import { sanitizeHtml } from '../src/privacy.mjs';
 
 test('capture guard blocks writes, external navigation, HTTP and deceptive hosts', () => {
   assert.equal(requestPolicy({ url: 'https://tiku.fenbi.com/api/xingce/papers', method: 'GET' }), null);
@@ -172,4 +174,86 @@ test('DOM lazy image references preserve safe CDN transforms and report missing 
   assert.equal(document.images[1].url, 'https://img.fbstatic.cn/b.png?height=400');
   assert.equal(document.blocked.missingImages, 1);
   assert.doesNotMatch(document.html, /private|token|data-src|srcset/);
+});
+
+// ── captureDom → DOM adapter contract ───────────────────────────────────────────────────────
+// The verified Xingce DOM adapter selects on `app-ti[data-question-key]`. captureDom removed
+// every unrecognised `data-*`, so the key never survived capture and the adapter returned zero
+// questions while chapter counters still declared the real total. These fixtures are synthetic:
+// no account, no network, no browser.
+
+const SYNTHETIC_SECRET = 'SYNTHETIC_PRIVATE_SESSION_VALUE';
+
+const examQuestion = (number, key, choices) =>
+  `<app-ti data-question-key="${key}" data-user-id="account-1" onclick="steal()" style="color:red">` +
+  `<div class="title-index">${number}.</div>` +
+  `<div class="question-choice-container" data-token="${SYNTHETIC_SECRET}"><p>离线合成题干${number}。</p>` +
+  `<app-choice-radio>${choices.map((label, index) =>
+    `<label class="choice-radio-label"><div class="input-radio">${label}</div><p class="input-text">选项${index + 1}</p></label>`).join('')}</app-choice-radio></div></app-ti>`;
+
+const examFragment = () =>
+  '<div class="tis-container">' +
+  '<div class="chapter-container">常识判断（2题）请选择唯一答案。</div>' +
+  `<div class="questions-single-container">${examQuestion(1, '3_1_beq2d', ['A', 'B', 'C', 'D'])}${examQuestion(2, '3_2_cfr9x', ['A', 'B'])}</div>` +
+  '<div class="chapter-container">资料分析（2题）根据材料作答。</div>' +
+  '<div class="resizable-container"><div class="left"><div class="materials-container"><div class="material-body">' +
+  '<div class="material-content">离线合成材料正文。<img data-src="https://img.fbstatic.cn/chart.png?width=700"></div>' +
+  '</div></div></div><div class="right"><div class="questions-container">' +
+  `${examQuestion(3, '4_1-zzz_01', ['A', 'B'])}${examQuestion(4, '4_2-zzz_02', ['A', 'B'])}` +
+  '</div></div></div>' +
+  `<script>fetch("https://tiku.fenbi.com/api/xingce/user/history")</script><input value="${SYNTHETIC_SECRET}"><button>交卷</button>` +
+  '</div>';
+
+const examPage = (fragment) => ({
+  url: () => 'https://www.fenbi.com/spa/tiku/synthetic-capture',
+  title: async () => 'synthetic',
+  locator: () => ({ count: async () => 1, evaluateAll: async () => [fragment] }),
+});
+
+const captureIdentity = { id: 'synthetic-capture', title: '离线合成卷', subject: 'xingce', year: 2026, area: '浙江', variant: 'C类' };
+
+test('captureDom keeps the composite question key so the verified DOM adapter still parses every question', async () => {
+  const dom = await captureDom(examPage(examFragment()), '.tis-container');
+  assert.equal(dom.blocked, null);
+  assert.equal((dom.html.match(/<app-ti[^>]*data-question-key/g) || []).length, 4);
+
+  const document = parseFenbiExamDom(sanitizeHtml(dom.html).html, captureIdentity, { url: dom.url });
+  assert.equal(document.questions.length, 4, 'captureDom -> DOM adapter must not lose questions');
+  assert.deepEqual(document.questions.map((q) => q.id), ['3_1_beq2d', '3_2_cfr9x', '4_1-zzz_01', '4_2-zzz_02']);
+  assert.deepEqual(document.questions.map((q) => q.number), [1, 2, 3, 4]);
+  assert.equal(document.expected.questions, 4, 'chapter counters still establish the expected total');
+  assert.equal(document.chapters.length, 2);
+  assert.equal(document.materials.length, 1);
+  // Grouped questions under one material group and standalone questions both survive.
+  assert.deepEqual(document.questions[0].materialIds, []);
+  assert.deepEqual(document.questions[2].materialIds, document.questions[3].materialIds);
+  assert.equal(document.questions[2].materialIds.length, 1);
+  assert.equal(document.questions[0].options.length, 4);
+  assert.equal(document.questions[1].options.length, 2);
+  assert.deepEqual(document.conflicts, []);
+});
+
+test('a dropped question key is the exact failure mode: the adapter silently returns zero questions', async () => {
+  const dom = await captureDom(examPage(examFragment()), '.tis-container');
+  const stripped = dom.html.replace(/ data-question-key="[^"]*"/gu, '');
+  const document = parseFenbiExamDom(sanitizeHtml(stripped).html, captureIdentity, { url: dom.url });
+  assert.equal(document.questions.length, 0);
+  assert.equal(document.expected.questions, 4, 'the chapter counters still claim four questions');
+  assert.equal(document.chapters.length, 2);
+  assert.deepEqual(document.conflicts, [], 'the loss is unobservable from the document alone');
+});
+
+test('captureDom still strips account state, handlers and credential-shaped question keys', async () => {
+  const fragment = examFragment()
+    .replace('data-question-key="3_1_beq2d"', `data-question-key="https://tiku.fenbi.com/api/xingce/exercises/1/questions?token=${SYNTHETIC_SECRET}"`)
+    .replace('data-question-key="3_2_cfr9x"', `data-question-key="session=${SYNTHETIC_SECRET}"`)
+    .replace('data-question-key="4_1-zzz_01"', `data-question-key="${'a'.repeat(81)}"`)
+    .replace('data-question-key="4_2-zzz_02"', 'data-question-key="4_2-zzz_02"');
+  const dom = await captureDom(examPage(fragment), '.tis-container');
+  assert.ok(!dom.html.includes(SYNTHETIC_SECRET), 'no credential value may reach the captured DOM');
+  assert.equal((dom.html.match(/<app-ti[^>]*data-question-key/g) || []).length, 1, 'only the well-formed key survives');
+  assert.match(dom.html, /data-question-key="4_2-zzz_02"/u);
+  assert.doesNotMatch(dom.html, /onclick|style=|data-user-id|data-token|<script|<input|<button/iu);
+  assert.equal(dom.images.length, 1);
+  assert.equal(dom.blocked, null, 'a well-formed page reports no capture block');
 });
