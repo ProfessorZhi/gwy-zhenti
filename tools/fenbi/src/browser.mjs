@@ -3,6 +3,7 @@ import path from 'node:path';
 import { createHash, randomUUID } from 'node:crypto';
 import { load } from 'cheerio';
 import { observedReadUrl } from './reads.mjs';
+import { sanitizeHashRoute } from './config.mjs';
 
 const SAFE_QUERY = new Set(['labelId', 'toPage', 'page', 'pageSize', 'paperId', 'year', 'categoryId', 'provinceId', 'id', 'type']);
 const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
@@ -36,10 +37,32 @@ function safeAssetUrl(value) {
   url.hash = '';
   return url.toString();
 }
+/** Persisted page URL: keeps only the parameters this framework recognises, or null off-domain. */
+export function safePageUrl(value) { return safeUrl(value); }
+
+/**
+ * Decide whether the page we hold is actually the paper this job targets.
+ *
+ * Returns null when the capture may proceed, or a reason string when it must be blocked. It is
+ * deliberately conservative: it blocks only the cases that are unambiguously wrong — the page left
+ * the Fenbi origin, or it is still sitting on the catalogue while the job asked for a deeper route,
+ * which is exactly what a link that opened in a new tab looks like. It never guesses that some
+ * other page is "probably" the paper; a page this framework did not open is only ever named.
+ */
+export function landingMismatch({ landed, expected, entry, strayUrls = [] }) {
+  if (!landed) return 'page-not-on-fenbi';
+  if (landed === entry && expected && expected !== entry) {
+    // Prefer the more specific diagnosis: the paper is open, just not in the page we are holding.
+    return strayUrls.some((url) => url !== entry) ? 'paper-opened-in-another-page' : 'stayed-on-entry-page';
+  }
+  return null;
+}
 function safeUrl(value) {
   const url = parsedUrl(value);
   if (!url || url.username || url.password || !allowedHost(url.hostname)) return null;
-  url.hash = '';
+  // Keep an in-app fragment route so a page on `#/exam/...` does not look like the bare catalogue;
+  // every other fragment, including credential ones, is dropped.
+  url.hash = sanitizeHashRoute(url.hash);
   for (const key of [...url.searchParams.keys()]) {
     if (!SAFE_QUERY.has(key) || !/^[\w,.-]{0,100}$/.test(url.searchParams.get(key) ?? '')) url.searchParams.delete(key);
   }

@@ -9,6 +9,8 @@ import { createDocument, absorbPayload, collectAssetUrls } from '../src/model.mj
 import { validateDocument } from '../src/validate.mjs';
 import { exportCandidate } from '../src/render.mjs';
 import { runBounded } from '../src/schedule.mjs';
+import { publicUrl } from '../src/config.mjs';
+import { landingMismatch, safePageUrl } from '../src/browser.mjs';
 
 const channel = process.env.FENBI_TEST_BROWSER_CHANNEL || 'chrome';
 // Playwright resolves channel 'chrome' only to a system-wide install (on Linux, /opt/google/chrome/chrome).
@@ -122,5 +124,36 @@ test('installed browser: two pages of one profile capture different papers concu
     const outcome = await pages[1].evaluate(async () => { try { await fetch('https://blocked.invalid/anything'); return 'allowed'; } catch { return 'blocked'; } });
     assert.equal(outcome, 'blocked');
     assert.ok(session.guardStats.blockedHost > 0, 'the guard recorded the blocked host');
+  } finally { await session.close(); }
+});
+
+// The route fix only matters if the browser really keeps the fragment it was sent to. This checks
+// that boundary with a real browser; fenbi hosts are served locally and nothing else is contacted.
+test('installed browser: an in-app fragment route survives normalisation and reaches the page', async t => {
+  const profileDir = await fs.mkdtemp(path.join(os.tmpdir(), 'gwy-fenbi-route-'));
+  t.after(() => fs.rm(profileDir, { recursive: true, force: true }));
+  const explicitBrowser = process.env.FENBI_TEST_BROWSER_EXECUTABLE || undefined;
+  const entryUrl = 'https://www.fenbi.com/spa/tiku';
+  const session = await openSession({ profileDir, channel, ...(explicitBrowser ? { executablePath: explicitBrowser } : {}), entryUrl }, { headless: true });
+  try {
+    const served = [];
+    await session.page.route('**/*', async route => {
+      const url = new URL(route.request().url());
+      // Anything that is not a Fenbi page falls through to the context-level read-only guard.
+      if (!/(^|\.)fenbi\.com$/iu.test(url.hostname)) return route.fallback();
+      served.push(route.request().url());
+      return route.fulfill({ contentType: 'text/html; charset=utf-8', body: '<meta charset="utf-8"><title>route</title><main>合成</main>' });
+    });
+    const target = publicUrl('https://www.fenbi.com/spa/tiku#/exam/8399763');
+    assert.equal(target, 'https://www.fenbi.com/spa/tiku#/exam/8399763', 'the route must survive normalisation');
+    await session.page.goto(target, { waitUntil: 'domcontentloaded' });
+    assert.equal(session.page.url(), target, 'the browser must still be on the route it was sent to');
+    // The fragment is client-side: it is never sent to the server, so the HTTP request must be the
+    // fragment-less form while the page itself stays on the route.
+    assert.ok(served.some((url) => url === 'https://www.fenbi.com/spa/tiku'), `unexpected requests: ${served.join(', ')}`);
+    assert.ok(!served.some((url) => url.includes('#')), 'no fragment may be sent as part of a request');
+    // Landing on the requested route is not a mismatch; being left on the catalogue would be.
+    assert.equal(landingMismatch({ landed: safePageUrl(session.page.url()), expected: target, entry: publicUrl(entryUrl) }), null);
+    assert.equal(landingMismatch({ landed: publicUrl(entryUrl), expected: target, entry: publicUrl(entryUrl) }), 'stayed-on-entry-page');
   } finally { await session.close(); }
 });

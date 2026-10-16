@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
-import { loadConfig, publicUrl, safeChild, WORK } from '../src/config.mjs';
+import { loadConfig, publicUrl, safeChild, urlIsReproducible, urlRouteLoss, WORK } from '../src/config.mjs';
 import { digest, jobKey, readJson, writeJson, acquireLock, resumeBundle } from '../src/store.mjs';
 import { MAX_CONCURRENCY, clampConcurrency, createControl, createHostThrottle, createSerialQueue, runBounded } from '../src/schedule.mjs';
 import { makePlan } from '../src/plan.mjs';
@@ -327,4 +327,89 @@ test('a rejected concurrency flag cannot open more pages than the ceiling', asyn
     assert.ok(clamped >= 1 && clamped <= MAX_CONCURRENCY, `--concurrency ${flag} -> ${clamped}`);
   }
   assert.equal(clampConcurrency('99'), MAX_CONCURRENCY);
+});
+
+// ── navigation targets must be reproducible, or refused ─────────────────────────────────────
+// The driver navigates to a normalised URL. If normalising drops part of the route, the browser
+// lands somewhere the framework never observed. That must be refused, never silently rewritten.
+
+test('an in-app fragment route survives while credential fragments are still dropped', () => {
+  assert.equal(publicUrl('https://www.fenbi.com/spa/tiku#/exam/8399763'), 'https://www.fenbi.com/spa/tiku#/exam/8399763');
+  assert.ok(urlIsReproducible('https://www.fenbi.com/spa/tiku#/exam/8399763'));
+  assert.equal(publicUrl('https://www.fenbi.com/spa/tiku#/exam/8399763?paperId=8399763&token=SYNTHETIC_PRIVATE_VALUE'),
+    'https://www.fenbi.com/spa/tiku#/exam/8399763?paperId=8399763');
+  // The pre-existing privacy behaviour is untouched: a fragment that is not an in-app route is dropped.
+  assert.equal(publicUrl('https://www.fenbi.com/spa/tiku#access_token=SYNTHETIC_PRIVATE_VALUE'), 'https://www.fenbi.com/spa/tiku');
+  assert.equal(urlRouteLoss('https://www.fenbi.com/spa/tiku#access_token=SYNTHETIC_PRIVATE_VALUE').hash, true);
+  assert.equal(urlIsReproducible('https://www.fenbi.com/spa/tiku#access_token=SYNTHETIC_PRIVATE_VALUE'), false);
+  for (const value of ['https://www.fenbi.com/spa/tiku#//evil.invalid', 'https://www.fenbi.com/spa/tiku#/a b']) {
+    assert.equal(publicUrl(value), 'https://www.fenbi.com/spa/tiku', value);
+  }
+});
+
+test('a dropped non-credential parameter is a route loss; a dropped credential is not', () => {
+  const unknown = urlRouteLoss('https://www.fenbi.com/spa/tiku?route=exam&paperId=8399763');
+  assert.deepEqual(unknown.routeParams, ['route']);
+  assert.deepEqual(unknown.secretParams, []);
+  assert.equal(urlIsReproducible('https://www.fenbi.com/spa/tiku?route=exam&paperId=8399763'), false);
+
+  const credential = urlRouteLoss('https://www.fenbi.com/spa/tiku?labelId=3&token=SYNTHETIC_PRIVATE_VALUE');
+  assert.deepEqual(credential.routeParams, []);
+  assert.deepEqual(credential.secretParams, ['token']);
+  assert.ok(urlIsReproducible('https://www.fenbi.com/spa/tiku?labelId=3&token=SYNTHETIC_PRIVATE_VALUE'));
+});
+
+test('the page-URL and navigation-URL allowlists disagreeing is reported as a route loss', () => {
+  // safePageUrl (browser) keeps provinceId/year; publicUrl (config) does not. A job built from such
+  // a link would otherwise navigate to a URL that differs from the one actually observed.
+  const value = 'https://www.fenbi.com/spa/tiku?provinceId=32&year=2026';
+  assert.equal(urlIsReproducible(value), false);
+  assert.deepEqual(urlRouteLoss(value).routeParams.sort(), ['provinceId', 'year']);
+});
+
+test('a planned job built from an unreproducible link is never marked ready', () => {
+  const scope = { fromYear: 2016, toYear: 2026, areas: ['江苏'] };
+  const bad = makePlan({ labels: [], papers: [{ id: 'p1', title: '2025江苏行测C类', subject: 'xingce', url: 'https://www.fenbi.com/spa/tiku?provinceId=32&year=2025' }] }, [], scope);
+  assert.equal(bad.jobs.length, 1);
+  assert.equal(bad.jobs[0].status, 'needs_route_review');
+  assert.equal(bad.jobs[0].reason, 'observed_url_not_reproducible');
+  assert.equal(bad.jobs[0].url, null);
+  assert.equal(bad.jobs[0].identity.variant, 'C类', 'identity is still reported; only the URL is refused');
+  const good = makePlan({ labels: [], papers: [{ id: 'p1', title: '2025江苏行测C类', subject: 'xingce', url: 'https://www.fenbi.com/spa/tiku?labelId=3' }] }, [], scope);
+  assert.equal(good.jobs[0].status, 'ready');
+});
+
+// ── shared-state negative tests ─────────────────────────────────────────────────────────────
+
+test('without the serial queue a concurrent registration is genuinely lost', async (t) => {
+  const dir = await temporary(t), filename = path.join(dir, 'observed-reads-fenbi-main.json');
+  await writeJson(filename, { schemaVersion: 2, profileName: 'fenbi-main', urls: [] });
+  // Each page reads the file, then writes the whole document back. Interleaved, the second write is
+  // built from a snapshot read before the first landed, so one registration vanishes.
+  const losingWrite = async (url) => {
+    const current = await readJson(filename, { urls: [] });
+    await delay(5);
+    await writeJson(filename, { schemaVersion: 2, profileName: 'fenbi-main', urls: [...current.urls, url] });
+  };
+  const first = 'https://tiku.fenbi.com/api/xingce/exercises/1/questions';
+  const second = 'https://tiku.fenbi.com/api/xingce/exercises/2/questions';
+  await Promise.all([losingWrite(first), losingWrite(second)]);
+  const saved = await readJson(filename, null);
+  assert.equal(saved.urls.length, 1, 'the later write overwrote the earlier registration');
+  assert.ok(!(saved.urls.includes(first) && saved.urls.includes(second)), 'this is the race the queue prevents');
+});
+
+test('one profile name cannot reach another profile directory or registry file', async (t) => {
+  const dir = await temporary(t), filename = path.join(dir, 'config.json');
+  await writeJson(filename, { profileName: 'fenbi-main' });
+  const first = await loadConfig(filename);
+  await writeJson(filename, { profileName: 'fenbi-second' });
+  const second = await loadConfig(filename);
+  assert.notEqual(first.profileDir, second.profileDir);
+  assert.ok(first.profileDir.endsWith(path.join('profiles', 'fenbi-main')));
+  assert.ok(second.profileDir.endsWith(path.join('profiles', 'fenbi-second')));
+  for (const bad of ['../escape', 'a/b', 'a\\b', '', 'a'.repeat(60)]) {
+    await writeJson(filename, { profileName: bad });
+    await assert.rejects(loadConfig(filename), /Invalid profileName/, `profileName=${bad}`);
+  }
 });

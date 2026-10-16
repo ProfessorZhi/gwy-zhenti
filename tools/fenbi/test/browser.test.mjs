@@ -4,7 +4,7 @@ import { EventEmitter } from 'node:events';
 import { mkdtemp, readFile, rm, access, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { openSession, requestPolicy, observeReadResponses, captureDom, downloadAssets } from '../src/browser.mjs';
+import { openSession, requestPolicy, observeReadResponses, captureDom, downloadAssets, landingMismatch, safePageUrl } from '../src/browser.mjs';
 import { parseFenbiExamDom } from '../src/dom.mjs';
 import { sanitizeHtml } from '../src/privacy.mjs';
 
@@ -306,4 +306,84 @@ test('429 and 503 are counted as rate limits so a scheduler can back off instead
   assert.equal(observer.stats.failed, 1);
   assert.equal(observer.stats.accepted, 0);
   assert.equal(received.length, 0, 'a rate-limited response is never treated as data');
+});
+
+// ── negative tests for the CLI driver's real failure modes ──────────────────────────────────
+// Every case here is a way the driver could look busy while reading the wrong thing. None of them
+// may contact Fenbi: all fixtures are local.
+
+test('the landing check blocks the named misroutes and never guesses that another page is the paper', () => {
+  const entry = 'https://www.fenbi.com/spa/tiku';
+  const paper = 'https://www.fenbi.com/spa/tiku/exam/8399763';
+  assert.equal(landingMismatch({ landed: paper, expected: paper, entry }), null);
+  // Browsing onward inside the page we hold is normal manual capture, not a mismatch.
+  assert.equal(landingMismatch({ landed: 'https://www.fenbi.com/spa/tiku/exercise/12345', expected: paper, entry }), null);
+  assert.equal(landingMismatch({ landed: null, expected: paper, entry }), 'page-not-on-fenbi');
+  assert.equal(landingMismatch({ landed: entry, expected: paper, entry }), 'stayed-on-entry-page');
+  assert.equal(landingMismatch({ landed: entry, expected: paper, entry, strayUrls: [paper] }), 'paper-opened-in-another-page');
+  // A stray page that is only the catalogue again is not evidence the paper opened somewhere else.
+  assert.equal(landingMismatch({ landed: entry, expected: paper, entry, strayUrls: [entry] }), 'stayed-on-entry-page');
+  // A catalogue-level job cannot be verified from the URL, but must not be blocked either.
+  assert.equal(landingMismatch({ landed: entry, expected: entry, entry }), null);
+});
+
+test('unsafe or missing content selectors yield no content instead of a page dump', async () => {
+  const page = { url: () => 'https://www.fenbi.com/spa/tiku/paper/1', title: async () => 'p',
+    locator: () => ({ count: async () => 1, evaluateAll: async () => ['<main>正文</main>'] }) };
+  for (const selector of ['body', 'html', '*', ':root', 'body > main', '.paper, body', 'body.x']) {
+    await assert.rejects(captureDom(page, selector), { code: 'UNSAFE_SELECTOR' }, selector);
+  }
+  const missing = await captureDom({ ...page, locator: () => ({ count: async () => 0 }) }, '.tis-container');
+  assert.deepEqual(missing.blocked, { reason: 'selector_not_found' });
+  assert.equal(missing.html, '');
+  // With no selector configured the driver may only summarise links; it must return no body at all.
+  const catalogOnly = { ...page, locator: () => ({ count: async () => 1, evaluateAll: async () => [{ href: '/spa/tiku/paper/1', text: '合成试卷' }] }) };
+  const required = await captureDom(catalogOnly, null);
+  assert.deepEqual(required.blocked, { reason: 'content_selector_required' });
+  assert.equal(required.html, '');
+  assert.equal(required.links.length, 1);
+});
+
+test('cookie and session values never reach a captured page, an image list or a persisted URL', async () => {
+  const secret = 'SYNTHETIC_COOKIE_VALUE';
+  const fragment = '<main class="q"><p>合成题干</p>'
+    + `<img src="https://img.fbstatic.cn/a.png?cookie=${secret}">`
+    + `<a href="https://www.fenbi.com/x?session=${secret}">来源</a>`
+    + `<img data-src="https://img.fbstatic.cn/ok.png?width=700"></main>`;
+  const dom = await captureDom({ url: () => 'https://www.fenbi.com/spa/tiku/paper/1', title: async () => 'p',
+    locator: () => ({ count: async () => 1, evaluateAll: async () => [fragment] }) }, '.q');
+  assert.ok(!dom.html.includes(secret));
+  assert.ok(!JSON.stringify(dom).includes(secret));
+  assert.equal(dom.images.length, 1, 'only the credential-free image is collected');
+  assert.equal(dom.images[0].url, 'https://img.fbstatic.cn/ok.png?width=700');
+  assert.equal(dom.blocked.missingImages, 1, 'the rejected reference is counted, not silently dropped');
+  assert.equal(safePageUrl('https://www.fenbi.com/spa/tiku?labelId=3&token=SYNTHETIC_COOKIE_VALUE'), 'https://www.fenbi.com/spa/tiku?labelId=3');
+  assert.equal(safePageUrl('https://evil.invalid/x'), null);
+});
+
+test('practice initialisation and submission stay blocked in capture mode and are not relaxed for login', () => {
+  const init = ['https://tiku.fenbi.com/api/xingce/exercises',
+    'https://tiku.fenbi.com/api/xingce/exercises/4189916/answers',
+    'https://tiku.fenbi.com/api/xingce/exercises/4189916/submit'];
+  for (const url of init) for (const method of ['POST', 'PUT', 'PATCH', 'DELETE']) {
+    assert.equal(requestPolicy({ url, method }), 'blockedWrites', `${method} ${url} in capture mode`);
+    assert.equal(requestPolicy({ url, method }, 'login'), 'blockedWrites', `${method} ${url} in login mode`);
+  }
+  // Login mode relaxes only the authentication endpoints themselves, on the login host.
+  assert.equal(requestPolicy({ url: 'https://login.fenbi.com/api/users/login', method: 'POST' }, 'login'), null);
+  assert.equal(requestPolicy({ url: 'https://login.fenbi.com/api/users/login', method: 'POST' }), 'blockedWrites');
+});
+
+test('a rate-limited or challenged read is never accepted, and never counted as a plain failure', async () => {
+  const page = new EventEmitter(), received = [];
+  const observer = observeReadResponses(page, (body, meta) => received.push({ body, meta }));
+  page.emit('response', response('https://tiku.fenbi.com/api/xingce/exercises/1/answers', { answers: [{ questionId: 'q1', answer: 'A' }] }, { status: 429 }));
+  page.emit('response', response('https://tiku.fenbi.com/api/xingce/exercises/1/questions', { questions: [{ id: 'q1' }] }, { status: 503 }));
+  page.emit('response', response('https://tiku.fenbi.com/api/xingce/exercises/1/questions', { questions: [{ id: 'q1' }] }, { status: 401 }));
+  await observer.flush(); observer.stop();
+  assert.equal(received.length, 0, 'a throttled or unauthorised body is never treated as data');
+  assert.equal(observer.stats.accepted, 0);
+  assert.equal(observer.stats.rateLimited, 2);
+  assert.equal(observer.stats.unauthorized, 1);
+  assert.equal(observer.stats.failed, 0, 'rate limits are classified separately so the driver can back off');
 });

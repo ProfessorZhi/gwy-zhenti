@@ -1,4 +1,4 @@
-import { publicUrl } from './config.mjs';
+import { publicUrl, urlIsReproducible } from './config.mjs';
 
 export function inferIdentity(paper, labels = []) {
   const label = labels.find(x => String(x.id) === String(paper.labelId));
@@ -36,14 +36,20 @@ export function makePlan(catalog, inventory, scope, { all = false } = {}) {
     const missing = ['missing_original_numbers', 'missing_answer_numbers', 'missing_option_numbers', 'known_material_gaps', 'missing_stem_figure_numbers'];
     const hasGap = row => missing.some(key => Array.isArray(row[key]) ? row[key].length > 0 : Boolean(row[key])) || Boolean(row.issues?.length);
     if (!all && matches.length === 1 && !hasGap(matches[0])) continue;
-    let url = null;
-    if (paper.url) { try { url = publicUrl(paper.url); } catch {} }
+    // A link the catalog actually served is kept only if navigating to the normalised form would
+    // land on the same route. A dropped parameter means the observed URL cannot be reproduced, so
+    // the job must not become ready from a URL nobody can navigate back to.
+    let url = null, reproducible = true;
+    if (paper.url) {
+      try { reproducible = urlIsReproducible(paper.url); url = reproducible ? publicUrl(paper.url) : null; } catch { url = null; }
+    }
     jobs.push({
       identity, url, expected: { questions: Number.isInteger(paper.questionCount) && paper.questionCount > 0 ? paper.questionCount : null, materials: null, questionNumbers: null, materialIds: null },
       expectedBasis: paper.questionCount ? 'observed_source_catalog' : 'unknown',
       repositoryMatches: matches.map(row => row.path),
-      reason: !identity.variant ? 'variant_needs_review' : matches.length > 1 ? 'ambiguous_repository_match' : matches.length === 0 ? 'no_exact_repository_match' : 'existing_quality_gap',
-      status: !identity.variant ? 'needs_identity_review' : !url ? 'needs_observed_paper_url' : 'ready',
+      reason: !identity.variant ? 'variant_needs_review' : !reproducible ? 'observed_url_not_reproducible'
+        : matches.length > 1 ? 'ambiguous_repository_match' : matches.length === 0 ? 'no_exact_repository_match' : 'existing_quality_gap',
+      status: !identity.variant ? 'needs_identity_review' : !reproducible ? 'needs_route_review' : !url ? 'needs_observed_paper_url' : 'ready',
     });
   }
   return { schemaVersion: 1, generatedAt: new Date().toISOString(), source: 'fenbi_observed_catalog',

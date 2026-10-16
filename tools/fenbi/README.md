@@ -116,6 +116,30 @@ node src/cli.mjs export --job TASK_KEY
 
 申论单独检查作答要求和可识别的字数上下限；复杂分小问要求保守待核。“左右”的±20%只是工具复核口径，不是官方评分规则。图片浏览器解码证据绑定实际字节；正式库仍使用已有逐帧像素检查。敏感URL引用删除后标待核，不把删失内容算完整。
 
+## 导航目标与落地核对
+
+驱动只导航到**可复现的**URL：路径、片段或非凭据参数一旦会在归一化时被丢弃，`add` 直接拒绝，
+`plan` 把该卷标为 `needs_route_review`（不是 `ready`），而不是照旧浏览到一个没人观察过的地址。
+SPA 的应用内片段路由（`#/exam/...`）会被保留；凭据片段（`#access_token=...`）照旧丢弃。
+`publicUrl`（导航）与 `safePageUrl`（登记页面URL）现在共用同一条片段规则，两处白名单不一致时
+`urlRouteLoss` 会把它报成路由丢失。
+
+采集时会记录 `page-landed` 证据，并对以下情况**显式 BLOCKED**（`page-route-mismatch`，
+`identity` 维度 blocked、退出码 2），绝不把"页面上碰巧有什么"当作该卷内容：
+
+| reason | 含义 |
+| --- | --- |
+| `stayed-on-entry-page` | 仍停在目录入口，而本卷要求更深的地址 |
+| `paper-opened-in-another-page` | 同上，且确有站点自行打开的标签页停在其它页面 |
+| `page-not-on-fenbi` | 当前页已不在粉笔域内 |
+
+站点自行打开的标签页**只记录不驱动**，其 URL 经 `safePageUrl` 写进证据供人工重新瞄准。
+只有"当前页离开粉笔域"或"停在入口而任务要求更深路由"才判失配——页面内继续浏览属正常手工采集。
+
+每卷另记 `provenance`（题面/材料/图片/答案解析各自的来源 + 纸张绑定 + `consistent`），
+写入 `checkpoint.json` 与逐卷命令行输出。它是**描述性**的；真正的闸门仍是 `validateDocument`，
+以及对齐侧的 `verification.verdict`。
+
 ## 答案解析核验口径（unknown/partial/conflicting/verified）
 
 练习页不展示答案解析时，**不能把"没有答案"读成"答案没问题"**。框架因此把答案与解析的核验状态显式化，并使用统一四态：

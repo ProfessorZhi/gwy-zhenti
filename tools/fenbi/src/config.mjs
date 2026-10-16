@@ -38,14 +38,58 @@ export async function ensurePrivateWork(work = WORK) {
   return resolved;
 }
 
+// Query names that look like account state. Reused for the fragment query of an in-app route.
+const SECRET_PARAMETER = /token|key|secret|auth|session|cookie|signature|credential|password|phone|mobile|verification/i;
+
+/**
+ * A single-page app may carry its route in the fragment. Keep only a strict in-app route shape,
+ * and inside it only short non-secret parameters; every other fragment — including credential
+ * fragments such as `#access_token=…` — is dropped exactly as before.
+ */
+/** Exported so every URL normaliser in this framework applies the identical fragment rule. */
+export function sanitizeHashRoute(hash) {
+  // `(?!\/)` keeps a protocol-relative-looking fragment such as `#//host` from being treated as an
+  // in-app route; it is not one, so it is dropped like any other unrecognised fragment.
+  const match = /^#!?(\/(?!\/)[A-Za-z0-9/_.-]*)(?:\?(.*))?$/u.exec(String(hash ?? ''));
+  if (!match) return '';
+  const kept = new URLSearchParams();
+  for (const [key, value] of new URLSearchParams(match[2] ?? '')) {
+    if (!SECRET_PARAMETER.test(key) && /^[\w,.-]{0,200}$/u.test(value)) kept.append(key, value);
+  }
+  const query = kept.toString();
+  return `#${match[1]}${query ? `?${query}` : ''}`;
+}
+
 export function publicUrl(value) {
   const url = new URL(value);
   if (url.protocol !== 'https:' || url.username || url.password || !/(^|\.)fenbi\.com$/i.test(url.hostname)) throw new Error('Only HTTPS Fenbi page URLs are allowed');
   const keep = new Set(['labelId', 'paperId', 'id', 'toPage', 'pageSize', 'type', 'categoryId']);
   for (const key of [...url.searchParams.keys()]) if (!keep.has(key)) url.searchParams.delete(key);
-  // Fenbi's verified entry uses pathname routes. Never persist arbitrary fragment credentials.
-  url.hash = '';
+  url.hash = sanitizeHashRoute(url.hash);
   return url.toString();
+}
+
+/**
+ * What `publicUrl` would drop from an observed URL. A dropped fragment or path changes where the
+ * browser lands, so a caller must refuse such a URL instead of navigating somewhere else and
+ * capturing whatever happens to be there.
+ */
+export function urlRouteLoss(value) {
+  const observed = new URL(value), normalized = new URL(publicUrl(value));
+  const dropped = [...observed.searchParams.keys()].filter((key) => !normalized.searchParams.has(key));
+  const secret = dropped.filter((key) => SECRET_PARAMETER.test(key));
+  // A credential parameter is stripped on purpose; any *other* dropped parameter means this
+  // framework cannot reproduce the URL it observed, so navigation to it is not verified.
+  return { path: observed.pathname !== normalized.pathname,
+    hash: Boolean(observed.hash) && !normalized.hash,
+    params: dropped, secretParams: secret,
+    routeParams: dropped.filter((key) => !SECRET_PARAMETER.test(key)) };
+}
+
+/** True when navigating to this URL would not reproduce the URL that was actually observed. */
+export function urlIsReproducible(value) {
+  const loss = urlRouteLoss(value);
+  return !loss.path && !loss.hash && !loss.routeParams.length;
 }
 
 export async function loadConfig(filename) {

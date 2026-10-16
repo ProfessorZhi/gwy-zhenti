@@ -4,11 +4,11 @@ import path from 'node:path';
 import { parseArgs } from 'node:util';
 import { createInterface } from 'node:readline/promises';
 import { setTimeout as sleep } from 'node:timers/promises';
-import { DEFAULTS, REPO, WORK, ensurePrivateWork, loadConfig, publicUrl, safeChild } from './config.mjs';
+import { DEFAULTS, REPO, WORK, ensurePrivateWork, loadConfig, publicUrl, safeChild, urlIsReproducible, urlRouteLoss } from './config.mjs';
 import { acquireLock, digest, jobKey, readJson, resumeBundle, writeJson } from './store.mjs';
 import { createDocument, absorbPayload, collectAssetUrls } from './model.mjs';
-import { validateDocument } from './validate.mjs';
-import { openSession, observeReadResponses, captureDom, downloadAssets } from './browser.mjs';
+import { paperProvenance, validateDocument } from './validate.mjs';
+import { openSession, observeReadResponses, captureDom, downloadAssets, landingMismatch, safePageUrl } from './browser.mjs';
 import { makePlan, parseInventory, inferIdentity } from './plan.mjs';
 import { exportCandidate } from './render.mjs';
 import { observedReadUrl, replayReads } from './reads.mjs';
@@ -146,6 +146,12 @@ async function addJob(values) {
   identity.year = Number(values.year);
   if (Object.values(identity).some(x => x === undefined || x === '' || x === null) ||
       !['xingce', 'shenlun'].includes(identity.subject) || !Number.isInteger(identity.year) || identity.year < 2016 || identity.year > new Date().getFullYear()) throw new Error('Provide a complete observed paper identity');
+  // Refuse rather than silently navigate somewhere else: if normalising the observed URL would drop
+  // a path, a fragment or a non-credential parameter, this framework cannot reproduce that URL.
+  if (!urlIsReproducible(values.url)) {
+    const loss = urlRouteLoss(values.url);
+    throw new Error(`Observed URL is not reproducible (path=${loss.path} hash=${loss.hash} dropped=${loss.routeParams.join(',') || 'none'}); re-observe a URL whose route this framework can store exactly`);
+  }
   const job = { identity, url: publicUrl(values.url),
     expected: { questions: countOption(values.questions, 'questions'), materials: countOption(values.materials, 'materials'), questionNumbers: null, materialIds: null },
     expectedBasis: 'operator_verified_source', reason: 'explicit_target', status: 'ready' };
@@ -219,6 +225,19 @@ async function captureJob(session, job, config, values, runtime = {}) {
     if (values.manual) await pause('请进入本卷完整题目或解析页面，避免开始新练习、交卷或购买。', values);
     await observer.flush();
     observeSignals();
+    // Where did the browser actually land? A link that opens a new tab leaves this page on the
+    // catalogue, and a redirect can land on a sign-in page. Either way this page is not the paper,
+    // so the capture is blocked rather than reading whatever happens to be on screen. A page the
+    // site opened by itself is never driven — it is only named, so an operator can re-aim the job.
+    const entry = publicUrl(config.entryUrl);
+    const landed = safePageUrl(page.url());
+    const strayUrls = (runtime.strayPages ?? [])
+      .map((candidate) => { try { return safePageUrl(candidate.url()); } catch { return null; } })
+      .filter((url) => url && url !== entry);
+    document.evidence.push({ type: 'page-landed', url: landed, expected: document.source.url, otherObservedPages: strayUrls });
+    const mismatch = landingMismatch({ landed, expected: document.source.url, entry, strayUrls });
+    if (mismatch) document.evidence.push({ type: 'page-route-mismatch', reason: mismatch, landed,
+      expected: document.source.url, otherObservedPages: strayUrls });
     const replay = await replayReads(session.context, job.readUrls || [], [...registeredReads], accept, { delayMs: config.delayMs });
     document.evidence.push(...replay.map(item => ({ type: 'observed-read-replay', ...item })));
     for (const item of replay) if (item.outcome !== 'accepted') document.conflicts.push({ scope: 'replay', url: item.url, outcome: item.outcome });
@@ -293,10 +312,12 @@ async function captureJob(session, job, config, values, runtime = {}) {
     schemaVersion: 1, status: verdict.status, configFingerprint, jobFingerprint: digest(job), documentFile,
     sha256: digest(await fs.readFile(path.join(directory, documentFile))), updatedAt: new Date().toISOString(),
     network: observer.stats, guard: session.guardStats, failure, pageSlot: slot,
+    provenance: paperProvenance(document),
   });
   // sourceId is stated explicitly so a concurrent run can be told apart per paper, not per slot.
   console.log(JSON.stringify({ job: jobKey(job), sourceId: job.identity.id, pageSlot: slot, title: job.identity.title,
-    status: verdict.status, observed: verdict.observed, issueCodes: verdict.issues.map(x => x.code) }, null, 2));
+    status: verdict.status, observed: verdict.observed, provenance: paperProvenance(document),
+    issueCodes: verdict.issues.map(x => x.code) }, null, 2));
   if (verdict.status !== 'complete') process.exitCode = 2;
 }
 
@@ -409,12 +430,15 @@ async function main() {
         const pages = [session.page];
         for (let slot = 1; slot < concurrency; slot++) pages.push(await session.context.newPage());
         // A page the site opens by itself is never driven; it is recorded so an unobserved read
-        // cannot be mistaken for part of a task's evidence.
+        // cannot be mistaken for part of a task's evidence, and so a job whose paper opened in a
+        // new tab is blocked by name instead of capturing the tab we are still holding.
         const strayPages = [];
-        session.context.on('page', (opened) => { if (!pages.includes(opened)) strayPages.push(opened.url()); });
+        const isScheduled = (candidate) => pages.includes(candidate);
+        session.context.on('page', (opened) => { if (!isScheduled(opened)) strayPages.push(opened); });
         const run = await runBounded(jobs, (job, { slot }) => captureJob(session, job, config, values,
-          { page: pages[slot], slot, throttle, control, serialize, registry }), { concurrency, control });
-        if (strayPages.length) console.log(JSON.stringify({ strayPages, note: '页面自行打开的标签页未被驱动，也未计入任何任务的证据' }, null, 2));
+          { page: pages[slot], slot, throttle, control, serialize, registry, strayPages }), { concurrency, control });
+        if (strayPages.length) console.log(JSON.stringify({ strayPages: strayPages.map((page) => safePageUrl(page.url())),
+          note: '页面自行打开的标签页未被驱动，也未计入任何任务的证据' }, null, 2));
         console.log(JSON.stringify({ command: 'capture', concurrency: run.concurrency, completed: run.results.filter(r => r?.ok).length,
           failed: run.failures.length, skipped: run.skipped.length, stopped: run.stopped, reason: run.reason, throttle: throttle.state() }, null, 2));
         for (const failure of run.failures) console.log(`任务失败（不影响其它卷）：${failure.item?.identity?.id ?? failure.index} ${failure.error?.code ?? failure.error?.name ?? 'ERROR'}`);
