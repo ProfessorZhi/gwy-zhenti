@@ -7,6 +7,14 @@ import { observedReadUrl } from './reads.mjs';
 const SAFE_QUERY = new Set(['labelId', 'toPage', 'page', 'pageSize', 'paperId', 'year', 'categoryId', 'provinceId', 'id', 'type']);
 const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
 const ACCOUNT_PATH = /(?:^|\/)(?:user[^/]*|history|member\w*|auth\w*|login|logout|current|selected|submit|records?|favorites?|category-exercises-unfinished)(?:\/|$)/i;
+// The only non-account `data-*` attributes that may survive DOM capture. Kept as an explicit
+// list so a newly observed attribute cannot start persisting account or session state by default.
+// `data-question-key` carries Fenbi's composite question key (for example `3_1_beq2d`) and is what
+// the verified DOM adapter selects on; without it every `app-ti` is invisible to that adapter.
+const STRUCTURAL_DATA_ATTRIBUTES = ['data-latex', 'data-math', 'data-formula', 'data-src', 'data-original', 'data-question-key'];
+// A question key is a bare identifier. Anything else — a URL, a query string, a token, an
+// over-long value — is dropped like any other unrecognised attribute rather than persisted.
+const QUESTION_KEY = /^[A-Za-z0-9_-]{1,80}$/u;
 const MAX_ASSET_BYTES = 12 * 1024 * 1024;
 const MAX_ASSETS = 256;
 const MAX_TOTAL_ASSET_BYTES = 128 * 1024 * 1024;
@@ -220,7 +228,9 @@ export async function captureDom(page, selector) {
   $('script,style,form,input,button,header,nav,footer,iframe,object,embed,[contenteditable], [data-account], [data-user], .user-info, .user-avatar, .account-info').remove();
   $('*').each((_, element) => {
     for (const name of Object.keys(element.attribs ?? {})) {
-      if (/^on/i.test(name) || /token|secret|password|cookie|authorization/i.test(name) || name === 'style' || (name.startsWith('data-') && !['data-latex', 'data-math', 'data-formula', 'data-src', 'data-original'].includes(name))) $(element).removeAttr(name);
+      if (/^on/i.test(name) || /token|secret|password|cookie|authorization/i.test(name) || name === 'style'
+          || (name.startsWith('data-') && !STRUCTURAL_DATA_ATTRIBUTES.includes(name))
+          || (name === 'data-question-key' && !QUESTION_KEY.test($(element).attr(name) ?? ''))) $(element).removeAttr(name);
     }
   });
   const text = $.root().text();
