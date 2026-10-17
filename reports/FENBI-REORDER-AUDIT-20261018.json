@@ -1,0 +1,1219 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-17T18:50:00.119Z",
+  "tool": "tools/fenbi/src/reorder.mjs",
+  "thresholds": {
+    "low": 0.45,
+    "suggest": 0.85
+  },
+  "cases": [
+    {
+      "id": "sh-2026",
+      "label": "上海2026统考",
+      "sourceId": "8472470",
+      "repoPaper": "省考/上海/2026/行测-统考.md",
+      "sourceQuestions": 130,
+      "repositoryQuestions": 129,
+      "coverage": 0.862,
+      "counts": {
+        "exact_reordered": 68,
+        "unmatched_no_candidate": 9,
+        "near_reordered": 35,
+        "ambiguous_multi_candidate": 9,
+        "weak_candidate_review": 9,
+        "repo_only_absent_in_source": 16
+      },
+      "exactPairs": 69,
+      "exactReordered": 68,
+      "exactSameNumber": 0,
+      "ambiguous": 9,
+      "imageOnly": 0,
+      "unmatched": 9,
+      "repoOnly": 16,
+      "oneToOne": true,
+      "mapping": [
+        {
+          "sourceNumber": 1,
+          "repositoryNumber": 16,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 2,
+          "repositoryNumber": 17,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 3,
+          "repositoryNumber": 18,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 4,
+          "repositoryNumber": 19,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 5,
+          "repositoryNumber": 20,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 6,
+          "repositoryNumber": 21,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 7,
+          "repositoryNumber": 22,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 8,
+          "repositoryNumber": 23,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 9,
+          "repositoryNumber": 24,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 10,
+          "repositoryNumber": 25,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 11,
+          "repositoryNumber": 26,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 12,
+          "repositoryNumber": 27,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 13,
+          "repositoryNumber": 28,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 14,
+          "repositoryNumber": 29,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 15,
+          "repositoryNumber": 30,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 16,
+          "repositoryNumber": 1,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 17,
+          "repositoryNumber": 2,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 18,
+          "repositoryNumber": 3,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 19,
+          "repositoryNumber": 4,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 21,
+          "repositoryNumber": 6,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 22,
+          "repositoryNumber": 7,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 23,
+          "repositoryNumber": 8,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 24,
+          "repositoryNumber": 9,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 26,
+          "repositoryNumber": 11,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 27,
+          "repositoryNumber": 12,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 28,
+          "repositoryNumber": 13,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 29,
+          "repositoryNumber": 14,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 30,
+          "repositoryNumber": 15,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 31,
+          "repositoryNumber": 59,
+          "exact": false,
+          "score": 0.953
+        },
+        {
+          "sourceNumber": 32,
+          "repositoryNumber": 60,
+          "exact": false,
+          "score": 0.919
+        },
+        {
+          "sourceNumber": 33,
+          "repositoryNumber": 61,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 34,
+          "repositoryNumber": 62,
+          "exact": false,
+          "score": 0.938
+        },
+        {
+          "sourceNumber": 35,
+          "repositoryNumber": 63,
+          "exact": false,
+          "score": 0.878
+        },
+        {
+          "sourceNumber": 36,
+          "repositoryNumber": 64,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 37,
+          "repositoryNumber": 65,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 38,
+          "repositoryNumber": 66,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 39,
+          "repositoryNumber": 67,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 40,
+          "repositoryNumber": 68,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 41,
+          "repositoryNumber": 69,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 42,
+          "repositoryNumber": 70,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 43,
+          "repositoryNumber": 71,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 44,
+          "repositoryNumber": 72,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 45,
+          "repositoryNumber": 73,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 46,
+          "repositoryNumber": 74,
+          "exact": false,
+          "score": 0.969
+        },
+        {
+          "sourceNumber": 47,
+          "repositoryNumber": 75,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 48,
+          "repositoryNumber": 51,
+          "exact": false,
+          "score": 0.942
+        },
+        {
+          "sourceNumber": 49,
+          "repositoryNumber": 52,
+          "exact": false,
+          "score": 0.935
+        },
+        {
+          "sourceNumber": 50,
+          "repositoryNumber": 53,
+          "exact": false,
+          "score": 0.945
+        },
+        {
+          "sourceNumber": 52,
+          "repositoryNumber": 55,
+          "exact": false,
+          "score": 0.942
+        },
+        {
+          "sourceNumber": 53,
+          "repositoryNumber": 56,
+          "exact": false,
+          "score": 0.929
+        },
+        {
+          "sourceNumber": 54,
+          "repositoryNumber": 57,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 55,
+          "repositoryNumber": 58,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 56,
+          "repositoryNumber": 87,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 58,
+          "repositoryNumber": 89,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 64,
+          "repositoryNumber": 95,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 65,
+          "repositoryNumber": 96,
+          "exact": false,
+          "score": 0.75
+        },
+        {
+          "sourceNumber": 68,
+          "repositoryNumber": 99,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 69,
+          "repositoryNumber": 100,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 70,
+          "repositoryNumber": 101,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 71,
+          "repositoryNumber": 102,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 72,
+          "repositoryNumber": 103,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 73,
+          "repositoryNumber": 104,
+          "exact": false,
+          "score": 0.973
+        },
+        {
+          "sourceNumber": 74,
+          "repositoryNumber": 105,
+          "exact": false,
+          "score": 0.959
+        },
+        {
+          "sourceNumber": 75,
+          "repositoryNumber": 106,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 76,
+          "repositoryNumber": 107,
+          "exact": false,
+          "score": 0.966
+        },
+        {
+          "sourceNumber": 77,
+          "repositoryNumber": 108,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 78,
+          "repositoryNumber": 109,
+          "exact": false,
+          "score": 0.588
+        },
+        {
+          "sourceNumber": 79,
+          "repositoryNumber": 86,
+          "exact": false,
+          "score": 0.837
+        },
+        {
+          "sourceNumber": 81,
+          "repositoryNumber": 31,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 82,
+          "repositoryNumber": 32,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 83,
+          "repositoryNumber": 33,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 84,
+          "repositoryNumber": 34,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 85,
+          "repositoryNumber": 35,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 86,
+          "repositoryNumber": 36,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 87,
+          "repositoryNumber": 37,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 88,
+          "repositoryNumber": 38,
+          "exact": false,
+          "score": 0.972
+        },
+        {
+          "sourceNumber": 89,
+          "repositoryNumber": 39,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 90,
+          "repositoryNumber": 40,
+          "exact": false,
+          "score": 0.974
+        },
+        {
+          "sourceNumber": 91,
+          "repositoryNumber": 41,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 92,
+          "repositoryNumber": 42,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 93,
+          "repositoryNumber": 43,
+          "exact": false,
+          "score": 0.972
+        },
+        {
+          "sourceNumber": 94,
+          "repositoryNumber": 44,
+          "exact": false,
+          "score": 0.967
+        },
+        {
+          "sourceNumber": 95,
+          "repositoryNumber": 45,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 96,
+          "repositoryNumber": 46,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 97,
+          "repositoryNumber": 47,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 98,
+          "repositoryNumber": 48,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 99,
+          "repositoryNumber": 49,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 101,
+          "repositoryNumber": 76,
+          "exact": false,
+          "score": 0.897
+        },
+        {
+          "sourceNumber": 102,
+          "repositoryNumber": 77,
+          "exact": false,
+          "score": 0.873
+        },
+        {
+          "sourceNumber": 103,
+          "repositoryNumber": 78,
+          "exact": false,
+          "score": 0.894
+        },
+        {
+          "sourceNumber": 104,
+          "repositoryNumber": 79,
+          "exact": false,
+          "score": 0.935
+        },
+        {
+          "sourceNumber": 105,
+          "repositoryNumber": 80,
+          "exact": false,
+          "score": 0.915
+        },
+        {
+          "sourceNumber": 106,
+          "repositoryNumber": 81,
+          "exact": false,
+          "score": 0.873
+        },
+        {
+          "sourceNumber": 107,
+          "repositoryNumber": 82,
+          "exact": false,
+          "score": 0.938
+        },
+        {
+          "sourceNumber": 108,
+          "repositoryNumber": 83,
+          "exact": false,
+          "score": 0.91
+        },
+        {
+          "sourceNumber": 109,
+          "repositoryNumber": 84,
+          "exact": false,
+          "score": 0.93
+        },
+        {
+          "sourceNumber": 110,
+          "repositoryNumber": 85,
+          "exact": false,
+          "score": 0.472
+        },
+        {
+          "sourceNumber": 111,
+          "repositoryNumber": 110,
+          "exact": false,
+          "score": 0.825
+        },
+        {
+          "sourceNumber": 112,
+          "repositoryNumber": 111,
+          "exact": false,
+          "score": 0.844
+        },
+        {
+          "sourceNumber": 113,
+          "repositoryNumber": 112,
+          "exact": false,
+          "score": 0.887
+        },
+        {
+          "sourceNumber": 114,
+          "repositoryNumber": 113,
+          "exact": false,
+          "score": 0.829
+        },
+        {
+          "sourceNumber": 116,
+          "repositoryNumber": 115,
+          "exact": false,
+          "score": 0.816
+        },
+        {
+          "sourceNumber": 117,
+          "repositoryNumber": 116,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 118,
+          "repositoryNumber": 117,
+          "exact": false,
+          "score": 0.829
+        },
+        {
+          "sourceNumber": 119,
+          "repositoryNumber": 118,
+          "exact": false,
+          "score": 0.929
+        },
+        {
+          "sourceNumber": 121,
+          "repositoryNumber": 120,
+          "exact": false,
+          "score": 0.892
+        },
+        {
+          "sourceNumber": 122,
+          "repositoryNumber": 121,
+          "exact": false,
+          "score": 0.911
+        },
+        {
+          "sourceNumber": 123,
+          "repositoryNumber": 122,
+          "exact": false,
+          "score": 0.865
+        },
+        {
+          "sourceNumber": 124,
+          "repositoryNumber": 123,
+          "exact": false,
+          "score": 0.877
+        },
+        {
+          "sourceNumber": 126,
+          "repositoryNumber": 125,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 127,
+          "repositoryNumber": 126,
+          "exact": false,
+          "score": 0.914
+        },
+        {
+          "sourceNumber": 128,
+          "repositoryNumber": 127,
+          "exact": false,
+          "score": 0.907
+        },
+        {
+          "sourceNumber": 129,
+          "repositoryNumber": 128,
+          "exact": false,
+          "score": 0.851
+        }
+      ]
+    },
+    {
+      "id": "gd-2026",
+      "label": "广东2026统考",
+      "sourceId": "8399765",
+      "repoPaper": "省考/广东/2026/行测-统考.md",
+      "sourceQuestions": 90,
+      "repositoryQuestions": 86,
+      "coverage": 0.865,
+      "counts": {
+        "weak_candidate_review": 6,
+        "exact_same_number": 11,
+        "near_reordered": 7,
+        "exact_reordered": 53,
+        "unmatched_no_candidate": 9,
+        "image_only_not_comparable": 1,
+        "ambiguous_multi_candidate": 3,
+        "repo_only_absent_in_source": 7
+      },
+      "exactPairs": 66,
+      "exactReordered": 53,
+      "exactSameNumber": 11,
+      "ambiguous": 3,
+      "imageOnly": 1,
+      "unmatched": 9,
+      "repoOnly": 7,
+      "oneToOne": true,
+      "mapping": [
+        {
+          "sourceNumber": 1,
+          "repositoryNumber": 1,
+          "exact": false,
+          "score": 0.816
+        },
+        {
+          "sourceNumber": 2,
+          "repositoryNumber": 2,
+          "exact": false,
+          "score": 0.667
+        },
+        {
+          "sourceNumber": 3,
+          "repositoryNumber": 3,
+          "exact": false,
+          "score": 0.679
+        },
+        {
+          "sourceNumber": 4,
+          "repositoryNumber": 4,
+          "exact": false,
+          "score": 0.786
+        },
+        {
+          "sourceNumber": 5,
+          "repositoryNumber": 5,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 6,
+          "repositoryNumber": 6,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 7,
+          "repositoryNumber": 7,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 8,
+          "repositoryNumber": 8,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 9,
+          "repositoryNumber": 9,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 10,
+          "repositoryNumber": 10,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 11,
+          "repositoryNumber": 11,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 12,
+          "repositoryNumber": 12,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 13,
+          "repositoryNumber": 13,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 14,
+          "repositoryNumber": 14,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 15,
+          "repositoryNumber": 15,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 16,
+          "repositoryNumber": 21,
+          "exact": false,
+          "score": 0.945
+        },
+        {
+          "sourceNumber": 17,
+          "repositoryNumber": 22,
+          "exact": false,
+          "score": 0.933
+        },
+        {
+          "sourceNumber": 18,
+          "repositoryNumber": 23,
+          "exact": false,
+          "score": 0.922
+        },
+        {
+          "sourceNumber": 19,
+          "repositoryNumber": 24,
+          "exact": false,
+          "score": 0.933
+        },
+        {
+          "sourceNumber": 20,
+          "repositoryNumber": 25,
+          "exact": false,
+          "score": 0.904
+        },
+        {
+          "sourceNumber": 21,
+          "repositoryNumber": 26,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 22,
+          "repositoryNumber": 27,
+          "exact": false,
+          "score": 0.96
+        },
+        {
+          "sourceNumber": 23,
+          "repositoryNumber": 28,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 24,
+          "repositoryNumber": 29,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 25,
+          "repositoryNumber": 30,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 26,
+          "repositoryNumber": 31,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 27,
+          "repositoryNumber": 32,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 28,
+          "repositoryNumber": 33,
+          "exact": false,
+          "score": 0.974
+        },
+        {
+          "sourceNumber": 29,
+          "repositoryNumber": 34,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 30,
+          "repositoryNumber": 35,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 35,
+          "repositoryNumber": 36,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 36,
+          "repositoryNumber": 37,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 37,
+          "repositoryNumber": 38,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 38,
+          "repositoryNumber": 39,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 39,
+          "repositoryNumber": 40,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 40,
+          "repositoryNumber": 41,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 41,
+          "repositoryNumber": 42,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 42,
+          "repositoryNumber": 43,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 43,
+          "repositoryNumber": 44,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 44,
+          "repositoryNumber": 45,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 45,
+          "repositoryNumber": 46,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 46,
+          "repositoryNumber": 47,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 48,
+          "repositoryNumber": 49,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 50,
+          "repositoryNumber": 51,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 51,
+          "repositoryNumber": 52,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 52,
+          "repositoryNumber": 53,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 53,
+          "repositoryNumber": 54,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 54,
+          "repositoryNumber": 55,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 55,
+          "repositoryNumber": 56,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 56,
+          "repositoryNumber": 57,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 57,
+          "repositoryNumber": 58,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 58,
+          "repositoryNumber": 59,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 59,
+          "repositoryNumber": 60,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 60,
+          "repositoryNumber": 61,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 61,
+          "repositoryNumber": 62,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 62,
+          "repositoryNumber": 63,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 63,
+          "repositoryNumber": 64,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 64,
+          "repositoryNumber": 65,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 66,
+          "repositoryNumber": 16,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 67,
+          "repositoryNumber": 17,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 68,
+          "repositoryNumber": 18,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 69,
+          "repositoryNumber": 19,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 70,
+          "repositoryNumber": 20,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 71,
+          "repositoryNumber": 67,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 72,
+          "repositoryNumber": 68,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 73,
+          "repositoryNumber": 69,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 74,
+          "repositoryNumber": 70,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 76,
+          "repositoryNumber": 72,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 77,
+          "repositoryNumber": 73,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 78,
+          "repositoryNumber": 74,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 79,
+          "repositoryNumber": 75,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 81,
+          "repositoryNumber": 77,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 82,
+          "repositoryNumber": 78,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 83,
+          "repositoryNumber": 79,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 84,
+          "repositoryNumber": 80,
+          "exact": false,
+          "score": 0.745
+        },
+        {
+          "sourceNumber": 86,
+          "repositoryNumber": 82,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 87,
+          "repositoryNumber": 83,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 88,
+          "repositoryNumber": 84,
+          "exact": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 89,
+          "repositoryNumber": 85,
+          "exact": false,
+          "score": 0.804
+        }
+      ]
+    }
+  ]
+}
