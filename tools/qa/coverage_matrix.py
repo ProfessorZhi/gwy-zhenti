@@ -63,35 +63,32 @@ SOURCE_COMPARED = {
         "note": "109/110 strict exact; q54 representation equivalence reviewed "
                 "separately; answers not exposed by the exercise view",
     },
-    # captured 130, matched 118: the 12 formerly-missing numbers match by NUMBER
-    # but not by CONTENT. This is direct vendor evidence against the A-class
-    # donor transplant, so the dimension is conflicting, not merely unverified.
+    # reports/FENBI-AUDIT-CORRECTION-20261017.md retracted the first reading of these captures:
+    # the unmatched source slots hold Fenbi's "not yet collected" boilerplate, NOT different
+    # content. So an unmatched slot is unobserved (`unknown`), never `conflicting`. Only 广东2020
+    # has genuine same-number differences. Matched rows did compare equal, so those papers are
+    # `partial` (some rows verified, some never observed), not `verified`.
     "省考/江苏/2025/行测-C类.md": {
-        "stem": "conflicting", "options": "conflicting", "number": "partial",
+        "stem": "partial", "options": "partial", "number": "partial",
         "images": "unknown",
-        "note": "captured 130 / matched 118; unmatchedRepository=12 at the SAME "
-                "numbers 27,29,35,36,37,42,75,77,78,80,81,85 (content differs, no "
-                "number offset). The 12 backfilled blocks came from the A-class "
-                "donor and do not match the vendor C-paper.",
+        "note": "captured 130 / matched 118 (all 118 same). The 12 unmatched source slots are "
+                "Fenbi collection placeholders (27,29,35,36,37,42,75,77,78,80,81,85), so the "
+                "source holds no content there: never observed, not differing. Those 12 backfilled "
+                "blocks therefore remain neither confirmed nor refuted by Fenbi.",
     },
-    # captured 135 / matched 131: the 4 missing numbers exist and are visible.
     "省考/江苏/2024/行测-A类.md": {
         "stem": "partial", "options": "partial", "number": "partial",
         "images": "unknown",
-        "note": "captured 135 / matched 131; the 4 source-only questions are "
-                "exactly 76,96,110,111 -- the recorded gaps. Source evidence now "
-                "exists to fill them; the formal paper is unchanged.",
+        "note": "captured 135 / matched 131. The 4 source-only slots 76,96,110,111 are "
+                "collection placeholders, so the recorded gaps stay open and Fenbi cannot fill them.",
     },
-    # captured 100 / matched 79: 69-75 exist, PLUS 14 same-number content
-    # differences and 7 material + 7 image differences that the manifest does
-    # not record at all.
     "省考/广东/2020/行测-县级卷.md": {
         "stem": "conflicting", "options": "conflicting", "number": "partial",
         "materials": "conflicting", "images": "conflicting",
-        "note": "captured 100 / matched 79. The 7 recorded gaps 69-75 exist in the "
-                "source. Additionally 14 same-number content differences "
-                "(18,22,64,66,67,79,87,91,92,94,96,98,99,100) with 7 material and 7 "
-                "image differences -- NOT recorded anywhere in the manifest.",
+        "note": "captured 100 / matched 79. 69-75 are collection placeholders (cannot fill), but "
+                "14 same-number slots hold REAL question text and differ from the repository: "
+                "18,22,64,66,67,79,87,91,92,94,96,98,99,100. That 14 is the only evidenced content "
+                "difference in the corpus, and no manifest field records it.",
     },
 }
 
