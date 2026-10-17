@@ -218,3 +218,168 @@ class JsonOutputTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FileLevelProvenanceTests(unittest.TestCase):
+    """Provenance declared in frontmatter, which an earlier revision of this checker ignored."""
+
+    HASH = "a" * 64
+
+    def fp(self, fm, receipts=None):
+        return m.file_provenance(fm, set(receipts or ()))
+
+    def test_explicit_answer_source_field_is_recognised(self):
+        # Real text: 省考/内蒙古/2020/行测-统考.md
+        p = self.fp({"答案来源": "同上《参考答案及解析》PDF"})
+        self.assertEqual(p["state"], "explicit_answer_source")
+        self.assertFalse(p["declared_absent"])
+
+    def test_answer_source_declaring_absence_is_not_a_declaration(self):
+        # Real text: 省考/黑龙江/2019/行测-边境县.md. Counting the mere presence of the
+        # key as a declaration would invert its meaning.
+        p = self.fp({"答案来源": "缺（两源均无此卷答案）"})
+        self.assertEqual(p["state"], "declared_absent")
+        self.assertTrue(p["declared_absent"])
+
+    def test_detail_keys_naming_answers_count_as_declared(self):
+        for key in ("来源明细", "来源整卷", "来源补录凭据", "第六轮原始资料补答案凭据",
+                    "补全来源", "补全证据", "完整题本固定来源"):
+            with self.subTest(key=key):
+                p = self.fp({key: "某来源 PDF"})
+                self.assertEqual(p["state"], "detail_names_answers")
+
+    def test_source_list_alone_is_the_weakest_declaration(self):
+        p = self.fp({"来源": '["xingcezhenti"]'})
+        self.assertEqual(p["state"], "source_list_only")
+
+    def test_no_fields_means_none(self):
+        self.assertEqual(self.fp({})["state"], "none")
+
+    def test_backed_requires_the_identifier_to_be_retained(self):
+        fm = {"答案来源": f"某 PDF，SHA-256：{self.HASH}"}
+        self.assertFalse(self.fp(fm)["backed"])
+        self.assertTrue(self.fp(fm, {self.HASH})["backed"])
+
+    def test_quote_stripped_values_still_yield_hashes(self):
+        fm = {"来源明细": f'题面 PDF(sha256={self.HASH})'}
+        self.assertEqual(self.fp(fm)["cited_hashes"], [self.HASH])
+
+
+class OfficialDisclaimerTests(unittest.TestCase):
+    """Negative cases: an official *disclaimer* must never read as an official claim.
+
+    Misreading `非官方标准答案` as an official key is the inversion this whole tool
+    exists to prevent, so every phrasing the library uses gets a case.
+    """
+
+    def test_block_level_negations(self):
+        cases = [
+            "**来源参考解析（非官方标准答案）**\n解析。",
+            "**来源参考答案（非官方）**\n解析。",
+            "> 来源说明：原记录卷型标记为“统考”，并非本卷的独立官方答案。",
+            "> 来源说明：见恢复凭据，不将其改称原创或官方答案。",
+            "> 来源说明：不将C类答案移用，也不称为官方答案。",
+            "资料性质为机构/个人整理参考解析，不是官方公布答案。",
+            "作者／整理性质为AI辅助修订，不是原机构作者原稿，不是官方答案。",
+        ]
+        for c in cases:
+            with self.subTest(case=c[:26]):
+                self.assertFalse(m.claims_official(c))
+
+    def test_frontmatter_negations(self):
+        cases = [
+            "非官方逐字验真",
+            "第三方参考答案不等于官方标准答案",
+            "不是官方公布答案",
+        ]
+        for c in cases:
+            with self.subTest(case=c):
+                self.assertFalse(m.claims_official_broad(c))
+
+    def test_real_official_claim_is_detected(self):
+        # Positive control, so the negations above are not passing trivially.
+        self.assertTrue(m.claims_official("本题答案依据官方公布答案。"))
+        self.assertTrue(m.claims_official_broad("答案 同批官方《行政职业能力测验解析》PDF"))
+
+    def test_ordinary_question_text_containing_guanfang_is_not_a_claim(self):
+        # 省考/黑龙江/2019/行测-边境县.md has `官方` inside a question stem about
+        # litigation. The block-level detector must stay strict so this does not fire.
+        body = "中国民间一直存在以争讼为耻的传统思想，且官方也存在无讼和恶讼思维。"
+        self.assertFalse(m.claims_official(body))
+
+    def test_institution_labelled_official_is_flagged(self):
+        fm = {"来源": '["huatu-zhenti", "huatu-zhenti-ans"]',
+              "来源明细": "答案 同批官方《行政职业能力测验解析》PDF"}
+        p = m.file_provenance(fm, set())
+        self.assertTrue(p["claims_official"])
+        self.assertTrue(p["sources_institutional_only"])
+        self.assertTrue(p["official_claim_with_only_institutional_sources"])
+
+    def test_genuine_official_source_list_is_not_flagged(self):
+        fm = {"来源": '["某省人事考试院"]', "来源明细": "官方公布答案"}
+        p = m.file_provenance(fm, set())
+        self.assertFalse(p["official_claim_with_only_institutional_sources"])
+
+
+class CoverageStateTests(unittest.TestCase):
+    """The three-state coverage model, including the stale-frontmatter contradiction."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name)
+        (self.root / "省考").mkdir()
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def write(self, text):
+        p = self.root / "省考" / "a.md"
+        p.write_text(text, encoding="utf-8")
+        return p
+
+    def test_declared_block_without_identifier_is_source_present(self):
+        self.write(paper(block(1, "**答案**：A\n\n**来源参考解析（非官方标准答案）**\n\n解析若干字。")))
+        r = m.scan(self.root, receipt_index=set())
+        self.assertEqual(r["coverage"]["source-present"], 1)
+        self.assertEqual(r["coverage"]["verified"], 0)
+
+    def test_declared_block_with_backed_identifier_is_verified(self):
+        h = "b" * 64
+        self.write(paper(block(1, f"**答案**：A\n\n**参考解析（用户提供资料）**\n\n"
+                                f"**来源**：用户提供 PDF，SHA-256：{h}\n")))
+        r = m.scan(self.root, receipt_index={h})
+        self.assertEqual(r["coverage"]["verified"], 1)
+
+    def test_file_level_declaration_covers_its_blocks(self):
+        text = paper(block(1, "**答案**：A\n\n解析没有来源行。"))
+        text = text.replace('卷型: "A类"', '卷型: "A类"\n来源明细: "答案 PDF(sha256=' + "c" * 64 + ')"')
+        self.write(text)
+        r = m.scan(self.root, receipt_index=set())
+        self.assertEqual(r["coverage"]["unsupported"], 0)
+        self.assertGreaterEqual(r["coverage"]["source-present"], 1)
+
+    def test_stale_declared_absent_frontmatter_is_flagged_not_fatal(self):
+        text = paper(block(1, "**答案**：A\n\n**参考解析（用户提供资料）**\n\n有来源行。"))
+        text = text.replace('卷型: "A类"', '卷型: "A类"\n答案来源: "缺（两源均无此卷答案）"')
+        self.write(text)
+        r = m.scan(self.root, receipt_index=set())
+        self.assertEqual(r["coverage"]["unsupported"], 0)
+        self.assertEqual(r["staleFileProvenanceBlocks"], 1)
+
+    def test_declared_absent_without_block_declaration_is_unsupported(self):
+        text = paper(block(1, "**答案**：A\n\n解析没有来源行。"))
+        text = text.replace('卷型: "A类"', '卷型: "A类"\n答案来源: "缺（两源均无此卷答案）"')
+        self.write(text)
+        r = m.scan(self.root, receipt_index=set())
+        self.assertEqual(r["coverage"]["unsupported"], 1)
+
+    def test_receipt_index_ignores_this_tools_own_report(self):
+        reports = self.root / "reports"
+        reports.mkdir()
+        h = "d" * 64
+        (reports / "ANSWER-PROVENANCE-MARKERS-20261017.json").write_text(h, encoding="utf-8")
+        (reports / "OTHER-RECEIPT.json").write_text(h, encoding="utf-8")
+        idx = m.build_receipt_index(self.root)
+        self.assertIn(h, idx)  # from OTHER-RECEIPT
+        (reports / "OTHER-RECEIPT.json").unlink()
+        self.assertNotIn(h, m.build_receipt_index(self.root))  # own output excluded
