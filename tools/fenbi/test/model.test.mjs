@@ -256,7 +256,12 @@ test('unbound responses stay partial even when all bodies are present', async ()
 // accepted as a body, must not be exported as a question, and must not be treated as fillable.
 
 const COLLECTION_STUBS = ['题目正在全力以赴征集', '题目正在全力以赴征集，请稍后再试', '正在搜集中',
-  '本题暂无收集到', '网友未回忆起', '题目缺失', '非客观题，请交卷后查看参考解析估分'];
+  '本题暂无收集到', '网友未回忆起', '题目缺失', '非客观题，请交卷后查看参考解析估分',
+  // The two forms actually observed on the live site (reports/FENBI-AUDIT-CORRECTION-20261017.md).
+  // These were missing from the first version of this gate, which therefore let the real stub
+  // through as a question body; they are kept as literal strings so a wording change is visible here.
+  '题目正在全力以赴征集，将会第一时间上传',
+  '题目正在全力以赴征集，将会在征集到后第一时间上传'];
 
 function stubDoc(stem) {
   const doc = fixture();

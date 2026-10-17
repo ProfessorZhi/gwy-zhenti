@@ -209,6 +209,19 @@ test('two copies of a collection stub are never reported as the same content', a
   assert.equal(genuine.questions[0].dimensions.stem.status, 'same');
 });
 
+test('the live-site stub wording is classified as uncollected, not as differing content', async () => {
+  // reports/FENBI-AUDIT-CORRECTION-20261017.md records two rendered forms. Missing them made the
+  // matcher report `different / content-differs`, which was then misread as a real content conflict
+  // and had to be retracted. Both must classify as an uncollected source, not as a difference.
+  for (const live of ['题目正在全力以赴征集，将会第一时间上传',
+    '题目正在全力以赴征集，将会在征集到后第一时间上传']) {
+    const report = await comparePaper(fixture(question('101', 1, live)), mdQuestion('101', 1, '真实的题干内容。'));
+    assert.equal(report.questions[0].dimensions.stem.status, 'unknown', live);
+    assert.equal(report.questions[0].dimensions.stem.reason, 'source-content-is-collection-placeholder', live);
+    assert.notEqual(report.verification?.verdict, 'conflicting', live);
+  }
+});
+
 test('a stub in the repository is a missing body, not a match', async () => {
   const report = await comparePaper(fixture(question('101', 1, '真实的题干内容。')), mdQuestion('101', 1, STUB));
   assert.equal(report.questions[0].dimensions.stem.status, 'different');
