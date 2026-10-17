@@ -468,18 +468,26 @@ export class PipelineQueue {
     const perStage = Object.fromEntries(STAGES.map((stage) => [stage, { pending: 0, leased: 0, done: 0, terminal: 0 }]));
     const byStatus = {};
     let pendingReview = 0, active = 0, verified = 0, candidateReady = 0, oldestPendingAt = null;
+    let blocked = 0, skippedPlaceholder = 0, deadLetter = 0, stagesDone = 0, artifactCount = 0, artifactBytes = 0;
     for (const job of jobs) {
       byStatus[job.status] = (byStatus[job.status] ?? 0) + 1;
       if (job.status === 'verified') verified += 1;
       if (job.status === 'candidate_ready') candidateReady += 1;
+      if (job.status === 'blocked_auth' || job.status === 'blocked_rights') blocked += 1;
+      if (job.status === 'skipped_placeholder') skippedPlaceholder += 1;
+      if (job.status === 'dead_letter') deadLetter += 1;
       let hasOpen = false;
       for (const stage of STAGES) {
         const entry = job.stages[stage];
         const bucket = perStage[stage];
         if (entry.status === 'pending') { bucket.pending += 1; hasOpen = true; }
         else if (entry.status === 'leased') { bucket.leased += 1; hasOpen = true; }
-        else if (entry.status === SUCCESS) bucket.done += 1;
+        else if (entry.status === SUCCESS) { bucket.done += 1; stagesDone += 1; }
         else bucket.terminal += 1;
+        for (const artifact of entry.artifacts ?? []) {
+          artifactCount += 1;
+          artifactBytes += Number(artifact.bytes) || 0;
+        }
         if (entry.status === 'pending' && (!oldestPendingAt || entry.updatedAt < oldestPendingAt)) oldestPendingAt = entry.updatedAt;
       }
       if (hasOpen && !TERMINAL_BAD.includes(job.status) && job.status !== 'verified') active += 1;
@@ -487,6 +495,10 @@ export class PipelineQueue {
         && job.stages.answer_explanation_qa?.status === SUCCESS;
       if (reviewReady || job.status === 'needs_review') pendingReview += 1;
     }
+    let leasesActive = 0;
+    try {
+      leasesActive = (await fs.readdir(this.paths.leases)).filter((name) => name.endsWith('.json')).length;
+    } catch { /* no leases directory yet */ }
     let freeBytes = null;
     try { freeBytes = await diskFreeBytes(this.paths.root); } catch { /* status remains useful without statfs */ }
     return {
@@ -495,6 +507,21 @@ export class PipelineQueue {
       perStage, invalidJobs: invalid, queueLength: active, pendingReview,
       diskFreeBytes: freeBytes, oldestPendingAt,
       completed: verified, // only independent verification counts as completed
+      metrics: {
+        sourcesEnqueued: jobs.length,
+        stagesConsumed: stagesDone,
+        verified,
+        candidateReady,
+        blocked,
+        skippedPlaceholder,
+        deadLetter,
+        needsReview: byStatus.needs_review ?? 0,
+        partial: byStatus.partial ?? 0,
+        queueDepth: active,
+        pendingReview,
+        leasesActive,
+        artifacts: { count: artifactCount, bytes: artifactBytes },
+      },
     };
   }
 

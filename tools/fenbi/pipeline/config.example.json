@@ -23,6 +23,7 @@
   },
   "allowedCaptureHosts": ["fenbi.com"],
   "allowedImageHosts": ["fenbi.com", "fbstatic.cn", "fb.fenbike.cn"],
+  "routeParams": [],
   "authorizedSourceIds": [],
   "requireObservedUrl": true
 }

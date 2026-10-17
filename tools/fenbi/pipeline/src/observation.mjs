@@ -4,7 +4,7 @@ import { atomicWriteJson, digest, ensurePrivateDir, nowIso, readJson } from './f
 import { queuePaths } from './config.mjs';
 import {
   REDISTRIBUTION, SOURCE_CATEGORIES, assertArtifactRelative, sanitizeEvidence,
-  sanitizeImageUrl, sanitizeSourceUrl,
+  sanitizeImageUrl, sanitizeSourceUrl, urlMatchesObserved, isWriteRoute,
 } from './identity.mjs';
 import { assertNoCredentialMaterial } from './handoff.mjs';
 
@@ -84,10 +84,12 @@ export async function loadAllowlist(filename) {
   return { source: filename, missing: false, ids: new Set(entries.keys()), entries, list: [...entries.values()] };
 }
 
-function isReproducibleObservedUrl(sanitized) {
+function isReproducibleObservedUrl(observed, sanitized, routeParams) {
+  if (!urlMatchesObserved(observed, sanitized, { routeParams })) return false;
   const url = new URL(sanitized);
   if (['toPage', 'page', 'pageSize'].some((key) => url.searchParams.has(key))) return false;
   if (/^\/spa\/tiku\/?$/u.test(url.pathname)) return false;
+  if (isWriteRoute(url.pathname)) return false;
   return url.pathname.replace(/\/+$/u, '').length >= 6;
 }
 
@@ -165,9 +167,9 @@ export function classifyObservation(observation, { allowlist, config, producer =
   if (route.urlObserved !== true) return { ...base, classification: 'needs_route_review', reason: 'url-not-observed' };
   if (typeof route.url !== 'string' || !route.url.trim()) return { ...base, classification: 'needs_route_review', reason: 'url-missing' };
   let url;
-  try { url = sanitizeSourceUrl(route.url, { allowedHosts: config.allowedCaptureHosts }); }
+  try { url = sanitizeSourceUrl(route.url, { allowedHosts: config.allowedCaptureHosts, routeParams: config.routeParams }); }
   catch (error) { return { ...base, classification: 'needs_route_review', reason: `url-unsafe: ${error.message}` }; }
-  if (!isReproducibleObservedUrl(url)) return { ...base, classification: 'needs_route_review', reason: 'url-not-reproducible' };
+  if (!isReproducibleObservedUrl(route.url, url, config.routeParams)) return { ...base, classification: 'needs_route_review', reason: 'url-not-reproducible' };
 
   const rights = observation.rights;
   if (!rights || typeof rights !== 'object' || Array.isArray(rights)) {
@@ -242,9 +244,65 @@ export function classifyObservation(observation, { allowlist, config, producer =
 }
 
 /**
- * Import an Owner-produced observation handoff. This function never opens a browser, never calls
- * an initialization endpoint and never creates a URL: the only URL it can enqueue is the one in
- * the handoff, after sanitization. Non-capture classifications are persisted as observations.
+ * Bounded directory import for the current batch (default 5 files). Every selected file is
+ * validated before any job is enqueued, so a credential leak in file 4 cannot leave files 1-3
+ * half-imported. It reads only immediate *.json children; no recursion, no network.
+ */
+export async function importObservationDirectory({
+  queue, config, directory, allowlist, maxFiles = 5, dryRun = false, now = Date.now,
+} = {}) {
+  if (!Number.isInteger(maxFiles) || maxFiles < 1 || maxFiles > 20) {
+    throw observationError('INVALID_MAX_FILES', 'maxFiles must be 1..20');
+  }
+  let entries;
+  try { entries = await fs.readdir(directory, { withFileTypes: true }); }
+  catch (error) { throw observationError('OBSERVATION_DIRECTORY_INVALID', `Cannot read observation directory: ${error.message}`); }
+  const files = entries
+    .filter((entry) => entry.isFile() && entry.name.endsWith('.json') && !entry.name.startsWith('.'))
+    .map((entry) => path.join(directory, entry.name))
+    .sort()
+    .slice(0, maxFiles);
+  if (!files.length) throw observationError('OBSERVATION_DIRECTORY_EMPTY', 'No .json observation handoffs found');
+  // Validate everything first: an invalid/credential-bearing file aborts before enqueueing.
+  const loaded = [];
+  for (const file of files) {
+    let raw;
+    try { raw = JSON.parse(await fs.readFile(file, 'utf8')); }
+    catch (error) { throw observationError('OBSERVATION_INVALID', `${path.basename(file)}: ${error.message}`); }
+    loaded.push({ file, handoff: validateObservationHandoff(raw) });
+  }
+  const reports = [];
+  for (const item of loaded) {
+    const report = await importObservations({
+      queue, config, handoff: item.handoff, allowlist, dryRun, now,
+    });
+    reports.push({ file: item.file, handoffDigest: report.handoffDigest, counts: report.counts, items: report.items });
+  }
+  const countKeys = ['observations', 'capture_ready', 'created', 'deduplicated', 'observed_catalog',
+    'needs_route_review', 'needs_initialization_review', 'blocked_auth', 'invalid'];
+  const counts = Object.fromEntries(countKeys.map((key) => [key, 0]));
+  for (const report of reports) for (const key of countKeys) counts[key] += Number(report.counts[key] ?? 0);
+  return {
+    schemaVersion: 1,
+    kind: 'gwy-zhenti-observation-batch-report',
+    importedAt: nowIso(now()),
+    dryRun: Boolean(dryRun),
+    directory,
+    maxFiles,
+    selected: files.length,
+    files: reports.map((report) => ({
+      file: report.file, handoffDigest: report.handoffDigest, counts: report.counts,
+    })),
+    counts,
+    items: reports.flatMap((report) => report.items.map((entry) => ({ ...entry, file: report.file }))),
+  };
+}
+
+/**
+ * Import one Owner-produced observation handoff. This function never opens a browser, never
+ * calls an initialization endpoint and never creates a URL: the only URL it can enqueue is the
+ * one in the handoff, after sanitization. Non-capture classifications are persisted as catalog
+ * observations without a lease.
  */
 export async function importObservations({
   queue, config, handoff: raw, allowlist, dryRun = false, now = Date.now,

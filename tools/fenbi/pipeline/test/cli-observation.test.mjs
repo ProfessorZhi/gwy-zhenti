@@ -74,8 +74,20 @@ test('CLI observe-import classifies and enqueues only authorized existing practi
   const status = await cli(['status', '--config', configFile, '--data-dir', data]);
   assert.equal(status.code, 0);
   assert.equal(status.json.status.jobs.total, 1);
+  assert.equal(status.json.status.metrics.sourcesEnqueued, 1);
+  assert.equal(status.json.status.metrics.blocked, 0);
+  assert.equal(status.json.status.metrics.queueDepth, 1);
+  assert.equal(status.json.collector.adapterWired, false);
+  assert.equal(status.json.observedCatalog.entries, 3);
   const leases = await fs.readdir(path.join(data, 'leases'));
   assert.equal(leases.filter((name) => name.endsWith('.json')).length, 0);
+  const unwired = await cli(['drain', '--config', configFile, '--data-dir', data, '--role', 'collector', '--budget', '1']);
+  assert.equal(unwired.code, 2);
+  assert.equal(unwired.json.reason, 'collector_unwired');
+  assert.equal(unwired.json.claimed, 0);
+  const afterDrain = await cli(['status', '--config', configFile, '--data-dir', data]);
+  assert.equal(afterDrain.json.collector.adapterWired, false);
+  assert.equal(afterDrain.json.collector.lastReason, 'collector_unwired');
   const dry = await cli(['observe-import', '--config', configFile, '--data-dir', data, '--allowlist', allowFile, '--handoff', handoffFile, '--dry-run']);
   assert.equal(dry.code, 0);
   assert.equal(dry.json.dryRun, true);
@@ -100,4 +112,33 @@ test('CLI observe-import fail-closes when the allowlist is absent and rejects cr
   const rejected = await cli(['observe-import', '--config', configFile, '--data-dir', data, '--allowlist', path.join(dir, 'none.json'), '--handoff', leaked]);
   assert.equal(rejected.code, 5);
   assert.equal(rejected.json.error.code, 'HANDOFF_CREDENTIAL_LEAK');
+});
+
+test('CLI bounded directory import honours max-files and deduplicates across files', async (t) => {
+  const { dir, data, configFile } = await setup(t);
+  const handoffDir = path.join(dir, 'owner-handoffs');
+  await fs.mkdir(handoffDir, { recursive: true, mode: 0o700 });
+  await fs.writeFile(path.join(handoffDir, '01.json'), JSON.stringify(handoff([observation()])));
+  await fs.writeFile(path.join(handoffDir, '02.json'), JSON.stringify(handoff([
+    observation({
+      paperSourceId: '9000002', title: '江苏2025行测C类', area: '江苏', year: 2025, variant: 'C类',
+      route: { ...observation().route, url: 'https://www.fenbi.com/spa/tiku/exam/9000002?labelId=2' },
+    }),
+  ])));
+  const allowFile = path.join(dir, 'allow-two.json');
+  await fs.writeFile(allowFile, JSON.stringify({ sourceIds: [{ id: '9000001' }, { id: '9000002' }] }));
+  const one = await cli(['observe-import', '--config', configFile, '--data-dir', data,
+    '--allowlist', allowFile, '--handoff-dir', handoffDir, '--max-files', '1']);
+  assert.equal(one.code, 0, one.stderr);
+  assert.equal(one.json.selected, 1);
+  assert.equal(one.json.counts.created, 1);
+  const two = await cli(['observe-import', '--config', configFile, '--data-dir', data,
+    '--allowlist', allowFile, '--handoff-dir', handoffDir, '--max-files', '2']);
+  assert.equal(two.code, 0, two.stderr);
+  assert.equal(two.json.selected, 2);
+  assert.equal(two.json.counts.created, 1);
+  assert.equal(two.json.counts.deduplicated, 1);
+  const status = await cli(['status', '--config', configFile, '--data-dir', data]);
+  assert.equal(status.json.status.jobs.total, 2);
+  assert.equal(status.json.status.metrics.sourcesEnqueued, 2);
 });

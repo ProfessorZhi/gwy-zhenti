@@ -1,12 +1,18 @@
 import path from 'node:path';
 import { digest } from './fsutil.mjs';
 import { STAGES, SCHEMA_VERSION } from './constants.mjs';
+import { CREDENTIAL_QUERY_NAME, ROUTE_PARAM_VALUE } from './config.mjs';
 
 export const SOURCE_CATEGORIES = Object.freeze(['observed_ui', 'official', 'licensed_donor']);
 export const REDISTRIBUTION = Object.freeze(['local_only', 'allowed']);
 
 const SAFE_QUERY = new Set(['labelId', 'paperId', 'id', 'toPage', 'pageSize', 'type', 'categoryId']);
-const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
+const SENSITIVE_QUERY = CREDENTIAL_QUERY_NAME;
+// Tracking/attribution parameters do not select a route; dropping them cannot change the page.
+const IGNORABLE_QUERY = /^(?:utm_|spm$|ref$|from$|source$|share|fbclid$|gclid$)/i;
+// The importer only ever stores a landing URL. It must not accept a write/initialise endpoint
+// merely because the owner called it "observed".
+const WRITE_ROUTE = /\/(?:submit|initialize|init|create|start|finish|save)(?:\/|$)/i;
 const PLACEHOLDER = /^(?:暂无(?:解析|答案)?|待(?:补充|完善|填写)|查看(?:答案|解析)|答案略|解析略|略|TODO|PLACEHOLDER|参考答案|参考解析|点击查看)$/iu;
 // PR36/PR45: a not-yet-collected question still renders an ID, a number and four options, with
 // this boilerplate where the stem belongs. The live page adds a courteous tail whose wording
@@ -36,10 +42,11 @@ function hostAllowed(hostname, allowedHosts) {
 
 /**
  * Keep only a Fenbi/authorised HTTPS page URL, drop fragment and unlisted query parameters.
- * This mirrors tools/fenbi/src/config.mjs#publicUrl so the queue cannot persist credentials that
- * the capture framework itself would have stripped.
+ * Routing parameters such as `routecs` must be declared in `routeParams`; an unlisted
+ * non-tracking parameter is dropped and `urlMatchesObserved` then rejects the URL as
+ * non-reproducible. Credential-shaped names are rejected even when declared.
  */
-export function sanitizeSourceUrl(value, { allowedHosts = ['fenbi.com'] } = {}) {
+export function sanitizeSourceUrl(value, { allowedHosts = ['fenbi.com'], routeParams = [] } = {}) {
   let url;
   try { url = new URL(value); } catch { throw fail('Source URL is not a valid URL'); }
   if (url.protocol !== 'https:' || url.username || url.password) throw fail('Source URL must be HTTPS without credentials');
@@ -49,9 +56,49 @@ export function sanitizeSourceUrl(value, { allowedHosts = ['fenbi.com'] } = {}) 
     // enter the queue, a lease, a handoff or a log. Callers that need the page can re-open it.
     throw fail('Source URL contains credential-like query parameters; re-observe a clean URL');
   }
-  for (const key of [...url.searchParams.keys()]) if (!SAFE_QUERY.has(key)) url.searchParams.delete(key);
+  const declared = new Set(routeParams);
+  const kept = new Map();
+  for (const [key, value] of url.searchParams) {
+    if (kept.has(key)) continue; // duplicate parameters collapse to the first observed value
+    if (!SAFE_QUERY.has(key) && !declared.has(key)) continue;
+    if (!ROUTE_PARAM_VALUE.test(value)) continue; // unsafe values are dropped, then reproducibility fails
+    kept.set(key, value);
+  }
+  url.search = '';
+  for (const [key, value] of kept) url.searchParams.append(key, value);
   url.hash = '';
   return url.toString();
+}
+
+export function isWriteRoute(pathname) {
+  return /^\/api(?:\/|$)/i.test(pathname) || WRITE_ROUTE.test(pathname);
+}
+
+/**
+ * PR54-compatible bidirectional check: the sanitized URL may not gain a parameter, and every
+ * observed parameter must survive unless it is credential-shaped or purely tracking metadata.
+ */
+export function urlMatchesObserved(observedValue, sanitizedValue, { routeParams = [] } = {}) {
+  let observed, sanitized;
+  try { observed = new URL(observedValue); sanitized = new URL(sanitizedValue); }
+  catch { return false; }
+  if (observed.origin !== sanitized.origin || observed.pathname !== sanitized.pathname) return false;
+  if (observed.username || observed.password || sanitized.username || sanitized.password) return false;
+  if (sanitized.hash) return false;
+  const declared = new Set(routeParams);
+  const observedParams = new Map();
+  for (const [key, value] of observed.searchParams) if (!observedParams.has(key)) observedParams.set(key, value);
+  const sanitizedParams = new Map();
+  for (const [key, value] of sanitized.searchParams) if (!sanitizedParams.has(key)) sanitizedParams.set(key, value);
+  for (const [key, value] of sanitizedParams) {
+    if (observedParams.get(key) !== value) return false; // sanitisation invented/changed a value
+  }
+  for (const [key, value] of observedParams) {
+    if (SENSITIVE_QUERY.test(key) || IGNORABLE_QUERY.test(key)) continue;
+    if (!SAFE_QUERY.has(key) && !declared.has(key)) return false; // lost a routing parameter
+    if (sanitizedParams.get(key) !== value) return false;
+  }
+  return true;
 }
 
 /** Image references keep their static host and non-credential query, never a fragment. */
@@ -148,7 +195,15 @@ export function normalizeEnqueueInput(input = {}, config, now = Date.now()) {
   let url = null;
   let allowCapture = false;
   if (input.url !== undefined && input.url !== null && input.url !== '') {
-    url = sanitizeSourceUrl(String(input.url), { allowedHosts: config.allowedCaptureHosts });
+    const observedUrl = String(input.url);
+    url = sanitizeSourceUrl(observedUrl, {
+      allowedHosts: config.allowedCaptureHosts,
+      routeParams: config.routeParams,
+    });
+    if (!urlMatchesObserved(observedUrl, url, { routeParams: config.routeParams })) {
+      throw fail('Source URL loses an undeclared routing parameter; declare it in routeParams or re-observe a clean URL', 'URL_NOT_REPRODUCIBLE');
+    }
+    if (isWriteRoute(new URL(url).pathname)) throw fail('Only an observed GET landing page may enter capture_ready, never an initialise/submit route', 'URL_NOT_GET_ONLY');
     if (config.requireObservedUrl && !urlObserved) throw fail('A URL may only enter capture_ready after it was explicitly observed');
     allowCapture = sourceCategory !== 'licensed_donor' && urlObserved;
   }

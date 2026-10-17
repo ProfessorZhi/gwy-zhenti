@@ -7,7 +7,7 @@ fixture，不访问粉笔站点、不读取 Cookie、不写任何正式题本。
 ## 当前状态（请如实理解）
 
 - ✅ 队列、租约、阶段机、handoff、退避、背压、崩溃恢复、死信、**离线 observation importer** 与 CLI
-  已实现，并有 51 个合成测试。
+  已实现，并有 58 个合成测试。
 - ❌ **没有部署 24 小时常驻 collector，也没有启动 daemon/systemd。** 本模块只提供单次有界
   `drain` / `reconcile`，适合由现有每小时调度任务调用。
 - ❌ **没有内置真实粉笔浏览器 adapter。** 不注入 adapter 时，`drain --role collector` 会以
@@ -116,6 +116,32 @@ fixture，不访问粉笔站点、不读取 Cookie、不写任何正式题本。
 （`题目正在全力以赴征集，将会第一时间上传` / `…将会在征集到后第一时间上传`），以及
 `正在搜集中`、`本题暂无收集到`、`网友未回忆起`、`题目缺失`、`非客观题，请交卷后查看参考解析估分`。
 有界 courtesy tail 不允许句末标点且不超过 24 字，因此真正引用该句并继续展开的题干不会被误杀。
+
+## PR54 路由参数（routecs）与 GET-only
+
+- 配置字段 `routeParams`（默认 `[]`）显式声明参与路由的查询参数，例如 `["routecs"]`。
+- 声明后该参数保留；**未声明仍会被丢弃**，随后 `urlMatchesObserved()` 双向比较发现“归一化 URL
+  丢失了非追踪参数”，该 URL 判为 `needs_route_review`，不会进入 capture_ready。
+- 凭据形状的名字（token/session/auth/cookie…）即使声明也会被 config 拒绝；取值必须 ≤200 且只含
+  `A-Za-z0-9_,.:-`；重复参数折叠为第一个。
+- 纯追踪参数（`utm_*`、`spm`、`ref`、`from`、`share`、`fbclid`、`gclid`）可以安全丢弃，不算失配。
+- 只接受已观察的 **GET landing page**：`/api/...` 以及 `/submit`、`/initialize`、`/init`、`/create`、
+  `/start`、`/finish`、`/save` 路径直接判 `needs_route_review`。importer 自身不发起任何网络请求，
+  测试会 stub `fetch` 并断言 0 次调用；它没有初始化/交卷/购买/绕登录入口。
+
+## 批量导入（本批最多 5 份）
+
+```bash
+node tools/fenbi/pipeline/src/cli.mjs observe-import \
+  --config ... --allowlist work/fenbi/pipeline/allowlist.json \
+  --handoff-dir /path/to/owner-handoffs --max-files 5 [--dry-run]
+```
+
+- 只读取目录下直接的 `*.json`（不递归），默认最多 5 个，硬上限 20。
+- **先校验全部选中文件，再入队**：任一文件含凭证或格式错误会整批中止，不会出现前几份已入队、
+  后一份才失败的部分状态。
+- 跨文件重复的 `paperSourceId+version` 走同一去重主键，只计 `deduplicated`。
+- `observe-import` 不领取 lease；只有 collector adapter 能领 `capture_ready`。
 
 ## 阶段与角色
 
@@ -226,6 +252,9 @@ node tools/fenbi/pipeline/src/cli.mjs throttle reset --config ... --host www.fen
 
 ```bash
 GWY_PIPELINE_CONFIG=work/fenbi/pipeline/config.json \
+GWY_OBSERVATION_DIR=/abs/path/to/owner-handoffs \
+GWY_MAX_HANDOFFS=5 \
+GWY_ALLOWLIST=work/fenbi/pipeline/allowlist.json \
   tools/fenbi/pipeline/examples/hourly-drain.sh
 ```
 
@@ -234,6 +263,9 @@ GWY_PIPELINE_CONFIG=work/fenbi/pipeline/config.json \
 ```bash
 node tools/fenbi/pipeline/src/cli.mjs reconcile --config "$CONFIG"
 node tools/fenbi/pipeline/src/cli.mjs status    --config "$CONFIG"
+# 可选：最多 5 份 Owner handoff 的 bounded import（先校验再入队）
+node tools/fenbi/pipeline/src/cli.mjs observe-import --config "$CONFIG" \
+  --handoff-dir "$GWY_OBSERVATION_DIR" --max-files 5 --allowlist "$GWY_ALLOWLIST"
 # 未注入 adapter 时：exit 2, reason=collector_unwired, claimed=0
 node tools/fenbi/pipeline/src/cli.mjs drain --config "$CONFIG" --role collector \
   --budget "$COLLECTOR_BUDGET" --owner "hourly-$(date -u +%Y%m%dT%H%M%SZ)"
@@ -259,6 +291,32 @@ node tools/fenbi/pipeline/src/cli.mjs status    --config "$CONFIG"
 429/503 的指数退避会持久化到 `state/throttle.json`，下一次每小时任务会继续等待，不会重新猛刷。
 401/403/验证码的 `blocked_auth` 不会被时间自动清除，必须人工 reset。
 
+## 实时队列指标
+
+`status` 返回 `status.metrics`，用于每小时日志和本批报告：
+
+| 字段 | 含义 |
+| --- | --- |
+| `sourcesEnqueued` | 队列内 source 总数（不等于已验证数） |
+| `stagesConsumed` | 已成功完成的 stage 数 |
+| `verified` / `candidateReady` | 独立验真 / 仅候选 |
+| `blocked` | `blocked_auth` + `blocked_rights` |
+| `skippedPlaceholder` / `deadLetter` / `needsReview` / `partial` | 对应状态数 |
+| `queueDepth` | 仍有待办/在途的 job 数 |
+| `pendingReview` | 待人工审核数 |
+| `leasesActive` | 活跃租约文件数 |
+| `artifacts` | artifact 数与总字节 |
+
+另有：
+
+- `collector.adapterWired` / `collector.lastReason`：来自 `state/collector-status.json`，由 bounded
+  collector drain 写入；没有 adapter 时为 `false`、`collector_unwired`。
+- `observedCatalog.entries` / `byClassification`：来自 `state/observed-catalog.json`，用于区分
+  capture_ready 与只登记/待路线复核/待初始化复核的观察。
+- `host` / `backpressure` / `capacity`：节点繁忙时 collector 页数降为 1、offline workers 降为 ≤4。
+
+这些指标只读本地文件，不访问粉笔站点。
+
 ## 测试
 
 ```bash
@@ -266,11 +324,14 @@ cd tools/fenbi/pipeline
 npm test          # 等价于 node --test test/*.test.mjs
 ```
 
-51 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
+58 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
 429/503 退避与 401 阻断、权限/不可再分发元数据、handoff 凭证负例、占位与 AI 答案不能完成、
 **1 producer + 2 独立 consumers + reviewer/verifier 全链路**、**图片 manifest SHA 正负例**、
 **未授权源不产生租约**、**无再分发许可强制 local_only**、**占位/unknown 不算内容**、
-背压、PR28/PR31/PR36/PR42/PR45 契约相容性、CLI 真实退出码。测试不会打开浏览器、不会访问站点、
+**PR54 routecs 声明/未声明/重复/超长**、**GET-only 拒绝 API/初始化/交卷路径**、
+**batch import 先校验后入队与 max-files**、**offline importer 的 fetch 调用为 0**、
+**status.metrics / collector_unwired 指标**、背压、
+PR28/PR31/PR36/PR42/PR45 契约相容性、CLI 真实退出码。测试不会打开浏览器、不会访问站点、
 不会读取 `work/fenbi/profiles/`。
 
 ## 明确的缺口（下一轮需要的人工/授权输入）

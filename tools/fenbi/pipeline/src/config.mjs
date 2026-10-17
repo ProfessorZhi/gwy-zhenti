@@ -24,11 +24,18 @@ export const DEFAULTS = Object.freeze({
   }),
   allowedCaptureHosts: Object.freeze(['fenbi.com']),
   allowedImageHosts: Object.freeze(['fenbi.com', 'fbstatic.cn', 'fb.fenbike.cn']),
+  // PR54: observed routing parameters (e.g. routecs) must be declared explicitly. Undeclared
+  // parameters are still dropped, and a dropped non-tracking parameter makes the URL
+  // non-reproducible. Credential-shaped names are rejected even if declared.
+  routeParams: Object.freeze([]),
   // Fail closed: a production config must list the paper source IDs that were explicitly
   // authorised. null is only used by synthetic tests and means "policy intentionally unset".
   authorizedSourceIds: [],
   requireObservedUrl: true,
 });
+
+export const CREDENTIAL_QUERY_NAME = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
+export const ROUTE_PARAM_VALUE = /^[A-Za-z0-9_,.:-]{0,200}$/;
 
 function integer(value, label, min, max) {
   if (!Number.isInteger(value) || value < min || value > max) throw new Error(`Invalid ${label}`);
@@ -76,6 +83,12 @@ export function validateConfig(raw = {}) {
     }
     config.authorizedSourceIds = [...new Set(config.authorizedSourceIds)];
   }
+  if (!Array.isArray(config.routeParams) || config.routeParams.length > 16) throw new Error('Invalid routeParams');
+  for (const name of config.routeParams) {
+    if (typeof name !== 'string' || !/^[A-Za-z][A-Za-z0-9_]{0,63}$/.test(name)) throw new Error('Invalid routeParams name');
+    if (CREDENTIAL_QUERY_NAME.test(name)) throw new Error('routeParams may not contain credential-shaped names');
+  }
+  config.routeParams = [...new Set(config.routeParams)];
   if (typeof config.requireObservedUrl !== 'boolean') throw new Error('Invalid requireObservedUrl');
   if (config.dataDir !== null && (typeof config.dataDir !== 'string' || !path.isAbsolute(config.dataDir))) throw new Error('dataDir must be an absolute path');
   config.dataDir = config.dataDir ? path.resolve(config.dataDir) : DEFAULT_DATA_DIR;

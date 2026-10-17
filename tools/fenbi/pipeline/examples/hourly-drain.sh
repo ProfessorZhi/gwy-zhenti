@@ -6,6 +6,9 @@
 #   GWY_PIPELINE_CONFIG=/abs/path/to/config.json
 # Optional:
 #   GWY_COLLECTOR_BUDGET=2
+#   GWY_OBSERVATION_DIR=/abs/dir/of/owner-handoffs  (bounded import, default max 5 files)
+#   GWY_MAX_HANDOFFS=5
+#   GWY_ALLOWLIST=/abs/path/to/allowlist.json
 #   GWY_COLLECTOR_ADAPTER=/abs/path/to/owner-adapter.mjs  (omit until the real owner is wired)
 #   GWY_WORKER_ADAPTER=/abs/path/to/worker-adapter.mjs    (offline consumer, no browser)
 set -u
@@ -33,6 +36,15 @@ run reconcile --config "$GWY_PIPELINE_CONFIG" || FINAL=$?
 
 # 2) Current queue/health snapshot.
 run status --config "$GWY_PIPELINE_CONFIG" || FINAL=$?
+
+# 2b) Optional bounded import of the Owner's observation handoffs. It validates every selected
+#     file before enqueueing and never opens a browser. Default batch ceiling is 5 files.
+if [ -n "${GWY_OBSERVATION_DIR:-}" ]; then
+  IMPORT_ARGS=(--config "$GWY_PIPELINE_CONFIG" --handoff-dir "$GWY_OBSERVATION_DIR" \
+    --max-files "${GWY_MAX_HANDOFFS:-5}")
+  if [ -n "${GWY_ALLOWLIST:-}" ]; then IMPORT_ARGS+=(--allowlist "$GWY_ALLOWLIST"); fi
+  run observe-import "${IMPORT_ARGS[@]}" || FINAL=$?
+fi
 
 # 3) One bounded collector pass. Without a real owner adapter this is the expected signal:
 #    exit 2, reason=collector_unwired, claimed=0. It must not be mistaken for a capture success.

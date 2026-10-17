@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { placeholderVerdict, sanitizeSourceUrl, taskKeyFor } from '../src/identity.mjs';
+import { placeholderVerdict, sanitizeSourceUrl, taskKeyFor, urlMatchesObserved, isWriteRoute } from '../src/identity.mjs';
 import { STAGES, ROLE_STAGES, EXIT } from '../src/constants.mjs';
 import { MAX_CONCURRENCY, clampConcurrency } from '../src/throttle.mjs';
 import { validateConfig } from '../src/config.mjs';
@@ -84,6 +84,36 @@ test('configuration rejects unknown fields instead of silently ignoring them', (
   assert.throws(() => validateConfig({ maxConcurrency: 0 }), /maxConcurrency/);
   assert.throws(() => validateConfig({ backpressure: { maxQueueLength: -1 } }), /maxQueueLength/);
   assert.throws(() => validateConfig({ allowedCaptureHosts: [] }), /allowedCaptureHosts/);
+  assert.throws(() => validateConfig({ routeParams: ['token'] }), /credential-shaped/);
+  assert.throws(() => validateConfig({ routeParams: ['bad name'] }), /Invalid routeParams/);
+  assert.deepEqual(validateConfig({ routeParams: ['routecs', 'routecs'] }).routeParams, ['routecs']);
+});
+
+test('PR54 compatibility: declared route params survive, undeclared ones make the URL non-reproducible', () => {
+  const observed = 'https://www.fenbi.com/spa/tiku/exam/1?labelId=1&routecs=abc123';
+  const declared = sanitizeSourceUrl(observed, { routeParams: ['routecs'] });
+  assert.match(declared, /routecs=abc123/);
+  assert.equal(urlMatchesObserved(observed, declared, { routeParams: ['routecs'] }), true);
+  const undeclared = sanitizeSourceUrl(observed, { routeParams: [] });
+  assert.doesNotMatch(undeclared, /routecs/);
+  assert.equal(urlMatchesObserved(observed, undeclared, { routeParams: [] }), false);
+  const duplicate = sanitizeSourceUrl('https://www.fenbi.com/spa/tiku/exam/1?routecs=a&routecs=b', { routeParams: ['routecs'] });
+  assert.equal((duplicate.match(/routecs=/g) ?? []).length, 1);
+  assert.match(duplicate, /routecs=a/);
+  const tooLong = sanitizeSourceUrl(`https://www.fenbi.com/spa/tiku/exam/1?routecs=${'x'.repeat(201)}`, { routeParams: ['routecs'] });
+  assert.doesNotMatch(tooLong, /routecs/);
+  assert.equal(urlMatchesObserved(`https://www.fenbi.com/spa/tiku/exam/1?routecs=${'x'.repeat(201)}`, tooLong, { routeParams: ['routecs'] }), false);
+  // Tracking parameters may be dropped; credential-shaped names are never accepted, even if declared.
+  assert.equal(urlMatchesObserved('https://www.fenbi.com/spa/tiku/exam/1?utm_source=x&labelId=1', 'https://www.fenbi.com/spa/tiku/exam/1?labelId=1'), true);
+  assert.throws(() => sanitizeSourceUrl('https://www.fenbi.com/spa/tiku/exam/1?session=abc', { routeParams: ['session'] }), /credential-like/);
+});
+
+test('GET-only guard rejects API/initialise/submit routes', () => {
+  for (const pathname of ['/api/xingce/exercises/1', '/spa/tiku/exam/1/submit', '/spa/tiku/exam/1/initialize', '/spa/tiku/exam/1/init', '/spa/tiku/exam/1/start']) {
+    assert.equal(isWriteRoute(pathname), true, pathname);
+  }
+  assert.equal(isWriteRoute('/spa/tiku/exam/1'), false);
+  assert.equal(isWriteRoute('/spa/tiku/exam/1/questions'), false);
 });
 
 test('an authorised-source allowlist blocks capture outside the operator-approved set', async (t) => {

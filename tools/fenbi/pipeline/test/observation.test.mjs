@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { newQueue, temporary, makeConfig } from './helpers.mjs';
 import {
-  classifyObservation, importObservations, loadAllowlist, validateObservationHandoff,
+  classifyObservation, importObservations, importObservationDirectory, loadAllowlist, validateObservationHandoff,
 } from '../src/observation.mjs';
 import { digest } from '../src/fsutil.mjs';
 
@@ -164,6 +164,83 @@ test('handoff envelopes reject credentials but allow the false permission declar
   }), /PROFILE_LEAK/);
   assert.throws(() => validateObservationHandoff(handoff([{ ...observation(), route: { ...observation().route, url: 'https://www.fenbi.com/x?token=SYNTHETIC' } }])), /CREDENTIAL_LEAK/);
   assert.equal(list.value.ids.size, 4);
+});
+
+test('PR54 route params are preserved only when declared; write routes never become capture_ready', async (t) => {
+  const dir = await temporary(t);
+  const list = await allowlist();
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const routed = observation({
+    route: { ...observation().route, url: 'https://www.fenbi.com/spa/tiku/exam/9000001?labelId=1&routecs=opaque123' },
+  });
+  const declaredConfig = makeConfig(dir, { routeParams: ['routecs'] });
+  const declared = classifyObservation(routed, { allowlist: list.value, config: declaredConfig });
+  assert.equal(declared.classification, 'capture_ready');
+  assert.match(declared.input.url, /routecs=opaque123/);
+  const undeclaredConfig = makeConfig(dir, { routeParams: [] });
+  const undeclared = classifyObservation(routed, { allowlist: list.value, config: undeclaredConfig });
+  assert.equal(undeclared.classification, 'needs_route_review');
+  assert.equal(undeclared.reason, 'url-not-reproducible');
+  const writeRoute = classifyObservation(observation({
+    route: { ...observation().route, url: 'https://www.fenbi.com/spa/tiku/exam/9000001/submit?labelId=1' },
+  }), { allowlist: list.value, config: declaredConfig });
+  assert.equal(writeRoute.classification, 'needs_route_review');
+  assert.equal(writeRoute.reason, 'url-not-reproducible');
+});
+
+test('import is purely offline: no fetch, no browser, no initialise/submit request', async (t) => {
+  const { queue, config } = await newQueue(t, { routeParams: ['routecs'] });
+  const list = await allowlist(['9000001']);
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const originalFetch = globalThis.fetch;
+  let fetchCalls = 0;
+  globalThis.fetch = async () => { fetchCalls += 1; throw new Error('network must not be used by the offline importer'); };
+  try {
+    const input = handoff([observation({
+      route: { ...observation().route, url: 'https://www.fenbi.com/spa/tiku/exam/9000001?labelId=1&routecs=opaque123' },
+    })]);
+    const report = await importObservations({ queue, config, handoff: input, allowlist: list.value });
+    assert.equal(report.counts.created, 1);
+    assert.equal(fetchCalls, 0);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
+test('bounded directory import validates all selected files first and honours maxFiles', async (t) => {
+  const { dir, queue, config } = await newQueue(t);
+  const list = await allowlist(['9000001', '9000002']);
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const handoffDir = path.join(dir, 'handoffs');
+  await fs.mkdir(handoffDir, { recursive: true, mode: 0o700 });
+  await fs.writeFile(path.join(handoffDir, '01.json'), JSON.stringify(handoff([observation()])));
+  await fs.writeFile(path.join(handoffDir, '02.json'), JSON.stringify(handoff([observation({
+    paperSourceId: '9000002', title: '江苏2025行测C类', area: '江苏', year: 2025, variant: 'C类',
+    route: { ...observation().route, url: 'https://www.fenbi.com/spa/tiku/exam/9000002?labelId=2' },
+    images: [],
+  })])));
+  const one = await importObservationDirectory({ queue, config, directory: handoffDir, allowlist: list.value, maxFiles: 1 });
+  assert.equal(one.selected, 1);
+  assert.equal(one.counts.created, 1);
+  assert.equal((await queue.listJobs()).length, 1);
+  const both = await importObservationDirectory({ queue, config, directory: handoffDir, allowlist: list.value, maxFiles: 2 });
+  assert.equal(both.selected, 2);
+  assert.equal(both.counts.created, 1, 'the first file deduplicates');
+  assert.equal(both.counts.deduplicated, 1);
+  assert.equal((await queue.listJobs()).length, 2);
+  await assert.rejects(importObservationDirectory({ queue, config, directory: handoffDir, allowlist: list.value, maxFiles: 21 }), /INVALID_MAX_FILES/);
+});
+
+test('a credential leak in any selected handoff aborts the directory before enqueueing', async (t) => {
+  const { dir, queue, config } = await newQueue(t);
+  const list = await allowlist(['9000001']);
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const handoffDir = path.join(dir, 'leaky-handoffs');
+  await fs.mkdir(handoffDir, { recursive: true, mode: 0o700 });
+  await fs.writeFile(path.join(handoffDir, '01.json'), JSON.stringify(handoff([observation()])));
+  await fs.writeFile(path.join(handoffDir, '02.json'), JSON.stringify({ ...handoff([observation()]), cookies: 'sessionid=SYNTHETIC' }));
+  await assert.rejects(importObservationDirectory({ queue, config, directory: handoffDir, allowlist: list.value, maxFiles: 2 }), /CREDENTIAL_LEAK/);
+  assert.equal((await queue.listJobs()).length, 0, 'nothing is enqueued when a later file fails validation');
 });
 
 test('import enqueues only eligible items, deduplicates on repeat, and records the rest as catalog', async (t) => {
