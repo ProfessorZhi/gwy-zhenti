@@ -160,10 +160,23 @@ export function scorePair(source, repository) {
   const score = weightTotal ? usable.reduce((sum, [name, value]) => sum + value.score * DEFAULT_POLICY.weights[name], 0) / weightTotal : 0;
   // For an image-only stem the exact evidence is byte-identical verified pictures, never the token.
   const stemExact = stem.available ? stem.score === 1 : (images.available && images.score === 1);
-  const exact = stemExact && (!options.available || (options.score === 1 && !options.contradictory));
+  // A comparable signal must also agree. A leftover caption character ("图") can make the text look
+  // identical while the verified image bytes differ; that is a content conflict, not a match, so it
+  // must fail `exact` even though the composite score stays high.
+  const imagesAgree = !images.available || images.score === 1;
+  const optionsAgree = !options.available || (options.score === 1 && !options.contradictory);
+  const materialsAgree = !materials.available || materials.score === 1;
+  const exact = stemExact && imagesAgree && optionsAgree && materialsAgree;
+  // Named only when a *comparable* signal actively disagrees; a merely absent signal is not a block.
+  const exactBlockedBy = exact ? null
+    : images.available && images.score < 1 ? 'image-evidence-mismatch'
+      : options.available && (options.score < 1 || options.contradictory) ? 'option-evidence-mismatch'
+        : materials.available && materials.score < 1 ? 'material-evidence-mismatch'
+          : stem.available && stem.score < 1 ? 'stem-evidence-mismatch' : null;
   const independent = usable.filter(([, value]) => value.score > 0).length;
   const grade = exact ? 'exact' : !Object.values(signals).some((value) => value.contradictory) && independent >= 2 ? 'strong' : 'weak';
-  return { score: clamp01(score), grade, signals, contradictory: Object.values(signals).some((value) => value.contradictory) };
+  return { score: clamp01(score), grade, signals, exactBlockedBy,
+    contradictory: Object.values(signals).some((value) => value.contradictory) };
 }
 
 function usableSourceRow(question) {
@@ -273,6 +286,7 @@ export function buildMappingReport({ source, repository, sourceRights, isEligibl
       sameNumber: Number.isInteger(sourceQuestion.number) && sourceQuestion.number === best.repositoryQuestion.number,
       method: best.grade === 'exact' ? 'exact-content' : 'similarity',
       grade: best.grade, score: Number(best.score.toFixed(4)),
+      ...(best.exactBlockedBy ? { exactBlockedBy: best.exactBlockedBy } : {}),
       autoAcceptable, requiresHumanReview: !autoAcceptable,
       evidence: Object.fromEntries(Object.entries(best.signals).map(([name, value]) => [name,
         { available: value.available, contradictory: value.contradictory, similarity: Number(value.score.toFixed(4)),
