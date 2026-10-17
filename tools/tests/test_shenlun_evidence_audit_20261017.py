@@ -19,8 +19,9 @@ _spec.loader.exec_module(audit)
 # 2026-10-15 报告登记 21 份；2026-10-16 commit 1d1379c3 补入江苏2026 A/C
 REGISTERED = 21
 RECONCILED_PRESENT = {("江苏", "2026", "A"), ("江苏", "2026", "C")}
-# 已知悬空答案来源指针：国考 2024/2025/2026 × 副省级/地市级/行政执法
-KNOWN_DANGLING = {
+# 2026-10-17 已把 9 处悬空指针降级为「源不可考」标记（PR 见 reports/
+# FULL-REPAIR-SHENLUN-SOURCE-PROVENANCE-20261017.jsonl）。此后不应再有悬空指针。
+DOWNGRADED = {
     "国考/2024/申论-副省级.md", "国考/2024/申论-地市级.md", "国考/2024/申论-行政执法.md",
     "国考/2025/申论-副省级.md", "国考/2025/申论-地市级.md", "国考/2025/申论-行政执法.md",
     "国考/2026/申论-副省级.md", "国考/2026/申论-地市级.md", "国考/2026/申论-行政执法.md",
@@ -60,14 +61,15 @@ class ShenlunEvidenceAudit(unittest.TestCase):
         for t in ("A", "B", "C"):
             self.assertEqual(entries[("浙江", "2022", t)]["status"], "absent")
 
-    def test_dangling_answer_source_pointers_are_the_known_set(self):
+    def test_no_dangling_answer_source_pointers_remain(self):
+        """悬空指针必须为 0；指针目标若存在则放行。"""
         bad = {x["path"] for x in self.data["dangling_answer_source_pointers"]
                if not x["target_exists"]}
-        self.assertEqual(bad, KNOWN_DANGLING)
-        for x in self.data["dangling_answer_source_pointers"]:
-            if not x["target_exists"]:
-                self.assertFalse(x["in_git_history"],
-                                 "目标在历史里出现过，说明是被删除而非从未存在：" + x["pointer"])
+        self.assertEqual(bad, set(), "仍有悬空答案来源指针：%s" % sorted(bad))
+
+    def test_nine_files_carry_source_unverifiable_marker(self):
+        got = {m["path"] for m in self.data["source_unverifiable_markers"]}
+        self.assertEqual(got, DOWNGRADED)
 
     def test_every_shenlun_file_hash_is_recorded_in_some_receipt(self):
         c = self.data["receipt_coverage"]
@@ -75,11 +77,23 @@ class ShenlunEvidenceAudit(unittest.TestCase):
         self.assertEqual(c["current_hash_recorded"], c["files"])
 
     def test_audit_is_read_only(self):
-        """工具只读：不新增/修改正式卷。"""
-        import subprocess
-        out = subprocess.run(["git", "status", "--porcelain", "--", "国考", "省考"],
-                             cwd=str(ROOT), capture_output=True, text=True).stdout.strip()
-        self.assertEqual(out, "", "审计不得改动正式卷：" + out)
+        """build() 前后正式卷逐字节不变：证明工具确实只读。"""
+        import hashlib
+
+        def snapshot():
+            snap = {}
+            for top in ("国考", "省考"):
+                for p in sorted((ROOT / top).rglob("*.md")):
+                    snap[p.as_posix()] = hashlib.sha256(p.read_bytes()).hexdigest()
+            return snap
+
+        before = snapshot()
+        cwd = os.getcwd()
+        try:
+            audit.build(str(ROOT))
+        finally:
+            os.chdir(cwd)
+        self.assertEqual(snapshot(), before, "审计不得改动正式卷")
 
 
 if __name__ == "__main__":
