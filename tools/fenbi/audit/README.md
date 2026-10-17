@@ -146,6 +146,24 @@ Three rules it enforces, each of which has already cost this project real work:
   claim (it equals `question_anchors` library-wide); the original paper size is
   derived as `positions_held + missing_count`.
 
+## Can a sibling paper supply a gap number?
+
+```bash
+python3 tools/fenbi/audit/sibling_traceability.py --repo . --all-gap-papers \
+    --out reports/GAP-TRACEABILITY-20261018.json
+```
+
+Provincial exams reuse questions across A/B/C and 县级/乡镇 papers, so "use the
+same-numbered question from the sibling" is a tempting shortcut. This tool
+measures it instead of assuming it: of the numbers both papers hold, what
+fraction are textually identical after the aligner's normalization?
+
+Substitution is treated as justified only at a rate of **0.95 or above** — i.e.
+the two files are effectively one paper. On this catalog every pair measures far
+below that (广东 县级/乡镇 **0%**, 江苏2024 A/B **35%**, 浙江2020 A/B **15%**), so
+the tool never marks a substitution as usable: each gap number is a *lead* with a
+measured base rate, never a recovery.
+
 ## Tests
 
 ```bash

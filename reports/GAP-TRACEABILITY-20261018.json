@@ -1,0 +1,1296 @@
+{
+  "audit": "sibling-traceability",
+  "date": "2026-10-18",
+  "threshold": 0.95,
+  "papers": [
+    {
+      "paper": {
+        "path": "省考/北京/2026/行测-统考.md",
+        "area": "北京",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "统考",
+        "question_anchors": 67,
+        "declared_missing": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          22,
+          31,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          89,
+          90,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          112,
+          114,
+          115,
+          117
+        ],
+        "declared_missing_count": 51
+      },
+      "siblings": [],
+      "items": [
+        {
+          "number": 2,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 3,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 4,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 5,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 6,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 7,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 8,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 9,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 10,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 11,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 12,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 13,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 14,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 15,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 16,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 17,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 18,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 22,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 31,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 34,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 35,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 36,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 37,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 38,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 39,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 40,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 41,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 42,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 43,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 44,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 89,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 90,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 96,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 97,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 98,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 99,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 100,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 101,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 102,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 103,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 104,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 105,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 106,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 107,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 108,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 109,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 110,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 112,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 114,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 115,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 117,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        }
+      ],
+      "summary": {
+        "gap_numbers": 51,
+        "siblings_examined": 0,
+        "siblings_justified_as_source": 0,
+        "gap_numbers_with_any_lead": 0,
+        "gap_numbers_recovered": 0
+      },
+      "policy": [
+        "Substitution is justified only when the identical rate reaches 0.95, i.e. the files are effectively one paper.",
+        "A same-number question in a different 卷型 is a LEAD, never a recovery.",
+        "No question text is emitted; only counts and rates."
+      ]
+    },
+    {
+      "paper": {
+        "path": "省考/广东/2020/行测-县级卷.md",
+        "area": "广东",
+        "year": "2020",
+        "subject": "行测",
+        "paper_type": "县级卷",
+        "question_anchors": 93,
+        "declared_missing": [
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "declared_missing_count": 7
+      },
+      "siblings": [
+        {
+          "path": "省考/广东/2020/行测-乡镇卷.md",
+          "paper_type": "乡镇卷",
+          "question_anchors": 97,
+          "sibling_missing_count": 0,
+          "same_number_overlap": 90,
+          "text_identical": 0,
+          "identical_rate": 0.0,
+          "substitution_justified": false,
+          "identical_numbers_sample": []
+        }
+      ],
+      "items": [
+        {
+          "number": 69,
+          "candidate_leads": [
+            {
+              "sibling": "省考/广东/2020/行测-乡镇卷.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.0,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.0,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 70,
+          "candidate_leads": [
+            {
+              "sibling": "省考/广东/2020/行测-乡镇卷.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.0,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.0,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 71,
+          "candidate_leads": [
+            {
+              "sibling": "省考/广东/2020/行测-乡镇卷.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.0,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.0,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 72,
+          "candidate_leads": [
+            {
+              "sibling": "省考/广东/2020/行测-乡镇卷.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.0,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.0,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 73,
+          "candidate_leads": [
+            {
+              "sibling": "省考/广东/2020/行测-乡镇卷.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.0,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.0,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 74,
+          "candidate_leads": [
+            {
+              "sibling": "省考/广东/2020/行测-乡镇卷.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.0,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.0,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 75,
+          "candidate_leads": [
+            {
+              "sibling": "省考/广东/2020/行测-乡镇卷.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.0,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.0,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        }
+      ],
+      "summary": {
+        "gap_numbers": 7,
+        "siblings_examined": 1,
+        "siblings_justified_as_source": 0,
+        "gap_numbers_with_any_lead": 7,
+        "gap_numbers_recovered": 0
+      },
+      "policy": [
+        "Substitution is justified only when the identical rate reaches 0.95, i.e. the files are effectively one paper.",
+        "A same-number question in a different 卷型 is a LEAD, never a recovery.",
+        "No question text is emitted; only counts and rates."
+      ]
+    },
+    {
+      "paper": {
+        "path": "省考/江苏/2024/行测-A类.md",
+        "area": "江苏",
+        "year": "2024",
+        "subject": "行测",
+        "paper_type": "A类",
+        "question_anchors": 131,
+        "declared_missing": [
+          76,
+          96,
+          110,
+          111
+        ],
+        "declared_missing_count": 4
+      },
+      "siblings": [
+        {
+          "path": "省考/江苏/2024/行测-B类.md",
+          "paper_type": "B类",
+          "question_anchors": 135,
+          "sibling_missing_count": 0,
+          "same_number_overlap": 131,
+          "text_identical": 46,
+          "identical_rate": 0.3511,
+          "substitution_justified": false,
+          "identical_numbers_sample": [
+            1,
+            4,
+            5,
+            30,
+            33,
+            37,
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        {
+          "path": "省考/江苏/2024/行测-C类.md",
+          "paper_type": "C类",
+          "question_anchors": 130,
+          "sibling_missing_count": 0,
+          "same_number_overlap": 126,
+          "text_identical": 26,
+          "identical_rate": 0.2063,
+          "substitution_justified": false,
+          "identical_numbers_sample": [
+            1,
+            16,
+            26,
+            31,
+            46,
+            50,
+            51,
+            52,
+            55,
+            56
+          ]
+        }
+      ],
+      "items": [
+        {
+          "number": 76,
+          "candidate_leads": [
+            {
+              "sibling": "省考/江苏/2024/行测-B类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.3511,
+              "usable_as_source": false
+            },
+            {
+              "sibling": "省考/江苏/2024/行测-C类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.2063,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.3511,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 96,
+          "candidate_leads": [
+            {
+              "sibling": "省考/江苏/2024/行测-B类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.3511,
+              "usable_as_source": false
+            },
+            {
+              "sibling": "省考/江苏/2024/行测-C类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.2063,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.3511,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 110,
+          "candidate_leads": [
+            {
+              "sibling": "省考/江苏/2024/行测-B类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.3511,
+              "usable_as_source": false
+            },
+            {
+              "sibling": "省考/江苏/2024/行测-C类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.2063,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.3511,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 111,
+          "candidate_leads": [
+            {
+              "sibling": "省考/江苏/2024/行测-B类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.3511,
+              "usable_as_source": false
+            },
+            {
+              "sibling": "省考/江苏/2024/行测-C类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.2063,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.3511,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        }
+      ],
+      "summary": {
+        "gap_numbers": 4,
+        "siblings_examined": 2,
+        "siblings_justified_as_source": 0,
+        "gap_numbers_with_any_lead": 4,
+        "gap_numbers_recovered": 0
+      },
+      "policy": [
+        "Substitution is justified only when the identical rate reaches 0.95, i.e. the files are effectively one paper.",
+        "A same-number question in a different 卷型 is a LEAD, never a recovery.",
+        "No question text is emitted; only counts and rates."
+      ]
+    },
+    {
+      "paper": {
+        "path": "省考/江苏/2026/行测-A类.md",
+        "area": "江苏",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "A类",
+        "question_anchors": 93,
+        "declared_missing": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135
+        ],
+        "declared_missing_count": 42
+      },
+      "siblings": [],
+      "items": [
+        {
+          "number": 16,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 17,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 18,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 19,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 20,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 21,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 22,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 23,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 32,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 33,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 34,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 35,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 36,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 37,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 38,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 39,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 40,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 86,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 87,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 88,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 89,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 90,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 91,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 92,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 93,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 102,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 103,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 104,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 105,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 106,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 107,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 108,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 126,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 127,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 128,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 129,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 130,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 131,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 132,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 133,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 134,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 135,
+          "candidate_leads": [],
+          "best_identical_rate": null,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        }
+      ],
+      "summary": {
+        "gap_numbers": 42,
+        "siblings_examined": 0,
+        "siblings_justified_as_source": 0,
+        "gap_numbers_with_any_lead": 0,
+        "gap_numbers_recovered": 0
+      },
+      "policy": [
+        "Substitution is justified only when the identical rate reaches 0.95, i.e. the files are effectively one paper.",
+        "A same-number question in a different 卷型 is a LEAD, never a recovery.",
+        "No question text is emitted; only counts and rates."
+      ]
+    },
+    {
+      "paper": {
+        "path": "省考/浙江/2020/行测-A类.md",
+        "area": "浙江",
+        "year": "2020",
+        "subject": "行测",
+        "paper_type": "A类",
+        "question_anchors": 98,
+        "declared_missing": [
+          49,
+          50
+        ],
+        "declared_missing_count": 2
+      },
+      "siblings": [
+        {
+          "path": "省考/浙江/2020/行测-B类.md",
+          "paper_type": "B类",
+          "question_anchors": 100,
+          "sibling_missing_count": 0,
+          "same_number_overlap": 98,
+          "text_identical": 15,
+          "identical_rate": 0.1531,
+          "substitution_justified": false,
+          "identical_numbers_sample": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ]
+        }
+      ],
+      "items": [
+        {
+          "number": 49,
+          "candidate_leads": [
+            {
+              "sibling": "省考/浙江/2020/行测-B类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.1531,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.1531,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        },
+        {
+          "number": 50,
+          "candidate_leads": [
+            {
+              "sibling": "省考/浙江/2020/行测-B类.md",
+              "sibling_has_this_number": true,
+              "identical_rate_at_shared_numbers": 0.1531,
+              "usable_as_source": false
+            }
+          ],
+          "best_identical_rate": 0.1531,
+          "evidence_level": "unconfirmed",
+          "substitution_justified": false,
+          "blocked_reason": "a sibling paper's same-numbered question is a lead, not evidence: the measured identical rate is far below the threshold, so identity of the missing question cannot be assumed"
+        }
+      ],
+      "summary": {
+        "gap_numbers": 2,
+        "siblings_examined": 1,
+        "siblings_justified_as_source": 0,
+        "gap_numbers_with_any_lead": 2,
+        "gap_numbers_recovered": 0
+      },
+      "policy": [
+        "Substitution is justified only when the identical rate reaches 0.95, i.e. the files are effectively one paper.",
+        "A same-number question in a different 卷型 is a LEAD, never a recovery.",
+        "No question text is emitted; only counts and rates."
+      ]
+    }
+  ]
+}
