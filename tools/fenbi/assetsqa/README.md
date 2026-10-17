@@ -15,6 +15,9 @@
 | `paper_question_validator.py` | **第 4 轮**：逐题离线校验器（sourceID/身份/题号/材料/题干与图片 SHA/选项内容/占位/答案未知）；词表区分 `structurally_valid` / `incomplete` / `invalid` |
 | `test_tile_pilot.py` | 单测（第 3 轮，27 条，含负例） |
 | `test_paper_question_validator.py` | 单测（第 4 轮，29 条，含负例） |
+| `verify_pr62_stats.py` | **第 5 轮**：从 PR #62 自己的 JSON 重算 coverage 分母、一对一、闭合、mapping↔分类差、逆序、去 weak 覆盖率 |
+| `crosscheck_matchers.mjs` | **第 5 轮**：PR #62 `reorder.mjs` 与 PR #63 `mapping.mjs` 的**纯合成**定义对照（参数化路径） |
+| `test_verify_pr62_stats.py` | 单测（第 5 轮，16 条） |
 
 ## 用法
 
@@ -57,3 +60,8 @@ ASSETSQA_REPO=$PWD ASSETSQA_HANDOFF=<handoff-root> \
 - **重复题号要在 dict 折叠前统计**：题块存进 dict 后重复号已被覆盖，`gaps`/`duplicates` 永远看不到。
 - **`sourceId` 没有授权 handoff 就填 `unknown`**：不要把别处报告里的 sourceId 抄成本地事实。
 - **`structurally_valid` 不等于 verified**：它只表示本地结构检查通过，不代表官方原卷、也不代表采集侧一致。答案/解析恒为 `unknown`，不得从答案逆推题干。
+- **`mapping` 可能包含 `ambiguous` 的绑定**：分类说「不强行绑定」，但 `mapping` 里仍会出现；下游读 `mapping` 会自动采纳。核验时要比较 `len(mapping)` 与「分类已映射」的差。
+- **`coverage` 是否含 weak 必须写清**：含 `weak_candidate_review` 的分母口径与「仅 exact+near」能差 7 个百分点（0.862 → 0.792）。
+- **`exact` 是规范化后相等，不是逐字相同**：标点/空白/全角都会被折叠，`'甲，乙。丙！丁？'` 与 `'甲 乙 丙 丁'` 判 exact。
+- **相邻下降点 ≠ 逆序对**：块状重排可能只有 4 个下降点却有 1249 个逆序对（19.7%）；不能据此说「近乎单调」。
+- **`imageSignal` 比的是图片引用字符串**，不是图片字节：同文件不同路径得 0，同路径不同内容得 1。
