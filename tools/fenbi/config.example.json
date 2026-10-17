@@ -7,6 +7,7 @@
   "settleMs": 1500,
   "maxPages": 250,
   "concurrency": 1,
+  "routeParams": [],
   "contentSelector": null,
   "domAdapter": null,
   "nextQuestionSelector": null,

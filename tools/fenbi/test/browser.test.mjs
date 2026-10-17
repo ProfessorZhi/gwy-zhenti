@@ -387,3 +387,37 @@ test('a rate-limited or challenged read is never accepted, and never counted as 
   assert.equal(observer.stats.unauthorized, 1);
   assert.equal(observer.stats.failed, 0, 'rate limits are classified separately so the driver can back off');
 });
+
+// ── declared route parameters and the unchanged guard ───────────────────────────────────────
+// A real practice URL carries a route query parameter (`routecs`) that the framework does not know.
+// Declaring it keeps the page URL faithful; it must not widen any safety decision.
+
+test('safePageUrl keeps only a declared, structurally safe route parameter', () => {
+  const url = 'https://www.fenbi.com/spa/tiku/exercise/12345?routecs=SYNTHETIC_ROUTE_VALUE&paperId=8399763';
+  assert.equal(safePageUrl(url), 'https://www.fenbi.com/spa/tiku/exercise/12345?paperId=8399763', 'undeclared → dropped');
+  assert.equal(safePageUrl(url, ['routecs']), url);
+  assert.equal(safePageUrl(`${url}&token=SYNTHETIC_PRIVATE_VALUE`, ['routecs']), url,
+    'a credential parameter is still dropped even when the caller declares other route parameters');
+  assert.equal(safePageUrl(`https://www.fenbi.com/spa/tiku/exercise/12345?routecs=${'a'.repeat(300)}`, ['routecs']),
+    'https://www.fenbi.com/spa/tiku/exercise/12345',
+    'a structurally unsafe value is dropped even when the name is declared');
+  // A duplicated route parameter collapses with it rather than leaving an unvalidated copy behind.
+  assert.equal(safePageUrl(`${url}&routecs=${'a'.repeat(300)}`, ['routecs']),
+    'https://www.fenbi.com/spa/tiku/exercise/12345?paperId=8399763');
+  assert.equal(safePageUrl('https://evil.invalid/spa/tiku/exercise/1?routecs=x', ['routecs']), null, 'off-domain stays null');
+});
+
+test('captureDom records the declared route parameter without widening the guard', async () => {
+  const url = 'https://www.fenbi.com/spa/tiku/exercise/12345?routecs=SYNTHETIC_ROUTE_VALUE';
+  const page = { url: () => url, title: async () => 'p',
+    locator: () => ({ count: async () => 1, evaluateAll: async () => ['<main class="q">题干</main>'] }) };
+  const declared = await captureDom(page, '.q', { routeParams: ['routecs'] });
+  assert.equal(declared.url, url);
+  const undeclared = await captureDom(page, '.q');
+  assert.equal(undeclared.url, 'https://www.fenbi.com/spa/tiku/exercise/12345');
+
+  // Declaring a route parameter must not change what may be requested.
+  assert.equal(requestPolicy({ url: 'https://tiku.fenbi.com/api/xingce/exercises', method: 'POST' }), 'blockedWrites');
+  assert.equal(requestPolicy({ url: 'https://evil.invalid/x', navigation: true }), 'blockedNavigation');
+  assert.equal(requestPolicy({ url: 'https://tiku.fenbi.com/api/xingce/papers', method: 'GET' }), null);
+});

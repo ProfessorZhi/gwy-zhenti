@@ -16,7 +16,7 @@ export function inferIdentity(paper, labels = []) {
 const variantKey = value => String(value || '').normalize('NFKC').replace(/[\s（）()]/g, '').replace(/[类卷]/g, '');
 const subjectKey = value => ({ 行测: 'xingce', 申论: 'shenlun' }[value] || value);
 
-export function makePlan(catalog, inventory, scope, { all = false } = {}) {
+export function makePlan(catalog, inventory, scope, { all = false, routeParams = [] } = {}) {
   const jobs = [], excluded = [];
   for (const paper of catalog.papers || []) {
     if (/模拟|模考|预测|密卷|冲刺|练习|事业单位|选调生/.test(paper.title || '')) {
@@ -41,7 +41,7 @@ export function makePlan(catalog, inventory, scope, { all = false } = {}) {
     // the job must not become ready from a URL nobody can navigate back to.
     let url = null, reproducible = true;
     if (paper.url) {
-      try { reproducible = urlIsReproducible(paper.url); url = reproducible ? publicUrl(paper.url) : null; } catch { url = null; }
+      try { reproducible = urlIsReproducible(paper.url, routeParams); url = reproducible ? publicUrl(paper.url, routeParams) : null; } catch { url = null; }
     }
     jobs.push({
       identity, url, expected: { questions: Number.isInteger(paper.questionCount) && paper.questionCount > 0 ? paper.questionCount : null, materials: null, questionNumbers: null, materialIds: null },

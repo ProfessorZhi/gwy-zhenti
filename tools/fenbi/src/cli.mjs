@@ -87,7 +87,7 @@ async function saveRegistry(config, urls) {
 }
 
 async function navigate(page, url, config) {
-  await page.goto(publicUrl(url), { waitUntil: 'domcontentloaded', timeout: config.timeoutMs });
+  await page.goto(publicUrl(url, config.routeParams), { waitUntil: 'domcontentloaded', timeout: config.timeoutMs });
   await sleep(config.settleMs);
 }
 
@@ -108,7 +108,7 @@ async function browserCommand(command, config, values) {
     console.log(command === 'login' ? '请在专用浏览器窗口完成粉笔短信登录，账号信息不会写入报告。' : '请在窗口进入需要核对的分类或试卷；采集模式会拦截写操作。');
     await pause(command === 'login' ? '登录成功并进入题库目录后返回终端。' : '完成分类浏览或打开需要采集的题目后返回终端。', values);
     await observer.flush();
-    const dom = await captureDom(session.page, command === 'inspect' ? config.contentSelector : null);
+    const dom = await captureDom(session.page, command === 'inspect' ? config.contentSelector : null, { routeParams: config.routeParams });
     catalog.links = [...new Map([...catalog.links, ...dom.links].map(x => [x.url, x])).values()];
     catalog.observedAt = new Date().toISOString(); catalog.complete = false;
     // Match only actually observed links; never synthesize private SPA routes from IDs.
@@ -141,18 +141,18 @@ function countOption(value, name) {
   return count;
 }
 
-async function addJob(values) {
+async function addJob(values, config) {
   const identity = Object.fromEntries(['id', 'title', 'subject', 'area', 'variant'].map(key => [key, values[key]]));
   identity.year = Number(values.year);
   if (Object.values(identity).some(x => x === undefined || x === '' || x === null) ||
       !['xingce', 'shenlun'].includes(identity.subject) || !Number.isInteger(identity.year) || identity.year < 2016 || identity.year > new Date().getFullYear()) throw new Error('Provide a complete observed paper identity');
   // Refuse rather than silently navigate somewhere else: if normalising the observed URL would drop
   // a path, a fragment or a non-credential parameter, this framework cannot reproduce that URL.
-  if (!urlIsReproducible(values.url)) {
-    const loss = urlRouteLoss(values.url);
+  if (!urlIsReproducible(values.url, config.routeParams)) {
+    const loss = urlRouteLoss(values.url, config.routeParams);
     throw new Error(`Observed URL is not reproducible (path=${loss.path} hash=${loss.hash} dropped=${loss.routeParams.join(',') || 'none'}); re-observe a URL whose route this framework can store exactly`);
   }
-  const job = { identity, url: publicUrl(values.url),
+  const job = { identity, url: publicUrl(values.url, config.routeParams),
     expected: { questions: countOption(values.questions, 'questions'), materials: countOption(values.materials, 'materials'), questionNumbers: null, materialIds: null },
     expectedBasis: 'operator_verified_source', reason: 'explicit_target', status: 'ready' };
   const planPath = path.join(WORK, 'plan.json');
@@ -184,7 +184,14 @@ async function captureJob(session, job, config, values, runtime = {}) {
   const throttle = runtime.throttle ?? null;
   const control = runtime.control ?? null;
   const serialize = runtime.serialize ?? ((task) => task());
-  const host = new URL(publicUrl(job.url)).hostname;
+  const target = publicUrl(job.url, config.routeParams);
+  // A stored URL that cannot be reproduced means this framework would navigate somewhere the
+  // operator never observed. Refuse by name instead of leaving the slot page on about:blank.
+  if (!urlIsReproducible(job.url, config.routeParams)) {
+    const loss = urlRouteLoss(job.url, config.routeParams);
+    throw Object.assign(new Error(`Job URL is not reproducible (dropped=${loss.routeParams.join(',') || 'none'}); declare the route parameter before capturing`), { code: 'JOB_URL_NOT_REPRODUCIBLE' });
+  }
+  const host = new URL(target).hostname;
   const configFingerprint = digest({ contentSelector: config.contentSelector, nextQuestionSelector: config.nextQuestionSelector,
     explanationSelector: config.explanationSelector, fieldMap: config.fieldMap, domAdapter: config.domAdapter });
   const resumed = !values.force && await resumeBundle(WORK, job, configFingerprint, validateDocument);
@@ -192,7 +199,7 @@ async function captureJob(session, job, config, values, runtime = {}) {
   const directory = safeChild(WORK, `papers/${jobKey(job)}`);
   await fs.mkdir(directory, { recursive: true });
   const runId = `${Date.now()}-${process.pid}`;
-  const document = createDocument(job.identity, { url: publicUrl(job.url), capturedAt: new Date().toISOString() });
+  const document = createDocument(job.identity, { url: target, capturedAt: new Date().toISOString() });
   Object.assign(document.expected, job.expected);
   document.evidence.push({ type: 'expected-counts-basis', basis: job.expectedBasis, expected: job.expected });
   const shapes = [];
@@ -229,10 +236,10 @@ async function captureJob(session, job, config, values, runtime = {}) {
     // catalogue, and a redirect can land on a sign-in page. Either way this page is not the paper,
     // so the capture is blocked rather than reading whatever happens to be on screen. A page the
     // site opened by itself is never driven — it is only named, so an operator can re-aim the job.
-    const entry = publicUrl(config.entryUrl);
-    const landed = safePageUrl(page.url());
+    const entry = publicUrl(config.entryUrl, config.routeParams);
+    const landed = safePageUrl(page.url(), config.routeParams);
     const strayUrls = (runtime.strayPages ?? [])
-      .map((candidate) => { try { return safePageUrl(candidate.url()); } catch { return null; } })
+      .map((candidate) => { try { return safePageUrl(candidate.url(), config.routeParams); } catch { return null; } })
       .filter((url) => url && url !== entry);
     document.evidence.push({ type: 'page-landed', url: landed, expected: document.source.url, otherObservedPages: strayUrls });
     const mismatch = landingMismatch({ landed, expected: document.source.url, entry, strayUrls });
@@ -249,7 +256,7 @@ async function captureJob(session, job, config, values, runtime = {}) {
         const explain = page.locator(config.explanationSelector);
         if (await explain.count() === 1 && await explain.isVisible()) { await explain.click(); await sleep(config.delayMs); await observer.flush(); }
       }
-      const dom = await captureDom(page, config.contentSelector);
+      const dom = await captureDom(page, config.contentSelector, { routeParams: config.routeParams });
       if (dom.blocked && !['content_selector_required', 'selector_not_found'].includes(dom.blocked.reason)) {
         document.evidence.push({ type: 'blocked', reason: dom.blocked.reason }); break;
       }
@@ -397,7 +404,7 @@ async function main() {
   if (command === 'plan') {
     const catalog = await readJson(path.join(WORK, 'catalog.json'));
     const inventory = parseInventory(await fs.readFile(path.join(REPO, 'catalog/manifest.jsonl'), 'utf8'));
-    const plan = makePlan(catalog, inventory, config.scope, values);
+    const plan = makePlan(catalog, inventory, config.scope, { ...values, routeParams: config.routeParams });
     for (const job of plan.jobs) job.key = jobKey(job);
     const filename = path.join(WORK, `plan-${Date.now()}.json`);
     await writeJson(filename, plan);
@@ -409,7 +416,7 @@ async function main() {
   const release = await acquireLock(WORK);
   let session;
   try {
-    if (command === 'add') return await addJob(values);
+    if (command === 'add') return await addJob(values, config);
     if (['login', 'catalog', 'inspect'].includes(command)) return await browserCommand(command, config, values);
     if (['capture', 'validate', 'export'].includes(command)) {
       const jobs = await getJobs(values);
@@ -437,7 +444,7 @@ async function main() {
         session.context.on('page', (opened) => { if (!isScheduled(opened)) strayPages.push(opened); });
         const run = await runBounded(jobs, (job, { slot }) => captureJob(session, job, config, values,
           { page: pages[slot], slot, throttle, control, serialize, registry, strayPages }), { concurrency, control });
-        if (strayPages.length) console.log(JSON.stringify({ strayPages: strayPages.map((page) => safePageUrl(page.url())),
+        if (strayPages.length) console.log(JSON.stringify({ strayPages: strayPages.map((page) => safePageUrl(page.url(), config.routeParams)),
           note: '页面自行打开的标签页未被驱动，也未计入任何任务的证据' }, null, 2));
         console.log(JSON.stringify({ command: 'capture', concurrency: run.concurrency, completed: run.results.filter(r => r?.ok).length,
           failed: run.failures.length, skipped: run.skipped.length, stopped: run.stopped, reason: run.reason, throttle: throttle.state() }, null, 2));

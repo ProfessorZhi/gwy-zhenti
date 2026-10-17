@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
-import { loadConfig, publicUrl, safeChild, urlIsReproducible, urlRouteLoss, WORK } from '../src/config.mjs';
+import { loadConfig, normalizeRouteParams, publicUrl, safeChild, urlIsReproducible, urlMatchesObserved, urlRouteLoss, WORK } from '../src/config.mjs';
 import { digest, jobKey, readJson, writeJson, acquireLock, resumeBundle } from '../src/store.mjs';
 import { MAX_CONCURRENCY, clampConcurrency, createControl, createHostThrottle, createSerialQueue, runBounded } from '../src/schedule.mjs';
 import { makePlan } from '../src/plan.mjs';
@@ -412,4 +412,98 @@ test('one profile name cannot reach another profile directory or registry file',
     await writeJson(filename, { profileName: bad });
     await assert.rejects(loadConfig(filename), /Invalid profileName/, `profileName=${bad}`);
   }
+});
+
+// ── an observed route parameter must survive, but only when it is declared and safe ──────────
+// A real practice URL carries a route query parameter this framework does not know (`routecs`).
+// Dropping it changes where the browser lands; accepting anything unlisted would turn the allowlist
+// into a hole. The rule is: declare it explicitly, keep it only if it is a bare identifier with a
+// short opaque value, and compare the observed URL with the normalised one in both directions.
+
+const ROUTE_URL = 'https://www.fenbi.com/spa/tiku/exercise/12345?routecs=SYNTHETIC_ROUTE_VALUE&paperId=8399763';
+
+test('a declared route parameter survives; an undeclared one still means the URL is not reproducible', () => {
+  assert.equal(urlIsReproducible(ROUTE_URL), false, 'undeclared route parameter → needs_route_review');
+  assert.deepEqual(urlRouteLoss(ROUTE_URL).routeParams, ['routecs']);
+  assert.equal(urlIsReproducible(ROUTE_URL, ['routecs']), true);
+  assert.equal(publicUrl(ROUTE_URL, ['routecs']),
+    'https://www.fenbi.com/spa/tiku/exercise/12345?routecs=SYNTHETIC_ROUTE_VALUE&paperId=8399763');
+  assert.deepEqual(urlRouteLoss(ROUTE_URL, ['routecs']).routeParams, []);
+  // Declaring a different name does not help.
+  assert.equal(urlIsReproducible(ROUTE_URL, ['nav']), false);
+});
+
+test('a credential-shaped name is never accepted, even when declared', () => {
+  assert.deepEqual(normalizeRouteParams(['routecs', 'token', 'session', 'auth', 'cookie', 'a b', '']), ['routecs']);
+  // `token` is dropped from the URL even though the operator listed it.
+  assert.equal(publicUrl(`${ROUTE_URL}&token=SYNTHETIC_PRIVATE_VALUE`, ['routecs', 'token']),
+    'https://www.fenbi.com/spa/tiku/exercise/12345?routecs=SYNTHETIC_ROUTE_VALUE&paperId=8399763');
+  assert.ok(!publicUrl(`${ROUTE_URL}&token=SYNTHETIC_PRIVATE_VALUE`, ['routecs', 'token']).includes('SYNTHETIC_PRIVATE_VALUE'));
+});
+
+test('a declared route parameter still cannot smuggle a long or structured value', () => {
+  const base = 'https://www.fenbi.com/spa/tiku/exercise/1';
+  for (const value of ['a'.repeat(300), 'https://evil.invalid/x', 'a%20b', 'a=b', 'a&b', 'a/b']) {
+    const url = `${base}?routecs=${encodeURIComponent(value)}`;
+    assert.equal(urlIsReproducible(url, ['routecs']), false, value.slice(0, 20));
+  }
+  // An empty route value is a faithful reproduction, not a security question.
+  assert.equal(publicUrl(`${base}?routecs=`, ['routecs']), `${base}?routecs=`);
+});
+
+test('the observed/normalised comparison is bidirectional and rejects injection', () => {
+  const observed = 'https://www.fenbi.com/spa/tiku/exercise/1?paperId=8399763';
+  assert.equal(urlMatchesObserved(observed, 'https://www.fenbi.com/spa/tiku/exercise/1?paperId=8399763'), true);
+  assert.equal(urlMatchesObserved(observed, 'https://www.fenbi.com/spa/tiku/exercise/1?paperId=8399763&routecs=x'), false,
+    'the normalised URL may not gain a parameter the observation never had');
+  assert.equal(urlMatchesObserved(observed, 'https://www.fenbi.com/spa/tiku/exercise/2?paperId=8399763'), false, 'path change');
+  assert.equal(urlMatchesObserved(observed, 'https://evil.invalid/spa/tiku/exercise/1?paperId=8399763'), false, 'origin change');
+  assert.equal(urlMatchesObserved(`${observed}&token=SYNTHETIC_PRIVATE_VALUE`, observed), true,
+    'a deliberately stripped credential is not a mismatch');
+});
+
+test('routeParams is validated by config: identifier-shaped, credential-free, short, unique', async (t) => {
+  const dir = await temporary(t), filename = path.join(dir, 'config.json');
+  await writeJson(filename, { routeParams: ['routecs'] });
+  assert.deepEqual((await loadConfig(filename)).routeParams, ['routecs']);
+  assert.deepEqual((await loadConfig()).routeParams, [], 'empty by default — nothing is accepted implicitly');
+  for (const bad of [['token'], ['routecs', 'routecs'], ['a b'], ['1abc'], [''], 'routecs', Array.from({ length: 9 }, (_v, i) => `p${i}`)]) {
+    await writeJson(filename, { routeParams: bad });
+    await assert.rejects(loadConfig(filename), /Invalid routeParams/, JSON.stringify(bad));
+  }
+});
+
+test('a planned job becomes ready only when its observed URL is reproducible under the declared set', () => {
+  const scope = { fromYear: 2016, toYear: 2026, areas: ['江苏'] };
+  const catalog = { labels: [], papers: [{ id: 'p1', title: '2025江苏行测C类', subject: 'xingce',
+    url: 'https://www.fenbi.com/spa/tiku/exercise/12345?routecs=SYNTHETIC_ROUTE_VALUE' }] };
+  const blocked = makePlan(catalog, [], scope);
+  assert.equal(blocked.jobs[0].status, 'needs_route_review');
+  assert.equal(blocked.jobs[0].reason, 'observed_url_not_reproducible');
+
+  const allowed = makePlan(catalog, [], { ...scope, }, { routeParams: ['routecs'] });
+  assert.equal(allowed.jobs[0].status, 'ready');
+  assert.equal(allowed.jobs[0].url, 'https://www.fenbi.com/spa/tiku/exercise/12345?routecs=SYNTHETIC_ROUTE_VALUE');
+});
+
+test('two concurrent papers keep their own route: a slot never sees the other job\'s target', async () => {
+  const jobs = [
+    { id: 'js2025c', url: 'https://www.fenbi.com/spa/tiku/exercise/111?routecs=ROUTE_ONE' },
+    { id: 'zj2026c', url: 'https://www.fenbi.com/spa/tiku/exercise/222?routecs=ROUTE_TWO' },
+  ];
+  const seen = [];
+  const run = await runBounded(jobs, async (job, { slot }) => {
+    const target = publicUrl(job.url, ['routecs']);
+    seen.push({ slot, id: job.id, target });
+    await delay(2);
+    return target;
+  }, { concurrency: 2 });
+  assert.equal(run.failures.length, 0);
+  for (const job of jobs) {
+    const row = seen.find((entry) => entry.id === job.id);
+    assert.ok(row.target.includes(job.url.split('routecs=')[1]), `${job.id} kept its own route`);
+    assert.equal(publicUrl(job.url, ['routecs']), row.target);
+  }
+  assert.notEqual(seen[0].target, seen[1].target);
+  assert.equal(new Set(seen.map((entry) => entry.slot)).size, 2, 'each task held its own slot');
 });
