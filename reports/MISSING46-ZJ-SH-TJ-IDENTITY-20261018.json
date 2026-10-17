@@ -1,0 +1,1060 @@
+{
+ "generated": "2026-10-18",
+ "baseline_pr": 20,
+ "baseline_head": "e1feb5187ec3544cde62a1a128a6269a8d63011b",
+ "registry": "reports/MISSING48-RECOVERY-20261016.json",
+ "registry_remaining": 46,
+ "lane_slots": 37,
+ "lane_by_area": {
+  "浙江": 15,
+  "上海": 16,
+  "天津": 6
+ },
+ "lane_by_subject": {
+  "行测": 21,
+  "申论": 16
+ },
+ "status_counts": {
+  "source_missing": 20,
+  "unknown": 16,
+  "partly_observed": 1
+ },
+ "existence_counts": {
+  "confirmed_public_secondary": 18,
+  "not_confirmed_this_run": 14,
+  "confirmed_official": 3,
+  "inferred_from_sibling": 2
+ },
+ "identity_counts": {
+  "independent_paper": 29,
+  "separate_recruitment_exam": 8
+ },
+ "recovered_complete_papers_this_round": 0,
+ "blocked_sources_not_retried": "reports/MISSING48-PUBLIC-SOURCE-CHECKS-20261016.json 的 10 个来源",
+ "source_policy": "只登记可访问证据与公开元数据；不复制第三方受限正文；不可得即记 source_missing/unknown",
+ "slots": [
+  {
+   "area": "上海",
+   "year": 2016,
+   "subject": "申论",
+   "variant": "行政执法专项",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "separate_recruitment_exam",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海行政执法类公务员为独立招录考试（2016年起，城管+市场监管），9月笔试，一张卷=行测+《申论(行政执法类)》；申论3题、120分钟，与市考4题不同卷",
+     "urls": [
+      "https://www.sohu.com/a/484531334_139324",
+      "https://zhuanlan.zhihu.com/p/398071724",
+      "https://m.huatu.com/2025/0811/2828448.html"
+     ]
+    }
+   ],
+   "note": "上海行政执法考试为独立招录；申论3题/120分钟，与市考A/B卷(4题/150分钟)不同卷",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "行测-A类.md",
+    "行测-B类.md",
+    "行测-行政执法.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2017,
+   "subject": "行测",
+   "variant": "A",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海市考《申论》按职位分A卷/B卷两类，4题、150分钟、满分100分；A/B之外无第三种市考申论卷",
+     "urls": [
+      "https://m.huatu.com/2023/0717/2668510.html",
+      "https://www.huazhi.cn/view-35684-1.html",
+      "https://gwy.gkzhenti.cn/paper?cls=%E7%94%B3%E8%AE%BA&province=%E4%B8%8A%E6%B5%B7"
+     ]
+    }
+   ],
+   "note": "市考A/B类为真实分类；本轮未取得该年行测卷证",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "申论-行政执法卷.md",
+    "行测-统考.md",
+    "行测-行政执法.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2017,
+   "subject": "行测",
+   "variant": "B",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海市考《申论》按职位分A卷/B卷两类，4题、150分钟、满分100分；A/B之外无第三种市考申论卷",
+     "urls": [
+      "https://m.huatu.com/2023/0717/2668510.html",
+      "https://www.huazhi.cn/view-35684-1.html",
+      "https://gwy.gkzhenti.cn/paper?cls=%E7%94%B3%E8%AE%BA&province=%E4%B8%8A%E6%B5%B7"
+     ]
+    }
+   ],
+   "note": "市考A/B类为真实分类；本轮未取得该年行测卷证",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "申论-行政执法卷.md",
+    "行测-统考.md",
+    "行测-行政执法.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2021,
+   "subject": "申论",
+   "variant": "行政执法专项",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "separate_recruitment_exam",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海行政执法类公务员为独立招录考试（2016年起，城管+市场监管），9月笔试，一张卷=行测+《申论(行政执法类)》；申论3题、120分钟，与市考4题不同卷",
+     "urls": [
+      "https://www.sohu.com/a/484531334_139324",
+      "https://zhuanlan.zhihu.com/p/398071724",
+      "https://m.huatu.com/2025/0811/2828448.html"
+     ]
+    },
+    {
+     "tier": "public_secondary",
+     "finding": "2021年上海行政执法类公务员招录480名，笔试上午申论(行政执法类)、下午行测，申论三题",
+     "urls": [
+      "https://www.sohu.com/a/484531334_139324"
+     ]
+    }
+   ],
+   "note": "上海行政执法考试为独立招录；申论3题/120分钟，与市考A/B卷(4题/150分钟)不同卷",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "行测-A类.md",
+    "行测-B类.md",
+    "行测-行政执法.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2022,
+   "subject": "申论",
+   "variant": "A",
+   "paper_existence": "inferred_from_sibling",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海市考《申论》按职位分A卷/B卷两类，4题、150分钟、满分100分；A/B之外无第三种市考申论卷",
+     "urls": [
+      "https://m.huatu.com/2023/0717/2668510.html",
+      "https://www.huazhi.cn/view-35684-1.html",
+      "https://gwy.gkzhenti.cn/paper?cls=%E7%94%B3%E8%AE%BA&province=%E4%B8%8A%E6%B5%B7"
+     ]
+    }
+   ],
+   "note": "市考申论按A/B两类分卷；本年库内仅见另一类，故本类存在性由同类推断，未单独取卷证",
+   "repo_cell_files": [
+    "申论-B类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2022,
+   "subject": "申论",
+   "variant": "行政执法专项",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "separate_recruitment_exam",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海行政执法类公务员为独立招录考试（2016年起，城管+市场监管），9月笔试，一张卷=行测+《申论(行政执法类)》；申论3题、120分钟，与市考4题不同卷",
+     "urls": [
+      "https://www.sohu.com/a/484531334_139324",
+      "https://zhuanlan.zhihu.com/p/398071724",
+      "https://m.huatu.com/2025/0811/2828448.html"
+     ]
+    }
+   ],
+   "note": "上海行政执法考试为独立招录；申论3题/120分钟，与市考A/B卷(4题/150分钟)不同卷",
+   "repo_cell_files": [
+    "申论-B类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2022,
+   "subject": "行测",
+   "variant": "A",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海市考《申论》按职位分A卷/B卷两类，4题、150分钟、满分100分；A/B之外无第三种市考申论卷",
+     "urls": [
+      "https://m.huatu.com/2023/0717/2668510.html",
+      "https://www.huazhi.cn/view-35684-1.html",
+      "https://gwy.gkzhenti.cn/paper?cls=%E7%94%B3%E8%AE%BA&province=%E4%B8%8A%E6%B5%B7"
+     ]
+    }
+   ],
+   "note": "市考A/B类为真实分类；本轮未取得该年行测卷证",
+   "repo_cell_files": [
+    "申论-B类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2022,
+   "subject": "行测",
+   "variant": "行政执法专项",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "separate_recruitment_exam",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海行政执法类公务员为独立招录考试（2016年起，城管+市场监管），9月笔试，一张卷=行测+《申论(行政执法类)》；申论3题、120分钟，与市考4题不同卷",
+     "urls": [
+      "https://www.sohu.com/a/484531334_139324",
+      "https://zhuanlan.zhihu.com/p/398071724",
+      "https://m.huatu.com/2025/0811/2828448.html"
+     ]
+    }
+   ],
+   "note": "属上海行政执法类公务员独立招录（非上海市考）；同一考试另含《申论(行政执法类)》",
+   "repo_cell_files": [
+    "申论-B类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2023,
+   "subject": "申论",
+   "variant": "B",
+   "paper_existence": "inferred_from_sibling",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海市考《申论》按职位分A卷/B卷两类，4题、150分钟、满分100分；A/B之外无第三种市考申论卷",
+     "urls": [
+      "https://m.huatu.com/2023/0717/2668510.html",
+      "https://www.huazhi.cn/view-35684-1.html",
+      "https://gwy.gkzhenti.cn/paper?cls=%E7%94%B3%E8%AE%BA&province=%E4%B8%8A%E6%B5%B7"
+     ]
+    }
+   ],
+   "note": "市考申论按A/B两类分卷；本年库内仅见另一类，故本类存在性由同类推断，未单独取卷证",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "行测-A类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2023,
+   "subject": "行测",
+   "variant": "B",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海市考《申论》按职位分A卷/B卷两类，4题、150分钟、满分100分；A/B之外无第三种市考申论卷",
+     "urls": [
+      "https://m.huatu.com/2023/0717/2668510.html",
+      "https://www.huazhi.cn/view-35684-1.html",
+      "https://gwy.gkzhenti.cn/paper?cls=%E7%94%B3%E8%AE%BA&province=%E4%B8%8A%E6%B5%B7"
+     ]
+    }
+   ],
+   "note": "市考A/B类为真实分类；本轮未取得该年行测卷证",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "行测-A类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2024,
+   "subject": "申论",
+   "variant": "行政执法专项",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "separate_recruitment_exam",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海行政执法类公务员为独立招录考试（2016年起，城管+市场监管），9月笔试，一张卷=行测+《申论(行政执法类)》；申论3题、120分钟，与市考4题不同卷",
+     "urls": [
+      "https://www.sohu.com/a/484531334_139324",
+      "https://zhuanlan.zhihu.com/p/398071724",
+      "https://m.huatu.com/2025/0811/2828448.html"
+     ]
+    }
+   ],
+   "note": "上海行政执法考试为独立招录；申论3题/120分钟，与市考A/B卷(4题/150分钟)不同卷",
+   "repo_cell_files": [
+    "申论-A卷.md",
+    "申论-B卷.md",
+    "申论-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2024,
+   "subject": "行测",
+   "variant": "A",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海市考《申论》按职位分A卷/B卷两类，4题、150分钟、满分100分；A/B之外无第三种市考申论卷",
+     "urls": [
+      "https://m.huatu.com/2023/0717/2668510.html",
+      "https://www.huazhi.cn/view-35684-1.html",
+      "https://gwy.gkzhenti.cn/paper?cls=%E7%94%B3%E8%AE%BA&province=%E4%B8%8A%E6%B5%B7"
+     ]
+    }
+   ],
+   "note": "市考A/B类为真实分类；本轮未取得该年行测卷证",
+   "repo_cell_files": [
+    "申论-A卷.md",
+    "申论-B卷.md",
+    "申论-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2024,
+   "subject": "行测",
+   "variant": "B",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海市考《申论》按职位分A卷/B卷两类，4题、150分钟、满分100分；A/B之外无第三种市考申论卷",
+     "urls": [
+      "https://m.huatu.com/2023/0717/2668510.html",
+      "https://www.huazhi.cn/view-35684-1.html",
+      "https://gwy.gkzhenti.cn/paper?cls=%E7%94%B3%E8%AE%BA&province=%E4%B8%8A%E6%B5%B7"
+     ]
+    }
+   ],
+   "note": "市考A/B类为真实分类；本轮未取得该年行测卷证",
+   "repo_cell_files": [
+    "申论-A卷.md",
+    "申论-B卷.md",
+    "申论-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2024,
+   "subject": "行测",
+   "variant": "行政执法专项",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "separate_recruitment_exam",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海行政执法类公务员为独立招录考试（2016年起，城管+市场监管），9月笔试，一张卷=行测+《申论(行政执法类)》；申论3题、120分钟，与市考4题不同卷",
+     "urls": [
+      "https://www.sohu.com/a/484531334_139324",
+      "https://zhuanlan.zhihu.com/p/398071724",
+      "https://m.huatu.com/2025/0811/2828448.html"
+     ]
+    }
+   ],
+   "note": "属上海行政执法类公务员独立招录（非上海市考）；同一考试另含《申论(行政执法类)》",
+   "repo_cell_files": [
+    "申论-A卷.md",
+    "申论-B卷.md",
+    "申论-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2025,
+   "subject": "申论",
+   "variant": "行政执法专项",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "separate_recruitment_exam",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海行政执法类公务员为独立招录考试（2016年起，城管+市场监管），9月笔试，一张卷=行测+《申论(行政执法类)》；申论3题、120分钟，与市考4题不同卷",
+     "urls": [
+      "https://www.sohu.com/a/484531334_139324",
+      "https://zhuanlan.zhihu.com/p/398071724",
+      "https://m.huatu.com/2025/0811/2828448.html"
+     ]
+    }
+   ],
+   "note": "上海行政执法考试为独立招录；申论3题/120分钟，与市考A/B卷(4题/150分钟)不同卷",
+   "repo_cell_files": [
+    "申论-A卷.md",
+    "申论-B卷.md",
+    "申论-统考.md",
+    "行测-A类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "上海",
+   "year": 2025,
+   "subject": "行测",
+   "variant": "行政执法专项",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "separate_recruitment_exam",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "上海行政执法类公务员为独立招录考试（2016年起，城管+市场监管），9月笔试，一张卷=行测+《申论(行政执法类)》；申论3题、120分钟，与市考4题不同卷",
+     "urls": [
+      "https://www.sohu.com/a/484531334_139324",
+      "https://zhuanlan.zhihu.com/p/398071724",
+      "https://m.huatu.com/2025/0811/2828448.html"
+     ]
+    }
+   ],
+   "note": "属上海行政执法类公务员独立招录（非上海市考）；同一考试另含《申论(行政执法类)》",
+   "repo_cell_files": [
+    "申论-A卷.md",
+    "申论-B卷.md",
+    "申论-统考.md",
+    "行测-A类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "天津",
+   "year": 2022,
+   "subject": "申论",
+   "variant": "行政执法",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "天津申论分级分类：综合市区卷/综合街镇卷/行政执法卷三类并行（2024、2026 均如此），150分钟满分100分",
+     "urls": [
+      "https://m.tj.bendibao.com/job/162361.shtm",
+      "http://m.offcn.com/tjgwy/2025/1105/30544.html",
+      "https://m.huatu.com/2025/1210/2842909.html"
+     ]
+    }
+   ],
+   "note": "2022年天津申论的分类面貌本轮未取得直接证据；库内仅有市级/县级",
+   "repo_cell_files": [
+    "申论-县级.md",
+    "申论-市级.md",
+    "行测-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "天津",
+   "year": 2024,
+   "subject": "申论",
+   "variant": "综合街镇",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "天津申论分级分类：综合市区卷/综合街镇卷/行政执法卷三类并行（2024、2026 均如此），150分钟满分100分",
+     "urls": [
+      "https://m.tj.bendibao.com/job/162361.shtm",
+      "http://m.offcn.com/tjgwy/2025/1105/30544.html",
+      "https://m.huatu.com/2025/1210/2842909.html"
+     ]
+    }
+   ],
+   "note": "2024年天津申论分综合市区/综合街镇/行政执法三类",
+   "repo_cell_files": [
+    "申论-市级.md",
+    "行测-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "天津",
+   "year": 2024,
+   "subject": "申论",
+   "variant": "行政执法",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "天津申论分级分类：综合市区卷/综合街镇卷/行政执法卷三类并行（2024、2026 均如此），150分钟满分100分",
+     "urls": [
+      "https://m.tj.bendibao.com/job/162361.shtm",
+      "http://m.offcn.com/tjgwy/2025/1105/30544.html",
+      "https://m.huatu.com/2025/1210/2842909.html"
+     ]
+    }
+   ],
+   "note": "同上",
+   "repo_cell_files": [
+    "申论-市级.md",
+    "行测-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "天津",
+   "year": 2025,
+   "subject": "申论",
+   "variant": "行政执法",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "天津申论分级分类：综合市区卷/综合街镇卷/行政执法卷三类并行（2024、2026 均如此），150分钟满分100分",
+     "urls": [
+      "https://m.tj.bendibao.com/job/162361.shtm",
+      "http://m.offcn.com/tjgwy/2025/1105/30544.html",
+      "https://m.huatu.com/2025/1210/2842909.html"
+     ]
+    }
+   ],
+   "note": "2025年分类面貌本轮未取得直接证据",
+   "repo_cell_files": [
+    "申论-市区卷.md",
+    "申论-统考.md",
+    "申论-街镇卷.md",
+    "行测-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "天津",
+   "year": 2026,
+   "subject": "申论",
+   "variant": "综合市区",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "天津申论分级分类：综合市区卷/综合街镇卷/行政执法卷三类并行（2024、2026 均如此），150分钟满分100分",
+     "urls": [
+      "https://m.tj.bendibao.com/job/162361.shtm",
+      "http://m.offcn.com/tjgwy/2025/1105/30544.html",
+      "https://m.huatu.com/2025/1210/2842909.html"
+     ]
+    }
+   ],
+   "note": "2026年天津申论分综合市区/综合街镇/行政执法三类",
+   "repo_cell_files": [
+    "申论-统考.md",
+    "申论-行政执法.md",
+    "行测-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "天津",
+   "year": 2026,
+   "subject": "申论",
+   "variant": "综合街镇",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "天津申论分级分类：综合市区卷/综合街镇卷/行政执法卷三类并行（2024、2026 均如此），150分钟满分100分",
+     "urls": [
+      "https://m.tj.bendibao.com/job/162361.shtm",
+      "http://m.offcn.com/tjgwy/2025/1105/30544.html",
+      "https://m.huatu.com/2025/1210/2842909.html"
+     ]
+    }
+   ],
+   "note": "同上",
+   "repo_cell_files": [
+    "申论-统考.md",
+    "申论-行政执法.md",
+    "行测-统考.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2016,
+   "subject": "行测",
+   "variant": "C（优秀村干部）",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "浙江省考优秀村干部类笔试为《行政职业能力测验》(C卷)+《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://m.huatu.com/zhaojing/news/zhejiang/2017/1117/1605742.html",
+      "http://www.offcn.com/zjgwy/2017/0905/19442_2.html",
+      "https://news.koolearn.com/20171116/1139970_3.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测C卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "行测-A类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2017,
+   "subject": "行测",
+   "variant": "C（优秀村干部）",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "浙江省考优秀村干部类笔试为《行政职业能力测验》(C卷)+《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://m.huatu.com/zhaojing/news/zhejiang/2017/1117/1605742.html",
+      "http://www.offcn.com/zjgwy/2017/0905/19442_2.html",
+      "https://news.koolearn.com/20171116/1139970_3.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测C卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "行测-A类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2018,
+   "subject": "行测",
+   "variant": "C（优秀村干部）",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "浙江省考优秀村干部类笔试为《行政职业能力测验》(C卷)+《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://m.huatu.com/zhaojing/news/zhejiang/2017/1117/1605742.html",
+      "http://www.offcn.com/zjgwy/2017/0905/19442_2.html",
+      "https://news.koolearn.com/20171116/1139970_3.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测C卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "行测-A类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2019,
+   "subject": "行测",
+   "variant": "C（优秀村干部）",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "浙江省考优秀村干部类笔试为《行政职业能力测验》(C卷)+《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://m.huatu.com/zhaojing/news/zhejiang/2017/1117/1605742.html",
+      "http://www.offcn.com/zjgwy/2017/0905/19442_2.html",
+      "https://news.koolearn.com/20171116/1139970_3.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测C卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "行测-A类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2020,
+   "subject": "行测",
+   "variant": "C（优秀村干部）",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "浙江省考优秀村干部类笔试为《行政职业能力测验》(C卷)+《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://m.huatu.com/zhaojing/news/zhejiang/2017/1117/1605742.html",
+      "http://www.offcn.com/zjgwy/2017/0905/19442_2.html",
+      "https://news.koolearn.com/20171116/1139970_3.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测C卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "行测-A类.md",
+    "行测-B类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2021,
+   "subject": "行测",
+   "variant": "D（优秀村干部）",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "自2021年起浙江行测分A/B/C/D卷，D卷对应优秀村干部类；主观题为《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://www.huatu.com/2022/1208/2598681.html",
+      "http://www.haining.gov.cn/art/2022/2/23/art_1688835_161814.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测D卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "申论-C类.md",
+    "行测-A类.md",
+    "行测-B类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2022,
+   "subject": "申论",
+   "variant": "A",
+   "paper_existence": "confirmed_official",
+   "paper_identity": "independent_paper",
+   "completeness_status": "partly_observed",
+   "evidence": [
+    {
+     "tier": "official_announcement",
+     "finding": "2022年浙江省考笔试2022-07-09；《申论》按职位分A/B/C三卷（综合类/基层类/行政执法类）",
+     "urls": [
+      "https://www.zj.gov.cn/art/2022/6/12/art_9614088_59711702.html",
+      "https://www.hangzhou.gov.cn/art/2022/6/22/art_1229063420_4054783.html"
+     ]
+    },
+    {
+     "tier": "public_secondary",
+     "finding": "2022浙江申论A的主题（充电桩问题与建议、小微企业座谈发言提纲、民生服务作文）见机构分析，但无完整给定材料与逐字作答要求",
+     "urls": [
+      "https://www.eoffcn.com/kszx/detail/1029502.html",
+      "https://yuantuedu.com/list_19/10686.html"
+     ]
+    }
+   ],
+   "note": "已证开考与卷型；仅取得主题级信息，无完整材料与逐字作答要求",
+   "repo_cell_files": [
+    "行测-A类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2022,
+   "subject": "申论",
+   "variant": "B",
+   "paper_existence": "confirmed_official",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "official_announcement",
+     "finding": "2022年浙江省考笔试2022-07-09；《申论》按职位分A/B/C三卷（综合类/基层类/行政执法类）",
+     "urls": [
+      "https://www.zj.gov.cn/art/2022/6/12/art_9614088_59711702.html",
+      "https://www.hangzhou.gov.cn/art/2022/6/22/art_1229063420_4054783.html"
+     ]
+    }
+   ],
+   "note": "已证开考与卷型；未取得任何正文",
+   "repo_cell_files": [
+    "行测-A类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2022,
+   "subject": "申论",
+   "variant": "C",
+   "paper_existence": "confirmed_official",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "official_announcement",
+     "finding": "2022年浙江省考笔试2022-07-09；《申论》按职位分A/B/C三卷（综合类/基层类/行政执法类）",
+     "urls": [
+      "https://www.zj.gov.cn/art/2022/6/12/art_9614088_59711702.html",
+      "https://www.hangzhou.gov.cn/art/2022/6/22/art_1229063420_4054783.html"
+     ]
+    }
+   ],
+   "note": "已证开考与卷型；未取得任何正文",
+   "repo_cell_files": [
+    "行测-A类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2022,
+   "subject": "行测",
+   "variant": "B",
+   "paper_existence": "not_confirmed_this_run",
+   "paper_identity": "independent_paper",
+   "completeness_status": "unknown",
+   "evidence": [
+    {
+     "tier": "prior_repo_report",
+     "finding": "已尝试来源中 kkgwy 只列 2022 行测 A/C、无 B；该清单为空不证明 B 不存在",
+     "urls": [
+      "https://www.kkgwy.com/stk/zj/14922.html"
+     ]
+    }
+   ],
+   "note": "浙江2022职位分综合类/基层类/行政执法类/优秀村干部类，理论上应有B类；本轮未取得直接卷证",
+   "repo_cell_files": [
+    "行测-A类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2022,
+   "subject": "行测",
+   "variant": "D（优秀村干部）",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "自2021年起浙江行测分A/B/C/D卷，D卷对应优秀村干部类；主观题为《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://www.huatu.com/2022/1208/2598681.html",
+      "http://www.haining.gov.cn/art/2022/2/23/art_1688835_161814.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测D卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "行测-A类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2023,
+   "subject": "行测",
+   "variant": "D（优秀村干部）",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "自2021年起浙江行测分A/B/C/D卷，D卷对应优秀村干部类；主观题为《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://www.huatu.com/2022/1208/2598681.html",
+      "http://www.haining.gov.cn/art/2022/2/23/art_1688835_161814.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测D卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "申论-C类.md",
+    "行测-A类.md",
+    "行测-B类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2024,
+   "subject": "行测",
+   "variant": "D（优秀村干部）",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "自2021年起浙江行测分A/B/C/D卷，D卷对应优秀村干部类；主观题为《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://www.huatu.com/2022/1208/2598681.html",
+      "http://www.haining.gov.cn/art/2022/2/23/art_1688835_161814.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测D卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "申论-C类.md",
+    "行测-A类.md",
+    "行测-B类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2025,
+   "subject": "行测",
+   "variant": "D（优秀村干部）",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "自2021年起浙江行测分A/B/C/D卷，D卷对应优秀村干部类；主观题为《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://www.huatu.com/2022/1208/2598681.html",
+      "http://www.haining.gov.cn/art/2022/2/23/art_1688835_161814.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测D卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "申论-C类.md",
+    "行测-A类.md",
+    "行测-B类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  },
+  {
+   "area": "浙江",
+   "year": 2026,
+   "subject": "行测",
+   "variant": "D（优秀村干部）",
+   "paper_existence": "confirmed_public_secondary",
+   "paper_identity": "independent_paper",
+   "completeness_status": "source_missing",
+   "evidence": [
+    {
+     "tier": "public_secondary",
+     "finding": "自2021年起浙江行测分A/B/C/D卷，D卷对应优秀村干部类；主观题为《综合应用能力》，不含《申论》",
+     "urls": [
+      "https://www.huatu.com/2022/1208/2598681.html",
+      "http://www.haining.gov.cn/art/2022/2/23/art_1688835_161814.html"
+     ]
+    }
+   ],
+   "note": "该卷为行测D卷；同场主观题是《综合应用能力》而非《申论》，不得计入申论完整率",
+   "repo_cell_files": [
+    "申论-A类.md",
+    "申论-B类.md",
+    "申论-C类.md",
+    "行测-A类.md",
+    "行测-B类.md",
+    "行测-C类.md"
+   ],
+   "slot_has_dedicated_file": false
+  }
+ ]
+}
