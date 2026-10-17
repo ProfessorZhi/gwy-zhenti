@@ -1,0 +1,572 @@
+{
+ "main": "34439ace3ad6c0b93b0671b1f76ca4afd6cce06d",
+ "root_pr20": "e1feb5187ec3544cde62a1a128a6269a8d63011b",
+ "prs": {
+  "19": {
+   "sha": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab",
+   "branch": "essay/source-search-all-20261013",
+   "base": "main",
+   "base_is_pr": null,
+   "base_is_main": true,
+   "own_files": 121,
+   "files_if_based_on_main": 121,
+   "dragged_in_beyond_own": 0
+  },
+  "20": {
+   "sha": "e1feb5187ec3544cde62a1a128a6269a8d63011b",
+   "branch": "codex/shenlun-full-repair-20261015",
+   "base": "main",
+   "base_is_pr": null,
+   "base_is_main": true,
+   "own_files": 2319,
+   "files_if_based_on_main": 2319,
+   "dragged_in_beyond_own": 0
+  },
+  "21": {
+   "sha": "74ad18a1916a2e3b2f253cbfb546c9b12392736a",
+   "branch": "feat/fenbi-answer-evidence-qa-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 8,
+   "files_if_based_on_main": 2322,
+   "dragged_in_beyond_own": 2314
+  },
+  "22": {
+   "sha": "17db96063cc808a1f59b0f0f5afe42dfab2e0cb7",
+   "branch": "fenbi/test-browser-executable-override",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 1,
+   "files_if_based_on_main": 2319,
+   "dragged_in_beyond_own": 2318
+  },
+  "23": {
+   "sha": "d859faf76478ce9d1dcc056eb9eed9c4a6e17f2f",
+   "branch": "audit/fix-spurious-crlf-receipt-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 3,
+   "files_if_based_on_main": 2319,
+   "dragged_in_beyond_own": 2316
+  },
+  "24": {
+   "sha": "c0401ff567a122434b796c95d89999b6e34410df",
+   "branch": "audit/missing25-evidence-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 10,
+   "files_if_based_on_main": 2329,
+   "dragged_in_beyond_own": 2319
+  },
+  "25": {
+   "sha": "5f48f56820535a50ec579bb1412a6aaf9668fdee",
+   "branch": "fenbi/live-first-batch-report-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 1,
+   "files_if_based_on_main": 2320,
+   "dragged_in_beyond_own": 2319
+  },
+  "26": {
+   "sha": "7e1b958da8073ddaa03b27e06e1c255c91233c30",
+   "branch": "fix/dom-capture-question-key-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 2,
+   "files_if_based_on_main": 2319,
+   "dragged_in_beyond_own": 2317
+  },
+  "27": {
+   "sha": "5c68955b065efedc5894b0d8e600c0e4b8aee7eb",
+   "branch": "fenbi/live-second-batch-report-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 1,
+   "files_if_based_on_main": 2320,
+   "dragged_in_beyond_own": 2319
+  },
+  "28": {
+   "sha": "a019daad0a7c08eb83bbef9b71cb288b0ed13426",
+   "branch": "feat/fenbi-bounded-concurrency-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 8,
+   "files_if_based_on_main": 2320,
+   "dragged_in_beyond_own": 2312
+  },
+  "29": {
+   "sha": "a23c5bd275bbf6088995e27872574ef1562e6f3f",
+   "branch": "fenbi/live-third-batch-report-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 1,
+   "files_if_based_on_main": 2320,
+   "dragged_in_beyond_own": 2319
+  },
+  "30": {
+   "sha": "12be252b5b58d617d215f8c7a5125a9adec8c2fb",
+   "branch": "audit/three-paper-matrix-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 18,
+   "files_if_based_on_main": 2337,
+   "dragged_in_beyond_own": 2319
+  },
+  "31": {
+   "sha": "6e38f30cc1b05ed4c3f84d987d267497b6c4a821",
+   "branch": "integ/candidate-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 20,
+   "files_if_based_on_main": 2323,
+   "dragged_in_beyond_own": 2303
+  },
+  "32": {
+   "sha": "a90e2684",
+   "branch": "audit/coverage-matrix-qa-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 3,
+   "files_if_based_on_main": 2322,
+   "dragged_in_beyond_own": 2319
+  },
+  "33": {
+   "sha": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+   "branch": "fenbi/audit-correction-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 1,
+   "files_if_based_on_main": 2320,
+   "dragged_in_beyond_own": 2319
+  },
+  "34": {
+   "sha": "45042ddca443cf8376f1294ae2e6ec8808ae39fd",
+   "branch": "audit/missing11-evidence-pack-20261017",
+   "base": "audit/three-paper-matrix-20261017",
+   "base_is_pr": 30,
+   "base_is_main": false,
+   "own_files": 9,
+   "files_if_based_on_main": 2340,
+   "dragged_in_beyond_own": 2331
+  },
+  "35": {
+   "sha": "b62ad54afd67263622db5869f9f28e9a051ec117",
+   "branch": "evidence/shenlun-completeness-20261017",
+   "base": "main",
+   "base_is_pr": null,
+   "base_is_main": true,
+   "own_files": 2323,
+   "files_if_based_on_main": 2323,
+   "dragged_in_beyond_own": 0
+  },
+  "36": {
+   "sha": "4372e8af81b2e9ff55cf0cad5929b324df4c29ca",
+   "branch": "qa/collection-placeholder-gate-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 4,
+   "files_if_based_on_main": 2319,
+   "dragged_in_beyond_own": 2315
+  },
+  "38": {
+   "sha": "44eb61d217d78684cf2f49e60d4a5987c90b79b2",
+   "branch": "assetsqa/visual-consistency-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 6,
+   "files_if_based_on_main": 2325,
+   "dragged_in_beyond_own": 2319
+  },
+  "39": {
+   "sha": "5d48523f387a5adc5786c5ee766516e39cbe924b",
+   "branch": "audit/answer-provenance-markers-20261017",
+   "base": "codex/shenlun-full-repair-20261015",
+   "base_is_pr": 20,
+   "base_is_main": false,
+   "own_files": 4,
+   "files_if_based_on_main": 2323,
+   "dragged_in_beyond_own": 2319
+  }
+ },
+ "overlaps": [
+  {
+   "a": 20,
+   "b": 35,
+   "count": 2319,
+   "files": [
+    ".github/workflows/cloud-quality.yml",
+    ".github/workflows/fenbi-framework.yml",
+    ".github/workflows/shenlun-source-search-all.yml",
+    "COVERAGE-优先区.md",
+    "PROGRESS.md",
+    "QUALITY.md",
+    "README.md",
+    "catalog/manifest.jsonl",
+    "docs/来源校勘/上海2016申论-原统考混合或重复来源.md",
+    "docs/来源校勘/上海2017申论-原统考混合或重复来源.md",
+    "docs/来源校勘/上海2018申论-原统考混合或重复来源.md",
+    "docs/来源校勘/上海2019申论-原统考混合或重复来源.md"
+   ]
+  },
+  {
+   "a": 19,
+   "b": 20,
+   "count": 121,
+   "files": [
+    ".github/workflows/shenlun-source-search-all.yml",
+    "COVERAGE-优先区.md",
+    "PROGRESS.md",
+    "catalog/manifest.jsonl",
+    "reports/DEFECTS.jsonl",
+    "reports/QUALITY-AUDIT.md",
+    "reports/QUALITY-SUMMARY.json",
+    "reports/SHENLUN-SOURCE-SEARCH-451-20261013.json",
+    "reports/SHENLUN-SOURCE-SEARCH-REMAINING-20261013.json",
+    "reports/SOURCED-CONTINUATION-20261013.json",
+    "reports/SOURCED-CONTINUATION-20261013.jsonl",
+    "reports/SOURCED-CONTINUATION-20261013.md"
+   ]
+  },
+  {
+   "a": 19,
+   "b": 35,
+   "count": 121,
+   "files": [
+    ".github/workflows/shenlun-source-search-all.yml",
+    "COVERAGE-优先区.md",
+    "PROGRESS.md",
+    "catalog/manifest.jsonl",
+    "reports/DEFECTS.jsonl",
+    "reports/QUALITY-AUDIT.md",
+    "reports/QUALITY-SUMMARY.json",
+    "reports/SHENLUN-SOURCE-SEARCH-451-20261013.json",
+    "reports/SHENLUN-SOURCE-SEARCH-REMAINING-20261013.json",
+    "reports/SOURCED-CONTINUATION-20261013.json",
+    "reports/SOURCED-CONTINUATION-20261013.jsonl",
+    "reports/SOURCED-CONTINUATION-20261013.md"
+   ]
+  },
+  {
+   "a": 20,
+   "b": 31,
+   "count": 16,
+   "files": [
+    ".github/workflows/fenbi-framework.yml",
+    "reports/FULL-REPAIR-BASELINE-20261015.json",
+    "reports/full-repair-20261015/receipts-003.jsonl",
+    "tools/fenbi/README.md",
+    "tools/fenbi/config.example.json",
+    "tools/fenbi/src/align.mjs",
+    "tools/fenbi/src/browser.mjs",
+    "tools/fenbi/src/cli.mjs",
+    "tools/fenbi/src/config.mjs",
+    "tools/fenbi/src/plan.mjs",
+    "tools/fenbi/src/validate.mjs",
+    "tools/fenbi/test/browser-smoke.test.mjs"
+   ]
+  },
+  {
+   "a": 31,
+   "b": 35,
+   "count": 16,
+   "files": [
+    ".github/workflows/fenbi-framework.yml",
+    "reports/FULL-REPAIR-BASELINE-20261015.json",
+    "reports/full-repair-20261015/receipts-003.jsonl",
+    "tools/fenbi/README.md",
+    "tools/fenbi/config.example.json",
+    "tools/fenbi/src/align.mjs",
+    "tools/fenbi/src/browser.mjs",
+    "tools/fenbi/src/cli.mjs",
+    "tools/fenbi/src/config.mjs",
+    "tools/fenbi/src/plan.mjs",
+    "tools/fenbi/src/validate.mjs",
+    "tools/fenbi/test/browser-smoke.test.mjs"
+   ]
+  },
+  {
+   "a": 24,
+   "b": 30,
+   "count": 10,
+   "files": [
+    "reports/FENBI-MISSING25-EVIDENCE-20261017.json",
+    "reports/FENBI-MISSING25-EVIDENCE-20261017.md",
+    "tools/fenbi/audit/README.md",
+    "tools/fenbi/audit/_common.py",
+    "tools/fenbi/audit/build_evidence_ledger.py",
+    "tools/fenbi/audit/donor_compare.py",
+    "tools/fenbi/audit/fetch_pinned_sources.py",
+    "tools/fenbi/audit/gap_audit.py",
+    "tools/fenbi/audit/reference_probe.py",
+    "tools/fenbi/audit/run_gap_audit.sh"
+   ]
+  },
+  {
+   "a": 21,
+   "b": 31,
+   "count": 8,
+   "files": [
+    ".github/workflows/fenbi-framework.yml",
+    "reports/FENBI-ANSWER-QA-20261017.md",
+    "tools/fenbi/ANSWER-EVIDENCE-SOP.md",
+    "tools/fenbi/README.md",
+    "tools/fenbi/src/align.mjs",
+    "tools/fenbi/src/cli.mjs",
+    "tools/fenbi/src/validate.mjs",
+    "tools/fenbi/test/answerqa.test.mjs"
+   ]
+  },
+  {
+   "a": 28,
+   "b": 31,
+   "count": 8,
+   "files": [
+    "tools/fenbi/config.example.json",
+    "tools/fenbi/src/browser.mjs",
+    "tools/fenbi/src/cli.mjs",
+    "tools/fenbi/src/config.mjs",
+    "tools/fenbi/src/schedule.mjs",
+    "tools/fenbi/test/browser-smoke.test.mjs",
+    "tools/fenbi/test/browser.test.mjs",
+    "tools/fenbi/test/pipeline.test.mjs"
+   ]
+  },
+  {
+   "a": 20,
+   "b": 28,
+   "count": 7,
+   "files": [
+    "tools/fenbi/config.example.json",
+    "tools/fenbi/src/browser.mjs",
+    "tools/fenbi/src/cli.mjs",
+    "tools/fenbi/src/config.mjs",
+    "tools/fenbi/test/browser-smoke.test.mjs",
+    "tools/fenbi/test/browser.test.mjs",
+    "tools/fenbi/test/pipeline.test.mjs"
+   ]
+  },
+  {
+   "a": 28,
+   "b": 35,
+   "count": 7,
+   "files": [
+    "tools/fenbi/config.example.json",
+    "tools/fenbi/src/browser.mjs",
+    "tools/fenbi/src/cli.mjs",
+    "tools/fenbi/src/config.mjs",
+    "tools/fenbi/test/browser-smoke.test.mjs",
+    "tools/fenbi/test/browser.test.mjs",
+    "tools/fenbi/test/pipeline.test.mjs"
+   ]
+  },
+  {
+   "a": 30,
+   "b": 34,
+   "count": 6,
+   "files": [
+    "reports/FENBI-THREE-PAPER-MATRIX-20261017.md",
+    "tools/fenbi/audit/HANDOFF.md",
+    "tools/fenbi/audit/README.md",
+    "tools/fenbi/audit/_common.py",
+    "tools/fenbi/audit/handoff_reconcile.py",
+    "tools/fenbi/audit/tests/test_audit.py"
+   ]
+  },
+  {
+   "a": 20,
+   "b": 21,
+   "count": 5,
+   "files": [
+    ".github/workflows/fenbi-framework.yml",
+    "tools/fenbi/README.md",
+    "tools/fenbi/src/align.mjs",
+    "tools/fenbi/src/cli.mjs",
+    "tools/fenbi/src/validate.mjs"
+   ]
+  },
+  {
+   "a": 21,
+   "b": 35,
+   "count": 5,
+   "files": [
+    ".github/workflows/fenbi-framework.yml",
+    "tools/fenbi/README.md",
+    "tools/fenbi/src/align.mjs",
+    "tools/fenbi/src/cli.mjs",
+    "tools/fenbi/src/validate.mjs"
+   ]
+  },
+  {
+   "a": 20,
+   "b": 36,
+   "count": 4,
+   "files": [
+    "tools/fenbi/src/align.mjs",
+    "tools/fenbi/src/validate.mjs",
+    "tools/fenbi/test/align.test.mjs",
+    "tools/fenbi/test/model.test.mjs"
+   ]
+  },
+  {
+   "a": 35,
+   "b": 36,
+   "count": 4,
+   "files": [
+    "tools/fenbi/src/align.mjs",
+    "tools/fenbi/src/validate.mjs",
+    "tools/fenbi/test/align.test.mjs",
+    "tools/fenbi/test/model.test.mjs"
+   ]
+  },
+  {
+   "a": 20,
+   "b": 23,
+   "count": 3,
+   "files": [
+    "reports/FULL-REPAIR-BASELINE-20261015.json",
+    "reports/full-repair-20261015/receipts-003.jsonl",
+    "tools/full_repair_lf_publication_20261015.py"
+   ]
+  },
+  {
+   "a": 23,
+   "b": 31,
+   "count": 3,
+   "files": [
+    "reports/FULL-REPAIR-BASELINE-20261015.json",
+    "reports/full-repair-20261015/receipts-003.jsonl",
+    "tools/full_repair_lf_publication_20261015.py"
+   ]
+  },
+  {
+   "a": 23,
+   "b": 35,
+   "count": 3,
+   "files": [
+    "reports/FULL-REPAIR-BASELINE-20261015.json",
+    "reports/full-repair-20261015/receipts-003.jsonl",
+    "tools/full_repair_lf_publication_20261015.py"
+   ]
+  },
+  {
+   "a": 31,
+   "b": 36,
+   "count": 3,
+   "files": [
+    "tools/fenbi/src/align.mjs",
+    "tools/fenbi/src/validate.mjs",
+    "tools/fenbi/test/model.test.mjs"
+   ]
+  },
+  {
+   "a": 20,
+   "b": 26,
+   "count": 2,
+   "files": [
+    "tools/fenbi/src/browser.mjs",
+    "tools/fenbi/test/browser.test.mjs"
+   ]
+  },
+  {
+   "a": 21,
+   "b": 36,
+   "count": 2,
+   "files": [
+    "tools/fenbi/src/align.mjs",
+    "tools/fenbi/src/validate.mjs"
+   ]
+  },
+  {
+   "a": 24,
+   "b": 34,
+   "count": 2,
+   "files": [
+    "tools/fenbi/audit/README.md",
+    "tools/fenbi/audit/_common.py"
+   ]
+  },
+  {
+   "a": 26,
+   "b": 28,
+   "count": 2,
+   "files": [
+    "tools/fenbi/src/browser.mjs",
+    "tools/fenbi/test/browser.test.mjs"
+   ]
+  },
+  {
+   "a": 26,
+   "b": 31,
+   "count": 2,
+   "files": [
+    "tools/fenbi/src/browser.mjs",
+    "tools/fenbi/test/browser.test.mjs"
+   ]
+  },
+  {
+   "a": 26,
+   "b": 35,
+   "count": 2,
+   "files": [
+    "tools/fenbi/src/browser.mjs",
+    "tools/fenbi/test/browser.test.mjs"
+   ]
+  },
+  {
+   "a": 20,
+   "b": 22,
+   "count": 1,
+   "files": [
+    "tools/fenbi/test/browser-smoke.test.mjs"
+   ]
+  },
+  {
+   "a": 21,
+   "b": 28,
+   "count": 1,
+   "files": [
+    "tools/fenbi/src/cli.mjs"
+   ]
+  },
+  {
+   "a": 22,
+   "b": 28,
+   "count": 1,
+   "files": [
+    "tools/fenbi/test/browser-smoke.test.mjs"
+   ]
+  },
+  {
+   "a": 22,
+   "b": 31,
+   "count": 1,
+   "files": [
+    "tools/fenbi/test/browser-smoke.test.mjs"
+   ]
+  },
+  {
+   "a": 22,
+   "b": 35,
+   "count": 1,
+   "files": [
+    "tools/fenbi/test/browser-smoke.test.mjs"
+   ]
+  }
+ ],
+ "base_chain": []
+}
