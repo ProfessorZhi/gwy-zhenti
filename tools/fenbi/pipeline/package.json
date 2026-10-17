@@ -1,0 +1,11 @@
+{
+  "name": "gwy-fenbi-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local, resumable, bounded multi-stage queue for observed Fenbi papers",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
