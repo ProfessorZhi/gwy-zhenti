@@ -383,3 +383,48 @@ class CoverageStateTests(unittest.TestCase):
         self.assertIn(h, idx)  # from OTHER-RECEIPT
         (reports / "OTHER-RECEIPT.json").unlink()
         self.assertNotIn(h, m.build_receipt_index(self.root))  # own output excluded
+
+
+class SelfCitationTests(unittest.TestCase):
+    """A citation to this repo's own history is not independent evidence.
+
+    241 blocks were previously `verified` on the strength of a link to
+    github.com/ProfessorZhi/gwy-zhenti/blob/<sha>/... -- which records what the library
+    used to say, not where the answer came from.
+    """
+
+    def test_self_repo_url_is_not_backing(self):
+        url = ("https://github.com/ProfessorZhi/gwy-zhenti/blob/"
+               "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab/%E7%9C%81%E8%80%83/x.md")
+        self.assertIsNotNone(m.SELF_REPO_URL.match(url))
+
+    def test_external_url_is_backing(self):
+        url = "https://example.org/source.pdf"
+        self.assertIsNone(m.SELF_REPO_URL.match(url))
+
+    def test_block_verified_only_by_self_url_is_source_present(self):
+        url = "https://github.com/ProfessorZhi/gwy-zhenti/blob/abc/x.md"
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "省考").mkdir()
+            (root / "reports").mkdir()
+            (root / "reports" / "R.json").write_text(url, encoding="utf-8")
+            (root / "省考" / "a.md").write_text(paper(
+                block(1, f"**答案**：A\n\n**来源参考解析（非官方标准答案）**\n\n"
+                        f"[既有记录]({url})\n")), encoding="utf-8")
+            r = m.scan(root)
+            self.assertEqual(r["coverage"]["verified"], 0)
+            self.assertEqual(r["coverage"]["source-present"], 1)
+
+    def test_block_verified_by_external_url(self):
+        url = "https://example.org/source.pdf"
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "省考").mkdir()
+            (root / "reports").mkdir()
+            (root / "reports" / "R.json").write_text(url, encoding="utf-8")
+            (root / "省考" / "a.md").write_text(paper(
+                block(1, f"**答案**：A\n\n**来源参考解析（非官方标准答案）**\n\n"
+                        f"[来源]({url})\n")), encoding="utf-8")
+            r = m.scan(root)
+            self.assertEqual(r["coverage"]["verified"], 1)

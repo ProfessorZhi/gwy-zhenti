@@ -99,6 +99,10 @@ NEGATION_RE = re.compile(r"非|不|未|无|缺|没有")
 NEGATION_WINDOW = 14
 
 HEX64_RE = re.compile(r"\b[0-9a-fA-F]{64}\b")
+# A link to this repository's own history documents what the library used to say; it is
+# not independent evidence of where an answer came from. Counting it as "backed" made
+# the audit corroborate itself: 241 blocks were verified on that basis alone.
+SELF_REPO_URL = re.compile(r"^https?://(?:www\.)?github\.com/ProfessorZhi/gwy-zhenti(?:/|$)")
 URL_RE = re.compile(r"https?://[^\s)\]\"'>]+")
 
 # Named corpora / institutions that are third-party by construction. If a paper claims
@@ -267,7 +271,8 @@ def file_provenance(fm: dict, receipt_index: set) -> dict:
         "cited_hashes": hashes,
         "cited_urls": urls,
         "backed_hashes": backed,
-        "backed": bool(backed) or bool(urls and any(u in receipt_index for u in urls)),
+        "backed": bool(backed) or bool([u for u in urls
+                                        if u in receipt_index and not SELF_REPO_URL.match(u)]),
         "claims_official": claims_official_broad(blob),
         "sources_institutional_only": institutional_only,
         "official_claim_with_only_institutional_sources":
@@ -329,7 +334,8 @@ def scan_file(path: Path, root: Path, receipt_index: set) -> list[dict]:
         block_hashes = [h.lower() for h in HEX64_RE.findall(block)]
         block_urls = URL_RE.findall(block)
         block_backed = (any(h in receipt_index for h in block_hashes)
-                        or any(u in receipt_index for u in block_urls))
+                        or any(u in receipt_index for u in block_urls
+                               if not SELF_REPO_URL.match(u)))
 
         if block_declared:
             coverage = "verified" if block_backed else "source-present"
