@@ -7,7 +7,7 @@ fixture，不访问粉笔站点、不读取 Cookie、不写任何正式题本。
 ## 当前状态（请如实理解）
 
 - ✅ 队列、租约、阶段机、handoff、退避、背压、崩溃恢复、死信、**离线 observation importer** 与 CLI
-  已实现，并有 58 个合成测试。
+  已实现，并有 71 个合成测试。
 - ❌ **没有部署 24 小时常驻 collector，也没有启动 daemon/systemd。** 本模块只提供单次有界
   `drain` / `reconcile`，适合由现有每小时调度任务调用。
 - ❌ **没有内置真实粉笔浏览器 adapter。** 不注入 adapter 时，`drain --role collector` 会以
@@ -189,6 +189,61 @@ SHA-256、逐图 `ref/sourceUrl`、`review.required` 和 producer。它明确写
 `verify-handoff` 会拒绝凭证型字段/值、绝对路径、`..`、哈希不符、AI/unknown 答案未标人审。
 别的 Agent 不需要、也不应该接触账号 Profile。
 
+## 离线已有产物的 QA handoff（不走 capture）
+
+用于 Owner **已经采集完成**、只移交 local-only 结构化摘要与 canonical hash 的场景。它不是
+`capture_ready` 抓取任务：`capture_ready` 直接标为 `mode=offline_handoff`，`normalized` 才是第一个
+可领取阶段；不需要、也不允许 practice URL。
+
+```json
+{
+  "schemaVersion": 1,
+  "kind": "gwy-zhenti-staged-qa-handoff",
+  "producer": { "agent": "fenbi-browser-owner", "at": "2026-10-18T00:00:00Z" },
+  "permissions": {
+    "browserProfile": false, "cookies": false, "tokens": false,
+    "rawSiteTextIncluded": false, "imageBytesIncluded": false
+  },
+  "identity": { "paperSourceId": "9000001", "version": "qa-v1", "title": "合成样卷",
+    "subject": "xingce", "area": "浙江", "year": 2026, "variant": "C类" },
+  "source": { "category": "observed_ui", "license": null, "redistribution": "local_only",
+    "evidence": [{ "type": "observed_ui", "ref": "owner metadata package" }] },
+  "summary": { "questionCount": 2, "questionNumbers": [1,2], "materialCount": 0,
+    "placeholderNumbers": [], "unknownNumbers": [], "imageCount": 1 },
+  "artifacts": [
+    { "path": "artifacts/summary.json", "kind": "summary", "sha256": "<64hex>", "bytes": 123 },
+    { "path": "artifacts/asset-manifest.json", "kind": "asset_manifest", "sha256": "<64hex>", "bytes": 123 }
+  ],
+  "assets": [{ "ref": "material/q1.png", "sha256": "<64hex>", "bytes": 12 }]
+}
+```
+
+安全闸门（全部在导入前校验，失败不建 job）：
+
+- handoff 文件、artifact 文件和目录必须 **0600/0700、当前 UID、非 symlink**；不 chmod/chown。
+- 只允许 `summary` / `metadata` / `asset_manifest` / `question_index` / `alignment` 五类 JSON
+  artifact；每件 ≤2 MiB；拒绝 HTML/图片/压缩包 magic、超长文本和 `contentHtml` 等正文字段。
+- handoff **不能含 URL/route 字段**；source 必须 `local_only`；必须有 `observed_ui`/`observed_catalog`
+  evidence；`permissions.rawSiteTextIncluded/imageBytesIncluded` 必须为 false。
+- 逐图 `assets[].sha256` 必须与 `asset_manifest` 一致；缺 SHA/哈希不符/重复 ref 直接拒绝。
+- 导入后 `capture_ready=done/offline_handoff`，不产生 capture lease；消费者从 `normalized` 起领取。
+
+命令：
+
+```bash
+# 导入（文件默认 0600；artifact 根默认 handoff 所在目录）
+node tools/fenbi/pipeline/src/cli.mjs qa-import \
+  --config ... --allowlist work/fenbi/pipeline/allowlist.json \
+  --handoff /path/to/qa-handoff.json [--artifact-root /path/to/package]
+
+# 生成只读任务清单（0600；含 range/stage/owner/workDir/permissions/unknown/blocked）
+node tools/fenbi/pipeline/src/cli.mjs manifest --config ... --stage normalized \
+  [--out work/fenbi/pipeline/manifests/normalized.json]
+```
+
+`manifest` 只写 metadata 与队列相对路径，不含正文、图片字节、Cookie/Profile 或 practice URL；
+`actionable=false` 的条目是 blocked/上一阶段未完成，消费者不应领取。
+
 ## 常用命令
 
 ```bash
@@ -324,11 +379,14 @@ cd tools/fenbi/pipeline
 npm test          # 等价于 node --test test/*.test.mjs
 ```
 
-58 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
+71 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
 429/503 退避与 401 阻断、权限/不可再分发元数据、handoff 凭证负例、占位与 AI 答案不能完成、
 **1 producer + 2 独立 consumers + reviewer/verifier 全链路**、**图片 manifest SHA 正负例**、
 **未授权源不产生租约**、**无再分发许可强制 local_only**、**占位/unknown 不算内容**、
-**PR54 routecs 声明/未声明/重复/超长**、**GET-only 拒绝 API/初始化/交卷路径**、
+**PR54 routecs 声明/未声明/重复/超长**、**Owner route_reobserved/url_stable/offline_fetchability evidence 与 metadata-only 负例**、**GET-only 拒绝 API/初始化/交卷路径**、
+**QA handoff 0600/0700 权限、symlink/raw content/URL/图片 SHA 负例**、
+**1 QA producer + 2 independent consumers + reviewer/verifier**、**needs_review 停止**、
+**只读 worker manifest 的 range/owner/path/permissions/unknown/blocked**、
 **batch import 先校验后入队与 max-files**、**offline importer 的 fetch 调用为 0**、
 **status.metrics / collector_unwired 指标**、背压、
 PR28/PR31/PR36/PR42/PR45 契约相容性、CLI 真实退出码。测试不会打开浏览器、不会访问站点、

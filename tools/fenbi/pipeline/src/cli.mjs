@@ -11,6 +11,8 @@ import { evaluateBackpressure, hostPressure, summarizeHostPressure } from './bac
 import { loadThrottle, resetThrottle, saveThrottle, throttleSnapshot } from './throttle.mjs';
 import { loadAdapter, runAwaitedManifest, runCollector, runWorkerDrain } from './collector.mjs';
 import { importObservations, importObservationDirectory, loadAllowlist } from './observation.mjs';
+import { importQaHandoff } from './qa-handoff.mjs';
+import { buildStageManifest, writeStageManifest } from './manifest.mjs';
 
 const HELP = `gwy-zhenti offline pipeline (bounded queue, no daemon)
   node tools/fenbi/pipeline/src/cli.mjs init [--data-dir DIR]
@@ -21,6 +23,8 @@ const HELP = `gwy-zhenti offline pipeline (bounded queue, no daemon)
       [--image material/q1.png:https://img.fbstatic.cn/...] [--questions N] [--materials N]
       [--variant V] [--actor NAME]
   node tools/fenbi/pipeline/src/cli.mjs enqueue-offline --handoff FILE [--artifact-root DIR]
+  node tools/fenbi/pipeline/src/cli.mjs qa-import --handoff FILE [--artifact-root DIR] [--allowlist FILE]
+  node tools/fenbi/pipeline/src/cli.mjs manifest --stage STAGE [--out FILE]
   node tools/fenbi/pipeline/src/cli.mjs observe-import --handoff FILE [--allowlist FILE] [--dry-run]
   node tools/fenbi/pipeline/src/cli.mjs observe-import --handoff-dir DIR [--max-files 5]
       [--allowlist FILE] [--dry-run]
@@ -129,6 +133,7 @@ async function baseStatus(queue, config) {
     byClassification[entry.classification] = (byClassification[entry.classification] ?? 0) + 1;
   }
   const collectorState = await readStateJson(config, 'collector-status.json');
+  const uniqueCatalogSources = new Set(Object.values(catalog?.entries ?? {}).map((entry) => entry.sourceId)).size;
   return {
     status,
     collector: {
@@ -141,6 +146,7 @@ async function baseStatus(queue, config) {
     },
     observedCatalog: {
       entries: Object.keys(catalog?.entries ?? {}).length,
+      uniqueSources: uniqueCatalogSources,
       byClassification,
       updatedAt: catalog?.updatedAt ?? null,
     },
@@ -213,6 +219,47 @@ async function main() {
     const artifacts = await copyHandoffArtifacts(handoff, root, destination, { config });
     const result = await queue.enqueueOffline(input, artifacts);
     return ok({ jobId: result.jobId, created: result.created, duplicate: result.duplicate, status: result.job.status });
+  }
+
+  if (command === 'qa-import') {
+    const filename = positionals[1] ?? requireValue(values, 'handoff', 'handoff');
+    const root = values['artifact-root'] ? path.resolve(values['artifact-root']) : path.dirname(path.resolve(filename));
+    const allowlistFile = values.allowlist ?? path.join(config.dataDir, 'allowlist.json');
+    const allowlist = await loadAllowlist(allowlistFile);
+    const result = await importQaHandoff({ queue, config, filename: path.resolve(filename), artifactRoot: root, allowlist });
+    return ok({ ...result, allowlistFile });
+  }
+
+  if (command === 'manifest') {
+    const stage = values.stage ?? positionals[1] ?? requireValue(values, 'stage', 'stage');
+    const jobs = await queue.listJobs();
+    const catalog = await readStateJson(config, 'observed-catalog.json');
+    const byClassification = {};
+    for (const entry of Object.values(catalog?.entries ?? {})) {
+      byClassification[entry.classification] = (byClassification[entry.classification] ?? 0) + 1;
+    }
+    const manifest = buildStageManifest({
+      jobs, stage, config,
+      observedCatalog: {
+        entries: Object.keys(catalog?.entries ?? {}).length,
+        uniqueSources: new Set(Object.values(catalog?.entries ?? {}).map((entry) => entry.sourceId)).size,
+        byClassification,
+        updatedAt: catalog?.updatedAt ?? null,
+        items: Object.values(catalog?.entries ?? {}).map((entry) => ({
+          sourceId: entry.sourceId, title: entry.title, version: entry.version,
+          classification: entry.classification, reason: entry.reason,
+          contentStatus: entry.contentStatus, urlDigest: entry.urlDigest,
+        })),
+      },
+    });
+    const filename = values.out ? path.resolve(values.out) : path.join(config.dataDir, 'manifests', `${stage}.json`);
+    await writeStageManifest(filename, manifest);
+    return ok({
+      manifest: filename, stage, tasks: manifest.tasks.length,
+      blocked: manifest.tasks.filter((task) => task.blocked).length,
+      observedCatalog: manifest.observedCatalog,
+      note: manifest.note,
+    });
   }
 
   if (command === 'observe-import') {
@@ -403,7 +450,10 @@ try {
   process.stdout.write(JSON.stringify(payload, null, 2) + '\n');
   process.exitCode = exit;
 } catch (error) {
-  const exit = ['LEASE_HELD', 'COLLECTOR_LOCKED', 'LEASE_LOST', 'THROTTLE_BLOCKED'].includes(error.code) ? EXIT.BLOCKED : EXIT.INVALID;
+  const blockedCodes = ['LEASE_HELD', 'COLLECTOR_LOCKED', 'LEASE_LOST', 'THROTTLE_BLOCKED',
+    'QA_HANDOFF_NOT_AUTHORIZED', 'QA_HANDOFF_INSECURE_PERMISSIONS', 'QA_HANDOFF_RAW_CONTENT',
+    'QA_HANDOFF_URL_NOT_ALLOWED', 'QA_HANDOFF_REDISTRIBUTION', 'QA_HANDOFF_OBSERVATION_EVIDENCE'];
+  const exit = blockedCodes.includes(error.code) ? EXIT.BLOCKED : EXIT.INVALID;
   process.stdout.write(JSON.stringify({ ok: false, error: { code: error.code ?? 'ERROR', message: error.message } }, null, 2) + '\n');
   process.exitCode = exit;
 }

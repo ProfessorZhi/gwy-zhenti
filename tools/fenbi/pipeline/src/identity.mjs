@@ -6,6 +6,16 @@ import { CREDENTIAL_QUERY_NAME, ROUTE_PARAM_VALUE } from './config.mjs';
 export const SOURCE_CATEGORIES = Object.freeze(['observed_ui', 'official', 'licensed_donor']);
 export const REDISTRIBUTION = Object.freeze(['local_only', 'allowed']);
 
+/**
+ * Positive observation evidence accepted by both the observation importer and the enqueue
+ * gate. The Owner's 2026-10-18 re-observation uses a dated marker; only that shape is accepted.
+ * Metadata-only markers such as `needs_owner_reobservation` are deliberately excluded.
+ */
+export function isPositiveObservationEvidence(type) {
+  return ['observed_ui', 'observed_catalog', 'offline_fetchability', 'url_stable_across_reads'].includes(type)
+    || /^route_reobserved_\d{8}$/.test(String(type));
+}
+
 const SAFE_QUERY = new Set(['labelId', 'paperId', 'id', 'toPage', 'pageSize', 'type', 'categoryId']);
 const SENSITIVE_QUERY = CREDENTIAL_QUERY_NAME;
 // Tracking/attribution parameters do not select a route; dropping them cannot change the page.
@@ -195,8 +205,8 @@ export function normalizeEnqueueInput(input = {}, config, now = Date.now()) {
   if (sourceCategory === 'licensed_donor' && !license) throw fail('licensed_donor sources require an explicit license');
   if (redistribution === 'allowed' && sourceCategory === 'licensed_donor' && !license) throw fail('Redistribution permission requires a license');
   const evidence = sanitizeEvidence(input.evidence);
-  if (sourceCategory === 'observed_ui' && !evidence.some((item) => item.type === 'observed_ui' || item.type === 'observed_catalog')) {
-    throw fail('observed_ui sources need an observed_ui/observed_catalog evidence entry');
+  if (sourceCategory === 'observed_ui' && !evidence.some((item) => isPositiveObservationEvidence(item.type))) {
+    throw fail('observed_ui sources need positive re-observation evidence (observed_ui/observed_catalog/route_reobserved_YYYYMMDD/offline_fetchability/url_stable_across_reads)');
   }
   if (sourceCategory !== 'observed_ui' && !evidence.length) throw fail('This source category needs a written source/permission reference');
 

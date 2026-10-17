@@ -164,11 +164,11 @@ export class PipelineQueue {
   }
 
   /** Add a manifest-only offline job whose staged artifact has already been imported. */
-  async enqueueOffline(input, artifacts) {
+  async enqueueOffline(input, artifacts, { summary = null } = {}) {
     await this.init();
     const normalized = normalizeEnqueueInput({ ...input, offline: true }, this.config, this.now());
-    if (!['licensed_donor', 'official'].includes(normalized.source.category)) {
-      throw queueError('OFFLINE_SOURCE_REQUIRED', 'Offline jobs need an official or licensed-donor source');
+    if (!['observed_ui', 'licensed_donor', 'official'].includes(normalized.source.category)) {
+      throw queueError('OFFLINE_SOURCE_REQUIRED', 'Offline jobs need an observed_ui, official or licensed-donor source');
     }
     if (!Array.isArray(artifacts) || !artifacts.length) throw queueError('ARTIFACT_REQUIRED', 'Offline jobs need at least one verified staged artifact');
     const jobId = jobIdFor(normalized);
@@ -190,6 +190,7 @@ export class PipelineQueue {
       year: normalized.year, variant: normalized.variant,
       url: normalized.url, urlObserved: normalized.urlObserved, allowCapture: false,
       images: normalized.images,
+      qaSummary: summary,
       source: normalized.source, expected: normalized.expected, permissions: normalized.permissions,
       createdAt: nowIso(now), updatedAt: nowIso(now), revision: 1, status: 'queued', stages,
       history: [{ at: nowIso(now), event: 'enqueued_offline', actor: input.actor ?? 'cli' }],

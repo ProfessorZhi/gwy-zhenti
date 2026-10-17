@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { newQueue, temporary, makeConfig } from './helpers.mjs';
+import { newQueue, enqueueInput, temporary, makeConfig } from './helpers.mjs';
 import {
   classifyObservation, importObservations, importObservationDirectory, loadAllowlist, validateObservationHandoff,
 } from '../src/observation.mjs';
@@ -166,6 +166,48 @@ test('handoff envelopes reject credentials but allow the false permission declar
   assert.equal(list.value.ids.size, 4);
 });
 
+test('owner re-observation evidence is accepted, metadata-only evidence is not', async (t) => {
+  const dir = await temporary(t);
+  const config = makeConfig(dir, { routeParams: ['routecs'] });
+  const list = await allowlist();
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const rightsDefault = { ...observation().rights, evidence: [{ type: 'rights-default', ref: 'synthetic local_only default' }] };
+  const positive = observation({
+    route: {
+      ...observation().route,
+      url: 'https://www.fenbi.com/spa/tiku/exam/9000001?routecs=xingce',
+      evidence: [
+        { type: 'route_reobserved_20261018', ref: 'synthetic owner re-observation' },
+        { type: 'url_stable_across_reads', ref: 'synthetic stable URL' },
+        { type: 'offline_fetchability', ref: 'synthetic fetchability probe' },
+      ],
+    },
+    rights: rightsDefault,
+  });
+  assert.equal(classifyObservation(positive, { allowlist: list.value, config }).classification, 'capture_ready');
+  const metadataOnly = observation({
+    route: {
+      ...observation().route,
+      evidence: [
+        { type: 'needs_owner_reobservation', ref: 'metadata only' },
+        { type: 'metadata-handoff', ref: 'metadata only' },
+      ],
+    },
+    rights: rightsDefault,
+  });
+  const rejected = classifyObservation(metadataOnly, { allowlist: list.value, config });
+  assert.equal(rejected.classification, 'needs_route_review');
+  assert.equal(rejected.reason, 'observation-evidence-missing');
+  const sessionOnly = observation({
+    route: {
+      ...observation().route,
+      evidence: [{ type: 'requires_owner_authenticated_session', ref: 'session required' }],
+    },
+    rights: rightsDefault,
+  });
+  assert.equal(classifyObservation(sessionOnly, { allowlist: list.value, config }).reason, 'observation-evidence-missing');
+});
+
 test('PR54 route params are preserved only when declared; write routes never become capture_ready', async (t) => {
   const dir = await temporary(t);
   const list = await allowlist();
@@ -275,4 +317,20 @@ test('import enqueues only eligible items, deduplicates on repeat, and records t
   assert.equal(dry.dryRun, true);
   assert.equal(dry.items.find((item) => item.classification === 'capture_ready').enqueued, false);
   void dir;
+});
+
+
+test('the enqueue gate and the importer share the positive re-observation evidence predicate', async (t) => {
+  const { queue } = await newQueue(t, { routeParams: ['routecs'] });
+  const accepted = await queue.enqueue(enqueueInput({
+    url: 'https://www.fenbi.com/spa/tiku/exam/9000001?routecs=xingce',
+    evidence: [
+      { type: 'route_reobserved_20261018', ref: 'synthetic owner re-observation' },
+      { type: 'url_stable_across_reads', ref: 'synthetic stable URL' },
+    ],
+  }));
+  assert.equal(accepted.created, true);
+  await assert.rejects(queue.enqueue(enqueueInput({
+    evidence: [{ type: 'needs_owner_reobservation', ref: 'metadata only' }],
+  })), /positive re-observation evidence/);
 });

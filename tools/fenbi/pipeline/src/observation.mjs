@@ -5,6 +5,7 @@ import { queuePaths } from './config.mjs';
 import {
   REDISTRIBUTION, SOURCE_CATEGORIES, assertArtifactRelative, sanitizeEvidence,
   sanitizeImageUrl, sanitizeSourceUrl, urlMatchesObserved, isWriteRoute,
+  isPositiveObservationEvidence,
 } from './identity.mjs';
 import { assertNoCredentialMaterial } from './handoff.mjs';
 
@@ -16,7 +17,6 @@ export const CLASSIFICATIONS = Object.freeze([
 ]);
 
 function observationError(code, message) { return Object.assign(new Error(`[${code}] ${message}`), { code }); }
-const OBSERVED_EVIDENCE = new Set(['observed_ui', 'observed_catalog']);
 const PERMISSION_EVIDENCE = new Set(['redistribution_permission']);
 
 function text(value, label, { max = 500, pattern } = {}) {
@@ -186,7 +186,7 @@ export function classifyObservation(observation, { allowlist, config, producer =
   let evidence;
   try { evidence = evidenceList(route.evidence, rights.evidence); }
   catch (error) { return { ...base, classification: 'needs_route_review', reason: error.message }; }
-  if (!evidence.some((item) => OBSERVED_EVIDENCE.has(item.type))) {
+  if (!evidence.some((item) => isPositiveObservationEvidence(item.type))) {
     return { ...base, classification: 'needs_route_review', reason: 'observation-evidence-missing' };
   }
   let effectiveRedistribution = requestedRedistribution;
