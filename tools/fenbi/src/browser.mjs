@@ -3,10 +3,19 @@ import path from 'node:path';
 import { createHash, randomUUID } from 'node:crypto';
 import { load } from 'cheerio';
 import { observedReadUrl } from './reads.mjs';
+import { sanitizeHashRoute } from './config.mjs';
 
 const SAFE_QUERY = new Set(['labelId', 'toPage', 'page', 'pageSize', 'paperId', 'year', 'categoryId', 'provinceId', 'id', 'type']);
 const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
 const ACCOUNT_PATH = /(?:^|\/)(?:user[^/]*|history|member\w*|auth\w*|login|logout|current|selected|submit|records?|favorites?|category-exercises-unfinished)(?:\/|$)/i;
+// The only non-account `data-*` attributes that may survive DOM capture. Kept as an explicit
+// list so a newly observed attribute cannot start persisting account or session state by default.
+// `data-question-key` carries Fenbi's composite question key (for example `3_1_beq2d`) and is what
+// the verified DOM adapter selects on; without it every `app-ti` is invisible to that adapter.
+const STRUCTURAL_DATA_ATTRIBUTES = ['data-latex', 'data-math', 'data-formula', 'data-src', 'data-original', 'data-question-key'];
+// A question key is a bare identifier. Anything else — a URL, a query string, a token, an
+// over-long value — is dropped like any other unrecognised attribute rather than persisted.
+const QUESTION_KEY = /^[A-Za-z0-9_-]{1,80}$/u;
 const MAX_ASSET_BYTES = 12 * 1024 * 1024;
 const MAX_ASSETS = 256;
 const MAX_TOTAL_ASSET_BYTES = 128 * 1024 * 1024;
@@ -28,10 +37,32 @@ function safeAssetUrl(value) {
   url.hash = '';
   return url.toString();
 }
+/** Persisted page URL: keeps only the parameters this framework recognises, or null off-domain. */
+export function safePageUrl(value) { return safeUrl(value); }
+
+/**
+ * Decide whether the page we hold is actually the paper this job targets.
+ *
+ * Returns null when the capture may proceed, or a reason string when it must be blocked. It is
+ * deliberately conservative: it blocks only the cases that are unambiguously wrong — the page left
+ * the Fenbi origin, or it is still sitting on the catalogue while the job asked for a deeper route,
+ * which is exactly what a link that opened in a new tab looks like. It never guesses that some
+ * other page is "probably" the paper; a page this framework did not open is only ever named.
+ */
+export function landingMismatch({ landed, expected, entry, strayUrls = [] }) {
+  if (!landed) return 'page-not-on-fenbi';
+  if (landed === entry && expected && expected !== entry) {
+    // Prefer the more specific diagnosis: the paper is open, just not in the page we are holding.
+    return strayUrls.some((url) => url !== entry) ? 'paper-opened-in-another-page' : 'stayed-on-entry-page';
+  }
+  return null;
+}
 function safeUrl(value) {
   const url = parsedUrl(value);
   if (!url || url.username || url.password || !allowedHost(url.hostname)) return null;
-  url.hash = '';
+  // Keep an in-app fragment route so a page on `#/exam/...` does not look like the bare catalogue;
+  // every other fragment, including credential ones, is dropped.
+  url.hash = sanitizeHashRoute(url.hash);
   for (const key of [...url.searchParams.keys()]) {
     if (!SAFE_QUERY.has(key) || !/^[\w,.-]{0,100}$/.test(url.searchParams.get(key) ?? '')) url.searchParams.delete(key);
   }
@@ -143,7 +174,7 @@ function observationTarget(response) {
 export function observeReadResponses(page, onPayload, { maxResponseBytes = 8 * 1024 * 1024 } = {}) {
   if (!Number.isSafeInteger(maxResponseBytes) || maxResponseBytes < 1) throw error('INVALID_RESPONSE_LIMIT', 'Response byte limit must be a positive integer.');
   const pending = new Set();
-  const stats = { observed: 0, accepted: 0, oversized: 0, unauthorized: 0, captcha: 0, failed: 0, nonJson: 0 };
+  const stats = { observed: 0, accepted: 0, oversized: 0, unauthorized: 0, captcha: 0, rateLimited: 0, failed: 0, nonJson: 0 };
   let stopped = false;
   async function inspect(response) {
     const meta = observationTarget(response);
@@ -151,6 +182,8 @@ export function observeReadResponses(page, onPayload, { maxResponseBytes = 8 * 1
     stats.observed += 1;
     const status = response.status();
     if (status === 401 || status === 403) { stats.unauthorized += 1; return; }
+    // Counted separately from generic failures so a scheduler can back off instead of only retrying.
+    if (status === 429 || status === 503) { stats.rateLimited += 1; return; }
     if (/captcha|verifycode|verification/i.test(parsedUrl(response.url()).pathname)) { stats.captcha += 1; return; }
     if (status < 200 || status >= 300) { stats.failed += 1; return; }
     const headers = response.headers();
@@ -218,7 +251,9 @@ export async function captureDom(page, selector) {
   $('script,style,form,input,button,header,nav,footer,iframe,object,embed,[contenteditable], [data-account], [data-user], .user-info, .user-avatar, .account-info').remove();
   $('*').each((_, element) => {
     for (const name of Object.keys(element.attribs ?? {})) {
-      if (/^on/i.test(name) || /token|secret|password|cookie|authorization/i.test(name) || name === 'style' || (name.startsWith('data-') && !['data-latex', 'data-math', 'data-formula', 'data-src', 'data-original'].includes(name))) $(element).removeAttr(name);
+      if (/^on/i.test(name) || /token|secret|password|cookie|authorization/i.test(name) || name === 'style'
+          || (name.startsWith('data-') && !STRUCTURAL_DATA_ATTRIBUTES.includes(name))
+          || (name === 'data-question-key' && !QUESTION_KEY.test($(element).attr(name) ?? ''))) $(element).removeAttr(name);
     }
   });
   const text = $.root().text();

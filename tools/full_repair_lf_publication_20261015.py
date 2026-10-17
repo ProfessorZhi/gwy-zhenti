@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 TEXT={'.md','.py','.json','.jsonl','.yml','.yaml','.toml','.txt','.csv','.tsv'}
 def sha(b):return hashlib.sha256(b).hexdigest()
 def main():
-    files=[p for top in ('国考','省考','tools','reports','docs','catalog','.github') for p in (ROOT/top).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix.lower() in TEXT]
+    files=[p for top in ('国考','省考','tools','reports','docs','catalog','资料缺失','.github') for p in (ROOT/top).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix.lower() in TEXT]
     files += [p for p in ROOT.iterdir() if p.is_file() and p.suffix.lower() in TEXT]
     rows=[]
     for p in sorted(set(files)):
