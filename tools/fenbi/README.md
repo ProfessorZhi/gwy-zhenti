@@ -116,6 +116,59 @@ node src/cli.mjs export --job TASK_KEY
 
 申论单独检查作答要求和可识别的字数上下限；复杂分小问要求保守待核。“左右”的±20%只是工具复核口径，不是官方评分规则。图片浏览器解码证据绑定实际字节；正式库仍使用已有逐帧像素检查。敏感URL引用删除后标待核，不把删失内容算完整。
 
+## 导航目标与落地核对
+
+驱动只导航到**可复现的**URL：路径、片段或非凭据参数一旦会在归一化时被丢弃，`add` 直接拒绝，
+`plan` 把该卷标为 `needs_route_review`（不是 `ready`），而不是照旧浏览到一个没人观察过的地址。
+SPA 的应用内片段路由（`#/exam/...`）会被保留；凭据片段（`#access_token=...`）照旧丢弃。
+`publicUrl`（导航）与 `safePageUrl`（登记页面URL）现在共用同一条片段规则，两处白名单不一致时
+`urlRouteLoss` 会把它报成路由丢失。
+
+采集时会记录 `page-landed` 证据，并对以下情况**显式 BLOCKED**（`page-route-mismatch`，
+`identity` 维度 blocked、退出码 2），绝不把"页面上碰巧有什么"当作该卷内容：
+
+| reason | 含义 |
+| --- | --- |
+| `stayed-on-entry-page` | 仍停在目录入口，而本卷要求更深的地址 |
+| `paper-opened-in-another-page` | 同上，且确有站点自行打开的标签页停在其它页面 |
+| `page-not-on-fenbi` | 当前页已不在粉笔域内 |
+
+站点自行打开的标签页**只记录不驱动**，其 URL 经 `safePageUrl` 写进证据供人工重新瞄准。
+只有"当前页离开粉笔域"或"停在入口而任务要求更深路由"才判失配——页面内继续浏览属正常手工采集。
+
+每卷另记 `provenance`（题面/材料/图片/答案解析各自的来源 + 纸张绑定 + `consistent`），
+写入 `checkpoint.json` 与逐卷命令行输出。它是**描述性**的；真正的闸门仍是 `validateDocument`，
+以及对齐侧的 `verification.verdict`。
+
+## 答案解析核验口径（unknown/partial/conflicting/verified）
+
+练习页不展示答案解析时，**不能把"没有答案"读成"答案没问题"**。框架因此把答案与解析的核验状态显式化，并使用统一四态：
+
+| 状态 | 含义 | 出现条件 |
+| --- | --- | --- |
+| `verified` | 两侧都实际观察到且一致 | 每一道可比对的题都 same |
+| `partial` | 部分已核验，其余未观察 | 有 same 也有 unknown |
+| `conflicting` | 两侧都观察到但不一致（含库内正文缺失） | 任一题 different |
+| `unknown` | 无法核验：没采到，或整卷没能逐题对上 | 无 same；或存在未匹配题 |
+| `not_applicable` | 本次配对无从比较（如全卷无图、ID命名空间不同） | 单列在 `notApplicable`，既不算通过也不算缺口 |
+
+- **访问提示不是答案。** 解析或答案槽渲染"开通会员后方可查看"一类提示时，正文非空会被普通非空检查放过。`validate` 现在单列 `answer-access-gate`/`explanation-access-gate` 并保持 partial。判定用双阈值（正文≤120字且提示几乎占满正文），因此真实答案里提到会员、权限、续费不会被误伤；这是复核触发条件，不是"已确认被付费墙拦住"的结论。
+- **`align` 报告新增 `verification` 块。** 八个逐题维度与五个卷级检查永远全部出现（未观察填零），因此"没有 different"不再能靠空对象蒙混通过；`verification.verdict` 为整卷结论，`verification.unverified` 直接点名 `answer`、`explanation` 等未核验项。
+- **退出码：** `align` 只有 `verdict === "verified"` 才返回 0；partial/conflicting/unknown 一律返回 2（验收不完整），与采集和导出保持一致。
+- **人工证据字段。** 框架读不到、只能人工看的答案解析，写在文档的 `manualEvidence` 数组里，不要写进正式卷：
+
+```json
+{"manualEvidence": [
+  {"dimension": "answer", "questionId": "OBSERVED_SOURCE_QUESTION_ID", "value": "人工实际看到的内容",
+   "observedAt": "2026-10-17T00:00:00.000Z", "observedUrl": "OBSERVED_PAGE_URL",
+   "method": "operator-screenshot-read", "operator": "OPERATOR_LABEL"}
+]}
+```
+
+  绑定是严格的：必须唯一落到一道**已被自动对齐匹配**的采到题目（`questionId` 或 `number` 二选一），缺 `value`/`observedAt`/`method` 记为 `incomplete`，落不到题记为 `unbound`，落到的题没匹配上库内卷记为 `unmatched-source`。人工记录单独出现在 `dimension.manual`，**不并入自动计数、也不能单独把整卷变成通过**；一个维度只有在每一道已匹配题都有人工一致记录时才是 `verified`，否则为 `partial`。报告只保留人工内容的 SHA256 与长度，不落正文；凭据查询参数按 `publicUrl` 规则剥离。
+
+  实站取证步骤、需要留存的证据和禁止事项见 [实站答案解析取证 SOP](ANSWER-EVIDENCE-SOP.md)。
+
 ## 已验证的行测DOM路线与逐题对齐
 
 [浙江2026行测C实站试跑](../../reports/FENBI-LIVE-TRIAL-20261016.md)已实际取得110题、4组材料和6段题型说明。该页面题面并未通过原JSON监听器取得，因此新增 `fenbi-xingce-v1` DOM适配器。它读取 `.tis-container` 内全部 `app-ti[data-question-key]`，不能只抓 `.questions-single-container`：本次后者仅93题，会漏组合题。
@@ -140,7 +193,7 @@ node src/cli.mjs align --document work/fenbi/NORMALIZED_FILE.json --paper "省�
 ## 测试
 
 ```powershell
-node --test test/model.test.mjs test/browser.test.mjs test/pipeline.test.mjs test/dom.test.mjs test/align.test.mjs
+node --test test/model.test.mjs test/browser.test.mjs test/pipeline.test.mjs test/dom.test.mjs test/align.test.mjs test/answerqa.test.mjs
 node --test test/browser-smoke.test.mjs
 ```
 
