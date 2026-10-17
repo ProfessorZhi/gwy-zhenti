@@ -28,8 +28,16 @@ const accessGate = (body) => {
 // else* — optionally followed by one short courtesy tail. A genuine stem that merely mentions one
 // of these phrases is therefore never flagged. `请交卷后查看…` is included as a literal because it
 // carries its own comma.
+// The rendered stub carries a courtesy tail whose wording varies by page and capture date, so a
+// fixed tail list alone under-matches: the live site renders 「…，将会第一时间上传」 (19 chars) and
+// 「…，将会在征集到后第一时间上传」 (24 chars), neither of which any earlier courtesy wording
+// covered. The observed forms are listed by name, then a bounded generic tail acts as a safety net.
+// The generic tail may not contain sentence-ending punctuation and may not exceed 24 chars, so a
+// genuine stem that merely quotes the marker and then keeps talking is still never flagged.
 const COLLECTION_STUB = new RegExp('^(?:题目正在全力以赴征集|正在搜集中|本题暂无收集到|暂无收集到|网友未回忆起|题目缺失'
-  + '|非客观题，请交卷后查看参考解析估分)(?:[，,。.；;]?\\s*(?:请稍后再试|请稍后|敬请期待|感谢您的关注|谢谢|稍后重试))?$', 'u');
+  + '|非客观题，请交卷后查看参考解析估分)'
+  + '(?:[，,。.；;]?\\s*(?:请稍后再试|请稍后|敬请期待|感谢您的关注|谢谢|稍后重试'
+  + '|将会(?:在征集到后)?第一时间上传|[^。！？!?]{0,24}))?$', 'u');
 const STUB_BODY_MAX_CHARS = 120;
 export function isCollectionStub(body) {
   return Boolean(body) && body.length <= STUB_BODY_MAX_CHARS && COLLECTION_STUB.test(body);
