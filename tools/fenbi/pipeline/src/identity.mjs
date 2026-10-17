@@ -85,6 +85,15 @@ export function urlMatchesObserved(observedValue, sanitizedValue, { routeParams 
   if (observed.origin !== sanitized.origin || observed.pathname !== sanitized.pathname) return false;
   if (observed.username || observed.password || sanitized.username || sanitized.password) return false;
   if (sanitized.hash) return false;
+  // Two values for the same route key have no guaranteed server-side precedence.
+  // sanitizeSourceUrl keeps only the first, so a duplicate could silently change
+  // the observed practice identity. Even duplicate identical values need review.
+  const seenObservedRouteKeys = new Set();
+  for (const [key] of observed.searchParams) {
+    if (IGNORABLE_QUERY.test(key)) continue; // tracking is intentionally discarded
+    if (seenObservedRouteKeys.has(key)) return false;
+    seenObservedRouteKeys.add(key);
+  }
   const declared = new Set(routeParams);
   const observedParams = new Map();
   for (const [key, value] of observed.searchParams) if (!observedParams.has(key)) observedParams.set(key, value);
