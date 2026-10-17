@@ -123,6 +123,29 @@ held from the nearest surviving neighbour, skipping over consecutive gaps.
 With no `--source` it emits the manifest-side matrix and verdict
 `blocked-no-source-supplied`, which is a useful artefact on its own.
 
+## Offline target inventory from the catalog
+
+```bash
+python3 tools/fenbi/audit/fenbi_target_inventory.py --repo . --top 50 --handoff 30 \
+    --out reports/FENBI-TARGET-INVENTORY-20261017.json \
+    --handoff-out reports/FENBI-TARGET-HANDOFF-20261017.json
+```
+
+Reads `catalog/manifest.jsonl` — no network, no capture profile, metadata only — and
+produces the paper-identity list, a ranked shortlist, and a directory-only handoff
+for whoever runs the capture.
+
+Three rules it enforces, each of which has already cost this project real work:
+
+- **A null fenbi id is never `capture_ready`.** Only an observed id that has not
+  already been captured qualifies. Everything else is `false` with a reason.
+- **A canonical identity that merges divergent bytes is never auto-merged.** On this
+  catalog, every `X` / `X卷` alias pair has different content and usually a different
+  question count; they are reported for curation with a suggested survivor instead.
+- **`declared_questions` is not the recovered count.** It is the current file's own
+  claim (it equals `question_anchors` library-wide); the original paper size is
+  derived as `positions_held + missing_count`.
+
 ## Tests
 
 ```bash
