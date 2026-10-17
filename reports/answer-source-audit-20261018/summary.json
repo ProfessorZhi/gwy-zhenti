@@ -1,0 +1,243 @@
+{
+  "auditedCommit": "e1feb5187ec3544cde62a1a128a6269a8d63011b",
+  "flags": {
+    "answer_block_count_mismatch": 1,
+    "answer_count_mismatch": 2,
+    "answer_missing": 2,
+    "answer_provenance_generic": 835,
+    "content_dispute": 5,
+    "image_bytes_missing": 2,
+    "letter_answer_count_mismatch": 1,
+    "material_gap": 2,
+    "numbering_non_contiguous": 1,
+    "official_label_conflict": 1,
+    "option_missing": 6,
+    "original_missing": 5,
+    "recall_incomplete": 1,
+    "single_source_unverified": 1,
+    "stem_condition_gap": 3
+  },
+  "issueClasses": {
+    "answer_count_mismatch": 2,
+    "answer_missing": 2,
+    "content_dispute": 5,
+    "image_bytes_missing": 2,
+    "material_gap": 2,
+    "numbering_non_contiguous": 1,
+    "option_missing": 2,
+    "ordering_provenance_unverified": 365,
+    "original_missing": 4,
+    "recall_incomplete": 1,
+    "single_source_unverified": 1,
+    "stem_condition_gap": 3
+  },
+  "papers": 1169,
+  "priority": {
+    "P0": 19,
+    "P1": 358,
+    "P2": 654,
+    "P3": 138
+  },
+  "priorityByRegion": {
+    "上海": {
+      "P0": 2,
+      "P1": 20,
+      "P2": 12
+    },
+    "云南": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 13
+    },
+    "内蒙古": {
+      "P0": 0,
+      "P1": 9,
+      "P2": 15
+    },
+    "北京": {
+      "P0": 2,
+      "P1": 10,
+      "P2": 12
+    },
+    "吉林": {
+      "P0": 0,
+      "P1": 14,
+      "P2": 13
+    },
+    "四川": {
+      "P0": 0,
+      "P1": 19,
+      "P2": 36
+    },
+    "国考": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 50
+    },
+    "天津": {
+      "P0": 1,
+      "P1": 11,
+      "P2": 17
+    },
+    "宁夏": {
+      "P0": 0,
+      "P1": 9,
+      "P2": 14
+    },
+    "安徽": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 20
+    },
+    "山东": {
+      "P0": 0,
+      "P1": 10,
+      "P2": 31
+    },
+    "山西": {
+      "P0": 0,
+      "P1": 12,
+      "P2": 19
+    },
+    "广东": {
+      "P0": 4,
+      "P1": 17,
+      "P2": 35
+    },
+    "广州": {
+      "P0": 1,
+      "P1": 0,
+      "P2": 0
+    },
+    "广西": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 11
+    },
+    "新疆": {
+      "P0": 1,
+      "P1": 17,
+      "P2": 20
+    },
+    "江苏": {
+      "P0": 3,
+      "P1": 0,
+      "P2": 56
+    },
+    "江西": {
+      "P0": 0,
+      "P1": 14,
+      "P2": 23
+    },
+    "河北": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 20
+    },
+    "河南": {
+      "P0": 0,
+      "P1": 10,
+      "P2": 15
+    },
+    "浙江": {
+      "P0": 1,
+      "P1": 4,
+      "P2": 34
+    },
+    "海南": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 14
+    },
+    "深圳": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 11
+    },
+    "湖北": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 12
+    },
+    "湖南": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 18
+    },
+    "甘肃": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 12
+    },
+    "福建": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 16
+    },
+    "西藏": {
+      "P0": 1,
+      "P1": 1,
+      "P2": 1
+    },
+    "贵州": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 14
+    },
+    "辽宁": {
+      "P0": 1,
+      "P1": 10,
+      "P2": 13
+    },
+    "重庆": {
+      "P0": 0,
+      "P1": 14,
+      "P2": 27
+    },
+    "陕西": {
+      "P0": 0,
+      "P1": 11,
+      "P2": 16
+    },
+    "青海": {
+      "P0": 0,
+      "P1": 12,
+      "P2": 13
+    },
+    "黑龙江": {
+      "P0": 2,
+      "P1": 13,
+      "P2": 21
+    }
+  },
+  "provenance": {
+    "answerBlocks": 56047,
+    "papersFullyVerified": 138,
+    "papersGenericOnly": 835,
+    "papersWithUnsupported": 0,
+    "sourcePresent": 54977,
+    "unsupported": 0,
+    "verified": 1070
+  },
+  "qualityFlagged": 375,
+  "qualityLedgerDeclared": {
+    "declared_files": 1169,
+    "declared_flagged": 375,
+    "declared_missing_original": 106
+  },
+  "qualityLedgerOrphans": [],
+  "schemaVersion": 1,
+  "selfCheckStable": null,
+  "structural": {
+    "papersLedgerDeclaresImageGap": 2,
+    "papersWithAnswerBlockMismatch": 1,
+    "papersWithLetterAnswerMismatch": 1,
+    "papersWithMissingImageBytes": 2,
+    "papersWithOptionIncomplete": 0,
+    "papersWithOptionMissing": 6,
+    "papersWithOriginalMissing": 5,
+    "papersWithZeroQuestions": 0,
+    "totalMissingImageRefs": 0,
+    "totalMultiSelectAnswers": 370
+  }
+}
