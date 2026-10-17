@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "kind": "gwy-zhenti-source-observation",
+  "producer": { "agent": "synthetic-browser-owner", "at": "2026-10-17T04:00:00Z" },
+  "permissions": { "browserProfile": false, "cookies": false, "tokens": false },
+  "observations": [
+    {
+      "paperSourceId": "000000",
+      "title": "合成示例卷（非真实题本）",
+      "subject": "xingce",
+      "area": "浙江",
+      "year": 2026,
+      "variant": "C类",
+      "version": "synthetic-v1",
+      "questionCount": 1,
+      "route": {
+        "kind": "existing_practice",
+        "url": "https://www.fenbi.com/spa/tiku/exam/000000?labelId=0",
+        "urlObserved": true,
+        "contentStatus": "observed",
+        "questionCount": 1,
+        "evidence": [
+          { "type": "observed_ui", "ref": "synthetic fixture: replaced by the browser owner" }
+        ]
+      },
+      "rights": {
+        "category": "observed_ui",
+        "license": null,
+        "redistribution": "local_only",
+        "evidence": [
+          { "type": "observed_ui", "ref": "synthetic fixture: replaced by the browser owner" }
+        ]
+      },
+      "images": [
+        { "ref": "material/example.png", "sourceUrl": "https://img.fbstatic.cn/example.png" }
+      ]
+    }
+  ]
+}
