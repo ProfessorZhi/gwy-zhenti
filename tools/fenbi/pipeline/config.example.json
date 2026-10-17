@@ -1,0 +1,28 @@
+{
+  "maxConcurrency": 2,
+  "hardMaxConcurrency": 3,
+  "leaseTtlMs": 900000,
+  "collectorLeaseTtlMs": 1800000,
+  "maxAttempts": 3,
+  "backoff": {
+    "baseMs": 60000,
+    "factor": 4,
+    "maxMs": 3600000,
+    "jitter": 0.2
+  },
+  "throttle": {
+    "minIntervalMs": 1200,
+    "maxIntervalMs": 120000,
+    "cooldownMs": 300000
+  },
+  "backpressure": {
+    "maxQueueLength": 500,
+    "maxPendingReview": 50,
+    "diskFreeFloorBytes": 5368709120,
+    "perPaperBytes": 536870912
+  },
+  "allowedCaptureHosts": ["fenbi.com"],
+  "allowedImageHosts": ["fenbi.com", "fbstatic.cn", "fb.fenbike.cn"],
+  "authorizedSourceIds": [],
+  "requireObservedUrl": true
+}
