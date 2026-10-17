@@ -12,7 +12,9 @@
 | `tile_pilot.py` | **第 3 轮**：图形题**标签行锚定**的选项槽位定位与切块（确定性切块 + sha256 + 完整性门）；写盘强制在 `work/` |
 | `test_visual_consistency_audit.py` | 单测（第 1 轮） |
 | `test_visual_representation_audit.py` | 单测（第 2 轮） |
+| `paper_question_validator.py` | **第 4 轮**：逐题离线校验器（sourceID/身份/题号/材料/题干与图片 SHA/选项内容/占位/答案未知）；词表区分 `structurally_valid` / `incomplete` / `invalid` |
 | `test_tile_pilot.py` | 单测（第 3 轮，27 条，含负例） |
+| `test_paper_question_validator.py` | 单测（第 4 轮，29 条，含负例） |
 
 ## 用法
 
@@ -51,3 +53,7 @@ ASSETSQA_REPO=$PWD ASSETSQA_HANDOFF=<handoff-root> \
 - **选项行带要取「标签行正上方最近」的那条**，不能按墨迹多少取：双行版式（广东 Q42）题干行墨迹更多，按墨迹会取错。
 - **切块必须落在 `work/`**：`tile_pilot.py` 的 `--out-dir` 越界直接 `exit 2`；切块可 `rm -rf work/assetsqa-tiles` 完全回滚。
 - **A–D 归属不可从几何得出**：字母是印刷字形，本机无 OCR。`A_D_resolved` 恒为 `false`，`binding` 恒为 `need_review`，有测试锁定。
+- **`split_options` 必须先剥题头**：`## 第 N 题 <sub>qid…</sub>` 若留在块里，会被当成题干文本，`stemChars` 虚高（国考 Q31 读成 63，实际 32）。
+- **重复题号要在 dict 折叠前统计**：题块存进 dict 后重复号已被覆盖，`gaps`/`duplicates` 永远看不到。
+- **`sourceId` 没有授权 handoff 就填 `unknown`**：不要把别处报告里的 sourceId 抄成本地事实。
+- **`structurally_valid` 不等于 verified**：它只表示本地结构检查通过，不代表官方原卷、也不代表采集侧一致。答案/解析恒为 `unknown`，不得从答案逆推题干。
