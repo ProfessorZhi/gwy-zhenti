@@ -103,6 +103,16 @@ HEX64_RE = re.compile(r"\b[0-9a-fA-F]{64}\b")
 # not independent evidence of where an answer came from. Counting it as "backed" made
 # the audit corroborate itself: 241 blocks were verified on that basis alone.
 SELF_REPO_URL = re.compile(r"^https?://(?:www\.)?github\.com/ProfessorZhi/gwy-zhenti(?:/|$)")
+# Legacy answers are quarantined between a PAIR of HTML comments. They are not current
+# answers, so their citations must not be credited as provenance for the question.
+QUARANTINE = re.compile(
+    r"<!--\s*legacy-unverified-answer-\d+\s*-->.*?<!--\s*/legacy-unverified-answer-\d+\s*-->",
+    re.S)
+
+
+def strip_quarantined(block: str) -> str:
+    """Remove quarantined legacy spans before judging provenance."""
+    return QUARANTINE.sub("", block)
 URL_RE = re.compile(r"https?://[^\s)\]\"'>]+")
 
 # Named corpora / institutions that are third-party by construction. If a paper claims
@@ -321,6 +331,8 @@ def scan_file(path: Path, root: Path, receipt_index: set) -> list[dict]:
     fp = file_provenance(parse_frontmatter(text), receipt_index)
     findings = []
     for qno, block, _s, _e in iter_answer_blocks(text):
+        # Judge provenance on the *current* content only.
+        block = strip_quarantined(block)
         info = classify_block(block)
         block_declared = info["declared"]
 

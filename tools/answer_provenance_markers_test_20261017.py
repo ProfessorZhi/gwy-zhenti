@@ -428,3 +428,39 @@ class SelfCitationTests(unittest.TestCase):
                         f"[来源]({url})\n")), encoding="utf-8")
             r = m.scan(root)
             self.assertEqual(r["coverage"]["verified"], 1)
+
+
+class QuarantinedLegacyTests(unittest.TestCase):
+    """A quarantined legacy answer must not lend its citation to the current answer.
+
+    省考/新疆/2024/行测-兵团.md 第54题 keeps the superseded answer C between
+    `<!-- legacy-unverified-answer-54 -->` and `<!-- /legacy-unverified-answer-54 -->`.
+    Counting its source line made a deliberately-unsolved question look sourced.
+    """
+
+    BLOCK = ("**答案**：待补完整题干及主图后核定。\n\n"
+             "<!-- legacy-unverified-answer-54 -->\n"
+             "**答案**：C\n\n**来源参考解析（非官方标准答案）**\n\n略。\n"
+             "<!-- /legacy-unverified-answer-54 -->\n")
+
+    def test_quarantine_is_stripped(self):
+        stripped = m.strip_quarantined(self.BLOCK)
+        self.assertIn("待补", stripped)
+        self.assertNotIn("**答案**：C", stripped)
+        self.assertNotIn("来源参考解析", stripped)
+
+    def test_current_answer_survives_stripping(self):
+        block = ("**答案**：D\n\n**来源参考解析（非官方标准答案）**\n\n解析。\n"
+                 "<!-- legacy-unverified-answer-9 -->\n旧\n<!-- /legacy-unverified-answer-9 -->\n")
+        self.assertTrue(m.classify_block(m.strip_quarantined(block))["declared"])
+
+    def test_quarantined_block_is_not_credited_as_declared(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "省考").mkdir()
+            (root / "省考" / "a.md").write_text(paper(block(1, self.BLOCK)), encoding="utf-8")
+            r = m.scan(root, receipt_index=set())
+            # The only provenance in the block is inside the quarantine span, so the
+            # block must not count as declared.
+            self.assertEqual(r["declared"], 0)
+            self.assertEqual(r["coverage"]["unsupported"], 1)

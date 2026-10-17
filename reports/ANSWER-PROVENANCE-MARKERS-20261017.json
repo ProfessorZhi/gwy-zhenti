@@ -4,9 +4,9 @@
   "answerBlocks": 56047,
   "authorityClasses": {
     "ai_derived": 820,
-    "institution_reference": 52427,
+    "institution_reference": 52426,
     "solver_dispute": 542,
-    "unclassified": 2258
+    "unclassified": 2259
   },
   "blockDeclared": 54742,
   "canonicalMarkers": [
@@ -14,9 +14,9 @@
     "**AI辅助独立校核解析（非官方答案，非王智公考原解析，未经实考评分）**"
   ],
   "coverage": {
-    "source-present": 54977,
+    "source-present": 55027,
     "unsupported": 0,
-    "verified": 1070
+    "verified": 1020
   },
   "declared": 56047,
   "fileLevelOnly": 1305,
@@ -624,9 +624,9 @@
       "stale_file_provenance": false
     }
   ],
-  "formatVariants": 1814,
+  "formatVariants": 1815,
   "formatVariantsByMarker": {
-    "(declared in prose, no bold marker)": 1732,
+    "(declared in prose, no bold marker)": 1733,
     "**来源参考解析**（不是官方公布答案）": 15,
     "**来源参考解析（非官方标准答案；第100题原解析存在上述逻辑问题）**": 1,
     "**来源参考解析（非官方）**": 4,
