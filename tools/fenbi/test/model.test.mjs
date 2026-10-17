@@ -6,6 +6,8 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { createDocument, absorbPayload, extractCatalog, collectAssetUrls } from '../src/model.mjs';
 import { paperProvenance, validateDocument } from '../src/validate.mjs';
+import { validateDocument } from '../src/validate.mjs';
+import { renderCandidate } from '../src/render.mjs';
 
 function fixture(subject = 'xingce') {
   const doc = createDocument({ id: 'paper-1', title: '2025年江苏省行测C类', subject, year: 2025, area: '江苏', variant: 'C类' }, { url: 'https://www.fenbi.com/spa/tiku' });
@@ -308,4 +310,51 @@ test('a DOM-adapter capture is attributed to the adapter, not to a generic obser
   assert.equal(provenance.sources.questions, 'dom-adapter');
   assert.equal(provenance.binding, 'unverified', 'the DOM route carries no paper identity by itself');
   assert.equal(provenance.consistent, false);
+});
+// ── collection-stub gate ────────────────────────────────────────────────────────────────────
+// A source that never collected a question still renders an ID, an original number and four
+// options, with boilerplate where the stem belongs. Such a slot is not content: it must not be
+// accepted as a body, must not be exported as a question, and must not be treated as fillable.
+
+const COLLECTION_STUBS = ['题目正在全力以赴征集', '题目正在全力以赴征集，请稍后再试', '正在搜集中',
+  '本题暂无收集到', '网友未回忆起', '题目缺失', '非客观题，请交卷后查看参考解析估分'];
+
+function stubDoc(stem) {
+  const doc = fixture();
+  doc.questions[0].contentHtml = stem;
+  return doc;
+}
+
+test('a collection stub is never accepted as a question body', async () => {
+  const genuine = await validateDocument(stubDoc('问题正文'));
+  assert.equal(genuine.status, 'complete', 'the unmodified fixture still passes');
+
+  for (const stub of COLLECTION_STUBS) {
+    for (const html of [stub, `<p>${stub}</p>`, `<div><p>${stub}</p></div>`]) {
+      const result = await validateDocument(stubDoc(html));
+      assert.ok(result.issues.some((issue) => issue.code === 'question-body-placeholder'), `${stub} / ${html}`);
+      assert.equal(result.dimensions.questions.status, 'partial', stub);
+      assert.notEqual(result.status, 'complete', stub);
+    }
+  }
+});
+
+test('a genuine stem that merely mentions collection is not mistaken for a stub', async () => {
+  for (const genuine of ['题目正在全力以赴征集，这是命题组的工作节奏，而考生需要做的是把握已有材料。'.repeat(2),
+    '关于网友未回忆起的内容，下列说法正确的是：',
+    '材料中提到的"正在搜集中"指的是该平台的哪一项业务？']) {
+    const result = await validateDocument(stubDoc(genuine));
+    assert.ok(!result.issues.some((issue) => issue.code === 'question-body-placeholder'), genuine.slice(0, 24));
+  }
+});
+
+test('a stub material is rejected, and a stub stem blocks the export gate', async () => {
+  const doc = stubDoc('题目正在全力以赴征集');
+  doc.materials = [{ id: 'm1', contentHtml: '<p>正在搜集中</p>' }];
+  doc.expected.materials = 1;
+  doc.questions[0].materialIds = ['m1'];
+  const result = await validateDocument(doc);
+  assert.ok(result.issues.some((issue) => issue.code === 'material-body-placeholder'));
+  assert.equal(result.dimensions.materials.status, 'partial');
+  assert.throws(() => renderCandidate(doc, result), /validated complete/);
 });
