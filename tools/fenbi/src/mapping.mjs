@@ -59,8 +59,30 @@ function similarity(a, b) {
   return total ? (2 * shared) / total : 0;
 }
 
+const IMAGE_TOKEN_TEXT = '⟦IMAGE⟧';
 const textOf = (html) => normalizeComparisonText(html).strict;
+// Every picture collapses to the same placeholder token, so the token is not text evidence: two
+// different pictures would otherwise look identical (the PR #42 defect). Strip it before comparing.
+const textOnly = (html) => normalizeComparisonText(html).strict.split(IMAGE_TOKEN_TEXT).join('').trim();
 const imagesOf = (html) => normalizeComparisonText(html).images;
+
+/**
+ * The only image evidence this verifier accepts is a **content** manifest: a SHA-256 of the bytes,
+ * declared verified against the same authorised source. A reference path is never a content hash —
+ * the same path can serve different bytes and the same bytes can live at different paths.
+ */
+function imageManifest(question) {
+  const entries = question?.imageBytes;
+  if (!Array.isArray(entries)) return null;
+  const hashes = [];
+  for (const entry of entries) {
+    const hash = typeof entry === 'string' ? '' : str(entry?.sha256).toLowerCase();
+    if (!/^[0-9a-f]{64}$/u.test(hash)) return null;      // malformed manifest: trust none of it
+    if (entry?.verified !== true) return null;           // bytes not verified against the source
+    hashes.push(hash);
+  }
+  return hashes;
+}
 
 function optionSignal(sourceOptions = [], repositoryOptions = []) {
   if (!sourceOptions.length && !repositoryOptions.length) return { available: false, score: 0, contradictory: false };
@@ -88,18 +110,29 @@ function materialSignal(source, repository) {
 }
 
 function imageSignal(source, repository) {
-  const sourceHashes = new Set([
-    ...imagesOf(source.contentHtml).map(sha),
-    ...(source.options ?? []).flatMap((option) => imagesOf(option.contentHtml).map(sha)),
-  ]);
-  const repositoryHashes = [
-    ...imagesOf(repository.contentHtml).map(sha),
-    ...(repository.options ?? []).flatMap((option) => imagesOf(option.contentHtml).map(sha)),
-  ];
-  if (!sourceHashes.size && !repositoryHashes.length) return { available: false, score: 0, contradictory: false };
-  if (!sourceHashes.size || !repositoryHashes.length) return { available: true, score: 0, contradictory: false };
-  const shared = repositoryHashes.filter((hash) => sourceHashes.has(hash)).length;
-  return { available: true, contradictory: false, score: shared / Math.max(sourceHashes.size, repositoryHashes.length) };
+  const basis = 'image-content-sha256';
+  // Distinguish "this question has no pictures at all" (nothing to compare, expected) from
+  // "pictures are referenced but their bytes were never verified" (evidence unavailable).
+  const referenceCount = (question) => [
+    ...imagesOf(question?.contentHtml ?? ''),
+    ...(question?.options ?? []).flatMap((option) => imagesOf(option?.contentHtml ?? '')),
+  ].length;
+  if (!referenceCount(source) && !referenceCount(repository)) {
+    return { available: false, score: 0, contradictory: false, basis, reason: 'no-images-on-either-side' };
+  }
+  const sourceHashes = imageManifest(source), repositoryHashes = imageManifest(repository);
+  // No trustworthy manifest on either side: this is "no evidence", not "no match". Scoring it 0
+  // would silently dilute a pair whose text is a perfect match.
+  if (sourceHashes === null || repositoryHashes === null) {
+    return { available: false, score: 0, contradictory: false, basis,
+      reason: sourceHashes === null && repositoryHashes === null ? 'image-bytes-not-verified' : 'image-manifest-missing-on-one-side' };
+  }
+  if (!sourceHashes.length || !repositoryHashes.length) {
+    return { available: true, score: 0, contradictory: false, basis, reason: 'images-present-on-one-side-only' };
+  }
+  const shared = repositoryHashes.filter((hash) => sourceHashes.includes(hash)).length;
+  return { available: true, contradictory: false, basis,
+    score: shared / Math.max(sourceHashes.length, repositoryHashes.length) };
 }
 
 /**
@@ -108,7 +141,10 @@ function imageSignal(source, repository) {
  * exists to prevent. It is reported separately as an observation only.
  */
 export function scorePair(source, repository) {
-  const stem = { available: true, score: similarity(textOf(source.contentHtml), textOf(repository.contentHtml)), contradictory: false };
+  const sourceText = textOnly(source.contentHtml), repositoryText = textOnly(repository.contentHtml);
+  const stem = sourceText && repositoryText
+    ? { available: true, score: similarity(sourceText, repositoryText), contradictory: false, basis: 'text' }
+    : { available: false, score: 0, contradictory: false, basis: 'no-text-beside-images' };
   const options = optionSignal(source.options, repository.options);
   const materials = materialSignal(source, repository);
   const images = imageSignal(source, repository);
@@ -122,7 +158,9 @@ export function scorePair(source, repository) {
   }
   const weightTotal = usable.reduce((sum, [name]) => sum + DEFAULT_POLICY.weights[name], 0);
   const score = weightTotal ? usable.reduce((sum, [name, value]) => sum + value.score * DEFAULT_POLICY.weights[name], 0) / weightTotal : 0;
-  const exact = stem.score === 1 && (!options.available || (options.score === 1 && !options.contradictory));
+  // For an image-only stem the exact evidence is byte-identical verified pictures, never the token.
+  const stemExact = stem.available ? stem.score === 1 : (images.available && images.score === 1);
+  const exact = stemExact && (!options.available || (options.score === 1 && !options.contradictory));
   const independent = usable.filter(([, value]) => value.score > 0).length;
   const grade = exact ? 'exact' : !Object.values(signals).some((value) => value.contradictory) && independent >= 2 ? 'strong' : 'weak';
   return { score: clamp01(score), grade, signals, contradictory: Object.values(signals).some((value) => value.contradictory) };
@@ -237,7 +275,8 @@ export function buildMappingReport({ source, repository, sourceRights, isEligibl
       grade: best.grade, score: Number(best.score.toFixed(4)),
       autoAcceptable, requiresHumanReview: !autoAcceptable,
       evidence: Object.fromEntries(Object.entries(best.signals).map(([name, value]) => [name,
-        { available: value.available, contradictory: value.contradictory, similarity: Number(value.score.toFixed(4)) }])),
+        { available: value.available, contradictory: value.contradictory, similarity: Number(value.score.toFixed(4)),
+          ...(value.basis ? { basis: value.basis } : {}), ...(value.reason ? { reason: value.reason } : {}) }])),
     });
   }
   const unmatchedRepositoryRows = repositoryRows

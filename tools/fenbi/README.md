@@ -159,6 +159,13 @@ if (!validateMappingReport(report).ok) throw new Error('report contract violated
 规则（全部可离线复现）：
 
 - **题号本身从不参与评分**，只作为观察值报在 `sameNumber`。乱序试卷靠题干/选项/材料/图片身份对齐。
+- **图片证据只认内容哈希，不认引用路径**。题对象通过
+  `imageBytes: [{ sha256: "<64位十六进制>", verified: true }]` 声明同源可复验的图像内容 SHA-256；
+  路径相同不代表字节相同，字节相同也不必路径相同。缺 manifest、哈希格式不对、或
+  `verified !== true`（来源未授权）时，图片信号是 **neutral**（`available: false` + `reason`），
+  **不按 0 分扣权**，也不会因此把本来完全一致的文本题降级。
+- **`⟦IMAGE⟧` 占位符不是文本证据**：题干去掉图片占位符后若无文字，stem 信号即 unavailable；
+  纯图题只有**字节相同且已复验**才可能判 `exact`，绝不靠占位符相等。
 - **只有 `grade: "exact"` 才可自动接受**（题干与选项都完全相等）；其余一律
   `autoAcceptable: false`、`requiresHumanReview: true`。
 - **低于 `candidateFloor` 不映射**，在 `unmatchedSource[].bestScore` 里留下最接近的分数。

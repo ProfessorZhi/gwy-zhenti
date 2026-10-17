@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { buildMappingReport, scorePair, validateMappingReport, MAPPING_REPORT_SCHEMA } from '../src/mapping.mjs';
 
 /**
@@ -183,17 +184,8 @@ test('option labels and order must agree; a contradiction caps the pair at weak'
   assert.equal(result.assignments.length, 0, 'a contradictory option shape is not a candidate');
 });
 
-test('image and material identity are independent signals and cannot be faked by text alone', () => {
+test('material identity is an independent signal, and a one-sided link is absent evidence', () => {
   const stem = '含图形的合成题干。';
-  const withImage = (src) => `<p>${stem}</p><img src="${src}">`;
-  const sourceImage = scorePair({ contentHtml: withImage('https://example.test/a.png'), options: [], materialIds: [] },
-    { contentHtml: withImage('https://example.test/b.png'), options: [], materialIds: [] });
-  assert.equal(sourceImage.signals.images.available, true);
-  assert.equal(sourceImage.signals.images.score, 0, 'different bytes/paths share no hash');
-  const sameImage = scorePair({ contentHtml: withImage('https://example.test/a.png'), options: [], materialIds: [] },
-    { contentHtml: withImage('https://example.test/a.png'), options: [], materialIds: [] });
-  assert.equal(sameImage.signals.images.score, 1);
-
   const material = scorePair({ contentHtml: `<p>${stem}</p>`, options: [], materialIds: ['m1'] },
     { contentHtml: `<p>${stem}</p>`, options: [], materialIds: ['m1'] });
   assert.equal(material.signals.materials.score, 1);
@@ -201,6 +193,85 @@ test('image and material identity are independent signals and cannot be faked by
     { contentHtml: `<p>${stem}</p>`, options: [], materialIds: ['m1'] });
   assert.equal(noMaterial.signals.materials.score, 0);
   assert.equal(noMaterial.signals.materials.contradictory, false, 'a one-sided material link is absent evidence, not a contradiction');
+});
+
+// ── F8: image evidence is a content SHA-256 manifest, never a reference path ────────────────
+// A reference string is not a content hash: the same path can serve different bytes, and the same
+// bytes can live at different paths. Only a verified content manifest may say two images are equal,
+// and when it is missing the signal must be neutral instead of scoring zero.
+
+const contentHash = (text) => createHash('sha256').update(text).digest('hex');
+const manifest = (...texts) => texts.map((text) => ({ sha256: contentHash(text), verified: true }));
+const imageQuestion = (src, imageBytes) => ({ contentHtml: `<img src="${src}">`, options: [], materialIds: [],
+  ...(imageBytes === undefined ? {} : { imageBytes }) });
+
+test('the same bytes at different paths are the same image; the same path with different bytes is not', () => {
+  const sameBytes = scorePair(imageQuestion('https://example.test/one.png', manifest('figure-bytes')),
+    imageQuestion('https://other.test/two.png', manifest('figure-bytes')));
+  assert.equal(sameBytes.signals.images.available, true);
+  assert.equal(sameBytes.signals.images.basis, 'image-content-sha256');
+  assert.equal(sameBytes.signals.images.score, 1, 'content hash decides, not the path');
+
+  const samePathDifferentBytes = scorePair(imageQuestion('https://example.test/same.png', manifest('bytes-A')),
+    imageQuestion('https://example.test/same.png', manifest('bytes-B')));
+  assert.equal(samePathDifferentBytes.signals.images.score, 0, 'an identical path must never imply identical bytes');
+});
+
+test('without a verified content manifest the image signal is neutral, not a zero', () => {
+  // Text is a perfect match; an unverified image must not dilute it.
+  const stem = '完全相同的合成题干文字。';
+  const unverified = { contentHtml: `<p>${stem}</p><img src="https://example.test/a.png">`, options: [], materialIds: [],
+    imageBytes: [{ sha256: contentHash('bytes'), verified: false }] };
+  const plain = { contentHtml: `<p>${stem}</p><img src="https://example.test/a.png">`, options: [], materialIds: [] };
+  const scored = scorePair(unverified, plain);
+  assert.equal(scored.signals.images.available, false);
+  assert.equal(scored.signals.images.reason, 'image-bytes-not-verified');
+  assert.equal(scored.grade, 'exact', 'text alone still carries the exact grade');
+  assert.equal(scored.score, 1);
+
+  // A malformed hash counts as no manifest at all: trust none of it. The other side does have a
+  // trustworthy manifest, so the reason names that asymmetry rather than claiming both are bad.
+  const malformed = scorePair(imageQuestion('https://example.test/a.png', [{ sha256: 'not-a-sha', verified: true }]),
+    imageQuestion('https://example.test/a.png', manifest('bytes')));
+  assert.equal(malformed.signals.images.available, false);
+  assert.equal(malformed.signals.images.reason, 'image-manifest-missing-on-one-side');
+  assert.equal(malformed.signals.images.score, 0, 'neutral, never a content verdict');
+});
+
+test('an image-only question is never exact on the placeholder token alone', () => {
+  const noManifest = scorePair(imageQuestion('https://example.test/a.png'), imageQuestion('https://example.test/b.png'));
+  assert.equal(noManifest.signals.stem.available, false, 'the ⟦IMAGE⟧ token is not text evidence');
+  assert.equal(noManifest.grade, 'none');
+  assert.equal(noManifest.score, 0);
+
+  // With verified byte evidence the pair may be exact — but only when the bytes are equal.
+  const equalBytes = scorePair(imageQuestion('https://example.test/a.png', manifest('bytes')),
+    imageQuestion('https://example.test/b.png', manifest('bytes')));
+  assert.equal(equalBytes.grade, 'exact');
+  const differentBytes = scorePair(imageQuestion('https://example.test/a.png', manifest('bytes-A')),
+    imageQuestion('https://example.test/b.png', manifest('bytes-B')));
+  assert.notEqual(differentBytes.grade, 'exact');
+  assert.equal(differentBytes.signals.images.score, 0);
+});
+
+test('a restricted source cannot contribute image content evidence', () => {
+  const restricted = (src) => ({ contentHtml: `<img src="${src}">`, options: [], materialIds: [],
+    imageBytes: [{ sha256: contentHash('bytes'), verified: false }] });
+  const scored = scorePair(restricted('https://example.test/a.png'), restricted('https://example.test/a.png'));
+  assert.equal(scored.signals.images.available, false);
+  assert.equal(scored.signals.images.score, 0, 'no verdict is produced at all');
+  // And through the report, an uncleared source still emits no assignment.
+  const reportBlocked = report([restricted('https://example.test/a.png')], [restricted('https://example.test/a.png')],
+    { sourceRights: 'restricted' });
+  assert.equal(reportBlocked.blocked, 'source-rights-not-cleared');
+  assert.equal(reportBlocked.assignments.length, 0);
+});
+
+test('a text question without images is decided by text, with the image signal neutral', () => {
+  const scored = scorePair(question(1, '没有配图的合成题干内容。'), question(1, '没有配图的合成题干内容。'));
+  assert.equal(scored.signals.images.available, false);
+  assert.equal(scored.signals.images.reason, 'no-images-on-either-side');
+  assert.equal(scored.grade, 'exact', 'an absent image dimension must not block a text match');
 });
 
 test('neutral Unicode and full-width characters normalise instead of blocking a mapping', () => {
