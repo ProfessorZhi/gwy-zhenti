@@ -3,7 +3,7 @@ import path from 'node:path';
 import { createHash, randomUUID } from 'node:crypto';
 import { load } from 'cheerio';
 import { observedReadUrl } from './reads.mjs';
-import { sanitizeHashRoute } from './config.mjs';
+import { ROUTE_PARAM_VALUE, normalizeRouteParams, sanitizeHashRoute } from './config.mjs';
 
 const SAFE_QUERY = new Set(['labelId', 'toPage', 'page', 'pageSize', 'paperId', 'year', 'categoryId', 'provinceId', 'id', 'type']);
 const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
@@ -38,7 +38,7 @@ function safeAssetUrl(value) {
   return url.toString();
 }
 /** Persisted page URL: keeps only the parameters this framework recognises, or null off-domain. */
-export function safePageUrl(value) { return safeUrl(value); }
+export function safePageUrl(value, routeParams = []) { return safeUrl(value, routeParams); }
 
 /**
  * Decide whether the page we hold is actually the paper this job targets.
@@ -57,14 +57,17 @@ export function landingMismatch({ landed, expected, entry, strayUrls = [] }) {
   }
   return null;
 }
-function safeUrl(value) {
+function safeUrl(value, routeParams = []) {
   const url = parsedUrl(value);
   if (!url || url.username || url.password || !allowedHost(url.hostname)) return null;
   // Keep an in-app fragment route so a page on `#/exam/...` does not look like the bare catalogue;
   // every other fragment, including credential ones, is dropped.
   url.hash = sanitizeHashRoute(url.hash);
-  for (const key of [...url.searchParams.keys()]) {
-    if (!SAFE_QUERY.has(key) || !/^[\w,.-]{0,100}$/.test(url.searchParams.get(key) ?? '')) url.searchParams.delete(key);
+  const declared = new Set(normalizeRouteParams(routeParams));
+  for (const [key, val] of [...url.searchParams.entries()]) {
+    const safe = SAFE_QUERY.has(key) && /^[\w,.-]{0,100}$/.test(val);
+    const route = declared.has(key) && ROUTE_PARAM_VALUE.test(val);
+    if (!safe && !route) url.searchParams.delete(key);
   }
   return url.toString();
 }
@@ -220,7 +223,7 @@ function paperLinks($, base) {
 }
 
 /** A configured content selector is mandatory for body capture; otherwise return a catalog summary only. */
-export async function captureDom(page, selector) {
+export async function captureDom(page, selector, { routeParams = [] } = {}) {
   const current = page.url();
   const url = parsedUrl(current);
   if (!url || url.protocol !== 'https:' || !isFenbiHost(url.hostname)) throw error('UNSAFE_PAGE', 'DOM capture is limited to Fenbi pages.');
@@ -229,13 +232,13 @@ export async function captureDom(page, selector) {
     const links = await page.locator('a[href]').evaluateAll(elements => elements.map(element => ({ href: element.getAttribute('href'), text: element.textContent ?? '' })));
     const $ = load('<section></section>');
     for (const link of links) $('<a>').attr('href', link.href ?? '').text(link.text).appendTo('section');
-    return { url: safeUrl(current), title, html: '', links: paperLinks($, current), images: [], blocked: { reason: 'content_selector_required' } };
+    return { url: safeUrl(current, routeParams), title, html: '', links: paperLinks($, current), images: [], blocked: { reason: 'content_selector_required' } };
   }
   // Never allow an unrestricted document/body capture containing account navigation or personal data.
   if (/(?:^|[\s,>+~])(?:html|body|\*|:root)(?:$|[\s,>+~.:#\[])/i.test(selector)) throw error('UNSAFE_SELECTOR', 'Choose a specific question or material container.');
   const locator = page.locator(selector);
   const count = await locator.count();
-  if (!count) return { url: safeUrl(current), title, html: '', links: [], images: [], blocked: { reason: 'selector_not_found' } };
+  if (!count) return { url: safeUrl(current, routeParams), title, html: '', links: [], images: [], blocked: { reason: 'selector_not_found' } };
   const fragments = await locator.evaluateAll(elements => elements.map(element => {
     const clone = element.cloneNode(true);
     const originals = [...element.querySelectorAll('img')];
@@ -278,7 +281,7 @@ export async function captureDom(page, selector) {
     catch { $(element).removeAttr('href'); }
   });
   $('[srcset]').removeAttr('srcset');
-  return { url: safeUrl(current), title, html: $.html(), links: paperLinks($, current), images, blocked };
+  return { url: safeUrl(current, routeParams), title, html: $.html(), links: paperLinks($, current), images, blocked };
 }
 
 function assetCandidates(document) {
