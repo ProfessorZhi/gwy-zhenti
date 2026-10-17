@@ -104,6 +104,25 @@ It emits no question text — required fields are named, not filled. Answers and
 explanations stay `unknown`, and provenance is always `recollection-institution`
 (never official).
 
+## Vetting a candidate source before comparing it
+
+```bash
+python3 tools/fenbi/audit/source_candidate_vet.py --repo . \
+    --paper <paper path> [--source <candidate file>] [--source-format text|html]
+```
+
+`handoff_reconcile.py` compares a capture against the library. This runs one step
+earlier and answers a different question: **does the candidate even contain the
+missing questions?** It reads the gap list from the paper's own front matter
+(never hardcoded) and classifies each number as `content`, `stub` (a collection
+placeholder), `absent`, or `not-supplied`. Only `content` counts as recovered —
+a stub is never counted as partial recovery. It also checks the candidate's
+identity tokens (year / province / subject) and infers what each gap probably
+held from the nearest surviving neighbour, skipping over consecutive gaps.
+
+With no `--source` it emits the manifest-side matrix and verdict
+`blocked-no-source-supplied`, which is a useful artefact on its own.
+
 ## Tests
 
 ```bash

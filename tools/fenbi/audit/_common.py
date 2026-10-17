@@ -399,6 +399,16 @@ def parse_paper(markdown):
             continue
         number = int(question.group(1))
         option_spans = list(re.finditer(r"(?m)^\s*-\s*\*\*([A-Z])\*\*\s*[.．、:]?\s*", chunk))
+        if len(option_spans) < 2:
+            # Some papers print bare option lines ("A. …") rather than this
+            # repository's usual "- **A**. …". Fall back only when the primary
+            # style finds little, and require the labels to run A,B,C,D in order
+            # so ordinary prose starting with a capital letter is not mistaken
+            # for an option.
+            bare = list(re.finditer(r"(?m)^([A-D])[.．、]\s*", chunk))
+            labels = [m.group(1) for m in bare]
+            if len(bare) >= 2 and labels == sorted(labels) and labels[0] == "A":
+                option_spans = bare
         options = []
         for j, m in enumerate(option_spans):
             stop = option_spans[j + 1].start() if j + 1 < len(option_spans) else len(chunk)
