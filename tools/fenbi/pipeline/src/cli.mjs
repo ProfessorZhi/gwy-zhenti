@@ -10,6 +10,7 @@ import { jobIdFor } from './identity.mjs';
 import { evaluateBackpressure, hostPressure, summarizeHostPressure } from './backpressure.mjs';
 import { loadThrottle, resetThrottle, saveThrottle, throttleSnapshot } from './throttle.mjs';
 import { loadAdapter, runAwaitedManifest, runCollector, runWorkerDrain } from './collector.mjs';
+import { importObservations, loadAllowlist } from './observation.mjs';
 
 const HELP = `gwy-zhenti offline pipeline (bounded queue, no daemon)
   node tools/fenbi/pipeline/src/cli.mjs init [--data-dir DIR]
@@ -20,6 +21,8 @@ const HELP = `gwy-zhenti offline pipeline (bounded queue, no daemon)
       [--image material/q1.png:https://img.fbstatic.cn/...] [--questions N] [--materials N]
       [--variant V] [--actor NAME]
   node tools/fenbi/pipeline/src/cli.mjs enqueue-offline --handoff FILE [--artifact-root DIR]
+  node tools/fenbi/pipeline/src/cli.mjs observe-import --handoff FILE [--allowlist FILE] [--dry-run]
+  node tools/fenbi/pipeline/src/cli.mjs allowlist show [--allowlist FILE]
   node tools/fenbi/pipeline/src/cli.mjs drain --role collector|normalizer|matcher|assets_qa|answer_qa|reviewer|verifier
       [--stage STAGE] [--budget N] [--owner NAME] [--adapter-module FILE]
   node tools/fenbi/pipeline/src/cli.mjs claim --role ROLE --stage STAGE --owner NAME [--job ID]
@@ -27,6 +30,7 @@ const HELP = `gwy-zhenti offline pipeline (bounded queue, no daemon)
       --token TOKEN --generation N --file PATH --name REL [--kind KIND]
   node tools/fenbi/pipeline/src/cli.mjs complete --job ID --stage STAGE --owner NAME --token TOKEN
       --generation N --artifact REL [--artifact REL ...] [--declarations JSON]
+      (use --artifact images.json#image_manifest to declare an asset manifest)
       [--answer-provenance official|source_observed|human_authored]
       [--approved --reviewer NAME] [--citations-verified]
   node tools/fenbi/pipeline/src/cli.mjs fail --job ID --stage STAGE --owner NAME --token TOKEN
@@ -52,9 +56,9 @@ function parse() {
         'source-category', 'license', 'redistribution', 'questions', 'materials', 'variant', 'actor',
         'handoff', 'artifact-root', 'role', 'stage', 'budget', 'owner', 'adapter-module', 'job',
         'token', 'generation', 'file', 'name', 'kind', 'declarations', 'answer-provenance',
-        'reviewer', 'outcome', 'reason', 'receipt', 'sha256', 'producer', 'out', 'host',
+        'reviewer', 'outcome', 'reason', 'receipt', 'sha256', 'producer', 'out', 'host', 'allowlist',
       ].map((name) => [name, { type: 'string' }])),
-      ...Object.fromEntries(['observed', 'approved', 'citations-verified', 'json', 'help'].map((name) => [name, { type: 'boolean', default: false }])),
+      ...Object.fromEntries(['observed', 'approved', 'citations-verified', 'json', 'help', 'dry-run', 'images-verified'].map((name) => [name, { type: 'boolean', default: false }])),
       evidence: { type: 'string', multiple: true, default: [] },
       artifact: { type: 'string', multiple: true, default: [] },
       image: { type: 'string', multiple: true, default: [] },
@@ -94,6 +98,7 @@ function parseDeclarations(values) {
   if (values.approved) declarations.approved = true;
   if (values.reviewer) declarations.reviewer = values.reviewer;
   if (values['citations-verified']) declarations.citationsVerified = true;
+  if (values['images-verified']) declarations.imagesVerified = true;
   return declarations;
 }
 
@@ -183,6 +188,29 @@ async function main() {
     return ok({ jobId: result.jobId, created: result.created, duplicate: result.duplicate, status: result.job.status });
   }
 
+  if (command === 'observe-import') {
+    const filename = positionals[1] ?? requireValue(values, 'handoff', 'handoff');
+    const allowlistFile = values.allowlist ?? path.join(config.dataDir, 'allowlist.json');
+    const allowlist = await loadAllowlist(allowlistFile);
+    const handoff = JSON.parse(await fs.readFile(path.resolve(filename), 'utf8'));
+    const report = await importObservations({
+      queue, config, handoff, allowlist, dryRun: Boolean(values['dry-run']),
+    });
+    return ok({ ...report, allowlistFile });
+  }
+
+  if (command === 'allowlist') {
+    const action = positionals[1] ?? 'show';
+    if (action !== 'show') return fail('INVALID_ALLOWLIST_ACTION', 'Use allowlist show');
+    const allowlistFile = values.allowlist ?? path.join(config.dataDir, 'allowlist.json');
+    const allowlist = await loadAllowlist(allowlistFile);
+    return ok({
+      allowlist: allowlistFile, missing: allowlist.missing, count: allowlist.ids.size,
+      entries: allowlist.list.map((entry) => ({ id: entry.id, title: entry.title ?? null, note: entry.note ?? null })),
+      note: 'Authorization only. The allowlist never contains URLs; URLs come from the browser owner handoff.',
+    });
+  }
+
   if (command === 'drain') {
     const role = requireValue(values, 'role');
     const budget = values.budget === undefined ? 1 : Number(values.budget);
@@ -245,7 +273,13 @@ async function main() {
   }
 
   if (command === 'complete') {
-    const artifacts = values.artifact.map((item) => ({ path: item, kind: 'data' }));
+    const artifacts = values.artifact.map((item) => {
+      const separator = item.lastIndexOf('#');
+      if (separator > 0 && /^[a-z][a-z0-9_]*$/.test(item.slice(separator + 1))) {
+        return { path: item.slice(0, separator), kind: item.slice(separator + 1) };
+      }
+      return { path: item, kind: 'data' };
+    });
     if (!artifacts.length) return fail('ARTIFACT_REQUIRED', 'Provide at least one --artifact');
     const job = await queue.completeStage({
       jobId: requireValue(values, 'job'), stage: requireValue(values, 'stage'),

@@ -32,6 +32,9 @@ function inspectStrings(value, route = '$') {
   }
 }
 
+/** Shared with the observation importer: no handoff may carry a browser session or a secret. */
+export function assertNoCredentialMaterial(value) { inspectStrings(value); }
+
 function safeSourceUrl(value) {
   let url;
   try { url = new URL(value); } catch { throw handoffError('HANDOFF_BAD_URL', 'Source URL is invalid'); }
