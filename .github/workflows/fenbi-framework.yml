@@ -29,4 +29,4 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Test parsing, preservation, authentication guards, checkpoints and export
         working-directory: tools/fenbi
-        run: node --test test/model.test.mjs test/browser.test.mjs test/pipeline.test.mjs test/dom.test.mjs test/align.test.mjs test/answerqa.test.mjs test/reorder.test.mjs
+        run: node --test test/model.test.mjs test/browser.test.mjs test/pipeline.test.mjs test/dom.test.mjs test/align.test.mjs test/answerqa.test.mjs test/reorder.test.mjs test/mapping.test.mjs

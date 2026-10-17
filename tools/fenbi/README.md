@@ -190,6 +190,51 @@ node src/cli.mjs align --document work/fenbi/NORMALIZED_FILE.json --paper "省�
 
 退出码：`0`命令成功；`2`采集/认证/验收不完整；`1`配置、依赖或运行错误。错误不打印原始账号响应和带凭据URL。
 
+## 题号映射候选报告（乱序/残卷/不同回忆版本）
+
+`src/mapping.mjs` 为**严格对齐器**无法裁决的情况提供一份**候选**一对一映射供人工复核：
+来源题号与库内题号不对应、只采到部分题目、或同一场考试的不同回忆版本措辞略有差异。
+
+它**只出候选，绝不算验证**：`comparePaper` 仍是唯一能报 `matched`/`verified` 的地方，本报告的
+`advisoryOnly` 恒为 `true`，`limitation` 固定写明"不是已验证匹配"。
+
+```js
+import { buildMappingReport, validateMappingReport } from './src/mapping.mjs';
+const report = buildMappingReport({
+  source: { label: '…', questions: [...] },
+  repository: { label: '…', questions: [...] },
+  sourceRights: 'cleared',                    // 必填，由操作者自行判定
+  isEligible: (q) => !isCollectionStub(plainText(q.contentHtml)),   // 必填：调用方自己的闸门
+});
+if (!validateMappingReport(report).ok) throw new Error('report contract violated');
+```
+
+规则（全部可离线复现）：
+
+- **题号本身从不参与评分**，只作为观察值报在 `sameNumber`。乱序试卷靠题干/选项/材料/图片身份对齐。
+- **图片证据只认内容哈希，不认引用路径**。题对象通过
+  `imageBytes: [{ sha256: "<64位十六进制>", verified: true }]` 声明同源可复验的图像内容 SHA-256；
+  路径相同不代表字节相同，字节相同也不必路径相同。缺 manifest、哈希格式不对、或
+  `verified !== true`（来源未授权）时，图片信号是 **neutral**（`available: false` + `reason`），
+  **不按 0 分扣权**，也不会因此把本来完全一致的文本题降级。
+- **`⟦IMAGE⟧` 占位符不是文本证据**：题干去掉图片占位符后若无文字，stem 信号即 unavailable；
+  纯图题只有**字节相同且已复验**才可能判 `exact`，绝不靠占位符相等。
+- **只有 `grade: "exact"` 才可自动接受**（题干与选项都完全相等）；其余一律
+  `autoAcceptable: false`、`requiresHumanReview: true`。
+- **低于 `candidateFloor` 不映射**，在 `unmatchedSource[].bestScore` 里留下最接近的分数。
+- **两个候选落在 `ambiguityMargin` 内 → 进 `ambiguous`，不做选择**；两道来源题抢同一道库内题时
+  第二道记 `repository-row-already-claimed`。
+- **选项标签集合或顺序不同 → 该对不可映射**（不是低分），因为两边不是同一题形。
+- **`isEligible` 必填**：占位存根、受限来源、未观察题位由调用方剔除，落进 `source.rejected`，
+  **永不进入候选池**；完全没有可比内容的行记 `no-comparable-content`。
+- **权限否决**：`sourceRights` 不是 `cleared` 时 `blocked = "source-rights-not-cleared"`，
+  `assignments` 为空，只保留结构统计。
+- 题号重复在两侧各自记 `duplicateNumbers` 与 `conflicts`。
+
+报告结构由 `MAPPING_REPORT_SCHEMA` 声明、`validateMappingReport()` 校验（`advisoryOnly` 必须为
+`true`；非 `exact` 的配对不得 `autoAcceptable`）。下游可据此审计，也可直接比对两次运行的 JSON
+——同一输入产生完全相同的报告。
+
 ## 测试
 
 ```powershell
