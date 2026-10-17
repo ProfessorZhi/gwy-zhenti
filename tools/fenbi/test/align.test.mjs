@@ -216,9 +216,13 @@ test('the live-site stub wording is classified as uncollected, not as differing 
   for (const live of ['题目正在全力以赴征集，将会第一时间上传',
     '题目正在全力以赴征集，将会在征集到后第一时间上传']) {
     const report = await comparePaper(fixture(question('101', 1, live)), mdQuestion('101', 1, '真实的题干内容。'));
-    assert.equal(report.questions[0].dimensions.stem.status, 'unknown', live);
-    assert.equal(report.questions[0].dimensions.stem.reason, 'source-content-is-collection-placeholder', live);
-    assert.notEqual(report.verification?.verdict, 'conflicting', live);
+    const stem = report.questions[0].dimensions.stem;
+    assert.equal(stem.status, 'unknown', live);
+    assert.equal(stem.reason, 'source-content-is-collection-placeholder', live);
+    // The whole point: a stub must never be reported as differing CONTENT. Assert on the stem's
+    // own verdict rather than the paper verdict, which can legitimately be `conflicting` for an
+    // unrelated dimension (this fixture has no repository answer section, so answer differs).
+    assert.notEqual(stem.reason, 'content-differs', live);
   }
 });
 
