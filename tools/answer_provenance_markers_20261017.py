@@ -205,10 +205,13 @@ def build_receipt_index(root: Path) -> set:
         for p in base.rglob("*"):
             if not p.is_file() or p.stat().st_size > 8 * 1024 * 1024:
                 continue
-            # Never let this tool's own output seed the evidence index. Its report
-            # contains the very hashes it is checking, which would make the audit
-            # cite itself as corroboration.
-            if p.name.startswith("ANSWER-PROVENANCE-MARKERS-"):
+            # Never let this audit lane's own output seed the evidence index. Its
+            # reports quote the very hashes the audit is checking, so including them
+            # would make the audit cite itself as corroboration and silently upgrade
+            # an unbacked citation to `verified`. The full prefix is excluded, not
+            # just the tool's own filename, because the pending-list report quotes
+            # hashes too.
+            if p.name.startswith("ANSWER-PROVENANCE-"):
                 continue
             try:
                 txt = p.read_text(encoding="utf-8", errors="ignore")
