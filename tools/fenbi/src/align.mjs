@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { readFile, realpath } from 'node:fs/promises';
 import path from 'node:path';
 import { publicUrl } from './config.mjs';
+import { isCollectionStub } from './validate.mjs';
 
 const sha = value => createHash('sha256').update(value).digest('hex');
 const str = value => value == null ? '' : String(value);
@@ -35,6 +36,11 @@ function compareText(source, repository) {
   const a = normalizeComparisonText(source), b = normalizeComparisonText(repository);
   if (!a.strict) return result('unknown', 'source-content-not-observed');
   if (!b.strict) return result('different', 'repository-content-absent');
+  // A collection stub carries no question text. Two copies of the same stub are NOT the same
+  // content, so they may never compare equal: the source was never collected (unknown), and a
+  // repository slot holding a stub has no body to match against (different).
+  if (isCollectionStub(a.strict)) return result('unknown', 'source-content-is-collection-placeholder');
+  if (isCollectionStub(b.strict)) return result('different', 'repository-content-is-collection-placeholder');
   return a.strict === b.strict ? result('same', 'normalized-text-equal', { formatOnly: false })
     : a.formatOnly === b.formatOnly ? result('same', 'whitespace-only-difference', { formatOnly: true })
       : result('different', 'content-differs');
