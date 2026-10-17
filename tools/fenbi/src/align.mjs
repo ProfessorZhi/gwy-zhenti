@@ -7,6 +7,9 @@ const sha = value => createHash('sha256').update(value).digest('hex');
 const str = value => value == null ? '' : String(value);
 const result = (status, reason, extra = {}) => ({ status, reason, ...extra });
 const imageToken = ' ⟦IMAGE⟧ ';
+// Every picture collapses to the same token, so the token alone can never stand for pixels.
+const IMAGE_TOKEN_TEXT = '⟦IMAGE⟧';
+const textOnly = (value) => value.strict.split(IMAGE_TOKEN_TEXT).join('').trim();
 
 /** Preserve mathematical symbols, digits, punctuation and image positions. */
 export function normalizeComparisonText(value) {
@@ -34,6 +37,15 @@ function compareText(source, repository) {
   const a = normalizeComparisonText(source), b = normalizeComparisonText(repository);
   if (!a.strict) return result('unknown', 'source-content-not-observed');
   if (!b.strict) return result('different', 'repository-content-absent');
+  // A picture is a placeholder in the text stream: two different pictures produce the same token,
+  // and a value rendered as text on one side and as an image on the other is a representation
+  // difference no text comparison can adjudicate. When either side is image-only, this dimension
+  // has no text evidence at all, so it must read `unknown` — never `same` for two pictures, and
+  // never `different` merely because one side is a formula image. Byte evidence is compared
+  // separately by the images dimension; text plus an inline figure still compares normally.
+  if ((a.images.length || b.images.length) && (!textOnly(a) || !textOnly(b))) {
+    return result('unknown', 'image-content-needs-byte-evidence');
+  }
   return a.strict === b.strict ? result('same', 'normalized-text-equal', { formatOnly: false })
     : a.formatOnly === b.formatOnly ? result('same', 'whitespace-only-difference', { formatOnly: true })
       : result('different', 'content-differs');
@@ -147,7 +159,6 @@ export async function comparePaper(document, markdownText, options = {}) {
       questions.push({ sourceId: str(q.id) || null, sourceNumber: q.number ?? null, repositoryId: null, repositoryNumber: null,
         matchMethod: null, status: 'unmatched', reason: candidates.length > 1 ? 'ambiguous-match' : 'no-safe-unique-match' }); continue;
     }
-    matched.add(target);
     const sourceMaterials = (q.materialIds || []).map(id => (document.materials || []).find(m => str(m.id) === str(id)));
     const repositoryMaterials = target.materialIds.map(id => repo.materials.find(m => m.id === id));
     const materialResults = sourceMaterials.map((m, index) => m && repositoryMaterials[index]
@@ -172,6 +183,17 @@ export async function comparePaper(document, markdownText, options = {}) {
       images: materialStatus.status === 'unknown' && repositoryMaterials.some(m => normalizeComparisonText(m.contentHtml).images.length)
         ? result('unknown', 'material-images-not-observed-completely') : await compareImages(sourceImages, repoImages, document, options),
     };
+    // An identity match with an empty stem and label-only options says nothing about whether the
+    // repository actually holds this question. Count it only when at least one content dimension
+    // could be compared; an image-only question compares nothing here and is carried by `images`.
+    const comparable = ['stem', 'options', 'materials', 'images']
+      .some((name) => dimensions[name]?.status === 'same' || dimensions[name]?.status === 'different');
+    if (!comparable) {
+      questions.push({ sourceId: str(q.id) || null, sourceNumber: q.number ?? null, repositoryId: target.id || null, repositoryNumber: target.number,
+        matchMethod, status: 'unmatched', reason: 'identity-matched-with-no-comparable-content', dimensions });
+      continue;
+    }
+    matched.add(target);
     questions.push({ sourceId: str(q.id) || null, sourceNumber: q.number ?? null, repositoryId: target.id || null, repositoryNumber: target.number,
       matchMethod, status: 'matched', dimensions });
   }
