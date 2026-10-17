@@ -24,9 +24,23 @@ test('PR36 compatibility: the same placeholder vocabulary is a terminal skip, no
   for (const value of ['暂无解析', '暂无答案', '待补充', '待填写', '查看答案', '答案略', '略', 'TODO', 'PLACEHOLDER', '参考答案', '点击查看']) {
     assert.equal(placeholderVerdict(value).placeholder, true, value);
   }
-  for (const value of ['B 项正确，材料反映了……', '本题解析见材料第三段', '参考答案：A']) {
-    assert.equal(placeholderVerdict(value).placeholder, false, value);
-  }
+  // PR45: the wording the live page actually renders, including the courtesy tail.
+  for (const value of [
+    '题目正在全力以赴征集',
+    '题目正在全力以赴征集，将会第一时间上传',
+    '题目正在全力以赴征集，将会在征集到后第一时间上传',
+    '题目正在全力以赴征集，请稍后再试',
+    '正在搜集中', '本题暂无收集到', '网友未回忆起', '题目缺失',
+    '非客观题，请交卷后查看参考解析估分',
+  ]) assert.equal(placeholderVerdict(value).placeholder, true, value);
+  for (const value of [
+    'B 项正确，材料反映了……',
+    '本题解析见材料第三段',
+    '参考答案：A',
+    // A genuine stem that merely quotes the marker must not be swallowed by the bounded tail.
+    '题目正在全力以赴征集，这是命题组的工作节奏，而考生需要做的是把握已有材料。'.repeat(2),
+    '关于网友未回忆起的内容，下列说法正确的是：',
+  ]) assert.equal(placeholderVerdict(value).placeholder, false, value);
   assert.equal(placeholderVerdict('<p>暂无解析</p>').placeholder, true);
   assert.equal(EXIT.BLOCKED, 2);
 });

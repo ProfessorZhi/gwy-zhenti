@@ -109,9 +109,12 @@ export class PipelineQueue {
    * Create exactly one job per (paperSourceId, version). Repeating an identical enqueue returns the
    * existing job. Conflicting metadata for the same key is an error, never a silent overwrite.
    */
-  async enqueue(input) {
+  async enqueue(input, { authorizedSourceIds } = {}) {
     await this.init();
-    const normalized = normalizeEnqueueInput(input, this.config, this.now());
+    const effectiveConfig = authorizedSourceIds === undefined
+      ? this.config
+      : { ...this.config, authorizedSourceIds };
+    const normalized = normalizeEnqueueInput(input, effectiveConfig, this.now());
     const jobId = jobIdFor(normalized);
     const existing = await this.getJob(jobId);
     if (existing) {
@@ -299,12 +302,50 @@ export class PipelineQueue {
     return manifest;
   }
 
+  /**
+   * PR42: an image-only question is a placeholder in the text stream. Its content may only be
+   * accepted at assets_qa when a hashed image manifest covers every referenced image, so two
+   * different pictures can never be treated as the same content without byte evidence.
+   */
+  async #verifyImageManifest(job, manifest, declarations) {
+    const references = job.images ?? [];
+    if (!references.length) {
+      if (declarations.imageContentOnly === true) {
+        throw queueError('IMAGE_EVIDENCE_REQUIRED', 'Image-only content needs at least one observed image reference and byte evidence');
+      }
+      return;
+    }
+    const artifact = manifest.find((item) => item.kind === 'image_manifest');
+    if (!artifact) throw queueError('IMAGE_ASSET_MANIFEST_REQUIRED', 'This paper references images; assets_qa must store an image_manifest with per-image SHA-256');
+    const filename = safeChild(this.paths.artifactDir(job.jobId, 'assets_qa'), artifact.path);
+    let parsed;
+    try { parsed = JSON.parse(await fs.readFile(filename, 'utf8')); }
+    catch { throw queueError('IMAGE_ASSET_MANIFEST_INVALID', 'image_manifest is not valid JSON'); }
+    const entries = Array.isArray(parsed) ? parsed : parsed?.images;
+    if (!Array.isArray(entries) || !entries.length) throw queueError('IMAGE_ASSET_MANIFEST_INVALID', 'image_manifest has no images array');
+    const byRef = new Map(entries.map((entry) => [String(entry?.ref ?? ''), entry]));
+    for (const image of references) {
+      const entry = byRef.get(image.ref);
+      if (!entry) throw queueError('IMAGE_HASH_MISSING', `No byte evidence for image ${image.ref}`);
+      if (!/^[a-f0-9]{64}$/i.test(String(entry.sha256 ?? ''))) throw queueError('IMAGE_HASH_INVALID', `Image ${image.ref} lacks a SHA-256`);
+      if (image.sha256 && String(entry.sha256).toLowerCase() !== image.sha256.toLowerCase()) {
+        throw queueError('IMAGE_HASH_MISMATCH', `Image ${image.ref} hash changed since observation`);
+      }
+      if (entry.bytes !== undefined && (!Number.isInteger(entry.bytes) || entry.bytes < 1)) {
+        throw queueError('IMAGE_HASH_INVALID', `Image ${image.ref} has an invalid byte count`);
+      }
+    }
+  }
+
   async completeStage({ jobId, stage, owner, token, generation, artifacts, declarations = {}, now = this.now() }) {
     assertStage(stage);
     const currentLease = await assertLease(this.config.dataDir, jobId, stage, { token, generation, now: () => now });
     if (currentLease.owner !== owner) throw queueError('LEASE_LOST', 'Lease owner mismatch');
     if (declarations.placeholder === true) {
       throw queueError('PLACEHOLDER_NOT_COMPLETABLE', 'A placeholder/stub observation must be reported as skipped_placeholder, never completed');
+    }
+    if (declarations.contentUnknown === true) {
+      throw queueError('CONTENT_UNKNOWN_NOT_COMPLETABLE', 'Unknown/placeholder content must go to needs_review or be marked skipped_placeholder, never completed');
     }
     if (stage === 'answer_explanation_qa') {
       const acceptable = ['official', 'source_observed', 'human_authored'];
@@ -323,6 +364,10 @@ export class PipelineQueue {
     const job = await this.getJob(jobId);
     if (!job) throw queueError('JOB_NOT_FOUND', 'No such job');
     const manifest = await this.#verifyArtifacts(job, stage, artifacts);
+    if (stage === 'assets_qa') await this.#verifyImageManifest(job, manifest, declarations);
+    if (stage === 'candidate_ready' && (job.images?.length ?? 0) > 0 && declarations.imagesVerified !== true) {
+      throw queueError('IMAGE_EVIDENCE_REQUIRED', 'A paper with images cannot be promoted without imagesVerified=true');
+    }
     const { job: updated } = await this.#mutate(jobId, (draft) => {
       const entry = draft.stages[stage];
       if (entry.status !== 'leased') throw queueError('STAGE_NOT_LEASED', 'Stage is not leased');

@@ -8,6 +8,15 @@ export const REDISTRIBUTION = Object.freeze(['local_only', 'allowed']);
 const SAFE_QUERY = new Set(['labelId', 'paperId', 'id', 'toPage', 'pageSize', 'type', 'categoryId']);
 const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
 const PLACEHOLDER = /^(?:暂无(?:解析|答案)?|待(?:补充|完善|填写)|查看(?:答案|解析)|答案略|解析略|略|TODO|PLACEHOLDER|参考答案|参考解析|点击查看)$/iu;
+// PR36/PR45: a not-yet-collected question still renders an ID, a number and four options, with
+// this boilerplate where the stem belongs. The live page adds a courteous tail whose wording
+// varies; the bounded generic tail (no sentence-ending punctuation, <=24 chars) covers it without
+// swallowing a genuine stem that merely quotes the marker and keeps talking.
+const COLLECTION_STUB = new RegExp('^(?:题目正在全力以赴征集|正在搜集中|本题暂无收集到|暂无收集到|网友未回忆起|题目缺失'
+  + '|非客观题，请交卷后查看参考解析估分)'
+  + '(?:[，,。.；;]?\\s*(?:请稍后再试|请稍后|敬请期待|感谢您的关注|谢谢|稍后重试'
+  + '|将会(?:在征集到后)?第一时间上传|[^。！？!?]{0,24}))?$', 'u');
+const STUB_BODY_MAX_CHARS = 120;
 
 function fail(message, code = 'INVALID_INPUT') {
   return Object.assign(new Error(`[${code}] ${message}`), { code });
@@ -100,7 +109,10 @@ export function sanitizeEvidence(evidence) {
 
 export function placeholderVerdict(value) {
   const body = String(value ?? '').replace(/<[^>]*>/gu, '').replace(/\s+/gu, '').trim();
-  return { placeholder: Boolean(body) && PLACEHOLDER.test(body), text: body };
+  if (!body) return { placeholder: false, kind: null, text: body };
+  if (PLACEHOLDER.test(body)) return { placeholder: true, kind: 'explicit-placeholder', text: body };
+  if (body.length <= STUB_BODY_MAX_CHARS && COLLECTION_STUB.test(body)) return { placeholder: true, kind: 'collection-stub', text: body };
+  return { placeholder: false, kind: null, text: body };
 }
 
 /**

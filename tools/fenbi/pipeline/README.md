@@ -6,7 +6,8 @@ fixture，不访问粉笔站点、不读取 Cookie、不写任何正式题本。
 
 ## 当前状态（请如实理解）
 
-- ✅ 队列、租约、阶段机、handoff、退避、背压、崩溃恢复、死信与 CLI 已实现，并有 39 个合成测试。
+- ✅ 队列、租约、阶段机、handoff、退避、背压、崩溃恢复、死信、**离线 observation importer** 与 CLI
+  已实现，并有 51 个合成测试。
 - ❌ **没有部署 24 小时常驻 collector，也没有启动 daemon/systemd。** 本模块只提供单次有界
   `drain` / `reconcile`，适合由现有每小时调度任务调用。
 - ❌ **没有内置真实粉笔浏览器 adapter。** 不注入 adapter 时，`drain --role collector` 会以
@@ -32,6 +33,89 @@ fixture，不访问粉笔站点、不读取 Cookie、不写任何正式题本。
 5. 自动作答、交卷、购买、绕登录、验证码绕过都没有入口；遇到 401/403/验证码会停止开新任务。
 6. 队列数据默认在 `work/fenbi/pipeline/`，根 `.gitignore` 已忽略 `work/`；目录 0700、文件 0600。
    第三方原题、图片和账号资料不进入 Git。
+
+## 离线 source-observation importer
+
+唯一 browser Owner 观察题库后写出 `gwy-zhenti-source-observation` JSON；本机用
+`observe-import` 离线导入，不打开浏览器、不访问站点、不创建练习、不猜 URL。可交接契约见
+`schema/observation-handoff.schema.json`，合成示例见 `examples/observation-handoff.example.json`：
+
+```json
+{
+  "schemaVersion": 1,
+  "kind": "gwy-zhenti-source-observation",
+  "producer": { "agent": "browser-owner", "at": "2026-10-17T04:00:00Z" },
+  "permissions": { "browserProfile": false, "cookies": false, "tokens": false },
+  "observations": [{
+    "paperSourceId": "9000001",
+    "title": "浙江2026行测C类",
+    "subject": "xingce", "area": "浙江", "year": 2026, "variant": "C类",
+    "route": {
+      "kind": "existing_practice",
+      "url": "https://www.fenbi.com/spa/tiku/exam/9000001?labelId=1",
+      "urlObserved": true, "contentStatus": "observed",
+      "evidence": [{ "type": "observed_ui", "ref": "owner observed this practice" }]
+    },
+    "rights": {
+      "category": "observed_ui", "license": null, "redistribution": "local_only",
+      "evidence": [{ "type": "observed_ui", "ref": "owner observed this practice" }]
+    },
+    "images": [{ "ref": "material/q1.png", "sourceUrl": "https://img.fbstatic.cn/q1.png" }]
+  }]
+}
+```
+
+分类结果（都不产生抓取租约，除非 `capture_ready`）：
+
+| classification | 含义 |
+| --- | --- |
+| `capture_ready` | 在本地允许名单 + `existing_practice` + 已观察且可复现安全 URL + 已观察内容 + 权利信息齐全 |
+| `observed_catalog` | 只登记：`not_found`、占位/unknown 内容；不抓取 |
+| `needs_route_review` | 允许名单内但 URL 缺失/不可复现/不安全、route 歧义、图片引用无效、rights 不全 |
+| `needs_initialization_review` | sourceId 不在本地允许名单，或 owner 明确报告该练习未初始化 |
+| `blocked_auth` | owner 观察到 401/验证码；不产生新任务 |
+| `invalid` | 信封/条目格式错误；整个 handoff 的凭证泄漏会直接拒绝导入 |
+
+规则：
+
+- **URL 只能来自 Owner handoff**。importer 不会拼 URL、不会因为知道 sourceId 就构造练习地址。
+- `contentStatus` 必须是 `observed`；`placeholder` / `unknown` 只登记，不算内容，也不入队。
+- `redistribution: allowed` 只有在 evidence 里存在 `redistribution_permission` 时才保留；否则强制
+  降为 `local_only` 并写 warning。
+- 导入过程自身不领取 collect 租约；`status` 里仍是 pending，只有 collector adapter 才能领。
+- 报告写入 `state/observation-imports/<handoffDigest>.json`；catalog 写入
+  `state/observed-catalog.json`，只保存 identity/分类/urlDigest，不保存 Cookie 或原始响应。
+
+### 本地允许名单（gitignored，不是生产 config）
+
+`work/fenbi/pipeline/allowlist.json` 只放已初始化、获授权的 sourceId/标题，**禁止放 URL**：
+
+```json
+{ "schemaVersion": 1, "sourceIds": [
+  { "id": "9000001", "title": "浙江2026行测C类" },
+  { "id": "9000002", "title": "江苏2025行测C类" },
+  { "id": "9000003", "title": "江苏2024行测A类" },
+  { "id": "9000004", "title": "广东2020县级" }
+] }
+```
+
+该文件已在当前 workspace 的本机 `work/` 下建立（不提交 Git）。浙江 2020A 与其他新卷不得加入；
+名单只授予“允许抓取已存在练习”的资格，绝不创建练习。名单缺失 = 全部 `needs_initialization_review`。
+
+## 图片 SHA / PR42 契约
+
+- 图片引用只允许 `fenbi.com` / `fbstatic.cn` / `fb.fenbike.cn` 的 HTTPS 静态 URL，不允许凭证型查询参数。
+- 含图片的卷在 `assets_qa` 必须提交一个 `image_manifest` artifact，逐图给出 `ref + sha256`；
+  缺 manifest 报 `IMAGE_ASSET_MANIFEST_REQUIRED`，哈希不符报 `IMAGE_HASH_MISMATCH`。
+- `candidate_ready` 对含图卷要求 `imagesVerified=true`。这对应 PR42：图片在文本流里只是占位
+  token，没有字节证据时不能把两张不同的图当成同一内容。
+
+## PR45 占位词表
+
+`placeholderVerdict` 同时识别 PR36 的短占位与 PR45 的实站长句
+（`题目正在全力以赴征集，将会第一时间上传` / `…将会在征集到后第一时间上传`），以及
+`正在搜集中`、`本题暂无收集到`、`网友未回忆起`、`题目缺失`、`非客观题，请交卷后查看参考解析估分`。
+有界 courtesy tail 不允许句末标点且不超过 24 字，因此真正引用该句并继续展开的题干不会被误杀。
 
 ## 阶段与角色
 
@@ -98,6 +182,14 @@ node tools/fenbi/pipeline/src/cli.mjs enqueue \
   --image material/q1.png:https://img.fbstatic.cn/example.png \
   --questions 100 --actor operator
 
+# 2b) 导入 Owner 的离线 observation handoff（不打开浏览器；只 enqueue 分类为 capture_ready 的项）
+node tools/fenbi/pipeline/src/cli.mjs observe-import \
+  --config work/fenbi/pipeline/config.json \
+  --allowlist work/fenbi/pipeline/allowlist.json \
+  --handoff /path/to/owner-observation.json [--dry-run]
+node tools/fenbi/pipeline/src/cli.mjs allowlist show \
+  --config work/fenbi/pipeline/config.json --allowlist work/fenbi/pipeline/allowlist.json
+
 # 3) 单次有界 drain。没有 adapter 时 collector 以 exit 2 退出且不领取租约。
 node tools/fenbi/pipeline/src/cli.mjs drain --config ... --role collector \
   --budget 2 --owner collector-hourly --adapter-module /path/to/owner-adapter.mjs
@@ -129,17 +221,40 @@ node tools/fenbi/pipeline/src/cli.mjs throttle reset --config ... --host www.fen
 
 ## 如何让现有每小时调度消费队列
 
-每小时任务应执行一个**有界 pass**，而不是无限循环：
+每小时任务应执行一个**有界 pass**，而不是无限循环。可直接调用
+`examples/hourly-drain.sh`（单次、无 loop、无自动刷新）：
 
-1. `reconcile`（回收崩溃租约）。
-2. `drain --role collector --budget <N>`：有 adapter 才真正采集；返回 `queue_empty`/`drained`/
-   `rate_limited`/`blocked_auth`/`backpressure` 后立即退出。
-3. 对 `normalizer`、`matcher`、`assets_qa`、`answer_qa` 分别
-   `drain --role ... --budget <M> --adapter-module ...`；外部 CC Agent 也可以直接用
-   `claim`/`put-artifact`/`complete` 领离线分片。
-4. `drain --role reviewer` / `--role verifier`：只生成 `review/<stage>.json` 清单，**不自动批准**。
-5. `status` 写回调度日志。若 `reason=backpressure` 或 exit 4，降低下一轮 budget；若
-   `blocked_auth`，先人工检查 Profile，再 `throttle reset`。
+```bash
+GWY_PIPELINE_CONFIG=work/fenbi/pipeline/config.json \
+  tools/fenbi/pipeline/examples/hourly-drain.sh
+```
+
+脚本实际执行的命令等价于：
+
+```bash
+node tools/fenbi/pipeline/src/cli.mjs reconcile --config "$CONFIG"
+node tools/fenbi/pipeline/src/cli.mjs status    --config "$CONFIG"
+# 未注入 adapter 时：exit 2, reason=collector_unwired, claimed=0
+node tools/fenbi/pipeline/src/cli.mjs drain --config "$CONFIG" --role collector \
+  --budget "$COLLECTOR_BUDGET" --owner "hourly-$(date -u +%Y%m%dT%H%M%SZ)"
+# reviewer 只写 review/human_review.json 清单，不自动批准
+node tools/fenbi/pipeline/src/cli.mjs drain --config "$CONFIG" --role reviewer --budget 1
+node tools/fenbi/pipeline/src/cli.mjs reconcile --config "$CONFIG"
+node tools/fenbi/pipeline/src/cli.mjs status    --config "$CONFIG"
+```
+
+行为约定：
+
+- `drain` 一次只处理预算内任务，然后返回 `queue_empty` / `drained` / `rate_limited` /
+  `blocked_auth` / `backpressure` / `collector_unwired`，不会常驻。
+- **没有 adapter 时 collector 一定 exit 2 且 claimed=0**；这不是测试失败，是“尚未接线”的显式信号。
+  `examples/hourly-drain.sh` 会保留这个 exit 2（同时打印 `collector_unwired` 与
+  “no capture was attempted”），让每小时调度能看到真实状态；不要把它当成 CI 绿灯，也不要宣称
+  24h daemon 已部署。
+- 离线阶段由外部 Agent 用 `claim`/`put-artifact`/`complete` 领取；也可以注入 worker adapter 后
+  `drain --role normalizer ...`。
+- `status` 写回调度日志。若 exit 4/`backpressure`，降低下一轮 budget；若 `blocked_auth`，
+  先人工检查 Profile，再 `throttle reset`，绝不自动刷新页面。
 
 429/503 的指数退避会持久化到 `state/throttle.json`，下一次每小时任务会继续等待，不会重新猛刷。
 401/403/验证码的 `blocked_auth` 不会被时间自动清除，必须人工 reset。
@@ -151,15 +266,20 @@ cd tools/fenbi/pipeline
 npm test          # 等价于 node --test test/*.test.mjs
 ```
 
-39 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
+51 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
 429/503 退避与 401 阻断、权限/不可再分发元数据、handoff 凭证负例、占位与 AI 答案不能完成、
-背压、PR28/PR31/PR36 契约相容性、CLI 真实退出码。测试不会打开浏览器、不会访问站点、不会读取
-`work/fenbi/profiles/`。
+**1 producer + 2 独立 consumers + reviewer/verifier 全链路**、**图片 manifest SHA 正负例**、
+**未授权源不产生租约**、**无再分发许可强制 local_only**、**占位/unknown 不算内容**、
+背压、PR28/PR31/PR36/PR42/PR45 契约相容性、CLI 真实退出码。测试不会打开浏览器、不会访问站点、
+不会读取 `work/fenbi/profiles/`。
 
 ## 明确的缺口（下一轮需要的人工/授权输入）
 
 - 真实 browser-owner adapter 尚未接入本模块；当前每小时 collector drain 若未提供 adapter 会
-  以 `collector_unwired` 干净退出。
-- 四卷已初始化试卷的真实 `paperSourceId` 尚未写入生产 config；在填入前 capture 保持关闭。
+  以 `collector_unwired` 干净退出，claimed=0。
+- 本机 gitignored 允许名单已加入四卷 sourceId（9000001 / 9000002 / 9000003 / 9000004），
+  但**真实 URL 仍必须由唯一 browser Owner 的 observation handoff 提供**；本模块不猜 URL。
 - 浙江 2020A 与其他新卷仍缺**首次初始化授权**；任何新来源还需要来源类别、许可、可再分发证据。
-- 正式卷的版权/再分发证据仍以 `local_only` 为默认；没有证据不得标 `redistribution: allowed`。
+- 正式卷的版权/再分发证据仍以 `local_only` 为默认；没有 `redistribution_permission` 证据时
+  即使 handoff 请求 `allowed` 也会被强制降级。
+- 图片 manifest 的 SHA 来自离线 consumer 的核验；本模块不下载图片，也不接触实站。
