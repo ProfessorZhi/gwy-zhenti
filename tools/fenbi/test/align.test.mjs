@@ -226,3 +226,97 @@ test('the stub rule does not fire on genuine text that mentions collection', asy
   const report = await comparePaper(fixture(question('101', 1, genuine)), mdQuestion('101', 1, genuine));
   assert.equal(report.questions[0].dimensions.stem.status, 'same');
 });
+
+// ── image content needs byte evidence ───────────────────────────────────────────────────────
+// Every picture collapses to one placeholder token, so the *text* stream cannot tell two pictures
+// apart, and cannot adjudicate "value written as text" against "value rendered as an image". These
+// cases must read `unknown`; `same` would claim pixels were compared, `different` would claim the
+// content was read. Text options are untouched (last block).
+
+const imgQuestion = (stem, options) => ({ id: '101', number: 1, contentHtml: stem, options,
+  materialIds: [], answerHtml: 'A', explanationHtml: '解析正文。' });
+const textOptions = () => [{ label: 'A', contentHtml: '甲' }, { label: 'B', contentHtml: '乙' }];
+const imageOptions = (prefix) => ['A', 'B'].map((label, index) => ({ label, contentHtml: `<img src="https://example.com/${prefix}${index}.png">` }));
+const mdWith = (stem, optionLines) => `## 第 1 题 <sub>qid 101 · 图形</sub>\n\n${stem}\n\n${optionLines}\n`;
+
+test('two different pictures are never reported as the same stem or options', async () => {
+  // The 图形推理 shape: a picture for the stem and pictures for the options, with different pictures
+  // on each side. Nothing here is comparable as text, so nothing may be claimed as a match.
+  const stemCase = await comparePaper(fixture(imgQuestion('<img src="https://example.com/figA.png">', imageOptions('opt'))),
+    mdWith('![](figB.png)', '- **A**. ![](../图片/other0.png)\n- **B**. ![](../图片/other1.png)'));
+  assert.equal(stemCase.questions[0].dimensions.stem.status, 'unknown');
+  assert.equal(stemCase.questions[0].dimensions.stem.reason, 'image-content-needs-byte-evidence');
+  assert.equal(stemCase.questions[0].dimensions.options.status, 'unknown');
+  assert.equal(stemCase.summary.matched, 0, 'an identity match with no comparable content is not a match');
+
+  // A picture stem with real text options is still a match on the options — the gate must not
+  // discard content that genuinely is comparable.
+  const mixed = await comparePaper(fixture(imgQuestion('<img src="https://example.com/figA.png">', textOptions())),
+    mdWith('![](figB.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(mixed.questions[0].dimensions.stem.status, 'unknown');
+  assert.equal(mixed.summary.matched, 1, 'the options are still real comparable content');
+
+  const optionCase = await comparePaper(fixture(imgQuestion('真实的题干。', imageOptions('opt'))),
+    mdWith('真实的题干。', '- **A**. ![](../图片/other0.png)\n- **B**. ![](../图片/other1.png)'));
+  assert.equal(optionCase.questions[0].dimensions.options.status, 'unknown');
+  assert.equal(optionCase.questions[0].dimensions.options.reason, 'option-content-not-observed');
+  // The stem itself is real text, so this row is still a genuine match — only the options are open.
+  assert.equal(optionCase.questions[0].dimensions.stem.status, 'same');
+});
+
+test('an image-only stem has no text evidence, and a formula image is not a content difference', async () => {
+  const imageOnly = await comparePaper(fixture(imgQuestion('<img src="https://example.com/a.png">', textOptions())),
+    mdWith('![](a.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(imageOnly.questions[0].dimensions.stem.status, 'unknown');
+
+  // Value rendered as text on the source side, as a formula image in the repository.
+  const formula = await comparePaper(fixture(imgQuestion('<p>增长率为 16.6%</p>', textOptions())),
+    mdWith('![](formula.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(formula.questions[0].dimensions.stem.status, 'unknown');
+  assert.equal(formula.questions[0].dimensions.stem.reason, 'image-content-needs-byte-evidence');
+  assert.notEqual(formula.questions[0].dimensions.stem.status, 'different');
+});
+
+test('label-only options are unknown, while an empty stem cannot carry a match on its own', async () => {
+  const labelsOnly = await comparePaper(fixture(imgQuestion('真实的题干。', [{ label: 'A', contentHtml: '' }, { label: 'B', contentHtml: '' }])),
+    mdWith('真实的题干。', '- **A**. \n- **B**. '));
+  assert.equal(labelsOnly.questions[0].dimensions.options.status, 'unknown');
+  assert.notEqual(labelsOnly.questions[0].dimensions.options.status, 'same');
+  assert.equal(labelsOnly.questions[0].dimensions.stem.status, 'same');
+
+  const empty = await comparePaper(fixture(imgQuestion('', [])), mdWith('', '- **A**. \n- **B**. '));
+  assert.equal(empty.questions[0].status, 'unmatched');
+  assert.equal(empty.questions[0].reason, 'identity-matched-with-no-comparable-content');
+  assert.equal(empty.summary.matched, 0);
+});
+
+test('text alongside an inline figure still compares exactly as before', async () => {
+  const same = await comparePaper(fixture(imgQuestion('如图，求面积。<img src="https://example.com/f.png">', textOptions())),
+    mdWith('如图，求面积。![](f.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(same.questions[0].dimensions.stem.status, 'same');
+  assert.equal(same.summary.matched, 1);
+
+  const different = await comparePaper(fixture(imgQuestion('如图，求周长。<img src="https://example.com/f.png">', textOptions())),
+    mdWith('如图，求面积。![](f.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(different.questions[0].dimensions.stem.status, 'different', 'real text differences are still real');
+});
+
+test('byte-verified pictures still reach same on the images dimension', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'fenbi-align-img-'));
+  try {
+    const assetRoot = path.join(root, 'assets'), repoRoot = path.join(root, 'repo');
+    await mkdir(assetRoot); await mkdir(repoRoot);
+    const bytes = Buffer.from('identical-figure-bytes');
+    const hash = createHash('sha256').update(bytes).digest('hex');
+    await writeFile(path.join(assetRoot, 'f.png'), bytes);
+    await writeFile(path.join(repoRoot, 'f.png'), bytes);
+    const doc = fixture(imgQuestion('<img src="https://example.com/f.png">', textOptions()));
+    doc.assets = [{ url: 'https://example.com/f.png', localPath: 'f.png', sha256: hash, status: 'downloaded' }];
+    const report = await comparePaper(doc, mdWith('![](f.png)', '- **A**. 甲\n- **B**. 乙'),
+      { assetRoot, repoRoot, paperPath: path.join(repoRoot, 'paper.md') });
+    // The text dimension stays honest about having no text; the bytes are what carries the match.
+    assert.equal(report.questions[0].dimensions.stem.status, 'unknown');
+    assert.equal(report.questions[0].dimensions.images.status, 'same');
+    assert.equal(report.summary.matched, 1, 'verified bytes are comparable content');
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
