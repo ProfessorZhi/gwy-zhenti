@@ -518,6 +518,9 @@ def main() -> int:
     result = scan(args.root, args.paths)
 
     if args.json:
+        # The per-paper ledger belongs in --ledger. Leaving it in the scan report made
+        # that file 660 KB and duplicated the ledger wholesale.
+        result = {k: v for k, v in result.items() if k != "papers"}
         payload = result
         if args.max_findings:
             payload = dict(result)
