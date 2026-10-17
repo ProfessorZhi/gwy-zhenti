@@ -86,7 +86,9 @@ function imageManifest(question) {
 
 function optionSignal(sourceOptions = [], repositoryOptions = []) {
   if (!sourceOptions.length && !repositoryOptions.length) return { available: false, score: 0, contradictory: false };
-  if (!sourceOptions.length || !repositoryOptions.length) return { available: true, score: 0, contradictory: true };
+  // One side carrying no option bodies is absent evidence, not a different question shape: the pair
+  // may still be a candidate on its stem, and the receipt reports it as `missing_options`.
+  if (!sourceOptions.length || !repositoryOptions.length) return { available: true, score: 0, contradictory: false, reason: 'option-bodies-present-on-one-side-only' };
   const sourceLabels = sourceOptions.map((option) => str(option.label));
   const repositoryLabels = repositoryOptions.map((option) => str(option.label));
   // A different label set or order is a contradiction, not a low score: the two sides are not the
