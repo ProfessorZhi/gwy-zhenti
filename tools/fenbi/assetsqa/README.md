@@ -18,6 +18,8 @@
 | `verify_pr62_stats.py` | **第 5 轮**：从 PR #62 自己的 JSON 重算 coverage 分母、一对一、闭合、mapping↔分类差、逆序、去 weak 覆盖率 |
 | `crosscheck_matchers.mjs` | **第 5 轮**：PR #62 `reorder.mjs` 与 PR #63 `mapping.mjs` 的**纯合成**定义对照（参数化路径） |
 | `test_verify_pr62_stats.py` | 单测（第 5/6 轮，双 schema） |
+| `metadata_provenance_gate.py` | **第 7 轮**：metadata-only 的版权标签 / 身份混同 / 计数边界 / 图片提升四类 fail-closed 规则（R1–R4） |
+| `test_metadata_provenance_gate.py` | 单测（第 7 轮，25 条） |
 
 ## 用法
 
@@ -68,3 +70,7 @@ ASSETSQA_REPO=$PWD ASSETSQA_HANDOFF=<handoff-root> \
 - **图片题的 `exact` 不能只看题干文本**：只要题干残留一个字（如「图」），文本分支就会判 exact，**已验证不同的图片内容被忽略** → `autoAcceptable:true`。`exact` 必须同时要求「两侧都有已验 manifest 时图片不矛盾」。
 - **URL 形态的 asset ref 可能靠哈希不匹配偶然被拒**：`assertArtifactRelative` 只拦绝对路径/`..`，`https://…` 在 POSIX 不算绝对路径；应在该函数显式拒绝带 scheme 的 ref（否则错误码误导，且属偶然防护）。
 - **报告引用不存在的校验脚本**属于可核验性缺陷：数字对，但读者跑不了「我声称的校验器」。
+- **「正式真题」标签要对着它自述的来源读**：文件自称 `正式真题`、来源明细却写「粉笔会员采」、校验状态又写「再分发条件未核实」时，**不得**标 verified；降级 `provenance_uncertain`，只要求来源确认，不做侵权判定、不删正文。
+- **重新归类 ≠ 恢复**：把槽位移出某个分母（如优秀村干部移出申论）**不得**让总缺口数下降；引用时必须同时给「总缺口」和「子集分母」两个数。
+- **优良村干部 / 通用 vs 综合 / 执法专项 vs 市考** 三类身份不能按名字相近合并；尤其 `行政执法卷` 以「市考《申论》」名义记载时要 `needs_review`。
+- **「已验图片冲突」比「图片证据缺失」更强**：缺失只表示没有证据，冲突是**内容确实不同**的正面证据，绝不能因为缺 flag 而被提升为 exact/auto-acceptable。
