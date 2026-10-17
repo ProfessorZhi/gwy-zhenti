@@ -4,7 +4,7 @@ import { atomicWriteJson, digest, ensurePrivateDir, nowIso, readJson } from './f
 import { queuePaths } from './config.mjs';
 import {
   REDISTRIBUTION, SOURCE_CATEGORIES, assertArtifactRelative, sanitizeEvidence,
-  sanitizeImageUrl, sanitizeSourceUrl,
+  sanitizeImageUrl, sanitizeSourceUrl, SENSITIVE_QUERY,
 } from './identity.mjs';
 import { assertNoCredentialMaterial } from './handoff.mjs';
 
@@ -167,6 +167,14 @@ export function classifyObservation(observation, { allowlist, config, producer =
   let url;
   try { url = sanitizeSourceUrl(route.url, { allowedHosts: config.allowedCaptureHosts }); }
   catch (error) { return { ...base, classification: 'needs_route_review', reason: `url-unsafe: ${error.message}` }; }
+  // The check below is handed the *sanitized* URL, so it cannot notice that sanitizing dropped a
+  // parameter which decides which page the browser lands on. A route parameter such as `routecs`
+  // selects the exercise view; dropping it lands on a blank page while still reporting success.
+  // Compare with what was OBSERVED and refuse on any loss, matching tools/fenbi's urlRouteLoss.
+  // A credential-shaped parameter is stripped on purpose and does not count as a loss.
+  const observedKeys = [...new URL(route.url).searchParams.keys()];
+  const lost = observedKeys.filter((key) => !new URL(url).searchParams.has(key) && !SENSITIVE_QUERY.test(key));
+  if (lost.length) return { ...base, classification: 'needs_route_review', reason: `url-route-params-lost: ${lost.join(',')}` };
   if (!isReproducibleObservedUrl(url)) return { ...base, classification: 'needs_route_review', reason: 'url-not-reproducible' };
 
   const rights = observation.rights;

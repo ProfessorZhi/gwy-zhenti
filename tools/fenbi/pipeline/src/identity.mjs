@@ -6,7 +6,7 @@ export const SOURCE_CATEGORIES = Object.freeze(['observed_ui', 'official', 'lice
 export const REDISTRIBUTION = Object.freeze(['local_only', 'allowed']);
 
 const SAFE_QUERY = new Set(['labelId', 'paperId', 'id', 'toPage', 'pageSize', 'type', 'categoryId']);
-const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
+export const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
 const PLACEHOLDER = /^(?:暂无(?:解析|答案)?|待(?:补充|完善|填写)|查看(?:答案|解析)|答案略|解析略|略|TODO|PLACEHOLDER|参考答案|参考解析|点击查看)$/iu;
 // PR36/PR45: a not-yet-collected question still renders an ID, a number and four options, with
 // this boilerplate where the stem belongs. The live page adds a courteous tail whose wording
