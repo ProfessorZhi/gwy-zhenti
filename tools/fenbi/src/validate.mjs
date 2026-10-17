@@ -18,7 +18,6 @@ const accessGate = (body) => {
   const residue = body.replace(new RegExp(ACCESS_GATE.source, 'giu'), '').replace(/[\s。；;，,、.:：!！?？"'“”‘’()（）]/gu, '');
   return residue.length <= EVASIVE_RESIDUE_MAX_CHARS;
 };
-});
 // A source that has not collected a question still renders a full-looking slot: an ID, an original
 // number and four options, with this boilerplate where the stem should be. It is not content, so it
 // must not satisfy a body check, must not be exported as a question, and must never compare equal to

@@ -6,7 +6,6 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { createDocument, absorbPayload, extractCatalog, collectAssetUrls } from '../src/model.mjs';
 import { paperProvenance, validateDocument } from '../src/validate.mjs';
-import { validateDocument } from '../src/validate.mjs';
 import { renderCandidate } from '../src/render.mjs';
 
 function fixture(subject = 'xingce') {
