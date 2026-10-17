@@ -4,18 +4,19 @@ import path from 'node:path';
 import { parseArgs } from 'node:util';
 import { createInterface } from 'node:readline/promises';
 import { setTimeout as sleep } from 'node:timers/promises';
-import { DEFAULTS, REPO, WORK, ensurePrivateWork, loadConfig, publicUrl, safeChild } from './config.mjs';
+import { DEFAULTS, REPO, WORK, ensurePrivateWork, loadConfig, publicUrl, safeChild, urlIsReproducible, urlRouteLoss } from './config.mjs';
 import { acquireLock, digest, jobKey, readJson, resumeBundle, writeJson } from './store.mjs';
 import { createDocument, absorbPayload, collectAssetUrls } from './model.mjs';
-import { validateDocument } from './validate.mjs';
-import { openSession, observeReadResponses, captureDom, downloadAssets } from './browser.mjs';
+import { paperProvenance, validateDocument } from './validate.mjs';
+import { openSession, observeReadResponses, captureDom, downloadAssets, landingMismatch, safePageUrl } from './browser.mjs';
 import { makePlan, parseInventory, inferIdentity } from './plan.mjs';
 import { exportCandidate } from './render.mjs';
 import { observedReadUrl, replayReads } from './reads.mjs';
 import { sanitizeHtml } from './privacy.mjs';
 import { normalizeCatalogPayload, mergeCatalog } from './catalog.mjs';
 import { parseFenbiExamDom } from './dom.mjs';
-import { comparePaper } from './align.mjs';
+import { comparePaper, alignmentExitCode } from './align.mjs';
+import { MAX_CONCURRENCY, clampConcurrency, createControl, createHostThrottle, createSerialQueue, runBounded } from './schedule.mjs';
 
 const HELP = `Fenbi capture (local persistent Chrome/Edge; no model or cloud-browser calls)
   node src/cli.mjs init
@@ -26,8 +27,9 @@ const HELP = `Fenbi capture (local persistent Chrome/Edge; no model or cloud-bro
   node src/cli.mjs plan [--all]         # compare observed catalog with repository
   node src/cli.mjs add --id ID --title TITLE --subject xingce|shenlun
       --area AREA --year YEAR --variant VARIANT --url OBSERVED_URL [--questions N]
-  node src/cli.mjs capture --job KEY [--manual] [--force] [--headless]
+  node src/cli.mjs capture --job KEY [--manual] [--force] [--headless] [--concurrency N]
   node src/cli.mjs capture --all        # ready URLs only, one browser session
+                                        # N = pages inside that one session (1..3, default 1)
   node src/cli.mjs validate --job KEY
   node src/cli.mjs export --job KEY     # fresh candidate folder only
   node src/cli.mjs normalize-dom --document WORK_JSON
@@ -39,7 +41,7 @@ Unknown totals or unmapped fields remain partial. Nothing writes formal papers.
 
 function args() {
   return parseArgs({ allowPositionals: true, options: Object.fromEntries([
-    ...['config', 'url', 'job', 'id', 'title', 'subject', 'area', 'year', 'variant', 'questions', 'materials', 'wait-seconds', 'document', 'paper', 'asset-root'].map(x => [x, { type: 'string' }]),
+    ...['config', 'url', 'job', 'id', 'title', 'subject', 'area', 'year', 'variant', 'questions', 'materials', 'wait-seconds', 'document', 'paper', 'asset-root', 'concurrency'].map(x => [x, { type: 'string' }]),
     ...['all', 'manual', 'force', 'headless', 'help'].map(x => [x, { type: 'boolean', default: false }]),
   ]) });
 }
@@ -144,6 +146,12 @@ async function addJob(values) {
   identity.year = Number(values.year);
   if (Object.values(identity).some(x => x === undefined || x === '' || x === null) ||
       !['xingce', 'shenlun'].includes(identity.subject) || !Number.isInteger(identity.year) || identity.year < 2016 || identity.year > new Date().getFullYear()) throw new Error('Provide a complete observed paper identity');
+  // Refuse rather than silently navigate somewhere else: if normalising the observed URL would drop
+  // a path, a fragment or a non-credential parameter, this framework cannot reproduce that URL.
+  if (!urlIsReproducible(values.url)) {
+    const loss = urlRouteLoss(values.url);
+    throw new Error(`Observed URL is not reproducible (path=${loss.path} hash=${loss.hash} dropped=${loss.routeParams.join(',') || 'none'}); re-observe a URL whose route this framework can store exactly`);
+  }
   const job = { identity, url: publicUrl(values.url),
     expected: { questions: countOption(values.questions, 'questions'), materials: countOption(values.materials, 'materials'), questionNumbers: null, materialIds: null },
     expectedBasis: 'operator_verified_source', reason: 'explicit_target', status: 'ready' };
@@ -164,8 +172,19 @@ async function getJobs(values) {
   return jobs;
 }
 
-async function captureJob(session, job, config, values) {
+/**
+ * One paper, one dedicated page inside the single persistent context. `runtime` carries the pieces
+ * the scheduler owns — the page this task is pinned to, the shared host throttle, the shared stop
+ * flag and the shared serial write queue — so that nothing shared is mutated concurrently.
+ */
+async function captureJob(session, job, config, values, runtime = {}) {
   if (!job.url || job.status !== 'ready') throw new Error('Job needs an observed paper URL and reviewed identity');
+  const page = runtime.page ?? session.page;
+  const slot = runtime.slot ?? 0;
+  const throttle = runtime.throttle ?? null;
+  const control = runtime.control ?? null;
+  const serialize = runtime.serialize ?? ((task) => task());
+  const host = new URL(publicUrl(job.url)).hostname;
   const configFingerprint = digest({ contentSelector: config.contentSelector, nextQuestionSelector: config.nextQuestionSelector,
     explanationSelector: config.explanationSelector, fieldMap: config.fieldMap, domAdapter: config.domAdapter });
   const resumed = !values.force && await resumeBundle(WORK, job, configFingerprint, validateDocument);
@@ -177,30 +196,60 @@ async function captureJob(session, job, config, values) {
   Object.assign(document.expected, job.expected);
   document.evidence.push({ type: 'expected-counts-basis', basis: job.expectedBasis, expected: job.expected });
   const shapes = [];
-  const registeredReads = await readRegistry(config);
+  // A shared registry is merged in memory (`Set.add` is atomic) and only ever written through the
+  // serial queue, so two pages finishing together cannot lose each other's registrations.
+  const registeredReads = runtime.registry ?? await readRegistry(config);
   const accept = (payload, meta) => {
     if (meta.subject !== job.identity.subject) return;
     if (!config.domAdapter) absorbPayload(document, payload, { ...meta, fieldMap: config.fieldMap });
     shapes.push({ url: meta.url, fields: fieldShapes(payload) });
     if (meta.replayUrl) registeredReads.add(meta.replayUrl);
   };
-  const observer = observeReadResponses(session.page, accept);
+  const observer = observeReadResponses(page, accept);
+  // Authentication loss, a captcha or a rate limit stops *new* work without killing what is in
+  // flight. Nothing here retries past a block, changes profile, or looks for another route in.
+  let seenRateLimits = 0;
+  const observeSignals = () => {
+    if (observer.stats.captcha) control?.stop('captcha');
+    if (observer.stats.unauthorized || session.auth.status === 'unauthenticated') control?.stop('authentication-required');
+    if (throttle && observer.stats.rateLimited > seenRateLimits) {
+      seenRateLimits = observer.stats.rateLimited;
+      throttle.penalize(host, 429);
+      if (throttle.saturated()) control?.stop('rate-limited');
+    }
+  };
   let failure = null;
   try {
-    await navigate(session.page, job.url, config);
+    if (throttle) await throttle.acquire(host);
+    await navigate(page, job.url, config);
     if (values.manual) await pause('请进入本卷完整题目或解析页面，避免开始新练习、交卷或购买。', values);
     await observer.flush();
+    observeSignals();
+    // Where did the browser actually land? A link that opens a new tab leaves this page on the
+    // catalogue, and a redirect can land on a sign-in page. Either way this page is not the paper,
+    // so the capture is blocked rather than reading whatever happens to be on screen. A page the
+    // site opened by itself is never driven — it is only named, so an operator can re-aim the job.
+    const entry = publicUrl(config.entryUrl);
+    const landed = safePageUrl(page.url());
+    const strayUrls = (runtime.strayPages ?? [])
+      .map((candidate) => { try { return safePageUrl(candidate.url()); } catch { return null; } })
+      .filter((url) => url && url !== entry);
+    document.evidence.push({ type: 'page-landed', url: landed, expected: document.source.url, otherObservedPages: strayUrls });
+    const mismatch = landingMismatch({ landed, expected: document.source.url, entry, strayUrls });
+    if (mismatch) document.evidence.push({ type: 'page-route-mismatch', reason: mismatch, landed,
+      expected: document.source.url, otherObservedPages: strayUrls });
     const replay = await replayReads(session.context, job.readUrls || [], [...registeredReads], accept, { delayMs: config.delayMs });
     document.evidence.push(...replay.map(item => ({ type: 'observed-read-replay', ...item })));
     for (const item of replay) if (item.outcome !== 'accepted') document.conflicts.push({ scope: 'replay', url: item.url, outcome: item.outcome });
     const seen = new Set();
     for (let index = 0; index < config.maxPages; index++) {
       await observer.flush();
+      observeSignals();
       if (config.explanationSelector) {
-        const explain = session.page.locator(config.explanationSelector);
+        const explain = page.locator(config.explanationSelector);
         if (await explain.count() === 1 && await explain.isVisible()) { await explain.click(); await sleep(config.delayMs); await observer.flush(); }
       }
-      const dom = await captureDom(session.page, config.contentSelector);
+      const dom = await captureDom(page, config.contentSelector);
       if (dom.blocked && !['content_selector_required', 'selector_not_found'].includes(dom.blocked.reason)) {
         document.evidence.push({ type: 'blocked', reason: dom.blocked.reason }); break;
       }
@@ -232,7 +281,7 @@ async function captureJob(session, job, config, values) {
         }
       }
       if (!config.nextQuestionSelector) break;
-      const next = session.page.locator(config.nextQuestionSelector);
+      const next = page.locator(config.nextQuestionSelector);
       if (await next.count() !== 1 || !await next.isVisible() || !await next.isEnabled()) break;
       if (index === config.maxPages - 1) { document.evidence.push({ type: 'page-limit-reached', limit: config.maxPages }); break; }
       await next.click(); await sleep(config.delayMs + config.settleMs);
@@ -242,14 +291,18 @@ async function captureJob(session, job, config, values) {
     failure = error.code || error.name || 'capture_failed';
     document.evidence.push({ type: 'capture-failed', reason: failure });
   } finally { observer.stop(); await observer.flush(); }
-  await saveRegistry(config, registeredReads);
+  observeSignals();
+  await serialize(() => saveRegistry(config, registeredReads));
   if (observer.stats.unauthorized || session.auth.status === 'unauthenticated') document.evidence.push({ type: 'authentication-required', status: 401 });
   if (observer.stats.captcha) document.evidence.push({ type: 'captcha' });
   for (const key of ['oversized', 'failed', 'nonJson']) if (observer.stats[key]) document.conflicts.push({ scope: 'capture', field: key, count: observer.stats[key] });
   if (document.evidence.some(x => ['pagination-stalled', 'page-limit-reached', 'capture-failed'].includes(x.type))) document.conflicts.push({ scope: 'capture', field: 'incomplete-navigation' });
   document.assets = collectAssetUrls(document).map(url => ({ url, status: 'pending' }));
-  try { await downloadAssets(session.page, document, path.join(directory, 'assets')); }
-  catch { document.conflicts.push({ scope: 'capture', field: 'image-download-interrupted' }); }
+  try {
+    // Coarse gate: one further same-host slot before the image burst starts.
+    if (throttle) await throttle.acquire(host);
+    await downloadAssets(page, document, path.join(directory, 'assets'));
+  } catch { document.conflicts.push({ scope: 'capture', field: 'image-download-interrupted' }); }
   const verdict = await validateDocument(document, { assetRoot: path.join(directory, 'assets') });
   const documentFile = `document-${runId}.json`;
   await writeJson(path.join(directory, documentFile), document);
@@ -258,9 +311,13 @@ async function captureJob(session, job, config, values) {
   await writeJson(path.join(directory, 'checkpoint.json'), {
     schemaVersion: 1, status: verdict.status, configFingerprint, jobFingerprint: digest(job), documentFile,
     sha256: digest(await fs.readFile(path.join(directory, documentFile))), updatedAt: new Date().toISOString(),
-    network: observer.stats, guard: session.guardStats, failure,
+    network: observer.stats, guard: session.guardStats, failure, pageSlot: slot,
+    provenance: paperProvenance(document),
   });
-  console.log(JSON.stringify({ job: jobKey(job), title: job.identity.title, status: verdict.status, observed: verdict.observed, issueCodes: verdict.issues.map(x => x.code) }, null, 2));
+  // sourceId is stated explicitly so a concurrent run can be told apart per paper, not per slot.
+  console.log(JSON.stringify({ job: jobKey(job), sourceId: job.identity.id, pageSlot: slot, title: job.identity.title,
+    status: verdict.status, observed: verdict.observed, provenance: paperProvenance(document),
+    issueCodes: verdict.issues.map(x => x.code) }, null, 2));
   if (verdict.status !== 'complete') process.exitCode = 2;
 }
 
@@ -317,7 +374,10 @@ async function main() {
     const report = await comparePaper(input, await fs.readFile(paperPath, 'utf8'), { repoRoot: REPO, paperPath, assetRoot });
     const output = safeChild(WORK, `alignment-${Date.now()}.json`);
     await writeJson(output, report);
-    console.log(JSON.stringify({ output, paper: report.paper, summary: report.summary }, null, 2));
+    console.log(JSON.stringify({ output, verdict: report.verification.verdict, unverified: report.verification.unverified,
+      notApplicable: report.verification.notApplicable, paper: report.paper, summary: report.summary }, null, 2));
+    // 2 = 验收不完整. Anything short of a fully verified alignment must not exit 0.
+    process.exitCode = alignmentExitCode(report);
     return;
   }
   if (command === 'init') {
@@ -356,7 +416,34 @@ async function main() {
       if (command === 'capture') {
         session = await openSession(config, { mode: 'capture', headless: values.headless });
         await navigate(session.page, config.entryUrl, config);
-        for (const job of jobs) { await captureJob(session, job, config, values); if (session.auth.status === 'unauthenticated') break; }
+        // One profile, one persistent context, one owner process. Extra pages live *inside* that
+        // context, so the read-only route guard, the cookie jar and the profile lock stay single.
+        const concurrency = clampConcurrency(values.concurrency ?? config.concurrency);
+        if (values.concurrency !== undefined && Number(values.concurrency) > MAX_CONCURRENCY) {
+          console.log(`并发上限为 ${MAX_CONCURRENCY}，已收敛到 ${concurrency}。`);
+        }
+        const throttle = createHostThrottle({ minIntervalMs: config.delayMs });
+        const control = createControl();
+        const serialize = createSerialQueue();
+        const registry = await readRegistry(config);
+        // Slot 0 is the entry page; further slots are fresh pages from the same context.
+        const pages = [session.page];
+        for (let slot = 1; slot < concurrency; slot++) pages.push(await session.context.newPage());
+        // A page the site opens by itself is never driven; it is recorded so an unobserved read
+        // cannot be mistaken for part of a task's evidence, and so a job whose paper opened in a
+        // new tab is blocked by name instead of capturing the tab we are still holding.
+        const strayPages = [];
+        const isScheduled = (candidate) => pages.includes(candidate);
+        session.context.on('page', (opened) => { if (!isScheduled(opened)) strayPages.push(opened); });
+        const run = await runBounded(jobs, (job, { slot }) => captureJob(session, job, config, values,
+          { page: pages[slot], slot, throttle, control, serialize, registry, strayPages }), { concurrency, control });
+        if (strayPages.length) console.log(JSON.stringify({ strayPages: strayPages.map((page) => safePageUrl(page.url())),
+          note: '页面自行打开的标签页未被驱动，也未计入任何任务的证据' }, null, 2));
+        console.log(JSON.stringify({ command: 'capture', concurrency: run.concurrency, completed: run.results.filter(r => r?.ok).length,
+          failed: run.failures.length, skipped: run.skipped.length, stopped: run.stopped, reason: run.reason, throttle: throttle.state() }, null, 2));
+        for (const failure of run.failures) console.log(`任务失败（不影响其它卷）：${failure.item?.identity?.id ?? failure.index} ${failure.error?.code ?? failure.error?.name ?? 'ERROR'}`);
+        for (const index of run.skipped) console.log(`未启动（已停止）：${jobs[index]?.identity?.id ?? index}`);
+        for (const page of pages.slice(1)) await page.close().catch(() => {});
       } else for (const job of jobs) await bundleCommand(command, job);
       return;
     }
