@@ -206,7 +206,7 @@ test('a configured concurrency above the ceiling is rejected rather than silentl
     await writeJson(filename, { concurrency: bad });
     await assert.rejects(loadConfig(filename), /Invalid concurrency/, `concurrency=${bad}`);
   }
-  assert.equal((await loadConfig()).concurrency, 1, 'default stays strictly sequential');
+  assert.equal((await loadConfig()).concurrency, 2, 'new installations default to two pages in one profile');
 });
 
 test('the runner never exceeds its cap, keeps order, and gives each task an exclusive slot', async () => {
