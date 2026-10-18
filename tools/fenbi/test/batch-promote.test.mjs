@@ -31,7 +31,7 @@ async function fixture(t,{old=false,branch='ingest-staging'}={}){
   await fs.writeFile(rightsFile,json({schemaVersion:1,allowGitHubStorage:true,evidence:'synthetic authorized fixture',sourceIds:['123']}));
   execFileSync('git',['-C',repo,'add','.']);
   execFileSync('git',['-C',repo,'-c','user.name=Fixture','-c','user.email=fixture@example.invalid','commit','-qm','synthetic base']);
-  return {root,repo,candidateDir,rightsFile,rel,md,receipt};
+  return {root,repo,repoRoot:repo,candidateDir,rightsFile,rel,md,receipt};
 }
 test('manifest row has accurate question and missing-answer counts',()=>{
   const receipt={path:'国考/2026/行测-地市级.md',area:'国考',year:2026,subject:'xingce',variant:'地市级',
