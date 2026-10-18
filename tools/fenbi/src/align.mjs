@@ -2,6 +2,7 @@ import { load } from 'cheerio';
 import { createHash } from 'node:crypto';
 import { readFile, realpath } from 'node:fs/promises';
 import path from 'node:path';
+import { isCollectionStub } from './validate.mjs';
 import { publicUrl } from './config.mjs';
 
 const sha = value => createHash('sha256').update(value).digest('hex');
@@ -38,6 +39,11 @@ function compareText(source, repository) {
   const a = normalizeComparisonText(source), b = normalizeComparisonText(repository);
   if (!a.strict) return result('unknown', 'source-content-not-observed');
   if (!b.strict) return result('different', 'repository-content-absent');
+  // A collection stub carries no question text. Two copies of the same stub are NOT the same
+  // content, so they may never compare equal: the source was never collected (unknown), and a
+  // repository slot holding a stub has no body to match against (different).
+  if (isCollectionStub(a.strict)) return result('unknown', 'source-content-is-collection-placeholder');
+  if (isCollectionStub(b.strict)) return result('different', 'repository-content-is-collection-placeholder');
   // A picture is a placeholder in the text stream: two different pictures produce the same token,
   // and a value rendered as text on one side and as an image on the other is a representation
   // difference no text comparison can adjudicate. When either side is image-only, this dimension

@@ -286,3 +286,54 @@ test('byte-verified pictures still reach same on the images dimension', async ()
     assert.equal(report.summary.matched, 1, 'verified bytes are comparable content');
   } finally { await rm(root, { recursive: true, force: true }); }
 });
+
+// ── collection stubs must never align ───────────────────────────────────────────────────────
+// Fenbi renders a full-looking slot for a question it has not collected. Two copies of that stub
+// are not evidence of anything, so they must not compare equal and must not establish identity.
+
+const STUB = '题目正在全力以赴征集';
+
+test('two copies of a collection stub are never reported as the same content', async () => {
+  const report = await comparePaper(fixture(question('101', 1, STUB)), mdQuestion('101', 1, STUB));
+  assert.equal(report.questions[0].dimensions.stem.status, 'unknown');
+  assert.equal(report.questions[0].dimensions.stem.reason, 'source-content-is-collection-placeholder');
+  assert.equal(report.questions[0].dimensions.stem.status !== 'same', true);
+  // The genuine pair is still compared normally, so the rule is not simply disabling the check.
+  const genuine = await comparePaper(fixture(question('101', 1, '真实的题干内容。')), mdQuestion('101', 1, '真实的题干内容。'));
+  assert.equal(genuine.questions[0].dimensions.stem.status, 'same');
+});
+
+test('the live-site stub wording is classified as uncollected, not as differing content', async () => {
+  // reports/FENBI-AUDIT-CORRECTION-20261017.md records two rendered forms. Missing them made the
+  // matcher report `different / content-differs`, which was then misread as a real content conflict
+  // and had to be retracted. Both must classify as an uncollected source, not as a difference.
+  for (const live of ['题目正在全力以赴征集，将会第一时间上传',
+    '题目正在全力以赴征集，将会在征集到后第一时间上传']) {
+    const report = await comparePaper(fixture(question('101', 1, live)), mdQuestion('101', 1, '真实的题干内容。'));
+    const stem = report.questions[0].dimensions.stem;
+    assert.equal(stem.status, 'unknown', live);
+    assert.equal(stem.reason, 'source-content-is-collection-placeholder', live);
+    // The whole point: a stub must never be reported as differing CONTENT. Assert on the stem's
+    // own verdict rather than the paper verdict, which can legitimately be `conflicting` for an
+    // unrelated dimension (this fixture has no repository answer section, so answer differs).
+    assert.notEqual(stem.reason, 'content-differs', live);
+  }
+});
+
+test('a stub in the repository is a missing body, not a match', async () => {
+  const report = await comparePaper(fixture(question('101', 1, '真实的题干内容。')), mdQuestion('101', 1, STUB));
+  assert.equal(report.questions[0].dimensions.stem.status, 'different');
+  assert.equal(report.questions[0].dimensions.stem.reason, 'repository-content-is-collection-placeholder');
+});
+
+test('a stub cannot be used to establish identity when there is no qid or original number', async () => {
+  const report = await comparePaper(fixture(question('', null, STUB)), mdQuestion('', 1, STUB));
+  assert.equal(report.summary.matched, 0, 'a stub is not a content fingerprint');
+  assert.equal(report.summary.unmatchedSource, 1);
+});
+
+test('the stub rule does not fire on genuine text that mentions collection', async () => {
+  const genuine = '关于网友未回忆起的内容，下列说法正确的是：';
+  const report = await comparePaper(fixture(question('101', 1, genuine)), mdQuestion('101', 1, genuine));
+  assert.equal(report.questions[0].dimensions.stem.status, 'same');
+});
