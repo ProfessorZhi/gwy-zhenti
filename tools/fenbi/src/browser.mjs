@@ -3,6 +3,7 @@ import path from 'node:path';
 import { createHash, randomUUID } from 'node:crypto';
 import { load } from 'cheerio';
 import { observedReadUrl } from './reads.mjs';
+import { ROUTE_PARAM_VALUE, normalizeRouteParams, sanitizeHashRoute } from './config.mjs';
 
 const SAFE_QUERY = new Set(['labelId', 'toPage', 'page', 'pageSize', 'paperId', 'year', 'categoryId', 'provinceId', 'id', 'type']);
 const SENSITIVE_QUERY = /token|key|secret|auth|session|cookie|signature|sign|credential|password|phone|mobile|code/i;
@@ -36,12 +37,37 @@ function safeAssetUrl(value) {
   url.hash = '';
   return url.toString();
 }
-function safeUrl(value) {
+/** Persisted page URL: keeps only the parameters this framework recognises, or null off-domain. */
+export function safePageUrl(value, routeParams = []) { return safeUrl(value, routeParams); }
+
+/**
+ * Decide whether the page we hold is actually the paper this job targets.
+ *
+ * Returns null when the capture may proceed, or a reason string when it must be blocked. It is
+ * deliberately conservative: it blocks only the cases that are unambiguously wrong — the page left
+ * the Fenbi origin, or it is still sitting on the catalogue while the job asked for a deeper route,
+ * which is exactly what a link that opened in a new tab looks like. It never guesses that some
+ * other page is "probably" the paper; a page this framework did not open is only ever named.
+ */
+export function landingMismatch({ landed, expected, entry, strayUrls = [] }) {
+  if (!landed) return 'page-not-on-fenbi';
+  if (landed === entry && expected && expected !== entry) {
+    // Prefer the more specific diagnosis: the paper is open, just not in the page we are holding.
+    return strayUrls.some((url) => url !== entry) ? 'paper-opened-in-another-page' : 'stayed-on-entry-page';
+  }
+  return null;
+}
+function safeUrl(value, routeParams = []) {
   const url = parsedUrl(value);
   if (!url || url.username || url.password || !allowedHost(url.hostname)) return null;
-  url.hash = '';
-  for (const key of [...url.searchParams.keys()]) {
-    if (!SAFE_QUERY.has(key) || !/^[\w,.-]{0,100}$/.test(url.searchParams.get(key) ?? '')) url.searchParams.delete(key);
+  // Keep an in-app fragment route so a page on `#/exam/...` does not look like the bare catalogue;
+  // every other fragment, including credential ones, is dropped.
+  url.hash = sanitizeHashRoute(url.hash);
+  const declared = new Set(normalizeRouteParams(routeParams));
+  for (const [key, val] of [...url.searchParams.entries()]) {
+    const safe = SAFE_QUERY.has(key) && /^[\w,.-]{0,100}$/.test(val);
+    const route = declared.has(key) && ROUTE_PARAM_VALUE.test(val);
+    if (!safe && !route) url.searchParams.delete(key);
   }
   return url.toString();
 }
@@ -151,7 +177,7 @@ function observationTarget(response) {
 export function observeReadResponses(page, onPayload, { maxResponseBytes = 8 * 1024 * 1024 } = {}) {
   if (!Number.isSafeInteger(maxResponseBytes) || maxResponseBytes < 1) throw error('INVALID_RESPONSE_LIMIT', 'Response byte limit must be a positive integer.');
   const pending = new Set();
-  const stats = { observed: 0, accepted: 0, oversized: 0, unauthorized: 0, captcha: 0, failed: 0, nonJson: 0 };
+  const stats = { observed: 0, accepted: 0, oversized: 0, unauthorized: 0, captcha: 0, rateLimited: 0, failed: 0, nonJson: 0 };
   let stopped = false;
   async function inspect(response) {
     const meta = observationTarget(response);
@@ -159,6 +185,8 @@ export function observeReadResponses(page, onPayload, { maxResponseBytes = 8 * 1
     stats.observed += 1;
     const status = response.status();
     if (status === 401 || status === 403) { stats.unauthorized += 1; return; }
+    // Counted separately from generic failures so a scheduler can back off instead of only retrying.
+    if (status === 429 || status === 503) { stats.rateLimited += 1; return; }
     if (/captcha|verifycode|verification/i.test(parsedUrl(response.url()).pathname)) { stats.captcha += 1; return; }
     if (status < 200 || status >= 300) { stats.failed += 1; return; }
     const headers = response.headers();
@@ -195,7 +223,7 @@ function paperLinks($, base) {
 }
 
 /** A configured content selector is mandatory for body capture; otherwise return a catalog summary only. */
-export async function captureDom(page, selector) {
+export async function captureDom(page, selector, { routeParams = [] } = {}) {
   const current = page.url();
   const url = parsedUrl(current);
   if (!url || url.protocol !== 'https:' || !isFenbiHost(url.hostname)) throw error('UNSAFE_PAGE', 'DOM capture is limited to Fenbi pages.');
@@ -204,13 +232,13 @@ export async function captureDom(page, selector) {
     const links = await page.locator('a[href]').evaluateAll(elements => elements.map(element => ({ href: element.getAttribute('href'), text: element.textContent ?? '' })));
     const $ = load('<section></section>');
     for (const link of links) $('<a>').attr('href', link.href ?? '').text(link.text).appendTo('section');
-    return { url: safeUrl(current), title, html: '', links: paperLinks($, current), images: [], blocked: { reason: 'content_selector_required' } };
+    return { url: safeUrl(current, routeParams), title, html: '', links: paperLinks($, current), images: [], blocked: { reason: 'content_selector_required' } };
   }
   // Never allow an unrestricted document/body capture containing account navigation or personal data.
   if (/(?:^|[\s,>+~])(?:html|body|\*|:root)(?:$|[\s,>+~.:#\[])/i.test(selector)) throw error('UNSAFE_SELECTOR', 'Choose a specific question or material container.');
   const locator = page.locator(selector);
   const count = await locator.count();
-  if (!count) return { url: safeUrl(current), title, html: '', links: [], images: [], blocked: { reason: 'selector_not_found' } };
+  if (!count) return { url: safeUrl(current, routeParams), title, html: '', links: [], images: [], blocked: { reason: 'selector_not_found' } };
   const fragments = await locator.evaluateAll(elements => elements.map(element => {
     const clone = element.cloneNode(true);
     const originals = [...element.querySelectorAll('img')];
@@ -253,7 +281,7 @@ export async function captureDom(page, selector) {
     catch { $(element).removeAttr('href'); }
   });
   $('[srcset]').removeAttr('srcset');
-  return { url: safeUrl(current), title, html: $.html(), links: paperLinks($, current), images, blocked };
+  return { url: safeUrl(current, routeParams), title, html: $.html(), links: paperLinks($, current), images, blocked };
 }
 
 function assetCandidates(document) {

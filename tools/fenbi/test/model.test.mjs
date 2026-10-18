@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { createDocument, absorbPayload, extractCatalog, collectAssetUrls } from '../src/model.mjs';
-import { validateDocument } from '../src/validate.mjs';
+import { paperProvenance, validateDocument } from '../src/validate.mjs';
 
 function fixture(subject = 'xingce') {
   const doc = createDocument({ id: 'paper-1', title: '2025年江苏省行测C类', subject, year: 2025, area: '江苏', variant: 'C类' }, { url: 'https://www.fenbi.com/spa/tiku' });
@@ -247,4 +247,65 @@ test('unbound responses stay partial even when all bodies are present', async ()
   assert.equal((await validateDocument(doc)).status, 'partial');
   doc.evidence[0].verified = true;
   assert.equal((await validateDocument(doc)).status, 'complete');
+});
+
+// ── per-paper provenance and the page-route gate ────────────────────────────────────────────
+
+test('a page that is not on the job route blocks the capture instead of reading the wrong page', async () => {
+  for (const reason of ['stayed-on-entry-page', 'paper-opened-in-another-page', 'page-not-on-fenbi']) {
+    const doc = fixture();
+    doc.evidence.push({ type: 'page-route-mismatch', reason,
+      landed: 'https://www.fenbi.com/spa/tiku', expected: 'https://www.fenbi.com/spa/tiku/exam/1' });
+    const result = await validateDocument(doc);
+    assert.equal(result.status, 'blocked', reason);
+    assert.ok(result.issues.some((issue) => issue.code === 'page-route-mismatch'), reason);
+    assert.equal(result.dimensions.identity.status, 'blocked', reason);
+  }
+});
+
+test('a normal landing is recorded but never blocks, and does not by itself make a paper complete', async () => {
+  const doc = fixture();
+  doc.evidence.push({ type: 'page-landed', url: 'https://www.fenbi.com/spa/tiku/exam/1', expected: doc.source.url, otherObservedPages: [] });
+  const result = await validateDocument(doc);
+  assert.equal(result.status, 'complete');
+  assert.ok(!result.issues.some((issue) => issue.code === 'page-route-mismatch'));
+});
+
+test('per-paper provenance names the source of each dimension and refuses to call unbound answers consistent', async () => {
+  const doc = fixture();
+  doc.evidence.push({ type: 'page-landed', url: 'https://www.fenbi.com/spa/tiku/exam/1' });
+  const bound = paperProvenance(doc);
+  assert.equal(bound.binding, 'source-paper-identity');
+  assert.equal(bound.sources.questions, 'observed-json');
+  assert.equal(bound.sources.materials, 'not-observed');
+  assert.equal(bound.sources.answers, 'observed');
+  assert.equal(bound.sources.explanations, 'observed');
+  assert.equal(bound.sources.images, 'not-observed');
+  assert.equal(bound.pageLanded, 'https://www.fenbi.com/spa/tiku/exam/1');
+  assert.equal(bound.routeMismatch, null);
+  assert.equal(bound.consistent, true);
+
+  // The same content with no verified paper binding must not be reported as consistent.
+  const unbound = fixture();
+  unbound.evidence = [];
+  const loose = paperProvenance(unbound);
+  assert.equal(loose.binding, 'unverified');
+  assert.equal(loose.answersObserved, 1);
+  assert.equal(loose.consistent, false);
+
+  // A route mismatch makes the record inconsistent regardless of how much content arrived.
+  unbound.evidence = [{ type: 'source-paper-identity', paperId: 'paper-1', url: unbound.source.url },
+    { type: 'page-route-mismatch', reason: 'page-not-on-fenbi' }];
+  const mismatched = paperProvenance(unbound);
+  assert.equal(mismatched.consistent, false);
+  assert.equal(mismatched.routeMismatch, 'page-not-on-fenbi');
+});
+
+test('a DOM-adapter capture is attributed to the adapter, not to a generic observed payload', () => {
+  const doc = fixture();
+  doc.evidence = [{ type: 'dom-question-keys', namespace: 'fenbi-question-key', count: 1 }];
+  const provenance = paperProvenance(doc);
+  assert.equal(provenance.sources.questions, 'dom-adapter');
+  assert.equal(provenance.binding, 'unverified', 'the DOM route carries no paper identity by itself');
+  assert.equal(provenance.consistent, false);
 });
