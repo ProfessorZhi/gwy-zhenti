@@ -14,9 +14,9 @@
     "**AI辅助独立校核解析（非官方答案，非王智公考原解析，未经实考评分）**"
   ],
   "coverage": {
-    "source-present": 55027,
+    "source-present": 54977,
     "unsupported": 0,
-    "verified": 1020
+    "verified": 1070
   },
   "declared": 56047,
   "fileLevelOnly": 1305,
