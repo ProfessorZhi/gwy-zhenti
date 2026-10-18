@@ -1,0 +1,347 @@
+# 粉笔本地 Playwright 采集框架
+
+面向 `gwy-zhenti` 的缺卷、缺题和解析核对。使用本机 Chrome/Edge 的专用持久配置，人工短信登录一次后复用；日常采集由固定脚本执行，**不调用 LLM、TinyFish Agent 或云浏览器**。
+
+已完成一份行测的实站题面对齐小样及离线验证，不是“已取得粉笔全部试卷”。其他卷型、申论、解析权限和完整性仍需逐卷验收。`xingcezhenti` 只是补充源，不能替代粉笔核对。
+
+## 安装与启动
+
+需要 Node.js 22+、已安装的 Chrome 或 Edge。依赖只有 `playwright-core`、HTML解析与Markdown转换器，不下载浏览器，不安装 OpenCLI，不修改其他工具配置。
+
+在本目录打开 PowerShell：
+
+```powershell
+npm.cmd ci --ignore-scripts --no-audit --no-fund --registry=https://registry.npmmirror.com
+node src/cli.mjs init
+node src/cli.mjs doctor
+node src/cli.mjs login
+```
+
+`init` 创建 `../../work/fenbi/config.json`；已有配置绝不覆盖。`doctor` 只检查本机浏览器能否启动，不访问粉笔账号。
+
+`login` 打开专用窗口。**在网页里自行完成手机号、验证码登录，进入题库目录后回到终端按 Enter。不要把验证码、密码或 Cookie 发给协作 Agent。** 工具只观察认证请求的 HTTP 状态，不保存用户资料响应。无法观察到认证成功时报告 unknown，不以按钮是否可见冒充成功。保存登录状态并不能保证永不失效。
+
+默认配置使用 Chrome；若要用 Edge，修改本地配置的 `channel` 为 `msedge`。可设置 `executablePath` 指向已安装浏览器；不会下载安装程序。`chromium` 仅适用于自行提供的可用浏览器或已存在缓存。
+
+## 运行目录与协作边界
+
+```text
+tools/fenbi/                  框架、依赖锁、测试、说明（可提交）
+work/fenbi/                   本地专用，仓库已有 work/ 忽略规则
+  config.json                 本机配置与经核实的字段映射
+  profiles/fenbi-main/        登录状态和浏览器数据，禁止提交
+  catalog.json                实际观察到的目录，不代表全站清单
+  observed-reads-*.json       该配置实际观察到的只读数据URL
+  inspect.json               字段结构与明确选中的题目容器
+  plan*.json                 缺口候选、身份与待核状态
+  papers/<任务键>/            逐次采集版本、图片、检查点和验收
+  candidates/<任务键>-<时间>/ 候选Markdown，禁止直接当正式卷
+```
+
+同一浏览器配置和同一采集工作区分别加独占锁。多个 Agent 并行处理已取得的数据，浏览器采集由一个进程集中执行。异常退出留下的锁需要先检查对应进程再人工处理；工具不会自动删除别人的锁，也不会重置配置。Windows 的 `work/` 还应只对当前用户可读；POSIX 文件模式不替代 Windows ACL。
+
+## 先观察目录和实际字段
+
+```powershell
+node src/cli.mjs catalog
+node src/cli.mjs inspect --url "https://www.fenbi.com/spa/tiku"
+node src/cli.mjs plan
+```
+
+浏览器会话中人工打开所需分类或现有试卷，回终端按 Enter 保存。本机入口固定从正常 `/spa/tiku` 进入，避免旧深链接未执行认证初始化。
+
+- 仅观察页面**实际发生**的行测/申论只读 JSON 响应；不枚举未知接口，不扫描目录ID。
+- `inspect.json` 记录字段路径和类型，默认不保存整页、不保存原始响应、请求头、HAR或账户资料。
+- 若要保留题目DOM，在本地配置填写准确的 `contentSelector`，例如经实际检查确认的题目根容器。默认 `null`，不能用 `body/html/*` 代替题目容器。
+- 已实站观察新版 `papers/v2` 的 `list/pageInfo` 及 `subLabels/childrenLabels/labelMeta`，保留分页与来源声明覆盖信息。`exerciseCount` 不当作题数；目录项不当作正文。
+- `plan` 对照 `catalog/manifest.jsonl`；未知身份、未知卷型、未观察到页面URL均保留待核。广州和广东省考分开匹配。新计划单独落盘，已有人工计划不覆盖。
+- 分类切换若需要写请求，采集模式会阻止；应先核对真实请求及其作用后扩展明确规则，不能假装已遍历全部地区。
+
+## 明确一份采集目标
+
+从真实目录和页面核实源ID、标题、年份、地区、卷型、题数，以及实际题本URL，再用 `add` 加入本地计划：
+
+```powershell
+node src/cli.mjs add --id SOURCE_ID --title "原始试卷标题" --subject xingce --area 江苏 --year 2025 --variant C类 --url "OBSERVED_PAPER_URL" --questions 130 --materials 6
+```
+
+上面是**参数示例，不是已核实题本**。请替换为真实源值；`--questions` 和 `--materials` 必须来自题本核对，不能照抄示例数字。未知时不填，验收保持 partial。实际任务键由命令输出，可避免不同科目源ID重复。
+
+`plan.json` 中的 `expected.questionNumbers`、`expected.materialIds` 可以填写明确核实的集合；默认不由已采集数量反推预期数量。
+
+## 字段映射与直接读取
+
+默认支持明示 `questions/data.questions/exercise.questions`、`materials/accessories`、`answers` 等结构。**这些JSON候选映射尚不能代替当前粉笔实站响应核对。** 新字段通过本机 `fieldMap` 配置，示意：
+
+```json
+{
+  "questions": "data.questions",
+  "contentHtml": "content",
+  "explanationHtml": "solution",
+  "answerHtml": "correctAnswer",
+  "answerEncoding": "zero-based-index",
+  "optionLabels": ["A", "B", "C", "D"],
+  "questionNumbersById": {"OBSERVED_QUESTION_ID": 1}
+}
+```
+
+只有核实索引编码后才能设置 `answerEncoding`；只有核实原题选项标签后才设置 `optionLabels`。源ID或数组序号不会默认成为原题号。题号映射与源号冲突时保留冲突并阻止完整验收。示意值不能直接用于生产。
+
+若同一数据请求需要复用，可以在该任务的 `readUrls` 数组填写 `observed-reads-<profileName>.json` 中**本配置已经观察到的完整只读URL**。框架使用当前浏览器 context 的 Cookie 发起 GET，并核对登记记录、域名、参数、状态、JSON类型和体积；不传递账号密码，不创建新练习，不拼接猜测的接口或ID，不跟随重定向。这样可减少逐题点击。
+
+有些响应可能只有题目ID或需要额外打开解析页。未知字段、缺正文、无卷归属证据均保持 partial，不能补成假数据。响应没有 paperId 时，必须有原卷声明的完整题目ID集合或经独立核对的人工关联证据。
+
+## 采集、续跑和导出
+
+```powershell
+node src/cli.mjs capture --job TASK_KEY --manual
+node src/cli.mjs capture --all
+node src/cli.mjs validate --job TASK_KEY
+node src/cli.mjs export --job TASK_KEY
+```
+
+- `--manual` 允许先人工打开完整题本/解析，再按 Enter 采集。
+- 自动翻页只有在核实 `nextQuestionSelector` 后启用；核实只读“查看解析”按钮后才能填 `explanationSelector`，绝不填交卷/开始练习/购买按钮。所有非GET/HEAD/OPTIONS写请求默认阻止；登录模式仅额外允许粉笔认证域的登录请求。
+- 只点击唯一、可见、可用的控件；重复内容、翻页上限、认证失败、验证码、非JSON和超大响应均记录，不默默截断。
+- 每次采集保存独立文档版本；**完整**检查点才可跳过，跳过前重新验证任务/配置指纹、文档哈希及图片。partial任务重试保留旧版本，目前不跨次混合正文，避免不同源版本拼卷。
+- 图片限真实引用、允许的粉笔静态域、单图12MiB/总128MiB/最多256张；下载后浏览器解码，记录尺寸与SHA256，不转码和有损压缩。超出限额保持partial，需核对后显式扩展。
+- 答案与解析分开保存，异步先到的答案按源题ID关联；缺关联不算完成。
+- `export` 仅接受重新验收通过的采集，导出到新的候选目录。保留材料、题目、选项、表格、公式和本地图片，参考答案集中折叠。不会写入 `国考/`、`省考/`、正式 `图片/` 或修改缺口数字。
+
+正式入库还需人工核对身份、题序、原文完整性、来源使用许可和参考答案性质，再走仓库已有导入与验收流程。机器 `complete` 只表示本框架定义的结构检查通过，不表示官方原卷认证、评分正确或全站覆盖。
+
+## 验收口径
+
+分别报告 identity/questions/materials/answers/explanations/images。预期数量未知、题号缺失或重复、材料关联断裂、来源题目ID不匹配、正文为空、只有链接/提纲/占位符、选项与答案不匹配、图片未落盘或哈希不符均不能完整。
+
+申论单独检查作答要求和可识别的字数上下限；复杂分小问要求保守待核。“左右”的±20%只是工具复核口径，不是官方评分规则。图片浏览器解码证据绑定实际字节；正式库仍使用已有逐帧像素检查。敏感URL引用删除后标待核，不把删失内容算完整。
+
+## 导航目标与落地核对
+
+驱动只导航到**可复现的**URL：路径、片段或非凭据参数一旦会在归一化时被丢弃，`add` 直接拒绝，
+`plan` 把该卷标为 `needs_route_review`（不是 `ready`），而不是照旧浏览到一个没人观察过的地址。
+SPA 的应用内片段路由（`#/exam/...`）会被保留；凭据片段（`#access_token=...`）照旧丢弃。
+`publicUrl`（导航）与 `safePageUrl`（登记页面URL）现在共用同一条片段规则，两处白名单不一致时
+`urlRouteLoss` 会把它报成路由丢失。
+
+采集时会记录 `page-landed` 证据，并对以下情况**显式 BLOCKED**（`page-route-mismatch`，
+`identity` 维度 blocked、退出码 2），绝不把"页面上碰巧有什么"当作该卷内容：
+
+| reason | 含义 |
+| --- | --- |
+| `stayed-on-entry-page` | 仍停在目录入口，而本卷要求更深的地址 |
+| `paper-opened-in-another-page` | 同上，且确有站点自行打开的标签页停在其它页面 |
+| `page-not-on-fenbi` | 当前页已不在粉笔域内 |
+
+站点自行打开的标签页**只记录不驱动**，其 URL 经 `safePageUrl` 写进证据供人工重新瞄准。
+只有"当前页离开粉笔域"或"停在入口而任务要求更深路由"才判失配——页面内继续浏览属正常手工采集。
+
+每卷另记 `provenance`（题面/材料/图片/答案解析各自的来源 + 纸张绑定 + `consistent`），
+写入 `checkpoint.json` 与逐卷命令行输出。它是**描述性**的；真正的闸门仍是 `validateDocument`，
+以及对齐侧的 `verification.verdict`。
+
+## 答案解析核验口径（unknown/partial/conflicting/verified）
+
+练习页不展示答案解析时，**不能把"没有答案"读成"答案没问题"**。框架因此把答案与解析的核验状态显式化，并使用统一四态：
+
+| 状态 | 含义 | 出现条件 |
+| --- | --- | --- |
+| `verified` | 两侧都实际观察到且一致 | 每一道可比对的题都 same |
+| `partial` | 部分已核验，其余未观察 | 有 same 也有 unknown |
+| `conflicting` | 两侧都观察到但不一致（含库内正文缺失） | 任一题 different |
+| `unknown` | 无法核验：没采到，或整卷没能逐题对上 | 无 same；或存在未匹配题 |
+| `not_applicable` | 本次配对无从比较（如全卷无图、ID命名空间不同） | 单列在 `notApplicable`，既不算通过也不算缺口 |
+
+- **访问提示不是答案。** 解析或答案槽渲染"开通会员后方可查看"一类提示时，正文非空会被普通非空检查放过。`validate` 现在单列 `answer-access-gate`/`explanation-access-gate` 并保持 partial。判定用双阈值（正文≤120字且提示几乎占满正文），因此真实答案里提到会员、权限、续费不会被误伤；这是复核触发条件，不是"已确认被付费墙拦住"的结论。
+- **`align` 报告新增 `verification` 块。** 八个逐题维度与五个卷级检查永远全部出现（未观察填零），因此"没有 different"不再能靠空对象蒙混通过；`verification.verdict` 为整卷结论，`verification.unverified` 直接点名 `answer`、`explanation` 等未核验项。
+- **退出码：** `align` 只有 `verdict === "verified"` 才返回 0；partial/conflicting/unknown 一律返回 2（验收不完整），与采集和导出保持一致。
+- **人工证据字段。** 框架读不到、只能人工看的答案解析，写在文档的 `manualEvidence` 数组里，不要写进正式卷：
+
+```json
+{"manualEvidence": [
+  {"dimension": "answer", "questionId": "OBSERVED_SOURCE_QUESTION_ID", "value": "人工实际看到的内容",
+   "observedAt": "2026-10-17T00:00:00.000Z", "observedUrl": "OBSERVED_PAGE_URL",
+   "method": "operator-screenshot-read", "operator": "OPERATOR_LABEL"}
+]}
+```
+
+  绑定是严格的：必须唯一落到一道**已被自动对齐匹配**的采到题目（`questionId` 或 `number` 二选一），缺 `value`/`observedAt`/`method` 记为 `incomplete`，落不到题记为 `unbound`，落到的题没匹配上库内卷记为 `unmatched-source`。人工记录单独出现在 `dimension.manual`，**不并入自动计数、也不能单独把整卷变成通过**；一个维度只有在每一道已匹配题都有人工一致记录时才是 `verified`，否则为 `partial`。报告只保留人工内容的 SHA256 与长度，不落正文；凭据查询参数按 `publicUrl` 规则剥离。
+
+  实站取证步骤、需要留存的证据和禁止事项见 [实站答案解析取证 SOP](ANSWER-EVIDENCE-SOP.md)。
+
+## 已验证的行测DOM路线与逐题对齐
+
+[浙江2026行测C实站试跑](../../reports/FENBI-LIVE-TRIAL-20261016.md)已实际取得110题、4组材料和6段题型说明。该页面题面并未通过原JSON监听器取得，因此新增 `fenbi-xingce-v1` DOM适配器。它读取 `.tis-container` 内全部 `app-ti[data-question-key]`，不能只抓 `.questions-single-container`：本次后者仅93题，会漏组合题。
+
+行测专用本地配置可设置 `contentSelector: ".tis-container"`、`domAdapter: "fenbi-xingce-v1"`，再使用 `capture --manual`。先从目录进入已存在的练习，回终端确认采集；本轮直接重开旧题本深链接未取得题面，不因此判登录失效。首次打开新卷可能需要练习初始化，默认只读保护不会自动放行；本次小样仅执行过一次明确限定到该卷的初始化，之后均复用原练习，未作答/交卷。
+
+DOM模式只提取当前已验证的行测题面、选项、材料、原号、复合题目key和题型说明；不从选中状态或CSS猜答案，不冒充已验证申论DOM或解析。答案未取得时整卷仍为partial。新增观察到的静态域仅放行 `fb.fenbike.cn` 的两类图片/公式路径，未放开该域其他路径或导航。
+
+已有本地DOM快照也可离线规范化和对齐，不重新登录或启动浏览器：
+
+```powershell
+node src/cli.mjs normalize-dom --document work/fenbi/inspect.json --id SOURCE_ID --title "源试卷标题" --subject xingce --year 2026 --area 浙江 --variant C类 --url "OBSERVED_EXAM_URL"
+node src/cli.mjs align --document work/fenbi/NORMALIZED_FILE.json --paper "省考/浙江/2026/行测-C类.md" --asset-root work/fenbi/ASSET_DIRECTORY
+```
+
+输入快照需有 `html` 或 `contentHtml`，身份及来源取自实际目录/页面；示例占位符必须替换。路径参数相对于仓库根，规范化文档和图片目录必须位于 `work/fenbi/`。报告只写本地候选区，不改正式卷。
+
+粉笔DOM复合key与库内数字qid不是同一命名空间，因此不把ID格式不同判作错题；改用明确原号、完整题干和选项唯一对齐。相对图片地址按真实来源页面解析，核对实际图片字节。未采到的答案解析标记unknown；数学条件、数字、图片位置不做宽松删除。公式图和文字等价需单独留证，不能在严格统计里静默算作完全相同。
+
+退出码：`0`命令成功；`2`采集/认证/验收不完整；`1`配置、依赖或运行错误。错误不打印原始账号响应和带凭据URL。
+
+## 题号映射候选报告（乱序/残卷/不同回忆版本）
+
+`src/mapping.mjs` 为**严格对齐器**无法裁决的情况提供一份**候选**一对一映射供人工复核：
+来源题号与库内题号不对应、只采到部分题目、或同一场考试的不同回忆版本措辞略有差异。
+
+它**只出候选，绝不算验证**：`comparePaper` 仍是唯一能报 `matched`/`verified` 的地方，本报告的
+`advisoryOnly` 恒为 `true`，`limitation` 固定写明"不是已验证匹配"。
+
+```js
+import { buildMappingReport, validateMappingReport } from './src/mapping.mjs';
+const report = buildMappingReport({
+  source: { label: '…', questions: [...] },
+  repository: { label: '…', questions: [...] },
+  sourceRights: 'cleared',                    // 必填，由操作者自行判定
+  isEligible: (q) => !isCollectionStub(plainText(q.contentHtml)),   // 必填：调用方自己的闸门
+});
+if (!validateMappingReport(report).ok) throw new Error('report contract violated');
+```
+
+规则（全部可离线复现）：
+
+- **题号本身从不参与评分**，只作为观察值报在 `sameNumber`。乱序试卷靠题干/选项/材料/图片身份对齐。
+- **图片证据只认内容哈希，不认引用路径**。题对象通过
+  `imageBytes: [{ sha256: "<64位十六进制>", verified: true }]` 声明同源可复验的图像内容 SHA-256；
+  路径相同不代表字节相同，字节相同也不必路径相同。缺 manifest、哈希格式不对、或
+  `verified !== true`（来源未授权）时，图片信号是 **neutral**（`available: false` + `reason`），
+  **不按 0 分扣权**，也不会因此把本来完全一致的文本题降级。
+- **`⟦IMAGE⟧` 占位符不是文本证据**：题干去掉图片占位符后若无文字，stem 信号即 unavailable；
+  纯图题只有**字节相同且已复验**才可能判 `exact`，绝不靠占位符相等。
+- **只有 `grade: "exact"` 才可自动接受**（题干与选项都完全相等）；其余一律
+  `autoAcceptable: false`、`requiresHumanReview: true`。
+- **低于 `candidateFloor` 不映射**，在 `unmatchedSource[].bestScore` 里留下最接近的分数。
+- **两个候选落在 `ambiguityMargin` 内 → 进 `ambiguous`，不做选择**；两道来源题抢同一道库内题时
+  第二道记 `repository-row-already-claimed`。
+- **选项标签集合或顺序不同 → 该对不可映射**（不是低分），因为两边不是同一题形。
+- **`isEligible` 必填**：占位存根、受限来源、未观察题位由调用方剔除，落进 `source.rejected`，
+  **永不进入候选池**；完全没有可比内容的行记 `no-comparable-content`。
+- **权限否决**：`sourceRights` 不是 `cleared` 时 `blocked = "source-rights-not-cleared"`，
+  `assignments` 为空，只保留结构统计。
+- 题号重复在两侧各自记 `duplicateNumbers` 与 `conflicts`。
+
+报告结构由 `MAPPING_REPORT_SCHEMA` 声明、`validateMappingReport()` 校验（`advisoryOnly` 必须为
+`true`；非 `exact` 的配对不得 `autoAcceptable`）。下游可据此审计，也可直接比对两次运行的 JSON
+——同一输入产生完全相同的报告。
+
+## 有界增量校验与元数据回执（≤10 卷 / 单次 ≤100 题）
+
+`src/incremental-validator.mjs` + `src/mapping-batch.mjs` 在少量卷上跑一次**有界**校验，产出一份
+**只含元数据**的回执，可直接交给队列或 Browser Owner 作为证据回执：
+
+```bash
+node src/mapping-batch.mjs --input batch.json --out receipt.json \
+     [--max-papers 10] [--max-questions 100] [--gate-module ./my-gate.mjs]
+```
+
+退出码：`0` 无需人工 · `2` 需人工复核 / 被阻塞 / 超限 · `1` 用法或解析错误。**超过上限直接拒绝整批**
+（`blocked: "batch-over-limit"`），不截断、不跳过。
+
+回执分类（各自计数，互不合并）：
+
+| 类别 | 含义 |
+|---|---|
+| `ordered_same_number` | 题号相同且归一化后正文相等 |
+| `cross_number` | 正文相等但题号不同（乱序证据） |
+| `recollection_variant` | 疑似同题但措辞不同 → 人工 |
+| `material_or_image_not_compared` | 正文相等但材料/图片证据不可比 |
+| `missing_options` | 一侧没有选项正文 |
+| `uncollected_stub` | 被调用方资格闸门拒绝（征集占位等） |
+| `answer_source_missing` | 有答案/解析但没有来源回执（receipt） |
+| `answer_unknown` | 两侧都没有答案/解析 |
+| `ambiguous` / `unmatched_source` / `unmatched_repository` | 同 mapping 报告 |
+
+高风险判定（都强制 `requiresHumanReview`）：
+
+- **归一化相等 ≠ 官方逐字相同**。回执恒设 `verbatimIdentityNotClaimed: true`；每行给
+  `identity: "normalized-equal" | "similar" | "none"`，只有原始正文逐字一致时 `verbatimIdentical`
+  才为 `true`。
+- **版本措辞不同 → 整卷 advisory**：输入可带 `sourceVersion` / `repositoryVersion`（如
+  `网友回忆版` / `官方原卷`）；不同则整卷行标 `version_wording_differs`，`autoAcceptable` 一律 `false`。
+- **纯图题只有已验证字节 SHA 才可能 `exact`**（沿用 PR #42/#63 的语义）；引用路径或 `⟦IMAGE⟧`
+  占位符永远不算。
+- **题号相同但内容不可比** → `number_only_no_content`，绝不进 `ordered_same_number`。
+- **非严格比对一律 advisory**。
+
+**回执只含元数据**：`rows` 里只有题号、id、类别、等级、分数、旗标与正文的 SHA-256，
+**不包含题干、选项、材料、图片字节或任何凭据**；`validateReceipt()` 会拒绝含这些字段的回执。
+
+与其它 PR 的关系：占位闸门仍归 PR #45 —— 用 `--gate-module` 传入其 `isCollectionStub`
+包装后的谓词，本模块**不复制**那份策略；offline handoff 契约归 PR #65，本模块只消费
+`{ papers: [...] }` 的纯元数据形状并可在回执里带 `handoffSha256`，不假装有实时链路。
+
+## 测试
+
+```powershell
+node --test test/model.test.mjs test/browser.test.mjs test/pipeline.test.mjs test/dom.test.mjs test/align.test.mjs test/answerqa.test.mjs
+node --test test/browser-smoke.test.mjs
+```
+
+第二条使用本机已安装Chrome，真实运行浏览器但**所有页面/API/图片均为离线合成数据**，不访问真实账号。包含图片解码→完整性检查→Markdown导出及专用配置重启持久化测试。可用环境变量 `FENBI_TEST_BROWSER_CHANNEL=msedge` 改用Edge。没有浏览器时此测试明确失败，不当作通过。
+
+CI只运行不依赖浏览器安装的离线单元测试；不使用粉笔账户、网络采集或付费服务。后续真实小样应独立记录行测/申论各一卷的完整率、耗时、人工介入和来源证据，不能用合成测试替代。
+
+官方参考：[Playwright持久配置](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-persistent-context)、[认证状态](https://playwright.dev/docs/auth)、[响应读取](https://playwright.dev/docs/api/class-response)。
+
+## 2026-10-18 有界提速与效果观察（Dell A6000）
+
+**现有代码已能在一个持久 Chrome context 内运行多个 Page**，不需要第二个采集进程或登录 Profile。新生成的 `config.json` 默认 `concurrency: 2`、页面交互 `delayMs: 800`，最多 3 Page；采集调度的**同域导航间隔始终不低于 2500ms**，避免把逐题交互等待误当作导航限速。旧的本地 `work/fenbi/config.json` **不会自动覆盖**；如果还写着 `concurrency: 1`，可以显式从命令行开始 2 路：
+
+```bash
+cd tools/fenbi
+node src/cli.mjs capture --all --concurrency 2
+# 仅在证实没有风控信号、系统压力和速度收益良好时，试 3 路
+node src/cli.mjs capture --all --concurrency 3
+```
+
+- 所有 Page 共用同一个浏览器上下文和站点导航节流闸门；实际导航至少间隔 2.5 秒，**不是**保证页面的所有图片/API 子请求都严格间隔 2.5 秒。按站点访问规则操作，不绕验证/限流，不凭 Source ID 猜 URL。
+- 命令行 `--concurrency` 会覆盖旧配置的并发数；使用老配置时，捕获侧仍强制应用 2.5 秒同域导航间隔。需先确认现有 `plan.json` 只含真实、可复现且获授权的练习。
+- 每次有界批次产生 `work/fenbi/capture-metrics-*.json`。其中 `newlyReadable` 表示本次新采到至少一题的卷；`questionSlotsObserved` 是本次读到的题位数；`newlyComplete` 表示框架结构检查完整；`cachedComplete` **不算新抓到的卷**；`partial/failed/skipped` 独立统计。速度比对优先看 `newlyReadablePerHour`，配合限流/内存信号判断是否升至 3 Page。
+- 因源页面可能不提供答案解析，`newlyReadable>0` 但 `newlyComplete=0` 仍可能是有效题面采集，不等于 A 级入库成功。自动生成、校验、入库另外计数。
+- 本次仅提交代码、测试和说明，**未在 A6000 执行真实抓取、没有修改本地配置、没有初始化新练习**。浏览器测试、系统资源压测、现有 A6000 旧配置迁移仍待现场验收。
+
+原始题干、图片、粉笔解析、登录凭据继续只保留于许可范围内的 A6000 工作目录；Private GitHub 也不是商业题库内容的复制/再分发许可。
+
+## Batch Ingest（新增：不走逐题 QA 队列）
+
+现有 A6000 的 `work/fenbi/papers/<卷>/document.json` 不一定有标准 `checkpoint.json`，原来的 `export --job` 还要求 `validateDocument().status=complete`，因此含来源答案 unknown 的试卷不应直接调用旧 export。改用下列命令一次处理整个已缓存目录：
+
+```bash
+node src/batch-ingest.mjs --source-root /path/to/owner/work/fenbi/papers --repo-root /path/to/repo
+node src/batch-ingest.mjs --source-root /path/to/owner/work/fenbi/papers --repo-root /path/to/repo --write
+```
+
+默认 dry-run；`--write` 只创建 `work/fenbi/batch-ingest/<卷>/paper.md`、`assets-fenbi-<sourceId>/`、`receipt.json` 和 `legacy-original.md`（仅已有旧卷），不写正式 `国考/`、`省考/` 或 Git 索引。重复执行若文件哈希不同会拒绝覆盖。试卷图片逐件核 SHA。
+
+- 粉笔有题面就以来源题面生成；旧版答案仅在**题面与全部选项唯一匹配**时重挂，不按新旧题号硬搬。
+- 粉笔征集占位只有在其他多数题证实编号保持稳定且原库该号有真题时回退；旧图链接若尚未安全重绑定则记 C，不能假装完整。
+- 粉笔没有显示答案/解析时记录 `unknown`；不能把缺答案称为答案正确或整卷官方认证。
+- A/C 只代表本地候选结构分类，旧版保留在独立文件及 Git 历史；C 不进入集成，下一卷继续。
+
+带许可的整合在**非 main 的隔离工作树**中预检、按需落地：
+
+```bash
+node src/batch-promote.mjs --candidate-dir /path/to/repo/work/fenbi/batch-ingest/<卷> --repo-root /path/to/integration-worktree --rights-file /path/to/rights.json
+# 只有确认权限和来源后再加 --apply；替换旧版还需 --allow-replace
+```
+
+该命令检查候选 SHA、题位、图片引用与文件字节、旧正文前像、真实来源许可，再定点更新目标 Markdown/图片和 `catalog/manifest.jsonl`。不自动创建 PR、不自动合并 `main`、不访问粉笔网页。私有仓库不自动给予第三方内容复制/云端储存权。授权凭据只留本地，不随 Git 提交。
+
+离线验证：
+
+```bash
+node --test test/batch-ingest.test.mjs test/batch-ingest-io.test.mjs test/batch-promote.test.mjs
+node --test test/*.test.mjs
+node --test pipeline/test/*.test.mjs
+```

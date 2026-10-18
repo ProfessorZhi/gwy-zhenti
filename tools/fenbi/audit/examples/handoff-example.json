@@ -1,0 +1,41 @@
+{
+  "schema": "fenbi-candidate-handoff-v1",
+  "_comment": "形状示意。全部题干/选项为合成占位文本，不含任何真实题目内容。",
+  "paper": {
+    "label": "示例卷",
+    "library_path": "省考/江苏/2025/行测-C类.md",
+    "fenbi_source_id": "0000000",
+    "captured_at": "2026-10-17T00:00:00Z",
+    "binding": "unverified"
+  },
+  "questions": [
+    {
+      "source_number": 1,
+      "qid": "example-1",
+      "stem": "<p>合成占位题干一</p>",
+      "options": [
+        { "label": "A", "text": "合成占位选项甲" },
+        { "label": "B", "text": "合成占位选项乙" },
+        { "label": "C", "text": "合成占位选项丙" },
+        { "label": "D", "text": "合成占位选项丁" }
+      ],
+      "material_ids": [],
+      "images": [],
+      "answer": null,
+      "explanation": null
+    },
+    {
+      "source_number": 2,
+      "qid": "example-2",
+      "stem": "<p>合成占位题干二</p>",
+      "options": [
+        { "label": "A", "text": "合成占位选项甲" },
+        { "label": "B", "text": "合成占位选项乙" }
+      ],
+      "material_ids": ["1"],
+      "images": ["0000000000000000000000000000000000000000000000000000000000000000"],
+      "answer": null,
+      "explanation": null
+    }
+  ]
+}

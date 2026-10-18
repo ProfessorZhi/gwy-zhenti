@@ -1,0 +1,339 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtemp, mkdir, writeFile, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import { createHash } from 'node:crypto';
+import { createDocument } from '../src/model.mjs';
+import { comparePaper, parseRepositoryPaper, normalizeComparisonText } from '../src/align.mjs';
+
+const question = (id = '101', number = 1, contentHtml = '当 x ≥ 10 时，求 2 + 3。') => ({ id, number, contentHtml,
+  options: [{ label: 'A', contentHtml: '5' }, { label: 'B', contentHtml: '6' }], materialIds: [], answerHtml: 'A', explanationHtml: '相加得5。' });
+const mdQuestion = (id = '101', number = 1, content = '当 x ≥ 10 时，求 2 + 3。') => `## 第 ${number} 题 <sub>qid ${id} · 计算</sub>\n\n${content}\n\n- **A**. 5\n- **B**. 6\n`;
+const answer = (number = 1) => `<details>\n<summary>第 ${number} 题</summary>\n\n**答案**：A\n\n**来源参考解析（非官方标准答案）**\n\n相加得5。\n\n---\n</details>`;
+function fixture(q = question()) { const doc = createDocument({ id: 'paper', subject: 'xingce' }); doc.questions = [q]; doc.expected.questions = 1; return doc; }
+const markdown = () => `${mdQuestion()}\n## 答案与解析\n${answer()}`;
+
+test('qid aligns shifted original numbers but flags sequence and number differences', async () => {
+  const doc = fixture(question('101', 2));
+  const report = await comparePaper(doc, markdown());
+  assert.equal(report.questions[0].matchMethod, 'qid');
+  assert.equal(report.questions[0].dimensions.number.status, 'different');
+  assert.equal(report.questions[0].dimensions.answer.status, 'same');
+  assert.equal(report.questions[0].dimensions.explanation.status, 'same');
+  assert.equal(report.paper.order.status, 'different');
+  assert.equal(report.paper.orderById.status, 'same');
+});
+
+test('same original number with different text is never matched without source qid', async () => {
+  const report = await comparePaper(fixture(question('', 1, '完全不同的题目。')), markdown());
+  assert.equal(report.summary.matched, 0);
+  assert.equal(report.summary.unmatchedSource, 1);
+});
+
+test('no qid or number requires unique full stem and options, not array position', async () => {
+  const doc = fixture(question('', null));
+  assert.equal((await comparePaper(doc, markdown())).questions[0].matchMethod, 'unique-content-and-options');
+  doc.questions[0].options[0].contentHtml = '7';
+  assert.equal((await comparePaper(doc, markdown())).summary.matched, 0);
+});
+
+test('format-only normalization keeps condition digits and mathematical operators', async () => {
+  const doc = fixture(question('101', 1, '<p>当 x ≥ １０ 时，求 2 + 3。</p>'));
+  assert.equal((await comparePaper(doc, markdown())).questions[0].dimensions.stem.status, 'same');
+  doc.questions[0].contentHtml = '当 x > 10 时，求 2 + 3。';
+  assert.equal((await comparePaper(doc, markdown())).questions[0].dimensions.stem.status, 'different');
+  doc.questions[0].contentHtml = '当 x ≥ 100 时，求 2 + 3。';
+  assert.equal((await comparePaper(doc, markdown())).questions[0].dimensions.stem.status, 'different');
+});
+
+test('unknown source answers and explanations remain unknown even if repository has them', async () => {
+  const doc = fixture(); doc.questions[0].answerHtml = ''; doc.questions[0].explanationHtml = '';
+  const report = await comparePaper(doc, markdown());
+  assert.equal(report.questions[0].dimensions.answer.status, 'unknown');
+  assert.equal(report.questions[0].dimensions.explanation.status, 'unknown');
+  assert.equal(report.summary.allQualityPassed, false);
+});
+
+test('observed source answer missing in repository is a real difference', async () => {
+  const report = await comparePaper(fixture(), mdQuestion());
+  assert.equal(report.questions[0].dimensions.answer.status, 'different');
+  assert.equal(report.questions[0].dimensions.explanation.status, 'different');
+});
+
+test('material heading ends previous question and range attaches shared materials', async () => {
+  const md = `${mdQuestion()}\n## 材料 1（第2—3题共用）\n\n共享材料正文。\n\n${mdQuestion('102', 2, '读取材料。').replace('## 第', '### 第')}\n${mdQuestion('103', 3, '继续读取。').replace('## 第', '### 第')}`;
+  const parsed = parseRepositoryPaper(md);
+  assert.equal(parsed.questions[0].options[1].contentHtml, '6');
+  assert.deepEqual(parsed.questions[0].materialIds, []);
+  assert.deepEqual(parsed.questions[1].materialIds, ['1']);
+  const doc = fixture(question('102', 2, '读取材料。'));
+  doc.questions[0].materialIds = ['source-m']; doc.materials = [{ id: 'source-m', contentHtml: '<p>共享材料正文。</p>' }];
+  assert.equal((await comparePaper(doc, md)).questions[0].dimensions.materials.status, 'same');
+});
+
+test('image presence is retained, unknown image content cannot pass as verified', async () => {
+  const q = question('101', 1, '公式：<img src="https://example.com/formula.png">');
+  const md = mdQuestion('101', 1, '公式：![公式](../../../图片/formula.png)');
+  const report = await comparePaper(fixture(q), md);
+  assert.equal(report.questions[0].dimensions.stem.status, 'same');
+  assert.equal(report.questions[0].dimensions.images.status, 'unknown');
+  assert.match(normalizeComparisonText(q.contentHtml).strict, /IMAGE/u);
+  assert.equal((await comparePaper(fixture(q), mdQuestion('101', 1, '公式：'))).questions[0].dimensions.stem.status, 'different');
+});
+
+test('ambiguous fingerprints and duplicate qids never silently select first question', async () => {
+  const doc = fixture(question('', null));
+  assert.equal((await comparePaper(doc, mdQuestion() + mdQuestion('102', 2))).summary.matched, 0);
+  assert.equal((await comparePaper(fixture(), mdQuestion() + mdQuestion('101', 2))).summary.matched, 0);
+});
+
+test('reports never include question body, authentication data, or source URL query', async () => {
+  const doc = fixture(); doc.source.url = 'https://www.fenbi.com/?token=private-token'; doc.cookie = 'secret-cookie';
+  const report = JSON.stringify(await comparePaper(doc, markdown()));
+  assert.ok(!report.includes('当 x'));
+  assert.ok(!report.includes('private-token'));
+  assert.ok(!report.includes('secret-cookie'));
+});
+
+test('incomplete source captures do not certify paper counts or unseen material totals', async () => {
+  const doc = fixture(); doc.expected.questions = 110;
+  const report = await comparePaper(doc, markdown());
+  assert.equal(report.paper.questionCount.status, 'unknown');
+  assert.equal(report.paper.materialCount.status, 'unknown');
+  assert.equal(report.questions[0].dimensions.materials.status, 'unknown');
+});
+
+test('mixed HTML and Markdown image references retain original order', () => {
+  assert.deepEqual(normalizeComparisonText('<img src="first.png"> and ![](second.png)').images, ['first.png', 'second.png']);
+});
+
+test('image comparison verifies actual source and repository bytes rather than URL similarity', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'fenbi-align-'));
+  try {
+    const assetRoot = path.join(root, 'assets'), repoRoot = path.join(root, 'repo');
+    await mkdir(assetRoot); await mkdir(repoRoot);
+    const bytes = Buffer.from('same-image-content'), hash = createHash('sha256').update(bytes).digest('hex');
+    await writeFile(path.join(assetRoot, 'image.png'), bytes); await writeFile(path.join(repoRoot, 'existing.png'), bytes);
+    const doc = fixture(question('101', 1, '图形：<img src="https://example.com/source.png">'));
+    doc.assets = [{ url: 'https://example.com/source.png', localPath: 'image.png', sha256: hash, status: 'downloaded' }];
+    const md = mdQuestion('101', 1, '图形：![](existing.png)');
+    const options = { assetRoot, repoRoot, paperPath: path.join(repoRoot, 'paper.md') };
+    assert.equal((await comparePaper(doc, md, options)).questions[0].dimensions.images.status, 'same');
+    await writeFile(path.join(repoRoot, 'existing.png'), Buffer.from('different-content'));
+    assert.equal((await comparePaper(doc, md, options)).questions[0].dimensions.images.status, 'different');
+    doc.assets[0].localPath = '../outside.png';
+    assert.equal((await comparePaper(doc, md, options)).questions[0].dimensions.images.status, 'unknown');
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
+
+test('Fenbi DOM keys and repository qids use separate namespaces without false ID differences', async () => {
+  const doc = fixture(question('3_1_beq2d', 1));
+  doc.identity.questionIdNamespace = 'fenbi-question-key';
+  const report = await comparePaper(doc, markdown());
+  assert.equal(report.summary.matched, 1);
+  assert.equal(report.questions[0].matchMethod, 'explicit-number-and-content');
+  assert.equal(report.questions[0].dimensions.qid.status, 'not_compared');
+  assert.equal(report.paper.qidSet.status, 'not_compared');
+  assert.equal(report.paper.orderById.status, 'not_compared');
+  assert.equal(report.paper.order.status, 'same');
+});
+
+test('different namespaces never match coincidentally equal IDs or use number alone', async () => {
+  const doc = fixture(question('101', 1, '不同的题干。'));
+  doc.identity.questionIdNamespace = 'fenbi-question-key';
+  const report = await comparePaper(doc, markdown());
+  assert.equal(report.summary.matched, 0);
+  assert.equal(report.paper.order.status, 'unknown');
+  doc.questions[0].contentHtml = question().contentHtml;
+  doc.questions[0].number = null;
+  assert.equal((await comparePaper(doc, markdown())).summary.matched, 0);
+});
+
+test('explicit equal namespaces permit ID matching and missing source numbers remain unknown', async () => {
+  const doc = fixture(question('101', null));
+  doc.identity.questionIdNamespace = 'custom-id';
+  const report = await comparePaper(doc, markdown(), { repositoryQuestionIdNamespace: 'custom-id' });
+  assert.equal(report.questions[0].matchMethod, 'qid');
+  assert.equal(report.questions[0].dimensions.qid.status, 'same');
+  assert.equal(report.paper.order.status, 'unknown');
+  assert.equal(report.paper.orderById.status, 'same');
+});
+
+test('protocol-relative and relative source images resolve against the actual captured source URL', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'fenbi-align-url-'));
+  try {
+    const assetRoot = path.join(root, 'assets'), repoRoot = path.join(root, 'repo');
+    await mkdir(assetRoot); await mkdir(repoRoot);
+    const bytes = Buffer.from('identical-image'), hash = createHash('sha256').update(bytes).digest('hex');
+    await writeFile(path.join(assetRoot, 'image.png'), bytes); await writeFile(path.join(repoRoot, 'existing.png'), bytes);
+    const options = { assetRoot, repoRoot, paperPath: path.join(repoRoot, 'paper.md') };
+    const md = mdQuestion('101', 1, '图形：![](existing.png)');
+    const doc = fixture(question('101', 1, '图形：<img src="//fb.fbstatic.cn/images/source.png">'));
+    doc.source.url = 'https://www.fenbi.com/spa/tiku/paper';
+    doc.assets = [{ url: 'https://fb.fbstatic.cn/images/source.png', localPath: 'image.png', sha256: hash, status: 'downloaded' }];
+    assert.equal((await comparePaper(doc, md, options)).questions[0].dimensions.images.status, 'same');
+    doc.questions[0].contentHtml = '图形：<img src="../images/source.png">';
+    doc.assets[0].url = 'https://www.fenbi.com/spa/images/source.png';
+    assert.equal((await comparePaper(doc, md, options)).questions[0].dimensions.images.status, 'same');
+    doc.source.url = '';
+    const missingBase = (await comparePaper(doc, md, options)).questions[0].dimensions.images;
+    assert.equal(missingBase.status, 'unknown');
+    assert.equal(missingBase.reason, 'source-image-base-url-not-observed');
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
+
+test('superscript and subscript mathematics never collapse to ordinary condition digits', async () => {
+  for (const [source, repository] of [['求 x² + 1。', '求 x2 + 1。'], ['当 a₁ = 5。', '当 a1 = 5。']]) {
+    const doc = fixture(question('101', 1, source));
+    assert.equal((await comparePaper(doc, mdQuestion('101', 1, repository))).questions[0].dimensions.stem.status, 'different');
+    doc.questions[0].id = '';
+    assert.equal((await comparePaper(doc, mdQuestion('101', 1, repository))).summary.matched, 0);
+  }
+  assert.equal(normalizeComparisonText('ｘ²＋１０　≥　ａ₁').strict, 'x²+10 ≥ a₁');
+});
+
+// ── image content needs byte evidence ───────────────────────────────────────────────────────
+// Every picture collapses to one placeholder token, so the *text* stream cannot tell two pictures
+// apart, and cannot adjudicate "value written as text" against "value rendered as an image". These
+// cases must read `unknown`; `same` would claim pixels were compared, `different` would claim the
+// content was read. Text options are untouched (last block).
+
+const imgQuestion = (stem, options) => ({ id: '101', number: 1, contentHtml: stem, options,
+  materialIds: [], answerHtml: 'A', explanationHtml: '解析正文。' });
+const textOptions = () => [{ label: 'A', contentHtml: '甲' }, { label: 'B', contentHtml: '乙' }];
+const imageOptions = (prefix) => ['A', 'B'].map((label, index) => ({ label, contentHtml: `<img src="https://example.com/${prefix}${index}.png">` }));
+const mdWith = (stem, optionLines) => `## 第 1 题 <sub>qid 101 · 图形</sub>\n\n${stem}\n\n${optionLines}\n`;
+
+test('two different pictures are never reported as the same stem or options', async () => {
+  // The 图形推理 shape: a picture for the stem and pictures for the options, with different pictures
+  // on each side. Nothing here is comparable as text, so nothing may be claimed as a match.
+  const stemCase = await comparePaper(fixture(imgQuestion('<img src="https://example.com/figA.png">', imageOptions('opt'))),
+    mdWith('![](figB.png)', '- **A**. ![](../图片/other0.png)\n- **B**. ![](../图片/other1.png)'));
+  assert.equal(stemCase.questions[0].dimensions.stem.status, 'unknown');
+  assert.equal(stemCase.questions[0].dimensions.stem.reason, 'image-content-needs-byte-evidence');
+  assert.equal(stemCase.questions[0].dimensions.options.status, 'unknown');
+  assert.equal(stemCase.summary.matched, 0, 'an identity match with no comparable content is not a match');
+
+  // A picture stem with real text options is still a match on the options — the gate must not
+  // discard content that genuinely is comparable.
+  const mixed = await comparePaper(fixture(imgQuestion('<img src="https://example.com/figA.png">', textOptions())),
+    mdWith('![](figB.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(mixed.questions[0].dimensions.stem.status, 'unknown');
+  assert.equal(mixed.summary.matched, 1, 'the options are still real comparable content');
+
+  const optionCase = await comparePaper(fixture(imgQuestion('真实的题干。', imageOptions('opt'))),
+    mdWith('真实的题干。', '- **A**. ![](../图片/other0.png)\n- **B**. ![](../图片/other1.png)'));
+  assert.equal(optionCase.questions[0].dimensions.options.status, 'unknown');
+  assert.equal(optionCase.questions[0].dimensions.options.reason, 'option-content-not-observed');
+  // The stem itself is real text, so this row is still a genuine match — only the options are open.
+  assert.equal(optionCase.questions[0].dimensions.stem.status, 'same');
+});
+
+test('an image-only stem has no text evidence, and a formula image is not a content difference', async () => {
+  const imageOnly = await comparePaper(fixture(imgQuestion('<img src="https://example.com/a.png">', textOptions())),
+    mdWith('![](a.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(imageOnly.questions[0].dimensions.stem.status, 'unknown');
+
+  // Value rendered as text on the source side, as a formula image in the repository.
+  const formula = await comparePaper(fixture(imgQuestion('<p>增长率为 16.6%</p>', textOptions())),
+    mdWith('![](formula.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(formula.questions[0].dimensions.stem.status, 'unknown');
+  assert.equal(formula.questions[0].dimensions.stem.reason, 'image-content-needs-byte-evidence');
+  assert.notEqual(formula.questions[0].dimensions.stem.status, 'different');
+});
+
+test('label-only options are unknown, while an empty stem cannot carry a match on its own', async () => {
+  const labelsOnly = await comparePaper(fixture(imgQuestion('真实的题干。', [{ label: 'A', contentHtml: '' }, { label: 'B', contentHtml: '' }])),
+    mdWith('真实的题干。', '- **A**. \n- **B**. '));
+  assert.equal(labelsOnly.questions[0].dimensions.options.status, 'unknown');
+  assert.notEqual(labelsOnly.questions[0].dimensions.options.status, 'same');
+  assert.equal(labelsOnly.questions[0].dimensions.stem.status, 'same');
+
+  const empty = await comparePaper(fixture(imgQuestion('', [])), mdWith('', '- **A**. \n- **B**. '));
+  assert.equal(empty.questions[0].status, 'unmatched');
+  assert.equal(empty.questions[0].reason, 'identity-matched-with-no-comparable-content');
+  assert.equal(empty.summary.matched, 0);
+});
+
+test('text alongside an inline figure still compares exactly as before', async () => {
+  const same = await comparePaper(fixture(imgQuestion('如图，求面积。<img src="https://example.com/f.png">', textOptions())),
+    mdWith('如图，求面积。![](f.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(same.questions[0].dimensions.stem.status, 'same');
+  assert.equal(same.summary.matched, 1);
+
+  const different = await comparePaper(fixture(imgQuestion('如图，求周长。<img src="https://example.com/f.png">', textOptions())),
+    mdWith('如图，求面积。![](f.png)', '- **A**. 甲\n- **B**. 乙'));
+  assert.equal(different.questions[0].dimensions.stem.status, 'different', 'real text differences are still real');
+});
+
+test('byte-verified pictures still reach same on the images dimension', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'fenbi-align-img-'));
+  try {
+    const assetRoot = path.join(root, 'assets'), repoRoot = path.join(root, 'repo');
+    await mkdir(assetRoot); await mkdir(repoRoot);
+    const bytes = Buffer.from('identical-figure-bytes');
+    const hash = createHash('sha256').update(bytes).digest('hex');
+    await writeFile(path.join(assetRoot, 'f.png'), bytes);
+    await writeFile(path.join(repoRoot, 'f.png'), bytes);
+    const doc = fixture(imgQuestion('<img src="https://example.com/f.png">', textOptions()));
+    doc.assets = [{ url: 'https://example.com/f.png', localPath: 'f.png', sha256: hash, status: 'downloaded' }];
+    const report = await comparePaper(doc, mdWith('![](f.png)', '- **A**. 甲\n- **B**. 乙'),
+      { assetRoot, repoRoot, paperPath: path.join(repoRoot, 'paper.md') });
+    // The text dimension stays honest about having no text; the bytes are what carries the match.
+    assert.equal(report.questions[0].dimensions.stem.status, 'unknown');
+    assert.equal(report.questions[0].dimensions.images.status, 'same');
+    assert.equal(report.summary.matched, 1, 'verified bytes are comparable content');
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
+
+// ── collection stubs must never align ───────────────────────────────────────────────────────
+// Fenbi renders a full-looking slot for a question it has not collected. Two copies of that stub
+// are not evidence of anything, so they must not compare equal and must not establish identity.
+
+const STUB = '题目正在全力以赴征集';
+
+test('two copies of a collection stub are never reported as the same content', async () => {
+  const report = await comparePaper(fixture(question('101', 1, STUB)), mdQuestion('101', 1, STUB));
+  assert.equal(report.questions[0].dimensions.stem.status, 'unknown');
+  assert.equal(report.questions[0].dimensions.stem.reason, 'source-content-is-collection-placeholder');
+  assert.equal(report.questions[0].dimensions.stem.status !== 'same', true);
+  // The genuine pair is still compared normally, so the rule is not simply disabling the check.
+  const genuine = await comparePaper(fixture(question('101', 1, '真实的题干内容。')), mdQuestion('101', 1, '真实的题干内容。'));
+  assert.equal(genuine.questions[0].dimensions.stem.status, 'same');
+});
+
+test('the live-site stub wording is classified as uncollected, not as differing content', async () => {
+  // reports/FENBI-AUDIT-CORRECTION-20261017.md records two rendered forms. Missing them made the
+  // matcher report `different / content-differs`, which was then misread as a real content conflict
+  // and had to be retracted. Both must classify as an uncollected source, not as a difference.
+  for (const live of ['题目正在全力以赴征集，将会第一时间上传',
+    '题目正在全力以赴征集，将会在征集到后第一时间上传']) {
+    const report = await comparePaper(fixture(question('101', 1, live)), mdQuestion('101', 1, '真实的题干内容。'));
+    const stem = report.questions[0].dimensions.stem;
+    assert.equal(stem.status, 'unknown', live);
+    assert.equal(stem.reason, 'source-content-is-collection-placeholder', live);
+    // The whole point: a stub must never be reported as differing CONTENT. Assert on the stem's
+    // own verdict rather than the paper verdict, which can legitimately be `conflicting` for an
+    // unrelated dimension (this fixture has no repository answer section, so answer differs).
+    assert.notEqual(stem.reason, 'content-differs', live);
+  }
+});
+
+test('a stub in the repository is a missing body, not a match', async () => {
+  const report = await comparePaper(fixture(question('101', 1, '真实的题干内容。')), mdQuestion('101', 1, STUB));
+  assert.equal(report.questions[0].dimensions.stem.status, 'different');
+  assert.equal(report.questions[0].dimensions.stem.reason, 'repository-content-is-collection-placeholder');
+});
+
+test('a stub cannot be used to establish identity when there is no qid or original number', async () => {
+  const report = await comparePaper(fixture(question('', null, STUB)), mdQuestion('', 1, STUB));
+  assert.equal(report.summary.matched, 0, 'a stub is not a content fingerprint');
+  assert.equal(report.summary.unmatchedSource, 1);
+});
+
+test('the stub rule does not fire on genuine text that mentions collection', async () => {
+  const genuine = '关于网友未回忆起的内容，下列说法正确的是：';
+  const report = await comparePaper(fixture(question('101', 1, genuine)), mdQuestion('101', 1, genuine));
+  assert.equal(report.questions[0].dimensions.stem.status, 'same');
+});

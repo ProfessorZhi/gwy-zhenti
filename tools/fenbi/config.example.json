@@ -1,0 +1,21 @@
+{
+  "profileName": "fenbi-main",
+  "channel": "chrome",
+  "entryUrl": "https://www.fenbi.com/spa/tiku",
+  "timeoutMs": 45000,
+  "delayMs": 800,
+  "settleMs": 1500,
+  "maxPages": 250,
+  "concurrency": 1,
+  "routeParams": [],
+  "contentSelector": null,
+  "domAdapter": null,
+  "nextQuestionSelector": null,
+  "explanationSelector": null,
+  "fieldMap": {},
+  "scope": {
+    "fromYear": 2016,
+    "toYear": 2026,
+    "areas": ["国考", "浙江", "江苏", "上海", "北京", "天津", "广东", "福建", "广州", "深圳"]
+  }
+}
