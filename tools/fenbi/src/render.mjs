@@ -52,10 +52,10 @@ export function markdown(html, assets = [], imagePrefix = 'assets', baseUrl = 'h
   return service.turndown($.html()).trim();
 }
 
-export function renderCandidate(document, verdict) {
+export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = {}) {
   if (verdict.status !== 'complete') throw new Error('Only an independently validated complete capture can be rendered');
   const { identity: id, source } = document;
-  const convert = html => markdown(html, document.assets, 'assets', source.url);
+  const convert = html => markdown(html, document.assets, imagePrefix, source.url);
   const questions = [...document.questions].sort((a, b) => a.number - b.number);
   const subject = id.subject === 'xingce' ? '行测' : '申论';
   const lines = ['---', `考试: ${quote(id.area === '国考' ? '国考' : '省考')}`, `地区: ${quote(id.area)}`,
@@ -79,9 +79,18 @@ export function renderCandidate(document, verdict) {
     if (q.requirementsHtml) lines.push('作答要求：', '', convert(q.requirementsHtml), '');
   }
   lines.push('## 答案与解析', '');
-  for (const q of questions) lines.push(`<details><summary>第 ${q.number} 题</summary>`, '',
-    '**参考答案（粉笔题库参考内容）**', '', convert(q.answerHtml), '',
-    '**解析**', '', convert(q.explanationHtml), '', '</details>', '');
+  for (const q of questions) {
+    const answerLabel = q.answerOrigin === 'original-repository'
+      ? '**参考答案（原库来源，按题目内容唯一映射保留）**'
+      : '**参考答案（粉笔题库参考内容）**';
+    const explanationLabel = q.explanationOrigin === 'original-repository'
+      ? '**解析（原库来源，按题目内容唯一映射保留）**' : '**解析**';
+    lines.push(`<details><summary>第 ${q.number} 题</summary>`, '',
+      q.answerHtml?.trim() ? answerLabel : '**答案状态：unknown（来源未提供）**', '',
+      q.answerHtml?.trim() ? convert(q.answerHtml) : '', '',
+      q.explanationHtml?.trim() ? explanationLabel : '**解析状态：unknown（来源未提供）**', '',
+      q.explanationHtml?.trim() ? convert(q.explanationHtml) : '', '', '</details>', '');
+  }
   return lines.join('\n');
 }
 
