@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
-import { buildIncrementalReceipt, validateReceipt, CATEGORIES, RECEIPT_KIND, versionMarkers } from '../src/incremental-validator.mjs';
+import { buildIncrementalReceipt, validateReceipt, CATEGORIES, RECEIPT_KIND, versionMarkers, assessPair } from '../src/incremental-validator.mjs';
 
 /**
  * Offline synthetic fixtures only. Every stem is invented for this file; nothing here reads a
@@ -201,4 +201,98 @@ test('the eligibility gate is pluggable, so the authoritative stub policy stays 
   const rejected = out.rows.filter((row) => row.category === 'uncollected_stub');
   assert.equal(rejected.length, 1);
   assert.equal(rejected[0].sourceNumber, 1);
+});
+
+// ── verified image content conflicts must never be auto-accepted (PR #73) ────────────────────
+// The receipt is the last gate before a human sees a row, so it re-checks the image evidence even
+// when the underlying mapping module is older than the fix that made `exact` require it.
+
+const imageHash = (text) => createHash('sha256').update(text).digest('hex');
+const verified = (...texts) => texts.map((text) => ({ sha256: imageHash(text), verified: true }));
+const pictured = (caption, bytes, extra = {}) => ({
+  id: 'q-img', number: 1, contentHtml: `<p>${caption}</p><img src="https://example.test/f.png">`,
+  options: [{ label: 'A', contentHtml: '甲' }, { label: 'B', contentHtml: '乙' }], materialIds: [],
+  answerHtml: 'A', explanationHtml: '合成解析。', answerReceipt: 'r', explanationReceipt: 'r',
+  imageBytes: verified(bytes), ...extra,
+});
+const imageReceipt = (sourceQuestion, repositoryQuestion) => receipt([paper([sourceQuestion], [repositoryQuestion])]);
+
+test('a one-character caption with different verified bytes is an image content conflict', () => {
+  const result = imageReceipt(pictured('图', 'BYTES-A'), pictured('图', 'BYTES-B'));
+  const [row] = result.rows;
+  assert.equal(row.category, 'image_content_conflict');
+  assert.equal(row.autoAcceptable, false, 'a conflicting picture may never auto-accept');
+  assert.equal(row.requiresHumanReview, true);
+  assert.ok(row.flags.includes('image_content_conflict'));
+  assert.equal(result.counts.ordered_same_number, 0);
+  assert.equal(result.counts.image_content_conflict, 1);
+  assert.equal(result.counts.humanReviewRequired, 1);
+  assert.deepEqual(validateReceipt(result), { ok: true, problems: [] });
+});
+
+test('the same verified bytes on a one-character caption stay a normal ordered match', () => {
+  const result = imageReceipt(pictured('图', 'SAME'), pictured('图', 'SAME'));
+  const [row] = result.rows;
+  assert.equal(row.category, 'ordered_same_number');
+  assert.equal(row.autoAcceptable, true);
+  assert.ok(!row.flags.includes('image_content_conflict'));
+});
+
+test('the same path with different verified content is still a conflict', () => {
+  const source = pictured('如图，请选择。', 'CONTENT-ONE');
+  const repository = { ...pictured('如图，请选择。', 'CONTENT-TWO'),
+    contentHtml: source.contentHtml };   // identical reference path on both sides
+  const result = imageReceipt(source, repository);
+  assert.equal(result.rows[0].category, 'image_content_conflict', 'a path is not content evidence');
+});
+
+test('without a manifest the picture is neutral, never a conflict and never an exact claim', () => {
+  const noManifest = (src) => ({ id: 'q1', number: 1, contentHtml: `<img src="${src}">`,
+    options: [{ label: 'A', contentHtml: '甲' }, { label: 'B', contentHtml: '乙' }], materialIds: [] });
+  const result = imageReceipt(noManifest('https://example.test/a.png'), noManifest('https://example.test/b.png'));
+  const [row] = result.rows;
+  assert.ok(!row.flags?.includes('image_content_conflict'), 'absent evidence is not a conflict');
+  assert.notEqual(row.category, 'ordered_same_number');
+  assert.notEqual(row.autoAcceptable, true);
+});
+
+test('unverified or malformed hashes are neutral rather than a conflict', () => {
+  for (const imageBytes of [[{ sha256: imageHash('X'), verified: false }],
+    [{ sha256: 'not-a-sha', verified: true }]]) {
+    const source = pictured('图', 'X', { imageBytes });
+    const result = imageReceipt(source, pictured('图', 'Y'));
+    assert.ok(!result.rows[0].flags?.includes('image_content_conflict'), JSON.stringify(imageBytes));
+    assert.notEqual(result.rows[0].category, 'image_content_conflict');
+  }
+});
+
+test('a short text stem and a pure-image stem are treated differently', () => {
+  const textPair = imageReceipt(pictured('图题', 'B'), pictured('图题', 'B'));
+  assert.equal(textPair.rows[0].category, 'ordered_same_number');
+  const pureImage = (bytes) => ({ id: 'q1', number: 1, contentHtml: '<img src="https://example.test/f.png">',
+    options: [{ label: 'A', contentHtml: '甲' }, { label: 'B', contentHtml: '乙' }], materialIds: [],
+    answerHtml: 'A', explanationHtml: '解析。', answerReceipt: 'r', explanationReceipt: 'r', imageBytes: verified(bytes) });
+  const purePair = imageReceipt(pureImage('SAME'), pureImage('SAME'));
+  assert.equal(purePair.rows[0].category, 'ordered_same_number', 'identical verified bytes make a pure-image pair exact');
+  const pureConflict = imageReceipt(pureImage('A'), pureImage('B'));
+  assert.equal(pureConflict.rows[0].category, 'image_content_conflict');
+});
+
+test('a material that differs keeps the row out of auto-accept', () => {
+  const withMaterial = (id) => ({ ...q(1, '带材料的合成题干。'), materialIds: [id] });
+  const result = imageReceipt(withMaterial('m1'), withMaterial('m2'));
+  const [row] = result.rows;
+  assert.ok(row.flags.includes('materials_not_comparable'));
+  assert.equal(row.autoAcceptable, false);
+  assert.equal(row.requiresHumanReview, true);
+});
+
+test('the receipt flag survives an older mapping module that would still say exact', () => {
+  // Simulate the pre-fix mapping contract directly: exact grade, image similarity 0, no review.
+  const legacy = { status: 'matched', grade: 'exact', sameNumber: true, score: 1,
+    autoAcceptable: true, requiresHumanReview: false,
+    evidence: { images: { available: true, similarity: 0 }, options: { available: true, similarity: 1 }, materials: { available: false } } };
+  const assessed = assessPair(pictured('图', 'A'), pictured('图', 'B'), legacy);
+  assert.ok(assessed.flags.includes('image_content_conflict'));
+  assert.equal(assessed.requiresHumanReview, true, 'the receipt must not inherit a stale exact');
 });

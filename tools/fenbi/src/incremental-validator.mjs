@@ -32,6 +32,7 @@ export const CATEGORIES = Object.freeze([
   'cross_number',             // strictly equal content, different numbers
   'recollection_variant',     // likely the same question, wording differs → human review
   'material_or_image_not_compared', // pair limited because materials/images lack evidence
+  'image_content_conflict',   // verified image bytes differ on both sides → never auto-accept
   'missing_options',          // one side has no option bodies
   'uncollected_stub',         // caller's eligibility gate rejected the row (征集占位等)
   'answer_source_missing',    // answer/explanation present but no source receipt
@@ -44,6 +45,7 @@ export const CATEGORIES = Object.freeze([
 /** Risk flags that force human review regardless of score. */
 export const RISK_FLAGS = Object.freeze([
   'version_wording_differs',      // the two sides carry different version labels
+  'image_content_conflict',       // both sides have verified image bytes and they differ
   'image_evidence_unverified',
   'materials_not_comparable',
   'options_not_comparable',
@@ -93,6 +95,12 @@ export function assessPair(source, repository, mapping, { versionDiffers = false
   // "There are pictures but their bytes were never verified" is a risk. "Neither side has any
   // picture" is simply not part of the comparison and must not push the paper into review.
   const images = mapping?.evidence?.images;
+  // Verified bytes on both sides that do not agree are a content conflict, not a close call. This is
+  // checked here as well as in mapping.mjs so the receipt stays safe even if it is run against an
+  // older mapping module that would still call the pair exact.
+  if (images?.available === true && typeof images.similarity === 'number' && images.similarity < 1) {
+    flags.push('image_content_conflict');
+  }
   if (images?.available === false && ['image-bytes-not-verified', 'image-manifest-missing-on-one-side'].includes(images.reason)) {
     flags.push('image_evidence_unverified');
   }
@@ -101,8 +109,10 @@ export function assessPair(source, repository, mapping, { versionDiffers = false
   const options = mapping?.evidence?.options;
   if (options?.available === true && options.similarity === 0) flags.push('options_not_comparable');
   if (mapping?.sameNumber && identity === 'none') flags.push('number_only_no_content');
+  // Any content conflict or missing-evidence flag keeps the row out of the auto-accept path.
   const requiresHumanReview = Boolean(mapping?.requiresHumanReview) || flags.some((flag) => [
     'version_wording_differs', 'number_only_no_content', 'image_evidence_unverified',
+    'image_content_conflict', 'materials_not_comparable', 'options_not_comparable',
   ].includes(flag));
   return { flags: [...new Set(flags)], requiresHumanReview, identity, verbatimIdentical: rawIdentical && normalizedEqual };
 }
@@ -110,6 +120,9 @@ export function assessPair(source, repository, mapping, { versionDiffers = false
 /** Classify one assignment or unmatched row into the receipt's category vocabulary. */
 function categorize({ row, flags }) {
   if (row.status === 'unmatched') return row.sourceNumber == null ? 'unmatched_repository' : 'unmatched_source';
+  // A verified image conflict outranks the "exact" branch: nothing may be reported as an ordered,
+  // machine-accepted match while the picture bytes disagree.
+  if (flags.includes('image_content_conflict')) return 'image_content_conflict';
   if (flags.includes('missing_options')) return 'missing_options';
   // Content decides first. "Not compared" only describes a pair that is otherwise equal but whose
   // material/image evidence is unavailable — it must never mask a genuine text difference.
@@ -181,8 +194,9 @@ export function buildIncrementalReceipt({ papers, isEligible, limits = DEFAULT_L
       paperRows.push({ label, sourceNumber: row.sourceNumber, repositoryNumber: row.repositoryNumber,
         sourceId: row.sourceId, repositoryId: row.repositoryId, sameNumber: row.sameNumber,
         category, grade: row.grade, score: row.score,
-        autoAcceptable: row.autoAcceptable && !requiresHumanReview && !versionDiffers,
-        requiresHumanReview: requiresHumanReview || versionDiffers,
+        autoAcceptable: row.autoAcceptable && !requiresHumanReview && !versionDiffers
+          && !flags.includes('image_content_conflict'),
+        requiresHumanReview: requiresHumanReview || versionDiffers || flags.includes('image_content_conflict'),
         identity, verbatimIdentical, flags, ...(answer ? { answer } : {}),
         textSha256: { source: sha(visible(source.contentHtml)), repository: sha(visible(repository.contentHtml)) } });
     }
