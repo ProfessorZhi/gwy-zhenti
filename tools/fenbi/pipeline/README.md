@@ -7,7 +7,7 @@ fixture，不访问粉笔站点、不读取 Cookie、不写任何正式题本。
 ## 当前状态（请如实理解）
 
 - ✅ 队列、租约、阶段机、handoff、退避、背压、崩溃恢复、死信、**离线 observation importer** 与 CLI
-  已实现，并有 72 个合成测试。
+  已实现，并有 75 个合成测试。
 - ❌ **没有部署 24 小时常驻 collector，也没有启动 daemon/systemd。** 本模块只提供单次有界
   `drain` / `reconcile`，适合由现有每小时调度任务调用。
 - ❌ **没有内置真实粉笔浏览器 adapter。** 不注入 adapter 时，`drain --role collector` 会以
@@ -246,6 +246,32 @@ node tools/fenbi/pipeline/src/cli.mjs manifest --config ... --stage normalized \
 `manifest` 只写 metadata 与队列相对路径，不含正文、图片字节、Cookie/Profile 或 practice URL；
 `actionable=false` 的条目是 blocked/上一阶段未完成，消费者不应领取。
 
+## Owner fast10 指纹分片（metadata-only）
+
+Owner 可直接交付 `fast10-shard-handoff` 目录（`handoff-manifest.json` + `shard-<sourceId>.json`，
+全部 0600/0700）。每个 `paper-shard` 只含逐题 `sourceNumber/repositoryNumber/category/score/
+imageSha/optionHash/answerStatus`，声明 `credentials=none`、`containsQuestionText=false`、
+`containsImageBytes=false`、`rights=observed_ui/local_only`；不含正文、图片字节或 URL。
+
+```bash
+node tools/fenbi/pipeline/src/cli.mjs qa-import \
+  --config ... --allowlist work/fenbi/pipeline/allowlist.json \
+  --handoff-dir /path/to/fast10 --format fast10 --max-files 10
+```
+
+- 先用 manifest 的 `handoffSha256` 逐文件校验，再解析；0600/0700 权限、symlink、哈希、内容声明任一失败整批中止。
+- **挂接而非新建**：同 `sourceId+version` 的现有 pending capture job 会被标为
+  `capture_ready=done/offline_handoff`，不发 capture lease、不新建重复 job；已有真实 capture 或
+  leased job 会被拒绝（`OFFLINE_ATTACH_CONFLICT`/`OFFLINE_ATTACH_LEASED`）。重复导入幂等。
+- 文件本身作为 `question_index` artifact；`qaSummary` 保存 questionCount/numbers/categories/
+  imageCount/answerStatus；`materialCount=null`（manifest 未提供材料数，不伪造 0）。
+- `src/fast10-worker.mjs` 是受限离线 consumer：
+  - `normalized`/`aligned` 产出纯数字/类别/category/score 摘要；
+  - `assets_qa` 在 shard 有 `image_unknown`/`image_chunking_not_comparable` 时直接
+    `needs_review`，否则用 `job.images` 的 SHA 生成 `image_manifest`；
+  - `answer_explanation_qa` 因 fast10 `answerStatus` 未验证，直接 `needs_review`，不伪造答案来源。
+- 不读 Owner 私有 raw/Profile/Cookie，不访问粉笔；图片只认已有 SHA，不读字节。
+
 ## 常用命令
 
 ```bash
@@ -381,7 +407,7 @@ cd tools/fenbi/pipeline
 npm test          # 等价于 node --test test/*.test.mjs
 ```
 
-72 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
+75 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
 429/503 退避与 401 阻断、权限/不可再分发元数据、handoff 凭证负例、占位与 AI 答案不能完成、
 **1 producer + 2 独立 consumers + reviewer/verifier 全链路**、**图片 manifest SHA 正负例**、
 **未授权源不产生租约**、**无再分发许可强制 local_only**、**占位/unknown 不算内容**、

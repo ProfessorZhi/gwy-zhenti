@@ -12,7 +12,7 @@ export const REDISTRIBUTION = Object.freeze(['local_only', 'allowed']);
  * Metadata-only markers such as `needs_owner_reobservation` are deliberately excluded.
  */
 export function isPositiveObservationEvidence(type) {
-  return ['observed_ui', 'observed_catalog', 'offline_fetchability', 'url_stable_across_reads'].includes(type)
+  return ['observed_ui', 'observed_catalog', 'offline_fetchability', 'url_stable_across_reads', 'owner_fast10_shard'].includes(type)
     || /^route_reobserved_\d{8}$/.test(String(type));
 }
 

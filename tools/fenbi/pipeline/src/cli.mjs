@@ -9,9 +9,9 @@ import { buildHandoff, copyHandoffArtifacts, readHandoff, writeHandoff } from '.
 import { jobIdFor } from './identity.mjs';
 import { evaluateBackpressure, hostPressure, summarizeHostPressure } from './backpressure.mjs';
 import { loadThrottle, resetThrottle, saveThrottle, throttleSnapshot } from './throttle.mjs';
-import { loadAdapter, runAwaitedManifest, runCollector, runWorkerDrain } from './collector.mjs';
+import { loadAdapter, loadWorkerAdapter, runAwaitedManifest, runCollector, runWorkerDrain } from './collector.mjs';
 import { importObservations, importObservationDirectory, loadAllowlist } from './observation.mjs';
-import { importQaHandoff } from './qa-handoff.mjs';
+import { importQaHandoff, importFast10Directory } from './qa-handoff.mjs';
 import { buildStageManifest, writeStageManifest } from './manifest.mjs';
 
 const HELP = `gwy-zhenti offline pipeline (bounded queue, no daemon)
@@ -24,6 +24,8 @@ const HELP = `gwy-zhenti offline pipeline (bounded queue, no daemon)
       [--variant V] [--actor NAME]
   node tools/fenbi/pipeline/src/cli.mjs enqueue-offline --handoff FILE [--artifact-root DIR]
   node tools/fenbi/pipeline/src/cli.mjs qa-import --handoff FILE [--artifact-root DIR] [--allowlist FILE]
+  node tools/fenbi/pipeline/src/cli.mjs qa-import --handoff-dir DIR --format fast10 [--max-files 10]
+      [--manifest FILE] [--allowlist FILE]
   node tools/fenbi/pipeline/src/cli.mjs manifest --stage STAGE [--out FILE]
   node tools/fenbi/pipeline/src/cli.mjs observe-import --handoff FILE [--allowlist FILE] [--dry-run]
   node tools/fenbi/pipeline/src/cli.mjs observe-import --handoff-dir DIR [--max-files 5]
@@ -63,7 +65,7 @@ function parse() {
         'handoff', 'artifact-root', 'role', 'stage', 'budget', 'owner', 'adapter-module', 'job',
         'token', 'generation', 'file', 'name', 'kind', 'declarations', 'answer-provenance',
         'reviewer', 'outcome', 'reason', 'receipt', 'sha256', 'producer', 'out', 'host', 'allowlist',
-        'handoff-dir', 'max-files',
+        'handoff-dir', 'max-files', 'format', 'manifest',
       ].map((name) => [name, { type: 'string' }])),
       ...Object.fromEntries(['observed', 'approved', 'citations-verified', 'json', 'help', 'dry-run', 'images-verified'].map((name) => [name, { type: 'boolean', default: false }])),
       evidence: { type: 'string', multiple: true, default: [] },
@@ -222,12 +224,24 @@ async function main() {
   }
 
   if (command === 'qa-import') {
-    const filename = positionals[1] ?? requireValue(values, 'handoff', 'handoff');
-    const root = values['artifact-root'] ? path.resolve(values['artifact-root']) : path.dirname(path.resolve(filename));
     const allowlistFile = values.allowlist ?? path.join(config.dataDir, 'allowlist.json');
     const allowlist = await loadAllowlist(allowlistFile);
-    const result = await importQaHandoff({ queue, config, filename: path.resolve(filename), artifactRoot: root, allowlist });
-    return ok({ ...result, allowlistFile });
+    const format = values.format ?? 'qa';
+    if (!['qa', 'fast10'].includes(format)) return fail('INVALID_FORMAT', 'format must be qa or fast10');
+    if (values['handoff-dir']) {
+      if (format !== 'fast10') return fail('INVALID_FORMAT', '--handoff-dir is only supported with --format fast10');
+      const maxFiles = values['max-files'] === undefined ? 10 : Number(values['max-files']);
+      const result = await importFast10Directory({
+        queue, config, directory: path.resolve(values['handoff-dir']),
+        manifestFile: values.manifest ? path.resolve(values.manifest) : null,
+        allowlist, maxFiles,
+      });
+      return ok({ ...result, mode: 'directory', allowlistFile });
+    }
+    const filename = positionals[1] ?? requireValue(values, 'handoff', 'handoff');
+    const root = values['artifact-root'] ? path.resolve(values['artifact-root']) : path.dirname(path.resolve(filename));
+    const result = await importQaHandoff({ queue, config, filename: path.resolve(filename), artifactRoot: root, allowlist, format });
+    return ok({ ...result, mode: 'file', allowlistFile });
   }
 
   if (command === 'manifest') {
@@ -313,7 +327,9 @@ async function main() {
     }
     const stage = values.stage ?? { collector: 'capture_ready', normalizer: 'normalized', matcher: 'aligned', assets_qa: 'assets_qa', answer_qa: 'answer_explanation_qa' }[role];
     if (!stage) return fail('INVALID_ROLE', `Unknown role: ${role}`);
-    const adapter = values['adapter-module'] ? await loadAdapter(values['adapter-module']) : null;
+    const adapter = values['adapter-module']
+      ? (role === 'collector' ? await loadAdapter(values['adapter-module']) : await loadWorkerAdapter(values['adapter-module']))
+      : null;
     const owner = values.owner ?? `${role}-${process.pid}`;
     const status = await queue.status();
     const pressure = hostPressure();
@@ -452,7 +468,8 @@ try {
 } catch (error) {
   const blockedCodes = ['LEASE_HELD', 'COLLECTOR_LOCKED', 'LEASE_LOST', 'THROTTLE_BLOCKED',
     'QA_HANDOFF_NOT_AUTHORIZED', 'QA_HANDOFF_INSECURE_PERMISSIONS', 'QA_HANDOFF_RAW_CONTENT',
-    'QA_HANDOFF_URL_NOT_ALLOWED', 'QA_HANDOFF_REDISTRIBUTION', 'QA_HANDOFF_OBSERVATION_EVIDENCE'];
+    'QA_HANDOFF_URL_NOT_ALLOWED', 'QA_HANDOFF_REDISTRIBUTION', 'QA_HANDOFF_OBSERVATION_EVIDENCE',
+    'OFFLINE_ATTACH_CONFLICT', 'OFFLINE_ATTACH_LEASED'];
   const exit = blockedCodes.includes(error.code) ? EXIT.BLOCKED : EXIT.INVALID;
   process.stdout.write(JSON.stringify({ ok: false, error: { code: error.code ?? 'ERROR', message: error.message } }, null, 2) + '\n');
   process.exitCode = exit;

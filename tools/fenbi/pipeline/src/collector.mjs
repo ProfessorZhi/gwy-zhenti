@@ -60,6 +60,14 @@ export async function acquireCollectorLock(dataDir, { owner, staleMs = 60 * 60 *
   throw collectorError('COLLECTOR_LOCK_RACE', 'Could not acquire the collector lock');
 }
 
+export async function loadWorkerAdapter(modulePath) {
+  if (!modulePath) return null;
+  const module = await import(pathToFileURL(path.resolve(modulePath)).href);
+  const adapter = module.default ?? module.adapter;
+  if (!adapter || typeof adapter.process !== 'function') throw collectorError('ADAPTER_INVALID', 'Worker adapter must export process(job, context)');
+  return adapter;
+}
+
 export async function loadAdapter(modulePath, { jobId } = {}) {
   if (!modulePath) return null;
   const module = await import(pathToFileURL(path.resolve(modulePath)).href);
@@ -216,7 +224,7 @@ export async function runWorkerDrain({
     const claim = await queue.claimStage(stage, { role, owner, now: now() });
     if (!claim) break;
     try {
-      const result = await adapter.process(claim.job, { stage, owner });
+      const result = await adapter.process(claim.job, { stage, owner, config });
       if (result?.outcome && NON_COMPLETION.includes(result.outcome)) {
         await queue.failStage({
           jobId: claim.job.jobId, stage, owner, token: claim.lease.token, generation: claim.lease.generation,

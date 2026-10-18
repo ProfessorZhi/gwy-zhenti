@@ -18,6 +18,7 @@ const IMAGE_MAGIC = [
   Buffer.from('PK\u0003\u0004', 'utf8'), // ZIP/docx
 ];
 const MAX_ARTIFACT_BYTES = 2 * 1024 * 1024;
+const SHA256 = /^[a-f0-9]{64}$/i;
 
 function qaError(code, message) { return Object.assign(new Error(`[${code}] ${message}`), { code }); }
 function isObject(value) { return Boolean(value) && typeof value === 'object' && !Array.isArray(value); }
@@ -51,8 +52,10 @@ function validateSummary(summary) {
   if (!Number.isInteger(questionCount) || questionCount < 1) throw qaError('QA_HANDOFF_SCHEMA', 'summary.questionCount must be a positive integer');
   const questionNumbers = intArray(summary.questionNumbers, 'summary.questionNumbers');
   if (questionNumbers.length !== questionCount) throw qaError('QA_HANDOFF_SCHEMA', 'summary.questionNumbers must cover questionCount exactly');
-  const materialCount = Number(summary.materialCount ?? 0);
-  if (!Number.isInteger(materialCount) || materialCount < 0) throw qaError('QA_HANDOFF_SCHEMA', 'summary.materialCount must be a non-negative integer');
+  const materialCount = summary.materialCount === null || summary.materialCount === undefined
+    ? null
+    : Number(summary.materialCount);
+  if (materialCount !== null && (!Number.isInteger(materialCount) || materialCount < 0)) throw qaError('QA_HANDOFF_SCHEMA', 'summary.materialCount must be a non-negative integer or null');
   const placeholderNumbers = intArray(summary.placeholderNumbers ?? [], 'summary.placeholderNumbers');
   const unknownNumbers = intArray(summary.unknownNumbers ?? [], 'summary.unknownNumbers');
   const known = new Set(questionNumbers);
@@ -178,9 +181,91 @@ export async function readQaHandoff(filename, { artifactRoot } = {}) {
   };
 }
 
-/** Import a private, metadata-only staged QA handoff without touching a profile or the site. */
-export async function importQaHandoff({ queue, config, filename, artifactRoot, allowlist, actor = 'qa-handoff' } = {}) {
-  const handoff = await readQaHandoff(filename, { artifactRoot });
+/**
+ * Read an Owner fast10 "paper-shard" metadata package. It is narrower than a staged QA handoff:
+ * it contains per-question category/optionHash/imageSha/answerStatus but no title text, content,
+ * image bytes or URL. The shard file itself becomes the question_index artifact.
+ */
+export async function readFast10Shard(filename) {
+  const stat = await assertPrivatePath(filename);
+  const bytes = await fs.readFile(filename);
+  if (bytes.length > MAX_ARTIFACT_BYTES) throw qaError('QA_HANDOFF_SCHEMA', 'fast10 shard exceeds 2 MiB');
+  const shard = JSON.parse(bytes.toString('utf8'));
+  if (shard.schemaVersion !== 1 || shard.kind !== 'paper-shard') throw qaError('QA_HANDOFF_SCHEMA', 'Unsupported fast10 shard schema');
+  if (shard.credentials !== 'none' || shard.containsQuestionText !== false || shard.containsImageBytes !== false) {
+    throw qaError('QA_HANDOFF_RAW_CONTENT', 'fast10 shard must declare credentials=none and contain no question text or image bytes');
+  }
+  if (/https?:\/\//i.test(bytes.toString('utf8'))) throw qaError('QA_HANDOFF_URL_NOT_ALLOWED', 'fast10 shard must not contain URLs');
+  if (!shard.rights || shard.rights.redistribution !== 'local_only' || shard.rights.category !== 'observed_ui') {
+    throw qaError('QA_HANDOFF_REDISTRIBUTION', 'fast10 shard must be observed_ui/local_only');
+  }
+  if (!shard.evidence || shard.evidence.officialVerification !== false) throw qaError('QA_HANDOFF_SCHEMA', 'fast10 evidence.officialVerification must be false');
+  const sourceId = String(shard.sourceId ?? '');
+  if (!/^[A-Za-z0-9_.:-]{1,120}$/.test(sourceId)) throw qaError('QA_HANDOFF_SCHEMA', 'fast10 sourceId is invalid');
+  if (typeof shard.label !== 'string' || !shard.label.trim()) throw qaError('QA_HANDOFF_SCHEMA', 'fast10 label is required');
+  if (!Number.isInteger(Number(shard.year)) || typeof shard.area !== 'string' || typeof shard.variant !== 'string') throw qaError('QA_HANDOFF_SCHEMA', 'fast10 identity is incomplete');
+  const repoPaper = String(shard.repoPaper ?? '');
+  const subject = /行测/.test(repoPaper) ? 'xingce' : /申论/.test(repoPaper) ? 'shenlun' : null;
+  if (!subject) throw qaError('QA_HANDOFF_SCHEMA', 'Cannot derive subject from repoPaper');
+  if (!Array.isArray(shard.questions) || !shard.questions.length || shard.questions.length > 2000) throw qaError('QA_HANDOFF_SCHEMA', 'fast10 questions must be a non-empty array');
+  const seen = new Set();
+  const questionNumbers = [];
+  const placeholderNumbers = [];
+  const unknownNumbers = [];
+  const assets = [];
+  let imageCount = 0;
+  for (const [index, question] of shard.questions.entries()) {
+    if (!isObject(question)) throw qaError('QA_HANDOFF_SCHEMA', `questions[${index}] must be an object`);
+    const number = Number(question.sourceNumber);
+    if (!Number.isInteger(number) || number < 1 || seen.has(number)) throw qaError('QA_HANDOFF_SCHEMA', `questions[${index}].sourceNumber is invalid or duplicated`);
+    seen.add(number);
+    questionNumbers.push(number);
+    if (question.repositoryNumber !== null && question.repositoryNumber !== undefined && !Number.isInteger(Number(question.repositoryNumber))) throw qaError('QA_HANDOFF_SCHEMA', `questions[${index}].repositoryNumber is invalid`);
+    if (!['source_stub', 'image_sha_identical', 'image_chunking_not_comparable', 'image_unknown', 'normalized_equal', 'near', 'weak', 'ambiguous', 'different', 'repo_missing'].includes(question.category)) {
+      throw qaError('QA_HANDOFF_SCHEMA', `questions[${index}].category is unknown`);
+    }
+    if (question.category === 'source_stub') placeholderNumbers.push(number);
+    if (['image_unknown', 'ambiguous', 'repo_missing'].includes(question.category)) unknownNumbers.push(number);
+    if (question.optionHash !== undefined && question.optionHash !== null && !SHA256.test(String(question.optionHash))) throw qaError('QA_HANDOFF_SCHEMA', `questions[${index}].optionHash is invalid`);
+    if (question.optionCount !== undefined && (!Number.isInteger(question.optionCount) || question.optionCount < 1 || question.optionCount > 20)) throw qaError('QA_HANDOFF_SCHEMA', `questions[${index}].optionCount is invalid`);
+    const shas = question.imageSha ?? [];
+    if (!Array.isArray(shas)) throw qaError('QA_HANDOFF_SCHEMA', `questions[${index}].imageSha must be an array`);
+    for (const [imageIndex, sha] of shas.entries()) {
+      if (!SHA256.test(String(sha))) throw qaError('QA_HANDOFF_SCHEMA', `questions[${index}].imageSha[${imageIndex}] is invalid`);
+      assets.push({ ref: `source/q${number}/image-${imageIndex + 1}`, sha256: String(sha).toLowerCase() });
+      imageCount += 1;
+    }
+  }
+  if (shard.counts && typeof shard.counts === 'object') {
+    const total = Object.values(shard.counts).reduce((sum, value) => sum + (Number(value) || 0), 0);
+    if (total !== shard.questions.length) throw qaError('QA_HANDOFF_SCHEMA', 'fast10 counts do not sum to the question count');
+  }
+  if (shard.closure && Number(shard.closure.slots) !== shard.questions.length) throw qaError('QA_HANDOFF_SCHEMA', 'fast10 closure.slots does not match questions');
+  const fileSha = await sha256File(filename);
+  const artifact = { path: path.basename(filename), kind: 'question_index', sha256: fileSha.sha256, bytes: fileSha.bytes };
+  return {
+    schemaVersion: QA_HANDOFF_SCHEMA_VERSION,
+    kind: QA_HANDOFF_KIND,
+    format: 'fast10',
+    producer: { agent: 'fenbi-browser-owner', at: shard.at ?? null },
+    permissions: { browserProfile: false, cookies: false, tokens: false, rawSiteTextIncluded: false, imageBytesIncluded: false },
+    identity: { paperSourceId: sourceId, version: String(shard.identity?.version ?? 'recall-v1'), title: shard.label, subject, area: shard.area, year: Number(shard.year), variant: shard.variant },
+    source: { category: 'observed_ui', license: null, redistribution: 'local_only', evidence: [{ type: 'owner_fast10_shard', ref: `sha256:${fileSha.sha256}` }] },
+    summary: {
+      questionCount: questionNumbers.length, questionNumbers, materialCount: null,
+      placeholderNumbers, unknownNumbers, imageCount,
+    },
+    assets, artifacts: [artifact], artifactRoot: path.dirname(path.resolve(filename)),
+    provenance: { basis: 'owner-fast10-metadata-shard', officialVerification: false, evidenceLevel: shard.evidence.level ?? null, counts: shard.counts ?? null },
+    shardStat: { bytes: stat.size, sha256: fileSha.sha256 },
+  };
+}
+
+/** Import a private metadata-only staged QA handoff (or an Owner fast10 paper-shard) offline. */
+export async function importQaHandoff({ queue, config, filename, artifactRoot, allowlist, actor = 'qa-handoff', format = 'qa' } = {}) {
+  const handoff = format === 'fast10'
+    ? await readFast10Shard(filename)
+    : await readQaHandoff(filename, { artifactRoot });
   const identity = handoff.identity;
   if (!allowlist?.ids?.has(identity.paperSourceId)) {
     throw qaError('QA_HANDOFF_NOT_AUTHORIZED', 'paperSourceId is not in the local authorization allowlist');
@@ -207,7 +292,7 @@ export async function importQaHandoff({ queue, config, filename, artifactRoot, a
   };
   const jobId = jobIdFor(input);
   const existing = await queue.getJob(jobId);
-  if (existing) return { created: false, duplicate: true, jobId, status: existing.status, summary: existing.qaSummary ?? null };
+  if (existing && format !== 'fast10') return { created: false, duplicate: true, jobId, status: existing.status, summary: existing.qaSummary ?? null };
   const destinationRoot = queue.paths.artifactDir(jobId, 'capture_ready');
   await ensurePrivateDir(destinationRoot);
   const copied = [];
@@ -226,10 +311,69 @@ export async function importQaHandoff({ queue, config, filename, artifactRoot, a
     if (hashed.sha256 !== artifact.sha256 || hashed.bytes !== artifact.bytes) throw qaError('QA_HANDOFF_HASH_MISMATCH', `copied artifact changed: ${artifact.path}`);
     copied.push({ path: artifact.path, kind: artifact.kind, sha256: hashed.sha256, bytes: hashed.bytes });
   }
-  const result = await queue.enqueueOffline(input, copied, { summary: handoff.summary });
+  const result = await queue.enqueueOffline(input, copied, { summary: handoff.summary, attachExisting: format === 'fast10' });
   return {
-    created: result.created, duplicate: result.duplicate, jobId: result.jobId,
-    status: result.job.status, captureMode: result.job.stages.capture_ready.mode,
+    created: result.created, duplicate: result.duplicate, attached: result.attached === true,
+    jobId: result.jobId, status: result.job.status, captureMode: result.job.stages.capture_ready.mode,
     summary: handoff.summary, artifacts: copied, assets: handoff.assets,
+    format, officialVerification: false,
   };
+}
+
+/**
+ * Bounded import of the Owner's fast10 directory. The manifest's per-file handoffSha256 is
+ * verified before any shard is attached; a mismatch aborts the whole selected batch.
+ */
+export async function importFast10Directory({
+  queue, config, directory, manifestFile = null, allowlist, maxFiles = 10, now = Date.now,
+} = {}) {
+  if (!Number.isInteger(maxFiles) || maxFiles < 1 || maxFiles > 20) throw qaError('QA_HANDOFF_SCHEMA', 'maxFiles must be 1..20');
+  const manifestPath = manifestFile ? path.resolve(manifestFile) : path.join(directory, 'handoff-manifest.json');
+  await assertPrivatePath(manifestPath);
+  const manifest = JSON.parse(await fs.readFile(manifestPath, 'utf8'));
+  if (manifest.kind !== 'fast10-shard-handoff' || manifest.credentials !== 'none' ||
+      manifest.containsQuestionText !== false || manifest.containsImageBytes !== false || manifest.status !== 'OK') {
+    throw qaError('QA_HANDOFF_RAW_CONTENT', 'fast10 manifest must declare credentials=none, no text/image bytes and status=OK');
+  }
+  if (!Array.isArray(manifest.shards) || !manifest.shards.length) throw qaError('QA_HANDOFF_SCHEMA', 'fast10 manifest has no shards');
+  const selected = manifest.shards.slice(0, maxFiles);
+  const results = [];
+  for (const entry of selected) {
+    if (!entry || typeof entry.file !== 'string') throw qaError('QA_HANDOFF_SCHEMA', 'fast10 manifest shard entry is invalid');
+    const filename = safeChild(directory, entry.file);
+    const stat = await assertPrivatePath(filename);
+    const hashed = await sha256File(filename);
+    if (!/^[a-f0-9]{64}$/i.test(String(entry.handoffSha256 ?? '')) || hashed.sha256 !== String(entry.handoffSha256).toLowerCase()) {
+      throw qaError('QA_HANDOFF_HASH_MISMATCH', `fast10 shard hash mismatch: ${entry.file}`);
+    }
+    const result = await importQaHandoff({ queue, config, filename, allowlist, format: 'fast10' });
+    results.push({
+      sourceId: entry.sourceId, file: entry.file, slots: entry.slots,
+      handoffSha256: hashed.sha256, bytes: stat.size,
+      jobId: result.jobId, attached: result.attached === true, created: result.created === true,
+      duplicate: result.duplicate === true, captureMode: result.captureMode,
+      summary: result.summary,
+    });
+  }
+  const counts = {
+    files: results.length,
+    attached: results.filter((item) => item.attached).length,
+    created: results.filter((item) => item.created).length,
+    duplicates: results.filter((item) => item.duplicate).length,
+    slots: results.reduce((sum, item) => sum + (Number(item.slots) || 0), 0),
+  };
+  const receipt = {
+    schemaVersion: 1, kind: 'gwy-zhenti-fast10-import-receipt',
+    importedAt: nowIso(now()), manifestFile: manifestPath,
+    manifestSha256: await sha256File(manifestPath).then((hashed) => hashed.sha256),
+    selected: results.length, maxFiles, counts,
+    files: results.map(({ file, sourceId, slots, handoffSha256, jobId, attached, duplicate }) => ({ file, sourceId, slots, handoffSha256, jobId, attached, duplicate })),
+    officialVerification: false,
+    note: 'Owner fast10 metadata shards attached as offline_handoff. No browser capture, no question text, image bytes or URLs.',
+  };
+  const dir = path.join(config.dataDir, 'state', 'qa-imports');
+  await ensurePrivateDir(dir);
+  const receiptFile = path.join(dir, `fast10-${receipt.manifestSha256}.json`);
+  await atomicWriteJson(receiptFile, receipt);
+  return { ...receipt, receiptFile, results };
 }

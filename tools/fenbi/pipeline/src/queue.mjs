@@ -164,7 +164,7 @@ export class PipelineQueue {
   }
 
   /** Add a manifest-only offline job whose staged artifact has already been imported. */
-  async enqueueOffline(input, artifacts, { summary = null } = {}) {
+  async enqueueOffline(input, artifacts, { summary = null, attachExisting = false } = {}) {
     await this.init();
     const normalized = normalizeEnqueueInput({ ...input, offline: true }, this.config, this.now());
     if (!['observed_ui', 'licensed_donor', 'official'].includes(normalized.source.category)) {
@@ -173,7 +173,10 @@ export class PipelineQueue {
     if (!Array.isArray(artifacts) || !artifacts.length) throw queueError('ARTIFACT_REQUIRED', 'Offline jobs need at least one verified staged artifact');
     const jobId = jobIdFor(normalized);
     const existing = await this.getJob(jobId);
-    if (existing) return { created: false, duplicate: true, jobId, job: existing };
+    if (existing) {
+      if (!attachExisting) return { created: false, duplicate: true, jobId, job: existing };
+      return this.#attachOffline(existing, normalized, artifacts, summary, input.actor ?? 'qa-handoff');
+    }
     const now = this.now();
     const manifest = await this.#verifyArtifacts({ jobId, stages: {} }, 'capture_ready', artifacts);
     const stages = initialStages(now);
@@ -197,6 +200,58 @@ export class PipelineQueue {
     };
     await atomicWriteJson(this.paths.jobFile(jobId), job);
     return { created: true, duplicate: false, jobId, job };
+  }
+
+  /**
+   * Attach an Owner offline metadata shard to an existing pending capture_ready job. This is the
+   * only safe transition from "capture planned" to "offline handoff complete": it never runs when
+   * a capture lease is active or after a real capture completed, and it never changes identity.
+   */
+  async #attachOffline(existing, normalized, artifacts, summary, actor) {
+    const entry = existing.stages?.capture_ready;
+    if (!entry) throw queueError('OFFLINE_ATTACH_CONFLICT', 'Job has no capture_ready stage');
+    if (entry.status === SUCCESS) {
+      if (entry.mode === 'offline_handoff') {
+        return { created: false, duplicate: true, attached: false, jobId: existing.jobId, job: existing };
+      }
+      throw queueError('OFFLINE_ATTACH_CONFLICT', 'A real capture already completed this job; refusing to overwrite it');
+    }
+    if (entry.status === 'leased' || entry.lease) throw queueError('OFFLINE_ATTACH_LEASED', 'A collector lease is active; refusing to attach offline data');
+    if (entry.status !== 'pending') throw queueError('OFFLINE_ATTACH_CONFLICT', `capture_ready is ${entry.status}`);
+    if (TERMINAL_BAD.includes(existing.status)) throw queueError('OFFLINE_ATTACH_CONFLICT', `Job is ${existing.status}`);
+    for (const field of ['paperSourceId', 'version', 'subject', 'area', 'year', 'variant']) {
+      if (String(existing[field]) !== String(normalized[field])) {
+        throw queueError('DUPLICATE_CONFLICT', `Offline shard identity disagrees on ${field}`);
+      }
+    }
+    const lease = await readLease(this.config.dataDir, existing.jobId, 'capture_ready');
+    if (lease && Number.isFinite(lease.expiresAt) && lease.expiresAt > this.now()) {
+      throw queueError('OFFLINE_ATTACH_LEASED', 'A collector lease is active; refusing to attach offline data');
+    }
+    const manifest = await this.#verifyArtifacts(existing, 'capture_ready', artifacts);
+    const now = this.now();
+    const { job } = await this.#mutate(existing.jobId, (draft) => {
+      const current = draft.stages.capture_ready;
+      if (current.status !== 'pending' || current.lease) throw queueError('OFFLINE_ATTACH_CONFLICT', 'Capture stage changed during offline attach');
+      current.status = SUCCESS;
+      current.mode = 'offline_handoff';
+      current.artifacts = manifest;
+      current.lease = null;
+      current.completedAt = nowIso(now);
+      current.updatedAt = nowIso(now);
+      current.reason = 'verified owner metadata shard; no browser capture was performed';
+      draft.allowCapture = false;
+      draft.images = normalized.images;
+      draft.qaSummary = summary;
+      draft.source = normalized.source;
+      draft.permissions = normalized.permissions;
+      draft.history.push({
+        at: nowIso(now), event: 'offline_handoff_attached', actor,
+        artifacts: manifest.map((item) => item.path),
+        metadataOnly: true,
+      });
+    });
+    return { created: false, duplicate: false, attached: true, jobId: existing.jobId, job };
   }
 
   #eligible(job, stage, now) {
