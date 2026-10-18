@@ -7,7 +7,7 @@ fixture，不访问粉笔站点、不读取 Cookie、不写任何正式题本。
 ## 当前状态（请如实理解）
 
 - ✅ 队列、租约、阶段机、handoff、退避、背压、崩溃恢复、死信、**离线 observation importer** 与 CLI
-  已实现，并有 71 个合成测试。
+  已实现，并有 72 个合成测试。
 - ❌ **没有部署 24 小时常驻 collector，也没有启动 daemon/systemd。** 本模块只提供单次有界
   `drain` / `reconcile`，适合由现有每小时调度任务调用。
 - ❌ **没有内置真实粉笔浏览器 adapter。** 不注入 adapter 时，`drain --role collector` 会以
@@ -226,6 +226,8 @@ SHA-256、逐图 `ref/sourceUrl`、`review.required` 和 producer。它明确写
 - handoff **不能含 URL/route 字段**；source 必须 `local_only`；必须有 `observed_ui`/`observed_catalog`
   evidence；`permissions.rawSiteTextIncluded/imageBytesIncluded` 必须为 false。
 - 逐图 `assets[].sha256` 必须与 `asset_manifest` 一致；缺 SHA/哈希不符/重复 ref 直接拒绝。
+- artifact/asset ref 是**路径**，不是 URL：`https:` / `file:` / `data:` / `javascript:` / UNC / `//host`
+  以 `UNSAFE_ASSET_REF` 显式拒绝，不依赖后续 hash mismatch（PR #68 F10）。
 - 导入后 `capture_ready=done/offline_handoff`，不产生 capture lease；消费者从 `normalized` 起领取。
 
 命令：
@@ -379,7 +381,7 @@ cd tools/fenbi/pipeline
 npm test          # 等价于 node --test test/*.test.mjs
 ```
 
-71 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
+72 个测试全部使用合成 fixture：重复派发不重复、两 worker 不共享同一 stage、崩溃/租约代际恢复、
 429/503 退避与 401 阻断、权限/不可再分发元数据、handoff 凭证负例、占位与 AI 答案不能完成、
 **1 producer + 2 独立 consumers + reviewer/verifier 全链路**、**图片 manifest SHA 正负例**、
 **未授权源不产生租约**、**无再分发许可强制 local_only**、**占位/unknown 不算内容**、

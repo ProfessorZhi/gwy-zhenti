@@ -128,6 +128,12 @@ test('OS permissions, raw content, URLs, rights and hashes fail closed', async (
   cases.push([png, /QA_HANDOFF_RAW_CONTENT|QA_HANDOFF_SCHEMA/]);
   const badKind = await packageFor(t, { mutate: (h) => { h.artifacts[0].kind = 'raw_html'; } });
   cases.push([badKind, /QA_HANDOFF_RAW_CONTENT/]);
+  const artifactUrl = await packageFor(t, { mutate: (h) => { h.artifacts[0].path = 'https://evil.test/summary.json'; } });
+  cases.push([artifactUrl, /UNSAFE_ASSET_REF/]);
+  const assetUrl = await packageFor(t, { mutate: (h) => { h.assets[0].ref = 'file:/etc/passwd'; } });
+  cases.push([assetUrl, /UNSAFE_ASSET_REF/]);
+  const assetData = await packageFor(t, { mutate: (h) => { h.assets[0].ref = 'data:image/png;base64,AAAA'; } });
+  cases.push([assetData, /UNSAFE_ASSET_REF/]);
   const badSha = await packageFor(t, { mutate: (h) => { h.assets[0].sha256 = SHA('0'); } });
   cases.push([badSha, /QA_HANDOFF_HASH_MISMATCH|QA_HANDOFF_SCHEMA/]);
   const unauthorized = await packageFor(t, { id: '9999999', title: '未授权合成QA样卷' });

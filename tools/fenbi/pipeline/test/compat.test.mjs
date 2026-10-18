@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { placeholderVerdict, sanitizeSourceUrl, taskKeyFor, urlMatchesObserved, isWriteRoute } from '../src/identity.mjs';
+import { placeholderVerdict, sanitizeSourceUrl, taskKeyFor, urlMatchesObserved, isWriteRoute, assertArtifactRelative } from '../src/identity.mjs';
 import { STAGES, ROLE_STAGES, EXIT } from '../src/constants.mjs';
 import { MAX_CONCURRENCY, clampConcurrency } from '../src/throttle.mjs';
 import { validateConfig } from '../src/config.mjs';
@@ -141,4 +141,24 @@ test('per-image references retain safe static URLs and reject absolute/credentia
   await assert.rejects(queue.enqueue(enqueueInput({ images: [{ ref: '/absolute.png' }] })), /escapes|relative/);
   await assert.rejects(queue.enqueue(enqueueInput({ images: [{ ref: 'q.png', sourceUrl: 'https://evil.test/q.png' }] })), /authorised static host/);
   await assert.rejects(queue.enqueue(enqueueInput({ images: [{ ref: 'q.png', sourceUrl: 'https://img.fbstatic.cn/q.png?token=x' }] })), /credential-like/);
+});
+
+
+test('PR68 F10: URL-scheme and protocol-relative asset refs are rejected explicitly', () => {
+  for (const ref of [
+    'https://evil.test/a.png',
+    'http://evil.test/a.png',
+    'file:/etc/passwd',
+    'data:image/png;base64,AAAA',
+    'javascript:alert(1)',
+    'C:\\Windows\\system.ini',
+    '\\server\\share\\a.png',
+    '//host/a.png',
+    '/etc/passwd',
+  ]) {
+    assert.throws(() => assertArtifactRelative(ref), (error) => error.code === 'UNSAFE_ASSET_REF', ref);
+  }
+  for (const ref of ['material/q1.png', 'artifacts/summary.json', 'a..b/c.png']) {
+    assert.equal(typeof assertArtifactRelative(ref), 'string');
+  }
 });

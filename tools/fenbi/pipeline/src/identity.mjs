@@ -295,8 +295,20 @@ export function identityFingerprint(job) {
 }
 
 export function assertArtifactRelative(relative) {
-  if (typeof relative !== 'string' || !relative || path.isAbsolute(relative) || relative.includes('\0')) throw fail('Artifact path must be relative');
+  if (typeof relative !== 'string' || !relative || relative.includes('\0')) throw fail('Artifact path must be relative');
+  // PR #68 F10: an asset/artifact reference is a path, never a URL or a rooted path. Reject
+  // schemes, UNC and protocol-relative refs explicitly instead of relying on a later hash/open.
+  if (/^[A-Za-z][A-Za-z0-9+.-]*:/.test(relative)) {
+    throw fail('Asset/artifact references must be plain relative paths, never URLs', 'UNSAFE_ASSET_REF');
+  }
+  if (relative.replaceAll('\\', '/').startsWith('/')) {
+    throw fail('Asset/artifact references must be plain relative paths, never absolute/UNC/protocol-relative refs', 'UNSAFE_ASSET_REF');
+  }
   const normal = path.posix.normalize(relative.replaceAll('\\', '/'));
+  if (/^[A-Za-z][A-Za-z0-9+.-]*:/.test(normal) || normal.startsWith('//')) {
+    throw fail('Asset/artifact references must be plain relative paths, never URLs', 'UNSAFE_ASSET_REF');
+  }
   if (normal === '..' || normal.startsWith('../') || normal.includes('/../')) throw fail('Artifact path escapes its stage directory');
+  if (normal === '.' || normal === '') throw fail('Artifact path must name a file');
   return normal;
 }
