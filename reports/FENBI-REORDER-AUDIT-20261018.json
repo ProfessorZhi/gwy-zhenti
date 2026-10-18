@@ -1,0 +1,1617 @@
+{
+  "schemaVersion": 2,
+  "at": "2026-10-17T19:53:05.024Z",
+  "tool": "tools/fenbi/src/reorder.mjs",
+  "semantics": {
+    "identity": "normalized_equal (NFKC + width folding + punctuation/space stripping) — NOT byte identity",
+    "binding": "bidirectional mutual-best, one-to-one, ties excluded",
+    "coverage": "three separate tiers; candidates tier includes weak and is NOT usable coverage"
+  },
+  "thresholds": {
+    "low": 0.45,
+    "suggest": 0.85
+  },
+  "cases": [
+    {
+      "id": "sh-2026",
+      "label": "上海2026统考",
+      "sourceId": "8472470",
+      "repoPaper": "省考/上海/2026/行测-统考.md",
+      "sourceQuestions": 130,
+      "repositoryQuestions": 129,
+      "tiers": {
+        "eligible": 130,
+        "exact": 68,
+        "near": 35,
+        "weak": 9,
+        "highConfidence": 103,
+        "candidates": 112,
+        "coverageExact": 0.523,
+        "coverageHighConfidence": 0.792,
+        "coverageCandidates": 0.862
+      },
+      "counts": {
+        "normalized_equal_reordered": 68,
+        "unmatched_no_candidate": 9,
+        "near": 35,
+        "manual_review_ambiguous": 9,
+        "weak": 9,
+        "repo_only_absent_in_source": 17
+      },
+      "approvedMappingCount": 112,
+      "strictNormalizedEqualCount": 68,
+      "reviewCandidateCount": 9,
+      "oneToOne": true,
+      "order": {
+        "count": 112,
+        "adjacentDescents": 4,
+        "inversions": 1219,
+        "totalPairs": 6216,
+        "inversionRate": 0.1961068211068211
+      },
+      "offsets": {
+        "3": 7,
+        "7": 1,
+        "15": 15,
+        "28": 17,
+        "31": 14,
+        "-50": 19,
+        "-25": 10,
+        "-15": 13,
+        "-1": 16
+      },
+      "mapping": [
+        {
+          "sourceNumber": 1,
+          "repositoryNumber": 16,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 2,
+          "repositoryNumber": 17,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 3,
+          "repositoryNumber": 18,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 4,
+          "repositoryNumber": 19,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 5,
+          "repositoryNumber": 20,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 6,
+          "repositoryNumber": 21,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 7,
+          "repositoryNumber": 22,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 8,
+          "repositoryNumber": 23,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 9,
+          "repositoryNumber": 24,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 10,
+          "repositoryNumber": 25,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 11,
+          "repositoryNumber": 26,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 12,
+          "repositoryNumber": 27,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 13,
+          "repositoryNumber": 28,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 14,
+          "repositoryNumber": 29,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 15,
+          "repositoryNumber": 30,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 16,
+          "repositoryNumber": 1,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 17,
+          "repositoryNumber": 2,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 18,
+          "repositoryNumber": 3,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 19,
+          "repositoryNumber": 4,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 21,
+          "repositoryNumber": 6,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 22,
+          "repositoryNumber": 7,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 23,
+          "repositoryNumber": 8,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 24,
+          "repositoryNumber": 9,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 26,
+          "repositoryNumber": 11,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 27,
+          "repositoryNumber": 12,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 28,
+          "repositoryNumber": 13,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 29,
+          "repositoryNumber": 14,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 30,
+          "repositoryNumber": 15,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 31,
+          "repositoryNumber": 59,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.953
+        },
+        {
+          "sourceNumber": 32,
+          "repositoryNumber": 60,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.919
+        },
+        {
+          "sourceNumber": 33,
+          "repositoryNumber": 61,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 34,
+          "repositoryNumber": 62,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.938
+        },
+        {
+          "sourceNumber": 35,
+          "repositoryNumber": 63,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.878
+        },
+        {
+          "sourceNumber": 36,
+          "repositoryNumber": 64,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 37,
+          "repositoryNumber": 65,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 38,
+          "repositoryNumber": 66,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 39,
+          "repositoryNumber": 67,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 40,
+          "repositoryNumber": 68,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 41,
+          "repositoryNumber": 69,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 42,
+          "repositoryNumber": 70,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 43,
+          "repositoryNumber": 71,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 44,
+          "repositoryNumber": 72,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 45,
+          "repositoryNumber": 73,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 46,
+          "repositoryNumber": 74,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.969
+        },
+        {
+          "sourceNumber": 47,
+          "repositoryNumber": 75,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 48,
+          "repositoryNumber": 51,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.942
+        },
+        {
+          "sourceNumber": 49,
+          "repositoryNumber": 52,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.935
+        },
+        {
+          "sourceNumber": 50,
+          "repositoryNumber": 53,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.945
+        },
+        {
+          "sourceNumber": 52,
+          "repositoryNumber": 55,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.942
+        },
+        {
+          "sourceNumber": 53,
+          "repositoryNumber": 56,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.929
+        },
+        {
+          "sourceNumber": 54,
+          "repositoryNumber": 57,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 55,
+          "repositoryNumber": 58,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 58,
+          "repositoryNumber": 89,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 64,
+          "repositoryNumber": 95,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 65,
+          "repositoryNumber": 96,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.75
+        },
+        {
+          "sourceNumber": 68,
+          "repositoryNumber": 99,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 69,
+          "repositoryNumber": 100,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 70,
+          "repositoryNumber": 101,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 71,
+          "repositoryNumber": 102,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 72,
+          "repositoryNumber": 103,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 73,
+          "repositoryNumber": 104,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.973
+        },
+        {
+          "sourceNumber": 74,
+          "repositoryNumber": 105,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.959
+        },
+        {
+          "sourceNumber": 75,
+          "repositoryNumber": 106,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 76,
+          "repositoryNumber": 107,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.966
+        },
+        {
+          "sourceNumber": 77,
+          "repositoryNumber": 108,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 78,
+          "repositoryNumber": 109,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.588
+        },
+        {
+          "sourceNumber": 79,
+          "repositoryNumber": 86,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.837
+        },
+        {
+          "sourceNumber": 81,
+          "repositoryNumber": 31,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 82,
+          "repositoryNumber": 32,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 83,
+          "repositoryNumber": 33,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 84,
+          "repositoryNumber": 34,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 85,
+          "repositoryNumber": 35,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 86,
+          "repositoryNumber": 36,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 87,
+          "repositoryNumber": 37,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 88,
+          "repositoryNumber": 38,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.972
+        },
+        {
+          "sourceNumber": 89,
+          "repositoryNumber": 39,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 90,
+          "repositoryNumber": 40,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.974
+        },
+        {
+          "sourceNumber": 91,
+          "repositoryNumber": 41,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 92,
+          "repositoryNumber": 42,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 93,
+          "repositoryNumber": 43,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.972
+        },
+        {
+          "sourceNumber": 94,
+          "repositoryNumber": 44,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.967
+        },
+        {
+          "sourceNumber": 95,
+          "repositoryNumber": 45,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 96,
+          "repositoryNumber": 46,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 97,
+          "repositoryNumber": 47,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 98,
+          "repositoryNumber": 48,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 99,
+          "repositoryNumber": 49,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 101,
+          "repositoryNumber": 76,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.897
+        },
+        {
+          "sourceNumber": 102,
+          "repositoryNumber": 77,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.873
+        },
+        {
+          "sourceNumber": 103,
+          "repositoryNumber": 78,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.894
+        },
+        {
+          "sourceNumber": 104,
+          "repositoryNumber": 79,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.935
+        },
+        {
+          "sourceNumber": 105,
+          "repositoryNumber": 80,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.915
+        },
+        {
+          "sourceNumber": 106,
+          "repositoryNumber": 81,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.873
+        },
+        {
+          "sourceNumber": 107,
+          "repositoryNumber": 82,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.938
+        },
+        {
+          "sourceNumber": 108,
+          "repositoryNumber": 83,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.91
+        },
+        {
+          "sourceNumber": 109,
+          "repositoryNumber": 84,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.93
+        },
+        {
+          "sourceNumber": 110,
+          "repositoryNumber": 85,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.472
+        },
+        {
+          "sourceNumber": 111,
+          "repositoryNumber": 110,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.825
+        },
+        {
+          "sourceNumber": 112,
+          "repositoryNumber": 111,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.844
+        },
+        {
+          "sourceNumber": 113,
+          "repositoryNumber": 112,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.887
+        },
+        {
+          "sourceNumber": 114,
+          "repositoryNumber": 113,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.829
+        },
+        {
+          "sourceNumber": 116,
+          "repositoryNumber": 115,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.816
+        },
+        {
+          "sourceNumber": 117,
+          "repositoryNumber": 116,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 118,
+          "repositoryNumber": 117,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.829
+        },
+        {
+          "sourceNumber": 119,
+          "repositoryNumber": 118,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.929
+        },
+        {
+          "sourceNumber": 121,
+          "repositoryNumber": 120,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.892
+        },
+        {
+          "sourceNumber": 122,
+          "repositoryNumber": 121,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.911
+        },
+        {
+          "sourceNumber": 123,
+          "repositoryNumber": 122,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.865
+        },
+        {
+          "sourceNumber": 124,
+          "repositoryNumber": 123,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.877
+        },
+        {
+          "sourceNumber": 126,
+          "repositoryNumber": 125,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 127,
+          "repositoryNumber": 126,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.914
+        },
+        {
+          "sourceNumber": 128,
+          "repositoryNumber": 127,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.907
+        },
+        {
+          "sourceNumber": 129,
+          "repositoryNumber": 128,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.851
+        }
+      ],
+      "reviewCandidates": [
+        {
+          "sourceNumber": 56,
+          "candidateRepositoryNumbers": [
+            87,
+            88,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98
+          ],
+          "score": 1,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 57,
+          "candidateRepositoryNumbers": [
+            87,
+            88,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98
+          ],
+          "score": 1,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 59,
+          "candidateRepositoryNumbers": [
+            87,
+            88,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98
+          ],
+          "score": 1,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 60,
+          "candidateRepositoryNumbers": [
+            87,
+            88,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98
+          ],
+          "score": 0.774,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 61,
+          "candidateRepositoryNumbers": [
+            87,
+            88,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98
+          ],
+          "score": 0.774,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 62,
+          "candidateRepositoryNumbers": [
+            87,
+            88,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98
+          ],
+          "score": 0.774,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 63,
+          "candidateRepositoryNumbers": [
+            87,
+            88,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98
+          ],
+          "score": 1,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 66,
+          "candidateRepositoryNumbers": [
+            87,
+            88,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98
+          ],
+          "score": 1,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 67,
+          "candidateRepositoryNumbers": [
+            87,
+            88,
+            90,
+            91,
+            92,
+            93,
+            94,
+            97,
+            98
+          ],
+          "score": 1,
+          "reason": "tie_in_best_score_not_bound"
+        }
+      ]
+    },
+    {
+      "id": "gd-2026",
+      "label": "广东2026统考",
+      "sourceId": "8399765",
+      "repoPaper": "省考/广东/2026/行测-统考.md",
+      "sourceQuestions": 90,
+      "repositoryQuestions": 86,
+      "tiers": {
+        "eligible": 89,
+        "exact": 64,
+        "near": 7,
+        "weak": 6,
+        "highConfidence": 71,
+        "candidates": 77,
+        "coverageExact": 0.719,
+        "coverageHighConfidence": 0.798,
+        "coverageCandidates": 0.865
+      },
+      "counts": {
+        "weak": 6,
+        "normalized_equal_same_number": 11,
+        "near": 7,
+        "normalized_equal_reordered": 53,
+        "unmatched_no_candidate": 9,
+        "image_only_not_comparable": 1,
+        "manual_review_ambiguous": 3,
+        "repo_only_absent_in_source": 9
+      },
+      "approvedMappingCount": 77,
+      "strictNormalizedEqualCount": 64,
+      "reviewCandidateCount": 3,
+      "oneToOne": true,
+      "order": {
+        "count": 77,
+        "adjacentDescents": 1,
+        "inversions": 205,
+        "totalPairs": 2926,
+        "inversionRate": 0.07006151742993848
+      },
+      "offsets": {
+        "0": 15,
+        "1": 26,
+        "5": 15,
+        "-50": 5,
+        "-4": 16
+      },
+      "mapping": [
+        {
+          "sourceNumber": 1,
+          "repositoryNumber": 1,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.816
+        },
+        {
+          "sourceNumber": 2,
+          "repositoryNumber": 2,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.667
+        },
+        {
+          "sourceNumber": 3,
+          "repositoryNumber": 3,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.679
+        },
+        {
+          "sourceNumber": 4,
+          "repositoryNumber": 4,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.786
+        },
+        {
+          "sourceNumber": 5,
+          "repositoryNumber": 5,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 6,
+          "repositoryNumber": 6,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 7,
+          "repositoryNumber": 7,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 8,
+          "repositoryNumber": 8,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 9,
+          "repositoryNumber": 9,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 10,
+          "repositoryNumber": 10,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 11,
+          "repositoryNumber": 11,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 12,
+          "repositoryNumber": 12,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 13,
+          "repositoryNumber": 13,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 14,
+          "repositoryNumber": 14,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 15,
+          "repositoryNumber": 15,
+          "grade": "normalized_equal_same_number",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 16,
+          "repositoryNumber": 21,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.945
+        },
+        {
+          "sourceNumber": 17,
+          "repositoryNumber": 22,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.933
+        },
+        {
+          "sourceNumber": 18,
+          "repositoryNumber": 23,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.922
+        },
+        {
+          "sourceNumber": 19,
+          "repositoryNumber": 24,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.933
+        },
+        {
+          "sourceNumber": 20,
+          "repositoryNumber": 25,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.904
+        },
+        {
+          "sourceNumber": 21,
+          "repositoryNumber": 26,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 22,
+          "repositoryNumber": 27,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.96
+        },
+        {
+          "sourceNumber": 23,
+          "repositoryNumber": 28,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 24,
+          "repositoryNumber": 29,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 25,
+          "repositoryNumber": 30,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 26,
+          "repositoryNumber": 31,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 27,
+          "repositoryNumber": 32,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 28,
+          "repositoryNumber": 33,
+          "grade": "near",
+          "normalizedEqual": false,
+          "score": 0.974
+        },
+        {
+          "sourceNumber": 29,
+          "repositoryNumber": 34,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 30,
+          "repositoryNumber": 35,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 36,
+          "repositoryNumber": 37,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 37,
+          "repositoryNumber": 38,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 38,
+          "repositoryNumber": 39,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 39,
+          "repositoryNumber": 40,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 40,
+          "repositoryNumber": 41,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 41,
+          "repositoryNumber": 42,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 42,
+          "repositoryNumber": 43,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 43,
+          "repositoryNumber": 44,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 44,
+          "repositoryNumber": 45,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 45,
+          "repositoryNumber": 46,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 48,
+          "repositoryNumber": 49,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 50,
+          "repositoryNumber": 51,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 51,
+          "repositoryNumber": 52,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 52,
+          "repositoryNumber": 53,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 53,
+          "repositoryNumber": 54,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 54,
+          "repositoryNumber": 55,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 55,
+          "repositoryNumber": 56,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 56,
+          "repositoryNumber": 57,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 57,
+          "repositoryNumber": 58,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 58,
+          "repositoryNumber": 59,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 59,
+          "repositoryNumber": 60,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 60,
+          "repositoryNumber": 61,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 61,
+          "repositoryNumber": 62,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 62,
+          "repositoryNumber": 63,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 63,
+          "repositoryNumber": 64,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 64,
+          "repositoryNumber": 65,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 66,
+          "repositoryNumber": 16,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 67,
+          "repositoryNumber": 17,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 68,
+          "repositoryNumber": 18,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 69,
+          "repositoryNumber": 19,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 70,
+          "repositoryNumber": 20,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 71,
+          "repositoryNumber": 67,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 72,
+          "repositoryNumber": 68,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 73,
+          "repositoryNumber": 69,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 74,
+          "repositoryNumber": 70,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 76,
+          "repositoryNumber": 72,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 77,
+          "repositoryNumber": 73,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 78,
+          "repositoryNumber": 74,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 79,
+          "repositoryNumber": 75,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 81,
+          "repositoryNumber": 77,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 82,
+          "repositoryNumber": 78,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 83,
+          "repositoryNumber": 79,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 84,
+          "repositoryNumber": 80,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.745
+        },
+        {
+          "sourceNumber": 86,
+          "repositoryNumber": 82,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 87,
+          "repositoryNumber": 83,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 88,
+          "repositoryNumber": 84,
+          "grade": "normalized_equal_reordered",
+          "normalizedEqual": true,
+          "score": 1
+        },
+        {
+          "sourceNumber": 89,
+          "repositoryNumber": 85,
+          "grade": "weak",
+          "normalizedEqual": false,
+          "score": 0.804
+        }
+      ],
+      "reviewCandidates": [
+        {
+          "sourceNumber": 46,
+          "candidateRepositoryNumbers": [
+            47,
+            48,
+            50
+          ],
+          "score": 1,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 47,
+          "candidateRepositoryNumbers": [
+            47,
+            48,
+            50
+          ],
+          "score": 1,
+          "reason": "tie_in_best_score_not_bound"
+        },
+        {
+          "sourceNumber": 49,
+          "candidateRepositoryNumbers": [
+            47,
+            48,
+            50
+          ],
+          "score": 1,
+          "reason": "tie_in_best_score_not_bound"
+        }
+      ]
+    }
+  ]
+}
