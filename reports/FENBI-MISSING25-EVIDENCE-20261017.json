@@ -1,0 +1,1206 @@
+{
+  "report": "FENBI-MISSING25-EVIDENCE-20261017",
+  "date": "2026-10-17",
+  "subject": "Evidence audit of the 25 missing 行测 original questions named in reports/FULL-REPAIR-20261015.md",
+  "scope": {
+    "reported_missing_original_questions": 25,
+    "library_wide_missing_aptitude_items": 106,
+    "statement": "This audit covers only the 25 items the report names: 广东2020县级 69-75; 江苏2024A 76/96/110/111; 江苏2025C 27/29/35/36/37/42/75/77/78/80/81/85; 浙江2020A 49/50. The 106 figure is a larger, different set and is not audited here."
+  },
+  "baseline": {
+    "report_baseline_sha": "f9c7c37b1b1d8afd87ef724424a97fe2c4fad4ab",
+    "audited_head_sha": "e1feb5187ec3544cde62a1a128a6269a8d63011b",
+    "note": "The report's '25' describes its own baseline. Between that baseline and the audited head, the 江苏2025C items were restored, so the number no longer describes the current tree for that paper."
+  },
+  "headline": [
+    "广东2020县级卷 and the other declared gaps: 13 items are still absent at the audited head and are confirmed missing in every reachable source of record.",
+    "12 items (江苏2025C) were restored between the report baseline and the audited head.",
+    "All of the report's pinned reference documents were fetched and their sha256 values still match the recorded ones, so its 固定源证据 is intact.",
+    "The restored items' independent basis (a third-party scan) is currently unreachable and is not archived in this repository; that is a statement about verifiability from here, not a finding that the restoration is wrong.",
+    "No repair draft was produced: no item has verbatim stem+options+figure evidence reachable from this environment."
+  ],
+  "gap_audit": {
+    "papers": [
+      {
+        "path": "省考/广东/2020/行测-县级卷.md",
+        "label": "广东2020县级卷",
+        "exists": true,
+        "declared_missing": [
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "declared_missing_count": 7,
+        "frontmatter": {
+          "卷型": "县级卷",
+          "真题性质": "网友回忆版",
+          "对照题本题量": "100",
+          "实有题数": "93",
+          "缺失原题号": "[69, 70, 71, 72, 73, 74, 75]",
+          "整卷核验状态": "仍缺题，见缺失原题号"
+        },
+        "frontmatter_missing_numbers": [
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "frontmatter_matches_report": true,
+        "heading_count": 93,
+        "max_heading": 100,
+        "still_absent_numbers": [
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "restored_numbers": [],
+        "status": "DECLARED_GAP_STILL_PRESENT"
+      },
+      {
+        "path": "省考/江苏/2024/行测-A类.md",
+        "label": "江苏2024A类",
+        "exists": true,
+        "declared_missing": [
+          76,
+          96,
+          110,
+          111
+        ],
+        "declared_missing_count": 4,
+        "frontmatter": {
+          "卷型": "A类",
+          "真题性质": "正式真题",
+          "对照题本题量": "135",
+          "实有题数": "131",
+          "缺失原题号": "[76, 96, 110, 111]",
+          "整卷核验状态": "仍缺题，保留来源缺号"
+        },
+        "frontmatter_missing_numbers": [
+          76,
+          96,
+          110,
+          111
+        ],
+        "frontmatter_matches_report": true,
+        "heading_count": 131,
+        "max_heading": 135,
+        "still_absent_numbers": [
+          76,
+          96,
+          110,
+          111
+        ],
+        "restored_numbers": [],
+        "status": "DECLARED_GAP_STILL_PRESENT"
+      },
+      {
+        "path": "省考/江苏/2025/行测-C类.md",
+        "label": "江苏2025C类",
+        "exists": true,
+        "declared_missing": [
+          27,
+          29,
+          35,
+          36,
+          37,
+          42,
+          75,
+          77,
+          78,
+          80,
+          81,
+          85
+        ],
+        "declared_missing_count": 12,
+        "frontmatter": {
+          "卷型": "C类",
+          "真题性质": "公开回忆整理参考",
+          "对照题本题量": "130",
+          "实有题数": "130",
+          "缺失原题号": "[]",
+          "整卷核验状态": "2026-10-16 原登记12处缺号已按同题公开题本补录，130题均有参考作答；非官方逐字或全卷正确性认证"
+        },
+        "frontmatter_missing_numbers": [],
+        "frontmatter_matches_report": false,
+        "heading_count": 130,
+        "max_heading": 130,
+        "still_absent_numbers": [],
+        "restored_numbers": [
+          27,
+          29,
+          35,
+          36,
+          37,
+          42,
+          75,
+          77,
+          78,
+          80,
+          81,
+          85
+        ],
+        "status": "GAP_CHANGED_SINCE_REPORT"
+      },
+      {
+        "path": "省考/浙江/2020/行测-A类.md",
+        "label": "浙江2020A类",
+        "exists": true,
+        "declared_missing": [
+          49,
+          50
+        ],
+        "declared_missing_count": 2,
+        "frontmatter": {
+          "卷型": "A类",
+          "真题性质": "正式真题",
+          "对照题本题量": "100",
+          "实有题数": "98",
+          "缺失原题号": "[49, 50]",
+          "整卷核验状态": "仍缺题，保留来源缺号"
+        },
+        "frontmatter_missing_numbers": [
+          49,
+          50
+        ],
+        "frontmatter_matches_report": true,
+        "heading_count": 98,
+        "max_heading": 100,
+        "still_absent_numbers": [
+          49,
+          50
+        ],
+        "restored_numbers": [],
+        "status": "DECLARED_GAP_STILL_PRESENT"
+      }
+    ],
+    "summary": {
+      "declared": 25,
+      "still_absent": 13,
+      "restored": 12
+    }
+  },
+  "backfill_provenance": {
+    "audit": "missing25-donor-compare",
+    "recipient": "省考/江苏/2025/行测-C类.md",
+    "donor": "省考/江苏/2025/行测-A类.md",
+    "provenance_record": "reports/FREE-TOOLS-JS2025C-20261016.json",
+    "note": "Question text is intentionally not included; digests and scores are sufficient to re-check provenance.",
+    "items": [
+      {
+        "number": 27,
+        "declared_donor_number": 25,
+        "declared_donor_qid": "13319274",
+        "donor_number_differs_from_recipient": true,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 1,
+        "source_pages": [
+          10
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "1dae3af3c235e7d34bdc3f3c5ea512eea21c6f7c544cdf5b1fde1c155a070cb3",
+        "donor_block_sha256": "a46b66dc78183c25aa5d64f573c34b0def78d3ae661abf8b7deebc02eec6c780"
+      },
+      {
+        "number": 29,
+        "declared_donor_number": 26,
+        "declared_donor_qid": "13319271",
+        "donor_number_differs_from_recipient": true,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 1,
+        "source_pages": [
+          11
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "134e0af59480b5cb4b01c58b7e294f632fcb40b8c2fe9f589b9f4ded3e66a6f6",
+        "donor_block_sha256": "a0738314ac43f9c15adcbc18f07d5908575761a21ad5480e98d9cfeaf4ee5d60"
+      },
+      {
+        "number": 35,
+        "declared_donor_number": 35,
+        "declared_donor_qid": "13319284",
+        "donor_number_differs_from_recipient": false,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 2,
+        "source_pages": [
+          12,
+          13
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "3076eb7b395a49a50679ff44e77f2691ace3a6a2b256ab10fa16ad6a02f46f8f",
+        "donor_block_sha256": "3076eb7b395a49a50679ff44e77f2691ace3a6a2b256ab10fa16ad6a02f46f8f"
+      },
+      {
+        "number": 36,
+        "declared_donor_number": 36,
+        "declared_donor_qid": "13319291",
+        "donor_number_differs_from_recipient": false,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 1,
+        "source_pages": [
+          13
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "ae5692de3c513481d977ba85bc6f78e148c20badcdbf6e45504f87f4470bd4b4",
+        "donor_block_sha256": "ae5692de3c513481d977ba85bc6f78e148c20badcdbf6e45504f87f4470bd4b4"
+      },
+      {
+        "number": 37,
+        "declared_donor_number": 38,
+        "declared_donor_qid": "13319288",
+        "donor_number_differs_from_recipient": true,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 1,
+        "source_pages": [
+          13
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "d8b31d694baa53a2e4a2e2a081cea6d096dc6e2184f49ff63d766ca242f08d7c",
+        "donor_block_sha256": "93fa96351157d41b599869f453bc88a2e89ca1012f3d5d652a13a53563a0903d"
+      },
+      {
+        "number": 42,
+        "declared_donor_number": 45,
+        "declared_donor_qid": "13319300",
+        "donor_number_differs_from_recipient": true,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 1,
+        "source_pages": [
+          14
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "1eca53b4a5d4338c4aa2b05e62cdfa0bb2a7aa16a32a8094d7e2130dfb61c58e",
+        "donor_block_sha256": "042c8c8b175c961989983601ec5a4494a52097efa4c9883a9490575b298872c2"
+      },
+      {
+        "number": 75,
+        "declared_donor_number": 75,
+        "declared_donor_qid": "11367763",
+        "donor_number_differs_from_recipient": false,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 0,
+        "source_pages": [
+          21
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "555c9852633d530ae5f3b9dc0ea8cd397a2d92f3885265c439db7edfadc86ed2",
+        "donor_block_sha256": "555c9852633d530ae5f3b9dc0ea8cd397a2d92f3885265c439db7edfadc86ed2"
+      },
+      {
+        "number": 77,
+        "declared_donor_number": 77,
+        "declared_donor_qid": "11367776",
+        "donor_number_differs_from_recipient": false,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 0,
+        "source_pages": [
+          21,
+          22
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "50654ba75d931e09fcaddc8cdcd71568ef098aeed1e20a50e67f0f697945f63e",
+        "donor_block_sha256": "50654ba75d931e09fcaddc8cdcd71568ef098aeed1e20a50e67f0f697945f63e"
+      },
+      {
+        "number": 78,
+        "declared_donor_number": 78,
+        "declared_donor_qid": "11367766",
+        "donor_number_differs_from_recipient": false,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 0,
+        "source_pages": [
+          22
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "e25d0e7bebfa11bad33539546e1c001088f774595995b6cb14491aa37894d821",
+        "donor_block_sha256": "e25d0e7bebfa11bad33539546e1c001088f774595995b6cb14491aa37894d821"
+      },
+      {
+        "number": 80,
+        "declared_donor_number": 80,
+        "declared_donor_qid": "11367771",
+        "donor_number_differs_from_recipient": false,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 0,
+        "source_pages": [
+          22
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "09884f5fda164ba51f8c7cd6e75634d618f7b4b10a5e698025e9a9a575b570b9",
+        "donor_block_sha256": "09884f5fda164ba51f8c7cd6e75634d618f7b4b10a5e698025e9a9a575b570b9"
+      },
+      {
+        "number": 81,
+        "declared_donor_number": 81,
+        "declared_donor_qid": "11367775",
+        "donor_number_differs_from_recipient": false,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 0,
+        "source_pages": [
+          22
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "1047a837b7ece11b21dd7ae833bb070f761ce2d4159570c8e350d0dea525edba",
+        "donor_block_sha256": "1047a837b7ece11b21dd7ae833bb070f761ce2d4159570c8e350d0dea525edba"
+      },
+      {
+        "number": 85,
+        "declared_donor_number": 85,
+        "declared_donor_qid": "11367791",
+        "donor_number_differs_from_recipient": false,
+        "recipient_block_present": true,
+        "donor_block_present": true,
+        "saved_scan_clip_metadata_count": 0,
+        "source_pages": [
+          23
+        ],
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "recipient_block_sha256": "79428c8cb7bf9fff960f4dd0f6b135f75c7d89b9012b7e9164f341e54b1a3f35",
+        "donor_block_sha256": "79428c8cb7bf9fff960f4dd0f6b135f75c7d89b9012b7e9164f341e54b1a3f35"
+      }
+    ],
+    "summary": {
+      "total": 12,
+      "folded_identical_to_donor": 12,
+      "donor_number_differs_from_recipient": 4,
+      "with_saved_scan_clip_metadata": 6,
+      "without_saved_scan_clip_metadata": 6
+    }
+  },
+  "reference_probes": [
+    {
+      "audit": "missing25-reference-probe",
+      "label": "广东2020 崖门 fixed reference (pdftotext)",
+      "source_file": "gd2020a_yamen.txt",
+      "source_format": "text",
+      "note": "Marker names and counts only; the source's question text is not reproduced.",
+      "items": [
+        {
+          "number": 69,
+          "number_line_occurrences": 0,
+          "placeholder_marker_counts": {},
+          "verdict": "NUMBER_ABSENT_FROM_SOURCE"
+        },
+        {
+          "number": 70,
+          "number_line_occurrences": 0,
+          "placeholder_marker_counts": {},
+          "verdict": "NUMBER_ABSENT_FROM_SOURCE"
+        },
+        {
+          "number": 71,
+          "number_line_occurrences": 0,
+          "placeholder_marker_counts": {},
+          "verdict": "NUMBER_ABSENT_FROM_SOURCE"
+        },
+        {
+          "number": 72,
+          "number_line_occurrences": 0,
+          "placeholder_marker_counts": {},
+          "verdict": "NUMBER_ABSENT_FROM_SOURCE"
+        },
+        {
+          "number": 73,
+          "number_line_occurrences": 0,
+          "placeholder_marker_counts": {},
+          "verdict": "NUMBER_ABSENT_FROM_SOURCE"
+        },
+        {
+          "number": 74,
+          "number_line_occurrences": 0,
+          "placeholder_marker_counts": {},
+          "verdict": "NUMBER_ABSENT_FROM_SOURCE"
+        },
+        {
+          "number": 75,
+          "number_line_occurrences": 0,
+          "placeholder_marker_counts": {},
+          "verdict": "NUMBER_ABSENT_FROM_SOURCE"
+        }
+      ],
+      "summary": {
+        "numbers_checked": 7,
+        "placeholder_at_source": 0,
+        "text_present_at_source": 0,
+        "number_absent_from_source": 7
+      },
+      "source_file_note": "basename only; the copy read is not committed"
+    },
+    {
+      "audit": "missing25-reference-probe",
+      "label": "江苏2024A 上岸通 fixed reference",
+      "source_file": "js2024a_shangantong.html",
+      "source_format": "html",
+      "note": "Marker names and counts only; the source's question text is not reproduced.",
+      "items": [
+        {
+          "number": 76,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1,
+            "bracketed_absent": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 96,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 110,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 111,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        }
+      ],
+      "summary": {
+        "numbers_checked": 4,
+        "placeholder_at_source": 4,
+        "text_present_at_source": 0,
+        "number_absent_from_source": 0
+      },
+      "source_file_note": "basename only; the copy read is not committed"
+    },
+    {
+      "audit": "missing25-reference-probe",
+      "label": "江苏2025C 上岸通 fixed reference",
+      "source_file": "js2025c_shangantong.html",
+      "source_format": "html",
+      "note": "Marker names and counts only; the source's question text is not reproduced.",
+      "items": [
+        {
+          "number": 27,
+          "number_line_occurrences": 3,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 29,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 35,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 36,
+          "number_line_occurrences": 3,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 37,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 42,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 75,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 77,
+          "number_line_occurrences": 3,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 78,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 80,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 81,
+          "number_line_occurrences": 4,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 85,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        }
+      ],
+      "summary": {
+        "numbers_checked": 12,
+        "placeholder_at_source": 12,
+        "text_present_at_source": 0,
+        "number_absent_from_source": 0
+      },
+      "source_file_note": "basename only; the copy read is not committed"
+    },
+    {
+      "audit": "missing25-reference-probe",
+      "label": "浙江2020A 上岸通 fixed reference",
+      "source_file": "zj2020a_shangantong.html",
+      "source_format": "html",
+      "note": "Marker names and counts only; the source's question text is not reproduced.",
+      "items": [
+        {
+          "number": 49,
+          "number_line_occurrences": 2,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 50,
+          "number_line_occurrences": 3,
+          "placeholder_marker_counts": {
+            "collection_pending": 1,
+            "absent_options": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        }
+      ],
+      "summary": {
+        "numbers_checked": 2,
+        "placeholder_at_source": 2,
+        "text_present_at_source": 0,
+        "number_absent_from_source": 0
+      },
+      "source_file_note": "basename only; the copy read is not committed"
+    },
+    {
+      "audit": "missing25-reference-probe",
+      "label": "浙江2020A 崖门 fixed reference (pdftotext)",
+      "source_file": "zj2020a_yamen.txt",
+      "source_format": "text",
+      "note": "Marker names and counts only; the source's question text is not reproduced.",
+      "items": [
+        {
+          "number": 49,
+          "number_line_occurrences": 1,
+          "placeholder_marker_counts": {
+            "recollection_missing": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        },
+        {
+          "number": 50,
+          "number_line_occurrences": 1,
+          "placeholder_marker_counts": {
+            "recollection_missing": 1
+          },
+          "verdict": "PLACEHOLDER_AT_SOURCE"
+        }
+      ],
+      "summary": {
+        "numbers_checked": 2,
+        "placeholder_at_source": 2,
+        "text_present_at_source": 0,
+        "number_absent_from_source": 0
+      },
+      "source_file_note": "basename only; the copy read is not committed"
+    }
+  ],
+  "papers": [
+    {
+      "label": "广东2020县级卷",
+      "path": "省考/广东/2020/行测-县级卷.md",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "evidence": [
+        "Pinned reference (崖门 PDF, sha256 verified) has a text layer with 93 numbered questions and exactly 69-75 absent — the library mirrors its source of record.",
+        "Independent 100-question edition (星光公考) supplies the numbers but fills these slots with a collection notice and four dummy options."
+      ],
+      "not_disproven": null
+    },
+    {
+      "label": "江苏2024A类",
+      "path": "省考/江苏/2024/行测-A类.md",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "evidence": [
+        "Pinned reference (上岸通) shows a collection-pending notice with absent options at all four numbers.",
+        "Independent 展鸿 edition prints its own 'not yet collected' notice at the same four numbers."
+      ],
+      "not_disproven": null
+    },
+    {
+      "label": "江苏2025C类",
+      "path": "省考/江苏/2025/行测-C类.md",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "evidence": [
+        "At the report baseline this paper declared 12 missing numbers and held 118/130; at the audited head it holds 130/130 with 缺失原题号 emptied.",
+        "All 12 restored blocks are identical to the donor paper's blocks after whitespace/punctuation folding, and 4 of them take a DIFFERENT question number from the donor.",
+        "The backfill's own basis is a third-party scan recorded as a URL plus sha256; that host currently fails DNS, the document is not archived in this repository, and none of the 6 recorded scan-clip images can be located by digest in the tree.",
+        "The remaining 6 of the 12 record no scan clip at all.",
+        "Every other reachable edition still placeholds all 12 numbers."
+      ],
+      "not_disproven": "This is NOT evidence that the backfill is wrong. It states only that the mapping from C-class number to A-class donor cannot be re-verified from this environment, because the document that would settle it is currently unreachable and unarchived."
+    },
+    {
+      "label": "浙江2020A类",
+      "path": "省考/浙江/2020/行测-A类.md",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "evidence": [
+        "Pinned reference (上岸通) shows a collection-pending notice at both numbers.",
+        "Pinned secondary PDF (whose own filename flags the two missing questions) prints a recollection placeholder in both slots.",
+        "A third source listed by the report now returns HTTP 404."
+      ],
+      "not_disproven": null
+    }
+  ],
+  "items": [
+    {
+      "id": "广东2020县级卷-69",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "number": 69,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Official paper unpublished; every reachable recollection edition is placeholder-bound at these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "广东2020县级卷-70",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "number": 70,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Official paper unpublished; every reachable recollection edition is placeholder-bound at these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "广东2020县级卷-71",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "number": 71,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Official paper unpublished; every reachable recollection edition is placeholder-bound at these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "广东2020县级卷-72",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "number": 72,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Official paper unpublished; every reachable recollection edition is placeholder-bound at these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "广东2020县级卷-73",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "number": 73,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Official paper unpublished; every reachable recollection edition is placeholder-bound at these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "广东2020县级卷-74",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "number": 74,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Official paper unpublished; every reachable recollection edition is placeholder-bound at these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "广东2020县级卷-75",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "number": 75,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Official paper unpublished; every reachable recollection edition is placeholder-bound at these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "江苏2024A类-76",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "number": 76,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Both the pinned source and the reachable independent edition placehold these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "江苏2024A类-96",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "number": 96,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Both the pinned source and the reachable independent edition placehold these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "江苏2024A类-110",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "number": 110,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Both the pinned source and the reachable independent edition placehold these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "江苏2024A类-111",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "number": 111,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "Both the pinned source and the reachable independent edition placehold these numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "江苏2025C类-27",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 27,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 25,
+        "cross_numbered": true,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "1dae3af3c235e7d34bdc3f3c5ea512eea21c6f7c544cdf5b1fde1c155a070cb3",
+        "donor_block_sha256": "a46b66dc78183c25aa5d64f573c34b0def78d3ae661abf8b7deebc02eec6c780",
+        "scan_clip_metadata_count": 1,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-29",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 29,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 26,
+        "cross_numbered": true,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "134e0af59480b5cb4b01c58b7e294f632fcb40b8c2fe9f589b9f4ded3e66a6f6",
+        "donor_block_sha256": "a0738314ac43f9c15adcbc18f07d5908575761a21ad5480e98d9cfeaf4ee5d60",
+        "scan_clip_metadata_count": 1,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-35",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 35,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 35,
+        "cross_numbered": false,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "3076eb7b395a49a50679ff44e77f2691ace3a6a2b256ab10fa16ad6a02f46f8f",
+        "donor_block_sha256": "3076eb7b395a49a50679ff44e77f2691ace3a6a2b256ab10fa16ad6a02f46f8f",
+        "scan_clip_metadata_count": 2,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-36",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 36,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 36,
+        "cross_numbered": false,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "ae5692de3c513481d977ba85bc6f78e148c20badcdbf6e45504f87f4470bd4b4",
+        "donor_block_sha256": "ae5692de3c513481d977ba85bc6f78e148c20badcdbf6e45504f87f4470bd4b4",
+        "scan_clip_metadata_count": 1,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-37",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 37,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 38,
+        "cross_numbered": true,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "d8b31d694baa53a2e4a2e2a081cea6d096dc6e2184f49ff63d766ca242f08d7c",
+        "donor_block_sha256": "93fa96351157d41b599869f453bc88a2e89ca1012f3d5d652a13a53563a0903d",
+        "scan_clip_metadata_count": 1,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-42",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 42,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 45,
+        "cross_numbered": true,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "1eca53b4a5d4338c4aa2b05e62cdfa0bb2a7aa16a32a8094d7e2130dfb61c58e",
+        "donor_block_sha256": "042c8c8b175c961989983601ec5a4494a52097efa4c9883a9490575b298872c2",
+        "scan_clip_metadata_count": 1,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-75",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 75,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 75,
+        "cross_numbered": false,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "555c9852633d530ae5f3b9dc0ea8cd397a2d92f3885265c439db7edfadc86ed2",
+        "donor_block_sha256": "555c9852633d530ae5f3b9dc0ea8cd397a2d92f3885265c439db7edfadc86ed2",
+        "scan_clip_metadata_count": 0,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-77",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 77,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 77,
+        "cross_numbered": false,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "50654ba75d931e09fcaddc8cdcd71568ef098aeed1e20a50e67f0f697945f63e",
+        "donor_block_sha256": "50654ba75d931e09fcaddc8cdcd71568ef098aeed1e20a50e67f0f697945f63e",
+        "scan_clip_metadata_count": 0,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-78",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 78,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 78,
+        "cross_numbered": false,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "e25d0e7bebfa11bad33539546e1c001088f774595995b6cb14491aa37894d821",
+        "donor_block_sha256": "e25d0e7bebfa11bad33539546e1c001088f774595995b6cb14491aa37894d821",
+        "scan_clip_metadata_count": 0,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-80",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 80,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 80,
+        "cross_numbered": false,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "09884f5fda164ba51f8c7cd6e75634d618f7b4b10a5e698025e9a9a575b570b9",
+        "donor_block_sha256": "09884f5fda164ba51f8c7cd6e75634d618f7b4b10a5e698025e9a9a575b570b9",
+        "scan_clip_metadata_count": 0,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-81",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 81,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 81,
+        "cross_numbered": false,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "1047a837b7ece11b21dd7ae833bb070f761ce2d4159570c8e350d0dea525edba",
+        "donor_block_sha256": "1047a837b7ece11b21dd7ae833bb070f761ce2d4159570c8e350d0dea525edba",
+        "scan_clip_metadata_count": 0,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "江苏2025C类-85",
+      "paper": "省考/江苏/2025/行测-C类.md",
+      "label": "江苏2025C类",
+      "number": 85,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "RESTORED",
+      "verdict": "BACKFILLED_IN_PR20_INDEPENDENT_SOURCE_NOT_REACHABLE",
+      "confidence": "medium-low",
+      "remaining_reason": "Paper-identity of the restored blocks is unverifiable here; the cross-numbered four depend on it most.",
+      "repair_draft_produced": false,
+      "restoration": {
+        "donor_paper": "省考/江苏/2025/行测-A类.md",
+        "donor_number": 85,
+        "cross_numbered": false,
+        "folded_identical_to_donor": true,
+        "folded_similarity": 1.0,
+        "restored_block_sha256": "79428c8cb7bf9fff960f4dd0f6b135f75c7d89b9012b7e9164f341e54b1a3f35",
+        "donor_block_sha256": "79428c8cb7bf9fff960f4dd0f6b135f75c7d89b9012b7e9164f341e54b1a3f35",
+        "scan_clip_metadata_count": 0,
+        "scan_clip_image_archived_in_repo": false
+      }
+    },
+    {
+      "id": "浙江2020A类-49",
+      "paper": "省考/浙江/2020/行测-A类.md",
+      "label": "浙江2020A类",
+      "number": 49,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "No reachable edition carries a stem for these two numbers.",
+      "repair_draft_produced": false
+    },
+    {
+      "id": "浙江2020A类-50",
+      "paper": "省考/浙江/2020/行测-A类.md",
+      "label": "浙江2020A类",
+      "number": 50,
+      "state_at_report_baseline": "ABSENT_FROM_LIBRARY",
+      "state_at_audited_head": "STILL_ABSENT",
+      "verdict": "GENUINE_GAP",
+      "confidence": "high",
+      "remaining_reason": "No reachable edition carries a stem for these two numbers.",
+      "repair_draft_produced": false
+    }
+  ],
+  "summary": {
+    "total": 25,
+    "still_absent": 13,
+    "restored": 12,
+    "cross_numbered_restorations": 4,
+    "restorations_without_scan_clip_metadata": 6,
+    "verbatim_recovery_candidates_found": 0,
+    "repair_drafts_produced": 0
+  },
+  "boundary": [
+    "No login, captcha or paywall was bypassed; no interface was guessed and no question identifier was enumerated.",
+    "Only URLs already recorded in this repository's own reports were requested.",
+    "No third-party document, screenshot, cookie, phone number or token-bearing URL is included in this report; sources are cited by URL and digest only.",
+    "No AI-generated or inferred question text was written anywhere, and no file under 国考/, 省考/, 图片/ or catalog/ was modified.",
+    "A host that fails DNS today is reported as a DNS failure, not as a permanent domain failure."
+  ]
+}
