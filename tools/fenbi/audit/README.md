@@ -164,6 +164,28 @@ below that (广东 县级/乡镇 **0%**, 江苏2024 A/B **35%**, 浙江2020 A/B 
 the tool never marks a substitution as usable: each gap number is a *lead* with a
 measured base rate, never a recovery.
 
+## Four-granularity gap table
+
+```bash
+python3 tools/fenbi/audit/partitioned_gap_table.py --repo . \
+    --out reports/PARTITIONED-GAP-TABLE-20261018.json
+```
+
+The project carries four different "gap" numbers that count different things.
+This tool recomputes each from its own source and states that they must never be
+summed:
+
+| id | unit | count | source |
+| -- | ---- | ----: | ------ |
+| A | paper_slot (area x year x subject x 卷型) | 46 | `MISSING48-RECOVERY-20261016.json` |
+| B | cell (area x year x subject, no 卷型) | 47 | `资料缺失/INDEX.jsonl` |
+| C | question number | 106 | `catalog/manifest.jsonl` |
+| D | question position (source stubs) | 24 | owner capture reports, cited per row |
+
+A and B are disjoint units; C and D overlap by construction. It also re-derives
+the PR #74 correction — **46 = 19 申论 + 27 行测**, not 21 + 25 — because two of
+the 48 targets were recovered and both were 申论.
+
 ## Tests
 
 ```bash
