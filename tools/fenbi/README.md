@@ -312,3 +312,36 @@ node src/cli.mjs capture --all --concurrency 3
 - 本次仅提交代码、测试和说明，**未在 A6000 执行真实抓取、没有修改本地配置、没有初始化新练习**。浏览器测试、系统资源压测、现有 A6000 旧配置迁移仍待现场验收。
 
 原始题干、图片、粉笔解析、登录凭据继续只保留于许可范围内的 A6000 工作目录；Private GitHub 也不是商业题库内容的复制/再分发许可。
+
+## Batch Ingest（新增：不走逐题 QA 队列）
+
+现有 A6000 的 `work/fenbi/papers/<卷>/document.json` 不一定有标准 `checkpoint.json`，原来的 `export --job` 还要求 `validateDocument().status=complete`，因此含来源答案 unknown 的试卷不应直接调用旧 export。改用下列命令一次处理整个已缓存目录：
+
+```bash
+node src/batch-ingest.mjs --source-root /path/to/owner/work/fenbi/papers --repo-root /path/to/repo
+node src/batch-ingest.mjs --source-root /path/to/owner/work/fenbi/papers --repo-root /path/to/repo --write
+```
+
+默认 dry-run；`--write` 只创建 `work/fenbi/batch-ingest/<卷>/paper.md`、`assets-fenbi-<sourceId>/`、`receipt.json` 和 `legacy-original.md`（仅已有旧卷），不写正式 `国考/`、`省考/` 或 Git 索引。重复执行若文件哈希不同会拒绝覆盖。试卷图片逐件核 SHA。
+
+- 粉笔有题面就以来源题面生成；旧版答案仅在**题面与全部选项唯一匹配**时重挂，不按新旧题号硬搬。
+- 粉笔征集占位只有在其他多数题证实编号保持稳定且原库该号有真题时回退；旧图链接若尚未安全重绑定则记 C，不能假装完整。
+- 粉笔没有显示答案/解析时记录 `unknown`；不能把缺答案称为答案正确或整卷官方认证。
+- A/C 只代表本地候选结构分类，旧版保留在独立文件及 Git 历史；C 不进入集成，下一卷继续。
+
+带许可的整合在**非 main 的隔离工作树**中预检、按需落地：
+
+```bash
+node src/batch-promote.mjs --candidate-dir /path/to/repo/work/fenbi/batch-ingest/<卷> --repo-root /path/to/integration-worktree --rights-file /path/to/rights.json
+# 只有确认权限和来源后再加 --apply；替换旧版还需 --allow-replace
+```
+
+该命令检查候选 SHA、题位、图片引用与文件字节、旧正文前像、真实来源许可，再定点更新目标 Markdown/图片和 `catalog/manifest.jsonl`。不自动创建 PR、不自动合并 `main`、不访问粉笔网页。私有仓库不自动给予第三方内容复制/云端储存权。授权凭据只留本地，不随 Git 提交。
+
+离线验证：
+
+```bash
+node --test test/batch-ingest.test.mjs test/batch-ingest-io.test.mjs test/batch-promote.test.mjs
+node --test test/*.test.mjs
+node --test pipeline/test/*.test.mjs
+```
