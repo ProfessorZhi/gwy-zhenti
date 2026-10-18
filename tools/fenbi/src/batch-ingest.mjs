@@ -101,7 +101,7 @@ export function renderIngest(assembly, oldMarkdown='', imagePrefix='assets') {
     if(!block) throw Error('legacy-block-not-extractable:'+q.number);
     // Legacy image links must be rebased in a separate, verified step; never claim those images passed.
     if(/!\[[^\]]*\]\(|<img\b/iu.test(block)) assembly.issues.push('legacy-image-references-need-rebase:'+q.number);
-    const headingRe=new RegExp('^### 第 '+q.number+' 题\\s*\\n\\s*LEGACYFALLBACK'+q.number+'\\s*
+    const headingRe=new RegExp('^### 第 '+q.number+' 题\\s*\\n\\s*LEGACYFALLBACK'+q.number+'\\s*$','mu');
     if(!headingRe.test(md))throw Error('legacy-fallback-heading-not-found:'+q.number);
     md=md.replace(headingRe,block+'\n\n> 本题来源：原库（粉笔暂未征集）');
   }
