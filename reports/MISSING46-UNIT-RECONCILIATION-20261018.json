@@ -1,0 +1,583 @@
+{
+ "generated": "2026-10-18",
+ "baseline_pr": 20,
+ "baseline_head": "e1feb5187ec3544cde62a1a128a6269a8d63011b",
+ "unit_a_missing_papers": {
+  "unit": "paper_slot（地区×年份×科目×卷型）",
+  "targets_total": 48,
+  "recovered_this_round": 2,
+  "recovered_list": [
+   {
+    "area": "江苏",
+    "year": 2026,
+    "subject": "申论",
+    "variant": "A"
+   },
+   {
+    "area": "江苏",
+    "year": 2026,
+    "subject": "申论",
+    "variant": "C"
+   }
+  ],
+  "remaining": 46,
+  "declared_remaining": 46,
+  "remaining_by_subject": {
+   "行测": 27,
+   "申论": 19
+  },
+  "remaining_by_area": {
+   "浙江": 15,
+   "江苏": 4,
+   "上海": 16,
+   "北京": 3,
+   "天津": 6,
+   "福建": 1,
+   "深圳": 1
+  },
+  "all48_by_subject": {
+   "行测": 27,
+   "申论": 21
+  },
+  "lane_37": {
+   "count": 37,
+   "by_subject": {
+    "行测": 21,
+    "申论": 16
+   }
+  },
+  "other_9": {
+   "count": 9,
+   "by_subject": {
+    "行测": 6,
+    "申论": 3
+   }
+  }
+ },
+ "unit_b_material_cells": {
+  "unit": "cell（地区×年份×科目；无卷型维度）",
+  "total": 47,
+  "by_state": {
+   "资料缺失": 29,
+   "待核实": 18
+  },
+  "by_area": {
+   "云南": 1,
+   "内蒙古": 3,
+   "吉林": 4,
+   "宁夏": 4,
+   "山东": 2,
+   "广西": 1,
+   "新疆": 3,
+   "河北": 1,
+   "河南": 1,
+   "海南": 1,
+   "湖北": 1,
+   "甘肃": 2,
+   "西藏": 19,
+   "陕西": 1,
+   "青海": 2,
+   "黑龙江": 1
+  },
+  "cells": [
+   {
+    "area": "云南",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "内蒙古",
+    "year": 2024,
+    "subject": "行测",
+    "state": "资料缺失",
+    "evidence": "2024 年另一科目（申论）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "内蒙古",
+    "year": 2025,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2025 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "内蒙古",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "吉林",
+    "year": 2024,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2024 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "吉林",
+    "year": 2025,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2025 年前后相邻年份（2024、2026）库内均有正文 ⇒ 该地区省考为年度常设考试，本格资料缺失"
+   },
+   {
+    "area": "吉林",
+    "year": 2025,
+    "subject": "行测",
+    "state": "资料缺失",
+    "evidence": "2025 年前后相邻年份（2024、2026）库内均有正文 ⇒ 该地区省考为年度常设考试，本格资料缺失"
+   },
+   {
+    "area": "吉林",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "宁夏",
+    "year": 2022,
+    "subject": "行测",
+    "state": "资料缺失",
+    "evidence": "2022 年另一科目（申论）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "宁夏",
+    "year": 2025,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2025 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "宁夏",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "该地区 2024、2025 两年库内均有正文 ⇒ 2026 年省考按年度例行举行，本格资料缺失"
+   },
+   {
+    "area": "宁夏",
+    "year": 2026,
+    "subject": "行测",
+    "state": "资料缺失",
+    "evidence": "该地区 2024、2025 两年库内均有正文 ⇒ 2026 年省考按年度例行举行，本格资料缺失"
+   },
+   {
+    "area": "山东",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "该地区 2024、2025 两年库内均有正文 ⇒ 2026 年省考按年度例行举行，本格资料缺失"
+   },
+   {
+    "area": "山东",
+    "year": 2026,
+    "subject": "行测",
+    "state": "资料缺失",
+    "evidence": "该地区 2024、2025 两年库内均有正文 ⇒ 2026 年省考按年度例行举行，本格资料缺失"
+   },
+   {
+    "area": "广西",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "新疆",
+    "year": 2022,
+    "subject": "行测",
+    "state": "资料缺失",
+    "evidence": "2022 年另一科目（申论）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "新疆",
+    "year": 2023,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2023 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "新疆",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "河北",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "河南",
+    "year": 2018,
+    "subject": "行测",
+    "state": "资料缺失",
+    "evidence": "2018 年另一科目（申论）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "海南",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "湖北",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "甘肃",
+    "year": 2025,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2025 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "甘肃",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "西藏",
+    "year": 2016,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2016 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "西藏",
+    "year": 2017,
+    "subject": "申论",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2017,
+    "subject": "行测",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2018,
+    "subject": "申论",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2018,
+    "subject": "行测",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2020,
+    "subject": "申论",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2020,
+    "subject": "行测",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2021,
+    "subject": "申论",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2021,
+    "subject": "行测",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2022,
+    "subject": "申论",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2022,
+    "subject": "行测",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2023,
+    "subject": "申论",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2023,
+    "subject": "行测",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2024,
+    "subject": "申论",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2024,
+    "subject": "行测",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2025,
+    "subject": "申论",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2025,
+    "subject": "行测",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2026,
+    "subject": "申论",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "西藏",
+    "year": 2026,
+    "subject": "行测",
+    "state": "待核实",
+    "evidence": "本库与既有上游来源索引均未出现该卷，且该地区其余年份不成连续序列，无法确证该年考试是否举行 ⇒ 待核实"
+   },
+   {
+    "area": "陕西",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "青海",
+    "year": 2024,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2024 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "青海",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   },
+   {
+    "area": "黑龙江",
+    "year": 2026,
+    "subject": "申论",
+    "state": "资料缺失",
+    "evidence": "2026 年另一科目（行测）库内已有正文 ⇒ 该年该地区考试确已举行，本格资料缺失"
+   }
+  ]
+ },
+ "dedupe": {
+  "overlap_cells": [],
+  "overlap_count": 0,
+  "distinct_rows_across_units": 93,
+  "note": "两单位粒度不同且本轮实测零重叠；其和 93 只能称『两条独立账的合计行数』，不得称为『93 份缺卷』"
+ },
+ "non_additivity_rules": [
+  "整卷缺口（unit A）与资料缺档格（unit B）是不同粒度，禁止相加成单一缺口数",
+  "『缺原题 106 道』是题级计数，禁止与 46 整卷相加或互替",
+  "残卷（partial_existing）既不算已恢复，也不并入完全缺失",
+  "待核实 18 格不得并入资料缺失 29 格"
+ ],
+ "pr74_reconciliation": {
+  "pr74_claim": "46 = 21 申论整卷 + 25 行测缺原题（自述『单位不同』仍相加）",
+  "registry_recomputed": "46 = 19 申论 + 27 行测（皆为 paper_slot）",
+  "explanation": "登记的 2 个已恢复目标（江苏2026 申论A、申论C）都是申论；21 是 48 个目标的申论总数，减 2 后应为 19。PR#74 把 21 留在申论、却从行测 27 里减了 2，且把行测项写成『缺原题』这一题级单位。",
+  "correction": {
+   "essay": 19,
+   "aptitude": 27
+  }
+ },
+ "classification_counts_9": {
+  "confirmed_missing": 4,
+  "partial_existing": 3,
+  "plausible_unconfirmed": 2
+ },
+ "slots_9": [
+  {
+   "area": "北京",
+   "year": 2024,
+   "subject": "行测",
+   "variant": "统一卷",
+   "registry_status": "complete_free_reference_version_not_acquired",
+   "classification": "confirmed_missing",
+   "evidence": {
+    "tier": "official_announcement",
+    "finding": "北京 2024 年度京考公共科目笔试 2023-12-03 举行（上午行测/下午申论）；公告未使用『统一卷』一词",
+    "urls": [
+     "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202311/t20231110_3299396.html",
+     "https://www.bjdj.gov.cn/article/3000193824.html"
+    ]
+   },
+   "note": "京考 2024 确已举行；『统一卷』是本库内部标签，不是官方卷型名"
+  },
+  {
+   "area": "北京",
+   "year": 2026,
+   "subject": "申论",
+   "variant": "统一卷",
+   "registry_status": "source_has_only_material1_and_four_tasks_materials2_to10_missing",
+   "classification": "partial_existing",
+   "evidence": {
+    "tier": "registry",
+    "finding": "登记状态 source_has_only_material1_and_four_tasks_materials2_to10_missing",
+    "urls": []
+   },
+   "note": "仅有材料1与四道题，材料2–10 缺失"
+  },
+  {
+   "area": "北京",
+   "year": 2026,
+   "subject": "行测",
+   "variant": "统一卷",
+   "registry_status": "partial_source_recovered_not_a_complete_paper",
+   "classification": "partial_existing",
+   "evidence": {
+    "tier": "registry",
+    "finding": "登记状态 partial_source_recovered_not_a_complete_paper",
+    "urls": []
+   },
+   "note": "库内文件存在但登记为残卷"
+  },
+  {
+   "area": "江苏",
+   "year": 2023,
+   "subject": "行测",
+   "variant": "C",
+   "registry_status": "complete_free_reference_version_not_acquired",
+   "classification": "confirmed_missing",
+   "evidence": {
+    "tier": "official_outline",
+    "finding": "江苏 2023 分级分类 A/B/C 三类；C 类适用乡镇(街道)机关, 行测 130 题",
+    "urls": [
+     "http://jshrss.jiangsu.gov.cn/art/2022/11/4/art_87130_10651727.html",
+     "https://www.huatu.com/2022/1103/2585043.html"
+    ]
+   },
+   "note": "库内江苏2023仅有行测A/B，C类缺"
+  },
+  {
+   "area": "江苏",
+   "year": 2026,
+   "subject": "行测",
+   "variant": "A",
+   "registry_status": "partial_source_recovered_not_a_complete_paper",
+   "classification": "partial_existing",
+   "evidence": {
+    "tier": "registry",
+    "finding": "登记状态 partial_source_recovered_not_a_complete_paper",
+    "urls": []
+   },
+   "note": "库内文件存在但登记为残卷，非完整卷"
+  },
+  {
+   "area": "江苏",
+   "year": 2026,
+   "subject": "行测",
+   "variant": "B",
+   "registry_status": "complete_free_reference_version_not_acquired",
+   "classification": "plausible_unconfirmed",
+   "evidence": {
+    "tier": "inference",
+    "finding": "江苏实行 A/B/C 分级分类（2023 大纲证实）；2026 专项证据本轮未取得",
+    "urls": []
+   },
+   "note": "存在性由同类分类体系推断，未取得 2026 直接卷证"
+  },
+  {
+   "area": "江苏",
+   "year": 2026,
+   "subject": "行测",
+   "variant": "C",
+   "registry_status": "complete_free_reference_version_not_acquired",
+   "classification": "plausible_unconfirmed",
+   "evidence": {
+    "tier": "inference",
+    "finding": "同上",
+    "urls": []
+   },
+   "note": "存在性由同类分类体系推断，未取得 2026 直接卷证"
+  },
+  {
+   "area": "深圳",
+   "year": 2024,
+   "subject": "申论",
+   "variant": "Ⅰ",
+   "registry_status": "complete_free_reference_version_not_acquired",
+   "classification": "confirmed_missing",
+   "evidence": {
+    "tier": "official_syllabus",
+    "finding": "深圳 2024 申论按职位设 Ⅰ类/Ⅱ类 两套（民间称一卷/二卷），150 分钟 100 分",
+    "urls": [
+     "http://www.offcn.com/gdgwy/2023/1206/32682.html",
+     "http://ww.chinagwyw.org/guangdong/656924.html"
+    ]
+   },
+   "note": "深圳申论 Ⅰ/Ⅱ 两类；库内仅二卷"
+  },
+  {
+   "area": "福建",
+   "year": 2026,
+   "subject": "申论",
+   "variant": "省市综合管理",
+   "registry_status": "complete_free_reference_version_not_acquired",
+   "classification": "confirmed_missing",
+   "evidence": {
+    "tier": "official_guide",
+    "finding": "福建 2026 申论为双卷：A类(省市综合管理卷) 与 A类(通用卷)；往年县乡/执法并入通用卷",
+    "urls": [
+     "https://jyw.fjpsc.edu.cn/index.php/home/article/35775",
+     "https://m.qz.bendibao.com/job/37206.shtm"
+    ],
+    "disagreement": "另有易考吧解读仍称三卷（省市/县乡/执法），与官方报考指南的双卷表述冲突；以官方指南为准"
+   },
+   "note": "2026 福建申论双卷；库内仅通用卷"
+  }
+ ],
+ "new_complete_licensed_papers_this_round": 0,
+ "new_external_source_receipts_this_round": 0
+}
