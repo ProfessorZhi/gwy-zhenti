@@ -9,10 +9,16 @@ export function buildCaptureBatchMetrics(run, { startedAtMs, endedAtMs, planned,
       !Number.isInteger(planned) || planned < 0 || !Number.isFinite(spacingMs)) {
     throw new Error('Invalid capture batch metrics input');
   }
-  const counts = { newlyComplete: 0, cachedComplete: 0, partial: 0, failed: 0, skipped: 0 };
+  const counts = { newlyComplete: 0, newlyReadable: 0, questionSlotsObserved: 0,
+    cachedComplete: 0, partial: 0, failed: 0, skipped: 0 };
   for (const record of run.results) {
     if (!record) { counts.skipped++; continue; }
     if (!record.ok) { counts.failed++; continue; }
+    if (record.value?.status !== 'cached_complete' &&
+        Number.isInteger(record.value?.observedQuestions) && record.value.observedQuestions > 0) {
+      counts.newlyReadable++;
+      counts.questionSlotsObserved += record.value.observedQuestions;
+    }
     switch (record.value?.status) {
       case 'complete': counts.newlyComplete++; break;
       case 'cached_complete': counts.cachedComplete++; break;
@@ -22,6 +28,7 @@ export function buildCaptureBatchMetrics(run, { startedAtMs, endedAtMs, planned,
   if (run.results.length !== planned) throw new Error('Capture batch size differs from scheduled jobs');
   const durationMs = Math.round(endedAtMs - startedAtMs);
   const hourlyRate = durationMs > 0 ? Math.round(counts.newlyComplete * 36000000 / durationMs) / 10 : null;
+  const readableRate = durationMs > 0 ? Math.round(counts.newlyReadable * 36000000 / durationMs) / 10 : null;
   return {
     schemaVersion: 1,
     kind: 'gwy-fenbi-capture-batch-metrics',
@@ -33,6 +40,7 @@ export function buildCaptureBatchMetrics(run, { startedAtMs, endedAtMs, planned,
     minimumNavigationSpacingMs: spacingMs,
     counts,
     newlyCompletePerHour: hourlyRate,
+    newlyReadablePerHour: readableRate,
     stopped: Boolean(run.stopped),
     stopReason: run.reason ?? null,
     note: 'Complete means source structural capture only; it does not certify answers or redistribution rights.',
