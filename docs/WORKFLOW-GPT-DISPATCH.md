@@ -123,6 +123,47 @@ T6｜S5｜非粉笔补缺（阶段 3 起）
 | +6 小时 | 阶段 4 完成：其他地区抓完 |
 | 第二天 | 阶段 5 收尾；用户合 `main` |
 
-## 九、待用户确认
+## 九、不被权限和定时任务打断的运行方式
+
+以前反复中断，原因有三个：
+① Fleet 的 `allow_send_to` 没有列出会话，任务派不下去；
+② Claude Code 每遇到一个没放行的命令就停下来等人批准；
+③ 长任务放在 GPT 的定时任务里跑，定时任务有时长限制，到点就被切断。
+
+对应的解决办法：
+
+| 问题 | 解决 | 由谁做 |
+|---|---|---|
+| ① Fleet 派不下去 | 在 Dell 的 `~/.config/serveros-fleet-mcp/fleet-node.local.yaml` 里，把 S1–S5 五个会话的 ID **一次性**写进 `allow_send_to`，之后不再改 | 用户在 Dell 本地改一次 |
+| ② 命令要人批准 | 仓库自带 `.claude/settings.json`：放行流水线要用的命令（node 采集/转换/发布、测试、git 提交、推送 `fenbi/*` 分支）；禁止推 main、强推、`rm -rf`、读写登录 Profile。会话在仓库目录里启动即生效，不需要 `--dangerously-skip-permissions` | 已在仓库里 |
+| ③ 长任务被切断 | **抓取→转换→发布的循环不放在 GPT 里跑**，而是在 Dell 上作为常驻服务运行 `tools/fenbi/run-pipeline.sh`；GPT 的定时任务只做 5 分钟以内的巡检和派单 | S1 在 T2 完成后安装服务 |
+
+常驻服务（S1 安装，Dell 本机，用户级 systemd）：
+
+```ini
+# ~/.config/systemd/user/fenbi-pipeline.service
+[Unit]
+Description=Fenbi capture-ingest-promote loop
+[Service]
+WorkingDirectory=/home/fjd/workspaces/gwy-zhenti-fenbi/repo
+Environment=CONCURRENCY=3 INTERVAL=60
+ExecStart=/usr/bin/bash tools/fenbi/run-pipeline.sh
+Restart=on-failure
+RestartSec=120
+[Install]
+WantedBy=default.target
+```
+
+```bash
+systemctl --user daemon-reload
+systemctl --user enable --now fenbi-pipeline
+loginctl enable-linger fjd           # 退出登录后继续运行
+touch work/fenbi/STOP                # 需要停时：写这个文件；删除后重新 start
+```
+
+- 抓取遇到验证码、登录失效或限流时，以非 0/2 的退出码结束，脚本会写 `work/fenbi/STOP` 并停下，**不会自动重试**，等用户处理。
+- GPT 每次巡检都是**独立的一次**：读看板 → 按第五节行动 → 结束。进度只存在看板和台账里，不依赖 GPT 记住上一次做了什么，所以中途断了也不会丢进度。
+
+## 十、待用户确认
 
 - **发布**：抓取计划第一节第 5 条目前写着"上传 GitHub 必须另有许可"。按这一条，T4 不能提交粉笔内容。用户之前的决定是"仓库私有，粉笔内容和解析一起收录"；需要用户再确认一次后修改第 5 条，T4 才能执行。
