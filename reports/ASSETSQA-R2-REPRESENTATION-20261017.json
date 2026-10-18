@@ -1,0 +1,2738 @@
+{
+ "schemaVersion": 1,
+ "kind": "no-content-visual-representation-ledger",
+ "contentPolicy": "numbers, basenames, sha256, dimensions, counts only; no question text, no option text, no image bytes, no source URLs",
+ "epistemicRules": [
+  "text-vs-image is a REPRESENTATION difference; it is not proof that the rendered value equals the source text",
+  "formula/figure raster content is opaque offline (no OCR on this host) -> human review",
+  "sha256 equal => identical bytes; sha256 differ => visual difference UNKNOWN"
+ ],
+ "diffClassification": {
+  "JS2025C": {
+   "paper": "JS2025C",
+   "unmatchedNumbers": [
+    27,
+    29,
+    35,
+    36,
+    37,
+    42,
+    75,
+    77,
+    78,
+    80,
+    81,
+    85
+   ],
+   "rows": [
+    {
+     "number": 27,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 29,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 35,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 36,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 37,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 42,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 75,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 77,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 78,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 80,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 81,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [
+      {
+       "basename": "194f2929b6bca3e.png",
+       "onDisk": true,
+       "sha256": "506dc2ae006e2c1e47e4558a029ddc64629bcd71a2fea702ca03b26766b0ae8e",
+       "w": 600,
+       "h": 274,
+       "bytes": 44981
+      }
+     ],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    },
+    {
+     "number": 85,
+     "repoPresent": true,
+     "sourceIsPlaceholder": true,
+     "stemClass": "source-placeholder",
+     "optionClass": "source-placeholder",
+     "optionDetail": [],
+     "diffLayers": [
+      "source-stub"
+     ],
+     "verdict": "source-placeholder",
+     "vacuousStem": false,
+     "numberingIssue": false,
+     "bestRepoNumber": null,
+     "bestRatio": null,
+     "ownRatio": null,
+     "images": [
+      {
+       "basename": "194f2cbf179256d.png",
+       "onDisk": true,
+       "sha256": "faa5eff0e8c204059e3b50d061e65180abf473f393348686af7d0f684ba33f58",
+       "w": 400,
+       "h": 459,
+       "bytes": 45554
+      }
+     ],
+     "humanReviewReasons": [
+      "source is a crowdsourcing stub; repository content came from a different source and cannot be corroborated or refuted by the capture"
+     ]
+    }
+   ]
+  },
+  "JS2024A": {
+   "paper": "JS2024A",
+   "unmatchedNumbers": [
+    76,
+    96,
+    110,
+    111
+   ],
+   "rows": [
+    {
+     "number": 76,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 96,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 110,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 111,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    }
+   ]
+  },
+  "GD2020县": {
+   "paper": "GD2020县",
+   "unmatchedNumbers": [
+    18,
+    22,
+    64,
+    66,
+    67,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    79,
+    87,
+    91,
+    92,
+    94,
+    96,
+    98,
+    99,
+    100
+   ],
+   "rows": [
+    {
+     "number": 18,
+     "repoPresent": true,
+     "stemClass": "same",
+     "optionClass": "text-vs-image",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "B",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "C",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "D",
+       "class": "same",
+       "diffTokenKinds": 0
+      }
+     ],
+     "diffLayers": [
+      "option:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 18,
+     "bestRatio": 1.0,
+     "ownRatio": 1.0,
+     "images": [
+      {
+       "basename": "formula-437b96b6716e3d83.png",
+       "onDisk": true,
+       "sha256": "d70df377ef647f201087ef6433165996a7e09733ead159117b31844ab0c35939",
+       "w": 67,
+       "h": 18,
+       "bytes": 834,
+       "inBlock": "option"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 22,
+     "repoPresent": true,
+     "stemClass": "text-vs-image",
+     "optionClass": "text-vs-image",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "B",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "C",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "D",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      }
+     ],
+     "diffLayers": [
+      "stem:text-vs-image",
+      "option:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 22,
+     "bestRatio": 0.911,
+     "ownRatio": 0.911,
+     "images": [
+      {
+       "basename": "formula-b9cd355b227e3ff0.png",
+       "onDisk": true,
+       "sha256": "c7f6bc2bbc7aa2665970e04208f7101d4f36ab36539657af348d96bd95755859",
+       "w": 27,
+       "h": 18,
+       "bytes": 647,
+       "inBlock": "stem"
+      },
+      {
+       "basename": "formula-d05a8cd515862ff1.png",
+       "onDisk": true,
+       "sha256": "4ee4903ca5452e3bfb33a498dc9cfa071644228b99d04b92aa36874fbb05aefb",
+       "w": 25,
+       "h": 18,
+       "bytes": 636,
+       "inBlock": "stem"
+      },
+      {
+       "basename": "formula-856cfb3518e7ed47.png",
+       "onDisk": true,
+       "sha256": "b0d0b6ad3b156f6948ec01ead98010fdb0898e5a6e71f42603a6c5894087bfe6",
+       "w": 22,
+       "h": 18,
+       "bytes": 617,
+       "inBlock": "stem"
+      },
+      {
+       "basename": "formula-856cfb3518e7ed47.png",
+       "onDisk": true,
+       "sha256": "b0d0b6ad3b156f6948ec01ead98010fdb0898e5a6e71f42603a6c5894087bfe6",
+       "w": 22,
+       "h": 18,
+       "bytes": 617,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-b9cd355b227e3ff0.png",
+       "onDisk": true,
+       "sha256": "c7f6bc2bbc7aa2665970e04208f7101d4f36ab36539657af348d96bd95755859",
+       "w": 27,
+       "h": 18,
+       "bytes": 647,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-d05a8cd515862ff1.png",
+       "onDisk": true,
+       "sha256": "4ee4903ca5452e3bfb33a498dc9cfa071644228b99d04b92aa36874fbb05aefb",
+       "w": 25,
+       "h": 18,
+       "bytes": 636,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-b9cd355b227e3ff0.png",
+       "onDisk": true,
+       "sha256": "c7f6bc2bbc7aa2665970e04208f7101d4f36ab36539657af348d96bd95755859",
+       "w": 27,
+       "h": 18,
+       "bytes": 647,
+       "inBlock": "option"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 64,
+     "repoPresent": true,
+     "stemClass": "text-vs-image",
+     "optionClass": "same",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "B",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "C",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "D",
+       "class": "same",
+       "diffTokenKinds": 0
+      }
+     ],
+     "diffLayers": [
+      "stem:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 64,
+     "bestRatio": 0.9754,
+     "ownRatio": 0.9754,
+     "images": [
+      {
+       "basename": "formula-9d68a196ceeb2025.png",
+       "onDisk": true,
+       "sha256": "30514f3cec500063c757342549bae0695c7a6bbccd926ca77759e70fe27adf90",
+       "w": 36,
+       "h": 18,
+       "bytes": 696,
+       "inBlock": "stem"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 66,
+     "repoPresent": true,
+     "stemClass": "text-vs-image",
+     "optionClass": "same",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "B",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "C",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "D",
+       "class": "same",
+       "diffTokenKinds": 0
+      }
+     ],
+     "diffLayers": [
+      "stem:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 66,
+     "bestRatio": 0.9636,
+     "ownRatio": 0.9636,
+     "images": [
+      {
+       "basename": "formula-23d85574dc6adf1c.png",
+       "onDisk": true,
+       "sha256": "e16a4ac43e38a564fbf40cd1a5cf047b5d2cc7b2b7e4334525039f3d91098765",
+       "w": 25,
+       "h": 18,
+       "bytes": 647,
+       "inBlock": "stem"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 67,
+     "repoPresent": true,
+     "stemClass": "text-vs-image",
+     "optionClass": "same",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "B",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "C",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "D",
+       "class": "same",
+       "diffTokenKinds": 0
+      }
+     ],
+     "diffLayers": [
+      "stem:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 67,
+     "bestRatio": 0.9773,
+     "ownRatio": 0.9773,
+     "images": [
+      {
+       "basename": "formula-6d8896b3063dbb75.png",
+       "onDisk": true,
+       "sha256": "fbc8e79a2e0452368e052fa89251ea43da80a69f1d38ab23881f22649d93a8f5",
+       "w": 54,
+       "h": 18,
+       "bytes": 656,
+       "inBlock": "stem"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 69,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 70,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 71,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 72,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 73,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 74,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 75,
+     "repoPresent": false,
+     "class": "absent-from-repository",
+     "verdict": "source-placeholder",
+     "sourceIsPlaceholder": true,
+     "detail": "source number has no repository block"
+    },
+    {
+     "number": 79,
+     "repoPresent": true,
+     "stemClass": "text-vs-image",
+     "optionClass": "same",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "B",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "C",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "D",
+       "class": "same",
+       "diffTokenKinds": 0
+      }
+     ],
+     "diffLayers": [
+      "stem:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 79,
+     "bestRatio": 0.9677,
+     "ownRatio": 0.9677,
+     "images": [
+      {
+       "basename": "formula-f15857b3d3a081e0.png",
+       "onDisk": true,
+       "sha256": "5c426a0f4ef2b4f2a65eaa67a46e4eb261ddc682afb5f91569110f67f868d0a6",
+       "w": 12,
+       "h": 18,
+       "bytes": 557,
+       "inBlock": "stem"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 87,
+     "repoPresent": true,
+     "stemClass": "text-vs-image",
+     "optionClass": "same",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "B",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "C",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "D",
+       "class": "same",
+       "diffTokenKinds": 0
+      }
+     ],
+     "diffLayers": [
+      "stem:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 87,
+     "bestRatio": 0.9636,
+     "ownRatio": 0.9636,
+     "images": [
+      {
+       "basename": "formula-711088c1d54210df.png",
+       "onDisk": true,
+       "sha256": "55ec2c67c9d8552c59ceb5a0d5a28a0eaf8e9341a1e93a90a719767fdae60eca",
+       "w": 29,
+       "h": 18,
+       "bytes": 666,
+       "inBlock": "stem"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 91,
+     "repoPresent": true,
+     "stemClass": "same",
+     "optionClass": "text-vs-image",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "B",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "C",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "D",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      }
+     ],
+     "diffLayers": [
+      "option:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 91,
+     "bestRatio": 1.0,
+     "ownRatio": 1.0,
+     "images": [
+      {
+       "basename": "formula-c0af3d04f9ff3dc8.png",
+       "onDisk": true,
+       "sha256": "2c2c69e4be9a2c602a46b702fa5be3f23b13a8619c9efeefb495f90cc8cdd239",
+       "w": 29,
+       "h": 18,
+       "bytes": 658,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-318251f83dd330ae.png",
+       "onDisk": true,
+       "sha256": "d0ae83d338651e0f35c11fa38f5c6b33ad6311e4e142e3dd0c680921ec4f8183",
+       "w": 29,
+       "h": 18,
+       "bytes": 660,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-b5a4647f2df49a53.png",
+       "onDisk": true,
+       "sha256": "fe6559a3c26c568462ad97df0a9954186c6bf16a90b5ef78ca04dd79e0755e09",
+       "w": 29,
+       "h": 18,
+       "bytes": 659,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-5f3991e11771152e.png",
+       "onDisk": true,
+       "sha256": "11a7b3e2056447652226ed64667e3da564b7c849c3b781413839538abd3d7520",
+       "w": 29,
+       "h": 18,
+       "bytes": 655,
+       "inBlock": "option"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 92,
+     "repoPresent": true,
+     "stemClass": "same",
+     "optionClass": "text-vs-image",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "B",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "C",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "D",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      }
+     ],
+     "diffLayers": [
+      "option:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 92,
+     "bestRatio": 1.0,
+     "ownRatio": 1.0,
+     "images": [
+      {
+       "basename": "formula-20ad5906bfadbef4.png",
+       "onDisk": true,
+       "sha256": "707d75887aa7203f63fb2f6fbe2884457448a9998d4d495650d6745b8ec5bcec",
+       "w": 25,
+       "h": 18,
+       "bytes": 650,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-6b210c4a3fdf00b2.png",
+       "onDisk": true,
+       "sha256": "cd946e1dcbdbc09783f45982e201ad710c6cfd170bd85f5fe08982c9a2003ef2",
+       "w": 25,
+       "h": 18,
+       "bytes": 651,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-29477a3ea0f859e7.png",
+       "onDisk": true,
+       "sha256": "db828af743ca0eafeef0b7dade2f8a19a7e45eeb48a0331b10d4a45506fec3e4",
+       "w": 25,
+       "h": 18,
+       "bytes": 652,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-c12728932ad2307f.png",
+       "onDisk": true,
+       "sha256": "34f93fb05d90a970a2cc0366b0a6232dc2dd66038c0233af8daa765b86ec88c8",
+       "w": 25,
+       "h": 18,
+       "bytes": 656,
+       "inBlock": "option"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 94,
+     "repoPresent": true,
+     "stemClass": "same",
+     "optionClass": "text-vs-image",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "text-vs-image",
+       "diffTokenKinds": 3
+      },
+      {
+       "label": "B",
+       "class": "text-vs-image",
+       "diffTokenKinds": 3
+      },
+      {
+       "label": "C",
+       "class": "text-vs-image",
+       "diffTokenKinds": 3
+      },
+      {
+       "label": "D",
+       "class": "text-vs-image",
+       "diffTokenKinds": 3
+      }
+     ],
+     "diffLayers": [
+      "option:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 94,
+     "bestRatio": 1.0,
+     "ownRatio": 1.0,
+     "images": [
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-24bb221293f88a08.png",
+       "onDisk": true,
+       "sha256": "9b22d72efa621a3839178246c25ff9beeb8466ada896f882c074a9427a1d285a",
+       "w": 10,
+       "h": 18,
+       "bytes": 500,
+       "inBlock": "option"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 96,
+     "repoPresent": true,
+     "stemClass": "same",
+     "optionClass": "text-vs-image",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "B",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "C",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "D",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      }
+     ],
+     "diffLayers": [
+      "option:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 96,
+     "bestRatio": 1.0,
+     "ownRatio": 1.0,
+     "images": [
+      {
+       "basename": "formula-4c5fa465c5b35623.png",
+       "onDisk": true,
+       "sha256": "58cebf9a15dca4f9b6b9a8a357ef863ab83751a4e4e5c7b14dd1a29a855f5958",
+       "w": 29,
+       "h": 18,
+       "bytes": 648,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-90fafa2dfdc582f7.png",
+       "onDisk": true,
+       "sha256": "f94bde5c8dee3bbd460a0b8b19430a43e5d0890f8957b53ce2717af3b3035f26",
+       "w": 29,
+       "h": 18,
+       "bytes": 664,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-9eb50ad127c8e9fe.png",
+       "onDisk": true,
+       "sha256": "b20ca1b43da664bb7716dc91821e17f03b32a5d10414f7ba7a034d059e054fdd",
+       "w": 29,
+       "h": 18,
+       "bytes": 641,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-aaa6d86a67a847f4.png",
+       "onDisk": true,
+       "sha256": "9636e1afc22c1f1a578799162e274acca9ad9ea2056400ee70521ae91710cc7d",
+       "w": 29,
+       "h": 18,
+       "bytes": 662,
+       "inBlock": "option"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 98,
+     "repoPresent": true,
+     "stemClass": "same",
+     "optionClass": "text-vs-image",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "B",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "C",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "D",
+       "class": "same",
+       "diffTokenKinds": 0
+      }
+     ],
+     "diffLayers": [
+      "option:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 98,
+     "bestRatio": 1.0,
+     "ownRatio": 1.0,
+     "images": [
+      {
+       "basename": "formula-19b93788d5d38efe.png",
+       "onDisk": true,
+       "sha256": "7a7aca2a80f318f56f36f532d21000bd15d2065f8099a278dd032d26ddb8dd06",
+       "w": 36,
+       "h": 18,
+       "bytes": 705,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-5d42c38b7a52d169.png",
+       "onDisk": true,
+       "sha256": "3b9c3a6abccb8bf19234cc48d3d08d7caa01fbcde19ee954491759068c9e5a07",
+       "w": 36,
+       "h": 18,
+       "bytes": 712,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-8cb9450b62fa3169.png",
+       "onDisk": true,
+       "sha256": "f763da05080be6bdee9d42cf215293badd3ee924d06380b9d6f9ea3265b0c2d7",
+       "w": 36,
+       "h": 18,
+       "bytes": 708,
+       "inBlock": "option"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 99,
+     "repoPresent": true,
+     "stemClass": "same",
+     "optionClass": "text-vs-image",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "B",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "C",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      },
+      {
+       "label": "D",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      }
+     ],
+     "diffLayers": [
+      "option:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 99,
+     "bestRatio": 1.0,
+     "ownRatio": 1.0,
+     "images": [
+      {
+       "basename": "formula-f74801b8674b37ff.png",
+       "onDisk": true,
+       "sha256": "990229fd092fc37fed351876816ef94c1ca62672ad64e96d2e3eb212bb8998ea",
+       "w": 25,
+       "h": 18,
+       "bytes": 631,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-ee08713ca74cb24b.png",
+       "onDisk": true,
+       "sha256": "0a3096bee79a3640298f426604a424faff4018720261a6854475e276ef83a00b",
+       "w": 25,
+       "h": 18,
+       "bytes": 632,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-23d85574dc6adf1c.png",
+       "onDisk": true,
+       "sha256": "e16a4ac43e38a564fbf40cd1a5cf047b5d2cc7b2b7e4334525039f3d91098765",
+       "w": 25,
+       "h": 18,
+       "bytes": 647,
+       "inBlock": "option"
+      },
+      {
+       "basename": "formula-747b4cf853fa4915.png",
+       "onDisk": true,
+       "sha256": "b850d7345470d7c530f67507a8f10728608e2e963b23e779e3bd26a08bd1c549",
+       "w": 25,
+       "h": 18,
+       "bytes": 646,
+       "inBlock": "option"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    },
+    {
+     "number": 100,
+     "repoPresent": true,
+     "stemClass": "same",
+     "optionClass": "text-vs-image",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "B",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "C",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "D",
+       "class": "text-vs-image",
+       "diffTokenKinds": 1
+      }
+     ],
+     "diffLayers": [
+      "option:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 100,
+     "bestRatio": 1.0,
+     "ownRatio": 1.0,
+     "images": [
+      {
+       "basename": "formula-8f61834c0c636317.png",
+       "onDisk": true,
+       "sha256": "3d6857d5643205bc091a70c69b803507aceedbe31eb8297da0994211cff9f10a",
+       "w": 25,
+       "h": 18,
+       "bytes": 651,
+       "inBlock": "option"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    }
+   ]
+  },
+  "ZJ2026C": {
+   "paper": "ZJ2026C",
+   "unmatchedNumbers": [
+    54
+   ],
+   "rows": [
+    {
+     "number": 54,
+     "repoPresent": true,
+     "stemClass": "text-vs-image",
+     "optionClass": "same",
+     "optionDetail": [
+      {
+       "label": "A",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "B",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "C",
+       "class": "same",
+       "diffTokenKinds": 0
+      },
+      {
+       "label": "D",
+       "class": "same",
+       "diffTokenKinds": 0
+      }
+     ],
+     "diffLayers": [
+      "stem:text-vs-image"
+     ],
+     "verdict": "repr-diff+human-review",
+     "vacuousStem": false,
+     "sourceIsPlaceholder": false,
+     "numberingIssue": false,
+     "bestRepoNumber": 54,
+     "bestRatio": 0.9512,
+     "ownRatio": 0.9512,
+     "images": [
+      {
+       "basename": "formula-a1210bce4a4296a5.png",
+       "onDisk": true,
+       "sha256": "8d0c3d13d3eb536dd6a669632bb71d13b557af0bb7b9d2b364925c3a9a467fce",
+       "w": 24,
+       "h": 15,
+       "bytes": 372,
+       "inBlock": "stem"
+      }
+     ],
+     "humanReviewReasons": [
+      "formula/figure image content is not OCR-verifiable offline"
+     ]
+    }
+   ]
+  }
+ },
+ "vacuousStemMatches": {
+  "JS2025C": {
+   "paper": "JS2025C",
+   "rows": [],
+   "countedMatched": 0
+  },
+  "JS2024A": {
+   "paper": "JS2024A",
+   "rows": [],
+   "countedMatched": 0
+  },
+  "GD2020县": {
+   "paper": "GD2020县",
+   "rows": [
+    {
+     "number": 30,
+     "availableInHandoff": true,
+     "countedMatched": true,
+     "capturedStemEmpty": true,
+     "repoStemIsImage": true,
+     "repoStemImageCount": 1,
+     "repoBlockImageCount": 1,
+     "optionsIdentical": true,
+     "optionCountSrc": 4,
+     "optionCountRepo": 4,
+     "imageEvidence": [
+      {
+       "basename": "173d1f468700627.png",
+       "onDisk": true,
+       "sha256": "a60e72a9556a2d9433dcd05b40cab8fece0d478554709ba798a826ed0fda44b6",
+       "w": 364,
+       "h": 258,
+       "bytes": 6000
+      }
+     ],
+     "diagnosis": "stem-is-image-and-capture-empty; the match is supported by identical options and a vacuous stem comparison"
+    }
+   ],
+   "countedMatched": 1
+  },
+  "ZJ2026C": {
+   "paper": "ZJ2026C",
+   "rows": [],
+   "countedMatched": 0
+  }
+ },
+ "declaredDimensions": {
+  "JS2025C": {
+   "paper": "JS2025C",
+   "counts": {
+    "declared": 42,
+    "exact": 42
+   },
+   "rows": []
+  },
+  "JS2024A": {
+   "paper": "JS2024A",
+   "counts": {
+    "declared": 59,
+    "exact": 59
+   },
+   "rows": []
+  },
+  "GD2020县": {
+   "paper": "GD2020县",
+   "counts": {
+    "declared": 37,
+    "exact": 30,
+    "capped-width-rounding": 7
+   },
+   "rows": [
+    {
+     "basename": "173d220ea6f0823.png",
+     "sha256": "878fcbf43f4d116a67801eefd8631e3ea5a31006c6b2ad8811755ab5b9594e45",
+     "declared": [
+      700,
+      200
+     ],
+     "true": [
+      700,
+      201
+     ],
+     "delta": [
+      0,
+      -1
+     ],
+     "kind": "capped-width-rounding",
+     "cappedWidth": true
+    },
+    {
+     "basename": "173d246326f0025.png",
+     "sha256": "e7ecc69ca161d587227cd3f0127d61f6286e21e47d58f8055ec6c3d7e271f083",
+     "declared": [
+      700,
+      379
+     ],
+     "true": [
+      700,
+      380
+     ],
+     "delta": [
+      0,
+      -1
+     ],
+     "kind": "capped-width-rounding",
+     "cappedWidth": true
+    },
+    {
+     "basename": "173d25850d682c5.png",
+     "sha256": "ced2654128a430b0d5850fcf4474d85d420ee3ceef2fbac51043b80b0a05aeef",
+     "declared": [
+      700,
+      414
+     ],
+     "true": [
+      700,
+      415
+     ],
+     "delta": [
+      0,
+      -1
+     ],
+     "kind": "capped-width-rounding",
+     "cappedWidth": true
+    },
+    {
+     "basename": "173dc23e9b3b83f.png",
+     "sha256": "76834327366f4a2491c444bcffe7686690093c1547bb3e3b238d8ef2cd5ff830",
+     "declared": [
+      700,
+      297
+     ],
+     "true": [
+      700,
+      298
+     ],
+     "delta": [
+      0,
+      -1
+     ],
+     "kind": "capped-width-rounding",
+     "cappedWidth": true
+    },
+    {
+     "basename": "173e2634fa68f62.png",
+     "sha256": "d47ab67f3c49c34d8bb7de7390306c2f09c5bf338746d071645669b88e202f83",
+     "declared": [
+      700,
+      356
+     ],
+     "true": [
+      700,
+      357
+     ],
+     "delta": [
+      0,
+      -1
+     ],
+     "kind": "capped-width-rounding",
+     "cappedWidth": true
+    },
+    {
+     "basename": "173dd1882037276.png",
+     "sha256": "37442ec6488907be33594dc71a52c20f25eb1039eb651e37e82a4efb0a8a4497",
+     "declared": [
+      700,
+      302
+     ],
+     "true": [
+      700,
+      303
+     ],
+     "delta": [
+      0,
+      -1
+     ],
+     "kind": "capped-width-rounding",
+     "cappedWidth": true
+    },
+    {
+     "basename": "173d25ffa9f6570.png",
+     "sha256": "eddb0fbf539f4145290ae545d784e89495803dcaa651b04d6e7e74a2a93d5c6d",
+     "declared": [
+      700,
+      257
+     ],
+     "true": [
+      700,
+      258
+     ],
+     "delta": [
+      0,
+      -1
+     ],
+     "kind": "capped-width-rounding",
+     "cappedWidth": true
+    }
+   ]
+  },
+  "ZJ2026C": {
+   "paper": "ZJ2026C",
+   "counts": {
+    "declared": 30,
+    "exact": 30
+   },
+   "rows": []
+  }
+ },
+ "graphicComposites": {
+  "JS2025C": {
+   "paper": "JS2025C",
+   "graphicQuestions": 7,
+   "separableQuestions": 7,
+   "boxCountDistribution": {
+    "5": 3,
+    "6": 4
+   },
+   "rows": [
+    {
+     "number": 82,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "194f97d9ad43299.png",
+       "sha256": "84a6b28eb7d906a44c780249b48786a59b771e16127c9fd24154dfe9e484bb01",
+       "w": 600,
+       "h": 281,
+       "boxes": 6,
+       "tileWidths": [
+        600,
+        600,
+        19,
+        17,
+        16,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 83,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "194f29113855f23.png",
+       "sha256": "2a19253a21fd3b36f2a6fe5340c483c208115a2e519eb3daae70d495fcf0bcc6",
+       "w": 600,
+       "h": 277,
+       "boxes": 6,
+       "tileWidths": [
+        600,
+        600,
+        20,
+        17,
+        17,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 84,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "194f292ac127d6f.png",
+       "sha256": "970e1054e1af6d0db76e3cd3b0f99dcb4ef0dc5954082ef9e593bfd9689c3d9b",
+       "w": 600,
+       "h": 275,
+       "boxes": 6,
+       "tileWidths": [
+        600,
+        600,
+        19,
+        18,
+        17,
+        16
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 87,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "194f294591c13b1.png",
+       "sha256": "382095391550d816167dbb12f52dee5cbcdc9cfc6806175c30dc38ffcdb099b4",
+       "w": 500,
+       "h": 317,
+       "boxes": 6,
+       "tileWidths": [
+        500,
+        500,
+        18,
+        17,
+        15,
+        14
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 88,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "194f294cb5e28ce.png",
+       "sha256": "39c456866592dc3e1848d67308a94ba3004d968e86b464dc61b1649a76847cd9",
+       "w": 600,
+       "h": 154,
+       "boxes": 5,
+       "tileWidths": [
+        600,
+        16,
+        15,
+        14,
+        13
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 89,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "194f98058853845.png",
+       "sha256": "7727961fb68a5a778616d0d25d70a8153cb5bf0d00d98e792cc2afcb53011c0a",
+       "w": 600,
+       "h": 170,
+       "boxes": 5,
+       "tileWidths": [
+        600,
+        16,
+        15,
+        15,
+        13
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 90,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "194f295c4962e8f.png",
+       "sha256": "3379d64cb3db94a51832c5f8a590f0d7b579798a9846c88c50c26512d2f0d33d",
+       "w": 501,
+       "h": 166,
+       "boxes": 5,
+       "tileWidths": [
+        501,
+        19,
+        16,
+        16,
+        14
+       ]
+      }
+     ],
+     "separable": true
+    }
+   ]
+  },
+  "JS2024A": {
+   "paper": "JS2024A",
+   "graphicQuestions": 14,
+   "separableQuestions": 13,
+   "boxCountDistribution": {
+    "1": 1,
+    "5": 4,
+    "6": 9
+   },
+   "rows": [
+    {
+     "number": 77,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "1906d9f40967742.png",
+       "sha256": "13224c32cc607b6d6bfc4decd465c64498fc16719a747149d2e4a48564d6f3bc",
+       "w": 600,
+       "h": 272,
+       "boxes": 6,
+       "tileWidths": [
+        600,
+        600,
+        19,
+        17,
+        16,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 78,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "18d7c59e6718df3.png",
+       "sha256": "24a38a94b8b95169ae7aab6d42db9a02a2e53e67a4bb38783e824c840c63bc0f",
+       "w": 600,
+       "h": 285,
+       "boxes": 6,
+       "tileWidths": [
+        600,
+        600,
+        19,
+        17,
+        16,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 79,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "1907ca70bb852f5.jpg",
+       "sha256": "cd76495330436a225ffa28e3dd6156cbfa344679216bcf478b8597a4f73f1383",
+       "w": 634,
+       "h": 696,
+       "boxes": 6,
+       "tileWidths": [
+        634,
+        634,
+        19,
+        17,
+        17,
+        16
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 80,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "1907101725a2315.png",
+       "sha256": "c51da1ad19c04a6bb2039208822159a09ca42bde2399e00b4470b7c402205fe9",
+       "w": 400,
+       "h": 481,
+       "boxes": 6,
+       "tileWidths": [
+        400,
+        400,
+        20,
+        17,
+        17,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 81,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "1906dbdc25ab362.png",
+       "sha256": "0dfe1540d5df0a7d5f91f7b8118ede20f1e42c575926de68f73b682ccc0d410d",
+       "w": 600,
+       "h": 274,
+       "boxes": 6,
+       "tileWidths": [
+        600,
+        600,
+        18,
+        17,
+        16,
+        14
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 82,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "1906dbb73434c34.png",
+       "sha256": "9d26d77dad8dfb7ffb50c06ea855041085f5313d63864c55f82e16ea4445a007",
+       "w": 500,
+       "h": 316,
+       "boxes": 6,
+       "tileWidths": [
+        500,
+        500,
+        17,
+        16,
+        16,
+        14
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 83,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19070fd4cc9af73.png",
+       "sha256": "c76142995aa9b1c6970dc67d1a67320aab36234d79b549f813bee6acac94dc20",
+       "w": 500,
+       "h": 306,
+       "boxes": 6,
+       "tileWidths": [
+        500,
+        500,
+        15,
+        14,
+        13,
+        12
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 84,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "1907112cc903318.png",
+       "sha256": "0ed65f6ef719b652e36a203a90e598e1011883e379f6057085bc875fc66855a8",
+       "w": 500,
+       "h": 326,
+       "boxes": 6,
+       "tileWidths": [
+        500,
+        500,
+        18,
+        16,
+        15,
+        14
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 85,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "1906dbb80b9145c.png",
+       "sha256": "83312b38ff847291401114fd00a56dec394d1c2f821acbe0187d2d2eb2c0f44c",
+       "w": 500,
+       "h": 316,
+       "boxes": 6,
+       "tileWidths": [
+        500,
+        500,
+        19,
+        17,
+        16,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 86,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19070fdd0615da0.png",
+       "sha256": "018eee347b427f786c903d7476a5d2b147762846306057ae71b1a74e79554a58",
+       "w": 600,
+       "h": 143,
+       "boxes": 1,
+       "tileWidths": [
+        600
+       ]
+      }
+     ],
+     "separable": false
+    },
+    {
+     "number": 87,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19070ff2364854a.png",
+       "sha256": "9600d28d5fb0f5ea8a1bad75bf4618af0ea974f42949f16ec8cddafa283250f2",
+       "w": 600,
+       "h": 158,
+       "boxes": 5,
+       "tileWidths": [
+        600,
+        18,
+        17,
+        16,
+        13
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 88,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "190710478b23e1b.png",
+       "sha256": "10df3dbf8a4b826f05c91afe4f01bee0e1927d718d35ed70fc84ebf0cd3630e0",
+       "w": 500,
+       "h": 161,
+       "boxes": 5,
+       "tileWidths": [
+        500,
+        18,
+        16,
+        15,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 89,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "18d7c08d407374c.png",
+       "sha256": "94ad28ad97d1e8b4923c47e8033da9f563708588192a4c4de50e11d90f47dc13",
+       "w": 600,
+       "h": 201,
+       "boxes": 5,
+       "tileWidths": [
+        600,
+        21,
+        19,
+        18,
+        17
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 90,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "196c74057229ff8.png",
+       "sha256": "699219d8da140e1fd1283380b1ed5ccd608ec5cfb7a68ad0c30c1ec4fe7374e6",
+       "w": 600,
+       "h": 165,
+       "boxes": 5,
+       "tileWidths": [
+        600,
+        16,
+        14,
+        14,
+        13
+       ]
+      }
+     ],
+     "separable": true
+    }
+   ]
+  },
+  "GD2020县": {
+   "paper": "GD2020县",
+   "graphicQuestions": 13,
+   "separableQuestions": 11,
+   "boxCountDistribution": {
+    "1": 1,
+    "2": 1,
+    "4": 1,
+    "5": 1,
+    "6": 5,
+    "7": 3,
+    "8": 1,
+    "9": 1
+   },
+   "rows": [
+    {
+     "number": 41,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173d220ea6f0823.png",
+       "sha256": "878fcbf43f4d116a67801eefd8631e3ea5a31006c6b2ad8811755ab5b9594e45",
+       "w": 700,
+       "h": 201,
+       "boxes": 5,
+       "tileWidths": [
+        700,
+        17,
+        15,
+        15,
+        13
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 42,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173d246326f0025.png",
+       "sha256": "e7ecc69ca161d587227cd3f0127d61f6286e21e47d58f8055ec6c3d7e271f083",
+       "w": 700,
+       "h": 380,
+       "boxes": 6,
+       "tileWidths": [
+        700,
+        700,
+        20,
+        19,
+        17,
+        16
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 43,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173d25850d682c5.png",
+       "sha256": "ced2654128a430b0d5850fcf4474d85d420ee3ceef2fbac51043b80b0a05aeef",
+       "w": 700,
+       "h": 415,
+       "boxes": 7,
+       "tileWidths": [
+        700,
+        136,
+        136,
+        32,
+        31,
+        27,
+        27
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 45,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173d207aa4718df.png",
+       "sha256": "6267285e9152a5a2650943e6bc520055ec62dfe1f79f30d5381007e7837e78dd",
+       "w": 700,
+       "h": 416,
+       "boxes": 6,
+       "tileWidths": [
+        640,
+        640,
+        640,
+        640,
+        640,
+        16
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 46,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173dc10c8df84c4.png",
+       "sha256": "b01dada8022011abab5820b178ac98225ecc8a229ce76b392bff6c750ea5d743",
+       "w": 670,
+       "h": 350,
+       "boxes": 6,
+       "tileWidths": [
+        670,
+        670,
+        20,
+        18,
+        17,
+        16
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 47,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173dc2227ec09da.png",
+       "sha256": "0f3f1e57e91547627550fdaa3dbb29ea5a0a2b6f2820c92770b37d8701afd35f",
+       "w": 644,
+       "h": 339,
+       "boxes": 6,
+       "tileWidths": [
+        644,
+        644,
+        19,
+        16,
+        16,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 48,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173dc23e9b3b83f.png",
+       "sha256": "76834327366f4a2491c444bcffe7686690093c1547bb3e3b238d8ef2cd5ff830",
+       "w": 700,
+       "h": 298,
+       "boxes": 7,
+       "tileWidths": [
+        700,
+        313,
+        312,
+        17,
+        16,
+        16,
+        13
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 49,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173dc2611a78eeb.png",
+       "sha256": "169725085b23a28ebc7daf938504f0d518a5d2947013058969db53bf076c63f9",
+       "w": 568,
+       "h": 369,
+       "boxes": 9,
+       "tileWidths": [
+        568,
+        568,
+        125,
+        124,
+        76,
+        20,
+        17,
+        17
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 50,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173e2634fa68f62.png",
+       "sha256": "d47ab67f3c49c34d8bb7de7390306c2f09c5bf338746d071645669b88e202f83",
+       "w": 700,
+       "h": 357,
+       "boxes": 6,
+       "tileWidths": [
+        700,
+        700,
+        21,
+        18,
+        17,
+        16
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 77,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 2,
+     "tiles": [
+      {
+       "basename": "173d256155f4c56.png",
+       "sha256": "74abc003386c444ac649233de09450e7d76e203c0a23f6cb6c10b56ce602e75b",
+       "w": 328,
+       "h": 252,
+       "boxes": 2,
+       "tileWidths": [
+        328,
+        328
+       ]
+      },
+      {
+       "basename": "173d2565150fef3.png",
+       "sha256": "2530ad34a012042f290944274fe09b68a45500c1c70dcca3e785043347d54c19",
+       "w": 493,
+       "h": 495,
+       "boxes": 1,
+       "tileWidths": [
+        493
+       ]
+      }
+     ],
+     "separable": false
+    },
+    {
+     "number": 78,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173d264a1469ed3.png",
+       "sha256": "81358cc5828eb9dece0620ae99a5a7e55870ca1980993c4195a0ac500dbee18b",
+       "w": 448,
+       "h": 263,
+       "boxes": 4,
+       "tileWidths": [
+        182,
+        182,
+        181,
+        181
+       ]
+      }
+     ],
+     "separable": false
+    },
+    {
+     "number": 80,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173d24c6a3d28b2.png",
+       "sha256": "2c56e510be3a70c04b6f1a5f90e149b3659c15cf1c347b5081f262b820860de8",
+       "w": 458,
+       "h": 130,
+       "boxes": 8,
+       "tileWidths": [
+        89,
+        89,
+        89,
+        89,
+        88,
+        88,
+        88,
+        88
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 84,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "173e2a4a2b033c1.png",
+       "sha256": "a4d80a076baabebc4c12f224dee37b078031291caca4b253cfb6bdc437ddc424",
+       "w": 502,
+       "h": 511,
+       "boxes": 7,
+       "tileWidths": [
+        502,
+        502,
+        194,
+        194,
+        194,
+        193,
+        193
+       ]
+      }
+     ],
+     "separable": true
+    }
+   ]
+  },
+  "ZJ2026C": {
+   "paper": "ZJ2026C",
+   "graphicQuestions": 7,
+   "separableQuestions": 6,
+   "boxCountDistribution": {
+    "2": 1,
+    "6": 4,
+    "7": 2
+   },
+   "rows": [
+    {
+     "number": 61,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19af928b77abeb5.png",
+       "sha256": "5e77eb67c2fc3920b2ec0fefd698d2464ddf47b179fb6799416ec0b0804a0880",
+       "w": 600,
+       "h": 273,
+       "boxes": 6,
+       "tileWidths": [
+        600,
+        600,
+        19,
+        18,
+        16,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 62,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19af922db56c055.png",
+       "sha256": "82dba04a0d4759ae3ac48696db944ee0d0d0bf593780e50965ce0e9baf8c5576",
+       "w": 600,
+       "h": 279,
+       "boxes": 6,
+       "tileWidths": [
+        600,
+        600,
+        20,
+        18,
+        17,
+        16
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 63,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19af926f0e5f74f.png",
+       "sha256": "73c1ef8b3e0439b9016f9cdf25b4cd104245ab8a030af5d480a2f2e81f2bef2f",
+       "w": 600,
+       "h": 275,
+       "boxes": 6,
+       "tileWidths": [
+        600,
+        600,
+        13,
+        13,
+        12,
+        11
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 64,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19af91fcb9d656f.png",
+       "sha256": "bad728dcbebf97a698d85445afb6fe6740a446230f48f486968d4fb0d85bcdaa",
+       "w": 600,
+       "h": 247,
+       "boxes": 7,
+       "tileWidths": [
+        600,
+        284,
+        281,
+        18,
+        17,
+        16,
+        14
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 65,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19af9335b98b072.png",
+       "sha256": "dff88c1fb18ca6ebbd7d245e1ee6b29f3f269b9653f7b43cc52271374d5c1d58",
+       "w": 400,
+       "h": 466,
+       "boxes": 6,
+       "tileWidths": [
+        400,
+        400,
+        19,
+        18,
+        16,
+        15
+       ]
+      }
+     ],
+     "separable": true
+    },
+    {
+     "number": 67,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19af926cbd1d46d.png",
+       "sha256": "182952781bf33573d6555c368d5ad231ee90ef8df331c3439e706765996c8fba",
+       "w": 600,
+       "h": 150,
+       "boxes": 2,
+       "tileWidths": [
+        600,
+        600
+       ]
+      }
+     ],
+     "separable": false
+    },
+    {
+     "number": 68,
+     "optionTextIsLabelOnly": true,
+     "optionCount": 4,
+     "imageCount": 1,
+     "tiles": [
+      {
+       "basename": "19af955e10661ab.png",
+       "sha256": "79503eed74c0675f4cc89166433f6731e4df57f6fbcfea90ce1bd47fab0e16cf",
+       "w": 500,
+       "h": 290,
+       "boxes": 7,
+       "tileWidths": [
+        500,
+        121,
+        119,
+        18,
+        16,
+        15,
+        14
+       ]
+      }
+     ],
+     "separable": true
+    }
+   ]
+  }
+ }
+}

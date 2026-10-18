@@ -1,0 +1,1010 @@
+{
+ "schemaVersion": 1,
+ "kind": "no-content-discrepancy-ledger",
+ "epistemicRules": [
+  "sha256 equal => identical bytes (sound)",
+  "sha256 differ => visual/pixel difference UNKNOWN (no bytes shipped, no OCR on this host)",
+  "no question->asset binding in the handoff schema => option-correspondence unverifiable"
+ ],
+ "contentPolicy": "counts, question numbers, hashes, image basenames, dimensions only; no question text, no option text, no image bytes, no source URLs",
+ "papers": {
+  "JS2025C": {
+   "key": "js-2025-xingce-c-4189916",
+   "questions": 130,
+   "assets": 52
+  },
+  "JS2024A": {
+   "key": "js-2024-xingce-a-4162243",
+   "questions": 135,
+   "assets": 61
+  },
+  "GD2020县": {
+   "key": "gd-2020-xingce-county-96785",
+   "questions": 100,
+   "assets": 36
+  },
+  "ZJ2026C": {
+   "key": "zj-2026-xingce-c-8399763",
+   "questions": 110,
+   "assets": 25
+  }
+ },
+ "entries": [
+  {
+   "kind": "paper-present",
+   "paper": "JS2025C",
+   "ref": "js-2025-xingce-c-4189916",
+   "verdict": "pass",
+   "detail": "handoff + repo markdown present; 130 source questions, 52 captured assets",
+   "evidence": {}
+  },
+  {
+   "kind": "paper-present",
+   "paper": "JS2024A",
+   "ref": "js-2024-xingce-a-4162243",
+   "verdict": "pass",
+   "detail": "handoff + repo markdown present; 135 source questions, 61 captured assets",
+   "evidence": {}
+  },
+  {
+   "kind": "paper-present",
+   "paper": "GD2020县",
+   "ref": "gd-2020-xingce-county-96785",
+   "verdict": "pass",
+   "detail": "handoff + repo markdown present; 100 source questions, 36 captured assets",
+   "evidence": {}
+  },
+  {
+   "kind": "paper-present",
+   "paper": "ZJ2026C",
+   "ref": "zj-2026-xingce-c-8399763",
+   "verdict": "pass",
+   "detail": "handoff + repo markdown present; 110 source questions, 25 captured assets",
+   "evidence": {}
+  },
+  {
+   "kind": "asset-bytes-shipped",
+   "paper": "JS2025C",
+   "ref": "52 assets",
+   "verdict": "unknown",
+   "detail": "52/52 asset byte files absent from the handoff",
+   "evidence": {
+    "absent": 52
+   }
+  },
+  {
+   "kind": "asset-bytes-shipped",
+   "paper": "JS2024A",
+   "ref": "61 assets",
+   "verdict": "unknown",
+   "detail": "61/61 asset byte files absent from the handoff",
+   "evidence": {
+    "absent": 61
+   }
+  },
+  {
+   "kind": "asset-bytes-shipped",
+   "paper": "GD2020县",
+   "ref": "36 assets",
+   "verdict": "unknown",
+   "detail": "36/36 asset byte files absent from the handoff",
+   "evidence": {
+    "absent": 36
+   }
+  },
+  {
+   "kind": "asset-bytes-shipped",
+   "paper": "ZJ2026C",
+   "ref": "25 assets",
+   "verdict": "unknown",
+   "detail": "25/25 asset byte files absent from the handoff",
+   "evidence": {
+    "absent": 25
+   }
+  },
+  {
+   "kind": "asset-bytes-shipped",
+   "paper": "ALL",
+   "ref": "174 assets",
+   "verdict": "unknown",
+   "detail": "0/174 asset bytes present -> handoff-internal sha256/dimension claims are unverifiable from the handoff alone",
+   "evidence": {
+    "present": 0,
+    "total": 174
+   }
+  },
+  {
+   "kind": "selfcheck-receipt-strength",
+   "paper": "JS2025C",
+   "ref": "verify-handoff.mjs:32",
+   "verdict": "defect",
+   "detail": "the handoff self-check reads a pre-computed filenameMatchesHash boolean and never re-hashes content; with 0 bytes shipped no content hash is computed anywhere, so the README claim '图片文件名 == 内容 sha256' is not actually enforced",
+   "evidence": {
+    "boolean_not_true": 0,
+    "filename_not_sha_derived": 0
+   }
+  },
+  {
+   "kind": "selfcheck-receipt-strength",
+   "paper": "JS2024A",
+   "ref": "verify-handoff.mjs:32",
+   "verdict": "defect",
+   "detail": "the handoff self-check reads a pre-computed filenameMatchesHash boolean and never re-hashes content; with 0 bytes shipped no content hash is computed anywhere, so the README claim '图片文件名 == 内容 sha256' is not actually enforced",
+   "evidence": {
+    "boolean_not_true": 0,
+    "filename_not_sha_derived": 1
+   }
+  },
+  {
+   "kind": "selfcheck-receipt-strength",
+   "paper": "GD2020县",
+   "ref": "verify-handoff.mjs:32",
+   "verdict": "defect",
+   "detail": "the handoff self-check reads a pre-computed filenameMatchesHash boolean and never re-hashes content; with 0 bytes shipped no content hash is computed anywhere, so the README claim '图片文件名 == 内容 sha256' is not actually enforced",
+   "evidence": {
+    "boolean_not_true": 0,
+    "filename_not_sha_derived": 1
+   }
+  },
+  {
+   "kind": "selfcheck-receipt-strength",
+   "paper": "ZJ2026C",
+   "ref": "verify-handoff.mjs:32",
+   "verdict": "defect",
+   "detail": "the handoff self-check reads a pre-computed filenameMatchesHash boolean and never re-hashes content; with 0 bytes shipped no content hash is computed anywhere, so the README claim '图片文件名 == 内容 sha256' is not actually enforced",
+   "evidence": {
+    "boolean_not_true": 0,
+    "filename_not_sha_derived": 4
+   }
+  },
+  {
+   "kind": "source-url-policy",
+   "paper": "JS2025C",
+   "ref": "assets",
+   "verdict": "pass",
+   "detail": "0 off-policy hosts, 0 off-policy query params",
+   "evidence": {
+    "bad_host": 0,
+    "bad_param": 0
+   }
+  },
+  {
+   "kind": "source-url-policy",
+   "paper": "JS2024A",
+   "ref": "assets",
+   "verdict": "pass",
+   "detail": "0 off-policy hosts, 0 off-policy query params",
+   "evidence": {
+    "bad_host": 0,
+    "bad_param": 0
+   }
+  },
+  {
+   "kind": "source-url-policy",
+   "paper": "GD2020县",
+   "ref": "assets",
+   "verdict": "pass",
+   "detail": "0 off-policy hosts, 0 off-policy query params",
+   "evidence": {
+    "bad_host": 0,
+    "bad_param": 0
+   }
+  },
+  {
+   "kind": "source-url-policy",
+   "paper": "ZJ2026C",
+   "ref": "assets",
+   "verdict": "pass",
+   "detail": "0 off-policy hosts, 0 off-policy query params",
+   "evidence": {
+    "bad_host": 0,
+    "bad_param": 0
+   }
+  },
+  {
+   "kind": "image-decode",
+   "paper": "JS2025C",
+   "ref": "图片/省考-江苏-2025-行测-C类",
+   "verdict": "pass",
+   "detail": "217 image files decoded; 0 decode errors",
+   "evidence": {
+    "errors": []
+   }
+  },
+  {
+   "kind": "declared-vs-true-dimensions",
+   "paper": "JS2025C",
+   "ref": "img width/height attrs",
+   "verdict": "pass",
+   "detail": "0 images whose declared width/height differ from the true decoded size",
+   "evidence": {
+    "mismatches": []
+   }
+  },
+  {
+   "kind": "image-decode",
+   "paper": "JS2024A",
+   "ref": "图片/省考-江苏-2024-行测-A类",
+   "verdict": "pass",
+   "detail": "245 image files decoded; 0 decode errors",
+   "evidence": {
+    "errors": []
+   }
+  },
+  {
+   "kind": "declared-vs-true-dimensions",
+   "paper": "JS2024A",
+   "ref": "img width/height attrs",
+   "verdict": "pass",
+   "detail": "0 images whose declared width/height differ from the true decoded size",
+   "evidence": {
+    "mismatches": []
+   }
+  },
+  {
+   "kind": "image-decode",
+   "paper": "GD2020县",
+   "ref": "图片/省考-广东-2020-行测-县级卷",
+   "verdict": "pass",
+   "detail": "293 image files decoded; 0 decode errors",
+   "evidence": {
+    "errors": []
+   }
+  },
+  {
+   "kind": "declared-vs-true-dimensions",
+   "paper": "GD2020县",
+   "ref": "img width/height attrs",
+   "verdict": "need_review",
+   "detail": "7 images whose declared width/height differ from the true decoded size",
+   "evidence": {
+    "mismatches": [
+     {
+      "question": 41,
+      "base": "173d220ea6f0823.png",
+      "declared": [
+       700,
+       200
+      ],
+      "true": [
+       700,
+       201
+      ]
+     },
+     {
+      "question": 42,
+      "base": "173d246326f0025.png",
+      "declared": [
+       700,
+       379
+      ],
+      "true": [
+       700,
+       380
+      ]
+     },
+     {
+      "question": 43,
+      "base": "173d25850d682c5.png",
+      "declared": [
+       700,
+       414
+      ],
+      "true": [
+       700,
+       415
+      ]
+     },
+     {
+      "question": 48,
+      "base": "173dc23e9b3b83f.png",
+      "declared": [
+       700,
+       297
+      ],
+      "true": [
+       700,
+       298
+      ]
+     },
+     {
+      "question": 50,
+      "base": "173e2634fa68f62.png",
+      "declared": [
+       700,
+       356
+      ],
+      "true": [
+       700,
+       357
+      ]
+     },
+     {
+      "question": null,
+      "base": "173dd1882037276.png",
+      "declared": [
+       700,
+       302
+      ],
+      "true": [
+       700,
+       303
+      ]
+     },
+     {
+      "question": 100,
+      "base": "173d25ffa9f6570.png",
+      "declared": [
+       700,
+       257
+      ],
+      "true": [
+       700,
+       258
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "kind": "image-decode",
+   "paper": "ZJ2026C",
+   "ref": "图片/省考-浙江-2026-行测-C类",
+   "verdict": "pass",
+   "detail": "142 image files decoded; 0 decode errors",
+   "evidence": {
+    "errors": []
+   }
+  },
+  {
+   "kind": "declared-vs-true-dimensions",
+   "paper": "ZJ2026C",
+   "ref": "img width/height attrs",
+   "verdict": "pass",
+   "detail": "0 images whose declared width/height differ from the true decoded size",
+   "evidence": {
+    "mismatches": []
+   }
+  },
+  {
+   "kind": "handoff-vs-repo-image-identity",
+   "paper": "JS2025C",
+   "ref": "23 distinct captured images",
+   "verdict": "pass",
+   "detail": "22 byte-exact agreement on sha256+width+height+bytes, 0 disagreement; 1 captured image(s) appear in no repo image tree",
+   "evidence": {
+    "agree": 22,
+    "disagree": 0,
+    "repoAbsent": [
+     {
+      "sha256": "01ce71fa8fe239cce6be48afadfda64c96dc58aca8e9a02b09724dd4dccfa9da",
+      "w": 246,
+      "h": 44,
+      "bytes": 2384
+     }
+    ]
+   }
+  },
+  {
+   "kind": "handoff-vs-repo-image-identity",
+   "paper": "JS2024A",
+   "ref": "24 distinct captured images",
+   "verdict": "pass",
+   "detail": "23 byte-exact agreement on sha256+width+height+bytes, 0 disagreement; 1 captured image(s) appear in no repo image tree",
+   "evidence": {
+    "agree": 23,
+    "disagree": 0,
+    "repoAbsent": [
+     {
+      "sha256": "16bd34931b0a7489406c486c551aeb81e3b841a86c5073d85109af0e71699504",
+      "w": 29,
+      "h": 43,
+      "bytes": 436
+     }
+    ]
+   }
+  },
+  {
+   "kind": "handoff-vs-repo-image-identity",
+   "paper": "GD2020县",
+   "ref": "30 distinct captured images",
+   "verdict": "pass",
+   "detail": "29 byte-exact agreement on sha256+width+height+bytes, 0 disagreement; 1 captured image(s) appear in no repo image tree",
+   "evidence": {
+    "agree": 29,
+    "disagree": 0,
+    "repoAbsent": [
+     {
+      "sha256": "22f95aef6720f674d6473ab6fbf991a9a0b0873f7a9dcbb94c2b59709effc648",
+      "w": 35,
+      "h": 23,
+      "bytes": 684
+     }
+    ]
+   }
+  },
+  {
+   "kind": "handoff-vs-repo-image-identity",
+   "paper": "ZJ2026C",
+   "ref": "18 distinct captured images",
+   "verdict": "pass",
+   "detail": "17 byte-exact agreement on sha256+width+height+bytes, 0 disagreement; 1 captured image(s) appear in no repo image tree",
+   "evidence": {
+    "agree": 17,
+    "disagree": 0,
+    "repoAbsent": [
+     {
+      "sha256": "3d4a3e42229c234c6ce56504c3a3a2686ffdac8fe8ad3296ab03bc2d37208f1d",
+      "w": 40,
+      "h": 26,
+      "bytes": 561
+     }
+    ]
+   }
+  },
+  {
+   "kind": "content-class-census",
+   "paper": "JS2025C",
+   "ref": "questions",
+   "verdict": "info",
+   "detail": "realText=111 placeholder=12 graphicLabelOnlyOptions=7 missingStem=0",
+   "evidence": {
+    "placeholderNumbers": [
+     27,
+     29,
+     35,
+     36,
+     37,
+     42,
+     75,
+     77,
+     78,
+     80,
+     81,
+     85
+    ],
+    "graphicNumbers": [
+     82,
+     83,
+     84,
+     87,
+     88,
+     89,
+     90
+    ],
+    "missingStemNumbers": []
+   }
+  },
+  {
+   "kind": "placeholder-flagged",
+   "paper": "JS2025C",
+   "ref": "reconciliation",
+   "verdict": "pass",
+   "detail": "12/12 placeholder questions are flagged unmatched by the handoff",
+   "evidence": {
+    "numbers": [
+     27,
+     29,
+     35,
+     36,
+     37,
+     42,
+     75,
+     77,
+     78,
+     80,
+     81,
+     85
+    ]
+   }
+  },
+  {
+   "kind": "graphic-only-counted-complete",
+   "paper": "JS2025C",
+   "ref": "graphic-reasoning",
+   "verdict": "defect",
+   "detail": "7 question(s) counted as matched whose options are bare label letters with no question->asset binding; the reconciliation only compares numbers and text so it cannot see the missing figures",
+   "evidence": {
+    "numbers": [
+     82,
+     83,
+     84,
+     87,
+     88,
+     89,
+     90
+    ],
+    "impliedFigureSlots": 35
+   }
+  },
+  {
+   "kind": "content-class-census",
+   "paper": "JS2024A",
+   "ref": "questions",
+   "verdict": "info",
+   "detail": "realText=118 placeholder=3 graphicLabelOnlyOptions=14 missingStem=0",
+   "evidence": {
+    "placeholderNumbers": [
+     96,
+     110,
+     111
+    ],
+    "graphicNumbers": [
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90
+    ],
+    "missingStemNumbers": []
+   }
+  },
+  {
+   "kind": "placeholder-flagged",
+   "paper": "JS2024A",
+   "ref": "reconciliation",
+   "verdict": "pass",
+   "detail": "3/3 placeholder questions are flagged unmatched by the handoff",
+   "evidence": {
+    "numbers": [
+     96,
+     110,
+     111
+    ]
+   }
+  },
+  {
+   "kind": "graphic-only-counted-complete",
+   "paper": "JS2024A",
+   "ref": "graphic-reasoning",
+   "verdict": "defect",
+   "detail": "14 question(s) counted as matched whose options are bare label letters with no question->asset binding; the reconciliation only compares numbers and text so it cannot see the missing figures",
+   "evidence": {
+    "numbers": [
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90
+    ],
+    "impliedFigureSlots": 70
+   }
+  },
+  {
+   "kind": "content-class-census",
+   "paper": "GD2020县",
+   "ref": "questions",
+   "verdict": "info",
+   "detail": "realText=79 placeholder=7 graphicLabelOnlyOptions=13 missingStem=1",
+   "evidence": {
+    "placeholderNumbers": [
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ],
+    "graphicNumbers": [
+     41,
+     42,
+     43,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     77,
+     78,
+     80,
+     84
+    ],
+    "missingStemNumbers": [
+     30
+    ]
+   }
+  },
+  {
+   "kind": "placeholder-flagged",
+   "paper": "GD2020县",
+   "ref": "reconciliation",
+   "verdict": "pass",
+   "detail": "7/7 placeholder questions are flagged unmatched by the handoff",
+   "evidence": {
+    "numbers": [
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ]
+   }
+  },
+  {
+   "kind": "graphic-only-counted-complete",
+   "paper": "GD2020县",
+   "ref": "graphic-reasoning",
+   "verdict": "defect",
+   "detail": "13 question(s) counted as matched whose options are bare label letters with no question->asset binding; the reconciliation only compares numbers and text so it cannot see the missing figures",
+   "evidence": {
+    "numbers": [
+     41,
+     42,
+     43,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     77,
+     78,
+     80,
+     84
+    ],
+    "impliedFigureSlots": 65
+   }
+  },
+  {
+   "kind": "false-match-empty-stem",
+   "paper": "GD2020县",
+   "ref": "reconciliation",
+   "verdict": "defect",
+   "detail": "1 question(s) counted as matched although the stem is empty",
+   "evidence": {
+    "numbers": [
+     30
+    ]
+   }
+  },
+  {
+   "kind": "content-class-census",
+   "paper": "ZJ2026C",
+   "ref": "questions",
+   "verdict": "info",
+   "detail": "realText=103 placeholder=0 graphicLabelOnlyOptions=7 missingStem=0",
+   "evidence": {
+    "placeholderNumbers": [],
+    "graphicNumbers": [
+     61,
+     62,
+     63,
+     64,
+     65,
+     67,
+     68
+    ],
+    "missingStemNumbers": []
+   }
+  },
+  {
+   "kind": "placeholder-flagged",
+   "paper": "ZJ2026C",
+   "ref": "reconciliation",
+   "verdict": "pass",
+   "detail": "0/0 placeholder questions are flagged unmatched by the handoff",
+   "evidence": {
+    "numbers": []
+   }
+  },
+  {
+   "kind": "graphic-only-counted-complete",
+   "paper": "ZJ2026C",
+   "ref": "graphic-reasoning",
+   "verdict": "defect",
+   "detail": "7 question(s) counted as matched whose options are bare label letters with no question->asset binding; the reconciliation only compares numbers and text so it cannot see the missing figures",
+   "evidence": {
+    "numbers": [
+     61,
+     62,
+     63,
+     64,
+     65,
+     67,
+     68
+    ],
+    "impliedFigureSlots": 35
+   }
+  },
+  {
+   "kind": "source-numbering",
+   "paper": "JS2025C",
+   "ref": "1..130",
+   "verdict": "info",
+   "detail": "0 numbers absent inside the source range",
+   "evidence": {
+    "inRangeGaps": []
+   }
+  },
+  {
+   "kind": "repo-numbering-and-offset",
+   "paper": "JS2025C",
+   "ref": "省考/江苏/2025/行测-C类.md",
+   "verdict": "pass",
+   "detail": "130 question headers, range 1..130, gaps []; original numbering preserved across gaps (no renumbering)",
+   "evidence": {
+    "gaps": [],
+    "headerCount": 130
+   }
+  },
+  {
+   "kind": "source-numbering",
+   "paper": "JS2024A",
+   "ref": "1..135",
+   "verdict": "info",
+   "detail": "0 numbers absent inside the source range",
+   "evidence": {
+    "inRangeGaps": []
+   }
+  },
+  {
+   "kind": "repo-numbering-and-offset",
+   "paper": "JS2024A",
+   "ref": "省考/江苏/2024/行测-A类.md",
+   "verdict": "pass",
+   "detail": "131 question headers, range 1..135, gaps [76, 96, 110, 111]; original numbering preserved across gaps (no renumbering)",
+   "evidence": {
+    "gaps": [
+     76,
+     96,
+     110,
+     111
+    ],
+    "headerCount": 131
+   }
+  },
+  {
+   "kind": "source-numbering",
+   "paper": "GD2020县",
+   "ref": "1..100",
+   "verdict": "info",
+   "detail": "0 numbers absent inside the source range",
+   "evidence": {
+    "inRangeGaps": []
+   }
+  },
+  {
+   "kind": "repo-numbering-and-offset",
+   "paper": "GD2020县",
+   "ref": "省考/广东/2020/行测-县级卷.md",
+   "verdict": "pass",
+   "detail": "93 question headers, range 1..100, gaps [69, 70, 71, 72, 73, 74, 75]; original numbering preserved across gaps (no renumbering)",
+   "evidence": {
+    "gaps": [
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ],
+    "headerCount": 93
+   }
+  },
+  {
+   "kind": "source-numbering",
+   "paper": "ZJ2026C",
+   "ref": "1..110",
+   "verdict": "info",
+   "detail": "0 numbers absent inside the source range",
+   "evidence": {
+    "inRangeGaps": []
+   }
+  },
+  {
+   "kind": "repo-numbering-and-offset",
+   "paper": "ZJ2026C",
+   "ref": "省考/浙江/2026/行测-C类.md",
+   "verdict": "pass",
+   "detail": "110 question headers, range 1..110, gaps []; original numbering preserved across gaps (no renumbering)",
+   "evidence": {
+    "gaps": [],
+    "headerCount": 110
+   }
+  },
+  {
+   "kind": "cross-paper-image-identity",
+   "paper": "ALL",
+   "ref": "23 groups",
+   "verdict": "info",
+   "detail": "23 image blobs are byte-identical across papers. Byte equality proves identity of bytes only; whether the shared figure is the intended figure for BOTH questions is a content judgement this audit does not make",
+   "evidence": {
+    "groups": [
+     {
+      "sha256": "76b654d246e08a2642672adff01dfa3e1c97fe225f57a9c609f12f12cf19ef95",
+      "papers": [
+       "JS2024A",
+       "JS2025C"
+      ]
+     },
+     {
+      "sha256": "7f052f1af358eb655ceb30255f9af27f66546beadc9eba3c8313c6ce6bed39e2",
+      "papers": [
+       "JS2024A",
+       "JS2025C"
+      ]
+     },
+     {
+      "sha256": "59127cca5da0e7364cc33adedca53fb912748bd1d763b72efeee7cb6f9bc3bdf",
+      "papers": [
+       "JS2024A",
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "1a9bf615501128e9233006642f220245eeae0dc02a40b608baa687d6a0ab50c0",
+      "papers": [
+       "JS2024A",
+       "JS2025C"
+      ]
+     },
+     {
+      "sha256": "faf49f663cd35bd32f5fb22c9641ac1d71bc4d40c33b97b8229c93f0fa1a101c",
+      "papers": [
+       "JS2024A",
+       "JS2025C"
+      ]
+     },
+     {
+      "sha256": "8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7",
+      "papers": [
+       "JS2024A",
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "ec5e2e6b0b83c779f4f94380366a3911d9c26a72276a67e59ea2e47ae7ff2399",
+      "papers": [
+       "JS2024A",
+       "JS2025C"
+      ]
+     },
+     {
+      "sha256": "904e18d22c3a93832b737d2430a41f86747f7386eed0bd379d78a23c6e8006fc",
+      "papers": [
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "c6dd7841e1a487b4126e5c1e20c58a61058c284d723a9fcd79e3c77cf951d2c4",
+      "papers": [
+       "JS2024A",
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "79126a0ebe44d06af4d845172640151a8e1368f15564528328d54d6c82257ad9",
+      "papers": [
+       "JS2024A",
+       "JS2025C"
+      ]
+     },
+     {
+      "sha256": "4be7b7c4f283ba6d540db608c7d91815d8af473759df9d98b9e1255ddedc4d7b",
+      "papers": [
+       "JS2024A",
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3",
+      "papers": [
+       "JS2024A",
+       "JS2025C"
+      ]
+     },
+     {
+      "sha256": "e834e0f280a402b915629bf6af80d172bf75dfd3e9155d334629c47bb86a2535",
+      "papers": [
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "c6546eaf9a54331af9b7d533ec0d0db4c555e76dc6b4494fd9ed5f4179f5a98e",
+      "papers": [
+       "JS2024A",
+       "JS2025C"
+      ]
+     },
+     {
+      "sha256": "1745c254fe3b44c7c8fc47a3c191c638a485822a482e5a2b8a7512cc2ac64a80",
+      "papers": [
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "fd289ecc8794754afb01a6179cb884633c07b2bc9ce66d18a120471866e881e6",
+      "papers": [
+       "GD2020县",
+       "JS2024A",
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "fb91b90871c1bcd52cb1598548d9f1a5777e61925737599fdfd7342780a1d4d9",
+      "papers": [
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "a84da00b56ba45a550ae0120946b59474e9601fdd078edecacfa10e11fb96118",
+      "papers": [
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "331522c202a6ee30b70da51852cb3ffcc35ac2e98fbba4e36474ba24da4d29bd",
+      "papers": [
+       "JS2024A",
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "a02bf109c29e5179d97f7bcc9c44273f247e2ea53bec5e16d3cf2088b0d526c2",
+      "papers": [
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "56be0e316b24b401ae893a6002c0690433c634ccf5728207f6efe351bc56bcb7",
+      "papers": [
+       "JS2024A",
+       "JS2025C",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "8d0c3d13d3eb536dd6a669632bb71d13b557af0bb7b9d2b364925c3a9a467fce",
+      "papers": [
+       "JS2024A",
+       "ZJ2026C"
+      ]
+     },
+     {
+      "sha256": "8efd937dc3cfed5ec38a140953052ccfdd2c523c19be624312d9f8603419659b",
+      "papers": [
+       "JS2024A",
+       "ZJ2026C"
+      ]
+     }
+    ],
+    "groupCount": 23
+   }
+  }
+ ]
+}

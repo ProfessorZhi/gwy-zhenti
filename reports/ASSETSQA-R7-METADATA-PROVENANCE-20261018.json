@@ -1,0 +1,231 @@
+{
+ "schemaVersion": 1,
+ "kind": "metadata-only-provenance-gate",
+ "contentPolicy": "declared metadata only: no question text, options, image bytes or credentials",
+ "isLegalDetermination": false,
+ "note": "assesses whether a declaration outruns its own stated evidence; it does not decide copyright status and never edits the underlying paper",
+ "records": [
+  {
+   "label": "PR67 浙江 11 个优秀村干部槽位",
+   "area": "浙江",
+   "year": null,
+   "subject": "行测",
+   "variant": "D（优秀村干部）",
+   "checks": [
+    {
+     "rule": "R1-restricted-source-labelling",
+     "verdict": "no_conflict",
+     "verified": false,
+     "reason": "no restricted-source marker alongside an official claim",
+     "evidence": {
+      "claimedNature": "回忆整理参考",
+      "restrictedMarkers": []
+     }
+    },
+    {
+     "rule": "R2-identity-conflation",
+     "verdict": "no_conflict",
+     "conflicts": []
+    },
+    {
+     "rule": "R3-count-boundary",
+     "verdict": "PASS",
+     "reason": "remaining count consistent with recoveries",
+     "evidence": {
+      "before": 46,
+      "after": 46,
+      "recovered": 0,
+      "reclassified": 11,
+      "expectedAfter": 46,
+      "reclassifiedSlotsMustStayInSomeDenominator": true
+     }
+    }
+   ],
+   "blocking": []
+  },
+  {
+   "label": "PR67 上海 8 个行政执法专项槽位",
+   "area": "上海",
+   "year": null,
+   "subject": "申论",
+   "variant": "行政执法专项",
+   "checks": [
+    {
+     "rule": "R1-restricted-source-labelling",
+     "verdict": "no_conflict",
+     "verified": false,
+     "reason": "no restricted-source marker alongside an official claim",
+     "evidence": {
+      "claimedNature": "回忆整理参考",
+      "restrictedMarkers": []
+     }
+    },
+    {
+     "rule": "R2-identity-conflation",
+     "verdict": "no_conflict",
+     "conflicts": []
+    },
+    {
+     "rule": "R3-count-boundary",
+     "verdict": "PASS",
+     "reason": "remaining count consistent with recoveries",
+     "evidence": {
+      "before": 46,
+      "after": 46,
+      "recovered": 0,
+      "reclassified": 0,
+      "expectedAfter": 46,
+      "reclassifiedSlotsMustStayInSomeDenominator": true
+     }
+    }
+   ],
+   "blocking": []
+  },
+  {
+   "label": "上海2017 申论-行政执法卷（仓库内可读文件）",
+   "area": "上海",
+   "year": "2017",
+   "subject": "申论",
+   "variant": "行政执法卷",
+   "checks": [
+    {
+     "rule": "R1-restricted-source-labelling",
+     "verdict": "no_conflict",
+     "verified": false,
+     "reason": "no restricted-source marker alongside an official claim",
+     "evidence": {
+      "claimedNature": "网友回忆版",
+      "restrictedMarkers": [
+       "再分发条件未核实"
+      ]
+     }
+    },
+    {
+     "rule": "R2-identity-conflation",
+     "verdict": "identity_conflict",
+     "conflicts": [
+      {
+       "kind": "enforcement-special-labelled-as-municipal",
+       "detail": "labelled as an annual municipal 市考 申论 paper although the variant is 行政执法; the 行政执法 special recruitment is a separate exam and the identity needs a volume-type ruling before it is counted as 市考 A/B",
+       "severity": "needs_review"
+      }
+     ]
+    }
+   ],
+   "blocking": [
+    "R2-identity-conflation"
+   ]
+  },
+  {
+   "label": "福建2026 申论-通用卷（PR69 引用）",
+   "area": "福建",
+   "year": null,
+   "subject": "申论",
+   "variant": "通用卷",
+   "checks": [
+    {
+     "rule": "R1-restricted-source-labelling",
+     "verdict": "provenance_uncertain",
+     "verified": false,
+     "reason": "declares an official-paper nature while its own source detail names a restricted membership capture and records no redistribution permission",
+     "evidence": {
+      "claimedNature": "正式真题",
+      "restrictedMarkers": [
+       "粉笔会员",
+       "会员采",
+       "再分发条件未核实"
+      ],
+      "redistributionRecorded": false
+     },
+     "requiredAction": "obtain a source-confirmation record, or downgrade the claim"
+    },
+    {
+     "rule": "R2-identity-conflation",
+     "verdict": "no_conflict",
+     "conflicts": []
+    }
+   ],
+   "blocking": [
+    "R1-restricted-source-labelling"
+   ]
+  },
+  {
+   "label": "PR70 北京2026 行测 51 缺号",
+   "area": "北京",
+   "year": null,
+   "subject": "行测",
+   "variant": "统考",
+   "checks": [
+    {
+     "rule": "R1-restricted-source-labelling",
+     "verdict": "no_conflict",
+     "verified": false,
+     "reason": "no restricted-source marker alongside an official claim",
+     "evidence": {
+      "claimedNature": "回忆整理参考",
+      "restrictedMarkers": []
+     }
+    },
+    {
+     "rule": "R2-identity-conflation",
+     "verdict": "no_conflict",
+     "conflicts": []
+    },
+    {
+     "rule": "R3-count-boundary",
+     "verdict": "PASS",
+     "reason": "remaining count consistent with recoveries",
+     "evidence": {
+      "before": 51,
+      "after": 51,
+      "recovered": 0,
+      "reclassified": 0,
+      "expectedAfter": 51,
+      "reclassifiedSlotsMustStayInSomeDenominator": true
+     }
+    }
+   ],
+   "blocking": []
+  },
+  {
+   "label": "PR71 回执行：已验图片内容冲突",
+   "area": null,
+   "year": null,
+   "subject": null,
+   "variant": null,
+   "checks": [
+    {
+     "rule": "R1-restricted-source-labelling",
+     "verdict": "no_conflict",
+     "verified": false,
+     "reason": "no restricted-source marker alongside an official claim",
+     "evidence": {
+      "claimedNature": "",
+      "restrictedMarkers": []
+     }
+    },
+    {
+     "rule": "R2-identity-conflation",
+     "verdict": "no_conflict",
+     "conflicts": []
+    },
+    {
+     "rule": "R4-image-evidence-promotion",
+     "verdict": "FAIL",
+     "reason": "verified image content conflicts, yet the row is exact/auto-acceptable",
+     "evidence": {
+      "grade": "exact",
+      "autoAcceptable": true,
+      "imagesAvailable": true,
+      "imagesSimilarity": 0,
+      "flags": [],
+      "verifiedConflictIsPositiveEvidenceOfDifference": true
+     }
+    }
+   ],
+   "blocking": [
+    "R4-image-evidence-promotion"
+   ]
+  }
+ ]
+}

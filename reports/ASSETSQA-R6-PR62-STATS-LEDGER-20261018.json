@@ -1,0 +1,203 @@
+{
+ "schemaVersion": 1,
+ "kind": "no-content-matcher-statistics-verification",
+ "contentPolicy": "counts, ratios and checks only; no question text, no URLs",
+ "note": "metadata/algorithm verification, not source truth verification",
+ "thresholds": {
+  "low": 0.45,
+  "suggest": 0.85
+ },
+ "semantics": {
+  "identity": "normalized_equal (NFKC + width folding + punctuation/space stripping) — NOT byte identity",
+  "binding": "bidirectional mutual-best, one-to-one, ties excluded",
+  "coverage": "three separate tiers; candidates tier includes weak and is NOT usable coverage"
+ },
+ "semanticsDisclosure": {
+  "statesNormalizedEqual": true,
+  "statesNotByteIdentity": true
+ },
+ "cases": [
+  {
+   "id": "sh-2026",
+   "sourceId": "8472470",
+   "sourceQuestions": 130,
+   "repositoryQuestions": 129,
+   "schema": "r2",
+   "checks": [
+    {
+     "check": "closure-source",
+     "verdict": "PASS",
+     "detail": "source-side categories 130 vs sourceQuestions 130",
+     "evidence": {}
+    },
+    {
+     "check": "closure-repository",
+     "verdict": "PASS",
+     "detail": "mapping 112 + repo_only 17 = 129 vs 129",
+     "evidence": {}
+    },
+    {
+     "check": "one-to-one",
+     "verdict": "PASS",
+     "detail": "112 pairs; duplicate source [], duplicate repository []",
+     "evidence": {
+      "pairs": 112
+     }
+    },
+    {
+     "check": "range",
+     "verdict": "PASS",
+     "detail": "0 mapped numbers outside range",
+     "evidence": {
+      "bad": []
+     }
+    },
+    {
+     "check": "tiers-arithmetic",
+     "verdict": "PASS",
+     "detail": "exact 68 + near 35 + weak 9 = 112 vs candidates 112",
+     "evidence": {}
+    },
+    {
+     "check": "tiers-vs-coverage",
+     "verdict": "PASS",
+     "detail": "recomputed {'exact': 0.523, 'highConfidence': 0.792, 'candidates': 0.862} vs reported {0.523, 0.792, 0.862}",
+     "evidence": {}
+    },
+    {
+     "check": "tier-counts-vs-json",
+     "verdict": "PASS",
+     "detail": "candidates 112 / approved 112 / mapping 112; exact 68 / strict 68; review 9 / 9",
+     "evidence": {}
+    },
+    {
+     "check": "mapping-review-disjoint",
+     "verdict": "PASS",
+     "detail": "mapping 112 and reviewCandidates 9; intersection []",
+     "evidence": {
+      "intersection": [],
+      "mapping": 112,
+      "review": 9
+     }
+    },
+    {
+     "check": "order-metrics",
+     "verdict": "PASS",
+     "detail": "recomputed inversions 1219, descents 4, pairs 6216 vs reported 1219, 4, 6216",
+     "evidence": {
+      "inversionRate": 0.1961
+     }
+    },
+    {
+     "check": "weak-in-coverage",
+     "verdict": "INFO",
+     "detail": "candidates tier includes 9 weak row(s); not usable coverage",
+     "evidence": {
+      "coverageCandidates": 0.862,
+      "coverageHighConfidence": 0.792
+     }
+    }
+   ],
+   "offsetDistribution": {
+    "-50": 19,
+    "28": 17,
+    "-1": 16,
+    "15": 15,
+    "31": 14,
+    "-15": 13,
+    "-25": 10,
+    "3": 7,
+    "7": 1
+   }
+  },
+  {
+   "id": "gd-2026",
+   "sourceId": "8399765",
+   "sourceQuestions": 90,
+   "repositoryQuestions": 86,
+   "schema": "r2",
+   "checks": [
+    {
+     "check": "closure-source",
+     "verdict": "PASS",
+     "detail": "source-side categories 90 vs sourceQuestions 90",
+     "evidence": {}
+    },
+    {
+     "check": "closure-repository",
+     "verdict": "PASS",
+     "detail": "mapping 77 + repo_only 9 = 86 vs 86",
+     "evidence": {}
+    },
+    {
+     "check": "one-to-one",
+     "verdict": "PASS",
+     "detail": "77 pairs; duplicate source [], duplicate repository []",
+     "evidence": {
+      "pairs": 77
+     }
+    },
+    {
+     "check": "range",
+     "verdict": "PASS",
+     "detail": "0 mapped numbers outside range",
+     "evidence": {
+      "bad": []
+     }
+    },
+    {
+     "check": "tiers-arithmetic",
+     "verdict": "PASS",
+     "detail": "exact 64 + near 7 + weak 6 = 77 vs candidates 77",
+     "evidence": {}
+    },
+    {
+     "check": "tiers-vs-coverage",
+     "verdict": "PASS",
+     "detail": "recomputed {'exact': 0.719, 'highConfidence': 0.798, 'candidates': 0.865} vs reported {0.719, 0.798, 0.865}",
+     "evidence": {}
+    },
+    {
+     "check": "tier-counts-vs-json",
+     "verdict": "PASS",
+     "detail": "candidates 77 / approved 77 / mapping 77; exact 64 / strict 64; review 3 / 3",
+     "evidence": {}
+    },
+    {
+     "check": "mapping-review-disjoint",
+     "verdict": "PASS",
+     "detail": "mapping 77 and reviewCandidates 3; intersection []",
+     "evidence": {
+      "intersection": [],
+      "mapping": 77,
+      "review": 3
+     }
+    },
+    {
+     "check": "order-metrics",
+     "verdict": "PASS",
+     "detail": "recomputed inversions 205, descents 1, pairs 2926 vs reported 205, 1, 2926",
+     "evidence": {
+      "inversionRate": 0.0701
+     }
+    },
+    {
+     "check": "weak-in-coverage",
+     "verdict": "INFO",
+     "detail": "candidates tier includes 6 weak row(s); not usable coverage",
+     "evidence": {
+      "coverageCandidates": 0.865,
+      "coverageHighConfidence": 0.798
+     }
+    }
+   ],
+   "offsetDistribution": {
+    "1": 26,
+    "-4": 16,
+    "0": 15,
+    "5": 15,
+    "-50": 5
+   }
+  }
+ ]
+}

@@ -1,0 +1,254 @@
+{
+ "schemaVersion": 1,
+ "kind": "no-content-matcher-statistics-verification",
+ "contentPolicy": "counts, ratios and checks only; no question text, no URLs",
+ "note": "metadata/algorithm verification, not source truth verification",
+ "thresholds": {
+  "low": 0.45,
+  "suggest": 0.85
+ },
+ "cases": [
+  {
+   "id": "sh-2026",
+   "sourceId": "8472470",
+   "sourceQuestions": 130,
+   "repositoryQuestions": 129,
+   "checks": [
+    {
+     "check": "coverage-denominator",
+     "verdict": "PASS",
+     "detail": "coverage reported 0.862 vs recomputed 0.8615 = 112/130",
+     "evidence": {
+      "mapped": 112,
+      "denominator": 130,
+      "imageOnly": 0,
+      "weakIncluded": 9,
+      "coverageWithoutWeak": 0.7923
+     }
+    },
+    {
+     "check": "one-to-one",
+     "verdict": "PASS",
+     "detail": "113 pairs; duplicate source [], duplicate repository []",
+     "evidence": {
+      "pairs": 113,
+      "uniqueSource": 113,
+      "uniqueRepository": 113
+     }
+    },
+    {
+     "check": "range",
+     "verdict": "PASS",
+     "detail": "0 mapped numbers outside 1..source / 1..repository",
+     "evidence": {
+      "bad": []
+     }
+    },
+    {
+     "check": "closure-source",
+     "verdict": "PASS",
+     "detail": "source-side categories 130 vs sourceQuestions 130",
+     "evidence": {
+      "kinds": {
+       "exact_reordered": 68,
+       "unmatched_no_candidate": 9,
+       "near_reordered": 35,
+       "ambiguous_multi_candidate": 9,
+       "weak_candidate_review": 9
+      }
+     }
+    },
+    {
+     "check": "closure-repository",
+     "verdict": "PASS",
+     "detail": "mapping 113 + repo_only 16 = 129 vs 129",
+     "evidence": {}
+    },
+    {
+     "check": "exact-vs-mapping",
+     "verdict": "PASS",
+     "detail": "mapping exact rows 69 vs reported exactPairs 69",
+     "evidence": {}
+    },
+    {
+     "check": "exact-pairs-vs-classified",
+     "verdict": "INFO",
+     "detail": "exact pairs 69 vs classified exact 68 -> 1 exact pair(s) classified ambiguous",
+     "evidence": {
+      "delta": 1
+     }
+    },
+    {
+     "check": "mapping-vs-classified",
+     "verdict": "FAIL",
+     "detail": "mapping 113 vs classified mapped 112; gap 1 = sources classified ambiguous that are still bound in `mapping`",
+     "evidence": {
+      "gap": 1,
+      "ambiguous": 9
+     }
+    },
+    {
+     "check": "monotonicity",
+     "verdict": "INFO",
+     "detail": "4 adjacent descent point(s) but 1249/6328 inverted pairs (19.7%); 'nearly monotonic' is not supported",
+     "evidence": {
+      "descents": [
+       [
+        30,
+        1
+       ],
+       [
+        75,
+        51
+       ],
+       [
+        109,
+        86
+       ],
+       [
+        86,
+        31
+       ]
+      ],
+      "inversions": 1249,
+      "totalPairs": 6328
+     }
+    },
+    {
+     "check": "weak-inside-mapping",
+     "verdict": "INFO",
+     "detail": "9 mapping row(s) have score < 0.85 (weak_candidate_review)",
+     "evidence": {
+      "weakInMapping": 9,
+      "coverageWithoutWeak": 0.7923
+     }
+    }
+   ],
+   "offsetDistribution": {
+    "-50": 19,
+    "28": 17,
+    "-1": 16,
+    "15": 15,
+    "31": 15,
+    "-15": 13,
+    "-25": 10,
+    "3": 7,
+    "7": 1
+   }
+  },
+  {
+   "id": "gd-2026",
+   "sourceId": "8399765",
+   "sourceQuestions": 90,
+   "repositoryQuestions": 86,
+   "checks": [
+    {
+     "check": "coverage-denominator",
+     "verdict": "PASS",
+     "detail": "coverage reported 0.865 vs recomputed 0.8652 = 77/89",
+     "evidence": {
+      "mapped": 77,
+      "denominator": 89,
+      "imageOnly": 1,
+      "weakIncluded": 6,
+      "coverageWithoutWeak": 0.7978
+     }
+    },
+    {
+     "check": "one-to-one",
+     "verdict": "PASS",
+     "detail": "79 pairs; duplicate source [], duplicate repository []",
+     "evidence": {
+      "pairs": 79,
+      "uniqueSource": 79,
+      "uniqueRepository": 79
+     }
+    },
+    {
+     "check": "range",
+     "verdict": "PASS",
+     "detail": "0 mapped numbers outside 1..source / 1..repository",
+     "evidence": {
+      "bad": []
+     }
+    },
+    {
+     "check": "closure-source",
+     "verdict": "PASS",
+     "detail": "source-side categories 90 vs sourceQuestions 90",
+     "evidence": {
+      "kinds": {
+       "weak_candidate_review": 6,
+       "exact_same_number": 11,
+       "near_reordered": 7,
+       "exact_reordered": 53,
+       "unmatched_no_candidate": 9,
+       "image_only_not_comparable": 1,
+       "ambiguous_multi_candidate": 3
+      }
+     }
+    },
+    {
+     "check": "closure-repository",
+     "verdict": "PASS",
+     "detail": "mapping 79 + repo_only 7 = 86 vs 86",
+     "evidence": {}
+    },
+    {
+     "check": "exact-vs-mapping",
+     "verdict": "PASS",
+     "detail": "mapping exact rows 66 vs reported exactPairs 66",
+     "evidence": {}
+    },
+    {
+     "check": "exact-pairs-vs-classified",
+     "verdict": "INFO",
+     "detail": "exact pairs 66 vs classified exact 64 -> 2 exact pair(s) classified ambiguous",
+     "evidence": {
+      "delta": 2
+     }
+    },
+    {
+     "check": "mapping-vs-classified",
+     "verdict": "FAIL",
+     "detail": "mapping 79 vs classified mapped 77; gap 2 = sources classified ambiguous that are still bound in `mapping`",
+     "evidence": {
+      "gap": 2,
+      "ambiguous": 3
+     }
+    },
+    {
+     "check": "monotonicity",
+     "verdict": "INFO",
+     "detail": "1 adjacent descent point(s) but 215/3081 inverted pairs (7.0%); 'nearly monotonic' is not supported",
+     "evidence": {
+      "descents": [
+       [
+        65,
+        16
+       ]
+      ],
+      "inversions": 215,
+      "totalPairs": 3081
+     }
+    },
+    {
+     "check": "weak-inside-mapping",
+     "verdict": "INFO",
+     "detail": "6 mapping row(s) have score < 0.85 (weak_candidate_review)",
+     "evidence": {
+      "weakInMapping": 6,
+      "coverageWithoutWeak": 0.7978
+     }
+    }
+   ],
+   "offsetDistribution": {
+    "1": 28,
+    "-4": 16,
+    "0": 15,
+    "5": 15,
+    "-50": 5
+   }
+  }
+ ]
+}

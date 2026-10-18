@@ -1,0 +1,120 @@
+{
+ "schemaVersion": 1,
+ "kind": "no-content-answer-source-index-verification",
+ "contentPolicy": "counts only; no question text, options, image bytes or credentials",
+ "recomputed": {
+  "papers": 1169,
+  "answerBlocks": 56047,
+  "verified": 1070,
+  "sourcePresent": 54977,
+  "unsupported": 0,
+  "zeroVerifiedPapers": 836,
+  "genericOnlyPapers": 835,
+  "fullyVerifiedPapers": 138,
+  "priority": {
+   "P2": 654,
+   "P3": 138,
+   "P1": 358,
+   "P0": 19
+  }
+ },
+ "checks": [
+  {
+   "check": "papers-total",
+   "verdict": "PASS",
+   "detail": "computed 1169; summary.json 1169; stated 1169",
+   "evidence": {
+    "computed": 1169,
+    "summary": 1169,
+    "stated": 1169
+   }
+  },
+  {
+   "check": "answer-blocks",
+   "verdict": "PASS",
+   "detail": "computed 56047; summary.json 56047; stated 56047",
+   "evidence": {
+    "computed": 56047,
+    "summary": 56047,
+    "stated": 56047
+   }
+  },
+  {
+   "check": "verified-blocks",
+   "verdict": "FAIL",
+   "detail": "computed 1070; summary.json 1070; stated 1020",
+   "evidence": {
+    "computed": 1070,
+    "summary": 1070,
+    "stated": 1020
+   }
+  },
+  {
+   "check": "zero-verified-papers",
+   "verdict": "FAIL",
+   "detail": "computed 836; summary.json None; stated 848",
+   "evidence": {
+    "computed": 836,
+    "summary": null,
+    "stated": 848
+   }
+  },
+  {
+   "check": "generic-only-papers",
+   "verdict": "FAIL",
+   "detail": "computed 835; summary.json 835; stated 848",
+   "evidence": {
+    "computed": 835,
+    "summary": 835,
+    "stated": 848
+   }
+  },
+  {
+   "check": "fully-verified-papers",
+   "verdict": "PASS",
+   "detail": "computed 138; summary.json 138; stated 138",
+   "evidence": {
+    "computed": 138,
+    "summary": 138,
+    "stated": 138
+   }
+  },
+  {
+   "check": "priority-closure",
+   "verdict": "PASS",
+   "detail": "P0+P1+P2+P3 = 1169 vs papers 1169",
+   "evidence": {
+    "distribution": {
+     "P2": 654,
+     "P3": 138,
+     "P1": 358,
+     "P0": 19
+    }
+   }
+  },
+  {
+   "check": "priority-matches-tickets",
+   "verdict": "PASS",
+   "detail": "P0+P1+P2 = 1031 vs ticket rows 1031",
+   "evidence": {}
+  },
+  {
+   "check": "self-reference-excluded",
+   "verdict": "PASS",
+   "detail": "0 paper(s) declare this repository as their own source",
+   "evidence": {
+    "paths": []
+   }
+  },
+  {
+   "check": "narrative-vs-artifact",
+   "verdict": "FAIL",
+   "detail": "narrative states 1020 verified blocks; artifact contains 1070 (difference 50)",
+   "evidence": {
+    "artifact": 1070,
+    "narrative": 1020,
+    "summaryJson": 1070
+   }
+  }
+ ]
+}
