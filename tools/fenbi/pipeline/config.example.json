@@ -11,7 +11,7 @@
     "jitter": 0.2
   },
   "throttle": {
-    "minIntervalMs": 1200,
+    "minIntervalMs": 2500,
     "maxIntervalMs": 120000,
     "cooldownMs": 300000
   },
