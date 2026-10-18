@@ -1,0 +1,1131 @@
+{
+  "schemaVersion": 1,
+  "kind": "gwy-zhenti-fingerprint-shard",
+  "paper": {
+    "paperSourceId": "8399765",
+    "year": 2026,
+    "area": "广东",
+    "subject": "xingce",
+    "variant": "统考",
+    "repoPath": "省考/广东/2026/行测-统考.md"
+  },
+  "rights": {
+    "redistribution": "local_only"
+  },
+  "source": {
+    "questionCount": 90,
+    "questions": [
+      {
+        "number": 1
+      },
+      {
+        "number": 2
+      },
+      {
+        "number": 3
+      },
+      {
+        "number": 4
+      },
+      {
+        "number": 5
+      },
+      {
+        "number": 6
+      },
+      {
+        "number": 7
+      },
+      {
+        "number": 8
+      },
+      {
+        "number": 9
+      },
+      {
+        "number": 10
+      },
+      {
+        "number": 11
+      },
+      {
+        "number": 12
+      },
+      {
+        "number": 13
+      },
+      {
+        "number": 14
+      },
+      {
+        "number": 15
+      },
+      {
+        "number": 16
+      },
+      {
+        "number": 17
+      },
+      {
+        "number": 18
+      },
+      {
+        "number": 19
+      },
+      {
+        "number": 20
+      },
+      {
+        "number": 21
+      },
+      {
+        "number": 22
+      },
+      {
+        "number": 23
+      },
+      {
+        "number": 24
+      },
+      {
+        "number": 25
+      },
+      {
+        "number": 26
+      },
+      {
+        "number": 27
+      },
+      {
+        "number": 28
+      },
+      {
+        "number": 29
+      },
+      {
+        "number": 30
+      },
+      {
+        "number": 31
+      },
+      {
+        "number": 32
+      },
+      {
+        "number": 33
+      },
+      {
+        "number": 34
+      },
+      {
+        "number": 35,
+        "status": "image_only"
+      },
+      {
+        "number": 36
+      },
+      {
+        "number": 37
+      },
+      {
+        "number": 38
+      },
+      {
+        "number": 39
+      },
+      {
+        "number": 40
+      },
+      {
+        "number": 41
+      },
+      {
+        "number": 42
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 45
+      },
+      {
+        "number": 46
+      },
+      {
+        "number": 47
+      },
+      {
+        "number": 48
+      },
+      {
+        "number": 49
+      },
+      {
+        "number": 50
+      },
+      {
+        "number": 51
+      },
+      {
+        "number": 52
+      },
+      {
+        "number": 53
+      },
+      {
+        "number": 54
+      },
+      {
+        "number": 55
+      },
+      {
+        "number": 56
+      },
+      {
+        "number": 57
+      },
+      {
+        "number": 58
+      },
+      {
+        "number": 59
+      },
+      {
+        "number": 60
+      },
+      {
+        "number": 61
+      },
+      {
+        "number": 62
+      },
+      {
+        "number": 63
+      },
+      {
+        "number": 64
+      },
+      {
+        "number": 65
+      },
+      {
+        "number": 66
+      },
+      {
+        "number": 67
+      },
+      {
+        "number": 68
+      },
+      {
+        "number": 69
+      },
+      {
+        "number": 70
+      },
+      {
+        "number": 71
+      },
+      {
+        "number": 72
+      },
+      {
+        "number": 73
+      },
+      {
+        "number": 74
+      },
+      {
+        "number": 75
+      },
+      {
+        "number": 76
+      },
+      {
+        "number": 77
+      },
+      {
+        "number": 78
+      },
+      {
+        "number": 79
+      },
+      {
+        "number": 80
+      },
+      {
+        "number": 81
+      },
+      {
+        "number": 82
+      },
+      {
+        "number": 83
+      },
+      {
+        "number": 84
+      },
+      {
+        "number": 85
+      },
+      {
+        "number": 86
+      },
+      {
+        "number": 87
+      },
+      {
+        "number": 88
+      },
+      {
+        "number": 89
+      },
+      {
+        "number": 90
+      }
+    ]
+  },
+  "repository": {
+    "questionCount": 86,
+    "questions": [
+      {
+        "number": 1
+      },
+      {
+        "number": 2
+      },
+      {
+        "number": 3
+      },
+      {
+        "number": 4
+      },
+      {
+        "number": 5
+      },
+      {
+        "number": 6
+      },
+      {
+        "number": 7
+      },
+      {
+        "number": 8
+      },
+      {
+        "number": 9
+      },
+      {
+        "number": 10
+      },
+      {
+        "number": 11
+      },
+      {
+        "number": 12
+      },
+      {
+        "number": 13
+      },
+      {
+        "number": 14
+      },
+      {
+        "number": 15
+      },
+      {
+        "number": 16
+      },
+      {
+        "number": 17
+      },
+      {
+        "number": 18
+      },
+      {
+        "number": 19
+      },
+      {
+        "number": 20
+      },
+      {
+        "number": 21
+      },
+      {
+        "number": 22
+      },
+      {
+        "number": 23
+      },
+      {
+        "number": 24
+      },
+      {
+        "number": 25
+      },
+      {
+        "number": 26
+      },
+      {
+        "number": 27
+      },
+      {
+        "number": 28
+      },
+      {
+        "number": 29
+      },
+      {
+        "number": 30
+      },
+      {
+        "number": 31
+      },
+      {
+        "number": 32
+      },
+      {
+        "number": 33
+      },
+      {
+        "number": 34
+      },
+      {
+        "number": 35
+      },
+      {
+        "number": 36
+      },
+      {
+        "number": 37
+      },
+      {
+        "number": 38
+      },
+      {
+        "number": 39
+      },
+      {
+        "number": 40
+      },
+      {
+        "number": 41
+      },
+      {
+        "number": 42
+      },
+      {
+        "number": 43
+      },
+      {
+        "number": 44
+      },
+      {
+        "number": 45
+      },
+      {
+        "number": 46
+      },
+      {
+        "number": 47
+      },
+      {
+        "number": 48
+      },
+      {
+        "number": 49
+      },
+      {
+        "number": 50
+      },
+      {
+        "number": 51
+      },
+      {
+        "number": 52
+      },
+      {
+        "number": 53
+      },
+      {
+        "number": 54
+      },
+      {
+        "number": 55
+      },
+      {
+        "number": 56
+      },
+      {
+        "number": 57
+      },
+      {
+        "number": 58
+      },
+      {
+        "number": 59
+      },
+      {
+        "number": 60
+      },
+      {
+        "number": 61
+      },
+      {
+        "number": 62
+      },
+      {
+        "number": 63
+      },
+      {
+        "number": 64
+      },
+      {
+        "number": 65
+      },
+      {
+        "number": 66
+      },
+      {
+        "number": 67
+      },
+      {
+        "number": 68
+      },
+      {
+        "number": 69
+      },
+      {
+        "number": 70
+      },
+      {
+        "number": 71
+      },
+      {
+        "number": 72
+      },
+      {
+        "number": 73
+      },
+      {
+        "number": 74
+      },
+      {
+        "number": 75
+      },
+      {
+        "number": 76
+      },
+      {
+        "number": 77
+      },
+      {
+        "number": 78
+      },
+      {
+        "number": 79
+      },
+      {
+        "number": 80
+      },
+      {
+        "number": 81
+      },
+      {
+        "number": 82
+      },
+      {
+        "number": 83
+      },
+      {
+        "number": 84
+      },
+      {
+        "number": 85
+      },
+      {
+        "number": 86
+      }
+    ]
+  },
+  "mapping": [
+    {
+      "sourceNumber": 1,
+      "repositoryNumber": 1,
+      "grade": "weak",
+      "method": "same_number",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 2,
+      "repositoryNumber": 2,
+      "grade": "weak",
+      "method": "same_number",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 3,
+      "repositoryNumber": 3,
+      "grade": "weak",
+      "method": "same_number",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 4,
+      "repositoryNumber": 4,
+      "grade": "weak",
+      "method": "same_number",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 5,
+      "repositoryNumber": 5,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 6,
+      "repositoryNumber": 6,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 7,
+      "repositoryNumber": 7,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 8,
+      "repositoryNumber": 8,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 9,
+      "repositoryNumber": 9,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 10,
+      "repositoryNumber": 10,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 11,
+      "repositoryNumber": 11,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 12,
+      "repositoryNumber": 12,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 13,
+      "repositoryNumber": 13,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 14,
+      "repositoryNumber": 14,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 15,
+      "repositoryNumber": 15,
+      "grade": "exact",
+      "method": "same_number",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 16,
+      "repositoryNumber": 21,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 17,
+      "repositoryNumber": 22,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 18,
+      "repositoryNumber": 23,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 19,
+      "repositoryNumber": 24,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 20,
+      "repositoryNumber": 25,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 21,
+      "repositoryNumber": 26,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 22,
+      "repositoryNumber": 27,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 23,
+      "repositoryNumber": 28,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 24,
+      "repositoryNumber": 29,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 25,
+      "repositoryNumber": 30,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 26,
+      "repositoryNumber": 31,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 27,
+      "repositoryNumber": 32,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 28,
+      "repositoryNumber": 33,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 29,
+      "repositoryNumber": 34,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 30,
+      "repositoryNumber": 35,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 36,
+      "repositoryNumber": 37,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 37,
+      "repositoryNumber": 38,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 38,
+      "repositoryNumber": 39,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 39,
+      "repositoryNumber": 40,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 40,
+      "repositoryNumber": 41,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 41,
+      "repositoryNumber": 42,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 42,
+      "repositoryNumber": 43,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 43,
+      "repositoryNumber": 44,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 44,
+      "repositoryNumber": 45,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 45,
+      "repositoryNumber": 46,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 48,
+      "repositoryNumber": 49,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 50,
+      "repositoryNumber": 51,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 51,
+      "repositoryNumber": 52,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 52,
+      "repositoryNumber": 53,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 53,
+      "repositoryNumber": 54,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 54,
+      "repositoryNumber": 55,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 55,
+      "repositoryNumber": 56,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 56,
+      "repositoryNumber": 57,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 57,
+      "repositoryNumber": 58,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 58,
+      "repositoryNumber": 59,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 59,
+      "repositoryNumber": 60,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 60,
+      "repositoryNumber": 61,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 61,
+      "repositoryNumber": 62,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 62,
+      "repositoryNumber": 63,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 63,
+      "repositoryNumber": 64,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 64,
+      "repositoryNumber": 65,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 66,
+      "repositoryNumber": 16,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 67,
+      "repositoryNumber": 17,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 68,
+      "repositoryNumber": 18,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 69,
+      "repositoryNumber": 19,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 70,
+      "repositoryNumber": 20,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 71,
+      "repositoryNumber": 67,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 72,
+      "repositoryNumber": 68,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 73,
+      "repositoryNumber": 69,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 74,
+      "repositoryNumber": 70,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 76,
+      "repositoryNumber": 72,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 77,
+      "repositoryNumber": 73,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 78,
+      "repositoryNumber": 74,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 79,
+      "repositoryNumber": 75,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 81,
+      "repositoryNumber": 77,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 82,
+      "repositoryNumber": 78,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 83,
+      "repositoryNumber": 79,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 84,
+      "repositoryNumber": 80,
+      "grade": "weak",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": false
+    },
+    {
+      "sourceNumber": 86,
+      "repositoryNumber": 82,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 87,
+      "repositoryNumber": 83,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 88,
+      "repositoryNumber": 84,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": true
+    },
+    {
+      "sourceNumber": 89,
+      "repositoryNumber": 85,
+      "grade": "weak",
+      "method": "one_to_one_reorder",
+      "normalizedEqual": false
+    }
+  ],
+  "reviewCandidates": [
+    {
+      "sourceNumber": 46,
+      "candidateRepositoryNumbers": [
+        47,
+        48,
+        50
+      ],
+      "score": 1,
+      "reason": "tie_in_best_score_not_bound"
+    },
+    {
+      "sourceNumber": 47,
+      "candidateRepositoryNumbers": [
+        47,
+        48,
+        50
+      ],
+      "score": 1,
+      "reason": "tie_in_best_score_not_bound"
+    },
+    {
+      "sourceNumber": 49,
+      "candidateRepositoryNumbers": [
+        47,
+        48,
+        50
+      ],
+      "score": 1,
+      "reason": "tie_in_best_score_not_bound"
+    }
+  ],
+  "provenance": {
+    "basis": "PR#62 advisory reorder audit (numbers/grades/normalizedEqual only; no text or image hashes)",
+    "officialVerification": false
+  }
+}

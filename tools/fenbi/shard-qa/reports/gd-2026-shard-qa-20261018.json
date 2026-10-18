@@ -1,0 +1,774 @@
+{
+  "schemaVersion": 1,
+  "kind": "gwy-zhenti-shard-qa-report",
+  "generatedAt": "2026-10-18T04:28:33.460Z",
+  "paper": {
+    "paperSourceId": "8399765",
+    "year": 2026,
+    "area": "广东",
+    "subject": "xingce",
+    "variant": "统考",
+    "repoPath": "省考/广东/2026/行测-统考.md"
+  },
+  "rights": {
+    "redistribution": "local_only"
+  },
+  "officialVerification": false,
+  "basis": "sha256-fingerprints-only; normalized_equal metadata is advisory; no text/image bytes read",
+  "counts": {
+    "total": 90,
+    "fingerprint_exact": 0,
+    "normalized_equal": 0,
+    "normalized_equal_mapping_only": 64,
+    "needs_review": 13,
+    "image_conflict": 0,
+    "ambiguous": 3,
+    "unmatched": 9,
+    "placeholder": 0,
+    "unknown": 0,
+    "image_only_not_comparable": 1,
+    "blocked_missing_fingerprint": 0
+  },
+  "slots": [
+    {
+      "sourceNumber": 1,
+      "repositoryNumber": 1,
+      "grade": "weak",
+      "method": "same_number",
+      "status": "needs_review",
+      "reason": "mapping-grade-weak"
+    },
+    {
+      "sourceNumber": 2,
+      "repositoryNumber": 2,
+      "grade": "weak",
+      "method": "same_number",
+      "status": "needs_review",
+      "reason": "mapping-grade-weak"
+    },
+    {
+      "sourceNumber": 3,
+      "repositoryNumber": 3,
+      "grade": "weak",
+      "method": "same_number",
+      "status": "needs_review",
+      "reason": "mapping-grade-weak"
+    },
+    {
+      "sourceNumber": 4,
+      "repositoryNumber": 4,
+      "grade": "weak",
+      "method": "same_number",
+      "status": "needs_review",
+      "reason": "mapping-grade-weak"
+    },
+    {
+      "sourceNumber": 5,
+      "repositoryNumber": 5,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 6,
+      "repositoryNumber": 6,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 7,
+      "repositoryNumber": 7,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 8,
+      "repositoryNumber": 8,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 9,
+      "repositoryNumber": 9,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 10,
+      "repositoryNumber": 10,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 11,
+      "repositoryNumber": 11,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 12,
+      "repositoryNumber": 12,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 13,
+      "repositoryNumber": 13,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 14,
+      "repositoryNumber": 14,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 15,
+      "repositoryNumber": 15,
+      "grade": "exact",
+      "method": "same_number",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 16,
+      "repositoryNumber": 21,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "status": "needs_review",
+      "reason": "mapping-grade-near"
+    },
+    {
+      "sourceNumber": 17,
+      "repositoryNumber": 22,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "status": "needs_review",
+      "reason": "mapping-grade-near"
+    },
+    {
+      "sourceNumber": 18,
+      "repositoryNumber": 23,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "status": "needs_review",
+      "reason": "mapping-grade-near"
+    },
+    {
+      "sourceNumber": 19,
+      "repositoryNumber": 24,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "status": "needs_review",
+      "reason": "mapping-grade-near"
+    },
+    {
+      "sourceNumber": 20,
+      "repositoryNumber": 25,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "status": "needs_review",
+      "reason": "mapping-grade-near"
+    },
+    {
+      "sourceNumber": 21,
+      "repositoryNumber": 26,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 22,
+      "repositoryNumber": 27,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "status": "needs_review",
+      "reason": "mapping-grade-near"
+    },
+    {
+      "sourceNumber": 23,
+      "repositoryNumber": 28,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 24,
+      "repositoryNumber": 29,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 25,
+      "repositoryNumber": 30,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 26,
+      "repositoryNumber": 31,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 27,
+      "repositoryNumber": 32,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 28,
+      "repositoryNumber": 33,
+      "grade": "near",
+      "method": "one_to_one_reorder",
+      "status": "needs_review",
+      "reason": "mapping-grade-near"
+    },
+    {
+      "sourceNumber": 29,
+      "repositoryNumber": 34,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 30,
+      "repositoryNumber": 35,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 31,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "unmatched",
+      "reason": "no-one-to-one-mapping"
+    },
+    {
+      "sourceNumber": 32,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "unmatched",
+      "reason": "no-one-to-one-mapping"
+    },
+    {
+      "sourceNumber": 33,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "unmatched",
+      "reason": "no-one-to-one-mapping"
+    },
+    {
+      "sourceNumber": 34,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "unmatched",
+      "reason": "no-one-to-one-mapping"
+    },
+    {
+      "sourceNumber": 35,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "image_only_not_comparable",
+      "reason": "image-only-slide-not-comparable"
+    },
+    {
+      "sourceNumber": 36,
+      "repositoryNumber": 37,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 37,
+      "repositoryNumber": 38,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 38,
+      "repositoryNumber": 39,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 39,
+      "repositoryNumber": 40,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 40,
+      "repositoryNumber": 41,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 41,
+      "repositoryNumber": 42,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 42,
+      "repositoryNumber": 43,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 43,
+      "repositoryNumber": 44,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 44,
+      "repositoryNumber": 45,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 45,
+      "repositoryNumber": 46,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 46,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "ambiguous",
+      "candidates": [
+        47,
+        48,
+        50
+      ],
+      "reason": "tie_in_best_score_not_bound"
+    },
+    {
+      "sourceNumber": 47,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "ambiguous",
+      "candidates": [
+        47,
+        48,
+        50
+      ],
+      "reason": "tie_in_best_score_not_bound"
+    },
+    {
+      "sourceNumber": 48,
+      "repositoryNumber": 49,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 49,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "ambiguous",
+      "candidates": [
+        47,
+        48,
+        50
+      ],
+      "reason": "tie_in_best_score_not_bound"
+    },
+    {
+      "sourceNumber": 50,
+      "repositoryNumber": 51,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 51,
+      "repositoryNumber": 52,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 52,
+      "repositoryNumber": 53,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 53,
+      "repositoryNumber": 54,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 54,
+      "repositoryNumber": 55,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 55,
+      "repositoryNumber": 56,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 56,
+      "repositoryNumber": 57,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 57,
+      "repositoryNumber": 58,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 58,
+      "repositoryNumber": 59,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 59,
+      "repositoryNumber": 60,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 60,
+      "repositoryNumber": 61,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 61,
+      "repositoryNumber": 62,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 62,
+      "repositoryNumber": 63,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 63,
+      "repositoryNumber": 64,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 64,
+      "repositoryNumber": 65,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 65,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "unmatched",
+      "reason": "no-one-to-one-mapping"
+    },
+    {
+      "sourceNumber": 66,
+      "repositoryNumber": 16,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 67,
+      "repositoryNumber": 17,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 68,
+      "repositoryNumber": 18,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 69,
+      "repositoryNumber": 19,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 70,
+      "repositoryNumber": 20,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 71,
+      "repositoryNumber": 67,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 72,
+      "repositoryNumber": 68,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 73,
+      "repositoryNumber": 69,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 74,
+      "repositoryNumber": 70,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 75,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "unmatched",
+      "reason": "no-one-to-one-mapping"
+    },
+    {
+      "sourceNumber": 76,
+      "repositoryNumber": 72,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 77,
+      "repositoryNumber": 73,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 78,
+      "repositoryNumber": 74,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 79,
+      "repositoryNumber": 75,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 80,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "unmatched",
+      "reason": "no-one-to-one-mapping"
+    },
+    {
+      "sourceNumber": 81,
+      "repositoryNumber": 77,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 82,
+      "repositoryNumber": 78,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 83,
+      "repositoryNumber": 79,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 84,
+      "repositoryNumber": 80,
+      "grade": "weak",
+      "method": "one_to_one_reorder",
+      "status": "needs_review",
+      "reason": "mapping-grade-weak"
+    },
+    {
+      "sourceNumber": 85,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "unmatched",
+      "reason": "no-one-to-one-mapping"
+    },
+    {
+      "sourceNumber": 86,
+      "repositoryNumber": 82,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 87,
+      "repositoryNumber": 83,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 88,
+      "repositoryNumber": 84,
+      "grade": "exact",
+      "method": "one_to_one_reorder",
+      "status": "normalized_equal_mapping_only",
+      "reason": "pr62-normalized-equal-metadata-no-local-hashes"
+    },
+    {
+      "sourceNumber": 89,
+      "repositoryNumber": 85,
+      "grade": "weak",
+      "method": "one_to_one_reorder",
+      "status": "needs_review",
+      "reason": "mapping-grade-weak"
+    },
+    {
+      "sourceNumber": 90,
+      "repositoryNumber": null,
+      "grade": null,
+      "method": null,
+      "status": "unmatched",
+      "reason": "no-one-to-one-mapping"
+    }
+  ],
+  "notes": [
+    "fingerprint_exact means the supplied text+image hashes match; it is not independent official verification.",
+    "placeholder/unknown/image_only slots are never counted as valid content.",
+    "near/weak/ambiguous/unmatched/image_conflict slots remain needs_review or blocked."
+  ]
+}
