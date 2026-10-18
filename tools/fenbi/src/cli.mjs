@@ -17,6 +17,7 @@ import { normalizeCatalogPayload, mergeCatalog } from './catalog.mjs';
 import { parseFenbiExamDom } from './dom.mjs';
 import { comparePaper, alignmentExitCode } from './align.mjs';
 import { MAX_CONCURRENCY, clampConcurrency, createControl, createHostThrottle, createSerialQueue, runBounded } from './schedule.mjs';
+import { buildCaptureBatchMetrics } from './capture-metrics.mjs';
 
 const HELP = `Fenbi capture (local persistent Chrome/Edge; no model or cloud-browser calls)
   node src/cli.mjs init
@@ -29,7 +30,7 @@ const HELP = `Fenbi capture (local persistent Chrome/Edge; no model or cloud-bro
       --area AREA --year YEAR --variant VARIANT --url OBSERVED_URL [--questions N]
   node src/cli.mjs capture --job KEY [--manual] [--force] [--headless] [--concurrency N]
   node src/cli.mjs capture --all        # ready URLs only, one browser session
-                                        # N = pages inside that one session (1..3, default 1)
+                                        # N = pages inside that one session (1..3, default 2 for NEW config)
   node src/cli.mjs validate --job KEY
   node src/cli.mjs export --job KEY     # fresh candidate folder only
   node src/cli.mjs normalize-dom --document WORK_JSON
@@ -195,7 +196,7 @@ async function captureJob(session, job, config, values, runtime = {}) {
   const configFingerprint = digest({ contentSelector: config.contentSelector, nextQuestionSelector: config.nextQuestionSelector,
     explanationSelector: config.explanationSelector, fieldMap: config.fieldMap, domAdapter: config.domAdapter });
   const resumed = !values.force && await resumeBundle(WORK, job, configFingerprint, validateDocument);
-  if (resumed) { console.log(`${jobKey(job)}: verified complete checkpoint, skipped`); return; }
+  if (resumed) { console.log(`${jobKey(job)}: verified complete checkpoint, skipped`); return { status: 'cached_complete' }; }
   const directory = safeChild(WORK, `papers/${jobKey(job)}`);
   await fs.mkdir(directory, { recursive: true });
   const runId = `${Date.now()}-${process.pid}`;
@@ -326,6 +327,7 @@ async function captureJob(session, job, config, values, runtime = {}) {
     status: verdict.status, observed: verdict.observed, provenance: paperProvenance(document),
     issueCodes: verdict.issues.map(x => x.code) }, null, 2));
   if (verdict.status !== 'complete') process.exitCode = 2;
+  return { status: verdict.status };
 }
 
 async function bundleCommand(command, job) {
@@ -429,7 +431,10 @@ async function main() {
         if (values.concurrency !== undefined && Number(values.concurrency) > MAX_CONCURRENCY) {
           console.log(`并发上限为 ${MAX_CONCURRENCY}，已收敛到 ${concurrency}。`);
         }
-        const throttle = createHostThrottle({ minIntervalMs: config.delayMs });
+        // A historical local config may still say 800ms. Enforce a safe host-navigation floor
+        // even before the operator updates that config; page count never multiplies host rate.
+        const minimumNavigationSpacingMs = Math.max(config.delayMs, 2500);
+        const throttle = createHostThrottle({ minIntervalMs: minimumNavigationSpacingMs });
         const control = createControl();
         const serialize = createSerialQueue();
         const registry = await readRegistry(config);
@@ -442,12 +447,20 @@ async function main() {
         const strayPages = [];
         const isScheduled = (candidate) => pages.includes(candidate);
         session.context.on('page', (opened) => { if (!isScheduled(opened)) strayPages.push(opened); });
+        const startedAtMs = Date.now();
         const run = await runBounded(jobs, (job, { slot }) => captureJob(session, job, config, values,
           { page: pages[slot], slot, throttle, control, serialize, registry, strayPages }), { concurrency, control });
         if (strayPages.length) console.log(JSON.stringify({ strayPages: strayPages.map((page) => safePageUrl(page.url(), config.routeParams)),
           note: '页面自行打开的标签页未被驱动，也未计入任何任务的证据' }, null, 2));
-        console.log(JSON.stringify({ command: 'capture', concurrency: run.concurrency, completed: run.results.filter(r => r?.ok).length,
-          failed: run.failures.length, skipped: run.skipped.length, stopped: run.stopped, reason: run.reason, throttle: throttle.state() }, null, 2));
+        const metrics = buildCaptureBatchMetrics(run, { startedAtMs, endedAtMs: Date.now(), planned: jobs.length,
+          spacingMs: minimumNavigationSpacingMs });
+        const metricsFile = path.join(WORK, `capture-metrics-${Date.now()}.json`);
+        await writeJson(metricsFile, metrics);
+        console.log(JSON.stringify({ command: 'capture', concurrency: run.concurrency,
+          complete: metrics.counts.newlyComplete, cached: metrics.counts.cachedComplete,
+          partial: metrics.counts.partial, failed: metrics.counts.failed, skipped: metrics.counts.skipped,
+          durationMs: metrics.durationMs, completePerHour: metrics.newlyCompletePerHour,
+          stopped: run.stopped, reason: run.reason, metricsFile, throttle: throttle.state() }, null, 2));
         for (const failure of run.failures) console.log(`任务失败（不影响其它卷）：${failure.item?.identity?.id ?? failure.index} ${failure.error?.code ?? failure.error?.name ?? 'ERROR'}`);
         for (const index of run.skipped) console.log(`未启动（已停止）：${jobs[index]?.identity?.id ?? index}`);
         for (const page of pages.slice(1)) await page.close().catch(() => {});
