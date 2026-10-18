@@ -293,3 +293,22 @@ node --test test/browser-smoke.test.mjs
 CI只运行不依赖浏览器安装的离线单元测试；不使用粉笔账户、网络采集或付费服务。后续真实小样应独立记录行测/申论各一卷的完整率、耗时、人工介入和来源证据，不能用合成测试替代。
 
 官方参考：[Playwright持久配置](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-persistent-context)、[认证状态](https://playwright.dev/docs/auth)、[响应读取](https://playwright.dev/docs/api/class-response)。
+
+## 2026-10-18 有界提速与效果观察（Dell A6000）
+
+**现有代码已能在一个持久 Chrome context 内运行多个 Page**，不需要第二个采集进程或登录 Profile。新生成的 `config.json` 默认 `concurrency: 2`、`delayMs: 2500`，最多 3 Page。旧的本地 `work/fenbi/config.json` **不会自动覆盖**；如果还写着 `concurrency: 1`，可以显式从命令行开始 2 路：
+
+```bash
+cd tools/fenbi
+node src/cli.mjs capture --all --concurrency 2
+# 仅在证实没有风控信号、系统压力和速度收益良好时，试 3 路
+node src/cli.mjs capture --all --concurrency 3
+```
+
+- 所有 Page 共用同一个浏览器上下文和站点导航节流闸门；实际导航至少间隔 2.5 秒，**不是**保证页面的所有图片/API 子请求都严格间隔 2.5 秒。按站点访问规则操作，不绕验证/限流，不凭 Source ID 猜 URL。
+- 命令行 `--concurrency` 会覆盖旧配置的并发数；使用老配置时，捕获侧仍强制应用 2.5 秒同域导航间隔。需先确认现有 `plan.json` 只含真实、可复现且获授权的练习。
+- 每次有界批次产生 `work/fenbi/capture-metrics-*.json`。其中 `newlyReadable` 表示本次新采到至少一题的卷；`questionSlotsObserved` 是本次读到的题位数；`newlyComplete` 表示框架结构检查完整；`cachedComplete` **不算新抓到的卷**；`partial/failed/skipped` 独立统计。速度比对优先看 `newlyReadablePerHour`，配合限流/内存信号判断是否升至 3 Page。
+- 因源页面可能不提供答案解析，`newlyReadable>0` 但 `newlyComplete=0` 仍可能是有效题面采集，不等于 A 级入库成功。自动生成、校验、入库另外计数。
+- 本次仅提交代码、测试和说明，**未在 A6000 执行真实抓取、没有修改本地配置、没有初始化新练习**。浏览器测试、系统资源压测、现有 A6000 旧配置迁移仍待现场验收。
+
+原始题干、图片、粉笔解析、登录凭据继续只保留于许可范围内的 A6000 工作目录；Private GitHub 也不是商业题库内容的复制/再分发许可。
