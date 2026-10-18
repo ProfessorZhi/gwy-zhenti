@@ -327,7 +327,7 @@ async function captureJob(session, job, config, values, runtime = {}) {
     status: verdict.status, observed: verdict.observed, provenance: paperProvenance(document),
     issueCodes: verdict.issues.map(x => x.code) }, null, 2));
   if (verdict.status !== 'complete') process.exitCode = 2;
-  return { status: verdict.status };
+  return { status: verdict.status, observedQuestions: document.questions.length };
 }
 
 async function bundleCommand(command, job) {
@@ -457,9 +457,11 @@ async function main() {
         const metricsFile = path.join(WORK, `capture-metrics-${Date.now()}.json`);
         await writeJson(metricsFile, metrics);
         console.log(JSON.stringify({ command: 'capture', concurrency: run.concurrency,
-          complete: metrics.counts.newlyComplete, cached: metrics.counts.cachedComplete,
+          complete: metrics.counts.newlyComplete, readable: metrics.counts.newlyReadable,
+          questionSlotsObserved: metrics.counts.questionSlotsObserved, cached: metrics.counts.cachedComplete,
           partial: metrics.counts.partial, failed: metrics.counts.failed, skipped: metrics.counts.skipped,
-          durationMs: metrics.durationMs, completePerHour: metrics.newlyCompletePerHour,
+          durationMs: metrics.durationMs, readablePerHour: metrics.newlyReadablePerHour,
+          completePerHour: metrics.newlyCompletePerHour,
           stopped: run.stopped, reason: run.reason, metricsFile, throttle: throttle.state() }, null, 2));
         for (const failure of run.failures) console.log(`任务失败（不影响其它卷）：${failure.item?.identity?.id ?? failure.index} ${failure.error?.code ?? failure.error?.name ?? 'ERROR'}`);
         for (const index of run.skipped) console.log(`未启动（已停止）：${jobs[index]?.identity?.id ?? index}`);
