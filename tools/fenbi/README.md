@@ -235,6 +235,52 @@ if (!validateMappingReport(report).ok) throw new Error('report contract violated
 `true`；非 `exact` 的配对不得 `autoAcceptable`）。下游可据此审计，也可直接比对两次运行的 JSON
 ——同一输入产生完全相同的报告。
 
+## 有界增量校验与元数据回执（≤10 卷 / 单次 ≤100 题）
+
+`src/incremental-validator.mjs` + `src/mapping-batch.mjs` 在少量卷上跑一次**有界**校验，产出一份
+**只含元数据**的回执，可直接交给队列或 Browser Owner 作为证据回执：
+
+```bash
+node src/mapping-batch.mjs --input batch.json --out receipt.json \
+     [--max-papers 10] [--max-questions 100] [--gate-module ./my-gate.mjs]
+```
+
+退出码：`0` 无需人工 · `2` 需人工复核 / 被阻塞 / 超限 · `1` 用法或解析错误。**超过上限直接拒绝整批**
+（`blocked: "batch-over-limit"`），不截断、不跳过。
+
+回执分类（各自计数，互不合并）：
+
+| 类别 | 含义 |
+|---|---|
+| `ordered_same_number` | 题号相同且归一化后正文相等 |
+| `cross_number` | 正文相等但题号不同（乱序证据） |
+| `recollection_variant` | 疑似同题但措辞不同 → 人工 |
+| `material_or_image_not_compared` | 正文相等但材料/图片证据不可比 |
+| `missing_options` | 一侧没有选项正文 |
+| `uncollected_stub` | 被调用方资格闸门拒绝（征集占位等） |
+| `answer_source_missing` | 有答案/解析但没有来源回执（receipt） |
+| `answer_unknown` | 两侧都没有答案/解析 |
+| `ambiguous` / `unmatched_source` / `unmatched_repository` | 同 mapping 报告 |
+
+高风险判定（都强制 `requiresHumanReview`）：
+
+- **归一化相等 ≠ 官方逐字相同**。回执恒设 `verbatimIdentityNotClaimed: true`；每行给
+  `identity: "normalized-equal" | "similar" | "none"`，只有原始正文逐字一致时 `verbatimIdentical`
+  才为 `true`。
+- **版本措辞不同 → 整卷 advisory**：输入可带 `sourceVersion` / `repositoryVersion`（如
+  `网友回忆版` / `官方原卷`）；不同则整卷行标 `version_wording_differs`，`autoAcceptable` 一律 `false`。
+- **纯图题只有已验证字节 SHA 才可能 `exact`**（沿用 PR #42/#63 的语义）；引用路径或 `⟦IMAGE⟧`
+  占位符永远不算。
+- **题号相同但内容不可比** → `number_only_no_content`，绝不进 `ordered_same_number`。
+- **非严格比对一律 advisory**。
+
+**回执只含元数据**：`rows` 里只有题号、id、类别、等级、分数、旗标与正文的 SHA-256，
+**不包含题干、选项、材料、图片字节或任何凭据**；`validateReceipt()` 会拒绝含这些字段的回执。
+
+与其它 PR 的关系：占位闸门仍归 PR #45 —— 用 `--gate-module` 传入其 `isCollectionStub`
+包装后的谓词，本模块**不复制**那份策略；offline handoff 契约归 PR #65，本模块只消费
+`{ papers: [...] }` 的纯元数据形状并可在回执里带 `handoffSha256`，不假装有实时链路。
+
 ## 测试
 
 ```powershell
