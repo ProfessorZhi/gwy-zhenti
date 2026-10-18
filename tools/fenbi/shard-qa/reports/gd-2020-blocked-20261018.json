@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "gwy-zhenti-shard-qa-report",
+  "generatedAt": "2026-10-18T00:00:00.000Z",
+  "paper": {
+    "paperSourceId": "96785",
+    "year": 2020,
+    "area": "广东",
+    "subject": "xingce",
+    "variant": "县级",
+    "repoPath": "省考/广东/2020/行测-县级.md"
+  },
+  "rights": { "redistribution": "local_only" },
+  "officialVerification": false,
+  "status": "BLOCKED_HOFF_OWNERS",
+  "counts": {
+    "total": 100,
+    "placeholderReported": 7,
+    "imageByteVerified": 1,
+    "textFingerprintVerified": 0,
+    "mappingVerified": 0,
+    "fingerprintExact": 0,
+    "blocked": 100
+  },
+  "evidence": [
+    {
+      "source": "PR#72 FENBI-IMAGE-RESIDUAL-QA-20261018",
+      "claim": "96785 Q30: 1 source image / 1 repository image, byte-identical (real SHA-256)"
+    },
+    {
+      "source": "PR#69 township cross-check",
+      "claim": "Guangdong 2020 township same-number comparison: 90/90 text equal = 0; township substitution is not evidence"
+    },
+    {
+      "source": "Owner observation handoff 2026-10-18",
+      "claim": "100 question count and 36 image SHA-256 values are present, but the handoff has no per-question text hashes and no one-to-one mapping"
+    }
+  ],
+  "reason": "No legal fingerprint-only shard with per-question text SHA-256, image SHA-256 and a one-to-one mapping was delivered. The 7 placeholder slots have no body in the source; township papers cannot be substituted. Only Q30 image bytes are independently byte-verified; that is not a text or mapping verification.",
+  "nextNeeded": [
+    "Owner-produced fingerprint-only shard: sourceId 96785, per-question text SHA-256 + image SHA-256 + one-to-one repository mapping, local_only, no text/image bytes.",
+    "Explicit placeholder question numbers (the count 7 is known, the numbers are not).",
+    "Independent image byte hashes per question where images exist; a reference path or ⟦IMAGE⟧ marker is not evidence."
+  ],
+  "notes": [
+    "No question text, options, answers, image bytes, exercise URLs, cookies or account data are included.",
+    "This report does not claim any per-question content verification for 96785."
+  ]
+}
