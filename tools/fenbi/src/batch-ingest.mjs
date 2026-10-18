@@ -18,6 +18,7 @@ const fp = q => [text(q.contentHtml), ...(q.options || []).flatMap(o => [o.label
 const isStub = q => isCollectionStub(text(q.contentHtml));
 const isUsable = q => q && !isStub(q) && (core(q.contentHtml).length >= 12 || /<(?:img|image)\b/iu.test(q.contentHtml || ''));
 const flat = value => typeof value === 'string' ? value.trim() : '';
+const hasExternalImage = value => /<(?:img|image)\b|!\[[^\]]*\]\(/iu.test(flat(value));
 
 export function assemble(document, oldMarkdown = '') {
   const issues = [];
@@ -68,10 +69,10 @@ export function assemble(document, oldMarkdown = '') {
       current.contentHtml='';current.options=[];current.answerHtml='';current.explanationHtml='';
     }
     if (flat(current.answerHtml)) counters.sourceAnswers++;
-    else if (ancestor && flat(ancestor.answerHtml)) {
+    else if (ancestor && flat(ancestor.answerHtml) && !hasExternalImage(ancestor.answerHtml)) {
       current.answerHtml=ancestor.answerHtml;current.answerOrigin='original-repository';counters.oldAnswersInherited++;
     } else counters.answerUnknown++;
-    if (!flat(current.explanationHtml) && ancestor && flat(ancestor.explanationHtml)) {
+    if (!flat(current.explanationHtml) && ancestor && flat(ancestor.explanationHtml) && !hasExternalImage(ancestor.explanationHtml)) {
       current.explanationHtml=ancestor.explanationHtml;current.explanationOrigin='original-repository';counters.oldExplanationsInherited++;
     }
     merged.push(current);
