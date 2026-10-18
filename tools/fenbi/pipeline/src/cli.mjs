@@ -10,7 +10,9 @@ import { jobIdFor } from './identity.mjs';
 import { evaluateBackpressure, hostPressure, summarizeHostPressure } from './backpressure.mjs';
 import { loadThrottle, resetThrottle, saveThrottle, throttleSnapshot } from './throttle.mjs';
 import { loadAdapter, runAwaitedManifest, runCollector, runWorkerDrain } from './collector.mjs';
-import { importObservations, loadAllowlist } from './observation.mjs';
+import { importObservations, importObservationDirectory, loadAllowlist } from './observation.mjs';
+import { importQaHandoff } from './qa-handoff.mjs';
+import { buildStageManifest, writeStageManifest } from './manifest.mjs';
 
 const HELP = `gwy-zhenti offline pipeline (bounded queue, no daemon)
   node tools/fenbi/pipeline/src/cli.mjs init [--data-dir DIR]
@@ -21,7 +23,11 @@ const HELP = `gwy-zhenti offline pipeline (bounded queue, no daemon)
       [--image material/q1.png:https://img.fbstatic.cn/...] [--questions N] [--materials N]
       [--variant V] [--actor NAME]
   node tools/fenbi/pipeline/src/cli.mjs enqueue-offline --handoff FILE [--artifact-root DIR]
+  node tools/fenbi/pipeline/src/cli.mjs qa-import --handoff FILE [--artifact-root DIR] [--allowlist FILE]
+  node tools/fenbi/pipeline/src/cli.mjs manifest --stage STAGE [--out FILE]
   node tools/fenbi/pipeline/src/cli.mjs observe-import --handoff FILE [--allowlist FILE] [--dry-run]
+  node tools/fenbi/pipeline/src/cli.mjs observe-import --handoff-dir DIR [--max-files 5]
+      [--allowlist FILE] [--dry-run]
   node tools/fenbi/pipeline/src/cli.mjs allowlist show [--allowlist FILE]
   node tools/fenbi/pipeline/src/cli.mjs drain --role collector|normalizer|matcher|assets_qa|answer_qa|reviewer|verifier
       [--stage STAGE] [--budget N] [--owner NAME] [--adapter-module FILE]
@@ -57,6 +63,7 @@ function parse() {
         'handoff', 'artifact-root', 'role', 'stage', 'budget', 'owner', 'adapter-module', 'job',
         'token', 'generation', 'file', 'name', 'kind', 'declarations', 'answer-provenance',
         'reviewer', 'outcome', 'reason', 'receipt', 'sha256', 'producer', 'out', 'host', 'allowlist',
+        'handoff-dir', 'max-files',
       ].map((name) => [name, { type: 'string' }])),
       ...Object.fromEntries(['observed', 'approved', 'citations-verified', 'json', 'help', 'dry-run', 'images-verified'].map((name) => [name, { type: 'boolean', default: false }])),
       evidence: { type: 'string', multiple: true, default: [] },
@@ -111,12 +118,38 @@ async function loadQueue(configFile, dataDir) {
   return { config, queue: openQueue(config) };
 }
 
+async function readStateJson(config, name) {
+  try { return JSON.parse(await fs.readFile(path.join(config.dataDir, 'state', name), 'utf8')); }
+  catch { return null; }
+}
+
 async function baseStatus(queue, config) {
   const status = await queue.status();
   const pressure = hostPressure();
   const backpressure = evaluateBackpressure({ status, config });
+  const catalog = await readStateJson(config, 'observed-catalog.json');
+  const byClassification = {};
+  for (const entry of Object.values(catalog?.entries ?? {})) {
+    byClassification[entry.classification] = (byClassification[entry.classification] ?? 0) + 1;
+  }
+  const collectorState = await readStateJson(config, 'collector-status.json');
+  const uniqueCatalogSources = new Set(Object.values(catalog?.entries ?? {}).map((entry) => entry.sourceId)).size;
   return {
     status,
+    collector: {
+      adapterWired: collectorState?.adapterWired ?? false,
+      lastRunAt: collectorState?.lastRunAt ?? null,
+      lastReason: collectorState?.reason ?? null,
+      note: collectorState?.adapterWired === true
+        ? 'A collector adapter was recorded by the last bounded drain.'
+        : 'No collector adapter is wired; drain --role collector exits 2 collector_unwired unless --adapter-module is supplied.',
+    },
+    observedCatalog: {
+      entries: Object.keys(catalog?.entries ?? {}).length,
+      uniqueSources: uniqueCatalogSources,
+      byClassification,
+      updatedAt: catalog?.updatedAt ?? null,
+    },
     host: summarizeHostPressure(pressure),
     backpressure,
     capacity: {
@@ -188,15 +221,65 @@ async function main() {
     return ok({ jobId: result.jobId, created: result.created, duplicate: result.duplicate, status: result.job.status });
   }
 
-  if (command === 'observe-import') {
+  if (command === 'qa-import') {
     const filename = positionals[1] ?? requireValue(values, 'handoff', 'handoff');
+    const root = values['artifact-root'] ? path.resolve(values['artifact-root']) : path.dirname(path.resolve(filename));
     const allowlistFile = values.allowlist ?? path.join(config.dataDir, 'allowlist.json');
     const allowlist = await loadAllowlist(allowlistFile);
-    const handoff = JSON.parse(await fs.readFile(path.resolve(filename), 'utf8'));
-    const report = await importObservations({
-      queue, config, handoff, allowlist, dryRun: Boolean(values['dry-run']),
+    const result = await importQaHandoff({ queue, config, filename: path.resolve(filename), artifactRoot: root, allowlist });
+    return ok({ ...result, allowlistFile });
+  }
+
+  if (command === 'manifest') {
+    const stage = values.stage ?? positionals[1] ?? requireValue(values, 'stage', 'stage');
+    const jobs = await queue.listJobs();
+    const catalog = await readStateJson(config, 'observed-catalog.json');
+    const byClassification = {};
+    for (const entry of Object.values(catalog?.entries ?? {})) {
+      byClassification[entry.classification] = (byClassification[entry.classification] ?? 0) + 1;
+    }
+    const manifest = buildStageManifest({
+      jobs, stage, config,
+      observedCatalog: {
+        entries: Object.keys(catalog?.entries ?? {}).length,
+        uniqueSources: new Set(Object.values(catalog?.entries ?? {}).map((entry) => entry.sourceId)).size,
+        byClassification,
+        updatedAt: catalog?.updatedAt ?? null,
+        items: Object.values(catalog?.entries ?? {}).map((entry) => ({
+          sourceId: entry.sourceId, title: entry.title, version: entry.version,
+          classification: entry.classification, reason: entry.reason,
+          contentStatus: entry.contentStatus, urlDigest: entry.urlDigest,
+        })),
+      },
     });
-    return ok({ ...report, allowlistFile });
+    const filename = values.out ? path.resolve(values.out) : path.join(config.dataDir, 'manifests', `${stage}.json`);
+    await writeStageManifest(filename, manifest);
+    return ok({
+      manifest: filename, stage, tasks: manifest.tasks.length,
+      blocked: manifest.tasks.filter((task) => task.blocked).length,
+      observedCatalog: manifest.observedCatalog,
+      note: manifest.note,
+    });
+  }
+
+  if (command === 'observe-import') {
+    const handoffFile = values.handoff ?? positionals[1];
+    const handoffDir = values['handoff-dir'];
+    if (handoffFile && handoffDir) return fail('INVALID_INPUT', 'Use either --handoff or --handoff-dir, not both');
+    if (!handoffFile && !handoffDir) return fail('INVALID_INPUT', 'Provide --handoff FILE or --handoff-dir DIR');
+    const allowlistFile = values.allowlist ?? path.join(config.dataDir, 'allowlist.json');
+    const allowlist = await loadAllowlist(allowlistFile);
+    const dryRun = Boolean(values['dry-run']);
+    if (handoffDir) {
+      const maxFiles = values['max-files'] === undefined ? 5 : Number(values['max-files']);
+      const report = await importObservationDirectory({
+        queue, config, directory: path.resolve(handoffDir), allowlist, maxFiles, dryRun,
+      });
+      return ok({ ...report, mode: 'directory', allowlistFile });
+    }
+    const handoff = JSON.parse(await fs.readFile(path.resolve(handoffFile), 'utf8'));
+    const report = await importObservations({ queue, config, handoff, allowlist, dryRun });
+    return ok({ ...report, mode: 'file', allowlistFile });
   }
 
   if (command === 'allowlist') {
@@ -367,7 +450,10 @@ try {
   process.stdout.write(JSON.stringify(payload, null, 2) + '\n');
   process.exitCode = exit;
 } catch (error) {
-  const exit = ['LEASE_HELD', 'COLLECTOR_LOCKED', 'LEASE_LOST', 'THROTTLE_BLOCKED'].includes(error.code) ? EXIT.BLOCKED : EXIT.INVALID;
+  const blockedCodes = ['LEASE_HELD', 'COLLECTOR_LOCKED', 'LEASE_LOST', 'THROTTLE_BLOCKED',
+    'QA_HANDOFF_NOT_AUTHORIZED', 'QA_HANDOFF_INSECURE_PERMISSIONS', 'QA_HANDOFF_RAW_CONTENT',
+    'QA_HANDOFF_URL_NOT_ALLOWED', 'QA_HANDOFF_REDISTRIBUTION', 'QA_HANDOFF_OBSERVATION_EVIDENCE'];
+  const exit = blockedCodes.includes(error.code) ? EXIT.BLOCKED : EXIT.INVALID;
   process.stdout.write(JSON.stringify({ ok: false, error: { code: error.code ?? 'ERROR', message: error.message } }, null, 2) + '\n');
   process.exitCode = exit;
 }

@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { setTimeout as sleep } from 'node:timers/promises';
-import { ensurePrivateDir, nowIso, randomToken, readJson } from './fsutil.mjs';
+import { atomicWriteJson, ensurePrivateDir, nowIso, randomToken, readJson } from './fsutil.mjs';
 import { queuePaths } from './config.mjs';
 import { EXIT, NON_COMPLETION, ROLE_STAGES } from './constants.mjs';
 import { loadThrottle, penalize, reserve, saveThrottle, settle, throttleSnapshot } from './throttle.mjs';
@@ -96,6 +96,13 @@ export async function runCollector({
   try {
     if (loadThrottleState) throttle = await loadThrottle(config.dataDir, config, now());
     else throttle = { schemaVersion: 1, updatedAt: nowIso(now()), minIntervalMs: config.throttle.minIntervalMs, maxIntervalMs: config.throttle.maxIntervalMs, stopNewTasks: false, blocked: null, hosts: {} };
+    await atomicWriteJson(path.join(paths.state, 'collector-status.json'), {
+      schemaVersion: 1,
+      adapterWired: Boolean(adapter),
+      lastRunAt: nowIso(now()),
+      owner,
+      reason: adapter ? 'adapter-present' : 'collector_unwired',
+    });
     if (throttle.stopNewTasks) {
       return await finish({ reason: 'blocked_auth', exit: EXIT.BLOCKED, claimed: 0, results: [], message: 'A prior 401/captcha stop is still active; a human must reset it after checking the profile.' });
     }

@@ -2,9 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { newQueue, temporary, makeConfig } from './helpers.mjs';
+import { newQueue, enqueueInput, temporary, makeConfig } from './helpers.mjs';
 import {
-  classifyObservation, importObservations, loadAllowlist, validateObservationHandoff,
+  classifyObservation, importObservations, importObservationDirectory, loadAllowlist, validateObservationHandoff,
 } from '../src/observation.mjs';
 import { digest } from '../src/fsutil.mjs';
 
@@ -166,6 +166,125 @@ test('handoff envelopes reject credentials but allow the false permission declar
   assert.equal(list.value.ids.size, 4);
 });
 
+test('owner re-observation evidence is accepted, metadata-only evidence is not', async (t) => {
+  const dir = await temporary(t);
+  const config = makeConfig(dir, { routeParams: ['routecs'] });
+  const list = await allowlist();
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const rightsDefault = { ...observation().rights, evidence: [{ type: 'rights-default', ref: 'synthetic local_only default' }] };
+  const positive = observation({
+    route: {
+      ...observation().route,
+      url: 'https://www.fenbi.com/spa/tiku/exam/9000001?routecs=xingce',
+      evidence: [
+        { type: 'route_reobserved_20261018', ref: 'synthetic owner re-observation' },
+        { type: 'url_stable_across_reads', ref: 'synthetic stable URL' },
+        { type: 'offline_fetchability', ref: 'synthetic fetchability probe' },
+      ],
+    },
+    rights: rightsDefault,
+  });
+  assert.equal(classifyObservation(positive, { allowlist: list.value, config }).classification, 'capture_ready');
+  const metadataOnly = observation({
+    route: {
+      ...observation().route,
+      evidence: [
+        { type: 'needs_owner_reobservation', ref: 'metadata only' },
+        { type: 'metadata-handoff', ref: 'metadata only' },
+      ],
+    },
+    rights: rightsDefault,
+  });
+  const rejected = classifyObservation(metadataOnly, { allowlist: list.value, config });
+  assert.equal(rejected.classification, 'needs_route_review');
+  assert.equal(rejected.reason, 'observation-evidence-missing');
+  const sessionOnly = observation({
+    route: {
+      ...observation().route,
+      evidence: [{ type: 'requires_owner_authenticated_session', ref: 'session required' }],
+    },
+    rights: rightsDefault,
+  });
+  assert.equal(classifyObservation(sessionOnly, { allowlist: list.value, config }).reason, 'observation-evidence-missing');
+});
+
+test('PR54 route params are preserved only when declared; write routes never become capture_ready', async (t) => {
+  const dir = await temporary(t);
+  const list = await allowlist();
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const routed = observation({
+    route: { ...observation().route, url: 'https://www.fenbi.com/spa/tiku/exam/9000001?labelId=1&routecs=opaque123' },
+  });
+  const declaredConfig = makeConfig(dir, { routeParams: ['routecs'] });
+  const declared = classifyObservation(routed, { allowlist: list.value, config: declaredConfig });
+  assert.equal(declared.classification, 'capture_ready');
+  assert.match(declared.input.url, /routecs=opaque123/);
+  const undeclaredConfig = makeConfig(dir, { routeParams: [] });
+  const undeclared = classifyObservation(routed, { allowlist: list.value, config: undeclaredConfig });
+  assert.equal(undeclared.classification, 'needs_route_review');
+  assert.equal(undeclared.reason, 'url-not-reproducible');
+  const writeRoute = classifyObservation(observation({
+    route: { ...observation().route, url: 'https://www.fenbi.com/spa/tiku/exam/9000001/submit?labelId=1' },
+  }), { allowlist: list.value, config: declaredConfig });
+  assert.equal(writeRoute.classification, 'needs_route_review');
+  assert.equal(writeRoute.reason, 'url-not-reproducible');
+});
+
+test('import is purely offline: no fetch, no browser, no initialise/submit request', async (t) => {
+  const { queue, config } = await newQueue(t, { routeParams: ['routecs'] });
+  const list = await allowlist(['9000001']);
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const originalFetch = globalThis.fetch;
+  let fetchCalls = 0;
+  globalThis.fetch = async () => { fetchCalls += 1; throw new Error('network must not be used by the offline importer'); };
+  try {
+    const input = handoff([observation({
+      route: { ...observation().route, url: 'https://www.fenbi.com/spa/tiku/exam/9000001?labelId=1&routecs=opaque123' },
+    })]);
+    const report = await importObservations({ queue, config, handoff: input, allowlist: list.value });
+    assert.equal(report.counts.created, 1);
+    assert.equal(fetchCalls, 0);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
+test('bounded directory import validates all selected files first and honours maxFiles', async (t) => {
+  const { dir, queue, config } = await newQueue(t);
+  const list = await allowlist(['9000001', '9000002']);
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const handoffDir = path.join(dir, 'handoffs');
+  await fs.mkdir(handoffDir, { recursive: true, mode: 0o700 });
+  await fs.writeFile(path.join(handoffDir, '01.json'), JSON.stringify(handoff([observation()])));
+  await fs.writeFile(path.join(handoffDir, '02.json'), JSON.stringify(handoff([observation({
+    paperSourceId: '9000002', title: '江苏2025行测C类', area: '江苏', year: 2025, variant: 'C类',
+    route: { ...observation().route, url: 'https://www.fenbi.com/spa/tiku/exam/9000002?labelId=2' },
+    images: [],
+  })])));
+  const one = await importObservationDirectory({ queue, config, directory: handoffDir, allowlist: list.value, maxFiles: 1 });
+  assert.equal(one.selected, 1);
+  assert.equal(one.counts.created, 1);
+  assert.equal((await queue.listJobs()).length, 1);
+  const both = await importObservationDirectory({ queue, config, directory: handoffDir, allowlist: list.value, maxFiles: 2 });
+  assert.equal(both.selected, 2);
+  assert.equal(both.counts.created, 1, 'the first file deduplicates');
+  assert.equal(both.counts.deduplicated, 1);
+  assert.equal((await queue.listJobs()).length, 2);
+  await assert.rejects(importObservationDirectory({ queue, config, directory: handoffDir, allowlist: list.value, maxFiles: 21 }), /INVALID_MAX_FILES/);
+});
+
+test('a credential leak in any selected handoff aborts the directory before enqueueing', async (t) => {
+  const { dir, queue, config } = await newQueue(t);
+  const list = await allowlist(['9000001']);
+  t.after(() => fs.rm(list.dir, { recursive: true, force: true }));
+  const handoffDir = path.join(dir, 'leaky-handoffs');
+  await fs.mkdir(handoffDir, { recursive: true, mode: 0o700 });
+  await fs.writeFile(path.join(handoffDir, '01.json'), JSON.stringify(handoff([observation()])));
+  await fs.writeFile(path.join(handoffDir, '02.json'), JSON.stringify({ ...handoff([observation()]), cookies: 'sessionid=SYNTHETIC' }));
+  await assert.rejects(importObservationDirectory({ queue, config, directory: handoffDir, allowlist: list.value, maxFiles: 2 }), /CREDENTIAL_LEAK/);
+  assert.equal((await queue.listJobs()).length, 0, 'nothing is enqueued when a later file fails validation');
+});
+
 test('import enqueues only eligible items, deduplicates on repeat, and records the rest as catalog', async (t) => {
   const { dir, queue, config } = await newQueue(t);
   const list = await allowlist();
@@ -198,4 +317,20 @@ test('import enqueues only eligible items, deduplicates on repeat, and records t
   assert.equal(dry.dryRun, true);
   assert.equal(dry.items.find((item) => item.classification === 'capture_ready').enqueued, false);
   void dir;
+});
+
+
+test('the enqueue gate and the importer share the positive re-observation evidence predicate', async (t) => {
+  const { queue } = await newQueue(t, { routeParams: ['routecs'] });
+  const accepted = await queue.enqueue(enqueueInput({
+    url: 'https://www.fenbi.com/spa/tiku/exam/9000001?routecs=xingce',
+    evidence: [
+      { type: 'route_reobserved_20261018', ref: 'synthetic owner re-observation' },
+      { type: 'url_stable_across_reads', ref: 'synthetic stable URL' },
+    ],
+  }));
+  assert.equal(accepted.created, true);
+  await assert.rejects(queue.enqueue(enqueueInput({
+    evidence: [{ type: 'needs_owner_reobservation', ref: 'metadata only' }],
+  })), /positive re-observation evidence/);
 });

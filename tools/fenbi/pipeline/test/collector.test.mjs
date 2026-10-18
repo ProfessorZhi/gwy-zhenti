@@ -69,12 +69,14 @@ test('a 429 produces a persisted exponential backoff and does not mark the job c
   const { queue, config, dir } = await newQueue(t);
   const { jobId } = await queue.enqueue(enqueueInput());
   const adapter = { opensProfile: false, async capture() { throw Object.assign(new Error('synthetic 429'), { statusCode: 429 }); } };
+  // The test backoff is 10ms, shorter than a slow run takes, so compare with the start, not "now".
+  const started = Date.now();
   const result = await runCollector({ queue, config, adapter, budget: 1 });
   assert.equal(result.exit, 3);
   assert.equal(result.reason, 'rate_limited');
   const job = await queue.getJob(jobId);
   assert.equal(job.stages.capture_ready.status, 'pending');
-  assert.ok(job.stages.capture_ready.nextAttemptAt > Date.now());
+  assert.ok(job.stages.capture_ready.nextAttemptAt >= started + config.backoff.baseMs);
   const throttle = await loadThrottle(dir, config, Date.now());
   assert.equal(throttle.hosts['www.fenbi.com'].intervalMs, 200);
   assert.equal(throttle.hosts['www.fenbi.com'].penalties, 1);

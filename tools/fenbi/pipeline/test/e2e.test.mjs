@@ -222,6 +222,15 @@ test('end-to-end: import → 1 producer → 2 independent consumers → reviewer
   assert.equal(status.completed, 1);
   assert.equal(status.jobs.verified, 1);
   assert.equal(status.jobs.candidateReady, 0);
+  assert.equal(status.metrics.sourcesEnqueued, 2);
+  assert.equal(status.metrics.verified, 1);
+  assert.equal(status.metrics.blocked, 0);
+  assert.equal(status.metrics.stagesConsumed, 9, '7 stages on Zhejiang + 2 on Guangdong');
+  assert.equal(status.metrics.artifacts.count >= 7, true);
+  assert.equal(status.metrics.leasesActive, 0);
+  assert.equal(status.metrics.queueDepth, 1, 'Guangdong is still active at aligned');
+  const collectorState = JSON.parse(await fs.readFile(path.join(config.dataDir, 'state', 'collector-status.json'), 'utf8'));
+  assert.equal(collectorState.adapterWired, true);
 });
 
 test('backpressure stops the collector without claiming and crash recovery hands the stage to a new owner', async (t) => {
