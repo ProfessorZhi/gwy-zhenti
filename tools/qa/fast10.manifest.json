@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "kind": "gwy-zhenti-fast10-shard-manifest",
+  "description": "Ten papers that already have a captured Fenbi question book, split into four mutually exclusive identity shards. Metadata only: source ids, library paths and shard membership. No question text, options, image bytes, cookies or practice URLs.",
+  "baseline": {
+    "main": "34439ace3ad6c0b93b0671b1f76ca4afd6cce06d",
+    "pr20Head": "e1feb5187ec3544cde62a1a128a6269a8d63011b"
+  },
+  "rules": {
+    "onePaperOneShard": true,
+    "maxPapersPerShard": 3,
+    "noBrowser": true,
+    "noImageByteScan": true,
+    "autoAcceptRequires": [
+      "officialVerification",
+      "no-image-sha-conflict",
+      "no-ambiguous-assignment"
+    ],
+    "note": "A paper whose evidence is single-source is never auto-accepted, whatever its match count."
+  },
+  "shards": [
+    {
+      "id": "shard-a-guokao",
+      "label": "国考 3 卷",
+      "papers": [
+        { "sourceId": "5823068", "paper": "国考/2026/行测-地市级.md", "area": "国考", "year": 2026, "variant": "地市级" },
+        { "sourceId": "5823067", "paper": "国考/2026/行测-行政执法.md", "area": "国考", "year": 2026, "variant": "行政执法" },
+        { "sourceId": "5823069", "paper": "国考/2026/行测-副省级.md", "area": "国考", "year": 2026, "variant": "副省级" }
+      ]
+    },
+    {
+      "id": "shard-b-jiangsu-zhejiang",
+      "label": "江苏/浙江 3 卷",
+      "papers": [
+        { "sourceId": "4189916", "paper": "省考/江苏/2025/行测-C类.md", "area": "江苏", "year": 2025, "variant": "C类" },
+        { "sourceId": "4162243", "paper": "省考/江苏/2024/行测-A类.md", "area": "江苏", "year": 2024, "variant": "A类" },
+        { "sourceId": "8399763", "paper": "省考/浙江/2026/行测-C类.md", "area": "浙江", "year": 2026, "variant": "C类" }
+      ]
+    },
+    {
+      "id": "shard-c-shanghai-tianjin",
+      "label": "上海/天津 2 卷",
+      "papers": [
+        { "sourceId": "8472470", "paper": "省考/上海/2026/行测-统考.md", "area": "上海", "year": 2026, "variant": "统考" },
+        { "sourceId": "8399759", "paper": "省考/天津/2026/行测-统考.md", "area": "天津", "year": 2026, "variant": "统考" }
+      ]
+    },
+    {
+      "id": "shard-d-guangdong",
+      "label": "广东 2 卷",
+      "papers": [
+        { "sourceId": "8399765", "paper": "省考/广东/2026/行测-统考.md", "area": "广东", "year": 2026, "variant": "统考" },
+        { "sourceId": "96785", "paper": "省考/广东/2020/行测-县级卷.md", "area": "广东", "year": 2020, "variant": "县级卷" }
+      ]
+    }
+  ]
+}
