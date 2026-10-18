@@ -117,6 +117,7 @@ export function structureGrade(assembly, markdownText, validation) {
   if(q.some(x=>isStub(x) && !x.legacyFallbackMarkdown))blockers.push('unremoved-source-stub');
   if(doc.assets.some(x=>x.status!=='downloaded'||!x.localPath||!x.sha256))blockers.push('asset-not-ready');
   if(validation?.dimensions?.images?.status !== 'complete')blockers.push('image-validation-not-complete');
+  for(const issue of validation?.issues || []) if(['questions','materials'].includes(issue.dimension) && !((issue.code==='question-body-empty'||issue.code==='question-body-placeholder'||issue.code==='options-missing') && q.some(item=>item.legacyFallbackMarkdown && item.number===issue.number))) blockers.push('source-structure:'+issue.code);
   if(!markdownText.includes('## 题目'))blockers.push('missing-questions-heading');
   if(!markdownText.includes('### 第 1 题') && !/^## 第 1 题/mu.test(markdownText))blockers.push('missing-first-question');
   if(q.some(x=>x.legacyFallbackMarkdown) && !markdownText.includes('本题来源：原库'))blockers.push('legacy-fallback-not-rendered');
@@ -163,7 +164,8 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
       const prefix='assets-fenbi-'+id.id;
       const md=renderIngest(assembly,prior,prefix);
       const grade=structureGrade(assembly,md,verdict);
-      const row={name,path:rel,grade:grade.grade,issues:grade.blockers,counts:grade.counts,markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw)};
+      const answerNumbers=assembly.prepared.questions.filter(q=>flat(q.answerHtml)).map(q=>q.number);
+      const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,counts:grade.counts,answerNumbers,markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw)};
       if(write){
         const out=path.join(dest,name);await fs.mkdir(out,{recursive:true,mode:0o700});
         const existing=await fs.readFile(path.join(out,'paper.md')).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));
