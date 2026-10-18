@@ -8,7 +8,7 @@ export const WORK = path.join(REPO, 'work', 'fenbi');
 export const DEFAULTS = Object.freeze({
   profileName: 'fenbi-main', channel: 'chrome', executablePath: null,
   entryUrl: 'https://www.fenbi.com/spa/tiku', timeoutMs: 45000,
-  delayMs: 2500, settleMs: 1500, maxPages: 250,
+  delayMs: 800, settleMs: 1500, maxPages: 250,
   // Pages inside the single persistent context. 1 = the original strictly sequential behaviour.
   concurrency: 2,
   // Query parameters observed on real practice URLs that form part of the route (for example
