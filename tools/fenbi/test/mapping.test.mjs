@@ -299,3 +299,83 @@ test('the report contract is enforced, not just documented', () => {
   const badGrade = { ...good, assignments: [{ ...good.assignments[0], grade: 'strong', autoAcceptable: true }] };
   assert.equal(validateMappingReport(badGrade).ok, false, 'only an exact grade may be auto-acceptable');
 });
+
+// ── F8 residual (PR #68): a comparable image signal must agree before anything is exact ──────
+// A leftover caption character ("图") makes the text look identical while the verified image bytes
+// differ. Text equality alone must not turn that into an exact, auto-acceptable match.
+
+const twoOptions = () => [{ label: 'A', contentHtml: '甲选项' }, { label: 'B', contentHtml: '乙选项' }];
+const captioned = (caption, bytes, extra = {}) => ({
+  contentHtml: `<p>${caption}</p><img src="https://example.test/fig.png">`,
+  options: twoOptions(), materialIds: [], imageBytes: manifest(bytes), ...extra,
+});
+
+test('a caption plus different verified image bytes fails exact and needs a human', () => {
+  const scored = scorePair(captioned('图', 'BYTES-A'), captioned('图', 'BYTES-B'));
+  assert.equal(scored.signals.stem.score, 1, 'the caption alone still looks identical');
+  assert.equal(scored.signals.images.score, 0);
+  assert.equal(scored.signals.images.available, true);
+  assert.notEqual(scored.grade, 'exact');
+  assert.equal(scored.exactBlockedBy, 'image-evidence-mismatch');
+  assert.ok(scored.score > 0.72, `composite stays high (${scored.score.toFixed(4)}) — that is why the grade must gate it`);
+
+  const result = report([captioned('图', 'BYTES-A')], [captioned('图', 'BYTES-B')]);
+  assert.equal(result.assignments.length, 1);
+  const [row] = result.assignments;
+  assert.equal(row.autoAcceptable, false);
+  assert.equal(row.requiresHumanReview, true);
+  assert.equal(row.exactBlockedBy, 'image-evidence-mismatch');
+  assert.equal(result.counts.assignedExact, 0);
+});
+
+test('a caption with the same verified bytes is still exact', () => {
+  const scored = scorePair(captioned('图', 'SAME-BYTES'), captioned('图', 'SAME-BYTES'));
+  assert.equal(scored.grade, 'exact');
+  assert.equal(scored.exactBlockedBy, null);
+  const result = report([captioned('图', 'SAME-BYTES')], [captioned('图', 'SAME-BYTES')]);
+  assert.equal(result.assignments[0].autoAcceptable, true);
+});
+
+test('one side having no image evidence neither forces a match nor deducts for it', () => {
+  const scored = scorePair(captioned('如图，求面积。', 'BYTES'), { ...captioned('如图，求面积。', 'BYTES'), imageBytes: undefined });
+  assert.equal(scored.signals.images.available, false);
+  assert.equal(scored.signals.images.reason, 'image-manifest-missing-on-one-side');
+  assert.equal(scored.grade, 'exact', 'text is still enough when the image dimension is simply absent');
+  assert.equal(scored.exactBlockedBy, null);
+});
+
+test('a malformed or unverified manifest is neutral, not a mismatch', () => {
+  for (const imageBytes of [[{ sha256: 'not-a-sha', verified: true }],
+    [{ sha256: contentHash('BYTES'), verified: false }],
+    [{ sha256: contentHash('BYTES') }]]) {
+    const scored = scorePair(captioned('图', 'BYTES', { imageBytes }), captioned('图', 'BYTES'));
+    assert.equal(scored.signals.images.available, false, JSON.stringify(imageBytes));
+    assert.equal(scored.exactBlockedBy, null, 'absent evidence must not read as a conflict');
+    assert.equal(scored.grade, 'exact');
+  }
+});
+
+test('a question with no images behaves exactly as before', () => {
+  const scored = scorePair(question(1, '完全没有配图的合成题干。'), question(1, '完全没有配图的合成题干。'));
+  assert.equal(scored.signals.images.available, false);
+  assert.equal(scored.signals.images.reason, 'no-images-on-either-side');
+  assert.equal(scored.grade, 'exact');
+  assert.equal(scored.exactBlockedBy, null);
+});
+
+test('an image-only stem with identical options but no byte evidence is never exact', () => {
+  const bare = (src) => ({ contentHtml: `<img src="${src}">`, options: twoOptions(), materialIds: [] });
+  const scored = scorePair(bare('https://example.test/a.png'), bare('https://example.test/b.png'));
+  assert.equal(scored.signals.stem.available, false, 'the ⟦IMAGE⟧ token is not text evidence');
+  assert.notEqual(scored.grade, 'exact');
+  assert.equal(report([bare('https://example.test/a.png')], [bare('https://example.test/b.png')]).counts.assignedExact, 0);
+});
+
+test('a comparable material mismatch also blocks exact', () => {
+  const scored = scorePair(
+    { contentHtml: '<p>材料题的合成题干。</p>', options: twoOptions(), materialIds: ['m1'] },
+    { contentHtml: '<p>材料题的合成题干。</p>', options: twoOptions(), materialIds: ['m2'] });
+  assert.equal(scored.signals.materials.score, 0);
+  assert.notEqual(scored.grade, 'exact');
+  assert.equal(scored.exactBlockedBy, 'material-evidence-mismatch');
+});
