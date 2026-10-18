@@ -108,6 +108,16 @@ def dangling_pointers(root: str, files):
     return out
 
 
+def unverifiable_markers(files):
+    """已降级为「源不可考」的卷：指针目标不存在时留下的显式标记。"""
+    out = []
+    for p in files:
+        for i, line in enumerate(read(p).splitlines(), 1):
+            if '答案来源：**源不可考' in line:
+                out.append({"path": p, "line": i})
+    return out
+
+
 def git_has_history(path: str) -> bool:
     import subprocess
     try:
@@ -193,6 +203,7 @@ def build(root: str) -> dict:
         "shenlun_files_audited": len(files),
         "missing_whole_papers": missing_reconciliation(root),
         "dangling_answer_source_pointers": dangling_pointers(root, files),
+        "source_unverifiable_markers": unverifiable_markers(files),
         "zhenti_label_tiers": tiers,
         "bare_zhengshi_zhenti": bare,
         "receipt_coverage": receipt_coverage(root, files),
@@ -214,6 +225,7 @@ def main():
     print("confirmed still missing    :", d["missing_whole_papers"]["confirmed_still_missing"])
     print("reconciled (now present)   :", len(d["missing_whole_papers"]["reconciled_present"]))
     print("dangling answer pointers   :", sum(1 for x in d["dangling_answer_source_pointers"] if not x["target_exists"]))
+    print("source-unverifiable markers:", len(d["source_unverifiable_markers"]))
     print("bare 正式真题 labels        :", len(d["bare_zhengshi_zhenti"]))
     print("receipt coverage           :", d["receipt_coverage"]["current_hash_recorded"], "/", d["receipt_coverage"]["files"])
 
