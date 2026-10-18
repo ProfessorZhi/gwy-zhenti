@@ -40,6 +40,44 @@ GPT 照本文件给 A6000 上的 Claude Code 派任务。总控进度只在 Issu
 
 ## 四、流水线（只有 4 步）
 
+> **2026-10-18 更新：以下 Batch Ingest 方案替代人工逐卷 Builder 和旧分阶段逐题 QA 队列。** 既有 `render.mjs`、源资产 SHA 校验和身份映射继续复用，旧 QA 不作为常规阻塞步骤。
+
+```text
+① Collector（1 个 browser Owner，1 Profile，2–3 Page）
+        ↓ A6000 本地 work/fenbi/papers/<已观察卷>/document.json + assets
+② Batch Ingest（确定性脚本，默认 dry-run）
+        ↓ 自动继承安全占位/旧答案 → A/C → 本地 Markdown + 资源 + 台账行
+③ Batch Promote（唯一 Integrator，非 main 集成工作树）
+        ↓ 必须结构 A + 本地来源许可凭据 + SHA/旧版本检查 → 更新 Markdown/图片/manifest
+④ 用户每周审核 GitHub 集成 PR → main
+```
+
+正常差异按粉笔优先直接生成，不做逐题人工仲裁。只有源征集占位、无法唯一对应的旧答案、遗留图片路径、真正缺题和来源许可问题才保持 C/blocked；不要把 C 伪造为 A。A 表示结构可用，本身不代表答案已取得或获得云端储存许可。
+
+### 实际命令（在 Dell A6000 上执行，不经东京）
+
+默认只读、不写题文；`--write` 才写到本机被 git 忽略的 `work/fenbi/batch-ingest/`，不修改正式题库：
+
+```bash
+cd /path/to/gwy-zhenti/tools/fenbi
+node src/batch-ingest.mjs --repo-root /path/to/gwy-zhenti --source-root /path/to/owner/work/fenbi/papers
+node src/batch-ingest.mjs --repo-root /path/to/gwy-zhenti --source-root /path/to/owner/work/fenbi/papers --write
+```
+
+以上输出每卷一行 metadata-only 回执（A/C、题数、继承数、未知答案数、SHA），不是长篇审计报告。`--write` 会在独立候选目录保存 `paper.md`、源图片和旧版 `legacy-original.md`（若有），同 SHA 的重复执行可幂等复用；不同内容拒绝覆盖。
+
+正式集成只能在**非 main 的独立 Git 工作树**中完成，并必须提供真实的、适用于该来源内容上传的许可凭据文件：
+
+```bash
+node src/batch-promote.mjs --candidate-dir /path/to/work/fenbi/batch-ingest/<卷> --repo-root /path/to/integration-worktree --rights-file /path/to/local-rights.json
+# 上一条只预检；必须获授权时才加 --apply。
+# 要替换已经存在的卷还须另加 --allow-replace，并核对旧文件 SHA。
+```
+
+权限 JSON 示例结构为 `{"schemaVersion":1,"allowGitHubStorage":true,"evidence":"真实许可凭据的本地引用","sourceIds":["已观察来源ID"]}`，**示例本身不是授权**。没有真实许可就保留在 A6000 本地候选，不可自动提交第三方题文或解析。
+
+
+
 ```text
 ① 抓取（1 个 Claude Code，2–3 个标签页）
       ↓ 本地缓存 + 一行回执
@@ -57,6 +95,9 @@ GPT 照本文件给 A6000 上的 Claude Code 派任务。总控进度只在 Issu
 QA 不逐卷复核，每天**抽 5 卷**，尽可能覆盖图片、题序变化、占位继承、旧答案映射和纯新卷五类；若抽中系统性错误，暂停受影响规则的集成，修复后仅重跑相关批次。
 
 ## 五、自动检查（唯一的检查，跑一次就算）
+
+由 Batch Ingest 在同一遍生成中完成；`batch-promote` 只对结构 A 做发布必要的权限、哈希和 manifest 前置检查。粉笔来源暂未显示答案/解析时标 unknown，不能据此生成假答案。
+
 
 - 题位守恒：粉笔有效题位 + 按唯一题目身份继承的原库非占位题位 + 明确列出的真实缺位 = 目标卷声明题位；输出题号连续，不用删掉占位后反推总量
 - 每题有题干和选项（申论有材料和问题）
@@ -141,6 +182,9 @@ QA 不逐卷复核，每天**抽 5 卷**，尽可能覆盖图片、题序变化�
 
 ## 十三、吞吐量落地与渐进并发（2026-10-18 追加）
 
+**角色更新：** Builder 不再是每卷 20–40 分钟的 Claude Code 会话；默认是一个可批量运行的确定性脚本。Claude Code 仅维护采集/入库脚本和处理少量 C 类异常。后文关于 2–3 个 Builder worker 属于可选的进程并行容量上限，不再是默认必需的 Agent 数量。
+
+
 ### A6000 上的有界策略
 
 - **Collector**：始终 1 个进程/1 个持久登录态；新配置下 `capture --all` 默认 2 个 Page，支持显式 `--concurrency 1|2|3`。Page 共用会话、可复现 URL 检查、同域导航节流和停止标记；3 Page 是上限，不能开启多个同账号 Profile 或多份 Owner 规避限制。
@@ -159,3 +203,11 @@ QA 不逐卷复核，每天**抽 5 卷**，尽可能覆盖图片、题序变化�
 原 64 个 PR 的最新整合候选在 `claude/happy-cori-vazc9x`；本工作分支 `ops/fenbi-throughput-20261018` 继承该树。**不要向 main 逐个重复合并栈内 PR。** 以一个集成 PR 做入口：先复核提交包含关系、补齐当前 5 项 Python 基线失败与真实运行证据、按来源许可过滤不可推送的第三方内容，用户验收后一次合并；历史 PR 再逐个标明“由集成 PR 包含”或“仅审计，无需合并”，不将关闭冒充 merged。
 
 Dell A6000 是唯一项目执行/缓存落点，东京控制面的审计例外未获确认；不得通过会在东京留存项目操作痕迹的通道调度。GitHub 仅保留可提交的代码、配置、台账摘要和已获明确许可的内容。
+
+## 十四、2026-10-18 的实测基线
+
+- 在 A6000 上对历史 10 卷、1,210 题位做过纯格式渲染，总耗时约 1.62 秒；这是内存转换，不是入库计时。
+- 新 Batch Ingest 直接读取现有缓存的首轮本地 dry-run：**7 卷结构 A、3 卷 C**。C 分别涉及来源征集占位原库也没有正文，或含旧图资源需要重新绑定；没有把未知内容当成完成。
+- 既有粉笔练习视图未显示来源答案与解析，答案继承只在唯一题目内容匹配时进行；没有唯一映射的旧版内容留在本地 legacy-original.md，不能按数字题号硬搬。
+- 3 Page 的既有练习页面读取小样较 2 Page 快约 38%，但不直接推算新增卷/小时或正式发布吞吐。全链路产能须等有合法新输入并记录真实 A/C 回执之后才可估计。
+- 旧分阶段 QA queue 不是新生产默认通道；绝不将 `stagesConsumed` 等同于已发布卷数。
