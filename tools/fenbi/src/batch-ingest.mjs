@@ -16,7 +16,7 @@ const text = html => normalizeComparisonText(html).strict;
 const core = value => text(value).replace(/\s*⟦IMAGE⟧\s*/gu, '').trim();
 const fp = q => [text(q.contentHtml), ...(q.options || []).flatMap(o => [o.label, text(o.contentHtml)])].join('\u0000');
 const isStub = q => isCollectionStub(text(q.contentHtml));
-const isUsable = q => q && !isStub(q) && (core(q.contentHtml).length >= 12 || /<(?:img|image)\b/iu.test(q.contentHtml || ''));
+const isUsable = q => q && !isStub(q) && (core(q.contentHtml).length >= 12 || /<(?:img|image)\b/iu.test(q.contentHtml || '') || (core(q.contentHtml).length > 0 && (q.options || []).filter(o => text(o.contentHtml)).length >= 2));
 const flat = value => typeof value === 'string' ? value.trim() : '';
 const hasExternalImage = value => /<(?:img|image)\b|!\[[^\]]*\]\(/iu.test(flat(value));
 
