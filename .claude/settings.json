@@ -1,0 +1,50 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Edit",
+      "Write",
+      "Bash(node src/cli.mjs:*)",
+      "Bash(node src/batch-ingest.mjs:*)",
+      "Bash(node src/batch-promote.mjs:*)",
+      "Bash(node tools/fenbi/src/cli.mjs:*)",
+      "Bash(node tools/fenbi/src/batch-ingest.mjs:*)",
+      "Bash(node tools/fenbi/src/batch-promote.mjs:*)",
+      "Bash(node --test:*)",
+      "Bash(npm test:*)",
+      "Bash(npm ci:*)",
+      "Bash(python3 -X utf8 -m unittest:*)",
+      "Bash(bash tools/fenbi/run-pipeline.sh:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git switch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git push origin fenbi/:*)",
+      "Bash(git push -u origin fenbi/:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(date:*)"
+    ],
+    "deny": [
+      "Bash(git push origin main:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(rm -rf:*)",
+      "Read(work/fenbi/profiles/**)",
+      "Edit(work/fenbi/profiles/**)",
+      "Write(work/fenbi/profiles/**)"
+    ]
+  }
+}
