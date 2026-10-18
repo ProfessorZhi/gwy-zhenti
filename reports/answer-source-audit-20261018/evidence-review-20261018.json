@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18",
+  "auditedCommit": "e1feb5187ec3544cde62a1a128a6269a8d63011b",
+  "scope": "18 papers: 8 from the P0 set + 10 from the 22-paper 上海 行测 set",
+  "basis": "Only sources the repository already records in reports/SCOPE-COUNTS-2016-2026-20261015.json source_cards. No network fetch, no invented URL.",
+  "rule": {
+    "identity_supported": "A reusable legal source attests that this paper existed in this year with this subject/variant.",
+    "identity_unverified": "No year-specific source; or the repository's own card explicitly says the identity is not settled.",
+    "answers_blocked": "No reusable legal source in this repository gives an answer key. Official URLs appear inside answer blocks only 6 times, all as content citations in explanations, never as keys.",
+    "generic_only": "Answer provenance states the kind of key, not which source."
+  },
+  "global_finding": {
+    "official_urls_inside_answer_blocks": 6,
+    "what_they_are": "Content citations inside explanations (人民日报 PDF, gov.cn policy page, xinhuanet science page). None is an answer key.",
+    "conclusion": "For every sampled paper the answer-source gap is answers_blocked, not merely unsourced. No official answer-key source exists for 行测 anywhere in the repository."
+  },
+  "papers": [
+    {
+      "path": "省考/上海/2016/行测-A类.md",
+      "year": "2016",
+      "variant": "A类",
+      "priority": "P1",
+      "identity": "identity_supported",
+      "evidence": [
+        {
+          "id": "SH16AB",
+          "url": "http://edu.people.com.cn/gongwuyuan/n1/2015/1214/c88733-27925793.html",
+          "supports": "同年明确行测分A/B两类，两卷各140题"
+        }
+      ],
+      "note": "Card attests A/B two papers at 140 questions each. Current file has 100 questions → count gap to reconcile separately."
+    },
+    {
+      "path": "省考/上海/2016/行测-B类.md",
+      "year": "2016",
+      "variant": "B类",
+      "priority": "P1",
+      "identity": "identity_supported",
+      "evidence": [
+        {
+          "id": "SH16AB",
+          "url": "http://edu.people.com.cn/gongwuyuan/n1/2015/1214/c88733-27925793.html",
+          "supports": "同年明确行测分A/B两类，两卷各140题"
+        }
+      ],
+      "note": "Current file has 140 questions, matching the card."
+    },
+    {
+      "path": "省考/上海/2016/行测-行政执法.md",
+      "year": "2016",
+      "variant": "行政执法",
+      "priority": "P1",
+      "identity": "identity_unverified",
+      "evidence": [],
+      "note": "No 2016 行政执法 card exists. SH16AB covers only A/B. The repository's own missing-paper ledger lists 2016 行政执法专项 as NOT obtained, which is consistent with, but does not establish, the variant's existence."
+    },
+    {
+      "path": "省考/上海/2017/行测-统考.md",
+      "year": "2017",
+      "variant": "统考",
+      "priority": "P0",
+      "identity": "identity_unverified",
+      "evidence": [
+        {
+          "id": "SH17A",
+          "url": "http://www.zggwy.org/shgwy/367298.html",
+          "supports": "独立A卷同年题录，原文链接PDF未获得可读全文，不能硬把136题AB合卷认定为完整A"
+        },
+        {
+          "id": "SH17REVIEW",
+          "url": "https://mt.sohu.com/learning/d20161218/121910909_139324.shtml",
+          "supports": "当年A卷135题；与本库AB合卷136的身份/题序尚不能直接等同"
+        }
+      ],
+      "note": "The repository's own cards say this identity is NOT settled. Do not treat the 136-question AB merge as an independent paper. Blocked pending the original A/B papers. [evidence_denies_identity=true: 卡片存在但明确否认身份已定]",
+      "evidence_denies_identity": true
+    },
+    {
+      "path": "省考/上海/2017/行测-行政执法.md",
+      "year": "2017",
+      "variant": "行政执法",
+      "priority": "P1",
+      "identity": "identity_unverified",
+      "evidence": [],
+      "note": "No 2017 行政执法 card. The two 2017 cards are about the A卷 and explicitly deny resolving identity. The 行政执法 series has official cards for 2022/2024/2025 and an explicit no-special card for 2023 — none for 2017. Do not infer 2017 from the series."
+    },
+    {
+      "path": "省考/上海/2018/行测-A类.md",
+      "year": "2018",
+      "variant": "A类",
+      "priority": "P1",
+      "identity": "identity_supported",
+      "evidence": [
+        {
+          "id": "SH18-21AB",
+          "url": "http://www.shgkw.org/2021/1129/42363.html",
+          "supports": "分年明确2018A/B各135"
+        }
+      ],
+      "note": "Current file 135 questions, matching."
+    },
+    {
+      "path": "省考/上海/2019/行测-A类.md",
+      "year": "2019",
+      "variant": "A类",
+      "priority": "P1",
+      "identity": "identity_supported",
+      "evidence": [
+        {
+          "id": "SH18-21AB",
+          "url": "http://www.shgkw.org/2021/1129/42363.html",
+          "supports": "2019至2021A/B各130"
+        }
+      ],
+      "note": "Current file 130 questions, matching."
+    },
+    {
+      "path": "省考/上海/2020/行测-A类.md",
+      "year": "2020",
+      "variant": "A类",
+      "priority": "P1",
+      "identity": "identity_supported",
+      "evidence": [
+        {
+          "id": "SH18-21AB",
+          "url": "http://www.shgkw.org/2021/1129/42363.html",
+          "supports": "2019至2021A/B各130"
+        }
+      ],
+      "note": "Current file 130 questions, matching."
+    },
+    {
+      "path": "省考/上海/2021/行测-B类.md",
+      "year": "2021",
+      "variant": "B类",
+      "priority": "P1",
+      "identity": "identity_supported",
+      "evidence": [
+        {
+          "id": "SH18-21AB",
+          "url": "http://www.shgkw.org/2021/1129/42363.html",
+          "supports": "2019至2021A/B各130"
+        }
+      ],
+      "note": "Current file 116 questions vs 130 attested → count gap to reconcile."
+    },
+    {
+      "path": "省考/上海/2023/行测-A类.md",
+      "year": "2023",
+      "variant": "A类",
+      "priority": "P1",
+      "identity": "identity_partial",
+      "evidence": [
+        {
+          "id": "SH23NOSPECIAL",
+          "url": "https://www.jfdaily.com/wx/detail.do?id=784997",
+          "supports": "停招一年后重启，2023不计算专项"
+        }
+      ],
+      "note": "Card establishes that a 2023 exam took place and that no 行政执法 special was counted. It does not attest the A卷's question count or contents."
+    },
+    {
+      "path": "省考/上海/2026/行测-统考.md",
+      "year": "2026",
+      "variant": "统考",
+      "priority": "P0",
+      "identity": "identity_supported_with_count_gap",
+      "evidence": [
+        {
+          "id": "SH26ONE",
+          "url": "http://sh.xinhuanet.com/20251101/3d8662ea46834c758e48193886f6ecd7/c.html",
+          "supports": "2026不再区分A/B，行政执法岗位纳入本次常规招录"
+        },
+        {
+          "id": "SH26SYLLABUS",
+          "url": "https://shacs.gov.cn/gwyj/api/files/fetch?fid=ea6c24ce-420c-4f3f-ad4f-483f83cf2c4b",
+          "supports": "本年常规行测和申论公共科目（官方）"
+        },
+        {
+          "id": "SH26COUNT",
+          "url": "https://www.kkgwy.com/e/extend/exam/paper.php?id=10342",
+          "supports": "130题；当前统考129，另列题量缺口"
+        }
+      ],
+      "note": "Official syllabus card exists (shacs.gov.cn). File has 129 questions vs 130 attested → 1-question gap. Content dispute on Q44 remains unresolved."
+    },
+    {
+      "path": "省考/辽宁/2017/行测-公安.md",
+      "year": "2017",
+      "variant": "公安",
+      "priority": "P0",
+      "identity": "identity_unverified",
+      "evidence": [],
+      "note": "No source card for 辽宁 at all. Identity rests solely on the file's own frontmatter. The separate '官方《行政职业能力测验解析》' claim is likewise unbacked (hash absent from reports/)."
+    },
+    {
+      "path": "省考/广东/2020/行测-县级卷.md",
+      "year": "2020",
+      "variant": "县级卷",
+      "priority": "P0",
+      "identity": "identity_unverified",
+      "evidence": [],
+      "note": "No 2020-specific card. Missing original questions 69–75 are confirmed by the 粉笔 live capture as source-side placeholders; no legal source supplies them."
+    },
+    {
+      "path": "省考/江苏/2024/行测-A类.md",
+      "year": "2024",
+      "variant": "A类",
+      "priority": "P0",
+      "identity": "identity_unverified",
+      "evidence": [],
+      "note": "No 2024 card. Missing 76/96/110/111 previously recorded as unavailable in every reachable edition."
+    },
+    {
+      "path": "省考/浙江/2020/行测-A类.md",
+      "year": "2020",
+      "variant": "A类",
+      "priority": "P0",
+      "identity": "identity_supported",
+      "evidence": [
+        {
+          "id": "zj_2020",
+          "url": "https://hznews.hangzhou.com.cn/chengshi/content/2020-06/10/content_7752796_0.htm",
+          "supports": "2020-07-26实际笔试安排列出村干部C；特警使用现有A不另造卷"
+        }
+      ],
+      "note": "Card supports the 2020 sitting and the A/C variant structure. Missing 49/50 are not supplied by it."
+    },
+    {
+      "path": "省考/新疆/2024/行测-兵团.md",
+      "year": "2024",
+      "variant": "兵团",
+      "priority": "P0",
+      "identity": "identity_unverified",
+      "evidence": [],
+      "note": "No card. Q54's main figure and key condition are missing; the legacy answer C is quarantined and is not a current answer."
+    },
+    {
+      "path": "省考/北京/2025/行测-统考.md",
+      "year": "2025",
+      "variant": "统考",
+      "priority": "P0",
+      "identity": "identity_unverified",
+      "evidence": [],
+      "note": "Cards exist for 2020/2021/2022/2024/2026 but not 2025. File is a 93-question recall fragment."
+    }
+  ]
+}

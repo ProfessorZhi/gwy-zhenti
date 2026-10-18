@@ -70,6 +70,29 @@ def strip_quarantined(block: str) -> str:
 # made the audit corroborate itself: 241 blocks were "verified" on that basis alone.
 SELF_REPO = re.compile(r"^https?://(?:www\.)?github\.com/ProfessorZhi/gwy-zhenti(?:/|$)")
 
+# Backing strength. A receipt-backed identifier is not automatically independent
+# evidence: the majority point at this project's OWN sibling repository, and a few at
+# a host this network cannot reach. Tiers make that visible instead of folding it into
+# one "verified" number.
+PROJECT_OWNED_REPO = ("github.com/ProfessorZhi/gwy-material-ops",
+                      "github.com/ProfessorZhi/gwy-zhenti")
+UNREACHABLE_HOSTS = ("jygwy.com", "chinagwy.org")
+
+
+def backing_tier(hashes: list[str], urls: list[str], idx: set) -> str | None:
+    bh = [h for h in hashes if h in idx]
+    if bh:
+        return "sha256"
+    bu = [u for u in urls if u in idx and not SELF_REPO.match(u)]
+    if not bu:
+        return None
+    external = [u for u in bu if not any(d in u for d in PROJECT_OWNED_REPO)]
+    if external:
+        if all(any(d in u for d in UNREACHABLE_HOSTS) for u in external):
+            return "unreachable_host_only"
+        return "external_url"
+    return "project_owned_repo_only"
+
 # Quality-ledger issue strings that are boilerplate rather than a substantive gap.
 BOILERPLATE_ISSUE = "历史模块拼接题序未获原卷证据核对"
 
@@ -184,6 +207,7 @@ def analyse_paper(path: Path, repo: Path, tree: set[str], receipt_index: set,
             missing_imgs.append(ref)
 
     blocks = list(prov.iter_answer_blocks(text))
+    tiers: dict[str, int] = {}
     fp = prov.file_provenance(fm, receipt_index)
     cov = {"verified": 0, "source-present": 0, "unsupported": 0}
     for _n, b, _s, _e in blocks:
@@ -191,8 +215,10 @@ def analyse_paper(path: Path, repo: Path, tree: set[str], receipt_index: set,
         info = prov.classify_block(bc)
         bh = [h.lower() for h in prov.HEX64_RE.findall(bc)]
         burl = prov.URL_RE.findall(bc)
-        backed = (any(h in receipt_index for h in bh)
-                  or any(u in receipt_index for u in burl if not SELF_REPO.match(u)))
+        tier = backing_tier(bh, burl, receipt_index)
+        backed = tier is not None
+        if tier:
+            tiers[tier] = tiers.get(tier, 0) + 1
         if info["declared"]:
             cov["verified" if backed else "source-present"] += 1
         elif fp["state"] in ("explicit_answer_source", "detail_names_answers"):
@@ -280,6 +306,7 @@ def analyse_paper(path: Path, repo: Path, tree: set[str], receipt_index: set,
         "provenance_verified": cov["verified"],
         "provenance_source_present": cov["source-present"],
         "provenance_unsupported": cov["unsupported"],
+        "provenance_tiers": dict(sorted(tiers.items())),
         "file_provenance_state": fp["state"],
         "file_provenance_backed": fp["backed"],
         "quality_flagged": bool(ledger_issues),
@@ -449,12 +476,21 @@ def build_summary(rows, header, orphans, commit) -> dict:
             "papersGenericOnly": count(
                 lambda r: r["answer_blocks"] > 0 and r["provenance_verified"] == 0),
             "papersWithUnsupported": count(lambda r: r["provenance_unsupported"] > 0),
+            "backingTiers": _tier_counts(rows),
         },
         "priority": prio,
         "priorityByRegion": dict(sorted(by_region.items())),
         "flags": _flag_counts(rows),
         "issueClasses": _issue_counts(rows),
     }
+
+
+def _tier_counts(rows) -> dict:
+    c: dict[str, int] = {}
+    for r in rows:
+        for k, v in (r.get("provenance_tiers") or {}).items():
+            c[k] = c.get(k, 0) + v
+    return dict(sorted(c.items()))
 
 
 def _flag_counts(rows) -> dict:

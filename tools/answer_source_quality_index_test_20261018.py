@@ -154,3 +154,44 @@ class EndToEndTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class EvidenceReviewTests(unittest.TestCase):
+    """Every URL cited in the reviewed evidence file must exist verbatim in the repo.
+
+    A hand-written review is exactly where a truncated or recollected URL gets in, and
+    a fabricated-looking link is worse than no link.
+    """
+
+    ROOT = Path(__file__).resolve().parents[1]
+
+    def test_review_urls_match_source_cards_exactly(self):
+        cards_path = self.ROOT / "reports" / "SCOPE-COUNTS-2016-2026-20261015.json"
+        review_path = self.ROOT / "reports" / "answer-source-audit-20261018" / "evidence-review-20261018.json"
+        if not cards_path.exists() or not review_path.exists():
+            raise unittest.SkipTest("review artifacts not present")
+        cards = {str(c.get("id")): c for c in json.loads(cards_path.read_text(encoding="utf-8"))["source_cards"]}
+        review = json.loads(review_path.read_text(encoding="utf-8"))
+        for paper in review["papers"]:
+            for ev in paper["evidence"]:
+                with self.subTest(card=ev["id"]):
+                    self.assertIn(ev["id"], cards)
+                    self.assertEqual(ev["url"], cards[ev["id"]]["url"])
+
+    def test_every_reviewed_paper_has_a_verdict(self):
+        review_path = self.ROOT / "reports" / "answer-source-audit-20261018" / "evidence-review-20261018.json"
+        if not review_path.exists():
+            raise unittest.SkipTest("review artifact not present")
+        review = json.loads(review_path.read_text(encoding="utf-8"))
+        self.assertGreaterEqual(len(review["papers"]), 10)
+        for p in review["papers"]:
+            self.assertIn(p["identity"], {
+                "identity_supported", "identity_supported_with_count_gap",
+                "identity_partial", "identity_unverified"})
+            if p["identity"].startswith("identity_supported"):
+                self.assertTrue(p["evidence"], p["path"])
+            if p["identity"] == "identity_unverified" and p["evidence"]:
+                # A card may exist precisely to say the identity is NOT settled. That
+                # is still unverified, but it must be marked as denying rather than
+                # silently counted as support.
+                self.assertTrue(p.get("evidence_denies_identity"), p["path"])

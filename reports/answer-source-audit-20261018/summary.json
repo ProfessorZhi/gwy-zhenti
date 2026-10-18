@@ -212,6 +212,12 @@
   },
   "provenance": {
     "answerBlocks": 56047,
+    "backingTiers": {
+      "external_url": 226,
+      "project_owned_repo_only": 563,
+      "sha256": 141,
+      "unreachable_host_only": 12
+    },
     "papersFullyVerified": 138,
     "papersGenericOnly": 835,
     "papersWithUnsupported": 0,
