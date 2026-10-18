@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "kind": "gwy-zhenti-shard-spec",
+  "batch": "shard-js-zj-20261018",
+  "source": {
+    "pr72": "dab4c5f26e63a2fb3a24b5751b4e6616b11fc4c9",
+    "pr75": "3c83c3292511d67e86804911601fd4c0f52590ac",
+    "inbox": "observations-batch-20261018-1437a2b44ed1.json",
+    "note": "PR #72 aggregate caliber: verified = normalized_equal + near; per-question live-trial caliber: explicit original number + content.",
+    "base": "e1feb5187ec3544cde62a1a128a6269a8d63011b"
+  },
+  "papers": [
+    {
+      "sourceId": "8399763",
+      "area": "浙江",
+      "year": 2026,
+      "variant": "C类",
+      "subject": "xingce",
+      "positions": 110,
+      "textUsable": 110,
+      "imagePositions": 0,
+      "placeholders": 0,
+      "verified": 102,
+      "remaining": 7,
+      "weak": 1,
+      "perQuestion": {
+        "file": "reports/FENBI-LIVE-TRIAL-20261016.json",
+        "key": "strictPerQuestionAlignment",
+        "expectedMatched": 109,
+        "expectedUnmatchedSourceNumbers": [
+          54
+        ]
+      }
+    },
+    {
+      "sourceId": "4189916",
+      "area": "江苏",
+      "year": 2025,
+      "variant": "C类",
+      "subject": "xingce",
+      "positions": 130,
+      "textUsable": 116,
+      "imagePositions": 2,
+      "placeholders": 12,
+      "verified": 106,
+      "remaining": 6,
+      "weak": 4,
+      "perQuestion": null
+    },
+    {
+      "sourceId": "4162243",
+      "area": "江苏",
+      "year": 2024,
+      "variant": "A类",
+      "subject": "xingce",
+      "positions": 135,
+      "textUsable": 129,
+      "imagePositions": 2,
+      "placeholders": 4,
+      "verified": 114,
+      "remaining": 13,
+      "weak": 2,
+      "perQuestion": null
+    }
+  ],
+  "environment": {
+    "host": "FJ-NJ-SER-1009",
+    "load": "0.22/0.32/0.34 (20 cores)",
+    "memAvailable": "7186 MiB",
+    "swapUsed": "4703 MiB / 8191 MiB",
+    "psi": "cpu 0.00 / memory 0.00 / io 0.00 (avg10)",
+    "gpu": "NVIDIA RTX A6000 (not used)",
+    "browser": "not opened; no fenbi access",
+    "worktree": "/home/fjd/workspaces/gwy-zhenti-answerqa/worktrees/shard-qa-20261018"
+  }
+}

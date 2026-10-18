@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "kind": "gwy-zhenti-shard-qa-result",
+  "generatedAt": "2026-10-18T09:27:59.130Z",
+  "exitCode": 2,
+  "summary": {
+    "papers": 3,
+    "verified": 0,
+    "needsReview": 1,
+    "blocked": 2,
+    "invalid": 0,
+    "positions": 375,
+    "perQuestionRows": 110,
+    "blockedPositions": 265,
+    "officialVerification": false,
+    "note": "normalized_equal/near is not official verification; image paths and ⟦IMAGE⟧ markers are not image evidence."
+  },
+  "papers": [
+    {
+      "sourceId": "8399763",
+      "identity": "ok",
+      "status": "needs_review",
+      "reasons": [],
+      "warnings": [
+        "caliber_conflict:per_question_matched=109:pr72_verified=102",
+        "unmatched_source_numbers=54",
+        "image_dimension_different=3"
+      ],
+      "counts": {
+        "positions": 110,
+        "textUsable": 110,
+        "imagePositions": 0,
+        "placeholders": 0,
+        "verified": 102,
+        "remaining": 7,
+        "weak": 1
+      },
+      "perQuestion": {
+        "rows": 110,
+        "matched": 109,
+        "unmatched": 1,
+        "unmatchedSourceNumbers": [
+          54
+        ],
+        "repositoryNumbers": 109,
+        "images": {
+          "same": 21,
+          "different": 3,
+          "not_compared": 85,
+          "other": 0
+        }
+      },
+      "images": {
+        "files": 25,
+        "uniqueSha256": 25
+      }
+    },
+    {
+      "sourceId": "4189916",
+      "identity": "ok",
+      "status": "blocked",
+      "reasons": [
+        "BLOCKED_HOFF_OWNERS:per-question-shard-absent"
+      ],
+      "warnings": [],
+      "counts": {
+        "positions": 130,
+        "textUsable": 116,
+        "imagePositions": 2,
+        "placeholders": 12,
+        "verified": 106,
+        "remaining": 6,
+        "weak": 4
+      },
+      "perQuestion": null,
+      "images": {
+        "files": 52,
+        "uniqueSha256": 52
+      }
+    },
+    {
+      "sourceId": "4162243",
+      "identity": "ok",
+      "status": "blocked",
+      "reasons": [
+        "BLOCKED_HOFF_OWNERS:per-question-shard-absent"
+      ],
+      "warnings": [],
+      "counts": {
+        "positions": 135,
+        "textUsable": 129,
+        "imagePositions": 2,
+        "placeholders": 4,
+        "verified": 114,
+        "remaining": 13,
+        "weak": 2
+      },
+      "perQuestion": null,
+      "images": {
+        "files": 61,
+        "uniqueSha256": 61
+      }
+    }
+  ]
+}
