@@ -1,0 +1,3918 @@
+{
+  "inventory": "fenbi-target-inventory",
+  "date": "2026-10-17",
+  "source_manifest": "catalog/manifest.jsonl",
+  "manifest_records": 1169,
+  "distinct_identities": 1169,
+  "duplicate_identities": [],
+  "alias_collisions": {
+    "count": 15,
+    "divergent_content": 15,
+    "byte_identical": 0,
+    "policy": "A canonical identity that merges records with different bytes is NEVER auto-merged; it is reported for curation with a suggested survivor.",
+    "groups": [
+      {
+        "canonical_identity": [
+          "内蒙古",
+          "2021",
+          "申论",
+          "乡镇"
+        ],
+        "members": [
+          {
+            "path": "省考/内蒙古/2021/申论-乡镇.md",
+            "paper_type": "乡镇",
+            "sha256": "53618b8b69ec1125989f98b92230cf4fd43283641e2bf2e1b74b19320d460c04",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/内蒙古/2021/申论-乡镇卷.md",
+            "paper_type": "乡镇卷",
+            "sha256": "6089effa09f7652a2ef000fa40ca7f88f7a49a07472237af75a78afc4759a326",
+            "question_anchors": 3,
+            "declared_questions": 3
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/内蒙古/2021/申论-乡镇.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "山西",
+          "2018",
+          "申论",
+          "乡镇"
+        ],
+        "members": [
+          {
+            "path": "省考/山西/2018/申论-乡镇.md",
+            "paper_type": "乡镇",
+            "sha256": "60794ee7f306a087ff235998987fe4a79117e3202ae8a8a8cbcd1316ae740713",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/山西/2018/申论-乡镇卷.md",
+            "paper_type": "乡镇卷",
+            "sha256": "76ddf68903774fc824dbb2fa63a2527bdf4ad16cc01c7cca7e964ee977a9b8c6",
+            "question_anchors": 4,
+            "declared_questions": 4
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/山西/2018/申论-乡镇.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "山西",
+          "2022",
+          "申论",
+          "县乡"
+        ],
+        "members": [
+          {
+            "path": "省考/山西/2022/申论-县乡.md",
+            "paper_type": "县乡",
+            "sha256": "b7fbddb6d26101647e65e430b82f0ad87722e5f194a34eec027bf506ecf99c17",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/山西/2022/申论-县乡卷.md",
+            "paper_type": "县乡卷",
+            "sha256": "52d4f31b8f965d15bbc9d7dc9e065a4a00d886a4627b08c77d2e89d0a6273097",
+            "question_anchors": 3,
+            "declared_questions": 3
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/山西/2022/申论-县乡.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "山西",
+          "2022",
+          "申论",
+          "省市"
+        ],
+        "members": [
+          {
+            "path": "省考/山西/2022/申论-省市.md",
+            "paper_type": "省市",
+            "sha256": "15fc80bf6f27fc63cce79f07b3b9f0e2f97bdf682c039377d783b6a50901b8aa",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/山西/2022/申论-省市卷.md",
+            "paper_type": "省市卷",
+            "sha256": "729c3c63e66b10730cedc18df19296f30f97d08df90113ee36674f08deb38b32",
+            "question_anchors": 2,
+            "declared_questions": 2
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/山西/2022/申论-省市.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "新疆",
+          "2019",
+          "申论",
+          "县级"
+        ],
+        "members": [
+          {
+            "path": "省考/新疆/2019/申论-县级.md",
+            "paper_type": "县级",
+            "sha256": "5005e03300489f890e796860a1d844703edf276af90fb7c046e1081d0a4a5a96",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/新疆/2019/申论-县级卷.md",
+            "paper_type": "县级卷",
+            "sha256": "15696a98921d1e0ed5c98e975220c8844638ad4f83ff9f72c82751f24c7ad86b",
+            "question_anchors": 3,
+            "declared_questions": 3
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/新疆/2019/申论-县级.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "江西",
+          "2019",
+          "申论",
+          "乡镇"
+        ],
+        "members": [
+          {
+            "path": "省考/江西/2019/申论-乡镇.md",
+            "paper_type": "乡镇",
+            "sha256": "abcd2c9a9e8cc8c7bb6a1f8625a1b355baa87a103814e8cdbcbe281f77771a14",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/江西/2019/申论-乡镇卷.md",
+            "paper_type": "乡镇卷",
+            "sha256": "aa8322de9f3d28df93cfe2e29e912b255b23df1300a197c8ed0a91c621dbc9ff",
+            "question_anchors": 3,
+            "declared_questions": 3
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/江西/2019/申论-乡镇.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "江西",
+          "2019",
+          "申论",
+          "县级"
+        ],
+        "members": [
+          {
+            "path": "省考/江西/2019/申论-县级.md",
+            "paper_type": "县级",
+            "sha256": "7e5927ed3eaaaedb7417e0594b963133cc48c6be7dfdad3e40711a6bb9ea18a6",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/江西/2019/申论-县级卷.md",
+            "paper_type": "县级卷",
+            "sha256": "38cf33b401e936b049cf37dbe7a53264a733ad2def588240f4c3a23d1ed36e29",
+            "question_anchors": 3,
+            "declared_questions": 3
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/江西/2019/申论-县级.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "河北",
+          "2021",
+          "申论",
+          "乡镇"
+        ],
+        "members": [
+          {
+            "path": "省考/河北/2021/申论-乡镇.md",
+            "paper_type": "乡镇",
+            "sha256": "0c998476dbe95ce2dac850ef67819d9e09814a93072ce1ea1b727eafb611d295",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/河北/2021/申论-乡镇卷.md",
+            "paper_type": "乡镇卷",
+            "sha256": "9aed694924ce2a98c2be32eab647323f14719a47f89d8fd8e43986552c3434e0",
+            "question_anchors": 2,
+            "declared_questions": 2
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/河北/2021/申论-乡镇.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "河北",
+          "2021",
+          "申论",
+          "县级"
+        ],
+        "members": [
+          {
+            "path": "省考/河北/2021/申论-县级.md",
+            "paper_type": "县级",
+            "sha256": "a4a58ba1b37799c036aca404ab5c589b22511e1e6e7d8609e895526b83556613",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/河北/2021/申论-县级卷.md",
+            "paper_type": "县级卷",
+            "sha256": "df9943ffe4b859a1178bc0c84d0e9f4ededd64fce87599b01be879cfb11ec864",
+            "question_anchors": 2,
+            "declared_questions": 2
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/河北/2021/申论-县级.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "河南",
+          "2022",
+          "申论",
+          "县级"
+        ],
+        "members": [
+          {
+            "path": "省考/河南/2022/申论-县级.md",
+            "paper_type": "县级",
+            "sha256": "b0527947c532b24993cd8971cc6b4d3defffeb21c0f599af51d8763b40a1ef3e",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/河南/2022/申论-县级卷.md",
+            "paper_type": "县级卷",
+            "sha256": "2f24064490a86868d40d13a7558bef4bb8659c737b318512e94fdf9d582e5e76",
+            "question_anchors": 2,
+            "declared_questions": 2
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/河南/2022/申论-县级.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "海南",
+          "2019",
+          "申论",
+          "县级"
+        ],
+        "members": [
+          {
+            "path": "省考/海南/2019/申论-县级.md",
+            "paper_type": "县级",
+            "sha256": "16f117c7735645a0eb81319fe6e500e15b866ccd5ef860cb703951fa801e644b",
+            "question_anchors": 3,
+            "declared_questions": 3
+          },
+          {
+            "path": "省考/海南/2019/申论-县级卷.md",
+            "paper_type": "县级卷",
+            "sha256": "fb40997017e8a01801c4beb454903f9b76e8165c30c2b4399f24f672298fe6d7",
+            "question_anchors": 2,
+            "declared_questions": 2
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/海南/2019/申论-县级.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "湖北",
+          "2024",
+          "申论",
+          "省市"
+        ],
+        "members": [
+          {
+            "path": "省考/湖北/2024/申论-省市.md",
+            "paper_type": "省市",
+            "sha256": "07a29d3ea0898516ae5179e13cb6182dee7c0eae7153713c219bcebb31028c07",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/湖北/2024/申论-省市卷.md",
+            "paper_type": "省市卷",
+            "sha256": "110dfcacf2476a9d4d697d56ad103a9e9070aaebbb11a53bf6fd2d8b6927eb4c",
+            "question_anchors": 4,
+            "declared_questions": 4
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/湖北/2024/申论-省市.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "湖南",
+          "2021",
+          "申论",
+          "乡镇"
+        ],
+        "members": [
+          {
+            "path": "省考/湖南/2021/申论-乡镇.md",
+            "paper_type": "乡镇",
+            "sha256": "0117fe9edfb315160fa348d9bd7d60c15826692b5051d646930f785a383022b2",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/湖南/2021/申论-乡镇卷.md",
+            "paper_type": "乡镇卷",
+            "sha256": "1f6f57ee2e10c3d7e99dae721986221aa6075dbb1ea1ea77e87584d10dd4bd3e",
+            "question_anchors": 3,
+            "declared_questions": 3
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/湖南/2021/申论-乡镇.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "湖南",
+          "2022",
+          "申论",
+          "县乡"
+        ],
+        "members": [
+          {
+            "path": "省考/湖南/2022/申论-县乡.md",
+            "paper_type": "县乡",
+            "sha256": "7e0db92b8eac381aac0bd8e929529d7f95de5da5221ede433f5dbb170c2c7cfa",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/湖南/2022/申论-县乡卷.md",
+            "paper_type": "县乡卷",
+            "sha256": "b8f97d4b7e30d74b421257bc3e81854fa679e2dd7621184bbf3d1516fadc33a6",
+            "question_anchors": 3,
+            "declared_questions": 3
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/湖南/2022/申论-县乡.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      },
+      {
+        "canonical_identity": [
+          "黑龙江",
+          "2021",
+          "申论",
+          "省级"
+        ],
+        "members": [
+          {
+            "path": "省考/黑龙江/2021/申论-省级.md",
+            "paper_type": "省级",
+            "sha256": "2c7d76cff9c6edcc49c7837dfe9cc0bf747526dd3201cd1de978eaf7356f847d",
+            "question_anchors": 4,
+            "declared_questions": 4
+          },
+          {
+            "path": "省考/黑龙江/2021/申论-省级卷.md",
+            "paper_type": "省级卷",
+            "sha256": "0c574a6bb2870f5a181a9c8c7daac7c5736c01eb1738eb22b5ef11f44e2c1941",
+            "question_anchors": 3,
+            "declared_questions": 3
+          }
+        ],
+        "byte_identical": false,
+        "content_diverges": true,
+        "suggested_survivor": "省考/黑龙江/2021/申论-省级.md",
+        "auto_merge": false,
+        "reason": "divergent content under one identity — needs curation, not a dedup"
+      }
+    ]
+  },
+  "alias_normalisation": {
+    "map": {
+      "乡镇卷": "乡镇",
+      "县乡卷": "县乡",
+      "县级卷": "县级",
+      "市县卷": "市县",
+      "省市卷": "省市",
+      "省级卷": "省级",
+      "行政执法卷": "行政执法",
+      "通用卷": "通用",
+      "统考卷": "统考"
+    },
+    "applied_counts": {
+      "行政执法卷": 13,
+      "乡镇卷": 56,
+      "县级卷": 44,
+      "省级卷": 6,
+      "县乡卷": 29,
+      "省市卷": 18,
+      "市县卷": 5,
+      "通用卷": 6
+    },
+    "deliberately_not_merged": {
+      "A卷/B卷": "A卷 refers to a province's own paper split; A类/B类 is a different taxonomy",
+      "甲级/乙级": "distinct papers (province-specific rank split)",
+      "一卷/二卷/三卷": "distinct papers in the same year",
+      "上半年/下半年": "distinct exams",
+      "乡镇/县级/县乡": "distinct recruitment tracks, kept separate even when one stems from another"
+    }
+  },
+  "coverage": {
+    "by_subject": {
+      "申论": 712,
+      "行测": 457
+    },
+    "by_area": {
+      "江苏": 63,
+      "四川": 57,
+      "国考": 54,
+      "广东": 54,
+      "浙江": 52,
+      "上海": 47,
+      "黑龙江": 44,
+      "重庆": 43,
+      "山东": 42,
+      "江西": 41,
+      "安徽": 40,
+      "新疆": 39,
+      "山西": 35,
+      "河北": 35,
+      "天津": 33,
+      "湖南": 33,
+      "福建": 33,
+      "吉林": 31,
+      "河南": 31,
+      "广西": 30,
+      "云南": 28,
+      "海南": 28,
+      "深圳": 28,
+      "贵州": 28,
+      "辽宁": 28,
+      "陕西": 28,
+      "湖北": 27,
+      "青海": 26,
+      "内蒙古": 25,
+      "宁夏": 25,
+      "北京": 24,
+      "甘肃": 24,
+      "广州": 10,
+      "西藏": 3
+    },
+    "years": [
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "paper_types_raw": {
+      "统考": 385,
+      "B类": 113,
+      "A类": 111,
+      "C类": 58,
+      "乡镇卷": 56,
+      "县级卷": 44,
+      "行政执法": 34,
+      "县乡卷": 29,
+      "副省级": 22,
+      "地市级": 22,
+      "下半年": 21,
+      "省市卷": 18,
+      "一卷": 15,
+      "二卷": 15,
+      "行政执法卷": 13,
+      "县乡": 12,
+      "省市": 11,
+      "乡镇": 10,
+      "乙级": 10,
+      "甲级": 9,
+      "兵团": 9,
+      "县级": 9,
+      "省级卷": 6,
+      "通用卷": 6,
+      "B卷": 5,
+      "上半年": 5,
+      "市县卷": 5,
+      "公安": 5,
+      "三卷": 5,
+      "省直": 5,
+      "A卷": 4,
+      "市级卷": 4,
+      "上半年行政执法卷": 3,
+      "县乡、普通选调卷": 3,
+      "市级": 3,
+      "C卷": 3,
+      "县级以上": 3,
+      "县镇": 3,
+      "省级": 3,
+      "省市县卷": 3,
+      "A卷：省直": 3,
+      "州县卷": 2,
+      "旗县卷": 2,
+      "盟市卷": 2,
+      "区级": 2,
+      "区级及以上": 2,
+      "丙卷": 2,
+      "下半年行政执法卷": 2,
+      "滨海新区等单位专项": 2,
+      "市区卷": 2,
+      "县级+乡镇": 2,
+      "县级、乡镇统一卷": 2,
+      "3月24日": 2,
+      "3月25日": 2,
+      "A、乡镇选调卷": 2,
+      "省州市卷": 1,
+      "州市": 1,
+      "盟市": 1,
+      "旗县": 1,
+      "卷乙级": 1,
+      "卷甲级": 1,
+      "甲卷": 1,
+      "定向乡镇": 1,
+      "上半年乡镇卷": 1,
+      "上半年省市县卷": 1,
+      "下半年乡镇卷": 1,
+      "下半年省市县卷": 1,
+      "上半年县乡卷": 1,
+      "上半年省市卷": 1,
+      "市级卷（历史文件名A类兼容）": 1,
+      "区县卷（历史文件名B类兼容）": 1,
+      "区县卷": 1,
+      "综合管理类区级以下机关": 1,
+      "综合管理类市级机关": 1,
+      "街镇卷": 1,
+      "单卷": 1,
+      "单考区": 1,
+      "双考区": 1,
+      "单考区卷": 1,
+      "双考区卷": 1,
+      "兵团一卷": 1,
+      "兵团二卷": 1,
+      "法检": 1,
+      "司法所": 1,
+      "思维能力测验": 1,
+      "行测1": 1,
+      "行测2": 1,
+      "省市州级": 1,
+      "C卷：县乡": 1,
+      "公检法": 1,
+      "急需紧缺岗位": 1,
+      "急需紧缺岗位（作文摘录）": 1,
+      "边境县": 1
+    }
+  },
+  "missing_original_summary": {
+    "papers_with_gaps": 5,
+    "total_missing_numbers": 106,
+    "breakdown": [
+      {
+        "path": "省考/北京/2026/行测-统考.md",
+        "count": 51,
+        "numbers": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          22,
+          31,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          89,
+          90,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          112,
+          114,
+          115,
+          117
+        ]
+      },
+      {
+        "path": "省考/广东/2020/行测-县级卷.md",
+        "count": 7,
+        "numbers": [
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ]
+      },
+      {
+        "path": "省考/江苏/2024/行测-A类.md",
+        "count": 4,
+        "numbers": [
+          76,
+          96,
+          110,
+          111
+        ]
+      },
+      {
+        "path": "省考/江苏/2026/行测-A类.md",
+        "count": 42,
+        "numbers": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135
+        ]
+      },
+      {
+        "path": "省考/浙江/2020/行测-A类.md",
+        "count": 2,
+        "numbers": [
+          49,
+          50
+        ]
+      }
+    ]
+  },
+  "shortlist_top": [
+    {
+      "identity": {
+        "area": "北京",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/北京/2026/行测-统考.md",
+      "sha256": "012bcadc0301fc178f246827035298d8b0697da836df20a246c49f6c2ee98bf0",
+      "question_state": {
+        "declared_total": 67,
+        "positions_held": 67,
+        "original_total_estimate": 118,
+        "missing_original_numbers": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          22,
+          31,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          89,
+          90,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          112,
+          114,
+          115,
+          117
+        ],
+        "missing_original_count": 51,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 173,
+      "information_gain": {
+        "score": 51023,
+        "components": {
+          "missing_original_numbers": 51,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": false,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 1
+    },
+    {
+      "identity": {
+        "area": "江苏",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "A类",
+        "canonical_type": "A类",
+        "alias_applied": false,
+        "type_ambiguous": false,
+        "caveat": null
+      },
+      "repository_path": "省考/江苏/2026/行测-A类.md",
+      "sha256": "2f1a2d0e5ee0d9f311f99ae322c4fb95491f5008a4fb6296273a9b073db61899",
+      "question_state": {
+        "declared_total": 93,
+        "positions_held": 93,
+        "original_total_estimate": 135,
+        "missing_original_numbers": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135
+        ],
+        "missing_original_count": 42,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 138,
+      "information_gain": {
+        "score": 45570,
+        "components": {
+          "missing_original_numbers": 42,
+          "missing_option_numbers": 4,
+          "missing_shared_condition_numbers": 5,
+          "missing_stem_condition_numbers": 19,
+          "missing_stem_figure_numbers": 1,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": false,
+          "type_ambiguous": false
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 2
+    },
+    {
+      "identity": {
+        "area": "广东",
+        "year": "2020",
+        "subject": "行测",
+        "paper_type": "县级卷",
+        "canonical_type": "县级",
+        "alias_applied": true,
+        "type_ambiguous": false,
+        "caveat": null
+      },
+      "repository_path": "省考/广东/2020/行测-县级卷.md",
+      "sha256": "64f6c511918541c91d6a8bf57f564f2aa296625a6b0eb093bcc433e18d36728b",
+      "question_state": {
+        "declared_total": 93,
+        "positions_held": 93,
+        "original_total_estimate": 100,
+        "missing_original_numbers": [
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "missing_original_count": 7,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 440,
+      "information_gain": {
+        "score": 7020,
+        "components": {
+          "missing_original_numbers": 7,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": false,
+          "type_ambiguous": false
+        }
+      },
+      "capture": {
+        "fenbi_source_id": "96785",
+        "capture_status": "initialized-captured",
+        "evidence": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+        "capture_ready": false,
+        "capture_ready_reason": "already-initialized-captured"
+      },
+      "rank": 3
+    },
+    {
+      "identity": {
+        "area": "江苏",
+        "year": "2024",
+        "subject": "行测",
+        "paper_type": "A类",
+        "canonical_type": "A类",
+        "alias_applied": false,
+        "type_ambiguous": false,
+        "caveat": null
+      },
+      "repository_path": "省考/江苏/2024/行测-A类.md",
+      "sha256": "98b2e57b915290a20b11c26481d5fabd8a25a3810395daef6d5ee728dc951871",
+      "question_state": {
+        "declared_total": 131,
+        "positions_held": 131,
+        "original_total_estimate": 135,
+        "missing_original_numbers": [
+          76,
+          96,
+          110,
+          111
+        ],
+        "missing_original_count": 4,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 305,
+      "information_gain": {
+        "score": 4020,
+        "components": {
+          "missing_original_numbers": 4,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": false,
+          "type_ambiguous": false
+        }
+      },
+      "capture": {
+        "fenbi_source_id": "4162243",
+        "capture_status": "initialized-captured",
+        "evidence": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+        "capture_ready": false,
+        "capture_ready_reason": "already-initialized-captured"
+      },
+      "rank": 4
+    },
+    {
+      "identity": {
+        "area": "浙江",
+        "year": "2020",
+        "subject": "行测",
+        "paper_type": "A类",
+        "canonical_type": "A类",
+        "alias_applied": false,
+        "type_ambiguous": false,
+        "caveat": null
+      },
+      "repository_path": "省考/浙江/2020/行测-A类.md",
+      "sha256": "005839ffbff73d64e72dac3ac7391300ad2aec0951fb5369267b72ae58a03a76",
+      "question_state": {
+        "declared_total": 98,
+        "positions_held": 98,
+        "original_total_estimate": 100,
+        "missing_original_numbers": [
+          49,
+          50
+        ],
+        "missing_original_count": 2,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 462,
+      "information_gain": {
+        "score": 2020,
+        "components": {
+          "missing_original_numbers": 2,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": false,
+          "type_ambiguous": false
+        }
+      },
+      "capture": {
+        "fenbi_source_id": "96454",
+        "capture_status": "catalog-confirmed-only",
+        "evidence": "reports/FENBI-LIVE-SECOND-BATCH-20261017.md",
+        "capture_ready": true,
+        "capture_ready_reason": "id-known-and-not-yet-captured"
+      },
+      "rank": 5
+    },
+    {
+      "identity": {
+        "area": "北京",
+        "year": "2025",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/北京/2025/行测-统考.md",
+      "sha256": "d7a0cff288f05874a578c4d2e6adae0cb796ca96a4e1a4276e273e8e56bea92b",
+      "question_state": {
+        "declared_total": 93,
+        "positions_held": 93,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 22,
+      "information_gain": {
+        "score": 1023,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 5,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 5,
+          "specific_defect": true,
+          "order_unverified": false,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 6
+    },
+    {
+      "identity": {
+        "area": "新疆",
+        "year": "2024",
+        "subject": "行测",
+        "paper_type": "兵团",
+        "canonical_type": "兵团",
+        "alias_applied": false,
+        "type_ambiguous": false,
+        "caveat": null
+      },
+      "repository_path": "省考/新疆/2024/行测-兵团.md",
+      "sha256": "81ba8ba9cde6185fa7b706ee2a73ed3628f7388fd7a1ed2d0c8d92854222e2f1",
+      "question_state": {
+        "declared_total": 115,
+        "positions_held": 115,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 125,
+      "information_gain": {
+        "score": 275,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 1,
+          "missing_stem_figure_numbers": 1,
+          "missing_answer_numbers": 1,
+          "specific_defect": true,
+          "order_unverified": true,
+          "type_ambiguous": false
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 7
+    },
+    {
+      "identity": {
+        "area": "黑龙江",
+        "year": "2024",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/黑龙江/2024/行测-统考.md",
+      "sha256": "265f7cd9cac25323a09cd3bdeae28c75c000ad53907cbe7e8c37848d468586c4",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 231,
+      "information_gain": {
+        "score": 228,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 1,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 8
+    },
+    {
+      "identity": {
+        "area": "上海",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/上海/2026/行测-统考.md",
+      "sha256": "d9160ec76f2d92a8bc81fdc87ec46b441a5250eb3eb44bd474badba7ee372b22",
+      "question_state": {
+        "declared_total": 129,
+        "positions_held": 129,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 209,
+      "information_gain": {
+        "score": 28,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 9
+    },
+    {
+      "identity": {
+        "area": "广州",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "双考区卷",
+        "canonical_type": "双考区卷",
+        "alias_applied": false,
+        "type_ambiguous": false,
+        "caveat": null
+      },
+      "repository_path": "省考/广东/2017/行测-广州市考-双考区.md",
+      "sha256": "632f43f36365637265e9170d71d2df83cf58522cb5dc933610379a5e59d16ab1",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 21,
+      "information_gain": {
+        "score": 25,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": true,
+          "type_ambiguous": false
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 10
+    },
+    {
+      "identity": {
+        "area": "上海",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/上海/2017/行测-统考.md",
+      "sha256": "4f9553a15369baab7db789f2c5ded06fdee9cde939f708d7e2b3706bd258cfb1",
+      "question_state": {
+        "declared_total": 136,
+        "positions_held": 136,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 38,
+      "information_gain": {
+        "score": 23,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": false,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 11
+    },
+    {
+      "identity": {
+        "area": "天津",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "滨海新区等单位专项",
+        "canonical_type": "滨海新区等单位专项",
+        "alias_applied": false,
+        "type_ambiguous": false,
+        "caveat": null
+      },
+      "repository_path": "省考/天津/2017/行测-滨海新区等单位专项.md",
+      "sha256": "da4fb5f5ca488380c3c0052842826c59fb3108ea8b8e31a1277fb71e5fe6eecf",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 213,
+      "information_gain": {
+        "score": 20,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": false,
+          "type_ambiguous": false
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 12
+    },
+    {
+      "identity": {
+        "area": "黑龙江",
+        "year": "2016",
+        "subject": "申论",
+        "paper_type": "C卷：县乡",
+        "canonical_type": "C卷：县乡",
+        "alias_applied": false,
+        "type_ambiguous": false,
+        "caveat": null
+      },
+      "repository_path": "省考/黑龙江/2016/申论-C卷：县乡.md",
+      "sha256": "b3fe153873405146870e04bd49b6f2696c774188e9752adafcce894b7d71fa8a",
+      "question_state": {
+        "declared_total": 4,
+        "positions_held": 4,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 0,
+      "information_gain": {
+        "score": 20,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": true,
+          "order_unverified": false,
+          "type_ambiguous": false
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 13
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2016",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2016/行测-统考.md",
+      "sha256": "637f49a17e603749ef19f81776993c2af41598b7d692cd1a1e9d5faa4bb220ba",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 175,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 14
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2017/行测-统考.md",
+      "sha256": "f201174845464c77774233bebe4c68d502259dd0651110c6fcfc6ce835f78d4e",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 205,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 15
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2018",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2018/行测-统考.md",
+      "sha256": "19ab08f422d68d50f77996bae7f11fc0efacd1f2ed42d864e1b890bc2f36d70e",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 230,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 16
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2019",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2019/行测-统考.md",
+      "sha256": "34f5febe03091a890aba7690e9965629bc000b55471dc93f212dbe43775750e0",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 234,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 17
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2020",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2020/行测-统考.md",
+      "sha256": "85b4b4d4a28b706b9ba32dec0b6458f15bbd5fccaeb17a4cb10fca50c0dfdce8",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 310,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 18
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2021",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2021/行测-统考.md",
+      "sha256": "df1a15e23f596a82d4f977385f7f2bc54702d435d3d7ffa40abbc5256df30bfe",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 348,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 19
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2022",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2022/行测-统考.md",
+      "sha256": "bcb3d3f13ce1fb1492056b0f49391d9c2053c718f866d16130aa1ed0493c7aee",
+      "question_state": {
+        "declared_total": 99,
+        "positions_held": 99,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 165,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 20
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2023",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2023/行测-统考.md",
+      "sha256": "686bb71b5586cfefbf7be000c50d4187587c99d13825b0631fd6cdc9425b05a5",
+      "question_state": {
+        "declared_total": 99,
+        "positions_held": 99,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 125,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 21
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2024",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2024/行测-统考.md",
+      "sha256": "eb2c688fa6ba8cb128a207b80e5bf7bd215970dacaf14515438505e88e104709",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 110,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 22
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2025",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2025/行测-统考.md",
+      "sha256": "513c7da42e9f4bfd960f200510be4891484a54acb9a3b46e1fe3173afe2eb2d3",
+      "question_state": {
+        "declared_total": 109,
+        "positions_held": 109,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 165,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 23
+    },
+    {
+      "identity": {
+        "area": "云南",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/云南/2026/行测-统考.md",
+      "sha256": "9717ba0b6455dcd133fbd14ccd031241a6d889f4a5d07a62b2940e2b481a3cf7",
+      "question_state": {
+        "declared_total": 107,
+        "positions_held": 107,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 154,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 24
+    },
+    {
+      "identity": {
+        "area": "内蒙古",
+        "year": "2016",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/内蒙古/2016/行测-统考.md",
+      "sha256": "1cf3b7d3d2260fdd30b17b5b6b4b49ccad299bba35feecc5fbd0474405faff0e",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 180,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 25
+    },
+    {
+      "identity": {
+        "area": "内蒙古",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/内蒙古/2017/行测-统考.md",
+      "sha256": "40c0c02904c241b7d11f3ff9ea75bfa094a17b70f236e1421f11e6c8ce293522",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 293,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 26
+    },
+    {
+      "identity": {
+        "area": "内蒙古",
+        "year": "2018",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/内蒙古/2018/行测-统考.md",
+      "sha256": "a953bb0071fa92ac69d5a193e93f763ee13c3683323b88ab04fc25b86e1d8278",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 276,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 27
+    },
+    {
+      "identity": {
+        "area": "内蒙古",
+        "year": "2019",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/内蒙古/2019/行测-统考.md",
+      "sha256": "ad2a86af9bebca3db4b0015b3b4e6fae0c4874a73a3685c2007e9597d1e007ce",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 248,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 28
+    },
+    {
+      "identity": {
+        "area": "内蒙古",
+        "year": "2021",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/内蒙古/2021/行测-统考.md",
+      "sha256": "fdef94d8c42b83a6efa657523252e08c2871d99ba9fff76513db45a10b3cd755",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 348,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 29
+    },
+    {
+      "identity": {
+        "area": "内蒙古",
+        "year": "2022",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/内蒙古/2022/行测-统考.md",
+      "sha256": "a13dd68de118d85b2d10cc1f9733e0a33c9d10ca31e2635b315bd6e8c24f51e9",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 162,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 30
+    },
+    {
+      "identity": {
+        "area": "内蒙古",
+        "year": "2023",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/内蒙古/2023/行测-统考.md",
+      "sha256": "9b78af5c48c2beea19b70f11c351a87294ef53f78485b955f2b86cce74b28817",
+      "question_state": {
+        "declared_total": 119,
+        "positions_held": 119,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 141,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 31
+    },
+    {
+      "identity": {
+        "area": "内蒙古",
+        "year": "2025",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/内蒙古/2025/行测-统考.md",
+      "sha256": "043f5e5233e5dc596632f5e383c5fec61866a6578bf804403bcd1fc5b847d385",
+      "question_state": {
+        "declared_total": 125,
+        "positions_held": 125,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 152,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 32
+    },
+    {
+      "identity": {
+        "area": "内蒙古",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/内蒙古/2026/行测-统考.md",
+      "sha256": "89bbc1296ad09d5336b4fbbc952e137c92b6732b77a99b561b0ed94e724b620e",
+      "question_state": {
+        "declared_total": 120,
+        "positions_held": 120,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 161,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 33
+    },
+    {
+      "identity": {
+        "area": "北京",
+        "year": "2016",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/北京/2016/行测-统考.md",
+      "sha256": "cd582c601c365d6e9bf9859a09e598bb78587fa8537d5f12bca3f29a7e86bce5",
+      "question_state": {
+        "declared_total": 135,
+        "positions_held": 135,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 248,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 34
+    },
+    {
+      "identity": {
+        "area": "北京",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/北京/2017/行测-统考.md",
+      "sha256": "124b95e01b8df48f04e5252156822ba08111265ca85c418feaa256ba8287aedd",
+      "question_state": {
+        "declared_total": 135,
+        "positions_held": 135,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 345,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 35
+    },
+    {
+      "identity": {
+        "area": "北京",
+        "year": "2018",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/北京/2018/行测-统考.md",
+      "sha256": "223b0fcc5d27683619a14c9aeea172998cb423ab7f04de2f7d0201d79b0aefd0",
+      "question_state": {
+        "declared_total": 135,
+        "positions_held": 135,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 314,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 36
+    },
+    {
+      "identity": {
+        "area": "北京",
+        "year": "2019",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/北京/2019/行测-统考.md",
+      "sha256": "5561cc3b7b27fd6384f4396cce5768ab922c1d0bd9bfa740eeedd0d54eb6a15f",
+      "question_state": {
+        "declared_total": 135,
+        "positions_held": 135,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 356,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 37
+    },
+    {
+      "identity": {
+        "area": "北京",
+        "year": "2022",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/北京/2022/行测-统考.md",
+      "sha256": "6678c8013909316e3004f47f58192becd9373add3eb70ad194a1d36b8aa0166d",
+      "question_state": {
+        "declared_total": 135,
+        "positions_held": 135,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 157,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 38
+    },
+    {
+      "identity": {
+        "area": "北京",
+        "year": "2023",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/北京/2023/行测-统考.md",
+      "sha256": "e3df920a9d00a38f751d46352ae79f936cfd381d1c66a5bd784cf4eb8148c3f5",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 133,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 39
+    },
+    {
+      "identity": {
+        "area": "吉林",
+        "year": "2020",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/吉林/2020/行测-统考.md",
+      "sha256": "9b7ccbe932bf53525b85dc4bca644cf741e74e6fe41aa6e6eac7d9eb58973764",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 256,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 40
+    },
+    {
+      "identity": {
+        "area": "吉林",
+        "year": "2021",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/吉林/2021/行测-统考.md",
+      "sha256": "13faa6beb56580efa140a6cc415fbab356da9299095df47c0ab06f0915eb8dd0",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 328,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 41
+    },
+    {
+      "identity": {
+        "area": "吉林",
+        "year": "2022",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/吉林/2022/行测-统考.md",
+      "sha256": "7420bd0c07dce35aab598c10f9595a2ec821afcbc1a5846a3ee8abf4e2d71f32",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 139,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 42
+    },
+    {
+      "identity": {
+        "area": "吉林",
+        "year": "2023",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/吉林/2023/行测-统考.md",
+      "sha256": "30cdf2caa9efb2ab755cc00ff03e86813633dc6ace0c0e258f364221bdc9b62f",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 138,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 43
+    },
+    {
+      "identity": {
+        "area": "吉林",
+        "year": "2024",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/吉林/2024/行测-统考.md",
+      "sha256": "7617de938b08ed3873e2d7492c0a407d34e0468f66a063354b89dd9574e52b7c",
+      "question_state": {
+        "declared_total": 87,
+        "positions_held": 87,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 126,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 44
+    },
+    {
+      "identity": {
+        "area": "吉林",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/吉林/2026/行测-统考.md",
+      "sha256": "9e3210f4a29f949a55c03a362d86aea66ad110cac8e483e7caf5b9cc36f3b6cb",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 140,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 45
+    },
+    {
+      "identity": {
+        "area": "四川",
+        "year": "2016",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/四川/2016/行测-统考.md",
+      "sha256": "d83e55eb01bca07c88882e534fe8379552b1d6a65046f8aa535138a27284eea0",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 155,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 46
+    },
+    {
+      "identity": {
+        "area": "四川",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/四川/2017/行测-统考.md",
+      "sha256": "5e4c5988efb6df9615d99531d679d0c4e9b0789db828199ecf0aaae939813863",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 222,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 47
+    },
+    {
+      "identity": {
+        "area": "四川",
+        "year": "2018",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/四川/2018/行测-统考.md",
+      "sha256": "cc79d6d050111cfbef846ff35f07976d6963227aa17062e094825f2370b2914c",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 187,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 48
+    },
+    {
+      "identity": {
+        "area": "四川",
+        "year": "2019",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/四川/2019/行测-统考.md",
+      "sha256": "4d4bd3471c37b8ce7527e109d0b61efe937808bb34f6b297f7dd2426278fe89c",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 303,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 49
+    },
+    {
+      "identity": {
+        "area": "四川",
+        "year": "2020",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "alias_applied": false,
+        "type_ambiguous": true,
+        "caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      "repository_path": "省考/四川/2020/行测-统考.md",
+      "sha256": "f064205b5dbb0456871d44cbc13a249ad855bbabb562c3055eafa63b4c36eb15",
+      "question_state": {
+        "declared_total": 100,
+        "positions_held": 100,
+        "original_total_estimate": null,
+        "missing_original_numbers": [],
+        "missing_original_count": 0,
+        "note": "declared_total is the current file's own count; positions_held is what the library has; original_total_estimate = held + missing. A source placeholder is never a held question."
+      },
+      "image_references": 401,
+      "information_gain": {
+        "score": 8,
+        "components": {
+          "missing_original_numbers": 0,
+          "missing_option_numbers": 0,
+          "missing_shared_condition_numbers": 0,
+          "missing_stem_condition_numbers": 0,
+          "missing_stem_figure_numbers": 0,
+          "missing_answer_numbers": 0,
+          "specific_defect": false,
+          "order_unverified": true,
+          "type_ambiguous": true
+        }
+      },
+      "capture": {
+        "fenbi_source_id": null,
+        "capture_status": "not-observed",
+        "evidence": null,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown"
+      },
+      "rank": 50
+    }
+  ],
+  "handoff": {
+    "note": "Identity only. Contains no question text, no answers, no images and no credentials. Entries with a null fenbi id are LOOKUP TARGETS for the directory, never capture-ready.",
+    "count": 30,
+    "with_known_id": 1,
+    "lookup_needed": 29,
+    "entries": [
+      {
+        "area": "北京",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/北京/2026/行测-统考.md",
+        "questions_to_look_for": 67,
+        "original_total_estimate": 118,
+        "missing_original_count": 51,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "江苏",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "A类",
+        "canonical_type": "A类",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/江苏/2026/行测-A类.md",
+        "questions_to_look_for": 93,
+        "original_total_estimate": 135,
+        "missing_original_count": 42,
+        "identity_caveat": null
+      },
+      {
+        "area": "浙江",
+        "year": "2020",
+        "subject": "行测",
+        "paper_type": "A类",
+        "canonical_type": "A类",
+        "fenbi_source_id": "96454",
+        "id_source": "observed-in-repo",
+        "catalog_lookup_needed": false,
+        "capture_ready": true,
+        "capture_ready_reason": "id-known-and-not-yet-captured",
+        "capture_status": "catalog-confirmed-only",
+        "evidence": "reports/FENBI-LIVE-SECOND-BATCH-20261017.md",
+        "repository_path": "省考/浙江/2020/行测-A类.md",
+        "questions_to_look_for": 98,
+        "original_total_estimate": 100,
+        "missing_original_count": 2,
+        "identity_caveat": null
+      },
+      {
+        "area": "北京",
+        "year": "2025",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/北京/2025/行测-统考.md",
+        "questions_to_look_for": 93,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "新疆",
+        "year": "2024",
+        "subject": "行测",
+        "paper_type": "兵团",
+        "canonical_type": "兵团",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/新疆/2024/行测-兵团.md",
+        "questions_to_look_for": 115,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": null
+      },
+      {
+        "area": "黑龙江",
+        "year": "2024",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/黑龙江/2024/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "上海",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/上海/2026/行测-统考.md",
+        "questions_to_look_for": 129,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "广州",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "双考区卷",
+        "canonical_type": "双考区卷",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/广东/2017/行测-广州市考-双考区.md",
+        "questions_to_look_for": 100,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": null
+      },
+      {
+        "area": "上海",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/上海/2017/行测-统考.md",
+        "questions_to_look_for": 136,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "天津",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "滨海新区等单位专项",
+        "canonical_type": "滨海新区等单位专项",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/天津/2017/行测-滨海新区等单位专项.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": null
+      },
+      {
+        "area": "黑龙江",
+        "year": "2016",
+        "subject": "申论",
+        "paper_type": "C卷：县乡",
+        "canonical_type": "C卷：县乡",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/黑龙江/2016/申论-C卷：县乡.md",
+        "questions_to_look_for": 4,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": null
+      },
+      {
+        "area": "云南",
+        "year": "2016",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2016/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2017/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2018",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2018/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2019",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2019/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2020",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2020/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2021",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2021/行测-统考.md",
+        "questions_to_look_for": 100,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2022",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2022/行测-统考.md",
+        "questions_to_look_for": 99,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2023",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2023/行测-统考.md",
+        "questions_to_look_for": 99,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2024",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2024/行测-统考.md",
+        "questions_to_look_for": 100,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2025",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2025/行测-统考.md",
+        "questions_to_look_for": 109,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "云南",
+        "year": "2026",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/云南/2026/行测-统考.md",
+        "questions_to_look_for": 107,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "内蒙古",
+        "year": "2016",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/内蒙古/2016/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "内蒙古",
+        "year": "2017",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/内蒙古/2017/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "内蒙古",
+        "year": "2018",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/内蒙古/2018/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "内蒙古",
+        "year": "2019",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/内蒙古/2019/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "内蒙古",
+        "year": "2021",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/内蒙古/2021/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "内蒙古",
+        "year": "2022",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/内蒙古/2022/行测-统考.md",
+        "questions_to_look_for": 120,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "内蒙古",
+        "year": "2023",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/内蒙古/2023/行测-统考.md",
+        "questions_to_look_for": 119,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      },
+      {
+        "area": "内蒙古",
+        "year": "2025",
+        "subject": "行测",
+        "paper_type": "统考",
+        "canonical_type": "统考",
+        "fenbi_source_id": null,
+        "id_source": "unknown",
+        "catalog_lookup_needed": true,
+        "capture_ready": false,
+        "capture_ready_reason": "fenbi-id-unknown",
+        "capture_status": "not-observed",
+        "evidence": null,
+        "repository_path": "省考/内蒙古/2025/行测-统考.md",
+        "questions_to_look_for": 125,
+        "original_total_estimate": null,
+        "missing_original_count": 0,
+        "identity_caveat": {
+          "flag": "paper-type-label-is-internal-placeholder",
+          "note": "内部未归属卷型标签，不自动视为独立原卷"
+        }
+      }
+    ]
+  },
+  "policy": [
+    "An unknown fenbi id is null and is never capture-ready.",
+    "A canonical identity merging divergent bytes is reported, never auto-merged.",
+    "declared_total is not the recovered count; a source placeholder is not a question.",
+    "This inventory is metadata only and performs no network access."
+  ]
+}

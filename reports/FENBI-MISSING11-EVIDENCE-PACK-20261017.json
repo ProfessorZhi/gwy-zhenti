@@ -1,0 +1,767 @@
+{
+  "pack": "missing-evidence-pack",
+  "date": "2026-10-17",
+  "revision": "2 — corrected after PR #33",
+  "repo_head": "5cb42b21060466dccd92bed69245787d3b85714f",
+  "correction": {
+    "date": "2026-10-17",
+    "supersedes": "revision 1 of this pack, which asserted the 11 questions were 'confirmed present on the source with content captured'",
+    "authority": {
+      "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+      "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+      "pr": 33,
+      "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+      "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+      "sha256_verified": true
+    },
+    "superseded_evidence": {
+      "path": "reports/FENBI-LIVE-THIRD-BATCH-20261017.md",
+      "pr": 29,
+      "retracted_claim": "that the 4 江苏2024A and 7 广东2020 gap numbers were '真实存在且可见' and '已被本次采集取得' — i.e. captured content",
+      "why_wrong": "the aligner reported `no-safe-unique-match`, which was read as 'content differs'. It actually meant the source slot holds a collection stub, so there was nothing to match."
+    },
+    "what_actually_holds": "at all 11 numbers the source page holds an uncollected collection stub; a question number or DOM container proves a slot exists, not that content was collected",
+    "corroboration": "the same stub string is what the pinned third-party references print at these numbers (verified in the PR #24 probe of 上岸通/展鸿/星光), so the two directions agree",
+    "not_claimed": "PR #33 corrects a misreading of the capture; it is NOT an official-paper certification of anything, and this pack does not present it as one"
+  },
+  "scope": {
+    "papers": 2,
+    "questions": 11,
+    "statement": "The 11 gap numbers. Their source slots exist but hold no content, so no repair is possible from the fenbi capture. Separate from the 江苏2025C backfill, which must not be overwritten."
+  },
+  "papers": [
+    {
+      "label": "江苏2024A类",
+      "path": "省考/江苏/2024/行测-A类.md",
+      "fenbi_source_id": "4162243",
+      "source_question_count": 135,
+      "library_question_count": 131,
+      "declared_missing": [
+        76,
+        96,
+        110,
+        111
+      ],
+      "stub_numbers": [
+        76,
+        96,
+        110,
+        111
+      ],
+      "source_content_available": false,
+      "is_official": false,
+      "note": "The four source-only numbers coincide exactly with the library's declared gaps — but each is an uncollected stub, so the source cannot supply these questions."
+    },
+    {
+      "label": "广东2020县级卷",
+      "path": "省考/广东/2020/行测-县级卷.md",
+      "fenbi_source_id": "96785",
+      "source_question_count": 100,
+      "library_question_count": 93,
+      "declared_missing": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "stub_numbers": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "source_content_available": false,
+      "is_official": false,
+      "note": "The seven source-only numbers coincide exactly with the library's declared gaps, and all seven are uncollected stubs. Separately, 14 OTHER numbers in this paper are genuine content differences (18,22,64,66,67,79,87,91,92,94,96,98,99,100) — a different question from these gaps, and it still needs per-item manual review."
+    }
+  ],
+  "supporting_sources": [
+    {
+      "name": "上岸通 fixed reference",
+      "role": "pinned by the repo's own report",
+      "status": "placeholder-no-content",
+      "supplies_content": false
+    },
+    {
+      "name": "展鸿教育 2024江苏A 真题 PDF",
+      "role": "independent institution edition",
+      "status": "placeholder-no-content",
+      "supplies_content": false
+    },
+    {
+      "name": "星光公考 100题版 广东2020",
+      "role": "independent institution edition",
+      "status": "placeholder-no-content",
+      "supplies_content": false
+    },
+    {
+      "name": "崖门/丫门 pinned PDF 广东2020",
+      "role": "pinned by the repo's own report",
+      "status": "number-absent-from-source",
+      "supplies_content": false
+    },
+    {
+      "name": "粉笔 third-batch capture",
+      "role": "vendor recollection edition",
+      "status": "uncollected-placeholder-stub",
+      "supplies_content": false,
+      "note": "at every one of the 11 numbers the page holds a collection stub, per the PR #33 per-item DOM audit"
+    }
+  ],
+  "items": [
+    {
+      "id": "江苏2024A类-76",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "original_number": 76,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 76,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 76,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 77,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "4162243",
+        "capture_dir": "papers/js-2024-xingce-a-4162243/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "江苏2024A类-96",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "original_number": 96,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 96,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 96,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 98,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "4162243",
+        "capture_dir": "papers/js-2024-xingce-a-4162243/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "江苏2024A类-110",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "original_number": 110,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 110,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 110,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 114,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "4162243",
+        "capture_dir": "papers/js-2024-xingce-a-4162243/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "江苏2024A类-111",
+      "paper": "省考/江苏/2024/行测-A类.md",
+      "label": "江苏2024A类",
+      "original_number": 111,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 111,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 111,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 115,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "4162243",
+        "capture_dir": "papers/js-2024-xingce-a-4162243/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-69",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 69,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 69,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 69,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 76,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-70",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 70,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 70,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 70,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 77,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-71",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 71,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 71,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 71,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 78,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-72",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 72,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 72,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 72,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 79,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-73",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 73,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 73,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 73,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 80,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-74",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 74,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 74,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 74,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 81,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    },
+    {
+      "id": "广东2020县级卷-75",
+      "paper": "省考/广东/2020/行测-县级卷.md",
+      "label": "广东2020县级卷",
+      "original_number": 75,
+      "library": {
+        "heading_present": false,
+        "state": "absent-gap-preserved"
+      },
+      "mapping": {
+        "source_number": 75,
+        "join": "number",
+        "join_basis": "the source numbers questions the same way the library does (偏移 = 0), so source N == library N",
+        "insert_at_original_number": 75,
+        "renumbering_required": false,
+        "positional_join_would_use_library_number": 82,
+        "positional_join_is_wrong": true
+      },
+      "source_slot": {
+        "fenbi_source_id": "96785",
+        "capture_dir": "papers/gd-2020-xingce-county-96785/",
+        "slot_exists": true,
+        "slot_kind": "uncollected-placeholder-stub",
+        "source_content_available": false,
+        "observed": "the page holds a collection stub ('题目正在全力以赴征集…'), not question text",
+        "evidence_anchor": {
+          "path": "reports/FENBI-AUDIT-CORRECTION-20261017.md",
+          "commit": "f19ff2fadb6ee765a2f5c842f1827029460ca623",
+          "pr": 33,
+          "sha256_recorded": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_local": "0ad5ff44b9d9cedcf34f6f9a6d76f2841bd9a0aebdce1512ec989a3989e6dc2a",
+          "sha256_verified": true
+        }
+      },
+      "candidate_status": "blocked",
+      "repair_state": "blocked-no-source-content",
+      "blocked_reason": "The source lists this number but has not collected the question; there is no source text to repair from.",
+      "established": {
+        "number_listed_on_source": true,
+        "content_available": false,
+        "answer": "unknown",
+        "explanation": "unknown"
+      },
+      "required_evidence": [
+        "a non-stub stem, from a source that has actually collected the question",
+        "options[] (label + text, in order)",
+        "material_linkage (which shared material the question hangs off, if any)",
+        "figure_bytes + sha256 for every figure/formula",
+        "the source's own numbering for the question",
+        "the licence/permission to redistribute that source into this repository"
+      ],
+      "provenance_class": "recollection-institution",
+      "is_official": false,
+      "write_authorization": "not-confirmed",
+      "answer_policy": "The source publishes no answers or explanations. They stay unknown; they are not to be inferred, and no AI-generated question or option text may stand in for source text."
+    }
+  ],
+  "summary": {
+    "questions": 11,
+    "candidate_status_blocked": 11,
+    "source_content_available": 0,
+    "waiting_on_a_source_that_has_the_question": 11
+  },
+  "authorization_checklist": {
+    "state": "NOT CONFIRMED",
+    "note": "No repair can be authorised from the fenbi capture for these 11: there is no content there to authorise. A different source is needed first.",
+    "required_before_writing": [
+      "a source that has actually collected these questions",
+      "the licence/permission to redistribute that source into this repository",
+      "a handoff supplying the per-question evidence fields above"
+    ],
+    "until_confirmed": [
+      "no question text is written into 省考/ or any tracked path",
+      "full candidate material stays in a gitignored restricted directory",
+      "only a machine-readable patch plan, source pointers and digests are published"
+    ]
+  },
+  "restricted_dir_convention": {
+    "path": "work/missing25-candidates/",
+    "gitignored": true,
+    "holds": "full candidate text and image bytes, local only"
+  },
+  "boundary": [
+    "No question text, option text, answer or explanation is included in this pack.",
+    "No file under 国考/, 省考/, 图片/ or catalog/ is modified.",
+    "The 江苏2025C backfill is not touched.",
+    "Nothing here is described as an official paper; every source consulted is an institution or recollection edition.",
+    "This pack does not ask anyone to authorise a repair from the fenbi capture, because that capture holds no question content for these numbers."
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "audit": "js2026a-source-access-audit",
+  "date": "2026-10-17",
+  "paper": {
+    "path": "省考/江苏/2026/行测-A类.md",
+    "province": "江苏",
+    "year": 2026,
+    "subject": "行测",
+    "variant": "A类",
+    "provenance_nature": "网友回忆残卷",
+    "declared_total_questions": 135,
+    "library_question_count": 93,
+    "declared_missing_count": 42,
+    "recorded_source_pdf_sha256": "8099902d90b94d6c96f8aef18e2d75597d1799e6d6fcf0c761fd180a4275bd13",
+    "recorded_source_pdf_present_in_repo": false,
+    "recorded_source_note": "front matter names a user-supplied PDF plus a WeChat-account compilation; the PDF is not in the repository"
+  },
+  "method": {
+    "probe_order": [
+      "repository-local sources (recorded original PDF, sibling copies)",
+      "official provincial channels",
+      "institution editions reachable from this host",
+      "public search engine, then classified by access model"
+    ],
+    "constraints": [
+      "no login, no captcha, no paywall bypass",
+      "no guessed interfaces and no identifier enumeration",
+      "no access to the fenbi login profile or any other lane's worktree"
+    ],
+    "network_note": "only some hosts resolve from this box; probe results are current as of the audit date, not a statement about a domain's permanence"
+  },
+  "sources": [
+    {
+      "id": "repo-local-original-pdf",
+      "category": "repository-local",
+      "name": "用户提供 PDF（front matter 记录 sha256 8099902d…）",
+      "reachable": false,
+      "found_in_repo": false,
+      "has_the_42": "unknown",
+      "redistributable": "unknown",
+      "note": "recorded digest does not match any file in the tree; the original is held outside the repository"
+    },
+    {
+      "id": "official-jshrss",
+      "category": "official",
+      "name": "江苏省人力资源和社会保障厅 2026 年度考试录用公务员专题",
+      "url": "https://jshrss.jiangsu.gov.cn/col/col92911/index.html",
+      "reachable": true,
+      "has_the_42": false,
+      "evidence": "topic page contains 0 occurrences of 真题; published items are 公告 / 公共科目笔试考试大纲 / 成绩, not question papers",
+      "redistributable": "not applicable — no paper published",
+      "note": "official channels do not release 行测 papers; this is an expected structural negative, not a temporary gap"
+    },
+    {
+      "id": "official-jiangsu-gov",
+      "category": "official",
+      "name": "www.jiangsu.gov.cn",
+      "reachable": true,
+      "has_the_42": "not established",
+      "note": "resolves, but no paper-shaped content located; not pursued further because the 人社厅 专题 is the authoritative channel for this exam"
+    },
+    {
+      "id": "offcn",
+      "category": "institution",
+      "name": "中公教育网 — 2026江苏公务员考试行测申论试题解读汇总",
+      "reachable": true,
+      "has_the_42": "not established",
+      "redistributable": false,
+      "note": "indexed by search; institution editorial content, copyright-restricted for redistribution into this repository; URL resolution blocked by the search engine's JS redirect wrapper, so the page was not opened"
+    },
+    {
+      "id": "huatu-js",
+      "category": "institution",
+      "name": "华图 / 江苏华图",
+      "reachable": true,
+      "has_the_42": "not established",
+      "redistributable": false,
+      "note": "site resolves; no site-scoped result for the 2026 A paper returned"
+    },
+    {
+      "id": "other-institutions",
+      "category": "institution",
+      "name": "zgjsks / gongkaoleida",
+      "reachable": true,
+      "has_the_42": "not established",
+      "redistributable": false
+    },
+    {
+      "id": "doc-sharing",
+      "category": "document-sharing",
+      "name": "360文库 / 人人文库 / 原创力文档 / 淘豆网",
+      "reachable": true,
+      "has_the_42": "advertised but unverified",
+      "redistributable": false,
+      "note": "search returns many '2026年江苏省考行测A类真题' documents; all sit behind account or payment gates. NOT accessed — paywall bypass is prohibited, and the documents are third-party uploads of unverified provenance"
+    },
+    {
+      "id": "search-engine",
+      "category": "discovery",
+      "name": "360 搜索（www.so.com）",
+      "reachable": true,
+      "note": "usable for discovery only. Bing returned unrelated results for CJK queries, DuckDuckGo and Baidu returned blocked shells, and api.github.com times out so GitHub code search is unavailable"
+    },
+    {
+      "id": "fenbi",
+      "category": "capture",
+      "name": "粉笔",
+      "reachable": "not attempted",
+      "has_the_42": "unknown",
+      "note": "this lane has no access to the fenbi login profile by instruction; no capture was made"
+    }
+  ],
+  "conclusion": {
+    "verdict": "BLOCKED",
+    "questions_with_recovered_content": 0,
+    "questions_blocked": 42,
+    "statement": "No source reachable from this host was shown to hold the 42 missing questions in a form that may be redistributed into this repository.",
+    "explicitly_not_claimed": [
+      "not that the questions do not exist publicly",
+      "not that any particular domain is permanently unavailable",
+      "not that the paper is complete or incomplete beyond the recorded 93/135"
+    ]
+  },
+  "next_step_strategy": [
+    {
+      "priority": 1,
+      "action": "re-acquire the recorded user-supplied PDF by its digest 8099902d… and vet it with source_candidate_vet.py",
+      "why": "it is the paper's own declared source and the only artefact known to share the library's numbering"
+    },
+    {
+      "priority": 2,
+      "action": "ask the fenbi capture owner whether a 江苏2026A exercise can be initialised, and if so supply a handoff",
+      "why": "the vendor is the only source that reliably carries original numbering; note the earlier lesson that a listed number may still be a stub"
+    },
+    {
+      "priority": 3,
+      "action": "obtain a licensed edition (publisher or licensed institution) and confirm redistribution permission in writing before any text enters the repository",
+      "why": "institution and document-sharing copies are copyright-restricted"
+    },
+    {
+      "priority": 4,
+      "action": "do not pursue the document-sharing sites without an explicit licence",
+      "why": "gated uploads of unverified provenance; bypass is prohibited"
+    }
+  ]
+}

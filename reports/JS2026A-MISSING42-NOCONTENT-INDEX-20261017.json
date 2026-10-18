@@ -1,0 +1,656 @@
+{
+  "audit": "js2026a-source-candidate-vet",
+  "paper": {
+    "path": "省考/江苏/2026/行测-A类.md",
+    "declared_missing_count": 42,
+    "declared_total_questions": 135,
+    "library_question_count": 93,
+    "library_sha256": "2f1a2d0e5ee0d9f311f99ae322c4fb95491f5008a4fb6296273a9b073db61899",
+    "provenance_nature": "网友回忆残卷",
+    "declared_missing": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135
+    ],
+    "gap_runs": [
+      {
+        "from": 16,
+        "to": 23,
+        "count": 8
+      },
+      {
+        "from": 32,
+        "to": 40,
+        "count": 9
+      },
+      {
+        "from": 86,
+        "to": 93,
+        "count": 8
+      },
+      {
+        "from": 102,
+        "to": 108,
+        "count": 7
+      },
+      {
+        "from": 126,
+        "to": 135,
+        "count": 10
+      }
+    ]
+  },
+  "candidate": {
+    "supplied": false,
+    "path": null,
+    "format": null,
+    "numbers_found": 0,
+    "identity_tokens": {
+      "2026": null,
+      "江苏": null,
+      "行测": null
+    },
+    "identity_ok": null
+  },
+  "items": [
+    {
+      "number": 16,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "片段阅读"
+      },
+      "expected_type": "片段阅读",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 17,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "片段阅读"
+      },
+      "expected_type": "片段阅读",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 18,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "片段阅读"
+      },
+      "expected_type": "片段阅读",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 19,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "片段阅读"
+      },
+      "expected_type": "片段阅读",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 20,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "片段阅读"
+      },
+      "expected_type": "片段阅读",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 21,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "片段阅读"
+      },
+      "expected_type": "片段阅读",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 22,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "片段阅读"
+      },
+      "expected_type": "片段阅读",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 23,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "片段阅读"
+      },
+      "expected_type": "片段阅读",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 32,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "片段阅读",
+        "next_type": "逻辑填空"
+      },
+      "expected_type": "逻辑填空",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 33,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "片段阅读",
+        "next_type": "逻辑填空"
+      },
+      "expected_type": "逻辑填空",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 34,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "片段阅读",
+        "next_type": "逻辑填空"
+      },
+      "expected_type": "逻辑填空",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 35,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "片段阅读",
+        "next_type": "逻辑填空"
+      },
+      "expected_type": "逻辑填空",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 36,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "片段阅读",
+        "next_type": "逻辑填空"
+      },
+      "expected_type": "逻辑填空",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 37,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "片段阅读",
+        "next_type": "逻辑填空"
+      },
+      "expected_type": "逻辑填空",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 38,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "片段阅读",
+        "next_type": "逻辑填空"
+      },
+      "expected_type": "逻辑填空",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 39,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "片段阅读",
+        "next_type": "逻辑填空"
+      },
+      "expected_type": "逻辑填空",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 40,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "片段阅读",
+        "next_type": "逻辑填空"
+      },
+      "expected_type": "逻辑填空",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 86,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "other"
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 87,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "other"
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 88,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "other"
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 89,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "other"
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 90,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "other"
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 91,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "other"
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 92,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "other"
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 93,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": "other"
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 102,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "数量关系",
+        "next_type": "定义判断"
+      },
+      "expected_type": "定义判断",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 103,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "数量关系",
+        "next_type": "定义判断"
+      },
+      "expected_type": "定义判断",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 104,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "数量关系",
+        "next_type": "定义判断"
+      },
+      "expected_type": "定义判断",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 105,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "数量关系",
+        "next_type": "定义判断"
+      },
+      "expected_type": "定义判断",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 106,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "数量关系",
+        "next_type": "定义判断"
+      },
+      "expected_type": "定义判断",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 107,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "数量关系",
+        "next_type": "定义判断"
+      },
+      "expected_type": "定义判断",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 108,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "数量关系",
+        "next_type": "定义判断"
+      },
+      "expected_type": "定义判断",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 126,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 127,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 128,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 129,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 130,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 131,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 132,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 133,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 134,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    },
+    {
+      "number": 135,
+      "library_state": "absent-gap-preserved",
+      "neighbour_context": {
+        "previous_type": "other",
+        "next_type": null
+      },
+      "expected_type": "other",
+      "source": {
+        "state": "not-supplied",
+        "reason": "no-candidate-source-given"
+      }
+    }
+  ],
+  "summary": {
+    "declared_missing": 42,
+    "source_content": 0,
+    "source_stub": 0,
+    "source_absent": 0,
+    "source_not_supplied": 42,
+    "verdict": "blocked-no-source-supplied"
+  },
+  "policy": [
+    "A number counts as recovered only when the source holds text for it.",
+    "A collection stub is not content and is never counted as partial recovery.",
+    "The gap list is read from the paper's front matter, not hardcoded.",
+    "No question text is emitted by this tool."
+  ]
+}

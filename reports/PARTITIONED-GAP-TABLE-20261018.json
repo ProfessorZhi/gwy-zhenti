@@ -1,0 +1,940 @@
+{
+  "table": "four-granularity-gap-table",
+  "date": "2026-10-18",
+  "granularities": [
+    {
+      "id": "A",
+      "label": "缺完整参考卷",
+      "unit": "paper_slot (地区 x 年份 x 科目 x 卷型)",
+      "count": 46,
+      "registry_declared": 46,
+      "reconciliation_ok": true,
+      "by_area": {
+        "上海": 16,
+        "浙江": 15,
+        "天津": 6,
+        "江苏": 4,
+        "北京": 3,
+        "福建": 1,
+        "深圳": 1
+      },
+      "by_subject": {
+        "行测": 27,
+        "申论": 19
+      },
+      "by_status": {
+        "complete_free_reference_version_not_acquired": 43,
+        "partial_source_recovered_not_a_complete_paper": 2,
+        "source_has_only_material1_and_four_tasks_materials2_to10_missing": 1
+      },
+      "recovered_this_round": [
+        {
+          "area": "江苏",
+          "year": 2026,
+          "subject": "申论",
+          "variant": "A"
+        },
+        {
+          "area": "江苏",
+          "year": 2026,
+          "subject": "申论",
+          "variant": "C"
+        }
+      ],
+      "slots": [
+        {
+          "area": "浙江",
+          "year": "2016",
+          "subject": "行测",
+          "variant": "C（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2017",
+          "subject": "行测",
+          "variant": "C（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2018",
+          "subject": "行测",
+          "variant": "C（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2019",
+          "subject": "行测",
+          "variant": "C（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2020",
+          "subject": "行测",
+          "variant": "C（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2021",
+          "subject": "行测",
+          "variant": "D（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2022",
+          "subject": "行测",
+          "variant": "D（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2023",
+          "subject": "行测",
+          "variant": "D（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2024",
+          "subject": "行测",
+          "variant": "D（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2025",
+          "subject": "行测",
+          "variant": "D（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2026",
+          "subject": "行测",
+          "variant": "D（优秀村干部）",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2022",
+          "subject": "行测",
+          "variant": "B",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "江苏",
+          "year": "2023",
+          "subject": "行测",
+          "variant": "C",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "江苏",
+          "year": "2026",
+          "subject": "行测",
+          "variant": "A",
+          "status": "partial_source_recovered_not_a_complete_paper",
+          "has_partial": true,
+          "variant_known": true
+        },
+        {
+          "area": "江苏",
+          "year": "2026",
+          "subject": "行测",
+          "variant": "B",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "江苏",
+          "year": "2026",
+          "subject": "行测",
+          "variant": "C",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2017",
+          "subject": "行测",
+          "variant": "A",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2017",
+          "subject": "行测",
+          "variant": "B",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2022",
+          "subject": "行测",
+          "variant": "A",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2022",
+          "subject": "行测",
+          "variant": "行政执法专项",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2023",
+          "subject": "行测",
+          "variant": "B",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2024",
+          "subject": "行测",
+          "variant": "A",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2024",
+          "subject": "行测",
+          "variant": "B",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2024",
+          "subject": "行测",
+          "variant": "行政执法专项",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2025",
+          "subject": "行测",
+          "variant": "行政执法专项",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "北京",
+          "year": "2024",
+          "subject": "行测",
+          "variant": "统一卷",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "北京",
+          "year": "2026",
+          "subject": "行测",
+          "variant": "统一卷",
+          "status": "partial_source_recovered_not_a_complete_paper",
+          "has_partial": true,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2016",
+          "subject": "申论",
+          "variant": "行政执法专项",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2021",
+          "subject": "申论",
+          "variant": "行政执法专项",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2022",
+          "subject": "申论",
+          "variant": "行政执法专项",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2022",
+          "subject": "申论",
+          "variant": "A",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2023",
+          "subject": "申论",
+          "variant": "B",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2024",
+          "subject": "申论",
+          "variant": "行政执法专项",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "上海",
+          "year": "2025",
+          "subject": "申论",
+          "variant": "行政执法专项",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "天津",
+          "year": "2022",
+          "subject": "申论",
+          "variant": "行政执法",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "天津",
+          "year": "2024",
+          "subject": "申论",
+          "variant": "综合街镇",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "天津",
+          "year": "2024",
+          "subject": "申论",
+          "variant": "行政执法",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "天津",
+          "year": "2025",
+          "subject": "申论",
+          "variant": "行政执法",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "天津",
+          "year": "2026",
+          "subject": "申论",
+          "variant": "综合市区",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "天津",
+          "year": "2026",
+          "subject": "申论",
+          "variant": "综合街镇",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "福建",
+          "year": "2026",
+          "subject": "申论",
+          "variant": "省市综合管理",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "深圳",
+          "year": "2024",
+          "subject": "申论",
+          "variant": "Ⅰ",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2022",
+          "subject": "申论",
+          "variant": "A",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2022",
+          "subject": "申论",
+          "variant": "B",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "浙江",
+          "year": "2022",
+          "subject": "申论",
+          "variant": "C",
+          "status": "complete_free_reference_version_not_acquired",
+          "has_partial": false,
+          "variant_known": true
+        },
+        {
+          "area": "北京",
+          "year": "2026",
+          "subject": "申论",
+          "variant": "统一卷",
+          "status": "source_has_only_material1_and_four_tasks_materials2_to10_missing",
+          "has_partial": false,
+          "variant_known": true
+        }
+      ],
+      "source": "reports/MISSING48-RECOVERY-20261016.json",
+      "caveat": "some slots are partial fragments already in the repo; some variants remain unknown"
+    },
+    {
+      "id": "B",
+      "label": "资料缺档 / 待核",
+      "unit": "cell (地区 x 年份 x 科目, 无卷型维度)",
+      "count": 47,
+      "by_state": {
+        "资料缺失": 29,
+        "待核实": 18
+      },
+      "no_variant_field": true,
+      "fields_present": [
+        "evidence",
+        "path",
+        "state"
+      ],
+      "by_area": {
+        "云南": {
+          "资料缺失": 1
+        },
+        "内蒙古": {
+          "资料缺失": 3
+        },
+        "吉林": {
+          "资料缺失": 4
+        },
+        "宁夏": {
+          "资料缺失": 4
+        },
+        "山东": {
+          "资料缺失": 2
+        },
+        "广西": {
+          "资料缺失": 1
+        },
+        "新疆": {
+          "资料缺失": 3
+        },
+        "河北": {
+          "资料缺失": 1
+        },
+        "河南": {
+          "资料缺失": 1
+        },
+        "海南": {
+          "资料缺失": 1
+        },
+        "湖北": {
+          "资料缺失": 1
+        },
+        "甘肃": {
+          "资料缺失": 2
+        },
+        "西藏": {
+          "资料缺失": 1,
+          "待核实": 18
+        },
+        "陕西": {
+          "资料缺失": 1
+        },
+        "青海": {
+          "资料缺失": 2
+        },
+        "黑龙江": {
+          "资料缺失": 1
+        }
+      },
+      "unverified_areas": [
+        "西藏"
+      ],
+      "source": "资料缺失/INDEX.jsonl",
+      "caveat": "these are cells, not papers: do NOT report them as 47 more missing papers"
+    },
+    {
+      "id": "C",
+      "label": "仓库已收卷内的缺原题",
+      "unit": "question number",
+      "count": 106,
+      "paper_count": 5,
+      "papers": [
+        {
+          "area": "北京",
+          "year": "2026",
+          "subject": "行测",
+          "variant": "统考",
+          "path": "省考/北京/2026/行测-统考.md",
+          "missing_count": 51,
+          "missing_numbers": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            22,
+            31,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            89,
+            90,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            112,
+            114,
+            115,
+            117
+          ],
+          "positions_held": 67
+        },
+        {
+          "area": "广东",
+          "year": "2020",
+          "subject": "行测",
+          "variant": "县级卷",
+          "path": "省考/广东/2020/行测-县级卷.md",
+          "missing_count": 7,
+          "missing_numbers": [
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75
+          ],
+          "positions_held": 93
+        },
+        {
+          "area": "江苏",
+          "year": "2024",
+          "subject": "行测",
+          "variant": "A类",
+          "path": "省考/江苏/2024/行测-A类.md",
+          "missing_count": 4,
+          "missing_numbers": [
+            76,
+            96,
+            110,
+            111
+          ],
+          "positions_held": 131
+        },
+        {
+          "area": "江苏",
+          "year": "2026",
+          "subject": "行测",
+          "variant": "A类",
+          "path": "省考/江苏/2026/行测-A类.md",
+          "missing_count": 42,
+          "missing_numbers": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135
+          ],
+          "positions_held": 93
+        },
+        {
+          "area": "浙江",
+          "year": "2020",
+          "subject": "行测",
+          "variant": "A类",
+          "path": "省考/浙江/2020/行测-A类.md",
+          "missing_count": 2,
+          "missing_numbers": [
+            49,
+            50
+          ],
+          "positions_held": 98
+        }
+      ],
+      "source": "catalog/manifest.jsonl",
+      "caveat": "question-level count; never add to the paper_slot counts"
+    },
+    {
+      "id": "D",
+      "label": "来源侧未征集占位",
+      "unit": "question position",
+      "count": 24,
+      "rows": [
+        {
+          "area": "江苏",
+          "year": "2025",
+          "subject": "行测",
+          "variant": "C类",
+          "stub_count": 12,
+          "fenbi_source_id": "4189916",
+          "evidence": "reports/FREE-TOOLS-JS2025C-20261016.json (in-repo) + PR #51",
+          "origin": "derived-in-repo"
+        },
+        {
+          "area": "江苏",
+          "year": "2024",
+          "subject": "行测",
+          "variant": "A类",
+          "stub_count": 4,
+          "fenbi_source_id": "4162243",
+          "evidence": "PR #51 §3, PR #72 per-paper table, PR #33 DOM audit",
+          "origin": "cited-owner-report"
+        },
+        {
+          "area": "广东",
+          "year": "2020",
+          "subject": "行测",
+          "variant": "县级卷",
+          "stub_count": 7,
+          "fenbi_source_id": "96785",
+          "evidence": "PR #51 §3, PR #72 per-paper table, PR #33 DOM audit",
+          "origin": "cited-owner-report"
+        },
+        {
+          "area": "上海",
+          "year": "2026",
+          "subject": "行测",
+          "variant": "统考",
+          "stub_count": 1,
+          "fenbi_source_id": "8472470",
+          "evidence": "PR #72 per-paper table",
+          "origin": "cited-owner-report"
+        }
+      ],
+      "source": "owner capture reports; 江苏2025C cross-checked in-repo",
+      "caveat": "a stub means the vendor has not collected the question. An unfinished exercise is account state and is NOT a content gap. 江苏2025C's 12 were later filled from a donor, so they are history in D and absent from C."
+    }
+  ],
+  "never_add": {
+    "rule": "A, B, C and D count different things and must never be summed.",
+    "a_b_disjoint": true,
+    "a_b_sum_is_not": "93 missing papers",
+    "c_d_overlap": "a paper can appear in both C and D; 江苏2025C appears in D only",
+    "totals": {
+      "A": 46,
+      "B": 47,
+      "C": 106,
+      "D": 24
+    }
+  },
+  "overlap": {
+    "a_vs_c_same_paper": [
+      [
+        "北京",
+        "2026",
+        "行测"
+      ],
+      [
+        "江苏",
+        "2026",
+        "行测"
+      ],
+      [
+        "浙江",
+        "2020",
+        "行测"
+      ]
+    ],
+    "note": "A and C can name the same real-world paper at different granularities; that is overlap, not double counting"
+  },
+  "fenbi_catalogue": {
+    "regions_walked": [
+      "国考",
+      "北京",
+      "江苏",
+      "浙江",
+      "上海",
+      "天津",
+      "广东"
+    ],
+    "papers_observed": 191,
+    "by_region": {
+      "国考": 30,
+      "北京": 18,
+      "江苏": 30,
+      "浙江": 30,
+      "上海": 30,
+      "天津": 23,
+      "广东": 30
+    },
+    "explicitly_absent": {
+      "北京": "2026",
+      "江苏": "2026"
+    },
+    "note": "'absent' means: not found after the region's pages were fully walked (北京 18 papers over 2 pages, 江苏 30 over 2 pages). That is observed_catalog_absent, NOT proof the paper does not exist anywhere or officially.",
+    "readable_exercises": {
+      "国考2026 地市级": "5823068",
+      "国考2026 行政执法": "5823067",
+      "国考2026 副省级": "5823069",
+      "天津2026 统考": "8399759",
+      "上海2026 统考": "8472470",
+      "广东2026 统考": "8399765",
+      "浙江2026 C类": "8399763",
+      "江苏2025 C类": "4189916",
+      "江苏2024 A类": "4162243",
+      "广东2020 县级": "96785"
+    },
+    "readable_count": 10,
+    "catalogue_total_minus_readable": 181,
+    "catalogue_note": "The other 181 have no existing exercise, which does NOT mean they lack original questions — only that a practice would have to be initialised. Do not report them as 'all pending initialisation' or as 'all valid'."
+  },
+  "content_cohort": {
+    "source": "PR #72 (dab4c5f) + PR #75 (3c83c32), corrected from PR #66",
+    "positions": 1210,
+    "usable_text": 1180,
+    "image_only_not_text_comparable": 6,
+    "source_stubs": 24,
+    "normalized_or_near_matched": 1050,
+    "weak_candidates": 40,
+    "remaining": 90,
+    "remaining_with_image": 54,
+    "remaining_text_only": 36,
+    "figures_byte_verified": 9,
+    "closure": {
+      "positions_ok": true,
+      "matched_ok": true
+    },
+    "caveat": "content match is not proof of the official original; normalized_equal is normalized equality, not byte equality"
+  },
+  "paper_rows": [
+    {
+      "area": "北京",
+      "year": "2026",
+      "subject": "行测",
+      "variant": "统考",
+      "repo_status": "partial",
+      "fenbi_catalogue_status": "observed_catalog_absent",
+      "fenbi_source_id": null,
+      "fenbi_body_status": "absent",
+      "known_stub_count": 0,
+      "original_number_gaps": 51,
+      "quality_severity": "critical",
+      "source_rights": "unknown",
+      "next_action": "locate a source that actually holds the paper"
+    },
+    {
+      "area": "广东",
+      "year": "2020",
+      "subject": "行测",
+      "variant": "县级卷",
+      "repo_status": "partial",
+      "fenbi_catalogue_status": "observed_catalog_present",
+      "fenbi_source_id": "96785",
+      "fenbi_body_status": "stub_only",
+      "known_stub_count": 7,
+      "original_number_gaps": 7,
+      "quality_severity": "high",
+      "source_rights": "restricted-institution",
+      "next_action": "obtain a licensed original; do not substitute a sibling paper or a stub"
+    },
+    {
+      "area": "江苏",
+      "year": "2024",
+      "subject": "行测",
+      "variant": "A类",
+      "repo_status": "partial",
+      "fenbi_catalogue_status": "observed_catalog_present",
+      "fenbi_source_id": "4162243",
+      "fenbi_body_status": "stub_only",
+      "known_stub_count": 4,
+      "original_number_gaps": 4,
+      "quality_severity": "high",
+      "source_rights": "restricted-institution",
+      "next_action": "obtain a licensed original; do not substitute a sibling paper or a stub"
+    },
+    {
+      "area": "江苏",
+      "year": "2026",
+      "subject": "行测",
+      "variant": "A类",
+      "repo_status": "partial",
+      "fenbi_catalogue_status": "observed_catalog_absent",
+      "fenbi_source_id": null,
+      "fenbi_body_status": "absent",
+      "known_stub_count": 0,
+      "original_number_gaps": 42,
+      "quality_severity": "critical",
+      "source_rights": "unknown",
+      "next_action": "locate a source that actually holds the paper"
+    },
+    {
+      "area": "浙江",
+      "year": "2020",
+      "subject": "行测",
+      "variant": "A类",
+      "repo_status": "partial",
+      "fenbi_catalogue_status": "observed_catalog_present",
+      "fenbi_source_id": "96454",
+      "fenbi_body_status": "not_captured",
+      "known_stub_count": 0,
+      "original_number_gaps": 2,
+      "quality_severity": "high",
+      "source_rights": "unknown",
+      "next_action": "locate a source that actually holds the paper"
+    }
+  ],
+  "corrections": [
+    {
+      "claim": "46 = 21 申论 + 25 行测 (PR #74)",
+      "correct": "46 = 19 申论 + 27 行测, both paper_slots",
+      "why": "48 targets = 21 申论 + 27 行测; two were recovered and both were 申论 (江苏2026 申论 A and C), so 申论 falls to 19 while 行测 stays 27. The '25' is a different quantity — the Oct-15 report's question-number count, not paper slots.",
+      "verified_by": "reports/MISSING48-RECOVERY-20261016.json"
+    }
+  ],
+  "boundary": [
+    "No capture profile, cookie, private raw text or image bytes were read.",
+    "No question text is emitted — counts, statuses and pointers only.",
+    "observed_catalog_absent means not found in the walked catalogue pages; it does not mean the paper does not exist anywhere or officially.",
+    "The 181 catalogue papers without an existing exercise do not thereby lack original questions."
+  ]
+}

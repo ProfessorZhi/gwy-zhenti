@@ -34,6 +34,167 @@ bash tools/fenbi/audit/run_gap_audit.sh /tmp/m25-out
    they are identical after folding whitespace/punctuation, and how many of them
    cross question numbers.
 
+## Three-paper evidence matrix (workstream A)
+
+```bash
+python3 tools/fenbi/audit/paper_matrix.py --repo . \
+    --out reports/FENBI-THREE-PAPER-MATRIX-20261017.json
+```
+
+Covers the 23 items in 江苏2025C / 江苏2024A / 广东2020县级 across seven dimensions
+(题号 / 题干 / 选项 / 共用材料 / 图片与公式 / 答案 / 解析), using the same four states
+as `tools/fenbi/src/align.mjs` (`same` / `different` / `unknown` / `not_compared`).
+
+Offline, every source-facing dimension is `unknown` with reason
+`source-content-not-observed` — that is the honest answer while no capture
+exists, and it is never promoted to `same` on the strength of similar text.
+
+It also reports two things that are checkable without any capture:
+
+- **cross-paper image provenance** — a question whose figures live in another
+  paper's image tree carries that paper's provenance. For figure-reasoning items
+  the figure *is* the question, so this matters. Currently the only such
+  references in the library are 江苏2025C questions 81 and 85, which point at the
+  A-class image tree.
+- **join hazard** — this library preserves original numbering with gaps, so a
+  direct number join misaligns everything after the first gap.
+
+## Reconciling a capture (handoff)
+
+See [HANDOFF.md](HANDOFF.md) for the input format and the join-strategy trap.
+
+```bash
+python3 tools/fenbi/audit/handoff_reconcile.py --repo . \
+    --handoff <captured.json> [--paper <library path>] [--join auto] --out <matrix.json>
+```
+
+Accepts either the reduced `fenbi-candidate-handoff-v1` projection or a framework
+`document.json`. Reports only; nothing is written back. Source answers that were
+never published stay `unknown` — they are never borrowed from the library or
+from a sibling paper.
+
+`auto` scores both join strategies against the real numbers on each side. Because
+a score cannot tell an aligned join from a coincidental one, any paper whose
+library preserves numbering gaps also gets an unconditional `join.warning`
+naming the gap numbers and the specific mis-mapping a positional join would
+produce. The live capture confirmed both target papers are gap-preserving on the
+source side too, so `--join number` is the correct choice for them.
+
+## Missing-question evidence packs
+
+```bash
+python3 tools/fenbi/audit/missing_evidence_pack.py --repo . \
+    [--third-batch-file <local copy of the capture report>] --out <pack.json>
+```
+
+Builds a per-question package for the 11 gap numbers (江苏2024A 76/96/110/111,
+广东2020县级 69–75): number mapping, what the library holds, what the source
+actually holds, and the evidence still required.
+
+**These 11 numbers are slots the source has not collected.** The page lists the
+number but holds a collection stub ("题目正在全力以赴征集…"), so there is no
+source text to repair from. Every item is therefore `candidate_status: blocked`
+and `source_content_available: false`, and the pack does not request
+authorisation to repair from that capture — there is nothing there to authorise.
+A question number, or a question container in the DOM, proves only that a slot
+exists. The correction is anchored to PR #33's per-item DOM audit; the pack also
+records the earlier claim it supersedes.
+
+It emits no question text — required fields are named, not filled. Answers and
+explanations stay `unknown`, and provenance is always `recollection-institution`
+(never official).
+
+## Vetting a candidate source before comparing it
+
+```bash
+python3 tools/fenbi/audit/source_candidate_vet.py --repo . \
+    --paper <paper path> [--source <candidate file>] [--source-format text|html]
+```
+
+`handoff_reconcile.py` compares a capture against the library. This runs one step
+earlier and answers a different question: **does the candidate even contain the
+missing questions?** It reads the gap list from the paper's own front matter
+(never hardcoded) and classifies each number as `content`, `stub` (a collection
+placeholder), `absent`, or `not-supplied`. Only `content` counts as recovered —
+a stub is never counted as partial recovery. It also checks the candidate's
+identity tokens (year / province / subject) and infers what each gap probably
+held from the nearest surviving neighbour, skipping over consecutive gaps.
+
+With no `--source` it emits the manifest-side matrix and verdict
+`blocked-no-source-supplied`, which is a useful artefact on its own.
+
+## Offline target inventory from the catalog
+
+```bash
+python3 tools/fenbi/audit/fenbi_target_inventory.py --repo . --top 50 --handoff 30 \
+    --out reports/FENBI-TARGET-INVENTORY-20261017.json \
+    --handoff-out reports/FENBI-TARGET-HANDOFF-20261017.json
+```
+
+Reads `catalog/manifest.jsonl` — no network, no capture profile, metadata only — and
+produces the paper-identity list, a ranked shortlist, and a directory-only handoff
+for whoever runs the capture.
+
+Three rules it enforces, each of which has already cost this project real work:
+
+- **A null fenbi id is never `capture_ready`.** Only an observed id that has not
+  already been captured qualifies. Everything else is `false` with a reason.
+- **A canonical identity that merges divergent bytes is never auto-merged.** On this
+  catalog, every `X` / `X卷` alias pair has different content and usually a different
+  question count; they are reported for curation with a suggested survivor instead.
+- **`declared_questions` is not the recovered count.** It is the current file's own
+  claim (it equals `question_anchors` library-wide); the original paper size is
+  derived as `positions_held + missing_count`.
+
+## Can a sibling paper supply a gap number?
+
+```bash
+python3 tools/fenbi/audit/sibling_traceability.py --repo . --all-gap-papers \
+    --out reports/GAP-TRACEABILITY-20261018.json
+```
+
+Provincial exams reuse questions across A/B/C and 县级/乡镇 papers, so "use the
+same-numbered question from the sibling" is a tempting shortcut. This tool
+measures it instead of assuming it: of the numbers both papers hold, what
+fraction are textually identical after the aligner's normalization?
+
+Substitution is treated as justified only at a rate of **0.95 or above** — i.e.
+the two files are effectively one paper. On this catalog every pair measures far
+below that (广东 县级/乡镇 **0%**, 江苏2024 A/B **35%**, 浙江2020 A/B **15%**), so
+the tool never marks a substitution as usable: each gap number is a *lead* with a
+measured base rate, never a recovery.
+
+## Four-granularity gap table
+
+```bash
+python3 tools/fenbi/audit/partitioned_gap_table.py --repo . \
+    --out reports/PARTITIONED-GAP-TABLE-20261018.json
+```
+
+The project carries four different "gap" numbers that count different things.
+This tool recomputes each from its own source and states that they must never be
+summed:
+
+| id | unit | count | source |
+| -- | ---- | ----: | ------ |
+| A | paper_slot (area x year x subject x 卷型) | 46 | `MISSING48-RECOVERY-20261016.json` |
+| B | cell (area x year x subject, no 卷型) | 47 | `资料缺失/INDEX.jsonl` |
+| C | question number | 106 | `catalog/manifest.jsonl` |
+| D | question position (source stubs) | 24 | owner capture reports, cited per row |
+
+A and B are disjoint units; C and D overlap by construction. It also re-derives
+the PR #74 correction — **46 = 19 申论 + 27 行测**, not 21 + 25 — because two of
+the 48 targets were recovered and both were 申论.
+
+## Tests
+
+```bash
+python3 -m unittest discover -s tools/fenbi/audit/tests -t .
+```
+
+Fixtures are generated from the repository's own markdown at run time, so no
+question text is committed in the test suite.
+
 ## Network step (optional, no credentials)
 
 ```bash
