@@ -1,0 +1,1166 @@
+{
+ "date": "2026-10-18",
+ "scope": "北京 2026 行测 51 缺号跨版本/重复/异序复核 + 北京 2024 行测、2026 申论整卷完整性",
+ "mode": "只读复核；未修改任何试卷MD；未上传第三方题干/选项/材料/图片",
+ "baseline": {
+  "repo": "ProfessorZhi/gwy-zhenti",
+  "worktree": "/home/fjd/workspaces/gwy-zhenti-beijing2026-source-20261017/repo",
+  "branch": "beijing2026-crosscheck-20261018",
+  "stack_base": "beijing2026-source-20261017 @ 41feb72c74a81e08e2348c363fe2fea16ff36595",
+  "pr20_head": "e1feb5187ec3544cde62a1a128a6269a8d63011b",
+  "main_head": "34439ace3ad6c0b93b0671b1f76ca4afd6cce06d",
+  "paper_path": "省考/北京/2026/行测-统考.md",
+  "paper_sha256": "012bcadc0301fc178f246827035298d8b0697da836df20a246c49f6c2ee98bf0",
+  "paper_blob_at_head": "1e67c838d565873f10b0b32b956e654b55b8cb65"
+ },
+ "crosscheck": {
+  "repo_versions": {
+   "file_introduced_by": "1d1379c38314ee8b150a8023b2a16e984f603d1c",
+   "blob_all_refs": "1e67c838d565873f10b0b32b956e654b55b8cb65",
+   "alternate_versions_found": 0,
+   "refs_with_file": [
+    "beijing2026-source-20261017",
+    "feat/fenbi-answer-evidence-qa-20261017",
+    "origin/codex/shenlun-full-repair-20261015"
+   ],
+   "note": "main 34439ace 不含该文件；所有含该文件的 ref 指向同一 blob，无历史版本差异。"
+  },
+  "inventory": {
+   "question_anchors": 67,
+   "answer_blocks": 67,
+   "image_files": 173,
+   "question_ids_in_image_inventory": 67,
+   "answers_for_missing_numbers": 0,
+   "images_for_missing_numbers": 0,
+   "note": "67 原号题、67 答案、173 图严格对应；缺号没有隐藏答案或扫描图。"
+  },
+  "within_2026_duplicates": {
+   "substantive_duplicates": 0,
+   "boilerplate_only": [
+    {
+     "numbers": [
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+     ],
+     "reason": "图形题通用占位选项“见原题图中标注的A项”，非重复题"
+    },
+    {
+     "numbers": [
+      80,
+      81,
+      82
+     ],
+     "reason": "通用操作说明"
+    }
+   ],
+   "identical_image_blobs": 0,
+   "note": "67 题图像 blob 均不同；无同卷同题重复。"
+  },
+  "cross_year_duplicates": {
+   "substantive_duplicates": 0,
+   "option_set_coincidences": [
+    {
+     "2026": "60",
+     "other": "2016 Q76 / 2025 Q45",
+     "reason": "选项均为3/6/12/24的数值巧合；题干不同"
+    },
+    {
+     "2026": "72",
+     "other": "2016 Q103 / 2020 Q135,128 / 2022 Q118",
+     "reason": "选项均为0/1/2/3的数值巧合；题干不同"
+    }
+   ],
+   "identical_image_blobs": 0,
+   "stem_similarity_ge_0.85": "仅图形推理通用指导语，无实质同题",
+   "note": "跨年无实质同题；同题不能用于回填2026原文。"
+  },
+  "numbering": {
+   "present_count": 67,
+   "missing_count": 51,
+   "sum": 118,
+   "complement_verified": true,
+   "module_boundaries": "与135题考情结构（政治15/常识20/言语20/数量20/判断45/资料15）及实有题号锚点一致",
+   "note": "缺号呈整块分布（2-15、36-44、96-110等），符合“回忆版只收录部分题”的遗漏，而非重排/重复造成。"
+  },
+  "conclusion": {
+   "explained_by_duplicate_or_order": 0,
+   "recovered_numbers": 0,
+   "still_missing": 51,
+   "note": "库内无第二版本、无实质重复、无隐藏答案/图；51 不能由重复/顺序/同卷不同回忆版解释，保持缺号。"
+  }
+ },
+ "p0_p1": {
+  "rule": "P0=补全最大连续块96-110（逻辑10+定义5）＋图形89-90＋科推112/114/115（20上限；117顺延P1）；P1=其余31。优先级只表示取证顺序，不表示已获得内容。",
+  "p0_count": 20,
+  "p1_count": 31,
+  "rows": [
+   {
+    "number": 2,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 3,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 4,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 5,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 6,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 7,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 8,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 9,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 10,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 11,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 12,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 13,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 14,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 15,
+    "priority": "P1",
+    "module": "政治理论",
+    "block": "2-15",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 16,
+    "priority": "P1",
+    "module": "常识判断",
+    "block": "16-18",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 17,
+    "priority": "P1",
+    "module": "常识判断",
+    "block": "16-18",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 18,
+    "priority": "P1",
+    "module": "常识判断",
+    "block": "16-18",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 22,
+    "priority": "P1",
+    "module": "常识判断",
+    "block": "22",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 31,
+    "priority": "P1",
+    "module": "常识判断",
+    "block": "31",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 34,
+    "priority": "P1",
+    "module": "常识判断",
+    "block": "34-35",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 35,
+    "priority": "P1",
+    "module": "常识判断",
+    "block": "34-35",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 36,
+    "priority": "P1",
+    "module": "言语理解与表达",
+    "block": "36-44",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 37,
+    "priority": "P1",
+    "module": "言语理解与表达",
+    "block": "36-44",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 38,
+    "priority": "P1",
+    "module": "言语理解与表达",
+    "block": "36-44",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 39,
+    "priority": "P1",
+    "module": "言语理解与表达",
+    "block": "36-44",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 40,
+    "priority": "P1",
+    "module": "言语理解与表达",
+    "block": "36-44",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 41,
+    "priority": "P1",
+    "module": "言语理解与表达",
+    "block": "36-44",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 42,
+    "priority": "P1",
+    "module": "言语理解与表达",
+    "block": "36-44",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 43,
+    "priority": "P1",
+    "module": "言语理解与表达",
+    "block": "36-44",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 44,
+    "priority": "P1",
+    "module": "言语理解与表达",
+    "block": "36-44",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 89,
+    "priority": "P0",
+    "module": "判断推理·图形推理",
+    "block": "89-90",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 90,
+    "priority": "P0",
+    "module": "判断推理·图形推理",
+    "block": "89-90",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 96,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 97,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 98,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 99,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 100,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 101,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 102,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 103,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 104,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 105,
+    "priority": "P0",
+    "module": "判断推理·逻辑判断",
+    "block": "96-105",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 106,
+    "priority": "P0",
+    "module": "判断推理·定义判断",
+    "block": "106-110",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 107,
+    "priority": "P0",
+    "module": "判断推理·定义判断",
+    "block": "106-110",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 108,
+    "priority": "P0",
+    "module": "判断推理·定义判断",
+    "block": "106-110",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 109,
+    "priority": "P0",
+    "module": "判断推理·定义判断",
+    "block": "106-110",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 110,
+    "priority": "P0",
+    "module": "判断推理·定义判断",
+    "block": "106-110",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 112,
+    "priority": "P0",
+    "module": "判断推理·科学推理",
+    "block": "112-117（科推，单号缺失）",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 114,
+    "priority": "P0",
+    "module": "判断推理·科学推理",
+    "block": "112-117（科推，单号缺失）",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 115,
+    "priority": "P0",
+    "module": "判断推理·科学推理",
+    "block": "112-117（科推，单号缺失）",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   },
+   {
+    "number": 117,
+    "priority": "P1",
+    "module": "判断推理·科学推理",
+    "block": "112-117（科推，单号缺失）",
+    "status": "blocked_no_verified_source",
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "candidate_source": null,
+    "next_source": "原始整理者后续页扫描，或取得书面再分发许可的机构/出版物；当前无合法可复用正文"
+   }
+  ]
+ },
+ "completeness": {
+  "beijing_2024_xingce": {
+   "status": "blocked",
+   "official_exam_confirmed": true,
+   "exam_date": "2023-12-03",
+   "exam_time": "09:00—11:00",
+   "official_source": "C01",
+   "structure": {
+    "total": 135,
+    "常识判断": 30,
+    "言语理解与表达": 30,
+    "数量关系": 20,
+    "判断推理": 35,
+    "资料分析": 20,
+    "科学推理": "首次出现",
+    "类比推理": "重返"
+   },
+   "repo_file": null,
+   "candidates": [
+    "C03",
+    "C04",
+    "C05",
+    "C06"
+   ],
+   "new_content_added": 0,
+   "note": "官方开考与题量已核；库内无文件；C03 用2024-03-10事件作第1题，晚于笔试，判伪；C类/省直/行政执法标签与2022—2024统一卷不符。"
+  },
+  "beijing_2026_shenlun": {
+   "status": "blocked",
+   "official_exam_confirmed": true,
+   "exam_date": "2025-12-07",
+   "exam_time": "14:00—16:30",
+   "official_source": "C07",
+   "theme_evidence": "C08",
+   "theme": "'通用'治理智慧，打造高质量全国统一大市场",
+   "question_types": [
+    "概括做法",
+    "综合分析",
+    "北京案例对策",
+    "文章写作（以通为用）"
+   ],
+   "full_materials_obtained": false,
+   "repo_file": null,
+   "candidates": [
+    "C09",
+    "C10",
+    "C11"
+   ],
+   "new_content_added": 0,
+   "note": "中公考后解读只给主题/题型，无完整材料；C09为选择题不是申论；C10主题“未诉先办”与中公冲突；C11仅标题级冲突。"
+  }
+ },
+ "sources": [
+  {
+   "id": "C01",
+   "url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202311/t20231110_3299396.html",
+   "publisher": "北京市公务员局/首都之窗",
+   "title": "北京市各级机关2024年度考试录用公务员公告",
+   "date": "2023-11-10",
+   "kind": "official_announcement",
+   "reachable": true,
+   "verdict": "verified_metadata",
+   "notes": "行测2023-12-03 09:00—11:00；申论14:00—16:30；未提分卷。"
+  },
+  {
+   "id": "C02",
+   "url": "http://m.offcn.com/bjgwy/2023/1203/32757.html",
+   "publisher": "北京中公教育",
+   "title": "2024北京市考行测试题选材凸显北京特色，科学推理首次出现，类比推理重返舞台",
+   "date": "2023-12-03 21:09:37",
+   "kind": "institution_analysis",
+   "reachable": true,
+   "verdict": "verified_secondary",
+   "notes": "135题；常识30/言语30/数量20/判断35/资料20；科学推理首次、类比推理重返；未提供完整题目。"
+  },
+  {
+   "id": "C03",
+   "url": "https://max.book118.com/html/2025/0629/6110223121011152.shtm",
+   "publisher": "原创力文档（个人上传）",
+   "title": "2024年北京公务员行测真题（C类）.pdf",
+   "date": "2025-06-30",
+   "kind": "user_upload_doc",
+   "reachable": true,
+   "verdict": "rejected_post_exam_content",
+   "notes": "第1题考2024-03-10公布的福建连江海上风电项目，晚于2023-12-03笔试；且“C类”非北京统一卷卷型。"
+  },
+  {
+   "id": "C04",
+   "url": "https://www.renrendoc.com/paper/386373067.html",
+   "publisher": "人人文库（个人上传）",
+   "title": "2024北京公务员考试行测真题（省直）.docx",
+   "date": "unknown",
+   "kind": "user_upload_doc",
+   "reachable": true,
+   "verdict": "rejected_label_conflict",
+   "notes": "“省直”与2022—2024北京统一卷不符；未逐页取证；无许可。"
+  },
+  {
+   "id": "C05",
+   "url": "https://www.shikaobang.cn/wp/course/detail?no=c646&brand=skb&province=beijing",
+   "publisher": "事考帮",
+   "title": "北京公务员历年试题（2024行测517KB）",
+   "date": "unknown",
+   "kind": "institution_list",
+   "reachable": true,
+   "verdict": "candidate_unverified",
+   "notes": "页面列出2024行测文件，但下载/登录条件未验证；未取得正文。"
+  },
+  {
+   "id": "C06",
+   "url": "https://www.xingguanggongkao.com/XingQuestion/paperList/subject_id/2/area_id/322/year/2024.html",
+   "publisher": "星光公考",
+   "title": "2024北京行测试卷列表",
+   "date": "unknown",
+   "kind": "institution_list",
+   "reachable": true,
+   "verdict": "empty_no_entries",
+   "notes": "仅筛选入口，无试卷条目。"
+  },
+  {
+   "id": "C07",
+   "url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/tzxx/202511/t20251110_4267648.html",
+   "publisher": "北京市公务员局/首都之窗",
+   "title": "北京市各级机关2026年度考试录用公务员公告",
+   "date": "2025-11-10",
+   "kind": "official_announcement",
+   "reachable": true,
+   "verdict": "verified_metadata",
+   "notes": "行测2025-12-07 09:00—11:00；申论14:00—16:30；未提分卷。"
+  },
+  {
+   "id": "C08",
+   "url": "http://www.offcn.com/bjgwy/2025/1207/38937.html",
+   "publisher": "中公教育",
+   "title": "2026北京市公务员考试申论试题解读：“通用”治理智慧",
+   "date": "2025-12-07 19:14:51",
+   "kind": "institution_analysis",
+   "reachable": true,
+   "verdict": "verified_secondary",
+   "notes": "主题“‘通用’治理智慧，打造高质量全国统一大市场”；四题：概括/综合分析/对策/文章写作；未提供完整材料与字数分值。"
+  },
+  {
+   "id": "C09",
+   "url": "https://max.book118.com/html/2026/0314/5240312213013133.shtm",
+   "publisher": "原创力文档（个人上传）",
+   "title": "2026年北京市公务员考试《申论》（首都治理现代化）真题 - 副本.docx",
+   "date": "2026-03-15",
+   "kind": "user_upload_doc",
+   "reachable": true,
+   "verdict": "rejected_not_shenlun",
+   "notes": "前3题均为A—D选择题，不是申论主观题；VIP；主题与中公考后解读不符。"
+  },
+  {
+   "id": "C10",
+   "url": "https://www.renrendoc.com/paper/537869263.html",
+   "publisher": "人人文库（个人上传）",
+   "title": "2026年北京公务员考试《申论》真题试卷及答案",
+   "date": "2026-10-04",
+   "kind": "user_upload_doc",
+   "reachable": true,
+   "verdict": "rejected_conflicting_theme",
+   "notes": "“未诉先办/共生院”主题，与中公2025-12-07“通用治理/全国统一大市场”冲突；12积分付费；无许可。"
+  },
+  {
+   "id": "C11",
+   "url": "https://www.renrendoc.com/paper/513865738.html",
+   "publisher": "人人文库（个人上传）",
+   "title": "2026年北京市公务员考试《申论》（社会治理卷）真题.docx",
+   "date": "unknown",
+   "kind": "user_upload_doc",
+   "reachable": false,
+   "verdict": "unverified_conflict_snippet",
+   "notes": "仅搜索结果标题；“社会治理卷”与官方未分卷表述冲突；未取证正文。"
+  }
+ ],
+ "summary": {
+  "crosscheck_reduction": 0,
+  "recovered_numbers": 0,
+  "still_missing": 51,
+  "p0": 20,
+  "p1": 31,
+  "beijing_2024_xingce": "blocked",
+  "beijing_2026_shenlun": "blocked",
+  "new_legal_content": 0,
+  "questions_added": 0,
+  "images_added": 0,
+  "new_sources_checked": 11
+ },
+ "boundary": "本报告只含题号、模块、URL、哈希、判定与优先级；不含任何第三方题干、选项、材料、解析或图片字节。118以后仍无题号清单，不把“51”写成全卷缺题总数。"
+}
