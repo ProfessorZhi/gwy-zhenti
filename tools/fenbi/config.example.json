@@ -6,7 +6,7 @@
   "delayMs": 800,
   "settleMs": 1500,
   "maxPages": 250,
-  "concurrency": 1,
+  "concurrency": 2,
   "routeParams": [],
   "contentSelector": null,
   "domAdapter": null,
@@ -16,6 +16,17 @@
   "scope": {
     "fromYear": 2016,
     "toYear": 2026,
-    "areas": ["国考", "浙江", "江苏", "上海", "北京", "天津", "广东", "福建", "广州", "深圳"]
+    "areas": [
+      "国考",
+      "浙江",
+      "江苏",
+      "上海",
+      "北京",
+      "天津",
+      "广东",
+      "福建",
+      "广州",
+      "深圳"
+    ]
   }
 }
