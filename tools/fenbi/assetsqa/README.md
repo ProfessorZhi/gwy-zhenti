@@ -20,6 +20,8 @@
 | `test_verify_pr62_stats.py` | 单测（第 5/6 轮，双 schema） |
 | `metadata_provenance_gate.py` | **第 7 轮**：metadata-only 的版权标签 / 身份混同 / 计数边界 / 图片提升四类 fail-closed 规则（R1–R4） |
 | `test_metadata_provenance_gate.py` | 单测（第 7 轮，25 条） |
+| `mapping_negative_matrix.mjs` | **第 8 轮**：候选映射的 10 例合成负例矩阵（`--mapping` 参数化，失败 exit 1） |
+| `verify_answer_source_index.py` | **第 8 轮**：从 quality-index/summary/tickets 独立重算已核块数、零可核卷、优先级闭合、自引用 |
 
 ## 用法
 
@@ -74,3 +76,7 @@ ASSETSQA_REPO=$PWD ASSETSQA_HANDOFF=<handoff-root> \
 - **重新归类 ≠ 恢复**：把槽位移出某个分母（如优秀村干部移出申论）**不得**让总缺口数下降；引用时必须同时给「总缺口」和「子集分母」两个数。
 - **优良村干部 / 通用 vs 综合 / 执法专项 vs 市考** 三类身份不能按名字相近合并；尤其 `行政执法卷` 以「市考《申论》」名义记载时要 `needs_review`。
 - **「已验图片冲突」比「图片证据缺失」更强**：缺失只表示没有证据，冲突是**内容确实不同**的正面证据，绝不能因为缺 flag 而被提升为 exact/auto-acceptable。
+- **`git ls-tree`/`git show --name-only` 默认给非 ASCII 路径加八进制引号**：`grep 中文` 永远匹配不到，会得出「文件不存在」的错误结论。按中文检索仓库路径必须用 `-z` 或 `-c core.quotePath=false`。
+- **「已核」是个危险词**：`normalized_equal + near` 只是文本层对齐，`near` 明明不是 exact。汇总表里写「已核」会被单独引用成「经官方核验」。
+- **叙述与产物要分开核对**：报告说 1,020、产物是 1,070 时，`1258 − 188 = 1070` 说明只应用了一处修复；不要相信叙述里的算术，要重算产物。
+- **官方标签检测器要覆盖仓库自己的用词**：只匹配「官方」会漏掉 827 卷里的 826 卷（仓库最常用的是 `正式真题`）。
