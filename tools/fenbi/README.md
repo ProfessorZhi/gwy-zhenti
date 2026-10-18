@@ -296,7 +296,7 @@ CI只运行不依赖浏览器安装的离线单元测试；不使用粉笔账户
 
 ## 2026-10-18 有界提速与效果观察（Dell A6000）
 
-**现有代码已能在一个持久 Chrome context 内运行多个 Page**，不需要第二个采集进程或登录 Profile。新生成的 `config.json` 默认 `concurrency: 2`、`delayMs: 2500`，最多 3 Page。旧的本地 `work/fenbi/config.json` **不会自动覆盖**；如果还写着 `concurrency: 1`，可以显式从命令行开始 2 路：
+**现有代码已能在一个持久 Chrome context 内运行多个 Page**，不需要第二个采集进程或登录 Profile。新生成的 `config.json` 默认 `concurrency: 2`、页面交互 `delayMs: 800`，最多 3 Page；采集调度的**同域导航间隔始终不低于 2500ms**，避免把逐题交互等待误当作导航限速。旧的本地 `work/fenbi/config.json` **不会自动覆盖**；如果还写着 `concurrency: 1`，可以显式从命令行开始 2 路：
 
 ```bash
 cd tools/fenbi
