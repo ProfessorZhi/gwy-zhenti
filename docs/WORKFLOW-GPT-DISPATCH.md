@@ -145,8 +145,10 @@ T6｜S5｜非粉笔补缺（阶段 3 起）
 [Unit]
 Description=Fenbi capture-ingest-promote loop
 [Service]
-WorkingDirectory=/home/fjd/workspaces/gwy-zhenti-fenbi/repo
-Environment=CONCURRENCY=3 INTERVAL=60
+# 必须是集成工作树（非 main 分支），例如 integ/daily 分支的 git worktree
+WorkingDirectory=/home/fjd/workspaces/gwy-zhenti-fenbi/integ
+Environment=CONCURRENCY=3 INTERVAL=60 ALLOW_REPLACE=1 PUSH=1
+Environment=RIGHTS_FILE=/home/fjd/workspaces/gwy-zhenti-fenbi/repo/work/fenbi/rights.json
 ExecStart=/usr/bin/bash tools/fenbi/run-pipeline.sh
 Restart=on-failure
 RestartSec=120
@@ -161,6 +163,9 @@ loginctl enable-linger fjd           # 退出登录后继续运行
 touch work/fenbi/STOP                # 需要停时：写这个文件；删除后重新 start
 ```
 
+- 每一轮循环：抓取 → 转换 → `promote-all.mjs` 逐卷发布所有未发布的 A 卷（`ALLOW_REPLACE=1` 时按"粉笔优先"替换旧卷，旧版留在 Git 历史和 `legacy-original.md`）→ 有变更就提交并推送集成分支 → 更新看板。
+- 授权文件里加 `"coverAllCapturedSources": true`，表示用户同意收录本账号抓到的全部粉笔卷；不加这一项时，只发布 `sourceIds` 里列出的卷。
+- **测速看板**：`work/fenbi/BOARD.md`（`board.json` 同内容）由 `pipeline-board.mjs` 每轮生成，给出**含空等的真实每小时卷数**、连续抓取时每卷秒数、卷间空等次数和分钟数、答案覆盖、A/C、已进分支数、分地区和逐小时统计。GPT 巡检只看这一个文件。
 - 抓取遇到验证码、登录失效或限流时，以非 0/2 的退出码结束，脚本会写 `work/fenbi/STOP` 并停下，**不会自动重试**，等用户处理。
 - GPT 每次巡检都是**独立的一次**：读看板 → 按第五节行动 → 结束。进度只存在看板和台账里，不依赖 GPT 记住上一次做了什么，所以中途断了也不会丢进度。
 
