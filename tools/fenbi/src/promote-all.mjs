@@ -76,56 +76,130 @@ async function readManifestIdentities(repoRoot) {
   return map;
 }
 
+/**
+ * Resolve a receipt's target path.
+ *
+ * A batch-ingest receipt may name a slug path (行测-tongkao.md) that does not exist while the
+ * SAME paper is already in the manifest under its canonical name (行测-统考.md). Resolving that
+ * is safe only when the manifest identity matches EXACTLY ONE path; zero or several matches
+ * stay blocked rather than guessed. The resolved path is what gets published, so the next
+ * ingest/promote cycle sees a stable target instead of churning between two names.
+ */
+function resolveTargetPaths(receipt, manifest) {
+  return manifest.get(identityKey(receipt)) || [];
+}
+
+const questionHeadingCount = text => [...String(text).matchAll(/^#{2,3}\s+第\s*\d+\s*题/gmu)].length;
+
 export async function promoteAll({ candidateRoot, repoRoot, rightsFile, allowReplace = false, apply = false, onlySourceIds = null }) {
-  const { pending: allPending, already: allAlready, duplicates } = await listPending(candidateRoot, repoRoot);
-  const only = onlySourceIds ? new Set(onlySourceIds.map(String)) : null;
-  const pending = only ? allPending.filter(({ receipt }) => only.has(String(receipt.sourceId))) : allPending;
-  const alreadyReceipts = await Promise.all(allAlready.map(async (name) => ({ name, receipt: await readReceipt(path.join(candidateRoot, name)) })));
-  const already = only ? alreadyReceipts.filter(({ receipt }) => receipt && only.has(String(receipt.sourceId))) : alreadyReceipts;
-  const summary = { pending: pending.length, alreadyPromoted: already.length, duplicateSources: duplicates.length,
-    preflightOk: 0, promoted: 0, replaced: 0, blocked: {} };
-  if (!pending.length) return summary;
   const manifest = await readManifestIdentities(repoRoot);
+  const only = onlySourceIds ? new Set(onlySourceIds.map(String)) : null;
+  const entries = await fs.readdir(candidateRoot, { withFileTypes: true }).catch(() => []);
+  const summary = { pending: 0, alreadyPromoted: 0, duplicateSources: 0, preflightOk: 0,
+    promoted: 0, replaced: 0, identityResolved: 0, blocked: {} };
+  const block = (reason, p) => (summary.blocked[reason] ||= []).push(p);
+
+  // 1. Resolve every grade-A candidate to a concrete target path.
+  const resolved = [];
+  for (const name of entries.filter(e => e.isDirectory()).map(e => e.name).sort()) {
+    const dir = path.join(candidateRoot, name), receipt = await readReceipt(dir);
+    if (!receipt || receipt.grade !== 'A' || !receipt.path) continue;
+    if (only && !only.has(String(receipt.sourceId))) continue;
+    const direct = await fs.readFile(path.join(repoRoot, receipt.path)).catch(() => null);
+    let targetPath = receipt.path, prior = direct, mode = 'direct';
+    if (!direct) {
+      const paths = resolveTargetPaths(receipt, manifest);
+      if (!paths.length) {
+        // No manifest row for this identity: a genuinely new paper. Keep its own path.
+        mode = 'new';
+      } else if (paths.length > 1) {
+        block('identity-ambiguous-in-manifest', receipt.path); continue;
+      } else {
+        targetPath = paths[0];
+        prior = await fs.readFile(path.join(repoRoot, targetPath)).catch(() => null);
+        // A manifest row whose file is absent is a repository inconsistency, not a target.
+        if (!prior) { block('duplicate-identity-in-repository', receipt.path); continue; }
+        mode = 'identity-resolved';
+      }
+    }
+    resolved.push({ name, dir, receipt, targetPath, prior, mode });
+  }
+
+  // 2. Several sources for one paper: keep only the most complete.
+  const byTarget = new Map();
+  for (const item of resolved) {
+    const list = byTarget.get(item.targetPath) || [];
+    list.push(item); byTarget.set(item.targetPath, list);
+  }
+  const pending = [];
+  for (const [targetPath, list] of byTarget) {
+    const winner = list.reduce((w, c) => better(c.receipt, w.receipt) ? c : w);
+    for (const c of list) if (c !== winner) { summary.duplicateSources++; }
+    if (winner.mode === 'identity-resolved') summary.identityResolved++;
+    // Already published if the target holds exactly this candidate's markdown.
+    if (winner.prior && sha(winner.prior) === winner.receipt.markdownSha256) { summary.alreadyPromoted++; continue; }
+    pending.push({ ...winner, targetPath });
+  }
+  pending.sort((a, b) => a.targetPath.localeCompare(b.targetPath, 'zh-CN'));
+  summary.pending = pending.length;
+  if (!pending.length) return summary;
+
+  // 3. Preflight each pending target.
+  const safe = [];
   const byIdentity = new Map(), byPath = new Map();
   for (const item of pending) {
-    const key = identityKey(item.receipt);
-    if (!byIdentity.has(key)) byIdentity.set(key, []); byIdentity.get(key).push(item);
-    if (!byPath.has(item.receipt.path)) byPath.set(item.receipt.path, []); byPath.get(item.receipt.path).push(item);
+    byIdentity.set(item.targetPath, (byIdentity.get(item.targetPath) || 0) + 1);
+    byPath.set(item.receipt.path, (byPath.get(item.receipt.path) || 0) + 1);
   }
-  const safe = [];
   for (const item of pending) {
     const { receipt } = item;
-    const current = await fs.readFile(path.join(repoRoot, receipt.path)).catch(() => null);
-    const existingPaths = manifest.get(identityKey(receipt)) || [];
     let reason = null;
-    if (current) {
-      if (!receipt.oldSha256) reason = 'existing-target-without-old-sha';
-      else if (sha(current) !== receipt.oldSha256) reason = 'repository-paper-changed-since-candidate';
-    } else if (receipt.oldSha256) {
-      reason = 'old-paper-not-found-in-integration-branch';
-    } else if (existingPaths.length) {
-      reason = 'duplicate-identity-in-repository';
-    } else if ((byIdentity.get(identityKey(receipt)) || []).length > 1 || (byPath.get(receipt.path) || []).length > 1) {
-      reason = 'duplicate-identity-in-batch';
+    if (item.mode === 'identity-resolved') {
+      // Replacing a different-named file for the same paper is only allowed explicitly.
+      if (!allowReplace) reason = 'explicit-allow-replace-required';
+      else {
+        // Fenbi must not shrink a paper: same guard as PR #91 on main.
+        const existingCount = questionHeadingCount(item.prior.toString('utf8'));
+        if (existingCount > (receipt.counts?.sourceQuestions ?? 0)) reason = 'fenbi-has-fewer-questions-than-existing';
+      }
     }
-    if (reason) (summary.blocked[reason] ||= []).push(receipt.path);
+    if (!reason) {
+      if (item.mode === 'identity-resolved') {
+        // The real old bytes were read from the canonical path above; the receipt's own
+        // oldSha256 is null precisely because its slug path never existed, so it is not
+        // a staleness signal here. Re-check that the file has not moved since preflight.
+        if (!item.prior) reason = 'canonical-target-disappeared';
+      } else if (item.prior && !receipt.oldSha256) reason = 'existing-target-without-old-sha';
+      else if (item.prior && receipt.oldSha256 && sha(item.prior) !== receipt.oldSha256) reason = 'repository-paper-changed-since-candidate';
+      else if (!item.prior && receipt.oldSha256) reason = 'old-paper-not-found-in-integration-branch';
+      if (!reason && (byPath.get(receipt.path) || 0) > 1) reason = 'duplicate-identity-in-batch';
+    }
+    if (reason) block(reason, receipt.path);
     else safe.push(item);
   }
   if (!safe.length) return summary;
+
+  // 4. Publish. The resolved path and the real old hash are handed to promoteOne instead of
+  //    mutating the receipt on disk, so a rerun of batch-ingest cannot resurrect the slug path.
   const rights = await effectiveRights(rightsFile, safe);
   try {
-    for (const { dir, receipt } of safe) {
+    for (const item of safe) {
       try {
-        await promoteOne({ candidateDir: dir, repoRoot, rightsFile: rights.file }, { apply, allowReplace });
+        const override = item.mode === 'identity-resolved'
+          ? { path: item.targetPath, oldSha256: sha(item.prior) }
+          : undefined;
+        await promoteOne({ candidateDir: item.dir, repoRoot, rightsFile: rights.file, receiptOverride: override },
+          { apply, allowReplace });
         if (apply) {
           summary.promoted++;
-          if (receipt.oldSha256) summary.replaced++;
+          if (item.mode === 'identity-resolved') summary.replaced++;
+          else if (item.prior) summary.replaced++;
         } else {
           summary.preflightOk++;
         }
       } catch (error) {
         const reason = error.code || error.message || 'error';
-        (summary.blocked[reason] ||= []).push(receipt.path);
+        block(reason, item.receipt.path);
       }
     }
   } finally { await rights.cleanup(); }
