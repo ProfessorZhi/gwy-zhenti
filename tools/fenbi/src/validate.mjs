@@ -3,6 +3,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import { collectAssetUrls, htmlText } from './model.mjs';
+import { yearAllowed } from './year-policy.mjs';
 
 const PLACEHOLDER = /^(?:暂无(?:解析|答案)?|待(?:补充|完善|填写)|查看(?:答案|解析)|答案略|解析略|略|TODO|PLACEHOLDER|参考答案|参考解析|点击查看)$/iu;
 // A paid or unauthenticated exercise view renders an entitlement notice in the answer slot.
@@ -122,7 +123,7 @@ export async function validateDocument(doc, { assetRoot } = {}) {
   const identity = doc.identity ?? {}, expected = doc.expected ?? {};
   for (const key of ['id', 'title', 'subject', 'year', 'area', 'variant']) if (identity[key] == null || String(identity[key]).trim() === '') add('identity', 'identity-unknown', `Identity field ${key} is unknown`, { field: key });
   if (!['xingce', 'shenlun'].includes(identity.subject)) add('identity', 'subject-unknown', 'Subject must be explicitly identified');
-  if (!Number.isInteger(Number(identity.year)) || Number(identity.year) < 2016 || Number(identity.year) > new Date().getFullYear()) add('identity', 'year-invalid', 'Examination year is outside the supported range');
+  if (!yearAllowed(identity)) add('identity', 'year-invalid', 'Examination year is outside the supported range for this area');
   try { if (!['https:', 'http:'].includes(new URL(doc.source?.url).protocol)) throw new Error(); } catch { add('identity', 'source-url-unknown', 'A valid source URL is required'); }
   if (!doc.source?.capturedAt || Number.isNaN(Date.parse(doc.source.capturedAt))) add('identity', 'capture-time-unknown', 'Capture timestamp is missing or invalid');
   for (const item of doc.evidence ?? []) if (['login-required', 'authentication-required', 'captcha', 'access-denied', 'blocked'].includes(item.type) || [401,403].includes(item.status)) add('identity', 'access-blocked', 'Authentication or access challenge was observed', {}, true);

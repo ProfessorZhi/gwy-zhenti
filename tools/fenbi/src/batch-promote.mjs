@@ -4,6 +4,7 @@
  * No cloud APIs, no bypass of rights; Git publication is a separate reviewed action.
  */
 import fs from 'node:fs/promises';
+import { targetPathAllowed } from './year-policy.mjs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
@@ -49,7 +50,7 @@ function validateProof(proof,receipt){
 }
 function validateReceipt(receipt,md){
   if(receipt.grade!=='A')throw Error('only-grade-A-can-promote');
-  if(!/^(?:国考|省考\/[^/]+)\/20\d\d\/(?:行测|申论)-[^/]+\.md$/u.test(receipt.path)||
+  if(!targetPathAllowed(receipt.path,receipt.area)||
      !/^\d{1,15}$/u.test(String(receipt.sourceId)))throw Error('invalid-target-path');
   if(receipt.markdownSha256!==hash(md))throw Error('candidate-sha-mismatch');
   const count=receipt.counts?.sourceQuestions;
