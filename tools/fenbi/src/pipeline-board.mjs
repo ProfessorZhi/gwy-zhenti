@@ -35,8 +35,8 @@ export function speed(timestamps, now) {
   };
 }
 
-export async function buildBoard({ workDir, repoRoot, now = Date.now() }) {
-  const papersRoot = path.join(workDir, 'papers'), ingestRoot = path.join(workDir, 'batch-ingest');
+export async function buildBoard({ workDir, repoRoot, papersDir, now = Date.now() }) {
+  const papersRoot = papersDir || path.join(workDir, 'papers'), ingestRoot = path.join(workDir, 'batch-ingest');
   const times = [], regions = {};
   let questions = 0, answered = 0;
   for (const name of await dirs(papersRoot)) {
@@ -88,9 +88,9 @@ export function renderBoard(b) {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const [workDir, repoRoot] = [process.argv[2], process.argv[3]];
+  const [workDir, repoRoot, papersDir] = [process.argv[2], process.argv[3], process.argv[4]];
   if (!workDir || !repoRoot) throw Error('usage: pipeline-board.mjs WORK_DIR REPO_ROOT');
-  buildBoard({ workDir, repoRoot }).then(async b => {
+  buildBoard({ workDir, repoRoot, papersDir }).then(async b => {
     await fs.writeFile(path.join(workDir, 'board.json'), JSON.stringify(b, null, 2) + '\n');
     await fs.writeFile(path.join(workDir, 'BOARD.md'), renderBoard(b));
     console.log(JSON.stringify({ lastHourPapers: b.speed.lastHourPapers, captured: b.speed.captured, A: b.A, C: b.C, promoted: b.promoted, stopped: b.stopped }));

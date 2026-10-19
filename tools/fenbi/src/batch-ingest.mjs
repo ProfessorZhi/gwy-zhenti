@@ -159,6 +159,10 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
       const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
       const priorFile=path.join(repo,rel);
       let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
+      // Neither the source nor the repository paper changed since the last candidate: reuse it.
+      const known=write?await fs.readFile(path.join(dest,name,'receipt.json'),'utf8').then(JSON.parse).catch(()=>null):null;
+      const knownMd=known?await fs.readFile(path.join(dest,name,'paper.md')).catch(()=>null):null;
+      if(known&&knownMd&&sha(knownMd)===known.markdownSha256&&known.sourceSha256===sha(raw)&&known.oldSha256===(prior?sha(prior):null)){receipts.push(known);continue;}
       const assembly=assemble(doc,prior);
       const verdict=await validateDocument(assembly.prepared,{assetRoot:path.join(base,'assets')});
       const prefix='assets-fenbi-'+id.id;
@@ -168,9 +172,17 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
       const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,counts:grade.counts,answerNumbers,markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw)};
       if(write){
         const out=path.join(dest,name);await fs.mkdir(out,{recursive:true,mode:0o700});
-        const existing=await fs.readFile(path.join(out,'paper.md')).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));
+        let existing=await fs.readFile(path.join(out,'paper.md')).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));
+        if(existing&&sha(existing)!==sha(md)){
+          // The source (e.g. answers backfilled) or the repository paper changed: rebuild instead of
+          // blocking forever. The superseded candidate is kept outside the candidate root.
+          const stale=path.join(repo,'work/fenbi/batch-ingest-stale',`${name}-${Date.now()}`);
+          await fs.mkdir(path.dirname(stale),{recursive:true,mode:0o700});
+          await fs.rename(out,stale);await fs.mkdir(out,{recursive:true,mode:0o700});existing=null;
+        }
         if(existing){
-          if(sha(existing)!==sha(md))throw Error('existing-candidate-differs');
+          // Same paper, but the base it would replace may have moved; keep the receipt current.
+          await fs.writeFile(path.join(out,'receipt.json'),JSON.stringify(row,null,2)+'\n',{mode:0o600});
         }else{
           const assetOut=path.join(out,prefix);await fs.mkdir(assetOut,{recursive:true,mode:0o700});
           const copied=new Set();

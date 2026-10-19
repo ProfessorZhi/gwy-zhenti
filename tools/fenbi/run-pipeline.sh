@@ -9,6 +9,8 @@
 #   RIGHTS_FILE=...      the user's approval file (required to promote; promotion is skipped without it)
 #   ALLOW_REPLACE=1      replace existing papers with the Fenbi version (plan section 2, "粉笔优先")
 #   PUSH=1               push the integration branch after each commit
+#   CAPTURE=0            publisher-only mode: skip capture and read papers written by a separate collector
+#   PAPERS_DIR=...       where the collector writes paper caches (default work/fenbi/papers in this worktree)
 set -u
 cd "$(dirname "$0")"
 REPO=$(cd ../.. && pwd)
@@ -23,15 +25,17 @@ mkdir -p "$WORK"
 log() { printf '%s %s\n' "$(date -Iseconds)" "$*" | tee -a "$WORK/pipeline.log"; }
 
 while [ ! -e "$STOP" ]; do
-  node src/cli.mjs capture --all --concurrency "$CONCURRENCY" $HEADLESS_FLAG
-  rc=$?
-  log "capture exit=$rc"
-  if [ "$rc" -ne 0 ] && [ "$rc" -ne 2 ]; then
-    log "capture stopped; writing STOP for a human or GPT to inspect"
-    echo "capture exit=$rc at $(date -Iseconds)" > "$STOP"
+  if [ "${CAPTURE:-1}" = 1 ]; then
+    node src/cli.mjs capture --all --concurrency "$CONCURRENCY" $HEADLESS_FLAG
+    rc=$?
+    log "capture exit=$rc"
+    if [ "$rc" -ne 0 ] && [ "$rc" -ne 2 ]; then
+      log "capture stopped; writing STOP for a human or GPT to inspect"
+      echo "capture exit=$rc at $(date -Iseconds)" > "$STOP"
+    fi
   fi
 
-  node src/batch-ingest.mjs --repo-root "$REPO" --write --limit 1000 > "$WORK/ingest-last.jsonl"
+  node src/batch-ingest.mjs --repo-root "$REPO" --source-root "${PAPERS_DIR:-$WORK/papers}" --write --limit 1000 > "$WORK/ingest-last.jsonl"
   log "ingest exit=$? $(tail -n 1 "$WORK/ingest-last.jsonl")"
 
   if [ -n "$RIGHTS_FILE" ]; then
@@ -46,7 +50,7 @@ while [ ! -e "$STOP" ]; do
     fi
   fi
 
-  node src/pipeline-board.mjs "$WORK" "$REPO" | sed 's/^/board /' | tee -a "$WORK/pipeline.log"
+  node src/pipeline-board.mjs "$WORK" "$REPO" "${PAPERS_DIR:-$WORK/papers}" | sed 's/^/board /' | tee -a "$WORK/pipeline.log"
   [ -e "$STOP" ] && break
   sleep "$INTERVAL"
 done

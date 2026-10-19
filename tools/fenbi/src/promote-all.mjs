@@ -20,17 +20,30 @@ async function readReceipt(dir) {
   try { return JSON.parse(await fs.readFile(path.join(dir, 'receipt.json'), 'utf8')); } catch { return null; }
 }
 
+// Several Fenbi sources can map to one paper path (re-uploads, recall versions). Promote only the
+// most complete one; otherwise each cycle would replace the paper with the other version.
+const rank = r => [r.answerNumbers?.length ?? 0, r.counts?.sourceQuestions ?? 0, Number(r.sourceId) || 0];
+const better = (a, b) => { const x = rank(a), y = rank(b); for (let i = 0; i < x.length; i++) if (x[i] !== y[i]) return x[i] > y[i]; return false; };
+
 export async function listPending(candidateRoot, repoRoot) {
   const entries = await fs.readdir(candidateRoot, { withFileTypes: true }).catch(() => []);
-  const pending = [], already = [];
+  const byPath = new Map();
   for (const entry of entries.filter(e => e.isDirectory()).map(e => e.name).sort()) {
     const dir = path.join(candidateRoot, entry), receipt = await readReceipt(dir);
-    if (!receipt || receipt.grade !== 'A') continue;
-    const current = await fs.readFile(path.join(repoRoot, receipt.path)).catch(() => null);
-    if (current && sha(current) === receipt.markdownSha256) already.push(entry);
-    else pending.push({ dir, receipt });
+    if (!receipt || receipt.grade !== 'A' || !receipt.path) continue;
+    const list = byPath.get(receipt.path) || [];
+    list.push({ entry, dir, receipt });
+    byPath.set(receipt.path, list);
   }
-  return { pending, already };
+  const pending = [], already = [], duplicates = [];
+  for (const [rel, list] of byPath) {
+    const winner = list.reduce((w, c) => better(c.receipt, w.receipt) ? c : w);
+    for (const c of list) if (c !== winner) duplicates.push(c.entry);
+    const current = await fs.readFile(path.join(repoRoot, rel)).catch(() => null);
+    if (current && sha(current) === winner.receipt.markdownSha256) already.push(winner.entry);
+    else pending.push({ dir: winner.dir, receipt: winner.receipt });
+  }
+  return { pending, already, duplicates };
 }
 
 async function effectiveRights(rightsFile, pending) {
@@ -45,8 +58,9 @@ async function effectiveRights(rightsFile, pending) {
 }
 
 export async function promoteAll({ candidateRoot, repoRoot, rightsFile, allowReplace = false, apply = false }) {
-  const { pending, already } = await listPending(candidateRoot, repoRoot);
-  const summary = { pending: pending.length, alreadyPromoted: already.length, promoted: 0, replaced: 0, blocked: {} };
+  const { pending, already, duplicates } = await listPending(candidateRoot, repoRoot);
+  const summary = { pending: pending.length, alreadyPromoted: already.length, duplicateSources: duplicates.length,
+    promoted: 0, replaced: 0, blocked: {} };
   if (!pending.length) return summary;
   const rights = await effectiveRights(rightsFile, pending);
   try {
