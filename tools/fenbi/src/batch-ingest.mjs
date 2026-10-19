@@ -2,6 +2,7 @@
 /** Deterministic local-only Fenbi cache -> Markdown candidate pipeline. */
 import fs from 'node:fs/promises';
 import fsSync from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
@@ -325,7 +326,7 @@ function parseCli(argv) {
   for(let i=0;i<argv.length;i++){
     const k=argv[i];
     if(k==='--write')opts.write=true;
-    else if(['--source-root','--repo-root','--limit','--only'].includes(k)){
+    else if(['--source-root','--repo-root','--limit','--only','--prior-ref'].includes(k)){
       if(!argv[++i])throw Error('missing-value:'+k);
       opts[k.slice(2).replaceAll('-','_')]=argv[i];
     }else throw Error('unknown-option:'+k);
@@ -341,7 +342,7 @@ function parseCli(argv) {
   return opts;
 }
 
-export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=false,only=null}={}){
+export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=false,only=null,priorRef=null}={}){
   const source=await fs.realpath(sourceRoot||path.join(repoRoot,'work/fenbi/papers'));
   const repo=await fs.realpath(repoRoot);
   const dest=path.join(repo,'work/fenbi/batch-ingest');
@@ -361,6 +362,16 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
       const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
       const priorFile=path.join(repo,rel);
       let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
+      // A sparse worktree silently omits tracked files. The prior Markdown is a rendering input, so
+      // it is never substituted from Git here — but the *old file digest* that the release gate needs
+      // is exact either way, so it is taken from the Git object and the gap is reported explicitly.
+      let gitPriorSha256=null;
+      if(!prior && priorRef){
+        try{
+          const blob=execFileSync('git',['-C',repo,'cat-file','blob',`${priorRef}:${rel}`],{maxBuffer:64*1024*1024});
+          gitPriorSha256=sha(blob);
+        }catch{/* absent in the ref too: the target is a new file, not a replacement. */}
+      }
       const assembly=assemble(doc,prior,shard.map);
       const verdict=await validateDocument(assembly.prepared,{assetRoot:path.join(base,'assets')});
       const prefix='assets-fenbi-'+id.id;
@@ -386,7 +397,12 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
       const grade=structureGrade(assembly,md,verdict);
       const answerNumbers=assembly.prepared.questions.filter(q=>flat(q.answerHtml)).map(q=>q.number);
       const inputFingerprint=sha(JSON.stringify({source:sha(raw),prior:prior?sha(prior):null,answers:shard.sha256??null}));
-      const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,reasonCodes:[...new Set(grade.blockers.map(reasonCode))],counts:grade.counts,answerNumbers,markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw),answerShard:shard.file,inputFingerprint};
+      // A warning, never a blocker: the candidate is still structurally A, but the operator must know
+      // that the prior body was not available on disk, so inheritance could not be applied.
+      const warnings=[];
+      if(!prior && gitPriorSha256)warnings.push('W_PRIOR_MISSING_FROM_WORKTREE:'+rel);
+      const oldSha256=prior?sha(prior):gitPriorSha256;
+      const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,reasonCodes:[...new Set(grade.blockers.map(reasonCode))],counts:grade.counts,answerNumbers,markdownSha256:sha(md),oldSha256,warnings,oldSha256Source:prior?'worktree':gitPriorSha256?'git-blob:'+priorRef:null,sourceSha256:sha(raw),answerShard:shard.file,inputFingerprint};
       if(write){
         const out=path.join(dest,name);await fs.mkdir(out,{recursive:true,mode:0o700});
         // Incremental: an unchanged input whose previous candidate was already A is not re-verified.
@@ -439,7 +455,7 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
   const opts=parseCli(process.argv.slice(2));
-  runBatch({sourceRoot:opts.source_root,repoRoot:opts.repo_root,limit:opts.limit,write:opts.write,only:opts.only}).then(r=>{
+  runBatch({sourceRoot:opts.source_root,repoRoot:opts.repo_root,limit:opts.limit,write:opts.write,only:opts.only,priorRef:opts.prior_ref}).then(r=>{
     for(const row of r.receipts)console.log(JSON.stringify(row));
     console.log(JSON.stringify({papers:r.papers,A:r.A,C:r.C}));
     if(r.C)process.exitCode=2;

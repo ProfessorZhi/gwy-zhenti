@@ -127,3 +127,39 @@ test('cross-paper image references resolve inside the repository and are refused
   const md = await fs.readFile(path.join(out, 'paper.md'), 'utf8').catch(() => '');
   assert.ok(!/图片\/别的卷\/fig\.png/u.test(md), 'the cross-paper path is rewritten to a local copy');
 });
+
+test('a prior that a sparse worktree omits still yields an exact oldSha256 from the Git blob', async (t) => {
+  const { execFileSync } = await import('node:child_process');
+  const { createHash } = await import('node:crypto');
+  const sha256 = (value) => createHash('sha256').update(value).digest('hex');
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'sparse-prior-'));
+  t.after(() => fs.rm(root, { recursive: true, force: true }));
+  const repo = path.join(root, 'repo'), cached = path.join(root, 'cached');
+  await fs.mkdir(path.join(repo, '省考', '浙江', '2026'), { recursive: true });
+  await fs.mkdir(cached, { recursive: true });
+  const git = (...argv) => execFileSync('git', ['-C', repo, ...argv], { encoding: 'utf8' });
+  git('init', '-q');
+  git('-c', 'user.email=t@t', '-c', 'user.name=t', 'checkout', '-q', '-b', 'main');
+  const priorBody = '## 第 1 题　<sub>qid 1</sub>\n\n合成旧版题干内容。\n\n- **A**. 甲\n- **B**. 乙\n';
+  await fs.writeFile(path.join(repo, '省考', '浙江', '2026', '行测-C类.md'), priorBody);
+  git('add', '.');
+  git('-c', 'user.email=t@t', '-c', 'user.name=t', 'commit', '-q', '-m', 'prior');
+  // Sparse worktree: the file is tracked and committed but absent from the working tree.
+  await fs.rm(path.join(repo, '省考', '浙江', '2026', '行测-C类.md'));
+
+  const folder = path.join(cached, 'zj-2026-xingce-c-123');
+  await fs.mkdir(folder);
+  const doc = paper([q('k1', 1, '合成新题干内容。')], { id: '123' });
+  await fs.writeFile(path.join(folder, 'document.json'), JSON.stringify(doc));
+  await fs.mkdir(path.join(folder, 'assets'));
+
+  const without = await runBatch({ sourceRoot: cached, repoRoot: repo, write: false });
+  assert.equal(without.receipts[0].oldSha256, null, 'without a ref nothing is invented');
+
+  const withRef = await runBatch({ sourceRoot: cached, repoRoot: repo, write: false, priorRef: 'main' });
+  const row = withRef.receipts[0];
+  assert.equal(row.oldSha256, sha256(Buffer.from(priorBody)), 'the digest comes from the committed blob');
+  assert.equal(row.oldSha256Source, 'git-blob:main');
+  assert.deepEqual(row.warnings, ['W_PRIOR_MISSING_FROM_WORKTREE:省考/浙江/2026/行测-C类.md']);
+  assert.equal(row.grade, 'A', 'a missing worktree prior is a warning, not a blocker');
+});
