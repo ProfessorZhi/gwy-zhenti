@@ -115,3 +115,95 @@ test('dry-run reports preflightOk, never promoted', async t => {
   assert.equal(s.preflightOk, 1);
   await assert.rejects(fs.readFile(path.join(f.repoRoot, f.rel)));
 });
+// --- canonical identity resolution (S3 2026-10-20) -------------------------
+// A receipt may name a slug path that does not exist while the same paper lives
+// in the manifest under its canonical name. Resolving is allowed only when the
+// identity match is unique AND the old paper is real AND it does not shrink.
+
+const CANON = '省考/浙江/2026/行测-C类-规范.md';
+
+async function withCanonical(t, { oldQuestions = 1, ambiguous = false } = {}) {
+  const f = await fixture(t, { rights: { sourceIds: ['123'] } });
+  const oldMd = '# 旧规范卷\n\n' + Array.from({ length: oldQuestions }, (_, i) => `### 第 ${i + 1} 题\n\n旧题干。\n`).join('\n');
+  const rows = [];
+  if (ambiguous) {
+    for (const p of [CANON, '省考/浙江/2026/行测-C类-另一.md']) {
+      await fs.mkdir(path.dirname(path.join(f.repoRoot, p)), { recursive: true });
+      await fs.writeFile(path.join(f.repoRoot, p), oldMd);
+      rows.push({ area: '浙江', year: '2026', subject: '行测', paper_type: 'C类', path: p });
+    }
+  } else {
+    await fs.mkdir(path.dirname(path.join(f.repoRoot, CANON)), { recursive: true });
+    await fs.writeFile(path.join(f.repoRoot, CANON), oldMd);
+    rows.push({ area: '浙江', year: '2026', subject: '行测', paper_type: 'C类', path: CANON });
+  }
+  await fs.writeFile(path.join(f.repoRoot, 'catalog/manifest.jsonl'), rows.map(r => JSON.stringify(r)).join('\n') + '\n');
+  execFileSync('git', ['-C', f.repoRoot, 'add', '.']);
+  execFileSync('git', ['-C', f.repoRoot, '-c', 'user.name=F', '-c', 'user.email=f@example.invalid', 'commit', '-qm', 'canonical']);
+  return { ...f, oldMd, canon: CANON };
+}
+
+test('alternate path with a unique canonical identity and equal questions promotes', async t => {
+  const f = await withCanonical(t, { oldQuestions: 1 });
+  const s = await promoteAll({ ...f, apply: true, allowReplace: true });
+  assert.equal(s.promoted, 1);
+  assert.equal(s.replaced, 1);
+  assert.equal(s.identityResolved, 1);
+  assert.equal(await fs.readFile(path.join(f.repoRoot, CANON), 'utf8'), f.md);
+  // slug path is never created
+  await assert.rejects(fs.readFile(path.join(f.repoRoot, f.rel)));
+});
+
+test('canonical resolution promotes when fenbi has MORE questions', async t => {
+  const f = await withCanonical(t, { oldQuestions: 1 });
+  assert.equal((await promoteAll({ ...f, apply: false, allowReplace: true })).preflightOk, 1);
+});
+
+test('canonical resolution blocks when fenbi has FEWER questions than the old paper', async t => {
+  const f = await withCanonical(t, { oldQuestions: 3 });   // old 3, candidate 1
+  const s = await promoteAll({ ...f, apply: true, allowReplace: true });
+  assert.equal(s.promoted, 0);
+  assert.ok(s.blocked['fenbi-has-fewer-questions-than-existing']);
+  assert.equal(await fs.readFile(path.join(f.repoRoot, CANON), 'utf8'), f.oldMd);
+});
+
+test('canonical resolution requires allowReplace', async t => {
+  const f = await withCanonical(t, { oldQuestions: 1 });
+  const s = await promoteAll({ ...f, apply: true });
+  assert.equal(s.promoted, 0);
+  assert.ok(s.blocked['explicit-allow-replace-required']);
+});
+
+test('an ambiguous identity match is blocked and never guessed', async t => {
+  const f = await withCanonical(t, { oldQuestions: 1, ambiguous: true });
+  const s = await promoteAll({ ...f, apply: true, allowReplace: true });
+  assert.equal(s.promoted, 0);
+  assert.ok(s.blocked['identity-ambiguous-in-manifest']);
+  await assert.rejects(fs.readFile(path.join(f.repoRoot, f.rel)));
+});
+
+test('a stale old hash on the canonical target blocks the replacement', async t => {
+  const f = await withCanonical(t, { oldQuestions: 1 });
+  const rp = path.join(f.candidateRoot, 'p1', 'receipt.json');
+  const receipt = JSON.parse(await fs.readFile(rp, 'utf8'));
+  receipt.oldSha256 = 'deadbeef'.repeat(8);
+  receipt.path = CANON;                       // pretend the receipt points at the canonical file
+  await fs.writeFile(rp, JSON.stringify(receipt));
+  const s = await promoteAll({ ...f, apply: true, allowReplace: true });
+  assert.equal(s.promoted, 0);
+  assert.ok(s.blocked['repository-paper-changed-since-candidate']);
+});
+
+test('re-running on unchanged sources yields zero further promotions', async t => {
+  const f = await withCanonical(t, { oldQuestions: 1 });
+  const first = await promoteAll({ ...f, apply: true, allowReplace: true });
+  assert.equal(first.promoted, 1);
+  execFileSync('git', ['-C', f.repoRoot, 'add', '.']);
+  execFileSync('git', ['-C', f.repoRoot, '-c', 'user.name=F', '-c', 'user.email=f@example.invalid', 'commit', '-qm', 'promoted']);
+  const before = execFileSync('git', ['-C', f.repoRoot, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+  const second = await promoteAll({ ...f, apply: true, allowReplace: true });
+  assert.equal(second.promoted, 0);
+  assert.equal(second.alreadyPromoted, 1);
+  assert.equal(execFileSync('git', ['-C', f.repoRoot, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(), before);
+  assert.equal(execFileSync('git', ['-C', f.repoRoot, 'status', '--porcelain'], { encoding: 'utf8' }).trim(), '');
+});

@@ -72,11 +72,15 @@ async function candidateImages(candidate,receipt,md){
   return out;
 }
 
-export async function preparePromotion({candidateDir,repoRoot=APP_ROOT,rightsFile}={}){
+export async function preparePromotion({candidateDir,repoRoot=APP_ROOT,rightsFile,receiptOverride}={}){
   const repo=await fs.realpath(repoRoot);
   const branch=execFileSync('git',['-C',repo,'branch','--show-current'],{encoding:'utf8'}).trim();
   if(!branch||branch==='main'||branch==='master')throw Error('integration-worktree-branch-required');
-  const candidate=await fs.realpath(candidateDir),receipt=JSON.parse(await fs.readFile(path.join(candidate,'receipt.json'),'utf8'));
+  const candidate=await fs.realpath(candidateDir);
+  const onDisk=JSON.parse(await fs.readFile(path.join(candidate,'receipt.json'),'utf8'));
+  // An override may only redirect the target path and supply the real old hash; every other
+  // field stays exactly as batch-ingest produced it, and all validation below still runs.
+  const receipt=receiptOverride?{...onDisk,...receiptOverride}:onDisk;
   const bytes=await fs.readFile(path.join(candidate,'paper.md'));
   validateReceipt(receipt,bytes);
   if(!rightsFile)throw Error('explicit-publication-permission-required');
