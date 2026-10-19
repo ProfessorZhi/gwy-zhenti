@@ -2400,9 +2400,9 @@ D
 
 <details><summary>第 41 题</summary>
 
-**答案状态：unknown（来源未提供）**
+**参考答案（粉笔题库参考内容）**
 
-
+A
 
 **解析状态：unknown（来源未提供）**
 
