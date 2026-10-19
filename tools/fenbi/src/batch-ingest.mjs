@@ -159,6 +159,17 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
       const sub=subjectName(id.subject);
       if(!sub||!safeName(id.id)||!safeName(id.variant)||!Number.isInteger(Number(id.year)))throw Error('bad-identity');
       const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
+      // Shenlun has no A-D options, so it must never go through the xingce assemble/grade path.
+      // Until the S4 adapter is wired and rights are cleared it is recorded as a local hold.
+      if(sub==='shenlun'){
+        const hold={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,
+          subject:'shenlun',path:rel,grade:'C',issues:['shenlun-adapter-not-wired'],
+          structuralGrade:'unknown',publishable:false,holdReason:'shenlun-rights-unverified',
+          rightsStatus:'unverified',cloudStorageBlocked:true,
+          counts:{sourceQuestions:(doc.questions||[]).length},answerNumbers:[],
+          markdownSha256:null,oldSha256:null,sourceSha256:sha(raw)};
+        receipts.push(hold);continue;
+      }
       const priorFile=path.join(repo,rel);
       let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
       // Neither the source nor the repository paper changed since the last candidate: reuse it.
