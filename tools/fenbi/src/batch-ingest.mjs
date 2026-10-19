@@ -326,7 +326,7 @@ function parseCli(argv) {
   for(let i=0;i<argv.length;i++){
     const k=argv[i];
     if(k==='--write')opts.write=true;
-    else if(['--source-root','--repo-root','--limit','--only','--prior-ref'].includes(k)){
+    else if(['--source-root','--repo-root','--limit','--only','--prior-ref','--version'].includes(k)){
       if(!argv[++i])throw Error('missing-value:'+k);
       opts[k.slice(2).replaceAll('-','_')]=argv[i];
     }else throw Error('unknown-option:'+k);
@@ -342,10 +342,12 @@ function parseCli(argv) {
   return opts;
 }
 
-export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=false,only=null,priorRef=null}={}){
+export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=false,only=null,priorRef=null,version=null}={}){
   const source=await fs.realpath(sourceRoot||path.join(repoRoot,'work/fenbi/papers'));
   const repo=await fs.realpath(repoRoot);
-  const dest=path.join(repo,'work/fenbi/batch-ingest');
+  // A versioned run writes a NEW candidate tree and never touches the current one, so an older
+  // candidate stays available for rollback while the owner reviews the new content.
+  const dest=version?path.join(repo,'work/fenbi/batch-ingest-versions',String(version)):path.join(repo,'work/fenbi/batch-ingest');
   const wanted=Array.isArray(only)&&only.length?new Set(only):null;
   const folders=(await fs.readdir(source,{withFileTypes:true})).filter(x=>x.isDirectory()&&safeName(x.name)&&(!wanted||wanted.has(x.name))).map(x=>x.name).sort().slice(0,limit);
   const receipts=[];
@@ -455,7 +457,7 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
   const opts=parseCli(process.argv.slice(2));
-  runBatch({sourceRoot:opts.source_root,repoRoot:opts.repo_root,limit:opts.limit,write:opts.write,only:opts.only,priorRef:opts.prior_ref}).then(r=>{
+  runBatch({sourceRoot:opts.source_root,repoRoot:opts.repo_root,limit:opts.limit,write:opts.write,only:opts.only,priorRef:opts.prior_ref,version:opts.version}).then(r=>{
     for(const row of r.receipts)console.log(JSON.stringify(row));
     console.log(JSON.stringify({papers:r.papers,A:r.A,C:r.C}));
     if(r.C)process.exitCode=2;
