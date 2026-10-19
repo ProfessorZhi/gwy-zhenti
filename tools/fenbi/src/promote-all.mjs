@@ -154,14 +154,15 @@ export async function promoteAll({ candidateRoot, repoRoot, rightsFile, allowRep
   for (const item of pending) {
     const { receipt } = item;
     let reason = null;
-    if (item.mode === 'identity-resolved') {
+    if (!reason && item.prior) {
+      // Fenbi must not shrink a paper — applies to direct and identity-resolved targets alike,
+      // matching the guard PR #91 added on main.
+      const existingCount = questionHeadingCount(item.prior.toString('utf8'));
+      if (existingCount > (receipt.counts?.sourceQuestions ?? 0)) reason = 'fenbi-has-fewer-questions-than-existing';
+    }
+    if (!reason && item.mode === 'identity-resolved' && !allowReplace) {
       // Replacing a different-named file for the same paper is only allowed explicitly.
-      if (!allowReplace) reason = 'explicit-allow-replace-required';
-      else {
-        // Fenbi must not shrink a paper: same guard as PR #91 on main.
-        const existingCount = questionHeadingCount(item.prior.toString('utf8'));
-        if (existingCount > (receipt.counts?.sourceQuestions ?? 0)) reason = 'fenbi-has-fewer-questions-than-existing';
-      }
+      reason = 'explicit-allow-replace-required';
     }
     if (!reason) {
       if (item.mode === 'identity-resolved') {
