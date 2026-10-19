@@ -86,6 +86,13 @@ export async function preparePromotion({candidateDir,repoRoot=APP_ROOT,rightsFil
   validateReceipt(receipt,bytes);
   if(!rightsFile)throw Error('explicit-publication-permission-required');
   validateProof(JSON.parse(await fs.readFile(rightsFile,'utf8')),receipt);
+  // A shenlun receipt carries the copyright state it was captured under. Even with a rights
+  // file present, refuse while the paper is unverified or its cloud storage is still blocked.
+  if(receipt.subject==='shenlun'){
+    const {assertShenlunPromotable}=await import('./shenlun-integration.mjs');
+    assertShenlunPromotable({identity:{subject:'shenlun',
+      rightsStatus:receipt.rightsStatus,cloudStorageBlocked:receipt.cloudStorageBlocked}});
+  }
   const dest=path.resolve(repo,receipt.path);
   if(!inside(repo,dest))throw Error('publication-path-escape');
   const prior=await fs.readFile(dest).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));

@@ -158,6 +158,23 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
       const id=doc.identity||{},area=id.area==='国考'?'国考':'省考/'+id.area;
       const sub=subjectName(id.subject);
       if(!sub||!safeName(id.id)||!safeName(id.variant)||!Number.isInteger(Number(id.year)))throw Error('bad-identity');
+      // ---- subject dispatch: shenlun never enters the xingce assembly path ----
+      if(id.subject==='shenlun'){
+        const {ingestShenlun}=await import('./shenlun-integration.mjs');
+        try{
+          const row=ingestShenlun({doc,raw,name,dest,write});
+          if(write){
+            await fs.mkdir(path.join(dest,name),{recursive:true,mode:0o700});
+            await fs.writeFile(path.join(dest,name,'paper.md'),row.markdown,{mode:0o600});
+            const receiptRow={...row}; delete receiptRow.doc; delete receiptRow.markdown;
+            delete receiptRow.write; delete receiptRow.dest;
+            await fs.writeFile(path.join(dest,name,'receipt.json'),JSON.stringify(receiptRow,null,1)+'\n',{mode:0o600});
+          }
+          receipts.push(row);continue;
+        }catch(e){
+          receipts.push({name,subject:'shenlun',grade:'C',issues:[e.code||e.message||'shenlun-error']});continue;
+        }
+      }
       const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
       const priorFile=path.join(repo,rel);
       let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
