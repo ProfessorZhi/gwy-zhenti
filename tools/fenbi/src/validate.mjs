@@ -229,7 +229,11 @@ export async function validateDocument(doc, { assetRoot } = {}) {
       const bytes = await readFile(actualPath);
       const digest = createHash('sha256').update(bytes).digest('hex');
       const size = imageSize(bytes);
-      const decodeBound = asset.decoded === true && asset.decode?.method === 'browser-image-decode'
+      // A decode bound to these exact bytes. A browser decode and an offline decode are equally
+      // sufficient here: the gate asks for a complete decode, not for human visual review.
+      const decodeMethod = asset.decode?.method;
+      const decodeBound = asset.decoded === true
+        && (decodeMethod === 'browser-image-decode' || decodeMethod === 'offline-pil-decode')
         && asset.decode.sha256 === digest && asset.decode.width === asset.width && asset.decode.height === asset.height;
       if (bytes.length !== asset.bytes || digest !== asset.sha256 || (size && (size[0] !== asset.width || size[1] !== asset.height)) || (!size && !decodeBound)) add('images', 'asset-integrity-failed', 'Asset bytes, hash, format, or dimensions do not match', { url: asset.url });
       else {

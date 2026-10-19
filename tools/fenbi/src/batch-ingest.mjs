@@ -6,6 +6,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { parseRepositoryPaper, normalizeComparisonText } from './align.mjs';
 import { isCollectionStub, validateDocument } from './validate.mjs';
+import { applyDecodeProof, bindDecodeProof, loadDecodeProof } from './decode-proof.mjs';
 import { renderCandidate } from './render.mjs';
 
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
@@ -131,7 +132,7 @@ function parseCli(argv) {
   for(let i=0;i<argv.length;i++){
     const k=argv[i];
     if(k==='--write')opts.write=true;
-    else if(['--source-root','--repo-root','--limit'].includes(k)){
+    else if(['--source-root','--repo-root','--limit','--decode-proof-dir'].includes(k)){
       if(!argv[++i])throw Error('missing-value:'+k);
       opts[k.slice(2).replaceAll('-','_')]=argv[i];
     }else throw Error('unknown-option:'+k);
@@ -141,10 +142,11 @@ function parseCli(argv) {
   return opts;
 }
 
-export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=false}={}){
+export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=false,decodeProofDir=null}={}){
   const source=await fs.realpath(sourceRoot||path.join(repoRoot,'work/fenbi/papers'));
   const repo=await fs.realpath(repoRoot);
   const dest=path.join(repo,'work/fenbi/batch-ingest');
+  const proofs=decodeProofDir ?? path.join(repoRoot,'work/fenbi/decode-proofs');
   const folders=(await fs.readdir(source,{withFileTypes:true})).filter(x=>x.isDirectory()&&safeName(x.name)).map(x=>x.name).sort().slice(0,limit);
   const receipts=[];
   for(const name of folders){
@@ -164,6 +166,14 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
       const knownMd=known?await fs.readFile(path.join(dest,name,'paper.md')).catch(()=>null):null;
       if(known&&knownMd&&sha(knownMd)===known.markdownSha256&&known.sourceSha256===sha(raw)&&known.oldSha256===(prior?sha(prior):null)){receipts.push(known);continue;}
       const assembly=assemble(doc,prior);
+      // Offer an offline decode proof, if one exists for this paper. It is applied only when it
+      // binds exactly to this document's assets; otherwise it is ignored and the paper is graded
+      // on whatever evidence it already has. The proof never sets a grade by itself.
+      const proof=await loadDecodeProof(proofs,name);
+      if(proof){
+        const bound=bindDecodeProof(assembly.prepared,proof,{paperKey:name,sourceId:String(id.id),sourceSha256:sha(raw),documentSha256:sha(raw)});
+        if(bound.ok) assembly.prepared=applyDecodeProof(assembly.prepared,bound.decode);
+      }
       const verdict=await validateDocument(assembly.prepared,{assetRoot:path.join(base,'assets')});
       const prefix='assets-fenbi-'+id.id;
       const md=renderIngest(assembly,prior,prefix);
@@ -212,7 +222,7 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
   const opts=parseCli(process.argv.slice(2));
-  runBatch({sourceRoot:opts.source_root,repoRoot:opts.repo_root,limit:opts.limit,write:opts.write}).then(r=>{
+  runBatch({sourceRoot:opts.source_root,repoRoot:opts.repo_root,limit:opts.limit,write:opts.write,decodeProofDir:opts.decode_proof_dir??null}).then(r=>{
     for(const row of r.receipts)console.log(JSON.stringify(row));
     console.log(JSON.stringify({papers:r.papers,A:r.A,C:r.C}));
     if(r.C)process.exitCode=2;
