@@ -60,6 +60,14 @@ test('two sources for one paper: only the one with more answers is promoted', as
   assert.deepEqual([again.pending, again.alreadyPromoted], [0, 1]);
 });
 
+test('an existing paper with more questions than the Fenbi version is never replaced', async t => {
+  const f = await fixture(t, { old: true, rights: { sourceIds: ['123'] } });
+  await fs.writeFile(path.join(f.repoRoot, f.rel), '### 第 1 题\n\n甲\n\n### 第 2 题\n\n乙\n');
+  const s = await promoteAll({ ...f, apply: true, allowReplace: true });
+  assert.equal(s.promoted, 0);
+  assert.ok(s.blocked['fenbi-has-fewer-questions-than-existing']);
+});
+
 test('an existing paper is replaced only with allowReplace', async t => {
   const f = await fixture(t, { old: true, rights: { sourceIds: ['123'] } });
   const blocked = await promoteAll({ ...f, apply: true });
