@@ -46,8 +46,11 @@ while [ ! -e "$STOP" ]; do
       git -C "$REPO" add -- 国考 省考 图片 catalog/manifest.jsonl
       git -C "$REPO" commit -q -m "integrate(fenbi): pipeline batch $(date -u +%Y-%m-%dT%H:%MZ)"
       log "committed $(git -C "$REPO" rev-parse --short HEAD)"
-      if [ "${PUSH:-0}" = 1 ]; then git -C "$REPO" push -q origin HEAD && log "pushed"; fi
     fi
+  fi
+
+  if [ "${PUSH:-0}" = 1 ]; then
+    if git -C "$REPO" push -q origin HEAD; then log "pushed/up-to-date"; else log "push failed; retry next cycle"; fi
   fi
 
   node src/pipeline-board.mjs "$WORK" "$REPO" "${PAPERS_DIR:-$WORK/papers}" | sed 's/^/board /' | tee -a "$WORK/pipeline.log"
