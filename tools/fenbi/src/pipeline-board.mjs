@@ -35,7 +35,7 @@ export function speed(timestamps, now) {
   };
 }
 
-export async function buildBoard({ workDir, repoRoot, papersRoot = path.join(workDir, 'papers'), ingestRoot = path.join(workDir, 'batch-ingest'), now = Date.now() }) {
+export async function buildBoard({ workDir, repoRoot, papersDir, papersRoot = papersDir || path.join(workDir, 'papers'), ingestRoot = path.join(workDir, 'batch-ingest'), now = Date.now() }) {
   const times = [], regions = {};
   let questions = 0, answered = 0;
   for (const name of await dirs(papersRoot)) {
@@ -93,12 +93,12 @@ export function renderBoard(b) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
   const positional = args.filter((a, i) => !a.startsWith('--') && !(i > 0 && args[i - 1] === '--papers-root') && !(i > 0 && args[i - 1] === '--ingest-root'));
-  const [workDir, repoRoot] = positional;
+  const [workDir, repoRoot, papersDir] = positional;
   const papersIndex = args.indexOf('--papers-root'), ingestIndex = args.indexOf('--ingest-root');
-  const papersRoot = papersIndex >= 0 ? args[papersIndex + 1] : undefined;
+  const papersRoot = papersIndex >= 0 ? args[papersIndex + 1] : papersDir;
   const ingestRoot = ingestIndex >= 0 ? args[ingestIndex + 1] : undefined;
-  if (!workDir || !repoRoot) throw Error('usage: pipeline-board.mjs WORK_DIR REPO_ROOT [--papers-root DIR] [--ingest-root DIR]');
-  buildBoard({ workDir, repoRoot, papersRoot, ingestRoot }).then(async b => {
+  if (!workDir || !repoRoot) throw Error('usage: pipeline-board.mjs WORK_DIR REPO_ROOT [PAPERS_DIR] [--papers-root DIR] [--ingest-root DIR]');
+  buildBoard({ workDir, repoRoot, papersDir, papersRoot, ingestRoot }).then(async b => {
     await fs.writeFile(path.join(workDir, 'board.json'), JSON.stringify(b, null, 2) + '\n');
     await fs.writeFile(path.join(workDir, 'BOARD.md'), renderBoard(b));
     console.log(JSON.stringify({ lastHourPapers: b.speed.lastHourPapers, captured: b.speed.captured, A: b.A, C: b.C, promoted: b.promoted, stopped: b.stopped }));

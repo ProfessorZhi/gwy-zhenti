@@ -48,6 +48,18 @@ test('without the cover-all flag an unlisted source stays blocked', async t => {
   assert.ok(s.blocked['explicit-publication-permission-required']);
 });
 
+test('two sources for one paper: only the one with more answers is promoted', async t => {
+  const f = await fixture(t, { rights: { sourceIds: [], coverAllCapturedSources: true } });
+  const second = path.join(f.candidateRoot, 'p2');
+  await fs.cp(path.join(f.candidateRoot, 'p1'), second, { recursive: true });
+  const receipt = JSON.parse(await fs.readFile(path.join(second, 'receipt.json'), 'utf8'));
+  await fs.writeFile(path.join(second, 'receipt.json'), JSON.stringify({ ...receipt, answerNumbers: [1] }));
+  const s = await promoteAll({ ...f, apply: true });
+  assert.deepEqual([s.pending, s.promoted, s.duplicateSources], [1, 1, 1]);
+  const again = await promoteAll({ ...f, apply: true });
+  assert.deepEqual([again.pending, again.alreadyPromoted], [0, 1]);
+});
+
 test('an existing paper is replaced only with allowReplace', async t => {
   const f = await fixture(t, { old: true, rights: { sourceIds: ['123'] } });
   const blocked = await promoteAll({ ...f, apply: true });

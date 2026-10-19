@@ -163,6 +163,26 @@ loginctl enable-linger fjd           # 退出登录后继续运行
 touch work/fenbi/STOP                # 需要停时：写这个文件；删除后重新 start
 ```
 
+**已有独立采集服务时（Dell 现状：`fenbi-service.mjs` 只负责采集）**：采集服务保持不动，另装一个**发布服务**，只做"转换 → 发布 → 提交推送 → 看板"，读取采集服务写出的缓存目录：
+
+```ini
+# ~/.config/systemd/user/fenbi-publisher.service
+[Unit]
+Description=Fenbi ingest-promote-push loop (no browser)
+[Service]
+WorkingDirectory=/home/fjd/workspaces/gwy-zhenti-fenbi/integ
+Environment=CAPTURE=0 INTERVAL=300 ALLOW_REPLACE=1 PUSH=1
+Environment=PAPERS_DIR=/home/fjd/workspaces/gwy-zhenti-fenbi/repo/work/fenbi/papers
+Environment=RIGHTS_FILE=/home/fjd/workspaces/gwy-zhenti-fenbi/repo/work/fenbi/rights.json
+ExecStart=/usr/bin/bash tools/fenbi/run-pipeline.sh
+Restart=on-failure
+RestartSec=120
+[Install]
+WantedBy=default.target
+```
+
+发布服务不碰浏览器和登录状态，和采集服务互不干扰。转换是增量的：来源和旧卷都没变的卷直接复用；采集服务事后补回答案、改写 `document.json` 时，下一轮会自动重建这卷候选并重新发布，不需要"静置 N 秒"之类的判断。同一路径出现多个粉笔来源时，只发布答案最多、题目最多的那一份，其余计入 `duplicateSources`。
+
 - 每一轮循环：抓取 → 转换 → `promote-all.mjs` 逐卷发布所有未发布的 A 卷（`ALLOW_REPLACE=1` 时按"粉笔优先"替换旧卷，旧版留在 Git 历史和 `legacy-original.md`）→ 有变更就提交并推送集成分支 → 更新看板。
 - 授权文件里加 `"coverAllCapturedSources": true`，表示用户同意收录本账号抓到的全部粉笔卷；不加这一项时，只发布 `sourceIds` 里列出的卷。
 - **测速看板**：`work/fenbi/BOARD.md`（`board.json` 同内容）由 `pipeline-board.mjs` 每轮生成，给出**含空等的真实每小时卷数**、连续抓取时每卷秒数、卷间空等次数和分钟数、答案覆盖、A/C、已进分支数、分地区和逐小时统计。GPT 巡检只看这一个文件。
