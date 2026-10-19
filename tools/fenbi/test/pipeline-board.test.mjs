@@ -5,7 +5,8 @@ import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { speed, buildBoard, renderBoard } from '../src/pipeline-board.mjs';
-import { listPending } from '../src/promote-all.mjs';
+import { listPending, promoteAll } from '../src/promote-all.mjs';
+import { execFileSync } from 'node:child_process';
 
 const sha = b => crypto.createHash('sha256').update(b).digest('hex');
 const MIN = 60e3;
@@ -185,4 +186,42 @@ test('board region subtotals sum to the total across regions', async t => {
   assert.equal(sum, b.promoted, 'region subtotals must add up to the total');
   assert.equal(b.regions['浙江'].promoted, 1);
   assert.equal(b.regions['江苏'].promoted, 1);
+});
+
+// End-to-end parity: whatever promoteAll actually publishes, the board must count.
+// This is the drift guard — it exercises both implementations rather than comparing
+// their helper source, so a divergent normalisation fails here.
+test('board agrees with promoteAll on an identity-resolved publication', async t => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'board-parity-'));
+  t.after(() => fs.rm(root, { recursive: true, force: true }));
+  const repo = path.join(root, 'repo'), work = path.join(root, 'work'), candRoot = path.join(work, 'batch-ingest');
+  const cand = path.join(candRoot, 'p1');
+  await fs.mkdir(path.join(repo, 'catalog'), { recursive: true });
+  await fs.mkdir(path.join(cand, 'assets-fenbi-1'), { recursive: true });
+  execFileSync('git', ['init', '-q', '-b', 'integ', repo]);
+
+  const canon = '省考/浙江/2026/行测-C类.md', slug = '省考/浙江/2026/行测-c.md';
+  const oldMd = '# 旧\n\n### 第 1 题\n\n旧题干\n';
+  await fs.mkdir(path.dirname(path.join(repo, canon)), { recursive: true });
+  await fs.writeFile(path.join(repo, canon), oldMd);
+  await fs.writeFile(path.join(repo, 'catalog/manifest.jsonl'),
+    JSON.stringify({ area: '浙江', year: 2026, subject: '行测', paper_type: 'C类', path: canon }) + '\n');
+
+  const md = '# 新\n\n### 第 1 题\n\n新题干\n';
+  await fs.writeFile(path.join(cand, 'assets-fenbi-1', 'q.png'), 'img');
+  await fs.writeFile(path.join(cand, 'paper.md'), md + '\n![图](assets-fenbi-1/q.png)\n');
+  await fs.writeFile(path.join(cand, 'receipt.json'), JSON.stringify({
+    sourceId: '1', area: '浙江', year: 2026, subject: 'xingce', variant: 'C类', grade: 'A',
+    path: slug, counts: { sourceQuestions: 1 }, answerNumbers: [1], markdownSha256: sha(md + '\n![图](assets-fenbi-1/q.png)\n') }));
+  const rights = path.join(root, 'rights.json');
+  await fs.writeFile(rights, JSON.stringify({ schemaVersion: 1, allowGitHubStorage: true, evidence: 'synthetic parity fixture', sourceIds: ['1'] }));
+  execFileSync('git', ['-C', repo, 'add', '.']);
+  execFileSync('git', ['-C', repo, '-c', 'user.name=F', '-c', 'user.email=f@example.invalid', 'commit', '-qm', 'base']);
+
+  const s = await promoteAll({ repoRoot: repo, candidateRoot: candRoot, rightsFile: rights, apply: true, allowReplace: true });
+  assert.equal(s.replaced, 1, 'promoteAll should resolve the canonical target');
+
+  const b = await buildBoard({ workDir: work, repoRoot: repo });
+  assert.equal(b.promoted, s.replaced, 'board must count what promoteAll published');
+  assert.equal(b.regions['浙江'].promoted, 1);
 });
