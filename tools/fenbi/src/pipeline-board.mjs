@@ -35,15 +35,18 @@ export function speed(timestamps, now) {
   };
 }
 
-export async function buildBoard({ workDir, repoRoot, now = Date.now() }) {
-  const papersRoot = path.join(workDir, 'papers'), ingestRoot = path.join(workDir, 'batch-ingest');
+export async function buildBoard({ workDir, repoRoot, papersRoot = path.join(workDir, 'papers'), ingestRoot = path.join(workDir, 'batch-ingest'), now = Date.now() }) {
   const times = [], regions = {};
   let questions = 0, answered = 0;
   for (const name of await dirs(papersRoot)) {
-    const cp = await readJson(path.join(papersRoot, name, 'checkpoint.json'));
-    if (cp?.updatedAt) times.push(Date.parse(cp.updatedAt));
-    const doc = await readJson(path.join(papersRoot, name, 'document.json')) ||
-      (cp?.documentFile ? await readJson(path.join(papersRoot, name, cp.documentFile)) : null);
+    const base = path.join(papersRoot, name);
+    const cp = await readJson(path.join(base, 'checkpoint.json'));
+    const runSummary = await readJson(path.join(base, 'run-summary.json'));
+    const documentFile = cp?.documentFile ? path.join(base, cp.documentFile) : path.join(base, 'document.json');
+    const doc = await readJson(documentFile);
+    const stamp = Date.parse(cp?.updatedAt ?? runSummary?.at ?? '');
+    if (Number.isFinite(stamp)) times.push(stamp);
+    else { const stat = await fs.stat(documentFile).catch(() => null); if (stat) times.push(stat.mtimeMs); }
     const area = doc?.identity?.area || 'unknown';
     const r = regions[area] ||= { captured: 0, withAnswers: 0, A: 0, C: 0, promoted: 0 };
     r.captured++;
@@ -88,9 +91,14 @@ export function renderBoard(b) {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const [workDir, repoRoot] = [process.argv[2], process.argv[3]];
-  if (!workDir || !repoRoot) throw Error('usage: pipeline-board.mjs WORK_DIR REPO_ROOT');
-  buildBoard({ workDir, repoRoot }).then(async b => {
+  const args = process.argv.slice(2);
+  const positional = args.filter((a, i) => !a.startsWith('--') && !(i > 0 && args[i - 1] === '--papers-root') && !(i > 0 && args[i - 1] === '--ingest-root'));
+  const [workDir, repoRoot] = positional;
+  const papersIndex = args.indexOf('--papers-root'), ingestIndex = args.indexOf('--ingest-root');
+  const papersRoot = papersIndex >= 0 ? args[papersIndex + 1] : undefined;
+  const ingestRoot = ingestIndex >= 0 ? args[ingestIndex + 1] : undefined;
+  if (!workDir || !repoRoot) throw Error('usage: pipeline-board.mjs WORK_DIR REPO_ROOT [--papers-root DIR] [--ingest-root DIR]');
+  buildBoard({ workDir, repoRoot, papersRoot, ingestRoot }).then(async b => {
     await fs.writeFile(path.join(workDir, 'board.json'), JSON.stringify(b, null, 2) + '\n');
     await fs.writeFile(path.join(workDir, 'BOARD.md'), renderBoard(b));
     console.log(JSON.stringify({ lastHourPapers: b.speed.lastHourPapers, captured: b.speed.captured, A: b.A, C: b.C, promoted: b.promoted, stopped: b.stopped }));

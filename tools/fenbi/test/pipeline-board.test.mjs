@@ -53,3 +53,24 @@ test('board reads captures, answers, grades and promotion from local metadata', 
     assert.deepEqual(already, ['p1']);
   } finally { await fs.rm(root, { recursive: true, force: true }); }
 });
+
+
+test('board accepts split papers and ingest roots', async () => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'board-split-'));
+  try {
+    const papers = path.join(root, 'owner/papers'), ingest = path.join(root, 's2/batch-ingest'), repo = path.join(root, 'repo');
+    const paper = path.join(papers, 'p1');
+    await fs.mkdir(paper, { recursive: true });
+    await fs.writeFile(path.join(paper, 'checkpoint.json'), JSON.stringify({ updatedAt: new Date().toISOString() }));
+    await fs.writeFile(path.join(paper, 'document.json'), JSON.stringify({ identity: { area: '深圳' }, questions: [{ answerHtml: 'A' }] }));
+    const md = Buffer.from('# split\n');
+    const cand = path.join(ingest, 'p1');
+    await fs.mkdir(cand, { recursive: true });
+    await fs.writeFile(path.join(cand, 'receipt.json'), JSON.stringify({ area: '深圳', grade: 'A', path: '省考/深圳/2025/行测-统考.md', markdownSha256: sha(md) }));
+    await fs.mkdir(path.join(repo, '省考/深圳/2025'), { recursive: true });
+    await fs.writeFile(path.join(repo, '省考/深圳/2025/行测-统考.md'), md);
+    const b = await buildBoard({ workDir: path.join(root, 'empty-work'), repoRoot: repo, papersRoot: papers, ingestRoot: ingest });
+    assert.equal(b.speed.captured, 1);
+    assert.deepEqual([b.A, b.C, b.promoted, b.answered], [1, 0, 1, 1]);
+  } finally { await fs.rm(root, { recursive: true, force: true }); }
+});

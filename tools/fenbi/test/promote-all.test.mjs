@@ -55,3 +55,43 @@ test('an existing paper is replaced only with allowReplace', async t => {
   const s = await promoteAll({ ...f, apply: true, allowReplace: true });
   assert.deepEqual([s.promoted, s.replaced], [1, 1]);
 });
+
+test('a manifest identity collision is blocked even with allowReplace', async t => {
+  const f = await fixture(t, { rights: { sourceIds: ['123'] } });
+  const row = { area: '浙江', year: '2026', subject: '行测', paper_type: 'C类', path: '省考/浙江/2026/行测-C类-旧.md' };
+  await fs.writeFile(path.join(f.repoRoot, 'catalog/manifest.jsonl'), JSON.stringify(row) + '\n');
+  const s = await promoteAll({ ...f, apply: true, allowReplace: true });
+  assert.equal(s.promoted, 0);
+  assert.ok(s.blocked['duplicate-identity-in-repository']);
+  await assert.rejects(fs.readFile(path.join(f.repoRoot, f.rel)));
+});
+
+test('an existing target without a matching old SHA is never replaced by allowReplace', async t => {
+  const f = await fixture(t, { old: true, rights: { sourceIds: ['123'] } });
+  const receiptPath = path.join(f.candidateRoot, 'p1', 'receipt.json');
+  const receipt = JSON.parse(await fs.readFile(receiptPath, 'utf8'));
+  receipt.oldSha256 = null;
+  await fs.writeFile(receiptPath, JSON.stringify(receipt));
+  const s = await promoteAll({ ...f, apply: true, allowReplace: true });
+  assert.equal(s.promoted, 0);
+  assert.ok(s.blocked['existing-target-without-old-sha']);
+  assert.equal(await fs.readFile(path.join(f.repoRoot, f.rel), 'utf8'), '旧版\n');
+});
+
+test('onlySourceIds scopes the batch and does not touch unlisted candidates', async t => {
+  const f = await fixture(t, { rights: { sourceIds: ['999', '123'] } });
+  const none = await promoteAll({ ...f, apply: true, onlySourceIds: ['999'] });
+  assert.equal(none.pending, 0);
+  assert.equal(none.promoted, 0);
+  await assert.rejects(fs.readFile(path.join(f.repoRoot, f.rel)));
+  const one = await promoteAll({ ...f, apply: true, onlySourceIds: ['123'] });
+  assert.equal(one.promoted, 1);
+});
+
+test('dry-run reports preflightOk, never promoted', async t => {
+  const f = await fixture(t, { rights: { sourceIds: ['123'] } });
+  const s = await promoteAll({ ...f, apply: false });
+  assert.equal(s.promoted, 0);
+  assert.equal(s.preflightOk, 1);
+  await assert.rejects(fs.readFile(path.join(f.repoRoot, f.rel)));
+});
