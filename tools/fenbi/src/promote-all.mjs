@@ -66,6 +66,11 @@ export async function promoteAll({ candidateRoot, repoRoot, rightsFile, allowRep
   try {
     for (const { dir, receipt } of pending) {
       try {
+        // Replacing is only safe when the Fenbi version is at least as complete as the existing paper;
+        // fewer questions usually means a different recall version or a partial capture.
+        const existing = await fs.readFile(path.join(repoRoot, receipt.path), 'utf8').catch(() => null);
+        const existingCount = existing ? [...existing.matchAll(/^#{2,3}\s+第\s*\d+\s*题/gmu)].length : 0;
+        if (existingCount > (receipt.counts?.sourceQuestions ?? 0)) throw Error('fenbi-has-fewer-questions-than-existing');
         await promoteOne({ candidateDir: dir, repoRoot, rightsFile: rights.file }, { apply, allowReplace });
         summary.promoted++;
         if (receipt.oldSha256) summary.replaced++;
