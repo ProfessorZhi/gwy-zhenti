@@ -50,6 +50,11 @@ function validateProof(proof,receipt){
 }
 function validateReceipt(receipt,md){
   if(receipt.grade!=='A')throw Error('only-grade-A-can-promote');
+  // Shenlun carries no redistribution permission by default: being free to read on the source
+  // is not permission to publish. Anything not explicitly cleared stays on the local disk.
+  if(receipt.subject==='shenlun'&&(receipt.cloudStorageBlocked!==false||receipt.rightsStatus!=='cleared'
+     ||!receipt.rightsEvidence||String(receipt.rightsEvidence).trim().length<8))
+    throw Error('shenlun-cloud-storage-blocked');
   if(!targetPathAllowed(receipt.path,receipt.area)||
      !/^\d{1,15}$/u.test(String(receipt.sourceId)))throw Error('invalid-target-path');
   if(receipt.markdownSha256!==hash(md))throw Error('candidate-sha-mismatch');
