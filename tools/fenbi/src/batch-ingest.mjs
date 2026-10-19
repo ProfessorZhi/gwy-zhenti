@@ -368,7 +368,7 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
       let gitPriorSha256=null;
       if(!prior && priorRef){
         try{
-          const blob=execFileSync('git',['-C',repo,'cat-file','blob',`${priorRef}:${rel}`],{maxBuffer:64*1024*1024});
+          const blob=execFileSync('git',['-C',repo,'cat-file','blob',`${priorRef}:${rel}`],{maxBuffer:64*1024*1024,stdio:['ignore','pipe','ignore']});
           gitPriorSha256=sha(blob);
         }catch{/* absent in the ref too: the target is a new file, not a replacement. */}
       }
