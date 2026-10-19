@@ -8,6 +8,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { better, identityKey, readManifestIdentities } from './identity.mjs';
 
 const HOUR = 3600e3, IDLE_GAP_MS = 120e3;
 const sha = b => crypto.createHash('sha256').update(b).digest('hex');
@@ -57,13 +58,34 @@ export async function buildBoard({ workDir, repoRoot, papersDir, papersRoot = pa
     if (qs.length && a === qs.length) r.withAnswers++;
   }
   let A = 0, C = 0, promoted = 0;
+  const manifest = await readManifestIdentities(repoRoot);
+  const aTargets = [];
   for (const name of await dirs(ingestRoot)) {
     const rc = await readJson(path.join(ingestRoot, name, 'receipt.json'));
     if (!rc) continue;
     const r = regions[rc.area] ||= { captured: 0, withAnswers: 0, A: 0, C: 0, promoted: 0 };
-    if (rc.grade === 'A') { A++; r.A++; } else { C++; r.C++; }
-    const cur = rc.path ? await fs.readFile(path.join(repoRoot, rc.path)).catch(() => null) : null;
-    if (cur && sha(cur) === rc.markdownSha256) { promoted++; r.promoted++; }
+    if (rc.grade === 'A') { A++; r.A++; } else { C++; r.C++; continue; }
+    // Resolve the published target exactly as promote-all does: a direct path wins, otherwise a
+    // UNIQUE manifest identity names the canonical path. Ambiguity is never guessed.
+    const direct = rc.path ? await fs.readFile(path.join(repoRoot, rc.path)).catch(() => null) : null;
+    if (direct) { aTargets.push({ receipt: rc, targetPath: rc.path, prior: direct }); continue; }
+    const paths = rc.path ? (manifest.get(identityKey(rc)) || []) : [];
+    if (paths.length !== 1) continue;
+    const prior = await fs.readFile(path.join(repoRoot, paths[0])).catch(() => null);
+    if (prior) aTargets.push({ receipt: rc, targetPath: paths[0], prior });
+  }
+  // Several sources can target one paper. Count the target once and pick the same winner as
+  // promote-all, so the board can never disagree with what was actually published.
+  const byTarget = new Map();
+  for (const item of aTargets) {
+    const list = byTarget.get(item.targetPath) || [];
+    list.push(item); byTarget.set(item.targetPath, list);
+  }
+  for (const list of byTarget.values()) {
+    const winner = list.reduce((w, c) => better(c.receipt, w.receipt) ? c : w);
+    if (sha(winner.prior) !== winner.receipt.markdownSha256) continue;
+    promoted++;
+    (regions[winner.receipt.area] ||= { captured: 0, withAnswers: 0, A: 0, C: 0, promoted: 0 }).promoted++;
   }
   const stop = await fs.readFile(path.join(workDir, 'STOP'), 'utf8').then(() => true).catch(() => false);
   return { generatedAt: new Date(now).toISOString(), stopped: stop, speed: speed(times, now),
