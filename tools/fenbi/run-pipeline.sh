@@ -53,6 +53,19 @@ while [ ! -e "$STOP" ]; do
     if git -C "$REPO" push -q origin HEAD; then log "pushed/up-to-date"; else log "push failed; retry next cycle"; fi
   fi
 
+  # Opt-in content-only auto-main. Default OFF; any failure is logged and never stops the loop.
+  if [ "${AUTO_MAIN_CONTENT:-0}" = 1 ] && [ -n "${AUTO_MAIN_SETTINGS:-}" ] && [ -n "${AUTO_MAIN_CREDENTIALS:-}" ] && [ -n "${AUTO_MAIN_TRUSTED_ROOT:-}" ]; then
+    if [ -f "$AUTO_MAIN_SETTINGS" ] && [ -f "$AUTO_MAIN_CREDENTIALS" ] && [ -d "$AUTO_MAIN_TRUSTED_ROOT" ]; then
+      amr=$(node src/auto-main-run.mjs --repo "$REPO" --source-repo "$REPO" \
+        --source-ref "${AUTO_MAIN_SOURCE_REF:-integ/2026-10-19}" \
+        --settings "$AUTO_MAIN_SETTINGS" --credentials "$AUTO_MAIN_CREDENTIALS" \
+        --trusted-root "$AUTO_MAIN_TRUSTED_ROOT" ${AUTO_MAIN_APPLY:+--apply} 2>&1) || true
+      log "auto-main $amr"
+    else
+      log "auto-main skipped: settings/credentials/trusted-root missing"
+    fi
+  fi
+
   node src/pipeline-board.mjs "$WORK" "$REPO" "${PAPERS_DIR:-$WORK/papers}" | sed 's/^/board /' | tee -a "$WORK/pipeline.log"
   [ -e "$STOP" ] && break
   sleep "$INTERVAL"

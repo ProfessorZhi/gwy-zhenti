@@ -1,24 +1,21 @@
 #!/usr/bin/env node
 /**
  * Content-only projection: copy a small, explicitly allowlisted set of audited papers
- * from a mixed integration branch onto a fresh origin/main commit.
+ * from a fixed integration commit onto a fresh origin/main commit.
  *
- * The projection never checks out or copies the source branch tree. It reads only the
- * allowlisted paper blobs, their referenced in-repo images, and the manifest rows for
- * those papers, then builds a new tree on top of origin/main with git plumbing.
+ * Reads only the allowlisted paper blobs, their referenced in-repo images and the
+ * manifest rows for those papers, then builds a new tree on top of origin/main with
+ * git plumbing. It never checks out or copies the source tree.
  *
  * Fail closed on:
  *  - missing / forged QA or rights evidence (trusted root, real file, sha256 bytes);
- *  - missing sourceId or blob sha binding;
- *  - duplicate sourceId or duplicate area/year/subject/variant among the selection;
+ *  - missing sourceId or blob sha binding, or manifest counts not matching the paper;
+ *  - duplicate sourceId or duplicate area/year/subject/variant within the selection;
  *  - a path already on main whose blob differs from the credential's baseBlobSha256;
  *  - symlinked, escaping, external or cross-directory images;
- *  - any non-content path in the projected tree;
- *  - origin/main moving away from expectedMainSha;
- *  - zero eligible papers (no empty commit is ever created).
+ *  - non-content paths, unreadable main manifest, origin/main race, zero eligible papers.
  *
- * `apply: true` only writes a local ref. Pushing is left to auto-main-content.mjs and is
- * itself disabled unless AUTO_MAIN_CONTENT=1 and the user settings allow it.
+ * dry-run (apply=false) reads and validates only; it writes no Git objects and no refs.
  */
 import fs from 'node:fs/promises';
 import os from 'node:os';
@@ -31,6 +28,7 @@ import { loadCredentials, verifyTrustedFile } from './auto-main-content.mjs';
 const CONTENT = /^(?:国考|省考|图片)\//u;
 const MANIFEST = 'catalog/manifest.jsonl';
 const PAPER = /^(?:国考|省考)\/.+\.md$/u;
+const SHA = /^[0-9a-f]{40}$/u;
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 
 function git (repo, args, opts = {}) {
@@ -60,8 +58,7 @@ function parseRows (text) {
   });
 }
 
-/** Validate one allowlisted paper and return the parts needed for projection. */
-async function inspectPaper ({sourceRepo, sourceHead, paperPath, grant, trustedRoot, mainBlobSha}) {
+async function inspectPaper ({sourceRepo, sourceHead, paperPath, grant, trustedRoot, mainBlobSha, sourceRow}) {
   const reasons = [];
   if (!PAPER.test(paperPath) || paperPath.split('/').includes('..')) return {reasons: ['paper-path-invalid:' + paperPath]};
   const info = blobInfo(sourceRepo, sourceHead, paperPath);
@@ -69,6 +66,7 @@ async function inspectPaper ({sourceRepo, sourceHead, paperPath, grant, trustedR
   if (info.mode === '120000') return {reasons: ['paper-is-symlink:' + paperPath]};
   if (info.type !== 'blob' || !/^100644$|^100755$/u.test(info.mode)) return {reasons: ['paper-not-regular-file:' + paperPath]};
   if (!grant) return {reasons: ['rights-credential-missing:' + paperPath]};
+  if (!sourceRow) return {reasons: ['manifest-row-missing:' + paperPath]};
   const bytes = readBlob(sourceRepo, sourceHead, paperPath);
   const blobSha = sha(bytes);
   if (grant.paperPath !== paperPath) reasons.push('rights-path-mismatch:' + paperPath);
@@ -81,7 +79,8 @@ async function inspectPaper ({sourceRepo, sourceHead, paperPath, grant, trustedR
   if (!['copyright-holder-license', 'copyright-holder-written-permission', 'official-public-release', 'public-domain'].includes(basis)) reasons.push('rights-basis-missing:' + paperPath);
   reasons.push(...await verifyTrustedFile(trustedRoot, grant.rights?.evidencePath, grant.rights?.evidenceSha256, 'rights-evidence', paperPath));
   if (mainBlobSha && grant.baseBlobSha256 !== mainBlobSha) reasons.push('base-content-conflict:' + paperPath);
-  const parsed = parsePaperMarkdown(bytes.toString('utf8'), {isXingce: /行测/u.test(paperPath), row: {}});
+  // Manifest counts are part of the evidence: a mismatch rejects the paper.
+  const parsed = parsePaperMarkdown(bytes.toString('utf8'), {isXingce: /行测/u.test(paperPath), row: sourceRow});
   reasons.push(...parsed.reasons.map(r => `${r}:${paperPath}`));
   return {reasons, info, bytes, blobSha, parsed};
 }
@@ -113,87 +112,98 @@ async function collectAssets ({sourceRepo, sourceHead, paperPath, md}) {
 
 /**
  * Build a content-only commit on top of origin/main from allowlisted papers.
- * Returns {ok, eligible, rejected, commit, files, reasons}. Writes nothing unless apply.
+ * Returns {ok, eligible, rejected, commit, files, reasons}. dry-run writes nothing.
  */
 export async function buildProjection ({
   repo, sourceRepo = repo, sourceHead, expectedMainSha,
   papers = [], credentialsPath, trustedRoot, apply = false, env = process.env
 }) {
-  const reasons = [];
   const rejected = [];
   if (env.AUTO_MAIN_CONTENT !== '1') return {ok: false, stage: 'disabled', reasons: ['auto-main-disabled'], eligible: 0, rejected};
+  if (typeof sourceHead !== 'string' || !SHA.test(sourceHead)) return {ok: false, stage: 'source', reasons: ['source-head-not-pinned-sha'], eligible: 0, rejected};
   if (!Array.isArray(papers) || papers.length === 0) return {ok: false, stage: 'selection', reasons: ['no-allowlisted-papers'], eligible: 0, rejected};
   try { git(repo, ['fetch', '-q', 'origin', 'main:refs/remotes/origin/main']); } catch (e) { return {ok: false, stage: 'remote', reasons: ['origin-main-unreadable:' + (e.code || e.message)], eligible: 0, rejected}; }
   let mainSha;
   try { mainSha = git(repo, ['rev-parse', 'refs/remotes/origin/main']).trim(); } catch { return {ok: false, stage: 'remote', reasons: ['origin-main-missing'], eligible: 0, rejected}; }
   if (!expectedMainSha || mainSha !== expectedMainSha) return {ok: false, stage: 'race', reasons: ['main-moved'], eligible: 0, rejected};
-  if (sourceHead && /\s|\.\./u.test(sourceHead)) return {ok: false, stage: 'source', reasons: ['source-head-invalid'], eligible: 0, rejected};
-  try { git(sourceRepo, ['rev-parse', '--verify', `${sourceHead}^{commit}`]); } catch { return {ok: false, stage: 'source', reasons: ['source-head-missing'], eligible: 0, rejected}; }
+  // The source must be the exact commit the caller pinned, not a moving branch name.
+  let resolvedSource;
+  try { resolvedSource = git(sourceRepo, ['rev-parse', '--verify', `${sourceHead}^{commit}`]).trim(); } catch { return {ok: false, stage: 'source', reasons: ['source-head-missing'], eligible: 0, rejected}; }
+  if (resolvedSource !== sourceHead) return {ok: false, stage: 'source', reasons: ['source-head-not-exact'], eligible: 0, rejected};
   const credentials = await loadCredentials(credentialsPath);
   if (!credentials.ok) return {ok: false, stage: 'rights', reasons: [credentials.reason], eligible: 0, rejected};
 
-  const sourceManifestText = (() => {
-    try { return readBlob(sourceRepo, sourceHead, MANIFEST).toString('utf8'); } catch { return ''; }
-  })();
-  const sourceRows = sourceManifestText ? parseRows(sourceManifestText) : [];
+  let sourceRows = [];
+  try { sourceRows = parseRows(readBlob(sourceRepo, sourceHead, MANIFEST).toString('utf8')); }
+  catch (e) { return {ok: false, stage: 'manifest', reasons: ['source-manifest-unreadable:' + (e.code || e.message)], eligible: 0, rejected}; }
   const sourceRowByPath = new Map(sourceRows.filter(r => typeof r?.path === 'string').map(r => [r.path, r]));
+
+  // An absent main manifest is allowed as an explicit empty base; an unreadable/corrupt one is not.
   let mainRows = [];
-  try { mainRows = parseRows(readBlob(repo, mainSha, MANIFEST).toString('utf8')); } catch { mainRows = []; }
-  const mainRowByPath = new Map(mainRows.filter(r => typeof r?.path === 'string').map(r => [r.path, r]));
+  const mainManifestInfo = blobInfo(repo, mainSha, MANIFEST);
+  if (mainManifestInfo) {
+    try { mainRows = parseRows(readBlob(repo, mainSha, MANIFEST).toString('utf8')); }
+    catch (e) { return {ok: false, stage: 'manifest', reasons: ['main-manifest-unreadable:' + (e.code || e.message)], eligible: 0, rejected}; }
+  }
 
   const seenIdentity = new Map(), seenSourceId = new Map();
-  const eligible = [], assetsByPath = new Map();
+  let eligible = [];
   for (const entry of papers) {
     const paperPath = typeof entry === 'string' ? entry : entry?.path;
     if (!paperPath) { rejected.push({path: null, reasons: ['paper-path-missing']}); continue; }
     const grant = credentials.grants.find(g => g?.paperPath === paperPath);
     const mainInfo = blobInfo(repo, mainSha, paperPath);
     const mainBlobSha = mainInfo && mainInfo.type === 'blob' ? mainInfo.oid : null;
+    const sourceRow = sourceRowByPath.get(paperPath);
     let inspected;
-    try { inspected = await inspectPaper({sourceRepo, sourceHead, paperPath, grant, trustedRoot, mainBlobSha}); }
+    try { inspected = await inspectPaper({sourceRepo, sourceHead, paperPath, grant, trustedRoot, mainBlobSha, sourceRow}); }
     catch (e) { rejected.push({path: paperPath, reasons: ['inspect-failed:' + (e.code || e.message)]}); continue; }
     if (inspected.reasons.length) { rejected.push({path: paperPath, reasons: inspected.reasons}); continue; }
-
-    const row = sourceRowByPath.get(paperPath);
-    if (!row?.sourceId) { rejected.push({path: paperPath, reasons: ['manifest-row-missing-or-no-sourceid']}); continue; }
+    const row = sourceRow;
+    if (!row.sourceId) { rejected.push({path: paperPath, reasons: ['manifest-row-no-sourceid']}); continue; }
     if (row.sourceId !== grant.sourceId) { rejected.push({path: paperPath, reasons: ['rights-sourceid-mismatch']}); continue; }
     if (row.sha256 !== inspected.blobSha || row.bytes !== inspected.bytes.length) {
       rejected.push({path: paperPath, reasons: ['manifest-sha256-or-bytes-mismatch']}); continue;
     }
     const identity = [row.area, row.year, row.subject, row.variant ?? row.paper_type].join('\u0000');
-    const identityKey = identity + '\u0000' + row.sourceId;
-    if (seenIdentity.has(identity)) rejected.push({path: paperPath, reasons: ['duplicate-paper-identity:' + seenIdentity.get(identity)]});
-    if (seenSourceId.has(row.sourceId)) rejected.push({path: paperPath, reasons: ['duplicate-source-id:' + seenSourceId.get(row.sourceId)]});
-    if (seenIdentity.has(identity) || seenSourceId.has(row.sourceId)) continue;
+    if (seenIdentity.has(identity)) { rejected.push({path: paperPath, reasons: ['duplicate-paper-identity:' + seenIdentity.get(identity)]}); continue; }
+    if (seenSourceId.has(row.sourceId)) { rejected.push({path: paperPath, reasons: ['duplicate-source-id:' + seenSourceId.get(row.sourceId)]}); continue; }
     seenIdentity.set(identity, paperPath); seenSourceId.set(row.sourceId, paperPath);
-
     const collected = await collectAssets({sourceRepo, sourceHead, paperPath, md: inspected.bytes.toString('utf8')});
     if (collected.reasons.length) { rejected.push({path: paperPath, reasons: collected.reasons}); continue; }
-    for (const asset of collected.assets) assetsByPath.set(asset.path, asset);
-    eligible.push({path: paperPath, row, bytes: inspected.bytes, blobSha: inspected.blobSha, grant, mainBlobSha});
+    eligible.push({path: paperPath, row, bytes: inspected.bytes, blobSha: inspected.blobSha, grant, mainBlobSha, assets: collected.assets});
   }
 
-  const duplicates = rejected.filter(r => r.reasons.some(x => x.startsWith('duplicate-')));
-  if (duplicates.length) {
+  if (rejected.some(r => r.reasons.some(x => x.startsWith('duplicate-')))) {
     return {ok: false, stage: 'conflict', reasons: ['duplicate-selection'], eligible: 0, rejected};
   }
   if (eligible.length === 0) return {ok: false, stage: 'selection', reasons: ['no-eligible-papers'], eligible: 0, rejected};
 
-  // Existing main content may only be replaced with an explicit base blob binding.
-  for (const item of eligible) {
+  // Drop anything that would overwrite existing main content without an explicit base blob.
+  eligible = eligible.filter(item => {
     if (item.mainBlobSha && item.grant.baseBlobSha256 !== item.mainBlobSha) {
       rejected.push({path: item.path, reasons: ['base-content-conflict']});
+      return false;
+    }
+    return true;
+  });
+  if (eligible.length === 0) return {ok: false, stage: 'conflict', reasons: ['no-eligible-papers-after-conflicts'], eligible: 0, rejected};
+
+  // Assets are collected only from papers that survived conflict filtering.
+  const assetsByPath = new Map();
+  for (const item of eligible) {
+    for (const asset of item.assets) {
+      const prior = assetsByPath.get(asset.path);
+      if (prior && prior.oid !== asset.oid) {
+        return {ok: false, stage: 'conflict', reasons: ['asset-conflict:' + asset.path], eligible: 0, rejected};
+      }
+      assetsByPath.set(asset.path, asset);
     }
   }
-  const blocked = new Set(rejected.map(r => r.path));
-  const finalEligible = eligible.filter(item => !blocked.has(item.path));
-  if (finalEligible.length === 0) return {ok: false, stage: 'conflict', reasons: ['no-eligible-papers-after-conflicts'], eligible: 0, rejected};
 
-  // Merge manifest: keep all main rows; replace only the selected paths.
   const projectedRows = new Map();
-  for (const item of finalEligible) {
-    const row = {...item.row, path: item.path, sha256: item.blobSha, bytes: item.bytes.length};
-    projectedRows.set(item.path, row);
+  for (const item of eligible) {
+    projectedRows.set(item.path, {...item.row, path: item.path, sha256: item.blobSha, bytes: item.bytes.length});
   }
   const mergedRows = [];
   const emitted = new Set();
@@ -203,15 +213,15 @@ export async function buildProjection ({
     } else mergedRows.push(row);
   }
   for (const [p, row] of projectedRows) if (!emitted.has(p)) mergedRows.push(row);
-  const manifestBytes = Buffer.from(mergedRows.map(r => JSON.stringify(r)).join('\n') + '\n');
   for (const row of mergedRows) {
     if (typeof row?.path !== 'string' || (!CONTENT.test(row.path) && row.path !== MANIFEST)) {
       return {ok: false, stage: 'manifest', reasons: ['manifest-non-content-row:' + row?.path], eligible: 0, rejected};
     }
   }
+  const manifestBytes = Buffer.from(mergedRows.map(r => JSON.stringify(r)).join('\n') + '\n');
 
   const files = new Map();
-  for (const item of finalEligible) files.set(item.path, item.bytes);
+  for (const item of eligible) files.set(item.path, item.bytes);
   for (const [assetPath, asset] of assetsByPath) files.set(assetPath, asset.bytes);
   files.set(MANIFEST, manifestBytes);
   for (const file of files.keys()) {
@@ -220,7 +230,13 @@ export async function buildProjection ({
     }
   }
 
-  // Build an isolated index and commit; never touch the caller's index or worktree.
+  const summary = {
+    base: mainSha, eligible: eligible.length, papers: eligible.map(x => x.path),
+    files: [...files.keys()].sort(), rejected
+  };
+  // dry-run: no objects, no refs, no commit.
+  if (!apply) return {ok: true, stage: 'dry-run', ...summary};
+
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'content-project-'));
   const indexFile = path.join(tmp, 'index');
   const envWithIndex = {...process.env, GIT_INDEX_FILE: indexFile};
@@ -234,12 +250,11 @@ export async function buildProjection ({
     const baseTree = git(repo, ['rev-parse', `${mainSha}^{tree}`]).trim();
     if (tree === baseTree) return {ok: false, stage: 'projection', reasons: ['empty-projection'], eligible: 0, rejected};
     const commit = git(repo, ['commit-tree', tree, '-p', mainSha, '-m', 'project(fenbi): audited content-only projection'], {env: envWithIndex}).trim();
-    if (apply) git(repo, ['update-ref', 'refs/heads/s3/content-projection', commit]);
-    return {
-      ok: true, stage: apply ? 'committed' : 'dry-run', base: mainSha, commit,
-      eligible: finalEligible.length, papers: finalEligible.map(x => x.path),
-      files: [...files.keys()].sort(), rejected
-    };
+    // Per-commit ref with a zero-old-value CAS; never clobber another batch's ref.
+    const ref = `refs/heads/s3/content-projection-${commit.slice(0, 12)}`;
+    try { git(repo, ['update-ref', ref, commit, '0'.repeat(40)]); }
+    catch { return {ok: false, stage: 'ref', reasons: ['projection-ref-exists'], eligible: 0, rejected}; }
+    return {ok: true, stage: 'committed', commit, ref, ...summary};
   } finally {
     await fs.rm(tmp, {recursive: true, force: true});
   }

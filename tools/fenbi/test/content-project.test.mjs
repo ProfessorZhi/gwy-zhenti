@@ -263,3 +263,150 @@ test('projection is disabled without AUTO_MAIN_CONTENT=1', async () => {
   assert.equal(plan.stage, 'disabled');
   assert.equal(plan.eligible, 0);
 });
+
+import { runAutoMain } from '../src/auto-main-run.mjs';
+
+test('P1 unreadable main manifest fails closed instead of clearing it', async () => {
+  const {root, repo} = await setup();
+  await put(repo, 'catalog/manifest.jsonl', '{not json}\n');
+  git(repo, ['add', '-A']); git(repo, ['commit', '-q', '-m', 'corrupt manifest']);
+  git(repo, ['push', '-q', 'origin', 'HEAD:main']);
+  git(repo, ['fetch', '-q', 'origin', 'main']);
+  const trustedRoot = await trusted(root, 'qa', 'license');
+  const sourceHead = await addIntegration({repo, papers: [{path: P1, sourceId: 'zj1', content: paper(), asset: {path: 'assets/图1.png', content: Buffer.from('png')}}]});
+  const credentialsPath = path.join(root, 'creds-p1.json');
+  await fs.writeFile(credentialsPath, JSON.stringify({schemaVersion: 1, grants: [grant(P1, Buffer.from(paper()), trustedRoot, {sourceId: 'zj1'})]}));
+  const plan = await buildProjection({
+    repo, sourceRepo: repo, sourceHead, papers: [P1], credentialsPath,
+    expectedMainSha: git(repo, ['rev-parse', 'origin/main']), trustedRoot: trustedRoot.dir, env: {AUTO_MAIN_CONTENT: '1'}
+  });
+  assert.equal(plan.ok, false);
+  assert.ok(plan.reasons.some(r => r.startsWith('main-manifest-unreadable')), JSON.stringify(plan));
+});
+
+test('P2 assets of a base-conflicted paper never enter the projection', async () => {
+  const {root, repo} = await setup();
+  const v1 = paper();
+  await put(repo, P2, v1);
+  await put(repo, 'catalog/manifest.jsonl', JSON.stringify(row(P2, 'zj2', Buffer.from(v1))) + '\n');
+  git(repo, ['add', '-A']); git(repo, ['commit', '-q', '-m', 'main p2']);
+  git(repo, ['push', '-q', 'origin', 'HEAD:main']);
+  git(repo, ['fetch', '-q', 'origin', 'main']);
+  const trustedRoot = await trusted(root, 'qa', 'license');
+  const p1Content = paper().replace('assets/图1.png', 'assets/p1.png');
+  const p2Content = (v1 + '\n修改').replace('assets/图1.png', 'assets/p2.png');
+  const sourceHead = await addIntegration({repo, papers: [
+    {path: P1, sourceId: 'zj1', content: p1Content, asset: {path: 'assets/p1.png', content: Buffer.from('p1')}},
+    {path: P2, sourceId: 'zj2', content: p2Content, asset: {path: 'assets/p2.png', content: Buffer.from('p2')}}
+  ]});
+  const credentialsPath = path.join(root, 'creds-p2.json');
+  await fs.writeFile(credentialsPath, JSON.stringify({schemaVersion: 1, grants: [
+    grant(P1, Buffer.from(p1Content), trustedRoot, {sourceId: 'zj1'}),
+    grant(P2, Buffer.from(p2Content), trustedRoot, {sourceId: 'zj2'})
+  ]}));
+  const plan = await buildProjection({
+    repo, sourceRepo: repo, sourceHead, papers: [P1, P2], credentialsPath,
+    expectedMainSha: git(repo, ['rev-parse', 'origin/main']), trustedRoot: trustedRoot.dir, apply: true, env: {AUTO_MAIN_CONTENT: '1'}
+  });
+  assert.equal(plan.ok, true, JSON.stringify(plan));
+  assert.equal(plan.eligible, 1);
+  assert.ok(plan.files.includes('省考/浙江/2020/assets/p1.png'));
+  assert.ok(!plan.files.includes('省考/浙江/2021/assets/p2.png'));
+  assert.ok(!plan.files.includes(P2));
+});
+
+test('P3 a branch name is not accepted as a pinned source head', async () => {
+  const {root, repo} = await setup();
+  const trustedRoot = await trusted(root, 'qa', 'license');
+  await addIntegration({repo, papers: [{path: P1, sourceId: 'zj1', content: paper(), asset: {path: 'assets/图1.png', content: Buffer.from('png')}}]});
+  const credentialsPath = path.join(root, 'creds-p3.json');
+  await fs.writeFile(credentialsPath, JSON.stringify({schemaVersion: 1, grants: [grant(P1, Buffer.from(paper()), trustedRoot, {sourceId: 'zj1'})]}));
+  const plan = await buildProjection({
+    repo, sourceRepo: repo, sourceHead: 'integ', papers: [P1], credentialsPath,
+    expectedMainSha: git(repo, ['rev-parse', 'origin/main']), trustedRoot: trustedRoot.dir, env: {AUTO_MAIN_CONTENT: '1'}
+  });
+  assert.equal(plan.ok, false);
+  assert.ok(plan.reasons.includes('source-head-not-pinned-sha'));
+});
+
+test('P4 manifest declared_questions mismatch rejects the paper', async () => {
+  const {root, repo} = await setup();
+  const trustedRoot = await trusted(root, 'qa', 'license');
+  const sourceHead = await addIntegration({repo, papers: [{path: P1, sourceId: 'zj1', content: paper(), asset: {path: 'assets/图1.png', content: Buffer.from('png')}}]});
+  // Rewrite the manifest on the integration commit with a wrong declared count.
+  const badRow = row(P1, 'zj1', Buffer.from(paper()));
+  badRow.declared_questions = 9;
+  git(repo, ['checkout', '-q', 'integ']);
+  await put(repo, 'catalog/manifest.jsonl', JSON.stringify(badRow) + '\n');
+  git(repo, ['commit', '-q', '-am', 'bad counts']);
+  const badHead = git(repo, ['rev-parse', 'HEAD']);
+  const credentialsPath = path.join(root, 'creds-p4.json');
+  await fs.writeFile(credentialsPath, JSON.stringify({schemaVersion: 1, grants: [grant(P1, Buffer.from(paper()), trustedRoot, {sourceId: 'zj1'})]}));
+  const plan = await buildProjection({
+    repo, sourceRepo: repo, sourceHead: badHead, papers: [P1], credentialsPath,
+    expectedMainSha: git(repo, ['rev-parse', 'origin/main']), trustedRoot: trustedRoot.dir, env: {AUTO_MAIN_CONTENT: '1'}
+  });
+  assert.equal(plan.ok, false);
+  assert.ok(plan.rejected.some(r => r.path === P1 && r.reasons.some(x => x.startsWith('manifest-questions-mismatch'))), JSON.stringify(plan));
+});
+
+test('P5 dry-run writes no objects and no refs', async () => {
+  const {root, repo} = await setup();
+  const trustedRoot = await trusted(root, 'qa', 'license');
+  const sourceHead = await addIntegration({repo, papers: [{path: P1, sourceId: 'zj1', content: paper(), asset: {path: 'assets/图1.png', content: Buffer.from('png')}}]});
+  const credentialsPath = path.join(root, 'creds-p5.json');
+  await fs.writeFile(credentialsPath, JSON.stringify({schemaVersion: 1, grants: [grant(P1, Buffer.from(paper()), trustedRoot, {sourceId: 'zj1'})]}));
+  const refsBefore = git(repo, ['for-each-ref', 'refs/heads/s3/']);
+  const objectsBefore = git(repo, ['count-objects', '-v']).split('\n')[0];
+  const plan = await buildProjection({
+    repo, sourceRepo: repo, sourceHead, papers: [P1], credentialsPath,
+    expectedMainSha: git(repo, ['rev-parse', 'origin/main']), trustedRoot: trustedRoot.dir, apply: false, env: {AUTO_MAIN_CONTENT: '1'}
+  });
+  assert.equal(plan.ok, true, JSON.stringify(plan));
+  assert.equal(plan.stage, 'dry-run');
+  assert.equal(plan.commit, undefined);
+  assert.equal(git(repo, ['for-each-ref', 'refs/heads/s3/']), refsBefore);
+  assert.equal(git(repo, ['count-objects', '-v']).split('\n')[0], objectsBefore);
+});
+
+test('P6 default-OFF runner does not push and uncredentialed selection stays 0', async () => {
+  const {root, bare, repo} = await setup();
+  const trustedRoot = await trusted(root, 'qa', 'license');
+  await addIntegration({repo, papers: [{path: P1, sourceId: 'zj1', content: paper(), asset: {path: 'assets/图1.png', content: Buffer.from('png')}}]});
+  const settingsPath = path.join(root, 'settings.json');
+  const credentialsPath = path.join(root, 'creds-run.json');
+  await fs.writeFile(settingsPath, JSON.stringify({allowAutoMain: true}));
+  await fs.writeFile(credentialsPath, JSON.stringify({schemaVersion: 1, grants: [grant(P1, Buffer.from(paper()), trustedRoot, {sourceId: 'zj1'})]}));
+  const mainBefore = git(bare, ['rev-parse', 'refs/heads/main']);
+
+  const off = await runAutoMain({repo, sourceRepo: repo, sourceRef: 'integ', settingsPath, credentialsPath, trustedRoot: trustedRoot.dir, apply: true, env: {}});
+  assert.equal(off.stage, 'disabled');
+  assert.equal(git(bare, ['rev-parse', 'refs/heads/main']), mainBefore);
+
+  await fs.writeFile(credentialsPath, JSON.stringify({schemaVersion: 1, grants: []}));
+  const none = await runAutoMain({repo, sourceRepo: repo, sourceRef: 'integ', settingsPath, credentialsPath, trustedRoot: trustedRoot.dir, apply: true, env: {AUTO_MAIN_CONTENT: '1'}});
+  assert.equal(none.ok, false);
+  assert.equal(none.eligible, 0);
+  assert.equal(git(bare, ['rev-parse', 'refs/heads/main']), mainBefore);
+});
+
+test('P7 runner projects one audited paper in an isolated worktree and fast-forwards bare main', async () => {
+  const {root, bare, repo} = await setup();
+  const trustedRoot = await trusted(root, 'qa', 'license');
+  const sourceHead = await addIntegration({repo, papers: [
+    {path: P1, sourceId: 'zj1', content: paper(), asset: {path: 'assets/图1.png', content: Buffer.from('png')}},
+    {path: P2, sourceId: 'zj2', content: paper()}
+  ]});
+  const settingsPath = path.join(root, 'settings.json');
+  const credentialsPath = path.join(root, 'creds-run2.json');
+  await fs.writeFile(settingsPath, JSON.stringify({allowAutoMain: true}));
+  await fs.writeFile(credentialsPath, JSON.stringify({schemaVersion: 1, grants: [grant(P1, Buffer.from(paper()), trustedRoot, {sourceId: 'zj1'})]}));
+  const result = await runAutoMain({repo, sourceRepo: repo, sourceRef: 'integ', settingsPath, credentialsPath, trustedRoot: trustedRoot.dir, apply: true, env: {AUTO_MAIN_CONTENT: '1'}});
+  assert.equal(result.ok, true, JSON.stringify(result));
+  const files = git(bare, ['-c', 'core.quotepath=false', 'ls-tree', '-r', '--name-only', 'refs/heads/main']).split('\n');
+  assert.ok(files.includes(P1));
+  assert.ok(!files.includes(P2));
+  assert.ok(!files.includes('tools/y.mjs'));
+  assert.ok(files.includes('tools/x.mjs'));
+  assert.equal(git(bare, ['rev-parse', 'refs/heads/main']), result.projectionCommit);
+});
