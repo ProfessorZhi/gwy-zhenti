@@ -6,6 +6,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { parseRepositoryPaper, normalizeComparisonText } from './align.mjs';
 import { isCollectionStub, validateDocument } from './validate.mjs';
+import { RENDERED_COLLECTION_STUB } from './collection-stub.mjs';
 import { applyDecodeProof, bindDecodeProof, loadDecodeProof } from './decode-proof.mjs';
 import { renderCandidate } from './render.mjs';
 
@@ -19,7 +20,6 @@ const fp = q => [text(q.contentHtml), ...(q.options || []).flatMap(o => [o.label
 const isStub = q => isCollectionStub(text(q.contentHtml));
 // Fail closed on the exact strings checked by the final promotion preflight.
 // A legacy fallback can reintroduce a source collection stub after document validation.
-const RENDERED_COLLECTION_STUB = /题目正在全力以赴征集|网友未回忆起|题目缺失/u;
 const isUsable = q => q && !isStub(q) && (core(q.contentHtml).length >= 12 || /<(?:img|image)\b/iu.test(q.contentHtml || '') || (core(q.contentHtml).length > 0 && (q.options || []).filter(o => text(o.contentHtml)).length >= 2));
 const flat = value => typeof value === 'string' ? value.trim() : '';
 const hasExternalImage = value => /<(?:img|image)\b|!\[[^\]]*\]\(/iu.test(flat(value));
