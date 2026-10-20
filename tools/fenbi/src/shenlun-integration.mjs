@@ -30,7 +30,9 @@ export function collectShenlunAssets(doc = {}) {
 
 /**
  * Validate a shenlun document. Never requires options; explanation absence is legal.
- * `expected` may pin sourceId/sourceSha/documentSha; `assetRoot` enables hash checks.
+ * `expected` may pin sourceId/sourceSha/documentSha and independently observed
+ * prompt/answer counts; `assetRoot` enables hash checks. Count matching is not
+ * proof of semantic answer correctness or of publication rights.
  */
 export function validateShenlunDocument(doc, { expected = {}, assetRoot = null, assetManifest = null } = {}) {
   const problems = [];
@@ -42,6 +44,25 @@ export function validateShenlunDocument(doc, { expected = {}, assetRoot = null, 
   if (expected.sourceId != null && String(expected.sourceId) !== String(id.sourceId)) bad('expected-source-id-mismatch');
   if (id.paperId != null && String(id.paperId) !== String(id.sourceId)) bad('paper-id-mismatch');
   if (expected.sourceSha != null && String(expected.sourceSha) !== String(id.sourceSha)) bad('source-sha-mismatch');
+  // A visible DOM can contain several distinct prompts under one captured question.
+  // Only compare independently observed counts; never infer them from this same doc.
+  if (expected.observedPromptCount != null) {
+    if (!Number.isSafeInteger(expected.observedPromptCount) || expected.observedPromptCount < 1)
+      bad('observed-prompt-count-invalid');
+    else if ((doc.questions ?? []).length !== expected.observedPromptCount)
+      bad('observed-prompt-count-mismatch', {
+        expected: expected.observedPromptCount, represented: (doc.questions ?? []).length,
+      });
+  }
+  if (expected.observedAnswerCount != null) {
+    if (!Number.isSafeInteger(expected.observedAnswerCount) || expected.observedAnswerCount < 0)
+      bad('observed-answer-count-invalid');
+    else {
+      const represented = (doc.referenceAnswers ?? []).filter(a => a.state === 'observed').length;
+      if (represented !== expected.observedAnswerCount)
+        bad('observed-answer-count-mismatch', { expected: expected.observedAnswerCount, represented });
+    }
+  }
 
   if (assetRoot) {
     const manifest = new Map((assetManifest ?? []).map((a) => [a.ref, a.sha256]));
@@ -72,17 +93,23 @@ export function ingestShenlun({ doc, raw, name, dest, write = false, expected = 
       sourceSha256: sourceSha, markdownSha256: null, write, dest,
     };
   }
-  const verdict = validateShenlunDocument(parsed);
+  const verdict = validateShenlunDocument(parsed, { expected });
   const markdown = renderShenlunMarkdown(parsed);
   const blockers = verdict.problems.map((p) => `${p.code}`);
-  // A shenlun paper is never grade A while cloud storage is blocked: it may be a local
-  // candidate, but promotion is gated separately.
+  // Grade A means local structural checks only, NOT independent content QA or
+  // permission to publish. Rights remain a separate fail-closed promotion gate.
   const grade = blockers.length ? 'C' : 'A';
   return {
     name, subject: SHENLUN_SUBJECT,
     sourceId: String(parsed.identity.sourceId),
     area: parsed.identity.area, year: Number(parsed.identity.year), variant: parsed.identity.variant,
     grade, issues: blockers,
+    boundaryEvidence: {
+      promptCount: expected.observedPromptCount ?? null,
+      answerCount: expected.observedAnswerCount ?? null,
+      status: blockers.some(code => code.includes('count-')) ? 'mismatch' :
+        (expected.observedPromptCount == null || expected.observedAnswerCount == null ? 'unverified' : 'counts-match-only'),
+    },
     counts: {
       materials: parsed.materials.length,
       questions: parsed.questions.length,
