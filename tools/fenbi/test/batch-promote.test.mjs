@@ -82,3 +82,13 @@ test('wrong prior hash and altered candidate are rejected',async t=>{
   await fs.writeFile(path.join(g.candidateDir,'paper.md'),'altered');
   await assert.rejects(preparePromotion(g),/candidate-sha-mismatch/);
 });
+
+
+test('a nonobjective collection notice is blocked even with matching SHA and synthetic rights',async t=>{
+  const f=await fixture(t);
+  const altered=f.md.replace('测试题干。','非客观题，请交卷后查看参考解析估分');
+  assert.notEqual(altered,f.md);
+  await fs.writeFile(path.join(f.candidateDir,'paper.md'),altered);
+  await fs.writeFile(path.join(f.candidateDir,'receipt.json'),json({...f.receipt,markdownSha256:sha(altered)}));
+  await assert.rejects(preparePromotion(f),/source-collection-stub-remains/);
+});
