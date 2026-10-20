@@ -2,13 +2,15 @@
 /**
  * Fail-closed gate for automatically fast-forwarding pure question-bank content to main.
  *
- * Passes only when the diff relative to the base ref changes 国考/, 省考/, 图片/ or
- * catalog/manifest.jsonl and nothing else, and every changed paper:
- *   - has exactly one manifest row with matching path, sha256, bytes, questions and answers;
- *   - has contiguous 题号, non-placeholder bodies, per-question answer and explanation;
- *   - references only in-repo images (realpath inside the repo, no scheme/absolute/..);
- * Code, docs, deletions and renames never pass. Rights are checked separately by
- * auto-main-content.mjs; this gate never treats "user chose A" as a rights grant.
+ * Supports both in-repo paper schemas:
+ *   A: question section + "A. ..." options, answers in independent <details> blocks;
+ *   B: "- **A**." options, "**答案**：" + "**解析**" / "来源参考解析" inside <details>.
+ * Answers are bound per question number from that question's own <details> block; the last
+ * question never absorbs the answer area, and option letters inside 材料/申论 answers never
+ * count as xingce options.
+ *
+ * Code, docs, deletions, renames, symlinks, image-only or manifest-only diffs never pass.
+ * Rights are checked separately by auto-main-content.mjs.
  */
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -29,27 +31,67 @@ function changedPaths (repo, base) {
   });
 }
 
-export function checkPaperMarkdown (md, row, {isXingce = /行测/u.test(row?.path || '')} = {}) {
+function answerParts (text) {
+  const answer = /(?:【答案】|(?:\*\*)?参考答案[^\n]*|(?:\*\*)?答案(?:\*\*)?\s*[:：])\s*([\s\S]*?)(?=\n\s*(?:【解析】|\*\*解析\*\*|(?:\*\*)?来源参考解析|解析\s*[:：])|$)/u.exec(text);
+  const explanation = /(?:【解析】|\*\*解析\*\*|(?:\*\*)?来源参考解析\s*[:：]?|解析\s*[:：])\s*([\s\S]*)/u.exec(text);
+  return {answer: answer?.[1]?.trim() || '', explanation: explanation?.[1]?.trim() || ''};
+}
+
+function optionCount (body) {
+  const schemaA = [...body.matchAll(/^[A-D][.、．)]\s*\S/gmu)].length;
+  const schemaB = [...body.matchAll(/^\s*[-*]\s*\*\*[A-D]\*\*\s*[.、．)]?\s*\S/gmu)].length;
+  return schemaA + schemaB;
+}
+
+/** Parse one paper. Returns {questions, answers, explanations, reasons}. */
+export function parsePaperMarkdown (md, {isXingce = false, row = {}} = {}) {
   const reasons = [];
-  const heads = [...md.matchAll(/^#{2,3}\s*第\s*(\d+)\s*题[^\n]*$/gmu)]
+  const detailsStart = md.search(/^<details\b/mu);
+  const answerHeading = md.search(/^##\s*(?:参考答案|答案与解析|答案)\s*$/mu);
+  const qHeading = md.search(/^##\s*题目\s*$/mu);
+  const ends = [detailsStart, answerHeading].filter(index => index >= 0);
+  const regionEnd = ends.length ? Math.min(...ends) : md.length;
+  const region = md.slice(qHeading >= 0 ? qHeading : 0, regionEnd);
+  const heads = [...region.matchAll(/^#{2,3}\s*第\s*(\d+)\s*题\s*$/gmu)]
     .map(m => ({n: Number(m[1]), start: m.index + m[0].length}));
-  if (heads.length === 0) return ['paper-no-questions'];
+  if (heads.length === 0) return {questions: 0, answers: 0, explanations: 0, reasons: ['paper-no-questions']};
   const numbers = heads.map(h => h.n).sort((a, b) => a - b);
   if (numbers.some((n, i) => n !== i + 1)) reasons.push('question-numbers-not-contiguous');
-  let answers = 0;
-  heads.forEach((head, i) => {
-    const body = md.slice(head.start, heads[i + 1]?.start ?? md.length);
+
+  const details = new Map();
+  for (const m of md.matchAll(/^<details>\s*<summary>\s*第\s*(\d+)\s*题\s*<\/summary>([\s\S]*?)^<\/details>/gmu)) {
+    const n = Number(m[1]);
+    if (details.has(n)) reasons.push(`duplicate-answer-block:${n}`);
+    else details.set(n, m[2]);
+  }
+
+  let answers = 0, explanations = 0;
+  for (const [index, head] of heads.entries()) {
+    const body = region.slice(head.start, heads[index + 1]?.start ?? region.length);
     if (PLACEHOLDER.test(body)) reasons.push(`placeholder-question:${head.n}`);
-    if (!/【答案】|答案\s*[:：]/u.test(body)) reasons.push(`missing-answer:${head.n}`);
-    else answers++;
-    if (!/【解析】|解析\s*[:：]/u.test(body)) reasons.push(`missing-explanation:${head.n}`);
-    const options = [...body.matchAll(/^\s*[A-D][.、．)]\s*\S/gmu)].length;
-    if (isXingce && options < 2) reasons.push(`options-missing:${head.n}`);
-    if (!isXingce && options > 0) reasons.push(`shenlun-options-present:${head.n}`);
-  });
-  if (Number.isInteger(row?.questions) && row.questions !== heads.length) reasons.push('manifest-questions-mismatch');
-  if (Number.isInteger(row?.answers) && row.answers !== answers) reasons.push('manifest-answers-mismatch');
-  return [...new Set(reasons)];
+    const own = details.get(head.n);
+    if (detailsStart >= 0 && !own) reasons.push(`missing-answer-block:${head.n}`);
+    const inline = answerParts(body);
+    const sourced = own ? answerParts(own) : {answer: '', explanation: ''};
+    const answer = inline.answer || sourced.answer;
+    const explanation = inline.explanation || sourced.explanation;
+    if (!answer) reasons.push(`missing-answer:${head.n}`); else answers++;
+    if (!explanation) reasons.push(`missing-explanation:${head.n}`); else explanations++;
+    if (isXingce && optionCount(body) < 2) reasons.push(`options-missing:${head.n}`);
+  }
+  for (const n of details.keys()) if (!numbers.includes(n)) reasons.push(`orphan-answer-block:${n}`);
+
+  const declared = Number.isInteger(row.declared_questions) ? row.declared_questions
+    : Number.isInteger(row.questions) ? row.questions : null;
+  const answerBlocks = Number.isInteger(row.answer_blocks) ? row.answer_blocks
+    : Number.isInteger(row.answers) ? row.answers : null;
+  if (declared !== null && declared !== heads.length) reasons.push('manifest-questions-mismatch');
+  if (answerBlocks !== null && answerBlocks !== answers) reasons.push('manifest-answers-mismatch');
+  return {questions: heads.length, answers, explanations, reasons: [...new Set(reasons)]};
+}
+
+export function checkPaperMarkdown (md, row, {isXingce = /行测/u.test(row?.path || '')} = {}) {
+  return parsePaperMarkdown(md, {isXingce, row}).reasons;
 }
 
 async function imageReasons (repo, repoReal, paperFile, md) {
@@ -87,7 +129,7 @@ export async function readManifest (repo) {
   return {rows, reasons};
 }
 
-export async function checkContent ({repo, base = 'origin/main', credentialPaperPaths = null}) {
+export async function checkContent ({repo, base = 'origin/main'}) {
   const reasons = [];
   let repoReal;
   try { repoReal = await fs.realpath(repo); } catch { return {ok: false, changedFiles: 0, papers: 0, reasons: ['repo-unreadable'], reasonCount: 1}; }
@@ -98,8 +140,15 @@ export async function checkContent ({repo, base = 'origin/main', credentialPaper
     if (status !== 'A' && status !== 'M') reasons.push(`unsupported-change:${status}:${file}`);
     if (file !== MANIFEST && !CONTENT.test(file)) reasons.push(`non-content-path:${file}`);
     if (status === 'D' && PAPER.test(file)) reasons.push(`paper-deleted:${file}`);
+    try {
+      const stat = await fs.lstat(path.join(repo, file));
+      if (stat.isSymbolicLink()) reasons.push(`changed-path-symlink:${file}`);
+      if (!stat.isFile() && !stat.isSymbolicLink()) reasons.push(`changed-path-not-file:${file}`);
+    } catch { reasons.push(`changed-path-missing:${file}`); }
   }
   const papers = changed.filter(c => (c.status === 'A' || c.status === 'M') && PAPER.test(c.file)).map(c => c.file);
+  // A manifest-only or image-only diff has no audited paper to bind credentials to.
+  if (papers.length === 0 && changed.length > 0) reasons.push('no-papers-changed');
   const {rows, reasons: manifestReasons} = await readManifest(repo);
   reasons.push(...manifestReasons);
   const byPath = new Map(rows.filter(r => typeof r?.path === 'string').map(r => [r.path, r]));
@@ -110,9 +159,12 @@ export async function checkContent ({repo, base = 'origin/main', credentialPaper
     const bytes = await fs.readFile(abs);
     if (!row.sha256 || row.sha256 !== sha(bytes)) reasons.push(`manifest-sha256-mismatch:${file}`);
     if (!Number.isInteger(row.bytes) || row.bytes !== bytes.length) reasons.push(`manifest-bytes-mismatch:${file}`);
-    if (!Number.isInteger(row.questions)) reasons.push(`manifest-questions-missing:${file}`);
-    if (!Number.isInteger(row.answers)) reasons.push(`manifest-answers-missing:${file}`);
-    if (credentialPaperPaths && !credentialPaperPaths.has(file)) reasons.push(`rights-credential-missing:${file}`);
+    const declared = Number.isInteger(row.declared_questions) ? row.declared_questions
+      : Number.isInteger(row.questions) ? row.questions : null;
+    const answerBlocks = Number.isInteger(row.answer_blocks) ? row.answer_blocks
+      : Number.isInteger(row.answers) ? row.answers : null;
+    if (declared === null) reasons.push(`manifest-questions-missing:${file}`);
+    if (answerBlocks === null) reasons.push(`manifest-answers-missing:${file}`);
     reasons.push(...checkPaperMarkdown(bytes.toString('utf8'), row).map(r => `${r}:${file}`));
     reasons.push(...await imageReasons(repo, repoReal, file, bytes.toString('utf8')));
   }

@@ -11,8 +11,14 @@
  *   - origin/main still equals the expected sha (otherwise stop and recompute)
  *   - the push is a plain fast-forward (never --force)
  * Any missing/failed piece fails closed. The publisher service never calls this module.
+ *
+ * LIMITATION (B1): this driver only fast-forwards a branch that is already pure content
+ * relative to origin/main. Automatically projecting audited per-paper content out of the
+ * code+content integration branch is NOT implemented; the current integration branch cannot
+ * use this driver.
  */
 import fs from 'node:fs/promises';
+import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { checkContent, readManifest } from './content-gate.mjs';
@@ -50,22 +56,38 @@ function grantFor (grants, paperPath) {
   return grants.filter(g => g?.paperPath === paperPath);
 }
 
-function grantReasons (grant, {file, bytes, row}) {
+async function verifyTrustedFile (trustedRoot, relPath, expectedSha, label, file) {
+  if (!trustedRoot) return [`trusted-root-missing:${file}`];
+  if (typeof relPath !== 'string' || relPath.startsWith('/') || relPath.split(/[\\/]/u).includes('..')) {
+    return [`${label}-path-invalid:${file}`];
+  }
+  let rootReal, real;
+  try { rootReal = await fs.realpath(trustedRoot); } catch { return [`trusted-root-unreadable:${file}`]; }
+  try { real = await fs.realpath(path.resolve(rootReal, relPath)); } catch { return [`${label}-unreadable:${file}`]; }
+  if (!real.startsWith(rootReal + path.sep)) return [`${label}-escape:${file}`];
+  const stat = await fs.lstat(real);
+  if (stat.isSymbolicLink() || !stat.isFile()) return [`${label}-not-regular-file:${file}`];
+  const bytes = await fs.readFile(real);
+  if (sha(bytes) !== expectedSha) return [`${label}-sha-mismatch:${file}`];
+  return [];
+}
+
+async function grantReasons (grant, {file, bytes, row, trustedRoot}) {
   const reasons = [];
-  if (grant.sourceId !== row?.sourceId) reasons.push(`rights-sourceid-mismatch:${file}`);
+  if (!row?.sourceId || grant.sourceId !== row.sourceId) reasons.push(`rights-sourceid-mismatch:${file}`);
   if (grant.blobSha256 !== sha(bytes)) reasons.push(`rights-blobsha-mismatch:${file}`);
   if (grant.qa?.verdict !== 'pass') reasons.push(`qa-not-passed:${file}`);
-  if (typeof grant.qa?.reportSha256 !== 'string' || !/^[0-9a-f]{64}$/u.test(grant.qa.reportSha256)) reasons.push(`qa-report-missing:${file}`);
   if (typeof grant.qa?.reviewedAt !== 'string' || !grant.qa.reviewedAt) reasons.push(`qa-review-date-missing:${file}`);
+  reasons.push(...await verifyTrustedFile(trustedRoot, grant.qa?.reportPath, grant.qa?.reportSha256, 'qa-report', file));
   const basis = grant.rights?.basis;
   if (FORBIDDEN_BASIS.has(basis)) reasons.push(`rights-basis-forbidden:${file}`);
   if (!RIGHTS_BASIS.has(basis)) reasons.push(`rights-basis-missing:${file}`);
-  if (typeof grant.rights?.evidenceSha256 !== 'string' || !/^[0-9a-f]{64}$/u.test(grant.rights.evidenceSha256)) reasons.push(`rights-evidence-missing:${file}`);
+  reasons.push(...await verifyTrustedFile(trustedRoot, grant.rights?.evidencePath, grant.rights?.evidenceSha256, 'rights-evidence', file));
   return reasons;
 }
 
 /** Check that every changed paper is covered by a valid, exactly-bound credential. */
-export async function checkCredentials ({repo, grants, papers}) {
+export async function checkCredentials ({repo, grants, papers, trustedRoot = null}) {
   const reasons = [];
   const {rows} = await readManifest(repo);
   const byPath = new Map(rows.filter(r => typeof r?.path === 'string').map(r => [r.path, r]));
@@ -75,7 +97,7 @@ export async function checkCredentials ({repo, grants, papers}) {
     const candidates = grantFor(grants, file);
     if (candidates.length === 0) { reasons.push(`rights-credential-missing:${file}`); continue; }
     if (candidates.length > 1) { reasons.push(`rights-credential-ambiguous:${file}`); continue; }
-    reasons.push(...grantReasons(candidates[0], {file, bytes, row}));
+    reasons.push(...await grantReasons(candidates[0], {file, bytes, row, trustedRoot}));
     // Existing main content must not be silently overwritten by an unrelated patch.
     let mainSha = null;
     try { mainSha = git(repo, ['rev-parse', `origin/main:${file}`]); } catch { mainSha = null; }
@@ -101,7 +123,7 @@ export async function classifyCandidate ({repo, base = 'origin/main', source = '
   return {ok: reasons.length === 0 && changes.length > 0, content, reasons};
 }
 
-export async function autoMerge ({repo, expectedMainSha, credentialsPath, settingsPath, apply = false, env = process.env}) {
+export async function autoMerge ({repo, expectedMainSha, credentialsPath, settingsPath, trustedRoot = null, apply = false, env = process.env}) {
   const base = 'origin/main';
   const reasons = [];
   if (env.AUTO_MAIN_CONTENT !== '1') return {ok: false, stage: 'disabled', reasons: ['auto-main-disabled']};
@@ -110,14 +132,17 @@ export async function autoMerge ({repo, expectedMainSha, credentialsPath, settin
   const credentials = await loadCredentials(credentialsPath);
   if (!credentials.ok) return {ok: false, stage: 'rights', reasons: [credentials.reason]};
   let remoteSha;
-  try { remoteSha = execFileSync('git', ['-C', repo, 'ls-remote', 'origin', 'refs/heads/main'], {encoding: 'utf8'}).split(/\s+/u)[0]; }
-  catch (e) { return {ok: false, stage: 'remote', reasons: ['origin-main-unreadable:' + (e.code || e.message)]}; }
+  try {
+    git(repo, ['fetch', '-q', 'origin', 'main:refs/remotes/origin/main']);
+    remoteSha = git(repo, ['rev-parse', 'refs/remotes/origin/main']);
+  } catch (e) { return {ok: false, stage: 'remote', reasons: ['origin-main-unreadable:' + (e.code || e.message)]}; }
   if (!expectedMainSha || remoteSha !== expectedMainSha) return {ok: false, stage: 'race', reasons: ['main-moved']};
   const candidate = await classifyCandidate({repo, base});
   if (!candidate.ok) return {ok: false, stage: 'gate', reasons: candidate.reasons};
   const gate = await checkContent({repo, base});
   if (!gate.ok) return {ok: false, stage: 'gate', reasons: gate.reasons};
-  const rights = await checkCredentials({repo, grants: credentials.grants, papers: gate.papers ? candidate.content.filter(c => /\.md$/u.test(c.file)).map(c => c.file) : []});
+  const paperPaths = candidate.content.filter(c => /\.md$/u.test(c.file)).map(c => c.file);
+  const rights = await checkCredentials({repo, grants: credentials.grants, papers: paperPaths, trustedRoot});
   if (rights.length) return {ok: false, stage: 'rights', reasons: rights};
   let ff;
   try { git(repo, ['merge-base', '--is-ancestor', base, 'HEAD']); ff = true; } catch { ff = false; }
