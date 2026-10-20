@@ -38,6 +38,7 @@ while [ ! -e "$STOP" ]; do
   node src/batch-ingest.mjs --repo-root "$REPO" --source-root "${PAPERS_DIR:-$WORK/papers}" --write --limit 1000 > "$WORK/ingest-last.jsonl"
   log "ingest exit=$? $(tail -n 1 "$WORK/ingest-last.jsonl")"
 
+  committed=0
   if [ -n "$RIGHTS_FILE" ]; then
     out=$(node src/promote-all.mjs --candidate-root "$WORK/batch-ingest" --repo-root "$REPO" \
       --rights-file "$RIGHTS_FILE" --apply $REPLACE_FLAG)
@@ -45,25 +46,19 @@ while [ ! -e "$STOP" ]; do
     if [ -n "$(git -C "$REPO" status --porcelain -- 国考 省考 图片 catalog/manifest.jsonl)" ]; then
       git -C "$REPO" add -- 国考 省考 图片 catalog/manifest.jsonl
       git -C "$REPO" commit -q -m "integrate(fenbi): pipeline batch $(date -u +%Y-%m-%dT%H:%MZ)"
+      committed=1
       log "committed $(git -C "$REPO" rev-parse --short HEAD)"
     fi
   fi
 
-  if [ "${PUSH:-0}" = 1 ]; then
+  if [ "${PUSH:-0}" = 1 ] && [ "$committed" = 1 ]; then
     if git -C "$REPO" push -q origin HEAD; then log "pushed/up-to-date"; else log "push failed; retry next cycle"; fi
   fi
 
   # Opt-in content-only auto-main. Default OFF; any failure is logged and never stops the loop.
-  if [ "${AUTO_MAIN_CONTENT:-0}" = 1 ] && [ -n "${AUTO_MAIN_SETTINGS:-}" ] && [ -n "${AUTO_MAIN_CREDENTIALS:-}" ] && [ -n "${AUTO_MAIN_TRUSTED_ROOT:-}" ]; then
-    if [ -f "$AUTO_MAIN_SETTINGS" ] && [ -f "$AUTO_MAIN_CREDENTIALS" ] && [ -d "$AUTO_MAIN_TRUSTED_ROOT" ]; then
-      amr=$(node src/auto-main-run.mjs --repo "$REPO" --source-repo "$REPO" \
-        --source-ref "${AUTO_MAIN_SOURCE_REF:-integ/2026-10-19}" \
-        --settings "$AUTO_MAIN_SETTINGS" --credentials "$AUTO_MAIN_CREDENTIALS" \
-        --trusted-root "$AUTO_MAIN_TRUSTED_ROOT" ${AUTO_MAIN_APPLY:+--apply} 2>&1) || true
-      log "auto-main $amr"
-    else
-      log "auto-main skipped: settings/credentials/trusted-root missing"
-    fi
+  if [ "${AUTO_MAIN_CONTENT:-0}" = 1 ]; then
+    amr=$(REPO="$REPO" bash ./auto-main-hook.sh 2>&1) || true
+    log "auto-main $amr"
   fi
 
   node src/pipeline-board.mjs "$WORK" "$REPO" "${PAPERS_DIR:-$WORK/papers}" | sed 's/^/board /' | tee -a "$WORK/pipeline.log"

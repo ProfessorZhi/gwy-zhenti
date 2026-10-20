@@ -64,7 +64,9 @@ export async function runAutoMain ({
   try { remoteMain = execFileSync('git', ['-C', repo, 'ls-remote', 'origin', 'refs/heads/main'], {encoding: 'utf8'}).split(/\s+/u)[0]; }
   catch (e) { return {ok: false, stage: 'remote', reasons: ['origin-main-unreadable:' + (e.code || e.message)]}; }
   if (!SHA.test(remoteMain || '')) return {ok: false, stage: 'remote', reasons: ['origin-main-sha-invalid']};
-  const mainSha = expectedMainSha || remoteMain;
+  // A caller-supplied main pin is an assertion, never an override.
+  if (expectedMainSha && expectedMainSha !== remoteMain) return {ok: false, stage: 'race', reasons: ['main-moved']};
+  const mainSha = remoteMain;
 
   if (!apply) {
     const plan = await buildProjection({
@@ -105,9 +107,9 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
     if (key === '--apply') opts.apply = true;
     else if (['--repo', '--source-repo', '--source-ref', '--expected-main-sha', '--settings', '--credentials', '--trusted-root'].includes(key)) {
       const value = args[++i];
-      if (!value) { console.error('missing-value:' + key); process.exitCode = 1; process.exit(0); }
+      if (!value) { console.error('missing-value:' + key); process.exit(1); }
       opts[key.slice(2).replaceAll('-', '_')] = value;
-    } else { console.error('unknown-option:' + key); process.exitCode = 1; process.exit(0); }
+    } else { console.error('unknown-option:' + key); process.exit(1); }
   }
   if (!opts.repo) { console.error('usage: auto-main-run.mjs --repo DIR --settings FILE --credentials FILE --trusted-root DIR [--source-ref REF] [--apply]'); process.exitCode = 1; }
   else runAutoMain({
