@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import { collectAssetUrls, htmlText } from './model.mjs';
 import { yearAllowed } from './year-policy.mjs';
+import { COLLECTION_STUB_CORE } from './collection-stub.mjs';
 
 const PLACEHOLDER = /^(?:暂无(?:解析|答案)?|待(?:补充|完善|填写)|查看(?:答案|解析)|答案略|解析略|略|TODO|PLACEHOLDER|参考答案|参考解析|点击查看)$/iu;
 // A paid or unauthenticated exercise view renders an entitlement notice in the answer slot.
@@ -34,8 +35,7 @@ const accessGate = (body) => {
 // covered. The observed forms are listed by name, then a bounded generic tail acts as a safety net.
 // The generic tail may not contain sentence-ending punctuation and may not exceed 24 chars, so a
 // genuine stem that merely quotes the marker and then keeps talking is still never flagged.
-const COLLECTION_STUB = new RegExp('^(?:题目正在全力以赴征集|正在搜集中|本题暂无收集到|暂无收集到|网友未回忆起|题目缺失'
-  + '|非客观题，请交卷后查看参考解析估分)'
+const COLLECTION_STUB = new RegExp('^' + COLLECTION_STUB_CORE
   + '(?:[，,。.；;]?\\s*(?:请稍后再试|请稍后|敬请期待|感谢您的关注|谢谢|稍后重试'
   + '|将会(?:在征集到后)?第一时间上传|[^。！？!?]{0,24}))?$', 'u');
 const STUB_BODY_MAX_CHARS = 120;
