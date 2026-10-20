@@ -310,3 +310,51 @@ test('25 runCli blocks an invalid sourceId and writes nothing', async () => {
   assert.equal(result.summaries[0].blockedReason, 'invalid-source-id');
   assert.deepEqual(await fs.readdir(out), []);
 });
+
+test('26 stem line starting with A. does not become an option', () => {
+  const md = ['## 题目', '### 第 1 题', 'A. 这是题干首行的真实内容。', 'A. 甲', 'B. 乙', 'C. 丙', 'D. 丁', '【答案】A', '【解析】合成解析', ''].join('\n');
+  const gaps = detectQualityGaps({sourceId: '202662', subject: 'xingce', markdown: md, assets: [], rightsStatus: 'cleared'});
+  assert.equal(gaps.kinds.includes('missing-question'), false);
+  assert.equal(gaps.kinds.includes('missing-options'), false);
+  assert.equal(gaps.kinds.includes('shenlun-multi-part'), false);
+  assert.equal(gaps.structuralGrade, 'A');
+});
+
+test('27 prose A./B. without a four-option run is not accepted as options', () => {
+  const md = ['## 题目', '### 第 1 题', '文中提到 A. 甲说法。', 'B. 这只是正文句子。', '【答案】A', '【解析】合成解析', ''].join('\n');
+  const gaps = detectQualityGaps({sourceId: '202662', subject: 'xingce', markdown: md, assets: [], rightsStatus: 'cleared'});
+  assert.ok(gaps.kinds.includes('missing-options'));
+  assert.equal(gaps.structuralGrade, 'C');
+});
+
+test('28 A-C only (missing D) is graded C, never A', () => {
+  const md = ['## 题目', '### 第 1 题', '题干。', 'A. 甲', 'B. 乙', 'C. 丙', '【答案】A', '【解析】合成解析', ''].join('\n');
+  const gaps = detectQualityGaps({sourceId: '202662', subject: 'xingce', markdown: md, assets: [], rightsStatus: 'cleared'});
+  assert.ok(gaps.kinds.includes('missing-options'));
+  assert.equal(gaps.structuralGrade, 'C');
+});
+
+test('29 xingce with (一)/(二) is not labelled shenlun-multi-part', () => {
+  const md = ['## 题目', '### 第 1 题', '题干（一）与（二）只是普通行测表述。', 'A. 甲', 'B. 乙', 'C. 丙', 'D. 丁', '【答案】A', '【解析】合成解析', ''].join('\n');
+  const gaps = detectQualityGaps({sourceId: '202662', subject: 'xingce', markdown: md, assets: [], rightsStatus: 'cleared'});
+  assert.equal(gaps.kinds.includes('shenlun-multi-part'), false);
+  assert.equal(gaps.structuralGrade, 'A');
+});
+
+test('30 shenlun without verified prompt stays unverified, not A', () => {
+  const md = ['## 题目', '### 第 1 题', '请概括材料要点。', '【答案】合成要点', '【解析】合成解析', ''].join('\n');
+  const unverified = detectQualityGaps({sourceId: '3001', subject: 'shenlun', markdown: md, assets: [], rightsStatus: 'cleared'});
+  assert.ok(unverified.kinds.includes('shenlun-prompt-unverified'));
+  assert.equal(unverified.structuralGrade, 'C');
+  const verified = detectQualityGaps({sourceId: '3001', subject: 'shenlun', markdown: md, assets: [], rightsStatus: 'cleared', promptVerified: true});
+  assert.equal(verified.kinds.includes('shenlun-prompt-unverified'), false);
+  assert.equal(verified.structuralGrade, 'A');
+});
+
+test('31 collection stubs are still detected after the parser change', () => {
+  const md = ['## 题目', '### 第 1 题', '题目正在全力以赴征集', '', '### 第 2 题', '题干二。', 'A. 甲', 'B. 乙', 'C. 丙', 'D. 丁', '【答案】B', '【解析】合成解析', ''].join('\n');
+  const gaps = detectQualityGaps({sourceId: '202662', subject: 'xingce', markdown: md, assets: [], rightsStatus: 'cleared'});
+  assert.ok(gaps.kinds.includes('missing-question'));
+  assert.ok(gaps.gaps.some(g => g.number === 1));
+  assert.equal(gaps.structuralGrade, 'C');
+});

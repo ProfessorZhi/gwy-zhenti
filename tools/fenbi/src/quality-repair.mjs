@@ -40,6 +40,27 @@ function scratch (text) {
 }
 const LEFTOVER_IMAGE = /⟦IMAGE⟧|\bimage\b/giu;
 
+const OPTION_LINE = /^\s*(?:[-*]\s*\*\*([A-D])\*\*|([A-D])[.、．)])\s*(.+)$/gmu;
+const OPTION_ORDER = ['A', 'B', 'C', 'D'];
+
+/**
+ * Find the longest consecutive A->B->C->D option run. A stem line that happens to start
+ * with "A." is not isolated as an option unless the following lines continue B, C, D.
+ */
+function detectOptionRun (body) {
+  const lines = [...body.matchAll(OPTION_LINE)].map(m => ({label: m[1] || m[2], text: m[3].trim(), index: m.index}));
+  let best = null;
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].label !== 'A') continue;
+    const run = [lines[i]];
+    let j = i + 1;
+    while (j < lines.length && lines[j].label === OPTION_ORDER[j - i]) { run.push(lines[j]); j++; }
+    if (run.length >= 2 && (!best || run.length > best.length)) best = run;
+  }
+  if (!best) return {options: [], start: -1};
+  return {options: best.map(x => ({label: x.label, text: x.text})), start: best[0].index};
+}
+
 function parsePaper (markdown) {
   const md = String(markdown ?? '');
   const detailsStart = md.search(/^<details\b/mu);
@@ -56,11 +77,9 @@ function parsePaper (markdown) {
   }
   const questions = heads.map((h, i) => {
     const body = region.slice(h.start, heads[i + 1]?.index ?? region.length);
-    const optRe = /^\s*(?:[-*]\s*\*\*([A-D])\*\*|([A-D])[.、．)])\s*(.+)$/gmu;
-    const opts = [...body.matchAll(optRe)].map(m => ({label: m[1] || m[2], text: m[3].trim()}));
-    const optionAt = body.search(optRe);
+    const {options: opts, start: optionStart} = detectOptionRun(body);
     const answerAt = body.search(/【答案】|(?:\*\*)?答案(?:\*\*)?\s*[:：]|(?:\*\*)?参考答案/u);
-    const ends = [optionAt, answerAt].filter(i => i >= 0);
+    const ends = [optionStart, answerAt].filter(i => i >= 0);
     const stem = (ends.length ? body.slice(0, Math.min(...ends)) : body).trim();
     const own = details.get(h.n) ?? body;
     const answer = /(?:【答案】|(?:\*\*)?参考答案[^\n]*|(?:\*\*)?答案(?:\*\*)?\s*[:：])\s*([\s\S]*?)(?=\n\s*(?:【解析】|\*\*解析\*\*|(?:\*\*)?来源参考解析|解析\s*[:：])|$)/u.exec(own)?.[1]?.trim() ?? '';
@@ -78,12 +97,13 @@ export function detectQualityGaps (paper, {rightsStatus = 'unverified'} = {}) {
   for (const q of parsed.questions) {
     const gaps = [];
     if (q.stub || !q.stem) gaps.push('missing-question');
-    else if (q.options.length < 2) gaps.push('missing-options');
+    else if (paper.subject === 'xingce' && q.options.length < 4) gaps.push('missing-options');
     if (!q.answer) gaps.push('missing-answer');
     if (!q.explanation) gaps.push('missing-explanation');
-    if (q.multiPart) gaps.push('shenlun-multi-part');
+    if (paper.subject === 'shenlun' && q.multiPart) gaps.push('shenlun-multi-part');
     if (gaps.length) rows.push({number: q.number, qid: q.qid, gaps});
   }
+  if (paper.subject === 'shenlun' && paper.promptVerified !== true) rows.push({number: null, gaps: ['shenlun-prompt-unverified']});
   for (const asset of paper.assets ?? []) {
     if (!HEX64.test(asset.sha256 ?? '')) rows.push({number: null, asset: asset.path ?? null, gaps: ['missing-image-sha']});
   }
@@ -217,7 +237,7 @@ export async function buildRepairPlan ({target, donors = [], reviewedPairs = [],
       if (!identity(donor)) { reviewQueue.push({number: tq.number, reason: 'donor-identity-mismatch', action: 'REVIEW_REQUIRED'}); continue; }
       if (donor.sourceId === target.sourceId) { reviewQueue.push({number: tq.number, reason: 'donor-not-independent', action: 'REVIEW_REQUIRED'}); continue; }
       const dq = donor.questions.find(q => q.number === Number(reviewed.donorNumber));
-      if (!dq || dq.stub || dq.options.length < 2 || !dq.answer || !dq.explanation) {
+      if (!dq || dq.stub || (target.subject === 'xingce' && dq.options.length < 4) || !dq.answer || !dq.explanation) {
         reviewQueue.push({number: tq.number, reason: 'donor-incomplete', action: 'REVIEW_REQUIRED'}); continue;
       }
       plan.repairs.push({
@@ -243,7 +263,7 @@ export async function buildRepairPlan ({target, donors = [], reviewedPairs = [],
     if ((donorStemCount.get(scratch(dq.stem)) ?? 0) !== 1 || (stemCount.get(scratch(dq.stem)) ?? 0) !== 1) {
       reviewQueue.push({number: tq.number, reason: 'not-bidirectionally-unique', action: 'REVIEW_REQUIRED'}); continue;
     }
-    if (dq.stub || dq.options.length < 2 || !dq.answer) { reviewQueue.push({number: tq.number, reason: 'donor-answer-without-question', action: 'REVIEW_REQUIRED'}); continue; }
+    if (dq.stub || (target.subject === 'xingce' && dq.options.length < 4) || !dq.answer) { reviewQueue.push({number: tq.number, reason: 'donor-answer-without-question', action: 'REVIEW_REQUIRED'}); continue; }
     if (!dq.explanation) { reviewQueue.push({number: tq.number, reason: 'no-verbatim-explanation', action: 'REVIEW_REQUIRED'}); continue; }
     if (target.subject === 'shenlun' && /(?:[（(][1-9１-９][）)]|[一二三四五]、)/u.test(dq.stem + dq.answer)) {
       reviewQueue.push({number: tq.number, reason: 'shenlun-subquestion-merge', action: 'REVIEW_REQUIRED'}); continue;
@@ -278,7 +298,7 @@ export async function buildRepairPlan ({target, donors = [], reviewedPairs = [],
     structurePreserved: parsePaper(afterMarkdown).questions.length === targetParsed.questions.length,
     allOriginalGapsResolved: postStructural.length === 0,
     zeroUnreviewedStructural: reviewQueue.length === 0,
-    everyRepairComplete: plan.repairs.every(r => r.replacement.options.length >= 2 && r.replacement.answer && r.replacement.explanation),
+    everyRepairComplete: plan.repairs.every(r => (target.subject !== 'xingce' || r.replacement.options.length >= 4) && r.replacement.answer && r.replacement.explanation),
     donorIndependent: plan.repairs.every(r => r.donorSourceId !== target.sourceId),
     donorIdentityMatch: plan.repairs.every(r => registry.accepted.some(d => d.donorId === r.donorId && identity(d))),
     targetRightsVerified: target.rightsStatus === 'cleared' && HEX64.test(target.rightsEvidenceSha256 ?? '') && targetRightsFile.length === 0,
