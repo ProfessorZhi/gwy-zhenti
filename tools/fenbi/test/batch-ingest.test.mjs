@@ -77,16 +77,19 @@ test('wrong question count and duplicate source numbering fail closed', () => {
 });
 
 
-test('rendered legacy fallback containing collection stub is C, never grade A', () => {
+test('actual legacy splice containing a collection stub cannot retain A grading', () => {
   const q=[1,2,3,4].map(n=>makeQuestion(n,body(n)));
   q[3].contentHtml='题目正在全力以赴征集，将会第一时间上传';
-  const old=oldPaper();
+  const before='## 第 4 题 <sub>qid 704</sub>\n\n'+body(4)+'\n\n- **A**. 选项甲答案';
+  const after='## 第 4 题 <sub>qid 704</sub>\n\n'+body(4)+'\n\n- **A**. 题目缺失';
+  const old=oldPaper().replace(before,after);
+  assert.notEqual(old,oldPaper(), 'fixture must contain a genuine legacy option stub');
   const assembly=assemble(source(q),old);
+  assert.equal(assembly.numberingStable,true);
   assert.equal(assembly.counters.inheritedStubs,1);
-  const clean=renderIngest(assembly,old);
-  assert.equal(structureGrade(assembly,clean,{dimensions:{images:{status:'complete'}}}).grade,'A');
-  const dirty=clean.replace(body(4),'题目缺失');
-  const grade=structureGrade(assembly,dirty,{dimensions:{images:{status:'complete'}}});
+  const md=renderIngest(assembly,old);
+  assert.match(md,/题目缺失/u);
+  const grade=structureGrade(assembly,md,{dimensions:{images:{status:'complete'}}});
   assert.equal(grade.grade,'C');
   assert.ok(grade.blockers.includes('rendered-collection-stub-remains'));
 });
@@ -102,6 +105,17 @@ test('option-only collection stub is C even when its stem is valid', () => {
 test('explanation-only collection stub cannot pass rendered grade A', () => {
   const q=[1,2,3,4].map(n=>makeQuestion(n,body(n)));
   q[0].explanationHtml='题目正在全力以赴征集';
+  const assembly=assemble(source(q),'');
+  const md=renderIngest(assembly);
+  const grade=structureGrade(assembly,md,{dimensions:{images:{status:'complete'}}});
+  assert.equal(grade.grade,'C');
+  assert.ok(grade.blockers.includes('rendered-collection-stub-remains'));
+});
+
+
+test('a nonobjective view notice cannot be graded as a complete question', () => {
+  const q=[1,2,3,4].map(n=>makeQuestion(n,body(n)));
+  q[1].contentHtml='非客观题，请交卷后查看参考解析估分';
   const assembly=assemble(source(q),'');
   const md=renderIngest(assembly);
   const grade=structureGrade(assembly,md,{dimensions:{images:{status:'complete'}}});
