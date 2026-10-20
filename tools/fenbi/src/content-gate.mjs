@@ -52,7 +52,9 @@ export function parsePaperMarkdown (md, {isXingce = false, row = {}} = {}) {
   const ends = [detailsStart, answerHeading].filter(index => index >= 0);
   const regionEnd = ends.length ? Math.min(...ends) : md.length;
   const region = md.slice(qHeading >= 0 ? qHeading : 0, regionEnd);
-  const heads = [...region.matchAll(/^#{2,3}\s*第\s*(\d+)\s*题\s*$/gmu)]
+  // Allow an optional, verifiable metadata suffix such as ` <sub>qid 13319187 · 毛中特</sub>`;
+  // anything else after the number keeps the heading from being a question heading.
+  const heads = [...region.matchAll(/^#{2,3}\s*第\s*(\d+)\s*题[^\S\n]*(?:<sub>[^<\n]{1,80}<\/sub>)?[^\S\n]*$/gmu)]
     .map(m => ({n: Number(m[1]), start: m.index + m[0].length}));
   if (heads.length === 0) return {questions: 0, answers: 0, explanations: 0, reasons: ['paper-no-questions']};
   const numbers = heads.map(h => h.n).sort((a, b) => a - b);

@@ -344,6 +344,38 @@ test('15 apply:true fast-forwards the local bare main', async () => {
   assert.equal(git(bare, ['rev-parse', 'refs/heads/main']), head);
 });
 
+test('17 headings with <sub> metadata suffix parse and bind answers', async () => {
+  const {repo} = await setup();
+  const md = [
+    '## 题目',
+    '## 第 1 题　<sub>qid 13319187 · 毛中特</sub>', '题干一的合成测试文本。',
+    'A. 甲', 'B. 乙', 'C. 丙', 'D. 丁',
+    '## 第 2 题 <sub>常识判断</sub>', '题干二的合成测试文本。',
+    'A. 甲', 'B. 乙', 'C. 丙', 'D. 丁', '',
+    '<details><summary>第 1 题</summary>', '**参考答案（粉笔题库参考内容）**', '', 'A', '', '**解析**', '', '合成解析一', '', '</details>',
+    '<details><summary>第 2 题</summary>', '**参考答案（粉笔题库参考内容）**', '', 'B', '', '**解析**', '', '合成解析二', '', '</details>', ''
+  ].join('\n');
+  await writePaper(repo, md);
+  await writeManifest(repo, [await manifestRow(repo)]);
+  await commitAll(repo);
+  const result = await checkContent({repo, base: 'origin/main'});
+  assert.equal(result.ok, true, result.reasons.join(','));
+});
+
+test('18 <sub> headings still stop the last question at the answer area', async () => {
+  const {repo} = await setup();
+  const md = [
+    '## 题目', '## 第 1 题 <sub>常识判断</sub>', '题干一。', 'A. 甲', 'B. 乙', 'C. 丙', 'D. 丁', '',
+    '## 参考答案', '**答案**：A', '**解析**：合成解析', ''
+  ].join('\n');
+  await writePaper(repo, md);
+  await writeManifest(repo, [await manifestRow(repo, {declared_questions: 1, answer_blocks: 1})]);
+  await commitAll(repo);
+  const result = await checkContent({repo, base: 'origin/main'});
+  assert.equal(result.ok, false);
+  assert.ok(result.reasons.some(r => r.startsWith('missing-answer:1')), result.reasons.join(','));
+});
+
 test('settings require an explicit true flag', async () => {
   for (const value of [{}, {allowAutoMain: false}, {allowAutoMain: 'true'}]) {
     const root = await fs.mkdtemp(path.join(os.tmpdir(), 'auto-main-settings-'));
