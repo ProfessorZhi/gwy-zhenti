@@ -34,13 +34,24 @@ export function collectShenlunAssets(doc = {}) {
  * prompt/answer counts; `assetRoot` enables hash checks. Count matching is not
  * proof of semantic answer correctness or of publication rights.
  */
-export function validateShenlunDocument(doc, { expected = {}, assetRoot = null, assetManifest = null } = {}) {
+export function validateShenlunDocument(doc, { expected = {}, assetRoot = null, assetManifest = null, evidenceBytes = null } = {}) {
   const problems = [];
   const bad = (code, ev = {}) => problems.push({ code, ...ev });
   const base = validateShenlun(doc);
   for (const p of base.problems) problems.push(p);
 
   const id = doc.identity ?? {};
+  const countsClaimed = expected.observedPromptCount != null || expected.observedAnswerCount != null;
+  const evidenceSha = expected.observedEvidenceSha256;
+  // Bind caller-reported counts to the immutable raw DOM snapshot from which they were
+  // extracted. A digest alone does NOT prove the extraction algorithm or semantics.
+  if (countsClaimed) {
+    if (!(Buffer.isBuffer(evidenceBytes) || evidenceBytes instanceof Uint8Array) ||
+        !/^[0-9a-f]{64}$/u.test(String(evidenceSha ?? '')))
+      bad('observed-evidence-unbound');
+    else if (sha256(evidenceBytes) !== evidenceSha)
+      bad('observed-evidence-sha-mismatch');
+  }
   if (expected.sourceId != null && String(expected.sourceId) !== String(id.sourceId)) bad('expected-source-id-mismatch');
   if (id.paperId != null && String(id.paperId) !== String(id.sourceId)) bad('paper-id-mismatch');
   if (expected.sourceSha != null && String(expected.sourceSha) !== String(id.sourceSha)) bad('source-sha-mismatch');
@@ -74,7 +85,7 @@ export function validateShenlunDocument(doc, { expected = {}, assetRoot = null, 
 }
 
 /** Dispatch one captured paper through the shenlun path. Returns a receipt-shaped row. */
-export function ingestShenlun({ doc, raw, name, dest, write = false, expected = {} } = {}) {
+export function ingestShenlun({ doc, raw, name, dest, write = false, expected = {}, evidenceBytes = null } = {}) {
   const sourceSha = sha256(raw ?? Buffer.from(JSON.stringify(doc)));
   let parsed;
   try {
@@ -93,7 +104,7 @@ export function ingestShenlun({ doc, raw, name, dest, write = false, expected = 
       sourceSha256: sourceSha, markdownSha256: null, write, dest,
     };
   }
-  const verdict = validateShenlunDocument(parsed, { expected });
+  const verdict = validateShenlunDocument(parsed, { expected, evidenceBytes });
   const markdown = renderShenlunMarkdown(parsed);
   const blockers = verdict.problems.map((p) => `${p.code}`);
   // Grade A means local structural checks only, NOT independent content QA or
@@ -107,8 +118,13 @@ export function ingestShenlun({ doc, raw, name, dest, write = false, expected = 
     boundaryEvidence: {
       promptCount: expected.observedPromptCount ?? null,
       answerCount: expected.observedAnswerCount ?? null,
-      status: blockers.some(code => code.includes('count-')) ? 'mismatch' :
-        (expected.observedPromptCount == null || expected.observedAnswerCount == null ? 'unverified' : 'counts-match-only'),
+      observedEvidenceSha256: expected.observedEvidenceSha256 ?? null,
+      status: blockers.includes('observed-evidence-unbound') ||
+        blockers.includes('observed-evidence-sha-mismatch') ? 'unbound' :
+        blockers.some(code => code.endsWith('-count-invalid')) ? 'invalid' :
+        blockers.some(code => code.endsWith('-count-mismatch')) ? 'mismatch' :
+        (expected.observedPromptCount == null || expected.observedAnswerCount == null
+          ? 'unverified' : 'counts-match-snapshot-bound-only'),
     },
     counts: {
       materials: parsed.materials.length,
