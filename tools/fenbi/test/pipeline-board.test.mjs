@@ -46,7 +46,7 @@ test('board reads captures, answers, grades and promotion from local metadata', 
     assert.equal(b.questions, 2);
     assert.deepEqual([b.A, b.C, b.promoted], [1, 0, 1]);
     assert.equal(b.regions['深圳'].withAnswers, 1);
-    assert.match(renderBoard(b), /最近 1 小时抓取/);
+    assert.match(renderBoard(b), /最近 1 小时首次采集/);
 
     // The same candidate is already promoted, so nothing is pending.
     const { pending, already } = await listPending(path.join(work, 'batch-ingest'), repo);
@@ -224,4 +224,47 @@ test('board agrees with promoteAll on an identity-resolved publication', async t
   const b = await buildBoard({ workDir: work, repoRoot: repo });
   assert.equal(b.promoted, s.replaced, 'board must count what promoteAll published');
   assert.equal(b.regions['浙江'].promoted, 1);
+});
+
+
+test('backfill checkpoint and file updates never count as fresh captures',async t=>{
+  const root=await fs.mkdtemp(path.join(os.tmpdir(),'fenbi-board-backfill-'));
+  t.after(()=>fs.rm(root,{recursive:true,force:true}));
+  const work=path.join(root,'work'),repo=path.join(root,'repo');
+  const paper=path.join(work,'papers','one');
+  const now=Date.parse('2026-10-20T10:00:00Z');
+  const oldCapture=new Date(now-3*3600e3).toISOString();
+  await fs.mkdir(paper,{recursive:true});
+  await fs.mkdir(repo,{recursive:true});
+  const doc=path.join(paper,'document.json');
+  await fs.writeFile(doc,JSON.stringify({identity:{id:'source-one',subject:'xingce',area:'浙江'},
+    source:{capturedAt:oldCapture},questions:[{answerHtml:'A'}]}));
+  await fs.writeFile(path.join(paper,'checkpoint.json'),JSON.stringify({updatedAt:new Date(now-60e3).toISOString()}));
+  await fs.writeFile(path.join(paper,'run-summary.json'),JSON.stringify({at:oldCapture}));
+  await fs.utimes(doc,new Date(now-60e3),new Date(now-60e3));
+  const b=await buildBoard({workDir:work,repoRoot:repo,now});
+  assert.equal(b.speed.captured,1);
+  assert.equal(b.speed.lastHourPapers,0,'backfill cannot manufacture a newly captured paper');
+  assert.equal(b.speed.captureTimeUnknown,0);
+  assert.equal(b.speed.lastCaptureMinutesAgo,180);
+});
+
+test('missing original capture date stays unknown rather than using mutable mtime',async t=>{
+  const root=await fs.mkdtemp(path.join(os.tmpdir(),'fenbi-board-unknown-time-'));
+  t.after(()=>fs.rm(root,{recursive:true,force:true}));
+  const work=path.join(root,'work'),repo=path.join(root,'repo'),paper=path.join(work,'papers','one');
+  const now=Date.parse('2026-10-20T10:00:00Z');
+  await fs.mkdir(paper,{recursive:true});
+  await fs.mkdir(repo,{recursive:true});
+  const doc=path.join(paper,'document.json');
+  await fs.writeFile(doc,JSON.stringify({identity:{id:'source-one',subject:'xingce',area:'浙江'},
+    questions:[{answerHtml:'A'}]}));
+  await fs.writeFile(path.join(paper,'checkpoint.json'),JSON.stringify({updatedAt:new Date(now-60e3).toISOString()}));
+  await fs.utimes(doc,new Date(now-60e3),new Date(now-60e3));
+  const b=await buildBoard({workDir:work,repoRoot:repo,now});
+  assert.equal(b.speed.captured,1);
+  assert.equal(b.speed.captureTimeUnknown,1);
+  assert.equal(b.speed.lastHourPapers,0);
+  assert.equal(b.speed.lastCaptureMinutesAgo,null);
+  assert.match(renderBoard(b),/首次采集时间未知/);
 });
