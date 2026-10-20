@@ -17,6 +17,9 @@ const text = html => normalizeComparisonText(html).strict;
 const core = value => text(value).replace(/\s*⟦IMAGE⟧\s*/gu, '').trim();
 const fp = q => [text(q.contentHtml), ...(q.options || []).flatMap(o => [o.label, text(o.contentHtml)])].join('\u0000');
 const isStub = q => isCollectionStub(text(q.contentHtml));
+// Fail closed on the exact strings checked by the final promotion preflight.
+// A legacy fallback can reintroduce a source collection stub after document validation.
+const RENDERED_COLLECTION_STUB = /题目正在全力以赴征集|网友未回忆起|题目缺失/u;
 const isUsable = q => q && !isStub(q) && (core(q.contentHtml).length >= 12 || /<(?:img|image)\b/iu.test(q.contentHtml || '') || (core(q.contentHtml).length > 0 && (q.options || []).filter(o => text(o.contentHtml)).length >= 2));
 const flat = value => typeof value === 'string' ? value.trim() : '';
 const hasExternalImage = value => /<(?:img|image)\b|!\[[^\]]*\]\(/iu.test(flat(value));
@@ -119,6 +122,9 @@ export function structureGrade(assembly, markdownText, validation) {
   if(doc.assets.some(x=>x.status!=='downloaded'||!x.localPath||!x.sha256))blockers.push('asset-not-ready');
   if(validation?.dimensions?.images?.status !== 'complete')blockers.push('image-validation-not-complete');
   for(const issue of validation?.issues || []) if(['questions','materials'].includes(issue.dimension) && !((issue.code==='question-body-empty'||issue.code==='question-body-placeholder'||issue.code==='options-missing') && q.some(item=>item.legacyFallbackMarkdown && item.number===issue.number))) blockers.push('source-structure:'+issue.code);
+  // Grade A must describe the rendered bytes, not just the pre-render source object.
+  // Keep this aligned with batch-promote.validateReceipt: never publish a collection stub.
+  if(RENDERED_COLLECTION_STUB.test(markdownText))blockers.push('rendered-collection-stub-remains');
   if(!markdownText.includes('## 题目'))blockers.push('missing-questions-heading');
   if(!markdownText.includes('### 第 1 题') && !/^## 第 1 题/mu.test(markdownText))blockers.push('missing-first-question');
   if(q.some(x=>x.legacyFallbackMarkdown) && !markdownText.includes('本题来源：原库'))blockers.push('legacy-fallback-not-rendered');
