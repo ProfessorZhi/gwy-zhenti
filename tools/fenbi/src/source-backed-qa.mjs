@@ -113,11 +113,13 @@ export function comparePaper({ sourceDir, prMarkdown, prPath, sourceId, expected
     assetsTotal: src.assets.length, assetsWithSha: src.assets.filter((a) => a.sha256).length,
     sourceNumbers: src.questions.map((q) => q.number),
     sourceStubNumbers: src.questions.filter((q) => q.stub).map((q) => q.number),
-    strongMatches: [], stemSameOptionDiff: [], ambiguous: [], unmatchedSource: [], unmatchedPr: [],
-    answerMatch: [], answerConflict: [], answerUnknown: [],
+    strictMatches: [], prefixCandidates: [], prefixRejected: [],
+    stemSameOptionDiff: [], ambiguous: [], unmatchedSource: [], unmatchedPr: [],
+    answerSameStrict: [], answerConflictStrict: [], answerUnknownStrict: [],
+    answerSameCandidate: [], answerConflictCandidate: [], answerUnknownCandidate: [],
     explanationSame: [], explanationDiff: [], explanationMissing: [],
     optionOrderChanged: [], imageQuestions: [], reasons: [],
-    stemPrefixMatch: [], prStemExtraChars: {} };
+    stubContentMatched: [], prStemExtraChars: {} };
 
   const sIdx = uniqueIndex(src.questions.map((q) => ({ side: 'src', q, fp: fingerprint(q) })));
   const prIdx = uniqueIndex(pr.questions.map((q) => ({ side: 'pr', q, fp: fingerprint(q) })));
@@ -126,10 +128,20 @@ export function comparePaper({ sourceDir, prMarkdown, prPath, sourceId, expected
   for (const x of sIdx.values()) for (const y of x) push(sSetIdx, y.fp.keySet, y);
   for (const x of prIdx.values()) for (const y of x) push(prSetIdx, y.fp.keySet, y);
 
-  // prefix fallback: PR markdown often carries extra trailing text after the question
-  // (shared material / instruction bleed). Accept only when the stem prefix relation is
-  // unique in both directions and the option texts match exactly in order.
-  const MIN_PREFIX = 8;
+  // A prefix relation is only a *candidate*: archive markdown can append material or
+  // instruction text after a short generic stem, which would otherwise inflate coverage.
+  // The candidate never enters strict counts and its answer comparison is reported apart.
+  const MIN_PREFIX = 12;
+  const GENERIC = /^(下列说法|下列判断|下列选项|以下说法|以下哪项|由此可以推出|根据上述材料|根据这段文字|根据以上材料|上述文字|这段文字)/u;
+  const eligibility = (fp, extra) => {
+    if (fp.normStem.length < MIN_PREFIX) return 'stem-too-short';
+    if (fp.normOpts.length !== 4) return 'option-count-not-4';
+    if (fp.normOpts.some((x) => !x)) return 'empty-option-text';
+    if (new Set(fp.normOpts).size !== fp.normOpts.length) return 'duplicate-option-text';
+    if (GENERIC.test(fp.normStem) && fp.normStem.length < 24) return 'generic-stem';
+    if (extra > 3 * fp.normStem.length + 20) return 'suffix-dominates-stem';
+    return null;
+  };
   const prByNumber = new Map(pr.questions.map((p) => [p.number, fingerprint(p)]));
   const srcExact = new Set(src.questions.map((q) => fingerprint(q).keyExact));
   const exactPrNumbers = new Set(pr.questions.filter((p) => srcExact.has(prByNumber.get(p.number).keyExact)).map((p) => p.number));
@@ -137,7 +149,7 @@ export function comparePaper({ sourceDir, prMarkdown, prPath, sourceId, expected
   const reverseCand = new Map(); // prNumber -> [srcNumber]
   for (const q of src.questions) {
     const fp = fingerprint(q);
-    if (fp.normOpts.filter((x) => x.length > 0).length < 2) continue;
+    if (fp.normOpts.length !== 4 || fp.normOpts.some((x) => !x)) continue;
     const hits = [];
     for (const p of pr.questions) {
       if (exactPrNumbers.has(p.number)) continue;
@@ -145,68 +157,87 @@ export function comparePaper({ sourceDir, prMarkdown, prPath, sourceId, expected
       if (pf.normOpts.length !== fp.normOpts.length) continue;
       if (pf.normOpts.some((o, i) => o !== fp.normOpts[i])) continue;
       const ps = pf.normStem; const ss = fp.normStem;
-      const shortL = Math.min(ps.length, ss.length);
-      if (shortL < MIN_PREFIX) continue;
+      if (Math.min(ps.length, ss.length) < MIN_PREFIX) continue;
       if (ps.startsWith(ss) || ss.startsWith(ps)) hits.push(p.number);
     }
     if (hits.length) { prefixCand.set(q.number, hits); for (const n of hits) push(reverseCand, n, q.number); }
   }
 
   const usedPr = new Set();
+  const compareAnswer = (q, prQ, bucket) => {
+    const sTxt = answerText(q, q.answer); const pTxt = answerText(prQ, pr.answers.get(prQ.number)?.ans ?? null);
+    if (sTxt && pTxt) out[bucket === 'strict' ? (sTxt === pTxt ? 'answerSameStrict' : 'answerConflictStrict')
+      : (sTxt === pTxt ? 'answerSameCandidate' : 'answerConflictCandidate')].push(q.number);
+    else out[bucket === 'strict' ? 'answerUnknownStrict' : 'answerUnknownCandidate'].push(q.number);
+  };
   for (const q of src.questions) {
     const fp = fingerprint(q);
     const exact = sIdx.get(fp.keyExact) ?? [];
     const setHits = sSetIdx.get(fp.keySet) ?? [];
-    let prHit = null; let orderChanged = false; let prefixMatched = false;
-    if (exact.length === 1 && (prIdx.get(fp.keyExact) ?? []).length === 1) prHit = (prIdx.get(fp.keyExact) ?? [])[0];
+    let prHit = null; let orderChanged = false; let status = null;
+    if (exact.length === 1 && (prIdx.get(fp.keyExact) ?? []).length === 1) { prHit = (prIdx.get(fp.keyExact) ?? [])[0]; status = 'exact_unique'; }
     else if (setHits.length === 1 && (prSetIdx.get(fp.keySet) ?? []).length === 1 && !usedPr.has((prSetIdx.get(fp.keySet) ?? [])[0]?.q.number)) {
-      prHit = (prSetIdx.get(fp.keySet) ?? [])[0]; orderChanged = true;
+      prHit = (prSetIdx.get(fp.keySet) ?? [])[0]; orderChanged = true; status = 'option_diff';
     }
     if (!prHit) {
       const cands = prefixCand.get(q.number) ?? [];
       const only = cands.length === 1 ? cands[0] : null;
       if (only != null && (reverseCand.get(only) ?? []).length === 1 && !usedPr.has(only)) {
         const prEntry = pr.questions.find((p) => p.number === only);
-        prHit = { side: 'pr', q: prEntry, fp: prByNumber.get(only) };
-        const ps = prHit.fp.normStem; const ss = fp.normStem;
-        out.stemPrefixMatch.push(q.number);
-        out.prStemExtraChars[q.number] = ps.length - ss.length;
-        prefixMatched = true;
+        const ps = prByNumber.get(only).normStem; const ss = fp.normStem;
+        const why = eligibility(fp, ps.length - ss.length);
+        if (!why) {
+          prHit = { side: 'pr', q: prEntry, fp: prByNumber.get(only) };
+          status = 'prefix_candidate';
+          out.prStemExtraChars[q.number] = ps.length - ss.length;
+        } else out.prefixRejected.push({ number: q.number, reason: why });
       }
     }
     if (!prHit) {
-      // stem matched but option content differs?
+      if (q.stub) continue;
       const stemHits = pr.questions.filter((p) => fingerprint(p).stemKey === fp.stemKey);
-      if (stemHits.length === 1) out.stemSameOptionDiff.push(q.number);
-      else out.unmatchedSource.push(q.number);
+      if (stemHits.length === 1) { out.stemSameOptionDiff.push(q.number); status = 'option_diff'; }
+      else { out.unmatchedSource.push(q.number); status = 'unmatched'; }
       continue;
     }
     if (usedPr.has(prHit.q.number)) { out.ambiguous.push(q.number); continue; }
     usedPr.add(prHit.q.number);
-    out.strongMatches.push(q.number);
-    if (orderChanged) out.optionOrderChanged.push(q.number);
-    // answers resolved through option text identity
-    const sLetter = q.answer; const pLetter = pr.answers.get(prHit.q.number)?.ans ?? null;
-    const sTxt = answerText(q, sLetter); const pTxt = answerText(prHit.q, pLetter);
-    if (sTxt && pTxt) { if (sTxt === pTxt) out.answerMatch.push(q.number); else out.answerConflict.push(q.number); }
-    else out.answerUnknown.push(q.number);
-    // explanations
-    const sExp = norm(q.explanation); const pExp = norm(pr.answers.get(prHit.q.number)?.explanation ?? '');
-    if (!sExp || !pExp) out.explanationMissing.push(q.number);
-    else if (sExp === pExp) out.explanationSame.push(q.number);
-    else out.explanationDiff.push(q.number);
+    if (q.stub) { out.stubContentMatched.push(q.number); continue; }
+    if (status === 'exact_unique') out.strictMatches.push(q.number);
+    else if (status === 'prefix_candidate') out.prefixCandidates.push(q.number);
+    else if (orderChanged) out.optionOrderChanged.push(q.number);
+    compareAnswer(q, prHit.q, status === 'exact_unique' ? 'strict' : 'candidate');
+    // explanations are only scoped to strict exact matches
+    if (status === 'exact_unique') {
+      const sExp = norm(q.explanation); const pExp = norm(pr.answers.get(prHit.q.number)?.explanation ?? '');
+      if (!sExp || !pExp) out.explanationMissing.push(q.number);
+      else if (sExp === pExp) out.explanationSame.push(q.number);
+      else out.explanationDiff.push(q.number);
+    }
     if (q.img || prHit.q.img) out.imageQuestions.push(q.number);
   }
   out.unmatchedPr = pr.questions.filter((p) => !usedPr.has(p.number)).map((p) => p.number);
-  const strong = out.strongMatches.length;
-  out.optionSame = strong - out.stemSameOptionDiff.length - out.optionOrderChanged.length;
-  out.stemSame = strong + out.stemSameOptionDiff.length;
-  out.stemPrefixCount = out.stemPrefixMatch.length;
-  out.answerComparable = out.answerMatch.length + out.answerConflict.length;
-  out.qaComplete = strong === src.questions.length && src.questions.length === pr.questions.length &&
-    out.answerConflict.length === 0 && out.answerUnknown.length === 0 &&
+  const strict = out.strictMatches.length;
+  out.strictMatchCount = strict;
+  out.prefixCandidateCount = out.prefixCandidates.length;
+  out.optionDiffCount = out.stemSameOptionDiff.length + out.optionOrderChanged.length;
+  out.unmappedQuestionCount = out.unmatchedSource.length;
+  out.sourceStubCount = src.questions.filter((q) => q.stub).length;
+  out.matchStatusCounts = { exact_unique: strict, prefix_candidate: out.prefixCandidates.length,
+    option_diff: out.optionDiffCount, unmatched: out.unmatchedSource.length,
+    source_stub: out.sourceStubCount, ambiguous: out.ambiguous.length };
+  out.partitionSum = strict + out.prefixCandidates.length + out.optionDiffCount + out.unmatchedSource.length + out.sourceStubCount + out.ambiguous.length;
+  out.partitionConsistent = out.partitionSum === src.questions.length;
+  out.matchStrength = 'strict-exact';
+  out.legacyStrongMatchesInclusive = strict + out.prefixCandidates.length + out.optionDiffCount;
+  out.coverageClaimEligible = false;
+  out.strictAnswerComparable = out.answerSameStrict.length + out.answerConflictStrict.length;
+  out.candidateAnswerComparable = out.answerSameCandidate.length + out.answerConflictCandidate.length;
+  out.explanationScope = 'strict-exact';
+  out.qaComplete = strict === src.questions.length && src.questions.length === pr.questions.length &&
+    out.answerConflictStrict.length === 0 && out.answerUnknownStrict.length === 0 &&
     out.explanationMissing.length === 0 && out.stemSameOptionDiff.length === 0 && out.optionOrderChanged.length === 0 &&
-    out.stemPrefixMatch.length === 0;
+    out.prefixCandidates.length === 0 && out.ambiguous.length === 0 && out.sourceStubCount === 0;
   out.qaVerdict = out.qaComplete ? 'PENDING_REVIEW_STRONG_MATCH' : 'PENDING_REVIEW';
   out.structuralOnly = !out.qaComplete;
   out.imageShaEvidence = out.imageQuestions.length === 0 ? 'not-applicable'
@@ -216,7 +247,7 @@ export function comparePaper({ sourceDir, prMarkdown, prPath, sourceId, expected
   out.independentQa = 0;
   if (expected.docSha12 && expected.docSha12 !== out.sourceDocSha12) out.reasons.push('stale-source-sha');
   out.revision = sha12(JSON.stringify({ doc: out.sourceDocSha12, pr: out.prBlobSha12,
-    answers: out.answerMatch.length, conflicts: out.answerConflict.length, strong }));
+    strict: out.answerSameStrict.length, conflicts: out.answerConflictStrict.length, matched: strict }));
   return out;
 }
 

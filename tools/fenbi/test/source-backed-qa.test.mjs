@@ -39,7 +39,7 @@ test('missing question -> unmatched, no fabricated match', () => {
   const pr = prDoc([q(1, 's1', ['a', 'b', 'c', 'd'], 'A'), q(2, 's2', ['e', 'f', 'g', 'h'], 'B')]);
   const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
   assert.deepEqual(r.unmatchedSource, [3]);
-  assert.equal(r.strongMatches.length, 2);
+  assert.equal(r.strictMatchCount, 2);
   assert.equal(r.qaVerdict, 'PENDING_REVIEW');
 });
 
@@ -47,8 +47,8 @@ test('qid/PR number swap is matched by content, not number', () => {
   const sd = tmp(srcDoc([q(1, 'alpha', ['a', 'b', 'c', 'd'], 'A'), q(2, 'beta', ['e', 'f', 'g', 'h'], 'B')]));
   const pr = prDoc([q(1, 'beta', ['e', 'f', 'g', 'h'], 'B'), q(2, 'alpha', ['a', 'b', 'c', 'd'], 'A')]);
   const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
-  assert.deepEqual(r.strongMatches.sort(), [1, 2]);
-  assert.equal(r.answerMatch.length, 2);
+  assert.deepEqual(r.strictMatches.sort(), [1, 2]);
+  assert.equal(r.answerSameStrict.length, 2);
 });
 
 test('answer section at end and last question are parsed without swallowing', () => {
@@ -57,16 +57,17 @@ test('answer section at end and last question are parsed without swallowing', ()
   const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
   assert.equal(r.prDetailsBlocks, 2);
   assert.equal(r.prQ, 2);
-  assert.deepEqual(r.answerMatch.sort(), [1, 2]);
+  assert.deepEqual(r.answerSameStrict.sort(), [1, 2]);
 });
 
-test('option reorder: letter changed but option text answer matches', () => {
+test('option reorder: not strict, answer still compared through option text', () => {
   const sd = tmp(srcDoc([q(1, 'stem', ['x', 'y', 'z', 'w'], 'A')]));
   const pr = prDoc([q(1, 'stem', ['y', 'x', 'z', 'w'], 'B')]);
   const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
   assert.deepEqual(r.optionOrderChanged, [1]);
-  assert.deepEqual(r.answerMatch, [1]);
-  assert.deepEqual(r.answerConflict, []);
+  assert.deepEqual(r.strictMatches, []);
+  assert.deepEqual(r.answerSameCandidate, [1]);
+  assert.deepEqual(r.answerConflictStrict, []);
   assert.equal(r.qaVerdict, 'PENDING_REVIEW');
 });
 
@@ -96,17 +97,40 @@ test('stale source SHA is recorded', () => {
   assert.equal(r.revision.length, 12);
 });
 
-test('unique PR stem with extra trailing text still matches, flagged prefix', () => {
+test('unique long stem prefix is a candidate, never strict', () => {
   const s = '这是第一道题的题干内容需要判断下列说法';
   const sd = tmp(srcDoc([q(1, s, ['甲项', '乙项', '丙项', '丁项'], 'A')]));
   const pr = prDoc([q(1, s + '根据上述材料下列哪一项是正确的', ['甲项', '乙项', '丙项', '丁项'], 'A')]);
   const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
-  assert.deepEqual(r.strongMatches, [1]);
-  assert.deepEqual(r.stemPrefixMatch, [1]);
-  assert.ok(r.prStemExtraChars[1] > 0);
-  assert.deepEqual(r.answerMatch, [1]);
+  assert.deepEqual(r.prefixCandidates, [1]);
+  assert.deepEqual(r.strictMatches, []);
+  assert.deepEqual(r.answerSameCandidate, [1]);
+  assert.equal(r.answerSameStrict.length, 0);
   assert.equal(r.qaVerdict, 'PENDING_REVIEW');
-  assert.equal(r.structuralOnly, true);
+  assert.equal(r.coverageClaimEligible, false);
+});
+
+test('generic stem with identical options is rejected as candidate', () => {
+  const s = '根据这段文字，下列说法正确的是';
+  const sd = tmp(srcDoc([q(1, s, ['甲项', '乙项', '丙项', '丁项'], 'A')]));
+  const pr = prDoc([q(1, s + '甲项和乙项在文中均有提及', ['甲项', '乙项', '丙项', '丁项'], 'A')]);
+  const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
+  assert.deepEqual(r.prefixCandidates, []);
+  assert.deepEqual(r.strictMatches, []);
+  assert.ok(r.prefixRejected.some((x) => x.number === 1 && /generic-stem|stem-too-short/u.test(x.reason)));
+  assert.equal(r.answerSameCandidate.length, 0);
+  assert.equal(r.answerSameStrict.length, 0);
+});
+
+test('duplicate option texts are ambiguous and never matched', () => {
+  const sd = tmp(srcDoc([q(1, '重复选项题干内容较长一些', ['同项', '同项', '丙项', '丁项'], 'A')]));
+  const pr = prDoc([q(1, '重复选项题干内容较长一些' + '补充说明文字内容', ['同项', '同项', '丙项', '丁项'], 'A')]);
+  const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
+  assert.deepEqual(r.strictMatches, []);
+  assert.deepEqual(r.prefixCandidates, []);
+  assert.ok(r.prefixRejected.some((x) => x.number === 1 && x.reason === 'duplicate-option-text'));
+  assert.equal(r.unmatchedSource.includes(1), true);
+  assert.equal(r.answerSameStrict.length + r.answerSameCandidate.length, 0);
 });
 
 test('ambiguous PR stem prefix is never forced into a match', () => {
@@ -115,8 +139,8 @@ test('ambiguous PR stem prefix is never forced into a match', () => {
   const pr = prDoc([q(1, s + '甲乙两种补充说明文字', ['甲项', '乙项', '丙项', '丁项'], 'A'),
     q(2, s + '丙丁两种补充说明文字', ['甲项', '乙项', '丙项', '丁项'], 'A')]);
   const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
-  assert.deepEqual(r.strongMatches, []);
-  assert.deepEqual(r.stemPrefixMatch, []);
+  assert.deepEqual(r.strictMatches, []);
+  assert.deepEqual(r.prefixCandidates, []);
   assert.deepEqual(r.unmatchedSource, [1]);
 });
 
@@ -128,6 +152,42 @@ test('schema B: inline details without answer section still parses', () => {
   assert.equal(r.prHasAnswerSection, false);
   assert.equal(r.prDetailsBlocks, 2);
   assert.equal(r.prQ, 2);
-  assert.deepEqual(r.answerMatch.sort(), [1, 2]);
+  assert.deepEqual(r.answerSameStrict.sort(), [1, 2]);
   assert.deepEqual(r.unmatchedSource, []);
+});
+
+test('strict exact requires identical stem and all four options', () => {
+  const sd = tmp(srcDoc([q(1, '严格同文题干内容', ['甲项', '乙项', '丙项', '丁项'], 'C', '解释文字')]));
+  const pr = prDoc([q(1, '严格同文题干内容', ['甲项', '乙项', '丙项', '丁项'], 'C', '解释文字')]);
+  const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
+  assert.deepEqual(r.strictMatches, [1]);
+  assert.equal(r.strictMatchCount, 1);
+  assert.equal(r.answerSameStrict.length, 1);
+  assert.equal(r.explanationSame.length, 1);
+  assert.equal(r.qaVerdict, 'PENDING_REVIEW_STRONG_MATCH');
+  assert.equal(r.coverageClaimEligible, false);
+  assert.equal(r.partitionConsistent, true);
+});
+
+test('a stub question that matches content stays stub, not strict', () => {
+  const s = '题目正在全力以赴征集，请稍后再试';
+  const sd = tmp(srcDoc([q(1, s, ['甲项', '乙项', '丙项', '丁项'], 'A'), q(2, '第二题题干内容', ['戊', '己', '庚', '辛'], 'B')]));
+  const pr = prDoc([q(1, '另一道题目内容', ['壬', '癸', '子', '丑'], 'A'), q(2, '第二题题干内容', ['戊', '己', '庚', '辛'], 'B')]);
+  const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
+  assert.equal(r.sourceStubCount, 1);
+  assert.deepEqual(r.strictMatches, [2]);
+  assert.equal(r.partitionSum, r.sourceQ);
+  assert.equal(r.partitionConsistent, true);
+});
+
+test('material block shared by two PR questions does not create a candidate', () => {
+  const s = '某段材料之后的第一道设问内容';
+  const sd = tmp(srcDoc([q(1, s, ['甲项', '乙项', '丙项', '丁项'], 'A')]));
+  const shared = '共同材料段落说明文字';
+  const pr = prDoc([q(1, shared + s, ['甲项', '乙项', '丙项', '丁项'], 'A'),
+    q(2, shared + s + '另一处补充', ['甲项', '乙项', '丙项', '丁项'], 'A')]);
+  const r = comparePaper({ sourceDir: sd, prMarkdown: pr, prPath: 'p.md', sourceId: '1' });
+  assert.deepEqual(r.prefixCandidates, []);
+  assert.deepEqual(r.strictMatches, []);
+  assert.equal(r.unmatchedSource.includes(1), true);
 });
