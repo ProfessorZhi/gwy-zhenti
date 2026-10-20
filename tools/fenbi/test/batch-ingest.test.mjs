@@ -75,3 +75,36 @@ test('wrong question count and duplicate source numbering fail closed', () => {
   const md=renderIngest(a);
   assert.ok(structureGrade(a,md,{dimensions:{images:{status:'complete'}}}).blockers.includes('question-numbers-not-contiguous'));
 });
+
+
+test('rendered legacy fallback containing collection stub is C, never grade A', () => {
+  const q=[1,2,3,4].map(n=>makeQuestion(n,body(n)));
+  q[3].contentHtml='题目正在全力以赴征集，将会第一时间上传';
+  const old=oldPaper();
+  const assembly=assemble(source(q),old);
+  assert.equal(assembly.counters.inheritedStubs,1);
+  const clean=renderIngest(assembly,old);
+  assert.equal(structureGrade(assembly,clean,{dimensions:{images:{status:'complete'}}}).grade,'A');
+  const dirty=clean.replace(body(4),'题目缺失');
+  const grade=structureGrade(assembly,dirty,{dimensions:{images:{status:'complete'}}});
+  assert.equal(grade.grade,'C');
+  assert.ok(grade.blockers.includes('rendered-collection-stub-remains'));
+});
+test('option-only collection stub is C even when its stem is valid', () => {
+  const q=[1,2,3,4].map(n=>makeQuestion(n,body(n)));
+  q[1].options[0].contentHtml='网友未回忆起';
+  const assembly=assemble(source(q),'');
+  const md=renderIngest(assembly);
+  const grade=structureGrade(assembly,md,{dimensions:{images:{status:'complete'}}});
+  assert.equal(grade.grade,'C');
+  assert.ok(grade.blockers.includes('rendered-collection-stub-remains'));
+});
+test('explanation-only collection stub cannot pass rendered grade A', () => {
+  const q=[1,2,3,4].map(n=>makeQuestion(n,body(n)));
+  q[0].explanationHtml='题目正在全力以赴征集';
+  const assembly=assemble(source(q),'');
+  const md=renderIngest(assembly);
+  const grade=structureGrade(assembly,md,{dimensions:{images:{status:'complete'}}});
+  assert.equal(grade.grade,'C');
+  assert.ok(grade.blockers.includes('rendered-collection-stub-remains'));
+});
