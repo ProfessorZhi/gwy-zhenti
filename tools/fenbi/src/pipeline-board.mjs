@@ -38,17 +38,22 @@ export function speed(timestamps, now) {
 
 export async function buildBoard({ workDir, repoRoot, papersDir, papersRoot = papersDir || path.join(workDir, 'papers'), ingestRoot = path.join(workDir, 'batch-ingest'), now = Date.now() }) {
   const times = [], regions = {};
-  let questions = 0, answered = 0;
+  let questions = 0, answered = 0, countedPapers = 0, captureTimeUnknown = 0;
   for (const name of await dirs(papersRoot)) {
     const base = path.join(papersRoot, name);
     const cp = await readJson(path.join(base, 'checkpoint.json'));
     const runSummary = await readJson(path.join(base, 'run-summary.json'));
     const documentFile = cp?.documentFile ? path.join(base, cp.documentFile) : path.join(base, 'document.json');
     const doc = await readJson(documentFile);
-    const stamp = Date.parse(cp?.updatedAt ?? runSummary?.at ?? '');
-    if (Number.isFinite(stamp)) times.push(stamp);
-    else { const stat = await fs.stat(documentFile).catch(() => null); if (stat) times.push(stat.mtimeMs); }
-    const area = doc?.identity?.area || 'unknown';
+    if (!doc?.identity || !Array.isArray(doc.questions)) continue;
+    countedPapers++;
+    // A backfill changes checkpoint.updatedAt and the file mtime without adding a new paper.
+    // Only original capture provenance is evidence for new-paper/hour throughput.
+    const firstCapture = [doc.source?.capturedAt, runSummary?.startedAt, runSummary?.at, cp?.createdAt]
+      .map(x => Date.parse(x ?? '')).find(Number.isFinite);
+    if (firstCapture !== undefined) times.push(firstCapture);
+    else captureTimeUnknown++;
+    const area = doc.identity.area || 'unknown';
     const r = regions[area] ||= { captured: 0, withAnswers: 0, A: 0, C: 0, promoted: 0 };
     r.captured++;
     const qs = doc?.questions || [];
@@ -88,7 +93,8 @@ export async function buildBoard({ workDir, repoRoot, papersDir, papersRoot = pa
     (regions[winner.receipt.area] ||= { captured: 0, withAnswers: 0, A: 0, C: 0, promoted: 0 }).promoted++;
   }
   const stop = await fs.readFile(path.join(workDir, 'STOP'), 'utf8').then(() => true).catch(() => false);
-  return { generatedAt: new Date(now).toISOString(), stopped: stop, speed: speed(times, now),
+  const captureSpeed = { ...speed(times, now), captured: countedPapers, captureTimeUnknown };
+  return { generatedAt: new Date(now).toISOString(), stopped: stop, speed: captureSpeed,
     questions, answered, A, C, promoted, regions };
 }
 
@@ -97,7 +103,8 @@ export function renderBoard(b) {
     `# 粉笔流水线看板（${b.generatedAt}）`, '',
     `| 指标 | 数值 |`, `|---|---:|`,
     `| 状态 | ${b.stopped ? '**已停止（STOP）**' : '运行中'} |`,
-    `| 最近 1 小时抓取（含空等的真实速度） | ${s.lastHourPapers} 卷 |`,
+    `| 最近 1 小时首次采集（有来源时间证据） | ${s.lastHourPapers} 卷 |`,
+    `| 首次采集时间未知 | ${s.captureTimeUnknown ?? 0} 卷 |`,
     `| 连续抓取时平均每卷 | ${s.activeSecondsPerPaper ?? '—'} 秒 |`,
     `| 卷间空等 >2 分钟 | ${s.idleGaps} 次，共 ${s.idleMinutesTotal} 分钟 |`,
     `| 距上一卷 | ${s.lastCaptureMinutesAgo ?? '—'} 分钟 |`,
