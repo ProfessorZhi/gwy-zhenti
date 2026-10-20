@@ -15,6 +15,13 @@ const sha = b => crypto.createHash('sha256').update(b).digest('hex');
 const readJson = f => fs.readFile(f, 'utf8').then(JSON.parse).catch(() => null);
 const dirs = async root => (await fs.readdir(root, { withFileTypes: true }).catch(() => [])).filter(e => e.isDirectory()).map(e => e.name);
 const text = h => String(h ?? '').replace(/<[^>]*>/g, '').trim();
+// Require an explicit UTC offset: naive local times vary with the host timezone.
+// Neither a backfill checkpoint creation time nor a document mtime proves first capture.
+const firstCaptureTimestamp = (raw, now) => {
+  if (typeof raw !== 'string' || !/(?:Z|[+-]\\d{2}:\\d{2})$/iu.test(raw.trim())) return null;
+  const t = Date.parse(raw);
+  return Number.isFinite(t) && t <= now ? t : null;
+};
 
 export function speed(timestamps, now) {
   const t = timestamps.filter(Number.isFinite).sort((a, b) => a - b);
@@ -37,23 +44,35 @@ export function speed(timestamps, now) {
 }
 
 export async function buildBoard({ workDir, repoRoot, papersDir, papersRoot = papersDir || path.join(workDir, 'papers'), ingestRoot = path.join(workDir, 'batch-ingest'), now = Date.now() }) {
-  const times = [], regions = {};
+  const times = [], regions = {}, seenSources = new Map();
   let questions = 0, answered = 0, countedPapers = 0, captureTimeUnknown = 0;
-  for (const name of await dirs(papersRoot)) {
+  let duplicateSourceDirs = 0, crossAreaIdentityConflicts = 0;
+  for (const name of (await dirs(papersRoot)).sort()) {
     const base = path.join(papersRoot, name);
     const cp = await readJson(path.join(base, 'checkpoint.json'));
     const runSummary = await readJson(path.join(base, 'run-summary.json'));
     const documentFile = cp?.documentFile ? path.join(base, cp.documentFile) : path.join(base, 'document.json');
     const doc = await readJson(documentFile);
     if (!doc?.identity || !Array.isArray(doc.questions)) continue;
+    const id = doc.identity;
+    const area = id.area || 'unknown';
+    const sourceId = id.id ?? id.sourceId;
+    if (sourceId != null && String(sourceId).trim()) {
+      const sourceKey = String(id.subject ?? 'unknown') + ':' + String(sourceId);
+      if (seenSources.has(sourceKey)) {
+        duplicateSourceDirs++;
+        if (seenSources.get(sourceKey) !== area) crossAreaIdentityConflicts++;
+        continue;
+      }
+      seenSources.set(sourceKey, area);
+    }
     countedPapers++;
-    // A backfill changes checkpoint.updatedAt and the file mtime without adding a new paper.
-    // Only original capture provenance is evidence for new-paper/hour throughput.
-    const firstCapture = [doc.source?.capturedAt, runSummary?.startedAt, runSummary?.at, cp?.createdAt]
-      .map(x => Date.parse(x ?? '')).find(Number.isFinite);
+    // Backfill can change checkpoint timestamps and the file mtime. Ignore both.
+    // A first-capture timestamp is usable only with an explicit timezone and no future skew.
+    const firstCapture = [doc.source?.capturedAt, runSummary?.startedAt, runSummary?.at]
+      .map(x => firstCaptureTimestamp(x, now)).find(x => x !== null);
     if (firstCapture !== undefined) times.push(firstCapture);
     else captureTimeUnknown++;
-    const area = doc.identity.area || 'unknown';
     const r = regions[area] ||= { captured: 0, withAnswers: 0, A: 0, C: 0, promoted: 0 };
     r.captured++;
     const qs = doc?.questions || [];
@@ -93,7 +112,8 @@ export async function buildBoard({ workDir, repoRoot, papersDir, papersRoot = pa
     (regions[winner.receipt.area] ||= { captured: 0, withAnswers: 0, A: 0, C: 0, promoted: 0 }).promoted++;
   }
   const stop = await fs.readFile(path.join(workDir, 'STOP'), 'utf8').then(() => true).catch(() => false);
-  const captureSpeed = { ...speed(times, now), captured: countedPapers, captureTimeUnknown };
+  const captureSpeed = { ...speed(times, now), captured: countedPapers, captureTimeUnknown,
+    duplicateSourceDirs, crossAreaIdentityConflicts };
   return { generatedAt: new Date(now).toISOString(), stopped: stop, speed: captureSpeed,
     questions, answered, A, C, promoted, regions };
 }
@@ -105,6 +125,8 @@ export function renderBoard(b) {
     `| 状态 | ${b.stopped ? '**已停止（STOP）**' : '运行中'} |`,
     `| 最近 1 小时首次采集（有来源时间证据） | ${s.lastHourPapers} 卷 |`,
     `| 首次采集时间未知 | ${s.captureTimeUnknown ?? 0} 卷 |`,
+    `| 重复来源目录（已去重） | ${s.duplicateSourceDirs ?? 0} 个 |`,
+    `| 跨地区来源ID冲突（待人工归属） | ${s.crossAreaIdentityConflicts ?? 0} 个 |`,
     `| 连续抓取时平均每卷 | ${s.activeSecondsPerPaper ?? '—'} 秒 |`,
     `| 卷间空等 >2 分钟 | ${s.idleGaps} 次，共 ${s.idleMinutesTotal} 分钟 |`,
     `| 距上一卷 | ${s.lastCaptureMinutesAgo ?? '—'} 分钟 |`,
