@@ -18,7 +18,7 @@ const text = h => String(h ?? '').replace(/<[^>]*>/g, '').trim();
 // Require an explicit UTC offset: naive local times vary with the host timezone.
 // Neither a backfill checkpoint creation time nor a document mtime proves first capture.
 const firstCaptureTimestamp = (raw, now) => {
-  if (typeof raw !== 'string' || !/(?:Z|[+-]\\d{2}:\\d{2})$/iu.test(raw.trim())) return null;
+  if (typeof raw !== 'string' || !/(?:Z|[+-]\d{2}:\d{2})$/iu.test(raw.trim())) return null;
   const t = Date.parse(raw);
   return Number.isFinite(t) && t <= now ? t : null;
 };
