@@ -56,7 +56,7 @@ function grantFor (grants, paperPath) {
   return grants.filter(g => g?.paperPath === paperPath);
 }
 
-async function verifyTrustedFile (trustedRoot, relPath, expectedSha, label, file) {
+export async function verifyTrustedFile (trustedRoot, relPath, expectedSha, label, file) {
   if (!trustedRoot) return [`trusted-root-missing:${file}`];
   if (typeof relPath !== 'string' || relPath.startsWith('/') || relPath.split(/[\\/]/u).includes('..')) {
     return [`${label}-path-invalid:${file}`];
