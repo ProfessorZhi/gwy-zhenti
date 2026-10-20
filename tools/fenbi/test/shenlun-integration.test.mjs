@@ -23,6 +23,9 @@ const src = (o = {}) => ({
   explanations: [{ questionId: 'q1', state: 'absent' }], ...o,
 });
 const sha = (b) => createHash('sha256').update(b).digest('hex');
+const DOM_EVIDENCE = Buffer.from('<div data-test="synthetic-dom-snapshot">fixture</div>');
+const countEvidence = (p, a) => ({ observedPromptCount: p, observedAnswerCount: a,
+  observedEvidenceSha256: sha(DOM_EVIDENCE) });
 
 // ---------------------------------------------------------------- dispatch
 test('subject dispatch recognises shenlun only', () => {
@@ -179,7 +182,7 @@ test('receipt carries hashes needed by promote', () => {
 test('independently observed three subquestions cannot be collapsed into one structural A question', () => {
   const row = ingestShenlun({
     doc: src(), name: 'synthetic-collapsed',
-    expected: { observedPromptCount: 3, observedAnswerCount: 3 },
+    expected: countEvidence(3, 3), evidenceBytes: DOM_EVIDENCE,
   });
   assert.equal(row.grade, 'C');
   assert.ok(row.issues.includes('observed-prompt-count-mismatch'));
@@ -190,10 +193,11 @@ test('independently observed three subquestions cannot be collapsed into one str
 test('matching independently observed prompt and answer counts allow structural A but not publication', () => {
   const row = ingestShenlun({
     doc: src(), name: 'synthetic-one',
-    expected: { observedPromptCount: 1, observedAnswerCount: 1 },
+    expected: countEvidence(1, 1), evidenceBytes: DOM_EVIDENCE,
   });
   assert.equal(row.grade, 'A');
-  assert.equal(row.boundaryEvidence.status, 'counts-match-only');
+  assert.equal(row.boundaryEvidence.status, 'counts-match-snapshot-bound-only');
+  assert.equal(row.boundaryEvidence.observedEvidenceSha256, sha(DOM_EVIDENCE));
   assert.equal(row.rightsStatus, 'unverified');
   assert.equal(row.cloudStorageBlocked, true);
   assert.throws(() => assertShenlunPromotable(row.doc), /shenlun-cloud-blocked/);
@@ -207,7 +211,7 @@ test('unknown independent prompt count stays explicitly unverified, even if loca
 });
 
 test('invalid independent boundary counts are rejected instead of silently ignored', () => {
-  const row = ingestShenlun({ doc: src(), expected: { observedPromptCount: 0, observedAnswerCount: -1 } });
+  const row = ingestShenlun({ doc: src(), expected: countEvidence(0, -1), evidenceBytes: DOM_EVIDENCE });
   assert.equal(row.grade, 'C');
   assert.ok(row.issues.includes('observed-prompt-count-invalid'));
   assert.ok(row.issues.includes('observed-answer-count-invalid'));
@@ -215,7 +219,38 @@ test('invalid independent boundary counts are rejected instead of silently ignor
 
 test('direct normalized document validation rejects evidence that names more prompts than captured', () => {
   const normalized = ingestShenlun({ doc: src(), name: 'synthetic-base' }).doc;
-  const verdict = validateShenlunDocument(normalized, { expected: { observedPromptCount: 3 } });
+  const verdict = validateShenlunDocument(normalized, {
+    expected: { observedPromptCount: 3, observedEvidenceSha256: sha(DOM_EVIDENCE) },
+    evidenceBytes: DOM_EVIDENCE,
+  });
   assert.equal(verdict.ok, false);
   assert.ok(verdict.problems.some(p => p.code === 'observed-prompt-count-mismatch'));
+});
+
+
+test('asserted counts without the raw DOM snapshot are unbound and must not receive A', () => {
+  const row = ingestShenlun({ doc: src(), expected: countEvidence(1, 1) });
+  assert.equal(row.grade, 'C');
+  assert.ok(row.issues.includes('observed-evidence-unbound'));
+  assert.equal(row.boundaryEvidence.status, 'unbound');
+});
+
+test('a stale or mismatched DOM snapshot cannot support counted prompts', () => {
+  const row = ingestShenlun({
+    doc: src(), expected: countEvidence(1, 1),
+    evidenceBytes: Buffer.from('synthetic DOM changed after count observation'),
+  });
+  assert.equal(row.grade, 'C');
+  assert.ok(row.issues.includes('observed-evidence-sha-mismatch'));
+  assert.equal(row.boundaryEvidence.status, 'unbound');
+});
+
+test('invalid claimed evidence hash is fail-closed', () => {
+  const row = ingestShenlun({
+    doc: src(),
+    expected: { observedPromptCount: 1, observedAnswerCount: 1, observedEvidenceSha256: 'invalid' },
+    evidenceBytes: DOM_EVIDENCE,
+  });
+  assert.equal(row.grade, 'C');
+  assert.ok(row.issues.includes('observed-evidence-unbound'));
 });
