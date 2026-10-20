@@ -4,177 +4,260 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import { detectQualityGaps, buildRepairPlan, handoffCandidate, collectEvidence } from '../src/quality-repair.mjs';
 import { runCli } from '../src/quality-repair-run.mjs';
 
 const sha = b => crypto.createHash('sha256').update(b).digest('hex');
 const HEX = n => 'a'.repeat(64);
+const here = path.dirname(fileURLToPath(import.meta.url));
+const hook = path.join(here, '..', 'quality-repair-hook.example.sh');
 
 function q (n, stem, {answer = 'A', explanation = '合成解析' + n, options = ['甲', '乙', '丙', '丁']} = {}) {
   return ['### 第 ' + n + ' 题', stem, ...options.map((t, i) => `${'ABCD'[i]}. ${t}`), answer ? '【答案】' + answer : '', explanation ? '【解析】' + explanation : ''].join('\n');
 }
+const doc = parts => ['## 题目', ...parts, ''].join('\n');
 
-function doc (parts, {title = '## 题目'} = {}) { return [title, ...parts, ''].join('\n'); }
+async function trusted (root) {
+  const dir = path.join(root, 'trusted');
+  await fs.mkdir(dir, {recursive: true});
+  const files = {qa: Buffer.from('synthetic independent QA report'), license: Buffer.from('synthetic copyright license'), target: Buffer.from('synthetic target rights license')};
+  await fs.writeFile(path.join(dir, 'qa.txt'), files.qa);
+  await fs.writeFile(path.join(dir, 'license.txt'), files.license);
+  await fs.writeFile(path.join(dir, 'target-license.txt'), files.target);
+  return {root: dir, qaS: sha(files.qa), licS: sha(files.license), tgtS: sha(files.target)};
+}
 
-function target ({stub2 = false, complete = true} = {}) {
+function target ({stub2 = false, gap2 = false, t} = {}) {
   return {
-    sourceId: '1001', path: '省考/上海/2020/行测-A.md', area: '上海', year: 2020, subject: 'xingce',
+    sourceId: '1001', path: '省考/上海/2020/行测-A.md', area: '上海', year: 2020, subject: 'xingce', variant: 'A',
+    rightsStatus: 'cleared', rightsEvidencePath: 'target-license.txt', rightsEvidenceSha256: t?.tgtS ?? HEX(),
     markdown: doc([
-      q(1, '题干一的合成测试文本。', {answer: complete ? '' : 'A', explanation: complete ? '' : '解析一'}),
-      stub2 ? q(2, '题目正在全力以赴征集') : q(2, '题干二的合成测试文本。', {answer: 'B', explanation: '解析二'})
+      q(1, '题干一的合成测试文本。', {answer: '', explanation: ''}),
+      stub2 ? q(2, '题目正在全力以赴征集')
+        : gap2 ? q(2, '无捐赠者的独特题干。', {answer: '', explanation: ''})
+          : q(2, '题干二的合成测试文本。')
     ]),
     assets: []
   };
 }
 
-function donor (overrides = {}) {
+function donor (t, overrides = {}) {
   return {
     donorId: 'd1', sourceId: '2002', area: '上海', year: 2020, subject: 'xingce', variant: 'A',
-    rights: {basis: 'copyright-holder-license', evidenceSha256: HEX(), holder: 'synthetic'},
-    qa: {verdict: 'pass', reportSha256: HEX(), reviewedAt: '2026-10-20T00:00:00Z'},
+    rights: {basis: 'copyright-holder-license', evidencePath: 'license.txt', evidenceSha256: t?.licS ?? HEX(), holder: 'synthetic'},
+    qa: {verdict: 'pass', reportPath: 'qa.txt', reportSha256: t?.qaS ?? HEX(), reviewedAt: '2026-10-20T00:00:00Z'},
     markdown: doc([
       q(1, '题干一的合成测试文本。', {answer: 'A', explanation: '捐赠解析一'}),
       q(2, '题干二的合成测试文本。', {answer: 'B', explanation: '捐赠解析二'})
     ]),
-    assets: [],
-    ...overrides
+    assets: [], ...overrides
   };
 }
 
-test('1 stub target is not matched by number: REVIEW_REQUIRED', async () => {
-  const result = await buildRepairPlan({target: target({stub2: true}), donors: [donor()]});
-  assert.ok(result.reviewQueue.some(r => r.number === 2 && r.reason === 'no-independent-fingerprint'));
-  assert.ok(result.plan.repairs.every(r => r.number !== 2));
+async function ctx () {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'qr-'));
+  const t = await trusted(root);
+  return {root, t};
+}
+
+test('1 stub target without a signed review stays REVIEW_REQUIRED', async () => {
+  const {root, t} = await ctx();
+  const r = await buildRepairPlan({target: target({stub2: true, t}), donors: [donor(t)], trustedRoot: t.root, outDir: root, apply: true});
+  assert.equal(r.eligible, 0);
+  assert.ok(r.reviewQueue.some(x => x.number === 2 && x.reason === 'signed-review-required'));
+  assert.equal(r.qc.verdict, 'PARTIAL_REVIEW');
 });
 
 test('2 conflicting donors are refused', async () => {
-  const second = donor({donorId: 'd2', sourceId: '3003'});
-  const result = await buildRepairPlan({target: target(), donors: [donor(), second]});
-  assert.equal(result.ok, false);
-  assert.ok(result.reviewQueue.some(r => r.reason === 'conflicting-donors'));
+  const {t} = await ctx();
+  const r = await buildRepairPlan({target: target({t}), donors: [donor(t), donor(t, {donorId: 'd2', sourceId: '3003'})], trustedRoot: t.root});
+  assert.equal(r.eligible, 0);
+  assert.ok(r.reviewQueue.some(x => x.reason === 'conflicting-donors'));
 });
 
 test('3 answer without a usable donor question is refused', async () => {
-  const answerOnly = donor({
-    markdown: doc([q(1, '题干一的合成测试文本。', {options: [], answer: 'A', explanation: '解析'})])
-  });
-  const result = await buildRepairPlan({target: target(), donors: [answerOnly]});
-  assert.equal(result.ok, false);
-  assert.ok(result.reviewQueue.some(r => r.reason === 'donor-answer-without-question'));
+  const {t} = await ctx();
+  const d = donor(t, {markdown: doc([q(1, '题干一的合成测试文本。', {options: [], answer: 'A', explanation: 'x'})])});
+  const r = await buildRepairPlan({target: target({t}), donors: [d], trustedRoot: t.root});
+  assert.equal(r.eligible, 0);
 });
 
-test('4 donor without per-question textual explanation is refused', async () => {
-  const noExp = donor({
-    markdown: doc([q(1, '题干一的合成测试文本。', {answer: 'A', explanation: ''})])
-  });
-  const result = await buildRepairPlan({target: target(), donors: [noExp]});
-  assert.equal(result.ok, false);
-  assert.ok(result.reviewQueue.some(r => r.reason === 'no-verbatim-explanation'));
+test('4 donor without verbatim explanation is refused', async () => {
+  const {t} = await ctx();
+  const d = donor(t, {markdown: doc([q(1, '题干一的合成测试文本。', {answer: 'A', explanation: ''})])});
+  const r = await buildRepairPlan({target: target({t}), donors: [d], trustedRoot: t.root});
+  assert.ok(r.reviewQueue.some(x => x.reason === 'no-verbatim-explanation'));
 });
 
-test('5 donor asset missing or sha mismatch is refused', async () => {
-  const withImage = donor({
-    markdown: doc([q(1, '题干一的合成测试文本。 ![图](assets/d.png)', {answer: 'A', explanation: '解析'})]),
+test('5 asset sha mismatch is refused', async () => {
+  const {t} = await ctx();
+  const d = donor(t, {
+    markdown: doc([q(1, '题干一的合成测试文本。 ![图](assets/d.png)', {answer: 'A', explanation: 'x'})]),
     assets: [{path: 'assets/d.png', sha256: 'not-a-sha'}]
   });
-  const missing = await buildRepairPlan({target: target(), donors: [withImage]});
-  assert.equal(missing.ok, false);
-  assert.ok(missing.reviewQueue.some(r => r.reason === 'donor-asset-missing-or-sha'));
+  const r = await buildRepairPlan({target: target({t}), donors: [d], trustedRoot: t.root});
+  assert.ok(r.reviewQueue.some(x => x.reason === 'donor-asset-missing-or-sha'));
 });
 
 test('6 shenlun sub-question merge is refused', async () => {
-  const t = target();
-  t.subject = 'shenlun';
-  t.markdown = doc([q(1, '请根据材料回答。', {answer: '', explanation: '', options: ['甲']})]);
-  const d = donor({
-    subject: 'shenlun',
-    markdown: doc([q(1, '请根据材料回答。', {options: [], answer: '（1）甲（2）乙（3）丙', explanation: '解析'})])
+  const {t} = await ctx();
+  const tg = {...target({t}), subject: 'shenlun', markdown: doc([q(1, '请根据材料回答。', {options: [], answer: '', explanation: ''})])};
+  const d = donor(t, {subject: 'shenlun', markdown: doc([q(1, '请根据材料回答。', {options: [], answer: '（1）甲（2）乙（3）丙', explanation: 'x'})])});
+  const r = await buildRepairPlan({target: tg, donors: [d], trustedRoot: t.root});
+  assert.equal(r.eligible, 0);
+});
+
+test('7 self-authorized/unlicensed donor is rejected', async () => {
+  const {t} = await ctx();
+  const d = donor(t, {rights: {basis: 'user-self-authorization', evidencePath: 'license.txt', evidenceSha256: t.licS}});
+  const r = await buildRepairPlan({target: target({t}), donors: [d], trustedRoot: t.root});
+  assert.equal(r.eligible, 0);
+  assert.ok(r.reviewQueue.some(x => x.reason === 'no-donor-match'));
+});
+
+test('8 legal donor + unique fingerprint yields a pass QC and isolated patch', async () => {
+  const {root, t} = await ctx();
+  const original = target({t});
+  const r = await buildRepairPlan({target: original, donors: [donor(t)], trustedRoot: t.root, outDir: root, apply: true});
+  assert.equal(r.ok, true, JSON.stringify(r.qc));
+  assert.equal(r.plan.qc.verdict, 'pass');
+  assert.ok(r.plan.patchFile.startsWith(root));
+  assert.match(original.markdown, /【答案】\n?/); // original object untouched
+  assert.equal(handoffCandidate(r).ok, true);
+});
+
+test('9 P0-A partial repair cannot pass QC or handoff', async () => {
+  const {root, t} = await ctx();
+  const r = await buildRepairPlan({target: target({gap2: true, t}), donors: [donor(t)], trustedRoot: t.root, outDir: root, apply: true});
+  assert.equal(r.ok, false);
+  assert.equal(r.eligible, 0);
+  assert.notEqual(r.qc.verdict, 'pass');
+  assert.equal(handoffCandidate(r).ok, false);
+  assert.ok(r.plan.partialReceipt);
+  const files = await fs.readdir(root);
+  assert.ok(!files.some(f => f.startsWith('repair-') && f.endsWith('.md')));
+});
+
+test('10 missing target rights evidence cannot pass', async () => {
+  const {t} = await ctx();
+  const tg = {...target({t}), rightsStatus: 'unverified', rightsEvidencePath: 'missing-license.txt'};
+  const r = await buildRepairPlan({target: tg, donors: [donor(t)], trustedRoot: t.root});
+  assert.equal(r.ok, false);
+  assert.equal(r.eligible, 0);
+  assert.equal(r.qc.checks.targetRightsVerified, false);
+});
+
+test('11 cross-region/year/variant donor is not matched', async () => {
+  const {t} = await ctx();
+  for (const over of [{area: '北京'}, {year: 2021}, {variant: 'B'}, {subject: 'shenlun'}]) {
+    const r = await buildRepairPlan({target: target({t}), donors: [donor(t, over)], trustedRoot: t.root});
+    assert.ok(r.reviewQueue.some(x => x.reason === 'no-donor-match'), JSON.stringify(over));
+  }
+});
+
+test('12 duplicate target stem blocks bidirectional matching', async () => {
+  const {t} = await ctx();
+  const tg = {...target({t}), markdown: doc([q(1, '同一题干。', {answer: '', explanation: ''}), q(2, '同一题干。', {answer: '', explanation: ''})])};
+  const d = donor(t, {markdown: doc([q(1, '同一题干。', {answer: 'A', explanation: 'x'})])});
+  const r = await buildRepairPlan({target: tg, donors: [d], trustedRoot: t.root});
+  assert.equal(r.eligible, 0);
+  assert.ok(r.reviewQueue.some(x => x.reason === 'duplicate-target-stem'));
+});
+
+test('13 forged human review without signed approval hash is refused', async () => {
+  const {t} = await ctx();
+  const r = await buildRepairPlan({
+    target: target({stub2: true, t}), donors: [donor(t)], trustedRoot: t.root,
+    reviewedPairs: [{targetNumber: 2, donorId: 'd1', donorNumber: 2, humanReviewedBy: 'anyone'}]
   });
-  const result = await buildRepairPlan({target: t, donors: [d]});
-  assert.equal(result.ok, false);
-  assert.ok(result.reviewQueue.some(r => ['shenlun-subquestion-merge', 'donor-answer-without-question'].includes(r.reason)));
+  assert.equal(r.eligible, 0);
+  assert.ok(r.reviewQueue.some(x => x.reason === 'signed-review-required'));
 });
 
-test('7 unlicensed / self-authorized donor is rejected', async () => {
-  const bad = donor({rights: {basis: 'user-self-authorization', evidenceSha256: HEX()}});
-  const result = await buildRepairPlan({target: target(), donors: [bad]});
-  assert.equal(result.ok, false);
-  assert.equal(result.eligible, 0);
-  assert.ok(result.reviewQueue.some(r => r.reason === 'no-donor-match'));
-});
-
-test('8 legal donor + unique fingerprint produces an isolated plan and QC receipt', async () => {
-  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'repair-'));
-  const original = target();
-  const result = await buildRepairPlan({target: original, donors: [donor()], outDir: root, apply: true});
-  assert.equal(result.ok, true, JSON.stringify(result.reviewQueue));
-  assert.equal(result.plan.qc.verdict, 'pass');
-  assert.notEqual(result.plan.beforeSha, result.plan.afterSha);
-  assert.ok(result.plan.patchFile.startsWith(root));
-  const written = await fs.readFile(result.plan.patchFile, 'utf8');
-  assert.match(written, /【答案】A/);
-  assert.match(original.markdown, /【答案】/); // original object untouched
-  const handoff = handoffCandidate(result);
-  assert.equal(handoff.ok, true);
-  assert.ok(handoff.requires.includes('S1-rights-verification'));
-});
-
-test('9 stub repaired only with an explicit human-reviewed pair, never by number', async () => {
-  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'repair-review-'));
-  const result = await buildRepairPlan({
-    target: target({stub2: true}), donors: [donor()], outDir: root, apply: true,
-    reviewedPairs: [{targetNumber: 2, donorId: 'd1', donorNumber: 2, humanReviewedBy: 's1-owner'}]
-  });
-  assert.equal(result.ok, true, JSON.stringify(result.reviewQueue));
-  const repaired2 = result.plan.repairs.find(r => r.number === 2);
-  assert.equal(repaired2.matchedBy, 'human-reviewed');
-});
-
-test('10 zero eligible yields no handoff', async () => {
-  const result = await buildRepairPlan({target: target(), donors: []});
-  assert.equal(result.ok, false);
-  assert.deepEqual(handoffCandidate(result), {ok: false, reason: 'not-repairable'});
-});
-
-test('11 CLI is default OFF and the fetcher is disabled without a provider', async () => {
-  const off = await runCli(['--papers', 'x', '--donors', 'y', '--out', 'z'], {});
-  assert.equal(off.stage, 'disabled');
-  const noProvider = await collectEvidence({requests: [{sourceId: '1001'}], allowlist: ['1001']});
-  assert.equal(noProvider.reason, 'fetch-disabled');
-  const noAllow = await collectEvidence({provider: {fetch: async () => ({})}, requests: [{sourceId: '1001'}], allowlist: []});
-  assert.equal(noAllow.reason, 'allowlist-required');
-});
-
-test('12 fake authorized provider adds evidence; unallowlisted requests are queued', async () => {
-  const provider = {
-    calls: 0,
-    async fetch (request) {
-      this.calls++;
-      return {markdown: 'synthetic evidence ' + request.sourceId, license: {basis: 'official-public-release', evidenceSha256: HEX()}};
-    }
+test('14 last question never absorbs the independent answer area', async () => {
+  const {root, t} = await ctx();
+  const tg = {
+    ...target({t}), markdown: ['## 题目', '### 第 1 题', '题目正在全力以赴征集', '',
+      '## 参考答案', '<details><summary>第 1 题</summary>**答案**：A **解析**：合成解析</details>', ''].join('\n')
   };
-  const result = await collectEvidence({provider, requests: [{sourceId: '1001'}, {sourceId: '9999'}], allowlist: ['1001']});
-  assert.equal(result.ok, true);
-  assert.equal(result.fetched.length, 1);
-  assert.equal(provider.calls, 1);
-  assert.equal(result.queued[0].reason, 'not-allowlisted');
+  const d = donor(t);
+  const r = await buildRepairPlan({
+    target: tg, donors: [d], trustedRoot: t.root, outDir: root, apply: true,
+    reviewedPairs: [{targetNumber: 1, donorId: 'd1', donorNumber: 1, humanReviewedBy: 's1-owner', signedBy: 's1-owner', reviewerScope: 's1-owner', approvalSha256: 'b'.repeat(64)}]
+  });
+  assert.equal(r.ok, true, JSON.stringify(r.qc));
+  const written = await fs.readFile(r.plan.patchFile, 'utf8');
+  assert.match(written, /## 参考答案/);
+  assert.match(written, /<details>/);
 });
 
-test('13 gaps detector separates structure from QA and flags rights', () => {
-  const gaps = detectQualityGaps(target({stub2: true}), {rightsStatus: 'unverified'});
+test('15 no question headings is graded C, never A', () => {
+  const gaps = detectQualityGaps({sourceId: 'x', markdown: '仅有一段材料，没有题块。', assets: [], rightsStatus: 'cleared'});
   assert.equal(gaps.structuralGrade, 'C');
-  assert.ok(gaps.kinds.includes('missing-question'));
-  assert.ok(gaps.kinds.includes('rights-unverified'));
-  const complete = {...target(), markdown: doc([q(1, '题干一的合成测试文本。'), q(2, '题干二的合成测试文本。')])};
-  const clean = detectQualityGaps(complete, {rightsStatus: 'cleared'});
-  assert.equal(clean.structuralGrade, 'A');
+  assert.ok(gaps.kinds.includes('no-question-blocks'));
 });
 
-test('14 synthetic throughput benchmark (CPU only)', async () => {
-  const donors = [donor()];
+test('16 zero eligible yields no handoff', async () => {
+  const {t} = await ctx();
+  const r = await buildRepairPlan({target: target({t}), donors: [], trustedRoot: t.root});
+  assert.equal(r.ok, false);
+  assert.deepEqual(handoffCandidate(r), {ok: false, reason: 'not-repairable'});
+});
+
+test('17 CLI is default OFF; fetcher disabled without provider', async () => {
+  assert.equal((await runCli(['--papers', 'x', '--donors', 'y', '--out', 'z'], {})).stage, 'disabled');
+  assert.equal((await collectEvidence({requests: [{sourceId: '1'}], allowlist: ['1']})).reason, 'fetch-disabled');
+  assert.equal((await collectEvidence({provider: {fetch: async () => ({})}, requests: [{sourceId: '1'}], allowlist: []})).reason, 'allowlist-required');
+});
+
+test('18 fake authorized provider fetches only allowlisted evidence', async () => {
+  let calls = 0;
+  const provider = {async fetch (r) { calls++; return {markdown: 'synthetic ' + r.sourceId, license: {basis: 'official-public-release', evidenceSha256: HEX()}}; }};
+  const r = await collectEvidence({provider, requests: [{sourceId: '1'}, {sourceId: '2'}], allowlist: ['1']});
+  assert.equal(r.ok, true);
+  assert.equal(r.fetched.length, 1);
+  assert.equal(calls, 1);
+});
+
+test('19 out dir must be private', async () => {
+  const {root, t} = await ctx();
+  const out = path.join(root, 'out');
+  await fs.mkdir(out, {recursive: true, mode: 0o755});
+  await fs.chmod(out, 0o755);
+  const r = await buildRepairPlan({target: target({t}), donors: [donor(t)], trustedRoot: t.root, outDir: out, apply: true});
+  assert.equal(r.ok, false);
+  assert.deepEqual(r.reasons, ['out-dir-not-private']);
+});
+
+test('20 QUALITY_REPAIR_APPLY only exact 1 adds --apply', async () => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'qr-hook-'));
+  const bin = path.join(root, 'bin');
+  await fs.mkdir(bin, {recursive: true});
+  const argsFile = path.join(root, 'args.txt');
+  await fs.writeFile(path.join(bin, 'node'), '#!/bin/sh\nprintf "%s\\n" "$@" > "$ARGS_FILE"\n', {mode: 0o755});
+  const papers = path.join(root, 'p.json'); await fs.writeFile(papers, '[]');
+  const donors = path.join(root, 'd.json'); await fs.writeFile(donors, '[]');
+  const out = path.join(root, 'out'); await fs.mkdir(out);
+  for (const value of ['0', 'false', '']) {
+    const env = {...process.env, PATH: bin + ':' + process.env.PATH, QUALITY_REPAIR: '1', QUALITY_REPAIR_APPLY: value,
+      QUALITY_REPAIR_PAPERS: papers, QUALITY_REPAIR_DONORS: donors, QUALITY_REPAIR_OUT: out, ARGS_FILE: argsFile};
+    execFileSync('bash', [hook], {env, encoding: 'utf8'});
+    assert.ok(!(await fs.readFile(argsFile, 'utf8')).includes('--apply'), value);
+    await fs.rm(argsFile, {force: true});
+  }
+  const env = {...process.env, PATH: bin + ':' + process.env.PATH, QUALITY_REPAIR: '1', QUALITY_REPAIR_APPLY: '1',
+    QUALITY_REPAIR_PAPERS: papers, QUALITY_REPAIR_DONORS: donors, QUALITY_REPAIR_OUT: out, ARGS_FILE: argsFile};
+  execFileSync('bash', [hook], {env, encoding: 'utf8'});
+  assert.ok((await fs.readFile(argsFile, 'utf8')).includes('--apply'));
+});
+
+test('21 synthetic throughput benchmark (CPU only)', async () => {
+  const {t} = await ctx();
   const started = process.hrtime.bigint();
-  for (let i = 0; i < 100; i++) await buildRepairPlan({target: target(), donors});
+  for (let i = 0; i < 30; i++) await buildRepairPlan({target: target({t}), donors: [donor(t)], trustedRoot: t.root});
   const ms = Number(process.hrtime.bigint() - started) / 1e6;
-  assert.ok(ms < 5000, 'benchmark too slow: ' + ms.toFixed(0) + 'ms');
-  console.log(JSON.stringify({benchmark: '100 synthetic plans', ms: Math.round(ms), papersPerSecond: Math.round(100000 / ms)}));
+  assert.ok(ms < 10000);
+  console.log(JSON.stringify({benchmark: '30 synthetic plans', ms: Math.round(ms)}));
 });

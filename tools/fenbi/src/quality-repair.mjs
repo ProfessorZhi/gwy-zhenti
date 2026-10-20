@@ -48,13 +48,13 @@ function parsePaper (markdown) {
   const qHeading = md.search(/^##\s*题目\s*$/mu);
   const region = md.slice(qHeading >= 0 ? qHeading : 0, regionEnd);
   const heads = [...region.matchAll(/^#{2,3}\s*第\s*(\d+)\s*题[^\n]*$/gmu)]
-    .map(m => ({n: Number(m[1]), qid: m[0].match(/qid\s+([\w-]+)/u)?.[1] ?? null, start: m.index + m[0].length}));
+    .map(m => ({n: Number(m[1]), qid: m[0].match(/qid\s+([\w-]+)/u)?.[1] ?? null, index: m.index, start: m.index + m[0].length}));
   const details = new Map();
   for (const m of md.matchAll(/^<details>\s*<summary>\s*第\s*(\d+)\s*题[\s\S]*?<\/summary>([\s\S]*?)^<\/details>/gmu)) {
     details.set(Number(m[1]), m[2]);
   }
   const questions = heads.map((h, i) => {
-    const body = region.slice(h.start, heads[i + 1]?.start ?? region.length);
+    const body = region.slice(h.start, heads[i + 1]?.index ?? region.length);
     const optRe = /^\s*(?:[-*]\s*\*\*([A-D])\*\*|([A-D])[.、．)])\s*(.+)$/gmu;
     const opts = [...body.matchAll(optRe)].map(m => ({label: m[1] || m[2], text: m[3].trim()}));
     const optionAt = body.search(optRe);
@@ -86,6 +86,7 @@ export function detectQualityGaps (paper, {rightsStatus = 'unverified'} = {}) {
   for (const asset of paper.assets ?? []) {
     if (!HEX64.test(asset.sha256 ?? '')) rows.push({number: null, asset: asset.path ?? null, gaps: ['missing-image-sha']});
   }
+  if (parsed.questions.length === 0) rows.push({number: null, gaps: ['no-question-blocks']});
   if (rightsStatus !== 'cleared') rows.push({number: null, gaps: ['rights-unverified']});
   return {
     sourceId: paper.sourceId, path: paper.path, area: paper.area, year: paper.year, subject: paper.subject,
@@ -95,7 +96,20 @@ export function detectQualityGaps (paper, {rightsStatus = 'unverified'} = {}) {
   };
 }
 
-export function buildDonorRegistry (donors = []) {
+async function verifyTrustedFile (trustedRoot, relPath, expectedSha, label) {
+  if (!trustedRoot) return [`${label}-trusted-root-missing`];
+  if (typeof relPath !== 'string' || relPath.startsWith('/') || relPath.split(/[\\/]/u).includes('..')) return [`${label}-path-invalid`];
+  let rootReal, real;
+  try { rootReal = await fs.realpath(trustedRoot); } catch { return [`${label}-root-unreadable`]; }
+  try { real = await fs.realpath(path.resolve(rootReal, relPath)); } catch { return [`${label}-unreadable`]; }
+  if (!real.startsWith(rootReal + path.sep)) return [`${label}-escape`];
+  const stat = await fs.lstat(real);
+  if (stat.isSymbolicLink() || !stat.isFile()) return [`${label}-not-regular-file`];
+  if (sha(await fs.readFile(real)) !== expectedSha) return [`${label}-sha-mismatch`];
+  return [];
+}
+
+export async function buildDonorRegistry (donors = [], {trustedRoot = null} = {}) {
   const accepted = [], rejected = [];
   for (const donor of donors) {
     const reasons = [];
@@ -105,6 +119,8 @@ export function buildDonorRegistry (donors = []) {
     if (!HEX64.test(donor?.rights?.evidenceSha256 ?? '')) reasons.push('donor-rights-evidence-missing');
     if (donor?.qa?.verdict !== 'pass') reasons.push('donor-qa-not-passed');
     if (!HEX64.test(donor?.qa?.reportSha256 ?? '')) reasons.push('donor-qa-report-missing');
+    reasons.push(...await verifyTrustedFile(trustedRoot, donor?.qa?.reportPath, donor?.qa?.reportSha256, 'donor-qa-report'));
+    reasons.push(...await verifyTrustedFile(trustedRoot, donor?.rights?.evidencePath, donor?.rights?.evidenceSha256, 'donor-rights-evidence'));
     const parsed = parsePaper(donor?.markdown);
     if (!parsed.questions.length) reasons.push('donor-no-questions');
     if (reasons.length) { rejected.push({donorId: donor?.donorId ?? null, sourceId: donor?.sourceId ?? null, reasons}); continue; }
@@ -133,11 +149,11 @@ function donorIndexFor (donors, donorQuestionStem) {
 }
 
 /**
- * Build an isolated repair plan. `outDir` is only written when apply=true.
- * Returns {ok, plan, reasons, reviewQueue} - never throws for expected rejections.
+ * Build an isolated repair plan. `outDir` is only written when apply=true and QC passes;
+ * a QC failure may store a metadata-only PARTIAL_REVIEW receipt, never a publishable patch.
  */
-export async function buildRepairPlan ({target, donors = [], reviewedPairs = [], outDir = null, apply = false}) {
-  const registry = buildDonorRegistry(donors);
+export async function buildRepairPlan ({target, donors = [], reviewedPairs = [], outDir = null, apply = false, trustedRoot = null}) {
+  const registry = await buildDonorRegistry(donors, {trustedRoot});
   const reasons = [];
   const reviewQueue = [];
   const targetParsed = parsePaper(target.markdown);
@@ -145,45 +161,61 @@ export async function buildRepairPlan ({target, donors = [], reviewedPairs = [],
   const gaps = detectQualityGaps(target, {rightsStatus: target.rightsStatus ?? 'unverified'});
   const structural = gaps.gaps.filter(g => !g.gaps.includes('rights-unverified'));
   const plan = {sourceId: target.sourceId, path: target.path, beforeSha: sha(target.markdown), repairs: [], review: [], donorsUsed: []};
+  const identity = donor => donor.area === target.area && Number(donor.year) === Number(target.year) &&
+    donor.subject === target.subject && (donor.variant ?? null) === (target.variant ?? null);
+  const stemCount = new Map();
+  for (const q of targetParsed.questions) { const k = scratch(q.stem); if (k) stemCount.set(k, (stemCount.get(k) ?? 0) + 1); }
+  const donorStemCount = new Map();
+  for (const donor of registry.accepted) for (const q of donor.questions) {
+    const k = scratch(q.stem); if (k) donorStemCount.set(k, (donorStemCount.get(k) ?? 0) + 1);
+  }
 
   for (const gap of structural) {
     if (gap.number === null) { reasons.push(`unfixable-gap:${gap.gaps.join('+')}`); continue; }
     const tq = targetByNo.get(gap.number);
     if (!tq) continue;
     const targetStem = scratch(tq.stem);
-    // A stub or empty stem has no fingerprint: never match by number or by another question's answer.
     if (tq.stub || !targetStem) {
-      const reviewed = reviewedPairs.find(p => Number(p.targetNumber) === Number(tq.number) && p.humanReviewedBy);
-      if (!reviewed) { reviewQueue.push({number: tq.number, reason: 'no-independent-fingerprint', action: 'REVIEW_REQUIRED'}); continue; }
+      const reviewed = reviewedPairs.find(p => Number(p.targetNumber) === Number(tq.number) &&
+        typeof p.signedBy === 'string' && p.signedBy && HEX64.test(p.approvalSha256 ?? '') &&
+        p.reviewerScope === 's1-owner' && p.humanReviewedBy);
+      if (!reviewed) { reviewQueue.push({number: tq.number, reason: 'signed-review-required', action: 'REVIEW_REQUIRED'}); continue; }
       const donor = registry.accepted.find(d => d.donorId === reviewed.donorId);
-      const dq = donor?.questions.find(q => q.number === Number(reviewed.donorNumber));
-      if (!donor || !dq) { reviewQueue.push({number: tq.number, reason: 'reviewed-pair-not-found', action: 'REVIEW_REQUIRED'}); continue; }
+      if (!donor) { reviewQueue.push({number: tq.number, reason: 'reviewed-donor-untrusted', action: 'REVIEW_REQUIRED'}); continue; }
+      if (!identity(donor)) { reviewQueue.push({number: tq.number, reason: 'donor-identity-mismatch', action: 'REVIEW_REQUIRED'}); continue; }
       if (donor.sourceId === target.sourceId) { reviewQueue.push({number: tq.number, reason: 'donor-not-independent', action: 'REVIEW_REQUIRED'}); continue; }
-      if (!dq.stem || dq.stub || dq.options.length < 2 || !dq.answer || !dq.explanation) {
+      const dq = donor.questions.find(q => q.number === Number(reviewed.donorNumber));
+      if (!dq || dq.stub || dq.options.length < 2 || !dq.answer || !dq.explanation) {
         reviewQueue.push({number: tq.number, reason: 'donor-incomplete', action: 'REVIEW_REQUIRED'}); continue;
       }
       plan.repairs.push({
         number: tq.number, donorId: donor.donorId, donorSourceId: donor.sourceId, donorNumber: dq.number,
-        matchedBy: 'human-reviewed',
+        matchedBy: 'signed-human-review', reviewer: reviewed.signedBy,
         replacement: {stem: dq.stem, options: dq.options, answer: dq.answer, explanation: dq.explanation}
       });
       continue;
     }
-    const targetHits = uniqueIndex(registry.accepted, targetStem);
-    const distinctDonors = new Set(targetHits.map(h => h.donor.donorId));
-    if (targetHits.length === 0) { reviewQueue.push({number: tq.number, reason: 'no-donor-match', action: 'REVIEW_REQUIRED'}); continue; }
-    if (distinctDonors.size > 1) { reviewQueue.push({number: tq.number, reason: 'conflicting-donors', action: 'REVIEW_REQUIRED'}); continue; }
-    const {donor, q: dq} = targetHits[0];
+    if ((stemCount.get(targetStem) ?? 0) !== 1) {
+      reviewQueue.push({number: tq.number, reason: 'duplicate-target-stem', action: 'REVIEW_REQUIRED'}); continue;
+    }
+    const hits = [];
+    for (const donor of registry.accepted) {
+      if (!identity(donor)) continue;
+      for (const q of donor.questions) if (scratch(q.stem) === targetStem) hits.push({donor, q});
+    }
+    if (hits.length === 0) { reviewQueue.push({number: tq.number, reason: 'no-donor-match', action: 'REVIEW_REQUIRED'}); continue; }
+    if (hits.length > 1) { reviewQueue.push({number: tq.number, reason: 'conflicting-donors', action: 'REVIEW_REQUIRED'}); continue; }
+    const {donor, q: dq} = hits[0];
     if (donor.sourceId === target.sourceId) { reviewQueue.push({number: tq.number, reason: 'donor-not-independent', action: 'REVIEW_REQUIRED'}); continue; }
-    const backHits = donorIndexFor(registry.accepted, scratch(dq.stem));
-    const backTargets = new Set(backHits.map(h => h.q.number));
-    if (backTargets.size !== 1 || !backTargets.has(tq.number)) { reviewQueue.push({number: tq.number, reason: 'not-bidirectionally-unique', action: 'REVIEW_REQUIRED'}); continue; }
+    // Bidirectional uniqueness over both sides, not just one donor id.
+    if ((donorStemCount.get(scratch(dq.stem)) ?? 0) !== 1 || (stemCount.get(scratch(dq.stem)) ?? 0) !== 1) {
+      reviewQueue.push({number: tq.number, reason: 'not-bidirectionally-unique', action: 'REVIEW_REQUIRED'}); continue;
+    }
     if (dq.stub || dq.options.length < 2 || !dq.answer) { reviewQueue.push({number: tq.number, reason: 'donor-answer-without-question', action: 'REVIEW_REQUIRED'}); continue; }
     if (!dq.explanation) { reviewQueue.push({number: tq.number, reason: 'no-verbatim-explanation', action: 'REVIEW_REQUIRED'}); continue; }
     if (target.subject === 'shenlun' && /(?:[（(][1-9１-９][）)]|[一二三四五]、)/u.test(dq.stem + dq.answer)) {
       reviewQueue.push({number: tq.number, reason: 'shenlun-subquestion-merge', action: 'REVIEW_REQUIRED'}); continue;
     }
-    // Assets referenced by the donor's replacement must exist in the donor asset set with matching sha.
     const refs = [...String(dq.stem + dq.options.map(o => o.text).join(' ')).matchAll(/!\[[^\]]*\]\(([^)\s]+)\)|<img\b[^>]*\bsrc=["']([^"']+)["']/giu)].map(m => m[1] || m[2]);
     const assetMap = new Map((donor.assets ?? []).map(a => [a.path, a.sha256]));
     let assetOk = true;
@@ -202,37 +234,52 @@ export async function buildRepairPlan ({target, donors = [], reviewedPairs = [],
     return {ok: false, reasons: [...new Set(reasons.length ? reasons : ['no-repairable-gaps'])], plan, reviewQueue, review: reviewQueue, eligible: 0};
   }
 
-  const afterMarkdown = renderRepaired(target.markdown, plan.repairs, targetParsed);
+  const afterMarkdown = renderRepaired(target.markdown, plan.repairs);
   plan.afterSha = sha(afterMarkdown);
   plan.repairs = plan.repairs.map(r => ({...r, beforeSha: plan.beforeSha, afterSha: plan.afterSha}));
   plan.donorsUsed = [...new Set(plan.repairs.map(r => r.donorId))];
   plan.review = reviewQueue;
+  const post = detectQualityGaps({...target, markdown: afterMarkdown}, {rightsStatus: target.rightsStatus});
+  const postStructural = post.gaps.filter(g => !g.gaps.includes('rights-unverified'));
+  const targetRightsFile = await verifyTrustedFile(trustedRoot, target.rightsEvidencePath, target.rightsEvidenceSha256, 'target-rights-evidence');
   plan.checks = {
     structurePreserved: parsePaper(afterMarkdown).questions.length === targetParsed.questions.length,
-    noStubRemains: !parsePaper(afterMarkdown).questions.some(q => q.stub && plan.repairs.some(r => r.number === q.number)),
+    allOriginalGapsResolved: postStructural.length === 0,
+    zeroUnreviewedStructural: reviewQueue.length === 0,
     everyRepairComplete: plan.repairs.every(r => r.replacement.options.length >= 2 && r.replacement.answer && r.replacement.explanation),
     donorIndependent: plan.repairs.every(r => r.donorSourceId !== target.sourceId),
-    rightsBasisPresent: registry.accepted.some(d => plan.donorsUsed.includes(d.donorId))
+    donorIdentityMatch: plan.repairs.every(r => registry.accepted.some(d => d.donorId === r.donorId && identity(d))),
+    targetRightsVerified: target.rightsStatus === 'cleared' && HEX64.test(target.rightsEvidenceSha256 ?? '') && targetRightsFile.length === 0,
+    rightsBasisPresent: plan.donorsUsed.length > 0 && plan.donorsUsed.every(id => registry.accepted.some(d => d.donorId === id))
   };
+  const pass = Object.values(plan.checks).every(Boolean);
   const qc = {targetSourceId: target.sourceId, path: target.path, beforeSha: plan.beforeSha, afterSha: plan.afterSha,
-    repairs: plan.repairs.length, checks: plan.checks, verdict: Object.values(plan.checks).every(Boolean) ? 'pass' : 'reject',
+    repairs: plan.repairs.length, checks: plan.checks, verdict: pass ? 'pass' : 'PARTIAL_REVIEW',
+    postGaps: postStructural, review: reviewQueue,
     note: 'local structural QC only; S1 must verify rights and independent QA'};
   plan.qc = qc;
 
   if (apply) {
     if (!outDir) return {ok: false, reasons: ['out-dir-required-for-apply'], plan, reviewQueue, eligible: 0};
     await fs.mkdir(outDir, {recursive: true, mode: 0o700});
+    const stat = await fs.stat(outDir);
+    if ((stat.mode & 0o077) !== 0) return {ok: false, reasons: ['out-dir-not-private'], plan, reviewQueue, eligible: 0};
+    if (!pass) {
+      const partial = path.join(outDir, `partial-${target.sourceId}-${plan.afterSha.slice(0, 12)}.json`);
+      await fs.writeFile(partial, JSON.stringify({verdict: 'PARTIAL_REVIEW', ...qc}, null, 2), {mode: 0o600, flag: 'wx'});
+      plan.partialReceipt = partial;
+      return {ok: false, reasons: ['qc-reject'], plan, reviewQueue, eligible: 0, qc};
+    }
     const patchFile = path.join(outDir, `repair-${target.sourceId}-${plan.afterSha.slice(0, 12)}.md`);
     await fs.writeFile(patchFile, afterMarkdown, {mode: 0o600, flag: 'wx'});
     await fs.writeFile(path.join(outDir, `repair-${target.sourceId}-${plan.afterSha.slice(0, 12)}.receipt.json`), JSON.stringify(qc, null, 2), {mode: 0o600, flag: 'wx'});
     plan.patchFile = patchFile;
   }
-  return {ok: qc.verdict === 'pass', reasons: qc.verdict === 'pass' ? [] : ['qc-reject'], plan, reviewQueue, eligible: plan.repairs.length, qc};
+  return {ok: pass, reasons: pass ? [] : ['qc-reject'], plan, reviewQueue, eligible: pass ? plan.repairs.length : 0, qc};
 }
 
-function renderRepaired (markdown, repairs, parsed) {
+function renderRepaired (markdown, repairs) {
   let out = String(markdown);
-  // Replace only the question block body with the donor's complete question; keep the heading and number.
   for (const repair of repairs) {
     const r = repair.replacement;
     const block = [`### 第 ${repair.number} 题`, r.stem, ...r.options.map(o => `${o.label}. ${o.text}`), '【答案】' + r.answer, '【解析】' + r.explanation].join('\n');
@@ -240,9 +287,17 @@ function renderRepaired (markdown, repairs, parsed) {
     const m = re.exec(out);
     if (!m) continue;
     const start = m.index + m[0].length;
-    const next = out.slice(start).search(/^#{2,3}\s*第\s*\d+\s*题/u);
-    const end = next < 0 ? out.length : start + next;
-    out = out.slice(0, start) + '\n' + block.split('\n').slice(1).join('\n') + '\n' + out.slice(end);
+    const tail = out.slice(start);
+    const nextQ = tail.search(/^#{2,3}\s*第\s*\d+\s*题/mu);
+    let end;
+    if (nextQ >= 0) end = start + nextQ;
+    else {
+      // Never run to EOF: stop at the independent answer area or details block.
+      const boundary = tail.search(/^<details\b|^##\s*(?:参考答案|答案与解析|答案)\s*$/mu);
+      end = boundary >= 0 ? start + boundary : out.length;
+    }
+    const replacement = '\n' + block.split('\n').slice(1).join('\n') + '\n';
+    out = out.slice(0, start) + replacement + out.slice(end);
   }
   return out;
 }

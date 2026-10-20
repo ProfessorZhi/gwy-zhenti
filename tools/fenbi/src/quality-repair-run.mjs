@@ -20,10 +20,10 @@ export async function runCli (argv = process.argv.slice(2), env = process.env) {
   for (let i = 0; i < argv.length; i++) {
     const key = argv[i];
     if (key === '--apply') opts.apply = true;
-    else if (['--papers', '--donors', '--out', '--reviewed'].includes(key)) {
+    else if (['--papers', '--donors', '--out', '--reviewed', '--trusted-root'].includes(key)) {
       const value = argv[++i];
       if (!value) return {ok: false, stage: 'usage', reason: 'missing-value:' + key, usage: USAGE};
-      opts[key.slice(2)] = value;
+      opts[key.slice(2).replaceAll('-', '_')] = value;
     } else return {ok: false, stage: 'usage', reason: 'unknown-option:' + key, usage: USAGE};
   }
   if (!opts.papers || !opts.donors || !opts.out) return {ok: false, stage: 'usage', reason: 'missing-required', usage: USAGE};
@@ -35,7 +35,7 @@ export async function runCli (argv = process.argv.slice(2), env = process.env) {
   let eligible = 0;
   for (const paper of papers) {
     const gaps = detectQualityGaps(paper, {rightsStatus: paper.rightsStatus ?? 'unverified'});
-    const result = await buildRepairPlan({target: paper, donors, reviewedPairs: reviewed, outDir: opts.out, apply: opts.apply});
+    const result = await buildRepairPlan({target: paper, donors, reviewedPairs: reviewed, outDir: opts.out, apply: opts.apply, trustedRoot: opts.trusted_root ?? null});
     if (result.eligible) eligible += result.eligible;
     summaries.push({
       sourceId: paper.sourceId, path: paper.path, gaps: gaps.kinds.length, gapQuestions: gaps.gaps.length,
