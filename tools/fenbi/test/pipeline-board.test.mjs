@@ -268,3 +268,65 @@ test('missing original capture date stays unknown rather than using mutable mtim
   assert.equal(b.speed.lastCaptureMinutesAgo,null);
   assert.match(renderBoard(b),/首次采集时间未知/);
 });
+
+
+test('board counts a duplicated subject-and-source ID only once',async t=>{
+  const root=await fs.mkdtemp(path.join(os.tmpdir(),'fenbi-board-source-dedup-'));
+  t.after(()=>fs.rm(root,{recursive:true,force:true}));
+  const work=path.join(root,'work'),repo=path.join(root,'repo');
+  const now=Date.parse('2026-10-20T10:00:00Z');
+  await fs.mkdir(repo,{recursive:true});
+  for(const folder of ['copy-one','copy-two']){
+    const paper=path.join(work,'papers',folder);
+    await fs.mkdir(paper,{recursive:true});
+    await fs.writeFile(path.join(paper,'document.json'),JSON.stringify({
+      identity:{id:'123',subject:'xingce',area:'浙江'},
+      source:{capturedAt:'2026-10-20T09:30:00Z'},
+      questions:[{answerHtml:'A'}]
+    }));
+  }
+  const b=await buildBoard({workDir:work,repoRoot:repo,now});
+  assert.equal(b.speed.captured,1);
+  assert.equal(b.speed.lastHourPapers,1);
+  assert.equal(b.speed.duplicateSourceDirs,1);
+  assert.equal(b.regions['浙江'].captured,1);
+});
+
+test('naive timezone and recreated checkpoint timestamp never manufacture a fresh capture',async t=>{
+  const root=await fs.mkdtemp(path.join(os.tmpdir(),'fenbi-board-naive-'));
+  t.after(()=>fs.rm(root,{recursive:true,force:true}));
+  const work=path.join(root,'work'),repo=path.join(root,'repo'),paper=path.join(work,'papers','one');
+  const now=Date.parse('2026-10-20T10:00:00Z');
+  await fs.mkdir(paper,{recursive:true});
+  await fs.mkdir(repo,{recursive:true});
+  await fs.writeFile(path.join(paper,'document.json'),JSON.stringify({
+    identity:{id:'123',subject:'xingce',area:'浙江'},
+    source:{capturedAt:'2026-10-20T09:59:00'},
+    questions:[{answerHtml:'A'}]
+  }));
+  await fs.writeFile(path.join(paper,'checkpoint.json'),JSON.stringify({
+    updatedAt:'2026-10-20T09:59:00Z',createdAt:'2026-10-20T09:59:00Z'
+  }));
+  const b=await buildBoard({workDir:work,repoRoot:repo,now});
+  assert.equal(b.speed.captured,1);
+  assert.equal(b.speed.lastHourPapers,0);
+  assert.equal(b.speed.captureTimeUnknown,1);
+  assert.match(renderBoard(b),/首次采集时间未知/);
+});
+
+test('explicit timezone offset is accepted as first-capture evidence',async t=>{
+  const root=await fs.mkdtemp(path.join(os.tmpdir(),'fenbi-board-timezone-'));
+  t.after(()=>fs.rm(root,{recursive:true,force:true}));
+  const work=path.join(root,'work'),repo=path.join(root,'repo'),paper=path.join(work,'papers','one');
+  const now=Date.parse('2026-10-20T10:00:00Z');
+  await fs.mkdir(paper,{recursive:true});
+  await fs.mkdir(repo,{recursive:true});
+  await fs.writeFile(path.join(paper,'document.json'),JSON.stringify({
+    identity:{id:'123',subject:'xingce',area:'浙江'},
+    source:{capturedAt:'2026-10-20T17:30:00+08:00'},
+    questions:[{answerHtml:'A'}]
+  }));
+  const b=await buildBoard({workDir:work,repoRoot:repo,now});
+  assert.equal(b.speed.lastHourPapers,1);
+  assert.equal(b.speed.captureTimeUnknown,0);
+});
