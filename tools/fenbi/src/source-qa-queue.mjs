@@ -232,8 +232,14 @@ export async function evaluateReceipts ({receipts = [], trustedRoot = null, prev
       effectiveComparison: revisionVerified,
       sourceChecked: revisionVerified,
       sourceChanged: changed,
+      // Independent QA review is a quality signal only. It says nothing about whether a
+      // copyright holder granted redistribution rights, so licensing stays false.
+      independentlyReviewed: result.primaryStatus === 'READY_FOR_PRIVATE_REVIEW',
+      readyForPrivateReview: result.primaryStatus === 'READY_FOR_PRIVATE_REVIEW',
       fieldwiseQaPass: result.primaryStatus === 'READY_FOR_PRIVATE_REVIEW',
-      licensed: result.primaryStatus === 'READY_FOR_PRIVATE_REVIEW',
+      rightsClaimReviewed: result.primaryStatus === 'READY_FOR_PRIVATE_REVIEW',
+      rightsInstrumentVerified: false,
+      licensed: false,
       promoted: false
     });
   }
@@ -242,8 +248,13 @@ export async function evaluateReceipts ({receipts = [], trustedRoot = null, prev
     sourceChecked: compared,
     sourceChanged: rows.filter(r => r.sourceChanged).length,
     fieldwiseQaPass: rows.filter(r => r.fieldwiseQaPass).length,
-    licensed: rows.filter(r => r.licensed).length,
+    independentlyReviewed: rows.filter(r => r.independentlyReviewed).length,
+    readyForPrivateReview: rows.filter(r => r.readyForPrivateReview).length,
+    rightsClaimReviewed: rows.filter(r => r.rightsClaimReviewed).length,
+    rightsInstrumentVerified: 0,
+    licensed: 0,
     promoted: 0,
+    rightsNote: 'licensed is always 0: no independent copyright-holder redistribution instrument is verified by this tool',
     states: counts
   };
   return {ok: true, dryRun: true, trust: {usable: trust.ok, reason: trust.ok ? null : trust.reason, version: trust.version ?? null}, summary, rows};

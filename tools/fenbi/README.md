@@ -345,3 +345,21 @@ node --test test/batch-ingest.test.mjs test/batch-ingest-io.test.mjs test/batch-
 node --test test/*.test.mjs
 node --test pipeline/test/*.test.mjs
 ```
+
+## Source-QA queue and licensing boundary
+
+`src/source-qa-queue.mjs` reads metadata-only QA receipts and reports
+`primaryStatus`, `states[]`, `allReasons[]`. Metrics are split deliberately:
+
+- `independentlyReviewed` / `readyForPrivateReview`: an Ed25519 reviewer signed
+  the current source snapshot and a separate approver signed the rights claim.
+- `rightsClaimReviewed`: the approver's signature covers the receipt fields.
+- `rightsInstrumentVerified` and `licensed`: **always 0/false** here. No
+  copyright-holder redistribution instrument is verified by this tool, so a
+  signed receipt can never authorize publishing.
+
+The trust registry must be signed by a pinned root public key provisioned by the
+Publisher owner from an independent read-only security configuration
+(`--pinned-root`). A root or registry supplied by the source owner (S1) or
+embedded in receipts is not trusted. This CLI is for local shadow review only;
+production authorization cannot be derived from `--pinned-root` alone.

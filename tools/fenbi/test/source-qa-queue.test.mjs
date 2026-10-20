@@ -276,7 +276,11 @@ test('21 a genuine in-memory root signing two independent roles reaches READY on
   const {t, reviewer, approver, envelope, rootKey} = await setup();
   const r = await evaluateReceipts({receipts: [makeReceipt(t, reviewer, approver)], trustedRoot: t.root, previous: prev(), trustRegistryEnvelope: envelope, pinnedRootPublicKeyJwk: rootKey.publicKeyJwk, expectedRegistryVersion: 1, now: NOW});
   assert.equal(r.rows[0].primaryStatus, 'READY_FOR_PRIVATE_REVIEW', JSON.stringify(r.rows[0].allReasons));
-  assert.equal(r.summary.licensed, 1);
+  assert.equal(r.rows[0].readyForPrivateReview, true);
+  assert.equal(r.rows[0].independentlyReviewed, true);
+  assert.equal(r.rows[0].licensed, false);
+  assert.equal(r.rows[0].rightsInstrumentVerified, false);
+  assert.equal(r.summary.licensed, 0);
   assert.equal(r.summary.promoted, 0);
   assert.equal(r.trust.usable, true);
 });
@@ -321,4 +325,42 @@ test('25 the same registered identity cannot review and approve', async () => {
   const res = await evaluateReceipts({receipts: [makeReceipt(t, reviewer, dual, {}, {}, {approvedBy: reviewer.id})], trustedRoot: t.root, previous: prev(), trustRegistryEnvelope: envelope, pinnedRootPublicKeyJwk: rootKey.publicKeyJwk, now: NOW});
   assert.equal(res.rows[0].primaryStatus, 'BLOCKED_RIGHTS');
   assert.ok(res.rows[0].allReasons.includes('same-signer-for-review-and-approval'));
+});
+
+test('26 independently signed QA is a review signal, never a license', async () => {
+  const {t, reviewer, approver, envelope, rootKey} = await setup();
+  const r = await evaluateReceipts({receipts: [makeReceipt(t, reviewer, approver)], trustedRoot: t.root, previous: prev(), trustRegistryEnvelope: envelope, pinnedRootPublicKeyJwk: rootKey.publicKeyJwk, now: NOW});
+  assert.equal(r.rows[0].primaryStatus, 'READY_FOR_PRIVATE_REVIEW');
+  assert.equal(r.rows[0].rightsClaimReviewed, true);
+  assert.equal(r.rows[0].rightsInstrumentVerified, false);
+  assert.equal(r.rows[0].licensed, false);
+  assert.equal(r.summary.licensed, 0);
+  assert.equal(r.summary.rightsInstrumentVerified, 0);
+  assert.equal(r.summary.promoted, 0);
+  assert.match(r.summary.rightsNote, /licensed is always 0/u);
+});
+
+test('27 self-claimed rights fields cannot flip licensed, even when signed', async () => {
+  const {t, reviewer, approver, envelope, rootKey} = await setup();
+  const claimed = {basis: 'copyright-holder-license', evidenceSha256: H('9'), evidencePath: 'license.txt', holder: 'self-claimed', redistributable: true};
+  const r = await evaluateReceipts({receipts: [makeReceipt(t, reviewer, approver, {rights: claimed})], trustedRoot: t.root, previous: prev(), trustRegistryEnvelope: envelope, pinnedRootPublicKeyJwk: rootKey.publicKeyJwk, now: NOW});
+  assert.equal(r.rows[0].licensed, false);
+  assert.equal(r.rows[0].rightsInstrumentVerified, false);
+  assert.equal(r.summary.licensed, 0);
+  // Forged evidence sha fails closed entirely.
+  const forged = {...claimed, evidenceSha256: H('f')};
+  const bad = await evaluateReceipts({receipts: [makeReceipt(t, reviewer, approver, {rights: forged})], trustedRoot: t.root, previous: prev(), trustRegistryEnvelope: envelope, pinnedRootPublicKeyJwk: rootKey.publicKeyJwk, now: NOW});
+  assert.equal(bad.rows[0].primaryStatus, 'BLOCKED_RIGHTS');
+  assert.equal(bad.summary.licensed, 0);
+});
+
+test('28 without a pinned root every metric stays zero', async () => {
+  const {t, reviewer, approver, envelope} = await setup();
+  const r = await evaluateReceipts({receipts: [makeReceipt(t, reviewer, approver)], trustedRoot: t.root, previous: prev(), trustRegistryEnvelope: envelope, pinnedRootPublicKeyJwk: null, now: NOW});
+  assert.equal(r.summary.independentlyReviewed, 0);
+  assert.equal(r.summary.readyForPrivateReview, 0);
+  assert.equal(r.summary.rightsClaimReviewed, 0);
+  assert.equal(r.summary.rightsInstrumentVerified, 0);
+  assert.equal(r.summary.licensed, 0);
+  assert.equal(r.summary.promoted, 0);
 });
