@@ -39,7 +39,39 @@ export function canonicalPayload (fields) {
   return JSON.stringify(sortKeys(fields));
 }
 
-/** Verify an Ed25519 attestation against an explicit trust registry. Fail closed. */
+/** Canonical payload the pinned root signs to publish a trust registry. */
+export function registryPayload (registry) {
+  return {kind: 'trust-registry', scope: registry.scope, version: registry.version, issuedAt: registry.issuedAt, expiresAt: registry.expiresAt, entries: registry.entries};
+}
+
+/**
+ * Verify a signed registry envelope against a pinned root public key that must come from
+ * the Publisher's controlled configuration — never from the receipts file or caller flag.
+ */
+export function verifyRegistry ({envelope, pinnedRootPublicKeyJwk, expectedVersion = null, now = Date.now()}) {
+  if (!pinnedRootPublicKeyJwk) return {ok: false, reason: 'pinned-root-missing'};
+  const registry = envelope?.registry;
+  const signature = envelope?.signature;
+  if (!registry || typeof registry !== 'object' || !signature?.signature) return {ok: false, reason: 'registry-unsigned'};
+  if (registry.scope !== 'source-qa') return {ok: false, reason: 'registry-scope-invalid'};
+  if (expectedVersion !== null && String(registry.version) !== String(expectedVersion)) return {ok: false, reason: 'registry-version-mismatch'};
+  const expires = Date.parse(registry.expiresAt);
+  if (!Number.isFinite(expires) || expires <= now) return {ok: false, reason: 'registry-expired'};
+  if (!Array.isArray(registry.entries) || registry.entries.length === 0) return {ok: false, reason: 'registry-empty'};
+  for (const entry of registry.entries) {
+    if (typeof entry?.id !== 'string' || !['reviewer', 'approver'].includes(entry?.role) || typeof entry?.publicKeyJwk !== 'object') {
+      return {ok: false, reason: 'registry-entry-invalid'};
+    }
+  }
+  try {
+    const key = crypto.createPublicKey({key: pinnedRootPublicKeyJwk, format: 'jwk'});
+    const good = crypto.verify(null, Buffer.from(canonicalPayload(registryPayload(registry))), key, Buffer.from(signature.signature, 'base64'));
+    if (!good) return {ok: false, reason: 'registry-signature-invalid'};
+  } catch { return {ok: false, reason: 'registry-signature-unverifiable'}; }
+  return {ok: true, entries: registry.entries, version: registry.version};
+}
+
+/** Verify an Ed25519 attestation against a verified registry entries list. Fail closed. */
 export function verifyAttestation ({attestation, payload, trustRegistry, requiredRole}) {
   if (!Array.isArray(trustRegistry) || trustRegistry.length === 0) return {ok: false, reason: 'trust-registry-missing'};
   if (!attestation || typeof attestation.signature !== 'string' || !attestation.signature) return {ok: false, reason: 'attestation-missing'};
@@ -79,7 +111,7 @@ function snapshotPayload (paper, extra) {
 }
 
 /** Structural classification. Returns every finding, not just the first. */
-export function classifyReceipt (receipt, {seenSourceIds = new Set(), previousRevision = null, previousQaSha = null, trustRegistry = null} = {}) {
+export function classifyReceipt (receipt, {seenSourceIds = new Set(), previousRevision = null, previousQaSha = null, trust = null} = {}) {
   const states = [], reasons = [];
   const add = (state, reason) => { states.push(state); reasons.push(reason); };
   if (!receipt || typeof receipt !== 'object') return {primaryStatus: 'UNMAPPED', states: ['UNMAPPED'], allReasons: ['receipt-invalid']};
@@ -134,11 +166,13 @@ export function classifyReceipt (receipt, {seenSourceIds = new Set(), previousRe
   if (qa.verdict !== 'pass') add('BLOCKED_RIGHTS', 'qa-not-passed');
   if (!hex(qa.reportSha256)) add('BLOCKED_RIGHTS', 'qa-report-sha-missing');
   if (typeof qa.reviewer !== 'string' || !qa.reviewer) add('BLOCKED_RIGHTS', 'reviewer-missing');
-  const qaSig = verifyAttestation({
-    attestation: qa.attestation, trustRegistry, requiredRole: 'reviewer',
+  let qaSig = {ok: false, signer: null}, apprSig = {ok: false, signer: null};
+  if (!trust?.ok) add('BLOCKED_RIGHTS', 'trust-' + (trust?.reason ?? 'pinned-root-missing'));
+  else qaSig = verifyAttestation({
+    attestation: qa.attestation, trustRegistry: trust.entries, requiredRole: 'reviewer',
     payload: snapshotPayload(paper, {kind: 'source-qa-review', reportSha256: qa.reportSha256, reviewer: qa.reviewer})
   });
-  if (!qaSig.ok) add('BLOCKED_RIGHTS', 'qa-' + qaSig.reason);
+  if (trust?.ok && !qaSig.ok) add('BLOCKED_RIGHTS', 'qa-' + qaSig.reason);
 
   // Rights: allowed basis, holder, redistribution and a separate approver signature.
   const rights = receipt.rights ?? {};
@@ -151,11 +185,11 @@ export function classifyReceipt (receipt, {seenSourceIds = new Set(), previousRe
   if (typeof approval.approvedBy !== 'string' || !approval.approvedBy) add('BLOCKED_RIGHTS', 'approval-missing');
   if (approval.approvedBy === qa.reviewer) add('BLOCKED_RIGHTS', 'self-approval');
   if (!hex(approval.approvalSha256)) add('BLOCKED_RIGHTS', 'approval-sha-missing');
-  const apprSig = verifyAttestation({
-    attestation: approval.attestation, trustRegistry, requiredRole: 'approver',
+  if (trust?.ok) apprSig = verifyAttestation({
+    attestation: approval.attestation, trustRegistry: trust.entries, requiredRole: 'approver',
     payload: snapshotPayload(paper, {kind: 'rights-approval', approvalSha256: approval.approvalSha256, approvedBy: approval.approvedBy})
   });
-  if (!apprSig.ok) add('BLOCKED_RIGHTS', 'approval-' + apprSig.reason);
+  if (trust?.ok && !apprSig.ok) add('BLOCKED_RIGHTS', 'approval-' + apprSig.reason);
   if (qaSig.ok && apprSig.ok && qaSig.signer === apprSig.signer) add('BLOCKED_RIGHTS', 'same-signer-for-review-and-approval');
 
   const allReasons = [...new Set(reasons)];
@@ -164,7 +198,10 @@ export function classifyReceipt (receipt, {seenSourceIds = new Set(), previousRe
   return {primaryStatus, states: [...new Set(states)], allReasons, qaSigner: qaSig.ok ? qaSig.signer : null, approverSigner: apprSig.ok ? apprSig.signer : null};
 }
 
-export async function evaluateReceipts ({receipts = [], trustedRoot = null, previous = new Map(), trustRegistry = null} = {}) {
+export async function evaluateReceipts ({receipts = [], trustedRoot = null, previous = new Map(), trustRegistryEnvelope = null, pinnedRootPublicKeyJwk = null, expectedRegistryVersion = null, now = Date.now()} = {}) {
+  const trust = pinnedRootPublicKeyJwk
+    ? verifyRegistry({envelope: trustRegistryEnvelope, pinnedRootPublicKeyJwk, expectedVersion: expectedRegistryVersion, now})
+    : {ok: false, reason: 'pinned-root-missing'};
   const seen = new Set();
   const rows = [];
   const counts = Object.fromEntries(STATES.map(s => [s, 0]));
@@ -173,7 +210,7 @@ export async function evaluateReceipts ({receipts = [], trustedRoot = null, prev
     const sourceId = receipt?.paper?.sourceId ?? null;
     const previousRevision = sourceId ? previous.get(sourceId + ':revision') ?? null : null;
     const previousQaSha = sourceId ? previous.get(sourceId) ?? null : null;
-    let result = classifyReceipt(receipt, {seenSourceIds: seen, previousRevision, previousQaSha, trustRegistry});
+    let result = classifyReceipt(receipt, {seenSourceIds: seen, previousRevision, previousQaSha, trust});
     if (result.primaryStatus === 'READY_FOR_PRIVATE_REVIEW') {
       const err = await verifyEvidence(trustedRoot, receipt.rights?.evidencePath, receipt.rights?.evidenceSha256) ||
         await verifyEvidence(trustedRoot, receipt.qa?.reportPath, receipt.qa?.reportSha256) ||
@@ -209,17 +246,17 @@ export async function evaluateReceipts ({receipts = [], trustedRoot = null, prev
     promoted: 0,
     states: counts
   };
-  return {ok: true, dryRun: true, summary, rows};
+  return {ok: true, dryRun: true, trust: {usable: trust.ok, reason: trust.ok ? null : trust.reason, version: trust.version ?? null}, summary, rows};
 }
 
-const USAGE = 'usage: source-qa-queue.mjs --receipts FILE --trust-registry FILE [--trusted-root DIR] [--previous FILE] [--dry-run]';
+const USAGE = 'usage: source-qa-queue.mjs --receipts FILE [--trust-registry FILE] [--pinned-root FILE] [--expected-registry-version V] [--trusted-root DIR] [--previous FILE] [--dry-run]';
 
 export async function runQueue (argv = process.argv.slice(2)) {
   const opts = {dryRun: true};
   for (let i = 0; i < argv.length; i++) {
     const key = argv[i];
     if (key === '--dry-run') opts.dryRun = true;
-    else if (['--receipts', '--trusted-root', '--previous', '--trust-registry'].includes(key)) {
+    else if (['--receipts', '--trusted-root', '--previous', '--trust-registry', '--pinned-root', '--expected-registry-version'].includes(key)) {
       const value = argv[++i];
       if (!value) return {ok: false, stage: 'usage', reason: 'missing-value:' + key, usage: USAGE};
       opts[key.slice(2).replaceAll('-', '_')] = value;
@@ -232,9 +269,12 @@ export async function runQueue (argv = process.argv.slice(2)) {
       try { return JSON.parse(line); } catch { throw Object.assign(new Error('receipt-unparsable:' + (i + 1)), {code: 'receipt-unparsable'}); }
     });
   } catch (e) { return {ok: false, stage: 'input', reason: e.code || e.message}; }
-  let trustRegistry = null;
+  let trustRegistryEnvelope = null, pinnedRootPublicKeyJwk = null;
   if (opts.trust_registry) {
-    try { trustRegistry = JSON.parse(await fs.readFile(opts.trust_registry, 'utf8')); } catch (e) { return {ok: false, stage: 'input', reason: 'trust-registry-unreadable:' + (e.code || e.message)}; }
+    try { trustRegistryEnvelope = JSON.parse(await fs.readFile(opts.trust_registry, 'utf8')); } catch (e) { return {ok: false, stage: 'input', reason: 'trust-registry-unreadable:' + (e.code || e.message)}; }
+  }
+  if (opts.pinned_root) {
+    try { pinnedRootPublicKeyJwk = JSON.parse(await fs.readFile(opts.pinned_root, 'utf8')); } catch (e) { return {ok: false, stage: 'input', reason: 'pinned-root-unreadable:' + (e.code || e.message)}; }
   }
   const previous = new Map();
   if (opts.previous) {
@@ -246,7 +286,7 @@ export async function runQueue (argv = process.argv.slice(2)) {
       }
     } catch (e) { return {ok: false, stage: 'input', reason: 'previous-unreadable:' + (e.code || e.message)}; }
   }
-  return evaluateReceipts({receipts, trustedRoot: opts.trusted_root ?? null, previous, trustRegistry});
+  return evaluateReceipts({receipts, trustedRoot: opts.trusted_root ?? null, previous, trustRegistryEnvelope, pinnedRootPublicKeyJwk, expectedRegistryVersion: opts.expected_registry_version ?? null});
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname)) {
