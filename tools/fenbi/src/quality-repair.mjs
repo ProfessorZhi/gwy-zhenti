@@ -26,6 +26,7 @@ const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const ALLOWED_BASIS = new Set(['copyright-holder-license', 'copyright-holder-written-permission', 'official-public-release', 'public-domain']);
 const FORBIDDEN_BASIS = new Set(['user-self-authorization', 'private-repo-preference', 'user-chose-a']);
 const HEX64 = /^[0-9a-f]{64}$/u;
+const SAFE_ID = /^[0-9A-Za-z_-]{1,64}$/u;
 const GAP_KINDS = ['missing-question', 'missing-options', 'missing-answer', 'missing-explanation', 'missing-image-sha', 'shenlun-multi-part', 'rights-unverified'];
 
 function scratch (text) {
@@ -152,7 +153,38 @@ function donorIndexFor (donors, donorQuestionStem) {
  * Build an isolated repair plan. `outDir` is only written when apply=true and QC passes;
  * a QC failure may store a metadata-only PARTIAL_REVIEW receipt, never a publishable patch.
  */
+export function isValidSourceId (value) {
+  return typeof value === 'string' && SAFE_ID.test(value);
+}
+
+/** Resolve outDir to a real private 0700 directory; reject symlinks and unsafe modes. */
+async function privateOutDir (outDir) {
+  let st;
+  try { st = await fs.lstat(outDir); } catch (e) {
+    if (e.code !== 'ENOENT') return {error: 'out-dir-unreadable'};
+    await fs.mkdir(outDir, {recursive: true, mode: 0o700});
+    st = await fs.lstat(outDir);
+  }
+  if (st.isSymbolicLink()) return {error: 'out-dir-symlink'};
+  if (!st.isDirectory()) return {error: 'out-dir-not-directory'};
+  if ((st.mode & 0o077) !== 0) return {error: 'out-dir-not-private'};
+  const real = await fs.realpath(outDir);
+  const realStat = await fs.stat(real);
+  if (!realStat.isDirectory() || (realStat.mode & 0o077) !== 0) return {error: 'out-dir-not-private'};
+  return {root: real};
+}
+
+/** Build a path that is guaranteed to be a direct child of outDirRoot. */
+function safeOutFile (outDirRoot, name) {
+  const file = path.resolve(outDirRoot, name);
+  if (path.dirname(file) !== outDirRoot) throw Object.assign(new Error('out-path-escape'), {code: 'out-path-escape'});
+  return file;
+}
+
 export async function buildRepairPlan ({target, donors = [], reviewedPairs = [], outDir = null, apply = false, trustedRoot = null}) {
+  if (!isValidSourceId(target?.sourceId)) {
+    return {ok: false, stage: 'identity', blockedReason: 'invalid-source-id', reasons: ['invalid-source-id'], eligible: 0, plan: null, reviewQueue: []};
+  }
   const registry = await buildDonorRegistry(donors, {trustedRoot});
   const reasons = [];
   const reviewQueue = [];
@@ -261,18 +293,20 @@ export async function buildRepairPlan ({target, donors = [], reviewedPairs = [],
 
   if (apply) {
     if (!outDir) return {ok: false, reasons: ['out-dir-required-for-apply'], plan, reviewQueue, eligible: 0};
-    await fs.mkdir(outDir, {recursive: true, mode: 0o700});
-    const stat = await fs.stat(outDir);
-    if ((stat.mode & 0o077) !== 0) return {ok: false, reasons: ['out-dir-not-private'], plan, reviewQueue, eligible: 0};
+    const out = await privateOutDir(outDir);
+    if (out.error) return {ok: false, reasons: [out.error], blockedReason: out.error, plan, reviewQueue, eligible: 0};
+    const root = out.root;
+    const suffix = plan.afterSha.slice(0, 12);
     if (!pass) {
-      const partial = path.join(outDir, `partial-${target.sourceId}-${plan.afterSha.slice(0, 12)}.json`);
+      const partial = safeOutFile(root, `partial-${target.sourceId}-${suffix}.json`);
       await fs.writeFile(partial, JSON.stringify({verdict: 'PARTIAL_REVIEW', ...qc}, null, 2), {mode: 0o600, flag: 'wx'});
       plan.partialReceipt = partial;
       return {ok: false, reasons: ['qc-reject'], plan, reviewQueue, eligible: 0, qc};
     }
-    const patchFile = path.join(outDir, `repair-${target.sourceId}-${plan.afterSha.slice(0, 12)}.md`);
+    const patchFile = safeOutFile(root, `repair-${target.sourceId}-${suffix}.md`);
+    const receiptFile = safeOutFile(root, `repair-${target.sourceId}-${suffix}.receipt.json`);
     await fs.writeFile(patchFile, afterMarkdown, {mode: 0o600, flag: 'wx'});
-    await fs.writeFile(path.join(outDir, `repair-${target.sourceId}-${plan.afterSha.slice(0, 12)}.receipt.json`), JSON.stringify(qc, null, 2), {mode: 0o600, flag: 'wx'});
+    await fs.writeFile(receiptFile, JSON.stringify(qc, null, 2), {mode: 0o600, flag: 'wx'});
     plan.patchFile = patchFile;
   }
   return {ok: pass, reasons: pass ? [] : ['qc-reject'], plan, reviewQueue, eligible: pass ? plan.repairs.length : 0, qc};

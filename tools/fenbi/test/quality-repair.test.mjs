@@ -261,3 +261,52 @@ test('21 synthetic throughput benchmark (CPU only)', async () => {
   assert.ok(ms < 10000);
   console.log(JSON.stringify({benchmark: '30 synthetic plans', ms: Math.round(ms)}));
 });
+
+test('22 adversarial sourceIds never write outside outDir', async () => {
+  const {root, t} = await ctx();
+  const out = path.join(root, 'out'); await fs.mkdir(out, {mode: 0o700}); await fs.chmod(out, 0o700);
+  const bad = ['../../../../tmp/qr-escape-' + process.pid + '/x', '../evil', '..\\evil', '/abs/path', '', 'a'.repeat(65), 'a/b'];
+  for (const sourceId of bad) {
+    const targetBad = {...target({t, gap2: true}), sourceId};
+    const r = await buildRepairPlan({target: targetBad, donors: [donor(t)], trustedRoot: t.root, outDir: out, apply: true});
+    assert.equal(r.ok, false, JSON.stringify(sourceId));
+    assert.equal(r.eligible, 0);
+    assert.equal(r.blockedReason, 'invalid-source-id');
+    assert.deepEqual(await fs.readdir(out), [], JSON.stringify(sourceId));
+  }
+});
+
+test('23 a legal numeric sourceId still writes a QC patch into the private dir', async () => {
+  const {root, t} = await ctx();
+  const out = path.join(root, 'out'); await fs.mkdir(out, {mode: 0o700}); await fs.chmod(out, 0o700);
+  const tg = {...target({t}), sourceId: '8472470'};
+  const r = await buildRepairPlan({target: tg, donors: [donor(t)], trustedRoot: t.root, outDir: out, apply: true});
+  assert.equal(r.ok, true, JSON.stringify(r.qc));
+  assert.equal(path.dirname(r.plan.patchFile), await fs.realpath(out));
+  assert.equal((await fs.stat(r.plan.patchFile)).mode & 0o077, 0);
+});
+
+test('24 symlinked outDir is rejected even when the target is private', async () => {
+  const {root, t} = await ctx();
+  const external = path.join(root, 'external'); await fs.mkdir(external, {mode: 0o700}); await fs.chmod(external, 0o700);
+  const link = path.join(root, 'out-link'); await fs.symlink(external, link);
+  const r = await buildRepairPlan({target: target({t}), donors: [donor(t)], trustedRoot: t.root, outDir: link, apply: true});
+  assert.equal(r.ok, false);
+  assert.ok(r.reasons.includes('out-dir-symlink'), JSON.stringify(r.reasons));
+  assert.deepEqual(await fs.readdir(external), []);
+});
+
+test('25 runCli blocks an invalid sourceId and writes nothing', async () => {
+  const {root, t} = await ctx();
+  const out = path.join(root, 'cli-out'); await fs.mkdir(out, {mode: 0o700}); await fs.chmod(out, 0o700);
+  const papersFile = path.join(root, 'papers.json');
+  const donorsFile = path.join(root, 'donors.json');
+  const badTarget = {...target({t}), sourceId: '../../../../tmp/qr-cli-' + process.pid + '/x'};
+  await fs.writeFile(papersFile, JSON.stringify([badTarget]));
+  await fs.writeFile(donorsFile, JSON.stringify([donor(t)]));
+  const result = await runCli(['--papers', papersFile, '--donors', donorsFile, '--out', out, '--trusted-root', t.root, '--apply'], {QUALITY_REPAIR: '1'});
+  assert.equal(result.ok, false);
+  assert.equal(result.eligible, 0);
+  assert.equal(result.summaries[0].blockedReason, 'invalid-source-id');
+  assert.deepEqual(await fs.readdir(out), []);
+});

@@ -6,7 +6,7 @@
  */
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { detectQualityGaps, buildRepairPlan, handoffCandidate } from './quality-repair.mjs';
+import { detectQualityGaps, buildRepairPlan, handoffCandidate, isValidSourceId } from './quality-repair.mjs';
 
 const USAGE = 'usage: quality-repair-run.mjs --papers FILE --donors FILE --out DIR [--reviewed FILE] [--apply]';
 
@@ -34,6 +34,10 @@ export async function runCli (argv = process.argv.slice(2), env = process.env) {
   const summaries = [];
   let eligible = 0;
   for (const paper of papers) {
+    if (!isValidSourceId(paper?.sourceId)) {
+      summaries.push({sourceId: paper?.sourceId ?? null, path: paper?.path ?? null, blockedReason: 'invalid-source-id', eligible: 0, ok: false, qc: 'none', review: [], handoff: {ok: false, reason: 'invalid-source-id'}});
+      continue;
+    }
     const gaps = detectQualityGaps(paper, {rightsStatus: paper.rightsStatus ?? 'unverified'});
     const result = await buildRepairPlan({target: paper, donors, reviewedPairs: reviewed, outDir: opts.out, apply: opts.apply, trustedRoot: opts.trusted_root ?? null});
     if (result.eligible) eligible += result.eligible;
