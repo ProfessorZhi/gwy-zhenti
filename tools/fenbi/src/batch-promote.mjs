@@ -5,6 +5,7 @@
  */
 import fs from 'node:fs/promises';
 import { targetPathAllowed } from './year-policy.mjs';
+import { RENDERED_COLLECTION_STUB } from './collection-stub.mjs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
@@ -56,7 +57,7 @@ function validateReceipt(receipt,md){
   const count=receipt.counts?.sourceQuestions;
   const q=[...md.toString('utf8').matchAll(/^#{2,3}\s+第\s*(\d+)\s*题/gmu)].map(m=>Number(m[1]));
   if(q.length!==count||q.some((n,i)=>n!==i+1))throw Error('candidate-question-anchors-invalid');
-  if(/题目正在全力以赴征集|网友未回忆起|题目缺失/u.test(md.toString('utf8')))throw Error('source-collection-stub-remains');
+  if(RENDERED_COLLECTION_STUB.test(md.toString('utf8')))throw Error('source-collection-stub-remains');
 }
 
 async function candidateImages(candidate,receipt,md){
