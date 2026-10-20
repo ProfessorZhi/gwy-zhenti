@@ -174,3 +174,48 @@ test('receipt carries hashes needed by promote', () => {
   assert.match(row.sourceSha256, /^[0-9a-f]{64}$/u);
   assert.match(row.markdownSha256, /^[0-9a-f]{64}$/u);
 });
+
+
+test('independently observed three subquestions cannot be collapsed into one structural A question', () => {
+  const row = ingestShenlun({
+    doc: src(), name: 'synthetic-collapsed',
+    expected: { observedPromptCount: 3, observedAnswerCount: 3 },
+  });
+  assert.equal(row.grade, 'C');
+  assert.ok(row.issues.includes('observed-prompt-count-mismatch'));
+  assert.ok(row.issues.includes('observed-answer-count-mismatch'));
+  assert.equal(row.boundaryEvidence.status, 'mismatch');
+});
+
+test('matching independently observed prompt and answer counts allow structural A but not publication', () => {
+  const row = ingestShenlun({
+    doc: src(), name: 'synthetic-one',
+    expected: { observedPromptCount: 1, observedAnswerCount: 1 },
+  });
+  assert.equal(row.grade, 'A');
+  assert.equal(row.boundaryEvidence.status, 'counts-match-only');
+  assert.equal(row.rightsStatus, 'unverified');
+  assert.equal(row.cloudStorageBlocked, true);
+  assert.throws(() => assertShenlunPromotable(row.doc), /shenlun-cloud-blocked/);
+});
+
+test('unknown independent prompt count stays explicitly unverified, even if local structure is A', () => {
+  const row = ingestShenlun({ doc: src(), name: 'synthetic-unknown' });
+  assert.equal(row.grade, 'A');
+  assert.equal(row.boundaryEvidence.status, 'unverified');
+  assert.equal(row.boundaryEvidence.promptCount, null);
+});
+
+test('invalid independent boundary counts are rejected instead of silently ignored', () => {
+  const row = ingestShenlun({ doc: src(), expected: { observedPromptCount: 0, observedAnswerCount: -1 } });
+  assert.equal(row.grade, 'C');
+  assert.ok(row.issues.includes('observed-prompt-count-invalid'));
+  assert.ok(row.issues.includes('observed-answer-count-invalid'));
+});
+
+test('direct normalized document validation rejects evidence that names more prompts than captured', () => {
+  const normalized = ingestShenlun({ doc: src(), name: 'synthetic-base' }).doc;
+  const verdict = validateShenlunDocument(normalized, { expected: { observedPromptCount: 3 } });
+  assert.equal(verdict.ok, false);
+  assert.ok(verdict.problems.some(p => p.code === 'observed-prompt-count-mismatch'));
+});
