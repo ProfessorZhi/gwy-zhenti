@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "source_priority": "fenbi",
+  "replace": "if_question_count_not_less",
+  "stub": "mark_missing_and_publish",
+  "answer_conflict": "use_fenbi_note_other",
+  "storage": "private_repo_approved",
+  "years": {
+    "default": [2016, 2026],
+    "zhejiang": [2008, 2026]
+  },
+  "exceptionHandling": {
+    "auth_failure": "stop_notify",
+    "captcha": "stop_notify",
+    "grade_c": "repair_once_by_category",
+    "fenbi_fewer": "keep_existing_queue",
+    "member_only": "queue_user_decision",
+    "unknown": "ask_user_no_new_tool"
+  },
+  "refreshStubs": "monthly",
+  "reporting": {
+    "singleKpi": "main_fenbi_verified_papers/catalog_unique_papers",
+    "cadence": "daily"
+  },
+  "engineering": {
+    "maxOpenCodePR": 1,
+    "triggerNoGrowthHours": 24,
+    "ttlHours": 24
+  },
+  "publishing": {
+    "cadence": "daily",
+    "mode": "pure_content_only",
+    "mergeWhenAllowed": "auto_a"
+  },
+  "legalRights": {
+    "privateStorageUserConsentRecorded": true,
+    "publicRedistributionRequiresRightsHolderInstrument": true,
+    "note": "private storage consent is not a copyright-holder redistribution license"
+  }
+}

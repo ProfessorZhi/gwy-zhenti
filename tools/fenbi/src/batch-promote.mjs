@@ -8,6 +8,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { RENDERED_COLLECTION_STUB } from './collection-stub.mjs';
 
 const APP_ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../../..');
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
@@ -55,7 +56,7 @@ function validateReceipt(receipt,md){
   const count=receipt.counts?.sourceQuestions;
   const q=[...md.toString('utf8').matchAll(/^#{2,3}\s+第\s*(\d+)\s*题/gmu)].map(m=>Number(m[1]));
   if(q.length!==count||q.some((n,i)=>n!==i+1))throw Error('candidate-question-anchors-invalid');
-  if(/题目正在全力以赴征集|网友未回忆起|题目缺失/u.test(md.toString('utf8')))throw Error('source-collection-stub-remains');
+  if(RENDERED_COLLECTION_STUB.test(md.toString('utf8')))throw Error('source-collection-stub-remains');
 }
 
 async function candidateImages(candidate,receipt,md){
@@ -86,6 +87,13 @@ export async function preparePromotion({candidateDir,repoRoot=APP_ROOT,rightsFil
   const prior=await fs.readFile(dest).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));
   if(prior && hash(prior)!==receipt.oldSha256)throw Error('repository-paper-changed-since-candidate');
   if(!prior && receipt.oldSha256)throw Error('old-paper-not-found-in-integration-branch');
+  // Replacement must not reduce effective (non-stub) or total question positions.
+  if(prior){
+    const {loadPolicy,assertReplacementAllowed}=await import('./policy.mjs');
+    const policy=await loadPolicy();
+    const verdict=assertReplacementAllowed(policy,{priorMarkdown:prior.toString('utf8'),newMarkdown:bytes.toString('utf8')});
+    if(!verdict.allowed)throw Error('replacement-blocked:'+verdict.reasons.join(','));
+  }
   const images=await candidateImages(candidate,receipt,bytes);
   for(const [rel,{sha256}] of images){
     const target=path.resolve(path.dirname(dest),rel);

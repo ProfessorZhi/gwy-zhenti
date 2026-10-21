@@ -75,3 +75,29 @@ test('wrong question count and duplicate source numbering fail closed', () => {
   const md=renderIngest(a);
   assert.ok(structureGrade(a,md,{dimensions:{images:{status:'complete'}}}).blockers.includes('question-numbers-not-contiguous'));
 });
+
+function gradeFor(markdown) {
+  const assembly = {issues: [], prepared: {questions: [{number: 1, legacyFallbackMarkdown: false}], assets: []}, counters: {}};
+  return structureGrade(assembly, markdown, {dimensions: {images: {status: 'complete'}}, issues: []});
+}
+
+test('rendered collection stub from a legacy fallback is grade C', () => {
+  const md = '## 题目\n### 第 1 题\n题目正在全力以赴征集，将会第一时间上传\n';
+  const verdict = gradeFor(md);
+  assert.equal(verdict.grade, 'C');
+  assert.ok(verdict.blockers.includes('rendered-collection-stub-remains'));
+});
+
+test('option-only stub marker is grade C', () => {
+  assert.equal(gradeFor('## 题目\n### 第 1 题\n本题暂无收集到\n').grade, 'C');
+});
+
+test('explanation-only stub marker is grade C', () => {
+  assert.equal(gradeFor('## 题目\n### 第 1 题\n题干完整但解析区写着：题目缺失\n').grade, 'C');
+});
+
+test('nonobjective submit notice is grade C', () => {
+  const verdict = gradeFor('## 题目\n### 第 1 题\n非客观题，请交卷后查看参考解析估分\n');
+  assert.equal(verdict.grade, 'C');
+  assert.ok(verdict.blockers.includes('rendered-collection-stub-remains'));
+});
