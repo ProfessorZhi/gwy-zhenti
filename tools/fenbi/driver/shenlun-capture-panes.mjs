@@ -12,12 +12,15 @@
 // 用法：
 //   node tools/fenbi/driver/shenlun-capture-panes.mjs \
 //     --area 浙江 --year 2020 --variant a --source-id 102033 \
-//     --title-hash 0b3e1c9f86d4e5a2 --list-page 2 \
+//     --title-hash 0b3e1c9f86d4 --title-len 19 --list-page 2 \
 //     --out /path/to/private/capture
 //
+// --title-hash 是必填项：身份只能靠事先固定的哈希核对，缺失就不采集。
+//
 // 同一年有多卷（国考 2026 副省级/地市级/行政执法）时，清单行文本里没有 sourceId，
-// 只能按行号显式绑定：--row-index N 配合 --list-page N，行号取自清单页按序枚举、
-// 并与同页 API 项的等序编号对应；仍须通过年份/卷型标记与详情页标题哈希复核。
+// 只能按行号显式绑定：--row-index N 必须配 --list-page N，且必须在同一页观察到
+// 真实列表 API 的有序 id 数组，行数/页码/分页自洽，并断言 apiIds[rowIndex] === sourceId。
+// 观察不到或不一致就 FAIL CLOSED：不点开行、不写 source 文档。
 //
 // 退出码：0 成功；2 参数/结构错误；3 风控信号（401/403/429/503）中止；1 运行时错误。
 
@@ -31,7 +34,7 @@ import { setTimeout as sleep } from 'node:timers/promises';
 import { loadConfig } from '../src/config.mjs';
 import { openSession } from '../src/browser.mjs';
 import { assembleMaterialPanes, materialsThisQuestion, sha256 } from '../src/shenlun-panes.mjs';
-import { selectRowByIndex } from '../src/shenlun-list.mjs';
+import { bindRowToApi, normalizeListApiSnapshot, verifyTitleHash } from '../src/shenlun-list.mjs';
 import { pairPaperViewComponents } from '../src/shenlun-paper-view.mjs';
 import { parseShenlunCapture, metadataReceipt } from '../src/shenlun.mjs';
 import { validateDocument } from '../src/validate.mjs';
@@ -62,11 +65,15 @@ const { values } = parseArgs({
 });
 
 if (values.help) {
-  console.log('usage: shenlun-capture-panes.mjs --area 浙江 --year 2020 --variant a --source-id 102033 --out DIR [--row-index N] [--title-hash HEX16] [--list-page N] [--gap-ms 2500]');
+  console.log('usage: shenlun-capture-panes.mjs --area 浙江 --year 2020 --variant a --source-id 102033 --title-hash HEX12-64 --out DIR [--row-index N --list-page N] [--title-len N] [--gap-ms 2500]');
   process.exit(0);
 }
-for (const required of ['area', 'year', 'variant', 'source-id', 'out']) {
+for (const required of ['area', 'year', 'variant', 'source-id', 'out', 'title-hash']) {
   if (!values[required]) { console.error(`missing-argument:--${required}`); process.exit(2); }
+}
+// 身份只能靠事先固定的标题哈希核对；缺失或格式不对就直接拒绝，连浏览器都不开。
+if (!/^[0-9a-f]{12,64}$/u.test(String(values['title-hash']).toLowerCase())) {
+  console.error('invalid-argument:--title-hash'); process.exit(2);
 }
 const AREA = values.area;
 const YEAR = Number(values.year);
@@ -105,6 +112,39 @@ try {
     if (status === 401 || status === 403) receipt.risk.unauthorized += 1;
     if (status === 429 || status === 503) receipt.risk.rateLimited += 1;
   });
+
+  // 同页真实列表 API 的有序 id 数组。只留内存：名称仅用于计算标题哈希，绝不写盘。
+  // 观察不到就 FAIL CLOSED，绝不按行号硬猜。
+  const listApiResponses = [];
+  let listApiSeq = 0;
+  page.on('response', (response) => {
+    let url;
+    try { url = new URL(response.url()); } catch { return; }
+    if (!/(^|\.)fenbi\.com$/u.test(url.hostname)) return;
+    if (response.request().method() !== 'GET') return;
+    if (!url.pathname.startsWith('/api/') || url.pathname.startsWith('/api/users/')) return;
+    const contentType = String(response.headers()['content-type'] || '');
+    if (!contentType.includes('json')) return;
+    const seq = ++listApiSeq;
+    response.json().then((json) => {
+      if (!Array.isArray(json?.body?.list)) return;
+      listApiResponses.push({ seq, path: url.pathname, json });
+    }).catch(() => { /* 非列表响应或读取失败：不登记 */ });
+  });
+  const listApiMark = () => listApiSeq;
+  const waitForListApi = async (pageNumber, afterSeq) => {
+    for (let attempt = 0; attempt < 24; attempt += 1) {
+      const candidates = listApiResponses.filter((entry) => entry.seq > afterSeq);
+      for (let i = candidates.length - 1; i >= 0; i -= 1) {
+        try {
+          const api = normalizeListApiSnapshot(candidates[i].json, { path: candidates[i].path });
+          if (api.page === pageNumber - 1) return api;
+        } catch { /* 不是可用的列表快照，继续找 */ }
+      }
+      await sleep(250);
+    }
+    throw fail('LIST_API_UNOBSERVED', `no list API response observed for page ${pageNumber}`);
+  };
 
   const settle = async (ms = 2500) => {
     await sleep(ms);
@@ -155,17 +195,43 @@ try {
     stopOnRisk();
     return true;
   };
+  const pagerTotalPages = () => page.evaluate(() => {
+    const numbers = [...document.querySelectorAll('div.paging div.item')]
+      .map((el) => Number(String(el.innerText).trim()))
+      .filter((value) => Number.isInteger(value) && value > 0);
+    return numbers.length ? Math.max(...numbers) : null;
+  });
 
   let target = null;
+  let boundApi = null;
   const wantedPage = values['list-page'] ? Number(values['list-page']) : null;
   const explicitRow = values['row-index'] !== undefined ? Number(values['row-index']) : null;
   if (explicitRow !== null) {
-    // 同名年份/同一年有多卷（国考 副省级/地市级/行政执法）时，按行号显式绑定：
-    // 行号来自清单页按序枚举 + 同页 API 项的等序绑定，仍需通过年份/卷型标记和标题哈希复核。
-    const pageNumber = wantedPage ?? 1;
+    // 显式行号必须同时固定页码，否则无法断言「同一页」。
+    if (wantedPage === null) throw fail('LIST_PAGE_REQUIRED', '--row-index requires --list-page');
+    const pageNumber = wantedPage;
+    if (!Number.isInteger(pageNumber) || pageNumber < 1) throw fail('LIST_PAGE_INVALID', '--list-page must be a positive integer');
+    const mark = listApiMark();
     if (pageNumber > 1 && !(await gotoPage(pageNumber))) throw fail('PAGER_FAILED', 'cannot open the requested list page');
-    const picked = selectRowByIndex(await rowIndex(), { index: explicitRow, year: YEAR, variant: VARIANT });
+    // 观察不到同页列表 API 就停在这里：不点行、不写 source 文档。
+    const api = await waitForListApi(pageNumber, pageNumber > 1 ? mark : 0);
+    const pagerTotal = await pagerTotalPages();
+    const picked = bindRowToApi(await rowIndex(), api, {
+      index: explicitRow, sourceId: SOURCE_ID, page: pageNumber,
+      year: YEAR, variant: VARIANT, pagerTotalPages: pagerTotal,
+    });
+    // 点开之前先用同页 API 的名称哈希核对一次固定的 --title-hash：
+    // 名字对不上就停在这里，连详情页都不进。
+    const boundName = api.names[picked.index];
+    if (typeof boundName !== 'string' || boundName.length === 0) {
+      throw fail('TITLE_API_NAME_UNHASHABLE', 'bound list API item has no name to hash');
+    }
+    verifyTitleHash({
+      observedHash: createHash('sha256').update(boundName, 'utf8').digest('hex'),
+      expectedHash: values['title-hash'],
+    });
     target = { page: pageNumber, index: picked.index, member: false, binding: picked.binding };
+    boundApi = api;
   } else {
     for (let pageNumber = 1; pageNumber <= (wantedPage ?? MAX_PAGES) && !target; pageNumber += 1) {
       if (pageNumber > 1 && !(await gotoPage(pageNumber))) break;
@@ -183,6 +249,12 @@ try {
   }
   receipt.listPage = target.page;
   receipt.rowBinding = target.binding;
+  if (boundApi) {
+    receipt.listApi = {
+      page: boundApi.page, totalPage: boundApi.totalPage, totalItem: boundApi.totalItem,
+      itemCount: boundApi.itemCount, idsSha256: sha256(boundApi.ids.join(',')), sourcePath: boundApi.sourcePath,
+    };
+  }
 
   await page.evaluate((index) => {
     const rows = [...document.querySelectorAll('li.list-item-container')];
@@ -195,15 +267,26 @@ try {
   await settle(6000);
   stopOnRisk();
 
-  // ---- 身份：DOM 标题对清单哈希 ----
+  // ---- 身份：DOM 全标题哈希必须命中事先固定的 --title-hash ----
   const title = await page.title();
-  const titleHash = createHash('sha256').update(title, 'utf8').digest('hex').slice(0, 16);
+  const titleHashFull = createHash('sha256').update(title, 'utf8').digest('hex');
+  const apiName = boundApi?.names?.[target.index];
+  const apiNameHash = typeof apiName === 'string' && apiName.length
+    ? createHash('sha256').update(apiName, 'utf8').digest('hex') : null;
+  // 行号绑定模式下，列表 API 的该项名称也必须可用于身份核对；缺失即拒绝。
+  if (boundApi && apiNameHash === null) throw fail('TITLE_API_NAME_UNHASHABLE', 'bound list API item has no name to hash');
+  const expectedTitleLen = values['title-len'] ? Number(values['title-len']) : null;
+  const titleVerdict = verifyTitleHash({
+    observedHash: titleHashFull, observedLen: title.length,
+    expectedHash: values['title-hash'], expectedLen: expectedTitleLen, apiNameHash,
+  });
   receipt.titleCheck = {
-    source: 'dom-title', titleLen: title.length, titleHash,
-    expectedTitleHash: values['title-hash'] ?? null, expectedTitleLen: values['title-len'] ? Number(values['title-len']) : null,
+    source: 'dom-title + pinned hash', titleLen: title.length,
+    titleHash: titleHashFull.slice(0, 16), titleHashFull,
+    expectedTitleHash: values['title-hash'], expectedTitleLen,
+    verified: titleVerdict.verified, apiNameVerified: titleVerdict.apiNameVerified,
+    apiNamePresent: apiNameHash !== null,
   };
-  if (values['title-hash'] && values['title-hash'] !== titleHash) throw fail('TITLE_HASH_MISMATCH', 'live title does not match the inventory hash');
-  if (values['title-len'] && Number(values['title-len']) !== title.length) throw fail('TITLE_LEN_MISMATCH', 'live title length does not match the inventory');
 
   // ---- 页签结构（只返回 kind/count，不返回正文） ----
   const structure = () => page.evaluate(() => {
@@ -408,11 +491,12 @@ try {
       sourceId: SOURCE_ID,
       paperId: values['paper-id'] ? String(values['paper-id']) : SOURCE_ID,
       area: AREA, year: YEAR, variant: VARIANT,
-      binding: (values['paper-id']
-        ? 'inventory sourceId + list row click + DOM title hash'
-        : 'inventory sourceId + list row click + DOM title hash (paperId inherited from inventory; detail payload not retained)')
-        + (target.binding?.method === 'explicit-row-index' ? ' + explicit row index' : ''),
-      titleHash, titleLen: title.length,
+      binding: (target.binding?.method === 'explicit-row-index+api-order'
+        ? 'inventory sourceId + same-page list API ordered id + explicit row index + list row click + pinned DOM title hash'
+        : 'inventory sourceId + list row click + pinned DOM title hash')
+        + (values['paper-id'] ? '' : ' (paperId inherited from inventory; detail payload not retained)'),
+      titleHash: titleHashFull.slice(0, 16), titleHashFull, titleLen: title.length,
+      titleVerified: titleVerdict.verified, apiNameVerified: titleVerdict.apiNameVerified,
     },
     capturedAt: new Date().toISOString(),
     source: {
@@ -461,7 +545,8 @@ try {
 
   const meta = {
     schemaVersion: 2, cloudStorageBlocked: true, sourceId: SOURCE_ID, paperId: capture.identity.paperId,
-    area: AREA, year: YEAR, variant: VARIANT, titleHash, titleLen: title.length,
+    area: AREA, year: YEAR, variant: VARIANT, titleHash: titleHashFull.slice(0, 16), titleHashFull, titleLen: title.length,
+    titleVerified: titleVerdict.verified,
     documentSha: sha256(documentText), sourceSHA: sha256(domHtml), listPage: target.page,
     capturedAt: capture.capturedAt, rightsStatus: 'unverified', paneEvidence: receipt.panes,
   };
