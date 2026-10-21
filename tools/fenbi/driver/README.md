@@ -94,3 +94,57 @@ and exit 0; other failures back off (`SERVICE_BACKOFF`, 900s, interruptible by `
 re-snapshots once when fewer questions rendered than the paper's chapter counters state.
 
 - Browser authentication and the persistent profile must stay local.
+
+## Shenlun catalog replay (offline, metadata only)
+
+`shenlun-catalog-build.mjs` + `shenlun-catalog-core.mjs` turn already-saved list
+snapshots into a deduplicated shenlun catalog and a candidate queue. They never
+open a browser, a profile, a network socket, `papers/` or `catalog-live/`.
+Mock-exam list rows (`type=2`) are kept for accounting but are never candidates.
+
+```bash
+node tools/fenbi/driver/shenlun-catalog-build.mjs \
+  --national-dir "$FENBI_WORK_DIR/t2-20261019/shenlun-national-catalog" \
+  --inventory "$FENBI_WORK_DIR/t2-20261019/shenlun-inventory-zhejiang.json" \
+  --api-dir "$FENBI_WORK_DIR/t2-20261019" \
+  --captured-dir "$FENBI_WORK_DIR/shenlun-capture" \
+  --captured-dir "$FENBI_WORK_DIR/papers" \
+  --now 2026-10-21T12:00:00Z \
+  --out "$FENBI_WORK_DIR/shenlun-catalog-20261021.json"
+```
+
+Rules enforced by the core:
+
+- **Identity.** `sourceId` is the only paper identity. One id seen under several
+  regions is one paper; it is marked `crossRegion`, given `area=null`, and held
+  out of the auto queue. Conflicting non-null years/variants become
+  `identityConflict` and are also held out. Nothing guesses a region.
+- **Fee.** Explicit `paid`/`lockStatus` wins over row markers. `paidFlag=false`
+  is the discovery's `absent-defaulted-false`, **not** an explicit free claim.
+  With no per-row field the row is `free-visible-unverified`. A member/lock
+  marker that cannot be bound to a sourceId (e.g. batch4 四川 `memberRows=2`,
+  known double-count) goes to `pendingFreeCheck`, not `free`.
+- **Titles.** Normalised fingerprints (full/half-width, `网友回忆版`, A/B/C
+  markers) detect same area/year/variant titles with different ids. Collisions
+  are listed and blocked; ids are never merged by title. An explicit API or
+  inventory variant outranks a title heuristic; a title-only disagreement is
+  counted separately (`variantTitleDisagreements`).
+- **Years.** Reuses `year-policy.mjs`: Zhejiang keeps every visible year, other
+  regions 2016..current year. Future rows and unknown years are separated.
+- **Coverage.** The area matrix counts appearances; `totals.realSourceIds` is
+  the deduplicated real-paper total and mock papers are reported separately.
+  Partial pages, unpaired `apiIds`, unknown years and unobserved region tabs are
+  explicit fields, never silently treated as complete.
+
+Output is written `0600` outside `tools/`; raw titles appear only with
+`--include-titles` and that file must stay local. The `needsLiveCapture` array
+lists fields the saved snapshots cannot supply (sourceId-bound titles, per-row
+member/lock binding, batches 1–3 lock fields, raw Zhejiang titles).
+
+Replaying the snapshots present on 2026-10-21 (11 national batches, Zhejiang
+inventory/API, plus a 569-id captured scan) gives: **838 real sourceIds** (802
+national + 36 Zhejiang), 674 in 2016–2026 scope (+36 Zhejiang all-years), 3
+cross-region ids, 0 identity conflicts, 595 candidates and 33 pending free
+checks. This is the visible content of these snapshots, **not** a claim of a
+national shenlun total; Zhejiang 2022 has no row and the 4 non-region tabs
+(推荐/小模考/选调生/公安) were not inventoried here.

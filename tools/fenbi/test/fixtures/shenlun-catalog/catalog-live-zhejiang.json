@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-21T03:10:51.360Z",
+  "regions": {
+    "浙江": {
+      "status": "observed",
+      "coverage": "full",
+      "expectedPages": 1,
+      "rows": 4,
+      "memberRows": 0,
+      "pages": [{ "page": 1, "rows": 4, "entries": 4, "memberRows": 0, "pager": "1" }],
+      "entries": [
+        { "id": "930001", "title": "2024年浙江省公考《申论》题（A卷）网友回忆版", "year": 2024, "page": 1, "rowMatched": true, "member": false, "locked": false },
+        { "id": "930002", "title": "2024年浙江省公考《申论》题（Ａ卷）网友回忆版", "year": 2024, "page": 1, "rowMatched": true, "member": false, "locked": false },
+        { "id": "930003", "title": "2024年浙江省公考《申论》题（B卷）", "year": 2024, "page": 1, "rowMatched": true, "member": false, "locked": false },
+        { "id": "930004", "title": "2026年浙江省公考《行测》题（A卷）", "year": 2026, "page": 1, "rowMatched": true, "member": false, "locked": false }
+      ]
+    }
+  }
+}

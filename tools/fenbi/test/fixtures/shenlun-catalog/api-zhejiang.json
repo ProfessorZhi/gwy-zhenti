@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-19T20:25:32.468Z",
+  "searchLen": null,
+  "body": {
+    "pageInfo": { "totalItem": 4, "totalPage": 1, "pageSize": 15, "currentPage": 0 },
+    "list": [
+      { "id": 920001, "name": "2026年浙江省公考《申论》题（A卷）", "date": "2025-12-07", "status": 4, "type": 1, "lockStatus": 0 },
+      { "id": 920002, "name": "2026年浙江省公考《申论》题（B卷）", "date": "2025-12-07", "status": 4, "type": 1, "lockStatus": 0 },
+      { "id": 920003, "name": "2012年浙江省公考 《申论》题", "date": "2012-03-03", "status": 1, "type": 1, "lockStatus": 0 },
+      { "id": 920004, "name": "2027国考行测申论联合模考大赛（第三十八季）《申论》（副省卷）", "date": "2026-10-11", "status": 2, "type": 2, "lockStatus": 0 }
+    ]
+  }
+}

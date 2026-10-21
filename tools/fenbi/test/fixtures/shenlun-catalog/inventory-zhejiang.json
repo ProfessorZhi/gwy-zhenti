@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-19T20:25:55.693Z",
+  "metadataOnly": true,
+  "subject": "shenlun",
+  "area": "浙江",
+  "totalVisible": 4,
+  "totalPages": 1,
+  "byYear": { "2008": 1, "2015": 1, "2022": 1, "2026": 1 },
+  "no2022": false,
+  "items": [
+    { "sourceId": "910001", "year": 2008, "variant": "unknown", "lockStatus": 0, "type": 1, "status": 1, "date": "2008-01-01", "paid": false, "titleHash": "aaaaaaaaaaaa", "titleLen": 12 },
+    { "sourceId": "910002", "year": 2015, "variant": "a", "lockStatus": 0, "type": 1, "status": 2, "date": "2015-01-01", "paid": false, "titleHash": "bbbbbbbbbbbb", "titleLen": 12 },
+    { "sourceId": "910003", "year": 2022, "variant": "b", "lockStatus": 0, "type": 1, "status": 4, "date": "2022-01-01", "paid": false, "titleHash": "cccccccccccc", "titleLen": 12 },
+    { "sourceId": "910004", "year": 2026, "variant": "c", "lockStatus": 1, "type": 1, "status": 4, "date": "2026-01-01", "paid": false, "titleHash": "dddddddddddd", "titleLen": 12 }
+  ]
+}
