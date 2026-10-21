@@ -11,7 +11,7 @@ import { randomUUID } from 'node:crypto';
 import { setTimeout as sleep } from 'node:timers/promises';
 
 const B = process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const WORK = B + '/work/fenbi';
+const WORK = process.env.FENBI_WORK_DIR || path.join(B, 'work/fenbi');
 const OUT = process.env.DISCOVERY_OUT || WORK + '/catalog-live-20261019';
 const ENTRY = 'https://www.fenbi.com/spa/tiku/guide/realTest/xingce/xingce';
 const GAP = 2500;
@@ -26,7 +26,20 @@ const { normalizeCatalogPayload } = await import(B + '/tools/fenbi/src/catalog.m
 const { chromium } = await import(B + '/tools/fenbi/node_modules/playwright-core/index.mjs');
 
 const base = await loadConfig(path.join(WORK, 'config.json'));
-const config = { ...base, workDir: WORK, profileDir: path.join(WORK, 'profiles', base.profileName) };
+// Reject config-driven profile traversal before touching a browser or the output directory.
+const profilesRoot = path.resolve(WORK, 'profiles');
+const profileDir = path.resolve(profilesRoot, base.profileName);
+if (!profileDir.startsWith(profilesRoot + path.sep)) {
+  console.log(JSON.stringify({ ok: false, code: 'WRONG_PROFILE_DIR' }));
+  process.exit(2);
+}
+const profilesRootReal = await fs.realpath(profilesRoot).catch(e => e.code === 'ENOENT' ? null : Promise.reject(e));
+const profileDirReal = await fs.realpath(profileDir).catch(e => e.code === 'ENOENT' ? null : Promise.reject(e));
+if (profilesRootReal && profileDirReal && !profileDirReal.startsWith(profilesRootReal + path.sep)) {
+  console.log(JSON.stringify({ ok: false, code: 'PROFILE_SYMLINK_ESCAPE' }));
+  process.exit(2);
+}
+const config = { ...base, workDir: WORK, profileDir };
 await fs.mkdir(OUT, { recursive: true, mode: 0o700 });
 const lockPath = path.join(config.profileDir, '.fenbi-framework.lock');
 const owner = `${process.pid}:${randomUUID()}`;
