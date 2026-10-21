@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-19T21:54:54.288Z",
+  "metadataOnly": true,
+  "subject": "shenlun",
+  "categoriesSeen": ["国考", "江苏", "浙江", "推荐", "小模考", "选调生", "公安招警和公检法"],
+  "categories": [
+    {
+      "category": "国考",
+      "observed": true,
+      "pagesRead": 1,
+      "totalPagesObserved": 1,
+      "partialPages": false,
+      "rowsTotal": 3,
+      "memberRows": 0,
+      "lockStyledRows": 0,
+      "pages": [
+        {
+          "page": 1,
+          "rowCount": 3,
+          "apiIds": ["900001", "900002", "900004"],
+          "apiItems": [
+            { "id": "900001", "year": 2026, "variant": "unknown", "paidFlag": false },
+            { "id": "900002", "year": 2025, "variant": "xingzheng", "paidFlag": false },
+            { "id": "900004", "year": 2014, "variant": "unknown", "paidFlag": false }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "江苏",
+      "observed": true,
+      "pagesRead": 1,
+      "totalPagesObserved": 1,
+      "partialPages": false,
+      "rowsTotal": 3,
+      "memberRows": 0,
+      "lockStyledRows": 0,
+      "pages": [
+        {
+          "page": 1,
+          "rowCount": 3,
+          "apiIds": ["900003", "900005", "900004"],
+          "apiItems": [
+            { "id": "900003", "year": 2015, "variant": "a", "paidFlag": false },
+            { "id": "900005", "year": 2026, "variant": "c", "paidFlag": false },
+            { "id": "900004", "year": 2014, "variant": "unknown", "paidFlag": false }
+          ]
+        }
+      ]
+    }
+  ]
+}

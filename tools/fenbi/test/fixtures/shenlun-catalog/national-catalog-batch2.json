@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-20T02:18:57.545Z",
+  "metadataOnly": true,
+  "subject": "shenlun",
+  "categoriesSeen": ["甘肃", "四川", "广东", "浙江"],
+  "categories": [
+    {
+      "category": "甘肃",
+      "observed": true,
+      "pagesRead": 1,
+      "totalPagesObserved": 1,
+      "partialPages": false,
+      "rowsTotal": 3,
+      "memberRows": 1,
+      "lockStyledRows": 0,
+      "lockFieldExposed": { "lockStatus=0": 3 },
+      "paidBasis": { "absent-defaulted-false": 3 },
+      "notes": ["member-lock-row-observed"],
+      "pages": [
+        {
+          "page": 1,
+          "rowCount": 3,
+          "apiIds": ["900004", "900006", "900007"],
+          "apiItems": [
+            { "id": "900004", "year": 2014, "variant": "unknown", "paidFlag": false },
+            { "id": "900006", "year": 2024, "variant": "b", "paidFlag": false },
+            { "id": "900007", "year": 2023, "variant": "unknown", "paidFlag": false }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "四川",
+      "observed": true,
+      "pagesRead": 1,
+      "totalPagesObserved": 1,
+      "partialPages": false,
+      "rowsTotal": 2,
+      "memberRows": 2,
+      "lockStyledRows": 0,
+      "lockFieldExposed": { "lockStatus=0": 2 },
+      "paidBasis": { "absent-defaulted-false": 2 },
+      "notes": ["member-lock-row-observed"],
+      "pages": [
+        {
+          "page": 1,
+          "rowCount": 2,
+          "apiIds": ["900008", "900009"],
+          "apiItems": [
+            { "id": "900008", "year": 2022, "variant": "unknown", "paidFlag": false },
+            { "id": "900009", "year": 2021, "variant": "a", "paidFlag": false }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "广东",
+      "observed": true,
+      "pagesRead": 1,
+      "totalPagesObserved": 2,
+      "partialPages": true,
+      "rowsTotal": 2,
+      "memberRows": 0,
+      "lockStyledRows": 0,
+      "pages": [
+        {
+          "page": 1,
+          "rowCount": 2,
+          "apiIds": ["900010", "900011"],
+          "apiItems": [
+            { "id": "900010", "year": 2026, "variant": "a", "paidFlag": false },
+            { "id": "900011", "year": 2026, "variant": "b", "paidFlag": false }
+          ]
+        }
+      ]
+    }
+  ]
+}
