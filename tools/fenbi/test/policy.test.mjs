@@ -38,6 +38,12 @@ test('2 invalid enum fails closed', async () => {
   policy.stub = 'mark_missing_and_publish';
   policy.legalRights.privateStorageUserConsentRecorded = false;
   assert.equal(validatePolicy(policy).ok, false);
+  const typo = await validPolicy();
+  typo.replacee = 'if_question_count_not_less';
+  assert.equal(validatePolicy(typo).ok, false);
+  const badException = await validPolicy();
+  badException.exceptionHandling.captchaa = 'stop_notify';
+  assert.equal(validatePolicy(badException).ok, false);
 });
 
 test('3 ALLOW_REPLACE "0"/"false" never enable replacement', () => {
@@ -125,10 +131,9 @@ test('12 KPI numerator needs main SHA plus per-paper QA binding', async () => {
     {sourceId: '2', subject: 'xingce', qa: {verdict: 'pass', reportSha256: 'b'.repeat(64)}} // no mainSha
   ];
   const kpi = computeKpi({mainSha, papers, catalog, policy});
-  assert.equal(kpi.status, 'OK');
-  assert.equal(kpi.numerator, 1);
+  assert.equal(kpi.status, 'UNKNOWN');
+  assert.equal(kpi.reason, 'numerator-unverifiable');
   assert.equal(kpi.denominator, 3);
-  assert.equal(kpi.value, 1 / 3);
 });
 
 test('13 KPI is UNKNOWN without catalog or main sha', async () => {
@@ -152,4 +157,28 @@ test('15 replacement policy is read from policy.json, not env strings', async ()
   const verdict = assertReplacementAllowed({...policy, replace: 'never'}, {priorMarkdown: doc([q(1)]), newMarkdown: doc([q(1)])});
   assert.equal(verdict.allowed, false);
   assert.deepEqual(verdict.reasons, ['replace-disabled-by-policy']);
+});
+
+test('16 KPI is OK only with real main blob shas and a QA verifier', async () => {
+  const policy = await loadPolicy();
+  const mainSha = 'a'.repeat(40);
+  const catalog = [{sourceId: '1', subject: 'xingce', area: '浙江', year: 2020}];
+  const papers = [{
+    path: '省考/浙江/2020/行测-A.md', mainSha, sourceId: '1', subject: 'xingce',
+    mainBlobSha256: 'c'.repeat(64), qa: {verdict: 'pass', reportSha256: 'b'.repeat(64)}
+  }];
+  const ok = computeKpi({
+    mainSha, papers, catalog, policy,
+    mainFileSha256ByPath: {'省考/浙江/2020/行测-A.md': 'c'.repeat(64)},
+    verifyQaAttestation: () => true
+  });
+  assert.equal(ok.status, 'OK');
+  assert.equal(ok.value, 1);
+  const bad = computeKpi({
+    mainSha, papers, catalog, policy,
+    mainFileSha256ByPath: {'省考/浙江/2020/行测-A.md': 'd'.repeat(64)},
+    verifyQaAttestation: () => true
+  });
+  assert.equal(bad.status, 'OK');
+  assert.equal(bad.numerator, 0);
 });

@@ -48,7 +48,7 @@ while [ ! -e "$STOP" ]; do
       git -C "$REPO" add -- 国考 省考 图片 catalog/manifest.jsonl
       git -C "$REPO" commit -q -m "integrate(fenbi): pipeline batch $(date -u +%Y-%m-%dT%H:%MZ)"
       log "committed $(git -C "$REPO" rev-parse --short HEAD)"
-      [ -n "${PUSH:-}" ] && git -C "$REPO" push -q origin HEAD && log "pushed"
+      [ "${PUSH:-0}" = 1 ] && git -C "$REPO" push -q origin HEAD && log "pushed"
     fi
   fi
 

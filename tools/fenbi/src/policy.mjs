@@ -32,10 +32,16 @@ const EXCEPTION_ENUMS = {
   unknown: ['ask_user_no_new_tool']
 };
 
+const TOP_KEYS = ['schemaVersion', 'source_priority', 'replace', 'stub', 'answer_conflict', 'storage', 'years', 'exceptionHandling', 'refreshStubs', 'reporting', 'engineering', 'publishing', 'legalRights'];
+const LEGAL_KEYS = ['privateStorageUserConsentRecorded', 'publicRedistributionRequiresRightsHolderInstrument', 'note'];
+
 export function validatePolicy (policy) {
   const errors = [];
   if (!policy || typeof policy !== 'object') return {ok: false, errors: ['policy-not-object']};
   if (policy.schemaVersion !== 1) errors.push('schema-version');
+  for (const key of Object.keys(policy)) if (!TOP_KEYS.includes(key)) errors.push('unknown-key:' + key);
+  for (const key of Object.keys(policy.legalRights ?? {})) if (!LEGAL_KEYS.includes(key)) errors.push('unknown-legalRights-key:' + key);
+  for (const key of Object.keys(policy.exceptionHandling ?? {})) if (!(key in EXCEPTION_ENUMS)) errors.push('unknown-exceptionHandling-key:' + key);
   for (const [key, allowed] of Object.entries(ENUMS)) {
     const value = key.split('.').reduce((acc, part) => acc?.[part], policy);
     if (!allowed.includes(value)) errors.push(`enum:${key}`);
@@ -127,7 +133,7 @@ export function classifyPartialSource (policy, {stubNumbers = [], optionsMissing
  * Single KPI: verified source-backed papers on main / unique in-scope catalog papers.
  * Numerator requires mainSha + sourceId + subject + an independent QA/provenance binding.
  */
-export function computeKpi ({mainSha, papers = [], catalog = null, policy}) {
+export function computeKpi ({mainSha, papers = [], catalog = null, policy, mainFileSha256ByPath = null, verifyQaAttestation = null}) {
   if (!mainSha || !/^[0-9a-f]{40}$/u.test(mainSha)) return {value: null, status: 'UNKNOWN', reason: 'main-sha-missing'};
   if (!Array.isArray(catalog)) return {value: null, status: 'UNKNOWN', reason: 'catalog-missing'};
   const years = policy?.years ?? {};
@@ -138,7 +144,22 @@ export function computeKpi ({mainSha, papers = [], catalog = null, policy}) {
   });
   const denominator = new Set(inScope.map(row => `${row.subject}:${row.sourceId}`)).size;
   if (denominator === 0) return {value: null, status: 'UNKNOWN', reason: 'catalog-empty'};
-  const verified = papers.filter(p => p?.mainSha === mainSha && p?.sourceId && p?.subject && p?.qa?.verdict === 'pass' && /^[0-9a-f]{64}$/u.test(p?.qa?.reportSha256 ?? ''));
+  // A caller-supplied array may claim anything. The numerator needs the real main blob
+  // sha per paper plus a verifier for the independent QA attestation; otherwise UNKNOWN.
+  const plausible = papers.filter(p => p?.mainSha === mainSha && p?.sourceId && p?.subject &&
+    /^[0-9a-f]{64}$/u.test(p?.mainBlobSha256 ?? '') && p?.qa?.verdict === 'pass');
+  if (!mainFileSha256ByPath || typeof verifyQaAttestation !== 'function') {
+    return {
+      value: null, status: 'UNKNOWN', reason: 'numerator-unverifiable',
+      unverifiedNumerator: new Set(plausible.map(p => `${p.subject}:${p.sourceId}`)).size,
+      denominator, mainSha
+    };
+  }
+  const verified = plausible.filter(p => {
+    const actual = mainFileSha256ByPath[p.path];
+    if (!actual || actual !== p.mainBlobSha256) return false;
+    try { return verifyQaAttestation(p) === true; } catch { return false; }
+  });
   const numerator = new Set(verified.map(p => `${p.subject}:${p.sourceId}`)).size;
   return {value: numerator / denominator, numerator, denominator, status: 'OK', mainSha};
 }
