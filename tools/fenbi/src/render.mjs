@@ -59,7 +59,7 @@ export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = 
   const questions = [...document.questions].sort((a, b) => a.number - b.number);
   const subject = id.subject === 'xingce' ? '行测' : '申论';
   const lines = ['---', `考试: ${quote(id.area === '国考' ? '国考' : '省考')}`, `地区: ${quote(id.area)}`,
-    `年份: ${quote(id.year)}`, `科目: ${quote(subject)}`, `卷型: ${quote(id.variant)}`,
+    `年份: ${quote(id.year)}`, `科目: ${quote(subject)}`, `卷型: ${quote(id.paperLabel ?? id.variant)}`,
     '真题性质: "粉笔题库整理版本，未认证为官方原卷"', `来源: ${quote(publicUrl(source.url))}`,
     `源试卷ID: ${quote(id.id)}`, `采集时间: ${quote(source.capturedAt)}`,
     '题号口径: "采集到的来源题号，待人工与原卷核对"',

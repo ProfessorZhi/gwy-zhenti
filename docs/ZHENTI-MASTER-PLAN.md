@@ -50,7 +50,9 @@
 
 ## 五、任务卡（按顺序，上一张回报后用户批准再发下一张）
 
-代码分支：`claude/bold-brahmagupta-lkou1e`（合并进 main 后改用 main）。
+代码：一律用 main 最新提交。
+
+**现状（2026-10-22）**：L1 已完成，main 有 408 份粉笔行测；其中 340 份原先用拼音卷名另存、没有覆盖原卷，已由 `worker/fix-paper-names.mjs` 改正（行测共 494 份，不再重复）。申论粉笔卷 0 份 → 下一步 S1。
 
 ### L1 首批行测落盘（现在就做；不开浏览器，不停服务）
 
@@ -79,18 +81,34 @@ collector.env：SERVICE_MODE=worker、INTEG_REPO=<INTEG>、RIGHTS_FILE、PUSH=1�
 
 L1 回报里的 C 卷按原因修代码（图片解码、选项标号、选项正文等），修完重跑 L1 的命令把它们补推上去。
 
-### S1 申论样本（为写代码准备）
+### S1 已采集申论落盘（现在就做；不开浏览器）
 
 ```text
-用现有账号打开 1 份已做过的申论题目页和解析页，不交卷、不开新练习。
-保存去掉账号信息的页面 HTML（题目、材料、解析区）和解析页加载的题目/答案 JSON 到 work/fenbi/shenlun-sample/。
-同时只读巡检一次申论目录，保存目录快照。
-回报：文件路径和大小；答案、解析在页面里的位置；申论目录卷数。
+把所有已采集的申论卷（shenlun-capture-panes 的 --out 目录）放到同一个上级目录 <CAPTURES>（每卷一个子目录，含 document.json / meta.json / dom.html）。
+用 main 最新代码，在 L1 的集成工作树上运行：
+  CAPTURES_DIR=<CAPTURES> INTEG_REPO=<INTEG> RIGHTS_FILE=<rights.json> PUSH=1 AUTO_MERGE=1 node worker/land-shenlun.mjs
+回报：最后一行 JSON 原文；main 申论粉笔卷数：
+  git -C <INTEG> show origin/main:catalog/manifest.jsonl | grep '"subject":"申论"' | grep -c 'Fenbi-priority structural check'
 ```
 
-### S2 申论支持（Claude Code）→ S3 申论试跑
+授权只看 RIGHTS_FILE；采集时写死的 `cloudStorageBlocked`、`rightsStatus: unverified` 不再拦落盘。
+缺参考答案、缺文字解析的题照常发布并标"来源未提供"；缺题、缺材料、图片下载失败的卷判 C，回执 `cReasons` 列原因。
 
-按 S1 样本写申论的抓取、转换、渲染；试跑按 L2 的 3 → 10 → 60。
+### S2 申论持续采集 + 落盘
+
+```text
+按申论候选清单，逐卷运行 driver/shenlun-capture-panes.mjs（现有参数，--out 写到 <CAPTURES>/<地区>-<年份>-<卷型>-<sourceId>）。
+每采 10 卷跑一次 S1 的命令。只停在必须停的情况（验证码、登录失效、一小时 3 次 403/429）。
+回报：本轮采集几卷、成功几卷；land-shenlun 最后一行 JSON；main 申论粉笔卷数。
+```
+
+### S3 申论 C 卷修复（Claude Code）
+
+S1/S2 回执里 cReasons 的原因交给 Claude Code 修，修完重跑 S1 命令补推。
+
+### 不做
+
+不写"原创学习参考作答"、不让 LLM 生成或改写答案和解析：库里只收粉笔原文，粉笔没有的就标"来源未提供"。
 
 ## 六、回报格式
 

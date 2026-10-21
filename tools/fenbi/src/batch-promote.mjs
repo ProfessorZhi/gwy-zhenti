@@ -25,7 +25,7 @@ export function manifestEntry(receipt,bytes,oldRecord=null){
   return {
     path:receipt.path,sha256:hash(bytes),bytes:bytes.length,
     area:receipt.area,year:String(receipt.year),
-    subject:receipt.subject==='xingce'?'行测':'申论',paper_type:receipt.variant,
+    subject:receipt.subject==='xingce'?'行测':'申论',paper_type:path.posix.basename(receipt.path,'.md').replace(/^[^-]+-/u,''),
     declared_questions:count,question_anchors:count,reference_question_count:count,
     answer_blocks:numbers.length,has_answer_content:numbers.length>0,
     missing_answer_numbers:Array.from({length:count},(_,i)=>i+1).filter(n=>!numbers.includes(n)),
