@@ -40,6 +40,7 @@ export function manifestEntry(receipt,bytes,oldRecord=null){
     historical_truncated_questions:oldRecord?.current_truncated_questions??null,
     current_truncated_questions:null,source_validation:'Fenbi-priority structural check',
     whole_paper_acceptance:'not_officially_certified',
+    completeness:sourceMissing.length?'PARTIAL_SOURCE_MISSING':'COMPLETE',
   };
 }
 

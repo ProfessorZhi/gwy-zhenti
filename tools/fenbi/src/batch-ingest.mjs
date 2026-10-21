@@ -176,7 +176,7 @@ export async function ingestFolder({source,repo,dest,name,write=false}){
   const md=renderIngest(assembly,prior,prefix);
   const grade=structureGrade(assembly,md,verdict);
   const answerNumbers=assembly.prepared.questions.filter(q=>flat(q.answerHtml)).map(q=>q.number);
-  const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,counts:grade.counts,answerNumbers,sourceMissingNumbers:grade.sourceMissingNumbers,markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw)};
+  const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,counts:grade.counts,answerNumbers,sourceMissingNumbers:grade.sourceMissingNumbers,completeness:grade.sourceMissingNumbers.length?'partial-source-missing':'complete',markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw)};
   if(write){
     const out=path.join(dest,name);await fs.mkdir(out,{recursive:true,mode:0o700});
     let existing=await fs.readFile(path.join(out,'paper.md')).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));
