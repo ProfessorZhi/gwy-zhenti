@@ -345,3 +345,25 @@ node --test test/batch-ingest.test.mjs test/batch-ingest-io.test.mjs test/batch-
 node --test test/*.test.mjs
 node --test pipeline/test/*.test.mjs
 ```
+
+## 申论解析视图 → 规范化文档（schemaVersion 2）
+
+`src/shenlun.mjs` 把 `work/fenbi/shenlun-capture/<sourceId>/` 的 `document.json`（schemaVersion 2，`subject=shenlun`）转成 `validateDocument` 可验收的 schemaVersion 1 文档。它只认三个正文来源：
+
+- `questions[].prompt`：题干；页面解析视图里的「参考答案 / 解析 / 来源」分区会先从题干中剥离。
+- `questions[].materialsThisQuestion`：按 `htmlSha` 指向 `materials[]` 里的材料 pane；指向未保存的 pane 时记为 `material-reference-unstored`，不会退化成“无材料”。
+- `questions[].referenceAnswer`：参考答案；该字段缺失时才回退到同一页面观察到的「参考答案」分区，并记 `answerSource=embedded-section`。
+
+`otherSections` 只有标题/长度/哈希，没有正文，**不能**用来生成答案或解析。标题为「解析视频 / 考点 / 来源」的分区不是文字解析；只有标题恰为「解析」且存在正文（或图片）才算，并分别记 `textual` / `image-only`。
+
+材料完整性单独校验：页面的「材料1…材料N」页签数与已保存 pane 数不一致时记 `material-pane-incomplete`。题位按 `index` + `anchorsVisible` 保持原号，缺失题位记 `question-slot-missing`，绝不重新编号。
+
+```bash
+# metadata-only 回执（不打印任何正文）；未通过结构验收时退出码 2
+node src/shenlun-cli.mjs inspect --capture /path/to/shenlun-capture/<sourceId>
+
+# 仅当 validateDocument().status=complete 时才写本地候选目录
+node src/shenlun-cli.mjs render --capture /path/to/shenlun-capture/<sourceId> --out /path/to/local-candidate
+```
+
+回执与日志不含题干、材料、答案或解析正文；`publicationBlockers()` 会在 `rightsStatus!=="cleared"` 或 `cloudStorageBlocked=true` 时阻止发布。私有仓库存储同意不等于版权再分发许可。

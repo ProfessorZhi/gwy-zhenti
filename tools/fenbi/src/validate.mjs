@@ -145,6 +145,18 @@ export async function validateDocument(doc, { assetRoot } = {}) {
   if (!Number.isInteger(expected.materials) || expected.materials < 0) add('materials', 'material-count-unknown', 'Source-declared material count is unknown');
   else if (expected.materials !== doc.materials.length) add('materials', 'material-count-mismatch', 'Observed materials differ from source declaration', { expected: expected.materials, actual: doc.materials.length });
   if (identity.subject === 'shenlun' && !doc.materials.length) add('materials', 'shenlun-materials-empty', 'Shenlun source materials are missing');
+  // 申论解析视图把材料拆成多个页签，采集只能保存已渲染的 pane。页签数与已存正文数不一致
+  // 说明材料不完整；题目按 htmlSha 指向的 pane 若没保存正文，必须单独点名，不能静默当作无材料。
+  if (doc.shenlun && typeof doc.shenlun === 'object') {
+    const declaredTabs = Number.isInteger(doc.shenlun.materialTabs) ? doc.shenlun.materialTabs : null;
+    if (declaredTabs !== null && declaredTabs !== doc.materials.length) add('materials', 'material-pane-incomplete', 'Source renders more material tabs than were captured as bodies', { declared: declaredTabs, stored: doc.materials.length });
+    for (const reference of Array.isArray(doc.shenlun.unresolvedMaterialReferences) ? doc.shenlun.unresolvedMaterialReferences : []) {
+      add('materials', 'material-reference-unstored', 'Question references a material pane whose body was not captured', { questionId: reference.questionId ?? null, questionNumber: reference.questionNumber ?? null, htmlSha: reference.htmlSha ?? null, textLen: reference.textLen ?? null });
+    }
+    for (const number of Array.isArray(doc.shenlun.missingQuestionNumbers) ? doc.shenlun.missingQuestionNumbers : []) {
+      add('questions', 'question-slot-missing', 'Source shows a question slot that was not captured; the slot is preserved as missing', { questionNumber: number });
+    }
+  }
   for (const q of doc.questions) {
     const ref = { questionId: q.id, questionNumber: q.number };
     if (!q.id || ids.has(q.id)) add('questions', 'question-id-invalid', 'Source question ID is missing or duplicated', ref);

@@ -70,7 +70,8 @@ export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = 
     for (const chapter of document.chapters) lines.push(convert(chapter.instructionsHtml), '');
   }
   if (document.materials.length) lines.push('## 给定材料', '');
-  for (const material of document.materials) lines.push(`### 材料 ${material.id}`, '', convert(material.contentHtml), '');
+  // 申论材料按源页签编号（材料1…材料N）；行测沿用内容哈希 ID，行为不变。
+  for (const material of document.materials) lines.push(`### 材料 ${material.number ?? material.id}`, '', convert(material.contentHtml), '');
   lines.push('## 题目', '');
   for (const q of questions) {
     lines.push(`### 第 ${q.number} 题`, '', convert(q.contentHtml), '');
