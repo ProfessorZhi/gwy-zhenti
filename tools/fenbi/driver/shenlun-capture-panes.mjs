@@ -325,7 +325,9 @@ try {
       paneCount = 1;
       const body = await snapshotMaterialAt(question);
       if (!body) throw fail('MATERIAL_BODY_MISSING', `paper-view component ${question + 1} has no .material-body`);
-      panes.push({ tabIndex: 0, tabLabel: null, html: body.html, textLen: body.textLen, images: body.images, htmlSha: sha256(body.html) });
+      // 整卷视图没有页签文字，序号只能取组件顺序（第 i 个材料就是版面第 i 个组件）；
+      // 因为标签缺失，declaredMaterialTabs 仍然是 null，不冒充「卷面声明了几个材料」。
+      panes.push({ tabIndex: question, tabLabel: null, html: body.html, textLen: body.textLen, images: body.images, htmlSha: sha256(body.html) });
     } else {
       const questionClick = await clickTab('question', question);
       if (!questionClick.clicked) throw fail('QUESTION_TAB_NOT_FOUND', `question tab ${question + 1} not clickable`);
