@@ -82,3 +82,11 @@ python3 -m unittest tests.test_round10_shenzhen tests.test_shenlun \
 `reports/REMOVED-AI-CONTENT-20261022.json`：逐卷记录 before/after SHA、bytes、
 正文 SHA、删除的答案/解析题号、保留答案块 SHA、manifest 前后字段。
 `tools/tests/test_remove_ai_content.py`：上述断言的回归测试。
+
+## 与最新 main 的合并（2026-10-22）
+
+- `git merge origin/main` 正常合并 `87b06a30c`（S2 第二批 10 份国考申论覆盖同场旧卷），未 rebase、未 force；
+- 合并后 **1243 行 / 1243 卷**，粉笔申论 **38** 份；
+- 除本 PR 的 14 行外，**所有 manifest 行与 `origin/main` 完全一致**（S2 的 sha/bytes/source_validation 全部保留）；
+- S2 未触碰本 PR 的 14 卷；14 卷仍与各自 pre-AI parent 字节一致；
+- 全库 `audit()`：解析 740 行、remaining 451；本地 87 项测试 PASS。
