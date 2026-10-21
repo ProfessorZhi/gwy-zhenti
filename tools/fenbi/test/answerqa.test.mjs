@@ -256,3 +256,17 @@ test('the verification block always names every dimension and its basis', async 
     assert.deepEqual(Object.keys(entry.counts).sort(), ['different', 'not_compared', 'same', 'unknown'], name);
   }
 });
+
+// A collection notice may carry a bracketed editorial aside that itself contains a full stop,
+// e.g. "（正确答案默认设置为A项。）". Those slots must still be recognised as uncollected so the
+// renderer replaces them instead of leaking the raw notice into the paper.
+test('a collection notice with a bracketed aside is still recognised as a stub', async () => {
+  const { isCollectionStub } = await import('../src/validate.mjs');
+  for (const body of [
+    '题目正在全力以赴征集，将会第一时间上传（正确答案默认设置为A项）',
+    '题目正在全力以赴征集，将会第一时间上传。（正确答案默认设置为A项。）',
+    '题目正在全力以赴征集，将会在征集到后第一时间上传',
+  ]) assert.equal(isCollectionStub(body), true, body);
+  assert.equal(isCollectionStub('题目正在全力以赴征集，将会第一时间上传。请根据材料回答下列问题，并结合实际谈谈你的看法。'), false);
+  assert.equal(isCollectionStub('关于文物征集的下列说法，与文意相符的是：' + '甲'.repeat(80)), false);
+});
