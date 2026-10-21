@@ -10,8 +10,8 @@ import { setTimeout as sleep } from 'node:timers/promises';
 import { FOCUS_REGIONS, chooseFocusScan, applyFocusSuccess, applyRegionScan } from './focus-schedule.mjs';
 
 const pexec = promisify(execFile);
-const B = process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const WORK = process.env.FENBI_WORK_DIR || B + '/work/fenbi';
+const B = path.resolve(process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..'));
+const WORK = path.resolve(process.env.FENBI_WORK_DIR || path.join(B, 'work/fenbi'));
 const RUN = WORK + '/t2-20261019';
 const STOP = WORK + '/STOP';
 const LOG = RUN + '/service.log';

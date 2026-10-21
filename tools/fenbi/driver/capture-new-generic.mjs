@@ -7,9 +7,9 @@ import { fileURLToPath } from 'node:url';
 import { createHash, randomUUID } from 'node:crypto';
 import { setTimeout as sleep } from 'node:timers/promises';
 
-const B = process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
+const B = path.resolve(process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..'));
 const COMBO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../src');
-const WORK = process.env.FENBI_WORK_DIR || path.join(B, 'work/fenbi');
+const WORK = path.resolve(process.env.FENBI_WORK_DIR || path.join(B, 'work/fenbi'));
 const REPO = B;
 const ENTRY = 'https://www.fenbi.com/spa/tiku/guide/realTest/xingce/xingce';
 const GAP = 2500;
