@@ -85,10 +85,12 @@ These files are now meant to be the **only** collector source: run the service f
 caches stay where they are; every module honours it. The untracked `driver/` copy on the Dell host
 should be retired once the new unit is running.
 
-Changes versus the archived copy: `SERVICE_BATCH` default 30 (was 3), `SERVICE_INTERVAL` 10s (was 60s),
-`SERVICE_FOCUS_RESCAN` 7200s (was 1800s); non-risk failures back off (`SERVICE_BACKOFF`, 900s) instead of
-writing `STOP`, and a failed round no longer ends the service; fixed waits in `capture-new-generic.mjs`
-became element waits with timeouts no shorter than before. Risk signals (captcha, login lost, 403/429)
-still write `STOP`.
+Changes versus the archived copy: `SERVICE_BATCH` default 10 (was 3; raise to 30 after a clean trial),
+`SERVICE_INTERVAL` 10s (was 60s), `SERVICE_FOCUS_RESCAN` 7200s (was 1800s). Every child summary now goes
+through `service-risk.mjs`: captcha, login lost, unauthorized, or three 403/429 hits within an hour write `STOP`
+and exit 0; other failures back off (`SERVICE_BACKOFF`, 900s, interruptible by `STOP`) and write `ALERT` after
+`SERVICE_ALERT_AFTER` consecutive backoffs; a crash exits non-zero for `Restart=on-failure`.
+`capture-new-generic.mjs` waits for the target row and for the question count to settle (at least 6s), and
+re-snapshots once when fewer questions rendered than the paper's chapter counters state.
 
 - Browser authentication and the persistent profile must stay local.

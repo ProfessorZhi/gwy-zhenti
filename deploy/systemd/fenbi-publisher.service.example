@@ -21,7 +21,7 @@ ExecStart=/usr/bin/bash REPO_ABSOLUTE_PATH/tools/fenbi/run-pipeline.sh
 # Rights/config files and credentials are NOT part of this repository; point
 # EnvironmentFile at a host-local file outside the checkout.
 # EnvironmentFile=-%h/.config/gwy-zhenti/publisher.env
-Restart=always
+Restart=on-failure
 RestartSec=10
 
 [Install]

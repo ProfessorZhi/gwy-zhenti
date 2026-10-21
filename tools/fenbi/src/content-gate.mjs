@@ -7,6 +7,10 @@
  *   - the manifest parses, has no duplicate paths, and lists every changed paper
  *   - every image a changed paper references exists
  * Code and docs never pass this gate; they still go through a reviewed PR.
+ *
+ * This is a structural pre-check only. It does not verify per-paper sourceId/SHA, QA receipts, the rights
+ * boundary, question counts not regressing, or image hashes, so it must never be the sole trigger for merging
+ * into main. A human (or a fuller gate covering those checks) still decides.
  */
 import fs from 'node:fs/promises';
 import path from 'node:path';
