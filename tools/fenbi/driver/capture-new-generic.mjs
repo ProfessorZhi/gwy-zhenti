@@ -69,7 +69,18 @@ try {
   });
   const page = await ctx.newPage();
   const auth = { status: 'unknown' };
-  ctx.on('response', r => { try { const u = new URL(r.url()); if (u.hostname === 'login.fenbi.com' && u.pathname === '/api/users/info' && r.request().method() === 'GET') auth.status = r.status() === 200 ? 'authenticated' : 'unauthenticated'; } catch {} });
+  // Same risk counters as t2-collector, so t2-phaseb2 and the service can stop or back off on them.
+  result.risk = { captcha: 0, loginLost: 0, http403: 0, http429: 0 };
+  ctx.on('response', r => { try {
+    const u = new URL(r.url()), st = r.status();
+    if (st === 403) result.risk.http403++;
+    if (st === 429) result.risk.http429++;
+    if (/captcha|verifycode|verification/i.test(u.pathname)) result.risk.captcha++;
+    if (u.hostname === 'login.fenbi.com' && u.pathname === '/api/users/info' && r.request().method() === 'GET') {
+      auth.status = st === 200 ? 'authenticated' : 'unauthenticated';
+      if (st === 401 || st === 403) result.risk.loginLost++;
+    }
+  } catch {} });
 
   await throttle(); result.navCount++;
   await page.goto(ENTRY, { waitUntil: 'domcontentloaded', timeout: config.timeoutMs });
@@ -106,6 +117,7 @@ try {
   if (result.hadExistingExercise) initBudget = 0;
 
   await throttle();
+  const clickedAt = Date.now();
   await row.click();
   result.navCount++;
 
@@ -118,7 +130,6 @@ try {
   // Questions can render progressively: wait until the count is unchanged for 3s, and at least 6s after the click
   // (max 15s more). This only shortens the old fixed 13s wait; completeness is still checked below against the
   // paper's own expected question count, and validateDocument grades anything short as not complete.
-  const clickedAt = Date.now();
   if (qpage) {
     let prev = -1, stable = 0;
     for (let i = 0; i < 15 && (stable < 3 || Date.now() - clickedAt < 6000); i++) {

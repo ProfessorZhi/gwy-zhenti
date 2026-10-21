@@ -13,7 +13,8 @@ const pexec = promisify(execFile);
 const B = path.resolve(process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..'));
 const WORK = path.resolve(process.env.FENBI_WORK_DIR || path.join(B, 'work/fenbi'));
 const RUN = WORK + '/t2-20261019';
-const CAP = path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'capture-new-generic.mjs');
+// PHASEB2_CAPTURE_SCRIPT lets offline tests substitute the browser capture child.
+const CAP = process.env.PHASEB2_CAPTURE_SCRIPT || path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'capture-new-generic.mjs');
 const STOP = WORK + '/STOP';
 const LEDGER = RUN + '/phaseb2-ledger.json';
 const CAND = process.env.CANDIDATES_FILE || WORK + '/p0-discover-20261019/candidates.json';
@@ -92,7 +93,8 @@ if (process.env.PHASEB2_DRY_RUN === '1') {
   process.exit(0);
 }
 
-let ok = 0, fail = 0, consec = 0;
+let ok = 0, fail = 0, consec = 0, stopReason = 'done';
+const risk = { captcha: 0, loginLost: 0, http403: 0, http429: 0 };
 // 子进程失败分类：只在本机 0600 回执写脱敏后的类别/首行，不打印题文、URL、cookie、token。
 const ERRLOG = RUN + '/capture-errors.json';
 const sanitizeErr = s => String(s || '')
@@ -122,8 +124,8 @@ const appendErrReceipt = async (sid, e, c) => {
   await fs.rename(tmp, ERRLOG);
 };
 for (const t of queue) {
-  try { await fs.access(STOP); console.log(JSON.stringify({ stop: 'stop_file' })); break; } catch {}
-  if (Date.now() >= END) { console.log(JSON.stringify({ stop: 'deadline' })); break; }
+  try { await fs.access(STOP); stopReason = 'stop_file'; break; } catch {}
+  if (Date.now() >= END) { stopReason = 'deadline'; break; }
   let r = null;
   try {
     const { stdout } = await pexec(process.execPath, [CAP, JSON.stringify(t)], { timeout: 10 * 60 * 1000, maxBuffer: 8 * 1024 * 1024,
@@ -143,7 +145,11 @@ for (const t of queue) {
   await fs.rename(LEDGER + '.tmp', LEDGER);
   if (r?.ok) { ok++; consec = 0; } else { fail++; consec++; }
   console.log(`  ${t.sourceId} ${t.area} ${t.year} ${status} q=${r?.counts?.questions ?? '-'} pg=${r?.catalogPages ?? '-'} ${r?.elapsedMs ?? '-'}ms`);
-  if (consec >= 3) { console.log(JSON.stringify({ stop: 'consecutive_failures' })); break; }
+  for (const k of Object.keys(risk)) risk[k] += Number(r?.risk?.[k] || 0);
+  // Any risk signal ends this batch at once; the service decides between STOP and backoff.
+  if (risk.captcha || risk.loginLost || risk.http403 || risk.http429) { stopReason = 'risk'; break; }
+  if (consec >= 3) { stopReason = 'consecutive_failures'; break; }
   await sleep(2500);
 }
-console.log(JSON.stringify({ ok, fail, remaining: queue.length - ok - fail }));
+// One final line: the service parses only the last JSON line of a child's stdout.
+console.log(JSON.stringify({ ok, fail, remaining: queue.length - ok - fail, stopReason, risk }));
