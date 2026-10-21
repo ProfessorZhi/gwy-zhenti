@@ -15,6 +15,10 @@
 //     --title-hash 0b3e1c9f86d4e5a2 --list-page 2 \
 //     --out /path/to/private/capture
 //
+// 同一年有多卷（国考 2026 副省级/地市级/行政执法）时，清单行文本里没有 sourceId，
+// 只能按行号显式绑定：--row-index N 配合 --list-page N，行号取自清单页按序枚举、
+// 并与同页 API 项的等序编号对应；仍须通过年份/卷型标记与详情页标题哈希复核。
+//
 // 退出码：0 成功；2 参数/结构错误；3 风控信号（401/403/429/503）中止；1 运行时错误。
 
 import fs from 'node:fs/promises';
@@ -27,6 +31,7 @@ import { setTimeout as sleep } from 'node:timers/promises';
 import { loadConfig } from '../src/config.mjs';
 import { openSession } from '../src/browser.mjs';
 import { assembleMaterialPanes, materialsThisQuestion, sha256 } from '../src/shenlun-panes.mjs';
+import { selectRowByIndex } from '../src/shenlun-list.mjs';
 import { parseShenlunCapture, metadataReceipt } from '../src/shenlun.mjs';
 import { validateDocument } from '../src/validate.mjs';
 
@@ -50,13 +55,13 @@ const { values } = parseArgs({
     area: { type: 'string' }, year: { type: 'string' }, variant: { type: 'string' },
     'source-id': { type: 'string' }, 'paper-id': { type: 'string' },
     'title-hash': { type: 'string' }, 'title-len': { type: 'string' },
-    'list-page': { type: 'string' }, out: { type: 'string' },
+    'list-page': { type: 'string' }, 'row-index': { type: 'string' }, out: { type: 'string' },
     'gap-ms': { type: 'string' }, 'work-dir': { type: 'string' }, help: { type: 'boolean' },
   },
 });
 
 if (values.help) {
-  console.log('usage: shenlun-capture-panes.mjs --area 浙江 --year 2020 --variant a --source-id 102033 --out DIR [--title-hash HEX16] [--list-page N] [--gap-ms 2500]');
+  console.log('usage: shenlun-capture-panes.mjs --area 浙江 --year 2020 --variant a --source-id 102033 --out DIR [--row-index N] [--title-hash HEX16] [--list-page N] [--gap-ms 2500]');
   process.exit(0);
 }
 for (const required of ['area', 'year', 'variant', 'source-id', 'out']) {
@@ -131,6 +136,7 @@ try {
       return {
         index, years,
         a: /A卷|A类/u.test(text), b: /B卷|B类/u.test(text), c: /C卷|C类/u.test(text),
+        xingzheng: /行政执法/u.test(text), fushi: /副省级|副省/u.test(text), dishi: /地市级|地市/u.test(text),
         member: /会员|VIP|付费|购买|开通|试看|解锁/u.test(text),
       };
     });
@@ -150,20 +156,31 @@ try {
 
   let target = null;
   const wantedPage = values['list-page'] ? Number(values['list-page']) : null;
-  for (let pageNumber = 1; pageNumber <= (wantedPage ?? MAX_PAGES) && !target; pageNumber += 1) {
-    if (pageNumber > 1 && !(await gotoPage(pageNumber))) break;
-    if (wantedPage && pageNumber !== wantedPage) continue;
-    const hits = (await rowIndex()).filter((row) => row.years.includes(YEAR)
-      && (VARIANT === 'a' ? row.a : VARIANT === 'b' ? row.b : VARIANT === 'c' ? row.c : true));
-    if (hits.length === 1) target = { page: pageNumber, index: hits[0].index, member: hits[0].member };
-    else if (hits.length > 1) throw fail('ROW_NOT_UNIQUE', `matched ${hits.length} rows`);
-  }
-  if (!target) throw fail('ROW_NOT_FOUND', 'target list row not found');
-  if (target.member) throw fail('MEMBER_ROW', 'target row is member/paywalled; refusing to open');
-  if (wantedPage && target.page !== wantedPage) {
-    if (!(await gotoPage(target.page))) throw fail('PAGER_FAILED', 'cannot return to target page');
+  const explicitRow = values['row-index'] !== undefined ? Number(values['row-index']) : null;
+  if (explicitRow !== null) {
+    // 同名年份/同一年有多卷（国考 副省级/地市级/行政执法）时，按行号显式绑定：
+    // 行号来自清单页按序枚举 + 同页 API 项的等序绑定，仍需通过年份/卷型标记和标题哈希复核。
+    const pageNumber = wantedPage ?? 1;
+    if (pageNumber > 1 && !(await gotoPage(pageNumber))) throw fail('PAGER_FAILED', 'cannot open the requested list page');
+    const picked = selectRowByIndex(await rowIndex(), { index: explicitRow, year: YEAR, variant: VARIANT });
+    target = { page: pageNumber, index: picked.index, member: false, binding: picked.binding };
+  } else {
+    for (let pageNumber = 1; pageNumber <= (wantedPage ?? MAX_PAGES) && !target; pageNumber += 1) {
+      if (pageNumber > 1 && !(await gotoPage(pageNumber))) break;
+      if (wantedPage && pageNumber !== wantedPage) continue;
+      const hits = (await rowIndex()).filter((row) => row.years.includes(YEAR)
+        && (VARIANT === 'a' ? row.a : VARIANT === 'b' ? row.b : VARIANT === 'c' ? row.c : true));
+      if (hits.length === 1) target = { page: pageNumber, index: hits[0].index, member: hits[0].member, binding: { method: 'year-variant-search', rowIndex: hits[0].index } };
+      else if (hits.length > 1) throw fail('ROW_NOT_UNIQUE', `matched ${hits.length} rows`);
+    }
+    if (!target) throw fail('ROW_NOT_FOUND', 'target list row not found');
+    if (target.member) throw fail('MEMBER_ROW', 'target row is member/paywalled; refusing to open');
+    if (wantedPage && target.page !== wantedPage) {
+      if (!(await gotoPage(target.page))) throw fail('PAGER_FAILED', 'cannot return to target page');
+    }
   }
   receipt.listPage = target.page;
+  receipt.rowBinding = target.binding;
 
   await page.evaluate((index) => {
     const rows = [...document.querySelectorAll('li.list-item-container')];
@@ -336,9 +353,10 @@ try {
       sourceId: SOURCE_ID,
       paperId: values['paper-id'] ? String(values['paper-id']) : SOURCE_ID,
       area: AREA, year: YEAR, variant: VARIANT,
-      binding: values['paper-id']
+      binding: (values['paper-id']
         ? 'inventory sourceId + list row click + DOM title hash'
-        : 'inventory sourceId + list row click + DOM title hash (paperId inherited from inventory; detail payload not retained)',
+        : 'inventory sourceId + list row click + DOM title hash (paperId inherited from inventory; detail payload not retained)')
+        + (target.binding?.method === 'explicit-row-index' ? ' + explicit row index' : ''),
       titleHash, titleLen: title.length,
     },
     capturedAt: new Date().toISOString(),
