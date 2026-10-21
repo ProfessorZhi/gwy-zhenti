@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { parseRepositoryPaper, normalizeComparisonText } from './align.mjs';
 import { isCollectionStub, validateDocument } from './validate.mjs';
 import { RENDERED_COLLECTION_STUB } from './collection-stub.mjs';
+import { paperLabel, labelsIn } from './paper-label.mjs';
 import { renderCandidate } from './render.mjs';
 
 // 粉笔与本库都缺的题在 Markdown 里的固定标注。policy.mjs 的有效题计数认这句话，替换判断因此不会把它当成有效题。
@@ -163,7 +164,11 @@ export async function ingestFolder({source,repo,dest,name,write=false}){
   const id=doc.identity||{},area=id.area==='国考'?'国考':'省考/'+id.area;
   const sub=subjectName(id.subject);
   if(!sub||!safeName(id.id)||!safeName(id.variant)||!Number.isInteger(Number(id.year)))throw Error('bad-identity');
-  const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
+  // 落到本库同一卷的文件名（粉笔为准覆盖），见 paper-label.mjs。
+  const dirFiles=await fs.readdir(path.join(repo,area,String(id.year))).catch(()=>[]);
+  const label=paperLabel({title:id.title,variant:id.variant,existing:labelsIn(dirFiles,sub)});
+  doc.identity={...id,paperLabel:label};
+  const rel=path.posix.join(area,String(id.year),sub+'-'+label+'.md');
   const priorFile=path.join(repo,rel);
   let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
   // Neither the source nor the repository paper changed since the last candidate: reuse it.
