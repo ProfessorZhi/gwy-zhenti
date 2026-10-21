@@ -90,6 +90,7 @@ const receipt = {
 };
 
 let session;
+let exitCode = 0;
 try {
   const base = await loadConfig(path.join(WORK_DIR, 'config.json'));
   const config = {
@@ -438,7 +439,10 @@ try {
     await fs.writeFile(path.join(OUT, 'receipt.json'), JSON.stringify(receipt, null, 1) + '\n', { mode: 0o600 });
   } catch { /* 保留原始错误 */ }
   console.error(JSON.stringify({ ok: false, code: error.code ?? null, message: error.message, risk: receipt.risk, clicks: receipt.clicks }, null, 1));
-  process.exit(error.code === 'RISK_SIGNAL' ? 3 : 2);
+  // 失败也要走 finally 关会话。以前这里直接 process.exit()，finally 不会执行，
+  // 浏览器和 Profile 锁会留在原地，下一卷只能人工清锁。
+  exitCode = error.code === 'RISK_SIGNAL' ? 3 : 2;
 } finally {
   if (session) await session.close().catch(() => {});
 }
+process.exitCode = exitCode;
