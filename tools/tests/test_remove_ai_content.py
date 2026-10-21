@@ -14,17 +14,7 @@ RECEIPT = ROOT / "reports/REMOVED-AI-CONTENT-20261022.json"
 MANIFEST = ROOT / "catalog/manifest.jsonl"
 AI_LABELS = ("原创学习参考作答", "原创学习解析，非原参考答案说明", "原创示范作答",
              "AI辅助编写", "模型生成", "S5R2", "S5R3")
-LEGACY_AI_FILES = {
-    "省考/江苏/2026/申论-B类.md",
-    "省考/浙江/2026/申论-C类.md",
-    "省考/浙江/2026/申论-A类.md",
-    "省考/浙江/2025/申论-A类.md",
-    "省考/上海/2019/申论-行政执法卷.md",
-    "省考/深圳/2025/申论-二卷.md",
-    "省考/深圳/2025/申论-一卷.md",
-    "省考/安徽/2026/申论-A类.md",
-    "省考/重庆/2024/申论-一卷.md",
-}
+LEGACY_AI_FILES = set()
 DETAIL = re.compile(r"<summary>第\s*(\d+)\s*题</summary>(.*?)</details>", re.S)
 
 
