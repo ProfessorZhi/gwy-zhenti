@@ -14,6 +14,8 @@ const REPO = B;
 const ENTRY = 'https://www.fenbi.com/spa/tiku/guide/realTest/xingce/xingce';
 const GAP = 2500;
 const sha = b => createHash('sha256').update(b).digest('hex');
+// Wait for an element instead of a fixed sleep; on timeout fall through exactly as the old fixed wait did.
+const settle = (page, selector, timeout) => page.locator(selector).first().waitFor({ state: 'visible', timeout }).catch(() => {});
 
 const T = JSON.parse(process.argv[2] || '{}');
 if (!T.key || !T.sourceId || !T.label || !T.titleRe) { console.error('usage: node capture-new-generic.mjs <json>'); process.exit(2); }
@@ -67,14 +69,29 @@ try {
   });
   const page = await ctx.newPage();
   const auth = { status: 'unknown' };
-  ctx.on('response', r => { try { const u = new URL(r.url()); if (u.hostname === 'login.fenbi.com' && u.pathname === '/api/users/info' && r.request().method() === 'GET') auth.status = r.status() === 200 ? 'authenticated' : 'unauthenticated'; } catch {} });
+  // Same risk counters as t2-collector, so t2-phaseb2 and the service can stop or back off on them.
+  result.risk = { captcha: 0, loginLost: 0, http403: 0, http429: 0 };
+  ctx.on('response', r => { try {
+    const u = new URL(r.url()), st = r.status();
+    if (st === 403) result.risk.http403++;
+    if (st === 429) result.risk.http429++;
+    if (/captcha|verifycode|verification/i.test(u.pathname)) result.risk.captcha++;
+    if (u.hostname === 'login.fenbi.com' && u.pathname === '/api/users/info' && r.request().method() === 'GET') {
+      auth.status = st === 200 ? 'authenticated' : 'unauthenticated';
+      if (st === 401 || st === 403) result.risk.loginLost++;
+    }
+  } catch {} });
 
   await throttle(); result.navCount++;
   await page.goto(ENTRY, { waitUntil: 'domcontentloaded', timeout: config.timeoutMs });
-  await sleep(2500);
+  await settle(page, 'span.categories-item', 10000);
   await throttle();
   await page.locator('span.categories-item', { hasText: T.label }).first().click();
-  await sleep(4000);
+  // Wait for this paper's own row, not any paper-item: the list from before the region switch may still be on screen.
+  // If the paper is on a later page the wait times out and the pager loop below takes over, as before.
+  await page.locator('div.paper-item', { hasText: new RegExp(T.titleRe) }).first()
+    .waitFor({ state: 'visible', timeout: 6000 }).catch(() => {});
+  await sleep(800);
 
   // 目录分页：目标卷可能在后续页，仅点击真实分页器 .houpage（与导航同一 2.5s 节流）
   let row = page.locator('div.paper-item', { hasText: new RegExp(T.titleRe) }).first();
@@ -100,29 +117,55 @@ try {
   if (result.hadExistingExercise) initBudget = 0;
 
   await throttle();
+  const clickedAt = Date.now();
   await row.click();
-  await sleep(13000);
   result.navCount++;
 
+  // The exercise may open in this tab or a new one; poll every page until questions render (max 20s, was a fixed 13s).
   let qpage = null;
-  for (const p of ctx.pages()) { try { if (await p.evaluate(() => document.querySelectorAll('app-ti[data-question-key]').length > 0)) { qpage = p; break; } } catch {} }
+  for (let waited = 0; waited < 20000 && !qpage; waited += 1000) {
+    await sleep(1000);
+    for (const p of ctx.pages()) { try { if (await p.evaluate(() => document.querySelectorAll('app-ti[data-question-key]').length > 0)) { qpage = p; break; } } catch {} }
+  }
+  // Questions can render progressively: wait until the count is unchanged for 3s, and at least 6s after the click
+  // (max 15s more). This only shortens the old fixed 13s wait; completeness is still checked below against the
+  // paper's own expected question count, and validateDocument grades anything short as not complete.
+  if (qpage) {
+    let prev = -1, stable = 0;
+    for (let i = 0; i < 15 && (stable < 3 || Date.now() - clickedAt < 6000); i++) {
+      await sleep(1000);
+      const n = await qpage.evaluate(() => document.querySelectorAll('app-ti[data-question-key]').length).catch(() => prev);
+      stable = n === prev ? stable + 1 : 0; prev = n;
+    }
+  }
   if (!qpage) throw Object.assign(new Error('no rendered question page'), { code: 'NO_QUESTION_PAGE' });
   result.pageUrl = qpage.url(); result.pageTitle = await qpage.title();
   result.titleMatches = (T.titleFrag || []).every(f => result.pageTitle.includes(f));
   result.auth = auth.status;
 
-  const raw = await qpage.evaluate((sel) => [...document.querySelectorAll(sel)].map(el => {
-    const clone = el.cloneNode(true);
-    const imgs = [...el.querySelectorAll('img')], copies = [...clone.querySelectorAll('img')];
-    imgs.forEach((im, i) => { const a = im.currentSrc || im.getAttribute('src') || im.getAttribute('data-src'); if (a && copies[i]) copies[i].setAttribute('src', a); });
-    return clone.outerHTML;
-  }).join('\n'), config.contentSelector);
-  if (!raw) throw Object.assign(new Error('empty DOM'), { code: 'EMPTY_DOM' });
-  const cleaned = sanitizeHtml(raw);
+  const snapshot = async () => {
+    const raw = await qpage.evaluate((sel) => [...document.querySelectorAll(sel)].map(el => {
+      const clone = el.cloneNode(true);
+      const imgs = [...el.querySelectorAll('img')], copies = [...clone.querySelectorAll('img')];
+      imgs.forEach((im, i) => { const a = im.currentSrc || im.getAttribute('src') || im.getAttribute('data-src'); if (a && copies[i]) copies[i].setAttribute('src', a); });
+      return clone.outerHTML;
+    }).join('\n'), config.contentSelector);
+    if (!raw) throw Object.assign(new Error('empty DOM'), { code: 'EMPTY_DOM' });
+    const cleaned = sanitizeHtml(raw);
+    return { cleaned, parsed: parseFenbiExamDom(cleaned.html, T.identity, { url: result.pageUrl, capturedAt: new Date().toISOString() }) };
+  };
+  let { cleaned, parsed } = await snapshot();
+  // The page states how many questions the paper has; if fewer rendered, give it one more chance before parsing.
+  const expectedQ = parsed.expected?.questions;
+  if (Number.isInteger(expectedQ) && parsed.questions.length < expectedQ) {
+    await sleep(8000);
+    ({ cleaned, parsed } = await snapshot());
+    result.renderRetry = { expected: expectedQ, got: parsed.questions.length };
+  }
+  result.waitMs = Date.now() - clickedAt;
   await fs.writeFile(path.join(outDir, 'dom-raw.json'), JSON.stringify({ source: result.pageUrl, contentHtml: cleaned.html }), { mode: 0o600 });
 
   const document = createDocument(T.identity, { url: result.pageUrl, capturedAt: new Date().toISOString() });
-  const parsed = parseFenbiExamDom(cleaned.html, T.identity, { url: result.pageUrl, capturedAt: new Date().toISOString() });
   document.identity.questionIdNamespace = parsed.identity.questionIdNamespace;
   document.source.url = parsed.source.url; document.chapters = parsed.chapters;
   document.evidence.push(...parsed.evidence); document.conflicts.push(...parsed.conflicts);

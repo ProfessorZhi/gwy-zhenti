@@ -36,7 +36,7 @@ const base = await loadConfig(path.join(WORK, 'config.json'));
 const config = { ...base, workDir: WORK, profileDir: path.join(WORK, 'profiles', base.profileName) };
 const lockPath = path.join(config.profileDir, '.fenbi-framework.lock');
 const owner = `${process.pid}:${randomUUID()}`;
-const stats = { requested: 0, downloaded: 0, unauthorized: 0, httpError: 0, failed: 0, rejected: 0, bytes: 0, risk: { s401_403: 0, s429_503: 0 } };
+const stats = { requested: 0, downloaded: 0, unauthorized: 0, httpError: 0, failed: 0, rejected: 0, bytes: 0, risk: { s401: 0, s403: 0, s429_503: 0 } };
 let ctx = null;
 try {
   const lf = await fs.open(lockPath, 'wx'); await lf.writeFile(owner, 'utf8'); await lf.close();
@@ -64,8 +64,12 @@ try {
         await sleep(GAP_MS);
         res = await req.get(url, { maxRedirects: 0, timeout: 45000 });
         const st = res.status();
-        if (st === 401 || st === 403) { stats.risk.s401_403++; t.known.set(url, { url, status: 'unauthorized' }); stats.unauthorized++; continue; }
-        if (st === 429 || st === 503) stats.risk.s429_503++;
+        // 401 means the session is gone: stop requesting at once. A 403 counts toward the hourly limit.
+        if (st === 401) { stats.risk.s401++; t.known.set(url, { url, status: 'unauthorized' }); stats.unauthorized++; stats.stopReason = 'unauthorized'; break; }
+        // A first 403/429/503 ends this asset batch so the parent can back off immediately.
+        // The remaining assets stay pending; the next authorized cycle may retry them.
+        if (st === 403) { stats.risk.s403++; t.known.set(url, { url, status: 'unauthorized' }); stats.unauthorized++; stats.stopReason = 'http403'; break; }
+        if (st === 429 || st === 503) { stats.risk.s429_503++; t.known.set(url, { url, status: 'http_error' }); stats.httpError++; stats.stopReason = 'http429_or_503'; break; }
         if (st < 200 || st >= 300) { t.known.set(url, { url, status: 'http_error' }); stats.httpError++; continue; }
         const h = res.headers();
         const type = (h['content-type'] || '').split(';')[0].toLowerCase();
@@ -97,6 +101,7 @@ try {
     await fs.writeFile(path.join(PAPERS, t.d, 'validation.json'), JSON.stringify(verdict, null, 2) + '\n', { mode: 0o600 });
     const pend = t.doc.assets.filter(a => a.status !== 'downloaded').length;
     console.log(`${t.d} pending=${pend}/${t.doc.assets.length} verdict=${verdict.status}`);
+    if (stats.stopReason) break;
   }
 } catch (e) {
   stats.error = (e.code || e.name) + ' :: ' + String(e.message || e).slice(0, 160);

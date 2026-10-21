@@ -77,10 +77,20 @@ Node 22 (`engines.node >= 22`) and `playwright-core 1.64.1` from
 normal lockfile on the host. Other imports are Node builtins or the tracked
 `tools/fenbi/src/*.mjs` modules.
 
-## Not deployed / limitations
+## Deployment (2026-10-21)
 
-- This copy has not been run in production and is not wired to any service.
-- The Publisher service runs from a separate worktree at a different commit
-  than `main`; that is a deployment fact, not a grant of publication rights.
-- Browser authentication and the persistent profile must stay local. The
-  `deploy/systemd/*.example` units are templates only; see their README notes.
+These files are now meant to be the **only** collector source: run the service from a checkout of
+`main` (see `deploy/systemd/fenbi-pipeline.service.example` and
+`docs/WORKFLOW-THINKING.md`). Set `FENBI_WORK_DIR` to the existing runtime directory so profiles and
+caches stay where they are; every module honours it. The untracked `driver/` copy on the Dell host
+should be retired once the new unit is running.
+
+Changes versus the archived copy: `SERVICE_BATCH` default 10 (was 3; raise to 30 after a clean trial),
+`SERVICE_INTERVAL` 10s (was 60s), `SERVICE_FOCUS_RESCAN` 7200s (was 1800s). Every child summary now goes
+through `service-risk.mjs`: captcha, login lost, unauthorized, or three 403/429 hits within an hour write `STOP`
+and exit 0; other failures back off (`SERVICE_BACKOFF`, 900s, interruptible by `STOP`) and write `ALERT` after
+`SERVICE_ALERT_AFTER` consecutive backoffs; a crash exits non-zero for `Restart=on-failure`.
+`capture-new-generic.mjs` waits for the target row and for the question count to settle (at least 6s), and
+re-snapshots once when fewer questions rendered than the paper's chapter counters state.
+
+- Browser authentication and the persistent profile must stay local.

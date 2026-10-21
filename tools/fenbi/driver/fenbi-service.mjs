@@ -8,6 +8,7 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { FOCUS_REGIONS, chooseFocusScan, applyFocusSuccess, applyRegionScan } from './focus-schedule.mjs';
+import { riskDecision } from './service-risk.mjs';
 
 const pexec = promisify(execFile);
 const B = path.resolve(process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..'));
@@ -17,19 +18,26 @@ const STOP = WORK + '/STOP';
 const LOG = RUN + '/service.log';
 const LOCK = RUN + '/service.lock';
 const STATE = RUN + '/service-state.json';
+const ALERT = WORK + '/ALERT';
 const NODE = process.execPath;
 const DRIVER = path.dirname(fileURLToPath(import.meta.url));
 const CAND = WORK + '/candidates-live.json';
 const CAT = WORK + '/catalog-live-20261019';
 
-const BATCH = Number(process.env.SERVICE_BATCH || 3);
-const INTERVAL = Number(process.env.SERVICE_INTERVAL || 60) * 1000;
+// 每轮固定开销（目录巡检、建队列、启动浏览器、轮间等待）按批摊薄：批越小，每卷分摊越多。
+// 先用 10 实测，确认完整率和风控都正常后再调到 30（SERVICE_BATCH 环境变量）。
+const BATCH = Number(process.env.SERVICE_BATCH || 10);
+const INTERVAL = Number(process.env.SERVICE_INTERVAL || 10) * 1000;
+// 非风控类失败（超时、网络、找不到行等）不写 STOP，退避后继续；风控信号仍立即停。
+const BACKOFF = Number(process.env.SERVICE_BACKOFF || 900) * 1000;
+// 连续退避达到这个次数（默认 4 次≈1 小时）写 ALERT 文件提醒人看，但不停止重试。
+const ALERT_AFTER = Number(process.env.SERVICE_ALERT_AFTER || 4);
 const EMPTY_RESCAN = Number(process.env.SERVICE_EMPTY_RESCAN || 1800) * 1000;
 const OTHER_REGIONS = ['安徽', '甘肃', '广西', '贵州', '海南', '河北', '河南', '黑龙江', '湖北', '湖南',
   '吉林', '江西', '辽宁', '内蒙古', '宁夏', '青海', '山东', '山西', '陕西', '四川', '西藏', '新疆', '云南', '重庆'];
 const CHUNK = Number(process.env.SERVICE_REGION_CHUNK || 3);
 // 重点区：低占空比、每次只扫 1 个地区；10 区 × 30min 约 5h 一轮，避免与常规队列抢带宽。
-const FOCUS_RESCAN = Number(process.env.SERVICE_FOCUS_RESCAN || 1800) * 1000;
+const FOCUS_RESCAN = Number(process.env.SERVICE_FOCUS_RESCAN || 7200) * 1000;
 const FOCUS_PAGES = Number(process.env.SERVICE_FOCUS_PAGES || 8);
 
 const log = async (event, extra = {}) => {
@@ -62,6 +70,8 @@ state.regions ||= {};
 state.focusIndex ||= 0;
 state.focusScans ||= 0;
 state.focusFailures ||= 0;
+state.rateHits ||= [];
+state.backoffStreak ||= 0;
 
 // 用既有目录快照种子化 firstIndexedAt/lastScannedAt：重启不把旧地区误记为“首次索引”，
 // 也不会因状态文件缺失而立刻重扫全部地区。
@@ -109,7 +119,24 @@ const stopNow = async (reason, extra = {}) => {
   await fs.writeFile(STOP, JSON.stringify({ at: new Date().toISOString(), by: 'fenbi-service', reason, ...extra }) + '\n', { mode: 0o600 });
   await log('stop', { reason, ...extra });
 };
-const riskHit = s => s && s.risk && (s.risk.captcha || s.risk.loginLost || s.risk.http403 || s.risk.http429);
+const stopFileExists = async () => { try { await fs.access(STOP); return true; } catch { return false; } };
+// 每个子进程结束后先过风控：'stop' 已写 STOP；'backoff' 表示有 403/429 但未到一小时阈值。
+const riskGate = async (name, r) => {
+  const d = riskDecision(r.summary, state.rateHits, Date.now(), r.code);
+  if (d.action === 'stop') { await stopNow(`${name}_risk`, { risk: d.reason, recentHttpHits: d.recent }); return 'stop'; }
+  if (d.action === 'backoff') await log('risk_soft', { step: name, reason: d.reason, hits: d.soft, recentHttpHits: d.recent, code: r.code });
+  return d.action;
+};
+// 退避期间每 30 秒看一次 STOP，人工暂停立即生效；长时间连续退避写 ALERT 提醒人看。
+const backoff = async (reason, extra = {}) => {
+  state.backoffStreak += 1;
+  await log('backoff', { reason, seconds: BACKOFF / 1000, streak: state.backoffStreak, ...extra });
+  if (state.backoffStreak >= ALERT_AFTER) {
+    await fs.writeFile(ALERT, JSON.stringify({ at: new Date().toISOString(), reason, streak: state.backoffStreak }) + '\n', { mode: 0o600 });
+  }
+  await writeJson(STATE, state);
+  for (let waited = 0; waited < BACKOFF && !(await stopFileExists()); waited += 30e3) await sleep(Math.min(30e3, BACKOFF - waited));
+};
 
 if (process.env.FENBI_SERVICE_DRY_RUN === '1') {
   const f = chooseFocusScan(state, FOCUS_REGIONS, Date.now(), FOCUS_RESCAN);
@@ -126,6 +153,7 @@ await log('service_start', { pid: process.pid, batch: BATCH, regions: OTHER_REGI
 try {
   for (;;) {
     try { await fs.access(STOP); await log('exit', { reason: 'stop_file' }); break; } catch {}
+    try {
 
     // 1) 目录巡检（未巡完的地区，每轮 3 个；巡完后仅按 EMPTY_RESCAN 周期重扫）
     let discovered = false;
@@ -133,6 +161,9 @@ try {
       const chunk = OTHER_REGIONS.slice(state.regionIndex, state.regionIndex + CHUNK);
       const r = await step('discover', DRIVER + '/p0-discover-regions.mjs', [],
         { REGIONS: chunk.join(','), DISCOVERY_OUT: CAT, MAX_PAGES_PER_REGION: '8' }, 15 * 60e3);
+      const g = await riskGate('discovery', r);
+      if (g === 'stop') break;
+      if (g === 'backoff') { await backoff('discovery_http'); continue; }
       if (r.code === 0 && !r.summary?.error) {
         state.regionIndex += chunk.length; discovered = true; state.discoveryFailures = 0;
         const at = new Date().toISOString();
@@ -140,10 +171,7 @@ try {
       } else if (r.code !== 0 || r.summary?.error) {
         state.discoveryFailures = (state.discoveryFailures || 0) + 1;
         await log('discovery_failed', { failures: state.discoveryFailures, code: r.code, error: String(r.summary?.error || '').slice(0, 120) });
-        if (state.discoveryFailures >= 3) { await stopNow('discovery_repeated_failure', { failures: state.discoveryFailures }); break; }
-      }
-      if (r.summary?.risk?.captcha || r.summary?.risk?.unauthorized || r.summary?.risk?.rateLimited) {
-        await stopNow('discovery_risk', r.summary.risk); break;
+        if (state.discoveryFailures >= 3) { state.discoveryFailures = 0; await backoff('discovery_repeated_failure'); continue; }
       }
       state.lastDiscoveryAt = new Date().toISOString();
     } else {
@@ -153,6 +181,9 @@ try {
         const chunk = OTHER_REGIONS.slice(start, start + CHUNK);
         const r = await step('rescan', DRIVER + '/p0-discover-regions.mjs', [],
           { REGIONS: chunk.join(','), DISCOVERY_OUT: CAT, MAX_PAGES_PER_REGION: '8' }, 15 * 60e3);
+        const g = await riskGate('rescan', r);
+        if (g === 'stop') break;
+        if (g === 'backoff') { await backoff('rescan_http'); continue; }
         if (r.code === 0 && !r.summary?.error) {
           const at = new Date().toISOString();
           for (const region of chunk) applyRegionScan(state, region, at, r.summary?.regions?.[region] || null);
@@ -168,6 +199,9 @@ try {
     if (focus.due) {
       const r = await step('focus-rescan', DRIVER + '/p0-discover-regions.mjs', [],
         { REGIONS: focus.region, DISCOVERY_OUT: CAT, MAX_PAGES_PER_REGION: String(FOCUS_PAGES) }, 15 * 60e3);
+      const g = await riskGate('focus', r);
+      if (g === 'stop') break;
+      if (g === 'backoff') { await backoff('focus_http'); continue; }
       const rec = r.summary?.regions?.[focus.region] || null;
       if (r.code === 0 && !r.summary?.error) {
         applyFocusSuccess(state, FOCUS_REGIONS, focus.region, new Date().toISOString(), rec);
@@ -179,10 +213,7 @@ try {
         state.focusLastAttemptAt = new Date().toISOString();
         await log('focus_failed', { region: focus.region, failures: state.focusFailures, code: r.code,
           error: String(r.summary?.error || '').slice(0, 120) });
-        if (state.focusFailures >= 3) { await stopNow('focus_repeated_failure', { failures: state.focusFailures }); break; }
-      }
-      if (r.summary?.risk?.captcha || r.summary?.risk?.unauthorized || r.summary?.risk?.rateLimited) {
-        await stopNow('focus_risk', { region: focus.region, ...r.summary.risk }); break;
+        if (state.focusFailures >= 3) { state.focusFailures = 0; state.focusLastAttemptAt = new Date().toISOString(); await backoff('focus_repeated_failure'); continue; }
       }
     }
 
@@ -196,19 +227,26 @@ try {
       const end = new Date(Date.now() + 20 * 60e3).toISOString();
       const r = await step('capture', DRIVER + '/t2-phaseb2.mjs', [], { CANDIDATES_FILE: CAND, PHASEB2_MAX: String(BATCH), PHASEB2_END: end }, 30 * 60e3);
       newPapers += r.newPapers;
-      if (r.summary?.stop === 'consecutive_failures' || (r.summary?.ok === 0 && r.summary?.fail >= 3)) { await stopNow('capture_consecutive_failures'); break; }
+      const gc = await riskGate('capture', r);
+      if (gc === 'stop') break;
+      if (gc === 'backoff') { await backoff('capture_http'); continue; }
+      if (r.summary?.stopReason === 'consecutive_failures' || (r.summary?.ok === 0 && r.summary?.fail >= 3)) { await backoff('capture_consecutive_failures'); continue; }
       try { await fs.access(STOP); await log('exit', { reason: 'stop_file_after_capture' }); break; } catch {}
     }
 
     // 4) 提交（有界、只对确认空白）
     const sub = await step('collect', DRIVER + '/t2-collector.mjs', [], { T2_LIMIT: String(BATCH), T2_MAX_MS: String(40 * 60e3) }, 45 * 60e3);
-    if (riskHit(sub.summary)) { await stopNow('submit_risk', sub.summary.risk); break; }
-    if (sub.summary?.metrics?.stopReason === 'consecutive_failures') { await stopNow('submit_consecutive_failures'); break; }
+    const gs = await riskGate('submit', sub);
+    if (gs === 'stop') break;
+    if (gs === 'backoff') { await backoff('submit_http'); continue; }
+    if (sub.summary?.stopReason === 'consecutive_failures') { await backoff('submit_consecutive_failures'); continue; }
     try { await fs.access(STOP); await log('exit', { reason: 'stop_file_after_submit' }); break; } catch {}
 
     // 5) 回填 + 资产
     await step('backfill', DRIVER + '/t2-backfill-json.mjs', [], {}, 10 * 60e3);
     const assets = await step('assets', DRIVER + '/t2-asset-pass.mjs', [], {}, 25 * 60e3);
+    const ga = await riskGate('assets', assets);
+    if (ga === 'stop') break;
 
     state.rounds += 1;
     state.newPapers += newPapers;
@@ -219,11 +257,21 @@ try {
       regionIndex: state.regionIndex, focusScan, focusIndex: state.focusIndex,
       focusLastScanAt: state.focusLastScanAt || null });
 
-    if (riskHit(sub.summary) || riskHit(assets.summary)) break;
+    // 一轮正常走完：清掉退避计数和 ALERT。
+    if (ga === 'ok') { state.backoffStreak = 0; await fs.unlink(ALERT).catch(() => {}); }
+    else { await backoff('assets_http'); continue; }
+    } catch (e) {
+      // 单轮异常不结束服务：记日志、退避后继续下一轮。
+      await log('round_error', { error: (e.code || e.name) + ' :: ' + String(e.message || e).slice(0, 200) });
+      await backoff('round_error');
+      continue;
+    }
     await sleep(INTERVAL);
   }
 } catch (e) {
   await log('fatal', { error: (e.code || e.name) + ' :: ' + String(e.message || e).slice(0, 200) });
+  // 非预期崩溃以非 0 退出，交给 systemd 的 Restart=on-failure；STOP 等正常退出为 0，不会被重新拉起。
+  process.exitCode = 1;
 } finally {
   await writeJson(STATE, state);
   await release();
