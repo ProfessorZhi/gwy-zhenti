@@ -54,6 +54,15 @@ def verify_to_round4(root:Path)->dict:
 
 def verify(root:Path)->dict:
  root=Path(root).resolve()
+ if (root/'reports/E5NW-ORIGINAL-ANSWERS-20261022.jsonl').exists():
+  from verify_e5nw_original_answers import verify as verify_e5nw, historical_snapshot as e5nw_snapshot, records as e5nw_records
+  newest=verify_e5nw(root)
+  with tempfile.TemporaryDirectory(prefix='gwy-e5nw-historical-') as tmp:
+   e5nw_snapshot(root,Path(tmp))
+   result=verify(Path(tmp))
+  result['e5nw']=newest
+  result['receipt_records']+=len(e5nw_records(root))
+  return result
  if (root/'reports/S5R3-ORIGINAL-ANSWERS-20261021.jsonl').exists():
   from verify_s5r3_original_answers import verify as verify_s5r3, historical_snapshot as s5r3_snapshot, records as s5r3_records
   third=verify_s5r3(root)
