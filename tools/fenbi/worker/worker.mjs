@@ -69,12 +69,15 @@ for (const key of (await fs.readdir(PAPERS).catch(() => [])).sort()) {
   cached.push({ key, sourceId: sid, pageUrl: hasDoc ? run?.pageUrl || null : null });
 }
 const quarantine = (await readJson(RUN + '/identity-quarantine.json')) || {};
+const quarantinedSids = new Set(Object.keys(quarantine).filter(k => k !== 'schemaVersion' && k !== 'at'));
 const queue = buildQueue({ cached, candidates: (await readJson(CAND, { candidates: [] })).candidates || [], t2Ledger, captureLedger,
   quarantined: new Set(Object.keys(quarantine).filter(k => k !== 'schemaVersion' && k !== 'at')) });
 queue.length = Math.min(queue.length, MAX_PAPERS);
 // 先补落地已交卷、但上次没能发布的卷（例如图片在风控退避后才补齐），队列为空时也做。
 if (INTEG) {
-  const submitted = cached.map(c => c.key).filter(k => ['complete', 'submitted_partial'].includes(t2Ledger.papers[k]?.status));
+  // 身份被隔离的卷不落地。
+  const submitted = cached.filter(c => !quarantinedSids.has(c.sourceId)).map(c => c.key)
+    .filter(k => ['complete', 'submitted_partial'].includes(t2Ledger.papers[k]?.status));
   try {
     const r = await landMany({ papersDir: PAPERS, names: submitted, repo: INTEG, rightsFile: RIGHTS });
     await log('catchup_land', { papers: submitted.length, A: r.A, C: r.C, errors: r.errors, promoted: r.promote?.promoted ?? 0 });
@@ -94,6 +97,12 @@ const ledger = {
   markSubmit: (item, status, extra = {}) => ledgerLock(async () => {
     t2Ledger.papers[item.key] = { status, sourceId: item.sourceId, at: new Date().toISOString(), by: 'worker', ...extra };
     await writeJson(T2_LEDGER, t2Ledger);
+  }),
+  quarantine: (item, info) => ledgerLock(async () => {
+    const q = (await readJson(RUN + '/identity-quarantine.json')) || {};
+    q[item.sourceId] = { at: new Date().toISOString(), key: item.key, by: 'worker', ...info };
+    await writeJson(RUN + '/identity-quarantine.json', q);
+    quarantinedSids.add(String(item.sourceId));
   }),
   markCapture: (item, status, extra = {}) => ledgerLock(async () => {
     captureLedger.targets[item.sourceId] = { status, key: item.key, area: item.area, year: item.year, at: new Date().toISOString(), by: 'worker', ...extra };

@@ -9,6 +9,8 @@ import { isCollectionStub, validateDocument } from './validate.mjs';
 import { RENDERED_COLLECTION_STUB } from './collection-stub.mjs';
 import { renderCandidate } from './render.mjs';
 
+// 粉笔与本库都缺的题在 Markdown 里的固定标注。policy.mjs 的有效题计数认这句话，替换判断因此不会把它当成有效题。
+export const SOURCE_MISSING_NOTE = '粉笔暂未收录本题（来源缺题，题位保留）';
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const APP_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const subjectName = q => q === 'xingce' ? '行测' : q === 'shenlun' ? '申论' : null;
@@ -60,11 +62,13 @@ export function assemble(document, oldMarkdown = '') {
         current.legacyFallbackNumber=ancestor.number;
         current.legacyFallbackMarkdown=true;
       } else {
-        counters.unresolvedStubs++;issues.push('source-stub-no-safe-legacy-fallback:'+q.number);
+        // 粉笔与本库都没有这道题：按既定规则保留题位、明确标注"来源缺题"，整卷照常发布（不是完整卷，清单里列出缺题号）。
+        counters.unresolvedStubs++;current.sourceMissing=true;
       }
     }
     if (!isStub(q) && !isUsable(q)) issues.push('question-body-empty:'+q.number);
-    if (!Array.isArray(q.options) || (id.subject==='xingce' && q.options.length<2)) issues.push('options-missing:'+q.number);
+    if (!current.sourceMissing && (!Array.isArray(q.options) || (id.subject==='xingce' && q.options.length<2))) issues.push('options-missing:'+q.number);
+    if (current.sourceMissing) { current.contentHtml='';current.options=[];current.answerHtml='';current.explanationHtml=''; }
     if (current.legacyFallbackMarkdown) {
       // Original repository Markdown blocks cannot be passed through an HTML-only renderer.
       current.contentHtml='';current.options=[];current.answerHtml='';current.explanationHtml='';
@@ -96,7 +100,8 @@ function extractLegacyBlock(oldMarkdown, number) {
 export function renderIngest(assembly, oldMarkdown='', imagePrefix='assets') {
   const draft=assembly.prepared;
   const markers=draft.questions.filter(q=>q.legacyFallbackMarkdown);
-  const renderDocument={...draft, questions:draft.questions.map(q=>q.legacyFallbackMarkdown?{...q,contentHtml:'LEGACYFALLBACK'+q.number,options:[]} : q)};
+  const renderDocument={...draft, questions:draft.questions.map(q=>q.legacyFallbackMarkdown?{...q,contentHtml:'LEGACYFALLBACK'+q.number,options:[]}
+    : q.sourceMissing?{...q,contentHtml:'<p>'+SOURCE_MISSING_NOTE+'</p>',options:[]} : q)};
   let md=renderCandidate(renderDocument,{status:'complete'}, { imagePrefix });
   for(const q of markers){
     const block=extractLegacyBlock(oldMarkdown,q.number);
@@ -114,18 +119,21 @@ export function renderIngest(assembly, oldMarkdown='', imagePrefix='assets') {
 export function structureGrade(assembly, markdownText, validation) {
   const blockers=assembly.issues.filter(x=>!x.startsWith('unmapped-legacy-answers-retained-separately'));
   const doc=assembly.prepared, q=doc.questions;
+  const exempt=n=>q.some(item=>(item.legacyFallbackMarkdown||item.sourceMissing) && item.number===n);
   if(!q.length)blockers.push('no-questions');
   if(q.some(x=>isStub(x) && !x.legacyFallbackMarkdown))blockers.push('unremoved-source-stub');
   if(doc.assets.some(x=>x.status!=='downloaded'||!x.localPath||!x.sha256))blockers.push('asset-not-ready');
   if(validation?.dimensions?.images?.status !== 'complete')blockers.push('image-validation-not-complete');
-  for(const issue of validation?.issues || []) if(['questions','materials'].includes(issue.dimension) && !((issue.code==='question-body-empty'||issue.code==='question-body-placeholder'||issue.code==='options-missing') && q.some(item=>item.legacyFallbackMarkdown && item.number===issue.number))) blockers.push('source-structure:'+issue.code);
+  for(const issue of validation?.issues || []) if(['questions','materials'].includes(issue.dimension) && !((issue.code==='question-body-empty'||issue.code==='question-body-placeholder'||issue.code==='options-missing') && exempt(issue.questionNumber ?? issue.number))) blockers.push('source-structure:'+issue.code);
   // Grade A must describe the rendered bytes, not just the pre-render source object.
   // A legacy fallback can reintroduce a stub after document validation.
   if(RENDERED_COLLECTION_STUB.test(markdownText))blockers.push('rendered-collection-stub-remains');
   if(!markdownText.includes('## 题目'))blockers.push('missing-questions-heading');
   if(!markdownText.includes('### 第 1 题') && !/^## 第 1 题/mu.test(markdownText))blockers.push('missing-first-question');
   if(q.some(x=>x.legacyFallbackMarkdown) && !markdownText.includes('本题来源：原库'))blockers.push('legacy-fallback-not-rendered');
-  return {grade:blockers.length?'C':'A',blockers:[...new Set(blockers)],counts:assembly.counters,
+  const sourceMissingNumbers=q.filter(x=>x.sourceMissing).map(x=>x.number);
+  if(sourceMissingNumbers.length && sourceMissingNumbers.length*2>q.length)blockers.push('source-missing-majority');
+  return {grade:blockers.length?'C':'A',blockers:[...new Set(blockers)],counts:assembly.counters,sourceMissingNumbers,
     answerCompleteness:'per-question; unknown does not claim correctness',
     note:'A=local structural candidate only; not official truth or permission to publish'};
 }
@@ -168,7 +176,7 @@ export async function ingestFolder({source,repo,dest,name,write=false}){
   const md=renderIngest(assembly,prior,prefix);
   const grade=structureGrade(assembly,md,verdict);
   const answerNumbers=assembly.prepared.questions.filter(q=>flat(q.answerHtml)).map(q=>q.number);
-  const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,counts:grade.counts,answerNumbers,markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw)};
+  const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,counts:grade.counts,answerNumbers,sourceMissingNumbers:grade.sourceMissingNumbers,markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw)};
   if(write){
     const out=path.join(dest,name);await fs.mkdir(out,{recursive:true,mode:0o700});
     let existing=await fs.readFile(path.join(out,'paper.md')).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));

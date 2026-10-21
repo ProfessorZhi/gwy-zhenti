@@ -11,6 +11,7 @@ import { parseFenbiExamDom } from '../src/dom.mjs';
 import { createDocument, absorbPayload, collectAssetUrls } from '../src/model.mjs';
 import { validateDocument } from '../src/validate.mjs';
 import { parseAnalysisDom, mergeAnalysisDom, mergeSolutionJson, isBlank } from './analysis-merge.mjs';
+import { pickRow, collectPaperIds, bindingStatus } from './identity.mjs';
 
 export const ENTRY = 'https://www.fenbi.com/spa/tiku/guide/realTest/xingce/xingce';
 const QSEL = 'app-ti[data-question-key]';
@@ -69,28 +70,39 @@ const countQuestions = p => p.evaluate(sel => document.querySelectorAll(sel).len
 // 目录：标签页已在该地区的目录上就先在当前页找，找不到再从入口重新进入并逐页往后翻（最多 6 页）。
 async function findRow(slot, item, gate) {
   const page = slot.page;
-  const locate = () => page.locator('div.paper-item', { hasText: new RegExp(item.titleRe) }).first();
-  if (slot.region === item.label && await locate().count()) return { row: locate(), catalogPages: 0 };
+  const rows = () => page.locator('div.paper-item', { hasText: new RegExp(item.titleRe) });
+  // 只认标题精确对上的那一行（见 identity.pickRow）；含本标题的更长标题（如网友回忆版）不算。
+  const resolve = async () => {
+    const texts = await rows().allInnerTexts().catch(() => []);
+    const pick = pickRow(texts, item.identity?.title || '', item.siblingTitles || []);
+    if (typeof pick === 'number') return rows().nth(pick);
+    if (pick.error === 'AMBIGUOUS_ROW') throw fail('AMBIGUOUS_ROW');
+    return null;
+  };
+  let row = slot.region === item.label ? await resolve() : null;
+  if (row) return { row, catalogPages: 0 };
   await gate();
   await page.goto(ENTRY, { waitUntil: 'domcontentloaded', timeout: 45000 });
   await page.locator('span.categories-item').first().waitFor({ state: 'visible', timeout: 10000 }).catch(() => {});
   await gate();
   await page.locator('span.categories-item', { hasText: item.label }).first().click();
   slot.region = item.label;
-  await locate().waitFor({ state: 'visible', timeout: 6000 }).catch(() => {});
+  await rows().first().waitFor({ state: 'visible', timeout: 6000 }).catch(() => {});
   let catalogPages = 1;
-  for (let p = 0; p < 6 && !(await locate().count()); p++) {
+  row = await resolve();
+  for (let p = 0; p < 6 && !row; p++) {
     const next = page.locator('footer.question-list-pager .houpage').first();
     if (!await next.count()) break;
     const disabled = await next.evaluate(e => !e.offsetParent || /disabled/i.test((e.className || '').toString())).catch(() => true);
     if (disabled) break;
     await gate();
     await next.click({ timeout: 10000 }).catch(() => {});
-    await locate().waitFor({ state: 'visible', timeout: 3000 }).catch(() => {});
+    await rows().first().waitFor({ state: 'visible', timeout: 3000 }).catch(() => {});
     catalogPages++;
+    row = await resolve();
   }
-  if (!(await locate().count())) { slot.region = null; throw fail('ROW_NOT_FOUND'); }
-  return { row: locate(), catalogPages };
+  if (!row) { slot.region = null; throw fail('ROW_NOT_FOUND'); }
+  return { row, catalogPages };
 }
 
 // 打开练习（在互斥锁内执行）：返回渲染出题目的页面。新卷可能在本页打开，也可能新开一页。
@@ -98,6 +110,7 @@ async function openExercise(slot, item, env, rec) {
   const { ctx, gate, policy } = env;
   if (item.kind === 'resume') {
     await gate();
+    rec.clickedAt = Date.now();
     await slot.page.goto(item.pageUrl, { waitUntil: 'domcontentloaded', timeout: 45000 });
     slot.region = null;
     for (let waited = 0; waited < 30000; waited += 1000) {
@@ -115,6 +128,7 @@ async function openExercise(slot, item, env, rec) {
   policy.initBudget = rec.hadExistingExercise ? 0 : 1;
   try {
     await gate();
+    rec.clickedAt = Date.now();
     await row.click();
     for (let waited = 0; waited < 20000; waited += 1000) {
       await sleep(1000);
@@ -215,6 +229,28 @@ export async function runPaper(slot, item, env) {
       if (Array.isArray(j?.solutions)) solution = j;
     } catch {}
   };
+  // 打开练习之后，本卷页面上加载的 JSON 里出现的 paperId，用来核对身份（按页面归属，不会混进其他标签页的卷）。
+  const idsByPage = new Map();
+  const onCtxResp = async r => {
+    try {
+      if (!rec.clickedAt || !/json/i.test(r.headers()['content-type'] || '')) return;
+      const pg = r.frame()?.page();
+      if (!pg) return;
+      const ids = collectPaperIds(JSON.parse((await r.body()).toString('utf8')));
+      if (ids.size) { const set = idsByPage.get(pg) || new Set(); for (const x of ids) set.add(x); idsByPage.set(pg, set); }
+    } catch {}
+  };
+  // 观察到的 paperId 与 sourceId 不一致：这不是目录里那份卷，不交卷（交卷后才发现则不落地），并隔离该 sourceId。
+  const checkBinding = async stage => {
+    const ids = idsByPage.get(qpage) || new Set();
+    rec.binding = bindingStatus(ids, item.sourceId);
+    rec.paperIds = [...ids].slice(0, 5);
+    if (rec.binding === 'mismatch' || rec.binding === 'mixed') {
+      await env.ledger.quarantine?.(item, { stage, binding: rec.binding, paperIds: rec.paperIds });
+      throw fail('PAPER_ID_MISMATCH');
+    }
+  };
+  env.ctx.on('response', onCtxResp);
   try {
     await fs.mkdir(outDir, { recursive: true, mode: 0o700 });
     const openedAt = Date.now();
@@ -253,6 +289,7 @@ export async function runPaper(slot, item, env) {
     if (wait > 0) await sleep(wait);
     rec.dwellMs = Date.now() - readyAt;
 
+    await checkBinding('before-submit');
     // 先登记"交卷中"再点交卷：之后无论哪一步中断，这一卷都不会再被交第二次。
     await env.ledger.markSubmit(item, 'submitting');
     await submitBlank(qpage);
@@ -265,7 +302,10 @@ export async function runPaper(slot, item, env) {
     for (let waited = 0; !solution && waited < 5000; waited += 500) await sleep(500);
     const json = mergeSolutionJson(doc, solution, sanitizeHtml);
     if (solution) await writeAtomic(path.join(outDir, 'solution.json'), JSON.stringify(solution));
+    await checkBinding('after-submit');
     doc.evidence = Array.isArray(doc.evidence) ? doc.evidence : [];
+    if (rec.binding === 'verified') doc.evidence.push({ type: 'source-paper-identity', paperId: item.sourceId,
+      observedAt: new Date().toISOString(), via: 'paperId in exercise/analysis JSON on the opened page' });
     doc.evidence.push({ type: 'answer-explanation-source', source: 'fenbi-analysis-dom+observed-json', page: 'analysis-after-blank-submit',
       keyedBy: 'data-question-key/globalId', observedAt: new Date().toISOString(), dom, json: solution ? json : null });
 
@@ -295,6 +335,7 @@ export async function runPaper(slot, item, env) {
     rec.error = (e.code || e.name || 'ERR') + ' :: ' + String(e.message || e).slice(0, 160);
     if (item.kind === 'new' && !captured) await env.ledger.markCapture(item, 'failed', { error: rec.error.slice(0, 120) }).catch(() => {});
   } finally {
+    try { env.ctx.off('response', onCtxResp); } catch {}
     if (qpage) { try { qpage.off('response', onResp); } catch {} }
     if (qpage && qpage !== slot.page) await qpage.close().catch(() => {});
     rec.elapsedMs = Date.now() - t0;

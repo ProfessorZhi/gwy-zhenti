@@ -52,6 +52,9 @@ export function buildQueue({ cached = [], candidates = [], t2Ledger = {}, captur
   const submittedSids = new Set(Object.values(t2).filter(x => SUBMIT_DONE.has(x?.status)).map(x => String(x.sourceId || '')).filter(Boolean));
   const cachedSids = new Set(cached.map(c => String(c.sourceId)));
   const queue = [], seen = new Set();
+  // 同地区同年份的其他标题：目录里精确选行时，用来排除"以本卷标题开头的更长标题"。
+  const titlesBy = new Map();
+  for (const p of candidates) { const k = `${p.area}|${p.year}`; (titlesBy.get(k) || titlesBy.set(k, []).get(k)).push(p.title); }
   for (const c of cached) {
     const sid = String(c.sourceId);
     if (!sid || seen.has(sid) || quarantined.has(sid)) continue;
@@ -70,6 +73,7 @@ export function buildQueue({ cached = [], candidates = [], t2Ledger = {}, captur
     queue.push({ kind: 'new', key: `${meta.pre}-${p.year}-xingce-${variant}-${sid}`, sourceId: sid,
       label: meta.label, area: meta.area, year: p.year, titleRe: escapeRe(p.title), titleFrag: [String(p.year)],
       identity: { id: sid, title: p.title, subject: 'xingce', year: p.year, area: meta.area, variant },
+      siblingTitles: (titlesBy.get(`${p.area}|${p.year}`) || []).filter(t => t !== p.title),
       paper: `${meta.paperDir}/${p.year}/行测-${variant}.md` });
   }
   return queue;

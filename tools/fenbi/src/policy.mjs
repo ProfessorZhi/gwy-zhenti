@@ -78,7 +78,8 @@ export function isReplaceEnabled (value) {
   return value === '1';
 }
 
-const STUB = /题目正在全力以赴征集|网友未回忆起|题目缺失/u;
+// 最后一项是 batch-ingest 渲染"粉笔与本库都缺的题"时写的标注（SOURCE_MISSING_NOTE）：保留了题位，但不算有效题。
+const STUB = /题目正在全力以赴征集|网友未回忆起|题目缺失|粉笔暂未收录本题/u;
 const QUESTION_HEAD = /^#{2,3}\s*第\s*(\d+)\s*题/gmu;
 
 /** Count question positions and effective (non-stub) questions. */

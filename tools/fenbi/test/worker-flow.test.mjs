@@ -31,6 +31,7 @@ document.querySelectorAll('.categories-item').forEach(el => el.onclick = () => {
 </script></body></html>`;
 
 const examHtml = () => `<!doctype html><html><head><title>${TITLE}</title></head><body>
+<script>fetch('https://tiku.fenbi.com/api/xingce/exercises/fake-1').catch(() => {});</script>
 <div class="tis-container"><div class="chapter-container">常识判断（2题）请选择。</div><div class="questions-single-container">${question(1, '3_1_k1')}${question(2, '3_1_k2')}</div></div>
 <div class="submit-btn">交卷</div><div id="modal"></div>
 <script>
@@ -44,7 +45,7 @@ document.querySelector('.submit-btn').onclick = () => {
 };
 </script></body></html>`;
 
-async function fakeSite(ctx, { rowText = '' } = {}) {
+async function fakeSite(ctx, { rowText = '', paperId = 1 } = {}) {
   const seen = { init: 0, submit: 0, otherWrites: 0 };
   await ctx.route('**/*', route => {
     const req = route.request(), u = new URL(req.url()), m = req.method();
@@ -55,6 +56,7 @@ async function fakeSite(ctx, { rowText = '' } = {}) {
       return route.fulfill({ status: 200, contentType: 'application/json', body: '{}' });
     }
     if (req.url().startsWith(ENTRY)) return route.fulfill({ contentType: 'text/html; charset=utf-8', body: catalogHtml(rowText) });
+    if (u.pathname === '/api/xingce/exercises/fake-1') return route.fulfill({ contentType: 'application/json', body: JSON.stringify({ id: 'fake-1', sheet: { paperId } }) });
     if (req.url().startsWith(EXAM)) return route.fulfill({ contentType: 'text/html; charset=utf-8', body: examHtml() });
     if (u.pathname.startsWith('/combine/static/solution')) return route.fulfill({ contentType: 'application/json',
       body: JSON.stringify({ solutions: [{ globalId: '3_1_k1', correctAnswer: { choice: '0' } }, { globalId: '3_1_k2', correctAnswer: { choice: '1' }, solution: `<p>${EXPL}</p>` }] }) });
@@ -74,7 +76,8 @@ async function setup(t, opts) {
   const risk = { captcha: 0, loginLost: 0, http403: 0, http429: 0 };
   watchRisk(ctx, risk);
   const marks = [];
-  const ledger = { markSubmit: async (item, s) => marks.push(['submit', s]), markCapture: async (item, s) => marks.push(['capture', s]) };
+  const ledger = { markSubmit: async (item, s) => marks.push(['submit', s]), markCapture: async (item, s) => marks.push(['capture', s]),
+    quarantine: async (item, info) => marks.push(['quarantine', info.stage]) };
   const env = { ctx, gate: createGate(50), openLock: createMutex(), policy, risk, dwellMs: 300, papersDir: path.join(dir, 'papers'), ledger };
   const item = { kind: 'new', key: 'gk-2025-xingce-dishiji-1', sourceId: '1', label: '国考', area: '国考', year: 2025,
     titleRe: TITLE.replace(/[()（）]/g, '\\$&'), titleFrag: ['2025'],
@@ -98,6 +101,8 @@ test('one paper: catalog → one init → blank submit once → answers, explana
   const run = JSON.parse(await fs.readFile(path.join(env.papersDir, item.key, 'run-summary.json'), 'utf8'));
   assert.equal(run.pageUrl, EXAM);
   assert.equal(risk.http403 + risk.http429 + risk.captcha + risk.loginLost, 0);
+  assert.equal(rec.binding, 'verified');
+  assert.ok(doc.evidence.some(e => e.type === 'source-paper-identity' && e.paperId === '1'));
   assert.ok(rec.dwellMs >= 300);
 });
 
@@ -107,4 +112,12 @@ test('a row that already has a practice gets no init budget', { skip, timeout: 9
   assert.equal(rec.hadExistingExercise, true);
   assert.equal(seen.init, 0, 'the page tried, the policy aborted it');
   assert.equal(seen.submit, 1);
+});
+
+test('an opened exercise whose paperId is another paper is not submitted and is quarantined', { skip, timeout: 90e3 }, async t => {
+  const { env, item, seen, marks, slot } = await setup(t, { paperId: 999 });
+  const rec = await runPaper(slot, item, env);
+  assert.equal(rec.status, 'PAPER_ID_MISMATCH');
+  assert.equal(seen.submit, 0);
+  assert.deepEqual(marks.filter(m => m[0] !== 'capture').map(m => m.join(':')), ['quarantine:before-submit']);
 });
