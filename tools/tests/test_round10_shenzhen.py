@@ -111,7 +111,8 @@ class Round10ShenzhenReferences(unittest.TestCase):
         remaining = sum(n for key, n in counts.items() if key.endswith("/待补"))
         self.assertEqual(729, len(rows))
         self.assertEqual(9, len(bad))
-        self.assertEqual(568, remaining)
+        # S5 added six original study references (2026-10-21), moving 568 -> 562.
+        self.assertEqual(562, remaining)
         data = json.loads(SUMMARY.read_text(encoding="utf-8"))
         self.assertEqual(574, data["previous_missing_answers"])
         self.assertEqual(568, data["expected_missing_answers_after"])
