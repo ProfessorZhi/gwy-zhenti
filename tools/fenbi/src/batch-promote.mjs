@@ -97,6 +97,13 @@ export async function preparePromotion({candidateDir,repoRoot=APP_ROOT,rightsFil
   if(!inside(repo,dest))throw Error('publication-path-escape');
   const prior=await fs.readFile(dest).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));
   if(prior && hash(prior)!==receipt.oldSha256)throw Error('repository-paper-changed-since-candidate');
+  // Replacement must not reduce effective (non-stub) or total question positions.
+  if(prior){
+    const {loadPolicy,assertReplacementAllowed}=await import('./policy.mjs');
+    const policy=await loadPolicy();
+    const verdict=assertReplacementAllowed(policy,{priorMarkdown:prior.toString('utf8'),newMarkdown:bytes.toString('utf8')});
+    if(!verdict.allowed)throw Error('replacement-blocked:'+verdict.reasons.join(','));
+  }
   if(!prior && receipt.oldSha256)throw Error('old-paper-not-found-in-integration-branch');
   const images=await candidateImages(candidate,receipt,bytes);
   for(const [rel,{sha256}] of images){
