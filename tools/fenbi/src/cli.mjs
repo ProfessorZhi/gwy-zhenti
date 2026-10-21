@@ -18,6 +18,7 @@ import { parseFenbiExamDom } from './dom.mjs';
 import { comparePaper, alignmentExitCode } from './align.mjs';
 import { MAX_CONCURRENCY, clampConcurrency, createControl, createHostThrottle, createSerialQueue, runBounded } from './schedule.mjs';
 import { buildCaptureBatchMetrics } from './capture-metrics.mjs';
+import { yearAllowed } from '../driver/year-policy.mjs';
 
 const HELP = `Fenbi capture (local persistent Chrome/Edge; no model or cloud-browser calls)
   node src/cli.mjs init
@@ -146,7 +147,7 @@ async function addJob(values, config) {
   const identity = Object.fromEntries(['id', 'title', 'subject', 'area', 'variant'].map(key => [key, values[key]]));
   identity.year = Number(values.year);
   if (Object.values(identity).some(x => x === undefined || x === '' || x === null) ||
-      !['xingce', 'shenlun'].includes(identity.subject) || !Number.isInteger(identity.year) || identity.year < 2016 || identity.year > new Date().getFullYear()) throw new Error('Provide a complete observed paper identity');
+      !['xingce', 'shenlun'].includes(identity.subject) || !Number.isInteger(identity.year) || !yearAllowed(identity.area, identity.year)) throw new Error('Provide a complete observed paper identity');
   // Refuse rather than silently navigate somewhere else: if normalising the observed URL would drop
   // a path, a fragment or a non-credential parameter, this framework cannot reproduce that URL.
   if (!urlIsReproducible(values.url, config.routeParams)) {

@@ -2,6 +2,7 @@ import path from 'node:path';
 import { digest } from './fsutil.mjs';
 import { STAGES, SCHEMA_VERSION } from './constants.mjs';
 import { CREDENTIAL_QUERY_NAME, ROUTE_PARAM_VALUE } from './config.mjs';
+import { yearAllowed } from '../../driver/year-policy.mjs';
 
 export const SOURCE_CATEGORIES = Object.freeze(['observed_ui', 'official', 'licensed_donor']);
 export const REDISTRIBUTION = Object.freeze(['local_only', 'allowed']);
@@ -194,7 +195,7 @@ export function normalizeEnqueueInput(input = {}, config, now = Date.now()) {
   if (!['xingce', 'shenlun'].includes(subject)) throw fail('subject must be xingce or shenlun');
   const area = text(input.area, 'area', { max: 40 });
   const year = Number(input.year);
-  if (!Number.isInteger(year) || year < 2016 || year > new Date(now).getFullYear()) throw fail('year is outside the supported range');
+  if (!Number.isInteger(year) || !yearAllowed(area, year, new Date(now))) throw fail('year is outside the supported range');
   const variant = input.variant === undefined || input.variant === null || input.variant === '' ? null : text(String(input.variant), 'variant', { max: 40 });
 
   const sourceCategory = input.sourceCategory ?? 'observed_ui';
