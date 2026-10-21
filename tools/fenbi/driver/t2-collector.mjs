@@ -62,7 +62,8 @@ for (const key of (await fs.readdir(PAPERS)).sort()) {
   const doc = await readJson(path.join(PAPERS, key, 'document.json'));
   if (!run?.pageUrl || !doc) continue;
   const done = ledger.papers[key];
-  if (done && (done.status === 'complete' || done.status === 'submitted_partial' || done.status === 'out_of_scope' || done.status === 'not_blank')) continue;
+  // 'submitting' is written by the worker right before it clicks 交卷: never submit such a paper again.
+  if (done && ['complete', 'submitted_partial', 'out_of_scope', 'not_blank', 'submitting'].includes(done.status)) continue;
   const sid = String(run.sourceId || (key.match(/(\d+)$/) || [])[1] || '');
   queue.push({ key, sid, url: run.pageUrl });
 }

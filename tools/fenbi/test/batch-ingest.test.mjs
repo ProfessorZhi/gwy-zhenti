@@ -1,7 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createDocument } from '../src/model.mjs';
-import { assemble, renderIngest, structureGrade } from '../src/batch-ingest.mjs';
+import { assemble, renderIngest, structureGrade, SOURCE_MISSING_NOTE } from '../src/batch-ingest.mjs';
+import { validateDocument } from '../src/validate.mjs';
+import { RENDERED_COLLECTION_STUB } from '../src/collection-stub.mjs';
+import { loadPolicy, assertReplacementAllowed } from '../src/policy.mjs';
 
 const makeQuestion = (number, body) => ({
   id: 'f-'+number, number, contentHtml: body,
@@ -61,13 +64,30 @@ test('ambiguous or mismatched legacy question remains unknown, no guessing', () 
   const md=renderIngest(a,oldPaper());
   assert.match(md,/未自动迁移的旧版答案/u);
 });
-test('stub without reliable numbering is C rather than invented content', () => {
+test('a question missing on Fenbi and in the repository keeps its slot, is marked, and the paper still publishes', async () => {
   const q=[4,3,2,1].map((n,i)=>makeQuestion(i+1,body(n)));
   q[3].contentHtml='题目正在全力以赴征集';
   const a=assemble(source(q),oldPaper());
   const md=renderIngest(a,oldPaper());
   assert.equal(a.counters.unresolvedStubs,1);
-  assert.equal(structureGrade(a,md,{dimensions:{images:{status:'complete'}}}).grade,'C');
+  const v=await validateDocument(a.prepared,{});
+  const g=structureGrade(a,md,{...v,dimensions:{...v.dimensions,images:{status:'complete'}}});
+  assert.equal(g.grade,'A',JSON.stringify(g.blockers));
+  assert.deepEqual(g.sourceMissingNumbers,[4]);
+  assert.match(md,new RegExp('### 第 4 题\\s+'+SOURCE_MISSING_NOTE.replace(/[()（）]/g,'.')));
+  assert.doesNotMatch(md,RENDERED_COLLECTION_STUB,'no stub wording and no invented content');
+  // Replacing a complete repository paper with this partial one is still refused by the replacement guard.
+  const policy=await loadPolicy();
+  assert.deepEqual(assertReplacementAllowed(policy,{priorMarkdown:oldPaper(),newMarkdown:md}).reasons,['effective-question-count-decreased']);
+});
+test('a paper where most questions are missing on Fenbi stays C', () => {
+  const q=[1,2,3,4].map(n=>makeQuestion(n,body(n)));
+  for(const i of [0,1,2])q[i].contentHtml='题目正在全力以赴征集';
+  const a=assemble(source(q),'');
+  const md=renderIngest(a);
+  const g=structureGrade(a,md,{dimensions:{images:{status:'complete'}}});
+  assert.equal(g.grade,'C');
+  assert.ok(g.blockers.includes('source-missing-majority'));
 });
 test('wrong question count and duplicate source numbering fail closed', () => {
   const q=[makeQuestion(1,body(1)),makeQuestion(1,body(2))];

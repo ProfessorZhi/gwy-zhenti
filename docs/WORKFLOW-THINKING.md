@@ -97,3 +97,73 @@ loginctl enable-linger fjd
 **回滚**：采集 = 把服务的 ExecStart 改回原来的 `driver/` 并重启；发布 = 集成工作树 `git reset --hard <切换前的提交>` 并重启。切换前记下两边的提交号。
 
 以后更新：采集 `cd gwy-zhenti-main && git pull && systemctl --user restart fenbi-pipeline`；发布在集成工作树 `git merge origin/main && systemctl --user restart fenbi-publisher`。
+
+## 六、单卷流水线（`SERVICE_MODE=worker`）
+
+用户已决定：重构抓取链路、交卷前停留 15 秒、闸门通过后自动合入 main。
+
+### 为什么旧链路慢
+
+旧链路把一卷拆成 5 个独立步骤（抓题 → 交卷 → JSON 回填 → 图片 → 发布），每步是一个子进程、各自启动浏览器、各自扫一遍全部缓存；
+抓题每卷还要单独启动一次浏览器并从目录入口重新进入；最后还要等人合并 PR。每卷的真实工作只有十几秒，其余全是固定开销和等待。
+
+### 新链路：一卷一条流，一个浏览器多个标签页
+
+```text
+worker/worker.mjs（fenbi-service 的一步，一次跑到 WORKER_MAX_PAPERS 卷或 WORKER_MAX_MS）
+  一个浏览器 × WORKER_TABS(3) 个标签页，每个标签页循环：
+    目录找行（该标签页已在同一地区就不重新进入）→ 点开练习（互斥锁内，init 预算 1，已有练习则 0）
+    → 解析题目页 → 停留 15 秒 → 登记"交卷中" → 交白卷 → 解析页 DOM + solution JSON → 图片 → 校验 → 写缓存
+    → 立即转换（单卷 ingest）并发布进集成工作树（粉笔优先替换、题数更少不替换、同路径取最完整来源）
+  每 10 卷或 10 分钟：提交 → 合入 origin/main → 完整闸门 → 推送集成分支 → 闸门通过且 AUTO_MERGE=1 时快进推送 main
+```
+
+| 文件 | 作用 |
+|---|---|
+| `worker/flow.mjs` | 单卷浏览器流程；导航闸门（≥2.5 秒）和"打开练习"互斥锁由所有标签页共用 |
+| `worker/analysis-merge.mjs` | 解析页 DOM 与 solution JSON 合并（纯函数，规则与旧 t2-collector/t2-backfill-json 相同） |
+| `worker/queue.mjs` | 队列：先续交已抓未交的卷，再抓新卷；沿用旧链路的两本台账，新旧链路可互相接续 |
+| `worker/gate.mjs` | 自动合入 main 的完整闸门 |
+| `worker/publish.mjs` | 单卷落地、批量提交与推送 |
+| `src/batch-ingest.mjs` | 抽出 `ingestFolder`（单卷转换），`runBatch` 行为不变 |
+
+**不变的约束**：每卷至多 1 次 init、至多交 1 次白卷且不作答（交卷前先写台账 `submitting`，之后任何中断都不会再交第二次，旧链路也认这个状态）；
+登录 Profile 和 Cookie 只在本机；任何风控信号（验证码、登录失效、403/429，含图片接口的 401/403）让所有标签页停下、本次运行结束，由 fenbi-service 按原规则 STOP 或退避。
+
+**完整闸门**（`worker/gate.mjs`，任何一项不过就不动 main，写 `work/fenbi/ALERT-merge-gate`，集成分支照常推送）：
+content-gate 的结构检查（只改内容路径、不删卷、清单齐全、图片存在）之外，逐卷核对回执 SHA 与文件一致且为 A 级、授权覆盖 sourceId、
+题数等于回执且连续、不少于 main 上同一路径的题数、没有"征集中"残留、清单 sha256 与文件一致、新增图片按内容哈希命名且哈希一致、已有图片不被改写。
+
+**速度**：打开练习一步串行（含 2.5 秒导航间隔），停留、交卷、解析、图片三个标签页并行。离线假站点只验证流程正确，不代表真实速度；
+真实卷数/小时以 Dell 上 3 卷、10 卷试跑的 `worker.log` 为准，不做预测。
+
+**图片与风控**：单卷流程里图片遇到 401/403/429/503 立即停止本卷剩余图片（留作 pending），并计入风控（401 视同登录失效硬停）。
+worker 模式下每轮 worker 之后再跑一次只读补图（t2-asset-pass），下一轮 worker 开头把补齐图片的已交卷卷补落地。
+
+### 部署（在 Dell 上）
+
+```bash
+# 1. 采集代码：main checkout 更新到含本改动的 main
+cd /home/fjd/workspaces/gwy-zhenti-main && git pull && (cd tools/fenbi && npm ci)
+
+# 2. 集成工作树：从 origin/main 新建一个干净的集成分支（只允许内容改动，否则闸门永远不过）
+cd /home/fjd/workspaces/gwy-zhenti-fenbi/integ && git fetch origin && git switch -C fenbi-integ origin/main
+
+# 3. ~/.config/gwy-zhenti/collector.env 追加：
+#    SERVICE_MODE=worker
+#    INTEG_REPO=/home/fjd/workspaces/gwy-zhenti-fenbi/integ
+#    RIGHTS_FILE=<rights.json 的绝对路径>
+#    PUSH=1
+#    AUTO_MERGE=1
+#    WORKER_TABS=3
+#    WORKER_DWELL_MS=15000
+#    WORKER_MAX_PAPERS=3        # 先 3 卷试跑，再 10，再 60
+# 4. 发布服务不再需要（worker 自己落地），并且两者不能同时写集成工作树：
+systemctl --user stop fenbi-publisher && systemctl --user disable fenbi-publisher
+systemctl --user restart fenbi-pipeline
+```
+
+试跑看 `work/fenbi/worker.log`：每卷一行 `paper`（status、题数/应有题数、答案数、init 次数、耗时），`land`、`publish`（闸门结果、是否推送 main）。
+3 卷正常（init=1、题数与应有一致、答案齐、main 有新提交）→ `WORKER_MAX_PAPERS=10` → 正常再调到 60。
+
+**回滚**：collector.env 去掉 `SERVICE_MODE=worker`（回到分步链路），重新启用 fenbi-publisher；main 上的内容提交可以 `git revert`。

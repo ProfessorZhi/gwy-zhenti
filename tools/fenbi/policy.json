@@ -7,7 +7,7 @@
   "storage": "private_repo_approved",
   "years": {
     "default": [2016, 2026],
-    "zhejiang": [2008, 2026]
+    "zhejiang": [1900, 2026]
   },
   "exceptionHandling": {
     "auth_failure": "stop_notify",
