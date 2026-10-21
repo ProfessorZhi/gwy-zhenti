@@ -22,7 +22,7 @@ const MANIFEST = 'catalog/manifest.jsonl';
 const PAPER = /^(?:国考|省考)\/.+\.md$/u;
 
 export function changes(repo, base) {
-  const out = execFileSync('git', ['-C', repo, '-c', 'core.quotepath=false', 'diff', '--name-status', '--no-renames', `${base}...HEAD`], { encoding: 'utf8' });
+  const out = execFileSync('git', ['-C', repo, '-c', 'core.quotepath=false', 'diff', '--name-status', '--no-renames', `${base}...HEAD`], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
   return out.split('\n').filter(Boolean).map(line => { const [status, file] = line.split('\t'); return { status, file }; });
 }
 
