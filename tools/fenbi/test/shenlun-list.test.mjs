@@ -79,6 +79,22 @@ test('page, row-count and pagination disagreements are refused', () => {
   }), { page: 3 }), code('ROW_API_PAGE_COUNT_MISMATCH'));
 });
 
+test('the live top-level {list,pageInfo} envelope is accepted alongside archived body-wrapped snapshots', () => {
+  const live = normalizeListApiSnapshot({
+    list: [{ id: '100', name: 'alpha' }, { id: '200', name: 'beta' }],
+    pageInfo: { currentPage: 0, totalPage: 15, totalItem: 221, pageSize: 15 },
+  });
+  assert.deepEqual(live.ids, ['100', '200']);
+  assert.equal(live.page, 0);
+  assert.equal(live.totalPage, 15);
+  const wrapped = normalizeListApiSnapshot({
+    body: { list: [{ id: '100' }], pageInfo: { currentPage: 1, totalPage: 3, totalItem: 31, pageSize: 15 } },
+  });
+  assert.equal(wrapped.page, 1);
+  assert.throws(() => normalizeListApiSnapshot({ list: [], pageInfo: { currentPage: 0, totalPage: 1, totalItem: 1 } }), code('LIST_API_LIST_MISSING'));
+  assert.throws(() => normalizeListApiSnapshot({ list: [{ id: 1 }] }), code('LIST_API_PAGEINFO_MISSING'));
+});
+
 test('a missing or malformed list API snapshot fails closed', () => {
   assert.throws(() => bind(rows, null), code('LIST_API_REQUIRED'));
   assert.throws(() => bind(rows, { ids: ['100', '200', '300'] }), code('LIST_API_REQUIRED'));

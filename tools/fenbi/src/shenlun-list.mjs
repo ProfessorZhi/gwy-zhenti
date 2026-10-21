@@ -60,14 +60,19 @@ export function selectRowByIndex(rows, { index, year, variant }) {
 
 /**
  * 同一页真实列表 API → 有序 id 数组 + 分页信息。
- * 只接受 body.list 非空且每条都有数字 id 的响应；页面/总数信息缺失或自相矛盾一律拒绝。
+ * 接受的两种信封（都必须是 list + pageInfo 成对出现）：
+ *   { list, pageInfo }            —— 当前站点 /api/shenlun/papers/v2 的实时响应
+ *   { body: { list, pageInfo } }  —— 历史归档快照的包装
+ * 只接受 list 非空且每条都有数字 id 的响应；页面/总数信息缺失或自相矛盾一律拒绝。
  * `names` 只留在内存里用于计算标题哈希，调用方绝不能把它写进采集产物。
  */
 export function normalizeListApiSnapshot(json, { path = null } = {}) {
-  const list = json?.body?.list;
-  if (!Array.isArray(list) || list.length === 0) throw fail('LIST_API_LIST_MISSING', 'list API body.list is empty or absent');
+  const envelope = Array.isArray(json?.list) ? json
+    : (Array.isArray(json?.body?.list) ? json.body : null);
+  const list = envelope?.list;
+  if (!Array.isArray(list) || list.length === 0) throw fail('LIST_API_LIST_MISSING', 'list API list is empty or absent');
   if (list.length > MAX_ROWS) throw fail('LIST_API_TOO_LONG', `list API returned ${list.length} items`);
-  const pageInfo = json?.body?.pageInfo;
+  const pageInfo = envelope?.pageInfo;
   if (!pageInfo || typeof pageInfo !== 'object') throw fail('LIST_API_PAGEINFO_MISSING', 'list API has no body.pageInfo');
   const numbers = ['currentPage', 'totalPage', 'totalItem'];
   for (const field of numbers) {
@@ -105,8 +110,10 @@ export function normalizeListApiSnapshot(json, { path = null } = {}) {
 
 /**
  * 显式行号 + 同页 API 有序 id 的硬绑定。
- * 行数与 API 等长、页码一致（currentPage 为 0 基）、分页总数一致，
+ * 行数与 API 等长、页码一致（currentPage 为 0 基）、分页自洽，
  * 且 apiIds[rowIndex] 必须等于 sourceId；任何一条不成立都在点开行之前抛错。
+ * `pagerTotalPages` 只在分页控件显示的确实是「总页数」时才传；站点只渲染
+ * 页码窗口（如恒为 1/2/3）时不要传，否则会把窗口大小误当总页数。
  */
 export function bindRowToApi(rows, api, { index, sourceId, page, year, variant, pagerTotalPages = null }) {
   const picked = selectRowByIndex(rows, { index, year, variant });
@@ -147,7 +154,7 @@ export function bindRowToApi(rows, api, { index, sourceId, page, year, variant, 
       apiPage: api.page,
       apiTotalPage: api.totalPage,
       apiItemCount: api.itemCount,
-      apiPagerTotalPages: pagerTotalPages,
+      ...(pagerTotalPages != null ? { apiPagerTotalPages: pagerTotalPages } : {}),
       apiIdAsserted: true,
     },
   };

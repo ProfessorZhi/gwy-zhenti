@@ -127,7 +127,7 @@ try {
     if (!contentType.includes('json')) return;
     const seq = ++listApiSeq;
     response.json().then((json) => {
-      if (!Array.isArray(json?.body?.list)) return;
+      if (!Array.isArray(json?.list ?? json?.body?.list)) return;
       listApiResponses.push({ seq, path: url.pathname, json });
     }).catch(() => { /* 非列表响应或读取失败：不登记 */ });
   });
@@ -195,12 +195,9 @@ try {
     stopOnRisk();
     return true;
   };
-  const pagerTotalPages = () => page.evaluate(() => {
-    const numbers = [...document.querySelectorAll('div.paging div.item')]
-      .map((el) => Number(String(el.innerText).trim()))
-      .filter((value) => Number.isInteger(value) && value > 0);
-    return numbers.length ? Math.max(...numbers) : null;
-  });
+  const pagerVisible = () => page.evaluate(() => [...document.querySelectorAll('div.paging div.item')]
+    .map((el) => Number(String(el.innerText).trim()))
+    .filter((value) => Number.isInteger(value) && value > 0));
 
   let target = null;
   let boundApi = null;
@@ -215,10 +212,10 @@ try {
     if (pageNumber > 1 && !(await gotoPage(pageNumber))) throw fail('PAGER_FAILED', 'cannot open the requested list page');
     // 观察不到同页列表 API 就停在这里：不点行、不写 source 文档。
     const api = await waitForListApi(pageNumber, pageNumber > 1 ? mark : 0);
-    const pagerTotal = await pagerTotalPages();
+    const pager = await pagerVisible();
     const picked = bindRowToApi(await rowIndex(), api, {
       index: explicitRow, sourceId: SOURCE_ID, page: pageNumber,
-      year: YEAR, variant: VARIANT, pagerTotalPages: pagerTotal,
+      year: YEAR, variant: VARIANT,
     });
     // 点开之前先用同页 API 的名称哈希核对一次固定的 --title-hash：
     // 名字对不上就停在这里，连详情页都不进。
@@ -230,6 +227,7 @@ try {
       observedHash: createHash('sha256').update(boundName, 'utf8').digest('hex'),
       expectedHash: values['title-hash'],
     });
+    receipt.pagerVisible = pager;
     target = { page: pageNumber, index: picked.index, member: false, binding: picked.binding };
     boundApi = api;
   } else {
