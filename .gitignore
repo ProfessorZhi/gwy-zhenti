@@ -14,3 +14,12 @@ __pycache__/
 # 逐条台账见 work/qa/IMG-ORPHAN.jsonl（本轮实测 146 张，全部集中在这一目录下，
 # 因库内没有 `省考/多省联考/` 这一地区，对应 MD 不存在）。
 图片/省考-多省联考-2016-行测-统考/
+
+# ── Collector runtime secrets / state (never commit) ───────────────────
+# Browser profiles, service env files, rights files and any capture data must
+# stay on the collector host. Keep these narrow: normal source stays tracked.
+**/profiles/
+**/.env
+**/.env.local
+**/*.service.env
+**/rights.json
