@@ -1,0 +1,27 @@
+# TEMPLATE ONLY — do not enable or install from this repository.
+# Copy to ~/.config/systemd/user/, replace REPO_PLACEHOLDER with the Publisher
+# worktree path, then reload/enable manually. The live Publisher runs from a
+# separate git worktree at a different commit than main; this template does not
+# imply that main and production are the same code, nor any publication right.
+[Unit]
+Description=Fenbi publisher/pipeline (archived template)
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/REPO_PLACEHOLDER
+ExecStart=/usr/bin/bash %h/REPO_PLACEHOLDER/tools/fenbi/run-pipeline.sh
+# Non-sensitive switches observed in the live unit (names and enums only).
+# Environment=CAPTURE=0
+# Environment=ALLOW_REPLACE=1
+# Environment=PUSH=1
+# Environment=AUTO_MAIN_CONTENT=1
+# Environment=AUTO_MAIN_APPLY=0
+# Rights/config files and credentials are NOT part of this repository; point
+# EnvironmentFile at a host-local file outside the checkout.
+# EnvironmentFile=-%h/.config/gwy-zhenti/publisher.env
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
