@@ -1,6 +1,7 @@
 # TEMPLATE ONLY — do not enable or install from this repository.
-# Copy to ~/.config/systemd/user/, replace REPO_PLACEHOLDER with the absolute
-# checkout path, then run `systemctl --user daemon-reload` and enable manually.
+# Copy as ~/.config/systemd/user/fenbi-pipeline.service; replace
+# REPO_ABSOLUTE_PATH with the absolute checkout path and NODE_ABSOLUTE_PATH
+# with the verified absolute Node 22 executable path before installation.
 # systemd does not expand shell variables in ExecStart: the path below must be
 # a literal path after substitution. Environment files stay outside the repo.
 [Unit]
@@ -9,8 +10,8 @@ After=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=%h/REPO_PLACEHOLDER
-ExecStart=/usr/bin/env node %h/REPO_PLACEHOLDER/tools/fenbi/driver/fenbi-service.mjs
+WorkingDirectory=REPO_ABSOLUTE_PATH
+ExecStart=NODE_ABSOLUTE_PATH REPO_ABSOLUTE_PATH/tools/fenbi/driver/fenbi-service.mjs
 # Optional local overrides (never commit): FENBI_BASE, FENBI_WORK_DIR,
 # SERVICE_BATCH, SERVICE_INTERVAL, SERVICE_FOCUS_RESCAN, SERVICE_FOCUS_PAGES.
 # EnvironmentFile=-%h/.config/gwy-zhenti/collector.env

@@ -37,6 +37,12 @@ FENBI_BASE     repo root (default: resolved from this file, ../../..)
 FENBI_WORK_DIR runtime work dir (default: $FENBI_BASE/work/fenbi)
 ```
 
+The collector coordinator and every child process resolve both overrides to
+absolute paths. Use one shared `FENBI_WORK_DIR` for discovery, capture,
+submission, backfill and assets; mixed work directories can split STOP files,
+locks and caches. This is a **source-code contract**, not proof of successful
+deployment on Dell.
+
 Runtime layout under `FENBI_WORK_DIR`: `papers/<paper-key>/document.json`,
 `catalog-live-<date>/`, `candidates-live.json`, `t2-<date>/{ledger,run-state,service.log}.json`,
 `profiles/<profileName>/`, `STOP`, `config.json`.

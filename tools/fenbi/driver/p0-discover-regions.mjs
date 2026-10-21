@@ -10,8 +10,8 @@ import { fileURLToPath } from 'node:url';
 import { randomUUID } from 'node:crypto';
 import { setTimeout as sleep } from 'node:timers/promises';
 
-const B = process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const WORK = process.env.FENBI_WORK_DIR || path.join(B, 'work/fenbi');
+const B = path.resolve(process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..'));
+const WORK = path.resolve(process.env.FENBI_WORK_DIR || path.join(B, 'work/fenbi'));
 const OUT = process.env.DISCOVERY_OUT || WORK + '/catalog-live-20261019';
 const ENTRY = 'https://www.fenbi.com/spa/tiku/guide/realTest/xingce/xingce';
 const GAP = 2500;
