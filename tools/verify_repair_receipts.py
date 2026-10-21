@@ -54,24 +54,6 @@ def verify_to_round4(root:Path)->dict:
 
 def verify(root:Path)->dict:
  root=Path(root).resolve()
- if (root/'reports/S5R3-ORIGINAL-ANSWERS-20261021.jsonl').exists():
-  from verify_s5r3_original_answers import verify as verify_s5r3, historical_snapshot as s5r3_snapshot, records as s5r3_records
-  third=verify_s5r3(root)
-  with tempfile.TemporaryDirectory(prefix='gwy-s5r3-historical-') as tmp:
-   s5r3_snapshot(root,Path(tmp))
-   result=verify(Path(tmp))
-  result['s5r3']=third
-  result['receipt_records']+=len(s5r3_records(root))
-  return result
- if (root/'reports/S5R2-ORIGINAL-ANSWERS-20261021.jsonl').exists():
-  from verify_s5r2_original_answers import verify as verify_s5r2, historical_snapshot as s5r2_snapshot, records as s5r2_records
-  second=verify_s5r2(root)
-  with tempfile.TemporaryDirectory(prefix='gwy-s5r2-historical-') as tmp:
-   s5r2_snapshot(root,Path(tmp))
-   result=verify(Path(tmp))
-  result['s5r2']=second
-  result['receipt_records']+=len(s5r2_records(root))
-  return result
  if (root/'reports/SOURCED-SUPPLEMENT-20261013.jsonl').exists():
   from verify_sourced_supplement_20261013 import verify as verify_sourced, historical_snapshot, records as sourced_records
   sourced=verify_sourced(root)

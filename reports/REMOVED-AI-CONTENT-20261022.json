@@ -1,0 +1,668 @@
+[
+ {
+  "path": "省考/上海/2020/申论-行政执法卷.md",
+  "source_commit_parent": "30ffc82092db356890a06ed4c79497b93f8e5770",
+  "before_sha256": "9fad2de491f5ce833cfffc17e1990a0050a3839182af889258952fa5232f1ea3",
+  "after_sha256": "b4c074bece04bc4c3a26d28a3b813d5d32dc330a9dfda8cbcc42d4615123f054",
+  "before_bytes": 29465,
+  "after_bytes": 22049,
+  "body_sha256": "675b43dcd6cfa10891ae49ed8932d8e484f9e5ab45dbbe280f32325fb1d3db9e",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "9fad2de491f5ce833cfffc17e1990a0050a3839182af889258952fa5232f1ea3",
+   "bytes": 29465,
+   "source_validation": "\"机器校验（结构/材料/分值/去重）；未人工通读；粉笔系上游，再分发条件未核实；2026-10-21 S5：新增独立原创学习参考作答（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "b4c074bece04bc4c3a26d28a3b813d5d32dc330a9dfda8cbcc42d4615123f054",
+   "bytes": 22049,
+   "source_validation": "机器校验（结构/材料/分值/去重）；未人工通读；粉笔系上游，再分发条件未核实"
+  }
+ },
+ {
+  "path": "省考/上海/2017/申论-行政执法卷.md",
+  "source_commit_parent": "30ffc82092db356890a06ed4c79497b93f8e5770",
+  "before_sha256": "9784ca6f8a719484b94bf29b038dda9064d4b685d9b9ede3e638b9b33d2057dd",
+  "after_sha256": "32c84ca21716a8246d0ec26474f954c23a96ba5732a4c3c30b3d83d91ba474c9",
+  "before_bytes": 25401,
+  "after_bytes": 19498,
+  "body_sha256": "92e57275a81fc5fafba6034589161d019ca6dd864c80e1ce376ec5cd55fb8a9a",
+  "removed_answer_numbers": [
+   2,
+   3
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 2,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    1
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "9784ca6f8a719484b94bf29b038dda9064d4b685d9b9ede3e638b9b33d2057dd",
+   "bytes": 25401,
+   "source_validation": "\"机器校验（结构/材料/分值/去重）；未人工通读；粉笔系上游，再分发条件未核实；源用康熙部首码位，已按 NFKC 单字归一；2026-10-21 S5：新增第2、3题独立原创学习参考；第1题题干来源文字残缺，保持留缺，不臆补\""
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "32c84ca21716a8246d0ec26474f954c23a96ba5732a4c3c30b3d83d91ba474c9",
+   "bytes": 19498,
+   "source_validation": "机器校验（结构/材料/分值/去重）；未人工通读；粉笔系上游，再分发条件未核实；源用康熙部首码位，已按 NFKC 单字归一"
+  }
+ },
+ {
+  "path": "省考/广东/2026/申论-行政执法.md",
+  "source_commit_parent": "30ffc82092db356890a06ed4c79497b93f8e5770",
+  "before_sha256": "b75cc15113a3c73110c89fa85073534147ebd1f7ba5bb8000d14a352bc369772",
+  "after_sha256": "84451eb01c7dba239357ac1b065a724f9012d49b914ec9011662e9800fef1f2f",
+  "before_bytes": 22407,
+  "after_bytes": 20767,
+  "body_sha256": "8c234f7fc2d1f112e5de407fbb3aae59fac021e400dd6faf8ce41f16f3b30a1f",
+  "removed_answer_numbers": [
+   1
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {
+   "2": "672609267eb7fd524feabc794d0d2302bd71645b94d411a41a7798693d82cc18",
+   "3": "a55a80a2c7e5db5cc5302585813711af6b022d5bf7045a9b9054c342d056fa5b"
+  },
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "b75cc15113a3c73110c89fa85073534147ebd1f7ba5bb8000d14a352bc369772",
+   "bytes": 22407,
+   "source_validation": "\"机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证；2026-10-21 S5：第1题新增独立原创学习参考（非官方/非粉笔原解析），题面与材料保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 2,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    1
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "84451eb01c7dba239357ac1b065a724f9012d49b914ec9011662e9800fef1f2f",
+   "bytes": 20767,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证"
+  }
+ },
+ {
+  "path": "省考/福建/2018/申论-县级卷.md",
+  "source_commit_parent": "74e93797d57786962791163e489dd3ebd5564559",
+  "before_sha256": "abc4e5d2de3dbe2159d584b7ec8b627e8b6e61ca98b73a1480e1cd470285d99a",
+  "after_sha256": "eabea723845ac5803e393fcf895dc15921dd21a9a520012ecdf98ed89b4b7cda",
+  "before_bytes": 27464,
+  "after_bytes": 20081,
+  "body_sha256": "c1fac2b6a95e3560dff9e2cd00baf79accc2dbf15781b8725d5fa642b593e761",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "abc4e5d2de3dbe2159d584b7ec8b627e8b6e61ca98b73a1480e1cd470285d99a",
+   "bytes": 27464,
+   "source_validation": "\"机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；题号标记为题内行内式（「作答要求」后接「一、」至「三、」），共 3 题；2026-10-21 S5R2：新增第1、2、3题独立原创学习参考（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "eabea723845ac5803e393fcf895dc15921dd21a9a520012ecdf98ed89b4b7cda",
+   "bytes": 20081,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；题号标记为题内行内式（「作答要求」后接「一、」至「三、」），共 3 题"
+  }
+ },
+ {
+  "path": "省考/四川/2023/申论-上半年行政执法卷.md",
+  "source_commit_parent": "74e93797d57786962791163e489dd3ebd5564559",
+  "before_sha256": "c360363bba6bab58cf223131424ebc82369bd79102d2ffafb7f13343b6d65ed9",
+  "after_sha256": "ca9ea702738e20469ed5428a9832ae0627623e939bbeabe97e848458308ea7d9",
+  "before_bytes": 30219,
+  "after_bytes": 20521,
+  "body_sha256": "e3ef9ed4ed260d2d1dcd9d57afea60e1f891d96cc3855aba69ac3230ff1c3d57",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "c360363bba6bab58cf223131424ebc82369bd79102d2ffafb7f13343b6d65ed9",
+   "bytes": 30219,
+   "source_validation": "\"机器校验（结构/材料/分值/去重）；未人工通读；粉笔系上游，再分发条件未核实；2026-10-21 S5R2：新增第1、2、3、4题独立原创学习参考（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "ca9ea702738e20469ed5428a9832ae0627623e939bbeabe97e848458308ea7d9",
+   "bytes": 20521,
+   "source_validation": "机器校验（结构/材料/分值/去重）；未人工通读；粉笔系上游，再分发条件未核实"
+  }
+ },
+ {
+  "path": "省考/福建/2023/申论-县乡.md",
+  "source_commit_parent": "74e93797d57786962791163e489dd3ebd5564559",
+  "before_sha256": "feb837a0a3700451ea6a061e1d785e69e7ccf6bcd026039d10e4d7dc1233f40f",
+  "after_sha256": "ae46a8441f5bbf15c021ad90fc67269639cf491778d67a146248392682f221be",
+  "before_bytes": 31779,
+  "after_bytes": 29596,
+  "body_sha256": "63a83bf15e97c914ce6b3ae9ae6c9f99860ce61995a26ad65bbde90f5d7624b9",
+  "removed_answer_numbers": [
+   3
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {
+   "1": "9051835dc05641c50eb3792dfbf1953c84f3333fb98b6de06e156f1f9de5ed4c",
+   "2": "6e5ad823400f52490cd911b6614f1df37506d3c1a1f054e54cf83694816ad211",
+   "4": "c3868dbf5ef5ad865f0dc6422c877d34e1eaefdfa912ff438b6e51d5edac22ed"
+  },
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "feb837a0a3700451ea6a061e1d785e69e7ccf6bcd026039d10e4d7dc1233f40f",
+   "bytes": 31779,
+   "source_validation": "\"机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-13来源补录：仅新增现成来源参考作答，原题及旧答案保留；2026-10-21 S5R2：新增第3题独立原创学习参考（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    3
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "ae46a8441f5bbf15c021ad90fc67269639cf491778d67a146248392682f221be",
+   "bytes": 29596,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-13来源补录：仅新增现成来源参考作答，原题及旧答案保留"
+  }
+ },
+ {
+  "path": "省考/福建/2024/申论-县乡卷.md",
+  "source_commit_parent": "74e93797d57786962791163e489dd3ebd5564559",
+  "before_sha256": "474b2579e12f7cc1524143e5c0e2b3dda46ed39b987455f9f5dae4c227e070eb",
+  "after_sha256": "cadcde24e86d30afadf8d858c87f7065c441a348b51e783ad54725c5e3f424e6",
+  "before_bytes": 33180,
+  "after_bytes": 31206,
+  "body_sha256": "34705ed9e2e4d8a39693a6cf166af9a9aff4d9da2fecc9add2f234cd9f2d8cdd",
+  "removed_answer_numbers": [
+   1
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {
+   "2": "f33a7d7da214334da38525c2fe2d8b5eeb2f31172fb13a47b85d4c505a7b18c6",
+   "3": "3da1a1cead997af814287c23fe811d88c4259e082739116400fb5ac92c39eb24",
+   "4": "5cc0c8edc7a83086de2740172157f4b5791bf7ce8c72a5189f9302aa478aad8b"
+  },
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "474b2579e12f7cc1524143e5c0e2b3dda46ed39b987455f9f5dae4c227e070eb",
+   "bytes": 33180,
+   "source_validation": "\"机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证；2026-10-13第六轮：仅补尚缺的私人来源答案；保留第五轮全部原题及已收录答案；2026-10-13来源补录：仅新增现成来源参考作答，原题及旧答案保留；2026-10-21 S5R2：新增第1题独立原创学习参考（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    1
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "cadcde24e86d30afadf8d858c87f7065c441a348b51e783ad54725c5e3f424e6",
+   "bytes": 31206,
+   "source_validation": "机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证；2026-10-13第六轮：仅补尚缺的私人来源答案；保留第五轮全部原题及已收录答案；2026-10-13来源补录：仅新增现成来源参考作答，原题及旧答案保留"
+  }
+ },
+ {
+  "path": "省考/四川/2024/申论-县乡、普通选调卷.md",
+  "source_commit_parent": "74e93797d57786962791163e489dd3ebd5564559",
+  "before_sha256": "8596525365d3946b920cdb51e9ddfbc1639b6afd0fb6be16c8f4fd07c8b6661a",
+  "after_sha256": "040737b122185265172662bd1a34996283037b389befd6b5c101be05c6cc1ab3",
+  "before_bytes": 42881,
+  "after_bytes": 41211,
+  "body_sha256": "2a1875a41f9249ec65fc48713e30d8cf0b6556f2fcd8d1c3733f76104f81d9d7",
+  "removed_answer_numbers": [
+   1
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {
+   "2": "7ae70ac00089c8bbc49e9da20b9602122babfe88837a14e92bb0ddb5087ac719",
+   "3": "50553f6286beb9a81f2ea5597e0da6805c46a63cd035747ffe5b6cc631833e85",
+   "4": "a9897580dd535807e9319c8be16cb7108b609cae289c0dfdf55325f0055121b8"
+  },
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "8596525365d3946b920cdb51e9ddfbc1639b6afd0fb6be16c8f4fd07c8b6661a",
+   "bytes": 42881,
+   "source_validation": "\"机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证；2026-10-21 S5R2：新增第1题独立原创学习参考（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    1
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "040737b122185265172662bd1a34996283037b389befd6b5c101be05c6cc1ab3",
+   "bytes": 41211,
+   "source_validation": "机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证"
+  }
+ },
+ {
+  "path": "省考/福建/2021/申论-县级.md",
+  "source_commit_parent": "74e93797d57786962791163e489dd3ebd5564559",
+  "before_sha256": "91fdd311e54b23f0bcb761c542014f853545696402aba712716aebdd8ec9be7a",
+  "after_sha256": "e4efd6621722af3888f8de2abe54589d1c6d0c7ccc24d7226cf564fb26450826",
+  "before_bytes": 29170,
+  "after_bytes": 25112,
+  "body_sha256": "fbc2aa1b079f46fc117ddbdbf5b479f8c4d2d15549b11b9e7de61d377d186005",
+  "removed_answer_numbers": [
+   3
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {
+   "1": "e7c0d2747c67d9fa04b221854c1d3380cb4c6fd0bd51e5befcfcce3a8c7c8922",
+   "2": "5bc20f566099c81439107028bc49355b9123cb74c1f8e588f820a44e96d7357c"
+  },
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "91fdd311e54b23f0bcb761c542014f853545696402aba712716aebdd8ec9be7a",
+   "bytes": 29170,
+   "source_validation": "\"机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第四轮：按同年同题及材料证据补入既有参考答案；题面保持，不代表官方答案认证；2026-10-21 S5R2：新增第3题独立原创学习参考（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 2,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    3
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "e4efd6621722af3888f8de2abe54589d1c6d0c7ccc24d7226cf564fb26450826",
+   "bytes": 25112,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第四轮：按同年同题及材料证据补入既有参考答案；题面保持，不代表官方答案认证"
+  }
+ },
+ {
+  "path": "省考/福建/2024/申论-行政执法.md",
+  "source_commit_parent": "1ab49a31b6ab5c495708301aa7beb0dcbb27ef01",
+  "before_sha256": "a90a544afea4357783306f8ff19087005b3f0c632d1168fe55996e07b30cfdcd",
+  "after_sha256": "76fb606b83a114e537657095017a803c6efaacd6ba53203ce0cc52169ddf00e7",
+  "before_bytes": 31384,
+  "after_bytes": 21217,
+  "body_sha256": "f8a6dde97cc2eb8a8b5dd4f41d11763013103213ac3a2c5e0f1bbb7b42427872",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考与解析不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "a90a544afea4357783306f8ff19087005b3f0c632d1168fe55996e07b30cfdcd",
+   "bytes": 31384,
+   "source_validation": "\"机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实；2026-10-21 S5R3：新增第1、2、3、4题原创学习内容（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "76fb606b83a114e537657095017a803c6efaacd6ba53203ce0cc52169ddf00e7",
+   "bytes": 21217,
+   "source_validation": "机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实"
+  }
+ },
+ {
+  "path": "省考/福建/2023/申论-省市.md",
+  "source_commit_parent": "1ab49a31b6ab5c495708301aa7beb0dcbb27ef01",
+  "before_sha256": "9e000431f903fbc9027cd7c32f298253c5f0cb4b33d705ceab956dcf144aeab5",
+  "after_sha256": "ff10b16edc4032cbd17682e2ecfa98ba8b51e90e6b8a6fcf1697ad0084546f44",
+  "before_bytes": 33975,
+  "after_bytes": 25570,
+  "body_sha256": "11ffc0ef50316db850d23c945e28960e6c48afd76848315cbbdf15e02a19f5e5",
+  "removed_answer_numbers": [
+   3,
+   4
+  ],
+  "removed_explanation_numbers": [
+   1,
+   2
+  ],
+  "preserved_answer_sha256": {
+   "1": "36f4f2a1cf162068ecb3e88e590938942afcf67b498a468cae90a0f226b07b99",
+   "2": "d96dae735ff1b7385f416053c6393f61f0b2c5cf28ee19e336cc36ab76aea372"
+  },
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考与解析不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "9e000431f903fbc9027cd7c32f298253c5f0cb4b33d705ceab956dcf144aeab5",
+   "bytes": 33975,
+   "source_validation": "\"机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证；2026-10-13第六轮：仅补尚缺的私人来源答案；保留第五轮全部原题及已收录答案；2026-10-13来源补录：仅新增现成来源参考作答，原题及旧答案保留；2026-10-21 S5R3：新增第1、2、3、4题原创学习内容（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 2,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    3,
+    4
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "ff10b16edc4032cbd17682e2ecfa98ba8b51e90e6b8a6fcf1697ad0084546f44",
+   "bytes": 25570,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证；2026-10-13第六轮：仅补尚缺的私人来源答案；保留第五轮全部原题及已收录答案；2026-10-13来源补录：仅新增现成来源参考作答，原题及旧答案保留"
+  }
+ },
+ {
+  "path": "省考/四川/2026/申论-县乡、普通选调卷.md",
+  "source_commit_parent": "1ab49a31b6ab5c495708301aa7beb0dcbb27ef01",
+  "before_sha256": "f2ff89c39d5a11ca1cce892f7e095203f325924f368b597152471f6cb98babe6",
+  "after_sha256": "1a1c5d103fbf7390302e2c7ccfa583196dfa61da8136856911ee75839565a04f",
+  "before_bytes": 42358,
+  "after_bytes": 39937,
+  "body_sha256": "b37db8e9cf7d82b937f20a70d08a97f4c627fe83298c45a3c60c38bb097c194f",
+  "removed_answer_numbers": [
+   3
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {
+   "1": "e6281f6c3164a152d30a2cdf2d1b0a025399e32ae18ef553d1cee492c12f5113",
+   "2": "7cdeec360cf7d2516cd627ff4245c0b7af98fcb0dff0ab8e78793f093d58c390",
+   "4": "418cd0b4f677632ed6fdd7bbe88ce5ab2a640303aae06fb7145f622cdfa92bb6"
+  },
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考与解析不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "f2ff89c39d5a11ca1cce892f7e095203f325924f368b597152471f6cb98babe6",
+   "bytes": 42358,
+   "source_validation": "\"机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证；2026-10-21 S5R3：新增第3题原创学习内容（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    3
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "1a1c5d103fbf7390302e2c7ccfa583196dfa61da8136856911ee75839565a04f",
+   "bytes": 39937,
+   "source_validation": "机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证"
+  }
+ },
+ {
+  "path": "省考/福建/2021/申论-乡镇.md",
+  "source_commit_parent": "1ab49a31b6ab5c495708301aa7beb0dcbb27ef01",
+  "before_sha256": "29b8f504d82b519e2f7cc5f39e35f6ef0bf4e8bd0ed87653507c0b4b2db8c3c2",
+  "after_sha256": "f2aef1b6b79f2d76ad612d6d76a741ea6c9cc22a05939a76f154e7e6828b0112",
+  "before_bytes": 31121,
+  "after_bytes": 28858,
+  "body_sha256": "af09ecaf81ff6c7d282ec131bfb2cc5bfb4f4b5941909bc25aa2e3b2b30dfbca",
+  "removed_answer_numbers": [
+   2
+  ],
+  "removed_explanation_numbers": [],
+  "preserved_answer_sha256": {
+   "1": "07b63bd8471007e21bbff82f9db71f6c2b642c6112b7c6709f6a4c420dba9371",
+   "3": "235bb447cc5602593f477a4d83705478b3ff48883914e1f4b7d39b4209f6e0cf",
+   "4": "61a080c8057e54a7dd830c16c333c895725659e110d8638b4c513554f04693d8"
+  },
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考与解析不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "29b8f504d82b519e2f7cc5f39e35f6ef0bf4e8bd0ed87653507c0b4b2db8c3c2",
+   "bytes": 31121,
+   "source_validation": "\"机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第四轮：按同年同题及材料证据补入既有参考答案；题面保持，不代表官方答案认证；2026-10-21 S5R3：新增第2题原创学习内容（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    2
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "f2aef1b6b79f2d76ad612d6d76a741ea6c9cc22a05939a76f154e7e6828b0112",
+   "bytes": 28858,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第四轮：按同年同题及材料证据补入既有参考答案；题面保持，不代表官方答案认证"
+  }
+ },
+ {
+  "path": "省考/四川/2023/申论-省市.md",
+  "source_commit_parent": "1ab49a31b6ab5c495708301aa7beb0dcbb27ef01",
+  "before_sha256": "d649eb512919974a151abcaf3d7153dba0c77c9f4482e7af8f8c4f2f52cd9c33",
+  "after_sha256": "d04796c59316c4a6ebb325f572a7526d13e1db2397190e17da12850a1a7427e7",
+  "before_bytes": 38238,
+  "after_bytes": 33425,
+  "body_sha256": "1e098ebc604e56aa79d497e2898b4150b1f4ea6f5e64a685dd8e8de5cd5d19a2",
+  "removed_answer_numbers": [],
+  "removed_explanation_numbers": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "preserved_answer_sha256": {
+   "1": "9ef3e2f1e9261e1f8ef40bf26fc979479f5d19bc4e0c7b3aa50ca73294983b08",
+   "2": "c740d49193c73131dc3e131c9ad3a81f624e61d62b699fe33eb644c57d55ee3a",
+   "3": "47070a4826786613f13626f1703692b1004653d5cdd563ae0eea6b952f53cf52",
+   "4": "6dd4135a37f981853083f6d2225bbe5794168540146ca4da834a6be24347a09d"
+  },
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真",
+    "原创学习参考与解析不等同官方答案或粉笔原解析；未经实考评分"
+   ],
+   "sha256": "d649eb512919974a151abcaf3d7153dba0c77c9f4482e7af8f8c4f2f52cd9c33",
+   "bytes": 38238,
+   "source_validation": "\"机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证；2026-10-13第六轮：仅补尚缺的私人来源答案；保留第五轮全部原题及已收录答案；2026-10-13来源补录：仅新增现成来源参考作答，原题及旧答案保留；2026-10-21 S5R3：新增第1、2、3、4题原创学习内容（非官方/非粉笔原解析），原始材料与题目保持\""
+  },
+  "manifest_after": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "d04796c59316c4a6ebb325f572a7526d13e1db2397190e17da12850a1a7427e7",
+   "bytes": 33425,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12第五轮：按同题来源补入缺失参考答案；题面保持，不代表官方原件逐字认证；2026-10-13第六轮：仅补尚缺的私人来源答案；保留第五轮全部原题及已收录答案；2026-10-13来源补录：仅新增现成来源参考作答，原题及旧答案保留"
+  }
+ }
+]
