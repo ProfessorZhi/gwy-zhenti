@@ -14,6 +14,8 @@ const REPO = B;
 const ENTRY = 'https://www.fenbi.com/spa/tiku/guide/realTest/xingce/xingce';
 const GAP = 2500;
 const sha = b => createHash('sha256').update(b).digest('hex');
+// Wait for an element instead of a fixed sleep; on timeout fall through exactly as the old fixed wait did.
+const settle = (page, selector, timeout) => page.locator(selector).first().waitFor({ state: 'visible', timeout }).catch(() => {});
 
 const T = JSON.parse(process.argv[2] || '{}');
 if (!T.key || !T.sourceId || !T.label || !T.titleRe) { console.error('usage: node capture-new-generic.mjs <json>'); process.exit(2); }
@@ -71,10 +73,11 @@ try {
 
   await throttle(); result.navCount++;
   await page.goto(ENTRY, { waitUntil: 'domcontentloaded', timeout: config.timeoutMs });
-  await sleep(2500);
+  await settle(page, 'span.categories-item', 10000);
   await throttle();
   await page.locator('span.categories-item', { hasText: T.label }).first().click();
-  await sleep(4000);
+  await settle(page, 'div.paper-item', 10000);
+  await sleep(800);
 
   // 目录分页：目标卷可能在后续页，仅点击真实分页器 .houpage（与导航同一 2.5s 节流）
   let row = page.locator('div.paper-item', { hasText: new RegExp(T.titleRe) }).first();
@@ -101,11 +104,23 @@ try {
 
   await throttle();
   await row.click();
-  await sleep(13000);
   result.navCount++;
 
+  // The exercise may open in this tab or a new one; poll every page until questions render (max 20s, was a fixed 13s).
   let qpage = null;
-  for (const p of ctx.pages()) { try { if (await p.evaluate(() => document.querySelectorAll('app-ti[data-question-key]').length > 0)) { qpage = p; break; } } catch {} }
+  for (let waited = 0; waited < 20000 && !qpage; waited += 1000) {
+    await sleep(1000);
+    for (const p of ctx.pages()) { try { if (await p.evaluate(() => document.querySelectorAll('app-ti[data-question-key]').length > 0)) { qpage = p; break; } } catch {} }
+  }
+  // Questions can render progressively: wait until the count stops growing for 2s (max 12s more).
+  if (qpage) {
+    let prev = -1, stable = 0;
+    for (let i = 0; i < 12 && stable < 2; i++) {
+      await sleep(1000);
+      const n = await qpage.evaluate(() => document.querySelectorAll('app-ti[data-question-key]').length).catch(() => prev);
+      stable = n === prev ? stable + 1 : 0; prev = n;
+    }
+  }
   if (!qpage) throw Object.assign(new Error('no rendered question page'), { code: 'NO_QUESTION_PAGE' });
   result.pageUrl = qpage.url(); result.pageTitle = await qpage.title();
   result.titleMatches = (T.titleFrag || []).every(f => result.pageTitle.includes(f));

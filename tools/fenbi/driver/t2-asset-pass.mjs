@@ -7,7 +7,7 @@ import { createHash, randomUUID } from 'node:crypto';
 import { setTimeout as sleep } from 'node:timers/promises';
 
 const B = process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const WORK = B + '/work/fenbi';
+const WORK = process.env.FENBI_WORK_DIR || B + '/work/fenbi';
 const PAPERS = WORK + '/papers';
 const GAP_MS = Number(process.env.ASSET_GAP_MS || 2500);
 const MAX_BYTES = 12 * 1024 * 1024;

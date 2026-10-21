@@ -6,7 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const B = process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const WORK = B + '/work/fenbi';
+const WORK = process.env.FENBI_WORK_DIR || B + '/work/fenbi';
 const PAYLOADS = WORK + '/t2-20261019/payloads';
 const PAPERS = WORK + '/papers';
 const NO_PAPERS = new Set(['sz-2025-xingce-tongkao-5232321']); // T1 已完成，保持不动

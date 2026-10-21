@@ -1,0 +1,17 @@
+# ~/.config/systemd/user/fenbi-publisher.service
+# 发布：转换 → 发布 A 卷（粉笔优先替换旧卷）→ 提交推送集成分支 → 看板。不碰浏览器。
+# WorkingDirectory 是集成分支（非 main）的 worktree，每轮会先合入 origin/main 的代码。
+[Unit]
+Description=Fenbi ingest-promote-push loop
+
+[Service]
+WorkingDirectory=/home/fjd/workspaces/gwy-zhenti-fenbi/integ
+Environment=CAPTURE=0 INTERVAL=300 ALLOW_REPLACE=1 PUSH=1
+Environment=PAPERS_DIR=/home/fjd/workspaces/gwy-zhenti-fenbi/repo/work/fenbi/papers
+Environment=RIGHTS_FILE=/home/fjd/workspaces/gwy-zhenti-fenbi/repo/work/fenbi/rights.json
+ExecStart=/usr/bin/bash tools/fenbi/run-pipeline.sh
+Restart=always
+RestartSec=120
+
+[Install]
+WantedBy=default.target

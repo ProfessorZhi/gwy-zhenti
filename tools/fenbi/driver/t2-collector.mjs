@@ -11,7 +11,7 @@ import { setTimeout as sleep } from 'node:timers/promises';
 
 const pexec = promisify(execFile);
 const B = process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const WORK = B + '/work/fenbi';
+const WORK = process.env.FENBI_WORK_DIR || B + '/work/fenbi';
 const PAPERS = WORK + '/papers';
 const RUN = WORK + '/t2-20261019';
 const LEDGER = RUN + '/ledger.json';

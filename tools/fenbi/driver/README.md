@@ -71,10 +71,18 @@ Node 22 (`engines.node >= 22`) and `playwright-core 1.64.1` from
 normal lockfile on the host. Other imports are Node builtins or the tracked
 `tools/fenbi/src/*.mjs` modules.
 
-## Not deployed / limitations
+## Deployment (2026-10-21)
 
-- This copy has not been run in production and is not wired to any service.
-- The Publisher service runs from a separate worktree at a different commit
-  than `main`; that is a deployment fact, not a grant of publication rights.
-- Browser authentication and the persistent profile must stay local. The
-  `deploy/systemd/*.example` units are templates only; see their README notes.
+These files are now meant to be the **only** collector source: run the service from a checkout of
+`main` (see `tools/fenbi/deploy/systemd/fenbi-collector.service.example` and
+`docs/WORKFLOW-THINKING.md`). Set `FENBI_WORK_DIR` to the existing runtime directory so profiles and
+caches stay where they are; every module honours it. The untracked `driver/` copy on the Dell host
+should be retired once the new unit is running.
+
+Changes versus the archived copy: `SERVICE_BATCH` default 30 (was 3), `SERVICE_INTERVAL` 10s (was 60s),
+`SERVICE_FOCUS_RESCAN` 7200s (was 1800s); non-risk failures back off (`SERVICE_BACKOFF`, 900s) instead of
+writing `STOP`, and a failed round no longer ends the service; fixed waits in `capture-new-generic.mjs`
+became element waits with timeouts no shorter than before. Risk signals (captcha, login lost, 403/429)
+still write `STOP`.
+
+- Browser authentication and the persistent profile must stay local.

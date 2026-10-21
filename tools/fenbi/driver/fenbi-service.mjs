@@ -11,7 +11,7 @@ import { FOCUS_REGIONS, chooseFocusScan, applyFocusSuccess, applyRegionScan } fr
 
 const pexec = promisify(execFile);
 const B = process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const WORK = B + '/work/fenbi';
+const WORK = process.env.FENBI_WORK_DIR || B + '/work/fenbi';
 const RUN = WORK + '/t2-20261019';
 const STOP = WORK + '/STOP';
 const LOG = RUN + '/service.log';
@@ -22,14 +22,17 @@ const DRIVER = path.dirname(fileURLToPath(import.meta.url));
 const CAND = WORK + '/candidates-live.json';
 const CAT = WORK + '/catalog-live-20261019';
 
-const BATCH = Number(process.env.SERVICE_BATCH || 3);
-const INTERVAL = Number(process.env.SERVICE_INTERVAL || 60) * 1000;
+// 每轮固定开销（目录巡检、建队列、启动浏览器、轮间等待）按批摊薄：批越小，每卷分摊越多。
+const BATCH = Number(process.env.SERVICE_BATCH || 30);
+const INTERVAL = Number(process.env.SERVICE_INTERVAL || 10) * 1000;
+// 非风控类失败（超时、网络、找不到行等）不写 STOP，退避后继续；风控信号仍立即停。
+const BACKOFF = Number(process.env.SERVICE_BACKOFF || 900) * 1000;
 const EMPTY_RESCAN = Number(process.env.SERVICE_EMPTY_RESCAN || 1800) * 1000;
 const OTHER_REGIONS = ['安徽', '甘肃', '广西', '贵州', '海南', '河北', '河南', '黑龙江', '湖北', '湖南',
   '吉林', '江西', '辽宁', '内蒙古', '宁夏', '青海', '山东', '山西', '陕西', '四川', '西藏', '新疆', '云南', '重庆'];
 const CHUNK = Number(process.env.SERVICE_REGION_CHUNK || 3);
 // 重点区：低占空比、每次只扫 1 个地区；10 区 × 30min 约 5h 一轮，避免与常规队列抢带宽。
-const FOCUS_RESCAN = Number(process.env.SERVICE_FOCUS_RESCAN || 1800) * 1000;
+const FOCUS_RESCAN = Number(process.env.SERVICE_FOCUS_RESCAN || 7200) * 1000;
 const FOCUS_PAGES = Number(process.env.SERVICE_FOCUS_PAGES || 8);
 
 const log = async (event, extra = {}) => {
@@ -110,6 +113,11 @@ const stopNow = async (reason, extra = {}) => {
   await log('stop', { reason, ...extra });
 };
 const riskHit = s => s && s.risk && (s.risk.captcha || s.risk.loginLost || s.risk.http403 || s.risk.http429);
+const backoff = async (reason, extra = {}) => {
+  await log('backoff', { reason, seconds: BACKOFF / 1000, ...extra });
+  await writeJson(STATE, state);
+  await sleep(BACKOFF);
+};
 
 if (process.env.FENBI_SERVICE_DRY_RUN === '1') {
   const f = chooseFocusScan(state, FOCUS_REGIONS, Date.now(), FOCUS_RESCAN);
@@ -126,6 +134,7 @@ await log('service_start', { pid: process.pid, batch: BATCH, regions: OTHER_REGI
 try {
   for (;;) {
     try { await fs.access(STOP); await log('exit', { reason: 'stop_file' }); break; } catch {}
+    try {
 
     // 1) 目录巡检（未巡完的地区，每轮 3 个；巡完后仅按 EMPTY_RESCAN 周期重扫）
     let discovered = false;
@@ -140,7 +149,7 @@ try {
       } else if (r.code !== 0 || r.summary?.error) {
         state.discoveryFailures = (state.discoveryFailures || 0) + 1;
         await log('discovery_failed', { failures: state.discoveryFailures, code: r.code, error: String(r.summary?.error || '').slice(0, 120) });
-        if (state.discoveryFailures >= 3) { await stopNow('discovery_repeated_failure', { failures: state.discoveryFailures }); break; }
+        if (state.discoveryFailures >= 3) { state.discoveryFailures = 0; await backoff('discovery_repeated_failure'); continue; }
       }
       if (r.summary?.risk?.captcha || r.summary?.risk?.unauthorized || r.summary?.risk?.rateLimited) {
         await stopNow('discovery_risk', r.summary.risk); break;
@@ -179,7 +188,7 @@ try {
         state.focusLastAttemptAt = new Date().toISOString();
         await log('focus_failed', { region: focus.region, failures: state.focusFailures, code: r.code,
           error: String(r.summary?.error || '').slice(0, 120) });
-        if (state.focusFailures >= 3) { await stopNow('focus_repeated_failure', { failures: state.focusFailures }); break; }
+        if (state.focusFailures >= 3) { state.focusFailures = 0; state.focusLastAttemptAt = new Date().toISOString(); await backoff('focus_repeated_failure'); continue; }
       }
       if (r.summary?.risk?.captcha || r.summary?.risk?.unauthorized || r.summary?.risk?.rateLimited) {
         await stopNow('focus_risk', { region: focus.region, ...r.summary.risk }); break;
@@ -196,14 +205,14 @@ try {
       const end = new Date(Date.now() + 20 * 60e3).toISOString();
       const r = await step('capture', DRIVER + '/t2-phaseb2.mjs', [], { CANDIDATES_FILE: CAND, PHASEB2_MAX: String(BATCH), PHASEB2_END: end }, 30 * 60e3);
       newPapers += r.newPapers;
-      if (r.summary?.stop === 'consecutive_failures' || (r.summary?.ok === 0 && r.summary?.fail >= 3)) { await stopNow('capture_consecutive_failures'); break; }
+      if (r.summary?.stop === 'consecutive_failures' || (r.summary?.ok === 0 && r.summary?.fail >= 3)) { await backoff('capture_consecutive_failures'); continue; }
       try { await fs.access(STOP); await log('exit', { reason: 'stop_file_after_capture' }); break; } catch {}
     }
 
     // 4) 提交（有界、只对确认空白）
     const sub = await step('collect', DRIVER + '/t2-collector.mjs', [], { T2_LIMIT: String(BATCH), T2_MAX_MS: String(40 * 60e3) }, 45 * 60e3);
     if (riskHit(sub.summary)) { await stopNow('submit_risk', sub.summary.risk); break; }
-    if (sub.summary?.metrics?.stopReason === 'consecutive_failures') { await stopNow('submit_consecutive_failures'); break; }
+    if (sub.summary?.metrics?.stopReason === 'consecutive_failures') { await backoff('submit_consecutive_failures'); continue; }
     try { await fs.access(STOP); await log('exit', { reason: 'stop_file_after_submit' }); break; } catch {}
 
     // 5) 回填 + 资产
@@ -219,7 +228,13 @@ try {
       regionIndex: state.regionIndex, focusScan, focusIndex: state.focusIndex,
       focusLastScanAt: state.focusLastScanAt || null });
 
-    if (riskHit(sub.summary) || riskHit(assets.summary)) break;
+    if (riskHit(sub.summary) || riskHit(assets.summary)) { await stopNow('asset_or_submit_risk'); break; }
+    } catch (e) {
+      // 单轮异常不结束服务：记日志、退避后继续下一轮。
+      await log('round_error', { error: (e.code || e.name) + ' :: ' + String(e.message || e).slice(0, 200) });
+      await backoff('round_error');
+      continue;
+    }
     await sleep(INTERVAL);
   }
 } catch (e) {

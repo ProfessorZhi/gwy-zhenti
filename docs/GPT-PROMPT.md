@@ -18,13 +18,16 @@
 先回复：三张任务卡已派给哪三个会话（会话 ID），然后开始执行。
 ```
 
-## 定时巡检指令（每 30–60 分钟一次）
+## 按需查询指令（用户问进度时使用；不再设定时巡检）
+
+生产线（`fenbi-collector`、`fenbi-publisher`）是常驻服务，自己一直跑，不需要 GPT 定时驱动。设计见 `docs/WORKFLOW-THINKING.md`。
 
 ```text
-gwy-zhenti 巡检（单次、5 分钟内结束）：
-1. 读 Dell A6000 上的看板（docs/WORKFLOW-GPT-DISPATCH.md 第七节格式）和 work/fenbi/pipeline.log 最后 50 行。
-2. 只按手册第五节的对照表行动；表外的情况只记录一行，不处理。
-3. 若 work/fenbi/STOP 存在：读日志最后的停止原因；是风控信号就通知用户，否则修复后删除 STOP 并重启服务。
-4. 不写报告，不开 PR；仅在阶段切换时更新 Issue #84。
-5. 进度以看板为准，不依赖上一次巡检的记忆。
+用户在问 gwy-zhenti 的进度。只读，不派新任务：
+1. 读 Dell 上的 work/fenbi/BOARD.md、两个服务的状态（systemctl --user status fenbi-collector fenbi-publisher），
+   以及 service.log / pipeline.log 最后 50 行。
+2. 回答不超过 8 行：粉笔目录卷数、已进入 main 的卷数、今天新增卷数、C 卷数、最近 1 小时抓取卷数、服务是否在跑。
+3. 若存在 work/fenbi/STOP：说明停止原因。是风控信号（验证码、登录失效、403/429）就请用户处理；不要自己删除 STOP。
+4. 若服务没在跑且没有 STOP：重启服务，并告诉用户重启了。
+5. 不写报告，不开 PR，不改代码。需要改代码时先问用户。
 ```

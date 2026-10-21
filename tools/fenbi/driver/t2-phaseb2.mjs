@@ -11,7 +11,7 @@ import { yearAllowed } from './year-policy.mjs';
 
 const pexec = promisify(execFile);
 const B = process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const WORK = B + '/work/fenbi';
+const WORK = process.env.FENBI_WORK_DIR || B + '/work/fenbi';
 const RUN = WORK + '/t2-20261019';
 const CAP = path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'capture-new-generic.mjs');
 const STOP = WORK + '/STOP';
