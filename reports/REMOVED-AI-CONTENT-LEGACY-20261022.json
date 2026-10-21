@@ -1,0 +1,405 @@
+[
+ {
+  "path": "省考/江苏/2026/申论-B类.md",
+  "receipt": "ROUND8-ORIGINAL-ANSWERS-20261013.jsonl",
+  "before_sha256": "8820441237f417728be46150dab0a88d1927daa7ef06708d776a574bdcc70e43",
+  "after_sha256": "d52a39cfdd728ec9c5fe4fa29c78afaea434cdff18ab55b20146d5bc69c45b54",
+  "before_bytes": 33941,
+  "after_bytes": 25158,
+  "body_sha256": "5e47ecf91d3bdeda71a41d2f70604a12e0b7648283c2c75cdfe62ff789d14f40",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [
+    "单一整理版来源，完整原件真实性待交叉复核"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "8820441237f417728be46150dab0a88d1927daa7ef06708d776a574bdcc70e43",
+   "bytes": 33941,
+   "source_validation": "单一完整题面来源，真实性仍需独立原件交叉复核；不以内部题数齐全认定官方整卷验真；参考答案未取得；2026-10-13：新增同题独立原创示范作答，原始给定资料与题目保持。"
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "issues": [
+    "单一整理版来源，完整原件真实性待交叉复核",
+    "已核实部分或全部参考答案未收录",
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "d52a39cfdd728ec9c5fe4fa29c78afaea434cdff18ab55b20146d5bc69c45b54",
+   "bytes": 25158,
+   "source_validation": "单一完整题面来源，真实性仍需独立原件交叉复核；不以内部题数齐全认定官方整卷验真；参考答案未取得"
+  }
+ },
+ {
+  "path": "省考/浙江/2025/申论-A类.md",
+  "receipt": "ROUND8-ORIGINAL-ANSWERS-20261013.jsonl",
+  "before_sha256": "211f37ab9ea53f8cca15dc79fc5740efbb67323cdef9dc80a4175f170bd7ced6",
+  "after_sha256": "80358d7020128b5f59f5f45df544be2c7c8cfc322facd3be774bbf8bd0e4896a",
+  "before_bytes": 41165,
+  "after_bytes": 38889,
+  "body_sha256": "01c4552541248abe79a3459717d50b7ce0afc3b70a0b4ead8adaddc2700c8e17",
+  "removed_answer_numbers": [
+   2
+  ],
+  "preserved_answer_sha256": {
+   "1": "8cd603bace67e15940cc557136a890c93dfd68126c90d7d7b61ea16fd28641fd",
+   "3": "9ee01d5148773dffee3dd5b14d053b4819aa6bf05ebe2b292b8c05fd07b8ef52"
+  },
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "211f37ab9ea53f8cca15dc79fc5740efbb67323cdef9dc80a4175f170bd7ced6",
+   "bytes": 41165,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12 申论整卷标题与题目导航规范化；正文保留，答案按同年同类同题匹配，不以题号数量代替逐字验真。；2026-10-13：新增同题独立原创示范作答，原始给定资料与题目保持。"
+  },
+  "manifest_after": {
+   "answer_blocks": 2,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    2
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "80358d7020128b5f59f5f45df544be2c7c8cfc322facd3be774bbf8bd0e4896a",
+   "bytes": 38889,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12 申论整卷标题与题目导航规范化；正文保留，答案按同年同类同题匹配，不以题号数量代替逐字验真。"
+  }
+ },
+ {
+  "path": "省考/浙江/2026/申论-A类.md",
+  "receipt": "ROUND8-ORIGINAL-ANSWERS-20261013.jsonl",
+  "before_sha256": "4905f26eb41e9f4efe53a744d7029e4e5a47084d9c39a500bcbe161b2591e6d4",
+  "after_sha256": "f60b3ae74a45dd710a773f6ac8c410ca88a25069cbc561294fe9552e74f2b99c",
+  "before_bytes": 43513,
+  "after_bytes": 41324,
+  "body_sha256": "8332e9a67b27082b4cb5b34036d1d4edeef471983a358f5eb4033ae8cb8d958f",
+  "removed_answer_numbers": [
+   2
+  ],
+  "preserved_answer_sha256": {
+   "1": "5624a790e6186714c4157c73132f1a88647d6069602b718632027922e093a3b4",
+   "3": "ff9f0685e61495a646f95ae786b8262063ce841633e9455339bbea17062c8244"
+  },
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "4905f26eb41e9f4efe53a744d7029e4e5a47084d9c39a500bcbe161b2591e6d4",
+   "bytes": 43513,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12 申论整卷标题与题目导航规范化；正文保留，答案按同年同类同题匹配，不以题号数量代替逐字验真。；2026-10-13：新增同题独立原创示范作答，原始给定资料与题目保持。"
+  },
+  "manifest_after": {
+   "answer_blocks": 2,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    2
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "f60b3ae74a45dd710a773f6ac8c410ca88a25069cbc561294fe9552e74f2b99c",
+   "bytes": 41324,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12 申论整卷标题与题目导航规范化；正文保留，答案按同年同类同题匹配，不以题号数量代替逐字验真。"
+  }
+ },
+ {
+  "path": "省考/浙江/2026/申论-C类.md",
+  "receipt": "ROUND8-ORIGINAL-ANSWERS-20261013.jsonl",
+  "before_sha256": "c19a67b4188586fe245b25e218edf3f25ff0f9e858ae63d7c125e1b3d5e156bc",
+  "after_sha256": "eafb3f31da17ba8f58fc7d15e9836c2087322f101f0e66c0a8153caebcd4dba3",
+  "before_bytes": 38783,
+  "after_bytes": 36520,
+  "body_sha256": "35e1ffe740696f90a55c8885d15d0b0860c67ffa39882f0470333662f94b7390",
+  "removed_answer_numbers": [
+   2
+  ],
+  "preserved_answer_sha256": {
+   "1": "e8969bc49e5752f9cde3980ad5ce50bcd99700bde5257e6a41a7ae3f4651e639",
+   "3": "df99a4bb14ab6973cbbb0cac6cf362a66b734b2b4796dd1e140cd2cb2d0883ba"
+  },
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "c19a67b4188586fe245b25e218edf3f25ff0f9e858ae63d7c125e1b3d5e156bc",
+   "bytes": 38783,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12 申论整卷标题与题目导航规范化；正文保留，答案按同年同类同题匹配，不以题号数量代替逐字验真。；2026-10-13：新增同题独立原创示范作答，原始给定资料与题目保持。"
+  },
+  "manifest_after": {
+   "answer_blocks": 2,
+   "has_answer_content": true,
+   "missing_answer_numbers": [
+    2
+   ],
+   "issues": [
+    "已核实部分或全部参考答案未收录",
+    "答案数量与题量不一致"
+   ],
+   "notes": [
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "eafb3f31da17ba8f58fc7d15e9836c2087322f101f0e66c0a8153caebcd4dba3",
+   "bytes": 36520,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-12 申论整卷标题与题目导航规范化；正文保留，答案按同年同类同题匹配，不以题号数量代替逐字验真。"
+  }
+ },
+ {
+  "path": "省考/上海/2019/申论-行政执法卷.md",
+  "receipt": "ROUND9-ORIGINAL-ANSWERS-20261013.jsonl",
+  "before_sha256": "b89c58e16ab1a3c0ae6dedb5dbb5f73fa22180bdf58fef21e5e3004abd1726b6",
+  "after_sha256": "e47cbbe7c119e604f9e8be83d1cb86795da0343d26a0424e24f996044ae5ab68",
+  "before_bytes": 26134,
+  "after_bytes": 19236,
+  "body_sha256": "95f963b81b83d0a68b1f1fc79763c91cb54a4a3c37ffe48ae01deea9c5787d67",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3
+  ],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "b89c58e16ab1a3c0ae6dedb5dbb5f73fa22180bdf58fef21e5e3004abd1726b6",
+   "bytes": 26134,
+   "source_validation": "机器校验（结构/材料/分值/去重）；未人工通读；粉笔系上游，再分发条件未核实；2026-10-13：更新R7导读并新增同题独立原创示范作答，原始给定资料与题目保持。"
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "e47cbbe7c119e604f9e8be83d1cb86795da0343d26a0424e24f996044ae5ab68",
+   "bytes": 19236,
+   "source_validation": "机器校验（结构/材料/分值/去重）；未人工通读；粉笔系上游，再分发条件未核实"
+  }
+ },
+ {
+  "path": "省考/安徽/2026/申论-A类.md",
+  "receipt": "ROUND9-ORIGINAL-ANSWERS-20261013.jsonl",
+  "before_sha256": "d48ca06da578fad41ded58e7e438739fb875bbb0853cb422e15aa5db26f400cb",
+  "after_sha256": "4732e6b820a87c7f0252611e2d9c136fb2421439289d83149163198406b9a7dd",
+  "before_bytes": 33115,
+  "after_bytes": 23393,
+  "body_sha256": "a03e19c1f62beba5cc88c177fef78f5924b16022d6983d34b5f209f5edb23484",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "d48ca06da578fad41ded58e7e438739fb875bbb0853cb422e15aa5db26f400cb",
+   "bytes": 33115,
+   "source_validation": "机器校验（结构/材料/分值齐）；未人工通读；粉笔系上游，再分发条件未核实；2026-10-13：更新R7导读并新增同题独立原创示范作答，原始给定资料与题目保持。"
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "4732e6b820a87c7f0252611e2d9c136fb2421439289d83149163198406b9a7dd",
+   "bytes": 23393,
+   "source_validation": "机器校验（结构/材料/分值齐）；未人工通读；粉笔系上游，再分发条件未核实"
+  }
+ },
+ {
+  "path": "省考/重庆/2024/申论-一卷.md",
+  "receipt": "ROUND9-ORIGINAL-ANSWERS-20261013.jsonl",
+  "before_sha256": "eaefd92ff8339f9794ac9f80fdbd46b1e253e878a89f6486fb0fb54b09b2dd67",
+  "after_sha256": "42926f48f84626396ce06644d8ace7285644b7a70fb4db4bf00269db0871ccc6",
+  "before_bytes": 32057,
+  "after_bytes": 22423,
+  "body_sha256": "94a7d31fdd444d002200c9c362c460a50b3163357768e1e2a0c3a0889cbabcf2",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 4,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "eaefd92ff8339f9794ac9f80fdbd46b1e253e878a89f6486fb0fb54b09b2dd67",
+   "bytes": 32057,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实；2026-10-13：更新R7导读并新增同题独立原创示范作答，原始给定资料与题目保持。"
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "42926f48f84626396ce06644d8ace7285644b7a70fb4db4bf00269db0871ccc6",
+   "bytes": 22423,
+   "source_validation": "机器校验（身份/来源/字数）；未人工通读；第三方源，再分发条件未核实"
+  }
+ },
+ {
+  "path": "省考/深圳/2025/申论-一卷.md",
+  "receipt": "ROUND10-ORIGINAL-ANSWERS-20261013.jsonl",
+  "before_sha256": "4e3eb862b36b5c34f0ed92e49d99fd877366ec6f69083fa9c999aa3c467d9071",
+  "after_sha256": "883f8dfbe81e4476eedc949e34a0c09b166597451a135b5b926ab40310159a94",
+  "before_bytes": 27792,
+  "after_bytes": 20265,
+  "body_sha256": "62da16920a2a852845aed39f35cdf42c06988a87f297eeaff43c359d6edded36",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3
+  ],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "4e3eb862b36b5c34f0ed92e49d99fd877366ec6f69083fa9c999aa3c467d9071",
+   "bytes": 27792,
+   "source_validation": "机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实；2026-10-13：增补三道原创示范作答，材料与题面保持原样"
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "883f8dfbe81e4476eedc949e34a0c09b166597451a135b5b926ab40310159a94",
+   "bytes": 20265,
+   "source_validation": "机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实"
+  }
+ },
+ {
+  "path": "省考/深圳/2025/申论-二卷.md",
+  "receipt": "ROUND10-ORIGINAL-ANSWERS-20261013.jsonl",
+  "before_sha256": "808cd55af38c61e33d6bf420cfdf8d1ca8b976d6793ac7be76af7d31b2f73e62",
+  "after_sha256": "aac1d5711c08571ff71424235cf1526cdfbbd2f2035ec4ec7c955d7151637d25",
+  "before_bytes": 28378,
+  "after_bytes": 20529,
+  "body_sha256": "24581b3146231431e174433297872a5f2b0b3ea1a05fdbcbaf688c25ab9204f4",
+  "removed_answer_numbers": [
+   1,
+   2,
+   3
+  ],
+  "preserved_answer_sha256": {},
+  "manifest_before": {
+   "answer_blocks": 3,
+   "has_answer_content": true,
+   "missing_answer_numbers": [],
+   "issues": [],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "808cd55af38c61e33d6bf420cfdf8d1ca8b976d6793ac7be76af7d31b2f73e62",
+   "bytes": 28378,
+   "source_validation": "机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实；2026-10-13：增补三道原创示范作答，材料与题面保持原样"
+  },
+  "manifest_after": {
+   "answer_blocks": 0,
+   "has_answer_content": false,
+   "missing_answer_numbers": null,
+   "issues": [
+    "未检测到参考答案（需复核正文）"
+   ],
+   "notes": [
+    "题号未结构化；不据此认定题面残缺",
+    "有参考答案不代表其为官方答案或已经验真"
+   ],
+   "sha256": "aac1d5711c08571ff71424235cf1526cdfbbd2f2035ec4ec7c955d7151637d25",
+   "bytes": 20529,
+   "source_validation": "机器校验（材料/题干/要求齐）；未人工通读；囊中对比系上游全文，转载权限未核实"
+  }
+ }
+]
