@@ -1,6 +1,7 @@
 # TEMPLATE ONLY — do not enable or install from this repository.
-# Copy to ~/.config/systemd/user/, replace REPO_PLACEHOLDER with the Publisher
-# worktree path, then reload/enable manually. The live Publisher runs from a
+# Copy as ~/.config/systemd/user/fenbi-publisher.service; replace
+# REPO_ABSOLUTE_PATH with the absolute Publisher worktree path before use.
+# The live Publisher runs from a
 # separate git worktree at a different commit than main; this template does not
 # imply that main and production are the same code, nor any publication right.
 [Unit]
@@ -9,8 +10,8 @@ After=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=%h/REPO_PLACEHOLDER
-ExecStart=/usr/bin/bash %h/REPO_PLACEHOLDER/tools/fenbi/run-pipeline.sh
+WorkingDirectory=REPO_ABSOLUTE_PATH
+ExecStart=/usr/bin/bash REPO_ABSOLUTE_PATH/tools/fenbi/run-pipeline.sh
 # Non-sensitive switches observed in the live unit (names and enums only).
 # Environment=CAPTURE=0
 # Environment=ALLOW_REPLACE=1
