@@ -14,6 +14,8 @@ WorkingDirectory=REPO_ABSOLUTE_PATH
 ExecStart=NODE_ABSOLUTE_PATH REPO_ABSOLUTE_PATH/tools/fenbi/driver/fenbi-service.mjs
 # Optional local overrides (never commit): FENBI_BASE, FENBI_WORK_DIR,
 # SERVICE_BATCH, SERVICE_INTERVAL, SERVICE_FOCUS_RESCAN, SERVICE_FOCUS_PAGES.
+# Single-paper worker: SERVICE_MODE=worker, INTEG_REPO, RIGHTS_FILE, PUSH=1, AUTO_MERGE=1,
+# WORKER_TABS, WORKER_DWELL_MS, WORKER_MAX_PAPERS (see docs/WORKFLOW-THINKING.md).
 # EnvironmentFile=-%h/.config/gwy-zhenti/collector.env
 Restart=on-failure
 RestartSec=60

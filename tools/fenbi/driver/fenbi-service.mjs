@@ -39,6 +39,11 @@ const CHUNK = Number(process.env.SERVICE_REGION_CHUNK || 3);
 // 重点区：低占空比、每次只扫 1 个地区；10 区 × 30min 约 5h 一轮，避免与常规队列抢带宽。
 const FOCUS_RESCAN = Number(process.env.SERVICE_FOCUS_RESCAN || 7200) * 1000;
 const FOCUS_PAGES = Number(process.env.SERVICE_FOCUS_PAGES || 8);
+// SERVICE_MODE=worker：抓题、交卷、回填、图片、落地合并成一个单卷流水线进程（tools/fenbi/worker/worker.mjs），
+// 一个浏览器多个标签页并行；不设则沿用旧的分步链路。
+const MODE = process.env.SERVICE_MODE || 'steps';
+const WORKER = path.resolve(DRIVER, '../worker/worker.mjs');
+const WORKER_MAX_MS = Number(process.env.WORKER_MAX_MS || 50 * 60e3);
 
 const log = async (event, extra = {}) => {
   const line = JSON.stringify({ at: new Date().toISOString(), event, ...extra });
@@ -220,6 +225,28 @@ try {
     // 2) 建队列（严格去重）
     await step('candidates', DRIVER + '/build-candidates-live.mjs', [], { DISCOVERY_OUT: CAT, CANDIDATES_OUT: CAND }, 2 * 60e3);
     const cand = await readJson(CAND, { candidates: [] });
+
+    // 3') 单卷流水线：一次运行处理到 WORKER_MAX_PAPERS 卷或 WORKER_MAX_MS 为止，结束后同样先过风控。
+    if (MODE === 'worker') {
+      const w = await step('worker', WORKER, [], { CANDIDATES_FILE: CAND, WORKER_MAX_MS: String(WORKER_MAX_MS) }, WORKER_MAX_MS + 15 * 60e3);
+      const gw = await riskGate('worker', w);
+      if (gw === 'stop') break;
+      if (gw === 'backoff') { await backoff('worker_http'); continue; }
+      if (w.code !== 0) { await backoff('worker_exit', { code: w.code, stderr: w.stderr.slice(-200) }); continue; }
+      if (w.summary?.stopReason === 'consecutive_failures') { await backoff('worker_consecutive_failures'); continue; }
+      if (w.summary?.stopReason === 'profile_locked') { await backoff('profile_locked'); continue; }
+      state.rounds += 1;
+      state.newPapers += w.newPapers;
+      state.lastRoundAt = new Date().toISOString();
+      await log('round', { round: state.rounds, mode: 'worker', discovered, candidates: (cand.candidates || []).length,
+        newPapers: w.newPapers, metrics: w.summary?.metrics ?? null, stopReason: w.summary?.stopReason ?? null, focusScan });
+      state.backoffStreak = 0; await fs.unlink(ALERT).catch(() => {});
+      await writeJson(STATE, state);
+      // 队列空了不必空转：等到下一次目录重扫再来。
+      if (w.summary?.stopReason === 'empty_queue') await sleep(Math.max(INTERVAL, 5 * 60e3));
+      else await sleep(INTERVAL);
+      continue;
+    }
 
     // 3) 采集（有界）
     let newPapers = 0;

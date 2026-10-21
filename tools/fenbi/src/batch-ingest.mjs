@@ -145,6 +145,67 @@ function parseCli(argv) {
   return opts;
 }
 
+// One cache folder -> one candidate (paper.md, receipt.json, copied assets). Returns the receipt row.
+// The worker calls this right after a paper is captured; runBatch calls it for every folder.
+export async function ingestFolder({source,repo,dest,name,write=false}){
+  const base=path.join(source,name),real=await fs.realpath(base);
+  if(!real.startsWith(source+path.sep))throw Error('source-path-escape');
+  const raw=await fs.readFile(path.join(base,'document.json'));
+  const doc=JSON.parse(raw);
+  const id=doc.identity||{},area=id.area==='国考'?'国考':'省考/'+id.area;
+  const sub=subjectName(id.subject);
+  if(!sub||!safeName(id.id)||!safeName(id.variant)||!Number.isInteger(Number(id.year)))throw Error('bad-identity');
+  const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
+  const priorFile=path.join(repo,rel);
+  let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
+  // Neither the source nor the repository paper changed since the last candidate: reuse it.
+  const known=write?await fs.readFile(path.join(dest,name,'receipt.json'),'utf8').then(JSON.parse).catch(()=>null):null;
+  const knownMd=known?await fs.readFile(path.join(dest,name,'paper.md')).catch(()=>null):null;
+  if(known&&knownMd&&sha(knownMd)===known.markdownSha256&&known.sourceSha256===sha(raw)&&known.oldSha256===(prior?sha(prior):null))return known;
+  const assembly=assemble(doc,prior);
+  const verdict=await validateDocument(assembly.prepared,{assetRoot:path.join(base,'assets')});
+  const prefix='assets-fenbi-'+id.id;
+  const md=renderIngest(assembly,prior,prefix);
+  const grade=structureGrade(assembly,md,verdict);
+  const answerNumbers=assembly.prepared.questions.filter(q=>flat(q.answerHtml)).map(q=>q.number);
+  const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,counts:grade.counts,answerNumbers,markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw)};
+  if(write){
+    const out=path.join(dest,name);await fs.mkdir(out,{recursive:true,mode:0o700});
+    let existing=await fs.readFile(path.join(out,'paper.md')).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));
+    if(existing&&sha(existing)!==sha(md)){
+      // The source (e.g. answers backfilled) or the repository paper changed: rebuild instead of
+      // blocking forever. The superseded candidate is kept outside the candidate root.
+      const stale=path.join(path.dirname(dest),'batch-ingest-stale',`${name}-${Date.now()}`);
+      await fs.mkdir(path.dirname(stale),{recursive:true,mode:0o700});
+      await fs.rename(out,stale);await fs.mkdir(out,{recursive:true,mode:0o700});existing=null;
+    }
+    if(existing){
+      // Same paper, but the base it would replace may have moved; keep the receipt current.
+      await fs.writeFile(path.join(out,'receipt.json'),JSON.stringify(row,null,2)+'\n',{mode:0o600});
+    }else{
+      const assetOut=path.join(out,prefix);await fs.mkdir(assetOut,{recursive:true,mode:0o700});
+      const copied=new Set();
+      for(const asset of doc.assets){
+        if(!asset.localPath || !asset.sha256 || asset.status!=='downloaded')throw Error('asset-not-available');
+        const root=path.resolve(base,'assets');
+        const checked=await fs.realpath(path.resolve(root,asset.localPath));
+        if(!checked.startsWith(root+path.sep))throw Error('asset-path-escape');
+        const img=asset.localPath.replaceAll('\\','/');
+        if(img.startsWith('/') || img.split('/').includes('..'))throw Error('asset-path-invalid');
+        if(copied.has(img))continue;
+        const bytes=await fs.readFile(checked);
+        if(sha(bytes)!==asset.sha256)throw Error('asset-sha-mismatch');
+        const target=path.join(assetOut,img);await fs.mkdir(path.dirname(target),{recursive:true,mode:0o700});
+        await fs.writeFile(target,bytes,{flag:'wx',mode:0o600});copied.add(img);
+      }
+      await fs.writeFile(path.join(out,'paper.md'),md,{flag:'wx',mode:0o600});
+      if(prior)await fs.writeFile(path.join(out,'legacy-original.md'),prior,{flag:'wx',mode:0o600});
+      await fs.writeFile(path.join(out,'receipt.json'),JSON.stringify(row,null,2)+'\n',{flag:'wx',mode:0o600});
+    }
+  }
+  return row;
+}
+
 export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=false}={}){
   const source=await fs.realpath(sourceRoot||path.join(repoRoot,'work/fenbi/papers'));
   const repo=await fs.realpath(repoRoot);
@@ -152,64 +213,8 @@ export async function runBatch({sourceRoot,repoRoot=APP_ROOT,limit=100,write=fal
   const folders=(await fs.readdir(source,{withFileTypes:true})).filter(x=>x.isDirectory()&&safeName(x.name)).map(x=>x.name).sort().slice(0,limit);
   const receipts=[];
   for(const name of folders){
-    try{
-      const base=path.join(source,name),real=await fs.realpath(base);
-      if(!real.startsWith(source+path.sep))throw Error('source-path-escape');
-      const raw=await fs.readFile(path.join(base,'document.json'));
-      const doc=JSON.parse(raw);
-      const id=doc.identity||{},area=id.area==='国考'?'国考':'省考/'+id.area;
-      const sub=subjectName(id.subject);
-      if(!sub||!safeName(id.id)||!safeName(id.variant)||!Number.isInteger(Number(id.year)))throw Error('bad-identity');
-      const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
-      const priorFile=path.join(repo,rel);
-      let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
-      // Neither the source nor the repository paper changed since the last candidate: reuse it.
-      const known=write?await fs.readFile(path.join(dest,name,'receipt.json'),'utf8').then(JSON.parse).catch(()=>null):null;
-      const knownMd=known?await fs.readFile(path.join(dest,name,'paper.md')).catch(()=>null):null;
-      if(known&&knownMd&&sha(knownMd)===known.markdownSha256&&known.sourceSha256===sha(raw)&&known.oldSha256===(prior?sha(prior):null)){receipts.push(known);continue;}
-      const assembly=assemble(doc,prior);
-      const verdict=await validateDocument(assembly.prepared,{assetRoot:path.join(base,'assets')});
-      const prefix='assets-fenbi-'+id.id;
-      const md=renderIngest(assembly,prior,prefix);
-      const grade=structureGrade(assembly,md,verdict);
-      const answerNumbers=assembly.prepared.questions.filter(q=>flat(q.answerHtml)).map(q=>q.number);
-      const row={name,sourceId:String(id.id),area:id.area,year:Number(id.year),variant:id.variant,subject:id.subject,path:rel,grade:grade.grade,issues:grade.blockers,counts:grade.counts,answerNumbers,markdownSha256:sha(md),oldSha256:prior?sha(prior):null,sourceSha256:sha(raw)};
-      if(write){
-        const out=path.join(dest,name);await fs.mkdir(out,{recursive:true,mode:0o700});
-        let existing=await fs.readFile(path.join(out,'paper.md')).catch(e=>e.code==='ENOENT'?null:Promise.reject(e));
-        if(existing&&sha(existing)!==sha(md)){
-          // The source (e.g. answers backfilled) or the repository paper changed: rebuild instead of
-          // blocking forever. The superseded candidate is kept outside the candidate root.
-          const stale=path.join(repo,'work/fenbi/batch-ingest-stale',`${name}-${Date.now()}`);
-          await fs.mkdir(path.dirname(stale),{recursive:true,mode:0o700});
-          await fs.rename(out,stale);await fs.mkdir(out,{recursive:true,mode:0o700});existing=null;
-        }
-        if(existing){
-          // Same paper, but the base it would replace may have moved; keep the receipt current.
-          await fs.writeFile(path.join(out,'receipt.json'),JSON.stringify(row,null,2)+'\n',{mode:0o600});
-        }else{
-          const assetOut=path.join(out,prefix);await fs.mkdir(assetOut,{recursive:true,mode:0o700});
-          const copied=new Set();
-          for(const asset of doc.assets){
-            if(!asset.localPath || !asset.sha256 || asset.status!=='downloaded')throw Error('asset-not-available');
-            const root=path.resolve(base,'assets');
-            const checked=await fs.realpath(path.resolve(root,asset.localPath));
-            if(!checked.startsWith(root+path.sep))throw Error('asset-path-escape');
-            const img=asset.localPath.replaceAll('\\','/');
-            if(img.startsWith('/') || img.split('/').includes('..'))throw Error('asset-path-invalid');
-            if(copied.has(img))continue;
-            const bytes=await fs.readFile(checked);
-            if(sha(bytes)!==asset.sha256)throw Error('asset-sha-mismatch');
-            const target=path.join(assetOut,img);await fs.mkdir(path.dirname(target),{recursive:true,mode:0o700});
-            await fs.writeFile(target,bytes,{flag:'wx',mode:0o600});copied.add(img);
-          }
-          await fs.writeFile(path.join(out,'paper.md'),md,{flag:'wx',mode:0o600});
-          if(prior)await fs.writeFile(path.join(out,'legacy-original.md'),prior,{flag:'wx',mode:0o600});
-          await fs.writeFile(path.join(out,'receipt.json'),JSON.stringify(row,null,2)+'\n',{flag:'wx',mode:0o600});
-        }
-      }
-      receipts.push(row);
-    }catch(e){receipts.push({name,grade:'C',error:e.code||e.message||'error'});}
+    try{receipts.push(await ingestFolder({source,repo,dest,name,write}));}
+    catch(e){receipts.push({name,grade:'C',error:e.code||e.message||'error'});}
   }
   return {papers:receipts.length,A:receipts.filter(x=>x.grade==='A').length,C:receipts.filter(x=>x.grade==='C').length,receipts};
 }
