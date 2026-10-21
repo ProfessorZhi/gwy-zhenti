@@ -32,6 +32,7 @@ import { loadConfig } from '../src/config.mjs';
 import { openSession } from '../src/browser.mjs';
 import { assembleMaterialPanes, materialsThisQuestion, sha256 } from '../src/shenlun-panes.mjs';
 import { selectRowByIndex } from '../src/shenlun-list.mjs';
+import { pairPaperViewComponents } from '../src/shenlun-paper-view.mjs';
 import { parseShenlunCapture, metadataReceipt } from '../src/shenlun.mjs';
 import { validateDocument } from '../src/validate.mjs';
 
@@ -267,37 +268,88 @@ try {
     return { textLen: norm(body.innerText).length, html: body.innerHTML, images: body.querySelectorAll('img').length };
   });
 
+  // 整卷视图：没有页签条，每道题一个 app-ti，旁边一个 app-materials，按文档顺序平铺。
+  // 只在左右组件数量相等、各自唯一、且纵坐标同序时才算配对成功。
+  const paperViewComponents = () => page.evaluate(() => {
+    const apps = [...document.querySelectorAll('app-materials')];
+    const tis = [...document.querySelectorAll('app-ti')];
+    return {
+      materials: apps.map((app) => ({ top: app.getBoundingClientRect().top, bodies: app.querySelectorAll('.material-body').length })),
+      questions: tis.map((ti) => ({ top: ti.getBoundingClientRect().top, contents: ti.querySelectorAll('.ti-content').length })),
+    };
+  });
+  const snapshotQuestionAt = (index) => page.evaluate((i) => {
+    const norm = (s) => String(s || '').replace(/\s+/gu, ' ').trim();
+    const container = document.querySelectorAll('app-ti')[i];
+    if (!container) return { prompt: null, sections: [], keys: [] };
+    const content = container.querySelector('.ti-content');
+    const sections = [...container.querySelectorAll('.result-common-section')].map((section) => {
+      const title = norm((section.querySelector('.solution-title') || section).innerText).slice(0, 12);
+      return { title, textLen: norm(section.innerText).length, images: section.querySelectorAll('img').length, html: section.innerHTML, bodyHtml: section.innerHTML };
+    });
+    const keys = [...container.querySelectorAll('[data-question-key]')].map((el) => el.getAttribute('data-question-key'));
+    return { prompt: content ? { textLen: norm(content.innerText).length, html: content.innerHTML } : null, sections, keys };
+  }, index);
+  const snapshotMaterialAt = (index) => page.evaluate((i) => {
+    const norm = (s) => String(s || '').replace(/\s+/gu, ' ').trim();
+    const app = document.querySelectorAll('app-materials')[i];
+    const body = app ? app.querySelector('.material-body') : null;
+    if (!body) return null;
+    return { textLen: norm(body.innerText).length, html: body.innerHTML, images: body.querySelectorAll('img').length };
+  }, index);
+
   const initial = await structure();
   receipt.structure = { initial: { materialTabs: initial.materialTabs, questionTabs: initial.questionTabs, anchors: initial.anchors.length } };
   if (!initial.materialBodyPresent) throw fail('MATERIAL_PANE_MISSING', 'detail page has no .material-body pane');
-  const questionCount = Math.min(initial.questionTabs || initial.anchors.length, MAX_QUESTIONS);
+
+  let paperView = null;
+  let questionCount = Math.min(initial.questionTabs || initial.anchors.length, MAX_QUESTIONS);
+  if (questionCount <= 0) {
+    const components = await paperViewComponents();
+    const pairs = pairPaperViewComponents(components);
+    paperView = { components, pairs };
+    receipt.structure.initial.paperView = { materials: components.materials.length, questions: components.questions.length, binding: 'component-index+vertical-alignment' };
+    questionCount = Math.min(pairs.length, MAX_QUESTIONS);
+  }
   if (questionCount <= 0) throw fail('QUESTION_TABS_MISSING', 'no question tabs/anchors observed');
 
   const captured = [];
   for (let question = 0; question < questionCount; question += 1) {
-    const questionClick = await clickTab('question', question);
-    if (!questionClick.clicked) throw fail('QUESTION_TAB_NOT_FOUND', `question tab ${question + 1} not clickable`);
-    receipt.clicks += 1;
-    await settle(GAP);
-    stopOnRisk();
-
-    const state = await snapshotQuestion();
-    if (!state.prompt) throw fail('PROMPT_MISSING', `question ${question + 1} has no .ti-content`);
-    const strip = await structure();
-    const paneCount = Math.min(strip.materialTabs, 60);
+    let state;
+    let strip = { anchors: [], materialTabs: 0 };
+    let paneCount = 0;
     const panes = [];
-    for (let pane = 0; pane < paneCount; pane += 1) {
-      const click = await clickTab('material', pane);
-      if (!click.clicked) { receipt.blocks.push({ question: question + 1, pane: pane + 1, reason: 'material-tab-not-clickable' }); continue; }
+    if (paperView) {
+      state = await snapshotQuestionAt(question);
+      if (!state.prompt) throw fail('PROMPT_MISSING', `paper-view component ${question + 1} has no .ti-content`);
+      paneCount = 1;
+      const body = await snapshotMaterialAt(question);
+      if (!body) throw fail('MATERIAL_BODY_MISSING', `paper-view component ${question + 1} has no .material-body`);
+      panes.push({ tabIndex: 0, tabLabel: null, html: body.html, textLen: body.textLen, images: body.images, htmlSha: sha256(body.html) });
+    } else {
+      const questionClick = await clickTab('question', question);
+      if (!questionClick.clicked) throw fail('QUESTION_TAB_NOT_FOUND', `question tab ${question + 1} not clickable`);
       receipt.clicks += 1;
       await settle(GAP);
       stopOnRisk();
-      const body = await snapshotMaterial();
-      if (!body) { receipt.blocks.push({ question: question + 1, pane: pane + 1, reason: 'material-body-missing' }); continue; }
-      panes.push({
-        tabIndex: pane, tabLabel: click.label, html: body.html, textLen: body.textLen,
-        images: body.images, htmlSha: sha256(body.html),
-      });
+
+      state = await snapshotQuestion();
+      if (!state.prompt) throw fail('PROMPT_MISSING', `question ${question + 1} has no .ti-content`);
+      strip = await structure();
+      paneCount = Math.min(strip.materialTabs, 60);
+      for (let pane = 0; pane < paneCount; pane += 1) {
+        const click = await clickTab('material', pane);
+        if (!click.clicked) { receipt.blocks.push({ question: question + 1, pane: pane + 1, reason: 'material-tab-not-clickable' }); continue; }
+        receipt.clicks += 1;
+        await settle(GAP);
+        stopOnRisk();
+        const body = await snapshotMaterial();
+        if (!body) { receipt.blocks.push({ question: question + 1, pane: pane + 1, reason: 'material-body-missing' }); continue; }
+        panes.push({
+          tabIndex: pane, tabLabel: click.label, html: body.html, textLen: body.textLen,
+          images: body.images, htmlSha: sha256(body.html),
+        });
+      }
     }
     captured.push({
       index: question + 1, keys: state.keys, anchorsVisible: strip.anchors,
@@ -366,15 +418,22 @@ try {
       detailPath: new URL(page.url()).pathname,
       observedAnchors: captured[0]?.anchorsVisible ?? [],
       questionsCaptured: questions.length,
+      layout: paperView ? 'paper-view-per-question-components' : 'question-scoped-material-tab-strips',
+      componentBinding: paperView ? { method: 'component-index+vertical-alignment', pairs: paperView.pairs } : null,
       materialPaneEvidence: {
-        method: 'per-question material tab click -> .material-body snapshot',
+        method: paperView
+          ? 'one app-materials component per app-ti question component; .material-body snapshot in component order'
+          : 'per-question material tab click -> .material-body snapshot',
         observed: merged.evidence.paneObservations,
         distinct: merged.evidence.distinctPanes,
         declaredMaterialTabs: merged.evidence.declaredMaterialTabs,
         perQuestion: merged.evidence.perQuestionPanes,
       },
     },
-    completeness: { questionCountMatchesAnchors: Array.isArray(captured[0]?.anchorsVisible) && captured[0].anchorsVisible.length === questions.length },
+    completeness: {
+      questionCountMatchesAnchors: Array.isArray(captured[0]?.anchorsVisible) && captured[0].anchorsVisible.length === questions.length,
+      questionCountMatchesComponents: paperView ? paperView.pairs.length === questions.length : null,
+    },
     materials: merged.materials.map((material) => ({
       index: material.index, textLen: material.textLen, htmlSha: material.htmlSha, html: material.html, images: material.images,
       tabNumbers: material.tabNumbers,
