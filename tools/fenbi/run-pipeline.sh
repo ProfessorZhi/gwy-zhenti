@@ -20,7 +20,9 @@ INTERVAL=${INTERVAL:-60}
 CONCURRENCY=${CONCURRENCY:-3}
 RIGHTS_FILE=${RIGHTS_FILE:-}
 HEADLESS_FLAG=${HEADLESS:+--headless}
-REPLACE_FLAG=${ALLOW_REPLACE:+--allow-replace}
+# Strict switch: only the literal 1 enables replacement; "0" must not.
+REPLACE_FLAG=""
+if [ "${ALLOW_REPLACE:-0}" = 1 ]; then REPLACE_FLAG=--allow-replace; fi
 mkdir -p "$WORK"
 log() { printf '%s %s\n' "$(date -Iseconds)" "$*" | tee -a "$WORK/pipeline.log"; }
 
