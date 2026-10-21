@@ -66,8 +66,10 @@ try {
         const st = res.status();
         // 401 means the session is gone: stop requesting at once. A 403 counts toward the hourly limit.
         if (st === 401) { stats.risk.s401++; t.known.set(url, { url, status: 'unauthorized' }); stats.unauthorized++; stats.stopReason = 'unauthorized'; break; }
-        if (st === 403) { stats.risk.s403++; t.known.set(url, { url, status: 'unauthorized' }); stats.unauthorized++; continue; }
-        if (st === 429 || st === 503) stats.risk.s429_503++;
+        // A first 403/429/503 ends this asset batch so the parent can back off immediately.
+        // The remaining assets stay pending; the next authorized cycle may retry them.
+        if (st === 403) { stats.risk.s403++; t.known.set(url, { url, status: 'unauthorized' }); stats.unauthorized++; stats.stopReason = 'http403'; break; }
+        if (st === 429 || st === 503) { stats.risk.s429_503++; t.known.set(url, { url, status: 'http_error' }); stats.httpError++; stats.stopReason = 'http429_or_503'; break; }
         if (st < 200 || st >= 300) { t.known.set(url, { url, status: 'http_error' }); stats.httpError++; continue; }
         const h = res.headers();
         const type = (h['content-type'] || '').split(';')[0].toLowerCase();
