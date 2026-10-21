@@ -6,6 +6,8 @@
 
 设计见 `docs/WORKFLOW-THINKING.md`。原来的"启动指令""定时巡检""任务卡派发"都已废止。
 
+**总计划和任务卡见 `docs/ZHENTI-MASTER-PLAN.md`**：用户批准某张任务卡后，GPT 把它原样派给本地 agent，收回报格式里的数字，原样转给用户。
+
 ## 用户问进度时使用
 
 ```text
