@@ -143,8 +143,8 @@ member/lock binding, batches 1–3 lock fields, raw Zhejiang titles).
 
 Replaying the snapshots present on 2026-10-21 (11 national batches, Zhejiang
 inventory/API, plus a 569-id captured scan) gives: **838 real sourceIds** (802
-national + 36 Zhejiang), 674 in 2016–2026 scope (+36 Zhejiang all-years), 3
-cross-region ids, 0 identity conflicts, 595 candidates and 33 pending free
-checks. This is the visible content of these snapshots, **not** a claim of a
+national + 36 Zhejiang), **674 policy-in-scope** (638 national 2016–2026 + 36
+Zhejiang all-years; 11 of the 36 are pre-2016), 3 cross-region ids, 0 identity
+conflicts, 595 candidates and 33 pending free checks. This is the visible content of these snapshots, **not** a claim of a
 national shenlun total; Zhejiang 2022 has no row and the 4 non-region tabs
 (推荐/小模考/选调生/公安) were not inventoried here.
