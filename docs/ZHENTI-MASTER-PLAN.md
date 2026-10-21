@@ -1,155 +1,102 @@
-# 公务员真题库总计划：粉笔 → Markdown 知识库
+# 粉笔真题落盘总计划
 
-本文是唯一的执行依据。与 `docs/WORKFLOW-GPT-DISPATCH.md`、`docs/FENBI-FULL-CAPTURE-PLAN.md` 冲突时以本文为准；
-设计细节见 `docs/WORKFLOW-THINKING.md`。
+> 唯一依据。GPT 和 Dell 上的 agent 只按本文做，不靠聊天记录。
 
 ## 一、目标
 
-把粉笔网 2016–2026 年（浙江为粉笔上全部年份）国考、省考的**行测和申论**整理成本库的 Markdown：题干、选项、材料、插图、答案、解析齐全，
-并以粉笔为准逐卷核对已有试卷。
+把粉笔上合适的**行测和申论**真题抓下来，转成本库的 Markdown（题干、选项、材料、插图、答案、解析），推进 `main`。
+衡量进度只看一个数：**`main` 里来自粉笔的卷数**，每张任务卡回报都要带上它。
 
-**进度只看两个数，分科目统计**：粉笔目录卷数（分母）、已进入 `main` 且来源为粉笔的卷数（分子）。
-
-## 二、已定规则（不再讨论，代码和 agent 都按此执行）
+## 二、规则（已定，不再讨论）
 
 | 事项 | 决定 |
 |---|---|
-| 仓库 | 私有；粉笔题目、答案、解析全部收录（rights 文件 `coverAllCapturedSources: true`） |
-| 年份 | 默认 2016–2026；**浙江取粉笔上的全部年份，不设下限**（用户已定；代码统一由 `driver/year-policy.mjs` 判断，入队、校验器、policy.json 一致） |
-| 优先级 | 重点地区优先；免费卷优先，会员卷单列 |
-| 交白卷 | 允许，用于取得答案和解析；每卷最多开 1 次练习、交 1 次白卷，不作答 |
-| 停留 | 交卷前停留 15 秒 |
-| 替换已有卷 | 粉笔优先；粉笔题数比已有卷少则不替换 |
-| 粉笔也缺的题（"征集中"） | 标注后照常发布 |
-| 答案冲突 | 用粉笔答案，并注明另一来源的答案 |
-| 合入 main | 完整闸门通过后自动合入（`AUTO_MERGE=1`） |
-| 账号风险 | 用户接受；可以使用多个粉笔账号 |
-| 不做 | 绕过验证码或限流；购买；把登录 Profile、Cookie 放进 git |
-| 必须停 | 验证码、登录失效、一小时内累计 3 次 403/429 → 写 STOP，等用户处理 |
+| 范围 | 国考、省考；行测、申论；默认 2016–当年，**浙江取粉笔上全部年份** |
+| 目录 | 就用本库现有目录，不另开目录 |
+| 和本库冲突 | **一律以粉笔为准，直接覆盖**同一卷；答案、解析也用粉笔的，不另注明 |
+| 粉笔缺的题 | 本库有就用本库补；都没有就保留题位、标"粉笔暂未收录本题"，照常发布 |
+| 只有本库有的卷 | 保持不动 |
+| 合入 main | 闸门只查题数不倒退、图片齐全、格式正确；通过即自动推 `main`（`AUTO_MERGE=1`） |
+| 交白卷 | 允许；每卷最多开 1 次练习、交 1 次白卷，交卷前停 15 秒 |
+| 账号 | 风险用户接受；可以用多个账号 |
+| 必须停 | 验证码、登录失效、一小时内 3 次 403/429 → 写 STOP，等用户 |
+| 不做 | 绕验证码或限流；购买；把 Profile、Cookie 放进 git |
 
-## 三、现状（2026-10-21）
+## 三、流程（只有三步）
 
-- `main`：1191 份（申论 738、行测 453），**其中来自粉笔的 0 份**。
-- Dell 本地缓存：517 份行测已抓题并交白卷，但一份都没落进 `main`。
-- 代码：PR #104（单卷流水线 worker + 完整闸门 + 自动合入）已写好；本地含浏览器测试全部通过（Dell 上缺 Chromium 时 2 项浏览器测试会跳过，跳过不算通过）；尚未在真实站点跑过。
-- GitHub Actions 因计费/额度问题不运行，CI 红色不代表代码失败；以本地 `node --test` 为准。
+```text
+抓：目录 → 逐卷开练习、交白卷 → 原始数据存 work/fenbi/papers/
+转：原始数据 → Markdown + 图片（A 卷可发布，C 卷有缺陷待修）
+推：A 卷覆盖写进本库目录 → 闸门 → 推 main
+```
 
-| 环节 | 行测 | 申论 |
-|---|---|---|
-| 目录巡检 | 有；Dell 现有快照 34 个地区均为 1–4 页、无截断（GPT 核实），行测目录缺口需另行实站核验 | **无** |
-| 题目、材料、图片 | 有 | **无** |
-| 答案、解析 | 有（解析页 DOM + solution JSON） | **无**，需先确认交白卷后能否看到参考答案 |
-| 结构核对 | 有（题数、编号、选项、图片、占位文字，不合格判 C） | 校验规则有，无数据 |
-| 与已有卷比对 | 半成品：按题目内容配对、补继承答案、题数少不替换 | 无 |
-| 答案冲突标注 | **无**（现在直接用粉笔答案，不标注旧答案） | 无 |
-| 粉笔缺题 | 按规则保留题位、标注"粉笔暂未收录本题"后发布；缺题超过半数仍判 C；不会替换本库更完整的卷 | — |
-| 试卷身份 | 目录行按完整标题精确选择；练习页 JSON 的 paperId 与 sourceId 不一致则不交卷并隔离；已缓存卷用 verify-identity 离线核对 | — |
-| 落地进 main | 代码有，**从未跑通** | — |
+- 已抓到但没推的卷：`worker/land-cached.mjs` 一条命令完成"转 + 推"，不开浏览器。
+- 新卷：`worker/worker.mjs`（`SERVICE_MODE=worker`）一卷一卷走完三步。
 
 ## 四、分工
 
 | 角色 | 做什么 | 不做什么 |
 |---|---|---|
-| 用户 | 定规则、批准阶段切换、处理 STOP、登录账号 | — |
-| Claude Code（本仓库会话） | 写代码、开 PR、根据回报修问题、维护本文 | 不碰 Dell、不碰账号 |
-| GPT（总调度） | 在 Dell 上按第五节的任务卡派给本地 agent；收集回报；把回报原样转给用户和 Claude Code | 不自己设计方案、不加验证层、不新建分支或工具、不改任务卡范围 |
-| 本地 agent（Dell 上的 Claude Code 会话） | 一次只执行一张任务卡，照命令运行，按回报格式交结果 | 不扩大范围；任务卡没写的事一律不做，写进回报的"问题"一栏 |
+| 用户 | 批准下一张卡、登录账号、处理 STOP | — |
+| Claude Code | 改代码、修卡住的地方、维护本文 | 不碰 Dell |
+| GPT | 把任务卡原样派给 Dell agent，把回报原样转给用户 | 不加检查、不加前提、不改卡 |
+| Dell agent | 照卡执行命令，按格式回报 | 不扩大范围、不写新工具、不开审计分支 |
 
-**防止绕圈的纪律**：
-1. 每张任务卡只有一个交付物：回报格式里的那几项数字。没有数字的回报视为未完成。
-2. 遇到阻塞（命令报错、权限、缺文件）：停下，回报原样的错误输出，不自行设计替代方案。
-3. 只有一种情况允许 agent 改代码：阻塞当前命令的明显缺陷（如缓冲区太小），改动 ≤20 行、附测试、推到当前 PR 分支，并在回报里写明。其他改动交给 Claude Code。
-4. 第二节的规则不再论证。新的担忧写进回报，由用户决定。
-5. 不开新的 `audit/*`、`assetsqa/*` 一类分支，不写新的检查工具。
+纪律：
+1. 回报没有数字 = 没完成。
+2. 命令报错就停，贴原样输出，交给 Claude Code 修。
+3. 只允许 agent 改挡住当前命令的小缺陷（≤20 行、附测试）。
+4. 新的担忧写进回报"问题"一栏，不自行拦截落盘。
 
-## 五、任务卡（按顺序；上一张回报后用户批准才发下一张）
+## 五、任务卡（按顺序，上一张回报后用户批准再发下一张）
 
-### T1 落地实验（不开浏览器，不停服务，不 push）
+代码分支：`claude/bold-brahmagupta-lkou1e`（合并进 main 后改用 main）。
+
+### L1 首批行测落盘（现在就做；不开浏览器，不停服务）
 
 ```text
-用 PR #104 的最新提交建 scratch checkout，在 tools/fenbi 下 npm ci。
-从 origin/main 新建临时集成工作树（分支 fenbi-landing-trial）。把生产 work/fenbi/papers 复制一份作为输入。
-用 worker/publish.mjs 的 landMany 把全部已交卷的卷（t2 台账状态 complete / submitted_partial）转换并发布进临时工作树，
-然后本地提交，用 worker/gate.mjs 的 fullGate 对 origin/main 检查。不要 push。
-回报：
-  卷数（输入/已交卷）、A 数、C 数、新增几份、替换几份
-  promote 被拦原因及计数
-  C 的原因 Top 5（原因 + 卷数）
-  闸门 ok 与否；不通过时 reasons 前 10 条
-  总耗时
+1. 在 Dell 上 checkout 代码分支到一个独立目录，tools/fenbi 下 npm ci。
+2. 从 origin/main 新建集成工作树，分支 fenbi-integ：
+     git -C <main checkout> worktree add <INTEG> -B fenbi-integ origin/main
+3. 运行（RIGHTS_FILE 沿用 T1 用过的那份）：
+     FENBI_WORK_DIR=<生产 work/fenbi> INTEG_REPO=<INTEG> RIGHTS_FILE=<rights.json> PUSH=1 AUTO_MERGE=1 \
+       node worker/land-cached.mjs
+回报：最后一行 JSON 原文；main 里来自粉笔的卷数：git -C <INTEG> fetch -q origin main && git -C <INTEG> show origin/main:catalog/manifest.jsonl | grep -c 'Fenbi-priority structural check'。
+gate.ok=false 时不要改任何东西，原样贴 reasons，交给 Claude Code。
 ```
 
-**T1 结果（2026-10-21，Dell 回执）**：516 份缓存 → 落地 363（新增 340、替换 23），C 100 份：
-64 份粉笔与本库都缺题、1 份缺题且材料计数冲突、35 份技术缺陷（26 图片解码校验、6 选项标签、2 选项正文、1 复合）。
-闸门在大批量时因输出缓冲 1MB 报错，已修。另发现两处需修：缺题卷按规则应标注后发布（已实现，见下）；试卷身份只靠标题匹配（已加固，见 T1b）。
-
-### T1b 已缓存卷身份核对（不开浏览器）
+### L2 生产切到 worker，持续抓新卷并自动推 main
 
 ```text
-在 scratch checkout（PR #104 最新提交）的 tools/fenbi 下，对生产 work/fenbi 的一份副本运行：
-  FENBI_WORK_DIR=<副本> node worker/verify-identity.mjs
-先不加 --write。回报最后一行 JSON 原文，以及 identity-report.json 里 verdict=quarantine 的前 10 行。
-用户确认后，对生产 work/fenbi 运行一次 --write（只写本卷 document.json 的身份证据和 identity-quarantine.json），然后重跑 T1。
+重新生成候选（浙江不设年份下限）：node driver/build-candidates-live.mjs
+collector.env：SERVICE_MODE=worker、INTEG_REPO=<INTEG>、RIGHTS_FILE、PUSH=1、AUTO_MERGE=1、
+  WORKER_TABS=3、WORKER_DWELL_MS=15000、WORKER_MAX_PAPERS 依次 3 → 10 → 60
+停用 fenbi-publisher，重启 fenbi-pipeline。每档跑一轮。
+回报：worker.log 里每轮的 publish 行原文；本轮抓了几卷、推进 main 几卷；main 粉笔卷数；有无 STOP / ALERT。
 ```
 
-### T2 缺口报告（只读本地文件）
+### L3 C 卷修复（Claude Code）
+
+L1 回报里的 C 卷按原因修代码（图片解码、选项标号、选项正文等），修完重跑 L1 的命令把它们补推上去。
+
+### S1 申论样本（为写代码准备）
 
 ```text
-读 work/fenbi/catalog-live-*/ 和 p0-discover-*/ 下的目录快照，按 地区 × 年份 统计粉笔行测卷数（去重 sourceId），
-与 main 的 catalog/manifest.jsonl 对比。
-回报一张表：地区、粉笔卷数、本库行测卷数、已缓存卷数、巡检页数、是否被页数截断（pageLimitApplied）；最后一行合计。
+用现有账号打开 1 份已做过的申论题目页和解析页，不交卷、不开新练习。
+保存去掉账号信息的页面 HTML（题目、材料、解析区）和解析页加载的题目/答案 JSON 到 work/fenbi/shenlun-sample/。
+同时只读巡检一次申论目录，保存目录快照。
+回报：文件路径和大小；答案、解析在页面里的位置；申论目录卷数。
 ```
 
-### T3 Claude Code 修复 → 用户合并 #104
+### S2 申论支持（Claude Code）→ S3 申论试跑
 
-Claude Code 根据 T1 回报修卡住落地的原因，并补上答案冲突标注。用户合并 PR 后进入 T4。
+按 S1 样本写申论的抓取、转换、渲染；试跑按 L2 的 3 → 10 → 60。
 
-### T4 生产切换到 worker 并自动合入
-
-前提：T1b 的身份核对结果已回报，且用户已就"身份无法离线证明的卷是否合入"做出决定。
+## 六、回报格式
 
 ```text
-按 docs/WORKFLOW-THINKING.md 第六节部署：main checkout 更新；集成工作树从 origin/main 新建 fenbi-integ；
-collector.env 设 SERVICE_MODE=worker、INTEG_REPO、RIGHTS_FILE、PUSH=1、AUTO_MERGE=1、WORKER_TABS=3、WORKER_DWELL_MS=15000、WORKER_MAX_PAPERS=3；
-停用 fenbi-publisher；重启 fenbi-pipeline。第一轮会先把已缓存的卷补落地并合入 main。
-回报：worker.log 里 catchup_land 和 publish 两行原文；main 新增的粉笔卷数；ALERT / ALERT-merge-gate / STOP 是否存在。
-```
-
-### T5 行测补巡检 + 实跑
-
-```text
-对 T2 中被截断的地区，用 MAX_PAGES_PER_REGION=30 重新巡检（只读，不开练习）。
-然后 WORKER_MAX_PAPERS 依次 3 → 10 → 60，每档跑一轮。
-每档回报：worker.log 每卷一行（status、题数/应有、答案数、图片数、init 次数、耗时）的统计，
-最后一行汇总的 papersPerHour、landed、mainPushes；任何风控信号。
-```
-
-### T6 申论样本（为写代码准备）
-
-```text
-用现有账号打开 1 份已做过的申论题目页和它的解析页，不交卷、不开新练习。
-保存去掉账号信息的页面 HTML（题目区、材料区、解析区）到 work/fenbi/shenlun-sample/，
-另存解析页加载时的 JSON 响应（只保留和题目/答案/解析相关的接口）。
-回报：文件路径、每个文件的大小，以及答案和解析在页面里的位置（选择器或 JSON 字段名）。
-```
-
-### T7 Claude Code 写申论支持 → 试跑
-
-申论目录巡检、抓取、解析、答案合并、Markdown 渲染。试跑按 T5 的 3 → 10 → 60。
-
-### T8 C 卷修复队列（LLM agent，T4 稳定后）
-
-```text
-对 C 卷逐卷修复结构问题（漏题、编号、选项、图片引用）。
-硬性约束：题干、选项、答案、解析的原文字符不得改动，只允许调整结构；
-修复后用脚本比对修复前后的正文字符序列，一致才提交；不一致的卷退回。
-```
-
-## 六、回报格式（所有任务卡通用）
-
-```text
-任务：T?
+任务：L1 / L2 / …
 结果：完成 / 阻塞
-数字：（任务卡要求的各项）
-问题：（没有就写"无"）
+数字：（卡上要求的各项）+ main 粉笔卷数
+问题：（没有写"无"）
 ```

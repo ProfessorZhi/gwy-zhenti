@@ -164,3 +164,20 @@ test('the gate refuses papers without a matching grade-A receipt, wrong counts, 
   const g2 = await fullGate({ repo: w.integ, base: 'origin/main', candidateRoot: path.join(w.integ, 'work/fenbi/batch-ingest'), rightsFile: w.rightsFile });
   assert.match(g2.reasons.join('\n'), /no-matching-receipt/u);
 });
+
+test('land-cached: lands only submitted cached papers, then publishes and fast-forwards main', async t => {
+  const { landCached } = await import('../worker/land-cached.mjs');
+  const w = await world(t);
+  const work = path.join(w.root, 'work');
+  await fs.mkdir(path.join(work, 'papers/never-submitted'), { recursive: true });
+  await fs.mkdir(path.join(work, 't2-20261019'), { recursive: true });
+  await fs.writeFile(path.join(work, 't2-20261019/ledger.json'), JSON.stringify({ papers: { 'never-submitted': { status: 'captured' } } }));
+  await land(w);
+  const before = mainHead(w);
+  const r = await landCached({ work, repo: w.integ, rightsFile: w.rightsFile, push: true, autoMerge: true });
+  assert.equal(r.papers, 0, 'unsubmitted papers are not landed');
+  assert.equal(r.gate.ok, true, JSON.stringify(r.gate.reasons));
+  assert.equal(r.pushedMain, true);
+  assert.notEqual(mainHead(w), before);
+  assert.equal(typeof r.seconds, 'number');
+});
