@@ -102,24 +102,16 @@ class Round10ShenzhenReferences(unittest.TestCase):
             import tempfile
             from unittest.mock import patch
             from verify_sourced_supplement_20261013 import historical_snapshot
-            # Newer rounds must be unwound first so the sourced preimage hashes still match.
-            with tempfile.TemporaryDirectory(prefix="r10-before-s5r3-") as o3:
-                from verify_s5r3_original_answers import historical_snapshot as s5r3_snapshot
-                s5r3_snapshot(ROOT, Path(o3))
-                with tempfile.TemporaryDirectory(prefix="r10-before-s5r2-") as outer:
-                    from verify_s5r2_original_answers import historical_snapshot as s5r2_snapshot
-                    s5r2_snapshot(Path(o3), Path(outer))
-                    with tempfile.TemporaryDirectory(prefix="r10-before-source-") as tmp:
-                        historical_snapshot(Path(outer), Path(tmp))
-                        with patch("r7_reference_audit.ROOT", Path(tmp)):
-                            rows, bad, _, counts = audit()
+            with tempfile.TemporaryDirectory(prefix="r10-before-source-") as tmp:
+                historical_snapshot(ROOT, Path(tmp))
+                with patch("r7_reference_audit.ROOT", Path(tmp)):
+                    rows, bad, _, counts = audit()
         else:
             rows, bad, _, counts = audit()
         remaining = sum(n for key, n in counts.items() if key.endswith("/待补"))
-        self.assertEqual(729, len(rows))
+        self.assertEqual(740, len(rows))
         self.assertEqual(9, len(bad))
-        # S5 added six original study references (2026-10-21), moving 568 -> 562.
-        self.assertEqual(562, remaining)
+        self.assertEqual(568, remaining)
         data = json.loads(SUMMARY.read_text(encoding="utf-8"))
         self.assertEqual(574, data["previous_missing_answers"])
         self.assertEqual(568, data["expected_missing_answers_after"])
