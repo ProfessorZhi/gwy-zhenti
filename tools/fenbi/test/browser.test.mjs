@@ -421,3 +421,24 @@ test('captureDom records the declared route parameter without widening the guard
   assert.equal(requestPolicy({ url: 'https://evil.invalid/x', navigation: true }), 'blockedNavigation');
   assert.equal(requestPolicy({ url: 'https://tiku.fenbi.com/api/xingce/papers', method: 'GET' }), null);
 });
+
+test('asset collection stops at the first 401/403/429/503 and leaves the rest pending', async () => {
+  for (const code of [401, 403, 429, 503]) {
+    const assetDir = await mkdtemp(path.join(os.tmpdir(), 'fenbi-assets-halt-'));
+    const requests = [];
+    const page = {
+      context: () => ({ request: { get: async url => {
+        requests.push(url);
+        return { status: () => url.includes('/b.png') ? code : 200, headers: () => ({ 'content-type': 'image/png' }), body: async () => Buffer.from(url), dispose: async () => {} };
+      } } }),
+      evaluate: async () => ({ width: 1, height: 1 }),
+    };
+    const document = { url: 'https://www.fenbi.com/spa/tiku', html: '', assets: ['a', 'b', 'c', 'd'].map(n => ({ url: `https://img.fbstatic.cn/${n}.png` })) };
+    try {
+      const result = await downloadAssets(page, document, assetDir);
+      assert.equal(requests.length, 2, `status ${code}: no request after the failing one`);
+      assert.deepEqual(result.map(r => r.status), ['downloaded', code === 401 || code === 403 ? 'unauthorized' : 'http_error', 'pending', 'pending']);
+      assert.equal(result[1].httpStatus, code);
+    } finally { await rm(assetDir, { recursive: true, force: true }); }
+  }
+});

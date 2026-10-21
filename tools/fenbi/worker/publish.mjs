@@ -24,6 +24,18 @@ export async function landPaper({ papersDir, name, repo, rightsFile }) {
   return { row, promote };
 }
 
+// 补落地：已交卷的卷里，图片后来才补齐（或上次落地失败）的，重新转换；未变化的候选直接复用，开销很小。最后统一发布一次。
+export async function landMany({ papersDir, names, repo, rightsFile }) {
+  const real = await fs.realpath(repo), source = await fs.realpath(papersDir), dest = candidateRootOf(real);
+  const out = { A: 0, C: 0, errors: 0, promote: null };
+  for (const name of names) {
+    try { (await ingestFolder({ source, repo: real, dest, name, write: true })).grade === 'A' ? out.A++ : out.C++; }
+    catch { out.errors++; }
+  }
+  if (out.A) out.promote = await promoteAll({ candidateRoot: dest, repoRoot: repo, rightsFile, allowReplace: true, apply: true });
+  return out;
+}
+
 export async function commitContent(repo, message) {
   if (!(await git(repo, 'status', '--porcelain', '--', ...CONTENT))) return null;
   // git add 对不存在的路径会报错（例如还没有任何省考卷），只传存在的。

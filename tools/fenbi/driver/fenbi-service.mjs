@@ -235,6 +235,11 @@ try {
       if (w.code !== 0) { await backoff('worker_exit', { code: w.code, stderr: w.stderr.slice(-200) }); continue; }
       if (w.summary?.stopReason === 'consecutive_failures') { await backoff('worker_consecutive_failures'); continue; }
       if (w.summary?.stopReason === 'profile_locked') { await backoff('profile_locked'); continue; }
+      // 图片在单卷流程里遇到 401/403/429/503 会立即停下、留作 pending；这里按旧的只读补图步骤补齐，下一轮 worker 开头补落地。
+      const wa = await step('assets', DRIVER + '/t2-asset-pass.mjs', [], {}, 25 * 60e3);
+      const gwa = await riskGate('assets', wa);
+      if (gwa === 'stop') break;
+      if (gwa === 'backoff') { await backoff('assets_http'); continue; }
       state.rounds += 1;
       state.newPapers += w.newPapers;
       state.lastRoundAt = new Date().toISOString();

@@ -300,6 +300,9 @@ export async function downloadAssets(page, document, assetDir) {
   const result = [];
   let totalBytes = 0;
   const candidates = assetCandidates(document);
+  // A 401/403/429/503 ends this batch at once: the rest stay pending for a later authorized pass,
+  // and the failing record carries httpStatus so the caller can count it as a risk signal.
+  let halted = false;
   for (const [index, value] of candidates.entries()) {
     let url;
     try { url = new URL(value, document.url); } catch { result.push({ status: 'rejected_url' }); continue; }
@@ -308,11 +311,13 @@ export async function downloadAssets(page, document, assetDir) {
     }
     const record = { url: safeAssetUrl(url.toString()), status: 'pending' };
     result.push(record);
+    if (halted) continue;
     if (index >= MAX_ASSETS || totalBytes >= MAX_TOTAL_ASSET_BYTES) { record.status = 'limit_exceeded'; continue; }
     let response;
     try {
       response = await page.context().request.get(url.toString(), { maxRedirects: 0, timeout: 45000 });
-      if (response.status() === 401 || response.status() === 403) { record.status = 'unauthorized'; continue; }
+      if (response.status() === 401 || response.status() === 403) { record.status = 'unauthorized'; record.httpStatus = response.status(); halted = true; continue; }
+      if (response.status() === 429 || response.status() === 503) { record.status = 'http_error'; record.httpStatus = response.status(); halted = true; continue; }
       if (response.status() < 200 || response.status() >= 300) { record.status = 'http_error'; continue; }
       const headers = response.headers();
       const type = (headers['content-type'] ?? '').split(';')[0].toLowerCase();

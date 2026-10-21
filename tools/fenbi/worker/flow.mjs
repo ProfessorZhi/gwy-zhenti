@@ -273,8 +273,13 @@ export async function runPaper(slot, item, env) {
     doc.assets = collectAssetUrls(doc).map(u => prev.get(u) || { url: u, status: 'pending' });
     const assets = await downloadAssets(qpage, doc, path.join(outDir, 'assets'));
     rec.assets = assets.filter(a => a.status === 'downloaded').length;
-    // 图片接口 401/403 不经过页面响应事件，按 403 计入风控（与 t2-asset-pass 一致）。
-    env.risk.http403 += assets.filter(a => a.status === 'unauthorized').length;
+    // 图片走浏览器上下文的 API 客户端，不经过页面响应事件；遇到 401/403/429/503 时 downloadAssets 已立即停下，
+    // 这里按 t2-asset-pass 的口径计入风控：401 视同登录失效（硬停），403、429/503 计入一小时阈值。
+    for (const a of assets) {
+      if (a.httpStatus === 401) env.risk.loginLost++;
+      else if (a.httpStatus === 403) env.risk.http403++;
+      else if (a.httpStatus === 429 || a.httpStatus === 503) env.risk.http429++;
+    }
 
     const verdict = await validateDocument(doc, { assetRoot: path.join(outDir, 'assets') });
     await writeAtomic(path.join(outDir, 'document.json'), JSON.stringify(doc));

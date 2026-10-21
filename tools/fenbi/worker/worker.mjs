@@ -18,7 +18,7 @@ import { randomUUID } from 'node:crypto';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { buildQueue, takeNext } from './queue.mjs';
 import { createGate, createMutex, installRoutes, watchRisk, runPaper } from './flow.mjs';
-import { landPaper, publish } from './publish.mjs';
+import { landPaper, landMany, publish } from './publish.mjs';
 
 const B = path.resolve(process.env.FENBI_BASE || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..'));
 const WORK = path.resolve(process.env.FENBI_WORK_DIR || path.join(B, 'work/fenbi'));
@@ -72,6 +72,20 @@ const quarantine = (await readJson(RUN + '/identity-quarantine.json')) || {};
 const queue = buildQueue({ cached, candidates: (await readJson(CAND, { candidates: [] })).candidates || [], t2Ledger, captureLedger,
   quarantined: new Set(Object.keys(quarantine).filter(k => k !== 'schemaVersion' && k !== 'at')) });
 queue.length = Math.min(queue.length, MAX_PAPERS);
+// 先补落地已交卷、但上次没能发布的卷（例如图片在风控退避后才补齐），队列为空时也做。
+if (INTEG) {
+  const submitted = cached.map(c => c.key).filter(k => ['complete', 'submitted_partial'].includes(t2Ledger.papers[k]?.status));
+  try {
+    const r = await landMany({ papersDir: PAPERS, names: submitted, repo: INTEG, rightsFile: RIGHTS });
+    await log('catchup_land', { papers: submitted.length, A: r.A, C: r.C, errors: r.errors, promoted: r.promote?.promoted ?? 0 });
+    if (r.promote?.promoted) {
+      const p = await publish({ repo: INTEG, rightsFile: RIGHTS, push: PUSH, autoMerge: AUTO_MERGE,
+        message: `integrate(fenbi): worker catch-up ${new Date().toISOString().slice(0, 16)}Z` });
+      await log('publish', { committed: p.committed, pushedBranch: p.pushedBranch, pushedMain: p.pushedMain, error: p.error || null,
+        gate: p.gate ? { ok: p.gate.ok, papers: p.gate.papers, reasons: p.gate.reasons.slice(0, 5) } : null });
+    }
+  } catch (e) { await log('catchup_error', { error: String(e.stderr || e.message).slice(0, 200) }); }
+}
 if (!queue.length) { final({ ok: 0, fail: 0, remaining: 0, stopReason: 'empty_queue', risk: { captcha: 0, loginLost: 0, http403: 0, http429: 0 } }); process.exit(0); }
 
 // 两本台账串行写，避免多个标签页同时改文件。
