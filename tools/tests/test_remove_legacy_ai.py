@@ -62,8 +62,8 @@ class RemovedLegacyAI(unittest.TestCase):
                                  f'{row["path"]}:{n}')
 
     def test_manifest_matches_files_and_receipt(self):
-        self.assertEqual(1243, len(self.manifest))
-        self.assertEqual(1243, len({r["path"] for r in self.manifest.values()}))
+        self.assertEqual(1291, len(self.manifest))
+        self.assertEqual(1291, len({r["path"] for r in self.manifest.values()}))
         for row in self.rows:
             entry = self.manifest[row["path"]]
             for key in ("sha256", "bytes", "answer_blocks", "has_answer_content",
@@ -93,9 +93,9 @@ class RemovedLegacyAI(unittest.TestCase):
                     found.append(p.relative_to(ROOT).as_posix())
         self.assertEqual([], found)
 
-    def test_fenbi_shenlun_38_and_total_1243(self):
+    def test_fenbi_shenlun_and_total_papers(self):
         papers = [p for top in ("国考", "省考") for p in (ROOT / top).rglob("*.md")]
-        self.assertEqual(1243, len(papers))
+        self.assertEqual(1291, len(papers))
         fenbi = 0
         for p in papers:
             if "申论" not in p.name:
@@ -103,7 +103,7 @@ class RemovedLegacyAI(unittest.TestCase):
             head = p.read_text(encoding="utf-8")[:4000]
             if "spa.fenbi.com" in head or "源试卷ID" in head or "fenbi" in head.lower():
                 fenbi += 1
-        self.assertEqual(38, fenbi)
+        self.assertEqual(130, fenbi)
 
 
 if __name__ == "__main__":
