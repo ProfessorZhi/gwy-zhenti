@@ -228,6 +228,8 @@ try {
 
     // 3') 单卷流水线：一次运行处理到 WORKER_MAX_PAPERS 卷或 WORKER_MAX_MS 为止，结束后同样先过风控。
     if (MODE === 'worker') {
+      // 申论候选每轮重算：已抓集合来自本地缓存，重算是幂等的，也能自动吸收新发现的目录。
+      await step('shenlun-candidates', DRIVER + '/build-shenlun-candidates.mjs', [], {}, 2 * 60e3);
       const w = await step('worker', WORKER, [], { CANDIDATES_FILE: CAND, WORKER_MAX_MS: String(WORKER_MAX_MS) }, WORKER_MAX_MS + 15 * 60e3);
       const gw = await riskGate('worker', w);
       if (gw === 'stop') break;

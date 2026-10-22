@@ -30,6 +30,7 @@ const STOP = WORK + '/STOP';
 const LOG = WORK + '/worker.log';
 const MERGE_ALERT = WORK + '/ALERT-merge-gate';
 const CAND = process.env.CANDIDATES_FILE || WORK + '/candidates-live.json';
+const CAND_SHENLUN = process.env.SHENLUN_CANDIDATES_FILE || WORK + '/shenlun-candidates.json';
 
 const TABS = Number(process.env.WORKER_TABS || 3);
 const DWELL_MS = Number(process.env.WORKER_DWELL_MS || 15000);
@@ -62,15 +63,22 @@ const t2Ledger = (await readJson(T2_LEDGER)) || { schemaVersion: 1, papers: {} }
 const captureLedger = (await readJson(CAPTURE_LEDGER)) || { schemaVersion: 1, targets: {} };
 const cached = [];
 for (const key of (await fs.readdir(PAPERS).catch(() => [])).sort()) {
+  // 采集在写 run-summary 之前就失败时，outDir 已建好但里面是空的。这种目录不能算「已抓」：
+  // 目录名末尾的数字会被当成 sourceId，这一卷于是被永久挡在队列外，重试不了。
   const run = await readJson(path.join(PAPERS, key, 'run-summary.json'));
-  const sid = String(run?.sourceId || (key.match(/(\d+)$/) || [])[1] || '');
+  if (!run) continue;
+  const sid = String(run.sourceId || (key.match(/(\d+)$/) || [])[1] || '');
   if (!sid) continue;
   const hasDoc = await exists(path.join(PAPERS, key, 'document.json'));
-  cached.push({ key, sourceId: sid, pageUrl: hasDoc ? run?.pageUrl || null : null });
+  cached.push({ key, sourceId: sid, subject: run?.subject === 'shenlun' ? 'shenlun' : 'xingce',
+    pageUrl: hasDoc ? run?.pageUrl || null : null });
 }
 const quarantine = (await readJson(RUN + '/identity-quarantine.json')) || {};
 const quarantinedSids = new Set(Object.keys(quarantine).filter(k => k !== 'schemaVersion' && k !== 'at'));
-const queue = buildQueue({ cached, candidates: (await readJson(CAND, { candidates: [] })).candidates || [], t2Ledger, captureLedger,
+// 行测候选排在申论前面：行测要交卷、占浏览器时间长，先清掉它再走只读的申论。
+const xingceCandidates = (await readJson(CAND, { candidates: [] })).candidates || [];
+const shenlunCandidates = (await readJson(CAND_SHENLUN, { candidates: [] })).candidates || [];
+const queue = buildQueue({ cached, candidates: [...xingceCandidates, ...shenlunCandidates], t2Ledger, captureLedger,
   quarantined: new Set(Object.keys(quarantine).filter(k => k !== 'schemaVersion' && k !== 'at')) });
 queue.length = Math.min(queue.length, MAX_PAPERS);
 // 先补落地已交卷、但上次没能发布的卷（例如图片在风控退避后才补齐），队列为空时也做。
@@ -105,7 +113,9 @@ const ledger = {
     quarantinedSids.add(String(item.sourceId));
   }),
   markCapture: (item, status, extra = {}) => ledgerLock(async () => {
-    captureLedger.targets[item.sourceId] = { status, key: item.key, area: item.area, year: item.year, at: new Date().toISOString(), by: 'worker', ...extra };
+    // 台账按「科目:sourceId」分开写：行测与申论的 sourceId 空间未必全局唯一，混写会互相顶掉。
+    captureLedger.targets[`${item.subject || 'xingce'}:${item.sourceId}`] = { status, key: item.key, area: item.area,
+      year: item.year, subject: item.subject || 'xingce', at: new Date().toISOString(), by: 'worker', ...extra };
     await writeJson(CAPTURE_LEDGER, captureLedger);
   }),
 };
@@ -186,8 +196,11 @@ try {
         ans: rec.answers, img: rec.assets, init: rec.initCalls ?? null, pages: rec.catalogPages ?? null, retry: rec.renderRetry || null,
         ms: rec.elapsedMs, err: rec.error || null });
       if (risk.captcha || risk.loginLost || risk.http403 || risk.http429) { stop('risk'); return; }
+      // 目录定位类失败是单卷问题（翻页漂移、同页同年同卷型的多卷、会员行），不是风控信号：
+      // 真正的风控由 watchRisk 与上面的 risk 计数负责。这类卷相邻出现时不该把整轮采集停掉。
+      const localized = new Set(['ROW_NOT_FOUND', 'ROW_MISMATCH', 'PAPER_ID_MISMATCH', 'MEMBER_ROW', 'CATEGORY_NOT_FOUND']);
       if (rec.status === 'complete' || rec.status === 'submitted_partial' || rec.status === 'not_blank') consecutiveFailures = 0;
-      else if (++consecutiveFailures >= 3) { stop('consecutive_failures'); return; }
+      else if (!localized.has(rec.status) && ++consecutiveFailures >= 3) { stop('consecutive_failures'); return; }
       // 落地和推送排在独立的串行链上，不占用这个标签页。
       if (rec.status === 'complete' || rec.status === 'submitted_partial') publishLock(async () => { await land(item); await flush(); });
     }

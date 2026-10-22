@@ -144,6 +144,8 @@ export function absorbPayload(doc, payload, { url = '', subject, fieldMap = {} }
       options: opts, materialIds: unique(materialIds), answerHtml: answerOf(q, opts, fieldMap, payload),
       explanationHtml: text(pick(q, 'explanationHtml', ['explanationHtml', 'explanation', 'analysis'], fieldMap)),
       requirementsHtml: text(pick(q, 'requirementsHtml', ['requirementsHtml', 'requirements'], fieldMap)),
+      // 源站题型名（单选题/多选题/判断题/论述题…）：校验要靠它区分「选择题缺选项」和「主观题本就没有选项」。
+      typeName: text(pick(q, 'typeName', ['typeName', 'questionType'], fieldMap)),
     };
     upsert(doc, 'questions', item);
   }

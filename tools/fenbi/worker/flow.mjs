@@ -8,12 +8,15 @@ import { setTimeout as sleep } from 'node:timers/promises';
 import { requestPolicy, downloadAssets } from '../src/browser.mjs';
 import { sanitizeHtml } from '../src/privacy.mjs';
 import { parseFenbiExamDom } from '../src/dom.mjs';
+import { parseShenlunView, buildShenlunDocument } from '../src/dom-shenlun.mjs';
 import { createDocument, absorbPayload, collectAssetUrls } from '../src/model.mjs';
 import { validateDocument } from '../src/validate.mjs';
 import { parseAnalysisDom, mergeAnalysisDom, mergeSolutionJson, isBlank } from './analysis-merge.mjs';
 import { pickRow, collectPaperIds, bindingStatus } from './identity.mjs';
+import { variantOf } from './queue.mjs';
 
 export const ENTRY = 'https://www.fenbi.com/spa/tiku/guide/realTest/xingce/xingce';
+export const ENTRY_SHENLUN = 'https://www.fenbi.com/spa/tiku/guide/shenlunList/shenlun/1000';
 const QSEL = 'app-ti[data-question-key]';
 const fail = (code, message = code) => Object.assign(new Error(message), { code });
 const writeAtomic = async (file, text) => { const tmp = file + '.tmp'; await fs.writeFile(tmp, text, { mode: 0o600 }); await fs.rename(tmp, file); };
@@ -218,6 +221,7 @@ async function submitBlank(qpage) {
  * 返回记录 { status, ... }；status 为 complete / submitted_partial / not_blank / 失败码。
  */
 export async function runPaper(slot, item, env) {
+  if (item.subject === 'shenlun') return runShenlunPaper(slot, item, env);
   const t0 = Date.now();
   const rec = { key: item.key, sid: item.sourceId, kind: item.kind, status: 'pending', answers: 0, explanations: 0, assets: 0 };
   const outDir = path.join(env.papersDir, item.key);
@@ -338,6 +342,264 @@ export async function runPaper(slot, item, env) {
     try { env.ctx.off('response', onCtxResp); } catch {}
     if (qpage) { try { qpage.off('response', onResp); } catch {} }
     if (qpage && qpage !== slot.page) await qpage.close().catch(() => {});
+    rec.elapsedMs = Date.now() - t0;
+  }
+  return rec;
+}
+
+// ---------- 申论：只读详情页 ----------
+// 不建练习、不答题、不交卷、不购买、不解锁；只在目录里点真实行进入详情，读取页面现成的
+// 给定材料、题面、参考答案与「考点/来源」。页面一次只渲染一题，靠 .questions-anchors 切题。
+
+async function shenlunAnchors(page) {
+  return page.evaluate(() => [...new Set(
+    [...document.querySelectorAll('.questions-anchors *')]
+      .map(element => (element.innerText || '').replace(/\s+/g, ' ').trim())
+      .filter(text => /^\d+题$/u.test(text))
+      .map(text => Number(text.replace('题', '')))
+  )].sort((a, b) => a - b));
+}
+
+// 页面上已经渲染出来的「做题单元」：每个含 .ti-content 的 .resizable-container 是一题
+// （材料栏 + 题面 + 参考答案/解析）。整卷式页面一次就给出全部题目，切换式每切一次多一个。
+async function shenlunUnits(page) {
+  return page.evaluate(() => [...document.querySelectorAll('.resizable-container')]
+    .filter(element => element.querySelector('.ti-content'))
+    .map((element, index) => {
+      const clone = element.cloneNode(true);
+      const images = [...element.querySelectorAll('img')], copies = [...clone.querySelectorAll('img')];
+      images.forEach((image, at) => {
+        const url = image.currentSrc || image.getAttribute('src') || image.getAttribute('data-src');
+        if (url && copies[at]) copies[at].setAttribute('src', url);
+      });
+      const keyed = element.querySelector('[data-question-key]');
+      return { key: (keyed && keyed.getAttribute('data-question-key')) || `dom-index-${index + 1}`, html: clone.outerHTML };
+    }));
+}
+
+async function switchShenlunQuestion(page, number) {
+  const clicked = await page.evaluate(target => {
+    const norm = text => String(text || '').replace(/\s+/g, ' ').trim();
+    const element = [...document.querySelectorAll('.questions-anchors *')].find(item => norm(item.innerText) === `${target}题`);
+    if (!element) return false;
+    element.click();
+    return true;
+  }, number);
+  if (!clicked) return false;
+  await sleep(2500);
+  await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+  return true;
+}
+
+async function openShenlunDetail(slot, item, env, rec) {
+  const { gate } = env, page = slot.page;
+  await gate();
+  await page.goto(ENTRY_SHENLUN, { waitUntil: 'domcontentloaded', timeout: 45000 });
+  await sleep(2500);
+  await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+  const picked = await page.evaluate(name => {
+    const norm = text => String(text || '').replace(/\s+/g, ' ').trim();
+    const element = [...document.querySelectorAll('.category1-btn')].find(item => norm(item.innerText) === name);
+    if (!element || element.offsetParent === null) return false;
+    element.click();
+    return true;
+  }, item.region || item.label);
+  if (!picked) throw fail('CATEGORY_NOT_FOUND');
+  await sleep(2500);
+  await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+
+  const rows = page.locator('li.list-item-container');
+  const turnPage = async target => {
+    const turned = await page.evaluate(number => {
+      const element = [...document.querySelectorAll('div.paging div.item')].find(item => String(item.innerText).trim() === String(number));
+      if (!element || element.offsetParent === null) return false;
+      element.click();
+      return true;
+    }, target);
+    if (!turned) return false;
+    await sleep(2500);
+    await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+    return true;
+  };
+  // 行的派生特征：只读年份与卷型标记，不读标题原文。
+  const rowTraits = () => page.evaluate(() => [...document.querySelectorAll('li.list-item-container')].map(element => {
+    const text = (element.innerText || '').replace(/\s+/g, ' ').trim();
+    const years = [...new Set([...text.matchAll(/\b(19|20)\d{2}\b/g)].map(match => Number(match[0])))].filter(year => year >= 2000 && year <= 2026);
+    // 上海把卷型写在括号里（「（B、定向选调卷）」「（B、集中选调卷）」），不带「卷/类」二字，一并认。
+    return { years, a: /A卷|A类|（A[、,]/u.test(text), b: /B卷|B类|（B[、,]/u.test(text), c: /C卷|C类|（C[、,]/u.test(text),
+      xingzheng: /行政执法/u.test(text), township: /乡镇/u.test(text), county: /县级|县乡|旗县/u.test(text),
+      fushengji: /副省级/u.test(text), dishiji: /地市级/u.test(text),
+      member: /会员|VIP|付费|购买|开通|试看|解锁/u.test(text) };
+  }));
+  // 卷型必须真的核对：早先只认 A/B/C，行政执法卷于是在同年里点到相邻的 B 卷（PAPER_ID_MISMATCH）。
+  const matches = (traits, year, variant) => traits.years.includes(Number(year))
+    && (variant === 'a' ? traits.a
+      : variant === 'b' ? traits.b
+      : variant === 'c' ? traits.c
+      : variant === 'xingzheng' ? traits.xingzheng
+      : variant === 'township' ? traits.township
+      : variant === 'county' ? traits.county
+      : variant === 'fushengji' ? traits.fushengji
+      : variant === 'dishiji' ? traits.dishiji
+      : true);
+
+  let index = null, catalogPages = 0;
+  // 卷型区分不了同年多卷时（申论目录不给标题：unknown；或整年都是「联考」卷：liankao/tongkao），
+  // 候选记下的「第几页第几行」既没法核对、也容易错位（上海 2018 就整体挪了一行）。
+  // 这种卷改用「同地区同年候选顺序 ↔ 目录行顺序」配对定位。
+  const generic = new Set(['unknown', 'liankao', 'tongkao']);
+  const sequential = generic.has(item.identity.variant) && Number.isInteger(item.yearRank);
+  if (Number.isInteger(item.page) && Number.isInteger(item.rowIndex) && !sequential) {
+    // 目录采集时记下了「第几页第几行」。直接定位，点前核对年份/卷型，对不上就不点。
+    for (let p = 1; p <= item.page; p++) if (p > 1 && !(await turnPage(p))) break;
+    catalogPages = item.page;
+    const traits = (await rowTraits())[item.rowIndex];
+    if (traits && matches(traits, item.year, item.identity.variant)) index = item.rowIndex;
+    else rec.catalogDrift = 'page-row-drifted';
+  }
+  if (index === null) {
+    // 目录会更新：候选记下的「第几页第几行」可能整体错位。退回按年份（+卷型）重新扫描全部分页。
+    let seen = 0;
+    for (let p = 1; p <= 8 && index === null; p++) {
+      if (!(await turnPage(p))) break;
+      catalogPages = p;
+      const traits = await rowTraits();
+      if (!traits.length) break;
+      const hits = traits.map((traitsOne, i) => matches(traitsOne, item.year, item.identity.variant) ? i : -1).filter(i => i >= 0);
+      if (sequential) {
+        for (const hit of hits) {
+          if (seen === item.yearRank) { index = hit; break; }
+          seen++;
+        }
+      } else {
+        if (hits.length > 1) throw fail('AMBIGUOUS_ROW');
+        if (hits.length) index = hits[0];
+      }
+    }
+  }
+  if (index === null) throw fail('ROW_NOT_FOUND');
+  if ((await rowTraits())[index]?.member) throw fail('MEMBER_ROW');
+  rec.catalogPages = catalogPages;
+  await gate();
+  rec.clickedAt = Date.now();
+  const target = rows.nth(index);
+  // 有的年份标题元素不存在，退化到点整行。
+  await target.locator('.list-item-title').first().click({ timeout: 15000 })
+    .catch(async () => { await target.click({ timeout: 15000 }); });
+  for (let waited = 0; waited < 30000; waited += 1000) {
+    if (await page.locator('.ti-content').count().catch(() => 0) > 0) {
+      await page.waitForLoadState('networkidle', { timeout: 20000 }).catch(() => {});
+      return page;
+    }
+    await sleep(1000);
+  }
+  throw fail('DETAIL_NOT_REACHED');
+}
+
+async function runShenlunPaper(slot, item, env) {
+  const t0 = Date.now();
+  const rec = { key: item.key, sid: item.sourceId, kind: 'new', subject: 'shenlun',
+    status: 'pending', answers: 0, explanations: 0, assets: 0 };
+  const outDir = path.join(env.papersDir, item.key);
+  let qpage = null, captured = false;
+  // 详情页地址带 paperId（…/ti/view/paper/…?paperId=7736778&…），用它核对"打开的确实是指定那卷"。
+  // 监听要在导航之前挂上：详情页是在 openShenlunDetail 里就完成的，返回后再挂会漏掉这次导航。
+  const paperIds = new Set();
+  const collectId = url => {
+    try {
+      const id = new URL(url).searchParams.get('paperId');
+      if (id && /^\d+$/u.test(String(id))) paperIds.add(String(id));
+    } catch { /* 非法 URL 交给绑定核对处理 */ }
+  };
+  const onRequest = request => collectId(request.url());
+  slot.page.on('request', onRequest);
+  try {
+    await fs.mkdir(outDir, { recursive: true, mode: 0o700 });
+    qpage = await env.openLock(() => openShenlunDetail(slot, item, env, rec));
+    if (qpage !== slot.page) qpage.on('request', onRequest);
+    rec.pageUrl = qpage.url();
+    collectId(rec.pageUrl);
+
+    // 申论详情页有两种形态：切换式（一次只渲染一题，靠 .questions-anchors 点「N题」换页）与
+    // 整卷式（整卷题目一次全部渲染、没有锚点，每题各占一个 .resizable-container，福建/广东多为此类）。
+    // 统一按「做题单元」采集：题号在切换式取点中的锚点号，在整卷式按渲染顺序。
+    const numbers = await shenlunAnchors(qpage);
+    const units = new Map();
+    const absorb = async number => {
+      const materialHtml = (await snapshotHtml(qpage, '.resizable-container')).html;
+      for (const unit of await shenlunUnits(qpage)) {
+        if (!units.has(unit.key)) units.set(unit.key, { ...unit, materialHtml, number: number ?? units.size + 1 });
+      }
+    };
+    await absorb();
+    for (const number of numbers) {
+      if (units.size >= numbers.length) break;
+      if (!(await switchShenlunQuestion(qpage, number))) { rec.switchFailed = number; break; }
+      await absorb(number);
+    }
+    if (!units.size) throw fail('NO_QUESTIONS');
+    const views = [...units.values()].map(unit =>
+      parseShenlunView(unit.html, { questionKey: unit.key, number: unit.number, materialHtml: unit.materialHtml }));
+    rec.questionsRendered = views.length;
+
+    const doc = buildShenlunDocument(views, item.identity, { url: qpage.url(), capturedAt: new Date().toISOString() });
+    rec.pageTitle = (await qpage.title().catch(() => '')).trim();
+    rec.titleMatches = (item.titleFrag || []).every(fragment => rec.pageTitle.includes(fragment));
+    // 申论目录不返回标题原文，卷名以详情页标题为准；标题缺失时退到「地区+年份」并不冒充原卷名。
+    if (!doc.identity.title) doc.identity.title = rec.pageTitle || `${item.area}${item.year}年申论`;
+    rec.titleSource = rec.pageTitle ? 'detail-page-title' : 'area-and-year-fallback';
+    // 申论目录项没有卷型。详情页标题能识别出具体卷型时用它，免得落地文件名全是「申论-unknown」；
+    // 识别不出的仍留 unknown，由落地层用 sourceId 区分。
+    if (!doc.identity.variant || doc.identity.variant === 'unknown') {
+      const inferred = rec.pageTitle ? variantOf(rec.pageTitle) : null;
+      if (inferred && inferred !== 'tongkao') doc.identity.variant = inferred;
+    }
+    rec.binding = bindingStatus(paperIds, item.sourceId);
+    rec.paperIds = [...paperIds].slice(0, 5);
+    if (rec.binding === 'mismatch' || rec.binding === 'mixed') {
+      await env.ledger.quarantine?.(item, { stage: 'shenlun-detail', binding: rec.binding, paperIds: rec.paperIds });
+      throw fail('PAPER_ID_MISMATCH');
+    }
+    // 校验器要求 source-paper-identity 才能认定身份；申论靠详情页请求里的 paperId 建立这条证据。
+    if (rec.binding === 'verified') doc.evidence.push({ type: 'source-paper-identity', paperId: item.sourceId,
+      observedAt: new Date().toISOString(), via: 'paperId query parameter on the opened detail page' });
+
+    await writeAtomic(path.join(outDir, 'run-summary.json'), JSON.stringify({ key: item.key, sourceId: item.sourceId,
+      subject: 'shenlun', at: new Date().toISOString(), pageUrl: rec.pageUrl, catalogPages: rec.catalogPages,
+      binding: rec.binding, by: 'worker' }, null, 2) + '\n');
+    await writeAtomic(path.join(outDir, 'dom-raw.json'), JSON.stringify({ source: qpage.url(),
+      views: views.map(view => ({ number: view.number, sections: view.sections, absent: view.absent })) }));
+    await writeAtomic(path.join(outDir, 'document.json'), JSON.stringify(doc));
+    await env.ledger.markCapture(item, 'ok', { questions: doc.questions.length, catalogPages: rec.catalogPages ?? null });
+    captured = true;
+    rec.questions = doc.questions.length;
+    rec.expected = doc.expected?.questions ?? null;
+
+    const assets = await downloadAssets(qpage, doc, path.join(outDir, 'assets'));
+    rec.assets = assets.filter(asset => asset.status === 'downloaded').length;
+    for (const asset of assets) {
+      if (asset.httpStatus === 401) env.risk.loginLost++;
+      else if (asset.httpStatus === 403) env.risk.http403++;
+      else if (asset.httpStatus === 429 || asset.httpStatus === 503) env.risk.http429++;
+    }
+
+    const verdict = await validateDocument(doc, { assetRoot: path.join(outDir, 'assets') });
+    await writeAtomic(path.join(outDir, 'document.json'), JSON.stringify(doc));
+    await writeAtomic(path.join(outDir, 'validation.json'), JSON.stringify(verdict, null, 2) + '\n');
+    rec.answers = doc.questions.filter(question => String(question.answerHtml || '').replace(/<[^>]*>/g, '').trim()).length;
+    rec.explanations = doc.questions.filter(question => String(question.explanationHtml || '').replace(/<[^>]*>/g, '').trim()).length;
+    rec.verdict = verdict.status;
+    rec.issues = [...new Set((verdict.issues || []).filter(issue => !issue.advisory).map(issue => issue.code))].slice(0, 8);
+    rec.advisory = [...new Set((verdict.issues || []).filter(issue => issue.advisory).map(issue => issue.code))].slice(0, 8);
+    rec.status = verdict.status === 'complete' ? 'complete' : 'submitted_partial';
+    await env.ledger.markSubmit(item, rec.status, { answers: rec.answers, assets: rec.assets });
+  } catch (e) {
+    rec.status = e.code || 'error';
+    rec.error = (e.code || e.name || 'ERR') + ' :: ' + String(e.message || e).slice(0, 160);
+    if (!captured) await env.ledger.markCapture(item, 'failed', { error: rec.error.slice(0, 120) }).catch(() => {});
+  } finally {
+    try { slot.page.off('request', onRequest); } catch {}
+    if (qpage && qpage !== slot.page) { try { qpage.off('request', onRequest); } catch {} await qpage.close().catch(() => {}); }
     rec.elapsedMs = Date.now() - t0;
   }
   return rec;

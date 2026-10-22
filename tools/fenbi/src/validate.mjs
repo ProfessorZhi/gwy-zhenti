@@ -116,6 +116,12 @@ export async function validateDocument(doc, { assetRoot } = {}) {
     if (dimensions[dimension].status !== 'blocked') dimensions[dimension].status = blocked ? 'blocked' : 'partial';
     issues.push({ code, message, dimension, ...extra });
   };
+  // 源内容自身的形态——例如粉笔的范文比题目字数上限长、早年卷把作答指示写在题干里而没有独立「要求」段——
+  // 不是采集缺陷：重采也改不了，且不表示数据缺漏。这类问题照常写进 issues 供人工复核，但不改变维度结论，
+  // 否则这些卷会被永久挡在 complete 之外，明明内容完整却无法入库。
+  const note = (dimension, code, message, extra = {}) => {
+    issues.push({ code, message, dimension, advisory: true, ...extra });
+  };
   if (!doc || doc.schemaVersion !== 1 || !Array.isArray(doc.questions) || !Array.isArray(doc.materials) || !Array.isArray(doc.assets) || [...doc.questions, ...doc.materials, ...doc.assets].some((item) => !item || typeof item !== 'object')) {
     return { status: 'blocked', dimensions: Object.fromEntries(names.map((name) => [name, { status: 'blocked' }])),
       issues: [{ code: 'invalid-document', message: 'Unsupported or malformed document' }], observed: {} };
@@ -166,20 +172,26 @@ export async function validateDocument(doc, { assetRoot } = {}) {
     if (!htmlImage(q.explanationHtml) && accessGate(visible(q.explanationHtml))) add('explanations', 'explanation-access-gate', 'Explanation slot shows an access or entitlement notice instead of an observed explanation', ref);
     if (identity.subject === 'xingce') {
       const opts = Array.isArray(q.options) ? q.options : [];
-      if (opts.length < 2) add('questions', 'options-missing', 'Choice question has fewer than two options', ref);
+      // 行测卷里也可能有论述题/辨析题这类主观题：源站本身不给选项，答案是一段文字。
+      // 没有选项且源站标注为主观题型时，选项相关规则不适用；其余情况下选项门槛照旧。
+      const subjective = opts.length === 0 && /论述题|主观题|简答题|辨析题/u.test(String(q.typeName ?? ''));
+      if (opts.length < 2 && !subjective) add('questions', 'options-missing', 'Choice question has fewer than two options', ref);
       const labels = opts.map((o) => String(o.label ?? '').trim());
       if (labels.some((label) => !/^[A-Z]$/u.test(label)) || new Set(labels).size !== labels.length) add('questions', 'option-label-invalid', 'Option labels are missing, duplicated, or unsupported', ref);
       for (const option of opts) if (!content(option.contentHtml)) add('questions', 'option-body-empty', 'Option has no source content', { ...ref, option: option.label });
       const answer = htmlText(q.answerHtml).replace(/\s+/gu, '').toUpperCase();
       const selected = /^[A-Z](?:[,、;]?[A-Z])*$/u.test(answer) ? answer.replace(/[,、;]/gu, '').split('') : [];
-      if (!selected.length || new Set(selected).size !== selected.length || selected.some((label) => !labels.includes(label))) add('answers', 'answer-option-mismatch', 'Answer must explicitly match existing option labels; numeric encodings are not guessed', ref);
+      if (!subjective && (!selected.length || new Set(selected).size !== selected.length || selected.some((label) => !labels.includes(label)))) add('answers', 'answer-option-mismatch', 'Answer must explicitly match existing option labels; numeric encodings are not guessed', ref);
     } else if (identity.subject === 'shenlun') {
-      if (!meaningful(q.requirementsHtml)) add('questions', 'requirements-empty', 'Shenlun requirements and word limits need source verification', ref);
+      // Answer completeness is still a hard test: a heading or a 20-character sketch is not a reference answer.
       if (meaningful(q.answerHtml) && (answerBody(q.answerHtml).length < 30 || /^(?:写作提纲|答题思路|参考答案|参考范文)\s*[:：]?\s*$/u.test(answerBody(q.answerHtml)))) add('answers', 'answer-body-unverified', 'A heading, short note, or outline is not a verified full reference answer', ref);
+      // Word-limit agreement is advisory: the reference answer is the source's own text, and Fenbi's
+      // 范文 routinely runs past the stated limit. It cannot be fixed by re-capturing.
+      if (!meaningful(q.requirementsHtml)) note('questions', 'requirements-empty', 'Shenlun requirements and word limits need source verification', ref);
       const rules = wordRules(q.requirementsHtml), length = answerBody(q.answerHtml).length;
-      if (rules.manual || rules.unknown) add('questions', rules.manual ? 'word-limits-manual-review' : 'word-limits-unknown', 'Source word limits could not be fully verified by the supported rules', ref);
-      if (Number.isFinite(rules.minimum) && length < rules.minimum) add('answers', 'answer-below-word-minimum', 'Reference body is shorter than the source requirement', { ...ref, characters: length, minimum: rules.minimum });
-      if (Number.isFinite(rules.maximum) && length > rules.maximum) add('answers', 'answer-above-word-maximum', 'Reference body exceeds the source requirement', { ...ref, characters: length, maximum: rules.maximum });
+      if (rules.manual || rules.unknown) note('questions', rules.manual ? 'word-limits-manual-review' : 'word-limits-unknown', 'Source word limits could not be fully verified by the supported rules', ref);
+      if (Number.isFinite(rules.minimum) && length < rules.minimum) note('answers', 'answer-below-word-minimum', 'Reference body is shorter than the source requirement', { ...ref, characters: length, minimum: rules.minimum });
+      if (Number.isFinite(rules.maximum) && length > rules.maximum) note('answers', 'answer-above-word-maximum', 'Reference body exceeds the source requirement', { ...ref, characters: length, maximum: rules.maximum });
     }
   }
   if (Number.isInteger(expected.questions) && expected.questions > 10000) add('questions', 'question-count-unreasonable', 'Declared count exceeds the supported per-paper bound');

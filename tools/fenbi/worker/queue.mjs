@@ -54,10 +54,26 @@ export function buildQueue({ cached = [], candidates = [], t2Ledger = {}, captur
   const queue = [], seen = new Set();
   // 同地区同年份的其他标题：目录里精确选行时，用来排除"以本卷标题开头的更长标题"。
   const titlesBy = new Map();
-  for (const p of candidates) { const k = `${p.area}|${p.year}`; (titlesBy.get(k) || titlesBy.set(k, []).get(k)).push(p.title); }
+  // 申论目录项没有标题（列表页也不返回原文），同地区同年份的标题集合对它为空即可。
+  for (const p of candidates) { if (!p.title) continue; const k = `${p.area}|${p.year}`; (titlesBy.get(k) || titlesBy.set(k, []).get(k)).push(p.title); }
+  // 申论目录不返回标题，卷型常常推不出（variant=unknown），选行时没法核对。这时用
+  // 「同地区同年候选的先后顺序」去对目录行的先后顺序：候选池本身就是照目录顺序采的。
+  const yearRank = new Map();
+  const shenlunYears = new Map();
+  for (const p of candidates) {
+    if (p.subject !== 'shenlun') continue;
+    const k = `${p.area}|${p.year}`;
+    (shenlunYears.get(k) || shenlunYears.set(k, []).get(k)).push(p);
+  }
+  for (const list of shenlunYears.values()) {
+    list.sort((a, b) => (a.page ?? 0) - (b.page ?? 0) || (a.index ?? 0) - (b.index ?? 0));
+    list.forEach((p, at) => yearRank.set(String(p.id), at));
+  }
   for (const c of cached) {
     const sid = String(c.sourceId);
     if (!sid || seen.has(sid) || quarantined.has(sid)) continue;
+    // 申论是只读详情页，没有"交卷"这一步，因此不存在续交；它只作为已抓集合参与去重。
+    if (c.subject === 'shenlun') continue;
     if (SUBMIT_DONE.has(t2[c.key]?.status) || submittedSids.has(sid) || !c.pageUrl) continue;
     seen.add(sid);
     queue.push({ kind: 'resume', key: c.key, sourceId: sid, pageUrl: c.pageUrl, label: c.label || null });
@@ -67,14 +83,21 @@ export function buildQueue({ cached = [], candidates = [], t2Ledger = {}, captur
     if (!yearAllowed(meta.area, p.year)) continue;
     const sid = String(p.id);
     if (seen.has(sid) || quarantined.has(sid) || cachedSids.has(sid) || submittedSids.has(sid)) continue;
-    if (captureLedger.targets?.[sid]?.status === 'ok') continue;
-    const variant = variantOf(p.title);
+    // 申论与行测共用一条队列：科目由候选显式给出，key 与落地路径随之切换。
+    const subject = p.subject === 'shenlun' ? 'shenlun' : 'xingce';
+    const subjectDir = subject === 'shenlun' ? '申论' : '行测';
+    if (captureLedger.targets?.[`${subject}:${sid}`]?.status === 'ok' || captureLedger.targets?.[sid]?.status === 'ok') continue;
+    // 目录给出的卷型优先；没有时才退回从标题推断。
+    const variant = p.variant || variantOf(p.title || '');
     seen.add(sid);
-    queue.push({ kind: 'new', key: `${meta.pre}-${p.year}-xingce-${variant}-${sid}`, sourceId: sid,
-      label: meta.label, area: meta.area, year: p.year, titleRe: escapeRe(p.title), titleFrag: [String(p.year)],
-      identity: { id: sid, title: p.title, subject: 'xingce', year: p.year, area: meta.area, variant },
-      siblingTitles: (titlesBy.get(`${p.area}|${p.year}`) || []).filter(t => t !== p.title),
-      paper: `${meta.paperDir}/${p.year}/行测-${variant}.md` });
+    queue.push({ kind: 'new', key: `${meta.pre}-${p.year}-${subject}-${variant}-${sid}`, sourceId: sid,
+      label: meta.label, region: p.region || meta.label, area: meta.area, year: p.year, subject,
+      titleRe: p.title ? escapeRe(p.title) : null, titleFrag: [String(p.year)],
+      page: p.page ?? null, rowIndex: p.index ?? null,
+      yearRank: subject === 'shenlun' ? (yearRank.get(sid) ?? null) : null,
+      identity: { id: sid, title: p.title || '', subject, year: p.year, area: meta.area, variant },
+      siblingTitles: p.title ? (titlesBy.get(`${p.area}|${p.year}`) || []).filter(t => t !== p.title) : [],
+      paper: `${meta.paperDir}/${p.year}/${subjectDir}-${variant}.md` });
   }
   return queue;
 }

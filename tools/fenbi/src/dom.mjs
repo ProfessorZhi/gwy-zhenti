@@ -33,6 +33,7 @@ export function parseFenbiExamDom(html, identity, source = {}) {
   document.expected.materials = dom('.materials-container').length;
   document.evidence.push({ type: 'source-rendered-material-headings', count: document.expected.materials });
   const questionKeys = new Set();
+  let inferredLabels = 0, droppedEmptyOptions = 0;
   dom('app-ti[data-question-key]').each((_, element) => {
     const node = dom(element), heading = node.find('.title-index').filter((_, child) => dom(child).closest('app-ti')[0] === element).first();
     const numberMatch = heading.text().trim().match(/^(\d+)\s*[.．]$/u);
@@ -40,19 +41,38 @@ export function parseFenbiExamDom(html, identity, source = {}) {
     const number = Number(numberMatch[1]), id = node.attr('data-question-key');
     if (questionKeys.has(id)) { document.conflicts.push({ scope: 'dom', field: 'duplicate-question-key', id }); return; }
     questionKeys.add(id);
-    const choice = node.find('.question-choice-container').filter((_, child) => dom(child).closest('app-ti')[0] === element).first().clone();
-    choice.find('app-choice-radio,app-choice-checkbox').remove();
     const options = node.find('.choice-radio-label,.choice-checkbox-label').filter((_, child) => dom(child).closest('app-ti')[0] === element).toArray().map(option => {
       const original = dom(option), label = original.find('.input-radio,.input-checkbox').first().text().trim();
       const copy = original.clone(); copy.find('.input-radio,.input-checkbox,input').remove();
       return { label: /^[A-Z]$/u.test(label) ? label : '', contentHtml: copy.html() || '' };
     });
+    // 少数题目源站多渲染了一个空白选项（如四选一却画出未填内容的 E）。末尾空选项没有源内容，
+    // 保留它只会让答案对不上；只裁掉末尾的空项，中间的缺口仍按异常上报。
+    const blankOption = html => !dom(html || '').text().replace(/\s+/gu, '').trim() && !/<(?:img|image)\b|!\[/iu.test(html || '');
+    while (options.length > 2 && blankOption(options[options.length - 1].contentHtml)) { options.pop(); droppedEmptyOptions++; }
+    // 判断题（正确/错误）在粉笔页面上不给 A/B 标签，.input-radio 里没有字母，但答案仍以字母给出。
+    // 整题标签全缺时按渲染顺序补，并在证据里注明是位置推断而非源站标签，便于人工复核。
+    if (options.length >= 2 && options.length <= 26 && options.every(option => !option.label)) {
+      options.forEach((option, index) => { option.label = String.fromCharCode(65 + index); });
+      inferredLabels++;
+    }
     const group = node.closest('.resizable-container')[0], materialId = groups.get(group);
-    document.questions.push({ id, number, contentHtml: choice.html() || '', options,
+    // 题面不全在 .question-choice-container 里：论述题/主观题没有选项容器，题干直接放在
+    // app-solution-view-only 的第一段 article.content，答案与解析在 app-result-common 各自的分节。
+    const stem = node.find('.question-choice-container').filter((_, child) => dom(child).closest('app-ti')[0] === element).first().clone();
+    stem.find('app-choice-radio,app-choice-checkbox').remove();
+    const body = stem.length ? stem.html() || '' : node.find('app-question-view-only article.content,app-solution-view-only article.content')
+      .filter((_, child) => dom(child).closest('app-ti')[0] === element).first().html() || '';
+    const typeName = node.find('.title-type-name').first().text().replace(/\s+/gu, ' ').trim();
+    document.questions.push({ id, number, contentHtml: body, options, typeName,
       materialIds: materialId ? [materialId] : [],
       materialIdsObserved: Boolean(materialId || node.closest('.questions-single-container').length),
       answerHtml: '', explanationHtml: '', requirementsHtml: '' });
   });
+  if (inferredLabels) document.evidence.push({ type: 'option-labels-inferred', count: inferredLabels,
+    reason: 'true/false questions render no A/B label; labels assigned by render order' });
+  if (droppedEmptyOptions) document.evidence.push({ type: 'empty-trailing-options-dropped', count: droppedEmptyOptions,
+    reason: 'source renders an option slot with no content after the last real option' });
   if (dom('.materials-container').length !== groups.size) document.conflicts.push({ scope: 'dom', field: 'unparsed-material-container' });
   if (document.expected.questions === null) document.evidence.push({ type: 'expected-count-unknown' });
   document.evidence.push({ type: 'dom-question-keys', namespace: 'fenbi-question-key', count: questionKeys.size });

@@ -67,7 +67,9 @@ export function assemble(document, oldMarkdown = '') {
       }
     }
     if (!isStub(q) && !isUsable(q)) issues.push('question-body-empty:'+q.number);
-    if (!current.sourceMissing && (!Array.isArray(q.options) || (id.subject==='xingce' && q.options.length<2))) issues.push('options-missing:'+q.number);
+    // 行测里的论述/辨析题源站本就不给选项，不按「选项缺失」处理。
+    const subjective=/论述题|主观题|简答题|辨析题/u.test(String(q.typeName??''));
+    if (!current.sourceMissing && !subjective && (!Array.isArray(q.options) || (id.subject==='xingce' && q.options.length<2))) issues.push('options-missing:'+q.number);
     if (current.sourceMissing) { current.contentHtml='';current.options=[];current.answerHtml='';current.explanationHtml=''; }
     if (current.legacyFallbackMarkdown) {
       // Original repository Markdown blocks cannot be passed through an HTML-only renderer.
@@ -124,7 +126,9 @@ export function structureGrade(assembly, markdownText, validation) {
   if(q.some(x=>isStub(x) && !x.legacyFallbackMarkdown))blockers.push('unremoved-source-stub');
   if(doc.assets.some(x=>x.status!=='downloaded'||!x.localPath||!x.sha256))blockers.push('asset-not-ready');
   if(validation?.dimensions?.images?.status !== 'complete')blockers.push('image-validation-not-complete');
-  for(const issue of validation?.issues || []) if(['questions','materials'].includes(issue.dimension) && !((issue.code==='question-body-empty'||issue.code==='question-body-placeholder'||issue.code==='options-missing') && exempt(issue.questionNumber ?? issue.number))) blockers.push('source-structure:'+issue.code);
+  // advisory 是「源内容本身的形态」（申论范文超字数、作答要求写在题干里）造成的提示，重采也改不了，
+  // 不能当作结构不达标：否则整卷被降成 C 而进不了仓库。
+  for(const issue of validation?.issues || []) if(!issue.advisory && ['questions','materials'].includes(issue.dimension) && !((issue.code==='question-body-empty'||issue.code==='question-body-placeholder'||issue.code==='options-missing') && exempt(issue.questionNumber ?? issue.number))) blockers.push('source-structure:'+issue.code);
   // Grade A must describe the rendered bytes, not just the pre-render source object.
   // A legacy fallback can reintroduce a stub after document validation.
   if(RENDERED_COLLECTION_STUB.test(markdownText))blockers.push('rendered-collection-stub-remains');
@@ -163,7 +167,9 @@ export async function ingestFolder({source,repo,dest,name,write=false}){
   const id=doc.identity||{},area=id.area==='国考'?'国考':'省考/'+id.area;
   const sub=subjectName(id.subject);
   if(!sub||!safeName(id.id)||!safeName(id.variant)||!Number.isInteger(Number(id.year)))throw Error('bad-identity');
-  const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
+  // 卷型识别不出的卷（申论目录不给卷型）在文件名里带上源试卷 ID，避免同地区同年多卷写到同一个文件。
+  const variantSlug=id.variant==='unknown'?`unknown-${id.id}`:id.variant;
+  const rel=path.posix.join(area,String(id.year),sub+'-'+variantSlug+'.md');
   const priorFile=path.join(repo,rel);
   let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
   // Neither the source nor the repository paper changed since the last candidate: reuse it.

@@ -17,8 +17,28 @@ const STRUCTURAL_DATA_ATTRIBUTES = ['data-latex', 'data-math', 'data-formula', '
 // over-long value — is dropped like any other unrecognised attribute rather than persisted.
 const QUESTION_KEY = /^[A-Za-z0-9_-]{1,80}$/u;
 const MAX_ASSET_BYTES = 12 * 1024 * 1024;
-const MAX_ASSETS = 256;
-const MAX_TOTAL_ASSET_BYTES = 128 * 1024 * 1024;
+// 粉笔把每个公式都渲染成一张小图（fb.fenbike.cn/api/planet/accessories/formulas），
+// 一套行测卷常见 250–350 张，旧上限 256 会把后面的整批截成 limit_exceeded，卷因此永远到不了 complete。
+const MAX_ASSETS = 2048;
+const MAX_TOTAL_ASSET_BYTES = 256 * 1024 * 1024;
+// 粉笔的公式图 CDN（fb.fenbike.cn/api/planet/accessories/formulas）在真实图片字节前多返回 4 个字节，
+// 浏览器直接 decode 会报 EncodingError。签名出现在开头附近时认定是这种前缀，剥掉再校验；
+// 原始哈希与剥离长度写进素材记录，源站实际返回的字节仍可追溯。
+const IMAGE_SIGNATURES = [
+  Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]), // png
+  Buffer.from([0xff, 0xd8, 0xff]), // jpeg
+  Buffer.from([0x47, 0x49, 0x46, 0x38]), // gif
+  Buffer.from([0x52, 0x49, 0x46, 0x46]), // riff (webp)
+  Buffer.from([0x42, 0x4d]), // bmp
+];
+const SIGNATURE_SCAN_BYTES = 16;
+export function imageSignatureOffset(bytes) {
+  for (const signature of IMAGE_SIGNATURES) {
+    const at = bytes.indexOf(signature);
+    if (at >= 0 && at <= SIGNATURE_SCAN_BYTES) return at;
+  }
+  return 0;
+}
 
 function parsedUrl(value) { try { return new URL(value); } catch { return null; } }
 function isFenbiHost(host) { return host === 'fenbi.com' || host.endsWith('.fenbi.com'); }
@@ -327,6 +347,15 @@ export async function downloadAssets(page, document, assetDir) {
       const bytes = await response.body();
       if (bytes.length > MAX_ASSET_BYTES || totalBytes + bytes.length > MAX_TOTAL_ASSET_BYTES) { record.status = 'oversized'; continue; }
       if (type === 'image/svg+xml' && /<\s*(?:script|foreignObject|iframe|object|embed)\b|\bon\w+\s*=|<!DOCTYPE|(?:href|src)\s*=\s*["']\s*(?:https?:|\/\/|javascript:)/i.test(bytes.toString('utf8'))) { record.status = 'unsafe_svg'; continue; }
+      let payload = bytes;
+      if (type !== 'image/svg+xml') {
+        const offset = imageSignatureOffset(bytes);
+        if (offset > 0) {
+          payload = bytes.subarray(offset);
+          record.normalize = { method: 'strip-prefix', strippedBytes: offset,
+            rawSha256: createHash('sha256').update(bytes).digest('hex'), rawBytes: bytes.length };
+        }
+      }
       const dimensions = await page.evaluate(async ({ encoded, type: mime }) => {
         const source = `data:${mime};base64,${encoded}`;
         const image = new Image();
@@ -334,16 +363,16 @@ export async function downloadAssets(page, document, assetDir) {
         await image.decode();
         if (!image.naturalWidth || !image.naturalHeight) throw new Error('Invalid image');
         return { width: image.naturalWidth, height: image.naturalHeight };
-      }, { encoded: bytes.toString('base64'), type });
+      }, { encoded: payload.toString('base64'), type });
       if (!Number.isInteger(dimensions.width) || !Number.isInteger(dimensions.height) || dimensions.width < 1 || dimensions.height < 1) { record.status = 'decode_failed'; continue; }
-      const sha256 = createHash('sha256').update(bytes).digest('hex');
+      const sha256 = createHash('sha256').update(payload).digest('hex');
       const localPath = `${sha256}.${extensions[type]}`;
-      await writeFile(path.join(assetDir, localPath), bytes, { flag: 'wx' }).catch(async cause => {
+      await writeFile(path.join(assetDir, localPath), payload, { flag: 'wx' }).catch(async cause => {
         if (cause.code !== 'EEXIST') throw cause;
         if (createHash('sha256').update(await readFile(path.join(assetDir, localPath))).digest('hex') !== sha256) throw error('ASSET_COLLISION', 'Existing asset content does not match its hash.');
       });
-      totalBytes += bytes.length;
-      Object.assign(record, { localPath, sha256, bytes: bytes.length, ...dimensions, decoded: true,
+      totalBytes += payload.length;
+      Object.assign(record, { localPath, sha256, bytes: payload.length, ...dimensions, decoded: true,
         decode: { method: 'browser-image-decode', sha256, ...dimensions }, status: 'downloaded' });
     } catch { record.status = 'download_failed'; }
     finally { if (response?.dispose) await response.dispose().catch(() => {}); }
