@@ -8,6 +8,31 @@ import { digest, writeJson } from './store.mjs';
 
 const quote = value => JSON.stringify(value ?? '待核实');
 
+// HTML 正文里的 `<`（如「<72%」「《<大圣归来>》」）经 Turndown 会原样落进 Markdown。
+// 下游解析器按标签切分时，一个裸 `<` 会一路吃到后面某个 `>`，把中间正文整段删掉。
+// 这里只保留真正的标签：已知空元素、闭合标签、以及本片段内存在配对闭合的开标签；
+// 其余一律转成 `&lt;`（渲染出来仍是 `<`，但不会再被当成标签起点）。
+const VOID_TAGS = new Set(['img', 'br', 'hr', 'source', 'input', 'meta', 'link', 'wbr', 'col', 'area', 'base', 'embed', 'param', 'track']);
+const TAG_AT = /^<(\/?)([a-zA-Z][a-zA-Z0-9-]*)((?:[^<>"']|"[^"]*"|'[^']*')*)>/u;
+
+export function escapeStrayLt(text) {
+  const src = String(text ?? '');
+  const closers = new Set();
+  for (const m of src.matchAll(/<\/([a-zA-Z][a-zA-Z0-9-]*)\s*>/gu)) closers.add(m[1].toLowerCase());
+  let out = '';
+  let i = 0;
+  while (i < src.length) {
+    if (src[i] !== '<') { out += src[i]; i += 1; continue; }
+    const match = src.slice(i).match(TAG_AT);
+    if (!match) { out += '&lt;'; i += 1; continue; }
+    const name = match[2].toLowerCase();
+    const keep = match[1] === '/' || VOID_TAGS.has(name) || match[3].trimEnd().endsWith('/') || closers.has(name);
+    out += keep ? match[0] : '&lt;';
+    i += keep ? match[0].length : 1;
+  }
+  return out;
+}
+
 export function markdown(html, assets = [], imagePrefix = 'assets', baseUrl = 'https://www.fenbi.com/') {
   const $ = load(String(html || ''), null, false);
   $('script,style,iframe,object,embed,form,input,button,textarea,select').remove();
@@ -49,7 +74,7 @@ export function markdown(html, assets = [], imagePrefix = 'assets', baseUrl = 'h
     filter: node => node.getAttribute?.('data-latex') !== null,
     replacement: (_content, node) => `$${node.getAttribute('data-latex')}$`,
   });
-  return service.turndown($.html()).trim();
+  return escapeStrayLt(service.turndown($.html()).trim());
 }
 
 export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = {}) {
