@@ -60,7 +60,10 @@ export function parseFenbiExamDom(html, identity, source = {}) {
     // 题面不全在 .question-choice-container 里：论述题/主观题没有选项容器，题干直接放在
     // app-solution-view-only 的第一段 article.content，答案与解析在 app-result-common 各自的分节。
     const stem = node.find('.question-choice-container').filter((_, child) => dom(child).closest('app-ti')[0] === element).first().clone();
-    stem.find('app-choice-radio,app-choice-checkbox').remove();
+    // 选项控件不属于题面：单选题在 app-choice-radio/checkbox 里，判断题在 app-choice-true-false 里。
+    // 不剥掉的话，判断题的「正确/错误」会先以列表出现在题面，再作为 A/B 选项出现一次。
+    stem.find('app-choice-radio,app-choice-checkbox,app-choice-true-false').remove();
+    stem.find('.choice-radio-label,.choice-checkbox-label').remove();
     const body = stem.length ? stem.html() || '' : node.find('app-question-view-only article.content,app-solution-view-only article.content')
       .filter((_, child) => dom(child).closest('app-ti')[0] === element).first().html() || '';
     const typeName = node.find('.title-type-name').first().text().replace(/\s+/gu, ' ').trim();
