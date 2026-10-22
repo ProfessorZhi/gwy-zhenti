@@ -1,0 +1,102 @@
+{
+ "at": "2026-10-22T08:54:06.194Z",
+ "kind": "MANUAL_ADJUDICATION",
+ "path": "省考/深圳/2025/行测-统考.md",
+ "verdict": "SAME_QUESTION",
+ "legacy": {
+  "number": 56,
+  "answer": "D",
+  "images": 8,
+  "explanationRefs": 6
+ },
+ "fixed": {
+  "number": 52,
+  "answer": "D",
+  "images": 8,
+  "explanationRefs": 6
+ },
+ "basis": "旧稿 formula-<hash>.png 是旧 provider 预渲染的同一公式；粉笔来源拿到的是重新渲染的同式，字节不同、角色相同。骨架全文唯一 + 解析正文逐字相同 + 答案相同 + 题干4/选项4/解析6 处图角色一一对应。",
+ "checks": {
+  "skeletonUnique": true,
+  "stemSlots": [
+   4,
+   4
+  ],
+  "optionSlots": [
+   4,
+   4
+  ],
+  "optionsAllImage": true,
+  "repeatAtSlot2": true,
+  "answers": [
+   "D",
+   "D"
+  ],
+  "explanationProseIdentical": true,
+  "roleMapStem": [
+   [
+    "dfc4ece9e2407a3a",
+    "d49c180ee207c510cc0496795f331924737828a4ddfd9cdcda4ea19a5bedb49b"
+   ],
+   [
+    "dfc4ece9e2407a3a",
+    "d49c180ee207c510cc0496795f331924737828a4ddfd9cdcda4ea19a5bedb49b"
+   ],
+   [
+    "7a339ccc5d6607f2",
+    "8555e47444912dc9288cd2ca764a7598e381938a31f7b0a7aae1b9f2353b1665"
+   ],
+   [
+    "9ab65fb39738c530",
+    "854e158d475399388cd81b025722f89e03919f2f29755c569d9255892f8996b9"
+   ]
+  ],
+  "roleMapOptions": [
+   [
+    "6d0bdea0264519b8",
+    "e406a2bc690be770bdafb72b5ef447bbf59e8b2a8d2c83823103bd9b708d6ea4"
+   ],
+   [
+    "185c7105e6130aab",
+    "00280f7b0a7cc9336ec63cdfc96b6d4445018418e19ea0f075c81d69ae56ce00"
+   ],
+   [
+    "e388b45079786c2a",
+    "f3b76deac79b3ee7da047286b7a2cf406230747688b37ed28671accfa2cc9da9"
+   ],
+   [
+    "a0df3ece122fdbec",
+    "1a8efe090317a9edd7598b59034e17735bccf547f983726f2fb8f27ace6d3c20"
+   ]
+  ],
+  "roleMapExplanation": [
+   [
+    "d2576fc119a7f202",
+    "585085ebcbc9389e465631c5f757f625cebb43d91f76199ccf6e763af2cfd493"
+   ],
+   [
+    "dfc4ece9e2407a3a",
+    "d49c180ee207c510cc0496795f331924737828a4ddfd9cdcda4ea19a5bedb49b"
+   ],
+   [
+    "b4d6f7d98c0741e3",
+    "4c16133e9ddcfe2cad039f4481a0401c5430b81986886f31b50343c7aee5d0ef"
+   ],
+   [
+    "7a339ccc5d6607f2",
+    "8555e47444912dc9288cd2ca764a7598e381938a31f7b0a7aae1b9f2353b1665"
+   ],
+   [
+    "4864d2a4f3987abb",
+    "5417686f8595ad917ff4b9e706d9540101b5d5c566601f440d5688a16df124b4"
+   ],
+   [
+    "a0df3ece122fdbec",
+    "1a8efe090317a9edd7598b59034e17735bccf547f983726f2fb8f27ace6d3c20"
+   ]
+  ],
+  "optionDIsAnswerFigure": true,
+  "stemSlot1EqualsExplanationSlot2": true,
+  "imageMapConsistent": true
+ }
+}

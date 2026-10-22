@@ -1,0 +1,78 @@
+{
+ "at": "2026-10-22T08:55:41.604Z",
+ "failed": 0,
+ "report": [
+  {
+   "path": "省考/四川/2016/行测-统考.md",
+   "questions": 100,
+   "images": 71,
+   "bareLt": 0,
+   "sourceId": "75908",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "path": "省考/四川/2017/行测-统考.md",
+   "questions": 100,
+   "images": 74,
+   "bareLt": 0,
+   "sourceId": "77444",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "path": "省考/四川/2018/行测-统考.md",
+   "questions": 100,
+   "images": 82,
+   "bareLt": 0,
+   "sourceId": "84523",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "path": "省考/深圳/2025/行测-统考.md",
+   "questions": 100,
+   "images": 127,
+   "bareLt": 0,
+   "sourceId": "5232321",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "path": "省考/重庆/2016/行测-统考.md",
+   "questions": 120,
+   "images": 93,
+   "bareLt": 0,
+   "sourceId": "75904",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "path": "省考/重庆/2017/行测-统考.md",
+   "questions": 120,
+   "images": 142,
+   "bareLt": 0,
+   "sourceId": "77408",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "path": "省考/重庆/2018/行测-统考.md",
+   "questions": 120,
+   "images": 105,
+   "bareLt": 0,
+   "sourceId": "84528",
+   "pass": true,
+   "fails": []
+  },
+  {
+   "path": "省考/重庆/2019/行测-统考.md",
+   "questions": 120,
+   "images": 148,
+   "bareLt": 0,
+   "sourceId": "89648",
+   "pass": true,
+   "fails": []
+  }
+ ]
+}
