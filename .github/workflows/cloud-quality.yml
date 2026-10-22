@@ -5,6 +5,14 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      time_pinned_audit:
+        description: >-
+          Run verify_repair_receipts.py (time-pinned: asserts the exact 2026-10-13 corpus,
+          so it only passes at commit efbc2daa5, not on today's tree). Leave off for a
+          normal manual run; turn on only when deliberately auditing that receipt chain.
+        type: boolean
+        default: false
 permissions:
   contents: read
 concurrency:
@@ -30,11 +38,11 @@ jobs:
         run: python tools/cloud_quality.py --check --verify-images
       # Time-pinned audit: verify_repair_receipts.py asserts the exact corpus of the
       # 2026-10-13 deliveries (729 papers / 451 missing answers). The corpus has since
-      # grown to 1291 papers, so it can only pass at its own commit (efbc2daa5). Run it
-      # manually before a release/audit, or:
+      # grown to 1291 papers, so it can only pass at its own commit (efbc2daa5). It is
+      # therefore opt-in via the workflow_dispatch input, and can also be run by hand:
       #   git worktree add <tmp> efbc2daa5 && (cd <tmp> && python tools/verify_repair_receipts.py)
-      - name: Verify reviewed paper and image receipt chains (time-pinned, manual)
-        if: github.event_name == 'workflow_dispatch'
+      - name: Verify reviewed paper and image receipt chains (time-pinned, opt-in)
+        if: github.event_name == 'workflow_dispatch' && inputs.time_pinned_audit
         run: python tools/verify_repair_receipts.py
       - name: Decode actual pixels of every referenced image
         run: python tools/verify_image_pixels.py
