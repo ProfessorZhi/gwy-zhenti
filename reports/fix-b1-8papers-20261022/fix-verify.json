@@ -1,0 +1,743 @@
+{
+ "at": "2026-10-22T08:56:57.121Z",
+ "legacy": "af24084a9",
+ "b1": "04c03ac80",
+ "results": [
+  {
+   "path": "省考/四川/2016/行测-统考.md",
+   "legacyQ": 100,
+   "fixedQ": 100,
+   "matched": 100,
+   "unmatchedLegacy": 0,
+   "unmatchedNew": 0,
+   "unmatchedNewList": [],
+   "adjudicated": [],
+   "fwd": 1,
+   "rev": 1,
+   "sameOrder": 100,
+   "stemsOk": 100,
+   "exOk": 100,
+   "exTotal": 100,
+   "answersSame": 100,
+   "answersBoth": 100,
+   "imgMatched": 97,
+   "formula": {
+    "questions": 4,
+    "bad": 0
+   },
+   "imgs": {
+    "legacy": 19,
+    "fixed": 13,
+    "refs": 71,
+    "missingFiles": 0
+   },
+   "bare": {
+    "b1": 2,
+    "fixed": 0
+   },
+   "fm": {
+    "命题形式": "单独命题",
+    "真题性质": "粉笔题库整理版本，未认证为官方原卷",
+    "来源": "https://spa.fenbi.com/ti/exam/exercise/1_1_3u8pgts",
+    "来源明细": "旧版来源 linfukai186、xingcezhenti（旧稿，正文见 Git 历史 af24084a9）；本版题干/选项/答案/解析来自粉笔题库 https://spa.fenbi.com/ti/exam/exercise/1_1_3u8pgts（源试卷ID 75908）"
+   },
+   "bodyDiff": 2,
+   "problems": [
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 35,
+     "to": 35,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-四川-2016-行测-统考/公式图/formula-1a251d8019018172.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 48,
+     "to": 48,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-四川-2016-行测-统考/公式图/formula-e6cd2f0465fce6f2.png",
+      "图片/省考-四川-2016-行测-统考/公式图/formula-f85705aa2dc30006.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 50,
+     "to": 50,
+     "lost": 3,
+     "of": 3,
+     "paths": [
+      "图片/省考-四川-2016-行测-统考/公式图/formula-2f29ab37e5278826.png",
+      "图片/省考-四川-2016-行测-统考/公式图/formula-d8d2b33a30fffb36.png",
+      "图片/省考-四川-2016-行测-统考/公式图/formula-65396309f164fac3.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 52,
+     "to": 52,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-四川-2016-行测-统考/公式图/formula-8d82a5fa5c30777a.png"
+     ]
+    }
+   ]
+  },
+  {
+   "path": "省考/四川/2017/行测-统考.md",
+   "legacyQ": 100,
+   "fixedQ": 100,
+   "matched": 100,
+   "unmatchedLegacy": 0,
+   "unmatchedNew": 0,
+   "unmatchedNewList": [],
+   "adjudicated": [],
+   "fwd": 1,
+   "rev": 1,
+   "sameOrder": 65,
+   "stemsOk": 100,
+   "exOk": 100,
+   "exTotal": 100,
+   "answersSame": 100,
+   "answersBoth": 100,
+   "imgMatched": 97,
+   "formula": {
+    "questions": 6,
+    "bad": 0
+   },
+   "imgs": {
+    "legacy": 22,
+    "fixed": 9,
+    "refs": 74,
+    "missingFiles": 0
+   },
+   "bare": {
+    "b1": 1,
+    "fixed": 0
+   },
+   "fm": {
+    "命题形式": "联考",
+    "真题性质": "粉笔题库整理版本，未认证为官方原卷",
+    "来源": "https://spa.fenbi.com/ti/exam/exercise/1_1_3u8vepc",
+    "来源明细": "旧版来源 xingcezhenti（旧稿，正文见 Git 历史 af24084a9）；本版题干/选项/答案/解析来自粉笔题库 https://spa.fenbi.com/ti/exam/exercise/1_1_3u8vepc（源试卷ID 77444）"
+   },
+   "bodyDiff": 1,
+   "problems": [
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 46,
+     "to": 46,
+     "lost": 3,
+     "of": 4,
+     "paths": [
+      "图片/省考-四川-2017-行测-统考/公式图/formula-4ed449be11b64711.png",
+      "图片/省考-四川-2017-行测-统考/公式图/formula-9382bf2545819964.png",
+      "图片/省考-四川-2017-行测-统考/公式图/formula-242e6569fa0745c2.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 47,
+     "to": 47,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-四川-2017-行测-统考/公式图/formula-f74801b8674b37ff.png",
+      "图片/省考-四川-2017-行测-统考/公式图/formula-5fc11db5d8a7286f.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 52,
+     "to": 52,
+     "lost": 2,
+     "of": 3,
+     "paths": [
+      "图片/省考-四川-2017-行测-统考/公式图/formula-43c2db28806d99e5.png",
+      "图片/省考-四川-2017-行测-统考/公式图/formula-145e383ad7b080e8.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 53,
+     "to": 53,
+     "lost": 2,
+     "of": 3,
+     "paths": [
+      "图片/省考-四川-2017-行测-统考/公式图/formula-130fc643a02fe1ca.png",
+      "图片/省考-四川-2017-行测-统考/公式图/formula-9e8bb8e419dac2e4.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 54,
+     "to": 54,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-四川-2017-行测-统考/公式图/formula-ebae7a1c8ac93e30.png",
+      "图片/省考-四川-2017-行测-统考/公式图/formula-2f29ab37e5278826.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 82,
+     "to": 82,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-四川-2017-行测-统考/公式图/formula-062fc2c7076e6398.png",
+      "图片/省考-四川-2017-行测-统考/公式图/formula-447002bd7eb98d98.png"
+     ]
+    }
+   ]
+  },
+  {
+   "path": "省考/四川/2018/行测-统考.md",
+   "legacyQ": 100,
+   "fixedQ": 100,
+   "matched": 100,
+   "unmatchedLegacy": 0,
+   "unmatchedNew": 0,
+   "unmatchedNewList": [],
+   "adjudicated": [],
+   "fwd": 1,
+   "rev": 1,
+   "sameOrder": 100,
+   "stemsOk": 100,
+   "exOk": 100,
+   "exTotal": 100,
+   "answersSame": 100,
+   "answersBoth": 100,
+   "imgMatched": 97,
+   "formula": {
+    "questions": 6,
+    "bad": 0
+   },
+   "imgs": {
+    "legacy": 14,
+    "fixed": 10,
+    "refs": 82,
+    "missingFiles": 0
+   },
+   "bare": {
+    "b1": 1,
+    "fixed": 0
+   },
+   "fm": {
+    "命题形式": "联考",
+    "真题性质": "粉笔题库整理版本，未认证为官方原卷",
+    "来源": "https://spa.fenbi.com/ti/exam/exercise/1_1_3u96baf",
+    "来源明细": "旧版来源 linfukai186、xingcezhenti（旧稿，正文见 Git 历史 af24084a9）；本版题干/选项/答案/解析来自粉笔题库 https://spa.fenbi.com/ti/exam/exercise/1_1_3u96baf（源试卷ID 84523）"
+   },
+   "bodyDiff": 1,
+   "problems": [
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 47,
+     "to": 47,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-四川-2018-行测-统考/公式图/formula-062fc2c7076e6398.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 48,
+     "to": 48,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-四川-2018-行测-统考/公式图/formula-ee08713ca74cb24b.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 49,
+     "to": 49,
+     "lost": 1,
+     "of": 2,
+     "paths": [
+      "图片/省考-四川-2018-行测-统考/公式图/formula-fd880df990afa1c6.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 52,
+     "to": 52,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-四川-2018-行测-统考/公式图/formula-747b4cf853fa4915.png",
+      "图片/省考-四川-2018-行测-统考/公式图/formula-d91b29ef1a76c02c.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 53,
+     "to": 53,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-四川-2018-行测-统考/公式图/formula-4abf03be8182937e.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 96,
+     "to": 96,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-四川-2018-行测-统考/公式图/formula-2f29ab37e5278826.png"
+     ]
+    }
+   ]
+  },
+  {
+   "path": "省考/深圳/2025/行测-统考.md",
+   "legacyQ": 97,
+   "fixedQ": 100,
+   "matched": 96,
+   "unmatchedLegacy": 0,
+   "unmatchedNew": 3,
+   "unmatchedNewList": [
+    51,
+    54,
+    55
+   ],
+   "adjudicated": [
+    {
+     "kind": "ADJUDICATED_SAME",
+     "n": 56,
+     "to": 52,
+     "answer": [
+      "D",
+      "D"
+     ],
+     "evidence": "state/adjudication-shenzhen-2025.json"
+    }
+   ],
+   "fwd": 0.99,
+   "rev": 0.96,
+   "sameOrder": 30,
+   "stemsOk": 96,
+   "exOk": 96,
+   "exTotal": 96,
+   "answersSame": 96,
+   "answersBoth": 96,
+   "imgMatched": 96,
+   "formula": {
+    "questions": 0,
+    "bad": 0
+   },
+   "imgs": {
+    "legacy": 6,
+    "fixed": 6,
+    "refs": 127,
+    "missingFiles": 0
+   },
+   "bare": {
+    "b1": 1,
+    "fixed": 0
+   },
+   "fm": {
+    "命题形式": "单独命题",
+    "真题性质": "粉笔题库整理版本，未认证为官方原卷",
+    "来源": "https://spa.fenbi.com/ti/exam/exercise/1_1_3u7aicl",
+    "来源明细": "旧版来源 xingcezhenti（旧稿，正文见 Git 历史 af24084a9）；本版题干/选项/答案/解析来自粉笔题库 https://spa.fenbi.com/ti/exam/exercise/1_1_3u7aicl（源试卷ID 5232321）"
+   },
+   "bodyDiff": 1,
+   "problems": []
+  },
+  {
+   "path": "省考/重庆/2016/行测-统考.md",
+   "legacyQ": 120,
+   "fixedQ": 120,
+   "matched": 120,
+   "unmatchedLegacy": 0,
+   "unmatchedNew": 0,
+   "unmatchedNewList": [],
+   "adjudicated": [],
+   "fwd": 1,
+   "rev": 1,
+   "sameOrder": 120,
+   "stemsOk": 120,
+   "exOk": 120,
+   "exTotal": 120,
+   "answersSame": 120,
+   "answersBoth": 120,
+   "imgMatched": 119,
+   "formula": {
+    "questions": 2,
+    "bad": 0
+   },
+   "imgs": {
+    "legacy": 14,
+    "fixed": 12,
+    "refs": 93,
+    "missingFiles": 0
+   },
+   "bare": {
+    "b1": 5,
+    "fixed": 0
+   },
+   "fm": {
+    "命题形式": "联考",
+    "真题性质": "粉笔题库整理版本，未认证为官方原卷",
+    "来源": "https://spa.fenbi.com/ti/exam/exercise/1_1_3u8p3t5",
+    "来源明细": "旧版来源 linfukai186、xingcezhenti（旧稿，正文见 Git 历史 af24084a9）；本版题干/选项/答案/解析来自粉笔题库 https://spa.fenbi.com/ti/exam/exercise/1_1_3u8p3t5（源试卷ID 75904）"
+   },
+   "bodyDiff": 6,
+   "problems": [
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 61,
+     "to": 61,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-重庆-2016-行测-统考/公式图/formula-e6cd2f0465fce6f2.png",
+      "图片/省考-重庆-2016-行测-统考/公式图/formula-f85705aa2dc30006.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 66,
+     "to": 66,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2016-行测-统考/公式图/formula-8d82a5fa5c30777a.png"
+     ]
+    }
+   ]
+  },
+  {
+   "path": "省考/重庆/2017/行测-统考.md",
+   "legacyQ": 120,
+   "fixedQ": 120,
+   "matched": 120,
+   "unmatchedLegacy": 0,
+   "unmatchedNew": 0,
+   "unmatchedNewList": [],
+   "adjudicated": [],
+   "fwd": 1,
+   "rev": 1,
+   "sameOrder": 70,
+   "stemsOk": 120,
+   "exOk": 120,
+   "exTotal": 120,
+   "answersSame": 120,
+   "answersBoth": 120,
+   "imgMatched": 114,
+   "formula": {
+    "questions": 7,
+    "bad": 0
+   },
+   "imgs": {
+    "legacy": 16,
+    "fixed": 8,
+    "refs": 142,
+    "missingFiles": 0
+   },
+   "bare": {
+    "b1": 0,
+    "fixed": 0
+   },
+   "fm": {
+    "命题形式": "联考",
+    "真题性质": "粉笔题库整理版本，未认证为官方原卷",
+    "来源": "https://spa.fenbi.com/ti/exam/exercise/1_1_3u8r3oa",
+    "来源明细": "旧版来源 xingcezhenti（旧稿，正文见 Git 历史 af24084a9）；本版题干/选项/答案/解析来自粉笔题库 https://spa.fenbi.com/ti/exam/exercise/1_1_3u8r3oa（源试卷ID 77408）"
+   },
+   "bodyDiff": 0,
+   "problems": [
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 41,
+     "to": 51,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-4d90d7a7e1165b03.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-4d90d7a7e1165b03.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-4d90d7a7e1165b03.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-4d90d7a7e1165b03.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-4d90d7a7e1165b03.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-4d90d7a7e1165b03.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-4d90d7a7e1165b03.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 61,
+     "to": 21,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-a4412d2eb5bd0661.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-bb12610acc930e13.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 63,
+     "to": 23,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-ccea84f698447b35.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 69,
+     "to": 29,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-5e30cc6816ae1627.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-58d25db5fc9648ff.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 70,
+     "to": 30,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-747b4cf853fa4915.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 100,
+     "to": 100,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-b9cd355b227e3ff0.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-05b2c9aa878ab980.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-05b2c9aa878ab980.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-b9cd355b227e3ff0.png",
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-b9cd355b227e3ff0.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 108,
+     "to": 108,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2017-行测-统考/公式图/formula-f74801b8674b37ff.png"
+     ]
+    }
+   ]
+  },
+  {
+   "path": "省考/重庆/2018/行测-统考.md",
+   "legacyQ": 120,
+   "fixedQ": 120,
+   "matched": 120,
+   "unmatchedLegacy": 0,
+   "unmatchedNew": 0,
+   "unmatchedNewList": [],
+   "adjudicated": [],
+   "fwd": 1,
+   "rev": 1,
+   "sameOrder": 20,
+   "stemsOk": 120,
+   "exOk": 120,
+   "exTotal": 120,
+   "answersSame": 120,
+   "answersBoth": 120,
+   "imgMatched": 117,
+   "formula": {
+    "questions": 4,
+    "bad": 0
+   },
+   "imgs": {
+    "legacy": 15,
+    "fixed": 8,
+    "refs": 105,
+    "missingFiles": 0
+   },
+   "bare": {
+    "b1": 2,
+    "fixed": 0
+   },
+   "fm": {
+    "命题形式": "联考",
+    "真题性质": "粉笔题库整理版本，未认证为官方原卷",
+    "来源": "https://spa.fenbi.com/ti/exam/exercise/1_1_3u90jgq",
+    "来源明细": "旧版来源 linfukai186、xingcezhenti（旧稿，正文见 Git 历史 af24084a9）；本版题干/选项/答案/解析来自粉笔题库 https://spa.fenbi.com/ti/exam/exercise/1_1_3u90jgq（源试卷ID 84528）"
+   },
+   "bodyDiff": 2,
+   "problems": [
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 51,
+     "to": 31,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2018-行测-统考/公式图/formula-eb1dafcfe3239269.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 54,
+     "to": 34,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-重庆-2018-行测-统考/公式图/formula-2f29ab37e5278826.png",
+      "图片/省考-重庆-2018-行测-统考/公式图/formula-29477a3ea0f859e7.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 58,
+     "to": 38,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2018-行测-统考/公式图/formula-e602c53618665759.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 60,
+     "to": 40,
+     "lost": 4,
+     "of": 4,
+     "paths": [
+      "图片/省考-重庆-2018-行测-统考/公式图/formula-2f29ab37e5278826.png",
+      "图片/省考-重庆-2018-行测-统考/公式图/formula-f3378f1e0b4e7d9c.png",
+      "图片/省考-重庆-2018-行测-统考/公式图/formula-7dc85711f9850a97.png",
+      "图片/省考-重庆-2018-行测-统考/公式图/formula-f983f0ceb41aca15.png"
+     ]
+    }
+   ]
+  },
+  {
+   "path": "省考/重庆/2019/行测-统考.md",
+   "legacyQ": 120,
+   "fixedQ": 120,
+   "matched": 120,
+   "unmatchedLegacy": 0,
+   "unmatchedNew": 0,
+   "unmatchedNewList": [],
+   "adjudicated": [],
+   "fwd": 1,
+   "rev": 1,
+   "sameOrder": 120,
+   "stemsOk": 120,
+   "exOk": 120,
+   "exTotal": 120,
+   "answersSame": 120,
+   "answersBoth": 120,
+   "imgMatched": 115,
+   "formula": {
+    "questions": 6,
+    "bad": 0
+   },
+   "imgs": {
+    "legacy": 18,
+    "fixed": 10,
+    "refs": 148,
+    "missingFiles": 0
+   },
+   "bare": {
+    "b1": 3,
+    "fixed": 0
+   },
+   "fm": {
+    "命题形式": "联考",
+    "真题性质": "粉笔题库整理版本，未认证为官方原卷",
+    "来源": "https://spa.fenbi.com/ti/exam/exercise/1_1_3u984us",
+    "来源明细": "旧版来源 xingcezhenti（旧稿，正文见 Git 历史 af24084a9）；本版题干/选项/答案/解析来自粉笔题库 https://spa.fenbi.com/ti/exam/exercise/1_1_3u984us（源试卷ID 89648）"
+   },
+   "bodyDiff": 3,
+   "problems": [
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 39,
+     "to": 39,
+     "lost": 2,
+     "of": 2,
+     "paths": [
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-9b8927efdbe743d6.png",
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-147b2790014aae36.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 48,
+     "to": 48,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-2c0ba4300c24f536.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 61,
+     "to": 61,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-2f29ab37e5278826.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 62,
+     "to": 62,
+     "lost": 5,
+     "of": 5,
+     "paths": [
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-9e4a796341f34660.png",
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-5fb998ba6e749143.png",
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-e8894b6d9fb5a81e.png",
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-3768e3e0e27762ff.png",
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-7ac3707fdf112aee.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 64,
+     "to": 64,
+     "lost": 1,
+     "of": 1,
+     "paths": [
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-d43716cf36224da5.png"
+     ]
+    },
+    {
+     "kind": "IMAGE_SUBSTITUTED",
+     "n": 70,
+     "to": 70,
+     "lost": 3,
+     "of": 3,
+     "paths": [
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-4907475a71ae1c2f.png",
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-b19e08f7cdfb27f0.png",
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-b19e08f7cdfb27f0.png",
+      "图片/省考-重庆-2019-行测-统考/公式图/formula-f81487d95b732033.png"
+     ]
+    }
+   ]
+  }
+ ]
+}
