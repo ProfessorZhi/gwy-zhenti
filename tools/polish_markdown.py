@@ -334,6 +334,8 @@ def build_overview(fm_lines, body_lines, answers_inline):
         links.append(('[题型与作答说明]', '题型与作答说明'))
     if '题目' in headings:
         links.append(('[题目]', '题目'))
+    elif '第 1 题' in headings:
+        links.append(('[第 1 题]', '第 1 题'))
     first_material = next((text for text in headings if re.match(r'^材料\s*\d+$', text)), None)
     if first_material:
         links.append((f'[{first_material}]', first_material))
