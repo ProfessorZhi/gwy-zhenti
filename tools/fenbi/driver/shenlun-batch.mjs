@@ -115,7 +115,7 @@ for (const [area, list] of grouped) {
     if (scan.code !== 0) { receipt.failed.push({ area, step: 'scan', code: scan.code, detail: scan.stderr.trim().slice(-400) }); continue; }
     inventory = JSON.parse(await fs.readFile(inventoryFile, 'utf8'));
   }
-  areaReceipt.inventory = { pages: inventory.pagesRead, items: (inventory.items || []).length };
+  areaReceipt.inventory = { pages: inventory.pagesRead, items: (inventory.items || []).length, truncated: Boolean(inventory.truncated) };
   const byId = new Map((inventory.items || []).map((item) => [String(item.sourceId), item]));
 
   for (const candidate of pending) {

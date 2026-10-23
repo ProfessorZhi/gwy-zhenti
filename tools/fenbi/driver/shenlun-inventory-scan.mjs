@@ -172,6 +172,13 @@ try {
     receipt.pagesRead = pageNumber;
     if (pageNumber < totalPage) await sleep(GAP);
   }
+  const unique = new Map(receipt.items.map((item) => [item.sourceId, item]));
+  if (unique.size !== receipt.items.length) {
+    receipt.errors.push(`duplicate-ids-dropped:${receipt.items.length - unique.size}`);
+    receipt.items = [...unique.values()];
+  }
+  receipt.truncated = Number.isInteger(receipt.totalPage) && receipt.pagesRead < receipt.totalPage;
+  if (receipt.truncated) receipt.errors.push(`truncated:${receipt.pagesRead}/${receipt.totalPage}`);
   receipt.status = 'ok';
 } catch (error) {
   receipt.status = error.code || 'error';
