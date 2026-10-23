@@ -517,7 +517,7 @@ D项，“影响城乡一体化进程”原文并未提及，无中生有，排�
 
 ### 第 14 题
 
-日本长野县从1970年至2010年气温上升了![](assets-fenbi-90127/87167e62e156155954f5fd6d31b1ca6640fd4217f075d95486958175129f84f0.png)，青森县从1975年至2010年气温上升了![](assets-fenbi-90127/d5482d9f94663f54cbd610b2e6e88c6d54c1e1e37084fd4a2e22020e382edd5f.png)。在这段气温升高的时期，两地“富士”苹果的酸性成分含量平均减少15%，糖分含量则平均增加了5%。南京农业大学葡萄种植专家研究发现，在光热条件不同的地区种植的同一种葡萄，不仅口感不同，颜色也不同。比如红提，它种在新疆是黑色的，但同样的品种拿到南京种植就是粉红色的，甜味也有所不同。不同年份的法国葡萄酒价格会相差悬殊，原因就是不同年份的雨热条件不同，葡萄口感不同，酿出的酒的口味也不同。
+日本长野县从1970年至2010年气温上升了![](assets-fenbi-90127/87167e62e156155954f5fd6d31b1ca6640fd4217f075d95486958175129f84f0.png)，青森县从1975年至2010年气温上升了1.2°C。在这段气温升高的时期，两地“富士”苹果的酸性成分含量平均减少15%，糖分含量则平均增加了5%。南京农业大学葡萄种植专家研究发现，在光热条件不同的地区种植的同一种葡萄，不仅口感不同，颜色也不同。比如红提，它种在新疆是黑色的，但同样的品种拿到南京种植就是粉红色的，甜味也有所不同。不同年份的法国葡萄酒价格会相差悬殊，原因就是不同年份的雨热条件不同，葡萄口感不同，酿出的酒的口味也不同。
 
 上文主要说明了：
 
@@ -933,7 +933,7 @@ D项对应文段“这项极具价值的研究通过脑科学卓越中心的合�
 
 ### 第 26 题
 
-左下图是某人站在力传感器上做下蹲、起跳动作的示意图，点P是他的重心位置。右下图是根据力传感器采集到的数据做出的力-时间图像。两图中![](assets-fenbi-90127/d71c0c03a0e80e86bbe245cb97183bcd3ddfd96653615c70db67eb3ed7bad52d.png)各点均对应，其中有几个点在左下图中没有画出。重力加速度g取![](assets-fenbi-90127/1fcefcfb4b1f3eb5db5b78c6043fc7cb4da2ae2f235c345b889f4ef160c40e53.png)。
+左下图是某人站在力传感器上做下蹲、起跳动作的示意图，点P是他的重心位置。右下图是根据力传感器采集到的数据做出的力-时间图像。两图中a~g各点均对应，其中有几个点在左下图中没有画出。重力加速度g取10m/s^2。
 
 根据图像分析可知：
 
@@ -969,17 +969,17 @@ N-G=ma，在d点时，N-G=1500-500=1000N最大，此时加速度a也最大，D�
 
 ### 第 27 题
 
-如图所示，小董在一口与地面垂直的竖井旁边装了一只探照灯，灯光照射的方向与水平的夹角为![](assets-fenbi-90127/3f0a6c15ada273623c1839c4d0388f2e313c01ac9805b0200df9fa6a1315e3d1.png)，为了使灯光垂直照射向竖井的底部，小董在井上方又放置了一块镜子，那么，该镜子的反射面与水平面的夹角为：
+如图所示，小董在一口与地面垂直的竖井旁边装了一只探照灯，灯光照射的方向与水平的夹角为60°，为了使灯光垂直照射向竖井的底部，小董在井上方又放置了一块镜子，那么，该镜子的反射面与水平面的夹角为：
 
 ![](assets-fenbi-90127/d473034dcf5b7056e80626f48243874f4a53842e8623d5d502160e4082298a0a.png)
 
-A. ![](assets-fenbi-90127/34de10e30f3ef5a385df7a9374bd29e8c1e2689c3da7ee96b24b0e338bfacb91.png)
+A. 55°
 
-B. ![](assets-fenbi-90127/73263247a4af95eb64132516de0fde65595d6c913af373d22587399d861f4108.png)
+B. 65°
 
-C. ![](assets-fenbi-90127/315e502b5bc48ddc8829c68eb788ed5433d8d5191bc39e2b710e9316fee68bcf.png)
+C. 70°
 
-D. ![](assets-fenbi-90127/e9472ca8884e599ba748ddf10705c2771e2bb141b4c16b7c7a856bb1376340f5.png)
+D. 75°
 
 <details><summary>第 27 题 · 答案与解析</summary>
 
@@ -1055,11 +1055,11 @@ C
 
 当木板在水平地面时，没有摩擦力；
 
-随着木板抬起至铅块滑动前，铅块受的是静摩擦力。如图所示，根据受力分析可知，静摩擦力![](assets-fenbi-90127/fd644a775c755c6ec0b9a230947f628b8584aa4b22a08019d62a59050bd57b46.png)。随着木板抬起，木块倾角![](assets-fenbi-90127/1d90454d1ea2beb878d982ff5d562b7cbcf52409507f35e0b3c7bf5a95201402.png)变大，![](assets-fenbi-90127/662a4ccf6e30ec84878303ebaf3c43043aa9b45b69f0425d0cb3beedf9fb5c6b.png)变大，则静摩擦力f变大，据此可以排除A、B两项；
+随着木板抬起至铅块滑动前，铅块受的是静摩擦力。如图所示，根据受力分析可知，静摩擦力![](assets-fenbi-90127/fd644a775c755c6ec0b9a230947f628b8584aa4b22a08019d62a59050bd57b46.png)。随着木板抬起，木块倾角α变大，sinα变大，则静摩擦力f变大，据此可以排除A、B两项；
 
 ![](assets-fenbi-90127/62f6000d9c976c81fcd88e4687bb95c896ffb0bd16bc79d9a12204c7c9687592.png)
 
-铅块开始滑动后，所受摩擦力变为动摩擦力，动摩擦力![](assets-fenbi-90127/3ab9912c3d68938497d99460a8f7e197b055e4350180770e82095bdfd0365cdf.png)。随着木块倾角α变大，![](assets-fenbi-90127/7f13320b9fbe8ae23b74b09265a024fb740dfdb8ca127674996414c85372b769.png)变小，则动摩擦力变小，直至与地面垂直时，动摩擦力变为0，据此可排除D项，C项正确。
+铅块开始滑动后，所受摩擦力变为动摩擦力，动摩擦力![](assets-fenbi-90127/3ab9912c3d68938497d99460a8f7e197b055e4350180770e82095bdfd0365cdf.png)。随着木块倾角α变大，cosα变小，则动摩擦力变小，直至与地面垂直时，动摩擦力变为0，据此可排除D项，C项正确。
 
 故正确答案为C。
 
@@ -1211,33 +1211,33 @@ C
 
 根据题干描述的运动过程，可将本题分成两个过程，两个过程遵循能量守恒定律。
 
-过程一，从a点开始，到b点结束，![](assets-fenbi-90127/36ac3c448477de3621efe8921ae65b36ff8b92a35cec20805305ec67630d72e2.png)为a、b高度差。
+过程一，从a点开始，到b点结束，h\_1为a、b高度差。
 
-皮球在a点的所有能量是它的重力势能（![](assets-fenbi-90127/349919d6b61f999644d04250054f32eec24c936cc279cb7cce8471e9c9698991.png)）
+皮球在a点的所有能量是它的重力势能（E\_pa）
 
-![](assets-fenbi-90127/349919d6b61f999644d04250054f32eec24c936cc279cb7cce8471e9c9698991.png)\=mg![](assets-fenbi-90127/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)①
+E\_pa\=mgh\_a①
 
-运动到b点的所有能量是它的重力势能（![](assets-fenbi-90127/3381b64875908a2bb44711fa59d4951ee0ba4dacacf144a7706d59f3f0caf2df.png)）
+运动到b点的所有能量是它的重力势能（E\_pb）
 
-![](assets-fenbi-90127/3381b64875908a2bb44711fa59d4951ee0ba4dacacf144a7706d59f3f0caf2df.png)\=mg![](assets-fenbi-90127/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)②
+E\_pb\=mgh\_b②
 
-因为![](assets-fenbi-90127/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)\>![](assets-fenbi-90127/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)，所以mg![](assets-fenbi-90127/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)\>mg![](assets-fenbi-90127/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)，![](assets-fenbi-90127/349919d6b61f999644d04250054f32eec24c936cc279cb7cce8471e9c9698991.png)\>![](assets-fenbi-90127/3381b64875908a2bb44711fa59d4951ee0ba4dacacf144a7706d59f3f0caf2df.png)，所以从a到b能量减少，减少的能量即为皮球从a运动到b摩擦力所做的功（![](assets-fenbi-90127/5fe4a9983f881d86cbb947c6b7d2159a6e621fe813f187d04d18d59e0dacc330.png)），所以
+因为h\_a\>h\_b，所以mgh\_a\>mgh\_b，E\_pa\>E\_pb，所以从a到b能量减少，减少的能量即为皮球从a运动到b摩擦力所做的功（W\_f1），所以
 
-![](assets-fenbi-90127/5fe4a9983f881d86cbb947c6b7d2159a6e621fe813f187d04d18d59e0dacc330.png)\=mg![](assets-fenbi-90127/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)\-mg![](assets-fenbi-90127/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)\=mg（![](assets-fenbi-90127/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)\-![](assets-fenbi-90127/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)）![](assets-fenbi-90127/1a00f53f273a15913a5f2be6c4996eade06256accd60adbcb0ad8b392fd096b3.png)③
+W\_f1\=mgh\_a\-mgh\_b\=mg（h\_a\-h\_b）=mgh\_1③
 
-过程二，从b点开始，到c点结束，![](assets-fenbi-90127/4eaf85c1bd213393ee1de7f8cf54f798be7759c9e0d5188e28cac0cf21119a1e.png)为b、c高度差。
+过程二，从b点开始，到c点结束，h\_2为b、c高度差。
 
-同理，如过程一，皮球从b点到c点能量减少，减少的能量即为皮球从b运动到c摩擦力所做的功![](assets-fenbi-90127/e41ee282ee25aa440cd480d2b21f689747650ad46cbc8a78ba86f6dea1c88c95.png)，所以
+同理，如过程一，皮球从b点到c点能量减少，减少的能量即为皮球从b运动到c摩擦力所做的功W\_f2，所以
 
 ![](assets-fenbi-90127/585ecd11cf4ed8a1790095be288d6e2a52641730eab65888249d63a785f684b3.png)![](assets-fenbi-90127/3c348c318d8bf46d64647f356a2cb071d8fb2b13934f0486ca1ba9ed5a9973fb.png)![](assets-fenbi-90127/91a27906e1a6d2e1bad68574996df7e2a5b4706bcd83a9ee63dcf6ae75456f28.png)④
 
-故，比较![](assets-fenbi-90127/36ac3c448477de3621efe8921ae65b36ff8b92a35cec20805305ec67630d72e2.png)和![](assets-fenbi-90127/4eaf85c1bd213393ee1de7f8cf54f798be7759c9e0d5188e28cac0cf21119a1e.png)大小，即可理解为比较③![](assets-fenbi-90127/5fe4a9983f881d86cbb947c6b7d2159a6e621fe813f187d04d18d59e0dacc330.png)和④![](assets-fenbi-90127/e41ee282ee25aa440cd480d2b21f689747650ad46cbc8a78ba86f6dea1c88c95.png)的大小，此处可简单理解为：因为过程一比过程二多走了ac这段路，所以过程一摩擦力所做的功比较大，所以
+故，比较h\_1和h\_2大小，即可理解为比较③W\_f1和④W\_f2的大小，此处可简单理解为：因为过程一比过程二多走了ac这段路，所以过程一摩擦力所做的功比较大，所以
 
 ![](assets-fenbi-90127/73e8e75c3d0e5e0dae9172edef4378868b1bc1961b1fef429c640716f3847715.png)⑤
 
 将③④代入⑤可得：
 
-mg![](assets-fenbi-90127/36ac3c448477de3621efe8921ae65b36ff8b92a35cec20805305ec67630d72e2.png)\>mg![](assets-fenbi-90127/4eaf85c1bd213393ee1de7f8cf54f798be7759c9e0d5188e28cac0cf21119a1e.png)，![](assets-fenbi-90127/36ac3c448477de3621efe8921ae65b36ff8b92a35cec20805305ec67630d72e2.png)\>![](assets-fenbi-90127/4eaf85c1bd213393ee1de7f8cf54f798be7759c9e0d5188e28cac0cf21119a1e.png)，C项正确。
+mgh\_1\>mgh\_2，h\_1\>h\_2，C项正确。
 
 故正确答案为C。
 
@@ -1431,7 +1431,7 @@ C
 
 **解析**
 
-元素组成不同，优先考虑属性规律。观察发现，题干图形均为轴对称图形，并且每幅图的对称轴画出来发现，对称轴每次顺时针旋转![](assets-fenbi-90127/b6a390689dccf4c5ea219266f5e1f91b2e2b5eb1c98bd6dc40b96b370ec7d357.png)，排除D、B两项。题干中每幅图形内部都只由一种小元素构成，A项内部由两种小元素构成，C项内部由一种小元素构成，排除A项。
+元素组成不同，优先考虑属性规律。观察发现，题干图形均为轴对称图形，并且每幅图的对称轴画出来发现，对称轴每次顺时针旋转45°，排除D、B两项。题干中每幅图形内部都只由一种小元素构成，A项内部由两种小元素构成，C项内部由一种小元素构成，排除A项。
 
 ![](assets-fenbi-90127/942d83caade94b89374517dd8046bf866c21523e4a705563763597133227dfc8.png)
 
@@ -1465,7 +1465,7 @@ C
 
 ![](assets-fenbi-90127/ee8b4ba0bea0b5f8d645a70a690f4890b0767de88549f0d4628502c1edf438d5.png)
 
-每幅图都由横向的三个区域构成，每个区域存在三种可能性：×、![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)和![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)。通过对应区域的运算可知：×+![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)\=![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)，![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)+![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)\=×，![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)+![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)\=![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)，![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)+![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)\=×，![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)+×=![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)，![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)+×=![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)，![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)+![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)\=![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)。将从上往下数第二行两幅图形对应区域进行运算，最左侧区域：![](assets-fenbi-90127/f98ecf02f94e5212cd3d998cfef24575ee89dfe91577c1caf26e901cb16c08b9.png)+![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)\=×，排除A、B两项；中间区域：![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)+![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)\=![](assets-fenbi-90127/72fa750c70a3d2bb8c283b57356fb81b5e2ecfbdeee8c3615119974ed65ab995.png)，排除D项。
+每幅图都由横向的三个区域构成，每个区域存在三种可能性：×、○和●。通过对应区域的运算可知：×+●\=○，○+●\=×，●+●\=●，●+○\=×，●+×=○，○+×=●，○+○\=○。将从上往下数第二行两幅图形对应区域进行运算，最左侧区域：●+○\=×，排除A、B两项；中间区域：○+○\=○，排除D项。
 
 故正确答案为C。
 
@@ -2035,13 +2035,13 @@ A
 
 第一步：翻译题干。
 
-Ⅰ.李副主席在本市过年![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)李副主席负责迎新春宣传活动
+Ⅰ.李副主席在本市过年→李副主席负责迎新春宣传活动
 
-Ⅱ.张副主席在本市过年![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)张副主席负责微信平台的维护
+Ⅱ.张副主席在本市过年→张副主席负责微信平台的维护
 
-Ⅲ.王主席在外地过年![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)李副主席或张副主席在本市过年
+Ⅲ.王主席在外地过年→李副主席或张副主席在本市过年
 
-Ⅳ.王主席在本市过年![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)王主席负责迎新春宣传活动或者微信平台的维护
+Ⅳ.王主席在本市过年→王主席负责迎新春宣传活动或者微信平台的维护
 
 Ⅴ.迎新春宣传活动和微信平台维护都只需要一名副主席负责
 
@@ -2185,17 +2185,17 @@ D
 
 第一步：翻译题干。
 
-①大多数中年乘客![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)购买了航空意外险
+①大多数中年乘客→购买了航空意外险
 
-②金卡及以上会员![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)购买了航空延误险
+②金卡及以上会员→购买了航空延误险
 
-③购买了航空意外险![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)\-购买航空延误险
+③购买了航空意外险→\-购买航空延误险
 
-根据①③可知，大多数中年乘客![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)购买了航空意外险![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)\-购买航空延误险，可以推出有的中年乘客没有购买航空延误险，Ⅰ必定为真；
+根据①③可知，大多数中年乘客→购买了航空意外险→\-购买航空延误险，可以推出有的中年乘客没有购买航空延误险，Ⅰ必定为真；
 
-根据②③可知，金卡及以上会员![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)购买了航空延误险![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)\-购买了航空意外险，即金卡及以上会员都没有购买航空意外险，Ⅱ必定为真；
+根据②③可知，金卡及以上会员→购买了航空延误险→\-购买了航空意外险，即金卡及以上会员都没有购买航空意外险，Ⅱ必定为真；
 
-根据①③可知，大多数中年乘客![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)购买了航空意外险![](assets-fenbi-90127/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)\-购买航空延误险，即大多数中年乘客没有购买了航空延误险，但无法推出有的中年乘客一定购买了航空延误险，Ⅲ不必然为真；
+根据①③可知，大多数中年乘客→购买了航空意外险→\-购买航空延误险，即大多数中年乘客没有购买了航空延误险，但无法推出有的中年乘客一定购买了航空延误险，Ⅲ不必然为真；
 
 只有Ⅰ和Ⅱ必然为真。
 
@@ -2233,15 +2233,15 @@ C
 
 ### 第 62 题
 
-![](assets-fenbi-90127/4ef2b933467e3bffadef03e6f19389333bbe59d6238fbaa957fb15c53a60522c.png)，![](assets-fenbi-90127/f0feeabe6873f0e414da8990b2590b23461e444bd7d05b0a38843868eaa6ecc4.png)，![](assets-fenbi-90127/7cbeb1830695ee09225ddb2850b5740a18f505e322c33742d741ef5f5ef48ecf.png)，![](assets-fenbi-90127/88f880b74f2326c70e98d52e5535e21ecb2ca254e953deae99dbe5656a5040d4.png)，![](assets-fenbi-90127/25edd36fff8707022eac75016baaeb977f084773457c03459898994402432b40.png)，（ ）
+2/5，4/21，2/15，8/77，10/117，（ ）
 
-A. ![](assets-fenbi-90127/14713529df39eefe6632ba756b871e93494d84a8bc0deb79a54e84480f35418f.png)
+A. 12/143
 
-B. ![](assets-fenbi-90127/c05ea987e15930e7f939a8638fc053a288593a9c830c408836f5431fa51c4539.png)
+B. 4/45
 
-C. ![](assets-fenbi-90127/1ec402f45f5f8f87b9e937d838f97b3a99e9a651c7ad3da9cfd3fea1a051a8ee.png)
+C. 4/55
 
-D. ![](assets-fenbi-90127/7ce4a313c818d70a16fb431bb6b21a342d2b53c1f8efc72c57eb7d43882404d7.png)
+D. 12/167
 
 <details><summary>第 62 题 · 答案与解析</summary>
 
@@ -2251,7 +2251,7 @@ C
 
 **解析**
 
-数列全为分数，判定为分数数列。观察分子分母，增减规律不统一，考虑反约分。将原数列转化为：![](assets-fenbi-90127/4ef2b933467e3bffadef03e6f19389333bbe59d6238fbaa957fb15c53a60522c.png)，![](assets-fenbi-90127/f0feeabe6873f0e414da8990b2590b23461e444bd7d05b0a38843868eaa6ecc4.png)，![](assets-fenbi-90127/aef027acfc973e946fdf3ffbd5c6c54bc3a2beb817bf1da43c45d73ba123d8cc.png)，![](assets-fenbi-90127/88f880b74f2326c70e98d52e5535e21ecb2ca254e953deae99dbe5656a5040d4.png)，![](assets-fenbi-90127/25edd36fff8707022eac75016baaeb977f084773457c03459898994402432b40.png)，（ ）。分子为：2，4，6，8，10，（ ），是公差为2的等差数列，即所求项分子为10+2=12；分母为：5，21，45，77，117，（ ），无明显特征，作差后新数列为：16，24，32，40，（ ），是公差为8的等差数列，新数列所求项=40+8=48，推出分母原数列所求项=117+48=165。故原数列所求项为![](assets-fenbi-90127/93c6ef201ae669a10789cd90527c9cc4d55ff8d903552ccb8bec0157326f4d8d.png)。
+数列全为分数，判定为分数数列。观察分子分母，增减规律不统一，考虑反约分。将原数列转化为：2/5，4/21，6/45，8/77，10/117，（ ）。分子为：2，4，6，8，10，（ ），是公差为2的等差数列，即所求项分子为10+2=12；分母为：5，21，45，77，117，（ ），无明显特征，作差后新数列为：16，24，32，40，（ ），是公差为8的等差数列，新数列所求项=40+8=48，推出分母原数列所求项=117+48=165。故原数列所求项为![](assets-fenbi-90127/93c6ef201ae669a10789cd90527c9cc4d55ff8d903552ccb8bec0157326f4d8d.png)。
 
 故正确答案为C。
 
@@ -2361,9 +2361,9 @@ B
 
 **解析**
 
-已知老李速度为3千米每小时，20分钟=![](assets-fenbi-90127/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)小时，即每走20分钟走1千米路。根据“每走20分钟休息5分钟”，可得老李每走1千米，加上休息共需要25分钟。
+已知老李速度为3千米每小时，20分钟=1/3小时，即每走20分钟走1千米路。根据“每走20分钟休息5分钟”，可得老李每走1千米，加上休息共需要25分钟。
 
-路程全长6千米，老李前5千米每走1千米需要休息一次，最后1千米直接走到终点，不需要休息。故所需时间为![](assets-fenbi-90127/6c6ff1dc4654f0ca762d7d45939af8e0a611463e6bf8108463c49834f61505ee.png)![](assets-fenbi-90127/4cb1ed4b9103f2f9ea9c8543f2f1f58b49d5d0d1e3a572b9bf8a9926405986cd.png)+1km×20分钟=145分钟=2小时25分钟，所以老李早上9：00出发，11：25到家。
+路程全长6千米，老李前5千米每走1千米需要休息一次，最后1千米直接走到终点，不需要休息。故所需时间为5km/1km![](assets-fenbi-90127/4cb1ed4b9103f2f9ea9c8543f2f1f58b49d5d0d1e3a572b9bf8a9926405986cd.png)+1km×20分钟=145分钟=2小时25分钟，所以老李早上9：00出发，11：25到家。
 
 故正确答案为B。
 
@@ -2785,11 +2785,11 @@ B
 
 A项：定位表格，2013年，“一带一路”沿线国家与华东地区贸易额为3644.1亿美元，2013年全年共365天，所以日均贸易额为![](assets-fenbi-90127/c433da79dc47ddca10a921ccf30453b4606a08971f58cfbaae255df5c9ebcf1c.png)10亿美元，错误；
 
-B项：定位表格，2015年、2016年“一带一路”沿线国家与华东地区贸易额分别为3675.2亿美元、3616.2亿美元；由图1可得，2015年、2016年华东对俄罗斯出口额分别是145.4亿美元、167.5亿美元；由图2可得，2015年、2016年华东自俄罗斯进口额分别是68.6亿美元、82.4亿美元，所以![](assets-fenbi-90127/2f77c09b897e21b5f06ccb1ead7dae3e5e3ee484e185010b6eee0c57ed6c022e.png)![](assets-fenbi-90127/17f461dc0c9722674083bd749b02da974147f94fa3c56b9c0481f0cb4b7c8cdd.png)\=![](assets-fenbi-90127/7c1220bd0edaf4d69c3243fe0626f480830d0a1c99d465344fee93baec179cb8.png)![](assets-fenbi-90127/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)![](assets-fenbi-90127/16a862a1fa1c667b21b7bdd37d19e6b5ba9399c39b78bc0164b70578c217a1aa.png)5.8%，2016年比重=![](assets-fenbi-90127/3902feb21f197affc3a0bcff46ecba5e9afd7e58d96eca6f88d08395f991e154.png)\=![](assets-fenbi-90127/cdb675285be2f753b3a404b30dcd43a6d4a5369bb1cb589256d272c6c73faaab.png)![](assets-fenbi-90127/58b1bdd8a377a691e4f18c18e0e0ca233cc332184054d1ba70e4d48aef910666.png)6.9%，16年比重高于15年，正确；
+B项：定位表格，2015年、2016年“一带一路”沿线国家与华东地区贸易额分别为3675.2亿美元、3616.2亿美元；由图1可得，2015年、2016年华东对俄罗斯出口额分别是145.4亿美元、167.5亿美元；由图2可得，2015年、2016年华东自俄罗斯进口额分别是68.6亿美元、82.4亿美元，所以![](assets-fenbi-90127/2f77c09b897e21b5f06ccb1ead7dae3e5e3ee484e185010b6eee0c57ed6c022e.png)![](assets-fenbi-90127/17f461dc0c9722674083bd749b02da974147f94fa3c56b9c0481f0cb4b7c8cdd.png)\=![](assets-fenbi-90127/7c1220bd0edaf4d69c3243fe0626f480830d0a1c99d465344fee93baec179cb8.png)≈214/3700≈5.8%，2016年比重=![](assets-fenbi-90127/3902feb21f197affc3a0bcff46ecba5e9afd7e58d96eca6f88d08395f991e154.png)\=![](assets-fenbi-90127/cdb675285be2f753b3a404b30dcd43a6d4a5369bb1cb589256d272c6c73faaab.png)250/3600≈6.9%，16年比重高于15年，正确；
 
 C项：顺差=出口-进口，定位图1，2015年、2016年华东对新加坡出口额分别是190.9、163.0亿美元，定位图2，2015年、2016年华东自新加坡进口额分别是137.3、119.9亿美元，所以2016年顺差=2016年华东对新加坡出口额-2016华东自新加坡进口额=163.0-119.9=43.1亿美元，2015年顺差=2015年华东对新加坡出口额-2015华东自新加坡进口额=190.9-137.3=53.6亿美元，2016年顺差<2015年顺差，错误；
 
-D项：定位图1，2016年华东对新加坡、菲律宾出口额分别是163.0亿美元、98.7亿美元，定位图2，2016年华东自新加坡、菲律宾进口额分别是119.9亿美元、67.3亿美元，定位表格，2016年“一带一路”沿线国家与华东地区贸易额为3616.2亿美元，所以2016年新加坡所占比重比菲律宾高![](assets-fenbi-90127/2a9ca0d2a6c494e9f964dd384586a2ee81ca7b97aa99b5597a29e12e8331b9bf.png)![](assets-fenbi-90127/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)![](assets-fenbi-90127/d1f022e9b2e0892ce5df35ee97af20d5123d978d23a6169a3c6103f953ab86c8.png)3.2%，即高3.2个百分点，不到5个百分点，错误。
+D项：定位图1，2016年华东对新加坡、菲律宾出口额分别是163.0亿美元、98.7亿美元，定位图2，2016年华东自新加坡、菲律宾进口额分别是119.9亿美元、67.3亿美元，定位表格，2016年“一带一路”沿线国家与华东地区贸易额为3616.2亿美元，所以2016年新加坡所占比重比菲律宾高![](assets-fenbi-90127/2a9ca0d2a6c494e9f964dd384586a2ee81ca7b97aa99b5597a29e12e8331b9bf.png)≈117/3600≈3.2%，即高3.2个百分点，不到5个百分点，错误。
 
 故正确答案为B。
 
@@ -2819,11 +2819,11 @@ B
 
 **解析**
 
-由题干“平均每年较上年增长”，结合选项为百分数，可判定本题为年均增长率计算问题。定位表格材料，2016年总票房为457.1亿元，2012年总票房为170.7亿元。代入公式![](assets-fenbi-90127/3dad4e8217b2c62b20e20b6189ad7b3f0d64578aed56f7f1d1760d3a41a54e72.png)![](assets-fenbi-90127/0b9b3bf6a9c573c28f6ae1a5c20b38aa910e4cff660cdfef83d9b0bb1b0932fe.png)，则有![](assets-fenbi-90127/38fb9a9792563c071e3515971f6044171935cce4562f299558d8c311e074b070.png)![](assets-fenbi-90127/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-90127/b2c25cb2302da99b2dad650369e76ff1a0644c474e7763d2b744035aeb019dd0.png)![](assets-fenbi-90127/415e4208b3c6f9b1bef916e0258baec623b49d0cacaa14f0a355a364be801fcc.png)。
+由题干“平均每年较上年增长”，结合选项为百分数，可判定本题为年均增长率计算问题。定位表格材料，2016年总票房为457.1亿元，2012年总票房为170.7亿元。代入公式![](assets-fenbi-90127/3dad4e8217b2c62b20e20b6189ad7b3f0d64578aed56f7f1d1760d3a41a54e72.png)![](assets-fenbi-90127/0b9b3bf6a9c573c28f6ae1a5c20b38aa910e4cff660cdfef83d9b0bb1b0932fe.png)，则有(1+r)^4=457.1/170.7≈2.7。
 
-若r=20%，则![](assets-fenbi-90127/fcf2c5af999acdad518c23a52fe1185d75c9122906303f06cf26ad405d885a9d.png)![](assets-fenbi-90127/1629c273794b7606700585804fe5aa18f7a41939b92f1ad4f2c4bf127ee10c82.png)![](assets-fenbi-90127/c52ae8a3a9923567adc0d8fd21f7319cd6d04d7eec6dd95c825bb277dd00bb22.png)![](assets-fenbi-90127/d4b1a978a469bdeeabf56b7914f677a2c82221a67d3343ba81ee8c28b6e5e23a.png)。
+若r=20%，则![](assets-fenbi-90127/fcf2c5af999acdad518c23a52fe1185d75c9122906303f06cf26ad405d885a9d.png)![](assets-fenbi-90127/1629c273794b7606700585804fe5aa18f7a41939b92f1ad4f2c4bf127ee10c82.png)≈1.4^2![](assets-fenbi-90127/d4b1a978a469bdeeabf56b7914f677a2c82221a67d3343ba81ee8c28b6e5e23a.png)。
 
-若r=30%，则![](assets-fenbi-90127/2d79d51be5e79cd3031ac07e1c2d51b3f958f01409bf4d3800a6d4fe9669c52e.png)![](assets-fenbi-90127/424871e5b12d66699396fa7877592f3ea78a58f20d30e9458ebbc14d4a093dc1.png)![](assets-fenbi-90127/7f5ec8575c9fcce5f9e901a40ee24b7c0e8b30fe0f725622db3919ce01467e74.png)![](assets-fenbi-90127/0eb0e2880aa997dcd87909e72f5af27ea128c7a6f73263ddb4c5eb5f2272dd10.png)。
+若r=30%，则![](assets-fenbi-90127/2d79d51be5e79cd3031ac07e1c2d51b3f958f01409bf4d3800a6d4fe9669c52e.png)![](assets-fenbi-90127/424871e5b12d66699396fa7877592f3ea78a58f20d30e9458ebbc14d4a093dc1.png)≈1.7^2![](assets-fenbi-90127/0eb0e2880aa997dcd87909e72f5af27ea128c7a6f73263ddb4c5eb5f2272dd10.png)。
 
 因此可得：20%<r<30%，结合选项只有B项满足。
 
@@ -2877,7 +2877,7 @@ C
 
 **解析**
 
-根据题干“2016年我国平均电影票价比上一年约”，结合选项为提高/下降+单位，可判定本题为平均数的增长量问题。定位表格材料可得：2016年总票房为457.1亿元，观影人次为13.7亿人次；2015年总票房为440.7亿元，观影人次为12.6亿人次。故所求=2016年平均电影票价-2015年平均电影票价![](assets-fenbi-90127/594cea7ff90a127738735bd88c179907cbf8185cfc8d9a6a6d3d4c015585bc93.png)![](assets-fenbi-90127/ee98ecc9eb89536c146ef26fb80459453b60d9746d85a0c323e33e763d198d60.png)![](assets-fenbi-90127/57cb44ce3b666d5d20c04b6ade533fd1b61fc4dcb125d4a52d699c08d7fe170f.png)![](assets-fenbi-90127/30dc481d3203c2fbfb3396dcf0a2ff9b5c0be36ae360e5974a281916a53da801.png)![](assets-fenbi-90127/c4d35fa974078b492018af41425fad26cbe00e477a94b0be04c8863c6eb64a1e.png)，即下降了1.6元。
+根据题干“2016年我国平均电影票价比上一年约”，结合选项为提高/下降+单位，可判定本题为平均数的增长量问题。定位表格材料可得：2016年总票房为457.1亿元，观影人次为13.7亿人次；2015年总票房为440.7亿元，观影人次为12.6亿人次。故所求=2016年平均电影票价-2015年平均电影票价![](assets-fenbi-90127/594cea7ff90a127738735bd88c179907cbf8185cfc8d9a6a6d3d4c015585bc93.png)![](assets-fenbi-90127/ee98ecc9eb89536c146ef26fb80459453b60d9746d85a0c323e33e763d198d60.png)![](assets-fenbi-90127/57cb44ce3b666d5d20c04b6ade533fd1b61fc4dcb125d4a52d699c08d7fe170f.png)-440.7/12.6![](assets-fenbi-90127/c4d35fa974078b492018af41425fad26cbe00e477a94b0be04c8863c6eb64a1e.png)，即下降了1.6元。
 
 故正确答案为C。
 
@@ -2907,11 +2907,11 @@ A
 
 2013年：![](assets-fenbi-90127/c4bea23d40a52c839e7985d309382edd0efccbee0e4fd8636c1ad4f94f28ac8c.png)![](assets-fenbi-90127/80084284739adc8302c953b2295bb1aacbd9a0e91d74c729c4285c296e629b0e.png)4.8块/家；
 
-2014年：![](assets-fenbi-90127/6887a37efb13f9e2f929d84d292055cae2cb0de243d01f3ffb400ce6ca22dc5a.png)![](assets-fenbi-90127/e1b500a150619eae90b39ed77d6869c75cdaf899a33ac865f0199d281ae2c481.png)![](assets-fenbi-90127/4cca4e2245ad13ea5704001c76e84aea911fc3d198709affbce2ad149246c21b.png)块/家；
+2014年：23592/4340![](assets-fenbi-90127/e1b500a150619eae90b39ed77d6869c75cdaf899a33ac865f0199d281ae2c481.png)≈5.5块/家；
 
-2015年：![](assets-fenbi-90127/d8f9aacf09941da0ab4927dacca1dd80a9ca2e3ba7564623d522655764b1cce4.png)![](assets-fenbi-90127/7cf50c661f969d4edf251f306f7420dee914715fa68629a594d85550b0f88964.png)![](assets-fenbi-90127/4d323fd9a3e41db6b41898f112f23b6c4b1d37b6c365a53cbf8d2c67e0aef465.png)块/家；
+2015年：![](assets-fenbi-90127/d8f9aacf09941da0ab4927dacca1dd80a9ca2e3ba7564623d522655764b1cce4.png)31627/6100≈5.2块/家；
 
-2016年：![](assets-fenbi-90127/46f4bfd8e9abdfb74a61c08bd6279af04db0cb17c878a4ef3579e24e2d82659b.png)![](assets-fenbi-90127/a43bf3969703d7452ba0bc3e9a81fb0ba08c3cff72742a4c2b269655e275d5c1.png)![](assets-fenbi-90127/7ef92bc741db48cb7c25e9f770c3f5287b2ec13ff271811fe0e026f184073b74.png)块/家。
+2016年：41179/7730![](assets-fenbi-90127/a43bf3969703d7452ba0bc3e9a81fb0ba08c3cff72742a4c2b269655e275d5c1.png)≈5.3块/家。
 
 则2013年我国平均每家影院拥有的银幕数最少。
 
@@ -2939,7 +2939,7 @@ D
 
 **解析**
 
-A项：定位表格第二、三行，农村院线票房占全国票房的比重![](assets-fenbi-90127/27382ba817de0a7e07eb28d7df243e6e452922112c1cfd3a82e35ac4b21b6020.png)。2012-2014年农村院线票房所占比重分别为：2012年：![](assets-fenbi-90127/29ea055738ab2ada330bd5d6f41fb487d0cfe3eefa4099a0c4f714b6c0a545c1.png)![](assets-fenbi-90127/44320b52ac4a2b19496ca0c144c995a8218339356894306fbbfcca6f6a03415b.png)；2013年：![](assets-fenbi-90127/40b26b8c49bb07a4524e1e31a7d80bd0fc39927ac08d6d52636283c77f00ebb6.png)![](assets-fenbi-90127/cf490d106903adf6a50865244bac3991daeaae8bdf38a5c0d6bdd60849c314cd.png)![](assets-fenbi-90127/97cfcd7d1c46b786b9c08cfd1f801ec1c37a35e27ae3afd1e04ca1fafc301bf3.png)；2014年：![](assets-fenbi-90127/c057644fe9962f31fa3762aa131d6b517efcbb76fa3659eaeff290843ddd584c.png)![](assets-fenbi-90127/f913dbaa3498f92ab105a669348de675730aea086e4e4f96b20a834924d32236.png)![](assets-fenbi-90127/e39a48872ad6d9a23392b183b45478114737f4f18522aa3e33ae46560126403f.png)，比重逐年降低，正确；
+A项：定位表格第二、三行，农村院线票房占全国票房的比重![](assets-fenbi-90127/27382ba817de0a7e07eb28d7df243e6e452922112c1cfd3a82e35ac4b21b6020.png)。2012-2014年农村院线票房所占比重分别为：2012年：![](assets-fenbi-90127/29ea055738ab2ada330bd5d6f41fb487d0cfe3eefa4099a0c4f714b6c0a545c1.png)![](assets-fenbi-90127/44320b52ac4a2b19496ca0c144c995a8218339356894306fbbfcca6f6a03415b.png)；2013年：![](assets-fenbi-90127/40b26b8c49bb07a4524e1e31a7d80bd0fc39927ac08d6d52636283c77f00ebb6.png)![](assets-fenbi-90127/cf490d106903adf6a50865244bac3991daeaae8bdf38a5c0d6bdd60849c314cd.png)≈1.1%；2014年：![](assets-fenbi-90127/c057644fe9962f31fa3762aa131d6b517efcbb76fa3659eaeff290843ddd584c.png)![](assets-fenbi-90127/f913dbaa3498f92ab105a669348de675730aea086e4e4f96b20a834924d32236.png)≈0.4%，比重逐年降低，正确；
 
 B项：定位表格第四行，2016年观影人次为13.7亿，2013年观影人次为6.2亿。2016年观影人次比2013年增加的倍数![](assets-fenbi-90127/e2feee921f4d850fc13460d0df3b8c375f19f2c799cc1eaf8f4be30e7474fa35.png)![](assets-fenbi-90127/e6804ca7e1a6cb206511d21e99981659d7fd8902f0d214468725d5c128197847.png)\=1.2，即增加了一倍多，正确；
 
@@ -2977,7 +2977,7 @@ B
 
 **解析**
 
-根据“2017年8月国内生产的汽车中，有（ ）是新能源汽车”，结合选项为百分数，且材料时间为2017年8月，判断本题为现期比重问题。定位文字资料，2017年8月，国内汽车产量为209.3万辆，当月新能源汽车产量为7.2万辆，![](assets-fenbi-90127/6f0a6ab3eb3d10e064631032db31dce3b0503a711beea1e92d3b5ca48b54a98f.png)![](assets-fenbi-90127/3ba685a3390031c6261c4f0c1714b4231638dcb20a4e36546a0352470d5cc2cf.png)![](assets-fenbi-90127/11e74be76f1096a6f23208fe130b5cbfddba194ada3e8ab92b031e2b0b75bc0e.png)![](assets-fenbi-90127/e6b0fe8c75d904a184b6a19ef869ff5cda03ad01ac6991fb18730b21d5e3b2be.png)，在3%～4%之间。
+根据“2017年8月国内生产的汽车中，有（ ）是新能源汽车”，结合选项为百分数，且材料时间为2017年8月，判断本题为现期比重问题。定位文字资料，2017年8月，国内汽车产量为209.3万辆，当月新能源汽车产量为7.2万辆，![](assets-fenbi-90127/6f0a6ab3eb3d10e064631032db31dce3b0503a711beea1e92d3b5ca48b54a98f.png)![](assets-fenbi-90127/3ba685a3390031c6261c4f0c1714b4231638dcb20a4e36546a0352470d5cc2cf.png)≈7.2/210≈3.4%，在3%～4%之间。
 
 故正确答案为B。
 
@@ -3091,9 +3091,9 @@ B
 
 ①：定位文字和表格材料可得，2017年8月新能源汽车销量同比增速为76.3%，2017年8月国内汽车销量同比增速为5.3%。根据两期比重结论，部分量增速(a=76.3%)>整体增速(b=5.3%)，比重上升，正确；
 
-②：定位表格材料可得，2017年1-8月每月的新能源汽车产量，第一季度总产量=0.7+1.8+3.3=5.8万辆，第二季度产量=3.7+5.1+6.5=15.3万辆，2017年第二季度新能源汽车产量是第一季度的![](assets-fenbi-90127/eb9856801848a31bff6f87cf6abfa1509e8c9cac81ce31d96901d79010b4ea41.png)![](assets-fenbi-90127/425410939de2f39e7035964f55b2351ab1b15dd755c12b5e377827162d043efa.png)，错误；
+②：定位表格材料可得，2017年1-8月每月的新能源汽车产量，第一季度总产量=0.7+1.8+3.3=5.8万辆，第二季度产量=3.7+5.1+6.5=15.3万辆，2017年第二季度新能源汽车产量是第一季度的![](assets-fenbi-90127/eb9856801848a31bff6f87cf6abfa1509e8c9cac81ce31d96901d79010b4ea41.png)\<3，错误；
 
-③：定位表格材料可知，2017年8月新能源汽车销量6.8万辆，同比增速为76.3%，2017年6月新能源汽车销量5.9万辆，同比增速为33%,。根据公式：![](assets-fenbi-90127/ee82fe1a3c8a11a30b1ecb301be3a3225ecaf241fb4ec53e79ef29b8b5565002.png)，可得2016年8月新能源汽车销量![](assets-fenbi-90127/3cd490d4eea139edcfb02f6835d65cc76b4ca0af89d3328f27265398e3f6baf2.png)![](assets-fenbi-90127/262287751c483d4f25bdaaec2e8df45ecd46c54955a06812af5abe9a7ff2d4ba.png)万辆，2016年6月新能源汽车销量![](assets-fenbi-90127/94be7fe218b9f837329399e0a92394ce68f35708c4675ae296b4693b51854b8d.png)![](assets-fenbi-90127/84b8463a9f9e151a9f7899168fbef926cea9e1cbe087d33351a6a617f0632eda.png)万辆，2016年8月新能源汽车销量低于6月水平，错误；
+③：定位表格材料可知，2017年8月新能源汽车销量6.8万辆，同比增速为76.3%，2017年6月新能源汽车销量5.9万辆，同比增速为33%,。根据公式：![](assets-fenbi-90127/ee82fe1a3c8a11a30b1ecb301be3a3225ecaf241fb4ec53e79ef29b8b5565002.png)，可得2016年8月新能源汽车销量![](assets-fenbi-90127/3cd490d4eea139edcfb02f6835d65cc76b4ca0af89d3328f27265398e3f6baf2.png)≈3.86万辆，2016年6月新能源汽车销量![](assets-fenbi-90127/94be7fe218b9f837329399e0a92394ce68f35708c4675ae296b4693b51854b8d.png)≈4.44万辆，2016年8月新能源汽车销量低于6月水平，错误；
 
 ④：定位表格材料可知，2017年1-8月每月的新能源汽车产量和销量，通过计算，前五个月的累计产量＝0.7＋1.8＋3.3＋3.7＋5.1＝14.6万辆＞10万辆，前五个月的累计销量＝0.6＋1.8＋3.1＋3.4＋4.5＝13.4万辆＞10万辆，则累计产量和累计销量均在5月内超过10万辆，正确。
 

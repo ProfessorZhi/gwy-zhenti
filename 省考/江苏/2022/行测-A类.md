@@ -1663,7 +1663,7 @@ A
 
 **解析**
 
-数列无明显特征，优先考虑多级数列。后一项-前一项得到新数列：16，-24，36，-54，（ ），观察发现新数列正、负交替，且相邻两项存在明显的倍数关系，新数列后一项![](assets-fenbi-162438/f5a6c68647c30af90c17798019a4c35c1b5f299c7940595dcc2595ecc6177eed.png)前一项均为-1.5，则新数列下一项为（-54）×（-1.5）=81。故所求项=（-19）+81=62。
+数列无明显特征，优先考虑多级数列。后一项-前一项得到新数列：16，-24，36，-54，（ ），观察发现新数列正、负交替，且相邻两项存在明显的倍数关系，新数列后一项÷前一项均为-1.5，则新数列下一项为（-54）×（-1.5）=81。故所求项=（-19）+81=62。
 
 故正确答案为A。
 
@@ -1689,7 +1689,7 @@ D
 
 **解析**
 
-数列各项均为小数，优先考虑机械划分。将原数列整数部分与小数部分分别找规律。整数部分组成的新数列为：2，2，8，56，560，（ ），观察该数列存在明显倍数关系，后一项![](assets-fenbi-162438/f5a6c68647c30af90c17798019a4c35c1b5f299c7940595dcc2595ecc6177eed.png)前一项后得到：1，4，7，10，（ ），是公差为3的等差数列，则等差数列的下一项为10+3=13，故所求项的整数部分为560×13=7280；小数部分组成的新数列为：5，4，9，13，22，（ ），观察可知：5+4=9，4+9=13，9+13=22，即第一项+第二项=第三项，故所求项的小数部分为13+22=35。综上，原数列所求项为7280.35。
+数列各项均为小数，优先考虑机械划分。将原数列整数部分与小数部分分别找规律。整数部分组成的新数列为：2，2，8，56，560，（ ），观察该数列存在明显倍数关系，后一项÷前一项后得到：1，4，7，10，（ ），是公差为3的等差数列，则等差数列的下一项为10+3=13，故所求项的整数部分为560×13=7280；小数部分组成的新数列为：5，4，9，13，22，（ ），观察可知：5+4=9，4+9=13，9+13=22，即第一项+第二项=第三项，故所求项的小数部分为13+22=35。综上，原数列所求项为7280.35。
 
 故正确答案为D。
 
@@ -1715,7 +1715,7 @@ C
 
 **解析**
 
-数列无明显特征，考虑多级数列。作差无规律，考虑作和。数列相邻两项相加得到新数列：1，8，27，64，依次可整理为：![](assets-fenbi-162438/e5bfcbfc0a3357f68ce653cd9c64c3e01afb82a939d8b8a3b4a7781db9c688d6.png)，![](assets-fenbi-162438/5cb160b64f0734584c8dfb0bbfbadbe7975d9a02371dbf2debcf807658c5688c.png)，![](assets-fenbi-162438/ddb0cccc06d074a470fddb031164c6020d18e8ebaaef79b073301c48d31610eb.png)，![](assets-fenbi-162438/a517cfa05d65a3b97f0dfa75e4bc27d4fa93a36c71a318d2867783ee2a4cd5d4.png)，新数列各项均为立方数，且底数为公差为1的等差数列，则下一项为![](assets-fenbi-162438/2970ff1a31035f0276161b69c210eed2642a9894879a64d4e58bdbb37e87efc5.png)，故所求项![](assets-fenbi-162438/47804b750dbf9a09f7eea439e864e501c97d17bcceada48820f6593d485cae60.png)。
+数列无明显特征，考虑多级数列。作差无规律，考虑作和。数列相邻两项相加得到新数列：1，8，27，64，依次可整理为：![](assets-fenbi-162438/e5bfcbfc0a3357f68ce653cd9c64c3e01afb82a939d8b8a3b4a7781db9c688d6.png)，2^3，3^3，4^3，新数列各项均为立方数，且底数为公差为1的等差数列，则下一项为![](assets-fenbi-162438/2970ff1a31035f0276161b69c210eed2642a9894879a64d4e58bdbb37e87efc5.png)，故所求项![](assets-fenbi-162438/47804b750dbf9a09f7eea439e864e501c97d17bcceada48820f6593d485cae60.png)。
 
 故正确答案为C。
 
@@ -1723,15 +1723,15 @@ C
 
 ### 第 49 题
 
-![](assets-fenbi-162438/debdccf5320b5c8f4397dcc141d05c07723617756c0403458dc0f40180f7a834.png)，![](assets-fenbi-162438/b84ea7d9acdf0ccd085fb27d3bf3e1861f24cf43537b279fff9705a9d8044b5c.png)，10，![](assets-fenbi-162438/8eb1bd91f4468f93321f88338956bf0835139a1ebee6da511854980fe4cbe918.png)，![](assets-fenbi-162438/40d034b48b2668df5250fc1b0770347d897e25eb34b0e38f5b86355a7e1a3eae.png)，（ ）
+√2，√27，10，7√5，√486，（ ）
 
-A. ![](assets-fenbi-162438/0361aad997668c108f8f96a410c68d38862ee40fa4272eedff3c95956ed92d9b.png)
+A. 9√8
 
-B. ![](assets-fenbi-162438/3875438026151bccba7cf74ae9d648d52f62e38b65feeed2ebc82258d9f83fdf.png)
+B. 10√5
 
-C. ![](assets-fenbi-162438/8204bc16e10bb2b616ebb7b2fdbef7d0cac3bfe617a6619431d9064c82d724d0.png)
+C. √847
 
-D. ![](assets-fenbi-162438/c85ae4c3cbe01dab7ec05b7217ed2a51fc6076b4feea705e04b582fda510a5de.png)
+D. √924
 
 <details><summary>第 49 题 · 答案与解析</summary>
 
@@ -1741,7 +1741,7 @@ C
 
 **解析**
 
-观察数列，有整数和根号，优先考虑机械划分。原数列可转化为：![](assets-fenbi-162438/87b56d6e46b01c0fdf9fdce4feae9a5147b10b3c553e7f01fb43d385e2a3f880.png)，![](assets-fenbi-162438/5a73156e580f974a515f8476c0bf95d591eb5453d1535df936ed33930a15d6d7.png)，![](assets-fenbi-162438/3139c0f59fa2d6495e7b81b10e11ff41a4ba2fbe6af65e9aa1c8b7a43b077894.png)，![](assets-fenbi-162438/8eb1bd91f4468f93321f88338956bf0835139a1ebee6da511854980fe4cbe918.png)，![](assets-fenbi-162438/89da80a307c9aba17fbbf225f714a051f93d2ee8109e96b545bc8d9ea7c9d757.png)，（ ）。整数部分为：1，3，5，7，9，是公差为2的等差数列，故所求项的整数部分为9+2=11；根号部分为：2，3，4，5，6，是公差为1的等差数列，故所求项的根号部分为6+1=7，则所求项为![](assets-fenbi-162438/e25822d0fbe0ca579f1d30effbda51402896fd6305167d593f86da185417045d.png)。
+观察数列，有整数和根号，优先考虑机械划分。原数列可转化为：1√2，3√3，5√4，7√5，9√6，（ ）。整数部分为：1，3，5，7，9，是公差为2的等差数列，故所求项的整数部分为9+2=11；根号部分为：2，3，4，5，6，是公差为1的等差数列，故所求项的根号部分为6+1=7，则所求项为![](assets-fenbi-162438/e25822d0fbe0ca579f1d30effbda51402896fd6305167d593f86da185417045d.png)。
 
 故正确答案为C。
 
@@ -1749,13 +1749,13 @@ C
 
 ### 第 50 题
 
-1，3，![](assets-fenbi-162438/313dc07bc2941bec338e5554c1b4bf00d8600f59c7d25780802ba5e823d46855.png)，![](assets-fenbi-162438/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)，![](assets-fenbi-162438/f4c0cb60cab89c5fe4fc72f3d3ae3907163fbf0d88a1be5953093865b0ea3be0.png)，（ ）
+1，3，7/2，5/2，31/24，（ ）
 
-A. ![](assets-fenbi-162438/f87f20d4d6f5185e1e684427449872c7f3f1aa99c3b9e45112f0a5803caba444.png)
+A. 8/15
 
-B. ![](assets-fenbi-162438/ba8f9dd87f3f54f74827df5a1acf41d43391e9917e87eb833310d414d634fc58.png)
+B. 21/40
 
-C. ![](assets-fenbi-162438/d29563cd25dcb1ea28019ccb8aa11ed3558d6bf123b5823ab3d53751b00cea04.png)
+C. 127/120
 
 D. 5
 
@@ -1767,7 +1767,7 @@ B
 
 **解析**
 
-数列大部分为分数，考虑分数数列。对数列进行反约分可得：![](assets-fenbi-162438/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)、![](assets-fenbi-162438/2c870d5c2bb6cec4973d2144d0464051a395109f6877ed88da7ab1e5aaabaabc.png)、![](assets-fenbi-162438/313dc07bc2941bec338e5554c1b4bf00d8600f59c7d25780802ba5e823d46855.png)、![](assets-fenbi-162438/e5860821ad94a812f7dfb495be8fbe2fbacb1c6ad4303cef2f2a03cf0cf95762.png)、![](assets-fenbi-162438/f4c0cb60cab89c5fe4fc72f3d3ae3907163fbf0d88a1be5953093865b0ea3be0.png)。分子部分为：1、3、7、15、31，后一项-前一项可得：2、4、8、16，是公比为2的等比数列，则所求项的分子部分为16×2+31=63。分母部分为：1、1、2、6、24，观察发现存在明显倍数关系，后一项![](assets-fenbi-162438/f5a6c68647c30af90c17798019a4c35c1b5f299c7940595dcc2595ecc6177eed.png)前一项可得：1、2、3、4，是公差为1的等差数列，则所求项的分母部分为（4+1）×24=120。故所求项![](assets-fenbi-162438/b785fc1565261206915a718d420f0e63f5618f8d234d0d39a113f9c7c0ef7849.png)。
+数列大部分为分数，考虑分数数列。对数列进行反约分可得：1/1、3/1、7/2、15/6、31/24。分子部分为：1、3、7、15、31，后一项-前一项可得：2、4、8、16，是公比为2的等比数列，则所求项的分子部分为16×2+31=63。分母部分为：1、1、2、6、24，观察发现存在明显倍数关系，后一项÷前一项可得：1、2、3、4，是公差为1的等差数列，则所求项的分母部分为（4+1）×24=120。故所求项![](assets-fenbi-162438/b785fc1565261206915a718d420f0e63f5618f8d234d0d39a113f9c7c0ef7849.png)。
 
 故正确答案为B。
 
@@ -1803,13 +1803,13 @@ D
 
 某公益组织登记在册的男、女志愿者人数之比为2：3，男性志愿者中20%为教师，女性志愿者中25%为教师。现从该公益组织登记在册的志愿者中随机选出1人，恰好为教师，则该志愿者为男性的概率是：
 
-A. ![](assets-fenbi-162438/73cc2372b05c719f1b9f1bb7646dfc1f82cbfd105dd8612dd5bb5aff377789ed.png)
+A. 2/5
 
-B. ![](assets-fenbi-162438/321ed404c17dd75eeca97422cbcb45373fc1a27444c83b38c2b181262716ca08.png)
+B. 3/7
 
-C. ![](assets-fenbi-162438/aff3dedb8069eb5cac1264b81b4a64a728a100f4bdbd79cb54b8be05a716f666.png)
+C. 9/16
 
-D. ![](assets-fenbi-162438/1a1683e876e7dfc18b25ea0eaa0baa383b9e87f2274329eb0b273ff6b9ebb731.png)
+D. 8/23
 
 <details><summary>第 52 题 · 答案与解析</summary>
 
@@ -1847,13 +1847,13 @@ B
 
 方法一：根据微积分原理，如果f(x)是区间\[a，b\]上的连续函数，并且![](assets-fenbi-162438/784ce81257b06ac8f809a0beea4f55c0826dc7375a6ecda604012ce32c72386d.png)，则![](assets-fenbi-162438/5589aa5712210d7afdcc26ea9a9104ddcaf0f131b3c7edca8c3d685feb719840.png)。
 
-A项：直线x=-1，x=1，以及曲线![](assets-fenbi-162438/87633122e09af0cd4031bde616ecfd779a04655928071d81a9f01721b19b7d05.png)和x轴围成的图形的面积可表示，x在\[-1，1\]上的积分，被积函数为![](assets-fenbi-162438/87633122e09af0cd4031bde616ecfd779a04655928071d81a9f01721b19b7d05.png)，所以所求面积![](assets-fenbi-162438/72aa219c5207f5475626696c42435239fc7cbd4de8ceb33ed1c714e176bd63c0.png)![](assets-fenbi-162438/d3af2816e41f5300da4b4f656f64857f3f22b07303de7c897c3bfd8e967c343e.png)![](assets-fenbi-162438/84e97fad73b906d2e09a43be84a2d9ca74bebf7020caaa40ab283f8c1cb91739.png)![](assets-fenbi-162438/5defd5ffb06e9e79004eb571ca56c4d65ab974458df0419cd48cb182f1d376f3.png)![](assets-fenbi-162438/703a4e6c33735ad9d7af7e0f776283955f829888029bfecf4818c3d81f7dc535.png)，不符合题意；
+A项：直线x=-1，x=1，以及曲线y=e^x和x轴围成的图形的面积可表示，x在\[-1，1\]上的积分，被积函数为y=e^x，所以所求面积![](assets-fenbi-162438/72aa219c5207f5475626696c42435239fc7cbd4de8ceb33ed1c714e176bd63c0.png)=e^x\|\_{-1}^{1}![](assets-fenbi-162438/84e97fad73b906d2e09a43be84a2d9ca74bebf7020caaa40ab283f8c1cb91739.png)![](assets-fenbi-162438/5defd5ffb06e9e79004eb571ca56c4d65ab974458df0419cd48cb182f1d376f3.png)≠2，不符合题意；
 
-B项：直线![](assets-fenbi-162438/ba46e5417d855969bd0197827301bfdb9ec53b531b069acd4471634453e8b44a.png)，![](assets-fenbi-162438/ea8c749d70e7439fcc33a52f73be6fa0d295b154fc17979f459095510d11df9e.png)，以及曲线y=cosx和x轴围成的图形的面积可表示，x在\[![](assets-fenbi-162438/12b176ca425fe1ebc3bf5d62ccbe8ce03dcd708a5b5fb477a1cbef7a9c6aae0a.png)，![](assets-fenbi-162438/3201fa7d61bf061df3cda66d75af57c9e1b8283df086452a2ed6b611d41ecf91.png)\]上的积分，被积函数为y=cosx，所以所求面积![](assets-fenbi-162438/b0cf3de23062fc245fb839a730f88ad94d0c4f5d5b67a302574ed4d40e8d467f.png)![](assets-fenbi-162438/f3987c7e8b679e301f543107cafc84b5c7bc9514ac7da1187d52686d2719085e.png)![](assets-fenbi-162438/63ccdd18d890ed101fe2e5a1d7795227c320ebf1d2de99047d4464e4775e07fa.png)![](assets-fenbi-162438/976bb67ef1874241cc3faa66a87e3848076916261c2e4e6a8efa4da29b1cf063.png)\=2，符合题意；
+B项：直线![](assets-fenbi-162438/ba46e5417d855969bd0197827301bfdb9ec53b531b069acd4471634453e8b44a.png)，x=π/2，以及曲线y=cosx和x轴围成的图形的面积可表示，x在\[π/2，π/2\]上的积分，被积函数为y=cosx，所以所求面积![](assets-fenbi-162438/b0cf3de23062fc245fb839a730f88ad94d0c4f5d5b67a302574ed4d40e8d467f.png)![](assets-fenbi-162438/f3987c7e8b679e301f543107cafc84b5c7bc9514ac7da1187d52686d2719085e.png)![](assets-fenbi-162438/63ccdd18d890ed101fe2e5a1d7795227c320ebf1d2de99047d4464e4775e07fa.png)![](assets-fenbi-162438/976bb67ef1874241cc3faa66a87e3848076916261c2e4e6a8efa4da29b1cf063.png)\=2，符合题意；
 
-C项：直线x=0，x=4，以及曲线![](assets-fenbi-162438/5c4155fae17f0fd777febb9c3f07cbde8417275c4042aaa384a67b4de7698cd5.png)和x轴围成的图形的面积可表示，x在\[0，4\]上的积分，被积函数为![](assets-fenbi-162438/5c4155fae17f0fd777febb9c3f07cbde8417275c4042aaa384a67b4de7698cd5.png)，所以所求面积![](assets-fenbi-162438/2939655d0994bb70bb3ba933003680d6b10872f3ffc88785c673b973410a84a4.png)![](assets-fenbi-162438/47e6f99eaf535c00152e6eba578771f53d3c4d91a03599c20a57356296a4f785.png)![](assets-fenbi-162438/46518af34eb1e2c41d08610735be559788d099694efe8260910ecdb6530699f6.png)![](assets-fenbi-162438/5a33a05475ba18087cc7de61b7abdd09196958eb9015774a82b647ab1ed42e9f.png)，不符合题意；
+C项：直线x=0，x=4，以及曲线y=√x和x轴围成的图形的面积可表示，x在\[0，4\]上的积分，被积函数为y=√x，所以所求面积![](assets-fenbi-162438/2939655d0994bb70bb3ba933003680d6b10872f3ffc88785c673b973410a84a4.png)![](assets-fenbi-162438/47e6f99eaf535c00152e6eba578771f53d3c4d91a03599c20a57356296a4f785.png)![](assets-fenbi-162438/46518af34eb1e2c41d08610735be559788d099694efe8260910ecdb6530699f6.png)=16/3，不符合题意；
 
-D项：直线x=0，x=2，以及曲线![](assets-fenbi-162438/96d24001979a6c6448d1cbab20c38e25718efa3df55af7a70a9b20837a2f5f1c.png)和x轴围成的图形的面积可表示，x在\[0，2\]上的积分，被积函数为![](assets-fenbi-162438/96d24001979a6c6448d1cbab20c38e25718efa3df55af7a70a9b20837a2f5f1c.png)，所以所求面积![](assets-fenbi-162438/17e7f93f3d17a163d03d43a935d071215c26ab5d1c084fc4e30ba08f8e09caba.png)![](assets-fenbi-162438/06548dbabba63389772c41dee71b69c0118a3631bc2a201fa94efb1726716f92.png)![](assets-fenbi-162438/71ba127dbf33c772cfc05842bd6209b82abd732aa1bebb675e49cbeb564a1c42.png)![](assets-fenbi-162438/c8e8090ae9a3dab93e3b141c9d09cfceea5d10a98c318e778bcc55c2441c0843.png)，不符合题意。
+D项：直线x=0，x=2，以及曲线y=x^2和x轴围成的图形的面积可表示，x在\[0，2\]上的积分，被积函数为y=x^2，所以所求面积![](assets-fenbi-162438/17e7f93f3d17a163d03d43a935d071215c26ab5d1c084fc4e30ba08f8e09caba.png)![](assets-fenbi-162438/06548dbabba63389772c41dee71b69c0118a3631bc2a201fa94efb1726716f92.png)![](assets-fenbi-162438/71ba127dbf33c772cfc05842bd6209b82abd732aa1bebb675e49cbeb564a1c42.png)=8/3，不符合题意。
 
 方法二：A项：
 
@@ -1871,7 +1871,7 @@ D项：
 
 ![](assets-fenbi-162438/dbc421f7ba0f2a1ca5b1474a7d461dcfd74c64b08d4c5c2aa4f93003d5baba2e.png)
 
-如图长方形的面积为4×2=8，所求函数阴影面积明显超过长方形面积的![](assets-fenbi-162438/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)，即超过2，不符合题意。
+如图长方形的面积为4×2=8，所求函数阴影面积明显超过长方形面积的1/4，即超过2，不符合题意。
 
 故正确答案为B。
 
@@ -1957,7 +1957,7 @@ C
 
 **解析**
 
-根据题意，因为乙比甲先出发15分钟，所以第一次相遇是甲追上乙。要使得乙从A地到B地所用的时间尽可能少，则乙的速度应尽可能大，即甲第一次追上乙花费的时间应尽可能多。因此当甲行驶30分钟后才追上乙时，乙的速度最大，此时甲、乙路程相等。可得方程：![](assets-fenbi-162438/44b98ff9ff6cc4704223fb5f92f022eafea353c9a80e8ed1ae7f8c65a1c3b281.png)，解得![](assets-fenbi-162438/d37d0a19132382314608af97d7f85015add8ea3694e6f4c15929dd24b742841d.png)公里/小时，则乙从A地到B地所用的时间至少为![](assets-fenbi-162438/34d1a5aee02e0daf51710c301a90f4c5df97839e4c546673da86f0a9b0160e4f.png)小时=135分钟。
+根据题意，因为乙比甲先出发15分钟，所以第一次相遇是甲追上乙。要使得乙从A地到B地所用的时间尽可能少，则乙的速度应尽可能大，即甲第一次追上乙花费的时间应尽可能多。因此当甲行驶30分钟后才追上乙时，乙的速度最大，此时甲、乙路程相等。可得方程：![](assets-fenbi-162438/44b98ff9ff6cc4704223fb5f92f022eafea353c9a80e8ed1ae7f8c65a1c3b281.png)，解得![](assets-fenbi-162438/d37d0a19132382314608af97d7f85015add8ea3694e6f4c15929dd24b742841d.png)公里/小时，则乙从A地到B地所用的时间至少为9/4=2 1/4小时=135分钟。
 
 备注：下图为甲、乙两人全程的路程与时间的函数图像，第一次相遇在45分钟，此时甲追上乙，然后甲休息，乙继续走。第二次相遇在90分钟，此时甲第二次追上乙，然后甲休息，乙继续走。第三次相遇在135分钟，此时两人同时到达B点，满足题干所说途中（不含起点和终点）相遇了2次。
 
@@ -1977,9 +1977,9 @@ A. 2：1
 
 B. 3：2
 
-C. ![](assets-fenbi-162438/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)：1
+C. √3：1
 
-D. 2：![](assets-fenbi-162438/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)
+D. 2：√3
 
 <details><summary>第 57 题 · 答案与解析</summary>
 
@@ -1989,11 +1989,11 @@ A
 
 **解析**
 
-根据题意，直三棱柱![](assets-fenbi-162438/433b762516e51faaf7d6099807417753dc172f998a5f6b8922c98f0a321c8727.png)与直三棱柱![](assets-fenbi-162438/4b3d7d5267f124e23b9e5a5e3900f08f234604ffcf83697ef4951833fe8381a7.png)的体积之比为1：3，根据三棱柱体积=底面积×高，高度相同（以![](assets-fenbi-162438/71c75b57dfa0992d8f36ddbd9d73c244fe39ea9598fae94d82a58d6e18660215.png)为高），故底面积之比为1：3，即![](assets-fenbi-162438/0f95eceed03dac679647e60fabd4f23865e0622b78540f355355c3b71c75f49b.png)。该立体图形的俯视图如下图所示：
+根据题意，直三棱柱![](assets-fenbi-162438/433b762516e51faaf7d6099807417753dc172f998a5f6b8922c98f0a321c8727.png)与直三棱柱![](assets-fenbi-162438/4b3d7d5267f124e23b9e5a5e3900f08f234604ffcf83697ef4951833fe8381a7.png)的体积之比为1：3，根据三棱柱体积=底面积×高，高度相同（以AA'为高），故底面积之比为1：3，即![](assets-fenbi-162438/0f95eceed03dac679647e60fabd4f23865e0622b78540f355355c3b71c75f49b.png)。该立体图形的俯视图如下图所示：
 
 ![](assets-fenbi-162438/e40ea25f67ae02a974ea17309dd6af270b80618f89ed1fed884f0d7f23d72b84.png)
 
-在直角![](assets-fenbi-162438/0d451989a4d7c82b99b5b6ee1c74cafd99427258d1df705ee6d991dfa3d02153.png)中，![](assets-fenbi-162438/0487743e328b09be5c6c2d2fe131ecd91f26ecf426c8f2a6df9e364ad2572793.png)，即![](assets-fenbi-162438/eceb876deeef7a0cbfb9e4fc59670493a1813b5ea39ec9c2aa39e5d387de7560.png)，同理![](assets-fenbi-162438/09ec12f783d5826e247b6a43abd32d6cc7e3832fd1ddba2f76961d8ae277b05f.png)，设DE为x，则![](assets-fenbi-162438/593f7e9359e7cf91d5c3620efba2ae95d40f6ee962ee55d3f75e9f25a8034d6c.png)，AE=2x。由于![](assets-fenbi-162438/75cec9adbc57c4e87c43779a65d662134af8b1241907b18034181e1480711739.png)且有公共角![](assets-fenbi-162438/dc197a3269fc48711b44badb184ecb91c7192c108489ed6685ae408fbe0a750d.png)，故![](assets-fenbi-162438/13e576d859785913dd2b5f4953bdf62e7bfe5d17a06453f935b75df380270a37.png)，因面积之比为相似比的平方，故相似比为![](assets-fenbi-162438/a77b999c2f3c846fe604067eb856272ab184d63899888addf811ee65aa8b7aaf.png)，即![](assets-fenbi-162438/1c27a7a6c35441305c9c073cc689974358da3c261e629e7228ef452a9631018a.png)，则![](assets-fenbi-162438/67e8fc7da8582a4a076d13ddb2f4ab014e9a509ed03a6fccf2d620a071762c77.png)，EB=3x-2x=x，所求长度之比为：![](assets-fenbi-162438/167f1625986c80b2cd6c52f1ce8d9ffcbea6d0e970c7aa62cc8c767dfe70979c.png)。
+在直角![](assets-fenbi-162438/0d451989a4d7c82b99b5b6ee1c74cafd99427258d1df705ee6d991dfa3d02153.png)中，![](assets-fenbi-162438/0487743e328b09be5c6c2d2fe131ecd91f26ecf426c8f2a6df9e364ad2572793.png)，即![](assets-fenbi-162438/eceb876deeef7a0cbfb9e4fc59670493a1813b5ea39ec9c2aa39e5d387de7560.png)，同理![](assets-fenbi-162438/09ec12f783d5826e247b6a43abd32d6cc7e3832fd1ddba2f76961d8ae277b05f.png)，设DE为x，则![](assets-fenbi-162438/593f7e9359e7cf91d5c3620efba2ae95d40f6ee962ee55d3f75e9f25a8034d6c.png)，AE=2x。由于![](assets-fenbi-162438/75cec9adbc57c4e87c43779a65d662134af8b1241907b18034181e1480711739.png)且有公共角∠A，故![](assets-fenbi-162438/13e576d859785913dd2b5f4953bdf62e7bfe5d17a06453f935b75df380270a37.png)，因面积之比为相似比的平方，故相似比为1:√3，即![](assets-fenbi-162438/1c27a7a6c35441305c9c073cc689974358da3c261e629e7228ef452a9631018a.png)，则![](assets-fenbi-162438/67e8fc7da8582a4a076d13ddb2f4ab014e9a509ed03a6fccf2d620a071762c77.png)，EB=3x-2x=x，所求长度之比为：![](assets-fenbi-162438/167f1625986c80b2cd6c52f1ce8d9ffcbea6d0e970c7aa62cc8c767dfe70979c.png)。
 
 故正确答案为A。
 
@@ -2153,11 +2153,11 @@ D
 
 **解析**
 
-位置1，从6名员工中选1名员工，有![](assets-fenbi-162438/a5f86b46ed2e6061bddbc84ddce3811a6b43bd1e58c485fe32b10c0ac1af18b5.png)种排法；
+位置1，从6名员工中选1名员工，有C\_6^1=6种排法；
 
-位置2，从另外两个公司的4名员工中选1名员工，有![](assets-fenbi-162438/4f4655ba6d0168e93d5e0cf06db3dc95e8e36fa46c4340b3e11f4a8cb85a0fb1.png)种排法；
+位置2，从另外两个公司的4名员工中选1名员工，有C\_4^1=4种排法；
 
-后续情况较复杂，考虑枚举法，设三个公司分别为A、B、C，6名员工分别为![](assets-fenbi-162438/cf6df50bc5fce59da7012144f7ad1536619b0f57337d786eeb58f3687173338e.png)，![](assets-fenbi-162438/f6ec57e1c595f631dd6ceb19b1de160fe2d4cd493c64223dcbb37f37d0c8779e.png)，![](assets-fenbi-162438/177897a827f97232e8d527b904be780e75119212b8948861beeebc2e64a507aa.png)，![](assets-fenbi-162438/101ef24e125640a3ea3ead663e7cd986a268eb125ea509dc46ed116d2aa0868c.png)，![](assets-fenbi-162438/dce616899cd324ba8a9521f47129a400a512123e5b1e13f882ecb23e76351b79.png)，![](assets-fenbi-162438/69c4d8f32d99143509fde55896e8701b96ca67865dcece5b0c5eb67f1346915d.png)，假设位置1安排![](assets-fenbi-162438/cf6df50bc5fce59da7012144f7ad1536619b0f57337d786eeb58f3687173338e.png)出场，位置2安排![](assets-fenbi-162438/177897a827f97232e8d527b904be780e75119212b8948861beeebc2e64a507aa.png)出场，将出场顺序情况梳理如下：
+后续情况较复杂，考虑枚举法，设三个公司分别为A、B、C，6名员工分别为a\_1，a\_2，b\_1，b\_2，C\_1，C\_2，假设位置1安排a\_1出场，位置2安排b\_1出场，将出场顺序情况梳理如下：
 
 ![](assets-fenbi-162438/83a8d7d262a545975888bc6d9d4a49b62b25e67b17def84a77be2ef1111af042.png)
 
@@ -2195,15 +2195,15 @@ A
 
 ### 第 65 题
 
-如图所示，为测量珠穆朗玛峰上某点C的海拔高度，测量队选择了两个海拔高度相差100米的珠峰测量点A和B，测得![](assets-fenbi-162438/65104623922c516b66ec254c56b0b3e5b3d51ca5d317a157b347209b09ff90bb.png)为![](assets-fenbi-162438/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，从A观测B、C的仰角分别为![](assets-fenbi-162438/e4d08cce885c0cfc8bf73278c9e4ccdf61ac78f9ac1a65413d3ceefa8fdbf3a4.png)和![](assets-fenbi-162438/b6a390689dccf4c5ea219266f5e1f91b2e2b5eb1c98bd6dc40b96b370ec7d357.png)，从B观测C的仰角也为30°，则C点的海拔高度比A点高：
+如图所示，为测量珠穆朗玛峰上某点C的海拔高度，测量队选择了两个海拔高度相差100米的珠峰测量点A和B，测得∠ABC为![](assets-fenbi-162438/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，从A观测B、C的仰角分别为30°和45°，从B观测C的仰角也为30°，则C点的海拔高度比A点高：
 
 ![](assets-fenbi-162438/f0f2e79aba91b5786c363aa9f40dce0de512e2ffa47b3b7d0f1e96b967c62dd1.png)
 
-A. ![](assets-fenbi-162438/ba5757e3295ba6a6da8439369026b1faebdf98cc2c0583fc2f4f29565149467c.png)米
+A. 100√2米
 
 B. 150米
 
-C. ![](assets-fenbi-162438/893d6cc685325309b04161727e550310ac0e956ad708dc47fb008618432adeee.png)米
+C. 100√3米
 
 D. 200米
 
@@ -2217,7 +2217,7 @@ D
 
 ![](assets-fenbi-162438/95d0dd7d0794ba5abc6a9fca170e09795e222a2690e4d8e3bf49e2a5860f12a5.png)
 
-如图所示，A和B两个海拔高度相差100米（即BE=100米），从A观测B的仰角为![](assets-fenbi-162438/e4d08cce885c0cfc8bf73278c9e4ccdf61ac78f9ac1a65413d3ceefa8fdbf3a4.png)，因![](assets-fenbi-162438/a648a15162a7acdb0d2094b718df0750c075186fddf7224922e686c419ee2103.png)是![](assets-fenbi-162438/e4d08cce885c0cfc8bf73278c9e4ccdf61ac78f9ac1a65413d3ceefa8fdbf3a4.png)的直角三角形，则三边关系为![](assets-fenbi-162438/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以AB=100×2=200米。从B观测C的仰角也为![](assets-fenbi-162438/e4d08cce885c0cfc8bf73278c9e4ccdf61ac78f9ac1a65413d3ceefa8fdbf3a4.png)，根据题意，设CO=X米，则CD=（X-100）米，因![](assets-fenbi-162438/678efeef896e6f7fc7ea1406ea163b7055474c86123489c6aa45a6d6e37a39ad.png)是![](assets-fenbi-162438/e4d08cce885c0cfc8bf73278c9e4ccdf61ac78f9ac1a65413d3ceefa8fdbf3a4.png)的直角三角形，则三边关系为![](assets-fenbi-162438/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以BC=2（X-100）=（2X-200）米。又因为从A观测C的仰角为![](assets-fenbi-162438/b6a390689dccf4c5ea219266f5e1f91b2e2b5eb1c98bd6dc40b96b370ec7d357.png)，![](assets-fenbi-162438/9c564d898035fd492ec0bb31749710de71ab7ce27f0003852ae4667c02de4c4a.png)是![](assets-fenbi-162438/b6a390689dccf4c5ea219266f5e1f91b2e2b5eb1c98bd6dc40b96b370ec7d357.png)的直角三角形，则三边关系为![](assets-fenbi-162438/d0d706f08badd327dcc57c0ae38dfda000996ecc238fd7223aab07cb9ad2ca57.png)，所以![](assets-fenbi-162438/5611b576bab635dff0ee734b2333b3d20445e6843fa51afe1cb2112a75f2f65e.png)米。在![](assets-fenbi-162438/235ded9ed1765d171d762598c677762e21a6673af76ede9a7dc3feb2c89903e8.png)中，![](assets-fenbi-162438/65104623922c516b66ec254c56b0b3e5b3d51ca5d317a157b347209b09ff90bb.png)为![](assets-fenbi-162438/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，根据勾股定理可知，![](assets-fenbi-162438/67ef7b657709c9a9da069f00a4f851b47d6cc246fea0b97ca2e4af2eeaba4468.png)，即![](assets-fenbi-162438/d010404d3d810c8bd0b4d751de31b9bff9557cbe9af5f415f17e59cd8ed920c4.png)![](assets-fenbi-162438/03f6cb5579ea8128ef968a045181df638ad39e5717476b1a15b9f6000ec8a707.png)，解得X=200，则C点的海拔高度比A点高200米。
+如图所示，A和B两个海拔高度相差100米（即BE=100米），从A观测B的仰角为30°，因△ABE是30°的直角三角形，则三边关系为![](assets-fenbi-162438/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以AB=100×2=200米。从B观测C的仰角也为30°，根据题意，设CO=X米，则CD=（X-100）米，因![](assets-fenbi-162438/678efeef896e6f7fc7ea1406ea163b7055474c86123489c6aa45a6d6e37a39ad.png)是30°的直角三角形，则三边关系为![](assets-fenbi-162438/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以BC=2（X-100）=（2X-200）米。又因为从A观测C的仰角为45°，△AOC是45°的直角三角形，则三边关系为![](assets-fenbi-162438/d0d706f08badd327dcc57c0ae38dfda000996ecc238fd7223aab07cb9ad2ca57.png)，所以![](assets-fenbi-162438/5611b576bab635dff0ee734b2333b3d20445e6843fa51afe1cb2112a75f2f65e.png)米。在△ABC中，∠ABC为![](assets-fenbi-162438/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，根据勾股定理可知，![](assets-fenbi-162438/67ef7b657709c9a9da069f00a4f851b47d6cc246fea0b97ca2e4af2eeaba4468.png)，即![](assets-fenbi-162438/d010404d3d810c8bd0b4d751de31b9bff9557cbe9af5f415f17e59cd8ed920c4.png)![](assets-fenbi-162438/03f6cb5579ea8128ef968a045181df638ad39e5717476b1a15b9f6000ec8a707.png)，解得X=200，则C点的海拔高度比A点高200米。
 
 故正确答案为D。
 
@@ -3321,7 +3321,7 @@ C
 
 （3）要么甲要么丁；
 
-（4）乙![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)丙，丙![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)乙；
+（4）乙→丙，丙→乙；
 
 （5）甲、戊、己中有两人被录取。
 
@@ -3647,23 +3647,23 @@ A
 
 第一步：翻译题干。
 
-①社会持续发展![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)培养大量高素质人才
+①社会持续发展→培养大量高素质人才
 
-②培养大量高素质人才![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)高校教育质量提升
+②培养大量高素质人才→高校教育质量提升
 
-③高校教育质量提升![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)高校教师整体素养提升
+③高校教育质量提升→高校教师整体素养提升
 
-以上条件可以递推出：④社会持续发展![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)培养大量高素质人才![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)高校教育质量提升![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)高校教师整体素养提升
+以上条件可以递推出：④社会持续发展→培养大量高素质人才→高校教育质量提升→高校教师整体素养提升
 
 第二步：逐一分析选项。
 
-A项：翻译为社会持续发展![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)提升高校教师整体素养，是对④的肯前，肯前必肯后，可以推出，当选；
+A项：翻译为社会持续发展→提升高校教师整体素养，是对④的肯前，肯前必肯后，可以推出，当选；
 
-B项：翻译为-大量高素质人才![](assets-fenbi-162438/e54967158844d3bfd7d929a588bdc858397ffb37e76005d5998987d37aedc0ba.png)高校教育质量提升，是对②的否前，否前得不出必然结论，无法推出，排除；
+B项：翻译为-大量高素质人才→高校教育质量提升，是对②的否前，否前得不出必然结论，无法推出，排除；
 
-C项：翻译为培养大量高素质人才![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)社会持续发展，是对①的肯后，肯后得不出必然结论，无法推出，排除；
+C项：翻译为培养大量高素质人才→社会持续发展，是对①的肯后，肯后得不出必然结论，无法推出，排除；
 
-D项：翻译为知识经济时代![](assets-fenbi-162438/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)高校教育质量提升，题干中“知识经济时代”和“高校教育质量提升”之间没有推出关系，无法推出，排除。
+D项：翻译为知识经济时代→高校教育质量提升，题干中“知识经济时代”和“高校教育质量提升”之间没有推出关系，无法推出，排除。
 
 故正确答案为A。
 
@@ -3755,7 +3755,7 @@ D
 
 第一步：分析题干信息。
 
-（1）甲![](assets-fenbi-162438/32720a893774d3e65f997759d529c526d8ea148de587cc6ab3871411287be65d.png)农业大学；
+（1）甲≠农业大学；
 
 （2）考上农业大学的是江苏人；
 
@@ -3797,7 +3797,7 @@ C
 
 第一步：分析题干信息。
 
-（1）甲![](assets-fenbi-162438/32720a893774d3e65f997759d529c526d8ea148de587cc6ab3871411287be65d.png)农业大学；
+（1）甲≠农业大学；
 
 （2）考上农业大学的是江苏人；
 
@@ -4401,7 +4401,7 @@ D
 
 **解析**
 
-根据题干“‘十三五’时期······比重为”，结合材料时间为2016—2020年，可判定本题为现期比重问题。定位表格材料，可知“十三五”时期我国及全球的航天发射次数。根据公式：比重![](assets-fenbi-162438/9cedb878e16baff47f0fd4065081e718cd82cf79ec5b3b6da2b2f72928dfd87a.png)，可得“十三五”时期，我国航天发射次数占全球的比重![](assets-fenbi-162438/38938d92115652bbc5f0afe95e6116bc3b9ac57fb3f0e28a7a049731cde7d76b.png)![](assets-fenbi-162438/0b994ffc6d98ba59fe9f830e89b86b539ad26770cf9791b0f3ebb13d3272fa94.png)![](assets-fenbi-162438/4864b7a76720ec09816cf56758a922736496771dbb962a2819a0e942dd250c3e.png)。
+根据题干“‘十三五’时期······比重为”，结合材料时间为2016—2020年，可判定本题为现期比重问题。定位表格材料，可知“十三五”时期我国及全球的航天发射次数。根据公式：比重=部分/整体，可得“十三五”时期，我国航天发射次数占全球的比重![](assets-fenbi-162438/38938d92115652bbc5f0afe95e6116bc3b9ac57fb3f0e28a7a049731cde7d76b.png)![](assets-fenbi-162438/0b994ffc6d98ba59fe9f830e89b86b539ad26770cf9791b0f3ebb13d3272fa94.png)≈30%。
 
 故正确答案为D。
 
@@ -4551,7 +4551,7 @@ D
 
 **解析**
 
-根据题干“‘十三五时期’······年均增量为”可判定本题为年均增长量问题。定位统计表可得：2020年我国住房公积金实缴余额为7.30万亿元；2015年我国住房公积金实缴余额为4.07万亿元。根据公式：年均增长量![](assets-fenbi-162438/1c705d498c7b59bd01a564b1f8c9bbe97656ccabe78a1da4f2ea91eda2018b71.png)，则“十三五”时期，我国住房公积金实缴余额年均增量![](assets-fenbi-162438/9b27cfde11b5056c38c3c7c68f372b7854174bb71bc0d45f83cb7069b8873ed7.png)![](assets-fenbi-162438/0d1192322985db769dab61be9407e195e133803968dfadd79ab84065a6fda95f.png)![](assets-fenbi-162438/426beba37e4536ddf9193a956d7011687708a0c16bf1ffc3f2b5dfd09b3ba4ec.png)万亿元。
+根据题干“‘十三五时期’······年均增量为”可判定本题为年均增长量问题。定位统计表可得：2020年我国住房公积金实缴余额为7.30万亿元；2015年我国住房公积金实缴余额为4.07万亿元。根据公式：年均增长量![](assets-fenbi-162438/1c705d498c7b59bd01a564b1f8c9bbe97656ccabe78a1da4f2ea91eda2018b71.png)，则“十三五”时期，我国住房公积金实缴余额年均增量![](assets-fenbi-162438/9b27cfde11b5056c38c3c7c68f372b7854174bb71bc0d45f83cb7069b8873ed7.png)=3.23/5≈0.65万亿元。
 
 故正确答案为D。
 
@@ -4577,7 +4577,7 @@ C
 
 **解析**
 
-根据题干“2020年······人均······为”，结合材料时间为2020年，可判定本题为现期平均数问题。定位统计表可得：2020年我国住房公积金实缴额为2.62万亿元；定位统计图可得：2020年我国住房公积金实缴职工人数为1.53亿人。则2020年我国实缴职工的人均实缴住房公积金![](assets-fenbi-162438/34f816b3d0987bb586d6785f2c8f5f0943d0522a21ede86b2acf918ffec3bf5a.png)![](assets-fenbi-162438/7ff623f14ce795e1afb1cddc222e6004f703a293c028e8be5458ae2919e8b380.png)![](assets-fenbi-162438/486442aa484b135f8f097ffba9b724c0a5d89daad87c9d26eed297f0595659d6.png)万元。
+根据题干“2020年······人均······为”，结合材料时间为2020年，可判定本题为现期平均数问题。定位统计表可得：2020年我国住房公积金实缴额为2.62万亿元；定位统计图可得：2020年我国住房公积金实缴职工人数为1.53亿人。则2020年我国实缴职工的人均实缴住房公积金![](assets-fenbi-162438/34f816b3d0987bb586d6785f2c8f5f0943d0522a21ede86b2acf918ffec3bf5a.png)![](assets-fenbi-162438/7ff623f14ce795e1afb1cddc222e6004f703a293c028e8be5458ae2919e8b380.png)≈1.71万元。
 
 故正确答案为C。
 
@@ -4603,7 +4603,7 @@ A
 
 **解析**
 
-根据题干“······2020年······增速······则下列关系正确的是”，可判定本题为一般增长率问题。定位统计表和统计图，可得2020年我国住房公积金实缴额、实缴余额、实缴职工人数、实缴单位数分别为2.62万亿元、7.30万亿元、1.53亿人、365万个；2019年我国住房公积金实缴额、实缴余额、实缴职工人数、实缴单位数分别为2.37万亿元、6.54万亿元、1.49亿人、322万个。根据公式：增长率![](assets-fenbi-162438/6465ad16dfec0d0fffb1aa3374b01bef9f74aac59f741165412a60b33746aa66.png)，可得![](assets-fenbi-162438/6e1051b4f50510cf20a1b27f83a51049a678e51ae3e8d8dd1b7221227df354df.png)![](assets-fenbi-162438/beddb4e368c01faabbf63abe61556868df06775c70987c214dde4e50f3ae2342.png)![](assets-fenbi-162438/7444eff75c28a421460f3d286d4b320dfc973c0394123618e8c91e820164695f.png)、![](assets-fenbi-162438/4190a979720f418fb22d8536efb5b4b618126001a9ad6ca48b1ff269188c9d15.png)![](assets-fenbi-162438/ba7d56f98aff04211916816070c544eb674a3eeac53ca336d20390f633550b93.png)![](assets-fenbi-162438/94599b4f3f70a3f298594fab861d64efb6a235e30ae4de1f71fdc429e6ab6bfc.png)、![](assets-fenbi-162438/0ae931ce23a94210f6fccdc42308ae28a46b1a6aa79fe60568f05ed618c27982.png)![](assets-fenbi-162438/7e5b9d6345d8060ccc9cef2b9af4b39cef00fb223ce28aba188064b80ee10d3f.png)![](assets-fenbi-162438/483e4510ab55a3a3bd166a9e3815c8fdaca6649313410e20cfb8df77b8e654ee.png)、![](assets-fenbi-162438/2d8537a0ce3caabf6935fe8055e2bf7b02cd12643347c80222b631a2d7e04091.png)![](assets-fenbi-162438/edbaa86aeafee6f139605c2d4142a55840b3b9c9d19b6889a32a58b294925541.png)![](assets-fenbi-162438/43aac664c4bb7b84688694ed90152ecbe4da6515f38de16be4db37aae8475a23.png)，即![](assets-fenbi-162438/5030497af0b4410b0a191fd3969d67c7217613e879337827753ccb316b32fd6b.png)。
+根据题干“······2020年······增速······则下列关系正确的是”，可判定本题为一般增长率问题。定位统计表和统计图，可得2020年我国住房公积金实缴额、实缴余额、实缴职工人数、实缴单位数分别为2.62万亿元、7.30万亿元、1.53亿人、365万个；2019年我国住房公积金实缴额、实缴余额、实缴职工人数、实缴单位数分别为2.37万亿元、6.54万亿元、1.49亿人、322万个。根据公式：增长率![](assets-fenbi-162438/6465ad16dfec0d0fffb1aa3374b01bef9f74aac59f741165412a60b33746aa66.png)，可得![](assets-fenbi-162438/6e1051b4f50510cf20a1b27f83a51049a678e51ae3e8d8dd1b7221227df354df.png)=0.25/2.37![](assets-fenbi-162438/7444eff75c28a421460f3d286d4b320dfc973c0394123618e8c91e820164695f.png)、![](assets-fenbi-162438/4190a979720f418fb22d8536efb5b4b618126001a9ad6ca48b1ff269188c9d15.png)=0.76/6.54![](assets-fenbi-162438/94599b4f3f70a3f298594fab861d64efb6a235e30ae4de1f71fdc429e6ab6bfc.png)、![](assets-fenbi-162438/0ae931ce23a94210f6fccdc42308ae28a46b1a6aa79fe60568f05ed618c27982.png)=0.04/1.49≈2.7%、![](assets-fenbi-162438/2d8537a0ce3caabf6935fe8055e2bf7b02cd12643347c80222b631a2d7e04091.png)=43/322![](assets-fenbi-162438/43aac664c4bb7b84688694ed90152ecbe4da6515f38de16be4db37aae8475a23.png)，即![](assets-fenbi-162438/5030497af0b4410b0a191fd3969d67c7217613e879337827753ccb316b32fd6b.png)。
 
 故正确答案为A。
 
@@ -4669,7 +4669,7 @@ D
 
 A项：定位统计表可得，2020年我国住房公积金实缴余额为7.30万亿元；2019年我国住房公积金实缴余额为6.54万亿元，2020年>2019年，错误；
 
-B项：定位统计图可得，2017-2019年，我国住房公积金实缴单位数分别为262万个、292万个、322万个，根据增长率![](assets-fenbi-162438/6465ad16dfec0d0fffb1aa3374b01bef9f74aac59f741165412a60b33746aa66.png)可得：2019年我国住房公积金实缴单位数增长率![](assets-fenbi-162438/07a981ab63588cfd05d69d2c27639d2c5f8239b396920b397df4d0817aa7e004.png)![](assets-fenbi-162438/ced656312ee942212d918852080a2295df817868c3519624aec33f6a779e57f6.png)![](assets-fenbi-162438/aec114b106198feda0f65c8967da2388321a78a656e1b9c4dcf9b16581d8a7be.png)，2018年我国住房公积金实缴单位数增长率![](assets-fenbi-162438/835c8db6fec5e6bb89943062931efc141616f3220968df147b480fca26ffefb4.png)![](assets-fenbi-162438/7a2610b0292ad586048368cc1cefb4ea74382151279d125524ac724e21b5a025.png)![](assets-fenbi-162438/b612dcf2e3c6419a309cec647cca318285dc32cb8304edc4a5d3f868594baca0.png)，2019年<2018年，错误；
+B项：定位统计图可得，2017-2019年，我国住房公积金实缴单位数分别为262万个、292万个、322万个，根据增长率![](assets-fenbi-162438/6465ad16dfec0d0fffb1aa3374b01bef9f74aac59f741165412a60b33746aa66.png)可得：2019年我国住房公积金实缴单位数增长率![](assets-fenbi-162438/07a981ab63588cfd05d69d2c27639d2c5f8239b396920b397df4d0817aa7e004.png)=30/292![](assets-fenbi-162438/aec114b106198feda0f65c8967da2388321a78a656e1b9c4dcf9b16581d8a7be.png)，2018年我国住房公积金实缴单位数增长率![](assets-fenbi-162438/835c8db6fec5e6bb89943062931efc141616f3220968df147b480fca26ffefb4.png)=30/262![](assets-fenbi-162438/b612dcf2e3c6419a309cec647cca318285dc32cb8304edc4a5d3f868594baca0.png)，2019年<2018年，错误；
 
 C项：定位统计图可得，2020年我国住房公积金实缴单位数为365万个，实缴职工人数为1.53亿人，则2020年我国住房公积金实缴单位的平均人数![](assets-fenbi-162438/5f0d3f74c6f04d53b569d197b0e7ecc7f915e27728f04f1899c02db5265d8f15.png)人>40人，错误；
 
@@ -4799,7 +4799,7 @@ A
 
 **解析**
 
-根据题干“2020年1-7月······同比增速是”，结合材料给出2021年1-7月我国原油产量的同比增速以及相对于2019年同期的增速，可判定本题为间隔增长率问题。定位文字材料可得：2021年1-7月，我国原油产量同比增长2.4%（![](assets-fenbi-162438/6c800d73c9235b585a9ad332e43131c7810fbe5ea4247ba6584edd1d40f19ec3.png)），比2019年同期增长3.9%（![](assets-fenbi-162438/da42104178ae3ee0c805986bbeb139e41b18b67e05407107c5941a0f83165c0e.png)）。根据公式：![](assets-fenbi-162438/fb5f8b202683fa5962d51eb2b28ca2b927de57953d6486c50e5a0050e8168000.png)，代入数据可得![](assets-fenbi-162438/a9a3294e693b8ce824540b82fd80cbdb1c58f770dc6d3aaea9ec38f3d8d12983.png)，整理可得![](assets-fenbi-162438/434f9122c6984a57a6bc3d16e6e80458bdd1d35646dc6a8552945441a7cd969a.png)，即2020年1-7月我国原油产量的同比增速不到1.5%，结合选项，只有A项符合。
+根据题干“2020年1-7月······同比增速是”，结合材料给出2021年1-7月我国原油产量的同比增速以及相对于2019年同期的增速，可判定本题为间隔增长率问题。定位文字材料可得：2021年1-7月，我国原油产量同比增长2.4%（r\_1），比2019年同期增长3.9%（![](assets-fenbi-162438/da42104178ae3ee0c805986bbeb139e41b18b67e05407107c5941a0f83165c0e.png)）。根据公式：![](assets-fenbi-162438/fb5f8b202683fa5962d51eb2b28ca2b927de57953d6486c50e5a0050e8168000.png)，代入数据可得![](assets-fenbi-162438/a9a3294e693b8ce824540b82fd80cbdb1c58f770dc6d3aaea9ec38f3d8d12983.png)，整理可得![](assets-fenbi-162438/434f9122c6984a57a6bc3d16e6e80458bdd1d35646dc6a8552945441a7cd969a.png)，即2020年1-7月我国原油产量的同比增速不到1.5%，结合选项，只有A项符合。
 
 故正确答案为A。
 

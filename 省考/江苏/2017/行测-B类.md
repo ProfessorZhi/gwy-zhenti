@@ -1191,7 +1191,7 @@ D项表意错误，文段没有提到人造材料取代有机材料的说法，�
 
 ### 第 34 题
 
-结核病是由结核分枝杆菌引起的慢性传染病，可侵及许多脏器，以肺部结核最为常见。世界上约有![](assets-fenbi-77300/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)的人口感染了结核杆菌，其中有大约![](assets-fenbi-77300/5372071d7b77f1b31d6b33959bed4e8d5ee386710f689e4d5b8d7fc4f1273305.png)会发展成结核病。对于艾滋病病毒携带者、营养不良或糖尿病等免疫系统受损的人，或者烟草使用者，结核杆菌容易在体内大量复制，患病风险就会高很多。
+结核病是由结核分枝杆菌引起的慢性传染病，可侵及许多脏器，以肺部结核最为常见。世界上约有1/3的人口感染了结核杆菌，其中有大约![](assets-fenbi-77300/5372071d7b77f1b31d6b33959bed4e8d5ee386710f689e4d5b8d7fc4f1273305.png)会发展成结核病。对于艾滋病病毒携带者、营养不良或糖尿病等免疫系统受损的人，或者烟草使用者，结核杆菌容易在体内大量复制，患病风险就会高很多。
 
 下列说法不符合文意的是：
 
@@ -1211,7 +1211,7 @@ D
 
 **解析**
 
-A项：由“世界上约有![](assets-fenbi-77300/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)的人口感染了结核菌，其中有 5% ～ 10%会发展成结核病”可知，很多人感染结核菌后并不发病，表述与文意相符，排除。
+A项：由“世界上约有1/3的人口感染了结核菌，其中有 5% ～ 10%会发展成结核病”可知，很多人感染结核菌后并不发病，表述与文意相符，排除。
 
 B项：由“对于艾滋病病毒携带者······高很多”可知，身体虚弱者患病的可能性高， 表述与文意相符，排除。
 
@@ -1951,7 +1951,7 @@ A
 
 **解析**
 
-数列无明显倍数或幂次特征，优先考虑作差。作差后得到新数列：9，25，49，81，（ ），分别为![](assets-fenbi-77300/22d6bf8013d449add3713d64aba73fa59a6c667068989d1c90362bfdfe4d785f.png)，![](assets-fenbi-77300/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)，![](assets-fenbi-77300/1da59e717c7847ef0fb006fceb36a33385d530a1f6d85d0c812abcafe7d54f7b.png)，![](assets-fenbi-77300/957e5a18d0663ab629d50724f67f20940715d7543c570a989ad4d9d1639cccc3.png)，（ ），即连续奇数的平方数，则新数列的下一项为![](assets-fenbi-77300/355e45df3906cd3a8013ffb630059519106499176fdf14e7a3250e76be02f313.png)。所求项为200+121=321。
+数列无明显倍数或幂次特征，优先考虑作差。作差后得到新数列：9，25，49，81，（ ），分别为3^2，5^2，7^2，9^2，（ ），即连续奇数的平方数，则新数列的下一项为![](assets-fenbi-77300/355e45df3906cd3a8013ffb630059519106499176fdf14e7a3250e76be02f313.png)。所求项为200+121=321。
 
 故正确答案为A。
 
@@ -1959,7 +1959,7 @@ A
 
 ### 第 58 题
 
-![](assets-fenbi-77300/debdccf5320b5c8f4397dcc141d05c07723617756c0403458dc0f40180f7a834.png)，![](assets-fenbi-77300/3e4629e7ee6e24ae47d67da117a81711a0c45dea34de678a76c78b3aae1178bb.png)，2，3，![](assets-fenbi-77300/fe3bdbc405561f7fe38121c64f643a62dac53bec4468bc9bd0292c9c6d96191d.png)，（ ）
+√2，3-√2，2，3，4+√2，（ ）
 
 A. ![](assets-fenbi-77300/8b667944017f5c38be23fe85b30a852785e553bc17050a8e24236cac7f4a3454.png)
 
@@ -1977,7 +1977,7 @@ C
 
 **解析**
 
-数列无明显特征，优先考虑作差。作差后得到新数列：![](assets-fenbi-77300/6d60d2e70d04e36e3ba43188aa1c092ed10eb6d6105a8a5171ad72443d619caf.png)，![](assets-fenbi-77300/1ffad6778175bc3df836925c857de953617bf3502c609fc6b453d6a7eb344cbf.png)，1，![](assets-fenbi-77300/0c0b0b94bc53e2fc548af8312d7e535fa4dbdf91551747404f5a6aa0fa8103b7.png)，（）。作差后为公比为![](assets-fenbi-77300/0c0b0b94bc53e2fc548af8312d7e535fa4dbdf91551747404f5a6aa0fa8103b7.png)的等比数列，故新数列的下一项为![](assets-fenbi-77300/8380273a4d89d0bcfa51334e8d22e65f04c024ecc02336220041804c96ed814b.png)，由此可得![](assets-fenbi-77300/15e053d55e2a33f17588914b3114b516f979600b015b51e624fc1182f71b3eee.png)。
+数列无明显特征，优先考虑作差。作差后得到新数列：![](assets-fenbi-77300/6d60d2e70d04e36e3ba43188aa1c092ed10eb6d6105a8a5171ad72443d619caf.png)，√2-1，1，√2+1，（）。作差后为公比为√2+1的等比数列，故新数列的下一项为![](assets-fenbi-77300/8380273a4d89d0bcfa51334e8d22e65f04c024ecc02336220041804c96ed814b.png)，由此可得![](assets-fenbi-77300/15e053d55e2a33f17588914b3114b516f979600b015b51e624fc1182f71b3eee.png)。
 
 故正确答案为C。
 
@@ -1985,15 +1985,15 @@ C
 
 ### 第 59 题
 
-![](assets-fenbi-77300/4ef2b933467e3bffadef03e6f19389333bbe59d6238fbaa957fb15c53a60522c.png)，![](assets-fenbi-77300/1b66ea566e8f710d9923948336732fafbec2033a7b45e21cb97af27c1a029b95.png)，![](assets-fenbi-77300/f8eb280df9cab65468ea58361e7b0d30804205c256f458fe9a5b4c8c930e8b94.png)，![](assets-fenbi-77300/529edcebb89feac7758b02f43748ba79044c716cf7a9b88f168495404af6a969.png)，![](assets-fenbi-77300/c6b6529688e85512a8421f86a6203e9a4c6dfd483dbad65a90709316a477d7c7.png)，（ ）
+2/5，11/18，16/21，7/8，26/27，（ ）
 
-A. ![](assets-fenbi-77300/44a2d0932171a24f662f371285ee98a96d946ce6a41e045ec0179482073dc6f3.png)
+A. 31/30
 
-B. ![](assets-fenbi-77300/4a603aaea800573ad0508389080728c4802ca159f6eff124981cadc78c5ddf74.png)
+B. 31/32
 
-C. ![](assets-fenbi-77300/6bd1d3d14ffaa96e409fdcfb1f4c1587cc731165d3de0b72b16bb68e85a143a5.png)
+C. 61/60
 
-D. ![](assets-fenbi-77300/86951e40d1686541b8cfbce899117ca5c90c482bf965236e7138e14cd7df0f26.png)
+D. 63/64
 
 <details><summary>第 59 题 · 答案与解析</summary>
 
@@ -2003,7 +2003,7 @@ A
 
 **解析**
 
-数列分子、分母呈递增趋势，优先反约分，将数列转化为单调递增。原数列可转化为：![](assets-fenbi-77300/9d9fcb240e4dbc96ed8acb057dc9a507793e4fd54b8dfea0d09544c2a64d4745.png)，![](assets-fenbi-77300/1b66ea566e8f710d9923948336732fafbec2033a7b45e21cb97af27c1a029b95.png)，![](assets-fenbi-77300/f8eb280df9cab65468ea58361e7b0d30804205c256f458fe9a5b4c8c930e8b94.png)，![](assets-fenbi-77300/06d7005f4910d4062e41dba9212b2d8a8c21e1825cf6f5341ea2eba83442fb10.png)，![](assets-fenbi-77300/c6b6529688e85512a8421f86a6203e9a4c6dfd483dbad65a90709316a477d7c7.png)，（），分母为公差是3的等差数列，分子为公差是5的等差数列，则![](assets-fenbi-77300/040a240c4aea96c74b37ae4238398091ae00026f1137e45d6e288b3519b7b3a8.png)。
+数列分子、分母呈递增趋势，优先反约分，将数列转化为单调递增。原数列可转化为：6/15，11/18，16/21，21/24，26/27，（），分母为公差是3的等差数列，分子为公差是5的等差数列，则![](assets-fenbi-77300/040a240c4aea96c74b37ae4238398091ae00026f1137e45d6e288b3519b7b3a8.png)。
 
 故正确答案为A。
 
@@ -2055,7 +2055,7 @@ D
 
 **解析**
 
-设原价为100，首次打折的折扣为x，则首次打折售价为100x，第二次打折时售价为![](assets-fenbi-77300/fbeb81a22c47ef8395524acae84c7d5032421b58acc2fc2d398d7f6a23cb8daf.png)，第三次打折时售价为：![](assets-fenbi-77300/cbff46c4472b6c7d9ade8ad8235d4c3460911dcdd4c210e66a04c424849627da.png)，解得x=90%即打9折。
+设原价为100，首次打折的折扣为x，则首次打折售价为100x，第二次打折时售价为100x^2，第三次打折时售价为：![](assets-fenbi-77300/cbff46c4472b6c7d9ade8ad8235d4c3460911dcdd4c210e66a04c424849627da.png)，解得x=90%即打9折。
 
 故正确答案为D。
 
@@ -2063,7 +2063,7 @@ D
 
 ### 第 62 题
 
-若将一项工程的![](assets-fenbi-77300/7afd0046620668df56ad0d2555716a0734f042fe61c0548e10535b7b31bc8d0c.png)、![](assets-fenbi-77300/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)、![](assets-fenbi-77300/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)和![](assets-fenbi-77300/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)依次分配给甲、乙、丙、丁四家工程队，分别需要15天、15天、30天和9天完成，则他们合作完成该项工程需要的时间是：
+若将一项工程的1/6、1/4、1/3和1/4依次分配给甲、乙、丙、丁四家工程队，分别需要15天、15天、30天和9天完成，则他们合作完成该项工程需要的时间是：
 
 A. 12天
 
@@ -2171,13 +2171,13 @@ D
 
 甲、乙、丙三个单位各派2名志愿者参加公益活动，现将这6人随机分成3组，每组2人，则每组成员均来自不同单位的概率是：
 
-A. ![](assets-fenbi-77300/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)
+A. 1/3
 
-B. ![](assets-fenbi-77300/4364bb11985302331da95659b7095ba996155d9fc054d0c07ecc425c37458edc.png)
+B. 5/12
 
-C. ![](assets-fenbi-77300/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)
+C. 1/4
 
-D. ![](assets-fenbi-77300/f87f20d4d6f5185e1e684427449872c7f3f1aa99c3b9e45112f0a5803caba444.png)
+D. 8/15
 
 <details><summary>第 66 题 · 答案与解析</summary>
 
@@ -2189,7 +2189,7 @@ D
 
 6个人随机分成3组，总数为![](assets-fenbi-77300/a1802a688d8c8786c677b27d6a0578513cdee8bd43e40077ab8eff2c78860580.png)种情况。每组成员来自不同的单位，正向考虑情况数较多，故反向考虑，即考虑有的成员来自相同的单位。
 
-第一类情况：只有一组来自同一单位。先在3个单位中任选1个单位的2名成员同组，有![](assets-fenbi-77300/aba2d1c3a391af6923b1456ec438d9e31af9b1d0ea46ccf5456bea7e0fa1e455.png)种情况；设![](assets-fenbi-77300/83d2ec6446107269604c3fb7de1612bc21057db9d2ca6823b57f41d15918fc52.png)![](assets-fenbi-77300/cd77b5d5867564d1ca4bff7bfcb6101e8caa246af50ff4439e9095c730818df1.png)同一单位，则剩下的两组可能有两种情况：![](assets-fenbi-77300/b0221782ee7962e524d0ea636fd9713eae0221239262f7f1ead3c607fc75b305.png)和![](assets-fenbi-77300/f8eeab0cc48ac0f270254c000e8139fccdd467ec48f31784c1e466821a21f9a7.png)；![](assets-fenbi-77300/f403d09f6712531d2cb51dc241b34a021269ddd421a9b9891672b3ebedb31d3a.png)和![](assets-fenbi-77300/90a066daad45a48f922f7a463f664869972bc4793d4ed93c6e3cbd3623cf27de.png)。满足的情况数为3×2=6种。
+第一类情况：只有一组来自同一单位。先在3个单位中任选1个单位的2名成员同组，有C\_3^1=3种情况；设甲\_1甲\_2同一单位，则剩下的两组可能有两种情况：乙\_1丙\_1和乙\_2丙\_2；乙\_1丙\_2和乙\_2丙\_1。满足的情况数为3×2=6种。
 
 第二类情况：有两组来自同一单位，而剩下一组也一定来自同一单位，即三组均来自同一单位，共1种情况。
 
@@ -2297,13 +2297,13 @@ B
 
 ![](assets-fenbi-77300/68f0675bc5f383b8521a4eb473cb5c8c0ebd2b1faef52ecfa452573a5f21bb5a.png)
 
-A. ![](assets-fenbi-77300/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)
+A. 2/3
 
-B. ![](assets-fenbi-77300/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)
+B. 5/6
 
-C. ![](assets-fenbi-77300/07a74b9796ec377a56dbe1ddb87da4c710413b2032d3fc7df96e5ed421a6220d.png)
+C. 6/11
 
-D. ![](assets-fenbi-77300/7e20a638d01f799ee6d098d801e4684fe1394a7e2840f24dbc2fe3bb8ba5eddf.png)
+D. 16/25
 
 <details><summary>第 70 题 · 答案与解析</summary>
 
@@ -3395,9 +3395,9 @@ A
 
 分析题干。
 
-（1）甲去黑龙江![](assets-fenbi-77300/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)乙去江苏；
+（1）甲去黑龙江→乙去江苏；
 
-（2）丁去云南![](assets-fenbi-77300/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)丙去福建；
+（2）丁去云南→丙去福建；
 
 （3）乙去江苏拍古建筑或者戊去福建拍人物；
 

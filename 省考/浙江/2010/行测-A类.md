@@ -914,7 +914,7 @@ C、D两项：表述片面，均只对应文段其中一部分，排除。
 
 ### 第 28 题
 
-研究表明，把在电动跑步机上45分钟的锻炼改为到附近公园慢跑，可以减少将近1公斤的二氧化碳排放量；不用洗衣机甩干衣服，而是让其自然晾干，这可以减少![](assets-fenbi-163/4c62cca928528038bd806a89b8236a486d470e4ca6fe851871bfc4cf2efd4883.png)公斤的二氧化碳排放量；在午餐休息时间和下班后关闭电脑及其显示器，可以将这些电脑的二氧化碳排放量减少三分之一；改为节水型沐浴喷头，不仅可以节水，还可以使热水淋浴所导致的二氧化碳排放量减少一半。
+研究表明，把在电动跑步机上45分钟的锻炼改为到附近公园慢跑，可以减少将近1公斤的二氧化碳排放量；不用洗衣机甩干衣服，而是让其自然晾干，这可以减少2~3公斤的二氧化碳排放量；在午餐休息时间和下班后关闭电脑及其显示器，可以将这些电脑的二氧化碳排放量减少三分之一；改为节水型沐浴喷头，不仅可以节水，还可以使热水淋浴所导致的二氧化碳排放量减少一半。
 
 作者通过这段文字最想表达的意思是：
 
@@ -1741,25 +1741,25 @@ C
 
 第一步：翻译题干。
 
-①甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)乙；
+①甲→乙；
 
-②有的甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丙；
+②有的甲→丙；
 
-③乙![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丁；
+③乙→丁；
 
-④戊![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-163/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)丁；
+④戊→-丁；
 
-⑤有的戊![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丙
+⑤有的戊→丙
 
 第二步：逐一分析选项。
 
-A项：翻译为：有的丙![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丁，将条件②换位可得：有的丙![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)甲，再与条件①③串联可得：有的丙![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)乙![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丁，即：有的丙![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丁，可以推出，排除；
+A项：翻译为：有的丙→丁，将条件②换位可得：有的丙→甲，再与条件①③串联可得：有的丙→甲→乙→丁，即：有的丙→丁，可以推出，排除；
 
-B项：翻译为：戊![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-163/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)乙，将条件③④串联可得：戊![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-163/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)丁![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-163/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)乙，即：戊![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-163/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)乙，可以推出，排除；
+B项：翻译为：戊→-乙，将条件③④串联可得：戊→-丁→-乙，即：戊→-乙，可以推出，排除；
 
-C项：翻译为：有的甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)戊，将条件①③④串联可得：甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)乙![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丁![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-163/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)戊，即：甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-163/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)戊，与“有的甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)戊”矛盾，不能推出，当选；
+C项：翻译为：有的甲→戊，将条件①③④串联可得：甲→乙→丁→-戊，即：甲→-戊，与“有的甲→戊”矛盾，不能推出，当选；
 
-D项：翻译为：甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丁，将条件①③串联可得：甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)乙![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丁，即：甲![](assets-fenbi-163/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)丁，可以推出，排除。
+D项：翻译为：甲→丁，将条件①③串联可得：甲→乙→丁，即：甲→丁，可以推出，排除。
 
 本题为选非题，故正确答案为C。
 
@@ -2277,7 +2277,7 @@ A
 
 **解析**
 
-方法一：数列无明显特征，作差后无规律，考虑作和。前项加后项得到新数列：384，192，96，48，（ ），是公比为![](assets-fenbi-163/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)的等比数列，则新数列下一项为![](assets-fenbi-163/bd540eaa2b06ceec86b1c8f469ee1d2e29ae442107b9c2562f98040d92a69eb7.png)。故所求项为24-(-36)=60。
+方法一：数列无明显特征，作差后无规律，考虑作和。前项加后项得到新数列：384，192，96，48，（ ），是公比为1/2的等比数列，则新数列下一项为![](assets-fenbi-163/bd540eaa2b06ceec86b1c8f469ee1d2e29ae442107b9c2562f98040d92a69eb7.png)。故所求项为24-(-36)=60。
 
 方法二：数列无明显特征，作差后无规律，考虑递推。观察发现：![](assets-fenbi-163/fe4f096ba36d8148d6540a4c6c8a76452b41b530dfff476e0e78c78132d60ddd.png)，![](assets-fenbi-163/733e1d11b209236fb420b5fda97880ca26efd00c39dac6835c0d308c54272ffa.png)，![](assets-fenbi-163/49a7d6fb24ac09c1234fe30e6d5232edd6233f6a53a877247a6dd9191e6d465e.png)，即规律为：![](assets-fenbi-163/8429082ab9fac3042aeecce0a3717c6802bca73ff86ebd93a5b4177098d81b3c.png)![](assets-fenbi-163/b0f5acce637fc9b5990b4e4445094fdafd65a6324206192eef71ed165c1fd290.png)。则所求项为![](assets-fenbi-163/2f011602882987f52ae3e40fb1b81e85691845872ee72ed989a9dc318b590e81.png)。
 
@@ -2305,7 +2305,7 @@ C
 
 **解析**
 
-数列无明显特征，优先考虑作差。后项减前项得到新数列：-108，-36，-12，（ ），是公比为![](assets-fenbi-163/1d273b2122aaf21895018ee410e0cc1fe872be411377d6cb330f4f09d8ec86fe.png)的等比数列，则新数列的下一项为![](assets-fenbi-163/2254ab67c9184ca25f780629739df607f1bd766803f1c85b1a3f0c2a6105a33c.png)，故所求项为-104+(-4)=-108。
+数列无明显特征，优先考虑作差。后项减前项得到新数列：-108，-36，-12，（ ），是公比为1/3的等比数列，则新数列的下一项为![](assets-fenbi-163/2254ab67c9184ca25f780629739df607f1bd766803f1c85b1a3f0c2a6105a33c.png)，故所求项为-104+(-4)=-108。
 
 故正确答案为C。
 
@@ -2383,7 +2383,7 @@ B
 
 **解析**
 
-数列无明显特征，观察发现每项周围均有幂次数，考虑幂次修正数列。原数列可转化为![](assets-fenbi-163/24ca1074697353610f425e1067bd64dabf42ec13c6a73ae19d70455e8ff314ff.png)、![](assets-fenbi-163/1bbf320252ff7b1a2c3b057b7603a784620c39bb6568bf8f598463d12140dc48.png)、![](assets-fenbi-163/6aebf023374b6cca5dbbd9dafa05cf7d03abba4431d5393ea6c882445f59909e.png)、![](assets-fenbi-163/d5a94ad4328e1321434c58b6cd135cee9404d5c0a714cf47e531d513bd21d0ed.png)、（ ）、![](assets-fenbi-163/71a437369af4aa5db16eeb942bcb23176b7f1d2313f4eb02ab9edd61f03a6497.png)，底数是公差为3的等差数列，指数为3、2循环，修正项为-1、+1循环。故所求项应为![](assets-fenbi-163/048c55954d174af1c74081c5dbb9f363db3eb695e1623daeac13f89d7db74f28.png)![](assets-fenbi-163/83f9cd1131c67e4f3bcd86ba371e5349011540718cbcb273b8e3adddbe564d52.png)。
+数列无明显特征，观察发现每项周围均有幂次数，考虑幂次修正数列。原数列可转化为![](assets-fenbi-163/24ca1074697353610f425e1067bd64dabf42ec13c6a73ae19d70455e8ff314ff.png)、![](assets-fenbi-163/1bbf320252ff7b1a2c3b057b7603a784620c39bb6568bf8f598463d12140dc48.png)、![](assets-fenbi-163/6aebf023374b6cca5dbbd9dafa05cf7d03abba4431d5393ea6c882445f59909e.png)、2^2+1、（ ）、8^2+1，底数是公差为3的等差数列，指数为3、2循环，修正项为-1、+1循环。故所求项应为![](assets-fenbi-163/048c55954d174af1c74081c5dbb9f363db3eb695e1623daeac13f89d7db74f28.png)![](assets-fenbi-163/83f9cd1131c67e4f3bcd86ba371e5349011540718cbcb273b8e3adddbe564d52.png)。
 
 故正确答案为B。
 
@@ -2391,7 +2391,7 @@ B
 
 ### 第 71 题
 
-12，-4，8，-32，-24，768，![](assets-fenbi-163/1abbe2a47ec6ce22a1130150c4b5d45dd2e0ca44f681378a7bc5941f6bc6a161.png)。
+12，-4，8，-32，-24，768，()。
 
 A. 432
 
@@ -2417,13 +2417,13 @@ C
 
 ### 第 72 题
 
-5，3，![](assets-fenbi-163/b40ae7817deca0a573a2397a9408715b55499cd33f3b96188b056005e2f1bef9.png)，2，![](assets-fenbi-163/f6164bdbfa2fdd64d20d9a2c341482ba178d45a821f80fa1d7a2756e75756093.png)，![](assets-fenbi-163/5d26f60734f630fb24cc10b0cd6a3737a88f51b33a2df45378925b0c862e5f51.png)，（ ）。
+5，3，7/3，2，9/5，5/3，（ ）。
 
-A. ![](assets-fenbi-163/c30284a0407621073816fbe05b8ca05dabcd8a6f493be8bb5e8661bc959786ab.png)
+A. 13/8
 
-B. ![](assets-fenbi-163/6dfaf0e35673ff6313247a498deeedd1385eef0f4f823ffd317e53515671009c.png)
+B. 11/7
 
-C. ![](assets-fenbi-163/04f4309e07bdff9e794eeea8203181cd4276d1cf5c3d6a2ef02db4a0c22ff3de.png)
+C. 7/5
 
 D. 1
 
@@ -2435,7 +2435,7 @@ B
 
 **解析**
 
-观察数列，题干和选项中均有分数，优先考虑分数数列。反约分后，原数列可转化为：![](assets-fenbi-163/9e2d699f32b461f72af83e86d5ce906c2b47610d34762e3a3cb7a2c1376c9152.png)、![](assets-fenbi-163/5e200ff879692e8a768fe87308f809960cfcb43d115a0f1e298ea86a908a7958.png)、![](assets-fenbi-163/b40ae7817deca0a573a2397a9408715b55499cd33f3b96188b056005e2f1bef9.png)、![](assets-fenbi-163/c4c95fe0dc0ec6bfb6c64b0eef1217f029d19684b8b124c4024e9d56427c8a25.png)、![](assets-fenbi-163/f6164bdbfa2fdd64d20d9a2c341482ba178d45a821f80fa1d7a2756e75756093.png)、![](assets-fenbi-163/b7aba69f5e4e4f0ae559cdc11093ad63164cd3bafcf21ff6ea99b340e1a5babf.png)，分子分母都为自然数列，所以下一项为![](assets-fenbi-163/6dfaf0e35673ff6313247a498deeedd1385eef0f4f823ffd317e53515671009c.png)。
+观察数列，题干和选项中均有分数，优先考虑分数数列。反约分后，原数列可转化为：5/1、6/2、7/3、8/4、9/5、10/6，分子分母都为自然数列，所以下一项为11/7。
 
 故正确答案为B。
 
@@ -2461,7 +2461,7 @@ A
 
 **解析**
 
-数列无明显特征，且观察数列发现多为幂次数附近数字，考虑幂次修正数列。原数列可转化为：![](assets-fenbi-163/20677a3538fe9a25920df9e183f0ffc0e670c25b6ebded167bebf026a0d281cb.png)、![](assets-fenbi-163/08592b7e7e064aacc73e8282e3675ff081b6bc1ab66033385eabc1ca089b1acb.png)、![](assets-fenbi-163/7a11c2236351762a3d50ddd3205139425d0660a2a8b77938f3e1117b2b9a943a.png)、![](assets-fenbi-163/5f6e28bc469b9b03050e9dabecbee84193569f80945de402120130c7d345a07e.png)、![](assets-fenbi-163/a5cfddf81aa235c4068c625c3724366b47c525f2ca13e866450d39e02d12127b.png)、（ ），底数为自然数列，指数均为2，修正项为+2、-2循环。故下一项应为![](assets-fenbi-163/22f0993362040b74f4aa476e91252212b67fba04825b7c6d2f94db359c77f217.png)。
+数列无明显特征，且观察数列发现多为幂次数附近数字，考虑幂次修正数列。原数列可转化为：2^2+2、3^2-2、4^2+2、5^2-2、6^2+2、（ ），底数为自然数列，指数均为2，修正项为+2、-2循环。故下一项应为![](assets-fenbi-163/22f0993362040b74f4aa476e91252212b67fba04825b7c6d2f94db359c77f217.png)。
 
 故正确答案为A。
 
@@ -2653,7 +2653,7 @@ A
 
 **解析**
 
-三角符号代表着以符号前一个数为首项，符号后的数为项数，公差为1的一个等差数列，用等差公式求和，![](assets-fenbi-163/f8032e36b0df95236cc8b85ee3f79c386af82145a48ba64a8bf53ffce8f99b81.png)![](assets-fenbi-163/2039f7c3043137607f58133641b5730b579be9afba762f2df336144577f428d6.png)![](assets-fenbi-163/79c010ecc7f05cba8c42ead48053b2c70598eb1da39ba15794641fcfe978db1b.png)![](assets-fenbi-163/438e069cf3b2e9a67662b8ef24ef63c0f0b695b4518159c78c208633a9bb0def.png)，![](assets-fenbi-163/2aa01508800e17fef6cbeba86781af11be629332be50b4477682c2a9ce45933a.png)，因此和值为528。
+三角符号代表着以符号前一个数为首项，符号后的数为项数，公差为1的一个等差数列，用等差公式求和，26△15![](assets-fenbi-163/2039f7c3043137607f58133641b5730b579be9afba762f2df336144577f428d6.png)![](assets-fenbi-163/79c010ecc7f05cba8c42ead48053b2c70598eb1da39ba15794641fcfe978db1b.png)=495，![](assets-fenbi-163/2aa01508800e17fef6cbeba86781af11be629332be50b4477682c2a9ce45933a.png)，因此和值为528。
 
 故正确答案为A。
 
@@ -2751,7 +2751,7 @@ C
 
 **解析**
 
-四边形EBCD与三角形AED的面积之比为3:2，则三角形ABC与三角形AED的面积之比为5:2。已知AD的长度是CD的2倍，则AD的长度是AC的![](assets-fenbi-163/e0339018eac61804f8a29187660145f8cf9a36f99a993f4d7c65bd28a99e96b8.png)。作![](assets-fenbi-163/a389b51260e6bbf78f4e52736b2c7607aa8685c1d90283863a9337779531d87f.png)垂直AB于点![](assets-fenbi-163/b7bf55ea94f0972b2f3d153b8c4e6f8784907596921474459157dd9e4553c536.png)，则![](assets-fenbi-163/fd4ff18bca067d50ea76fba970f8226c926d5d2ab70b4695334f9132b0786938.png)（相似三角形原理），三角形ABC的面积＝![](assets-fenbi-163/1ba9ae4b4430a28dc553a43d8f7d06054662d56a7c82e7cbce92684b1d0a0307.png)，三角形AED的面积＝![](assets-fenbi-163/84d35e4552a06a35c2fd146eebeb33718988b5e385be2b560f163d3edd167f6e.png)代入之前的比例式，可得![](assets-fenbi-163/bef30bf981d487bb09fed1f84d7b2f206596f0ae33bdcf5b720892dd64c40a9f.png)。
+四边形EBCD与三角形AED的面积之比为3:2，则三角形ABC与三角形AED的面积之比为5:2。已知AD的长度是CD的2倍，则AD的长度是AC的2/3。作DF垂直AB于点F，则![](assets-fenbi-163/fd4ff18bca067d50ea76fba970f8226c926d5d2ab70b4695334f9132b0786938.png)（相似三角形原理），三角形ABC的面积＝![](assets-fenbi-163/1ba9ae4b4430a28dc553a43d8f7d06054662d56a7c82e7cbce92684b1d0a0307.png)，三角形AED的面积＝![](assets-fenbi-163/84d35e4552a06a35c2fd146eebeb33718988b5e385be2b560f163d3edd167f6e.png)代入之前的比例式，可得![](assets-fenbi-163/bef30bf981d487bb09fed1f84d7b2f206596f0ae33bdcf5b720892dd64c40a9f.png)。
 
 ![](assets-fenbi-163/7fa7ab67e489953629d8bfba101197e6b86ad6ee755283d0ce8facd8895147a2.png)
 
@@ -2817,13 +2817,13 @@ B
 
 ![](assets-fenbi-163/bbaeaeab2486c76b6e6277663abfe5e82370a7c6283fef06eb57a34e0692b6b8.png)
 
-A. ![](assets-fenbi-163/d2996f6c2b9f2ed47daad93d1e3d5ea39615e872fb41e96dd09b18534cbbe35e.png)
+A. 10 16/25
 
-B. ![](assets-fenbi-163/c243b95b16a673647279c3d2f684c23be6e69fa8cfb36708a6d7dece779075b7.png)
+B. 10 9/16
 
-C. ![](assets-fenbi-163/9f530cc75ebb3c21194fd5dca9d75b51d1eff608ff51ec3426b653c8632fdf09.png)
+C. 10 6/25
 
-D. ![](assets-fenbi-163/a208cee6b1bc46dd86848f082bc00e40d9bbcf392322b6e2cb984b479aa66d20.png)
+D. 10 5/16
 
 <details><summary>第 86 题 · 答案与解析</summary>
 
@@ -3801,7 +3801,7 @@ D
 
 **解析**
 
-根据题干“2007年全年······是······”，结合选项为倍数，且材料时间为2008年，可判定本题为基期倍数问题。定位文字材料第二段：万元国内生产总值用水量231.8立方米，比上年下降7.9%；万元工业增加值用水量130.3立方米，下降7.0%。根据基期倍数公式：基期倍数![](assets-fenbi-163/257f0ae003f5f818ca5af358d4349e94a48e11110efbee6a5df41e047fa1ce6d.png)，题目所求为![](assets-fenbi-163/5b765a98d206ed3891ed96e59f2c604bcf0a3ef757d9b9e5c4cd3a08df8acc81.png)![](assets-fenbi-163/3a760d3eba74bfee3edcfc03fb9ffc182e643cd8a9f4cd512e7046cd9d18dae2.png)![](assets-fenbi-163/826f6c385f5afc6b8ff72aac8516e43e119a9f1cfa2326aed57268c1bb92bdd4.png)倍。
+根据题干“2007年全年······是······”，结合选项为倍数，且材料时间为2008年，可判定本题为基期倍数问题。定位文字材料第二段：万元国内生产总值用水量231.8立方米，比上年下降7.9%；万元工业增加值用水量130.3立方米，下降7.0%。根据基期倍数公式：基期倍数![](assets-fenbi-163/257f0ae003f5f818ca5af358d4349e94a48e11110efbee6a5df41e047fa1ce6d.png)，题目所求为![](assets-fenbi-163/5b765a98d206ed3891ed96e59f2c604bcf0a3ef757d9b9e5c4cd3a08df8acc81.png)![](assets-fenbi-163/3a760d3eba74bfee3edcfc03fb9ffc182e643cd8a9f4cd512e7046cd9d18dae2.png)≈1.8倍。
 
 故正确答案为D。
 
@@ -3883,7 +3883,7 @@ A项：定位文字资料第一段可得，2008年我国全年建设占用耕地
 
 B项：定位文字资料第二段可得，2008年年末全国大型水库蓄水总量1962亿立方米，比上年末多蓄水93亿立方米。故2007年年末全国大型水库蓄水总量为1962-93=1869亿立方米，正确；
 
-C项：定位文字资料第三段可得，截至2008年底，自然保护区达到2538个，其中国家级自然保护区303个。根据公式：比重![](assets-fenbi-163/00a1d6436195ecd6b50c6b166e6b1ee82cc40bb53bbeebcf661c7072b5185ff4.png)，故所求比重为![](assets-fenbi-163/42767e0ebf0a2133dec72cc703b19518f0805d050f92ab2ead55dfb21b84f803.png)![](assets-fenbi-163/b30371db3dd8fe1e17156ae920a10bbf10b3739584aba3e9b121f9bfb9bd6ad0.png)，即比重未超过13%，错误；
+C项：定位文字资料第三段可得，截至2008年底，自然保护区达到2538个，其中国家级自然保护区303个。根据公式：比重![](assets-fenbi-163/00a1d6436195ecd6b50c6b166e6b1ee82cc40bb53bbeebcf661c7072b5185ff4.png)，故所求比重为![](assets-fenbi-163/42767e0ebf0a2133dec72cc703b19518f0805d050f92ab2ead55dfb21b84f803.png)\<13%，即比重未超过13%，错误；
 
 D项：定位文字资料第四段可得，2008年乙烯消费量998万吨，下降2.9%。根据公式：基期量![](assets-fenbi-163/380060f019aca668219fb5ca0fdfbcb89feb1ddf3d4361fe48bc598b181a1509.png)，故2007年全国乙烯消费量为![](assets-fenbi-163/6c4cce30b46200c310e9b24c37844e04780f9223a512e34600582bc677555dca.png)万吨，即超过1000万吨，正确。
 
@@ -4103,7 +4103,7 @@ D
 
 **解析**
 
-根据题干“2008年······是······的”，结合选项均为倍数，且材料时间为2008年，可判定本题为现期倍数问题。定位图表可得：2008年实际外资最多的月份是6月，合同外资为253889万美元（A）；实际外资最少的月份是2月，合同外资为65355万美元（B）。故所求倍数![](assets-fenbi-163/64147bf1aa602931789cf33ccb1e328f6a82b5fe0a71d909277c062f319ee082.png)![](assets-fenbi-163/8fdcdb8dcf333030bbe17ee251d88710feee17b5ee8cd2d0ebc5bc42a9d51d1e.png)![](assets-fenbi-163/8ebbe0b2fc9b89bd7b73188f4e03ccecb206c3e1f81c37b238527b34cb39ce8d.png)倍。
+根据题干“2008年······是······的”，结合选项均为倍数，且材料时间为2008年，可判定本题为现期倍数问题。定位图表可得：2008年实际外资最多的月份是6月，合同外资为253889万美元（A）；实际外资最少的月份是2月，合同外资为65355万美元（B）。故所求倍数=A/B![](assets-fenbi-163/8fdcdb8dcf333030bbe17ee251d88710feee17b5ee8cd2d0ebc5bc42a9d51d1e.png)![](assets-fenbi-163/8ebbe0b2fc9b89bd7b73188f4e03ccecb206c3e1f81c37b238527b34cb39ce8d.png)倍。
 
 故正确答案为D。
 
