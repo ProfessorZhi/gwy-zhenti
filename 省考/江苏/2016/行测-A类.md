@@ -1870,7 +1870,7 @@ B
 
 ### 第 57 题
 
-![](assets-fenbi-75750/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-75750/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，1，5，35，( )
+1/3，1/3，1，5，35，( )
 
 A. 315
 
@@ -1896,7 +1896,7 @@ A
 
 ### 第 58 题
 
-![](assets-fenbi-75750/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)，![](assets-fenbi-75750/f61d9565f49d10c1a519f2e60ab41669a2f25bc5ba86c11930274bf065fb5585.png)，![](assets-fenbi-75750/36ae5d60725a5d4baa0dec141d36b65306e14a44535bf5a8bb6df3059c449538.png)，![](assets-fenbi-75750/31826939c72d64719cb2592245a66832aad4bce81cfc55ecad3349cb34266fd2.png)，![](assets-fenbi-75750/632dba4c2d214b251b1b966c80bc421db16713427fcc995838463186639a0ae7.png)，( )
+1/5，3/7，7/11，13/19，3/5，( )
 
 A. ![](assets-fenbi-75750/92150654dc0a28335a35974c2592e616ae22439b5e11738e311df9c2380fa37a.png)
 
@@ -1952,7 +1952,7 @@ A
 
 ### 第 60 题
 
-2，3，4，![](assets-fenbi-75750/a9290c0bd6b7d38cc6aa161668e99fccffce807f2d76253a3db08c077e1265b2.png)，![](assets-fenbi-75750/9aa5ddbeb746fbaa4e26cb464b1ca46a43dae7e1a46ae7382f6ccbd9ec9d56bd.png)，（ ）
+2，3，4，3√3，√46，（ ）
 
 A. 81
 
@@ -1970,7 +1970,7 @@ D
 
 **解析**
 
-将数列统一转化为根号形式，则原数列转化为：![](assets-fenbi-75750/113ce7f0c3cffdaf8e623f6c1f692a1bb11fb3a428a20aab5a948fae1d8600af.png)，![](assets-fenbi-75750/3a29e3596217d739673ec688d2735365ad477132bf1506dae931f954bf0ac856.png)，![](assets-fenbi-75750/66b23d105b727b88e6270d77ca3d97ee497fa9834d542bb649c344ca3f3f58f6.png)，![](assets-fenbi-75750/b84ea7d9acdf0ccd085fb27d3bf3e1861f24cf43537b279fff9705a9d8044b5c.png)，![](assets-fenbi-75750/9aa5ddbeb746fbaa4e26cb464b1ca46a43dae7e1a46ae7382f6ccbd9ec9d56bd.png)，（ ）。根号内数字变化幅度较小且呈递增趋势，优先考虑作差。作差后可得：5，7，11，19，（ ）。二次作差得：2，4，8，（16），判定其是公比为2的等比数列，下一项为16。故所求项为![](assets-fenbi-75750/83520355b40b8a44f1104f6f52cd2cad4f2f6faf6abb4eed5684085fe83305eb.png)![](assets-fenbi-75750/735bc36b439d6776660a082b918699118fc21f6897ea8b4c8409dce4a7d2851a.png)。
+将数列统一转化为根号形式，则原数列转化为：![](assets-fenbi-75750/113ce7f0c3cffdaf8e623f6c1f692a1bb11fb3a428a20aab5a948fae1d8600af.png)，![](assets-fenbi-75750/3a29e3596217d739673ec688d2735365ad477132bf1506dae931f954bf0ac856.png)，![](assets-fenbi-75750/66b23d105b727b88e6270d77ca3d97ee497fa9834d542bb649c344ca3f3f58f6.png)，√27，√46，（ ）。根号内数字变化幅度较小且呈递增趋势，优先考虑作差。作差后可得：5，7，11，19，（ ）。二次作差得：2，4，8，（16），判定其是公比为2的等比数列，下一项为16。故所求项为![](assets-fenbi-75750/83520355b40b8a44f1104f6f52cd2cad4f2f6faf6abb4eed5684085fe83305eb.png)![](assets-fenbi-75750/735bc36b439d6776660a082b918699118fc21f6897ea8b4c8409dce4a7d2851a.png)。
 
 故正确答案为D。
 

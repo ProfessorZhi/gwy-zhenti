@@ -2387,7 +2387,7 @@ B. ![](assets-fenbi-101193/e307aefe334cbf8c099834ef811fc9a1a00db54ad681f1385e019
 
 C. ![](assets-fenbi-101193/f7acc1688afb9f880105d2b04912736e98dc090ef12f2e4caf88f2a95ba8d2bc.png)
 
-D. ![](assets-fenbi-101193/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)
+D. 1/4
 
 <details><summary>第 70 题 · 答案与解析</summary>
 
@@ -2463,7 +2463,7 @@ C
 
 甲到飞机场坐飞机，飞机场的十二个登机口排成一条直线，相邻两个登机口之间相距50米。甲在登机口等待时被告知登机口更改了，那么甲走到新登机口的距离不超过200米的概率是：
 
-A. ![](assets-fenbi-101193/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+A. 1/2
 
 B. ![](assets-fenbi-101193/0a89cf289a2421a37bde51c1bc5bace6156f8acefccf1fac1fe993aec6c92528.png)
 

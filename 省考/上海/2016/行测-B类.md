@@ -2300,7 +2300,7 @@ A
 
 **解析**
 
-如图所示，长方形小屋为矩形ABDC，羊被绳栓在C点。则羊所能吃到草的面积包括以C为圆心的圆的![](assets-fenbi-75402/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)与以A和D为圆心的圆的![](assets-fenbi-75402/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)，其他区域的草均不能吃到。则所能吃到草的面积![](assets-fenbi-75402/3530d0b7819f3d03efa53940f8acf13e5d7a03d0e7a2b60ef87368f73305f7aa.png)平方米。
+如图所示，长方形小屋为矩形ABDC，羊被绳栓在C点。则羊所能吃到草的面积包括以C为圆心的圆的3/4与以A和D为圆心的圆的1/4，其他区域的草均不能吃到。则所能吃到草的面积![](assets-fenbi-75402/3530d0b7819f3d03efa53940f8acf13e5d7a03d0e7a2b60ef87368f73305f7aa.png)平方米。
 
 ![](assets-fenbi-75402/7cde226fbb4cb66b382d299ce9c1112c637f4644f06d3924a3b6e90b57e26be6.png)
 

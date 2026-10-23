@@ -2037,15 +2037,15 @@ A
 
 ### 第 59 题
 
-5 3 2 ![](assets-fenbi-89911/033662eaae353c9b74d4fbc8cd048e86cd48f67742efcba48ed70d8da83a7f89.png) 1 （ ）
+5 3 2 7/5 1 （ ）
 
-A. ![](assets-fenbi-89911/529edcebb89feac7758b02f43748ba79044c716cf7a9b88f168495404af6a969.png)
+A. 7/8
 
 B. ![](assets-fenbi-89911/012456cf96cd3df82319eaf441243afca4767e5f43abab03b066d1cd9ce0e382.png)
 
-C. ![](assets-fenbi-89911/0ed9dbf98304868758eb2aea2a4b3ee397e311a1ac1217126c70b8952bc11dd5.png)
+C. 5/7
 
-D. ![](assets-fenbi-89911/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)
+D. 5/6
 
 <details><summary>第 59 题 · 答案与解析</summary>
 
@@ -2055,7 +2055,7 @@ C
 
 **解析**
 
-根据第四项和选项均为分数可知本题为分数数列，数列逐渐递减且仅有一个分数，可考虑反向约分，则数列可以改写为：![](assets-fenbi-89911/8f727d3587da20c3f1f4b48a73df08eb73e357f8667035429a44094b814dbfd8.png), ![](assets-fenbi-89911/b69e9022241f10a02d9ec1957a932c6018a03d5fead7da278c2889a5235d6bcf.png)，![](assets-fenbi-89911/c6e5206a05e557fddf965f0738eaa39c410d034a0e30e87bc537325a7b29282b.png)，![](assets-fenbi-89911/033662eaae353c9b74d4fbc8cd048e86cd48f67742efcba48ed70d8da83a7f89.png)，![](assets-fenbi-89911/f1629b6ac0b64e3fc7fb377206986ddb376f5d2821bc5e8cd70e6f8bac024037.png)，（），分母是公差为1的等差数列，分子是公差为-1的等差数列，则括号内应为![](assets-fenbi-89911/0ed9dbf98304868758eb2aea2a4b3ee397e311a1ac1217126c70b8952bc11dd5.png)。
+根据第四项和选项均为分数可知本题为分数数列，数列逐渐递减且仅有一个分数，可考虑反向约分，则数列可以改写为：![](assets-fenbi-89911/8f727d3587da20c3f1f4b48a73df08eb73e357f8667035429a44094b814dbfd8.png), ![](assets-fenbi-89911/b69e9022241f10a02d9ec1957a932c6018a03d5fead7da278c2889a5235d6bcf.png)，![](assets-fenbi-89911/c6e5206a05e557fddf965f0738eaa39c410d034a0e30e87bc537325a7b29282b.png)，7/5，![](assets-fenbi-89911/f1629b6ac0b64e3fc7fb377206986ddb376f5d2821bc5e8cd70e6f8bac024037.png)，（），分母是公差为1的等差数列，分子是公差为-1的等差数列，则括号内应为5/7。
 
 故正确答案为C。
 
@@ -2463,13 +2463,13 @@ B
 
 某企业4个分公司今年的销售额之和是去年的1.2倍。其中，甲分公司的销售额增长了50%，乙分公司的销售额与去年相同，丙和丁分公司的销售额均增长了25%。已知去年甲、丙、丁三个分公司的销售额之比为2:3:5，则乙分公司今年的销售额占4个分公司总量的：
 
-A. ![](assets-fenbi-89911/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)
+A. 1/3
 
 B. ![](assets-fenbi-89911/4c1f0dc2f93b735237e763c461bc18cfc0cec9df9817d9a1b7a32a1abb1fdcdb.png)
 
 C. ![](assets-fenbi-89911/597e6f859f2c02f23e07a55a3386a59f6daf0755b71eba95e5736e7c6d187c2c.png)
 
-D. ![](assets-fenbi-89911/86aa595c61c89d0e3a0309bba81152f2e3d085e691c513d7ccac76ee509351cd.png)
+D. 5/18
 
 <details><summary>第 73 题 · 答案与解析</summary>
 
@@ -2551,7 +2551,7 @@ A
 
 ### 第 76 题
 
-某公司研发部、市场部和销售部共新招了十几名员工，其中研发部新员工数与市场部和销售部新员工数的总和相同。销售部如果将![](assets-fenbi-89911/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)的新员工调到市场部，则两个部门的新员工数相同。现在要为每名新员工各采购一台电脑，其中研发部的电脑每台不超过1万元，销售部和市场部的电脑每台不超过6千元。问采购这批电脑最多需要多少万元？
+某公司研发部、市场部和销售部共新招了十几名员工，其中研发部新员工数与市场部和销售部新员工数的总和相同。销售部如果将1/3的新员工调到市场部，则两个部门的新员工数相同。现在要为每名新员工各采购一台电脑，其中研发部的电脑每台不超过1万元，销售部和市场部的电脑每台不超过6千元。问采购这批电脑最多需要多少万元？
 
 A. 14.4
 
@@ -2693,7 +2693,7 @@ A
 
 ### 第 80 题
 
-袋子中有若干黑球和白球。若取出一个黑球，则袋中黑球数占总球数的![](assets-fenbi-89911/4c1f0dc2f93b735237e763c461bc18cfc0cec9df9817d9a1b7a32a1abb1fdcdb.png)；若取出两个白球，则袋中白球占![](assets-fenbi-89911/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)。从原来袋中抽出3个球，其中有且仅有1个黑球的概率：
+袋子中有若干黑球和白球。若取出一个黑球，则袋中黑球数占总球数的![](assets-fenbi-89911/4c1f0dc2f93b735237e763c461bc18cfc0cec9df9817d9a1b7a32a1abb1fdcdb.png)；若取出两个白球，则袋中白球占2/3。从原来袋中抽出3个球，其中有且仅有1个黑球的概率：
 
 A. 低于20%
 
@@ -2713,7 +2713,7 @@ C
 
 设黑球数量为x，白球数量为y，根据题干条件：若取出一个黑球，则袋中黑球数占总球数的![](assets-fenbi-89911/4c1f0dc2f93b735237e763c461bc18cfc0cec9df9817d9a1b7a32a1abb1fdcdb.png)，列式可得：![](assets-fenbi-89911/676eaf91203b4bef8a5d190fec24a163c026a8f9b50a04d211851a46f822f1ac.png)，化简可得5x-2y=5···①
 
-根据题干条件：若取出两个白球，则袋中白球占![](assets-fenbi-89911/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)，列式可得![](assets-fenbi-89911/80c7f232f105406b6fc4b9ded305d1c193ab2b93cdea9ef1d416ab85113dc258.png)，化简可得y-2x=2···②，联立①②解得x=9，y=20，即黑球数=9，白球数=20，总球数=29；
+根据题干条件：若取出两个白球，则袋中白球占2/3，列式可得![](assets-fenbi-89911/80c7f232f105406b6fc4b9ded305d1c193ab2b93cdea9ef1d416ab85113dc258.png)，化简可得y-2x=2···②，联立①②解得x=9，y=20，即黑球数=9，白球数=20，总球数=29；
 
 问有且仅有1个黑球的概率，即1个黑球，2个白球，根据![](assets-fenbi-89911/382554fb0b18751ca3474ddee75c198d26924bf7e89824e25b983d978c957433.png)![](assets-fenbi-89911/8c379b715fdf52caeddd65fed0dc542a01cafe6199f8d8bf274dac130c9a603e.png)\=![](assets-fenbi-89911/a9871b2cb39c98d1611fd25d14ff41c15aa3f67dc3c1d2f668cfb8587a7e717f.png)。
 

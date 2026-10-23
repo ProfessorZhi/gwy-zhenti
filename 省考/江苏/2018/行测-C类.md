@@ -1861,7 +1861,7 @@ B
 
 ### 第 55 题
 
-1，2，![](assets-fenbi-84064/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-84064/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)，![](assets-fenbi-84064/2ea4af6029adbdf57a44ff8abc12b37fa51305dd7a699a059cdc47f36400ad58.png)，（ ）
+1，2，3/2，5/6，11/30，（ ）
 
 A. ![](assets-fenbi-84064/1197969e691328049816441b8e858009a25a9f879bcc77dcb8a182f7ff97f161.png)
 
@@ -1879,7 +1879,7 @@ D
 
 **解析**
 
-题干中数据大部分为分数，优先考虑分数数列。三个分数中，分母分别为2、6、30，明显倍数关系，倍数分别为3、5，分别与前两项分子相同，猜测前一项的分子、分母乘积为后一项的分母；再观察分子，5-3=2，11-5=6，分别与前两项分母相同，猜测前一项的分子、分母之和为后一项分子。再对前两个整数进行整化分，该数列为![](assets-fenbi-84064/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)，![](assets-fenbi-84064/15ab7241e07722dfb517ddf073b83b5b000281e1fed048d64b126410b71fd373.png)，![](assets-fenbi-84064/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-84064/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)，![](assets-fenbi-84064/2ea4af6029adbdf57a44ff8abc12b37fa51305dd7a699a059cdc47f36400ad58.png)，（ ）。1+1=2（第二项分子），![](assets-fenbi-84064/e9767a9d1faae2385093952c8e849e0d1a13e76c259dc65e20ebdb2d5803fab9.png)（第二项分母）；2+1=3（第三项分子），![](assets-fenbi-84064/55304b2bf78c9df5f14e8d68e2e195d0ad69e5b9df134a862c0875e8ef4dd9c2.png)（第三项分母），均满足刚才猜测的规律，则规律成立。因此所求项分子为30+11=41，分母为![](assets-fenbi-84064/cf750db53e9d2298ea6cea512d37ad9c009a875dab5c842c91f3817840c271d2.png)，即![](assets-fenbi-84064/c940a6f7f1a77c65ef27a5f7902ca4da1c6fc449748bdf29c5bb3e465a72db95.png)。
+题干中数据大部分为分数，优先考虑分数数列。三个分数中，分母分别为2、6、30，明显倍数关系，倍数分别为3、5，分别与前两项分子相同，猜测前一项的分子、分母乘积为后一项的分母；再观察分子，5-3=2，11-5=6，分别与前两项分母相同，猜测前一项的分子、分母之和为后一项分子。再对前两个整数进行整化分，该数列为![](assets-fenbi-84064/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)，![](assets-fenbi-84064/15ab7241e07722dfb517ddf073b83b5b000281e1fed048d64b126410b71fd373.png)，3/2，5/6，11/30，（ ）。1+1=2（第二项分子），![](assets-fenbi-84064/e9767a9d1faae2385093952c8e849e0d1a13e76c259dc65e20ebdb2d5803fab9.png)（第二项分母）；2+1=3（第三项分子），![](assets-fenbi-84064/55304b2bf78c9df5f14e8d68e2e195d0ad69e5b9df134a862c0875e8ef4dd9c2.png)（第三项分母），均满足刚才猜测的规律，则规律成立。因此所求项分子为30+11=41，分母为![](assets-fenbi-84064/cf750db53e9d2298ea6cea512d37ad9c009a875dab5c842c91f3817840c271d2.png)，即![](assets-fenbi-84064/c940a6f7f1a77c65ef27a5f7902ca4da1c6fc449748bdf29c5bb3e465a72db95.png)。
 
 故正确答案为D。
 
@@ -2093,7 +2093,7 @@ C
 
 方法一：根据题意可知，入选选手中男女人数分别为![](assets-fenbi-84064/6b113570d12d83bb534e688691e251f80783d1fdeb603cee9f55fe5b28599a9f.png)人、91-56=35人。设落选选手中男女人数分别为3x和4x，则报名选手中男女人数之比为![](assets-fenbi-84064/7dcd9c00f801d7ad447b93f907504078a167e1d4f2b467e48dda86b271a113aa.png)，解得x=4，所以落选选手人数为3x+4x=7x=7×4=28人，报名选手共有91+28=119人。
 
-方法二：线段法。根据题意可得，入选选手中男选手占比为![](assets-fenbi-84064/45e0b55adcf25ea9fa830e959db15e50780f47353e432674bd91e8acbb6ddd51.png)，落选选手中男选手占比为![](assets-fenbi-84064/321ed404c17dd75eeca97422cbcb45373fc1a27444c83b38c2b181262716ca08.png)，报名选手中男选手占比为![](assets-fenbi-84064/7b8f5df8d3903d5316c297cd8939b6c4dfbc53eddb967f3597b6245a2a65b187.png)，所以![](assets-fenbi-84064/46fe1d32bc2727eece6aceb48925d38c6b3d930c38a9348471093cbfc0b884ae.png)，化简得![](assets-fenbi-84064/1b8800cc3f450c826f842741e532c17c63e8e2d839741397bebe1fa41f55fc50.png)，解得落选选手人数=28人，所以报名选手共有91+28=119人。
+方法二：线段法。根据题意可得，入选选手中男选手占比为8/13，落选选手中男选手占比为![](assets-fenbi-84064/321ed404c17dd75eeca97422cbcb45373fc1a27444c83b38c2b181262716ca08.png)，报名选手中男选手占比为![](assets-fenbi-84064/7b8f5df8d3903d5316c297cd8939b6c4dfbc53eddb967f3597b6245a2a65b187.png)，所以![](assets-fenbi-84064/46fe1d32bc2727eece6aceb48925d38c6b3d930c38a9348471093cbfc0b884ae.png)，化简得![](assets-fenbi-84064/1b8800cc3f450c826f842741e532c17c63e8e2d839741397bebe1fa41f55fc50.png)，解得落选选手人数=28人，所以报名选手共有91+28=119人。
 
 ![](assets-fenbi-84064/4f3e25fe96d701da4ce0648c07642f2d785227538df8cfc870b98fdae4ffdef4.png)
 
@@ -2105,13 +2105,13 @@ C
 
 某市公安局从辖区2个派出所分别抽调2名警察，将他们随机安排到3个专案组工作，则来自同一派出所的警察不在同一组的概率是：
 
-A. ![](assets-fenbi-84064/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)
+A. 2/3
 
-B. ![](assets-fenbi-84064/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)
+B. 1/4
 
-C. ![](assets-fenbi-84064/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)
+C. 1/3
 
-D. ![](assets-fenbi-84064/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+D. 1/2
 
 <details><summary>第 64 题 · 答案与解析</summary>
 

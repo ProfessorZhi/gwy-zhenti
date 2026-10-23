@@ -1864,7 +1864,7 @@ A
 
 ### 第 54 题
 
-\-2，0，1，![](assets-fenbi-4189916/db55de44667f2fabbf1c005ab1167ee52541acf7a701b704f0799281832d19cf.png)，![](assets-fenbi-4189916/e66af2fc8720d4d858094ef1f9f1c0f9f07c3d96c9bff5d78ea8e6845054bb2c.png)，（ ）
+\-2，0，1，3/2，7/4，（ ）
 
 A. ![](assets-fenbi-4189916/efaf6e93799fa9fb860d6531239a9afd01ace6ca02b72ecc17c7bb342e3afb95.png)
 
@@ -1882,9 +1882,9 @@ D
 
 **解析**
 
-方法一：数列部分存在分数且选项均为分数，优先考虑分数数列。对数列进行反约分可得：![](assets-fenbi-4189916/fd93313e925c3f06ac6956fc938c6ac8cc63642be72ced3de5575af1568305af.png)，![](assets-fenbi-4189916/cbd3c9b8956277a6d18fd580804c00ee761299fcde2cc763aef0d5570b942e88.png)，![](assets-fenbi-4189916/75451df4e9b9dfb45f3a04e0d52f686402025917114ed89d2745ee5ea0f36615.png)，![](assets-fenbi-4189916/db55de44667f2fabbf1c005ab1167ee52541acf7a701b704f0799281832d19cf.png)，![](assets-fenbi-4189916/e66af2fc8720d4d858094ef1f9f1c0f9f07c3d96c9bff5d78ea8e6845054bb2c.png)，（ ），分子部分为：![](assets-fenbi-4189916/765cde1bc837711626731f7f8ca85b89fde178e69a066051bac5da194e945d2a.png)，0，1，3，7，（ ），后项减前项可得：![](assets-fenbi-4189916/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)，1，2，4，（ ），是公比为2的等比数列，则下一项为4×2=8，即分子的下一项为7+8=15；分母为![](assets-fenbi-4189916/4587b3db5ae6fa7a2fa9ce2e4ad4b47df49cef5526cc5b66da92da1e18605af7.png)，![](assets-fenbi-4189916/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)，1，2，4，（ ），是公比为2的等比数列，则分母的下一项为4×2=8。故所求项为![](assets-fenbi-4189916/d246d932732db18365508909a353810765a07006fd608fa90f44f1dca3355cad.png)。
+方法一：数列部分存在分数且选项均为分数，优先考虑分数数列。对数列进行反约分可得：![](assets-fenbi-4189916/fd93313e925c3f06ac6956fc938c6ac8cc63642be72ced3de5575af1568305af.png)，![](assets-fenbi-4189916/cbd3c9b8956277a6d18fd580804c00ee761299fcde2cc763aef0d5570b942e88.png)，![](assets-fenbi-4189916/75451df4e9b9dfb45f3a04e0d52f686402025917114ed89d2745ee5ea0f36615.png)，3/2，7/4，（ ），分子部分为：![](assets-fenbi-4189916/765cde1bc837711626731f7f8ca85b89fde178e69a066051bac5da194e945d2a.png)，0，1，3，7，（ ），后项减前项可得：1/2，1，2，4，（ ），是公比为2的等比数列，则下一项为4×2=8，即分子的下一项为7+8=15；分母为1/4，1/2，1，2，4，（ ），是公比为2的等比数列，则分母的下一项为4×2=8。故所求项为![](assets-fenbi-4189916/d246d932732db18365508909a353810765a07006fd608fa90f44f1dca3355cad.png)。
 
-方法二：观察数列无明显特征，考虑多级数列。后项-前项得到新数列：2，1，![](assets-fenbi-4189916/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)，![](assets-fenbi-4189916/4587b3db5ae6fa7a2fa9ce2e4ad4b47df49cef5526cc5b66da92da1e18605af7.png)，（ ），是公比为![](assets-fenbi-4189916/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)的等比数列，则下一项为![](assets-fenbi-4189916/b9189a4fd5dae2651f76487728bdcca5c7bd109f707a9006bfc6685e9840bb5f.png)。故所求项为![](assets-fenbi-4189916/f4dd0c81bec0f96b475ff3e4a8c9cbcc69d850307b5f0c8dc33a241077c9e079.png)。
+方法二：观察数列无明显特征，考虑多级数列。后项-前项得到新数列：2，1，1/2，1/4，（ ），是公比为1/2的等比数列，则下一项为![](assets-fenbi-4189916/b9189a4fd5dae2651f76487728bdcca5c7bd109f707a9006bfc6685e9840bb5f.png)。故所求项为![](assets-fenbi-4189916/f4dd0c81bec0f96b475ff3e4a8c9cbcc69d850307b5f0c8dc33a241077c9e079.png)。
 
 方法三：观察数列无明显特征，考虑递推数列。观察发现：-2÷2+1=0，0÷2+1=1，![](assets-fenbi-4189916/a4892fd40e9635f9f3838fa0016eb95c124e2e37d4f3e567cb7020a889a64c3d.png)，![](assets-fenbi-4189916/28d47b0454c88242683955e2f65df04d23ff6aa9a0603820cab856283d4db870.png)，规律为：第一项÷2+1=第二项，故所求项为![](assets-fenbi-4189916/a81d6b0fe37d63e1dc7e44ae3270a97316aec9f9b497529f089853d89a7ca2f8.png)。
 
@@ -1894,7 +1894,7 @@ D
 
 ### 第 55 题
 
-![](assets-fenbi-4189916/0cb1f8a39b7a0a6979c63e634d6d4d74ed60f07458a0f25c9ddfabe2c40fd1a2.png)，![](assets-fenbi-4189916/841d75d91428a82692002869b34c9ca3534de1cd4a9bf609dfd02c211ccfdd48.png)，14，![](assets-fenbi-4189916/b78a89ab177413e08a0d00db0644e9e5ae625b8b939a81415bedf00935464ddc.png)，![](assets-fenbi-4189916/444e0f8bb1137c43ec6e5969ade12795b117e5dcd3bf73e45cfa1765472096c0.png)，（ ）
+5+√6，7+2√2，14，13+√10，17+2√3，（ ）
 
 A. ![](assets-fenbi-4189916/504ea88f87a78d8b0f93779700e89929dea57e8405154bc1ffe6e795dc6f9199.png)
 
@@ -1912,7 +1912,7 @@ C
 
 **解析**
 
-观察数列，有特殊符号“+”，考虑机械划分。原数列可转化为：![](assets-fenbi-4189916/0cb1f8a39b7a0a6979c63e634d6d4d74ed60f07458a0f25c9ddfabe2c40fd1a2.png)，![](assets-fenbi-4189916/43bf507799c27322169b0be484ad098e1c3f4e2e5f3dc7da631ae797d7432277.png)，![](assets-fenbi-4189916/87e2345b4df7bbd21220741d562a895358a1d4386f622217f2c6615fa4770747.png)，![](assets-fenbi-4189916/b78a89ab177413e08a0d00db0644e9e5ae625b8b939a81415bedf00935464ddc.png)，![](assets-fenbi-4189916/495fbf2082c2d48b5ad427acec1f31646d5231d1f6a85010c4f1b5378cb1f2ed.png)，（ ）。“+”之前部分：5，7，11，13，17，（ ），是质数数列，则下一项为19；“+”之后部分：![](assets-fenbi-4189916/4616e10cd511e1413240e8229a4dd7526347d35ca40b1fd1964713a99898e981.png)，![](assets-fenbi-4189916/031cced1b2d1b4c1e62578cafcc03eba147eef58af22c250292fdaf022189463.png)，![](assets-fenbi-4189916/d98a2fcb33ce0daa09e04757137e35b0d309aa2b843daf5ca01d76fdb352fb46.png)，![](assets-fenbi-4189916/a8e9659bfe3df77aa9ad7b86daf4fe801bcd3b3bc5a887188ab1d1ea36e6f6e9.png)，![](assets-fenbi-4189916/11a9854de1714c2d91449f98556a463620db4971f634243295592ba5af914767.png)，（ ），根号下是合数数列，则下一项为![](assets-fenbi-4189916/0554bf82c84e938b4319f5bb841b43b474092d4e0609c06bc198255608967b75.png)。故所求项为![](assets-fenbi-4189916/aa0a659e39708d97c098f0819dada691f25d6a98fa7112475e75e052285582fd.png)。
+观察数列，有特殊符号“+”，考虑机械划分。原数列可转化为：5+√6，![](assets-fenbi-4189916/43bf507799c27322169b0be484ad098e1c3f4e2e5f3dc7da631ae797d7432277.png)，![](assets-fenbi-4189916/87e2345b4df7bbd21220741d562a895358a1d4386f622217f2c6615fa4770747.png)，13+√10，![](assets-fenbi-4189916/495fbf2082c2d48b5ad427acec1f31646d5231d1f6a85010c4f1b5378cb1f2ed.png)，（ ）。“+”之前部分：5，7，11，13，17，（ ），是质数数列，则下一项为19；“+”之后部分：![](assets-fenbi-4189916/4616e10cd511e1413240e8229a4dd7526347d35ca40b1fd1964713a99898e981.png)，![](assets-fenbi-4189916/031cced1b2d1b4c1e62578cafcc03eba147eef58af22c250292fdaf022189463.png)，![](assets-fenbi-4189916/d98a2fcb33ce0daa09e04757137e35b0d309aa2b843daf5ca01d76fdb352fb46.png)，![](assets-fenbi-4189916/a8e9659bfe3df77aa9ad7b86daf4fe801bcd3b3bc5a887188ab1d1ea36e6f6e9.png)，![](assets-fenbi-4189916/11a9854de1714c2d91449f98556a463620db4971f634243295592ba5af914767.png)，（ ），根号下是合数数列，则下一项为![](assets-fenbi-4189916/0554bf82c84e938b4319f5bb841b43b474092d4e0609c06bc198255608967b75.png)。故所求项为![](assets-fenbi-4189916/aa0a659e39708d97c098f0819dada691f25d6a98fa7112475e75e052285582fd.png)。
 
 故正确答案为C。
 

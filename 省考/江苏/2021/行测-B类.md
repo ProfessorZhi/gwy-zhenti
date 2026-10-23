@@ -1679,7 +1679,7 @@ B
 
 ### 第 48 题
 
-![](assets-fenbi-101466/e7d7110521da7cb9a3e44060ba74144284720d40463c93a9f2f0945591805b67.png)，![](assets-fenbi-101466/c25f59c475d436e79dd6fb180b3b91fc2d6b55c7f2dff0f0d813bac85ce8d500.png)，![](assets-fenbi-101466/0de57458d97bbeee96e14d7776e028f18e48846cf89f83d362decacf0347fc05.png)，![](assets-fenbi-101466/ef5aaf6a832ef02927b7e1c032f67cc420ee888c3184706db41f329806ee17a9.png)，![](assets-fenbi-101466/e33fe0fe1357c58f7a186d39a0b3560275789c031f422aa8be791ec217403276.png)，（ ）
+2√2，√17，2√6，√37，4√3，（ ）
 
 A. ![](assets-fenbi-101466/37bbbb50f80c58c2ce00373a691dd6d32060e9a6f9514208ea88e7df13a65739.png)
 
@@ -1697,7 +1697,7 @@ B
 
 **解析**
 
-观察数列，无明显特征，将原数列转化为同一形式：![](assets-fenbi-101466/45e6c1cb937899f81ed8dff9c41ea744274a4cfeb9a500c473f0d3fe63af956e.png)，![](assets-fenbi-101466/c25f59c475d436e79dd6fb180b3b91fc2d6b55c7f2dff0f0d813bac85ce8d500.png)，![](assets-fenbi-101466/dbdc767eee603a7f4b46a851d198443a2444d25fba3b89be381c1db096e50ffb.png)，![](assets-fenbi-101466/ef5aaf6a832ef02927b7e1c032f67cc420ee888c3184706db41f329806ee17a9.png)，![](assets-fenbi-101466/54381f154dbc24d4f7c81ff33e4673fe652b976581151c265ceaa13fc40320c8.png)，（ ）。
+观察数列，无明显特征，将原数列转化为同一形式：![](assets-fenbi-101466/45e6c1cb937899f81ed8dff9c41ea744274a4cfeb9a500c473f0d3fe63af956e.png)，√17，![](assets-fenbi-101466/dbdc767eee603a7f4b46a851d198443a2444d25fba3b89be381c1db096e50ffb.png)，√37，![](assets-fenbi-101466/54381f154dbc24d4f7c81ff33e4673fe652b976581151c265ceaa13fc40320c8.png)，（ ）。
 
 方法一：考虑根号下数字两两作和形成新数列①：25，41，61，85，（ ），继续作和无规律，考虑新数列两两作差得②：16，20，24，（ ），是公差为4的等差数列，下一项为24+4=28，则新数列①下一项=85+28=113，故所求项![](assets-fenbi-101466/afed57e644f813dd264a9c451dc9b2b7f38b3c9a62be127a33a16b2453285a6f.png)。
 
@@ -1735,7 +1735,7 @@ A
 
 ### 第 50 题
 
-![](assets-fenbi-101466/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-101466/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-101466/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，![](assets-fenbi-101466/c49846c2f3e9602f60323361a11e5392253b46461b057f7e6d3a9f34ccffc3f1.png)，![](assets-fenbi-101466/2606dadaa66ab0b4de8487dd4ab932f2bf40c8b25a830243138a0d94a22b00ab.png)，（ ）
+1/3，1/3，1/2，5/8，35/64，（ ）
 
 A. ![](assets-fenbi-101466/5474cbf8bfc94d5e65bc28e36f7b2d78ad5d4621502c85352b014cf993a6ce7a.png)
 
@@ -1753,9 +1753,9 @@ D
 
 **解析**
 
-方法一：题干与选项均为分数，优先考虑分数数列，反约分后得到新数列为：![](assets-fenbi-101466/6805fac5cffead6cf7faa97eab21e8b17450c5dda2936b4650a4522c6fed593b.png)，![](assets-fenbi-101466/6805fac5cffead6cf7faa97eab21e8b17450c5dda2936b4650a4522c6fed593b.png)，![](assets-fenbi-101466/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)，![](assets-fenbi-101466/cf43061381c8ab7e1430e5c2996ad34c5e72344886136fde15f786818c0055de.png)，![](assets-fenbi-101466/f3b76deac79b3ee7da047286b7a2cf406230747688b37ed28671accfa2cc9da9.png)。分子部分后项÷前项得到数列：1，3，5，7，是公差为2的等差数列，下一项为7+2=9，则分子下一项为35×9=315；分母部分后项÷前项得到数列：1，2，4，8，是公比为2的等比数列，下一项8×2=16，则分母下一项为：64×16=1024。故原数列下一项为![](assets-fenbi-101466/c461e17a71ba05beec54784b47bee45acdae16ae15dff6712e58552d43637063.png)。
+方法一：题干与选项均为分数，优先考虑分数数列，反约分后得到新数列为：![](assets-fenbi-101466/6805fac5cffead6cf7faa97eab21e8b17450c5dda2936b4650a4522c6fed593b.png)，![](assets-fenbi-101466/6805fac5cffead6cf7faa97eab21e8b17450c5dda2936b4650a4522c6fed593b.png)，1/2，![](assets-fenbi-101466/cf43061381c8ab7e1430e5c2996ad34c5e72344886136fde15f786818c0055de.png)，![](assets-fenbi-101466/f3b76deac79b3ee7da047286b7a2cf406230747688b37ed28671accfa2cc9da9.png)。分子部分后项÷前项得到数列：1，3，5，7，是公差为2的等差数列，下一项为7+2=9，则分子下一项为35×9=315；分母部分后项÷前项得到数列：1，2，4，8，是公比为2的等比数列，下一项8×2=16，则分母下一项为：64×16=1024。故原数列下一项为![](assets-fenbi-101466/c461e17a71ba05beec54784b47bee45acdae16ae15dff6712e58552d43637063.png)。
 
-方法二：题干与选项均为分数，优先考虑分数数列，若难以发现规律，则考虑作积作商。相邻两项作商，后项÷前项，得到新数列为![](assets-fenbi-101466/75451df4e9b9dfb45f3a04e0d52f686402025917114ed89d2745ee5ea0f36615.png)，![](assets-fenbi-101466/db55de44667f2fabbf1c005ab1167ee52541acf7a701b704f0799281832d19cf.png)，![](assets-fenbi-101466/d49c180ee207c510cc0496795f331924737828a4ddfd9cdcda4ea19a5bedb49b.png)，![](assets-fenbi-101466/7175a1bf234b972881e33389835b2722dcbc4f9b3c40adb986174cd21be2ef24.png)······，新数列仍为分数数列，观察分子部分，为公差是2的等差数列，则新数列下一项分子为7+2=9；观察分母部分，为公比是2的等比数列，则新数列下一项分母是8×2=16，则新数列下一项为![](assets-fenbi-101466/af90ec74ac48be781405f073f56222dfdd7e7244fa5b94ed0f10a9aba7f02a33.png)，故原数列所求项![](assets-fenbi-101466/da03be15e6219fc2870dcb102c9c095a695868e65994e4bf1e9eb05359724d8c.png)。
+方法二：题干与选项均为分数，优先考虑分数数列，若难以发现规律，则考虑作积作商。相邻两项作商，后项÷前项，得到新数列为![](assets-fenbi-101466/75451df4e9b9dfb45f3a04e0d52f686402025917114ed89d2745ee5ea0f36615.png)，3/2，5/4，![](assets-fenbi-101466/7175a1bf234b972881e33389835b2722dcbc4f9b3c40adb986174cd21be2ef24.png)······，新数列仍为分数数列，观察分子部分，为公差是2的等差数列，则新数列下一项分子为7+2=9；观察分母部分，为公比是2的等比数列，则新数列下一项分母是8×2=16，则新数列下一项为![](assets-fenbi-101466/af90ec74ac48be781405f073f56222dfdd7e7244fa5b94ed0f10a9aba7f02a33.png)，故原数列所求项![](assets-fenbi-101466/da03be15e6219fc2870dcb102c9c095a695868e65994e4bf1e9eb05359724d8c.png)。
 
 故正确答案为D。
 

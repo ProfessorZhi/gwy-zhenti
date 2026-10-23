@@ -54,6 +54,7 @@
 | 报表 | 日期 | 一句话说明 | 状态 |
 |---|---|---|---|
 | [IMAGE-AUDIT-20261023.md](IMAGE-AUDIT-20261023.md) | 10-23 | 1,422 份 MD、86,858 处图片引用与两处图库交叉核对：断图 0；已删除 66,440 个有副本孤儿（514 MB）、归档 27,773 个唯一孤儿（33 MB），改后断链仍为 0。 | **现行** |
+| [FORMULA-TRANSCRIPTION-20261023.md](FORMULA-TRANSCRIPTION-20261023.md) | 10-23 | 行内公式小图双盲转写第一波：334 张唯一图，314 张两遍一致，其中 273 张替换为纯文本（2,829 处、442 份卷），20 张分歧保留图片；映射表 `formula-transcription-20261023.jsonl`；断链仍为 0。 | **现行**（第一波；全量 4,622 张进行中） |
 
 > 早期图片专项只有 JSONL 凭据：[`IMAGE-CROP-FOLLOWUP-20261012.jsonl`](IMAGE-CROP-FOLLOWUP-20261012.jsonl)（2 行，浙江2025 分数题裁图上边界）、[`PAPER-INTEGRITY-20261011.jsonl`](PAPER-INTEGRITY-20261011.jsonl)（4 行，含新增解析裁图哈希）。
 

@@ -1265,7 +1265,7 @@ C
 
 **解析**
 
-A项：铝的密度比较小，![](assets-fenbi-101181/86c2768181b8fee0be60d016f4cb35ba69c0e9323cb1ddc1146033250054be07.png)，其密度约是铁的![](assets-fenbi-101181/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，同时铝还具有较强的防腐蚀能力，可以用来做航空材料，正确；
+A项：铝的密度比较小，![](assets-fenbi-101181/86c2768181b8fee0be60d016f4cb35ba69c0e9323cb1ddc1146033250054be07.png)，其密度约是铁的1/3，同时铝还具有较强的防腐蚀能力，可以用来做航空材料，正确；
 
 B项：铝的电阻率比较低，导电性比较强，延展性比较好，可以做电线电缆，正确；
 
@@ -2205,15 +2205,15 @@ C
 
 ### 第 61 题
 
-2，2，![](assets-fenbi-101181/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，1，![](assets-fenbi-101181/c49846c2f3e9602f60323361a11e5392253b46461b057f7e6d3a9f34ccffc3f1.png)，
+2，2，3/2，1，5/8，
 
-A. ![](assets-fenbi-101181/3aab04b1c812afc46cad885eb1229542587da939d29d8c591165600d80381c42.png)
+A. 3/8
 
 B. 0
 
 C. ![](assets-fenbi-101181/78d752713e00f886e690a59c8a793fe74dfffac70f31e4798b8d8fa5c294d2bd.png)
 
-D. ![](assets-fenbi-101181/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)
+D. 3/4
 
 <details><summary>第 61 题 · 答案与解析</summary>
 
@@ -2465,7 +2465,7 @@ D
 
 甲到飞机场坐飞机，飞机场的十二个登机口排成一条直线，相邻两个登机口之间相距50米。甲在登机口等待时被告知登机口更改了，那么甲走到新登机口的距离不超过200米的概率是：
 
-A. ![](assets-fenbi-101181/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+A. 1/2
 
 B. ![](assets-fenbi-101181/0a89cf289a2421a37bde51c1bc5bace6156f8acefccf1fac1fe993aec6c92528.png)
 

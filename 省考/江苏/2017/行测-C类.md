@@ -1995,13 +1995,13 @@ C
 
 ### 第 59 题
 
-![](assets-fenbi-77308/c39adad68ceae37eea728b9c105feb64d6ae9a527cced310fc876bfd887903c5.png)，-1，![](assets-fenbi-77308/b6aeea76ef2f9dfa329be87f8f21e44eb204ca00152f4c96d249676bff02aaf2.png)，![](assets-fenbi-77308/9afa4d45d62754e0802ec6d5dcffb7b089aa935ce718d2f4332210ec803c08ee.png)，![](assets-fenbi-77308/79a51449f9269e79c56b94d4a543d4f47d7c4389fe70a9b4a4483ff3831dd2f2.png)，（ ）
+7/2，-1，1/8，1/8，5/32，（ ）
 
 A. ![](assets-fenbi-77308/5b2ef54feb6a197a812e079dc6b5020bfef7880a4397b11f5a3d1562dd6ec2e6.png)
 
 B. ![](assets-fenbi-77308/e307aefe334cbf8c099834ef811fc9a1a00db54ad681f1385e019956c43d9953.png)
 
-C. ![](assets-fenbi-77308/9afa4d45d62754e0802ec6d5dcffb7b089aa935ce718d2f4332210ec803c08ee.png)
+C. 1/8
 
 D. ![](assets-fenbi-77308/f45215a55d4d6e666be6e98b2b1d00fc61dab1bccc59e453e7e4e45400663c18.png)
 
@@ -2013,7 +2013,7 @@ C
 
 **解析**
 
-题干为分数数列，且出现整数，先考虑反约分可得新数列![](assets-fenbi-77308/2a549e13335c99319f960ecc9ec865d2a6ba41ad0afc4150a163d4cddb5ff1ba.png)，![](assets-fenbi-77308/a44be1506741b79bc6abc67c473c6bfe81813da53e10aad81b28d51346155fac.png)，![](assets-fenbi-77308/26bed9fbf6580d09d15762fdb704c78f15f72543f7090c40de8c64a463fbe34a.png)，![](assets-fenbi-77308/b39251aa6215808d28cc3ee72c64c82dbe5ee34d4490f2fed7188a1c54cb458d.png)，![](assets-fenbi-77308/79a51449f9269e79c56b94d4a543d4f47d7c4389fe70a9b4a4483ff3831dd2f2.png)，然后单独看分子和分母。新数列分母依次为2，4，8，16，32，是公比为2的等比数列，故下一项的分母为64，再看分子-7，-4，-1，2，5是公差为3的等差数列，故下一项的分子为8，因此下一项![](assets-fenbi-77308/956228cc933bf9aa3d1fcda4a372a08ced01258249ae2f6e18dfbe31e81ccd44.png)
+题干为分数数列，且出现整数，先考虑反约分可得新数列![](assets-fenbi-77308/2a549e13335c99319f960ecc9ec865d2a6ba41ad0afc4150a163d4cddb5ff1ba.png)，![](assets-fenbi-77308/a44be1506741b79bc6abc67c473c6bfe81813da53e10aad81b28d51346155fac.png)，![](assets-fenbi-77308/26bed9fbf6580d09d15762fdb704c78f15f72543f7090c40de8c64a463fbe34a.png)，![](assets-fenbi-77308/b39251aa6215808d28cc3ee72c64c82dbe5ee34d4490f2fed7188a1c54cb458d.png)，5/32，然后单独看分子和分母。新数列分母依次为2，4，8，16，32，是公比为2的等比数列，故下一项的分母为64，再看分子-7，-4，-1，2，5是公差为3的等差数列，故下一项的分子为8，因此下一项![](assets-fenbi-77308/956228cc933bf9aa3d1fcda4a372a08ced01258249ae2f6e18dfbe31e81ccd44.png)
 
 故正确答案为C。
 
@@ -2039,7 +2039,7 @@ D
 
 **解析**
 
-题干无明显特征，考虑作差。后项减前项得到新数列：1，2，9，64，出现9和64考虑幂次数列，可将新数列转化为![](assets-fenbi-77308/78dc3e42d9f26960e8f72bdc60a609a7caea0e5b0b52510e0fa5f48730eef1a7.png) ，![](assets-fenbi-77308/72e3227e768258fe4d5eef5acbcb4286800fc0a79808482b452ec6a0efc36f06.png)，![](assets-fenbi-77308/22d6bf8013d449add3713d64aba73fa59a6c667068989d1c90362bfdfe4d785f.png) ，![](assets-fenbi-77308/a517cfa05d65a3b97f0dfa75e4bc27d4fa93a36c71a318d2867783ee2a4cd5d4.png)，故新数列的下一项应为![](assets-fenbi-77308/ebeb6954f48bce06983575add800137bc361c055c419509242cddf1be9a61e78.png)，所求项为：![](assets-fenbi-77308/6dd57a5091a38627f4b28e83fa2bfcf30688b8fa7621bddc04e5647a770ac1d2.png)，计算尾数为5，只有D项符合 。
+题干无明显特征，考虑作差。后项减前项得到新数列：1，2，9，64，出现9和64考虑幂次数列，可将新数列转化为![](assets-fenbi-77308/78dc3e42d9f26960e8f72bdc60a609a7caea0e5b0b52510e0fa5f48730eef1a7.png) ，![](assets-fenbi-77308/72e3227e768258fe4d5eef5acbcb4286800fc0a79808482b452ec6a0efc36f06.png)，3^2 ，![](assets-fenbi-77308/a517cfa05d65a3b97f0dfa75e4bc27d4fa93a36c71a318d2867783ee2a4cd5d4.png)，故新数列的下一项应为![](assets-fenbi-77308/ebeb6954f48bce06983575add800137bc361c055c419509242cddf1be9a61e78.png)，所求项为：![](assets-fenbi-77308/6dd57a5091a38627f4b28e83fa2bfcf30688b8fa7621bddc04e5647a770ac1d2.png)，计算尾数为5，只有D项符合 。
 
 故正确答案为D。
 
@@ -2243,7 +2243,7 @@ D
 
 ### 第 68 题
 
-A、B两个容器装有质量相同的酒精溶液，若从A、B中各取一半溶液，混合后浓度为45%；若从A中取![](assets-fenbi-77308/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)、B中取![](assets-fenbi-77308/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)溶液，混合后浓度为40%。若从A中取![](assets-fenbi-77308/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)、B中取![](assets-fenbi-77308/ac9ac18eca77fa3364361ddb358500e653ad4274f5a1b391b37879e5e3a2d024.png)溶液，则混合后溶液的浓度是：
+A、B两个容器装有质量相同的酒精溶液，若从A、B中各取一半溶液，混合后浓度为45%；若从A中取1/2、B中取1/4溶液，混合后浓度为40%。若从A中取1/5、B中取![](assets-fenbi-77308/ac9ac18eca77fa3364361ddb358500e653ad4274f5a1b391b37879e5e3a2d024.png)溶液，则混合后溶液的浓度是：
 
 A. 48%
 
@@ -2277,7 +2277,7 @@ C
 
 （40%-a）×2=b-40%···②
 
-由①、②可得a=30%，b=60%，因此若从A中取![](assets-fenbi-77308/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)、B中取![](assets-fenbi-77308/ac9ac18eca77fa3364361ddb358500e653ad4274f5a1b391b37879e5e3a2d024.png)溶液，可得![](assets-fenbi-77308/592209101493da3c2178083dec905753f0ab662e44767930ff02887bd2d5a158.png)。
+由①、②可得a=30%，b=60%，因此若从A中取1/5、B中取![](assets-fenbi-77308/ac9ac18eca77fa3364361ddb358500e653ad4274f5a1b391b37879e5e3a2d024.png)溶液，可得![](assets-fenbi-77308/592209101493da3c2178083dec905753f0ab662e44767930ff02887bd2d5a158.png)。
 
 故正确答案为C。
 
@@ -2635,7 +2635,7 @@ D项：丝绸之路的目的是贸易，万里长征的目的是战略转移和�
 
 ### 第 79 题
 
-![](assets-fenbi-77308/8af4654e5e7b6834d178edf434f309f57b670d6b11266b35300a7cc68c3afdd2.png)
++-×-÷++
 
 A. ![](assets-fenbi-77308/89129b84533239947692e9577b19755207a0782f95ee8aabd65b0fe1279a7ed5.png)
 
@@ -2673,7 +2673,7 @@ D项：位置1、6、7的符号相同，位置2、4的符号相同，位置3、5
 
 ### 第 80 题
 
-![](assets-fenbi-77308/cc78e72a3e6863900105360b906340fdd7beb341655591ec43295c2bc1e7a651.png)
+&\$¤¤¥\$&¥
 
 A. ![](assets-fenbi-77308/bacbbd29530df9dd2f640ef1437de687e53841e8c8b5081119d9446908465474.png)
 

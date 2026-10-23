@@ -1892,7 +1892,7 @@ D
 
 ### 第 58 题
 
-![](assets-fenbi-75778/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-75778/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)，2，10，70，（ ）。
+1/3，2/3，2，10，70，（ ）。
 
 A. 770
 
@@ -1943,7 +1943,7 @@ D
 
 ### 第 60 题
 
-![](assets-fenbi-75778/ca2004eae349fa9bde093cc08a60bab5067a49c260d9db8bbf7616bc85103dcb.png)， 3![](assets-fenbi-75778/e04717ffdfcfd22a97bf322986571a32206f102da54e9c2386b5a9eb7a8c4430.png)， 4![](assets-fenbi-75778/40c7727be4ccb33086fdd3fdbfc85a251959162dd0c7431799065fa5040abae1.png)， 3![](assets-fenbi-75778/9115962fa7f6d8749c0bf8d3c18c6632f4971f37818f04d6a1fbbbad573c34ab.png)， 6![](assets-fenbi-75778/b95b9c5a73849d37c502c49e6f5cf97049167f599d0d6ea10776446555b199f9.png)，（ ）。
+![](assets-fenbi-75778/ca2004eae349fa9bde093cc08a60bab5067a49c260d9db8bbf7616bc85103dcb.png)， 3![](assets-fenbi-75778/e04717ffdfcfd22a97bf322986571a32206f102da54e9c2386b5a9eb7a8c4430.png)， 4![](assets-fenbi-75778/40c7727be4ccb33086fdd3fdbfc85a251959162dd0c7431799065fa5040abae1.png)， 3√6， 6√2，（ ）。
 
 A. 12
 
@@ -2401,7 +2401,7 @@ D项：“左右”与“上下”均为表示方向或位置的概念，二者�
 
 ### 第 74 题
 
-![](assets-fenbi-75778/a26e3ae74d6ac781764a83ba00842d0edb9d12799ee8b9bd2a6970293aef256e.png)
+\$@\$&&@\$
 
 A. ![](assets-fenbi-75778/753daaad1e5b07a98ebe6295e557cc102a22c5c4f32b9e1eb26920f4a59b50ac.png)
 

@@ -549,7 +549,7 @@ B项正确，由于太阳辐射和重力作用，地球上存在水循环。地�
 
 C项正确，地球上水的存在形态有三种：固态、液态、气态。大部分以液态的形态存在；在寒冷的极地和高山上水常常以固态的形态存在；空气中的水主要以气态的形态存在。自然界的水随着温度的改变，状态也会发生变化。
 
-D项错误，冰川水是地球上最宝贵、最丰富的淡水资源，蕴藏了所有淡水资源的![](assets-fenbi-89293/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)。但多处于极端的特殊地理位置，要么在南极、北极，要么在极高山上，所以冰川水具有极高的价值，但开采条件极其艰难。
+D项错误，冰川水是地球上最宝贵、最丰富的淡水资源，蕴藏了所有淡水资源的2/3。但多处于极端的特殊地理位置，要么在南极、北极，要么在极高山上，所以冰川水具有极高的价值，但开采条件极其艰难。
 
 本题为选非题，故正确答案为D。
 
@@ -1643,9 +1643,9 @@ A
 
 题干为小数数列，优先考虑将整数与小数部分分别找规律，原数列可拆分为：
 
-整数部分：4、9、25、49、121、（），所有数字均为平方数，即：![](assets-fenbi-89293/65c00c9dfdf215d59c4cb4a1182e7d8b7cb8a6ad6a41dd5404d3ffb9937f5515.png)、![](assets-fenbi-89293/22d6bf8013d449add3713d64aba73fa59a6c667068989d1c90362bfdfe4d785f.png)、![](assets-fenbi-89293/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)、![](assets-fenbi-89293/1da59e717c7847ef0fb006fceb36a33385d530a1f6d85d0c812abcafe7d54f7b.png)、![](assets-fenbi-89293/367ed635571593b801909dc55edcbbff1b2c78db545b192033c8bb389133e9ab.png)、（），底数为连续质数，则下一项应为![](assets-fenbi-89293/544556d266fa9c0978dcc586d42970c6e17a0b2e552f85a5d1ebf7af19f53b33.png)；
+整数部分：4、9、25、49、121、（），所有数字均为平方数，即：![](assets-fenbi-89293/65c00c9dfdf215d59c4cb4a1182e7d8b7cb8a6ad6a41dd5404d3ffb9937f5515.png)、3^2、![](assets-fenbi-89293/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)、![](assets-fenbi-89293/1da59e717c7847ef0fb006fceb36a33385d530a1f6d85d0c812abcafe7d54f7b.png)、![](assets-fenbi-89293/367ed635571593b801909dc55edcbbff1b2c78db545b192033c8bb389133e9ab.png)、（），底数为连续质数，则下一项应为![](assets-fenbi-89293/544556d266fa9c0978dcc586d42970c6e17a0b2e552f85a5d1ebf7af19f53b33.png)；
 
-小数部分：1、4、9、16、25、（），所有数字均为平方数，即：![](assets-fenbi-89293/a0fdf2f7d682b3f59afd80325c6fa11d7f40170c8f31f71520391e1c49ad2279.png)、![](assets-fenbi-89293/65c00c9dfdf215d59c4cb4a1182e7d8b7cb8a6ad6a41dd5404d3ffb9937f5515.png)、![](assets-fenbi-89293/22d6bf8013d449add3713d64aba73fa59a6c667068989d1c90362bfdfe4d785f.png)、![](assets-fenbi-89293/25d91681e6c61fc7f2d1ad05eb7633cdb40b8d8372ad6f5c0d07b7d66f3ba647.png)、![](assets-fenbi-89293/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)、（），底数为连续自然数，则下一项应为![](assets-fenbi-89293/9f47e132240d9b00f453b26bcd80fde51bc79387fb14fb59ea42f7d385129bdf.png)。
+小数部分：1、4、9、16、25、（），所有数字均为平方数，即：![](assets-fenbi-89293/a0fdf2f7d682b3f59afd80325c6fa11d7f40170c8f31f71520391e1c49ad2279.png)、![](assets-fenbi-89293/65c00c9dfdf215d59c4cb4a1182e7d8b7cb8a6ad6a41dd5404d3ffb9937f5515.png)、3^2、![](assets-fenbi-89293/25d91681e6c61fc7f2d1ad05eb7633cdb40b8d8372ad6f5c0d07b7d66f3ba647.png)、![](assets-fenbi-89293/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)、（），底数为连续自然数，则下一项应为![](assets-fenbi-89293/9f47e132240d9b00f453b26bcd80fde51bc79387fb14fb59ea42f7d385129bdf.png)。
 
 将整数与小数部分组合后可得169.36。
 
@@ -1683,7 +1683,7 @@ B
 
 ### 第 49 题
 
-![](assets-fenbi-89293/4725bc0cde4d4ea0a9441e981572e1bc1cf500ac56ed58d264d97eae27e89fc7.png)，![](assets-fenbi-89293/f94b04625ef13014ef5ee0b261bd2c3bdb83c76caf81081956a465fbaa943208.png)，![](assets-fenbi-89293/89dedf431ac96e02e2d0286ed621ee39929eb65b63708a1229ef905fe3c0f1f9.png)，![](assets-fenbi-89293/5da7b004955d7099b99bccb64f79541667891cb063e52db37255799fd5a58abe.png)，![](assets-fenbi-89293/0276938e8561c0ba04284be6d40b325067a3173bab131e8be7b13da098c6d993.png)，（ ）
+720√2，120√2，12√24，6√30，2√210，（ ）
 
 A. ![](assets-fenbi-89293/1782cd811419d4f20d9a4d4631e483f7039282711987bf010833b085c1d1b703.png)
 
@@ -1701,7 +1701,7 @@ D
 
 **解析**
 
-将题干根式转化为最简形式，可得：![](assets-fenbi-89293/4725bc0cde4d4ea0a9441e981572e1bc1cf500ac56ed58d264d97eae27e89fc7.png)、![](assets-fenbi-89293/f94b04625ef13014ef5ee0b261bd2c3bdb83c76caf81081956a465fbaa943208.png)、![](assets-fenbi-89293/0a94fd652ea5f37061335d1983602c207e84738b7debdac8871da873c9ceed02.png)、![](assets-fenbi-89293/5da7b004955d7099b99bccb64f79541667891cb063e52db37255799fd5a58abe.png)、![](assets-fenbi-89293/0276938e8561c0ba04284be6d40b325067a3173bab131e8be7b13da098c6d993.png)。整数部分与根号内部分均分别存在明显倍数关系，故拆成整数与根号两部分之后再作商找规律。
+将题干根式转化为最简形式，可得：720√2、120√2、![](assets-fenbi-89293/0a94fd652ea5f37061335d1983602c207e84738b7debdac8871da873c9ceed02.png)、6√30、2√210。整数部分与根号内部分均分别存在明显倍数关系，故拆成整数与根号两部分之后再作商找规律。
 
 整数部分：720、120、24、6、2、（），前项÷后项，得：6、5、4、3，为公差是-1的等差数列，则下一项为2，故整数部分所求项=2÷2=1；
 
@@ -1715,11 +1715,11 @@ D
 
 ### 第 50 题
 
-17，8，5，![](assets-fenbi-89293/313dc07bc2941bec338e5554c1b4bf00d8600f59c7d25780802ba5e823d46855.png)，![](assets-fenbi-89293/c24d563bca02cae8d8367a2f36f0d183e0e56dc38f764c2bf48eecbdb65d6370.png)，（ ）
+17，8，5，7/2，13/5，（ ）
 
-A. ![](assets-fenbi-89293/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+A. 1/2
 
-B. ![](assets-fenbi-89293/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)
+B. 3/2
 
 C. 2
 
@@ -1733,7 +1733,7 @@ C
 
 **解析**
 
-题干数列包含整数与分数，将整数转化为分数，且构造分母逐步递增的趋势可得：![](assets-fenbi-89293/9aaa300c38948d27bb8f25209204f23832408749dcfbae88392cc2a088dabf09.png)、![](assets-fenbi-89293/3c541c299620c3a4172fc83a8558072ce72e6e30a7782ad0e75cea181a464d89.png)、![](assets-fenbi-89293/0cd8af870b22c220fc5dc447812cfc4bc21c2e1dda90be1eacefd16960f8f685.png)、![](assets-fenbi-89293/3a8e4552eb2e9af9db15c28a8962c3a16d8f004d6650f36dacca984502cbbe3c.png)、![](assets-fenbi-89293/c24d563bca02cae8d8367a2f36f0d183e0e56dc38f764c2bf48eecbdb65d6370.png)、（）。分子部分为公差是-1的等差数列，下一项=13-1=12；分母部分为公差为1的等差数列，下一项为6。则原数列所求项应为![](assets-fenbi-89293/e16451650c6902c75d4d067cbf4a89ae36c3fe8077c5ca21d64fb649029c7419.png)。
+题干数列包含整数与分数，将整数转化为分数，且构造分母逐步递增的趋势可得：![](assets-fenbi-89293/9aaa300c38948d27bb8f25209204f23832408749dcfbae88392cc2a088dabf09.png)、![](assets-fenbi-89293/3c541c299620c3a4172fc83a8558072ce72e6e30a7782ad0e75cea181a464d89.png)、![](assets-fenbi-89293/0cd8af870b22c220fc5dc447812cfc4bc21c2e1dda90be1eacefd16960f8f685.png)、![](assets-fenbi-89293/3a8e4552eb2e9af9db15c28a8962c3a16d8f004d6650f36dacca984502cbbe3c.png)、13/5、（）。分子部分为公差是-1的等差数列，下一项=13-1=12；分母部分为公差为1的等差数列，下一项为6。则原数列所求项应为![](assets-fenbi-89293/e16451650c6902c75d4d067cbf4a89ae36c3fe8077c5ca21d64fb649029c7419.png)。
 
 故正确答案为C。
 
@@ -1825,7 +1825,7 @@ A. ![](assets-fenbi-89293/55207b88d0131c1489926f66b8e8c5b7c6d6ca17979a6201410c26
 
 B. ![](assets-fenbi-89293/dad267a40f2edbdf6500987baff46e676f4606a70ccf38ea35ddd0927e33982f.png)
 
-C. ![](assets-fenbi-89293/36ae5d60725a5d4baa0dec141d36b65306e14a44535bf5a8bb6df3059c449538.png)
+C. 7/11
 
 D. ![](assets-fenbi-89293/c4b9ea2bd1727459412d64c7e596e25b20285cd9aef9c4a450e97979ef6eda14.png)
 
@@ -2033,7 +2033,7 @@ D
 
 **解析**
 
-因为G是平行四边形对角线的交点，则S△ABC![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89293/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png) 平行四边形ABCD，又因为AB＝3AE，所以![](assets-fenbi-89293/d7cd9f0a152182bcdc24d885353f31aafd95b2af0091b7a2a31b29a968b3465c.png)![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89293/7afd0046620668df56ad0d2555716a0734f042fe61c0548e10535b7b31bc8d0c.png)平行四边形ABCD。因为AE//CD，所以△AEF相似△CDF，故EF：FD＝AE：CD＝1:3，即EF:ED=1:4，且△AEF与△AED同高，所以S△AEF![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89293/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)![](assets-fenbi-89293/bb661599fe4b906ab3e8192dd98044a9a4ab82e7a5a7be0f707a10d9ead5b6f6.png)，则S△AEF![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89293/e2352de5e45821dbe595ec026b2cb719f6c03d9f1660f80bee642a12e90ab5a4.png)平行四边形ABCD。S四边形EFGB＝S△AGB－S△AEF![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89293/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)平行四边形ABCD![](assets-fenbi-89293/1961b351cf65f914cdd779db546077bf673a5b906da96b5487d9e29b8de701a6.png)![](assets-fenbi-89293/e2352de5e45821dbe595ec026b2cb719f6c03d9f1660f80bee642a12e90ab5a4.png)平行四边形ABCD![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89293/df66b1e89fc2f135e1d887c3411ef5689dff601c2f3a1597114ecdae131340b4.png)平行四边形ABCD。
+因为G是平行四边形对角线的交点，则S△ABC![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)1/2 平行四边形ABCD，又因为AB＝3AE，所以![](assets-fenbi-89293/d7cd9f0a152182bcdc24d885353f31aafd95b2af0091b7a2a31b29a968b3465c.png)![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)1/6平行四边形ABCD。因为AE//CD，所以△AEF相似△CDF，故EF：FD＝AE：CD＝1:3，即EF:ED=1:4，且△AEF与△AED同高，所以S△AEF![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)1/4![](assets-fenbi-89293/bb661599fe4b906ab3e8192dd98044a9a4ab82e7a5a7be0f707a10d9ead5b6f6.png)，则S△AEF![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89293/e2352de5e45821dbe595ec026b2cb719f6c03d9f1660f80bee642a12e90ab5a4.png)平行四边形ABCD。S四边形EFGB＝S△AGB－S△AEF![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)1/4平行四边形ABCD![](assets-fenbi-89293/1961b351cf65f914cdd779db546077bf673a5b906da96b5487d9e29b8de701a6.png)![](assets-fenbi-89293/e2352de5e45821dbe595ec026b2cb719f6c03d9f1660f80bee642a12e90ab5a4.png)平行四边形ABCD![](assets-fenbi-89293/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89293/df66b1e89fc2f135e1d887c3411ef5689dff601c2f3a1597114ecdae131340b4.png)平行四边形ABCD。
 
 ![](assets-fenbi-89293/85f1e2978eb92b2cc39215658057f3847a4694ef645b40ae286c68ed9d640b0f.png)
 

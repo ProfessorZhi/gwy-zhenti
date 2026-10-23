@@ -1998,13 +1998,13 @@ C
 
 ### 第 58 题
 
-![](assets-fenbi-83088/0579410cdfed3944155b9e49e0cf9b9ceade09b0b710a1766d52d500b8c1e119.png) ![](assets-fenbi-83088/03df5b54fa9441693808695883c970dbb9f1b434c60e4c48a898e7cd3cba1910.png) ![](assets-fenbi-83088/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png) ![](assets-fenbi-83088/4ef2b933467e3bffadef03e6f19389333bbe59d6238fbaa957fb15c53a60522c.png) ![](assets-fenbi-83088/c49846c2f3e9602f60323361a11e5392253b46461b057f7e6d3a9f34ccffc3f1.png) （ ）
+1/16 1/7 1/4 2/5 5/8 （ ）
 
 A. ![](assets-fenbi-83088/012456cf96cd3df82319eaf441243afca4767e5f43abab03b066d1cd9ce0e382.png)
 
 B. 1
 
-C. ![](assets-fenbi-83088/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)
+C. 3/2
 
 D. 2
 
@@ -2016,7 +2016,7 @@ B
 
 **解析**
 
-分数数列，分母呈递减趋势，优先反约分，将数列分母转化为单调递减。原数列可转化为：![](assets-fenbi-83088/0579410cdfed3944155b9e49e0cf9b9ceade09b0b710a1766d52d500b8c1e119.png)， ![](assets-fenbi-83088/86e40cacec2eb392f19b3254eb1a1cc4eda76167f390060b033cce36c2a755cf.png)， ![](assets-fenbi-83088/be81a73a5c3654044a33f495298069e20c97a37218061f006b7f3ceef312d063.png)， ![](assets-fenbi-83088/7c1f64ed88f94c8abca4522e95fa499a49f01276e0857d892625daf516e711e6.png)， ![](assets-fenbi-83088/c49846c2f3e9602f60323361a11e5392253b46461b057f7e6d3a9f34ccffc3f1.png)，（），发现分母是公差为-2的等差数列，分子是公差为1的等差数列，所以![](assets-fenbi-83088/88de80ca49a3ffbddfb8859c1a69f60346b36fd783a3eb62d89256d8539bc6e8.png)![](assets-fenbi-83088/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-83088/f1629b6ac0b64e3fc7fb377206986ddb376f5d2821bc5e8cd70e6f8bac024037.png)![](assets-fenbi-83088/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)1。
+分数数列，分母呈递减趋势，优先反约分，将数列分母转化为单调递减。原数列可转化为：1/16， ![](assets-fenbi-83088/86e40cacec2eb392f19b3254eb1a1cc4eda76167f390060b033cce36c2a755cf.png)， ![](assets-fenbi-83088/be81a73a5c3654044a33f495298069e20c97a37218061f006b7f3ceef312d063.png)， ![](assets-fenbi-83088/7c1f64ed88f94c8abca4522e95fa499a49f01276e0857d892625daf516e711e6.png)， 5/8，（），发现分母是公差为-2的等差数列，分子是公差为1的等差数列，所以![](assets-fenbi-83088/88de80ca49a3ffbddfb8859c1a69f60346b36fd783a3eb62d89256d8539bc6e8.png)![](assets-fenbi-83088/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-83088/f1629b6ac0b64e3fc7fb377206986ddb376f5d2821bc5e8cd70e6f8bac024037.png)![](assets-fenbi-83088/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)1。
 
 故正确答案为B。
 
@@ -2336,11 +2336,11 @@ D
 
 某基层机关有甲和乙两个办公室，共有10名员工，其中甲办公室人数为乙办公室人数的1.5倍。现从这10名员工中随机抽出2人借调到上级机关，问借调的人来自同一办公室的概率为：
 
-A. ![](assets-fenbi-83088/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)
+A. 1/3
 
-B. ![](assets-fenbi-83088/4ef2b933467e3bffadef03e6f19389333bbe59d6238fbaa957fb15c53a60522c.png)
+B. 2/5
 
-C. ![](assets-fenbi-83088/1f6fbbb5f8b7e468c7be8f222af954c97cb4deaae46a19fd12f359acfb42c029.png)
+C. 4/9
 
 D. ![](assets-fenbi-83088/131d0b58bce1d5012bf75c567ddb185ab6d11f0adb92e0460c63e14fed9a0cea.png)
 
@@ -3810,7 +3810,7 @@ D项：表明节目的水准和收视率无必然关联，那就说明由论据�
 
 ### 第 112 题
 
-中国是世界上吸烟人数最多的国家，约![](assets-fenbi-83088/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)的人口吸烟，此外，中国还有7.4亿非吸烟者遭受二手烟危害，控烟迫在眉睫。然而，一方面吸烟者个人在肉体和精神上对烟草存在依赖；另一方面国家税收也部分依赖于烟草产业。如果一下子消灭烟草，不仅吸烟者会有戒断症状，就连国家和各级地方的经济状况也都会出现“戒断症状”。所以，控烟在我国只能是一个渐进的过程。
+中国是世界上吸烟人数最多的国家，约1/4的人口吸烟，此外，中国还有7.4亿非吸烟者遭受二手烟危害，控烟迫在眉睫。然而，一方面吸烟者个人在肉体和精神上对烟草存在依赖；另一方面国家税收也部分依赖于烟草产业。如果一下子消灭烟草，不仅吸烟者会有戒断症状，就连国家和各级地方的经济状况也都会出现“戒断症状”。所以，控烟在我国只能是一个渐进的过程。
 
 以下哪项如果为真，不能支持上述论断？
 
@@ -4766,7 +4766,7 @@ C.全国港口10万吨级及以上泊位![](assets-fenbi-83088/bc75852af5a5b03c5
 
 D.内河港口10万吨级及以上泊位![](assets-fenbi-83088/d233706514138484475956c78f1493ff3f238a94697542dd85246ec51d2d601b.png)。
 
-故比较可知，A、B、C项所求明显小于![](assets-fenbi-83088/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，D项所求等于![](assets-fenbi-83088/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，D项符合，即内河港口10万吨级及以上泊位数同比增长最快。
+故比较可知，A、B、C项所求明显小于1/3，D项所求等于1/3，D项符合，即内河港口10万吨级及以上泊位数同比增长最快。
 
 故正确答案为D。
 

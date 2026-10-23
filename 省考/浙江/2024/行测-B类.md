@@ -1907,7 +1907,7 @@ A
 
 ### 第 54 题
 
-9，18，![](assets-fenbi-6340915/384c20b43c2f20ff1148dfeda23b0d27a1f4079d824eb1ec5a427b82dd522a51.png)，![](assets-fenbi-6340915/a832db1bcdc9671defe4ffe565558cb0f45a3da3fcd96043c5e4668e2e104eed.png)，![](assets-fenbi-6340915/2ccc16d31fb62e6a6716f0e9fe4fd97847501c3e05f0c7514d6af034a9bc3d41.png)，（ ）
+9，18，31 1/2，51 3/4，82 1/8，（ ）
 
 A. ![](assets-fenbi-6340915/9eb708a4d9946a84d916309ca08c046486934da6d1bd9519eedc7845ab101257.png)
 
@@ -2299,11 +2299,11 @@ D
 
 ![](assets-fenbi-6340915/13186ba00f7f853b715f4f8686751d2226e322d2668a7a9d61f72d782e0158ee.png)
 
-（2）在一条边上的两个点在同一条斜线上，正方形边长有![](assets-fenbi-6340915/431e084f40368b5588aa90bbae91e6e66680dbea363e90373d3038f5714088bd.png)、![](assets-fenbi-6340915/089106e9394192dbca90551dca84927d9950cbd716537e5c3bc8bcf7485639da.png) 、![](assets-fenbi-6340915/baa7a2d21175cac389e3d1e025c899ca4332b1269ee8006c7fac366f017c78ef.png)共3种情况，如下图所示。
+（2）在一条边上的两个点在同一条斜线上，正方形边长有![](assets-fenbi-6340915/431e084f40368b5588aa90bbae91e6e66680dbea363e90373d3038f5714088bd.png)、![](assets-fenbi-6340915/089106e9394192dbca90551dca84927d9950cbd716537e5c3bc8bcf7485639da.png) 、3√2共3种情况，如下图所示。
 
 ![](assets-fenbi-6340915/1e37ec2648f8bc8164cfc677d55d4f910cbba9626d92b2fdda6dd870ca085dde.png)
 
-（3）在一条边上的两个点既不在同一行或列上，也不在同一条斜线上，正方形边长有![](assets-fenbi-6340915/145099a64576f2abbb4f5cdbe3749c3d88ea94bb64e12d018318095f7c3ca08e.png)、![](assets-fenbi-6340915/a8e9659bfe3df77aa9ad7b86daf4fe801bcd3b3bc5a887188ab1d1ea36e6f6e9.png)共2种情况，如下图所示。
+（3）在一条边上的两个点既不在同一行或列上，也不在同一条斜线上，正方形边长有√5、![](assets-fenbi-6340915/a8e9659bfe3df77aa9ad7b86daf4fe801bcd3b3bc5a887188ab1d1ea36e6f6e9.png)共2种情况，如下图所示。
 
 ![](assets-fenbi-6340915/6f8c84379e7a83cfc81951a93239736b7974a59640e73def4cf4648affa54e17.png)
 

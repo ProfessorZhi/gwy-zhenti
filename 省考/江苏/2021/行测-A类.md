@@ -1693,7 +1693,7 @@ A
 
 ### 第 48 题
 
-2，3，4，![](assets-fenbi-101465/a9290c0bd6b7d38cc6aa161668e99fccffce807f2d76253a3db08c077e1265b2.png)，![](assets-fenbi-101465/9aa5ddbeb746fbaa4e26cb464b1ca46a43dae7e1a46ae7382f6ccbd9ec9d56bd.png)，（ ）
+2，3，4，3√3，√46，（ ）
 
 A. 8
 
@@ -1711,7 +1711,7 @@ C
 
 **解析**
 
-将数列统一转化为根号形式，则原数列转化为：![](assets-fenbi-101465/113ce7f0c3cffdaf8e623f6c1f692a1bb11fb3a428a20aab5a948fae1d8600af.png)、![](assets-fenbi-101465/3a29e3596217d739673ec688d2735365ad477132bf1506dae931f954bf0ac856.png)、![](assets-fenbi-101465/66b23d105b727b88e6270d77ca3d97ee497fa9834d542bb649c344ca3f3f58f6.png)、![](assets-fenbi-101465/b84ea7d9acdf0ccd085fb27d3bf3e1861f24cf43537b279fff9705a9d8044b5c.png)、![](assets-fenbi-101465/9aa5ddbeb746fbaa4e26cb464b1ca46a43dae7e1a46ae7382f6ccbd9ec9d56bd.png)，（ ），根号内数字变化幅度较小且呈递增趋势，优先考虑作差。作差后可得：5、7、11、19，（ ），二次作差得：2、4、8，（ ），是公比为2的等比数列，下一项为8×2=16，故所求项为![](assets-fenbi-101465/6f008a15be442faae90c99a4be57abda372ed2c025186bf7d478eab575f7d988.png)。
+将数列统一转化为根号形式，则原数列转化为：![](assets-fenbi-101465/113ce7f0c3cffdaf8e623f6c1f692a1bb11fb3a428a20aab5a948fae1d8600af.png)、![](assets-fenbi-101465/3a29e3596217d739673ec688d2735365ad477132bf1506dae931f954bf0ac856.png)、![](assets-fenbi-101465/66b23d105b727b88e6270d77ca3d97ee497fa9834d542bb649c344ca3f3f58f6.png)、√27、√46，（ ），根号内数字变化幅度较小且呈递增趋势，优先考虑作差。作差后可得：5、7、11、19，（ ），二次作差得：2、4、8，（ ），是公比为2的等比数列，下一项为8×2=16，故所求项为![](assets-fenbi-101465/6f008a15be442faae90c99a4be57abda372ed2c025186bf7d478eab575f7d988.png)。
 
 故正确答案为C。
 
@@ -1747,7 +1747,7 @@ B
 
 ### 第 50 题
 
-1，![](assets-fenbi-101465/7c21564a390c01cf98953f00b516024295e87db9bf1e7bcc87d3e2ddf880e81b.png)，![](assets-fenbi-101465/86aa595c61c89d0e3a0309bba81152f2e3d085e691c513d7ccac76ee509351cd.png)，![](assets-fenbi-101465/eb56a7095de5607e2d369811ad1438154cb8283a8e43ffa1b1b0ca1bc8217685.png)，![](assets-fenbi-101465/d4a5a42c8932849802dd7cf64ea1946cff4ce61832b39de35eb169edfec5d9b4.png)，（ ）
+1，1/3，5/18，10/27，55/81，（ ）
 
 A. ![](assets-fenbi-101465/89a5bfa7f114e12051a91d53038a8bbe11d7a9268747a735cdd41d891b6f13e6.png)
 
@@ -1765,7 +1765,7 @@ B
 
 **解析**
 
-数列大多数为分数，可判断为分数数列，原数列可转化为：![](assets-fenbi-101465/71a74ab4b682917541017e4b1ae0f6607c86ca194fe7f03a9cc5f40da1795f0d.png)，![](assets-fenbi-101465/ca73a57ea7d3b7fcc75f93b56906cf7190fd5cd17ae618911763dfdc3c209054.png)，![](assets-fenbi-101465/52c9ce7f2cc307a569402c2ea0867db0686f7a496f546ea0a6e0251c54d66355.png)，![](assets-fenbi-101465/eb56a7095de5607e2d369811ad1438154cb8283a8e43ffa1b1b0ca1bc8217685.png)，![](assets-fenbi-101465/d4a5a42c8932849802dd7cf64ea1946cff4ce61832b39de35eb169edfec5d9b4.png)，（ ），观察分母为幂次数列：![](assets-fenbi-101465/56ac99332291b662bff7faf04a3dfe4db0e5e85ca158d359c16055388411145a.png)，![](assets-fenbi-101465/1bf3441e4e9e79500149827eed2fcae213cedf748c2f9e9bfc61e28d20e9eb32.png)，![](assets-fenbi-101465/22d6bf8013d449add3713d64aba73fa59a6c667068989d1c90362bfdfe4d785f.png)，![](assets-fenbi-101465/ddb0cccc06d074a470fddb031164c6020d18e8ebaaef79b073301c48d31610eb.png)，![](assets-fenbi-101465/40381414991b74379b4effc8deeb7c1faf8fab969fbd9a6d2d657d39907413d1.png)，则下一项分母为![](assets-fenbi-101465/f140c9d61935e3e83b3128f65f2e809b6dfe68efa5c11254f0f910cdd09d86d6.png)；分子部分考虑作商，后一项÷前一项分别为：1，2.5，4，5.5，是公差为1.5的等差数列，则新数列下一项为5.5+1.5=7，故原数列所求项分子=55×7=385。
+数列大多数为分数，可判断为分数数列，原数列可转化为：![](assets-fenbi-101465/71a74ab4b682917541017e4b1ae0f6607c86ca194fe7f03a9cc5f40da1795f0d.png)，![](assets-fenbi-101465/ca73a57ea7d3b7fcc75f93b56906cf7190fd5cd17ae618911763dfdc3c209054.png)，![](assets-fenbi-101465/52c9ce7f2cc307a569402c2ea0867db0686f7a496f546ea0a6e0251c54d66355.png)，10/27，55/81，（ ），观察分母为幂次数列：![](assets-fenbi-101465/56ac99332291b662bff7faf04a3dfe4db0e5e85ca158d359c16055388411145a.png)，![](assets-fenbi-101465/1bf3441e4e9e79500149827eed2fcae213cedf748c2f9e9bfc61e28d20e9eb32.png)，3^2，![](assets-fenbi-101465/ddb0cccc06d074a470fddb031164c6020d18e8ebaaef79b073301c48d31610eb.png)，![](assets-fenbi-101465/40381414991b74379b4effc8deeb7c1faf8fab969fbd9a6d2d657d39907413d1.png)，则下一项分母为![](assets-fenbi-101465/f140c9d61935e3e83b3128f65f2e809b6dfe68efa5c11254f0f910cdd09d86d6.png)；分子部分考虑作商，后一项÷前一项分别为：1，2.5，4，5.5，是公差为1.5的等差数列，则新数列下一项为5.5+1.5=7，故原数列所求项分子=55×7=385。
 
 故正确答案为B。
 
@@ -1911,7 +1911,7 @@ A. ![](assets-fenbi-101465/1d01c88286cd20cfdca8c91ae75d82afe6298b50e4edd456dfc4c
 
 B. ![](assets-fenbi-101465/e2352de5e45821dbe595ec026b2cb719f6c03d9f1660f80bee642a12e90ab5a4.png)
 
-C. ![](assets-fenbi-101465/aeb67096a26593d4b64d7f7e309e1392166a832cc244b9e5803f7da49210c025.png)
+C. 1/12
 
 D. ![](assets-fenbi-101465/298da4ac43e7dcf99e5db61e2f1c9d45b03dc287a412b9e9ae206bf8912c260e.png)
 
@@ -2037,7 +2037,7 @@ C
 
 **解析**
 
-根据题意可知，师傅的工作时间应为徒弟工作时间的![](assets-fenbi-101465/d08e680aaf7367b6ef26ae24ccb13b232c89c26e27d82aa172ad34ef8ce7ec86.png)，设6种剪纸分别为A、B、C、D、E、F，具体工作时间情况如下：
+根据题意可知，师傅的工作时间应为徒弟工作时间的2/3，设6种剪纸分别为A、B、C、D、E、F，具体工作时间情况如下：
 
 ![](assets-fenbi-101465/50bcacfd6d77dd064fd7bf498a91104c80afb79b18b4501b96adc06076557860.png)
 

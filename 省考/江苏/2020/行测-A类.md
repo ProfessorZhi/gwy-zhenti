@@ -1677,7 +1677,7 @@ D
 
 ### 第 47 题
 
-2，![](assets-fenbi-91868/b2e3a89b579d48d0d7b4f05b4d6f3b38c0d63f7dc5820dd4b30c8de4efe85c1e.png)，![](assets-fenbi-91868/f31abc885d01cb2db8035e57af1f0170a972b241625023668d75b95dc01a7b65.png)，10，![](assets-fenbi-91868/0ce9d19ee481dd457c6716e880b2dc0c59c89076250382d36b00bf5c523e3fd8.png)，（ ）
+2，2+√2，4+√3，10，16+√5，（ ）
 
 A. ![](assets-fenbi-91868/0b92f72e2e6e1c96e6a958a96db7bc698f75578947c8c83da5884655fee300e9.png)
 
@@ -1695,7 +1695,7 @@ C
 
 **解析**
 
-观察数列特征，有特殊符号“+”，考虑机械拆分。原数列可转化为![](assets-fenbi-91868/d258aa0f5a782de21f6a7d4f5abc36d953f1b06dfb34ac9e5d754673a0429ae8.png),![](assets-fenbi-91868/b2e3a89b579d48d0d7b4f05b4d6f3b38c0d63f7dc5820dd4b30c8de4efe85c1e.png),![](assets-fenbi-91868/f31abc885d01cb2db8035e57af1f0170a972b241625023668d75b95dc01a7b65.png),![](assets-fenbi-91868/96c488f0a1fbc99833c88fa115013b34fd04f8d168202b551021617073131054.png),![](assets-fenbi-91868/0ce9d19ee481dd457c6716e880b2dc0c59c89076250382d36b00bf5c523e3fd8.png)，“+”前是1，2，4，8，16，此数列是公比为2的等比数列，（ ）中“+”前应是16×2=32；“+”后是![](assets-fenbi-91868/baa9d5f8a595c74c521ba3210c8c684000646b78ce8b65364bc2ec1868d9ec5f.png)，![](assets-fenbi-91868/debdccf5320b5c8f4397dcc141d05c07723617756c0403458dc0f40180f7a834.png)，![](assets-fenbi-91868/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)，![](assets-fenbi-91868/2532d555bbb5df44cb19202e546263d2d159e75e3cdb5d4f72affac53254a859.png)，![](assets-fenbi-91868/e841cc88fc3b12cec8e321983966f7c27ecd1b828cb65ac92e46331586be3cb8.png)，根号下的数列是公差为1的等差数列，（ ）中“+”后根号下的数应是5+1=6。故所求项是![](assets-fenbi-91868/8c021ca027482e5418fd301e3302029a2305da12278089e720516022a8a1cf75.png)。
+观察数列特征，有特殊符号“+”，考虑机械拆分。原数列可转化为![](assets-fenbi-91868/d258aa0f5a782de21f6a7d4f5abc36d953f1b06dfb34ac9e5d754673a0429ae8.png),2+√2,4+√3,![](assets-fenbi-91868/96c488f0a1fbc99833c88fa115013b34fd04f8d168202b551021617073131054.png),16+√5，“+”前是1，2，4，8，16，此数列是公比为2的等比数列，（ ）中“+”前应是16×2=32；“+”后是![](assets-fenbi-91868/baa9d5f8a595c74c521ba3210c8c684000646b78ce8b65364bc2ec1868d9ec5f.png)，√2，![](assets-fenbi-91868/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)，![](assets-fenbi-91868/2532d555bbb5df44cb19202e546263d2d159e75e3cdb5d4f72affac53254a859.png)，![](assets-fenbi-91868/e841cc88fc3b12cec8e321983966f7c27ecd1b828cb65ac92e46331586be3cb8.png)，根号下的数列是公差为1的等差数列，（ ）中“+”后根号下的数应是5+1=6。故所求项是![](assets-fenbi-91868/8c021ca027482e5418fd301e3302029a2305da12278089e720516022a8a1cf75.png)。
 
 故正确答案为C。
 
@@ -1757,7 +1757,7 @@ B
 
 ### 第 50 题
 
-![](assets-fenbi-91868/9435881df14c88b04a8e29e42f83c3799ac056ef7beda76686f1d1b387491f48.png)，4， ![](assets-fenbi-91868/7322ec0e0842be07c0d22050b03d7b0d182a4b3addcf622bc53d17f005de0d9d.png)，![](assets-fenbi-91868/9a8713de44759928f85fc477cca44c287ad2f818da8d0f936c36643ccb6b5c0d.png)， ![](assets-fenbi-91868/72eb9abce461204d780252adb1bee42b37fb2e778fac6369262c867fefa07640.png)，（ ）
+32/7，4， 128/25，128/17， 512/43，（ ）
 
 A. 6
 
@@ -1775,7 +1775,7 @@ B
 
 **解析**
 
-观察数列特征，大多数是分数，考虑分数数列。观察分子分母无明显规律，考虑反约分。原数列可转化为![](assets-fenbi-91868/9435881df14c88b04a8e29e42f83c3799ac056ef7beda76686f1d1b387491f48.png)，![](assets-fenbi-91868/df52774694c9709288d0408329fb88df2e45e60222bbfcce08f8dea451e219bc.png)，![](assets-fenbi-91868/7322ec0e0842be07c0d22050b03d7b0d182a4b3addcf622bc53d17f005de0d9d.png)，![](assets-fenbi-91868/c72e7a3b79fe1a5ab242eb3ceea94156fb618e20a2f2ffcea2de304efd15dfe1.png)，![](assets-fenbi-91868/72eb9abce461204d780252adb1bee42b37fb2e778fac6369262c867fefa07640.png)，分子32，64，128，256，512，此数列是公比为2的等比数列，所求分子为![](assets-fenbi-91868/c0a31f1a3f12aa0683b3b3bd15b0f43e905aef9ce052b785df2761acc3e4e136.png)；分母7，16，25，34，43，此数列是公差为9的等差数列，所求分母为43+9=52。故所求项=![](assets-fenbi-91868/a61997369c05719a271495e3f5bdc97871b84b56ca72d9b804d495ce9aaa5700.png)\=![](assets-fenbi-91868/83419c8b9a40ff220172720c224032b0d22d27213af505ca5cb0f89285b9c8de.png)。
+观察数列特征，大多数是分数，考虑分数数列。观察分子分母无明显规律，考虑反约分。原数列可转化为32/7，![](assets-fenbi-91868/df52774694c9709288d0408329fb88df2e45e60222bbfcce08f8dea451e219bc.png)，128/25，![](assets-fenbi-91868/c72e7a3b79fe1a5ab242eb3ceea94156fb618e20a2f2ffcea2de304efd15dfe1.png)，512/43，分子32，64，128，256，512，此数列是公比为2的等比数列，所求分子为![](assets-fenbi-91868/c0a31f1a3f12aa0683b3b3bd15b0f43e905aef9ce052b785df2761acc3e4e136.png)；分母7，16，25，34，43，此数列是公差为9的等差数列，所求分母为43+9=52。故所求项=![](assets-fenbi-91868/a61997369c05719a271495e3f5bdc97871b84b56ca72d9b804d495ce9aaa5700.png)\=![](assets-fenbi-91868/83419c8b9a40ff220172720c224032b0d22d27213af505ca5cb0f89285b9c8de.png)。
 
 故正确答案为B。
 
@@ -1969,7 +1969,7 @@ B
 
 ### 第 58 题
 
-甲、乙两人分别从A、B两地同时出发相向而行。当两人合计走完两地间路程的![](assets-fenbi-91868/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)时，甲距A地的路程是500米；当两人合计走完两地间路程的![](assets-fenbi-91868/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)时，乙距B地的路程是2400米。若两人的速度始终不变，则当速度较快者走完全程时，速度较慢者距走完全程还剩的路程是
+甲、乙两人分别从A、B两地同时出发相向而行。当两人合计走完两地间路程的1/4时，甲距A地的路程是500米；当两人合计走完两地间路程的3/4时，乙距B地的路程是2400米。若两人的速度始终不变，则当速度较快者走完全程时，速度较慢者距走完全程还剩的路程是
 
 A. 1350米
 
@@ -1987,7 +1987,7 @@ D
 
 **解析**
 
-两人走完全程的![](assets-fenbi-91868/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)时，甲走的路程是500米；现两人走完全程的![](assets-fenbi-91868/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)，因速度一直不变，则甲此时走的路程是500×3=1500米，乙走的路程为2400米，时间相同，速度与路程成正比，![](assets-fenbi-91868/43163ae59d75dd6b00a40ec351cc6c13af1d9837a435c95414b84578aed1f6c9.png)![](assets-fenbi-91868/08598c2fab1480e89b230c065a0463043d6bc17ad5c644f9e4305f36b294aeb5.png)，乙的速度较快，全程一共是![](assets-fenbi-91868/e02018ced3462c3b76af71f760d7f01a9bd3718ae7226f7c65ce63833035bacf.png)米，当乙走完全程5200米，因时间相同，甲、乙的路程之比即为速度之比5：8，则甲走了![](assets-fenbi-91868/35e041f343615f8cb2ea2f63ab064f164c6888ed2319b31efd66c4dc4a5c47b7.png)米，还剩5200-3250=1950米。
+两人走完全程的1/4时，甲走的路程是500米；现两人走完全程的3/4，因速度一直不变，则甲此时走的路程是500×3=1500米，乙走的路程为2400米，时间相同，速度与路程成正比，![](assets-fenbi-91868/43163ae59d75dd6b00a40ec351cc6c13af1d9837a435c95414b84578aed1f6c9.png)![](assets-fenbi-91868/08598c2fab1480e89b230c065a0463043d6bc17ad5c644f9e4305f36b294aeb5.png)，乙的速度较快，全程一共是![](assets-fenbi-91868/e02018ced3462c3b76af71f760d7f01a9bd3718ae7226f7c65ce63833035bacf.png)米，当乙走完全程5200米，因时间相同，甲、乙的路程之比即为速度之比5：8，则甲走了![](assets-fenbi-91868/35e041f343615f8cb2ea2f63ab064f164c6888ed2319b31efd66c4dc4a5c47b7.png)米，还剩5200-3250=1950米。
 
 故正确答案为D。
 

@@ -1713,7 +1713,7 @@ B
 
 ### 第 48 题
 
-2，![](assets-fenbi-101467/a05eebd9cf8ae7cc63eca36c9ed77a6fc2dc1daae98eb40a1da2131819f72004.png)，12，![](assets-fenbi-101467/b480f512ba72bcf8d23f351026c5e48ca0dc887520301ff8ac3cdafbc7c14296.png)，![](assets-fenbi-101467/d510c48353da53e57ac9dbdf08672798fa3f813b7316be868af8b8b3b14fa9a9.png)，（ ）
+2，4√2，12，8√7，10√11，（ ）
 
 A. ![](assets-fenbi-101467/f427ef0d8c36ff329b4afa6fff49c78b8a7ab1d328d0381cbaba4b35e5a0fc8f.png)
 
@@ -1733,7 +1733,7 @@ C
 
 观察数列，有整数和根号，考虑机械划分。
 
-原数列可化为：![](assets-fenbi-101467/132368525f9c2b7186eae842a4c4031f3d87bca81032938e0c65dac26b184099.png)，![](assets-fenbi-101467/a05eebd9cf8ae7cc63eca36c9ed77a6fc2dc1daae98eb40a1da2131819f72004.png)，![](assets-fenbi-101467/d52f073b792ef8f92833f36669ce99f5ff315b375adef162f56d4ca387e1a366.png)，![](assets-fenbi-101467/b480f512ba72bcf8d23f351026c5e48ca0dc887520301ff8ac3cdafbc7c14296.png)，![](assets-fenbi-101467/d510c48353da53e57ac9dbdf08672798fa3f813b7316be868af8b8b3b14fa9a9.png)。
+原数列可化为：![](assets-fenbi-101467/132368525f9c2b7186eae842a4c4031f3d87bca81032938e0c65dac26b184099.png)，4√2，![](assets-fenbi-101467/d52f073b792ef8f92833f36669ce99f5ff315b375adef162f56d4ca387e1a366.png)，8√7，10√11。
 
 整数部分为：2，4，6，8，10，为偶数列，下一项为12；
 
@@ -1747,7 +1747,7 @@ C
 
 ### 第 49 题
 
-1，![](assets-fenbi-101467/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-101467/e0a25daf2b28e804d52a00c24832686a3cab6ca678061aa2eaedcb25516816b1.png)，4，![](assets-fenbi-101467/97323481ffc87fcf9d1b7e38f398c3e4e958b84383764ce4a576c95341df050a.png)，（ ）
+1，3/2，12/5，4，48/7，（ ）
 
 A. 9
 
@@ -1765,7 +1765,7 @@ C
 
 **解析**
 
-数列大部分为分数，判定为分数数列。分子、分母呈递增趋势，反约分，将分母转化为单调递增，则原数列可转化为：![](assets-fenbi-101467/99468fefbc1331d7e4973a094c10dace94447a769d35578faa454b88244e29f0.png)，![](assets-fenbi-101467/59181b315d67265046ca9748bd315d3b75a8e49fb0e63a5fc496aee8867e88c7.png)，![](assets-fenbi-101467/e0a25daf2b28e804d52a00c24832686a3cab6ca678061aa2eaedcb25516816b1.png)，![](assets-fenbi-101467/a11779f8f5ec82da9af202d52d18c865c2cfa6e74cc77b8468bc944eb35105b8.png)，![](assets-fenbi-101467/97323481ffc87fcf9d1b7e38f398c3e4e958b84383764ce4a576c95341df050a.png)，（ ），发现分母是公差为1的等差数列，分子是公比为2的等比数列，所求项为![](assets-fenbi-101467/c470ea3e76464a2360d835dae5896a93090bdaa7fdb76a62ec5b5be2e0f7c530.png)。
+数列大部分为分数，判定为分数数列。分子、分母呈递增趋势，反约分，将分母转化为单调递增，则原数列可转化为：![](assets-fenbi-101467/99468fefbc1331d7e4973a094c10dace94447a769d35578faa454b88244e29f0.png)，![](assets-fenbi-101467/59181b315d67265046ca9748bd315d3b75a8e49fb0e63a5fc496aee8867e88c7.png)，12/5，![](assets-fenbi-101467/a11779f8f5ec82da9af202d52d18c865c2cfa6e74cc77b8468bc944eb35105b8.png)，48/7，（ ），发现分母是公差为1的等差数列，分子是公比为2的等比数列，所求项为![](assets-fenbi-101467/c470ea3e76464a2360d835dae5896a93090bdaa7fdb76a62ec5b5be2e0f7c530.png)。
 
 故正确答案为C。
 
@@ -1791,7 +1791,7 @@ A
 
 **解析**
 
-数列全部都是小数，优先考虑小数点前、点后分别找规律，无明显规律，考虑组内规律。小数点前-小数点后新数列为9，16，25，36，49，发现新数列为幂次数列，转化成幂次数的形式为![](assets-fenbi-101467/22d6bf8013d449add3713d64aba73fa59a6c667068989d1c90362bfdfe4d785f.png)，![](assets-fenbi-101467/25d91681e6c61fc7f2d1ad05eb7633cdb40b8d8372ad6f5c0d07b7d66f3ba647.png)，![](assets-fenbi-101467/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)，![](assets-fenbi-101467/cd9423fa0bed5674e427d15ba8e7157ce9ab9a7324d06a3934f6268c61384fe9.png)，![](assets-fenbi-101467/1da59e717c7847ef0fb006fceb36a33385d530a1f6d85d0c812abcafe7d54f7b.png)，新数列指数为2，底数为自然数列，则新数列下一项指数为2，底数为8，新数列下一项为![](assets-fenbi-101467/f4959b78d26da1b789cae236b641d109abf516492751d58566add35ae741f090.png)。观察选项，只有A项小数点前-小数点后=67-3=64，满足规律，当选。
+数列全部都是小数，优先考虑小数点前、点后分别找规律，无明显规律，考虑组内规律。小数点前-小数点后新数列为9，16，25，36，49，发现新数列为幂次数列，转化成幂次数的形式为3^2，![](assets-fenbi-101467/25d91681e6c61fc7f2d1ad05eb7633cdb40b8d8372ad6f5c0d07b7d66f3ba647.png)，![](assets-fenbi-101467/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)，![](assets-fenbi-101467/cd9423fa0bed5674e427d15ba8e7157ce9ab9a7324d06a3934f6268c61384fe9.png)，![](assets-fenbi-101467/1da59e717c7847ef0fb006fceb36a33385d530a1f6d85d0c812abcafe7d54f7b.png)，新数列指数为2，底数为自然数列，则新数列下一项指数为2，底数为8，新数列下一项为![](assets-fenbi-101467/f4959b78d26da1b789cae236b641d109abf516492751d58566add35ae741f090.png)。观察选项，只有A项小数点前-小数点后=67-3=64，满足规律，当选。
 
 故正确答案为A。
 
@@ -2107,7 +2107,7 @@ B
 
 方法一：给情况求概率，概率![](assets-fenbi-101467/d095afbc2cee2dc5d4b676a1f8bda95b430f8ef6ef6738ac4008e56e322436f0.png)。总情况数为9个球队平均分成3组，共有![](assets-fenbi-101467/6da6d14a8a140a2f6e231c3084a17b1d9c7e3fb4c81397f074d3bdb0fb284e22.png)种情况；满足条件的情况为上届比赛的前3名球队被分在同一组，其他6个球队平均分为2组，有![](assets-fenbi-101467/b65534d1ce2f5d8dd3f6bfb5514f4240a709afcdf0f778fa6d7c94d12bbf1873.png)种情况，则上届比赛的前3名球队被分在同一组的概率![](assets-fenbi-101467/6c3cd6cf5cba123e5dc293a8939f4154300f15486c6a412a375837da8431f01b.png)。
 
-方法二：前3名球队要被分在同一组，首先第1名球队可任意选择一个位置，概率为1；第2名球队可在剩下8个位置选1个位置，要求和第1名球队同组，概率为![](assets-fenbi-101467/3cfdcfb269f47dc26f081c5e2ab54db66ce3c3604a6456cd2ace804562be7d8b.png)；第三名球队可在剩下7个位置选1个位置，要求和前2名球队同组，概率为![](assets-fenbi-101467/03df5b54fa9441693808695883c970dbb9f1b434c60e4c48a898e7cd3cba1910.png)。因此所求概率![](assets-fenbi-101467/bf57ad924d62a5cb4c2343b5004e2c716a5605b2a59e0ec2cbdd2493f66dc893.png)![](assets-fenbi-101467/ef48043596a389b65721d97af0e1e740d449bb90ce1fb02dc4d86bd7fdc8ed8c.png)![](assets-fenbi-101467/0a488eb99cacbbe1dcec571eb1a5254c16ddd93fa0c507ac36b1c799747fb02b.png)。
+方法二：前3名球队要被分在同一组，首先第1名球队可任意选择一个位置，概率为1；第2名球队可在剩下8个位置选1个位置，要求和第1名球队同组，概率为2/8；第三名球队可在剩下7个位置选1个位置，要求和前2名球队同组，概率为1/7。因此所求概率![](assets-fenbi-101467/bf57ad924d62a5cb4c2343b5004e2c716a5605b2a59e0ec2cbdd2493f66dc893.png)![](assets-fenbi-101467/ef48043596a389b65721d97af0e1e740d449bb90ce1fb02dc4d86bd7fdc8ed8c.png)![](assets-fenbi-101467/0a488eb99cacbbe1dcec571eb1a5254c16ddd93fa0c507ac36b1c799747fb02b.png)。
 
 故正确答案为B。
 
@@ -2163,7 +2163,7 @@ C
 
 **解析**
 
-根据题意可知，师傅的工作时间应为徒弟工作时间的![](assets-fenbi-101467/d08e680aaf7367b6ef26ae24ccb13b232c89c26e27d82aa172ad34ef8ce7ec86.png)，设6种剪纸分别为A、B、C、D、E、F，具体工作时间情况如下：
+根据题意可知，师傅的工作时间应为徒弟工作时间的2/3，设6种剪纸分别为A、B、C、D、E、F，具体工作时间情况如下：
 
 ![](assets-fenbi-101467/50bcacfd6d77dd064fd7bf498a91104c80afb79b18b4501b96adc06076557860.png)
 

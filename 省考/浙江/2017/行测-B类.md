@@ -145,7 +145,7 @@ B
 
 ### 第 4 题
 
-1，![](assets-fenbi-77416/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-77416/632dba4c2d214b251b1b966c80bc421db16713427fcc995838463186639a0ae7.png)，![](assets-fenbi-77416/e69ed516b1a1051bc564689131dc0c9834ef07651654ad051e81f84679eda193.png)，![](assets-fenbi-77416/81ee9c3c50281680f105b1876f1ec0a0a0ad3314f5c8078c56ceeb6e37ffb5f4.png)，（ ）
+1，1/3，3/5，15/7，105/9，（ ）
 
 A. 18![](assets-fenbi-77416/c0b19d111ef3ac116e36e85e001e5f145e43d151f7c9cca0bce17d2abbcc9427.png)
 
@@ -163,7 +163,7 @@ D
 
 **解析**
 
-原数列可转化为：![](assets-fenbi-77416/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)，![](assets-fenbi-77416/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-77416/632dba4c2d214b251b1b966c80bc421db16713427fcc995838463186639a0ae7.png)，![](assets-fenbi-77416/e69ed516b1a1051bc564689131dc0c9834ef07651654ad051e81f84679eda193.png)，![](assets-fenbi-77416/81ee9c3c50281680f105b1876f1ec0a0a0ad3314f5c8078c56ceeb6e37ffb5f4.png)，（ ），观察可得分母是公差为2的等差数列，前后项分子存在明显倍数关系，倍数依次是1，3，5，7，倍数为公差为2的等差数列。则所求项分子为：105×（7＋2）=945，分母为：9+2=11，即![](assets-fenbi-77416/0c96b62180e28da570a7306e1310901a1d108c40f791ef3c4ce9689a6de9ed28.png)。
+原数列可转化为：![](assets-fenbi-77416/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)，1/3，3/5，15/7，105/9，（ ），观察可得分母是公差为2的等差数列，前后项分子存在明显倍数关系，倍数依次是1，3，5，7，倍数为公差为2的等差数列。则所求项分子为：105×（7＋2）=945，分母为：9+2=11，即![](assets-fenbi-77416/0c96b62180e28da570a7306e1310901a1d108c40f791ef3c4ce9689a6de9ed28.png)。
 
 故正确答案为D。
 
@@ -361,13 +361,13 @@ C
 
 小王从编号分别为1、2、3、4、5的5本书中随机抽出3本，那么，这3本书的编号恰好为相邻三个整数的概率为：
 
-A. ![](assets-fenbi-77416/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+A. 1/2
 
-B. ![](assets-fenbi-77416/4ef2b933467e3bffadef03e6f19389333bbe59d6238fbaa957fb15c53a60522c.png)
+B. 2/5
 
-C. ![](assets-fenbi-77416/17cc6385185a65de782bc35f345cbd1316ab3bf3c8869983b495ee88f40397c7.png)
+C. 3/10
 
-D. ![](assets-fenbi-77416/632dba4c2d214b251b1b966c80bc421db16713427fcc995838463186639a0ae7.png)
+D. 3/5
 
 <details><summary>第 12 题 · 答案与解析</summary>
 
@@ -377,7 +377,7 @@ C
 
 **解析**
 
-![](assets-fenbi-77416/5f66e00923c762672107ad0cbe94e44f60bce6489ed468c374f0ec02424bdb12.png)。从5本书中随机抽出3本，总数为![](assets-fenbi-77416/d1e411aa59d968cf347efcfd864e7748ead4afa340cba09dff224dec0a9eac07.png)。这3本书的编号恰好为相邻三个整数即123，234，345三种情况，满足条件的数为3。故概率为：![](assets-fenbi-77416/17cc6385185a65de782bc35f345cbd1316ab3bf3c8869983b495ee88f40397c7.png)。
+![](assets-fenbi-77416/5f66e00923c762672107ad0cbe94e44f60bce6489ed468c374f0ec02424bdb12.png)。从5本书中随机抽出3本，总数为![](assets-fenbi-77416/d1e411aa59d968cf347efcfd864e7748ead4afa340cba09dff224dec0a9eac07.png)。这3本书的编号恰好为相邻三个整数即123，234，345三种情况，满足条件的数为3。故概率为：3/10。
 
 故正确答案为C。
 

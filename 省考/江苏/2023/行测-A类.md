@@ -1695,7 +1695,7 @@ D
 
 **解析**
 
-题干数列相邻两项存在明显倍数关系，优先考虑作商数列。后项除以前项得到新数列：![](assets-fenbi-214714/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)，![](assets-fenbi-214714/e0339018eac61804f8a29187660145f8cf9a36f99a993f4d7c65bd28a99e96b8.png)，![](assets-fenbi-214714/b41beb379d45d72b54be507f023975270509125d446c842678bf16abf9b0a9b5.png)，![](assets-fenbi-214714/a0a82210d235f540ce365cc6c3b16c77656d6b78be6d1da81c53cfec01c0b011.png)，（ ），观察发现，分子部分与分母部分均是公差为1的等差数列，故新数列下一项应为![](assets-fenbi-214714/26deac3e8065fae5e85f8adba3c803f7c39dc11e83768623417b84317450ad80.png)，则所求项![](assets-fenbi-214714/db2b5209e09e520d3eadd1e20d37b497e77af33dc4802d5775146537bc28adca.png)。
+题干数列相邻两项存在明显倍数关系，优先考虑作商数列。后项除以前项得到新数列：1/2，2/3，3/4，![](assets-fenbi-214714/a0a82210d235f540ce365cc6c3b16c77656d6b78be6d1da81c53cfec01c0b011.png)，（ ），观察发现，分子部分与分母部分均是公差为1的等差数列，故新数列下一项应为5/6，则所求项![](assets-fenbi-214714/db2b5209e09e520d3eadd1e20d37b497e77af33dc4802d5775146537bc28adca.png)。
 
 故正确答案为D。
 
@@ -1703,7 +1703,7 @@ D
 
 ### 第 48 题
 
-9，6，5，![](assets-fenbi-214714/a13e2dd01bb8f7766104402f09d382e608ec06b5ad0f5e2c989d6ba0a8f277d4.png)，![](assets-fenbi-214714/293e2db6e84b67ab47eb97fab77f2dd98f0bf8694d3845b8a53a49109ce22b35.png)，（ ）
+9，6，5，9/2，21/5，（ ）
 
 A. 4
 
@@ -1721,7 +1721,7 @@ A
 
 **解析**
 
-数列部分为分数，且选项中有分数，考虑分数数列。对数列进行反约分可得：![](assets-fenbi-214714/46f66d4b37e4a975de2478a7a8e99963922aa8ea588b0976a44738f4d4aa77cb.png)，![](assets-fenbi-214714/8894915860ad41ca24fe496c4714110e685d73913572dc2af4cb5c8a19e86365.png)，![](assets-fenbi-214714/c67920301b0941e1514ffa37a3f1c94c04c3cec33cb5fac7fc9aeeccde747abc.png)，![](assets-fenbi-214714/4b95dea82418eff6fa28b2d44bc8af7907934adf11ddbab1f45d95c52aae4063.png)，![](assets-fenbi-214714/293e2db6e84b67ab47eb97fab77f2dd98f0bf8694d3845b8a53a49109ce22b35.png)，（ ），分子部分为：9，12，15，18，21，（ ），是公差为3的等差数列，则下一项为21+3=24；分母部分为连续自然数数列，则下一项为6，故所求项为![](assets-fenbi-214714/9331b0fd8d59f2a205b986ec6105c389e9b59833f77601171a6bbf84693128b2.png)。
+数列部分为分数，且选项中有分数，考虑分数数列。对数列进行反约分可得：![](assets-fenbi-214714/46f66d4b37e4a975de2478a7a8e99963922aa8ea588b0976a44738f4d4aa77cb.png)，![](assets-fenbi-214714/8894915860ad41ca24fe496c4714110e685d73913572dc2af4cb5c8a19e86365.png)，![](assets-fenbi-214714/c67920301b0941e1514ffa37a3f1c94c04c3cec33cb5fac7fc9aeeccde747abc.png)，![](assets-fenbi-214714/4b95dea82418eff6fa28b2d44bc8af7907934adf11ddbab1f45d95c52aae4063.png)，21/5，（ ），分子部分为：9，12，15，18，21，（ ），是公差为3的等差数列，则下一项为21+3=24；分母部分为连续自然数数列，则下一项为6，故所求项为![](assets-fenbi-214714/9331b0fd8d59f2a205b986ec6105c389e9b59833f77601171a6bbf84693128b2.png)。
 
 故正确答案为A。
 
@@ -1729,7 +1729,7 @@ A
 
 ### 第 49 题
 
-![](assets-fenbi-214714/3fc52ed1bce7729942c3adbd736c20d6b1a9fb1c7c885d875b9e70063b2a1e94.png)，4，![](assets-fenbi-214714/ce04f29ca7f203f03f33a9b435987e0903f10acb2f01d1344693f81c1495ba4a.png)，16，![](assets-fenbi-214714/c514c0caa21596cab25952e34ec6d778e14f5d3d5e01f64e33b6525d268aa60f.png)，（ ）
+√3，4，√63，16，5√43，（ ）
 
 A. 42
 
@@ -1747,7 +1747,7 @@ D
 
 **解析**
 
-观察数列特征，有整数和根号，优先考虑机械划分。将原数列统一形式，可转化为：![](assets-fenbi-214714/2c63af63c6c77e5dc3155e0ff7b504ada7df567ac9dfbcbb1e80cd064712aa60.png)，![](assets-fenbi-214714/e3980b1129971ddf79178d14ac1d6dccf8cee856a0ed6b2e3af566bb2c53cb77.png)，![](assets-fenbi-214714/1ad5926209b058a6b750aea0fd12e76cf2189642b204adedc13bba4a5334273c.png)，![](assets-fenbi-214714/5a9084e907292520b55fffb6a0cd5204d900b2526bb1ecc63680aaf70a9dd1b3.png)，![](assets-fenbi-214714/c514c0caa21596cab25952e34ec6d778e14f5d3d5e01f64e33b6525d268aa60f.png)，（ ）。整数部分为：1，2，3，4，5，（ ），是连续自然数列，则所求项的整数部分应为6；根号内部分为：3，4，7，16，43，（ ），无明显规律，考虑作差，后项减前项得：1，3，9，27，是公比为3的等比数列，则下一项应为27×3=81，所求项的根号内部分应为43+81=124，故所求项![](assets-fenbi-214714/1c05c72294848a166e04e79171245512083e85bd53f569632f4f54b61340513a.png)。
+观察数列特征，有整数和根号，优先考虑机械划分。将原数列统一形式，可转化为：![](assets-fenbi-214714/2c63af63c6c77e5dc3155e0ff7b504ada7df567ac9dfbcbb1e80cd064712aa60.png)，![](assets-fenbi-214714/e3980b1129971ddf79178d14ac1d6dccf8cee856a0ed6b2e3af566bb2c53cb77.png)，![](assets-fenbi-214714/1ad5926209b058a6b750aea0fd12e76cf2189642b204adedc13bba4a5334273c.png)，![](assets-fenbi-214714/5a9084e907292520b55fffb6a0cd5204d900b2526bb1ecc63680aaf70a9dd1b3.png)，5√43，（ ）。整数部分为：1，2，3，4，5，（ ），是连续自然数列，则所求项的整数部分应为6；根号内部分为：3，4，7，16，43，（ ），无明显规律，考虑作差，后项减前项得：1，3，9，27，是公比为3的等比数列，则下一项应为27×3=81，所求项的根号内部分应为43+81=124，故所求项![](assets-fenbi-214714/1c05c72294848a166e04e79171245512083e85bd53f569632f4f54b61340513a.png)。
 
 故正确答案为D。
 
@@ -1945,13 +1945,13 @@ B
 
 某食品企业为丰富产品造型，将一款甜点的外形由圆柱形改为半球形。若圆柱形甜点的底面半径是高的2倍，半球形甜点的体积缩小到圆柱形甜点的![](assets-fenbi-214714/af90ec74ac48be781405f073f56222dfdd7e7244fa5b94ed0f10a9aba7f02a33.png)，则半球形甜点的底面半径是圆柱形甜点底面半径的（ ）。
 
-A. ![](assets-fenbi-214714/4587b3db5ae6fa7a2fa9ce2e4ad4b47df49cef5526cc5b66da92da1e18605af7.png)
+A. 1/4
 
-B. ![](assets-fenbi-214714/1d273b2122aaf21895018ee410e0cc1fe872be411377d6cb330f4f09d8ec86fe.png)
+B. 1/3
 
-C. ![](assets-fenbi-214714/e0339018eac61804f8a29187660145f8cf9a36f99a993f4d7c65bd28a99e96b8.png)
+C. 2/3
 
-D. ![](assets-fenbi-214714/b41beb379d45d72b54be507f023975270509125d446c842678bf16abf9b0a9b5.png)
+D. 3/4
 
 <details><summary>第 57 题 · 答案与解析</summary>
 
@@ -1961,7 +1961,7 @@ D
 
 **解析**
 
-赋值圆柱形甜点的底面半径为4，则高为2，根据公式：![](assets-fenbi-214714/98febb09846eb8a7cd0cfdf79fca067122966785e983cc9e8f527ee086c56ff2.png)，可得![](assets-fenbi-214714/7cbfd08d0024ab16a13859f5b3bbcbecb49210a213596f916512ac9552770a88.png)。根据公式：![](assets-fenbi-214714/bdf1733011f1108ea8f7d1d39021f91b5aa8a3abd6da5e75ee5e3d4548da255e.png)，可得![](assets-fenbi-214714/546c2ed37008b28cfa8d46d8f82a8ed41cb47bab27816e90a1968deae00c2bb8.png)，解得R=3，即半球形甜点的底面半径是圆柱形甜点底面半径的![](assets-fenbi-214714/b41beb379d45d72b54be507f023975270509125d446c842678bf16abf9b0a9b5.png)。
+赋值圆柱形甜点的底面半径为4，则高为2，根据公式：![](assets-fenbi-214714/98febb09846eb8a7cd0cfdf79fca067122966785e983cc9e8f527ee086c56ff2.png)，可得![](assets-fenbi-214714/7cbfd08d0024ab16a13859f5b3bbcbecb49210a213596f916512ac9552770a88.png)。根据公式：![](assets-fenbi-214714/bdf1733011f1108ea8f7d1d39021f91b5aa8a3abd6da5e75ee5e3d4548da255e.png)，可得![](assets-fenbi-214714/546c2ed37008b28cfa8d46d8f82a8ed41cb47bab27816e90a1968deae00c2bb8.png)，解得R=3，即半球形甜点的底面半径是圆柱形甜点底面半径的3/4。
 
 故正确答案为D。
 

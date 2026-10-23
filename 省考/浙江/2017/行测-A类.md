@@ -1155,7 +1155,7 @@ C
 
 **解析**
 
-对题干数字作差可得：121，49，25，9；观察可得分别为![](assets-fenbi-77418/367ed635571593b801909dc55edcbbff1b2c78db545b192033c8bb389133e9ab.png)，![](assets-fenbi-77418/1da59e717c7847ef0fb006fceb36a33385d530a1f6d85d0c812abcafe7d54f7b.png)，![](assets-fenbi-77418/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)，![](assets-fenbi-77418/22d6bf8013d449add3713d64aba73fa59a6c667068989d1c90362bfdfe4d785f.png)，（），连续递减质数的平方，因此括号内应为![](assets-fenbi-77418/5525aa87a3a3cbd9b227d819b30af4ff3662c102252465083822cc935d3a6c1b.png)，可推得所求数字为209+4=213。
+对题干数字作差可得：121，49，25，9；观察可得分别为![](assets-fenbi-77418/367ed635571593b801909dc55edcbbff1b2c78db545b192033c8bb389133e9ab.png)，![](assets-fenbi-77418/1da59e717c7847ef0fb006fceb36a33385d530a1f6d85d0c812abcafe7d54f7b.png)，![](assets-fenbi-77418/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)，3^2，（），连续递减质数的平方，因此括号内应为![](assets-fenbi-77418/5525aa87a3a3cbd9b227d819b30af4ff3662c102252465083822cc935d3a6c1b.png)，可推得所求数字为209+4=213。
 
 故正确答案为C。
 
@@ -1249,13 +1249,13 @@ C
 
 小王从编号分别为1、2、3、4、5的5本书中随机抽出3本，那么，这3本书的编号恰好为相邻三个整数的概率为：
 
-A. ![](assets-fenbi-77418/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+A. 1/2
 
-B. ![](assets-fenbi-77418/4ef2b933467e3bffadef03e6f19389333bbe59d6238fbaa957fb15c53a60522c.png)
+B. 2/5
 
-C. ![](assets-fenbi-77418/17cc6385185a65de782bc35f345cbd1316ab3bf3c8869983b495ee88f40397c7.png)
+C. 3/10
 
-D. ![](assets-fenbi-77418/632dba4c2d214b251b1b966c80bc421db16713427fcc995838463186639a0ae7.png)
+D. 3/5
 
 <details><summary>第 37 题 · 答案与解析</summary>
 
@@ -1265,7 +1265,7 @@ C
 
 **解析**
 
-![](assets-fenbi-77418/5f66e00923c762672107ad0cbe94e44f60bce6489ed468c374f0ec02424bdb12.png)。从5本书中随机抽出3本，总数为![](assets-fenbi-77418/d1e411aa59d968cf347efcfd864e7748ead4afa340cba09dff224dec0a9eac07.png)。这3本书的编号恰好为相邻三个整数即123，234，345三种情况，满足条件的数为3。故概率为：![](assets-fenbi-77418/17cc6385185a65de782bc35f345cbd1316ab3bf3c8869983b495ee88f40397c7.png)。
+![](assets-fenbi-77418/5f66e00923c762672107ad0cbe94e44f60bce6489ed468c374f0ec02424bdb12.png)。从5本书中随机抽出3本，总数为![](assets-fenbi-77418/d1e411aa59d968cf347efcfd864e7748ead4afa340cba09dff224dec0a9eac07.png)。这3本书的编号恰好为相邻三个整数即123，234，345三种情况，满足条件的数为3。故概率为：3/10。
 
 故正确答案为C。
 

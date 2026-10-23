@@ -1412,7 +1412,7 @@ B
 
 ### 第 45 题
 
-![](assets-fenbi-427/db55de44667f2fabbf1c005ab1167ee52541acf7a701b704f0799281832d19cf.png)，![](assets-fenbi-427/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)，![](assets-fenbi-427/4587b3db5ae6fa7a2fa9ce2e4ad4b47df49cef5526cc5b66da92da1e18605af7.png)，![](assets-fenbi-427/0b8a80a2a3d969477f8ec08c714d281612ef5bf06f45b26a7a19ece47eb0a40b.png)，![](assets-fenbi-427/d763fe4a924fd1bcaadeb41b3672ea8848777066b0a798df470b7024617aa8e1.png)，（ ）
+3/2，1/2，1/4，3/20，1/10，（ ）
 
 A. ![](assets-fenbi-427/d5b929d5ccf7c44f08b1cd9e5ee8c1f7c3820ebfece7614625340cf438f303da.png)
 
@@ -1430,7 +1430,7 @@ A
 
 **解析**
 
-原数列可变形为![](assets-fenbi-427/db55de44667f2fabbf1c005ab1167ee52541acf7a701b704f0799281832d19cf.png)、![](assets-fenbi-427/e41ba3090e10e964a33b72d7d234e3d64f4e76d863c3e0ad1f55fc9306a95d21.png)、![](assets-fenbi-427/29e5446a29ad772f88e90e6fc3f19a7a5567ea46ff46e775cce1e421bb0eb8d7.png)、![](assets-fenbi-427/0b8a80a2a3d969477f8ec08c714d281612ef5bf06f45b26a7a19ece47eb0a40b.png)、![](assets-fenbi-427/018068c9967bb1382150c371fb133a5935a1cb54ff26a05fcdc4730361652a15.png)、![](assets-fenbi-427/0412264ca11cd792e558297fcac0d2f2ca3ddc111a65ab2dc295f11addbafd49.png)；
+原数列可变形为3/2、![](assets-fenbi-427/e41ba3090e10e964a33b72d7d234e3d64f4e76d863c3e0ad1f55fc9306a95d21.png)、![](assets-fenbi-427/29e5446a29ad772f88e90e6fc3f19a7a5567ea46ff46e775cce1e421bb0eb8d7.png)、3/20、![](assets-fenbi-427/018068c9967bb1382150c371fb133a5935a1cb54ff26a05fcdc4730361652a15.png)、![](assets-fenbi-427/0412264ca11cd792e558297fcac0d2f2ca3ddc111a65ab2dc295f11addbafd49.png)；
 
 分母构成新数列：2、6、12、20、30、（42）为二级等差数列；
 
@@ -1548,7 +1548,7 @@ A
 
 ### 第 50 题
 
-某市场运来苹果、香蕉、柚子和梨四种水果。其中苹果和柚子共30吨，香蕉、柚子和梨共50吨，柚子占水果总数的![](assets-fenbi-427/4587b3db5ae6fa7a2fa9ce2e4ad4b47df49cef5526cc5b66da92da1e18605af7.png)。问一共运来水果多少吨？
+某市场运来苹果、香蕉、柚子和梨四种水果。其中苹果和柚子共30吨，香蕉、柚子和梨共50吨，柚子占水果总数的1/4。问一共运来水果多少吨？
 
 A. 36吨
 
@@ -1736,7 +1736,7 @@ C
 
 ### 第 57 题
 
-一个总额为100万的项目分给甲、乙、丙、丁四个公司共同来完成，甲、乙、丙、丁分到项目额的比例为![](assets-fenbi-427/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)：![](assets-fenbi-427/1d273b2122aaf21895018ee410e0cc1fe872be411377d6cb330f4f09d8ec86fe.png)：![](assets-fenbi-427/4587b3db5ae6fa7a2fa9ce2e4ad4b47df49cef5526cc5b66da92da1e18605af7.png)：![](assets-fenbi-427/c7d3874a8e6f6f0caafd6a524cbc81604f640cd13ebf5d8d490bb0fe494bad04.png)，请问甲分到的项目额为多少万：
+一个总额为100万的项目分给甲、乙、丙、丁四个公司共同来完成，甲、乙、丙、丁分到项目额的比例为1/2：1/3：1/4：1/6，请问甲分到的项目额为多少万：
 
 A. 35万
 
@@ -1776,7 +1776,7 @@ B. ![](assets-fenbi-427/7a0839765091d1bbac9f049bc7ffe14b7e65829f61a5037b272e5bc0
 
 C. ![](assets-fenbi-427/d61e60552903d30933de853fc1be54d58bb45db02ebfd3526064eb715d421dd5.png)
 
-D. ![](assets-fenbi-427/37e04a094321b5f2f696ef10e40f9f965433e4171ff7d61867a8d225e2b93751.png)
+D. 1/7
 
 <details><summary>第 58 题 · 答案与解析</summary>
 
@@ -1812,7 +1812,7 @@ D
 
 **解析**
 
-粗蜡烛每小时燃烧![](assets-fenbi-427/1d273b2122aaf21895018ee410e0cc1fe872be411377d6cb330f4f09d8ec86fe.png)，细蜡烛每小时燃烧1。设时间为n小时，则有![](assets-fenbi-427/a82612bbd47c29f56ff0c72c8a8e8dd94efdc93d205fe87a28703fa882dd0cbb.png)，解得![](assets-fenbi-427/ad22dd2299d95c498a39e36a89d5d2edfde81c022daab9319c9c0d3802fc1199.png)，即45分钟。
+粗蜡烛每小时燃烧1/3，细蜡烛每小时燃烧1。设时间为n小时，则有![](assets-fenbi-427/a82612bbd47c29f56ff0c72c8a8e8dd94efdc93d205fe87a28703fa882dd0cbb.png)，解得![](assets-fenbi-427/ad22dd2299d95c498a39e36a89d5d2edfde81c022daab9319c9c0d3802fc1199.png)，即45分钟。
 
 故正确答案为D。
 
@@ -3418,7 +3418,7 @@ B. 各市中，宁波市的第一产业增加值最多
 
 C. 第二产业增加值大于第三产业的市有9个
 
-D. 杭州市的GDP不足全省的![](assets-fenbi-427/d6566b693400a0cb26112097a11adfa4ef2e6cf3c9e8585dad8a1efdd0920578.png)
+D. 杭州市的GDP不足全省的1/5
 
 <details><summary>第 105 题 · 答案与解析</summary>
 
@@ -3434,7 +3434,7 @@ B项：定位表格材料第三列可知：宁波市的第一产业增加值（2
 
 C项：定位表格材料第四、五列可知：第二产业增加值大于第三产业的市有宁波市、温州市、嘉兴市、湖州市、绍兴市、金华市、衢州市、舟山市、台州市、丽水市，共10个市而非9个市，错误；
 
-D项：定位表格材料可知：全省的GDP为34606.30亿元，杭州市的GDP为7803.98亿元。由![](assets-fenbi-427/808b611127632147a904183b5befdfc178358fbaf2f5827bbab69569fb452b7d.png)，可得：![](assets-fenbi-427/db03165e5d0c7a51dfef643f403e47f1668bd3b720d2f6f6561f165504754b0c.png)，即高于![](assets-fenbi-427/d6566b693400a0cb26112097a11adfa4ef2e6cf3c9e8585dad8a1efdd0920578.png)，错误。
+D项：定位表格材料可知：全省的GDP为34606.30亿元，杭州市的GDP为7803.98亿元。由![](assets-fenbi-427/808b611127632147a904183b5befdfc178358fbaf2f5827bbab69569fb452b7d.png)，可得：![](assets-fenbi-427/db03165e5d0c7a51dfef643f403e47f1668bd3b720d2f6f6561f165504754b0c.png)，即高于1/5，错误。
 
 故正确答案为B。
 

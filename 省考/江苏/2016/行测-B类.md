@@ -1896,7 +1896,7 @@ A
 
 ### 第 57 题
 
-![](assets-fenbi-75776/b95b9c5a73849d37c502c49e6f5cf97049167f599d0d6ea10776446555b199f9.png)，2，3，![](assets-fenbi-75776/c25f59c475d436e79dd6fb180b3b91fc2d6b55c7f2dff0f0d813bac85ce8d500.png)，![](assets-fenbi-75776/7ddae1abb3ea1d8c74743290bb77eea1b499cff82c159102eaa0e0420e31b4df.png)，（ ）。
+√2，2，3，√17，2√7，（ ）。
 
 A. 6
 
@@ -1980,11 +1980,11 @@ B
 
 ### 第 60 题
 
-![](assets-fenbi-75776/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，![](assets-fenbi-75776/632dba4c2d214b251b1b966c80bc421db16713427fcc995838463186639a0ae7.png)，![](assets-fenbi-75776/e4126d83f47d2e644d44eef136e68aedc08c1a915ca3ac7541fc1ca3ea5b683b.png)，![](assets-fenbi-75776/e6c5f86aa90ac27fb1a01a73002b4da74707072a98341a19001936a9727692cb.png)，![](assets-fenbi-75776/820a56d0862de6b466b92f3e2d186fbaedbfb0dfce3cf41236c574cb86e935d5.png)，（ ）。
+1/2，3/5，7/10，13/17，21/26，（ ）。
 
 A. ![](assets-fenbi-75776/bd76441bffe3ef6e96477bc82b574f117b9a743fd17491627e2aeab4503cf302.png)
 
-B. ![](assets-fenbi-75776/0ed9dbf98304868758eb2aea2a4b3ee397e311a1ac1217126c70b8952bc11dd5.png)
+B. 5/7
 
 C. ![](assets-fenbi-75776/507cd7aa18012a15a6317112e8ec3ff680ebcb0875121bdbfba8c769b488737f.png)
 
@@ -2270,7 +2270,7 @@ A
 
 **解析**
 
-沿半径画出圆形，如图所示，阴影部分为完全覆盖。每![](assets-fenbi-75776/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)个圆能完全覆盖的小方格为8个，整个圆能完全覆盖的小方格为8×4=32个。 ![](assets-fenbi-75776/9c31931f8164ed20b361e7af761f3bc84f636829369c34f36660aab13f4b2be6.png)
+沿半径画出圆形，如图所示，阴影部分为完全覆盖。每1/4个圆能完全覆盖的小方格为8个，整个圆能完全覆盖的小方格为8×4=32个。 ![](assets-fenbi-75776/9c31931f8164ed20b361e7af761f3bc84f636829369c34f36660aab13f4b2be6.png)
 
 故正确答案为A。
 

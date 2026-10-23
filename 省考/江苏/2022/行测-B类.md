@@ -1645,15 +1645,15 @@ A
 
 ### 第 47 题
 
-![](assets-fenbi-162375/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)，![](assets-fenbi-162375/aeb67096a26593d4b64d7f7e309e1392166a832cc244b9e5803f7da49210c025.png)，![](assets-fenbi-162375/997a6349ce26e689c0119554ee97a61dd362817ce31bcee0b189ea0fecbe5cfa.png)，![](assets-fenbi-162375/17cc6385185a65de782bc35f345cbd1316ab3bf3c8869983b495ee88f40397c7.png)，![](assets-fenbi-162375/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，（ ）
+5/6，1/12，11/20，3/10，1/2，（ ）
 
 A. ![](assets-fenbi-162375/4c1f0dc2f93b735237e763c461bc18cfc0cec9df9817d9a1b7a32a1abb1fdcdb.png)
 
-B. ![](assets-fenbi-162375/3aab04b1c812afc46cad885eb1229542587da939d29d8c591165600d80381c42.png)
+B. 3/8
 
 C. ![](assets-fenbi-162375/487d496e55883957f1a338df26ccab087d3326691d33f24b5d0938e2b5b86c09.png)
 
-D. ![](assets-fenbi-162375/e4126d83f47d2e644d44eef136e68aedc08c1a915ca3ac7541fc1ca3ea5b683b.png)
+D. 7/10
 
 <details><summary>第 47 题 · 答案与解析</summary>
 
@@ -1663,7 +1663,7 @@ B
 
 **解析**
 
-观察数列特征，均为分数，考虑分数数列。观察分子、分母无明显规律，考虑反约分，原数列可转化为：![](assets-fenbi-162375/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)，![](assets-fenbi-162375/aeb67096a26593d4b64d7f7e309e1392166a832cc244b9e5803f7da49210c025.png)，![](assets-fenbi-162375/997a6349ce26e689c0119554ee97a61dd362817ce31bcee0b189ea0fecbe5cfa.png)，![](assets-fenbi-162375/d1a56e1786fbebefdbc7ae4e8a0b8583c9f727907fd38d1a09e8fe943f7dd63b.png)，![](assets-fenbi-162375/001164f7ffbd789327c0c7b0827e89c4bb8920df9b1c39bdc0aa30636a703653.png)。观察发现，分母：6，12，20，30，42，作差后得：6，8，10，12，是公差为2的等差数列，则下一项是14，即所求项的分母为：42+14=56；分子：5，1，11，9，21，无明显规律，考虑分子分母结合看，观察发现，6-5=1，12-1=11，20-11=9，30-9=21，即后一项分子=前一项分母-前一项分子，则所求项的分子为：42-21=21，则所求项应为![](assets-fenbi-162375/5d6952f717ca6a07ba3428b1f39c15b862e9ba1c0f0183dd036d432cef736309.png)，对应B项。
+观察数列特征，均为分数，考虑分数数列。观察分子、分母无明显规律，考虑反约分，原数列可转化为：5/6，1/12，11/20，![](assets-fenbi-162375/d1a56e1786fbebefdbc7ae4e8a0b8583c9f727907fd38d1a09e8fe943f7dd63b.png)，![](assets-fenbi-162375/001164f7ffbd789327c0c7b0827e89c4bb8920df9b1c39bdc0aa30636a703653.png)。观察发现，分母：6，12，20，30，42，作差后得：6，8，10，12，是公差为2的等差数列，则下一项是14，即所求项的分母为：42+14=56；分子：5，1，11，9，21，无明显规律，考虑分子分母结合看，观察发现，6-5=1，12-1=11，20-11=9，30-9=21，即后一项分子=前一项分母-前一项分子，则所求项的分子为：42-21=21，则所求项应为![](assets-fenbi-162375/5d6952f717ca6a07ba3428b1f39c15b862e9ba1c0f0183dd036d432cef736309.png)，对应B项。
 
 故正确答案为B。
 
@@ -1697,7 +1697,7 @@ D
 
 ### 第 49 题
 
-![](assets-fenbi-162375/debdccf5320b5c8f4397dcc141d05c07723617756c0403458dc0f40180f7a834.png)，![](assets-fenbi-162375/b84ea7d9acdf0ccd085fb27d3bf3e1861f24cf43537b279fff9705a9d8044b5c.png)，10，![](assets-fenbi-162375/8eb1bd91f4468f93321f88338956bf0835139a1ebee6da511854980fe4cbe918.png)，![](assets-fenbi-162375/40d034b48b2668df5250fc1b0770347d897e25eb34b0e38f5b86355a7e1a3eae.png)，（ ）
+√2，√27，10，7√5，√486，（ ）
 
 A. ![](assets-fenbi-162375/0361aad997668c108f8f96a410c68d38862ee40fa4272eedff3c95956ed92d9b.png)
 
@@ -1715,7 +1715,7 @@ C
 
 **解析**
 
-观察数列，有整数和根号，优先考虑机械划分。原数列可转化为：![](assets-fenbi-162375/87b56d6e46b01c0fdf9fdce4feae9a5147b10b3c553e7f01fb43d385e2a3f880.png)，![](assets-fenbi-162375/5a73156e580f974a515f8476c0bf95d591eb5453d1535df936ed33930a15d6d7.png)，![](assets-fenbi-162375/3139c0f59fa2d6495e7b81b10e11ff41a4ba2fbe6af65e9aa1c8b7a43b077894.png)，![](assets-fenbi-162375/8eb1bd91f4468f93321f88338956bf0835139a1ebee6da511854980fe4cbe918.png)，![](assets-fenbi-162375/89da80a307c9aba17fbbf225f714a051f93d2ee8109e96b545bc8d9ea7c9d757.png)，（ ）。整数部分为：1，3，5，7，9，是公差为2的等差数列，故所求项的整数部分为9+2=11；根号部分为：2，3，4，5，6，是公差为1的等差数列，故所求项的根号部分为6+1=7，则所求项为![](assets-fenbi-162375/e25822d0fbe0ca579f1d30effbda51402896fd6305167d593f86da185417045d.png)。
+观察数列，有整数和根号，优先考虑机械划分。原数列可转化为：![](assets-fenbi-162375/87b56d6e46b01c0fdf9fdce4feae9a5147b10b3c553e7f01fb43d385e2a3f880.png)，![](assets-fenbi-162375/5a73156e580f974a515f8476c0bf95d591eb5453d1535df936ed33930a15d6d7.png)，![](assets-fenbi-162375/3139c0f59fa2d6495e7b81b10e11ff41a4ba2fbe6af65e9aa1c8b7a43b077894.png)，7√5，![](assets-fenbi-162375/89da80a307c9aba17fbbf225f714a051f93d2ee8109e96b545bc8d9ea7c9d757.png)，（ ）。整数部分为：1，3，5，7，9，是公差为2的等差数列，故所求项的整数部分为9+2=11；根号部分为：2，3，4，5，6，是公差为1的等差数列，故所求项的根号部分为6+1=7，则所求项为![](assets-fenbi-162375/e25822d0fbe0ca579f1d30effbda51402896fd6305167d593f86da185417045d.png)。
 
 故正确答案为C。
 
@@ -1723,7 +1723,7 @@ C
 
 ### 第 50 题
 
-1，3，![](assets-fenbi-162375/313dc07bc2941bec338e5554c1b4bf00d8600f59c7d25780802ba5e823d46855.png)，![](assets-fenbi-162375/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)，![](assets-fenbi-162375/f4c0cb60cab89c5fe4fc72f3d3ae3907163fbf0d88a1be5953093865b0ea3be0.png)，（ ）
+1，3，7/2，5/2，31/24，（ ）
 
 A. ![](assets-fenbi-162375/f87f20d4d6f5185e1e684427449872c7f3f1aa99c3b9e45112f0a5803caba444.png)
 
@@ -1741,7 +1741,7 @@ B
 
 **解析**
 
-数列大部分为分数，考虑分数数列。对数列进行反约分可得：![](assets-fenbi-162375/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)、![](assets-fenbi-162375/2c870d5c2bb6cec4973d2144d0464051a395109f6877ed88da7ab1e5aaabaabc.png)、![](assets-fenbi-162375/313dc07bc2941bec338e5554c1b4bf00d8600f59c7d25780802ba5e823d46855.png)、![](assets-fenbi-162375/e5860821ad94a812f7dfb495be8fbe2fbacb1c6ad4303cef2f2a03cf0cf95762.png)、![](assets-fenbi-162375/f4c0cb60cab89c5fe4fc72f3d3ae3907163fbf0d88a1be5953093865b0ea3be0.png)。分子部分为：1、3、7、15、31，后一项-前一项可得：2、4、8、16，是公比为2的等比数列，则所求项的分子部分为16×2+31=63。分母部分为：1、1、2、6、24，观察发现存在明显倍数关系，后一项![](assets-fenbi-162375/f5a6c68647c30af90c17798019a4c35c1b5f299c7940595dcc2595ecc6177eed.png)前一项可得：1、2、3、4，是公差为1的等差数列，则所求项的分母部分为（4+1）×24=120。故所求项![](assets-fenbi-162375/b785fc1565261206915a718d420f0e63f5618f8d234d0d39a113f9c7c0ef7849.png)。
+数列大部分为分数，考虑分数数列。对数列进行反约分可得：![](assets-fenbi-162375/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)、![](assets-fenbi-162375/2c870d5c2bb6cec4973d2144d0464051a395109f6877ed88da7ab1e5aaabaabc.png)、7/2、![](assets-fenbi-162375/e5860821ad94a812f7dfb495be8fbe2fbacb1c6ad4303cef2f2a03cf0cf95762.png)、31/24。分子部分为：1、3、7、15、31，后一项-前一项可得：2、4、8、16，是公比为2的等比数列，则所求项的分子部分为16×2+31=63。分母部分为：1、1、2、6、24，观察发现存在明显倍数关系，后一项![](assets-fenbi-162375/f5a6c68647c30af90c17798019a4c35c1b5f299c7940595dcc2595ecc6177eed.png)前一项可得：1、2、3、4，是公差为1的等差数列，则所求项的分母部分为（4+1）×24=120。故所求项![](assets-fenbi-162375/b785fc1565261206915a718d420f0e63f5618f8d234d0d39a113f9c7c0ef7849.png)。
 
 故正确答案为B。
 
@@ -1749,7 +1749,7 @@ B
 
 ### 第 51 题
 
-小王和小李进行七局四胜的乒乓球比赛，两人水平相当，每局胜对方的概率都是![](assets-fenbi-162375/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)。若前三局过后小王获胜的概率是![](assets-fenbi-162375/996d396d52e320f838ee99c2e7ee3aa2e68f38aabdf966fb78800be182087f20.png)，则她前三局的胜负情况是：
+小王和小李进行七局四胜的乒乓球比赛，两人水平相当，每局胜对方的概率都是1/2。若前三局过后小王获胜的概率是11/16，则她前三局的胜负情况是：
 
 A. 胜3局
 
@@ -1767,7 +1767,7 @@ B
 
 **解析**
 
-由题意可知，三局之后小王获胜的概率大于![](assets-fenbi-162375/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，可知她前三局胜多负少，排除C、D两项。剩余两项，剩二代一：
+由题意可知，三局之后小王获胜的概率大于1/2，可知她前三局胜多负少，排除C、D两项。剩余两项，剩二代一：
 
 A项：小王前三局胜三局，之后只需要再胜一局即可获胜，分类情况如下：①第四局获胜，概率![](assets-fenbi-162375/8d63767ee57c97a345436abe9ed06e882e0267e9c3855d8c46c7cf659ce18365.png)；②第四局败，第五局胜，概率![](assets-fenbi-162375/492b6e42f7ef5f57bb780274269bcbf67733068d5705030956e19361cfb99a46.png)；③第四、五局都败、第六局胜，概率![](assets-fenbi-162375/77d088b2f8506621ee04cb4f13f25766317a3237af9734a0780da53333fa5f49.png)；④第四、五、六局都败，第七局胜，概率![](assets-fenbi-162375/6834a3e148ee326124f77c7c910a470f7fd32c30cec0474365e1d58c833a4c3a.png)。故小王获胜概率![](assets-fenbi-162375/8446c597855a1ed19ec7719e1205cd01851ce5934cf344413d01c9c32bef83a7.png)，错误，排除；
 
@@ -1861,7 +1861,7 @@ D项：
 
 ![](assets-fenbi-162375/dbc421f7ba0f2a1ca5b1474a7d461dcfd74c64b08d4c5c2aa4f93003d5baba2e.png)
 
-如图长方形的面积为4×2=8，所求函数阴影面积明显超过长方形面积的![](assets-fenbi-162375/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)，即超过2，不符合题意。
+如图长方形的面积为4×2=8，所求函数阴影面积明显超过长方形面积的1/4，即超过2，不符合题意。
 
 故正确答案为B。
 

@@ -1193,9 +1193,9 @@ A
 
 ### 第 34 题
 
-2，2，2，![](assets-fenbi-198518/f6164bdbfa2fdd64d20d9a2c341482ba178d45a821f80fa1d7a2756e75756093.png)，![](assets-fenbi-198518/5d26f60734f630fb24cc10b0cd6a3737a88f51b33a2df45378925b0c862e5f51.png)，（ ）
+2，2，2，9/5，5/3，（ ）
 
-A. ![](assets-fenbi-198518/db55de44667f2fabbf1c005ab1167ee52541acf7a701b704f0799281832d19cf.png)
+A. 3/2
 
 B. ![](assets-fenbi-198518/b40ae7817deca0a573a2397a9408715b55499cd33f3b96188b056005e2f1bef9.png)
 
@@ -1211,7 +1211,7 @@ D
 
 **解析**
 
-数列部分为分数且选项均为分数，考虑分数数列。对数列进行反约分可得：![](assets-fenbi-198518/4faba8c5f8c2e0cb569d615481ed2703441687966f9cc20823353988fe0a1ad4.png)，![](assets-fenbi-198518/9ec1d690611fa6fd6b07cf3403cc1caf2b94dd589824ba4c8e92c06aa1374c3c.png)，![](assets-fenbi-198518/c4c95fe0dc0ec6bfb6c64b0eef1217f029d19684b8b124c4024e9d56427c8a25.png)，![](assets-fenbi-198518/f6164bdbfa2fdd64d20d9a2c341482ba178d45a821f80fa1d7a2756e75756093.png)，![](assets-fenbi-198518/b7aba69f5e4e4f0ae559cdc11093ad63164cd3bafcf21ff6ea99b340e1a5babf.png)，（ ），分子部分为：4，6，8，9，10，（ ），是连续合数数列，则下一项应为12；分母部分为：2，3，4，5，6，（ ），是公差为1的等差数列，则下一项应为7，故所求项为![](assets-fenbi-198518/623f326795c8d3a04a6893f6e46d005101e285b8ae627034d491e9390d39455e.png)。
+数列部分为分数且选项均为分数，考虑分数数列。对数列进行反约分可得：![](assets-fenbi-198518/4faba8c5f8c2e0cb569d615481ed2703441687966f9cc20823353988fe0a1ad4.png)，![](assets-fenbi-198518/9ec1d690611fa6fd6b07cf3403cc1caf2b94dd589824ba4c8e92c06aa1374c3c.png)，![](assets-fenbi-198518/c4c95fe0dc0ec6bfb6c64b0eef1217f029d19684b8b124c4024e9d56427c8a25.png)，9/5，10/6，（ ），分子部分为：4，6，8，9，10，（ ），是连续合数数列，则下一项应为12；分母部分为：2，3，4，5，6，（ ），是公差为1的等差数列，则下一项应为7，故所求项为![](assets-fenbi-198518/623f326795c8d3a04a6893f6e46d005101e285b8ae627034d491e9390d39455e.png)。
 
 故正确答案为D。
 
@@ -1355,7 +1355,7 @@ C
 
 某停车场有7个连成一排的空车位。现有3辆车随机停在这排车位中，则任意两辆车之间至少间隔一个车位的概率为：
 
-A. ![](assets-fenbi-198518/d6566b693400a0cb26112097a11adfa4ef2e6cf3c9e8585dad8a1efdd0920578.png)
+A. 1/5
 
 B. ![](assets-fenbi-198518/a35b57694c486b3587e28945bc41849eb5f311df317a8931ea00d981d5def33f.png)
 
@@ -1441,7 +1441,7 @@ A
 
 ### 第 43 题
 
-某班级对70多名学生进行数学和英语科目摸底测验，有12%的学生两个科目均不及格。已知有![](assets-fenbi-198518/e0339018eac61804f8a29187660145f8cf9a36f99a993f4d7c65bd28a99e96b8.png)的学生英语及格，数学及格的学生比英语多10人，那两科均及格的学生有多少人？
+某班级对70多名学生进行数学和英语科目摸底测验，有12%的学生两个科目均不及格。已知有2/3的学生英语及格，数学及格的学生比英语多10人，那两科均及格的学生有多少人？
 
 A. 31
 
@@ -1525,7 +1525,7 @@ A. ![](assets-fenbi-198518/759a53957315f2a8396bc10f9bc133cbc92b93be9b77f33d3f897
 
 B. ![](assets-fenbi-198518/4d57b67338a792708a66004267c1a2b8c26d4f6b7982af7749fba5bdb1ba36e1.png)
 
-C. ![](assets-fenbi-198518/5b1424906de5785fa85ebbe6ba9bdaff5305896b0853749e051e7d61dc04b269.png)
+C. π
 
 D. ![](assets-fenbi-198518/46e4d8dc649712e45a5f4c7e13d4140e32138042f4dcc43f33dbbfa1cd90b8c9.png)
 
@@ -1537,7 +1537,7 @@ B
 
 **解析**
 
-由题意可知，秒针长度为4厘米，秒针转动一圈即1分钟，其顶点移动路程为![](assets-fenbi-198518/cca3af758d67d1af7c80bb0c128a2d83223f84b54715319876b6b4b52681d370.png)厘米，现秒针顶点累计移动了![](assets-fenbi-198518/c26741d5039759275d62d240620f81eec88aae4defa043b67aa9179c4f9a17e9.png)厘米，即经过时间![](assets-fenbi-198518/501d76790fd415c670810cbab05902271f7501f0b880151a7f4f33022164c65c.png)分钟。分针每60分钟转一圈，5分钟转![](assets-fenbi-198518/002130e5b01290dd788f2c4553840abd0998d932fb6e4c245897e870b6cae902.png)圈，半径为3厘米，其扫过的面积为![](assets-fenbi-198518/0d11dd9bd5b58e18f6f697be68b58b66b3bc74f7afda23bc11347c4fde08ac81.png)平方厘米。
+由题意可知，秒针长度为4厘米，秒针转动一圈即1分钟，其顶点移动路程为![](assets-fenbi-198518/cca3af758d67d1af7c80bb0c128a2d83223f84b54715319876b6b4b52681d370.png)厘米，现秒针顶点累计移动了![](assets-fenbi-198518/c26741d5039759275d62d240620f81eec88aae4defa043b67aa9179c4f9a17e9.png)厘米，即经过时间![](assets-fenbi-198518/501d76790fd415c670810cbab05902271f7501f0b880151a7f4f33022164c65c.png)分钟。分针每60分钟转一圈，5分钟转1/12圈，半径为3厘米，其扫过的面积为![](assets-fenbi-198518/0d11dd9bd5b58e18f6f697be68b58b66b3bc74f7afda23bc11347c4fde08ac81.png)平方厘米。
 
 故正确答案为B。
 

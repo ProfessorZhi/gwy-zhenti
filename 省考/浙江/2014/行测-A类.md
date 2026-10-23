@@ -1457,7 +1457,7 @@ D
 
 ### 第 46 题
 
-![](assets-fenbi-26153/cc4a6a073a9a88d98b443cd8f2b56677f6ffe408734307b71de2d084e0b876b4.png)的值为：
+(2014×1.5-2013÷1 1/3)/(2014^2-2013×2015)的值为：
 
 A. ![](assets-fenbi-26153/3ddbda75f4a9b7cdbf4c2274ca2ea970dd59a91e5dabe62d33d1694f479dde12.png)
 
@@ -1479,7 +1479,7 @@ A
 
 单选题
 
-![](assets-fenbi-26153/cc4a6a073a9a88d98b443cd8f2b56677f6ffe408734307b71de2d084e0b876b4.png)的值为：
+(2014×1.5-2013÷1 1/3)/(2014^2-2013×2015)的值为：
 
 -   A
 
@@ -1535,7 +1535,7 @@ D易错项
 
 ### 第 47 题
 
-对分数![](assets-fenbi-26153/c6a5d4878eee7cbcc56e27616c6e6c608e20e027c933b5dada65b40433fe8886.png)进行操作，每次分母加15，分子加7，问至少经过几次这样的操作能使得到的分数不小于![](assets-fenbi-26153/d6566b693400a0cb26112097a11adfa4ef2e6cf3c9e8585dad8a1efdd0920578.png)：
+对分数![](assets-fenbi-26153/c6a5d4878eee7cbcc56e27616c6e6c608e20e027c933b5dada65b40433fe8886.png)进行操作，每次分母加15，分子加7，问至少经过几次这样的操作能使得到的分数不小于1/5：
 
 A. 46
 
@@ -1553,7 +1553,7 @@ C
 
 **解析**
 
-设至少经过x次这样的操作能使得到的分数不小于![](assets-fenbi-26153/d6566b693400a0cb26112097a11adfa4ef2e6cf3c9e8585dad8a1efdd0920578.png)，根据题意，可列式为：![](assets-fenbi-26153/0498b94c6db1d4864603dc802f5f3bfb68ce9e6276266cad7b7ec968a15f910f.png)，化简后得：![](assets-fenbi-26153/73e6998c8049486d1c285a0a40bc7b96a6e24e764f705c5a5e0f28b2b8448919.png)，![](assets-fenbi-26153/64e23159dd658624658890bc5c6e8da8fdf7afdc6681e779b65899642ffdaaeb.png)，则x至少为48。因此，至少经过48次操作才可满足要求。
+设至少经过x次这样的操作能使得到的分数不小于1/5，根据题意，可列式为：![](assets-fenbi-26153/0498b94c6db1d4864603dc802f5f3bfb68ce9e6276266cad7b7ec968a15f910f.png)，化简后得：![](assets-fenbi-26153/73e6998c8049486d1c285a0a40bc7b96a6e24e764f705c5a5e0f28b2b8448919.png)，![](assets-fenbi-26153/64e23159dd658624658890bc5c6e8da8fdf7afdc6681e779b65899642ffdaaeb.png)，则x至少为48。因此，至少经过48次操作才可满足要求。
 
 故正确答案为C。
 

@@ -1733,7 +1733,7 @@ C
 
 ### 第 54 题
 
-2、![](assets-fenbi-66133/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)、![](assets-fenbi-66133/0d3650970fe838f6e34feac1233c1d5fd725c54b8a27a4324edb3a1026037d2c.png)、![](assets-fenbi-66133/3c8f080e0297aded6cfb9f1dc306546b626fba02f5ceed90d49e554931ffd175.png)、![](assets-fenbi-66133/30be796bb8ea024688918ae178206f2e7b5ad0f631d22414df9a0eb020b4c0f9.png)、（ ）
+2、5/2、11/4、35/12、73/24、（ ）
 
 A. ![](assets-fenbi-66133/30022a5abb21811d0b1fbdac0342143b4c33acad7a5f9023696b7e445566d6bb.png)
 
@@ -1751,7 +1751,7 @@ B
 
 **解析**
 
-展开分数列无特性规律后，考虑作差。两两作差得到新数列：![](assets-fenbi-66133/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)、![](assets-fenbi-66133/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)、![](assets-fenbi-66133/7afd0046620668df56ad0d2555716a0734f042fe61c0548e10535b7b31bc8d0c.png)、![](assets-fenbi-66133/9afa4d45d62754e0802ec6d5dcffb7b089aa935ce718d2f4332210ec803c08ee.png)、（ ），分子不变，分母为连续偶数列，则括号内应为![](assets-fenbi-66133/6b4b1e097af172e3b52e37133c74b301532a7bd5be85fb7fabaaaff9a31b250b.png)，题干所求应为![](assets-fenbi-66133/30be796bb8ea024688918ae178206f2e7b5ad0f631d22414df9a0eb020b4c0f9.png)＋![](assets-fenbi-66133/6b4b1e097af172e3b52e37133c74b301532a7bd5be85fb7fabaaaff9a31b250b.png)＝![](assets-fenbi-66133/69b78db0e337db90c792b643d96c50ac3fd8f7a3053ce212d7409a6033db2197.png)。
+展开分数列无特性规律后，考虑作差。两两作差得到新数列：1/2、1/4、1/6、1/8、（ ），分子不变，分母为连续偶数列，则括号内应为![](assets-fenbi-66133/6b4b1e097af172e3b52e37133c74b301532a7bd5be85fb7fabaaaff9a31b250b.png)，题干所求应为73/24＋![](assets-fenbi-66133/6b4b1e097af172e3b52e37133c74b301532a7bd5be85fb7fabaaaff9a31b250b.png)＝![](assets-fenbi-66133/69b78db0e337db90c792b643d96c50ac3fd8f7a3053ce212d7409a6033db2197.png)。
 
 故正确答案为B。
 
@@ -3669,7 +3669,7 @@ C
 
 **解析**
 
-根据题干问“2012年比重”确定本题为现期比重问题。根据文字材料中“2012年全国国内旅游人数29.57亿人次，其中，城镇居民19.33亿人次”可得农村居民旅游人数=29.57-19.33=10.24亿人次。则农村居民旅游人数所占全国比重![](assets-fenbi-66133/19ffad19b36a7e15c10017a85c8a6c199e5f4e5f68e65df55f1c287fb443ae47.png)，略大于![](assets-fenbi-66133/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，只有C项符合。
+根据题干问“2012年比重”确定本题为现期比重问题。根据文字材料中“2012年全国国内旅游人数29.57亿人次，其中，城镇居民19.33亿人次”可得农村居民旅游人数=29.57-19.33=10.24亿人次。则农村居民旅游人数所占全国比重![](assets-fenbi-66133/19ffad19b36a7e15c10017a85c8a6c199e5f4e5f68e65df55f1c287fb443ae47.png)，略大于1/3，只有C项符合。
 
 故正确答案为C。
 

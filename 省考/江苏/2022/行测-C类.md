@@ -1689,11 +1689,11 @@ A
 
 ### 第 49 题
 
-1，![](assets-fenbi-162376/debdccf5320b5c8f4397dcc141d05c07723617756c0403458dc0f40180f7a834.png)，![](assets-fenbi-162376/ded32433b9b3e3abbe7b0d6ab4d0734ae549906686b4973aad1a6c53f8e9e334.png)，![](assets-fenbi-162376/0de57458d97bbeee96e14d7776e028f18e48846cf89f83d362decacf0347fc05.png)，![](assets-fenbi-162376/834c12de9765e9b1037360d59d419c8e8697da9adced817a9108c386380f2e06.png)，（ ）
+1，√2，√6，2√6，2√30，（ ）
 
 A. ![](assets-fenbi-162376/fc5c73d61434ce25bd27eb6851f12981d1a2ff7083a0c6ce0e67aa1fdec6be45.png)
 
-B. ![](assets-fenbi-162376/a05eebd9cf8ae7cc63eca36c9ed77a6fc2dc1daae98eb40a1da2131819f72004.png)
+B. 4√2
 
 C. ![](assets-fenbi-162376/b875e9c84302a0140831a7379912a7486e8640380a0078723b21c30095d262e1.png)
 
@@ -1707,7 +1707,7 @@ D
 
 **解析**
 
-数列及选项出现多个带根号的数字，转化为根号内找规律。![](assets-fenbi-162376/baa9d5f8a595c74c521ba3210c8c684000646b78ce8b65364bc2ec1868d9ec5f.png)，![](assets-fenbi-162376/debdccf5320b5c8f4397dcc141d05c07723617756c0403458dc0f40180f7a834.png)，![](assets-fenbi-162376/ded32433b9b3e3abbe7b0d6ab4d0734ae549906686b4973aad1a6c53f8e9e334.png)，![](assets-fenbi-162376/dbdc767eee603a7f4b46a851d198443a2444d25fba3b89be381c1db096e50ffb.png)，![](assets-fenbi-162376/7a454c2f9cf97caece0143d407f8f292639a563f2a2b764cf68a8be4aa49f593.png)，根号内形成数列：1，2，6，24，120，有明显的倍数关系，后项除前项可得新数列：2，3，4，5，是公差为1的等差数列，新数列下一项为6，则所求项为![](assets-fenbi-162376/efbf1250da8c643cb02a0db0040f6adaf71c05ddb30a69c45d08972eedde67aa.png)。
+数列及选项出现多个带根号的数字，转化为根号内找规律。![](assets-fenbi-162376/baa9d5f8a595c74c521ba3210c8c684000646b78ce8b65364bc2ec1868d9ec5f.png)，√2，√6，![](assets-fenbi-162376/dbdc767eee603a7f4b46a851d198443a2444d25fba3b89be381c1db096e50ffb.png)，![](assets-fenbi-162376/7a454c2f9cf97caece0143d407f8f292639a563f2a2b764cf68a8be4aa49f593.png)，根号内形成数列：1，2，6，24，120，有明显的倍数关系，后项除前项可得新数列：2，3，4，5，是公差为1的等差数列，新数列下一项为6，则所求项为![](assets-fenbi-162376/efbf1250da8c643cb02a0db0040f6adaf71c05ddb30a69c45d08972eedde67aa.png)。
 
 故正确答案为D。
 
@@ -1715,15 +1715,15 @@ D
 
 ### 第 50 题
 
-![](assets-fenbi-162376/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)，![](assets-fenbi-162376/aeb67096a26593d4b64d7f7e309e1392166a832cc244b9e5803f7da49210c025.png)，![](assets-fenbi-162376/997a6349ce26e689c0119554ee97a61dd362817ce31bcee0b189ea0fecbe5cfa.png)，![](assets-fenbi-162376/17cc6385185a65de782bc35f345cbd1316ab3bf3c8869983b495ee88f40397c7.png)，![](assets-fenbi-162376/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，（ ）
+5/6，1/12，11/20，3/10，1/2，（ ）
 
 A. ![](assets-fenbi-162376/4c1f0dc2f93b735237e763c461bc18cfc0cec9df9817d9a1b7a32a1abb1fdcdb.png)
 
-B. ![](assets-fenbi-162376/3aab04b1c812afc46cad885eb1229542587da939d29d8c591165600d80381c42.png)
+B. 3/8
 
 C. ![](assets-fenbi-162376/487d496e55883957f1a338df26ccab087d3326691d33f24b5d0938e2b5b86c09.png)
 
-D. ![](assets-fenbi-162376/e4126d83f47d2e644d44eef136e68aedc08c1a915ca3ac7541fc1ca3ea5b683b.png)
+D. 7/10
 
 <details><summary>第 50 题 · 答案与解析</summary>
 
@@ -1733,7 +1733,7 @@ B
 
 **解析**
 
-观察数列特征，均为分数，考虑分数数列。观察分子、分母无明显规律，考虑反约分，原数列可转化为：![](assets-fenbi-162376/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)，![](assets-fenbi-162376/aeb67096a26593d4b64d7f7e309e1392166a832cc244b9e5803f7da49210c025.png)，![](assets-fenbi-162376/997a6349ce26e689c0119554ee97a61dd362817ce31bcee0b189ea0fecbe5cfa.png)，![](assets-fenbi-162376/d1a56e1786fbebefdbc7ae4e8a0b8583c9f727907fd38d1a09e8fe943f7dd63b.png)，![](assets-fenbi-162376/001164f7ffbd789327c0c7b0827e89c4bb8920df9b1c39bdc0aa30636a703653.png)。观察发现，分母：6，12，20，30，42，作差后得：6，8，10，12，是公差为2的等差数列，则下一项是14，即所求项的分母为：42+14=56；分子：5，1，11，9，21，无明显规律，考虑分子分母结合看，观察发现，6-5=1，12-1=11，20-11=9，30-9=21，即后一项分子=前一项分母-前一项分子，则所求项的分子为：42-21=21，则所求项应为![](assets-fenbi-162376/5d6952f717ca6a07ba3428b1f39c15b862e9ba1c0f0183dd036d432cef736309.png)，对应B项。
+观察数列特征，均为分数，考虑分数数列。观察分子、分母无明显规律，考虑反约分，原数列可转化为：5/6，1/12，11/20，![](assets-fenbi-162376/d1a56e1786fbebefdbc7ae4e8a0b8583c9f727907fd38d1a09e8fe943f7dd63b.png)，![](assets-fenbi-162376/001164f7ffbd789327c0c7b0827e89c4bb8920df9b1c39bdc0aa30636a703653.png)。观察发现，分母：6，12，20，30，42，作差后得：6，8，10，12，是公差为2的等差数列，则下一项是14，即所求项的分母为：42+14=56；分子：5，1，11，9，21，无明显规律，考虑分子分母结合看，观察发现，6-5=1，12-1=11，20-11=9，30-9=21，即后一项分子=前一项分母-前一项分子，则所求项的分子为：42-21=21，则所求项应为![](assets-fenbi-162376/5d6952f717ca6a07ba3428b1f39c15b862e9ba1c0f0183dd036d432cef736309.png)，对应B项。
 
 故正确答案为B。
 
@@ -1835,15 +1835,15 @@ B
 
 ### 第 54 题
 
-出版社安排甲、乙、丙三人校对一本书，甲完成总任务的![](assets-fenbi-162376/9afa4d45d62754e0802ec6d5dcffb7b089aa935ce718d2f4332210ec803c08ee.png)后，剩下的分配给乙和丙。若乙的工作效率是丙的![](assets-fenbi-162376/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)，且两人完成工作所用时间相同，则乙的工作量是总任务的：
+出版社安排甲、乙、丙三人校对一本书，甲完成总任务的1/8后，剩下的分配给乙和丙。若乙的工作效率是丙的3/4，且两人完成工作所用时间相同，则乙的工作量是总任务的：
 
-A. ![](assets-fenbi-162376/3aab04b1c812afc46cad885eb1229542587da939d29d8c591165600d80381c42.png)
+A. 3/8
 
 B. ![](assets-fenbi-162376/e39f8743ecc12d2c2b386a78e665125008cb801b5105b90cdf4d94660f6f7bce.png)
 
 C. ![](assets-fenbi-162376/78d752713e00f886e690a59c8a793fe74dfffac70f31e4798b8d8fa5c294d2bd.png)
 
-D. ![](assets-fenbi-162376/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+D. 1/2
 
 <details><summary>第 54 题 · 答案与解析</summary>
 
@@ -1853,9 +1853,9 @@ A
 
 **解析**
 
-方法一：根据“乙的工作效率是丙的![](assets-fenbi-162376/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)”，赋值乙的效率为3，丙的效率为4，设两人完成工作所用时间均为t，由“甲完成总任务的![](assets-fenbi-162376/9afa4d45d62754e0802ec6d5dcffb7b089aa935ce718d2f4332210ec803c08ee.png)后，剩下的分配给乙和丙”，则乙、丙两人一共完成的工作量为：![](assets-fenbi-162376/6eb465cac5e99c12806f1a7bc0035824f2a9ed32dccdca5c9fe08389d3463117.png)，即总任务量=8t，则乙的工作量是总任务量的 ![](assets-fenbi-162376/e3ae3f4b3634c224338eb8d1e55433024cf0e941340e60a7e44819b1e616bed9.png)。
+方法一：根据“乙的工作效率是丙的3/4”，赋值乙的效率为3，丙的效率为4，设两人完成工作所用时间均为t，由“甲完成总任务的1/8后，剩下的分配给乙和丙”，则乙、丙两人一共完成的工作量为：![](assets-fenbi-162376/6eb465cac5e99c12806f1a7bc0035824f2a9ed32dccdca5c9fe08389d3463117.png)，即总任务量=8t，则乙的工作量是总任务量的 ![](assets-fenbi-162376/e3ae3f4b3634c224338eb8d1e55433024cf0e941340e60a7e44819b1e616bed9.png)。
 
-方法二：根据“乙的工作效率是丙的![](assets-fenbi-162376/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)，且两人完成工作所用时间相同”，可知乙、丙两人工作效率比为3：4，工作时间相同，则工作效率与工作量成正比，即乙、丙两人工作量之比为3：4，假设总任务量为8份，甲做![](assets-fenbi-162376/9afa4d45d62754e0802ec6d5dcffb7b089aa935ce718d2f4332210ec803c08ee.png)，即1份，乙、丙两人共做7份，乙的工作量为![](assets-fenbi-162376/9c3f632aea1db90da449632385f67ce28e28eb8c7ef85af37da9a79a16709560.png)，所以乙的工作量是总任务的![](assets-fenbi-162376/3aab04b1c812afc46cad885eb1229542587da939d29d8c591165600d80381c42.png)。
+方法二：根据“乙的工作效率是丙的3/4，且两人完成工作所用时间相同”，可知乙、丙两人工作效率比为3：4，工作时间相同，则工作效率与工作量成正比，即乙、丙两人工作量之比为3：4，假设总任务量为8份，甲做1/8，即1份，乙、丙两人共做7份，乙的工作量为![](assets-fenbi-162376/9c3f632aea1db90da449632385f67ce28e28eb8c7ef85af37da9a79a16709560.png)，所以乙的工作量是总任务的3/8。
 
 故正确答案为A。
 

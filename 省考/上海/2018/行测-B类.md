@@ -2221,7 +2221,7 @@ C
 
 ### 第 62 题
 
-1，2，![](assets-fenbi-82932/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-82932/f61d9565f49d10c1a519f2e60ab41669a2f25bc5ba86c11930274bf065fb5585.png)，![](assets-fenbi-82932/53c02c9f93b21e854a3d45c3fe3e296cac703104c828352bd883a33db6a8442b.png)，        。
+1，2，1/3，3/7，21/16，        。
 
 A. ![](assets-fenbi-82932/361835f0d32d5348a51ea0eab16c489cc07b52afdda2794a9b4c45e776bdad92.png)
 
@@ -2411,13 +2411,13 @@ x+y+z=50+50+0=100元
 
 非高峰时段，地铁每8分钟一班，在车站停靠1分钟，则乘客到达站台2分钟内能乘上地铁的概率为      。
 
-A. ![](assets-fenbi-82932/9afa4d45d62754e0802ec6d5dcffb7b089aa935ce718d2f4332210ec803c08ee.png)
+A. 1/8
 
-B. ![](assets-fenbi-82932/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)
+B. 1/4
 
-C. ![](assets-fenbi-82932/3aab04b1c812afc46cad885eb1229542587da939d29d8c591165600d80381c42.png)
+C. 3/8
 
-D. ![](assets-fenbi-82932/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+D. 1/2
 
 <details><summary>第 68 题 · 答案与解析</summary>
 
@@ -2435,7 +2435,7 @@ C
 
 前后一共3分钟的时间可以乘坐地铁。
 
-综上所述：每8分钟内有3分钟可以坐上车，坐上车的概率为![](assets-fenbi-82932/3aab04b1c812afc46cad885eb1229542587da939d29d8c591165600d80381c42.png)。
+综上所述：每8分钟内有3分钟可以坐上车，坐上车的概率为3/8。
 
 故正确答案为C。
 

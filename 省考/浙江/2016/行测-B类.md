@@ -921,7 +921,7 @@ C
 
 ### 第 27 题
 
-![](assets-fenbi-77248/d7fc7818f003a9afe95598cbff9a6e1756a189ebe55683b2ca77f2a48b6bcbe8.png)
+8,4,6,15,52 1/2,()
 
 A. ![](assets-fenbi-77248/60d97ef5eebb15d2d01d07624540c3df996e519cfc6f8d81d6342628b8e5390c.png)
 
@@ -939,7 +939,7 @@ B
 
 **解析**
 
-观察数列，数字两两之间都能够约分，考虑作商数列。后一项除以前一项，得到![](assets-fenbi-77248/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，![](assets-fenbi-77248/9ca32f574c76ce6e061da97669243f1fadc0bd14d25f8545c67225d2190a5348.png)，![](assets-fenbi-77248/a023ea8cebfd30c66a772a913eb722c3002089cb69916a87eabe4539f24fe3e7.png)，![](assets-fenbi-77248/270bbec201a011c6d6d26c7300ca13538c2d67a3f4ee147952838b8860b69a6b.png)，为公差为1的等差数列。因此![](assets-fenbi-77248/e7ce4e377a0adc94735ad334e80292d5095a3d97f02c241d8eb3f87b716ed07f.png)。
+观察数列，数字两两之间都能够约分，考虑作商数列。后一项除以前一项，得到1/2，![](assets-fenbi-77248/9ca32f574c76ce6e061da97669243f1fadc0bd14d25f8545c67225d2190a5348.png)，![](assets-fenbi-77248/a023ea8cebfd30c66a772a913eb722c3002089cb69916a87eabe4539f24fe3e7.png)，![](assets-fenbi-77248/270bbec201a011c6d6d26c7300ca13538c2d67a3f4ee147952838b8860b69a6b.png)，为公差为1的等差数列。因此![](assets-fenbi-77248/e7ce4e377a0adc94735ad334e80292d5095a3d97f02c241d8eb3f87b716ed07f.png)。
 
 故正确答案为B。
 
@@ -999,7 +999,7 @@ A
 
 ### 第 30 题
 
-0，1，![](assets-fenbi-77248/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-77248/174b76a215911f342440fe458a836438c29b20bfa78189c435475bbc9bf4528d.png)，![](assets-fenbi-77248/82501bb386e751c5a057932ff5f61949bde690562d381054958c72b2fd107b1a.png)，( )
+0，1，3/2，11/6，25/12，( )
 
 A. ![](assets-fenbi-77248/a519242df66478d09ab557e78c8a7ac27134e905f392734de64008bd99668f21.png)
 
@@ -1017,9 +1017,9 @@ B
 
 **解析**
 
-方法一：观察数列，有分数有整数，且分母出现倍数关系，结合选项，数列转换成分母都为60的分数数列，得到![](assets-fenbi-77248/f87ff2af4a12f33c0532451b6d6c792ddfb0d92f86d6fec019611576fe6c35b0.png)，![](assets-fenbi-77248/7349a86429156ab695accf5b6b5f570beacc147321ef4e35aac9ca7d7b716f99.png)，![](assets-fenbi-77248/280d56c33b30d62107799be1eddebfda35e71a2ba1c922838bf5c91f9d2dac89.png)，![](assets-fenbi-77248/a1b892f095c07d1ebfb601204af2f34f8f2f690d0cc47b99d88816133ab82557.png)，![](assets-fenbi-77248/459035a9a99baba557807ca342c3d45332e841d35ba3fba0013880649e824015.png)。分母相同，观察分子数列，作差得到60，30，20，15，两两之间能够约分，考虑作商，后一项除以前一项，得到![](assets-fenbi-77248/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，![](assets-fenbi-77248/6b1f3c4299575eebc7bc7b6c67889b70e92a2f5a8a2f63bc435bd4c8991374fa.png)，![](assets-fenbi-77248/8277ae0b1ab3dd4930d57d85a422fbe8e9b7a722a29ae36d95fd02cc6cc548ff.png)，分子分母为连续自然数，则![](assets-fenbi-77248/33c2acbec2cb4906562d24e4b7e5e92a3b4b6b929cc0191a37e14356ca5827b3.png)，![](assets-fenbi-77248/8b5c46e826fc3b4f634a8cf41d5aacf3b24b229e23bee5543f9cff36ba8c9811.png)。因此下一项为![](assets-fenbi-77248/137227aa29acb0755e38e1535f189f1c69439f10a31f23b873a2ebfb07c9624b.png)。
+方法一：观察数列，有分数有整数，且分母出现倍数关系，结合选项，数列转换成分母都为60的分数数列，得到![](assets-fenbi-77248/f87ff2af4a12f33c0532451b6d6c792ddfb0d92f86d6fec019611576fe6c35b0.png)，![](assets-fenbi-77248/7349a86429156ab695accf5b6b5f570beacc147321ef4e35aac9ca7d7b716f99.png)，![](assets-fenbi-77248/280d56c33b30d62107799be1eddebfda35e71a2ba1c922838bf5c91f9d2dac89.png)，![](assets-fenbi-77248/a1b892f095c07d1ebfb601204af2f34f8f2f690d0cc47b99d88816133ab82557.png)，![](assets-fenbi-77248/459035a9a99baba557807ca342c3d45332e841d35ba3fba0013880649e824015.png)。分母相同，观察分子数列，作差得到60，30，20，15，两两之间能够约分，考虑作商，后一项除以前一项，得到1/2，2/3，![](assets-fenbi-77248/8277ae0b1ab3dd4930d57d85a422fbe8e9b7a722a29ae36d95fd02cc6cc548ff.png)，分子分母为连续自然数，则![](assets-fenbi-77248/33c2acbec2cb4906562d24e4b7e5e92a3b4b6b929cc0191a37e14356ca5827b3.png)，![](assets-fenbi-77248/8b5c46e826fc3b4f634a8cf41d5aacf3b24b229e23bee5543f9cff36ba8c9811.png)。因此下一项为![](assets-fenbi-77248/137227aa29acb0755e38e1535f189f1c69439f10a31f23b873a2ebfb07c9624b.png)。
 
-方法二：题目无解题思路，考虑作差。后一项减前一项，得到![](assets-fenbi-77248/fac5df0d9d3b359972fd5dafe116ccca8d2c7670ffb9f124564b4a38c182212f.png)，![](assets-fenbi-77248/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，![](assets-fenbi-77248/fe8a76297e8b61ff2bafa432e6386cfc4657cc50e3eba0011d604c8b102ee616.png)，![](assets-fenbi-77248/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)，分子相同，分母为连续自然数，因此![](assets-fenbi-77248/9d427ccd1b23244d8c37c92c168984d64b54bf64a48994dfbebf6a87c770a597.png)。
+方法二：题目无解题思路，考虑作差。后一项减前一项，得到![](assets-fenbi-77248/fac5df0d9d3b359972fd5dafe116ccca8d2c7670ffb9f124564b4a38c182212f.png)，1/2，1/3，![](assets-fenbi-77248/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)，分子相同，分母为连续自然数，因此![](assets-fenbi-77248/9d427ccd1b23244d8c37c92c168984d64b54bf64a48994dfbebf6a87c770a597.png)。
 
 故正确答案为B。
 
@@ -1027,13 +1027,13 @@ B
 
 ### 第 31 题
 
-![](assets-fenbi-77248/4491981e212ab6659caf4bc48335e41f40f5a4a4c6e0b3fe03551e90ed3d41b3.png)
+8/3, 3/2, 4, 2, 5, ()
 
 A. 3
 
 B. ![](assets-fenbi-77248/51a4fb71a22d609dc7becdd7ded0f2f1106f2cdf355ef2e979baa0b268232774.png)
 
-C. ![](assets-fenbi-77248/e0a25daf2b28e804d52a00c24832686a3cab6ca678061aa2eaedcb25516816b1.png)
+C. 12/5
 
 D. ![](assets-fenbi-77248/419b16984af42c6516bb672f2a3e98b7e24b42ca9a712eda0beef2ea2c07efba.png)
 
@@ -1105,13 +1105,13 @@ C
 
 ### 第 34 题
 
-![](assets-fenbi-77248/e76c068ab780284af8fb444f1571adbc21eeb17ee71841a2a757d992f44de7e5.png)，（）
+1/2, 1/6, 1/3, 2, 6, 3，（）
 
-A. ![](assets-fenbi-77248/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+A. 1/2
 
-B. ![](assets-fenbi-77248/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)
+B. 1/3
 
-C. ![](assets-fenbi-77248/7afd0046620668df56ad0d2555716a0734f042fe61c0548e10535b7b31bc8d0c.png)
+C. 1/6
 
 D. 2
 
@@ -1125,7 +1125,7 @@ A
 
 方法一：观察数列，发现数列后三项数字存在倍数关系，即![](assets-fenbi-77248/06151101c86a69bbdf0d951f5a33d0760869292ed6c49337dc03647128a8f39a.png)，推测规律为![](assets-fenbi-77248/4c5cca4f4dd37ccb3af69de5010a36c5026352d55fb00f08dbf3cb2bcc1de73f.png)。验证前几项数字，![](assets-fenbi-77248/be996ac1c62b4a36f85cf5b11e3e031735b075b0d251033804810805b8a1fa49.png)，![](assets-fenbi-77248/d3e9602b0d02f54c43b25f58083c2637d100b0395e34a3e5ab3930c1bbfd72b6.png)，![](assets-fenbi-77248/8e35b906e124e7f4fe0ea7b624837c281aae8632b79cdd17591898192b849aea.png)，符合该规律，推测正确。因此，![](assets-fenbi-77248/6443195cb4125c209bd70c6700e9f74341208ce9c11daa52f07cf504ef25af44.png)，![](assets-fenbi-77248/0292448cc2b1006b66e6b8f8342d15f7f9f14e0bd57570e94841dd9c6e4426fa.png)。
 
-方法二：观察数列，数列有分数和整数，将整数转换成分数形式，为![](assets-fenbi-77248/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，![](assets-fenbi-77248/6b735964be1220c5622c804775ca7123a68c30e0158c4dacd7e290716a4ce400.png)，![](assets-fenbi-77248/fe8a76297e8b61ff2bafa432e6386cfc4657cc50e3eba0011d604c8b102ee616.png)，![](assets-fenbi-77248/5d47535dedf47a91afeba25dd2f81a12b73d9d7fd75efe2f442b19566d4689a1.png)，![](assets-fenbi-77248/0a3fc4f906d517ed93e465e0aca70e23b3fec3027bc3ecade963d448ab2f4a97.png)，![](assets-fenbi-77248/7dbd73f2ec6c6775c97469857338eed4fb4cef3c986fb603504a354a9c8ecdf2.png)。后三项依次为前三项的倒数，因此下一项（第7项）应为2（第4项）的倒数，即![](assets-fenbi-77248/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)。
+方法二：观察数列，数列有分数和整数，将整数转换成分数形式，为1/2，![](assets-fenbi-77248/6b735964be1220c5622c804775ca7123a68c30e0158c4dacd7e290716a4ce400.png)，1/3，![](assets-fenbi-77248/5d47535dedf47a91afeba25dd2f81a12b73d9d7fd75efe2f442b19566d4689a1.png)，![](assets-fenbi-77248/0a3fc4f906d517ed93e465e0aca70e23b3fec3027bc3ecade963d448ab2f4a97.png)，![](assets-fenbi-77248/7dbd73f2ec6c6775c97469857338eed4fb4cef3c986fb603504a354a9c8ecdf2.png)。后三项依次为前三项的倒数，因此下一项（第7项）应为2（第4项）的倒数，即1/2。
 
 故正确答案为A。
 
@@ -1437,7 +1437,7 @@ A
 
 ### 第 46 题
 
-2014年父亲、母亲的年龄之和是年龄之差的23倍，年龄之差是儿子年龄的![](assets-fenbi-77248/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)，5年后母亲和儿子的年龄都是平方数。问2014年父亲的年龄是多少？（年龄都按整数计算）
+2014年父亲、母亲的年龄之和是年龄之差的23倍，年龄之差是儿子年龄的1/5，5年后母亲和儿子的年龄都是平方数。问2014年父亲的年龄是多少？（年龄都按整数计算）
 
 A. 36岁
 

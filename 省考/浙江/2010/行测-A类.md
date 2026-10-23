@@ -2277,7 +2277,7 @@ A
 
 **解析**
 
-方法一：数列无明显特征，作差后无规律，考虑作和。前项加后项得到新数列：384，192，96，48，（ ），是公比为![](assets-fenbi-163/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)的等比数列，则新数列下一项为![](assets-fenbi-163/bd540eaa2b06ceec86b1c8f469ee1d2e29ae442107b9c2562f98040d92a69eb7.png)。故所求项为24-(-36)=60。
+方法一：数列无明显特征，作差后无规律，考虑作和。前项加后项得到新数列：384，192，96，48，（ ），是公比为1/2的等比数列，则新数列下一项为![](assets-fenbi-163/bd540eaa2b06ceec86b1c8f469ee1d2e29ae442107b9c2562f98040d92a69eb7.png)。故所求项为24-(-36)=60。
 
 方法二：数列无明显特征，作差后无规律，考虑递推。观察发现：![](assets-fenbi-163/fe4f096ba36d8148d6540a4c6c8a76452b41b530dfff476e0e78c78132d60ddd.png)，![](assets-fenbi-163/733e1d11b209236fb420b5fda97880ca26efd00c39dac6835c0d308c54272ffa.png)，![](assets-fenbi-163/49a7d6fb24ac09c1234fe30e6d5232edd6233f6a53a877247a6dd9191e6d465e.png)，即规律为：![](assets-fenbi-163/8429082ab9fac3042aeecce0a3717c6802bca73ff86ebd93a5b4177098d81b3c.png)![](assets-fenbi-163/b0f5acce637fc9b5990b4e4445094fdafd65a6324206192eef71ed165c1fd290.png)。则所求项为![](assets-fenbi-163/2f011602882987f52ae3e40fb1b81e85691845872ee72ed989a9dc318b590e81.png)。
 
@@ -2305,7 +2305,7 @@ C
 
 **解析**
 
-数列无明显特征，优先考虑作差。后项减前项得到新数列：-108，-36，-12，（ ），是公比为![](assets-fenbi-163/1d273b2122aaf21895018ee410e0cc1fe872be411377d6cb330f4f09d8ec86fe.png)的等比数列，则新数列的下一项为![](assets-fenbi-163/2254ab67c9184ca25f780629739df607f1bd766803f1c85b1a3f0c2a6105a33c.png)，故所求项为-104+(-4)=-108。
+数列无明显特征，优先考虑作差。后项减前项得到新数列：-108，-36，-12，（ ），是公比为1/3的等比数列，则新数列的下一项为![](assets-fenbi-163/2254ab67c9184ca25f780629739df607f1bd766803f1c85b1a3f0c2a6105a33c.png)，故所求项为-104+(-4)=-108。
 
 故正确答案为C。
 
@@ -2391,7 +2391,7 @@ B
 
 ### 第 71 题
 
-12，-4，8，-32，-24，768，![](assets-fenbi-163/1abbe2a47ec6ce22a1130150c4b5d45dd2e0ca44f681378a7bc5941f6bc6a161.png)。
+12，-4，8，-32，-24，768，()。
 
 A. 432
 
@@ -2417,7 +2417,7 @@ C
 
 ### 第 72 题
 
-5，3，![](assets-fenbi-163/b40ae7817deca0a573a2397a9408715b55499cd33f3b96188b056005e2f1bef9.png)，2，![](assets-fenbi-163/f6164bdbfa2fdd64d20d9a2c341482ba178d45a821f80fa1d7a2756e75756093.png)，![](assets-fenbi-163/5d26f60734f630fb24cc10b0cd6a3737a88f51b33a2df45378925b0c862e5f51.png)，（ ）。
+5，3，![](assets-fenbi-163/b40ae7817deca0a573a2397a9408715b55499cd33f3b96188b056005e2f1bef9.png)，2，9/5，5/3，（ ）。
 
 A. ![](assets-fenbi-163/c30284a0407621073816fbe05b8ca05dabcd8a6f493be8bb5e8661bc959786ab.png)
 
@@ -2435,7 +2435,7 @@ B
 
 **解析**
 
-观察数列，题干和选项中均有分数，优先考虑分数数列。反约分后，原数列可转化为：![](assets-fenbi-163/9e2d699f32b461f72af83e86d5ce906c2b47610d34762e3a3cb7a2c1376c9152.png)、![](assets-fenbi-163/5e200ff879692e8a768fe87308f809960cfcb43d115a0f1e298ea86a908a7958.png)、![](assets-fenbi-163/b40ae7817deca0a573a2397a9408715b55499cd33f3b96188b056005e2f1bef9.png)、![](assets-fenbi-163/c4c95fe0dc0ec6bfb6c64b0eef1217f029d19684b8b124c4024e9d56427c8a25.png)、![](assets-fenbi-163/f6164bdbfa2fdd64d20d9a2c341482ba178d45a821f80fa1d7a2756e75756093.png)、![](assets-fenbi-163/b7aba69f5e4e4f0ae559cdc11093ad63164cd3bafcf21ff6ea99b340e1a5babf.png)，分子分母都为自然数列，所以下一项为![](assets-fenbi-163/6dfaf0e35673ff6313247a498deeedd1385eef0f4f823ffd317e53515671009c.png)。
+观察数列，题干和选项中均有分数，优先考虑分数数列。反约分后，原数列可转化为：![](assets-fenbi-163/9e2d699f32b461f72af83e86d5ce906c2b47610d34762e3a3cb7a2c1376c9152.png)、![](assets-fenbi-163/5e200ff879692e8a768fe87308f809960cfcb43d115a0f1e298ea86a908a7958.png)、![](assets-fenbi-163/b40ae7817deca0a573a2397a9408715b55499cd33f3b96188b056005e2f1bef9.png)、![](assets-fenbi-163/c4c95fe0dc0ec6bfb6c64b0eef1217f029d19684b8b124c4024e9d56427c8a25.png)、9/5、10/6，分子分母都为自然数列，所以下一项为![](assets-fenbi-163/6dfaf0e35673ff6313247a498deeedd1385eef0f4f823ffd317e53515671009c.png)。
 
 故正确答案为B。
 
@@ -2751,7 +2751,7 @@ C
 
 **解析**
 
-四边形EBCD与三角形AED的面积之比为3:2，则三角形ABC与三角形AED的面积之比为5:2。已知AD的长度是CD的2倍，则AD的长度是AC的![](assets-fenbi-163/e0339018eac61804f8a29187660145f8cf9a36f99a993f4d7c65bd28a99e96b8.png)。作![](assets-fenbi-163/a389b51260e6bbf78f4e52736b2c7607aa8685c1d90283863a9337779531d87f.png)垂直AB于点![](assets-fenbi-163/b7bf55ea94f0972b2f3d153b8c4e6f8784907596921474459157dd9e4553c536.png)，则![](assets-fenbi-163/fd4ff18bca067d50ea76fba970f8226c926d5d2ab70b4695334f9132b0786938.png)（相似三角形原理），三角形ABC的面积＝![](assets-fenbi-163/1ba9ae4b4430a28dc553a43d8f7d06054662d56a7c82e7cbce92684b1d0a0307.png)，三角形AED的面积＝![](assets-fenbi-163/84d35e4552a06a35c2fd146eebeb33718988b5e385be2b560f163d3edd167f6e.png)代入之前的比例式，可得![](assets-fenbi-163/bef30bf981d487bb09fed1f84d7b2f206596f0ae33bdcf5b720892dd64c40a9f.png)。
+四边形EBCD与三角形AED的面积之比为3:2，则三角形ABC与三角形AED的面积之比为5:2。已知AD的长度是CD的2倍，则AD的长度是AC的2/3。作![](assets-fenbi-163/a389b51260e6bbf78f4e52736b2c7607aa8685c1d90283863a9337779531d87f.png)垂直AB于点![](assets-fenbi-163/b7bf55ea94f0972b2f3d153b8c4e6f8784907596921474459157dd9e4553c536.png)，则![](assets-fenbi-163/fd4ff18bca067d50ea76fba970f8226c926d5d2ab70b4695334f9132b0786938.png)（相似三角形原理），三角形ABC的面积＝![](assets-fenbi-163/1ba9ae4b4430a28dc553a43d8f7d06054662d56a7c82e7cbce92684b1d0a0307.png)，三角形AED的面积＝![](assets-fenbi-163/84d35e4552a06a35c2fd146eebeb33718988b5e385be2b560f163d3edd167f6e.png)代入之前的比例式，可得![](assets-fenbi-163/bef30bf981d487bb09fed1f84d7b2f206596f0ae33bdcf5b720892dd64c40a9f.png)。
 
 ![](assets-fenbi-163/7fa7ab67e489953629d8bfba101197e6b86ad6ee755283d0ce8facd8895147a2.png)
 

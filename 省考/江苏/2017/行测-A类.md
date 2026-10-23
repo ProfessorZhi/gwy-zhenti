@@ -869,7 +869,7 @@ A、C、D三项：均未涉及文段核心概念“制度、体系、机制”�
 
 ### 第 25 题
 
-结核病是由结核分枝杆菌引起的慢性传染病，可侵及许多脏器，以肺部结核最为常见。世界上约有![](assets-fenbi-77306/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)的人口感染了结核杆菌，其中有大约![](assets-fenbi-77306/5372071d7b77f1b31d6b33959bed4e8d5ee386710f689e4d5b8d7fc4f1273305.png)会发展成结核病。对于艾滋病病毒携带者、营养不良或糖尿病等免疫系统受损的人，或者烟草使用者，结核杆菌容易在体内大量复制，患病风险就会高很多。
+结核病是由结核分枝杆菌引起的慢性传染病，可侵及许多脏器，以肺部结核最为常见。世界上约有1/3的人口感染了结核杆菌，其中有大约![](assets-fenbi-77306/5372071d7b77f1b31d6b33959bed4e8d5ee386710f689e4d5b8d7fc4f1273305.png)会发展成结核病。对于艾滋病病毒携带者、营养不良或糖尿病等免疫系统受损的人，或者烟草使用者，结核杆菌容易在体内大量复制，患病风险就会高很多。
 
 下列说法不符合文意的是：
 
@@ -889,7 +889,7 @@ D
 
 **解析**
 
-A项：由“世界上约有![](assets-fenbi-77306/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)的人口感染了结核菌，其中有 5% ～ 10%会发展成结核病”可知，很多人感染结核菌后并不发病，表述与文意相符，排除。
+A项：由“世界上约有1/3的人口感染了结核菌，其中有 5% ～ 10%会发展成结核病”可知，很多人感染结核菌后并不发病，表述与文意相符，排除。
 
 B项：由“对于艾滋病病毒携带者······高很多”可知，身体虚弱者患病的可能性高， 表述与文意相符，排除。
 
@@ -1965,7 +1965,7 @@ D
 
 **解析**
 
-题干无明显特征，考虑作差。后项减前项得到新数列：1，2，9，64，出现9和64考虑幂次数列，可将新数列转化为![](assets-fenbi-77306/78dc3e42d9f26960e8f72bdc60a609a7caea0e5b0b52510e0fa5f48730eef1a7.png) ，![](assets-fenbi-77306/72e3227e768258fe4d5eef5acbcb4286800fc0a79808482b452ec6a0efc36f06.png)，![](assets-fenbi-77306/22d6bf8013d449add3713d64aba73fa59a6c667068989d1c90362bfdfe4d785f.png) ，![](assets-fenbi-77306/a517cfa05d65a3b97f0dfa75e4bc27d4fa93a36c71a318d2867783ee2a4cd5d4.png)，故新数列的下一项应为![](assets-fenbi-77306/ebeb6954f48bce06983575add800137bc361c055c419509242cddf1be9a61e78.png)，所求项为：![](assets-fenbi-77306/6dd57a5091a38627f4b28e83fa2bfcf30688b8fa7621bddc04e5647a770ac1d2.png)，计算尾数为5，只有D项符合 。
+题干无明显特征，考虑作差。后项减前项得到新数列：1，2，9，64，出现9和64考虑幂次数列，可将新数列转化为![](assets-fenbi-77306/78dc3e42d9f26960e8f72bdc60a609a7caea0e5b0b52510e0fa5f48730eef1a7.png) ，![](assets-fenbi-77306/72e3227e768258fe4d5eef5acbcb4286800fc0a79808482b452ec6a0efc36f06.png)，3^2 ，![](assets-fenbi-77306/a517cfa05d65a3b97f0dfa75e4bc27d4fa93a36c71a318d2867783ee2a4cd5d4.png)，故新数列的下一项应为![](assets-fenbi-77306/ebeb6954f48bce06983575add800137bc361c055c419509242cddf1be9a61e78.png)，所求项为：![](assets-fenbi-77306/6dd57a5091a38627f4b28e83fa2bfcf30688b8fa7621bddc04e5647a770ac1d2.png)，计算尾数为5，只有D项符合 。
 
 故正确答案为D。
 
@@ -1999,7 +1999,7 @@ C
 
 ### 第 59 题
 
-![](assets-fenbi-77306/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-77306/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，![](assets-fenbi-77306/f61d9565f49d10c1a519f2e60ab41669a2f25bc5ba86c11930274bf065fb5585.png)，![](assets-fenbi-77306/b17149ff327c3bd4e80514e9b917352246431aa815ae025e96d73e8735825ee1.png)，![](assets-fenbi-77306/1f6fbbb5f8b7e468c7be8f222af954c97cb4deaae46a19fd12f359acfb42c029.png)，（ ）
+1/3，1/2，3/7，5/11，4/9，（ ）
 
 A. ![](assets-fenbi-77306/eb5db323aafa3e747878ec5a98332c6e95e7f72648b2225d9aa1886522afad6b.png)
 
@@ -2017,7 +2017,7 @@ A
 
 **解析**
 
-题干为分数数列、且变化趋势不单调，先考虑反约分，得到新数列：![](assets-fenbi-77306/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)、![](assets-fenbi-77306/8b5be42375e5e093dedd8d709be117ca843e5d63d861802d3b01f3453b3da0db.png)、![](assets-fenbi-77306/f61d9565f49d10c1a519f2e60ab41669a2f25bc5ba86c11930274bf065fb5585.png)、![](assets-fenbi-77306/b17149ff327c3bd4e80514e9b917352246431aa815ae025e96d73e8735825ee1.png)、![](assets-fenbi-77306/37c5d11cfbf4c8791de4f66f147c74f57963ca9d26633c23539fe68fe4359ed6.png)，然后单独看分母和分子。分母成新数列3、4、7、11、18，由3+4=7，4+7=11，，7+11=18可知前两项之和等于第三项，故下一项分母为11+18=29。分子成新数列1、2、3、5、8，由1+2=3，2+3=5可知前两项之和等于第三项，故下一项分子为5+8=13。故所求项为![](assets-fenbi-77306/eb5db323aafa3e747878ec5a98332c6e95e7f72648b2225d9aa1886522afad6b.png)。
+题干为分数数列、且变化趋势不单调，先考虑反约分，得到新数列：1/3、![](assets-fenbi-77306/8b5be42375e5e093dedd8d709be117ca843e5d63d861802d3b01f3453b3da0db.png)、3/7、5/11、![](assets-fenbi-77306/37c5d11cfbf4c8791de4f66f147c74f57963ca9d26633c23539fe68fe4359ed6.png)，然后单独看分母和分子。分母成新数列3、4、7、11、18，由3+4=7，4+7=11，，7+11=18可知前两项之和等于第三项，故下一项分母为11+18=29。分子成新数列1、2、3、5、8，由1+2=3，2+3=5可知前两项之和等于第三项，故下一项分子为5+8=13。故所求项为![](assets-fenbi-77306/eb5db323aafa3e747878ec5a98332c6e95e7f72648b2225d9aa1886522afad6b.png)。
 
 故正确答案为A。
 
@@ -2025,7 +2025,7 @@ A
 
 ### 第 60 题
 
-1，![](assets-fenbi-77306/d8504afd754bde7d9abf9cfd08986e0505048bfd840496f6703705a2cb82df06.png)，1，![](assets-fenbi-77306/eec733e1a9470ffec56c28a621da58e1530aad856b0a90b580b57be8c0bb8935.png)，![](assets-fenbi-77306/9984008fe9f2b78b4a7ac8cd707a4af658fcf3b17ea4b4ce970be18830742cd4.png)，（ ）
+1，√3/2，1，√30/4，√(21/5)，（ ）
 
 A. ![](assets-fenbi-77306/3a350f09cb2ef81047151676279341299d533e936230d3c3010a33f9a304f324.png)
 
@@ -2107,7 +2107,7 @@ A
 
 ### 第 63 题
 
-A、B两个容器装有质量相同的酒精溶液，若从A、B中各取一半溶液，混合后浓度为45%；若从A中取![](assets-fenbi-77306/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)、B中取![](assets-fenbi-77306/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)溶液，混合后浓度为40%。若从A中取![](assets-fenbi-77306/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)、B中取![](assets-fenbi-77306/ac9ac18eca77fa3364361ddb358500e653ad4274f5a1b391b37879e5e3a2d024.png)溶液，则混合后溶液的浓度是：
+A、B两个容器装有质量相同的酒精溶液，若从A、B中各取一半溶液，混合后浓度为45%；若从A中取1/2、B中取1/4溶液，混合后浓度为40%。若从A中取1/5、B中取![](assets-fenbi-77306/ac9ac18eca77fa3364361ddb358500e653ad4274f5a1b391b37879e5e3a2d024.png)溶液，则混合后溶液的浓度是：
 
 A. 48%
 
@@ -2141,7 +2141,7 @@ C
 
 （40%-a）×2=b-40%···②
 
-由①、②可得a=30%，b=60%，因此若从A中取![](assets-fenbi-77306/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)、B中取![](assets-fenbi-77306/ac9ac18eca77fa3364361ddb358500e653ad4274f5a1b391b37879e5e3a2d024.png)溶液，可得![](assets-fenbi-77306/592209101493da3c2178083dec905753f0ab662e44767930ff02887bd2d5a158.png)。
+由①、②可得a=30%，b=60%，因此若从A中取1/5、B中取![](assets-fenbi-77306/ac9ac18eca77fa3364361ddb358500e653ad4274f5a1b391b37879e5e3a2d024.png)溶液，可得![](assets-fenbi-77306/592209101493da3c2178083dec905753f0ab662e44767930ff02887bd2d5a158.png)。
 
 故正确答案为C。
 
@@ -2687,7 +2687,7 @@ D项：位置1、8的符号相同，位置2、7的符号相同，位置4、6的�
 
 ### 第 80 题
 
-![](assets-fenbi-77306/80c15afd284db6ab85135042919ca535623298f39feff6c2ef02b01920f70681.png)
+龙99×3&ssW
 
 A. ![](assets-fenbi-77306/08c00ec1714bbb4a7a808d8c35eed68b72267e1e39c3bdee850f7077de20c502.png)
 

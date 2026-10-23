@@ -1699,7 +1699,7 @@ B
 
 **解析**
 
-观察数列，相邻两项之间存在明显的倍数关系，优先考虑作商数列。后一项除以前一项得到新数列：![](assets-fenbi-4162243/1d273b2122aaf21895018ee410e0cc1fe872be411377d6cb330f4f09d8ec86fe.png)，![](assets-fenbi-4162243/e0339018eac61804f8a29187660145f8cf9a36f99a993f4d7c65bd28a99e96b8.png)，1，![](assets-fenbi-4162243/cade316a6d5559f562a64b8d9da949b5279e120c40e188b18fa7b8e381f49a24.png)，（ ），是公差为![](assets-fenbi-4162243/1d273b2122aaf21895018ee410e0cc1fe872be411377d6cb330f4f09d8ec86fe.png)的等差数列，则下一项为![](assets-fenbi-4162243/cae363c18a43515ee1dd3bafe246157f32c7454d056a8f13dfe4baa12f6b6deb.png)。故题干所求项为![](assets-fenbi-4162243/da79a21013de060b0ccdbb643a1a7352f53a07fe5002533afa8b10af87c4ce03.png)。
+观察数列，相邻两项之间存在明显的倍数关系，优先考虑作商数列。后一项除以前一项得到新数列：1/3，2/3，1，4/3，（ ），是公差为1/3的等差数列，则下一项为![](assets-fenbi-4162243/cae363c18a43515ee1dd3bafe246157f32c7454d056a8f13dfe4baa12f6b6deb.png)。故题干所求项为![](assets-fenbi-4162243/da79a21013de060b0ccdbb643a1a7352f53a07fe5002533afa8b10af87c4ce03.png)。
 
 故正确答案为B。
 
@@ -1733,7 +1733,7 @@ A
 
 ### 第 49 题
 
-![](assets-fenbi-4162243/3fc52ed1bce7729942c3adbd736c20d6b1a9fb1c7c885d875b9e70063b2a1e94.png)，![](assets-fenbi-4162243/baa7a2d21175cac389e3d1e025c899ca4332b1269ee8006c7fac366f017c78ef.png)，9，18，![](assets-fenbi-4162243/a6b97f51003845770bf3012aee53c793977f9e19e639bb8b8cd4fdc22c75281c.png)，（ ）
+√3，3√2，9，18，9√15，（ ）
 
 A. 27
 
@@ -1751,7 +1751,7 @@ C
 
 **解析**
 
-方法一：观察数列，出现根号，将原数列统一转化为根号形式：![](assets-fenbi-4162243/3fc52ed1bce7729942c3adbd736c20d6b1a9fb1c7c885d875b9e70063b2a1e94.png)，![](assets-fenbi-4162243/40a3d58201e1e2c0bb07a2a6f79bbacbd0c7d5f8695fac7b0afafcb9df60e968.png)，![](assets-fenbi-4162243/a4f0517e6e5d03546db216b3901bae01a93cc992c66d24ffd8f4cacd4a07e26f.png)，![](assets-fenbi-4162243/bdc57d9c25b3e02731498178e53520acee023ac291f76fff334d680ca38865ee.png)，![](assets-fenbi-4162243/9aeb2a12e9df3b484cd9cdeae0098d6a31af7885acd09b25d6e2120293c9c1c2.png)，（ ），根号内数字变化趋势较大，可以考虑拆分。则原数列可转化为![](assets-fenbi-4162243/3474f121c1b7b99539be9dd27e89b163edcfddd1b83df3efa6efd85981e42feb.png)，![](assets-fenbi-4162243/62562060d43ad8742a113020e2ec963e221574d47acabb363426a3da887ad8bd.png)，![](assets-fenbi-4162243/8a8989d3b0a35987aaee166f64aef88bc83c923015fd7367a3686f6dfaf63e1a.png)，![](assets-fenbi-4162243/905b4bdff76b97d25d1deb7bcf2ad07f3b07a5646423a368316faa1715a89c16.png)，![](assets-fenbi-4162243/3d5a206ad5740598fc6664a9d31a2a1b6796bbf925ada3c77c44ecf619077e6a.png)，（ ）。根号内数列的左子列分别为1，2，3，4，5，（ ），是自然数数列，则下一项为6；右子列分别为3，9，27，81，243，（ ），是公比为3的等比数列，则下一项为![](assets-fenbi-4162243/b0922599069c655a04b163a4462a6eb2c3eaa85da65d1702675c8bd0cef9eb95.png)。故题干所求项为![](assets-fenbi-4162243/0b2d2e2d4bcb43248339960a01f327f9652805d8fa8d0bf67e11b841c7fb5180.png)。
+方法一：观察数列，出现根号，将原数列统一转化为根号形式：√3，![](assets-fenbi-4162243/40a3d58201e1e2c0bb07a2a6f79bbacbd0c7d5f8695fac7b0afafcb9df60e968.png)，![](assets-fenbi-4162243/a4f0517e6e5d03546db216b3901bae01a93cc992c66d24ffd8f4cacd4a07e26f.png)，![](assets-fenbi-4162243/bdc57d9c25b3e02731498178e53520acee023ac291f76fff334d680ca38865ee.png)，![](assets-fenbi-4162243/9aeb2a12e9df3b484cd9cdeae0098d6a31af7885acd09b25d6e2120293c9c1c2.png)，（ ），根号内数字变化趋势较大，可以考虑拆分。则原数列可转化为![](assets-fenbi-4162243/3474f121c1b7b99539be9dd27e89b163edcfddd1b83df3efa6efd85981e42feb.png)，![](assets-fenbi-4162243/62562060d43ad8742a113020e2ec963e221574d47acabb363426a3da887ad8bd.png)，![](assets-fenbi-4162243/8a8989d3b0a35987aaee166f64aef88bc83c923015fd7367a3686f6dfaf63e1a.png)，![](assets-fenbi-4162243/905b4bdff76b97d25d1deb7bcf2ad07f3b07a5646423a368316faa1715a89c16.png)，![](assets-fenbi-4162243/3d5a206ad5740598fc6664a9d31a2a1b6796bbf925ada3c77c44ecf619077e6a.png)，（ ）。根号内数列的左子列分别为1，2，3，4，5，（ ），是自然数数列，则下一项为6；右子列分别为3，9，27，81，243，（ ），是公比为3的等比数列，则下一项为![](assets-fenbi-4162243/b0922599069c655a04b163a4462a6eb2c3eaa85da65d1702675c8bd0cef9eb95.png)。故题干所求项为![](assets-fenbi-4162243/0b2d2e2d4bcb43248339960a01f327f9652805d8fa8d0bf67e11b841c7fb5180.png)。
 
 方法二：数列局部之间存在明显的倍数关系，优先考虑作商数列。后一项除以前一项得到新数列：![](assets-fenbi-4162243/4616e10cd511e1413240e8229a4dd7526347d35ca40b1fd1964713a99898e981.png)，![](assets-fenbi-4162243/1371b23a7459642b6c122eba94cb1d284e95a0940bff6f750eaf5b7d83bb47d9.png)，2，![](assets-fenbi-4162243/53dc7d01291d0e0822f51aae46e8163dc97730b77e2fb098fe7f212b73eb3072.png)，（ ），进一步可转化为![](assets-fenbi-4162243/a87b85bdfffeaa8f9c51af7a3633e24a647d103c5254c5e53686f8d68500830b.png)，![](assets-fenbi-4162243/1371b23a7459642b6c122eba94cb1d284e95a0940bff6f750eaf5b7d83bb47d9.png)，![](assets-fenbi-4162243/662e2cc01fb647b2ea02395274660fd2672924d34c315dba35087a9befda2ce3.png)，![](assets-fenbi-4162243/7b8aeffad28bd048f5b5ff4731e3ad51ab0498383540c8806663e5bbe01f9125.png)，（ ）。根号内分母部分分别为1，2，3，4，（ ），是自然数数列，则下一项分母部分为5；根号内分子部分分别为6，9，12，15，（ ），是公差为3的等差数列，则下一项分子部分为15+3=18。因此新数列下一项为![](assets-fenbi-4162243/00ad58db10961f109c88728afc3721f1821becf5f50ff6d52c4a7139a3f11ec2.png)。故题干所求项为![](assets-fenbi-4162243/5bd6be88cc2a958065e7190aed93299e7a4d60202e0e33df318214420e699c35.png)。
 
@@ -1761,7 +1761,7 @@ C
 
 ### 第 50 题
 
-![](assets-fenbi-4162243/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)，![](assets-fenbi-4162243/d6566b693400a0cb26112097a11adfa4ef2e6cf3c9e8585dad8a1efdd0920578.png)，![](assets-fenbi-4162243/8f138e3e873af28e05bbab3e90272f16797dd098c55fb866d8d98601c7962b4e.png)，![](assets-fenbi-4162243/16bd34931b0a7489406c486c551aeb81e3b841a86c5073d85109af0e71699504.png)，![](assets-fenbi-4162243/5dfc9080c5dd0c29b981ea7c68752de416a191bbe6c759751bbbf32c50bc69ca.png)，（ ）。
+1/2，1/5，5/7，7/17，23/25，（ ）。
 
 A. ![](assets-fenbi-4162243/7f36aaf016033d6a9af9e92895076026ed1be275e3731fbc717e5d303a8cb8ad.png)
 
@@ -2185,7 +2185,7 @@ C
 
 ![](assets-fenbi-4162243/cce72336b4eca5906114dfa438efed99e230309ddf455e6b36486d8327f15d87.png)
 
-A. ![](assets-fenbi-4162243/5b1424906de5785fa85ebbe6ba9bdaff5305896b0853749e051e7d61dc04b269.png)
+A. π
 
 B. ![](assets-fenbi-4162243/46a897e1c49317009bbc869a124be3122a0e11385543cf0bc44268d0253599a3.png)
 

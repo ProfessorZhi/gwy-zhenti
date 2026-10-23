@@ -1097,7 +1097,7 @@ C
 
 ### 第 32 题
 
-![](assets-fenbi-76028/d7fc7818f003a9afe95598cbff9a6e1756a189ebe55683b2ca77f2a48b6bcbe8.png)
+8,4,6,15,52 1/2,()
 
 A. ![](assets-fenbi-76028/60d97ef5eebb15d2d01d07624540c3df996e519cfc6f8d81d6342628b8e5390c.png)
 
@@ -1115,7 +1115,7 @@ B
 
 **解析**
 
-观察数列，数字两两之间都能够约分，考虑作商数列。后一项除以前一项，得到![](assets-fenbi-76028/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，![](assets-fenbi-76028/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-76028/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)，![](assets-fenbi-76028/313dc07bc2941bec338e5554c1b4bf00d8600f59c7d25780802ba5e823d46855.png)，为公差为1的等差数列。因此![](assets-fenbi-76028/31fc6d7b2b04ec85f2413c6e34bb4ff1e67ff1eeb5fc11b003d33faf2ae08b38.png)。
+观察数列，数字两两之间都能够约分，考虑作商数列。后一项除以前一项，得到1/2，3/2，5/2，7/2，为公差为1的等差数列。因此![](assets-fenbi-76028/31fc6d7b2b04ec85f2413c6e34bb4ff1e67ff1eeb5fc11b003d33faf2ae08b38.png)。
 
 故正确答案为B。
 
@@ -1175,7 +1175,7 @@ A
 
 ### 第 35 题
 
-0，1，![](assets-fenbi-76028/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-76028/174b76a215911f342440fe458a836438c29b20bfa78189c435475bbc9bf4528d.png)，![](assets-fenbi-76028/82501bb386e751c5a057932ff5f61949bde690562d381054958c72b2fd107b1a.png)，( )
+0，1，3/2，11/6，25/12，( )
 
 A. ![](assets-fenbi-76028/a519242df66478d09ab557e78c8a7ac27134e905f392734de64008bd99668f21.png)
 
@@ -1193,9 +1193,9 @@ B
 
 **解析**
 
-方法一：观察数列，有分数有整数，且分母出现倍数关系，结合选项，数列转换成分母都为60的分数数列，得到![](assets-fenbi-76028/21a3a7db343ac20e132610566e22408f7572650d7825b3befa4cb1470d64114c.png)，![](assets-fenbi-76028/1fd0c6e03f001d79c424681d146813b483b4e531bc62afa85564e76eff37f0d7.png)，![](assets-fenbi-76028/ae01dcca4adc3fb410cc5f3e47f93d76dd78ef00ef6c731387a3ce332760c75c.png)，![](assets-fenbi-76028/d936db8c1bfe26a579f94127484402e60c12af2c817d0c127c52dbb8a6a88c4e.png)，![](assets-fenbi-76028/283cc2b46ce1a3a3c9f41ab3684610a4ff5dbd57280166e6a3101c08af373213.png)。分母相同，观察分子数列，作差得到60，30，20，15，两两之间能够约分，考虑作商，后一项除以前一项，得到![](assets-fenbi-76028/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，![](assets-fenbi-76028/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)，![](assets-fenbi-76028/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)，分子分母为连续自然数，则![](assets-fenbi-76028/a7ceaea4b79717a4d8dbb24435eb6f74acfdab00753db781326480a6eebdf98a.png)，![](assets-fenbi-76028/5ae158572f0dfbd0d63a6f6226f10eacbebbc249ca0ad7f07cef57e098c58c14.png)。因此下一项为![](assets-fenbi-76028/7ed2cdd9de5b21fa38a414e85516173bdd91badb1665b2cc3b240229da759261.png)。
+方法一：观察数列，有分数有整数，且分母出现倍数关系，结合选项，数列转换成分母都为60的分数数列，得到![](assets-fenbi-76028/21a3a7db343ac20e132610566e22408f7572650d7825b3befa4cb1470d64114c.png)，![](assets-fenbi-76028/1fd0c6e03f001d79c424681d146813b483b4e531bc62afa85564e76eff37f0d7.png)，![](assets-fenbi-76028/ae01dcca4adc3fb410cc5f3e47f93d76dd78ef00ef6c731387a3ce332760c75c.png)，![](assets-fenbi-76028/d936db8c1bfe26a579f94127484402e60c12af2c817d0c127c52dbb8a6a88c4e.png)，![](assets-fenbi-76028/283cc2b46ce1a3a3c9f41ab3684610a4ff5dbd57280166e6a3101c08af373213.png)。分母相同，观察分子数列，作差得到60，30，20，15，两两之间能够约分，考虑作商，后一项除以前一项，得到1/2，2/3，3/4，分子分母为连续自然数，则![](assets-fenbi-76028/a7ceaea4b79717a4d8dbb24435eb6f74acfdab00753db781326480a6eebdf98a.png)，![](assets-fenbi-76028/5ae158572f0dfbd0d63a6f6226f10eacbebbc249ca0ad7f07cef57e098c58c14.png)。因此下一项为![](assets-fenbi-76028/7ed2cdd9de5b21fa38a414e85516173bdd91badb1665b2cc3b240229da759261.png)。
 
-方法二：题目无解题思路，考虑作差。后一项减前一项，得到![](assets-fenbi-76028/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)，![](assets-fenbi-76028/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，![](assets-fenbi-76028/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-76028/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)，分子相同，分母为连续自然数，因此![](assets-fenbi-76028/61549eaf035b8af9d1026cff923130bcaef32ae1961d75494a4e4a45e538fc16.png)。
+方法二：题目无解题思路，考虑作差。后一项减前一项，得到![](assets-fenbi-76028/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)，1/2，1/3，1/4，分子相同，分母为连续自然数，因此![](assets-fenbi-76028/61549eaf035b8af9d1026cff923130bcaef32ae1961d75494a4e4a45e538fc16.png)。
 
 故正确答案为B。
 
@@ -1481,7 +1481,7 @@ A
 
 ### 第 46 题
 
-2014年父亲、母亲的年龄之和是年龄之差的23倍，年龄之差是儿子年龄的![](assets-fenbi-76028/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)，5年后母亲和儿子的年龄都是平方数。问2014年父亲的年龄是多少？（年龄都按整数计算）
+2014年父亲、母亲的年龄之和是年龄之差的23倍，年龄之差是儿子年龄的1/5，5年后母亲和儿子的年龄都是平方数。问2014年父亲的年龄是多少？（年龄都按整数计算）
 
 A. 36岁
 
@@ -1499,7 +1499,7 @@ D
 
 **解析**
 
-由2014年父母年龄之差是儿子年龄的![](assets-fenbi-76028/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)，可得儿子的年龄是5的倍数，而5年后儿子的年龄也必然是5的倍数，是5的倍数且为平方数的只能为25，则可得到2014年儿子的年龄为20岁，父母年龄差即![](assets-fenbi-76028/e5cf460301e022cd9c9e53651a8212957ea5b1461d36efb0cc9854ba3d213027.png)，年龄和为4×23=92岁，假设父亲年龄比母亲年龄大，则可得父亲年龄-母亲年龄=4，可得父亲年龄=48岁，母亲年龄=44岁，5年后母亲年龄为49岁，是平方数，满足条件。
+由2014年父母年龄之差是儿子年龄的1/5，可得儿子的年龄是5的倍数，而5年后儿子的年龄也必然是5的倍数，是5的倍数且为平方数的只能为25，则可得到2014年儿子的年龄为20岁，父母年龄差即![](assets-fenbi-76028/e5cf460301e022cd9c9e53651a8212957ea5b1461d36efb0cc9854ba3d213027.png)，年龄和为4×23=92岁，假设父亲年龄比母亲年龄大，则可得父亲年龄-母亲年龄=4，可得父亲年龄=48岁，母亲年龄=44岁，5年后母亲年龄为49岁，是平方数，满足条件。
 
 故正确答案为D。
 

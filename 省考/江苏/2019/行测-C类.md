@@ -545,7 +545,7 @@ B项正确，由于太阳辐射和重力作用，地球上存在水循环。地�
 
 C项正确，地球上水的存在形态有三种：固态、液态、气态。大部分以液态的形态存在；在寒冷的极地和高山上水常常以固态的形态存在；空气中的水主要以气态的形态存在。自然界的水随着温度的改变，状态也会发生变化。
 
-D项错误，冰川水是地球上最宝贵、最丰富的淡水资源，蕴藏了所有淡水资源的![](assets-fenbi-89294/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)。但多处于极端的特殊地理位置，要么在南极、北极，要么在极高山上，所以冰川水具有极高的价值，但开采条件极其艰难。
+D项错误，冰川水是地球上最宝贵、最丰富的淡水资源，蕴藏了所有淡水资源的2/3。但多处于极端的特殊地理位置，要么在南极、北极，要么在极高山上，所以冰川水具有极高的价值，但开采条件极其艰难。
 
 本题为选非题，故正确答案为D。
 
@@ -1605,7 +1605,7 @@ B
 
 **解析**
 
-数列相邻项存在明显的倍数关系，优先考虑作商。后项÷前项，可得：![](assets-fenbi-89294/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)、![](assets-fenbi-89294/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)、1、2、（ ），新数列是公比为2的等比数列，则下一项为4，故所求项为![](assets-fenbi-89294/d3334fd1eb5999ecffd68e87ec151f042a3e16dfd742710efb8e7aa3980940b4.png)。
+数列相邻项存在明显的倍数关系，优先考虑作商。后项÷前项，可得：1/4、1/2、1、2、（ ），新数列是公比为2的等比数列，则下一项为4，故所求项为![](assets-fenbi-89294/d3334fd1eb5999ecffd68e87ec151f042a3e16dfd742710efb8e7aa3980940b4.png)。
 
 故正确答案为B。
 
@@ -1639,11 +1639,11 @@ C
 
 ### 第 48 题
 
-![](assets-fenbi-89294/9115962fa7f6d8749c0bf8d3c18c6632f4971f37818f04d6a1fbbbad573c34ab.png)，![](assets-fenbi-89294/c12f998b878ba9342e7936d974f9ff615e3d6f3d5ce0b0c21f8cd792d4cf157d.png)，![](assets-fenbi-89294/53fcda22cb759e31a0d384de5e3abfdaf497a62bb2902ebd12ecf5b95e5332d1.png)，![](assets-fenbi-89294/d6e30b4d3439d3f278ae1757efbee3cc650f21c42bc5deebb9919ce9040aad15.png)，4，（ ）
+√6，√22，√14，3√2，4，（ ）
 
 A. ![](assets-fenbi-89294/d9a581a2e98cf6a91b0c9d1cb12a1c0a716554f85d4c7eccdab5e9c238697e81.png)
 
-B. ![](assets-fenbi-89294/c25f59c475d436e79dd6fb180b3b91fc2d6b55c7f2dff0f0d813bac85ce8d500.png)
+B. √17
 
 C. ![](assets-fenbi-89294/fee190e623f333c649aff5d9d24dccfbbfc1fa753fef6779c326989726b0e946.png)
 
@@ -1657,7 +1657,7 @@ B
 
 **解析**
 
-将题干统一转化为根式：![](assets-fenbi-89294/9115962fa7f6d8749c0bf8d3c18c6632f4971f37818f04d6a1fbbbad573c34ab.png)、![](assets-fenbi-89294/c12f998b878ba9342e7936d974f9ff615e3d6f3d5ce0b0c21f8cd792d4cf157d.png)、![](assets-fenbi-89294/53fcda22cb759e31a0d384de5e3abfdaf497a62bb2902ebd12ecf5b95e5332d1.png)、![](assets-fenbi-89294/53850819c9bb612e0a02f6a23a3b53ecdd1db6cd0d350af81400fcca9cb0dc56.png)、![](assets-fenbi-89294/66b23d105b727b88e6270d77ca3d97ee497fa9834d542bb649c344ca3f3f58f6.png)、（），观察根号内数字规律。后项-前项，可得16、-8、4、-2、（），是公比为![](assets-fenbi-89294/003de4b46cd19e5d0d3fff69540ae762aecef62c26b2344aa0228274c389a482.png)的等比数列，则下一项![](assets-fenbi-89294/4cf854af7f0fc6468222bcbf5230ec3c4c83806e029b9579c52ef97ce523877e.png)。故题干所求项![](assets-fenbi-89294/05f16518ddadc3589eb36e983ed0c761dca774e8d54433a2a0399f3349bb11f3.png)。
+将题干统一转化为根式：√6、√22、√14、![](assets-fenbi-89294/53850819c9bb612e0a02f6a23a3b53ecdd1db6cd0d350af81400fcca9cb0dc56.png)、![](assets-fenbi-89294/66b23d105b727b88e6270d77ca3d97ee497fa9834d542bb649c344ca3f3f58f6.png)、（），观察根号内数字规律。后项-前项，可得16、-8、4、-2、（），是公比为![](assets-fenbi-89294/003de4b46cd19e5d0d3fff69540ae762aecef62c26b2344aa0228274c389a482.png)的等比数列，则下一项![](assets-fenbi-89294/4cf854af7f0fc6468222bcbf5230ec3c4c83806e029b9579c52ef97ce523877e.png)。故题干所求项![](assets-fenbi-89294/05f16518ddadc3589eb36e983ed0c761dca774e8d54433a2a0399f3349bb11f3.png)。
 
 故正确答案为B。
 
@@ -1925,7 +1925,7 @@ A. ![](assets-fenbi-89294/55207b88d0131c1489926f66b8e8c5b7c6d6ca17979a6201410c26
 
 B. ![](assets-fenbi-89294/dad267a40f2edbdf6500987baff46e676f4606a70ccf38ea35ddd0927e33982f.png)
 
-C. ![](assets-fenbi-89294/36ae5d60725a5d4baa0dec141d36b65306e14a44535bf5a8bb6df3059c449538.png)
+C. 7/11
 
 D. ![](assets-fenbi-89294/c4b9ea2bd1727459412d64c7e596e25b20285cd9aef9c4a450e97979ef6eda14.png)
 

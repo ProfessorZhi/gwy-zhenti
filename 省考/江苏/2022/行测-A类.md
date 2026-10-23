@@ -1723,7 +1723,7 @@ C
 
 ### 第 49 题
 
-![](assets-fenbi-162438/debdccf5320b5c8f4397dcc141d05c07723617756c0403458dc0f40180f7a834.png)，![](assets-fenbi-162438/b84ea7d9acdf0ccd085fb27d3bf3e1861f24cf43537b279fff9705a9d8044b5c.png)，10，![](assets-fenbi-162438/8eb1bd91f4468f93321f88338956bf0835139a1ebee6da511854980fe4cbe918.png)，![](assets-fenbi-162438/40d034b48b2668df5250fc1b0770347d897e25eb34b0e38f5b86355a7e1a3eae.png)，（ ）
+√2，√27，10，7√5，√486，（ ）
 
 A. ![](assets-fenbi-162438/0361aad997668c108f8f96a410c68d38862ee40fa4272eedff3c95956ed92d9b.png)
 
@@ -1741,7 +1741,7 @@ C
 
 **解析**
 
-观察数列，有整数和根号，优先考虑机械划分。原数列可转化为：![](assets-fenbi-162438/87b56d6e46b01c0fdf9fdce4feae9a5147b10b3c553e7f01fb43d385e2a3f880.png)，![](assets-fenbi-162438/5a73156e580f974a515f8476c0bf95d591eb5453d1535df936ed33930a15d6d7.png)，![](assets-fenbi-162438/3139c0f59fa2d6495e7b81b10e11ff41a4ba2fbe6af65e9aa1c8b7a43b077894.png)，![](assets-fenbi-162438/8eb1bd91f4468f93321f88338956bf0835139a1ebee6da511854980fe4cbe918.png)，![](assets-fenbi-162438/89da80a307c9aba17fbbf225f714a051f93d2ee8109e96b545bc8d9ea7c9d757.png)，（ ）。整数部分为：1，3，5，7，9，是公差为2的等差数列，故所求项的整数部分为9+2=11；根号部分为：2，3，4，5，6，是公差为1的等差数列，故所求项的根号部分为6+1=7，则所求项为![](assets-fenbi-162438/e25822d0fbe0ca579f1d30effbda51402896fd6305167d593f86da185417045d.png)。
+观察数列，有整数和根号，优先考虑机械划分。原数列可转化为：![](assets-fenbi-162438/87b56d6e46b01c0fdf9fdce4feae9a5147b10b3c553e7f01fb43d385e2a3f880.png)，![](assets-fenbi-162438/5a73156e580f974a515f8476c0bf95d591eb5453d1535df936ed33930a15d6d7.png)，![](assets-fenbi-162438/3139c0f59fa2d6495e7b81b10e11ff41a4ba2fbe6af65e9aa1c8b7a43b077894.png)，7√5，![](assets-fenbi-162438/89da80a307c9aba17fbbf225f714a051f93d2ee8109e96b545bc8d9ea7c9d757.png)，（ ）。整数部分为：1，3，5，7，9，是公差为2的等差数列，故所求项的整数部分为9+2=11；根号部分为：2，3，4，5，6，是公差为1的等差数列，故所求项的根号部分为6+1=7，则所求项为![](assets-fenbi-162438/e25822d0fbe0ca579f1d30effbda51402896fd6305167d593f86da185417045d.png)。
 
 故正确答案为C。
 
@@ -1749,7 +1749,7 @@ C
 
 ### 第 50 题
 
-1，3，![](assets-fenbi-162438/313dc07bc2941bec338e5554c1b4bf00d8600f59c7d25780802ba5e823d46855.png)，![](assets-fenbi-162438/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)，![](assets-fenbi-162438/f4c0cb60cab89c5fe4fc72f3d3ae3907163fbf0d88a1be5953093865b0ea3be0.png)，（ ）
+1，3，7/2，5/2，31/24，（ ）
 
 A. ![](assets-fenbi-162438/f87f20d4d6f5185e1e684427449872c7f3f1aa99c3b9e45112f0a5803caba444.png)
 
@@ -1767,7 +1767,7 @@ B
 
 **解析**
 
-数列大部分为分数，考虑分数数列。对数列进行反约分可得：![](assets-fenbi-162438/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)、![](assets-fenbi-162438/2c870d5c2bb6cec4973d2144d0464051a395109f6877ed88da7ab1e5aaabaabc.png)、![](assets-fenbi-162438/313dc07bc2941bec338e5554c1b4bf00d8600f59c7d25780802ba5e823d46855.png)、![](assets-fenbi-162438/e5860821ad94a812f7dfb495be8fbe2fbacb1c6ad4303cef2f2a03cf0cf95762.png)、![](assets-fenbi-162438/f4c0cb60cab89c5fe4fc72f3d3ae3907163fbf0d88a1be5953093865b0ea3be0.png)。分子部分为：1、3、7、15、31，后一项-前一项可得：2、4、8、16，是公比为2的等比数列，则所求项的分子部分为16×2+31=63。分母部分为：1、1、2、6、24，观察发现存在明显倍数关系，后一项![](assets-fenbi-162438/f5a6c68647c30af90c17798019a4c35c1b5f299c7940595dcc2595ecc6177eed.png)前一项可得：1、2、3、4，是公差为1的等差数列，则所求项的分母部分为（4+1）×24=120。故所求项![](assets-fenbi-162438/b785fc1565261206915a718d420f0e63f5618f8d234d0d39a113f9c7c0ef7849.png)。
+数列大部分为分数，考虑分数数列。对数列进行反约分可得：![](assets-fenbi-162438/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)、![](assets-fenbi-162438/2c870d5c2bb6cec4973d2144d0464051a395109f6877ed88da7ab1e5aaabaabc.png)、7/2、![](assets-fenbi-162438/e5860821ad94a812f7dfb495be8fbe2fbacb1c6ad4303cef2f2a03cf0cf95762.png)、31/24。分子部分为：1、3、7、15、31，后一项-前一项可得：2、4、8、16，是公比为2的等比数列，则所求项的分子部分为16×2+31=63。分母部分为：1、1、2、6、24，观察发现存在明显倍数关系，后一项![](assets-fenbi-162438/f5a6c68647c30af90c17798019a4c35c1b5f299c7940595dcc2595ecc6177eed.png)前一项可得：1、2、3、4，是公差为1的等差数列，则所求项的分母部分为（4+1）×24=120。故所求项![](assets-fenbi-162438/b785fc1565261206915a718d420f0e63f5618f8d234d0d39a113f9c7c0ef7849.png)。
 
 故正确答案为B。
 
@@ -1871,7 +1871,7 @@ D项：
 
 ![](assets-fenbi-162438/dbc421f7ba0f2a1ca5b1474a7d461dcfd74c64b08d4c5c2aa4f93003d5baba2e.png)
 
-如图长方形的面积为4×2=8，所求函数阴影面积明显超过长方形面积的![](assets-fenbi-162438/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)，即超过2，不符合题意。
+如图长方形的面积为4×2=8，所求函数阴影面积明显超过长方形面积的1/4，即超过2，不符合题意。
 
 故正确答案为B。
 

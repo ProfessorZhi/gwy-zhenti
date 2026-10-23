@@ -1657,7 +1657,7 @@ C
 
 ### 第 47 题
 
-1，![](assets-fenbi-91869/5682cba11ca4808c4dbc92a1b03643ce743b87f658e2eb31b2e7a76b120ec8b6.png)，![](assets-fenbi-91869/d98c50405732e39c69eef76376d8c7325291875d120cb6f1d4308d17f7e89ce3.png)，10，![](assets-fenbi-91869/bb234594c53a59a8bb9e796379efb06ef8a0d965882d2a1689786f3d7be80ecc.png)，（ ）
+1，3+√3，5+√6，10，9+2√3，（ ）
 
 A. ![](assets-fenbi-91869/5ee3020870d28d616c2fb28cfe5671e86559415533f434e96988896ad626a7d8.png)
 
@@ -1675,7 +1675,7 @@ C
 
 **解析**
 
-观察数列，有整数和无理数，将数列化为同一形式，为![](assets-fenbi-91869/ef5058b1cd56dbd0a566ab64a9aafaf43dd6a40b2814d4ee4ebcb6bd0801a671.png)，![](assets-fenbi-91869/5682cba11ca4808c4dbc92a1b03643ce743b87f658e2eb31b2e7a76b120ec8b6.png)，![](assets-fenbi-91869/d98c50405732e39c69eef76376d8c7325291875d120cb6f1d4308d17f7e89ce3.png)，![](assets-fenbi-91869/3989ef77e01ebdc472386247231d1ce27ae3d05cc8dde232e46ee123ff4f43fb.png)，![](assets-fenbi-91869/37e09f2564e2d02c41cbb3e02d4ac1aa076d4b3ea0b19f4beeb5e6639d18e161.png)，以“+”为分隔符，“+”前是1、3、5、7、9，构成以2为公差的等差数列，则下一项为11；“+”后是![](assets-fenbi-91869/61a38e083767c072dc00768c254a689cc14ba87e965ce4eda7be5df5037aaffe.png)、![](assets-fenbi-91869/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)、![](assets-fenbi-91869/ded32433b9b3e3abbe7b0d6ab4d0734ae549906686b4973aad1a6c53f8e9e334.png)、![](assets-fenbi-91869/7cfa5827752f6186d926653b895d37da4d130fb15d3128250e87cfe9628090e2.png)、![](assets-fenbi-91869/cfe38d9a0daabe962b5e9bfd4f5dbeb79fc45971f2437869eeeccf5a7776fe1c.png)，根号内的数字构成公差为3的等差数列，则下一项根号内为15。故所求项为![](assets-fenbi-91869/0e78167de0c2ca3f7a839dfce035e8bc4416df4d6ab8597dc8c35738db57e5a4.png)。
+观察数列，有整数和无理数，将数列化为同一形式，为![](assets-fenbi-91869/ef5058b1cd56dbd0a566ab64a9aafaf43dd6a40b2814d4ee4ebcb6bd0801a671.png)，3+√3，5+√6，![](assets-fenbi-91869/3989ef77e01ebdc472386247231d1ce27ae3d05cc8dde232e46ee123ff4f43fb.png)，![](assets-fenbi-91869/37e09f2564e2d02c41cbb3e02d4ac1aa076d4b3ea0b19f4beeb5e6639d18e161.png)，以“+”为分隔符，“+”前是1、3、5、7、9，构成以2为公差的等差数列，则下一项为11；“+”后是![](assets-fenbi-91869/61a38e083767c072dc00768c254a689cc14ba87e965ce4eda7be5df5037aaffe.png)、![](assets-fenbi-91869/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)、√6、![](assets-fenbi-91869/7cfa5827752f6186d926653b895d37da4d130fb15d3128250e87cfe9628090e2.png)、![](assets-fenbi-91869/cfe38d9a0daabe962b5e9bfd4f5dbeb79fc45971f2437869eeeccf5a7776fe1c.png)，根号内的数字构成公差为3的等差数列，则下一项根号内为15。故所求项为![](assets-fenbi-91869/0e78167de0c2ca3f7a839dfce035e8bc4416df4d6ab8597dc8c35738db57e5a4.png)。
 
 故正确答案为C。
 
@@ -1683,7 +1683,7 @@ C
 
 ### 第 48 题
 
-1， ![](assets-fenbi-91869/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)， ![](assets-fenbi-91869/996d396d52e320f838ee99c2e7ee3aa2e68f38aabdf966fb78800be182087f20.png)， ![](assets-fenbi-91869/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)， ![](assets-fenbi-91869/de26c97ce9d29280b89e61a2b2a6152cd4ef719e3c64a6d3fae8d8e16bc3eb24.png)，（ ）
+1， 3/2， 11/16， 1/4， 21/256，（ ）
 
 A. ![](assets-fenbi-91869/b80b5a06e03a1e527da6e3565178192382a10e1f7b76224409a29f82fda22bff.png)
 
@@ -1701,7 +1701,7 @@ A
 
 **解析**
 
-观察数列大部分都是分数，选项也都是分数，考虑分数数列。分母呈现递增趋势，优先考虑反约分。原数列可化为：![](assets-fenbi-91869/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png) 、 ![](assets-fenbi-91869/59181b315d67265046ca9748bd315d3b75a8e49fb0e63a5fc496aee8867e88c7.png)、![](assets-fenbi-91869/996d396d52e320f838ee99c2e7ee3aa2e68f38aabdf966fb78800be182087f20.png)、![](assets-fenbi-91869/dce716a70d5a43f5109ce51e06ffc4a846dd8beaea9bbf51de14e5a4491c9155.png)、![](assets-fenbi-91869/de26c97ce9d29280b89e61a2b2a6152cd4ef719e3c64a6d3fae8d8e16bc3eb24.png)，发现分母是公比为4的等比数列，则下一项为256×4=1024；分子是公差为5的等差数列，则下一项为21+5=26。故所求项为![](assets-fenbi-91869/b9528465f56bc7bfe4767499f7ed9c70ed483342290c06e4f3809c12cb8365fc.png)。
+观察数列大部分都是分数，选项也都是分数，考虑分数数列。分母呈现递增趋势，优先考虑反约分。原数列可化为：![](assets-fenbi-91869/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png) 、 ![](assets-fenbi-91869/59181b315d67265046ca9748bd315d3b75a8e49fb0e63a5fc496aee8867e88c7.png)、11/16、![](assets-fenbi-91869/dce716a70d5a43f5109ce51e06ffc4a846dd8beaea9bbf51de14e5a4491c9155.png)、21/256，发现分母是公比为4的等比数列，则下一项为256×4=1024；分子是公差为5的等差数列，则下一项为21+5=26。故所求项为![](assets-fenbi-91869/b9528465f56bc7bfe4767499f7ed9c70ed483342290c06e4f3809c12cb8365fc.png)。
 
 故正确答案为A。
 
@@ -1753,7 +1753,7 @@ A
 
 **解析**
 
-原数列均为平方数，分别为![](assets-fenbi-91869/a0fdf2f7d682b3f59afd80325c6fa11d7f40170c8f31f71520391e1c49ad2279.png)、![](assets-fenbi-91869/a0fdf2f7d682b3f59afd80325c6fa11d7f40170c8f31f71520391e1c49ad2279.png) 、![](assets-fenbi-91869/65c00c9dfdf215d59c4cb4a1182e7d8b7cb8a6ad6a41dd5404d3ffb9937f5515.png)、![](assets-fenbi-91869/22d6bf8013d449add3713d64aba73fa59a6c667068989d1c90362bfdfe4d785f.png)、![](assets-fenbi-91869/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)；底数存在规律1+1=2，1+2=3，2+3=5，即第一项+第二项=第三项。因此下一项为![](assets-fenbi-91869/e3d596aee344396c9c623f9c1ee6b6997bfb263d2a39cd0ecf52936b05edc263.png)，即64。
+原数列均为平方数，分别为![](assets-fenbi-91869/a0fdf2f7d682b3f59afd80325c6fa11d7f40170c8f31f71520391e1c49ad2279.png)、![](assets-fenbi-91869/a0fdf2f7d682b3f59afd80325c6fa11d7f40170c8f31f71520391e1c49ad2279.png) 、![](assets-fenbi-91869/65c00c9dfdf215d59c4cb4a1182e7d8b7cb8a6ad6a41dd5404d3ffb9937f5515.png)、3^2、![](assets-fenbi-91869/49696360f21f051601df2be96026008ff68f84013813e3e76e4cb947711a1798.png)；底数存在规律1+1=2，1+2=3，2+3=5，即第一项+第二项=第三项。因此下一项为![](assets-fenbi-91869/e3d596aee344396c9c623f9c1ee6b6997bfb263d2a39cd0ecf52936b05edc263.png)，即64。
 
 故正确答案为A。
 
@@ -1901,7 +1901,7 @@ B
 
 ### 第 56 题
 
-某社区组织了一次助学捐款活动，在场的老王、老李和老张均积极捐款。若老王捐款的![](assets-fenbi-91869/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)是老李捐款的![](assets-fenbi-91869/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)、老张捐款的![](assets-fenbi-91869/4664f40ab4ccbdfef4a595ec98d0c723e9aba763e9ccf654274e9c532acfda47.png)，且老张比老王多捐192元，则他们的捐款总额是：
+某社区组织了一次助学捐款活动，在场的老王、老李和老张均积极捐款。若老王捐款的1/3是老李捐款的1/5、老张捐款的![](assets-fenbi-91869/4664f40ab4ccbdfef4a595ec98d0c723e9aba763e9ccf654274e9c532acfda47.png)，且老张比老王多捐192元，则他们的捐款总额是：
 
 A. 418元
 
@@ -2009,7 +2009,7 @@ A
 
 ### 第 60 题
 
-甲、乙两人分别从A、B两地同时出发相向而行。当两人合计走完两地间路程的![](assets-fenbi-91869/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)时，甲距A地的路程是500米；当两人合计走完两地间路程的![](assets-fenbi-91869/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)时，乙距B地的路程是2400米。若两人的速度始终不变，则当速度较快者走完全程时，速度较慢者距走完全程还剩的路程是
+甲、乙两人分别从A、B两地同时出发相向而行。当两人合计走完两地间路程的1/4时，甲距A地的路程是500米；当两人合计走完两地间路程的3/4时，乙距B地的路程是2400米。若两人的速度始终不变，则当速度较快者走完全程时，速度较慢者距走完全程还剩的路程是
 
 A. 1350米
 
@@ -2027,7 +2027,7 @@ D
 
 **解析**
 
-两人走完全程的![](assets-fenbi-91869/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)时，甲走的路程是500米；现两人走完全程的![](assets-fenbi-91869/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)，因速度一直不变，则甲此时走的路程是500×3=1500米，乙走的路程为2400米，时间相同，速度与路程成正比，![](assets-fenbi-91869/43163ae59d75dd6b00a40ec351cc6c13af1d9837a435c95414b84578aed1f6c9.png)![](assets-fenbi-91869/08598c2fab1480e89b230c065a0463043d6bc17ad5c644f9e4305f36b294aeb5.png)，乙的速度较快，全程一共是![](assets-fenbi-91869/e02018ced3462c3b76af71f760d7f01a9bd3718ae7226f7c65ce63833035bacf.png)米，当乙走完全程5200米，因时间相同，甲、乙的路程之比即为速度之比5：8，则甲走了![](assets-fenbi-91869/35e041f343615f8cb2ea2f63ab064f164c6888ed2319b31efd66c4dc4a5c47b7.png)米，还剩5200-3250=1950米。
+两人走完全程的1/4时，甲走的路程是500米；现两人走完全程的3/4，因速度一直不变，则甲此时走的路程是500×3=1500米，乙走的路程为2400米，时间相同，速度与路程成正比，![](assets-fenbi-91869/43163ae59d75dd6b00a40ec351cc6c13af1d9837a435c95414b84578aed1f6c9.png)![](assets-fenbi-91869/08598c2fab1480e89b230c065a0463043d6bc17ad5c644f9e4305f36b294aeb5.png)，乙的速度较快，全程一共是![](assets-fenbi-91869/e02018ced3462c3b76af71f760d7f01a9bd3718ae7226f7c65ce63833035bacf.png)米，当乙走完全程5200米，因时间相同，甲、乙的路程之比即为速度之比5：8，则甲走了![](assets-fenbi-91869/35e041f343615f8cb2ea2f63ab064f164c6888ed2319b31efd66c4dc4a5c47b7.png)米，还剩5200-3250=1950米。
 
 故正确答案为D。
 

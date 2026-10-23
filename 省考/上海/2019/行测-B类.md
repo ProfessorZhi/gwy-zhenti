@@ -2399,11 +2399,11 @@ B
 
 某广告牌上需安装特殊的艺术字模型，大字价格是小字价格的2倍，而大字字数是小字字数的三分之一。若总费用不变，而将所有字都改为小字，那么可以制作的小字数量是原来所有字数量的      。
 
-A. ![](assets-fenbi-87984/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)
+A. 3/2
 
 B. ![](assets-fenbi-87984/a812479e3b5a36b9404036ee7d77b9009a97f8b7058629adc96421d0b8678620.png)
 
-C. ![](assets-fenbi-87984/048d48e7b51e391ec8b77a173a07988a381ac2352ab363e5a82c97c24437aa67.png)
+C. 5/4
 
 D. ![](assets-fenbi-87984/b573554a23d07a2b829c65f5cb75a7d4ddd5fce48f2d79682f85d05d603f030d.png)
 
@@ -2539,9 +2539,9 @@ C
 
 A. 1
 
-B. ![](assets-fenbi-87984/debdccf5320b5c8f4397dcc141d05c07723617756c0403458dc0f40180f7a834.png)
+B. √2
 
-C. ![](assets-fenbi-87984/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+C. 1/2
 
 D. ![](assets-fenbi-87984/4312a09c87230c85c1468ebd0be7fb919dc4840ce3666a87b614d5064361049e.png)
 

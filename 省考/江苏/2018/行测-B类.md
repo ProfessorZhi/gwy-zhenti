@@ -1844,7 +1844,7 @@ D
 
 ### 第 54 题
 
-1，2，![](assets-fenbi-84044/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-84044/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)，![](assets-fenbi-84044/2ea4af6029adbdf57a44ff8abc12b37fa51305dd7a699a059cdc47f36400ad58.png)，（ ）
+1，2，3/2，5/6，11/30，（ ）
 
 A. ![](assets-fenbi-84044/1197969e691328049816441b8e858009a25a9f879bcc77dcb8a182f7ff97f161.png)
 
@@ -1862,7 +1862,7 @@ D
 
 **解析**
 
-题干中数据大部分为分数，优先考虑分数数列。三个分数中，分母分别为2、6、30，明显倍数关系，倍数分别为3、5，分别与前两项分子相同，猜测前一项的分子、分母乘积为后一项的分母；再观察分子，5-3=2，11-5=6，分别与前两项分母相同，猜测前一项的分子、分母之和为后一项分子。再对前两个整数进行整化分，该数列为![](assets-fenbi-84044/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)，![](assets-fenbi-84044/15ab7241e07722dfb517ddf073b83b5b000281e1fed048d64b126410b71fd373.png)，![](assets-fenbi-84044/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-84044/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)，![](assets-fenbi-84044/2ea4af6029adbdf57a44ff8abc12b37fa51305dd7a699a059cdc47f36400ad58.png)，（ ）。1+1=2（第二项分子），![](assets-fenbi-84044/e9767a9d1faae2385093952c8e849e0d1a13e76c259dc65e20ebdb2d5803fab9.png)（第二项分母）；2+1=3（第三项分子），![](assets-fenbi-84044/55304b2bf78c9df5f14e8d68e2e195d0ad69e5b9df134a862c0875e8ef4dd9c2.png)（第三项分母），均满足刚才猜测的规律，则规律成立。因此所求项分子为30+11=41，分母为![](assets-fenbi-84044/cf750db53e9d2298ea6cea512d37ad9c009a875dab5c842c91f3817840c271d2.png)，即![](assets-fenbi-84044/c940a6f7f1a77c65ef27a5f7902ca4da1c6fc449748bdf29c5bb3e465a72db95.png)。
+题干中数据大部分为分数，优先考虑分数数列。三个分数中，分母分别为2、6、30，明显倍数关系，倍数分别为3、5，分别与前两项分子相同，猜测前一项的分子、分母乘积为后一项的分母；再观察分子，5-3=2，11-5=6，分别与前两项分母相同，猜测前一项的分子、分母之和为后一项分子。再对前两个整数进行整化分，该数列为![](assets-fenbi-84044/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png)，![](assets-fenbi-84044/15ab7241e07722dfb517ddf073b83b5b000281e1fed048d64b126410b71fd373.png)，3/2，5/6，11/30，（ ）。1+1=2（第二项分子），![](assets-fenbi-84044/e9767a9d1faae2385093952c8e849e0d1a13e76c259dc65e20ebdb2d5803fab9.png)（第二项分母）；2+1=3（第三项分子），![](assets-fenbi-84044/55304b2bf78c9df5f14e8d68e2e195d0ad69e5b9df134a862c0875e8ef4dd9c2.png)（第三项分母），均满足刚才猜测的规律，则规律成立。因此所求项分子为30+11=41，分母为![](assets-fenbi-84044/cf750db53e9d2298ea6cea512d37ad9c009a875dab5c842c91f3817840c271d2.png)，即![](assets-fenbi-84044/c940a6f7f1a77c65ef27a5f7902ca4da1c6fc449748bdf29c5bb3e465a72db95.png)。
 
 故正确答案为D。
 
@@ -2112,13 +2112,13 @@ D
 
 某市公安局从辖区2个派出所分别抽调2名警察，将他们随机安排到3个专案组工作，则来自同一派出所的警察不在同一组的概率是：
 
-A. ![](assets-fenbi-84044/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)
+A. 2/3
 
-B. ![](assets-fenbi-84044/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)
+B. 1/4
 
-C. ![](assets-fenbi-84044/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)
+C. 1/3
 
-D. ![](assets-fenbi-84044/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+D. 1/2
 
 <details><summary>第 64 题 · 答案与解析</summary>
 
@@ -2462,7 +2462,7 @@ D项：牧羊犬可以在草原上帮助人们放牧，二者是生物与其应�
 
 ### 第 74 题
 
-![](assets-fenbi-84044/d98e3bae6b9e77ea2edde03f9b23e5a3432dc43a274bb533a0cf1cd3b17bb2d2.png)
+□UU67dd○□○
 
 A. ![](assets-fenbi-84044/27d52830051b565b9bc06c60bc8c76899af51865296da08f8ec1df3674a82bf3.png)
 

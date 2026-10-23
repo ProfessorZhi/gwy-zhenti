@@ -2160,7 +2160,7 @@ D项：乙和庚之间间隔三人，选项正确，当选。
 
 ### 第 61 题
 
-1，![](assets-fenbi-87989/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)，3，![](assets-fenbi-87989/ef5434f5a00284e91b2c4f285dad94c8147640a260b359ef427a944c91918cc7.png)，5，![](assets-fenbi-87989/f8b001755ce9e99891d9343cdbb4ff5a2ef65fa1d6de16f8c0f8ee2bcb0d5da1.png)，7，
+1，5/2，3，![](assets-fenbi-87989/ef5434f5a00284e91b2c4f285dad94c8147640a260b359ef427a944c91918cc7.png)，5，![](assets-fenbi-87989/f8b001755ce9e99891d9343cdbb4ff5a2ef65fa1d6de16f8c0f8ee2bcb0d5da1.png)，7，
 
 A. 8
 
@@ -2178,11 +2178,11 @@ D
 
 **解析**
 
-方法一：数列较长，考虑多重数列。优先考虑交叉找规律：奇数项1,3,5,7，是公差为2的等差数列；偶数项![](assets-fenbi-87989/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)，![](assets-fenbi-87989/ef5434f5a00284e91b2c4f285dad94c8147640a260b359ef427a944c91918cc7.png)，![](assets-fenbi-87989/f8b001755ce9e99891d9343cdbb4ff5a2ef65fa1d6de16f8c0f8ee2bcb0d5da1.png)，为分数数列，分母为公差为1的等差数列，则所求项分母是5。分子5，13，25无明显规律，考虑代入排除：代入四项的分子：40、33、37、41，发现只有代入D项存在规律：分子作差为8、12、16，是公差为4的等差数列。
+方法一：数列较长，考虑多重数列。优先考虑交叉找规律：奇数项1,3,5,7，是公差为2的等差数列；偶数项5/2，![](assets-fenbi-87989/ef5434f5a00284e91b2c4f285dad94c8147640a260b359ef427a944c91918cc7.png)，![](assets-fenbi-87989/f8b001755ce9e99891d9343cdbb4ff5a2ef65fa1d6de16f8c0f8ee2bcb0d5da1.png)，为分数数列，分母为公差为1的等差数列，则所求项分母是5。分子5，13，25无明显规律，考虑代入排除：代入四项的分子：40、33、37、41，发现只有代入D项存在规律：分子作差为8、12、16，是公差为4的等差数列。
 
 故正确答案为D。
 
-方法二：数列较长，考虑多重数列。两两分组：（1，![](assets-fenbi-87989/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)），（3，![](assets-fenbi-87989/ef5434f5a00284e91b2c4f285dad94c8147640a260b359ef427a944c91918cc7.png)），（5，![](assets-fenbi-87989/f8b001755ce9e99891d9343cdbb4ff5a2ef65fa1d6de16f8c0f8ee2bcb0d5da1.png)），（7，       ）将每组中分母统一：（![](assets-fenbi-87989/a7f7b2a1e4bcc384e4e49af1ae6a0a492f2f02411a83a830994870a1d6f7025f.png)，![](assets-fenbi-87989/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)），（![](assets-fenbi-87989/b69e9022241f10a02d9ec1957a932c6018a03d5fead7da278c2889a5235d6bcf.png)，![](assets-fenbi-87989/ef5434f5a00284e91b2c4f285dad94c8147640a260b359ef427a944c91918cc7.png)），（![](assets-fenbi-87989/aaf6733fbc2b47ab780f7758727f77cd3d1567a2bc6e935ee8387c13aeb2998d.png)，![](assets-fenbi-87989/f8b001755ce9e99891d9343cdbb4ff5a2ef65fa1d6de16f8c0f8ee2bcb0d5da1.png)），则分母为公差为1的等差数列，故所求项分母为5, 即最后一组为（![](assets-fenbi-87989/5503a6ab22cab5da560db2ea948e38c9c7940398bf9b8cd09087f17f1dde5d70.png)，![](assets-fenbi-87989/d627cb36fb8ae9cda4c737da151a9a5b5fdb7b1a7be5945e4503cc14a0a20e92.png)）；分子作差得：3,4,5，则下一项为6，所求项=35+6=41， 即![](assets-fenbi-87989/65532e32a45660005151325c684dac18af375698f3b3c65b75b61eee5531dbc4.png)。
+方法二：数列较长，考虑多重数列。两两分组：（1，5/2），（3，![](assets-fenbi-87989/ef5434f5a00284e91b2c4f285dad94c8147640a260b359ef427a944c91918cc7.png)），（5，![](assets-fenbi-87989/f8b001755ce9e99891d9343cdbb4ff5a2ef65fa1d6de16f8c0f8ee2bcb0d5da1.png)），（7，       ）将每组中分母统一：（![](assets-fenbi-87989/a7f7b2a1e4bcc384e4e49af1ae6a0a492f2f02411a83a830994870a1d6f7025f.png)，5/2），（![](assets-fenbi-87989/b69e9022241f10a02d9ec1957a932c6018a03d5fead7da278c2889a5235d6bcf.png)，![](assets-fenbi-87989/ef5434f5a00284e91b2c4f285dad94c8147640a260b359ef427a944c91918cc7.png)），（![](assets-fenbi-87989/aaf6733fbc2b47ab780f7758727f77cd3d1567a2bc6e935ee8387c13aeb2998d.png)，![](assets-fenbi-87989/f8b001755ce9e99891d9343cdbb4ff5a2ef65fa1d6de16f8c0f8ee2bcb0d5da1.png)），则分母为公差为1的等差数列，故所求项分母为5, 即最后一组为（![](assets-fenbi-87989/5503a6ab22cab5da560db2ea948e38c9c7940398bf9b8cd09087f17f1dde5d70.png)，![](assets-fenbi-87989/d627cb36fb8ae9cda4c737da151a9a5b5fdb7b1a7be5945e4503cc14a0a20e92.png)）；分子作差得：3,4,5，则下一项为6，所求项=35+6=41， 即![](assets-fenbi-87989/65532e32a45660005151325c684dac18af375698f3b3c65b75b61eee5531dbc4.png)。
 
 故正确答案为D。
 
@@ -2378,15 +2378,15 @@ B
 
 ### 第 69 题
 
-一碗芝麻粉，第一次吃了半碗，然后用水加满搅匀；第二次喝了![](assets-fenbi-87989/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)碗，用水加满搅匀；第三次喝了![](assets-fenbi-87989/7afd0046620668df56ad0d2555716a0734f042fe61c0548e10535b7b31bc8d0c.png)碗，用水加满搅匀；最后一次全吃完。则最后一次吃下的芝麻糊中芝麻粉含量是      。
+一碗芝麻粉，第一次吃了半碗，然后用水加满搅匀；第二次喝了1/3碗，用水加满搅匀；第三次喝了1/6碗，用水加满搅匀；最后一次全吃完。则最后一次吃下的芝麻糊中芝麻粉含量是      。
 
-A. ![](assets-fenbi-87989/7afd0046620668df56ad0d2555716a0734f042fe61c0548e10535b7b31bc8d0c.png)
+A. 1/6
 
-B. ![](assets-fenbi-87989/c6c323dc6d959e479861944d1f7b51bf98ccf138a14d38ae044306d22674c2a4.png)
+B. 5/6
 
 C. ![](assets-fenbi-87989/29f686468df78737ff0b75ff1ec13d58b3666086295f581a7f9b9f207c844ede.png)
 
-D. ![](assets-fenbi-87989/86aa595c61c89d0e3a0309bba81152f2e3d085e691c513d7ccac76ee509351cd.png)
+D. 5/18
 
 <details><summary>第 69 题 · 答案与解析</summary>
 
@@ -2396,7 +2396,7 @@ D
 
 **解析**
 
-设一碗芝麻粉的质量为1，第一次吃了半碗，芝麻粉剩![](assets-fenbi-87989/893e863a149895972a2980a967324180c95433a35b4cfc2fec69fcdabbe5d4f9.png)；水加满搅匀后，第二次又喝了![](assets-fenbi-87989/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，芝麻粉剩![](assets-fenbi-87989/417909b798aa40e2d53276f0a716f7a0c401f2498acffc0ec8c0c72f13a6b0a4.png)；再次水加满搅匀后，第三次又喝了![](assets-fenbi-87989/7afd0046620668df56ad0d2555716a0734f042fe61c0548e10535b7b31bc8d0c.png)，芝麻粉剩![](assets-fenbi-87989/e095cb96aed1e4007fb8fde9bc61495f17c1c65cf5272b12a298eef493cc3a1c.png)，此时加满水搅匀后芝麻糊中芝麻的含量为![](assets-fenbi-87989/d6b16dae6dcd3ad6e8aeff6122db0d4639e0685c0ce8ce65ee96a6ba5d371a2e.png)，所以最后一次吃下的芝麻糊中芝麻含量是![](assets-fenbi-87989/86aa595c61c89d0e3a0309bba81152f2e3d085e691c513d7ccac76ee509351cd.png)。
+设一碗芝麻粉的质量为1，第一次吃了半碗，芝麻粉剩![](assets-fenbi-87989/893e863a149895972a2980a967324180c95433a35b4cfc2fec69fcdabbe5d4f9.png)；水加满搅匀后，第二次又喝了1/3，芝麻粉剩![](assets-fenbi-87989/417909b798aa40e2d53276f0a716f7a0c401f2498acffc0ec8c0c72f13a6b0a4.png)；再次水加满搅匀后，第三次又喝了1/6，芝麻粉剩![](assets-fenbi-87989/e095cb96aed1e4007fb8fde9bc61495f17c1c65cf5272b12a298eef493cc3a1c.png)，此时加满水搅匀后芝麻糊中芝麻的含量为![](assets-fenbi-87989/d6b16dae6dcd3ad6e8aeff6122db0d4639e0685c0ce8ce65ee96a6ba5d371a2e.png)，所以最后一次吃下的芝麻糊中芝麻含量是5/18。
 
 故正确答案为D。
 

@@ -1643,7 +1643,7 @@ D
 
 ### 第 47 题
 
-2，![](assets-fenbi-91870/b2e3a89b579d48d0d7b4f05b4d6f3b38c0d63f7dc5820dd4b30c8de4efe85c1e.png)，![](assets-fenbi-91870/f31abc885d01cb2db8035e57af1f0170a972b241625023668d75b95dc01a7b65.png)，10，![](assets-fenbi-91870/0ce9d19ee481dd457c6716e880b2dc0c59c89076250382d36b00bf5c523e3fd8.png)，（ ）
+2，2+√2，4+√3，10，16+√5，（ ）
 
 A. ![](assets-fenbi-91870/2eb63757e7067260183d7f257cb890d447476da33b33f8f6bed0f1e63407c892.png)
 
@@ -1661,9 +1661,9 @@ C
 
 **解析**
 
-原数列：2，![](assets-fenbi-91870/b2e3a89b579d48d0d7b4f05b4d6f3b38c0d63f7dc5820dd4b30c8de4efe85c1e.png)，![](assets-fenbi-91870/f31abc885d01cb2db8035e57af1f0170a972b241625023668d75b95dc01a7b65.png)，10，![](assets-fenbi-91870/0ce9d19ee481dd457c6716e880b2dc0c59c89076250382d36b00bf5c523e3fd8.png)，？
+原数列：2，2+√2，4+√3，10，16+√5，？
 
-反推为：![](assets-fenbi-91870/d258aa0f5a782de21f6a7d4f5abc36d953f1b06dfb34ac9e5d754673a0429ae8.png)，![](assets-fenbi-91870/b2e3a89b579d48d0d7b4f05b4d6f3b38c0d63f7dc5820dd4b30c8de4efe85c1e.png)，![](assets-fenbi-91870/f31abc885d01cb2db8035e57af1f0170a972b241625023668d75b95dc01a7b65.png)，![](assets-fenbi-91870/96c488f0a1fbc99833c88fa115013b34fd04f8d168202b551021617073131054.png)，![](assets-fenbi-91870/0ce9d19ee481dd457c6716e880b2dc0c59c89076250382d36b00bf5c523e3fd8.png)，？
+反推为：![](assets-fenbi-91870/d258aa0f5a782de21f6a7d4f5abc36d953f1b06dfb34ac9e5d754673a0429ae8.png)，2+√2，4+√3，![](assets-fenbi-91870/96c488f0a1fbc99833c88fa115013b34fd04f8d168202b551021617073131054.png)，16+√5，？
 
 则加号前的数字为1，2，4，8，16，易知是公比为2的等比数列，下一项应为16×2=32；
 
@@ -1675,7 +1675,7 @@ C
 
 ### 第 48 题
 
-1， ![](assets-fenbi-91870/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)， ![](assets-fenbi-91870/996d396d52e320f838ee99c2e7ee3aa2e68f38aabdf966fb78800be182087f20.png)， ![](assets-fenbi-91870/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)， ![](assets-fenbi-91870/de26c97ce9d29280b89e61a2b2a6152cd4ef719e3c64a6d3fae8d8e16bc3eb24.png)，（ ）
+1， 3/2， 11/16， 1/4， 21/256，（ ）
 
 A. ![](assets-fenbi-91870/b80b5a06e03a1e527da6e3565178192382a10e1f7b76224409a29f82fda22bff.png)
 
@@ -1693,7 +1693,7 @@ A
 
 **解析**
 
-观察数列大部分都是分数，选项也都是分数，考虑分数数列。分母呈现递增趋势，优先考虑反约分。原数列可化为：![](assets-fenbi-91870/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png) 、 ![](assets-fenbi-91870/59181b315d67265046ca9748bd315d3b75a8e49fb0e63a5fc496aee8867e88c7.png)、![](assets-fenbi-91870/996d396d52e320f838ee99c2e7ee3aa2e68f38aabdf966fb78800be182087f20.png)、![](assets-fenbi-91870/dce716a70d5a43f5109ce51e06ffc4a846dd8beaea9bbf51de14e5a4491c9155.png)、![](assets-fenbi-91870/de26c97ce9d29280b89e61a2b2a6152cd4ef719e3c64a6d3fae8d8e16bc3eb24.png)，发现分母是公比为4的等比数列，则下一项为256×4=1024；分子是公差为5的等差数列，则下一项为21+5=26。故所求项为![](assets-fenbi-91870/b9528465f56bc7bfe4767499f7ed9c70ed483342290c06e4f3809c12cb8365fc.png)。
+观察数列大部分都是分数，选项也都是分数，考虑分数数列。分母呈现递增趋势，优先考虑反约分。原数列可化为：![](assets-fenbi-91870/026509409492f1cc782cd7415a2152fa662326066d773794475811ede97a0181.png) 、 ![](assets-fenbi-91870/59181b315d67265046ca9748bd315d3b75a8e49fb0e63a5fc496aee8867e88c7.png)、11/16、![](assets-fenbi-91870/dce716a70d5a43f5109ce51e06ffc4a846dd8beaea9bbf51de14e5a4491c9155.png)、21/256，发现分母是公比为4的等比数列，则下一项为256×4=1024；分子是公差为5的等差数列，则下一项为21+5=26。故所求项为![](assets-fenbi-91870/b9528465f56bc7bfe4767499f7ed9c70ed483342290c06e4f3809c12cb8365fc.png)。
 
 故正确答案为A。
 

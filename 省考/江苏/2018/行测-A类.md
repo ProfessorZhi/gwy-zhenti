@@ -1856,7 +1856,7 @@ D
 
 ### 第 54 题
 
-![](assets-fenbi-84041/3786aa393d8818c253116d223c328aece5c1d6871821c540345421695f5338e5.png)，![](assets-fenbi-84041/736c41e9616ccfa7997eb887d52b310717f5278a0bbd269565317c225d2381e3.png)，4，9，6，（ ）
+64/81，81/4，4，9，6，（ ）
 
 A. 7
 
@@ -1882,7 +1882,7 @@ B
 
 ### 第 55 题
 
-![](assets-fenbi-84041/ce2535682a7ed5309f6ab244f355742352f2d1d105a03808d0db9fb8912583d8.png)，1，![](assets-fenbi-84041/307d5abded91de2be9dfcd8ddd1a02b06c2c835371975c8dfc10fe9f4d2c91bd.png)，![](assets-fenbi-84041/d503be27693d3cd7e1e0f390301e4bd145d565711abb3bb9b67c25a77c3d833b.png)，![](assets-fenbi-84041/05497b9c3442d062c5f64bd183531950ca0e2427d4382943900bd6fc8f02189f.png)，（ ）
+√3，1，3√3/7，3/5，9√3/31，（ ）
 
 A. ![](assets-fenbi-84041/3d1e8249e626232c45dd4e2dc4972312f13a7cca5298483501c6ef749f277704.png)
 
@@ -1900,7 +1900,7 @@ C
 
 **解析**
 
-题干中分子部分均包含![](assets-fenbi-84041/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)因子，观察分子分母变化趋势，进行反约分，则原数列转化为：![](assets-fenbi-84041/c15e1d0129f75bbfaa618abe9f90c635f018162f175858250ad38cc6282133e4.png)，![](assets-fenbi-84041/ccfa1f89e7babf8198fe2778e266504b11e52662cb4df1b16f385a3ecaf2e000.png)，![](assets-fenbi-84041/307d5abded91de2be9dfcd8ddd1a02b06c2c835371975c8dfc10fe9f4d2c91bd.png)，![](assets-fenbi-84041/dd0e8069025d495a19a06a5349ff2264436db66dbe44a20caba76afe8fcd68c8.png)，![](assets-fenbi-84041/05497b9c3442d062c5f64bd183531950ca0e2427d4382943900bd6fc8f02189f.png)，（ ）。观察可得，分子部分为公比是![](assets-fenbi-84041/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)的等比数列，下一项![](assets-fenbi-84041/45d694bb5542482ab5d699c152ed86eedb1f78906d82864ead9aab08b35d8cf9.png)；分母部分作差后得：2，4，8，16，（ ），为公比是2的等比数列，下一项=16×2=32，则所求项分母部分=31+32=63。故所求项![](assets-fenbi-84041/8816011e07a69d55fb95c46b976e87f9ead17ec83064d8cf4ac2116399ff3674.png)。
+题干中分子部分均包含![](assets-fenbi-84041/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)因子，观察分子分母变化趋势，进行反约分，则原数列转化为：![](assets-fenbi-84041/c15e1d0129f75bbfaa618abe9f90c635f018162f175858250ad38cc6282133e4.png)，![](assets-fenbi-84041/ccfa1f89e7babf8198fe2778e266504b11e52662cb4df1b16f385a3ecaf2e000.png)，3√3/7，![](assets-fenbi-84041/dd0e8069025d495a19a06a5349ff2264436db66dbe44a20caba76afe8fcd68c8.png)，9√3/31，（ ）。观察可得，分子部分为公比是![](assets-fenbi-84041/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)的等比数列，下一项![](assets-fenbi-84041/45d694bb5542482ab5d699c152ed86eedb1f78906d82864ead9aab08b35d8cf9.png)；分母部分作差后得：2，4，8，16，（ ），为公比是2的等比数列，下一项=16×2=32，则所求项分母部分=31+32=63。故所求项![](assets-fenbi-84041/8816011e07a69d55fb95c46b976e87f9ead17ec83064d8cf4ac2116399ff3674.png)。
 
 故正确答案为C。
 
@@ -2090,7 +2090,7 @@ C
 
 方法一：根据题意可知，入选选手中男女人数分别为![](assets-fenbi-84041/6b113570d12d83bb534e688691e251f80783d1fdeb603cee9f55fe5b28599a9f.png)人、91-56=35人。设落选选手中男女人数分别为3x人和4x人，则报名选手中男女人数之比为![](assets-fenbi-84041/7dcd9c00f801d7ad447b93f907504078a167e1d4f2b467e48dda86b271a113aa.png)，解得x=4，所以落选选手人数为3x+4x=7x=7×4=28人，报名选手共有91+28=119人。
 
-方法二：线段法。根据题意可得，入选选手中男选手占比为![](assets-fenbi-84041/45e0b55adcf25ea9fa830e959db15e50780f47353e432674bd91e8acbb6ddd51.png)，落选选手中男选手占比为![](assets-fenbi-84041/321ed404c17dd75eeca97422cbcb45373fc1a27444c83b38c2b181262716ca08.png)，报名选手中男选手占比为![](assets-fenbi-84041/7b8f5df8d3903d5316c297cd8939b6c4dfbc53eddb967f3597b6245a2a65b187.png)，所以![](assets-fenbi-84041/46fe1d32bc2727eece6aceb48925d38c6b3d930c38a9348471093cbfc0b884ae.png)，化简得![](assets-fenbi-84041/1b8800cc3f450c826f842741e532c17c63e8e2d839741397bebe1fa41f55fc50.png)，解得落选选手人数=28人，所以报名选手共有91+28=119人。
+方法二：线段法。根据题意可得，入选选手中男选手占比为8/13，落选选手中男选手占比为![](assets-fenbi-84041/321ed404c17dd75eeca97422cbcb45373fc1a27444c83b38c2b181262716ca08.png)，报名选手中男选手占比为![](assets-fenbi-84041/7b8f5df8d3903d5316c297cd8939b6c4dfbc53eddb967f3597b6245a2a65b187.png)，所以![](assets-fenbi-84041/46fe1d32bc2727eece6aceb48925d38c6b3d930c38a9348471093cbfc0b884ae.png)，化简得![](assets-fenbi-84041/1b8800cc3f450c826f842741e532c17c63e8e2d839741397bebe1fa41f55fc50.png)，解得落选选手人数=28人，所以报名选手共有91+28=119人。
 
 ![](assets-fenbi-84041/4f3e25fe96d701da4ce0648c07642f2d785227538df8cfc870b98fdae4ffdef4.png)
 
@@ -2102,13 +2102,13 @@ C
 
 某市公安局从辖区2个派出所分别抽调2名警察，将他们随机安排到3个专案组工作，则来自同一派出所的警察不在同一组的概率是：
 
-A. ![](assets-fenbi-84041/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)
+A. 2/3
 
-B. ![](assets-fenbi-84041/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)
+B. 1/4
 
-C. ![](assets-fenbi-84041/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)
+C. 1/3
 
-D. ![](assets-fenbi-84041/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+D. 1/2
 
 <details><summary>第 63 题 · 答案与解析</summary>
 
@@ -2156,7 +2156,7 @@ D
 
 ### 第 65 题
 
-甲乙两车分别以96千米/小时、24千米/小时的速度在一长288千米的环形公路上行驶。如果甲乙两车在同一地点、沿同一方向同时出发，甲每次追上乙时甲减速![](assets-fenbi-84041/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，而乙增速![](assets-fenbi-84041/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，则当甲乙速度相等时甲所行驶的路程是：
+甲乙两车分别以96千米/小时、24千米/小时的速度在一长288千米的环形公路上行驶。如果甲乙两车在同一地点、沿同一方向同时出发，甲每次追上乙时甲减速1/3，而乙增速1/3，则当甲乙速度相等时甲所行驶的路程是：
 
 A. 950千米
 
