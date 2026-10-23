@@ -114,7 +114,7 @@ H市平川县和云安县过去经济发展较为落后。近些年来，平川�
 
 **请你根据****“****给定资料**1**”****，谈谈****D村是如何通过****“****蛋生鸡，鸡生蛋****”****的方式破解村集体经济发展密码的。（****30分）**
 
-关联材料：material-e224c1e4123cc0ba、material-9547425208bb0697、material-6e820f6b557aebd3、material-bfcc5d33b1edab63
+关联材料：材料 material-e224c1e4123cc0ba、材料 material-9547425208bb0697、材料 material-6e820f6b557aebd3、材料 material-bfcc5d33b1edab63
 
 作答要求：
 
@@ -124,7 +124,7 @@ H市平川县和云安县过去经济发展较为落后。近些年来，平川�
 
 **假如你是平川县政府办的一名工作人员，请结合****“****给定资料**2**”****，梳理平川县在乡镇建设中存在的一些问题，并提出解决问题的建议。（****30分）**
 
-关联材料：material-e224c1e4123cc0ba、material-9547425208bb0697、material-6e820f6b557aebd3、material-bfcc5d33b1edab63
+关联材料：材料 material-e224c1e4123cc0ba、材料 material-9547425208bb0697、材料 material-6e820f6b557aebd3、材料 material-bfcc5d33b1edab63
 
 作答要求：
 
@@ -140,7 +140,7 @@ H市平川县和云安县过去经济发展较为落后。近些年来，平川�
 
 **假如你是****璧云****区委宣传部工作人员，请根据****“****给定资料**3**”****拟写一篇反映****璧云****区****“****四城****”****建设成就的宣传稿。（****40分）**
 
-关联材料：material-e224c1e4123cc0ba、material-9547425208bb0697、material-6e820f6b557aebd3、material-bfcc5d33b1edab63
+关联材料：材料 material-e224c1e4123cc0ba、材料 material-9547425208bb0697、材料 material-6e820f6b557aebd3、材料 material-bfcc5d33b1edab63
 
 作答要求：
 
@@ -156,7 +156,7 @@ H市平川县和云安县过去经济发展较为落后。近些年来，平川�
 
 **请你根据****“****给定资料**4**”****，撰写一篇画韵坊社区邻里中心建设特色的工作简报。（****50分）**
 
-关联材料：material-e224c1e4123cc0ba、material-9547425208bb0697、material-6e820f6b557aebd3、material-bfcc5d33b1edab63
+关联材料：材料 material-e224c1e4123cc0ba、材料 material-9547425208bb0697、材料 material-6e820f6b557aebd3、材料 material-bfcc5d33b1edab63
 
 作答要求：
 

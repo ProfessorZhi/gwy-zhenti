@@ -104,7 +104,7 @@ M市市场监督管理局，市场科工作人员表示，禁止未成年人进�
 
 **请根据****“给定资料**1**”，谈谈你对“旧曲新唱”的理解。（35分）**
 
-关联材料：material-b8f756ee295fae76、material-53f279c17ea40e01、material-4fd739ccdab33784、material-9d312dcaa5d80d65
+关联材料：材料 material-b8f756ee295fae76、材料 material-53f279c17ea40e01、材料 material-4fd739ccdab33784、材料 material-9d312dcaa5d80d65
 
 作答要求：
 
@@ -114,7 +114,7 @@ M市市场监督管理局，市场科工作人员表示，禁止未成年人进�
 
 **假如你是****F市水利局的工作人员，请根据“给定资料**2**”，对F市在组织“限水体验日”活动中存在的问题进行梳理，并谈谈如何在今后的工作中避免类似情况发生。（35分）**
 
-关联材料：material-b8f756ee295fae76、material-53f279c17ea40e01、material-4fd739ccdab33784、material-9d312dcaa5d80d65
+关联材料：材料 material-b8f756ee295fae76、材料 material-53f279c17ea40e01、材料 material-4fd739ccdab33784、材料 material-9d312dcaa5d80d65
 
 作答要求：
 
@@ -124,7 +124,7 @@ M市市场监督管理局，市场科工作人员表示，禁止未成年人进�
 
 **请根据****“给定资料**3**”，分析M市未成年人去酒吧饮酒消费“****屡****禁不止****”的原因，并提出解决建议。（35分）**
 
-关联材料：material-b8f756ee295fae76、material-53f279c17ea40e01、material-4fd739ccdab33784、material-9d312dcaa5d80d65
+关联材料：材料 material-b8f756ee295fae76、材料 material-53f279c17ea40e01、材料 material-4fd739ccdab33784、材料 material-9d312dcaa5d80d65
 
 作答要求：
 
@@ -134,7 +134,7 @@ M市市场监督管理局，市场科工作人员表示，禁止未成年人进�
 
 **假如你是西区政府办公室工作人员小谢****，****请根据****“给定资料**4**”，写一份反映西区基层治理工作简报。（45分）**
 
-关联材料：material-b8f756ee295fae76、material-53f279c17ea40e01、material-4fd739ccdab33784、material-9d312dcaa5d80d65
+关联材料：材料 material-b8f756ee295fae76、材料 material-53f279c17ea40e01、材料 material-4fd739ccdab33784、材料 material-9d312dcaa5d80d65
 
 作答要求：
 

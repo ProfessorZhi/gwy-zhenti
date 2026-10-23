@@ -116,7 +116,7 @@ B市地铁一向是其他城市市民羡慕的对象：线路多、准点率高�
 
 **请概括“给定资料”所反映的主要内容。（10分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 
@@ -126,7 +126,7 @@ B市地铁一向是其他城市市民羡慕的对象：线路多、准点率高�
 
 **结合“给定资料2”，谈谈对文中“积极的治理与防范胜过消极的躲避”这一表述的理解。（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 
@@ -136,7 +136,7 @@ B市地铁一向是其他城市市民羡慕的对象：线路多、准点率高�
 
 **请从政治经济角度，对L市主要领导所面临的“两难困境”做简要分析。（10分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 
@@ -146,7 +146,7 @@ B市地铁一向是其他城市市民羡慕的对象：线路多、准点率高�
 
 **从实践出发，简要论述如何破解类似该市“两难困境”的难题。（10分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 
@@ -156,7 +156,7 @@ B市地铁一向是其他城市市民羡慕的对象：线路多、准点率高�
 
 **分析“给定资料”，就如何整治庸官懒政提出对策。（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 
@@ -166,7 +166,7 @@ B市地铁一向是其他城市市民羡慕的对象：线路多、准点率高�
 
 **阅读“给定资料”，以“坚持勤政廉政，促进和谐发展”为主题写一篇议论文。（40分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 

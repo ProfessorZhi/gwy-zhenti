@@ -23,6 +23,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--manifest', default=DEFAULT)
     parser.add_argument('--write', action='store_true')
+    parser.add_argument('--check', action='store_true', help='只检查（默认行为）')
     args = parser.parse_args()
 
     records, stale, missing = [], [], []

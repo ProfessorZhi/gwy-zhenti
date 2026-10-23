@@ -77,6 +77,21 @@ def split_explanation(block):
     return (block[:match.start()], block[match.end():]) if match else (block, '')
 
 
+# 申论的 explanationHtml 里，「参考答案说明」已经随参考答案渲染在答案区，
+# 解析区只保留从「考点」开始的部分。比对源文本时要用同一条规则，否则会把
+# 有意的拆分当成内容丢失。
+KAODIAN = re.compile(r'<p[^>]*>\s*<strong>\s*考点\s*</strong>', re.I)
+
+
+def explanation_tail(html_text):
+    text = html_text or ''
+    found = KAODIAN.search(text)
+    if found:
+        text = text[found.start():]
+    text = re.sub(r'<strong>\s*考点\s*</strong>\s*[：:]\s*考点', '<strong>考点</strong>：', text)
+    return re.sub(r'<strong>\s*来源\s*</strong>\s*[：:]\s*来源', '<strong>来源</strong>：', text)
+
+
 def images_in_md(text):
     return re.findall(r'!\[[^\]]*\]\(([^)]+)\)', text or '')
 
@@ -183,7 +198,7 @@ def audit_paper(manifest_row, document, where):
                 state['ans_miss'].append(number)
             elif cover(source_answer, source_explanation) < 0.9:
                 state['ans_low'].append((number, round(cover(source_answer, source_explanation), 3)))
-        source_expl, md_expl = nz(explanation_html), nz(md_explanation)
+        source_expl, md_expl = nz(explanation_tail(explanation_html)), nz(md_explanation)
         if source_expl:
             if not md_expl:
                 state['expl_miss'].append(number)

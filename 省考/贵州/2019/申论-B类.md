@@ -84,7 +84,7 @@ P县农家乐要发展，其协会应该发挥作用。而不是像现在只是�
 
 **根据给定资料**1**，概括新凤村****“土专家”的特点。（30分）**
 
-关联材料：material-171d1d3c5a12501b、material-9d6ca9041d19d2db、material-4de601a0f6162d17、material-b0800be66c2363b9
+关联材料：材料 material-171d1d3c5a12501b、材料 material-9d6ca9041d19d2db、材料 material-4de601a0f6162d17、材料 material-b0800be66c2363b9
 
 作答要求：
 
@@ -94,7 +94,7 @@ P县农家乐要发展，其协会应该发挥作用。而不是像现在只是�
 
 **请根据给定资料**2**，概括该村近年来遇到的问题，并分析其原因。（****30分）**
 
-关联材料：material-171d1d3c5a12501b、material-9d6ca9041d19d2db、material-4de601a0f6162d17、material-b0800be66c2363b9
+关联材料：材料 material-171d1d3c5a12501b、材料 material-9d6ca9041d19d2db、材料 material-4de601a0f6162d17、材料 material-b0800be66c2363b9
 
 作答要求：
 
@@ -104,7 +104,7 @@ P县农家乐要发展，其协会应该发挥作用。而不是像现在只是�
 
 **请根据给定资料**3**，概括****P县农家乐****存****在的问题并据此提出相应的改进建议。（****40分）**
 
-关联材料：material-171d1d3c5a12501b、material-9d6ca9041d19d2db、material-4de601a0f6162d17、material-b0800be66c2363b9
+关联材料：材料 material-171d1d3c5a12501b、材料 material-9d6ca9041d19d2db、材料 material-4de601a0f6162d17、材料 material-b0800be66c2363b9
 
 作答要求：
 
@@ -120,7 +120,7 @@ P县农家乐要发展，其协会应该发挥作用。而不是像现在只是�
 
 **王家村拟参照兴隆村的模式改进农家书屋，假设你是王家村农家书****屋****的管理员，请你写一篇****宣****传稿，向村民宣传改进后农家书屋的作用。（****50分）**
 
-关联材料：material-171d1d3c5a12501b、material-9d6ca9041d19d2db、material-4de601a0f6162d17、material-b0800be66c2363b9
+关联材料：材料 material-171d1d3c5a12501b、材料 material-9d6ca9041d19d2db、材料 material-4de601a0f6162d17、材料 material-b0800be66c2363b9
 
 作答要求：
 

@@ -108,7 +108,7 @@
 
 **概括“资料6-9”的主要内容。（10分）**
 
-关联材料：material-1、material-2、material-3、material-4
+关联材料：材料 1、材料 2、材料 3、材料 4
 
 作答要求：
 
@@ -118,7 +118,7 @@
 
 **《庄子•至乐》中说：“夫天下之所尊者，富贵寿善也；所乐者，身安厚味美服好色音声也；所下者，贫贱夭恶也；所苦者，身不得安逸，口不得厚味，形不得美服，目不得好色，耳不得音声；若不得者，则大忧以惧。其为形也亦愚哉。”请将这段话译为白话文，并简要概述这段话给你的启示。（15分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-4、material-10、material-11
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 4、材料 10、材料 11
 
 作答要求：
 
@@ -128,7 +128,7 @@
 
 **结合“资料3”，分析一些青年人才“逃离北上广”的主要原因。（8分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-4、material-10、material-11
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 4、材料 10、材料 11
 
 作答要求：
 
@@ -138,7 +138,7 @@
 
 **参考“资料1” 和“资料5”中有关消费现象：①用一句话对“过度消费”作名词解释；②概括其特点；③指出其危害性。（12分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-4、material-10、material-11
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 4、材料 10、材料 11
 
 作答要求：
 
@@ -148,7 +148,7 @@
 
 **结合“资料”，就“富了以后怎么办”提出对策。（15分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-4、material-10、material-11
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 4、材料 10、材料 11
 
 作答要求：
 
@@ -158,7 +158,7 @@
 
 **阅读“资料”，以“财富”为主题，写一篇议论文。（40分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-4、material-10、material-11
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 4、材料 10、材料 11
 
 作答要求：
 

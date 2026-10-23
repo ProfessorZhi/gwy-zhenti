@@ -92,7 +92,7 @@ A县综合行政执法局以实现执法规范化、打造一支高品质执法�
 
 **根据****“给定资料**1**”，概括F省打造法治文化阵地的做法。（15分）**
 
-关联材料：material-cb67cd717941f9ca、material-4e45cf0d77b8a3c0、material-44a9697ceba01351、material-8a210ea2b2eeaf26、material-836b08cc1ff3cec5
+关联材料：材料 material-cb67cd717941f9ca、材料 material-4e45cf0d77b8a3c0、材料 material-44a9697ceba01351、材料 material-8a210ea2b2eeaf26、材料 material-836b08cc1ff3cec5
 
 作答要求：
 
@@ -106,7 +106,7 @@ A县综合行政执法局以实现执法规范化、打造一支高品质执法�
 
 **根据****“给定资料**2**”，概括X市法律顾问在执法过程中发挥了哪些作用。（20分）**
 
-关联材料：material-cb67cd717941f9ca、material-4e45cf0d77b8a3c0、material-44a9697ceba01351、material-8a210ea2b2eeaf26、material-836b08cc1ff3cec5
+关联材料：材料 material-cb67cd717941f9ca、材料 material-4e45cf0d77b8a3c0、材料 material-44a9697ceba01351、材料 material-8a210ea2b2eeaf26、材料 material-836b08cc1ff3cec5
 
 作答要求：
 
@@ -120,7 +120,7 @@ A县综合行政执法局以实现执法规范化、打造一支高品质执法�
 
 **根据****“给定资料**3**”，请谈谈调解员釆取了哪些办法促使双方当事人达成调解协议。（30分）**
 
-关联材料：material-cb67cd717941f9ca、material-4e45cf0d77b8a3c0、material-44a9697ceba01351、material-8a210ea2b2eeaf26、material-836b08cc1ff3cec5
+关联材料：材料 material-cb67cd717941f9ca、材料 material-4e45cf0d77b8a3c0、材料 material-44a9697ceba01351、材料 material-8a210ea2b2eeaf26、材料 material-836b08cc1ff3cec5
 
 作答要求：
 
@@ -134,7 +134,7 @@ A县综合行政执法局以实现执法规范化、打造一支高品质执法�
 
 **根据****“给定资料**4**”****，针对****S省消费市场在长假期间存在的部分问题，请拟写《消费维权情况反映》中的建议部分。（35分）**
 
-关联材料：material-cb67cd717941f9ca、material-4e45cf0d77b8a3c0、material-44a9697ceba01351、material-8a210ea2b2eeaf26、material-836b08cc1ff3cec5
+关联材料：材料 material-cb67cd717941f9ca、材料 material-4e45cf0d77b8a3c0、材料 material-44a9697ceba01351、材料 material-8a210ea2b2eeaf26、材料 material-836b08cc1ff3cec5
 
 作答要求：
 
@@ -150,7 +150,7 @@ A县综合行政执法局以实现执法规范化、打造一支高品质执法�
 
 **省里将召开****“综合行政执法体制改革经验交流会****”****，****A县被邀请做经验介绍。假设由章副县长参加此次会议，请根据“给定资料**5**”****，为章副县长拟写一份讲话稿。（****50分）**
 
-关联材料：material-cb67cd717941f9ca、material-4e45cf0d77b8a3c0、material-44a9697ceba01351、material-8a210ea2b2eeaf26、material-836b08cc1ff3cec5
+关联材料：材料 material-cb67cd717941f9ca、材料 material-4e45cf0d77b8a3c0、材料 material-44a9697ceba01351、材料 material-8a210ea2b2eeaf26、材料 material-836b08cc1ff3cec5
 
 作答要求：
 

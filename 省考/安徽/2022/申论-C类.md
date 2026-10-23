@@ -92,7 +92,7 @@
 
 **根据给定资料**1**，请你概括“法博士”在乡村法律服务方面发挥了哪些作用。（****20****分）**
 
-关联材料：material-cb601c38455f456d、material-bb655c8c340fcd63、material-0747cf1ab7595a87、material-abfba602ffc8e1eb
+关联材料：材料 material-cb601c38455f456d、材料 material-bb655c8c340fcd63、材料 material-0747cf1ab7595a87、材料 material-abfba602ffc8e1eb
 
 作答要求：
 
@@ -110,7 +110,7 @@
 
 **根据给定资料**2**，请你归纳东白区劳动监察执法大队是怎样“执法为民、排解薪忧”的。（****20****分）**
 
-关联材料：material-cb601c38455f456d、material-bb655c8c340fcd63、material-0747cf1ab7595a87、material-abfba602ffc8e1eb
+关联材料：材料 material-cb601c38455f456d、材料 material-bb655c8c340fcd63、材料 material-0747cf1ab7595a87、材料 material-abfba602ffc8e1eb
 
 作答要求：
 
@@ -126,7 +126,7 @@
 
 **请根据给定资料**3**，谈谈为什么说“任务百千条，走出去是第一条”。（****25****分）**
 
-关联材料：material-cb601c38455f456d、material-bb655c8c340fcd63、material-0747cf1ab7595a87、material-abfba602ffc8e1eb
+关联材料：材料 material-cb601c38455f456d、材料 material-bb655c8c340fcd63、材料 material-0747cf1ab7595a87、材料 material-abfba602ffc8e1eb
 
 作答要求：
 
@@ -142,7 +142,7 @@
 
 **省里拟开展全省交通管理创新案例评选，请根据给定资料**4**，为****H****市交通事故风险防控中心拟写一份参评材料。（****35****分）**
 
-关联材料：material-cb601c38455f456d、material-bb655c8c340fcd63、material-0747cf1ab7595a87、material-abfba602ffc8e1eb
+关联材料：材料 material-cb601c38455f456d、材料 material-bb655c8c340fcd63、材料 material-0747cf1ab7595a87、材料 material-abfba602ffc8e1eb
 
 作答要求：
 

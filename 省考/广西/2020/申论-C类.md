@@ -84,7 +84,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**1**，分析民警小童采用特别的微信头像的原因。（20分）**
 
-关联材料：material-bcdf2d9d1f6a6359、material-94b65c91d3970500、material-25cd06eb4f9b81c5、material-7a99ea236d984352
+关联材料：材料 material-bcdf2d9d1f6a6359、材料 material-94b65c91d3970500、材料 material-25cd06eb4f9b81c5、材料 material-7a99ea236d984352
 
 作答要求：
 
@@ -100,7 +100,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**2**，分析小梁成功解决卫生“老大难”问题的****措施。（****20分）**
 
-关联材料：material-bcdf2d9d1f6a6359、material-94b65c91d3970500、material-25cd06eb4f9b81c5、material-7a99ea236d984352
+关联材料：材料 material-bcdf2d9d1f6a6359、材料 material-94b65c91d3970500、材料 material-25cd06eb4f9b81c5、材料 material-7a99ea236d984352
 
 作答要求：
 
@@ -116,7 +116,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**3**，请你提出整治J县乡村电线杆乱象的具体措施。（25分）**
 
-关联材料：material-bcdf2d9d1f6a6359、material-94b65c91d3970500、material-25cd06eb4f9b81c5、material-7a99ea236d984352
+关联材料：材料 material-bcdf2d9d1f6a6359、材料 material-94b65c91d3970500、材料 material-25cd06eb4f9b81c5、材料 material-7a99ea236d984352
 
 作答要求：
 
@@ -132,7 +132,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**4**，请就东西部扶贫劳务协作“FD模式”的基本****做法拟写一份工作简报。****（****35分****）**
 
-关联材料：material-bcdf2d9d1f6a6359、material-94b65c91d3970500、material-25cd06eb4f9b81c5、material-7a99ea236d984352
+关联材料：材料 material-bcdf2d9d1f6a6359、材料 material-94b65c91d3970500、材料 material-25cd06eb4f9b81c5、材料 material-7a99ea236d984352
 
 作答要求：
 

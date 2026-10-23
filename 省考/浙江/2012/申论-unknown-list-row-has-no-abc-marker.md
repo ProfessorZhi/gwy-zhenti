@@ -94,7 +94,7 @@
 
 **根据给定资料，概括浙江省发展海洋经济的优势条件。（25分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11
 
 作答要求：
 
@@ -104,7 +104,7 @@
 
 **“推进浙江海洋经济发展示范区建设，是浙江省加快经济转型升级的重要引擎。”请谈谈你对这句话的理解。（25分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11
 
 作答要求：
 
@@ -114,7 +114,7 @@
 
 **围绕给定资料主旨，联系浙江实际，自拟标题，自选角度，写一篇议论文。（50分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11
 
 作答要求：
 

@@ -94,7 +94,7 @@ F县嘉禾镇尚贤村村口礼堂，是全村最大的一座建筑，远近闻�
 
 **根据给定资料**1**，请谈谈你对“村里的发展，既要摘掉‘穷帽子’，又要改变‘老样子’，还要留住‘好根子’”这句话的理解。（20分）**
 
-关联材料：material-01be5b6923da0550、material-16f3ae5237322ec0、material-dfdffb7020b5840f、material-36a6ac124a14ae69
+关联材料：材料 material-01be5b6923da0550、材料 material-16f3ae5237322ec0、材料 material-dfdffb7020b5840f、材料 material-36a6ac124a14ae69
 
 作答要求：
 
@@ -112,7 +112,7 @@ F县嘉禾镇尚贤村村口礼堂，是全村最大的一座建筑，远近闻�
 
 **请根据给定资料**2**，梳理当前K县农村寄递物流体系存在的问题，并提出相应的改进建议。（25分）**
 
-关联材料：material-01be5b6923da0550、material-16f3ae5237322ec0、material-dfdffb7020b5840f、material-36a6ac124a14ae69
+关联材料：材料 material-01be5b6923da0550、材料 material-16f3ae5237322ec0、材料 material-dfdffb7020b5840f、材料 material-36a6ac124a14ae69
 
 作答要求：
 
@@ -128,7 +128,7 @@ F县嘉禾镇尚贤村村口礼堂，是全村最大的一座建筑，远近闻�
 
 **F县纪委收到举报信后，组织调查组到嘉禾镇调查了解情况。假设你是嘉禾镇政府工作人员，请根据给定资料**3**，起草一份给调查组的汇报提纲。（25分）**
 
-关联材料：material-01be5b6923da0550、material-16f3ae5237322ec0、material-dfdffb7020b5840f、material-36a6ac124a14ae69
+关联材料：材料 material-01be5b6923da0550、材料 material-16f3ae5237322ec0、材料 material-dfdffb7020b5840f、材料 material-36a6ac124a14ae69
 
 作答要求：
 
@@ -144,7 +144,7 @@ F县嘉禾镇尚贤村村口礼堂，是全村最大的一座建筑，远近闻�
 
 **红星镇推进蚕桑产业发展工作入选省乡村振兴局拟印发的乡村振兴典型案例汇编。请根据给定资料**4**，为红星镇撰写一份案例介绍材料。（30分）**
 
-关联材料：material-01be5b6923da0550、material-16f3ae5237322ec0、material-dfdffb7020b5840f、material-36a6ac124a14ae69
+关联材料：材料 material-01be5b6923da0550、材料 material-16f3ae5237322ec0、材料 material-dfdffb7020b5840f、材料 material-36a6ac124a14ae69
 
 作答要求：
 

@@ -142,7 +142,7 @@ J市公安局情报指挥中心郑主任介绍，以前碰到这类事件，群�
 
 **根据****“给定资料**1**”，谈谈F县是如何在清兰镇农村土地数字化改革过程中做好法治保障工作的。（15分）**
 
-关联材料：material-bf90e9f963f0f941、material-ec2abc12990c4ec0、material-9e6ed44b815afc34、material-f12963892c784a6e
+关联材料：材料 material-bf90e9f963f0f941、材料 material-ec2abc12990c4ec0、材料 material-9e6ed44b815afc34、材料 material-f12963892c784a6e
 
 作答要求：
 
@@ -156,7 +156,7 @@ J市公安局情报指挥中心郑主任介绍，以前碰到这类事件，群�
 
 **根据****“给定资料**2**”，分析“数字法院”有什么优势？（20分）**
 
-关联材料：material-bf90e9f963f0f941、material-ec2abc12990c4ec0、material-9e6ed44b815afc34、material-f12963892c784a6e
+关联材料：材料 material-bf90e9f963f0f941、材料 material-ec2abc12990c4ec0、材料 material-9e6ed44b815afc34、材料 material-f12963892c784a6e
 
 作答要求：
 
@@ -166,7 +166,7 @@ J市公安局情报指挥中心郑主任介绍，以前碰到这类事件，群�
 
 **根据****“给定资料**3**”，梳理H市营商环境存在的问题，并提出解决建议。（30分）**
 
-关联材料：material-bf90e9f963f0f941、material-ec2abc12990c4ec0、material-9e6ed44b815afc34、material-f12963892c784a6e
+关联材料：材料 material-bf90e9f963f0f941、材料 material-ec2abc12990c4ec0、材料 material-9e6ed44b815afc34、材料 material-f12963892c784a6e
 
 作答要求：
 
@@ -182,7 +182,7 @@ J市公安局情报指挥中心郑主任介绍，以前碰到这类事件，群�
 
 **根据****“给定资料**4**”，以“基层治理共联动，民声一键解民忧”为题，拟写一篇宣传稿，登载在J市政府官网上。（35分****）**
 
-关联材料：material-bf90e9f963f0f941、material-ec2abc12990c4ec0、material-9e6ed44b815afc34、material-f12963892c784a6e
+关联材料：材料 material-bf90e9f963f0f941、材料 material-ec2abc12990c4ec0、材料 material-9e6ed44b815afc34、材料 material-f12963892c784a6e
 
 作答要求：
 

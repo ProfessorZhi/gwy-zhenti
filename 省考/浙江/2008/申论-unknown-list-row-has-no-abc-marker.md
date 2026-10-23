@@ -140,7 +140,7 @@ C类指标：指人际以及个体与社会的和谐程度，包括对人际交�
 
 **概述资料**2**~**3**提供的主要信息。（20分）**
 
-关联材料：material-1、material-2
+关联材料：材料 1、材料 2
 
 作答要求：
 
@@ -150,7 +150,7 @@ C类指标：指人际以及个体与社会的和谐程度，包括对人际交�
 
 **假如你是浙江地方政府的一名公务员，请问评价当地全面建设小康社会应从哪几个方面考虑？（30分）**
 
-关联材料：material-3、material-1、material-2、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15
+关联材料：材料 3、材料 1、材料 2、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15
 
 作答要求：
 
@@ -164,7 +164,7 @@ C类指标：指人际以及个体与社会的和谐程度，包括对人际交�
 
 **请以“蓝图”为题，写一篇文章。（50分）**
 
-关联材料：material-3、material-1、material-2、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15
+关联材料：材料 3、材料 1、材料 2、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15
 
 作答要求：
 

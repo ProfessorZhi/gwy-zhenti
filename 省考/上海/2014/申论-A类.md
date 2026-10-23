@@ -112,7 +112,7 @@
 
 **（2）简要回答国务院为什么要向全国人大常委会请求授权批准广东省暂时调整部分审批项目。**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 
@@ -122,7 +122,7 @@
 
 **结合给定资料中的几个案例，分析我国有些地方政府行政审批所存在的问题。（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 
@@ -132,7 +132,7 @@
 
 **结合给定资料，概括某市政务大厅存在的主要问题，并提出对策措施。（20分）**
 
-关联材料：material-7
+关联材料：材料 7
 
 作答要求：
 
@@ -142,7 +142,7 @@
 
 **结合给定资料，谈谈政府在转变职能进程中应履行好哪些职责。（10分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 
@@ -152,7 +152,7 @@
 
 **结合给定资料，围绕“当前转变政府职能的核心”写一篇文章。（40分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 

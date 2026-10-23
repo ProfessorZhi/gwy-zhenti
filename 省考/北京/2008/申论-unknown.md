@@ -112,7 +112,7 @@
 
 **请用200字以内的篇幅概括目前我国行业自律中存在的主要问题。**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 
@@ -122,7 +122,7 @@
 
 **试分析造成目前我国行业自律问题的原因并提出具体可行的对策建议。**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 
@@ -132,7 +132,7 @@
 
 **请从“行业协会”的角度谈谈如何提高“中国制造”在世界上的地位。**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 
@@ -142,7 +142,7 @@
 
 **“行业自律是非常必要的，但它不能解决商品质量和价格方面的一切问题。”请结合资料，联系实际，就如何解决这一问题，写一篇议论文。****（40分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 

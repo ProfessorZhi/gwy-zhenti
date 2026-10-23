@@ -88,7 +88,7 @@
 
 **请概括“给定资料3～5”的主要内容。（10分）**
 
-关联材料：material-1、material-2、material-3
+关联材料：材料 1、材料 2、材料 3
 
 作答要求：
 
@@ -98,7 +98,7 @@
 
 **“给定资料3”中科菲·安南指出“志愿精神是联合国精神的最终体现”，请谈谈你对这一表述的理解。（15分）**
 
-关联材料：material-1
+关联材料：材料 1
 
 作答要求：
 
@@ -108,7 +108,7 @@
 
 **志愿服务应具有哪些特征？你认为“给定资料”中的案例是否与志愿服务应具有的特征相符。(10分)**
 
-关联材料：material-4、material-5、material-1、material-2、material-3、material-6、material-7、material-8、material-9、material-10
+关联材料：材料 4、材料 5、材料 1、材料 2、材料 3、材料 6、材料 7、材料 8、材料 9、材料 10
 
 作答要求：
 
@@ -118,7 +118,7 @@
 
 **如何建立有效的激励机制，提高志愿者积极性，促进志愿服务的发展。(10分)**
 
-关联材料：material-4、material-5、material-1、material-2、material-3、material-6、material-7、material-8、material-9、material-10
+关联材料：材料 4、材料 5、材料 1、材料 2、材料 3、材料 6、材料 7、材料 8、材料 9、材料 10
 
 作答要求：
 
@@ -128,7 +128,7 @@
 
 **请结合“给定资料”，分析我国社会志愿服务存在的主要问题，并提出相应对策。（15分）**
 
-关联材料：material-4、material-5、material-1、material-2、material-3、material-6、material-7、material-8、material-9、material-10
+关联材料：材料 4、材料 5、材料 1、材料 2、材料 3、材料 6、材料 7、材料 8、材料 9、材料 10
 
 作答要求：
 
@@ -138,7 +138,7 @@
 
 **阅读“给定资料”，以“社会主义市场经济条件下，志愿服务的价值取向”为主题，写一篇议论文。（40分）**
 
-关联材料：material-4、material-5、material-1、material-2、material-3、material-6、material-7、material-8、material-9、material-10
+关联材料：材料 4、材料 5、材料 1、材料 2、材料 3、材料 6、材料 7、材料 8、材料 9、材料 10
 
 作答要求：
 

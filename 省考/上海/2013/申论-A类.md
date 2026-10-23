@@ -102,7 +102,7 @@
 
 **请概括“给定资料**6**\-**9**”的主要内容。（10分）**
 
-关联材料：material-1、material-2、material-3、material-4
+关联材料：材料 1、材料 2、材料 3、材料 4
 
 作答要求：
 
@@ -112,7 +112,7 @@
 
 **请结合“给定资料”，谈谈曹道云、陈家顺同志的先进事迹在哪些方面值得我们学习。（15分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-4、material-10
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 4、材料 10
 
 作答要求：
 
@@ -124,7 +124,7 @@
 
 **（1）简要概括“资料4”中提到的公务员责任意识缺失的几种表现。（10分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-4、material-10
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 4、材料 10
 
 作答要求：
 
@@ -138,7 +138,7 @@
 
 **请结合“给定资料”，概括当前我国行政问责制实施中存在的主要问题。（10分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-4、material-10
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 4、材料 10
 
 作答要求：
 
@@ -148,7 +148,7 @@
 
 **阅读“给定资料”，以“强化公务员责任意识”为主题写一篇议论文。（40分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-4、material-10
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 4、材料 10
 
 作答要求：
 

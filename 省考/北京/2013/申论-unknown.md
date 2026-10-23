@@ -134,7 +134,7 @@
 
 **根据给定材料，概括赞成节假日高速公路免费政策的主要依据。（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 
@@ -144,7 +144,7 @@
 
 **阅读”给定材料**14**“，针对××省强制执行带薪休假的措施，谈谈你的看法，并说明理由。（20分）**
 
-关联材料：material-14
+关联材料：材料 14
 
 作答要求：
 
@@ -154,7 +154,7 @@
 
 **根据给定材料，请就政府今后如何缓解或避免节假日出行拥堵提出对策建议。（25分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 
@@ -164,7 +164,7 @@
 
 **根据给定材料，结合实际，以“科学管理与文明出行”话题，自拟题目，撰写一篇议论文。（40分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 

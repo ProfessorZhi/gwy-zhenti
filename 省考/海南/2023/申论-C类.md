@@ -116,7 +116,7 @@ B市清风社区所辖的青林湾小区有100多幢高层住宅。去年疫情�
 
 **请根据****“给定资料**1**”，谈谈J市是如何推进诉源治理工作的。（20分）**
 
-关联材料：material-25f2aeaa4a68e758、material-511f0c2ce73d9691、material-3492c20eb28014bd、material-e78efb818d0a4160
+关联材料：材料 material-25f2aeaa4a68e758、材料 material-511f0c2ce73d9691、材料 material-3492c20eb28014bd、材料 material-e78efb818d0a4160
 
 作答要求：
 
@@ -126,7 +126,7 @@ B市清风社区所辖的青林湾小区有100多幢高层住宅。去年疫情�
 
 **请根据****“给定资料**2**”，谈谈对画线句子“****‘****烟火气****’****管不好，很可能就变成了****‘火气’”的理解。（20分）**
 
-关联材料：material-25f2aeaa4a68e758、material-511f0c2ce73d9691、material-3492c20eb28014bd、material-e78efb818d0a4160
+关联材料：材料 material-25f2aeaa4a68e758、材料 material-511f0c2ce73d9691、材料 material-3492c20eb28014bd、材料 material-e78efb818d0a4160
 
 作答要求：
 
@@ -136,7 +136,7 @@ B市清风社区所辖的青林湾小区有100多幢高层住宅。去年疫情�
 
 **请根据****“给定资料**3**”，概括Z省在融合型大社区治理过程中遇到的新问题以及运用的新解法。（25分）**
 
-关联材料：material-25f2aeaa4a68e758、material-511f0c2ce73d9691、material-3492c20eb28014bd、material-e78efb818d0a4160
+关联材料：材料 material-25f2aeaa4a68e758、材料 material-511f0c2ce73d9691、材料 material-3492c20eb28014bd、材料 material-e78efb818d0a4160
 
 作答要求：
 
@@ -146,7 +146,7 @@ B市清风社区所辖的青林湾小区有100多幢高层住宅。去年疫情�
 
 **假如你是****L市市场监管局工作人员小符，请根据“给定资料**4**”，对座谈会上提出的问题和建议进行整理和归纳，拟写一份会议情况报告供领导参阅。（35分)**
 
-关联材料：material-25f2aeaa4a68e758、material-511f0c2ce73d9691、material-3492c20eb28014bd、material-e78efb818d0a4160
+关联材料：材料 material-25f2aeaa4a68e758、材料 material-511f0c2ce73d9691、材料 material-3492c20eb28014bd、材料 material-e78efb818d0a4160
 
 作答要求：
 

@@ -126,7 +126,7 @@ L县山核桃加工企业有280多家，年加工能力3万吨，光是龙水镇
 
 **请根据****“给定资料**1**”，谈谈椰林社区是如何做好“村改居”后半篇文章的。（20分）**
 
-关联材料：material-5dabbe6ea8be9902、material-9be9e9a2058280b0、material-9b27ac9d78f3af8f、material-0cef33b4802382f6
+关联材料：材料 material-5dabbe6ea8be9902、材料 material-9be9e9a2058280b0、材料 material-9b27ac9d78f3af8f、材料 material-0cef33b4802382f6
 
 作答要求：
 
@@ -136,7 +136,7 @@ L县山核桃加工企业有280多家，年加工能力3万吨，光是龙水镇
 
 **请根据****“给定资料**2**”，谈谈对画线句子“让温暖传递到更多角落”的理解。（20分）**
 
-关联材料：material-5dabbe6ea8be9902、material-9be9e9a2058280b0、material-9b27ac9d78f3af8f、material-0cef33b4802382f6
+关联材料：材料 material-5dabbe6ea8be9902、材料 material-9be9e9a2058280b0、材料 material-9b27ac9d78f3af8f、材料 material-0cef33b4802382f6
 
 作答要求：
 
@@ -146,7 +146,7 @@ L县山核桃加工企业有280多家，年加工能力3万吨，光是龙水镇
 
 **请根据****“给定资料**3**”，概括L县山核桃产业发展过程中存在的问题及解决措施。（2****5****分）**
 
-关联材料：material-5dabbe6ea8be9902、material-9be9e9a2058280b0、material-9b27ac9d78f3af8f、material-0cef33b4802382f6
+关联材料：材料 material-5dabbe6ea8be9902、材料 material-9be9e9a2058280b0、材料 material-9b27ac9d78f3af8f、材料 material-0cef33b4802382f6
 
 作答要求：
 
@@ -156,7 +156,7 @@ L县山核桃加工企业有280多家，年加工能力3万吨，光是龙水镇
 
 **省发改委调研组准备来****Q区调研“整村经营”情况。假如你是区发展改革局工作人员，请根据“给定资料**4**”，拟写一份书面汇报材料。（****35****分）**
 
-关联材料：material-5dabbe6ea8be9902、material-9be9e9a2058280b0、material-9b27ac9d78f3af8f、material-0cef33b4802382f6
+关联材料：材料 material-5dabbe6ea8be9902、材料 material-9be9e9a2058280b0、材料 material-9b27ac9d78f3af8f、材料 material-0cef33b4802382f6
 
 作答要求：
 

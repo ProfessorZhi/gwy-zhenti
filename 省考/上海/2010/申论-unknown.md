@@ -112,13 +112,13 @@ D.为防止手机成为泄密源头，一般不允许带入涉密会议场所，
 
 E.党政机关是国家秘密生成的重要源头和运转枢纽，机关工作人员是国家秘密信息及载体制作、使用和处理的主要承担者，我国保密工作领域中的涉密主体由党政机关及其工作人员两方面构成。（ ）
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 ### 第 2 题
 
 **概括资料第2、3、4段的中心思想。(10分)**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 
@@ -128,7 +128,7 @@ E.党政机关是国家秘密生成的重要源头和运转枢纽，机关工作
 
 **根据给定资料，归纳我国《政府信息公开条例》中信息审查方面的内容和要求。(10分)**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 
@@ -138,19 +138,19 @@ E.党政机关是国家秘密生成的重要源头和运转枢纽，机关工作
 
 **南方某市网上泄密包括哪些泄密事件，原因和问题是什么？（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 ### 第 5 题
 
 **阐述信息公开与保密的关系。（10分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 ### 第 6 题
 
 **请以“如何做好新形势下的保密工作”为主题写一篇文章。(40分)**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16
 
 作答要求：
 

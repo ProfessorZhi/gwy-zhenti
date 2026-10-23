@@ -98,7 +98,7 @@
 
 **根据****“给定资料**1**”，请谈谈N市采取了哪些措施推进基层普法工作。（20分）**
 
-关联材料：material-742d72edf795811c、material-b29d47f285a42555、material-9c86daf11da1d277、material-d8854ec6f58a3373
+关联材料：材料 material-742d72edf795811c、材料 material-b29d47f285a42555、材料 material-9c86daf11da1d277、材料 material-d8854ec6f58a3373
 
 作答要求：
 
@@ -114,7 +114,7 @@
 
 **“给定资料**2**”中介绍了桃花县市场监管局亲商助企、开展“菜单式”服务的做法，请概括其主要经验。（20分）**
 
-关联材料：material-742d72edf795811c、material-b29d47f285a42555、material-9c86daf11da1d277、material-d8854ec6f58a3373
+关联材料：材料 material-742d72edf795811c、材料 material-b29d47f285a42555、材料 material-9c86daf11da1d277、材料 material-d8854ec6f58a3373
 
 作答要求：
 
@@ -130,7 +130,7 @@
 
 **S县住建局拟进一步宣传农村自建房建设规范要求，请根据“给定资料**3**”，以县住建局的名义草拟一份《农村自建房建设规范告知书》。（25分）**
 
-关联材料：material-742d72edf795811c、material-b29d47f285a42555、material-9c86daf11da1d277、material-d8854ec6f58a3373
+关联材料：材料 material-742d72edf795811c、材料 material-b29d47f285a42555、材料 material-9c86daf11da1d277、材料 material-d8854ec6f58a3373
 
 作答要求：
 
@@ -148,7 +148,7 @@
 
 **阳春县农村黑臭水体治理工作入选全省生态环境治理典型案例汇编。请根据****“给定资料**4**”，为阳春县拟写一份案例介绍材料。（35分）**
 
-关联材料：material-742d72edf795811c、material-b29d47f285a42555、material-9c86daf11da1d277、material-d8854ec6f58a3373
+关联材料：材料 material-742d72edf795811c、材料 material-b29d47f285a42555、材料 material-9c86daf11da1d277、材料 material-d8854ec6f58a3373
 
 作答要求：
 

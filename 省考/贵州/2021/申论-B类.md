@@ -140,7 +140,7 @@ M县有关领导回应：“实际上这个问题是在服务群众的最后一�
 
 **根据****“给定资料**1**”****，****谈谈团进村是如何解决“合村不合心”问题的。（30分****）**
 
-关联材料：material-7f13d042ade2a1f6、material-b818ed8331c5a96b、material-f137eaa37965bc6f、material-ed00a241c631d35b
+关联材料：材料 material-7f13d042ade2a1f6、材料 material-b818ed8331c5a96b、材料 material-f137eaa37965bc6f、材料 material-ed00a241c631d35b
 
 作答要求：
 
@@ -150,7 +150,7 @@ M县有关领导回应：“实际上这个问题是在服务群众的最后一�
 
 **根据****“给定材料**2**”，谈谈北山县风河村是怎样“引凤筑巢”的。(30分)**
 
-关联材料：material-7f13d042ade2a1f6、material-b818ed8331c5a96b、material-f137eaa37965bc6f、material-ed00a241c631d35b
+关联材料：材料 material-7f13d042ade2a1f6、材料 material-b818ed8331c5a96b、材料 material-f137eaa37965bc6f、材料 material-ed00a241c631d35b
 
 作答要求：
 
@@ -160,7 +160,7 @@ M县有关领导回应：“实际上这个问题是在服务群众的最后一�
 
 **请你根据****“给定资料**3**”，分析为什么村民抱怨“便民服务站一点****都****不便民****”，并提出解决的建议。(40分)**
 
-关联材料：material-7f13d042ade2a1f6、material-b818ed8331c5a96b、material-f137eaa37965bc6f、material-ed00a241c631d35b
+关联材料：材料 material-7f13d042ade2a1f6、材料 material-b818ed8331c5a96b、材料 material-f137eaa37965bc6f、材料 material-ed00a241c631d35b
 
 作答要求：
 
@@ -170,7 +170,7 @@ M县有关领导回应：“实际上这个问题是在服务群众的最后一�
 
 **县里近期召开基层治理工作经验交流大会，石子镇将在会上发言，请你根据****“给定资料**4**”，拟写一份石子镇创新方式方法加强基层治理的经验交流材料。(50分)**
 
-关联材料：material-7f13d042ade2a1f6、material-b818ed8331c5a96b、material-f137eaa37965bc6f、material-ed00a241c631d35b
+关联材料：材料 material-7f13d042ade2a1f6、材料 material-b818ed8331c5a96b、材料 material-f137eaa37965bc6f、材料 material-ed00a241c631d35b
 
 作答要求：
 

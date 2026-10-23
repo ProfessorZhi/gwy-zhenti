@@ -82,7 +82,7 @@
 
 **资料**9**中介绍了浙江省“小微企业三年成长计划”，结合给定资料分析浙江顺利实施“小微企业三年成长计划”的条件。（20分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 
@@ -96,7 +96,7 @@
 
 **资料**6**中介绍了M公司的发展案例。假如你是某经济日报的记者，请就M公司的“成功之道”写一篇短评。（30分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 
@@ -110,7 +110,7 @@
 
 **给定资料**9**中划线句子写道：“让小微不再微小，让小微永远微笑。”请你结合对这句话的理解，联系实际，自选角度，自拟题目，写一篇议论文。（50分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 

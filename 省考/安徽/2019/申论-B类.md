@@ -126,7 +126,7 @@ F县苗木产业的转型升级迫在眉睫。“相比较过去小而全、品�
 
 **根据给定资料**1**，概括改革开放以来，赵家村发生的变化。（15分）**
 
-关联材料：material-11232020994517cb、material-b93b0d965d6b654e、material-fec34f172dd9f264、material-9c709f825ce4a328
+关联材料：材料 material-11232020994517cb、材料 material-b93b0d965d6b654e、材料 material-fec34f172dd9f264、材料 material-9c709f825ce4a328
 
 作答要求：
 
@@ -142,7 +142,7 @@ F县苗木产业的转型升级迫在眉睫。“相比较过去小而全、品�
 
 **给定资料**2**中提到“40年来经济的发展，在点滴的民生改善中找到了生动而深刻的注脚。”请根据给定资料，谈谈你对这句话的理解。（20分）**
 
-关联材料：material-11232020994517cb、material-b93b0d965d6b654e、material-fec34f172dd9f264、material-9c709f825ce4a328
+关联材料：材料 material-11232020994517cb、材料 material-b93b0d965d6b654e、材料 material-fec34f172dd9f264、材料 material-9c709f825ce4a328
 
 作答要求：
 
@@ -158,7 +158,7 @@ F县苗木产业的转型升级迫在眉睫。“相比较过去小而全、品�
 
 **给定资料**3**提到了F县在2013年发展苗木产业时遇到的困难，请谈谈F县是如何破解这一难题的。(25分)**
 
-关联材料：material-11232020994517cb、material-b93b0d965d6b654e、material-fec34f172dd9f264、material-9c709f825ce4a328
+关联材料：材料 material-11232020994517cb、材料 material-b93b0d965d6b654e、材料 material-fec34f172dd9f264、材料 material-9c709f825ce4a328
 
 作答要求：
 
@@ -174,7 +174,7 @@ F县苗木产业的转型升级迫在眉睫。“相比较过去小而全、品�
 
 **假设你是某市人社部门的工作人员，需要进社区向群众推广电子社保卡。请结合给定资料，草拟一份介绍电子社保卡的宣传稿。（40分）**
 
-关联材料：material-11232020994517cb、material-b93b0d965d6b654e、material-fec34f172dd9f264、material-9c709f825ce4a328
+关联材料：材料 material-11232020994517cb、材料 material-b93b0d965d6b654e、材料 material-fec34f172dd9f264、材料 material-9c709f825ce4a328
 
 作答要求：
 

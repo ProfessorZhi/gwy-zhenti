@@ -114,7 +114,7 @@ H市P县和Y县过去经济发展较为落后。近些年来，P县虽然取得�
 
 **请你根据****“给定资料**1**”，谈谈山茶村是如何通过“蛋生鸡，鸡生蛋”的方式破解村集体经济发展密码的。（20分）**
 
-关联材料：material-b05ffe85c399a562、material-ebdd99c33772ddae、material-4001dbf71ea6855e、material-41479c96446bfa97
+关联材料：材料 material-b05ffe85c399a562、材料 material-ebdd99c33772ddae、材料 material-4001dbf71ea6855e、材料 material-41479c96446bfa97
 
 作答要求：
 
@@ -124,7 +124,7 @@ H市P县和Y县过去经济发展较为落后。近些年来，P县虽然取得�
 
 **请你根据****“给定资料**2**”，谈谈对“古道已成为沿途城镇乡村迈向未来的新动力”的理解。****（****20分****）**
 
-关联材料：material-b05ffe85c399a562、material-ebdd99c33772ddae、material-4001dbf71ea6855e、material-41479c96446bfa97
+关联材料：材料 material-b05ffe85c399a562、材料 material-ebdd99c33772ddae、材料 material-4001dbf71ea6855e、材料 material-41479c96446bfa97
 
 作答要求：
 
@@ -134,7 +134,7 @@ H市P县和Y县过去经济发展较为落后。近些年来，P县虽然取得�
 
 **假如你是****P县政府办的一名工作人员，请结合“给定资料**3**”，梳理P县在乡镇建设中存在的问题，并提出解决问题的建议。（30分）**
 
-关联材料：material-b05ffe85c399a562、material-ebdd99c33772ddae、material-4001dbf71ea6855e、material-41479c96446bfa97
+关联材料：材料 material-b05ffe85c399a562、材料 material-ebdd99c33772ddae、材料 material-4001dbf71ea6855e、材料 material-41479c96446bfa97
 
 作答要求：
 
@@ -150,7 +150,7 @@ H市P县和Y县过去经济发展较为落后。近些年来，P县虽然取得�
 
 **假如你是璧云区委宣传部工作人员，请根据****“给定资料**4**”，拟写一篇反映璧云区“四城”建设成就的宣传稿。（30分）**
 
-关联材料：material-b05ffe85c399a562、material-ebdd99c33772ddae、material-4001dbf71ea6855e、material-41479c96446bfa97
+关联材料：材料 material-b05ffe85c399a562、材料 material-ebdd99c33772ddae、材料 material-4001dbf71ea6855e、材料 material-41479c96446bfa97
 
 作答要求：
 

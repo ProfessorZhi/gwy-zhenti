@@ -128,7 +128,7 @@ W县近年来积极发挥果农合作社引领作用，打造共富工坊，在�
 
 **请根据****“给定资料**1**”，概括L县山核桃产业发展过程中存在的问题及解决措施。（20分）**
 
-关联材料：material-c95d9ee21b32ab6e、material-54173a8b0731122a、material-e729148eacf1df85、material-d6fc3e92309db3a0
+关联材料：材料 material-c95d9ee21b32ab6e、材料 material-54173a8b0731122a、材料 material-e729148eacf1df85、材料 material-d6fc3e92309db3a0
 
 作答要求：
 
@@ -142,7 +142,7 @@ W县近年来积极发挥果农合作社引领作用，打造共富工坊，在�
 
 **请根据****“给定资料**2**”，分析W县能够做好绿色发展的原因。（20分）**
 
-关联材料：material-c95d9ee21b32ab6e、material-54173a8b0731122a、material-e729148eacf1df85、material-d6fc3e92309db3a0
+关联材料：材料 material-c95d9ee21b32ab6e、材料 material-54173a8b0731122a、材料 material-e729148eacf1df85、材料 material-d6fc3e92309db3a0
 
 作答要求：
 
@@ -156,7 +156,7 @@ W县近年来积极发挥果农合作社引领作用，打造共富工坊，在�
 
 **近期，市里将评选基层治理先进社区，假如你是白沙社区所在街道工作人员，请根据****“给定资料**3**”，拟写白沙社区在基层治理工作中可推广的做法和推荐理由。（20分）**
 
-关联材料：material-c95d9ee21b32ab6e、material-54173a8b0731122a、material-e729148eacf1df85、material-d6fc3e92309db3a0
+关联材料：材料 material-c95d9ee21b32ab6e、材料 material-54173a8b0731122a、材料 material-e729148eacf1df85、材料 material-d6fc3e92309db3a0
 
 作答要求：
 
@@ -170,7 +170,7 @@ W县近年来积极发挥果农合作社引领作用，打造共富工坊，在�
 
 **S县近期准备举办全县工业企业家联谊会，请根据“给定资料**4**”，为黄县长拟写讲话稿。（40分）**
 
-关联材料：material-c95d9ee21b32ab6e、material-54173a8b0731122a、material-e729148eacf1df85、material-d6fc3e92309db3a0
+关联材料：材料 material-c95d9ee21b32ab6e、材料 material-54173a8b0731122a、材料 material-e729148eacf1df85、材料 material-d6fc3e92309db3a0
 
 作答要求：
 

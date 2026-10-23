@@ -74,7 +74,7 @@
 
 **请用一个关键词概括“给定材料”的主旨，并简要归纳“给定材料”是从哪几个层面来介绍这一主旨的？（25分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8
 
 作答要求：
 
@@ -84,7 +84,7 @@
 
 **结合“给定资料”，联合实际，请你对当前如何建设诚信政府提出建议。（25分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8
 
 作答要求：
 
@@ -94,7 +94,7 @@
 
 **根据“资料**2**”和“资料**7**”，从基层公务员的角度出发，自拟题目，写一篇议论文。（50分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8
 
 作答要求：
 

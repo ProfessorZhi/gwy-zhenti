@@ -88,7 +88,7 @@ Z市陈副市长认为，一些闲置的农村住房、厂房、村集体用房�
 
 **根据给定资料**1**，请分别概括高大妈和老姚的“喜”和“盼”。(20分)**
 
-关联材料：material-52e955ff7424808b、material-7449557f7cc9ebdd、material-3d4a1b6e5f47f062、material-a0bd2602bd64f312
+关联材料：材料 material-52e955ff7424808b、材料 material-7449557f7cc9ebdd、材料 material-3d4a1b6e5f47f062、材料 material-a0bd2602bd64f312
 
 作答要求：
 
@@ -104,7 +104,7 @@ Z市陈副市长认为，一些闲置的农村住房、厂房、村集体用房�
 
 **请根据给定资料**2**阐述你对“种下满地金黄的庄稼，才是为旷野除草的最****好办****法****”这句话的理解。（20分）**
 
-关联材料：material-52e955ff7424808b、material-7449557f7cc9ebdd、material-3d4a1b6e5f47f062、material-a0bd2602bd64f312
+关联材料：材料 material-52e955ff7424808b、材料 material-7449557f7cc9ebdd、材料 material-3d4a1b6e5f47f062、材料 material-a0bd2602bd64f312
 
 作答要求：
 
@@ -120,7 +120,7 @@ Z市陈副市长认为，一些闲置的农村住房、厂房、村集体用房�
 
 **根据给定资料**3**，请谈谈古城民警在工作中遇到的难题，他们是如何解决的。（25分）**
 
-关联材料：material-52e955ff7424808b、material-7449557f7cc9ebdd、material-3d4a1b6e5f47f062、material-a0bd2602bd64f312
+关联材料：材料 material-52e955ff7424808b、材料 material-7449557f7cc9ebdd、材料 material-3d4a1b6e5f47f062、材料 material-a0bd2602bd64f312
 
 作答要求：
 
@@ -138,7 +138,7 @@ Z市陈副市长认为，一些闲置的农村住房、厂房、村集体用房�
 
 **假设你是调研组成员，请根据给定材料**4**，围绕Z市有效激活闲置农房的做法写一篇调研报告提纲。（35分）**
 
-关联材料：material-52e955ff7424808b、material-7449557f7cc9ebdd、material-3d4a1b6e5f47f062、material-a0bd2602bd64f312
+关联材料：材料 material-52e955ff7424808b、材料 material-7449557f7cc9ebdd、材料 material-3d4a1b6e5f47f062、材料 material-a0bd2602bd64f312
 
 作答要求：
 

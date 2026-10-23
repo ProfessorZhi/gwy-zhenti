@@ -110,7 +110,7 @@ XN村请相关部门对全村有文物保护、旅游等方面价值的民居进
 
 **根据“给定资料**1**”，概括新凤村“土专家”的特点。（15分）**
 
-关联材料：material-fa9502cd20eadec3、material-bafab1635c783250、material-58a7422dbebcee47、material-1defa717a380ed55、material-c2b7399d3d6e0201
+关联材料：材料 material-fa9502cd20eadec3、材料 material-bafab1635c783250、材料 material-58a7422dbebcee47、材料 material-1defa717a380ed55、材料 material-c2b7399d3d6e0201
 
 作答要求：
 
@@ -120,7 +120,7 @@ XN村请相关部门对全村有文物保护、旅游等方面价值的民居进
 
 **根据“给定资料**2**”，谈谈对其划线部分“有居民，方有民居”的理解。（15分）**
 
-关联材料：material-fa9502cd20eadec3、material-bafab1635c783250、material-58a7422dbebcee47、material-1defa717a380ed55、material-c2b7399d3d6e0201
+关联材料：材料 material-fa9502cd20eadec3、材料 material-bafab1635c783250、材料 material-58a7422dbebcee47、材料 material-1defa717a380ed55、材料 material-c2b7399d3d6e0201
 
 作答要求：
 
@@ -136,7 +136,7 @@ XN村请相关部门对全村有文物保护、旅游等方面价值的民居进
 
 **根据****“给定资料**3**”，请就该村近年来遇到的问题分析其原因。（15分）**
 
-关联材料：material-fa9502cd20eadec3、material-bafab1635c783250、material-58a7422dbebcee47、material-1defa717a380ed55、material-c2b7399d3d6e0201
+关联材料：材料 material-fa9502cd20eadec3、材料 material-bafab1635c783250、材料 material-58a7422dbebcee47、材料 material-1defa717a380ed55、材料 material-c2b7399d3d6e0201
 
 作答要求：
 
@@ -150,7 +150,7 @@ XN村请相关部门对全村有文物保护、旅游等方面价值的民居进
 
 **根据****“给定资料**4**”，针对P县农家乐存在的问题提出改进建议。（20分）**
 
-关联材料：material-fa9502cd20eadec3、material-bafab1635c783250、material-58a7422dbebcee47、material-1defa717a380ed55、material-c2b7399d3d6e0201
+关联材料：材料 material-fa9502cd20eadec3、材料 material-bafab1635c783250、材料 material-58a7422dbebcee47、材料 material-1defa717a380ed55、材料 material-c2b7399d3d6e0201
 
 作答要求：
 
@@ -166,7 +166,7 @@ XN村请相关部门对全村有文物保护、旅游等方面价值的民居进
 
 **王家村拟参照兴隆****村****的模式改进农家书屋，但有些村民认为****“改不改，没多大关系”。请你根据“给定资料**5**”，代表王家村村支两委，就这些情况，为即将召开的村民大会写一篇发言稿。（35分）**
 
-关联材料：material-fa9502cd20eadec3、material-bafab1635c783250、material-58a7422dbebcee47、material-1defa717a380ed55、material-c2b7399d3d6e0201
+关联材料：材料 material-fa9502cd20eadec3、材料 material-bafab1635c783250、材料 material-58a7422dbebcee47、材料 material-1defa717a380ed55、材料 material-c2b7399d3d6e0201
 
 作答要求：
 

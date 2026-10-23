@@ -90,7 +90,7 @@ F市率先推行保单、保函抵缴现金缴纳工资保证金模式，减轻�
 
 **根据****“给定资料**1**”，请你谈谈M市和N市在开展生态环境保护跨区域合作方面做了哪些努力。（30分）**
 
-关联材料：material-e6df7dea384970ad、material-e60ae00d0c8113b7、material-b4f786c9c39d2049、material-19a2f553abe8ba8e
+关联材料：材料 material-e6df7dea384970ad、材料 material-e60ae00d0c8113b7、材料 material-b4f786c9c39d2049、材料 material-19a2f553abe8ba8e
 
 作答要求：
 
@@ -100,7 +100,7 @@ F市率先推行保单、保函抵缴现金缴纳工资保证金模式，减轻�
 
 **请根据****“给定资料**2**”，概括F市保障工资支付工作的主要举措。（30分）**
 
-关联材料：material-e6df7dea384970ad、material-e60ae00d0c8113b7、material-b4f786c9c39d2049、material-19a2f553abe8ba8e
+关联材料：材料 material-e6df7dea384970ad、材料 material-e60ae00d0c8113b7、材料 material-b4f786c9c39d2049、材料 material-19a2f553abe8ba8e
 
 作答要求：
 
@@ -110,7 +110,7 @@ F市率先推行保单、保函抵缴现金缴纳工资保证金模式，减轻�
 
 **“给定资料**3**”提到：“法官的审判工作就像是面对着一张包括了多种题型的试卷，只有把每一道题都答好了，才能得高分。”请你谈谈对这句话的理解。（40分）**
 
-关联材料：material-e6df7dea384970ad、material-e60ae00d0c8113b7、material-b4f786c9c39d2049、material-19a2f553abe8ba8e
+关联材料：材料 material-e6df7dea384970ad、材料 material-e60ae00d0c8113b7、材料 material-b4f786c9c39d2049、材料 material-19a2f553abe8ba8e
 
 作答要求：
 
@@ -120,7 +120,7 @@ F市率先推行保单、保函抵缴现金缴纳工资保证金模式，减轻�
 
 **省里准备举办****D市“市域社会综合治理现代化建设论坛”。假如你是D市综治办的一名工作人员，请根据“给定资料**4**”，拟写一份在论坛上的发言提纲，介绍D市社会综合治理的做法。（50分）**
 
-关联材料：material-e6df7dea384970ad、material-e60ae00d0c8113b7、material-b4f786c9c39d2049、material-19a2f553abe8ba8e
+关联材料：材料 material-e6df7dea384970ad、材料 material-e60ae00d0c8113b7、材料 material-b4f786c9c39d2049、材料 material-19a2f553abe8ba8e
 
 作答要求：
 

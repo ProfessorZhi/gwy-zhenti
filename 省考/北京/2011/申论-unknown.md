@@ -120,7 +120,7 @@
 
 **根据给定资料，概括当前我国城市规划工作中存在的主要问题。（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14
 
 作答要求：
 
@@ -130,7 +130,7 @@
 
 **根据给定资料，结合当前实际，谈谈你如何看待城市快速发展过程中的历史文化保护问题。（20分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14
 
 作答要求：
 
@@ -140,7 +140,7 @@
 
 **假设你是一名政府工作人员，阅读给定材料，结合我国城市更新工作中存在的主要问题，拟定一份《关于进一步做好城市更新工作的建议》提纲。（25分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14
 
 作答要求：
 
@@ -150,7 +150,7 @@
 
 **阅读给定材料，结合实际，围绕“城市让生活更幸福”这一主题，自拟题目，写一篇议论文。（40分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14
 
 作答要求：
 

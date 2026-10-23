@@ -130,7 +130,7 @@ M县有关领导回应：“实际上这个问题是在服务群众的最后一�
 
 **根据****“给定资料**2**”，请你谈谈团进村是如何解决“合村不合心”问题的。（20分）**
 
-关联材料：material-721a067b60c7a358、material-62de5be67587ba45、material-a6636a0c140a5bc0、material-f866c54f5dfde5b8
+关联材料：材料 material-721a067b60c7a358、材料 material-62de5be67587ba45、材料 material-a6636a0c140a5bc0、材料 material-f866c54f5dfde5b8
 
 作答要求：
 
@@ -140,7 +140,7 @@ M县有关领导回应：“实际上这个问题是在服务群众的最后一�
 
 **根据“给定资料**1**”，谈谈北山县风河村是怎样引凤筑巢的。（30分）**
 
-关联材料：material-721a067b60c7a358、material-62de5be67587ba45、material-a6636a0c140a5bc0、material-f866c54f5dfde5b8
+关联材料：材料 material-721a067b60c7a358、材料 material-62de5be67587ba45、材料 material-a6636a0c140a5bc0、材料 material-f866c54f5dfde5b8
 
 作答要求：
 
@@ -150,7 +150,7 @@ M县有关领导回应：“实际上这个问题是在服务群众的最后一�
 
 **根据****“给定资料**3**”分析为什么村民抱怨便民服务****站****一点都不便民，并提出解决建议。****（30分****）**
 
-关联材料：material-721a067b60c7a358、material-62de5be67587ba45、material-a6636a0c140a5bc0、material-f866c54f5dfde5b8
+关联材料：材料 material-721a067b60c7a358、材料 material-62de5be67587ba45、材料 material-a6636a0c140a5bc0、材料 material-f866c54f5dfde5b8
 
 作答要求：
 
@@ -160,7 +160,7 @@ M县有关领导回应：“实际上这个问题是在服务群众的最后一�
 
 **根据****“给定资料**4**”，拟写一则介绍村级党组织带领村民增收致富的工作信息。（70分）**
 
-关联材料：material-721a067b60c7a358、material-62de5be67587ba45、material-a6636a0c140a5bc0、material-f866c54f5dfde5b8
+关联材料：材料 material-721a067b60c7a358、材料 material-62de5be67587ba45、材料 material-a6636a0c140a5bc0、材料 material-f866c54f5dfde5b8
 
 作答要求：
 

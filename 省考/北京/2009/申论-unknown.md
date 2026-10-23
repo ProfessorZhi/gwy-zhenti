@@ -108,7 +108,7 @@
 
 **根据材料**6**、**7**、**8**的内容，比较分析新、韩、美三国提升国民文明意识，强化文明行为的做法。（20分）**
 
-关联材料：material-1、material-2、material-3
+关联材料：材料 1、材料 2、材料 3
 
 作答要求：
 
@@ -118,7 +118,7 @@
 
 **阅读材料**12**，由此引申，谈谈你的想法。（20分）**
 
-关联材料：material-4
+关联材料：材料 4
 
 作答要求：
 
@@ -128,7 +128,7 @@
 
 **请你根据给定材料，针对我国部分公民存在的旅游不文明行为问题，给旅游主管部门写一份建议。（20分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-10、material-11、material-12、material-4、material-13
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 10、材料 11、材料 12、材料 4、材料 13
 
 作答要求：
 
@@ -138,7 +138,7 @@
 
 **根据材料内容，结合我国实际，以“谈国民文明素质的提高”为副标题，自选角度，自拟标题，写一篇议论文。（40分）**
 
-关联材料：material-5、material-6、material-7、material-8、material-9、material-1、material-2、material-3、material-10、material-11、material-12、material-4、material-13
+关联材料：材料 5、材料 6、材料 7、材料 8、材料 9、材料 1、材料 2、材料 3、材料 10、材料 11、材料 12、材料 4、材料 13
 
 作答要求：
 

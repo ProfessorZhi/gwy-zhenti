@@ -80,7 +80,7 @@ P县气候温和，雨量适中，被誉为“中华红心猕猴桃之乡”。�
 
 **根据给定资料**1**，谈谈Z县推广脐橙种植这一案例对我国发展县域特色农业经济有何启示。（30分）**
 
-关联材料：material-7cb9891f0a765877、material-988f75e11840b436、material-e9fef70ae99eb452、material-29d23f6709a5c6f8
+关联材料：材料 material-7cb9891f0a765877、材料 material-988f75e11840b436、材料 material-e9fef70ae99eb452、材料 material-29d23f6709a5c6f8
 
 作答要求：
 
@@ -90,7 +90,7 @@ P县气候温和，雨量适中，被誉为“中华红心猕猴桃之乡”。�
 
 **根据给定资料**2**，分析2017年网购节中农村电商“狂欢中夹杂着孤单”的原因，并为农村电商的发展提出合理的建议。(40分)**
 
-关联材料：material-7cb9891f0a765877、material-988f75e11840b436、material-e9fef70ae99eb452、material-29d23f6709a5c6f8
+关联材料：材料 material-7cb9891f0a765877、材料 material-988f75e11840b436、材料 material-e9fef70ae99eb452、材料 material-29d23f6709a5c6f8
 
 作答要求：
 
@@ -106,7 +106,7 @@ P县气候温和，雨量适中，被誉为“中华红心猕猴桃之乡”。�
 
 **假设你是S镇政府负责宣传的工作人员，请根据给定资料**3**，写一篇关于S镇“以民为师”活动的报道。（40分）**
 
-关联材料：material-7cb9891f0a765877、material-988f75e11840b436、material-e9fef70ae99eb452、material-29d23f6709a5c6f8
+关联材料：材料 material-7cb9891f0a765877、材料 material-988f75e11840b436、材料 material-e9fef70ae99eb452、材料 material-29d23f6709a5c6f8
 
 作答要求：
 
@@ -122,7 +122,7 @@ P县气候温和，雨量适中，被誉为“中华红心猕猴桃之乡”。�
 
 **假设你是绣山村的一名驻村干部，请根据给定资料**4**，写一篇动员猕猴桃果农加入合作社的倡议书。(40分)**
 
-关联材料：material-7cb9891f0a765877、material-988f75e11840b436、material-e9fef70ae99eb452、material-29d23f6709a5c6f8
+关联材料：材料 material-7cb9891f0a765877、材料 material-988f75e11840b436、材料 material-e9fef70ae99eb452、材料 material-29d23f6709a5c6f8
 
 作答要求：
 

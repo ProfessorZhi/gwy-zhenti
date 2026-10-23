@@ -104,7 +104,7 @@ X县传统古村落众多，在“一户多宅”专项整治推进过程中，�
 
 **根据****“给定资料**1**”，概括W区加强生态环境综合行政执法的做法。（15分）**
 
-关联材料：material-44040edaf8f9adc5、material-00c0b188f7da3ad8、material-e444defcf398fc26、material-5ca87343771d2390
+关联材料：材料 material-44040edaf8f9adc5、材料 material-00c0b188f7da3ad8、材料 material-e444defcf398fc26、材料 material-5ca87343771d2390
 
 作答要求：
 
@@ -118,7 +118,7 @@ X县传统古村落众多，在“一户多宅”专项整治推进过程中，�
 
 **根据****“给定资料**2**”，谈谈对“旧曲新唱”的理解。（20分）**
 
-关联材料：material-44040edaf8f9adc5、material-00c0b188f7da3ad8、material-e444defcf398fc26、material-5ca87343771d2390
+关联材料：材料 material-44040edaf8f9adc5、材料 material-00c0b188f7da3ad8、材料 material-e444defcf398fc26、材料 material-5ca87343771d2390
 
 作答要求：
 
@@ -132,7 +132,7 @@ X县传统古村落众多，在“一户多宅”专项整治推进过程中，�
 
 **假如你是****F市水利局的工作人员，请根据“给定材料**3**”，对F市在组织“限水体验日”活动中存在的问题进行梳理，并谈谈如何在今后的工作中避免类似情况发生。（25分）**
 
-关联材料：material-44040edaf8f9adc5、material-00c0b188f7da3ad8、material-e444defcf398fc26、material-5ca87343771d2390
+关联材料：材料 material-44040edaf8f9adc5、材料 material-00c0b188f7da3ad8、材料 material-e444defcf398fc26、材料 material-5ca87343771d2390
 
 作答要求：
 
@@ -146,7 +146,7 @@ X县传统古村落众多，在“一户多宅”专项整治推进过程中，�
 
 **G市近期准备召开整治“一户多宅”工作经验交流会，X县相关人员将在会上发言。请根据“给定资料**4**”起草一份在会上的经验交流发言提纲。（40分）**
 
-关联材料：material-44040edaf8f9adc5、material-00c0b188f7da3ad8、material-e444defcf398fc26、material-5ca87343771d2390
+关联材料：材料 material-44040edaf8f9adc5、材料 material-00c0b188f7da3ad8、材料 material-e444defcf398fc26、材料 material-5ca87343771d2390
 
 作答要求：
 

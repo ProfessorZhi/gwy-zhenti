@@ -84,7 +84,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**1**，请谈谈建立基层立法联系点制度在该市发挥了哪些积极作用？****(30****分****)**
 
-关联材料：material-94ad4c8fdeee66ab、material-865913b5c844bada、material-19b3d1a7a5555951、material-56d2e7acc1f7b222
+关联材料：材料 material-94ad4c8fdeee66ab、材料 material-865913b5c844bada、材料 material-19b3d1a7a5555951、材料 material-56d2e7acc1f7b222
 
 作答要求：
 
@@ -94,7 +94,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **从****“过去做梦都不敢想”到现在“梦想总是要有的”，请你根据给定资料**2**，谈谈十八洞村村民的心态为什么会发生这样的变化。****(30****分****)**
 
-关联材料：material-94ad4c8fdeee66ab、material-865913b5c844bada、material-19b3d1a7a5555951、material-56d2e7acc1f7b222
+关联材料：材料 material-94ad4c8fdeee66ab、材料 material-865913b5c844bada、材料 material-19b3d1a7a5555951、材料 material-56d2e7acc1f7b222
 
 作答要求：
 
@@ -104,7 +104,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**3**，请你提出整治****J****县乡村电线杆乱象的具体措施。（****40****分）**
 
-关联材料：material-94ad4c8fdeee66ab、material-865913b5c844bada、material-19b3d1a7a5555951、material-56d2e7acc1f7b222
+关联材料：材料 material-94ad4c8fdeee66ab、材料 material-865913b5c844bada、材料 material-19b3d1a7a5555951、材料 material-56d2e7acc1f7b222
 
 作答要求：
 
@@ -120,7 +120,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**4**，请就东西部扶贫劳务协作“****FD****模式”的基本做法拟写一份工作简报。****(50****分****)**
 
-关联材料：material-94ad4c8fdeee66ab、material-865913b5c844bada、material-19b3d1a7a5555951、material-56d2e7acc1f7b222
+关联材料：材料 material-94ad4c8fdeee66ab、材料 material-865913b5c844bada、材料 material-19b3d1a7a5555951、材料 material-56d2e7acc1f7b222
 
 作答要求：
 

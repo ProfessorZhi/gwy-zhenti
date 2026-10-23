@@ -136,7 +136,7 @@
 
 **阅读给定材料，概括当前我国公民科学素质方面存在的主要问题。（20分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14
 
 作答要求：
 
@@ -146,7 +146,7 @@
 
 **阅读给定材料，结合实际，请对当前我国社会“轻科普”的原因进行分析。（20分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14
 
 作答要求：
 
@@ -156,7 +156,7 @@
 
 **阅读给定材料，结合实际，请就如何解决大学生等受过高等教育的群体的迷信问题，提出自己的建议。（20分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14
 
 作答要求：
 
@@ -166,7 +166,7 @@
 
 **根据给定材料，结合首都实际情况和发展定位，围绕“科学知识与科学精神”这一话题，自选角度、自拟题目，写一篇文章。（40分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14
 
 作答要求：
 

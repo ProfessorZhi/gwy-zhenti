@@ -86,7 +86,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**1**，分析民警小童采用特别的微信头像的原因。（****20分）**
 
-关联材料：material-15f23dc0281c22f5、material-56753ef338098ca7、material-a838e9c7cc08df36、material-6f8ca9413865a60f
+关联材料：材料 material-15f23dc0281c22f5、材料 material-56753ef338098ca7、材料 material-a838e9c7cc08df36、材料 material-6f8ca9413865a60f
 
 作答要求：
 
@@ -102,7 +102,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**2**，谈谈建立基层立法联系点制度在该市发挥了哪些积极作用？（20分）**
 
-关联材料：material-15f23dc0281c22f5、material-56753ef338098ca7、material-a838e9c7cc08df36、material-6f8ca9413865a60f
+关联材料：材料 material-15f23dc0281c22f5、材料 material-56753ef338098ca7、材料 material-a838e9c7cc08df36、材料 material-6f8ca9413865a60f
 
 作答要求：
 
@@ -116,7 +116,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**3**，谈谈****L省是如何整治黄河滩区“四乱”现象的。（20分）**
 
-关联材料：material-15f23dc0281c22f5、material-56753ef338098ca7、material-a838e9c7cc08df36、material-6f8ca9413865a60f
+关联材料：材料 material-15f23dc0281c22f5、材料 material-56753ef338098ca7、材料 material-a838e9c7cc08df36、材料 material-6f8ca9413865a60f
 
 作答要求：
 
@@ -130,7 +130,7 @@ FD扶贫劳务协作模式，成为国务院扶贫办举办的全国携手奔小
 
 **根据给定资料**4**，请就东西部扶贫劳务协作“FD模式”的基本做法拟写一份工作简报。（40分****）**
 
-关联材料：material-15f23dc0281c22f5、material-56753ef338098ca7、material-a838e9c7cc08df36、material-6f8ca9413865a60f
+关联材料：材料 material-15f23dc0281c22f5、材料 material-56753ef338098ca7、材料 material-a838e9c7cc08df36、材料 material-6f8ca9413865a60f
 
 作答要求：
 

@@ -102,7 +102,7 @@
 
 **根据****“给定资料**1**”，请谈谈E县在规范小微权力运行方面都有哪些做法。（15分）**
 
-关联材料：material-a663381d686995bc、material-05990e857f7bfea2、material-747593cef0924ffb、material-efbea07be3e90d5e
+关联材料：材料 material-a663381d686995bc、材料 material-05990e857f7bfea2、材料 material-747593cef0924ffb、材料 material-efbea07be3e90d5e
 
 作答要求：
 
@@ -118,7 +118,7 @@
 
 **请根据****“给定资料**2**”，梳理当前宽石镇乡村旅游规划中存在的问题，并提出相应的改进建议。（25分）**
 
-关联材料：material-a663381d686995bc、material-05990e857f7bfea2、material-747593cef0924ffb、material-efbea07be3e90d5e
+关联材料：材料 material-a663381d686995bc、材料 material-05990e857f7bfea2、材料 material-747593cef0924ffb、材料 material-efbea07be3e90d5e
 
 作答要求：
 
@@ -134,7 +134,7 @@
 
 **Q县开发区党工委拟召开专题会议，听取“货车司机之家”建设工作汇报。假设你是“货车司机之家”工作专班负责人，请根据“给定资料**3**”，起草一份汇报材料提纲。（25分）**
 
-关联材料：material-a663381d686995bc、material-05990e857f7bfea2、material-747593cef0924ffb、material-efbea07be3e90d5e
+关联材料：材料 material-a663381d686995bc、材料 material-05990e857f7bfea2、材料 material-747593cef0924ffb、材料 material-efbea07be3e90d5e
 
 作答要求：
 
@@ -150,7 +150,7 @@
 
 **假设你是****S区商务局工作人员，请根据“给定资料**4**”，以“暖心家政在行动”为题，为T市《质量服务报》写一篇宣传报道稿。（35分)**
 
-关联材料：material-a663381d686995bc、material-05990e857f7bfea2、material-747593cef0924ffb、material-efbea07be3e90d5e
+关联材料：材料 material-a663381d686995bc、材料 material-05990e857f7bfea2、材料 material-747593cef0924ffb、材料 material-efbea07be3e90d5e
 
 作答要求：
 

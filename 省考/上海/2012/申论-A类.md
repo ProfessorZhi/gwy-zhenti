@@ -90,7 +90,7 @@
 
 **概括“资料1-4”的主要内容。（10分）**
 
-关联材料：material-1、material-2、material-3、material-4
+关联材料：材料 1、材料 2、材料 3、材料 4
 
 作答要求：
 
@@ -100,7 +100,7 @@
 
 **如何理解健全和完善社会管理格局的十六字方针：“党委领导、政府负责、社会协同、公众参与”。(10分)**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 
@@ -110,7 +110,7 @@
 
 **分析“资料5”中几个案例存在的主要问题。（10分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 
@@ -120,7 +120,7 @@
 
 **运用北京朝阳区“一网、两库、三关”体系，谈谈如何处置“高安屯垃圾填埋场异味扰民事件”。（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 
@@ -130,7 +130,7 @@
 
 **结合“资料”，分析我国食品安全事件存在的主要问题，并提出相应对策。（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 
@@ -140,7 +140,7 @@
 
 **阅读“资料”，以“在制度设计中如何体现科学性、有效性”为主题写一篇议论文。（40分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12
 
 作答要求：
 

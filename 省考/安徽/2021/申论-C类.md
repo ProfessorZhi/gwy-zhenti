@@ -74,7 +74,7 @@ A县综合行政执法局以实现执法规范化、打造高品质执法队伍�
 
 **根据给定资料**1**，请阐述你对志愿者服务队是“一大会址纪念馆一张闪亮的名片”的理解。（20分）**
 
-关联材料：material-deb20e646a9d1407、material-a36d8b22a6312a2b、material-bd082b88a7d8239a、material-5cdd1fbf9c4eba4c
+关联材料：材料 material-deb20e646a9d1407、材料 material-a36d8b22a6312a2b、材料 material-bd082b88a7d8239a、材料 material-5cdd1fbf9c4eba4c
 
 作答要求：
 
@@ -90,7 +90,7 @@ A县综合行政执法局以实现执法规范化、打造高品质执法队伍�
 
 **根据给定资料**2**，请你谈谈法律顾问在田头村和三水村发挥了哪些作用。（****20****分）**
 
-关联材料：material-deb20e646a9d1407、material-a36d8b22a6312a2b、material-bd082b88a7d8239a、material-5cdd1fbf9c4eba4c
+关联材料：材料 material-deb20e646a9d1407、材料 material-a36d8b22a6312a2b、材料 material-bd082b88a7d8239a、材料 material-5cdd1fbf9c4eba4c
 
 作答要求：
 
@@ -106,7 +106,7 @@ A县综合行政执法局以实现执法规范化、打造高品质执法队伍�
 
 **根据给定资料**3**，请你针对《消费维权情况反映》中的问题，提出对策建议。（****25****分）**
 
-关联材料：material-deb20e646a9d1407、material-a36d8b22a6312a2b、material-bd082b88a7d8239a、material-5cdd1fbf9c4eba4c
+关联材料：材料 material-deb20e646a9d1407、材料 material-a36d8b22a6312a2b、材料 material-bd082b88a7d8239a、材料 material-5cdd1fbf9c4eba4c
 
 作答要求：
 
@@ -122,7 +122,7 @@ A县综合行政执法局以实现执法规范化、打造高品质执法队伍�
 
 **假如你是****A****县综合行政执法局的工作人员，请根据给定资料**4**，写一份****A****县综合行政执法体制改革的经验总结，供领导参阅。（****35****分）**
 
-关联材料：material-deb20e646a9d1407、material-a36d8b22a6312a2b、material-bd082b88a7d8239a、material-5cdd1fbf9c4eba4c
+关联材料：材料 material-deb20e646a9d1407、材料 material-a36d8b22a6312a2b、材料 material-bd082b88a7d8239a、材料 material-5cdd1fbf9c4eba4c
 
 作答要求：
 

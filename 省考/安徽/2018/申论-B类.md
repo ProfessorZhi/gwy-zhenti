@@ -146,7 +146,7 @@ H县在垃圾分类上取得的成功，已成为该县一张新名片，国内�
 
 **请根据给定资料**1**，概括Y县在乡镇招商引资工作中存在的一些问题。****（15分）**
 
-关联材料：material-e83f2a572ba028be、material-70d39eb1a2306a2e、material-7638e5b52212786c、material-31e3919db0dcba5c
+关联材料：材料 material-e83f2a572ba028be、材料 material-70d39eb1a2306a2e、材料 material-7638e5b52212786c、材料 material-31e3919db0dcba5c
 
 作答要求：
 
@@ -162,7 +162,7 @@ H县在垃圾分类上取得的成功，已成为该县一张新名片，国内�
 
 **给定资料**2**介绍了H县实施乡村垃圾分类工作的一些做法，请从中归纳出几个方面的经验。****（20分）**
 
-关联材料：material-e83f2a572ba028be、material-70d39eb1a2306a2e、material-7638e5b52212786c、material-31e3919db0dcba5c
+关联材料：材料 material-e83f2a572ba028be、材料 material-70d39eb1a2306a2e、材料 material-7638e5b52212786c、材料 material-31e3919db0dcba5c
 
 作答要求：
 
@@ -178,7 +178,7 @@ H县在垃圾分类上取得的成功，已成为该县一张新名片，国内�
 
 **给定资料**3**共讨论了涉及推进农业农村现代化，实现乡村振兴的三个方面问题，每个问题的聚焦点不同。访谈结束时，主持人作了简要的总结。请为主持人撰写访谈的结束语。****（****30****分）**
 
-关联材料：material-e83f2a572ba028be、material-70d39eb1a2306a2e、material-7638e5b52212786c、material-31e3919db0dcba5c
+关联材料：材料 material-e83f2a572ba028be、材料 material-70d39eb1a2306a2e、材料 material-7638e5b52212786c、材料 material-31e3919db0dcba5c
 
 作答要求：
 
@@ -194,7 +194,7 @@ H县在垃圾分类上取得的成功，已成为该县一张新名片，国内�
 
 **给定资料**4**介绍了Z市农村改厕的情况。相邻的F市近期也准备启动农村改厕工程，假设你是F市有关部门的工作人员，请借鉴Z市的做法，拟写本市农村改厕工程的工作方案。****（35分）**
 
-关联材料：material-e83f2a572ba028be、material-70d39eb1a2306a2e、material-7638e5b52212786c、material-31e3919db0dcba5c
+关联材料：材料 material-e83f2a572ba028be、材料 material-70d39eb1a2306a2e、材料 material-7638e5b52212786c、材料 material-31e3919db0dcba5c
 
 作答要求：
 

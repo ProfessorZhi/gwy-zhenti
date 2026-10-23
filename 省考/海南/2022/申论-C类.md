@@ -104,7 +104,7 @@ F市率先推行保单、保函抵缴现金缴纳工资保证金模式，减轻�
 
 **请你根据****“给定资料**1**”，概括F市治理欠薪工作的主要举措。（20分）**
 
-关联材料：material-1aa5aa4c974d8487、material-763a34b2a21543eb、material-766d821cbb8527b5、material-142297d92ff625bd
+关联材料：材料 material-1aa5aa4c974d8487、材料 material-763a34b2a21543eb、材料 material-766d821cbb8527b5、材料 material-142297d92ff625bd
 
 作答要求：
 
@@ -114,7 +114,7 @@ F市率先推行保单、保函抵缴现金缴纳工资保证金模式，减轻�
 
 **“给定资料**2**”提到：“法官面对的是一张包括了多种题型的试卷，只有把每一道题都答好了，才能得高分。”请你谈谈对这句话的理解。（20分）**
 
-关联材料：material-1aa5aa4c974d8487、material-763a34b2a21543eb、material-766d821cbb8527b5、material-142297d92ff625bd
+关联材料：材料 material-1aa5aa4c974d8487、材料 material-763a34b2a21543eb、材料 material-766d821cbb8527b5、材料 material-142297d92ff625bd
 
 作答要求：
 
@@ -124,7 +124,7 @@ F市率先推行保单、保函抵缴现金缴纳工资保证金模式，减轻�
 
 **假如你是****S市网信办的工作人员，请根据“给定资料**3**”，梳理“搭讪直播”存在的问题，并提出解决建议。****（****25分****）**
 
-关联材料：material-1aa5aa4c974d8487、material-763a34b2a21543eb、material-766d821cbb8527b5、material-142297d92ff625bd
+关联材料：材料 material-1aa5aa4c974d8487、材料 material-763a34b2a21543eb、材料 material-766d821cbb8527b5、材料 material-142297d92ff625bd
 
 作答要求：
 
@@ -140,7 +140,7 @@ F市率先推行保单、保函抵缴现金缴纳工资保证金模式，减轻�
 
 **根据****“给定资料**4**”，请你以“高质量的司法工作推动高质量的城市发展”为题，为C市法院写一篇2021年工作总结。（35分）**
 
-关联材料：material-1aa5aa4c974d8487、material-763a34b2a21543eb、material-766d821cbb8527b5、material-142297d92ff625bd
+关联材料：材料 material-1aa5aa4c974d8487、材料 material-763a34b2a21543eb、材料 material-766d821cbb8527b5、材料 material-142297d92ff625bd
 
 作答要求：
 

@@ -110,7 +110,7 @@
 
 **根据****“给定材料**1**”，谈谈北山县风河****村****是怎样****“引凤筑巢”的。（15分）**
 
-关联材料：material-c60d9f2a4a05dc04、material-4f5ca4ffc7e3edd2、material-7f644dcd5a464435、material-68acafba9d2689e1
+关联材料：材料 material-c60d9f2a4a05dc04、材料 material-4f5ca4ffc7e3edd2、材料 material-7f644dcd5a464435、材料 material-68acafba9d2689e1
 
 作答要求：
 
@@ -124,7 +124,7 @@
 
 **根据****“给定资料**2**”，分析团进村是如何解决“合村不合心”问题的。（25分）**
 
-关联材料：material-c60d9f2a4a05dc04、material-4f5ca4ffc7e3edd2、material-7f644dcd5a464435、material-68acafba9d2689e1
+关联材料：材料 material-c60d9f2a4a05dc04、材料 material-4f5ca4ffc7e3edd2、材料 material-7f644dcd5a464435、材料 material-68acafba9d2689e1
 
 作答要求：
 
@@ -138,7 +138,7 @@
 
 **根据****“给定资料**3**”，谈谈对划线句子“因为用心付出换来了我最看重的东西”的理解。（20分）**
 
-关联材料：material-c60d9f2a4a05dc04、material-4f5ca4ffc7e3edd2、material-7f644dcd5a464435、material-68acafba9d2689e1
+关联材料：材料 material-c60d9f2a4a05dc04、材料 material-4f5ca4ffc7e3edd2、材料 material-7f644dcd5a464435、材料 material-68acafba9d2689e1
 
 作答要求：
 
@@ -152,7 +152,7 @@
 
 **县里近期将召开基层治理工作经验交流大会，石子镇将在会上发言。请你根据****“给定资料**4**”，写一份石子镇创新方式方法加强基层治理的经验交流材料提纲。（40分）**
 
-关联材料：material-c60d9f2a4a05dc04、material-4f5ca4ffc7e3edd2、material-7f644dcd5a464435、material-68acafba9d2689e1
+关联材料：材料 material-c60d9f2a4a05dc04、材料 material-4f5ca4ffc7e3edd2、材料 material-7f644dcd5a464435、材料 material-68acafba9d2689e1
 
 作答要求：
 

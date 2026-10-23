@@ -140,13 +140,13 @@ C.从上世纪80年代开始的多种形式的政府绩效评估试点，意味�
 
 D.自上世纪80年代起，一些地方政府设计的政府绩效考核指标之所以有问题，主要原因是对政府职能定位不正确。（ ）
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 ### 第 2 题
 
 **请结合给定资料谈谈我国要进行政府绩效评估的理由。（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 
@@ -156,7 +156,7 @@ D.自上世纪80年代起，一些地方政府设计的政府绩效考核指标�
 
 **请归纳给定资料4、5、6中关于政府绩效评估的主要方式，并就一种方式的特点作简要评论。（15分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 
@@ -166,7 +166,7 @@ D.自上世纪80年代起，一些地方政府设计的政府绩效考核指标�
 
 **运用材料7、8、9中有关政府绩效评估的理论，分析材料1、2、3中政府管理出现问题的原因，简要提出相应的对策。（20分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 
@@ -176,7 +176,7 @@ D.自上世纪80年代起，一些地方政府设计的政府绩效考核指标�
 
 **请以“科学发展观与政府绩效评估”为主题写一篇议论文。（40分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9
 
 作答要求：
 

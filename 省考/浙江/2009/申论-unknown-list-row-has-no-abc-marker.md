@@ -104,7 +104,7 @@
 
 **根据“给定资料**1**~**18**”提供的信息，用不超过400字的篇幅，给上级领导整理一份情况反映。（20分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16、material-17、material-18
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16、材料 17、材料 18
 
 作答要求：
 
@@ -114,7 +114,7 @@
 
 **结合“给定资料”的内容联系目前经济危机现状，请提出浙江经济发展应如何走出困境的思路。（30分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16、material-17、material-18、material-19、material-20
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16、材料 17、材料 18、材料 19、材料 20
 
 作答要求：
 
@@ -124,7 +124,7 @@
 
 **请从我省实际出发，围绕“给定资料”的主旨，自选角度，自拟标题，写一篇文章。（50分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16、material-17、material-18、material-19、material-20
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16、材料 17、材料 18、材料 19、材料 20
 
 作答要求：
 
