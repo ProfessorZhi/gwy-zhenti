@@ -2462,7 +2462,7 @@ D项：牧羊犬可以在草原上帮助人们放牧，二者是生物与其应�
 
 ### 第 74 题
 
-□UU67dd○□○
+![](assets-fenbi-84044/d98e3bae6b9e77ea2edde03f9b23e5a3432dc43a274bb533a0cf1cd3b17bb2d2.png)
 
 A. ![](assets-fenbi-84044/27d52830051b565b9bc06c60bc8c76899af51865296da08f8ec1df3674a82bf3.png)
 

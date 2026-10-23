@@ -2401,7 +2401,7 @@ D项：“左右”与“上下”均为表示方向或位置的概念，二者�
 
 ### 第 74 题
 
-\$@\$&&@\$
+![](assets-fenbi-75778/a26e3ae74d6ac781764a83ba00842d0edb9d12799ee8b9bd2a6970293aef256e.png)
 
 A. ![](assets-fenbi-75778/753daaad1e5b07a98ebe6295e557cc102a22c5c4f32b9e1eb26920f4a59b50ac.png)
 

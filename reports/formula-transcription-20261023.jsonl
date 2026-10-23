@@ -101,7 +101,6 @@
 {"sha": "82ee92771988de2d9879c3a971e76004967845e287010c14e3bad712b97fc9f7", "text": "9/20", "kind": "fraction", "confidence": "high", "match": "exact"}
 {"sha": "e4126d83f47d2e644d44eef136e68aedc08c1a915ca3ac7541fc1ca3ea5b683b", "text": "7/10", "kind": "fraction", "confidence": "high", "match": "exact"}
 {"sha": "fe3bdbc405561f7fe38121c64f643a62dac53bec4468bc9bd0292c9c6d96191d", "text": "4+√2", "kind": "expression", "confidence": "high", "match": "exact"}
-{"sha": "8af4654e5e7b6834d178edf434f309f57b670d6b11266b35300a7cc68c3afdd2", "text": "+-×-÷++", "kind": "symbol", "confidence": "medium", "match": "exact"}
 {"sha": "736c41e9616ccfa7997eb887d52b310717f5278a0bbd269565317c225d2381e3", "text": "81/4", "kind": "fraction", "confidence": "high", "match": "exact"}
 {"sha": "5da7b004955d7099b99bccb64f79541667891cb063e52db37255799fd5a58abe", "text": "6√30", "kind": "expression", "confidence": "high", "match": "exact"}
 {"sha": "9a8713de44759928f85fc477cca44c287ad2f818da8d0f936c36643ccb6b5c0d", "text": "128/17", "kind": "fraction", "confidence": "high", "match": "exact"}
@@ -181,8 +180,6 @@
 {"sha": "b00513d146b23538780cb61086b36f8d2997f863253258b65f47eb252c50f943", "text": "", "kind": "figure", "confidence": "high", "match": "exact"}
 {"sha": "4edbee89abc6ef04af43d4b353e56191a675297e889d30dce2aeb5b5e4e227ff", "text": "38/25", "kind": "fraction", "confidence": "high", "match": "exact"}
 {"sha": "31826939c72d64719cb2592245a66832aad4bce81cfc55ecad3349cb34266fd2", "text": "13/19", "kind": "fraction", "confidence": "high", "match": "exact"}
-{"sha": "a26e3ae74d6ac781764a83ba00842d0edb9d12799ee8b9bd2a6970293aef256e", "text": "$@$&&@$", "kind": "symbol", "confidence": "high", "match": "exact"}
-{"sha": "80c15afd284db6ab85135042919ca535623298f39feff6c2ef02b01920f70681", "text": "龙99×3&ssW", "kind": "symbol", "confidence": "high", "match": "exact"}
 {"sha": "c39adad68ceae37eea728b9c105feb64d6ae9a527cced310fc876bfd887903c5", "text": "7/2", "kind": "fraction", "confidence": "high", "match": "exact"}
 {"sha": "bb234594c53a59a8bb9e796379efb06ef8a0d965882d2a1689786f3d7be80ecc", "text": "9+2√3", "kind": "expression", "confidence": "high", "match": "exact"}
 {"sha": "e7d7110521da7cb9a3e44060ba74144284720d40463c93a9f2f0945591805b67", "text": "2√2", "kind": "expression", "confidence": "high", "match": "exact"}
@@ -220,8 +217,6 @@
 {"sha": "36ae5d60725a5d4baa0dec141d36b65306e14a44535bf5a8bb6df3059c449538", "text": "7/11", "kind": "fraction", "confidence": "high", "match": "exact"}
 {"sha": "1b66ea566e8f710d9923948336732fafbec2033a7b45e21cb97af27c1a029b95", "text": "11/18", "kind": "fraction", "confidence": "high", "match": "exact"}
 {"sha": "9984008fe9f2b78b4a7ac8cd707a4af658fcf3b17ea4b4ce970be18830742cd4", "text": "√(21/5)", "kind": "expression", "confidence": "high", "match": "exact"}
-{"sha": "cc78e72a3e6863900105360b906340fdd7beb341655591ec43295c2bc1e7a651", "text": "&$¤¤¥$&¥", "kind": "symbol", "confidence": "medium", "match": "exact"}
-{"sha": "d98e3bae6b9e77ea2edde03f9b23e5a3432dc43a274bb533a0cf1cd3b17bb2d2", "text": "□UU67dd○□○", "kind": "symbol", "confidence": "high", "match": "exact"}
 {"sha": "c24d563bca02cae8d8367a2f36f0d183e0e56dc38f764c2bf48eecbdb65d6370", "text": "13/5", "kind": "fraction", "confidence": "high", "match": "exact"}
 {"sha": "d98c50405732e39c69eef76376d8c7325291875d120cb6f1d4308d17f7e89ce3", "text": "5+√6", "kind": "expression", "confidence": "high", "match": "exact"}
 {"sha": "ef5aaf6a832ef02927b7e1c032f67cc420ee888c3184706db41f329806ee17a9", "text": "√37", "kind": "expression", "confidence": "high", "match": "exact"}

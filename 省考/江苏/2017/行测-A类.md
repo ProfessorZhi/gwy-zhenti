@@ -2687,7 +2687,7 @@ D项：位置1、8的符号相同，位置2、7的符号相同，位置4、6的�
 
 ### 第 80 题
 
-龙99×3&ssW
+![](assets-fenbi-77306/80c15afd284db6ab85135042919ca535623298f39feff6c2ef02b01920f70681.png)
 
 A. ![](assets-fenbi-77306/08c00ec1714bbb4a7a808d8c35eed68b72267e1e39c3bdee850f7077de20c502.png)
 
