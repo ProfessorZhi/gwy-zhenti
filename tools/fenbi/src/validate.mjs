@@ -37,7 +37,10 @@ const accessGate = (body) => {
 const COLLECTION_STUB = new RegExp('^(?:题目正在全力以赴征集|正在搜集中|本题暂无收集到|暂无收集到|网友未回忆起|题目缺失'
   + '|非客观题，请交卷后查看参考解析估分)'
   + '(?:[，,。.；;]?\\s*(?:请稍后再试|请稍后|敬请期待|感谢您的关注|谢谢|稍后重试'
-  + '|将会(?:在征集到后)?第一时间上传|[^。！？!?]{0,24}))?$', 'u');
+  + '|将会(?:在征集到后)?第一时间上传|[^。！？!?]{0,24}))?'
+  // 征集提示后面可能跟一个括注，如「（正确答案默认设置为A项。）」，括注里可以带句号，
+  // 所以要在尾部整体匹配，而不是走上面「不含句末标点」的兜底分支。
+  + '(?:[。.])?\\s*(?:[（(][^）)]{0,60}[）)])?$', 'u');
 const STUB_BODY_MAX_CHARS = 120;
 export function isCollectionStub(body) {
   return Boolean(body) && body.length <= STUB_BODY_MAX_CHARS && COLLECTION_STUB.test(body);
