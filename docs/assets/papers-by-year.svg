@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="16" y="26" font-size="16" font-weight="700" fill="#0f172a">逐年入库存量（份）</text>
+<rect x="50.0" y="287.44897959183675" width="15.210526315789473" height="2.6" rx="2" fill="#3b82f6"/>
+<rect x="67.21052631578948" y="279.7959183673469" width="15.210526315789473" height="10.2" rx="2" fill="#f59e0b"/>
+<text x="66.21052631578948" y="306" font-size="10" fill="#64748b" text-anchor="middle">2008</text>
+<rect x="86.42105263157895" y="287.44897959183675" width="15.210526315789473" height="2.6" rx="2" fill="#3b82f6"/>
+<rect x="103.63157894736841" y="279.7959183673469" width="15.210526315789473" height="10.2" rx="2" fill="#f59e0b"/>
+<text x="102.63157894736841" y="306" font-size="10" fill="#64748b" text-anchor="middle">2009</text>
+<rect x="122.84210526315789" y="287.44897959183675" width="15.210526315789473" height="2.6" rx="2" fill="#3b82f6"/>
+<rect x="140.05263157894737" y="279.7959183673469" width="15.210526315789473" height="10.2" rx="2" fill="#f59e0b"/>
+<text x="139.05263157894737" y="306" font-size="10" fill="#64748b" text-anchor="middle">2010</text>
+<rect x="159.26315789473682" y="287.44897959183675" width="15.210526315789473" height="2.6" rx="2" fill="#3b82f6"/>
+<rect x="176.4736842105263" y="279.7959183673469" width="15.210526315789473" height="10.2" rx="2" fill="#f59e0b"/>
+<text x="175.4736842105263" y="306" font-size="10" fill="#64748b" text-anchor="middle">2011</text>
+<rect x="195.68421052631578" y="284.8979591836735" width="15.210526315789473" height="5.1" rx="2" fill="#3b82f6"/>
+<rect x="212.89473684210526" y="277.2448979591837" width="15.210526315789473" height="12.8" rx="2" fill="#f59e0b"/>
+<text x="211.89473684210526" y="306" font-size="10" fill="#64748b" text-anchor="middle">2012</text>
+<rect x="232.10526315789474" y="282.3469387755102" width="15.210526315789473" height="7.7" rx="2" fill="#3b82f6"/>
+<rect x="249.31578947368422" y="274.6938775510204" width="15.210526315789473" height="15.3" rx="2" fill="#f59e0b"/>
+<text x="248.31578947368422" y="306" font-size="10" fill="#64748b" text-anchor="middle">2013</text>
+<rect x="268.52631578947364" y="279.7959183673469" width="15.210526315789473" height="10.2" rx="2" fill="#3b82f6"/>
+<rect x="285.7368421052631" y="274.6938775510204" width="15.210526315789473" height="15.3" rx="2" fill="#f59e0b"/>
+<text x="284.7368421052631" y="306" font-size="10" fill="#64748b" text-anchor="middle">2014</text>
+<rect x="304.9473684210526" y="279.7959183673469" width="15.210526315789473" height="10.2" rx="2" fill="#3b82f6"/>
+<rect x="322.1578947368421" y="274.6938775510204" width="15.210526315789473" height="15.3" rx="2" fill="#f59e0b"/>
+<text x="321.1578947368421" y="306" font-size="10" fill="#64748b" text-anchor="middle">2015</text>
+<rect x="341.36842105263156" y="152.24489795918367" width="15.210526315789473" height="137.8" rx="2" fill="#3b82f6"/>
+<rect x="358.57894736842104" y="139.48979591836735" width="15.210526315789473" height="150.5" rx="2" fill="#f59e0b"/>
+<text x="357.57894736842104" y="306" font-size="10" fill="#64748b" text-anchor="middle">2016</text>
+<rect x="377.7894736842105" y="159.89795918367346" width="15.210526315789473" height="130.1" rx="2" fill="#3b82f6"/>
+<rect x="395.0" y="124.18367346938774" width="15.210526315789473" height="165.8" rx="2" fill="#f59e0b"/>
+<text x="394.0" y="306" font-size="10" fill="#64748b" text-anchor="middle">2017</text>
+<rect x="414.2105263157895" y="157.3469387755102" width="15.210526315789473" height="132.7" rx="2" fill="#3b82f6"/>
+<rect x="431.42105263157896" y="103.77551020408163" width="15.210526315789473" height="186.2" rx="2" fill="#f59e0b"/>
+<text x="430.42105263157896" y="306" font-size="10" fill="#64748b" text-anchor="middle">2018</text>
+<rect x="450.6315789473684" y="134.3877551020408" width="15.210526315789473" height="155.6" rx="2" fill="#3b82f6"/>
+<rect x="467.84210526315786" y="75.71428571428572" width="15.210526315789473" height="214.3" rx="2" fill="#f59e0b"/>
+<text x="466.84210526315786" y="306" font-size="10" fill="#64748b" text-anchor="middle">2019</text>
+<rect x="487.05263157894734" y="154.79591836734693" width="15.210526315789473" height="135.2" rx="2" fill="#3b82f6"/>
+<rect x="504.2631578947368" y="60.408163265306115" width="15.210526315789473" height="229.6" rx="2" fill="#f59e0b"/>
+<text x="503.2631578947368" y="306" font-size="10" fill="#64748b" text-anchor="middle">2020</text>
+<rect x="523.4736842105262" y="165.0" width="15.210526315789473" height="125.0" rx="2" fill="#3b82f6"/>
+<rect x="540.6842105263157" y="40.0" width="15.210526315789473" height="250.0" rx="2" fill="#f59e0b"/>
+<text x="539.6842105263157" y="306" font-size="10" fill="#64748b" text-anchor="middle">2021</text>
+<rect x="559.8947368421052" y="190.51020408163265" width="15.210526315789473" height="99.5" rx="2" fill="#3b82f6"/>
+<rect x="577.1052631578947" y="78.26530612244898" width="15.210526315789473" height="211.7" rx="2" fill="#f59e0b"/>
+<text x="576.1052631578947" y="306" font-size="10" fill="#64748b" text-anchor="middle">2022</text>
+<rect x="596.3157894736842" y="185.40816326530614" width="15.210526315789473" height="104.6" rx="2" fill="#3b82f6"/>
+<rect x="613.5263157894736" y="42.551020408163254" width="15.210526315789473" height="247.4" rx="2" fill="#f59e0b"/>
+<text x="612.5263157894736" y="306" font-size="10" fill="#64748b" text-anchor="middle">2023</text>
+<rect x="632.7368421052631" y="185.40816326530614" width="15.210526315789473" height="104.6" rx="2" fill="#3b82f6"/>
+<rect x="649.9473684210526" y="73.16326530612244" width="15.210526315789473" height="216.8" rx="2" fill="#f59e0b"/>
+<text x="648.9473684210526" y="306" font-size="10" fill="#64748b" text-anchor="middle">2024</text>
+<rect x="669.1578947368421" y="182.85714285714286" width="15.210526315789473" height="107.1" rx="2" fill="#3b82f6"/>
+<rect x="686.3684210526316" y="88.46938775510205" width="15.210526315789473" height="201.5" rx="2" fill="#f59e0b"/>
+<text x="685.3684210526316" y="306" font-size="10" fill="#64748b" text-anchor="middle">2025</text>
+<rect x="705.578947368421" y="205.81632653061223" width="15.210526315789473" height="84.2" rx="2" fill="#3b82f6"/>
+<rect x="722.7894736842105" y="195.6122448979592" width="15.210526315789473" height="94.4" rx="2" fill="#f59e0b"/>
+<text x="721.7894736842105" y="306" font-size="10" fill="#64748b" text-anchor="middle">2026</text>
+<line x1="48" y1="290" x2="748" y2="290" stroke="#e2e8f0"/>
+<rect x="48" y="332" width="12" height="12" rx="2" fill="#3b82f6"/><text x="65" y="342" font-size="12" fill="#475569">行测 533</text>
+<rect x="158" y="332" width="12" height="12" rx="2" fill="#f59e0b"/><text x="175" y="342" font-size="12" fill="#475569">申论 889</text>
+</svg>
