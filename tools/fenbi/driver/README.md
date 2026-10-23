@@ -129,8 +129,9 @@ Rules enforced by the core:
   are listed and blocked; ids are never merged by title. An explicit API or
   inventory variant outranks a title heuristic; a title-only disagreement is
   counted separately (`variantTitleDisagreements`).
-- **Years.** Reuses `year-policy.mjs`: Zhejiang keeps every visible year, other
-  regions 2016..current year. Future rows and unknown years are separated.
+- **Years.** Reuses `year-policy.mjs`: every visible year in every region
+  (the 2016 floor was removed on 2026-10-23). Future rows and unknown years are
+  separated.
 - **Coverage.** The area matrix counts appearances; `totals.realSourceIds` is
   the deduplicated real-paper total and mock papers are reported separately.
   Partial pages, unpaired `apiIds`, unknown years and unobserved region tabs are
@@ -146,5 +147,32 @@ inventory/API, plus a 569-id captured scan) gives: **838 real sourceIds** (802
 national + 36 Zhejiang), **674 policy-in-scope** (638 national 2016–2026 + 36
 Zhejiang all-years; 11 of the 36 are pre-2016), 3 cross-region ids, 0 identity
 conflicts, 595 candidates and 33 pending free checks. This is the visible content of these snapshots, **not** a claim of a
-national shenlun total; Zhejiang 2022 has no row and the 4 non-region tabs
-(推荐/小模考/选调生/公安) were not inventoried here.
+national shenlun total; Zhejiang 2022 has no row and the 4 non-region tabs (推荐/小模考/选调生/公安) were not inventoried here.
+
+## Shenlun live capture (read-only, one process at a time)
+
+Two scripts close the loop between the saved snapshots and a captured paper.
+Both are strictly read-only: the session guard aborts every non-GET request,
+nothing is created, answered or submitted, and any 401/403/429/503 stops the
+run instead of retrying.
+
+```bash
+# 1) Scan one region's shenlun list; emits sourceId -> sha256(title) prefix +
+#    page/row index. Titles themselves are never written to disk.
+DISPLAY=:77 node tools/fenbi/driver/shenlun-inventory-scan.mjs \
+  --area 天津 --out "$FENBI_WORK_DIR/shenlun-inventory/inventory-天津.json"
+
+# 2) Capture candidates one by one: scan the region if needed, bind the exact
+#    list row, pin the title hash, snapshot every material pane.
+DISPLAY=:77 node tools/fenbi/driver/shenlun-batch.mjs \
+  --candidates "$FENBI_WORK_DIR/shenlun-candidates.json" \
+  --out-root /home/fjd/tmp/shenlun-capture-20261023 --limit 3
+```
+
+`--out-root` must be outside the repository and outside `FENBI_WORK_DIR`;
+captures land in `<out-root>/<sourceId>/` and are only published by
+`worker/land-shenlun.mjs`.
+
+Exit codes: `0` finished, `2` bad arguments, `3` risk signal (stop everything),
+`1` runtime error. A stale inventory (no `page`/`index`) is skipped rather than
+guessed, so re-scan after the format changes.

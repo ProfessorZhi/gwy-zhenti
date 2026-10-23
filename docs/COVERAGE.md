@@ -134,6 +134,29 @@ L1 已铺满；L2 主干年份齐全、早年仍在补；L3 以 2016 年之后�
 
 **为什么还停着**：粉笔对"创建练习"（`POST /api/xingce/exercises`）有频率限制，打开早年行测卷详情会返回 403。2026-10-23 两次单卷试抓仍是 `http403:1`（`initCalls:1`），冷却未过。采集侧按风控规则主动停，不硬闯；冷却后按上表批次补收，浏览器侧始终单进程。
 
+申论同样受影响，但表现不同：
+
+| 时间 (UTC) | 动作 | 结果 |
+| --- | --- | --- |
+| 2026-10-23 05:26 | 只读扫描 新疆兵团 列表（`GET /api/shenlun/papers/v2`） | **正常**，9 条、0 风控 |
+| 2026-10-23 05:27 | 同一卷打开详情页（`/ti/view/paper/...`） | **403**，脚本立即中止，未写任何采集产物 |
+| 2026-10-23 05:29 | 登录态探针 `GET login.fenbi.com/api/users/info` | **200**，账号仍在线 |
+
+即：**登录没掉，是详情页被限流**。风控规则（`driver/service-risk.mjs`）是一小时内软信号 ≥3 次就 STOP；05:11 与 05:27 两次 403 已触发。恢复后先用单卷探针验证，再按批放量。
+
+补抓工具（本轮新增，均在 `tools/fenbi/driver/`）：
+
+```bash
+# 1) 只读扫描某地区申论列表，产出 sourceId → 标题哈希（只写哈希，不写标题原文）
+DISPLAY=:77 node tools/fenbi/driver/shenlun-inventory-scan.mjs --area 天津 --out <work>/shenlun-inventory/inventory-天津.json
+
+# 2) 候选 → 扫描 → 逐卷只读采集（严格串行，遇 401/403/429/503 立即整体中止）
+DISPLAY=:77 node tools/fenbi/driver/shenlun-batch.mjs --candidates <work>/shenlun-candidates.json --out-root /home/fjd/tmp/shenlun-capture-<date> --limit 3
+
+# 3) 落库（写入仓库目录并过闸门）
+CAPTURES_DIR=… INTEG_REPO=… RIGHTS_FILE=… node tools/fenbi/worker/land-shenlun.mjs
+```
+
 ---
 
 ## 复现
