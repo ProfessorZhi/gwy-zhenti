@@ -14,11 +14,11 @@
 | --- | --- |
 | 直接做题 / 找某年某省某卷 | [`国考/`](国考/) · [`省考/`](省考/) |
 | 按地区 / 年份浏览全部试卷 | [试卷目录索引](catalog/INDEX.md)（1,422 份，可点） |
-| 看覆盖到哪一年、哪个地区 | [覆盖报告](docs/COVERAGE.md) · [九优先区逐年表](COVERAGE-优先区.md) |
+| 看覆盖到哪一年、哪个地区 | [覆盖报告](docs/COVERAGE.md) · [九优先区逐年表](docs/COVERAGE-PRIORITY.md) |
 | 了解采集与渲染怎么跑 | [架构与流水线](docs/ARCHITECTURE.md) |
 | 了解一份 MD 长什么样 | [文档格式](docs/SCHEMA.md) |
-| 看审核结论、已知缺口 | [质量报告](docs/QUALITY.md) · [入库与阅读标准](QUALITY.md) · [PROGRESS.md](PROGRESS.md) |
-| 看上游来源与许可 | [SOURCES.md](SOURCES.md) |
+| 看审核结论、已知缺口 | [质量报告](docs/QUALITY.md) · [入库与阅读标准](docs/QUALITY-STANDARD.md) · [进度](docs/PROGRESS.md) |
+| 看上游来源与许可 | [来源与许可](docs/SOURCES.md) |
 
 ---
 
@@ -119,7 +119,7 @@ flowchart TB
 - **题号口径**：frontmatter 的 `题号口径` 说明题号来自采集源；与原卷的对应关系仍待人工核对。
 - **重复与并集**：同一年份同科目下若同时存在"统考"和具体类级卷型，按不同卷处理；命名归一仍在进行。
 - **不混入**：模考、预测题、讲义、事业单位、选调生等不属于国省考真题的对象一律不收。
-- **授权**：本仓库为**公开仓库**（PUBLIC）。第三方上游的全文与图片转载授权**尚未逐一核实**，各卷 frontmatter 的 `校验状态` 已逐卷写明来源性质；使用风险由使用者自行承担。详见 [SOURCES.md](SOURCES.md)。
+- **授权**：本仓库为**公开仓库**（PUBLIC）。第三方上游的全文与图片转载授权**尚未逐一核实**，各卷 frontmatter 的 `校验状态` 已逐卷写明来源性质；使用风险由使用者自行承担。详见 [来源与许可](docs/SOURCES.md)。
 
 ---
 

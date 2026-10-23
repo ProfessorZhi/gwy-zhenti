@@ -1,7 +1,7 @@
 # 报表索引（reports/）
 
 > 快照：2026-10-23。本索引之外有 **19 份报表 .md**（根目录 18 份 + `fix-b1-8papers-20261022/RECEIPT.md`），另有 25 份 `.json`、19 份 `.jsonl` 机读凭据（含子目录回执）。
-> 当前库状态以 [README](../README.md)、[PROGRESS](../PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。本页只做入口和状态索引，**不改写、不移动任何报表**。
+> 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。本页只做入口和状态索引，**不改写、不移动任何报表**。
 
 **状态口径**
 
@@ -11,7 +11,7 @@
 
 **快速入口**
 
-- 看当前规模与规则：[README](../README.md) · [PROGRESS](../PROGRESS.md) · [质量报告](../docs/QUALITY.md)
+- 看当前规模与规则：[README](../README.md) · [PROGRESS](../docs/PROGRESS.md) · [质量报告](../docs/QUALITY.md)
 - 看还没补齐的题：[PAPER-MISSING-SOURCE-CHECK-20261011.md](PAPER-MISSING-SOURCE-CHECK-20261011.md) · [ROUND3-XINGCE-SOURCE-CHECK-20261012.md](ROUND3-XINGCE-SOURCE-CHECK-20261012.md)
 - 看最新质量告警与图片状态：[QUALITY-AUDIT.md](QUALITY-AUDIT.md) · [IMAGE-AUDIT-20261023.md](IMAGE-AUDIT-20261023.md)
 - 看 AI 生成答案的清理结论：[REMOVED-AI-CONTENT-LEGACY-20261022.md](REMOVED-AI-CONTENT-LEGACY-20261022.md)
@@ -76,7 +76,7 @@
 
 | # | 报表与位置 | 过期原文 | 当前事实 |
 |---:|---|---|---|
-| 1 | [QUALITY-REPAIR-20261012.md](QUALITY-REPAIR-20261012.md) 第 78 行 | “仓库维持私有，不修改Windows旧工作副本。” | 仓库现为**公开仓库（PUBLIC）**，见 [README](../README.md) 与 [PROGRESS](../PROGRESS.md)。 |
+| 1 | [QUALITY-REPAIR-20261012.md](QUALITY-REPAIR-20261012.md) 第 78 行 | “仓库维持私有，不修改Windows旧工作副本。” | 仓库现为**公开仓库（PUBLIC）**，见 [README](../README.md) 与 [PROGRESS](../docs/PROGRESS.md)。 |
 | 2 | [QUALITY-REPAIR-20261012-R2.md](QUALITY-REPAIR-20261012-R2.md) 第 61 行 | “仓库保持私有。” | 同上，现为公开仓库。 |
 | 3 | [QUALITY-REPAIR-20261012.md](QUALITY-REPAIR-20261012.md) 第 36 行 | “当前 1191份MD（行测453、申论738）” | 2026-10-23 为 **1,422 份**（行测 533 / 申论 889），图片引用 86,858 处。 |
 | 4 | [QUALITY-REPAIR-20261012-R2.md](QUALITY-REPAIR-20261012-R2.md) 第 41 行 | “全库清单1191份” | 同上，现为 1,422 份。 |
@@ -91,6 +91,6 @@
 
 **口径说明**
 
-- 本目录没有把“515 卷”当作本库统计：该数字只出现在 [SOURCES.md](../SOURCES.md) 对上游 README 的转述里。
+- 本目录没有把“515 卷”当作本库统计：该数字只出现在 [SOURCES.md](../docs/SOURCES.md) 对上游 README 的转述里。
 - “2016 年起收录”也不在 reports/ 内作为结论出现；仓库已在 2026-10-23 取消 2016 年份下限（提交 `2766a7a81`）。引用旧报表时不要把它当现行范围。
 - 上述 12 处分布在 9 份报表；其余轮次数字（如 R4 的 676、R5 的 799、R6 的 609）是各轮“当时剩余”，已在分组状态中标为被下一轮取代，不再逐条列入本表。

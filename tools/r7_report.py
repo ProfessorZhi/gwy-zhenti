@@ -83,7 +83,7 @@ def main():
   '',
   '[可机读的738份逐题状态](ROUND7-COVERAGE-20261013.json) · [逐文档修复凭据](ROUND7-REFERENCES-20261013.jsonl) · [验收数字](REPAIR-SUMMARY-20261013-R7.json)','','']
  (ROOT/'reports/QUALITY-REPAIR-20261013-R7.md').write_text('\n'.join(lines),encoding='utf-8')
- p=ROOT/'PROGRESS.md';before=subprocess.check_output(['git','show','HEAD:PROGRESS.md'],text=True,encoding='utf-8')
+ p=ROOT/'docs/PROGRESS.md';before=subprocess.check_output(['git','show','HEAD:docs/PROGRESS.md'],text=True,encoding='utf-8')
  cur=p.read_text(encoding='utf-8')
  m=re.search(r'(?m)^## 第三轮：',before)
  if m:cur=re.sub(r'\n## 第三轮：[\s\S]*\Z','',cur).rstrip()+'\n\n'+before[m.start():].rstrip()+'\n'

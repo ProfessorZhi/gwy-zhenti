@@ -1,6 +1,6 @@
 # 真题库总进度
 
-更新批次：2026-10-23。逐卷数据以 [覆盖报告](docs/COVERAGE.md) 与 `catalog/manifest.jsonl` 为准。
+更新批次：2026-10-23。逐卷数据以 [覆盖报告](COVERAGE.md) 与 `catalog/manifest.jsonl` 为准。
 
 **图文库已交付；内容质量分项维护，不宣称全国所有原卷已经完整。**
 
@@ -18,14 +18,14 @@
 
 ## 当前入口
 
-- [重点地区逐年图文试卷](COVERAGE-优先区.md)
-- [当前质量事项](reports/QUALITY-AUDIT.md)
-- [第二轮：早年申论补全与残余](reports/QUALITY-REPAIR-20261012-R2.md)
-- [第一轮：题序与分卷修复](reports/QUALITY-REPAIR-20261012.md)
-- [逐卷机器清单及 SHA-256](catalog/manifest.jsonl)
-- [质量汇总数据](reports/QUALITY-SUMMARY.json)
-- [逐题补全来源与前后 SHA](reports/REPAIRS-20261011.jsonl)
-- [非重点地区资料缺失](资料缺失/README.md)
+- [重点地区逐年图文试卷](COVERAGE-PRIORITY.md)
+- [当前质量事项](../reports/QUALITY-AUDIT.md)
+- [第二轮：早年申论补全与残余](../reports/QUALITY-REPAIR-20261012-R2.md)
+- [第一轮：题序与分卷修复](../reports/QUALITY-REPAIR-20261012.md)
+- [逐卷机器清单及 SHA-256](../catalog/manifest.jsonl)
+- [质量汇总数据](../reports/QUALITY-SUMMARY.json)
+- [逐题补全来源与前后 SHA](../reports/REPAIRS-20261011.jsonl)
+- [非重点地区资料缺失](../资料缺失/README.md)
 
 ## 材料尾部补全专项（历史）
 
@@ -49,7 +49,7 @@ python tools/cloud_quality.py --check --verify-images
 已修国考2022副省级题序；江苏2023B类补1题至135；广东2020县级补3题至93；浙江2020A类补5题至98。
 合计新增9道真实题目、9张来源参考解析裁图；旧题干、选项、答案、19组共用材料保持原文并联动题序。
 广东原69—75、浙江原49—50仍缺，保留原题缺号，不能按连续重编号伪装完整。
-[四卷修复明细与边界](reports/PAPER-INTEGRITY-20261011.md)
+[四卷修复明细与边界](../reports/PAPER-INTEGRITY-20261011.md)
 
 ## 重点区整卷与题序专项（2026-10-12）
 
@@ -58,7 +58,7 @@ python tools/cloud_quality.py --check --verify-images
 新增江苏2026申论B类机构公开整理版 1 份；单一完整题面来源，未取得第二份完整原件，且没有参考答案。A/C及该年行测仍未取得。
 江苏2024行测A原76、96、110、111及江苏2025行测C的12题仍缺；广东2020原69—75、浙江2020A原49—50也仍未补到可靠原文。
 历史“统考”桶可能包含重叠小题；年度科目有文件不等于全部分卷齐全。
-[本轮修复与残余缺口](reports/QUALITY-REPAIR-20261012.md)；[国考、江苏、浙江逐卷质量台账](reports/PRIORITY-QUALITY-20261012.md)。
+[本轮修复与残余缺口](../reports/QUALITY-REPAIR-20261012.md)；[国考、江苏、浙江逐卷质量台账](../reports/PRIORITY-QUALITY-20261012.md)。
 
 ## 第二轮：早年申论残卷与导航（2026-10-12）
 
@@ -66,4 +66,4 @@ python tools/cloud_quality.py --check --verify-images
 江苏2019申论A类补齐题目导航；本轮新增 21 份来源参考答案，保留 11 份旧答案原文。
 江苏2016申论A/B第1题参考答案仍未核实收录；浙江2016A/B有来源编排异文，未强行拼接。标为浙江2022但内容/措辞异常的候选不入库。
 完整公开题面不等于官方原件逐字认证；10个年度科目缺口、25个明确行测缺题仍保留。
-[本轮范围与验收](reports/QUALITY-REPAIR-20261012-R2.md)；[当前逐卷质量台账](reports/PRIORITY-QUALITY-20261012.md)。
+[本轮范围与验收](../reports/QUALITY-REPAIR-20261012-R2.md)；[当前逐卷质量台账](../reports/PRIORITY-QUALITY-20261012.md)。
