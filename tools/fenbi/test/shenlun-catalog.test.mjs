@@ -56,20 +56,21 @@ test('one sourceId across several regions is one paper, isolated from the queue'
   assert.equal(accounted, out.totals.uniqueSourceIds);
 });
 
-test('year policy: Zhejiang keeps every visible year, other regions stay 2016..now', () => {
+test('year policy: every visible year passes for every region, only future years fail', () => {
+  // 用户 2026-10-23 决定：取消 2016 下限，任何地区的历史年份都要（见 driver/year-policy.mjs）。
   const out = build();
-  assert.equal(out.policy.defaultMinYear, 2016);
+  assert.equal(out.policy.defaultMinYear, 1900);
   assert.equal(out.policy.zhejiangAllYears, true);
   assert.equal(out.policy.maxYear, 2026);
 
   assert.equal(hasCandidate(out, '910001'), true); // Zhejiang 2008
   assert.equal(hasCandidate(out, '920003'), true); // Zhejiang 2012
-  assert.equal(hasCandidate(out, '900003'), false); // Jiangsu 2015
-  assert.equal(out.excluded.outOfYear, 1);
+  assert.equal(hasCandidate(out, '900003'), true); // Jiangsu 2015, no longer out of year
+  assert.equal(out.excluded.outOfYear, 0);
   assert.equal(out.totals.future, 0); // the synthetic 2027 row is a mock, not a real paper
 
   const zhejiang = out.coverage.byArea.find((area) => area.area === '浙江');
-  assert.equal(zhejiang.pre2016, 3);
+  assert.equal(zhejiang.pre2016, 3); // still counted, just no longer excluded
   assert.equal(zhejiang.outOfScope, 0);
 });
 
@@ -240,7 +241,7 @@ test('coverage records partial regions and the unknown range', () => {
   assert.equal(guokao.sourceIds, 4); // 3 real + 1 mock
   assert.equal(guokao.realSourceIds, 3);
   assert.equal(guokao.mock, 1);
-  assert.equal(guokao.inScope, 2);
+  assert.equal(guokao.inScope, 3); // 2015 份在 2026-10-23 取消年份下限后也进入范围
   assert.deepEqual(guokao.fee, { 'free-visible-unverified': 3 });
 
   const onlyNational = build(baseSnapshots().filter((item) => item.kind === 'national'));

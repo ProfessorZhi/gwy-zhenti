@@ -19,14 +19,15 @@
 //   * 只有“该行未见任何付费/会员标记”时才是 free-visible-unverified，不写成 free。
 //   * 显式 free 与会员/锁定信号冲突时降为 unknown 并排除自动队列。
 //
-// 年份规则：复用 driver/year-policy.mjs —— 浙江保留全部可见年份，其他地区 2016..当前年。
+// 年份规则：复用 driver/year-policy.mjs —— 2026-10-23 起所有地区都保留全部可见年份
+// （下界 1900，上界当前自然年），不再有「其他地区 2016 起」的分区例外。
 
 import { createHash } from 'node:crypto';
-import { yearAllowed } from './year-policy.mjs';
+import { DEFAULT_MIN_YEAR, yearAllowed } from './year-policy.mjs';
 
 export const SHENLUN_CATALOG_SCHEMA_VERSION = 1;
 export const SUBJECT = 'shenlun';
-export const DEFAULT_MIN_YEAR = 2016;
+export { DEFAULT_MIN_YEAR };
 export const FOCUS_AREAS = Object.freeze(['国考', '浙江', '江苏', '上海', '北京', '天津', '广东', '广州', '深圳', '福建']);
 export const NON_REGION_TABS = Object.freeze(['推荐', '小模考', '选调生', '公安招警和公检法']);
 
@@ -765,6 +766,8 @@ export function buildShenlunCatalog({
     subject,
     rightsStatus: 'unverified',
     policy: {
+      // 2026-10-23：全地区统一下界（1900）；zhejiangAllYears 保留字段兼容既有消费者，
+      // 现在对所有地区都成立。
       defaultMinYear: DEFAULT_MIN_YEAR,
       zhejiangAllYears: true,
       maxYear: now.getFullYear(),
