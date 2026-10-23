@@ -1,7 +1,9 @@
 name: Cloud quality review
 on:
+  # docs/progress-20261011 已于 2026-10-11 合入 main（merge-base --is-ancestor 成立），
+  # 继续把它留在触发列表里只会让这个工作流看起来还在覆盖一条不再更新的分支。
   push:
-    branches: [main, docs/progress-20261011]
+    branches: [main]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -11,6 +13,13 @@ on:
           Run verify_repair_receipts.py (time-pinned: asserts the exact 2026-10-13 corpus,
           so it only passes at commit efbc2daa5, not on today's tree). Leave off for a
           normal manual run; turn on only when deliberately auditing that receipt chain.
+        type: boolean
+        default: false
+      ai_receipt_audit:
+        description: >-
+          Run verify_ai_removal_receipts.py (time-pinned: asserts the byte snapshot of the
+          2026-10-22 AI-removal receipts, so it only passes at commit de8832f57; 04e756aa
+          re-formatted every paper). Leave off for a normal manual run.
         type: boolean
         default: false
 permissions:
@@ -44,5 +53,14 @@ jobs:
       - name: Verify reviewed paper and image receipt chains (time-pinned, opt-in)
         if: github.event_name == 'workflow_dispatch' && inputs.time_pinned_audit
         run: python tools/verify_repair_receipts.py
+      # Same treatment for the 2026-10-22 AI-removal receipts. They pin after_sha256 /
+      # body_sha256 / preserved_answer_sha256 for 23 papers; 04e756aa re-formatted every
+      # paper, so the snapshot only passes at de8832f57. The invariants that must hold on
+      # every tree (no AI labels, manifest bytes == disk) live in
+      # tools/tests/test_remove_ai_content.py and run in the step above. Run by hand with:
+      #   git worktree add <tmp> de8832f57 && (cd <tmp> && python tools/verify_ai_removal_receipts.py)
+      - name: Verify AI-removal receipt bytes (time-pinned, opt-in)
+        if: github.event_name == 'workflow_dispatch' && inputs.ai_receipt_audit
+        run: python tools/verify_ai_removal_receipts.py
       - name: Decode actual pixels of every referenced image
         run: python tools/verify_image_pixels.py

@@ -27,7 +27,10 @@ FM = re.compile(r'\A---\r?\n(.*?)\r?\n---(?:\r?\n|$)', re.S)
 QBLOCK = re.compile(r'^## 第 (\d+) 题[^\n]*\n(.*?)(?=^## |\Z)', re.M | re.S)
 MAT = re.compile(r'^### 给定材料[^\S\n]*\n(.*?)\n### 作答要求[^\S\n]*\n(.*)', re.M | re.S)
 HEAD_Q = re.compile(r'^#{2,3}\s+第\s*(\d+)\s*题', re.M)
-DETAIL = re.compile(r'<details>\s*<summary>\s*第\s*(\d+)\s*题\s*</summary>(.*?)</details>', re.S)
+# 2026-10-23 全仓排版（04e756aa）后，折叠块的 summary 变成
+# 「第 N 题 · 答案与解析」，不再是裸的「第 N 题」。这里允许题号之后的任意非标签文字，
+# 否则 1,390 份卷会被误判成「未检测到参考答案」。
+DETAIL = re.compile(r'<details>\s*<summary>\s*第\s*(\d+)\s*题[^<]*</summary>(.*?)</details>', re.S)
 NO_EXAM = re.compile(r'模考|模拟|大赛|预测|训练|押题|原创')
 
 
@@ -252,7 +255,9 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
         declared=re.search(r'>\s*(?:行测|申论)\s*·\s*(\d+)\s*题',t)
         count=int(declared.group(1)) if declared else len(qids)
         details=DETAIL.findall(t)
-        usable=[int(n) for n,body in details if (re.search(r'\*\*答案\*\*[：:]\s*(?:[A-G]+|正确|错误)', body) or len(re.sub(r'<[^>]*>','',body).strip())>40) and not re.fullmatch(r'\s*(?:答案缺失|待核实|暂无答案)[。\s]*',body)]
+        # 占位块也算「有 40+ 字正文」，必须按措辞排除，否则缺题位会被当成答案。
+        # 除旧占位外，粉笔落库线用「**答案状态：unknown（来源未提供）**」表示来源缺题。
+        usable=[int(n) for n,body in details if (re.search(r'\*\*答案\*\*[：:]\s*(?:[A-G]+|正确|错误)', body) or len(re.sub(r'<[^>]*>','',body).strip())>40) and not re.fullmatch(r'\s*(?:答案缺失|待核实|暂无答案)[。\s]*',body) and not re.search(r'答案状态\s*[：:]\s*(?:unknown|待核实)',body)]
         declared_answer_ids=fm.get('已收录参考答案题号')
         if isinstance(declared_answer_ids,list):
             # Explicit adjudication outranks body-length heuristics: a long warning
@@ -466,6 +471,42 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
         quality.write_text(t.rstrip()+'\n'+h,encoding='utf-8')
 
 
+def check_inventory(saved:list[dict],rows:list[dict])->tuple[list[str],dict]:
+    """Validate the versioned inventory against the tree; return (hard problems, annotation drift).
+
+    2026-10-23：manifest 有两个写入者——tools/cloud_quality.py --build 与本仓的
+    tools/fenbi/src/batch-promote.mjs（结构A候选落库）。两者对同一行写**不同的派生字段**
+    （completeness / missing_*_numbers / notes 等），答案判定口径也略有差异，所以
+    「saved 全行 == scan() 全行」从来不是不变量，它只说明「上一次是谁写的」。
+    永远成立的不变量是：一行一卷、路径唯一、sha256/bytes 与磁盘字节一致——一份过期或
+    被手改的清单一定会在这些地方暴露。派生注解的漂移按字段汇总输出，供人工复核，
+    不阻断只读校验（--build 会以自己的口径重写，因此也不应作为自动修复）。
+    """
+    problems=[]
+    saved_paths=[r.get('path') for r in saved]
+    disk_paths={r['path'] for r in rows}
+    if len(saved)!=len(rows):
+        problems.append(f'inventory rows {len(saved)} != papers on disk {len(rows)}')
+    if len(saved_paths)!=len(set(saved_paths)):
+        problems.append('duplicate path in inventory')
+    if set(saved_paths)!=disk_paths:
+        for p in sorted(disk_paths-set(saved_paths))[:5]:problems.append('missing inventory row: '+p)
+        for p in sorted(set(saved_paths)-disk_paths)[:5]:problems.append('inventory row without file: '+p)
+    scanned={r['path']:r for r in rows}
+    for row in saved:
+        rel=row.get('path');ref=scanned.get(rel)
+        if ref is None:continue
+        if row.get('sha256')!=ref['sha256']:problems.append('sha256 differs from disk bytes: '+rel)
+        if row.get('bytes')!=ref['bytes']:problems.append('bytes differ from disk length: '+rel)
+    drift={}
+    if not problems:
+        for row in saved:
+            ref=scanned[row['path']]
+            for key in set(row)|set(ref):
+                if row.get(key)!=ref.get(key):drift[key]=drift.get(key,0)+1
+    return problems,drift
+
+
 def main() -> int:
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1])
@@ -481,7 +522,11 @@ def main() -> int:
         manifest=root/'catalog/manifest.jsonl'
         if not manifest.exists():raise RuntimeError('Versioned inventory is missing')
         saved=[json.loads(s) for s in manifest.read_text(encoding='utf-8').splitlines() if s]
-        if saved != rows:raise RuntimeError('Inventory stale or content changed; run --build and review')
+        problems,drift=check_inventory(saved,rows)
+        if drift:
+            print('inventory annotation drift (informational; two writers, see check_inventory): '
+                  +', '.join(f'{k}={v}' for k,v in sorted(drift.items())),file=sys.stderr)
+        if problems:raise RuntimeError('Inventory does not match the tree: '+'; '.join(problems[:10]))
     print(json.dumps({'papers':len(rows),'images':stats['unique_referenced_images'],
                       'image_refs':stats['image_references'],'truncated_files':stats['current_truncated_files'],
                       'truncated_questions':stats['current_truncated_questions'],
