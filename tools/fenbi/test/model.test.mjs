@@ -322,7 +322,9 @@ const COLLECTION_STUBS = ['题目正在全力以赴征集', '题目正在全力�
   // These were missing from the first version of this gate, which therefore let the real stub
   // through as a question body; they are kept as literal strings so a wording change is visible here.
   '题目正在全力以赴征集，将会第一时间上传',
-  '题目正在全力以赴征集，将会在征集到后第一时间上传'];
+  '题目正在全力以赴征集，将会在征集到后第一时间上传',
+  // 部分卷面把客套话收尾成一个句号（GS-2019 行测整卷即此形态），句号不该让占位语漏判。
+  '题目正在全力以赴征集，将会在征集到后第一时间上传。'];
 
 function stubDoc(stem) {
   const doc = fixture();

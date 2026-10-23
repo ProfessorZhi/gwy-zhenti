@@ -12,6 +12,9 @@ import { paperVariantLabel } from './labels.mjs';
 
 // 粉笔与本库都缺的题在 Markdown 里的固定标注。policy.mjs 的有效题计数认这句话，替换判断因此不会把它当成有效题。
 export const SOURCE_MISSING_NOTE = '粉笔暂未收录本题（来源缺题，题位保留）';
+// 整篇材料没征集到时粉笔给的是占位语（「题目正在全力以赴征集…」），它引出的那几道题也一定是空的。
+// 材料位置留着、写明缺什么，比整卷降成 C 更如实：题位和资料层级都还在，读者一眼知道缺哪一段。
+export const SOURCE_MISSING_MATERIAL_NOTE = '本题材料粉笔暂未收录（来源缺题，位置保留）';
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const APP_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const subjectName = q => q === 'xingce' ? '行测' : q === 'shenlun' ? '申论' : null;
@@ -87,7 +90,13 @@ export function assemble(document, oldMarkdown = '') {
   }
   counters.oldAnswersUnmapped = old.filter(q=>!legacyUsed.has(q) && flat(q.answerHtml)).length;
   if (counters.oldAnswersUnmapped) issues.push('unmapped-legacy-answers-retained-separately');
-  const prepared={...document,questions:merged};
+  // 材料槽本身是占位语：保留槽位并写明缺失，不整卷降级（否则这一卷永远进不了库）。
+  const materials=(document.materials||[]).map(m=>{
+    if(!isCollectionStub(text(m.contentHtml)))return m;
+    counters.stubMaterials=(counters.stubMaterials||0)+1;
+    return {...m,contentHtml:'<p>'+SOURCE_MISSING_MATERIAL_NOTE+'</p>',sourceMissing:true};
+  });
+  const prepared={...document,materials,questions:merged};
   return {prepared,legacy:old,numberingStable,issues:[...new Set(issues)],counters};
 }
 

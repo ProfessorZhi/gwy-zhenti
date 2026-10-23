@@ -34,10 +34,17 @@ const accessGate = (body) => {
 // covered. The observed forms are listed by name, then a bounded generic tail acts as a safety net.
 // The generic tail may not contain sentence-ending punctuation and may not exceed 24 chars, so a
 // genuine stem that merely quotes the marker and then keeps talking is still never flagged.
-const COLLECTION_STUB = new RegExp('^(?:题目正在全力以赴征集|正在搜集中|本题暂无收集到|暂无收集到|网友未回忆起|题目缺失'
+// Some captures end the courtesy tail with a full stop (「…将会在征集到后第一时间上传。」), so one
+// optional sentence-ending mark is allowed after the tail — but only after a tail that otherwise
+// matches, which keeps the "quotes the marker and keeps talking" case out.
+const COLLECTION_STUB = new RegExp('^(?:(?:题目)?正在全力以赴征集|正在搜集中|本题暂无收集到|暂无收集到|网友未回忆起|题目缺失'
   + '|非客观题，请交卷后查看参考解析估分)'
   + '(?:[，,。.；;]?\\s*(?:请稍后再试|请稍后|敬请期待|感谢您的关注|谢谢|稍后重试'
-  + '|将会(?:在征集到后)?第一时间上传|[^。！？!?]{0,24}))?$', 'u');
+  + '|将会(?:在征集到后)?第一时间上传|[^。！？!?]{0,24}))?'
+  // 部分卷面在客套话后再缀一条短括注（「（正确答案默认设置为A项。）」「（该题选择A项默认得分）」）。
+  // 括注必须短、且带缺题/默认给分的意思才会被吃掉，避免把正文里的正常括注当成占位语。
+  + '(?:[。.，,]?[（(][^）)]{0,18}(?:默认|得分|替代|征集|答案|缺|暂以)[^）)]{0,18}[）)])?'
+  + '[。.！!？?]?$', 'u');
 const STUB_BODY_MAX_CHARS = 120;
 export function isCollectionStub(body) {
   return Boolean(body) && body.length <= STUB_BODY_MAX_CHARS && COLLECTION_STUB.test(body);
