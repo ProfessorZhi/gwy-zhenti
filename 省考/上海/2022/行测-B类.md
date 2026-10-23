@@ -943,7 +943,7 @@ B
 
 **解析**
 
-观察数列，有特殊符号“+”，考虑机械划分。原数列可转化√2+√3，![](assets-fenbi-162380/e5fc2de120a4ff67235cec3035b892fa0111c58e66c6a43ab4dd2fed6f94d4b1.png)，√6+√15，![](assets-fenbi-162380/b2ae3244fa8dd4d06de06d60bd5becdf46b5ec4f8ce7b339b245df7f57685b6f.png)，（ ），“+”之前部分：√2，![](assets-fenbi-162380/2532d555bbb5df44cb19202e546263d2d159e75e3cdb5d4f72affac53254a859.png)，√6，![](assets-fenbi-162380/45e6c1cb937899f81ed8dff9c41ea744274a4cfeb9a500c473f0d3fe63af956e.png)，根号下是公差为2的等差数列，则所求项“+”之前![](assets-fenbi-162380/2c2a327496b11c60729a91242283bb5e1a9ced4789174d1af99c9ff3da95eaf0.png)；“+”之后部分：![](assets-fenbi-162380/299bf749f30614b11b6df0d256297d386e18cc80a226e960ec69603c3d16acee.png)，![](assets-fenbi-162380/7cfa5827752f6186d926653b895d37da4d130fb15d3128250e87cfe9628090e2.png)，![](assets-fenbi-162380/d9a581a2e98cf6a91b0c9d1cb12a1c0a716554f85d4c7eccdab5e9c238697e81.png)，![](assets-fenbi-162380/b1e3f8634a62515399883818cc9da4784f866dbedca899399ddae8a65dd0a0b6.png)，根号下是公差为6的等差数列，则所求项“+”之后![](assets-fenbi-162380/d2061ffe97d46f0997ff51aafa9274dba295da681c34831606a2dc7c10340ccc.png)。故所求项为![](assets-fenbi-162380/586cb343c6638e29d652d2d19ee7ac0387e058136f6f4b4fae98213487954b95.png)。
+观察数列，有特殊符号“+”，考虑机械划分。原数列可转化√2+√3，![](assets-fenbi-162380/e5fc2de120a4ff67235cec3035b892fa0111c58e66c6a43ab4dd2fed6f94d4b1.png)，√6+√15，![](assets-fenbi-162380/b2ae3244fa8dd4d06de06d60bd5becdf46b5ec4f8ce7b339b245df7f57685b6f.png)，（ ），“+”之前部分：√2，√4，√6，√8，根号下是公差为2的等差数列，则所求项“+”之前![](assets-fenbi-162380/2c2a327496b11c60729a91242283bb5e1a9ced4789174d1af99c9ff3da95eaf0.png)；“+”之后部分：√3，√9，√15，√21，根号下是公差为6的等差数列，则所求项“+”之后![](assets-fenbi-162380/d2061ffe97d46f0997ff51aafa9274dba295da681c34831606a2dc7c10340ccc.png)。故所求项为![](assets-fenbi-162380/586cb343c6638e29d652d2d19ee7ac0387e058136f6f4b4fae98213487954b95.png)。
 
 故正确答案为B。
 
@@ -951,7 +951,7 @@ B
 
 ### 第 27 题
 
-一个质点从原点O出发，按照下图所示前进，若已知![](assets-fenbi-162380/8e31ed4e6e33871addce6e243370d48b58e5f155030e36fcaf05bbdfca4ae9bc.png)（1，0），![](assets-fenbi-162380/bbf40084a111e9ae89d9aa85d9601295bd37508cadd9c6ac367ac94701558a2c.png)（1，1/2），![](assets-fenbi-162380/ed46442b491ebd7f4e2b6b8f4620168c04f2cd17584f4dd3888bbac14a9d4b96.png)（![](assets-fenbi-162380/2bd0a619d5348e8fa1a9155234ffcb046f7e06c58eea4652fd82697228aa823e.png)，1/2），![](assets-fenbi-162380/84261fd7ce56cb36c1fd076fa325b363e3e21b4e3de6b0a9a029d22e9fad918e.png)（![](assets-fenbi-162380/2bd0a619d5348e8fa1a9155234ffcb046f7e06c58eea4652fd82697228aa823e.png)，![](assets-fenbi-162380/3f9acf21ed8085c8eb88f94e803225880b0465e3f1b08580a8f109d00222d3c1.png)），则![](assets-fenbi-162380/54fa0c5eac8b1df6d88802489428764c31c1e715937fd2d62e5c67bf4324eb82.png)的坐标是        。
+一个质点从原点O出发，按照下图所示前进，若已知A\_1（1，0），A\_2（1，1/2），A\_3（3/4，1/2），A\_1（3/4，3/8），则A\_5的坐标是        。
 
 ![](assets-fenbi-162380/7987690b4a10158fbe708bf446580e39a63bf05f37d7ff63030e716f00ae742d.png)
 
@@ -971,11 +971,11 @@ D
 
 **解析**
 
-观察所给坐标图可知，![](assets-fenbi-162380/54fa0c5eac8b1df6d88802489428764c31c1e715937fd2d62e5c67bf4324eb82.png)的纵坐标与![](assets-fenbi-162380/84261fd7ce56cb36c1fd076fa325b363e3e21b4e3de6b0a9a029d22e9fad918e.png)的纵坐标相同，为![](assets-fenbi-162380/3f9acf21ed8085c8eb88f94e803225880b0465e3f1b08580a8f109d00222d3c1.png)。观察坐标变化规律：O到![](assets-fenbi-162380/8e31ed4e6e33871addce6e243370d48b58e5f155030e36fcaf05bbdfca4ae9bc.png)的距离为1-0=1，![](assets-fenbi-162380/8e31ed4e6e33871addce6e243370d48b58e5f155030e36fcaf05bbdfca4ae9bc.png)到![](assets-fenbi-162380/bbf40084a111e9ae89d9aa85d9601295bd37508cadd9c6ac367ac94701558a2c.png)的距离为![](assets-fenbi-162380/c9ae6d4712121ef1cbd565f8e677881b64bf900662798ad6cde6de9a428fc9ed.png)，![](assets-fenbi-162380/bbf40084a111e9ae89d9aa85d9601295bd37508cadd9c6ac367ac94701558a2c.png)到![](assets-fenbi-162380/ed46442b491ebd7f4e2b6b8f4620168c04f2cd17584f4dd3888bbac14a9d4b96.png)的距离为![](assets-fenbi-162380/327260bd3d3533aa490650e1ae4adb2b7a24457e5a778f6e71c9d2cc9d36bc9e.png)，![](assets-fenbi-162380/ed46442b491ebd7f4e2b6b8f4620168c04f2cd17584f4dd3888bbac14a9d4b96.png)到![](assets-fenbi-162380/84261fd7ce56cb36c1fd076fa325b363e3e21b4e3de6b0a9a029d22e9fad918e.png)的距离为![](assets-fenbi-162380/16461681baad9394a001eecf8b0fd95a4edb7b33e67d48a68bfb2c997c9e02d7.png)，即该质点每次前进的距离为：1，1/2，![](assets-fenbi-162380/41d5781572718fce3447d98419a9e3766dd123abd0a431434627128cc97ec558.png)，![](assets-fenbi-162380/d227e8ee4f8ba1962dc416fa45a8fa658ba257c65980c9281ea618342bc4dcbb.png)，是公比为1/2的等比数列，所以![](assets-fenbi-162380/84261fd7ce56cb36c1fd076fa325b363e3e21b4e3de6b0a9a029d22e9fad918e.png)到![](assets-fenbi-162380/54fa0c5eac8b1df6d88802489428764c31c1e715937fd2d62e5c67bf4324eb82.png)的距离应为![](assets-fenbi-162380/fa57a22fa5d5d0823921dac35dcbe579ac8994aa90f111b6c83a0639567c3ff1.png)，因此，![](assets-fenbi-162380/54fa0c5eac8b1df6d88802489428764c31c1e715937fd2d62e5c67bf4324eb82.png)的横坐标应为![](assets-fenbi-162380/62e687bbb198f6726466efb60fc7d52f1ea12a68b32b24a7edd3886489bb8a4a.png)，故![](assets-fenbi-162380/54fa0c5eac8b1df6d88802489428764c31c1e715937fd2d62e5c67bf4324eb82.png)的坐标是![](assets-fenbi-162380/3314c48b84fd57e8834b8756d98ea0c9cee48bc91a7fc29905975489c5b6569a.png)。
+观察所给坐标图可知，A\_5的纵坐标与A\_1的纵坐标相同，为3/8。观察坐标变化规律：O到A\_1的距离为1-0=1，A\_1到A\_2的距离为![](assets-fenbi-162380/c9ae6d4712121ef1cbd565f8e677881b64bf900662798ad6cde6de9a428fc9ed.png)，A\_2到A\_3的距离为![](assets-fenbi-162380/327260bd3d3533aa490650e1ae4adb2b7a24457e5a778f6e71c9d2cc9d36bc9e.png)，A\_3到A\_1的距离为![](assets-fenbi-162380/16461681baad9394a001eecf8b0fd95a4edb7b33e67d48a68bfb2c997c9e02d7.png)，即该质点每次前进的距离为：1，1/2，1/4，1/8，是公比为1/2的等比数列，所以A\_1到A\_5的距离应为![](assets-fenbi-162380/fa57a22fa5d5d0823921dac35dcbe579ac8994aa90f111b6c83a0639567c3ff1.png)，因此，A\_5的横坐标应为![](assets-fenbi-162380/62e687bbb198f6726466efb60fc7d52f1ea12a68b32b24a7edd3886489bb8a4a.png)，故A\_5的坐标是![](assets-fenbi-162380/3314c48b84fd57e8834b8756d98ea0c9cee48bc91a7fc29905975489c5b6569a.png)。
 
 故正确答案为D。
 
-备注：本题无需计算，仅通过观察即可确定：![](assets-fenbi-162380/54fa0c5eac8b1df6d88802489428764c31c1e715937fd2d62e5c67bf4324eb82.png)的纵坐标与![](assets-fenbi-162380/84261fd7ce56cb36c1fd076fa325b363e3e21b4e3de6b0a9a029d22e9fad918e.png)的纵坐标相同，均为![](assets-fenbi-162380/3f9acf21ed8085c8eb88f94e803225880b0465e3f1b08580a8f109d00222d3c1.png)，排除A、B两项；观察横坐标发现![](assets-fenbi-162380/54fa0c5eac8b1df6d88802489428764c31c1e715937fd2d62e5c67bf4324eb82.png)在![](assets-fenbi-162380/84261fd7ce56cb36c1fd076fa325b363e3e21b4e3de6b0a9a029d22e9fad918e.png)与![](assets-fenbi-162380/8e31ed4e6e33871addce6e243370d48b58e5f155030e36fcaf05bbdfca4ae9bc.png)之间，即![](assets-fenbi-162380/f4c69a7680cf8353d1eb98fb39f1c9b6bab831e3a4bd1f3b80224d269e847f82.png)的横坐标＜1，排除C项，D项当选。
+备注：本题无需计算，仅通过观察即可确定：A\_5的纵坐标与A\_1的纵坐标相同，均为3/8，排除A、B两项；观察横坐标发现A\_5在A\_1与A\_1之间，即3/4\<A\_5的横坐标＜1，排除C项，D项当选。
 
 </details>
 
@@ -1257,7 +1257,7 @@ B
 
 ### 第 37 题
 
-如图所示，某操场可近似看作是由两个半圆和一个矩形组成，其中A![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)B段与C![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)D段分别是以O与O＇为圆心的半圆弧，半圆弧的弧长均为100米，B![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)C段与D![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)A段都是直线段，长度均为100米。在O处安装了一个照明灯，工作人员沿着A![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)B![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)C![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)D![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)A的路线测量不同位置的光照强度。已知某处光照强度和该处到光源距离的平方成反比，则按工作人员行走路线测量的过程中，下列坐标图正确地反映了行走路程与光照强度关系的是        。
+如图所示，某操场可近似看作是由两个半圆和一个矩形组成，其中A→B段与C→D段分别是以O与O＇为圆心的半圆弧，半圆弧的弧长均为100米，B→C段与D→A段都是直线段，长度均为100米。在O处安装了一个照明灯，工作人员沿着A→B→C→D→A的路线测量不同位置的光照强度。已知某处光照强度和该处到光源距离的平方成反比，则按工作人员行走路线测量的过程中，下列坐标图正确地反映了行走路程与光照强度关系的是        。
 
 ![](assets-fenbi-162380/2d866493c5c0e6d8da78f9d8a3d09fdaf69f206b60948427f36514c29f6cff95.jpg)
 
@@ -1277,13 +1277,13 @@ C
 
 **解析**
 
-根据题意，工作人员沿着A![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)B![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)C![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)D![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)A的路线测量，将行走路线分成几部分：
+根据题意，工作人员沿着A→B→C→D→A的路线测量，将行走路线分成几部分：
 
-①A![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)B段：由于A![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)B段是以O为圆心的半圆弧，工作人员在行走过程中与O点的直线距离保持不变，因某处光照强度和该处到光源距离的平方成反比，则A![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)B段的光照强度也保持不变，结合选项均符合。
+①A→B段：由于A→B段是以O为圆心的半圆弧，工作人员在行走过程中与O点的直线距离保持不变，因某处光照强度和该处到光源距离的平方成反比，则A→B段的光照强度也保持不变，结合选项均符合。
 
-②B![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)C段：由于B![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)C段是直线段，当工作人员在行走过程中与O点的直线距离逐渐变大。半圆弧的弧长为100米，设半圆弧的半径为R，则有![](assets-fenbi-162380/e5e15dc7b85d47d2b7f121f7093362ab19fe6ba07dfb792c56e51fd3bfe19393.png)，解得![](assets-fenbi-162380/d471fdffd60ea238302b70baf50c8afb593ea35b44202649684d59f2cfcca607.png)。设该工作人员某一时刻在B![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)C段行走路程为x，工作人员在行走过程中与O点直线距离的平方![](assets-fenbi-162380/66477ac4fd175c9c93eb4cb11a0695c612085cfd3bf55ff3a45d49066ebb8dfa.png)。因某处光照强度和该处到光源距离的平方成反比，则B![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)C段的光照强度是一个函数曲线，排除D项。
+②B→C段：由于B→C段是直线段，当工作人员在行走过程中与O点的直线距离逐渐变大。半圆弧的弧长为100米，设半圆弧的半径为R，则有![](assets-fenbi-162380/e5e15dc7b85d47d2b7f121f7093362ab19fe6ba07dfb792c56e51fd3bfe19393.png)，解得![](assets-fenbi-162380/d471fdffd60ea238302b70baf50c8afb593ea35b44202649684d59f2cfcca607.png)。设该工作人员某一时刻在B→C段行走路程为x，工作人员在行走过程中与O点直线距离的平方![](assets-fenbi-162380/66477ac4fd175c9c93eb4cb11a0695c612085cfd3bf55ff3a45d49066ebb8dfa.png)。因某处光照强度和该处到光源距离的平方成反比，则B→C段的光照强度是一个函数曲线，排除D项。
 
-③C![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)D段：C![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)D段是以O＇为圆心的半圆弧，如下图所示，行走在C![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)D弧上某处E点时， O点与E点距离的平方![](assets-fenbi-162380/e7fb9dc3ba3c338311e9a2867772fecaac9df7eff2fb12ba364ac14f6deeb056.png) ![](assets-fenbi-162380/7bc61a40519a3e19524a03dc9f7a287c5230050603ac3f18a32db934626c8424.png)。因某处光照强度和该处到光源距离的平方成反比，则C![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)D段的光照强度也是一个函数曲线，并非有平直线段部分，排除A、B两项。
+③C→D段：C→D段是以O＇为圆心的半圆弧，如下图所示，行走在C→D弧上某处E点时， O点与E点距离的平方![](assets-fenbi-162380/e7fb9dc3ba3c338311e9a2867772fecaac9df7eff2fb12ba364ac14f6deeb056.png) ![](assets-fenbi-162380/7bc61a40519a3e19524a03dc9f7a287c5230050603ac3f18a32db934626c8424.png)。因某处光照强度和该处到光源距离的平方成反比，则C→D段的光照强度也是一个函数曲线，并非有平直线段部分，排除A、B两项。
 
 ![](assets-fenbi-162380/751ebd558d7f6b54b72b9b6fd697f4ab95f4f5345bdd6e2a4b3c846dd1369d83.png)
 
@@ -1349,13 +1349,13 @@ B
 
 ![](assets-fenbi-162380/f2827c59b1b81cc357febb3373409bc0cb91aab2a59d77f01d7876d116cdb7db.png)
 
-A. ![](assets-fenbi-162380/ab4d8534dcbb08455b4a9c24b5e820a872bf94c0e387759a510f7b504da86976.png)
+A. π/3
 
-B. ![](assets-fenbi-162380/3201fa7d61bf061df3cda66d75af57c9e1b8283df086452a2ed6b611d41ecf91.png)
+B. π/2
 
-C. ![](assets-fenbi-162380/cf4ebc347504baaaac143af2e7616cbb11e2c38fa4c47be81dff613152c6e2a3.png)
+C. π
 
-D. ![](assets-fenbi-162380/70e6d19c2b1f99ff52b47f8460f24545ce58a10d39641c4d3490be5f429907d2.png)
+D. 2π
 
 <details><summary>第 40 题 · 答案与解析</summary>
 
@@ -1365,7 +1365,7 @@ C
 
 **解析**
 
-根据扇形面积公式：![](assets-fenbi-162380/acc216da0b29237a7204ec1921426489bf8ada4f96592e206f5859c406b21952.png)，直角扇形的圆心角为![](assets-fenbi-162380/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，故直角扇形的面积为![](assets-fenbi-162380/69bd581755fc2ee9d7f41d2f250c9df448750bd08bb5c182cfcba1df851077e2.png)。由三个半径不同的圆弧构成，对各部分分别计算：
+根据扇形面积公式：![](assets-fenbi-162380/acc216da0b29237a7204ec1921426489bf8ada4f96592e206f5859c406b21952.png)，直角扇形的圆心角为![](assets-fenbi-162380/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，故直角扇形的面积为(1/4)πr^2。由三个半径不同的圆弧构成，对各部分分别计算：
 
 （1）圆弧半径为1米的阴影部分面积：![](assets-fenbi-162380/b4bc99e87a8e715c340e9ad17f03f5bbbcfd4d46294c8e08bcd282a425ac9afe.png)平方米；
 
@@ -1905,15 +1905,15 @@ D项：石油分馏出的残留物主要是沥青，可以用于制造涂料、�
 
 ### 第 58 题
 
-汽车安全气囊中的填充物主要成分是![](assets-fenbi-162380/2d942da6ba70b39aef9eb56cfe4c31cc70679162c86e831b4b30a44be1e0993b.png)、![](assets-fenbi-162380/1fcd9f33a19208c9864cb28de43e34600238e239826facbb4dd9038e1212f05a.png)和![](assets-fenbi-162380/06a8fb08e474b8f60ceda9a149d39cd9d99628d5cf9b9f935da6d3fbd8e2e6de.png)。汽车发生猛烈碰撞时，![](assets-fenbi-162380/2d942da6ba70b39aef9eb56cfe4c31cc70679162c86e831b4b30a44be1e0993b.png)分解，生成甲、乙两种单质，有关的化学方程式为![](assets-fenbi-162380/9c39a9c626db07bc445123ec7ab3f5e4935af8c51d6090b17882e29f0d273861.png)；![](assets-fenbi-162380/1fcd9f33a19208c9864cb28de43e34600238e239826facbb4dd9038e1212f05a.png)的作用是与可能会对人体造成伤害的单质甲反应，生成单质乙和两种氧化物。以下推断错误的是　　。
+汽车安全气囊中的填充物主要成分是NaN\_3、KNO\_3和SiO\_2。汽车发生猛烈碰撞时，NaN\_3分解，生成甲、乙两种单质，有关的化学方程式为![](assets-fenbi-162380/9c39a9c626db07bc445123ec7ab3f5e4935af8c51d6090b17882e29f0d273861.png)；KNO\_3的作用是与可能会对人体造成伤害的单质甲反应，生成单质乙和两种氧化物。以下推断错误的是　　。
 
 A. 汽车安全气囊里的气体是氮气
 
 B. 单质甲是金属钠
 
-C. 安全气囊中![](assets-fenbi-162380/2d942da6ba70b39aef9eb56cfe4c31cc70679162c86e831b4b30a44be1e0993b.png)受到剧烈撞击反应迅速
+C. 安全气囊中NaN\_3受到剧烈撞击反应迅速
 
-D. ![](assets-fenbi-162380/1fcd9f33a19208c9864cb28de43e34600238e239826facbb4dd9038e1212f05a.png)与单质甲反应后有氮氧化合物生成
+D. KNO\_3与单质甲反应后有氮氧化合物生成
 
 <details><summary>第 58 题 · 答案与解析</summary>
 
@@ -1923,11 +1923,11 @@ D
 
 **解析**
 
-A、B两项：金属钠（Na）为非常活泼的金属，接触皮肤会与皮肤表面的水分发生剧烈的化学反应，生成强碱NaOH，会对人体造成伤害，而氮气（![](assets-fenbi-162380/6d59b43ed811fca305bbd151f8bde636d3afbc340b7e09ca2921cfa81dae7b06.png)）不会对人体造成伤害，可知单质甲为金属钠，单质乙为氮气，根据反应方程式可知![](assets-fenbi-162380/2d942da6ba70b39aef9eb56cfe4c31cc70679162c86e831b4b30a44be1e0993b.png)分解后产生了大量氮气，而![](assets-fenbi-162380/1fcd9f33a19208c9864cb28de43e34600238e239826facbb4dd9038e1212f05a.png)也可以与Na反应生成氮气，因此安全气囊里的气体是氮气，A、B两项均正确；
+A、B两项：金属钠（Na）为非常活泼的金属，接触皮肤会与皮肤表面的水分发生剧烈的化学反应，生成强碱NaOH，会对人体造成伤害，而氮气（N\_2）不会对人体造成伤害，可知单质甲为金属钠，单质乙为氮气，根据反应方程式可知NaN\_3分解后产生了大量氮气，而KNO\_3也可以与Na反应生成氮气，因此安全气囊里的气体是氮气，A、B两项均正确；
 
-C项：由于安全气囊需要在汽车发生事故的极短时间内充气来保护驾驶员和乘客，因此安全气囊中![](assets-fenbi-162380/2d942da6ba70b39aef9eb56cfe4c31cc70679162c86e831b4b30a44be1e0993b.png)受到剧烈撞击后，会在极短时间内释放![](assets-fenbi-162380/6d59b43ed811fca305bbd151f8bde636d3afbc340b7e09ca2921cfa81dae7b06.png)，即安全气囊中![](assets-fenbi-162380/2d942da6ba70b39aef9eb56cfe4c31cc70679162c86e831b4b30a44be1e0993b.png)受到剧烈撞击反应迅速，正确；
+C项：由于安全气囊需要在汽车发生事故的极短时间内充气来保护驾驶员和乘客，因此安全气囊中NaN\_3受到剧烈撞击后，会在极短时间内释放N\_2，即安全气囊中NaN\_3受到剧烈撞击反应迅速，正确；
 
-D项：根据![](assets-fenbi-162380/1fcd9f33a19208c9864cb28de43e34600238e239826facbb4dd9038e1212f05a.png)与Na反应生成单质乙和两种氧化物，单质乙为![](assets-fenbi-162380/6d59b43ed811fca305bbd151f8bde636d3afbc340b7e09ca2921cfa81dae7b06.png)，则另外两种氧化物分别为钠的氧化物和钾的氧化物，故没有氮氧化合物生成，错误。
+D项：根据KNO\_3与Na反应生成单质乙和两种氧化物，单质乙为N\_2，则另外两种氧化物分别为钠的氧化物和钾的氧化物，故没有氮氧化合物生成，错误。
 
 本题为选非题，故正确答案为D。
 
@@ -1993,7 +1993,7 @@ C
 
 若汽车做匀速直线运动，小球也做匀速直线运动，即处于平衡状态，则不会绕O点摆动，金属丝与电阻丝相交于A点，此时电压表无示数，故无法测量汽车速度大小，A、B两项错误；
 
-若汽车水平方向存在加速度，小球与车的加速度相同，根据牛顿第二定律F=ma可知，小球水平方向的加速度越大，水平方向所需要的合外力越大，如图二所示，对小球进行受力分析，将小球受到的拉力分解成水平方向和竖直方向，竖直方向上的分力![](assets-fenbi-162380/3e247583335f3caaa53f7492e8b80ed3c5459f1eac553f9e817e79df8fcac400.png)与重力G大小相等，方向相反，水平方向上的分力![](assets-fenbi-162380/dd0c0d37d6c58f60d72c35c4cf8e2b0d51e36a94ff118df5ea7d479961b4958e.png)即为小球所受合外力，由受力分析图可知，![](assets-fenbi-162380/6cd78718cb852e13fc3c6c209833e3749f45c2a04774db1136ad51e83dd54cf1.png)，若车的加速度越大，小球为了与车达到相同的加速度，需要更大的合外力，即![](assets-fenbi-162380/dd0c0d37d6c58f60d72c35c4cf8e2b0d51e36a94ff118df5ea7d479961b4958e.png)也会更大，金属丝与竖直方向的夹角θ也越大，则AC段长度越大，电压表所检测部分电阻越大，根据串联分压规律可知，电压表示数将会越大。因此该装置可以用于测量汽车加速度大小，且电压表数值越大，表示汽车加速度越大。
+若汽车水平方向存在加速度，小球与车的加速度相同，根据牛顿第二定律F=ma可知，小球水平方向的加速度越大，水平方向所需要的合外力越大，如图二所示，对小球进行受力分析，将小球受到的拉力分解成水平方向和竖直方向，竖直方向上的分力F\_1与重力G大小相等，方向相反，水平方向上的分力F\_2即为小球所受合外力，由受力分析图可知，![](assets-fenbi-162380/6cd78718cb852e13fc3c6c209833e3749f45c2a04774db1136ad51e83dd54cf1.png)，若车的加速度越大，小球为了与车达到相同的加速度，需要更大的合外力，即F\_2也会更大，金属丝与竖直方向的夹角θ也越大，则AC段长度越大，电压表所检测部分电阻越大，根据串联分压规律可知，电压表示数将会越大。因此该装置可以用于测量汽车加速度大小，且电压表数值越大，表示汽车加速度越大。
 
 故正确答案为C。
 
@@ -2021,7 +2021,7 @@ A
 
 根据题意可知，同一物体在低纬度所受的地心引力比高纬度地区小，物体所受重力是由地心引力提供，所以物体在低纬度地区所受重力较小，则该船由中纬度地区向赤道附近（低纬度）行进的过程中，所受重力会变小，由于船舶始终漂浮于海面上，其所受浮力与重力大小相等，因此船舶所受浮力会变小，B、C两项均错误；根据重力公式G=mg可知，物体质量不变，重力减小是因为重力加速度g变小，根据浮力公式![](assets-fenbi-162380/182db440a65e2cc57d09ec8dbd6ba3140c3abf2969b0033cc14e9b29e552076a.png)，可知![](assets-fenbi-162380/b89cc9cd0e634190e52c672b8ccc032ac7cce2f5b78838b9a07ee0396d5637a2.png)，
 
-当物体质量m与液体密度![](assets-fenbi-162380/8dc9eb96214e6061f279e617d1c7e993c862f7336651360c67e2d67b30f78b7f.png)不变时，![](assets-fenbi-162380/7c8047a5db4cf703ba9dadefd38f5dfe1621eb8c0ae9f7b5496dc22acd065dd1.png)也不变，即轮船排开水的体积不变，A项正确，D项错误。
+当物体质量m与液体密度ρ\_液不变时，V\_排也不变，即轮船排开水的体积不变，A项正确，D项错误。
 
 故正确答案为A。
 
@@ -2029,7 +2029,7 @@ A
 
 ### 第 62 题
 
-应用储能介质（某种结晶水合物）储存和再利用太阳能是一项新技术。其原理是：当白天阳光照射时，储能介质熔化，同时吸收热能；当夜晚降温时，储能介质凝固，同时释放出热能。某地区白天气温可达![](assets-fenbi-162380/f1df25aa6887ff54177e72e80f143eb0c9a48b09ff1c619a3b46f0a4e26e881a.png)，夜晚可下降至![](assets-fenbi-162380/b555c8ad21ca27b1e6b6ba52b12dcf633da96b4335b6f578d41f78ead1b1500b.png)，若应用上述技术调节室温，根据下表中几种常见的储能介质的数据，最佳选用            。
+应用储能介质（某种结晶水合物）储存和再利用太阳能是一项新技术。其原理是：当白天阳光照射时，储能介质熔化，同时吸收热能；当夜晚降温时，储能介质凝固，同时释放出热能。某地区白天气温可达40°C，夜晚可下降至10°C，若应用上述技术调节室温，根据下表中几种常见的储能介质的数据，最佳选用            。
 
 ![](assets-fenbi-162380/a2539431f4d4e1d53c98b9ebafb9764439578d3951d3acbb091396fde4c6bf5e.png)
 
@@ -2049,7 +2049,7 @@ B
 
 **解析**
 
-根据题干信息可知，选取的物质需要满足白天能熔化、晚上能凝固的条件，也就是要求选取的物质熔点在![](assets-fenbi-162380/b555c8ad21ca27b1e6b6ba52b12dcf633da96b4335b6f578d41f78ead1b1500b.png)\-![](assets-fenbi-162380/f1df25aa6887ff54177e72e80f143eb0c9a48b09ff1c619a3b46f0a4e26e881a.png)的范围内，D项错误；根据表格中各结晶水合物熔化时吸收的热量大小可知，![](assets-fenbi-162380/d4604d4029660d0975620650202ef46c3495ddb574f08e307081d66d59af19c8.png)单位质量可储存的能量最多，故最佳选用![](assets-fenbi-162380/d4604d4029660d0975620650202ef46c3495ddb574f08e307081d66d59af19c8.png)为储能介质。
+根据题干信息可知，选取的物质需要满足白天能熔化、晚上能凝固的条件，也就是要求选取的物质熔点在10°C\-40°C的范围内，D项错误；根据表格中各结晶水合物熔化时吸收的热量大小可知，![](assets-fenbi-162380/d4604d4029660d0975620650202ef46c3495ddb574f08e307081d66d59af19c8.png)单位质量可储存的能量最多，故最佳选用![](assets-fenbi-162380/d4604d4029660d0975620650202ef46c3495ddb574f08e307081d66d59af19c8.png)为储能介质。
 
 故正确答案为B。
 
@@ -2129,7 +2129,7 @@ C
 
 **解析**
 
-mAh为电量单位，充电宝剩余电量为20000mAh×45%=9000mAh，手机充满电需要的电量为4200mAh×(1-55%)=1890mAh，远远小于充电宝剩余电量，故充电宝不仅可以把手机电池的电量充满，还会有电量剩余，故A、B两项错误；根据电流定义公式可知![](assets-fenbi-162380/ad2454065f2deb5d05584b16b4b258a176ee286657445e7aab2d975f342067ed.png)，充电时间![](assets-fenbi-162380/e55d1fcf81959d57152580dc48eb98c91df1930355347f7955dab4f4dc2ab121.png)![](assets-fenbi-162380/f6333afcb9a55b963e8764942c88c93cd6e43a352a6419a69b5c4d9a540db383.png)，故手机充满电需要的时间约为1小时，C项正确；充电宝供电是化学能转变为电能的过程，D项错误。
+mAh为电量单位，充电宝剩余电量为20000mAh×45%=9000mAh，手机充满电需要的电量为4200mAh×(1-55%)=1890mAh，远远小于充电宝剩余电量，故充电宝不仅可以把手机电池的电量充满，还会有电量剩余，故A、B两项错误；根据电流定义公式可知I=Q/t，充电时间![](assets-fenbi-162380/e55d1fcf81959d57152580dc48eb98c91df1930355347f7955dab4f4dc2ab121.png)![](assets-fenbi-162380/f6333afcb9a55b963e8764942c88c93cd6e43a352a6419a69b5c4d9a540db383.png)，故手机充满电需要的时间约为1小时，C项正确；充电宝供电是化学能转变为电能的过程，D项错误。
 
 故正确答案为C。
 
@@ -3457,13 +3457,13 @@ D项正确，生病时使用医保卡进行住院报销属于医疗报销，是�
 
 为了助力体育企业纾困发展，激发体育消费市场活力，近期，全国多地陆续推出体育消费券，发放形式及体量也在不断升级。上海推出“消费券”配送升级版，五一小长假期间，上海体育消费券累积领券42542张，产生订单7916笔，拉动定点场馆直接消费70多万元。“消费券”助推经济发展，其传导路径应该是：
 
-A. 发放体育消费券![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)提高居民消费意愿![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)带动体育消费上升![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)促进体育经济发展
+A. 发放体育消费券→提高居民消费意愿→带动体育消费上升→促进体育经济发展
 
-B. 发放消费券![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)扩大居民劳动性收入![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)增强居民实际购买力![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)推动体育事业发展
+B. 发放消费券→扩大居民劳动性收入→增强居民实际购买力→推动体育事业发展
 
-C. 发放消费券![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)降低商品消费价格![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)刺激居民的消费欲望![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)增加新的消费对象
+C. 发放消费券→降低商品消费价格→刺激居民的消费欲望→增加新的消费对象
 
-D. 增加居民实际收入![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)提振居民消费信心![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)扩大线上消费比例![](assets-fenbi-162380/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)带动体育经济的发展
+D. 增加居民实际收入→提振居民消费信心→扩大线上消费比例→带动体育经济的发展
 
 <details><summary>第 103 题 · 答案与解析</summary>
 
@@ -3699,7 +3699,7 @@ D
 
 本题考查科技常识。
 
-A项错误，电子是一种带有负电的亚原子粒子，通常标记为![](assets-fenbi-162380/a64fcc2f424be597ab671e7384b2460620e68a30aeb3b8216086fbab136e8d2e.png)。
+A项错误，电子是一种带有负电的亚原子粒子，通常标记为e^-。
 
 B项错误，电子个数即电子数，代表电子的数量。电子数一般是指原子或离子的核外电子的数目。
 

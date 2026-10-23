@@ -1659,7 +1659,7 @@ A
 
 **解析**
 
-观察数列，无明显特征，优先考虑作差。后项-前项得到新数列为：16，24，36，54，（ ），为公比是![](assets-fenbi-101465/cf86f9ce8bb5e037cd4bba2391db74bfcc4e17a991e7f7b2472b89c2b43ada16.png)的等比数列，则新数列下一项为![](assets-fenbi-101465/6d9d723d56fdbb371612907d5dd596ed8e0a3827e698a02724440e3f9c60816f.png)。故所求项=141+81=222。
+观察数列，无明显特征，优先考虑作差。后项-前项得到新数列为：16，24，36，54，（ ），为公比是3/2的等比数列，则新数列下一项为![](assets-fenbi-101465/6d9d723d56fdbb371612907d5dd596ed8e0a3827e698a02724440e3f9c60816f.png)。故所求项=141+81=222。
 
 故正确答案为A。
 
@@ -1697,11 +1697,11 @@ A
 
 A. 8
 
-B. ![](assets-fenbi-101465/87264fa8c4795dd10e856deccb06c97dcb7218e7a909b229ab600f252532771d.png)
+B. 4√5
 
 C. 9
 
-D. ![](assets-fenbi-101465/bd9422726c79798c51a9d7c0eff3bc3e1cc98b5f742ac325e268d48f848ef638.png)
+D. 2√21
 
 <details><summary>第 48 题 · 答案与解析</summary>
 
@@ -1711,7 +1711,7 @@ C
 
 **解析**
 
-将数列统一转化为根号形式，则原数列转化为：![](assets-fenbi-101465/113ce7f0c3cffdaf8e623f6c1f692a1bb11fb3a428a20aab5a948fae1d8600af.png)、![](assets-fenbi-101465/3a29e3596217d739673ec688d2735365ad477132bf1506dae931f954bf0ac856.png)、![](assets-fenbi-101465/66b23d105b727b88e6270d77ca3d97ee497fa9834d542bb649c344ca3f3f58f6.png)、√27、√46，（ ），根号内数字变化幅度较小且呈递增趋势，优先考虑作差。作差后可得：5、7、11、19，（ ），二次作差得：2、4、8，（ ），是公比为2的等比数列，下一项为8×2=16，故所求项为![](assets-fenbi-101465/6f008a15be442faae90c99a4be57abda372ed2c025186bf7d478eab575f7d988.png)。
+将数列统一转化为根号形式，则原数列转化为：√4、√9、√16、√27、√46，（ ），根号内数字变化幅度较小且呈递增趋势，优先考虑作差。作差后可得：5、7、11、19，（ ），二次作差得：2、4、8，（ ），是公比为2的等比数列，下一项为8×2=16，故所求项为![](assets-fenbi-101465/6f008a15be442faae90c99a4be57abda372ed2c025186bf7d478eab575f7d988.png)。
 
 故正确答案为C。
 
@@ -1749,13 +1749,13 @@ B
 
 1，1/3，5/18，10/27，55/81，（ ）
 
-A. ![](assets-fenbi-101465/89a5bfa7f114e12051a91d53038a8bbe11d7a9268747a735cdd41d891b6f13e6.png)
+A. 35/54
 
-B. ![](assets-fenbi-101465/86477e7f5e6a41074ac819098b0d99beb34c4febf6361109503d2bac7066c055.png)
+B. 385/243
 
-C. ![](assets-fenbi-101465/be15b5c2f757408fdd411d39db5b94ea8829e35caf29695a0ba6c793e89a4fac.png)
+C. 455/486
 
-D. ![](assets-fenbi-101465/5d4db54873464d78e49570e514319b2e5f76c975c904784cf238998ce16e7918.png)
+D. 745/729
 
 <details><summary>第 50 题 · 答案与解析</summary>
 
@@ -1765,7 +1765,7 @@ B
 
 **解析**
 
-数列大多数为分数，可判断为分数数列，原数列可转化为：![](assets-fenbi-101465/71a74ab4b682917541017e4b1ae0f6607c86ca194fe7f03a9cc5f40da1795f0d.png)，![](assets-fenbi-101465/ca73a57ea7d3b7fcc75f93b56906cf7190fd5cd17ae618911763dfdc3c209054.png)，![](assets-fenbi-101465/52c9ce7f2cc307a569402c2ea0867db0686f7a496f546ea0a6e0251c54d66355.png)，10/27，55/81，（ ），观察分母为幂次数列：![](assets-fenbi-101465/56ac99332291b662bff7faf04a3dfe4db0e5e85ca158d359c16055388411145a.png)，![](assets-fenbi-101465/1bf3441e4e9e79500149827eed2fcae213cedf748c2f9e9bfc61e28d20e9eb32.png)，3^2，![](assets-fenbi-101465/ddb0cccc06d074a470fddb031164c6020d18e8ebaaef79b073301c48d31610eb.png)，![](assets-fenbi-101465/40381414991b74379b4effc8deeb7c1faf8fab969fbd9a6d2d657d39907413d1.png)，则下一项分母为![](assets-fenbi-101465/f140c9d61935e3e83b3128f65f2e809b6dfe68efa5c11254f0f910cdd09d86d6.png)；分子部分考虑作商，后一项÷前一项分别为：1，2.5，4，5.5，是公差为1.5的等差数列，则新数列下一项为5.5+1.5=7，故原数列所求项分子=55×7=385。
+数列大多数为分数，可判断为分数数列，原数列可转化为：1/1，1/3，2.5/9，10/27，55/81，（ ），观察分母为幂次数列：3^0，3^1，3^2，3^3，3^4，则下一项分母为![](assets-fenbi-101465/f140c9d61935e3e83b3128f65f2e809b6dfe68efa5c11254f0f910cdd09d86d6.png)；分子部分考虑作商，后一项÷前一项分别为：1，2.5，4，5.5，是公差为1.5的等差数列，则新数列下一项为5.5+1.5=7，故原数列所求项分子=55×7=385。
 
 故正确答案为B。
 
@@ -1817,7 +1817,7 @@ B
 
 **解析**
 
-设甲种贷款的金额为x万元，则乙种贷款的金额为（5000-x）万元。根据题意，可得![](assets-fenbi-101465/e7e91a1f039df764f9706ce6f1b62f02a6a6d707a0f115ca9f4617654eee9257.png)![](assets-fenbi-101465/524a15f8ee30a64d621eeae7e32eada1bbaaa678b5193dd7a9d6368a98ea53d1.png)，解得：x=2400。则甲种贷款的金额是2400万元。
+设甲种贷款的金额为x万元，则乙种贷款的金额为（5000-x）万元。根据题意，可得![](assets-fenbi-101465/e7e91a1f039df764f9706ce6f1b62f02a6a6d707a0f115ca9f4617654eee9257.png)=295.6，解得：x=2400。则甲种贷款的金额是2400万元。
 
 故正确答案为B。
 
@@ -1843,7 +1843,7 @@ A
 
 **解析**
 
-由题意可得，甲、乙、丙三个部门的效率关系为：![](assets-fenbi-101465/99d24763a947c28606bc171b6d0cc7749806d8a0a8d67901270ca4984da8c366.png)![](assets-fenbi-101465/6c40c85a73b4c5d89092f611b752659cdd7dbd7ed6bf39a7cc3aa912a91faac4.png)······①；![](assets-fenbi-101465/7a9c50f429a8a4b96e409052fcdfc0a7618d8e5287afe0f0d46065825ec2adba.png)![](assets-fenbi-101465/011e434acff5afc6e23d2748da1e6f5cc891304c08aa9bab8b95ac746d7381d1.png)······②。整理①②可得：甲∶乙=3∶2，乙∶丙=5∶4，故甲效率：乙效率：丙效率=15∶10∶8。结合丙部门每天植树的数量比乙部门少4棵，可得1份对应![](assets-fenbi-101465/f0d1793ada2498031fdd31292972e0c56291096334e7299a68db72b0b8675fa5.png)棵，故甲的效率![](assets-fenbi-101465/df333d8892ba0de082d2bcee7b952a9609920d6a3f2ed770963f18049f679b68.png)棵。
+由题意可得，甲、乙、丙三个部门的效率关系为：10×甲![](assets-fenbi-101465/6c40c85a73b4c5d89092f611b752659cdd7dbd7ed6bf39a7cc3aa912a91faac4.png)······①；12×乙![](assets-fenbi-101465/011e434acff5afc6e23d2748da1e6f5cc891304c08aa9bab8b95ac746d7381d1.png)······②。整理①②可得：甲∶乙=3∶2，乙∶丙=5∶4，故甲效率：乙效率：丙效率=15∶10∶8。结合丙部门每天植树的数量比乙部门少4棵，可得1份对应![](assets-fenbi-101465/f0d1793ada2498031fdd31292972e0c56291096334e7299a68db72b0b8675fa5.png)棵，故甲的效率![](assets-fenbi-101465/df333d8892ba0de082d2bcee7b952a9609920d6a3f2ed770963f18049f679b68.png)棵。
 
 故正确答案为A。
 
@@ -1869,7 +1869,7 @@ D
 
 **解析**
 
-设甲的速度为v米/分钟，则乙的速度为（v-10）米/分钟，根据题意“甲恰好用2小时回到出发点，比乙晚到20分钟，多走了2800米”，可得甲用时120分钟，乙用时=120-20=100分钟，则![](assets-fenbi-101465/caafb0437c2c6d8f5dfc903ef8a72f486c679fee8f99ecee363da3561c9d692d.png)![](assets-fenbi-101465/651a80f6e3bbf786fea0ac0cf0c8d2b199704abaca5611f8b5bceebb42ddb1de.png)，解得v=90米/分钟，即5.4千米/小时。
+设甲的速度为v米/分钟，则乙的速度为（v-10）米/分钟，根据题意“甲恰好用2小时回到出发点，比乙晚到20分钟，多走了2800米”，可得甲用时120分钟，乙用时=120-20=100分钟，则v×120![](assets-fenbi-101465/651a80f6e3bbf786fea0ac0cf0c8d2b199704abaca5611f8b5bceebb42ddb1de.png)，解得v=90米/分钟，即5.4千米/小时。
 
 故正确答案为D。
 
@@ -1907,13 +1907,13 @@ C
 
 某次圆桌会议共设8个座位，有4个部门参加，每个部门2人，排座位时，要求同一部门的两人相邻，若小李和小王代表不同部门参加会议，则他们座位相邻的概率是：
 
-A. ![](assets-fenbi-101465/1d01c88286cd20cfdca8c91ae75d82afe6298b50e4edd456dfc4c290ed9867e7.png)
+A. 1/48
 
-B. ![](assets-fenbi-101465/e2352de5e45821dbe595ec026b2cb719f6c03d9f1660f80bee642a12e90ab5a4.png)
+B. 1/24
 
 C. 1/12
 
-D. ![](assets-fenbi-101465/298da4ac43e7dcf99e5db61e2f1c9d45b03dc287a412b9e9ae206bf8912c260e.png)
+D. 1/6
 
 <details><summary>第 56 题 · 答案与解析</summary>
 
@@ -1923,9 +1923,9 @@ D
 
 **解析**
 
-首先计算总的情况数，先捆绑：当同一部门两人相邻时，其内部顺序有![](assets-fenbi-101465/a8a101f265c50f0fa5a1917050af8c0c0b4781edd9153af5c15b1f439b1aa2cd.png)种情况，共4个部门，则共有![](assets-fenbi-101465/8cbe4f6c6438ea2937876bdda2a7f053d3645ed705ba3bdd83748070417fbdc1.png)种情况；再排列：当4个部门的人员坐在圆桌时，根据圆桌排列公式可得，有![](assets-fenbi-101465/ab607668a98b991234db0bcffcd766a0966d339d4db74104a208341dd1e08abd.png)种情况，则总的情况数为![](assets-fenbi-101465/426c3369e456010c51a09a4030bb9d1187e6f091a61cc0d6038bed0c239196d9.png)。
+首先计算总的情况数，先捆绑：当同一部门两人相邻时，其内部顺序有A\_2^2=2种情况，共4个部门，则共有2^4种情况；再排列：当4个部门的人员坐在圆桌时，根据圆桌排列公式可得，有![](assets-fenbi-101465/ab607668a98b991234db0bcffcd766a0966d339d4db74104a208341dd1e08abd.png)种情况，则总的情况数为2^4×A\_3^3。
 
-然后计算满足条件的情况数，先捆绑：当小李和小王座位相邻时，则二人的内部顺序有![](assets-fenbi-101465/a8a101f265c50f0fa5a1917050af8c0c0b4781edd9153af5c15b1f439b1aa2cd.png)种情况，与其同一部门的人自动坐在二人身边，无需考虑，4个人变成一个大组。另外两个部门的人各自捆绑，内部顺序均有![](assets-fenbi-101465/a8a101f265c50f0fa5a1917050af8c0c0b4781edd9153af5c15b1f439b1aa2cd.png)种情况，则共![](assets-fenbi-101465/5cb160b64f0734584c8dfb0bbfbadbe7975d9a02371dbf2debcf807658c5688c.png)种情况；再排列：此时相当于3组人员进行圆桌排列，有![](assets-fenbi-101465/8cb2016e5c4702ce578ea0bdb0f05b9384953c728cdee44c5c28bf283deaa338.png)种情况，则总情况数为![](assets-fenbi-101465/92d2c22f655802d82cb89ab64745f476dadc775cb0fc926062c0d9ea70b80953.png)。
+然后计算满足条件的情况数，先捆绑：当小李和小王座位相邻时，则二人的内部顺序有A\_2^2=2种情况，与其同一部门的人自动坐在二人身边，无需考虑，4个人变成一个大组。另外两个部门的人各自捆绑，内部顺序均有A\_2^2=2种情况，则共2^3种情况；再排列：此时相当于3组人员进行圆桌排列，有A\_2^2种情况，则总情况数为2^3×A\_2^2。
 
 因此所求概率![](assets-fenbi-101465/0abe4fc865fcd36c45b3a657ddf3a777f0f98a586db54f06e505945d10ecbd9e.png)![](assets-fenbi-101465/6df6b8657ad26ebdfdab9d9bbb3c3438ec1a5c12d579a243013d64fb071a368d.png)![](assets-fenbi-101465/426a28dd0240182a165fc7fddec8f7dc31f1c17f6dae5c3792751dae9daebb4e.png)。
 
@@ -2071,7 +2071,7 @@ A
 
 ![](assets-fenbi-101465/2766874c331c336956970e5cc289494cf70ba328b156d4762305dd43ac56bb74.png)
 
-由此可知：男研究生人数=研究生总人数-女研究生人数=男生总人数-男本科生人数，即2x-y=7x-4y，整理可得：![](assets-fenbi-101465/4131918a2932d78c64f5a07912116f6216d4b27ccf0a19e918b78aa7a1c12ec3.png)，则x至少为3，y至少为5，女本科生最少为![](assets-fenbi-101465/3fd1ecffa37174d5fbb9d69598c9215518b0d96f3e2ebd8788aa4386bcc34b3d.png)人，男研究生最少为![](assets-fenbi-101465/a69c1da0633672509e8c2dc77628afde68f4b121ef6f4b04b8c4a5f0dacef588.png)人，前者比后者多4-1=3人。
+由此可知：男研究生人数=研究生总人数-女研究生人数=男生总人数-男本科生人数，即2x-y=7x-4y，整理可得：x/y=3/5，则x至少为3，y至少为5，女本科生最少为![](assets-fenbi-101465/3fd1ecffa37174d5fbb9d69598c9215518b0d96f3e2ebd8788aa4386bcc34b3d.png)人，男研究生最少为![](assets-fenbi-101465/a69c1da0633672509e8c2dc77628afde68f4b121ef6f4b04b8c4a5f0dacef588.png)人，前者比后者多4-1=3人。
 
 故正确答案为A。
 
@@ -2099,9 +2099,9 @@ B
 
 结合题干与选项可知，选项信息充分，故可用代入排除法解题：
 
-代入A项：小哑铃24个，买3送1（4个一组），![](assets-fenbi-101465/d98caabcdc788f3e53b24a0d7af6c3b1cddd10adbed4fedfd3a0c79404d10a98.png)组，需花钱购买![](assets-fenbi-101465/8a4cbddf3da32dca15620e966018eb9bea2406f1f78e273df543514b5799ffaa.png)个；便携包56-24=32个，买2送1（3个一组），![](assets-fenbi-101465/da4312e6f4965d9841be290310a657bfbbfbacb3760c797912fdc9e251a6ce8d.png)组······2个，需花钱购买![](assets-fenbi-101465/1394d6c143eb9dd017eb333dfdd858efad6c6801d5f9c6c6257b63dfab6bee08.png)个。则共用经费![](assets-fenbi-101465/ef66abbdb6c550a589b7cea7efb797dba64ef4f3afd7572a0e0645f4f72f8e12.png)![](assets-fenbi-101465/2b34bc6ee7757c132f97bf1e0bbb1be2d289fdb36e490a7d914564f8fb6e02a9.png)元，不符合题意；
+代入A项：小哑铃24个，买3送1（4个一组），![](assets-fenbi-101465/d98caabcdc788f3e53b24a0d7af6c3b1cddd10adbed4fedfd3a0c79404d10a98.png)组，需花钱购买![](assets-fenbi-101465/8a4cbddf3da32dca15620e966018eb9bea2406f1f78e273df543514b5799ffaa.png)个；便携包56-24=32个，买2送1（3个一组），![](assets-fenbi-101465/da4312e6f4965d9841be290310a657bfbbfbacb3760c797912fdc9e251a6ce8d.png)组······2个，需花钱购买![](assets-fenbi-101465/1394d6c143eb9dd017eb333dfdd858efad6c6801d5f9c6c6257b63dfab6bee08.png)个。则共用经费![](assets-fenbi-101465/ef66abbdb6c550a589b7cea7efb797dba64ef4f3afd7572a0e0645f4f72f8e12.png)=612元，不符合题意；
 
-代入B项：小哑铃25个，买3送1（4个一组），![](assets-fenbi-101465/31e0342a3131c6b9f1724cd3ffd18d681c45585059de0f04f6e5bbec58f4ff65.png)组······1个，需花钱购买![](assets-fenbi-101465/5005fa7496b30386d62e2dae8e00b0cf6bea17e3299c318c1cf0bea2a6898aa7.png)个；便携包56-25=31个，买2送1（3个一组），![](assets-fenbi-101465/dbe1479c84e82934adc8a021d4cc9178245d3e1eeb654203ec454fee8ee62ada.png)组······1个，需花钱购买![](assets-fenbi-101465/643ee6166b72be7c05f1a771cbae4f77f3548d6d9522951843381eacd5bd2848.png)个。则共用经费![](assets-fenbi-101465/d7d3d1d59c29550c993f37ba0f17b94ee637a20cdf9ccedfe0315fdae341250e.png)![](assets-fenbi-101465/e04e9dca325f7ede0438c15425a56edd75df9216ae17f573620bb7d669d6c7df.png)元，符合题意。
+代入B项：小哑铃25个，买3送1（4个一组），![](assets-fenbi-101465/31e0342a3131c6b9f1724cd3ffd18d681c45585059de0f04f6e5bbec58f4ff65.png)组······1个，需花钱购买![](assets-fenbi-101465/5005fa7496b30386d62e2dae8e00b0cf6bea17e3299c318c1cf0bea2a6898aa7.png)个；便携包56-25=31个，买2送1（3个一组），![](assets-fenbi-101465/dbe1479c84e82934adc8a021d4cc9178245d3e1eeb654203ec454fee8ee62ada.png)组······1个，需花钱购买![](assets-fenbi-101465/643ee6166b72be7c05f1a771cbae4f77f3548d6d9522951843381eacd5bd2848.png)个。则共用经费![](assets-fenbi-101465/d7d3d1d59c29550c993f37ba0f17b94ee637a20cdf9ccedfe0315fdae341250e.png)=606元，符合题意。
 
 B项满足题干所有条件，因此无需继续验证。
 
@@ -2189,7 +2189,7 @@ C
 
 **解析**
 
-如下图所示，设北极点为N点，地心为O点，过O点做赤道线与圆相交于A点。北纬45度为赤道平面与赤道平面的中心和北纬45度小圆上任意一点连线所成的角，即![](assets-fenbi-101465/4d63894f9852333117ea96808321e1bbdd5784f82e8c13771131dc2a77fcfc10.png)，![](assets-fenbi-101465/988e8eedd0f7e843e554292dad0cdcf008caaacccfc303c5d616b9693a61520f.png)，则![](assets-fenbi-101465/663ff18c496a30588749a02ad8e1909890f6d77ee2017b265852d3fd4e7e8ff5.png)，且直线SC与圆相切于C点，则![](assets-fenbi-101465/b7c6884fcb6ae95ace7a00923b9e3382af88401706b875549fbc510a1824dbd3.png)，因此![](assets-fenbi-101465/18ceb0989bf6b55a81f4793cf573094fed3dd12abe9b38a38c3b3559e3f2aebc.png)为等腰直角三角形，根据题意可知，OC=R，则SC=R，SO![](assets-fenbi-101465/ddab9faa1ed1be57ac380a462e505d128bbed472ef5cadb0a7c0438de9aaaea9.png)，ON=R，那么所求距离SN=SO-ON![](assets-fenbi-101465/ac4f9f0840280bcc1801bf26464e86ccc9632d77a7cd99648631b70b90c7f48b.png)。
+如下图所示，设北极点为N点，地心为O点，过O点做赤道线与圆相交于A点。北纬45度为赤道平面与赤道平面的中心和北纬45度小圆上任意一点连线所成的角，即![](assets-fenbi-101465/4d63894f9852333117ea96808321e1bbdd5784f82e8c13771131dc2a77fcfc10.png)，![](assets-fenbi-101465/988e8eedd0f7e843e554292dad0cdcf008caaacccfc303c5d616b9693a61520f.png)，则![](assets-fenbi-101465/663ff18c496a30588749a02ad8e1909890f6d77ee2017b265852d3fd4e7e8ff5.png)，且直线SC与圆相切于C点，则![](assets-fenbi-101465/b7c6884fcb6ae95ace7a00923b9e3382af88401706b875549fbc510a1824dbd3.png)，因此△SCO为等腰直角三角形，根据题意可知，OC=R，则SC=R，SO![](assets-fenbi-101465/ddab9faa1ed1be57ac380a462e505d128bbed472ef5cadb0a7c0438de9aaaea9.png)，ON=R，那么所求距离SN=SO-ON![](assets-fenbi-101465/ac4f9f0840280bcc1801bf26464e86ccc9632d77a7cd99648631b70b90c7f48b.png)。
 
 ![](assets-fenbi-101465/5f045a95caa4d3fc964fa8c10e67e1fd4b154dc9e0b1075a964eada1739f6656.png)
 
@@ -3069,19 +3069,19 @@ C
 
 第一步：翻译题干。
 
-①人无精神![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)不立，国无精神![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)不强；
+①人无精神→不立，国无精神→不强；
 
-②一个民族在历史的洪流中奋勇向前![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)精神上达到一定的高度。
+②一个民族在历史的洪流中奋勇向前→精神上达到一定的高度。
 
 第二步：逐一分析选项。
 
-A项：翻译为人有精神![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)立，国有精神![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)强，是对①的否前，否前得不到确定性结论，排除；
+A项：翻译为人有精神→立，国有精神→强，是对①的否前，否前得不到确定性结论，排除；
 
-B项：翻译为一个民族精神上没有达到一定的高度![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)没有赖以长久生存的灵魂，但是题干并无精神与灵魂之间的推出关系，无法推出，排除；
+B项：翻译为一个民族精神上没有达到一定的高度→没有赖以长久生存的灵魂，但是题干并无精神与灵魂之间的推出关系，无法推出，排除；
 
-C项：翻译为一个民族在历史的洪流中奋勇向前![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)精神上已达到一定的高度，是对②的肯前，肯前必肯后，可以推出，当选；
+C项：翻译为一个民族在历史的洪流中奋勇向前→精神上已达到一定的高度，是对②的肯前，肯前必肯后，可以推出，当选；
 
-D项：翻译为一个民族精神上达到一定的高度![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)在历史的洪流中奋勇向前，是对②的肯后，肯后得不到确定性结论，无法推出，排除。
+D项：翻译为一个民族精神上达到一定的高度→在历史的洪流中奋勇向前，是对②的肯后，肯后得不到确定性结论，无法推出，排除。
 
 故正确答案为C。
 
@@ -3111,17 +3111,17 @@ B
 
 第一步：分析题干的形式结构。
 
-题干的含义为：在天下设立好法制，天下就会太平；在一国制定好法制，一国就会太平。其形式结构为1![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)2，3![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)4。
+题干的含义为：在天下设立好法制，天下就会太平；在一国制定好法制，一国就会太平。其形式结构为1→2，3→4。
 
 第二步：逐一分析选项。
 
-A项：该项的含义为：民众的生计、生活在于勤劳，勤劳就不会出现物资匮乏。其形式结构为1![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)2，与题干形式结构不同，排除；
+A项：该项的含义为：民众的生计、生活在于勤劳，勤劳就不会出现物资匮乏。其形式结构为1→2，与题干形式结构不同，排除；
 
-B项：该项的含义为：如果自己不得志，那么就要管好自己的道德修养，如果自己得志，那么就要努力让天下人都能得到好处。其结构形式为1![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)2，3![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)4，与题干形式结构相似，当选；
+B项：该项的含义为：如果自己不得志，那么就要管好自己的道德修养，如果自己得志，那么就要努力让天下人都能得到好处。其结构形式为1→2，3→4，与题干形式结构相似，当选；
 
 C项：该项的含义为：聪明的人会根据时期的不同而改变自己的策略和方法，有大智慧的人会根据事物发展方向的不同而制定相应的管理方法。其中不包含推理关系，与题干形式结构不同，排除；
 
-D项：该项的含义为：节俭就会有节制，有节制则百善都会兴起；奢侈就会放肆，放肆则百恶都会爆发。其结构形式为1![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)2，2![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)3，4![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)5，5![](assets-fenbi-101465/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)6，与题干形式结构不同，排除。
+D项：该项的含义为：节俭就会有节制，有节制则百善都会兴起；奢侈就会放肆，放肆则百恶都会爆发。其结构形式为1→2，2→3，4→5，5→6，与题干形式结构不同，排除。
 
 故正确答案为B。
 
@@ -4183,9 +4183,9 @@ A
 
 故正确答案为A。
 
-备注：2000年居民交通通信支出占人均消费支出的比重：![](assets-fenbi-101465/3165069da43a784cc4b950421704710f4e162dc79fbf428cf1893cfde6238c5a.png)![](assets-fenbi-101465/ded48873be205dfe17d8d98534a93306f01f85b7cb3b573762dd98c5d431634d.png)![](assets-fenbi-101465/7d0a3052d5257eb821dd5f835babe1c5abc8d8931dcc5e972a98ef77fbcd00df.png)；
+备注：2000年居民交通通信支出占人均消费支出的比重：![](assets-fenbi-101465/3165069da43a784cc4b950421704710f4e162dc79fbf428cf1893cfde6238c5a.png)![](assets-fenbi-101465/ded48873be205dfe17d8d98534a93306f01f85b7cb3b573762dd98c5d431634d.png)=7.2%；
 
-2000年居民医疗保健支出占人均消费支出的比重：![](assets-fenbi-101465/37d0c8630e918b311e6afdaf6e17e5d2b1f67c2c42592b7217e5bfb0a28c57d6.png)![](assets-fenbi-101465/da010e269bc96232d9ea35b99f71ccb081c9f52f862a5cd2bcbae9d201f9171b.png)![](assets-fenbi-101465/fbf16107a464fe0424ac6d2510abcf4a092a976a69c6f1a5a3a6e15b6dce976b.png)；
+2000年居民医疗保健支出占人均消费支出的比重：![](assets-fenbi-101465/37d0c8630e918b311e6afdaf6e17e5d2b1f67c2c42592b7217e5bfb0a28c57d6.png)![](assets-fenbi-101465/da010e269bc96232d9ea35b99f71ccb081c9f52f862a5cd2bcbae9d201f9171b.png)=5.9%；
 
 2000年其他支出占人均消费支出的比重：1-42.2%-7.2%-5.9%=44.7%。
 
@@ -4243,7 +4243,7 @@ D
 
 ![](assets-fenbi-101465/2a719c480f651b31ae20e746b745ef383231c076c9d2c22b3707c933db91df4e.png)
 
-即城镇人口：农村人口![](assets-fenbi-101465/38e0a1217c9cf00934142f2c261f358dce77f4dc9b1d6b741ad45d4c2c6eeaa0.png)![](assets-fenbi-101465/89d8ade34a498963cc275641b4b8c843668601d43f76f524984b04ddef15bcd4.png)，根据公式：比重![](assets-fenbi-101465/b371fe813578c5af33a8fb831af003b7995801f6ad4b9abe0e127793dc3e32d6.png)![](assets-fenbi-101465/cac7027b066c53502f7cfae633b7290e174e3d01551347249b89ae1d4fa3d583.png)![](assets-fenbi-101465/faab1efc80ef1dba901d624be2d227a36f8d842c485e0b01db4c52cf8f6d9cb9.png)![](assets-fenbi-101465/9ebb415b410bb4a8f1b654d21964a6b22f9a6ade01d656770efe05b3bea707e5.png)![](assets-fenbi-101465/79994e174e624dce72a720d2f46197acc3bfdfd2585adb6a3ce604d2d92a3275.png)，与D项最接近。
+即城镇人口：农村人口![](assets-fenbi-101465/38e0a1217c9cf00934142f2c261f358dce77f4dc9b1d6b741ad45d4c2c6eeaa0.png)![](assets-fenbi-101465/89d8ade34a498963cc275641b4b8c843668601d43f76f524984b04ddef15bcd4.png)，根据公式：比重![](assets-fenbi-101465/b371fe813578c5af33a8fb831af003b7995801f6ad4b9abe0e127793dc3e32d6.png)![](assets-fenbi-101465/cac7027b066c53502f7cfae633b7290e174e3d01551347249b89ae1d4fa3d583.png)![](assets-fenbi-101465/faab1efc80ef1dba901d624be2d227a36f8d842c485e0b01db4c52cf8f6d9cb9.png)=82/147![](assets-fenbi-101465/79994e174e624dce72a720d2f46197acc3bfdfd2585adb6a3ce604d2d92a3275.png)，与D项最接近。
 
 故正确答案为D。
 
@@ -4395,7 +4395,7 @@ A
 
 **解析**
 
-根据题干“2018年······与······之差为”，结合材料已知2019年相关数据，可判定本题为基期和差问题。定位文字材料可知：（2019年）全年保费收入3750.2亿元，比上年增长13.1%。其中，财产险收入940.9亿元，增长9.6%；······全年保险赔付998.6亿元，比上年增长0.2%。其中，财产险赔付534.5亿元，增长4.3%。根据公式：基期量![](assets-fenbi-101465/ffabdf9bba4e72e25feb79aed91121c42644602fc3f5e2a44475a963c8bde9a4.png)，2018年江苏省财产险收入与赔付之差为：![](assets-fenbi-101465/c04ccbcb835980dbec21e269187c38469f8a1bc95894b53421ed5258351a2421.png)![](assets-fenbi-101465/c36213860a2254aa3acd6af92c41b2c7a7d7ea693ffd1cbc14f1edadc8f87122.png)![](assets-fenbi-101465/0a2f18886033f25413ad8ade67e34bc142314be51ed2eb4ed18e8ad65d92d23f.png)![](assets-fenbi-101465/089152ce3b0f3fa23e08ec46437e7dda0fa8451022aa80066b3cfd942bd769b2.png)亿元，与A项最为接近。
+根据题干“2018年······与······之差为”，结合材料已知2019年相关数据，可判定本题为基期和差问题。定位文字材料可知：（2019年）全年保费收入3750.2亿元，比上年增长13.1%。其中，财产险收入940.9亿元，增长9.6%；······全年保险赔付998.6亿元，比上年增长0.2%。其中，财产险赔付534.5亿元，增长4.3%。根据公式：基期量![](assets-fenbi-101465/ffabdf9bba4e72e25feb79aed91121c42644602fc3f5e2a44475a963c8bde9a4.png)，2018年江苏省财产险收入与赔付之差为：![](assets-fenbi-101465/c04ccbcb835980dbec21e269187c38469f8a1bc95894b53421ed5258351a2421.png)![](assets-fenbi-101465/c36213860a2254aa3acd6af92c41b2c7a7d7ea693ffd1cbc14f1edadc8f87122.png)![](assets-fenbi-101465/0a2f18886033f25413ad8ade67e34bc142314be51ed2eb4ed18e8ad65d92d23f.png)=343.5亿元，与A项最为接近。
 
 故正确答案为A。
 
@@ -4637,7 +4637,7 @@ D
 
 **解析**
 
-根据题干“2019年······占······的比重为”，结合材料时间为2019年，可判定本题为现期比重问题。定位文字材料可知，2019年，全球卫星产业收入为2707亿美元。在全球卫星产业收入中，卫星制造业的收入为125亿美元。根据公式：比重![](assets-fenbi-101465/7223ac0c12e18c7586ef9c7950fa575deb35d7eeee2580382eca30e0eef9e391.png)，则2019年全球卫星制造业收入占卫星产业收入的比重![](assets-fenbi-101465/32ebecb305fd358c167b0a27d839a68f22f7081543c8d074cb23c9c14b158994.png)![](assets-fenbi-101465/3de7cecacd0fe1e684d8b470943c04a77e617a22cfbc2dafa4178d1f23bb9abf.png)![](assets-fenbi-101465/0d6bfac8a16ebc677f32f158c0502be5295878ed94346b3fb3cc0392015ba8bc.png)。
+根据题干“2019年······占······的比重为”，结合材料时间为2019年，可判定本题为现期比重问题。定位文字材料可知，2019年，全球卫星产业收入为2707亿美元。在全球卫星产业收入中，卫星制造业的收入为125亿美元。根据公式：比重=部分/总体，则2019年全球卫星制造业收入占卫星产业收入的比重=125/2707≈125/2700≈4.6%。
 
 故正确答案为D。
 
@@ -4699,9 +4699,9 @@ B
 
 **解析**
 
-根据题干“增长情况分别是”，结合材料数据给出了各个年份的增长率，可判定本题为一般增长率的计算问题。定位图形材料，2013-2019年全球卫星制造业及卫星发射服务业的收入增长率均已给出。根据公式：增长率![](assets-fenbi-101465/bd7cfb45e22fdc24e51f0cd4dfefce99bae4a6b5d5973af94ac4041fdaa65878.png)，故若现期量＞基期量，则呈正增长，若现期量＜基期量，则呈负增长。根据公式：![](assets-fenbi-101465/45fc546e157088624fe39931875404737652abe603393a33fdcea87054ee097b.png)，则以2012年为基期时，2019年全球卫星制造业收入=2012年全球卫星制造业收入![](assets-fenbi-101465/f68f2112edd903660f57f9eb184d336a2b427bce816804108d89ab0e30404f18.png)![](assets-fenbi-101465/3e5d1bf2a448ff197688396b5c99b1e4a1962df0ce6c2b87e146c9fe01fdc17c.png)![](assets-fenbi-101465/608461c679d978f02c841dfea44ed63c948daf22eb03a4cdaebc85c854b2ce9d.png)![](assets-fenbi-101465/308720610badd615dd7d7fce119afd625feb074c975cfd15a9437093b954ea11.png)![](assets-fenbi-101465/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)
+根据题干“增长情况分别是”，结合材料数据给出了各个年份的增长率，可判定本题为一般增长率的计算问题。定位图形材料，2013-2019年全球卫星制造业及卫星发射服务业的收入增长率均已给出。根据公式：增长率![](assets-fenbi-101465/bd7cfb45e22fdc24e51f0cd4dfefce99bae4a6b5d5973af94ac4041fdaa65878.png)，故若现期量＞基期量，则呈正增长，若现期量＜基期量，则呈负增长。根据公式：![](assets-fenbi-101465/45fc546e157088624fe39931875404737652abe603393a33fdcea87054ee097b.png)，则以2012年为基期时，2019年全球卫星制造业收入=2012年全球卫星制造业收入![](assets-fenbi-101465/f68f2112edd903660f57f9eb184d336a2b427bce816804108d89ab0e30404f18.png)![](assets-fenbi-101465/3e5d1bf2a448ff197688396b5c99b1e4a1962df0ce6c2b87e146c9fe01fdc17c.png)![](assets-fenbi-101465/608461c679d978f02c841dfea44ed63c948daf22eb03a4cdaebc85c854b2ce9d.png)![](assets-fenbi-101465/308720610badd615dd7d7fce119afd625feb074c975cfd15a9437093b954ea11.png)≈
 
-2012年全球卫星制造业收入![](assets-fenbi-101465/3b191ef80e8c193ec27f6763331fb51f388b750dd40f4871d9f6cfd9b47563aa.png)![](assets-fenbi-101465/dd4b32aa340b10797f4b804cb2cafea3b7f6689a6cb42038414b2191e7019ff8.png)![](assets-fenbi-101465/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)2012年全球卫星制造业收入![](assets-fenbi-101465/1d772cf34f970c15ff10de18c76a59c63086172cb54f5e21d01e66a4c6e21299.png)，2012年全球卫星制造业收入＞2019年全球卫星制造业收入，呈负增长；2019年全球卫星发射服务业收入=2012年全球卫星发射服务业收入![](assets-fenbi-101465/d6578a7ed3b3466fb6b75d1f681fac1d9090269bbcb9b5f8d2cf5a524a4cb212.png)![](assets-fenbi-101465/383ff725b60616b50edfa7e6f3f92250b77c49f29711f5e28859ca6d65fcecbc.png)![](assets-fenbi-101465/91d28e9d2ff5985d3ebe2673294eb66935b4c5d2932f55d1c317b342f8d476a0.png)![](assets-fenbi-101465/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)2012年全球卫星发射服务业收入![](assets-fenbi-101465/44def0f17a10ba0f539e8fbe5bad6c4c1f81843a2215b9f3fd098cf87c33bc92.png)![](assets-fenbi-101465/a67c28a3f8d1939c85e14a52959200991a52152fe7cf876b959bf14885768722.png)![](assets-fenbi-101465/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)2012年全球卫星发射服务业收入![](assets-fenbi-101465/1d772cf34f970c15ff10de18c76a59c63086172cb54f5e21d01e66a4c6e21299.png)，2012年全球卫星发射服务业收入＞2019年全球卫星发射服务业收入，呈负增长。因此，两者收入增长情况均呈负增长。
+2012年全球卫星制造业收入![](assets-fenbi-101465/3b191ef80e8c193ec27f6763331fb51f388b750dd40f4871d9f6cfd9b47563aa.png)![](assets-fenbi-101465/dd4b32aa340b10797f4b804cb2cafea3b7f6689a6cb42038414b2191e7019ff8.png)=2012年全球卫星制造业收入×1-，2012年全球卫星制造业收入＞2019年全球卫星制造业收入，呈负增长；2019年全球卫星发射服务业收入=2012年全球卫星发射服务业收入![](assets-fenbi-101465/d6578a7ed3b3466fb6b75d1f681fac1d9090269bbcb9b5f8d2cf5a524a4cb212.png)![](assets-fenbi-101465/383ff725b60616b50edfa7e6f3f92250b77c49f29711f5e28859ca6d65fcecbc.png)![](assets-fenbi-101465/91d28e9d2ff5985d3ebe2673294eb66935b4c5d2932f55d1c317b342f8d476a0.png)≈2012年全球卫星发射服务业收入![](assets-fenbi-101465/44def0f17a10ba0f539e8fbe5bad6c4c1f81843a2215b9f3fd098cf87c33bc92.png)![](assets-fenbi-101465/a67c28a3f8d1939c85e14a52959200991a52152fe7cf876b959bf14885768722.png)=2012年全球卫星发射服务业收入×1-，2012年全球卫星发射服务业收入＞2019年全球卫星发射服务业收入，呈负增长。因此，两者收入增长情况均呈负增长。
 
 故正确答案为B。
 
@@ -4729,17 +4729,17 @@ C
 
 根据题干“2014-2019年······增速大于······的年份数有”，可判定本题为一般增长率的比较问题。定位图形材料可得：2013-2019年全球卫星产业收入以及2014-2019年卫星发射服务业收入增速。根据公式：增长率![](assets-fenbi-101465/6465ad16dfec0d0fffb1aa3374b01bef9f74aac59f741165412a60b33746aa66.png)，2014-2019年的增长率比较如下：
 
-2014年：全球卫星产业收入增速![](assets-fenbi-101465/91cfc5b4756fd73f3007032a99c8d9ea2f32038ce6b7066d078819e935952e1c.png)![](assets-fenbi-101465/fcdecadff1d5778e30f88708a4251e0cba0cb90cdebe7446ef6f46c065a60fe5.png)![](assets-fenbi-101465/3750facee0b75d08945de93c3ddc57acd727468fa60b9f2f5e0c61335b839b33.png)卫星发射服务业收入增速9.3%；
+2014年：全球卫星产业收入增速![](assets-fenbi-101465/91cfc5b4756fd73f3007032a99c8d9ea2f32038ce6b7066d078819e935952e1c.png)![](assets-fenbi-101465/fcdecadff1d5778e30f88708a4251e0cba0cb90cdebe7446ef6f46c065a60fe5.png)\<卫星发射服务业收入增速9.3%；
 
 2015年：全球卫星产业收入增速![](assets-fenbi-101465/c2ec6e6e22cee479e40982a589e40154102e0f564e53a8f7b71a89002259c29a.png)卫星发射服务业收入增速-8.5%；
 
-2016年：全球卫星产业收入增速![](assets-fenbi-101465/6ddd75ffc4f2286f6229cdc7e4a0ad2322ddf8aa0237a2f65b83793dec6a09b1.png)![](assets-fenbi-101465/8d397ccc6077c6efe15dedce1dd26340b5fbd92c55ce1295a04582bb25058519.png)![](assets-fenbi-101465/3187581adef5a5983df0f9a6d2d91693eb170dd357fb093876a0af92442e70f8.png)卫星发射服务业收入增速1.9%；
+2016年：全球卫星产业收入增速![](assets-fenbi-101465/6ddd75ffc4f2286f6229cdc7e4a0ad2322ddf8aa0237a2f65b83793dec6a09b1.png)![](assets-fenbi-101465/8d397ccc6077c6efe15dedce1dd26340b5fbd92c55ce1295a04582bb25058519.png)\>卫星发射服务业收入增速1.9%；
 
 2017年：全球卫星产业收入增速![](assets-fenbi-101465/3040a08d85e8a69e539e49ddcf5da951fea73da6c5eb126416b8e017da481e06.png)卫星发射服务业收入增速-16.4%；
 
-2018年：全球卫星产业收入增速![](assets-fenbi-101465/7326813a4c10959cd38d655c38d9dca69372578919f46b4b2cffe24ccf06cc44.png)![](assets-fenbi-101465/a7a32aeb7a368e54713893022029c239b1fb3394540d521bc51afe51afd10e42.png)![](assets-fenbi-101465/3750facee0b75d08945de93c3ddc57acd727468fa60b9f2f5e0c61335b839b33.png)卫星发射服务业收入增速34.8%；
+2018年：全球卫星产业收入增速![](assets-fenbi-101465/7326813a4c10959cd38d655c38d9dca69372578919f46b4b2cffe24ccf06cc44.png)![](assets-fenbi-101465/a7a32aeb7a368e54713893022029c239b1fb3394540d521bc51afe51afd10e42.png)\<卫星发射服务业收入增速34.8%；
 
-2019年：全球卫星产业收入增速![](assets-fenbi-101465/21574e12443066f31b37c426d1c1e4f7f81bd427c88f329bf393bdac342b975b.png)![](assets-fenbi-101465/5fb42a2ae59c51687a7168fa16ad64f35f2b00298e332faea99cd5b4def22a50.png)![](assets-fenbi-101465/3187581adef5a5983df0f9a6d2d91693eb170dd357fb093876a0af92442e70f8.png)卫星发射服务业收入增速-21%。
+2019年：全球卫星产业收入增速![](assets-fenbi-101465/21574e12443066f31b37c426d1c1e4f7f81bd427c88f329bf393bdac342b975b.png)![](assets-fenbi-101465/5fb42a2ae59c51687a7168fa16ad64f35f2b00298e332faea99cd5b4def22a50.png)\>卫星发射服务业收入增速-21%。
 
 满足要求的年份分别是2015年、2016年、2017年和2019年，共4个年份。
 
