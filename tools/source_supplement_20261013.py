@@ -115,7 +115,7 @@ def main():
                          'operations':operations(old,new)})
         ready.append((p,new))
     reports=[str(p.relative_to(ROOT)) for p in (ROOT/'reports').iterdir() if p.is_file()]
-    for rel in reports+['catalog/manifest.jsonl','COVERAGE-优先区.md','PROGRESS.md','README.md','QUALITY.md']:
+    for rel in reports+['catalog/manifest.jsonl','docs/COVERAGE-PRIORITY.md','docs/PROGRESS.md','README.md','docs/QUALITY-STANDARD.md']:
         p=ROOT/rel
         if p.is_file():before[rel]=p.read_text(encoding='utf-8')
     for p,text in ready:p.write_text(text,encoding='utf-8',newline='\n')
@@ -125,11 +125,11 @@ def main():
     qrows,stats=cq.scan(ROOT,verify_images=False)
     stats['image_decode_check_performed']=True
     cq.build(ROOT,qrows,stats)
-    old_progress=before['PROGRESS.md'];mark=re.search(r'(?m)^## 第三轮：',old_progress)
-    progress=(ROOT/'PROGRESS.md').read_text(encoding='utf-8').rstrip()
+    old_progress=before['docs/PROGRESS.md'];mark=re.search(r'(?m)^## 第三轮：',old_progress)
+    progress=(ROOT/'docs/PROGRESS.md').read_text(encoding='utf-8').rstrip()
     if mark:progress+='\n\n'+old_progress[mark.start():].rstrip()
     progress+='\n\n## 来源补录专项：现成作答优先（2026-10-13）\n\n本轮从用户已保存的原始资料中补入'+str(len(plan))+'处现成来源参考作答，涉及'+str(len(groups))+'份既有申论；新增AI作答为0。补录正文与原始来源逐条核对，机构网页作为同题版本对照；未署名的答文不编造作者。\n\n已识别答案缺项568→'+str(remaining)+'；另9份题目结构待核。完整答文收录、机构出处及真实考场得分分别记录。\n\n[逐卷来源补录结果](reports/'+REPORT+') · [精确统计](reports/'+SUMMARY+')\n'
-    (ROOT/'PROGRESS.md').write_text(progress,encoding='utf-8')
+    (ROOT/'docs/PROGRESS.md').write_text(progress,encoding='utf-8')
     summary={'status':'source_and_preservation_checked','baseline_commit':plan[0]['baseline_commit'],'papers_modified':len(groups),'source_answer_positions_added':len(plan),'new_AI_answers':0,'known_missing_answers_before':568,'known_missing_answers_after':remaining,'unparsed_exam_files':9,'source_files_used':len(sources),'positions_with_external_institution_crosscheck':sum(bool(e.get('external_references')) for e in plan),'machine_flagged_files':stats['files_with_machine_flags'],'answer_authorship':'Original sources only; unspecified authors remain unspecified; no scored high-score claim.'}
     (ROOT/'reports'/RECEIPT).write_text(''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in receipts),encoding='utf-8')
     (ROOT/'reports'/FULL).write_text(json.dumps(full,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -153,7 +153,7 @@ def main():
       '全文来源与校验：['+FULL+']('+FULL+')；可逆修复凭据：['+RECEIPT+']('+RECEIPT+')。','']
     (ROOT/'reports'/REPORT).write_text('\n'.join(lines),encoding='utf-8')
     changed=[str(p.relative_to(ROOT)) for p,_ in ready]
-    changed+=['catalog/manifest.jsonl','COVERAGE-优先区.md','PROGRESS.md','README.md','QUALITY.md','reports/QUALITY-SUMMARY.json','reports/DEFECTS.jsonl','reports/QUALITY-AUDIT.md','reports/PRIORITY-MISSING.json']
+    changed+=['catalog/manifest.jsonl','docs/COVERAGE-PRIORITY.md','docs/PROGRESS.md','README.md','docs/QUALITY-STANDARD.md','reports/QUALITY-SUMMARY.json','reports/DEFECTS.jsonl','reports/QUALITY-AUDIT.md','reports/PRIORITY-MISSING.json']
     changed+=['reports/'+x for x in [RECEIPT,FULL,SUMMARY,REPORT]]
     for rel in changed:
         text=(ROOT/rel).read_text(encoding='utf-8')

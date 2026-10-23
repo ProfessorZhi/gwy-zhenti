@@ -53,8 +53,8 @@ def main():
   '',
   '相关文件：`ROUND6-OWNED-ANSWERS-20261013.jsonl`、`REPAIR-SUMMARY-20261013-R6.json`、`ROUND5-ANSWERS-20261012.jsonl`。','']
  (ROOT/'reports/QUALITY-REPAIR-20261013-R6.md').write_text('\n'.join(lines),encoding='utf-8')
- base=subprocess.check_output(['git','show','HEAD:PROGRESS.md']).decode('utf-8')
- progress=ROOT/'PROGRESS.md';cur=progress.read_text(encoding='utf-8')
+ base=subprocess.check_output(['git','show','HEAD:docs/PROGRESS.md']).decode('utf-8')
+ progress=ROOT/'docs/PROGRESS.md';cur=progress.read_text(encoding='utf-8')
  m=re.search(r'(?m)^## 第三轮：',base)
  if m:cur=re.sub(r'\n## 第三轮：[\s\S]*\Z','',cur).rstrip()+'\n\n'+base[m.start():].rstrip()+'\n'
  cur+='\n## 第六轮：不同来源补录合并（2026-10-13）\n\n'

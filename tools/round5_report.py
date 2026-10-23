@@ -57,8 +57,8 @@ def main():
         '全库验收状态以 PR 对应的 GitHub Actions 成功日志为准；结构校验、图片可解码不等于已将所有原件逐字核实。',''
     ]
     (ROOT/'reports/QUALITY-REPAIR-20261013-R5.md').write_text('\n'.join(lines),encoding='utf-8')
-    old_progress=subprocess.check_output(['git','show','HEAD:PROGRESS.md'],text=True)
-    progress_path=ROOT/'PROGRESS.md'
+    old_progress=subprocess.check_output(['git','show','HEAD:docs/PROGRESS.md'],text=True)
+    progress_path=ROOT/'docs/PROGRESS.md'
     current=progress_path.read_text(encoding='utf-8')
     current=current.split('\n## 第三轮：',1)[0].split('\n## 第五轮：',1)[0].rstrip()+'\n'
     if '\n## 第三轮：' in old_progress:

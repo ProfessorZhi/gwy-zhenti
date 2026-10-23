@@ -33,7 +33,7 @@ def main():
  (ROOT/'reports/QUALITY-REPAIR-20261012-R4.md').write_text('\n'.join(lines),encoding='utf-8')
  # cloud_quality.py --build historically generates only R1/R2 sections. Restore the
  # latest R3 summary as an explicit historical milestone before appending R4.
- progress=ROOT/'PROGRESS.md';text=progress.read_text(encoding='utf-8')
+ progress=ROOT/'docs/PROGRESS.md';text=progress.read_text(encoding='utf-8')
  if '## 第三轮：' not in text:text+='\n## 第三轮：已合并申论修复（2026-10-12）\n\n23份申论恢复材料/作答结构，新增3题和5份参考答案；此前早期章节的相应缺项是历史状态。详见[第三轮报告](reports/QUALITY-REPAIR-20261012-R3.md)。\n'
  text=re.sub(r'\n## 第四轮：[\s\S]*\Z','',text)
  text+='\n## 第四轮：当前答案补录（2026-10-12）\n\n'+f"{len(full)}份既有申论补入{result['added_existing_source_answers']}份同题来源参考答案，另{len(notes)}份增加来源入口和摘要（不计完整答案）。本轮未新增行测试题或新试卷。"+'\n\n'+f"仍有{len(unresolved['parsed_missing'])}个已识别完整答案缺项，另{len(unresolved['unparsed'])}份待解析/复核；这不是完整率认证。行测已登记25题、重点年度科目10格、其他47个占位未消除。"+'\n\n[实际逐卷结果](reports/QUALITY-REPAIR-20261012-R4.md) · [当前机器明细](reports/REPAIR-SUMMARY-20261012-R4.json)\n'

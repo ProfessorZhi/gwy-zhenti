@@ -37,7 +37,7 @@ def main():
         '`REPAIR-SUMMARY-20261012-R3.json`：从实际正文与凭据校验生成的数量。',
         '验收包括既有回归、新增16项结构保护测试、当前清单、修复凭据链和全库图片实际像素解码；成功与否以本分支最终GitHub Actions记录为准。结构验收不替代官方原件逐字核验。','']
     (ROOT/'reports/QUALITY-REPAIR-20261012-R3.md').write_text('\n'.join(lines),encoding='utf-8')
-    progress=ROOT/'PROGRESS.md';t=progress.read_text();marker='## 第三轮：当前申论补全与剩余（2026-10-12）'
+    progress=ROOT/'docs/PROGRESS.md';t=progress.read_text();marker='## 第三轮：当前申论补全与剩余（2026-10-12）'
     t=t.split(marker)[0].rstrip()+f"\n\n{marker}\n\n本轮实际修改{summary['papers']}份既有申论，新增{summary['new_major_questions']}道作答题、{summary['added_reference_answers']}份来源参考答案。早期章节中的缺答案/残卷表述是历史状态，当前以第三轮报告和逐卷正文为准。\n\n[第三轮实际修复与边界](reports/QUALITY-REPAIR-20261012-R3.md)。18道江苏/浙江行测缺题未获得可靠原文，仍保留；不把机器检查通过说成缺题已经补齐。\n"
     progress.write_text(t,encoding='utf-8')
     ledger=ROOT/'reports/PRIORITY-QUALITY-20261012.md';text=ledger.read_text();updated=[]
