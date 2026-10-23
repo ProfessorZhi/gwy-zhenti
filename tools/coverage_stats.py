@@ -46,6 +46,9 @@ def load_rows():
             rec = json.loads(line)
             parts = rec['path'].split('/')
             area = '国考' if parts[0] == '国考' else parts[1]
+            # 题目口径取卷面声明题数；29 份旧格式申论卷没有 `### 第 N 题` 锚点，
+            # 只数锚点会漏掉 91 题（65,363 vs 65,454）。
+            declared = rec.get('declared_questions')
             anchors = rec.get('question_anchors')
             rows.append({
                 'area': area,
@@ -54,7 +57,7 @@ def load_rows():
                 'pt': rec.get('paper_type') or '',
                 'pt2': norm_pt(rec.get('paper_type')),
                 'path': rec['path'],
-                'q': anchors if isinstance(anchors, int) else len(anchors or []),
+                'q': declared if isinstance(declared, int) else (anchors if isinstance(anchors, int) else len(anchors or [])),
                 'img': rec.get('image_references') or 0,
             })
     return rows
