@@ -1,0 +1,5792 @@
+{
+ "schemaVersion": 1,
+ "kind": "shenlun-local-archive-publish-preflight",
+ "generatedAt": "2026-10-21T16:52:26.578Z",
+ "method": "offline read-only parse of catalog/papers/receipts/assets; metadata, counts and hashes only; no network; no content emitted",
+ "archive": {
+  "root": "/home/fjd/s7-shenlun-archive-20261022",
+  "indexSha256": "4a9dd1ab730b984c45efffda037a1f28e7b2039f8ca85b5a52374d177e1b5259",
+  "indexRowCount": 56,
+  "archiveManifestGeneratedAt": "2026-10-21T16:28:49.714Z",
+  "snapshotStable": true,
+  "volumeCount": 56
+ },
+ "rights": {
+  "provenanceSha256": "b6baa63b906c41b452af41009c59769a4975912f89610281f8e7f369295cd1c8",
+  "statusCounts": {
+   "unverified": 54,
+   "missing": 2
+  },
+  "cloudStorageBlockedTrue": 56,
+  "clearedCount": 0,
+  "thirdPartyCopyrightLicense": "not-established",
+  "githubCloudStorage": "blocked",
+  "publishableVolumesDeclared": 0,
+  "note": "technical integrity and third-party copyright permission are separate gates; this report never clears rights"
+ },
+ "gates": {
+  "technical": {
+   "PASS": 30,
+   "FAIL": 26,
+   "SKIP": 0
+  },
+  "publication": {
+   "BLOCKED": 56,
+   "ELIGIBLE": 0,
+   "POLICY_VIOLATION": 0,
+   "UNKNOWN": 0
+  }
+ },
+ "totals": {
+  "volumes": 56,
+  "questions": 189,
+  "answers": 187,
+  "materialPanes": 299,
+  "imageRefs": 171,
+  "imageBytesStored": 131,
+  "imageBytesVerified": 131,
+  "volumesWithMissingImages": 8,
+  "textualAnalysisQuestions": 11,
+  "videoOnlyAnalysisQuestions": 146,
+  "absentAnalysisQuestions": 32,
+  "archiveComplete": 0,
+  "archivePartial": 56,
+  "technicalPass": 30,
+  "technicalFail": 26,
+  "technicalSkip": 0,
+  "publicationEligible": 0,
+  "priorAnswerOverlap": 1,
+  "priorAnswerCandidates": 4
+ },
+ "groups": {
+  "byArea": {
+   "浙江": {
+    "total": 36,
+    "PASS": 20,
+    "FAIL": 16,
+    "SKIP": 0,
+    "BLOCKED": 36,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "国考": {
+    "total": 13,
+    "PASS": 3,
+    "FAIL": 10,
+    "SKIP": 0,
+    "BLOCKED": 13,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "北京": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "广东": {
+    "total": 5,
+    "PASS": 5,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 5,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "上海": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   }
+  },
+  "byYear": {
+   "2008": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2009": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2010": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2011": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2012": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2013": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2014": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2015": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2016": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2017": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2018": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2019": {
+    "total": 2,
+    "PASS": 0,
+    "FAIL": 2,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2020": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2021": {
+    "total": 3,
+    "PASS": 1,
+    "FAIL": 2,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2022": {
+    "total": 1,
+    "PASS": 0,
+    "FAIL": 1,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2023": {
+    "total": 6,
+    "PASS": 0,
+    "FAIL": 6,
+    "SKIP": 0,
+    "BLOCKED": 6,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2024": {
+    "total": 6,
+    "PASS": 0,
+    "FAIL": 6,
+    "SKIP": 0,
+    "BLOCKED": 6,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2025": {
+    "total": 8,
+    "PASS": 2,
+    "FAIL": 6,
+    "SKIP": 0,
+    "BLOCKED": 8,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "2026": {
+    "total": 11,
+    "PASS": 8,
+    "FAIL": 3,
+    "SKIP": 0,
+    "BLOCKED": 11,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   }
+  },
+  "byRights": {
+   "BLOCKED": {
+    "total": 56,
+    "PASS": 30,
+    "FAIL": 26,
+    "SKIP": 0,
+    "BLOCKED": 56,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   }
+  },
+  "byAreaYear": {
+   "浙江/2020": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2021": {
+    "total": 3,
+    "PASS": 1,
+    "FAIL": 2,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2012": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2009": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "国考/2022": {
+    "total": 1,
+    "PASS": 0,
+    "FAIL": 1,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "国考/2023": {
+    "total": 3,
+    "PASS": 0,
+    "FAIL": 3,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2023": {
+    "total": 3,
+    "PASS": 0,
+    "FAIL": 3,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "国考/2024": {
+    "total": 3,
+    "PASS": 0,
+    "FAIL": 3,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2010": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2013": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2024": {
+    "total": 3,
+    "PASS": 0,
+    "FAIL": 3,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "北京/2025": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "广东/2025": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2026": {
+    "total": 3,
+    "PASS": 0,
+    "FAIL": 3,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "上海/2026": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "国考/2026": {
+    "total": 3,
+    "PASS": 3,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "广东/2026": {
+    "total": 4,
+    "PASS": 4,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 4,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2025": {
+    "total": 3,
+    "PASS": 0,
+    "FAIL": 3,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "国考/2025": {
+    "total": 3,
+    "PASS": 0,
+    "FAIL": 3,
+    "SKIP": 0,
+    "BLOCKED": 3,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2011": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2017": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2016": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2015": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2014": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2018": {
+    "total": 2,
+    "PASS": 2,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2019": {
+    "total": 2,
+    "PASS": 0,
+    "FAIL": 2,
+    "SKIP": 0,
+    "BLOCKED": 2,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   },
+   "浙江/2008": {
+    "total": 1,
+    "PASS": 1,
+    "FAIL": 0,
+    "SKIP": 0,
+    "BLOCKED": 1,
+    "ELIGIBLE": 0,
+    "POLICY_VIOLATION": 0
+   }
+  }
+ },
+ "issueSummary": {
+  "explanation-empty": {
+   "fatal": 0,
+   "warning": 53,
+   "volumes": 53
+  },
+  "answer-above-word-maximum": {
+   "fatal": 0,
+   "warning": 50,
+   "volumes": 50
+  },
+  "material-pane-gap": {
+   "fatal": 16,
+   "warning": 0,
+   "volumes": 16
+  },
+  "material-ref-unresolved": {
+   "fatal": 16,
+   "warning": 0,
+   "volumes": 16
+  },
+  "word-limits-unknown": {
+   "fatal": 0,
+   "warning": 4,
+   "volumes": 4
+  },
+  "question-count-mismatch": {
+   "fatal": 2,
+   "warning": 0,
+   "volumes": 2
+  },
+  "question-number-set-mismatch": {
+   "fatal": 2,
+   "warning": 0,
+   "volumes": 2
+  },
+  "answers-incomplete": {
+   "fatal": 2,
+   "warning": 0,
+   "volumes": 2
+  },
+  "material-tab-count-mismatch": {
+   "fatal": 0,
+   "warning": 2,
+   "volumes": 2
+  },
+  "rights-status-missing": {
+   "fatal": 0,
+   "warning": 6,
+   "volumes": 2
+  },
+  "rights-status-unexpected": {
+   "fatal": 0,
+   "warning": 2,
+   "volumes": 2
+  },
+  "images-missing": {
+   "fatal": 8,
+   "warning": 0,
+   "volumes": 8
+  },
+  "answer-below-word-minimum": {
+   "fatal": 0,
+   "warning": 1,
+   "volumes": 1
+  }
+ },
+ "assetSummary": {
+  "refs": 171,
+  "stored": 131,
+  "verified": 131,
+  "missing": 40,
+  "orphan": 0,
+  "volumesWithAssets": 40,
+  "volumesWithoutAssets": 16
+ },
+ "archiveManifest": {
+  "available": true,
+  "generatedAt": "2026-10-21T16:28:49.714Z",
+  "drift": [],
+  "computed": {
+   "volumes": 56,
+   "questions": 189,
+   "answers": 187,
+   "materialPanes": 299,
+   "imageRefs": 171,
+   "imageBytesStored": 131,
+   "volumesWithMissingImages": 8,
+   "textualAnalysisQuestions": 11,
+   "videoOnlyAnalysisQuestions": 146,
+   "absentAnalysisQuestions": 32,
+   "archiveComplete": 0,
+   "archivePartial": 56,
+   "cohortZhejiang20": 20,
+   "cohortNational8": 8,
+   "otherVolumes": 28,
+   "githubPublished": 0
+  }
+ },
+ "repairPlan": {
+  "copyable": 0,
+  "unresolvedVolumes": 8,
+  "unresolvedImages": 40,
+  "note": "copy 修复只补缺失/哈希不符的图片字节，不删除、不改题目或权利标记；unresolved 表示本地无 SHA 元数据，禁止凭尺寸或顺序猜图。"
+ },
+ "recoverySummary": {
+  "not-needed": 30,
+  "recapture-required": 18,
+  "missing-bytes-no-local-source": 8
+ },
+ "volumes": [
+  {
+   "sourceId": "102033",
+   "area": "浙江",
+   "year": 2020,
+   "variant": "a",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 2,
+   "answersPresent": 2,
+   "materialPanes": 7,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 2,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 2,
+    "stored": 2,
+    "verified": 2,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 2
+   },
+   "hashes": {
+    "paperJsonSha256": "13fc9b6ffcf7abddc0725b4937dce712e0e32b7860e58cdabe0f21edee144c76",
+    "receiptSha256": "3071c4d27ec7a97ae1ed2ba48a811c1d0f1ed7e3f92c56f644acd7d89d58f480",
+    "paperMdSha256": "819df390de8fe16e9148f9c3484f74792ad43622ca41c491dd227a6f4e13e8fe",
+    "documentSha": "5e5ddec0a7b5409344d35d081a4b2189ca94fd7b9aa2f1e55d4f525c9e80af4e",
+    "documentShaObserved": "5e5ddec0a7b5409344d35d081a4b2189ca94fd7b9aa2f1e55d4f525c9e80af4e",
+    "materialsSha256": "be2cb8771bd8dcad9d93248c3c7e258ce53cb30f9831cf00a4411947d37d201f",
+    "promptsSha256": "d53f775169b5df3168c1adb5c37aaa026e53a481ca682d2387b5d64e0b34db73",
+    "oldAnswersSha256": "dc2c5323624ac35885672a98cc70b91a646167e7c5090648b2d88b8078120a12",
+    "assetsSha256": "6848832908fa89647adc99572f7da5f5cfc5fe822acf0a0ce53a3d144febcf7c"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2020/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2020/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 2,
+      "sha256": "21f6002177abd8ce245896bc98b8b3c34e680a55e477a88d690796b06443bc99",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=2"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 2,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "5e5ddec0a7b5409344d35d081a4b2189ca94fd7b9aa2f1e55d4f525c9e80af4e",
+    "observed": "5e5ddec0a7b5409344d35d081a4b2189ca94fd7b9aa2f1e55d4f525c9e80af4e",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "102329",
+   "area": "浙江",
+   "year": 2021,
+   "variant": "a",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 9,
+   "materialTabsDeclared": 9,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 2
+   },
+   "hashes": {
+    "paperJsonSha256": "4f479d717fe6e8f80d4db4f873d6c73d0c28e19ed0bc693eae0f0ee8f36bc105",
+    "receiptSha256": "84599937ce6dfd4f867192f9c4c920f273870651f8fede1158e451d9dec77748",
+    "paperMdSha256": "e160f48d73bbbe6b06c44fb957fe008802b9bd416ab1ac0cef7f680a86a9d450",
+    "documentSha": "2e9eafb5a595757f6bdf6ed0cc1347191834f77b97144e22ac5eb86b85c15029",
+    "documentShaObserved": "2e9eafb5a595757f6bdf6ed0cc1347191834f77b97144e22ac5eb86b85c15029",
+    "materialsSha256": "bd92b3960984d068041d0d7b46b30f33205eb8ed9e121ee6341a7b2089f6acd3",
+    "promptsSha256": "be0c44eed2fda8cd4fdac74f69b9c61e8d8c62796d0fb37b83e214b514a187cb",
+    "oldAnswersSha256": "5d1c8bd92d13f9766e406072d3eb9bb87315d561a6c43b4c0a16969680ac738e",
+    "assetsSha256": "9a802ec9ea5d52f8080fbdc91f1270d4da6d64e87eb844636644130454f3fcf5"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2021/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2021/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 3,
+      "sha256": "77143810342d2cc5decbb1ecdee65dbb39caf53962a5d8a5f6c288f2a4708958",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "2e9eafb5a595757f6bdf6ed0cc1347191834f77b97144e22ac5eb86b85c15029",
+    "observed": "2e9eafb5a595757f6bdf6ed0cc1347191834f77b97144e22ac5eb86b85c15029",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "113619",
+   "area": "浙江",
+   "year": 2021,
+   "variant": "b",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 9,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "591cd21777da396412ed66fe8e249aca747de08b9e2628aee38b10e96a210a1d",
+    "receiptSha256": "34209af072e14260bcf056a2f5f441654918b164eaa06620c81b4898fa9e8ecb",
+    "paperMdSha256": "9bb855b618be8eab9a306cbb149c2822c70e10fb1e991c2fc7de01f76720c889",
+    "documentSha": "8beaeaa03dae97dc1c221abf046f271c9a3a51ce08729db18f99cc5f8f48edc6",
+    "documentShaObserved": "8beaeaa03dae97dc1c221abf046f271c9a3a51ce08729db18f99cc5f8f48edc6",
+    "materialsSha256": "24b985ec5cf7dc7fabb9123bf7ff47186d997b95de974e54e7438a68c2374454",
+    "promptsSha256": "50a96914767f71ef0317e94396185c14f6e27d45d29027bd98d71677fc808991",
+    "oldAnswersSha256": "7c2516f0aaf1d135f298e4570d063ed2a51e9bf8ebfb4bb091340b4118183858",
+    "assetsSha256": "8f7da3cf439ca8de89302c88944ba712b226c6cda5c4675afefbcd4848ac2296"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2021/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2021/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 3,
+      "sha256": "7db215826e2f75e7e26395162603e188cdff2ecee8c3f75eb60f1f62712a968c",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7,8,9"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "8beaeaa03dae97dc1c221abf046f271c9a3a51ce08729db18f99cc5f8f48edc6",
+    "observed": "8beaeaa03dae97dc1c221abf046f271c9a3a51ce08729db18f99cc5f8f48edc6",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "113622",
+   "area": "浙江",
+   "year": 2021,
+   "variant": "c",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 9,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "b54bc06212ac0868c3c29e7089a6936c2d5eba2edf0650f16348db86be1a8f18",
+    "receiptSha256": "d60e309ecfe2c4def8623e51f1d99ffc948773e473a2ae34a5a164bfa5b33ebd",
+    "paperMdSha256": "dd4a98985bd5fcb6fdcfbd26bf84d64789f3658c1c6d5ce187a27ee537f4699e",
+    "documentSha": "0b7fdc1c10f5953122b03175ef8171584f023932633e1a74ed259e4b5c18e767",
+    "documentShaObserved": "0b7fdc1c10f5953122b03175ef8171584f023932633e1a74ed259e4b5c18e767",
+    "materialsSha256": "24b985ec5cf7dc7fabb9123bf7ff47186d997b95de974e54e7438a68c2374454",
+    "promptsSha256": "41abb8b657f6ca2e3e3ebc2ad75843f2983213078898b860358929133cb03924",
+    "oldAnswersSha256": "610ec5ab27649d627722d50f20cd6d55c3d828cb0045e2d991cfdd55258148a3",
+    "assetsSha256": "2bc028117578d2e46ddaa98a5d67c009d308986ead04f7fc574a46137e30874a"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2021/申论-C类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2021/申论-C类.md",
+      "paperType": "C类",
+      "declaredQuestions": 3,
+      "sha256": "2778c1888a0233316a57a80385b0b0f994a7867be05785e6ac5312b3313d5088",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7,8,9"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "0b7fdc1c10f5953122b03175ef8171584f023932633e1a74ed259e4b5c18e767",
+    "observed": "0b7fdc1c10f5953122b03175ef8171584f023932633e1a74ed259e4b5c18e767",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "155",
+   "area": "浙江",
+   "year": 2012,
+   "variant": "unknown-list-row-has-no-abc-marker",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 11,
+   "materialTabsDeclared": 11,
+   "analysis": {
+    "textual": 3,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 1,
+    "stored": 1,
+    "verified": 1,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 1
+   },
+   "hashes": {
+    "paperJsonSha256": "8c61e8bfc4fc7aa19c9609375b19023fd594ea65ee35b98b3be7b33620957164",
+    "receiptSha256": "41fa42952a5b2e52d3a315c0c745b8e450a6ff8d5177a658752954dcd47a20a1",
+    "paperMdSha256": "08ff11cc05b6928daa21425cb66034bfde38a64fef29d9c46f294e9717b8f923",
+    "documentSha": "e5342e2f93eaff7f4d20b06d3a3b30a771156fe9e893ea51cdede6be314ed31f",
+    "documentShaObserved": "e5342e2f93eaff7f4d20b06d3a3b30a771156fe9e893ea51cdede6be314ed31f",
+    "materialsSha256": "2b99c8d6bdd7bd6c9ab222aaeb2cfc7bb344e3863d8dfbff786a13c68da80566",
+    "promptsSha256": "e75d1f1035c43d8f975e76f6c351abbd57a58b0f881240304961aab39ab950f0",
+    "oldAnswersSha256": "1271a14a914aa3b554a58117fa0e7ce8de01d40c16f2795d8b989810d723b5d4",
+    "assetsSha256": "8663ca13bea04d385f2ecef2bb013ca7596baa27d2421904e5297a42586280c7"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 0,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "e5342e2f93eaff7f4d20b06d3a3b30a771156fe9e893ea51cdede6be314ed31f",
+    "observed": "e5342e2f93eaff7f4d20b06d3a3b30a771156fe9e893ea51cdede6be314ed31f",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "159",
+   "area": "浙江",
+   "year": 2009,
+   "variant": "unknown-list-row-has-no-abc-marker",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 20,
+   "materialTabsDeclared": 20,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 3
+   },
+   "assets": {
+    "expectedRefs": 0,
+    "stored": 0,
+    "verified": 0,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "6183a607bd7fa4cdd7879a83b1bcc86356d551e34dcbc1f04379d80abdce10e8",
+    "receiptSha256": "6ac38cfb3b176b5c688f0a83719026445185e00bc3aa0a20cf9d70c9bd68d119",
+    "paperMdSha256": "3c16c45f287433a760eaaa9cfdb24e481488da70bb018e40500eea9fcaa32371",
+    "documentSha": "e4d14c70efb7f516b6573d418a42e9bb054c52f214c25f7f700c4c72b169c3f9",
+    "documentShaObserved": "e4d14c70efb7f516b6573d418a42e9bb054c52f214c25f7f700c4c72b169c3f9",
+    "materialsSha256": "30bec7c218d1c7fa39813d68052bd05351bcbb061e64635bcd4621bf91855d23",
+    "promptsSha256": "1b73192b3e64e4c216ddba6fefd0c3ff503f11a5acf2044595ee4e7925ea39b4",
+    "oldAnswersSha256": "04ba2b290a1306c1d9412e77d9484345c5b5b14235b13daa71c4fe00909e197b",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "word-limits-unknown",
+     "severity": "warning",
+     "detail": "count=1"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 1,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 0,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "e4d14c70efb7f516b6573d418a42e9bb054c52f214c25f7f700c4c72b169c3f9",
+    "observed": "e4d14c70efb7f516b6573d418a42e9bb054c52f214c25f7f700c4c72b169c3f9",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "179084",
+   "area": "国考",
+   "year": 2022,
+   "variant": null,
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": null,
+   "cloudStorageBlocked": true,
+   "questionCount": 1,
+   "answersPresent": 0,
+   "materialPanes": 3,
+   "materialTabsDeclared": 1,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 1
+   },
+   "assets": {
+    "expectedRefs": 0,
+    "stored": 0,
+    "verified": 0,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "74a7f520dc23047634cc7c61df3c4dd7bb3fca8f13a496fe0147b1d1d73c5764",
+    "receiptSha256": "56e8cc5e29cc55d41f12413bf311580a220cd6d65e59d34e538cf7de5753fe55",
+    "paperMdSha256": "7435d39c1dca333a95bb180435d2fec1d313e0c58588a500d01489de43328466",
+    "documentSha": "ac60c9102aacb3fc221f666382d3f8badb29d1a1aa79d94c95c18daf3ffe8246",
+    "documentShaObserved": "ac60c9102aacb3fc221f666382d3f8badb29d1a1aa79d94c95c18daf3ffe8246",
+    "materialsSha256": "c5657512c4a7763f186dd72ce7a50ea286dcc0ae4609d8ab764c5996d6c8ff30",
+    "promptsSha256": "d7c6e0753cefd9a95a7899a7c0fe921018c07bca814434afba2891587227ddea",
+    "oldAnswersSha256": "8ab4edefdc6806663534da8a9d0dac409aa3783bedb1cbaeb8671e6412f745fe",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2022/申论-地市级.md",
+      "paperType": "地市级",
+      "declaredQuestions": 5,
+      "sha256": "b30e54a77ebee7c496342e40924a521bd6cf08a2c3822aa852878187c4b00f0b",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2022/申论-副省级.md",
+      "paperType": "副省级",
+      "declaredQuestions": 5,
+      "sha256": "409efcdab1f3d63c370fe82a9a6128277d9b6a2303a1453d033b981db1a5655c",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2022/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "0d7526cf622717f0bf15730c87d525b13eebe44fd7d610d7e53501bae38e4173",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "question-count-mismatch",
+     "severity": "fatal",
+     "detail": "expected=5 actual=1"
+    },
+    {
+     "code": "question-number-set-mismatch",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5"
+    },
+    {
+     "code": "answers-incomplete",
+     "severity": "fatal",
+     "detail": "present=0/1"
+    },
+    {
+     "code": "material-tab-count-mismatch",
+     "severity": "warning",
+     "detail": "extra=2,3"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "word-limits-unknown",
+     "severity": "warning",
+     "detail": "count=1"
+    },
+    {
+     "code": "rights-status-missing",
+     "severity": "warning",
+     "detail": "source=paper"
+    },
+    {
+     "code": "rights-status-missing",
+     "severity": "warning",
+     "detail": "source=receipt"
+    },
+    {
+     "code": "rights-status-missing",
+     "severity": "warning",
+     "detail": "source=index"
+    },
+    {
+     "code": "rights-status-unexpected",
+     "severity": "warning",
+     "detail": "paper=null"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 1,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 0,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "ac60c9102aacb3fc221f666382d3f8badb29d1a1aa79d94c95c18daf3ffe8246",
+    "observed": "ac60c9102aacb3fc221f666382d3f8badb29d1a1aa79d94c95c18daf3ffe8246",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "199745",
+   "area": "国考",
+   "year": 2023,
+   "variant": "xingzheng",
+   "cohort": "national-s6-8",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 0,
+    "verified": 0,
+    "missing": 5,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "6f12f88d5199706024b01a4cc42af2dcda799fac807e0d4047fa75fcb285828f",
+    "receiptSha256": "ae79710028eabd3a1628493a3cbae1775dbaf3e6c5a9a6112992e6ec65acc2aa",
+    "paperMdSha256": "327259d21727ae465b0029d310fa1576658805a2f0be5087213ad3f988482765",
+    "documentSha": "de5046ddc3eed0af3cca10555267b31912a240a1e29bd5be085127e4d37767a0",
+    "documentShaObserved": "de5046ddc3eed0af3cca10555267b31912a240a1e29bd5be085127e4d37767a0",
+    "materialsSha256": "a101851eb4095893b4303b151a61fb343c05b109fee65d98e3fc55ceed2a6a84",
+    "promptsSha256": "e8af4ee55f3873bef0f7d92a64f853631479d66ec82ce191678bc32d7f43f224",
+    "oldAnswersSha256": "f450e4f0502bc94ce9ea2232c6e38b90fbabe239f9e25a1a9e834b17c8fed636",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "国考/2023/申论-行政执法.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2023/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "38e14044ac44dc59f2e2dd2566fb9de3a27eda302024b404fe253a56338eabd9",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    },
+    {
+     "code": "images-missing",
+     "severity": "fatal",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "de5046ddc3eed0af3cca10555267b31912a240a1e29bd5be085127e4d37767a0",
+    "observed": "de5046ddc3eed0af3cca10555267b31912a240a1e29bd5be085127e4d37767a0",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "missing-bytes-no-local-source",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "203837",
+   "area": "国考",
+   "year": 2023,
+   "variant": "unknown",
+   "cohort": "national-s6-8",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 0,
+    "verified": 0,
+    "missing": 5,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "7f8c5908cf48cb3de6c118e20f25711826d7e99ae9325acec71d5b9f1a08f95e",
+    "receiptSha256": "754b662a633dccec6cb0bd95bfae15aa7f9412940eac2a2a1152bbea6854a7df",
+    "paperMdSha256": "73812fea8c5386fbf52d466660bcc98665e781485042a233ca92ee793afd1952",
+    "documentSha": "3826922cbfad2c4f0a0f22027ae4874c9b83c4505ee3bbb3fd347fe4d2874a3d",
+    "documentShaObserved": "3826922cbfad2c4f0a0f22027ae4874c9b83c4505ee3bbb3fd347fe4d2874a3d",
+    "materialsSha256": "79655ab972c584c9452fe5c002dfee73947bb527079038bfd7d5259d7e8ef35b",
+    "promptsSha256": "c3939062202754195e1e59ad8e6ec4e640d267a8a6ca359189f7156ab2de9ae1",
+    "oldAnswersSha256": "dd4edd9d41ff5ad4f08df4e711aa97c4aaa980021ff95a0f70ee5ced928adf1c",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2023/申论-地市级.md",
+      "paperType": "地市级",
+      "declaredQuestions": 5,
+      "sha256": "7e35882eef1bcf9ce60a0ac64a905e14bcd6830880c9738695ed4a1e5bc59876",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2023/申论-副省级.md",
+      "paperType": "副省级",
+      "declaredQuestions": 5,
+      "sha256": "1a3a2a2929dbc1051578ad576e08dd05ddb6e97d649ce32c875776dd10b41dac",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2023/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "38e14044ac44dc59f2e2dd2566fb9de3a27eda302024b404fe253a56338eabd9",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    },
+    {
+     "code": "images-missing",
+     "severity": "fatal",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "3826922cbfad2c4f0a0f22027ae4874c9b83c4505ee3bbb3fd347fe4d2874a3d",
+    "observed": "3826922cbfad2c4f0a0f22027ae4874c9b83c4505ee3bbb3fd347fe4d2874a3d",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "missing-bytes-no-local-source",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "204222",
+   "area": "国考",
+   "year": 2023,
+   "variant": "unknown",
+   "cohort": "national-s6-8",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 0,
+    "verified": 0,
+    "missing": 5,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "eb2632aa9d986bd112bc8d5479be47252add5a7b77ce45656db732e0a4b32f7c",
+    "receiptSha256": "34d5979a071c820c35361775814c25f95f7fb905e7f3e5e94a71b9d697dba802",
+    "paperMdSha256": "20697ec898378bfc50839c26282140801fb7c8f4eebe8e3e7abe19d4636e5277",
+    "documentSha": "a5f98ff846effc06ac28aac82e11c84a8f134afb5beb5f5e5a5e3a7ec9ca7868",
+    "documentShaObserved": "a5f98ff846effc06ac28aac82e11c84a8f134afb5beb5f5e5a5e3a7ec9ca7868",
+    "materialsSha256": "3f46ea95dc306d23102096a7f548e2337fce141a2729f0f32dca0ce192a8e174",
+    "promptsSha256": "6ddb058cb984bef203a3a7390e9ec4290dcba51a145e4275be7ccc757ab8f30f",
+    "oldAnswersSha256": "25ca70705e68b94f00b9796d6e76d7f89fd49dc79d13f3d35f4b894b9c2dd08f",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2023/申论-地市级.md",
+      "paperType": "地市级",
+      "declaredQuestions": 5,
+      "sha256": "7e35882eef1bcf9ce60a0ac64a905e14bcd6830880c9738695ed4a1e5bc59876",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2023/申论-副省级.md",
+      "paperType": "副省级",
+      "declaredQuestions": 5,
+      "sha256": "1a3a2a2929dbc1051578ad576e08dd05ddb6e97d649ce32c875776dd10b41dac",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2023/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "38e14044ac44dc59f2e2dd2566fb9de3a27eda302024b404fe253a56338eabd9",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    },
+    {
+     "code": "images-missing",
+     "severity": "fatal",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "a5f98ff846effc06ac28aac82e11c84a8f134afb5beb5f5e5a5e3a7ec9ca7868",
+    "observed": "a5f98ff846effc06ac28aac82e11c84a8f134afb5beb5f5e5a5e3a7ec9ca7868",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "missing-bytes-no-local-source",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "208888",
+   "area": "浙江",
+   "year": 2023,
+   "variant": "c",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 4,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "858fb934ad02a6480a04cfede921fe56d01076de1b5252bf7a69332c6e75de21",
+    "receiptSha256": "e9e4117c14714d543682530d9b2a214c3b4d079dfb254a64d11b025e56c86f88",
+    "paperMdSha256": "414e65967eb728713a825491397a624c3ee25fcf2d0f3affc91c5a2bd9d63c6b",
+    "documentSha": "0130c42a3f24bccec49a9224cc84cd7e9ec91fc17c1c5a5ae3ec993d8a75d611",
+    "documentShaObserved": "0130c42a3f24bccec49a9224cc84cd7e9ec91fc17c1c5a5ae3ec993d8a75d611",
+    "materialsSha256": "2209abbec8acbe784583d8914519038bd1b046caf99f025d52455bb53eb34b93",
+    "promptsSha256": "f6a060e2183eb8b2bc8d9829ada02c3c1d5563642fc741902285eff1c8f9c591",
+    "oldAnswersSha256": "ab038e09cf31871536c02d01fe814e3f14498eb4a494dc4443cf1f07f73a9f6e",
+    "assetsSha256": "198f4f45a88c889984a7e4f9c779920a972b8cf5e2a6db8cddf024c1a8e42cc7"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2023/申论-C类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2023/申论-C类.md",
+      "paperType": "C类",
+      "declaredQuestions": 3,
+      "sha256": "4f722d2c88c0b89e9dca1edeeff16b209b695409ee70404fd8e83191487f261c",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=1"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=2"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 2,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "0130c42a3f24bccec49a9224cc84cd7e9ec91fc17c1c5a5ae3ec993d8a75d611",
+    "observed": "0130c42a3f24bccec49a9224cc84cd7e9ec91fc17c1c5a5ae3ec993d8a75d611",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "209053",
+   "area": "浙江",
+   "year": 2023,
+   "variant": "b",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 6,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "716b800fb1569b948f97916aa58f5a192a5624619dc4f9f26ab94623e9eb88e7",
+    "receiptSha256": "14fb0b14bbae59ae2b59cb5cd709d5f24f606c815432b388a42736cc34270db4",
+    "paperMdSha256": "ee9006fb1112bb369c14472efca2d13f363d07969f18996ba3cdc59f4f7f3deb",
+    "documentSha": "fc9933b4aba51ffeaa95d876c62840e8a3dd7950d9f6007aea4b8a3fd5057106",
+    "documentShaObserved": "fc9933b4aba51ffeaa95d876c62840e8a3dd7950d9f6007aea4b8a3fd5057106",
+    "materialsSha256": "50aa44583341a9499545f214a212dcf3c62a0876c9996e8003f585dbdc798e95",
+    "promptsSha256": "b43322becd0296e85e8244a7343878287a0c7c1f3079c6ee6637a17c2a8187d7",
+    "oldAnswersSha256": "c2284e1ac50010c8d659718175c9cbb25ce72013e77aa1a4b13bcf87499f346f",
+    "assetsSha256": "cdb49427d4cb940c5f400489833d9ec6b9a48d00bf54c5ea6913fe16e0cb628a"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2023/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2023/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 3,
+      "sha256": "3fb47c2b58940dc6951f40c1f5ab6c3eb935ba8b76cad84ed783ed8ad5a77587",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "fc9933b4aba51ffeaa95d876c62840e8a3dd7950d9f6007aea4b8a3fd5057106",
+    "observed": "fc9933b4aba51ffeaa95d876c62840e8a3dd7950d9f6007aea4b8a3fd5057106",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "209063",
+   "area": "浙江",
+   "year": 2023,
+   "variant": "a",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "9936c844faacafe4d7d48dd85fbb1d81966283d05fbf3d7f422f78949c01b4fd",
+    "receiptSha256": "db13a50c9ca03cac2a5d62ac55608b87646a7b1f88763558d637c90036cc8dbe",
+    "paperMdSha256": "fb1c2832252a9b8417db93659db08a67157ab86d6f88df6a7f6ac4a8a6498dc5",
+    "documentSha": "d941cd59b0d5b292438ebbf11bd2f42d6b847f5e265bae4162283054c8dd9a26",
+    "documentShaObserved": "d941cd59b0d5b292438ebbf11bd2f42d6b847f5e265bae4162283054c8dd9a26",
+    "materialsSha256": "3e9b76c3a885e1015fc25e012e3903ed8c3e4971ab740d6f48922224ffa4f341",
+    "promptsSha256": "6413273d4bdfd02ec2c04968c81611bbc1764dcf6279779e657c6a327cff95ae",
+    "oldAnswersSha256": "0380fe4cc3de3eb7438b76f7c555962d73b1f40b4e6b561a3a90c3ec36059240",
+    "assetsSha256": "4e8d17463e70bd5b2f942ecf93b6d0d72e627459b74498a2e4c55f17bf9dd898"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2023/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2023/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 3,
+      "sha256": "801f50cfb5569c084e6b8013ebcce45f029965dfb2623a3697f8c49d9065d605",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "d941cd59b0d5b292438ebbf11bd2f42d6b847f5e265bae4162283054c8dd9a26",
+    "observed": "d941cd59b0d5b292438ebbf11bd2f42d6b847f5e265bae4162283054c8dd9a26",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "222978",
+   "area": "国考",
+   "year": 2024,
+   "variant": "xingzheng",
+   "cohort": "national-s6-8",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 0,
+    "verified": 0,
+    "missing": 5,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "1e055b5c7c38de257590e31847babc3f5aba6a1c484bb2cb99ee8d673920f5fb",
+    "receiptSha256": "353dfe324a2dc965641d52e41c8421da59d59ff38a1e433b1ce3319d5305537f",
+    "paperMdSha256": "9c7cf40c581bdad3c2d1e1a96329fcbc3346f15823a7c4fb8bc1bfe24f030506",
+    "documentSha": "752fb533694547040d82bc579b343732910d0e0d9a3c1d8884f676f18e43eace",
+    "documentShaObserved": "752fb533694547040d82bc579b343732910d0e0d9a3c1d8884f676f18e43eace",
+    "materialsSha256": "9d791c14b7e988400b142b59ec305ca7b8fe9c0eef006516d0ff8081ab9f9d66",
+    "promptsSha256": "668bc8c7a4998fac72a487fb4b087e8ca0e5e14f9115bc87a2fad75695b284dd",
+    "oldAnswersSha256": "f4598e88e9abc13adbc22d8d4c76c63191f857b411d85c66a673292dd39a7512",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "国考/2024/申论-行政执法.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2024/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "4d41d9b16e0c247593cc85140830efa11417c3904b48f4e304af2a1d23ada80a",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    },
+    {
+     "code": "images-missing",
+     "severity": "fatal",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "752fb533694547040d82bc579b343732910d0e0d9a3c1d8884f676f18e43eace",
+    "observed": "752fb533694547040d82bc579b343732910d0e0d9a3c1d8884f676f18e43eace",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "missing-bytes-no-local-source",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "25",
+   "area": "浙江",
+   "year": 2010,
+   "variant": "unknown-list-row-has-no-abc-marker",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 4,
+   "answersPresent": 4,
+   "materialPanes": 6,
+   "materialTabsDeclared": 6,
+   "analysis": {
+    "textual": 4,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 0,
+    "stored": 0,
+    "verified": 0,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "a230380076745971c7e9be52a9cba23320054eb1e1146987e18acaa56ef1f354",
+    "receiptSha256": "3fb8533017f6d55dcfb95ff262b666386b9735a7de9513dbb99a4ce939bde75f",
+    "paperMdSha256": "dbf9699c3ddb77128aa3ca6980ede2161b5e0dc8decb1e986a9128e4f291f779",
+    "documentSha": "d677e08e775106f78f0221c5a0ba925cd190f3c9d380c53cbb34ea1c4776473f",
+    "documentShaObserved": "d677e08e775106f78f0221c5a0ba925cd190f3c9d380c53cbb34ea1c4776473f",
+    "materialsSha256": "73f5191bc7242576634791998c197994258e15a844f4d57bda77f7e416c95f6f",
+    "promptsSha256": "611335c2775effb3fd717b07b6d3389793b94cc8f22c8e62f8f5c8dd76afa931",
+    "oldAnswersSha256": "c6197a6ee887386120d0223c5941faedece5089fe7cda8bbd40a8c4e98763029",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=1"
+    },
+    {
+     "code": "word-limits-unknown",
+     "severity": "warning",
+     "detail": "count=2"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 2,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 1,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "d677e08e775106f78f0221c5a0ba925cd190f3c9d380c53cbb34ea1c4776473f",
+    "observed": "d677e08e775106f78f0221c5a0ba925cd190f3c9d380c53cbb34ea1c4776473f",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "253",
+   "area": "浙江",
+   "year": 2013,
+   "variant": "a",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 8,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 3
+   },
+   "assets": {
+    "expectedRefs": 0,
+    "stored": 0,
+    "verified": 0,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "846e5ce10bdfc8aab096c7b163f69ecc5a27680c99d3a5e21abe4f72dbd02706",
+    "receiptSha256": "52f2f6e8c1ed84b50d00fe47e3e23f7da25e4ff26ef07c94cf8ac457868bfead",
+    "paperMdSha256": "799944372926e979337212504a9d529c6ef112b3c14707d2d2b98e98201f8095",
+    "documentSha": "b24fe45122cfe1a3abf1e28fb28207643a730d78feb7d309caa3e0dbb9503a40",
+    "documentShaObserved": "b24fe45122cfe1a3abf1e28fb28207643a730d78feb7d309caa3e0dbb9503a40",
+    "materialsSha256": "df2f6d8c026480c150a1ed2012f9419295e4417e9b5cbd7ff10624ce21497ed7",
+    "promptsSha256": "882c2d3801a1cdd77b4b0c87c72ec097af4765555700adb3a5d21fcb3219b83f",
+    "oldAnswersSha256": "81819f824b9726472892a119dbcffcb521f718e20ced15e34003958a8fb89630",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=1"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 1,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "b24fe45122cfe1a3abf1e28fb28207643a730d78feb7d309caa3e0dbb9503a40",
+    "observed": "b24fe45122cfe1a3abf1e28fb28207643a730d78feb7d309caa3e0dbb9503a40",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "255",
+   "area": "浙江",
+   "year": 2013,
+   "variant": "b",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 8,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 3
+   },
+   "assets": {
+    "expectedRefs": 0,
+    "stored": 0,
+    "verified": 0,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "17ebf1788951c8770eaae439ec637ed982decdb5155da0afbf50de4c70a226b3",
+    "receiptSha256": "aa2ed0e97ccf636f13ac5bf93f9a74a7f45066528b0674860169c5ac14af44e8",
+    "paperMdSha256": "2673540485d283bf3f17975bbc45188cd0358e3fec2e0969237500c5ca3c6537",
+    "documentSha": "67be8a561177403876b5c7714663de8ef215f9e6dde56c78b3aa75eb021e1ebd",
+    "documentShaObserved": "67be8a561177403876b5c7714663de8ef215f9e6dde56c78b3aa75eb021e1ebd",
+    "materialsSha256": "fafd638f5f26572e9e118c6da11616d0d8f424a56bd460d3977873f6587424ee",
+    "promptsSha256": "4b3604263a4a7d263c22d1e3ddaaf7149f65566a9f8e771d64b1a7fbabd7ac34",
+    "oldAnswersSha256": "de9d8ad8d1225f6f8a7fdb9b30c207ccb60eb56d4150aeae890b06b608d87e57",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 0,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "67be8a561177403876b5c7714663de8ef215f9e6dde56c78b3aa75eb021e1ebd",
+    "observed": "67be8a561177403876b5c7714663de8ef215f9e6dde56c78b3aa75eb021e1ebd",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "4508683",
+   "area": "浙江",
+   "year": 2024,
+   "variant": "a",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "00a8169c8628f5f1a8ed75ece3a70dc4821be87c7cd808d8de9dfcb7866f571a",
+    "receiptSha256": "9121b67ce9a8f0cb5d823fc94f7c5210c4d8e751fb17e4a2a19bef66c24c4514",
+    "paperMdSha256": "c52386322bdd98db632ab12b8794d875039a964a1f07b8167e27ef09a35724f1",
+    "documentSha": "b65550e1f8caa61c66877a467c0cbb7b550a3d04fcf83e2a6f6fe7cd9595ecfd",
+    "documentShaObserved": "b65550e1f8caa61c66877a467c0cbb7b550a3d04fcf83e2a6f6fe7cd9595ecfd",
+    "materialsSha256": "52487d133bff145a191000e7fdf8a3b56e490cdab1804a56e4076dbb16a1ae16",
+    "promptsSha256": "f1918d6d6f1d4e9ec4dc84ae249dc986e1923cc8ae6b38ba6f40e5e1b369bf77",
+    "oldAnswersSha256": "c3102393d09cc1791307ebf84496a925c38ccd223dcc8d7f9118bc0ad53babb6",
+    "assetsSha256": "b86d9bfcd64bcffa439116c34b6bc9d36364ca776457e467a33f5270be5dd6d3"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2024/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2024/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 3,
+      "sha256": "79e99c966a93f4489e7e69c50b2f8ac107e7f3de54a80b612447b4767379cd96",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=1"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "b65550e1f8caa61c66877a467c0cbb7b550a3d04fcf83e2a6f6fe7cd9595ecfd",
+    "observed": "b65550e1f8caa61c66877a467c0cbb7b550a3d04fcf83e2a6f6fe7cd9595ecfd",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "4508685",
+   "area": "浙江",
+   "year": 2024,
+   "variant": "b",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "3dc8bf287dae2ab4c8e6f04fb9d85cbb923c03b8693de19055d0978a27678e1b",
+    "receiptSha256": "db45fafe604961619b1d5bc23f4c3143a896fca977c85477053da300c341abcf",
+    "paperMdSha256": "99afa9c20c6e72e41bba5c4d56754e4d3fc46367e9b9ad0a0a595b55ec3fd064",
+    "documentSha": "97255865c29edebc3823815e27e72f2b25cf9a3914496c267b211836f6aa881e",
+    "documentShaObserved": "97255865c29edebc3823815e27e72f2b25cf9a3914496c267b211836f6aa881e",
+    "materialsSha256": "54f90fa3f17c70aa86f6671f6d49d14e2215f84aab23552b16eee9989b96bf38",
+    "promptsSha256": "fbd8b9aed02622103d12fe1d5a0d17cd9ff80705fa61f3cd0953535092128870",
+    "oldAnswersSha256": "aa42c4489ec937fb61eb4a367ea376b73e236c0e2b9dd64d48f3aaa3a958c31f",
+    "assetsSha256": "8d0d737c232e0569a44449bf0bdd3a31520b7301e965e23344a4a89843aa59d9"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2024/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2024/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 3,
+      "sha256": "ec64187aa70d1a49ffd39dd167051384e0df1fe20ad72a5a7f6356fd05b13379",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "97255865c29edebc3823815e27e72f2b25cf9a3914496c267b211836f6aa881e",
+    "observed": "97255865c29edebc3823815e27e72f2b25cf9a3914496c267b211836f6aa881e",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "4508686",
+   "area": "浙江",
+   "year": 2024,
+   "variant": "c",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 6,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "3a0ae002ce682fe29fc5cb5920cbcd6bc9700fc2e353fa02ab2b5de85ba837e1",
+    "receiptSha256": "b5977cec140305ebd84fad979046fd32b402b33231cf9ca19fb5babda9bc1e20",
+    "paperMdSha256": "34f15f0c5d5c32461a25401dadfcd7db04ffa3a34ceca2f1ee3eb21f88fad31f",
+    "documentSha": "8bff3b784bdab342942c392614074c8638de4fbff249d7c903dfd9f95c157529",
+    "documentShaObserved": "8bff3b784bdab342942c392614074c8638de4fbff249d7c903dfd9f95c157529",
+    "materialsSha256": "36e90ed01a21c9b04db7bcd6cf985b716157ab7db98d0faebf894b6d9a2d3549",
+    "promptsSha256": "0cc33a78d5f95fa947e69dae838d8dfd0eb30dd399d2729c9a34f763e8722161",
+    "oldAnswersSha256": "e072d6c133b57d462854b6bc654f1131693a5d9000561d753610fa1fa4005561",
+    "assetsSha256": "67d3fd40ab6548be7f9a0b99e12c6c77360336b4a15c5b7354ab430a52345a52"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2024/申论-C类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2024/申论-C类.md",
+      "paperType": "C类",
+      "declaredQuestions": 3,
+      "sha256": "52882435d5d9c94b9999f5082898647aa8581e2066a489537434b0d38ea51fdb",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "8bff3b784bdab342942c392614074c8638de4fbff249d7c903dfd9f95c157529",
+    "observed": "8bff3b784bdab342942c392614074c8638de4fbff249d7c903dfd9f95c157529",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "4546050",
+   "area": "北京",
+   "year": 2025,
+   "variant": "unknown",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 4,
+   "answersPresent": 4,
+   "materialPanes": 8,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 4,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 6,
+    "stored": 6,
+    "verified": 6,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 5
+   },
+   "hashes": {
+    "paperJsonSha256": "377047b4a68a50f067f18798576a5f3cdbdf61656fd3fd399f78d773e59d238b",
+    "receiptSha256": "9a796937cc7112216e4bc8062a637be7e0f7098ac9ff5010e3f427366c4846a6",
+    "paperMdSha256": "ded8f61e0a856ddeb2d22396bef45409c5a1ee516a00877f85de72e8a0ab7289",
+    "documentSha": "e95a31a1c160fc688eb99736820374393485981e09435a4ff091da4bd48d4e34",
+    "documentShaObserved": "e95a31a1c160fc688eb99736820374393485981e09435a4ff091da4bd48d4e34",
+    "materialsSha256": "73d654e1495f435513d689ed622d8e64ff9530e5da67bb490ab36d62995965c8",
+    "promptsSha256": "0154a0597f40fca4c9c725bd24ffa102e848a03fc4b66c026660ea189f98c4ee",
+    "oldAnswersSha256": "888a2801eba1ab5d37c7ede1f6ef4d2af240f1f9a898961e4327c031bc5a73b7",
+    "assetsSha256": "1be61ce8aa38959dbaf0775c692daf99b876191fb635428ac4756726409ef3e9"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/北京/2025/申论-统考.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/北京/2025/申论-统考.md",
+      "paperType": "统考",
+      "declaredQuestions": 4,
+      "sha256": "2d5a50a7fb710edbb51bf7004054086135376a520380df81018ecde09deaed9e",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=4"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 4,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "e95a31a1c160fc688eb99736820374393485981e09435a4ff091da4bd48d4e34",
+    "observed": "e95a31a1c160fc688eb99736820374393485981e09435a4ff091da4bd48d4e34",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "4549046",
+   "area": "广东",
+   "year": 2025,
+   "variant": "unknown",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 8,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 1
+   },
+   "hashes": {
+    "paperJsonSha256": "92d470e6e3834332aae39657f751c35079f510b2dc5f310a44545cb2beb70fe7",
+    "receiptSha256": "37d3ffd590de130b89459933b0a77aa3c096fa2265048015a42f39b526de77b1",
+    "paperMdSha256": "061a94b07c15f99dfa6d72dfca7bcc59ef723548e44eef9916979d8b13bb3b05",
+    "documentSha": "0115a6550817f15e68fd3bb18d15631ad6f36da75aa7ca46374fbb780611f5c0",
+    "documentShaObserved": "0115a6550817f15e68fd3bb18d15631ad6f36da75aa7ca46374fbb780611f5c0",
+    "materialsSha256": "f4c92f04c3756486651d310399991db13f1515b10abe13ee9cd43e3941267076",
+    "promptsSha256": "01d31764c0687ad8516a1a0eeda350f5299b4752da04258a882ba2add0752299",
+    "oldAnswersSha256": "8fbc634165236057b29d4a172e21dfebcdfd47dc082f3778697f5c6b90c8db8e",
+    "assetsSha256": "2a95aea75f78e89f53b6009513d8b4e7de78696e772d52659fe1247285c9d475"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/广东/2025/申论-公安.md",
+      "paperType": "公安",
+      "declaredQuestions": 3,
+      "sha256": "2339e73659e0bbce8732e620ad6cf8fa5314430d1ebba607ec0c9ce5a1d9e9d0",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2025/申论-省市.md",
+      "paperType": "省市",
+      "declaredQuestions": 3,
+      "sha256": "8ba1de151bc01db65290873bc5cafa14d1fe762ce3357e85eb73b0c93fd8cddf",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2025/申论-县镇.md",
+      "paperType": "县镇",
+      "declaredQuestions": 3,
+      "sha256": "a3012ee0b546fb7a6d4bb31df037bb0e0f746ddf1a5b68f36f7aaca51cbd909a",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2025/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 3,
+      "sha256": "35e522c77dc949b6d42cae635a65eeea3096d65a1ea7c03da059c61c3fa6dc16",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "0115a6550817f15e68fd3bb18d15631ad6f36da75aa7ca46374fbb780611f5c0",
+    "observed": "0115a6550817f15e68fd3bb18d15631ad6f36da75aa7ca46374fbb780611f5c0",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "4961511",
+   "area": "国考",
+   "year": 2024,
+   "variant": "unknown",
+   "cohort": "national-s6-8",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 0,
+    "verified": 0,
+    "missing": 5,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "9e2bae616174a568d8f2ae8ae0724cbd9d991093fe1e1397081b5093f551bfdd",
+    "receiptSha256": "321861455bdb315772f30fc60790e427ba9cc4229f915c7d1cf2be001b757ddf",
+    "paperMdSha256": "e464ee8f56524db04d75a3e9836a8c59fac58cedd2146629bf05ddf182669613",
+    "documentSha": "9df5cee4787b3a4a3bde110b016fbb970cd7f57e9b1137ba41aad9d341335c3d",
+    "documentShaObserved": "9df5cee4787b3a4a3bde110b016fbb970cd7f57e9b1137ba41aad9d341335c3d",
+    "materialsSha256": "fd5de38c88ec15b44f1350a1ab19e486613cf748401929c1005cbd0bdc94cb6d",
+    "promptsSha256": "a828fe46a03dcec807c2fc1cdd23b52947755a0d5f5c7b3e1aa0cd54eed9c162",
+    "oldAnswersSha256": "710ce537464ad5e5c768eeda026681ed45f2e9ecaad0e86c31a9048e2024aa6f",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2024/申论-地市级.md",
+      "paperType": "地市级",
+      "declaredQuestions": 5,
+      "sha256": "ba3badcbd6a9091972e330109b1cbbed0741e621cd8cb0b7e9aadaca8ad7a23a",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2024/申论-副省级.md",
+      "paperType": "副省级",
+      "declaredQuestions": 5,
+      "sha256": "21842d4fa149d7ef3f7e03fd3b9506bc9834f2cfb9b93aafb17bd0c1c35c7482",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2024/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "4d41d9b16e0c247593cc85140830efa11417c3904b48f4e304af2a1d23ada80a",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    },
+    {
+     "code": "images-missing",
+     "severity": "fatal",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "9df5cee4787b3a4a3bde110b016fbb970cd7f57e9b1137ba41aad9d341335c3d",
+    "observed": "9df5cee4787b3a4a3bde110b016fbb970cd7f57e9b1137ba41aad9d341335c3d",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "missing-bytes-no-local-source",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "5254748",
+   "area": "浙江",
+   "year": 2026,
+   "variant": "a",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 9,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "557c385500a889dd4840a6ab6baec89e25a9f9256074bacc6714ee20428b7471",
+    "receiptSha256": "3b15f9784fd4c38aee3cce8617d692dd2de3d9ce8ed4cbda4ba742c06eec7d5d",
+    "paperMdSha256": "b9ff390897f9a4c74dd78920268b93db1a7137d39d638e58475f6221d4e06658",
+    "documentSha": "5e267e9c4a2bd1203e65a9e80459f76dc988a3f5dd9b0d9cec030f859011dba3",
+    "documentShaObserved": "5e267e9c4a2bd1203e65a9e80459f76dc988a3f5dd9b0d9cec030f859011dba3",
+    "materialsSha256": "ba8bab6b0d36df1b4c25abd2419a2fe8b5bd33d60fe5ecb0afdb329412bfb7d1",
+    "promptsSha256": "8ec3822345c2f1e6e9b11a402ccf1e6de2803ec95c1ab17112c2d5ba8ee15b28",
+    "oldAnswersSha256": "c76720158bf86343d01ab03b81eccf820f70d7a7d5b1cd6e6897053a99999574",
+    "assetsSha256": "8592186b2769b8ce1772b7f39b559a9a951779ed8f4f2d4a9b249f6d54d23b24"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2026/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2026/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 3,
+      "sha256": "4905f26eb41e9f4efe53a744d7029e4e5a47084d9c39a500bcbe161b2591e6d4",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7,8,9"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "5e267e9c4a2bd1203e65a9e80459f76dc988a3f5dd9b0d9cec030f859011dba3",
+    "observed": "5e267e9c4a2bd1203e65a9e80459f76dc988a3f5dd9b0d9cec030f859011dba3",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "5254772",
+   "area": "浙江",
+   "year": 2026,
+   "variant": "c",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "1e84a7cbf9ac67bd37dd47522bc5dd555654ea60eb6ddff5a59c3ec504289286",
+    "receiptSha256": "e7b0bda529c118814b2efda4ad0cdfa33d7fab50673dc0693b42f1a7cdfdd6fa",
+    "paperMdSha256": "687a05e2ce2b125c7c2b0afb88d3456239f02ba3122a4dbc78172d7c2a8c6c55",
+    "documentSha": "9452956106b212ddd686f26bbe6208e7150d97a5b05b2d3d6a021baa25616a09",
+    "documentShaObserved": "9452956106b212ddd686f26bbe6208e7150d97a5b05b2d3d6a021baa25616a09",
+    "materialsSha256": "f0ee557cd308f2f93c9ff60488d66110156fc01b8ba96217b669d01bfe5536e0",
+    "promptsSha256": "22824746ee1cf820e4a3d50cac281a712163763471cf9867b3de165d5aa85606",
+    "oldAnswersSha256": "4a3ffa3808faa30a0915e60925a3b482d314404546cf6cdfe3fd491a00d464da",
+    "assetsSha256": "49d57a46b0aa78f026ba202f9d55384e4d18f1f80e14e0c27b0edb2a296ad78a"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2026/申论-C类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2026/申论-C类.md",
+      "paperType": "C类",
+      "declaredQuestions": 3,
+      "sha256": "c19a67b4188586fe245b25e218edf3f25ff0f9e858ae63d7c125e1b3d5e156bc",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "9452956106b212ddd686f26bbe6208e7150d97a5b05b2d3d6a021baa25616a09",
+    "observed": "9452956106b212ddd686f26bbe6208e7150d97a5b05b2d3d6a021baa25616a09",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "5319839",
+   "area": "上海",
+   "year": 2026,
+   "variant": "unknown",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 4,
+   "answersPresent": 4,
+   "materialPanes": 14,
+   "materialTabsDeclared": 14,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 4,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 4,
+    "stored": 4,
+    "verified": 4,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 4
+   },
+   "hashes": {
+    "paperJsonSha256": "1589d49b7a846bcff82cd7b845c62e6062f7abbcfb1305e373d6750b4c97f515",
+    "receiptSha256": "d74eca1761cdfeda5a34f54359b01bf1bb928998bb9edc651430b1257f2efaac",
+    "paperMdSha256": "f8d88280a4f3aecf7a0e4ebc60d33054afc29946de8f555e8a26f89e84f4054a",
+    "documentSha": "202b04c772a34d2e68d3b70cdc4fef6c09fb7628e9b9009832f5068b4c6e41a8",
+    "documentShaObserved": "202b04c772a34d2e68d3b70cdc4fef6c09fb7628e9b9009832f5068b4c6e41a8",
+    "materialsSha256": "a6ba5b818d7beb1d1033e83b904940e587263e903b3895f890f206285c634560",
+    "promptsSha256": "4050bffb8f1ad393c4b009a8faf74e5ae03ae4c6cca865e00f88e4337aa7aff1",
+    "oldAnswersSha256": "5b0670c7c2361835d891c204e91fdcf5869e544b7378e2430137957fee1a2052",
+    "assetsSha256": "d60a58f475e9f22ef9b2cc1856b17f28027c83979846c3b05bf91a840f4b7f6b"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/上海/2026/申论-统考.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/上海/2026/申论-统考.md",
+      "paperType": "统考",
+      "declaredQuestions": 4,
+      "sha256": "e7ad39fd7186addecb58bbd967abde0e4c9f02a718f612a1a0d7b9ef70c43bb0",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=4"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 4,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "202b04c772a34d2e68d3b70cdc4fef6c09fb7628e9b9009832f5068b4c6e41a8",
+    "observed": "202b04c772a34d2e68d3b70cdc4fef6c09fb7628e9b9009832f5068b4c6e41a8",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "5456723",
+   "area": "国考",
+   "year": 2026,
+   "variant": "unknown",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 4,
+   "materialTabsDeclared": 4,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 5,
+    "verified": 5,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "5ce515b5c13784444d6f22e7b85b97a07c63bfc391ee494b7e03ce1cfdb6b072",
+    "receiptSha256": "c2351e74888cf59b43072fe6650e0e3984a22d00528b9b316ff97e1c225d6f4c",
+    "paperMdSha256": "e8f7ca9c0d837118e9cec5a91606b9d8d74567c9076863ec12dd40f1abe20fdb",
+    "documentSha": "13716135c3ccefb022336c7594c89cc70dd7def3c2f67df3680dca2f42a7e45e",
+    "documentShaObserved": "13716135c3ccefb022336c7594c89cc70dd7def3c2f67df3680dca2f42a7e45e",
+    "materialsSha256": "ea480dfaee018d7bd0965e1118b2cf79a85e83b2307d38fcd5d5e9d6517ccb0b",
+    "promptsSha256": "0c1e8c1e0773c94b056e48fcd58939cc60ab67c49922bde3c545bcbb3d5b25c3",
+    "oldAnswersSha256": "2501765864d22a06515c3a1be6c5190d2c1de85431cb5ab175476a5731a62e4d",
+    "assetsSha256": "91b4b1c683767c14c553db3e407a5c3a7031bfb7dbf028f9ade2a014f780dd4a"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2026/申论-地市级.md",
+      "paperType": "地市级",
+      "declaredQuestions": 5,
+      "sha256": "2a5e66189ae6a00b04d954c8c7639e47dec57a50f20d7d733b33541c74d74051",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2026/申论-副省级.md",
+      "paperType": "副省级",
+      "declaredQuestions": 5,
+      "sha256": "7e7af12d425aafd39b03c015223579949ff3ef535842e4db00ddf938a9441ee3",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2026/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "f1396d7207aaa86187ed1177d1e194f1d5a0b0a12fa0e4cce28dfc401742934e",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "13716135c3ccefb022336c7594c89cc70dd7def3c2f67df3680dca2f42a7e45e",
+    "observed": "13716135c3ccefb022336c7594c89cc70dd7def3c2f67df3680dca2f42a7e45e",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "5757489",
+   "area": "广东",
+   "year": 2026,
+   "variant": "unknown",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 3,
+   "materialTabsDeclared": 3,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 1
+   },
+   "hashes": {
+    "paperJsonSha256": "9230f2233788fba838e182e825d1eeb01f556000ab987faead1158102fece4e6",
+    "receiptSha256": "30a6ce2abbb059e210f5315fbf3acc57b94a04bb05d16d58502c8235513108f8",
+    "paperMdSha256": "e2bb4ca302e66e9c9a51a236f19aac7d82ad47b696140f8027cef2ef374463bf",
+    "documentSha": "73760c7c55fb94122d03489bafabb378514a52740e8f90897290c44c120d4276",
+    "documentShaObserved": "73760c7c55fb94122d03489bafabb378514a52740e8f90897290c44c120d4276",
+    "materialsSha256": "f66439a2994a3a29181a0dd2e9f3783ab7149eca37e50573c174b8ddd100836a",
+    "promptsSha256": "792b0992dac70340245cdf97282d1f745a23ab3faa211f7566d1d422ca63608e",
+    "oldAnswersSha256": "fbbf06649f388b8c9b17cda758bc00c2fa350ddd3af567db32623cbb9c765308",
+    "assetsSha256": "bbad4bc6c6a85a9b0e092d65080fd2a1d21e650387ed7b45ef2d96c381ed2313"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": true,
+    "candidates": [
+     {
+      "path": "省考/广东/2026/申论-公安.md",
+      "paperType": "公安",
+      "declaredQuestions": 3,
+      "sha256": "ccf438a982c0737f5018ee756203f4acca437214c432f868d6a3e0816c476211",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2026/申论-省市.md",
+      "paperType": "省市",
+      "declaredQuestions": 3,
+      "sha256": "b654df5284b6f48420d5c62e72f31bbb93fff1d07fae5d66e6b1ff727246ded3",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2026/申论-县镇.md",
+      "paperType": "县镇",
+      "declaredQuestions": 3,
+      "sha256": "6c84046c499c9a355d86362fe6813fdf877f01ea7805303a2ae7d70ccde06ba7",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2026/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 3,
+      "sha256": "b75cc15113a3c73110c89fa85073534147ebd1f7ba5bb8000d14a352bc369772",
+      "priorAnswerBatch": true
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "73760c7c55fb94122d03489bafabb378514a52740e8f90897290c44c120d4276",
+    "observed": "73760c7c55fb94122d03489bafabb378514a52740e8f90897290c44c120d4276",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "5758153",
+   "area": "浙江",
+   "year": 2026,
+   "variant": "b",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 6,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "29f47c42ef660b3c83460cbe8f19984c4d6def4a621b757736cf4aabf5e48377",
+    "receiptSha256": "cb876ef053367a2858ccaa6c48da3fa0195d5018339973889225b72a4c3d563b",
+    "paperMdSha256": "d457cb56e459b503bbc74db0290346bfa68458b611e0974670d3643c090516e5",
+    "documentSha": "de77eb48a4b8d4724a62ab7d8424f897ef7dbade6f6f06de45e1e2179ec6fa2d",
+    "documentShaObserved": "de77eb48a4b8d4724a62ab7d8424f897ef7dbade6f6f06de45e1e2179ec6fa2d",
+    "materialsSha256": "4d3af6e2fda90a5cdb8a130a720772f51cb3a5f19420e6f3c77165b2deb1e2e9",
+    "promptsSha256": "faac8e6111837357f3f6c44dec5d6cebcf6bfd6c652570a244585d06757d3c6d",
+    "oldAnswersSha256": "694cf1ca29691ef62a9a81a0b4e542bd3cb858b56c0d8c95be54812cd9cdf009",
+    "assetsSha256": "b3ca668f4233dfc618679ac3ccbf284a5efad2d72615f30696444b9e18287a0f"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2026/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2026/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 3,
+      "sha256": "da61769957969405ea7f3c46a265726e63126c4d97a8c1528ff3d165e5ef6813",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=1"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "de77eb48a4b8d4724a62ab7d8424f897ef7dbade6f6f06de45e1e2179ec6fa2d",
+    "observed": "de77eb48a4b8d4724a62ab7d8424f897ef7dbade6f6f06de45e1e2179ec6fa2d",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "5855987",
+   "area": "浙江",
+   "year": 2025,
+   "variant": "b",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "b35adc444901cdf05d38de9efc783dce228d29cc08b2807cd9b87591c882cc1a",
+    "receiptSha256": "3b4d154b6f7b4c7b3daed4ccb02533076fe2e52500798679bcc70952238b73f7",
+    "paperMdSha256": "297631a3373bcb4c21beeed9acb0fd4c43f679592fc6fdd3c07a9bbab2bf6422",
+    "documentSha": "88e35bb8811af6ecab79cf1e2d4f731cceec1113369f5790829a2eec877ed9ab",
+    "documentShaObserved": "88e35bb8811af6ecab79cf1e2d4f731cceec1113369f5790829a2eec877ed9ab",
+    "materialsSha256": "0e974fb6bd305c19a66e510cc7ca30805b16a2fa6db228221fcb9258f317c620",
+    "promptsSha256": "7fb807dc54827ee3c4fd2b5982b51c57def7f097e8e1d77c501a4e024d438332",
+    "oldAnswersSha256": "313bb5ba7bf319cfa0e9b86632a06658933a6a49dea7263552d13a3870fcb923",
+    "assetsSha256": "faeef727f66ce98905aad6b277b4dd65eb0f25c4cbb3582fa2cc46d4e2b8eee4"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2025/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2025/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 3,
+      "sha256": "222b52101deb6139f53c0b625dafd7b67a5871e83243942b341a7ff67751edf5",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "88e35bb8811af6ecab79cf1e2d4f731cceec1113369f5790829a2eec877ed9ab",
+    "observed": "88e35bb8811af6ecab79cf1e2d4f731cceec1113369f5790829a2eec877ed9ab",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "6106549",
+   "area": "国考",
+   "year": 2025,
+   "variant": "unknown",
+   "cohort": "national-s6-8",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 4,
+   "materialTabsDeclared": 4,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 0,
+    "verified": 0,
+    "missing": 5,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "634842db53a12624bdfd213e2e79d2db67d2984412eaeffc73f5c7739024cc44",
+    "receiptSha256": "55386812a0eaca3694c02fc5863b78f1d51e09b8be3b8f4e79522e3996c09dd9",
+    "paperMdSha256": "bd1be123a19f5c7e8169b6f59bfaac2ab26fb2dc85a4b7a04e87498df9d7468e",
+    "documentSha": "000ebd9cbe3045ab052aa2b0caf7d1c84a9c32c8ba8536138cf378fa7f9531da",
+    "documentShaObserved": "000ebd9cbe3045ab052aa2b0caf7d1c84a9c32c8ba8536138cf378fa7f9531da",
+    "materialsSha256": "e58caeb38dcc9317cba0b22b570a8d0e935b2a2a1140ac1b931ae8ed93872fec",
+    "promptsSha256": "fb23ae740b0620f3ac0f0182c488d8c55bdc77df514476374141b3a363a9d868",
+    "oldAnswersSha256": "49ac48b2e1aaf42ecdbb1115aa32d71f70280cf141c8e80c1823e9e9d7788bb2",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2025/申论-地市级.md",
+      "paperType": "地市级",
+      "declaredQuestions": 5,
+      "sha256": "bd6557901cc07852826998ebea90d52976a94e282fb5c4448bbf26aa9fd2566c",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2025/申论-副省级.md",
+      "paperType": "副省级",
+      "declaredQuestions": 5,
+      "sha256": "e9bfb11224556c16dda4c6b74bcf25fd2eb6efdc35fd3bfe866ca9c188612bf1",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2025/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "45db29f08bf2d2fcda34d5eb875fe1ff63c85760f2385cf70e3c7c656cdf7589",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    },
+    {
+     "code": "images-missing",
+     "severity": "fatal",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "000ebd9cbe3045ab052aa2b0caf7d1c84a9c32c8ba8536138cf378fa7f9531da",
+    "observed": "000ebd9cbe3045ab052aa2b0caf7d1c84a9c32c8ba8536138cf378fa7f9531da",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "missing-bytes-no-local-source",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "6308806",
+   "area": "广东",
+   "year": 2026,
+   "variant": "xingzheng",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 3,
+   "materialTabsDeclared": 3,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 2
+   },
+   "hashes": {
+    "paperJsonSha256": "41e4e3bc5e470831225a9821f0398dc98757596d206fcd83406ac36ba56893e2",
+    "receiptSha256": "f72bbb46fb8fc4493afe5465eccd5098c1a1c3c72d175d251b879e2048833ae6",
+    "paperMdSha256": "5b523bb8f3aec5a86fa896eca12c3ada6e9aa9d059ecba3e90f00b8139fb52e7",
+    "documentSha": "468e1b7aabe28fe3dddd983fe6ebce8a5974212d8a53df9fa00f75cc2c46f8d6",
+    "documentShaObserved": "468e1b7aabe28fe3dddd983fe6ebce8a5974212d8a53df9fa00f75cc2c46f8d6",
+    "materialsSha256": "58c308ed975be0ee9bf207ad3e9c6aaf5c1deb237227c0b4bebc9e8da50261c9",
+    "promptsSha256": "f4567f6f7d2cf5a0418714dfe5cf3d89f02d3696806b2e5a85fed333c43a3fec",
+    "oldAnswersSha256": "1762ef079c3a21d89c0120d4ddf83709fbdda11a49bc6c4cd0e676e7d2de9814",
+    "assetsSha256": "1b2154aadf644fe8f79f54dc54277e70f83b7ece765603c74ac312895fdac4a3"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/广东/2026/申论-行政执法.md",
+    "priorAnswerOverlap": true,
+    "priorAnswerCandidate": true,
+    "candidates": [
+     {
+      "path": "省考/广东/2026/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 3,
+      "sha256": "b75cc15113a3c73110c89fa85073534147ebd1f7ba5bb8000d14a352bc369772",
+      "priorAnswerBatch": true
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "468e1b7aabe28fe3dddd983fe6ebce8a5974212d8a53df9fa00f75cc2c46f8d6",
+    "observed": "468e1b7aabe28fe3dddd983fe6ebce8a5974212d8a53df9fa00f75cc2c46f8d6",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "6700406",
+   "area": "国考",
+   "year": 2024,
+   "variant": null,
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": null,
+   "cloudStorageBlocked": true,
+   "questionCount": 1,
+   "answersPresent": 0,
+   "materialPanes": 3,
+   "materialTabsDeclared": 1,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 1
+   },
+   "assets": {
+    "expectedRefs": 0,
+    "stored": 0,
+    "verified": 0,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "8113e817eae3c054285d98efe6aabe75139e9c8b189c90c414a67fe8f45b4816",
+    "receiptSha256": "9f0f393cb1329cf8171a39b6874d8c634e5219621cb2c337c0c7244a563dcb70",
+    "paperMdSha256": "ab86709faa0bb0344dfe4a6c5bea6f4214e2240165ed9a5346d68bb9540b61fc",
+    "documentSha": "f7e12ac2199cb5366d9e2fda680b8507d1b6254c06b0323bf0b606cff434daaf",
+    "documentShaObserved": "f7e12ac2199cb5366d9e2fda680b8507d1b6254c06b0323bf0b606cff434daaf",
+    "materialsSha256": "d1dbc2bf44c27a78fb1bca2385f502405444893e45de2fcbae0fe20c071020c2",
+    "promptsSha256": "d7c6e0753cefd9a95a7899a7c0fe921018c07bca814434afba2891587227ddea",
+    "oldAnswersSha256": "8ab4edefdc6806663534da8a9d0dac409aa3783bedb1cbaeb8671e6412f745fe",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2024/申论-地市级.md",
+      "paperType": "地市级",
+      "declaredQuestions": 5,
+      "sha256": "ba3badcbd6a9091972e330109b1cbbed0741e621cd8cb0b7e9aadaca8ad7a23a",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2024/申论-副省级.md",
+      "paperType": "副省级",
+      "declaredQuestions": 5,
+      "sha256": "21842d4fa149d7ef3f7e03fd3b9506bc9834f2cfb9b93aafb17bd0c1c35c7482",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2024/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "4d41d9b16e0c247593cc85140830efa11417c3904b48f4e304af2a1d23ada80a",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "question-count-mismatch",
+     "severity": "fatal",
+     "detail": "expected=5 actual=1"
+    },
+    {
+     "code": "question-number-set-mismatch",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5"
+    },
+    {
+     "code": "answers-incomplete",
+     "severity": "fatal",
+     "detail": "present=0/1"
+    },
+    {
+     "code": "material-tab-count-mismatch",
+     "severity": "warning",
+     "detail": "extra=2,3"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "word-limits-unknown",
+     "severity": "warning",
+     "detail": "count=1"
+    },
+    {
+     "code": "rights-status-missing",
+     "severity": "warning",
+     "detail": "source=paper"
+    },
+    {
+     "code": "rights-status-missing",
+     "severity": "warning",
+     "detail": "source=receipt"
+    },
+    {
+     "code": "rights-status-missing",
+     "severity": "warning",
+     "detail": "source=index"
+    },
+    {
+     "code": "rights-status-unexpected",
+     "severity": "warning",
+     "detail": "paper=null"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 1,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 0,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "f7e12ac2199cb5366d9e2fda680b8507d1b6254c06b0323bf0b606cff434daaf",
+    "observed": "f7e12ac2199cb5366d9e2fda680b8507d1b6254c06b0323bf0b606cff434daaf",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "6758563",
+   "area": "浙江",
+   "year": 2025,
+   "variant": "a",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 10,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "50a84b99fd4b87ecc71b1cbdcd06e2eb5c3fb60eca33f5bd3e1580be82ac5e33",
+    "receiptSha256": "f3c963ceb3ee236b4c294a173e81a227eb7e2d7ded8aa3d597a50fc3e3fedf34",
+    "paperMdSha256": "18be3256839c495107007971b4ba946b04f221ee1d44265605f714906d1ba983",
+    "documentSha": "bbd061809029f48e3db497de6c8adecf25933afafda74575114e63a63a5ba89b",
+    "documentShaObserved": "bbd061809029f48e3db497de6c8adecf25933afafda74575114e63a63a5ba89b",
+    "materialsSha256": "2d5274a59916703ae8e2e07b8162181fe86e7040e601fa8804140fb49cd99e59",
+    "promptsSha256": "b512943ba23eb2f06016d8448e93255b7030f20df3a76000cba091fa1789147e",
+    "oldAnswersSha256": "c4f1f4da066d4382dc8126cd67dc7e3efcd1bb6780e241688bac28393454ae3d",
+    "assetsSha256": "0cd55b6de52515dfecf7e68f940e16b45fb7d53e9748543c6d3892f14bff4464"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2025/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2025/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 3,
+      "sha256": "211f37ab9ea53f8cca15dc79fc5740efbb67323cdef9dc80a4175f170bd7ced6",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7,8,9,10"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "bbd061809029f48e3db497de6c8adecf25933afafda74575114e63a63a5ba89b",
+    "observed": "bbd061809029f48e3db497de6c8adecf25933afafda74575114e63a63a5ba89b",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "71",
+   "area": "浙江",
+   "year": 2011,
+   "variant": "unknown-list-row-has-no-abc-marker",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 4,
+   "answersPresent": 4,
+   "materialPanes": 10,
+   "materialTabsDeclared": 10,
+   "analysis": {
+    "textual": 4,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 0,
+    "stored": 0,
+    "verified": 0,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "4a3425f23d3e1b59dc58b745ea4393a68cd10d76b074d1b8833df260e79bd755",
+    "receiptSha256": "78f7eafd7e3698dbe09dee925df6c408e2c873f3c4915ddf1a2fe8dc073fba6d",
+    "paperMdSha256": "b9e9875a394415a0cd7d5548e0c9ddca3c89837e21744e6b9b973a3ff5530ae3",
+    "documentSha": "48a0a611ebace3bc806eb7172cf9b6624ec54d2463636b49aaf9dcffbd5b9f57",
+    "documentShaObserved": "48a0a611ebace3bc806eb7172cf9b6624ec54d2463636b49aaf9dcffbd5b9f57",
+    "materialsSha256": "7cf5e4487bafa6f457825575c4eda7170e1f1c8187fc0064f48305535d7b7208",
+    "promptsSha256": "3717ac4df5a1e5b1fea0f0c9e83fa4f6711ccf541a88bfd14c74a6fa09fc7ec9",
+    "oldAnswersSha256": "94822368124f6cbbebf005bce999849792fadc9ee72a172538691080c296b1ff",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=1"
+    },
+    {
+     "code": "answer-below-word-minimum",
+     "severity": "warning",
+     "detail": "count=1"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 1,
+    "belowMin": 1
+   },
+   "documentSha": {
+    "expected": "48a0a611ebace3bc806eb7172cf9b6624ec54d2463636b49aaf9dcffbd5b9f57",
+    "observed": "48a0a611ebace3bc806eb7172cf9b6624ec54d2463636b49aaf9dcffbd5b9f57",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "7372606",
+   "area": "浙江",
+   "year": 2025,
+   "variant": "c",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 6,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "59dfe78858a0a3e826ba1a0d2ba983f0670ba84d6e32221f34788e219e17d6c5",
+    "receiptSha256": "43c0df19f4abc21b1af7af1bedcde30cc6546fa3b98cae27592e838a8867b872",
+    "paperMdSha256": "aaf0d6fb8954abfb6e90d57cf92144a0ee4afeeb693efd2d219e70f9950e27b1",
+    "documentSha": "e1ad5cf3b192eb941449971ac481c3f8ccecdaaf0cdd63c0a19326caa14664fa",
+    "documentShaObserved": "e1ad5cf3b192eb941449971ac481c3f8ccecdaaf0cdd63c0a19326caa14664fa",
+    "materialsSha256": "8126a4e74afd6fd727931a802807e0fad1564183c10e24beed98af8d83adaedf",
+    "promptsSha256": "f44a4f08004e51fa8debcdfc5e2e90c70d825c5e99776544a4a178005acbc9eb",
+    "oldAnswersSha256": "6c5fe647edd5d313551442129ffbcb2b16beb70d247105e2d9ee1783b1dcd27e",
+    "assetsSha256": "4179648aca3b16c79f426be89bdd854aa07c5b7f286f670405f16e5c0998682a"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2025/申论-C类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2025/申论-C类.md",
+      "paperType": "C类",
+      "declaredQuestions": 3,
+      "sha256": "f182959451acf86391d431bd02aa2eb352e82ce73006f3c0673ab225e1843fed",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "e1ad5cf3b192eb941449971ac481c3f8ccecdaaf0cdd63c0a19326caa14664fa",
+    "observed": "e1ad5cf3b192eb941449971ac481c3f8ccecdaaf0cdd63c0a19326caa14664fa",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "7601181",
+   "area": "国考",
+   "year": 2025,
+   "variant": "unknown",
+   "cohort": "national-s6-8",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 4,
+   "materialTabsDeclared": 4,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 0,
+    "verified": 0,
+    "missing": 5,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "8611cb50d5f8b8f875e8e0a5919be7ac880b40e23cbaf2081160b67c39ad164d",
+    "receiptSha256": "07e4cbaadcc177025db01550e145fb2652318da3f88413196d70ffe861f06954",
+    "paperMdSha256": "812554eb4862fadee3981bf887d8a38b298f52a2aeefd00d9392a7d67ce40d2c",
+    "documentSha": "f64adc293d545d2279e25ba3bfa317ddb6eb735dc9c5acc6d9e1d8be7f4c6633",
+    "documentShaObserved": "f64adc293d545d2279e25ba3bfa317ddb6eb735dc9c5acc6d9e1d8be7f4c6633",
+    "materialsSha256": "a6e019f068fd0ec35fa4bb855c8ff95dbb66f4a2bbbacc8b1947186cea2adddd",
+    "promptsSha256": "ca92d7861274600fd774c0a736a29941575074545759675f34ced3900d5a1a56",
+    "oldAnswersSha256": "b0124e904f6fe28f790a2b2bafac4d98a8f11f9e33fc91f43cf5258dbc2dea0e",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2025/申论-地市级.md",
+      "paperType": "地市级",
+      "declaredQuestions": 5,
+      "sha256": "bd6557901cc07852826998ebea90d52976a94e282fb5c4448bbf26aa9fd2566c",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2025/申论-副省级.md",
+      "paperType": "副省级",
+      "declaredQuestions": 5,
+      "sha256": "e9bfb11224556c16dda4c6b74bcf25fd2eb6efdc35fd3bfe866ca9c188612bf1",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2025/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "45db29f08bf2d2fcda34d5eb875fe1ff63c85760f2385cf70e3c7c656cdf7589",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    },
+    {
+     "code": "images-missing",
+     "severity": "fatal",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "f64adc293d545d2279e25ba3bfa317ddb6eb735dc9c5acc6d9e1d8be7f4c6633",
+    "observed": "f64adc293d545d2279e25ba3bfa317ddb6eb735dc9c5acc6d9e1d8be7f4c6633",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "missing-bytes-no-local-source",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "7736778",
+   "area": "国考",
+   "year": 2026,
+   "variant": "xingzheng",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 5,
+    "verified": 5,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 4
+   },
+   "hashes": {
+    "paperJsonSha256": "a7e1aaeb47798c6776c96e955165444ad8851756894ef33b40a3dc0891e0f637",
+    "receiptSha256": "67e8938adc20943046f2209f8b1484a507e1a330890d3d3485d62ba50fd3ad19",
+    "paperMdSha256": "f80c752ee2418b32ec3a78f72a9b0823c3f44d44f6cbea5c9e07f8839cad5cf8",
+    "documentSha": "aa685ff7a5302af0f066f316f356cf003785c90e130507ed9001d24f36186d86",
+    "documentShaObserved": "aa685ff7a5302af0f066f316f356cf003785c90e130507ed9001d24f36186d86",
+    "materialsSha256": "682f0a312702c1c3d479639b96bdaed3372659525f2e0b983c5fa14af6c2f233",
+    "promptsSha256": "f83d5e3f78cb70159922a303b9aca25425fd88609ba0756152bee9a4de8a6984",
+    "oldAnswersSha256": "b58109e9ddd8c0f2a6f17d1bfaa2ec9d223693d5182555df584cf7fcc1a4909d",
+    "assetsSha256": "c58239dbab1a01d6dc6908a0bacd905eb3b1ecaab86f9c217098ef4c4f5fd8d9"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "国考/2026/申论-行政执法.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2026/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "f1396d7207aaa86187ed1177d1e194f1d5a0b0a12fa0e4cce28dfc401742934e",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "aa685ff7a5302af0f066f316f356cf003785c90e130507ed9001d24f36186d86",
+    "observed": "aa685ff7a5302af0f066f316f356cf003785c90e130507ed9001d24f36186d86",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "7900381",
+   "area": "国考",
+   "year": 2025,
+   "variant": "xingzheng",
+   "cohort": "national-s6-8",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 0,
+    "verified": 0,
+    "missing": 5,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "1e5c097e854cf4f86e7931be1906e750d71963ec04604f73d3f073f7c16412ec",
+    "receiptSha256": "2d0af7fc7e3c1addfdbd3284d5396277590fd65c982832a0d0cbeeb8871f6ee1",
+    "paperMdSha256": "3dacc6d7359aa12e8440c0b5c4726b3a2143731f0e3a0e6060264b2f0d6098af",
+    "documentSha": "b89277729535e060c261dcc5ce13198a307ad1a12921defd4912028edec019d5",
+    "documentShaObserved": "b89277729535e060c261dcc5ce13198a307ad1a12921defd4912028edec019d5",
+    "materialsSha256": "20f50373f6da94f96b9f3f3a9af3393a7aab35649933c7cd1cbf2d4bd2e28ad9",
+    "promptsSha256": "6350240cf5dd8250ec55e67b10b5d22db824eca871d62f8d30b590f43328713f",
+    "oldAnswersSha256": "a7576103a5eb088063cde1040025801b4492a26a6aef2e095d039b1f6d3b80bd",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "国考/2025/申论-行政执法.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2025/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "45db29f08bf2d2fcda34d5eb875fe1ff63c85760f2385cf70e3c7c656cdf7589",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    },
+    {
+     "code": "images-missing",
+     "severity": "fatal",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "b89277729535e060c261dcc5ce13198a307ad1a12921defd4912028edec019d5",
+    "observed": "b89277729535e060c261dcc5ce13198a307ad1a12921defd4912028edec019d5",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "missing-bytes-no-local-source",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": false
+   }
+  },
+  {
+   "sourceId": "8055570",
+   "area": "国考",
+   "year": 2026,
+   "variant": "unknown",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 5,
+   "answersPresent": 5,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 5,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 5,
+    "stored": 5,
+    "verified": 5,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 4
+   },
+   "hashes": {
+    "paperJsonSha256": "1df39c46b50671f9b84945c2fd56a46a3f59c20b66c7f0dc2f421a832d3608d8",
+    "receiptSha256": "b7774f74c32db5be581b898efd98471f2ce6cce137b0985905b3467342ef91fa",
+    "paperMdSha256": "d136e045a06daf7d40f22bec68a979421ec501bd8cfc1adfa6d414268c43e078",
+    "documentSha": "f84b1c20dc287a6b762c498be2fbea57b387f6f296c5cb707346ed510325b614",
+    "documentShaObserved": "f84b1c20dc287a6b762c498be2fbea57b387f6f296c5cb707346ed510325b614",
+    "materialsSha256": "d693fb41aa6b121f2b2196f31a8fc0136d214c1e9e57ceefa0559c2f2d21e6f3",
+    "promptsSha256": "749d6edaab3841c838bd5750db3498912f683ac22276e404a2853de75b09f9d5",
+    "oldAnswersSha256": "d62d76cf86839ab19c827b0b2a4b952c9e3683f36d6120da663e53ab03e30605",
+    "assetsSha256": "d25ba16e18720b4bed9a8e5f36561e7c41b521152c57e32a37689bf57f7f2eb1"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "国考/2026/申论-地市级.md",
+      "paperType": "地市级",
+      "declaredQuestions": 5,
+      "sha256": "2a5e66189ae6a00b04d954c8c7639e47dec57a50f20d7d733b33541c74d74051",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2026/申论-副省级.md",
+      "paperType": "副省级",
+      "declaredQuestions": 5,
+      "sha256": "7e7af12d425aafd39b03c015223579949ff3ef535842e4db00ddf938a9441ee3",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "国考/2026/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 5,
+      "sha256": "f1396d7207aaa86187ed1177d1e194f1d5a0b0a12fa0e4cce28dfc401742934e",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=5"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 5,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "f84b1c20dc287a6b762c498be2fbea57b387f6f296c5cb707346ed510325b614",
+    "observed": "f84b1c20dc287a6b762c498be2fbea57b387f6f296c5cb707346ed510325b614",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "81464",
+   "area": "浙江",
+   "year": 2017,
+   "variant": "a",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 7,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 4,
+    "stored": 4,
+    "verified": 4,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 2
+   },
+   "hashes": {
+    "paperJsonSha256": "2c3e1cba549990c213d0a2ed86715ac0d83646cc27534a635849231556043f0c",
+    "receiptSha256": "cbe6b9328ab4902adefe450449d3b75dfba34ce714278ec4e3f69b0e3e7c1562",
+    "paperMdSha256": "13bc316965f2697c0c2171ee07c08ecd1a272c95ab9d184927aaed596cfbd9b7",
+    "documentSha": "50c85b4e739e2c9935f5997a58ac58b43ab8d5fd6b3152fac076f8752f2cc12a",
+    "documentShaObserved": "50c85b4e739e2c9935f5997a58ac58b43ab8d5fd6b3152fac076f8752f2cc12a",
+    "materialsSha256": "90a523a0e92cb8fbb2471c3fa7ddcf36ccc1fefb4eb3235d253a4dc5c3d77c17",
+    "promptsSha256": "ab45ab73a1b2635921d92d91d1901094d3961cbf5a5f598ec8d8fb69cf7d7550",
+    "oldAnswersSha256": "340006f8a88e9c84e2cf941c0d4642cc85187527e715c853fd0af4cac0f373e0",
+    "assetsSha256": "c7d53cf6503791e51daa65af4e15bfb79a4b03487f6ee53ea1980920dbacd2ae"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2017/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2017/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 3,
+      "sha256": "21b4d0c86f19e92d07b2eee61eb5054f1432df94323fac3d0f69ceea02db65a4",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "50c85b4e739e2c9935f5997a58ac58b43ab8d5fd6b3152fac076f8752f2cc12a",
+    "observed": "50c85b4e739e2c9935f5997a58ac58b43ab8d5fd6b3152fac076f8752f2cc12a",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "81466",
+   "area": "浙江",
+   "year": 2017,
+   "variant": "b",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 7,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 4,
+    "stored": 4,
+    "verified": 4,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 4
+   },
+   "hashes": {
+    "paperJsonSha256": "ed41d221046b94e190abf222e125d0308db9631c917ea939b0531b17bed1e5bb",
+    "receiptSha256": "837058c816aaa18f5090771e5d08fb87f1ae8dd179b8c5b7604ad8dd43766632",
+    "paperMdSha256": "800fcc41635955f11042261c9eece4faba16c3e2a1030307b0b569003e37d5f4",
+    "documentSha": "0acaa2cfebd0e8dba1207c7a020998fb950a9f4481ea7bd4cf0b58825750aa20",
+    "documentShaObserved": "0acaa2cfebd0e8dba1207c7a020998fb950a9f4481ea7bd4cf0b58825750aa20",
+    "materialsSha256": "85f54ca7d7e7afcea0f199fbf3b261dd2798e2b2b1eb499ec5d6b73b3a2cf070",
+    "promptsSha256": "f71e3196bf3ee2ac1bdb860e0a6d245b5838869cc8b864b16f59a3fb7e0da592",
+    "oldAnswersSha256": "c1215563b01c49b9893c1c19197373a70b658df38ea8f522c5d117bcdfc92137",
+    "assetsSha256": "04dec2a11a34bd8e695f15b0dc76e180473644afe2abe62970771d10187d5dbb"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2017/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2017/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 3,
+      "sha256": "571d84fd16750aecd0774cc01e2b8bc9fd3f856731282ea9155576e8680c7930",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "0acaa2cfebd0e8dba1207c7a020998fb950a9f4481ea7bd4cf0b58825750aa20",
+    "observed": "0acaa2cfebd0e8dba1207c7a020998fb950a9f4481ea7bd4cf0b58825750aa20",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "81482",
+   "area": "浙江",
+   "year": 2016,
+   "variant": "a",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 7,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 3
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "c791992734dac93e4995565acfa4b0f44b54625e83f6b51d0c611a0e846fd2de",
+    "receiptSha256": "6236608469a4b7aededfcfd00e5511c464f752ff8b93c9b18f66316a266ec6f7",
+    "paperMdSha256": "82d6db37b3fb5439f40213d4df3752e87814ff8e7b789f38de95ea64452f2d73",
+    "documentSha": "fd5d637de86aeac8f50cc0541c747d924851f9a0f48f245e3c0079f9dfadbf5c",
+    "documentShaObserved": "fd5d637de86aeac8f50cc0541c747d924851f9a0f48f245e3c0079f9dfadbf5c",
+    "materialsSha256": "4620629606cbef76e594148260bcb2c9eac0b06aa47840665ec3678e55327748",
+    "promptsSha256": "63cb71dd329311d8bc8e176d864459f8cffa842437f684d79d27f8f9dc1a3987",
+    "oldAnswersSha256": "5bce97723cc70153d86d73af4f9826b43faca47aa01d53502d84a7b20996ee8a",
+    "assetsSha256": "73116cf052636c18aa218e3ae129bd8484ae6cdb10fe266536db58561095e5ed"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2016/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2016/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 3,
+      "sha256": "c1210918a95e050c9484c1da59140272c833a1cd5547acbfca0c93dfaaba369c",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "fd5d637de86aeac8f50cc0541c747d924851f9a0f48f245e3c0079f9dfadbf5c",
+    "observed": "fd5d637de86aeac8f50cc0541c747d924851f9a0f48f245e3c0079f9dfadbf5c",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "81484",
+   "area": "浙江",
+   "year": 2016,
+   "variant": "b",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 7,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 3
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "1a43d297ba50323b7c9434e54edf792b7eab05406ced69ebf34937fb274356ff",
+    "receiptSha256": "725569dd00742a41d426992cc83602e8354a3fee8b56540b735c97740abc9ec1",
+    "paperMdSha256": "944f65f0979d7910d1350b0a8a3940395d6be4a5f48d642ddc8270f11a8eeaa3",
+    "documentSha": "c1d4af1e827533b3cecac9f2aac219145a57e1aef2ace30dad84335013912913",
+    "documentShaObserved": "c1d4af1e827533b3cecac9f2aac219145a57e1aef2ace30dad84335013912913",
+    "materialsSha256": "d4f289a3377a686e0e6811474e6493bb4bbc76ca912657bd07b401accbefc285",
+    "promptsSha256": "53ac3384dbd89ae038d7243e1121104d2f96dc2563400d573ebc4555facd35d2",
+    "oldAnswersSha256": "0b28a2e634e9b74b357c513d2d771cf9104165c01784c4f1e5f95513232e1aa4",
+    "assetsSha256": "151bac0027f85d7e89ebf68610e2ee50ce3477f619305cc21de2b57fe05e3ec2"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2016/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2016/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 3,
+      "sha256": "64fa4f33d37e7bb2ceede5d84b1734bad5ddc9fb8386210d67a27a2eadcbe2af",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=2"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 2,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "c1d4af1e827533b3cecac9f2aac219145a57e1aef2ace30dad84335013912913",
+    "observed": "c1d4af1e827533b3cecac9f2aac219145a57e1aef2ace30dad84335013912913",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "81528",
+   "area": "浙江",
+   "year": 2015,
+   "variant": "a",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 3
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 1
+   },
+   "hashes": {
+    "paperJsonSha256": "63bf7495013b5fea465677ff5a8062cdf123d8c34d4421d94abf09f491d4cd43",
+    "receiptSha256": "b38e11e7ea32bb8e6cd4a041e0fa3956c043350c612399ac35d081a3d4acb167",
+    "paperMdSha256": "76afdde9e68344a405ddffb31be27a637f8fef024053890910fddeb7ca2293cc",
+    "documentSha": "72be4074f8f028fe912e006268629ef1466bf87bc24f656060d45859cffbc291",
+    "documentShaObserved": "72be4074f8f028fe912e006268629ef1466bf87bc24f656060d45859cffbc291",
+    "materialsSha256": "b33fccdb94758b787a579806fe0a1635f82f17c4823ba8ce48898af1d0a16769",
+    "promptsSha256": "f16beffe217db76e11a99caa8327a32d481a3d5cfbc28168b2c9a36254b98492",
+    "oldAnswersSha256": "b7c65f5f6e7779ed448c27abe6820c48c970d763507d7ecdb985ceef8a43e90e",
+    "assetsSha256": "ca97d00a4beeba74b1ca8045e69d9c8caa6b48401076db03abb72b82e86caaeb"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "72be4074f8f028fe912e006268629ef1466bf87bc24f656060d45859cffbc291",
+    "observed": "72be4074f8f028fe912e006268629ef1466bf87bc24f656060d45859cffbc291",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "81530",
+   "area": "浙江",
+   "year": 2015,
+   "variant": "b",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 5,
+   "materialTabsDeclared": 5,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 1,
+    "absent": 2
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 2
+   },
+   "hashes": {
+    "paperJsonSha256": "b2fc81d70ba585281240a54dd6aa0754d1bae8c3544374fcc1d3e000b57aa9e3",
+    "receiptSha256": "010e2001f28cb5e86ea1198f10842c11e53e013b283949f893823a32f69aed18",
+    "paperMdSha256": "d1e0e3dac1b1a360069e91469c6dcbd60b5c5a96dfb29f9d2b5be5c590c7bf7f",
+    "documentSha": "f0f1a1eb1c8283d77b98683e9c4a60c09538f61ed8d74bf638e3c69115ab1b99",
+    "documentShaObserved": "f0f1a1eb1c8283d77b98683e9c4a60c09538f61ed8d74bf638e3c69115ab1b99",
+    "materialsSha256": "ca1a43db30870fcad4963c596fe82e891f95073a846173602ea9769b608f91af",
+    "promptsSha256": "fd9572ab6460df31554e19eca600d6a40c6e0e73c2cfdc5b0f4599548ca5df93",
+    "oldAnswersSha256": "e335d7b09b8aaf93d18c59731b4ad2c27e3d729e9b40e2ceedbd16cc6e49f15a",
+    "assetsSha256": "87dd7c38febdd2e690da1832e44a0173eb58d290d4cc33aa12b237af5fc5e077"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "f0f1a1eb1c8283d77b98683e9c4a60c09538f61ed8d74bf638e3c69115ab1b99",
+    "observed": "f0f1a1eb1c8283d77b98683e9c4a60c09538f61ed8d74bf638e3c69115ab1b99",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "82968",
+   "area": "浙江",
+   "year": 2014,
+   "variant": "a",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 8,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 3
+   },
+   "assets": {
+    "expectedRefs": 4,
+    "stored": 4,
+    "verified": 4,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 4
+   },
+   "hashes": {
+    "paperJsonSha256": "882acfb7d6c882c01733eefe7c7f116619a816529ef9f4e7fb7e5236a7d9c454",
+    "receiptSha256": "8c61cd06592b2b0bc9113318671aa1ba0640bc66c8c48683f6ae3921fc6154d9",
+    "paperMdSha256": "e28b926c68a63830b4765c26eefd3a4226875acbe62cb101a22ba27d92f83e8b",
+    "documentSha": "5ea47ca57ea0be319592bff0ef66a220fd0b24422ebb8ef632e7c08a3a79932b",
+    "documentShaObserved": "5ea47ca57ea0be319592bff0ef66a220fd0b24422ebb8ef632e7c08a3a79932b",
+    "materialsSha256": "a09275d4e15329321ec11255b2ee93fa95e5f86cea760c79b23c09d4d3d10d47",
+    "promptsSha256": "0a112c5f129983fdc9133a8a964716ce3068dd8b54ffedb8815562ea59d8ff14",
+    "oldAnswersSha256": "745ded0b528873c2b6b6589979cdb61abc14bca16cde300580495a7ae3449387",
+    "assetsSha256": "3d07667796ec895d5d2c899b14e86d60f8b0bb71164d02298334b58c7c04c64f"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=2"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 2,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "5ea47ca57ea0be319592bff0ef66a220fd0b24422ebb8ef632e7c08a3a79932b",
+    "observed": "5ea47ca57ea0be319592bff0ef66a220fd0b24422ebb8ef632e7c08a3a79932b",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "82976",
+   "area": "浙江",
+   "year": 2014,
+   "variant": "b",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 8,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 3
+   },
+   "assets": {
+    "expectedRefs": 4,
+    "stored": 4,
+    "verified": 4,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 4
+   },
+   "hashes": {
+    "paperJsonSha256": "05bae4e925733884fd3e184093ec168c69886305b11a63d37a21adcfd7952aa8",
+    "receiptSha256": "2f5e385e76004e25d46bbc328460851195ad3770a0ceb28ac66ff70d0da74097",
+    "paperMdSha256": "84749d0d3abe1a2301e3a4d8cddf028d941f899c6952514234f28c1f815684ad",
+    "documentSha": "539b5f4e8976d118b0689bffee928b0cd5b2a1a900a8f3d77f032fe392445267",
+    "documentShaObserved": "539b5f4e8976d118b0689bffee928b0cd5b2a1a900a8f3d77f032fe392445267",
+    "materialsSha256": "b28fe34a6f11deb0b3477d6f68bdff2209fca9f535e328239d437565e0037ff0",
+    "promptsSha256": "38b96d71867ae984f66adcc631bbee32a4867a6ebd54ad2d39e74e7373c6ce8a",
+    "oldAnswersSha256": "f502e014d19f92f0d0004907476a5b4cfc0757026e2c8a6d27f7ccc400740fea",
+    "assetsSha256": "7a57c6b78f5c1845e810fa00da6799f69ad408df4c9d2bbc5fb80a86e48f7a44"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "539b5f4e8976d118b0689bffee928b0cd5b2a1a900a8f3d77f032fe392445267",
+    "observed": "539b5f4e8976d118b0689bffee928b0cd5b2a1a900a8f3d77f032fe392445267",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "83096",
+   "area": "浙江",
+   "year": 2018,
+   "variant": "b",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 9,
+   "materialTabsDeclared": 9,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "158527c363cdb6a47d9283131c7b86a579a0bdfaabf9e0210df6a9a2cf50dca7",
+    "receiptSha256": "d2b5a7cf222a593d102eb745f8840f0cc3dbf089d1a595a8ed292c3961e6c1b0",
+    "paperMdSha256": "b045ea5a76880cde194301ff3226f64d7bff1d286f84b0213bc53896108bbb28",
+    "documentSha": "48120e0320d4cfaacbbb30380f26b5315d3ddbd13fb943924efe6af1e069bf92",
+    "documentShaObserved": "48120e0320d4cfaacbbb30380f26b5315d3ddbd13fb943924efe6af1e069bf92",
+    "materialsSha256": "0829fa986d998d1620f37f92314401c569e780d381361d3bdf92eb1b89a662c6",
+    "promptsSha256": "4d366e4b79ca6d942d7f36f0b766a63df93fd5c1cbfb14571c06c02c981979a5",
+    "oldAnswersSha256": "17b2e399e4e18823eadf951aa1ea4e1603a42eb6419c011c6e16100c52eacfe6",
+    "assetsSha256": "3695aa092dc0979035f6455432fe9f01f86958c4c94a49b16ed86d27dd20b205"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2018/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2018/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 3,
+      "sha256": "29d3afe21e7e50ea06f9760f0728fd2e09baaa3efbfb73b19e87c5cc6fff00b9",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "48120e0320d4cfaacbbb30380f26b5315d3ddbd13fb943924efe6af1e069bf92",
+    "observed": "48120e0320d4cfaacbbb30380f26b5315d3ddbd13fb943924efe6af1e069bf92",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "83098",
+   "area": "浙江",
+   "year": 2018,
+   "variant": "a",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 9,
+   "materialTabsDeclared": 9,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 2,
+    "absent": 1
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 2
+   },
+   "hashes": {
+    "paperJsonSha256": "e6613586efe658cc122a910a3a125e88b62fb318bc295b6e1910fa05233e2ea2",
+    "receiptSha256": "7395de807384447bcc1ce521cec62a43ecc75bf1d49c96316443f53c0393727b",
+    "paperMdSha256": "640407fd2aee20bd159bec1114ad050763415a4a66a95145fed204aafac54acc",
+    "documentSha": "454f09ceb2b42c68e415142fdd570ed7bb3d88d4b7e50a4b014feaca2ade3b90",
+    "documentShaObserved": "454f09ceb2b42c68e415142fdd570ed7bb3d88d4b7e50a4b014feaca2ade3b90",
+    "materialsSha256": "0829fa986d998d1620f37f92314401c569e780d381361d3bdf92eb1b89a662c6",
+    "promptsSha256": "2b8168aa179a99328ea990bbeeab1f22559b413b80b83825b1f80548130b0578",
+    "oldAnswersSha256": "e737b6eb3b6face4d16999961a00dcbe9a1f9544c7cc8dc3ffc976b3950d2175",
+    "assetsSha256": "56dd07c23101af2c96815eb3d4bac65fe3c0fa51bbd1d903d9572c07418788e0"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2018/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2018/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 3,
+      "sha256": "e20369c3ba6b2661f2d554cfd80c0a7d306206608c9e3fe615c361cf17849dc4",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "454f09ceb2b42c68e415142fdd570ed7bb3d88d4b7e50a4b014feaca2ade3b90",
+    "observed": "454f09ceb2b42c68e415142fdd570ed7bb3d88d4b7e50a4b014feaca2ade3b90",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "8485529",
+   "area": "广东",
+   "year": 2026,
+   "variant": "unknown",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 8,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "dd723cd53a97bc55d7324790caaf6e8e2f08af1ecd746c46c0141e409e2064a5",
+    "receiptSha256": "d6aa70528a2e5bbc44bb5436f97aef630667f60dc78e52128f2883b3021cb8bb",
+    "paperMdSha256": "7c6d01cb34785d9cafc6e87e3b0d1597a71ad1b44a149cb03133a30bf132bfab",
+    "documentSha": "f37c29d6ae64ea5db829f7cda1f8c9e0a3a9a4ced4081714c8ac60dc2bc292ed",
+    "documentShaObserved": "f37c29d6ae64ea5db829f7cda1f8c9e0a3a9a4ced4081714c8ac60dc2bc292ed",
+    "materialsSha256": "f8f4044b07466444aec6a2a6b755e6ccdacc7b7f31afe8a2e67525bf44b61d23",
+    "promptsSha256": "aad1a1e340f6853bb01f47781355e92c230e601796de787ee65d003d96c29709",
+    "oldAnswersSha256": "ddc041a739735c47391df3c1716502d1d3c2aa7768b4707ff610a722c4518060",
+    "assetsSha256": "26b294184d43365f67db80537633432bc531d854b2f1abc63de483b8b5fb5add"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": true,
+    "candidates": [
+     {
+      "path": "省考/广东/2026/申论-公安.md",
+      "paperType": "公安",
+      "declaredQuestions": 3,
+      "sha256": "ccf438a982c0737f5018ee756203f4acca437214c432f868d6a3e0816c476211",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2026/申论-省市.md",
+      "paperType": "省市",
+      "declaredQuestions": 3,
+      "sha256": "b654df5284b6f48420d5c62e72f31bbb93fff1d07fae5d66e6b1ff727246ded3",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2026/申论-县镇.md",
+      "paperType": "县镇",
+      "declaredQuestions": 3,
+      "sha256": "6c84046c499c9a355d86362fe6813fdf877f01ea7805303a2ae7d70ccde06ba7",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2026/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 3,
+      "sha256": "b75cc15113a3c73110c89fa85073534147ebd1f7ba5bb8000d14a352bc369772",
+      "priorAnswerBatch": true
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "f37c29d6ae64ea5db829f7cda1f8c9e0a3a9a4ced4081714c8ac60dc2bc292ed",
+    "observed": "f37c29d6ae64ea5db829f7cda1f8c9e0a3a9a4ced4081714c8ac60dc2bc292ed",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "8485530",
+   "area": "广东",
+   "year": 2026,
+   "variant": "unknown",
+   "cohort": "other",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 8,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "dfca54972e9ca62ee32e63961a3b6f1cfc7083220c4c327329a5dfb7f47ec445",
+    "receiptSha256": "b197d716e5189c05ad96e6ce2fa20edf7a280b9608b70b9abdd4fb84c1213085",
+    "paperMdSha256": "9773fba26f45f2aae0ff2de87fee330a2f963fa2a1e4df8ee085b6348ab06ece",
+    "documentSha": "c8847a47fc482520d73cdc1c66038f8d0fc45432cf36035078a822353fec9bf7",
+    "documentShaObserved": "c8847a47fc482520d73cdc1c66038f8d0fc45432cf36035078a822353fec9bf7",
+    "materialsSha256": "44ee4fc8f2e5dc6e1cc6ea5da82c1ac211423e793175c0b4f6c00107fa67dd05",
+    "promptsSha256": "2161f9d085d5250a1edc5950a0f0a723f4552fe65163fecc32d13a986ff05491",
+    "oldAnswersSha256": "d75dda415271bcba87188a9bbce10ddbe17ae7daf03fa3aed6cd6c396009410b",
+    "assetsSha256": "109e26fa17af3b4eeccec8a2e3912b98885ac08123fd76e571f6f90f3d01bd01"
+   },
+   "mainCatalog": {
+    "match": "ambiguous",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": true,
+    "candidates": [
+     {
+      "path": "省考/广东/2026/申论-公安.md",
+      "paperType": "公安",
+      "declaredQuestions": 3,
+      "sha256": "ccf438a982c0737f5018ee756203f4acca437214c432f868d6a3e0816c476211",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2026/申论-省市.md",
+      "paperType": "省市",
+      "declaredQuestions": 3,
+      "sha256": "b654df5284b6f48420d5c62e72f31bbb93fff1d07fae5d66e6b1ff727246ded3",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2026/申论-县镇.md",
+      "paperType": "县镇",
+      "declaredQuestions": 3,
+      "sha256": "6c84046c499c9a355d86362fe6813fdf877f01ea7805303a2ae7d70ccde06ba7",
+      "priorAnswerBatch": false
+     },
+     {
+      "path": "省考/广东/2026/申论-行政执法.md",
+      "paperType": "行政执法",
+      "declaredQuestions": 3,
+      "sha256": "b75cc15113a3c73110c89fa85073534147ebd1f7ba5bb8000d14a352bc369772",
+      "priorAnswerBatch": true
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "c8847a47fc482520d73cdc1c66038f8d0fc45432cf36035078a822353fec9bf7",
+    "observed": "c8847a47fc482520d73cdc1c66038f8d0fc45432cf36035078a822353fec9bf7",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "89920",
+   "area": "浙江",
+   "year": 2019,
+   "variant": "a",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 4,
+   "answersPresent": 4,
+   "materialPanes": 1,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 4,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 4,
+    "stored": 4,
+    "verified": 4,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 4
+   },
+   "hashes": {
+    "paperJsonSha256": "93c79d066d08e452444d311df942be668d52fc32eceee8723c62402441da717d",
+    "receiptSha256": "bff0f65438d9104aa5c6bff9dc8da725f5197009711c9e49bd3911517f9d4e89",
+    "paperMdSha256": "8c43eee2698336911a4a1ae04d9584ae0a844dc0e08a09ed4ad6a6653fd1478e",
+    "documentSha": "162fca9cac3af266d9a8ef6f1b05b1ade589d93cdc4446323b6661eee1a6efc5",
+    "documentShaObserved": "162fca9cac3af266d9a8ef6f1b05b1ade589d93cdc4446323b6661eee1a6efc5",
+    "materialsSha256": "b0ec46df08b65be4c68ff8eeb0541b87965e5383da3c552515efc3e2a8cc5e0f",
+    "promptsSha256": "e1a1f036b77ca573b18c146bd885c93835f54aef961898bbb9219d663f760867",
+    "oldAnswersSha256": "a1ba6befcb9b274fe3a61b60dff285842247468f127cb0bf81ffd2bea84847c9",
+    "assetsSha256": "df76c80f3cf03d5d21b0623af0125410d60480bd56e0cfaaf3affeaa186e9a05"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2019/申论-A类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2019/申论-A类.md",
+      "paperType": "A类",
+      "declaredQuestions": 4,
+      "sha256": "a8313b41f42f7561ff4d8468378234bcfc5d84722eef72ea1bf9464d10fb599c",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7,8"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=3"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=4"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 4,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "162fca9cac3af266d9a8ef6f1b05b1ade589d93cdc4446323b6661eee1a6efc5",
+    "observed": "162fca9cac3af266d9a8ef6f1b05b1ade589d93cdc4446323b6661eee1a6efc5",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "89921",
+   "area": "浙江",
+   "year": 2019,
+   "variant": "b",
+   "cohort": "other",
+   "technicalStatus": "FAIL",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 1,
+   "materialTabsDeclared": 8,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 3,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 3,
+    "stored": 3,
+    "verified": 3,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 3
+   },
+   "hashes": {
+    "paperJsonSha256": "53164760c4b6611726803c1477fa01a7067252ba55dcf56427a79b63209892b2",
+    "receiptSha256": "d4011b598393ab53890aa85d0a231ab72f33c54b3f2230289a1b33c5f525ea4b",
+    "paperMdSha256": "49f4a8f6b478d6dea44e2e95be175b1014f705e73174d8601125a8ed3b1e5511",
+    "documentSha": "36816cbb50ed826f914477fe3bbaa711b9322ffb62cee557d3851b9ae4f3be12",
+    "documentShaObserved": "36816cbb50ed826f914477fe3bbaa711b9322ffb62cee557d3851b9ae4f3be12",
+    "materialsSha256": "26384f34d6d1e4bbe68cc2d6288c252c669c2ae1f78372c9c0d7d9ac4d9af4e9",
+    "promptsSha256": "5666d96df3c01d9304439d63377515a0943b4719afcf8ba3915af43eaa4615e6",
+    "oldAnswersSha256": "f6989cdb551735ca5d416d8d4e4319e7f87c24a5daf83362b8c4147a8c6dbf99",
+    "assetsSha256": "6fe41db7a0ecceee1a4cbd706a1ff93c3cbfb1fbb36d7b7569798b886a117f42"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2019/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2019/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 3,
+      "sha256": "4c5bd1dbc6db5c73c9b6b42e280ec334fff9f7d4566ebdf315ecab175e295679",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "material-pane-gap",
+     "severity": "fatal",
+     "detail": "missing=2,3,4,5,6,7,8"
+    },
+    {
+     "code": "material-ref-unresolved",
+     "severity": "fatal",
+     "detail": "count=2"
+    },
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=3"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 3,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "36816cbb50ed826f914477fe3bbaa711b9322ffb62cee557d3851b9ae4f3be12",
+    "observed": "36816cbb50ed826f914477fe3bbaa711b9322ffb62cee557d3851b9ae4f3be12",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "recapture-required",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "95",
+   "area": "浙江",
+   "year": 2008,
+   "variant": "unknown-list-row-has-no-abc-marker",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 3,
+   "answersPresent": 3,
+   "materialPanes": 15,
+   "materialTabsDeclared": 15,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 0,
+    "absent": 3
+   },
+   "assets": {
+    "expectedRefs": 0,
+    "stored": 0,
+    "verified": 0,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 0
+   },
+   "hashes": {
+    "paperJsonSha256": "1be1c2e4a74238c630c05dd3e97446afe6f80a578dd4c1c5d303a40a6f2dffb7",
+    "receiptSha256": "b2f9f62fddf5e4be582ccc39b47605225a59ab7840d6389c23c549897681346d",
+    "paperMdSha256": "c5a813ce216277a201f0914b94d5f97064a4718d56c034fde46c0a8956136f27",
+    "documentSha": "e95a6ee7924642a46f42983863cc1c8ecfb9b8fb751fe4431eaf06705f11dbf7",
+    "documentShaObserved": "e95a6ee7924642a46f42983863cc1c8ecfb9b8fb751fe4431eaf06705f11dbf7",
+    "materialsSha256": "d4ba2168a1067f305011c9452e6d61a9ef4aa71ad8d2c654749d921442f1079f",
+    "promptsSha256": "021ebb8827ad7fa4b96a8268b328124a90cc1f24693c97e97f94c54c23e69990",
+    "oldAnswersSha256": "07d6c7a1140cb010f66dd66529004a21713ee1bd575fff6ae1aecc18c544abdb",
+    "assetsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   },
+   "mainCatalog": {
+    "match": "none",
+    "exactPath": null,
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": []
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 0,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "e95a6ee7924642a46f42983863cc1c8ecfb9b8fb751fe4431eaf06705f11dbf7",
+    "observed": "e95a6ee7924642a46f42983863cc1c8ecfb9b8fb751fe4431eaf06705f11dbf7",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  },
+  {
+   "sourceId": "96500",
+   "area": "浙江",
+   "year": 2020,
+   "variant": "b",
+   "cohort": "zhejiang-recapture-20",
+   "technicalStatus": "PASS",
+   "publicationStatus": "BLOCKED",
+   "archiveStatus": "PARTIAL",
+   "rightsStatus": "unverified",
+   "cloudStorageBlocked": true,
+   "questionCount": 2,
+   "answersPresent": 2,
+   "materialPanes": 7,
+   "materialTabsDeclared": 7,
+   "analysis": {
+    "textual": 0,
+    "imageOnly": 0,
+    "videoOnly": 2,
+    "absent": 0
+   },
+   "assets": {
+    "expectedRefs": 2,
+    "stored": 2,
+    "verified": 2,
+    "missing": 0,
+    "orphan": 0,
+    "widthKnown": 1
+   },
+   "hashes": {
+    "paperJsonSha256": "6572942cf13a57e3d6511ba6a0e51170003cfee8b4d5fbd44c3ff7c899662859",
+    "receiptSha256": "a8fca16222d29d4455e22e7e3a66ced433e4de774962f0d7adf931bba8c7a126",
+    "paperMdSha256": "76369dacea121364528a8c1f0fa898e997ddc35df4d85d6fb93f4afca47f869e",
+    "documentSha": "2cf048e2c90fea22835b925795b98d2d4dfa31bff20f56e0f0a1753ab01f6ced",
+    "documentShaObserved": "2cf048e2c90fea22835b925795b98d2d4dfa31bff20f56e0f0a1753ab01f6ced",
+    "materialsSha256": "0f0fdb5440f98b5d0008e6788ada010076e8c93c0b95d7d08ce774bb1e166440",
+    "promptsSha256": "46927d3ca8b0d824e1a17484b16e23ea1d8b82546d06c629bbf265773de44e80",
+    "oldAnswersSha256": "418b3351ee070c6760cf564918ff446ecc97547ed2b650c9f1b0cdaa9fff55e8",
+    "assetsSha256": "4e69631037fa7c09ba9bfaf127f0642fb06b64584fddbb6a401c12d920b93f5c"
+   },
+   "mainCatalog": {
+    "match": "exact",
+    "exactPath": "省考/浙江/2020/申论-B类.md",
+    "priorAnswerOverlap": false,
+    "priorAnswerCandidate": false,
+    "candidates": [
+     {
+      "path": "省考/浙江/2020/申论-B类.md",
+      "paperType": "B类",
+      "declaredQuestions": 2,
+      "sha256": "245e65d352a5a4672e7ecef782849e3370c54bf83232f34f0e76a86c51f522f9",
+      "priorAnswerBatch": false
+     }
+    ]
+   },
+   "checks": [
+    {
+     "code": "explanation-empty",
+     "severity": "warning",
+     "detail": null
+    },
+    {
+     "code": "answer-above-word-maximum",
+     "severity": "warning",
+     "detail": "count=2"
+    }
+   ],
+   "wordLimits": {
+    "unknown": 0,
+    "manual": 0,
+    "unlimited": 0,
+    "aboveMax": 2,
+    "belowMin": 0
+   },
+   "documentSha": {
+    "expected": "2cf048e2c90fea22835b925795b98d2d4dfa31bff20f56e0f0a1753ab01f6ced",
+    "observed": "2cf048e2c90fea22835b925795b98d2d4dfa31bff20f56e0f0a1753ab01f6ced",
+    "status": "verified"
+   },
+   "recovery": {
+    "status": "not-needed",
+    "alternateCompleteCaptures": 0,
+    "localImageBytesAvailable": true
+   }
+  }
+ ]
+}
