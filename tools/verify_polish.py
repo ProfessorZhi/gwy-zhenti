@@ -61,8 +61,9 @@ def main():
         paths = [item for item in args.paths.split(',') if item.strip()]
     else:
         paths = [line for line in subprocess.run(
-            ['git', 'diff', '--name-only', args.base_ref], cwd=ROOT,
-            capture_output=True, text=True).stdout.split('\n') if line.endswith('.md')]
+            ['git', '-c', 'core.quotepath=false', 'diff', '--name-only', args.base_ref],
+            cwd=ROOT, capture_output=True, text=True).stdout.split('\n')
+            if line.endswith('.md')]
 
     failed = 0
     for path in paths:
