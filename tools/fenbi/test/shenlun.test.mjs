@@ -164,11 +164,15 @@ test('paperId disagreement between meta.json and document.json blocks identity b
   assert.equal(verdict.dimensions.identity.status, 'partial');
 });
 
-test('year policy: all visible Zhejiang years pass, pre-2016 elsewhere fails', async () => {
+test('year policy: pre-2016 passes in every region, future years fail', async () => {
+  // 用户 2026-10-23 决定：粉笔上能看到的全部年份都要，不限地区（见 driver/year-policy.mjs）。
   const zhejiang = capture({ questions: [question({ index: 1, key: 'k1', materialHash: sha(MATERIAL) })], identity: { year: 2005 }, meta: { year: 2005 } });
   assert.ok(!codes(await validateDocument(parseShenlunCapture(zhejiang).doc)).has('year-invalid'));
   const jiangsu = capture({ questions: [question({ index: 1, key: 'k1', materialHash: sha(MATERIAL) })], identity: { area: '江苏', year: 2005 }, meta: { area: '江苏', year: 2005 } });
-  assert.ok(codes(await validateDocument(parseShenlunCapture(jiangsu).doc)).has('year-invalid'));
+  assert.ok(!codes(await validateDocument(parseShenlunCapture(jiangsu).doc)).has('year-invalid'));
+  const future = new Date().getFullYear() + 1;
+  const ahead = capture({ questions: [question({ index: 1, key: 'k1', materialHash: sha(MATERIAL) })], identity: { area: '江苏', year: future }, meta: { area: '江苏', year: future } });
+  assert.ok(codes(await validateDocument(parseShenlunCapture(ahead).doc)).has('year-invalid'));
 });
 
 test('title comes from the observed DOM title, never from the title hash', async () => {
