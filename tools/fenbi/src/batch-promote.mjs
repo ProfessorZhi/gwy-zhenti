@@ -31,7 +31,7 @@ export function manifestEntry(receipt,bytes,oldRecord=null){
     missing_answer_numbers:Array.from({length:count},(_,i)=>i+1).filter(n=>!numbers.includes(n)),
     image_references:(bytes.toString('utf8').match(/!\[[^\]]*\]\([^)]+\)|<img\b/gu)||[]).length,
     issues:[...(numbers.length<count?['有答案未取得（保留unknown）']:[]),...(sourceMissing.length?['粉笔与本库均缺题（题位保留并标注）']:[])],
-    notes:['粉笔优先、本地结构A候选；不等同官方原卷认证','其他来源旧版本在 Git 历史及本地 legacy-original.md 保留'],
+    notes:['粉笔优先、本地结构A候选；不等同官方原卷认证','其他来源旧版本仅存于 Git 历史；仓库内无 legacy-original.md 副本'],
     review_scope:'structural_A_pending_publication_review',
     sequence_basis:'Fenbi observed source numbering',
     missing_original_numbers:sourceMissing,missing_option_numbers:[],missing_shared_condition_numbers:[],
