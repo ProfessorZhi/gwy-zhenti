@@ -423,6 +423,9 @@ def cn_number(token):
 
 
 def load_paths(args):
+    if args.paths_file:
+        with open(args.paths_file, encoding='utf-8') as handle:
+            return [ROOT / line.strip() for line in handle if line.strip()]
     if args.paths:
         return [Path(item.strip()) if Path(item.strip()).is_absolute() else ROOT / item.strip()
                 for item in args.paths.split(',') if item.strip()]
@@ -442,6 +445,7 @@ def main():
     parser.add_argument('--write', action='store_true', help='写盘；省略则只报告')
     parser.add_argument('--check', action='store_true', help='只检查不写盘（默认行为，保留兼容）')
     parser.add_argument('--paths', help='逗号分隔的文件路径；省略则按 manifest 全量')
+    parser.add_argument('--paths-file', help='每行一个文件路径（便于分片并行）')
     parser.add_argument('--limit', type=int, default=0, help='最多处理多少份')
     parser.add_argument('--manifest', default='catalog/manifest.jsonl', help='manifest 路径')
     parser.add_argument('--no-interleave', action='store_true', help='保留卷末答案区，不随题折叠')
