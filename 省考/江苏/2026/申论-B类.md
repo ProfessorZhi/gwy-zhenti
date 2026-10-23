@@ -24,6 +24,11 @@
 
 # 2026年江苏省考申论B类卷
 
+<!-- gwy:overview:start -->
+> **江苏 · 2026 · 申论 · B类** ｜ 4 题 · 图片 0 处
+
+<!-- gwy:overview:end -->
+
 <!-- R7 reading guide -->
 
 ## 参考作答与范文导读
