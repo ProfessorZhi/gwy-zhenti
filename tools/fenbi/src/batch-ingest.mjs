@@ -8,6 +8,7 @@ import { parseRepositoryPaper, normalizeComparisonText } from './align.mjs';
 import { isCollectionStub, validateDocument } from './validate.mjs';
 import { RENDERED_COLLECTION_STUB } from './collection-stub.mjs';
 import { renderCandidate } from './render.mjs';
+import { paperVariantLabel } from './labels.mjs';
 
 // 粉笔与本库都缺的题在 Markdown 里的固定标注。policy.mjs 的有效题计数认这句话，替换判断因此不会把它当成有效题。
 export const SOURCE_MISSING_NOTE = '粉笔暂未收录本题（来源缺题，题位保留）';
@@ -163,13 +164,14 @@ export async function ingestFolder({source,repo,dest,name,write=false}){
   const base=path.join(source,name),real=await fs.realpath(base);
   if(!real.startsWith(source+path.sep))throw Error('source-path-escape');
   const raw=await fs.readFile(path.join(base,'document.json'));
-  const doc=JSON.parse(raw);
-  const id=doc.identity||{},area=id.area==='国考'?'国考':'省考/'+id.area;
+  const parsed=JSON.parse(raw);
+  // 卷型用中文名（副省级/行政执法/A类/乡镇卷…），与仓库既有文件的命名一致；
+  // 采集库里的英文 slug 是内部标识，不进文件名也不进 frontmatter。
+  const doc={...parsed,identity:{...(parsed.identity||{}),variant:paperVariantLabel(parsed.identity?.title)}};
+  const id=doc.identity,area=id.area==='国考'?'国考':'省考/'+id.area;
   const sub=subjectName(id.subject);
   if(!sub||!safeName(id.id)||!safeName(id.variant)||!Number.isInteger(Number(id.year)))throw Error('bad-identity');
-  // 卷型识别不出的卷（申论目录不给卷型）在文件名里带上源试卷 ID，避免同地区同年多卷写到同一个文件。
-  const variantSlug=id.variant==='unknown'?`unknown-${id.id}`:id.variant;
-  const rel=path.posix.join(area,String(id.year),sub+'-'+variantSlug+'.md');
+  const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
   const priorFile=path.join(repo,rel);
   let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
   // Neither the source nor the repository paper changed since the last candidate: reuse it.
