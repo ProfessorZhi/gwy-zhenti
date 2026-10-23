@@ -160,20 +160,28 @@ function parseCli(argv) {
 
 // One cache folder -> one candidate (paper.md, receipt.json, copied assets). Returns the receipt row.
 // The worker calls this right after a paper is captured; runBatch calls it for every folder.
-export async function ingestFolder({source,repo,dest,name,write=false}){
+// `variant`：落地用的卷型名，默认由标题推导。仓库（origin/main）的卷型来自它自己的目录引擎
+// （旗县卷/市县卷/一卷/二卷…比这里的规则细），合并进仓库时要显式传入仓库认的卷型名，
+// 否则同一份卷会在库里落成两个路径。
+// `relPath`：目标路径覆盖。同路径已有另一份**不同的**卷时，改写到带源试卷 ID 的唯一路径。
+// `ignorePrior`：不从目标仓库的同名文件继承答案。以粉笔为准重新落地时用它，避免旧源内容回流。
+export async function ingestFolder({source,repo,dest,name,write=false,variant=null,relPath=null,ignorePrior=false}){
   const base=path.join(source,name),real=await fs.realpath(base);
   if(!real.startsWith(source+path.sep))throw Error('source-path-escape');
   const raw=await fs.readFile(path.join(base,'document.json'));
   const parsed=JSON.parse(raw);
   // 卷型用中文名（副省级/行政执法/A类/乡镇卷…），与仓库既有文件的命名一致；
   // 采集库里的英文 slug 是内部标识，不进文件名也不进 frontmatter。
-  const doc={...parsed,identity:{...(parsed.identity||{}),variant:paperVariantLabel(parsed.identity?.title)}};
+  const variantName=variant??paperVariantLabel(parsed.identity?.title,parsed.identity?.area);
+  const doc={...parsed,identity:{...(parsed.identity||{}),variant:variantName}};
   const id=doc.identity,area=id.area==='国考'?'国考':'省考/'+id.area;
   const sub=subjectName(id.subject);
   if(!sub||!safeName(id.id)||!safeName(id.variant)||!Number.isInteger(Number(id.year)))throw Error('bad-identity');
-  const rel=path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
+  const rel=relPath?path.posix.normalize(String(relPath)):path.posix.join(area,String(id.year),sub+'-'+id.variant+'.md');
+  if(path.posix.isAbsolute(rel)||rel.startsWith('..'))throw Error('bad-target-path');
   const priorFile=path.join(repo,rel);
-  let prior='';try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
+  let prior='';
+  if(!ignorePrior)try{prior=await fs.readFile(priorFile,'utf8')}catch(e){if(e.code!=='ENOENT')throw e}
   // Neither the source nor the repository paper changed since the last candidate: reuse it.
   const known=write?await fs.readFile(path.join(dest,name,'receipt.json'),'utf8').then(JSON.parse).catch(()=>null):null;
   const knownMd=known?await fs.readFile(path.join(dest,name,'paper.md')).catch(()=>null):null;
