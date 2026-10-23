@@ -77,6 +77,19 @@ export function markdown(html, assets = [], imagePrefix = 'assets', baseUrl = 'h
   return escapeStrayLt(service.turndown($.html()).trim());
 }
 
+// 申论的 explanationHtml 常把「参考答案说明」和「考点 / 来源 / 视频入口说明」放在一起，
+// 前者已经随参考答案渲染在答案区，整段照搬会重复。这里只保留从「考点」开始的部分。
+const KAODIAN_START = /<p[^>]*>\s*<strong>\s*考点\s*<\/strong>/iu;
+export function explanationFragment(html) {
+  const source = String(html ?? '');
+  const at = source.search(KAODIAN_START);
+  const fragment = at >= 0 ? source.slice(at) : source;
+  // 题库 DOM 把标签文字也并进了值里：「考点提出对策类」「来源2016年…」
+  return fragment
+    .replace(/<strong>\s*考点\s*<\/strong>\s*[：:]\s*考点/gu, '<strong>考点</strong>：')
+    .replace(/<strong>\s*来源\s*<\/strong>\s*[：:]\s*来源/gu, '<strong>来源</strong>：');
+}
+
 export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = {}) {
   if (verdict.status !== 'complete') throw new Error('Only an independently validated complete capture can be rendered');
   const { identity: id, source } = document;
@@ -94,13 +107,34 @@ export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = 
     lines.push('## 题型与作答说明', '');
     for (const chapter of document.chapters) lines.push(convert(chapter.instructionsHtml), '');
   }
-  if (document.materials.length) lines.push('## 给定材料', '');
-  // 申论材料按源页签编号（材料1…材料N）；行测沿用内容哈希 ID，行为不变。
-  for (const material of document.materials) lines.push(`### 材料 ${material.number ?? material.id}`, '', convert(material.contentHtml), '');
+  // 材料编号：按首个引用它的题排序，未被引用的排在最后；编号 1…N 稳定可读，取代内容哈希。
+  const firstUse = new Map();
+  questions.forEach((q, index) => { for (const mid of q.materialIds) if (!firstUse.has(mid)) firstUse.set(mid, index); });
+  const materialOrder = [...document.materials].sort((a, b) =>
+    (firstUse.get(a.id) ?? Number.MAX_SAFE_INTEGER) - (firstUse.get(b.id) ?? Number.MAX_SAFE_INTEGER));
+  const materialNumber = new Map(materialOrder.map((material, index) => [material.id, index + 1]));
+  const materialOf = new Map(document.materials.map(material => [material.id, material]));
+  const label = id_ => `材料 ${materialNumber.get(id_) ?? id_}`;
+  if (subject === '申论') {
+    // 申论：给定资料是全文共用，保持前置；题干的「关联材料」指向 材料 N。
+    if (document.materials.length) lines.push('## 给定材料', '');
+    for (const material of materialOrder) lines.push(`### ${label(material.id)}`, '', convert(material.contentHtml), '');
+  }
   lines.push('## 题目', '');
+  let current = null;
   for (const q of questions) {
+    const refs = q.materialIds.filter(mid => materialOf.has(mid));
+    // 行测：资料分析/篇章阅读的材料紧跟其首题，图文交叉不割裂。
+    if (subject !== '申论' && refs.length && refs[0] !== current) {
+      current = refs[0];
+      lines.push(`## ${label(current)}`, '', convert(materialOf.get(current).contentHtml), '');
+    }
     lines.push(`### 第 ${q.number} 题`, '', convert(q.contentHtml), '');
-    if (q.materialIds.length) lines.push(`关联材料：${q.materialIds.join('、')}`, '');
+    // 材料就在上方时省略引用行，避免每道题重复；跨组或多材料引用保留。
+    const extra = refs.filter(mid => subject === '申论' || mid !== current);
+    if (extra.length && (subject === '申论' || extra.length !== refs.length || refs.length > 1)) {
+      lines.push(`关联材料：${extra.map(label).join('、')}`, '');
+    }
     for (const option of q.options) lines.push(`${option.label}. ${convert(option.contentHtml)}`, '');
     if (q.requirementsHtml) lines.push('作答要求：', '', convert(q.requirementsHtml), '');
   }
@@ -111,11 +145,12 @@ export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = 
       : '**参考答案（粉笔题库参考内容）**';
     const explanationLabel = q.explanationOrigin === 'original-repository'
       ? '**解析（原库来源，按题目内容唯一映射保留）**' : '**解析**';
+    const explanation = explanationFragment(q.explanationHtml);
     lines.push(`<details><summary>第 ${q.number} 题</summary>`, '',
       q.answerHtml?.trim() ? answerLabel : '**答案状态：unknown（来源未提供）**', '',
       q.answerHtml?.trim() ? convert(q.answerHtml) : '', '',
-      q.explanationHtml?.trim() ? explanationLabel : '**解析状态：unknown（来源未提供）**', '',
-      q.explanationHtml?.trim() ? convert(q.explanationHtml) : '', '', '</details>', '');
+      explanation.trim() ? explanationLabel : '**解析状态：unknown（来源未提供）**', '',
+      explanation.trim() ? convert(explanation) : '', '', '</details>', '');
   }
   return lines.join('\n');
 }

@@ -14,6 +14,12 @@
 
 # 2009年浙江省公考 《申论》题
 
+<!-- gwy:overview:start -->
+> **浙江 · 2009 · 申论 · unknown-list-row-has-no-abc-marker** ｜ 3 题 · 图片 0 处 · 答案随题折叠
+
+导航：[题目](#题目) · [材料 1](#材料-1)
+<!-- gwy:overview:end -->
+
 > 候选采集稿。参考答案及解析来自粉笔页面，不代表官方答案或真实高分答卷；来源使用许可与原卷对应关系仍需人工核实。
 
 ## 给定材料
@@ -104,35 +110,13 @@
 
 **根据“给定资料**1**~**18**”提供的信息，用不超过400字的篇幅，给上级领导整理一份情况反映。（20分）**
 
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16、material-17、material-18
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16、材料 17、材料 18
 
 作答要求：
 
 要求：内容全面，主旨突出，表述简洁。
 
-### 第 2 题
-
-**结合“给定资料”的内容联系目前经济危机现状，请提出浙江经济发展应如何走出困境的思路。（30分）**
-
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16、material-17、material-18、material-19、material-20
-
-作答要求：
-
-要求：视野开阔，思路清晰，表述简洁，条理清楚，字数不超过500字。
-
-### 第 3 题
-
-**请从我省实际出发，围绕“给定资料”的主旨，自选角度，自拟标题，写一篇文章。（50分）**
-
-关联材料：material-1、material-2、material-3、material-4、material-5、material-6、material-7、material-8、material-9、material-10、material-11、material-12、material-13、material-14、material-15、material-16、material-17、material-18、material-19、material-20
-
-作答要求：
-
-要求：观点明确，见解独到，认识深刻。结构完整，条理清晰，内容充实；语言流畅，字数1000~1200字。
-
-## 答案与解析
-
-<details><summary>第 1 题</summary>
+<details><summary>第 1 题 · 答案与解析</summary>
 
 **参考答案（粉笔题库参考内容）**
 
@@ -162,11 +146,19 @@
 
 **解析状态：unknown（来源未提供）**
 
-
-
 </details>
 
-<details><summary>第 2 题</summary>
+### 第 2 题
+
+**结合“给定资料”的内容联系目前经济危机现状，请提出浙江经济发展应如何走出困境的思路。（30分）**
+
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16、材料 17、材料 18、材料 19、材料 20
+
+作答要求：
+
+要求：视野开阔，思路清晰，表述简洁，条理清楚，字数不超过500字。
+
+<details><summary>第 2 题 · 答案与解析</summary>
 
 **参考答案（粉笔题库参考内容）**
 
@@ -182,11 +174,19 @@
 
 **解析状态：unknown（来源未提供）**
 
-
-
 </details>
 
-<details><summary>第 3 题</summary>
+### 第 3 题
+
+**请从我省实际出发，围绕“给定资料”的主旨，自选角度，自拟标题，写一篇文章。（50分）**
+
+关联材料：材料 1、材料 2、材料 3、材料 4、材料 5、材料 6、材料 7、材料 8、材料 9、材料 10、材料 11、材料 12、材料 13、材料 14、材料 15、材料 16、材料 17、材料 18、材料 19、材料 20
+
+作答要求：
+
+要求：观点明确，见解独到，认识深刻。结构完整，条理清晰，内容充实；语言流畅，字数1000~1200字。
+
+<details><summary>第 3 题 · 答案与解析</summary>
 
 **参考答案（粉笔题库参考内容）**
 
@@ -203,7 +203,5 @@
 反者道之动，面对金融危机我们要有逆势而上，不退反进的勇气，也要有敏锐的洞察力和良好的判断力以及长远的眼光，这样才能变被动为主动，化危为机，推动我省经济向纵深方向发展。
 
 **解析状态：unknown（来源未提供）**
-
-
 
 </details>

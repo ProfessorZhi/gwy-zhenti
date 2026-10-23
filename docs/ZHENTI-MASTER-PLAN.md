@@ -11,7 +11,7 @@
 
 | 事项 | 决定 |
 |---|---|
-| 范围 | 国考、省考；行测、申论；默认 2016–当年，**浙江取粉笔上全部年份** |
+| 范围 | 国考、省考；行测、申论；**全量年份 2008–当年**（不设历史下限，各地区一致） |
 | 目录 | 就用本库现有目录，不另开目录 |
 | 和本库冲突 | **一律以粉笔为准，直接覆盖**同一卷；答案、解析也用粉笔的，不另注明 |
 | 粉笔缺的题 | 本库有就用本库补；都没有就保留题位、标"粉笔暂未收录本题"，照常发布 |
@@ -52,7 +52,8 @@
 
 代码：一律用 main 最新提交。
 
-**现状（2026-10-22）**：L1 已完成，main 有 408 份粉笔行测；其中 340 份原先用拼音卷名另存、没有覆盖原卷，已由 `worker/fix-paper-names.mjs` 改正（行测共 494 份，不再重复）。申论粉笔卷 0 份 → 下一步 S1。
+**历史记录（2026-10-22）**：当时 L1 已完成，main 有 408 份粉笔行测；其中 340 份原先用拼音卷名另存、没有覆盖原卷，已由 `worker/fix-paper-names.mjs` 改正（行测共 494 份，不再重复）。当时申论粉笔卷 0 份 → 下一步 S1。
+**当前规模（2026-10-23，见 README）**：库内 1,422 份（行测 533 / 申论 889），粉笔来源 1,213 份（行测 520 / 申论 693）；按上述 grep 口径 `Fenbi-priority structural check` 667 份（行测 104 / 申论 563）。
 
 ### L1 首批行测落盘（现在就做；不开浏览器，不停服务）
 
@@ -70,7 +71,7 @@ gate.ok=false 时不要改任何东西，原样贴 reasons，交给 Claude Code�
 ### L2 生产切到 worker，持续抓新卷并自动推 main
 
 ```text
-重新生成候选（浙江不设年份下限）：node driver/build-candidates-live.mjs
+重新生成候选（不设年份下限）：node driver/build-candidates-live.mjs
 collector.env：SERVICE_MODE=worker、INTEG_REPO=<INTEG>、RIGHTS_FILE、PUSH=1、AUTO_MERGE=1、
   WORKER_TABS=3、WORKER_DWELL_MS=15000、WORKER_MAX_PAPERS 依次 3 → 10 → 60
 停用 fenbi-publisher，重启 fenbi-pipeline。每档跑一轮。

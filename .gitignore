@@ -23,3 +23,7 @@ __pycache__/
 **/.env.local
 **/*.service.env
 **/rights.json
+
+# ── 一次性审计产物（体积大、可重新生成）──────────────────────────────
+reports/image-audit-*.json
+reports/structure-audit-*.json
