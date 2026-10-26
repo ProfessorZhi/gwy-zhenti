@@ -15,7 +15,7 @@
 # 2014年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2014 · 行测 · A类** ｜ 105 题 · 图片 139 处 · 答案随题折叠
+> **江苏 · 2014 · 行测 · A类** ｜ 105 题 · 图片 99 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -938,7 +938,7 @@ B
 
 **解析**
 
-数列起伏较大，且存在特征数字，考虑幂次规律。观察发现，题干数列分别为：1²，11²，21²，31²、41²，![](assets-fenbi-26633/ff641739fc0646363bf7d6243391b3d31ae79b4b24543b499f6179b14d229b81.png)，则下一项应为![](assets-fenbi-26633/c8c2481890555b244b32a37d794c19b206ab9ccab04ccd17fcbea8061ecf4983.png)。
+数列起伏较大，且存在特征数字，考虑幂次规律。观察发现，题干数列分别为：1²，11²，21²，31²、41²，![](assets-fenbi-26633/ff641739fc0646363bf7d6243391b3d31ae79b4b24543b499f6179b14d229b81.png)，则下一项应为51^2。
 
 故正确答案为B。
 
@@ -1006,15 +1006,15 @@ D
 
 ### 第 30 题
 
-1/3，1/7，![](assets-fenbi-26633/811fc9c0691e450f1436cddfaaa82eca74435c4b44419fec65ea30f44e4b1ffd.png)，![](assets-fenbi-26633/2be24936af915da97b79e2bbb7aae459d2f699d8ada70585f1f78b9bcb6cdb32.png)，![](assets-fenbi-26633/2f2997308674f0f70eff4576b8f3b90ec75ec4cebcd941bd70f863695eb38914.png)，（    ）
+1/3，1/7，7/9，1/31，19/45，（    ）
 
-A. ![](assets-fenbi-26633/e22d53c0254c874061a36178223a71a7e1f8fd49029906ef78dcc866938aff64.png)
+A. 11/21
 
-B. ![](assets-fenbi-26633/cc7170d30240a1d0c9168738278bab395b69a744c1b83f88637d2cc987a7aad9.png)
+B. 13/51
 
-C. ![](assets-fenbi-26633/6db1eed841a4b40b46bd854295b27f6736702057a9c17d226b850a931e1af93e.png)
+C. 63/65
 
-D. ![](assets-fenbi-26633/efa0ace720489a33666454634da33046adc4bebc4f2ef1a83e68ffd92672cb31.png)
+D. 91/165
 
 <details><summary>第 30 题 · 答案与解析</summary>
 
@@ -1130,7 +1130,7 @@ D
 
 **解析**
 
-根据题干条件可知要使生产最多，需效率最大，不管是甲配件还是乙配件都是师傅的效率比较大，但是对于师傅做甲乙配件的效率之比为![](assets-fenbi-26633/a8fa679d9c2ec7038b6abf80fe2a9ce2fb3f4b710d3c572759e7f5c719e94e34.png)，对于徒弟做甲乙配件的效率之比为![](assets-fenbi-26633/ae48f88379569b24093b9329f2853abfd334806f03d2c49dd6fad534556083de.png)，可以看出徒弟做甲配件的相对效率比师傅要高，所以让徒弟去做甲配件，师傅去做乙配件。可让徒弟的全部时间做他比较擅长的甲配件，即![](assets-fenbi-26633/96f32adbb3707e54a706cf1563283b39600b7f446c3debcb1810b9f132e6b492.png)个。为避免浪费，先让师傅做完与徒弟数量相同的乙配件900个，需要![](assets-fenbi-26633/7c13aa9ae825aada37981bee428f2460a12653e93cd43e985a3a759356e30ad5.png)天，还剩下3天时间，师傅每天生产甲配件个数是乙配件的两倍，则花一天时间生产甲配件，剩下两天时间生产乙配件，则该种产品套数为900 + 150 = 1050套。
+根据题干条件可知要使生产最多，需效率最大，不管是甲配件还是乙配件都是师傅的效率比较大，但是对于师傅做甲乙配件的效率之比为150/75=2/1，对于徒弟做甲乙配件的效率之比为![](assets-fenbi-26633/ae48f88379569b24093b9329f2853abfd334806f03d2c49dd6fad534556083de.png)，可以看出徒弟做甲配件的相对效率比师傅要高，所以让徒弟去做甲配件，师傅去做乙配件。可让徒弟的全部时间做他比较擅长的甲配件，即![](assets-fenbi-26633/96f32adbb3707e54a706cf1563283b39600b7f446c3debcb1810b9f132e6b492.png)个。为避免浪费，先让师傅做完与徒弟数量相同的乙配件900个，需要![](assets-fenbi-26633/7c13aa9ae825aada37981bee428f2460a12653e93cd43e985a3a759356e30ad5.png)天，还剩下3天时间，师傅每天生产甲配件个数是乙配件的两倍，则花一天时间生产甲配件，剩下两天时间生产乙配件，则该种产品套数为900 + 150 = 1050套。
 
 故正确答案为D。
 
@@ -1247,7 +1247,7 @@ C
 
 **解析**
 
-设甲的成本为x元，则定价为1.3x元。乙的成本为（100-x）元，定价为1.2(100-x)元。根据利润公式：售价-成本=利润。可列方程为：![](assets-fenbi-26633/4d4df37ffebad19b71b0ea636eb596b2afc8f25c57cc5a82df585c9b5f9e6a7d.png)![](assets-fenbi-26633/0659bb13ea4068973a2342f19e382bb2e7a20c946dc7dd2ca3114bbf9726109d.png)，解得x=70。
+设甲的成本为x元，则定价为1.3x元。乙的成本为（100-x）元，定价为1.2(100-x)元。根据利润公式：售价-成本=利润。可列方程为：![](assets-fenbi-26633/4d4df37ffebad19b71b0ea636eb596b2afc8f25c57cc5a82df585c9b5f9e6a7d.png)=14.3，解得x=70。
 
 故正确答案为C。
 
@@ -1307,7 +1307,7 @@ D
 
 **解析**
 
-根据条件，设甲的工作效率为![](assets-fenbi-26633/d5b0e0937565ec9452ed3d4099dcdff43d7afdd389cb58f7f5d0806a66a92149.png)千米/天，则乙的工作效率为（P+50)千米/天。则由题意可列式：3P+(P+ P+50)×6=2100，解方程得：P=120。则乙的工作效率为：P+50=170千米/天。
+根据条件，设甲的工作效率为P千米/天，则乙的工作效率为（P+50)千米/天。则由题意可列式：3P+(P+ P+50)×6=2100，解方程得：P=120。则乙的工作效率为：P+50=170千米/天。
 
 故正确答案为D。
 
@@ -1323,13 +1323,13 @@ D
 
 ![](assets-fenbi-26633/8198c83db509586449d6c9f9ad509939c8cd4a0b72698b79d26f6ef61b096187.png)
 
-A. ![](assets-fenbi-26633/b76027518e9003c14be6a30903343fbc27380d355b17226d92b88da3ab866157.png)
+A. √10
 
-B. ![](assets-fenbi-26633/6c3be354b02237f93d82ea2fe731e7462ef2f03296f9bba48425942a22326e06.png)
+B. √7
 
 C. 3
 
-D. ![](assets-fenbi-26633/00f99616924baa79106acfc23e72629d376debbe83ceb8182b57d731b59850a9.png)
+D. √11
 
 <details><summary>第 40 题 · 答案与解析</summary>
 
@@ -3061,7 +3061,7 @@ B
 
 **解析**
 
-（1）正确。查材料可知2013年1—9月苏南生产总值为26273.1亿元，苏中为8426.8亿元，同比分别增长10.2%、11.9%，则2012年1—9月苏南生产总值为![](assets-fenbi-26633/0f67f59822a22061a36491ff3a8994d1d3f28bbcfa9eebf5d5af33b2e81c7a57.png)，苏中为![](assets-fenbi-26633/1d38cb850001a527b33a3344f4fc5a3bcedde63bae04dfa3a77f47c45efb42cd.png)，得![](assets-fenbi-26633/de0409ecbd16997080d29e9c5aaa25e5cf8b4a69eeb41850428ef56447787a1b.png)\=![](assets-fenbi-26633/2255e99cdaf09d6b336a108e7254bc93524542045b8215ba55506c8cd38ac664.png)![](assets-fenbi-26633/1cc3dc0a7f5ede6183143eee6e8b905f1ea36243bd162c0b7fde1bbb98921feb.png)![](assets-fenbi-26633/27ca431cc82a7e4b46965e0acc4b0b031fa94e2090435c0b50f0ae1e754b8c40.png)，其中8426.8![](assets-fenbi-26633/1cc3dc0a7f5ede6183143eee6e8b905f1ea36243bd162c0b7fde1bbb98921feb.png)3&lt;26273.1，且![](assets-fenbi-26633/27ca431cc82a7e4b46965e0acc4b0b031fa94e2090435c0b50f0ae1e754b8c40.png)&lt;1，所以苏中地区生产总值不足苏南地区的1/3。
+（1）正确。查材料可知2013年1—9月苏南生产总值为26273.1亿元，苏中为8426.8亿元，同比分别增长10.2%、11.9%，则2012年1—9月苏南生产总值为![](assets-fenbi-26633/0f67f59822a22061a36491ff3a8994d1d3f28bbcfa9eebf5d5af33b2e81c7a57.png)，苏中为![](assets-fenbi-26633/1d38cb850001a527b33a3344f4fc5a3bcedde63bae04dfa3a77f47c45efb42cd.png)，得苏中/苏南\=8426.8/26273.1×![](assets-fenbi-26633/27ca431cc82a7e4b46965e0acc4b0b031fa94e2090435c0b50f0ae1e754b8c40.png)，其中8426.8×3&lt;26273.1，且![](assets-fenbi-26633/27ca431cc82a7e4b46965e0acc4b0b031fa94e2090435c0b50f0ae1e754b8c40.png)&lt;1，所以苏中地区生产总值不足苏南地区的1/3。
 
 （2）错误。2013年1-9月苏北工业用电量为539.6亿千瓦时，增幅为10.8%，增长量约为![](assets-fenbi-26633/99290c4749d083e13947b215bce6431ae7fb731e3b95dfd96fc8f24ba561c2cb.png)![](assets-fenbi-26633/714fa9ecd7b15b05130778a002afd868e78e437585e17d4f4cdbc25ac485cead.png)![](assets-fenbi-26633/608aeaa241e78b1f138b0ce2f1c00b5857b63aea920c1c9ebdb8b1214d626719.png)亿千瓦时；沿海地区工业用电量384.4亿千瓦时，同比增长13.8%，增长量约为![](assets-fenbi-26633/f4c1a86ed1fd0b31648e5ed4875cf9318328c18678a7746dcb6bb2886f62571e.png)![](assets-fenbi-26633/f4ec643f474c05eef336305d345c9559ad9dffaedc87b8482166d64d255501de.png)![](assets-fenbi-26633/bde08fc762ad0468b31b132ca759ee6e31bedfa2b2e3e5ce71c982dbd5211925.png)亿千瓦时，苏北较大。
 
@@ -3165,7 +3165,7 @@ D
 
 **解析**
 
-根据题干“2005-2010年，该市每······中······含量最少的年份是”，可判定本题为现期平均数比较问题。定位统计表可得2005-2010年该市废气排放量及二氧化硫排放量。则选项中各年份每标立方米废气排放中二氧化硫含量分别为：2005年：![](assets-fenbi-26633/a46411275f29d7887cb7b5808e87455deedfc2ad0cccb930bd37e87745727466.png)；2007年：![](assets-fenbi-26633/cafba3ca17cd3d988d613762ddf85a6d21558d592a9e1f495fc338617adb8f6f.png)；2009年：![](assets-fenbi-26633/ed2f60367ecc9ba6a4d669ebd092c69571470e4ab3532e06890daab53e611636.png)；2010年：![](assets-fenbi-26633/f2819017acc54d717241deec557a8b03c456991ea168f3d72f541c57f5e19dda.png)。观察发现，2010年分子最小，分母最大，即该分数最小。因此，2005-2010年，该市每标立方米工业废气排放中二氧化硫含量最少的年份为2010年。
+根据题干“2005-2010年，该市每······中······含量最少的年份是”，可判定本题为现期平均数比较问题。定位统计表可得2005-2010年该市废气排放量及二氧化硫排放量。则选项中各年份每标立方米废气排放中二氧化硫含量分别为：2005年：14.91/3754；2007年：13.84/4042；2009年：13.4/4734；2010年：11.55/5738.23。观察发现，2010年分子最小，分母最大，即该分数最小。因此，2005-2010年，该市每标立方米工业废气排放中二氧化硫含量最少的年份为2010年。
 
 故正确答案为D。
 
@@ -3193,7 +3193,7 @@ C
 
 **解析**
 
-根据假设，2010-2012年保持相同的年平均增长速度可以表示为![](assets-fenbi-26633/e424a14cd8d2c4dd8ad62774fa47ff10b3992696a3054ecbdac31b4e10ed6fbc.png)，则2015年该值为![](assets-fenbi-26633/f3453bbc76e45f4a5e4dcf7a4a2855f8b3c66f10e16915f43edbd2706c6b6325.png)![](assets-fenbi-26633/48eece7e4f86c26a5c0b8ab14ea3c1f4c200c14d5c1f390e5c7f047bc34d4e7b.png)![](assets-fenbi-26633/4afcd53de8470e25985b0783ba04101d86b6a3fa9e2fcf2c7226dd6f9f791072.png)![](assets-fenbi-26633/7c013077036301d57b9aa4111e88ad4f2c4a70203e517fe259a2807dd3dd8d20.png)≈21/3![](assets-fenbi-26633/2619389dbbeb9f35b6e36c54be11b7de667f96fd930c7f57e95585e2a562d453.png)1/3![](assets-fenbi-26633/3bd137ba57f7ece7f5c77ad5ac007d99390fe2c54554641120133fc64a5ae0f6.png)![](assets-fenbi-26633/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)![](assets-fenbi-26633/f3a842909e46b9b28239c863759c53459d43e718b1028f13bec4963a56b5fb92.png)![](assets-fenbi-26633/96506fec38d2b89ed6d010162ad110f30d1adf9e8615c428cef43b6e5aed489d.png)![](assets-fenbi-26633/1cc3dc0a7f5ede6183143eee6e8b905f1ea36243bd162c0b7fde1bbb98921feb.png)![](assets-fenbi-26633/96506fec38d2b89ed6d010162ad110f30d1adf9e8615c428cef43b6e5aed489d.png)![](assets-fenbi-26633/7713b853f3d8f15985aa0c787f55932e441915b5f423b92e8593010c645eda75.png)![](assets-fenbi-26633/ec5c3e57e9bf6236cdd87135ac3b7cb1d6cec6318f2fc21485bd14120a4298d9.png)![](assets-fenbi-26633/f3a842909e46b9b28239c863759c53459d43e718b1028f13bec4963a56b5fb92.png)![](assets-fenbi-26633/767b7ce5b173e87be4739ce2549d21a827d47228d20919db3166d81bb8b90c04.png)![](assets-fenbi-26633/0008ae3800a71abf5dc94247661c3070363d4bc5fe0cf4d440843702b4ee27c9.png)![](assets-fenbi-26633/136360b8229cc299b9c963336c3368b08443e67521531112057bc609df056fc9.png)≈1.5亿吨，因此2015年该市工业废水排放量预计达到1.5亿吨。
+根据假设，2010-2012年保持相同的年平均增长速度可以表示为![](assets-fenbi-26633/e424a14cd8d2c4dd8ad62774fa47ff10b3992696a3054ecbdac31b4e10ed6fbc.png)，则2015年该值为![](assets-fenbi-26633/f3453bbc76e45f4a5e4dcf7a4a2855f8b3c66f10e16915f43edbd2706c6b6325.png)![](assets-fenbi-26633/48eece7e4f86c26a5c0b8ab14ea3c1f4c200c14d5c1f390e5c7f047bc34d4e7b.png)=2.33×2.33/3.63≈21/3×21/3÷32/3=7/3×7/3÷11/3=49/33=1+16/33≈1.5亿吨，因此2015年该市工业废水排放量预计达到1.5亿吨。
 
 故正确答案为C。
 
@@ -3445,7 +3445,7 @@ B
 
 **解析**
 
-由表格第二列可知，2011年公立医院诊疗人次为20.5亿人次，全国医疗卫生机构诊疗人次为62.7亿人次，则公立医院诊疗人次占全国医疗卫生机构诊疗人次的比重为![](assets-fenbi-26633/21569a4dba15f4e362ecbaf328846fa0a3065033627dd2e7dd8634de8711b7ee.png)，选项差距较小，采用直除，结果前两位为32，与B项最接近。
+由表格第二列可知，2011年公立医院诊疗人次为20.5亿人次，全国医疗卫生机构诊疗人次为62.7亿人次，则公立医院诊疗人次占全国医疗卫生机构诊疗人次的比重为20.5/62.7，选项差距较小，采用直除，结果前两位为32，与B项最接近。
 
 故正确答案为B。
 
@@ -3673,7 +3673,7 @@ A
 
 V_1、V_2、V_3分别表示2012年全国光缆线路长度、移动电话交换机容量和互联网国际出口宽带的增长率。
 
-全国光缆线路长度增长率![](assets-fenbi-26633/86164d0c12c54742cb369b081652ac694f737fcf79d3006962e0d8b1badaa030.png)![](assets-fenbi-26633/3db9a2943f48986ec9b19570cf1548703f5d8d9032873b01d427ad5432f3c63a.png)；移动电话交换机容量增长率![](assets-fenbi-26633/859fb07376f774560da9ee92bef43cef38c1cfe2aa0ac633e6135426bfa69f3b.png)![](assets-fenbi-26633/afe35731f1700157bf360aaf4e9d90f3a761f05bb311e831b49e59abbf273aa8.png)；互联网国际出口带宽的增长率![](assets-fenbi-26633/601bf78b3d2d0b801612f5ba91428251fcfb55dd704f2fe31fa2b2779ca12943.png)，对比得![](assets-fenbi-26633/9758c26cbebf5b774a98a1c7ce37754def7b29356ce8aa2df47ebd65de17c416.png)。
+全国光缆线路长度增长率V_1=![](assets-fenbi-26633/3db9a2943f48986ec9b19570cf1548703f5d8d9032873b01d427ad5432f3c63a.png)；移动电话交换机容量增长率V_2=![](assets-fenbi-26633/afe35731f1700157bf360aaf4e9d90f3a761f05bb311e831b49e59abbf273aa8.png)；互联网国际出口带宽的增长率![](assets-fenbi-26633/601bf78b3d2d0b801612f5ba91428251fcfb55dd704f2fe31fa2b2779ca12943.png)，对比得![](assets-fenbi-26633/9758c26cbebf5b774a98a1c7ce37754def7b29356ce8aa2df47ebd65de17c416.png)。
 
 故正确答案为A。
 

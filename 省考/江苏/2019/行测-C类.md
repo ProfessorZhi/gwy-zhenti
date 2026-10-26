@@ -15,7 +15,7 @@
 # 2019年江苏省公务员录用考试《行测》题（C类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2019 · 行测 · C类** ｜ 130 题 · 图片 191 处 · 答案随题折叠
+> **江苏 · 2019 · 行测 · C类** ｜ 130 题 · 图片 181 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1845,7 +1845,7 @@ B
 
 **解析**
 
-将题干统一转化为根式：√6、√22、√14、√18、√16、（），观察根号内数字规律。后项-前项，可得16、-8、4、-2、（），是公比为![](assets-fenbi-89294/003de4b46cd19e5d0d3fff69540ae762aecef62c26b2344aa0228274c389a482.png)的等比数列，则下一项![](assets-fenbi-89294/4cf854af7f0fc6468222bcbf5230ec3c4c83806e029b9579c52ef97ce523877e.png)。故题干所求项![](assets-fenbi-89294/05f16518ddadc3589eb36e983ed0c761dca774e8d54433a2a0399f3349bb11f3.png)。
+将题干统一转化为根式：√6、√22、√14、√18、√16、（），观察根号内数字规律。后项-前项，可得16、-8、4、-2、（），是公比为1/2的等比数列，则下一项![](assets-fenbi-89294/4cf854af7f0fc6468222bcbf5230ec3c4c83806e029b9579c52ef97ce523877e.png)。故题干所求项![](assets-fenbi-89294/05f16518ddadc3589eb36e983ed0c761dca774e8d54433a2a0399f3349bb11f3.png)。
 
 故正确答案为B。
 
@@ -1887,15 +1887,15 @@ A
 
 ### 第 50 题
 
-256，16，![](assets-fenbi-89294/651374c4f79892cd516b1e8f8f28bce0757c196348e71eb0322c347ccd7ce3ea.png)，4，![](assets-fenbi-89294/9ce5e7daeaa7390fe2def11fcb655dfe48ee3d5a6125f3aece2d2bc86aa3de70.png)，（ ）
+256，16，4³√4，4，2⁵√8，（ ）
 
 A. 2
 
-B. ![](assets-fenbi-89294/3c52e8df7bd231a22f58ab0e1b61cb2c6d14a6eccc9f01e3dc3d30f8e38b6453.png)
+B. 2⁵√2
 
-C. ![](assets-fenbi-89294/dae569478790a6e05a3cafed35bf949013689ccb50bb6642affc95aa065735e8.png)
+C. 2⁴√2
 
-D. ![](assets-fenbi-89294/478258ddaabd6b11ad5812a705e2d887f7333364ee4149d56067391e4cf8f102.png)
+D. 2³√2
 
 <details><summary>第 50 题 · 答案与解析</summary>
 
@@ -2317,7 +2317,7 @@ B
 
 **解析**
 
-假设4个派出所合计出警次数为x次，则乙派出所出警次数为(7/40)x次。根据题意可知，(甲+乙)+(乙+丙+丁)=(甲+乙+丙+丁)![](assets-fenbi-89294/8642cde6bffa164b5c7e898ba7d7cce132246c83e009c987ed3436d5f67ccf5e.png)![](assets-fenbi-89294/daa00bc9b78e9abfb5d2977bc24c8c83c8f6256b80decfd376e442bc9c37c14e.png)![](assets-fenbi-89294/6eb7821b236f7995d97dc5b2686877bd6d8081c03cb1c52a4ac7c8ef2270a7d2.png)\=235，解得x=200，则乙派出所出警次数为![](assets-fenbi-89294/319863d4c523b804d9f5d3c111a0f8c157a204a0b06f15f1b563ed07ba548668.png)=35次，故甲派出所出警次数为95-35=60次。
+假设4个派出所合计出警次数为x次，则乙派出所出警次数为(7/40)x次。根据题意可知，(甲+乙)+(乙+丙+丁)=(甲+乙+丙+丁)+乙=![](assets-fenbi-89294/daa00bc9b78e9abfb5d2977bc24c8c83c8f6256b80decfd376e442bc9c37c14e.png)![](assets-fenbi-89294/6eb7821b236f7995d97dc5b2686877bd6d8081c03cb1c52a4ac7c8ef2270a7d2.png)\=235，解得x=200，则乙派出所出警次数为![](assets-fenbi-89294/319863d4c523b804d9f5d3c111a0f8c157a204a0b06f15f1b563ed07ba548668.png)=35次，故甲派出所出警次数为95-35=60次。
 
 故正确答案为B。
 
@@ -4367,7 +4367,7 @@ D
 
 ### 第 114 题
 
-设2018年四季度我国硫酸、烧碱、纯碱产量的同比增速分别为![](assets-fenbi-89294/d8a9c2bd844c6961fe5c3adde77f0759628f8459fa215667652f345b051e0924.png)、![](assets-fenbi-89294/f6e759781e37f356c6bb9638a5a2848f00c4d35edc9bf3be3e46b5d6fb247de2.png)、![](assets-fenbi-89294/4137cf5cd9fc7aac8a88b0837c22da88d000cca863f24c1e526906b3433f5f98.png)，则下列关系正确的是
+设2018年四季度我国硫酸、烧碱、纯碱产量的同比增速分别为V_硫、V_烧、V_纯，则下列关系正确的是
 
 A. ![](assets-fenbi-89294/d268b0b7c5922926e6a069304842abdfdcbcbdfe344a91ed3f6a8504cc9e4cf2.png)
 

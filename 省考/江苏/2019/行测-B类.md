@@ -15,7 +15,7 @@
 # 2019年江苏省公务员录用考试《行测》题（B类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2019 · 行测 · B类** ｜ 135 题 · 图片 184 处 · 答案随题折叠
+> **江苏 · 2019 · 行测 · B类** ｜ 135 题 · 图片 180 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1829,7 +1829,7 @@ A
 
 整数部分：4、9、25、49、121、（），所有数字均为平方数，即：2^2、3^2、5^2、7^2、11^2、（），底数为连续质数，则下一项应为![](assets-fenbi-89293/544556d266fa9c0978dcc586d42970c6e17a0b2e552f85a5d1ebf7af19f53b33.png)；
 
-小数部分：1、4、9、16、25、（），所有数字均为平方数，即：![](assets-fenbi-89293/a0fdf2f7d682b3f59afd80325c6fa11d7f40170c8f31f71520391e1c49ad2279.png)、2^2、3^2、4^2、5^2、（），底数为连续自然数，则下一项应为6^2=36。
+小数部分：1、4、9、16、25、（），所有数字均为平方数，即：1^2、2^2、3^2、4^2、5^2、（），底数为连续自然数，则下一项应为6^2=36。
 
 将整数与小数部分组合后可得169.36。
 
@@ -2019,7 +2019,7 @@ B
 
 **解析**
 
-假设4个派出所合计出警次数为x次，则乙派出所出警次数为(7/40)x次。根据题意可知，(甲+乙)+(乙+丙+丁)=(甲+乙+丙+丁)![](assets-fenbi-89293/8642cde6bffa164b5c7e898ba7d7cce132246c83e009c987ed3436d5f67ccf5e.png)![](assets-fenbi-89293/daa00bc9b78e9abfb5d2977bc24c8c83c8f6256b80decfd376e442bc9c37c14e.png)![](assets-fenbi-89293/6eb7821b236f7995d97dc5b2686877bd6d8081c03cb1c52a4ac7c8ef2270a7d2.png)\=235，解得x=200，则乙派出所出警次数为![](assets-fenbi-89293/319863d4c523b804d9f5d3c111a0f8c157a204a0b06f15f1b563ed07ba548668.png)=35次，故甲派出所出警次数为95-35=60次。
+假设4个派出所合计出警次数为x次，则乙派出所出警次数为(7/40)x次。根据题意可知，(甲+乙)+(乙+丙+丁)=(甲+乙+丙+丁)+乙=![](assets-fenbi-89293/daa00bc9b78e9abfb5d2977bc24c8c83c8f6256b80decfd376e442bc9c37c14e.png)![](assets-fenbi-89293/6eb7821b236f7995d97dc5b2686877bd6d8081c03cb1c52a4ac7c8ef2270a7d2.png)\=235，解得x=200，则乙派出所出警次数为![](assets-fenbi-89293/319863d4c523b804d9f5d3c111a0f8c157a204a0b06f15f1b563ed07ba548668.png)=35次，故甲派出所出警次数为95-35=60次。
 
 故正确答案为B。
 
@@ -2079,7 +2079,7 @@ C
 
 **解析**
 
-设环形跑道周长为S，甲跑步速度为V_甲，乙走路速度为![](assets-fenbi-89293/e3efa504bada47424180159018eb97a14ac676c08ae5f963914aad7304364baf.png)。代入追及公式和相遇公式可得，甲追上乙所需时间T_同向![](assets-fenbi-89293/76367a1a24d3218bc83e9600486efd28822be1b62bfb54fe8d2746fe2c267a4c.png)，两人相向而行相遇所需时间T_相向![](assets-fenbi-89293/c0755585b0a3065a28122e8fe1a5ebf2fbcf9ee1522cde0e7a7180a83db74e1f.png)。根据题意可知，![](assets-fenbi-89293/10596a96d39cbb637646ce9d9ed72db64dae45ebba45b8a62ead2264577eaf3c.png)=3x![](assets-fenbi-89293/1a1da1334e1df726a276806bdd82bfa21c80861341a41582b807ee8970843c30.png)，化简可得![](assets-fenbi-89293/26fc6c3e159f52853f2ffdb4c8d36010a163694a27c07d2693211564db5d49ff.png)，则甲、乙速度之比为2:1。
+设环形跑道周长为S，甲跑步速度为V_甲，乙走路速度为V_乙。代入追及公式和相遇公式可得，甲追上乙所需时间T_同向![](assets-fenbi-89293/76367a1a24d3218bc83e9600486efd28822be1b62bfb54fe8d2746fe2c267a4c.png)，两人相向而行相遇所需时间T_相向![](assets-fenbi-89293/c0755585b0a3065a28122e8fe1a5ebf2fbcf9ee1522cde0e7a7180a83db74e1f.png)。根据题意可知，![](assets-fenbi-89293/10596a96d39cbb637646ce9d9ed72db64dae45ebba45b8a62ead2264577eaf3c.png)=3x![](assets-fenbi-89293/1a1da1334e1df726a276806bdd82bfa21c80861341a41582b807ee8970843c30.png)，化简可得![](assets-fenbi-89293/26fc6c3e159f52853f2ffdb4c8d36010a163694a27c07d2693211564db5d49ff.png)，则甲、乙速度之比为2:1。
 
 故正确答案为C。
 
@@ -2271,7 +2271,7 @@ D
 
 **解析**
 
-因为G是平行四边形对角线的交点，则S△ABC=1/2 平行四边形ABCD，又因为AB＝3AE，所以![](assets-fenbi-89293/d7cd9f0a152182bcdc24d885353f31aafd95b2af0091b7a2a31b29a968b3465c.png)=1/6平行四边形ABCD。因为AE//CD，所以△AEF相似△CDF，故EF：FD＝AE：CD＝1:3，即EF:ED=1:4，且△AEF与△AED同高，所以S△AEF=1/4![](assets-fenbi-89293/bb661599fe4b906ab3e8192dd98044a9a4ab82e7a5a7be0f707a10d9ead5b6f6.png)，则S△AEF=1/24平行四边形ABCD。S四边形EFGB＝S△AGB－S△AEF=1/4平行四边形ABCD![](assets-fenbi-89293/1961b351cf65f914cdd779db546077bf673a5b906da96b5487d9e29b8de701a6.png)1/24平行四边形ABCD=5/24平行四边形ABCD。
+因为G是平行四边形对角线的交点，则S△ABC=1/2 平行四边形ABCD，又因为AB＝3AE，所以![](assets-fenbi-89293/d7cd9f0a152182bcdc24d885353f31aafd95b2af0091b7a2a31b29a968b3465c.png)=1/6平行四边形ABCD。因为AE//CD，所以△AEF相似△CDF，故EF：FD＝AE：CD＝1:3，即EF:ED=1:4，且△AEF与△AED同高，所以S△AEF=1/4![](assets-fenbi-89293/bb661599fe4b906ab3e8192dd98044a9a4ab82e7a5a7be0f707a10d9ead5b6f6.png)，则S△AEF=1/24平行四边形ABCD。S四边形EFGB＝S△AGB－S△AEF=1/4平行四边形ABCD-1/24平行四边形ABCD=5/24平行四边形ABCD。
 
 ![](assets-fenbi-89293/85f1e2978eb92b2cc39215658057f3847a4694ef645b40ae286c68ed9d640b0f.png)
 

@@ -15,7 +15,7 @@
 # 2010年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2010 · 行测 · A类** ｜ 105 题 · 图片 167 处 · 答案随题折叠
+> **江苏 · 2010 · 行测 · A类** ｜ 105 题 · 图片 126 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -610,7 +610,7 @@ A项出自书店老板之口，并非作者对《王干随笔选》的直接评�
 
 ### 第 16 题
 
-![](assets-fenbi-159/b72dae6261ed354ca2040aa77a8e80ed6584304e5f3d8ae4d82cf417793034fe.png)，1，5，17，53，（  ）
+-1/3，1，5，17，53，（  ）
 
 A. 153
 
@@ -628,7 +628,7 @@ C
 
 **解析**
 
-数列无明显特征，优先考虑作差。后项减前项得到新数列：![](assets-fenbi-159/f770b7c79b327b03c3f1d0efb7d7f2a49d3832125d55849f54281381c4d9fa7b.png)，4，12，36，（    ），是公比为3的等比数列，则新数列下一项为36×3=108，故所求项为53+108=161。
+数列无明显特征，优先考虑作差。后项减前项得到新数列：4/3，4，12，36，（    ），是公比为3的等比数列，则新数列下一项为36×3=108，故所求项为53+108=161。
 
 故正确答案为C。
 
@@ -754,15 +754,15 @@ A
 
 ### 第 21 题
 
-![](assets-fenbi-159/9e3e7b0730aa5dcb58386915ea4526971356b52f62720ebdd51e4e7ce95df39c.png)，1，![](assets-fenbi-159/e2fd8fbe8f199ed7dadeeaf1dbf8e551287eeb96b0866cc576e60d063ed4ec74.png)，![](assets-fenbi-159/89b0729e2dc304c114efe26786ccb87173fd5c31445b622771179d206b5df2a9.png)，![](assets-fenbi-159/b46c4ea79b9f20d3550df1008b1d1c4b35e787f3f254598e0b9c400a78673935.png)，（  ）
+21/32，1，25/24，17/18，43/54，（  ）
 
-A. ![](assets-fenbi-159/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)
+A. 2/3
 
-B. ![](assets-fenbi-159/1f72d2a28147f0a842569a5077a87cd428f0f9ebcf9f4c6e012e1041b46aca80.png)
+B. 53/80
 
-C. ![](assets-fenbi-159/e25de656609dffcfb71d57851360026e4054c5af419aa7688c00c634e7a3c007.png)
+C. 51/81
 
-D. ![](assets-fenbi-159/300498692fc389ac2d0ad9ba2ea09866ad9b786234ee0bd947b0f805c691eed8.png)
+D. 52/81
 
 <details><summary>第 21 题 · 答案与解析</summary>
 
@@ -772,7 +772,7 @@ D
 
 **解析**
 
-数列大部分为分数，考虑分数数列。反约分后，原数列可转化为：![](assets-fenbi-159/033dab5572b468cb68b6757705e156ff24fbed5203a733ec28db6e1d9b0a7085.png)，![](assets-fenbi-159/8cb8611f6bc51cf4ad4b7100bebd5f4448f7c0b80d4d3ee7350a9901be7618af.png)，![](assets-fenbi-159/e2fd8fbe8f199ed7dadeeaf1dbf8e551287eeb96b0866cc576e60d063ed4ec74.png)，![](assets-fenbi-159/e8a68c3504d601eae804b60cd673af4f8aa78823af9416354f83e4fe1863e7d2.png)，![](assets-fenbi-159/b46c4ea79b9f20d3550df1008b1d1c4b35e787f3f254598e0b9c400a78673935.png)。分子部分为：7，16，25，34，43，是公差为9的等差数列，则所求项分子为43+9=52；分母部分为：![](assets-fenbi-159/f3a80485cce29ab4a4fdf4282c5d7caf63364dbe8cb24b1187ec0116b02ddca2.png)，16，24，36，54，是公比为![](assets-fenbi-159/2f8f2e67dfe5ddd8fe3608ff6705b92c79ac07a934f4266b4fc7a726e10b5f7e.png)的等比数列，则所求项分母为![](assets-fenbi-159/45aefcbbba72dc3cb924b39eec04c2122b62083f9037231a81707e0b05e512a5.png)。故所求项为![](assets-fenbi-159/300498692fc389ac2d0ad9ba2ea09866ad9b786234ee0bd947b0f805c691eed8.png)。
+数列大部分为分数，考虑分数数列。反约分后，原数列可转化为：7/(32/3)，16/16，25/24，34/36，43/54。分子部分为：7，16，25，34，43，是公差为9的等差数列，则所求项分子为43+9=52；分母部分为：32/3，16，24，36，54，是公比为3/2的等比数列，则所求项分母为![](assets-fenbi-159/45aefcbbba72dc3cb924b39eec04c2122b62083f9037231a81707e0b05e512a5.png)。故所求项为52/81。
 
 故正确答案为D。
 
@@ -898,13 +898,13 @@ C
 
 一个正方体与其内切球体的表面积比值是：
 
-A. ![](assets-fenbi-159/f74cc232f35186f7ce9461d672d670f086c030b6804e347e049408bb92bae23f.png)
+A. 1/π
 
-B. ![](assets-fenbi-159/aa270dfc1221ddbaa7ca079f9cfa74579c799ceef61e48a352ba456bfe1b65ed.png)
+B. 2/π
 
-C. ![](assets-fenbi-159/be165aab9bd735b8ea8a708a7966ff6c542c6ae217cb0c73090749f114c558e7.png)
+C. 6/π
 
-D. ![](assets-fenbi-159/6ac18d51e2ffd4cf38d18be15343d1972ecad025da3f212328ded2b0811ea28e.png)
+D. 8/π
 
 <details><summary>第 26 题 · 答案与解析</summary>
 
@@ -914,7 +914,7 @@ C
 
 **解析**
 
-一个正方体内切球的半径是正方体棱长的一半。设正方体棱长为2，则其内切球的半径为1，故正方体的表面积![](assets-fenbi-159/e302b8ed9d12b9012bf19d4ee65f7a27821f56fcc87d57564d89d21d2b926a75.png)，内切球的表面积为![](assets-fenbi-159/2a85a8a0d64e73899b550f359ff9598099d82810b239713f944a2636934e1eb3.png)，则正方体的表面积与其内切球体的表面积之比为![](assets-fenbi-159/f840256b30957da6b3d7c12d79ff114af3b5ebaaaad32c4e0b04a22ca9421ee5.png)。
+一个正方体内切球的半径是正方体棱长的一半。设正方体棱长为2，则其内切球的半径为1，故正方体的表面积![](assets-fenbi-159/e302b8ed9d12b9012bf19d4ee65f7a27821f56fcc87d57564d89d21d2b926a75.png)，内切球的表面积为![](assets-fenbi-159/2a85a8a0d64e73899b550f359ff9598099d82810b239713f944a2636934e1eb3.png)，则正方体的表面积与其内切球体的表面积之比为24/4π=6/π。
 
 故正确答案为C。
 
@@ -1002,7 +1002,7 @@ B
 
 **解析**
 
-小圆环的周长为![](assets-fenbi-159/073c73a3795ae1c6f3d48f8e331c0e77ca36d03d91eeb48e5d35837f9c1a0034.png)![](assets-fenbi-159/36c17f8d47955782e247c6f53c94f8d17e459729cda3f4936160477ce2b4fd52.png)厘米，大圆环的周长为![](assets-fenbi-159/b0f663a066252bbde945a840059227877da47c671be4c33b95d90798e015aee0.png)厘米。小圆环所走路程即为大圆环周长，则小圆环所走圈数为![](assets-fenbi-159/15d4c09c9157b76fc5e7bca7387025c324fab82b581afbdf365881302dbd0a2c.png)圈。
+小圆环的周长为2πr =![](assets-fenbi-159/36c17f8d47955782e247c6f53c94f8d17e459729cda3f4936160477ce2b4fd52.png)厘米，大圆环的周长为![](assets-fenbi-159/b0f663a066252bbde945a840059227877da47c671be4c33b95d90798e015aee0.png)厘米。小圆环所走路程即为大圆环周长，则小圆环所走圈数为![](assets-fenbi-159/15d4c09c9157b76fc5e7bca7387025c324fab82b581afbdf365881302dbd0a2c.png)圈。
 
 故正确答案为B。
 
@@ -1092,7 +1092,7 @@ B
 
 **解析**
 
-方法一：根据题意可知，每辆车坐20人将会多出3人，则（总人数-3）是20的倍数，可排除C、D两项；代入A项，总人数为583人，每辆车坐20人，  ![](assets-fenbi-159/210cb546535e5c586afd0fd47e48783d45e0ac3e5f9004a3db1a8c19cab1d0b3.png)，少派一辆车为28辆，![](assets-fenbi-159/ca042e0981994f0fdd8ff5bde683da4e4fb71d3cdd9b29150d384c315a9d847b.png)为非整数，排除；代入B项，总人数为483人，每辆车坐20人，  ![](assets-fenbi-159/60ef0bcbb75e8fdbd088298750f42ef0c2b3482d8f386555a4f394eae336709c.png)，少派一辆车为23辆，![](assets-fenbi-159/96119fd9c3112d2d5f16f450de9f4a517239e6b83f9e206c5f903441216494a5.png)，符合所有条件，当选。
+方法一：根据题意可知，每辆车坐20人将会多出3人，则（总人数-3）是20的倍数，可排除C、D两项；代入A项，总人数为583人，每辆车坐20人，  ![](assets-fenbi-159/210cb546535e5c586afd0fd47e48783d45e0ac3e5f9004a3db1a8c19cab1d0b3.png)，少派一辆车为28辆，583/28为非整数，排除；代入B项，总人数为483人，每辆车坐20人，  ![](assets-fenbi-159/60ef0bcbb75e8fdbd088298750f42ef0c2b3482d8f386555a4f394eae336709c.png)，少派一辆车为23辆，![](assets-fenbi-159/96119fd9c3112d2d5f16f450de9f4a517239e6b83f9e206c5f903441216494a5.png)，符合所有条件，当选。
 
 方法二：若每辆车乘坐20人时少派一辆车，共多出20+3=23人，根据题意可知，这23人能够正好平均分到其他车上，可知其他车的数量应为1或23。若剩余车辆为1时，一辆车上人数为20+23=43人，与每辆汽车最多能坐25人不符，可知剩余车辆为23辆。每辆车加1人，为21人，即这批学生的人数为23×21=483人。
 
@@ -1154,7 +1154,7 @@ A
 
 **解析**
 
-甲工程中，张师傅效率高于李师傅；乙工程中，李师傅效率高于张师傅。因此由张师傅单独完成甲工程，同时李师傅进行乙工程。在张师傅完成甲工程同时，即6天后，乙工程已完成![](assets-fenbi-159/382f174b3d2aea70407e9c782cfbffa0c05165dccc6b14a119dc3bc2ecd635ef.png)。假设乙的工程量为24与30的公倍数120，则张师傅干乙工程的效率为120÷30=4，李师傅干乙工程的效率为120÷24=5，剩余工程量为![](assets-fenbi-159/75701fba9b4fe2619253a78e0c02184e60567703706500d0323ca92802e6bec9.png)，完成乙剩余工程量所需天数为![](assets-fenbi-159/d966d04b799f5fa145ae45f16b479235586a33c99047d0560ba3c7c8f68ee4fb.png)天。所以两人合作完成这两项工程最少需要10+6=16天。
+甲工程中，张师傅效率高于李师傅；乙工程中，李师傅效率高于张师傅。因此由张师傅单独完成甲工程，同时李师傅进行乙工程。在张师傅完成甲工程同时，即6天后，乙工程已完成6/24=1/4。假设乙的工程量为24与30的公倍数120，则张师傅干乙工程的效率为120÷30=4，李师傅干乙工程的效率为120÷24=5，剩余工程量为![](assets-fenbi-159/75701fba9b4fe2619253a78e0c02184e60567703706500d0323ca92802e6bec9.png)，完成乙剩余工程量所需天数为![](assets-fenbi-159/d966d04b799f5fa145ae45f16b479235586a33c99047d0560ba3c7c8f68ee4fb.png)天。所以两人合作完成这两项工程最少需要10+6=16天。
 
 故正确答案为A。
 
@@ -1198,11 +1198,11 @@ D
 
 有7件产品，其中有3件是次品。每次抽查一件产品（不放回），能够恰好在第四次找出3件次品的概率为：
 
-A. ![](assets-fenbi-159/384af0a3fa445f75cb1ed3e8e1b5bb17abeec219e79506aebb931c6ac54b0d30.png)
+A. 9/56
 
-B. ![](assets-fenbi-159/535314b640337a35a5d1218409fc75dc067f60f0ef6e3d1ae388963d4febb2f3.png)
+B. 3/35
 
-C. ![](assets-fenbi-159/056a929cfdf728081919d75e63fcc8613df928117be241ece12414c531ee9161.png)
+C. 3/28
 
 D. 1/7
 
@@ -1246,7 +1246,7 @@ B
 
 不等式组![](assets-fenbi-159/154684d889564144a2e5a67a7badfd1b824d469cab0b1400172b106656fc6b03.png)中x的最大解区间为\[-2，1\]，则![](assets-fenbi-159/10beea26f82077889a3b6e713981b453c29c55356af1f332a472b1c21c3756cc.png)的值为：
 
-A. ![](assets-fenbi-159/3c214d3f4a245e36b249ee0a4ac155bc961247c1527a6ac1889df5bbf6150883.png)
+A. 2^2010
 
 B. ![](assets-fenbi-159/0c1d538a86ee5f8ad89ce0241b1a0a2d0dc22cefa67f558dfb0fc5ef7cf08d0c.png)
 
@@ -1262,7 +1262,7 @@ D
 
 **解析**
 
-由第一个不等式![](assets-fenbi-159/1dba57d3e6b8da608b47a7cdd739f3e47546fbe4e9f4c6013f25686613798888.png)，可知![](assets-fenbi-159/f0167675cb5cd32a16e52c2439fdfd0b085e5969e17a367f4eb4a3cf67d2bf6a.png)；又由第二个不等式![](assets-fenbi-159/eacf7d64aaa2a6f10089b65e500aea4a552d348ed63b1f30c4b5a0e891bb4f5f.png)，可知![](assets-fenbi-159/98680c1892014541ca6d5b9684be45846aada2187f74b27473932d0f1a1fd672.png)，即![](assets-fenbi-159/dc40599e45b68aab5c8c12cbf3c41a4e6bda224f5fe4ad1b96ed297b8182bde2.png)。因为x的最大解区间为![](assets-fenbi-159/8bf4784bdbcd8c20f99a72b583d42dde6afae0f601b3d3507b457ff45bbf77d2.png)，则有8-2a=﹣2，![](assets-fenbi-159/c7880f61a10f89e0f4d5041dff93bdbdc2f790d3c335e07643a47480bc74f833.png)，解得a=5，b=﹣6。![](assets-fenbi-159/c82badde9e5850ffcf1dbe89339a72851e7cceb376558465ef15589b7d9d5c96.png)![](assets-fenbi-159/e7d693f1068bd514d2caa1cc3a79add48f0b365019fbe1c6fe746539cf952fbc.png)。
+由第一个不等式![](assets-fenbi-159/1dba57d3e6b8da608b47a7cdd739f3e47546fbe4e9f4c6013f25686613798888.png)，可知![](assets-fenbi-159/f0167675cb5cd32a16e52c2439fdfd0b085e5969e17a367f4eb4a3cf67d2bf6a.png)；又由第二个不等式![](assets-fenbi-159/eacf7d64aaa2a6f10089b65e500aea4a552d348ed63b1f30c4b5a0e891bb4f5f.png)，可知![](assets-fenbi-159/98680c1892014541ca6d5b9684be45846aada2187f74b27473932d0f1a1fd672.png)，即![](assets-fenbi-159/dc40599e45b68aab5c8c12cbf3c41a4e6bda224f5fe4ad1b96ed297b8182bde2.png)。因为x的最大解区间为[-2,1]，则有8-2a=﹣2，![](assets-fenbi-159/c7880f61a10f89e0f4d5041dff93bdbdc2f790d3c335e07643a47480bc74f833.png)，解得a=5，b=﹣6。![](assets-fenbi-159/c82badde9e5850ffcf1dbe89339a72851e7cceb376558465ef15589b7d9d5c96.png)![](assets-fenbi-159/e7d693f1068bd514d2caa1cc3a79add48f0b365019fbe1c6fe746539cf952fbc.png)。
 
 故正确答案为D。
 
@@ -1320,7 +1320,7 @@ D
 
 **解析**
 
-赋值原有溶液质量为100，则原有溶质为![](assets-fenbi-159/af9a84b3134a8d7af65cf317db050ce5f42ac7e9255c33a9a8c9b1eb43aa4b75.png)，进行三次倒出稀释后，溶质变为![](assets-fenbi-159/3cd38b5bd517ac45c770eedb5bc674893482bbcbe56a4248b7873c99cbad6d2a.png)![](assets-fenbi-159/21fd975158fab36f802a82bdb57f6a7844b5b14fa99d41e0a2a9cc0eda954b16.png)![](assets-fenbi-159/933fba491b28c594a4dc9e42cf4a5e4df7a4bfd69d93dc8a25d53eec8c91ee33.png)，浓度为![](assets-fenbi-159/c34239df1bd563689e44ecc663600ba5dfa314a04dbfc47aa792d0ba6acde1bd.png)。
+赋值原有溶液质量为100，则原有溶质为![](assets-fenbi-159/af9a84b3134a8d7af65cf317db050ce5f42ac7e9255c33a9a8c9b1eb43aa4b75.png)，进行三次倒出稀释后，溶质变为![](assets-fenbi-159/3cd38b5bd517ac45c770eedb5bc674893482bbcbe56a4248b7873c99cbad6d2a.png)![](assets-fenbi-159/21fd975158fab36f802a82bdb57f6a7844b5b14fa99d41e0a2a9cc0eda954b16.png)=32，浓度为![](assets-fenbi-159/c34239df1bd563689e44ecc663600ba5dfa314a04dbfc47aa792d0ba6acde1bd.png)。
 
 故正确答案为D。
 
@@ -3058,7 +3058,7 @@ C
 
 **解析**
 
-根据题干“2008年······增加值之比是”，结合材料时间为2009年，可判定本题为基期比值计算问题。定位材料第一段可得，2009年江苏省第一产业增加值2201.64亿元，增长4.5%；第二产业增加值18416.13亿元，增长12.5%；第三产业增加值13443.42亿元，增长13.6%。则2008年第一产业增加值为![](assets-fenbi-159/95efdb99b7384a94c8253cdbc508b08746df7351621c6a4bd36c3c1d66146a5b.png)![](assets-fenbi-159/c45e7dc32e3a5fd4fabb8bda6a93b457ff6ce9375b7ba5dcddb487caf59ab4fa.png)![](assets-fenbi-159/f38e4d4a0ecc6baa3ed5c1553d9d0bb992a775e2971cb9f1d49c0e8f490a8031.png)亿元，第二产业增加值为![](assets-fenbi-159/a96735bd44543ae45483a29b203c2d6613e90fe9d0480afe9a940f36ee9f04fc.png)![](assets-fenbi-159/bd7c11270006793dc32b66189dcfa21a6cda48a1ec9d2f8588512b2d51abc751.png)![](assets-fenbi-159/071beab4e741f6eca4c389cd59e65471114fc7c541788c5a555066c8c0d2a341.png)亿元，第三产业增加值为![](assets-fenbi-159/e53f69558ed267565a96be10dd9dee6f214c57f6906da641353c6feb0bd99683.png)![](assets-fenbi-159/c917c43f512860675023827eda2f2db8b3b86ceba5e04c121aa5426be31136c4.png)![](assets-fenbi-159/7549efa7bff770f0ead298926eb177fdc865cc1e5ae053157bfbf75d07802f12.png)亿元，所求比值为![](assets-fenbi-159/af8dd7429aa8cbbc185b59643f6866ab5e62aaf8ffc8156ff87ddc019a7e0a76.png)，与C项最接近。
+根据题干“2008年······增加值之比是”，结合材料时间为2009年，可判定本题为基期比值计算问题。定位材料第一段可得，2009年江苏省第一产业增加值2201.64亿元，增长4.5%；第二产业增加值18416.13亿元，增长12.5%；第三产业增加值13443.42亿元，增长13.6%。则2008年第一产业增加值为![](assets-fenbi-159/95efdb99b7384a94c8253cdbc508b08746df7351621c6a4bd36c3c1d66146a5b.png)![](assets-fenbi-159/c45e7dc32e3a5fd4fabb8bda6a93b457ff6ce9375b7ba5dcddb487caf59ab4fa.png)≈2100亿元，第二产业增加值为![](assets-fenbi-159/a96735bd44543ae45483a29b203c2d6613e90fe9d0480afe9a940f36ee9f04fc.png)![](assets-fenbi-159/bd7c11270006793dc32b66189dcfa21a6cda48a1ec9d2f8588512b2d51abc751.png)≈16300亿元，第三产业增加值为![](assets-fenbi-159/e53f69558ed267565a96be10dd9dee6f214c57f6906da641353c6feb0bd99683.png)![](assets-fenbi-159/c917c43f512860675023827eda2f2db8b3b86ceba5e04c121aa5426be31136c4.png)≈11800亿元，所求比值为![](assets-fenbi-159/af8dd7429aa8cbbc185b59643f6866ab5e62aaf8ffc8156ff87ddc019a7e0a76.png)，与C项最接近。
 
 故正确答案为C。
 
@@ -3086,7 +3086,7 @@ B
 
 **解析**
 
-根据题干“2009年末江苏省人口总数”，结合材料给出2009年江苏省地区生产总值及人均GDP，可判定本题为现期比重问题。定位材料第一段可得，2009年江苏省实现地区生产总值34061.19亿元，人均GDP按当年汇率（1美元=6.8282元人民币）折算超过6400美元。根据人均GDP![](assets-fenbi-159/57b4aa038b1c4e93e83795e0cbb6ddcbc68efab75bf7ca9bdf34394725535827.png)，2009年江苏省人口总数![](assets-fenbi-159/16003d03e14d9067bd1565075616aee89ec9b6ccd945fd5870a7ff2047a12324.png)![](assets-fenbi-159/25b390bad263a4041a3fe636607b52fc3524b5cddd5206d14d662bc97d4ad8b2.png)![](assets-fenbi-159/2020f5eb4313617aa86e952bce6f129e087a2b002afbd6baf15a450d16eedcef.png)![](assets-fenbi-159/05c6ded5462f8fb62894fd062cb464e2daa0b10bf4b94152f96b2dbf81f0bec8.png)万人，与B项范围最为一致。
+根据题干“2009年末江苏省人口总数”，结合材料给出2009年江苏省地区生产总值及人均GDP，可判定本题为现期比重问题。定位材料第一段可得，2009年江苏省实现地区生产总值34061.19亿元，人均GDP按当年汇率（1美元=6.8282元人民币）折算超过6400美元。根据人均GDP![](assets-fenbi-159/57b4aa038b1c4e93e83795e0cbb6ddcbc68efab75bf7ca9bdf34394725535827.png)，2009年江苏省人口总数![](assets-fenbi-159/16003d03e14d9067bd1565075616aee89ec9b6ccd945fd5870a7ff2047a12324.png)![](assets-fenbi-159/25b390bad263a4041a3fe636607b52fc3524b5cddd5206d14d662bc97d4ad8b2.png)![](assets-fenbi-159/2020f5eb4313617aa86e952bce6f129e087a2b002afbd6baf15a450d16eedcef.png)≈7794万人，与B项范围最为一致。
 
 故正确答案为B。
 
@@ -3276,7 +3276,7 @@ A. ![](assets-fenbi-159/b9cfa168b5479988fe232049fcb3863bc4b798c65fc29db7a8760509
 
 B. ![](assets-fenbi-159/1a936875072036c88a690f88b661e63c2f6985daaaa51c0db416ffafa35eb380.png)
 
-C. ![](assets-fenbi-159/383fbeca0450469d51ec6004e63ca433b1d99bc8c82a14f55561c8f8f6be8ba6.png)
+C. 1.12^12
 
 D. 0.12
 
@@ -3316,7 +3316,7 @@ D
 
 **解析**
 
-根据题干“2009年9月亚洲网民数比欧洲多”，结合选项为百分数/具体值，可判定本题为一般增长率及简单加减计算问题。定位表格材料可得，2009年9月，亚洲网民数为738257230人，欧洲网民数为418029796人。738257230-418029796=320227434人![](assets-fenbi-159/c8fe3f48984cf2ec0020f879d4348b5cacec6a3ffc31e1b365632dafd8189837.png)亿人，排除B、C两项；亚洲网民数比欧洲多 ![](assets-fenbi-159/186678e18220c9f5191e26a11b939ff7301385869b3e6de32111bb57d4ce6ccd.png)，与D项最接近。
+根据题干“2009年9月亚洲网民数比欧洲多”，结合选项为百分数/具体值，可判定本题为一般增长率及简单加减计算问题。定位表格材料可得，2009年9月，亚洲网民数为738257230人，欧洲网民数为418029796人。738257230-418029796=320227434人≈3.2亿人，排除B、C两项；亚洲网民数比欧洲多 ![](assets-fenbi-159/186678e18220c9f5191e26a11b939ff7301385869b3e6de32111bb57d4ce6ccd.png)，与D项最接近。
 
 故正确答案为D。
 
@@ -3344,7 +3344,7 @@ B
 
 **解析**
 
-根据题干“互联网上中文网页数量是英文网页数量的”，结合选项为百分数，可判定本题为比值计算问题。定位文字材料第一段可得，据统计，互联网上80%以上的网页使用英文；而开设汉语广播的只有20个国家，中文网页只占12%。可知英文网页的数量大于80%，则中文网页数量![](assets-fenbi-159/7713b853f3d8f15985aa0c787f55932e441915b5f423b92e8593010c645eda75.png)英文网页数量![](assets-fenbi-159/89b4efc9a56c60608119ef14b37685c53c532efbd53f70520f7fa7d30bb0cf42.png)，即中文网页数量不到英文网页数量的15%。
+根据题干“互联网上中文网页数量是英文网页数量的”，结合选项为百分数，可判定本题为比值计算问题。定位文字材料第一段可得，据统计，互联网上80%以上的网页使用英文；而开设汉语广播的只有20个国家，中文网页只占12%。可知英文网页的数量大于80%，则中文网页数量÷英文网页数量![](assets-fenbi-159/89b4efc9a56c60608119ef14b37685c53c532efbd53f70520f7fa7d30bb0cf42.png)，即中文网页数量不到英文网页数量的15%。
 
 故正确答案为B。
 
@@ -3434,7 +3434,7 @@ C
 
 **解析**
 
-根据题干“······人口密度最大的比最小的多”，结合选项为倍数，可判定本题为现期倍数计算问题。定位表格查找可知，2008年江苏人口密度最大的是南通市区，为2465人/平方公里，人口密度最小的是连云港市区，为700人/平方公里。所求倍数为![](assets-fenbi-159/9436bc6c2654d428f14b5d9f0a9092b609ff02befac7e253d3b32554809f44ea.png)![](assets-fenbi-159/a11d1375c694f75075af67352564b831c578db9d0192c1b8ed63055e461bb6d9.png)倍。
+根据题干“······人口密度最大的比最小的多”，结合选项为倍数，可判定本题为现期倍数计算问题。定位表格查找可知，2008年江苏人口密度最大的是南通市区，为2465人/平方公里，人口密度最小的是连云港市区，为700人/平方公里。所求倍数为![](assets-fenbi-159/9436bc6c2654d428f14b5d9f0a9092b609ff02befac7e253d3b32554809f44ea.png)=2.5倍。
 
 故正确答案为C。
 
@@ -3778,7 +3778,7 @@ D
 
 **解析**
 
-根据题干“······2010年12月南京市可望实现工业增加值······”，结合材料时间为2009年，判定本题为现期计算问题。定位统计图可得，2009年12月与2008年12月南京市工业增加值分别为137.0亿元、106.1亿元。根据题意可知，2010年的月平均增速2009年相同，故有![](assets-fenbi-159/1372845af404f7ef65304dfcab9664759c81652b2704d5063c910fd8bd2caff6.png)![](assets-fenbi-159/6cf24d3926d3165bf89a6a4c1c374feb7536f386dff18a96880a49d47af492f9.png)![](assets-fenbi-159/ee58fd13b9dd9da0f267cc98dcd457e3a6d5d7931c2ec084d76e4c657733c27c.png)，则2010年12月南京市工业增加值![](assets-fenbi-159/13fbbcc79c7299c808b4b800d41d5b0b27ba4f1b6208b7ebdd43879f18639323.png)![](assets-fenbi-159/91c0e048ce349ca508f0581698fc1ae01560fc9a757f680887ada52750b45e72.png)![](assets-fenbi-159/604d7bc5b784ae538f03f6893de9d1b530aa5edcd48fb0f76bf86773d5f77a9e.png)![](assets-fenbi-159/a1cb06218be81f9f1b4def0f353445191b388ef60bab4fa836582973de46a866.png)亿元，与D项最接近。
+根据题干“······2010年12月南京市可望实现工业增加值······”，结合材料时间为2009年，判定本题为现期计算问题。定位统计图可得，2009年12月与2008年12月南京市工业增加值分别为137.0亿元、106.1亿元。根据题意可知，2010年的月平均增速2009年相同，故有(1+r)^12![](assets-fenbi-159/6cf24d3926d3165bf89a6a4c1c374feb7536f386dff18a96880a49d47af492f9.png)![](assets-fenbi-159/ee58fd13b9dd9da0f267cc98dcd457e3a6d5d7931c2ec084d76e4c657733c27c.png)，则2010年12月南京市工业增加值![](assets-fenbi-159/13fbbcc79c7299c808b4b800d41d5b0b27ba4f1b6208b7ebdd43879f18639323.png)![](assets-fenbi-159/91c0e048ce349ca508f0581698fc1ae01560fc9a757f680887ada52750b45e72.png)![](assets-fenbi-159/604d7bc5b784ae538f03f6893de9d1b530aa5edcd48fb0f76bf86773d5f77a9e.png)![](assets-fenbi-159/a1cb06218be81f9f1b4def0f353445191b388ef60bab4fa836582973de46a866.png)亿元，与D项最接近。
 
 故正确答案为D。
 

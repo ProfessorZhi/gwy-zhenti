@@ -15,7 +15,7 @@
 # 2013年上海市公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **上海 · 2013 · 行测 · B类** ｜ 115 题 · 图片 140 处 · 答案随题折叠
+> **上海 · 2013 · 行测 · B类** ｜ 115 题 · 图片 104 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -941,7 +941,7 @@ A
 
 ### 第 26 题
 
-下面是一扇防盗门的四种受力图，![](assets-fenbi-407/c25c7a7e5bea125d91dd06ee90f1abd286255b08014179a5079cbac26f405bba.png)、![](assets-fenbi-407/406704510bf1e79fb5ef806b7acbc74bf12eccff6fead36b1b56ad22ecb54183.png)为作用在上下两个铰链上的力，G为重力。防盗门的实际受力情况最接近：
+下面是一扇防盗门的四种受力图，F_1、F_2为作用在上下两个铰链上的力，G为重力。防盗门的实际受力情况最接近：
 
 ![](assets-fenbi-407/4fb9fab83a47bb7ead3e3a9ae38475fd6afee28e4367599c6c84f7a615456522.png)
 
@@ -961,7 +961,7 @@ B
 
 **解析**
 
-根据题意，防盗门受三个力![](assets-fenbi-407/c25c7a7e5bea125d91dd06ee90f1abd286255b08014179a5079cbac26f405bba.png)、![](assets-fenbi-407/406704510bf1e79fb5ef806b7acbc74bf12eccff6fead36b1b56ad22ecb54183.png)、G，这三个力必须达到平衡，门才会稳定，A、C两项防盗门在竖直方向上没有向上的力，受力不平衡，排除。假设没有铰链，防盗门上侧会有一个向外倾倒的趋势，故上铰链对防盗门的力应该是向内侧的，排除D项。
+根据题意，防盗门受三个力F_1、F_2、G，这三个力必须达到平衡，门才会稳定，A、C两项防盗门在竖直方向上没有向上的力，受力不平衡，排除。假设没有铰链，防盗门上侧会有一个向外倾倒的趋势，故上铰链对防盗门的力应该是向内侧的，排除D项。
 
 故正确答案为B。
 
@@ -993,7 +993,7 @@ B
 
 系统不受外力或所受合外力为零时，系统的动量守恒。对于两个小球和弹簧组成的系统进行受力分析，在松手后，在弹簧恢复原长的任意时刻，在竖直方向上，系统受重力和支持力，且重力和支持力平衡；在水平方向上，系统不受外力作用，所以系统所受合外力始终等于零，系统的动量守恒。
 
-记右边小球的质量为![](assets-fenbi-407/7360156f685b3179e054543a0de97bab5d4e3ea556a8d6e137c3c4562f055bc7.png)、左边小球的质量为![](assets-fenbi-407/338e70bf9b916ad4bb34ecfbca9747bead2d5185c207b78d18475028e60f9705.png)，由于松手瞬间两球初始速度均为零，则系统的初始动量p=0；当系统开始运动后，记两个小球速度大小为![](assets-fenbi-407/06accda853a6d56486df3f608c22f1520895c4415a37447becad0c320d41d8be.png)、![](assets-fenbi-407/9da03e48414b5f0377904f1e6fdd09235797bdf5bd9e4b9d94726b898fc876ef.png)，规定向右为正方向，则系统的动量为![](assets-fenbi-407/2a185cd2c9aafe5846acbddd1657b6c1ee811f38fe5943b848a801985375e752.png)，因为系统的动量守恒，即p=p，则![](assets-fenbi-407/28d7128982c3ba0b97cea38876b6f1ff4601a287cd3bfd953b8ebe39e55d37f4.png)，可知![](assets-fenbi-407/4b8d595af74b22964554a434ab1f98f607c6fc005cc1cda89439739d0ad2d81b.png)，即两个小球的动量大小相等，方向相反，B项正确；由题干知，![](assets-fenbi-407/dcca17d23a63c4ef3f7122f5d70c7a804c6424ad9ed74922e37e145722352741.png)，则![](assets-fenbi-407/6732edfea6fe36e44f0a82b01de18d7da74b39fa320ba2466bdcc4dd5d8353ed.png)，即两个小球的速度大小不相等，C项错误；根据动能公式![](assets-fenbi-407/cf52f260893dd60314e54565686eb82204c52358443392d2a135531561cdca66.png)，因为![](assets-fenbi-407/4b8d595af74b22964554a434ab1f98f607c6fc005cc1cda89439739d0ad2d81b.png)，且![](assets-fenbi-407/6732edfea6fe36e44f0a82b01de18d7da74b39fa320ba2466bdcc4dd5d8353ed.png)，所以![](assets-fenbi-407/299a5df28be65199df83f481d2e1cba82ebd9b9549bca151eebb3b2e093001ce.png)，即两个小球的动能不相等，A项错误；根据牛顿第二定律F=ma，由于两小球的合外力均为弹簧弹力，大小相等，但两个小球的质量不相等，所以两个小球的加速度大小不相等，D项错误。
+记右边小球的质量为772.1、左边小球的质量为m_2，由于松手瞬间两球初始速度均为零，则系统的初始动量p=0；当系统开始运动后，记两个小球速度大小为![](assets-fenbi-407/06accda853a6d56486df3f608c22f1520895c4415a37447becad0c320d41d8be.png)、![](assets-fenbi-407/9da03e48414b5f0377904f1e6fdd09235797bdf5bd9e4b9d94726b898fc876ef.png)，规定向右为正方向，则系统的动量为![](assets-fenbi-407/2a185cd2c9aafe5846acbddd1657b6c1ee811f38fe5943b848a801985375e752.png)，因为系统的动量守恒，即p=p，则![](assets-fenbi-407/28d7128982c3ba0b97cea38876b6f1ff4601a287cd3bfd953b8ebe39e55d37f4.png)，可知![](assets-fenbi-407/4b8d595af74b22964554a434ab1f98f607c6fc005cc1cda89439739d0ad2d81b.png)，即两个小球的动量大小相等，方向相反，B项正确；由题干知，m_1≠m_2，则v_1≠v_2，即两个小球的速度大小不相等，C项错误；根据动能公式![](assets-fenbi-407/cf52f260893dd60314e54565686eb82204c52358443392d2a135531561cdca66.png)，因为![](assets-fenbi-407/4b8d595af74b22964554a434ab1f98f607c6fc005cc1cda89439739d0ad2d81b.png)，且v_1≠v_2，所以![](assets-fenbi-407/299a5df28be65199df83f481d2e1cba82ebd9b9549bca151eebb3b2e093001ce.png)，即两个小球的动能不相等，A项错误；根据牛顿第二定律F=ma，由于两小球的合外力均为弹簧弹力，大小相等，但两个小球的质量不相等，所以两个小球的加速度大小不相等，D项错误。
 
 故正确答案为B。
 
@@ -1003,7 +1003,7 @@ B
 
 ### 第 28 题
 
-一台灯的插头在如图所示插座上，插座上有一个开关和一个指示灯（相当于电阻）的灯泡。若插座开关和指示灯用![](assets-fenbi-407/cc27c5ca8cd617b68c6fda575fe17f9f5194c247725685edb18acc9bc924f754.png)、![](assets-fenbi-407/9fd9125c41b51c26a574212e9cde0794bec66747398fa189631acbfde075b627.png)表示，台灯开关和台灯用![](assets-fenbi-407/b768a8a4aabf94d40ed040057916209c322c001d6444391103db860ef39ce64c.png)、![](assets-fenbi-407/683ca21ad8d02ca1126047b5c2f592ffd792bdca5486a351d95d8523839930e2.png)表示，当断开或闭合![](assets-fenbi-407/cc27c5ca8cd617b68c6fda575fe17f9f5194c247725685edb18acc9bc924f754.png)、![](assets-fenbi-407/b768a8a4aabf94d40ed040057916209c322c001d6444391103db860ef39ce64c.png)时，记录现象如下表。则符合事实的电路图是：
+一台灯的插头在如图所示插座上，插座上有一个开关和一个指示灯（相当于电阻）的灯泡。若插座开关和指示灯用S_1、![](assets-fenbi-407/9fd9125c41b51c26a574212e9cde0794bec66747398fa189631acbfde075b627.png)表示，台灯开关和台灯用S_2、L_2表示，当断开或闭合S_1、S_2时，记录现象如下表。则符合事实的电路图是：
 
 ![](assets-fenbi-407/2c9c48f6bfe2d478c12a9e32335b3710259be2d88f4b784144282c3e2d0c4604.png)
 
@@ -1023,7 +1023,7 @@ C
 
 **解析**
 
-闭合![](assets-fenbi-407/cc27c5ca8cd617b68c6fda575fe17f9f5194c247725685edb18acc9bc924f754.png)，断开![](assets-fenbi-407/b768a8a4aabf94d40ed040057916209c322c001d6444391103db860ef39ce64c.png)，A项中![](assets-fenbi-407/9fd9125c41b51c26a574212e9cde0794bec66747398fa189631acbfde075b627.png)不亮，排除；闭合![](assets-fenbi-407/b768a8a4aabf94d40ed040057916209c322c001d6444391103db860ef39ce64c.png)，断开![](assets-fenbi-407/cc27c5ca8cd617b68c6fda575fe17f9f5194c247725685edb18acc9bc924f754.png)，B、D两项中![](assets-fenbi-407/683ca21ad8d02ca1126047b5c2f592ffd792bdca5486a351d95d8523839930e2.png)亮，排除；验证C项，![](assets-fenbi-407/cc27c5ca8cd617b68c6fda575fe17f9f5194c247725685edb18acc9bc924f754.png)和![](assets-fenbi-407/b768a8a4aabf94d40ed040057916209c322c001d6444391103db860ef39ce64c.png)闭合，![](assets-fenbi-407/9fd9125c41b51c26a574212e9cde0794bec66747398fa189631acbfde075b627.png)和![](assets-fenbi-407/683ca21ad8d02ca1126047b5c2f592ffd792bdca5486a351d95d8523839930e2.png)都亮，符合条件。
+闭合S_1，断开S_2，A项中![](assets-fenbi-407/9fd9125c41b51c26a574212e9cde0794bec66747398fa189631acbfde075b627.png)不亮，排除；闭合S_2，断开S_1，B、D两项中L_2亮，排除；验证C项，S_1和S_2闭合，![](assets-fenbi-407/9fd9125c41b51c26a574212e9cde0794bec66747398fa189631acbfde075b627.png)和L_2都亮，符合条件。
 
 故正确答案为C。
 
@@ -2115,7 +2115,7 @@ A
 
 **解析**
 
-设搭配A类型x个，则搭配B类型(50-x)个，根据题意可得：![](assets-fenbi-407/708127e146d656f094b721e32256e4c9d3e197fb4dac530f9a62bd93a44a7773.png)，解得![](assets-fenbi-407/3edc8f5f95bbd04dbc5ba7f57d02c0cb9652761af5b8ee60245e4ebf702823d8.png)；![](assets-fenbi-407/1cc564a37474755e8b9b079368bdb538ab5cde7c89995e1a75bf300dc70be330.png)，解得![](assets-fenbi-407/49406ca9654e5d78ef7a7d0c3e94aa3b5040e7cf7c216b7fa7b28280ff59094a.png)，从而有![](assets-fenbi-407/5457968df873bd4b2570b5bb3306fcdc99bc20a283e2497e16d16f1e1f8cc584.png)，即x有31、32和33三种可能，因此搭配方案共有3种。
+设搭配A类型x个，则搭配B类型(50-x)个，根据题意可得：![](assets-fenbi-407/708127e146d656f094b721e32256e4c9d3e197fb4dac530f9a62bd93a44a7773.png)，解得x≤33；![](assets-fenbi-407/1cc564a37474755e8b9b079368bdb538ab5cde7c89995e1a75bf300dc70be330.png)，解得x≥31，从而有![](assets-fenbi-407/5457968df873bd4b2570b5bb3306fcdc99bc20a283e2497e16d16f1e1f8cc584.png)，即x有31、32和33三种可能，因此搭配方案共有3种。
 
 故正确答案为A。
 
@@ -2161,13 +2161,13 @@ B
 
 甲和乙同住一幢楼，他们同时出发骑车去图书馆，又同时到达图书馆，但途中甲休息的时间是乙骑车时间的1/3，而乙休息的时间是甲骑车时间的1/4，甲和乙骑车的速度比是：
 
-A. ![](assets-fenbi-407/9a58158c964952206bd3a6f2d161cc78a9522ab6bab85943319e0a45334dab1f.png)
+A. 12/7
 
-B. ![](assets-fenbi-407/92d31033178b7f21c53fd9e3b50b16baef3509a56893d72073eaa1e376bcd28c.png)
+B. 9/8
 
-C. ![](assets-fenbi-407/f770b7c79b327b03c3f1d0efb7d7f2a49d3832125d55849f54281381c4d9fa7b.png)
+C. 4/3
 
-D. ![](assets-fenbi-407/9580a601ba4630731e195ce8411e03c42b235522888e72d5abf2d134fa2cf841.png)
+D. 6/5
 
 <details><summary>第 58 题 · 答案与解析</summary>
 
@@ -2225,7 +2225,7 @@ A. 1/12
 
 B. 1/3
 
-C. ![](assets-fenbi-407/6dd1185d84c5684de458375e66c2406e4ab664f54e3debda6e37c0906eea23cb.png)
+C. 5/12
 
 D. 1/2
 
@@ -2299,7 +2299,7 @@ B
 
 **解析**
 
-设圆的半径为r，圆心为O点，弧AB和弧CD的中点分别为G和H，连接OG、OH、OB、OC，扇形OGH的面积为![](assets-fenbi-407/d4385dc764bc12d6a63f736f0e4d34c9c5b219f63b75096e2ffcdf4a381d0333.png)，则扇形OBC的面积为![](assets-fenbi-407/e7d84cfdb3f9d049810d43b65315f2596b4ff05eda4271d56090b156db4abe76.png)。三角形OGH面积![](assets-fenbi-407/11c5ce48db7b6d5395cb707d5aaadb67f66b8095317324393f1979f623c3671d.png)，三角形OBC的面积![](assets-fenbi-407/3b640b1cfe9c6b88e5395986359a57fc0b6f1c941d13ed4d18ea96bba7c2e81c.png)，则阴影部分的面积为：![](assets-fenbi-407/183504cab8082e43a53c087ba0282673f616a2b9094f870c47623d9583414adf.png)![](assets-fenbi-407/93527f05d29d52850790b574261290f35b2ad08ffb6939370f043c586aa70b6d.png)，化简得![](assets-fenbi-407/88d684b1f2fcb3a574fa64f63ee535df778775a50a49c9ae020fd2b8224505ae.png)，因此圆的面积为200平方米。
+设圆的半径为r，圆心为O点，弧AB和弧CD的中点分别为G和H，连接OG、OH、OB、OC，扇形OGH的面积为1/3πr^2，则扇形OBC的面积为(1/6)πr^2。三角形OGH面积![](assets-fenbi-407/11c5ce48db7b6d5395cb707d5aaadb67f66b8095317324393f1979f623c3671d.png)，三角形OBC的面积![](assets-fenbi-407/3b640b1cfe9c6b88e5395986359a57fc0b6f1c941d13ed4d18ea96bba7c2e81c.png)，则阴影部分的面积为：![](assets-fenbi-407/183504cab8082e43a53c087ba0282673f616a2b9094f870c47623d9583414adf.png)![](assets-fenbi-407/93527f05d29d52850790b574261290f35b2ad08ffb6939370f043c586aa70b6d.png)，化简得![](assets-fenbi-407/88d684b1f2fcb3a574fa64f63ee535df778775a50a49c9ae020fd2b8224505ae.png)，因此圆的面积为200平方米。
 
 ![](assets-fenbi-407/dfa10ffb324b447a8e7acf4a536d8d372f79dd8e6d6ba44d537ab44426d6fc4f.png)
 
@@ -2331,7 +2331,7 @@ D
 
 **解析**
 
-设购买甲种小鸡苗a只，则购买乙种小鸡苗为(2000-a)只。设购买这批小鸡苗总费用为b元，根据题意可得：b＝2a＋3(2000－a)＝－a＋6000，即b＝－a＋6000，也即b的值随着a变大而变小。由题干中“这批小鸡苗的成活率不低于96%”可得：![](assets-fenbi-407/aa1998264057f7631c88b8194863392721343d37045b535bb147fb7e61eb0aa0.png)![](assets-fenbi-407/d61760d7d24c809c212579933605f3efb6794f30b4eb559b6122eae466a03d95.png)，解得![](assets-fenbi-407/68e2d509a28f8f928706633b6bdd0abf96ecf1f4308fb82d91e69f96447870ec.png)。因为函数b=-a+6000为减函数，因此当a＝1200时，b取最小值。此时a=1200，2000-a=800，因此应选购甲、乙两种小鸡苗各有1200只、800只。
+设购买甲种小鸡苗a只，则购买乙种小鸡苗为(2000-a)只。设购买这批小鸡苗总费用为b元，根据题意可得：b＝2a＋3(2000－a)＝－a＋6000，即b＝－a＋6000，也即b的值随着a变大而变小。由题干中“这批小鸡苗的成活率不低于96%”可得：![](assets-fenbi-407/aa1998264057f7631c88b8194863392721343d37045b535bb147fb7e61eb0aa0.png)![](assets-fenbi-407/d61760d7d24c809c212579933605f3efb6794f30b4eb559b6122eae466a03d95.png)，解得a≤1200。因为函数b=-a+6000为减函数，因此当a＝1200时，b取最小值。此时a=1200，2000-a=800，因此应选购甲、乙两种小鸡苗各有1200只、800只。
 
 故正确答案为D。
 
@@ -2375,11 +2375,11 @@ B
 
 一个圆柱形的容器内放有一个长方体铁块，现打开水龙头往容器中注水3分钟时，水恰好没过长方体铁块的顶面。又过了18分钟后，容器内被注满了水。已知容器的高是50厘米，长方体铁块的高是20厘米，那么长方体铁块的底面面积是圆柱形容器底面面积的：
 
-A. ![](assets-fenbi-407/c0eca9a5c7d317c4615aa904d4aab6a3ccfa56c480a3a62ad7e56cb198930747.png)
+A. 5/6
 
-B. ![](assets-fenbi-407/633287b3e3f2c892a84dc16542937cc3035d4c85b0ef841d262ce40f0773f826.png)
+B. 3/4
 
-C. ![](assets-fenbi-407/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)
+C. 2/3
 
 D. 1/2
 
@@ -2489,7 +2489,7 @@ C
 
 **解析**
 
-根据题干“2012年第一季度，······增加了”，结合选项为百分数，可判定本题为一般增长率计算问题。定位材料最后一段，跨国公司总部370家，新增17家，外资投资性公司248家，新增8家，外资研发中心341家，新增7家。那么，一季度新增加企业数为17＋8＋7＝32家，故![](assets-fenbi-407/6f44576dbdb1e82321a0686936d35f65c2f17088bd8cad5024a84a7f418da0bd.png)![](assets-fenbi-407/ad070d7f16e4a2bae26a4f6d53553f771a72611152c1195e4b74330d66cc01fc.png)![](assets-fenbi-407/d36fc9256a5db7f22f42558c9424b8d02094d11e86b8f4afc8be652e3e1dc9ef.png)。
+根据题干“2012年第一季度，······增加了”，结合选项为百分数，可判定本题为一般增长率计算问题。定位材料最后一段，跨国公司总部370家，新增17家，外资投资性公司248家，新增8家，外资研发中心341家，新增7家。那么，一季度新增加企业数为17＋8＋7＝32家，故![](assets-fenbi-407/6f44576dbdb1e82321a0686936d35f65c2f17088bd8cad5024a84a7f418da0bd.png)![](assets-fenbi-407/ad070d7f16e4a2bae26a4f6d53553f771a72611152c1195e4b74330d66cc01fc.png)≈3.45%。
 
 故正确答案为C。
 

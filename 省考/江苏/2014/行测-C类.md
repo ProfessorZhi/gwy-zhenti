@@ -15,7 +15,7 @@
 # 2014年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2014 · 行测 · C类** ｜ 100 题 · 图片 174 处 · 答案随题折叠
+> **江苏 · 2014 · 行测 · C类** ｜ 100 题 · 图片 120 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -806,15 +806,15 @@ A
 
 ### 第 23 题
 
-1，2，![](assets-fenbi-26641/f31456bd5f670707f21c28dd1ec7b24a98cecdac434ffb12764dc19d1b3f8dcf.png)，![](assets-fenbi-26641/9bfae88cf3713f11f7c12a80cb0fec67135188324f0a1523f239aebeeb74e939.png)，3，（    ）
+1，2，1+√2，1+√3，3，（    ）
 
-A. ![](assets-fenbi-26641/724756608a5d76087b398238b88759aed06dcedfe7b6a3705809e585d9ddeef7.png)
+A. 1+√5
 
 B. 4
 
-C. ![](assets-fenbi-26641/27e42b766eb0c88bb22c547951307619133702f8f77f7c7c9518c70a06411391.png)
+C. 3+√3
 
-D. ![](assets-fenbi-26641/6a67843a88992bc7233678f15d94a3ff0c4528b079c36c7c0b313c5ef7a7aa7b.png)
+D. 3+√5
 
 <details><summary>第 23 题 · 答案与解析</summary>
 
@@ -824,7 +824,7 @@ A
 
 **解析**
 
-观察数列，数列有整数和无理数，将数列转换为同一形式，为![](assets-fenbi-26641/101c707bb0a018fb168a6c5370e698fa47fea08a916ff86bb3c145edc7c88dc7.png)，![](assets-fenbi-26641/8b68689daf1bd37cb1e299c58df2d1d22045512b59edd80748208169255badc3.png)，![](assets-fenbi-26641/f31456bd5f670707f21c28dd1ec7b24a98cecdac434ffb12764dc19d1b3f8dcf.png)，![](assets-fenbi-26641/9bfae88cf3713f11f7c12a80cb0fec67135188324f0a1523f239aebeeb74e939.png)，![](assets-fenbi-26641/ae4745256ea8b33986443806e35a4d43ab5a735c12639c2d1e965867b2c54b65.png)，则下一项应为![](assets-fenbi-26641/724756608a5d76087b398238b88759aed06dcedfe7b6a3705809e585d9ddeef7.png)。
+观察数列，数列有整数和无理数，将数列转换为同一形式，为![](assets-fenbi-26641/101c707bb0a018fb168a6c5370e698fa47fea08a916ff86bb3c145edc7c88dc7.png)，1+√1，1+√2，1+√3，1+√4，则下一项应为1+√5。
 
 故正确答案为A。
 
@@ -862,15 +862,15 @@ C
 
 ### 第 25 题
 
-1/4，2/3，![](assets-fenbi-26641/3ca4e399080e756ed3289f8dd43c90c14f41e01fa7eca786aa97ecea20e6b89f.png)，![](assets-fenbi-26641/e029bbc76dbf5a8d9dc3109e01c8c00699604e93a7e81fe4f023a9043e9e6c9b.png)，![](assets-fenbi-26641/13d2dd2b1c4f84cac0a9351655072a24e20b4ee1e4714fc38e14cd58bea9f680.png)，（    ）
+1/4，2/3，14/9，28/9，140/27，（    ）
 
-A. ![](assets-fenbi-26641/8c38fa42c1677bd7029399ed87670e2e357d034927725ff820311f58712db1ff.png)
+A. 280/27
 
-B. ![](assets-fenbi-26641/f11e43b1e111f4f2423278299ce28966b1f88d3c7a228fcdce7c16b08620a7c4.png)
+B. 560/27
 
-C. ![](assets-fenbi-26641/622003a430a3ee3e99a65926d7940b5e1fc03c027579a631a11c58c023beb7a6.png)
+C. 280/81
 
-D. ![](assets-fenbi-26641/e1de575517b7d0b018a2f0a87978cf6a1e1c7cb91051357acdb6bef781aaf660.png)
+D. 560/81
 
 <details><summary>第 25 题 · 答案与解析</summary>
 
@@ -908,7 +908,7 @@ B
 
 **解析**
 
-设商品原价为x元，则第一种促销方案价格为0.7x元，第二种促销方案价格为![](assets-fenbi-26641/da1109d24687798e0860eb4d38ce29f6fa687d04d1bc8ac530d5f8a3cd72270b.png)元。两种方案利润相差0.1元，因为成本相同，价格=成本+利润，则售价也相差0.1元，![](assets-fenbi-26641/f59ea009f5960205a6bec98743609811b1fab2e16d639c602fe2429fd2af1e7f.png)![](assets-fenbi-26641/da1109d24687798e0860eb4d38ce29f6fa687d04d1bc8ac530d5f8a3cd72270b.png)![](assets-fenbi-26641/073f387e3176250f18290e391f5a9b45d72196a12842c1b37b763070a63e4b93.png)。解得x=3。第一种促销价格为3×0.7=2.1元，可购买数量=![](assets-fenbi-26641/e75bd4cb273cbd44a40f706484cb1df0e641163524be7828be77a814503b0b3d.png)![](assets-fenbi-26641/10543a49c8d00c0105b0e7ac197fed81e8547ed802bee544310aa045662ed911.png)件，则最多可购买47件商品。
+设商品原价为x元，则第一种促销方案价格为0.7x元，第二种促销方案价格为2x/3元。两种方案利润相差0.1元，因为成本相同，价格=成本+利润，则售价也相差0.1元，0.7x-2x/3=0.1。解得x=3。第一种促销价格为3×0.7=2.1元，可购买数量=100/2.1≈47.6件，则最多可购买47件商品。
 
 故正确答案为B。
 
@@ -938,7 +938,7 @@ B
 
 **解析**
 
-根据x![](assets-fenbi-26641/fa972a5f4a45795934cc878fd90a7cbd7910c9f34a78fbd177f43673c5d70244.png)y=![](assets-fenbi-26641/02a216dc248514f0695ff2b55d5b0c83f400b198bacda76af33098c168888fbf.png)，则2![](assets-fenbi-26641/39e57d2e32f20054a5fe2beab7d38522b0de91d22ea60887d808d7b41b9e5930.png)3![](assets-fenbi-26641/5170e3c200fc92151e1a25c07de0e025c6ce2b4b40ba52fedafd25d4b127314e.png)。根据![](assets-fenbi-26641/3b8983deaafe9d8e20f59327733aad2fc90f6cbb988a7348d74e19911f9920c5.png)y\=2x+y，则![](assets-fenbi-26641/2cccbd001fbdbc78ffa09ad7d9bb054e170e26aeebdacfabf56befcb7326b293.png)。
+根据x⊗y=![](assets-fenbi-26641/02a216dc248514f0695ff2b55d5b0c83f400b198bacda76af33098c168888fbf.png)，则2⊗3![](assets-fenbi-26641/5170e3c200fc92151e1a25c07de0e025c6ce2b4b40ba52fedafd25d4b127314e.png)。根据x⊕y\=2x+y，则![](assets-fenbi-26641/2cccbd001fbdbc78ffa09ad7d9bb054e170e26aeebdacfabf56befcb7326b293.png)。
 
 故正确答案为B。
 
@@ -966,7 +966,7 @@ C
 
 **解析**
 
-密码可选取的数字范围为0~9。因为第一位是偶数，则共有![](assets-fenbi-26641/e7ffea5966d5f60935aacf2323fa7fc4d8d938517ba7d3b1496572d4ba087cd4.png)种情况。后两位至少有一个是6，分三种情况：①当第二位是6第三位不是6时，有9种情况；②当第三位是6第二位不是6的时候，有9种情况；③当第二位和第三位都是6，有1种情况。则后两位共有9+9+1=19种情况。则总共可选择的密码个数有5×19=95个。
+密码可选取的数字范围为0~9。因为第一位是偶数，则共有C_5^1 = 5种情况。后两位至少有一个是6，分三种情况：①当第二位是6第三位不是6时，有9种情况；②当第三位是6第二位不是6的时候，有9种情况；③当第二位和第三位都是6，有1种情况。则后两位共有9+9+1=19种情况。则总共可选择的密码个数有5×19=95个。
 
 故正确答案为C。
 
@@ -1130,13 +1130,13 @@ B
 
 甲乙两船分别从上游和下游同时出发，甲顺流而下，乙逆流而上，相遇时甲乙走过的路程之比为3∶1，两船相遇后各自立即掉头沿原路返回，甲、乙各自返回到出发点所用时间之比为5∶1。设船速和水流速度均不变，则甲船速度与乙船速度的比值是：
 
-A. ![](assets-fenbi-26641/0ab91711ff08bde7f5510b630f6a2dc8b8e6f8609d9215f95ddeb8de1de03be0.png)
+A. 1/5
 
-B. ![](assets-fenbi-26641/49051b6eed48828a537fe36ccbce0d3cfa0707a689f28614276fc2b793d715c7.png)
+B. 8/5
 
 C. ![](assets-fenbi-26641/d045525355e69751667b768a1b32674bae127f7774ba9ffee4adbda54750d98d.png)
 
-D. ![](assets-fenbi-26641/099829f1761cf9ea174c2d2766348e270d02e55e93feba95c429e4e17e6c2813.png)
+D. 9/8
 
 <details><summary>第 34 题 · 答案与解析</summary>
 
@@ -1162,13 +1162,13 @@ C
 
 ![](assets-fenbi-26641/de9ad98b804fd3d27bcb886f8d08ca13115ff51889e1edbe47e2b36082a02155.png)
 
-A. ![](assets-fenbi-26641/2670f4da988e252e802864920dc044d59e1136a00f5f4aac58a938aef3644850.png)
+A. 1/3 cm^3
 
-B. ![](assets-fenbi-26641/894f5a24c89ad710c9411844f8bfeba0814dcea52334fc74ca706649cbfb7762.png)
+B. 1/4 cm^3
 
-C. ![](assets-fenbi-26641/45004d8163c61528e84803afa9a1f637bf79ba4ca6a932618e028849c6f460c7.png)
+C. 1/5 cm^3
 
-D. ![](assets-fenbi-26641/55909b800d0d42b7f31649a51fdf2a470a17cd68bc2bafe86bd0880fdb05ff41.png)
+D. 1/6 cm^3
 
 <details><summary>第 35 题 · 答案与解析</summary>
 
@@ -1178,7 +1178,7 @@ A
 
 **解析**
 
-如图所示，![](assets-fenbi-26641/dd24f360d5dcc297a521b169134a42f181d26b2403855b93d1f86061613ac0e0.png)![](assets-fenbi-26641/4054101a2eb1d2743c793d4825809bacee65b42a6630cb632dfa49e3fcb6128b.png)![](assets-fenbi-26641/13c2f753b88a3158bf0715583c243a0a21916202f71eb8cecac5d4688d5c1700.png)，因为四个小三棱锥都是棱长为![](assets-fenbi-26641/7b95af46f3cdf7d22de8e1ebf8c62411dd65dca69326c25418df5b6d407c6e68.png)的正三棱锥，它们的体积相等，所以![](assets-fenbi-26641/dd24f360d5dcc297a521b169134a42f181d26b2403855b93d1f86061613ac0e0.png)![](assets-fenbi-26641/2ca81eb115bfe3f2204b0b4463c255f51dbbc15ef874910cbc31a9626fb5a2b8.png)。
+如图所示，![](assets-fenbi-26641/dd24f360d5dcc297a521b169134a42f181d26b2403855b93d1f86061613ac0e0.png)![](assets-fenbi-26641/4054101a2eb1d2743c793d4825809bacee65b42a6630cb632dfa49e3fcb6128b.png)![](assets-fenbi-26641/13c2f753b88a3158bf0715583c243a0a21916202f71eb8cecac5d4688d5c1700.png)，因为四个小三棱锥都是棱长为√2 cm的正三棱锥，它们的体积相等，所以![](assets-fenbi-26641/dd24f360d5dcc297a521b169134a42f181d26b2403855b93d1f86061613ac0e0.png)![](assets-fenbi-26641/2ca81eb115bfe3f2204b0b4463c255f51dbbc15ef874910cbc31a9626fb5a2b8.png)。
 
 故正确答案为A。
 
@@ -3178,7 +3178,7 @@ B
 
 ### 第 87 题
 
-用![](assets-fenbi-26641/404381cf836d7e46566b3e9b6678639b4ad6ebda471b218af40fb1ec06d91b6a.png)、![](assets-fenbi-26641/16923c95d66e350437bd88638c2af03aba50fe06aac6be94af6587b3ea6e6089.png)、![](assets-fenbi-26641/56deeb7b7cce112d263ef2fc052ae20241686942cc04ca632218278d9890b00b.png)分别表示1982年到2012年三十一年，全国城镇居民每百户拥有彩电、洗衣机、电冰箱的年平均增长速度，则下列表示正确的是：
+用V_1、V_2、V_3分别表示1982年到2012年三十一年，全国城镇居民每百户拥有彩电、洗衣机、电冰箱的年平均增长速度，则下列表示正确的是：
 
 A. ![](assets-fenbi-26641/32392eeea46408c289363d1a75debaa2ea452446237ad2c4ba9d78fee66717ed.png)
 
@@ -3196,7 +3196,7 @@ D
 
 **解析**
 
-根据题干所求“年平均增长速度”，可判定此题为年均增长率问题。比较年均增长率，只需比较![](assets-fenbi-26641/7fa5a2e3b93e2281b599e7aabc1ffab02f07b4881306c7d454f9cbcdb9a1d3fd.png)的大小。定位统计图可得，![](assets-fenbi-26641/7fa5a2e3b93e2281b599e7aabc1ffab02f07b4881306c7d454f9cbcdb9a1d3fd.png)分别为：彩电![](assets-fenbi-26641/8a757500018b0fdf1ff25909a0c6818de681b2276cfb927cc4ed0f738d297612.png)、洗衣机![](assets-fenbi-26641/ec7ff0d4c83256c812eec9fce237025e259f693461f3eed917e9eef7333a025f.png)、电冰箱![](assets-fenbi-26641/b8fe643ba7448e242f3707686c9ca8bb204348ed230c22851ba7c721c9f85109.png)，排序为电冰箱＞彩电＞洗衣机，则年均增速为![](assets-fenbi-26641/a46f71f0f4b7370ce4d31549e390ecdcb8f1724d7fc6d7a6f8143bc1b1e50360.png)。
+根据题干所求“年平均增长速度”，可判定此题为年均增长率问题。比较年均增长率，只需比较现期量/基期量的大小。定位统计图可得，现期量/基期量分别为：彩电![](assets-fenbi-26641/8a757500018b0fdf1ff25909a0c6818de681b2276cfb927cc4ed0f738d297612.png)、洗衣机98.0/6.3≈16、电冰箱![](assets-fenbi-26641/b8fe643ba7448e242f3707686c9ca8bb204348ed230c22851ba7c721c9f85109.png)，排序为电冰箱＞彩电＞洗衣机，则年均增速为![](assets-fenbi-26641/a46f71f0f4b7370ce4d31549e390ecdcb8f1724d7fc6d7a6f8143bc1b1e50360.png)。
 
 故正确答案为D。
 
@@ -3452,7 +3452,7 @@ D
 
 （2）定位柱状图可得，2005年销售额为411亿元，2012年为1410亿元，2006~2012七年的年平均增量为![](assets-fenbi-26641/a92306eb40ac891aceb2d1198bb337c6990796ff6dc011cfe30792287d749246.png)，错误；
 
-（3）年均增长率比较，只需比较![](assets-fenbi-26641/7fa5a2e3b93e2281b599e7aabc1ffab02f07b4881306c7d454f9cbcdb9a1d3fd.png)的大小。定位柱状图数据，![](assets-fenbi-26641/7fa5a2e3b93e2281b599e7aabc1ffab02f07b4881306c7d454f9cbcdb9a1d3fd.png)分别为：“十一五”即2006~2010五年![](assets-fenbi-26641/093dc2a4bcc903f18088234165d3a5864c8571823985b3ab7a5f73cb04be6b7d.png)、2008~2012五年![](assets-fenbi-26641/4cb5559b452c326784bf6840b2235ad9a866bcbe570e8721dce3fbd39fc960bd.png)，后者小于前者，错误。
+（3）年均增长率比较，只需比较现期量/基期量的大小。定位柱状图数据，现期量/基期量分别为：“十一五”即2006~2010五年![](assets-fenbi-26641/093dc2a4bcc903f18088234165d3a5864c8571823985b3ab7a5f73cb04be6b7d.png)、2008~2012五年![](assets-fenbi-26641/4cb5559b452c326784bf6840b2235ad9a866bcbe570e8721dce3fbd39fc960bd.png)，后者小于前者，错误。
 
 不正确的为（1）（2）（3）。
 
@@ -3514,7 +3514,7 @@ A
 
 **解析**
 
-根据题干所求“2013年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月，······同比增加最多的”，可判定此题为增长量比较问题。定位表格，将诊疗人次代入增长量公式：增长量=现期量-基期量，则增长量分别为：三级医院![](assets-fenbi-26641/b430be9143138b8707410036ca7f6fed861bb472ee0c8e67a64ac7e7f9422e0f.png)万人次、二级医院![](assets-fenbi-26641/ae5a93e724c0453e31f28159f67c07b16fca9dfbfd5790b90a6083ab6b7d9c84.png)万人次、一级医院![](assets-fenbi-26641/54f285156129b0129d71b056770ceeabba886ad44a69fe46f178f580bdcfae57.png)万人次、未定级医院![](assets-fenbi-26641/d8755d769ba9925aaa0430cbc954fd8418a700c2d28d2a2c4e7e773510fc78ad.png)万人次，故增加最多的为三级医院。
+根据题干所求“2013年1~8月，······同比增加最多的”，可判定此题为增长量比较问题。定位表格，将诊疗人次代入增长量公式：增长量=现期量-基期量，则增长量分别为：三级医院![](assets-fenbi-26641/b430be9143138b8707410036ca7f6fed861bb472ee0c8e67a64ac7e7f9422e0f.png)万人次、二级医院![](assets-fenbi-26641/ae5a93e724c0453e31f28159f67c07b16fca9dfbfd5790b90a6083ab6b7d9c84.png)万人次、一级医院![](assets-fenbi-26641/54f285156129b0129d71b056770ceeabba886ad44a69fe46f178f580bdcfae57.png)万人次、未定级医院![](assets-fenbi-26641/d8755d769ba9925aaa0430cbc954fd8418a700c2d28d2a2c4e7e773510fc78ad.png)万人次，故增加最多的为三级医院。
 
 故正确答案为A。
 
@@ -3542,7 +3542,7 @@ B
 
 **解析**
 
-根据题干所求“2013年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月，······同比增加”，选项带单位，可判定此题为增长量计算问题。定位表格可得，2013年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月，村卫生室诊疗人次128960.1万人次，2012年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月为119820.0万人次。增长量=现期量-基期量=128960.1-119820.0=9140.1万人次，与B项最接近。
+根据题干所求“2013年1~8月，······同比增加”，选项带单位，可判定此题为增长量计算问题。定位表格可得，2013年1~8月，村卫生室诊疗人次128960.1万人次，2012年1~8月为119820.0万人次。增长量=现期量-基期量=128960.1-119820.0=9140.1万人次，与B项最接近。
 
 故正确答案为B。
 
@@ -3570,7 +3570,7 @@ D
 
 **解析**
 
-根据题干所求“······同比增速比······高”，可判定此题为增长率问题。定位表格可得，2013年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月，全国民营医院、公立医院出院人数分别为985.6、7876.8万人，2012年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月为782.8、7060.0万人。代入公式：![](assets-fenbi-26641/e8cba9b7ce5fc1eb22413707195cc2b4827d90185d587923c69d3628fc486ef5.png)，民营医院出院人数增长率为![](assets-fenbi-26641/543f335b75b11a5b5fe49b41505bc91dd5b3a5bdbd94c239f46e1bfe096fb663.png)，公立医院出院人数增长率为![](assets-fenbi-26641/61daf361172cc69584aac0202d4dcada4d759eb40a022c1483b6e002bddda2c0.png)，前者比后者约高26%-11.6%=14.4%， D项与之最接近。
+根据题干所求“······同比增速比······高”，可判定此题为增长率问题。定位表格可得，2013年1~8月，全国民营医院、公立医院出院人数分别为985.6、7876.8万人，2012年1~8月为782.8、7060.0万人。代入公式：![](assets-fenbi-26641/e8cba9b7ce5fc1eb22413707195cc2b4827d90185d587923c69d3628fc486ef5.png)，民营医院出院人数增长率为![](assets-fenbi-26641/543f335b75b11a5b5fe49b41505bc91dd5b3a5bdbd94c239f46e1bfe096fb663.png)，公立医院出院人数增长率为![](assets-fenbi-26641/61daf361172cc69584aac0202d4dcada4d759eb40a022c1483b6e002bddda2c0.png)，前者比后者约高26%-11.6%=14.4%， D项与之最接近。
 
 故正确答案为D。
 
@@ -3604,11 +3604,11 @@ C
 
 **解析**
 
-（1）定位表格，第二列数据即各类医疗卫生机构2013年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月的诊疗人次，均超过第一列数据即2012年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月的诊疗人次，正确；
+（1）定位表格，第二列数据即各类医疗卫生机构2013年1~8月的诊疗人次，均超过第一列数据即2012年1~8月的诊疗人次，正确；
 
-（2）定位表格可得，2013年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月，乡镇卫生院、基层医疗卫生机构诊疗人次分别为92970.4万人次、274098.1万人次，![](assets-fenbi-26641/4652e626d75ec9a0d4e49300b0ebb157dc4679a44651deb748ddd282ef8071a0.png)，故乡镇卫生院诊疗人次超过基层医疗卫生机构诊疗人次的25%，错误；
+（2）定位表格可得，2013年1~8月，乡镇卫生院、基层医疗卫生机构诊疗人次分别为92970.4万人次、274098.1万人次，![](assets-fenbi-26641/4652e626d75ec9a0d4e49300b0ebb157dc4679a44651deb748ddd282ef8071a0.png)，故乡镇卫生院诊疗人次超过基层医疗卫生机构诊疗人次的25%，错误；
 
-（3）2012年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月，二级医院、三级医院、医院的诊疗人次分别为70296.5、64521.5、159816.2万人次，70296.5+64521.5>130000，![](assets-fenbi-26641/f829b2b46bb927505c775ccb3259700dff45aa20976dafb368c08147d96fd378.png)，前者较大；2013年1![](assets-fenbi-26641/92ef0f9cdcfda885919bdd4932a986d17e907e7d921ae82bbd29c998578642bd.png)8月，二级医院、三级医院、医院的诊疗人次分别为71952.5、76550.8、174472.5万人次，71952.5+76550.8>140000，![](assets-fenbi-26641/475f2ec80847e84c36ab1e4d85dc6b5880dbc4425fce179e956984f577df5886.png)，前者较大，正确。
+（3）2012年1~8月，二级医院、三级医院、医院的诊疗人次分别为70296.5、64521.5、159816.2万人次，70296.5+64521.5>130000，![](assets-fenbi-26641/f829b2b46bb927505c775ccb3259700dff45aa20976dafb368c08147d96fd378.png)，前者较大；2013年1~8月，二级医院、三级医院、医院的诊疗人次分别为71952.5、76550.8、174472.5万人次，71952.5+76550.8>140000，![](assets-fenbi-26641/475f2ec80847e84c36ab1e4d85dc6b5880dbc4425fce179e956984f577df5886.png)，前者较大，正确。
 
 （1）（3）判断正确，共2个。
 

@@ -15,7 +15,7 @@
 # 2009年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2009 · 行测 · C类** ｜ 100 题 · 图片 228 处 · 答案随题折叠
+> **江苏 · 2009 · 行测 · C类** ｜ 100 题 · 图片 175 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -144,7 +144,7 @@ A
 
 第三个数阵中，![](assets-fenbi-113/957dfac6b3bb1f27256d60e385a58b595dcc54d6f120154a25a81909fd17709a.png)；
 
-即规律为：上面数字![](assets-fenbi-113/1cc3dc0a7f5ede6183143eee6e8b905f1ea36243bd162c0b7fde1bbb98921feb.png)左下数字![](assets-fenbi-113/1cc3dc0a7f5ede6183143eee6e8b905f1ea36243bd162c0b7fde1bbb98921feb.png)右下数字=中间数字。
+即规律为：上面数字×左下数字×右下数字=中间数字。
 
 则第四个数阵中：中间数字![](assets-fenbi-113/d3343443524831aeb818defdea49ff76af91b91e3577940322e1f6987950efe1.png)。
 
@@ -174,7 +174,7 @@ B
 
 **解析**
 
-观察数列，每项均是幂次数，考虑幂次数列。![](assets-fenbi-113/a967f5d3d29964b93110140c71a204d34ac376323999b6ade5fbd51f2279ca2f.png)，![](assets-fenbi-113/2da5c10ef2c97b29283b025241766fbbb84b0032b9e96b2736ba26aa31d59cff.png)，![](assets-fenbi-113/710fabaf27358ad311951f5ff9ed8fe85f8a3021b7827021b0b7ccecad4a04fc.png)，![](assets-fenbi-113/76d825359b6083adc9a62192e5bc054b30f257bf852c0f2d1263b26008cca200.png)，![](assets-fenbi-113/e26a2dd8409798641366b95fccba21c964668253f33e87f359b1146e4a9170b2.png)，底数是公差为-2的等差数列，指数是公差为1的等差数列，故所求项为：![](assets-fenbi-113/7a077311b3f14b08fbaf06532e2935cd7ad44598f54218a44d8f22cbbb51e1c2.png)。
+观察数列，每项均是幂次数，考虑幂次数列。![](assets-fenbi-113/a967f5d3d29964b93110140c71a204d34ac376323999b6ade5fbd51f2279ca2f.png)，729=9^3，![](assets-fenbi-113/710fabaf27358ad311951f5ff9ed8fe85f8a3021b7827021b0b7ccecad4a04fc.png)，![](assets-fenbi-113/76d825359b6083adc9a62192e5bc054b30f257bf852c0f2d1263b26008cca200.png)，729 = 3^6，底数是公差为-2的等差数列，指数是公差为1的等差数列，故所求项为：![](assets-fenbi-113/7a077311b3f14b08fbaf06532e2935cd7ad44598f54218a44d8f22cbbb51e1c2.png)。
 
 故正确答案为B。
 
@@ -242,15 +242,15 @@ C
 
 ### 第 7 题
 
-1/2，![](assets-fenbi-113/2f8f2e67dfe5ddd8fe3608ff6705b92c79ac07a934f4266b4fc7a726e10b5f7e.png)，![](assets-fenbi-113/ebefd7d93eb788ef8eb0fc1cdcf3183e38e1ae9c1e423de78e80ce0de7a584ee.png)，1，![](assets-fenbi-113/9e3e7b0730aa5dcb58386915ea4526971356b52f62720ebdd51e4e7ce95df39c.png)，（    ）
+1/2，3/2，11/8，1，21/32，（    ）
 
-A. ![](assets-fenbi-113/64bde103a9278623ccc992c43f644d16343636b91fd974eed83dd43873b55008.png)
+A. 7/64
 
-B. ![](assets-fenbi-113/e71e888050626ea3d4043d35c0f7650965b767125716fba6ab87152ed51a521d.png)
+B. 25/64
 
-C. ![](assets-fenbi-113/ddb56e4914571f872074b772250225ba60462375d5c0eeaf5eaa65b5447e62cf.png)
+C. 13/32
 
-D. ![](assets-fenbi-113/fc9de4d712459952375e3ebc2666a5d9b3d6a2c99399e2035aa398ddec3265ee.png)
+D. 13/64
 
 <details><summary>第 7 题 · 答案与解析</summary>
 
@@ -260,7 +260,7 @@ C
 
 **解析**
 
-数列大部分为分数，判定为分数数列。分子、分母呈递增趋势，考虑反约分，将分母转化为单调递增，则原数列可转化为：1/2，![](assets-fenbi-113/e08c3c02ca9b87ca49ed85f58e0718d20276941adaada449e9abd2a0b54bf046.png)，![](assets-fenbi-113/ebefd7d93eb788ef8eb0fc1cdcf3183e38e1ae9c1e423de78e80ce0de7a584ee.png)，![](assets-fenbi-113/8cb8611f6bc51cf4ad4b7100bebd5f4448f7c0b80d4d3ee7350a9901be7618af.png)，![](assets-fenbi-113/9e3e7b0730aa5dcb58386915ea4526971356b52f62720ebdd51e4e7ce95df39c.png)，（    ），发现分母是公比为2的等比数列，分子是公差为5的等差数列，故所求项为：![](assets-fenbi-113/d259f7bb15a00b50708cb2905cc16148ce919926ed2675cd9b2259b9fce3f95c.png)。
+数列大部分为分数，判定为分数数列。分子、分母呈递增趋势，考虑反约分，将分母转化为单调递增，则原数列可转化为：1/2，6/4，11/8，16/16，21/32，（    ），发现分母是公比为2的等比数列，分子是公差为5的等差数列，故所求项为：![](assets-fenbi-113/d259f7bb15a00b50708cb2905cc16148ce919926ed2675cd9b2259b9fce3f95c.png)。
 
 故正确答案为C。
 
@@ -326,15 +326,15 @@ C
 
 ### 第 10 题
 
-0，![](assets-fenbi-113/96506fec38d2b89ed6d010162ad110f30d1adf9e8615c428cef43b6e5aed489d.png)，![](assets-fenbi-113/e5ff6956d037249736bcffd94ee17deea04b4837bf5621b5745feb4a52804bcb.png)，![](assets-fenbi-113/6b58cb92ea522c410cfbdd6fd26bd8da7224855efd466faa2da2e4917ee8f3cb.png)，![](assets-fenbi-113/e0ffa7f5479bc4dc95c976ce734017de13228d743aa1634222a1a946ddb1820e.png)，（   ）
+0，7/3，22/5，45/7，76/9，（   ）
 
 A. 12
 
 B. 13
 
-C. ![](assets-fenbi-113/d485acc89cb79a8ab7f59dc05e3efcc62dbbb77a5a8ee19b7c4442fa4adf51dd.png)
+C. 106/11
 
-D. ![](assets-fenbi-113/da31dd7b4a42d0372cdb9ce33011fae234e1767a0c27d0e4f30238898f1b4dc5.png)
+D. 115/11
 
 <details><summary>第 10 题 · 答案与解析</summary>
 
@@ -344,7 +344,7 @@ D
 
 **解析**
 
-数列大部分为分数，判定为分数数列。分子、分母呈递增趋势，考虑反约分，将分母转化为单调递增，则原数列可转化为：![](assets-fenbi-113/1cbba110c317189589eef9e52e94caaba86e1be95cf19b3129cf97281d94e993.png)，![](assets-fenbi-113/96506fec38d2b89ed6d010162ad110f30d1adf9e8615c428cef43b6e5aed489d.png)，![](assets-fenbi-113/e5ff6956d037249736bcffd94ee17deea04b4837bf5621b5745feb4a52804bcb.png)，![](assets-fenbi-113/6b58cb92ea522c410cfbdd6fd26bd8da7224855efd466faa2da2e4917ee8f3cb.png)，![](assets-fenbi-113/e0ffa7f5479bc4dc95c976ce734017de13228d743aa1634222a1a946ddb1820e.png)，（    ），发现分母是公差为2的等差数列，分子形成新数列：0，7，22，45，76，（    ），新数列后项减前项得到：7，15，23，31，（    ），是公差为8的等差数列，故下一项=31+8=39，分子新数列下一项=76+39=115，故所求项为：![](assets-fenbi-113/5b53c881b486445d17b49101a1354b9a7181cacd46b0989629649e111001dc89.png)。
+数列大部分为分数，判定为分数数列。分子、分母呈递增趋势，考虑反约分，将分母转化为单调递增，则原数列可转化为：0/1，7/3，22/5，45/7，76/9，（    ），发现分母是公差为2的等差数列，分子形成新数列：0，7，22，45，76，（    ），新数列后项减前项得到：7，15，23，31，（    ），是公差为8的等差数列，故下一项=31+8=39，分子新数列下一项=76+39=115，故所求项为：![](assets-fenbi-113/5b53c881b486445d17b49101a1354b9a7181cacd46b0989629649e111001dc89.png)。
 
 故正确答案为D。
 
@@ -428,7 +428,7 @@ C
 
 **解析**
 
-题干原式可分解为：![](assets-fenbi-113/3f63c3a839113211dccc3b123d2b448b69e9c22e964299b6afb5b3f6b38d71f1.png)![](assets-fenbi-113/d2e32343c140667aa9ac5db157d61fdb61e681e6ec3d82a096c8e87401579106.png)![](assets-fenbi-113/9c62905236864e7f9674cab82a3dad6efaa201099c7a199f1cb4d6bf559f1134.png)，当n越大，![](assets-fenbi-113/1971ff868df2670ad6df8afa11eb80681411bb4cc40c1fa66b5656ef05fc01e5.png)越小越接近于0，![](assets-fenbi-113/0ff3f3f89064b6f39cdab15c81c413ec9b9aa9d8de171b980355aa06bc53edc0.png)越接近于1-0=1，最接近C项。
+题干原式可分解为：![](assets-fenbi-113/3f63c3a839113211dccc3b123d2b448b69e9c22e964299b6afb5b3f6b38d71f1.png)![](assets-fenbi-113/d2e32343c140667aa9ac5db157d61fdb61e681e6ec3d82a096c8e87401579106.png)![](assets-fenbi-113/9c62905236864e7f9674cab82a3dad6efaa201099c7a199f1cb4d6bf559f1134.png)，当n越大，1/(n+1)越小越接近于0，![](assets-fenbi-113/0ff3f3f89064b6f39cdab15c81c413ec9b9aa9d8de171b980355aa06bc53edc0.png)越接近于1-0=1，最接近C项。
 
 故正确答案为C。
 
@@ -458,7 +458,7 @@ A
 
 **解析**
 
-根据题意，设原正四面体棱长为1，表面积为![](assets-fenbi-113/85510f6fc1207d864b194d4bc811da93e5f0145fe0041e697134fbd36758ac7e.png)，棱长增加10%变为1.1，新正四面体表面积为![](assets-fenbi-113/3bcf84b8d4c277ad27567358a2e7fb0e18f8ab1641000c44f0a259c4fafc53da.png)，表面积增加![](assets-fenbi-113/087d365d9ea256e955a63dc5c967f5054de2743d188ae4a997594364d7119b95.png)![](assets-fenbi-113/78ff1d90b8c9c95992be7e13dda9e891be9bb0d3ef218937eb89f6092e71b7bc.png)。
+根据题意，设原正四面体棱长为1，表面积为√3×1^2，棱长增加10%变为1.1，新正四面体表面积为![](assets-fenbi-113/3bcf84b8d4c277ad27567358a2e7fb0e18f8ab1641000c44f0a259c4fafc53da.png)，表面积增加![](assets-fenbi-113/087d365d9ea256e955a63dc5c967f5054de2743d188ae4a997594364d7119b95.png)![](assets-fenbi-113/78ff1d90b8c9c95992be7e13dda9e891be9bb0d3ef218937eb89f6092e71b7bc.png)。
 
 故正确答案为A。
 
@@ -644,7 +644,7 @@ A
 
 **解析**
 
-设共涨价x次，根据题意，可知总销售额![](assets-fenbi-113/42ece6c9327487e40a880dd51b5e837eb671a7187fe3f3cadec6ba3ca63e9df6.png)![](assets-fenbi-113/99b02dd3eabe0eb135597065b5a547eb63c9ab5e5ce80e8bf62e8a020d75f208.png)，根据函数最值两点式，解得![](assets-fenbi-113/895e7fe5d77678b579449d2250f2248c6e5da8a5885306b27a51ef4a5c551a36.png)，![](assets-fenbi-113/92ec0ddd7dd52d9a28141adf626a8dbdc0735edc45699514ee19ff2711e2a6be.png)，当![](assets-fenbi-113/9930de0f3dd6bc0d3e2273fe54effd28e7c563abca17981b3aa970716652bb82.png)![](assets-fenbi-113/cee5c0f8b23cd27475ba939910746e4bf2bb2c2b47c2d45535730e9e7316235a.png)时，即降价25次时，销售额取到最大值，此时单价定为![](assets-fenbi-113/805c34b5dd5cd54130eb0b9b2fba0951c3b7d2825ddd52c55e11ba9ebe510178.png)元。
+设共涨价x次，根据题意，可知总销售额![](assets-fenbi-113/42ece6c9327487e40a880dd51b5e837eb671a7187fe3f3cadec6ba3ca63e9df6.png)![](assets-fenbi-113/99b02dd3eabe0eb135597065b5a547eb63c9ab5e5ce80e8bf62e8a020d75f208.png)，根据函数最值两点式，解得![](assets-fenbi-113/895e7fe5d77678b579449d2250f2248c6e5da8a5885306b27a51ef4a5c551a36.png)，x_2=25，当![](assets-fenbi-113/9930de0f3dd6bc0d3e2273fe54effd28e7c563abca17981b3aa970716652bb82.png)![](assets-fenbi-113/cee5c0f8b23cd27475ba939910746e4bf2bb2c2b47c2d45535730e9e7316235a.png)时，即降价25次时，销售额取到最大值，此时单价定为![](assets-fenbi-113/805c34b5dd5cd54130eb0b9b2fba0951c3b7d2825ddd52c55e11ba9ebe510178.png)元。
 
 故正确答案为A。
 
@@ -1636,13 +1636,13 @@ C
 
 （2）：C＞D；
 
-（3）：![](assets-fenbi-113/e2c481b1700c38adb8ec6ab3159c6dc2ab17025e900cf236baaabdd4aebe633d.png) 且 ![](assets-fenbi-113/9f0a8ac71e2dac3c20df0c085c0d7ccc35041570995e8f74d373040c94796a75.png)。
+（3）：D ≥ 2 且 B≥1。
 
 第二步：寻找突破口。
 
-本题的突破口是（3）。由![](assets-fenbi-113/e2c481b1700c38adb8ec6ab3159c6dc2ab17025e900cf236baaabdd4aebe633d.png)联系（2）可知，C＞2，C至少有3枚。再联系（1）可知，A＞5，A至少有6枚。
+本题的突破口是（3）。由D ≥ 2联系（2）可知，C＞2，C至少有3枚。再联系（1）可知，A＞5，A至少有6枚。
 
-综上，![](assets-fenbi-113/3e734211eb8e2d4b32210c34e56549672dcfe1a5c49efa416e5414d718cc059a.png)![](assets-fenbi-113/64ef5ba0b32703e179029f720fd5b1553e3f604fa3ae2cb73b190412fb29225a.png)![](assets-fenbi-113/96287a28bb92b624db869b9f9c1b7801ce5d8a75b4bc1eee4ec72b13d3253bb1.png)。
+综上，![](assets-fenbi-113/3e734211eb8e2d4b32210c34e56549672dcfe1a5c49efa416e5414d718cc059a.png)≥![](assets-fenbi-113/96287a28bb92b624db869b9f9c1b7801ce5d8a75b4bc1eee4ec72b13d3253bb1.png)。
 
 故正确答案为C。
 
@@ -2946,7 +2946,7 @@ C
 
 **解析**
 
-根据题干“2001～2005年，······平均增长速度由快到慢的排序是”，可判定本题为年均增长率问题。定位文字材料第一段可知：“2000年，我国GDP超过意大利，······占美国国内生产总值GDP的12.3%，占日本国内生产总值的25.7%，占德国国内生产总值的63.1%。2005年，我国GDP······是美国国内生产总值的18.1%，是日本国内生产总值的49.3%，是德国国内生产总值的80.5%”，设2000年我国GDP为a，2005年我国GDP为b，根据年均增长率公式：![](assets-fenbi-113/f25e7b5d7b4b1df0ec4892e28cfe26b4ab35b1eb32ffe94929a15931201967f8.png)，即本题现期量为2005年的量，基期量为2000年的量，年份差n=2005-2000=5，可推出：![](assets-fenbi-113/415bf5ed6bcfe82614034aa5630fb06417f2b39e81d0ba4521ef53aef8304e59.png)![](assets-fenbi-113/a33db81791bb224d3e8ecc527356f676571c34b5eac6167a6f6d1049ec9dadd9.png)![](assets-fenbi-113/7e905a83b184a733d1e6c8799d3d2812ad5f42b40061d06d3e0e497537c49208.png)，![](assets-fenbi-113/fdeb033ff10d649b226a860940c28da57d1e901adb71c70b27cbce590303e28a.png)![](assets-fenbi-113/d1b29fd65f18f70097a3650a47c401873a12cf26b683155fd78333806449fe43.png)，![](assets-fenbi-113/ff6bf6f90839e2b8589127a6f4a47293f70b8de2d4b5558d1ede5857311578c2.png)，可推出平均增长速度由快到慢依次为：德国、美国、日本。
+根据题干“2001～2005年，······平均增长速度由快到慢的排序是”，可判定本题为年均增长率问题。定位文字材料第一段可知：“2000年，我国GDP超过意大利，······占美国国内生产总值GDP的12.3%，占日本国内生产总值的25.7%，占德国国内生产总值的63.1%。2005年，我国GDP······是美国国内生产总值的18.1%，是日本国内生产总值的49.3%，是德国国内生产总值的80.5%”，设2000年我国GDP为a，2005年我国GDP为b，根据年均增长率公式：![](assets-fenbi-113/f25e7b5d7b4b1df0ec4892e28cfe26b4ab35b1eb32ffe94929a15931201967f8.png)，即本题现期量为2005年的量，基期量为2000年的量，年份差n=2005-2000=5，可推出：![](assets-fenbi-113/415bf5ed6bcfe82614034aa5630fb06417f2b39e81d0ba4521ef53aef8304e59.png)![](assets-fenbi-113/a33db81791bb224d3e8ecc527356f676571c34b5eac6167a6f6d1049ec9dadd9.png)≈0.68b/a，![](assets-fenbi-113/fdeb033ff10d649b226a860940c28da57d1e901adb71c70b27cbce590303e28a.png)![](assets-fenbi-113/d1b29fd65f18f70097a3650a47c401873a12cf26b683155fd78333806449fe43.png)，![](assets-fenbi-113/ff6bf6f90839e2b8589127a6f4a47293f70b8de2d4b5558d1ede5857311578c2.png)，可推出平均增长速度由快到慢依次为：德国、美国、日本。
 
 故正确答案为C。
 
@@ -3008,7 +3008,7 @@ B
 
 **解析**
 
-根据题干“年龄在50岁以上的劳动力有”，结合材料给出的南京全市劳动力人数以及年龄在50岁以上的劳动力人数占全市总人数的比重，可判定本题为现期比重问题。定位表格材料可得，南京全市的劳动力人数为143.19万人，年龄在50岁以上的劳动力人数占比为26.0%。则年龄在50岁以上的劳动力有![](assets-fenbi-113/56807fc56c3f2c074b9a9bcc98a814a1252582632608f4644cdaa7a9159a3021.png)![](assets-fenbi-113/e2d256a97fe34fc8723c5b6b8a5d88d63ec7bdd7f0f4258457e8e2a6d7d0faae.png)![](assets-fenbi-113/fedc8724d721a65609cfcdd85598f96e44daa38a52e8b319bd1f7e9a3ee1b451.png)万人，与B项最接近。
+根据题干“年龄在50岁以上的劳动力有”，结合材料给出的南京全市劳动力人数以及年龄在50岁以上的劳动力人数占全市总人数的比重，可判定本题为现期比重问题。定位表格材料可得，南京全市的劳动力人数为143.19万人，年龄在50岁以上的劳动力人数占比为26.0%。则年龄在50岁以上的劳动力有![](assets-fenbi-113/56807fc56c3f2c074b9a9bcc98a814a1252582632608f4644cdaa7a9159a3021.png)![](assets-fenbi-113/e2d256a97fe34fc8723c5b6b8a5d88d63ec7bdd7f0f4258457e8e2a6d7d0faae.png)=37.5万人，与B项最接近。
 
 故正确答案为B。
 
@@ -3350,7 +3350,7 @@ C
 
 **解析**
 
-根据题干“2000-2005年······比重最大的年份是”，可判定本题为比重比较问题。定位柱状图可得2000-2005年各年中国污染治理资金来源构成。结合公式：比重![](assets-fenbi-113/c42951fc0520ac23c39ce210214e7f31b1ee337d1080a78f262df685285f6cbc.png)，2000年比重为![](assets-fenbi-113/36f1959407c4819cf7c0097ece66d46dcf75dd87905a2f155e55e7605ee1efc2.png)，2001年比重为![](assets-fenbi-113/8810580fb9ac551510d7a1cbc32ebbbb01a49fef7e3edd9f926b8ac28ac83823.png)，2002年比重为![](assets-fenbi-113/43bbc153e1beab6389091d941813665f0b5b09c634154ad232219977e0227a03.png)，2003年比重为![](assets-fenbi-113/2fae706386d13ab2eea977fc91a0c565469908680dd213e380b4553f42c332d0.png)，因此2002年比重较大。
+根据题干“2000-2005年······比重最大的年份是”，可判定本题为比重比较问题。定位柱状图可得2000-2005年各年中国污染治理资金来源构成。结合公式：比重=部分/总体，2000年比重为![](assets-fenbi-113/36f1959407c4819cf7c0097ece66d46dcf75dd87905a2f155e55e7605ee1efc2.png)，2001年比重为![](assets-fenbi-113/8810580fb9ac551510d7a1cbc32ebbbb01a49fef7e3edd9f926b8ac28ac83823.png)，2002年比重为![](assets-fenbi-113/43bbc153e1beab6389091d941813665f0b5b09c634154ad232219977e0227a03.png)，2003年比重为![](assets-fenbi-113/2fae706386d13ab2eea977fc91a0c565469908680dd213e380b4553f42c332d0.png)，因此2002年比重较大。
 
 故正确答案为C。
 
@@ -3492,7 +3492,7 @@ A
 
 2008年增长率为![](assets-fenbi-113/f32613c82d445e56169ba8ae052f719979985cd5331151d1b15f69d83170087e.png)。
 
-显然![](assets-fenbi-113/33024aab0960cd7b5c6f405129123a6a4a756d5a91efa62c16ff68bcdf1cb633.png)的分子与分母量级相当，而其他分数的分子比分母低一量级，则2004年的增长率最大。
+显然3035/8510的分子与分母量级相当，而其他分数的分子比分母低一量级，则2004年的增长率最大。
 
 故正确答案为A。
 
@@ -3522,29 +3522,29 @@ D
 
 A项：根据题意可知各年份进口总额增长率依次为：
 
-2004年为![](assets-fenbi-113/db650f609c395590efe6c276ca86fd4cea64bdce0dbd5ec474c4b8b6bb46bdc7.png)![](assets-fenbi-113/d09356947a61a860df5c5f4b554e7d3a595e5dfc315e1f8eb4ae13b622aefc95.png)；
+2004年为![](assets-fenbi-113/db650f609c395590efe6c276ca86fd4cea64bdce0dbd5ec474c4b8b6bb46bdc7.png)≈35.9%；
 
-2005年为![](assets-fenbi-113/51755cc88080dc61499de77845a0e66b7fe21da7afde5a7c584769d344c09031.png)![](assets-fenbi-113/a11d907f75d761ceb6445b0405215b19a1a087c6a911f79130ba410b1d69927a.png)；
+2005年为![](assets-fenbi-113/51755cc88080dc61499de77845a0e66b7fe21da7afde5a7c584769d344c09031.png)≈17.6%；
 
-2006年为![](assets-fenbi-113/ab526a8b6dfa01aade31faca6b9f0d5de85183903ef395d1a1101ccdb6f9b5f5.png)![](assets-fenbi-113/b131b830bb786be0477c5d73598f45faedc0dc78459bee0e7ee0dfad1a2127a7.png)；
+2006年为![](assets-fenbi-113/ab526a8b6dfa01aade31faca6b9f0d5de85183903ef395d1a1101ccdb6f9b5f5.png)≈19.9%；
 
-2007年为![](assets-fenbi-113/ead3c9ecfc842a9289255dd55abf3114754d5c6b85340e0e895a41c172529fa4.png)![](assets-fenbi-113/b280051f8be18ca138ce10e57bfccc4c040600919fd018bab39b92622183359f.png)；
+2007年为![](assets-fenbi-113/ead3c9ecfc842a9289255dd55abf3114754d5c6b85340e0e895a41c172529fa4.png)≈20.7%；
 
-2008年为![](assets-fenbi-113/fe619942f984339e6dda97ac37915f1a28db67d878f42449cb8b1a59f97c12b8.png)![](assets-fenbi-113/a96bcdd703ea92d8326507ef09f21c5ad3c0a30dc96e7dbbdc6945f082a7b172.png)。
+2008年为![](assets-fenbi-113/fe619942f984339e6dda97ac37915f1a28db67d878f42449cb8b1a59f97c12b8.png)≈18.6%。
 
 增长率先下降后上升再下降，错误。
 
 B项：根据题意可知各年份出口总额增长率依次为：
 
-2004年为![](assets-fenbi-113/0489a7109e991d832d2c721ce40df12bb8be469c9d4e9d618dba98c5d68210a2.png)![](assets-fenbi-113/57bb44b2a323882cdbeeb6d0e805544b42a8b7f121cce0ccf48ad3170ee5ad2f.png)；
+2004年为![](assets-fenbi-113/0489a7109e991d832d2c721ce40df12bb8be469c9d4e9d618dba98c5d68210a2.png)≈35.4%；
 
-2005年为![](assets-fenbi-113/92e592316ca04091ccdc9f9dfce786de8aa2a8b51f778e37418ce7eb105f1335.png)![](assets-fenbi-113/c638493f2ea85af5f1543d14f3961f4d2c49c128f6b2cf1083eb7d95f2ee1827.png)；
+2005年为![](assets-fenbi-113/92e592316ca04091ccdc9f9dfce786de8aa2a8b51f778e37418ce7eb105f1335.png)≈28.4%；
 
-2006年为![](assets-fenbi-113/d5f440ed46d360adf38ce0e36c067fb5af4370c23940666a66ee6382a7a1f7dd.png)![](assets-fenbi-113/ac1be8002cb606d2403114a2618a9dbf2db57f9a450ef535add9a29007891fb9.png)；
+2006年为![](assets-fenbi-113/d5f440ed46d360adf38ce0e36c067fb5af4370c23940666a66ee6382a7a1f7dd.png)≈27.2%；
 
-2007年为![](assets-fenbi-113/74584007383723cdf6d5a5375e7d2bcf44f29c1a1bf43dfc98e934b5f8207092.png)![](assets-fenbi-113/7deadaa5c3b3b6e561fe93ba05689df654653e598a89064138878db78a88ea02.png)；
+2007年为![](assets-fenbi-113/74584007383723cdf6d5a5375e7d2bcf44f29c1a1bf43dfc98e934b5f8207092.png)≈25.7%；
 
-2008年为![](assets-fenbi-113/fdd3293ec33bf0d74af4af50dcf62c44e3626fa303300c0fe4440aef95bd9dd3.png)![](assets-fenbi-113/1d743e12fbbe853d5be2a771dc3774869e9a5e875d84b5b851f88530becb8318.png)。
+2008年为![](assets-fenbi-113/fdd3293ec33bf0d74af4af50dcf62c44e3626fa303300c0fe4440aef95bd9dd3.png)≈17.3%。
 
 增长率逐年下降，错误。
 
@@ -3578,15 +3578,15 @@ B
 
 **解析**
 
-根据题干“中国进出口差额占当年货物进出口总额比重最小的年份”，可判定本题为比重比较问题。定位柱状图数据，结合公式：比重![](assets-fenbi-113/c42951fc0520ac23c39ce210214e7f31b1ee337d1080a78f262df685285f6cbc.png)，可得2003～2008年中国进出口差额占当年货物进出口总额比重分别为：
+根据题干“中国进出口差额占当年货物进出口总额比重最小的年份”，可判定本题为比重比较问题。定位柱状图数据，结合公式：比重=部分/总体，可得2003～2008年中国进出口差额占当年货物进出口总额比重分别为：
 
-2003年为![](assets-fenbi-113/7bbf26c62a96be93dfeda89a0930b311c784642f522c77e55ade4875e8f58cc9.png)![](assets-fenbi-113/09fda82463cb8396ad679f8521a09c9f1440d7ffc672bdd8ce56663e2f6ea9b8.png)；
+2003年为![](assets-fenbi-113/7bbf26c62a96be93dfeda89a0930b311c784642f522c77e55ade4875e8f58cc9.png)≈2.98%；
 
-2004年为![](assets-fenbi-113/e53ca0543bdd99291c863d5d24b08b64fbe0f773d98ea16cd305db0691a2d82e.png)![](assets-fenbi-113/5556617b41dfdefc146bb57130c1c618d2a15d2ee263dcd03f7ffa43a8cb558a.png)；
+2004年为![](assets-fenbi-113/e53ca0543bdd99291c863d5d24b08b64fbe0f773d98ea16cd305db0691a2d82e.png)≈2.78%；
 
-2007年为![](assets-fenbi-113/407270e166f16a98fd7e9e41ff16ce6a2926b1fb84116a90c4e4fb7588c6df4a.png)![](assets-fenbi-113/3d0a607cd78b8db9af67f3503a28a06791141b402184677a3a12cb20d9d2411e.png)；
+2007年为![](assets-fenbi-113/407270e166f16a98fd7e9e41ff16ce6a2926b1fb84116a90c4e4fb7588c6df4a.png)≈12.1%；
 
-2008年为![](assets-fenbi-113/ba1fa75fd14f0d81a5877d59b0c68b89f692fdebbc2e1bce6de21b2998a6047d.png)![](assets-fenbi-113/f83fb586a942e2a2925f0e3c021515a536d53fc8f696424984662b8936006b1f.png)。
+2008年为![](assets-fenbi-113/ba1fa75fd14f0d81a5877d59b0c68b89f692fdebbc2e1bce6de21b2998a6047d.png)≈11.5%。
 
 则2004年中国进出口差额占当年的进出口总额比重最小。
 
@@ -3644,7 +3644,7 @@ D
 
 **解析**
 
-根据柱状图可得，2008年中国货物进出口总额为14285+11331=25616亿美元，则出口额所占比重为![](assets-fenbi-113/14a053673d47f7ed72a32a533b34497e70ba2cb6b73930d5691a8531cbaa63aa.png)![](assets-fenbi-113/d5c50781f3d9e4f10bac6866837ff06d9318ff0c3771d404b08301ada377db83.png)，进口额所占比重为1-54.9%=45.1%。
+根据柱状图可得，2008年中国货物进出口总额为14285+11331=25616亿美元，则出口额所占比重为14285/25616≈![](assets-fenbi-113/d5c50781f3d9e4f10bac6866837ff06d9318ff0c3771d404b08301ada377db83.png)，进口额所占比重为1-54.9%=45.1%。
 
 故正确答案为D。
 

@@ -15,7 +15,7 @@
 # 2010年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2010 · 行测 · B类** ｜ 155 题 · 图片 255 处 · 答案随题折叠
+> **江苏 · 2010 · 行测 · B类** ｜ 155 题 · 图片 191 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -253,7 +253,7 @@ B
 
 **解析**
 
-题干给出的两个字符组中重复的字符为![](assets-fenbi-161/fb0a95a0d4298c90dfd67551ec67ae8459ea2a28737dd623b5f6040bbbe250ee.png)，共1个。
+题干给出的两个字符组中重复的字符为%，共1个。
 
 故正确答案为B。
 
@@ -337,7 +337,7 @@ A
 
 **解析**
 
-题干给出的三个字符组中重复的字符为![](assets-fenbi-161/14628b9e2e53ce687bccccc93eaf6c63719db44c96de0b6ff872a61b74ec202a.png)，共1个。
+题干给出的三个字符组中重复的字符为α，共1个。
 
 故正确答案为A。
 
@@ -449,7 +449,7 @@ B
 
 **解析**
 
-题干给出的三个字符组中重复的字符为![](assets-fenbi-161/6acd4e48b52d5f71695bdade5da67df04ba4a014884109ee3075a54c6fdbf6e5.png)，共1个。
+题干给出的三个字符组中重复的字符为b，共1个。
 
 故正确答案为B。
 
@@ -729,7 +729,7 @@ C
 
 **解析**
 
-题干给出的两个字符组中重复的字符为![](assets-fenbi-161/559d08e9880d4013469ff09f899eb02f88db904ac8f21e41e975de4d236eb744.png)、![](assets-fenbi-161/0f9663bf3138837f97da5e3923bde4c988e07b060ec3b53ffe0f175b160644f4.png)，共2个。
+题干给出的两个字符组中重复的字符为※、★，共2个。
 
 故正确答案为C。
 
@@ -1515,11 +1515,11 @@ D
 
 A. ![](assets-fenbi-161/4958e88a69d86096598053a64623ae0a194676e61b53986f1343deb8e6b5e56a.png)
 
-B. ![](assets-fenbi-161/73c6c6287f91876190acbc695a1ab9747d6c5fe6e41251f2a29a15bc3b901238.png)
+B. R☆
 
 C. ![](assets-fenbi-161/5bb51723604fd1135657c10ad87ef94ea8e9829b15256b934062abdc7f03487a.png)
 
-D. ![](assets-fenbi-161/cb5898c7fd33fc591c5d2a1c9925a8fef0d6eab4bab4fc6b39ad6ec01902565f.png)
+D. ●★
 
 <details><summary>第 51 题 · 答案与解析</summary>
 
@@ -1541,13 +1541,13 @@ B
 
 数字表中第4行重复数字对应的符号是：
 
-A. ![](assets-fenbi-161/531175d09f78b465041201c9ed9a2cd79cd83539adbf5cbba54be186b30f8e2c.png)
+A. H△B
 
 B. ![](assets-fenbi-161/d240c69d476201b0693f93891ad33e49edc8dbe3bf35c9394dfbc6c4fdfa2079.png)
 
-C. ![](assets-fenbi-161/53faf110f2f38649b6329b7fb49027988c56327ea4f47b6bf34f11a2f491bf54.png)
+C. H●B
 
-D. ![](assets-fenbi-161/48b414bbb0f87f3f20be911b9a8b1184b556615000cd9a8cb781febe63f5b6b4.png)
+D. B△☆
 
 <details><summary>第 52 题 · 答案与解析</summary>
 
@@ -1571,11 +1571,11 @@ C
 
 A. ![](assets-fenbi-161/ec0052439c6714f517918bd1495927afd8ed2fa27226e13f7d54b2100c8f140f.png)
 
-B. ![](assets-fenbi-161/940a8a004b7328b8e28cefc80ddfd7ef74e147d51c9704bddf7a12ba96575062.png)
+B. -●H◇
 
-C. ![](assets-fenbi-161/9d2f4b8be8f7c05765c1356b0de2f9826cd825e8ababb6e7ea055ce1ded4e7fc.png)
+C. ◇△☆R
 
-D. ![](assets-fenbi-161/44c6781831fa9c2c3288790ac31118b36352b3a68936d663586bdc7e7e3eb5ae.png)
+D. -●◇H
 
 <details><summary>第 53 题 · 答案与解析</summary>
 
@@ -1597,13 +1597,13 @@ A
 
 数字表中第5列四个数字之积各位数字对应的符号是：
 
-A. ![](assets-fenbi-161/289134f62be65969a340b13ffe94c9c9dc0dd90b8eaad0ea71bf7ece92ae6580.png)
+A. R●●
 
-B. ![](assets-fenbi-161/a707d33031b13bcdd01b5fe0033f4ddf31eeec7ab27ca869eda0566a8d533d19.png)
+B. HR●
 
-C. ![](assets-fenbi-161/ad5cfc20c855e878f9bac2e37f18d05744b2dfc2e7c50bb6c7e700895dca69d9.png)
+C. R◇●
 
-D. ![](assets-fenbi-161/1d3288704b16989853756620acc9241ca2352d8ce79313b4160b094d119bc390.png)
+D. RR●
 
 <details><summary>第 54 题 · 答案与解析</summary>
 
@@ -1625,11 +1625,11 @@ D
 
 数字表中第2列四个数字之积的个位对应的符号是：
 
-A. ![](assets-fenbi-161/f943b760905144b809ff02d7d220a9a3ce793358b18137fa70dd98863248ad03.png)
+A. ●
 
-B. ![](assets-fenbi-161/f06eab24bf80c02c789a006cf6001a8ba3aeeafbd86c887315231ee48e95b727.png)
+B. △
 
-C. ![](assets-fenbi-161/c958b5b4877e0f4b460e9d7bcc0ba20c391306a4a021a8b4a7348d4b1dea33cf.png)
+C. ★
 
 D. ![](assets-fenbi-161/e1bb45ac11fa88aec50de949af53548acf5c7f4eea61203b7769b97e8f745583.png)
 
@@ -1687,7 +1687,7 @@ B. ![](assets-fenbi-161/c4376b5e0aca98ef981cc2e342cfd03d281cd7a45d5005bb60f49fc7
 
 C. ![](assets-fenbi-161/4e494a592c56d8ae358c077257463e454a97284c5c4a89915d8f5ec0e21b0cb2.png)
 
-D. ![](assets-fenbi-161/feb5432c42a7610ba82adf29035a41c3408ceeac9d2cd9efcd3779d7f1b19754.png)
+D. -B△☆
 
 <details><summary>第 57 题 · 答案与解析</summary>
 
@@ -1711,7 +1711,7 @@ C
 
 A. ![](assets-fenbi-161/5ea9525e1e825ad7d8b098aedd7e677cd60583ed072797275b8a20fbe00180ba.png)
 
-B. ![](assets-fenbi-161/894d4edf298564ea3c4be296a93189ec7550e73f84382a6d5ed845a496b14cc6.png)
+B. -▽
 
 C. ![](assets-fenbi-161/ba15cce129665810e4054cdaceb02dd8418c9c57d8224ca3aeaa68ac1009000b.png)
 
@@ -1765,7 +1765,7 @@ D
 
 数字表中第3行缺失的数字对应的符号是：
 
-A. ![](assets-fenbi-161/47f592b960116d34ed4ee9ec1d8fc7b2a84cd6ead1b8a4093f5dacc2103ff9b4.png)
+A. ●
 
 B. ![](assets-fenbi-161/ddce83e81e067c530878e42bf62ce28df3a19385054b3321870c90b9245de46a.png)
 
@@ -1781,7 +1781,7 @@ C
 
 **解析**
 
-数字表中第3行缺失的数字为3，由对应表可知对应的符号为![](assets-fenbi-161/582967c070d98ab27ad92932634a1aae188b9aa79628c8c5c9a2d150ec53d045.png)。
+数字表中第3行缺失的数字为3，由对应表可知对应的符号为◇。
 
 故正确答案为C。
 
@@ -2349,15 +2349,15 @@ B
 
 ### 第 76 题
 
-![](assets-fenbi-161/9e3e7b0730aa5dcb58386915ea4526971356b52f62720ebdd51e4e7ce95df39c.png)，1，![](assets-fenbi-161/e2fd8fbe8f199ed7dadeeaf1dbf8e551287eeb96b0866cc576e60d063ed4ec74.png)，![](assets-fenbi-161/89b0729e2dc304c114efe26786ccb87173fd5c31445b622771179d206b5df2a9.png)，![](assets-fenbi-161/b46c4ea79b9f20d3550df1008b1d1c4b35e787f3f254598e0b9c400a78673935.png)，()
+21/32，1，25/24，17/18，43/54，()
 
-A. ![](assets-fenbi-161/e25de656609dffcfb71d57851360026e4054c5af419aa7688c00c634e7a3c007.png)
+A. 51/81
 
-B. ![](assets-fenbi-161/300498692fc389ac2d0ad9ba2ea09866ad9b786234ee0bd947b0f805c691eed8.png)
+B. 52/81
 
-C. ![](assets-fenbi-161/1f72d2a28147f0a842569a5077a87cd428f0f9ebcf9f4c6e012e1041b46aca80.png)
+C. 53/80
 
-D. ![](assets-fenbi-161/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)
+D. 2/3
 
 <details><summary>第 76 题 · 答案与解析</summary>
 
@@ -2367,7 +2367,7 @@ B
 
 **解析**
 
-数列大部分为分数，考虑分数数列。原数列可转化为：![](assets-fenbi-161/033dab5572b468cb68b6757705e156ff24fbed5203a733ec28db6e1d9b0a7085.png)、![](assets-fenbi-161/8cb8611f6bc51cf4ad4b7100bebd5f4448f7c0b80d4d3ee7350a9901be7618af.png)、![](assets-fenbi-161/e2fd8fbe8f199ed7dadeeaf1dbf8e551287eeb96b0866cc576e60d063ed4ec74.png)、![](assets-fenbi-161/e8a68c3504d601eae804b60cd673af4f8aa78823af9416354f83e4fe1863e7d2.png)、![](assets-fenbi-161/b46c4ea79b9f20d3550df1008b1d1c4b35e787f3f254598e0b9c400a78673935.png)、（    ）。分子部分为7、16、25、34、43，是公差为9的等差数列，则所求项的分子为43+9=52；分母部分为![](assets-fenbi-161/f3a80485cce29ab4a4fdf4282c5d7caf63364dbe8cb24b1187ec0116b02ddca2.png)、16、24、36、54，是公比为![](assets-fenbi-161/2f8f2e67dfe5ddd8fe3608ff6705b92c79ac07a934f4266b4fc7a726e10b5f7e.png)的等比数列，则所求项的分母为![](assets-fenbi-161/45aefcbbba72dc3cb924b39eec04c2122b62083f9037231a81707e0b05e512a5.png)。故所求项为![](assets-fenbi-161/300498692fc389ac2d0ad9ba2ea09866ad9b786234ee0bd947b0f805c691eed8.png)。
+数列大部分为分数，考虑分数数列。原数列可转化为：7/(32/3)、16/16、25/24、34/36、43/54、（    ）。分子部分为7、16、25、34、43，是公差为9的等差数列，则所求项的分子为43+9=52；分母部分为32/3、16、24、36、54，是公比为3/2的等比数列，则所求项的分母为![](assets-fenbi-161/45aefcbbba72dc3cb924b39eec04c2122b62083f9037231a81707e0b05e512a5.png)。故所求项为52/81。
 
 故正确答案为B。
 
@@ -2519,15 +2519,15 @@ B
 
 ### 第 82 题
 
-1/2，1/2，![](assets-fenbi-161/480d857a2fef65b8ab0e0a8a15436c959eabad022d8fbaf701be1f3675c1fad4.png)，![](assets-fenbi-161/811fc9c0691e450f1436cddfaaa82eca74435c4b44419fec65ea30f44e4b1ffd.png)，![](assets-fenbi-161/b2440fa76412140fa79828032170c6ed31bd107ab5a5d9ab3f2ae4bba5f89205.png)，![](assets-fenbi-161/ff641739fc0646363bf7d6243391b3d31ae79b4b24543b499f6179b14d229b81.png)
+1/2，1/2，5/8，7/9，11/10，![](assets-fenbi-161/ff641739fc0646363bf7d6243391b3d31ae79b4b24543b499f6179b14d229b81.png)
 
-A. ![](assets-fenbi-161/d62f0723669657a6f3778ee8dbf34fb013a881741257141d6a619846872e8d91.png)
+A. 13/11
 
-B. ![](assets-fenbi-161/b0bc13fc4e310021bf72be3828e7224767ad75c6abb24402620000b821ca2816.png)
+B. 7/6
 
-C. ![](assets-fenbi-161/e006c8601db84bf104a1302a0ba84d52c117a3a5a98651c929df9795925589ad.png)
+C. 17/15
 
-D. ![](assets-fenbi-161/d460a322e5aca5b859fc1b974c78e1815c6dfc5f7742373227428445112347f2.png)
+D. 13/12
 
 <details><summary>第 82 题 · 答案与解析</summary>
 
@@ -2537,7 +2537,7 @@ D
 
 **解析**
 
-观察数列与选项均为分数，优先考虑分数数列。原数列可转化为：![](assets-fenbi-161/f0bf70386b61446b617fe5edbde8a961fbf46141ee7109b063319c330b094192.png)、![](assets-fenbi-161/f7f7f77213dc0a4d4a409a4556937ba7ed12ddfb1002305be7f832eaf63f4f81.png)、![](assets-fenbi-161/480d857a2fef65b8ab0e0a8a15436c959eabad022d8fbaf701be1f3675c1fad4.png)、![](assets-fenbi-161/811fc9c0691e450f1436cddfaaa82eca74435c4b44419fec65ea30f44e4b1ffd.png)、![](assets-fenbi-161/b2440fa76412140fa79828032170c6ed31bd107ab5a5d9ab3f2ae4bba5f89205.png)。分子部分为2、3、5、7、11，是质数数列，故所求项的分子为13；分母部分为4、6、8、9、10，是合数数列，故所求项的分母为12。则所求项为![](assets-fenbi-161/d460a322e5aca5b859fc1b974c78e1815c6dfc5f7742373227428445112347f2.png)。
+观察数列与选项均为分数，优先考虑分数数列。原数列可转化为：2/4、3/6、5/8、7/9、11/10。分子部分为2、3、5、7、11，是质数数列，故所求项的分子为13；分母部分为4、6、8、9、10，是合数数列，故所求项的分母为12。则所求项为13/12。
 
 故正确答案为D。
 
@@ -2565,7 +2565,7 @@ C
 
 **解析**
 
-数列项数较多，且三个数字一组，优先考虑分组。观察发现：![](assets-fenbi-161/866aa393a12cb1e76504343fcffcfe14f0471122ccb60d299e49a9326a921173.png)，![](assets-fenbi-161/a4245231fc0cc2ad16b87b47f7963c029052c0592c39c00b7ccbb6bc12285928.png)，![](assets-fenbi-161/718f52aadcb01a514195de60bfc9eede04f6cd8bf015bb63e9f940b789483f51.png)，即每组数中（第一项+第二项）![](assets-fenbi-161/1cc3dc0a7f5ede6183143eee6e8b905f1ea36243bd162c0b7fde1bbb98921feb.png)2+3=第三项。故所求项![](assets-fenbi-161/dbe97b8dac416d8376bdb9b067b68781703d02c437a4a78dbea98d87c752d844.png)。
+数列项数较多，且三个数字一组，优先考虑分组。观察发现：![](assets-fenbi-161/866aa393a12cb1e76504343fcffcfe14f0471122ccb60d299e49a9326a921173.png)，![](assets-fenbi-161/a4245231fc0cc2ad16b87b47f7963c029052c0592c39c00b7ccbb6bc12285928.png)，![](assets-fenbi-161/718f52aadcb01a514195de60bfc9eede04f6cd8bf015bb63e9f940b789483f51.png)，即每组数中（第一项+第二项）×2+3=第三项。故所求项![](assets-fenbi-161/dbe97b8dac416d8376bdb9b067b68781703d02c437a4a78dbea98d87c752d844.png)。
 
 故正确答案为C。
 
@@ -2623,7 +2623,7 @@ D
 
 数列无明显特征，作差作和无规律，考虑递推。
 
-观察发现，![](assets-fenbi-161/04aef0d0ab79adb4310349123bd287a072a100ec027d87f17bf03bdf10155e0c.png)，![](assets-fenbi-161/00391c943d50bbd8a707ddf6ff57c8c018bcb5256b227d3f2dce2ba81514ff9c.png)，![](assets-fenbi-161/88fd48e7f6b449bc449f799df80f9828cd0b9e4f1f0dc019a1e9fb293b8a34f5.png)，![](assets-fenbi-161/f1e5dfe6db861ef2e35a0cda5129d8de45e3dd80e2a07484a533a99a5ec24f00.png)，即第一项![](assets-fenbi-161/1cc3dc0a7f5ede6183143eee6e8b905f1ea36243bd162c0b7fde1bbb98921feb.png)2-修正项=第二项，修正项为4、8、16、32，是公比为2的等比数列，故修正项下一项是64。则所求项![](assets-fenbi-161/f299933bbe8d9f12359ed11be70c196b60a982ba7047f434767bed94097ba2f8.png)。
+观察发现，![](assets-fenbi-161/04aef0d0ab79adb4310349123bd287a072a100ec027d87f17bf03bdf10155e0c.png)，![](assets-fenbi-161/00391c943d50bbd8a707ddf6ff57c8c018bcb5256b227d3f2dce2ba81514ff9c.png)，![](assets-fenbi-161/88fd48e7f6b449bc449f799df80f9828cd0b9e4f1f0dc019a1e9fb293b8a34f5.png)，![](assets-fenbi-161/f1e5dfe6db861ef2e35a0cda5129d8de45e3dd80e2a07484a533a99a5ec24f00.png)，即第一项×2-修正项=第二项，修正项为4、8、16、32，是公比为2的等比数列，故修正项下一项是64。则所求项![](assets-fenbi-161/f299933bbe8d9f12359ed11be70c196b60a982ba7047f434767bed94097ba2f8.png)。
 
 故正确答案为D。
 
@@ -2679,9 +2679,9 @@ C
 
 **解析**
 
-方法一：正面：其中有两名同学不能担任甲角色，则在其他6名同学中选出一名同学担任甲角色，即![](assets-fenbi-161/8bdf5f5dd166b6931fd409df38db3c9b320bd82ff124069509a0c5f010de4c08.png)，再在剩下的7名同学中选出3人担任剩下的3个不同角色，即![](assets-fenbi-161/7963ebc8f141d4856dc6ab832542180ef5a2869e2c91a1078b038d85e428dbdb.png)。故一共有![](assets-fenbi-161/66f649d545b933e65b4f657bc875484066cac55a6c58eb62a8744f0c628131ab.png)![](assets-fenbi-161/7392db20d224ab26c61e9574f29c35c5d77af10986e598a2908e1f717260e0ed.png)种。
+方法一：正面：其中有两名同学不能担任甲角色，则在其他6名同学中选出一名同学担任甲角色，即C_6^1，再在剩下的7名同学中选出3人担任剩下的3个不同角色，即A_7^3。故一共有C_6^1×A_7^3![](assets-fenbi-161/7392db20d224ab26c61e9574f29c35c5d77af10986e598a2908e1f717260e0ed.png)种。
 
-方法二：反面：有两名同学不能担任甲角色，其反面为两名同学之一担任甲角色，满足条件的情况数=总情况数-两名同学之一担任甲角色的情况数。“8名学生中选出4人分别担任甲、乙、丙、丁四个不同的表演角色”，则总的情况数有![](assets-fenbi-161/96e3fd7afd60e1235861089e14c2c40282717582f89aed01029966bf52a9d514.png)种方案。两名同学之一担任甲角色的情况数是：先从两名中选一名同学担任甲角色，则是![](assets-fenbi-161/b9dcd9ee2ef91c18a43149c5be88adaedf7bbf4a24068d9d89dec8a5e39cbaae.png)，再在剩下的7名同学中选出3人担任其他3个不同角色，则是![](assets-fenbi-161/7963ebc8f141d4856dc6ab832542180ef5a2869e2c91a1078b038d85e428dbdb.png)，故一共是![](assets-fenbi-161/d7c5d945af4098f8d557b96f3fc0450a1187dba1acbeb217bdf321cebb7601f4.png)![](assets-fenbi-161/1dcd20537d38b35d4210f051d4c492b05e1c97e3ef8d7bb9c44b4fe7528551b0.png)种。则其中两名同学不能担任甲角色的方案有1680-420=1260种。
+方法二：反面：有两名同学不能担任甲角色，其反面为两名同学之一担任甲角色，满足条件的情况数=总情况数-两名同学之一担任甲角色的情况数。“8名学生中选出4人分别担任甲、乙、丙、丁四个不同的表演角色”，则总的情况数有![](assets-fenbi-161/96e3fd7afd60e1235861089e14c2c40282717582f89aed01029966bf52a9d514.png)种方案。两名同学之一担任甲角色的情况数是：先从两名中选一名同学担任甲角色，则是C_2^1，再在剩下的7名同学中选出3人担任其他3个不同角色，则是A_7^3，故一共是C_2^1×A_7^3![](assets-fenbi-161/1dcd20537d38b35d4210f051d4c492b05e1c97e3ef8d7bb9c44b4fe7528551b0.png)种。则其中两名同学不能担任甲角色的方案有1680-420=1260种。
 
 故正确答案为C。
 
@@ -2745,7 +2745,7 @@ D
 
 **解析**
 
-设难题有a道，中等题有b道，容易题有c道。一共是30道题，则有a+b+c=30······①；每人解出12道，则有![](assets-fenbi-161/16c7d6b406d704161f279e3fd996a3fe15dad9d895a8bf32f5d53b65c46ed939.png)![](assets-fenbi-161/c933dbb6b2038b03e28b32dbbb073d95c8a7dc45ce609ed2bc2c41bcb37ca2e7.png)······②。①![](assets-fenbi-161/1cc3dc0a7f5ede6183143eee6e8b905f1ea36243bd162c0b7fde1bbb98921feb.png)2-②，可得a-c=24，由于“难题、中等题、容易题均有”，则c为正整数，故a=c+24>24，只有D项符合。
+设难题有a道，中等题有b道，容易题有c道。一共是30道题，则有a+b+c=30······①；每人解出12道，则有![](assets-fenbi-161/16c7d6b406d704161f279e3fd996a3fe15dad9d895a8bf32f5d53b65c46ed939.png)![](assets-fenbi-161/c933dbb6b2038b03e28b32dbbb073d95c8a7dc45ce609ed2bc2c41bcb37ca2e7.png)······②。①×2-②，可得a-c=24，由于“难题、中等题、容易题均有”，则c为正整数，故a=c+24>24，只有D项符合。
 
 故正确答案为D。
 
@@ -4825,7 +4825,7 @@ A
 
 （2）定位文字材料第四段可得：第三阶段（1979－1989年）期间，城镇人口由874万人增加到1366万人。因此第三阶段江苏省城镇人口平均每年增加约![](assets-fenbi-161/707991d36fc44fe21d81c0f23f673ec691ecfe2444bee6c457a74b035a118e22.png)万人，正确；
 
-（3）定位文字材料第三段可得：1958年城镇人口占总人口的比重为19.5%，1978年城镇人口比重达到13.7%，乡村人口总数为5033.55万人，占总人口的86.3%。20年间，全省城镇人口减少了28万人。则1978年总人口数为![](assets-fenbi-161/513ec47ed02e8d7e6c3b9325d3028dfc53d1e7bd9fdefac4b8028b886ab6d9fa.png)万人，城镇人口数为![](assets-fenbi-161/8733c6f0ca7b2065d4231b629a7fe0f83a9a3a0513ca4970ac14131d4a1ed417.png)万人；1958年城镇人口数为![](assets-fenbi-161/cda40f4b233c1abcba506f1b758d59beef43b141403f1f6d1bc7f34ed731f7ff.png)万人，总人口数为![](assets-fenbi-161/f2d394b5ee7e9cc668dece20a83d6ca44a9fe178d1f060119d3428c36c151133.png)万人，乡村人口数为![](assets-fenbi-161/147e24d7cefd2435724c8a7f70efe651206d2c9f7e3fcaca31ca41a056c8a83f.png)万人。故1958－1978年的20年间江苏省乡村人口增加了![](assets-fenbi-161/9b1a7b70f1528297b26062713c884c16b5618ae75d3d08d50d2aa8012b356086.png)![](assets-fenbi-161/db56ff8ba120e28281f0b1a010a361ea83f7ff5ad23df27d35f7d5a04dc902d0.png)万人，错误；
+（3）定位文字材料第三段可得：1958年城镇人口占总人口的比重为19.5%，1978年城镇人口比重达到13.7%，乡村人口总数为5033.55万人，占总人口的86.3%。20年间，全省城镇人口减少了28万人。则1978年总人口数为5033.55/86.3%万人，城镇人口数为![](assets-fenbi-161/8733c6f0ca7b2065d4231b629a7fe0f83a9a3a0513ca4970ac14131d4a1ed417.png)万人；1958年城镇人口数为![](assets-fenbi-161/cda40f4b233c1abcba506f1b758d59beef43b141403f1f6d1bc7f34ed731f7ff.png)万人，总人口数为![](assets-fenbi-161/f2d394b5ee7e9cc668dece20a83d6ca44a9fe178d1f060119d3428c36c151133.png)万人，乡村人口数为![](assets-fenbi-161/147e24d7cefd2435724c8a7f70efe651206d2c9f7e3fcaca31ca41a056c8a83f.png)万人。故1958－1978年的20年间江苏省乡村人口增加了![](assets-fenbi-161/9b1a7b70f1528297b26062713c884c16b5618ae75d3d08d50d2aa8012b356086.png)![](assets-fenbi-161/db56ff8ba120e28281f0b1a010a361ea83f7ff5ad23df27d35f7d5a04dc902d0.png)万人，错误；
 
 （4）定位文字材料第二段可得：第一阶段（1949－1957年），全省城镇人口年均增长7.5%；定位文字材料第六段可得：第五阶段（1998－2008年），城镇人口年均增长6.30%。第一阶段(7.5%)＞第五阶段(6.30%)，错误。
 
@@ -4863,7 +4863,7 @@ A
 
 **解析**
 
-根据题干“······单位面积销售价格上涨比率最大······”，可判定本题为平均数的增长率问题。定位表格材料可得：2009年上海、北京、海南、浙江商品房销售额增速(a)分别为125.9%、96.6%、73.2%、129.7%，商品房销售面积增速(b)分别为44.2%、76.9%、50.5%、84.7%。根据公式：平均数增长率![](assets-fenbi-161/12da7a6c85156a02f6ec4efdb60fe17f49da73b48aad5766d5901ae3f044133e.png)，可知上海上涨比率![](assets-fenbi-161/de71e036b3733b6e0c605b1eca12f97a28942b78447ef8274b7d02be3082a6a7.png)，北京上涨比率![](assets-fenbi-161/b320567bb54ae9dd0f10eb230180509f6937852887b3730e3b06d8b149babde6.png)，海南上涨比率![](assets-fenbi-161/61fa624bbaade1f4f566bf2870d6c58da5a02221d3dc14f93d6b32719d784d27.png)，浙江上涨比率![](assets-fenbi-161/5f38f1ea6e057811eaeb33f430c0362b1df97066aa916e17c024bf56b0bc399a.png)。故2009年商品房单位面积销售价格上涨比率最大的是上海。
+根据题干“······单位面积销售价格上涨比率最大······”，可判定本题为平均数的增长率问题。定位表格材料可得：2009年上海、北京、海南、浙江商品房销售额增速(a)分别为125.9%、96.6%、73.2%、129.7%，商品房销售面积增速(b)分别为44.2%、76.9%、50.5%、84.7%。根据公式：平均数增长率=(a-b)/(1+b)，可知上海上涨比率![](assets-fenbi-161/de71e036b3733b6e0c605b1eca12f97a28942b78447ef8274b7d02be3082a6a7.png)，北京上涨比率![](assets-fenbi-161/b320567bb54ae9dd0f10eb230180509f6937852887b3730e3b06d8b149babde6.png)，海南上涨比率![](assets-fenbi-161/61fa624bbaade1f4f566bf2870d6c58da5a02221d3dc14f93d6b32719d784d27.png)，浙江上涨比率![](assets-fenbi-161/5f38f1ea6e057811eaeb33f430c0362b1df97066aa916e17c024bf56b0bc399a.png)。故2009年商品房单位面积销售价格上涨比率最大的是上海。
 
 故正确答案为A。
 

@@ -15,7 +15,7 @@
 # 2022年江苏省公务员录用考试《行测》题（A类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2022 · 行测 · A类** ｜ 135 题 · 图片 229 处 · 答案随题折叠
+> **江苏 · 2022 · 行测 · A类** ｜ 135 题 · 图片 219 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1893,7 +1893,7 @@ C
 
 **解析**
 
-数列无明显特征，考虑多级数列。作差无规律，考虑作和。数列相邻两项相加得到新数列：1，8，27，64，依次可整理为：![](assets-fenbi-162438/e5bfcbfc0a3357f68ce653cd9c64c3e01afb82a939d8b8a3b4a7781db9c688d6.png)，2^3，3^3，4^3，新数列各项均为立方数，且底数为公差为1的等差数列，则下一项为![](assets-fenbi-162438/2970ff1a31035f0276161b69c210eed2642a9894879a64d4e58bdbb37e87efc5.png)，故所求项![](assets-fenbi-162438/47804b750dbf9a09f7eea439e864e501c97d17bcceada48820f6593d485cae60.png)。
+数列无明显特征，考虑多级数列。作差无规律，考虑作和。数列相邻两项相加得到新数列：1，8，27，64，依次可整理为：1^3，2^3，3^3，4^3，新数列各项均为立方数，且底数为公差为1的等差数列，则下一项为![](assets-fenbi-162438/2970ff1a31035f0276161b69c210eed2642a9894879a64d4e58bdbb37e87efc5.png)，故所求项![](assets-fenbi-162438/47804b750dbf9a09f7eea439e864e501c97d17bcceada48820f6593d485cae60.png)。
 
 故正确答案为C。
 
@@ -2205,7 +2205,7 @@ A
 
 ![](assets-fenbi-162438/e40ea25f67ae02a974ea17309dd6af270b80618f89ed1fed884f0d7f23d72b84.png)
 
-在直角![](assets-fenbi-162438/0d451989a4d7c82b99b5b6ee1c74cafd99427258d1df705ee6d991dfa3d02153.png)中，![](assets-fenbi-162438/0487743e328b09be5c6c2d2fe131ecd91f26ecf426c8f2a6df9e364ad2572793.png)，即![](assets-fenbi-162438/eceb876deeef7a0cbfb9e4fc59670493a1813b5ea39ec9c2aa39e5d387de7560.png)，同理![](assets-fenbi-162438/09ec12f783d5826e247b6a43abd32d6cc7e3832fd1ddba2f76961d8ae277b05f.png)，设DE为x，则![](assets-fenbi-162438/593f7e9359e7cf91d5c3620efba2ae95d40f6ee962ee55d3f75e9f25a8034d6c.png)，AE=2x。由于![](assets-fenbi-162438/75cec9adbc57c4e87c43779a65d662134af8b1241907b18034181e1480711739.png)且有公共角∠A，故![](assets-fenbi-162438/13e576d859785913dd2b5f4953bdf62e7bfe5d17a06453f935b75df380270a37.png)，因面积之比为相似比的平方，故相似比为1:√3，即![](assets-fenbi-162438/1c27a7a6c35441305c9c073cc689974358da3c261e629e7228ef452a9631018a.png)，则![](assets-fenbi-162438/67e8fc7da8582a4a076d13ddb2f4ab014e9a509ed03a6fccf2d620a071762c77.png)，EB=3x-2x=x，所求长度之比为：![](assets-fenbi-162438/167f1625986c80b2cd6c52f1ce8d9ffcbea6d0e970c7aa62cc8c767dfe70979c.png)。
+在直角△ADE中，![](assets-fenbi-162438/0487743e328b09be5c6c2d2fe131ecd91f26ecf426c8f2a6df9e364ad2572793.png)，即![](assets-fenbi-162438/eceb876deeef7a0cbfb9e4fc59670493a1813b5ea39ec9c2aa39e5d387de7560.png)，同理![](assets-fenbi-162438/09ec12f783d5826e247b6a43abd32d6cc7e3832fd1ddba2f76961d8ae277b05f.png)，设DE为x，则![](assets-fenbi-162438/593f7e9359e7cf91d5c3620efba2ae95d40f6ee962ee55d3f75e9f25a8034d6c.png)，AE=2x。由于![](assets-fenbi-162438/75cec9adbc57c4e87c43779a65d662134af8b1241907b18034181e1480711739.png)且有公共角∠A，故![](assets-fenbi-162438/13e576d859785913dd2b5f4953bdf62e7bfe5d17a06453f935b75df380270a37.png)，因面积之比为相似比的平方，故相似比为1:√3，即![](assets-fenbi-162438/1c27a7a6c35441305c9c073cc689974358da3c261e629e7228ef452a9631018a.png)，则![](assets-fenbi-162438/67e8fc7da8582a4a076d13ddb2f4ab014e9a509ed03a6fccf2d620a071762c77.png)，EB=3x-2x=x，所求长度之比为：![](assets-fenbi-162438/167f1625986c80b2cd6c52f1ce8d9ffcbea6d0e970c7aa62cc8c767dfe70979c.png)。
 
 故正确答案为A。
 
@@ -2267,7 +2267,7 @@ B
 
 **解析**
 
-设三个等级奖励的人数分别为：10万元x人，5万元y人，1万元z人。根据“评选了30名优秀员工”可得，x+y+z=30······①；根据“共发放奖金89万元”可得，10x+5y+z=89······②。令①×5-②可消去y，得4z-5x=61。由于x，z![](assets-fenbi-162438/5aa0463b9aaee70b82e9e66bbbff409eb167f26f0f728a94737a87663251a19e.png)0，且x，z均为整数。根据奇偶特性判定4z为偶数，则5x必为奇数，故5x尾数为5，由此推出4z尾数必须为6，排除C、D两项。代入A项，若z=14，解得x=-1，不符合题意，排除。
+设三个等级奖励的人数分别为：10万元x人，5万元y人，1万元z人。根据“评选了30名优秀员工”可得，x+y+z=30······①；根据“共发放奖金89万元”可得，10x+5y+z=89······②。令①×5-②可消去y，得4z-5x=61。由于x，z≥0，且x，z均为整数。根据奇偶特性判定4z为偶数，则5x必为奇数，故5x尾数为5，由此推出4z尾数必须为6，排除C、D两项。代入A项，若z=14，解得x=-1，不符合题意，排除。
 
 故正确答案为B。
 
@@ -2439,7 +2439,7 @@ A
 
 ### 第 65 题
 
-如图所示，为测量珠穆朗玛峰上某点C的海拔高度，测量队选择了两个海拔高度相差100米的珠峰测量点A和B，测得∠ABC为![](assets-fenbi-162438/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，从A观测B、C的仰角分别为30°和45°，从B观测C的仰角也为30°，则C点的海拔高度比A点高：
+如图所示，为测量珠穆朗玛峰上某点C的海拔高度，测量队选择了两个海拔高度相差100米的珠峰测量点A和B，测得∠ABC为90°，从A观测B、C的仰角分别为30°和45°，从B观测C的仰角也为30°，则C点的海拔高度比A点高：
 
 ![](assets-fenbi-162438/f0f2e79aba91b5786c363aa9f40dce0de512e2ffa47b3b7d0f1e96b967c62dd1.png)
 
@@ -2461,7 +2461,7 @@ D
 
 ![](assets-fenbi-162438/95d0dd7d0794ba5abc6a9fca170e09795e222a2690e4d8e3bf49e2a5860f12a5.png)
 
-如图所示，A和B两个海拔高度相差100米（即BE=100米），从A观测B的仰角为30°，因△ABE是30°的直角三角形，则三边关系为![](assets-fenbi-162438/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以AB=100×2=200米。从B观测C的仰角也为30°，根据题意，设CO=X米，则CD=（X-100）米，因![](assets-fenbi-162438/678efeef896e6f7fc7ea1406ea163b7055474c86123489c6aa45a6d6e37a39ad.png)是30°的直角三角形，则三边关系为![](assets-fenbi-162438/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以BC=2（X-100）=（2X-200）米。又因为从A观测C的仰角为45°，△AOC是45°的直角三角形，则三边关系为![](assets-fenbi-162438/d0d706f08badd327dcc57c0ae38dfda000996ecc238fd7223aab07cb9ad2ca57.png)，所以![](assets-fenbi-162438/5611b576bab635dff0ee734b2333b3d20445e6843fa51afe1cb2112a75f2f65e.png)米。在△ABC中，∠ABC为![](assets-fenbi-162438/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，根据勾股定理可知，![](assets-fenbi-162438/67ef7b657709c9a9da069f00a4f851b47d6cc246fea0b97ca2e4af2eeaba4468.png)，即![](assets-fenbi-162438/d010404d3d810c8bd0b4d751de31b9bff9557cbe9af5f415f17e59cd8ed920c4.png)![](assets-fenbi-162438/03f6cb5579ea8128ef968a045181df638ad39e5717476b1a15b9f6000ec8a707.png)，解得X=200，则C点的海拔高度比A点高200米。
+如图所示，A和B两个海拔高度相差100米（即BE=100米），从A观测B的仰角为30°，因△ABE是30°的直角三角形，则三边关系为![](assets-fenbi-162438/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以AB=100×2=200米。从B观测C的仰角也为30°，根据题意，设CO=X米，则CD=（X-100）米，因△BCD是30°的直角三角形，则三边关系为![](assets-fenbi-162438/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以BC=2（X-100）=（2X-200）米。又因为从A观测C的仰角为45°，△AOC是45°的直角三角形，则三边关系为![](assets-fenbi-162438/d0d706f08badd327dcc57c0ae38dfda000996ecc238fd7223aab07cb9ad2ca57.png)，所以![](assets-fenbi-162438/5611b576bab635dff0ee734b2333b3d20445e6843fa51afe1cb2112a75f2f65e.png)米。在△ABC中，∠ABC为90°，根据勾股定理可知，![](assets-fenbi-162438/67ef7b657709c9a9da069f00a4f851b47d6cc246fea0b97ca2e4af2eeaba4468.png)，即![](assets-fenbi-162438/d010404d3d810c8bd0b4d751de31b9bff9557cbe9af5f415f17e59cd8ed920c4.png)![](assets-fenbi-162438/03f6cb5579ea8128ef968a045181df638ad39e5717476b1a15b9f6000ec8a707.png)，解得X=200，则C点的海拔高度比A点高200米。
 
 故正确答案为D。
 
@@ -3075,7 +3075,7 @@ B
 
 **解析**
 
-元素组成相同，优先考虑位置规律。九宫格优先横向看，第一行中，图一逆时针旋转![](assets-fenbi-162438/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)得到图二，图二上下翻转得到图三；第二行经验证，符合该规律；第三行应用规律，只有B项符合。
+元素组成相同，优先考虑位置规律。九宫格优先横向看，第一行中，图一逆时针旋转90°得到图二，图二上下翻转得到图三；第二行经验证，符合该规律；第三行应用规律，只有B项符合。
 
 故正确答案为B。
 
@@ -5039,7 +5039,7 @@ C
 
 ### 第 128 题
 
-设2020年我国住房公积金实缴额、实缴余额、实缴职工人数、实缴单位数的增速分别为![](assets-fenbi-162438/cc3d744fd246f9c21782de51c3506cfc4be50b41b118283a6abfd225aa6032cc.png)、![](assets-fenbi-162438/dbdbc05d3030b9acb9bc0dfdd3b031d9db6a5b09a699d2811f04249a6c065d2c.png)、![](assets-fenbi-162438/8c234281a3ff83cf9a7e444c83b70937e93573124e54a1c5c9f94a5cf9e46fe7.png)、![](assets-fenbi-162438/b648f3babc334fe428c6051a6aa0f84374eca0e07f27c696799bd8101ec0b162.png)，则下列关系正确的是：
+设2020年我国住房公积金实缴额、实缴余额、实缴职工人数、实缴单位数的增速分别为v_1、v_2、![](assets-fenbi-162438/8c234281a3ff83cf9a7e444c83b70937e93573124e54a1c5c9f94a5cf9e46fe7.png)、![](assets-fenbi-162438/b648f3babc334fe428c6051a6aa0f84374eca0e07f27c696799bd8101ec0b162.png)，则下列关系正确的是：
 
 A. ![](assets-fenbi-162438/5030497af0b4410b0a191fd3969d67c7217613e879337827753ccb316b32fd6b.png)
 
@@ -5265,7 +5265,7 @@ A
 
 **解析**
 
-根据题干“2020年1-7月······同比增速是”，结合材料给出2021年1-7月我国原油产量的同比增速以及相对于2019年同期的增速，可判定本题为间隔增长率问题。定位文字材料可得：2021年1-7月，我国原油产量同比增长2.4%（r_1），比2019年同期增长3.9%（![](assets-fenbi-162438/da42104178ae3ee0c805986bbeb139e41b18b67e05407107c5941a0f83165c0e.png)）。根据公式：![](assets-fenbi-162438/fb5f8b202683fa5962d51eb2b28ca2b927de57953d6486c50e5a0050e8168000.png)，代入数据可得![](assets-fenbi-162438/a9a3294e693b8ce824540b82fd80cbdb1c58f770dc6d3aaea9ec38f3d8d12983.png)，整理可得![](assets-fenbi-162438/434f9122c6984a57a6bc3d16e6e80458bdd1d35646dc6a8552945441a7cd969a.png)，即2020年1-7月我国原油产量的同比增速不到1.5%，结合选项，只有A项符合。
+根据题干“2020年1-7月······同比增速是”，结合材料给出2021年1-7月我国原油产量的同比增速以及相对于2019年同期的增速，可判定本题为间隔增长率问题。定位文字材料可得：2021年1-7月，我国原油产量同比增长2.4%（r_1），比2019年同期增长3.9%（r_间隔）。根据公式：![](assets-fenbi-162438/fb5f8b202683fa5962d51eb2b28ca2b927de57953d6486c50e5a0050e8168000.png)，代入数据可得![](assets-fenbi-162438/a9a3294e693b8ce824540b82fd80cbdb1c58f770dc6d3aaea9ec38f3d8d12983.png)，整理可得![](assets-fenbi-162438/434f9122c6984a57a6bc3d16e6e80458bdd1d35646dc6a8552945441a7cd969a.png)，即2020年1-7月我国原油产量的同比增速不到1.5%，结合选项，只有A项符合。
 
 故正确答案为A。
 

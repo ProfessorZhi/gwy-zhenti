@@ -15,7 +15,7 @@
 # 2020年上海市公务员录用考试《行测》题（A类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **上海 · 2020 · 行测 · A类** ｜ 130 题 · 图片 110 处 · 答案随题折叠
+> **上海 · 2020 · 行测 · A类** ｜ 130 题 · 图片 106 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1157,7 +1157,7 @@ D项：氧气不易溶于水，可以通过观察是否有气泡产生，判别�
 
 ### 第 30 题
 
-过氧化氢(![](assets-fenbi-91880/efb2dfaa4aa53ea9996e69b14f3c92ff4f447f5bbb65fb3da8cd184fa3ba31df.png))的沸点比水高，但受热易分解。某试剂厂制得浓度7%~8%的过氧化氢溶液，再浓缩成30%的溶液时，可采用的适宜方法是            。
+过氧化氢(H_2O_2)的沸点比水高，但受热易分解。某试剂厂制得浓度7%~8%的过氧化氢溶液，再浓缩成30%的溶液时，可采用的适宜方法是            。
 
 A. 常压蒸馏
 
@@ -2851,7 +2851,7 @@ B. 540°
 
 C. 360°
 
-D. ![](assets-fenbi-91880/ac7a2ed8f6488a909f7a3f9e77bb6f386002fb6745d5817636d96dc5f02de24d.png)
+D. 108°
 
 <details><summary>第 75 题 · 答案与解析</summary>
 
@@ -3339,7 +3339,7 @@ A
 
 ①中外合作![](assets-fenbi-91880/d3a311202b181cc8199554798beaa1f9180d33f7eb11a84b599b593b3cf7175a.png)![](assets-fenbi-91880/8a10726b48947a910e19c75d56b922383b749e57ce0e73aa9469a434ff560937.png)![](assets-fenbi-91880/c5257c68e28082fa671fc4f37c97951f74e2c46beefd538a564b97094e3719a9.png)![](assets-fenbi-91880/5bb775d2d8288e9c8f1a3c93a0a3982f61fa15856e07d1478f9292215c921862.png)![](assets-fenbi-91880/82b0093984eb9a502633abd397518dddf56e501f2aff32dd4699fdf2fd3b5810.png)亿元；
 
-②中外合资![](assets-fenbi-91880/62dd9ed1e46b3ce1678a42abe1d1d18722e6c1b15540e3a94c8730d48ba9d4f4.png)![](assets-fenbi-91880/97e3645a6a14b22d0adf645543f8fcb7a3505a3020ba68ae234c8b5199c7f2c7.png)![](assets-fenbi-91880/ba6458b475af9fb254a0a339420dd20f07a64b327f28d631cf4cefb4bb89d42d.png)![](assets-fenbi-91880/91a9be8f6880e54f7c8c5dbec570ddbfdda82db7778bba2e503c1c7bfea73ecf.png)![](assets-fenbi-91880/fb31c13d903a5686e31d544161aff896b1ce9b3728721889f62ff6c867c72824.png)![](assets-fenbi-91880/25b927cd6936c4b0843c008ed007ddd0707ba1c8d9d6ffe27156882580621a25.png)×1/12![](assets-fenbi-91880/489fe55143f280cec3f9610ded623ffae6d18c0265708726a0e00efdf9832a30.png)![](assets-fenbi-91880/eb603bdd8502ff652c105289b9aa12d6dde87e63484964b24672997fc557cabc.png)![](assets-fenbi-91880/17641c961ae060b418694c54dbeea11836a8bc64255a95a5fcb9176dba8d669e.png)亿元；
+②中外合资![](assets-fenbi-91880/62dd9ed1e46b3ce1678a42abe1d1d18722e6c1b15540e3a94c8730d48ba9d4f4.png)![](assets-fenbi-91880/97e3645a6a14b22d0adf645543f8fcb7a3505a3020ba68ae234c8b5199c7f2c7.png)![](assets-fenbi-91880/ba6458b475af9fb254a0a339420dd20f07a64b327f28d631cf4cefb4bb89d42d.png)![](assets-fenbi-91880/91a9be8f6880e54f7c8c5dbec570ddbfdda82db7778bba2e503c1c7bfea73ecf.png)×1/40![](assets-fenbi-91880/25b927cd6936c4b0843c008ed007ddd0707ba1c8d9d6ffe27156882580621a25.png)×1/12![](assets-fenbi-91880/489fe55143f280cec3f9610ded623ffae6d18c0265708726a0e00efdf9832a30.png)![](assets-fenbi-91880/eb603bdd8502ff652c105289b9aa12d6dde87e63484964b24672997fc557cabc.png)![](assets-fenbi-91880/17641c961ae060b418694c54dbeea11836a8bc64255a95a5fcb9176dba8d669e.png)亿元；
 
 ③外商独资出口额增速、进口额增速均为正值，同比增量大于0，则③>①>②。
 
@@ -4073,7 +4073,7 @@ A
 
 本题考查科技常识。
 
-导热系数是表征物质导热能力的物理量。表示材料在一维稳态传热情况下，面积为1m^2，厚度为1m的材料，当其两侧表面温度差为![](assets-fenbi-91880/92e00f3a227272ec8531f8b76761cd04f0296f146df2d6603d6f095411dd8a8b.png)时，单位时间内由导热方式传递的热量，单位为瓦/米·度（W/(m·K)，此处为K可用°C代替）。
+导热系数是表征物质导热能力的物理量。表示材料在一维稳态传热情况下，面积为1m^2，厚度为1m的材料，当其两侧表面温度差为1 °C时，单位时间内由导热方式传递的热量，单位为瓦/米·度（W/(m·K)，此处为K可用°C代替）。
 
 0°C下氢气导热系数约为0.17 W/(m·K)，是导热性最好的气体，比大多数气体的导热系数高出10倍，因此在能源工业中，氢气是极好的传热导体。
 

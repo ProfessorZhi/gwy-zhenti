@@ -15,7 +15,7 @@
 # 2022年江苏省公务员录用考试《行测》题（C类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2022 · 行测 · C类** ｜ 130 题 · 图片 210 处 · 答案随题折叠
+> **江苏 · 2022 · 行测 · C类** ｜ 130 题 · 图片 205 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2033,7 +2033,7 @@ B
 
 **解析**
 
-如下图，根据题意，![](assets-fenbi-162376/a98d50e8cffc3f27192ffb4658dbd018b931b300662d1c51f19069077b23f2bd.png)且为等腰直角三角形，则CO为∠BCD的平分线，即正方形对角线。延长CO至点A，易得![](assets-fenbi-162376/6461095df6ca37c6eeeb82cde46019431f0d99345ab18133e15d996aa465cdd2.png)且为等腰直角三角形，则EG∥BD。由于EFOH为正方形，则EF=OF=AF，可得F点为AO中点，即EG为![](assets-fenbi-162376/6d247089f715149a1bc67358465de2e6e9ce07d22368676be65cff0437acfe8c.png)中位线。根据三角形中位线结论，OB=2×FG，则OJ=BJ。连接GJ易得![](assets-fenbi-162376/a0c09b7064666d452872986ba3801a1e0a5f356467bdfa0752a94c72a6640d91.png)。则![](assets-fenbi-162376/2f7d7d2f488ade7b7066d296f951e1a00c83a7b82b064fdc851afe296d8676fa.png)![](assets-fenbi-162376/884080069253d9932779b574130f398fa4f60b5c9ed2f2d04b87187c7dd2b1bd.png)。由于油漆费用=油漆单价×刷漆面积，且每种颜色的油漆单价相同，则所求费用=8×200=1600元。
+如下图，根据题意，![](assets-fenbi-162376/a98d50e8cffc3f27192ffb4658dbd018b931b300662d1c51f19069077b23f2bd.png)且为等腰直角三角形，则CO为∠BCD的平分线，即正方形对角线。延长CO至点A，易得![](assets-fenbi-162376/6461095df6ca37c6eeeb82cde46019431f0d99345ab18133e15d996aa465cdd2.png)且为等腰直角三角形，则EG∥BD。由于EFOH为正方形，则EF=OF=AF，可得F点为AO中点，即EG为△ABD中位线。根据三角形中位线结论，OB=2×FG，则OJ=BJ。连接GJ易得![](assets-fenbi-162376/a0c09b7064666d452872986ba3801a1e0a5f356467bdfa0752a94c72a6640d91.png)。则![](assets-fenbi-162376/2f7d7d2f488ade7b7066d296f951e1a00c83a7b82b064fdc851afe296d8676fa.png)![](assets-fenbi-162376/884080069253d9932779b574130f398fa4f60b5c9ed2f2d04b87187c7dd2b1bd.png)。由于油漆费用=油漆单价×刷漆面积，且每种颜色的油漆单价相同，则所求费用=8×200=1600元。
 
 ![](assets-fenbi-162376/8db254b7a2e4e4f122c68d403cd7d341cd3e20f79e1497afd03d5c9f7746ff56.png)
 
@@ -2053,7 +2053,7 @@ A. 3/8
 
 B. 21/32
 
-C. ![](assets-fenbi-162376/78d752713e00f886e690a59c8a793fe74dfffac70f31e4798b8d8fa5c294d2bd.png)
+C. 7/16
 
 D. 1/2
 
@@ -2429,7 +2429,7 @@ A
 
 ![](assets-fenbi-162376/e40ea25f67ae02a974ea17309dd6af270b80618f89ed1fed884f0d7f23d72b84.png)
 
-在直角![](assets-fenbi-162376/0d451989a4d7c82b99b5b6ee1c74cafd99427258d1df705ee6d991dfa3d02153.png)中，![](assets-fenbi-162376/0487743e328b09be5c6c2d2fe131ecd91f26ecf426c8f2a6df9e364ad2572793.png)，即![](assets-fenbi-162376/eceb876deeef7a0cbfb9e4fc59670493a1813b5ea39ec9c2aa39e5d387de7560.png)，同理![](assets-fenbi-162376/09ec12f783d5826e247b6a43abd32d6cc7e3832fd1ddba2f76961d8ae277b05f.png)，设DE为x，则![](assets-fenbi-162376/593f7e9359e7cf91d5c3620efba2ae95d40f6ee962ee55d3f75e9f25a8034d6c.png)，AE=2x。由于![](assets-fenbi-162376/75cec9adbc57c4e87c43779a65d662134af8b1241907b18034181e1480711739.png)且有公共角∠A，故![](assets-fenbi-162376/13e576d859785913dd2b5f4953bdf62e7bfe5d17a06453f935b75df380270a37.png)，因面积之比为相似比的平方，故相似比为1:√3，即![](assets-fenbi-162376/1c27a7a6c35441305c9c073cc689974358da3c261e629e7228ef452a9631018a.png)，则![](assets-fenbi-162376/67e8fc7da8582a4a076d13ddb2f4ab014e9a509ed03a6fccf2d620a071762c77.png)，EB=3x-2x=x，所求长度之比为：![](assets-fenbi-162376/167f1625986c80b2cd6c52f1ce8d9ffcbea6d0e970c7aa62cc8c767dfe70979c.png)。
+在直角△ADE中，![](assets-fenbi-162376/0487743e328b09be5c6c2d2fe131ecd91f26ecf426c8f2a6df9e364ad2572793.png)，即![](assets-fenbi-162376/eceb876deeef7a0cbfb9e4fc59670493a1813b5ea39ec9c2aa39e5d387de7560.png)，同理![](assets-fenbi-162376/09ec12f783d5826e247b6a43abd32d6cc7e3832fd1ddba2f76961d8ae277b05f.png)，设DE为x，则![](assets-fenbi-162376/593f7e9359e7cf91d5c3620efba2ae95d40f6ee962ee55d3f75e9f25a8034d6c.png)，AE=2x。由于![](assets-fenbi-162376/75cec9adbc57c4e87c43779a65d662134af8b1241907b18034181e1480711739.png)且有公共角∠A，故![](assets-fenbi-162376/13e576d859785913dd2b5f4953bdf62e7bfe5d17a06453f935b75df380270a37.png)，因面积之比为相似比的平方，故相似比为1:√3，即![](assets-fenbi-162376/1c27a7a6c35441305c9c073cc689974358da3c261e629e7228ef452a9631018a.png)，则![](assets-fenbi-162376/67e8fc7da8582a4a076d13ddb2f4ab014e9a509ed03a6fccf2d620a071762c77.png)，EB=3x-2x=x，所求长度之比为：![](assets-fenbi-162376/167f1625986c80b2cd6c52f1ce8d9ffcbea6d0e970c7aa62cc8c767dfe70979c.png)。
 
 故正确答案为A。
 
@@ -4739,7 +4739,7 @@ C
 
 ### 第 123 题
 
-设2020年我国住房公积金实缴额、实缴余额、实缴职工人数、实缴单位数的增速分别为![](assets-fenbi-162376/cc3d744fd246f9c21782de51c3506cfc4be50b41b118283a6abfd225aa6032cc.png)、![](assets-fenbi-162376/dbdbc05d3030b9acb9bc0dfdd3b031d9db6a5b09a699d2811f04249a6c065d2c.png)、![](assets-fenbi-162376/8c234281a3ff83cf9a7e444c83b70937e93573124e54a1c5c9f94a5cf9e46fe7.png)、![](assets-fenbi-162376/b648f3babc334fe428c6051a6aa0f84374eca0e07f27c696799bd8101ec0b162.png)，则下列关系正确的是：
+设2020年我国住房公积金实缴额、实缴余额、实缴职工人数、实缴单位数的增速分别为v_1、v_2、![](assets-fenbi-162376/8c234281a3ff83cf9a7e444c83b70937e93573124e54a1c5c9f94a5cf9e46fe7.png)、![](assets-fenbi-162376/b648f3babc334fe428c6051a6aa0f84374eca0e07f27c696799bd8101ec0b162.png)，则下列关系正确的是：
 
 A. ![](assets-fenbi-162376/5030497af0b4410b0a191fd3969d67c7217613e879337827753ccb316b32fd6b.png)
 

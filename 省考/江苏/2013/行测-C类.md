@@ -15,7 +15,7 @@
 # 2013年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2013 · 行测 · C类** ｜ 100 题 · 图片 147 处 · 答案随题折叠
+> **江苏 · 2013 · 行测 · C类** ｜ 100 题 · 图片 99 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -682,15 +682,15 @@ C
 
 ### 第 21 题
 
-√2，√2，2，![](assets-fenbi-431/15ee66819422529d5143574eb1b131160eac2f6c16f73eb40b4ffb1d31751181.png)，![](assets-fenbi-431/3671f79d337efef4229079c64e129c9cbb6a6e66860c044b0d304d21755f3c4a.png)，（  ）
+√2，√2，2，2√3，4√3，（  ）
 
-A. ![](assets-fenbi-431/bcdede48b9f6d3d2f5d4577a9bdaeb320686330906efe1938fc03529d8aadb52.png)
+A. 6√5
 
-B. ![](assets-fenbi-431/69d40a048f0e97395905e483173133df50ad40a16c9325f3bfb4a4448d4bfcfb.png)
+B. 4√15
 
-C. ![](assets-fenbi-431/e2eb3275d4b2024e0aa8104ebc007b0f2012e2d3e9f8ce1b83cfee4e256db396.png)
+C. 6√3
 
-D. ![](assets-fenbi-431/db62f9e70b22c7faaba5a48d645161a6b77aed91032b57144dffb1b00a13944f.png)
+D. 7√15
 
 <details><summary>第 21 题 · 答案与解析</summary>
 
@@ -700,7 +700,7 @@ B
 
 **解析**
 
-倍数关系明显，考虑作商，后项除以前项得到新数列：![](assets-fenbi-431/36535ffc1455ac37b63b350f2a29abbab55792c9174dd08f1ca8e00c5f0e89f2.png)，√2，√3，![](assets-fenbi-431/dc3ffea2b93e4887ba97b01594730fbca19a559ec1d656437af06eef8de57669.png)，![](assets-fenbi-431/11cf37ca127ed80d3152bebc148c49fd4759fa19fe1e83cfdbe9e8911ccca8b8.png)， 被开方数成等差数列，所以未知项为![](assets-fenbi-431/f07117ce7fbad13fd1c36830fc606f9db136e0b87a1d7ca697c1269a163292a4.png)。
+倍数关系明显，考虑作商，后项除以前项得到新数列：√1，√2，√3，√4，√5， 被开方数成等差数列，所以未知项为![](assets-fenbi-431/f07117ce7fbad13fd1c36830fc606f9db136e0b87a1d7ca697c1269a163292a4.png)。
 
 故正确答案为B。
 
@@ -710,15 +710,15 @@ B
 
 ### 第 22 题
 
-1，1，![](assets-fenbi-431/f770b7c79b327b03c3f1d0efb7d7f2a49d3832125d55849f54281381c4d9fa7b.png)，2，![](assets-fenbi-431/1db2a7cf82385046b77b0e1ddcb42ac402edd736d19adcc6a4cd3a0b2d22cbfa.png)，（    ）
+1，1，4/3，2，16/5，（    ）
 
-A. ![](assets-fenbi-431/a479ebfc6cfe8acb3476ccadfdae1c74d704599ed45eb40b23e4d818c0556f95.png)
+A. 23/7
 
-B. ![](assets-fenbi-431/76ca32e03d1bb1ca4cc2353b59120ca58c38af064af2ff6054c8bfa15f4f74aa.png)
+B. 16/7
 
-C. ![](assets-fenbi-431/f3a80485cce29ab4a4fdf4282c5d7caf63364dbe8cb24b1187ec0116b02ddca2.png)
+C. 32/3
 
-D. ![](assets-fenbi-431/b6e494afbb3bd13c677fea5d5d316a29c8b9b2db0e45b0fb29566e9d0f3446a5.png)
+D. 16/3
 
 <details><summary>第 22 题 · 答案与解析</summary>
 
@@ -728,13 +728,13 @@ D
 
 **解析**
 
-原数列变形：![](assets-fenbi-431/a0cd28305b03ed4ede3a8af0c5a8e3d66b9c79ff70d6976ef466820b0e53e1a3.png)、![](assets-fenbi-431/3fff4aa554e7630879464c1fca09e67eee91d2bc9e758562d7c914fcb0d9ae32.png)、![](assets-fenbi-431/f770b7c79b327b03c3f1d0efb7d7f2a49d3832125d55849f54281381c4d9fa7b.png)、![](assets-fenbi-431/2971fd14c2f3380e1fab9462df46604b37ce35148114f32cfe0629c2d9957631.png)、![](assets-fenbi-431/1db2a7cf82385046b77b0e1ddcb42ac402edd736d19adcc6a4cd3a0b2d22cbfa.png)、![](assets-fenbi-431/ff641739fc0646363bf7d6243391b3d31ae79b4b24543b499f6179b14d229b81.png)；
+原数列变形：1/1、2/2、4/3、8/4、16/5、![](assets-fenbi-431/ff641739fc0646363bf7d6243391b3d31ae79b4b24543b499f6179b14d229b81.png)；
 
 分子项：1、2、4、8、16、(32)，成等比数列；
 
 分母项：1、2、3、4、5、(6)，成等差数列。
 
-所以未知项为![](assets-fenbi-431/ca3317a9e2a3ada0cd77cf54748828fa21fd0fb76a6b17e71279c5fb6c1a91fa.png)。
+所以未知项为32/6=16/3。
 
 故正确答案为D。
 
@@ -930,7 +930,7 @@ B
 
 **解析**
 
-赋值工程总量为48，则甲乙的效率和为![](assets-fenbi-431/aadc43b67cb27aa9c2d2b412eb37f1bb2149c49e5e71ded27a7c5a3ba3ba8343.png)；乙丙的效率和为![](assets-fenbi-431/7ce607d734bed956c697d51448790bad84c0a6cc9708c8374bc912585f02d894.png)；丙丁的效率和为![](assets-fenbi-431/aadc43b67cb27aa9c2d2b412eb37f1bb2149c49e5e71ded27a7c5a3ba3ba8343.png)。甲与丁的效率和为甲+乙+丙+丁-（乙+丙）=3+3-4=2，甲丁二人合作需要时间![](assets-fenbi-431/eae3e6512feec06949110e1fd9e9b1a5e43f00f48f50968090e9e45c79052a94.png)天。
+赋值工程总量为48，则甲乙的效率和为48/16=3；乙丙的效率和为48/12=4；丙丁的效率和为48/16=3。甲与丁的效率和为甲+乙+丙+丁-（乙+丙）=3+3-4=2，甲丁二人合作需要时间48/2=24天。
 
 故正确答案为B。
 
@@ -1020,7 +1020,7 @@ C
 
 **解析**
 
-由题意可得，![](assets-fenbi-431/8d2aa031750688d5cd0baab33f7ec3b8ddfa596ab49f1377966a71702c759c6c.png)，![](assets-fenbi-431/4c8725ef121f75d7ec7c852b2edaf09eaf643c8548311c697d01b2485d13586a.png)，所以![](assets-fenbi-431/3c3cff3530746631a5a149e6ee8af6108d44f1e0c526e236af710acb1c02894b.png)整数部分为182。
+由题意可得，![](assets-fenbi-431/8d2aa031750688d5cd0baab33f7ec3b8ddfa596ab49f1377966a71702c759c6c.png)，![](assets-fenbi-431/4c8725ef121f75d7ec7c852b2edaf09eaf643c8548311c697d01b2485d13586a.png)，所以T整数部分为182。
 
 故正确答案为C。
 
@@ -1914,7 +1914,7 @@ D项说明国外知名品牌自行车因售价太高，一般中国人承受不�
 
 ### 第 58 题
 
-PM2.5是指大气中直径在2.5微米以下（不到头发丝![](assets-fenbi-431/9886de10ca10b487acd3ee2e41d41016fdfd5eb099e9f3d4b28d278fc2c11fba.png)）的微小颗粒，它们的尺寸使其能深入到人体的肺部，对人的呼吸健康造成严重伤害。近年，我国中东部地区多次出现大范围和长时间的雾霾天气，多地PM2.5指数直线上升。对此，某城市推出了车辆单双号限行等措施以应对大气污染。但该市有专家不赞成这种车辆限行的措施，认为这种做法对本市PM2.5指数的下降影响不大，无法从根本上改变该市大气污染的状况。
+PM2.5是指大气中直径在2.5微米以下（不到头发丝1/20）的微小颗粒，它们的尺寸使其能深入到人体的肺部，对人的呼吸健康造成严重伤害。近年，我国中东部地区多次出现大范围和长时间的雾霾天气，多地PM2.5指数直线上升。对此，某城市推出了车辆单双号限行等措施以应对大气污染。但该市有专家不赞成这种车辆限行的措施，认为这种做法对本市PM2.5指数的下降影响不大，无法从根本上改变该市大气污染的状况。
 
 以下哪项如果为真，最能支持上述专家的观点：
 
@@ -1980,17 +1980,17 @@ B
 
 第一步：翻译题干。
 
-世界的![](assets-fenbi-431/9fecbf0927865a2e95d8d6848b1dcc5bed7ab77b6f2ea3d08cab31cb7a14a954.png)民族的。
+世界的→民族的。
 
 第二步：推理。
 
 A项，越是民族的，越是世界的，不在题干推导关系中，无法推出。
 
-B项，﹣民族的![](assets-fenbi-431/9fecbf0927865a2e95d8d6848b1dcc5bed7ab77b6f2ea3d08cab31cb7a14a954.png)![](assets-fenbi-431/0dcb69e74488f8e98851e222289cf8d0bda47a600771b98552807624a4d89ca0.png)世界的，是题干推导关系的逆否规则，可从题干推出，为本题答案。
+B项，﹣民族的→![](assets-fenbi-431/0dcb69e74488f8e98851e222289cf8d0bda47a600771b98552807624a4d89ca0.png)世界的，是题干推导关系的逆否规则，可从题干推出，为本题答案。
 
-C项，民族的![](assets-fenbi-431/9fecbf0927865a2e95d8d6848b1dcc5bed7ab77b6f2ea3d08cab31cb7a14a954.png)世界的，“民族的”是肯定题干推导关系的后件，肯后件无法推出肯前件，C无法推出。
+C项，民族的→世界的，“民族的”是肯定题干推导关系的后件，肯后件无法推出肯前件，C无法推出。
 
-D项，民族的![](assets-fenbi-431/9fecbf0927865a2e95d8d6848b1dcc5bed7ab77b6f2ea3d08cab31cb7a14a954.png)世界的，“民族的”是肯后件，无法推出。
+D项，民族的→世界的，“民族的”是肯后件，无法推出。
 
 第三步：再次标注答案。
 
@@ -2834,13 +2834,13 @@ C
 
 设某公司2011年、2012年产品产量相同，其产品产销率均与当年全国规模以上工业企业相同，则该公司2012年与2011年的产品销售量之比是：
 
-A. ![](assets-fenbi-431/09f145fde91dec849b99fd85c9e10c6342e58a9f52d90de76b584611794b2484.png)
+A. 99/98
 
-B. ![](assets-fenbi-431/9ca29f0e549005be1bfc9f2ab76f70c921dda965548f4a4970755660d3d082eb.png)
+B. 196/197
 
-C. ![](assets-fenbi-431/783ad9db9cdb6419f80b946b7d6b311fdc8e381e881967eaa75ea2321f33ac21.png)
+C. 98/99
 
-D. ![](assets-fenbi-431/eb50dcb59c66d277db971165e5baeec6e30a305739e80905bc2e1470125c7132.png)
+D. 197/196
 
 <details><summary>第 79 题 · 答案与解析</summary>
 
@@ -2850,7 +2850,7 @@ B
 
 **解析**
 
-根据题干“……与……之比是”，可判定本题为比值计算问题。定位文字材料第二段可得：“2012年全国规模以上工业企业产销率达到98.0%，比上年下降0.5个百分点”。结合题干“某公司2011年、2012年产品产量相同”，即2012年产量=2011年产量，则根据产销率![](assets-fenbi-431/8eb53ec6ec9f13d001d5e79827e3117a582d1bcdb3c3e1d5d114aa37375b1eac.png)，公式可变形为销量=产量×产销率，故2012年与2011年的产品销售量之比![](assets-fenbi-431/a0cc9d15a034e0ba62f98e746051b0d4f4fdc8cf7be1980db79ee5b4cc064c7f.png)![](assets-fenbi-431/3076bacd3bf3cd3c8b6846f88e69c399258ec044cdea4f6e3bcbde0269b4566f.png)。
+根据题干“……与……之比是”，可判定本题为比值计算问题。定位文字材料第二段可得：“2012年全国规模以上工业企业产销率达到98.0%，比上年下降0.5个百分点”。结合题干“某公司2011年、2012年产品产量相同”，即2012年产量=2011年产量，则根据产销率=销量/产量，公式可变形为销量=产量×产销率，故2012年与2011年的产品销售量之比![](assets-fenbi-431/a0cc9d15a034e0ba62f98e746051b0d4f4fdc8cf7be1980db79ee5b4cc064c7f.png)![](assets-fenbi-431/3076bacd3bf3cd3c8b6846f88e69c399258ec044cdea4f6e3bcbde0269b4566f.png)。
 
 故正确答案为B。
 
@@ -3354,11 +3354,11 @@ A
 
 ### 第 94 题
 
-2006-2011年六年，江苏税收收入、地方一般预算收入、地方一般预算支出的年均增长率分别用![](assets-fenbi-431/3e44b35bc11c0d631c70eaef67809290b920d79416e482510846c1817629bae7.png)、![](assets-fenbi-431/28e04a9e4dd9e3ab7aee0749085f6f25394e04521be2c814d2510932521d439b.png)、![](assets-fenbi-431/e4d0237d7ea036325cc769cece6b3cdc6b4c2ba13e0c9ea552f3f50be1d04e33.png)表示，则下列表示正确的是：
+2006-2011年六年，江苏税收收入、地方一般预算收入、地方一般预算支出的年均增长率分别用V_税收收入、V_预算收入、V_预算支出表示，则下列表示正确的是：
 
 A. ![](assets-fenbi-431/2765a0582f290a2a2ce043a7f503a0fa212a5d22afb4b7dc24a4e2dc9f529c8a.png)
 
-B. ![](assets-fenbi-431/28e04a9e4dd9e3ab7aee0749085f6f25394e04521be2c814d2510932521d439b.png)![](assets-fenbi-431/215d1c6ac95267cec3b410a890a3191178e3fbc47a50a2a5b70915d47176df13.png)![](assets-fenbi-431/3e44b35bc11c0d631c70eaef67809290b920d79416e482510846c1817629bae7.png)
+B. V_预算收入![](assets-fenbi-431/215d1c6ac95267cec3b410a890a3191178e3fbc47a50a2a5b70915d47176df13.png)V_税收收入
 
 C. ![](assets-fenbi-431/990304c6cf8dde24574a9fbee658dcd61a7f61b957e3de7783014fcb8d591490.png)
 
@@ -3372,7 +3372,7 @@ D
 
 **解析**
 
-根据题干“······年均增长率”，结合选项为各类年均增长率的排序，可判断本题为年均增长率的比较问题。根据年均增长率公式![](assets-fenbi-431/0e676250237213af40e7ff6fe37f19f6ab876e24db63cb0775a5f43138ad4f69.png)，当年份差n相同时，直接比较![](assets-fenbi-431/32b3bfe39300c585205560ab33137229377dff87b8dad45ed162258f7de4a981.png)即可。即只需要比较三个数据的现期2011年与基期2005年的比值，定位统计图可得2011年税收收入、一般预算收入、一般预算支出分别为4125、5149、6222亿元；2005年三者数据分别为1107、1323、1673亿元。故三者的![](assets-fenbi-431/32b3bfe39300c585205560ab33137229377dff87b8dad45ed162258f7de4a981.png)分别为：税收收入：![](assets-fenbi-431/3780bff38a8433a1cd15ecf2e0fe80d653722f56ea19f1907d7229ef7f9a3894.png)，一般预算收入：![](assets-fenbi-431/e0ce430200a4baa19b3bbe153afd5729314b2ed7ebbb22f06e1902cb614e8a94.png)，一般预算支出：![](assets-fenbi-431/793040d48fc89ff7679cd997cc2b01a3717b4810a24133af5fbe3bb97d941162.png)。直除得到前两位依次为37、38、37，![](assets-fenbi-431/28e04a9e4dd9e3ab7aee0749085f6f25394e04521be2c814d2510932521d439b.png)最大，排除A、B两项；由于税收收入和一般预算支出的![](assets-fenbi-431/32b3bfe39300c585205560ab33137229377dff87b8dad45ed162258f7de4a981.png)值非常接近，所以需要精确计算。![](assets-fenbi-431/901815314785cf59afc396e0e4f4dd282c6e274d6a54b46d2f77890db23db6be.png)，![](assets-fenbi-431/7736426626a1568442dfdc546d3f1de7baeadfd2495fee6b2a12045a4c8720f8.png)，故![](assets-fenbi-431/996674439b11617c534f58fd3376b1151a65db261d3ed5940414577291505929.png)。
+根据题干“······年均增长率”，结合选项为各类年均增长率的排序，可判断本题为年均增长率的比较问题。根据年均增长率公式![](assets-fenbi-431/0e676250237213af40e7ff6fe37f19f6ab876e24db63cb0775a5f43138ad4f69.png)，当年份差n相同时，直接比较现期/基期即可。即只需要比较三个数据的现期2011年与基期2005年的比值，定位统计图可得2011年税收收入、一般预算收入、一般预算支出分别为4125、5149、6222亿元；2005年三者数据分别为1107、1323、1673亿元。故三者的现期/基期分别为：税收收入：4125/1107，一般预算收入：5149/1323，一般预算支出：6222/1673。直除得到前两位依次为37、38、37，V_预算收入最大，排除A、B两项；由于税收收入和一般预算支出的现期/基期值非常接近，所以需要精确计算。![](assets-fenbi-431/901815314785cf59afc396e0e4f4dd282c6e274d6a54b46d2f77890db23db6be.png)，![](assets-fenbi-431/7736426626a1568442dfdc546d3f1de7baeadfd2495fee6b2a12045a4c8720f8.png)，故![](assets-fenbi-431/996674439b11617c534f58fd3376b1151a65db261d3ed5940414577291505929.png)。
 
 故正确答案为D。
 

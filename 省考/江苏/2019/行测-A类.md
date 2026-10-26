@@ -15,7 +15,7 @@
 # 2019年江苏省公务员录用考试《行测》题（A类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2019 · 行测 · A类** ｜ 135 题 · 图片 208 处 · 答案随题折叠
+> **江苏 · 2019 · 行测 · A类** ｜ 135 题 · 图片 203 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1843,7 +1843,7 @@ B
 
 **解析**
 
-将题干统一转化为根式：√6、√22、√14、√18、√16、（），观察根号内数字规律。后项-前项，可得16、-8、4、-2、（），是公比为![](assets-fenbi-89292/003de4b46cd19e5d0d3fff69540ae762aecef62c26b2344aa0228274c389a482.png)的等比数列，则下一项![](assets-fenbi-89292/4cf854af7f0fc6468222bcbf5230ec3c4c83806e029b9579c52ef97ce523877e.png)。故题干所求项![](assets-fenbi-89292/05f16518ddadc3589eb36e983ed0c761dca774e8d54433a2a0399f3349bb11f3.png)。
+将题干统一转化为根式：√6、√22、√14、√18、√16、（），观察根号内数字规律。后项-前项，可得16、-8、4、-2、（），是公比为1/2的等比数列，则下一项![](assets-fenbi-89292/4cf854af7f0fc6468222bcbf5230ec3c4c83806e029b9579c52ef97ce523877e.png)。故题干所求项![](assets-fenbi-89292/05f16518ddadc3589eb36e983ed0c761dca774e8d54433a2a0399f3349bb11f3.png)。
 
 故正确答案为B。
 
@@ -2331,7 +2331,7 @@ D
 
 **解析**
 
-因为G是平行四边形对角线的交点，则S△ABC=1/2 平行四边形ABCD，又因为AB＝3AE，所以![](assets-fenbi-89292/d7cd9f0a152182bcdc24d885353f31aafd95b2af0091b7a2a31b29a968b3465c.png)=1/6平行四边形ABCD。因为AE//CD，所以△AEF相似△CDF，故EF：FD＝AE：CD＝1:3，即EF:ED=1:4，且△AEF与△AED同高，所以S△AEF=1/4![](assets-fenbi-89292/bb661599fe4b906ab3e8192dd98044a9a4ab82e7a5a7be0f707a10d9ead5b6f6.png)，则S△AEF=1/24平行四边形ABCD。S四边形EFGB＝S△AGB－S△AEF=1/4平行四边形ABCD![](assets-fenbi-89292/1961b351cf65f914cdd779db546077bf673a5b906da96b5487d9e29b8de701a6.png)1/24平行四边形ABCD=5/24平行四边形ABCD。
+因为G是平行四边形对角线的交点，则S△ABC=1/2 平行四边形ABCD，又因为AB＝3AE，所以![](assets-fenbi-89292/d7cd9f0a152182bcdc24d885353f31aafd95b2af0091b7a2a31b29a968b3465c.png)=1/6平行四边形ABCD。因为AE//CD，所以△AEF相似△CDF，故EF：FD＝AE：CD＝1:3，即EF:ED=1:4，且△AEF与△AED同高，所以S△AEF=1/4![](assets-fenbi-89292/bb661599fe4b906ab3e8192dd98044a9a4ab82e7a5a7be0f707a10d9ead5b6f6.png)，则S△AEF=1/24平行四边形ABCD。S四边形EFGB＝S△AGB－S△AEF=1/4平行四边形ABCD-1/24平行四边形ABCD=5/24平行四边形ABCD。
 
 ![](assets-fenbi-89292/85f1e2978eb92b2cc39215658057f3847a4694ef645b40ae286c68ed9d640b0f.png)
 
@@ -5139,7 +5139,7 @@ D
 
 ### 第 134 题
 
-设2018年四季度我国硫酸、烧碱、纯碱产量的同比增速分别为![](assets-fenbi-89292/d8a9c2bd844c6961fe5c3adde77f0759628f8459fa215667652f345b051e0924.png)、![](assets-fenbi-89292/f6e759781e37f356c6bb9638a5a2848f00c4d35edc9bf3be3e46b5d6fb247de2.png)、![](assets-fenbi-89292/4137cf5cd9fc7aac8a88b0837c22da88d000cca863f24c1e526906b3433f5f98.png)，则下列关系正确的是
+设2018年四季度我国硫酸、烧碱、纯碱产量的同比增速分别为V_硫、V_烧、V_纯，则下列关系正确的是
 
 A. ![](assets-fenbi-89292/d268b0b7c5922926e6a069304842abdfdcbcbdfe344a91ed3f6a8504cc9e4cf2.png)
 

@@ -15,7 +15,7 @@
 # 2012年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2012 · 行测 · C类** ｜ 85 题 · 图片 132 处 · 答案随题折叠
+> **江苏 · 2012 · 行测 · C类** ｜ 85 题 · 图片 85 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -708,15 +708,15 @@ A
 
 ### 第 20 题
 
-√2，2，![](assets-fenbi-401/fc5ad1e5e7ba435f6041e36f4efd62ef074026303c5f7b506ea6099a96eb48b4.png)，4，![](assets-fenbi-401/2f8556b4e509e85038d9e5c01f4eef60f80c0ceaa157b96a3c670b7926efa3a2.png)，()
+√2，2，2√2，4，4√2，()
 
 A. 8
 
 B. 4
 
-C. ![](assets-fenbi-401/2f8556b4e509e85038d9e5c01f4eef60f80c0ceaa157b96a3c670b7926efa3a2.png)
+C. 4√2
 
-D. ![](assets-fenbi-401/2646da6b58c9fc2cb4180b6284080376e6f9214cc3b88877b19dfed68f04a6c6.png)
+D. 3√2
 
 <details><summary>第 20 题 · 答案与解析</summary>
 
@@ -770,15 +770,15 @@ B
 
 ### 第 22 题
 
-1/2，1，![](assets-fenbi-401/b0bc13fc4e310021bf72be3828e7224767ad75c6abb24402620000b821ca2816.png)，![](assets-fenbi-401/63ca7f79c0cbf015624fe1968227ca403f9bf1d0d9fc5ac588e3a2778deb7636.png)，![](assets-fenbi-401/838bb2bc2c12f11e4fdba8cb1ae152b26309f7b9084ebf2837e07a963d382fe4.png)，（    ）
+1/2，1，7/6，5/4，13/10，（    ）
 
-A. ![](assets-fenbi-401/f770b7c79b327b03c3f1d0efb7d7f2a49d3832125d55849f54281381c4d9fa7b.png)
+A. 4/3
 
-B. ![](assets-fenbi-401/633287b3e3f2c892a84dc16542937cc3035d4c85b0ef841d262ce40f0773f826.png)
+B. 3/4
 
-C. ![](assets-fenbi-401/f63a42cc2c51077136b432a6cae1a9a6bec6f1a8af9be548c8004e0f1a1d6631.png)
+C. 11/14
 
-D. ![](assets-fenbi-401/89b0729e2dc304c114efe26786ccb87173fd5c31445b622771179d206b5df2a9.png)
+D. 17/18
 
 <details><summary>第 22 题 · 答案与解析</summary>
 
@@ -788,13 +788,13 @@ A
 
 **解析**
 
-对原数列进行反约分，变为1/2、![](assets-fenbi-401/8fc6e7cf9dbdfeccfd96210b2423212440e466085cb21fc04491c4221072ed72.png)、![](assets-fenbi-401/b0bc13fc4e310021bf72be3828e7224767ad75c6abb24402620000b821ca2816.png)、![](assets-fenbi-401/ded7b03446279f20fcc0248a33dfe5a4c4e734955225a0243c9e23d074d92179.png)、![](assets-fenbi-401/838bb2bc2c12f11e4fdba8cb1ae152b26309f7b9084ebf2837e07a963d382fe4.png)。
+对原数列进行反约分，变为1/2、4/4、7/6、10/8、13/10。
 
 分子列：1、4、7、10、13、(16)是等差数列；
 
 分母列：2、4、6、8、10、(12)是等差数列。
 
-因此未知项为![](assets-fenbi-401/a54290635333d4bfd62874c3265c579960970dc8cabb4368c2f0ab8d0a3eb397.png)。
+因此未知项为16/12=4/3。
 
 故正确答案为A。
 
@@ -912,7 +912,7 @@ B
 
 **解析**
 
-![](assets-fenbi-401/60b58550dfc7525817af208e4718a75c349e3c0b134395a0ad7d403cec3d1299.png)。设技术改进后行车时间为t小时，则有![](assets-fenbi-401/524014020edc9931853577209e9dabf8275f7298d762bb904fa2554f0184c6c2.png)，解得![](assets-fenbi-401/e957c27568a65f97dbd5c02ab98900972fd59ea0776d3350b38a4fc3f7290982.png)。因此A、B两城间的距离为![](assets-fenbi-401/e366ae84eb883e2c84a37a31f60e218dbca7660fba991bd810589f37c98f8b20.png)。
+![](assets-fenbi-401/60b58550dfc7525817af208e4718a75c349e3c0b134395a0ad7d403cec3d1299.png)。设技术改进后行车时间为t小时，则有![](assets-fenbi-401/524014020edc9931853577209e9dabf8275f7298d762bb904fa2554f0184c6c2.png)，解得t=6/5。因此A、B两城间的距离为![](assets-fenbi-401/e366ae84eb883e2c84a37a31f60e218dbca7660fba991bd810589f37c98f8b20.png)。
 
 故正确答案为B。
 
@@ -942,7 +942,7 @@ C
 
 **解析**
 
-令工作量为1，则甲的工作效率为1/12，乙的工作效率为![](assets-fenbi-401/67b84b48dee318b2d856fd44a07dc8427f0f9c963013f6db9b9ec335174907d4.png)。设甲做了A天，乙做了(10-A)天，则有![](assets-fenbi-401/043923ace479d19cb5614d9bddd3e2a18326d28f366612c58e23644fb48dd622.png)，解得A=4。
+令工作量为1，则甲的工作效率为1/12，乙的工作效率为1/9。设甲做了A天，乙做了(10-A)天，则有![](assets-fenbi-401/043923ace479d19cb5614d9bddd3e2a18326d28f366612c58e23644fb48dd622.png)，解得A=4。
 
 故正确答案为C。
 
@@ -2702,7 +2702,7 @@ D
 
 **解析**
 
-根据题干“…增加了”，结合选项带单位，可判定本题为增长量计算问题。定位文字材料第一段可得：“第六次全国人口普查江苏省常住人口为78659903人，第五次人口普查为74382809人”；定位材料第二段可得：“![](assets-fenbi-401/e36c6b7d793e3f0dae92e6a61f4b9a7f0451ae511c132ad809b2ecc32c692e80.png)岁人口为59861916人，占76.10%，同第五次全国人口普查相比，比重上升4.51个百分点”。故第六次全国人口普查时江苏省常住人口中15—64岁人口增长量=现期-基期=59861916-74382809×（76.10%-4.51%）≈60000000-75000000×71%=6750000人，与D项最接近。
+根据题干“…增加了”，结合选项带单位，可判定本题为增长量计算问题。定位文字材料第一段可得：“第六次全国人口普查江苏省常住人口为78659903人，第五次人口普查为74382809人”；定位材料第二段可得：“15~64岁人口为59861916人，占76.10%，同第五次全国人口普查相比，比重上升4.51个百分点”。故第六次全国人口普查时江苏省常住人口中15—64岁人口增长量=现期-基期=59861916-74382809×（76.10%-4.51%）≈60000000-75000000×71%=6750000人，与D项最接近。
 
 故正确答案为D。
 
@@ -3010,11 +3010,11 @@ A
 
 各省建筑工程产值与安装工程产值之比分别为：
 
-上海市![](assets-fenbi-401/02fec6aa68b45466ad48da073c89b3d4c1915ac2bca660a89231ba4ded60896d.png)；江苏省![](assets-fenbi-401/a8a9e43e446a654039120d98888565005cda46695ed51adc73267f550418b5be.png)；浙江省![](assets-fenbi-401/7b3a4c9b03f3314100e2d6f005f37e5ab5ffd1819ef7958ce69a267ac5b054c8.png)；安徽省![](assets-fenbi-401/77b2ced1920c6997da24ea8296ff5c72c8880e376a86b928dcbfe370e4b88b5f.png)；福建省![](assets-fenbi-401/8529cddcb771f61937b561c86492ea4d23e9bb3e684f6fe997d8464815ac8b2c.png)；江西省![](assets-fenbi-401/7c9afdaff5fd8a2f6b606bc21a8ead8276a57d7dd1568440c6ce18f07f608c2a.png)；山东省![](assets-fenbi-401/8518b007bbb8403a5c9411c1f22a0b276817f07b70b68a51e659663ca87107fc.png)。
+上海市610.4/104.5；江苏省1621.2/139.4；浙江省2134.1/171.8；安徽省544.9/53.1；福建省534.3/42.7；江西省301.9/19.3；山东省682.7/129.1。
 
-相当于比较![](assets-fenbi-401/f975980bafcb90cc8c3d23e1dc0aed6f2905455a020bc322267e694c98621028.png)、![](assets-fenbi-401/2f565878699f650b56dce4e44988cb31d9a6da3951360c6ee90eb46a99196cef.png)、![](assets-fenbi-401/9a9252d8cad4a90d72a29b8f16eb9e64fccefc0095dd82d9b285333b6368a4bc.png)、![](assets-fenbi-401/e7a26af0bd5a8ae063bf2250250ce2c2f12713f20197e00229f914c6179cd574.png)、![](assets-fenbi-401/59d222c61b0cab739fdd70ef19001fae05c1e8b0957ae7bf17036171ed272b8b.png)、![](assets-fenbi-401/7cbd43ede9cc0c94ae369078ae1abb5232e2385432db18def8be69c5095643f7.png)、![](assets-fenbi-401/ed59735ecc7ad96a4d09643cfa990270767585721a5a4521af8236fb7f6ea825.png)的大小。
+相当于比较6104/1045、16212/1394、21341/1718、5449/531、5343/427、3019/193、6827/1291的大小。
 
-显然![](assets-fenbi-401/f975980bafcb90cc8c3d23e1dc0aed6f2905455a020bc322267e694c98621028.png)、![](assets-fenbi-401/ed59735ecc7ad96a4d09643cfa990270767585721a5a4521af8236fb7f6ea825.png)的比值小于10，小于其它分数。![](assets-fenbi-401/2f565878699f650b56dce4e44988cb31d9a6da3951360c6ee90eb46a99196cef.png)、![](assets-fenbi-401/9a9252d8cad4a90d72a29b8f16eb9e64fccefc0095dd82d9b285333b6368a4bc.png)、![](assets-fenbi-401/e7a26af0bd5a8ae063bf2250250ce2c2f12713f20197e00229f914c6179cd574.png)、![](assets-fenbi-401/59d222c61b0cab739fdd70ef19001fae05c1e8b0957ae7bf17036171ed272b8b.png)、![](assets-fenbi-401/7cbd43ede9cc0c94ae369078ae1abb5232e2385432db18def8be69c5095643f7.png)量级相当，直除得前两位依次为11、12、10、12、15，则浙江省、福建省、江西省的比值较大。
+显然6104/1045、6827/1291的比值小于10，小于其它分数。16212/1394、21341/1718、5449/531、5343/427、3019/193量级相当，直除得前两位依次为11、12、10、12、15，则浙江省、福建省、江西省的比值较大。
 
 故正确答案为A。
 
@@ -3052,7 +3052,7 @@ B
 
 （2）正确，江苏省建筑业产值比上海高出![](assets-fenbi-401/658f598ab596a6d0d9095a72e673fc9ae4e1d3d9c550fefb365df9ee01abc6ca.png)；
 
-（3）正确，华东六省一市建筑工程产值占其建筑业产值的比重分别为![](assets-fenbi-401/44ab8efc0a85a7f3d3e66d3f270e8dc2895c5c07140a9844202e723540eb5332.png)、![](assets-fenbi-401/65489d21f7e6e5f463f393cbbac7a777686faaa4ef035d445380d4610a2b0fb7.png)、![](assets-fenbi-401/376aa0d08b9c893b7d56893c3aa7802e3b6697d0ca1dbfd96c0e7cbbf2dd6544.png)、![](assets-fenbi-401/d19b1ae056da1a4091c8e2644a0643b85950ca211bc7c62d4a5f53b1446c3e82.png)、![](assets-fenbi-401/4efdcc41605d59a4ae9d864aae686233c9df77e3274873266078ca73add6d1f3.png)、![](assets-fenbi-401/609d9330dfb063e9f35f462468c2187c8930c21c5525e3fe57e6c82fc1a5355b.png)、![](assets-fenbi-401/f3e560dd385dca0366de9770ba95ca9146869f8ff6c129f8e52c8b9c0cd70bfe.png)。由估算可知，各分数均大于80%。
+（3）正确，华东六省一市建筑工程产值占其建筑业产值的比重分别为610.4/739.2、1621.2/1773.2、2134.1/2381.2、544.9/625.7、534.3/583.9、301.9/334.2、682.7/838.5。由估算可知，各分数均大于80%。
 
 判断不正确的有1个。
 

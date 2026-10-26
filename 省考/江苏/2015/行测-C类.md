@@ -15,7 +15,7 @@
 # 2015年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2015 · 行测 · C类** ｜ 95 题 · 图片 80 处 · 答案随题折叠
+> **江苏 · 2015 · 行测 · C类** ｜ 95 题 · 图片 60 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -758,7 +758,7 @@ D
 
 方法一：数列起伏较小，优先考虑作差。作差后得到新数列：44、52、60、68、（76），为公差是8的等差数列，则下一项应为68+8=76，所求项应为323+76=399。
 
-方法二：数列各项均含有临近的平方数，考虑平方数列。观察发现，99=![](assets-fenbi-74396/85fc5de95cf0107801d431a8f16c2ef830337fdd3ab781d706cdb218333106f6.png)；143=![](assets-fenbi-74396/fc01a4b992de03006a71c63e3187b726a0490db3019de9df8b4b18602721c4e2.png)；195=![](assets-fenbi-74396/39fed9872e4585ec034258979f9dd6a71ede51bca5ca584836c49fe770b1115e.png)；255=![](assets-fenbi-74396/a357bb12dc55748b80d228ccfe0a02147088ada68e339e4cf309aa99c0de5e79.png)；323=![](assets-fenbi-74396/adc40db5e67d4241f6a8413582aa439a71817ab3f5fead57ae417f5caa7dae85.png)。为连续偶数列的平方数减1，故下一项应为：![](assets-fenbi-74396/ea2464d7236ac3f18631661ce84a49501cb253f1d6233c3d4babee2eb9adb7dc.png)\=399。
+方法二：数列各项均含有临近的平方数，考虑平方数列。观察发现，99=10^2-1；143=12^2-1；195=14^2-1；255=16^2-1；323=18^2-1。为连续偶数列的平方数减1，故下一项应为：20^2-1\=399。
 
 故正确答案为D。
 
@@ -796,15 +796,15 @@ A
 
 ### 第 24 题
 
-1/4  , 1/2  , 5/8  , ![](assets-fenbi-74396/5659ce575098e67e44d7bec5ebd7f075e40902fad2eea79fea44b104f663ef1c.png)  ,  3/4  ,（  ）。
+1/4  , 1/2  , 5/8  , 7/10  ,  3/4  ,（  ）。
 
-A. ![](assets-fenbi-74396/3ca4e399080e756ed3289f8dd43c90c14f41e01fa7eca786aa97ecea20e6b89f.png)
+A. 14/9
 
-B. ![](assets-fenbi-74396/39539fc8977dddb2d9e25cfa9d39e4c122a8dc9bb9c2a70362f1b10a232ec3c9.png)
+B. 11/14
 
-C. ![](assets-fenbi-74396/ff9e25a08f301c07c181ae8be93a640339ec8c27ce6082201d2de4f6e2f6a3f6.png)
+C. 13/14
 
-D. ![](assets-fenbi-74396/1c0a4237c305ae8eb535b2acc784430f37a15e02a5fdc622661a98d6c97fff9f.png)
+D. 17/16
 
 <details><summary>第 24 题 · 答案与解析</summary>
 
@@ -824,15 +824,15 @@ B
 
 ### 第 25 题
 
-![](assets-fenbi-74396/55b2093c4fb8c1b6446dabb7f1b2097933976cb045e8a380e27c1e6f6663f941.png) ，2 ，![](assets-fenbi-74396/0e796389b00b5d8a36f9366456fd399a2523f970969ade0f80864a862ef1b4ac.png) ， 2![](assets-fenbi-74396/d2fe84c146db77fc4cd6b535edfee30d12a0040d078f27ef0d1b978ce7108bdc.png) ，![](assets-fenbi-74396/ee72c450b59a9f082be031a8c9ff73220c5b6819ed26947718d3ed53008807fb.png) ，（  ）。
+√2 ，2 ，√7 ， 2√3 ，√21 ，（  ）。
 
-A. ![](assets-fenbi-74396/43c7ee0ac3a1fcba9642fd8eec2918bf05a8979375144337dcb9581491a98444.png)
+A. √38
 
-B. ![](assets-fenbi-74396/a5650468c777677782805152452af4ebb9f8593ddd51d43dadcb403823867b09.png)
+B. √30
 
-C. ![](assets-fenbi-74396/d2d818f3da17e6e6331626534625d7954c9f39d202d2ac56687a8b6bf73cd1db.png)
+C. √6
 
-D. 5![](assets-fenbi-74396/55b2093c4fb8c1b6446dabb7f1b2097933976cb045e8a380e27c1e6f6663f941.png)
+D. 5√2
 
 <details><summary>第 25 题 · 答案与解析</summary>
 
@@ -1096,7 +1096,7 @@ C
 
 A. 1/4
 
-B. ![](assets-fenbi-74396/828bd1368d184482e820bf7b68a4a46ab9fb5c5e938dc95d444908269b3253d5.png)
+B. 3/8
 
 C. 1/2
 

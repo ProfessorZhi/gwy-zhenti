@@ -15,7 +15,7 @@
 # 2013年上海市公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **上海 · 2013 · 行测 · A类** ｜ 140 题 · 图片 113 处 · 答案随题折叠
+> **上海 · 2013 · 行测 · A类** ｜ 140 题 · 图片 99 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1069,9 +1069,9 @@ B
 
 **解析**
 
-对于高为h，密度为ρ的正方体，对地面产生的压强应该是![](assets-fenbi-405/4d02677e1eff8da6d70b0bfbc13e9e8065a28f9fbbd7055ba0dcfe466e154e9a.png)，设三个正方体边长分别为a、b、c，密度分别为![](assets-fenbi-405/65a2b54e9e434c4e976e3799d391b581abbd240cc0cb5c7f79c728f868725d12.png)、![](assets-fenbi-405/c5c4a006423e3876d7b46c231882e1186ea0788a7bd397b0b6fcbb073566b5c4.png)、![](assets-fenbi-405/7124e30c20907a83b6336b154513b72e6399e4a038b20477c1cad2359aac753c.png)，则有如下关系：P![](assets-fenbi-405/f3a842909e46b9b28239c863759c53459d43e718b1028f13bec4963a56b5fb92.png)![](assets-fenbi-405/e81ce29b27d68230e962167b19f8da6faf37a610b72b2ab9f3c9ad0e1228efbf.png)![](assets-fenbi-405/f3a842909e46b9b28239c863759c53459d43e718b1028f13bec4963a56b5fb92.png)![](assets-fenbi-405/432fc2376365830c3523762a89cca6bb89316e6176f035dbfe37a8feca5981b6.png)![](assets-fenbi-405/f3a842909e46b9b28239c863759c53459d43e718b1028f13bec4963a56b5fb92.png)![](assets-fenbi-405/ca6c30ef0a2ea9a064cece9f76b74c339c17cd105ace2dc67eb63a27322bf56b.png)，由于a>b>c，则![](assets-fenbi-405/65a2b54e9e434c4e976e3799d391b581abbd240cc0cb5c7f79c728f868725d12.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/c5c4a006423e3876d7b46c231882e1186ea0788a7bd397b0b6fcbb073566b5c4.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/7124e30c20907a83b6336b154513b72e6399e4a038b20477c1cad2359aac753c.png)；
+对于高为h，密度为ρ的正方体，对地面产生的压强应该是![](assets-fenbi-405/4d02677e1eff8da6d70b0bfbc13e9e8065a28f9fbbd7055ba0dcfe466e154e9a.png)，设三个正方体边长分别为a、b、c，密度分别为ρ_A、![](assets-fenbi-405/c5c4a006423e3876d7b46c231882e1186ea0788a7bd397b0b6fcbb073566b5c4.png)、pC，则有如下关系：P=![](assets-fenbi-405/e81ce29b27d68230e962167b19f8da6faf37a610b72b2ab9f3c9ad0e1228efbf.png)=![](assets-fenbi-405/432fc2376365830c3523762a89cca6bb89316e6176f035dbfe37a8feca5981b6.png)=![](assets-fenbi-405/ca6c30ef0a2ea9a064cece9f76b74c339c17cd105ace2dc67eb63a27322bf56b.png)，由于a>b>c，则ρ_A![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/c5c4a006423e3876d7b46c231882e1186ea0788a7bd397b0b6fcbb073566b5c4.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)pC；
 
-减去相同的高度h'，则此时剩余部分对地面压强大小分别为![](assets-fenbi-405/1104cc0dd7e61814691f075fe064080aa3665f83217afc62356e578f73ff3577.png)、![](assets-fenbi-405/816c6136058dbdda21a7621cce8f4fe81a09f963004a3198c40d732759e2faf2.png)、![](assets-fenbi-405/c56d6518aa549e526064b7bd27564df47970e3b74ce7460ae4f6e8a09a1f41f6.png)，减少的压强关系为![](assets-fenbi-405/dafe1d4d927fb7ab730d2ed6b137a4b55fff9374aa0e5a4e3dc62de14d900997.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/c75c5d7a278048d96c9443fa8c1467e4815ff79f4667ba7c5410c7da36c1f6d1.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/d3c24b95bbf7a0704a1ca9b691e7fd2587a7048ed3d25ea8cd330ec67498a8c1.png)，可知剩余压强![](assets-fenbi-405/187fa50d444e33762ba819bca867089b50d6d566a7eca14f08bf0e005598857f.png)![](assets-fenbi-405/914b771f82129398b1441ba198b88042e1db859d3dcc57da89ebf43a005b3276.png)![](assets-fenbi-405/d5047b4e51890dc1063ba7fc2c07362fdbb59e2ab3a03a64641cb7f91e87c2bc.png)![](assets-fenbi-405/914b771f82129398b1441ba198b88042e1db859d3dcc57da89ebf43a005b3276.png)![](assets-fenbi-405/639ad1cef94a244d00f40d31c17d72b963b46fa2699982f4abc54b15b4d68bd7.png)。
+减去相同的高度h'，则此时剩余部分对地面压强大小分别为![](assets-fenbi-405/1104cc0dd7e61814691f075fe064080aa3665f83217afc62356e578f73ff3577.png)、![](assets-fenbi-405/816c6136058dbdda21a7621cce8f4fe81a09f963004a3198c40d732759e2faf2.png)、![](assets-fenbi-405/c56d6518aa549e526064b7bd27564df47970e3b74ce7460ae4f6e8a09a1f41f6.png)，减少的压强关系为![](assets-fenbi-405/dafe1d4d927fb7ab730d2ed6b137a4b55fff9374aa0e5a4e3dc62de14d900997.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/c75c5d7a278048d96c9443fa8c1467e4815ff79f4667ba7c5410c7da36c1f6d1.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/d3c24b95bbf7a0704a1ca9b691e7fd2587a7048ed3d25ea8cd330ec67498a8c1.png)，可知剩余压强P_A![](assets-fenbi-405/914b771f82129398b1441ba198b88042e1db859d3dcc57da89ebf43a005b3276.png)P_B![](assets-fenbi-405/914b771f82129398b1441ba198b88042e1db859d3dcc57da89ebf43a005b3276.png)![](assets-fenbi-405/639ad1cef94a244d00f40d31c17d72b963b46fa2699982f4abc54b15b4d68bd7.png)。
 
 故正确答案为B。
 
@@ -1101,7 +1101,7 @@ B
 
 **解析**
 
-根据题意，防盗门受三个力![](assets-fenbi-405/c25c7a7e5bea125d91dd06ee90f1abd286255b08014179a5079cbac26f405bba.png)、![](assets-fenbi-405/406704510bf1e79fb5ef806b7acbc74bf12eccff6fead36b1b56ad22ecb54183.png)、G，这三个力必须达到平衡，门才会稳定，A、C两项防盗门在竖直方向上没有向上的力，受力不平衡，排除A、C。假设没有铰链，防盗门上侧会有一个向外倾倒的趋势，故上铰链对防盗门的力应该是向内侧的，排除D。
+根据题意，防盗门受三个力F_1、F_2、G，这三个力必须达到平衡，门才会稳定，A、C两项防盗门在竖直方向上没有向上的力，受力不平衡，排除A、C。假设没有铰链，防盗门上侧会有一个向外倾倒的趋势，故上铰链对防盗门的力应该是向内侧的，排除D。
 
 故正确答案为B。
 
@@ -2347,7 +2347,7 @@ A. 1/12
 
 B. 1/3
 
-C. ![](assets-fenbi-405/6dd1185d84c5684de458375e66c2406e4ab664f54e3debda6e37c0906eea23cb.png)
+C. 5/12
 
 D. 1/2
 
@@ -2389,7 +2389,7 @@ D
 
 **解析**
 
-设购买甲种小鸡苗a只，则购买乙种小鸡苗为(2000-a）只。设购买这批小鸡苗总费用为b元，根据题意可得：![](assets-fenbi-405/8984997b4ee98189ee19f141ad8518a9e158c75e6e63ed1df5f362cf0a1518a9.png)![](assets-fenbi-405/58af238b524c602975743ff579637ce02e20d9643d0ec0ccab2a45367dc2cff6.png)，即b=-a+6000，为减函数；由题干中“这批小鸡苗的成活率不低于96%”可得：![](assets-fenbi-405/aa1998264057f7631c88b8194863392721343d37045b535bb147fb7e61eb0aa0.png)![](assets-fenbi-405/d61760d7d24c809c212579933605f3efb6794f30b4eb559b6122eae466a03d95.png)，解得![](assets-fenbi-405/68e2d509a28f8f928706633b6bdd0abf96ecf1f4308fb82d91e69f96447870ec.png)。因为函数“b=-a+6000”为减函数，因此当a=1200时，b取最小值。此时a=1200，2000-a=800，因此应选购甲、乙两种小鸡苗各有1200只、800只。
+设购买甲种小鸡苗a只，则购买乙种小鸡苗为(2000-a）只。设购买这批小鸡苗总费用为b元，根据题意可得：![](assets-fenbi-405/8984997b4ee98189ee19f141ad8518a9e158c75e6e63ed1df5f362cf0a1518a9.png)![](assets-fenbi-405/58af238b524c602975743ff579637ce02e20d9643d0ec0ccab2a45367dc2cff6.png)，即b=-a+6000，为减函数；由题干中“这批小鸡苗的成活率不低于96%”可得：![](assets-fenbi-405/aa1998264057f7631c88b8194863392721343d37045b535bb147fb7e61eb0aa0.png)![](assets-fenbi-405/d61760d7d24c809c212579933605f3efb6794f30b4eb559b6122eae466a03d95.png)，解得a≤1200。因为函数“b=-a+6000”为减函数，因此当a=1200时，b取最小值。此时a=1200，2000-a=800，因此应选购甲、乙两种小鸡苗各有1200只、800只。
 
 故正确答案为D。
 
@@ -2457,7 +2457,7 @@ B
 
 **解析**
 
-根据题干“2012年第一季度，······的比重达5.5%以上······”，可判定本题为现期比重问题。定位材料第一段，上海市签订外商直接投资合同金额52.75亿美元，那么满足要求的国家（地区）的签订金额应![](assets-fenbi-405/73b57ea10f5ef03732a8a5c871cb9623662877c54769a9dd947c3b7768cde8bb.png)![](assets-fenbi-405/f3a842909e46b9b28239c863759c53459d43e718b1028f13bec4963a56b5fb92.png) ![](assets-fenbi-405/9ab8e81c2ab4550a7feb9b98a3a32bd46ec012c254ad91724711ea45ba4e93e7.png)![](assets-fenbi-405/5a66b5360d7ff2650dab739422ca055c132348972350a55fdde9cda03c5c6f72.png)。定位材料第二段，符合要求的有中国香港、美国、日本、毛里求斯和新加坡，总共5个国家（地区）。
+根据题干“2012年第一季度，······的比重达5.5%以上······”，可判定本题为现期比重问题。定位材料第一段，上海市签订外商直接投资合同金额52.75亿美元，那么满足要求的国家（地区）的签订金额应![](assets-fenbi-405/73b57ea10f5ef03732a8a5c871cb9623662877c54769a9dd947c3b7768cde8bb.png)= ![](assets-fenbi-405/9ab8e81c2ab4550a7feb9b98a3a32bd46ec012c254ad91724711ea45ba4e93e7.png)![](assets-fenbi-405/5a66b5360d7ff2650dab739422ca055c132348972350a55fdde9cda03c5c6f72.png)。定位材料第二段，符合要求的有中国香港、美国、日本、毛里求斯和新加坡，总共5个国家（地区）。
 
 故正确答案为B。
 

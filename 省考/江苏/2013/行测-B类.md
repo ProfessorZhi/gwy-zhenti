@@ -15,7 +15,7 @@
 # 2013年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2013 · 行测 · B类** ｜ 155 题 · 图片 137 处 · 答案随题折叠
+> **江苏 · 2013 · 行测 · B类** ｜ 155 题 · 图片 91 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2381,15 +2381,15 @@ B
 
 ### 第 79 题
 
-1/2，1，![](assets-fenbi-437/d46b312cac17cece459f75a972004fc16808fbec4595a58ffde4ae2838a2ff66.png)，![](assets-fenbi-437/01f7b2aa4a242094aad6ca76d56abd5e9d448665ada7f396c84e8f760ef6345a.png)，![](assets-fenbi-437/854470c9e1bc9024b27d94cd09cc22a4a0897be69b3977c4cf923725874a3245.png)，（  ）
+1/2，1，9/7，16/11，25/16，（  ）
 
-A. ![](assets-fenbi-437/da95d19c90d53dba897d542c4d3eed2f451be570eb69981af160be8aba1c8927.png)
+A. 18/11
 
-B. ![](assets-fenbi-437/1157bdb3f4c48fbcc7c94528bd420937f367daaffc3726d82327c2767b06383c.png)
+B. 21/11
 
-C. ![](assets-fenbi-437/acec1d4a183fa4e5a3a7bc7664b64d72c900b7ff0a507b0ec361817063e56c99.png)
+C. 23/11
 
-D. ![](assets-fenbi-437/ddb3bd7d64d56a36496c57b9d81dc1e3692c049433c5bf12dcfd044433c71cfc.png)
+D. 36/23
 
 <details><summary>第 79 题 · 答案与解析</summary>
 
@@ -2399,7 +2399,7 @@ A
 
 **解析**
 
-1变形为![](assets-fenbi-437/8fc6e7cf9dbdfeccfd96210b2423212440e466085cb21fc04491c4221072ed72.png)，分子项构成新数列：1、4、9、16、25、(36)，为平方数列；分母项构成新数列：2、4、7、11、16、(22)，为二级等差数列，后项减去前项得到一个等差数列：2、3、4、5、6。所以未知项为![](assets-fenbi-437/cb9936c61b958c72185e2ae1db9bdcedfe3d7bdb42c1b1990521e0b71fa1f7c6.png)。
+1变形为4/4，分子项构成新数列：1、4、9、16、25、(36)，为平方数列；分母项构成新数列：2、4、7、11、16、(22)，为二级等差数列，后项减去前项得到一个等差数列：2、3、4、5、6。所以未知项为36/22=18/11。
 
 故正确答案为A。
 
@@ -2609,7 +2609,7 @@ B
 
 ### 第 87 题
 
-甲乙丙三人同去商城购物，甲花的钱的1/2等于乙花的钱的1/3，乙花的钱的![](assets-fenbi-437/633287b3e3f2c892a84dc16542937cc3035d4c85b0ef841d262ce40f0773f826.png)等于丙花的钱的![](assets-fenbi-437/0057cfd31a377486e4725fbdffa878984afa544a58664fb422291df86213eb8e.png)，结果丙比甲多花93元，则三人一共花的钱是：
+甲乙丙三人同去商城购物，甲花的钱的1/2等于乙花的钱的1/3，乙花的钱的3/4等于丙花的钱的4/7，结果丙比甲多花93元，则三人一共花的钱是：
 
 A. 432元
 
@@ -2791,15 +2791,15 @@ C
 
 ### 第 93 题
 
-有一个分数，分子与分母的和是100，如果分子加23，分母加32，新的分数约分后是![](assets-fenbi-437/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)，则原来的分数是(  )
+有一个分数，分子与分母的和是100，如果分子加23，分母加32，新的分数约分后是2/3，则原来的分数是(  )
 
-A. ![](assets-fenbi-437/f16f60b69ee318f8f61719ec824b28b6c2835b8b07730a7df854595339ec5695.png)
+A. 37/63
 
-B. ![](assets-fenbi-437/2b1ec91a8fccfe806898a44e2d638b2dbb85b71f9a5766add918b094f86711e6.png)
+B. 35/65
 
-C. ![](assets-fenbi-437/2831c38ce354fe227797af1eb419c1cd08e934dc52ea8a76da9e103c0a54f1a1.png)
+C. 33/67
 
-D. ![](assets-fenbi-437/a9b0caeec0d59135fca7286f27e97942a70c6cf15b13e88a52dcaf77e7d9777e.png)
+D. 39/61
 
 <details><summary>第 93 题 · 答案与解析</summary>
 
@@ -2837,7 +2837,7 @@ C
 
 **解析**
 
-由题意可得，![](assets-fenbi-437/8d2aa031750688d5cd0baab33f7ec3b8ddfa596ab49f1377966a71702c759c6c.png)，![](assets-fenbi-437/4c8725ef121f75d7ec7c852b2edaf09eaf643c8548311c697d01b2485d13586a.png)，所以![](assets-fenbi-437/3c3cff3530746631a5a149e6ee8af6108d44f1e0c526e236af710acb1c02894b.png)整数部分为182。
+由题意可得，![](assets-fenbi-437/8d2aa031750688d5cd0baab33f7ec3b8ddfa596ab49f1377966a71702c759c6c.png)，![](assets-fenbi-437/4c8725ef121f75d7ec7c852b2edaf09eaf643c8548311c697d01b2485d13586a.png)，所以T整数部分为182。
 
 故正确答案为C。
 
@@ -2849,13 +2849,13 @@ C
 
 小张和小李二人在400米标准环形跑道起点处，同向分别以120米/分钟，40米/分钟的速度同时出发。小张每追上小李一次，小张的速度减少10米/分钟，小李的速度增加10米/分钟，当二人速度相等时，则他们需要的时间是：
 
-A. ![](assets-fenbi-437/0ca6954837a7fa81ff19b528b215fc8c344b9f5a1c07a836c9cb31dc627640b4.png)分钟
+A. 40 1/3分钟
 
-B. ![](assets-fenbi-437/d718f3f0a3472a7afda681e0299ed110dabff6fc153fc06316bf8cbe7a8b85c2.png)分钟
+B. 40 2/3分钟
 
-C. ![](assets-fenbi-437/950146cd25e75a75283536b340d19bf70d365c7a0d709a13bd18ee9bb99b9c46.png)分钟
+C. 41 1/3分钟
 
-D. ![](assets-fenbi-437/edd6517e31d40bd6ae9131edbf31b31a30c094af0d0ffc5a3867570646b5e081.png)分钟
+D. 41 2/3分钟
 
 <details><summary>第 95 题 · 答案与解析</summary>
 
@@ -4615,13 +4615,13 @@ C
 
 设某公司2011年、2012年产品产量相同，其产品产销率均与当年全国规模以上工业企业相同，则该公司2012年与2011年的产品销售量之比是：
 
-A. ![](assets-fenbi-437/09f145fde91dec849b99fd85c9e10c6342e58a9f52d90de76b584611794b2484.png)
+A. 99/98
 
-B. ![](assets-fenbi-437/9ca29f0e549005be1bfc9f2ab76f70c921dda965548f4a4970755660d3d082eb.png)
+B. 196/197
 
-C. ![](assets-fenbi-437/783ad9db9cdb6419f80b946b7d6b311fdc8e381e881967eaa75ea2321f33ac21.png)
+C. 98/99
 
-D. ![](assets-fenbi-437/eb50dcb59c66d277db971165e5baeec6e30a305739e80905bc2e1470125c7132.png)
+D. 197/196
 
 <details><summary>第 139 题 · 答案与解析</summary>
 
@@ -4631,7 +4631,7 @@ B
 
 **解析**
 
-根据题干“……与……之比是”，可判定本题为比值计算问题。定位文字材料第二段可得：“2012年全国规模以上工业企业产销率达到98.0%，比上年下降0.5个百分点”。结合题干“某公司2011年、2012年产品产量相同”，即2012年产量=2011年产量，则根据产销率![](assets-fenbi-437/8eb53ec6ec9f13d001d5e79827e3117a582d1bcdb3c3e1d5d114aa37375b1eac.png)，公式可变形为销量=产量×产销率，故2012年与2011年的产品销售量之比![](assets-fenbi-437/a0cc9d15a034e0ba62f98e746051b0d4f4fdc8cf7be1980db79ee5b4cc064c7f.png)![](assets-fenbi-437/3076bacd3bf3cd3c8b6846f88e69c399258ec044cdea4f6e3bcbde0269b4566f.png)。
+根据题干“……与……之比是”，可判定本题为比值计算问题。定位文字材料第二段可得：“2012年全国规模以上工业企业产销率达到98.0%，比上年下降0.5个百分点”。结合题干“某公司2011年、2012年产品产量相同”，即2012年产量=2011年产量，则根据产销率=销量/产量，公式可变形为销量=产量×产销率，故2012年与2011年的产品销售量之比![](assets-fenbi-437/a0cc9d15a034e0ba62f98e746051b0d4f4fdc8cf7be1980db79ee5b4cc064c7f.png)![](assets-fenbi-437/3076bacd3bf3cd3c8b6846f88e69c399258ec044cdea4f6e3bcbde0269b4566f.png)。
 
 故正确答案为B。
 
@@ -4737,7 +4737,7 @@ A
 
 **解析**
 
-根据题干“与1990年相比，……下降”，结合选项都为百分数，可判定本题为增长率问题。定位文字材料可得：2012年出生率为12.10‰；定位表格材料可得：1990年出生率为21.06%。故与1990年相比，2012年我国人口出生率下降![](assets-fenbi-437/f3a842909e46b9b28239c863759c53459d43e718b1028f13bec4963a56b5fb92.png)![](assets-fenbi-437/6cecba8c6121d472033c0347469a5795552c7baca52f4bad7ef291128876c51f.png)![](assets-fenbi-437/59c312a4e84cb05e1bf753b206f8256af57d6c6eb9336b8a4819dd1c0d5c8a03.png)，只有A项符合。
+根据题干“与1990年相比，……下降”，结合选项都为百分数，可判定本题为增长率问题。定位文字材料可得：2012年出生率为12.10‰；定位表格材料可得：1990年出生率为21.06%。故与1990年相比，2012年我国人口出生率下降=![](assets-fenbi-437/6cecba8c6121d472033c0347469a5795552c7baca52f4bad7ef291128876c51f.png)≈42.8%，只有A项符合。
 
 故正确答案为A。
 
@@ -4959,13 +4959,13 @@ B
 
 **解析**
 
-2006年的比值为![](assets-fenbi-437/e2483717b39cb24aff22592008757caf99115a3a0396b8699dcc9c1619aae8cb.png)；
+2006年的比值为653.3/7914.1；
 
-2005年比值为![](assets-fenbi-437/a68fe1d636ace40b5978250b32fbbb26fce0e8f240637b7fce97cc2bdf80be89.png)；
+2005年比值为492.4/6612.2；
 
-2004年比值为![](assets-fenbi-437/97b515b5eecfb7e176ea22ec514b18631efa96b458df9b46ed33cb7ecdbb4a9e.png)；
+2004年比值为440.5/5198.0；
 
-2003年比值为![](assets-fenbi-437/38ffff2fa535dafe8f5436704920870c68858430494f2f4f955b9e293e474023.png)。
+2003年比值为392.1/4493.3。
 
 直除首位依次为8、7、8、8，2005年最小。
 
@@ -4977,15 +4977,15 @@ B
 
 ### 第 150 题
 
-若不考虑价格因素，则2003年—2011年九年，江苏金融业增加值年均增速![](assets-fenbi-437/bfef8e0081ace5ad50d47e6c2b8ab06b4e8a04e5a1dd425d683359eced71625f.png)、第三产业增加值年均增速![](assets-fenbi-437/880c89b11b550c716325080fa8b8df42763f3ff8acd10ece1984099b67b080fe.png)，地区国内生产总值年均增速![](assets-fenbi-437/a5703206f0218f920b3d4f450c1f644fdad85cb928707a9a066e4d3edef2c59b.png)的大小关系是：
+若不考虑价格因素，则2003年—2011年九年，江苏金融业增加值年均增速![](assets-fenbi-437/bfef8e0081ace5ad50d47e6c2b8ab06b4e8a04e5a1dd425d683359eced71625f.png)、第三产业增加值年均增速V_s，地区国内生产总值年均增速V_G的大小关系是：
 
-A. ![](assets-fenbi-437/880c89b11b550c716325080fa8b8df42763f3ff8acd10ece1984099b67b080fe.png)\>![](assets-fenbi-437/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)\>![](assets-fenbi-437/a5703206f0218f920b3d4f450c1f644fdad85cb928707a9a066e4d3edef2c59b.png)
+A. V_s\>![](assets-fenbi-437/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)\>V_G
 
-B. ![](assets-fenbi-437/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)\>![](assets-fenbi-437/a5703206f0218f920b3d4f450c1f644fdad85cb928707a9a066e4d3edef2c59b.png)\>![](assets-fenbi-437/880c89b11b550c716325080fa8b8df42763f3ff8acd10ece1984099b67b080fe.png)
+B. ![](assets-fenbi-437/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)\>V_G\>V_s
 
-C. ![](assets-fenbi-437/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)\>![](assets-fenbi-437/880c89b11b550c716325080fa8b8df42763f3ff8acd10ece1984099b67b080fe.png)\>![](assets-fenbi-437/a5703206f0218f920b3d4f450c1f644fdad85cb928707a9a066e4d3edef2c59b.png)
+C. ![](assets-fenbi-437/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)\>V_s\>V_G
 
-D. ![](assets-fenbi-437/880c89b11b550c716325080fa8b8df42763f3ff8acd10ece1984099b67b080fe.png)\>![](assets-fenbi-437/a5703206f0218f920b3d4f450c1f644fdad85cb928707a9a066e4d3edef2c59b.png)\>![](assets-fenbi-437/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)
+D. V_s\>V_G\>![](assets-fenbi-437/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)
 
 <details><summary>第 150 题 · 答案与解析</summary>
 
@@ -4997,7 +4997,7 @@ C
 
 比较三者大小，只需要比较三个参数2011年与2002年比值的大小，各自如下：
 
-金融业：![](assets-fenbi-437/edb377e75763f47f354bb38d48dda5ebda3842cdc5ac5574b84d65c61261e2af.png)，第三产业：![](assets-fenbi-437/9ef974e961b347a94a4d70631b9f6a5fb9fd28bd317d135199fcdcc63a47ca85.png)，国内生产总值：![](assets-fenbi-437/8b43a0a3070c262706e7b10b672a821f9d7eabea3340727e0885224fd78662ba.png)，直除首位依次为7、5、4，即![](assets-fenbi-437/4940507e3d5f9829068fa167356535f399dc29df504733858ff8eb1d93dfbf26.png)。
+金融业：2600.1/368.9，第三产业：20842.2/3891.9，国内生产总值：49110.3/10606.9，直除首位依次为7、5、4，即![](assets-fenbi-437/4940507e3d5f9829068fa167356535f399dc29df504733858ff8eb1d93dfbf26.png)。
 
 故正确答案为C。
 
@@ -5115,7 +5115,7 @@ D
 
 **解析**
 
-根据题干“2011年……比2010年少”，结合选项带单位，可判定本题为增长量计算问题。定位文字材料可得：“2011年全国共发生地质灾害15664起，与上年相比，发生数量下降48.9%”，结合百化分计算减少量![](assets-fenbi-437/8a754eb1c09d6e4a88a892200d9f2aa9a2fe67e406a4fcc9c79d22bf5ab73302.png)，故可得2011年全国发生各类地质灾害的数量比2010年![](assets-fenbi-437/309022c24cfa66dca9c7dc441e9fa8ae8ec4a684ee26dbcadad92b17c5f146f2.png)![](assets-fenbi-437/a100ab8c464e6ab040a111d114308fb3affa565e95b64c636aea9b1a2d44242f.png)![](assets-fenbi-437/ef6df90b101591d6737692f1d8d0d244513e210b65a2c00e12da4a921fd2ccc8.png)则结果应略小于15664，显然只有D项符合。
+根据题干“2011年……比2010年少”，结合选项带单位，可判定本题为增长量计算问题。定位文字材料可得：“2011年全国共发生地质灾害15664起，与上年相比，发生数量下降48.9%”，结合百化分计算减少量![](assets-fenbi-437/8a754eb1c09d6e4a88a892200d9f2aa9a2fe67e406a4fcc9c79d22bf5ab73302.png)，故可得2011年全国发生各类地质灾害的数量比2010年![](assets-fenbi-437/309022c24cfa66dca9c7dc441e9fa8ae8ec4a684ee26dbcadad92b17c5f146f2.png)![](assets-fenbi-437/a100ab8c464e6ab040a111d114308fb3affa565e95b64c636aea9b1a2d44242f.png)=15664/1.04则结果应略小于15664，显然只有D项符合。
 
 故正确答案为D。
 

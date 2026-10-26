@@ -15,7 +15,7 @@
 # 2008年湖北省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **湖北 · 2008 · 行测 · A类** ｜ 135 题 · 图片 83 处 · 答案随题折叠
+> **湖北 · 2008 · 行测 · A类** ｜ 135 题 · 图片 69 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1251,15 +1251,15 @@ B
 
 ### 第 34 题
 
-1/2，1，![](assets-fenbi-97/f770b7c79b327b03c3f1d0efb7d7f2a49d3832125d55849f54281381c4d9fa7b.png)，![](assets-fenbi-97/b0f9056bca2e9ba804f56e88d1d6e1536fda2f1ae63173eb9a5d685eaa268c2f.png)，（    ）
+1/2，1，4/3，19/12，（    ）
 
-A. ![](assets-fenbi-97/8594947af2147528d628533bee0d2d7810bbe4b7438f424dd226281da101225d.png)
+A. 133/60
 
-B. ![](assets-fenbi-97/9e091380f9c5042d16685375c87bf86e69b353f921424c1d6c0325a33f2fd6e5.png)
+B. 137/60
 
-C. ![](assets-fenbi-97/375d4db4aaf5d0ade268f67e3a0df0d81a6a36648e37cf95e12728dbe4c8897d.png)
+C. 107/60
 
-D. ![](assets-fenbi-97/fe3b707f00c4f44c63f3274fb4adbf870c4820f0f6cb3e12e2f834dac313db8f.png)
+D. 147/60
 
 <details><summary>第 34 题 · 答案与解析</summary>
 
@@ -1285,9 +1285,9 @@ A. 16
 
 B. 17
 
-C. ![](assets-fenbi-97/8ef78e03a6919a6ae660eec8bcda0db4de237b5764eb18f2a23f5b2de6a1d037.png)
+C. 1/32
 
-D. ![](assets-fenbi-97/0de50d5a25cca4d2553e7fb54f9f75d94e33fc6401bcffb3a8f2706352f1b342.png)
+D. 1/16
 
 <details><summary>第 35 题 · 答案与解析</summary>
 
@@ -1561,7 +1561,7 @@ B
 
 **解析**
 
-从4时到5时，时针和分针有一次成![](assets-fenbi-97/a92c45b3eb552a64d06b5eb39a9f0836112412c5dd81585745937bd4bd0b7072.png)角和一次成![](assets-fenbi-97/b58861c67fa017875a244c149ac10ee8f0785821a8352d73b05a7ab0eb48d22d.png)角的状态，故成直线的机会有2次。
+从4时到5时，时针和分针有一次成0°角和一次成180°角的状态，故成直线的机会有2次。
 
 故正确答案为B。
 
@@ -1641,11 +1641,11 @@ B
 
 第一次取走后剩下的骨牌编号为2的倍数；
 
-第二次取走后剩下的骨牌编号为![](assets-fenbi-97/6ade989bc9717123e11c5162e08a70408789346a3910c5019ac2f7cc56268fdd.png)的倍数；
+第二次取走后剩下的骨牌编号为4=2^2的倍数；
 
 ······
 
-第n次取走后剩下的骨牌编号为![](assets-fenbi-97/31f62beb27010f282c253fe9e4a80777da23969df479b24c8ab1623fbfcda56d.png)的倍数。
+第n次取走后剩下的骨牌编号为2^n的倍数。
 
 故最后剩下的骨牌编号为90以内2的最大次方数，即为64。
 
@@ -4691,7 +4691,7 @@ A
 
 2003年为![](assets-fenbi-97/c52d45d41378f38d58d0ae20ae5c63516db5b18b7d7db802d6a52252e386d443.png)。
 
-将这四个分数化同分子，易知![](assets-fenbi-97/4133199f36bf1441d62cfa88d3594902581d116ec9bdad1b85c19192f70dd8cd.png)的值最小，故1998年的增长率最低。
+将这四个分数化同分子，易知3/51的值最小，故1998年的增长率最低。
 
 故正确答案为A。
 
@@ -4799,7 +4799,7 @@ B
 
 解法2：
 
-利用量角器，测量图中代表荷兰的扇形的圆心角，测量角度大约为![](assets-fenbi-97/204d1d9928f2a9f3a82da4904633093c814cb5717f204dc6e26a649ecdfeed35.png)，利用公式计算，有：
+利用量角器，测量图中代表荷兰的扇形的圆心角，测量角度大约为18°，利用公式计算，有：
 
 ![](assets-fenbi-97/3a2c5ac3b09f71dacb511e6f3d01dd4f80c78011505f9601b07d4dad1d603dbb.png)![](assets-fenbi-97/bd89b70dd9dd46bbb6a61cd9446b1f8d48c72911eb419e898e3ac26df0692ace.png)，最接近B项。
 

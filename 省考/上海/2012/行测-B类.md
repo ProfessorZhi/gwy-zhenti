@@ -15,7 +15,7 @@
 # 2012年上海市公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **上海 · 2012 · 行测 · B类** ｜ 140 题 · 图片 140 处 · 答案随题折叠
+> **上海 · 2012 · 行测 · B类** ｜ 140 题 · 图片 108 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1093,7 +1093,7 @@ D
 
 ### 第 29 题
 
-下图中的电路，所有的开关都是打开的，若欲得到XY之间的总电阻值为![](assets-fenbi-395/7edeb72675e1d0cc1fc2e644425164635998fc8b5484fff2d22112cdf7358f1d.png)，则正确的开关状态是：
+下图中的电路，所有的开关都是打开的，若欲得到XY之间的总电阻值为6 Ω，则正确的开关状态是：
 
 ![](assets-fenbi-395/75cb271ca6ad50f1735c884d23c86db200b099428191a5e507d01edd5cae60e1.png)
 
@@ -1113,7 +1113,7 @@ B
 
 **解析**
 
-本题考查电路分析。左边两个电阻并联后与右边的电阻串联，对于串联电路![](assets-fenbi-395/7fb3741a865ef57f419eabc8022e8ef6f63a066e50b1d1640d632a7d624bc10c.png)······![](assets-fenbi-395/842b5e44b98ffb08892e28f50ce0184bf9b6f8c9a50fe9faee73b27297e798f0.png)，对于并联电路![](assets-fenbi-395/5dc75f98d44eef429d04f3dc2fc720041d2d454bea391ca4265e4aa69835b961.png)![](assets-fenbi-395/b9e28a821124b0d260bd8bc3c3c549c8df372bdfef8d77c912d10dfc767c3b3d.png)······![](assets-fenbi-395/27e55d897f50d25e2e59a741f32f5077bfaf107484bc78f98d29921857214ced.png)。要使XY之间的总电阻为![](assets-fenbi-395/7edeb72675e1d0cc1fc2e644425164635998fc8b5484fff2d22112cdf7358f1d.png)，根据上述公式，左边并联电路总电阻为![](assets-fenbi-395/fe630eed167788cb606f348095ee6f7d695d1ca4729369e7b13d0b0441c74c40.png)，右边为![](assets-fenbi-395/55f5fee7228a4665ea9ba0ad1cd8cd5a3af03f272490806decb27233b61ce003.png)，和刚好为![](assets-fenbi-395/7edeb72675e1d0cc1fc2e644425164635998fc8b5484fff2d22112cdf7358f1d.png)，因此要求![](assets-fenbi-395/cc27c5ca8cd617b68c6fda575fe17f9f5194c247725685edb18acc9bc924f754.png)和![](assets-fenbi-395/b768a8a4aabf94d40ed040057916209c322c001d6444391103db860ef39ce64c.png)闭合，![](assets-fenbi-395/f37075d0f4a6c0c791b68d3f0c7381c3eba42b41fc19ece77f3b859edaa35ab8.png)断开。
+本题考查电路分析。左边两个电阻并联后与右边的电阻串联，对于串联电路![](assets-fenbi-395/7fb3741a865ef57f419eabc8022e8ef6f63a066e50b1d1640d632a7d624bc10c.png)······+R_n，对于并联电路![](assets-fenbi-395/5dc75f98d44eef429d04f3dc2fc720041d2d454bea391ca4265e4aa69835b961.png)+1/R_2+······+1/R_n。要使XY之间的总电阻为6 Ω，根据上述公式，左边并联电路总电阻为1.5 Ω，右边为4.5Ω，和刚好为6 Ω，因此要求S_1和S_2闭合，S_3断开。
 
 故正确答案为B。
 
@@ -1123,7 +1123,7 @@ B
 
 ### 第 30 题
 
-如图所示，有一容器，内装互不相溶的两种液体。现将质量及体积皆相同的三个铝块，分别以细绳悬吊于弹簧秤下，使静止于液体中。若弹簧秤的读数分别为![](assets-fenbi-395/132f5c7a67652c5263e40e0555280a6843947beea5b0c5f48e14bcfb433b484a.png)、![](assets-fenbi-395/e63aeb7c41954f7b09f9dec3e0c21e97379a90557765eb7b25ef206e0e420ae0.png)和![](assets-fenbi-395/5783ad8ce7c97975f0835c24299be65a22a30af3bbff519632b7dd05025aec4e.png)，则下列关系正确的是：（细绳之重量及粗细不计）
+如图所示，有一容器，内装互不相溶的两种液体。现将质量及体积皆相同的三个铝块，分别以细绳悬吊于弹簧秤下，使静止于液体中。若弹簧秤的读数分别为W_1、W_2和W_3，则下列关系正确的是：（细绳之重量及粗细不计）
 
 ![](assets-fenbi-395/d22ef503cb11e237fe4e00137ce05652b4617e8efd87ccd268d24eacacde9ca6.jpg)
 
@@ -2251,7 +2251,7 @@ B
 
 解析2：
 
-设该单位拿出奖金为x万元，第一名得到![](assets-fenbi-395/59ca45d593e42ade8ba53bc0f561a627661ff371abcfe04bd462b49e8f5922e4.png)，第二名得到![](assets-fenbi-395/d33ac50b614c8ea3e059b09787e4924d6969121a475bf3a979905fe1c90773af.png)，第三名得到![](assets-fenbi-395/9cf3bcacb46515e39550588a9b3fbbcc96e74c263c1088ee9d5f050590f3253e.png)![](assets-fenbi-395/de4ad6149d26e21b506bb3e1632652f88b7ea56be3c236cf966d12f1de54715c.png)，![](assets-fenbi-395/1ff05fd7776917a40180cdb628cbc719b3ba994e2a6b034b7f321440d551af2c.png)，由此可知，七名科研人员得到的奖金数是首项是2，公比为2，项数是7的等比数列。由第七名恰好分完，可知第七名得到奖金2万元。由等比数列求和公式可知，该单位拿出奖金为![](assets-fenbi-395/ed91f476fcf8c841a381ef01321b1f172493286fd008c1fc141a00b47e9d7011.png)。
+设该单位拿出奖金为x万元，第一名得到![](assets-fenbi-395/59ca45d593e42ade8ba53bc0f561a627661ff371abcfe04bd462b49e8f5922e4.png)，第二名得到![](assets-fenbi-395/d33ac50b614c8ea3e059b09787e4924d6969121a475bf3a979905fe1c90773af.png)，第三名得到![](assets-fenbi-395/9cf3bcacb46515e39550588a9b3fbbcc96e74c263c1088ee9d5f050590f3253e.png)![](assets-fenbi-395/de4ad6149d26e21b506bb3e1632652f88b7ea56be3c236cf966d12f1de54715c.png)，…，由此可知，七名科研人员得到的奖金数是首项是2，公比为2，项数是7的等比数列。由第七名恰好分完，可知第七名得到奖金2万元。由等比数列求和公式可知，该单位拿出奖金为![](assets-fenbi-395/ed91f476fcf8c841a381ef01321b1f172493286fd008c1fc141a00b47e9d7011.png)。
 
 故正确答案为B。
 
@@ -2343,7 +2343,7 @@ C
 
 **解析**
 
-设答对x题，答错(20-x)题，则有![](assets-fenbi-395/d0f6c9fde696f362524cbc539c1ccf02bf8be1285ce79fb11385933f03d0bc50.png)，解得![](assets-fenbi-395/68638569330fb40940a826802289f2a640942b83d0a051634742d6c221224791.png)。x取最小整数值为18。
+设答对x题，答错(20-x)题，则有![](assets-fenbi-395/d0f6c9fde696f362524cbc539c1ccf02bf8be1285ce79fb11385933f03d0bc50.png)，解得x≥17.5。x取最小整数值为18。
 
 故正确答案为C。
 
@@ -2421,11 +2421,11 @@ B
 
 A. 5
 
-B. ![](assets-fenbi-395/32bba5b53e0a2add5b6df528edee1538522168237393d4d1a680742c06b6ea01.png)
+B. 80/19
 
-C. ![](assets-fenbi-395/dcc9d15945ec2bf8fd6dc6acbcfe43132dc6295c6594eb9982602158d5d6a95d.png)
+C. 90/19
 
-D. ![](assets-fenbi-395/32e43ab063e178ddfe66344905c620763825f7ba4aee5670703d09061ce9a88c.png)
+D. 100/19
 
 <details><summary>第 63 题 · 答案与解析</summary>
 
@@ -2531,15 +2531,15 @@ B
 
 **解析**
 
-根据题干“······年均增速最快的”，可判定本题为年均增长率的比较问题。根据年均增长率的公式：初期值![](assets-fenbi-395/68544d0bafb6d7c38802f48ec5fa97d06aab138d2496bd0e9c8d947a78c704ad.png)末期值，因选项年份差n值相同，故仅比较![](assets-fenbi-395/2520aca47e47d972d26f5103fb48b501191fc52c5cd2863ef5d970162ed36119.png)的大小即可。定位柱形图，各选项末期与初期的比值分别为：
+根据题干“······年均增速最快的”，可判定本题为年均增长率的比较问题。根据年均增长率的公式：初期值![](assets-fenbi-395/68544d0bafb6d7c38802f48ec5fa97d06aab138d2496bd0e9c8d947a78c704ad.png)末期值，因选项年份差n值相同，故仅比较末期值/初期值的大小即可。定位柱形图，各选项末期与初期的比值分别为：
 
-A项：![](assets-fenbi-395/76e4d7b2f793a5149b15ed964f78b8e63e496d5a78a63062a9a6dc0066d44c04.png)![](assets-fenbi-395/313d0e87fda3c378efd9646025603538c2970d8e311eadfc74aea96b936da1e2.png)；
+A项：4127/1915≈2+；
 
-B项：![](assets-fenbi-395/702d607e7fae7b7be4a150a72a1dd3878f44847672611a5a578a99ef5cff5e99.png)![](assets-fenbi-395/f4c9a5e6c7a10d898a7aeda7047e771585ee85ccf430ecee69a4cc6d87868c64.png)；
+B项：12771/4127≈3^+；
 
-C项：![](assets-fenbi-395/4e81b8ccbc47ece4922c6f2d1ef8a7be9735cec7dde41638e0288370588b51e8.png)![](assets-fenbi-395/8745199b164316d82594912ff6145d67dab4859bd54720002ad4617cf6793187.png)；
+C项：20906/12771≈1^+；
 
-D项：![](assets-fenbi-395/c7d8960dc4ce2331e5d8b70e9da572470bcb8e060b88ea96ceb3c82f3fb087f8.png)![](assets-fenbi-395/8745199b164316d82594912ff6145d67dab4859bd54720002ad4617cf6793187.png)。
+D项：21494/20906≈1^+。
 
 对比可得，年均增速最快的五年是1990—1995年。
 
@@ -2755,7 +2755,7 @@ D
 
 **解析**
 
-根据题干“与第五次全国人口普查相比，第六次······占······的比重提高了···个百分点”，可判定本题为两期比重问题。定位文字材料，第六次人口普查，全市常住人口为2301.91万人，外省市来沪常住人口为897.70万人，则第六次人口普查外来人口占常住人口的比重为![](assets-fenbi-395/16978444a733b5aa4357cf2181b9c1fd35a050bd16dd3f8155023a8df3a5d57e.png)；与第五次相比，本市常住人口共增加628.14万人，外省市来沪常住人口增加551.21万人，则第五次人口普查外来人口占常住人口的比重为![](assets-fenbi-395/67303012ed94011512354246c6c8e2e25a1815ac4ed051468b74fe68499a2dfa.png)。
+根据题干“与第五次全国人口普查相比，第六次······占······的比重提高了···个百分点”，可判定本题为两期比重问题。定位文字材料，第六次人口普查，全市常住人口为2301.91万人，外省市来沪常住人口为897.70万人，则第六次人口普查外来人口占常住人口的比重为897.70/2301.91；与第五次相比，本市常住人口共增加628.14万人，外省市来沪常住人口增加551.21万人，则第五次人口普查外来人口占常住人口的比重为![](assets-fenbi-395/67303012ed94011512354246c6c8e2e25a1815ac4ed051468b74fe68499a2dfa.png)。
 
 故第六次比第五次提高了![](assets-fenbi-395/c52be5943384651e3988f6896bb36ef29b6c23a974542ab246df7fba07ba5322.png)![](assets-fenbi-395/0d7c2058fa55d5e58e77f0bde309fafde6eba34813165a996f4ec7a8d5a62eed.png)![](assets-fenbi-395/bbc1b3b9e5f537ae7e23d954f5126c5eb63bb4c149ab8ae592870e4e77bac4ca.png)，即19个百分点，与D项最接近。
 
@@ -2927,7 +2927,7 @@ D
 
 **解析**
 
-根据题干“2010年，···占···比重约为”，可判定本题为现期比重问题。定位文字材料，“家电下乡”和“以旧换新”活动实现的零售额分别为8亿元、14.6亿元，限额以上批发和零售企业零售额169.5亿元。根据饼状图，2010年该市家用电器和音像器材类占限额以上批发和零售企业实现零售额的比例为18%，则家用电器和音像器材的零售额![](assets-fenbi-395/f3a842909e46b9b28239c863759c53459d43e718b1028f13bec4963a56b5fb92.png)![](assets-fenbi-395/5edd6ebc04872c7fe5db255f3af46b894e3acde774d79e839daf54d39d8c0ab7.png)，故所占比重![](assets-fenbi-395/af69d55b083d837bcfc33c911ee4a14c76266d6b200b9e6260aa7600f7e6f3a6.png)![](assets-fenbi-395/f3a842909e46b9b28239c863759c53459d43e718b1028f13bec4963a56b5fb92.png)![](assets-fenbi-395/ebaa516fad9bbbc3d2b99a46d9fed3743acb7f7352fb394ae6d22f9498e188b5.png)![](assets-fenbi-395/a12fe6ece3d2f0271b6cbde88baf7b2123f326bff49c3f5a496ef211a32e76e0.png)，仅D项符合。
+根据题干“2010年，···占···比重约为”，可判定本题为现期比重问题。定位文字材料，“家电下乡”和“以旧换新”活动实现的零售额分别为8亿元、14.6亿元，限额以上批发和零售企业零售额169.5亿元。根据饼状图，2010年该市家用电器和音像器材类占限额以上批发和零售企业实现零售额的比例为18%，则家用电器和音像器材的零售额=![](assets-fenbi-395/5edd6ebc04872c7fe5db255f3af46b894e3acde774d79e839daf54d39d8c0ab7.png)，故所占比重![](assets-fenbi-395/af69d55b083d837bcfc33c911ee4a14c76266d6b200b9e6260aa7600f7e6f3a6.png)=![](assets-fenbi-395/ebaa516fad9bbbc3d2b99a46d9fed3743acb7f7352fb394ae6d22f9498e188b5.png)![](assets-fenbi-395/a12fe6ece3d2f0271b6cbde88baf7b2123f326bff49c3f5a496ef211a32e76e0.png)，仅D项符合。
 
 故正确答案为D。
 
@@ -4287,7 +4287,7 @@ D选项正确，国家秘密的知悉范围，应当根据工作需要限定在�
 
 土壤的酸性太强会带来害虫和疾病，阻碍植物生长，并析出有毒金属。目前，造成我国土壤酸化的主要原因是：
 
-A. 空气中![](assets-fenbi-395/b418d64cf0a89f140f7ac5e9c97867cb0254e7110b0d3d07ea478f845e16c21e.png)浓度增大
+A. 空气中CO_2浓度增大
 
 B. 滥施化肥
 

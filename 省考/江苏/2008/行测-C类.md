@@ -15,7 +15,7 @@
 # 2008年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2008 · 行测 · C类** ｜ 100 题 · 图片 102 处 · 答案随题折叠
+> **江苏 · 2008 · 行测 · C类** ｜ 100 题 · 图片 85 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -162,7 +162,7 @@ D
 
 **解析**
 
-观察数列发现，原数列均为两位数，且个位与十位数字均存在明显倍数关系，两两相除可得比值分别为![](assets-fenbi-83/0e3eea2d6fe6916c5707f38a5afa84a75f0e2ec120e861a56997a07a194219f5.png)，![](assets-fenbi-83/0f6685c9459f8bc86a2ae1a31b21c26d69f0780dfc45ef3f1f5bbafac5266588.png)，![](assets-fenbi-83/35a0f296d2c47034516431771cd840bb03431030bac4dc7ad5cedffce739d45d.png)，![](assets-fenbi-83/b5850e6573bcda2f61e39c5f737d6260597ed3b9c96424f38685c988eb80a174.png)，构成公差为1的等差数列，因此所求项个位数字除以十位数字应该为5，只有D项符合。
+观察数列发现，原数列均为两位数，且个位与十位数字均存在明显倍数关系，两两相除可得比值分别为2/2=1，4/2=2，9/3=3，8/2=4，构成公差为1的等差数列，因此所求项个位数字除以十位数字应该为5，只有D项符合。
 
 故正确答案为D。
 
@@ -408,7 +408,7 @@ A
 
 ### 第 13 题
 
-已知正整数数列![](assets-fenbi-83/f3a3cfc5124b837617d74f4c93ca7d793b86a214aed01c631c1b254600adaa5d.png)满足![](assets-fenbi-83/7fdbec9529892c40a378a141bb5c2f4ef9cf85938d75a56ca0e5c043eea70f3a.png)，且第七项等于18，则该数列的第十项为：
+已知正整数数列{a_n}满足![](assets-fenbi-83/7fdbec9529892c40a378a141bb5c2f4ef9cf85938d75a56ca0e5c043eea70f3a.png)，且第七项等于18，则该数列的第十项为：
 
 A. 47
 
@@ -458,7 +458,7 @@ D
 
 解析1：
 
-因为![](assets-fenbi-83/58d4d39643bd1aeadb6883fba5fc395489e6eb9afb2a7a68933f091cecca2ae0.png)，所以圆的半径为√2，如下图所示，设圆内接长方形边为a，b，根据圆的性质有![](assets-fenbi-83/b07f9fd56c4b3e5a10da5de031d6642235b3f004de16eef69892964acaa17411.png)，![](assets-fenbi-83/cb87b8d7761c88d5a1acac07227949be34bf7f53819e402a3ab373ebf2ffaaf4.png)，则长方形面积![](assets-fenbi-83/4aab8921f5ab97e7af42a3de03ae18c65c94bef8010eba9468de760017840b6f.png)。
+因为![](assets-fenbi-83/58d4d39643bd1aeadb6883fba5fc395489e6eb9afb2a7a68933f091cecca2ae0.png)，所以圆的半径为√2，如下图所示，设圆内接长方形边为a，b，根据圆的性质有![](assets-fenbi-83/b07f9fd56c4b3e5a10da5de031d6642235b3f004de16eef69892964acaa17411.png)，![](assets-fenbi-83/cb87b8d7761c88d5a1acac07227949be34bf7f53819e402a3ab373ebf2ffaaf4.png)，则长方形面积ab≤4。
 
 ![](assets-fenbi-83/ef18dd20e981ddb9b5bc12e4a8b0505d49c91dcbcc1835a30d5a50fcaf2f9687.png)
 
@@ -522,7 +522,7 @@ D
 
 **解析**
 
-根据利润率公式：利润率![](assets-fenbi-83/14afc4df11853e18ebf66213be40fcc79021bdee9b0855a5843fe980726cc4c4.png)，可得进价![](assets-fenbi-83/bdecb10e5fdda4d8abe0f05522fffa7302891534172c9a1aa0c774a9eee023d4.png)，那么股票P涨价前为![](assets-fenbi-83/da4562811e5c4454e7597f8bda483e2a916d29541b4869a5984c896223c6dfd3.png)元，股票Q涨价前为![](assets-fenbi-83/458caddd434964c9e7af6b6d4524a07a748825de40dfb4598889a62a0c34d0d3.png)元，因此两种股票在涨价前的差价是21-6=15元。
+根据利润率公式：利润率=利润/进价，可得进价![](assets-fenbi-83/bdecb10e5fdda4d8abe0f05522fffa7302891534172c9a1aa0c774a9eee023d4.png)，那么股票P涨价前为0.36/6%=6元，股票Q涨价前为![](assets-fenbi-83/458caddd434964c9e7af6b6d4524a07a748825de40dfb4598889a62a0c34d0d3.png)元，因此两种股票在涨价前的差价是21-6=15元。
 
 故正确答案为D。
 
@@ -564,7 +564,7 @@ D
 
 ### 第 18 题
 
-A、B两位同学参加同一次竞赛考试，如果A答对的题目占题目总数的![](assets-fenbi-83/633287b3e3f2c892a84dc16542937cc3035d4c85b0ef841d262ce40f0773f826.png)，B答对了25道题，他们两人都答对的题目占题目总数的![](assets-fenbi-83/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)，那么两人都没有答对的题目共有：
+A、B两位同学参加同一次竞赛考试，如果A答对的题目占题目总数的3/4，B答对了25道题，他们两人都答对的题目占题目总数的2/3，那么两人都没有答对的题目共有：
 
 A. 5道
 
@@ -582,7 +582,7 @@ D
 
 **解析**
 
-设题目总数为12x，都没有答对的题目数为y，那么A答对的题目数为![](assets-fenbi-83/ab38a947d60344e3dce835e39023a0d4402a3fdad18364678b7b649c24841fa9.png)，两人都答对的题目数为![](assets-fenbi-83/f729a1d5c25bc786e26d12960bf3bbb02e648edcf2dfe488a529de281026d545.png)，根据两集合容斥原理公式：9x+25-8x=12x-y，整理为y=11x-25，由于![](assets-fenbi-83/746a39e7e6080d42fe51ecfdb1cfc2b40e192f9c5b4d38566efa650ae5301f98.png)，则x>2。当取x=3时，解得y=8。
+设题目总数为12x，都没有答对的题目数为y，那么A答对的题目数为![](assets-fenbi-83/ab38a947d60344e3dce835e39023a0d4402a3fdad18364678b7b649c24841fa9.png)，两人都答对的题目数为![](assets-fenbi-83/f729a1d5c25bc786e26d12960bf3bbb02e648edcf2dfe488a529de281026d545.png)，根据两集合容斥原理公式：9x+25-8x=12x-y，整理为y=11x-25，由于y≥0，则x>2。当取x=3时，解得y=8。
 
 故正确答案为D。
 
@@ -622,7 +622,7 @@ C
 
 ### 第 20 题
 
-从某车站以加速度为![](assets-fenbi-83/0be4371a2d935d54f5146f9e7f2a46ce44dd0b2aa38d6efaabfa30e5a24b5453.png)始发的甲列车出发9分钟后，恰好有一列与甲列车同方向，并以50m/s做匀速运动的乙车通过该车站，则乙车运行多少分钟与甲车距离为最近？
+从某车站以加速度为1/18 m/s^2始发的甲列车出发9分钟后，恰好有一列与甲列车同方向，并以50m/s做匀速运动的乙车通过该车站，则乙车运行多少分钟与甲车距离为最近？
 
 A. 9
 
@@ -646,7 +646,7 @@ D
 
 解析2：
 
-设乙车经过t秒后距离甲车为S，此时甲车行驶距离为![](assets-fenbi-83/c9d1f0fb7e7d11df4fb0b2bb629391b24782f54b3f57f740c1935d046113277f.png)，乙车行驶距离为![](assets-fenbi-83/ef274edb5266ae3edd173cf26a399ad29e15dad806e06a4e9839f5e908aa037b.png)，所以![](assets-fenbi-83/9d00ebcf4d6d53b6b0731b9688069020b5365dceee4bf53253d50f075d6bc064.png)![](assets-fenbi-83/ce89bea5abf4f61db4fe73361907dd8b59cd40c527d244fccca63b306f39f817.png)![](assets-fenbi-83/4b343ca73602a91202a59ecbfbcff3da3faab588c18fc6d8b2b5f4d9cf424d6b.png)，所以![](assets-fenbi-83/ff1c448241ee6bf53e9d9b1c263881361ecf588514998154ed52045975190552.png)时S有最小值，![](assets-fenbi-83/aef838c3842eae8ff0b86ed1a4ea6416daa9db781e17d2232259048b5ac785d7.png)。
+设乙车经过t秒后距离甲车为S，此时甲车行驶距离为![](assets-fenbi-83/c9d1f0fb7e7d11df4fb0b2bb629391b24782f54b3f57f740c1935d046113277f.png)，乙车行驶距离为50×t，所以![](assets-fenbi-83/9d00ebcf4d6d53b6b0731b9688069020b5365dceee4bf53253d50f075d6bc064.png)![](assets-fenbi-83/ce89bea5abf4f61db4fe73361907dd8b59cd40c527d244fccca63b306f39f817.png)![](assets-fenbi-83/4b343ca73602a91202a59ecbfbcff3da3faab588c18fc6d8b2b5f4d9cf424d6b.png)，所以![](assets-fenbi-83/ff1c448241ee6bf53e9d9b1c263881361ecf588514998154ed52045975190552.png)时S有最小值，![](assets-fenbi-83/aef838c3842eae8ff0b86ed1a4ea6416daa9db781e17d2232259048b5ac785d7.png)。
 
 故正确答案为D。
 
@@ -3420,7 +3420,7 @@ A
 
 A项：定位统计表，发现1996年至2000年间中国国际旅游（外汇）收入分别为102、120.74、126.02、140.99、162.24亿美元，收入逐年增加，说法正确，当选；
 
-B项：定位统计表，1999年港澳台同胞入境旅游人数、总计入境旅游人数分别为6436.33、7279.56万人次，因此1999年港澳台同胞占入境旅游人数的![](assets-fenbi-83/c258f41171c9fb56e4d4053242334869e1b091595c13a77a50035ad1969904eb.png)![](assets-fenbi-83/35dd83e93fc6c69f5248ef51347f583e1c71a24f8a423f6f8dbda2cd3f8b76e4.png)，说法错误，排除；
+B项：定位统计表，1999年港澳台同胞入境旅游人数、总计入境旅游人数分别为6436.33、7279.56万人次，因此1999年港澳台同胞占入境旅游人数的![](assets-fenbi-83/c258f41171c9fb56e4d4053242334869e1b091595c13a77a50035ad1969904eb.png)≈88%，说法错误，排除；
 
 C项：定位统计表，发现1997年中国旅游（外汇）收入世界排名第八，并不是排名第七，说法错误，排除；
 
@@ -3514,7 +3514,7 @@ A
 
 **解析**
 
-根据题干“该地2007年乘用车总保有量比2006年增长约”，结合选项为百分数，可判定本题为一般增长率问题。定位统计图可得，2007年乘用车总保有量为175，2006年总保有量为132。根据增长率公式：![](assets-fenbi-83/f9526e448e9d907998b0063a0430b61e1978fd95a89c92c22a229fb3f9145730.png)，可得该地2007年乘用车总保有量比2006年增长约![](assets-fenbi-83/ee6c6ad577f7546d2c77d9eaeca9c9013a494ee4f39bf4ae04dfde3cac49c3ea.png)![](assets-fenbi-83/4e46e3bf078e3c95dffc5e49fbd0b2524ceb7a61e00892ef7bb97d42b88c1643.png)。
+根据题干“该地2007年乘用车总保有量比2006年增长约”，结合选项为百分数，可判定本题为一般增长率问题。定位统计图可得，2007年乘用车总保有量为175，2006年总保有量为132。根据增长率公式：![](assets-fenbi-83/f9526e448e9d907998b0063a0430b61e1978fd95a89c92c22a229fb3f9145730.png)，可得该地2007年乘用车总保有量比2006年增长约![](assets-fenbi-83/ee6c6ad577f7546d2c77d9eaeca9c9013a494ee4f39bf4ae04dfde3cac49c3ea.png)≈32.6%。
 
 故正确答案为A。
 
@@ -3542,7 +3542,7 @@ C
 
 **解析**
 
-根据题干“该地2007年小型车数量占该年乘用车总数的比率与2005年相比”，结合选项为百分点，可判定本题为两期比重问题。定位统计图可得，2007年小型车数量占该年乘用车总数的比率为![](assets-fenbi-83/a1310bacef1c5b7e5ce2879486bc288284819565a68e69afb8ccc8291e04b3a4.png)，2005年小型车数量占该车乘用车总数的比率为![](assets-fenbi-83/13aae5d8483d60ed73acfb1f2e5cebc48fe5d3d88613ef38bc35bd5485c36402.png)，则该地2007年小型车数量占该年乘用车总数的比率与2005年相比增长了![](assets-fenbi-83/77b25926d4c48a8e055a26b41933878623a9e10e7f6c14bdffe6b94119de8c5c.png)![](assets-fenbi-83/1296984c1b8dada7e983082f894456836d51212d5e06766c14a00d440f8848e1.png)![](assets-fenbi-83/d9159370ce3822c6a16193368bd8dc24b2cc9b9f9d94bb9ad84cea4a5547229f.png)，与C项最为接近。
+根据题干“该地2007年小型车数量占该年乘用车总数的比率与2005年相比”，结合选项为百分点，可判定本题为两期比重问题。定位统计图可得，2007年小型车数量占该年乘用车总数的比率为59.3/175，2005年小型车数量占该车乘用车总数的比率为20/95，则该地2007年小型车数量占该年乘用车总数的比率与2005年相比增长了![](assets-fenbi-83/77b25926d4c48a8e055a26b41933878623a9e10e7f6c14bdffe6b94119de8c5c.png)![](assets-fenbi-83/1296984c1b8dada7e983082f894456836d51212d5e06766c14a00d440f8848e1.png)![](assets-fenbi-83/d9159370ce3822c6a16193368bd8dc24b2cc9b9f9d94bb9ad84cea4a5547229f.png)，与C项最为接近。
 
 故正确答案为C。
 

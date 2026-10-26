@@ -15,7 +15,7 @@
 # 2012年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2012 · 行测 · B类** ｜ 155 题 · 图片 236 处 · 答案随题折叠
+> **江苏 · 2012 · 行测 · B类** ｜ 155 题 · 图片 169 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -561,7 +561,7 @@ D
 
 **解析**
 
-题干给出的两个字符组中重复的字符为“![](assets-fenbi-399/4a8dabee4d7638388dfe4766d3f57d134a2b83033561952966f7da66e4c1c94a.png)”、“![](assets-fenbi-399/454673ba2d0d3fa7396a6b10e8a0b704c8b976b784d6e881e967297012b2bd22.png)”、“![](assets-fenbi-399/77203da04e0a8429cfe08355cc171fbf1bfa817dcddfd0411df531b3cefeb0a2.png)”、“![](assets-fenbi-399/09a5c0de41eada7acc3ca37f8fc87c4a58f812e469443f6129c7454a6be0261b.png)”，共4个。
+题干给出的两个字符组中重复的字符为“H”、“![](assets-fenbi-399/454673ba2d0d3fa7396a6b10e8a0b704c8b976b784d6e881e967297012b2bd22.png)”、“![](assets-fenbi-399/77203da04e0a8429cfe08355cc171fbf1bfa817dcddfd0411df531b3cefeb0a2.png)”、“![](assets-fenbi-399/09a5c0de41eada7acc3ca37f8fc87c4a58f812e469443f6129c7454a6be0261b.png)”，共4个。
 
 故正确答案为D。
 
@@ -981,7 +981,7 @@ B
 
 **解析**
 
-题干给出的三个字符组中重复的字符为“![](assets-fenbi-399/31b9a7b4e12db00d27e03f292d03f782b14a4fcaa23ee728362ef141d74061ea.png)”、“![](assets-fenbi-399/bafa68ac7fae6f37563b53093b4c22ee752251ad77216859dfff2f3dc2dde2d5.png)”，共2个。
+题干给出的三个字符组中重复的字符为“●”、“![](assets-fenbi-399/bafa68ac7fae6f37563b53093b4c22ee752251ad77216859dfff2f3dc2dde2d5.png)”，共2个。
 
 故正确答案为B。
 
@@ -1523,7 +1523,7 @@ B
 
 **解析**
 
-数字表中第4行第8列的数字为8，由对应表可知对应的符号为![](assets-fenbi-399/7452d8d3a99659ce53d4f75fb0e852e287b634626a6597b2a7d01a8a2d979985.png)。
+数字表中第4行第8列的数字为8，由对应表可知对应的符号为♀。
 
 故正确答案为B。
 
@@ -1553,7 +1553,7 @@ C
 
 **解析**
 
-数字表中第5列第2行的数字为2，由对应表可知对应的符号为![](assets-fenbi-399/a465858b10ee7b664d885ad107d3ef8f285b76ebf3aea0a1ef1d588ad380b2e4.png)。
+数字表中第5列第2行的数字为2，由对应表可知对应的符号为△。
 
 故正确答案为C。
 
@@ -1583,7 +1583,7 @@ A
 
 **解析**
 
-数字表中出现次数最多的数字为2，在数字表中一共出现9次，由对应表可知2对应的符号是![](assets-fenbi-399/1636afa7b00e82c62d680993ce7a1452df68909cab28a4545e81bec0f1347e2c.png)。
+数字表中出现次数最多的数字为2，在数字表中一共出现9次，由对应表可知2对应的符号是△。
 
 故正确答案为A。
 
@@ -1643,7 +1643,7 @@ B
 
 **解析**
 
-数字表中第4行出现次数最多的数字为8，在第4行中8共出现3次，由对应表可知对应的符号为![](assets-fenbi-399/768db083fe5026f6a1733267a57a9cc7f62121542e3bf3dcf25a284578e6b538.png)。
+数字表中第4行出现次数最多的数字为8，在第4行中8共出现3次，由对应表可知对应的符号为♀。
 
 故正确答案为B。
 
@@ -1671,7 +1671,7 @@ B
 
 **解析**
 
-由对应表可知 ![](assets-fenbi-399/c0302f4a04195993fc4ef8b842a4e219417ff3937381c0263f94a615f2197ad3.png) 对应的数字为5，在数字表中5共出现2次。
+由对应表可知 ◇ 对应的数字为5，在数字表中5共出现2次。
 
 故正确答案为B。
 
@@ -1681,7 +1681,7 @@ B
 
 ### 第 57 题
 
-与符号![](assets-fenbi-399/97e767ec879d42455176f00bfad2d9c7fd4ff4e48fc3c0bf6e2000c30a6c9dce.png)对应的数字没有出现在数字表中的哪一行：
+与符号■对应的数字没有出现在数字表中的哪一行：
 
 A. 第1行
 
@@ -1699,7 +1699,7 @@ D
 
 **解析**
 
-由对应表可知![](assets-fenbi-399/830a46a923a0763f652a97ad2e221a8b919a6f25988dfd477b659fc011750e45.png)对应的数字为3，没有出现在数字表中的第4行。
+由对应表可知■对应的数字为3，没有出现在数字表中的第4行。
 
 故正确答案为D。
 
@@ -1711,7 +1711,7 @@ D
 
 与数字表第5列第2、3、4行的数字对应的符号依次是：
 
-![](assets-fenbi-399/978f95d92ea93189dcdb555e86996ffba777a00919dff3e01e00bb112cd07d86.png)![](assets-fenbi-399/a1113b871253fb59da67936c704a46fc7ed03ef581c1641c27d987a451fa1cc6.png)
+![](assets-fenbi-399/978f95d92ea93189dcdb555e86996ffba777a00919dff3e01e00bb112cd07d86.png)★
 
 A. A
 
@@ -1729,7 +1729,7 @@ A
 
 **解析**
 
-由对应表可知，数字表第5列第2、3、4行的数字对应的符号依次为![](assets-fenbi-399/3f6273914ed6e8db2eddfd52803343716849678f4d1359c16be370fb4c3045df.png)，选项B、C、D均不符合。
+由对应表可知，数字表第5列第2、3、4行的数字对应的符号依次为△⊙♀，选项B、C、D均不符合。
 
 故正确答案为A。
 
@@ -1789,7 +1789,7 @@ C
 
 **解析**
 
-数字表中数字之和最小的一列为第3列，第4行中的数字为4，由对应表可知对应的符号为![](assets-fenbi-399/f8640926db15386d2ced4fceb9bf10bdd69a3a6b887259fdb23ec6c8903b8631.png)。
+数字表中数字之和最小的一列为第3列，第4行中的数字为4，由对应表可知对应的符号为⊙。
 
 故正确答案为C。
 
@@ -2463,7 +2463,7 @@ C
 
 ### 第 80 题
 
-![](assets-fenbi-399/8d156d1f5c4febb19d3a26adf0a208aa35406cf2aade2e6efb0aafda8e83bbb1.png)，1，√2，2，![](assets-fenbi-399/fc5ad1e5e7ba435f6041e36f4efd62ef074026303c5f7b506ea6099a96eb48b4.png)，()
+√2/2，1，√2，2，2√2，()
 
 A. 4
 
@@ -2521,15 +2521,15 @@ D
 
 ### 第 82 题
 
-0，![](assets-fenbi-399/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)，![](assets-fenbi-399/e3cd4637501ea8450d3780814e0faee4b392fcf5dcca4cb8e92cc4affbef618e.png)，（  ），![](assets-fenbi-399/dd0af08e8e6d5c8ad120ff40d799d549424d2e29c7183d0743d7614900e12cab.png)，![](assets-fenbi-399/9fbd2c3cf4fa911247e99dc1099513d09c46f4db127d6d78a6ad4aff57fbdf71.png)
+0，2/3，8/9，（  ），16/15，10/9
 
 A. 1
 
-B. ![](assets-fenbi-399/2e6abce502991f1679dc8332cb4da67bd9f5b2689b4499ef4e3547fccb4d6b38.png)
+B. 13/15
 
-C. ![](assets-fenbi-399/811fc9c0691e450f1436cddfaaa82eca74435c4b44419fec65ea30f44e4b1ffd.png)
+C. 7/9
 
-D. ![](assets-fenbi-399/e006c8601db84bf104a1302a0ba84d52c117a3a5a98651c929df9795925589ad.png)
+D. 17/15
 
 <details><summary>第 82 题 · 答案与解析</summary>
 
@@ -2539,7 +2539,7 @@ A
 
 **解析**
 
-原数列可以化为![](assets-fenbi-399/c664bb85ca74a608735f0ddbdaf7319516423a40d1a4794cb37126d0ea2cbcb2.png)、![](assets-fenbi-399/865f301fd8b3f89720788e8a167bd2086ec37e5183c197553d8462c23675da32.png)、![](assets-fenbi-399/e3cd4637501ea8450d3780814e0faee4b392fcf5dcca4cb8e92cc4affbef618e.png)、![](assets-fenbi-399/ff641739fc0646363bf7d6243391b3d31ae79b4b24543b499f6179b14d229b81.png)、![](assets-fenbi-399/dd0af08e8e6d5c8ad120ff40d799d549424d2e29c7183d0743d7614900e12cab.png)、![](assets-fenbi-399/548d07bf6196f92deb95bb28cbd98a5386c3efc3ae1d0395f680aa3d3dd40153.png)。其中分子项0、4、8、(12)、16、20为公差是4的等差数列，分母项3、6、9、(12)、15、18为公差是3的等差数列，则未知项为![](assets-fenbi-399/3d5e5d6e56044f7e5f15363dad93de4307dab42da3783e46702a29e3a2e7ab7b.png)，化简为1。
+原数列可以化为0/3、4/6、8/9、![](assets-fenbi-399/ff641739fc0646363bf7d6243391b3d31ae79b4b24543b499f6179b14d229b81.png)、16/15、20/18。其中分子项0、4、8、(12)、16、20为公差是4的等差数列，分母项3、6、9、(12)、15、18为公差是3的等差数列，则未知项为12/12，化简为1。
 
 故正确答案为A。
 
@@ -2589,9 +2589,9 @@ A. 7
 
 B. 9
 
-C. ![](assets-fenbi-399/c814ee77f3b52c24e80f3ffdf0197b3b098e0bf9841550faa1e321305eebc3ed.png)
+C. 7 1/2
 
-D. ![](assets-fenbi-399/c4c638164a6a9712d8a10e1696847b2fff234e4f42a4c5d611c0e56f1660d99e.png)
+D. 9 1/2
 
 <details><summary>第 84 题 · 答案与解析</summary>
 
@@ -2881,7 +2881,7 @@ D
 
 ### 第 93 题
 
-甲、乙合作一项工作需15天才能完成。现甲、乙合作10天后，乙再单独做6天，还剩下这项工作的![](assets-fenbi-399/fcf4abcebf9e53827d449e3c177c3b3b74cec1c1ad58450692291a0b014071fe.png)。则甲单独做这项工作需要的天数是：
+甲、乙合作一项工作需15天才能完成。现甲、乙合作10天后，乙再单独做6天，还剩下这项工作的1/10。则甲单独做这项工作需要的天数是：
 
 A. 40
 
@@ -2901,7 +2901,7 @@ C
 
 方法一：设工作总量为30（取10和15的最小公倍数），则甲、乙合作的工作效率为![](assets-fenbi-399/3979390b8db80c6411785772acfe7addb51c188d303c9c3557a862d1e6b3f54c.png)。甲、乙合作10天后，还剩工作量![](assets-fenbi-399/6b15db6bd28629706606406da3eb372fe78e53c4bb0a555ef8523ee61665dd18.png)，则乙单独的工作效率为![](assets-fenbi-399/e837f9b28760c113ba121f0cb8d624b1216e0f09b6ce25c93d20836021d88b6b.png)。甲单独的工作效率为![](assets-fenbi-399/744f6481ca437a876a70f06dec97416e99a704fc7e4cd91cec9480c115a66f36.png)，则甲单独做这项工作需要![](assets-fenbi-399/04007e3842976880ab5392bf99954d70476624d0ce40d0b7d9a1c6dd2e5a3e0d.png)天。
 
-方法二：甲乙合作需要15天，现合作了10天，完成了总工作量的![](assets-fenbi-399/781c2f22ed5df3ceb490d4b3bf331896506ad0d58a579b454d580373393066b1.png)，还剩下1![](assets-fenbi-399/a86ddacd2190834d5105a9419f416be6da1ace61232ce500d5b809e1ae565406.png)的工作量。乙单独做6天，还剩下![](assets-fenbi-399/fcf4abcebf9e53827d449e3c177c3b3b74cec1c1ad58450692291a0b014071fe.png)，则乙单独做了总工作量的![](assets-fenbi-399/7d938c0a564efb2a5956582f0bcadfea3f276edd152b2b1d9041c64fdda3746e.png)，则乙的效率是![](assets-fenbi-399/65c699aeef74cbcf0be8e9b0059d13b2fd401a6e8c3a39c8ccbd7e690fefcd23.png)，甲的效率是![](assets-fenbi-399/67101e46f893c9bf6802ce38088c2fc69bc802667643c7936aee02a573eec20d.png)。所以甲单独做这项工作需要![](assets-fenbi-399/96ac58445126128dea28968f20bc46052a3471bcbd0fe1fe8fe98c430b08aa95.png)天。
+方法二：甲乙合作需要15天，现合作了10天，完成了总工作量的10/15=2/3，还剩下1-2/3=1/3的工作量。乙单独做6天，还剩下1/10，则乙单独做了总工作量的![](assets-fenbi-399/7d938c0a564efb2a5956582f0bcadfea3f276edd152b2b1d9041c64fdda3746e.png)，则乙的效率是![](assets-fenbi-399/65c699aeef74cbcf0be8e9b0059d13b2fd401a6e8c3a39c8ccbd7e690fefcd23.png)，甲的效率是![](assets-fenbi-399/67101e46f893c9bf6802ce38088c2fc69bc802667643c7936aee02a573eec20d.png)。所以甲单独做这项工作需要![](assets-fenbi-399/96ac58445126128dea28968f20bc46052a3471bcbd0fe1fe8fe98c430b08aa95.png)天。
 
 故正确答案为C。
 
@@ -4495,7 +4495,7 @@ C
 
 粮食单位产量：2011年为![](assets-fenbi-399/267dc0b28fac946c28fd93e92e137e0994bb2e3a9fe185fc45fdf2f84855b421.png)，2010年为![](assets-fenbi-399/e0c8fa0c5e2c3ed262a376f38e6a9fbae976f57405c9fd754ade22547a7f5240.png)；前者大于后者，粮食单位产量增加。
 
-棉花单位产量：2011年为![](assets-fenbi-399/250589291d1ec61333c1e50ea2aff2ae304e86892d2aeb5da998ed192d134371.png)，2010年为![](assets-fenbi-399/4bb0e3bd22ab6b7b0d463fe643df0a365f3ed693a555433e8bdf5ec9314d8f46.png)![](assets-fenbi-399/2d1c678b6f0efb1f4fde6377357376d33592b8abd5ca1cb2c0636c3db9341c38.png)；明显前者大于后者，棉花单位产量增加。
+棉花单位产量：2011年为660/504，2010年为![](assets-fenbi-399/4bb0e3bd22ab6b7b0d463fe643df0a365f3ed693a555433e8bdf5ec9314d8f46.png)![](assets-fenbi-399/2d1c678b6f0efb1f4fde6377357376d33592b8abd5ca1cb2c0636c3db9341c38.png)；明显前者大于后者，棉花单位产量增加。
 
 故正确答案为C。
 
@@ -4551,7 +4551,7 @@ B
 
 **解析**
 
-根据题干“2011年全国全年夏粮和秋粮的产量比2010年平均增产”，结合选项都为百分数，且材料给出夏粮和秋粮的现期量以及增长率，可判定本题为混合增长率问题。定位文字材料第二段可得：2011年夏粮产量12627万吨，同比增产2.5%，秋粮产量41218万吨，同比增产5.1%。根据线段法，距离与量成反比，夏粮：秋粮![](assets-fenbi-399/00f34d1f64bf456044be3694010291f432f8e3f9f0d2a05073c2d10fe1f9a388.png)，所以设2011年总产量增长率为r，则(5.1%-r)×3.3=(r-2.5%)，则![](assets-fenbi-399/80733c9172b3fffc711606a0bc3cbee352dbfed9b7b9738470a18e877d891d6b.png)。即2011年全国全年夏粮和秋粮的产量比2010年平均增产4.5%。
+根据题干“2011年全国全年夏粮和秋粮的产量比2010年平均增产”，结合选项都为百分数，且材料给出夏粮和秋粮的现期量以及增长率，可判定本题为混合增长率问题。定位文字材料第二段可得：2011年夏粮产量12627万吨，同比增产2.5%，秋粮产量41218万吨，同比增产5.1%。根据线段法，距离与量成反比，夏粮：秋粮![](assets-fenbi-399/00f34d1f64bf456044be3694010291f432f8e3f9f0d2a05073c2d10fe1f9a388.png)，所以设2011年总产量增长率为r，则(5.1%-r)×3.3=(r-2.5%)，则r≈4.5%。即2011年全国全年夏粮和秋粮的产量比2010年平均增产4.5%。
 
 故正确答案为B。
 
@@ -4753,11 +4753,11 @@ A
 
 各省建筑工程产值与安装工程产值之比分别为：
 
-上海市![](assets-fenbi-399/02fec6aa68b45466ad48da073c89b3d4c1915ac2bca660a89231ba4ded60896d.png)；江苏省![](assets-fenbi-399/a8a9e43e446a654039120d98888565005cda46695ed51adc73267f550418b5be.png)；浙江省![](assets-fenbi-399/7b3a4c9b03f3314100e2d6f005f37e5ab5ffd1819ef7958ce69a267ac5b054c8.png)；安徽省![](assets-fenbi-399/77b2ced1920c6997da24ea8296ff5c72c8880e376a86b928dcbfe370e4b88b5f.png)；福建省![](assets-fenbi-399/8529cddcb771f61937b561c86492ea4d23e9bb3e684f6fe997d8464815ac8b2c.png)；江西省![](assets-fenbi-399/7c9afdaff5fd8a2f6b606bc21a8ead8276a57d7dd1568440c6ce18f07f608c2a.png)；山东省![](assets-fenbi-399/8518b007bbb8403a5c9411c1f22a0b276817f07b70b68a51e659663ca87107fc.png)。
+上海市610.4/104.5；江苏省1621.2/139.4；浙江省2134.1/171.8；安徽省544.9/53.1；福建省534.3/42.7；江西省301.9/19.3；山东省682.7/129.1。
 
-相当于比较![](assets-fenbi-399/f975980bafcb90cc8c3d23e1dc0aed6f2905455a020bc322267e694c98621028.png)、![](assets-fenbi-399/2f565878699f650b56dce4e44988cb31d9a6da3951360c6ee90eb46a99196cef.png)、![](assets-fenbi-399/9a9252d8cad4a90d72a29b8f16eb9e64fccefc0095dd82d9b285333b6368a4bc.png)、![](assets-fenbi-399/e7a26af0bd5a8ae063bf2250250ce2c2f12713f20197e00229f914c6179cd574.png)、![](assets-fenbi-399/59d222c61b0cab739fdd70ef19001fae05c1e8b0957ae7bf17036171ed272b8b.png)、![](assets-fenbi-399/7cbd43ede9cc0c94ae369078ae1abb5232e2385432db18def8be69c5095643f7.png)、![](assets-fenbi-399/ed59735ecc7ad96a4d09643cfa990270767585721a5a4521af8236fb7f6ea825.png)的大小。
+相当于比较6104/1045、16212/1394、21341/1718、5449/531、5343/427、3019/193、6827/1291的大小。
 
-显然![](assets-fenbi-399/f975980bafcb90cc8c3d23e1dc0aed6f2905455a020bc322267e694c98621028.png)、![](assets-fenbi-399/ed59735ecc7ad96a4d09643cfa990270767585721a5a4521af8236fb7f6ea825.png)的比值小于10，小于其它分数。![](assets-fenbi-399/2f565878699f650b56dce4e44988cb31d9a6da3951360c6ee90eb46a99196cef.png)、![](assets-fenbi-399/9a9252d8cad4a90d72a29b8f16eb9e64fccefc0095dd82d9b285333b6368a4bc.png)、![](assets-fenbi-399/e7a26af0bd5a8ae063bf2250250ce2c2f12713f20197e00229f914c6179cd574.png)、![](assets-fenbi-399/59d222c61b0cab739fdd70ef19001fae05c1e8b0957ae7bf17036171ed272b8b.png)、![](assets-fenbi-399/7cbd43ede9cc0c94ae369078ae1abb5232e2385432db18def8be69c5095643f7.png)量级相当，直除得前两位依次为11、12、10、12、15，则浙江省、福建省、江西省的比值较大。
+显然6104/1045、6827/1291的比值小于10，小于其它分数。16212/1394、21341/1718、5449/531、5343/427、3019/193量级相当，直除得前两位依次为11、12、10、12、15，则浙江省、福建省、江西省的比值较大。
 
 故正确答案为A。
 
@@ -4795,7 +4795,7 @@ B
 
 （2）正确，江苏省建筑业产值比上海高出![](assets-fenbi-399/658f598ab596a6d0d9095a72e673fc9ae4e1d3d9c550fefb365df9ee01abc6ca.png)；
 
-（3）正确，华东六省一市建筑工程产值占其建筑业产值的比重分别为![](assets-fenbi-399/44ab8efc0a85a7f3d3e66d3f270e8dc2895c5c07140a9844202e723540eb5332.png)、![](assets-fenbi-399/65489d21f7e6e5f463f393cbbac7a777686faaa4ef035d445380d4610a2b0fb7.png)、![](assets-fenbi-399/376aa0d08b9c893b7d56893c3aa7802e3b6697d0ca1dbfd96c0e7cbbf2dd6544.png)、![](assets-fenbi-399/d19b1ae056da1a4091c8e2644a0643b85950ca211bc7c62d4a5f53b1446c3e82.png)、![](assets-fenbi-399/4efdcc41605d59a4ae9d864aae686233c9df77e3274873266078ca73add6d1f3.png)、![](assets-fenbi-399/609d9330dfb063e9f35f462468c2187c8930c21c5525e3fe57e6c82fc1a5355b.png)、![](assets-fenbi-399/f3e560dd385dca0366de9770ba95ca9146869f8ff6c129f8e52c8b9c0cd70bfe.png)。由估算可知，各分数均大于80%。
+（3）正确，华东六省一市建筑工程产值占其建筑业产值的比重分别为610.4/739.2、1621.2/1773.2、2134.1/2381.2、544.9/625.7、534.3/583.9、301.9/334.2、682.7/838.5。由估算可知，各分数均大于80%。
 
 判断不正确的有1个。
 
@@ -4839,7 +4839,7 @@ C项：重工业：![](assets-fenbi-399/20a78fc44935acd47c2ecccd1f0a0cfc81a17373
 
 D项：乡村居民：![](assets-fenbi-399/47329d7a80de638a7750fc4ea5bf5eb813328dc602d0f72eebc74b6e835d127c.png)。
 
-很明显最大的是![](assets-fenbi-399/d7e4cf533998f14850b1364f621b7cdbc3d0317feeaa86ca32202c27006447f8.png)，即城市居民用电量增速最快。
+很明显最大的是2.22/11.83，即城市居民用电量增速最快。
 
 故正确答案为B。
 
@@ -4849,7 +4849,7 @@ D项：乡村居民：![](assets-fenbi-399/47329d7a80de638a7750fc4ea5bf5eb813328
 
 ### 第 147 题
 
-如果2011年![](assets-fenbi-399/659ddd10af6fd5887918722ac234643189f10536495c979f0679c891a3793edc.png)月苏南、苏中和苏北用电量的月平均增速分别用![](assets-fenbi-399/4b83e6b3715efec006ee8b4b19aaf4f600700b1f7ed2434defbc78f5a17b89d1.png)、![](assets-fenbi-399/598c95c282e30b77819bd9ba41f77bb2b7bc333e794b6f2885765cb8ddf7d03b.png)、![](assets-fenbi-399/9d7ed870924197c63ebc946f99d8b49f99ffb3d650956e0ae3f93ff715563e4d.png)表示，则下列正确的是：
+如果2011年1~5月苏南、苏中和苏北用电量的月平均增速分别用V_S、![](assets-fenbi-399/598c95c282e30b77819bd9ba41f77bb2b7bc333e794b6f2885765cb8ddf7d03b.png)、![](assets-fenbi-399/9d7ed870924197c63ebc946f99d8b49f99ffb3d650956e0ae3f93ff715563e4d.png)表示，则下列正确的是：
 
 A. ![](assets-fenbi-399/9c34e854a543f1358070bc12cc14cb96679a745ae0078a17b272a0393c43357c.png)
 
@@ -4867,7 +4867,7 @@ D
 
 **解析**
 
-比较2011年1![](assets-fenbi-399/d428826ad7d8a7b262263643d8356097049699c8141c818828060864bc1f93e5.png)5月月均增速，只需要比较2011年5月相对于2010年12月用电量的增长率即可，根据表中数据代入如下：
+比较2011年1~5月月均增速，只需要比较2011年5月相对于2010年12月用电量的增长率即可，根据表中数据代入如下：
 
 苏南：![](assets-fenbi-399/907b208f3ce6214924b883dded9b9f81d225c46b8177f7da7cf5ddd665ae80a8.png)；
 

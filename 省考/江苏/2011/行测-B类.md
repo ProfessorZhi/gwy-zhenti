@@ -15,7 +15,7 @@
 # 2011年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2011 · 行测 · B类** ｜ 155 题 · 图片 230 处 · 答案随题折叠
+> **江苏 · 2011 · 行测 · B类** ｜ 155 题 · 图片 184 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -365,7 +365,7 @@ A
 
 **解析**
 
-题干给出的两个字符组中重复的字符为![](assets-fenbi-193/fb0838c4565972f2406fa8190a6bf17de56e528792eb6e996352e247873de749.png)，共1个。
+题干给出的两个字符组中重复的字符为↓，共1个。
 
 故正确答案为A。
 
@@ -393,7 +393,7 @@ B
 
 **解析**
 
-题干给出的两个字符组中重复的字符为![](assets-fenbi-193/44809ea5cc7389acb71c8be81342dcc4c86225dc8babc022692d18bc16263905.png)、![](assets-fenbi-193/c2c42eed3665dc16cb4ecf5719f69871be9e29a93974e6fceb96185b0a28a1a0.png)，共2个。
+题干给出的两个字符组中重复的字符为#、7，共2个。
 
 故正确答案为B。
 
@@ -1477,13 +1477,13 @@ D
 
 数字表第3行中最小的数字对应的符号是：
 
-A. ![](assets-fenbi-193/a8efa73addbe14a78bced43092a30ec908a8ea83d449791a6ebc5accb1419b6a.png)
+A. ◇
 
 B. ![](assets-fenbi-193/d2c24ae12e18774b0a9d6aa48070aa3389fc2b469e3201b0346cd99d2587f705.png)
 
-C. ![](assets-fenbi-193/16439b145447604a93e1dd5d93b4ef1ea8c9676879db62f40a3951c06864fc18.png)
+C. ▲
 
-D. ![](assets-fenbi-193/8bcddc698ce54bb366ae1c1e0ce6811daa3f904fe5199c6449ca7c630e9ba682.png)
+D. ☆
 
 <details><summary>第 51 题 · 答案与解析</summary>
 
@@ -1493,7 +1493,7 @@ B
 
 **解析**
 
-数字表中第3行最小的数字为2，由对应表可知对应的符号为![](assets-fenbi-193/e15ed4b463c215e4b148037d94ad2016fbd481480d175d6e1a449ffd361faf88.png)。
+数字表中第3行最小的数字为2，由对应表可知对应的符号为○。
 
 故正确答案为B。
 
@@ -1533,13 +1533,13 @@ D
 
 数字表第2列中数字对应的符号分别是：
 
-A. ![](assets-fenbi-193/af028a3f4eb226b92627a3781b943956495c463ab2e289236d1a7c5ea8c428f2.png)
+A. ☆△△★
 
-B. ![](assets-fenbi-193/16d55c41e0962e29b3b911c44a4c93c1f51b6a16bb87e92b19c473f9d47aefa2.png)
+B. ○●●★
 
 C. ![](assets-fenbi-193/700a4c670222a6bd158902d3271ba4eeb164784312a938eeebd33e350677ea99.png)
 
-D. ![](assets-fenbi-193/045959194ed317ae0f686c6f0ced3cc663270c3773eda8c71a9db54ec02d001c.png)
+D. ○ ● △ ★
 
 <details><summary>第 53 题 · 答案与解析</summary>
 
@@ -1561,7 +1561,7 @@ C
 
 数字表第3列中重复数字对应的符号是：
 
-A. ![](assets-fenbi-193/2d309f1204dad610e8a67609ace2e5eb9085a0ea72d0b1faa146a44775b6191a.png)
+A. ●
 
 B. ![](assets-fenbi-193/b9e9b59b4ed0f228492a78bc81f3af2f84dafcf2a4ff1a84f122207cb4f424e3.png)
 
@@ -1577,7 +1577,7 @@ B
 
 **解析**
 
-数字表中第3列重复的数字为2，由对应表可知对应的符号为![](assets-fenbi-193/060044b4e26d3f68d17c541aaaab4c14bfce104b50acc19bf7570b4d5acf3c5e.png)。
+数字表中第3列重复的数字为2，由对应表可知对应的符号为○。
 
 故正确答案为B。
 
@@ -1589,13 +1589,13 @@ B
 
 数字表第9列中的两个最小值之和所对应的符号是：
 
-A. ![](assets-fenbi-193/73dc139b01ed760dcadf22a56dfc2a33982b54f8057d15c9e9217c6ccaea280f.png)
+A. ●
 
-B. ![](assets-fenbi-193/4309c3acc14ce0dbeed8baed0cfeb16ca99a81eeb5f76b564ea5750d294c223f.png)
+B. ★
 
 C. ![](assets-fenbi-193/255974511cb8e5ed903f8eff468db5f7a55e732f375dc5b504b5dd324d25d6d9.png)
 
-D. ![](assets-fenbi-193/892ce1187030e33844fd5b9e45db8ba2c74335738e2d09367b6c5e51c2da2174.png)
+D. ■
 
 <details><summary>第 55 题 · 答案与解析</summary>
 
@@ -1605,7 +1605,7 @@ D
 
 **解析**
 
-数字表第9列中的两个最小值为1、5，和为1+5=6，由对应表可知对应的符号为![](assets-fenbi-193/892ce1187030e33844fd5b9e45db8ba2c74335738e2d09367b6c5e51c2da2174.png)。
+数字表第9列中的两个最小值为1、5，和为1+5=6，由对应表可知对应的符号为■。
 
 故正确答案为D。
 
@@ -1617,13 +1617,13 @@ D
 
 数字表第8列数字之和与第1列数字之和的差数所对应的符号是：
 
-A. ![](assets-fenbi-193/12889c7e606c0f385d62d593ee9d2ee8a3a4ea05f6e7bb5e01340e00e1050e35.png)
+A. ◇
 
-B. ![](assets-fenbi-193/68987823dd937a0411d0b502d769d84d121303e138b2a73a47d4fdfc635b09c2.png)
+B. ●
 
-C. ![](assets-fenbi-193/8abf583fa131629eac81b16a6143982a2b81c227df5f7926a9f411fd7c09a53c.png)
+C. ▲
 
-D. ![](assets-fenbi-193/3575657fe828a6ebf4f5d711f4ca824c922adcd88e7d33a5bce01febdce816ad.png)
+D. ★
 
 <details><summary>第 56 题 · 答案与解析</summary>
 
@@ -1633,7 +1633,7 @@ B
 
 **解析**
 
-数字表第8列数字之和为4+2+6+8=20，数字表第1列数字之和为2+8+4+2=16，两数之差为20-16=4，由对应表可知对应的符号为![](assets-fenbi-193/87f455bb19b88cab9fd7f9595f7c4c6fe5698c3ded8ff701b1921c6f9d805a7c.png)。
+数字表第8列数字之和为4+2+6+8=20，数字表第1列数字之和为2+8+4+2=16，两数之差为20-16=4，由对应表可知对应的符号为●。
 
 故正确答案为B。
 
@@ -1643,7 +1643,7 @@ B
 
 ### 第 57 题
 
-数字表中对应![](assets-fenbi-193/659c36024695be4e49db370838115617ff45803302c959154cbbfea63f619d2e.png)符号的数字共有几个：
+数字表中对应☆符号的数字共有几个：
 
 A. 1
 
@@ -1661,7 +1661,7 @@ B
 
 **解析**
 
-由对应表可知![](assets-fenbi-193/659c36024695be4e49db370838115617ff45803302c959154cbbfea63f619d2e.png)对应的数字为5，在数字表中5共出现2次。
+由对应表可知☆对应的数字为5，在数字表中5共出现2次。
 
 故正确答案为B。
 
@@ -1675,9 +1675,9 @@ B
 
 A. ![](assets-fenbi-193/5aebfb3bd5ff02c90c5b1f60f028141f8988ac619c814d1bce6011e271c43c9a.jpg)
 
-B. ![](assets-fenbi-193/6178715040d21115b5ab774b8b56cd6fd88f92aef4d3750b143e78d1016fa082.png)
+B. ★
 
-C. ![](assets-fenbi-193/ebcc427caf9597276a28a1bdcbd570026ba59e7b9e3f0ef4e37f9ffca55b1565.png)
+C. △
 
 D. ![](assets-fenbi-193/d4d07813cbffe3188c9a82bd117e9d5d3c4c44909560ae33bf459cb37785f9e8.png)
 
@@ -1689,7 +1689,7 @@ C
 
 **解析**
 
-数字表中第5列第1行的数字为3，由对应表可知对应的符号为![](assets-fenbi-193/84c27d4a8468bc548e4293f3147753abaede652b9b4bcb4ca955dd20ba681aa9.png)。
+数字表中第5列第1行的数字为3，由对应表可知对应的符号为△。
 
 故正确答案为C。
 
@@ -1699,7 +1699,7 @@ C
 
 ### 第 59 题
 
-数字表中代表![](assets-fenbi-193/1958c5be7f9386c674296c4656124770b8e6882a625f36fa8d2a6661b17cad03.png)的数字出现在哪几行？
+数字表中代表★的数字出现在哪几行？
 
 A. 1、2、3
 
@@ -1717,7 +1717,7 @@ C
 
 **解析**
 
-由对应表可知代表![](assets-fenbi-193/1958c5be7f9386c674296c4656124770b8e6882a625f36fa8d2a6661b17cad03.png)的数字为9，在数字表中9出现在第1行第9列、第3行第6列、第4行第3列和第9列。
+由对应表可知代表★的数字为9，在数字表中9出现在第1行第9列、第3行第6列、第4行第3列和第9列。
 
 故正确答案为C。
 
@@ -1729,13 +1729,13 @@ C
 
 数字表第1列最大数减去第1行最小数所得值对应的符号是：
 
-A. ![](assets-fenbi-193/0754a268ea889e8b15ca29e22867eaf09437792cf63e30a47cda9b29c1984961.png)
+A. ◇
 
 B. ![](assets-fenbi-193/4e1a72dc2832b8f948883814a5cc6d392035ef1a41952e5280fcaf630cc1e765.png)
 
-C. ![](assets-fenbi-193/566b379cf21a8293d43e687880edc958990b63131adb40da9e95d1bd6e35f526.png)
+C. ★
 
-D. ![](assets-fenbi-193/88d674c4d038aad652512c686596d0a60670d053a86dbe3de96a57e8ef412a88.png)
+D. ■
 
 <details><summary>第 60 题 · 答案与解析</summary>
 
@@ -1745,7 +1745,7 @@ D
 
 **解析**
 
-数字表中第1列最大数为8，第1行最小数为2，两数相减8-2=6，由对应表可知对应的符号为![](assets-fenbi-193/88d674c4d038aad652512c686596d0a60670d053a86dbe3de96a57e8ef412a88.png)。
+数字表中第1列最大数为8，第1行最小数为2，两数相减8-2=6，由对应表可知对应的符号为■。
 
 故正确答案为D。
 
@@ -2451,13 +2451,13 @@ A
 
 ### 第 81 题
 
-![](assets-fenbi-193/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)，1/3，![](assets-fenbi-193/6dd1185d84c5684de458375e66c2406e4ab664f54e3debda6e37c0906eea23cb.png)，![](assets-fenbi-193/de96cce578768064399cc58f1e92c1720703feb00a2cba618ee89c8eb9067e7e.png)，![](assets-fenbi-193/8ab27bd2a59763984fa499481ff431d135adfae1144179b15bbeaf4528574384.png)，（    ）
+2/3，1/3，5/12，2/15，53/480，（    ）
 
-A. ![](assets-fenbi-193/94e8a92b750ac1730fdbf413059068d4f490d4e17db60a08c86d0c17078e5984.png)
+A. 3/7
 
-B. ![](assets-fenbi-193/a95ee3d29e3b2e357c47fea1bc8efa17959635ffc54ba0b43cee7614b1088869.png)
+B. 76/2568
 
-C. ![](assets-fenbi-193/14285b6a54fa076e3a3950e180e311ca49a89ca662769651288c85ac55955c12.png)
+C. 652/27380
 
 D. ![](assets-fenbi-193/fc2fa196785e1c31b0fcca23be0782fe798646dc7f7550258f166a6c9b464492.png)
 
@@ -2471,7 +2471,7 @@ D
 
 本题为典型的分数数列。
 
-把原数列改写为：![](assets-fenbi-193/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)、![](assets-fenbi-193/0174f14cfa0e2d37c36981bdde86aba36e7dbeedf889e2b4dbc0f021a0b340e1.png)、![](assets-fenbi-193/6dd1185d84c5684de458375e66c2406e4ab664f54e3debda6e37c0906eea23cb.png)、![](assets-fenbi-193/ca3ce9666db36af09cc2a6777daa48720ede53ab34def8aa0efc51c3f044b1f3.png)、![](assets-fenbi-193/8ab27bd2a59763984fa499481ff431d135adfae1144179b15bbeaf4528574384.png)、（    ），此时数列为递推数列，递推规律为：分子=前项分母-前项分子+1，具体规律为：3-2+1=2，6-2+1=5，12-5+1=8，60-8+1=53，因此下一项分子为：480-53+1=428；
+把原数列改写为：2/3、2/6、5/12、8/60、53/480、（    ），此时数列为递推数列，递推规律为：分子=前项分母-前项分子+1，具体规律为：3-2+1=2，6-2+1=5，12-5+1=8，60-8+1=53，因此下一项分子为：480-53+1=428；
 
 ![](assets-fenbi-193/f951b2c314accc8205a828a30df1615836ff810cc4757ed078bebfc4e6866310.png)，具体规律为：![](assets-fenbi-193/e254756adec945b687f7ea9169f3998e33543a0ef5f17dc7943e41af4a8193c3.png)，![](assets-fenbi-193/5e506c8431ee2709d677622520ec421efae54dc157ececb53c1b9a6e9e036107.png)，![](assets-fenbi-193/1b9d1b748f5c84d9a6337d4cdb07a87db525f83c7051a978e2d26ab0e658afa1.png)，![](assets-fenbi-193/d70bb200afd88700bb31c6f8eab7f22d264b7f053c251616c1ff8556a1599c0b.png)，因此下一项分母为：![](assets-fenbi-193/d625e1099111a660094dd5013a48cd06d825f0c7e07391953b0eb1ea64475f70.png)。因此原数列的下一项为![](assets-fenbi-193/fc2fa196785e1c31b0fcca23be0782fe798646dc7f7550258f166a6c9b464492.png)。
 
@@ -2707,7 +2707,7 @@ D
 
 解析2：
 
-设每名工人一个月的工作量为1，则全部工作量为：![](assets-fenbi-193/b756ae4f707ecd4e8c7fd29200f63aa619b591d297281aa5b441a63379b39022.png)，工作4个月后还剩下工作量：![](assets-fenbi-193/01bec89159290db7270e9a8d3e42a22539fea8657d39f30c5e248132fff99f83.png)，要想提前2个月，则剩下的工作量需月份数：12-4-2=6 ，每个月要完成的工作量为：![](assets-fenbi-193/d4dcdc81677a5cbe41a3e138d4db1235735ecea8eb44065b481643847c4b6c83.png)，即需要240名工人，因此要增加的工人数为：240-180=60。
+设每名工人一个月的工作量为1，则全部工作量为：180×12，工作4个月后还剩下工作量：![](assets-fenbi-193/01bec89159290db7270e9a8d3e42a22539fea8657d39f30c5e248132fff99f83.png)，要想提前2个月，则剩下的工作量需月份数：12-4-2=6 ，每个月要完成的工作量为：![](assets-fenbi-193/d4dcdc81677a5cbe41a3e138d4db1235735ecea8eb44065b481643847c4b6c83.png)，即需要240名工人，因此要增加的工人数为：240-180=60。
 
 故正确答案为D。
 
@@ -4837,7 +4837,7 @@ D
 
 A项正确，2010年江苏货物运输量同比增长速度大于全国的同比增速，故2010年江苏货物运输量占全国比重比上年有所增加。同理可得2010年货物运输周转量、旅客运输量、旅客运输周转量占全国的比重都比上年有所增加；
 
-B项正确，2010年江苏水运货物运输周转量比重为![](assets-fenbi-193/fc77cb0316ca6f42632c985fc9b4c516538ccf935a8dfc0d811f093eaa85aaa1.png)，2010年全国水运货物运输周转量比重为![](assets-fenbi-193/57eb528a647d95bb49939e421347500f4b396ecd8992301a2facb4dd3f6c3b2a.png)，则所求为：![](assets-fenbi-193/0561079bb0846d2ec394765755e601940aa8b5a585fccf6792bd67fc981ba7ba.png)![](assets-fenbi-193/bb3539d86f0cdb0da2039ed15ea9080c132131823409f8b04f288a518a20037c.png)，略大于实际数值；
+B项正确，2010年江苏水运货物运输周转量比重为4095.6/6111.5，2010年全国水运货物运输周转量比重为![](assets-fenbi-193/57eb528a647d95bb49939e421347500f4b396ecd8992301a2facb4dd3f6c3b2a.png)，则所求为：![](assets-fenbi-193/0561079bb0846d2ec394765755e601940aa8b5a585fccf6792bd67fc981ba7ba.png)![](assets-fenbi-193/bb3539d86f0cdb0da2039ed15ea9080c132131823409f8b04f288a518a20037c.png)，略大于实际数值；
 
 C项正确，2010年江苏铁路货物运输量的同比增长速度小于全国的同比增速，故2010年江苏铁路货物运输量占全国比重比上年有所下降。同理可得2010年江苏民航货物运输量占全国比重比上年有所下降；
 

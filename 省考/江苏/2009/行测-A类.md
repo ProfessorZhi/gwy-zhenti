@@ -15,7 +15,7 @@
 # 2009年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2009 · 行测 · A类** ｜ 105 题 · 图片 167 处 · 答案随题折叠
+> **江苏 · 2009 · 行测 · A类** ｜ 105 题 · 图片 115 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -174,7 +174,7 @@ D
 
 **解析**
 
-观察原数列发现，数字均为幂次数。原数列可表示为![](assets-fenbi-109/0809a56da6429ca68e8a5a623c0dd87eac50825bcef28cf4e2961b1495cd4777.png)，![](assets-fenbi-109/c08ab6dfc8519404d257e83a25e715217704901abec2861960ee8b64d9a794f5.png)，![](assets-fenbi-109/0307b2b7342c6102d66e4ff659e0417f35d3e368a65c29ff0d27c3ce0038ea5e.png)，![](assets-fenbi-109/b505f2aa6248f272a8c374868434509da928658cf6719f7e007478f072a7d8d0.png)，![](assets-fenbi-109/de66c6e8361f4d8d493bda0cbb114c4399f409c492a99ed13a3d73c49eed5926.png)，（    ），底数构成11为首项，公差为-2的等差数列，指数为以1为首项的连续自然数，则所求项为![](assets-fenbi-109/d4ea2c6da915ad7fe8484b599722304e463dbda13492f51e197dcfdbe6076348.png)。
+观察原数列发现，数字均为幂次数。原数列可表示为11^1，9^2，7^3，5^4，3^5，（    ），底数构成11为首项，公差为-2的等差数列，指数为以1为首项的连续自然数，则所求项为1^6=1。
 
 故正确答案为D。
 
@@ -210,7 +210,7 @@ B
 
 右侧为：02，04，08，（    ），032，064，构成以2为首项，公比为2的等比数列，所求项为![](assets-fenbi-109/0d0406adffde5d0da88bbacf03f125ed5090e8887bde55a04b50ff258db911bc.png)，即为016，排除A、C两项；
 
-中间为：0，3，7，（    ），23，41，无明显规律特征，代入选项找规律。代入B项，0，3，7，（13），23，41，观察前后两项，有![](assets-fenbi-109/e5e506e3f8b9cf4675123f6af78acfcd0c6802e44c5ff0393628e039a86285a7.png)，![](assets-fenbi-109/0e56ce1a45665a94736064c814db09c2f96b0ccd60efe474344643981b836f9f.png)，（![](assets-fenbi-109/d1342cfa2a0b6b56b219a782a64859631ad8aa3e823f1bf1bb75cf568d5cb798.png)），![](assets-fenbi-109/05d795875736c934490c27d406681d09a17dfe54b733d11bd8213c84150ddac8.png)，![](assets-fenbi-109/9f83f8a632ccb566cabf1162d088d919a37bd95b897a8c46025e760b74295bba.png)，规律为![](assets-fenbi-109/748c4e9cbe64eda25c4e088ae0f0b1b32aa6a277acdf83158ef68e64e36cdb44.png)![](assets-fenbi-109/b16ba6fae58b29c2dc81dec7cf2e0c80712e80c432f474aa1bab2fcbf309f41a.png)，修正项是以3为首项，公差为-2的等差数列。B选项满足规律。
+中间为：0，3，7，（    ），23，41，无明显规律特征，代入选项找规律。代入B项，0，3，7，（13），23，41，观察前后两项，有![](assets-fenbi-109/e5e506e3f8b9cf4675123f6af78acfcd0c6802e44c5ff0393628e039a86285a7.png)，![](assets-fenbi-109/0e56ce1a45665a94736064c814db09c2f96b0ccd60efe474344643981b836f9f.png)，（![](assets-fenbi-109/d1342cfa2a0b6b56b219a782a64859631ad8aa3e823f1bf1bb75cf568d5cb798.png)），![](assets-fenbi-109/05d795875736c934490c27d406681d09a17dfe54b733d11bd8213c84150ddac8.png)，![](assets-fenbi-109/9f83f8a632ccb566cabf1162d088d919a37bd95b897a8c46025e760b74295bba.png)，规律为![](assets-fenbi-109/748c4e9cbe64eda25c4e088ae0f0b1b32aa6a277acdf83158ef68e64e36cdb44.png)=后项，修正项是以3为首项，公差为-2的等差数列。B选项满足规律。
 
 结合三部分的规律，所求项为8013016。
 
@@ -250,7 +250,7 @@ C
 
 ### 第 7 题
 
-10，![](assets-fenbi-109/c8f65051aa60c7ce8464679d8361e02e26280b1cd503372fe3b2acca44f00d23.png)，![](assets-fenbi-109/f3e1d396bf5dcda0b24f6a6052f2386129618a0411253b50f431be4615b1cd4e.png)，25，()
+10，![](assets-fenbi-109/c8f65051aa60c7ce8464679d8361e02e26280b1cd503372fe3b2acca44f00d23.png)，16 2/3，25，()
 
 A. 25
 
@@ -268,7 +268,7 @@ D
 
 **解析**
 
-数列中出现多个分数，优先考虑分数数列。数列有整数和分数，考虑反约分。原数列可变形为![](assets-fenbi-109/7f8d9839718e80ff79adba2863f45de3c931ab096b4c0d3b712d49851494fe2a.png)，![](assets-fenbi-109/c7ee6f0e3340bf0ffd93520b0ceace0450501fe2ed06c47fbbeca6258005925d.png)，![](assets-fenbi-109/868c0e887c56567bb37bd67859a491c40e6ea64b294e46edcfa39b16e8b75d17.png)，![](assets-fenbi-109/93ba4dc95c53c3194d0a2fdddbbccbda98805fc2440286d62c68bd8ca5de5e42.png)，（    ）。分子均为100，分母构成10为首项，公差为-2的等差数列，所求项为![](assets-fenbi-109/336fb201b4e4b309d2e3ed06fec5990f3e570b87d1b1e60a080fba4877d0d3d4.png)。
+数列中出现多个分数，优先考虑分数数列。数列有整数和分数，考虑反约分。原数列可变形为100/10，100/8，100/6，100/4，（    ）。分子均为100，分母构成10为首项，公差为-2的等差数列，所求项为![](assets-fenbi-109/336fb201b4e4b309d2e3ed06fec5990f3e570b87d1b1e60a080fba4877d0d3d4.png)。
 
 故正确答案为D。
 
@@ -278,15 +278,15 @@ D
 
 ### 第 8 题
 
-1/3，![](assets-fenbi-109/0057cfd31a377486e4725fbdffa878984afa544a58664fb422291df86213eb8e.png)，![](assets-fenbi-109/a97eac6620729ec7f0ae426859bf4f25da7a90d3325bab773999f96c42f30c35.png)，![](assets-fenbi-109/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)，![](assets-fenbi-109/bcc29cb3272bfdda6d80a45d77ae2625ad4614a9201dc225a2c2a48958a0974a.png)，()
+1/3，4/7，7/11，2/3，13/19，()
 
-A. ![](assets-fenbi-109/005d465e2518e237078c277d157651d1c126cec1579ad1366e9864fe2633c0f3.png)
+A. 16/21
 
-B. ![](assets-fenbi-109/c220acfd4fcd9cc7daea14f93cf47f603dd9ea09932d6829c7e5da78eacd0c7f.png)
+B. 16/23
 
-C. ![](assets-fenbi-109/0be8d45b98d635441c9914f701877167a924a106776afa5bf82532da0b906ffe.png)
+C. 18/21
 
-D. ![](assets-fenbi-109/aaa6bfedd295045e73c8506418b6911d2f0c91c993ae8af796bab8455cb2ef92.png)
+D. 17/21
 
 <details><summary>第 8 题 · 答案与解析</summary>
 
@@ -296,7 +296,7 @@ B
 
 **解析**
 
-数列中数字均为分数，考虑分数数列。分子分母整体呈增加趋势，只有![](assets-fenbi-109/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)不满足递增趋势，考虑反约分。将原数列变形为1/3，![](assets-fenbi-109/0057cfd31a377486e4725fbdffa878984afa544a58664fb422291df86213eb8e.png)，![](assets-fenbi-109/a97eac6620729ec7f0ae426859bf4f25da7a90d3325bab773999f96c42f30c35.png)，![](assets-fenbi-109/480f03f6f4983e3aa9809c34b05cf8ec620762ab2da01f29400e4f2a2a591ff4.png)，![](assets-fenbi-109/bcc29cb3272bfdda6d80a45d77ae2625ad4614a9201dc225a2c2a48958a0974a.png)，（    ）。分子、分母分别为公差为3和4的等差数列，故所求项为![](assets-fenbi-109/c5918aaed06de096ada23e5b3b5d67069062c383578c192a419d7f0975c8181b.png)。
+数列中数字均为分数，考虑分数数列。分子分母整体呈增加趋势，只有2/3不满足递增趋势，考虑反约分。将原数列变形为1/3，4/7，7/11，10/15，13/19，（    ）。分子、分母分别为公差为3和4的等差数列，故所求项为![](assets-fenbi-109/c5918aaed06de096ada23e5b3b5d67069062c383578c192a419d7f0975c8181b.png)。
 
 故正确答案为B。
 
@@ -334,15 +334,15 @@ A
 
 ### 第 10 题
 
-2，![](assets-fenbi-109/ec5c3e57e9bf6236cdd87135ac3b7cb1d6cec6318f2fc21485bd14120a4298d9.png)，![](assets-fenbi-109/18519b619afd1c6ebb5d37f413887de966feabadf94e2eafe18733ddaf8a725b.png)，![](assets-fenbi-109/d2d9d801416765ebb8b4c0a33dedb360efa32aadff3e5e274bdd95f9df93b155.png)，![](assets-fenbi-109/e83ddd8f09de8b0c9482fc9fc4557a3fbe90e43933aba9cbf44071f6333acffd.png)，()
+2，11/3，28/5，53/7，86/9，()
 
 A. 12
 
 B. 13
 
-C. ![](assets-fenbi-109/3b6c30bdf8c57e31304ffa894d485c562094c32eed3762c737dd8f22722f5265.png)
+C. 123/11
 
-D. ![](assets-fenbi-109/5007ce5297909aed4883232cc146769fbd6164eae860b255b2d903962d0b33aa.png)
+D. 127/11
 
 <details><summary>第 10 题 · 答案与解析</summary>
 
@@ -352,7 +352,7 @@ D
 
 **解析**
 
-数列大部分是分数，考虑分数数列。数列中有分数有整数，考虑反约分。原数列可变形为![](assets-fenbi-109/67213e293f5037d274eddfdbf059801e76d996b45ee3c675c06add88f579c058.png)，![](assets-fenbi-109/ec5c3e57e9bf6236cdd87135ac3b7cb1d6cec6318f2fc21485bd14120a4298d9.png)，![](assets-fenbi-109/18519b619afd1c6ebb5d37f413887de966feabadf94e2eafe18733ddaf8a725b.png)，![](assets-fenbi-109/d2d9d801416765ebb8b4c0a33dedb360efa32aadff3e5e274bdd95f9df93b155.png)，![](assets-fenbi-109/e83ddd8f09de8b0c9482fc9fc4557a3fbe90e43933aba9cbf44071f6333acffd.png)，（    ）。分子部分作差可得：9，17，25，33，（    ），构成公差为8的等差数列，下一项是33+8=41，则所求项分子为86+41=127；分母构成公差为2的等差数列，下一项为9+2=11。故所求项为![](assets-fenbi-109/5007ce5297909aed4883232cc146769fbd6164eae860b255b2d903962d0b33aa.png)。
+数列大部分是分数，考虑分数数列。数列中有分数有整数，考虑反约分。原数列可变形为2/1，11/3，28/5，53/7，86/9，（    ）。分子部分作差可得：9，17，25，33，（    ），构成公差为8的等差数列，下一项是33+8=41，则所求项分子为86+41=127；分母构成公差为2的等差数列，下一项为9+2=11。故所求项为127/11。
 
 故正确答案为D。
 
@@ -364,13 +364,13 @@ D
 
 ![](assets-fenbi-109/a30fa99a8c5f5d47c84fee62c93cdd63b92496446844534824a37f9e3a107f3b.png)
 
-A. ![](assets-fenbi-109/22eb3c023717ee5e972db4f5542136a81c91070c79cd1fe68162aaa8b70090b3.png)
+A. 14/15
 
-B. ![](assets-fenbi-109/a16e421eca9bf26c21ce6fafe08e4a92f5ce1fb5ca8b1d22150495cc4f74eda0.png)
+B. 15/14
 
 C. 1
 
-D. ![](assets-fenbi-109/7cb4dec95487949c16f368dd8c1fa9e0f5ac937b9448089d97354a489f6fdbd0.png)
+D. 35/14
 
 <details><summary>第 11 题 · 答案与解析</summary>
 
@@ -398,7 +398,7 @@ B. 9
 
 C. √3
 
-D. 3，![](assets-fenbi-109/b175b05ad9bbe8982ff2d284949719258c49a80fde5dfe7a154bc2b7462081f7.png)
+D. 3，3√3
 
 <details><summary>第 12 题 · 答案与解析</summary>
 
@@ -408,7 +408,7 @@ D
 
 **解析**
 
-方法一：根据定义运算规则可知，a\*b所得结果为![](assets-fenbi-109/0f6d814bc82985403106c91ed22a44e895819f705b5ae746556a9216b6f84874.png)或![](assets-fenbi-109/3e7421c97b48d9bc8e1232549396334ccad585d478f449877d2177234fc1e828.png)，即在3\*x=27中，![](assets-fenbi-109/4f1f5d340786b39b97aef1a051baaf2f3605d1f8798e079926a0c3126831c396.png)或![](assets-fenbi-109/a2d2eda39190d0efb9708486c404b4cd4d55d636375db25a75d32733f12a13b2.png)，可解得x=3或![](assets-fenbi-109/b175b05ad9bbe8982ff2d284949719258c49a80fde5dfe7a154bc2b7462081f7.png)。
+方法一：根据定义运算规则可知，a\*b所得结果为b^2或b^3，即在3\*x=27中，27=x^2或![](assets-fenbi-109/a2d2eda39190d0efb9708486c404b4cd4d55d636375db25a75d32733f12a13b2.png)，可解得x=3或3√3。
 
 方法二：选项信息充分，可依次代入选项验证。
 
@@ -416,9 +416,9 @@ D
 
 代入B项，x=9，3&lt;9，![](assets-fenbi-109/4b202c1b10780b4d2791fa6b4e90e91e7c9b7988043c702f868fe15ab4c193ab.png)，排除；
 
-代入C项，![](assets-fenbi-109/2a908d1caa4312ccec4f5f7720dd9c66ebac1acaa20195a5c815dc347dddb3ba.png)，![](assets-fenbi-109/ce575e278211db7029e39a10a3444e641984697604eb089afeb49c0f3c1359ec.png)，![](assets-fenbi-109/8343cc383da0fb292af7f728208fabff2d575e3f769119e4b085cb1e8a755f88.png)，排除；
+代入C项，x=√3，![](assets-fenbi-109/ce575e278211db7029e39a10a3444e641984697604eb089afeb49c0f3c1359ec.png)，![](assets-fenbi-109/8343cc383da0fb292af7f728208fabff2d575e3f769119e4b085cb1e8a755f88.png)，排除；
 
-代入D项，x=3，3=3，![](assets-fenbi-109/d19910b8efedfca671da4a96aaf4c19be8776f27a38ef33ac41ef6c30b948f23.png)，![](assets-fenbi-109/7e2439ebd2d668d2dd6351c02261e9bbe6185004b982f92554d88113a411761a.png)，![](assets-fenbi-109/c1c816d24cca8ee7561bdefd9393d40be0a75d3e8dfc23edfe375498975aaaef.png)，![](assets-fenbi-109/2c644413cca0097b5a1bae454145452aa18f8470417175f7a0763c7a6cff2bdc.png)，均符合题意。
+代入D项，x=3，3=3，![](assets-fenbi-109/d19910b8efedfca671da4a96aaf4c19be8776f27a38ef33ac41ef6c30b948f23.png)，x=3√3，![](assets-fenbi-109/c1c816d24cca8ee7561bdefd9393d40be0a75d3e8dfc23edfe375498975aaaef.png)，![](assets-fenbi-109/2c644413cca0097b5a1bae454145452aa18f8470417175f7a0763c7a6cff2bdc.png)，均符合题意。
 
 故正确答案为D。
 
@@ -446,7 +446,7 @@ A
 
 **解析**
 
-由![](assets-fenbi-109/d530296267422597af8cd5eae0a203c9007e3f6e25a490146130a0bdff789703.png)，则![](assets-fenbi-109/f4f04c2e88efbba025dc759a183becc88510a21286aa8453808f85cd3776b559.png)，![](assets-fenbi-109/67530827de8ac2c950d1cfe8b45eb899e11b04a44982352e5942d8ff766a2d84.png)，![](assets-fenbi-109/ef61a9cda4b964fdc2d6d1626d056b870085fa9e60a9594df54f8ccc8b438c4c.png)，![](assets-fenbi-109/8054e2548ebba90487c8569e497b9e0c140337e9c3ac21a70c545eab6b2b90d3.png)![](assets-fenbi-109/319dfac519b510be24da2571f10e91e8e7a3991684232235812abc7ceec04485.png)，由![](assets-fenbi-109/49b6a4dc0ff45e7a74debf45079b1101be51d03f668a082c6b072085f1ce24a8.png)，故![](assets-fenbi-109/fec331c5dbc8afe42fed54b3fc0bf68bb38b1b90d557852b6e0be0b89ee3d4f2.png)。
+由![](assets-fenbi-109/d530296267422597af8cd5eae0a203c9007e3f6e25a490146130a0bdff789703.png)，则![](assets-fenbi-109/f4f04c2e88efbba025dc759a183becc88510a21286aa8453808f85cd3776b559.png)，![](assets-fenbi-109/67530827de8ac2c950d1cfe8b45eb899e11b04a44982352e5942d8ff766a2d84.png)，a^3=1，![](assets-fenbi-109/8054e2548ebba90487c8569e497b9e0c140337e9c3ac21a70c545eab6b2b90d3.png)![](assets-fenbi-109/319dfac519b510be24da2571f10e91e8e7a3991684232235812abc7ceec04485.png)，由![](assets-fenbi-109/49b6a4dc0ff45e7a74debf45079b1101be51d03f668a082c6b072085f1ce24a8.png)，故![](assets-fenbi-109/fec331c5dbc8afe42fed54b3fc0bf68bb38b1b90d557852b6e0be0b89ee3d4f2.png)。
 
 故正确答案为A。
 
@@ -506,7 +506,7 @@ D
 
 **解析**
 
-如下图所示，原正方体表面积为36平方米，则每个面的面积为![](assets-fenbi-109/9c498f1dba8c490c400729f6c1f1a8a5520faa27eef3be0f7d1d06bdb7dca827.png)平方米；等分后形成的两个长方体比之前多了两个6平方米的截面，且底面积变为![](assets-fenbi-109/920068f52159a671cae7686e5f4e29d496a60eab63645ded111148b02e0ca798.png)平方米，总面积增加了![](assets-fenbi-109/fa94674fe9fdb810f95a72929b32c5a8e32d44c49fdfd5fc830813fabefcb19c.png)平方米；叠加形成长方体之后，减少了两个面积为3平方米的底面，则此时总面积为![](assets-fenbi-109/4a37bfa77598aaf23e69c9b09db8b46474143e41b763acb45d4ce6b5bc82db1f.png)平方米。
+如下图所示，原正方体表面积为36平方米，则每个面的面积为36/6=6平方米；等分后形成的两个长方体比之前多了两个6平方米的截面，且底面积变为6/2=3平方米，总面积增加了![](assets-fenbi-109/fa94674fe9fdb810f95a72929b32c5a8e32d44c49fdfd5fc830813fabefcb19c.png)平方米；叠加形成长方体之后，减少了两个面积为3平方米的底面，则此时总面积为![](assets-fenbi-109/4a37bfa77598aaf23e69c9b09db8b46474143e41b763acb45d4ce6b5bc82db1f.png)平方米。
 
 ![](assets-fenbi-109/d9ec80252c0685aeec82476c826902b640e0f8ec6556aeb6fbaf2d15f51a1c7d.png)
 
@@ -3400,7 +3400,7 @@ A
 
 **解析**
 
-根据题干“······年平均增长速度······”，可判定本题为年均增长率问题。定位表格材料可得：2000年和2006年，我国上市公司数目为1088家和1434家，上市股票数目为1174只和1520只，A股上市股票数目为1060只和1411只，B股上市股票数目为114只和109只。根据年均增长率公式![](assets-fenbi-109/0e676250237213af40e7ff6fe37f19f6ab876e24db63cb0775a5f43138ad4f69.png)，年份差n相同时，比较年均增长率r的大小，只需比较![](assets-fenbi-109/32b3bfe39300c585205560ab33137229377dff87b8dad45ed162258f7de4a981.png)的大小。我国上市公司数目：![](assets-fenbi-109/ef372550d40cf826c16ac698f3f7f8f884f2601e214ed71eb8a9d6bc76df349f.png)，上市股票数目：![](assets-fenbi-109/615343254839b7e0dd77327667455da6d869b4ad18f63275820c85dc070264a8.png)，A股上市股票数目：![](assets-fenbi-109/b1c58075980388e706deffa16bfc81f659b6963377cae0f837be7852a3a7a93f.png)，B股上市股票数目：![](assets-fenbi-109/6a47a261b7f75ceb41b74e7843909e86574559b15e5b624f9c1a1f3add02fc1b.png)，因此V1＞V2，V3＞V4。
+根据题干“······年平均增长速度······”，可判定本题为年均增长率问题。定位表格材料可得：2000年和2006年，我国上市公司数目为1088家和1434家，上市股票数目为1174只和1520只，A股上市股票数目为1060只和1411只，B股上市股票数目为114只和109只。根据年均增长率公式![](assets-fenbi-109/0e676250237213af40e7ff6fe37f19f6ab876e24db63cb0775a5f43138ad4f69.png)，年份差n相同时，比较年均增长率r的大小，只需比较现期/基期的大小。我国上市公司数目：![](assets-fenbi-109/ef372550d40cf826c16ac698f3f7f8f884f2601e214ed71eb8a9d6bc76df349f.png)，上市股票数目：![](assets-fenbi-109/615343254839b7e0dd77327667455da6d869b4ad18f63275820c85dc070264a8.png)，A股上市股票数目：![](assets-fenbi-109/b1c58075980388e706deffa16bfc81f659b6963377cae0f837be7852a3a7a93f.png)，B股上市股票数目：![](assets-fenbi-109/6a47a261b7f75ceb41b74e7843909e86574559b15e5b624f9c1a1f3add02fc1b.png)，因此V1＞V2，V3＞V4。
 
 故正确答案为A。
 
@@ -3460,7 +3460,7 @@ B
 
 **解析**
 
-根据题干“2006年······比······高”，结合选项为百分数，可判定本题为一般增长率问题。定位表格材料可得：2006年空气中可吸入颗粒物含量南京为0.109毫克/立方米，上海为0.086毫克/立方米。因此2006年南京空气中可吸入颗粒物含量比上海高![](assets-fenbi-109/b1c38e297677dc499973e62c11ce1eed58e79f21e738d9e7d911bc9fe30ea5dd.png)![](assets-fenbi-109/7cf6255b1d4ab1e7f1a36cc9f31a407d4f1a387fe72b2d126f7839344dfdde4f.png)。
+根据题干“2006年······比······高”，结合选项为百分数，可判定本题为一般增长率问题。定位表格材料可得：2006年空气中可吸入颗粒物含量南京为0.109毫克/立方米，上海为0.086毫克/立方米。因此2006年南京空气中可吸入颗粒物含量比上海高![](assets-fenbi-109/b1c38e297677dc499973e62c11ce1eed58e79f21e738d9e7d911bc9fe30ea5dd.png)≈26.7%。
 
 故正确答案为B。
 

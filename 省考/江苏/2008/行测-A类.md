@@ -15,7 +15,7 @@
 # 2008年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2008 · 行测 · A类** ｜ 105 题 · 图片 141 处 · 答案随题折叠
+> **江苏 · 2008 · 行测 · A类** ｜ 105 题 · 图片 119 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -108,7 +108,7 @@ B
 
 **解析**
 
-从第三项开始，前两项的乘积等于下一项。![](assets-fenbi-79/b607c52931054e1c145e3f1cbe2db3a9fec9586129c873540909886e9545d76a.png)，![](assets-fenbi-79/343de3b7429e5054626954f905247deaaaffb4f70804500ed0ed1421f10fb2ba.png)，![](assets-fenbi-79/5eeba98e1a66ff1863a14544c8430cfe4d25dd1ff06e571ea5ea733c3744d9e6.png)![](assets-fenbi-79/f83392a97e2c3a5bfec59a86764412efd9e7604ab90526795a2da62223d9d6d5.png)。因此未知项为1372。
+从第三项开始，前两项的乘积等于下一项。2×7=14，![](assets-fenbi-79/343de3b7429e5054626954f905247deaaaffb4f70804500ed0ed1421f10fb2ba.png)，![](assets-fenbi-79/5eeba98e1a66ff1863a14544c8430cfe4d25dd1ff06e571ea5ea733c3744d9e6.png)![](assets-fenbi-79/f83392a97e2c3a5bfec59a86764412efd9e7604ab90526795a2da62223d9d6d5.png)。因此未知项为1372。
 
 故正确答案为B。
 
@@ -390,7 +390,7 @@ A
 
 **解析**
 
-前n项和![](assets-fenbi-79/4cb2149e47011a5c19cdc9184a8c6650e4f8674f87508889306150d0d868fc0f.png)![](assets-fenbi-79/2db86cd069691d2efc53eacb0ff13192663582f2c8d55fdf9dd6a82b05669f79.png)![](assets-fenbi-79/f2576c911c5b78bc7b568b052d4771bca20f75fb55d3f91dd92188f59cd1c7a7.png)![](assets-fenbi-79/da5da4b8afbefa7a9547eb71c32e908346a05a4d25327efbe00f758617f5ebe4.png)![](assets-fenbi-79/0649726484fda85082edb34abf69362d76ce2c7f505d6f3374bbd7d3d680a0da.png)![](assets-fenbi-79/aed3e62d25cafa1301f403beb4bf09e42d1644589992027a3df1e0b4812788b8.png)，其极限为1/4。
+前n项和=1/2×![](assets-fenbi-79/2db86cd069691d2efc53eacb0ff13192663582f2c8d55fdf9dd6a82b05669f79.png)![](assets-fenbi-79/f2576c911c5b78bc7b568b052d4771bca20f75fb55d3f91dd92188f59cd1c7a7.png)![](assets-fenbi-79/da5da4b8afbefa7a9547eb71c32e908346a05a4d25327efbe00f758617f5ebe4.png)![](assets-fenbi-79/0649726484fda85082edb34abf69362d76ce2c7f505d6f3374bbd7d3d680a0da.png)![](assets-fenbi-79/aed3e62d25cafa1301f403beb4bf09e42d1644589992027a3df1e0b4812788b8.png)，其极限为1/4。
 
 故正确答案为A。
 
@@ -428,7 +428,7 @@ B
 
 ### 第 13 题
 
-已知公差为2的正整数等差数列为![](assets-fenbi-79/92be6451b38138ec2aedc93f897931ba8b8d720ccd3d33cfc2b17563ede5c2ae.png)，则该数列满足不等式![](assets-fenbi-79/ac106577854f6315806c651575cc792232eeeaa500640fd644f98f46b630d742.png)的所有项的和为：
+已知公差为2的正整数等差数列为a_n，则该数列满足不等式![](assets-fenbi-79/ac106577854f6315806c651575cc792232eeeaa500640fd644f98f46b630d742.png)的所有项的和为：
 
 A. 12320
 
@@ -446,9 +446,9 @@ A
 
 **解析**
 
-公差为2的正整数数列![](assets-fenbi-79/92be6451b38138ec2aedc93f897931ba8b8d720ccd3d33cfc2b17563ede5c2ae.png)，满足条件的![](assets-fenbi-79/92be6451b38138ec2aedc93f897931ba8b8d720ccd3d33cfc2b17563ede5c2ae.png)最小为3，最大为221，共有项数为![](assets-fenbi-79/e3d72f84044b269be4360f95c91caadeb86493743ac67cd3c0ef9459b269dc2c.png)，根据等差数列求和公式得：和为![](assets-fenbi-79/fd1f6f20cacba5403047515fe31bed266b80ee8f1628be415c6ddb333c9e6f1d.png)。
+公差为2的正整数数列a_n，满足条件的a_n最小为3，最大为221，共有项数为![](assets-fenbi-79/e3d72f84044b269be4360f95c91caadeb86493743ac67cd3c0ef9459b269dc2c.png)，根据等差数列求和公式得：和为![](assets-fenbi-79/fd1f6f20cacba5403047515fe31bed266b80ee8f1628be415c6ddb333c9e6f1d.png)。
 
-公式：等差数列a_1，a_2，![](assets-fenbi-79/a7e80ae689c19e0114170254445dc81a7344c1d8e348931809a992002fdbbd41.png)，![](assets-fenbi-79/1ff05fd7776917a40180cdb628cbc719b3ba994e2a6b034b7f321440d551af2c.png)，![](assets-fenbi-79/92be6451b38138ec2aedc93f897931ba8b8d720ccd3d33cfc2b17563ede5c2ae.png)，共n项，则和为![](assets-fenbi-79/d7c12e404a16c8beb79bbb0f015d3ac62f05d091ce397d3a2bc433e4227b6642.png)。
+公式：等差数列a_1，a_2，![](assets-fenbi-79/a7e80ae689c19e0114170254445dc81a7344c1d8e348931809a992002fdbbd41.png)，…，a_n，共n项，则和为![](assets-fenbi-79/d7c12e404a16c8beb79bbb0f015d3ac62f05d091ce397d3a2bc433e4227b6642.png)。
 
 故正确答案为A。
 
@@ -548,7 +548,7 @@ B
 
 故正确答案为B。
 
-比例放缩性质：若一个几何图形尺度变为原来的N倍，则长度变为原来的N倍，面积变为原来的![](assets-fenbi-79/870d36cb11886a6a6c80658f0412763854ced0b6449e1c2f8374c2ec1ebe3fd4.png)倍，体积变为原来的![](assets-fenbi-79/ea7c1974b7fb7e4133f10652fea94bb91bd0c5b52f2b36470657936124531a4c.png)倍。
+比例放缩性质：若一个几何图形尺度变为原来的N倍，则长度变为原来的N倍，面积变为原来的N^2倍，体积变为原来的N^3倍。
 
 **考点**：几何结论类-相似图形
 
@@ -606,7 +606,7 @@ B
 
 **解析**
 
-公式：![](assets-fenbi-79/d46fa3d8582026c77cbcaf77271611f424b07f9ffd32eeec9eff45cebe7349c4.png)，其中![](assets-fenbi-79/8d5d9f7311e5aabf6750d9fb0a560f71b9412a6f917a4c2ee1953cfafa32587d.png)、![](assets-fenbi-79/05cb82c1948675a482e8fe08c0a515e869036aed45f5146b34c090db591c7e8b.png)分别为漂浮物逆流和顺流所需时间。
+公式：![](assets-fenbi-79/d46fa3d8582026c77cbcaf77271611f424b07f9ffd32eeec9eff45cebe7349c4.png)，其中t_1、t_2分别为漂浮物逆流和顺流所需时间。
 
 直接代入公式，可得：![](assets-fenbi-79/1d8cc9be21fa4998e8c3d0ffa8eb5526d4809dcb1b1c1aed0078d24d369cafc8.png)。
 
@@ -698,7 +698,7 @@ B
 
 **解析**
 
-赋值公路修建总量为180，甲、乙合作6天可完成公路的1/3，则甲、乙合作6天完成了![](assets-fenbi-79/8a8784b4abfb7dc622e8b9a667e1600c3246725b262ae7c774635258a7608bbe.png)，甲、乙效率之和为![](assets-fenbi-79/90a376e53e3c7ea52716dfbbea9697f200892d4f535bb1db5cbc5e457064999b.png)；乙、丙合作两天完成了![](assets-fenbi-79/a87c32e112b6ec7b0b231e50acdfdfda0ae0349eb661df87cec3e1c0894bc125.png)，乙、丙效率之和为![](assets-fenbi-79/53bf9dd101d50e51147e70174837dd3e482f9b254903e88d14779ca124b5acd8.png)；剩余180-60-30=90的工作量三人工作了5天，三人效率之和为![](assets-fenbi-79/d62fe078ae0f65b45d78f7eb5e6bb82e8cc84947094cc1b1a2d258aa3086de8a.png)。则丙的效率为18-10=8，乙的效率为15-8=7，乙工作总量为![](assets-fenbi-79/42963ffd23dcf3894a044257bc494982c27b4cf23e590e8755746bde5e04ba55.png)，可得报酬![](assets-fenbi-79/82b451c4ed1745bb6a786652e5b78e21e08e80d093d3314122eded313fbd90db.png)元。
+赋值公路修建总量为180，甲、乙合作6天可完成公路的1/3，则甲、乙合作6天完成了![](assets-fenbi-79/8a8784b4abfb7dc622e8b9a667e1600c3246725b262ae7c774635258a7608bbe.png)，甲、乙效率之和为60/6=10；乙、丙合作两天完成了![](assets-fenbi-79/a87c32e112b6ec7b0b231e50acdfdfda0ae0349eb661df87cec3e1c0894bc125.png)，乙、丙效率之和为30/2=15；剩余180-60-30=90的工作量三人工作了5天，三人效率之和为90/5=18。则丙的效率为18-10=8，乙的效率为15-8=7，乙工作总量为![](assets-fenbi-79/42963ffd23dcf3894a044257bc494982c27b4cf23e590e8755746bde5e04ba55.png)，可得报酬![](assets-fenbi-79/82b451c4ed1745bb6a786652e5b78e21e08e80d093d3314122eded313fbd90db.png)元。
 
 故正确答案为B。
 
@@ -794,7 +794,7 @@ B
 
 解析1：
 
-我们知道：原题过程是“![](assets-fenbi-79/c358abe050cd664a44c7ddcfbf8e7ebecd746bde44ff15340436f04e4e9adf85.png)、+1”重复5次，逆过程就是“-1、![](assets-fenbi-79/2619389dbbeb9f35b6e36c54be11b7de667f96fd930c7f57e95585e2a562d453.png)”重复5次：
+我们知道：原题过程是“÷2、+1”重复5次，逆过程就是“-1、×2”重复5次：
 
 ![](assets-fenbi-79/41f1af3b181acb95e2c7ed800d9a25fc8791749771ede77e80d65d5731749030.jpg)
 
@@ -830,7 +830,7 @@ A
 
 **解析**
 
-对给出的函数关于x求导，并令其导数为0，即![](assets-fenbi-79/a82992b4a8be534c4afcdbff21b8379ca6a4a5257c67089c3489a98f71d8df8f.png)，解得x=0或x=2。将这两个x的值代入原函数，可得![](assets-fenbi-79/3828b5bd688c7974311e3fea3639651253be3703931e5e6973122a1644c37a6d.png)或y=5，选择后者可知净利润的最大值为50万元。
+对给出的函数关于x求导，并令其导数为0，即![](assets-fenbi-79/a82992b4a8be534c4afcdbff21b8379ca6a4a5257c67089c3489a98f71d8df8f.png)，解得x=0或x=2。将这两个x的值代入原函数，可得y=11/3或y=5，选择后者可知净利润的最大值为50万元。
 
 故正确答案为A。
 
@@ -2366,7 +2366,7 @@ D
 
 下列不属于天气的一项是：
 
-A. 明天南京多云，最高温度![](assets-fenbi-79/3dfdd13fbffa7669e6644c80b156a3eac9621b327ed96c1cc3cd035d15d2ef3b.png)，最低温度![](assets-fenbi-79/232be636df701d48d878a742ab019f31adbc7aad7f3b3d6f7134a14e44ccdca1.png)
+A. 明天南京多云，最高温度2°C，最低温度![](assets-fenbi-79/232be636df701d48d878a742ab019f31adbc7aad7f3b3d6f7134a14e44ccdca1.png)
 
 B. 外面正在下雪
 
@@ -3648,7 +3648,7 @@ D
 
 **解析**
 
-由表中第三、四列信息得四个选项对应的户均最低生活保障累计支出分别为：![](assets-fenbi-79/a30af9aa7b6e851b7e999f2cd1ac21a230c0747e58f93fb6fa81b885fa64fdad.png)、![](assets-fenbi-79/ded887838874b795fad5ca1966eca1fadab167c62c6bfbdc4b20b6c00166d20d.png)、![](assets-fenbi-79/87c66eff26ea587e137e35cf26732d2d9ef53a124725abe0ca579d40c319afa8.png)、![](assets-fenbi-79/d4069a1e251874afb39a305561f229d781f5010c1428a5e2b8f72b20e86a650e.png)。易知四个分数量级相当，依次直除，可得其首位数字分别是4、4、4、3。因此首位最小的![](assets-fenbi-79/060c99fc18fb6b91f918ce45cdffc22b64301201a6aa300e89c93d83bf85f88e.png)所对应的大兴区即为答案。
+由表中第三、四列信息得四个选项对应的户均最低生活保障累计支出分别为：2800.4/6559、2851.7/7075、2774.6/6069、![](assets-fenbi-79/d4069a1e251874afb39a305561f229d781f5010c1428a5e2b8f72b20e86a650e.png)。易知四个分数量级相当，依次直除，可得其首位数字分别是4、4、4、3。因此首位最小的238.1/747所对应的大兴区即为答案。
 
 故正确答案为D。
 

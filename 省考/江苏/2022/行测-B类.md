@@ -15,7 +15,7 @@
 # 2022年江苏省公务员录用考试《行测》题（B类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2022 · 行测 · B类** ｜ 135 题 · 图片 198 处 · 答案随题折叠
+> **江苏 · 2022 · 行测 · B类** ｜ 135 题 · 图片 194 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2427,7 +2427,7 @@ C
 
 ### 第 65 题
 
-如图所示，为测量珠穆朗玛峰上某点C的海拔高度，测量队选择了两个海拔高度相差100米的珠峰测量点A和B，测得∠ABC为![](assets-fenbi-162375/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，从A观测B、C的仰角分别为30°和45°，从B观测C的仰角也为30°，则C点的海拔高度比A点高：
+如图所示，为测量珠穆朗玛峰上某点C的海拔高度，测量队选择了两个海拔高度相差100米的珠峰测量点A和B，测得∠ABC为90°，从A观测B、C的仰角分别为30°和45°，从B观测C的仰角也为30°，则C点的海拔高度比A点高：
 
 ![](assets-fenbi-162375/f0f2e79aba91b5786c363aa9f40dce0de512e2ffa47b3b7d0f1e96b967c62dd1.png)
 
@@ -2449,7 +2449,7 @@ D
 
 ![](assets-fenbi-162375/95d0dd7d0794ba5abc6a9fca170e09795e222a2690e4d8e3bf49e2a5860f12a5.png)
 
-如图所示，A和B两个海拔高度相差100米（即BE=100米），从A观测B的仰角为30°，因△ABE是30°的直角三角形，则三边关系为![](assets-fenbi-162375/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以AB=100×2=200米。从B观测C的仰角也为30°，根据题意，设CO=X米，则CD=（X-100）米，因![](assets-fenbi-162375/678efeef896e6f7fc7ea1406ea163b7055474c86123489c6aa45a6d6e37a39ad.png)是30°的直角三角形，则三边关系为![](assets-fenbi-162375/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以BC=2（X-100）=（2X-200）米。又因为从A观测C的仰角为45°，△AOC是45°的直角三角形，则三边关系为![](assets-fenbi-162375/d0d706f08badd327dcc57c0ae38dfda000996ecc238fd7223aab07cb9ad2ca57.png)，所以![](assets-fenbi-162375/5611b576bab635dff0ee734b2333b3d20445e6843fa51afe1cb2112a75f2f65e.png)米。在△ABC中，∠ABC为![](assets-fenbi-162375/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，根据勾股定理可知，![](assets-fenbi-162375/67ef7b657709c9a9da069f00a4f851b47d6cc246fea0b97ca2e4af2eeaba4468.png)，即![](assets-fenbi-162375/d010404d3d810c8bd0b4d751de31b9bff9557cbe9af5f415f17e59cd8ed920c4.png)![](assets-fenbi-162375/03f6cb5579ea8128ef968a045181df638ad39e5717476b1a15b9f6000ec8a707.png)，解得X=200，则C点的海拔高度比A点高200米。
+如图所示，A和B两个海拔高度相差100米（即BE=100米），从A观测B的仰角为30°，因△ABE是30°的直角三角形，则三边关系为![](assets-fenbi-162375/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以AB=100×2=200米。从B观测C的仰角也为30°，根据题意，设CO=X米，则CD=（X-100）米，因△BCD是30°的直角三角形，则三边关系为![](assets-fenbi-162375/4d1b157c6f11711ea6084ef1eef1eefa855a8bd9780ba397ff25c33bd12e00a3.png)，所以BC=2（X-100）=（2X-200）米。又因为从A观测C的仰角为45°，△AOC是45°的直角三角形，则三边关系为![](assets-fenbi-162375/d0d706f08badd327dcc57c0ae38dfda000996ecc238fd7223aab07cb9ad2ca57.png)，所以![](assets-fenbi-162375/5611b576bab635dff0ee734b2333b3d20445e6843fa51afe1cb2112a75f2f65e.png)米。在△ABC中，∠ABC为90°，根据勾股定理可知，![](assets-fenbi-162375/67ef7b657709c9a9da069f00a4f851b47d6cc246fea0b97ca2e4af2eeaba4468.png)，即![](assets-fenbi-162375/d010404d3d810c8bd0b4d751de31b9bff9557cbe9af5f415f17e59cd8ed920c4.png)![](assets-fenbi-162375/03f6cb5579ea8128ef968a045181df638ad39e5717476b1a15b9f6000ec8a707.png)，解得X=200，则C点的海拔高度比A点高200米。
 
 故正确答案为D。
 
@@ -5245,7 +5245,7 @@ A
 
 **解析**
 
-根据题干“2020年1-7月······同比增速是”，结合材料给出2021年1-7月我国原油产量的同比增速以及相对于2019年同期的增速，可判定本题为间隔增长率问题。定位文字材料可得：2021年1-7月，我国原油产量同比增长2.4%（r_1），比2019年同期增长3.9%（![](assets-fenbi-162375/da42104178ae3ee0c805986bbeb139e41b18b67e05407107c5941a0f83165c0e.png)）。根据公式：![](assets-fenbi-162375/fb5f8b202683fa5962d51eb2b28ca2b927de57953d6486c50e5a0050e8168000.png)，代入数据可得![](assets-fenbi-162375/a9a3294e693b8ce824540b82fd80cbdb1c58f770dc6d3aaea9ec38f3d8d12983.png)，整理可得![](assets-fenbi-162375/434f9122c6984a57a6bc3d16e6e80458bdd1d35646dc6a8552945441a7cd969a.png)，即2020年1-7月我国原油产量的同比增速不到1.5%，结合选项，只有A项符合。
+根据题干“2020年1-7月······同比增速是”，结合材料给出2021年1-7月我国原油产量的同比增速以及相对于2019年同期的增速，可判定本题为间隔增长率问题。定位文字材料可得：2021年1-7月，我国原油产量同比增长2.4%（r_1），比2019年同期增长3.9%（r_间隔）。根据公式：![](assets-fenbi-162375/fb5f8b202683fa5962d51eb2b28ca2b927de57953d6486c50e5a0050e8168000.png)，代入数据可得![](assets-fenbi-162375/a9a3294e693b8ce824540b82fd80cbdb1c58f770dc6d3aaea9ec38f3d8d12983.png)，整理可得![](assets-fenbi-162375/434f9122c6984a57a6bc3d16e6e80458bdd1d35646dc6a8552945441a7cd969a.png)，即2020年1-7月我国原油产量的同比增速不到1.5%，结合选项，只有A项符合。
 
 故正确答案为A。
 
