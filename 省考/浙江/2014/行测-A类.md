@@ -1661,15 +1661,11 @@ A正确答案
 
 D易错项
 
-<svg _ngcontent-ng-c978091351="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14" class="solution-title-icon"><path _ngcontent-ng-c978091351="" transform="matrix(1 0 0 1 0.5 2)" d="M5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0Z" fill-rule="nonzero" class="solution-title-icon-1"></path><path _ngcontent-ng-c978091351="" transform="matrix(1 0 0 1 7.50005 2)" d="M5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0Z" fill-rule="nonzero" class="solution-title-icon-2"></path></svg>
-
 解析视频
 
 粉笔 行测 会员
 
 21667984人已开通
-
-<svg _ngcontent-ng-c978091351="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14" class="solution-title-icon"><path _ngcontent-ng-c978091351="" transform="matrix(1 0 0 1 0.5 2)" d="M5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0Z" fill-rule="nonzero" class="solution-title-icon-1"></path><path _ngcontent-ng-c978091351="" transform="matrix(1 0 0 1 7.50005 2)" d="M5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0Z" fill-rule="nonzero" class="solution-title-icon-2"></path></svg>
 
 解析
 
@@ -1677,13 +1673,9 @@ D易错项
 
 故正确答案为A。
 
-<svg _ngcontent-ng-c978091351="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14" class="solution-title-icon"><path _ngcontent-ng-c978091351="" transform="matrix(1 0 0 1 0.5 2)" d="M5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0Z" fill-rule="nonzero" class="solution-title-icon-1"></path><path _ngcontent-ng-c978091351="" transform="matrix(1 0 0 1 7.50005 2)" d="M5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0Z" fill-rule="nonzero" class="solution-title-icon-2"></path></svg>
-
 来源
 
 2014年浙江省公务员录用考试《行测》题（B类）第41题
-
-<svg _ngcontent-ng-c978091351="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14" class="solution-title-icon"><path _ngcontent-ng-c978091351="" transform="matrix(1 0 0 1 0.5 2)" d="M5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0Z" fill-rule="nonzero" class="solution-title-icon-1"></path><path _ngcontent-ng-c978091351="" transform="matrix(1 0 0 1 7.50005 2)" d="M5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0Z" fill-rule="nonzero" class="solution-title-icon-2"></path></svg>
 
 笔记
 

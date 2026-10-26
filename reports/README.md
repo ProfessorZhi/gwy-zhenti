@@ -1,6 +1,6 @@
 # 报表索引（reports/）
 
-> 快照：2026-10-23。本索引之外有 **19 份报表 .md**（根目录 18 份 + `fix-b1-8papers-20261022/RECEIPT.md`），另有 25 份 `.json`、19 份 `.jsonl` 机读凭据（含子目录回执）。
+> 快照：2026-10-26。本目录共 **24 份报表 .md**（根目录 23 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
 > 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。本页只做入口和状态索引，**不改写、不移动任何报表**。
 
 **状态口径**
@@ -25,6 +25,7 @@
 | [PAPER-INTEGRITY-20261011.md](PAPER-INTEGRITY-20261011.md) | 10-11 | 四卷按第三方题本恢复题序与漏题（国考2022、江苏2023B、广东2020县级、浙江2020A），补 9 题；广东 69–75、浙江 49–50 仍缺。 | **现行**（专项结论） |
 | [PAPER-MISSING-SOURCE-CHECK-20261011.md](PAPER-MISSING-SOURCE-CHECK-20261011.md) | 10-11 | 上述 9 个缺号的查源记录；明确不拿“暂缺/默认 A”补答案，也不拿乡镇卷顶县级卷。 | **现行** |
 | [ROUND3-XINGCE-SOURCE-CHECK-20261012.md](ROUND3-XINGCE-SOURCE-CHECK-20261012.md) | 10-12 | 第三轮 18 个行测缺号的公开候选核查（浙江 2、江苏2024A 4、江苏2025C 12），并记录当轮申论交付验收。 | **现行**（缺号结论）；全库计数已过期 |
+| [ANSWER-GAP-AUDIT-20261026.md](ANSWER-GAP-AUDIT-20261026.md) | 10-26 | 全库行测 742 卷 / 86,867 题逐题判「有没有答案」：答案行缺失 0、空值 0；仅 64 卷 291 题在粉笔页面本身就是「全力以赴征集」占位，现场复核 7 卷题号逐一吻合。 | **现行** |
 | [fix-b1-8papers-20261022/RECEIPT.md](fix-b1-8papers-20261022/RECEIPT.md) | 10-22 | 八卷（四川2016–18、深圳2025、重庆2016–19）裸 `<` 转义、来源字段与 manifest 修复回执，含逐题指纹核验和深圳2025 q56↔q52 裁定。 | **现行**（已由 #122 合入）；§9 合并状态已过期 |
 
 ## 2. 材料与排版
