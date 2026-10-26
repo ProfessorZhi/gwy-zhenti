@@ -339,6 +339,12 @@ export function parseShenlunCapture({ capture, meta = {}, domHtml = null } = {})
     // 组件与材料逐个配对（completeness.questionCountMatchesComponents），这是页面渲染事实。
     doc.expected.questions = captureQuestions.length;
     doc.evidence.push({ type: 'question-count-from-paper-view-components', questions: captureQuestions.length });
+  } else if (capture.source?.layout === 'per-question-material-components-with-own-tabs'
+    && capture.completeness?.questionCountMatchesComponents === true && captureQuestions.length) {
+    // 每题各带一份 app-materials + 自己的材料页签（天津/河北定向选调生等）。没有题号页签条，
+    // 题数取 div.ti 数、材料取各题自己的组件；采集器已逐个配对（questionCountMatchesComponents）。
+    doc.expected.questions = captureQuestions.length;
+    doc.evidence.push({ type: 'question-count-from-per-question-components', questions: captureQuestions.length });
   } else {
     doc.evidence.push({ type: 'expected-count-unknown' });
   }
