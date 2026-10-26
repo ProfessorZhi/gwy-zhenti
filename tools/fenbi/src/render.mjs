@@ -171,11 +171,23 @@ export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = 
     const explanationLabel = q.explanationOrigin === 'original-repository'
       ? '**解析（原库来源，按题目内容唯一映射保留）**' : '**解析**';
     const explanation = explanationFragment(q.explanationHtml);
+    let answerMarkdown = q.answerHtml?.trim() ? convert(q.answerHtml) : '';
+    let explanationMarkdown = explanation.trim() ? convert(explanation) : '';
+    // 粉笔申论的解析区没有单独「解析」小节，文字说明以「参考答案说明」挂在参考答案块里。
+    // 没有独立解析时把这段拆出来标成解析，否则同一块里会既写着说明又标「来源未提供」。
+    if (!explanationMarkdown.trim() && answerMarkdown) {
+      const noteAt = answerMarkdown.search(/参考答案说明/u);
+      const lineStart = noteAt >= 0 ? answerMarkdown.lastIndexOf('\n', noteAt) + 1 : -1;
+      if (lineStart >= 0) {
+        explanationMarkdown = answerMarkdown.slice(lineStart).trim();
+        answerMarkdown = answerMarkdown.slice(0, lineStart).trimEnd();
+      }
+    }
     lines.push(`<details><summary>第 ${q.number} 题</summary>`, '',
-      q.answerHtml?.trim() ? answerLabel : '**答案状态：unknown（来源未提供）**', '',
-      q.answerHtml?.trim() ? convert(q.answerHtml) : '', '',
-      explanation.trim() ? explanationLabel : '**解析状态：unknown（来源未提供）**', '',
-      explanation.trim() ? convert(explanation) : '', '', '</details>', '');
+      answerMarkdown.trim() ? answerLabel : '**答案状态：unknown（来源未提供）**', '',
+      answerMarkdown.trim() ? answerMarkdown : '', '',
+      explanationMarkdown.trim() ? explanationLabel : '**解析状态：unknown（来源未提供）**', '',
+      explanationMarkdown.trim() ? explanationMarkdown : '', '', '</details>', '');
   }
   return lines.join('\n');
 }
