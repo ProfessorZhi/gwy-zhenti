@@ -14,4 +14,7 @@ test('粉笔卷落到本库同一卷：标题里出现的已有卷名优先', ()
   assert.equal(paperLabel({ title: '2016年黑龙江省公务员录用考试《行测》题（公检法卷）', variant: 'tongkao', existing: ['县乡卷', '统考'] }), '公检法');
   assert.equal(paperLabel({ title: '广东省2019年选调优秀大学毕业生笔试 思维能力测验', variant: 'tongkao', existing: ['乡镇卷', '县级卷'] }), '选调生');
   assert.equal(paperLabel({ title: '2017年福建省选调生考试《行政职业能力测验》', variant: 'tongkao', existing: ['统考'] }), '选调生');
+  // 吉林甲/乙级：目录里还没有对应卷名时也要从标题认出来，否则会误落成「统考」
+  assert.equal(paperLabel({ title: '2014年吉林省公考《申论》题（甲级）', variant: 'tongkao', existing: ['统考'] }), '甲级');
+  assert.equal(paperLabel({ title: '2014年吉林省公考《申论》题（乙级）', variant: 'tongkao', existing: [] }), '乙级');
 });

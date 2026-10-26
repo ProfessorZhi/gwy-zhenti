@@ -385,12 +385,26 @@ try {
 
   let paperView = null;
   let questionCount = Math.min(initial.questionTabs || initial.anchors.length, MAX_QUESTIONS);
+  // 有材料页签条、却没有题目页签条：页面是「单题 + 若干材料页签」。这道题本来就在屏上，
+  // 不需要（也没有）题目页签可点，只要逐个点材料页签即可。若按整卷视图处理，
+  // 只会截到当前激活的那一个材料页签，其余页签全部漏采（广州 2015：声明 8 个材料只存下 1 个）。
+  let paneOnlyQuestion = false;
+  if (questionCount <= 0 && initial.materialTabs > 0) { questionCount = 1; paneOnlyQuestion = true; }
   if (questionCount <= 0) {
     const components = await paperViewComponents();
     const pairs = pairPaperViewComponents(components);
     paperView = { components, pairs };
     receipt.structure.initial.paperView = { materials: components.materials.length, questions: components.questions.length, binding: 'component-index+vertical-alignment' };
     questionCount = Math.min(pairs.length, MAX_QUESTIONS);
+  }
+  if (paneOnlyQuestion) {
+    // 没有题号页签可点，题数只能按页面实际渲染的 app-ti 组件数记；材料数同理。
+    const components = await paperViewComponents();
+    receipt.structure.initial.paneOnlyQuestion = {
+      questionComponents: components.questions.length,
+      materialComponents: components.materials.length,
+      materialTabs: initial.materialTabs,
+    };
   }
   if (questionCount <= 0) throw fail('QUESTION_TABS_MISSING', 'no question tabs/anchors observed');
 
@@ -407,14 +421,16 @@ try {
       const body = await snapshotMaterialAt(question);
       if (!body) throw fail('MATERIAL_BODY_MISSING', `paper-view component ${question + 1} has no .material-body`);
       // 整卷视图没有页签文字，序号只能取组件顺序（第 i 个材料就是版面第 i 个组件）；
-      // 因为标签缺失，declaredMaterialTabs 仍然是 null，不冒充「卷面声明了几个材料」。
+      // 材料总数按页面实际渲染的 app-materials 组件数记录（见 materialPaneEvidence）。
       panes.push({ tabIndex: question, tabLabel: null, html: body.html, textLen: body.textLen, images: body.images, htmlSha: sha256(body.html) });
     } else {
-      const questionClick = await clickTab('question', question);
-      if (!questionClick.clicked) throw fail('QUESTION_TAB_NOT_FOUND', `question tab ${question + 1} not clickable`);
-      receipt.clicks += 1;
-      await settle(GAP);
-      stopOnRisk();
+      if (!paneOnlyQuestion) {
+        const questionClick = await clickTab('question', question);
+        if (!questionClick.clicked) throw fail('QUESTION_TAB_NOT_FOUND', `question tab ${question + 1} not clickable`);
+        receipt.clicks += 1;
+        await settle(GAP);
+        stopOnRisk();
+      }
 
       state = await snapshotQuestion();
       if (!state.prompt) throw fail('PROMPT_MISSING', `question ${question + 1} has no .ti-content`);
@@ -452,7 +468,7 @@ try {
   receipt.panes = {
     observed: merged.evidence.paneObservations,
     distinct: merged.evidence.distinctPanes,
-    declaredMaterialTabs: merged.evidence.declaredMaterialTabs,
+    declaredMaterialTabs: paperView ? paperView.components.materials.length : merged.evidence.declaredMaterialTabs,
     perQuestion: merged.evidence.perQuestionPanes,
     duplicatesWithinQuestion: merged.evidence.duplicateHashesWithinQuestion.length,
     empty: merged.evidence.emptyPanes,
@@ -502,15 +518,21 @@ try {
       detailPath: new URL(page.url()).pathname,
       observedAnchors: captured[0]?.anchorsVisible ?? [],
       questionsCaptured: questions.length,
-      layout: paperView ? 'paper-view-per-question-components' : 'question-scoped-material-tab-strips',
+      layout: paperView ? 'paper-view-per-question-components'
+        : paneOnlyQuestion ? 'single-question-material-tab-strips' : 'question-scoped-material-tab-strips',
       componentBinding: paperView ? { method: 'component-index+vertical-alignment', pairs: paperView.pairs } : null,
       materialPaneEvidence: {
         method: paperView
-          ? 'one app-materials component per app-ti question component; .material-body snapshot in component order'
-          : 'per-question material tab click -> .material-body snapshot',
+          ? 'one app-materials component per app-ti question component; .material-body snapshot in component order; declared count is the number of material components rendered on the page (no tab labels to read)'
+          : paneOnlyQuestion
+            ? 'single question already rendered with no question tab strip; per-material tab click -> .material-body snapshot'
+            : 'per-question material tab click -> .material-body snapshot',
         observed: merged.evidence.paneObservations,
         distinct: merged.evidence.distinctPanes,
-        declaredMaterialTabs: merged.evidence.declaredMaterialTabs,
+        // 整卷视图没有「材料N」页签，材料数只能取版面实际渲染的 app-materials 组件数：
+        // 这是可观测事实（页面确实渲染了 N 个材料块），不是用「已存数量」冒充声明。
+        // 写成 null 会让校验器判 material-count-unknown，整卷卷永远入不了库。
+        declaredMaterialTabs: paperView ? paperView.components.materials.length : merged.evidence.declaredMaterialTabs,
         perQuestion: merged.evidence.perQuestionPanes,
       },
     },

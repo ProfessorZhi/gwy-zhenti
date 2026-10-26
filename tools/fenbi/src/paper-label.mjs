@@ -3,7 +3,7 @@
 const LABELS = { tongkao: '统考', a: 'A类', b: 'B类', c: 'C类', fushengji: '副省级', dishiji: '地市级',
   xingzheng: '行政执法', county: '县级卷', township: '乡镇卷', hangce1: '行测一', hangce2: '行测二' };
 // 本库没有对应卷名时，标题里这些词说明它不是统考卷，直接用作卷名（不能去覆盖"统考"）。
-const KEYWORDS = ['选调生', '选调', '公检法', '司法所', '法检', '省直', '省级', '下半年', '上半年'];
+const KEYWORDS = ['选调生', '选调', '公检法', '司法所', '法检', '省直', '省级', '下半年', '上半年', '甲级', '乙级'];
 const norm = s => String(s || '').replace(/\s+/g, '').replace(/[卷类]$/u, '');
 // "A类"在标题里可能写成"A卷"：单个字母的卷名要求后面紧跟 类/卷。
 const inTitle = (t, l) => /^[A-Z]$/u.test(norm(l)) ? new RegExp(norm(l) + '[类卷]', 'u').test(t) : t.includes(norm(l));
