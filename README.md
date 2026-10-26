@@ -1,5 +1,9 @@
 # 全国公务员考试真题库
 
+<!-- CURRENT-STATUS -->
+> 当前数据以 [总进度](docs/PROGRESS.md)、[逐卷清单](catalog/manifest.jsonl) 和 [质量事项](reports/QUALITY-AUDIT.md) 为准。下方历史阶段叙述不作为现行完整率。
+<!-- /CURRENT-STATUS -->
+
 **国考 · 省考｜行测 · 申论｜Markdown 图文真题 + 参考答案 + 解析**
 
 本仓库把公开可取得的公务员考试原卷整理成**人和机器都能直接读**的 Markdown：题干、选项、给定材料、图表、答案、解析都在同一份文件里，图片走本地相对路径，断网也能看。

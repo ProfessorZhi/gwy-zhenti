@@ -106,7 +106,10 @@ export function inspectShenlunDom(html) {
   const title = norm($('title').first().text());
   let materialTabs = 0;
   let questionTabs = 0;
-  $('.choose-tab').each((_, element) => {
+  // 解析页有两种布局：逐题视图的材料页签是 .choose-tab，整卷平铺视图的材料标签是
+  // .label-tab（见广东 2015：4 个 app-materials 组件各带一个「材料N」标签）。
+  // 只认前者会让整卷视图的卷永远「声明材料数未知」，校验直接判失败。
+  $('.choose-tab, .label-tab').each((_, element) => {
     const text = $(element).text();
     for (const match of text.matchAll(/材料\s*(\d+)/gu)) materialTabs = Math.max(materialTabs, Number(match[1]));
     for (const match of text.matchAll(/(\d+)\s*题/gu)) questionTabs = Math.max(questionTabs, Number(match[1]));
@@ -158,7 +161,11 @@ export function parseShenlunCapture({ capture, meta = {}, domHtml = null } = {})
   const dom = domHtml ? inspectShenlunDom(domHtml) : null;
   const title = dom?.title || norm(meta.title);
   diagnostics.titleSource = dom?.title ? 'dom-title' : title ? 'meta-title' : 'unknown';
-  diagnostics.materialTabs = dom?.materialTabs ?? null;
+  // 整卷平铺视图的 dom 里可能没有任何「材料N」页签文字，只有一组材料组件；
+  // 采集器点过每个页签，按页面渲染的组件数记下了声明的材料数，这里作为回退。
+  diagnostics.materialTabs = dom?.materialTabs
+    ?? (Number.isInteger(capture.source?.materialPaneEvidence?.declaredMaterialTabs)
+      ? capture.source.materialPaneEvidence.declaredMaterialTabs : null);
   const rawDetailPath = typeof capture.source?.detailPath === 'string' ? capture.source.detailPath : '';
   // 路由里不应带凭据；即使带了也只在路径层保存，查询串/片段一律丢弃。
   const detailPath = rawDetailPath.split('#')[0].split('?')[0];
@@ -189,8 +196,31 @@ export function parseShenlunCapture({ capture, meta = {}, domHtml = null } = {})
   doc.evidence.push({ type: 'shenlun-capture-schema', schemaVersion: capture.schemaVersion, authoritativeFields: [...AUTHORITATIVE_FIELDS] });
 
   // ---- 材料 ----
+  // capture.materials 是采集器按「点开页签的先后」累积的，与卷面「给定资料N」的编号顺序无关
+  // （如国考2014地市级会存成 [3,4,1,2,5,6]）。每则材料带 tabNumbers（页签上的真实编号），
+  // 完整覆盖 1..N 时据此恢复原序；缺号或重复说明采集不全，保持采集顺序并留证据，不做猜测性重排。
+  const captureMaterials = Array.isArray(capture.materials) ? capture.materials : [];
+  const tabOf = (material) => {
+    const tabs = Array.isArray(material?.tabNumbers) ? material.tabNumbers.filter(n => Number.isInteger(n) && n > 0) : [];
+    return tabs.length === 1 ? tabs[0] : null;
+  };
+  const captureTabs = captureMaterials.map(tabOf);
+  const tabOrderComplete = captureMaterials.length > 0
+    && captureTabs.every(tab => tab !== null)
+    && new Set(captureTabs).size === captureMaterials.length
+    && captureTabs.every(tab => tab <= captureMaterials.length);
+  if (tabOrderComplete) {
+    if (!captureTabs.every((tab, position) => tab === position + 1)) {
+      doc.evidence.push({ type: 'material-order-restored-from-tabs', captureOrder: captureTabs });
+    }
+  } else if (captureMaterials.some(material => Array.isArray(material?.tabNumbers) && material.tabNumbers.length)) {
+    doc.evidence.push({ type: 'material-order-unverified', tabNumbers: captureTabs });
+  }
+  const orderedMaterials = tabOrderComplete
+    ? captureMaterials.map((material, position) => ({ material, tab: captureTabs[position] })).sort((a, b) => a.tab - b.tab)
+    : captureMaterials.map(material => ({ material, tab: null }));
   const storedHashes = new Map();
-  for (const [index, material] of (Array.isArray(capture.materials) ? capture.materials : []).entries()) {
+  for (const [index, { material }] of orderedMaterials.entries()) {
     const html = typeof material?.html === 'string' ? material.html : '';
     const id = `material-${index + 1}`;
     const entry = {
@@ -284,7 +314,9 @@ export function parseShenlunCapture({ capture, meta = {}, domHtml = null } = {})
 
   // ---- 题位守恒 ----
   const capturedNumbers = new Set(doc.questions.map(question => question.number));
-  if (Array.isArray(anchors)) {
+  // 空锚点数组不是「声明了 0 题」，而是「没有观察到题号锚点」；当成声明会让整卷视图
+  // （没有题号页签）永远判 0 题，后面按组件数推断的分支也就走不到。
+  if (Array.isArray(anchors) && anchors.length) {
     doc.expected.questions = anchors.length;
     doc.expected.questionNumbers = [...anchors];
     diagnostics.missingQuestionNumbers = anchors.filter(number => !capturedNumbers.has(number));
@@ -296,6 +328,17 @@ export function parseShenlunCapture({ capture, meta = {}, domHtml = null } = {})
     diagnostics.missingQuestionNumbers = Array.from({ length: dom.questionTabs }, (_, index) => index + 1)
       .filter(number => !capturedNumbers.has(number));
     doc.evidence.push({ type: 'source-question-tabs', questionTabs: dom.questionTabs });
+  } else if (capture.source?.layout === 'single-question-material-tab-strips' && captureQuestions.length) {
+    // 页面只有一个题目组件、没有题号页签条（广州 2015：8 则材料页签 + 一道 100 分大作文）。
+    // 题数只能取页面渲染的题目组件数；来源是否只有这一题无法在此证明，故单独记证据类型。
+    doc.expected.questions = captureQuestions.length;
+    doc.evidence.push({ type: 'question-count-from-single-question-layout', questions: captureQuestions.length });
+  } else if (capture.source?.layout === 'paper-view-per-question-components'
+    && capture.completeness?.questionCountMatchesComponents === true && captureQuestions.length) {
+    // 整卷平铺视图没有题号页签，题数只能取页面上 app-ti 题目组件的个数；采集器已按
+    // 组件与材料逐个配对（completeness.questionCountMatchesComponents），这是页面渲染事实。
+    doc.expected.questions = captureQuestions.length;
+    doc.evidence.push({ type: 'question-count-from-paper-view-components', questions: captureQuestions.length });
   } else {
     doc.evidence.push({ type: 'expected-count-unknown' });
   }

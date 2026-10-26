@@ -62,11 +62,21 @@ export function markdown(html, assets = [], imagePrefix = 'assets', baseUrl = 'h
     }
     image.removeAttr('srcset'); image.removeAttr('data-src');
   });
+  // 粉笔用空的 <u>（内部只有空格或 &nbsp;）表示填空横线。Turndown 会把它当成空白节点
+  // 整个丢掉，题干就成了「的数字技术正在引发一系列革命」这种半句开头，读者看不出原本有个空。
+  // 空 <u> 直接换成全角下划线占位（两个半角宽约等于一个全角），长度按原空白收缩，
+  // 不用 &nbsp; 填充——turndown 判定「内容全是空白」时连 keep 也救不回来。
+  $('u').each((_, el) => {
+    const node = $(el);
+    const text = node.text();
+    if (text.replace(/\s/gu, '')) return;
+    node.replaceWith('＿'.repeat(Math.max(2, Math.min(12, Math.round(text.length / 2)))));
+  });
   const service = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced', bulletListMarker: '-',
     blankReplacement: (_content, node) => node.nodeName.toLowerCase() === 'svg' ? `\n\n${node.outerHTML}\n\n` : node.isBlock ? '\n\n' : '',
   });
   service.use(gfmPlugin.gfm);
-  service.keep(['svg']);
+  service.keep(['svg', 'u']);
   service.addRule('math', {
     filter: ['math'], replacement: (_content, node) => node.outerHTML,
   });
@@ -100,18 +110,24 @@ export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = 
     `年份: ${quote(id.year)}`, `科目: ${quote(subject)}`, `卷型: ${quote(id.paperLabel ?? id.variant)}`,
     '真题性质: "粉笔题库整理版本，未认证为官方原卷"', `来源: ${quote(publicUrl(source.url))}`,
     `源试卷ID: ${quote(id.id)}`, `采集时间: ${quote(source.capturedAt)}`,
-    '题号口径: "采集到的来源题号，待人工与原卷核对"',
+    // 粉笔的题目节点只带题目 key，不带原卷题号（card 里 nodeType 2 只有 key/materialKeys），
+    // 所以题号只能按练习卡顺序连续编号；写成「采集到的来源题号」会让读者以为有原卷编号可对。
+    '题号口径: "来源未单列原卷题号，按粉笔练习卡顺序连续编号，待与原卷核对"',
     '校验状态: "候选；机器结构验收通过，尚未人工核验或正式入库"', '---', '', `# ${id.title}`, '',
     '> 候选采集稿。参考答案及解析来自粉笔页面，不代表官方答案或真实高分答卷；来源使用许可与原卷对应关系仍需人工核实。', ''];
   if (document.chapters?.length) {
     lines.push('## 题型与作答说明', '');
     for (const chapter of document.chapters) lines.push(convert(chapter.instructionsHtml), '');
   }
-  // 材料编号：按首个引用它的题排序，未被引用的排在最后；编号 1…N 稳定可读，取代内容哈希。
+  // 材料编号：行测按首个引用它的题排序，未被引用的排在最后；编号 1…N 稳定可读，取代内容哈希。
+  // 申论不行：题干正文直接写「给定资料N」，编号必须等于来源材料顺序，否则「关联材料：材料 1」
+  // 会指向正文里的「给定资料5」。
   const firstUse = new Map();
   questions.forEach((q, index) => { for (const mid of q.materialIds) if (!firstUse.has(mid)) firstUse.set(mid, index); });
-  const materialOrder = [...document.materials].sort((a, b) =>
-    (firstUse.get(a.id) ?? Number.MAX_SAFE_INTEGER) - (firstUse.get(b.id) ?? Number.MAX_SAFE_INTEGER));
+  const materialOrder = subject === '申论'
+    ? [...document.materials]
+    : [...document.materials].sort((a, b) =>
+      (firstUse.get(a.id) ?? Number.MAX_SAFE_INTEGER) - (firstUse.get(b.id) ?? Number.MAX_SAFE_INTEGER));
   const materialNumber = new Map(materialOrder.map((material, index) => [material.id, index + 1]));
   const materialOf = new Map(document.materials.map(material => [material.id, material]));
   const label = id_ => `材料 ${materialNumber.get(id_) ?? id_}`;
@@ -122,12 +138,21 @@ export function renderCandidate(document, verdict, { imagePrefix = 'assets' } = 
   }
   lines.push('## 题目', '');
   let current = null;
+  const emitted = new Set();
   for (const q of questions) {
     const refs = q.materialIds.filter(mid => materialOf.has(mid));
     // 行测：资料分析/篇章阅读的材料紧跟其首题，图文交叉不割裂。
+    // 同一则材料可能被两组不相邻的题共用（来源里同一段材料有时按页拆成两份，
+    // 题组中间夹着另一则），这时正文只出一次，回到它就写「关联材料」指路，
+    // 否则会出现两个同名「## 材料 N」小节。
     if (subject !== '申论' && refs.length && refs[0] !== current) {
       current = refs[0];
-      lines.push(`## ${label(current)}`, '', convert(materialOf.get(current).contentHtml), '');
+      if (emitted.has(current)) {
+        lines.push(`关联材料：${label(current)}`, '');
+      } else {
+        emitted.add(current);
+        lines.push(`## ${label(current)}`, '', convert(materialOf.get(current).contentHtml), '');
+      }
     }
     lines.push(`### 第 ${q.number} 题`, '', convert(q.contentHtml), '');
     // 材料就在上方时省略引用行，避免每道题重复；跨组或多材料引用保留。

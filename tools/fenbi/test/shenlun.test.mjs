@@ -127,6 +127,37 @@ test('material reference resolves by htmlSha; an unstored pane is named, never s
   assert.equal(verdict.dimensions.materials.status, 'partial');
 });
 
+test('materials follow the page tab numbers, not the order the collector opened them', () => {
+  const bodyA = '<div><p>合成材料A正文，页签编号为一。</p></div>';
+  const bodyB = '<div><p>合成材料B正文，页签编号为二。</p></div>';
+  const materials = [
+    { index: 0, textLen: 20, htmlSha: sha(bodyB), html: bodyB, tabNumbers: [2] },
+    { index: 1, textLen: 20, htmlSha: sha(bodyA), html: bodyA, tabNumbers: [1] },
+  ];
+  const questions = [question({ index: 1, key: 'k1', materialHash: sha(bodyA) })];
+  const { doc } = parseShenlunCapture(capture({ questions, materials }));
+  assert.match(doc.materials[0].contentHtml, /合成材料A正文/u);
+  assert.match(doc.materials[1].contentHtml, /合成材料B正文/u);
+  // 关联材料按 htmlSha 解析，重排后仍须指向材料A（此时为 material-1）
+  assert.deepEqual(doc.questions[0].materialIds, ['material-1']);
+  const evidence = doc.evidence.find(item => item.type === 'material-order-restored-from-tabs');
+  assert.ok(evidence);
+  assert.deepEqual(evidence.captureOrder, [2, 1]);
+});
+
+test('material tab numbers that do not cover 1..N keep the capture order and say so', () => {
+  const bodyA = '<div><p>合成材料A正文。</p></div>';
+  const bodyB = '<div><p>合成材料B正文。</p></div>';
+  const materials = [
+    { index: 0, textLen: 20, htmlSha: sha(bodyB), html: bodyB, tabNumbers: [2] },
+    { index: 1, textLen: 20, htmlSha: sha(bodyA), html: bodyA, tabNumbers: [2] },
+  ];
+  const questions = [question({ index: 1, key: 'k1', materialHash: sha(bodyB) })];
+  const { doc } = parseShenlunCapture(capture({ questions, materials }));
+  assert.match(doc.materials[0].contentHtml, /合成材料B正文/u);
+  assert.ok(doc.evidence.some(item => item.type === 'material-order-unverified'));
+});
+
 test('material tab count above stored panes is reported as an incomplete material pane', async () => {
   const fixture = capture({ questions: [question({ index: 1, key: 'k1', materialHash: sha(MATERIAL) })] });
   fixture.domHtml = domHtml('合成申论卷', 3);
@@ -341,4 +372,33 @@ test('a non-shenlun or wrong-schema capture is rejected instead of guessed', () 
   const stale = capture({ questions: [] });
   stale.capture.schemaVersion = 1;
   assert.throws(() => parseShenlunCapture(stale), /unsupported-capture-schema/u);
+});
+
+test('整卷平铺视图的材料标签（.label-tab）也计入材料页签总数', () => {
+  const html = '<!doctype html><html><head><title>合成整卷</title></head><body>'
+    + '<div class="material-body"><a class="label-tab">材料1</a><div class="material-content"><p>合成材料</p></div></div>'
+    + '<div class="material-body"><a class="label-tab">材料2</a><div class="material-content"><p>合成材料</p></div></div>'
+    + '</body></html>';
+  const dom = inspectShenlunDom(html);
+  assert.equal(dom.materialTabs, 2);
+  assert.equal(dom.questionTabs, null);
+});
+
+test('整卷平铺视图没有题号页签时，题数与材料数取页面渲染的组件数，不判未知', async () => {
+  const fixture = capture({
+    questions: [question({ index: 1, key: 'k1', materialHash: sha(MATERIAL) }),
+      question({ index: 2, key: 'k2', materialHash: sha(MATERIAL) })],
+    total: 0,
+  });
+  fixture.capture.source.layout = 'paper-view-per-question-components';
+  fixture.capture.completeness = { questionCountMatchesAnchors: false, questionCountMatchesComponents: true };
+  fixture.capture.source.materialPaneEvidence = { declaredMaterialTabs: 1 };
+  fixture.domHtml = '<!doctype html><html><head><title>合成整卷</title></head><body></body></html>';
+  const { doc } = parseShenlunCapture(fixture);
+  assert.equal(doc.expected.questions, 2);
+  assert.equal(doc.expected.materials, 1);
+  assert.ok(doc.evidence.some(item => item.type === 'question-count-from-paper-view-components'));
+  const found = codes(await validateDocument(doc));
+  assert.ok(!found.has('question-count-unknown'));
+  assert.ok(!found.has('material-count-unknown'));
 });
