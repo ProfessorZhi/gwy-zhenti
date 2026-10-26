@@ -112,6 +112,10 @@
 
 ![](assets-fenbi-96500/296617bb046e436d95cdab906e28cb0fde01addb0a92e0a3b43ca6d3175559a8.png)
 
+**考点**：多要素组合类
+
+**来源**：2020年浙江省公考《申论》题（B卷）
+
 </details>
 
 ### 第 2 题
@@ -179,5 +183,9 @@
 ![](assets-fenbi-96500/f02c7c8791aa1a348c15c1a90e16ed58e2d9fcf9ca9d5dacad9b596673caa230.png)
 
 **解析状态：unknown（来源未提供）**
+
+**考点**：文章写作题
+
+**来源**：2020年浙江省公考《申论》题（B卷）
 
 </details>
