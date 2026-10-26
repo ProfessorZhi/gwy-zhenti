@@ -15,7 +15,7 @@
 # 2018年上海市公务员录用考试《行测》题（B类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **上海 · 2018 · 行测 · B类** ｜ 135 题 · 图片 269 处 · 答案随题折叠
+> **上海 · 2018 · 行测 · B类** ｜ 135 题 · 图片 196 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1035,11 +1035,11 @@ C
 
 当木板在水平地面时，没有摩擦力；
 
-随着木板抬起至铅块滑动前，铅块受的是静摩擦力。如图所示，根据受力分析可知，静摩擦力![](assets-fenbi-82932/fd644a775c755c6ec0b9a230947f628b8584aa4b22a08019d62a59050bd57b46.png)。随着木板抬起，木块倾角![](assets-fenbi-82932/1d90454d1ea2beb878d982ff5d562b7cbcf52409507f35e0b3c7bf5a95201402.png)变大，![](assets-fenbi-82932/662a4ccf6e30ec84878303ebaf3c43043aa9b45b69f0425d0cb3beedf9fb5c6b.png)变大，则静摩擦力f变大，据此可以排除A、B两项；
+随着木板抬起至铅块滑动前，铅块受的是静摩擦力。如图所示，根据受力分析可知，静摩擦力![](assets-fenbi-82932/fd644a775c755c6ec0b9a230947f628b8584aa4b22a08019d62a59050bd57b46.png)。随着木板抬起，木块倾角α变大，sinα变大，则静摩擦力f变大，据此可以排除A、B两项；
 
 ![](assets-fenbi-82932/62f6000d9c976c81fcd88e4687bb95c896ffb0bd16bc79d9a12204c7c9687592.png)
 
-铅块开始滑动后，所受摩擦力变为动摩擦力，动摩擦力![](assets-fenbi-82932/3ab9912c3d68938497d99460a8f7e197b055e4350180770e82095bdfd0365cdf.png)。随着木块倾角α变大，![](assets-fenbi-82932/7f13320b9fbe8ae23b74b09265a024fb740dfdb8ca127674996414c85372b769.png)变小，则动摩擦力变小，直至与地面垂直时，动摩擦力变为0，据此可排除D项，C项正确。
+铅块开始滑动后，所受摩擦力变为动摩擦力，动摩擦力![](assets-fenbi-82932/3ab9912c3d68938497d99460a8f7e197b055e4350180770e82095bdfd0365cdf.png)。随着木块倾角α变大，cosα变小，则动摩擦力变小，直至与地面垂直时，动摩擦力变为0，据此可排除D项，C项正确。
 
 故正确答案为C。
 
@@ -1209,33 +1209,33 @@ C
 
 根据题干描述的运动过程，可将本题分成两个过程，两个过程遵循能量守恒定律。
 
-过程一，从a点开始，到b点结束，![](assets-fenbi-82932/36ac3c448477de3621efe8921ae65b36ff8b92a35cec20805305ec67630d72e2.png)为a、b高度差。
+过程一，从a点开始，到b点结束，h_1为a、b高度差。
 
-皮球在a点的所有能量是它的重力势能（![](assets-fenbi-82932/349919d6b61f999644d04250054f32eec24c936cc279cb7cce8471e9c9698991.png)）
+皮球在a点的所有能量是它的重力势能（E_pa）
 
-![](assets-fenbi-82932/349919d6b61f999644d04250054f32eec24c936cc279cb7cce8471e9c9698991.png)\=mg![](assets-fenbi-82932/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)①
+E_pa\=mgh_a①
 
-运动到b点的所有能量是它的重力势能（![](assets-fenbi-82932/3381b64875908a2bb44711fa59d4951ee0ba4dacacf144a7706d59f3f0caf2df.png)）
+运动到b点的所有能量是它的重力势能（E_pb）
 
-![](assets-fenbi-82932/3381b64875908a2bb44711fa59d4951ee0ba4dacacf144a7706d59f3f0caf2df.png)\=mg![](assets-fenbi-82932/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)②
+E_pb\=mgh_b②
 
-因为![](assets-fenbi-82932/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)\>![](assets-fenbi-82932/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)，所以mg![](assets-fenbi-82932/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)\>mg![](assets-fenbi-82932/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)，![](assets-fenbi-82932/349919d6b61f999644d04250054f32eec24c936cc279cb7cce8471e9c9698991.png)\>![](assets-fenbi-82932/3381b64875908a2bb44711fa59d4951ee0ba4dacacf144a7706d59f3f0caf2df.png)，所以从a到b能量减少，减少的能量即为皮球从a运动到b摩擦力所做的功（![](assets-fenbi-82932/5fe4a9983f881d86cbb947c6b7d2159a6e621fe813f187d04d18d59e0dacc330.png)），所以
+因为h_a\>h_b，所以mgh_a\>mgh_b，E_pa\>E_pb，所以从a到b能量减少，减少的能量即为皮球从a运动到b摩擦力所做的功（W_f1），所以
 
-![](assets-fenbi-82932/5fe4a9983f881d86cbb947c6b7d2159a6e621fe813f187d04d18d59e0dacc330.png)\=mg![](assets-fenbi-82932/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)\-mg![](assets-fenbi-82932/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)\=mg（![](assets-fenbi-82932/23d706025503786d178c242c32e29d12395482c6f1473bb7aa301bab93aefc9e.png)\-![](assets-fenbi-82932/b3d363e157f86a16a47a0ac5abd53adcf3b3635e4461b928d863f2abfa789ae5.png)）![](assets-fenbi-82932/1a00f53f273a15913a5f2be6c4996eade06256accd60adbcb0ad8b392fd096b3.png)③
+W_f1\=mgh_a\-mgh_b\=mg（h_a\-h_b）=mgh_1③
 
-过程二，从b点开始，到c点结束，![](assets-fenbi-82932/4eaf85c1bd213393ee1de7f8cf54f798be7759c9e0d5188e28cac0cf21119a1e.png)为b、c高度差。
+过程二，从b点开始，到c点结束，h_2为b、c高度差。
 
-同理，如过程一，皮球从b点到c点能量减少，减少的能量即为皮球从b运动到c摩擦力所做的功![](assets-fenbi-82932/e41ee282ee25aa440cd480d2b21f689747650ad46cbc8a78ba86f6dea1c88c95.png)，所以
+同理，如过程一，皮球从b点到c点能量减少，减少的能量即为皮球从b运动到c摩擦力所做的功W_f2，所以
 
 ![](assets-fenbi-82932/585ecd11cf4ed8a1790095be288d6e2a52641730eab65888249d63a785f684b3.png)![](assets-fenbi-82932/3c348c318d8bf46d64647f356a2cb071d8fb2b13934f0486ca1ba9ed5a9973fb.png)![](assets-fenbi-82932/91a27906e1a6d2e1bad68574996df7e2a5b4706bcd83a9ee63dcf6ae75456f28.png)④
 
-故，比较![](assets-fenbi-82932/36ac3c448477de3621efe8921ae65b36ff8b92a35cec20805305ec67630d72e2.png)和![](assets-fenbi-82932/4eaf85c1bd213393ee1de7f8cf54f798be7759c9e0d5188e28cac0cf21119a1e.png)大小，即可理解为比较③![](assets-fenbi-82932/5fe4a9983f881d86cbb947c6b7d2159a6e621fe813f187d04d18d59e0dacc330.png)和④![](assets-fenbi-82932/e41ee282ee25aa440cd480d2b21f689747650ad46cbc8a78ba86f6dea1c88c95.png)的大小，此处可简单理解为：因为过程一比过程二多走了ac这段路，所以过程一摩擦力所做的功比较大，所以
+故，比较h_1和h_2大小，即可理解为比较③W_f1和④W_f2的大小，此处可简单理解为：因为过程一比过程二多走了ac这段路，所以过程一摩擦力所做的功比较大，所以
 
 ![](assets-fenbi-82932/73e8e75c3d0e5e0dae9172edef4378868b1bc1961b1fef429c640716f3847715.png)⑤
 
 将③④代入⑤可得：
 
-mg![](assets-fenbi-82932/36ac3c448477de3621efe8921ae65b36ff8b92a35cec20805305ec67630d72e2.png)\>mg![](assets-fenbi-82932/4eaf85c1bd213393ee1de7f8cf54f798be7759c9e0d5188e28cac0cf21119a1e.png)，![](assets-fenbi-82932/36ac3c448477de3621efe8921ae65b36ff8b92a35cec20805305ec67630d72e2.png)\>![](assets-fenbi-82932/4eaf85c1bd213393ee1de7f8cf54f798be7759c9e0d5188e28cac0cf21119a1e.png)，C项正确。
+mgh_1\>mgh_2，h_1\>h_2，C项正确。
 
 故正确答案为C。
 
@@ -1333,17 +1333,17 @@ C
 
 **解析**
 
-假使三盏灯泡均正常发光，则三盏灯泡耗电量固定，若想电路最省电，则需滑动变阻器R耗电最小。根据![](assets-fenbi-82932/6adcc4c9e6568e40eb4f5a29a96e0de6e739807943c9496c5d476acc6d675906.png)，电压相等时，电流![](assets-fenbi-82932/a2f2f99348a114a3afb000803f7c142b1fc68c7793cc466a3391da18046ef23a.png)越小，滑动变阻器R耗电越小。正常发光时，通过三盏灯泡的电流分别表示为![](assets-fenbi-82932/9c8d70d1b303afa720972dca74265f5ea6b3cb60ee008a19263086eac85a5465.png) 、![](assets-fenbi-82932/cd7a2bbcd63f487d684ca2747b6153a70323696b886434937065745aed27444a.png)、和![](assets-fenbi-82932/6d5c08540ea689065eb47f5f79b4bbf0419b594be1797147979333bf0622bb2e.png)。
+假使三盏灯泡均正常发光，则三盏灯泡耗电量固定，若想电路最省电，则需滑动变阻器R耗电最小。根据![](assets-fenbi-82932/6adcc4c9e6568e40eb4f5a29a96e0de6e739807943c9496c5d476acc6d675906.png)，电压相等时，电流I_R越小，滑动变阻器R耗电越小。正常发光时，通过三盏灯泡的电流分别表示为I_1 、I_2、和I_3。
 
 对于A，三盏灯泡并联，若正常发光，三盏灯泡两端电压均为110V，滑动变阻器两端电压为110V。干路电流，即通过滑动变阻器电流![](assets-fenbi-82932/9c96030326fc85e8036ee02c1d6107b9724739cecfa208c7d3a6229fe44933de.png)。
 
-对于B，![](assets-fenbi-82932/d8d730eae96a77dfbd06e4d1f115bf7a4dc3b2890d6f1025f726a6bdd72fbe9b.png)和滑动变阻器R并联，若正常发光，灯泡![](assets-fenbi-82932/1ab507c6842d71826ced729533f81eb3eac2368a0b328143b11297530ba41561.png)两端电压为110V。干路电流，即通过灯泡![](assets-fenbi-82932/1ab507c6842d71826ced729533f81eb3eac2368a0b328143b11297530ba41561.png)的电流![](assets-fenbi-82932/47370683cf49a9edfc79fafaf9ac1bb933e31cb76a71576b1141ebf9ceb69147.png)，而由于P=UI，三个灯泡额定电压相等，![](assets-fenbi-82932/1ab507c6842d71826ced729533f81eb3eac2368a0b328143b11297530ba41561.png)额定功率最小，所以![](assets-fenbi-82932/1ab507c6842d71826ced729533f81eb3eac2368a0b328143b11297530ba41561.png)正常工作时，电流![](assets-fenbi-82932/6d5c08540ea689065eb47f5f79b4bbf0419b594be1797147979333bf0622bb2e.png)最小，故等式![](assets-fenbi-82932/47370683cf49a9edfc79fafaf9ac1bb933e31cb76a71576b1141ebf9ceb69147.png)不可能成立，B电路图无法让三盏灯都正常发光。
+对于B，L_1、L_2和滑动变阻器R并联，若正常发光，灯泡L_3两端电压为110V。干路电流，即通过灯泡L_3的电流![](assets-fenbi-82932/47370683cf49a9edfc79fafaf9ac1bb933e31cb76a71576b1141ebf9ceb69147.png)，而由于P=UI，三个灯泡额定电压相等，L_3额定功率最小，所以L_3正常工作时，电流I_3最小，故等式![](assets-fenbi-82932/47370683cf49a9edfc79fafaf9ac1bb933e31cb76a71576b1141ebf9ceb69147.png)不可能成立，B电路图无法让三盏灯都正常发光。
 
-对于C，![](assets-fenbi-82932/f8a1456d91ff9cd7c751d0f9ab3c7fa1d14fff06a14ceb3d1ec082d21ac72b65.png)、![](assets-fenbi-82932/1ab507c6842d71826ced729533f81eb3eac2368a0b328143b11297530ba41561.png)和滑动变阻器R并联，若正常发光，三盏灯泡两端电压均为110V，滑动变阻器两端电压为110V。干路电流，即通过灯泡![](assets-fenbi-82932/8a21a5077bb456e60c0db337bb2b498a59770ea75a8841e7cf5420bd697ca4da.png)的电流![](assets-fenbi-82932/d7b2ded639e74bf9600680b84e6793e5b37ef07f598473a3608befe7f6dffb78.png)，可得![](assets-fenbi-82932/5d17e57381ecc2e5694439f2b88a552c8905fd95db82f79f5b8b37aa9bee1f6c.png)。
+对于C，L_2、L_3和滑动变阻器R并联，若正常发光，三盏灯泡两端电压均为110V，滑动变阻器两端电压为110V。干路电流，即通过灯泡L_1的电流![](assets-fenbi-82932/d7b2ded639e74bf9600680b84e6793e5b37ef07f598473a3608befe7f6dffb78.png)，可得![](assets-fenbi-82932/5d17e57381ecc2e5694439f2b88a552c8905fd95db82f79f5b8b37aa9bee1f6c.png)。
 
-对于D，电路相当于![](assets-fenbi-82932/1ab507c6842d71826ced729533f81eb3eac2368a0b328143b11297530ba41561.png)和滑动变阻器R、![](assets-fenbi-82932/8a21a5077bb456e60c0db337bb2b498a59770ea75a8841e7cf5420bd697ca4da.png)和![](assets-fenbi-82932/f8a1456d91ff9cd7c751d0f9ab3c7fa1d14fff06a14ceb3d1ec082d21ac72b65.png)分别并联后再串联，若正常发光，三盏灯泡两端电压均为110V，滑动变阻器R两端电压为110V。干路电流![](assets-fenbi-82932/8e2bfced9059a5b1e11231a94ec10049f3212156888b57c7dbfc2e85c8f69bef.png)，可得![](assets-fenbi-82932/6627a9246a3fd69caac0cf227b0ac54e53f1c3dfa39932552d7094b79efe7e2d.png)。
+对于D，电路相当于L_3和滑动变阻器R、L_1和L_2分别并联后再串联，若正常发光，三盏灯泡两端电压均为110V，滑动变阻器R两端电压为110V。干路电流![](assets-fenbi-82932/8e2bfced9059a5b1e11231a94ec10049f3212156888b57c7dbfc2e85c8f69bef.png)，可得![](assets-fenbi-82932/6627a9246a3fd69caac0cf227b0ac54e53f1c3dfa39932552d7094b79efe7e2d.png)。
 
-A、C、D三个电路图中，滑动变阻器R两端电压均为110V，C中![](assets-fenbi-82932/a2f2f99348a114a3afb000803f7c142b1fc68c7793cc466a3391da18046ef23a.png)最小，滑动变阻器消耗功率最小，电路总耗电最小，A、D两项错误，C项正确。
+A、C、D三个电路图中，滑动变阻器R两端电压均为110V，C中I_R最小，滑动变阻器消耗功率最小，电路总耗电最小，A、D两项错误，C项正确。
 
 故正确答案为C。
 
@@ -1567,7 +1567,7 @@ D
 
 **解析**
 
-元素组成相同，考虑位置规律。观察发现，题干图形均可分为内圈、外圈两部分，内圈可分为4格，包括小白球和两条短线，依次整体旋转![](assets-fenbi-82932/cf7ff37a2455437543a24aa3951264d33113f67a53fe8c086e41bac0353ea2fd.png)（或上下翻转），则问号处两个小白球应该出现在下方，两条短线出现在上方，据此排除A、C两项；外圈可分为4格，包括两条短线，依次顺时针旋转![](assets-fenbi-82932/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，则问号处两根小短线应分别出现在右上方和右下方，对应D项。
+元素组成相同，考虑位置规律。观察发现，题干图形均可分为内圈、外圈两部分，内圈可分为4格，包括小白球和两条短线，依次整体旋转180°（或上下翻转），则问号处两个小白球应该出现在下方，两条短线出现在上方，据此排除A、C两项；外圈可分为4格，包括两条短线，依次顺时针旋转![](assets-fenbi-82932/86afa27ff6cdfd2547d03b0a73ed8669941e8f361b5b53421f03beb80f8e3d1e.png)，则问号处两根小短线应分别出现在右上方和右下方，对应D项。
 
 故正确答案为D。
 
@@ -2223,9 +2223,9 @@ D
 
 王教授：教育科学 且 自然地理学；
 
-赵教授：自然地理学![](assets-fenbi-82932/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)计算机信息工程；
+赵教授：自然地理学→计算机信息工程；
 
-李教授：（教育科学 且 自然地理学）![](assets-fenbi-82932/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)计算机信息工程。
+李教授：（教育科学 且 自然地理学）→计算机信息工程。
 
 第二步：看其余，根据题干推理。
 
@@ -2427,15 +2427,15 @@ C
 
 ### 第 62 题
 
-1，2，![](assets-fenbi-82932/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-82932/f61d9565f49d10c1a519f2e60ab41669a2f25bc5ba86c11930274bf065fb5585.png)，![](assets-fenbi-82932/53c02c9f93b21e854a3d45c3fe3e296cac703104c828352bd883a33db6a8442b.png)，        。
+1，2，1/3，3/7，21/16，        。
 
-A. ![](assets-fenbi-82932/361835f0d32d5348a51ea0eab16c489cc07b52afdda2794a9b4c45e776bdad92.png)
+A. 16/53
 
-B. ![](assets-fenbi-82932/b507c706a1048af22114d4feefec0a56d2504e2b9b467b20b9a57e78df9621a6.png)
+B. 7/17
 
-C. ![](assets-fenbi-82932/3cd52840cf6cf0c95d784e0036d70584ea41e2084794f172c75325d0567a7e8b.png)
+C. 112/195
 
-D. ![](assets-fenbi-82932/499ae37d681d3045b43991ed19eead840abdd707f7a77562ccf2b717661d8180.png)
+D. 48/79
 
 <details><summary>第 62 题 · 答案与解析</summary>
 
@@ -2641,13 +2641,13 @@ x+y+z=50+50+0=100元
 
 非高峰时段，地铁每8分钟一班，在车站停靠1分钟，则乘客到达站台2分钟内能乘上地铁的概率为      。
 
-A. ![](assets-fenbi-82932/9afa4d45d62754e0802ec6d5dcffb7b089aa935ce718d2f4332210ec803c08ee.png)
+A. 1/8
 
-B. ![](assets-fenbi-82932/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)
+B. 1/4
 
-C. ![](assets-fenbi-82932/3aab04b1c812afc46cad885eb1229542587da939d29d8c591165600d80381c42.png)
+C. 3/8
 
-D. ![](assets-fenbi-82932/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+D. 1/2
 
 <details><summary>第 68 题 · 答案与解析</summary>
 
@@ -2665,7 +2665,7 @@ C
 
 前后一共3分钟的时间可以乘坐地铁。
 
-综上所述：每8分钟内有3分钟可以坐上车，坐上车的概率为![](assets-fenbi-82932/3aab04b1c812afc46cad885eb1229542587da939d29d8c591165600d80381c42.png)。
+综上所述：每8分钟内有3分钟可以坐上车，坐上车的概率为3/8。
 
 故正确答案为C。
 
@@ -3085,11 +3085,11 @@ B
 
 A项：定位表格，2013年，“一带一路”沿线国家与华东地区贸易额为3644.1亿美元，2013年全年共365天，所以日均贸易额为![](assets-fenbi-82932/c433da79dc47ddca10a921ccf30453b4606a08971f58cfbaae255df5c9ebcf1c.png)10亿美元，错误；
 
-B项：定位表格，2015年、2016年“一带一路”沿线国家与华东地区贸易额分别为3675.2亿美元、3616.2亿美元；由图1可得，2015年、2016年华东对俄罗斯出口额分别是145.4亿美元、167.5亿美元；由图2可得，2015年、2016年华东自俄罗斯进口额分别是68.6亿美元、82.4亿美元，所以![](assets-fenbi-82932/2f77c09b897e21b5f06ccb1ead7dae3e5e3ee484e185010b6eee0c57ed6c022e.png)![](assets-fenbi-82932/17f461dc0c9722674083bd749b02da974147f94fa3c56b9c0481f0cb4b7c8cdd.png)\=![](assets-fenbi-82932/7c1220bd0edaf4d69c3243fe0626f480830d0a1c99d465344fee93baec179cb8.png)![](assets-fenbi-82932/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)![](assets-fenbi-82932/16a862a1fa1c667b21b7bdd37d19e6b5ba9399c39b78bc0164b70578c217a1aa.png)5.8%，2016年比重=![](assets-fenbi-82932/3902feb21f197affc3a0bcff46ecba5e9afd7e58d96eca6f88d08395f991e154.png)\=![](assets-fenbi-82932/cdb675285be2f753b3a404b30dcd43a6d4a5369bb1cb589256d272c6c73faaab.png)![](assets-fenbi-82932/58b1bdd8a377a691e4f18c18e0e0ca233cc332184054d1ba70e4d48aef910666.png)6.9%，16年比重高于15年，正确；
+B项：定位表格，2015年、2016年“一带一路”沿线国家与华东地区贸易额分别为3675.2亿美元、3616.2亿美元；由图1可得，2015年、2016年华东对俄罗斯出口额分别是145.4亿美元、167.5亿美元；由图2可得，2015年、2016年华东自俄罗斯进口额分别是68.6亿美元、82.4亿美元，所以![](assets-fenbi-82932/2f77c09b897e21b5f06ccb1ead7dae3e5e3ee484e185010b6eee0c57ed6c022e.png)![](assets-fenbi-82932/17f461dc0c9722674083bd749b02da974147f94fa3c56b9c0481f0cb4b7c8cdd.png)\=![](assets-fenbi-82932/7c1220bd0edaf4d69c3243fe0626f480830d0a1c99d465344fee93baec179cb8.png)≈214/3700≈5.8%，2016年比重=![](assets-fenbi-82932/3902feb21f197affc3a0bcff46ecba5e9afd7e58d96eca6f88d08395f991e154.png)\=![](assets-fenbi-82932/cdb675285be2f753b3a404b30dcd43a6d4a5369bb1cb589256d272c6c73faaab.png)250/3600≈6.9%，16年比重高于15年，正确；
 
 C项：顺差=出口-进口，定位图1，2015年、2016年华东对新加坡出口额分别是190.9、163.0亿美元，定位图2，2015年、2016年华东自新加坡进口额分别是137.3、119.9亿美元，所以2016年顺差=2016年华东对新加坡出口额-2016华东自新加坡进口额=163.0-119.9=43.1亿美元，2015年顺差=2015年华东对新加坡出口额-2015华东自新加坡进口额=190.9-137.3=53.6亿美元，2016年顺差<2015年顺差，错误；
 
-D项：定位图1，2016年华东对新加坡、菲律宾出口额分别是163.0亿美元、98.7亿美元，定位图2，2016年华东自新加坡、菲律宾进口额分别是119.9亿美元、67.3亿美元，定位表格，2016年“一带一路”沿线国家与华东地区贸易额为3616.2亿美元，所以2016年新加坡所占比重比菲律宾高![](assets-fenbi-82932/2a9ca0d2a6c494e9f964dd384586a2ee81ca7b97aa99b5597a29e12e8331b9bf.png)![](assets-fenbi-82932/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)![](assets-fenbi-82932/d1f022e9b2e0892ce5df35ee97af20d5123d978d23a6169a3c6103f953ab86c8.png)3.2%，即高3.2个百分点，不到5个百分点，错误。
+D项：定位图1，2016年华东对新加坡、菲律宾出口额分别是163.0亿美元、98.7亿美元，定位图2，2016年华东自新加坡、菲律宾进口额分别是119.9亿美元、67.3亿美元，定位表格，2016年“一带一路”沿线国家与华东地区贸易额为3616.2亿美元，所以2016年新加坡所占比重比菲律宾高![](assets-fenbi-82932/2a9ca0d2a6c494e9f964dd384586a2ee81ca7b97aa99b5597a29e12e8331b9bf.png)≈117/3600≈3.2%，即高3.2个百分点，不到5个百分点，错误。
 
 故正确答案为B。
 
@@ -3155,7 +3155,7 @@ B
 
 **解析**
 
-根据题干所求“···无重复目标受众人数均为”，结合材料“![](assets-fenbi-82932/304e9fd5d226b94619f69e2bd6d94b6f56e43adade99242478ffde2a40bfa5a3.png)”，可知：![](assets-fenbi-82932/26b1879a463967cdc3de3dace8c989bec3469b126a4918b67a6d1e3ce2697b2e.png)![](assets-fenbi-82932/8c9cc3547104f81018f55831f75f6e926e4405dab127a829cb44312b2cbdc1ec.png)，结合表格，到达人数和到达率已知，可判定此题为现期比重问题。求南京地区的无重复目标受众人数，所以定位表格一组方便计算得数据即可，A网站南京日到达人数为1294579人，日到达率为29.7%，所以南京市所有无重复目标受众人数![](assets-fenbi-82932/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-82932/255c04381dd3895fc1c5cbd541b5e82daee74c77fee6e48c727ef0b623f786ed.png)![](assets-fenbi-82932/443620fdbdac11a998cb2d6ff97694f2514be90f6287185af9a35a88f26d9d02.png)![](assets-fenbi-82932/00c3bc5f65b6021aa483164f1b4223a1782528ab0f6374eb6ac45e162e386e2b.png)，与B项符合。
+根据题干所求“···无重复目标受众人数均为”，结合材料“![](assets-fenbi-82932/304e9fd5d226b94619f69e2bd6d94b6f56e43adade99242478ffde2a40bfa5a3.png)”，可知：![](assets-fenbi-82932/26b1879a463967cdc3de3dace8c989bec3469b126a4918b67a6d1e3ce2697b2e.png)![](assets-fenbi-82932/8c9cc3547104f81018f55831f75f6e926e4405dab127a829cb44312b2cbdc1ec.png)，结合表格，到达人数和到达率已知，可判定此题为现期比重问题。求南京地区的无重复目标受众人数，所以定位表格一组方便计算得数据即可，A网站南京日到达人数为1294579人，日到达率为29.7%，所以南京市所有无重复目标受众人数=![](assets-fenbi-82932/255c04381dd3895fc1c5cbd541b5e82daee74c77fee6e48c727ef0b623f786ed.png)![](assets-fenbi-82932/443620fdbdac11a998cb2d6ff97694f2514be90f6287185af9a35a88f26d9d02.png)![](assets-fenbi-82932/00c3bc5f65b6021aa483164f1b4223a1782528ab0f6374eb6ac45e162e386e2b.png)，与B项符合。
 
 **考点**：现期比重、统计表
 
@@ -3187,7 +3187,7 @@ B
 
 根据材料：“到达人数=该市在特定时间内看到或听到一则广告的无重复目标受众人数；![](assets-fenbi-82932/304e9fd5d226b94619f69e2bd6d94b6f56e43adade99242478ffde2a40bfa5a3.png)。”
 
-可知：任选一名武汉目标受众，1天内在D网站上看到或听到一则特定广告的![](assets-fenbi-82932/bf253a34058ba062b88961eb79810a225a930929e89dcb60fa1a25f809e5ecb4.png)![](assets-fenbi-82932/64273c9ceea0f4651dcee4c7ed70e778313a601c0c3faf859ac8562cdacf90df.png)![](assets-fenbi-82932/faaf4e394401bf2c6c5578c625bd284474cf176302ae699d3c2835a518875852.png)![](assets-fenbi-82932/935e83ee285f6e30f8c7d899215ecfae303ea68699bbe03bbb5be2867c1c9b0d.png)，所以任选一名武汉目标受众，1天内在D网站上看到或听到一则特定广告的概率为19.9%，反之没看到或听到的概率为（1-19.9%）。则任选一名武汉目标受众在过去3天内在D网站上看到或听到一则特定广告的![](assets-fenbi-82932/b3977f6d8682ba43f67d99717937e356699aa7d362242b3e001061e803530ecd.png)![](assets-fenbi-82932/66c63ec407f2644ccb27920d57e41ecf6fd29a5d8293958954f8cb511896e8fa.png)![](assets-fenbi-82932/b0ef2f8371f98376e48f2d5b71577b53d39268cd07939781ab93fb92eac9cd0e.png)![](assets-fenbi-82932/429a0d21048d33696592215f6b5f6afac6dcde72c05988a05956f2ace658894a.png)，接近B选项。
+可知：任选一名武汉目标受众，1天内在D网站上看到或听到一则特定广告的概率=![](assets-fenbi-82932/64273c9ceea0f4651dcee4c7ed70e778313a601c0c3faf859ac8562cdacf90df.png)![](assets-fenbi-82932/faaf4e394401bf2c6c5578c625bd284474cf176302ae699d3c2835a518875852.png)![](assets-fenbi-82932/935e83ee285f6e30f8c7d899215ecfae303ea68699bbe03bbb5be2867c1c9b0d.png)，所以任选一名武汉目标受众，1天内在D网站上看到或听到一则特定广告的概率为19.9%，反之没看到或听到的概率为（1-19.9%）。则任选一名武汉目标受众在过去3天内在D网站上看到或听到一则特定广告的![](assets-fenbi-82932/b3977f6d8682ba43f67d99717937e356699aa7d362242b3e001061e803530ecd.png)![](assets-fenbi-82932/66c63ec407f2644ccb27920d57e41ecf6fd29a5d8293958954f8cb511896e8fa.png)1-![](assets-fenbi-82932/429a0d21048d33696592215f6b5f6afac6dcde72c05988a05956f2ace658894a.png)，接近B选项。
 
 （备注：三天内听到一则特定广告的概率，若理解成三天内**恰好只听到**一则广告，则没有正确答案；故只能理解为三天内**至少听到**一则广告的概率）
 

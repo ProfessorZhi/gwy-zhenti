@@ -15,7 +15,7 @@
 # 2019年江苏省公务员录用考试《行测》题（A类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2019 · 行测 · A类** ｜ 135 题 · 图片 287 处 · 答案随题折叠
+> **江苏 · 2019 · 行测 · A类** ｜ 135 题 · 图片 208 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -165,7 +165,7 @@ C
 
 本题考查科技常识。
 
-A项正确，2019年1月3日，嫦娥四号探测器登陆月球背面，搭载了由中国科学院空天信息研究院研制的巡视器（“玉兔二号”月球车）测月雷达和着陆器低频射电频谱仪有效载荷。1月4日00时20分，低频射电频仪成功加电开机，设备自检正常；当日8时42分，测月雷达成功加电开机，设备自检正常。我国成为国际上首次实现在月球背面开展低频射电天文观测的国家，填补了对100KHz![](assets-fenbi-89292/a0ff4a066be39e2f4e58d667d55bcdfca9585cd4be9a8a33611c5ad60f59f8c1.png)10MHz低频射电天文方面的科学空白。
+A项正确，2019年1月3日，嫦娥四号探测器登陆月球背面，搭载了由中国科学院空天信息研究院研制的巡视器（“玉兔二号”月球车）测月雷达和着陆器低频射电频谱仪有效载荷。1月4日00时20分，低频射电频仪成功加电开机，设备自检正常；当日8时42分，测月雷达成功加电开机，设备自检正常。我国成为国际上首次实现在月球背面开展低频射电天文观测的国家，填补了对100KHz~10MHz低频射电天文方面的科学空白。
 
 B项正确，2018年12月8日凌晨2时23分，我国探月工程再次出发——嫦娥四号成功发射。嫦娥四号最终将降落在月球背面，实现人类首次月球背面软着陆和巡视探测。
 
@@ -517,9 +517,9 @@ C
 
 A项正确，“风树之悲”出自《韩诗外传》卷九，原文是“树欲静而风不止，子欲养而亲不待”。指因父母亡故，不能奉养的悲伤。
 
-B项正确，“金兰之交”最早出自《周易![](assets-fenbi-89292/a99a08b63b928bc573f310791081af1972529535cd7a71ef27fad002db2c357b.png)系辞上》“二人同心，其利断金；同心之言，其臭如兰”。原指牢固而融洽的友情，后用做结拜为兄弟姐妹的代称。
+B项正确，“金兰之交”最早出自《周易·系辞上》“二人同心，其利断金；同心之言，其臭如兰”。原指牢固而融洽的友情，后用做结拜为兄弟姐妹的代称。
 
-C项错误，“期颐之年”出自《礼记![](assets-fenbi-89292/a99a08b63b928bc573f310791081af1972529535cd7a71ef27fad002db2c357b.png)曲礼上》中“百年曰期颐”一句，意为百岁老人饮食起居不能自理，一切需期待别人供养或照顾。因此，“期颐之年”指一百岁，而不是八、九十岁。
+C项错误，“期颐之年”出自《礼记·曲礼上》中“百年曰期颐”一句，意为百岁老人饮食起居不能自理，一切需期待别人供养或照顾。因此，“期颐之年”指一百岁，而不是八、九十岁。
 
 D项正确，“弄璋”指的是古人把璋给男孩玩，希望他将来有玉一样的品德。因此，“弄璋之喜”旧时常用以祝贺生了男孩的喜庆。
 
@@ -597,7 +597,7 @@ B项正确，由于太阳辐射和重力作用，地球上存在水循环。地�
 
 C项正确，地球上水的存在形态有三种：固态、液态、气态。大部分以液态的形态存在；在寒冷的极地和高山上水常常以固态的形态存在；空气中的水主要以气态的形态存在。自然界的水随着温度的改变，状态也会发生变化。
 
-D项错误，冰川水是地球上最宝贵、最丰富的淡水资源，蕴藏了所有淡水资源的![](assets-fenbi-89292/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)。但多处于极端的特殊地理位置，要么在南极、北极，要么在极高山上，所以冰川水具有极高的价值，但开采条件极其艰难。
+D项错误，冰川水是地球上最宝贵、最丰富的淡水资源，蕴藏了所有淡水资源的2/3。但多处于极端的特殊地理位置，要么在南极、北极，要么在极高山上，所以冰川水具有极高的价值，但开采条件极其艰难。
 
 本题为选非题，故正确答案为D。
 
@@ -1779,7 +1779,7 @@ B
 
 **解析**
 
-数列相邻项存在明显的倍数关系，优先考虑作商。后项÷前项，可得：![](assets-fenbi-89292/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)、![](assets-fenbi-89292/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)、1、2、（ ），新数列是公比为2的等比数列，则下一项为4，故所求项为![](assets-fenbi-89292/d3334fd1eb5999ecffd68e87ec151f042a3e16dfd742710efb8e7aa3980940b4.png)。
+数列相邻项存在明显的倍数关系，优先考虑作商。后项÷前项，可得：1/4、1/2、1、2、（ ），新数列是公比为2的等比数列，则下一项为4，故所求项为![](assets-fenbi-89292/d3334fd1eb5999ecffd68e87ec151f042a3e16dfd742710efb8e7aa3980940b4.png)。
 
 故正确答案为B。
 
@@ -1825,15 +1825,15 @@ C
 
 ### 第 48 题
 
-![](assets-fenbi-89292/9115962fa7f6d8749c0bf8d3c18c6632f4971f37818f04d6a1fbbbad573c34ab.png)，![](assets-fenbi-89292/c12f998b878ba9342e7936d974f9ff615e3d6f3d5ce0b0c21f8cd792d4cf157d.png)，![](assets-fenbi-89292/53fcda22cb759e31a0d384de5e3abfdaf497a62bb2902ebd12ecf5b95e5332d1.png)，![](assets-fenbi-89292/d6e30b4d3439d3f278ae1757efbee3cc650f21c42bc5deebb9919ce9040aad15.png)，4，（ ）
+√6，√22，√14，3√2，4，（ ）
 
-A. ![](assets-fenbi-89292/d9a581a2e98cf6a91b0c9d1cb12a1c0a716554f85d4c7eccdab5e9c238697e81.png)
+A. √15
 
-B. ![](assets-fenbi-89292/c25f59c475d436e79dd6fb180b3b91fc2d6b55c7f2dff0f0d813bac85ce8d500.png)
+B. √17
 
-C. ![](assets-fenbi-89292/fee190e623f333c649aff5d9d24dccfbbfc1fa753fef6779c326989726b0e946.png)
+C. √29
 
-D. ![](assets-fenbi-89292/b1e3f8634a62515399883818cc9da4784f866dbedca899399ddae8a65dd0a0b6.png)
+D. √21
 
 <details><summary>第 48 题 · 答案与解析</summary>
 
@@ -1843,7 +1843,7 @@ B
 
 **解析**
 
-将题干统一转化为根式：![](assets-fenbi-89292/9115962fa7f6d8749c0bf8d3c18c6632f4971f37818f04d6a1fbbbad573c34ab.png)、![](assets-fenbi-89292/c12f998b878ba9342e7936d974f9ff615e3d6f3d5ce0b0c21f8cd792d4cf157d.png)、![](assets-fenbi-89292/53fcda22cb759e31a0d384de5e3abfdaf497a62bb2902ebd12ecf5b95e5332d1.png)、![](assets-fenbi-89292/53850819c9bb612e0a02f6a23a3b53ecdd1db6cd0d350af81400fcca9cb0dc56.png)、![](assets-fenbi-89292/66b23d105b727b88e6270d77ca3d97ee497fa9834d542bb649c344ca3f3f58f6.png)、（），观察根号内数字规律。后项-前项，可得16、-8、4、-2、（），是公比为![](assets-fenbi-89292/003de4b46cd19e5d0d3fff69540ae762aecef62c26b2344aa0228274c389a482.png)的等比数列，则下一项![](assets-fenbi-89292/4cf854af7f0fc6468222bcbf5230ec3c4c83806e029b9579c52ef97ce523877e.png)。故题干所求项![](assets-fenbi-89292/05f16518ddadc3589eb36e983ed0c761dca774e8d54433a2a0399f3349bb11f3.png)。
+将题干统一转化为根式：√6、√22、√14、√18、√16、（），观察根号内数字规律。后项-前项，可得16、-8、4、-2、（），是公比为![](assets-fenbi-89292/003de4b46cd19e5d0d3fff69540ae762aecef62c26b2344aa0228274c389a482.png)的等比数列，则下一项![](assets-fenbi-89292/4cf854af7f0fc6468222bcbf5230ec3c4c83806e029b9579c52ef97ce523877e.png)。故题干所求项![](assets-fenbi-89292/05f16518ddadc3589eb36e983ed0c761dca774e8d54433a2a0399f3349bb11f3.png)。
 
 故正确答案为B。
 
@@ -1893,15 +1893,15 @@ A
 
 ### 第 50 题
 
-![](assets-fenbi-89292/0ed9dbf98304868758eb2aea2a4b3ee397e311a1ac1217126c70b8952bc11dd5.png)，![](assets-fenbi-89292/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)，![](assets-fenbi-89292/0410c983fe9ce0110d5c2dba9b4634fc714b475fd5aad21323e05bb5e8c746d6.png)，![](assets-fenbi-89292/7657a6eb100d5707a23a17df99107b5a8d6217b915a50e600a4a9a9af6cfb6c9.png)，![](assets-fenbi-89292/b413fa6bbafa68ea2c3989c057a7750a006583e7f376bf2eb1f3443f595d6491.png)，（ ）
+5/7，1/4，2/3，6/25，20/31，（ ）
 
-A. ![](assets-fenbi-89292/cd03353b5013da719825e414f0b3fd50befc39395cb9b3f08afae09c0d0f4d0b.png)
+A. 3/18
 
-B. ![](assets-fenbi-89292/919a94673023d9d5836315e9f25a34b41172088dc82f08cc79847bdcbbb2923a.png)
+B. 3/17
 
-C. ![](assets-fenbi-89292/9d3c19c48b0111b22798189fc1b182bdb2b3353375d0fe6e1d39728c87ac7190.png)
+C. 4/17
 
-D. ![](assets-fenbi-89292/1a1683e876e7dfc18b25ea0eaa0baa383b9e87f2274329eb0b273ff6b9ebb731.png)
+D. 8/23
 
 <details><summary>第 50 题 · 答案与解析</summary>
 
@@ -1911,7 +1911,7 @@ C
 
 **解析**
 
-数列中全为分数，判定为分数数列。观察分子分母，增减规律不统一，考虑反约分。将原数列化为：![](assets-fenbi-89292/0ed9dbf98304868758eb2aea2a4b3ee397e311a1ac1217126c70b8952bc11dd5.png)，![](assets-fenbi-89292/be81a73a5c3654044a33f495298069e20c97a37218061f006b7f3ceef312d063.png)，![](assets-fenbi-89292/dc0dbc6b78b76ce65dca0ed473a8249a7e7d3c4e5e6eba9860947e05166d4fce.png)，![](assets-fenbi-89292/7657a6eb100d5707a23a17df99107b5a8d6217b915a50e600a4a9a9af6cfb6c9.png)，![](assets-fenbi-89292/b413fa6bbafa68ea2c3989c057a7750a006583e7f376bf2eb1f3443f595d6491.png)，后项分母=前项分子+前项分母，则所求项分母为20+31=51；后项分子=前项分母-前项分子+1，所求项分子为31-20+1=12。则所求项为![](assets-fenbi-89292/3fa491af204cf84c2527e02d2387bcd103ba1ab8e7da9fb321dabed91abc9f69.png)![](assets-fenbi-89292/45badf38d72a732f707aae42247acdad9955f77429ea5f88f1037bb338c17bdd.png)。
+数列中全为分数，判定为分数数列。观察分子分母，增减规律不统一，考虑反约分。将原数列化为：5/7，3/12，10/15，6/25，20/31，后项分母=前项分子+前项分母，则所求项分母为20+31=51；后项分子=前项分母-前项分子+1，所求项分子为31-20+1=12。则所求项为12/51=4/17。
 
 故正确答案为C。
 
@@ -1971,7 +1971,7 @@ D
 
 **解析**
 
-第二次混合50克水后，配置盐水共600克，则第一次混合配置得到盐水质量为600-50=550克，溶质质量为![](assets-fenbi-89292/50bf0303d8effb078a317e474de6b458c948b57f118a8a1067b214ae73551ca2.png)![](assets-fenbi-89292/9d46e53aa9243be2604ad6477a94d80da306ca620b98c0fda8b08788303a9ed1.png)克。设第一次混合配置浓度为12%的盐水有x克，则浓度为24%盐水550-x克，根据溶质的量不变，可得方程![](assets-fenbi-89292/1e1e3a151ac4864c30186c0d414855b505733ac4fff774bda22f3cf7d19fb54b.png)![](assets-fenbi-89292/36634ba88b3b66dd73b754b5d3662e024efb9d9ce756fb4597a601659694b0cd.png)，解得x=200克，则浓度为12%的盐水质量为200克，浓度为24%盐水质量为550-200=350克，浓度为12%与浓度为24%的溶液质量之比为200:350=4:7。
+第二次混合50克水后，配置盐水共600克，则第一次混合配置得到盐水质量为600-50=550克，溶质质量为![](assets-fenbi-89292/50bf0303d8effb078a317e474de6b458c948b57f118a8a1067b214ae73551ca2.png)=108克。设第一次混合配置浓度为12%的盐水有x克，则浓度为24%盐水550-x克，根据溶质的量不变，可得方程![](assets-fenbi-89292/1e1e3a151ac4864c30186c0d414855b505733ac4fff774bda22f3cf7d19fb54b.png)![](assets-fenbi-89292/36634ba88b3b66dd73b754b5d3662e024efb9d9ce756fb4597a601659694b0cd.png)，解得x=200克，则浓度为12%的盐水质量为200克，浓度为24%盐水质量为550-200=350克，浓度为12%与浓度为24%的溶液质量之比为200:350=4:7。
 
 故正确答案为D。
 
@@ -2019,13 +2019,13 @@ B项：当学生人数为53时，53-2=51，可以被3整除。53-3=50，可以�
 
 已知一个箱子中装有12件产品，其中有2件次品。若从箱子中随机抽取2件产品进行检验，则恰好抽到1件次品的概率是
 
-A. ![](assets-fenbi-89292/55207b88d0131c1489926f66b8e8c5b7c6d6ca17979a6201410c263c9c919905.png)
+A. 13/22
 
-B. ![](assets-fenbi-89292/dad267a40f2edbdf6500987baff46e676f4606a70ccf38ea35ddd0927e33982f.png)
+B. 10/33
 
-C. ![](assets-fenbi-89292/36ae5d60725a5d4baa0dec141d36b65306e14a44535bf5a8bb6df3059c449538.png)
+C. 7/11
 
-D. ![](assets-fenbi-89292/c4b9ea2bd1727459412d64c7e596e25b20285cd9aef9c4a450e97979ef6eda14.png)
+D. 8/11
 
 <details><summary>第 54 题 · 答案与解析</summary>
 
@@ -2035,7 +2035,7 @@ B
 
 **解析**
 
-若恰好抽到1件次品，则意味抽到1件合格产品和1件次品，共有![](assets-fenbi-89292/0b524508355de095ec9f4292b6c6cc5b0fb4674598dd5bfe0ea4ccb4718d1b87.png)![](assets-fenbi-89292/7e7ec59dbc51f1ecd30032321fd63dc225d107b91a0e4e3985d9528e13d2976a.png)种情况。从12件产品抽2件产品检验，共有![](assets-fenbi-89292/ca3c342ff8c93b24bbd2afa6dac12b6a1d8f80c0ee0078295d034449298f5292.png)种情况，故恰好抽到1件次品的概率![](assets-fenbi-89292/f827535d4b72de065066a574f2ad61bc26c38c2d65910d3bb978498739fc88bd.png)。
+若恰好抽到1件次品，则意味抽到1件合格产品和1件次品，共有C_10^1C_2^1=20种情况。从12件产品抽2件产品检验，共有![](assets-fenbi-89292/ca3c342ff8c93b24bbd2afa6dac12b6a1d8f80c0ee0078295d034449298f5292.png)种情况，故恰好抽到1件次品的概率![](assets-fenbi-89292/f827535d4b72de065066a574f2ad61bc26c38c2d65910d3bb978498739fc88bd.png)。
 
 故正确答案为B。
 
@@ -2065,7 +2065,7 @@ C
 
 **解析**
 
-总利润=单个利润![](assets-fenbi-89292/eb488a6df43424be8fdab5ac3b9772bd351234bf71398a06743439fa9508cd8c.png)数量，由题可知，生产1件乙产品的利润远大于甲，若全部生产乙产品，最多可生产![](assets-fenbi-89292/26908e19658762a5d9cc9d7391347f4dcb11fd7dea171f693c2e28710627ccd7.png)件，此时利润为![](assets-fenbi-89292/ba9ecf52276c6f324320673f5375feef346cd7bf89d9b5d6164f5a9b51f1fb92.png)元，并非最大利润；生产一件甲产品的耗材比乙产品少，若全部生产甲产品，最多可生产![](assets-fenbi-89292/923e3cdc47ca2f765c135b600a741117dc150fa419ef1f02f8b2beb62c788728.png)件，此时利润为![](assets-fenbi-89292/8268a63e3fe2dc16dcfc4092e713294b6ccdc65fc7fe6e44d5f8c683917007b4.png)元，并非最大利润。因此实际生产过程中，甲、乙两种产品均有生产，应统筹考虑。
+总利润=单个利润×数量，由题可知，生产1件乙产品的利润远大于甲，若全部生产乙产品，最多可生产![](assets-fenbi-89292/26908e19658762a5d9cc9d7391347f4dcb11fd7dea171f693c2e28710627ccd7.png)件，此时利润为![](assets-fenbi-89292/ba9ecf52276c6f324320673f5375feef346cd7bf89d9b5d6164f5a9b51f1fb92.png)元，并非最大利润；生产一件甲产品的耗材比乙产品少，若全部生产甲产品，最多可生产![](assets-fenbi-89292/923e3cdc47ca2f765c135b600a741117dc150fa419ef1f02f8b2beb62c788728.png)件，此时利润为![](assets-fenbi-89292/8268a63e3fe2dc16dcfc4092e713294b6ccdc65fc7fe6e44d5f8c683917007b4.png)元，并非最大利润。因此实际生产过程中，甲、乙两种产品均有生产，应统筹考虑。
 
 设最多可生产甲、乙两种产品各x、y个，最大利润时生产多即耗材多，假设两种材料全部耗尽，则甲、乙消耗的a与b材料可表示为：2x+5y=200···①；3x+4y=240···②。联立方程组解得![](assets-fenbi-89292/4f3ea1d845a607a87fe3353aa8768fc26d4a55a5d80a4c8b0b5526ec3ed49f89.png)，则乙最大只能取到17。将y=17代入①式或②式中，解得x最大可取到57。即甲最多可生产57个，乙最多可生产17个。则可获得的最大利润=57×1000+17×1700=57000+28900=85900元。
 
@@ -2219,7 +2219,7 @@ A. ![](assets-fenbi-89292/e3db28f36416f2845d2c2209d7f0c71c1db78eec7113e250ba4575
 
 B. 57x+24
 
-C. ![](assets-fenbi-89292/7f767aeca6d9bcd2f201e449f2f903cc6e5b36e716793f3decd6cd84bb574f7b.png)
+C. x^2+24
 
 D. x+4
 
@@ -2231,7 +2231,7 @@ A
 
 **解析**
 
-根据题意，所有人的得分=得分至少3分的得分之和+3分以下的得分之和=最多7分的得分之和+7分以上的得分之和。设总人数为y人，则有![](assets-fenbi-89292/c5a3336ff949f3050333a89d3eb3f7484176d2002780e060b749b0476b854821.png)![](assets-fenbi-89292/b3946785b2833f51cd293894f5bb253262198606fb0d74520a0e580d3487e4ce.png)![](assets-fenbi-89292/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-89292/feeb389f4020c248979ae9f83666ded990d0c69cbb4b3db82892d9ac9647ab94.png)![](assets-fenbi-89292/0e7bcb1187df841de3604e92737ba709a55bba4ee7f652a75850ddac25d1caed.png)，解方程得![](assets-fenbi-89292/4a45f24f115731d422acdfe8ed707289945cddb6026b1ec4a8cec1a4a9ef21f0.png)。
+根据题意，所有人的得分=得分至少3分的得分之和+3分以下的得分之和=最多7分的得分之和+7分以上的得分之和。设总人数为y人，则有![](assets-fenbi-89292/c5a3336ff949f3050333a89d3eb3f7484176d2002780e060b749b0476b854821.png)![](assets-fenbi-89292/b3946785b2833f51cd293894f5bb253262198606fb0d74520a0e580d3487e4ce.png)=![](assets-fenbi-89292/feeb389f4020c248979ae9f83666ded990d0c69cbb4b3db82892d9ac9647ab94.png)![](assets-fenbi-89292/0e7bcb1187df841de3604e92737ba709a55bba4ee7f652a75850ddac25d1caed.png)，解方程得![](assets-fenbi-89292/4a45f24f115731d422acdfe8ed707289945cddb6026b1ec4a8cec1a4a9ef21f0.png)。
 
 故正确答案为A。
 
@@ -2261,7 +2261,7 @@ D
 
 **解析**
 
-安排10人铲雪，即有![](assets-fenbi-89292/e75a6e1641d03cd90f26cfc0488679c8349af588441a6064b821a16d1d4ebf2e.png)组，赋每组工作效率为1，可得总雪量为5×1×3.5×60=1050，若要在100分钟完成，则需要组数![](assets-fenbi-89292/ba823830b0e08de877afd4cb09837f5879f67effd65171a69a5d0c976864d725.png)组，即至少需要11组，每组3人，则需安排的员工人数最少是11×3=33。
+安排10人铲雪，即有10/2=5组，赋每组工作效率为1，可得总雪量为5×1×3.5×60=1050，若要在100分钟完成，则需要组数![](assets-fenbi-89292/ba823830b0e08de877afd4cb09837f5879f67effd65171a69a5d0c976864d725.png)组，即至少需要11组，每组3人，则需安排的员工人数最少是11×3=33。
 
 故正确答案为D。
 
@@ -2295,11 +2295,11 @@ D
 
 方法一：设老张慢走的速度为1，小李跑步的速度为y（y＞1），相向而行相遇时间为t，同向而行追上时间为xt。根据行程问题基本公式S=速度差×追及时间=速度和×相遇时间，得S=（y-1）×xt=（y+1）×t，则![](assets-fenbi-89292/3df0e1480dc6e83032da2e44b3210a36ad25754d30859b5baf03cf3a17f08713.png)， D项图示最符合。
 
-备注：![](assets-fenbi-89292/6b17e5b1c1374560a8136e3515d28abc61119afb903952b9c284df5e046ab7a5.png)（k≠0），为反比例函数。当k＞0时，其图像为在一、三象限的两条双曲线，形如下图所示：
+备注：y=k/x（k≠0），为反比例函数。当k＞0时，其图像为在一、三象限的两条双曲线，形如下图所示：
 
 ![](assets-fenbi-89292/53e4379db2ff3cee563a05ec8b517f70569d0b3aa924e32bb0b6858513a3f030.png)
 
-方法二：由于题目中并未给出具体数据，采用赋值法讨论y与x的关系。设跑道长400米，当小李跑步速度是老张慢跑速度的2倍时,即y=2时，同向而行追上所需时间为![](assets-fenbi-89292/8f12c8fe54b3305a74aeb322b9be8a9a32bf27f201ac68200c99e96b6517bc77.png)，相向而行相遇时间为![](assets-fenbi-89292/5776931c318ee15508fb8e957de032d0cf380aa3aa30789cee6aa249c62866a9.png)，![](assets-fenbi-89292/93c170789c172e39f6880bd2df8cdfa742041d34d6f7fad84ad6ad063081d6e4.png)![](assets-fenbi-89292/ad54d2a61eedab3e2f057bcab9b954747d06d72239f9361e063c76d66df7c19e.png)；当y=3时，![](assets-fenbi-89292/2cb70efb72fdef93c6f30daaea207ba2ef40186cd1a2d53af0e4327f771c2bba.png)![](assets-fenbi-89292/139a39e5c6d6ed40774fa402725a5924284c86d136a28784f0a37ae87e4f4e2f.png)；当y=4时，![](assets-fenbi-89292/7fd6bf1e4b3e84b3bcf4a8a23f296658c7c04644413261cf6f67ba81432b54dd.png)![](assets-fenbi-89292/35933a3a0ecf0d672438a5bf5806b0d1530fe1dca044d4e2f5977b8c7e58220b.png)；当y=5，![](assets-fenbi-89292/28ae86360529266c85fee07550bbb668ebf9a54a963b90dc30214bcb0ecea9cf.png)![](assets-fenbi-89292/6b5fb00a183e176cdd48a95def714a79392980d1bf57e9e1044fecefbdec7b35.png)…可知，y取值越大，x的值越小，且变化幅度逐渐平缓，与D项一致。
+方法二：由于题目中并未给出具体数据，采用赋值法讨论y与x的关系。设跑道长400米，当小李跑步速度是老张慢跑速度的2倍时,即y=2时，同向而行追上所需时间为![](assets-fenbi-89292/8f12c8fe54b3305a74aeb322b9be8a9a32bf27f201ac68200c99e96b6517bc77.png)，相向而行相遇时间为![](assets-fenbi-89292/5776931c318ee15508fb8e957de032d0cf380aa3aa30789cee6aa249c62866a9.png)，x=![](assets-fenbi-89292/ad54d2a61eedab3e2f057bcab9b954747d06d72239f9361e063c76d66df7c19e.png)；当y=3时，![](assets-fenbi-89292/2cb70efb72fdef93c6f30daaea207ba2ef40186cd1a2d53af0e4327f771c2bba.png)=2；当y=4时，![](assets-fenbi-89292/7fd6bf1e4b3e84b3bcf4a8a23f296658c7c04644413261cf6f67ba81432b54dd.png)=5/3；当y=5，![](assets-fenbi-89292/28ae86360529266c85fee07550bbb668ebf9a54a963b90dc30214bcb0ecea9cf.png)=3/2…可知，y取值越大，x的值越小，且变化幅度逐渐平缓，与D项一致。
 
 故正确答案为D。
 
@@ -2331,7 +2331,7 @@ D
 
 **解析**
 
-因为G是平行四边形对角线的交点，则S△ABC![](assets-fenbi-89292/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89292/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png) 平行四边形ABCD，又因为AB＝3AE，所以![](assets-fenbi-89292/d7cd9f0a152182bcdc24d885353f31aafd95b2af0091b7a2a31b29a968b3465c.png)![](assets-fenbi-89292/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89292/7afd0046620668df56ad0d2555716a0734f042fe61c0548e10535b7b31bc8d0c.png)平行四边形ABCD。因为AE//CD，所以△AEF相似△CDF，故EF：FD＝AE：CD＝1:3，即EF:ED=1:4，且△AEF与△AED同高，所以S△AEF![](assets-fenbi-89292/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89292/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)![](assets-fenbi-89292/bb661599fe4b906ab3e8192dd98044a9a4ab82e7a5a7be0f707a10d9ead5b6f6.png)，则S△AEF![](assets-fenbi-89292/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89292/e2352de5e45821dbe595ec026b2cb719f6c03d9f1660f80bee642a12e90ab5a4.png)平行四边形ABCD。S四边形EFGB＝S△AGB－S△AEF![](assets-fenbi-89292/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89292/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)平行四边形ABCD![](assets-fenbi-89292/1961b351cf65f914cdd779db546077bf673a5b906da96b5487d9e29b8de701a6.png)![](assets-fenbi-89292/e2352de5e45821dbe595ec026b2cb719f6c03d9f1660f80bee642a12e90ab5a4.png)平行四边形ABCD![](assets-fenbi-89292/b14eb728690df59a5d8716c7a1c41d196939dca4001fb6e32e9d7ec4adca6d4d.png)![](assets-fenbi-89292/df66b1e89fc2f135e1d887c3411ef5689dff601c2f3a1597114ecdae131340b4.png)平行四边形ABCD。
+因为G是平行四边形对角线的交点，则S△ABC=1/2 平行四边形ABCD，又因为AB＝3AE，所以![](assets-fenbi-89292/d7cd9f0a152182bcdc24d885353f31aafd95b2af0091b7a2a31b29a968b3465c.png)=1/6平行四边形ABCD。因为AE//CD，所以△AEF相似△CDF，故EF：FD＝AE：CD＝1:3，即EF:ED=1:4，且△AEF与△AED同高，所以S△AEF=1/4![](assets-fenbi-89292/bb661599fe4b906ab3e8192dd98044a9a4ab82e7a5a7be0f707a10d9ead5b6f6.png)，则S△AEF=1/24平行四边形ABCD。S四边形EFGB＝S△AGB－S△AEF=1/4平行四边形ABCD![](assets-fenbi-89292/1961b351cf65f914cdd779db546077bf673a5b906da96b5487d9e29b8de701a6.png)1/24平行四边形ABCD=5/24平行四边形ABCD。
 
 ![](assets-fenbi-89292/85f1e2978eb92b2cc39215658057f3847a4694ef645b40ae286c68ed9d640b0f.png)
 
@@ -2347,13 +2347,13 @@ D
 
 将一根绳子任意分成三段，则此三段能构成一个三角形的概率是
 
-A. ![](assets-fenbi-89292/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)
+A. 1/4
 
-B. ![](assets-fenbi-89292/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)
+B. 1/3
 
-C. ![](assets-fenbi-89292/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)
+C. 1/2
 
-D. ![](assets-fenbi-89292/ae8bec10528b530fa7c989ac031ec7dc137c32c0f2e332f5cae9501440745b99.png)
+D. 3/4
 
 <details><summary>第 64 题 · 答案与解析</summary>
 
@@ -3385,7 +3385,7 @@ A
 
 ②-（不战自败、不打自垮）→信仰、信念、信心。
 
-将①②串联后可递推出：③-（不战自败、不打自垮）![](assets-fenbi-89292/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)信仰、信念、信心![](assets-fenbi-89292/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)愈挫愈奋、愈战愈勇。
+将①②串联后可递推出：③-（不战自败、不打自垮）→信仰、信念、信心→愈挫愈奋、愈战愈勇。
 
 第二步：逐一分析选项。
 
@@ -4545,7 +4545,7 @@ B
 
 **解析**
 
-“居民在一天的活动中，有酬劳动······农村居民5小时1分钟；无酬劳动······农村居民2小时39分钟”，统一单位为分钟，则受访农村居民在一天的活动中，有酬劳动301分钟；无酬劳动159分钟，故受访农村居民每日无酬劳动平均用时占其劳动平均用时的比重![](assets-fenbi-89292/9cedb878e16baff47f0fd4065081e718cd82cf79ec5b3b6da2b2f72928dfd87a.png)![](assets-fenbi-89292/2616a177d457263d3520a5c261d4f7d935fe51073e118e67f2191ce555e25b49.png)![](assets-fenbi-89292/7753f0aca25b065681ab0fbf146a1e40948007cea1e93a0d91419342c270d874.png)![](assets-fenbi-89292/bbd8b1f8321485f010d1ae507689a134580710fe2ba54e0c18c656fbcc51e6c9.png)。
+“居民在一天的活动中，有酬劳动······农村居民5小时1分钟；无酬劳动······农村居民2小时39分钟”，统一单位为分钟，则受访农村居民在一天的活动中，有酬劳动301分钟；无酬劳动159分钟，故受访农村居民每日无酬劳动平均用时占其劳动平均用时的比重=部分/整体![](assets-fenbi-89292/2616a177d457263d3520a5c261d4f7d935fe51073e118e67f2191ce555e25b49.png)=159/460![](assets-fenbi-89292/bbd8b1f8321485f010d1ae507689a134580710fe2ba54e0c18c656fbcc51e6c9.png)。
 
 故正确答案为B。
 
@@ -4747,7 +4747,7 @@ B
 
 进口：![](assets-fenbi-89292/0ad5d6aeb39f3184449cbde4ee5a46a7ecb07cbc9451705bb7f92a85c5779a78.png)\>10倍，排除；
 
-旅游外汇收入：![](assets-fenbi-89292/f8fbb3b3422c597cb053f548ecb74a9d13592ffe3ae7e48db5cd3f7f5e52ab61.png)\>10倍，排除；
+旅游外汇收入：37.62/1.91\>10倍，排除；
 
 城镇常住居民人均可支配收入：![](assets-fenbi-89292/f5ac8812ca1ffe85e444fe856a849f3ceb2d5ffa996476b21877af9c2388d6da.png)倍<2倍，符合；
 
@@ -5193,13 +5193,13 @@ A
 
 **解析**
 
-A项：由文字材料可得：我国乙烯产量2018年为129万吨，由折线图可得：2017年=36+40+44+24=144万吨，2016年=36+42+41+41=160万吨。代入公式：![](assets-fenbi-89292/0fa601aa0c4f6f6fd816297ed5d1e7eb84349b7db224b11ad6b8928a515bfea4.png)![](assets-fenbi-89292/fbcc3c8ab067999c32007a0f4bde4e5130fc5e9bf875140a995cfbda559e57a9.png)，2018年增速![](assets-fenbi-89292/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-89292/a9411d60d92a5867265c91c70d640ff4f6e14a9b3dcf47ea3946d54e395bd050.png)![](assets-fenbi-89292/a95202284f49406631122e8288b9d753522a79298b2c0b2776ed6db5865411ad.png)![](assets-fenbi-89292/68254c333e6248e6cdec8db78980076a4ac3a3fcbdd08db76b7c8acfe5a6ff2d.png)，2017年增速![](assets-fenbi-89292/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-89292/6baeebbe5f499b1e39bef77e0ce7af7305818dad47aa8b27943feecd4e448e7b.png)![](assets-fenbi-89292/def66f195423c447666d2ccc1d9cf423ee008cce3c1fed10f18b696bbbc6db3c.png)![](assets-fenbi-89292/6332a173d5081d6195324e38eb815245531d9caa0be0cc8c122d3051cb9e38e1.png)，-10.4%＜-10%，即2018年我国乙烯产量增速比上年有所下降，正确；
+A项：由文字材料可得：我国乙烯产量2018年为129万吨，由折线图可得：2017年=36+40+44+24=144万吨，2016年=36+42+41+41=160万吨。代入公式：![](assets-fenbi-89292/0fa601aa0c4f6f6fd816297ed5d1e7eb84349b7db224b11ad6b8928a515bfea4.png)![](assets-fenbi-89292/fbcc3c8ab067999c32007a0f4bde4e5130fc5e9bf875140a995cfbda559e57a9.png)，2018年增速=![](assets-fenbi-89292/a9411d60d92a5867265c91c70d640ff4f6e14a9b3dcf47ea3946d54e395bd050.png)=-15/144![](assets-fenbi-89292/68254c333e6248e6cdec8db78980076a4ac3a3fcbdd08db76b7c8acfe5a6ff2d.png)，2017年增速=![](assets-fenbi-89292/6baeebbe5f499b1e39bef77e0ce7af7305818dad47aa8b27943feecd4e448e7b.png)=-16/160![](assets-fenbi-89292/6332a173d5081d6195324e38eb815245531d9caa0be0cc8c122d3051cb9e38e1.png)，-10.4%＜-10%，即2018年我国乙烯产量增速比上年有所下降，正确；
 
 B项：由折线图可得：2016年二季度至2016年三季度，硫酸产量由1438万吨降至1420万吨和乙烯产量由42万吨降至41万吨，均下降，变动方向相同，并非始终相反，错误；
 
 C项：由折线图可得：2016年二季度至2018年四季度，我国烧碱产量环比正增长的季度有：2016年二季度、2016年四季度、2017年一季度、2017年三季度、2018年一季度、2018年二季度和2018年四季度，共7个季度；我国纯碱产量环比正增长的季度有：2016年二季度、2016年四季度、2017年二季度、2018年一季度、2018年三季度和2018年四季度，共6个季度，季度个数不同，错误；
 
-D项：由折线图可得：2016年一季度至2018年四季度，我国每个季度的纯碱产量。代入公式：![](assets-fenbi-89292/7caf2c3b918ad9043efb5f58a11176ca399fac44bd62bfe60f8b76d05feb3f28.png)，2017年四季度环比增速![](assets-fenbi-89292/1c2a8112435f1c99ae7742e29f0775d9be2f1b2175653eac2502e12881dac6cf.png)![](assets-fenbi-89292/0dc6b65a1610379d5f18e48dc65309144f88076e3c5cfb6d5f4b5def4847bb7c.png)![](assets-fenbi-89292/24adaf414541283e0ed24bd1d0877682e1abab313b76eea09bbd0e35b13274fe.png)；观察各季度数据，发现2017年一季度环比下降较多，优先计算2017年一季度环比增速![](assets-fenbi-89292/32ad135892e246cd50901587b34bba21906f130a1b3e430845b79fd19702c5f9.png)![](assets-fenbi-89292/7fff4d742f8900f2738af9e721d1687dddbace3692a8c10b8167b8e430ab4d4b.png)![](assets-fenbi-89292/d3ea76adb1f0a692e5afa8a7700e2991b99b7cedade0f2ca7d96b7e328f1df8c.png)，2017年四季度环比增速>2017年一季度，即2017年四季度我国纯碱产量环比增速并非最小，错误。
+D项：由折线图可得：2016年一季度至2018年四季度，我国每个季度的纯碱产量。代入公式：![](assets-fenbi-89292/7caf2c3b918ad9043efb5f58a11176ca399fac44bd62bfe60f8b76d05feb3f28.png)，2017年四季度环比增速![](assets-fenbi-89292/1c2a8112435f1c99ae7742e29f0775d9be2f1b2175653eac2502e12881dac6cf.png)=-57/660![](assets-fenbi-89292/24adaf414541283e0ed24bd1d0877682e1abab313b76eea09bbd0e35b13274fe.png)；观察各季度数据，发现2017年一季度环比下降较多，优先计算2017年一季度环比增速![](assets-fenbi-89292/32ad135892e246cd50901587b34bba21906f130a1b3e430845b79fd19702c5f9.png)=-86/680![](assets-fenbi-89292/d3ea76adb1f0a692e5afa8a7700e2991b99b7cedade0f2ca7d96b7e328f1df8c.png)，2017年四季度环比增速>2017年一季度，即2017年四季度我国纯碱产量环比增速并非最小，错误。
 
 故正确答案为A。
 

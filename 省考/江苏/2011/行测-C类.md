@@ -15,7 +15,7 @@
 # 2011年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2011 · 行测 · C类** ｜ 100 题 · 图片 145 处 · 答案随题折叠
+> **江苏 · 2011 · 行测 · C类** ｜ 100 题 · 图片 141 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -660,7 +660,7 @@ B
 
 ### 第 18 题
 
-128，（    ），8，2，4，![](assets-fenbi-195/20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3.png)
+128，（    ），8，2，4，1/2
 
 A. 64
 
@@ -678,7 +678,7 @@ C
 
 **解析**
 
-本题为乘积递推数列。将原数列倒过来看为：![](assets-fenbi-195/20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3.png)、4、2、8、(16）、128，递推规律为：数列相邻两项的乘积为数列的下一项。具体规律为：![](assets-fenbi-195/0518e7a611b294b099f98b71b9d3353bfeef7e6f3340200073349b966cfd9e14.png)，![](assets-fenbi-195/fd52170531616165cd2dbb469e0f520eb49b5781fbc35946e976ab2b941404a8.png)，2×8=(16)，8×(16)=128，因此括号内为16。
+本题为乘积递推数列。将原数列倒过来看为：1/2、4、2、8、(16）、128，递推规律为：数列相邻两项的乘积为数列的下一项。具体规律为：![](assets-fenbi-195/0518e7a611b294b099f98b71b9d3353bfeef7e6f3340200073349b966cfd9e14.png)，![](assets-fenbi-195/fd52170531616165cd2dbb469e0f520eb49b5781fbc35946e976ab2b941404a8.png)，2×8=(16)，8×(16)=128，因此括号内为16。
 
 故正确答案为C。
 
@@ -806,7 +806,7 @@ B
 
 ### 第 23 题
 
-\-64，4，0，1，![](assets-fenbi-195/1745c254fe3b44c7c8fc47a3c191c638a485822a482e5a2b8a7512cc2ac64a80.png)，（    ）
+\-64，4，0，1，1/4，（    ）
 
 A. 8
 
@@ -862,7 +862,7 @@ A
 
 ### 第 25 题
 
-![](assets-fenbi-195/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)，![](assets-fenbi-195/3aa3818f1c916550fc967093574ee48e19399832a9f2cbd1efd133ac50356915.png)，![](assets-fenbi-195/6dd1185d84c5684de458375e66c2406e4ab664f54e3debda6e37c0906eea23cb.png)，![](assets-fenbi-195/de96cce578768064399cc58f1e92c1720703feb00a2cba618ee89c8eb9067e7e.png)，![](assets-fenbi-195/8ab27bd2a59763984fa499481ff431d135adfae1144179b15bbeaf4528574384.png)，（    ）
+![](assets-fenbi-195/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)，1/3，![](assets-fenbi-195/6dd1185d84c5684de458375e66c2406e4ab664f54e3debda6e37c0906eea23cb.png)，![](assets-fenbi-195/de96cce578768064399cc58f1e92c1720703feb00a2cba618ee89c8eb9067e7e.png)，![](assets-fenbi-195/8ab27bd2a59763984fa499481ff431d135adfae1144179b15bbeaf4528574384.png)，（    ）
 
 A. ![](assets-fenbi-195/94e8a92b750ac1730fdbf413059068d4f490d4e17db60a08c86d0c17078e5984.png)
 

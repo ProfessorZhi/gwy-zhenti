@@ -15,7 +15,7 @@
 # 2013年浙江省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **浙江 · 2013 · 行测 · B类** ｜ 120 题 · 图片 196 处 · 答案随题折叠
+> **浙江 · 2013 · 行测 · B类** ｜ 120 题 · 图片 145 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1380,7 +1380,7 @@ A
 
 **解析**
 
-数列各项均在幂次数附近，优先考虑幂次数列。原数列可转化为：![](assets-fenbi-427/ba0f4461fda8f94302b5b5e1d55715e3efe20a91ff12ecb88ede7383c69b8cc4.png)，![](assets-fenbi-427/17ad558ff15fd776dbc4e2095d87af8ebb086db35a6adbca2e6645e447c8f0af.png)，![](assets-fenbi-427/aad4efe119fc3db3f8e2f62436ab6791f526510b114daeb7f23c860ae46f612e.png)，![](assets-fenbi-427/1ebef80f5a802139abbba04dc00ee613e691246ed8e7d5b3c0a943390caa943a.png)，![](assets-fenbi-427/71a437369af4aa5db16eeb942bcb23176b7f1d2313f4eb02ab9edd61f03a6497.png)，（ ）。底数部分为：12，11，10，9，8，（ ），是公差为-1的等差数列，下一项为7；指数部分均为2；修正项是以+1、-1为周期的循环数列，故所求项为![](assets-fenbi-427/f96814df45979c907bbd6b6ba0feba27db99b9763726785eaa193370d509a8da.png)。
+数列各项均在幂次数附近，优先考虑幂次数列。原数列可转化为：![](assets-fenbi-427/ba0f4461fda8f94302b5b5e1d55715e3efe20a91ff12ecb88ede7383c69b8cc4.png)，![](assets-fenbi-427/17ad558ff15fd776dbc4e2095d87af8ebb086db35a6adbca2e6645e447c8f0af.png)，![](assets-fenbi-427/aad4efe119fc3db3f8e2f62436ab6791f526510b114daeb7f23c860ae46f612e.png)，9^2-1，8^2+1，（ ）。底数部分为：12，11，10，9，8，（ ），是公差为-1的等差数列，下一项为7；指数部分均为2；修正项是以+1、-1为周期的循环数列，故所求项为![](assets-fenbi-427/f96814df45979c907bbd6b6ba0feba27db99b9763726785eaa193370d509a8da.png)。
 
 故正确答案为A。
 
@@ -1560,15 +1560,15 @@ B
 
 ### 第 45 题
 
-![](assets-fenbi-427/db55de44667f2fabbf1c005ab1167ee52541acf7a701b704f0799281832d19cf.png)，![](assets-fenbi-427/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)，![](assets-fenbi-427/4587b3db5ae6fa7a2fa9ce2e4ad4b47df49cef5526cc5b66da92da1e18605af7.png)，![](assets-fenbi-427/0b8a80a2a3d969477f8ec08c714d281612ef5bf06f45b26a7a19ece47eb0a40b.png)，![](assets-fenbi-427/d763fe4a924fd1bcaadeb41b3672ea8848777066b0a798df470b7024617aa8e1.png)，（ ）
+3/2，1/2，1/4，3/20，1/10，（ ）
 
-A. ![](assets-fenbi-427/d5b929d5ccf7c44f08b1cd9e5ee8c1f7c3820ebfece7614625340cf438f303da.png)
+A. 1/14
 
-B. ![](assets-fenbi-427/4aa8429801f42b214468b8d1dcce51da40f8b5d6a5a216fa7f5d4f80ebeddf14.png)
+B. 1/15
 
-C. ![](assets-fenbi-427/1cc94e34fe1d9f53bf82de18cbfac6e310697c7deaba5544c963e61cc6227cfe.png)
+C. 1/16
 
-D. ![](assets-fenbi-427/66f2f2325776687fce333b75d587677caf056e8c508e5f3d59dc48d74fb3ce72.png)
+D. 1/17
 
 <details><summary>第 45 题 · 答案与解析</summary>
 
@@ -1578,11 +1578,11 @@ A
 
 **解析**
 
-原数列可变形为![](assets-fenbi-427/db55de44667f2fabbf1c005ab1167ee52541acf7a701b704f0799281832d19cf.png)、![](assets-fenbi-427/e41ba3090e10e964a33b72d7d234e3d64f4e76d863c3e0ad1f55fc9306a95d21.png)、![](assets-fenbi-427/29e5446a29ad772f88e90e6fc3f19a7a5567ea46ff46e775cce1e421bb0eb8d7.png)、![](assets-fenbi-427/0b8a80a2a3d969477f8ec08c714d281612ef5bf06f45b26a7a19ece47eb0a40b.png)、![](assets-fenbi-427/018068c9967bb1382150c371fb133a5935a1cb54ff26a05fcdc4730361652a15.png)、![](assets-fenbi-427/0412264ca11cd792e558297fcac0d2f2ca3ddc111a65ab2dc295f11addbafd49.png)；
+原数列可变形为3/2、3/6、3/12、3/20、3/30、3/( )；
 
 分母构成新数列：2、6、12、20、30、（42）为二级等差数列；
 
-可得未知项为![](assets-fenbi-427/1003669d8e8b9e2da92baeec7d858aafa038f8b1fde25358f9d5bd92a9c72f97.png)，即![](assets-fenbi-427/d5b929d5ccf7c44f08b1cd9e5ee8c1f7c3820ebfece7614625340cf438f303da.png)。
+可得未知项为3/42，即1/14。
 
 故正确答案为A。
 
@@ -1622,7 +1622,7 @@ D
 
 ### 第 47 题
 
-已知3个质数的倒数和为![](assets-fenbi-427/27841ae21f9bb4a51897d53834e7d12f853cc1b19b28a86d4954cc16ae177057.png)，则这三个质数的和为：
+已知3个质数的倒数和为671/1022，则这三个质数的和为：
 
 A. 80
 
@@ -1712,7 +1712,7 @@ A
 
 ### 第 50 题
 
-某市场运来苹果、香蕉、柚子和梨四种水果。其中苹果和柚子共30吨，香蕉、柚子和梨共50吨，柚子占水果总数的![](assets-fenbi-427/4587b3db5ae6fa7a2fa9ce2e4ad4b47df49cef5526cc5b66da92da1e18605af7.png)。问一共运来水果多少吨？
+某市场运来苹果、香蕉、柚子和梨四种水果。其中苹果和柚子共30吨，香蕉、柚子和梨共50吨，柚子占水果总数的1/4。问一共运来水果多少吨？
 
 A. 36吨
 
@@ -1762,7 +1762,7 @@ D
 
 **解析**
 
-设A浓度为n，则B浓度为![](assets-fenbi-427/03fdd8eb4cd6495ca929a3e8f25ac29f5ba633fe5da2ca6d181c9b390088a0ca.png)。由题意可得如下等式：![](assets-fenbi-427/153762e9ef1131a8da0ddf7955054c766eeed578ee1a8fb82b1ca5e4bd32cfab.png)，解得n=10%。
+设A浓度为n，则B浓度为n/2。由题意可得如下等式：![](assets-fenbi-427/153762e9ef1131a8da0ddf7955054c766eeed578ee1a8fb82b1ca5e4bd32cfab.png)，解得n=10%。
 
 故正确答案为D。
 
@@ -1774,13 +1774,13 @@ D
 
 3点19分时，时钟上的时针与分针所构成的锐角为几度？
 
-A. ![](assets-fenbi-427/21e0966a6e3896bc4cf8347118f161378e8e3bdc054e24ea8553c9416b2fc320.png)
+A. 14°
 
-B. ![](assets-fenbi-427/3e6329a3b644e41fe631cc3d30ded0ff35384d9d1d13676414877d5f5d9fa52d.png)
+B. 14.5°
 
-C. ![](assets-fenbi-427/1c0c025cf581c5c6366976374915c1c8017d00b7f944b05d7276da03447e3498.png)
+C. 15°
 
-D. ![](assets-fenbi-427/c647b6ec40907efdb018b057d6bb4a14ad68ab78f060897e5f4ee2f57b91ea29.png)
+D. 15.5°
 
 <details><summary>第 52 题 · 答案与解析</summary>
 
@@ -1924,7 +1924,7 @@ C
 
 ### 第 57 题
 
-一个总额为100万的项目分给甲、乙、丙、丁四个公司共同来完成，甲、乙、丙、丁分到项目额的比例为![](assets-fenbi-427/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)：![](assets-fenbi-427/1d273b2122aaf21895018ee410e0cc1fe872be411377d6cb330f4f09d8ec86fe.png)：![](assets-fenbi-427/4587b3db5ae6fa7a2fa9ce2e4ad4b47df49cef5526cc5b66da92da1e18605af7.png)：![](assets-fenbi-427/c7d3874a8e6f6f0caafd6a524cbc81604f640cd13ebf5d8d490bb0fe494bad04.png)，请问甲分到的项目额为多少万：
+一个总额为100万的项目分给甲、乙、丙、丁四个公司共同来完成，甲、乙、丙、丁分到项目额的比例为1/2：1/3：1/4：1/6，请问甲分到的项目额为多少万：
 
 A. 35万
 
@@ -1962,13 +1962,13 @@ B
 
 将自然数1—100分别写在完全相同的100张卡片上，然后打乱卡片，先后随机取出4张，问这4张先后取出的卡片上的数字呈增序的几率是多少？
 
-A. ![](assets-fenbi-427/1cc94e34fe1d9f53bf82de18cbfac6e310697c7deaba5544c963e61cc6227cfe.png)
+A. 1/16
 
-B. ![](assets-fenbi-427/7a0839765091d1bbac9f049bc7ffe14b7e65829f61a5037b272e5bc01c60ea20.png)
+B. 1/24
 
-C. ![](assets-fenbi-427/d61e60552903d30933de853fc1be54d58bb45db02ebfd3526064eb715d421dd5.png)
+C. 1/32
 
-D. ![](assets-fenbi-427/37e04a094321b5f2f696ef10e40f9f965433e4171ff7d61867a8d225e2b93751.png)
+D. 1/7
 
 <details><summary>第 58 题 · 答案与解析</summary>
 
@@ -1978,7 +1978,7 @@ B
 
 **解析**
 
-从100张卡片中随机抽到4张，这4张大小不等，随机排列共有![](assets-fenbi-427/2f6b4da706da48a915989628637fffa4695f6754bd2c26a944a444fd3ac53be4.png)种方法，其中符合增序的排列只有1种，可得概率为![](assets-fenbi-427/7a0839765091d1bbac9f049bc7ffe14b7e65829f61a5037b272e5bc01c60ea20.png)。
+从100张卡片中随机抽到4张，这4张大小不等，随机排列共有![](assets-fenbi-427/2f6b4da706da48a915989628637fffa4695f6754bd2c26a944a444fd3ac53be4.png)种方法，其中符合增序的排列只有1种，可得概率为1/24。
 
 故正确答案为B。
 
@@ -2008,7 +2008,7 @@ D
 
 **解析**
 
-粗蜡烛每小时燃烧![](assets-fenbi-427/1d273b2122aaf21895018ee410e0cc1fe872be411377d6cb330f4f09d8ec86fe.png)，细蜡烛每小时燃烧1。设时间为n小时，则有![](assets-fenbi-427/a82612bbd47c29f56ff0c72c8a8e8dd94efdc93d205fe87a28703fa882dd0cbb.png)，解得![](assets-fenbi-427/ad22dd2299d95c498a39e36a89d5d2edfde81c022daab9319c9c0d3802fc1199.png)，即45分钟。
+粗蜡烛每小时燃烧1/3，细蜡烛每小时燃烧1。设时间为n小时，则有![](assets-fenbi-427/a82612bbd47c29f56ff0c72c8a8e8dd94efdc93d205fe87a28703fa882dd0cbb.png)，解得n=3/4，即45分钟。
 
 故正确答案为D。
 
@@ -3364,19 +3364,19 @@ C
 
 第一步：分析题干，找到论点和论据。
 
-论点：喜欢打排球![](assets-fenbi-427/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)喜欢打乒乓球。
+论点：喜欢打排球→喜欢打乒乓球。
 
 论据①：喜欢打篮球 或 喜欢打羽毛球。
 
-论据②：喜欢打排球![](assets-fenbi-427/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-427/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)喜欢打羽毛球。
+论据②：喜欢打排球→-喜欢打羽毛球。
 
-①是一个选言命题，等价于：-喜欢打羽毛球![](assets-fenbi-427/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)喜欢打篮球。
+①是一个选言命题，等价于：-喜欢打羽毛球→喜欢打篮球。
 
 第二步：逐一分析选项。
 
 A项：该班的班长至少喜欢三项体育活动，并不能得到喜欢打排球就一定喜欢打乒乓球，排除；
 
-B项：喜欢打乒乓球的学生都喜欢打羽毛球，喜欢打乒乓球![](assets-fenbi-427/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)喜欢打羽毛球，喜欢打羽毛球![](assets-fenbi-427/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-427/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)喜欢打排球，所以喜欢打乒乓球![](assets-fenbi-427/86f1dd9e15d237d1182eb90fc1977338eb5519f7fefe432d371a050dd98bc6a4.png)![](assets-fenbi-427/949535c7ff77091be23a5fc94e9f4dc6a14c65efc3d0dfab432a319b64a51bed.png)喜欢打排球，跟论点相反，是削弱论点，排除；
+B项：喜欢打乒乓球的学生都喜欢打羽毛球，喜欢打乒乓球→喜欢打羽毛球，喜欢打羽毛球→-喜欢打排球，所以喜欢打乒乓球→-喜欢打排球，跟论点相反，是削弱论点，排除；
 
 C项：在论点和论据中间搭桥，起加强作用；
 
@@ -3702,7 +3702,7 @@ C
 
 根据题干“······占······的比重”，可判定本题为现期比重问题。定位表格材料可知：湖州市的GDP为1661.97亿元，第二产业增加值为888.20亿元；宁波市的GDP为6524.70亿元，第二产业增加值为3516.73亿元；嘉兴市的GDP为2884.94亿元，第二产业增加值为1620.82亿元；绍兴市的GDP为3620.10亿元，第二产业增加值为1949.07亿元。由![](assets-fenbi-427/5e00165983738735f2e9a4ad2e7db9b3864fd478459c891760253d1b3309df34.png)，可得：![](assets-fenbi-427/01f380008296f8d24a6f469f05f815cd440731c31c3df856142084f0d39aabec.png)![](assets-fenbi-427/34a7181487b7108baa71994e3d70017042771eecfc0bdaf5f40bcbcafcee84c4.png)；
 
-![](assets-fenbi-427/03c2406be24a8a6ec6965596cf5f646db4e9bb4016852461ca66e93da5d6d541.png)![](assets-fenbi-427/6fd40f4a470773d1d6d26ddbdd4f0f5ef046b3dad35be3ba589adfc0922ca35a.png)；
+![](assets-fenbi-427/03c2406be24a8a6ec6965596cf5f646db4e9bb4016852461ca66e93da5d6d541.png)≈54%；
 
 ![](assets-fenbi-427/6ec194be93dfd9edf42db111e4d332f72eb895b1f786e07bde4a90bde0a87ee4.png)![](assets-fenbi-427/382fe33598f2dd3845ee6be728fb003dfe834231cbd0402f3005d2d39675495f.png)；
 
@@ -3788,7 +3788,7 @@ B. 各市中，宁波市的第一产业增加值最多
 
 C. 第二产业增加值大于第三产业的市有9个
 
-D. 杭州市的GDP不足全省的![](assets-fenbi-427/d6566b693400a0cb26112097a11adfa4ef2e6cf3c9e8585dad8a1efdd0920578.png)
+D. 杭州市的GDP不足全省的1/5
 
 <details><summary>第 105 题 · 答案与解析</summary>
 
@@ -3804,7 +3804,7 @@ B项：定位表格材料第三列可知：宁波市的第一产业增加值（2
 
 C项：定位表格材料第四、五列可知：第二产业增加值大于第三产业的市有宁波市、温州市、嘉兴市、湖州市、绍兴市、金华市、衢州市、舟山市、台州市、丽水市，共10个市而非9个市，错误；
 
-D项：定位表格材料可知：全省的GDP为34606.30亿元，杭州市的GDP为7803.98亿元。由![](assets-fenbi-427/808b611127632147a904183b5befdfc178358fbaf2f5827bbab69569fb452b7d.png)，可得：![](assets-fenbi-427/db03165e5d0c7a51dfef643f403e47f1668bd3b720d2f6f6561f165504754b0c.png)，即高于![](assets-fenbi-427/d6566b693400a0cb26112097a11adfa4ef2e6cf3c9e8585dad8a1efdd0920578.png)，错误。
+D项：定位表格材料可知：全省的GDP为34606.30亿元，杭州市的GDP为7803.98亿元。由![](assets-fenbi-427/808b611127632147a904183b5befdfc178358fbaf2f5827bbab69569fb452b7d.png)，可得：![](assets-fenbi-427/db03165e5d0c7a51dfef643f403e47f1668bd3b720d2f6f6561f165504754b0c.png)，即高于1/5，错误。
 
 故正确答案为B。
 
@@ -4182,7 +4182,7 @@ A
 
 **解析**
 
-根据题干“2010年，该省的出口额比进口额约多”，结合材料数据为2011年，可判定本题为基期和差问题。定位表格材料1可知：2011年出口额为2163.6亿美元，增长率为19.9%；进口额为930.4亿美元，增长率为27.3%。根据公式：基期量![](assets-fenbi-427/e692749250039a6756263e9dbf8012719f7ed7d564a1472cade28c0994677042.png)，可得2010年出口额比进口额多![](assets-fenbi-427/caa3afe212237a6e3fb86985fa8c2e0f68c8efc80c5944a8167e82cd77e632a4.png)![](assets-fenbi-427/7a823d01c08bb1b920e6e55baf22a29a53880a36d87745e92b296e0a6fb7f442.png)![](assets-fenbi-427/e824cff525c0d4b6a1aee2d5c803f83ece1dd44624e66c3247d02596f5134b51.png)![](assets-fenbi-427/446edefbec2b2eea9abd8bffd6c6e04846d501823144b5cf181bcc51a6262561.png)，与A项最接近。
+根据题干“2010年，该省的出口额比进口额约多”，结合材料数据为2011年，可判定本题为基期和差问题。定位表格材料1可知：2011年出口额为2163.6亿美元，增长率为19.9%；进口额为930.4亿美元，增长率为27.3%。根据公式：基期量![](assets-fenbi-427/e692749250039a6756263e9dbf8012719f7ed7d564a1472cade28c0994677042.png)，可得2010年出口额比进口额多![](assets-fenbi-427/caa3afe212237a6e3fb86985fa8c2e0f68c8efc80c5944a8167e82cd77e632a4.png)2160/1.2![](assets-fenbi-427/e824cff525c0d4b6a1aee2d5c803f83ece1dd44624e66c3247d02596f5134b51.png)![](assets-fenbi-427/446edefbec2b2eea9abd8bffd6c6e04846d501823144b5cf181bcc51a6262561.png)，与A项最接近。
 
 故正确答案为A。
 
@@ -4214,7 +4214,7 @@ D
 
 **解析**
 
-根据题干“下列饼图中，阴影部分最能体现2011年······占······比重的是”，结合材料时间为2011年，可判定本题为现期比重问题。定位表格材料2可知：2011年Z省对欧盟、东盟、美国、日本、俄罗斯、韩国、中国香港、中国台湾的出口额分别为557.7亿美元、147.5亿美元、349.2亿美元、133.4亿美元、70.1亿美元、54.5亿美元、59.4亿美元、23.7亿美元。根据公式：![](assets-fenbi-427/808b611127632147a904183b5befdfc178358fbaf2f5827bbab69569fb452b7d.png)，可得：2011年Z省对欧盟的出口额占8个主要市场出口总额比重为![](assets-fenbi-427/a1a5739099085a881bf0ab4c4600df14c1b194079fef9cd3984461f50d0d4318.png)![](assets-fenbi-427/45947cf0f4caa396b384f148807a0a60b1301843927c3486674e858bc880b6a8.png)![](assets-fenbi-427/aebd5bb0b97990fb95455437cffe602726efe5d9cbeaa4951832db2716875881.png)![](assets-fenbi-427/79871c76d4a26e95c623bef1428a50bf13fd186498ce00aca2c23ab626a5c6ea.png)![](assets-fenbi-427/1572c667bdfcbb587fe9ae15c6d2d5f27acaa87854cbe0cf79f7de1fd2fcf12e.png)，与D项最接近。
+根据题干“下列饼图中，阴影部分最能体现2011年······占······比重的是”，结合材料时间为2011年，可判定本题为现期比重问题。定位表格材料2可知：2011年Z省对欧盟、东盟、美国、日本、俄罗斯、韩国、中国香港、中国台湾的出口额分别为557.7亿美元、147.5亿美元、349.2亿美元、133.4亿美元、70.1亿美元、54.5亿美元、59.4亿美元、23.7亿美元。根据公式：![](assets-fenbi-427/808b611127632147a904183b5befdfc178358fbaf2f5827bbab69569fb452b7d.png)，可得：2011年Z省对欧盟的出口额占8个主要市场出口总额比重为![](assets-fenbi-427/a1a5739099085a881bf0ab4c4600df14c1b194079fef9cd3984461f50d0d4318.png)![](assets-fenbi-427/45947cf0f4caa396b384f148807a0a60b1301843927c3486674e858bc880b6a8.png)≈![](assets-fenbi-427/79871c76d4a26e95c623bef1428a50bf13fd186498ce00aca2c23ab626a5c6ea.png)![](assets-fenbi-427/1572c667bdfcbb587fe9ae15c6d2d5f27acaa87854cbe0cf79f7de1fd2fcf12e.png)，与D项最接近。
 
 故正确答案为D。
 

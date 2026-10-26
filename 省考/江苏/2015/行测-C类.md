@@ -15,7 +15,7 @@
 # 2015年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2015 · 行测 · C类** ｜ 95 题 · 图片 90 处 · 答案随题折叠
+> **江苏 · 2015 · 行测 · C类** ｜ 95 题 · 图片 80 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -796,7 +796,7 @@ A
 
 ### 第 24 题
 
-![](assets-fenbi-74396/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)  , ![](assets-fenbi-74396/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)  , ![](assets-fenbi-74396/ff66f085255ebbf5ca462046eed4274f4175374a3563d82adcd2c11b8d4a1390.png)  , ![](assets-fenbi-74396/5659ce575098e67e44d7bec5ebd7f075e40902fad2eea79fea44b104f663ef1c.png)  ,  ![](assets-fenbi-74396/8277ae0b1ab3dd4930d57d85a422fbe8e9b7a722a29ae36d95fd02cc6cc548ff.png)  ,（  ）。
+1/4  , 1/2  , 5/8  , ![](assets-fenbi-74396/5659ce575098e67e44d7bec5ebd7f075e40902fad2eea79fea44b104f663ef1c.png)  ,  3/4  ,（  ）。
 
 A. ![](assets-fenbi-74396/3ca4e399080e756ed3289f8dd43c90c14f41e01fa7eca786aa97ecea20e6b89f.png)
 
@@ -1092,15 +1092,15 @@ C
 
 ### 第 34 题
 
-甲、乙、丙三位同学参加某单位的招聘面试，面试合格者可正式签约，甲只要面试合格就签约。乙、丙二人约定：只有两人面试都合格才一同签约，否则都不签约。若他们三人面试合格的概率都是![](assets-fenbi-74396/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，且面试是否合格互不影响，则他们三人都没有签约的概率为（  ）。
+甲、乙、丙三位同学参加某单位的招聘面试，面试合格者可正式签约，甲只要面试合格就签约。乙、丙二人约定：只有两人面试都合格才一同签约，否则都不签约。若他们三人面试合格的概率都是1/2，且面试是否合格互不影响，则他们三人都没有签约的概率为（  ）。
 
-A. ![](assets-fenbi-74396/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)
+A. 1/4
 
 B. ![](assets-fenbi-74396/828bd1368d184482e820bf7b68a4a46ab9fb5c5e938dc95d444908269b3253d5.png)
 
-C. ![](assets-fenbi-74396/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)
+C. 1/2
 
-D. ![](assets-fenbi-74396/ff66f085255ebbf5ca462046eed4274f4175374a3563d82adcd2c11b8d4a1390.png)
+D. 5/8
 
 <details><summary>第 34 题 · 答案与解析</summary>
 
@@ -1142,7 +1142,7 @@ C
 
 **解析**
 
-连接C、F两个点。已知BD＝2DC，EC＝2AE，假设S△CDF=a，S△AEF=b，则S△BFD=2a，S△CEF＝2b。结合图形可得3a+2b=S△BCE=![](assets-fenbi-74396/6b1f3c4299575eebc7bc7b6c67889b70e92a2f5a8a2f63bc435bd4c8991374fa.png)S△ABC，a+3b=S△ACD=![](assets-fenbi-74396/fe8a76297e8b61ff2bafa432e6386cfc4657cc50e3eba0011d604c8b102ee616.png)S△ABC，两式相除可解得a＝4b。所以![](assets-fenbi-74396/902cd4e34ac1c9ee3aa4b446db730074e8d251697a57cddf0ed77b13547dd7a2.png)。
+连接C、F两个点。已知BD＝2DC，EC＝2AE，假设S△CDF=a，S△AEF=b，则S△BFD=2a，S△CEF＝2b。结合图形可得3a+2b=S△BCE=2/3S△ABC，a+3b=S△ACD=1/3S△ABC，两式相除可解得a＝4b。所以![](assets-fenbi-74396/902cd4e34ac1c9ee3aa4b446db730074e8d251697a57cddf0ed77b13547dd7a2.png)。
 
 故正确答案为C。
 

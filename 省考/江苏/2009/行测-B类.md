@@ -15,7 +15,7 @@
 # 2009年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2009 · 行测 · B类** ｜ 155 题 · 图片 234 处 · 答案随题折叠
+> **江苏 · 2009 · 行测 · B类** ｜ 155 题 · 图片 228 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1985,7 +1985,7 @@ D
 
 **解析**
 
-原数列可转化为：100，10，![](assets-fenbi-111/7be26f75647d362edc56e59c0713b83b1506df1dc2794f4fca0535ada7d1bcd3.png)，![](assets-fenbi-111/557b1af148a330fa914904e204b2e66ca8640e5fbdd1ecbb9d089a553be7c781.png)，（    ），50，观察发现从第二项开始，每一项都与第一项的倍数关系明显，则每一项除以第一项后得到的新数列是：![](assets-fenbi-111/fcf4abcebf9e53827d449e3c177c3b3b74cec1c1ad58450692291a0b014071fe.png)，![](assets-fenbi-111/5787b139c1ddee3f0098157008338c898cf8a686e65ae652ac838e864b13396b.png)，![](assets-fenbi-111/35dc05dbfc2f4cc4dc05f250cf76744768d5ecde32456dc4b41ece315112f1dc.png)，（    ），![](assets-fenbi-111/20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3.png)，分母是公差为-2的等差数列，分子均为1，则新数列中所求项是![](assets-fenbi-111/1745c254fe3b44c7c8fc47a3c191c638a485822a482e5a2b8a7512cc2ac64a80.png)，所求项![](assets-fenbi-111/81ae7769af3685445e1685f08686ce2efe98debc6ae4a04f2445bc45563e6e14.png)。
+原数列可转化为：100，10，![](assets-fenbi-111/7be26f75647d362edc56e59c0713b83b1506df1dc2794f4fca0535ada7d1bcd3.png)，![](assets-fenbi-111/557b1af148a330fa914904e204b2e66ca8640e5fbdd1ecbb9d089a553be7c781.png)，（    ），50，观察发现从第二项开始，每一项都与第一项的倍数关系明显，则每一项除以第一项后得到的新数列是：![](assets-fenbi-111/fcf4abcebf9e53827d449e3c177c3b3b74cec1c1ad58450692291a0b014071fe.png)，![](assets-fenbi-111/5787b139c1ddee3f0098157008338c898cf8a686e65ae652ac838e864b13396b.png)，1/6，（    ），1/2，分母是公差为-2的等差数列，分子均为1，则新数列中所求项是1/4，所求项![](assets-fenbi-111/81ae7769af3685445e1685f08686ce2efe98debc6ae4a04f2445bc45563e6e14.png)。
 
 故正确答案为D。
 
@@ -1995,9 +1995,9 @@ D
 
 ### 第 68 题
 
-![](assets-fenbi-111/20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3.png)，1，![](assets-fenbi-111/a3a2f8e74c9c99676a5f139ed5956a1fed3204cc63b911893acf20260e2c9eaf.png)，![](assets-fenbi-111/480d857a2fef65b8ab0e0a8a15436c959eabad022d8fbaf701be1f3675c1fad4.png)，![](assets-fenbi-111/ddb56e4914571f872074b772250225ba60462375d5c0eeaf5eaa65b5447e62cf.png)，()
+1/2，1，![](assets-fenbi-111/a3a2f8e74c9c99676a5f139ed5956a1fed3204cc63b911893acf20260e2c9eaf.png)，![](assets-fenbi-111/480d857a2fef65b8ab0e0a8a15436c959eabad022d8fbaf701be1f3675c1fad4.png)，![](assets-fenbi-111/ddb56e4914571f872074b772250225ba60462375d5c0eeaf5eaa65b5447e62cf.png)，()
 
-A. ![](assets-fenbi-111/1745c254fe3b44c7c8fc47a3c191c638a485822a482e5a2b8a7512cc2ac64a80.png)
+A. 1/4
 
 B. ![](assets-fenbi-111/ef1d188bd9ec656d2556f3f684263d1ac7b6bce77813b92de56df767f41547c2.png)
 
@@ -2013,7 +2013,7 @@ A
 
 **解析**
 
-分数数列，变化趋势不单调，优先考虑反约分得到新数列：![](assets-fenbi-111/20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3.png)，![](assets-fenbi-111/8fc6e7cf9dbdfeccfd96210b2423212440e466085cb21fc04491c4221072ed72.png)，![](assets-fenbi-111/a3a2f8e74c9c99676a5f139ed5956a1fed3204cc63b911893acf20260e2c9eaf.png)， ![](assets-fenbi-111/cf9df48e8d8316e14893ca779ef8931d4add673eaa0367e4d481f3f4df1043bb.png)， ![](assets-fenbi-111/ddb56e4914571f872074b772250225ba60462375d5c0eeaf5eaa65b5447e62cf.png)，（    ），再分别观察分子和分母，分子是公差为3的等差数列，则下一项是13+3=16；分母是公比为2的等比数列，则下一项是32×2=64。故所求项是![](assets-fenbi-111/39eee8328d26578e82a848d4d70af4a51a8ce7ca108f362f41adbeb6f4b88f15.png)。
+分数数列，变化趋势不单调，优先考虑反约分得到新数列：1/2，![](assets-fenbi-111/8fc6e7cf9dbdfeccfd96210b2423212440e466085cb21fc04491c4221072ed72.png)，![](assets-fenbi-111/a3a2f8e74c9c99676a5f139ed5956a1fed3204cc63b911893acf20260e2c9eaf.png)， ![](assets-fenbi-111/cf9df48e8d8316e14893ca779ef8931d4add673eaa0367e4d481f3f4df1043bb.png)， ![](assets-fenbi-111/ddb56e4914571f872074b772250225ba60462375d5c0eeaf5eaa65b5447e62cf.png)，（    ），再分别观察分子和分母，分子是公差为3的等差数列，则下一项是13+3=16；分母是公比为2的等比数列，则下一项是32×2=64。故所求项是![](assets-fenbi-111/39eee8328d26578e82a848d4d70af4a51a8ce7ca108f362f41adbeb6f4b88f15.png)。
 
 故正确答案为A。
 

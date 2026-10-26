@@ -15,7 +15,7 @@
 # 2009年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2009 · 行测 · A类** ｜ 105 题 · 图片 170 处 · 答案随题折叠
+> **江苏 · 2009 · 行测 · A类** ｜ 105 题 · 图片 167 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -278,7 +278,7 @@ D
 
 ### 第 8 题
 
-![](assets-fenbi-109/3aa3818f1c916550fc967093574ee48e19399832a9f2cbd1efd133ac50356915.png)，![](assets-fenbi-109/0057cfd31a377486e4725fbdffa878984afa544a58664fb422291df86213eb8e.png)，![](assets-fenbi-109/a97eac6620729ec7f0ae426859bf4f25da7a90d3325bab773999f96c42f30c35.png)，![](assets-fenbi-109/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)，![](assets-fenbi-109/bcc29cb3272bfdda6d80a45d77ae2625ad4614a9201dc225a2c2a48958a0974a.png)，()
+1/3，![](assets-fenbi-109/0057cfd31a377486e4725fbdffa878984afa544a58664fb422291df86213eb8e.png)，![](assets-fenbi-109/a97eac6620729ec7f0ae426859bf4f25da7a90d3325bab773999f96c42f30c35.png)，![](assets-fenbi-109/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)，![](assets-fenbi-109/bcc29cb3272bfdda6d80a45d77ae2625ad4614a9201dc225a2c2a48958a0974a.png)，()
 
 A. ![](assets-fenbi-109/005d465e2518e237078c277d157651d1c126cec1579ad1366e9864fe2633c0f3.png)
 
@@ -296,7 +296,7 @@ B
 
 **解析**
 
-数列中数字均为分数，考虑分数数列。分子分母整体呈增加趋势，只有![](assets-fenbi-109/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)不满足递增趋势，考虑反约分。将原数列变形为![](assets-fenbi-109/3aa3818f1c916550fc967093574ee48e19399832a9f2cbd1efd133ac50356915.png)，![](assets-fenbi-109/0057cfd31a377486e4725fbdffa878984afa544a58664fb422291df86213eb8e.png)，![](assets-fenbi-109/a97eac6620729ec7f0ae426859bf4f25da7a90d3325bab773999f96c42f30c35.png)，![](assets-fenbi-109/480f03f6f4983e3aa9809c34b05cf8ec620762ab2da01f29400e4f2a2a591ff4.png)，![](assets-fenbi-109/bcc29cb3272bfdda6d80a45d77ae2625ad4614a9201dc225a2c2a48958a0974a.png)，（    ）。分子、分母分别为公差为3和4的等差数列，故所求项为![](assets-fenbi-109/c5918aaed06de096ada23e5b3b5d67069062c383578c192a419d7f0975c8181b.png)。
+数列中数字均为分数，考虑分数数列。分子分母整体呈增加趋势，只有![](assets-fenbi-109/8cc76957a6766e0fab360f8f3eb8e2eaf63a276a8c3a932617efc9e19b897407.png)不满足递增趋势，考虑反约分。将原数列变形为1/3，![](assets-fenbi-109/0057cfd31a377486e4725fbdffa878984afa544a58664fb422291df86213eb8e.png)，![](assets-fenbi-109/a97eac6620729ec7f0ae426859bf4f25da7a90d3325bab773999f96c42f30c35.png)，![](assets-fenbi-109/480f03f6f4983e3aa9809c34b05cf8ec620762ab2da01f29400e4f2a2a591ff4.png)，![](assets-fenbi-109/bcc29cb3272bfdda6d80a45d77ae2625ad4614a9201dc225a2c2a48958a0974a.png)，（    ）。分子、分母分别为公差为3和4的等差数列，故所求项为![](assets-fenbi-109/c5918aaed06de096ada23e5b3b5d67069062c383578c192a419d7f0975c8181b.png)。
 
 故正确答案为B。
 
@@ -396,7 +396,7 @@ A. 0
 
 B. 9
 
-C. ![](assets-fenbi-109/5d7ac03ca068034f582d8dd916045a417ee80eec71a99fbeac374ef87154ead4.png)
+C. √3
 
 D. 3，![](assets-fenbi-109/b175b05ad9bbe8982ff2d284949719258c49a80fde5dfe7a154bc2b7462081f7.png)
 

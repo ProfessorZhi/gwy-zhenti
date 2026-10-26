@@ -15,7 +15,7 @@
 # 2014年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2014 · 行测 · C类** ｜ 100 题 · 图片 212 处 · 答案随题折叠
+> **江苏 · 2014 · 行测 · C类** ｜ 100 题 · 图片 174 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -778,7 +778,7 @@ D
 
 ### 第 22 题
 
-![](assets-fenbi-26641/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，![](assets-fenbi-26641/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，1，4，32，（    ）
+1/2，1/2，1，4，32，（    ）
 
 A. 512
 
@@ -862,7 +862,7 @@ C
 
 ### 第 25 题
 
-![](assets-fenbi-26641/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)，![](assets-fenbi-26641/6b1f3c4299575eebc7bc7b6c67889b70e92a2f5a8a2f63bc435bd4c8991374fa.png)，![](assets-fenbi-26641/3ca4e399080e756ed3289f8dd43c90c14f41e01fa7eca786aa97ecea20e6b89f.png)，![](assets-fenbi-26641/e029bbc76dbf5a8d9dc3109e01c8c00699604e93a7e81fe4f023a9043e9e6c9b.png)，![](assets-fenbi-26641/13d2dd2b1c4f84cac0a9351655072a24e20b4ee1e4714fc38e14cd58bea9f680.png)，（    ）
+1/4，2/3，![](assets-fenbi-26641/3ca4e399080e756ed3289f8dd43c90c14f41e01fa7eca786aa97ecea20e6b89f.png)，![](assets-fenbi-26641/e029bbc76dbf5a8d9dc3109e01c8c00699604e93a7e81fe4f023a9043e9e6c9b.png)，![](assets-fenbi-26641/13d2dd2b1c4f84cac0a9351655072a24e20b4ee1e4714fc38e14cd58bea9f680.png)，（    ）
 
 A. ![](assets-fenbi-26641/8c38fa42c1677bd7029399ed87670e2e357d034927725ff820311f58712db1ff.png)
 
@@ -908,7 +908,7 @@ B
 
 **解析**
 
-设商品原价为x元，则第一种促销方案价格为0.7x元，第二种促销方案价格为![](assets-fenbi-26641/da1109d24687798e0860eb4d38ce29f6fa687d04d1bc8ac530d5f8a3cd72270b.png)元。两种方案利润相差0.1元，因为成本相同，价格=成本+利润，则售价也相差0.1元，![](assets-fenbi-26641/f59ea009f5960205a6bec98743609811b1fab2e16d639c602fe2429fd2af1e7f.png)![](assets-fenbi-26641/da1109d24687798e0860eb4d38ce29f6fa687d04d1bc8ac530d5f8a3cd72270b.png)![](assets-fenbi-26641/073f387e3176250f18290e391f5a9b45d72196a12842c1b37b763070a63e4b93.png)。解得x=3。第一种促销价格为3×0.7=2.1元，可购买数量![](assets-fenbi-26641/b9e70132b4e3f6386970b7286a0f9e59521e1e1b847bd3e4ec59935a19a0feb4.png)![](assets-fenbi-26641/e75bd4cb273cbd44a40f706484cb1df0e641163524be7828be77a814503b0b3d.png)![](assets-fenbi-26641/10543a49c8d00c0105b0e7ac197fed81e8547ed802bee544310aa045662ed911.png)件，则最多可购买47件商品。
+设商品原价为x元，则第一种促销方案价格为0.7x元，第二种促销方案价格为![](assets-fenbi-26641/da1109d24687798e0860eb4d38ce29f6fa687d04d1bc8ac530d5f8a3cd72270b.png)元。两种方案利润相差0.1元，因为成本相同，价格=成本+利润，则售价也相差0.1元，![](assets-fenbi-26641/f59ea009f5960205a6bec98743609811b1fab2e16d639c602fe2429fd2af1e7f.png)![](assets-fenbi-26641/da1109d24687798e0860eb4d38ce29f6fa687d04d1bc8ac530d5f8a3cd72270b.png)![](assets-fenbi-26641/073f387e3176250f18290e391f5a9b45d72196a12842c1b37b763070a63e4b93.png)。解得x=3。第一种促销价格为3×0.7=2.1元，可购买数量=![](assets-fenbi-26641/e75bd4cb273cbd44a40f706484cb1df0e641163524be7828be77a814503b0b3d.png)![](assets-fenbi-26641/10543a49c8d00c0105b0e7ac197fed81e8547ed802bee544310aa045662ed911.png)件，则最多可购买47件商品。
 
 故正确答案为B。
 
@@ -938,7 +938,7 @@ B
 
 **解析**
 
-根据x![](assets-fenbi-26641/fa972a5f4a45795934cc878fd90a7cbd7910c9f34a78fbd177f43673c5d70244.png)y![](assets-fenbi-26641/b9e70132b4e3f6386970b7286a0f9e59521e1e1b847bd3e4ec59935a19a0feb4.png)![](assets-fenbi-26641/02a216dc248514f0695ff2b55d5b0c83f400b198bacda76af33098c168888fbf.png)，则2![](assets-fenbi-26641/39e57d2e32f20054a5fe2beab7d38522b0de91d22ea60887d808d7b41b9e5930.png)3![](assets-fenbi-26641/5170e3c200fc92151e1a25c07de0e025c6ce2b4b40ba52fedafd25d4b127314e.png)。根据![](assets-fenbi-26641/3b8983deaafe9d8e20f59327733aad2fc90f6cbb988a7348d74e19911f9920c5.png)![](assets-fenbi-26641/79c8fadfd7113a424ba15da30533a75510c1d70eae664b368024655df9614649.png)\=2x+y，则![](assets-fenbi-26641/2cccbd001fbdbc78ffa09ad7d9bb054e170e26aeebdacfabf56befcb7326b293.png)。
+根据x![](assets-fenbi-26641/fa972a5f4a45795934cc878fd90a7cbd7910c9f34a78fbd177f43673c5d70244.png)y=![](assets-fenbi-26641/02a216dc248514f0695ff2b55d5b0c83f400b198bacda76af33098c168888fbf.png)，则2![](assets-fenbi-26641/39e57d2e32f20054a5fe2beab7d38522b0de91d22ea60887d808d7b41b9e5930.png)3![](assets-fenbi-26641/5170e3c200fc92151e1a25c07de0e025c6ce2b4b40ba52fedafd25d4b127314e.png)。根据![](assets-fenbi-26641/3b8983deaafe9d8e20f59327733aad2fc90f6cbb988a7348d74e19911f9920c5.png)y\=2x+y，则![](assets-fenbi-26641/2cccbd001fbdbc78ffa09ad7d9bb054e170e26aeebdacfabf56befcb7326b293.png)。
 
 故正确答案为B。
 
@@ -1084,7 +1084,7 @@ B
 
 **解析**
 
-方法一：a是由首项为1，公比为![](assets-fenbi-26641/fe8a76297e8b61ff2bafa432e6386cfc4657cc50e3eba0011d604c8b102ee616.png)的等比数列加和而成，根据等比数列求和公式：![](assets-fenbi-26641/99e10aaf6c7646b5c5fedbdbba79f0f99ecff57609c1d6551ff0e83951c11595.png)，![](assets-fenbi-26641/e8f87369b677c2a829f83b63b86dc79622b708ce677256a7d8791f56c69306a2.png)。![](assets-fenbi-26641/9ef48d8e51e4ed21889682ad1f6ea53dfdecb17cf72d665f6ceef683bcc67765.png)。因为![](assets-fenbi-26641/84a9a0b4898728a1831f93edee8622d27ca1f288c90d19250e106120e968e42b.png)，所以![](assets-fenbi-26641/b75ad15b7bda429bb72fff1abfab5250ccea79b52dc40b2a1ca5232045a157c5.png)的整数部分是149。
+方法一：a是由首项为1，公比为1/3的等比数列加和而成，根据等比数列求和公式：![](assets-fenbi-26641/99e10aaf6c7646b5c5fedbdbba79f0f99ecff57609c1d6551ff0e83951c11595.png)，![](assets-fenbi-26641/e8f87369b677c2a829f83b63b86dc79622b708ce677256a7d8791f56c69306a2.png)。![](assets-fenbi-26641/9ef48d8e51e4ed21889682ad1f6ea53dfdecb17cf72d665f6ceef683bcc67765.png)。因为![](assets-fenbi-26641/84a9a0b4898728a1831f93edee8622d27ca1f288c90d19250e106120e968e42b.png)，所以![](assets-fenbi-26641/b75ad15b7bda429bb72fff1abfab5250ccea79b52dc40b2a1ca5232045a157c5.png)的整数部分是149。
 
 方法二：由题目可知，![](assets-fenbi-26641/ef29a27d0f1a73d8540be457082982a3ee2777a162c581c8c9e72fff854b9904.png)。![](assets-fenbi-26641/93db514a35fae625ffd3fbbc8debd5d731eb119d4c4243c3f1e8a133cab6ce45.png)![](assets-fenbi-26641/f7525f26294dc4e21ed2f646e3ae0a2d7c17fade8acad070d63f475107f60aec.png)。![](assets-fenbi-26641/48fa3a1bf9f97acddfa5dab5951f1aab4b9036eec1a4a55b0345f414200f14d4.png)。则![](assets-fenbi-26641/9ef48d8e51e4ed21889682ad1f6ea53dfdecb17cf72d665f6ceef683bcc67765.png)。因为![](assets-fenbi-26641/d3ef03028fffd6f82f957ae6adf9723128936e8d6e8eef63ab90253adf82bdc8.png)，所以![](assets-fenbi-26641/b75ad15b7bda429bb72fff1abfab5250ccea79b52dc40b2a1ca5232045a157c5.png)的整数部分是149。
 
@@ -1114,9 +1114,9 @@ B
 
 **解析**
 
-方法一：设工程总量为120。甲乙合作3天完成工程总量的剩余一半的一半，即![](assets-fenbi-26641/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)，有![](assets-fenbi-26641/fea1c4bc775bfd6649294186c630a68c2b16adbebceb4cafc4e8aa77d5f1b7b6.png)，则甲+乙=10。甲独自工作5天完成工程总量的![](assets-fenbi-26641/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)，有5甲=30，甲=6，则乙=4。因此![](assets-fenbi-26641/309f23c65a4822eacfb4bf44001a138c382efd255f1beda7f5e6bdaa8c7a1fc2.png)。
+方法一：设工程总量为120。甲乙合作3天完成工程总量的剩余一半的一半，即1/4，有![](assets-fenbi-26641/fea1c4bc775bfd6649294186c630a68c2b16adbebceb4cafc4e8aa77d5f1b7b6.png)，则甲+乙=10。甲独自工作5天完成工程总量的1/4，有5甲=30，甲=6，则乙=4。因此![](assets-fenbi-26641/309f23c65a4822eacfb4bf44001a138c382efd255f1beda7f5e6bdaa8c7a1fc2.png)。
 
-方法二：甲乙两人工作3天完成工程总量的剩余一半的一半，即![](assets-fenbi-26641/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)，则![](assets-fenbi-26641/e8c3126cd79b753ecfccb6e7783d6a1a39cef318330688f9b4ea5341489c13c0.png)![](assets-fenbi-26641/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)总量。又因为甲独自工作5天完成总量的![](assets-fenbi-26641/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)，![](assets-fenbi-26641/4fb2da2a30baf813e2846d8933c8f609bf6536aae1e0dc9b4090ac7702bcb0bb.png)，则甲完成工程总量需要20天。又因为![](assets-fenbi-26641/59fe867ff15bd6b3c3f4f173ff2b8872b0d7471a3859a18593930c00f66af340.png)，得2甲=3乙，甲乙的效率比是3：2，因此完成工程总量的时间比是2：3。乙单独完成工程需要![](assets-fenbi-26641/24b5a874bbbff3dc42ce24e50138188d99b1a5ddee0c7b8ae8507457e636f60a.png)天。
+方法二：甲乙两人工作3天完成工程总量的剩余一半的一半，即1/4，则![](assets-fenbi-26641/e8c3126cd79b753ecfccb6e7783d6a1a39cef318330688f9b4ea5341489c13c0.png)1/4总量。又因为甲独自工作5天完成总量的1/4，![](assets-fenbi-26641/4fb2da2a30baf813e2846d8933c8f609bf6536aae1e0dc9b4090ac7702bcb0bb.png)，则甲完成工程总量需要20天。又因为![](assets-fenbi-26641/59fe867ff15bd6b3c3f4f173ff2b8872b0d7471a3859a18593930c00f66af340.png)，得2甲=3乙，甲乙的效率比是3：2，因此完成工程总量的时间比是2：3。乙单独完成工程需要![](assets-fenbi-26641/24b5a874bbbff3dc42ce24e50138188d99b1a5ddee0c7b8ae8507457e636f60a.png)天。
 
 故正确答案为B。
 
@@ -2020,17 +2020,17 @@ C
 
 第一步：翻译题干，利用充分必要条件。
 
-“从严治党，关键是从严治吏”：前![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)后，翻译为：治党![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)治吏①；“干部作风存在问题，就易成为腐败的温床”：前![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)后，翻译为：干部作风有问题![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)成为腐败的温床②；“唯有紧抓干部的清廉从政，坚决扫除作风之弊、行为之垢，我们的党才能永葆纯洁，才能永葆与人民群众的血肉联系”：后![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)前，翻译为：党能永葆纯洁、永葆与人民的联系![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)紧抓干部清廉，扫除作风之弊、行为之垢③。
+“从严治党，关键是从严治吏”：前→后，翻译为：治党→治吏①；“干部作风存在问题，就易成为腐败的温床”：前→后，翻译为：干部作风有问题→成为腐败的温床②；“唯有紧抓干部的清廉从政，坚决扫除作风之弊、行为之垢，我们的党才能永葆纯洁，才能永葆与人民群众的血肉联系”：后→前，翻译为：党能永葆纯洁、永葆与人民的联系→紧抓干部清廉，扫除作风之弊、行为之垢③。
 
 第二步：逐一翻译选项并判断正确答案。
 
-A项：如果······就······前![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)后，翻译为：治吏![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)治党，是对①的肯后，肯后无必然，排除；
+A项：如果······就······前→后，翻译为：治吏→治党，是对①的肯后，肯后无必然，排除；
 
-B项：如果······就······前![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)后，翻译为：干部作风没问题![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)腐败就找不到温床，是对②的否前，否前无必然，排除；
+B项：如果······就······前→后，翻译为：干部作风没问题→腐败就找不到温床，是对②的否前，否前无必然，排除；
 
-C项：如果······就······前![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)后，翻译为：不紧抓干部清廉从政![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)党就不能永葆与人民的联系，是对③应用逆否规则所得，当选；
+C项：如果······就······前→后，翻译为：不紧抓干部清廉从政→党就不能永葆与人民的联系，是对③应用逆否规则所得，当选；
 
-D项：如果······就······前![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)后，翻译为：扫除作风之弊、行为之垢![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)党能永葆纯洁，是对③的肯后，肯后无必然，排除。
+D项：如果······就······前→后，翻译为：扫除作风之弊、行为之垢→党能永葆纯洁，是对③的肯后，肯后无必然，排除。
 
 故正确答案为C。
 
@@ -2064,21 +2064,21 @@ C
 
 第一步：利用充分必要条件，翻译题干。
 
-①公共政策正确∧执行有力![](assets-fenbi-26641/becbeba8549aa837c5867a8bb37cc11ce6dfa32e0d9524e3f822d2726326354c.png)上访；
+①公共政策正确∧执行有力→上访；
 
-②上访![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)不关心群众；
+②上访→不关心群众；
 
 ③公共政策正确 且 决策人心系群众。
 
 第二步：逐一翻译选项并判断正确答案。
 
-A项：上访![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)不关心群众，与②表述一致，因此正确，排除。
+A项：上访→不关心群众，与②表述一致，因此正确，排除。
 
-B项：上访![](assets-fenbi-26641/becbeba8549aa837c5867a8bb37cc11ce6dfa32e0d9524e3f822d2726326354c.png)政策执行有力。①的逆否为：上访![](assets-fenbi-26641/becbeba8549aa837c5867a8bb37cc11ce6dfa32e0d9524e3f822d2726326354c.png)（公共政策正确 且 执行有力），根据摩根定律推理为：上访![](assets-fenbi-26641/becbeba8549aa837c5867a8bb37cc11ce6dfa32e0d9524e3f822d2726326354c.png)公共政策正确 或 -执行有力，由于公共政策正确，则有上访![](assets-fenbi-26641/becbeba8549aa837c5867a8bb37cc11ce6dfa32e0d9524e3f822d2726326354c.png)政策执行有力，因此正确，排除。
+B项：上访→政策执行有力。①的逆否为：上访→（公共政策正确 且 执行有力），根据摩根定律推理为：上访→公共政策正确 或 -执行有力，由于公共政策正确，则有上访→政策执行有力，因此正确，排除。
 
-C项：该项翻译为：-上访![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)政策执行有力，由于A![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)B等价于-A 或 B，所以该项等价于上访或执行有力，根据题干无法推知该项是否一定正确，故该项根据题干无法推知，当选。
+C项：该项翻译为：-上访→政策执行有力，由于A→B等价于-A 或 B，所以该项等价于上访或执行有力，根据题干无法推知该项是否一定正确，故该项根据题干无法推知，当选。
 
-D项：该项翻译为：-上访![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)公共政策正确。由于A![](assets-fenbi-26641/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)B等价于-A 或 B，所以该项等价于上访或正确，由条件③知公共政策正确，即D项根据题干可以推出，排除。
+D项：该项翻译为：-上访→公共政策正确。由于A→B等价于-A 或 B，所以该项等价于上访或正确，由条件③知公共政策正确，即D项根据题干可以推出，排除。
 
 本题为选非题，故正确答案为C。
 

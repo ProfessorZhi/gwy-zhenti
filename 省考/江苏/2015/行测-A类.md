@@ -15,7 +15,7 @@
 # 2015年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2015 · 行测 · A类** ｜ 100 题 · 图片 115 处 · 答案随题折叠
+> **江苏 · 2015 · 行测 · A类** ｜ 100 题 · 图片 113 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1022,7 +1022,7 @@ B
 
 ### 第 31 题
 
-已知一等差数列![](assets-fenbi-74392/832cd8f302325003b1c0595b5bcc53cd102ac73d22db89f38448eb11738a36f6.png)，21，![](assets-fenbi-74392/7ee01b086036affd321be26a6033caaebe8fb454a364e36c2831b7a5bb3801b6.png)，31，······，![](assets-fenbi-74392/7dfa0971c17744d1d68dbf7ffce977d28ef476d9080930e6186c8338c2acff0f.png)，······，若![](assets-fenbi-74392/f0c279b32d268e78cde58eb46e72d282cc080741fc2190bd5dd4ae5925a6387b.png)，则该数列前n项的平均数是：
+已知一等差数列a_1，21，![](assets-fenbi-74392/7ee01b086036affd321be26a6033caaebe8fb454a364e36c2831b7a5bb3801b6.png)，31，······，![](assets-fenbi-74392/7dfa0971c17744d1d68dbf7ffce977d28ef476d9080930e6186c8338c2acff0f.png)，······，若![](assets-fenbi-74392/f0c279b32d268e78cde58eb46e72d282cc080741fc2190bd5dd4ae5925a6387b.png)，则该数列前n项的平均数是：
 
 A. 266
 
@@ -1270,7 +1270,7 @@ C
 
 一实心圆锥体的底面半径为r，母线长为2r。若截圆锥体得到两个同样的锥体（如图），则所得两个锥体的表面积之和与原圆锥体表面积的比值是：![](assets-fenbi-74392/07259a875d5f22c8f09e3c55a8d91b336e9830072c508b01bbc4c86b2f7f4732.png)
 
-A. ![](assets-fenbi-74392/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)
+A. 1/2
 
 B. ![](assets-fenbi-74392/c9c8862abfff94f99554036423fd9a9a874b264b2c4cc7970cf48684cdcfa56d.png)
 
