@@ -15,7 +15,7 @@
 # 2015年425联考《行测》题（浙江A卷）
 
 <!-- gwy:overview:start -->
-> **浙江 · 2015 · 行测 · A类** ｜ 125 题 · 图片 66 处 · 答案随题折叠
+> **浙江 · 2015 · 行测 · A类** ｜ 125 题 · 图片 64 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2353,7 +2353,7 @@ B
 
 **解析**
 
-分针一分钟走1个单位，秒针则一分钟走60个单位。假设分针走过的角度为![](assets-fenbi-66117/f3df11cb7ace988596f4b8bc5df9e8fb5d4f7f953d04ecf787d03a4b8269d467.png)，秒针走过的角度为![](assets-fenbi-66117/3a7e76b1a23079ef97eaab623c2a69116cd05b86bf33fae26937d74043168e4c.png)，则![](assets-fenbi-66117/79477264f9ceac3e14e3a45e58e9c2adebb349c341eaca1b843887d98ac2e526.png)，根据弧长公式![](assets-fenbi-66117/d5587c50c29e043382975f82c781732ac894303e679438a4f66b3ad0f74ac334.png)（l为弧长，r为半径，n为圆心角度数）可得![](assets-fenbi-66117/16dec9a5044f3259d8a41f24786a3d4e167628347d6085e8ed76692678fde4fd.png)，则![](assets-fenbi-66117/328ef15e679f24e9ccf46c509633d871ac55bfa49c4bac232c4413a679bccb8c.png)厘米。
+分针一分钟走1个单位，秒针则一分钟走60个单位。假设分针走过的角度为n分，秒针走过的角度为n秒，则![](assets-fenbi-66117/79477264f9ceac3e14e3a45e58e9c2adebb349c341eaca1b843887d98ac2e526.png)，根据弧长公式![](assets-fenbi-66117/d5587c50c29e043382975f82c781732ac894303e679438a4f66b3ad0f74ac334.png)（l为弧长，r为半径，n为圆心角度数）可得![](assets-fenbi-66117/16dec9a5044f3259d8a41f24786a3d4e167628347d6085e8ed76692678fde4fd.png)，则![](assets-fenbi-66117/328ef15e679f24e9ccf46c509633d871ac55bfa49c4bac232c4413a679bccb8c.png)厘米。
 
 故正确答案为B。
 

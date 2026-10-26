@@ -15,7 +15,7 @@
 # 2014年浙江省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **浙江 · 2014 · 行测 · B类** ｜ 120 题 · 图片 90 处 · 答案随题折叠
+> **浙江 · 2014 · 行测 · B类** ｜ 120 题 · 图片 89 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1865,7 +1865,7 @@ D
 
 **解析**
 
-赋值衣服进价为100元，则衣服售价为![](assets-fenbi-26155/ba8197c65df6c2c1c4e47880866334056932eecbd5d1558fb08274e812f28705.png)元，则原价售出时单件利润为150-100=50元；下降20%时，其单件利润为![](assets-fenbi-26155/ff174d712bf69a22056bfbef2c577591375038f1a58618d4dd959cdb3807e8c2.png)![](assets-fenbi-26155/2414c546d8620072903839e50ce31af4725792c5b553ef39cf30c29ac95bb928.png)元；处理时其单件利润为![](assets-fenbi-26155/bde542927bbe28c8d8d3e086d30d2c61542ce6c9dee2dd77c6abbd1940097e01.png)元。设原价售出的件数为x件，处理售出的件数为y件，总数为100件，则下降20%售出的件数为（100-x-y）件。根据“最后这批衣服盈利超过25%”可得：![](assets-fenbi-26155/9984dbdba4158df19ffe08c1dc44311bb565edcefca5174ba638420c0367c44b.png)![](assets-fenbi-26155/02a03bd1d65e9196912e1b937ce20f55e3c70eaf9f78ce12f41e6d521f4ecb85.png)，化简得6x＞100+9y，则![](assets-fenbi-26155/67562ab57c8008e52085e91dc95845bd672cef3cc259872c2c818cfdd717b6e0.png)，因题目所求为“至少有多少件衣服是按照原售价卖出”，即x最小，则y要最小，又“如果处理的衣服不少于20件”，则y最小为20，所以![](assets-fenbi-26155/3d3cbb351be2dabca2195f78fb2c3d4d2e27bb5fce5d2a158a001f227a97e4c6.png)![](assets-fenbi-26155/52173e688e26dbc10e0f23b4582d60e4a5f160b83a824e7b6f0717075c757ea5.png)，则x最小为47件。
+赋值衣服进价为100元，则衣服售价为![](assets-fenbi-26155/ba8197c65df6c2c1c4e47880866334056932eecbd5d1558fb08274e812f28705.png)元，则原价售出时单件利润为150-100=50元；下降20%时，其单件利润为![](assets-fenbi-26155/ff174d712bf69a22056bfbef2c577591375038f1a58618d4dd959cdb3807e8c2.png)![](assets-fenbi-26155/2414c546d8620072903839e50ce31af4725792c5b553ef39cf30c29ac95bb928.png)元；处理时其单件利润为![](assets-fenbi-26155/bde542927bbe28c8d8d3e086d30d2c61542ce6c9dee2dd77c6abbd1940097e01.png)元。设原价售出的件数为x件，处理售出的件数为y件，总数为100件，则下降20%售出的件数为（100-x-y）件。根据“最后这批衣服盈利超过25%”可得：![](assets-fenbi-26155/9984dbdba4158df19ffe08c1dc44311bb565edcefca5174ba638420c0367c44b.png)![](assets-fenbi-26155/02a03bd1d65e9196912e1b937ce20f55e3c70eaf9f78ce12f41e6d521f4ecb85.png)，化简得6x＞100+9y，则![](assets-fenbi-26155/67562ab57c8008e52085e91dc95845bd672cef3cc259872c2c818cfdd717b6e0.png)，因题目所求为“至少有多少件衣服是按照原售价卖出”，即x最小，则y要最小，又“如果处理的衣服不少于20件”，则y最小为20，所以![](assets-fenbi-26155/3d3cbb351be2dabca2195f78fb2c3d4d2e27bb5fce5d2a158a001f227a97e4c6.png)46 2/3，则x最小为47件。
 
 故正确答案为D。
 

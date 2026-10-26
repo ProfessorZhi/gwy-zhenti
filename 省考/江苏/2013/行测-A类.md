@@ -15,7 +15,7 @@
 # 2013年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2013 · 行测 · A类** ｜ 105 题 · 图片 87 处 · 答案随题折叠
+> **江苏 · 2013 · 行测 · A类** ｜ 105 题 · 图片 78 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1296,7 +1296,7 @@ C
 
 ### 第 39 题
 
-若![](assets-fenbi-439/48be0715eb858a4aba65a9191070b71c24b9c550c3a71781658f30fdb4195b00.png)\=![](assets-fenbi-439/4ded1e0fb95cedd5c49c88f8ccf83dc28f8af29c2ecec239068448955fdff092.png)，其中n是小于2013的自然数，则![](assets-fenbi-439/48be0715eb858a4aba65a9191070b71c24b9c550c3a71781658f30fdb4195b00.png)的最大值是（    ）。
+若T_π\=![](assets-fenbi-439/4ded1e0fb95cedd5c49c88f8ccf83dc28f8af29c2ecec239068448955fdff092.png)，其中n是小于2013的自然数，则T_π的最大值是（    ）。
 
 A. 1013048
 
@@ -1314,9 +1314,9 @@ D
 
 **解析**
 
-因分子一定，分母越小，商值越大，故要使![](assets-fenbi-439/48be0715eb858a4aba65a9191070b71c24b9c550c3a71781658f30fdb4195b00.png)取值最大，则分母部分“![](assets-fenbi-439/21ddbbfc292bb2e1461582886dc8af5118c134027b427d027d5dcc7da3ebb849.png)”应取最小值，即![](assets-fenbi-439/3a8eae848a155a2fa338965d0c0f4727da01cbca473266835dfceee5b6be70f4.png)应取最小值，故n应取最大值。因n是小于2013的自然数，n取最大值2012时，![](assets-fenbi-439/3a8eae848a155a2fa338965d0c0f4727da01cbca473266835dfceee5b6be70f4.png)取值最小。
+因分子一定，分母越小，商值越大，故要使T_π取值最大，则分母部分“![](assets-fenbi-439/21ddbbfc292bb2e1461582886dc8af5118c134027b427d027d5dcc7da3ebb849.png)”应取最小值，即![](assets-fenbi-439/3a8eae848a155a2fa338965d0c0f4727da01cbca473266835dfceee5b6be70f4.png)应取最小值，故n应取最大值。因n是小于2013的自然数，n取最大值2012时，![](assets-fenbi-439/3a8eae848a155a2fa338965d0c0f4727da01cbca473266835dfceee5b6be70f4.png)取值最小。
 
-故![](assets-fenbi-439/48be0715eb858a4aba65a9191070b71c24b9c550c3a71781658f30fdb4195b00.png)的最大值=![](assets-fenbi-439/4d140045a6e0ef60ff106a079f1d2ec5031b1283a5e0b7dca97a1586fc8917a6.png)
+故T_π的最大值=![](assets-fenbi-439/4d140045a6e0ef60ff106a079f1d2ec5031b1283a5e0b7dca97a1586fc8917a6.png)
 
 计算可得尾数应为42，只有D项满足。
 
@@ -3302,15 +3302,15 @@ B
 
 ### 第 90 题
 
-若不考虑价格因素，则2003年—2011年九年，江苏金融业增加值年均增速![](assets-fenbi-439/bfef8e0081ace5ad50d47e6c2b8ab06b4e8a04e5a1dd425d683359eced71625f.png)、第三产业增加值年均增速V_s，地区国内生产总值年均增速V_G的大小关系是：
+若不考虑价格因素，则2003年—2011年九年，江苏金融业增加值年均增速V_L、第三产业增加值年均增速V_s，地区国内生产总值年均增速V_G的大小关系是：
 
-A. V_s\>![](assets-fenbi-439/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)\>V_G
+A. V_s\>V_L\>V_G
 
-B. ![](assets-fenbi-439/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)\>V_G\>V_s
+B. V_L\>V_G\>V_s
 
-C. ![](assets-fenbi-439/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)\>V_s\>V_G
+C. V_L\>V_s\>V_G
 
-D. V_s\>V_G\>![](assets-fenbi-439/186bcedd7b62add029ab7fd9c5db49f4cd16d02ecd9f1c3287b626c607e8e4e5.png)
+D. V_s\>V_G\>V_L
 
 <details><summary>第 90 题 · 答案与解析</summary>
 

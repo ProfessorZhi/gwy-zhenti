@@ -15,7 +15,7 @@
 # 2009年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2009 · 行测 · C类** ｜ 100 题 · 图片 175 处 · 答案随题折叠
+> **江苏 · 2009 · 行测 · C类** ｜ 100 题 · 图片 170 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -232,7 +232,7 @@ C
 
 方法一：观察数列无明显特征，作差后无规律，考虑作和。相邻两项相加得到新数列：1，2，4，8，（    ），是公比为2的等比数列，新数列下一项![](assets-fenbi-113/d20c24581aa921a8a6ec71c645dc17a081f048e9450f0391c6401b267b4e53c7.png)。则所求项=16-5=11。
 
-方法二：观察数列无明显特征，作差后无规律，考虑递推。圈三数，找规律。发现![](assets-fenbi-113/27ef5f0daa2d7e23094b67af596036232c49d5916c9a481ff99cbc382ab45c27.png)，![](assets-fenbi-113/58113901ca3a0d3d740b7d36e6cf19104633ce1664175bba5cbd02d62d8c1480.png)，推测该数列规律为：第一项![](assets-fenbi-113/354cf261566e47195bd543fce950948080718471270e971686ed3d094cf9ad68.png)第二项=第三项，做验证：![](assets-fenbi-113/f8a34bf925e060aaeb98d8c270effe7401fa94a982803aee7f6466cc91528a3e.png)，符合此规律，推测正确，则所求项![](assets-fenbi-113/543be2befbae0b40a5fef0964723d10575e373277d8e76792677a01ba79f57db.png)。
+方法二：观察数列无明显特征，作差后无规律，考虑递推。圈三数，找规律。发现![](assets-fenbi-113/27ef5f0daa2d7e23094b67af596036232c49d5916c9a481ff99cbc382ab45c27.png)，![](assets-fenbi-113/58113901ca3a0d3d740b7d36e6cf19104633ce1664175bba5cbd02d62d8c1480.png)，推测该数列规律为：第一项x^2+第二项=第三项，做验证：![](assets-fenbi-113/f8a34bf925e060aaeb98d8c270effe7401fa94a982803aee7f6466cc91528a3e.png)，符合此规律，推测正确，则所求项![](assets-fenbi-113/543be2befbae0b40a5fef0964723d10575e373277d8e76792677a01ba79f57db.png)。
 
 故正确答案为C。
 
@@ -2918,7 +2918,7 @@ D
 
 **解析**
 
-根据题干“1979~2007年我国GDP的年平均增长速度比人均GNI”，可判定本题为年均增长率问题。定位文字材料第一段和第二段可知：“1978年我国GDP为1473亿美元，人均GNI为190美元，2007年我国GDP为32801亿美元，人均GNI为2360美元”，根据年均增长率公式：![](assets-fenbi-113/f25e7b5d7b4b1df0ec4892e28cfe26b4ab35b1eb32ffe94929a15931201967f8.png)，即本题现期量为2007年的量，基期量为1978年的量，年份差n=2007-1978=29，可推出![](assets-fenbi-113/8453b5f1d6c85c6d473611368fcb96eeb7bcd0c76b26e54cd9c3a6f04fd532a5.png)，![](assets-fenbi-113/4c9e34e56cf319f340f3997c9684265d333f42fc38408f82115361043704a3d6.png)，前者大于后者，即![](assets-fenbi-113/a0d70633755ad7b462b7a643d2b40c2bcf4f285752c4ee7ad20e7876d439edc7.png)高于![](assets-fenbi-113/aac7f820a23e7deb0864f2345fa1c6f2bda9cba5c1afb5627d035f36647cf99a.png)，排除B、C两项，若![](assets-fenbi-113/a0d70633755ad7b462b7a643d2b40c2bcf4f285752c4ee7ad20e7876d439edc7.png)取值10%，![](assets-fenbi-113/ab378f2ca727853492793d35e49a347d7c78324b689441f72821eeed672efc1d.png)，与22接近，可判断![](assets-fenbi-113/a0d70633755ad7b462b7a643d2b40c2bcf4f285752c4ee7ad20e7876d439edc7.png)略大于10%，根据![](assets-fenbi-113/c29dfea3fa87e89e970a8d76dfc7f07c4f8191b139c176cf1c294517e352e602.png)，推测![](assets-fenbi-113/aac7f820a23e7deb0864f2345fa1c6f2bda9cba5c1afb5627d035f36647cf99a.png)不会特别小，可判断![](assets-fenbi-113/a0d70633755ad7b462b7a643d2b40c2bcf4f285752c4ee7ad20e7876d439edc7.png)不可能比![](assets-fenbi-113/aac7f820a23e7deb0864f2345fa1c6f2bda9cba5c1afb5627d035f36647cf99a.png)高10.05个百分点，故排除A项。
+根据题干“1979~2007年我国GDP的年平均增长速度比人均GNI”，可判定本题为年均增长率问题。定位文字材料第一段和第二段可知：“1978年我国GDP为1473亿美元，人均GNI为190美元，2007年我国GDP为32801亿美元，人均GNI为2360美元”，根据年均增长率公式：![](assets-fenbi-113/f25e7b5d7b4b1df0ec4892e28cfe26b4ab35b1eb32ffe94929a15931201967f8.png)，即本题现期量为2007年的量，基期量为1978年的量，年份差n=2007-1978=29，可推出![](assets-fenbi-113/8453b5f1d6c85c6d473611368fcb96eeb7bcd0c76b26e54cd9c3a6f04fd532a5.png)，![](assets-fenbi-113/4c9e34e56cf319f340f3997c9684265d333f42fc38408f82115361043704a3d6.png)，前者大于后者，即r_GDP年均高于![](assets-fenbi-113/aac7f820a23e7deb0864f2345fa1c6f2bda9cba5c1afb5627d035f36647cf99a.png)，排除B、C两项，若r_GDP年均取值10%，![](assets-fenbi-113/ab378f2ca727853492793d35e49a347d7c78324b689441f72821eeed672efc1d.png)，与22接近，可判断r_GDP年均略大于10%，根据![](assets-fenbi-113/c29dfea3fa87e89e970a8d76dfc7f07c4f8191b139c176cf1c294517e352e602.png)，推测![](assets-fenbi-113/aac7f820a23e7deb0864f2345fa1c6f2bda9cba5c1afb5627d035f36647cf99a.png)不会特别小，可判断r_GDP年均不可能比![](assets-fenbi-113/aac7f820a23e7deb0864f2345fa1c6f2bda9cba5c1afb5627d035f36647cf99a.png)高10.05个百分点，故排除A项。
 
 故正确答案为D。
 

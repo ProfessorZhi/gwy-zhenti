@@ -15,7 +15,7 @@
 # 2013年上海市公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **上海 · 2013 · 行测 · A类** ｜ 140 题 · 图片 99 处 · 答案随题折叠
+> **上海 · 2013 · 行测 · A类** ｜ 140 题 · 图片 86 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1069,9 +1069,9 @@ B
 
 **解析**
 
-对于高为h，密度为ρ的正方体，对地面产生的压强应该是![](assets-fenbi-405/4d02677e1eff8da6d70b0bfbc13e9e8065a28f9fbbd7055ba0dcfe466e154e9a.png)，设三个正方体边长分别为a、b、c，密度分别为ρ_A、![](assets-fenbi-405/c5c4a006423e3876d7b46c231882e1186ea0788a7bd397b0b6fcbb073566b5c4.png)、pC，则有如下关系：P=![](assets-fenbi-405/e81ce29b27d68230e962167b19f8da6faf37a610b72b2ab9f3c9ad0e1228efbf.png)=![](assets-fenbi-405/432fc2376365830c3523762a89cca6bb89316e6176f035dbfe37a8feca5981b6.png)=![](assets-fenbi-405/ca6c30ef0a2ea9a064cece9f76b74c339c17cd105ace2dc67eb63a27322bf56b.png)，由于a>b>c，则ρ_A![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/c5c4a006423e3876d7b46c231882e1186ea0788a7bd397b0b6fcbb073566b5c4.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)pC；
+对于高为h，密度为ρ的正方体，对地面产生的压强应该是![](assets-fenbi-405/4d02677e1eff8da6d70b0bfbc13e9e8065a28f9fbbd7055ba0dcfe466e154e9a.png)，设三个正方体边长分别为a、b、c，密度分别为ρ_A、ρ_B、pC，则有如下关系：P=ρ_Aga=ρ_Bgb=a＞b＞c，由于a>b>c，则ρ_A＜ρ_B＜pC；
 
-减去相同的高度h'，则此时剩余部分对地面压强大小分别为![](assets-fenbi-405/1104cc0dd7e61814691f075fe064080aa3665f83217afc62356e578f73ff3577.png)、![](assets-fenbi-405/816c6136058dbdda21a7621cce8f4fe81a09f963004a3198c40d732759e2faf2.png)、![](assets-fenbi-405/c56d6518aa549e526064b7bd27564df47970e3b74ce7460ae4f6e8a09a1f41f6.png)，减少的压强关系为![](assets-fenbi-405/dafe1d4d927fb7ab730d2ed6b137a4b55fff9374aa0e5a4e3dc62de14d900997.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/c75c5d7a278048d96c9443fa8c1467e4815ff79f4667ba7c5410c7da36c1f6d1.png)![](assets-fenbi-405/134105e1047660ce6eccc29381bce407d760bd9438d70aff51739d48df10dec2.png)![](assets-fenbi-405/d3c24b95bbf7a0704a1ca9b691e7fd2587a7048ed3d25ea8cd330ec67498a8c1.png)，可知剩余压强P_A![](assets-fenbi-405/914b771f82129398b1441ba198b88042e1db859d3dcc57da89ebf43a005b3276.png)P_B![](assets-fenbi-405/914b771f82129398b1441ba198b88042e1db859d3dcc57da89ebf43a005b3276.png)![](assets-fenbi-405/639ad1cef94a244d00f40d31c17d72b963b46fa2699982f4abc54b15b4d68bd7.png)。
+减去相同的高度h'，则此时剩余部分对地面压强大小分别为![](assets-fenbi-405/1104cc0dd7e61814691f075fe064080aa3665f83217afc62356e578f73ff3577.png)、![](assets-fenbi-405/816c6136058dbdda21a7621cce8f4fe81a09f963004a3198c40d732759e2faf2.png)、![](assets-fenbi-405/c56d6518aa549e526064b7bd27564df47970e3b74ce7460ae4f6e8a09a1f41f6.png)，减少的压强关系为ρ_Agh'＜ρ_Bgh'＜pcgh'，可知剩余压强P_A![](assets-fenbi-405/914b771f82129398b1441ba198b88042e1db859d3dcc57da89ebf43a005b3276.png)P_B![](assets-fenbi-405/914b771f82129398b1441ba198b88042e1db859d3dcc57da89ebf43a005b3276.png)P_C。
 
 故正确答案为B。
 

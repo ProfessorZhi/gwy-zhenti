@@ -15,7 +15,7 @@
 # 2011年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2011 · 行测 · B类** ｜ 155 题 · 图片 184 处 · 答案随题折叠
+> **江苏 · 2011 · 行测 · B类** ｜ 155 题 · 图片 173 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -953,7 +953,7 @@ C
 
 **解析**
 
-题干给出的三个字符组中重复的字符为![](assets-fenbi-193/145958a6779b67eaf1f8f9cce4853f3aaef56805246ec6463db01a42f18cb70e.png)和![](assets-fenbi-193/f8bf489732296a4095d9993c33df75a2119955202a93c32da7cdc959cd2c76a7.png)，共2个。
+题干给出的三个字符组中重复的字符为Φ和ま，共2个。
 
 故正确答案为C。
 
@@ -1479,7 +1479,7 @@ D
 
 A. ◇
 
-B. ![](assets-fenbi-193/d2c24ae12e18774b0a9d6aa48070aa3389fc2b469e3201b0346cd99d2587f705.png)
+B. ○
 
 C. ▲
 
@@ -1565,7 +1565,7 @@ A. ●
 
 B. ![](assets-fenbi-193/b9e9b59b4ed0f228492a78bc81f3af2f84dafcf2a4ff1a84f122207cb4f424e3.png)
 
-C. ![](assets-fenbi-193/072aa7e0030826e4f3ba1d87ca0467f0656f920ed10eb92bc64b3e03268503a8.png)
+C. ☆
 
 D. ![](assets-fenbi-193/5aebfb3bd5ff02c90c5b1f60f028141f8988ac619c814d1bce6011e271c43c9a.jpg)
 
@@ -1679,7 +1679,7 @@ B. ★
 
 C. △
 
-D. ![](assets-fenbi-193/d4d07813cbffe3188c9a82bd117e9d5d3c4c44909560ae33bf459cb37785f9e8.png)
+D. ○
 
 <details><summary>第 58 题 · 答案与解析</summary>
 
@@ -1731,7 +1731,7 @@ C
 
 A. ◇
 
-B. ![](assets-fenbi-193/4e1a72dc2832b8f948883814a5cc6d392035ef1a41952e5280fcaf630cc1e765.png)
+B. ●
 
 C. ★
 
@@ -2431,7 +2431,7 @@ A
 
 **解析**
 
-机械划分：3|5|.6、5|7|.12、![](assets-fenbi-193/95812ff40aa356dd42730f9e74c6ce2a20eedc616878af075cd2318d13793e93.png)、11|13|.24、13|17|.30、17|19|.36，看作交叉数列：
+机械划分：3|5|.6、5|7|.12、（‖）、11|13|.24、13|17|.30、17|19|.36，看作交叉数列：
 
 左侧部分：3、5、(7)、11、13、17为质数数列；
 
@@ -2459,7 +2459,7 @@ B. 76/2568
 
 C. 652/27380
 
-D. ![](assets-fenbi-193/fc2fa196785e1c31b0fcca23be0782fe798646dc7f7550258f166a6c9b464492.png)
+D. 428/25440
 
 <details><summary>第 81 题 · 答案与解析</summary>
 
@@ -2473,7 +2473,7 @@ D
 
 把原数列改写为：2/3、2/6、5/12、8/60、53/480、（    ），此时数列为递推数列，递推规律为：分子=前项分母-前项分子+1，具体规律为：3-2+1=2，6-2+1=5，12-5+1=8，60-8+1=53，因此下一项分子为：480-53+1=428；
 
-![](assets-fenbi-193/f951b2c314accc8205a828a30df1615836ff810cc4757ed078bebfc4e6866310.png)，具体规律为：![](assets-fenbi-193/e254756adec945b687f7ea9169f3998e33543a0ef5f17dc7943e41af4a8193c3.png)，![](assets-fenbi-193/5e506c8431ee2709d677622520ec421efae54dc157ececb53c1b9a6e9e036107.png)，![](assets-fenbi-193/1b9d1b748f5c84d9a6337d4cdb07a87db525f83c7051a978e2d26ab0e658afa1.png)，![](assets-fenbi-193/d70bb200afd88700bb31c6f8eab7f22d264b7f053c251616c1ff8556a1599c0b.png)，因此下一项分母为：![](assets-fenbi-193/d625e1099111a660094dd5013a48cd06d825f0c7e07391953b0eb1ea64475f70.png)。因此原数列的下一项为![](assets-fenbi-193/fc2fa196785e1c31b0fcca23be0782fe798646dc7f7550258f166a6c9b464492.png)。
+![](assets-fenbi-193/f951b2c314accc8205a828a30df1615836ff810cc4757ed078bebfc4e6866310.png)，具体规律为：![](assets-fenbi-193/e254756adec945b687f7ea9169f3998e33543a0ef5f17dc7943e41af4a8193c3.png)，![](assets-fenbi-193/5e506c8431ee2709d677622520ec421efae54dc157ececb53c1b9a6e9e036107.png)，![](assets-fenbi-193/1b9d1b748f5c84d9a6337d4cdb07a87db525f83c7051a978e2d26ab0e658afa1.png)，![](assets-fenbi-193/d70bb200afd88700bb31c6f8eab7f22d264b7f053c251616c1ff8556a1599c0b.png)，因此下一项分母为：![](assets-fenbi-193/d625e1099111a660094dd5013a48cd06d825f0c7e07391953b0eb1ea64475f70.png)。因此原数列的下一项为428/25440。
 
 故正确答案为D。
 
@@ -2565,7 +2565,7 @@ C
 
 **解析**
 
-机械划分：2|3、5|7、11|13、13|17、![](assets-fenbi-193/f28223025681be562da69568077e5c68c82d77105d7bc55b0d217a2e2dbcb9a2.png)、23|31，分组后的各项均为质数，四个选项中仅C符合。
+机械划分：2|3、5|7、11|13、13|17、（ ）、23|31，分组后的各项均为质数，四个选项中仅C符合。
 
 故正确答案为C。
 
@@ -2737,7 +2737,7 @@ C
 
 **解析**
 
-设“预中报价”为x万元，“预中报价”与每个报价数之差的平方和为y，根据题意可得：![](assets-fenbi-193/317ef06c72a6cd0fbf5fee42fe08d1a7d6459d8b544fadcc0dde4493c8d565e8.png)![](assets-fenbi-193/ead396df48acdf2871c6571cbce38f4b27b4a0964270ae73442d3196d3379ab4.png)![](assets-fenbi-193/2803808729cfd9adacf217a3b482cfae707e899994c10fe71e97dd8c8c3d7a6c.png)![](assets-fenbi-193/d827f68d2b87a205268c491b7b9f20da6b19dac9eb59ef54a9a3493bb99ecfb4.png)![](assets-fenbi-193/25697b38b290359cc5b4f1fb52b2a317e54d74440974f17a718d0e787e2e9033.png)，根据二次函数的性质，当![](assets-fenbi-193/dfefa2f86655518dec28720d1645575089d81b3d46a7de29bfd994250bb4c5e7.png)时，y取得最小值，因此![](assets-fenbi-193/642c3eec6eececb8529219374b655e897a75b62fa053c7f08f7cf497abe7d356.png)![](assets-fenbi-193/d18c7f3d4d28b42e33caa5c278d6426cc3a2d37d3bf8aa046ba2f85378c488eb.png)![](assets-fenbi-193/931313492c09135aebfe11a972db80c203dc4f805250a34939f1da6e3b03b8bb.png)。
+设“预中报价”为x万元，“预中报价”与每个报价数之差的平方和为y，根据题意可得：![](assets-fenbi-193/317ef06c72a6cd0fbf5fee42fe08d1a7d6459d8b544fadcc0dde4493c8d565e8.png)![](assets-fenbi-193/ead396df48acdf2871c6571cbce38f4b27b4a0964270ae73442d3196d3379ab4.png)![](assets-fenbi-193/2803808729cfd9adacf217a3b482cfae707e899994c10fe71e97dd8c8c3d7a6c.png)![](assets-fenbi-193/d827f68d2b87a205268c491b7b9f20da6b19dac9eb59ef54a9a3493bb99ecfb4.png)![](assets-fenbi-193/25697b38b290359cc5b4f1fb52b2a317e54d74440974f17a718d0e787e2e9033.png)，根据二次函数的性质，当![](assets-fenbi-193/dfefa2f86655518dec28720d1645575089d81b3d46a7de29bfd994250bb4c5e7.png)时，y取得最小值，因此x=![](assets-fenbi-193/d18c7f3d4d28b42e33caa5c278d6426cc3a2d37d3bf8aa046ba2f85378c488eb.png)![](assets-fenbi-193/931313492c09135aebfe11a972db80c203dc4f805250a34939f1da6e3b03b8bb.png)。
 
 故正确答案为C。
 
