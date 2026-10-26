@@ -15,7 +15,7 @@
 # 2009年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2009 · 行测 · A类** ｜ 105 题 · 图片 113 处 · 答案随题折叠
+> **江苏 · 2009 · 行测 · A类** ｜ 105 题 · 图片 109 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -362,7 +362,7 @@ D
 
 ### 第 11 题
 
-![](assets-fenbi-109/a30fa99a8c5f5d47c84fee62c93cdd63b92496446844534824a37f9e3a107f3b.png)
+[(1+14)(1+14/2)(1+14/3)…(1+14/15)]/[(1+15)(1+15/2)(1+15/3)…(1+15/14)]=（ ）
 
 A. 14/15
 
@@ -428,7 +428,7 @@ D
 
 ### 第 13 题
 
-已知![](assets-fenbi-109/d530296267422597af8cd5eae0a203c9007e3f6e25a490146130a0bdff789703.png)，则![](assets-fenbi-109/8cf5267b5f00b49b556421f97338b0d7496681cfca518404bc3907052d2d03ce.png)
+已知a^2 + a + 1 = 0，则a^2008 + a^2009 + 1 =（ ）
 
 A. 0
 
@@ -446,7 +446,7 @@ A
 
 **解析**
 
-由![](assets-fenbi-109/d530296267422597af8cd5eae0a203c9007e3f6e25a490146130a0bdff789703.png)，则![](assets-fenbi-109/f4f04c2e88efbba025dc759a183becc88510a21286aa8453808f85cd3776b559.png)，![](assets-fenbi-109/67530827de8ac2c950d1cfe8b45eb899e11b04a44982352e5942d8ff766a2d84.png)，a^3=1，![](assets-fenbi-109/8054e2548ebba90487c8569e497b9e0c140337e9c3ac21a70c545eab6b2b90d3.png)![](assets-fenbi-109/319dfac519b510be24da2571f10e91e8e7a3991684232235812abc7ceec04485.png)，由![](assets-fenbi-109/49b6a4dc0ff45e7a74debf45079b1101be51d03f668a082c6b072085f1ce24a8.png)，故![](assets-fenbi-109/fec331c5dbc8afe42fed54b3fc0bf68bb38b1b90d557852b6e0be0b89ee3d4f2.png)。
+由a^2 + a + 1 = 0，则![](assets-fenbi-109/f4f04c2e88efbba025dc759a183becc88510a21286aa8453808f85cd3776b559.png)，![](assets-fenbi-109/67530827de8ac2c950d1cfe8b45eb899e11b04a44982352e5942d8ff766a2d84.png)，a^3=1，![](assets-fenbi-109/8054e2548ebba90487c8569e497b9e0c140337e9c3ac21a70c545eab6b2b90d3.png)![](assets-fenbi-109/319dfac519b510be24da2571f10e91e8e7a3991684232235812abc7ceec04485.png)，由![](assets-fenbi-109/49b6a4dc0ff45e7a74debf45079b1101be51d03f668a082c6b072085f1ce24a8.png)，故![](assets-fenbi-109/fec331c5dbc8afe42fed54b3fc0bf68bb38b1b90d557852b6e0be0b89ee3d4f2.png)。
 
 故正确答案为A。
 

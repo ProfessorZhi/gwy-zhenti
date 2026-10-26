@@ -15,7 +15,7 @@
 # 2009年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2009 · 行测 · C类** ｜ 100 题 · 图片 170 处 · 答案随题折叠
+> **江苏 · 2009 · 行测 · C类** ｜ 100 题 · 图片 165 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -354,7 +354,7 @@ D
 
 ### 第 11 题
 
-x-y=1，![](assets-fenbi-113/b949afdfcb7a13593be3d63fc6dc2fa6ba41bba4d697c076a789042b12d18973.png)
+x-y=1，x^3 - 3xy - y^3 =（ ）
 
 A. 1
 
@@ -382,7 +382,7 @@ A
 
 ### 第 12 题
 
-![](assets-fenbi-113/fbc69fd81f0ca358a3ea2f72a9cb933a85c3c2eb37f84a640c04bbd6f68b3947.png)，则![](assets-fenbi-113/38b5cc41b09289400f3bc916d1e79cf727a38601020d9ab90b3d6c33e7f6356f.png)
+a + b + c = 2(√a + √(b-1) + √(c-2))，则a^2 + b^2 + c^2 =（ ）
 
 A. 14
 
@@ -400,7 +400,7 @@ A
 
 **解析**
 
-已知![](assets-fenbi-113/fbc69fd81f0ca358a3ea2f72a9cb933a85c3c2eb37f84a640c04bbd6f68b3947.png)，可推出：![](assets-fenbi-113/dc335d49bba309c45a5b48895e4a82317ef22a05457d8b111dfe555b70b7fc20.png)![](assets-fenbi-113/b1b3f9fa12cc36a23e83d0c3abc24f431f8baa51d0feca6ec7dfe188e3c43efa.png)，![](assets-fenbi-113/9351f34fac9bc497e2d4452ab0a0adc557eb3bd045153cd7fedcb409853ac195.png)![](assets-fenbi-113/b86dcd05ca9331b78eb2523ba640923db421c57e59397d7cb606b0e15b076006.png)，![](assets-fenbi-113/71735345cb783cc6dbf86d510b50c39665eda29d48605ca4e704e9b18b73fb72.png)![](assets-fenbi-113/2d45acfe7b7cb48732d1424fd3a572d79286fd1058d918089e844c331581d48d.png)，推出：![](assets-fenbi-113/ac622c34a4af03377eccf32eb71dc1176238e81c1a1b6dbef5b382f54e41f803.png)，![](assets-fenbi-113/7e41cdf71a646a8120b39ceb2543294a4a4972550c73bf40cfd0e6fb679e6089.png)，![](assets-fenbi-113/8e862184e9b5220ef8a31d2202d82971ac514d10a4fe197794dd3937996b0de9.png)，推出：a=1，b=2，c=3，故![](assets-fenbi-113/02397f1c06ae1aab5713a5104cce06f99984421c0004430e30c69657c714a03b.png)。
+已知a + b + c = 2(√a + √(b-1) + √(c-2))，可推出：![](assets-fenbi-113/dc335d49bba309c45a5b48895e4a82317ef22a05457d8b111dfe555b70b7fc20.png)![](assets-fenbi-113/b1b3f9fa12cc36a23e83d0c3abc24f431f8baa51d0feca6ec7dfe188e3c43efa.png)，![](assets-fenbi-113/9351f34fac9bc497e2d4452ab0a0adc557eb3bd045153cd7fedcb409853ac195.png)![](assets-fenbi-113/b86dcd05ca9331b78eb2523ba640923db421c57e59397d7cb606b0e15b076006.png)，![](assets-fenbi-113/71735345cb783cc6dbf86d510b50c39665eda29d48605ca4e704e9b18b73fb72.png)![](assets-fenbi-113/2d45acfe7b7cb48732d1424fd3a572d79286fd1058d918089e844c331581d48d.png)，推出：![](assets-fenbi-113/ac622c34a4af03377eccf32eb71dc1176238e81c1a1b6dbef5b382f54e41f803.png)，![](assets-fenbi-113/7e41cdf71a646a8120b39ceb2543294a4a4972550c73bf40cfd0e6fb679e6089.png)，![](assets-fenbi-113/8e862184e9b5220ef8a31d2202d82971ac514d10a4fe197794dd3937996b0de9.png)，推出：a=1，b=2，c=3，故![](assets-fenbi-113/02397f1c06ae1aab5713a5104cce06f99984421c0004430e30c69657c714a03b.png)。
 
 故正确答案为A。
 
@@ -410,7 +410,7 @@ A
 
 ### 第 13 题
 
-![](assets-fenbi-113/4e42abe49d1f77b881b81d5f80c7c7084fb9ea41d6d7695bd776a5b41b719814.png)
+1/(1×2) + 1/(2×3) + … + 1/(n×(n+1)) =（ ）
 
 A. 0
 
