@@ -15,7 +15,7 @@
 # 2012年上海市公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **上海 · 2012 · 行测 · B类** ｜ 140 题 · 图片 108 处 · 答案随题折叠
+> **上海 · 2012 · 行测 · B类** ｜ 140 题 · 图片 105 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1127,13 +1127,13 @@ B
 
 ![](assets-fenbi-395/d22ef503cb11e237fe4e00137ce05652b4617e8efd87ccd268d24eacacde9ca6.jpg)
 
-A. ![](assets-fenbi-395/28414b1d6bcea79da904b6f80cb7ef18b03e120d854f2a7a188a4d15f2c0bcb4.png)
+A. W_1=W_2=W_3
 
 B. ![](assets-fenbi-395/3c903eaf868fd5cf8dc23f7fa5bedb0ae95ae5246f871a6d350136b85182fe27.png)
 
-C. ![](assets-fenbi-395/b9cdb9e41b0b7e3905d6e2e66f776858c5e6b720e2545b45882bb3f6a62e01d4.png)
+C. W1＞W2＞W3
 
-D. ![](assets-fenbi-395/e8e801b35a79a0c8978d79be56a9eb99d3b6cd96f84da468c42d6d943d005d38.png)
+D. W1＜W2=W3
 
 <details><summary>第 30 题 · 答案与解析</summary>
 

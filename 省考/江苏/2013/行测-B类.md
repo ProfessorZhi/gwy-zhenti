@@ -15,7 +15,7 @@
 # 2013年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2013 · 行测 · B类** ｜ 155 题 · 图片 81 处 · 答案随题折叠
+> **江苏 · 2013 · 行测 · B类** ｜ 155 题 · 图片 76 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -263,7 +263,7 @@ C
 
 ### 第 8 题
 
-![](assets-fenbi-437/e9bddb2b351ef5a28d77e5fa4d311a6f1c276d58583f6d9248cec6f5234c402b.png)
+€Do¶§® M¶@ōǓ®
 
 A. 1
 
@@ -2819,7 +2819,7 @@ D
 
 ### 第 94 题
 
-若![](assets-fenbi-437/5b10157911bdd309d14b897fb59556370624edd2bf891049d6b53da6ddd41117.png)，则T的整数部分是：
+若T=1/(1/2002+1/2003+···+1/2012)，则T的整数部分是：
 
 A. 180
 
@@ -3223,7 +3223,7 @@ A
 
 请从四个选项中选出正确的一项，其特征或规律与题干给出的一串符号的特征或规律最为相似：
 
-![](assets-fenbi-437/99323bf54e73d9460c44ad5ff9be40a8e96a87b43d5a945d32ed8090718b8dd8.png)
+∠3ABC3∠
 
 A. ![](assets-fenbi-437/cb958a400dcce0f2bb926498216152bafdaafcc12a6fe0e4608ff0a030cc767b.png)
 
@@ -4561,9 +4561,9 @@ D
 
 A. ![](assets-fenbi-437/dc4951678f4d6678aaeb839c0eab4a26ca87e9e81ef9f843472b5335a1b855ed.png)
 
-B. ![](assets-fenbi-437/daef3861443e240c2ef1fcfb717064c450bfb70a9689a8a5eb0be96feb0311f6.png)
+B. V_3 ＞ V_2 ＞ V_1
 
-C. ![](assets-fenbi-437/6a1a9f372e455d2539806a0feb17e670f573b8a91a181c64ef921b9f99b1877c.png)
+C. V2＞V3＞V1
 
 D. ![](assets-fenbi-437/a5160d3a9943cba2022760de801bd0f6ba490bdfcadd08b6d4b792d94bb9d321.png)
 

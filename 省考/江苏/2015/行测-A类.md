@@ -15,7 +15,7 @@
 # 2015年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2015 · 行测 · A类** ｜ 100 题 · 图片 76 处 · 答案随题折叠
+> **江苏 · 2015 · 行测 · A类** ｜ 100 题 · 图片 74 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1618,7 +1618,7 @@ D项：海盐是调味剂的一种，供暖器是电器的一种，两组词均�
 
 ![](assets-fenbi-74392/2a6657d611ae3dffe7a90ec01ddb3fc3285cc4c1f14adb98f0aed1e7f0c3d1d0.png)
 
-A. ![](assets-fenbi-74392/30b33f04ab637f5de59d7f3c93f249652b7c44da3882d037768d25c4ec5a16e2.png)
+A. 6779☆&ssHg
 
 B. ![](assets-fenbi-74392/1bde47d573220ffcc31fac2a6c574cca23aa0bd2e0965f8cd06ebae0f20cd404.png)
 
@@ -1654,7 +1654,7 @@ B. ![](assets-fenbi-74392/441a8244a279d447ba41a4e223c65c65591d50e2db8bcd169fd4f8
 
 C. ![](assets-fenbi-74392/9b09c16d2e9f703f85a44ac69722185d71ad34dd3d782fbf902940e45c178c18.png)
 
-D. ![](assets-fenbi-74392/9d06ab10ed6bf75490c68ec08b3e94bbf943a963493f0945fb1f2df820b67c31.png)
+D. Ё ш д ш ю д ю ё
 
 <details><summary>第 49 题 · 答案与解析</summary>
 

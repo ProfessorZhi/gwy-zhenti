@@ -15,7 +15,7 @@
 # 2026年浙江省公务员录用考试《行测》题（A类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **浙江 · 2026 · 行测 · A类** ｜ 120 题 · 图片 143 处 · 答案随题折叠
+> **浙江 · 2026 · 行测 · A类** ｜ 120 题 · 图片 139 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2302,13 +2302,13 @@ D
 
 ![](assets-fenbi-8399761/f8d012ab8e9463783d2493c8479c8823838cc90dc39b0f68fca56b59805063c2.png)
 
-A. ![](assets-fenbi-8399761/0cdfaf4764922781c8453c4cd9ece69246bf778b621084346a92e75d39758dc1.png)
+A. 200+100π
 
-B. ![](assets-fenbi-8399761/177f3bf38b312d127d6e5188816d1c56ea8f40f5458d2b44be027f73969faf5f.png)
+B. 300 + 100π
 
-C. ![](assets-fenbi-8399761/6e27a577f745b4cae190801eb7bf1ddf5cf174825aba2e2e7ded40eabe16f740.png)
+C. 100+300π
 
-D. ![](assets-fenbi-8399761/9bcf80f8660d82d6915818788708449d5b6192d3b6cd92ca2ce47c01d68dbbd1.png)
+D. 200+300π
 
 <details><summary>第 59 题 · 答案与解析</summary>
 

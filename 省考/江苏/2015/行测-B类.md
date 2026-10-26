@@ -15,7 +15,7 @@
 # 2015年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2015 · 行测 · B类** ｜ 100 题 · 图片 67 处 · 答案随题折叠
+> **江苏 · 2015 · 行测 · B类** ｜ 100 题 · 图片 63 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1664,13 +1664,13 @@ C
 
 ![](assets-fenbi-74394/8928524c04cecce421819e6f5a42927c07d42ece76d07bcf0ce721c179d697ad.png)
 
-A. ![](assets-fenbi-74394/ee974614dc89d23b6923e31d98769a6305d694603576527cfee865137bc51c34.png)
+A. ★☆▲△☆★▲△
 
-B. ![](assets-fenbi-74394/200922b7d346e97a31ca549f435fe0006fc7e64cdc3e29aeb2af720421f36d5b.png)
+B. ★▲☆△★▲☆△
 
-C. ![](assets-fenbi-74394/272c4ffb8f6a58e01d6a07fc9dd1e1d3cddebbcd3f793048deea0e72bb3a7976.png)
+C. △▲★☆▲★☆△
 
-D. ![](assets-fenbi-74394/51374deaf1e6663b9078c26495cfbe8f73cc0cfd024ab787405b666c884dba15.png)
+D. ★△▲☆★△☆▲
 
 <details><summary>第 49 题 · 答案与解析</summary>
 

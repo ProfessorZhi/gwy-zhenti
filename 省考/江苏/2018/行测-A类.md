@@ -15,7 +15,7 @@
 # 2018年江苏省公务员录用考试《行测》题（A类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2018 · 行测 · A类** ｜ 135 题 · 图片 159 处 · 答案随题折叠
+> **江苏 · 2018 · 行测 · A类** ｜ 135 题 · 图片 153 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2782,9 +2782,9 @@ D项：清除积弊是动宾搭配，拔除垂柳是动宾搭配，前后逻辑�
 
 A. ![](assets-fenbi-84041/d67a4202187595bb2be63d86e405b8b20d9a589d359f29f77cbd405e245477a0.png)
 
-B. ![](assets-fenbi-84041/020dda4f087718509aaf635a86d7f3076aef2c3bc3b09c20e0121d533c9f7b09.png)
+B. A B C D B C B C C B
 
-C. ![](assets-fenbi-84041/572af8f204a358648d621c155808cc8d2a2b25bd89ccebaecabeebf6ece6c108.png)
+C. UVWXVWYZZW
 
 D. ![](assets-fenbi-84041/3d2c7fe84c8b06a23f3a9cb8219354e6986b04a6c83c906a89a471627b049e1e.png)
 
@@ -2824,7 +2824,7 @@ A. ![](assets-fenbi-84041/0744e25ec93ff7e061e82e7a581e8414c23fcaa6f26b40f675d033
 
 B. ![](assets-fenbi-84041/c5bc5013c3c4c13834b71ebe23295df20a396eb4c9df70d711e334316d7f475a.png)
 
-C. ![](assets-fenbi-84041/38fbab49c056256a1c164582c463a93a67de9e6af75ff39dffaf9d79a762c04a.png)
+C. B6##+66#b
 
 D. ![](assets-fenbi-84041/4de115b466a0cca67844970576750e4f287da1918cdce8ba533642815d5e2177.png)
 
@@ -4592,11 +4592,11 @@ B
 
 2012年末西部地区汽车保有量为：
 
-A. ![](assets-fenbi-84041/a410becd373e1c31be79291a3dd7878cf763961502aa6c26bb1b3da4736a196a.png)
+A. 1963/(1+0.193^5)万辆
 
-B. ![](assets-fenbi-84041/a5d898cbb31f738c2ea95ba627559cd4fa34c2aa8b4a47527b7266d1e29a3abc.png)
+B. 1963/(1.193^5+1)万辆
 
-C. ![](assets-fenbi-84041/5efc14267c0fa8df86595215a617d0c4a48bd35a90908e0e48d57d8a9508a1c9.png)
+C. 1963/(1.193^5−1)万辆
 
 D. ![](assets-fenbi-84041/fdf79cc09bb2b8b5cc089d6733a3c83138ee6684b7e757afea8759bc70d83b68.png)
 

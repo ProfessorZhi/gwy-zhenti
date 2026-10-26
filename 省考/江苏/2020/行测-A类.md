@@ -15,7 +15,7 @@
 # 2020年江苏省公务员录用考试《行测》题（A类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2020 · 行测 · A类** ｜ 135 题 · 图片 138 处 · 答案随题折叠
+> **江苏 · 2020 · 行测 · A类** ｜ 135 题 · 图片 131 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1855,9 +1855,9 @@ D
 
 2，2+√2，4+√3，10，16+√5，（ ）
 
-A. ![](assets-fenbi-91868/0b92f72e2e6e1c96e6a958a96db7bc698f75578947c8c83da5884655fee300e9.png)
+A. 18+√6
 
-B. ![](assets-fenbi-91868/40bfafe311adf752e1782d3ecc21ce5857626b0438a1ec130dcc865f6500c3e2.png)
+B. 16+2√2
 
 C. ![](assets-fenbi-91868/8c021ca027482e5418fd301e3302029a2305da12278089e720516022a8a1cf75.png)
 
@@ -2777,7 +2777,7 @@ B. &◇△◇?▽&?@
 
 C. s%△%▽△s◇▽
 
-D. ![](assets-fenbi-91868/343e3995694a56cce2c1192d45ae49cacce825fad8acf095cb6b7760a70699fa.png)
+D. 5A~A⊙~5⊙8
 
 <details><summary>第 74 题 · 答案与解析</summary>
 
@@ -4627,15 +4627,15 @@ B
 
 ### 第 117 题
 
-用![](assets-fenbi-91868/90bac61f66083af45a68ea15fdd37b5e2fc384c6effc6e9f98763959227889c3.png)、![](assets-fenbi-91868/55174909cd9c9be985ac52e80185279e327e63e5e66d843a30a670e9c56b17e4.png)、![](assets-fenbi-91868/5867e1ad3267ad9665f5eb764e65e473c2f9f4001ca84786a6928eb8235cafbc.png)分别表示四次人口普查间的全国劳动年龄人口年均增长率，下列关系正确的是
+用![](assets-fenbi-91868/90bac61f66083af45a68ea15fdd37b5e2fc384c6effc6e9f98763959227889c3.png)、V_1990−2000、V_2000−2010分别表示四次人口普查间的全国劳动年龄人口年均增长率，下列关系正确的是
 
-A. ![](assets-fenbi-91868/b1a08a5a31fba6e7568738724e7589f5447686cd6bf85cbde9bd991b267f9609.png)
+A. V1982−1990≥V1990−2000≥V2000−2010
 
 B. ![](assets-fenbi-91868/38385127d3e05b8075bf890cefcbbf448aebb0a21203d031f717878fe71c940a.png)
 
 C. ![](assets-fenbi-91868/9ef83af193abac053973e22b0f9f0b409a135fe97cd11a717620426f194d5fc5.png)
 
-D. ![](assets-fenbi-91868/e2998c1104c799384546cb1d54c8a1f2b7ddb7a3334b980f26c115700244d35b.png)
+D. V1990−2000≥V2000−2010≥V1982−1990
 
 <details><summary>第 117 题 · 答案与解析</summary>
 

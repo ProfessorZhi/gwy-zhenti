@@ -15,7 +15,7 @@
 # 2018年江苏省公务员录用考试《行测》题（C类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2018 · 行测 · C类** ｜ 130 题 · 图片 139 处 · 答案随题折叠
+> **江苏 · 2018 · 行测 · C类** ｜ 130 题 · 图片 135 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2789,7 +2789,7 @@ D项：位置2和5是相同汉字，与题干不一致，排除。
 
 ![](assets-fenbi-84064/50ddb2a443c93dc051bc84bd62ebb0f770f5f521accfa0d2d4c408a5f636cda0.png)
 
-A. ![](assets-fenbi-84064/fa7625db1b0c63c5036e69b987ad317df588e222b07bfb1aa7c7fe9ae1cc899d.png)
+A. 955○□○□A∧∧
 
 B. ![](assets-fenbi-84064/4bb54c923b60e40173603569189f39b8f215b8624999b54ef4e04b4491017231.png)
 
@@ -4343,11 +4343,11 @@ B
 
 2012年末西部地区汽车保有量为：
 
-A. ![](assets-fenbi-84064/a410becd373e1c31be79291a3dd7878cf763961502aa6c26bb1b3da4736a196a.png)
+A. 1963/(1+0.193^5)万辆
 
-B. ![](assets-fenbi-84064/a5d898cbb31f738c2ea95ba627559cd4fa34c2aa8b4a47527b7266d1e29a3abc.png)
+B. 1963/(1.193^5+1)万辆
 
-C. ![](assets-fenbi-84064/5efc14267c0fa8df86595215a617d0c4a48bd35a90908e0e48d57d8a9508a1c9.png)
+C. 1963/(1.193^5−1)万辆
 
 D. ![](assets-fenbi-84064/fdf79cc09bb2b8b5cc089d6733a3c83138ee6684b7e757afea8759bc70d83b68.png)
 

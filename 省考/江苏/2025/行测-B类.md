@@ -15,7 +15,7 @@
 # 2025年江苏省公务员录用考试《行测》题（B类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2025 · 行测 · B类** ｜ 135 题 · 图片 181 处 · 答案随题折叠
+> **江苏 · 2025 · 行测 · B类** ｜ 135 题 · 图片 169 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2222,9 +2222,9 @@ D
 
 5+√6，7+2√2，14，13+√10，17+2√3，（ ）
 
-A. ![](assets-fenbi-4189915/504ea88f87a78d8b0f93779700e89929dea57e8405154bc1ffe6e795dc6f9199.png)
+A. 17+√13
 
-B. ![](assets-fenbi-4189915/3a3bb8d5048c964e13b40c0e3649c920af1e98f72b6f5220d8490b55e5dc00b5.png)
+B. 18+√15
 
 C. ![](assets-fenbi-4189915/aa0a659e39708d97c098f0819dada691f25d6a98fa7112475e75e052285582fd.png)
 
@@ -2622,13 +2622,13 @@ C
 
 某地考古出土了一种呈长方体的青铜器，测得其长、宽、高分别为60cm、40cm、60cm。为了防止氧化，有关部门为其做个半球形的保护罩，则该保护罩（厚度忽略不计）的表面积至少为（ ）。
 
-A. ![](assets-fenbi-4189915/8428dd05389e3eaa75cda77b4bc3667d6f9d94e88c1eff7874849b62735eb4db.png)
+A. 1.47πm^2
 
-B. ![](assets-fenbi-4189915/d470bfa8e0c0594734399e6d7b3545e9aa5472c132298f4c88c6641a8024d318.png)
+B. 1.02πm^2
 
-C. ![](assets-fenbi-4189915/6507121a372c10a6a14dd8ea7e15c20849b3a05aa47e1035d7634a45111d3af3.png)
+C. 0.98πm^2
 
-D. ![](assets-fenbi-4189915/80bf200316bfd7c5a0e586034e11f96a64f3de00a821e9f5c75062ec57bc70fd.png)
+D. 0.68πm^2
 
 <details><summary>第 67 题 · 答案与解析</summary>
 
@@ -4960,9 +4960,9 @@ B
 
 2023年M市东北片区接待过夜游客人次增长对全市接待过夜游客增长的贡献率为：
 
-A. ![](assets-fenbi-4189915/f0105dc336dad3a6cd558b43833276b816b9457304537ec5cd623b47ce64a0f5.png)
+A. (1125×0.382×1.881)/(10190×0.881×1.382)×100%
 
-B. ![](assets-fenbi-4189915/28de973a1e8125befb3b57e6f882ff13ba119b134e78d193de945d2ef8a15566.png)
+B. (1125×0.881×1.881)/(10190×0.382×1.382)×100%
 
 C. ![](assets-fenbi-4189915/01ce71fa8fe239cce6be48afadfda64c96dc58aca8e9a02b09724dd4dccfa9da.png)
 
@@ -5168,13 +5168,13 @@ D
 
 若2016-2023年我国国有企业营业收入、利润总额和应缴税费年均增速分别用V_1、V_2、V_3表示，则下列关系正确的是：
 
-A. ![](assets-fenbi-4189915/8a1c679c9ce4c5d6cd384955c7734d9c46cc0fc17ee00a8c95363352d520d062.png)
+A. V_3 ＜ V_1 ＜ V_2
 
-B. ![](assets-fenbi-4189915/dce8156f27d3008ef52ba57c07753003186c574c9f42881c1c3d3e687bb6375b.png)
+B. V2＜V3＜V1
 
-C. ![](assets-fenbi-4189915/1319ba9b7e299a901078cbdf5803b0021f4e1129d27b7be5a1da9129d73db486.png)
+C. V_3 ＜ V_2 ＜ V_1
 
-D. ![](assets-fenbi-4189915/3ebfa9afbbe121be53ab985e7bdfa3d49391ad55b3dc32e6148361c211029b5e.png)
+D. V_1＜V_3＜V_2
 
 <details><summary>第 129 题 · 答案与解析</summary>
 

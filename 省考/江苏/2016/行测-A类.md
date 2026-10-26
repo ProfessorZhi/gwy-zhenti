@@ -15,7 +15,7 @@
 # 2016年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2016 · 行测 · A类** ｜ 135 题 · 图片 81 处 · 答案随题折叠
+> **江苏 · 2016 · 行测 · A类** ｜ 135 题 · 图片 80 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2868,7 +2868,7 @@ B. ![](assets-fenbi-75750/4ccedd22712e473ce4d1ef7dbdd69b18f4788c0febb39599680cf0
 
 C. ![](assets-fenbi-75750/f596495cbec37312bc763ce8eab3e4760e141ead5b606abc16475ae637bca0a1.png)
 
-D. ![](assets-fenbi-75750/8c649f1ed7c0eefefbc80fa5d888af797688df884972faba92fd98ff1c7bfee6.png)
+D. & # &α¥ #¥∞
 
 <details><summary>第 79 题 · 答案与解析</summary>
 

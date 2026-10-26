@@ -15,7 +15,7 @@
 # 2014年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2014 · 行测 · B类** ｜ 105 题 · 图片 65 处 · 答案随题折叠
+> **江苏 · 2014 · 行测 · B类** ｜ 105 题 · 图片 62 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1074,7 +1074,7 @@ C
 
 ### 第 32 题
 
-在数列![](assets-fenbi-26637/d643cba20317f7d4cdf49289b5f15ad84c468ecdab2f18604b038be701fc3d7f.png)中，![](assets-fenbi-26637/71257fbf5b8c165390fb2b9dc261cf1f9b4d26fe1d45234fe5b06563cbf9f751.png)，![](assets-fenbi-26637/4c908d5253b20d2653fa7f5f4fe4c1a94fe26b754b8073b84f1dc2f56666dcfd.png)，且从第三项起，每项是它前两项平均数的整数部分，则![](assets-fenbi-26637/a0f6e55b168297f96d8d521bc7d24b3318c28d4c5ba722558fd0be1c515cacf4.png)
+在数列a_n (n = 1,2,···)中，![](assets-fenbi-26637/71257fbf5b8c165390fb2b9dc261cf1f9b4d26fe1d45234fe5b06563cbf9f751.png)，![](assets-fenbi-26637/4c908d5253b20d2653fa7f5f4fe4c1a94fe26b754b8073b84f1dc2f56666dcfd.png)，且从第三项起，每项是它前两项平均数的整数部分，则lim(n→+∞)a_n=
 
 A. 1980
 
@@ -1282,7 +1282,7 @@ C
 
 ### 第 39 题
 
-![](assets-fenbi-26637/c1b0998cf7cd0925a5e2da110660fd83f6cc3cb4551834741201caf8121e2c79.png)的最后两位数字是：
+76^2013 + 25^2014的最后两位数字是：
 
 A. 01
 

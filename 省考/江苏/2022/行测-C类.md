@@ -15,7 +15,7 @@
 # 2022年江苏省公务员录用考试《行测》题（C类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2022 · 行测 · C类** ｜ 130 题 · 图片 203 处 · 答案随题折叠
+> **江苏 · 2022 · 行测 · C类** ｜ 130 题 · 图片 196 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2079,7 +2079,7 @@ A
 
 ### 第 55 题
 
-正方体![](assets-fenbi-162376/5efc9f8ad68325dcb21eefcd619e3e465aad5be99c8f75b96a22a1764082e3e0.png)中，E、F分别为棱A_1A和C_1C的中点，则平面D_1EF截该正方体所得截面的形状是：
+正方体ABCD−A1B1C1D1中，E、F分别为棱A_1A和C_1C的中点，则平面D_1EF截该正方体所得截面的形状是：
 
 A. 三角形
 
@@ -2405,7 +2405,7 @@ A
 
 ### 第 65 题
 
-如图所示，小王买了一块直三棱柱形状的蛋糕![](assets-fenbi-162376/4b3d7d5267f124e23b9e5a5e3900f08f234604ffcf83697ef4951833fe8381a7.png)，其中![](assets-fenbi-162376/c639e39dcf756cc65ef195e94912032d11f6596c28197d82aaffb30717b182fe.png)，![](assets-fenbi-162376/3fa2232bbb2113480ef3248a7955ee1973418d93a1e5ab6ccdd3f25d6e141494.png)。为与两位室友分享，他切出一小块和原蛋糕形状相同的蛋糕![](assets-fenbi-162376/433b762516e51faaf7d6099807417753dc172f998a5f6b8922c98f0a321c8727.png)，其体积与原蛋糕的体积之比为1：3。若![](assets-fenbi-162376/d714e08f98d3912863f9ce58647582ff2c613ef4638bd00f26291f052503aaa9.png)，则线段AE与EB的长度之比为：
+如图所示，小王买了一块直三棱柱形状的蛋糕![](assets-fenbi-162376/4b3d7d5267f124e23b9e5a5e3900f08f234604ffcf83697ef4951833fe8381a7.png)，其中∠ABC = 90°，∠BAC=30°。为与两位室友分享，他切出一小块和原蛋糕形状相同的蛋糕![](assets-fenbi-162376/433b762516e51faaf7d6099807417753dc172f998a5f6b8922c98f0a321c8727.png)，其体积与原蛋糕的体积之比为1：3。若∠ADE = 90°，则线段AE与EB的长度之比为：
 
 ![](assets-fenbi-162376/23b2545c5dccce787f0ec937663d0d282e2df4371515eac644d36cb13fba0b71.png)
 
@@ -4743,11 +4743,11 @@ C
 
 A. ![](assets-fenbi-162376/5030497af0b4410b0a191fd3969d67c7217613e879337827753ccb316b32fd6b.png)
 
-B. ![](assets-fenbi-162376/2152f87bae26d1405ff277dfd34d7e3bd8b7107add9f075d354da18467e96578.png)
+B. v_1＜v_4＜v_3＜v_2
 
-C. ![](assets-fenbi-162376/01ee7738bb9ecbdbc60546c9821a981f1112c57b20d337de960852344c0c9b4c.png)
+C. v_3＜v_4＜v_2＜v_1
 
-D. ![](assets-fenbi-162376/795afc33e57d7844c3fc8e6ee7803fa3cf2918e610e6b83d52f3a69635c3c072.png)
+D. v1＜v4＜v2＜v3
 
 <details><summary>第 123 题 · 答案与解析</summary>
 

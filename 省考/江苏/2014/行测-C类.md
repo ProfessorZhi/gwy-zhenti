@@ -15,7 +15,7 @@
 # 2014年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2014 · 行测 · C类** ｜ 100 题 · 图片 116 处 · 答案随题折叠
+> **江苏 · 2014 · 行测 · C类** ｜ 100 题 · 图片 107 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -920,7 +920,7 @@ B
 
 ### 第 27 题
 
-若任意正整数x和y，定义![](assets-fenbi-26641/6110bd58b3f85df07ec9a103c79c0f6e27343a646d4e99f1dfcb4a3255dabc58.png)，![](assets-fenbi-26641/cd1ebc73fc4d63be36cfbf93d5828e86f303d3febaea7cdb58ede1921902900f.png)，则![](assets-fenbi-26641/af39b252f6d84b97cf83649912f8f1e009d57a98cff3185e74acc7e3eb4dd1e5.png)
+若任意正整数x和y，定义x⊕y=2x+y，x ⊗ y = y^x，则1⊕(2⊗3)=?
 
 A. 10
 
@@ -1066,7 +1066,7 @@ C
 
 ### 第 32 题
 
-设![](assets-fenbi-26641/65eed9d84a56c6a4d9989719a29731bc40c7870d9a3e5eeb5ccdfc66784ab2c6.png)，则100a的整数部分是：
+设a=1+1/3+1/9+...+1/3^2014，则100a的整数部分是：
 
 A. 148
 
@@ -1158,7 +1158,7 @@ C
 
 ### 第 35 题
 
-如图，正方体![](assets-fenbi-26641/9b150a0e9939c9bf2f97be9fa0ae81763331ae24d71ef17f55f5857c08f2cd3c.png)的棱长为1cm，则三棱锥![](assets-fenbi-26641/2824bb206db9089e9aa9b0007f55cf97e51297a0edf0fff7877b7474e308d019.png)的体积是：
+如图，正方体ABCD−A₁B₁C₁D₁的棱长为1cm，则三棱锥C-AB_1D_1的体积是：
 
 ![](assets-fenbi-26641/de9ad98b804fd3d27bcb886f8d08ca13115ff51889e1edbe47e2b36082a02155.png)
 
@@ -3180,11 +3180,11 @@ B
 
 用V_1、V_2、V_3分别表示1982年到2012年三十一年，全国城镇居民每百户拥有彩电、洗衣机、电冰箱的年平均增长速度，则下列表示正确的是：
 
-A. ![](assets-fenbi-26641/32392eeea46408c289363d1a75debaa2ea452446237ad2c4ba9d78fee66717ed.png)
+A. V1＞V2＞V3
 
-B. ![](assets-fenbi-26641/08ff1daeda9b80ef6e48f44f1faff7b8dda5b5059ba74fd310d19bd86a1a30a0.png)
+B. V_3＞V_2＞V_1
 
-C. ![](assets-fenbi-26641/2d3c4dac61f87afb7b7d1b5b662f780954d5e40b9118c9e2b0e76dba2b301398.png)
+C. V_1＞V_3＞V_2
 
 D. ![](assets-fenbi-26641/a46f71f0f4b7370ce4d31549e390ecdcb8f1724d7fc6d7a6f8143bc1b1e50360.png)
 

@@ -15,7 +15,7 @@
 # 2010年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2010 · 行测 · C类** ｜ 100 题 · 图片 150 处 · 答案随题折叠
+> **江苏 · 2010 · 行测 · C类** ｜ 100 题 · 图片 144 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -960,7 +960,7 @@ A
 
 ### 第 30 题
 
-若mn＞0，a>0且不等式组![](assets-fenbi-57575/b078f10d78400fd3381a9eb6e04f74f435ca81dd3af2a5d41208029b1c355296.png)中的x的最大解区为\[-2a，1/a\]，则![](assets-fenbi-57575/8b9ea17319d22f7211bba57c0ca51fa01838f181032998e565c1c9e2c4613dfa.png)的最小值是：
+若mn＞0，a>0且不等式组{mx≤2，nx≥−1}中的x的最大解区为\[-2a，1/a\]，则(m − n)^2010的最小值是：
 
 A. 0
 
@@ -2740,7 +2740,7 @@ http://www.jssb.gov.cn/jstj/djgb/qsndtjgb/200807/t20080717\_105496.htm
 
 ### 第 81 题
 
-![](assets-fenbi-57575/1d43afd26b47f0e3df294ecad46bcb1c84126e16ebb1bfd9da4cb6f71baa9a81.png)年单位GDP能耗最大的两市是：
+2007~2008年单位GDP能耗最大的两市是：
 
 A. 南通市、扬州市
 
@@ -2930,13 +2930,13 @@ B
 
 2004~2008年江苏省国有企业、集体企业和中外合作企业进口额年平均增加额（分别用M_1、M_2和M_3表示）之间的关系是：
 
-A. ![](assets-fenbi-57575/2f65972dd5e103be053861054dab4795bffbb1712d14fe4f2e729f021dbbd125.png)
+A. M1＞M2＞M3
 
-B. ![](assets-fenbi-57575/84721dae9978a3b8c5a8c3c8e32dae43015c505c716957e6031178ae57688975.png)
+B. M_1 ＞ M_3 ＞ M_2
 
 C. ![](assets-fenbi-57575/8355b2ff1db3e982cc103f2ab0fa83a46dec103277e4de8708bba5a208dde762.png)
 
-D. ![](assets-fenbi-57575/569d2578e06843c406c86f9ef6c5b50475177e188489a9b3d70be628726f2c0c.png)
+D. M_3＞M_2＞M_1
 
 <details><summary>第 87 题 · 答案与解析</summary>
 

@@ -15,7 +15,7 @@
 # 2014年上海市公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **上海 · 2014 · 行测 · A类** ｜ 140 题 · 图片 97 处 · 答案随题折叠
+> **上海 · 2014 · 行测 · A类** ｜ 140 题 · 图片 93 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -3134,11 +3134,11 @@ D项：定位文字材料，上海到青岛的飞行路程为540公里，上海�
 
 注：
 
-![](assets-fenbi-23537/2a4b7f8808d54f5e2bc691663986ee6659e13843207a931577acd22b5b5585ff.png)![](assets-fenbi-23537/da457c46d833b8c75f2d20eaf4cf5540b022217d4ad0f40e5ae42902f61c604c.png)
+就业人口占比=就业人口/年满16岁以上的自由公民数
 
-![](assets-fenbi-23537/8ac4bd2679ffc827eab1dda2a2c3216a9cd337d7d9e8aff23e3f40af7f863947.png)![](assets-fenbi-23537/7ddf87925b89d4feababe322ab74a77dbbbcac83cb3f22850d277f5bf81dcff4.png)
+劳动力人口占比=![](assets-fenbi-23537/7ddf87925b89d4feababe322ab74a77dbbbcac83cb3f22850d277f5bf81dcff4.png)
 
-![](assets-fenbi-23537/796e0f1642a8ba03402ab445523ec7c3ee2449ddfba58f7b107e1d15f024595c.png)
+失业率=失业人口/劳动力人口
 
 ### 第 84 题
 

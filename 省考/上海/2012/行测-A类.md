@@ -15,7 +15,7 @@
 # 2012年上海市公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **上海 · 2012 · 行测 · A类** ｜ 140 题 · 图片 81 处 · 答案随题折叠
+> **上海 · 2012 · 行测 · A类** ｜ 140 题 · 图片 75 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1023,11 +1023,11 @@ A
 
 ![](assets-fenbi-393/63a5b470f448eafc3893451a4ef15aeb6ba6af4af218234827fb8235af696fac.jpg)
 
-A. ![](assets-fenbi-393/5dc929662617ca483440c645534d6f243326c3ec8923d354794feaeceae5c2de.png)
+A. I1=I2+I3
 
 B. I_2=I_3
 
-C. ![](assets-fenbi-393/02c44658929bee191c8287da369265a65a483eb21ea2fc9f4201a478be96e42e.png)
+C. I_1=I_2+I_3+I_4
 
 D. I_2 = I_4
 
@@ -1055,13 +1055,13 @@ B
 
 ![](assets-fenbi-393/a87f0dd80eea8730b38dea670689edbb6b8fe4bdcea8b4adfb603563fc9a2a2e.jpg)
 
-A. ![](assets-fenbi-393/28414b1d6bcea79da904b6f80cb7ef18b03e120d854f2a7a188a4d15f2c0bcb4.png)
+A. W_1=W_2=W_3
 
-B. ![](assets-fenbi-393/48363a2005b4c19f3e721b2c951a29b9ad25aa9f6644c79fe28fb650c4e28ba5.png)
+B. W_1＞W_2=W_3
 
-C. ![](assets-fenbi-393/b9cdb9e41b0b7e3905d6e2e66f776858c5e6b720e2545b45882bb3f6a62e01d4.png)
+C. W1＞W2＞W3
 
-D. ![](assets-fenbi-393/e8e801b35a79a0c8978d79be56a9eb99d3b6cd96f84da468c42d6d943d005d38.png)
+D. W1＜W2=W3
 
 <details><summary>第 28 题 · 答案与解析</summary>
 

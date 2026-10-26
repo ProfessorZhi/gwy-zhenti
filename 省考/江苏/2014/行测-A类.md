@@ -15,7 +15,7 @@
 # 2014年江苏省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2014 · 行测 · A类** ｜ 105 题 · 图片 97 处 · 答案随题折叠
+> **江苏 · 2014 · 行测 · A类** ｜ 105 题 · 图片 93 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1173,7 +1173,7 @@ A
 
 ### 第 35 题
 
-已知实数x、y满足：![](assets-fenbi-26633/26b4205b31f0a5705ba99861c4d9c78146d812d9df57752bac0f2d8cb39c8228.png)，![](assets-fenbi-26633/c3f3d189bde24e18b665addec6b71a348d5e742c46555854c4902c9a9d8cdc08.png)
+已知实数x、y满足：3(x^3+y^3+1)=(x-y+1)^3，x^2014 + y^2014 =
 
 A. 0
 
@@ -1259,7 +1259,7 @@ C
 
 ### 第 38 题
 
-在数列![](assets-fenbi-26633/d643cba20317f7d4cdf49289b5f15ad84c468ecdab2f18604b038be701fc3d7f.png)中，![](assets-fenbi-26633/71257fbf5b8c165390fb2b9dc261cf1f9b4d26fe1d45234fe5b06563cbf9f751.png)，![](assets-fenbi-26633/4c908d5253b20d2653fa7f5f4fe4c1a94fe26b754b8073b84f1dc2f56666dcfd.png)，且从第三项起，每项是它前两项平均数的整数部分，则![](assets-fenbi-26633/a0f6e55b168297f96d8d521bc7d24b3318c28d4c5ba722558fd0be1c515cacf4.png)
+在数列a_n (n = 1,2,···)中，![](assets-fenbi-26633/71257fbf5b8c165390fb2b9dc261cf1f9b4d26fe1d45234fe5b06563cbf9f751.png)，![](assets-fenbi-26633/4c908d5253b20d2653fa7f5f4fe4c1a94fe26b754b8073b84f1dc2f56666dcfd.png)，且从第三项起，每项是它前两项平均数的整数部分，则lim(n→+∞)a_n=
 
 A. 1980
 

@@ -15,7 +15,7 @@
 # 2021年江苏省公务员录用考试《行测》题（A类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2021 · 行测 · A类** ｜ 135 题 · 图片 205 处 · 答案随题折叠
+> **江苏 · 2021 · 行测 · A类** ｜ 135 题 · 图片 202 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2425,11 +2425,11 @@ B
 
 A. ![](assets-fenbi-101465/9d3fcf5ce7dcf31b745324a9134291c5c2a21d7d72b4e4f66657816f0a3ba2b5.png)
 
-B. ![](assets-fenbi-101465/27c243a2be0fd05a6a2fdddb26f456a88753a3cc4a17ca37fbfe851acfd15f9d.png)
+B. ((2-√2)/2)R
 
-C. ![](assets-fenbi-101465/9729083c2480485f8f515e2047614f963ca6ffda9d879a833a91693330e5fa52.png)
+C. (√2−1)R
 
-D. ![](assets-fenbi-101465/11a65ba067fb5c121be6fac0288ed034f0eae2ca78d5ab797747cfc50672d519.png)
+D. (2−√2)R
 
 <details><summary>第 65 题 · 答案与解析</summary>
 
