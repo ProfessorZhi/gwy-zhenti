@@ -37,9 +37,9 @@ Turndown 把 HTML 正文里作为**文本**的 `<` 原样写进 Markdown（如 `
 - 自闭合（属性串以 `/` 结尾）；
 - 同一份文档里**存在配对闭合**的开放标签。
 
-其余一律 `&lt;`。这样 `<details>`/`<summary>`/`<svg>`/`<math>`/`<img>` 不受影响，而未配对的 `<b>`（正文里的「a<b」）会被正确转义。
+其余一律 `&lt;`。这样 `<details>`/`<summary>`/`<svg>`/`<math>`/`<img>` 不受影响，而未配对的 `**`（正文里的「a<b」）会被正确转义。
 
-单测 `tools/fenbi/test/render-escape.test.mjs`（6 个，全通过）：正文转义 4 例、真标签保留 4 类、未配对 `<b>` 与真 `<b>粗</b>` 的区分、幂等性、`markdown()` 端到端、图片保留 + 周围正文转义。
+单测 `tools/fenbi/test/render-escape.test.mjs`（6 个，全通过）：正文转义 4 例、真标签保留 4 类、未配对 `` 与真 `粗**` 的区分、幂等性、`markdown()` 端到端、图片保留 + 周围正文转义。
 
 ### 对已审内容的应用方式
 
