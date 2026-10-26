@@ -15,7 +15,7 @@
 # 2013年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2013 · 行测 · C类** ｜ 100 题 · 图片 156 处 · 答案随题折叠
+> **江苏 · 2013 · 行测 · C类** ｜ 100 题 · 图片 147 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -682,7 +682,7 @@ C
 
 ### 第 21 题
 
-![](assets-fenbi-431/a25a92eaa08e01c47d1a47ae468d75a101e42c0109d27413cabf59b65a3d24ab.png)，![](assets-fenbi-431/a25a92eaa08e01c47d1a47ae468d75a101e42c0109d27413cabf59b65a3d24ab.png)，2，![](assets-fenbi-431/15ee66819422529d5143574eb1b131160eac2f6c16f73eb40b4ffb1d31751181.png)，![](assets-fenbi-431/3671f79d337efef4229079c64e129c9cbb6a6e66860c044b0d304d21755f3c4a.png)，（  ）
+√2，√2，2，![](assets-fenbi-431/15ee66819422529d5143574eb1b131160eac2f6c16f73eb40b4ffb1d31751181.png)，![](assets-fenbi-431/3671f79d337efef4229079c64e129c9cbb6a6e66860c044b0d304d21755f3c4a.png)，（  ）
 
 A. ![](assets-fenbi-431/bcdede48b9f6d3d2f5d4577a9bdaeb320686330906efe1938fc03529d8aadb52.png)
 
@@ -700,7 +700,7 @@ B
 
 **解析**
 
-倍数关系明显，考虑作商，后项除以前项得到新数列：![](assets-fenbi-431/36535ffc1455ac37b63b350f2a29abbab55792c9174dd08f1ca8e00c5f0e89f2.png)，![](assets-fenbi-431/a25a92eaa08e01c47d1a47ae468d75a101e42c0109d27413cabf59b65a3d24ab.png)，![](assets-fenbi-431/5d7ac03ca068034f582d8dd916045a417ee80eec71a99fbeac374ef87154ead4.png)，![](assets-fenbi-431/dc3ffea2b93e4887ba97b01594730fbca19a559ec1d656437af06eef8de57669.png)，![](assets-fenbi-431/11cf37ca127ed80d3152bebc148c49fd4759fa19fe1e83cfdbe9e8911ccca8b8.png)， 被开方数成等差数列，所以未知项为![](assets-fenbi-431/f07117ce7fbad13fd1c36830fc606f9db136e0b87a1d7ca697c1269a163292a4.png)。
+倍数关系明显，考虑作商，后项除以前项得到新数列：![](assets-fenbi-431/36535ffc1455ac37b63b350f2a29abbab55792c9174dd08f1ca8e00c5f0e89f2.png)，√2，√3，![](assets-fenbi-431/dc3ffea2b93e4887ba97b01594730fbca19a559ec1d656437af06eef8de57669.png)，![](assets-fenbi-431/11cf37ca127ed80d3152bebc148c49fd4759fa19fe1e83cfdbe9e8911ccca8b8.png)， 被开方数成等差数列，所以未知项为![](assets-fenbi-431/f07117ce7fbad13fd1c36830fc606f9db136e0b87a1d7ca697c1269a163292a4.png)。
 
 故正确答案为B。
 
@@ -2240,7 +2240,7 @@ D
 
 （3）-（小李 且 小孙）=-小李 或 -小孙；
 
-（4）小金![](assets-fenbi-431/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png) -小吴；
+（4）小金→ -小吴；
 
 （5）小张一定入选（事实信息）。
 
@@ -2298,7 +2298,7 @@ A
 
 第一步：翻译题干。
 
-（1）既要有女性（小王、小李、小孙），也要有男性（小张、小金、小吴、小孟，小余）；（2）-小张 或 -小王；（3）-小李 或 -小孙；（4）小金![](assets-fenbi-431/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)\-小吴；（5）小王，小吴（事实信息）。
+（1）既要有女性（小王、小李、小孙），也要有男性（小张、小金、小吴、小孟，小余）；（2）-小张 或 -小王；（3）-小李 或 -小孙；（4）小金→\-小吴；（5）小王，小吴（事实信息）。
 
 第二步：从事实信息开始推导并得出结论。
 
@@ -2776,7 +2776,7 @@ D
 
 ### 第 77 题
 
-用![](assets-fenbi-431/7f052f1af358eb655ceb30255f9af27f66546beadc9eba3c8313c6ce6bed39e2.png)、![](assets-fenbi-431/76b654d246e08a2642672adff01dfa3e1c97fe225f57a9c609f12f12cf19ef95.png)、![](assets-fenbi-431/faf49f663cd35bd32f5fb22c9641ac1d71bc4d40c33b97b8229c93f0fa1a101c.png)分别表示2012年全国钢材、集成电路、汽车产量的增长率，则下列关系式正确的是：
+用V_1、V_2、V_3分别表示2012年全国钢材、集成电路、汽车产量的增长率，则下列关系式正确的是：
 
 A. ![](assets-fenbi-431/dc4951678f4d6678aaeb839c0eab4a26ca87e9e81ef9f843472b5335a1b855ed.png)
 

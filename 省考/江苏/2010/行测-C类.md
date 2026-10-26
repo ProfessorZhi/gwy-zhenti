@@ -15,7 +15,7 @@
 # 2010年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2010 · 行测 · C类** ｜ 100 题 · 图片 227 处 · 答案随题折叠
+> **江苏 · 2010 · 行测 · C类** ｜ 100 题 · 图片 213 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -662,7 +662,7 @@ B
 
 **解析**
 
-数列起伏不大，无明显特征，作差作和无规律，考虑因式分解。观察发现：![](assets-fenbi-57575/e95e91e62cfb4492a2852bb71f70d20cb2a80c15f9c39285128c0bdec235f5da.png)，![](assets-fenbi-57575/5efff4b0bd55c7047ba03a08750aeecabed52f3aa3d9e201fad88d7133b79fc6.png)，![](assets-fenbi-57575/fd08ffe5b833761f0bef17a3cc9d58705dbb137d69b28d047cc4edd430217ea3.png)，![](assets-fenbi-57575/1fea6a6a6ef53fe8040c22ed892f0ad4dc6c2f5847b76c09fe388f0df0195008.png)，![](assets-fenbi-57575/654a39906a985df4e8bab52105ce9cc5e24ea43c54cb6068a52b00bfe2fa4820.png)，即规律为：每一项=2![](assets-fenbi-57575/c29bcaf62fd3c38dd04f3ae442580ec94aacc3a9534919b27995ab5db6873814.png)质数+1，故所求项![](assets-fenbi-57575/1ec48c16ce8a94089a13e3a10ab7297926f5327f360fcb800d2b17438ea63c8d.png)。
+数列起伏不大，无明显特征，作差作和无规律，考虑因式分解。观察发现：![](assets-fenbi-57575/e95e91e62cfb4492a2852bb71f70d20cb2a80c15f9c39285128c0bdec235f5da.png)，![](assets-fenbi-57575/5efff4b0bd55c7047ba03a08750aeecabed52f3aa3d9e201fad88d7133b79fc6.png)，![](assets-fenbi-57575/fd08ffe5b833761f0bef17a3cc9d58705dbb137d69b28d047cc4edd430217ea3.png)，![](assets-fenbi-57575/1fea6a6a6ef53fe8040c22ed892f0ad4dc6c2f5847b76c09fe388f0df0195008.png)，![](assets-fenbi-57575/654a39906a985df4e8bab52105ce9cc5e24ea43c54cb6068a52b00bfe2fa4820.png)，即规律为：每一项=2×质数+1，故所求项![](assets-fenbi-57575/1ec48c16ce8a94089a13e3a10ab7297926f5327f360fcb800d2b17438ea63c8d.png)。
 
 故正确答案为B。
 
@@ -690,7 +690,7 @@ C
 
 **解析**
 
-方法一：数列无明显特征，作差无规律，考虑递推。观察发现：![](assets-fenbi-57575/e95e91e62cfb4492a2852bb71f70d20cb2a80c15f9c39285128c0bdec235f5da.png)，![](assets-fenbi-57575/fff0afd3f2b2c6ed4896e83fccc5509a22a816df7f9d53cab168085086789ec5.png)，![](assets-fenbi-57575/888a27207bb4831b4ed1cfe5c4da0be3aeeed1ab27dd847f99dd7b42128cf1d1.png)，![](assets-fenbi-57575/e9414a3e1ef34e2ebaeb061e05d7d12ff24ef3a47a97a0f9d307cf18ecd2d68f.png)，即第一项![](assets-fenbi-57575/c29bcaf62fd3c38dd04f3ae442580ec94aacc3a9534919b27995ab5db6873814.png)2+第二项=第三项。则所求项![](assets-fenbi-57575/dcc24a1a693459d68ce0b0ea98f8186de888c499f9320859ffab530c04170172.png)。
+方法一：数列无明显特征，作差无规律，考虑递推。观察发现：![](assets-fenbi-57575/e95e91e62cfb4492a2852bb71f70d20cb2a80c15f9c39285128c0bdec235f5da.png)，![](assets-fenbi-57575/fff0afd3f2b2c6ed4896e83fccc5509a22a816df7f9d53cab168085086789ec5.png)，![](assets-fenbi-57575/888a27207bb4831b4ed1cfe5c4da0be3aeeed1ab27dd847f99dd7b42128cf1d1.png)，![](assets-fenbi-57575/e9414a3e1ef34e2ebaeb061e05d7d12ff24ef3a47a97a0f9d307cf18ecd2d68f.png)，即第一项×2+第二项=第三项。则所求项![](assets-fenbi-57575/dcc24a1a693459d68ce0b0ea98f8186de888c499f9320859ffab530c04170172.png)。
 
 方法二：数列无明显特征，作差无规律，考虑作和。前一项+后一项得到新数列：3，6，12，24，48，是公比为2的等比数列，则新数列下一项是96，故所求项=96-31=65。
 
@@ -730,11 +730,11 @@ A
 
 ### 第 22 题
 
-![](assets-fenbi-57575/55b2093c4fb8c1b6446dabb7f1b2097933976cb045e8a380e27c1e6f6663f941.png)，![](assets-fenbi-57575/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，4，（    ），256
+![](assets-fenbi-57575/55b2093c4fb8c1b6446dabb7f1b2097933976cb045e8a380e27c1e6f6663f941.png)，1/2，4，（    ），256
 
 A. 8
 
-B. ![](assets-fenbi-57575/2082e453125de51a62cb08d12e830b8f1f59b2598b14b8d9646a078f7d75c8fe.png)
+B. 1/16
 
 C. ![](assets-fenbi-57575/661f10b9f2470f7d9e8cd2627e4e49ca5b47ef31002c2174e4d2fe4832e77277.png)
 
@@ -2164,13 +2164,13 @@ B
 
 第一步：分析题干条件。
 
-（1）-甲第1![](assets-fenbi-57575/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)丙第3
+（1）-甲第1→丙第3
 
-（2）乙第2![](assets-fenbi-57575/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)丁第4
+（2）乙第2→丁第4
 
-（3）甲第1 或 乙第2![](assets-fenbi-57575/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)丙第3
+（3）甲第1 或 乙第2→丙第3
 
-（4）甲第1![](assets-fenbi-57575/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)乙第2
+（4）甲第1→乙第2
 
 （5）-丙第3
 
@@ -2180,9 +2180,9 @@ B
 
 由题干可知，六个人的话中只有1句假话，条件中没有明显的矛盾关系，考虑假设法，可以从条件中提到最多的“丙第3”开始假设。
 
-假设“丙得第3”，此时条件（5）和条件（6）均为假，与“只有1句假话”矛盾，因此丙没有得第3，排除C项。由条件（1）和（3）的逆否可知，-丙第3![](assets-fenbi-57575/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)甲第1、一丙第3![](assets-fenbi-57575/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)![](assets-fenbi-57575/fd289ecc8794754afb01a6179cb884633c07b2bc9ce66d18a120471866e881e6.png)甲第1 且 -乙第2，又“-丙第3”为真，如果条件（1）和条件（3）都为真，那么会得出“甲第1”和“-甲第1”两个矛盾结果，因此条件（1）和条件（3）必有一假。
+假设“丙得第3”，此时条件（5）和条件（6）均为假，与“只有1句假话”矛盾，因此丙没有得第3，排除C项。由条件（1）和（3）的逆否可知，-丙第3→甲第1、一丙第3→—甲第1 且 -乙第2，又“-丙第3”为真，如果条件（1）和条件（3）都为真，那么会得出“甲第1”和“-甲第1”两个矛盾结果，因此条件（1）和条件（3）必有一假。
 
-故条件（2）（4）（5）（6）均为真，可知“甲第1![](assets-fenbi-57575/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)乙第2![](assets-fenbi-57575/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)丁第4、戊第5”，如果甲第1，此时丙只能第3，与前面矛盾，因此甲没有得第1，排除A项；如果乙第2，可知丁第4、戊第5，又“丙没有得第3”，所以甲第3，丙第1，此时条件（1）和条件（3）均为假，与“只有1句假话”矛盾，因此乙没有得第2，对应B项。
+故条件（2）（4）（5）（6）均为真，可知“甲第1→乙第2→丁第4、戊第5”，如果甲第1，此时丙只能第3，与前面矛盾，因此甲没有得第1，排除A项；如果乙第2，可知丁第4、戊第5，又“丙没有得第3”，所以甲第3，丙第1，此时条件（1）和条件（3）均为假，与“只有1句假话”矛盾，因此乙没有得第2，对应B项。
 
 故正确答案为B。
 
@@ -3056,7 +3056,7 @@ B
 
 **解析**
 
-（1）定位统计表可知：2005年外商独资企业出口额增长率![](assets-fenbi-57575/6180959ddeee28a869e504ca44cac19c74a5ffb1d272190e528e1fb1a6ae70c9.png)![](assets-fenbi-57575/3dd59f64dd73cd9af489822a148b51024f1cdc7139f399c0587d1f961a65c36a.png)，2006年增长率![](assets-fenbi-57575/b0d4511c4fe7e254706a51a057544d3866aace1c4a869ae73a2b7fedf5585e35.png)![](assets-fenbi-57575/cad2ac4e9ffa5412785e0c5d5ef2e7fbe6040e8526f9262973224daf3bc2e3f0.png)，2007年增长率![](assets-fenbi-57575/b9e70132b4e3f6386970b7286a0f9e59521e1e1b847bd3e4ec59935a19a0feb4.png)![](assets-fenbi-57575/ebfe6e5af16326a72ca482a0fb853bcd791959f8ddfa9b91f68367aae3223024.png)![](assets-fenbi-57575/b6170dfdba3639121f433302ecbf4cb89f55d7c4816c26e7ea08338cf3929fe1.png)，2008年增长率![](assets-fenbi-57575/fdfd3d9b06e4e42900a3c7aa34dd1c00a3037359a0d8d3657608c78071e11077.png)![](assets-fenbi-57575/2a8a0ddb2e141b7743e669d87b86cfe3eddfc6ef4b9f759467c7efa1d684e839.png)，由此可知2005~2008年外商独资企业出口额增长率呈下降趋势，正确；
+（1）定位统计表可知：2005年外商独资企业出口额增长率![](assets-fenbi-57575/6180959ddeee28a869e504ca44cac19c74a5ffb1d272190e528e1fb1a6ae70c9.png)![](assets-fenbi-57575/3dd59f64dd73cd9af489822a148b51024f1cdc7139f399c0587d1f961a65c36a.png)，2006年增长率![](assets-fenbi-57575/b0d4511c4fe7e254706a51a057544d3866aace1c4a869ae73a2b7fedf5585e35.png)![](assets-fenbi-57575/cad2ac4e9ffa5412785e0c5d5ef2e7fbe6040e8526f9262973224daf3bc2e3f0.png)，2007年增长率=![](assets-fenbi-57575/ebfe6e5af16326a72ca482a0fb853bcd791959f8ddfa9b91f68367aae3223024.png)![](assets-fenbi-57575/b6170dfdba3639121f433302ecbf4cb89f55d7c4816c26e7ea08338cf3929fe1.png)，2008年增长率![](assets-fenbi-57575/fdfd3d9b06e4e42900a3c7aa34dd1c00a3037359a0d8d3657608c78071e11077.png)![](assets-fenbi-57575/2a8a0ddb2e141b7743e669d87b86cfe3eddfc6ef4b9f759467c7efa1d684e839.png)，由此可知2005~2008年外商独资企业出口额增长率呈下降趋势，正确；
 
 （2）定位统计表可知：2008年中外合作企业为贸易逆差（出口额141916万美元&lt;进口额142576万美元），错误；
 

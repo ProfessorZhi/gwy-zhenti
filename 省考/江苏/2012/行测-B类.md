@@ -15,7 +15,7 @@
 # 2012年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2012 · 行测 · B类** ｜ 155 题 · 图片 243 处 · 答案随题折叠
+> **江苏 · 2012 · 行测 · B类** ｜ 155 题 · 图片 236 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -2463,7 +2463,7 @@ C
 
 ### 第 80 题
 
-![](assets-fenbi-399/8d156d1f5c4febb19d3a26adf0a208aa35406cf2aade2e6efb0aafda8e83bbb1.png)，1，![](assets-fenbi-399/a25a92eaa08e01c47d1a47ae468d75a101e42c0109d27413cabf59b65a3d24ab.png)，2，![](assets-fenbi-399/fc5ad1e5e7ba435f6041e36f4efd62ef074026303c5f7b506ea6099a96eb48b4.png)，()
+![](assets-fenbi-399/8d156d1f5c4febb19d3a26adf0a208aa35406cf2aade2e6efb0aafda8e83bbb1.png)，1，√2，2，![](assets-fenbi-399/fc5ad1e5e7ba435f6041e36f4efd62ef074026303c5f7b506ea6099a96eb48b4.png)，()
 
 A. 4
 
@@ -2481,9 +2481,9 @@ A
 
 **解析**
 
-该数列是公比为![](assets-fenbi-399/a25a92eaa08e01c47d1a47ae468d75a101e42c0109d27413cabf59b65a3d24ab.png)的等比数列。
+该数列是公比为√2的等比数列。
 
-后项除以前项，商值均为![](assets-fenbi-399/a25a92eaa08e01c47d1a47ae468d75a101e42c0109d27413cabf59b65a3d24ab.png)，因此下一项为4。
+后项除以前项，商值均为√2，因此下一项为4。
 
 故正确答案为A。
 
@@ -2667,7 +2667,7 @@ C
 
 **解析**
 
-行程问题，小李站的路程是坐的路程的![](assets-fenbi-399/3aa3818f1c916550fc967093574ee48e19399832a9f2cbd1efd133ac50356915.png)，故站的路程占全程的![](assets-fenbi-399/adb3a3c756e2e6adf82b092b0610592466fb23ee757d9b5a00eab34f506821aa.png)，则小李乘车全程为![](assets-fenbi-399/3633d8cdbdcddca72f73c18b27cfa5a8292ced6adb8e2fdac3c31ef1bb716b6f.png)千米。
+行程问题，小李站的路程是坐的路程的1/3，故站的路程占全程的![](assets-fenbi-399/adb3a3c756e2e6adf82b092b0610592466fb23ee757d9b5a00eab34f506821aa.png)，则小李乘车全程为![](assets-fenbi-399/3633d8cdbdcddca72f73c18b27cfa5a8292ced6adb8e2fdac3c31ef1bb716b6f.png)千米。
 
 故正确答案为C。
 
@@ -4061,7 +4061,7 @@ D
 
 第一步：翻译题干，利用充分必要条件。
 
-（1）小王，（2）小王![](assets-fenbi-399/becbeba8549aa837c5867a8bb37cc11ce6dfa32e0d9524e3f822d2726326354c.png)小张，（3）小张![](assets-fenbi-399/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)小王，（4）小王 且 小张。
+（1）小王，（2）小王→小张，（3）小张→小王，（4）小王 且 小张。
 
 第二步：找突破口。
 
@@ -4073,7 +4073,7 @@ D
 
 故正确答案为D。
 
-备注：本题需特别注意矛盾关系：A![](assets-fenbi-399/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)B与A 且 -B的矛盾，望考生加深理解。
+备注：本题需特别注意矛盾关系：A→B与A 且 -B的矛盾，望考生加深理解。
 
 **考点**：只有一真/一假
 

@@ -15,7 +15,7 @@
 # 2016年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2016 · 行测 · B类** ｜ 135 题 · 图片 139 处 · 答案随题折叠
+> **江苏 · 2016 · 行测 · B类** ｜ 135 题 · 图片 71 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -589,7 +589,7 @@ D
 
 本题考查中国山脉的有关知识。
 
-A项正确：由于秦岭南北面的温度、气候、地形均呈现差异性变化，因而秦岭与淮河一线成了我国地理上最重要的分界线。它主要是我国南方地区与北方地区的分界线、一月份![](assets-fenbi-75776/5776ab561b6d7d5b8f704a1d37cdcc68b748085037f21b3fbfff012812e4ee07.png)等温线、800mm等降水线量线、暖温带与亚热带分界线、湿润区与半湿润区分界线、温带季风气候与亚热带季风气候分界线等。
+A项正确：由于秦岭南北面的温度、气候、地形均呈现差异性变化，因而秦岭与淮河一线成了我国地理上最重要的分界线。它主要是我国南方地区与北方地区的分界线、一月份0°C等温线、800mm等降水线量线、暖温带与亚热带分界线、湿润区与半湿润区分界线、温带季风气候与亚热带季风气候分界线等。
 
 B项正确：河西走廊位于祁连山以东，是西北著名的粮仓，这里农业生产的水源主要是来自祁连山的冰雪融水。
 
@@ -2118,15 +2118,15 @@ A
 
 ### 第 57 题
 
-![](assets-fenbi-75776/b95b9c5a73849d37c502c49e6f5cf97049167f599d0d6ea10776446555b199f9.png)，2，3，![](assets-fenbi-75776/c25f59c475d436e79dd6fb180b3b91fc2d6b55c7f2dff0f0d813bac85ce8d500.png)，![](assets-fenbi-75776/7ddae1abb3ea1d8c74743290bb77eea1b499cff82c159102eaa0e0420e31b4df.png)，（ ）。
+√2，2，3，√17，2√7，（ ）。
 
 A. 6
 
 B. 7
 
-C. ![](assets-fenbi-75776/ca2004eae349fa9bde093cc08a60bab5067a49c260d9db8bbf7616bc85103dcb.png)
+C. √42
 
-D. ![](assets-fenbi-75776/d3f08c425f75519280dad5bb214ac317a16b94179e32ccd6f1961c5f90fdf229.png)
+D. 4√3
 
 <details><summary>第 57 题 · 答案与解析</summary>
 
@@ -2214,15 +2214,15 @@ B
 
 ### 第 60 题
 
-![](assets-fenbi-75776/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，![](assets-fenbi-75776/632dba4c2d214b251b1b966c80bc421db16713427fcc995838463186639a0ae7.png)，![](assets-fenbi-75776/e4126d83f47d2e644d44eef136e68aedc08c1a915ca3ac7541fc1ca3ea5b683b.png)，![](assets-fenbi-75776/e6c5f86aa90ac27fb1a01a73002b4da74707072a98341a19001936a9727692cb.png)，![](assets-fenbi-75776/820a56d0862de6b466b92f3e2d186fbaedbfb0dfce3cf41236c574cb86e935d5.png)，（ ）。
+1/2，3/5，7/10，13/17，21/26，（ ）。
 
-A. ![](assets-fenbi-75776/bd76441bffe3ef6e96477bc82b574f117b9a743fd17491627e2aeab4503cf302.png)
+A. 31/47
 
-B. ![](assets-fenbi-75776/0ed9dbf98304868758eb2aea2a4b3ee397e311a1ac1217126c70b8952bc11dd5.png)
+B. 5/7
 
-C. ![](assets-fenbi-75776/507cd7aa18012a15a6317112e8ec3ff680ebcb0875121bdbfba8c769b488737f.png)
+C. 65/97
 
-D. ![](assets-fenbi-75776/fcba80c2ab433a5b3d0089a2ab7a2e78d4d06232f1f2c4386783625becf09910.png)
+D. 31/37
 
 <details><summary>第 60 题 · 答案与解析</summary>
 
@@ -2234,7 +2234,7 @@ D
 
 分子数列：1、3、7、13、21、（ ），两两作差得到2、4、6、8、（ ），构成公差为2的等差数列，故第五项为8+2=10，则原数列第六项的分子为21+10=31；
 
-分母数列：2、5、10、17、26、（ ），两两作差得到3、5、7、9、（ ），构成公差为2的等差数列，故第五项为9+2=11，则原数列第六项的分母为26+11=37；因此原数列第六项为![](assets-fenbi-75776/fcba80c2ab433a5b3d0089a2ab7a2e78d4d06232f1f2c4386783625becf09910.png)。
+分母数列：2、5、10、17、26、（ ），两两作差得到3、5、7、9、（ ），构成公差为2的等差数列，故第五项为9+2=11，则原数列第六项的分母为26+11=37；因此原数列第六项为31/37。
 
 故正确答案为D。
 
@@ -2478,7 +2478,7 @@ C
 
 **解析**
 
-由1、2、3、4组成且没有重复数字的四位数中，千位数为1的四位数有![](assets-fenbi-75776/9832c2e3f450e4985b94882ee82f0151ba73c6201ee06ab363bae97caa0a5ec1.png)个，千位数为2的四位数有![](assets-fenbi-75776/9832c2e3f450e4985b94882ee82f0151ba73c6201ee06ab363bae97caa0a5ec1.png)个，则按从小到大的顺序排列，排在第12位的四位数是千位数为2的四位数中最大的数字，即2431。
+由1、2、3、4组成且没有重复数字的四位数中，千位数为1的四位数有A_3^3=6个，千位数为2的四位数有A_3^3=6个，则按从小到大的顺序排列，排在第12位的四位数是千位数为2的四位数中最大的数字，即2431。
 
 故正确答案为C。
 
@@ -2544,7 +2544,7 @@ A
 
 **解析**
 
-沿半径画出圆形，如图所示，阴影部分为完全覆盖。每![](assets-fenbi-75776/aab431070fa9dec9fb6ea7d4555bfc6b33b2c5f2a40cc7f178de0e168fa2765e.png)个圆能完全覆盖的小方格为8个，整个圆能完全覆盖的小方格为8×4=32个。 ![](assets-fenbi-75776/9c31931f8164ed20b361e7af761f3bc84f636829369c34f36660aab13f4b2be6.png)
+沿半径画出圆形，如图所示，阴影部分为完全覆盖。每1/4个圆能完全覆盖的小方格为8个，整个圆能完全覆盖的小方格为8×4=32个。 ![](assets-fenbi-75776/9c31931f8164ed20b361e7af761f3bc84f636829369c34f36660aab13f4b2be6.png)
 
 故正确答案为A。
 
@@ -3666,7 +3666,7 @@ A
 
 （4）王伟不在跑道2；
 
-（5）张强在跑道3→王伟不在跑道4![](assets-fenbi-75776/7a000d4e14cd9c0dae8c2b95802a6788e4fcf72a8433438b85a5c16d6fc61de5.png)王伟在跑道4→张强不在跑道3；
+（5）张强在跑道3→王伟不在跑道4↔王伟在跑道4→张强不在跑道3；
 
 由条件（1）和条件（4）可知，王伟在跑道4，又由条件（5）可知，张强不在跑道3，则张强在跑道5，如图1所示：
 
@@ -4540,7 +4540,7 @@ C
 
 **解析**
 
-由问题所求“2015年前7个月，中国对欧盟和美国的出口额同比平均增长”，选项为百分数，可判定此题为混合增长率问题。定位表格可得，2015年前7个月，中国对欧盟的出口额为12180.2亿元，同比增长-4.4%，对美国的出口额为13973.8亿元，同比增长7.2%，则2014年前七个月，中国对欧盟的出口额为![](assets-fenbi-75776/046b541adaacadc0aa78bbfa44b8e717bbcd807f8c468f8f3ae144743ff93770.png)![](assets-fenbi-75776/26eb52601919046c991d80825d55bc6a5434ef7c914a47c1225cb8df9cad1ca6.png)亿元，中国对美国的出口额为![](assets-fenbi-75776/0c1fb4020df1effaf7f88646bea981f7510d5b0a2a0a0a08051649ae85d58106.png)![](assets-fenbi-75776/27b9fcef4c57a79bba7b1f91f90fad855315caba58903017f1b7e5130a3e5df7.png)亿元。根据混合增长率口诀“居中但不中，偏向基期较大的”，则混合增长率应略大于![](assets-fenbi-75776/859260681f647da86a8958f6d4f77c89c50781844e1815091be854a1f060a1f5.png)![](assets-fenbi-75776/cc552cead40439196b7200e16a61378e6545899fe89ea1a81695c6fa0450753c.png)，排除A、B选项。C、D选项相差较小，考虑线段法，因![](assets-fenbi-75776/a31b8b566dbc18bb4037f1512c4d23cc8528e55eb9d27d53798a699bf3bfed83.png)，基期量即为分母，所以增速差与基期量成反比（因选项差距小，不能用现期量近似替代基期量计算，否则会误选D选项）。设2015年前7个月，中国对欧盟和美国的出口额同比平均增长x%，则根据线段法“增速差与基期量成反比”，可得![](assets-fenbi-75776/ca5c8b994dc85bb9dbaee3a0c6af0c34b031930a3483bed6fc9fa67b3736529f.png)![](assets-fenbi-75776/65e8e5c91386d8070df4d32e3ca2c6c46a2d39375a7913893c7edd8ffdae6f74.png)，直接求解比较复杂，代入C选项成立，而D选项差距较大。
+由问题所求“2015年前7个月，中国对欧盟和美国的出口额同比平均增长”，选项为百分数，可判定此题为混合增长率问题。定位表格可得，2015年前7个月，中国对欧盟的出口额为12180.2亿元，同比增长-4.4%，对美国的出口额为13973.8亿元，同比增长7.2%，则2014年前七个月，中国对欧盟的出口额为![](assets-fenbi-75776/046b541adaacadc0aa78bbfa44b8e717bbcd807f8c468f8f3ae144743ff93770.png)![](assets-fenbi-75776/26eb52601919046c991d80825d55bc6a5434ef7c914a47c1225cb8df9cad1ca6.png)亿元，中国对美国的出口额为![](assets-fenbi-75776/0c1fb4020df1effaf7f88646bea981f7510d5b0a2a0a0a08051649ae85d58106.png)![](assets-fenbi-75776/27b9fcef4c57a79bba7b1f91f90fad855315caba58903017f1b7e5130a3e5df7.png)亿元。根据混合增长率口诀“居中但不中，偏向基期较大的”，则混合增长率应略大于![](assets-fenbi-75776/859260681f647da86a8958f6d4f77c89c50781844e1815091be854a1f060a1f5.png)=1.4%，排除A、B选项。C、D选项相差较小，考虑线段法，因![](assets-fenbi-75776/a31b8b566dbc18bb4037f1512c4d23cc8528e55eb9d27d53798a699bf3bfed83.png)，基期量即为分母，所以增速差与基期量成反比（因选项差距小，不能用现期量近似替代基期量计算，否则会误选D选项）。设2015年前7个月，中国对欧盟和美国的出口额同比平均增长x%，则根据线段法“增速差与基期量成反比”，可得![](assets-fenbi-75776/ca5c8b994dc85bb9dbaee3a0c6af0c34b031930a3483bed6fc9fa67b3736529f.png)![](assets-fenbi-75776/65e8e5c91386d8070df4d32e3ca2c6c46a2d39375a7913893c7edd8ffdae6f74.png)，直接求解比较复杂，代入C选项成立，而D选项差距较大。
 
 故正确答案为C。
 
@@ -4700,7 +4700,7 @@ D
 
 最大值为2013年的61.7%。
 
-方法二：2011—2014年，全国城镇失业人员再就业人数占上年末全国城镇登记失业人数比分别为：2011年![](assets-fenbi-75776/4d1aff12566b25f9689389e839b2b126cd46fa52a5d06a2a1d42bbc34f731608.png)，2012年![](assets-fenbi-75776/7f0269d23062e1565359e916d30f7362ca83421b9bc330ab6585ef9f34986101.png)，2013年![](assets-fenbi-75776/98121d2c152a5895d026b9a75618f204ac3c1387c9418e329fe85be8ea470263.png)，2014年![](assets-fenbi-75776/901136ddf314aba1d15e6597aa455e87cce4fcd3a2eebbe7f03ba991e8842f77.png)，可得![](assets-fenbi-75776/7f810dc2f5f15ffd6ff02f45fd20dd6c3ad35085450c81a178d02fda12efc8ea.png)，因此2011—2014年，全国城镇失业人员再就业人数占上年末全国城镇登记失业人数比重的最大值是2013年![](assets-fenbi-75776/8aebe47d3268db1f592e4599fab7250b802c176aabac57bd6eb4273dd3e9ff53.png)。
+方法二：2011—2014年，全国城镇失业人员再就业人数占上年末全国城镇登记失业人数比分别为：2011年553/908，2012年552/922，2013年566/917，2014年551/926，可得![](assets-fenbi-75776/7f810dc2f5f15ffd6ff02f45fd20dd6c3ad35085450c81a178d02fda12efc8ea.png)，因此2011—2014年，全国城镇失业人员再就业人数占上年末全国城镇登记失业人数比重的最大值是2013年![](assets-fenbi-75776/8aebe47d3268db1f592e4599fab7250b802c176aabac57bd6eb4273dd3e9ff53.png)。
 
 故正确答案为D。
 
@@ -4798,7 +4798,7 @@ D
 
 **解析**
 
-由题目所问“同比增长最慢”是哪一季度，判定本题为一般增长率比较问题。定位表格材料，2014年4个季度的同比增长率分别为：![](assets-fenbi-75776/4536069a9970344b02ce773ba4c3b4daabb8ce792a7bd908dc6881463781ff45.png)![](assets-fenbi-75776/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-75776/ef4a00ea111647e6e6c4fac0b0699e8b9bd6e08fd22050c71fa21cbe0221a8db.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.08、![](assets-fenbi-75776/58f9f06b0808f049b51d2fafb51f838fc9b2ff328940e6df5cb6ee0aabad1ddc.png)![](assets-fenbi-75776/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-75776/63a6e1ea5822f723ca8abbca85f333577138c3f90b23481a675099190211e9ee.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.07、![](assets-fenbi-75776/4740387246d25dbeae2479205c335cd057f9739b37790bca70c0fd26fc57f892.png)![](assets-fenbi-75776/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-75776/17e0a97eab80d67e2e7711a45edb82620c0c91bf245034c7c8afd08269389447.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.02、![](assets-fenbi-75776/b5fbeb5a562e525ece7db68f094c92e518e8e075af300a8ba06f6d8d00012357.png)![](assets-fenbi-75776/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-75776/f71c7ca3acf82c74ae5acab8950b307517fe32f0349ef7d6c172ced8d6397393.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.009，故增长最慢的是第四季度。
+由题目所问“同比增长最慢”是哪一季度，判定本题为一般增长率比较问题。定位表格材料，2014年4个季度的同比增长率分别为：![](assets-fenbi-75776/4536069a9970344b02ce773ba4c3b4daabb8ce792a7bd908dc6881463781ff45.png)=896/11823≈0.08、![](assets-fenbi-75776/58f9f06b0808f049b51d2fafb51f838fc9b2ff328940e6df5cb6ee0aabad1ddc.png)=925/12519≈0.07、![](assets-fenbi-75776/4740387246d25dbeae2479205c335cd057f9739b37790bca70c0fd26fc57f892.png)=245/14347≈0.02、![](assets-fenbi-75776/b5fbeb5a562e525ece7db68f094c92e518e8e075af300a8ba06f6d8d00012357.png)=120/13763≈0.009，故增长最慢的是第四季度。
 
 故正确答案为D。
 
@@ -4854,7 +4854,7 @@ B
 
 **解析**
 
-由题干给定“月平均增速”求现期，判定为年均增长率问题，定位图中数据，假设2015年7月-11月的月均增长速度为r，则565![](assets-fenbi-75776/eb488a6df43424be8fdab5ac3b9772bd351234bf71398a06743439fa9508cd8c.png)![](assets-fenbi-75776/7f77a1250a27e859a7be1e8055f8b924488217144c14c6f7a6da8dcd553b26bc.png)![](assets-fenbi-75776/a940bf5298b8e3ee77ffc0a2f49987bfb285f4ddfcff5b3784bd0fad03291240.png)，则2015年11月我国水力发电量为1028![](assets-fenbi-75776/eb488a6df43424be8fdab5ac3b9772bd351234bf71398a06743439fa9508cd8c.png)![](assets-fenbi-75776/7f77a1250a27e859a7be1e8055f8b924488217144c14c6f7a6da8dcd553b26bc.png)\=![](assets-fenbi-75776/6966be82b7dac478c30a7c2f41370c16486af8bffe57ba1ae3369337d8aee4a9.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)![](assets-fenbi-75776/e5c4dcf8e058a5a87f891e3acce739eff11e8dbaa0fccc0f331ffea1fca449a0.png)。
+由题干给定“月平均增速”求现期，判定为年均增长率问题，定位图中数据，假设2015年7月-11月的月均增长速度为r，则565×(1+r)^5=1028，则2015年11月我国水力发电量为1028×(1+r)^5\=1028^2/565≈![](assets-fenbi-75776/e5c4dcf8e058a5a87f891e3acce739eff11e8dbaa0fccc0f331ffea1fca449a0.png)。
 
 故正确答案为B。
 
@@ -4882,9 +4882,9 @@ C
 
 **解析**
 
-A项：2014年一、二、三、四季度水力发电量占发电总量的比重分别为：![](assets-fenbi-75776/b19e247f55392a060648e90f4aee167d3eaa8e16c8c451a1852401552b996447.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.11、![](assets-fenbi-75776/1a65c9d78aef3254cb0dd91e803f65b9e7d318f457e6443d3bb349151a090c7a.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.17、![](assets-fenbi-75776/e6e9009336c0a04f448d0ddef3ee4a8d5fc6d9478552a52907a25a74ff28879d.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.24、![](assets-fenbi-75776/89bd0fbda6dab4048d790b489b3ca06b7b199e1606e3cedd81da9a2e19cc974a.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.16，即2014年一、二、四季度比重不超过20%，正确；
+A项：2014年一、二、三、四季度水力发电量占发电总量的比重分别为：1453/12719≈0.11、2265/13444≈0.17、3442/14592≈0.24、2284/13883≈0.16，即2014年一、二、四季度比重不超过20%，正确；
 
-B项：2013年各个季度火力发电占总发电量的比重分别为：![](assets-fenbi-75776/10b2fa5136637507fcfd37ced14eb2e22c7c757349382febb738442ba1248e23.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.85、![](assets-fenbi-75776/f1e5b16e0b4d355d9c708b206f483d7865e12e9cb3bd7bed715c2892111b7efe.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.79、![](assets-fenbi-75776/0bd6cdc273dd1a61cbbaf97632b380fe5b703f7e8e9087183382173221acb6f1.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.78、![](assets-fenbi-75776/9e756e5be02afcb5c43ef026bd211e089911e9d21f2cdd86eec812da45471d50.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.80；2014年各个季度火力发电占总发电量的比重分别为：![](assets-fenbi-75776/9fe5b52ae06598d0bcc592597dc27822bbaf74126a8bc0a3d18928a457bde2df.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.85、![](assets-fenbi-75776/0a9a6dbc8ef8c9c68f427fbc30752f8f94b9fa16c877d8c68d90ac7e7013283b.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.79、![](assets-fenbi-75776/4bdd19fad034ae3f4af2f4b65398d4db0792f96581ca58193a1fab2233e40021.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.71、![](assets-fenbi-75776/86fc022a6b276dbb4ed1eb896c8caeba6f90231b3470d4da7b0ea64036dd6f77.png)![](assets-fenbi-75776/266cac6a8094877a2bd90b542bec6ac1e7619c3d749ff5992629469eb7f7f2a1.png)0.77，即2013年-2014年我国各季度火力发电量占发电总70%，正确；
+B项：2013年各个季度火力发电占总发电量的比重分别为：10006/11823≈0.85、9949/12519≈0.79、11161/14347≈0.78、11037/13763≈0.80；2014年各个季度火力发电占总发电量的比重分别为：10782/12719≈0.85、10582/13444≈0.79、10377/14592≈0.71、10677/13883≈0.77，即2013年-2014年我国各季度火力发电量占发电总70%，正确；
 
 C项：2015年1月，水力和火力发电量同比增长率均大于零，二者方向相同，错误；
 

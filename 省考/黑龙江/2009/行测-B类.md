@@ -15,7 +15,7 @@
 # 2009年黑龙江省公务员录用考试《行测》题（A、B类）
 
 <!-- gwy:overview:start -->
-> **黑龙江 · 2009 · 行测 · B类** ｜ 140 题 · 图片 158 处 · 答案随题折叠
+> **黑龙江 · 2009 · 行测 · B类** ｜ 140 题 · 图片 155 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -67,7 +67,7 @@
 
 ### 第 1 题
 
-![](assets-fenbi-133/20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3.png)，![](assets-fenbi-133/96660b93398706aed5b63e4c3db0515d93793b4c47f4d542cee35efeef129347.png)，![](assets-fenbi-133/094d8b2bf8d9def7933eb348e3f7bfaa3e4fd84f3f311e90806a68fa075495da.png)，（  ）
+1/2，![](assets-fenbi-133/96660b93398706aed5b63e4c3db0515d93793b4c47f4d542cee35efeef129347.png)，![](assets-fenbi-133/094d8b2bf8d9def7933eb348e3f7bfaa3e4fd84f3f311e90806a68fa075495da.png)，（  ）
 
 A. ![](assets-fenbi-133/e578f131546ffd1f13c27a78d041947b94e517fa07a006e24987a0fed68ae256.png)
 
@@ -151,7 +151,7 @@ C
 
 ### 第 4 题
 
-![](assets-fenbi-133/9c60c54aceb950f02eaaf893c458d05be74be7165026afe1eb74609dec0ed4f9.png)，![](assets-fenbi-133/a5c36e8f0b11eb0b19babf32ed5c497957a98ac0b793b79e1a6e47da83c100a7.png)，1，3，4，（  ）
+![](assets-fenbi-133/9c60c54aceb950f02eaaf893c458d05be74be7165026afe1eb74609dec0ed4f9.png)，1/5，1，3，4，（  ）
 
 A. 8
 
@@ -329,7 +329,7 @@ B
 
 ### 第 10 题
 
-有40辆汽车，其中30%是货车，其余是轿车。如果有 ![](assets-fenbi-133/1745c254fe3b44c7c8fc47a3c191c638a485822a482e5a2b8a7512cc2ac64a80.png)的轿车是出租车，问不是出租车的轿车有几辆：
+有40辆汽车，其中30%是货车，其余是轿车。如果有 1/4的轿车是出租车，问不是出租车的轿车有几辆：
 
 A. 7
 

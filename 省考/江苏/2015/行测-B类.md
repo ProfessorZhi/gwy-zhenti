@@ -15,7 +15,7 @@
 # 2015年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2015 · 行测 · B类** ｜ 100 题 · 图片 99 处 · 答案随题折叠
+> **江苏 · 2015 · 行测 · B类** ｜ 100 题 · 图片 89 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -928,7 +928,7 @@ C
 
 ### 第 27 题
 
-![](assets-fenbi-74394/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)，![](assets-fenbi-74394/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，![](assets-fenbi-74394/9ca32f574c76ce6e061da97669243f1fadc0bd14d25f8545c67225d2190a5348.png)，6，30，（  ）。
+1/4，1/2，3/2，6，30，（  ）。
 
 A. 90
 
@@ -1092,7 +1092,7 @@ D
 
 方法一：火车过桥问题公式为（车长+桥长）=速度×时间。假设火车车长为xm，原来的速度为vm/s，根据题意可列方程组600+x=18v,480+x=15v，解得x=120,v=40。火车过桥时速度为原来的一半，即为20m/s，则火车通过桥梁所需的时间为（800+120）÷20＝46s。
 
-方法二：利用盈亏思想，![](assets-fenbi-74394/85f8e8c2985de3e9d4e12d17e9aa9b8858eedbcdc1592f9403d0920e90e6ae76.png)m/s，那么车长=40![](assets-fenbi-74394/c29bcaf62fd3c38dd04f3ae442580ec94aacc3a9534919b27995ab5db6873814.png)18-600=120m，通过桥梁的时间为![](assets-fenbi-74394/7d94799484404ec3cb195f29ea52be5c5b8629bdd06ef39eb62c9632da8ad591.png)s。
+方法二：利用盈亏思想，![](assets-fenbi-74394/85f8e8c2985de3e9d4e12d17e9aa9b8858eedbcdc1592f9403d0920e90e6ae76.png)m/s，那么车长=40×18-600=120m，通过桥梁的时间为![](assets-fenbi-74394/7d94799484404ec3cb195f29ea52be5c5b8629bdd06ef39eb62c9632da8ad591.png)s。
 
 故正确答案为D。
 
@@ -1166,15 +1166,15 @@ A
 
 ### 第 35 题
 
-甲、乙、丙三位同学参加某单位的招聘面试，面试合格者可正式签约，甲只要面试合格就签约。乙、丙二人约定：只有两人面试都合格才一同签约，否则都不签约。若他们三人面试合格的概率都是![](assets-fenbi-74394/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)，且面试是否合格互不影响，则他们三人都没有签约的概率为（  ）。
+甲、乙、丙三位同学参加某单位的招聘面试，面试合格者可正式签约，甲只要面试合格就签约。乙、丙二人约定：只有两人面试都合格才一同签约，否则都不签约。若他们三人面试合格的概率都是1/2，且面试是否合格互不影响，则他们三人都没有签约的概率为（  ）。
 
-A. ![](assets-fenbi-74394/ae27bf02ad4faf5e2e09c157bb311156c6a792f68bb9879be2c253c77d6d8ced.png)
+A. 1/4
 
 B. ![](assets-fenbi-74394/828bd1368d184482e820bf7b68a4a46ab9fb5c5e938dc95d444908269b3253d5.png)
 
-C. ![](assets-fenbi-74394/815878669d48ee2e7680775d946a7ad867f352fcdff1acdb98ce54995dd9901c.png)
+C. 1/2
 
-D. ![](assets-fenbi-74394/ff66f085255ebbf5ca462046eed4274f4175374a3563d82adcd2c11b8d4a1390.png)
+D. 5/8
 
 <details><summary>第 35 题 · 答案与解析</summary>
 
@@ -1338,7 +1338,7 @@ C
 
 **解析**
 
-连接C、F两个点。已知BD＝2DC，EC＝2AE，假设S△CDF=a，S△AEF=b，则S△BFD=2a，S△CEF＝2b。结合图形可得3a+2b=S△BCE=![](assets-fenbi-74394/6b1f3c4299575eebc7bc7b6c67889b70e92a2f5a8a2f63bc435bd4c8991374fa.png)S△ABC，a+3b=S△ACD=![](assets-fenbi-74394/fe8a76297e8b61ff2bafa432e6386cfc4657cc50e3eba0011d604c8b102ee616.png)S△ABC，两式相除可解得a＝4b。所以![](assets-fenbi-74394/902cd4e34ac1c9ee3aa4b446db730074e8d251697a57cddf0ed77b13547dd7a2.png)。
+连接C、F两个点。已知BD＝2DC，EC＝2AE，假设S△CDF=a，S△AEF=b，则S△BFD=2a，S△CEF＝2b。结合图形可得3a+2b=S△BCE=2/3S△ABC，a+3b=S△ACD=1/3S△ABC，两式相除可解得a＝4b。所以![](assets-fenbi-74394/902cd4e34ac1c9ee3aa4b446db730074e8d251697a57cddf0ed77b13547dd7a2.png)。
 
 故正确答案为C。
 

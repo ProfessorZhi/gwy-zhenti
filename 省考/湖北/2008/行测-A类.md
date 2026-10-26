@@ -15,7 +15,7 @@
 # 2008年湖北省公务员录用考试《行测》题（A类）
 
 <!-- gwy:overview:start -->
-> **湖北 · 2008 · 行测 · A类** ｜ 135 题 · 图片 85 处 · 答案随题折叠
+> **湖北 · 2008 · 行测 · A类** ｜ 135 题 · 图片 83 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1251,7 +1251,7 @@ B
 
 ### 第 34 题
 
-![](assets-fenbi-97/20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3.png)，1，![](assets-fenbi-97/f770b7c79b327b03c3f1d0efb7d7f2a49d3832125d55849f54281381c4d9fa7b.png)，![](assets-fenbi-97/b0f9056bca2e9ba804f56e88d1d6e1536fda2f1ae63173eb9a5d685eaa268c2f.png)，（    ）
+1/2，1，![](assets-fenbi-97/f770b7c79b327b03c3f1d0efb7d7f2a49d3832125d55849f54281381c4d9fa7b.png)，![](assets-fenbi-97/b0f9056bca2e9ba804f56e88d1d6e1536fda2f1ae63173eb9a5d685eaa268c2f.png)，（    ）
 
 A. ![](assets-fenbi-97/8594947af2147528d628533bee0d2d7810bbe4b7438f424dd226281da101225d.png)
 
@@ -1677,7 +1677,7 @@ D
 
 解法1：
 
-当小明和小华在路上相遇时，小明已走了![](assets-fenbi-97/aa9d3b3a11980ef44112586e3afc5b67ce13d74f6910cec7106ac29f300ce9a7.png)的路程，距乙地还剩![](assets-fenbi-97/3aa3818f1c916550fc967093574ee48e19399832a9f2cbd1efd133ac50356915.png)路程，故从相遇处乘车返回乙地还需要![](assets-fenbi-97/dcf66600956f5a8915a85cb54517541876fbbfb0b91660e7f8c50454f8519f9b.png)。
+当小明和小华在路上相遇时，小明已走了![](assets-fenbi-97/aa9d3b3a11980ef44112586e3afc5b67ce13d74f6910cec7106ac29f300ce9a7.png)的路程，距乙地还剩1/3路程，故从相遇处乘车返回乙地还需要![](assets-fenbi-97/dcf66600956f5a8915a85cb54517541876fbbfb0b91660e7f8c50454f8519f9b.png)。
 
 解法2：
 

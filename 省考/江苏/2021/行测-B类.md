@@ -15,7 +15,7 @@
 # 2021年江苏省公务员录用考试《行测》题（B类）（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2021 · 行测 · B类** ｜ 135 题 · 图片 280 处 · 答案随题折叠
+> **江苏 · 2021 · 行测 · B类** ｜ 135 题 · 图片 188 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1865,15 +1865,15 @@ B
 
 ### 第 48 题
 
-![](assets-fenbi-101466/e7d7110521da7cb9a3e44060ba74144284720d40463c93a9f2f0945591805b67.png)，![](assets-fenbi-101466/c25f59c475d436e79dd6fb180b3b91fc2d6b55c7f2dff0f0d813bac85ce8d500.png)，![](assets-fenbi-101466/0de57458d97bbeee96e14d7776e028f18e48846cf89f83d362decacf0347fc05.png)，![](assets-fenbi-101466/ef5aaf6a832ef02927b7e1c032f67cc420ee888c3184706db41f329806ee17a9.png)，![](assets-fenbi-101466/e33fe0fe1357c58f7a186d39a0b3560275789c031f422aa8be791ec217403276.png)，（ ）
+2√2，√17，2√6，√37，4√3，（ ）
 
-A. ![](assets-fenbi-101466/37bbbb50f80c58c2ce00373a691dd6d32060e9a6f9514208ea88e7df13a65739.png)
+A. 3√7
 
-B. ![](assets-fenbi-101466/1327d3f3f8e7b17c7641dab23abb1edc7a9cfa84dc82e7cf6b06306e093b2ac5.png)
+B. √65
 
-C. ![](assets-fenbi-101466/6b6706af423035cdbcd23329d1552f16d375fbe60ec45d5478a4436a4a7fdd57.png)
+C. 6√2
 
-D. ![](assets-fenbi-101466/a0aea4d326fcb69384d5f300bb36f53e97e73556487d2ddc5a8c0e85fede76e2.png)
+D. 4√5
 
 <details><summary>第 48 题 · 答案与解析</summary>
 
@@ -1883,7 +1883,7 @@ B
 
 **解析**
 
-观察数列，无明显特征，将原数列转化为同一形式：![](assets-fenbi-101466/45e6c1cb937899f81ed8dff9c41ea744274a4cfeb9a500c473f0d3fe63af956e.png)，![](assets-fenbi-101466/c25f59c475d436e79dd6fb180b3b91fc2d6b55c7f2dff0f0d813bac85ce8d500.png)，![](assets-fenbi-101466/dbdc767eee603a7f4b46a851d198443a2444d25fba3b89be381c1db096e50ffb.png)，![](assets-fenbi-101466/ef5aaf6a832ef02927b7e1c032f67cc420ee888c3184706db41f329806ee17a9.png)，![](assets-fenbi-101466/54381f154dbc24d4f7c81ff33e4673fe652b976581151c265ceaa13fc40320c8.png)，（ ）。
+观察数列，无明显特征，将原数列转化为同一形式：√8，√17，√24，√37，√48，（ ）。
 
 方法一：考虑根号下数字两两作和形成新数列①：25，41，61，85，（ ），继续作和无规律，考虑新数列两两作差得②：16，20，24，（ ），是公差为4的等差数列，下一项为24+4=28，则新数列①下一项=85+28=113，故所求项![](assets-fenbi-101466/afed57e644f813dd264a9c451dc9b2b7f38b3c9a62be127a33a16b2453285a6f.png)。
 
@@ -1929,15 +1929,15 @@ A
 
 ### 第 50 题
 
-![](assets-fenbi-101466/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-101466/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)，![](assets-fenbi-101466/b1bbec92ed3699efeeffda59f7f113aad199f5e534c9f3b324ab7cfd07b5ef42.png)，![](assets-fenbi-101466/c49846c2f3e9602f60323361a11e5392253b46461b057f7e6d3a9f34ccffc3f1.png)，![](assets-fenbi-101466/2606dadaa66ab0b4de8487dd4ab932f2bf40c8b25a830243138a0d94a22b00ab.png)，（ ）
+1/3，1/3，1/2，5/8，35/64，（ ）
 
-A. ![](assets-fenbi-101466/5474cbf8bfc94d5e65bc28e36f7b2d78ad5d4621502c85352b014cf993a6ce7a.png)
+A. 75/128
 
-B. ![](assets-fenbi-101466/aa7af8c10fb8f2de95dfcbbbc607f6580f81e998d2ab5ef10f3d5efcae1df6fa.png)
+B. 85/256
 
-C. ![](assets-fenbi-101466/d07fb3bb68834d9187cf0ddfe09c2b7c84486640968c047ccecd1f137c43c4c3.png)
+C. 175/576
 
-D. ![](assets-fenbi-101466/9819c5e82acbc62616738cd7ccab581817815ce0a70883174a973c5b2962a5ca.png)
+D. 315/1024
 
 <details><summary>第 50 题 · 答案与解析</summary>
 
@@ -1947,9 +1947,9 @@ D
 
 **解析**
 
-方法一：题干与选项均为分数，优先考虑分数数列，反约分后得到新数列为：![](assets-fenbi-101466/6805fac5cffead6cf7faa97eab21e8b17450c5dda2936b4650a4522c6fed593b.png)，![](assets-fenbi-101466/6805fac5cffead6cf7faa97eab21e8b17450c5dda2936b4650a4522c6fed593b.png)，![](assets-fenbi-101466/282b3620c300695bc3616c6a6b976c1c2ba07f6144eb3c4885b883a2de0ccf96.png)，![](assets-fenbi-101466/cf43061381c8ab7e1430e5c2996ad34c5e72344886136fde15f786818c0055de.png)，![](assets-fenbi-101466/f3b76deac79b3ee7da047286b7a2cf406230747688b37ed28671accfa2cc9da9.png)。分子部分后项÷前项得到数列：1，3，5，7，是公差为2的等差数列，下一项为7+2=9，则分子下一项为35×9=315；分母部分后项÷前项得到数列：1，2，4，8，是公比为2的等比数列，下一项8×2=16，则分母下一项为：64×16=1024。故原数列下一项为![](assets-fenbi-101466/c461e17a71ba05beec54784b47bee45acdae16ae15dff6712e58552d43637063.png)。
+方法一：题干与选项均为分数，优先考虑分数数列，反约分后得到新数列为：1/3，1/3，1/2，5/8，35/64。分子部分后项÷前项得到数列：1，3，5，7，是公差为2的等差数列，下一项为7+2=9，则分子下一项为35×9=315；分母部分后项÷前项得到数列：1，2，4，8，是公比为2的等比数列，下一项8×2=16，则分母下一项为：64×16=1024。故原数列下一项为315/1024。
 
-方法二：题干与选项均为分数，优先考虑分数数列，若难以发现规律，则考虑作积作商。相邻两项作商，后项÷前项，得到新数列为![](assets-fenbi-101466/75451df4e9b9dfb45f3a04e0d52f686402025917114ed89d2745ee5ea0f36615.png)，![](assets-fenbi-101466/db55de44667f2fabbf1c005ab1167ee52541acf7a701b704f0799281832d19cf.png)，![](assets-fenbi-101466/d49c180ee207c510cc0496795f331924737828a4ddfd9cdcda4ea19a5bedb49b.png)，![](assets-fenbi-101466/7175a1bf234b972881e33389835b2722dcbc4f9b3c40adb986174cd21be2ef24.png)······，新数列仍为分数数列，观察分子部分，为公差是2的等差数列，则新数列下一项分子为7+2=9；观察分母部分，为公比是2的等比数列，则新数列下一项分母是8×2=16，则新数列下一项为![](assets-fenbi-101466/af90ec74ac48be781405f073f56222dfdd7e7244fa5b94ed0f10a9aba7f02a33.png)，故原数列所求项![](assets-fenbi-101466/da03be15e6219fc2870dcb102c9c095a695868e65994e4bf1e9eb05359724d8c.png)。
+方法二：题干与选项均为分数，优先考虑分数数列，若难以发现规律，则考虑作积作商。相邻两项作商，后项÷前项，得到新数列为1/1，3/2，5/4，7/8······，新数列仍为分数数列，观察分子部分，为公差是2的等差数列，则新数列下一项分子为7+2=9；观察分母部分，为公比是2的等比数列，则新数列下一项分母是8×2=16，则新数列下一项为9/16，故原数列所求项![](assets-fenbi-101466/da03be15e6219fc2870dcb102c9c095a695868e65994e4bf1e9eb05359724d8c.png)。
 
 故正确答案为D。
 
@@ -2009,7 +2009,7 @@ D
 
 **解析**
 
-设2017年发射的卫星数量为x颗，根据题意，2018年发射的卫星数量为（x+31）颗，2019年发射的卫星数量为（1.5x+2）颗。已知三年共发射卫星1132颗，即x+(x+31)+(1.5x+2)=1132，解得x=314。故2019年全球共发射卫星![](assets-fenbi-101466/afac1f225c886ca108ada29c7960d8feaa24a628aea8c51df9f711e5a14e0786.png)![](assets-fenbi-101466/8955acf5dac5c412256bdaa980246bcfb66c86216261bf95cf425999d8a396cb.png)![](assets-fenbi-101466/a35c62b31145717f7bace06ea26f31b6c387cd8aff0d0473fae54a7d7aa61590.png)颗。
+设2017年发射的卫星数量为x颗，根据题意，2018年发射的卫星数量为（x+31）颗，2019年发射的卫星数量为（1.5x+2）颗。已知三年共发射卫星1132颗，即x+(x+31)+(1.5x+2)=1132，解得x=314。故2019年全球共发射卫星![](assets-fenbi-101466/afac1f225c886ca108ada29c7960d8feaa24a628aea8c51df9f711e5a14e0786.png)![](assets-fenbi-101466/8955acf5dac5c412256bdaa980246bcfb66c86216261bf95cf425999d8a396cb.png)=473颗。
 
 故正确答案为D。
 
@@ -2043,7 +2043,7 @@ C
 
 ![](assets-fenbi-101466/4be7a164399eabab3fea0699f864480def304cd7fba7a99eb2cb49742e4530f3.png)
 
-该水果全部销售的总利润![](assets-fenbi-101466/98262ea1224f30e5cef211780f76071cc2c295beffd9f5f15d9ef16eac33fe58.png)![](assets-fenbi-101466/a37039b8698de34e664529817fdf88f218b54ffa6a56c542a4e2a0559aa7d636.png)![](assets-fenbi-101466/fd7fab980337d21112e21b88099267c336faadd661e74573bd42fb0147904179.png)元，即![](assets-fenbi-101466/eb8ca89ff0afc75369e921fe318a05fb61178aff07705b742caf7d0aa429edc8.png)![](assets-fenbi-101466/fd7fab980337d21112e21b88099267c336faadd661e74573bd42fb0147904179.png)，解得x=15。根据公式：利润率![](assets-fenbi-101466/cb951d0fb6a55cd3e1da75ebbc7dc438964e60016667b15455ba60431122890b.png)，按原价销售的利润率为![](assets-fenbi-101466/53875d7275b96d3199a47902bc3b8acf61ce088a31bb9688ada65a23921ffbe4.png)。
+该水果全部销售的总利润![](assets-fenbi-101466/98262ea1224f30e5cef211780f76071cc2c295beffd9f5f15d9ef16eac33fe58.png)![](assets-fenbi-101466/a37039b8698de34e664529817fdf88f218b54ffa6a56c542a4e2a0559aa7d636.png)=34元，即![](assets-fenbi-101466/eb8ca89ff0afc75369e921fe318a05fb61178aff07705b742caf7d0aa429edc8.png)=34，解得x=15。根据公式：利润率![](assets-fenbi-101466/cb951d0fb6a55cd3e1da75ebbc7dc438964e60016667b15455ba60431122890b.png)，按原价销售的利润率为![](assets-fenbi-101466/53875d7275b96d3199a47902bc3b8acf61ce088a31bb9688ada65a23921ffbe4.png)。
 
 故正确答案为C。
 
@@ -2073,7 +2073,7 @@ A
 
 **解析**
 
-由题意可得，甲、乙、丙三个部门的效率关系为：![](assets-fenbi-101466/99d24763a947c28606bc171b6d0cc7749806d8a0a8d67901270ca4984da8c366.png)![](assets-fenbi-101466/6c40c85a73b4c5d89092f611b752659cdd7dbd7ed6bf39a7cc3aa912a91faac4.png)······①；![](assets-fenbi-101466/7a9c50f429a8a4b96e409052fcdfc0a7618d8e5287afe0f0d46065825ec2adba.png)![](assets-fenbi-101466/011e434acff5afc6e23d2748da1e6f5cc891304c08aa9bab8b95ac746d7381d1.png)······②。整理①②可得：甲∶乙=3∶2，乙∶丙=5∶4，故甲效率：乙效率：丙效率=15∶10∶8。结合丙部门每天植树的数量比乙部门少4棵，可得1份对应![](assets-fenbi-101466/f0d1793ada2498031fdd31292972e0c56291096334e7299a68db72b0b8675fa5.png)棵，故甲的效率![](assets-fenbi-101466/df333d8892ba0de082d2bcee7b952a9609920d6a3f2ed770963f18049f679b68.png)棵。
+由题意可得，甲、乙、丙三个部门的效率关系为：10×甲![](assets-fenbi-101466/6c40c85a73b4c5d89092f611b752659cdd7dbd7ed6bf39a7cc3aa912a91faac4.png)······①；12×乙![](assets-fenbi-101466/011e434acff5afc6e23d2748da1e6f5cc891304c08aa9bab8b95ac746d7381d1.png)······②。整理①②可得：甲∶乙=3∶2，乙∶丙=5∶4，故甲效率：乙效率：丙效率=15∶10∶8。结合丙部门每天植树的数量比乙部门少4棵，可得1份对应![](assets-fenbi-101466/f0d1793ada2498031fdd31292972e0c56291096334e7299a68db72b0b8675fa5.png)棵，故甲的效率![](assets-fenbi-101466/df333d8892ba0de082d2bcee7b952a9609920d6a3f2ed770963f18049f679b68.png)棵。
 
 故正确答案为A。
 
@@ -2229,9 +2229,9 @@ B
 
 结合题干与选项可知，选项信息充分，故可用代入排除法解题：
 
-代入A项：小哑铃24个，买3送1（4个一组），![](assets-fenbi-101466/d98caabcdc788f3e53b24a0d7af6c3b1cddd10adbed4fedfd3a0c79404d10a98.png)组，需花钱购买![](assets-fenbi-101466/8a4cbddf3da32dca15620e966018eb9bea2406f1f78e273df543514b5799ffaa.png)个；便携包56-24=32个，买2送1（3个一组），![](assets-fenbi-101466/da4312e6f4965d9841be290310a657bfbbfbacb3760c797912fdc9e251a6ce8d.png)组······2个，需花钱购买![](assets-fenbi-101466/1394d6c143eb9dd017eb333dfdd858efad6c6801d5f9c6c6257b63dfab6bee08.png)个。则共用经费![](assets-fenbi-101466/ef66abbdb6c550a589b7cea7efb797dba64ef4f3afd7572a0e0645f4f72f8e12.png)![](assets-fenbi-101466/2b34bc6ee7757c132f97bf1e0bbb1be2d289fdb36e490a7d914564f8fb6e02a9.png)元，不符合题意；
+代入A项：小哑铃24个，买3送1（4个一组），![](assets-fenbi-101466/d98caabcdc788f3e53b24a0d7af6c3b1cddd10adbed4fedfd3a0c79404d10a98.png)组，需花钱购买![](assets-fenbi-101466/8a4cbddf3da32dca15620e966018eb9bea2406f1f78e273df543514b5799ffaa.png)个；便携包56-24=32个，买2送1（3个一组），![](assets-fenbi-101466/da4312e6f4965d9841be290310a657bfbbfbacb3760c797912fdc9e251a6ce8d.png)组······2个，需花钱购买![](assets-fenbi-101466/1394d6c143eb9dd017eb333dfdd858efad6c6801d5f9c6c6257b63dfab6bee08.png)个。则共用经费![](assets-fenbi-101466/ef66abbdb6c550a589b7cea7efb797dba64ef4f3afd7572a0e0645f4f72f8e12.png)=612元，不符合题意；
 
-代入B项：小哑铃25个，买3送1（4个一组），![](assets-fenbi-101466/31e0342a3131c6b9f1724cd3ffd18d681c45585059de0f04f6e5bbec58f4ff65.png)组······1个，需花钱购买![](assets-fenbi-101466/5005fa7496b30386d62e2dae8e00b0cf6bea17e3299c318c1cf0bea2a6898aa7.png)个；便携包56-25=31个，买2送1（3个一组），![](assets-fenbi-101466/dbe1479c84e82934adc8a021d4cc9178245d3e1eeb654203ec454fee8ee62ada.png)组······1个，需花钱购买![](assets-fenbi-101466/643ee6166b72be7c05f1a771cbae4f77f3548d6d9522951843381eacd5bd2848.png)个。则共用经费![](assets-fenbi-101466/d7d3d1d59c29550c993f37ba0f17b94ee637a20cdf9ccedfe0315fdae341250e.png)![](assets-fenbi-101466/e04e9dca325f7ede0438c15425a56edd75df9216ae17f573620bb7d669d6c7df.png)元，符合题意。
+代入B项：小哑铃25个，买3送1（4个一组），![](assets-fenbi-101466/31e0342a3131c6b9f1724cd3ffd18d681c45585059de0f04f6e5bbec58f4ff65.png)组······1个，需花钱购买![](assets-fenbi-101466/5005fa7496b30386d62e2dae8e00b0cf6bea17e3299c318c1cf0bea2a6898aa7.png)个；便携包56-25=31个，买2送1（3个一组），![](assets-fenbi-101466/dbe1479c84e82934adc8a021d4cc9178245d3e1eeb654203ec454fee8ee62ada.png)组······1个，需花钱购买![](assets-fenbi-101466/643ee6166b72be7c05f1a771cbae4f77f3548d6d9522951843381eacd5bd2848.png)个。则共用经费![](assets-fenbi-101466/d7d3d1d59c29550c993f37ba0f17b94ee637a20cdf9ccedfe0315fdae341250e.png)=606元，符合题意。
 
 B项满足题干所有条件，因此无需继续验证。
 
@@ -2265,17 +2265,17 @@ A
 
 方法一：由题意可知，甲不去A社区，则甲只能去B、C、D社区中的一个，分类讨论：
 
-若甲去B社区，剩下三人随意排列为![](assets-fenbi-101466/6c750295c51b97636d131d60d955f1ec0712ffaf2144242cd6c27e819247bb52.png)种情况，但其中存在1种情况（丙去C社区、丁去A社区、乙去D社区）不满足题意，因此有![](assets-fenbi-101466/f0cd02ff88db198ec87442ea3713991aeb826fa9dba4910db8c148908a89a285.png)种情况；
+若甲去B社区，剩下三人随意排列为A_3^3种情况，但其中存在1种情况（丙去C社区、丁去A社区、乙去D社区）不满足题意，因此有![](assets-fenbi-101466/f0cd02ff88db198ec87442ea3713991aeb826fa9dba4910db8c148908a89a285.png)种情况；
 
-若甲去C社区，剩下三人随意排列，有![](assets-fenbi-101466/9832c2e3f450e4985b94882ee82f0151ba73c6201ee06ab363bae97caa0a5ec1.png)种情况；
+若甲去C社区，剩下三人随意排列，有A_3^3=6种情况；
 
-若甲去D社区，则丙不能去C社区，丙可去A、B社区，即![](assets-fenbi-101466/b8c0c72b03cdaabb43017f4b3b135c85d3bf9be8e5ed8fe09f6b211914b4dea7.png)种选择，剩下乙丁随意选，有![](assets-fenbi-101466/8cb2016e5c4702ce578ea0bdb0f05b9384953c728cdee44c5c28bf283deaa338.png)种情况，![](assets-fenbi-101466/88af97e5201a04081d48b6d998c39134111cd580b5d7ffae5b7efdb9bbc18ee2.png)种情况。
+若甲去D社区，则丙不能去C社区，丙可去A、B社区，即C_2^1种选择，剩下乙丁随意选，有A_2^2种情况，![](assets-fenbi-101466/88af97e5201a04081d48b6d998c39134111cd580b5d7ffae5b7efdb9bbc18ee2.png)种情况。
 
 因此，不同的派法共有5+6+4=15种。
 
-方法二：甲不去A社区，则甲只能去B、C、D社区中的一个，有![](assets-fenbi-101466/f7b2eef917439064bc89ffd375ecace3e23a822a460b6d6494db6dd6a60d425d.png)种选择。若不考虑其他特殊情况，其他三人随意安排有![](assets-fenbi-101466/6c750295c51b97636d131d60d955f1ec0712ffaf2144242cd6c27e819247bb52.png)种情况。此时，总情况数有![](assets-fenbi-101466/837e1c39a35f59af34e0beb7c0cd65981487e5994a5f56249813eb3a256795a3.png)种。但若丙去C社区、甲去D社区、丁去A或B社区，这两种情况不符合题意；若丙去C社区、甲去B社区、丁去A社区，这一种情况也不符合题意。因此，满足题意的派法有![](assets-fenbi-101466/5768a171b48cf498640fa3fa9e5a5436446285efbe7b3916ae0a1ccc296b20a6.png)种。
+方法二：甲不去A社区，则甲只能去B、C、D社区中的一个，有C_3^1种选择。若不考虑其他特殊情况，其他三人随意安排有A_3^3种情况。此时，总情况数有C_3^1×A_3^3种。但若丙去C社区、甲去D社区、丁去A或B社区，这两种情况不符合题意；若丙去C社区、甲去B社区、丁去A社区，这一种情况也不符合题意。因此，满足题意的派法有![](assets-fenbi-101466/5768a171b48cf498640fa3fa9e5a5436446285efbe7b3916ae0a1ccc296b20a6.png)种。
 
-方法三：甲不去A社区，则甲只能去B、C、D社区中的一个，有![](assets-fenbi-101466/f7b2eef917439064bc89ffd375ecace3e23a822a460b6d6494db6dd6a60d425d.png)种选择。若不考虑其他特殊情况，其他三人随意安排有![](assets-fenbi-101466/6c750295c51b97636d131d60d955f1ec0712ffaf2144242cd6c27e819247bb52.png)种情况，那么考虑特殊情况后符合题意的派法![](assets-fenbi-101466/6606f03e80b9a3d94d11a1cb19cf8f1a490e68efdf985c28f60ade6300c8405f.png)种。结合选项，只有A项符合。
+方法三：甲不去A社区，则甲只能去B、C、D社区中的一个，有C_3^1种选择。若不考虑其他特殊情况，其他三人随意安排有A_3^3种情况，那么考虑特殊情况后符合题意的派法![](assets-fenbi-101466/6606f03e80b9a3d94d11a1cb19cf8f1a490e68efdf985c28f60ade6300c8405f.png)种。结合选项，只有A项符合。
 
 故正确答案为A。
 
@@ -2289,13 +2289,13 @@ A
 
 某地举行募捐抽奖活动。每位捐赠者均有一次抽奖机会。活动设一二三等奖，获奖规则如下：抽奖时捐赠人在0到9这10个数字中一次随机抽取4个不同的数字，若与主办方开奖时随机抽取的4个不同数字完全相同，则获一等奖；若恰有3个相同，则获二等奖；若恰有2个相同则获三等奖。则捐赠者获奖的概率是：
 
-A. ![](assets-fenbi-101466/166f886a924bfc41159aedf00c0df3c930ec123d59facc73d3663c75ee9e1ece.png)
+A. 13/25
 
-B. ![](assets-fenbi-101466/fe3a6a5de7c13847c1ae2f959622d09de46536796ea3516ff6f3557266ea0f3f.png)
+B. 14/27
 
-C. ![](assets-fenbi-101466/1f6f370a66cde3b66c4909966e51ea1334eef797b5ac5f5036752059b63eac5b.png)
+C. 16/35
 
-D. ![](assets-fenbi-101466/2b65dcc68dd06fcb472698a211d659722ba3821ef47f7ed81e1b24086f0ee6db.png)
+D. 23/42
 
 <details><summary>第 61 题 · 答案与解析</summary>
 
@@ -2347,7 +2347,7 @@ B
 
 ![](assets-fenbi-101466/357863a0ad314f8891ef8ee46c7c28532bfe86ca6e7c9215288ade5c582b6c0c.png)
 
-因为乙先走了15分钟，所以甲从开始到45分钟共走3公里，乙45分钟走的路程应小于等于3公里，可得乙的速度![](assets-fenbi-101466/9f54f214c5a94a474f60b4b7a82db15afde599a4b863ff4fa8a7c773185417d5.png)4公里/小时；甲从开始到60分钟共走3公里 ，乙60分钟走的路程应大于等于3公里，可得乙的速度![](assets-fenbi-101466/5aa0463b9aaee70b82e9e66bbbff409eb167f26f0f728a94737a87663251a19e.png)3公里/小时。因此，乙的速度取最小为3公里/小时，则乙到达时间![](assets-fenbi-101466/e4169d411181130df62626367d9291888358cccebf9c5132880707a9beee02b1.png)小时=180分钟。
+因为乙先走了15分钟，所以甲从开始到45分钟共走3公里，乙45分钟走的路程应小于等于3公里，可得乙的速度≤4公里/小时；甲从开始到60分钟共走3公里 ，乙60分钟走的路程应大于等于3公里，可得乙的速度![](assets-fenbi-101466/5aa0463b9aaee70b82e9e66bbbff409eb167f26f0f728a94737a87663251a19e.png)3公里/小时。因此，乙的速度取最小为3公里/小时，则乙到达时间![](assets-fenbi-101466/e4169d411181130df62626367d9291888358cccebf9c5132880707a9beee02b1.png)小时=180分钟。
 
 故两人到达B地的时间最多相差=180-120-15=45分钟。
 
@@ -3091,7 +3091,7 @@ C
 
 **解析**
 
-图形元素组成相似，优先考虑样式规律，且相同线条重复出现，故考虑样式规律中的加减同异。九宫格优先按行看，第一行中，图2逆时针旋转![](assets-fenbi-101466/b6a390689dccf4c5ea219266f5e1f91b2e2b5eb1c98bd6dc40b96b370ec7d357.png)，然后与图1求异得到图3。经验证，第二行也满足此规律。第三行，应用此规律，将图2逆时针旋转![](assets-fenbi-101466/b6a390689dccf4c5ea219266f5e1f91b2e2b5eb1c98bd6dc40b96b370ec7d357.png)，然后与图1求异，因此“？”处应选择C项。
+图形元素组成相似，优先考虑样式规律，且相同线条重复出现，故考虑样式规律中的加减同异。九宫格优先按行看，第一行中，图2逆时针旋转45°，然后与图1求异得到图3。经验证，第二行也满足此规律。第三行，应用此规律，将图2逆时针旋转45°，然后与图1求异，因此“？”处应选择C项。
 
 故正确答案为C。
 
@@ -3483,17 +3483,17 @@ B
 
 第一步：分析题干的形式结构。
 
-题干的含义为：在天下设立好法制，天下就会太平；在一国制定好法制，一国就会太平。其形式结构为1![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)2，3![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)4。
+题干的含义为：在天下设立好法制，天下就会太平；在一国制定好法制，一国就会太平。其形式结构为1→2，3→4。
 
 第二步：逐一分析选项。
 
-A项：该项的含义为：民众的生计、生活在于勤劳，勤劳就不会出现物资匮乏。其形式结构为1![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)2，与题干形式结构不同，排除；
+A项：该项的含义为：民众的生计、生活在于勤劳，勤劳就不会出现物资匮乏。其形式结构为1→2，与题干形式结构不同，排除；
 
-B项：该项的含义为：如果自己不得志，那么就要管好自己的道德修养，如果自己得志，那么就要努力让天下人都能得到好处。其结构形式为1![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)2，3![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)4，与题干形式结构相似，当选；
+B项：该项的含义为：如果自己不得志，那么就要管好自己的道德修养，如果自己得志，那么就要努力让天下人都能得到好处。其结构形式为1→2，3→4，与题干形式结构相似，当选；
 
 C项：该项的含义为：聪明的人会根据时期的不同而改变自己的策略和方法，有大智慧的人会根据事物发展方向的不同而制定相应的管理方法。其中不包含推理关系，与题干形式结构不同，排除；
 
-D项：该项的含义为：节俭就会有节制，有节制则百善都会兴起；奢侈就会放肆，放肆则百恶都会爆发。其结构形式为1![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)2，2![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)3，4![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)5，5![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)6，与题干形式结构不同，排除。
+D项：该项的含义为：节俭就会有节制，有节制则百善都会兴起；奢侈就会放肆，放肆则百恶都会爆发。其结构形式为1→2，2→3，4→5，5→6，与题干形式结构不同，排除。
 
 故正确答案为B。
 
@@ -3851,13 +3851,13 @@ A
 
 分析题干信息。
 
-（1）甲焊工![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)丙木工；
+（1）甲焊工→丙木工；
 
-（2）乙水工![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)甲焊工，丁水工![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)甲焊工；
+（2）乙水工→甲焊工，丁水工→甲焊工；
 
 （3）丙瓦工或丙电工。
 
-从确定信息入手，题干给出新的条件，“如果戊做瓦工” 。结合条件（3），根据或关系的否一推一，可知丙做电工；结合条件（1），否后必否前，可知甲不做焊工；结合条件（2），否后必否前，可知-甲焊工![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)![](assets-fenbi-101466/33c705988fef8a9330e0c1f7e1cfe9dc94a3bcf74dba6561f2ba3c1c0de250c0.png)乙水工，-甲焊工![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)![](assets-fenbi-101466/33c705988fef8a9330e0c1f7e1cfe9dc94a3bcf74dba6561f2ba3c1c0de250c0.png)丁水工；即-乙水工且-丁水工。
+从确定信息入手，题干给出新的条件，“如果戊做瓦工” 。结合条件（3），根据或关系的否一推一，可知丙做电工；结合条件（1），否后必否前，可知甲不做焊工；结合条件（2），否后必否前，可知-甲焊工→-乙水工，-甲焊工→-丁水工；即-乙水工且-丁水工。
 
 结合已推出信息，乙、丁不做水工，戊做瓦工，丙做电工，则甲一定做水工。
 
@@ -3897,17 +3897,17 @@ B
 
 分析题干信息。
 
-（1）甲焊工![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)丙木工；
+（1）甲焊工→丙木工；
 
-（2）乙水工![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)甲焊工，丁水工→甲焊工；
+（2）乙水工→甲焊工，丁水工→甲焊工；
 
 （3）丙瓦工或丙电工。
 
 由确定信息入手，题干给出新的条件，“如果丁做电工”。
 
-结合条件（3），根据或关系否一推一，可知-丙电工![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)丙瓦工，排除C项；
+结合条件（3），根据或关系否一推一，可知-丙电工→丙瓦工，排除C项；
 
-结合条件（1），否后必否前，可知-丙木工![](assets-fenbi-101466/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)![](assets-fenbi-101466/33c705988fef8a9330e0c1f7e1cfe9dc94a3bcf74dba6561f2ba3c1c0de250c0.png)甲焊工；
+结合条件（1），否后必否前，可知-丙木工→-甲焊工；
 
 结合条件（2），否后必否前，可知-甲焊工→-乙水工，-甲焊工→-丁水工，即-乙水工且-丁水工。
 
@@ -4641,9 +4641,9 @@ A
 
 故正确答案为A。
 
-备注：2000年居民交通通信支出占人均消费支出的比重：![](assets-fenbi-101466/3165069da43a784cc4b950421704710f4e162dc79fbf428cf1893cfde6238c5a.png)![](assets-fenbi-101466/ded48873be205dfe17d8d98534a93306f01f85b7cb3b573762dd98c5d431634d.png)![](assets-fenbi-101466/7d0a3052d5257eb821dd5f835babe1c5abc8d8931dcc5e972a98ef77fbcd00df.png)；
+备注：2000年居民交通通信支出占人均消费支出的比重：![](assets-fenbi-101466/3165069da43a784cc4b950421704710f4e162dc79fbf428cf1893cfde6238c5a.png)![](assets-fenbi-101466/ded48873be205dfe17d8d98534a93306f01f85b7cb3b573762dd98c5d431634d.png)=7.2%；
 
-2000年居民医疗保健支出占人均消费支出的比重：![](assets-fenbi-101466/37d0c8630e918b311e6afdaf6e17e5d2b1f67c2c42592b7217e5bfb0a28c57d6.png)![](assets-fenbi-101466/da010e269bc96232d9ea35b99f71ccb081c9f52f862a5cd2bcbae9d201f9171b.png)![](assets-fenbi-101466/fbf16107a464fe0424ac6d2510abcf4a092a976a69c6f1a5a3a6e15b6dce976b.png)；
+2000年居民医疗保健支出占人均消费支出的比重：![](assets-fenbi-101466/37d0c8630e918b311e6afdaf6e17e5d2b1f67c2c42592b7217e5bfb0a28c57d6.png)![](assets-fenbi-101466/da010e269bc96232d9ea35b99f71ccb081c9f52f862a5cd2bcbae9d201f9171b.png)=5.9%；
 
 2000年其他支出占人均消费支出的比重：1-42.2%-7.2%-5.9%=44.7%。
 
@@ -4705,7 +4705,7 @@ D
 
 ![](assets-fenbi-101466/2a719c480f651b31ae20e746b745ef383231c076c9d2c22b3707c933db91df4e.png)
 
-即城镇人口：农村人口![](assets-fenbi-101466/38e0a1217c9cf00934142f2c261f358dce77f4dc9b1d6b741ad45d4c2c6eeaa0.png)![](assets-fenbi-101466/89d8ade34a498963cc275641b4b8c843668601d43f76f524984b04ddef15bcd4.png)，根据公式：比重![](assets-fenbi-101466/b371fe813578c5af33a8fb831af003b7995801f6ad4b9abe0e127793dc3e32d6.png)![](assets-fenbi-101466/cac7027b066c53502f7cfae633b7290e174e3d01551347249b89ae1d4fa3d583.png)![](assets-fenbi-101466/faab1efc80ef1dba901d624be2d227a36f8d842c485e0b01db4c52cf8f6d9cb9.png)![](assets-fenbi-101466/9ebb415b410bb4a8f1b654d21964a6b22f9a6ade01d656770efe05b3bea707e5.png)![](assets-fenbi-101466/79994e174e624dce72a720d2f46197acc3bfdfd2585adb6a3ce604d2d92a3275.png)，与D项最接近。
+即城镇人口：农村人口![](assets-fenbi-101466/38e0a1217c9cf00934142f2c261f358dce77f4dc9b1d6b741ad45d4c2c6eeaa0.png)![](assets-fenbi-101466/89d8ade34a498963cc275641b4b8c843668601d43f76f524984b04ddef15bcd4.png)，根据公式：比重![](assets-fenbi-101466/b371fe813578c5af33a8fb831af003b7995801f6ad4b9abe0e127793dc3e32d6.png)![](assets-fenbi-101466/cac7027b066c53502f7cfae633b7290e174e3d01551347249b89ae1d4fa3d583.png)![](assets-fenbi-101466/faab1efc80ef1dba901d624be2d227a36f8d842c485e0b01db4c52cf8f6d9cb9.png)=82/147![](assets-fenbi-101466/79994e174e624dce72a720d2f46197acc3bfdfd2585adb6a3ce604d2d92a3275.png)，与D项最接近。
 
 故正确答案为D。
 
@@ -4867,7 +4867,7 @@ A
 
 **解析**
 
-根据题干“2018年······与······之差为”，结合材料已知2019年相关数据，可判定本题为基期和差问题。定位文字材料可知：（2019年）全年保费收入3750.2亿元，比上年增长13.1%。其中，财产险收入940.9亿元，增长9.6%；······全年保险赔付998.6亿元，比上年增长0.2%。其中，财产险赔付534.5亿元，增长4.3%。根据公式：基期量![](assets-fenbi-101466/ffabdf9bba4e72e25feb79aed91121c42644602fc3f5e2a44475a963c8bde9a4.png)，2018年江苏省财产险收入与赔付之差为：![](assets-fenbi-101466/c04ccbcb835980dbec21e269187c38469f8a1bc95894b53421ed5258351a2421.png)![](assets-fenbi-101466/c36213860a2254aa3acd6af92c41b2c7a7d7ea693ffd1cbc14f1edadc8f87122.png)![](assets-fenbi-101466/0a2f18886033f25413ad8ade67e34bc142314be51ed2eb4ed18e8ad65d92d23f.png)![](assets-fenbi-101466/089152ce3b0f3fa23e08ec46437e7dda0fa8451022aa80066b3cfd942bd769b2.png)亿元，与A项最为接近。
+根据题干“2018年······与······之差为”，结合材料已知2019年相关数据，可判定本题为基期和差问题。定位文字材料可知：（2019年）全年保费收入3750.2亿元，比上年增长13.1%。其中，财产险收入940.9亿元，增长9.6%；······全年保险赔付998.6亿元，比上年增长0.2%。其中，财产险赔付534.5亿元，增长4.3%。根据公式：基期量![](assets-fenbi-101466/ffabdf9bba4e72e25feb79aed91121c42644602fc3f5e2a44475a963c8bde9a4.png)，2018年江苏省财产险收入与赔付之差为：![](assets-fenbi-101466/c04ccbcb835980dbec21e269187c38469f8a1bc95894b53421ed5258351a2421.png)![](assets-fenbi-101466/c36213860a2254aa3acd6af92c41b2c7a7d7ea693ffd1cbc14f1edadc8f87122.png)![](assets-fenbi-101466/0a2f18886033f25413ad8ade67e34bc142314be51ed2eb4ed18e8ad65d92d23f.png)=343.5亿元，与A项最为接近。
 
 故正确答案为A。
 
@@ -5101,7 +5101,7 @@ B
 
 **解析**
 
-根据题干“2019年末我国10后人数为······”，可判定本题为简单加减计算问题。2019年末我国10后人数即2010-2019年出生的人数，定位统计图材料可得，2010-2019年出生的人数为：1588+1604+1635+1640+1687+1655+1786+1723+1523+1465=1600×10+(-12+4+35+40+87+55+186+123-77-135)=16306万人![](assets-fenbi-101466/37a063b1acb3ed717eb1b9f4260e868e8dbcdc8d1ca59d0617d9030107606902.png)亿人。
+根据题干“2019年末我国10后人数为······”，可判定本题为简单加减计算问题。2019年末我国10后人数即2010-2019年出生的人数，定位统计图材料可得，2010-2019年出生的人数为：1588+1604+1635+1640+1687+1655+1786+1723+1523+1465=1600×10+(-12+4+35+40+87+55+186+123-77-135)=16306万人≈1.63亿人。
 
 故正确答案为B。
 
@@ -5187,13 +5187,13 @@ C
 
 根据题干“2011-2019年，我国出生人口增长率最高的年份是”，可判定本题为一般增长率问题。定位统计图材料可知，2010-2019年每年出生人口的数据，根据公式：增长率![](assets-fenbi-101466/6465ad16dfec0d0fffb1aa3374b01bef9f74aac59f741165412a60b33746aa66.png)，可知选项各年份的增长率如下：
 
-2012年：![](assets-fenbi-101466/9ffe3abf7fc5e3ee263b66c0e452aa8cc40c59b762ee1ea7759e6ccc663e5d7b.png)![](assets-fenbi-101466/996e58b075417034da038effe33e853a3c8af7f885d0ca44e2e808c2fa934af6.png)![](assets-fenbi-101466/5aca375fc520d3f3f1319e66f94a2ab854cd9b72fa8b312c1828b89f5fcd5a49.png)；
+2012年：![](assets-fenbi-101466/9ffe3abf7fc5e3ee263b66c0e452aa8cc40c59b762ee1ea7759e6ccc663e5d7b.png)≈31/1600≈1%+；
 
-2014年：![](assets-fenbi-101466/866aa39a7de7e98d121517c6b259339f1a6cf73d201e874a9817649d6c8582e2.png)![](assets-fenbi-101466/51225af748909896dbbb1c1c26b86323bf2107ec2c90586a60e8cdcff6b2fa04.png)![](assets-fenbi-101466/42ab8e500d5c659fe6c36f4230f14acba9b3d558969492fe1c9c22e165516d22.png)；
+2014年：![](assets-fenbi-101466/866aa39a7de7e98d121517c6b259339f1a6cf73d201e874a9817649d6c8582e2.png)=47/1640≈2%+；
 
-2016年：![](assets-fenbi-101466/5482028c1ee9e6811fce233da727113581cdceb580e1b25592ae2dcfb4ba655a.png)![](assets-fenbi-101466/2e825c8d0359237b41ccc59ec22da7f5fc0ea8f80b7b171853ff2b98be33afd2.png)![](assets-fenbi-101466/a80451f9bb70be3370af42d8e52bca2bc7af904b95868b07a246877e15eff790.png)；
+2016年：![](assets-fenbi-101466/5482028c1ee9e6811fce233da727113581cdceb580e1b25592ae2dcfb4ba655a.png)≈131/1660≈7%+；
 
-2018年：![](assets-fenbi-101466/85392c6c3ba548cd00c64d45b9604ea4eb89ddf5e36723eaa3fdfbea8f6a0e49.png)![](assets-fenbi-101466/7e62860d251ae807a128b46a71a3f1489d2f8e804907918182f3e34f41268a4c.png)![](assets-fenbi-101466/f44f6a584ce8aee6e8bc443e52c4601903616f1b3f360d1547a149f9fda71dd9.png)。
+2018年：![](assets-fenbi-101466/85392c6c3ba548cd00c64d45b9604ea4eb89ddf5e36723eaa3fdfbea8f6a0e49.png)![](assets-fenbi-101466/7e62860d251ae807a128b46a71a3f1489d2f8e804907918182f3e34f41268a4c.png)<0。
 
 则我国出生人口增长率最高的年份是2016年。
 
@@ -5227,7 +5227,7 @@ A项：定位统计图材料可得，2019年和2010年的出生人口分别为14
 
 B项：定位统计图材料可知，2013年出生人口（1640万人）＞2012年（1635万人），出生人口上升，但2013年出生率（12.08‰）＜2012年（12.10‰），出生率下降，故2013年我国出生人口和出生率变化方向不一致，错误；
 
-C项：定位文字材料和统计图材料可得，2019年末，我国80后、90后、00后人数分别为2.21亿人、2.08亿人、1.63亿人，由本篇资料第1题可知，10后出生人口为1.63亿人；2019年出生人口和出生率分别为1465万人和10.48‰，根据比重公式，所求比重![](assets-fenbi-101466/3a2bb9fa208ea8b47a9f62d1e0ed9a106100ddc6d890b65aabb861ace578bf2d.png)![](assets-fenbi-101466/d99f638c55bdc180d991e750947e67b8db61d1fb4b0e603fb2f2d335f865e514.png)![](assets-fenbi-101466/117cc617e772432868f1313ba4ddaf0d300ea4db5eed875a9a650e576fcbfb51.png)![](assets-fenbi-101466/be6aa13e51b6cd3d4b6f47a43d052296f166e7b8430a5c4b159cf0e0399d43d0.png)，错误；
+C项：定位文字材料和统计图材料可得，2019年末，我国80后、90后、00后人数分别为2.21亿人、2.08亿人、1.63亿人，由本篇资料第1题可知，10后出生人口为1.63亿人；2019年出生人口和出生率分别为1465万人和10.48‰，根据比重公式，所求比重![](assets-fenbi-101466/3a2bb9fa208ea8b47a9f62d1e0ed9a106100ddc6d890b65aabb861ace578bf2d.png)![](assets-fenbi-101466/d99f638c55bdc180d991e750947e67b8db61d1fb4b0e603fb2f2d335f865e514.png)≈54%<55%，错误；
 
 D项：定位统计图材料可知，2011-2014年这四年，出生人口连续上升，2017-2019年这三年，出生人口连续下降，正确。
 

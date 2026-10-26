@@ -15,7 +15,7 @@
 # 2008年江苏省公务员录用考试《行测》题（B类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2008 · 行测 · B类** ｜ 155 题 · 图片 218 处 · 答案随题折叠
+> **江苏 · 2008 · 行测 · B类** ｜ 155 题 · 图片 191 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -1889,7 +1889,7 @@ C
 
 ### 第 65 题
 
-![](assets-fenbi-81/20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3.png)，1，![](assets-fenbi-81/63ca7f79c0cbf015624fe1968227ca403f9bf1d0d9fc5ac588e3a2778deb7636.png)，![](assets-fenbi-81/c0eca9a5c7d317c4615aa904d4aab6a3ccfa56c480a3a62ad7e56cb198930747.png)，![](assets-fenbi-81/5ccdb8d5d68c16836553b96f3ef0c3073569b37278fe4414dec67225b63cd662.png)，()
+1/2，1，![](assets-fenbi-81/63ca7f79c0cbf015624fe1968227ca403f9bf1d0d9fc5ac588e3a2778deb7636.png)，![](assets-fenbi-81/c0eca9a5c7d317c4615aa904d4aab6a3ccfa56c480a3a62ad7e56cb198930747.png)，![](assets-fenbi-81/5ccdb8d5d68c16836553b96f3ef0c3073569b37278fe4414dec67225b63cd662.png)，()
 
 A. ![](assets-fenbi-81/e54f8d535c532bfa3ea81eb38a386732eb152fca9dbb5afe7a0fa81aa9482a0a.png)
 
@@ -1907,7 +1907,7 @@ B
 
 **解析**
 
-原分数数列变形：![](assets-fenbi-81/20c62967c6103610ffa8691fd43ee9d8d23e9f3e9889a4987a93bfca459bc2d3.png)、![](assets-fenbi-81/3fff4aa554e7630879464c1fca09e67eee91d2bc9e758562d7c914fcb0d9ae32.png)、![](assets-fenbi-81/63ca7f79c0cbf015624fe1968227ca403f9bf1d0d9fc5ac588e3a2778deb7636.png)、![](assets-fenbi-81/dd4eed3e62a5017a5e1b82463a953b152e52e22a27e2d299a00bf075ec396cd4.png)、![](assets-fenbi-81/5ccdb8d5d68c16836553b96f3ef0c3073569b37278fe4414dec67225b63cd662.png)、![](assets-fenbi-81/82b02f5fad9dc285287bbc6e8e18df5da0225ea267f2d8f71efe80614418639e.png)。
+原分数数列变形：1/2、![](assets-fenbi-81/3fff4aa554e7630879464c1fca09e67eee91d2bc9e758562d7c914fcb0d9ae32.png)、![](assets-fenbi-81/63ca7f79c0cbf015624fe1968227ca403f9bf1d0d9fc5ac588e3a2778deb7636.png)、![](assets-fenbi-81/dd4eed3e62a5017a5e1b82463a953b152e52e22a27e2d299a00bf075ec396cd4.png)、![](assets-fenbi-81/5ccdb8d5d68c16836553b96f3ef0c3073569b37278fe4414dec67225b63cd662.png)、![](assets-fenbi-81/82b02f5fad9dc285287bbc6e8e18df5da0225ea267f2d8f71efe80614418639e.png)。
 
 分子部分为：1，2，5，10，17，后项减前项得到新数列为：1，3，5，7，（    ），是公差为2的等差数列，则下一项为7+2=9，故所求项分子部分为17+9=26。分母部分为：2，2，4，12，48，后项÷前项得到新数列为：1，2，3，4，是公差为1的等差数列，则下一项为5，故所求项分母部分为48×5=240。则所求项为![](assets-fenbi-81/ac72d016c8ee36d9525a962d911e5920f29163a527efd2a1a821bebe95d425f0.png)，即![](assets-fenbi-81/3661515f252fe5c68b422a5e000a63ce83a03eee4375d6d7d2788bdddc428243.png)。
 
@@ -2893,19 +2893,19 @@ D
 
 第一步：翻译题干，利用充分必要条件。
 
-第一句：小区保安![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)郊区农村，理发店员工![](assets-fenbi-81/becbeba8549aa837c5867a8bb37cc11ce6dfa32e0d9524e3f822d2726326354c.png)郊区农村。
+第一句：小区保安→郊区农村，理发店员工→郊区农村。
 
-第二句：装修工人![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)大专文凭，有些小区保安![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)大专文凭。
+第二句：装修工人→大专文凭，有些小区保安→大专文凭。
 
 第二步：逐一翻译选项判断正确答案。
 
-A项：理发店员工![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)大专文凭，从题干无法推出，排除。
+A项：理发店员工→大专文凭，从题干无法推出，排除。
 
-B项：理发店员工![](assets-fenbi-81/becbeba8549aa837c5867a8bb37cc11ce6dfa32e0d9524e3f822d2726326354c.png)大专文凭，从题干无法推出，排除。
+B项：理发店员工→大专文凭，从题干无法推出，排除。
 
-C项：装修工人![](assets-fenbi-81/becbeba8549aa837c5867a8bb37cc11ce6dfa32e0d9524e3f822d2726326354c.png)郊区农村，从题干无法推出，排除。
+C项：装修工人→郊区农村，从题干无法推出，排除。
 
-D项：有些人有大专文凭![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)小区保安，属于可能性推理，可由有些小区保安![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)大专文凭得到。
+D项：有些人有大专文凭→小区保安，属于可能性推理，可由有些小区保安→大专文凭得到。
 
 故正确答案为D。
 
@@ -3033,13 +3033,13 @@ C
 
 第一句：我国南方地区天降大雪。
 
-第二句：不及时扫雪![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)公路结冰。
+第二句：不及时扫雪→公路结冰。
 
-第三句：公路结冰![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)安全隐患。
+第三句：公路结冰→安全隐患。
 
-第四句：安全隐患![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)公路关闭。
+第四句：安全隐患→公路关闭。
 
-第五句：公路关闭![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)生活不便。
+第五句：公路关闭→生活不便。
 
 第六句：南方高速公路关闭。
 
@@ -3047,9 +3047,9 @@ C
 
 A、D项从题干无法推出，为无关项，排除；
 
-B项翻译为：公路关闭![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)安全隐患，而题干是-公路关闭![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)![](assets-fenbi-81/fd289ecc8794754afb01a6179cb884633c07b2bc9ce66d18a120471866e881e6.png)安全隐患，即B中的公路关闭为否前件，推不出任何绝对化的结论，排除；
+B项翻译为：公路关闭→安全隐患，而题干是-公路关闭→—安全隐患，即B中的公路关闭为否前件，推不出任何绝对化的结论，排除；
 
-C项翻译为：-生活不便![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)及时扫雪。由题干推导-生活不便![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)![](assets-fenbi-81/fd289ecc8794754afb01a6179cb884633c07b2bc9ce66d18a120471866e881e6.png)公路关闭，-公路关闭![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)﹣安全隐患，-安全隐患![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)![](assets-fenbi-81/fd289ecc8794754afb01a6179cb884633c07b2bc9ce66d18a120471866e881e6.png)公路结冰，-公路结冰![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)及时扫雪，可以推出，当选。
+C项翻译为：-生活不便→及时扫雪。由题干推导-生活不便→—公路关闭，-公路关闭→﹣安全隐患，-安全隐患→—公路结冰，-公路结冰→及时扫雪，可以推出，当选。
 
 故正确答案为C。
 
@@ -3221,9 +3221,9 @@ B
 
 第一步：翻译题干，利用充分必要条件。
 
-甲：小李上![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)小王上；
+甲：小李上→小王上；
 
-乙：小王上![](assets-fenbi-81/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)小李上；
+乙：小王上→小李上；
 
 丙：小王上![](assets-fenbi-81/16b6a1c7cc6a18cbd7220dd4dc75a6997e4ca61b16ea3e5b2bb870da05ec55b3.png)小李上。
 

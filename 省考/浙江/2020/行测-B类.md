@@ -15,7 +15,7 @@
 # 2020年浙江公务员考试《行测》（B类）试题（网友回忆版）
 
 <!-- gwy:overview:start -->
-> **浙江 · 2020 · 行测 · B类** ｜ 100 题 · 图片 283 处 · 答案随题折叠
+> **浙江 · 2020 · 行测 · B类** ｜ 100 题 · 图片 180 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -115,7 +115,7 @@ B
 
 **解析**
 
-观察数列，发现有较明显的倍数关系，考虑作商。前项除以后项可得新数列：![](assets-fenbi-96455/15ab7241e07722dfb517ddf073b83b5b000281e1fed048d64b126410b71fd373.png)，![](assets-fenbi-96455/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-96455/a812479e3b5a36b9404036ee7d77b9009a97f8b7058629adc96421d0b8678620.png)，（ ），（ ），新数列分子、分母均为以1为公差的等差数列，则新数列应为：![](assets-fenbi-96455/15ab7241e07722dfb517ddf073b83b5b000281e1fed048d64b126410b71fd373.png)，![](assets-fenbi-96455/bb39c76a061f08dc3a8eabf64a5838fab806b805b0f72614d2acaa1463ebaf38.png)，![](assets-fenbi-96455/a812479e3b5a36b9404036ee7d77b9009a97f8b7058629adc96421d0b8678620.png)，（![](assets-fenbi-96455/048d48e7b51e391ec8b77a173a07988a381ac2352ab363e5a82c97c24437aa67.png)），（![](assets-fenbi-96455/b573554a23d07a2b829c65f5cb75a7d4ddd5fce48f2d79682f85d05d603f030d.png)），故所求项![](assets-fenbi-96455/38ea0eb90c17fbd02f3d99b7b992dcc6a4d431132d8d1819f5b80fe881ec5360.png) ，向后验证，![](assets-fenbi-96455/83e121b4ab97015065a7a7c1562d8ab02fa6e2c12fd8efd08ea5f10e61f61251.png)，符合此规律。
+观察数列，发现有较明显的倍数关系，考虑作商。前项除以后项可得新数列：2/1，3/2，4/3，（ ），（ ），新数列分子、分母均为以1为公差的等差数列，则新数列应为：2/1，3/2，4/3，（5/4），（6/5），故所求项![](assets-fenbi-96455/38ea0eb90c17fbd02f3d99b7b992dcc6a4d431132d8d1819f5b80fe881ec5360.png) ，向后验证，![](assets-fenbi-96455/83e121b4ab97015065a7a7c1562d8ab02fa6e2c12fd8efd08ea5f10e61f61251.png)，符合此规律。
 
 故正确答案为B。
 
@@ -175,7 +175,7 @@ C
 
 **解析**
 
-数列依次递增，且出现幂次数，考虑幂次数列。观察发现，题干数字分别为![](assets-fenbi-96455/cad3c627efb96350c1c4b71fd764ef2a8c478c72ca8621b1437013c188b34374.png)，![](assets-fenbi-96455/5140b27b60cc5066aaaf36ffcb87871e595b0c628170c2fa09bbc9d6707b39ab.png)，![](assets-fenbi-96455/06c7aaaffd882b04efc97abaa07679d9094c2c6d110770bf70eb84d2c23db466.png)，![](assets-fenbi-96455/839b01a5b6e61dfca4fdeb3d50242de8a894bb6051d6a3a1a62eab1246b52dc7.png)，则所求项应为![](assets-fenbi-96455/07cf1e1e94b3a926a80c0c6d9572634c38f0cc298de51eccc02e16a8626c9cff.png)，5的幂次数尾数为5，观察选项，只有C项符合。
+数列依次递增，且出现幂次数，考虑幂次数列。观察发现，题干数字分别为1=1^1，4=2^2，27=3^3，![](assets-fenbi-96455/839b01a5b6e61dfca4fdeb3d50242de8a894bb6051d6a3a1a62eab1246b52dc7.png)，则所求项应为5^5，5的幂次数尾数为5，观察选项，只有C项符合。
 
 故正确答案为C。
 
@@ -259,11 +259,11 @@ A
 
 ![](assets-fenbi-96455/cc8a4639c4269c7110ab5f6fff7041e927305b663a2ab04053d00008a862c58d.png)
 
-A. ![](assets-fenbi-96455/a9ef343a0d7616fc820ccdd5d5b87b19a7627bb25078885ef897008f7728ee89.png)
+A. 1/5
 
-B. ![](assets-fenbi-96455/dd573a2e4159ad8298fc0f4dcb1dd7c24caaee070ad1415e11ba608f86a67851.png)
+B. 1/3
 
-C. ![](assets-fenbi-96455/632dba4c2d214b251b1b966c80bc421db16713427fcc995838463186639a0ae7.png)
+C. 3/5
 
 D. 1
 
@@ -277,15 +277,15 @@ C
 
 无中心的图形数阵，优先考虑凑对角线关系。观察发现：
 
-第一个数阵中，![](assets-fenbi-96455/d337bb987eeaa43eb90d77e1860495878ec9aa9f8c8d0a9d7ad847fc32da3bad.png)![](assets-fenbi-96455/59181b315d67265046ca9748bd315d3b75a8e49fb0e63a5fc496aee8867e88c7.png)；
+第一个数阵中，12/8=6/4；
 
-第二个数阵中，![](assets-fenbi-96455/ce275e4c803b46b2813e0372d12f85c65da9574a2b876805904421e6e76b0c80.png)![](assets-fenbi-96455/08208029c68d26e923e5b2656de41fdd5951a8c9e5fe41b47b73081bfc11e4fd.png)；
+第二个数阵中，10/4=5/2；
 
-第三个数阵中，![](assets-fenbi-96455/9408c6cc882788eb14ac2c6104fe9af47a1857c29bfc378ccd0df1239a16354f.png)![](assets-fenbi-96455/26a3393b56464928a8d6af3e32bbc7dedf5abd55cfffd837e83635e13c1abcd0.png)；
+第三个数阵中，4/2=8/4；
 
 即规律为：![](assets-fenbi-96455/c81c299977cfdd3de13a4e3cbbd05e13f068e70a3cdf41c55a767b8c76a6d2ff.png)![](assets-fenbi-96455/24e5d62e38165a427b3028d3aaeab18f16906fc332019d7fb46d89ad4ddb1bb9.png)。
 
-则第四个数阵中，![](assets-fenbi-96455/d868bdfb53bde2029407c6277e9e227d3ed0b785425af6072908b40726c68a87.png)![](assets-fenbi-96455/d4390e25aa83f6a344f4baa7f27167e6eeddb09fe52bf67a0fd679a497d8f2ac.png)，![](assets-fenbi-96455/e69739ee3bfa1cb54643098cc51a62b7415ebdd85e32c7b5ac5fb79a6840f045.png)。
+则第四个数阵中，1/?=5/3，?=3/5。
 
 故正确答案为C。
 
@@ -317,15 +317,15 @@ D
 
 无中心的图形数阵，对角线方向无明显规律，考虑纵向寻找规律。观察发现：
 
-第一个数阵中，![](assets-fenbi-96455/c47dab96d2adef912a906b8d43f59ca820af1388968be38736c7eae0426da2e3.png)![](assets-fenbi-96455/8d75aa6dc521fd5a81485e16c71da4192e7509e08ce91e093cf521699d3e100e.png)；
+第一个数阵中，2×6=4+8；
 
-第二个数阵中，![](assets-fenbi-96455/e73b819f42c090775f146e7dc6e71ea2a2ed8f44862d8cc6f79a0840d9498863.png)![](assets-fenbi-96455/7af6a98d669407bfc8b9527704156a89c405e4dac83a6e7f179ce22575a4b327.png)；
+第二个数阵中，5×6![](assets-fenbi-96455/7af6a98d669407bfc8b9527704156a89c405e4dac83a6e7f179ce22575a4b327.png)；
 
-第三个数阵中，![](assets-fenbi-96455/61490570bf35ce330871454685973be0364db9cbfc256d7ba26a8b731522f29c.png)![](assets-fenbi-96455/cfbe33716b646fb79d74e4a952998b36bdca8be065bd445a6b63abeff4a1f9f5.png)；
+第三个数阵中，7×3![](assets-fenbi-96455/cfbe33716b646fb79d74e4a952998b36bdca8be065bd445a6b63abeff4a1f9f5.png)；
 
-即规律为：左上角数字![](assets-fenbi-96455/eb488a6df43424be8fdab5ac3b9772bd351234bf71398a06743439fa9508cd8c.png)左下角数字＝右上角数字＋右下角数字。
+即规律为：左上角数字×左下角数字＝右上角数字＋右下角数字。
 
-则第四个数阵中，![](assets-fenbi-96455/35ee585a9c874ad37cf443331198b558c495f571a7ddcc133f8ed6a8b9012d75.png)![](assets-fenbi-96455/8abdd968771617609514a3ef56461b4929a0e0fef44868e83026dc6436187be0.png)，?＝8。
+则第四个数阵中，6×4![](assets-fenbi-96455/8abdd968771617609514a3ef56461b4929a0e0fef44868e83026dc6436187be0.png)，?＝8。
 
 故正确答案为D。
 
@@ -357,15 +357,15 @@ C
 
 无中心的图形数阵，对角线方向无明显规律，考虑横向寻找规律。观察发现：
 
-第一个数阵中，![](assets-fenbi-96455/c077e64298db609afd7a140f5690cd692b5d14c79001598a72c06d3e17963ffa.png)![](assets-fenbi-96455/f398b077ddcfc8f5872f1c0d1fe2cd1587767623ae180d47b1ceb85ea9f3ee3e.png)；
+第一个数阵中，5-3=14/7；
 
-第二个数阵中，![](assets-fenbi-96455/7a0025f7b5da9d901f93a79a39a3591da02908c598d632d65504d04a5dc5c394.png)![](assets-fenbi-96455/26a3393b56464928a8d6af3e32bbc7dedf5abd55cfffd837e83635e13c1abcd0.png)；
+第二个数阵中，4-2=8/4；
 
-第三个数阵中，![](assets-fenbi-96455/2908c96b5b014c1cea09ab42cb282bc4a0555b1d82968cc5b0e6720d62a6869c.png)![](assets-fenbi-96455/b4d550caf57ae48aeed7a1ce9112fcaa6edc8b522082ee8021433bb59cffb9d5.png)；
+第三个数阵中，9-6=9/3；
 
 即规律为：右上角数字-左上角数字![](assets-fenbi-96455/1e96259198c775f1a4777256463216fc282237ca0d015535d2363d7cb85fcf7d.png)。
 
-则第四个数阵中，![](assets-fenbi-96455/20c448ed27e6b7831f78b4d4c90e06075c826c7f4ad6e662752023815cd3e575.png)![](assets-fenbi-96455/be4c55fef04ef04990d12393b27ba73955594b19d923c04d71645333549ecff3.png)，?=13。
+则第四个数阵中，?-10=15/5，?=13。
 
 故正确答案为C。
 
@@ -397,15 +397,15 @@ B
 
 无中心的图形数阵，对角线方向无明显规律，考虑横向寻找规律。观察发现：
 
-第一个数阵中，![](assets-fenbi-96455/ea9067ac23ac57d735fb204c37a82a727bf08b3ae921204dc0f4433f02b01169.png)![](assets-fenbi-96455/b4d550caf57ae48aeed7a1ce9112fcaa6edc8b522082ee8021433bb59cffb9d5.png)；
+第一个数阵中，1+2=9/3；
 
-第二个数阵中，![](assets-fenbi-96455/534810f0e2784e43a9db65988d5f6f65788433d3d89092ff6651792824abb292.png)![](assets-fenbi-96455/f51d2107a0f10558b8182e86e9e737d3dfbee6bb578d60ec2265b7039d888b3f.png)；
+第二个数阵中，2+4=12/2；
 
-第三个数阵中，![](assets-fenbi-96455/76a0902eb1893873b6ac915c40fcf6a4ec3827fbdd6b334a222a52f941b7c288.png)![](assets-fenbi-96455/ae0e9293f82775b54ffcac947fb59a6b4bcb9b6551abe2139d17b7e2aaba88d1.png)；
+第三个数阵中，1+5=6/1；
 
-即规律为：左上角数字+右上角数字![](assets-fenbi-96455/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-96455/e950b8d8875afce76dcefb709a98c1ba65cf7d91a1dd2440b2d0959840d6acb0.png)。
+即规律为：左上角数字+右上角数字=![](assets-fenbi-96455/e950b8d8875afce76dcefb709a98c1ba65cf7d91a1dd2440b2d0959840d6acb0.png)。
 
-则第四个数阵中，![](assets-fenbi-96455/2e73b225a906c947be37de356bed45020147978acfb8cf52d911b60bc751f640.png)![](assets-fenbi-96455/0a20758670845cad1125237df91edc3db87a9093f3af7faf02d7feacba4269ab.png)，?=18。
+则第四个数阵中，3+6=?/2，?=18。
 
 故正确答案为B。
 
@@ -435,7 +435,7 @@ A
 
 **解析**
 
-设大车有x辆，小车有y辆，根据题意可列式为：20＜x+y＜30……①，![](assets-fenbi-96455/b5be267d8f1cee2f31bda6b4e5b5beb25b8d2372359390b9613fb8f838105e32.png)![](assets-fenbi-96455/ce51e064ae53009577eefb186a668eb15cdddc14884748e88bb032f3b44a2f19.png)\=2220……②。在②式中，100x的尾数为0，2220的尾数为0，说明72y的尾数也为0，y必为5的倍数，可能的解为：5、10、15······。代入验证，若y=5，则![](assets-fenbi-96455/808b3399df03b18a8cdc1b4eb3655facae45eb8a84f129618f13ea6382ae3609.png)![](assets-fenbi-96455/9b2faa4001ef8da1668c284c1b894994c14e436e2d548f5a0d336d4422c4e0e5.png)，x为非整数，排除；若y=10，则![](assets-fenbi-96455/d4e423342f457f21b830052958c3ea260ba3a692b8f3fe5f09ca9f0757445f51.png)![](assets-fenbi-96455/3486285c1eb8e51e86b07f334806b278941b4228369c082eb28f6fba91dcdcfa.png)![](assets-fenbi-96455/efc5bde539501c0b0382dc638448fe24a6d5f8377000d0d1296e687715128280.png)，此时满足20＜x+y＜30，符合，因此大车比小车多15-10=5辆。
+设大车有x辆，小车有y辆，根据题意可列式为：20＜x+y＜30……①，![](assets-fenbi-96455/b5be267d8f1cee2f31bda6b4e5b5beb25b8d2372359390b9613fb8f838105e32.png)![](assets-fenbi-96455/ce51e064ae53009577eefb186a668eb15cdddc14884748e88bb032f3b44a2f19.png)\=2220……②。在②式中，100x的尾数为0，2220的尾数为0，说明72y的尾数也为0，y必为5的倍数，可能的解为：5、10、15······。代入验证，若y=5，则![](assets-fenbi-96455/808b3399df03b18a8cdc1b4eb3655facae45eb8a84f129618f13ea6382ae3609.png)=1860/100，x为非整数，排除；若y=10，则![](assets-fenbi-96455/d4e423342f457f21b830052958c3ea260ba3a692b8f3fe5f09ca9f0757445f51.png)=1500/100=15，此时满足20＜x+y＜30，符合，因此大车比小车多15-10=5辆。
 
 故正确答案为A。
 
@@ -467,7 +467,7 @@ C
 
 ![](assets-fenbi-96455/352364fbfca03d64a364899578a8fc9fd060bcb122607fc49a78b490bab972d5.png)
 
-如图所示，单块正三角形地砖边长为0.2m，则高为![](assets-fenbi-96455/246eddd1ec263ca943b24284770ac4f8f63ea71eec1353c36d2b1f41d817c0a3.png)m，单块正三角形地砖面积![](assets-fenbi-96455/673a6d99c322b752ca14ef6a36e621d0261e264c6eb7a335d62d65e8a275350e.png)![](assets-fenbi-96455/8536d70019d2cb2c62ca795df72f3001233b4f7cf33f80e9311207715b7694a6.png)。正六边形地面总面积![](assets-fenbi-96455/c05f3d7e82b5453cfeb2d234be430adffc3a81eb22838f27937c0e2fb843a396.png)![](assets-fenbi-96455/ddb274fcade005cd71a295cd0c3f18e33050841d2a2361e8068816868cb4c643.png)，则共需要地砖数量=正六边形地面总面积![](assets-fenbi-96455/f5a6c68647c30af90c17798019a4c35c1b5f299c7940595dcc2595ecc6177eed.png)单块正三角形地砖面积![](assets-fenbi-96455/bcfd2c71aff569e40f9b631d12b7aea094fd97148a30c4a328fdf26f1e4276d0.png)![](assets-fenbi-96455/886e30b1a71676b9d50961c9f5d68dc17cffad2a428a5ce8c33697055f57ebdc.png)块。
+如图所示，单块正三角形地砖边长为0.2m，则高为0.1√3m，单块正三角形地砖面积![](assets-fenbi-96455/673a6d99c322b752ca14ef6a36e621d0261e264c6eb7a335d62d65e8a275350e.png)![](assets-fenbi-96455/8536d70019d2cb2c62ca795df72f3001233b4f7cf33f80e9311207715b7694a6.png)。正六边形地面总面积![](assets-fenbi-96455/c05f3d7e82b5453cfeb2d234be430adffc3a81eb22838f27937c0e2fb843a396.png)![](assets-fenbi-96455/ddb274fcade005cd71a295cd0c3f18e33050841d2a2361e8068816868cb4c643.png)，则共需要地砖数量=正六边形地面总面积÷单块正三角形地砖面积![](assets-fenbi-96455/bcfd2c71aff569e40f9b631d12b7aea094fd97148a30c4a328fdf26f1e4276d0.png)=150块。
 
 故正确答案为C。
 
@@ -499,13 +499,13 @@ D
 
 根据答对、答错、不答的题目数量为等差数列，设答错的题目有x道，则答对与不答的题目为(x+a)道、(x-a)道，其中a为等差数列的公差。则总题量为(x+a)+x+(x-a)=3x。由题意可列式为10(x+a)-5x-3(x-a)=95，化简可得2x+13a=95，正面求解繁琐，可代入选项进行验证。
 
-代入A项，试卷共有15题，则答错的题目有![](assets-fenbi-96455/f75f1b0212538c79dfd1b8c5e8cb59fe634208649b08b4d164329b90cd07a733.png)道，![](assets-fenbi-96455/8a06773b48d15557fb6d1dcabd56244ebf3926d98663fbd8da4b428111f55564.png)，a为非整数，不符合题意要求，排除；
+代入A项，试卷共有15题，则答错的题目有15/3=5道，![](assets-fenbi-96455/8a06773b48d15557fb6d1dcabd56244ebf3926d98663fbd8da4b428111f55564.png)，a为非整数，不符合题意要求，排除；
 
 代入B项，试卷共有30题，则答错的题目有![](assets-fenbi-96455/3a57bb6c6bfd0b5cdd924b4191084904eebdf4cd5a8eff2afea875b932d4f0e5.png)道，![](assets-fenbi-96455/8f4d4664aeefe827a029ba054b5ab49631f1a71b0e135ee0e391813affa42f6a.png)，a为非整数，不符合题意要求，排除；
 
 代入C项，试卷共有36题，则答错的题目有![](assets-fenbi-96455/ff4d5dec98a2ad44789405326d0c08a01b274f55f2b3c6ed8c85b9633d2b6762.png)道，![](assets-fenbi-96455/09fe52d1f7166f997a7e92a058364c168f1c646bcd1c6ab35f529218d3a2c5ed.png)，a为非整数，不符合题意要求，排除；
 
-代入D项，试卷共有45题，则答错的题目有![](assets-fenbi-96455/2de304ac31e336d3d07da7e59a9ce8dfd686b5e9860d32319431be951093d387.png)道，![](assets-fenbi-96455/b46a812114807874977e6d623b65c9ba8063f3b79797e31f5de76ec6e20ae73f.png)，解得a=5，则答对的题目为15+5=20道，不答的题目为15-5=10道，总分为![](assets-fenbi-96455/374c6d9b3fbfea8496b3e0ab3e715746b66f1e00eb9c79e57c06670818cfb27a.png)![](assets-fenbi-96455/632f28cb870975a511781426edd6587649cc012df4eecb7e48f48bbf51c4e220.png)分，符合题意。
+代入D项，试卷共有45题，则答错的题目有![](assets-fenbi-96455/2de304ac31e336d3d07da7e59a9ce8dfd686b5e9860d32319431be951093d387.png)道，![](assets-fenbi-96455/b46a812114807874977e6d623b65c9ba8063f3b79797e31f5de76ec6e20ae73f.png)，解得a=5，则答对的题目为15+5=20道，不答的题目为15-5=10道，总分为![](assets-fenbi-96455/374c6d9b3fbfea8496b3e0ab3e715746b66f1e00eb9c79e57c06670818cfb27a.png)=95分，符合题意。
 
 故正确答案为D。
 
@@ -569,9 +569,9 @@ B
 
 **解析**
 
-根据题意，各种规格的圆珠笔每盒的售价分别为：单盒装10元、5盒装![](assets-fenbi-96455/2634eab7c70eb783720ff34578588c34e431adaa016d7356dda5d074f50b2138.png)元、10盒装![](assets-fenbi-96455/b3300ea93b9b530b02ff8f1608a09abeade886f64423b513789f47ddac01a6c0.png)元、20盒装![](assets-fenbi-96455/e690093e9e223987faa41ca70f646dbc3e5b492d742d13c7324282a0b8da7330.png)元。在预算一定的情况下，要使采购数量最多，则尽量优先选择单价低的盒装采购。
+根据题意，各种规格的圆珠笔每盒的售价分别为：单盒装10元、5盒装40/5=8元、10盒装70/10=7元、20盒装![](assets-fenbi-96455/e690093e9e223987faa41ca70f646dbc3e5b492d742d13c7324282a0b8da7330.png)元。在预算一定的情况下，要使采购数量最多，则尽量优先选择单价低的盒装采购。
 
-甲企业的预算最多正好买92盒，为4个20盒装、1个10盒装、2个1盒装；乙企业的预算最多正好买103盒，为5个20盒装、3个1盒装。合买最多的情况为：分开买10盒装与1盒装的预算全部用于采购20盒装，共![](assets-fenbi-96455/3e2d5cfcc5993f43b31cafedb6e829c004338ed5db060b9e58e4af616a5aa3a0.png)![](assets-fenbi-96455/7543111191a4f7f1abea080cc89119927e21683801736542d56553175f5893be.png)元，可买1个20盒装。因此，合买最多比分开买多采购20-(10+2+3)=5盒，B项当选。
+甲企业的预算最多正好买92盒，为4个20盒装、1个10盒装、2个1盒装；乙企业的预算最多正好买103盒，为5个20盒装、3个1盒装。合买最多的情况为：分开买10盒装与1盒装的预算全部用于采购20盒装，共![](assets-fenbi-96455/3e2d5cfcc5993f43b31cafedb6e829c004338ed5db060b9e58e4af616a5aa3a0.png)=120元，可买1个20盒装。因此，合买最多比分开买多采购20-(10+2+3)=5盒，B项当选。
 
 故正确答案为B。
 
@@ -695,31 +695,31 @@ B
 
 分别计算四个选项的概率：
 
-A项：分步考虑，第一步先选择其中2辆车，为![](assets-fenbi-96455/813a35fcf956865b03d2f277a5af858d529fdc3edf25e5dd9ed96f65c3052b21.png)；第二步选择其中一排，停入这2辆车，为![](assets-fenbi-96455/cfc007223f84d6f94dafdcf42598d72dbedaa8444f5e0b1eefecfef36a808574.png)；第三步在另外一排停入其他4辆车，为![](assets-fenbi-96455/4c8adfc5630246e0aef4787917fa682b60816e6adfcbef1cc49f05f71f18e908.png)。根据乘法原理，分步相乘，情况数为![](assets-fenbi-96455/0943ed7bcc2996c5601aa704c89493908fed3590d6325d17dd500436e411a940.png)。
+A项：分步考虑，第一步先选择其中2辆车，为C_6^2；第二步选择其中一排，停入这2辆车，为![](assets-fenbi-96455/cfc007223f84d6f94dafdcf42598d72dbedaa8444f5e0b1eefecfef36a808574.png)；第三步在另外一排停入其他4辆车，为A_6^4。根据乘法原理，分步相乘，情况数为![](assets-fenbi-96455/0943ed7bcc2996c5601aa704c89493908fed3590d6325d17dd500436e411a940.png)。
 
-总情况数为：6辆车随机停12个车位的情况数为![](assets-fenbi-96455/50441967e52849e1ddb633a993e96571ac6dd61542711f18fa587e774c5b6227.png)。
+总情况数为：6辆车随机停12个车位的情况数为A_12^6。
 
-概率![](assets-fenbi-96455/22c801c98605c4b1fe9c46b04a2550a5db98748025e7af295a6ab2dbdbef3c58.png)![](assets-fenbi-96455/a0b786c729efa61f943d2e72be9c242022aa6577903dd0fc1e9a77ee254cd55d.png)![](assets-fenbi-96455/042da159f71c14128454c7af0de08ee7bb8ffc7bd8785afabb93f3187007f655.png)![](assets-fenbi-96455/1f5b0697b4c19cb54400bb9087f567d6186040668b818b4832827c48e3c216c8.png)；
+概率![](assets-fenbi-96455/22c801c98605c4b1fe9c46b04a2550a5db98748025e7af295a6ab2dbdbef3c58.png)=![](assets-fenbi-96455/042da159f71c14128454c7af0de08ee7bb8ffc7bd8785afabb93f3187007f655.png)=75/154；
 
-B项：分步考虑，第一步从两排中先挑一排，为![](assets-fenbi-96455/b8c0c72b03cdaabb43017f4b3b135c85d3bf9be8e5ed8fe09f6b211914b4dea7.png)；第二步，要求甲乙不相邻使用插空法，除了甲乙停放的两个车位还剩下四个车位，四个车位有5个空，挑两个空停甲和乙，为![](assets-fenbi-96455/ce459effe29b36fd9476f7f4c46dfc8b15829d826a929328d232e271adb410b5.png)；第三步排其他4辆车，剩余10个空车位任选，为![](assets-fenbi-96455/37f6ee2cd3df2c82839c64e91142bdcb2287f4ac37df4e3074b6263d1780f992.png)。根据乘法原理，分步相乘，情况数为![](assets-fenbi-96455/99b6b2f3af4fb039888c2977ea7948f21d296d340b53479fc09d68e5fbb1beab.png)。
+B项：分步考虑，第一步从两排中先挑一排，为C_2^1；第二步，要求甲乙不相邻使用插空法，除了甲乙停放的两个车位还剩下四个车位，四个车位有5个空，挑两个空停甲和乙，为A_5^2；第三步排其他4辆车，剩余10个空车位任选，为A_10^4。根据乘法原理，分步相乘，情况数为![](assets-fenbi-96455/99b6b2f3af4fb039888c2977ea7948f21d296d340b53479fc09d68e5fbb1beab.png)。
 
-总情况数为：6辆车随机停12个车位的情况数为![](assets-fenbi-96455/50441967e52849e1ddb633a993e96571ac6dd61542711f18fa587e774c5b6227.png)。
+总情况数为：6辆车随机停12个车位的情况数为A_12^6。
 
-概率![](assets-fenbi-96455/22c801c98605c4b1fe9c46b04a2550a5db98748025e7af295a6ab2dbdbef3c58.png)![](assets-fenbi-96455/ebc40d70e7d1b4c16d5ac6860a2b0b591d1adf909c0e2b5c3f2a514d009cb7d1.png)![](assets-fenbi-96455/62a8ec99f95df76cc5cd7328e5acf72ddee0445098dfdffc1001439987ca6d37.png)；
+概率![](assets-fenbi-96455/22c801c98605c4b1fe9c46b04a2550a5db98748025e7af295a6ab2dbdbef3c58.png)![](assets-fenbi-96455/ebc40d70e7d1b4c16d5ac6860a2b0b591d1adf909c0e2b5c3f2a514d009cb7d1.png)=10/33；
 
-C项：分步考虑，第一步排甲车，中间四个位置任选，为![](assets-fenbi-96455/29800564199985f64edc281a97a294d09138235174acd9f55a9f7bfa3650304a.png)；第二步排其他5辆车，剩余11个空车位任选，为![](assets-fenbi-96455/f14658df9d0711da06b6e400c9b5275d2aa93e66bdfc4a2a7e7e648acd08d41a.png)。根据乘法原理，分步相乘，情况数为![](assets-fenbi-96455/7615b7f98b67710c6b9d79002c920a06a1871ec44e2eb6685b0d3750e85c29c3.png)。
+C项：分步考虑，第一步排甲车，中间四个位置任选，为C_4^1；第二步排其他5辆车，剩余11个空车位任选，为A_11^5。根据乘法原理，分步相乘，情况数为![](assets-fenbi-96455/7615b7f98b67710c6b9d79002c920a06a1871ec44e2eb6685b0d3750e85c29c3.png)。
 
-总情况数为：6辆车随机停12个车位的情况数为![](assets-fenbi-96455/50441967e52849e1ddb633a993e96571ac6dd61542711f18fa587e774c5b6227.png)。
+总情况数为：6辆车随机停12个车位的情况数为A_12^6。
 
-概率![](assets-fenbi-96455/22c801c98605c4b1fe9c46b04a2550a5db98748025e7af295a6ab2dbdbef3c58.png)![](assets-fenbi-96455/c433e690bff4b1b020e2dd8e47692321b92239b03e400a9a4ba563e64a11bc92.png)![](assets-fenbi-96455/2686093099d3e4a0e67dd37f31774b1d8248ab5bb0d76c06f4895455a6867c50.png)；
+概率![](assets-fenbi-96455/22c801c98605c4b1fe9c46b04a2550a5db98748025e7af295a6ab2dbdbef3c58.png)![](assets-fenbi-96455/c433e690bff4b1b020e2dd8e47692321b92239b03e400a9a4ba563e64a11bc92.png)=1/3；
 
 D项：从反面思考，当甲乙两车停在中间时不符合条件：
 
-分步考虑，第一步先排甲乙两车，8个不靠边车位任选，为![](assets-fenbi-96455/a6fee019c92659baa973de440b6c4c479e6a17a7d9fa290d09aa21c03a49570c.png)；第二步排其他4辆车，剩余10个位置任选，为![](assets-fenbi-96455/37f6ee2cd3df2c82839c64e91142bdcb2287f4ac37df4e3074b6263d1780f992.png)。根据乘法原理，分步相乘，情况数为![](assets-fenbi-96455/8385864080240331443461d2e18cd60bdb11c3b22aa270410aa86f7b4a793586.png)。
+分步考虑，第一步先排甲乙两车，8个不靠边车位任选，为A_8^2；第二步排其他4辆车，剩余10个位置任选，为A_10^4。根据乘法原理，分步相乘，情况数为![](assets-fenbi-96455/8385864080240331443461d2e18cd60bdb11c3b22aa270410aa86f7b4a793586.png)。
 
-总情况数为：6辆车随机停12个车位的情况数为![](assets-fenbi-96455/50441967e52849e1ddb633a993e96571ac6dd61542711f18fa587e774c5b6227.png)。
+总情况数为：6辆车随机停12个车位的情况数为A_12^6。
 
-概率=1-不满足情况概率![](assets-fenbi-96455/2284dbb5e888f260418b9b5c663a0e970128e5cc169dadf06d6d817a7bc82482.png)![](assets-fenbi-96455/a87f23a660041cece3de3178f28c47f7ddb67670324d44da6312641a090fc99b.png)。
+概率=1-不满足情况概率![](assets-fenbi-96455/2284dbb5e888f260418b9b5c663a0e970128e5cc169dadf06d6d817a7bc82482.png)=19/33。
 
 综合以上，概率最低的为B项。
 
@@ -2435,21 +2435,21 @@ D
 
 第一步：翻译题干。
 
-①经济稳健增长![](assets-fenbi-96455/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)该国采取大刀阔斧的举措来根治经济的顽疾；
+①经济稳健增长→该国采取大刀阔斧的举措来根治经济的顽疾；
 
-②-经济稳健增长![](assets-fenbi-96455/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)公共债务不断攀升。
+②-经济稳健增长→公共债务不断攀升。
 
-将②进行逆否：-公共债务不断攀升![](assets-fenbi-96455/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)经济稳健增长，①②可串连为③-公共债务不断攀升![](assets-fenbi-96455/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)经济稳健增长![](assets-fenbi-96455/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)该国采取大刀阔斧的举措来根治经济的顽疾。
+将②进行逆否：-公共债务不断攀升→经济稳健增长，①②可串连为③-公共债务不断攀升→经济稳健增长→该国采取大刀阔斧的举措来根治经济的顽疾。
 
 第二步：逐一分析选项。
 
-A项：翻译为公共债务不断攀升![](assets-fenbi-96455/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)![](assets-fenbi-96455/33c705988fef8a9330e0c1f7e1cfe9dc94a3bcf74dba6561f2ba3c1c0de250c0.png)该国采取大刀阔斧的举措来根治经济的顽疾，是对③的否前，但否前得不到确定性的结论，无法推出，排除；
+A项：翻译为公共债务不断攀升→-该国采取大刀阔斧的举措来根治经济的顽疾，是对③的否前，但否前得不到确定性的结论，无法推出，排除；
 
-B项：翻译为公共债务不断攀升![](assets-fenbi-96455/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)![](assets-fenbi-96455/33c705988fef8a9330e0c1f7e1cfe9dc94a3bcf74dba6561f2ba3c1c0de250c0.png)该国采取大刀阔斧的举措来根治经济的顽疾，是对③的否前，但否前得不到确定性的结论，无法推出，排除；
+B项：翻译为公共债务不断攀升→-该国采取大刀阔斧的举措来根治经济的顽疾，是对③的否前，但否前得不到确定性的结论，无法推出，排除；
 
-C项：翻译为该国采取大刀阔斧的举措来根治经济的顽疾![](assets-fenbi-96455/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)![](assets-fenbi-96455/33c705988fef8a9330e0c1f7e1cfe9dc94a3bcf74dba6561f2ba3c1c0de250c0.png)公共债务不断攀升，是对③的肯后，但肯后得不到确定性的结论，无法推出，排除；
+C项：翻译为该国采取大刀阔斧的举措来根治经济的顽疾→-公共债务不断攀升，是对③的肯后，但肯后得不到确定性的结论，无法推出，排除；
 
-D项：翻译为-公共债务不断攀升![](assets-fenbi-96455/544bf2913692be36321fad649755fd57cd19cf131b3b140919986a3b906c6b3f.png)该国采取大刀阔斧的举措来根治经济的顽疾，是对③的肯前，肯前必肯后，可以推出，当选。
+D项：翻译为-公共债务不断攀升→该国采取大刀阔斧的举措来根治经济的顽疾，是对③的肯前，肯前必肯后，可以推出，当选。
 
 故正确答案为D。
 
@@ -3259,7 +3259,7 @@ C
 
 A项错误，恩格尔系数是食品支出总额占个人消费支出总额的比重。19世纪德国统计学家恩格尔根据统计资料，对消费结构的变化得出的规律，即收入中购买食品的比重越大，生活水平越低，即恩格尔系数越大，生活水平越低；反之，恩格尔系数越小，生活水平越高。
 
-B项错误：参照国际通用原则，根据我国实际情况，中国人民银行将我国货币供应量指标分为以下五个层次：![](assets-fenbi-96455/6b74630121578a2e05891831fa07921fd11cef67c512638c5c467091b4d6ad1c.png)流通中的现金；![](assets-fenbi-96455/5b62a55d03f2719c30e9a6e9fce9b24f43651ae3b157fc8507a9ca87dbc903cd.png)企业活期存款+机关团体部队存款+农村存款+个人持有的信用卡类存款；![](assets-fenbi-96455/6342fc7dc63d0731b4838fbd1617a363948c49c88c15c6366eb1c07eecc9089f.png)城乡居民储蓄存款+企业存款中具有定期性质的存款+外币存款+信托类存款；![](assets-fenbi-96455/9a9337d4cd836a835664aaee8f77de38cc9a2bf34c01abf70c3ded031e84a7e5.png)金融债券+商业票据+大额可转让存单等；![](assets-fenbi-96455/ea3bd59f6ffa6584a88352f220d7e4999f770f6d84d4ba64106fa2f26478ca99.png)其它短期流动资产。其中，![](assets-fenbi-96455/fa7178731ce608e81c364b385d715a959e634fd9015ef986b2392b6494c1d33c.png)是通常所说的狭义货币量，流动性较强，是国家中央银行重点调控对象。![](assets-fenbi-96455/f50a5972e51db3c3a9d1515a39040b5a95df5313b0d3848f6a313db74665c13c.png)是广义货币量，![](assets-fenbi-96455/f50a5972e51db3c3a9d1515a39040b5a95df5313b0d3848f6a313db74665c13c.png)与![](assets-fenbi-96455/fa7178731ce608e81c364b385d715a959e634fd9015ef986b2392b6494c1d33c.png)的差额是准货币，流动性较弱。
+B项错误：参照国际通用原则，根据我国实际情况，中国人民银行将我国货币供应量指标分为以下五个层次：M_0=流通中的现金；![](assets-fenbi-96455/5b62a55d03f2719c30e9a6e9fce9b24f43651ae3b157fc8507a9ca87dbc903cd.png)企业活期存款+机关团体部队存款+农村存款+个人持有的信用卡类存款；![](assets-fenbi-96455/6342fc7dc63d0731b4838fbd1617a363948c49c88c15c6366eb1c07eecc9089f.png)城乡居民储蓄存款+企业存款中具有定期性质的存款+外币存款+信托类存款；![](assets-fenbi-96455/9a9337d4cd836a835664aaee8f77de38cc9a2bf34c01abf70c3ded031e84a7e5.png)金融债券+商业票据+大额可转让存单等；![](assets-fenbi-96455/ea3bd59f6ffa6584a88352f220d7e4999f770f6d84d4ba64106fa2f26478ca99.png)其它短期流动资产。其中，M_1是通常所说的狭义货币量，流动性较强，是国家中央银行重点调控对象。M_2是广义货币量，M_2与M_1的差额是准货币，流动性较弱。
 
 C项正确，基尼系数是指国际上通用的、用以衡量一个国家或地区居民收入差距的常用指标。基尼系数最大为“1”，最小等于“0”。基尼系数越接近0表明收入分配越是趋向平等。国际惯例把0.2以下视为收入绝对平均；0.2-0.3视为收入比较平均；0.3-0.4视为收入差异相对合理；0.4-0.5视为收入差距较大，当基尼系数达到0.5以上时，则表示收入差距悬殊。
 
@@ -3589,7 +3589,7 @@ C
 
 **解析**
 
-根据题干“2017年，亚太地区的清洁能源投资约为······”，结合材料中给出2017年中国的清洁能源投资占全球及亚太地区清洁能源投资的比重，可判定本题为现期比重问题。定位文字材料第一段可得：2017年，全球对清洁能源的投资为3335亿美元，中国的清洁能源投资占全球清洁能源总投资的40%，占亚太地区清洁能源投资的71%。根据比重公式：比重![](assets-fenbi-96455/9cedb878e16baff47f0fd4065081e718cd82cf79ec5b3b6da2b2f72928dfd87a.png)，则中国的清洁能源投资=全球清洁能源总投资×40%=3335×40%=1334亿美元，亚太地区的清洁能源投资![](assets-fenbi-96455/daaec54f28dcba08ec1d82730f60a72e94141bfe9e4bcdd486a3e96ab01cd719.png)![](assets-fenbi-96455/cb66d647e6ed82adc07f471922f3b162cd25183437530c18a43e1301a55df2c3.png)亿美元，与C项最接近，C项当选。
+根据题干“2017年，亚太地区的清洁能源投资约为······”，结合材料中给出2017年中国的清洁能源投资占全球及亚太地区清洁能源投资的比重，可判定本题为现期比重问题。定位文字材料第一段可得：2017年，全球对清洁能源的投资为3335亿美元，中国的清洁能源投资占全球清洁能源总投资的40%，占亚太地区清洁能源投资的71%。根据比重公式：比重=部分/整体，则中国的清洁能源投资=全球清洁能源总投资×40%=3335×40%=1334亿美元，亚太地区的清洁能源投资![](assets-fenbi-96455/daaec54f28dcba08ec1d82730f60a72e94141bfe9e4bcdd486a3e96ab01cd719.png)![](assets-fenbi-96455/cb66d647e6ed82adc07f471922f3b162cd25183437530c18a43e1301a55df2c3.png)亿美元，与C项最接近，C项当选。
 
 故正确答案为C。
 
@@ -3649,7 +3649,7 @@ D
 
 **解析**
 
-根据题干“2017年，······占······比重”，并且问题时间和材料一致，可判定本题为现期比重问题。定位文字材料第二段可得：2017年全球光伏新增装机容量99.1GW，累计装机容量达到404.5GW，亚太地区新增装机容量73.7GW，累计装机容量221.3GW。故亚太地区光伏新增装机容量占全球比重![](assets-fenbi-96455/78f31c1409224402cef632a23d66283440f3ae18baeb432beed55c0b81eb007e.png)![](assets-fenbi-96455/a53cb6ecbf945260da4ed290be472c3c51e61db251c9aa2cc0a7d50284dda062.png)，亚太地区光伏累计装机容量占全球比重![](assets-fenbi-96455/b2862d9081d638d7afb428ccfe32c0a18e2bfcc38523c7f72f339f79dc26b553.png)![](assets-fenbi-96455/f62c16864804be836acef55a542faa1a82ac13259b0b13aa3a87e4efb2368a9b.png)。74%-55%=19%＞10%，所以2017年亚太地区光伏新增装机容量占全球比重比其累计装机容量占全球比重高10个百分点以上，D项当选。
+根据题干“2017年，······占······比重”，并且问题时间和材料一致，可判定本题为现期比重问题。定位文字材料第二段可得：2017年全球光伏新增装机容量99.1GW，累计装机容量达到404.5GW，亚太地区新增装机容量73.7GW，累计装机容量221.3GW。故亚太地区光伏新增装机容量占全球比重=73.7/99.1![](assets-fenbi-96455/a53cb6ecbf945260da4ed290be472c3c51e61db251c9aa2cc0a7d50284dda062.png)，亚太地区光伏累计装机容量占全球比重![](assets-fenbi-96455/b2862d9081d638d7afb428ccfe32c0a18e2bfcc38523c7f72f339f79dc26b553.png)![](assets-fenbi-96455/f62c16864804be836acef55a542faa1a82ac13259b0b13aa3a87e4efb2368a9b.png)。74%-55%=19%＞10%，所以2017年亚太地区光伏新增装机容量占全球比重比其累计装机容量占全球比重高10个百分点以上，D项当选。
 
 故正确答案为D。
 
@@ -3863,17 +3863,17 @@ C
 
 根据题干“2011-2018年，人身险原保险保费收入高于财产险1万亿元以上的年份有几个”，结合材料所给2011年-2018年中国保险行业原保险保费收入及人身险、财产险原保险保费收入占比，判定本题为现期比重问题。定位两个柱状图，根据公式：部分差=整体×比重差，可知：所求差值![](assets-fenbi-96455/9f302ba359d2e95b51e01a77fa07676e8122edfe49cf08dcb2c72cafdf6be163.png)![](assets-fenbi-96455/168b4cb94bb6e616d2d4b65869f8b257a2b17ffe820b7a9a68f8cb7f69c92082.png)。
 
-2011年差值![](assets-fenbi-96455/8a1571443cd95425efa0e695553fb4646cca382369c8159bb2986a2c30d7edca.png)![](assets-fenbi-96455/1d7c724dc29b902a02b3a0a6e17ea57b9d32460b905d57fc855d57de475933d0.png)![](assets-fenbi-96455/49eb38ea8e9dc762af11ef778b15e7568f954e58add954a13afc4f9290f8702e.png)万亿元；
+2011年差值![](assets-fenbi-96455/8a1571443cd95425efa0e695553fb4646cca382369c8159bb2986a2c30d7edca.png)![](assets-fenbi-96455/1d7c724dc29b902a02b3a0a6e17ea57b9d32460b905d57fc855d57de475933d0.png)≈0.51万亿元；
 
-2012年差值![](assets-fenbi-96455/0eca302c7fe1a76c72446a49ba5a09028c7732ed16514460c9260dd7114cd82c.png)![](assets-fenbi-96455/746e200b1e2ad143e0148bc711e4911841e97dc14e530e95b3a73c2799add47d.png)![](assets-fenbi-96455/28aac7db54bbb65648fcafa1e92557ba9978fb74d9168e21262e66a5c1544281.png)万亿元；
+2012年差值![](assets-fenbi-96455/0eca302c7fe1a76c72446a49ba5a09028c7732ed16514460c9260dd7114cd82c.png)![](assets-fenbi-96455/746e200b1e2ad143e0148bc711e4911841e97dc14e530e95b3a73c2799add47d.png)≈0.50万亿元；
 
-2013年差值![](assets-fenbi-96455/58169590be763f7e9d1d59aed317ac865ffa86e1a245e9a1bd1f3ddbaa51a6fd.png)![](assets-fenbi-96455/ae3673c1c211d70442f33e6dcb99d15fec8d4970e57cf9959454e293ba1b7c0e.png)![](assets-fenbi-96455/0d74ba99943765c6d1a254d76830f62e7cc3b9f78f79c03e95e446226ac6b2d0.png)万亿元；
+2013年差值![](assets-fenbi-96455/58169590be763f7e9d1d59aed317ac865ffa86e1a245e9a1bd1f3ddbaa51a6fd.png)![](assets-fenbi-96455/ae3673c1c211d70442f33e6dcb99d15fec8d4970e57cf9959454e293ba1b7c0e.png)≈0.48万亿元；
 
-2014年差值![](assets-fenbi-96455/c155d53ee1b6f654b56330ed46ebb9db85faa7117535f975b1a02dd720394466.png)![](assets-fenbi-96455/0e3b978c775dc0edf43911a27493cfa3c18f51fa4845ed46d16bcbd1463c97b7.png)![](assets-fenbi-96455/c8f0fab66bff812bec9884d0b28dbf38ca49d74e7314582ede8acdfb51fa94e2.png)万亿元；
+2014年差值![](assets-fenbi-96455/c155d53ee1b6f654b56330ed46ebb9db85faa7117535f975b1a02dd720394466.png)![](assets-fenbi-96455/0e3b978c775dc0edf43911a27493cfa3c18f51fa4845ed46d16bcbd1463c97b7.png)≈0.57万亿元；
 
-2015年差值![](assets-fenbi-96455/0651b99510a9cb363a871f8cb8c7268ea8eae49e6418a686278895b80382aa10.png)![](assets-fenbi-96455/2133fda5765383a5657a090b67c0cc086d205e8082df5530133b3a772f560484.png)![](assets-fenbi-96455/a2e20071c805fae82028cbf26dc94bb93358b28a9bdc2e3d907ea7b488a9528f.png)万亿元；
+2015年差值![](assets-fenbi-96455/0651b99510a9cb363a871f8cb8c7268ea8eae49e6418a686278895b80382aa10.png)![](assets-fenbi-96455/2133fda5765383a5657a090b67c0cc086d205e8082df5530133b3a772f560484.png)≈0.83万亿元；
 
-2016年差值![](assets-fenbi-96455/c1d585fe308b6cc46bafbe31f7df8747eb9f733bf7c5fd902faebb95fe92a296.png)![](assets-fenbi-96455/d259e3c6cdd880377afd2bc77ea38160db3c935a74f9a6d15835fd64546781b5.png)![](assets-fenbi-96455/9b7f1c0cfcae6a57c0af85bbd8889636466f36b4e3bc0995f496bd99a456f34a.png)万亿元。
+2016年差值![](assets-fenbi-96455/c1d585fe308b6cc46bafbe31f7df8747eb9f733bf7c5fd902faebb95fe92a296.png)![](assets-fenbi-96455/d259e3c6cdd880377afd2bc77ea38160db3c935a74f9a6d15835fd64546781b5.png)≈1.36万亿元。
 
 又因2017年、2018年原保险保费收入均大于2016年（3.09万亿元），比重差不小于2016年比重差（44%），则2017年、2018年差值均大于2016年差值（1.36万亿元），故人身险原保险保费收入高于财产险1万亿元以上的年份有2016年、2017年、2018年，对应C项。
 
@@ -3905,9 +3905,9 @@ A
 
 **解析**
 
-A项：定位柱状图可知，2017年中国保险行业原保险保费收入为3.66万亿元，人身险占比为73%，根据公式“部分=整体×比重”可得，2017年人身险原保险保费收入![](assets-fenbi-96455/968f672a7067f5b39170b32a1d806b8f3e5be4dda1f67fb6ee151f03af35c135.png)万亿元；定位文字材料部分可知，2018年人身险原保险保费收入为27246.54亿元，即约为2.72万亿元，根据公式![](assets-fenbi-96455/2208f7eb485836e703de6d1cc6be430577272ecb1ecf93a7a8052b19e9e19028.png)，所求![](assets-fenbi-96455/900f6a92737bbc15529cb9086c5534977588e1c8ebd6fc1dd4ac4b9a63aa2f90.png)![](assets-fenbi-96455/9b381e4a2f71c05e6c68dfa7e4f2be81cc6e73b659f0f67b0b742ebaf67ad68b.png)![](assets-fenbi-96455/4eef0bd98f976156eeb788888b4a397717e6483d9aa602cecce5679dcd05c0da.png)，正确；
+A项：定位柱状图可知，2017年中国保险行业原保险保费收入为3.66万亿元，人身险占比为73%，根据公式“部分=整体×比重”可得，2017年人身险原保险保费收入![](assets-fenbi-96455/968f672a7067f5b39170b32a1d806b8f3e5be4dda1f67fb6ee151f03af35c135.png)万亿元；定位文字材料部分可知，2018年人身险原保险保费收入为27246.54亿元，即约为2.72万亿元，根据公式![](assets-fenbi-96455/2208f7eb485836e703de6d1cc6be430577272ecb1ecf93a7a8052b19e9e19028.png)，所求7![](assets-fenbi-96455/9b381e4a2f71c05e6c68dfa7e4f2be81cc6e73b659f0f67b0b742ebaf67ad68b.png)![](assets-fenbi-96455/4eef0bd98f976156eeb788888b4a397717e6483d9aa602cecce5679dcd05c0da.png)，正确；
 
-B项：定位柱状图可知，2011～2018年中国保险行业原保险保费收入及财产险占比，根据公式“部分=整体×比重”可得，2018年财产险业务原保险保费收入![](assets-fenbi-96455/c0c5a0021c24e4a817abbae869cf9d5b85db7a6a5eb144a32b2d4a010970b3a0.png)![](assets-fenbi-96455/a6c58ce02aadad517d9d280c24493ef3bd01e2a9507c12607bb31362c84da909.png)万亿元>1万亿元，错误；
+B项：定位柱状图可知，2011～2018年中国保险行业原保险保费收入及财产险占比，根据公式“部分=整体×比重”可得，2018年财产险业务原保险保费收入![](assets-fenbi-96455/c0c5a0021c24e4a817abbae869cf9d5b85db7a6a5eb144a32b2d4a010970b3a0.png)≈1.06万亿元>1万亿元，错误；
 
 C项：定位文字材料可知，2018年，意外险业务原保险保费收入1075.55亿元，同比增长19.33%，则2018年意外险业务原保险保费收入比上年增长的量![](assets-fenbi-96455/70c03bf25528fe64d6c7eb4279180197b5997ffe269b26ae97b33224e365b1c7.png)![](assets-fenbi-96455/014142dc76233200641cd8580884b0968af0fc5c2e18260f08e49c80e9a42ad8.png)![](assets-fenbi-96455/8a1e2c5989e28593a36fe496d022b759e88760026d29b84f62cc080c65d41bb4.png)![](assets-fenbi-96455/3600023631ad45c4becdb781354d4fec863f010615a9bf98314d59004e943e27.png)亿元，并非增长200多亿元，错误；
 

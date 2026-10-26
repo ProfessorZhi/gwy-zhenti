@@ -15,7 +15,7 @@
 # 2008年江苏省公务员录用考试《行测》题（C类）
 
 <!-- gwy:overview:start -->
-> **江苏 · 2008 · 行测 · C类** ｜ 100 题 · 图片 104 处 · 答案随题折叠
+> **江苏 · 2008 · 行测 · C类** ｜ 100 题 · 图片 102 处 · 答案随题折叠
 
 | 题型模块 | 题量 | 题号 |
 | --- | ---: | ---: |
@@ -458,7 +458,7 @@ D
 
 解析1：
 
-因为![](assets-fenbi-83/58d4d39643bd1aeadb6883fba5fc395489e6eb9afb2a7a68933f091cecca2ae0.png)，所以圆的半径为![](assets-fenbi-83/a25a92eaa08e01c47d1a47ae468d75a101e42c0109d27413cabf59b65a3d24ab.png)，如下图所示，设圆内接长方形边为a，b，根据圆的性质有![](assets-fenbi-83/b07f9fd56c4b3e5a10da5de031d6642235b3f004de16eef69892964acaa17411.png)，![](assets-fenbi-83/cb87b8d7761c88d5a1acac07227949be34bf7f53819e402a3ab373ebf2ffaaf4.png)，则长方形面积![](assets-fenbi-83/4aab8921f5ab97e7af42a3de03ae18c65c94bef8010eba9468de760017840b6f.png)。
+因为![](assets-fenbi-83/58d4d39643bd1aeadb6883fba5fc395489e6eb9afb2a7a68933f091cecca2ae0.png)，所以圆的半径为√2，如下图所示，设圆内接长方形边为a，b，根据圆的性质有![](assets-fenbi-83/b07f9fd56c4b3e5a10da5de031d6642235b3f004de16eef69892964acaa17411.png)，![](assets-fenbi-83/cb87b8d7761c88d5a1acac07227949be34bf7f53819e402a3ab373ebf2ffaaf4.png)，则长方形面积![](assets-fenbi-83/4aab8921f5ab97e7af42a3de03ae18c65c94bef8010eba9468de760017840b6f.png)。
 
 ![](assets-fenbi-83/ef18dd20e981ddb9b5bc12e4a8b0505d49c91dcbcc1835a30d5a50fcaf2f9687.png)
 
@@ -1980,7 +1980,7 @@ B
 
 第一步：翻译题干。
 
-题干可翻译为：A、B比C、D好，即A比C、D好，B也比C、D好。经过转化可知：A比D好 且 （  ）![](assets-fenbi-83/8c02f1cd03c4cc594db19928f605023432531749a0f37b8d70b71a6053e54ad7.png)E比D好。
+题干可翻译为：A、B比C、D好，即A比C、D好，B也比C、D好。经过转化可知：A比D好 且 （  ）→E比D好。
 
 第二步：根据题干补充前提。
 
