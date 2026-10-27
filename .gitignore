@@ -1,0 +1,7 @@
+out/*.json
+out/*.jsonl
+out/candidates.txt
+!out/.keep
+__pycache__/
+*.pyc
+tmp/
