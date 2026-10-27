@@ -1,6 +1,6 @@
 # 报表索引（reports/）
 
-> 快照：2026-10-27。本目录共 **30 份报表 .md**（根目录 29 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
+> 快照：2026-10-27。本目录共 **32 份报表 .md**（根目录 31 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
 > 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。本页只做入口和状态索引，**不改写、不移动任何报表**。
 
 **状态口径**
@@ -30,6 +30,8 @@
 | [MISSING-QUESTIONS-AUDIT-20261027.md](MISSING-QUESTIONS-AUDIT-20261027.md) | 10-27 | 291 个缺题题位（64 卷）全部是粉笔源侧「题目正在全力以赴征集」占位：`cache-has-it` 0、`off-by-index` 0、`source-absent` 291，无题可离线补。 | **现行** |
 | [SLOT-AUDIT-20261027.md](SLOT-AUDIT-20261027.md) | 10-27 | 槽位与同槽复核：政策范围内空白槽位 **0**（旧「41」实为 34 个行测标签别名槽 + 7 条 2027 模考条目）；95 组同槽多文件判为重复 71 / 不同卷 23 / 混合 1 / 存疑 0；四川 2017 申论 `78982` 身份待现场核。 | **现行** |
 | [fix-b1-8papers-20261022/RECEIPT.md](fix-b1-8papers-20261022/RECEIPT.md) | 10-22 | 八卷（四川2016–18、深圳2025、重庆2016–19）裸 `<` 转义、来源字段与 manifest 修复回执，含逐题指纹核验和深圳2025 q56↔q52 裁定。 | **现行**（已由 #122 合入）；§9 合并状态已过期 |
+| [GAP-VS-VERIFY-20261027.md](GAP-VS-VERIFY-20261027.md) | 10-27 | 内容缺失（清单 A）与验证待办（清单 B）分开记：A1 答案缺 71 卷 402 题、A2 申论材料（19 卷 114 则已补，剩 2 卷残卷 + 河南 2018 无原件）、A3 未取得原件 23 卷；B1 人工验收 0/1,850。 | **现行** |
+| [ACCEPTANCE-PROTOCOL-20261027.md](ACCEPTANCE-PROTOCOL-20261027.md) | 10-27 | 三层验收口径：L1 结构自洽全库跑完（1,758 过 + 92 卷全归因）、L2 来源一致全量跑完（1,257 卷 / 63,151 题，四类硬缺口 0）、L3 人工通读待做。 | **现行** |
 
 ## 2. 材料与排版
 
@@ -93,7 +95,7 @@
 | 9 | [QUALITY-AUDIT.md](QUALITY-AUDIT.md) 第 4 行 | “正文文件 1291 份” | 现为 1,422 份；告警条目仍需按新清单重生成。 |
 | 10 | [fix-b1-8papers-20261022/RECEIPT.md](fix-b1-8papers-20261022/RECEIPT.md) 第 5、9 行 | “基点：af24084a9（= 当前 main HEAD，未改动）”“合并状态：**未合并**” | 该修复已由 **#122（8ffafc8fa，2026-10-23）合入**，且 8ffafc8fa 是当前 HEAD 的祖先；`af24084a9` 已不是当前 main HEAD。 |
 | 11 | [fix-b1-8papers-20261022/RECEIPT.md](fix-b1-8papers-20261022/RECEIPT.md) 第 97 行 | “行数不变（1291）” | 该回执写于 1291 行基线；当前清单为 1,422 行。 |
-| 12 | [SOURCED-SUPPLEMENT-20261013.md](SOURCED-SUPPLEMENT-20261013.md) 第 11 行 | “仍缺已识别完整答文位置 \| 451” | 10-22 第二阶段 AI 回退后该口径为 **475**；451 已不是最新值。 |
+| 12 | [SOURCED-SUPPLEMENT-20261013.md](SOURCED-SUPPLEMENT-20261013.md) 第 11 行 | “仍缺已识别完整答文位置”一栏记的 451 | 10-22 第二阶段 AI 回退后该口径为 **475**；451 已不是最新值。 |
 
 **口径说明**
 
