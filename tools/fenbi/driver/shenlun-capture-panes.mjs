@@ -494,6 +494,14 @@ try {
       otherSections: others.map((section) => ({
         title: section.title, textLen: section.textLen, nonEmpty: section.textLen > section.title.length + 2, htmlSha: sha256(section.html),
       })),
+      // otherSections 刻意只留标题/长度/哈希（见 src/shenlun.mjs 的说明），不能被当成解析正文。
+      // 但解析正文确实在这类区块里，所以另开一个显式字段：下游只认「要落解析」时才读，
+      // 且必须与 otherSections 的标题/哈希对得上，避免把导航条当成解析。
+      analysisSections: others
+        .filter((section) => /解析|文章分析|范文分析|参考作答说明|参考答案说明/u.test(section.title))
+        .map((section) => ({
+          title: section.title, textLen: section.textLen, htmlSha: sha256(section.html), html: section.html,
+        })),
     };
   });
 

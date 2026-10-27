@@ -34,8 +34,12 @@ def nz(text):
     text = re.sub(r'\\([\\`*_{}\[\]()#+\-.!>|~])', r'\1', text)
     text = re.sub(r'!\[[^\]]*\]\([^)]*\)', ' ', text)
     text = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', text)
-    text = re.sub(r'<[^>]+>', ' ', text)
+    # 先解实体再去标签，标签只认「<字母 … >」且中间不含另一个 <。
+    # 否则「290<M<300」这种题干里的比较号会被当成标签，连同后文一起吃掉
+    # （重庆 2024 行测-选调生第 54 题、山东 2022 行测第 21 题的「《…建议》」都是这么丢的）。
     text = html.unescape(text)
+    text = re.sub(r'<!--.*?-->', ' ', text, flags=re.S)
+    text = re.sub(r'</?[a-zA-Z][^<>]*>', ' ', text)
     text = unicodedata.normalize('NFKC', text)
     text = re.sub(r'[^0-9A-Za-z一-鿿]', '', text)
     # 选项字母在两侧的位置不同，先把孤立的 A-H 去掉再比。
@@ -60,10 +64,16 @@ def md_questions(body):
 
 
 def md_answers(body):
-    """答案区：每个 `<details><summary>第 N 题</summary>` 的内容。"""
+    """答案区：每个 `<details><summary>第 N 题 · 答案与解析</summary>` 的内容。
+
+    答案块现行写法是「题下内联折叠」，全库 90,845 个块统一为
+    `<summary>第 N 题 · 答案与解析</summary>`，没有独立的「## 答案与解析」章节；
+    只有佐证版卷才带该章节标题（且章节内无答案）。所以没有标题时要在全文里找，
+    有标题时从标题之后找，summary 的「题」后面允许有后缀文字。
+    """
     cut = re.search(r'\n##\s*答案与解析', body)
-    seg = body[cut.end():] if cut else ''
-    parts = re.split(r'<details><summary>\s*第\s*(\d+)\s*题\s*</summary>', seg)
+    seg = body[cut.end():] if cut else body
+    parts = re.split(r'<details><summary>\s*第\s*(\d+)\s*题[^<]*</summary>', seg)
     out = {}
     for i in range(1, len(parts), 2):
         block = parts[i + 1]
@@ -73,7 +83,9 @@ def md_answers(body):
 
 
 def split_explanation(block):
-    match = re.search(r'\*\*解析\*\*', block)
+    # 行测解析区的标签有两种：「**解析**」与「**官方解析**」（须先用圆括号的可选前缀，
+    # 否则 `\*\*解析\*\*` 匹配不到 `**官方解析**`，整卷解析会被判成缺失）。
+    match = re.search(r'\*\*(?:官方)?解析\*\*', block)
     return (block[:match.start()], block[match.end():]) if match else (block, '')
 
 
@@ -98,6 +110,50 @@ def images_in_md(text):
 
 def images_in_html(text):
     return re.findall(r'<img[^>]+src=["\']([^"\']+)', text or '')
+
+
+SUBJECT_OF = {'xingce': '行测', 'shenlun': '申论'}
+# 粉笔的分类里「选调生」「公安招警和公检法」是 area 桶，仓库按省份记 area、
+# 把这两类记在卷型里，只是命名不同，不比 area。
+# 其余 area（含深圳、广州、新疆兵团、国考）两边同名，照比。
+AREA_BUCKETS = {'选调生', '公安招警和公检法'}
+
+
+def identity_of(document):
+    """采集文档自称的「地区／年份／科目」，用于比对前先确认是不是同一份卷。
+
+    不先验身份就比正文，会把「同一 sid 被两卷引用」的错配当成内容失真：
+    国考 2009 行测（140 题）对上一份 4 题申论文档时，会报 136 处缺题。
+    """
+    ident = document.get('identity') or {}
+    subject = ident.get('subject') or document.get('subject')
+    return {'area': ident.get('area'), 'year': ident.get('year'),
+            'subject': SUBJECT_OF.get(subject, subject),
+            'title': ident.get('title') or ''}
+
+
+def is_joint_exam(*titles):
+    """联考共用一套题，粉笔按其中一个省归档，仓库按拆分后的省份记 area。
+    西藏 2016 就是这么来的：仓库标西藏，缓存标广西，标题同为「2016年423联考」。
+    """
+    return any('联考' in (t or '') for t in titles)
+
+
+def paper_title(text):
+    match = re.search(r'^#\s+(.+)$', text, re.M)
+    return match.group(1).strip() if match else ''
+
+
+def identity_conflict(record, ident, title_text=''):
+    if (ident['area'] and ident['area'] not in AREA_BUCKETS
+            and record.get('area') and ident['area'] != record['area']
+            and not is_joint_exam(title_text, ident.get('title'))):
+        return f"地区 {record['area']} ≠ 缓存 {ident['area']}"
+    if ident['year'] and record.get('year') and str(ident['year']) != str(record['year']):
+        return f"年份 {record.get('year')} ≠ 缓存 {ident['year']}"
+    if ident['subject'] and record.get('subject') and ident['subject'] != record['subject']:
+        return f"科目 {record['subject']} ≠ 缓存 {ident['subject']}"
+    return None
 
 
 def find_document(work, sid):
@@ -156,7 +212,8 @@ def audit_paper(manifest_row, document, where):
     # 题面区的图片数（答案区单独计）
     split = body.find('## 答案与解析')
     state['img_md'] += len(re.findall(r'!\[[^\]]*\]\(([^)]+)\)', body[:split] if split > 0 else body))
-    state['img_src'] += sum(len(images_in_html(m.get('contentHtml') or ''))
+    # 材料正文的键名是 `html`（不是题目的 `contentHtml`），两种都试。
+    state['img_src'] += sum(len(images_in_html(m.get('contentHtml') or m.get('html') or ''))
                             for m in document.get('materials') or [])
     for question in questions:
         number = question['number']
@@ -197,7 +254,10 @@ def audit_paper(manifest_row, document, where):
             if not source_explanation:
                 state['ans_miss'].append(number)
             elif cover(source_answer, source_explanation) < 0.9:
-                state['ans_low'].append((number, round(cover(source_answer, source_explanation), 3)))
+                # 申论参考答案里的「参考答案说明」常被渲染到解析区，是有意的版式切分，
+                # 不是丢内容：按「答案区 + 解析区」合并再判一次，仍不足才记低覆盖。
+                if cover(source_answer, source_explanation + nz(md_explanation)) < 0.9:
+                    state['ans_low'].append((number, round(cover(source_answer, source_explanation), 3)))
         source_expl, md_expl = nz(explanation_tail(explanation_html)), nz(md_explanation)
         if source_expl:
             if not md_expl:
@@ -217,9 +277,11 @@ def main():
     parser.add_argument('--manifest', default=os.path.join(ROOT, 'catalog/manifest.jsonl'))
     parser.add_argument('--work', required=True, help='采集工作区（含 papers/ 与 shenlun-capture/）')
     parser.add_argument('--out', help='逐卷明细写到该路径')
+    parser.add_argument('--ignore-identity', action='store_true',
+                        help='不校验缓存文档的地区/年份/科目（默认校验，不符的卷单列）')
     args = parser.parse_args()
 
-    rows, nocache = [], []
+    rows, nocache, conflicts = [], [], []
     with open(args.manifest, encoding='utf-8') as handle:
         for line in handle:
             if not line.strip():
@@ -235,6 +297,12 @@ def main():
             if not document:
                 nocache.append((record['path'], match.group(1)))
                 continue
+            ident = identity_of(document)
+            conflict = identity_conflict(record, ident, paper_title(text))
+            if conflict and not args.ignore_identity:
+                conflicts.append({'path': record['path'], 'sid': match.group(1),
+                                  'where': where, 'conflict': conflict, 'cached': ident})
+                continue
             state = audit_paper(record, document, where)
             if state:
                 state['sid'] = match.group(1)
@@ -244,14 +312,15 @@ def main():
     for row in rows:
         for key in COUNTERS:
             totals[key] += row[key + '_n']
-    print(f'核卷 {len(rows)} · 无缓存 {len(nocache)}')
+    print(f'核卷 {len(rows)} · 无缓存 {len(nocache)} · 身份不符 {len(conflicts)}')
     print(dict(totals))
     print('图片 源', sum(r['img_src'] for r in rows), 'md', sum(r['img_md'] for r in rows))
     print('HTML残留卷', sum(1 for r in rows if r['html_residue']))
     print('材料数不符卷', sum(1 for r in rows if r['mat_src'] and r['mat_src'] != r['mat_md']))
     if args.out:
         with open(args.out, 'w', encoding='utf-8') as handle:
-            json.dump({'rows': rows, 'nocache': nocache}, handle, ensure_ascii=False)
+            json.dump({'rows': rows, 'nocache': nocache, 'identity_conflicts': conflicts},
+                      handle, ensure_ascii=False)
         print('已写入', args.out)
     return 0
 
