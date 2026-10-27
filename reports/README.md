@@ -1,6 +1,6 @@
 # 报表索引（reports/）
 
-> 快照：2026-10-26。本目录共 **24 份报表 .md**（根目录 23 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
+> 快照：2026-10-27。本目录共 **30 份报表 .md**（根目录 29 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
 > 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。本页只做入口和状态索引，**不改写、不移动任何报表**。
 
 **状态口径**
@@ -26,6 +26,9 @@
 | [PAPER-MISSING-SOURCE-CHECK-20261011.md](PAPER-MISSING-SOURCE-CHECK-20261011.md) | 10-11 | 上述 9 个缺号的查源记录；明确不拿“暂缺/默认 A”补答案，也不拿乡镇卷顶县级卷。 | **现行** |
 | [ROUND3-XINGCE-SOURCE-CHECK-20261012.md](ROUND3-XINGCE-SOURCE-CHECK-20261012.md) | 10-12 | 第三轮 18 个行测缺号的公开候选核查（浙江 2、江苏2024A 4、江苏2025C 12），并记录当轮申论交付验收。 | **现行**（缺号结论）；全库计数已过期 |
 | [ANSWER-GAP-AUDIT-20261026.md](ANSWER-GAP-AUDIT-20261026.md) | 10-26 | 全库行测 742 卷 / 86,867 题逐题判「有没有答案」：答案行缺失 0、空值 0；仅 64 卷 291 题在粉笔页面本身就是「全力以赴征集」占位，现场复核 7 卷题号逐一吻合。 | **现行** |
+| [ANSWER-GAP-AUDIT-20261027.md](ANSWER-GAP-AUDIT-20261027.md) | 10-27 | 26 份「整卷无答案」逐卷核对：21 份粉笔同卷可整卷对应（11 份已补，10 份是从属佐证版不重复抄录）、1 份部分可补、4 份粉笔目录里根本没有该卷。 | **现行** |
+| [MISSING-QUESTIONS-AUDIT-20261027.md](MISSING-QUESTIONS-AUDIT-20261027.md) | 10-27 | 291 个缺题题位（64 卷）全部是粉笔源侧「题目正在全力以赴征集」占位：`cache-has-it` 0、`off-by-index` 0、`source-absent` 291，无题可离线补。 | **现行** |
+| [SLOT-AUDIT-20261027.md](SLOT-AUDIT-20261027.md) | 10-27 | 槽位与同槽复核：政策范围内空白槽位 **0**（旧「41」实为 34 个行测标签别名槽 + 7 条 2027 模考条目）；95 组同槽多文件判为重复 71 / 不同卷 23 / 混合 1 / 存疑 0；四川 2017 申论 `78982` 身份待现场核。 | **现行** |
 | [fix-b1-8papers-20261022/RECEIPT.md](fix-b1-8papers-20261022/RECEIPT.md) | 10-22 | 八卷（四川2016–18、深圳2025、重庆2016–19）裸 `<` 转义、来源字段与 manifest 修复回执，含逐题指纹核验和深圳2025 q56↔q52 裁定。 | **现行**（已由 #122 合入）；§9 合并状态已过期 |
 
 ## 2. 材料与排版
@@ -48,6 +51,7 @@
 | [QUALITY-REPAIR-20261013-R7.md](QUALITY-REPAIR-20261013-R7.md) | 10-13 | 第七轮：738 份申论逐卷验收，缺完整答案/范文 592，新增来源文本 15 段。 | **历史**（最新申论全库轮次；计数停在 10-13） |
 | [SOURCED-SUPPLEMENT-20261013.md](SOURCED-SUPPLEMENT-20261013.md) | 10-13 | 来源补录：51 份补 117 处现成参考作答，新增 AI 答文 0；缺答位 451。 | **历史**（10-22 回退后为 475） |
 | [SHENLUN-FANWEN-SOURCING-20261013.md](SHENLUN-FANWEN-SOURCING-20261013.md) | 10-13 | 申论参考作答/范文收录口径，以及 5 个同题候选（浙江2025A/2026A、江苏2026B）。 | **现行**（口径）；候选未全部落地 |
+| [SHENLUN-SOURCE-AUDIT-20261027.md](SHENLUN-SOURCE-AUDIT-20261027.md) | 10-27 | 577 份新增申论 + 39 份复核逐题对源：真缺陷 8 题（已补）；解析三分类——134 卷 408 题中 49 题源端有文字解析且仓库 49/49 全覆盖、359 题源端本就只有答案与答案解析图；江苏 2026 申论B 与西藏 2019 第4题判粉笔未收录；全仓图片引用 19,907 处断图 0。 | **现行** |
 | [NEW-EXTERNAL-SHENLUN-SOURCES-20261013.md](NEW-EXTERNAL-SHENLUN-SOURCES-20261013.md) | 10-13 | 2 篇署名作者同题原稿的外链登记，未复制成本库完整答案。 | **现行**（外链登记） |
 
 ## 4. 图片来源与图片完整性
