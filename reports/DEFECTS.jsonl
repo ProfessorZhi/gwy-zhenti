@@ -2,9 +2,7 @@
 {"area": "上海", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "行政执法卷", "path": "省考/上海/2017/申论-行政执法卷.md", "subject": "申论", "year": "2017"}
 {"area": "上海", "current_truncated_questions": null, "issues": ["解析公式尚待核验"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/上海/2017/行测-统考.md", "subject": "行测", "year": "2017"}
 {"area": "上海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "行政执法", "path": "省考/上海/2018/行测-行政执法.md", "subject": "行测", "year": "2018"}
-{"area": "上海", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "行政执法卷", "path": "省考/上海/2019/申论-行政执法卷.md", "subject": "申论", "year": "2019"}
 {"area": "上海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "行政执法", "path": "省考/上海/2019/行测-行政执法.md", "subject": "行测", "year": "2019"}
-{"area": "上海", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "行政执法卷", "path": "省考/上海/2020/申论-行政执法卷.md", "subject": "申论", "year": "2020"}
 {"area": "上海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "B类", "path": "省考/上海/2021/行测-B类.md", "subject": "行测", "year": "2021"}
 {"area": "上海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "行政执法", "path": "省考/上海/2021/行测-行政执法.md", "subject": "行测", "year": "2021"}
 {"area": "上海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "A类", "path": "省考/上海/2023/行测-A类.md", "subject": "行测", "year": "2023"}
@@ -40,19 +38,13 @@
 {"area": "宁夏", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/宁夏/2026/行测-统考.md", "subject": "行测", "year": "2026"}
 {"area": "山东", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/山东/2022/行测-统考.md", "subject": "行测", "year": "2022"}
 {"area": "山东", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "B卷", "path": "省考/山东/2024/申论-B卷.md", "subject": "申论", "year": "2024"}
-{"area": "山东", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "C卷", "path": "省考/山东/2025/申论-C卷.md", "subject": "申论", "year": "2025"}
 {"area": "山东", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/山东/2025/行测-统考.md", "subject": "行测", "year": "2025"}
 {"area": "山西", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "乡镇", "path": "省考/山西/2018/申论-乡镇.md", "subject": "申论", "year": "2018"}
 {"area": "山西", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "乡镇", "path": "省考/山西/2019/申论-乡镇.md", "subject": "申论", "year": "2019"}
 {"area": "山西", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "县乡", "path": "省考/山西/2022/申论-县乡.md", "subject": "申论", "year": "2022"}
 {"area": "山西", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "省市", "path": "省考/山西/2022/申论-省市.md", "subject": "申论", "year": "2022"}
-{"area": "广州", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "单卷", "path": "省考/广东/2016/申论-广州市考.md", "subject": "申论", "year": "2016"}
 {"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/广东/2016/行测-广州市考.md", "subject": "行测", "year": "2016"}
-{"area": "广州", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "单考区", "path": "省考/广东/2017/申论-广州市考-单考区.md", "subject": "申论", "year": "2017"}
-{"area": "广州", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "双考区", "path": "省考/广东/2017/申论-广州市考-双考区.md", "subject": "申论", "year": "2017"}
 {"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "单考区卷", "path": "省考/广东/2017/行测-广州市考-单考区.md", "subject": "行测", "year": "2017"}
-{"area": "广州", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月24日", "path": "省考/广东/2018/申论-广州市考-3月24日.md", "subject": "申论", "year": "2018"}
-{"area": "广州", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月25日", "path": "省考/广东/2018/申论-广州市考-3月25日.md", "subject": "申论", "year": "2018"}
 {"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月24日", "path": "省考/广东/2018/行测-广州市考-3月24日.md", "subject": "行测", "year": "2018"}
 {"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月25日", "path": "省考/广东/2018/行测-广州市考-3月25日.md", "subject": "行测", "year": "2018"}
 {"area": "广东", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "县级卷", "path": "省考/广东/2020/行测-县级卷.md", "subject": "行测", "year": "2020"}
@@ -61,7 +53,6 @@
 {"area": "广西", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/广西/2025/行测-统考.md", "subject": "行测", "year": "2025"}
 {"area": "广西", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/广西/2026/行测-统考.md", "subject": "行测", "year": "2026"}
 {"area": "新疆", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "兵团", "path": "省考/新疆/2017/行测-兵团.md", "subject": "行测", "year": "2017"}
-{"area": "新疆", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "下半年", "path": "省考/新疆/2018/申论-下半年.md", "subject": "申论", "year": "2018"}
 {"area": "新疆", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "县级", "path": "省考/新疆/2019/申论-县级.md", "subject": "申论", "year": "2019"}
 {"area": "新疆", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "兵团", "path": "省考/新疆/2019/行测-兵团.md", "subject": "行测", "year": "2019"}
 {"area": "新疆", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/新疆/2021/行测-统考.md", "subject": "行测", "year": "2021"}
@@ -125,12 +116,11 @@
 {"area": "青海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/青海/2026/行测-统考.md", "subject": "行测", "year": "2026"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "C卷：县乡", "path": "省考/黑龙江/2016/申论-C卷：县乡.md", "subject": "申论", "year": "2016"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "省市", "path": "省考/黑龙江/2017/申论-省市.md", "subject": "申论", "year": "2017"}
-{"area": "黑龙江", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/黑龙江/2017/申论-统考.md", "subject": "申论", "year": "2017"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "省直", "path": "省考/黑龙江/2018/申论-省直.md", "subject": "申论", "year": "2018"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/黑龙江/2018/申论-统考.md", "subject": "申论", "year": "2018"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "边境县", "path": "省考/黑龙江/2019/行测-边境县-shangantong.md", "subject": "行测", "year": "2019"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "乡镇", "path": "省考/黑龙江/2021/申论-乡镇.md", "subject": "申论", "year": "2021"}
-{"area": "黑龙江", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "省级", "path": "省考/黑龙江/2021/申论-省级.md", "subject": "申论", "year": "2021"}
+{"area": "黑龙江", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "省级", "path": "省考/黑龙江/2021/申论-省级.md", "subject": "申论", "year": "2021"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "县乡", "path": "省考/黑龙江/2022/申论-县乡.md", "subject": "申论", "year": "2022"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["已核实部分或全部参考答案未收录", "答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "省级", "path": "省考/黑龙江/2022/申论-省级.md", "subject": "申论", "year": "2022"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "公安", "path": "省考/黑龙江/2024/行测-公安.md", "subject": "行测", "year": "2024"}

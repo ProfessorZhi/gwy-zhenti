@@ -182,15 +182,15 @@
   "confirmed_missing_original_questions": 0,
   "current_truncated_files": 0,
   "current_truncated_questions": 0,
-  "files_with_machine_flags": 138,
+  "files_with_machine_flags": 128,
   "forbidden_tracked_files": [],
   "hard_integrity_errors": [],
   "historical_truncated_files": 68,
   "historical_truncated_questions": 140,
   "image_decode_check_performed": false,
   "image_decode_errors": [],
-  "image_references": 19493,
-  "inventory_sha256": "5c3aa0ba2b043b1a32adc929770a62d07d41a3e075479c63bf8cf29d9c75c0fc",
+  "image_references": 19499,
+  "inventory_sha256": "91785bcf431686acff288e01e3836fb8792c5e5f9f58e54c71cb700db633ff5e",
   "missing_image_references": 0,
   "paper_files": 1850,
   "placeholder_files": 41,
@@ -204,6 +204,6 @@
     "申论": 1108,
     "行测": 742
   },
-  "unique_referenced_images": 19301,
+  "unique_referenced_images": 19306,
   "whole_paper_acceptance": "not_established_by_structural_checks"
 }
