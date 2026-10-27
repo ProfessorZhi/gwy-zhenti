@@ -90,9 +90,16 @@ export function markdown(html, assets = [], imagePrefix = 'assets', baseUrl = 'h
 // 申论的 explanationHtml 常把「参考答案说明」和「考点 / 来源 / 视频入口说明」放在一起，
 // 前者已经随参考答案渲染在答案区，整段照搬会重复。这里只保留从「考点」开始的部分。
 const KAODIAN_START = /<p[^>]*>\s*<strong>\s*考点\s*<\/strong>/iu;
+// 另一种形态是「文章分析 / 范文分析」：整段是带【标题的优点：…】批注的范文，是粉笔解析区
+// 的真正正文（题干是文章写作题时尤其常见）。它必须整段保留——只切「考点」会把解析区清空，
+// 卷面就落成「解析状态：unknown」，读者看到的是「来源未提供」。文章分析排在考点之前时，
+// 从文章分析开始切；没有文章分析才退回考点切法。
+const ARTICLE_START = /<p[^>]*>\s*<(?:strong|b)[^>]*>\s*(?:文章分析|范文分析)\s*<\/(?:strong|b)>/iu;
 export function explanationFragment(html) {
   const source = String(html ?? '');
-  const at = source.search(KAODIAN_START);
+  const article = source.search(ARTICLE_START);
+  const kaodian = source.search(KAODIAN_START);
+  const at = article >= 0 && (kaodian < 0 || article < kaodian) ? article : kaodian;
   const fragment = at >= 0 ? source.slice(at) : source;
   // 题库 DOM 把标签文字也并进了值里：「考点提出对策类」「来源2016年…」
   return fragment

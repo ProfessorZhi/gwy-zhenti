@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { escapeStrayLt, markdown } from '../src/render.mjs';
+import { escapeStrayLt, explanationFragment, markdown } from '../src/render.mjs';
 
 test('prose "<" is escaped so downstream tag splitting cannot swallow the body', () => {
   assert.equal(escapeStrayLt('占比<72%'), '占比&lt;72%');
@@ -43,4 +43,29 @@ test('markdown() keeps genuine images while escaping the prose around them', () 
   const out = markdown('<p>占比<10%</p><p><img src="https://fb.fbstatic.cn/a.png"></p>', assets, 'assets', 'https://spa.fenbi.com/');
   assert.ok(out.includes('&lt;10%'), out);
   assert.ok(/!\[\]\(assets\/a\.png\)/u.test(out), out);
+});
+
+test('申论文章分析类解析整段保留，不被「考点」切法清空', () => {
+  const html = '<p><b>文章分析</b></p><p>范文正文</p><p>【标题的优点：紧扣主题】</p>'
+    + '<p><strong>考点</strong>：考点文章写作题</p><p><strong>来源</strong>：来源2026年国考</p>';
+  const out = explanationFragment(html);
+  assert.match(out, /文章分析/);
+  assert.match(out, /范文正文/);
+  assert.match(out, /考点<\/strong>：文章写作题/);
+  assert.match(out, /来源<\/strong>：2026年国考/);
+});
+
+test('只有参考答案说明与考点的解析仍从考点起切', () => {
+  const html = '<p>参考答案说明：分条撰写。</p><p><strong>考点</strong>：考点特点类</p>'
+    + '<p><strong>来源</strong>：来源2016年联考</p>';
+  const out = explanationFragment(html);
+  assert.doesNotMatch(out, /参考答案说明/);
+  assert.match(out, /考点<\/strong>：特点类/);
+});
+
+test('文章分析排在考点之后时仍保留考点与来源', () => {
+  const html = '<p><strong>考点</strong>：考点概括</p><p><b>范文分析</b></p><p>正文</p>';
+  const out = explanationFragment(html);
+  assert.match(out, /考点/);
+  assert.match(out, /范文分析/);
 });
