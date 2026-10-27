@@ -1,0 +1,4 @@
+repo-main/
+out/
+__pycache__/
+*.pyc
