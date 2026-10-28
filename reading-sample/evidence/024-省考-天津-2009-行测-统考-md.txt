@@ -1,0 +1,167 @@
+# PACKET 省考/天津/2009/行测-统考.md
+META {"path": "省考/天津/2009/行测-统考.md", "file_sha": "879cc1475bfd547d22c97a34aebad398a7a3566ec4db7690472e60c14675e246", "bytes": 168663, "pr140_sha": "879cc1475bfd547d22c97a34aebad398a7a3566ec4db7690472e60c14675e246", "pr140_same": true, "key": "xingce:237", "source_sha": "c13aac3ca40be764100eb58971b4a656f857ee9051b98ac471986635b7489a33", "area": "天津", "year": "2009", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 6, "h3": 120, "tables": 8, "images": 11, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 746, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 120}, "flags": ["IM004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 天津
+- 年份: 2009
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3ur06ti
+- 源试卷ID: 237
+- 采集时间: 2026-10-25T09:08:50.783Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2009年426联考《行测》题（天津/陕西/湖北）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3758 ## 材料 1
+  L3922 ## 材料 2
+  L4096 ## 材料 3
+  L4268 ## 材料 4
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@122    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@152    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@182    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  5@216    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  6@246    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@282    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@312    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  9@342    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 10@372    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@404    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@440    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@470    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 14@508    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 15@538    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@574    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@604    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 18@640    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@670    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@704    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 21@740    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@776    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@810    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 24@848    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@882    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 26@916    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 27@950    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 28@988    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1024   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@1058   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1092   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 32@1130   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 33@1168   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1204   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 35@1238   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 36@1276   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 37@1314   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 38@1352   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1392   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1428   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1464   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 42@1502   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 43@1538   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 44@1576   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1612   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1650   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 47@1688   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 48@1726   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1764   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1802   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 51@1840   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1872   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1904   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@1938   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 55@1972   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 56@2006   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2046   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@2086   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 59@2130   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 60@2174   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@2218   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 62@2262   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 63@2306   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@2350   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@2394   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 66@2436   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 67@2478   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 68@2518   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 69@2560   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2602   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2644   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2688   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 73@2730   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2770   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2810   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2840   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 77@2888   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@2938   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@2982   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@3026   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@3070   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 82@3118   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3162   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 84@3206   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@3250   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 86@3296   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 87@3324   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 88@3354   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 89@3382   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3410   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 91@3438   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 92@3466   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@3494   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3524   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 95@3558   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 96@3588   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3618   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@3648   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3678   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@3724   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3766   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@3796   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q103@3826   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3856   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q105@3886   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@3928   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@3958   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@3988   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@4024   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q110@4060   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q111@4102   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q112@4132   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4162   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q114@4192   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@4232   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q116@4278   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q117@4308   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q118@4338   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q119@4368   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4404   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 古代“子时”指的是： A. 晚上9点～晚上11点 B. 晚上10点～晚上12点 C. 晚上11点～凌晨1点 D. 晚上12点～凌晨2点
+  ANS: C
+  ANA: 我国古有十二地支计时法。具体如下： 1、子时：夜半，又名子夜、中夜，是十二时辰的第一个时辰（北京时间23时至01时）。 2、丑时：鸡鸣，又名荒鸡，是十二时辰的第二个时辰（北京时间01时至03时）。 3、寅时：平旦，又称黎明、早晨、日旦等，是夜与日的交替之际（北京时间03时至05时）。 4、卯时：日出，又名日始、破晓、旭日等，指太阳刚刚露脸，冉冉初升的那段时间（北京时间05时至07时）。 5、辰时：食时，又名早食等，古人“朝食”之时也就是吃早饭时间（北京时间07时至09时）。 6、巳时：隅中，临近中午的时候称为隅中（北京时间09时至11时）。 7、午时：日中，又名日正、中午等（北京时间11时至1…(+90)
+--- Q61 @L2218: ### 第 61 题
+### 第 61 题 生产销售伪劣产品罪是指生产者或销售者故意在产品中掺杂、掺假、以次充好、以假充真或者以不合格产品冒充合格产品，销售金额5万以上的行为。 下列属于生产销售伪劣产品罪的是： A. 赖某、宣某经商量用化工原料二氧化硒掺过硫酸氨后当作纯二氧化硒出售，以每公斤430元的合同价格售出425公斤 B. 陈某以假金项链冒充纯金项链出售，每条金项链24克，价值人民币4600元，共售出三条 C. 某建筑公司承建价值300万元的住宅楼，为了降低成本，使用了不合格的建筑材料，导致住宅楼还没有验收就有了裂缝 D. 孟某以二手车冒充新车，与肖某以30万元的价格签订汽车销售合同，但孟某在车款到手后携款逃匿
+  ANS: A
+  ANA: 第一步：抓住定义中的关键词。 定义主体是“生产者或销售者”，行为是“故意在产品中掺杂、掺假、以次充好、以假充真”、“以不合格产品冒充合格产品”、“销售金额5万以上”。 第二步：逐一判断选项。 A项，经商量将二氧化硒掺过硫酸氨后的二氧化硒当作纯二氧化硒出售，获得超过五万元，符合“故意在产品中掺杂、掺假、以次充好、以假充真”、“销售金额五万以上”，当选； B项，销售金额不足五万，排除； C项，使用了不合格建筑材料的建筑公司不是建筑材料“生产者或销售者”，排除； D项，“孟某在车款到手后携款逃匿”构成诈骗，并没有完成销售环节，不符合生产销售伪劣产品罪定义，排除。 故正确答案为A。 **考点**：单定…(+54)
+--- Q120 @L4404: ### 第 120 题
+### 第 120 题 以下关于2003-2007年我国就业状况的描述不正确的是： A. 2003-2007年间全国就业人员数年均增长率约为0.85% B. 2006年末城镇单位就业人员中在岗职工比重超过95.1% C. 2007年和2003年相比城镇就业人数约增长了14.6% D. 2007年比2005年第一产业就业人数减少4%，绝对量减少3033万人
+  ANS: D
+  ANA: A项：定位图1可得：2003年和2007年全国就业人员数分别为74432万人和76990万人。根据年均增长率公式：(1+r)^n=现期/基期，可知2003-2007年间全国就业人员数年均增长率= (76990/74332)^(1/4) − 1 ≈ 1/4 × (1.034 − 1) − 1 = 0.85%，正确； B项：定位文字材料可得：（2007年末）城镇单位就业人员12024万人，比上年末增加311万人。在城镇单位就业人员中，在岗职工11427万人，比上年末增加266万人。故2006年末城镇单位就业人员中在岗职工比重= 部分/整体 = (11427−266)/(12024−311) = 1…(+98)
+--- Q2 @L122: ### 第 2 题
+### 第 2 题 在汉字的形体演变过程中，位于小篆和楷书之间的字体是： A. 金文 B. 大篆 C. 隶书 D. 草书
+  ANS: C
+  ANA: 汉字经历了6000多年的发展过程。其形体演变是从甲骨文、金文变为小篆，再变为隶书、楷书、行书，其总的趋势是从繁到简。 故正确答案为C。 **考点**：文化常识 **来源**：2009年426联考《行测》题（天津/陕西/湖北）第2题 </details>
+--- Q119 @L4368: ### 第 119 题
+### 第 119 题 从以上图表中无法得到的推论是： A. 2004年一2007年第二产业就业人员增幅始终高于第三产业 B. 我国城镇单位就业人员在绝对量上增长趋势明显 C. 第一产业依然是我国国民经济的重要产业 D. 近年来我国从第一产业流出的劳动力大部分被第二产业吸收
+  ANS: B
+  ANA: A项：定位图2可得：2003年-2007年第二产业就业人员占比分别为21.6%、22.5%、23.8%、25.2%、26.8%，第三产业就业人员占比分别为29.8%、30.6%、31.4%、32.2%、32.4%。根据公式：部分= 比重×总体，增长率=现期量/基期量−1，可知第二产业就业人员增幅和第三产业相差(现期第二产业占比 × 现期全国就业人数)/(基期第二产业占比 × 基期全国就业人数) - 1((现期第三产业占比×现期全国就业人数)/(基期第三产业占比×基期全国就业人数)−1)= 现期全国就业人数/基期全国就业人数×(现期第二产业占比/基期第二产业占比-现期第三产业占比/基期第三产业占…(+100)

@@ -1,0 +1,324 @@
+[
+ {
+  "path": "省考/西藏/2019/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "SOURCE",
+  "status": "SOURCE_EXCEPTION",
+  "issues": [
+   {
+    "path": "省考/西藏/2019/申论-统考.md",
+    "line": 140,
+    "code": "READ_SOURCE_NO_ANSWER",
+    "explanation": "第 1、4 题的折叠块写明「未收录同卷同题的完整参考答案；不以自动生成内容冒充来源答案」，并解释了为何移除一段不匹配的旧答案；没有编造内容。",
+    "severity": "info"
+   },
+   {
+    "path": "省考/西藏/2019/申论-统考.md",
+    "line": 129,
+    "code": "READ_NO_MATREF",
+    "explanation": "全卷没有「关联材料」行（基线 MT004），题干用「给定资料1/2」指代。",
+    "severity": "minor"
+   }
+  ],
+  "notes": "4 题；Q2、Q3 有答案与解析说明；6 个表格。"
+ },
+ {
+  "path": "省考/西藏/2019/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "100 题全 ABCD；45 个表格列数一致；19 张图未载入。"
+ },
+ {
+  "path": "省考/贵州/2008/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "VISUAL"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "88 题全 ABCD；12 个表格；第 1 题解析以一张公式图开头，其余文字解析正常。",
+  "visual_pending": [
+   "第 1 题解析首图（assets-fenbi-69/…png）未载入"
+  ]
+ },
+ {
+  "path": "省考/贵州/2014/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 材料4、Q2 材料3 与题干一致；Q4 有参考范文。"
+ },
+ {
+  "path": "省考/辽宁/2013/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 材料1–2、Q2 材料6、Q3 材料5 与题干一致。"
+ },
+ {
+  "path": "省考/辽宁/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "120 题全 ABCD；31 个表格；解析含 a<b（ 数学比较。"
+ },
+ {
+  "path": "省考/重庆/2014/申论-上半年.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "3 题；Q1 材料5、Q2 材料1 与题干一致；Q3 有参考范文。"
+ },
+ {
+  "path": "省考/重庆/2017/行测-下半年.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "120 题全 ABCD；24 个表格；同一图片两处引用。"
+ },
+ {
+  "path": "省考/陕西/2012/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 材料6、Q2 材料2 与题干一致。"
+ },
+ {
+  "path": "省考/陕西/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "125 题；其中 9 题是 A–H 八选项（陕西省考数量关系特有），不是排版错误；26 个表格。"
+ },
+ {
+  "path": "省考/青海/2014/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "3 题、14 则材料；Q2 关联材料 13 存在，一致。"
+ },
+ {
+  "path": "省考/青海/2014/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "FORMAT",
+  "status": "AI_ISSUE",
+  "issues": [
+   {
+    "path": "省考/青海/2014/行测-统考.md",
+    "line": 2168,
+    "code": "READ_PIPE_MATH",
+    "explanation": "绝对值等式渲染为 `|甲-乙|=|丙-丁|`（行首行尾都是竖线），在 Markdown 里容易被误读成表格语法；PR#140 已改为反引号代码 `` `|甲-乙| = |丙-丁|` ``，可读性更好（代价是改了 2 个空格）。",
+    "severity": "minor"
+   }
+  ],
+  "notes": "120 题全 ABCD；30 个表格；与 PR#140 的唯一差异就是这一行。"
+ },
+ {
+  "path": "省考/青海/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "120 题全 ABCD；31 个表格。"
+ },
+ {
+  "path": "省考/黑龙江/2014/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 材料8、Q2 材料1–5、Q3 材料6–7 与题干一致。"
+ },
+ {
+  "path": "省考/黑龙江/2016/行测-公检法.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "120 题全 ABCD；27 个表格；解析含 a<b（ 数学比较。"
+ },
+ {
+  "path": "省考/黑龙江/2019/行测-边境县-shangantong.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "SOURCE",
+  "status": "SOURCE_EXCEPTION",
+  "issues": [
+   {
+    "path": "省考/黑龙江/2019/行测-边境县-shangantong.md",
+    "line": 30,
+    "code": "READ_CLONE_NO_ANSWER",
+    "explanation": "文件开头明确写「本源（上岸通）为题面离线克隆，不含答案与解析」，并链到含答案的正本 `行测-边境县.md`；120 题只有题面，没有编造答案。",
+    "severity": "info"
+   }
+  ],
+  "notes": "qid-h2 模板（每题一个 ## 标题 + `<sub>qid …</sub>`）；选项为 `- **A**.`；13 张图未载入。"
+ }
+]

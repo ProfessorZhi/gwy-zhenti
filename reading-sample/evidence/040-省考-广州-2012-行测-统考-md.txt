@@ -1,0 +1,146 @@
+# PACKET 省考/广州/2012/行测-统考.md
+META {"path": "省考/广州/2012/行测-统考.md", "file_sha": "fa6b2577c599f9a6cedee176b87e3eb13eeb3746e2a28185fc55bca5eece8442", "bytes": 113626, "pr140_sha": "fa6b2577c599f9a6cedee176b87e3eb13eeb3746e2a28185fc55bca5eece8442", "pr140_same": true, "key": "xingce:461", "source_sha": "c1b859086423b6fb0a82e129d1637464751fb76caf9c41f27dd947eca51726d2", "area": "广州", "year": "2012", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 100, "h2": 5, "h3": 100, "tables": 40, "images": 20, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 446, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 100}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 广州
+- 年份: 2012
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u7egqk
+- 源试卷ID: 461
+- 采集时间: 2026-10-18T15:02:37.175Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2012年广州市公务员录用考试《行测》题
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3151 ## 材料 1
+  L3313 ## 材料 2
+  L3477 ## 材料 3
+
+## QUESTION TABLE (100)
+  Q  1@68     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  2@102    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  3@136    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@174    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@212    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@246    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@280    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@314    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@346    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 10@382    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@414    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 12@452    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@490    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@528    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@566    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 16@600    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@634    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@676    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@714    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 20@752    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 21@788    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 22@820    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@854    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 24@886    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@922    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 26@954    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 27@988    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 28@1018   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1050   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 30@1085   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1117   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1155   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@1187   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 34@1221   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1251   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 36@1281   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1319   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1353   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@1383   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 40@1413   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 41@1443   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1485   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1527   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1565   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1607   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1645   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 47@1683   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 48@1725   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1763   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 50@1801   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 51@1843   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1883   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1935   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 54@1981   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 55@2027   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@2075   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 57@2113   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@2155   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 59@2199   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 60@2243   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@2293   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 62@2325   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 63@2357   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@2391   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@2421   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 66@2455   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2489   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2521   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@2557   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2589   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 71@2623   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@2651   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2683   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 74@2713   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2743   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2773   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 77@2805   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@2885   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@2917   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 80@2949   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@2983   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@3015   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3045   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 84@3091   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 85@3121   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 86@3157   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3187   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3217   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@3247   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 90@3277   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3321   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@3351   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3381   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3411   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 95@3441   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3514   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 97@3544   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@3574   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 99@3604   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3636   d=Y opts=ABCD   ans=B      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 农民工在精神文化上“营养不良”，时间和消费能力只是一部分原因，城乡二元结构带来的城乡文化 ，也许是他们难以迅速融入城市文化生活的一个重要原因。 填入画横线部分最恰当的一项是： A. 差异 B. 差距 C. 障碍 D. 隔阂
+  ANS: D
+  ANA: 搭配“城乡文化”，且根据后文“难以迅速融入城市文化生活”可知，横线处表达城乡文化之间存在一定的隔膜，D项“隔阂”指彼此之间有距离，符合文意。 A项“差异”仅能体现出城乡文化不同，无法体现距离之意，排除；B项“差距”指事物之间的差别程度，强调程度大小，但文段只强调有距离，排除；C项“障碍”指阻挡，使其不能顺利通过，文段强调城乡文化有隔膜，而不是城乡二元结构阻挡了城乡文化的发展，故与文意不符，排除。 故正确答案为D。 **考点**：词的辨析-感情色彩、实词填空 **来源**：2012年广州市公务员录用考试《行测》题第1题 </details>
+--- Q51 @L1843: ### 第 51 题
+### 第 51 题 所有操作、携带方便的移动电话显示屏尺寸不可能大于3.5英寸，而所有注重阅读效果的移动电话显示屏尺寸都要大于3.5英寸。S品牌的移动电话的显示屏有4英寸。 基于以上事实，以下判断一定正确的是： A. S品牌的移动电话不注重阅读效果 B. S品牌的移动电话既不便于操作和携带，也不注重阅读效果 C. S品牌的移动电话不便于操作和携带 D. S品牌的移动电话便于操作和携带
+  ANS: C
+  ANA: 本题为关联词推导题型。 第一步：翻译题干。 （1）操作携带方便→不大于3.5英寸；（2）注重阅读效果→大于3.5英寸；（3）S品牌大于3.5英寸（事实信息）。 第二步：从事实信息开始推导并得出结论。 （3）肯定第一步中（2）的后件，肯后件无法推出肯前件，即无法判断是否“注重阅读效果”，排除A、B；（3）否定（1）的后件，根据逆否规则，否后件可以推出否前件，即“不便于操作和携带”，排除D。 故正确答案为C。 **考点**：常规翻译 **来源**：2012年广州市公务员录用考试《行测》题第51题 </details>
+--- Q100 @L3636: ### 第 100 题
+### 第 100 题 以下说法正确的是： A. 1995年到2010年间，从企业户数的年均增长率来看，第三产业的私营企业快于第一产业的私营企业 B. 总的来说，1990年到2010年，私营企业主要分布在东部地区 C. 我国私营企业的工业产值与营业额越来越趋于一致 D. 2010年第二产业的私营企业注册资本额约占私营企业注册资本总额的30%
+  ANS: B
+  ANA: A项：定位表格一可知私营企业总户数，定位表格二可知第一产业和第三产业私营企业户数占私营企业总户数的比率。根据年均增长率公式：(1+r)^n=现期/基期，当年份差n相同时，比较年均增长率只需要比较现期/基期。则第一产业为(2010年总户数×2.3%)/(1995年总户数×1.1%)，第三产业为(2010年总户数×68.8%)/(1995年总户数×48.5%)，由于总户数的比值相同，因此只需要比较2.3%/1.1%和68.8%/48.5%即可，前者（2^+）＞后者（1+），即第一产业快于第三产业，错误； B项：定位表格二可知，1990年到2010年，东部地区的私营企业户数占比一直超过60%，占大部…(+97)
+--- Q2 @L102: ### 第 2 题
+### 第 2 题 只要能献智出力，创造业绩，作出贡献，都是社会发展所需要的人才，均当\_\_\_\_\_\_、大胆使用。 填入画横线部分最恰当的一项是： A. 不遗余力 B. 不拘一格 C. 不落窠臼 D. 不折不扣
+  ANS: B
+  ANA: 本题考查成语的应用。对应前文“人才”及空后的“大胆使用”可知，应填入“不拘一格”，二者表意一致。因此，结合选项应该选择B项。 “不遗余力”是指把全部力量都使出来，文段强调范围，而不是力度；“不落窠臼”比喻有独创风格，不落旧套，多用来指文章和文艺作品的风格；“不折不扣”指没有折扣，表示完全、十足的意思。 故正确答案为B。 **考点**：成语填空、关联关系-并列关系 **来源**：2012年广州市公务员录用考试《行测》题第2题 </details>
+--- Q99 @L3604: ### 第 99 题
+### 第 99 题 关于我国私营企业的情况，从1990年到2010年并非呈现持续增长趋势的是： A. 中部地区的私营企业户数 B. 农村的私营企业户数 C. 组织类型为合伙企业的私营企业户数 D. 第二产业的私营企业户数
+  ANS: C
+  ANA: 定位表格一给出了“私营企业总户数”，表格二给出了“中部地区、农村、合伙企业和第二产业”的私营企业户数占私营企业总户数的比率，可知各选项户数=私营企业总户数×对应占比。观察发现，从1990年到2010年，私营企业总户数持续增长，四次变化分别为65.5/9.8 = 6^+倍，176.2/65.5=2^+倍，430.1/176.2 = 2^+倍，845.5/430.1 ≈ 2倍。对比选项，A项中部地区占比变化小于私营企业总户数变化，故整体呈现持续增长趋势，排除；B项农村占比变化小于私营企业总户数变化，故整体呈现持续增长趋势，排除；C项合伙企业占比变化在2000年到2005年为9.9%/3%=3^+倍…(+100)

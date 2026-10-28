@@ -1,0 +1,66 @@
+[
+ {"path":"省考/北京/2023/行测-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"SOURCE_MISSING(35题)","option":"SOURCE_MISSING(35题)","material":"OK","table":"OK","image":"VISUAL"},
+  "review_type":"SOURCE","status":"SOURCE_EXCEPTION",
+  "issues":[{"path":"省考/北京/2023/行测-统考.md","line":566,"code":"READ_PLACEHOLDER","explanation":"35 题为「粉笔暂未收录本题（来源缺题，题位保留）」，折叠块明确写答案/解析 unknown；未编造题目或答案。其余 100 题 A–D 与答案齐全。","severity":"info"}],
+  "notes":"135 题；占位 35 题（Q15、Q17–Q21 等）；8 个表格；18 张图未载入。来源索引标 PARTIAL。"},
+
+ {"path":"省考/北京/2026/申论-选调生.md","read_mode":"full","full_file":true,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"VISUAL"},
+  "review_type":"FORMAT","status":"AI_ISSUE",
+  "issues":[{"path":"省考/北京/2026/申论-选调生.md","line":121,"code":"READ_TAG_IMBALANCE","explanation":"main 上第 121 行 `给定<u>资料</u>4</u>中` 多一个 </u>（<u> 136 开 / 137 闭）；PR#140 head c5e11c44 已删去该多余标签，去标签后文字完全相同（差 4 字节）。","severity":"error"}],
+  "notes":"2 题；与 PR#140 逐字节比较：仅该行不同。PR 修好后本卷 ES001 归零。"},
+
+ {"path":"省考/吉林/2008/行测-乙级.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"SUSPECT","material":"OK","table":"OK","image":"OK"},
+  "review_type":"CONTENT","status":"AI_ISSUE",
+  "issues":[{"path":"省考/吉林/2008/行测-乙级.md","line":72,"code":"READ_OPTION_TEXT_SUSPECT","explanation":"第 1 题选项 C/D 渲染为「714」「716」，按数列题应是带根号/乘方写法（丢失 √ 或 ^ 后变成整数样）；答案 B 不受影响，但选项文字对读者已不可解。","severity":"minor"}],
+  "notes":"100 题；44 个表格；其余题 A–D 与答案完整。选项 C/D 的文字缺失属内容层，需源侧核对，本 lane 不补字。"},
+
+ {"path":"省考/吉林/2010/申论-甲级.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"VISUAL"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[{"path":"省考/吉林/2010/申论-甲级.md","line":141,"code":"READ_MATREF_ALL","explanation":"Q1 题干只说「给定资料」，关联材料列出 1–10（全卷 12 则）；导航冗余但不错配。","severity":"minor"}],
+  "notes":"4 题、12 则材料、答案齐全；5 张图未载入。"},
+
+ {"path":"省考/四川/2012/申论-上半年.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"NA"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"3 题；Q1 关联材料 1、Q2 材料 4、Q3 材料 1–5，与题干资料范围一致。"},
+
+ {"path":"省考/四川/2017/申论-下半年.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"WARN","answer":"OK","option":"NA","material":"OK","table":"OK","image":"NA"},
+  "review_type":"FORMAT","status":"AI_ISSUE",
+  "issues":[{"path":"省考/四川/2017/申论-下半年.md","line":373,"code":"READ_NO_MATREF","explanation":"题干未写资料号、卷内也没有「关联材料」行（基线 MT004）；读者只能靠材料标题自行定位。","severity":"minor"}],
+  "notes":"2 题；答案前有 `<a id=\"r7-reference-1\"></a>` 锚点（R7 版式），不影响渲染；4 个表格。"},
+
+ {"path":"省考/四川/2017/行测-下半年.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"OK","material":"OK","table":"OK","image":"OK"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"100 题全 ABCD；17 个表格列数一致；同一图片两处引用。"},
+
+ {"path":"省考/天津/2009/行测-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"OK","material":"OK","table":"OK","image":"OK"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"120 题全 ABCD；最长行 746 字符（仍在可读范围）；8 个表格。"},
+
+ {"path":"省考/天津/2012/申论-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"NA"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"4 题、12 则材料；Q4 有「参考文章一」，属多范文；关联材料与题干一致。"},
+
+ {"path":"省考/宁夏/2013/申论-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"VISUAL"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"3 题；Q1 参考答案以 `**问题如下` 开头（粗体起句），可读；2 张图未载入。来源 PARTIAL。"},
+
+ {"path":"省考/宁夏/2016/行测-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"OK","material":"OK","table":"OK","image":"OK"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"120 题；25 个表格；与内蒙古 2016 同题源（题干 A、B 两车那题选项未被误判）。"},
+
+ {"path":"省考/安徽/2008/申论-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"NA"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"3 题；Q1「给定资料」→ 关联材料 1–12，导航冗余但不错配。"}
+]

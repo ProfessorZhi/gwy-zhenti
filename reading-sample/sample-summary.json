@@ -1,0 +1,48 @@
+{
+ "seed": 20261028,
+ "target": 92,
+ "selected": 92,
+ "mandatory": 16,
+ "strata": 70,
+ "areas": 36,
+ "years": [
+  "2008",
+  "2009",
+  "2010",
+  "2012",
+  "2013",
+  "2014",
+  "2015",
+  "2016",
+  "2017",
+  "2018",
+  "2019",
+  "2020",
+  "2023",
+  "2024",
+  "2025",
+  "2026"
+ ],
+ "subjects": {
+  "行测": 45,
+  "申论": 47
+ },
+ "validation": {
+  "candidate": 82,
+  "other": 2,
+  "machine": 8
+ },
+ "source_class": {
+  "SOURCE_COMPLETE": 63,
+  "MISSING": 3,
+  "(none)": 10,
+  "PARTIAL": 15,
+  "CONFLICT": 1
+ },
+ "risk": {
+  "error": 1,
+  "with_review": 38,
+  "placeholder": 6,
+  "total_review": 52
+ }
+}

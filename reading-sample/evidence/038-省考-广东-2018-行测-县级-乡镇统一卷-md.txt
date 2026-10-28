@@ -1,0 +1,146 @@
+# PACKET 省考/广东/2018/行测-县级、乡镇统一卷.md
+META {"path": "省考/广东/2018/行测-县级、乡镇统一卷.md", "file_sha": "7a124038ef4d67985d898ec52649c64b0df658576d2ca8152f4866218d8778d0", "bytes": 142925, "pr140_sha": "7a124038ef4d67985d898ec52649c64b0df658576d2ca8152f4866218d8778d0", "pr140_same": true, "key": "xingce:84444", "source_sha": "3eb92477e998931b6ce0deded06f5d0b8411dc360ac291bc3fce49c4955ed9b4", "area": "广东", "year": "2018", "subject": "行测", "variant": "县级、乡镇统一卷", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 100, "h2": 5, "h3": 100, "tables": 14, "images": 27, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 334, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 100}, "flags": ["ES002", "ES002", "ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 广东
+- 年份: 2018
+- 科目: 行测
+- 卷型: 县级、乡镇统一卷
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8891a
+- 源试卷ID: 84444
+- 采集时间: 2026-10-19T02:30:09.853Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2018年广东省公务员录用考试《行测》题（县级、乡镇统一卷）（网友回忆版）
+  L35 ## 题型与作答说明
+  L73 ## 题目
+  L3195 ## 材料 1
+  L3365 ## 材料 2
+  L3549 ## 材料 3
+
+## QUESTION TABLE (100)
+  Q  1@75     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@109    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  3@143    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  4@179    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@213    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@247    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  7@283    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  8@319    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@355    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@385    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 11@421    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 12@461    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@501    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@541    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@579    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@615    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 17@647    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@677    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@709    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@739    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 21@769    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 22@807    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@837    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 24@867    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@901    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 26@931    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 27@961    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@991    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 29@1023   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@1053   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1083   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1115   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@1149   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@1181   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1213   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 36@1245   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 37@1277   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1309   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1345   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 40@1377   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1409   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1451   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1493   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 44@1537   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1579   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 46@1621   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 47@1663   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1705   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1749   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 50@1791   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1833   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1885   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 53@1931   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 54@1977   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@2027   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 56@2071   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@2117   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@2157   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 59@2203   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 60@2247   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 61@2291   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 62@2325   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2353   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 64@2383   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@2417   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 66@2453   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 67@2489   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 68@2519   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2549   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2577   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2605   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@2659   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 73@2689   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 74@2727   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 75@2785   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 76@2817   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 77@2855   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2889   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 79@2925   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@2967   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@3003   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 82@3043   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3081   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@3119   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@3157   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 86@3207   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3239   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@3269   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 89@3299   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3329   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 91@3387   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@3417   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3449   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 94@3483   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 95@3513   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 96@3561   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3601   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3631   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3661   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3703   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L75: ### 第 1 题
+### 第 1 题 宪法是治国安邦的总（ ），是党和人民意志的集中（ ），在我们党治国理政活动中具有十分重要的地位和作用。 A. 规范 呈现 B. 章法 展现 C. 章程 体现 D. 标准 表现
+  ANS: C
+  ANA: 第一空，横线处所填词语形容“宪法”，由重点提示词语“总”可知，需体现其在“治国安邦”中的根本性地位和作用，C项“章程”，指组织、社团经特定的程序制定的关于组织规程和办事规则的规范性文书，是一种根本性的规章制度，符合文意，当选。A项“规范”指明文规定或约定俗成的标准，如道德规范、技术规范等，常用于具体、专业的领域，与文意不符，排除；B项“章法”多指诗文布局谋篇的法则，与“治国安邦”对应不当，排除；D项“标准”是为了在一定的范围内获得最佳秩序，经协商一致制定并由公认机构批准，共同使用的和重复使用的一种规范性文件，与“总”无法对应，排除。 第二空，代入验证，“宪法······是党和人民意志的集中体现…(+95)
+--- Q51 @L1833: ### 第 51 题
+### 第 51 题 某市举行春季音乐节系列活动，其中一项活动首次邀请了某知名交响乐团前来该市演出，该市交响乐爱好者对此十分期待。考虑到该乐团的影响力，主办方预计为期两天的交响乐团演出将“一票难求”。但开始售票后发现，实际情况并非如此。 以下哪项为真，最能解释这一情况？ A. 音乐节的其他活动吸引了许多观众 B. 交响乐未能被该市大部分群众所接受 C. 音乐节活动期间该市一直为阴雨天气 D. 此次交响乐团演出门票价格过高
+  ANS: D
+  ANA: 第一步：找出题干矛盾。 该市交响乐爱好者十分期待某知名交响乐团前来演出，预计交响乐团演出将“一票难求”，但开始售票后发现实际情况并非如此。 第二步：逐一分析选项。 A项：音乐节的其他活动吸引了许多观众，可能会影响交响乐团演出门票的销售，可以解释题干的矛盾，保留； B项：交响乐未能被该市大部分群众所接受，说明该市喜欢交响乐的人少，但是题干已明确指出“交响乐爱好者”对此十分期待，与不接受交响乐的群众占比无关，排除； C项：阴雨天气可能会对交响乐的售票有一定的影响，可以解释题干的矛盾，保留； D项：演出门票价格过高在一定程度上会影响到门票的销售，可以解释题干的矛盾，保留。 比较A、C、D三项，D项从…(+92)
+--- Q100 @L3703: ### 第 100 题
+### 第 100 题 根据材料，下列说法正确的是（ ）。 A. 2016年全省医疗卫生机构数量是2009年的1.5倍 B. 2012—2016年，医院床位数占全省医疗卫生机构床位数的比例均低于80% C. 2009—2016年，全省医疗卫生机构的平均卫生技术人员数均大于10 D. 2012—2016年，全省医疗卫生机构中注册护士与执业（助理）医师人数相差最大的是2016年
+  ANS: D
+  ANA: A项：定位统计图1中2009年全省医疗卫生机构数量为4.43万个，2016年为4.91万个，可得2016年全省医疗卫生机构数量是2009年的4.91/4.43≈1.1倍，错误； B项：定位统计图2中2012-2016年数据，可得 2012年医院床位数占全省医疗卫生机构床位数的比例27.3/35.5× 100% ≈77%； 2013年医院床位数占全省医疗卫生机构床位数的比例29.4/37.8× 100% ≈78%； 2014年医院床位数占全省医疗卫生机构床位数的比例32/40.6× 100% ≈79%； 2015年医院床位数占全省医疗卫生机构床位数的比例34.5/43.6× 100% ≈79%；…(+93)
+--- Q2 @L109: ### 第 2 题
+### 第 2 题 党的十八大以来，中国人民的创造精神前所未有地（ ）出来，推动我国（ ）向前发展，大踏步走在世界前列。 A. 迸发 日新月异 B. 激发 气象万千 C. 涌现 千变万化 D. 呈现 一日千里
+  ANS: A
+  ANA: 第一空，所填词语与“创造精神”搭配，根据“前所未有”可知，需填入程度较重的词。A项“迸发”形容力量一下子爆发出来，侧重强调内部力量的爆发，符合文意，保留；B项“激发”指激之使奋起，置于文段应表述为“创造精神前所未有地被激发出来”，无法与“创造精神”直接搭配，排除；C项“涌现”指在同一时期大量、突然地出现，通常搭配为“英雄事迹涌现”“先进人物涌现”，与“创造精神”无法搭配，排除；D项“呈现”指显出、露出，呈现出中国人民的创造精神，搭配得当，保留。 第二空，D项用法不当，如果用，应该是我国的发展一日千里，而不是推动一日千里向前发展，排除；A项“推动我国日新月异向前发展”，与下文“大踏步走在世界前列…(+95)
+--- Q99 @L3661: ### 第 99 题
+### 第 99 题 2012—2016年，全省医疗卫生机构卫生技术人员中注册护士所占比率最高的一年比例约为（ ）。 A. 38.2% B. 40.1% C. 42.5% D. 48.7%
+  ANS: C
+  ANA: 由题干“2012-2016年，······所占比率最高的一年”，可判定此题为现期比重比较问题。定位图3中2012-2016年的数据，根据现期比重公式可得， 2012年注册护士所占比率=20/52×100%≈38%； 2013年注册护士所占比率=21.8/55.6×100%≈39%； 2014年注册护士所占比率=23.4/58.4×100%≈40%； 2015年注册护士所占比率=25.4/62×100%≈41%； 2016年注册护士所占比率=28.4/66.8×100%≈43%。 比较可得，2012-2016年，全省医疗卫生机构卫生技术人员中注册护士所占比率最高的一年是2016年，其比例约为43…(+90)

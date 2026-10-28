@@ -1,0 +1,203 @@
+# PACKET 省考/江苏/2009/行测-B类.md
+META {"path": "省考/江苏/2009/行测-B类.md", "file_sha": "8cf208b6a40ce50ea563c2c8ee6ce96d12720ef63ed0811c208e60fbe63e4372", "bytes": 139350, "pr140_sha": "8cf208b6a40ce50ea563c2c8ee6ce96d12720ef63ed0811c208e60fbe63e4372", "pr140_same": true, "key": "xingce:111", "source_sha": "5221b5839cf4c35ff468f33de8ba4da6a93001cdbfad1efefc99fa6fdf279b13", "area": "江苏", "year": "2009", "subject": "行测", "variant": "B类", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 155, "h2": 7, "h3": 155, "tables": 46, "images": 56, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 433, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 155}, "flags": ["IM004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 江苏
+- 年份: 2009
+- 科目: 行测
+- 卷型: B类
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3ur0jtg
+- 源试卷ID: 111
+- 采集时间: 2026-10-25T09:13:42.319Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2009年江苏省公务员录用考试《行测》题（B类）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4548 ## 材料 1
+  L4726 ## 材料 2
+  L4890 ## 材料 3
+  L5067 ## 材料 4
+  L5217 ## 材料 5
+
+## QUESTION TABLE (155)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@96     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  3@124    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@152    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@180    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@208    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@236    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@264    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@292    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@320    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@348    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@376    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 13@404    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@432    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 15@460    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 16@488    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@516    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@544    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@572    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 20@600    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@628    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 22@656    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@684    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 24@712    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 25@740    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 26@768    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 27@796    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@824    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 29@852    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@880    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@908    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 32@936    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@964    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 34@992    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 35@1020   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 36@1048   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 37@1076   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 38@1104   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1132   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 40@1160   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1188   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1216   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1244   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 44@1272   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1300   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1328   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1356   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1384   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 49@1412   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 50@1440   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1468   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 52@1504   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 53@1540   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 54@1576   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@1612   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 56@1648   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 57@1684   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@1720   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 59@1756   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 60@1792   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@1828   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 62@1856   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@1884   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@1920   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 65@1948   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 66@1976   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2008   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2036   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2064   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2092   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 71@2120   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@2148   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2176   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2206   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 75@2238   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 76@2276   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 77@2306   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2334   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2362   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@2406   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2436   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 82@2474   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@2516   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@2554   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 85@2594   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@2634   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 87@2674   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@2716   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@2758   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@2798   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 91@2840   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@2874   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@2906   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@2940   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@2974   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3008   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@3040   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3072   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3104   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3136   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3170   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@3208   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@3252   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3298   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q105@3350   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@3390   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q107@3444   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q108@3500   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@3560   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q110@3602   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q111@3656   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q112@3700   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q113@3744   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q114@3784   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q115@3828   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@3872   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q117@3934   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q118@3994   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q119@4056   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q120@4116   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q121@4176   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q122@4214   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q123@4252   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q124@4288   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q125@4326   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q126@4358   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q127@4398   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q128@4436   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q129@4474   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q130@4512   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q131@4562   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q132@4596   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q133@4628   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q134@4660   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q135@4692   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q136@4734   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q137@4762   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q138@4790   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q139@4818   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q140@4862   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q141@4905   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q142@4933   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q143@4961   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q144@4989   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q145@5027   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q146@5073   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q147@5103   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q148@5131   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q149@5159   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q150@5187   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q151@5223   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q152@5251   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q153@5281   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q154@5309   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q155@5337   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 江畔何人初见月 江月何年初照人 A. 3 B. 4 C. 5 D. 6
+  ANS: C
+  ANA: 题干给出的两个字符组中重复的字符为江、何、人、初、月，共5个。 故正确答案为C。 **来源**：2009年江苏省公务员录用考试《行测》题（B类）第1题 </details>
+--- Q78 @L2334: ### 第 78 题
+### 第 78 题 有一池泉水，泉底均匀不断涌出泉水。如果用8台抽水机10小时能把全池水抽干或用12台抽水机6小时能把全池水抽干。如果用14台抽水机把全池水抽干，则需要的时间是： A. 5小时 B. 4小时 C. 3小时 D. 5.5小时
+  ANS: A
+  ANA: 假设原有水量为x，单位时间进水量为y，根据题意可得：x = (8-y) × 10，x = (12-y)×6，解得x=60，y=2。由此假设需要用时为t，则可得：60 = (14 - 2) × t，解得t=5小时。 故正确答案为A。 **来源**：2009年江苏省公务员录用考试《行测》题（B类）第78题 </details>
+--- Q155 @L5337: ### 第 155 题
+### 第 155 题 下列说法中，正确的有： （1）2004～2008年我国国内生产总值呈逐年递增态势。 （2）2004～2008年我国国内生产总值的年增长率呈逐年递增态势。 （3）2004～2008年我国社会消费品零售总额呈逐年递增态势。 （4）2004～2008年我国社会消费品零售总额的年增长率呈逐年递增态势。 A. 4项 B. 3项 C. 2项 D. 1项
+  ANS: C
+  ANA: （1）定位统计图1，2004～2008年我国国内生产总值逐年增大，正确； （2）定位统计图2，2008年我国国内生产总值的年增长率（9.0%）＜2007年我国国内生产总值的年增长率（13.0%），并非逐年递增，错误； （3）定位统计图1，2004～2008年我国社会消费品零售总额逐年增大，正确； （4）定位统计图2，2005年我国社会消费品零售总额的年增长率（12.9%）＜2014年我国社会消费品零售总额的年增长率（13.3%），并非逐年递增，错误； 因此（1）、（3）说法正确，而（2）、（4）说法错误。正确的有2项。 故正确答案为C。 **来源**：2009年江苏省公务员录用考试《行测》题（…(+19)
+--- Q2 @L96: ### 第 2 题
+### 第 2 题 ![](assets-fenbi-111/343715669385198669796b7e6ad5832e29c47bfc739e9882d98dd8ba8098ae65.png) A. 3 B. 4 C. 5 D. 6
+  ANS: D
+  ANA: 题干给出的两个字符组中重复的字符为![](assets-fenbi-111/91fa29ecc8a83185554a665478eef9e90bbd3a2d2396ef3366d29e9676db0584.png)，共6个。 故正确答案为D。 **来源**：2009年江苏省公务员录用考试《行测》题（B类）第2题 </details>
+--- Q154 @L5309: ### 第 154 题
+### 第 154 题 2003～2008年国内生产总值的总和是： A. 95万亿元 B. 105万亿元 C. 115万亿元 D. 125万亿元
+  ANS: D
+  ANA: 定位图1，2003~2008年，国内生产总值的总和为135823+159878+183868+210871+257306+300670≈136000+160000+184000+211000+257000+301000=1249000亿元≈125万亿元。 故正确答案为D。 **来源**：2009年江苏省公务员录用考试《行测》题（B类）第154题 </details>

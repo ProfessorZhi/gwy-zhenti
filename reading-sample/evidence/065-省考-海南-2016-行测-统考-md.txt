@@ -1,0 +1,156 @@
+# PACKET 省考/海南/2016/行测-统考.md
+META {"path": "省考/海南/2016/行测-统考.md", "file_sha": "f4b8b7fe5934d3ecce9e0de79d95c1fd71dfdbde2cebe81b8418d8a412edec9f", "bytes": 172067, "pr140_sha": "f4b8b7fe5934d3ecce9e0de79d95c1fd71dfdbde2cebe81b8418d8a412edec9f", "pr140_same": true, "key": "xingce:75916", "source_sha": "38dbb66f5946cea4238131883215dcfaea9fbf3ff3c673c543ecc26fa5e1eb4f", "area": "海南", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 110, "h2": 5, "h3": 110, "tables": 20, "images": 16, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 290, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 109, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 海南
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8n3qk
+- 源试卷ID: 75916
+- 采集时间: 2026-10-19T05:25:06.174Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（海南卷）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3652 ## 材料 1
+  L3814 ## 材料 2
+  L3989 ## 材料 3
+
+## QUESTION TABLE (110)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@104    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@140    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@178    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@216    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  6@254    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@290    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@326    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@362    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 10@402    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 11@438    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 12@474    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 13@510    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@546    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@576    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@612    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 17@644    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 18@674    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@710    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 20@746    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@782    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 22@816    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@858    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@894    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@936    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@976    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 27@1018   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@1050   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 29@1086   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 30@1122   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1160   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@1196   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 33@1232   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 34@1268   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1306   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 36@1342   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 37@1378   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1414   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1450   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1486   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 41@1526   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1572   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1608   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 44@1642   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 45@1678   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 46@1710   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 47@1748   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1786   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 49@1826   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 50@1866   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1904   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 52@1942   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1980   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@2018   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 55@2056   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@2092   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@2130   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 58@2166   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@2198   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2236   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 61@2274   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2310   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 63@2340   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2374   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 65@2404   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2442   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@2472   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@2502   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2534   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 70@2564   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2596   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2628   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 73@2660   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 74@2692   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 75@2726   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2770   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 77@2814   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2858   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@2902   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@2946   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@2990   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 82@3034   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3078   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@3120   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@3162   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 86@3204   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3250   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 88@3292   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3330   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@3372   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3418   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3466   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@3514   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3558   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3606   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3656   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3686   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 98@3718   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3748   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q100@3778   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3831   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@3861   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@3891   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3921   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q105@3951   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@4001   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@4031   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@4061   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q109@4091   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q110@4123   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 在生活中，下列哪一做法或现象与热胀冷缩无关： A. 夏天在架设电线时，不宜把电线绷得太紧 B. 往保温瓶灌开水时，不灌满比灌满更容易保温 C. 把刚煮熟的鸡蛋放到冷水中浸一下，更容易剥壳 D. 冬天往玻璃杯中倒开水，应先用少量开水预热杯子
+  ANS: B
+  ANA: 夏天比较热，电线吸收热量，处于伸张状态；天气转凉后，电线因释放热量，会收缩。所以绷太紧容易导致收缩过量产生拉力，电线容易形变，当形变超过临界值，就会发生断裂，产生事故。A项说法与热胀冷缩有关。 空气是热的不良导体，如果水没有完全灌满，相对于水直接接触瓶盖来说，相当于多了一层保温层。B项说法与热胀冷缩无关。 大多数物质都有“热胀冷缩”的物理特性。但是，各种物质的伸缩程度又各不相同。鸡蛋是由硬的蛋壳和软的蛋白、蛋黄组成的，当温度剧烈变化时，蛋白和蛋壳的步调会不一致，形成了蛋白与蛋壳的脱离。因此，就不会连蛋壳带蛋白一起剥下来。C项说法与热胀冷缩有关。 玻璃是热的不良导体，热量在玻璃中传得很慢，杯子中…(+94)
+--- Q56 @L2092: ### 第 56 题
+### 第 56 题 有了社会契约，人们失去的是其自然的自由，以及他们愿意拿什么就拿什么的绝对的权利；通过社会契约，他们得到的是文明的自由以及对自己所拥有的财物的法定权。在权衡利弊的时候，如果要避免出现错误，我们必须清楚地辨明什么是自然的自由以及什么是文明的自由——自然的自由只受到个人实际力量的控制，而文明的自由却受到公众意志的限制。步入文明社会，人类获得了道德自由，仅这一点就使人类成了自身的主宰。 根据上述文字，下列说法正确的是： A. 社会契约规定了自然的自由和文明的自由各自的界限 B. 社会契约强调的是有约束而非完全的自由 C. 人们只有服从社会契约才能获得文明的自由 D. 社会契约赋予人们文明的自由、限制自然的自由
+  ANS: B
+  ANA: 文段只阐述了何为自然的自由、何为文明的自由，A项，“各自的界限”未提及，且其定义也非社会契约所规定的，而是实际存在的，排除； B项，由“有了社会契约，人们失去的是其自然的自由”“他们得到的是文明的自由······”可知，“有约束而非完全的自由”表述正确，当选； C项，“只有······才······”的逻辑关系文段未提及，且“服从社会契约”文段也未提及，排除； D项，“限制自然的自由”与原文“失去自然的自由”概念不一致，排除。 故正确答案为B。 **考点**：细节判断题 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第32题 </details>
+--- Q110 @L4123: ### 第 110 题
+### 第 110 题 能够从上述资料中推出的是： A. 2015年1-3月，中央和地方国有企业营业成本均低于同期营业收入 B. 2014年1-3月，国有企业应交税金占同期营业总收入的一成以上 C. 2015年3月末，国有企业资产总额同比增长不到12万亿元 D. 2015年3月末，地方国有企业资产负债率高于上年同期水平
+  ANS: C
+  ANA: A项，定位文字材料第一段和第二段，2015年1-3月，中央国有企业营业成本60216.5亿元<同期营业收入63191.3亿元，成本低于收入；地方国有企业营业成本40129亿元>同期营业收入39964.2亿元，成本高于收入，错误； B项，定位文字材料第一段和第三段，2014年1~3月国有企业应交税金占同期营业总收入的比重= 9383/(1+0.13%) ÷ 103155.5/(1−6%) = 9383/103155.5 × (1−6%)/(1+0.13%) ＜ 9383/103155.5 ＜ 10%，不足一成，错误； C项，定位文字材料第四段，2015年3月末，国有企业资产总额同比增长量=105…(+97)
+--- Q2 @L104: ### 第 2 题
+### 第 2 题 关于“螳螂捕蝉，黄雀在后”，下列说法**错误**的是： A. 蝉、螳螂和黄雀都是消费者 B. 螳螂和黄雀的行为都属于先天性行为 C. 螳螂、蝉和黄雀组成了一个生态系统 D. 蝉和螳螂属于节肢动物，黄雀属于鸟类
+  ANS: C
+  ANA: A项正确，消费者在自然界中的定义：为食物链中的一个环节，代表着不能生产，只能通过消耗其他生物来达到自我存活的生物。螳螂、蝉、黄雀符合消费者的概念。 B项正确，先天性行为，就是生来就有的一种本能，由动物体内的遗传物质所决定的行为，如蜜蜂采蜜，蚂蚁建巢，蜘蛛织网，鸟类迁徙，动物捕食等。与先天性行为相对的后天性行为，是动物在遗传物质的基础上，通过环境因素的作用，由生活经验和学习而获得的行为，能让动物更好地适应环境。 C项错误，生态环境的组成成分包括非生物的物质和能量、生产者、消费者、分解者。螳螂、蝉和黄雀均为消费者，故螳螂、蝉和黄雀不能构成一个生态系统。 D项正确，螳螂和蝉属于无脊椎动物中的节肢动物…(+79)
+--- Q109 @L4091: ### 第 109 题
+### 第 109 题 2015年3月末，中央企业的资产负债率（负债总额÷资产总额）约在以下哪个范围内？ A. 50%以下 B. 50%-60% C. 60%-70% D. 70%以上
+  ANS: C
+  ANA: 根据题干中“2015年3月末······资产负债率（负债总额 ÷ 资产总额）”，可以判断本题为比值计算问题。参看第四段材料，中央企业负债总额363304亿元，资产总额554658.3亿元，代入资产负债率公式： 负债总额/资产总额 = 363304/554658.3 ≈ 36/55 ≈ 65%。因此在60%~70%范围内。 故正确答案为C。 **考点**：比值计算、文字资料 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第104题 </details>

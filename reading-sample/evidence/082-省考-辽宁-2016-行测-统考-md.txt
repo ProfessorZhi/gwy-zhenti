@@ -1,0 +1,167 @@
+# PACKET 省考/辽宁/2016/行测-统考.md
+META {"path": "省考/辽宁/2016/行测-统考.md", "file_sha": "0a87237f1ad89258821241bedb2c485cd42aae50339cd36d2f1272335a5af765", "bytes": 186036, "pr140_sha": "0a87237f1ad89258821241bedb2c485cd42aae50339cd36d2f1272335a5af765", "pr140_same": true, "key": "xingce:76026", "source_sha": "5e9accd355421868eb49795112856547abda91b4e71b57f45102f3f351ec824a", "area": "辽宁", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 6, "h3": 120, "tables": 31, "images": 21, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 290, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 119, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 辽宁
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8odh8
+- 源试卷ID: 76026
+- 采集时间: 2026-10-19T05:46:35.224Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（辽宁卷）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3838 ## 材料 1
+  L4000 ## 材料 2
+  L4175 ## 材料 3
+  L4350 ## 材料 4
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  2@104    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  3@142    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  4@178    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@216    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@252    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@290    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  8@326    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@362    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 10@398    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 11@430    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@460    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@492    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@524    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@560    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 16@596    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@632    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@668    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@704    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@744    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@780    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 22@820    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@856    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 24@892    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@928    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 26@964    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@1000   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@1036   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 29@1070   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@1112   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1148   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 32@1184   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@1216   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 34@1252   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 35@1290   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1328   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1366   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1400   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1436   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1472   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1508   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1546   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1584   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 44@1622   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1662   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1702   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1742   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1780   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 49@1818   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1856   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1902   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 52@1948   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1986   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 54@2024   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 55@2056   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 56@2094   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 57@2130   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@2166   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 59@2198   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 60@2234   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 61@2266   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 62@2298   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2330   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 64@2360   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 65@2398   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 66@2434   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2464   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2494   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2528   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 70@2558   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 71@2596   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2628   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 73@2660   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2694   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2726   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2760   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@2792   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@2836   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2880   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@2924   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 81@2968   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@3014   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3058   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@3104   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@3138   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@3184   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 87@3226   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 88@3262   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 89@3304   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3346   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3388   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 92@3430   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@3468   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 94@3516   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 95@3556   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3604   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@3650   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3696   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3744   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3790   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3842   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q102@3872   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q103@3904   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3934   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q105@3964   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@4017   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@4047   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@4077   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@4107   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q110@4137   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@4192   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q112@4222   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4252   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q114@4282   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@4312   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q116@4362   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q117@4392   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q118@4422   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q119@4452   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q120@4484   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 下列对诗词中的物理现象描述**错误**的是： A. 坐地日行八万里，巡天遥看一千河——地球的公转 B. 两岸青山相对出，孤帆一片日边来——运动的相对性 C. 八月秋高风怒号，卷我屋上三重茅——空气振动发声 D. 飞流直下三千尺，疑是银河落九天——势能转化为动能
+  ANS: A
+  ANA: A项错误，“坐地日行八万里”是指地球自转。地球赤道半径约6378公里，地球自转一周，人行的路程为周长值约为：2πr=2π×6378公里≈40000公里＝80000里。 B项正确，“两岸青山相对出”，研究的对象是“青山”，运动状态是“出”，青山是运动的，是相对于船来说的；“孤帆一片日边来”，研究的对象是“孤帆”，运动状态是“来”，船是运动的，相对于日（或两岸、青山）来说的。同一个物体，以不同的参照物，它的运动状态可能不同，这就是运动和静止的相对性。 C项正确，“八月秋高风怒号”中的风声是空气振动发出的声音。 D项正确，“飞流直下三千尺”，是因为水受到重力的作用，从高处往低处流，在此过程中势能减小…(+90)
+--- Q61 @L2266: ### 第 61 题
+### 第 61 题 某企业原有职工110人，其中技术人员是非技术人员的10倍，今年招聘后，两类人员的人数之比未变，且现有职工中技术人员比非技术人员多153人。问今年新招非技术人员多少名？ A. 7 B. 8 C. 9 D. 10
+  ANS: A
+  ANA: 原有职工110人，其中技术人员是非技术人员的10倍，可知二者人数之比为10:1，总数共为11份，每份10人，可以得到非技术人员为1份10人，技术人员为10份100人。招聘后，两类人员的人数之比未变，即新招聘的人员中，技术人员是非技术人员的10倍，可以设新招聘的非技术人员为x，则技术人员为10x，则有100+10x-（10+x）=153，解得x=7。 故正确答案为A。 秒杀技：尾数法。人数比是10倍，技术人员总数的尾数为0，两者相差153，则非技术人员尾数为7，原来是10，现在就是17，新招7人。 **考点**：和差倍比问题 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第…(+14)
+--- Q120 @L4484: ### 第 120 题
+### 第 120 题 能够从上述资料中推出的是： A. 2015年1-3月，中央和地方国有企业营业成本均低于同期营业收入 B. 2014年1-3月，国有企业应交税金占同期营业总收入的一成以上 C. 2015年3月末，国有企业资产总额同比增长不到12万亿元 D. 2015年3月末，地方国有企业资产负债率高于上年同期水平
+  ANS: C
+  ANA: A项，定位文字材料第一段和第二段，2015年1-3月，中央国有企业营业成本60216.5亿元<同期营业收入63191.3亿元，成本低于收入；地方国有企业营业成本40129亿元>同期营业收入39964.2亿元，成本高于收入，错误； B项，定位文字材料第一段和第三段，2014年1~3月国有企业应交税金占同期营业总收入的比重= 9383/(1+0.13%) ÷ 103155.5/(1−6%) = 9383/103155.5 × (1−6%)/(1+0.13%) ＜ 9383/103155.5 ＜ 10%，不足一成，错误； C项，定位文字材料第四段，2015年3月末，国有企业资产总额同比增长量=105…(+97)
+--- Q2 @L104: ### 第 2 题
+### 第 2 题 下列哪组气体对环境的负面影响最大？ A. 一氧化氮、二氧化硫 B. 二氧化碳、水蒸气 C. 氢气、稀有气体 D. 甲烷、氮气
+  ANS: A
+  ANA: A项，一氧化氮是一种无色无味，难溶于水的有毒气体，在空气中易被氧化成二氧化氮，而后者有强烈腐蚀性和毒性。一氧化氮对环境有危害，对水体、土壤和大气可造成污染。二氧化硫是最常见、最简单的硫氧化物，是大气主要污染物之一。在大气中，二氧化硫会氧化而形成硫酸雾或硫酸盐气溶胶，是环境酸化的重要前驱物。二者对环境均有较大危害。 B项，二氧化碳是空气中常见的温室气体，是一种气态化合物，常温下是一种无色无味、不助燃、不可燃的气体，密度比空气大。二氧化碳对环境的负面影响主要是因为它具有保温的作用，会逐渐使地球表面温度升高，被认为是加剧温室效应的主要来源。水蒸气是水的气体形式，其对环境的负面影响在于水蒸气是一种温室…(+98)
+--- Q119 @L4452: ### 第 119 题
+### 第 119 题 2015年3月末，中央企业的资产负债率（负债总额÷资产总额）约在以下哪个范围内？ A. 50%以下 B. 50%-60% C. 60%-70% D. 70%以上
+  ANS: C
+  ANA: 根据题干中“2015年3月末······资产负债率（负债总额 ÷ 资产总额）”，可以判断本题为比值计算问题。参看第四段材料，中央企业负债总额363304亿元，资产总额554658.3亿元，代入资产负债率公式： 负债总额/资产总额 = 363304/554658.3 ≈ 36/55 ≈ 65%。因此在60%~70%范围内。 故正确答案为C。 **考点**：比值计算、文字资料 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第104题 </details>

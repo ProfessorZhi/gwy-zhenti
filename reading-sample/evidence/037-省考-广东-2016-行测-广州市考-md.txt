@@ -1,0 +1,142 @@
+# PACKET 省考/广东/2016/行测-广州市考.md
+META {"path": "省考/广东/2016/行测-广州市考.md", "file_sha": "d92441b7bc86999ae77eeb6e20f103a259bd5f5527f858e5332ebd4f4596d157", "bytes": 131423, "pr140_sha": "d92441b7bc86999ae77eeb6e20f103a259bd5f5527f858e5332ebd4f4596d157", "pr140_same": true, "key": "", "source_sha": "", "area": "广东", "year": "2016", "subject": "行测", "variant": "统考", "nature": "正式真题", "validation": "机器校验（并卷/题号/图片/去泄露/G1–G5）；未人工通读", "source_class": "", "template": "mixed-level", "qcount": 100, "h2": 87, "h3": 16, "tables": 0, "images": 23, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 455, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 100, "opt_label_hist": {"ABCD": 99, "AABCD": 1}, "flags": ["HD008", "LX004", "LX004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 广东
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 正式真题
+- 来源: ["xingcezhenti"]
+- 校验状态: 机器校验（并卷/题号/图片/去泄露/G1–G5）；未人工通读
+
+## OUTLINE (non-question headings)
+  L15 # 2016 广州市公务员录用考试 行测（统考）
+  L2220 ## 材料 1
+  L2359 ## 材料 2
+  L2494 ## 材料 3
+
+## QUESTION TABLE (100)
+  Q  1@25     d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  2@48     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@74     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@102    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@125    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@148    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@171    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  8@201    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@225    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 10@249    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@275    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@298    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 13@324    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@350    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@373    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 16@399    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 17@423    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 18@447    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@472    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 20@496    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 21@520    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 22@544    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 23@568    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 24@593    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@618    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@644    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 27@671    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@698    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 29@722    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@749    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@775    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@800    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 33@827    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@854    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 35@879    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@904    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 37@932    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@960    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@987    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1012   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1037   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 42@1062   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1085   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 44@1108   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1137   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1160   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1191   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1214   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 49@1237   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 50@1264   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1287   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 52@1310   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 53@1333   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 54@1356   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 55@1391   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 56@1419   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@1447   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@1473   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@1499   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 60@1528   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 61@1556   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 62@1588   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@1616   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@1644   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@1672   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 66@1704   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@1741   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@1770   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 69@1800   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@1832   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@1861   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@1891   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 73@1920   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@1950   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 75@1981   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2003   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@2025   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2047   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2069   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@2100   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@2122   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 82@2144   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@2166   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 84@2193   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@2232   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@2255   d=Y opts=AABCD  ans=C      ana=Y ref=
+  Q 87@2278   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@2301   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 89@2330   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 90@2366   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 91@2389   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@2411   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@2436   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@2465   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 95@2499   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@2522   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@2545   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@2568   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@2591   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q100@2620   d=Y opts=ABCD   ans=B      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L25: ## 第 1 题　<sub>qid 2062666 · 新思想</sub>
+## 第 1 题 <sub>qid 2062666 · 新思想</sub> 习近平同志在文艺工作座谈会上的重要讲话中，列举了我国名篇佳作，如《采薇》《关雎》《天问》《敕勒歌》。其中反映士兵征战生活的是： - **A**. 《采薇》 - **B**. 《关雎》 - **C**. 《天问》 - **D**. 《敕勒歌》
+  ANS: A
+  ANA: 本题考查文学常识，2014年10月15日，习近平总书记在主持召开文艺工作座谈会的重要讲话中提到：我国久传不息的名篇佳作都充满着对人民命运的悲悯、对人民悲欢的关切，以精湛的艺术彰显了深厚的人民情怀。《古诗源》收集的反映远古狩猎活动的《弹歌》，《诗经》中反映农夫艰辛劳作的《七月》、反映士兵征战生活的《采薇》、反映青年爱情生活的《关雎》，探索宇宙奥秘的《天问》，反映游牧生活的《敕勒歌》，歌颂女性英姿的《木兰诗》等，都是从人民生活中产生的。 据此可知，反映士兵征战生活的作品应当是《采薇》。 故正确答案为A。 --- </details>
+--- Q51 @L1287: ## 第 51 题　<sub>qid 2062772 · 数学运算</sub>
+## 第 51 题 <sub>qid 2062772 · 数学运算</sub> 办公室有两台相同型号的饮水机，但水桶中剩余的水量不同。打开一个出水阀，第一台8分钟可将水放干，第二台5分钟可将水放干。如果两台饮水机都同时打开两个出水阀，当第一台饮水机剩余的水量是第二台的2倍时，打开出水阀的时间为（ ）分钟。 - **A**. 1 - **B**. 2 - **C**. 3 - **D**. 4
+  ANS: A
+  ANA: 设出水阀的出水效率为1，则第一台饮水机的水量为8，第二台饮水机的水量为5。打开两个出水阀，当第一台饮水机剩余的水量是第二台的2倍，有8 − 2×t = 2(5 − 2×t)，解得t=1分钟。 故正确答案为A。 --- </details>
+--- Q100 @L2620: ### 第 100 题　<sub>qid 2062764 · 综合</sub>
+### 第 100 题 <sub>qid 2062764 · 综合</sub> 某五金加工厂一周加工的五金零件的统计表破损了，如图所示，表中缺少几个数字。根据这张统计表，星期五加工的零件数比星期六（ ）。 <img width="700px" height="127px" src="../../../图片/省考-广州-2016-行测-统考/题目图/15cbf028d554d5f.png" /> - **A**. 多25件 - **B**. 少15件 - **C**. 多5件 - **D**. 少5件
+  ANS: B
+  ANA: 表格数据为一周内加工零件的统计表，设星期五为7x，星期六为y6。则有63 + 77 + 76 + 83 + 69 + 7x + y6 = 75 × 7，得7x + y6 = 525 - 368 = 157，利用尾数计算，可知x=1，星期五加工71件。星期六的加工件数=157-71=86，则星期五加工的零件数比星期六少86 − 71 = 15件。 故正确答案为B。 --- </details>
+--- Q2 @L48: ## 第 2 题　<sub>qid 2062660 · 人文常识</sub>
+## 第 2 题 <sub>qid 2062660 · 人文常识</sub> 供给侧改革意义在于，通过制度变革、结构优化和要素升级，在供给侧放松管制、激发活力、释放创造力，充分发挥市场在资源配置中的决定性作用，进而为中国经济培育新主体、开发新产业、打造新动力。以下措施不是供给侧改革所提倡的工作重点的是： - **A**. 加大减税力度，取消更多行政管制 - **B**. 大众创业、万众创新 - **C**. 国家加大基础设施建设力度 - **D**. 加快淘汰僵尸产业
+  ANS: C
+  ANA: 本题考查政治常识，主要涉及供给侧改革的相关内容。供给侧改革的工作重点是：化解产能过剩、提高全要素生产力、降低企业成本、消化地产库存和防范金融风险，与供给侧相对的是需求侧，主要包括投资、出口和消费三大要素。 A项正确，“加大减税力度，取消更多行政管制” 属于降低企业成本的措施，因此属于供给侧改革的重点。 B项正确，“大众创业、万众创新”属于提高全要素生产力的措施，因此属于供给侧改革的重点。 C项错误，“国家加大基础设施建设力度”需要大量的投资，投资属于需求侧而不属于供给侧。 D项正确，“加快淘汰僵尸产业”属于化解过剩产能的措施，因此属于供给侧改革的重点。 本题为选非题，故正确答案为C。 --- …(+10)
+--- Q99 @L2591: ### 第 99 题　<sub>qid 2062856 · 综合</sub>
+### 第 99 题 <sub>qid 2062856 · 综合</sub> 以下说法错误的是： - **A**. Z市与C市农民工市民化的住房人均公共成本最为接近，而城市管理费用人均公共成本相差最多 - **B**. 仅有C市未对农民工市民化中的孤寡老人付出公共成本，却付出了妇幼保健等公共成本 - **C**. W市的农民工市民化所需的居民合作医疗保险人均公共成本虽然在四个城市中位居中下，但医疗等救助人均公共成本却是最高的 - **D**. J市的农民工市民化所需居民合作医疗保险和妇幼保健两项人均公共成本是四个城市中最高的
+  ANS: B
+  ANA: A项：定位表格最后两项，农民工市民化城市管理费用人均公共成本最小的是Z市，最大的是C市，因此这二者相差最大。农民工市民化住房人均公共成本最小的是Z市和C市，两者相差=8696.9-8570.1=126.8元。Z市与W市相差 = 9975.6 - 8696.9 = 1278.7元，相差最小的是Z市与C市，A项正确，排除； B项：定位表格第4项，W市也未对农民工市民化中的孤寡老人付出公共成本，却付出了妇幼保健等公共成本，B项错误，当选； C项：定位表格第2、4项，W市的农民工市民化所需居民合作医疗保险人均公共成本在四个城市中位列第三，但其医疗等救助人均公共成本为49.4元/年，是四个城市中最高的，…(+96)

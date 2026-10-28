@@ -1,0 +1,154 @@
+# PACKET 省考/黑龙江/2019/行测-边境县-shangantong.md
+META {"path": "省考/黑龙江/2019/行测-边境县-shangantong.md", "file_sha": "d9581f738e1ce32c0a233721e228de7c98a8a72853799114e9399925fcee5efa", "bytes": 69814, "pr140_sha": "d9581f738e1ce32c0a233721e228de7c98a8a72853799114e9399925fcee5efa", "pr140_same": true, "key": "", "source_sha": "", "area": "黑龙江", "year": "2019", "subject": "行测", "variant": "边境县", "nature": "第三方题面克隆，未认证为官方原卷", "validation": "仅源抽取（上岸通）；答案/解析源缺；未人工通读", "source_class": "", "template": "qid-h2", "qcount": 120, "h2": 125, "h3": 0, "tables": 0, "images": 13, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 325, "answers_empty": 120, "multi_answers": 0, "no_analysis_marker": 120, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 120}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 黑龙江
+- 年份: 2019
+- 科目: 行测
+- 卷型: 边境县
+- 真题性质: 第三方题面克隆，未认证为官方原卷
+- 来源: ["shangantong"]
+- 校验状态: 仅源抽取（上岸通）；答案/解析源缺；未人工通读
+
+## OUTLINE (non-question headings)
+  L20 # 2019 黑龙江省公务员录用考试 行测（边境县）
+  L1059 ## 材料 1
+  L1112 ## 材料 2
+  L1178 ## 材料 3
+  L1249 ## 材料 4
+  L1319 ## 答案与解析（来源交叉匹配：xingcezhenti）
+
+## QUESTION TABLE (120)
+  Q  1@33     d=N opts=ABCD   ans=       ana=N ref=
+  Q  2@42     d=N opts=ABCD   ans=       ana=N ref=
+  Q  3@57     d=N opts=ABCD   ans=       ana=N ref=
+  Q  4@66     d=N opts=ABCD   ans=       ana=N ref=
+  Q  5@75     d=N opts=ABCD   ans=       ana=N ref=
+  Q  6@84     d=N opts=ABCD   ans=       ana=N ref=
+  Q  7@93     d=N opts=ABCD   ans=       ana=N ref=
+  Q  8@109    d=N opts=ABCD   ans=       ana=N ref=
+  Q  9@118    d=N opts=ABCD   ans=       ana=N ref=
+  Q 10@127    d=N opts=ABCD   ans=       ana=N ref=
+  Q 11@144    d=N opts=ABCD   ans=       ana=N ref=
+  Q 12@153    d=N opts=ABCD   ans=       ana=N ref=
+  Q 13@162    d=N opts=ABCD   ans=       ana=N ref=
+  Q 14@171    d=N opts=ABCD   ans=       ana=N ref=
+  Q 15@180    d=N opts=ABCD   ans=       ana=N ref=
+  Q 16@189    d=N opts=ABCD   ans=       ana=N ref=
+  Q 17@198    d=N opts=ABCD   ans=       ana=N ref=
+  Q 18@207    d=N opts=ABCD   ans=       ana=N ref=
+  Q 19@216    d=N opts=ABCD   ans=       ana=N ref=
+  Q 20@225    d=N opts=ABCD   ans=       ana=N ref=
+  Q 21@236    d=N opts=ABCD   ans=       ana=N ref=
+  Q 22@246    d=N opts=ABCD   ans=       ana=N ref=
+  Q 23@256    d=N opts=ABCD   ans=       ana=N ref=
+  Q 24@266    d=N opts=ABCD   ans=       ana=N ref=
+  Q 25@276    d=N opts=ABCD   ans=       ana=N ref=
+  Q 26@286    d=N opts=ABCD   ans=       ana=N ref=
+  Q 27@296    d=N opts=ABCD   ans=       ana=N ref=
+  Q 28@306    d=N opts=ABCD   ans=       ana=N ref=
+  Q 29@316    d=N opts=ABCD   ans=       ana=N ref=
+  Q 30@326    d=N opts=ABCD   ans=       ana=N ref=
+  Q 31@336    d=N opts=ABCD   ans=       ana=N ref=
+  Q 32@346    d=N opts=ABCD   ans=       ana=N ref=
+  Q 33@358    d=N opts=ABCD   ans=       ana=N ref=
+  Q 34@368    d=N opts=ABCD   ans=       ana=N ref=
+  Q 35@378    d=N opts=ABCD   ans=       ana=N ref=
+  Q 36@388    d=N opts=ABCD   ans=       ana=N ref=
+  Q 37@398    d=N opts=ABCD   ans=       ana=N ref=
+  Q 38@408    d=N opts=ABCD   ans=       ana=N ref=
+  Q 39@418    d=N opts=ABCD   ans=       ana=N ref=
+  Q 40@428    d=N opts=ABCD   ans=       ana=N ref=
+  Q 41@438    d=N opts=ABCD   ans=       ana=N ref=
+  Q 42@448    d=N opts=ABCD   ans=       ana=N ref=
+  Q 43@458    d=N opts=ABCD   ans=       ana=N ref=
+  Q 44@468    d=N opts=ABCD   ans=       ana=N ref=
+  Q 45@478    d=N opts=ABCD   ans=       ana=N ref=
+  Q 46@488    d=N opts=ABCD   ans=       ana=N ref=
+  Q 47@498    d=N opts=ABCD   ans=       ana=N ref=
+  Q 48@508    d=N opts=ABCD   ans=       ana=N ref=
+  Q 49@522    d=N opts=ABCD   ans=       ana=N ref=
+  Q 50@532    d=N opts=ABCD   ans=       ana=N ref=
+  Q 51@542    d=N opts=ABCD   ans=       ana=N ref=
+  Q 52@552    d=N opts=ABCD   ans=       ana=N ref=
+  Q 53@566    d=N opts=ABCD   ans=       ana=N ref=
+  Q 54@580    d=N opts=ABCD   ans=       ana=N ref=
+  Q 55@590    d=N opts=ABCD   ans=       ana=N ref=
+  Q 56@600    d=N opts=ABCD   ans=       ana=N ref=
+  Q 57@609    d=N opts=ABCD   ans=       ana=N ref=
+  Q 58@624    d=N opts=ABCD   ans=       ana=N ref=
+  Q 59@633    d=N opts=ABCD   ans=       ana=N ref=
+  Q 60@642    d=N opts=ABCD   ans=       ana=N ref=
+  Q 61@651    d=N opts=ABCD   ans=       ana=N ref=
+  Q 62@660    d=N opts=ABCD   ans=       ana=N ref=
+  Q 63@669    d=N opts=ABCD   ans=       ana=N ref=
+  Q 64@684    d=N opts=ABCD   ans=       ana=N ref=
+  Q 65@693    d=N opts=ABCD   ans=       ana=N ref=
+  Q 66@702    d=N opts=ABCD   ans=       ana=N ref=
+  Q 67@713    d=N opts=ABCD   ans=       ana=N ref=
+  Q 68@724    d=N opts=ABCD   ans=       ana=N ref=
+  Q 69@735    d=N opts=ABCD   ans=       ana=N ref=
+  Q 70@746    d=N opts=ABCD   ans=       ana=N ref=
+  Q 71@757    d=N opts=ABCD   ans=       ana=N ref=
+  Q 72@767    d=N opts=ABCD   ans=       ana=N ref=
+  Q 73@777    d=N opts=ABCD   ans=       ana=N ref=
+  Q 74@787    d=N opts=ABCD   ans=       ana=N ref=
+  Q 75@797    d=N opts=ABCD   ans=       ana=N ref=
+  Q 76@807    d=N opts=ABCD   ans=       ana=N ref=
+  Q 77@817    d=N opts=ABCD   ans=       ana=N ref=
+  Q 78@827    d=N opts=ABCD   ans=       ana=N ref=
+  Q 79@837    d=N opts=ABCD   ans=       ana=N ref=
+  Q 80@847    d=N opts=ABCD   ans=       ana=N ref=
+  Q 81@857    d=N opts=ABCD   ans=       ana=N ref=
+  Q 82@866    d=N opts=ABCD   ans=       ana=N ref=
+  Q 83@875    d=N opts=ABCD   ans=       ana=N ref=
+  Q 84@884    d=N opts=ABCD   ans=       ana=N ref=
+  Q 85@893    d=N opts=ABCD   ans=       ana=N ref=
+  Q 86@902    d=N opts=ABCD   ans=       ana=N ref=
+  Q 87@911    d=N opts=ABCD   ans=       ana=N ref=
+  Q 88@920    d=N opts=ABCD   ans=       ana=N ref=
+  Q 89@929    d=N opts=ABCD   ans=       ana=N ref=
+  Q 90@938    d=N opts=ABCD   ans=       ana=N ref=
+  Q 91@947    d=N opts=ABCD   ans=       ana=N ref=
+  Q 92@957    d=N opts=ABCD   ans=       ana=N ref=
+  Q 93@967    d=N opts=ABCD   ans=       ana=N ref=
+  Q 94@981    d=N opts=ABCD   ans=       ana=N ref=
+  Q 95@991    d=N opts=ABCD   ans=       ana=N ref=
+  Q 96@1005   d=N opts=ABCD   ans=       ana=N ref=
+  Q 97@1019   d=N opts=ABCD   ans=       ana=N ref=
+  Q 98@1029   d=N opts=ABCD   ans=       ana=N ref=
+  Q 99@1039   d=N opts=ABCD   ans=       ana=N ref=
+  Q100@1049   d=N opts=ABCD   ans=       ana=N ref=
+  Q101@1067   d=N opts=ABCD   ans=       ana=N ref=
+  Q102@1076   d=N opts=ABCD   ans=       ana=N ref=
+  Q103@1085   d=N opts=ABCD   ans=       ana=N ref=
+  Q104@1094   d=N opts=ABCD   ans=       ana=N ref=
+  Q105@1103   d=N opts=ABCD   ans=       ana=N ref=
+  Q106@1133   d=N opts=ABCD   ans=       ana=N ref=
+  Q107@1142   d=N opts=ABCD   ans=       ana=N ref=
+  Q108@1151   d=N opts=ABCD   ans=       ana=N ref=
+  Q109@1160   d=N opts=ABCD   ans=       ana=N ref=
+  Q110@1169   d=N opts=ABCD   ans=       ana=N ref=
+  Q111@1204   d=N opts=ABCD   ans=       ana=N ref=
+  Q112@1213   d=N opts=ABCD   ans=       ana=N ref=
+  Q113@1222   d=N opts=ABCD   ans=       ana=N ref=
+  Q114@1231   d=N opts=ABCD   ans=       ana=N ref=
+  Q115@1240   d=N opts=ABCD   ans=       ana=N ref=
+  Q116@1272   d=N opts=ABCD   ans=       ana=N ref=
+  Q117@1281   d=N opts=ABCD   ans=       ana=N ref=
+  Q118@1290   d=N opts=ABCD   ans=       ana=N ref=
+  Q119@1299   d=N opts=ABCD   ans=       ana=N ref=
+  Q120@1308   d=N opts=ABCD   ans=       ana=N ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L33: ## 第 1 题　<sub>qid 3_1_2ajlj · 常识判断</sub>
+## 第 1 题 <sub>qid 3_1_2ajlj · 常识判断</sub> 党的十九大报告指出，新时代我国社会主要矛盾是： - **A**. 人民对于建立先进的工业国的要求同落后的农业国的现实之间的矛盾 - **B**. 人民对于经济文化迅速发展的需要同当前经济文化不能满足人民需要的状况之间的矛盾 - **C**. 人民日益增长的物质文化需要同落后的社会生产之间的矛盾 - **D**. 人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾
+--- Q61 @L651: ## 第 61 题　<sub>qid 3_1_2ajpq · 数量关系</sub>
+## 第 61 题 <sub>qid 3_1_2ajpq · 数量关系</sub> 甲、乙、丙三人一起拼车，统一出发，到不同地点。他们约定合乘部分车费平摊。已知甲、乙、丙三人实际支付费用分别为14元、28元、48元，那么在此次拼车过程中，乙节约了： - **A**. 14元 - **B**. 28元 - **C**. 42元 - **D**. 48元
+--- Q120 @L1308: ## 第 120 题　<sub>qid 3_1_2ak6f · 资料分析</sub>
+## 第 120 题 <sub>qid 3_1_2ak6f · 资料分析</sub> 根据资料，下列说法正确的是： - **A**. A 2013～2018年，C省猪肉年平均产量超过72.5万吨 - **B**. B 与2016年相比，C省2017年粮食总产量略有增加 - **C**. C 2014～2018年，C省农牧业综合机械化水平增加了5个百分点 - **D**. D 2015～2018年，C省稻谷产量的年均复合增长率约为 31.8% --- ## 答案与解析（来源交叉匹配：xingcezhenti） > 来源卷（xingcezhenti）中无此卷，**答案源缺，全部待修**。
+--- Q2 @L42: ## 第 2 题　<sub>qid 3_1_2ajll · 常识判断</sub>
+## 第 2 题 <sub>qid 3_1_2ajll · 常识判断</sub> 经过长期努力，中国特色社会主义进入了新时代，这是我国发展新的历史方位。这个新时代，是承前启后、继往开来、在新的历史条件下继续夺取中国特色社会主义伟大胜利的时代，是 ，是 ，是 ，是 。 ①决胜全面建成小康社会、进而全面建设社会主义现代化强国的时代 ②全国各族人民团结奋斗、不断创造美好生活、逐步实现全体人民共同富裕的时代 ③久经磨难的中华民族从站起来到富起来的时代 ④全体中华儿女勠力同心、奋力实现中华民族伟大复兴中国梦的时代 ⑤我国日益走近世界舞台中央、不断为人类作出更大贡献的时代 依次填入划横线部分最恰当的一项是： - **A**. ②③④⑤ - **B**. ①②③④ - **C**. ①③④⑤ - **D**. ①②④⑤
+--- Q119 @L1299: ## 第 119 题　<sub>qid 3_1_2ak6e · 资料分析</sub>
+## 第 119 题 <sub>qid 3_1_2ak6e · 资料分析</sub> 以下农作物中，2016年C省产量最高的是： - **A**. 油料 - **B**. 甜菜 - **C**. 水果 - **D**. 小麦

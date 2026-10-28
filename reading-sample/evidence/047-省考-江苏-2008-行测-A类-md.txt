@@ -1,0 +1,153 @@
+# PACKET 省考/江苏/2008/行测-A类.md
+META {"path": "省考/江苏/2008/行测-A类.md", "file_sha": "6a4eab451427e57303935b68dd2c81a16ba7646ac5c9bc37aad854b11b72f470", "bytes": 111998, "pr140_sha": "6a4eab451427e57303935b68dd2c81a16ba7646ac5c9bc37aad854b11b72f470", "pr140_same": true, "key": "xingce:79", "source_sha": "f1e97da35fe9aa8eb56fc04ea484f0fd25b915a2632d8f57ef7f93c2d0cd74dc", "area": "江苏", "year": "2008", "subject": "行测", "variant": "A类", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 105, "h2": 7, "h3": 105, "tables": 40, "images": 19, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 337, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 105}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 江苏
+- 年份: 2008
+- 科目: 行测
+- 卷型: A类
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3uqut28
+- 源试卷ID: 79
+- 采集时间: 2026-10-25T08:54:33.170Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2008年江苏省公务员录用考试《行测》题（A类）
+  L33 ## 题型与作答说明
+  L59 ## 题目
+  L3219 ## 材料 1
+  L3395 ## 材料 2
+  L3549 ## 材料 3
+  L3717 ## 材料 4
+  L3878 ## 材料 5
+
+## QUESTION TABLE (105)
+  Q  1@61     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@91     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  3@119    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  4@159    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  5@191    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@223    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@253    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  8@281    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@309    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@337    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 11@373    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@401    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 13@429    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@461    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 15@497    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 16@527    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@559    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@589    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@621    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 20@651    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 21@681    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 22@711    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@743    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@775    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@813    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@843    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@879    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 28@921    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 29@963    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 30@1005   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1047   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 32@1089   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1127   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 34@1167   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 35@1209   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 36@1251   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1289   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1331   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@1373   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 40@1411   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1449   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1481   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1513   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1545   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1577   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1609   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1641   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1673   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 49@1705   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1737   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1769   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1813   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1855   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@1895   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@1941   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@1995   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 57@2043   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2087   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 59@2133   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 60@2195   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@2251   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 62@2291   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 63@2333   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@2371   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@2411   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 66@2451   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2507   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2565   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@2627   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2689   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2751   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 72@2797   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 73@2843   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 74@2891   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2943   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 76@2991   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@3037   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@3085   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@3129   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@3177   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@3229   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 82@3261   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@3295   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 84@3331   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 85@3363   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3409   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3437   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3465   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@3493   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@3521   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 91@3577   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@3605   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3633   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 94@3661   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 95@3689   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3732   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3762   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@3792   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3820   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q100@3850   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q101@3884   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q102@3912   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q103@3940   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q104@3968   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@3996   d=Y opts=ABCD   ans=A      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L61: ### 第 1 题
+### 第 1 题 27，29，33，41，57，（ ） A. 87 B. 88 C. 89 D. 91
+  ANS: C
+  ANA: 本题为二级作差数列，原数列后项减去前项，可得次生数列2、4、8、16，为等比数列，下一列为32。因此原数列下一项为89。 ![](assets-fenbi-79/339e16d03c23af77bf4320abebabe2b690cccb9a78e875162d677d14add76cb6.png) 故正确答案为C。 **来源**：2008年江苏省公务员录用考试《行测》题（A类）第1题 </details>
+--- Q53 @L1855: ### 第 53 题
+### 第 53 题 所有的天气预报不可能都是准确无误的。下列哪项判断与上述判断的涵义最为相近？ A. 有的天气预报不必然不是准确无误的 B. 有的天气预报必然不是准确无误的 C. 有的天气预报不可能不是准确无误的 D. 所有的天气预报必然是准确无误的
+  ANS: B
+  ANA: 第一步：翻译题干。 所有的天气预报不可能都是准确无误的，即必然存在有的天气预报不是准确无误的。 第二步：逐一分析选项。 A项，“不必然”即“可能”，该项涵义为“有的天气预报可能不是准确无误的”，与题干不相近； B项，有的天气预报必然不是准确无误的，与题干相近； C项，“不可能不”即“必然”，该项涵义为“有的天气预报必然是准确无误的”，与题干不相近； D项，所有的天气预报必然是准确无误的，与题干相反。 故正确答案为B。 **来源**：2008年江苏省公务员录用考试《行测》题（A类）第53题 </details>
+--- Q105 @L3996: ### 第 105 题
+### 第 105 题 与上一年相比，下列年份中地质灾害造成直接经济损失增长率最高的年份是： A. 2000年 B. 2003年 C. 2002年 D. 2006年
+  ANS: A
+  ANA: 四个选项的年份增长率分别为： 2000年：(49.5−24.5)/24.5 = 25/24.5 ＞ 1； 2002年：(51.0 − 35.0)/35.0 ＜ 1； 2003年：(48.7 − 51.0)/51.0 ＜ 0； 2006年：(43.2−36.5)/36.5＜1。 故正确答案为A。 **来源**：2008年江苏省公务员录用考试《行测》题（A类）第105题 </details>
+--- Q2 @L91: ### 第 2 题
+### 第 2 题 2，7，14，98，（ ） A. 1370 B. 1372 C. 1422 D. 2008
+  ANS: B
+  ANA: 从第三项开始，前两项的乘积等于下一项。2×7=14，7 × 14 = 98，14 × 98 = 14 × (100 - 2)= 1400 − 28 = 1372。因此未知项为1372。 故正确答案为B。 **来源**：2008年江苏省公务员录用考试《行测》题（A类）第2题 </details>
+--- Q104 @L3968: ### 第 104 题
+### 第 104 题 1999年至2004年期间，地质灾害造成的直接经济损失高于该期间年平均直接经济损失的年份有： A. 1个 B. 2个 C. 3个 D. 4个
+  ANS: C
+  ANA: 1999年至2004年期间平均值为(24.5+49.5+35.0+51.0+48.7+40.9)÷6≈(25+50+35+51 + 49 + 41) ÷ 6= 251 ÷ 6 ≈ 42，故高于该期间年平均直接经济损失的年份有2000年、2002年、2003年3个。 故正确答案为C。 **来源**：2008年江苏省公务员录用考试《行测》题（A类）第104题 </details>

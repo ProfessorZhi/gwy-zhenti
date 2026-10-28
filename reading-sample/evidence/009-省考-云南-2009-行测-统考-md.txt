@@ -1,0 +1,181 @@
+# PACKET 省考/云南/2009/行测-统考.md
+META {"path": "省考/云南/2009/行测-统考.md", "file_sha": "639b7ec05f417d60db89629844ce41296ff4ad53dcc0737bba575af19c684dc6", "bytes": 139661, "pr140_sha": "639b7ec05f417d60db89629844ce41296ff4ad53dcc0737bba575af19c684dc6", "pr140_same": true, "key": "xingce:129", "source_sha": "1e2210d136bd141d179004dbb542b9f67d9b5ab237ce4b63ac0af566e0783bb3", "area": "云南", "year": "2009", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 130, "h2": 10, "h3": 130, "tables": 15, "images": 14, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 527, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 130}, "flags": ["IM004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 云南
+- 年份: 2009
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3uqvp2r
+- 源试卷ID: 129
+- 采集时间: 2026-10-25T09:04:44.178Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2009年云南省公务员录用考试《行测》题
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L848 ## 材料 1
+  L1016 ## 材料 2
+  L1182 ## 材料 3
+  L1354 ## 材料 4
+  L3938 ## 材料 5
+  L4104 ## 材料 6
+  L4258 ## 材料 7
+  L4412 ## 材料 8
+
+## QUESTION TABLE (130)
+  Q  1@68     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  2@96     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  3@126    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  4@156    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  5@184    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  6@212    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@242    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@270    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@304    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@336    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@368    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@400    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 13@430    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@462    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 15@492    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 16@522    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 17@550    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@582    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@614    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@644    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@672    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 22@704    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@734    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 24@776    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 25@810    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 26@858    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 27@888    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@922    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@956    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 30@986    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1028   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1058   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 33@1088   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1120   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1152   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1196   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 37@1226   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 38@1258   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1290   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1322   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1362   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 42@1392   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1426   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 44@1460   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1490   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 46@1522   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 47@1556   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1588   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1620   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1652   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1686   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1726   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1766   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@1806   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 55@1848   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@1886   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@1926   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@1970   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@2010   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2052   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 61@2090   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2132   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 63@2176   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@2218   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@2260   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 66@2298   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2342   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2378   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@2416   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 70@2458   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 71@2500   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 72@2542   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2584   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 74@2622   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2660   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2700   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@2744   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@2788   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 79@2828   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 80@2872   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2920   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 82@2962   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@3004   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 84@3048   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 85@3094   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3140   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3170   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3204   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3234   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3270   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3304   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3334   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@3364   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3398   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 95@3428   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 96@3458   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3488   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@3516   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 99@3548   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@3580   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3612   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@3646   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q103@3676   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3704   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q105@3732   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q106@3762   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q107@3794   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q108@3842   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@3872   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q110@3908   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@3946   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q112@3976   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q113@4006   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q114@4038   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@4068   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4108   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q117@4138   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q118@4168   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q119@4198   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4228   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q121@4262   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q122@4292   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q123@4322   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q124@4352   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q125@4382   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q126@4424   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q127@4454   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q128@4494   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q129@4534   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q130@4564   d=Y opts=ABCD   ans=B      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 \-1，1，5，11，19，29，( )。 A. 30 B. 31 C. 32 D. 41
+  ANS: D
+  ANA: 观察数列呈递增趋势，变化平缓，无明显倍数关系，优先考虑作差。原数列中后项-前项依次为：2、4、6、8、10、( )，得到公差为2的等差数列，则下一项为12，所求项为：12+29=41。 故正确答案为D。 **来源**：2009年云南省公务员录用考试《行测》题第1题 </details>
+--- Q66 @L2298: ### 第 66 题
+### 第 66 题 烟斗：烟叶 A. 酒柜：茅台 B. 窗户：采光 C. 酒杯：啤酒 D. 烟雾：吸烟
+  ANS: C
+  ANA: 第一步：判断题干词语间逻辑关系。 题干词语是对应关系，烟斗里装烟叶，前者的主要功能是盛放后者。 第二步：判断选项词语间逻辑关系。 A项，酒柜里装茅台，与题干逻辑关系一致，保留； B项，窗户有采光的作用，与题干逻辑关系不一致，排除； C项，酒杯里装啤酒，与题干逻辑关系一致，保留； D项，吸烟会产生烟雾，与题干逻辑关系不一致，排除。 继续分析题干，烟叶和啤酒都是泛指一类事物，而茅台是特指一种品牌的白酒，排除A项。 故正确答案为C。 **考点**：逻辑关系-对应关系 **来源**：2009年云南省公务员录用考试《行测》题第66题 </details>
+--- Q130 @L4564: ### 第 130 题
+### 第 130 题 下列哪种说法不正确： A. 普通铝锭的产量增加了，产值也增加了 B. 拉丝铝的产量增加了，产值也增加了 C. 电工铝的产量增加了，产值也增加了 D. 氢氧化铝产量降低了，产值也减少了
+  ANS: B
+  ANA: A项：定位表格材料可得：普通铝锭实际产量（420吨）＞计划产量（380吨），实际产值（210000元）＞计划产值（190000元），因此普通铝锭的产量和产值都增加了，正确； B项：定位表格材料可得：拉丝铝实际产量（300吨）＜计划产量（550吨），实际产值（600000元）＜计划产值（1100000元），因此拉丝铝的产量和产值都减少了，错误； C项：定位表格材料，没有电工铝计划产量和计划产值的数据，无法推出电工铝的产量和产值情况； D项：定位表格材料可得：氢氧化铝实际产量（50吨）＜计划产量（250吨），实际产值（5000元）＜计划产值（250000元），因此氢氧化铝的产量和产值都减少了，正确…(+77)
+--- Q2 @L96: ### 第 2 题
+### 第 2 题 ![](assets-fenbi-129/c421ebb233b7ed9baa834ba458a6800299d0cd38784621895ebda73630ffae2a.png) 上起第14行，左起第16列的数是： A. 16 B. 17 C. 18 D. 19
+  ANS: D
+  ANA: 观察表格，表格中各行与各列数列变化平缓，考虑作差，各行两两作差后差值相同，是公差为2的等差数列；各列是公差为-1的等差数列，则第14行第1列的数为：2-(14-1)=-11 ；第14行第16列的数为：−11+2×(16−1)=19。 故正确答案为D。 **来源**：2009年云南省公务员录用考试《行测》题第2题 </details>
+--- Q129 @L4534: ### 第 129 题
+### 第 129 题 稀土铝的实际产值比计划产值增加了： A. 19.43% B. 21% C. 21.43% D. 22%
+  ANS: C
+  ANA: 根据题干“稀土铝的实际产值比计划产值增加了”，结合选项带“%”，可判定本题为一般增长率计算问题。定位表格第五、六列，稀土铝的计划产值与实际产值分别为280000元、340000元。实际产值比计划产值增加了= (现期量−基期量)/基期量= (340000 − 280000)/280000= 60000/280000= 3/14 ≈ 21.43%。 故正确答案为C。 **考点**：一般增长率、统计表 **来源**：2009年云南省公务员录用考试《行测》题第129题 </details>

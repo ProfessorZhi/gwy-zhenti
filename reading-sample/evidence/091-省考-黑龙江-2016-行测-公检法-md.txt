@@ -1,0 +1,167 @@
+# PACKET 省考/黑龙江/2016/行测-公检法.md
+META {"path": "省考/黑龙江/2016/行测-公检法.md", "file_sha": "539f3fa98538c6c0196fed9f8484925af129625b922f4109d3e7ba780282a8cd", "bytes": 184818, "pr140_sha": "539f3fa98538c6c0196fed9f8484925af129625b922f4109d3e7ba780282a8cd", "pr140_same": true, "key": "xingce:90048", "source_sha": "92e077ae53a20d01333d188c2939b2e80426cefee1e468045b5b37a730fd2e71", "area": "黑龙江", "year": "2016", "subject": "行测", "variant": "公检法", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 6, "h3": 120, "tables": 27, "images": 16, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 322, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 119, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 黑龙江
+- 年份: 2016
+- 科目: 行测
+- 卷型: 公检法
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8nop1
+- 源试卷ID: 90048
+- 采集时间: 2026-10-19T05:36:19.876Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年黑龙江省公务员录用考试《行测》题（公检法卷）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3904 ## 材料 1
+  L4074 ## 材料 2
+  L4236 ## 材料 3
+  L4412 ## 材料 4
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@106    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@142    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  4@178    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@214    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@250    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  7@282    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@320    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@352    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 10@384    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@422    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@452    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@488    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@524    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@564    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@600    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@636    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@674    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@712    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 20@744    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 21@776    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@814    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@854    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@894    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@936    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 26@972    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@1008   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 28@1044   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1084   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@1116   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 31@1154   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1192   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1230   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1262   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 35@1294   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 36@1332   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 37@1372   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 38@1410   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1446   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1486   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 41@1526   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1574   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1614   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 44@1654   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1694   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1728   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1764   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1798   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 49@1834   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1876   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 51@1914   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1944   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1976   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 54@2014   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@2046   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 56@2076   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@2106   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2136   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@2166   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 60@2196   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@2234   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2300   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 63@2330   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 64@2360   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@2390   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 66@2420   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2466   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 68@2514   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 69@2562   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2610   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 71@2656   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 72@2702   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 73@2748   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 74@2796   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2836   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2882   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2914   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2946   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2978   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@3018   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@3048   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@3092   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3136   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@3180   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 85@3224   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 86@3268   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3312   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@3356   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@3402   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 90@3446   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3490   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3528   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 93@3570   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 94@3616   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3658   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 96@3700   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3742   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@3784   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 99@3826   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3868   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q101@3916   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@3946   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@3976   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q104@4006   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@4038   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@4078   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q107@4108   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q108@4140   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@4170   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q110@4200   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@4254   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q112@4284   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4316   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q114@4346   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@4376   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q116@4429   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q117@4459   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q118@4489   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q119@4519   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4549   d=Y opts=ABCD   ans=B      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 下列哪一人物的发明成果与我国四大发明中的某一项最类似？ A. 爱迪生 B. 贝尔 C. 诺贝尔 D. 瓦特
+  ANS: C
+  ANA: 本题考查科技常识。我国的四大发明是指造纸术、指南针、火药、活字印刷术。 A项错误，爱迪生是美国科学家和发明家，被誉为“世界发明大王”，其发明的留声机、电影摄影机、电灯对世界有极大影响。 B项错误，贝尔是美国发明家、企业家，发明了世界上第一台可用的电话机，被世界誉为“电话之父”。 C项正确，诺贝尔是瑞典化学家、工程师、发明家、军工装备制造商和炸药的发明者，其发明的炸药与我国四大发明中的火药相类似。 D项错误，瓦特是工业革命时期重要人物，改良了蒸汽机，提高了蒸汽机的热效率和运行可靠性，极大地推动了技术进步。 故正确答案为C。 **考点**：科技理论与成就 **来源**：2016年黑龙江省公务员录用…(+27)
+--- Q61 @L2234: ### 第 61 题
+### 第 61 题 某电影公司准备在1-10月中选择两个不同的月份，在其当月的首日分别上映两部电影。为了避免档期冲突影响票房，现决定两部电影中间相隔至少3个月，则有（ ）种不同的排法。 A. 21 B. 28 C. 42 D. 56
+  ANS: D
+  ANA: 此题有歧义，存在两种观点，一种以上映日进行间隔，另一种观点是以上映月份进行间隔。 讲法一（以上映日进行间隔）：正向枚举。要求两部电影间隔至少3个月，两个电影不互相影响，那么第一部电影如果1月1日上映，要独自播放三个月，也就是1、2、3月都是单独播放第一部电影，4月1号就可以上第二部了。则满足要求的排法有： 当第一部电影A在1月上映时，第二部电影B只能在4、5、6、7、8、9、10月中选择，共7种排法； 当第一部电影A在2月上映时，第二部电影B只能在5、6、7、8、9、10月中选择，共6种排法； 当第一部电影A在3月上映时，第二部电影B只能在6、7、8、9、10月中选择，共5种排法； 当第一部电…(+93)
+--- Q120 @L4549: ### 第 120 题
+### 第 120 题 能够从上述材料推出的是： A. 2014年2月，全国快递业务完成量为8亿多件 B. 2015年2月，全国每百万件快递业务中，非有效申诉不到1件 C. 2015年2月，四家企业的每百万件快递业务有效申诉量都高于全国水平 D. 2015年2月，企业1的每百万快递业务延误有效申诉量超过任何企业的2倍
+  ANS: B
+  ANA: 由题干“能够推出的是”判断本题为综合分析问题。 A项：定位文字材料第一段可得“2015年2月份，快递业务量完成8.2亿件，同比增长18.7%”，故2014年2月应为 8.2/(1+18.7%)≈8.2/1.187≈7亿 ，错误； B项：2015年2月有效申诉量为19188件，全部申诉量=19600件，故非有效申诉量=19600-19188=412件。根据第一段文字材料可得总快递业务量=8.2亿，故每百万件快递业务中，非有效申诉量= 412/8.2亿 = 412/820百万 ＜ 1，正确； C项：定位文字材料第二段可得“每百万件快递业务有效申诉量”全国平均=23.4件、企业1=75.13件、企业…(+96)
+--- Q2 @L106: ### 第 2 题
+### 第 2 题 下列**不属于**夫妻共同财产的是： A. 婚前房屋在婚后所得的租金 B. 夫妻关系存续期间，军人的复员费和自主择业费 C. 赠与合同中确定只归一方的财产 D. 婚姻存续期间虽未实际取得，但明确可以取得的知识产权收益
+  ANS: C
+  ANA: A项正确，根据最高人民法院民一庭意见——个人所有房屋的婚后收益认定及其处理中表明：“一方个人所有的房屋婚后用于出租，其租金收入属于经营性收入，应认定为夫妻共同财产。” B项正确，根据《最高人民法院关于适用中华人民共和国民法典婚姻家庭编的解释（一）》第七十一条规定：“人民法院审理离婚案件，涉及分割发放到军人名下的复员费、自主择业费等一次性费用的，以夫妻婚姻关系存续年限乘以年平均值，所得数额为夫妻共同财产。” C项错误，根据《中华人民共和国民法典》第一千零六十三条规定：“下列财产为夫妻一方的个人财产：（一）一方的婚前财产；（二）一方因受到人身损害获得的赔偿或者补偿；（三）遗嘱或者赠与合同中确定只归…(+97)
+--- Q119 @L4519: ### 第 119 题
+### 第 119 题 2015年2月4家企业中，有几家企业的投递服务有效申诉量占该企业当月有效申诉量的比重高于上月水平： A. 1家 B. 2家 C. 3家 D. 4家
+  ANS: B
+  ANA: 由题干“2015年2月比重高于上月水平”判断本题为环比两期比重比较问题。定位文字材料第二段可得四个企业的总有效申诉量的环比增长率分比为b1=48.0%、b2=55.0%、b3=140.0%、b4=36.0%；定位第二个表格材料第四列可得四个企业的投递业务有效申诉量环比增长率分别为a1=53.0%、a2=44.0%、a3=139.0%、a4=41.0%。根据两期比重比较公式可得a>b比重上升，可得上述企业中只有a1＞b1、a4＞b4，故有2家企业比重上升。 故正确答案为B。 **考点**：两期比重、综合资料 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第119题 </de…(+6)

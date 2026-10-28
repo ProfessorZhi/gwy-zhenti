@@ -1,0 +1,147 @@
+# PACKET 省考/西藏/2019/行测-统考.md
+META {"path": "省考/西藏/2019/行测-统考.md", "file_sha": "7d640a46a434a50e56675853b7266ca8b363be6630c594c5a1462f1d2455b431", "bytes": 162835, "pr140_sha": "7d640a46a434a50e56675853b7266ca8b363be6630c594c5a1462f1d2455b431", "pr140_same": true, "key": "xingce:89669", "source_sha": "f1cb359fdfe578012d7e750945ef58f2e1e0478c980dc8ccc2f22544fea2241b", "area": "西藏", "year": "2019", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 100, "h2": 6, "h3": 100, "tables": 45, "images": 19, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 356, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 99, "AABCD": 1}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 西藏
+- 年份: 2019
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u9fagl
+- 源试卷ID: 89669
+- 采集时间: 2026-10-19T08:57:54.438Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2019年420联考《行测》题（西藏卷）（网友回忆版）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3174 ## 材料 1
+  L3342 ## 材料 2
+  L3520 ## 材料 3
+  L3728 ## 材料 4
+
+## QUESTION TABLE (100)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@104    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  3@140    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@176    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@212    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  6@248    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  7@284    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  8@320    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@354    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@390    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@424    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@458    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 13@494    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 14@534    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@570    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 16@606    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 17@646    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@686    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 19@732    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@772    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 21@812    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 22@848    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@894    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@926    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@960    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@990    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 27@1020   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@1050   d=Y opts=AABCD  ans=C      ana=Y ref=
+  Q 29@1092   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 30@1126   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 31@1164   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1196   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 33@1228   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@1260   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1294   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1326   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 37@1370   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1414   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 39@1458   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1502   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1546   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1592   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1636   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 44@1678   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 45@1720   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1762   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 47@1804   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1846   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 49@1888   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 50@1930   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1972   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 52@2002   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 53@2048   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@2098   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 55@2146   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 56@2190   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 57@2238   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2288   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 59@2338   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2386   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 61@2436   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2468   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 63@2500   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2532   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@2570   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2608   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2646   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2684   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@2722   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2760   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2790   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 72@2828   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 73@2864   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2902   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 75@2940   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2978   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@3016   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@3054   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@3092   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@3140   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 81@3186   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 82@3216   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@3246   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 84@3276   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 85@3306   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3356   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3388   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3418   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 89@3454   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@3484   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3556   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3586   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3618   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 94@3658   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 95@3698   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 96@3742   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3772   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3802   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3832   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@3862   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 短期来看，日趋激烈的竞争必将导致相应区域的主题公园 ；而从中长期来看， 了国内外主题公园精粹的集群区域将更有助于吸引来自国内外的增量游客，这对身处其中的本土主题公园而言，将是难得的机遇。 依次填入划横线部分最恰当的一项是： A. 此消彼长 会聚 B. 弱肉强食 荟萃 C. 优胜劣汰 聚集 D. 物竞天择 融汇
+  ANS: C
+  ANA: 第一空，根据前文“竞争”及后文“集群区域将更有助于吸引来自国内外的增量游客”可知，横线处要体现出由于竞争使得主题公园有的生存下来，有的被淘汰。B项“弱肉强食”比喻弱的被强的吞并，C项“优胜劣汰”指生物在生存竞争中适应力强的保存下来，适应力差的被淘汰，两项均符合文意，保留。A项“此消彼长”意为这个下降，那个上升，与文意不符，排除。D项“物竞天择”意为生物相互竞争，能适应者生存下来，“竞”与前文“竞争”语意重复，排除。 第二空，由后文“集群区”可知，横线处要体现出汇集、集合之意，C项“聚集”指集合、凑在一起，符合文意，当选。B项“荟萃”指英俊的人物或精美的东西汇集、聚集，与后文“精粹”语意重复，且…(+95)
+--- Q51 @L1972: ### 第 51 题
+### 第 51 题 某班分小组进行了摘草莓趣味比赛，甲、乙、丙3人分属3个小组。3人摘得的草莓数量情况如下：甲和属于第3小组的那位摘得的数量不一样，丙比属于第1小组的那位摘得少，3人中第3小组的那位比乙摘得多。据此，将3人按摘得的草莓数量从多到少排列，正确的是： A. 甲、乙、丙 B. 甲、丙、乙 C. 乙、甲、丙 D. 丙、甲、乙
+  ANS: B
+  ANA: 此题为组合排列题型，从最大信息入手。题干中“第3组”出现次数最多。结合“甲和属于第3小组的那位摘的数量不一样”和“3人中第三小组那位比乙摘的多”可知：甲不在第3组，乙也不在第3组，所以只能丙在第3组，且丙大于乙；再结合“丙比属于第1小组的那位摘的少”可知，甲在第1组，且丙小于甲，因此草莓数量从多到少应是甲＞丙＞乙。 故正确答案为B。 **考点**：从最大信息开始推 **来源**：2019年河南省选调生选拔考试《行测》试题（网友回忆版）第80题 </details>
+--- Q100 @L3862: ### 第 100 题
+### 第 100 题 根据资料，下列关于我国2000-2017年相关信息说法正确的是： A. 2014年是人工智能专利研发的第一个井喷年 B. 2014年至2017年人工智能领域专利授权量年均增速为120% C. 2017年排名前20的国内专利权人，其人工智能专利授权量占当年人工智能专利授权总量的比例超过了40% D. 中国科学院仅2017年的人工智能专利授权量就接近2000年到2004年5年全国授权量的总和
+  ANS: D
+  ANA: A项：定位图1可得，2000-2014年间人工智能专利授权量平缓上升，2015年增速大幅提高。可知2015年是人工智能专利研发的第一个井喷年，并非2014年，错误； B项：定位图1可得，2014年人工智能领域专利授权量3753件，2017年为17477件。代入公式：(1 + 年均增长率)^n=现期/基期，（n=年份差），(1+r)^3 = 17477/3753≈4.7，(1 + 120%)^3 = 2.2^3 ≈ 10.6。可知2014年至2017年人工智能领域专利授权量年均增速并非120%，错误； C项：结合本篇第3题可知，2017年排名前20的国内专利权人，其人工智能专利授权量为3046件…(+97)
+--- Q2 @L104: ### 第 2 题
+### 第 2 题 音乐教育疏导，是指在通过音乐对大学生进行心理健康教育的过程中，既强调 、发扬民主，又注重 、科学引导。加强音乐教育疏导是大学生思想、心理以及行为活动规律的客观要求。 依次填入划横线部分最恰当的一项是： A. 百家争鸣 循循善诱 B. 广开言路 以理服人 C. 畅所欲言 诲人不倦 D. 求同存异 集思广益
+  ANS: B
+  ANA: 第一空，根据顿号可知，横线处所填成语与“发扬民主”构成并列，应体现出在音乐教育疏导过程中要让每一个大学生充分表达自己的想法。B项“广开言路”指尽量给人们创造发表意见的机会；C项“畅所欲言”指畅快地把要说的话都说出来，均符合文意，保留。A项“百家争鸣”指学术上不同学派之间自由论争，多搭配不同学派之间，与“音乐教育疏导”搭配不当，排除；D项“求同存异”指找出彼此间的共同点，各自保留不同的意见，强调“同”和“异”，而“发扬民主”侧重强调充分发表各自的意见，与文意不符，排除。 第二空，根据顿号可知，横线处所填成语与“科学引导”构成并列，应体现出指引、导向之意。B项“以理服人”指用道理说服人，可以体现出…(+96)
+--- Q99 @L3832: ### 第 99 题
+### 第 99 题 在位列中国人工智能专利授权量前20位的国内专利权人中，企业和高校、科研院校的授权量之比约为： A. 1:1 B. 2:3 C. 1:2 D. 1:3
+  ANS: A
+  ANA: 由题干“企业和高校、科研院校的授权量之比约为”，可判定本题为比值计算问题。定位图2可得人工智能专利授权量排名前20国内专利权人及其专利授权量，定位文字材料可知，排名前20名的高校、科研院校有：北京工业大学、电子科技大学、哈尔滨工业大学、清华大学、北京航天航空大学、华南理工大学、浙江大学、西安电子科技大学及中国科学院，其余均为企业。则高校、科研院校的授权量为61+72+73+155+170+170+186+190+508≈60+70+70+160+170+170+190+190+510=1590，结合本篇第3题，位列中国人工智能专利授权量前20位的国内总量为3046，可计算出企业的授权量约为30…(+97)

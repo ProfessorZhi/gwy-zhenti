@@ -1,0 +1,157 @@
+# PACKET 省考/云南/2026/行测-统考.md
+META {"path": "省考/云南/2026/行测-统考.md", "file_sha": "f7319b7d39cf9d76d88a0dfe844d0f2e0a7e495ddf213e55e5990b63b79edad7", "bytes": 220777, "pr140_sha": "f7319b7d39cf9d76d88a0dfe844d0f2e0a7e495ddf213e55e5990b63b79edad7", "pr140_same": true, "key": "xingce:6050979", "source_sha": "72639dd33a781cf57b4c25f5629b133c682b2d3f7d37bd4a2d210b7106c79afe", "area": "云南", "year": "2026", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 110, "h2": 6, "h3": 110, "tables": 40, "images": 20, "latex_dollars": 0, "placeholder_marks": 9, "longest_line": 448, "answers_empty": 3, "multi_answers": 0, "no_analysis_marker": 3, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 107, "-": 3}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 云南
+- 年份: 2026
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3uatjjf
+- 源试卷ID: 6050979
+- 采集时间: 2026-10-19T20:01:55.385Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2026年云南省公务员录用考试《行测》题（网友回忆版）
+  L35 ## 题型与作答说明
+  L73 ## 题目
+  L3814 ## 材料 1
+  L3978 ## 材料 2
+  L4181 ## 材料 3
+  L4368 ## 未自动迁移的旧版答案
+
+## QUESTION TABLE (110)
+  Q  1@75     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@127    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  3@175    d=Y opts=-      ans=       ana=N ref=
+  Q  4@187    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@227    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  6@277    d=Y opts=-      ans=       ana=N ref=
+  Q  7@289    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@327    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@365    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 10@405    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@445    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@483    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@521    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@559    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@597    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 16@635    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 17@673    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@717    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@755    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 20@793    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 21@831    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 22@867    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@907    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 24@943    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@979    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 26@1015   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 27@1051   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 28@1087   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1123   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 30@1159   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1195   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 32@1231   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1269   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 34@1307   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1345   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 36@1385   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 37@1425   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 38@1465   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1505   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 40@1553   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1591   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1631   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1671   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1709   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1751   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1793   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1839   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 48@1879   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 49@1917   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 50@1957   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 51@1997   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@2027   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@2059   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 54@2089   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@2123   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 56@2161   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2191   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@2237   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 59@2271   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 60@2301   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 61@2339   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 62@2371   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2403   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@2437   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@2471   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2511   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@2555   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2589   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 69@2633   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2677   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2725   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@2769   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 73@2813   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 74@2869   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2913   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2957   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@2999   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@3041   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 79@3083   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@3125   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 81@3167   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 82@3209   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3253   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 84@3295   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@3333   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@3371   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3419   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 88@3468   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 89@3516   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 90@3564   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 91@3612   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@3662   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 93@3710   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3754   d=Y opts=-      ans=       ana=N ref=
+  Q 95@3766   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 96@3820   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@3850   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@3880   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 99@3910   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3940   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3997   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@4027   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q103@4057   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q104@4087   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@4145   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q106@4203   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q107@4233   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q108@4263   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q109@4293   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q110@4333   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L75: ### 第 1 题
+### 第 1 题 党的二十届四中全会提出，加快农业农村现代化，扎实推进乡村全面振兴。下列与之相关说法正确的是（ ）。 ①坚持把解决好“三农”问题作为全党工作重中之重 ②统筹发展科技农业、绿色农业、质量农业、品牌农业 ③稳定土地承包关系，稳步推进三轮承包到期后再延长三十年试点 ④因地制宜完善乡村建设实施机制，分类有序、一体化推进乡村振兴 ⑤健全财政优先保障、金融重点倾斜、社会积极参与的多元投入格局，确保乡村振兴投入力度不断增强 A. ①②③ B. ①②⑤ C. ①②④⑤ D. ②③④⑤
+  ANS: B
+  ANA: 本题考查新思想。 2025年10月23日，《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》发布，以下简称《建议》。 ①正确，《建议》在“八、加快农业农村现代化，扎实推进乡村全面振兴”部分指出：“坚持把解决好‘三农’问题作为全党工作重中之重，促进城乡融合发展，持续巩固拓展脱贫攻坚成果，推动农村基本具备现代生活条件，加快建设农业强国。” ②正确，③错误，《建议》在“八、加快农业农村现代化，扎实推进乡村全面振兴”部分指出：“（25）提升农业综合生产能力和质量效益。坚持产量产能、生产生态、增产增收一起抓，统筹发展科技农业、绿色农业、质量农业、品牌农业，把农业建成现代化大产业······稳定…(+96)
+--- Q56 @L2161: ### 第 56 题
+### 第 56 题 甲和乙从全长n米的环形跑道上某一点同时匀速出发，如两人同向跑步，则甲第一次追上乙的用时是两人反向跑步第一次相遇用时的8倍。如两人反向跑步，那么第一次相遇时乙跑了多少米？ A. n/8 B. n/16 C. 3n/8 D. 7n/16
+  ANS: D
+  ANA: 根据题意，设两人反向跑步第一次相遇时所用时间为t，甲的速度为V_1，乙的速度为V_2，根据环形相遇公式n = (V_1+V_2)×t，可得V_1 + V_2 = n/t······①；则两人同向追及时间为8t，根据环形追及公式n=(V1−V2)×8t，V_1 - V_2 = n/(8t)······②；将①-②可得V_2=(n/t-n/(8t))×1/2=7n/(16t)，故两人反向跑步，第一次相遇时乙跑了S乙 = V2 × t = 7n/(16t) × t = 7n/16米。 故正确答案为D。 **考点**：相遇追及 **来源**：2026年贵州省公务员录用考试《行测》题（网友回忆版）第55…(+12)
+--- Q110 @L4333: ### 第 110 题
+### 第 110 题 能够从上述资料中推出的是： A. 2021～2024年，北京年均R&D经费超过3000亿元 B. 2022～2024年，河南R&D经费投入强度的3年同比增量持续递增 C. 2021～2024年，上海、重庆R&D经费投入强度最高的年份是同一个 D. 2024年，江苏、浙江和安徽R&D经费都比2021年增长了30%以上
+  ANS: D
+  ANA: A项：定位统计表，2021~2024年各年份北京R&D经费分别为2629.3亿元、2843.3亿元、2947.1亿元、3278.4亿元。根据公式：平均数= 总量/份数，则2021~2024年，北京年均R&D经费为(2629.3 + 2843.3 + 2947.1 + 3278.4)/4 ≈(2600 + 2800 + 2900 + 3300)/4 = 11600/4 = 2900亿元＜3000亿元，错误； B项：定位统计表，2021~2024年各年份河南R&D经费投入强度分别为1.73%、1.86%、2.00%、2.01%。根据公式：增长量=现期量-基期量，可得2022～2024年各年份河南R…(+99)
+--- Q2 @L127: ### 第 2 题
+### 第 2 题 习近平总书记指出，要提高政治判断力、政治领悟力、政治执行力，主动识变求变应变，强化全局视野和系统思维，加强改革政策统筹、进度统筹、效果统筹，发挥改革整体效应。这一论述最能体现马克思主义的哪些基本观点？ ①实践是检验真理的唯一标准 ②系统的存在依赖于要素之间的相关性中产生的有机统一体 ③质变是量变的必然结果，量变达到一定程度必然引起质变 ④尊重客观规律是正确发挥主观能动性的前提 A. ①② B. ②④ C. ①③ D. ③④
+  ANS: B
+  ANA: 本题考查马克思主义。 ①错误，“实践是检验真理的唯一标准”强调的是实践作为检验真理标准的绝对性、确定性，即认识是否是真理，只有通过实践来检验，此外再无别的检验真理的办法。题干强调的是“提高政治能力”“主动识变求变应变”“强化全局视野和系统思维”以及“加强改革政策统筹”，并未直接提及实践作为检验真理的标准。 ②正确，“系统的存在依赖于要素之间的相关性中产生的有机统一体”强调的是整体性和各要素之间的相互关联，即系统思维。题干中“强化全局视野和系统思维”“加强改革政策统筹、进度统筹、效果统筹”“发挥改革整体效应”体现的是系统思维，即系统是由相互关联的要素组成的有机整体，统筹协调才能发挥整体效应。 ③…(+96)
+--- Q109 @L4293: ### 第 109 题
+### 第 109 题 以下柱状图反映了哪个省市2022～2024年R&D经费同比增量的变化趋势（横轴位置代表增量为0）？ ![](assets-fenbi-6050979/a9275a87ab3eccb88fa00392b14f29916a05329caa030f04dc0d784a68ad68a3.png) A. 安徽 B. 江西 C. 湖北 D. 湖南
+  ANS: C
+  ANA: 根据题干“······反映了哪个省市2022-2024年······同比增量的变化趋势”，可判定本题为增长量比较问题。定位统计表可知2021-2024年安徽、江西、湖北、湖南四个省份各年的R&D经费。根据公式：增长量=现期量-基期量，可得选项中各指标同比增量如下： A项，安徽：2022年，1152.5-1006.1=146.4亿元；2023年，1264.7-1152.5=112.2亿元。2022年同比增量＞2023年同比增量，不符合柱状图变化趋势，排除； B项，江西：2022年，558.2-502.2=56亿元；2023年，604.1-558.2=45.9亿元。2022年同比增量＞2023年同…(+97)

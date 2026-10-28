@@ -1,0 +1,189 @@
+# PACKET 省考/北京/2012/行测-统考.md
+META {"path": "省考/北京/2012/行测-统考.md", "file_sha": "665e4a8d931d95d0ee0c838476caa05d3cb87b1f6b148a4255090be61036d8b5", "bytes": 172971, "pr140_sha": "665e4a8d931d95d0ee0c838476caa05d3cb87b1f6b148a4255090be61036d8b5", "pr140_same": true, "key": "xingce:211", "source_sha": "1d0786f7295c6328e3699aee8307faec6713ee238ed44d737c3697e862a75315", "area": "北京", "year": "2012", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 135, "h2": 13, "h3": 135, "tables": 8, "images": 11, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 336, "answers_empty": 0, "multi_answers": 10, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 135}, "flags": ["IM004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 北京
+- 年份: 2012
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3ur2id3
+- 源试卷ID: 211
+- 采集时间: 2026-10-25T09:39:14.467Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2012年北京市公务员录用考试《行测》题
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L1232 ## 材料 1
+  L1408 ## 材料 2
+  L1588 ## 材料 3
+  L1784 ## 材料 4
+  L1956 ## 材料 5
+  L2146 ## 材料 6
+  L2342 ## 材料 7
+  L4234 ## 材料 8
+  L4402 ## 材料 9
+  L4580 ## 材料 10
+  L4742 ## 材料 11
+
+## QUESTION TABLE (135)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@96     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  3@126    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@156    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  5@184    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@214    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@242    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  8@284    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@320    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 10@362    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@398    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 12@432    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 13@468    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@498    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@530    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 16@562    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@592    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@624    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@662    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@690    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@722    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@752    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@782    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 24@818    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@850    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@882    d=Y opts=ABCD   ans=ABD    ana=Y ref=
+  Q 27@932    d=Y opts=ABCD   ans=ABC    ana=Y ref=
+  Q 28@968    d=Y opts=ABCD   ans=ACD    ana=Y ref=
+  Q 29@1004   d=Y opts=ABCD   ans=ABCD   ana=Y ref=
+  Q 30@1036   d=Y opts=ABCD   ans=ABD    ana=Y ref=
+  Q 31@1068   d=Y opts=ABCD   ans=BC     ana=Y ref=
+  Q 32@1102   d=Y opts=ABCD   ans=ABD    ana=Y ref=
+  Q 33@1132   d=Y opts=ABCD   ans=ABD    ana=Y ref=
+  Q 34@1168   d=Y opts=ABCD   ans=ABCD   ana=Y ref=
+  Q 35@1202   d=Y opts=ABCD   ans=ABCD   ana=Y ref=
+  Q 36@1244   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 37@1276   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1310   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 39@1344   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 40@1376   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1418   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1450   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1484   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1518   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1552   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1606   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 47@1642   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1678   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 49@1716   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1750   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1794   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1828   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1864   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@1896   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@1926   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 56@1966   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 57@2004   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@2040   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@2074   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 60@2110   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@2162   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2198   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2234   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@2272   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@2308   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2356   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 67@2388   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2424   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 69@2460   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 70@2496   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 71@2528   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2558   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 73@2588   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2618   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2648   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2682   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2712   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2742   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 79@2772   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@2802   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 81@2838   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 82@2868   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@2898   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@2928   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@2958   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 86@2988   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 87@3018   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@3050   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 89@3082   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@3114   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 91@3146   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@3192   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3238   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3282   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 95@3332   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 96@3378   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3422   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@3466   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3514   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3550   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3594   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@3640   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q103@3686   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q104@3732   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q105@3770   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q106@3816   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@3860   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q108@3902   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q109@3946   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q110@3990   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q111@4030   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q112@4070   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q113@4114   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@4154   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q115@4196   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4244   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q117@4274   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q118@4304   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q119@4334   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4364   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q121@4408   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q122@4438   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q123@4468   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q124@4514   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q125@4544   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q126@4586   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q127@4616   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q128@4646   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q129@4676   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q130@4706   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q131@4754   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q132@4784   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q133@4814   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q134@4844   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q135@4874   d=Y opts=ABCD   ans=A      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 中国共产党十七届六中全会提出建设社会主义（ ）和到2020年的文化改革发展的奋斗目标。 A. 科技强国 B. 人才强国 C. 文化强国 D. 创新强国
+  ANS: C
+  ANA: 十七届六中全会通过的《中共中央关于深化文化体制改革、推动社会主义文化大发展大繁荣若干重大问题的决定》中提出要努力建设社会主义文化强国，并提出了到2020年的文化改革发展奋斗目标。 故正确答案为C。 **来源**：2012年北京市公务员录用考试《行测》题第1题 </details>
+--- Q68 @L2424: ### 第 68 题
+### 第 68 题 作者认为“使文化高雅得远离民众”的主要原因是： A. 剧场、体育场馆等文化体育设施不足 B. 地方政府对传统书店的发展持相对消极的态度 C. 政府支持基层文化建设的定位有偏差 D. 新建社区中城镇图书馆、中小书店比例不达标
+  ANS: C
+  ANA: 本题为观点态度题。 定位原文最后一段，由“在支持基层文化建设过程中，要切忌一味造大的剧场、体育场馆，那样只会使文化高雅得远离民众”可知，“使文化高雅得远离群众”的主要原因是政府支持基层文化建设的定位存在偏差。 A项错误，文章主要讲的是实体书店网点少，并没有提到剧场、体育场馆等文化体育设施不足； B项是实体书店网点减少的原因，而非“使文化高雅得远离民众”的主要原因； D项错误，文章中说的是“实行城市建设达标制度，如果新建社区中的城镇图书馆、中小书店与所住人口不成比例，即视为不达标”，与题干要求不合，予以排除。 故正确答案为C。 **来源**：2012年北京市公务员录用考试《行测》题第68题 </…(+8)
+--- Q135 @L4874: ### 第 135 题
+### 第 135 题 以下能从资料中推出的是： A. 2009年加拿大是美国最大的管道天然气进口来源地 B. 2009年日本进口液化气的平均价比上年下降了6成以上 C. 2009年世界天然气贸易量比2005年增长1000多亿立方米 D. 出口土耳其的管道天然气占2009年俄罗斯对欧洲管道天然气总出口量的1成以上
+  ANS: A
+  ANA: A项，定位文字材料第二段和第三段：2009年加拿大出口到美国的管道天然气为922.4亿立方米，而美国的进口总量为1044.1亿立方米。加拿大出口量占美国进口总量一半以上，故加拿大是美国最大的管道天然气进口来源地，正确； B项，定位文字材料第五段：“2009年日本进口液化气的平均价为9.06美元/百万英热单位（MBtu），较2008年减少3.49美元/MBtu”。故2009年日本进口液化气的平均价增长率= (−3.49)/(9.06+3.49) ≈ (−3.5)/12.5 = −28%，下降了不到6成，错误； C项，定位文字材料第一段：“2009年世界天然气贸易量达8768.5亿立方米，较200…(+98)
+--- Q2 @L96: ### 第 2 题
+### 第 2 题 国家“十二五”规划纲要提出，我国要实现经济（ ），国内生产总值年均增长（ ）。 A. 持续稳定发展7% B. 持续稳定发展8% C. 平稳较快发展7.5% D. 平稳较快发展7%
+  ANS: D
+  ANA: “十二五”规划纲要（草案）指出，今后五年经济社会发展的主要目标是：经济平稳较快发展，国内生产总值年均增长7%，城镇新增就业4500万人，城镇登记失业率控制在5%以内，价格总水平基本稳定，国际收支趋向基本平衡，经济增长质量和效益明显提高。 故正确答案为D。 **考点**：宏观经济与调控政策 **来源**：2012年北京市公务员录用考试《行测》题第2题 </details>
+--- Q134 @L4844: ### 第 134 题
+### 第 134 题 2009年美国天然气的进口均价比上年下降了： A. 62% B. 56% C. 50% D. 44%
+  ANS: B
+  ANA: 根据题干“······下降了”，结合选项为百分数，可判定本题为一般增长率问题。定位文字材料第五段：“美国天然气的进口价由上年的8.85美元/MBtu下降至3.89美元/MBtu”。则2009年增长率= (3.89 − 8.85)/8.85 ≈ −5/9 ≈ −56%，结果为负，表示下降了56%。 故正确答案为B。 **考点**：一般增长率、文字资料 **来源**：2012年北京市公务员录用考试《行测》题第134题 </details>

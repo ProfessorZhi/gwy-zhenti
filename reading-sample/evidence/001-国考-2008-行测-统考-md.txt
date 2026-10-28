@@ -1,0 +1,187 @@
+# PACKET 国考/2008/行测-统考.md
+META {"path": "国考/2008/行测-统考.md", "file_sha": "cd5285179a256a38b2df8785a5a09896a983a006bf2d313b66d1dce44b435f34", "bytes": 186202, "pr140_sha": "cd5285179a256a38b2df8785a5a09896a983a006bf2d313b66d1dce44b435f34", "pr140_same": true, "key": "xingce:229", "source_sha": "79cb468ce66272ebcb6900bfcb207e241b24e14dd89cc84a9cd939f914aab077", "area": "国考", "year": "2008", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 140, "h2": 6, "h3": 140, "tables": 67, "images": 17, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 284, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 139, "-": 1}, "flags": ["OP005"]}
+
+## FRONTMATTER
+- 考试: 国考
+- 地区: 国考
+- 年份: 2008
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3uquhk6
+- 源试卷ID: 229
+- 采集时间: 2026-10-25T08:50:36.096Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2008年国家公务员录用考试《行测》题
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4450 ## 材料 1
+  L4667 ## 材料 2
+  L4807 ## 材料 3
+  L5001 ## 材料 4
+
+## QUESTION TABLE (140)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@106    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  3@144    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@177    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@215    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@253    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@286    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  8@324    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@362    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 10@398    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 11@440    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 12@484    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 13@520    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@558    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 15@590    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@628    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@664    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@702    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@738    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@772    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 21@810    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 22@844    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@880    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 24@918    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 25@954    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@988    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 27@1024   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@1060   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1094   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 30@1130   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1164   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 32@1198   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1234   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@1268   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1306   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 36@1346   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 37@1384   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1422   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@1462   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1498   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 41@1536   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1564   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1592   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 44@1620   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 45@1648   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 46@1682   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 47@1720   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1748   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1780   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1810   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 51@1842   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 52@1872   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1902   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@1938   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@1968   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@2002   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 57@2032   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 58@2062   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 59@2092   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 60@2122   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 61@2154   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2188   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 63@2222   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@2256   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@2290   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 66@2324   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@2366   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 68@2406   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@2450   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2490   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2532   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2572   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 73@2616   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 74@2660   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2704   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2748   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 77@2786   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2828   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 79@2870   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@2912   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@2954   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 82@2996   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3038   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@3074   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@3116   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 86@3158   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3206   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3256   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 89@3296   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 90@3340   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 91@3384   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 92@3430   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3478   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3526   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 95@3576   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 96@3622   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3652   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@3688   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3720   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q100@3752   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3794   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@3834   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q103@3870   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q104@3900   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@3930   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@3960   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q107@4002   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q108@4034   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q109@4070   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q110@4102   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q111@4134   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q112@4164   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4194   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q114@4228   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q115@4258   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4288   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q117@4318   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q118@4348   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q119@4382   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q120@4414   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q121@4464   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q122@4494   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q123@4524   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q124@4554   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q125@4590   d=Y opts=-      ans=B      ana=Y ref=
+  Q126@4631   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q127@4671   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q128@4701   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q129@4733   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q130@4763   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q131@4839   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q132@4869   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q133@4899   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q134@4929   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q135@4965   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q136@5040   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q137@5072   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q138@5106   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q139@5142   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q140@5182   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 在古典传统里，和谐的反面是千篇一律：“君子和而不同，小人同而不和”，所以和谐的一个条件是对于多样性的认同。中国人甚至在孔子之前就有了对于和谐的经典认识与体现。中国古代的音乐艺术很发达，特别是一些中国乐器，像钟、磬、瑟等各种完全不同的乐器按照一定的韵律奏出动听的音乐，但如果只有一种乐器就会非常单调。 对这段文字概括最准确的是： A. 和谐源于中国古典音乐 B. 差异是和谐的必要条件 C. 中国人很早产生了和谐观念 D. 音乐是对和谐的经典认识和体现
+  ANS: B
+  ANA: 根据提问方式可知本题为中心理解题。 由总结关系词“所以”可以判断出整个题干的语意重点是其后的内容，即“和谐的一个条件是对于多样性的认同”，然后作者以音乐为例对这一观点进行具体阐述。 因此结合选项，B项表述最为全面准确。 A、D项错误，“音乐”只是为阐释观点所举的例子，而非文段论述的主题；C项表述片面，未能抓住材料的语意重点。 故正确答案为B。 **考点**：关联词-因果 **来源**：2008年国家公务员录用考试《行测》题第1题 </details>
+--- Q71 @L2532: ### 第 71 题
+### 第 71 题 价格垄断行为是指经营者通过相互串通或者滥用市场支配地位，操纵市场调节价，扰乱正常的生产经营秩序，损害其他经营者或者消费者合法权益，或者危害社会公共利益的行为。 根据上述定义，下列不属于价格垄断行为的是： A. 几家大型电视机生产企业通过协议联手操纵价格 B. 某商场为了吸引顾客将部分商品低于成本价销售 C. 拥有专利权的工厂凭借市场支配地位，在经销商提货时强制限定转售价格 D. 一家占市场份额70％的大企业以回扣、赠送等方式变相降价，致使商品市场价低于成本价
+  ANS: B
+  ANA: 第一步：找出定义关键词。 “相互串通或者滥用市场支配地位”、“操纵市场调节价”。 第二步：逐一分析选项。 A项中几家大型电视机生产企业，C项中拥有专利权的工厂，D项中大企业以回扣、赠送等方式变相降价都符合关键词“相互串通或者滥用市场支配地位”、“操纵市场调节价”，因此均属于价格垄断行为，排除； B项中商场为了吸引顾客将部分商品降价，并不符合关键词“相互串通或者滥用市场支配地位”，因此不属于价格垄断行为，当选。 本题为选非题，故正确答案为B。 **考点**：方式目的 **来源**：2008年国家公务员录用考试《行测》题第71题 </details>
+--- Q140 @L5182: ### 第 140 题
+### 第 140 题 能从表1、表2获得支持的说法是： I.整个世界的财富越来越集中到少数几个发达国家中 II.传统的世界经济强国在世界经济中的排名和地位已经发生了根本性变化 III.主要的发展中国家在世界经济中扮演着越来越重要的角色 A. I B. II C. III D. I和II
+  ANS: C
+  ANA: I错误：由表2可以看出，世界的财富越来越分散到各个国家当中； II错误：世界经济强国的排名和地位没有太大变化，比如美国、日本、德国仍然占据着前三的位置，因此没有发生根本性变化； III正确：主要的发展中国家中国和巴西国内生产总值占世界的比重均增加，且排名上升。 故正确答案为C。 **考点**：统计表、综合分析 **来源**：2008年国家公务员录用考试《行测》题第140题 </details>
+--- Q2 @L106: ### 第 2 题
+### 第 2 题 “黑马”一词其实是从英语舶来的，原指体育界一鸣惊人的后起之秀，后指实力难测的竞争者或在某一领域独树一帜的人，无贬义或政治含义。首先在英文中使用“黑马”的人，是英国前首相迪斯雷利，他在一本小说中这样描写赛马的场面：“两匹公认拔尖的赛马竟然落后了，一匹‘黑马’，以压倒性优势飞奔。看台上的观众惊呼：‘黑马！黑马！’”从此，“黑马”便成了一个有特殊意义的名词。 这段文字的主要意思是： A. 论证“黑马”词义的起源 B. 阐释“黑马”一词的内涵 C. 分析“黑马”词义的演变 D. 介绍“黑马”的感情色彩
+  ANS: A
+  ANA: 由提问方式可知本题为中心理解题。 材料首句指出“黑马”一词是“从英语舶来的”，并对其含义进行了简单说明，接下来阐述首先在英语中使用“黑马”这个词时的情形，点出其词义的起源。由此可知，题干主要说的就是“黑马”词义的起源。 因此，结合选项应该选择A。 B、D项只是材料的细节信息，没有抓住题干的语意重点，予以排除；C项为强干扰项，题干前半部分虽然用“原指······后指······”点出“黑马”词义发生过变化，此句的重点仍然是解释“黑马”的词义，题干后半部分说的是“黑马”这个词最初使用时的情形，如果选C的话，那么题干还应该包括其词义发生变化后的使用情形，因此C项排除。 故正确答案为A。 **考点**…(+52)
+--- Q139 @L5142: ### 第 139 题
+### 第 139 题 下列说法正确的是： I.2001至2005年间，与主要发展中国家相比，亚洲四小龙的经济增长相对放慢 II.2001至2005年间，日本经济开始摆脱“停滞”状态，经济形势逐渐好转 III.2001至2005年间，国内生产总值在世界排名的变化趋势和其占世界比重的变化趋势是一致的 A. I B. II C. I和II D. II和III
+  ANS: C
+  ANA: I正确：亚洲四小龙的平均增长率比主要发展中国家低，其经济增长相对放慢； II正确：日本在2001、2002两年经济增长率在0％左右徘徊，从2003年开始经济增长率开始逐渐增大，经济形势逐渐好转； III错误：英国、法国国内生产总值在世界排名均下降，但是占世界比重均上升。 故正确答案为C。 **考点**：统计表、综合分析 **来源**：2008年国家公务员录用考试《行测》题第139题 </details>

@@ -1,0 +1,166 @@
+# PACKET 省考/宁夏/2016/行测-统考.md
+META {"path": "省考/宁夏/2016/行测-统考.md", "file_sha": "e4264037bdbfc89fb19cf0a6015ab7d9f13f3c9a9362d9ce71667ba4204d344d", "bytes": 186153, "pr140_sha": "e4264037bdbfc89fb19cf0a6015ab7d9f13f3c9a9362d9ce71667ba4204d344d", "pr140_same": true, "key": "xingce:75910", "source_sha": "cce16f59228f276933ae82f2040519271d12991d1591e2ab7d551726beff9ab6", "area": "宁夏", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 5, "h3": 120, "tables": 25, "images": 17, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 290, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 119, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 宁夏
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8on2j
+- 源试卷ID: 75910
+- 采集时间: 2026-10-19T05:51:00.030Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（宁夏卷）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3980 ## 材料 1
+  L4150 ## 材料 2
+  L4312 ## 材料 3
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  2@104    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  3@142    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@178    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@214    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@250    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@286    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  8@316    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@352    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 10@384    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@414    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@446    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 13@478    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 14@514    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@550    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 16@586    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@622    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@658    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@694    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@734    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@770    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 22@806    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@844    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 24@882    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@918    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@956    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 27@992    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@1026   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1068   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@1104   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1140   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@1180   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@1212   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 34@1248   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 35@1286   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1324   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1362   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1396   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1432   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1468   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1504   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1540   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1582   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1622   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 45@1658   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1694   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 47@1730   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1766   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 49@1802   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1838   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 51@1880   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 52@1918   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1956   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@1994   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@2032   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 56@2070   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 57@2102   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2138   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@2176   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 60@2212   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@2248   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 62@2280   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2314   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 64@2352   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@2388   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2420   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 67@2458   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@2496   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@2534   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 70@2572   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 71@2612   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2652   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2692   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 74@2730   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2776   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 76@2822   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2852   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 78@2882   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 79@2920   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@2956   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2986   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 82@3020   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3050   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 84@3080   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 85@3118   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@3148   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 87@3192   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@3236   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3280   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 90@3324   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3370   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 92@3412   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 93@3458   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3500   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3542   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3584   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3632   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@3680   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3726   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q100@3772   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3818   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q102@3852   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q103@3884   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q104@3916   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q105@3948   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q106@3992   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@4022   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@4052   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q109@4082   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q110@4114   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@4154   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q112@4184   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q113@4216   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q114@4246   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@4276   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4329   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q117@4359   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q118@4389   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q119@4419   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q120@4449   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 下列关于微波的说法正确的是： A. 微波的频率比一般无线电波的频率低 B. 含水量多少对微波加热效果没有影响 C. 微波会被玻璃、塑料和瓷器等物体反射 D. 微波通信容量大、质量好、传输距离远
+  ANS: D
+  ANA: A项错误，微波是指频率为300MHz~300GHz的电磁波。微波频率比一般的无线电波频率高，通常也称为“超高频电磁波”。 B项错误，水分子属极性分子，介电常数较大，其介质损耗因数也很大，对微波具有强吸收能力。 C项错误，微波可以穿过玻璃、陶瓷、塑料等绝缘材料，但不会消耗能量，也不会被反射。 D项正确，由于微波频率很高，所以在不大的相对带宽下，其可用的频带很宽，可达数百甚至上千兆赫兹，这是低频无线电波无法比拟的。这意味着微波的信息容量大，所以现代多路通信系统，包括卫星通信系统，几乎都是在微波波段内工作的。 故正确答案为D。 **考点**：物理常识 **来源**：2016年423联考《行测》题（贵…(+17)
+--- Q61 @L2248: ### 第 61 题
+### 第 61 题 中微子是一种基本粒子，在宏观的宇宙起源及演化中扮演着极为重要的角色。由于没有质量并且不带电荷，和其他物质的相互作用极其微弱，这使得中微子的运动轨迹不会发生改变。那些来自遥远宇宙、来自黑洞边缘或者来自宇宙线发源地的中微子，可以告诉人类那些“源”在哪里，甚至可以让我们一探黑洞的究竟。 最适合做本段文字标题的是： A. 令人惊喜的存在 B. 特立独行的中微子 C. 中微子：宇宙的使者 D. 触不可及：“隐形”的中微子
+  ANS: C
+  ANA: 本段文字围绕中微子进行论述，首句指出中微子在宇宙中的重要作用，随后指出中微子由于无质量无电荷的特点使其运动轨迹不变，而这稳定的运动轨迹恰恰可以让中微子告诉大家“源”在宇宙的哪里，故C项“宇宙的使者”中的“使者”一词很好地解释了中微子的作用，当选。A项没有主题词，不符合标题填入的原则，排除。B项的“特立独行”侧重特殊性，表述相较于C项而言不够准确，且没有体现出中微子的作用，排除。D项“触不可及”在原文中并未体现，与文意不符，排除。 故正确答案为C。 **考点**：标题填入题 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第33题 </details>
+--- Q120 @L4449: ### 第 120 题
+### 第 120 题 关于2014年1~11月我国货物运输状况，能够从上述资料中推出的是： A. 月均货物运输量约为33亿吨 B. 每吨货物平均运输距离为500多公里 C. 铁路货运量占总体比重低于其货物周转量占总体比重 D. 公路货物周转量同比增量高于水运货物周转量同比增量
+  ANS: C
+  ANA: 由题干“能够从上述资料中推出的是”，可知本题为综合分析问题，找出正确选项。 A项，2014年1—11月货物运输总量为393.2亿吨，可知月均货物运输量=393.2/11 ≈ 35.7亿吨，错误； B项，每吨货物平均运输距离=货物周转总量/货物运输总量\=164873/393.2≈420公里＜500，错误； C项，铁路货运量占总体比重=35/393.2<10%，铁路货物周转量占总体比重=25200.7/164873.0\>10%，因此铁路货运量占总体比重低于其货物周转量占总体比重，正确； D项，定位表格货物周转量中公路和水运，2014年1—11月公路货物周转量为55448亿吨公里，增长率为9.8…(+95)
+--- Q2 @L104: ### 第 2 题
+### 第 2 题 下图所示的是哪种典型地貌？ ![](assets-fenbi-75910/06d745791427b40e1e08d8eab602d1c80d361b6927918a95eb887c4e641911c7.jpg) A. 喀斯特地貌 B. 冰川地貌 C. 丹霞地貌 D. 风蚀地貌
+  ANS: D
+  ANA: A项错误，喀斯特地貌是具有溶蚀力的水对可溶性岩石（大多为石灰岩）进行溶蚀作用等所形成的地表和地下形态的总称。喀斯特地貌地面上往往崎岖不平，岩石绚丽，奇峰林立。 B项错误，冰川地貌是由冰川作用塑造的地貌，属于气候地貌范畴。地貌类型比较多样，按成因分为侵蚀地貌和堆积地貌两类。图中所示并非冰川地貌的特征。 C项错误，丹霞地貌系指由产状水平或平缓的层状铁钙质混合不均匀胶结而成的红色碎屑岩，受垂直或高角度节理切割，并在差异风化、重力崩塌、流水溶蚀、风力侵蚀等综合作用下形成的有陡崖的城堡状、宝塔状、针状、柱状、棒状、方山状或峰林状的地貌特征。 D项正确，风蚀地貌是经由风和风沙流对土壤表面物质及基岩进行的吹…(+97)
+--- Q119 @L4419: ### 第 119 题
+### 第 119 题 哪些运输方式在2014年11月的货物运输量占当月货物运输总量的比重超过上年同期水平？ A. 仅铁路 B. 仅公路 C. 铁路和民航 D. 公路和水运
+  ANS: D
+  ANA: 由题干“比重超过上年同期水平”可知，本题为两期比重问题，仅需比较a与b的大小关系即可，当a＞b时，比重高于上年同期水平。由表格可知，11月货物运输总量同比增速b=7.1%，铁路同比增速a_1\=-6.5%，公路同比增速a_2\=8.6%，水运同比增速a_3\=7.6%，民航同比增速a_4\=3.4%，同比增速高于7.1%的有公路和水运两项。 故正确答案为D。 **考点**：两期比重、统计表 **来源**：2016年423联考《行测》题（贵州卷）第104题 </details>

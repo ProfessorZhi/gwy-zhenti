@@ -1,0 +1,137 @@
+# PACKET 省考/贵州/2008/行测-统考.md
+META {"path": "省考/贵州/2008/行测-统考.md", "file_sha": "f297428fcaf0ce0f0fd982c42cb9d66d2f4274ad346cd78bbd6fc827ae92f4fe", "bytes": 96609, "pr140_sha": "f297428fcaf0ce0f0fd982c42cb9d66d2f4274ad346cd78bbd6fc827ae92f4fe", "pr140_same": true, "key": "xingce:69", "source_sha": "0cf6069f7abf5fc56b751c50cab26b1c1271d4e28225c504e35eafd89a425803", "area": "贵州", "year": "2008", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 88, "h2": 8, "h3": 88, "tables": 12, "images": 6, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 418, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 88}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 贵州
+- 年份: 2008
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3uqvffl
+- 源试卷ID: 69
+- 采集时间: 2026-10-25T09:01:20.731Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2008年贵州省公务员录用考试《行测》题
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L1163 ## 材料 1
+  L1269 ## 材料 2
+  L1459 ## 材料 3
+  L2723 ## 材料 4
+  L2887 ## 材料 5
+  L3051 ## 材料 6
+
+## QUESTION TABLE (88)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@96     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@130    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  4@158    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  5@188    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@218    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@246    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@276    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  9@314    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 10@344    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@374    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 12@410    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@446    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 14@482    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@520    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@558    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@592    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@628    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@664    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@696    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 21@728    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 22@760    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@790    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 24@822    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 25@858    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@896    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 27@932    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@968    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1006   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@1044   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 31@1081   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@1119   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@1171   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1205   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 35@1237   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 36@1281   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1313   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1345   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1387   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1421   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 41@1477   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1511   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1545   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1577   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 45@1613   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1655   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 47@1703   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1751   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1799   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 50@1837   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1878   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1922   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1961   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@2009   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 55@2051   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 56@2089   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 57@2127   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 58@2169   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 59@2213   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 60@2251   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@2287   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2327   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2365   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@2401   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@2439   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 66@2471   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 67@2507   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@2537   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2567   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 70@2597   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 71@2633   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@2663   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 73@2693   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2731   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2761   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 76@2797   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2827   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2857   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2895   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@2925   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@2955   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 82@2991   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3021   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@3057   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 85@3087   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 86@3117   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 87@3147   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3177   d=Y opts=ABCD   ans=B      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 3，3，6，18，（ ） A. 24 B. 72 C. 36 D. 48
+  ANS: B
+  ANA: ![](assets-fenbi-69/fc84abea721eb047f5ea6a0f827da7bbdcdf5c90d207ac8c1ff20010e0ab7d6c.png) 故正确答案为B。 **来源**：2008年贵州省公务员录用考试《行测》题第1题 </details>
+--- Q45 @L1613: ### 第 45 题
+### 第 45 题 某单位要编排一个歌唱节目，在成员的选择上，要考虑以下原则：A的表演经验丰富，必须入选；B与C配合得最好，要么一起去，要么都不去；D的歌唱技巧需要C的指导，D去了，C一定要去；E与B都是唱高音的，只需要去其中一个。 那么这个节目的成员人数可能是多少个？ A. 1或2 B. 1或3 C. 5 D. 2、3或4
+  ANS: D
+  ANA: 本题属于排列组合题型。 第一步：找突破口。 （1）A必须去（事实信息）；（2）（B∧C）/（－B∧－C）；（3）D→C；（4）E/B。 信息量最大的为B，如果B不去，由（2）可知C不去，根据逆否规则，由（3）可知，D不去，由（4）可知，E去，此时只有A、E这1种组合；如果B去，由（2）可知C去，由（3）不确定D，可去可不去，由（4）可知，E不去，此时有A、B、C、D和A、B、C两种组合。 第二步：根据分析，确定答案。 综上，这个节目的成员人数可能是2、3或4个。 故正确答案为D。 **考点**：假设 **来源**：2012年广州市公务员录用考试《行测》题第57题 </details>
+--- Q88 @L3177: ### 第 88 题
+### 第 88 题 下列说法正确的是： A. 自动控制专业以每年57%的规模扩招 B. 生物工程专业2001年招生人数是1998的2.7倍 C. 2000年招生总人数相对最少的一个专业是计算机科学工程专业 D. 电子工程专业四年均以相同比例扩招
+  ANS: B
+  ANA: 自动控制专业2000年相对1999年的扩招规模明显小于50%，故A错误； 生物工程专业2001年招生人数是1998的320/120 = 2 + 2/3 ≈ 2.7倍，故B正确； 2000年招生总人数相对最少的一个专业明显是自动控制专业，故C错误； 电子工程专业显然并非四年均以相同比例扩招，故D错误。 故正确答案为B。 **考点**：统计表、综合分析 **来源**：2008年贵州省公务员录用考试《行测》题第88题 </details>
+--- Q2 @L96: ### 第 2 题
+### 第 2 题 9，4，7，-4，5，4，3，-4，1，4，（ ），（ ） A. 0，4 B. 1，4 C. \-1，-4 D. \-1，4
+  ANS: C
+  ANA: 原数列为交叉数列： 奇数项：9、7、5、3、1、(-1)为等差数列； 偶数项：4、-4、4、-4、4、(-4)为周期数列。 故空缺项分别为-1、-4。 故正确答案为C。 **来源**：2008年贵州省公务员录用考试《行测》题第2题 </details>
+--- Q87 @L3147: ### 第 87 题
+### 第 87 题 2001年的招生人数比1998年的招生人数增加最多的一个专业是： A. 自动控制 B. 生物工程 C. 电子工程 D. 计算机科学工程
+  ANS: B
+  ANA: 由2001年的招生人数减去1998年的招生人数的差，生物工程专业为200，其他专业均小于200。 故正确答案为B。 **考点**：增长量比较、统计表 **来源**：2008年贵州省公务员录用考试《行测》题第87题 </details>

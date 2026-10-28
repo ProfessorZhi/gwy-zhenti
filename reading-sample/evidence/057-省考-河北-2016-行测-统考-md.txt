@@ -1,0 +1,177 @@
+# PACKET 省考/河北/2016/行测-统考.md
+META {"path": "省考/河北/2016/行测-统考.md", "file_sha": "f3d776f320ddf974f084091593a410f812a3a8e345d47c8440cfcecaa88c9d09", "bytes": 199955, "pr140_sha": "f3d776f320ddf974f084091593a410f812a3a8e345d47c8440cfcecaa88c9d09", "pr140_same": true, "key": "xingce:75860", "source_sha": "fad5afa05ea8f77fefdcc2f6ca6c492ebaabf614b7b81989e2e629f380bbb741", "area": "河北", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 130, "h2": 6, "h3": 130, "tables": 31, "images": 19, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 272, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 129, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 河北
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8nh2r
+- 源试卷ID: 75860
+- 采集时间: 2026-10-19T05:32:15.226Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（河北卷）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3490 ## 材料 1
+  L3660 ## 材料 2
+  L3822 ## 材料 3
+  L3997 ## 材料 4
+
+## QUESTION TABLE (130)
+  Q  1@68     d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  2@106    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  3@146    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  4@184    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  5@218    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  6@256    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  7@294    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  8@332    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  9@372    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 10@410    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@446    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@484    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 13@516    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 14@554    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@590    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@622    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@660    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@698    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@734    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@770    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@808    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 22@840    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 23@878    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 24@914    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 25@950    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@986    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 27@1020   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@1060   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 29@1096   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 30@1132   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1168   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 32@1204   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@1240   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1276   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1312   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 36@1350   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1388   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 38@1428   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1464   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1500   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 41@1538   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1568   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1598   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 44@1634   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 45@1664   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1696   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1726   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 48@1756   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 49@1786   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1820   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1850   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1880   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1912   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@1950   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 55@1980   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 56@2018   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 57@2052   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2084   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 59@2116   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2148   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 61@2180   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 62@2226   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2270   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@2316   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@2360   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2404   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 67@2448   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 68@2492   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 69@2526   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2570   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 71@2614   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2656   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2698   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2740   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 75@2782   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2824   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@2866   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2908   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2954   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@2990   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 81@3028   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@3076   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3124   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@3172   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@3220   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 86@3266   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3314   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@3358   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@3398   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 90@3444   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 91@3502   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@3532   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 93@3562   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 94@3592   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3624   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 96@3664   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3694   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 98@3726   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3756   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q100@3786   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3839   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@3869   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@3899   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3929   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q105@3959   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@4014   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q107@4044   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q108@4074   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q109@4104   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q110@4134   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q111@4172   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q112@4210   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q113@4246   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@4284   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q115@4320   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q116@4350   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q117@4386   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q118@4422   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q119@4458   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q120@4494   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q121@4530   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q122@4566   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q123@4606   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q124@4642   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q125@4674   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q126@4706   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q127@4738   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q128@4776   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q129@4812   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q130@4848   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 我国古代对于公文的保密最早可以追溯到夏朝。据史书记载，太史令将“图法”（即国家的重要典志、档案）“宫藏”；商朝时，设立了守藏史这一官职，专门负责保管政府公务文书和典册；周朝继承了商朝的传统，将文书正本收藏于天府——我国历史上最早的中央档案机构。到了秦朝时，在文书上玺印封缄，在传递过程中使用“封泥”已是普遍的一种做法。到了东汉时期，办公文件保密用的“封泥”竟然成为把守关隘的比喻词。《后汉书·隗嚣传》记载：“（王）元请以一丸泥为大王东封函谷关，此万世一时也。”说明守关如封泥，应小心翼翼，不得有一丝疏漏。 这段文字主要介绍的是： A. 历代公文的保密方法 B. “封泥”一词的演变过程 C. 档案储存办法的演变 D. 史书对文书保存方法的记载
+  ANS: A
+  ANA: 文段为按时间先后顺序论述的并列结构，首句指出文段的核心话题“我国古代对于公文的保密”，接着依次论述了夏朝、商朝、周朝、秦朝和东汉时期的公文保密办法。对文段内容进行归纳概括，可知A项契合文段中心，当选。 B项：“封泥”只出现在秦朝和东汉，表述片面，排除； C、D两项：主题词与文段不符，文段谈论的是公文的保密方法而非“档案储存方法”或“文书保存方法”，排除。 故正确答案为A。 【文段出处】《古代公文保密有方》 **考点**：关联词-并列 **来源**：2016年423联考《行测》题（广西卷）第50题 </details>
+--- Q66 @L2404: ### 第 66 题
+### 第 66 题 “气候难民”指的是生存因气候变暖等特殊气候因素而受到威胁的人们，这是一个逐渐扩大的族群。某基金会发表的一份报告称，在未来40年，全球约5到6亿人都面临着沦为“气候难民”的危险。 下列描述中被迫迁移的人们，不属于“气候难民”的是： A. 卡特里娜飓风使得墨西哥海岸的众多居民逃离家乡 B. 印度洋海啸导致了印度、泰国等多国居民被迫迁移 C. 土地沙漠化使曾经繁荣的楼兰古国消亡，国民外迁 D. 海平面上涨使马尔代夫领导人为国民另觅栖身之所
+  ANS: B
+  ANA: 第一步：找到定义关键词。 关键词为“气候变暖”、“导致生存受到威胁”、“逐渐扩大的人群”。 第二步：逐一分析选项。 A项：卡特里娜飓风是由于特殊气候因素引起的，同时众多居民逃离家乡是一种生存威胁，属于“气候难民”，排除； B项：印度洋海啸不是由气候因素引起的，一般是由地震或者气象变化产生的破坏性波浪，不属于“气候难民”，为正确答案，当选； C项：土地沙漠化是由于气候变异或者人类活动引起的，属于“气候难民”，排除； D项：海平面上涨是由于气候因素引起的，导致国民生存受到威胁，符合定义，排除。 本题为选非题，故正确答案为B。 **考点**：原因结果 **来源**：2016年423联考《行测》题（贵…(+18)
+--- Q130 @L4848: ### 第 130 题
+### 第 130 题 下图所示的是哪种典型地貌？ ![](assets-fenbi-75860/06d745791427b40e1e08d8eab602d1c80d361b6927918a95eb887c4e641911c7.jpg) A. 喀斯特地貌 B. 冰川地貌 C. 丹霞地貌 D. 风蚀地貌
+  ANS: D
+  ANA: A项错误，喀斯特地貌是具有溶蚀力的水对可溶性岩石（大多为石灰岩）进行溶蚀作用等所形成的地表和地下形态的总称。喀斯特地貌地面上往往崎岖不平，岩石绚丽，奇峰林立。 B项错误，冰川地貌是由冰川作用塑造的地貌，属于气候地貌范畴。地貌类型比较多样，按成因分为侵蚀地貌和堆积地貌两类。图中所示并非冰川地貌的特征。 C项错误，丹霞地貌系指由产状水平或平缓的层状铁钙质混合不均匀胶结而成的红色碎屑岩，受垂直或高角度节理切割，并在差异风化、重力崩塌、流水溶蚀、风力侵蚀等综合作用下形成的有陡崖的城堡状、宝塔状、针状、柱状、棒状、方山状或峰林状的地貌特征。 D项正确，风蚀地貌是经由风和风沙流对土壤表面物质及基岩进行的吹…(+97)
+--- Q2 @L106: ### 第 2 题
+### 第 2 题 马克·吐温有一次在教堂听牧师演讲，最初他觉得牧师讲得很好，使人感动，准备捐款。过了十分钟，牧师还没有讲完，他就有些不耐烦了，于是他决定只捐一些零钱。又过了十分钟，牧师还没有讲完，于是他决定一分钱也不捐。在心理学上，这种刺激过多和作用时间过久而引起心理极不耐烦或反抗的现象，被称为“超限效应”。目前旨在帮助肌萎缩侧索硬化症患者的“冰桶挑战”项目，也应警惕因过度娱乐化而产生这种效应。以秀开始，但不以秀结尾，留下慈善真精神而不仅是明星录影集，这场跨国接力才算圆满。 对这段文字概括最准确的是： A. “冰桶挑战”应避作秀之嫌 B. 要弱化明星在慈善中的作用 C. 要把握慈善娱乐化的分寸 D. 应适时预防“超限效应”
+  ANS: A
+  ANA: 文段首先用马克·吐温的例子介绍“超限效应”的定义，即刺激过多和作用时间过久而引起心理极不耐烦或反抗的现象，接下来引出“冰桶挑战”项目这个话题，并通过“应”提出对策，要警惕过度娱乐化。尾句进行补充说明，“这场跨国接力”即指代“冰桶挑战”项目，强调其要留下慈善真精神而非以作秀结尾。故文段的重点强调“冰桶挑战”应警惕过度娱乐化产生的作秀行为，对应A项。 B项：“明星”非文段强调的重点，且“慈善”范围扩大，文段强调的是“冰桶挑战”，排除； C项：“慈善娱乐化”范围扩大，文段谈论的主题词为“冰桶挑战”，排除； D项：“适时”强调时机，而文段强调的是不要过度娱乐化而作秀，未强调要挑合适的时间，且文段重点谈…(+93)
+--- Q129 @L4812: ### 第 129 题
+### 第 129 题 在生活中，下列哪一做法或现象与热胀冷缩无关： A. 夏天在架设电线时，不宜把电线绷得太紧 B. 往保温瓶灌开水时，不灌满比灌满更容易保温 C. 把刚煮熟的鸡蛋放到冷水中浸一下，更容易剥壳 D. 冬天往玻璃杯中倒开水，应先用少量开水预热杯子
+  ANS: B
+  ANA: 夏天比较热，电线吸收热量，处于伸张状态；天气转凉后，电线因释放热量，会收缩。所以绷太紧容易导致收缩过量产生拉力，电线容易形变，当形变超过临界值，就会发生断裂，产生事故。A项说法与热胀冷缩有关。 空气是热的不良导体，如果水没有完全灌满，相对于水直接接触瓶盖来说，相当于多了一层保温层。B项说法与热胀冷缩无关。 大多数物质都有“热胀冷缩”的物理特性。但是，各种物质的伸缩程度又各不相同。鸡蛋是由硬的蛋壳和软的蛋白、蛋黄组成的，当温度剧烈变化时，蛋白和蛋壳的步调会不一致，形成了蛋白与蛋壳的脱离。因此，就不会连蛋壳带蛋白一起剥下来。C项说法与热胀冷缩有关。 玻璃是热的不良导体，热量在玻璃中传得很慢，杯子中…(+94)

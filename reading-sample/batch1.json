@@ -1,0 +1,50 @@
+[
+ {"path":"国考/2008/行测-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"OK(表格行选项)","material":"OK","table":"OK","image":"OK"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[{"path":"国考/2008/行测-统考.md","line":4590,"code":"READ_TABLE_OPTIONS","explanation":"第125题四个选项写在 GFM 表格行内（A–D 各占一行），随后附原截图；读者仍可辨认，属模板变体，不是错配。","severity":"info"}],
+  "notes":"140 题全有折叠答案；资料分析材料 1–4 以 H2 插在各题组前；Q125 选项在表格内（A–D 行），题面与截图并存。"},
+
+ {"path":"国考/2009/申论-副省级.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"NA"},
+  "review_type":"SOURCE","status":"AI_PASS",
+  "issues":[],
+  "notes":"4 题、11 则材料、答案齐全、关联材料与题干一致。来源索引把本卷标为 MISSING（无主快照），本 lane 不对源可得性下结论。"},
+
+ {"path":"国考/2016/申论-副省级.md","read_mode":"full","full_file":true,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"VISUAL"},
+  "review_type":"SOURCE","status":"SOURCE_EXCEPTION",
+  "issues":[{"path":"国考/2016/申论-副省级.md","line":178,"code":"READ_ANALYSIS_METADATA_ONLY","explanation":"「**解析**」块内只有 **考点**/**来源** 和一行「只提供解析视频入口」的说明，没有文字解析；这是源侧槽位状态，未在本 lane 核实源可得性。","severity":"info"}],
+  "visual_pending":["5 张参考答案/答题卡位图（assets-fenbi-78636/*.jpg|png），未见原始像素"],
+  "notes":"5 题结构完整；Q1 关联材料已是「材料 2」（与题干「给定资料2」一致，昨天 R1 报的错号在此版本已修）；Q5 有多篇参考范文。"},
+
+ {"path":"国考/2024/行测-地市级.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"OK","material":"OK","table":"OK","image":"OK"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"130 题全 ABCD、答案与解析齐全；8 个表格列数一致；同一图片在两处被引用（材料图复用），不影响阅读。"},
+
+ {"path":"省考/上海/2008/申论-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK(过度)","answer":"OK","option":"OK(判断题ABCD)","material":"OK","table":"NA","image":"NA"},
+  "review_type":"SOURCE","status":"SOURCE_EXCEPTION",
+  "issues":[{"path":"省考/上海/2008/申论-统考.md","line":147,"code":"READ_ANALYSIS_UNKNOWN","explanation":"答案后为「**解析状态：unknown（来源未提供）**」+ 来源行，无文字解析正文；属源侧状态标注，未在本 lane 核实。","severity":"info"}],
+  "notes":"Q1 是判断题（括号内打√/×），A–D 为四个陈述；其余 4 题为写作/概括。全部题都列了「材料 1–9」，属导航冗余但不算错配。"},
+
+ {"path":"省考/上海/2017/行测-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK(含不定项)","option":"OK(占位)","material":"OK","table":"NA","image":"VISUAL"},
+  "review_type":"FORMAT","status":"AI_ISSUE",
+  "issues":[{"path":"省考/上海/2017/行测-统考.md","line":110,"code":"READ_DUP_JIEXI_LABEL","explanation":"每个答案块标题为「**官方解析**」，正文又以「解析 第一步…」开头，渲染成“解析 / 解析 第一步”，全卷 134 处；纯可读性瑕疵，不改题干答案。","severity":"minor"},
+   {"path":"省考/上海/2017/行测-统考.md","line":116,"code":"READ_HR_IN_DETAILS","explanation":"每个折叠块结尾在 </details> 前有一行 `---`，展开后底部多一条分隔线（136 处），视觉冗余。","severity":"minor"}],
+  "visual_pending":["38 张位图：35 题图 + 3 资料分析材料图（../../../图片/省考-上海-2017-行测-统考/…）","3 题（72/75/81）题干用 $…$ 内联公式，渲染依赖数学支持"],
+  "notes":"原卷重建卷：题干 PDF 逐字抽取+答案 PDF 回填；不定项答案 12 题（如 ACD）；图形推理选项在图上、正文写「- **A**. A」占位。解析区公式碎片未重建（源侧既有状态）。"},
+
+ {"path":"省考/上海/2020/申论-行政执法卷.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"NA","answer":"OK","option":"NA","material":"OK","table":"NA","image":"NA"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"3 题（概括/分析/作文），答案齐全；有 `## 参考作答与范文导读`（旧版导读章节），与每题折叠答案并存不冲突；正文 3 处「暂未收录」是在导言表里说明收录状态。"},
+
+ {"path":"省考/上海/2023/行测-A类.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK(1处占位)","option":"OK","material":"OK","table":"OK","image":"OK"},
+  "review_type":"SOURCE","status":"AI_PASS",
+  "issues":[{"path":"省考/上海/2023/行测-A类.md","line":586,"code":"READ_PLACEHOLDER","explanation":"第 40 题为「粉笔暂未收录本题（来源缺题，题位保留）」，折叠块为空——占位题，不是排版缺陷。","severity":"info"}],
+  "notes":"130 题；Q40 占位；Q130 为多选答案 ABCD；抽查 Q1/Q66/Q130 题干-选项-答案-解析连贯。"}
+]

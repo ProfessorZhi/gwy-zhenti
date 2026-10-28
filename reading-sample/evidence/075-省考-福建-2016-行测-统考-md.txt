@@ -1,0 +1,166 @@
+# PACKET 省考/福建/2016/行测-统考.md
+META {"path": "省考/福建/2016/行测-统考.md", "file_sha": "bff477720a2ee3bf1906b4cd2041d9138d3b107fc2072362c2922c80ff9e9a9c", "bytes": 186295, "pr140_sha": "bff477720a2ee3bf1906b4cd2041d9138d3b107fc2072362c2922c80ff9e9a9c", "pr140_same": true, "key": "xingce:75912", "source_sha": "690f772acd0df4ee4b7604254ff7773b93a8d77de7984fc6a574eea84f4e20d0", "area": "福建", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 5, "h3": 120, "tables": 25, "images": 18, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 271, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 119, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 福建
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u7ouaq
+- 源试卷ID: 75912
+- 采集时间: 2026-10-18T20:26:48.725Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（福建卷）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4076 ## 材料 1
+  L4251 ## 材料 2
+  L4421 ## 材料 3
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@100    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  3@132    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@164    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  5@200    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  6@236    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@272    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@308    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@344    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@380    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@418    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@456    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@492    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@530    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@566    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@604    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@640    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 18@676    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 19@712    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@748    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 21@778    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@820    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@860    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@902    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@938    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@974    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 27@1010   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 28@1046   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 29@1082   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@1118   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1152   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 32@1188   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@1228   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@1260   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1296   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 36@1334   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 37@1372   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1410   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1444   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1480   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1516   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1554   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1592   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1632   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1670   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1710   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1742   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 48@1782   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1818   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1856   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1894   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 52@1932   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1970   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@2016   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@2062   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@2098   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2136   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2168   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 59@2206   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 60@2238   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@2276   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 62@2306   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2336   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2368   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 65@2400   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 66@2430   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 67@2468   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2504   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 69@2534   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 70@2568   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 71@2606   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2638   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2670   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2702   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 75@2736   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2768   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2812   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2858   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2902   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@2946   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@2990   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@3034   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3078   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@3112   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@3158   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3202   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3244   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3286   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3322   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 90@3368   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 91@3406   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 92@3448   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3490   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3532   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3574   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3616   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 97@3664   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@3712   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 99@3756   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q100@3802   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3848   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@3888   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q103@3934   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3980   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q105@4028   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q106@4093   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@4123   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@4153   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@4183   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q110@4213   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@4263   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q112@4293   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q113@4323   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@4353   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q115@4385   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4425   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q117@4455   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q118@4487   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q119@4517   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4547   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 下列关于国家征收农民集体所有土地补偿的规定，说法**错误**的是： A. 征收农民集体土地，需要按照被征收土地的原用途予以补偿 B. 征收耕地以外其他土地的补偿标准由省、自治区、直辖市规定 C. 被征收土地上的附着物和青苗的补偿标准，由市、县人民政府规定 D. 征收耕地应给予土地补偿费、安置补助费、地上附着物和青苗的补偿费
+  ANS: C
+  ANA: 根据《中华人民共和国土地管理法》第四十七条相关规定，征收土地的，按照被征收土地的原用途给予补偿。征收耕地的补偿费用包括土地补偿费、安置补助费以及地上附着物和青苗的补偿费。征收其他土地的土地补偿费和安置补助费标准，由省、自治区、直辖市参照征收耕地的土地补偿费和安置补助费的标准规定。被征收土地上的附着物和青苗的补偿标准，由省、自治区、直辖市规定。 本题为选非题，故正确答案为C。 【注】由于《中华人民共和国土地管理法》于2019年进行了修正，此题已经过时，了解即可。 **考点**：其他法律法规 **来源**：2016年423联考《行测》题（贵州卷）第19题 </details>
+--- Q61 @L2276: ### 第 61 题
+### 第 61 题 A工程队的效率是B工程队的2倍，某工程交给两队共同完成需要6天。如果两队的工作效率均提高一倍，且B队中途休息了1天，问要保证工程按原来的时间完成，A队中途最多可以休息几天？ A. 4 B. 3 C. 2 D. 1
+  ANS: A
+  ANA: A工程队的效率是B工程队的2倍，可以赋值A工程队效率为2，B工程队效率为1，此时工程总量为6×(2+1)=18。如果两队的工作效率均提高一倍，A工程队效率即为2×(1+1)=4，B工程队效率为1×(1+1)=2。设A工程队休息t天，则有4×(6-t)+2×(6-1)=18，解得t=4。 故正确答案为A。 **考点**：给效率比例型 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第62题 </details>
+--- Q120 @L4547: ### 第 120 题
+### 第 120 题 能够从上述资料中推出的是： A. 2015年4月全国租赁贸易进出口额比2013年4月翻了一番 B. 2015年1~4月月均全国租赁贸易进出口额超过8亿美元 C. 2013年8~9月全国租赁贸易进出口额超过20亿美元 D. 表中全国租赁贸易进出口额同比下降的月份占总数的三分之一
+  ANS: C
+  ANA: A项：由图形材料可知2015年4月，全国租赁贸易进出口额6.94亿美元，而2014年4月全国租赁贸易进出口额3.39亿美元，同比增长-41.7%，那么2015年4月全国租赁贸易进出口额是2013年4月的6.94/(3.39/(1 − 41.7%)) = (6.94 × 0.583)/3.39≈ 1.2倍 ＜ 2倍，而非翻一番（2倍），错误； B项：由图形材料可知2015年1-4月，全国租赁贸易进出口总额分别为6.90、12.09、5.29、6.94亿美元，求平均可得(6.90+12.09+5.29+6.94)/4= 31.22/4 ＜ 8，错误； C项：由图形材料可知2014年8月和9月，全国…(+98)
+--- Q2 @L100: ### 第 2 题
+### 第 2 题 假如某国出现比较严重的经济衰退，该国当局却不能运用货币政策进行调节。这个国家可能是： A. 德国 B. 美国 C. 英国 D. 新加坡
+  ANS: A
+  ANA: 货币政策是指中央银行为实现既定的目标，运用各种工具调节货币供应量来调节市场利率，通过市场利率的变化来影响民间的资本投资，影响总需求来影响宏观经济运行的各种方针措施。 A项正确，德国属于欧元区国家，而欧洲中央银行负责制定欧盟欧元区的金融及货币政策。欧洲中央银行是超国家层面的中央银行和欧盟成员国的各国家中央银行的有机结合。因此一旦发生经济衰退，德国不能运用独立的货币政策进行调节，必须符合欧洲中央银行的整体政策要求。英国不属于欧元区国家，有自己独立的货币英镑。美国和新加坡均有自己的独立货币美元和新加坡元，三个国家都有独立的中央银行，可以使用货币政策调节本国经济。B、C、D三项不符合题意，排除。 故正…(+71)
+--- Q119 @L4517: ### 第 119 题
+### 第 119 题 2014年5月~2015年4月间，全国租赁贸易进出口总额及同比增速均高于上月的月份有几个？ A. 5 B. 6 C. 7 D. 8
+  ANS: B
+  ANA: 定位图形材料，全国租赁贸易进出口总额及增长率均高于上月的有2014年5、7、9、12月和2015年2、4月，总共6个月。 故正确答案为B。 **考点**：统计图、直接找数 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第109题 </details>

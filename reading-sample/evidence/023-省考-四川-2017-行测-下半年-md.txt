@@ -1,0 +1,146 @@
+# PACKET 省考/四川/2017/行测-下半年.md
+META {"path": "省考/四川/2017/行测-下半年.md", "file_sha": "f5a27fcd9f58f2c3f3c43d3079af03937ef0810efc64ef1e24323f43de7334d2", "bytes": 167274, "pr140_sha": "f5a27fcd9f58f2c3f3c43d3079af03937ef0810efc64ef1e24323f43de7334d2", "pr140_same": true, "key": "xingce:78978", "source_sha": "429547f81896f019f2168b8a583bc43d86fc72e575c2164f0fd3d8896e91dec8", "area": "四川", "year": "2017", "subject": "行测", "variant": "下半年", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 100, "h2": 5, "h3": 100, "tables": 17, "images": 14, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 286, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 100}, "flags": ["IM004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 四川
+- 年份: 2017
+- 科目: 行测
+- 卷型: 下半年
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8vgdg
+- 源试卷ID: 78978
+- 采集时间: 2026-10-19T06:54:13.904Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2017年四川省公务员录用考试《行测》题（下半年）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3426 ## 材料 1
+  L3592 ## 材料 2
+  L3761 ## 材料 3
+
+## QUESTION TABLE (100)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@116    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  3@154    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  4@192    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@230    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  6@268    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@306    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@344    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@382    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 10@420    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 11@458    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@492    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 13@524    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@558    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@592    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@628    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@664    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@698    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@734    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@766    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 21@802    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 22@840    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 23@880    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@918    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@958    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 26@998    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@1038   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@1074   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 29@1110   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@1146   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1180   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 32@1220   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@1260   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1296   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1336   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 36@1376   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 37@1412   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 38@1448   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1484   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 40@1528   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 41@1572   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1618   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1650   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1684   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 45@1714   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1750   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1786   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1826   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 49@1856   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 50@1896   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1934   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 52@1966   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1998   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 54@2034   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 55@2066   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@2108   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@2152   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2196   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 59@2240   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 60@2284   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@2328   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 62@2372   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2416   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@2460   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@2504   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2548   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2590   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2632   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2674   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2716   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2758   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 72@2800   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2842   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2880   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2918   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 76@2956   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 77@3002   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@3048   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@3112   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@3158   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 81@3202   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@3248   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3296   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@3344   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 85@3390   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@3436   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3466   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 88@3496   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 89@3526   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 90@3556   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3605   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@3635   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 93@3665   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3695   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 95@3725   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3773   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 97@3803   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3833   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3863   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3905   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 根据我国相关法律，下列属于企业不正当竞争行为的是： ①某手机生产商为提高市场占有率，采用抽奖销售模式，一等奖是价值12万元的小汽车 ②某运动品牌为扩大销售规模，加大媒体广告宣传，引导消费者购买 ③某企业为提高产品市场占有率，采用商业贿赂手段 ④某电脑生产商为希望小学捐献100台电脑，提高了品牌的知名度，扩大了市场份额 A. ①② B. ①③ C. ②④ D. ③④
+  ANS: B
+  ANA: 本题考查经济法常识，主要涉及《反不正当竞争法》的内容。 ①：《反不正当竞争法》第十条规定：“经营者进行有奖销售不得存在下列情形：······（三）抽奖式的有奖销售，最高奖的金额超过五万元。”该项中有奖销售的一等奖是价值12万元的小汽车，超过了5万元，属于不正当竞争行为中的有奖销售，当选。 ②：企业加大媒体广告宣传，可以使消费者更加了解和注意企业的产品，增加产品销售量，属于合法竞争行为，排除。 ③：《反不正当竞争法》第七条第一款规定：“经营者不得采用财物或者其他手段贿赂下列单位或者个人，以谋取交易机会或者竞争优势：（一）交易相对方的工作人员；（二）受交易相对方委托办理相关事务的单位或者个人；（三…(+96)
+--- Q51 @L1934: ### 第 51 题
+### 第 51 题 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性： ![](assets-fenbi-78978/aba4057f67a094b9e3420a7bd1e4138cf6d3fd79160a7fc48b6a9e550f1169cc.png) A. A B. B C. C D. D
+  ANS: B
+  ANA: 元素组成不同，且无明显属性规律，优先考虑数量规律。观察题干第一组图形的面数量为2、3、4，第二组图形的面数量为2、？、4，因此问号处应为3个面。A项4个面，排除。B项3个面，当选。C项2个面，排除。D项6个面，排除。 故正确答案为B。 **考点**：数量规律-面 **来源**：2017年四川省公务员录用考试《行测》题（下半年）第51题 </details>
+--- Q100 @L3905: ### 第 100 题
+### 第 100 题 能够从上述资料中推出的是： A. 2015年2季度，J省、Z省城镇消费者信心指数环比下降的数值均大于农村消费者信心指数 B. 2014年3季度至2015年2季度，J省、Z省消费者信心指数变化趋势相同 C. 2015年2季度，J省、Z省消费者预期指数值相差10个百分点以上 D. 2014年3季度至2015年2季度，Z省消费者信心指数最高的季度也是该指数环比增速最快的季度
+  ANS: D
+  ANA: A项：定位文字材料第四段，“2015年2季度，Z省……城镇消费者信心指数为111.1，较一季度下降1.4个百分点；农村消费者信心指数为108.7，较一季度下降3.4个百分点”，城镇消费者信心指数环比下降数值小于农村，错误； B项：材料仅提供了2015年1季度与2季度J省消费者信心指数值，2014年3季度与4季度未知，故选项说法无法得出，错误； C项：定位文字材料第三段可得，2015年2季度，J省消费者预期指数（ICS）为103.8，定位统计图可得，2015年2季度，Z省消费者预期指数为111.8，二者相差111.8-103.8=8＜10个百分点，错误； D项：定位统计图，比较2014年3季度至…(+97)
+--- Q2 @L116: ### 第 2 题
+### 第 2 题 下列行为符合我国法律规定的是： A. 房东黄某与吴某签了两年的租房合同，半年后黄某将房屋卖出，通知吴某限期搬出 B. 公安机关为追捕被通缉的犯罪嫌疑人陈某，对其通话进行监听 C. 商场保安王某根据商场的规定，对涉嫌盗窃的赵某进行搜身 D. 债权人李某因找不到拖欠债务的张某，便要求张某的儿子偿还债务
+  ANS: B
+  ANA: 本题考查法律常识。 A项错误，我国《民法典》第七百二十五条规定：“租赁物在承租人按照租赁合同占有期限内发生所有权变动的，不影响租赁合同的效力。”故房东无权要求吴某搬出出租房。体现了“买卖不破租赁”的原理。 B项正确，《刑事诉讼法》第一百四十八条第三款规定：“追捕被通缉或者批准、决定逮捕的在逃的犯罪嫌疑人、被告人，经过批准，可以采取追捕所必需的技术侦查措施。”该项中的监听即属于技术侦查措施之一，因此，公安机关为追捕被通缉的犯罪嫌疑人陈某，可以对其通话进行监听。 C项错误，《宪法》第三十七条第三项规定：“禁止非法拘禁和以其他方法非法剥夺或者限制公民的人身自由，禁止非法搜查公民的身体。”在我国，只有…(+96)
+--- Q99 @L3863: ### 第 99 题
+### 第 99 题 Z省消费者满意指数下降最快的时间段是： A. 2014年2季度 B. 2014年3季度 C. 2015年1季度 D. 2015年2季度
+  ANS: C
+  ANA: 由题干“消费者满意指数下降最快”可知，题目所求为指数下降最大的。定位材料折线图部分可得，选项各时间段的消费者满意指数的变化量分别为： A项：2014年2季度，104.8-105.5=-0.7； B项：2014年3季度，消费者满意指数上升，排除； C项：2015年1季度，108.6-110.1=-1.5； D项：2015年2季度，107.8-108.6=-0.8。 下降最快的为2015年1季度。 故正确答案为C。 注释：中国消费者信心指数由消费者满意指数和消费者预期指数加权平均取得。满意指数是指消费者对当前就业形势、当前家庭收入情况和购买时机的判断，预期指数是指消费者对未来6个月就业形势和家庭收…(+92)

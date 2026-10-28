@@ -1,0 +1,176 @@
+# PACKET 省考/浙江/2012/行测-统考.md
+META {"path": "省考/浙江/2012/行测-统考.md", "file_sha": "2770fcf7abd876ec7b9510dbc23f00d85c422dc9b69b74bb343383dc96b9826b", "bytes": 148392, "pr140_sha": "2770fcf7abd876ec7b9510dbc23f00d85c422dc9b69b74bb343383dc96b9826b", "pr140_same": true, "key": "xingce:215", "source_sha": "3205d01847ea9a3faf5f46cf709f80e331f222add17683db1436ae6d39c8c6d4", "area": "浙江", "year": "2012", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 130, "h2": 5, "h3": 130, "tables": 8, "images": 26, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 310, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 129, "AABCD": 1}, "flags": ["IM004", "IM004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 浙江
+- 年份: 2012
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3uatigp
+- 源试卷ID: 215
+- 采集时间: 2026-10-19T19:48:05.683Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2012年浙江省公务员录用考试《行测》题
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4248 ## 材料 1
+  L4418 ## 材料 2
+  L4592 ## 材料 3
+
+## QUESTION TABLE (130)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@100    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  3@134    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@168    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@202    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@238    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@274    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@310    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@342    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 10@374    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 11@412    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@448    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 13@480    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@512    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@544    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@574    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@610    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@646    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@680    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@712    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 21@756    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@798    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@840    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 24@886    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@918    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@952    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@988    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@1026   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 29@1060   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@1098   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 31@1136   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 32@1170   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1208   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 34@1246   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1280   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1318   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 37@1386   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1414   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@1442   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 40@1508   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 41@1536   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1564   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1594   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 44@1622   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1650   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 46@1678   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 47@1706   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 48@1740   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1768   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1804   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1834   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1864   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1892   d=Y opts=AABCD  ans=B      ana=Y ref=
+  Q 54@1928   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 55@1958   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 56@1988   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2018   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@2046   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 59@2082   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 60@2112   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@2144   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2186   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2228   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2266   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@2308   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 66@2350   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@2392   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@2434   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 69@2476   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2518   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2560   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 72@2604   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2648   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2692   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2732   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2776   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 77@2808   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@2842   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2892   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 80@2924   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@2956   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@2988   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@3020   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@3052   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 85@3084   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 86@3116   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3156   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3200   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@3242   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3288   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3330   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3372   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3424   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3470   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 95@3516   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 96@3556   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3602   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3632   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 99@3668   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@3698   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3732   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q102@3762   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@3796   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q104@3832   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q105@3862   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q106@3908   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q107@3946   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@3976   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q109@4010   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q110@4046   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@4080   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q112@4118   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4148   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q114@4180   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q115@4210   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q116@4262   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q117@4292   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q118@4322   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q119@4358   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q120@4388   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q121@4424   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q122@4454   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q123@4484   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q124@4514   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q125@4556   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q126@4604   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q127@4634   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q128@4664   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q129@4694   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q130@4724   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 房产税并非能直接降低房价，但是能对房价预期起作用，\_\_\_\_\_\_在于建立合理的长效税收机制，对促进商品房市场机制的形成必不可少。今后应征收存量房的房产税，以逐步\_\_\_\_\_\_土地出让金，这一步应及早进行。 依次填入画横线部分最恰当的一项是： A. 目的 废除 B. 意义 取代 C. 影响 废止 D. 价值 取消
+  ANS: B
+  ANA: 此题考查近义实词的辨析。首句是说房产税对房价产生的作用，包括“建立长效税收”“促进市场机制形成”。第一空需填与“作用”意思相近的词，故排除A项“目的”、C项“影响”。在B项和D项中，第二句提到“房产税”和“土地出让金”的关系，从句意理解二者都是征收行为，只能是新的取代旧的，而不是取消、废除、废止。 故正确答案为B。 **考点**：实词填空、对应关系-前后呼应 **来源**：2012年浙江省公务员录用考试《行测》题第1题 </details>
+--- Q66 @L2350: ### 第 66 题
+### 第 66 题 出人头地：苏轼 A. 东山再起：谢安 B. 多多益善：项羽 C. 投笔从戎：班固 D. 指鹿为马：李林甫
+  ANS: A
+  ANA: 第一步：判断题干词语间逻辑关系。 题干两词间是对应关系，即历史典故与其对应的人物。“出人头地”出自欧阳修的《与梅圣俞书》。欧阳修在其中写道：“读轼书，不觉汗出，快哉快哉！老夫当避路，放他出一头之地也。”其中“读轼书”意即“读苏轼的书”，涉及到苏轼。 第二步：判断选项词语间逻辑关系。 A项：“东山再起”对应的是谢安，当选； B项：“多多益善”对应的是韩信； C项：“投笔从戎”对应的是班超； D项：“指鹿为马”对应的是赵高。 故正确答案为A。 **考点**：逻辑关系-对应关系 **来源**：2012年浙江省公务员录用考试《行测》题第66题 </details>
+--- Q130 @L4724: ### 第 130 题
+### 第 130 题 根据资料，下列表述中不正确的一项是： A. 2009年全国用于基础研究的经费投入超过265亿元 B. 2010年我国R&D经费投入强度第二高的行业是医药制造业 C. 2009年全国高等学校投入R&D经费超过480亿元 D. 2010年R&D经费未超过300亿元的省(市)投入经费之和不足全国总量的45%
+  ANS: C
+  ANA: A选项正确，定位材料第二段可知，2009年全国用于基础研究的经费投入为324.5/(1+20.1%)≈270.2＞265亿元； B选项正确，定位材料第四段可知，R&D经费投入强度最高的行业为专用设备制造业，第二位为医药制造业； C选项错误，定位材料第三段可知，2009年全国高等学校投入R&D经费为597.3/(1+27.6%) ≈ 468.1 ＜ 480亿元； D选项正确，定位材料最后一段可知，全国R&D经费超过300亿元的地区总投入占全国经费投入总量的58.6%，则未超过的占1－58.6%＝41.4%＜45%。 本题为选非题，故正确答案为C。 **考点**：综合分析、文字资料 **来源**：…(+36)
+--- Q2 @L100: ### 第 2 题
+### 第 2 题 收藏家从来不是将艺术品作为商品来对待的人，对他们而言，收藏 是一种暂时性的投资， 是一种激情：艺术的激情，物质的激情，历史的激情，占有的激情。正是这种激情重新改写了艺术品的意义。 填入划横线部分最恰当的一项是： A. 与其说 不如说 B. 不仅 而且 C. 尽管 然而 D. 哪怕 也
+  ANS: A
+  ANA: 此题考查虚词的辨析。 本题关键是理解“一种暂时性投资”和“一种激情”两个分句间的关系。从后面对激情的解释，并且下结论说“激情改写了艺术品的意义”可知，作者赞同后者的说法，对前者是否定的，也就是两种观点之间选择后一种，选项A符合选择关系。 故正确答案为A。 **考点**：对应关系-前后呼应 **来源**：2012年浙江省公务员录用考试《行测》题第2题 </details>
+--- Q129 @L4694: ### 第 129 题
+### 第 129 题 分地区看，2010年R&D经费超过300亿且R&D经费投入强度达到或超过全国水平的省（市）有： A. 6个 B. 5个 C. 4个 D. 3个
+  ANS: B
+  ANA: 定位材料最后一段可知，R&D经费超过300亿元的有江苏、广东、北京、山东、浙江和上海6个省（市），R&D经费投入强度达到或超过全国水平的有北京、上海、天津、陕西、江苏、浙江和广东7个省（市），因此同时满足以上两个条件的省（市）有江苏、北京、广东、浙江、上海共5个。 故正确答案为B。 **考点**：文字资料、直接找数 **来源**：2012年浙江省公务员录用考试《行测》题第129题 </details>

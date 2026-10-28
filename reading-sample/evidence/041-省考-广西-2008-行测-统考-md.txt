@@ -1,0 +1,181 @@
+# PACKET 省考/广西/2008/行测-统考.md
+META {"path": "省考/广西/2008/行测-统考.md", "file_sha": "cdb908176f0bce3eab2253c5ecf87aca10cf5d89ad31de43a52ef229ae1fe7cd", "bytes": 140953, "pr140_sha": "cdb908176f0bce3eab2253c5ecf87aca10cf5d89ad31de43a52ef229ae1fe7cd", "pr140_same": true, "key": "xingce:71", "source_sha": "527d861aeb8f8650de6152c1f213e5441bdb2abbf07eab7b432d3db9d63dea3e", "area": "广西", "year": "2008", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 135, "h2": 5, "h3": 135, "tables": 14, "images": 23, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 341, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 135}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 广西
+- 年份: 2008
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3uqupao
+- 源试卷ID: 71
+- 采集时间: 2026-10-25T08:53:29.312Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2008年广西壮族自治区公务员录用考试《行测》题
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4312 ## 材料 1
+  L4472 ## 材料 2
+  L4628 ## 材料 3
+
+## QUESTION TABLE (135)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@96     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  3@126    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  4@154    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@182    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@210    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@238    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@268    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@296    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@326    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 11@356    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@390    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 13@418    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@448    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@478    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@508    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 17@540    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@570    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@606    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@640    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 21@672    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@704    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@734    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 24@764    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 25@796    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@836    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@866    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@900    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@930    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@960    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 31@992    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1022   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 33@1054   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 34@1084   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1112   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1142   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 37@1176   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 38@1206   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1236   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1286   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1316   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1346   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1376   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1410   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 45@1448   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1494   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 47@1526   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1560   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 49@1594   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 50@1624   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 51@1654   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1688   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 53@1722   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 54@1758   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@1792   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@1830   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@1860   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 58@1888   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 59@1922   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@1960   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@1996   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2034   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2072   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@2108   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 65@2146   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 66@2182   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2218   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@2254   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2288   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 70@2324   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 71@2360   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 72@2394   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2428   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2460   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2492   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2526   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@2560   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 78@2592   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 79@2624   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@2656   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2690   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 82@2734   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 83@2780   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@2828   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 85@2874   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 86@2924   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@2970   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 88@3012   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 89@3056   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3102   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3140   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 92@3184   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@3224   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3268   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3312   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3354   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 97@3394   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@3436   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 99@3480   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q100@3520   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3568   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@3606   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q103@3648   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q104@3686   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@3728   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@3770   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@3802   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q108@3838   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q109@3880   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q110@3916   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@3952   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q112@3988   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q113@4024   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@4060   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@4096   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q116@4132   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q117@4168   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q118@4204   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q119@4240   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q120@4276   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q121@4316   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q122@4346   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q123@4376   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q124@4406   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q125@4436   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q126@4478   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q127@4508   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q128@4538   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q129@4568   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q130@4598   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q131@4643   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q132@4673   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q133@4703   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q134@4733   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q135@4763   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 1，6，6，36，（ ），7776 A. 96 B. 216 C. 866 D. 1776
+  ANS: B
+  ANA: 从前四个数字可以看出规律，即前两项的乘积等于第三项，故6×36=216，再用所给数列中的第六项来进行验证，36×216=7776，也正确。 故正确答案为B。 **来源**：2008年广西壮族自治区公务员录用考试《行测》题第1题 </details>
+--- Q68 @L2254: ### 第 68 题
+### 第 68 题 大千世界真正的统治者是构成我们身体的基因，人类（包括所有生物）除了是暂时幸存于世的机器之外，什么也不是，像汽车那样，是为他人的利益而前进。 根据作者的观点，下列哪项判断是错误的： A. 人类依靠基因在延续自己 B. 基因统治着我们这个世界 C. 所有生物都是基因得以延续自己的工具 D. 基因对于人就好比人对于汽车
+  ANS: A
+  ANA: 基因是大千世界真正的统治者，A选项人类依靠基因延续自己，明显不合文意，应是基因依靠人类（包括所有生物）获得延续，与C选项表述相符，故A错误，C正确。 B选项可从“大千世界真正的统治者是构成我们身体的基因”得出；D选项中人是基因延续自己的工具，汽车是人获得利益的工具，两个类比是合适的。 故正确答案为A。 **考点**：细节判断题 **来源**：2008年广西壮族自治区公务员录用考试《行测》题第68题 </details>
+--- Q135 @L4763: ### 第 135 题
+### 第 135 题 根据表中内容，下列选项中可能正确的是： ①消费市场的繁荣，反映了居民收入的增加 ②内需消费正在成为该省经济增长的强劲动力 ③消费增长的拉动作用在不断加强 A. ① B. ①与② C. ②与③ D. ①②与③
+  ANS: D
+  ANA: 通过全文内容，各项零售额涨幅都很大。①②③全可以表现出来。 故正确答案为D。 **考点**：综合分析、综合资料 **来源**：2008年广西壮族自治区公务员录用考试《行测》题第135题 </details>
+--- Q2 @L96: ### 第 2 题
+### 第 2 题 2，7，13，20，25，31，（ ） A. 35 B. 36 C. 37 D. 38
+  ANS: D
+  ANA: ![](assets-fenbi-71/c75d3c6b11b09850bb004956c132c359cacc4bfd33e4e6ce1b1d23250b8466c1.png) 用后一项减去前一项，分别得到5、6、7、5、6，可见，所给数列中，相邻两项的差是以5、6、7为一个循环，则数列第七项减去第六项应该为7，38-31=7。 故正确答案为D。 **来源**：2008年湖北省公务员录用考试《行测》题（A类）第32题 </details>
+--- Q134 @L4733: ### 第 134 题
+### 第 134 题 与2005年相比，2006年社会消费品零售额绝对增长量最大的行业是： A. 批发零售贸易业 B. 住宿和餐饮业 C. 其他行业 D. 无法得知
+  ANS: A
+  ANA: 根据统计表可知，2006年和2005年相比，批发零售贸易业增长量为2386.6−2104.5≈200，住宿和餐饮业为404.3 − 317.4 ≈ 100，其他不足10。故与2005年相比，2006年社会消费品零售额绝对增长量最大的行业是批发零售贸易业。 故正确答案为A。 **考点**：增长量比较、综合资料 **来源**：2008年广西壮族自治区公务员录用考试《行测》题第134题 </details>

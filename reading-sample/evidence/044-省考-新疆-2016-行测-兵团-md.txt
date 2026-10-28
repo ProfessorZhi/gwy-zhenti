@@ -1,0 +1,167 @@
+# PACKET 省考/新疆/2016/行测-兵团.md
+META {"path": "省考/新疆/2016/行测-兵团.md", "file_sha": "a3ca5673e7d7b4187c7d830ff4376e06fe90b08b5c9de2d53681c22c0dba2c80", "bytes": 182745, "pr140_sha": "158d5b9f6e2b33c83574d104e660b408cb7df0834720590b03c025858019a6b9", "pr140_same": false, "key": "xingce:75936", "source_sha": "c8c7b86aa5e90ae8002fdb71f152d2d770beacdc58c08018ec57d44933e1ff5a", "area": "新疆", "year": "2016", "subject": "行测", "variant": "兵团", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 6, "h3": 120, "tables": 39, "images": 21, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 271, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 119, "AABCD": 1}, "flags": ["ES002", "IM004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 新疆
+- 年份: 2016
+- 科目: 行测
+- 卷型: 兵团
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8qdbi
+- 源试卷ID: 75936
+- 采集时间: 2026-10-19T06:10:02.316Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（新疆兵团网友回忆版）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3878 ## 材料 1
+  L4048 ## 材料 2
+  L4223 ## 材料 3
+  L4398 ## 材料 4
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@108    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  3@144    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@180    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  5@216    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@252    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@290    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  8@326    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  9@362    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 10@398    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@434    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@470    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@502    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@540    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@576    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 16@612    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@650    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 18@680    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@716    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@752    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 21@784    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@826    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@866    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 24@900    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@936    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 26@972    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@1008   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@1044   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1086   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@1122   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 31@1158   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1204   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@1244   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 34@1290   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1328   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1366   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1404   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 38@1442   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@1480   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 40@1518   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 41@1556   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1588   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1628   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1664   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1702   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1738   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1770   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1804   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 49@1842   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1874   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 51@1910   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1948   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1982   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@2012   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@2042   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 56@2072   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@2116   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@2148   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 59@2178   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2216   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 61@2252   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 62@2282   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 63@2312   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@2342   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@2380   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2410   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 67@2442   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2474   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 69@2506   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 70@2538   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2570   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@2614   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2658   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 74@2702   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2746   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 76@2790   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2836   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2880   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@2926   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@2970   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 81@3004   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 82@3046   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3084   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@3126   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@3168   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3210   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3246   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 88@3288   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 89@3330   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3372   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 91@3410   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 92@3456   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3500   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 94@3548   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3596   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3644   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@3690   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3736   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3784   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@3832   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3890   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@3920   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@3950   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q104@3980   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@4012   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@4065   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@4095   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@4125   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@4155   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q110@4185   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@4240   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q112@4270   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4300   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q114@4330   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@4360   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q116@4402   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q117@4432   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q118@4464   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q119@4494   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4524   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 下列关于党的重要思想，按提出时间先后顺序排列正确的是： ①社会主义市场经济理论 ②“三个代表”重要思想 ③社会主义本质理论 ④构建社会主义和谐社会理念 A. ①②③④ B. ①②④③ C. ③①②④ D. ③②①④
+  ANS: C
+  ANA: ①社会主义市场经济理论：1992年10月12日，中共十四大报告明确指出，中国经济体制改革的目标是建立社会主义市场经济体制，以利于进一步解放和发展生产力。 ②“三个代表”重要思想：2000年2月，江泽民在广东考察工作，第一次提出“三个代表”要求。2002年11月，江泽民在党的十六大报告中进一步阐述了“三个代表”重要思想的时代背景、历史地位、精神实质和指导意义。党的十六大把“三个代表”重要思想同马克思列宁主义、毛泽东思想、邓小平理论一道，确立为党必须长期坚持的指导思想并写入党章。 ③社会主义本质理论：1992年初，邓小平在“南方谈话”中提出：“社会主义的本质，是解放生产力，发展生产力，消灭剥削，消…(+97)
+--- Q61 @L2252: ### 第 61 题
+### 第 61 题 木匠加工2张桌子和4张凳子共需要10个小时，加工4张桌子和8张椅子需要22个小时。问如果他加工桌子、凳子和椅子各10张，共需要多少小时？ A. 47.5 B. 50 C. 52.5 D. 55
+  ANS: C
+  ANA: 假设加工每张桌子、凳子、椅子的所需时间分别为a小时、b小时、c小时，则2a+4b=10、4a+8c=22，化简得到 a+2b=5……①，a+2c=5.5……②，①+②=2a+2b+2c=10.5，则10(a+b+c)=52.5，所需时间为52.5小时。 故正确答案为C。 **考点**：不定方程组 **来源**：2016年423联考《行测》题（贵州卷）第64题 </details>
+--- Q120 @L4524: ### 第 120 题
+### 第 120 题 能够从上述资料中推出的是： A. 2015年4月全国租赁贸易进出口额比2013年4月翻了一番 B. 2015年1~4月月均全国租赁贸易进出口额超过8亿美元 C. 2013年8~9月全国租赁贸易进出口额超过20亿美元 D. 表中全国租赁贸易进出口额同比下降的月份占总数的三分之一
+  ANS: C
+  ANA: A项：由图形材料可知2015年4月，全国租赁贸易进出口额6.94亿美元，而2014年4月全国租赁贸易进出口额3.39亿美元，同比增长-41.7%，那么2015年4月全国租赁贸易进出口额是2013年4月的6.94/(3.39/(1 − 41.7%)) = (6.94 × 0.583)/3.39≈ 1.2倍 ＜ 2倍，而非翻一番（2倍），错误； B项：由图形材料可知2015年1-4月，全国租赁贸易进出口总额分别为6.90、12.09、5.29、6.94亿美元，求平均可得(6.90+12.09+5.29+6.94)/4= 31.22/4 ＜ 8，错误； C项：由图形材料可知2014年8月和9月，全国…(+98)
+--- Q2 @L108: ### 第 2 题
+### 第 2 题 关于当代文学，下列说法错误的是： A. 《白鹿原》曾获得“茅盾文学奖” B. 《平凡的世界》是史铁生的作品 C. 余华是先锋文学的代表人物之一 D. 电影《大红灯笼高高挂》由苏童的小说改编
+  ANS: B
+  ANA: A项正确，《白鹿原》是陈忠实的代表作。1997年，该小说获得中国第四届茅盾文学奖。 B项错误，《平凡的世界》是中国作家路遥创作的一部百万字的小说，并非由史铁生创作。1991年3月，《平凡的世界》获中国第三届茅盾文学奖。 C项正确，余华是当代文学中先锋派小说的代表作家之一，主要作品有《现实一种》《活着》《许三观卖血记》。 D项正确，《大红灯笼高高挂》改编自苏童的小说《妻妾成群》。 本题为选非题，故正确答案为B。 **考点**：文学常识 **来源**：2016年423联考《行测》题（贵州卷）第15题 </details>
+--- Q119 @L4494: ### 第 119 题
+### 第 119 题 2014年5月~2015年4月间，全国租赁贸易进出口总额及同比增速均高于上月的月份有几个？ A. 5 B. 6 C. 7 D. 8
+  ANS: B
+  ANA: 定位图形材料，全国租赁贸易进出口总额及增长率均高于上月的有2014年5、7、9、12月和2015年2、4月，总共6个月。 故正确答案为B。 **考点**：统计图、直接找数 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第109题 </details>

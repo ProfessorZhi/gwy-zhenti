@@ -1,0 +1,182 @@
+# PACKET 省考/上海/2023/行测-A类.md
+META {"path": "省考/上海/2023/行测-A类.md", "file_sha": "90f2f23dd95511e90b2276cf36f515e29e76ae4ca31fcc77f1d9ca3710e923f6", "bytes": 244245, "pr140_sha": "90f2f23dd95511e90b2276cf36f515e29e76ae4ca31fcc77f1d9ca3710e923f6", "pr140_same": true, "key": "xingce:198153", "source_sha": "a9323338b2f756b4d7760a2ba9e0765d221bf30aecf03a38707c84da86079790", "area": "上海", "year": "2023", "subject": "行测", "variant": "A类", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 130, "h2": 11, "h3": 130, "tables": 25, "images": 77, "latex_dollars": 0, "placeholder_marks": 3, "longest_line": 2351, "answers_empty": 1, "multi_answers": 11, "no_analysis_marker": 1, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 129, "-": 1}, "flags": ["LX001", "IM004", "IM004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 上海
+- 年份: 2023
+- 科目: 行测
+- 卷型: A类
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8hv7j
+- 源试卷ID: 198153
+- 采集时间: 2026-10-19T03:56:51.371Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2023年上海市公务员录用考试《行测》题（A类）（网友回忆版）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L666 ## 材料 1
+  L834 ## 材料 2
+  L1494 ## 材料 3
+  L1652 ## 材料 4
+  L1810 ## 材料 5
+  L3330 ## 材料 6
+  L4322 ## 材料 7
+  L4500 ## 材料 8
+  L4696 ## 材料 9
+
+## QUESTION TABLE (130)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@106    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@142    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  4@184    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  5@218    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@254    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@288    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  8@322    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@356    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 10@396    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@430    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 12@466    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 13@506    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@546    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@586    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@626    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@682    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 18@720    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@758    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@796    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 21@842    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@880    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@918    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 24@956    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@992    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 26@1032   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 27@1064   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 28@1094   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 29@1124   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@1154   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1186   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1220   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1250   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 34@1280   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1312   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 36@1344   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 37@1376   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 38@1420   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1450   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 40@1482   d=Y opts=-      ans=       ana=N ref=
+  Q 41@1502   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1532   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1562   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1592   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 45@1622   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1658   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1688   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 48@1718   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 49@1748   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 50@1780   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1820   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1850   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 53@1888   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@1918   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 55@1948   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 56@1984   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@2020   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@2056   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 59@2092   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 60@2134   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@2180   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 62@2224   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 63@2262   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@2298   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@2328   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 66@2358   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2394   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 68@2426   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@2458   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2490   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2522   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 72@2554   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 73@2594   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2640   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2674   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2712   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 77@2744   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2778   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 79@2810   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@2860   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 81@2912   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@2960   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@3010   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@3050   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@3096   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@3154   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 87@3194   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 88@3276   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3340   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 90@3380   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3422   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 92@3466   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@3498   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3530   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 95@3562   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 96@3600   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 97@3632   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@3664   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3696   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q100@3728   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3774   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q102@3812   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q103@3850   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q104@3888   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q105@3928   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q106@3960   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q107@3992   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q108@4030   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q109@4068   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q110@4104   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q111@4142   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q112@4178   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4214   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@4254   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q115@4290   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4328   d=Y opts=ABCD   ans=ABCD   ana=Y ref=
+  Q117@4360   d=Y opts=ABCD   ans=ACD    ana=Y ref=
+  Q118@4392   d=Y opts=ABCD   ans=ABCD   ana=Y ref=
+  Q119@4428   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q120@4462   d=Y opts=ABCD   ans=ABCD   ana=Y ref=
+  Q121@4510   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q122@4550   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q123@4588   d=Y opts=ABCD   ans=ABD    ana=Y ref=
+  Q124@4626   d=Y opts=ABCD   ans=CD     ana=Y ref=
+  Q125@4664   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q126@4706   d=Y opts=ABCD   ans=ABCD   ana=Y ref=
+  Q127@4738   d=Y opts=ABCD   ans=ABC    ana=Y ref=
+  Q128@4774   d=Y opts=ABCD   ans=AC     ana=Y ref=
+  Q129@4810   d=Y opts=ABCD   ans=BC     ana=Y ref=
+  Q130@4846   d=Y opts=ABCD   ans=ABCD   ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 初心在最开始的时候，往往简单 ，但是它会慢慢长大，就像一颗种子能够长成参天大树，又仿佛站在零的起点慢慢 成很长很长的道路。到最后我们发现，所谓初心，就是在所有的愿望、誓言和 当中离自己本心最近的那颗心。 依次填入横线处最恰当的一项是： A. 质朴 延伸 梦境 B. 朴素 绵延 梦想 C. 素净 延展 想象 D. 宁静 绵展 理想
+  ANS: B
+  ANA: 第一空，形容“初心”，且与“简单”意思相近，A项“质朴”是一种自然状态，形容朴实、不矫饰，B项“朴素”形容朴实、不浮夸、不虚假，均可体现“简单”，符合文意，保留。C项“素净”指色彩不鲜艳，淡雅朴素，与“初心”搭配不当，排除；D项“宁静”形容（环境、心情）安静，侧重平静、不喧闹，与文意不符，排除。 第二空，A项“延伸”指延长、伸展，B项“绵延”指延续不断，均符合文意，保留。 第三空，横线处与“愿望”“誓言”并列，形容期望实现的事，B项“梦想”是对未来的一种期望，心中努力想要实现的目标，符合文意，当选。A项“梦境”指梦中经历的情境，无法象征期望、目标，排除。 故正确答案为B。 【文段出处】《初心》…(+94)
+--- Q66 @L2358: ### 第 66 题
+### 第 66 题 气压是作用在单位面积上的大气压力。气压不仅随温度变化，也因海拔高度而异。2022年7月的一天，测出三地（当天天气均为晴天）的气压分别为100.6KPa、87.4KPa、60.3KPa，则这三个地方最有可能依次是： A. 广西北海、云南大理古城、重庆仙女山 B. 四川峨眉山、海南三亚、甘肃兰州 C. 海南三亚、重庆仙女山、西藏拉萨 D. 西藏拉萨、四川峨眉山、广西北海
+  ANS: C
+  ANA: 由题干信息可知，气压与海拔高度有关，海拔高度越高，气压越低。 A项：广西北海（海拔约10-15m），云南大理古城（约2052m）与重庆仙女山（约2033m）中，广西北海海拔最低，气压最高，云南大理古城与重庆仙女山海拔高度相近，气压近似相等，而题干中三个地方的气压有明显差异，错误； B项：四川峨眉山（海拔约3099m），海南三亚（约7m）与甘肃兰州（约1520m），气压由高到低为海南三亚，甘肃兰州，四川峨眉山，错误； C项：海南三亚（海拔约7m），重庆仙女山（约2033m）与西藏拉萨（约4000m），气压由高到低为海南三亚，重庆仙女山，西藏拉萨，正确； D项：西藏拉萨（海拔约4000m），四川峨…(+94)
+--- Q130 @L4846: ### 第 130 题
+### 第 130 题 从材料中可以推断，长三角一体化示范区数字医疗发展的方向为（ ）。 A. 数据打通 B. 流程优化 C. 制度改进 D. 协同服务
+  ANS: ABCD
+  ANA: 本题考查政治常识。 A项正确，材料指出：“这一健康‘数字枢纽’借助长三角医疗健康数字共享与交换平台，联合市级优质医疗资源，已逐渐实现与6家三甲医院的‘对接’，并向下辐射到青浦区内3家医疗机构、12家社区卫生服务中心，以及12个村卫生室（站）。”这体现出建立在大数据基础上的“健康云”，将线下资源进行整合，实现线上共享，体现了数据打通。 B项正确，材料指出：“2021年年初，上海市‘便捷就医服务’数字化转型工作吹响号角，按照工作方案提出的‘便捷就医’应用场景、探索2-3个数字健康城区的规划，青浦作为本市高质量发展的数字健康城区先行区，充分运用先进技术手段、现代健康理念，筑牢数字健康城区健康‘网底’…(+97)
+--- Q2 @L106: ### 第 2 题
+### 第 2 题 金属，作为大自然给予人类的珍贵馈赠， 着人类文明的发展和社会的进步。考古学家将石器时代之后的文明时期命名为青铜时代、铁器时代，将金属材料的 作为时代的标志性特征，充分说明金属在人类社会的各个转型期起到了举足轻重的作用。 依次填入横线处最恰当的一项是： A. 标志 产生 B. 凝聚 材质 C. 见证 应用 D. 承载 转换
+  ANS: C
+  ANA: 第一空，横线处要体现“金属”和“人类文明的发展”“社会的进步”的关系，A项“标志”指能够表明特征的记号或事物，C项“见证”指证人或证物，均能体现“金属”和“人类文明的发展”“社会的进步”的关系，符合文意，保留。B项“凝聚”指物质由气体变为液体的过程，也指“聚集”，常与“心血”“力量”等搭配，D项“承载”指承受支撑物体，也指“承受、负载”，常与“梦想”“希望”等搭配，均与“人类文明的发展”“社会的进步”搭配不当，排除。 第二空，根据前文“考古学家将石器时代之后的文明时期命名为青铜时代、铁器时代”以及后文“金属在人类社会的各个转型期起到了举足轻重的作用”可知，金属材料在青铜时代、铁器时代被人类使用…(+96)
+--- Q129 @L4810: ### 第 129 题
+### 第 129 题 材料中，“长三角（上海）智慧互联网医院······已逐渐实现与6家三甲医院的‘对接’，并向下辐射到青浦区内3家医疗机构、12家社区卫生服务中心，以及12个村卫生室（站）”旨在说明 。 A. “全域、全病、全程”系统打通 B. 涵纳基层的防治网络逐步形成 C. 新型分级诊疗体系完成构建 D. 智慧医院的数字化载体全落实
+  ANS: BC
+  ANA: 本题考查管理常识。 A项错误，“全域、全病、全程”是指从居民签约到健康评估、慢病健康管理、基层首诊、远程联合门诊、双向转诊、疾病救治、重症急救，再到回社区康复的全流程闭环管理。材料中仅提到了长三角（上海）智慧互联网医院向下辐射到了数个医疗机构、服务中心和村卫生室（站），并未体现“全病”与“全程”。 B项正确，基层医疗卫生机构包括社区卫生服务中心和站点、乡镇卫生院和村卫生室，材料中提到的3家医疗机构、12家社区卫生服务中心以及12个村卫生室（站），包含了不同级别的基层医疗卫生机构，所以体现了涵纳基层的防治网络逐步形成。 C项正确，分级诊疗指按照疾病的轻重缓急及治疗的难易程度进行分级，不同级别的医…(+97)

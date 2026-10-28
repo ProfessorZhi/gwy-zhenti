@@ -1,0 +1,182 @@
+# PACKET 省考/江西/2016/行测-统考.md
+META {"path": "省考/江西/2016/行测-统考.md", "file_sha": "2444e0e485fef675fd1e91a034aeef9f690422aac5b035d847d5c689600a1b4d", "bytes": 206455, "pr140_sha": "2444e0e485fef675fd1e91a034aeef9f690422aac5b035d847d5c689600a1b4d", "pr140_same": true, "key": "xingce:75864", "source_sha": "335411bdf24133592201032501f1ebd71c62cade92497e7aade17331f59e1a5a", "area": "江西", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 135, "h2": 6, "h3": 135, "tables": 31, "images": 19, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 290, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 134, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 江西
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8o4g3
+- 源试卷ID: 75864
+- 采集时间: 2026-10-19T05:42:08.569Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（江西卷）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4386 ## 材料 1
+  L4556 ## 材料 2
+  L4731 ## 材料 3
+  L4893 ## 材料 4
+
+## QUESTION TABLE (135)
+  Q  1@68     d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  2@104    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  3@140    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@176    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  5@212    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@248    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@284    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@322    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@360    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@396    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@432    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 12@468    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@500    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 14@536    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@572    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@610    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 17@650    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 18@686    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@722    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@758    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 21@790    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 22@820    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 23@856    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 24@888    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 25@926    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 26@956    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 27@992    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@1028   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1068   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@1106   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1148   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1184   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@1226   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@1262   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 35@1294   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 36@1330   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1366   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1402   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1438   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1476   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1514   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1548   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 43@1584   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1620   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 45@1656   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1694   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1730   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1768   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1806   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 50@1844   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1884   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 52@1924   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 53@1964   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@2002   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@2040   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 56@2078   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2124   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@2162   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 59@2200   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 60@2238   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@2270   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 62@2306   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2338   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2374   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 65@2412   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2444   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@2476   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2506   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2536   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2566   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2596   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@2626   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 73@2658   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 74@2688   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2722   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2758   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@2788   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2818   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2856   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 80@2894   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 81@2924   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 82@2956   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@2988   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 84@3020   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@3054   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3086   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 87@3130   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@3174   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@3218   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3262   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3296   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3340   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 93@3384   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3430   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 95@3474   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 96@3518   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3560   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3602   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 99@3644   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@3680   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3722   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q102@3764   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q103@3806   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q104@3848   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q105@3886   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q106@3924   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@3972   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q108@4020   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@4066   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q110@4114   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q111@4162   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q112@4208   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q113@4254   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@4302   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q115@4346   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q116@4398   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q117@4428   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q118@4458   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q119@4488   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q120@4520   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q121@4573   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q122@4603   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q123@4633   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q124@4663   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q125@4693   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q126@4735   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q127@4765   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q128@4801   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q129@4833   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q130@4863   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q131@4910   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q132@4940   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q133@4970   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q134@5008   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q135@5038   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 洲际导弹通常指射程大于8000公里的远程弹道式导弹。目前，中国研制的洲际弹道导弹主要是什么系列的？ A. “东风”系列 B. “长征”系列 C. “红旗”系列 D. “天宫”系列
+  ANS: A
+  ANA: A项，“东风”系列，是中华人民共和国一系列近程、中远程和洲际弹道导弹。“东风”系列是目前世界上唯一覆盖各种类型弹道导弹的陆基弹道导弹系列。 B项，“长征”系列为我国运载火箭型号命名。中国自1956年开始展开现代火箭的研制工作。1964年6月29日，中国自行设计研制的中程火箭试飞成功之后，即着手研制多级火箭，向空间技术进军。经过了五年多的艰苦努力，1970年4月24日“长征一号”运载火箭诞生，首次发射“东方红一号”卫星成功。现在“长征”系列火箭已经走向世界，享誉全球，在国际发射市场占有重要一席。 C项，“红旗”系列防空导弹构成了我国地空防空导弹的主体。红旗系列防空导弹涵盖了中远程、中高空到近程超…(+97)
+--- Q68 @L2506: ### 第 68 题
+### 第 68 题 A工程队的效率是B工程队的2倍，某工程交给两队共同完成需要6天。如果两队的工作效率均提高一倍，且B队中途休息了1天，问要保证工程按原来的时间完成，A队中途最多可以休息几天？ A. 4 B. 3 C. 2 D. 1
+  ANS: A
+  ANA: A工程队的效率是B工程队的2倍，可以赋值A工程队效率为2，B工程队效率为1，此时工程总量为6×(2+1)=18。如果两队的工作效率均提高一倍，A工程队效率即为2×(1+1)=4，B工程队效率为1×(1+1)=2。设A工程队休息t天，则有4×(6-t)+2×(6-1)=18，解得t=4。 故正确答案为A。 **考点**：给效率比例型 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第62题 </details>
+--- Q135 @L5038: ### 第 135 题
+### 第 135 题 哪些运输方式在2014年11月的货物运输量占当月货物运输总量的比重超过上年同期水平？ A. 仅铁路 B. 仅公路 C. 铁路和民航 D. 公路和水运
+  ANS: D
+  ANA: 由题干“比重超过上年同期水平”可知，本题为两期比重问题，仅需比较a与b的大小关系即可，当a＞b时，比重高于上年同期水平。由表格可知，11月货物运输总量同比增速b=7.1%，铁路同比增速a_1\=-6.5%，公路同比增速a_2\=8.6%，水运同比增速a_3\=7.6%，民航同比增速a_4\=3.4%，同比增速高于7.1%的有公路和水运两项。 故正确答案为D。 **考点**：两期比重、统计表 **来源**：2016年423联考《行测》题（贵州卷）第104题 </details>
+--- Q2 @L104: ### 第 2 题
+### 第 2 题 关于当代文学，下列说法错误的是： A. 《白鹿原》曾获得“茅盾文学奖” B. 《平凡的世界》是史铁生的作品 C. 余华是先锋文学的代表人物之一 D. 电影《大红灯笼高高挂》由苏童的小说改编
+  ANS: B
+  ANA: A项正确，《白鹿原》是陈忠实的代表作。1997年，该小说获得中国第四届茅盾文学奖。 B项错误，《平凡的世界》是中国作家路遥创作的一部百万字的小说，并非由史铁生创作。1991年3月，《平凡的世界》获中国第三届茅盾文学奖。 C项正确，余华是当代文学中先锋派小说的代表作家之一，主要作品有《现实一种》《活着》《许三观卖血记》。 D项正确，《大红灯笼高高挂》改编自苏童的小说《妻妾成群》。 本题为选非题，故正确答案为B。 **考点**：文学常识 **来源**：2016年423联考《行测》题（贵州卷）第15题 </details>
+--- Q134 @L5008: ### 第 134 题
+### 第 134 题 2013年1~10月我国货物运输总量最大的领域是： A. 水运 B. 民航 C. 铁路 D. 公路
+  ANS: D
+  ANA: 由题干“2013年1—10月我国货运运输总量最大的领域”可知，本题是基期比较问题，比较各领域1—10月基期货物运输总量即可。观察表格可知，各领域1—11月和11月同比增速相差不大，故本题可直接比较1—10月现期值。铁路运输总量为35.0-3.2=31.8亿吨，公路运输总量为303.6-30.7=272.9亿吨，水路运输总量为54.5-5.4=49.1亿吨，民航运输总量为538.0-55.5=482.5万吨，可明显看出公路272.9亿吨最大。（注意单位换算，1亿吨=10000万吨） 故正确答案为D。 **考点**：统计表、基期比较 **来源**：2016年423联考《行测》题（贵州卷）第102题…(+11)

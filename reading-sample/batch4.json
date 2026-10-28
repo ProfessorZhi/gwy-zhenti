@@ -1,0 +1,329 @@
+[
+ {
+  "path": "省考/安徽/2016/行测-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "110 题全 ABCD；20 个表格；解析含 a<b（ 形式数学比较（ES002 同源），原样显示不影响阅读。"
+ },
+ {
+  "path": "省考/山东/2009/申论-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "5 题；Q3 关联材料 5 与题干一致，其余为全材料导航。"
+ },
+ {
+  "path": "省考/山东/2018/申论-B类.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK(过度)",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [
+   {
+    "path": "省考/山东/2018/申论-B类.md",
+    "line": 111,
+    "code": "READ_MATREF_ALL",
+    "explanation": "题干限定「资料2-5」，关联材料列了 1–8；覆盖了所需范围，只是导航冗余。",
+    "severity": "minor"
+   }
+  ],
+  "notes": "4 题；答案完整；Q3 只关联材料 7，与题干一致。"
+ },
+ {
+  "path": "省考/山东/2024/行测-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "120 题全 ABCD；8 个表格；25 张图未载入。"
+ },
+ {
+  "path": "省考/山西/2015/申论-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；关联材料与题干一致（Q2 材料 7、Q3 材料 3）。来源 PARTIAL。"
+ },
+ {
+  "path": "省考/山西/2016/行测-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "120 题全 ABCD；31 个表格列数一致。"
+ },
+ {
+  "path": "省考/广东/2008/申论-上半年.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "3 题；Q1 题干「材料7」→ 关联材料 7，一致。"
+ },
+ {
+  "path": "省考/广东/2016/申论-广州市考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK(缺少)",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "FORMAT",
+  "status": "AI_ISSUE",
+  "issues": [
+   {
+    "path": "省考/广东/2016/申论-广州市考.md",
+    "line": 97,
+    "code": "READ_NO_MATREF",
+    "explanation": "单题作文卷，题干写「参考给定材料」但卷内无「关联材料」行（基线 MT004）；不影响作答，只是少一处跳转。",
+    "severity": "minor"
+   }
+  ],
+  "notes": "1 题作文（100 分）；材料 3 则；有 1 张图未载入；单行最长 1142 字符（整段材料）但可读。"
+ },
+ {
+  "path": "省考/广东/2016/行测-广州市考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "FORMAT",
+  "status": "AI_ISSUE",
+  "issues": [
+   {
+    "path": "省考/广东/2016/行测-广州市考.md",
+    "line": 38,
+    "code": "READ_HR_IN_DETAILS",
+    "explanation": "100 个折叠块在 </details> 前都有一行 `---`，展开后底部多一条分隔线；与上海 2017 同一模板习惯。",
+    "severity": "minor"
+   },
+   {
+    "path": "省考/广东/2016/行测-广州市考.md",
+    "line": 25,
+    "code": "READ_MIXED_QLEVEL",
+    "explanation": "资料分析题用 ### 挂在 ## 材料 下，其余题用 ##，卷内题目标题层级不一致（基线 HD008）。",
+    "severity": "minor"
+   }
+  ],
+  "notes": "100 题；选项为 `- **A**.` 列表式；答案 `**答案**：X` + `**官方解析**`；23 张图未载入。"
+ },
+ {
+  "path": "省考/广东/2018/行测-县级、乡镇统一卷.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "100 题全 ABCD；14 个表格；解析内有 a<b（ 类数学比较（ES002 同源）。"
+ },
+ {
+  "path": "省考/广州/2012/申论-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "2 题；关联材料 1–4 覆盖题干范围。"
+ },
+ {
+  "path": "省考/广州/2012/行测-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "100 题全 ABCD；40 个表格列数一致。"
+ },
+ {
+  "path": "省考/广西/2008/行测-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "135 题全 ABCD；14 个表格；Q1 数列题选项 96/216/866/1776 与解析一致。"
+ },
+ {
+  "path": "省考/广西/2013/申论-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 题干「资料1－2」→ 关联材料 1、2，一致。"
+ },
+ {
+  "path": "省考/新疆/2015/申论-统考.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；关联材料覆盖题干范围；Q3 只关联材料 4。"
+ },
+ {
+  "path": "省考/新疆/2016/行测-兵团.md",
+  "read_mode": "full",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "FORMAT",
+  "status": "AI_PASS",
+  "issues": [
+   {
+    "path": "省考/新疆/2016/行测-兵团.md",
+    "line": 2091,
+    "code": "READ_PR140_TABLE_HEADER",
+    "explanation": "PR#140 给 3×3 数字方阵表加了空表头行（| | | |），使原首行不再被当作表头加粗；GFM 无法表达无表头表格，这是可接受的折中，但会多一条空白表头带。",
+    "severity": "info"
+   }
+  ],
+  "notes": "120 题；39 个表格；与 PR#140 有差异（仅表格表头行）。"
+ }
+]

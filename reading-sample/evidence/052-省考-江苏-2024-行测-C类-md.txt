@@ -1,0 +1,175 @@
+# PACKET 省考/江苏/2024/行测-C类.md
+META {"path": "省考/江苏/2024/行测-C类.md", "file_sha": "71ed97ac900e1573d03b4a435b5182572047ed6702a0895b86056e4e7f506906", "bytes": 214901, "pr140_sha": "71ed97ac900e1573d03b4a435b5182572047ed6702a0895b86056e4e7f506906", "pr140_same": true, "key": "", "source_sha": "", "area": "江苏", "year": "2024", "subject": "行测", "variant": "C类", "nature": "正式真题", "validation": "机器校验（并卷/题号/图片/去泄露/G1–G5）；未人工通读；2026-10-12 按固定版本逐题ID映射恢复顺序，答案及材料联动；既有正文逐块保留。", "source_class": "", "template": "mixed-level", "qcount": 130, "h2": 109, "h3": 27, "tables": 0, "images": 59, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 1590, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 1, "dup_jiexi_label": 0, "hr_inside_details": 129, "opt_label_hist": {"ABCD": 130}, "flags": ["HD008"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 江苏
+- 年份: 2024
+- 科目: 行测
+- 卷型: C类
+- 真题性质: 正式真题
+- 来源: ["linfukai186", "xingcezhenti"]
+- 校验状态: 机器校验（并卷/题号/图片/去泄露/G1–G5）；未人工通读；2026-10-12 按固定版本逐题ID映射恢复顺序，答案及材料联动；既有正文逐块保留。
+
+## OUTLINE (non-question headings)
+  L21 # 2024 江苏省公务员录用考试 行测（C类）
+  L1132 ## 材料 1（第41—45题共用）
+  L2814 ## 材料 2（第99—100题共用）
+  L3182 ## 材料 3（第111—115题共用）
+  L3313 ## 材料 4（第116—120题共用）
+  L3441 ## 材料 5（第121—125题共用）
+  L3581 ## 材料 6（第126—130题共用）
+
+## QUESTION TABLE (130)
+  Q  1@33     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  2@64     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  3@95     d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@124    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@152    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  6@183    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@211    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@235    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@261    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@287    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@314    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@343    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 13@371    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@398    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 15@422    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 16@449    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@476    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@504    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@531    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@559    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 21@587    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 22@614    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@642    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 24@669    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@697    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 26@725    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@753    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@781    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 29@808    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@835    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 31@867    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@893    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@919    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@945    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 35@971    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 36@997    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 37@1024   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 38@1051   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@1078   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1105   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1150   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1177   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1204   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1229   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1256   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1283   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 47@1306   d=Y opts=ABCD   ans=各项除以5得 ana=N ref=
+  Q 48@1328   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 49@1351   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1375   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 51@1398   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1422   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1448   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@1472   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 55@1496   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 56@1520   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@1544   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 58@1568   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@1592   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 60@1616   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@1644   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 62@1676   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@1700   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@1724   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@1752   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@1786   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 67@1815   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@1844   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 69@1873   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@1902   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 71@1932   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@1961   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 73@1990   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 74@2019   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2046   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 76@2073   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2098   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2124   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@2150   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 80@2175   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2200   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 82@2226   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@2254   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 84@2282   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@2310   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 86@2338   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 87@2366   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 88@2406   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 89@2442   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@2478   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 91@2514   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@2556   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@2596   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 94@2628   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 95@2675   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@2710   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@2749   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@2782   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 99@2826   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@2859   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q101@2889   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@2919   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q103@2949   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q104@2979   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q105@3009   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q106@3039   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q107@3069   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q108@3099   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q109@3129   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q110@3159   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q111@3188   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q112@3212   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q113@3236   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q114@3260   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q115@3283   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q116@3317   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q117@3340   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q118@3364   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q119@3387   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q120@3411   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q121@3445   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q122@3469   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q123@3501   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q124@3525   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q125@3549   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q126@3587   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q127@3615   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q128@3638   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q129@3662   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q130@3686   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L33: ## 第 1 题　<sub>qid 13628288 · 时事政治</sub>
+## 第 1 题 <sub>qid 13628288 · 时事政治</sub> 党的二十大报告指出，中国式现代化既有各国现代化的共同特征，更有基于自己国情的中国特色。关于中国式现代化的内涵和意义，下列表述正确的是： ①有与世界各国现代化相同的任务 ②是人类历史上难度最大的现代化 ③是独立自主、和平发展的现代化 ④创造了一种全新的人类文明形态 - **A**. ①②③ - **B**. ①②④ - **C**. ①③④ - **D**. ②③④
+  ANS: D
+  ANA: 本题考查政治常识。 ①错误，②正确，习近平总书记在《中国式现代化是强国建设、民族复兴的康庄大道》的文章中指出：“第一，人口规模巨大的现代化。这是中国式现代化的显著特征。人口规模不同，现代化的任务就不同，其艰巨性、复杂性就不同，发展途径和推进方式也必然具有自己的特点。现在，全球进入现代化的国家也就20多个，总人口10亿左右。中国14亿多人口整体迈入现代化，规模超过现有发达国家人口的总和，将极大地改变现代化的世界版图。这是人类历史上规模最大的现代化，也是难度最大的现代化。” ③正确，习近平总书记在《中国式现代化是强国建设、民族复兴的康庄大道》的文章中指出：“第五，走和平发展道路的现代化。坚持和平发…(+100)
+--- Q66 @L1786: ## 第 66 题　<sub>qid 5919637 · 类比推理</sub>
+## 第 66 题 <sub>qid 5919637 · 类比推理</sub> 保护知识产权：保护创新 - **A**. 人之初：性本善 - **B**. 德不孤：必有邻 - **C**. 勤有功：戏无益 - **D**. 经一事：长一智
+  ANS: D
+  ANA: 第一步：判断题干词语间逻辑关系。 “保护知识产权”是“保护创新”的重要手段和举措，通过“保护知识产权”能达到“保护创新”的目的，二者为方式与目的的对应关系。 第二步：判断选项词语间逻辑关系。 A项：“人之初，性本善”的意思是人出生之初，禀性本身都是善良的。“人之初”与“性本善”不是方式与目的的对应关系，与题干逻辑关系不一致，排除。 B项：“德不孤，必有邻”的意思是有道德的人是不会孤单的，必定会有志同道合的人来与他为伴。“德不孤”与“必有邻”不是方式与目的的对应关系，与题干逻辑关系不一致，排除。 C项：“勤有功，戏无益”的意思是人只要勤奋努力，就会有所成就；而嬉戏贪玩则对人没有任何好处。“勤有功…(+100)
+--- Q130 @L3686: ### 第 130 题　<sub>qid 15121378 · 增长</sub>
+### 第 130 题 <sub>qid 15121378 · 增长</sub> 2022年我国游戏市场销售收入增长率与2021年相差： - **A**. 3.9个百分点 - **B**. 8.4个百分点 - **C**. 12.7个百分点 - **D**. 16.7个百分点
+  ANS: D
+  ANA: 根据题干“2022年······增长率与2021年相差”，结合选项为“百分点”，可判定本题为一般增长率问题。定位图形材料可得，2022-2020年我国游戏市场销售收入分别为2659、2965、2787亿元。根据公式：增长率= (现期量−基期量)/基期量，则2022年我国游戏市场销售收入增长率=(2659−2965)/2965≈−306/3000=−10.2%，2021年增长率=(2965-2787)/2787≈178/2800≈6.4%。故2022年我国游戏市场销售收入增长率与2021年相差6.4%-（-10.2%）=16.6%，即16.6个百分点，与D项最接近。 故正确答案为D。 --- <…(+9)
+--- Q2 @L64: ## 第 2 题　<sub>qid 17900780 · 新思想</sub>
+## 第 2 题 <sub>qid 17900780 · 新思想</sub> 2023年7月，习近平总书记在全国生态环境保护大会上指出，新时代生态文明建设的成就举世瞩目，成为新时代党和国家事业取得历史性成就、发生历史性变革的显著标志。关于新时代生态文明建设的成就，下列表述正确的是： ①形成了新时代中国特色社会主义生态文明思想 ②实现了山水林田湖草沙的一体化保护和系统治理 ③根本缓解了生态环境保护的结构性、根源性、趋势性压力 ④增强了全党全国推进生态文明建设的自觉性主动性 - **A**. ①②③ - **B**. ①②④ - **C**. ①③④ - **D**. ②③④
+  ANS: B
+  ANA: 本题考查政治常识。 ①正确：习近平总书记在全国生态环境保护大会上的讲话中强调，不断深化对生态文明建设规律的认识，形成新时代中国特色社会主义生态文明思想，实现由实践探索到科学理论指导的重大转变。经过顽强努力，我国天更蓝、地更绿、水更清，万里河山更加多姿多彩。 ②正确：习近平总书记在全国生态环境保护大会上的讲话中指出，要坚持山水林田湖草沙一体化保护和系统治理，构建从山顶到海洋的保护治理大格局，综合运用自然恢复和人工修复两种手段，因地因时制宜、分区分类施策，努力找到生态保护修复的最佳解决方案。 ③错误：习近平总书记在全国生态环境保护大会上的讲话中强调，我国生态环境保护结构性、根源性、趋势性压力尚未根…(+100)
+--- Q129 @L3662: ### 第 129 题　<sub>qid 15121365 · 增长</sub>
+### 第 129 题 <sub>qid 15121365 · 增长</sub> 若2023-2025年我国游戏市场销售收入每年按2020-2022年的年均增速增长，则2025年我国游戏市场销售收入将达到： - **A**. 2648亿元 - **B**. 2834亿元 - **C**. 3062亿元 - **D**. 3286亿元
+  ANS: C
+  ANA: 根据题干“若2023-2025年······每年按2020-2022年的年均增速增长，则2025年我国游戏市场销售收入将达到”，可判定本题为现期计算问题。定位图形材料可得，2022年和2019年我国游戏市场销售收入分别为2659和2309亿元，设2020-2022年的年均增速为r，则2309 × (1 + r)^3 = 2659，因此(1 + r)^3 = 2659/2309。若2023-2025年与2020-2022年保持相同的年均增速，则2025年我国游戏市场销售收入=2659×(1+r)^3= 2659 × 2659/2309 ≈ 2660 × 1.15 = 3059亿元，与C项最接近。…(+24)

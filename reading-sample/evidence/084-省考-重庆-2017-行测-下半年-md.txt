@@ -1,0 +1,167 @@
+# PACKET 省考/重庆/2017/行测-下半年.md
+META {"path": "省考/重庆/2017/行测-下半年.md", "file_sha": "4cc546409ab26d2caa883adfdde7480cd6a295f41cbb93f58de4c86f0e228600", "bytes": 195544, "pr140_sha": "4cc546409ab26d2caa883adfdde7480cd6a295f41cbb93f58de4c86f0e228600", "pr140_same": true, "key": "xingce:78944", "source_sha": "467d0d315da99e2ec2cb067f0f73ac9ef697bcd78a6fbe556d0afd4cea173c9f", "area": "重庆", "year": "2017", "subject": "行测", "variant": "下半年", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 6, "h3": 120, "tables": 24, "images": 17, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 513, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 120}, "flags": ["IM004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 重庆
+- 年份: 2017
+- 科目: 行测
+- 卷型: 下半年
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8r56m
+- 源试卷ID: 78944
+- 采集时间: 2026-10-19T06:15:31.151Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2017年重庆市公务员录用考试《行测》题（下半年）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4004 ## 材料 1
+  L4186 ## 材料 2
+  L4355 ## 材料 3
+  L4527 ## 材料 4
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@100    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@134    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@168    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  5@202    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@238    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  7@272    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@308    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@340    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@376    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@412    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 12@452    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@490    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@528    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@568    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@608    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@648    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@684    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@720    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 20@754    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@794    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@834    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@870    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 24@910    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@950    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@986    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 27@1022   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@1066   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1110   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@1146   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 31@1182   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 32@1228   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@1260   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1294   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1324   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 36@1358   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 37@1388   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 38@1424   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 39@1460   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1496   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1532   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1572   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1602   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 44@1642   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 45@1672   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1710   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 47@1748   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1796   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 49@1834   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1872   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1924   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1962   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 53@2000   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@2038   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@2076   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 56@2124   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2162   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2210   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 59@2248   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 60@2286   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 61@2322   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2360   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2398   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2436   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@2474   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 66@2512   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 67@2544   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 68@2576   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 69@2612   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2644   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2686   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2730   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2774   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 74@2818   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2862   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2906   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2950   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2994   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@3038   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@3082   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 81@3126   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@3168   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3210   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 84@3252   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@3294   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 86@3336   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3378   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@3420   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 89@3458   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@3496   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 91@3534   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3580   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3626   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3690   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 95@3736   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 96@3780   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3826   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@3874   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 99@3922   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q100@3968   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q101@4016   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@4046   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q103@4076   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@4106   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@4148   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q106@4199   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@4229   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q108@4259   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q109@4289   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q110@4319   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q111@4371   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q112@4401   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q113@4431   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q114@4461   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q115@4491   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4537   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q117@4567   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q118@4597   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q119@4627   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4657   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 除了那些家喻户晓的“国宝”，中华大地上还有不少动物正处于、或正在走向“濒危”行列。由于种种原因，它们所面临的危险还未被重视，甚至它们的名字和样子都 。 A. 默默无闻 B. 鲜为人知 C. 无人问津 D. 一无所知
+  ANS: B
+  ANA: 根据递进关联词“甚至”可知，横线处所填词语要比前文程度重，前文指出一些濒危动物未被重视，即大家知道，但是认为不重要，故横线处表达几乎没有人知道它们的意思，B项“鲜为人知”指很少有人知道，符合文意，当选。A项“默默无闻”指没有什么名声，侧重强调主观上不声张，而文段强调客观上不被人知道，且与“名字和样子”搭配不当，排除；C项“无人问津”指没有人来探问、尝试或购买，与文段强调的没有人知道的意思不符，排除；D项“一无所知”指什么都不知道，搭配主语通常为人，与“名字和样子”搭配不当，排除。 故正确答案为B。 【文段出处】《大话＂非著名珍稀动物＂》 **考点**：词的辨析-搭配对象、词的辨析-程度轻重、成…(+51)
+--- Q61 @L2322: ### 第 61 题
+### 第 61 题 关于气候，下列表述不正确的是： A. 海洋性气候温差小、湿度大，降水日数多且强度小 B. 大陆性气候气温年较差或气温日较差很大 C. 地中海气候夏季炎热干燥，冬季温和多雨 D. 热带季风气候没有明显的旱雨两季
+  ANS: D
+  ANA: 本题考查地理国情。 A项正确，海洋性气候的特点是：气温年变化与日变化都很小，温差小；云雾频数多，湿度大；降水量的季节分配比较均匀，降水日数多，但强度小。 B项正确，大陆性气候最显著的特征是：气温年较差或气温日较差很大，降水少，冬冷夏热。 C项正确，地中海气候的特点是：夏季炎热干燥、冬季温和多雨。 D项错误，热带季风气候的特点是：终年高温，年平均气温在22℃以上，旱雨季明显，降水集中在雨季，且降水量大。 本题为选非题，故正确答案为D。 **考点**：自然地理 **来源**：2017年四川省公务员录用考试《行测》题（下半年）第8题 </details>
+--- Q120 @L4657: ### 第 120 题
+### 第 120 题 能够从上述资料中推出的是： A. 2014年全国规模以上纺织企业工业增加值同比增长5.6% B. 2015年全国扭亏为盈的纺织行业规模以上企业少于盈转亏的企业数量 C. 2014年全国纺织行业500万元以上项目固定资产投资完成额超过1万亿元 D. 2015年纺织行业中西部地区固定资产投资完成额同比增量高于东部地区
+  ANS: C
+  ANA: A项：根据材料第一段“2015年，全国规模以上纺织企业工业增加值同比增长6.3%，增速比上年同期回落0.7个百分点”，可得2014年，全国规模以上纺织企业工业增加值同比增长6.3%+0.7%=7.0%，错误； B项：由于文中只给出了“企业亏损面11.4%，比上年低0.1个百分点”，并未给出2015年和2014年的企业总个数，因此无法推断亏损的企业个数增加还是减少，所以无法推断出扭亏为盈和盈转亏的企业个数之间是否存在少于关系，错误； C项：根据材料第四段“2015年，我国纺织行业500万元以上项目固定资产投资完成额11913亿元，同比增长15.0%”，可得2014年 = 11913/(1 + 1…(+96)
+--- Q2 @L100: ### 第 2 题
+### 第 2 题 从亚里士多德开始，让文学艺术能够真正地还原现实，从而使人们能够在各种艺术样式中复现自己、观照自己，一直是理论家、艺术家一个永恒的梦想。没想到，这个梦想居然被电影 地实现了。 A. 分毫不差 B. 出人意料 C. 轻而易举 D. 一马当先
+  ANS: C
+  ANA: 根据文段“从亚里士多德开始”“一直”“永恒”可知，让文学艺术还原现实这一梦想始终没有办法实现。“居然”表示没想到，出乎意料，据此可知，横线处表达人们始终没有办法解决的问题竟然被电影很容易的就解决了，C项“轻而易举”形容事情容易做，不费力气，符合文意，当选。 A项“分毫不差”指没有一点差错，文段强调的是“容易”，并未阐述是否有差错，排除；B项“出人意料”指在人们意料之外，与“居然”语义重复，排除；D项“一马当先”形容领先，也比喻工作走在群众前面，积极带头，与文意不符，排除。 故正确答案为C。 【文段出处】《影视本性：真实的谎言》 **考点**：词的辨析-搭配对象、对应关系-前后呼应、成语填空 *…(+46)
+--- Q119 @L4627: ### 第 119 题
+### 第 119 题 2014年，我国服装出口额在以下哪个范围之内？ A. 低于1800亿美元 B. 1800～1900亿美元之间 C. 1900～2000亿美元之间 D. 高于2000亿美元
+  ANS: B
+  ANA: 由问题“2014年，我国服装出口额的范围”，结合材料数据为2015年，可判定本题为基期计算问题。定位材料第三段“2015年，我国服装出口1759亿美元，同比下降 6.4%”，代入公式：基期 = 现期/(1+r)= 1759/(1−6.4%)=1759/93.6%≈1879亿美元。 故正确答案为B。 **考点**：文字资料、基期计算 **来源**：2017年四川省公务员录用考试《行测》题（下半年）第89题 </details>

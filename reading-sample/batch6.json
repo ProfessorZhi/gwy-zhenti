@@ -1,0 +1,298 @@
+[
+ {
+  "path": "省考/浙江/2008/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "SOURCE",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "3 题；Q1 资料2~3 → 材料 2、3，一致；无解析标记（源侧无文字解析）。"
+ },
+ {
+  "path": "省考/浙江/2012/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "130 题全 ABCD（1 题题干 A、B 开头被正确定位）；8 个表格；同一图片两处引用。"
+ },
+ {
+  "path": "省考/浙江/2023/申论-A类.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "FORMAT",
+  "status": "AI_ISSUE",
+  "issues": [
+   {
+    "path": "省考/浙江/2023/申论-A类.md",
+    "line": 259,
+    "code": "READ_ARTICLE_IN_ANSWER",
+    "explanation": "第 3 题的文章分析（含【标题/开头/论述段的优点】批注）整块排在参考答案之后、没有「解析」小节，读者需要在答案折叠块里往后翻才能找到；同时全卷无「考点/来源」行（源侧有）。",
+    "severity": "minor"
+   }
+  ],
+  "notes": "3 题；Q1 材料2、Q2 材料7、Q3 材料1–5 与题干一致；「解析状态 unknown」的旧标注已不存在（不再自相矛盾）。"
+ },
+ {
+  "path": "省考/海南/2014/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "3 题；Q1 材料2、Q2 材料3–4，一致；Q3 有「参考范文」。3 张图未载入。"
+ },
+ {
+  "path": "省考/海南/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "110 题全 ABCD；20 个表格；解析含 a<b（ 数学比较。"
+ },
+ {
+  "path": "省考/深圳/2008/行测-上半年.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "100 题全 ABCD；21 个表格；Q1 数列 1,4,27,16,125,36 → 343 解析一致。"
+ },
+ {
+  "path": "省考/深圳/2014/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "3 题；Q1 材料8、Q2 材料9 与题干一致。"
+ },
+ {
+  "path": "省考/湖北/2012/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 材料6、Q2 材料1 与题干一致。"
+ },
+ {
+  "path": "省考/湖北/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "125 题全 ABCD；31 个表格；同一图片两处引用。"
+ },
+ {
+  "path": "省考/湖南/2012/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "SOURCE",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 材料1、Q2 材料4 与题干一致。来源索引 MISSING，不据此判定内容缺失。"
+ },
+ {
+  "path": "省考/湖南/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "125 题全 ABCD；31 个表格。"
+ },
+ {
+  "path": "省考/甘肃/2009/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "100 题全 ABCD；29 个表格；Q1 双空数列 65,24/125,80/125,63/65,124 选项完整。"
+ },
+ {
+  "path": "省考/甘肃/2012/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "3 题；Q2 只关联材料5，与题干一致。"
+ },
+ {
+  "path": "省考/福建/2012/申论-上半年.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "3 题；Q1 材料6、Q2 材料4 与题干一致。"
+ },
+ {
+  "path": "省考/福建/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "120 题全 ABCD；25 个表格；解析含 a<b（ 数学比较。"
+ },
+ {
+  "path": "省考/西藏/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "120 题全 ABCD；25 个表格。来源索引标 CONFLICT（同 key 多快照冲突），本 lane 不据此判定正文。"
+ }
+]

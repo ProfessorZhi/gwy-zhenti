@@ -1,0 +1,166 @@
+# PACKET 省考/青海/2016/行测-统考.md
+META {"path": "省考/青海/2016/行测-统考.md", "file_sha": "c56646181ff85877fbd81e8282542fa7c1f449d7ceccb0d379f1751f8d6dfdbf", "bytes": 189086, "pr140_sha": "c56646181ff85877fbd81e8282542fa7c1f449d7ceccb0d379f1751f8d6dfdbf", "pr140_same": true, "key": "xingce:75920", "source_sha": "def14563c62ccb22e144acaead6afbb7e63e93760ee060191c287db8171160a0", "area": "青海", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 5, "h3": 120, "tables": 31, "images": 11, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 290, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 119, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 青海
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8onun
+- 源试卷ID: 75920
+- 采集时间: 2026-10-19T05:51:26.430Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（青海卷）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4064 ## 材料 1
+  L4239 ## 材料 2
+  L4414 ## 材料 3
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@106    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  3@144    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  4@180    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@216    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  6@252    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@288    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  8@324    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@360    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 10@390    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@426    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@458    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@488    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 14@520    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@552    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@588    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@624    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@660    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@696    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@736    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@772    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@814    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@854    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@896    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@932    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@968    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 27@1004   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 28@1040   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 29@1076   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@1112   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1146   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@1188   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@1224   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@1264   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1302   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 36@1340   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1376   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1414   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1450   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1484   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1520   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1558   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 43@1596   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 44@1634   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1672   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1710   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1746   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 48@1786   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1824   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1870   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1906   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 52@1938   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1976   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 54@2016   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 55@2054   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 56@2092   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 57@2128   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 58@2166   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 59@2202   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2236   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@2268   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 62@2298   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2328   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2360   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 65@2392   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 66@2422   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 67@2460   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@2490   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 69@2520   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 70@2554   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2584   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2616   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 73@2648   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2682   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 75@2714   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2746   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@2790   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2834   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 79@2878   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@2922   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 81@2966   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 82@3010   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3054   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@3100   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 85@3144   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3188   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3230   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3272   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3318   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@3360   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 91@3398   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 92@3440   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 93@3482   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3524   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3566   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 96@3604   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@3652   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 98@3696   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 99@3744   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q100@3784   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q101@3832   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@3878   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q103@3924   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3970   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@4016   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q106@4081   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@4111   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@4141   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@4171   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q110@4201   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@4256   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q112@4286   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4316   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q114@4346   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@4376   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q116@4426   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q117@4456   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q118@4486   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q119@4516   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q120@4548   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 关于生活知识，下列说法错误的是： A. 缺碘可能会患“大脖子病” B. 吃水果有助于补充维生素 C. 甲醛可以用作药品的防腐剂 D. 回收废电池可减少重金属污染
+  ANS: C
+  ANA: A项正确，“大脖子病”学名甲状腺肿，是碘缺乏病的主要表现之一。碘是甲状腺合成甲状腺激素的重要原料之一，碘缺乏时合成甲状腺激素不足，反馈引起垂体分泌过量的促甲状腺激素（TSH），刺激甲状腺增生肥大。 B项正确，维生素是维持人体生命活动必需的一类有机物质，也是保持人体健康的重要活性物质。 维生素具有外源性，人体自身只能合成维生素D，不能满足人体需要，大部分维生素以维生素原的形式存在于食物中，需要通过食物补充。蔬菜水果中含有多种维生素。 C项错误，甲醛有刺激性气味，对人体有害。低浓度就会使人产生不适感，长期、低浓度接触甲醛会引起头痛、头晕、乏力、感觉障碍、免疫力降低；长期接触甲醛可引发呼吸功能障碍和…(+95)
+--- Q61 @L2268: ### 第 61 题
+### 第 61 题 A工程队的效率是B工程队的2倍，某工程交给两队共同完成需要6天。如果两队的工作效率均提高一倍，且B队中途休息了1天，问要保证工程按原来的时间完成，A队中途最多可以休息几天？ A. 4 B. 3 C. 2 D. 1
+  ANS: A
+  ANA: A工程队的效率是B工程队的2倍，可以赋值A工程队效率为2，B工程队效率为1，此时工程总量为6×(2+1)=18。如果两队的工作效率均提高一倍，A工程队效率即为2×(1+1)=4，B工程队效率为1×(1+1)=2。设A工程队休息t天，则有4×(6-t)+2×(6-1)=18，解得t=4。 故正确答案为A。 **考点**：给效率比例型 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第62题 </details>
+--- Q120 @L4548: ### 第 120 题
+### 第 120 题 能够从上述资料中推出的是： A. 2015年1-3月，中央和地方国有企业营业成本均低于同期营业收入 B. 2014年1-3月，国有企业应交税金占同期营业总收入的一成以上 C. 2015年3月末，国有企业资产总额同比增长不到12万亿元 D. 2015年3月末，地方国有企业资产负债率高于上年同期水平
+  ANS: C
+  ANA: A项，定位文字材料第一段和第二段，2015年1-3月，中央国有企业营业成本60216.5亿元<同期营业收入63191.3亿元，成本低于收入；地方国有企业营业成本40129亿元>同期营业收入39964.2亿元，成本高于收入，错误； B项，定位文字材料第一段和第三段，2014年1~3月国有企业应交税金占同期营业总收入的比重= 9383/(1+0.13%) ÷ 103155.5/(1−6%) = 9383/103155.5 × (1−6%)/(1+0.13%) ＜ 9383/103155.5 ＜ 10%，不足一成，错误； C项，定位文字材料第四段，2015年3月末，国有企业资产总额同比增长量=105…(+97)
+--- Q2 @L106: ### 第 2 题
+### 第 2 题 下列哪组气体对环境的负面影响最大？ A. 一氧化氮、二氧化硫 B. 二氧化碳、水蒸气 C. 氢气、稀有气体 D. 甲烷、氮气
+  ANS: A
+  ANA: A项，一氧化氮是一种无色无味，难溶于水的有毒气体，在空气中易被氧化成二氧化氮，而后者有强烈腐蚀性和毒性。一氧化氮对环境有危害，对水体、土壤和大气可造成污染。二氧化硫是最常见、最简单的硫氧化物，是大气主要污染物之一。在大气中，二氧化硫会氧化而形成硫酸雾或硫酸盐气溶胶，是环境酸化的重要前驱物。二者对环境均有较大危害。 B项，二氧化碳是空气中常见的温室气体，是一种气态化合物，常温下是一种无色无味、不助燃、不可燃的气体，密度比空气大。二氧化碳对环境的负面影响主要是因为它具有保温的作用，会逐渐使地球表面温度升高，被认为是加剧温室效应的主要来源。水蒸气是水的气体形式，其对环境的负面影响在于水蒸气是一种温室…(+98)
+--- Q119 @L4516: ### 第 119 题
+### 第 119 题 2015年3月末，中央企业的资产负债率（负债总额÷资产总额）约在以下哪个范围内？ A. 50%以下 B. 50%-60% C. 60%-70% D. 70%以上
+  ANS: C
+  ANA: 根据题干中“2015年3月末······资产负债率（负债总额 ÷ 资产总额）”，可以判断本题为比值计算问题。参看第四段材料，中央企业负债总额363304亿元，资产总额554658.3亿元，代入资产负债率公式： 负债总额/资产总额 = 363304/554658.3 ≈ 36/55 ≈ 65%。因此在60%~70%范围内。 故正确答案为C。 **考点**：比值计算、文字资料 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第104题 </details>

@@ -1,0 +1,204 @@
+# PACKET 省考/江苏/2012/行测-B类.md
+META {"path": "省考/江苏/2012/行测-B类.md", "file_sha": "48e96bc0f46a2e8eae5d2822d1f185ee249a7e498c54db1a12df2553480d4fca", "bytes": 132981, "pr140_sha": "48e96bc0f46a2e8eae5d2822d1f185ee249a7e498c54db1a12df2553480d4fca", "pr140_same": true, "key": "xingce:399", "source_sha": "9b928dc0ca85cf0f866149d6eaba88247840c6372cec9636b44e57c8f83ef313", "area": "江苏", "year": "2012", "subject": "行测", "variant": "B类", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 155, "h2": 8, "h3": 155, "tables": 77, "images": 24, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 405, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 151, "AABCD": 4}, "flags": ["OP001", "OP001", "OP001", "OP001"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 江苏
+- 年份: 2012
+- 科目: 行测
+- 卷型: B类
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3ur2s91
+- 源试卷ID: 399
+- 采集时间: 2026-10-25T09:43:35.595Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2012年江苏省公务员录用考试《行测》题（B类）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L1543 ## 材料 1
+  L2023 ## 材料 2
+  L4507 ## 材料 3
+  L4683 ## 材料 4
+  L4863 ## 材料 5
+  L5035 ## 材料 6
+
+## QUESTION TABLE (155)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@96     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  3@124    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  4@152    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@180    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  6@208    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  7@236    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  8@264    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  9@292    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 10@320    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 11@348    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@376    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@404    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@432    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@460    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@488    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@516    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@544    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 19@572    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 20@600    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@628    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@656    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@684    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@712    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@740    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@768    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 27@796    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@824    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 29@852    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@880    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@908    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 32@936    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@964    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 34@992    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1020   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 36@1048   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1081   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1114   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@1147   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1180   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 41@1213   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1246   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1279   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1312   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1345   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1378   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 47@1411   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1444   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1477   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1510   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1549   d=Y opts=AABCD  ans=B      ana=Y ref=
+  Q 52@1579   d=Y opts=AABCD  ans=C      ana=Y ref=
+  Q 53@1609   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 54@1639   d=Y opts=AABCD  ans=D      ana=Y ref=
+  Q 55@1669   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@1699   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@1727   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@1755   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@1785   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@1815   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@1845   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 62@1883   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@1915   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@1951   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@1985   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 66@2047   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 67@2079   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@2111   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2141   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2173   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2203   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 72@2239   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2273   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2311   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2347   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 76@2383   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2411   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2447   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 79@2481   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@2509   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 81@2539   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 82@2567   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@2595   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 84@2629   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@2659   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 86@2695   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@2725   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 88@2755   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@2791   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@2819   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 91@2855   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@2891   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 93@2927   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@2959   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 95@2989   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3019   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@3055   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 98@3097   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 99@3139   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@3175   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q101@3211   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@3247   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q103@3283   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3313   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q105@3343   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q106@3371   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@3403   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q108@3435   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q109@3467   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q110@3497   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q111@3529   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q112@3561   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q113@3593   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q114@3625   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q115@3665   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@3703   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q117@3747   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q118@3787   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q119@3831   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q120@3869   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q121@3917   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q122@3961   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q123@4005   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q124@4043   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q125@4083   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q126@4129   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q127@4165   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q128@4201   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q129@4241   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q130@4277   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q131@4323   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q132@4361   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q133@4397   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q134@4435   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q135@4471   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q136@4519   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q137@4551   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q138@4579   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q139@4607   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q140@4643   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q141@4699   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q142@4727   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q143@4755   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q144@4789   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q145@4823   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q146@4867   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q147@4905   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q148@4941   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q149@4969   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q150@4997   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q151@5041   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q152@5069   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q153@5099   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q154@5147   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q155@5187   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 MODERJT SIMOVE A. 1 B. 2 C. 3 D. 4
+  ANS: C
+  ANA: 题干给出的两个字符组中重复的字符为“M”、“O”、“E”，共3个。 故正确答案为C。 **来源**：2012年江苏省公务员录用考试《行测》题（B类）第1题 </details>
+--- Q78 @L2447: ### 第 78 题
+### 第 78 题 2，3，10，15，26，（ ） A. 30 B. 35 C. 38 D. 57
+  ANS: B
+  ANA: 原数列2 3 10 15 26 ( )； 平方数列1^2 2^2 3^2 4^2 5^2 6^2； 修正项+1−1+1−1+1−1。 原数列的空缺项为6^2 − 1 = 35。 故正确答案为B。 **来源**：2012年江苏省公务员录用考试《行测》题（B类）第78题 </details>
+--- Q155 @L5187: ### 第 155 题
+### 第 155 题 2011年前三季度，江苏农村居民人均纯收入是农村居民人均消费支出的： A. 1.45倍 B. 1.56倍 C. 1.97倍 D. 1.99倍
+  ANS: D
+  ANA: 根据题干“2011年前三季度，······是······的”，结合材料给出前三季度数据且选项均为倍数，可判定本题为现期倍数问题。定位统计图可得：2011年前三个季度，江苏农村居民人均纯收入分别为4460、1961、3006元；农村居民人均消费支出分别为1955、1250、1526元。观察选项发现，C、D选项数值非常接近，估算可能造成误差过大而错选答案，因此只能精确计算。故江苏农村居民人均纯收入/农村居民人均消费支出= (4460 + 1961 + 3006)/(1955 + 1250 + 1526)= 9427/4731 ≈ 1.99倍。 故正确答案为D。 **来源**：2012年江苏省公务员…(+29)
+--- Q2 @L96: ### 第 2 题
+### 第 2 题 NSFY25J JLYBN26 A. 1 B. 2 C. 3 D. 4
+  ANS: D
+  ANA: 题干给出的两个字符组中重复的字符为“N”、“Y”、“2”、“J”，共4个。 故正确答案为D。 **来源**：2012年江苏省公务员录用考试《行测》题（B类）第2题 </details>
+--- Q154 @L5147: ### 第 154 题
+### 第 154 题 2011年第二季度同比增长最快的是： A. 江苏农村居民人均纯收入 B. 江苏农村居民人均消费支出 C. 江苏城镇居民人均可支配收入 D. 江苏城镇居民人均消费支出
+  ANS: B
+  ANA: 根据题干“······同比增长最快”,可判定本题为一般增长率问题。 四类数据同比增长分别如下： 2011年第二季度农村居民人均纯收入同比增长：(1961−1651)/1651≈310/1700≈18%； 2011年第二季度农村居民人均消费支出同比增长：(1250−998)/998≈250/1000=25%； 2011年第二季度城镇居民人均可支配收入同比增长：(6586 − 5713)/5713 ≈ 900/5700 ≈ 16%； 2011年第二季度城镇居民人均消费支出同比增长：(3845 - 3350)/3350 ≈ 500/3400 ≈ 15%。 显然江苏农村居民人均消费支出同比增长最快。 …(+56)

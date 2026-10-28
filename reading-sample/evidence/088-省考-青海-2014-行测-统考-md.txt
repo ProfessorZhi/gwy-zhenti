@@ -1,0 +1,166 @@
+# PACKET 省考/青海/2014/行测-统考.md
+META {"path": "省考/青海/2014/行测-统考.md", "file_sha": "e5df15e5f9432475e9474c42357b3bb6f2329b4ab171e8f7efd991313d9e47e7", "bytes": 175104, "pr140_sha": "6189aa2190d511315fc43e23f958309b73d42becc61f587afe757e5a7957a210", "pr140_same": false, "key": "xingce:43663", "source_sha": "ef11d244142dd3bcf32ac36ec2568758c617e01cc39f0c02238b13457049e9e6", "area": "青海", "year": "2014", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 5, "h3": 120, "tables": 30, "images": 15, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 380, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 119, "AABCD": 1}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 青海
+- 年份: 2014
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3ur5184
+- 源试卷ID: 43663
+- 采集时间: 2026-10-25T10:18:22.610Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2014年青海省公务员录用考试《行测》题
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4066 ## 材料 1
+  L4246 ## 材料 2
+  L4431 ## 材料 3
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@108    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@146    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  4@180    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@210    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  6@246    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@286    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@322    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@358    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@394    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@432    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 12@464    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 13@496    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@528    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@558    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 16@594    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 17@636    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 18@678    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@720    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@764    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 21@816    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 22@866    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@898    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@932    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@966    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@1006   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@1044   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@1082   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1118   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 30@1150   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 31@1190   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@1230   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1266   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1304   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 35@1348   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 36@1384   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1420   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1456   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@1490   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1528   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 41@1566   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 42@1598   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1630   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1668   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 45@1710   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1744   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1778   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1816   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 49@1850   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1884   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@1920   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1952   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1988   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@2030   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@2072   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 56@2110   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@2140   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@2186   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 59@2219   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 60@2251   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@2281   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2319   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 63@2349   d=Y opts=AABCD  ans=B      ana=Y ref=
+  Q 64@2379   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@2409   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 66@2439   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@2471   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@2503   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2535   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2565   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 71@2597   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2629   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 73@2659   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2691   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 75@2725   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2759   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 77@2803   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 78@2847   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@2889   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@2933   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@2977   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 82@3021   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 83@3065   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@3109   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@3157   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3199   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3241   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3283   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3325   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@3367   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 91@3409   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 92@3450   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3488   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 94@3526   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3564   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 96@3602   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3648   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 98@3694   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3744   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q100@3790   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3840   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q102@3886   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@3930   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3976   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@4022   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q106@4080   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q107@4110   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q108@4140   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q109@4180   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q110@4210   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@4269   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q112@4299   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q113@4329   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@4359   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q115@4395   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4441   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q117@4471   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q118@4501   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q119@4531   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q120@4561   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 中国共产党80年的历史中，针对每一次重大事变或重要方针路线曾提出过许多动员口号，下列动员口号按时间排序正确的是： ①人才强国 ②尊重人才 ③四有新人 ④以人为本 A. ②①④③ B. ②③①④ C. ③④①② D. ③②④①
+  ANS: B
+  ANA: 本题考查毛中特。 ①人才强国即人才强国战略。由胡锦涛同志在2002年《2002—2005年全国人才队伍建设规划纲要》明确指出：抓住机遇，迎接挑战，走人才强国之路，是增强综合国力和国际竞争力，实现中华民族伟大复兴的战略选择。 ②“尊重知识、尊重人才”，是中共党史上的80句口号之一。1977年5月24日，邓小平与中央两位同志谈话时指出：“我们要实现现代化，关键是科学技术要能上去。发展科学技术，不抓教育不行。靠空讲不能实现现代化，必须有知识，有人才。” ③“四有新人”是1980年5月26日，中共中央副主席邓小平给《中国少年报》和《辅导员》杂志的题词：“希望全国的小朋友，立志做有理想、有道德、有知识、…(+96)
+--- Q61 @L2281: ### 第 61 题
+### 第 61 题 某书店打折区有文学类书10种，理科类书5种，法律类书3种。三类书的打折价格分别统一为10元，20元和30元。小明身上有30元，他打算全部用来买书，且同一种书不重复购买。问可以有多少种选择： A. 150 B. 162 C. 167 D. 173
+  ANS: D
+  ANA: 30元购买书籍可以分成三种情况：可购买3种文学类书籍，或1种文学类和1种理科类书籍，或1种法律类书籍。 当购买3种文学类书籍时，一共有C(10,3) = 120种情况数； 当购买1种文学类和1种理科类书籍时，一共有C_10^1×C_5^1=50种情况数； 当购买一种法律类书籍时，一共有C_3^1=3种情况数。 故小明可以有120+50+3=173种选择。 故正确答案为D。 **考点**：基础排列组合 **来源**：2014年青海省公务员录用考试《行测》题第61题 </details>
+--- Q120 @L4561: ### 第 120 题
+### 第 120 题 能够从资料中推出的是： A. 2010年中非全年贸易额同比增长了43.5% B. 2001-2010年中非贸易额呈逐年上升趋势 C. 2008年中国的对外贸易总额略低于2万亿美元 D. 2000-2008年中非贸易年均增长额超过100亿美元
+  ANS: D
+  ANA: A项：定位文字材料第一段可知：2010年1月至11月，中非贸易额同比增长43.5%，并不是2010年全年，错误； B项：定位材料图1，可发现2009年中非贸易额低于2008年，错误； C项：定位文字材料第一段可知：2008年中国对非洲出口508亿美元，自非洲进口560亿美元，中非贸易占中国对外贸易总额的比重为4.2%，则2008年中国对外贸易总额= 中非贸易额/所占比重= (508 + 560)/4.2%=1068/4.2%≈25000＞20000亿美元，错误； D项：定位文字材料第一段可知：2008年中国对非洲出口508亿美元，自非洲进口560亿美元，则2008年中非贸易总额=508+560…(+97)
+--- Q2 @L108: ### 第 2 题
+### 第 2 题 关于当代中国历史，下列描述正确的是： A. 新中国成立后，我国由半殖民地半封建社会转变为社会主义社会 B. 深圳、珠海、汕头、大连是我国最早的4个经济特区 C. 1977年我国正式恢复已经中断多年的高考制度 D. 中美建交是二十世纪八十年代的一件大事
+  ANS: C
+  ANA: 本题考查毛中特。 A项错误，1949年10月新中国成立，我国由半殖民地半封建社会转为新民主主义社会，新民主主义社会是过渡时期，是过渡到社会主义的准备阶段，从1949年10月新中国成立到1956年社会主义改造基本完成，社会主义制度建立，中国社会的性质是新民主主义社会； B项错误，我国最早的4个经济特区为：深圳、珠海、厦门、汕头； C项正确，1977年，由于“文化大革命”的冲击而中断了十年的中国高考制度得以恢复，中国由此重新迎来了尊重知识、尊重人才的春天； D项错误，20世纪70年代末，邓小平同志高瞻远瞩，抓住机遇，促成中美于1979年1月1日建立正式外交关系，从而结束了长达30年的不正常状态。 …(+62)
+--- Q119 @L4531: ### 第 119 题
+### 第 119 题 截至2009年年底，中国对非洲直接投资存量超过10亿美元的行业有几个？ A. 4 B. 5 C. 6 D. 7
+  ANS: A
+  ANA: 根据题干“······超过10亿美元的行业”，结合材料文字第二段“截至2009年年底，中国对非洲直接投资存量已大幅增长到93.3亿美元。”和材料图2，可判定本题为比重问题。中国对非洲直接投资存量为10亿美元时，占总存量的比重=10/93.33≈10.7%，则当投资存量所占比重大于10.7%时，符合题干的要求。根据材料图2，有采矿业（29.2%）、制造业（22.0%）、建筑业（15.8%）、金融业（13.9%）4个行业符合要求。 故正确答案为A。 **考点**：现期比重、综合资料 **来源**：2014年青海省公务员录用考试《行测》题第119题 </details>

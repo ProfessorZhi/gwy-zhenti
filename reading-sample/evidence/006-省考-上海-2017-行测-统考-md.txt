@@ -1,0 +1,181 @@
+# PACKET 省考/上海/2017/行测-统考.md
+META {"path": "省考/上海/2017/行测-统考.md", "file_sha": "44fd3b845d5a5a30bdc798eca7b6d58d6005bcd4a3c8304b80b8f60fea10f9e5", "bytes": 202804, "pr140_sha": "44fd3b845d5a5a30bdc798eca7b6d58d6005bcd4a3c8304b80b8f60fea10f9e5", "pr140_same": true, "key": "", "source_sha": "", "area": "上海", "year": "2017", "subject": "行测", "variant": "统考", "nature": "正式真题", "validation": "原卷重建：题干 PDF 136 题逐字抽取，答案 PDF 逐题回填答案+官方解析；题干区 38 张位图（35 题图 + 3 资料分析材料图）按原卷版面归属回填，原生像素入 <img width/height>；6 篇共用材料（言语理解 3 + 资料分析 3）按原卷版面重建，材料题降为 ### 级；图形推理类选项在图上，按库内惯例写 - **A**. A 占位；我方原文 110 题逐字保留，仅四类有据修订：删页脚伪影 35 处、纠正不定项选择答案 12 处（我方解析尾句自述「选择X选项」佐证）、补回空白选项 3 处（我方题号 38-D/42-D/106-D，来源缺字，据题干PDF回填）、纠正选项缺字/串入正文 5 处（我方 46-D 串入材料六正文、56-A~D 只余「只有」「、」，据题干PDF同题回填）；补回内联公式空缺 3 处（PDF#72 $CD=10\\sqrt{3}$米、PDF#75 $W_A$/$W_B$、PDF#81 $v^2$，见 FIX-TEX.jsonl）；题干/选项区 3 题（56/66/75）原卷为 MathType 位图，改用 $…$ 转写并留证；解析区公式碎片未重建（与我方原文既有状态一致）；证据 work/qa/sh2017/（CAND.md + FIX-*.jsonl + FIG-ASSIGN.json + CENSUS.json）；未人工通读.", "source_class": "", "template": "mixed-level", "qcount": 136, "h2": 115, "h3": 27, "tables": 0, "images": 38, "latex_dollars": 52, "placeholder_marks": 0, "longest_line": 1007, "answers_empty": 0, "multi_answers": 12, "no_analysis_marker": 0, "dup_jiexi_label": 134, "hr_inside_details": 136, "opt_label_hist": {"ABCD": 136}, "flags": ["HD008"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 上海
+- 年份: 2017
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 正式真题
+- 来源: ["linfukai186"]
+- 校验状态: 原卷重建：题干 PDF 136 题逐字抽取，答案 PDF 逐题回填答案+官方解析；题干区 38 张位图（35 题图 + 3 资料分析材料图）按原卷版面归属回填，原生像素入 <img width/height>；6 篇共用材料（言语理解 3 + 资料分析 3）按原卷版面重建，材料题降为 ### 级；图形推理类选项在图上，按库内惯例写 - **A**. A 占位；我方原文 110 题逐字保留，仅四类有…(+396)
+
+## OUTLINE (non-question headings)
+  L16 # 2017 上海市公务员录用考试 行测（统考）
+  L831 ## 材料 1
+  L937 ## 材料 2
+  L1041 ## 材料 3
+  L2688 ## 材料 4
+  L2801 ## 材料 5
+  L2910 ## 材料 6
+
+## QUESTION TABLE (136)
+  Q  1@33     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@54     d=Y opts=ABCD   ans=AB     ana=Y ref=
+  Q  3@75     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  4@96     d=Y opts=ABCD   ans=ACD    ana=Y ref=
+  Q  5@117    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@138    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@159    d=Y opts=ABCD   ans=ACD    ana=Y ref=
+  Q  8@180    d=Y opts=ABCD   ans=AC     ana=Y ref=
+  Q  9@201    d=Y opts=ABCD   ans=BCD    ana=Y ref=
+  Q 10@222    d=Y opts=ABCD   ans=AD     ana=Y ref=
+  Q 11@243    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 12@264    d=Y opts=ABCD   ans=AC     ana=Y ref=
+  Q 13@285    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 14@306    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@327    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@348    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 17@369    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@390    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@411    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@432    d=Y opts=ABCD   ans=ACD    ana=Y ref=
+  Q 21@453    d=Y opts=ABCD   ans=BCD    ana=Y ref=
+  Q 22@474    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 23@495    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 24@516    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@537    d=Y opts=ABCD   ans=AC     ana=Y ref=
+  Q 26@558    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 27@579    d=Y opts=ABCD   ans=AB     ana=Y ref=
+  Q 28@600    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 29@621    d=Y opts=ABCD   ans=ACD    ana=Y ref=
+  Q 30@642    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@663    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 32@684    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@705    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 34@726    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@747    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@768    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@789    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 38@810    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@853    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 40@874    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 41@895    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@916    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@957    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@978    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 45@999    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1020   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 47@1049   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1070   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1091   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1112   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 51@1133   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1154   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1175   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@1196   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@1217   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 56@1240   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@1261   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@1282   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 59@1303   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@1324   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@1345   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 62@1366   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@1387   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 64@1408   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@1429   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 66@1450   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@1471   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@1492   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@1513   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@1534   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@1555   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@1576   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@1599   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 74@1622   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@1645   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@1668   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@1691   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@1714   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 79@1737   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@1758   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 81@1781   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 82@1802   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 83@1825   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 84@1848   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@1871   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 86@1894   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 87@1917   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 88@1940   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 89@1963   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@1986   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 91@2009   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 92@2032   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@2055   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@2078   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 95@2101   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 96@2124   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@2147   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@2170   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 99@2193   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@2216   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@2239   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@2262   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q103@2285   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@2308   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q105@2331   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@2352   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q107@2373   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q108@2394   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q109@2415   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q110@2436   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q111@2457   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q112@2478   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@2499   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@2520   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q115@2541   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@2562   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q117@2583   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q118@2604   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q119@2625   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q120@2646   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q121@2667   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q122@2694   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q123@2715   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q124@2736   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q125@2757   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q126@2780   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q127@2805   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q128@2826   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q129@2847   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q130@2868   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q131@2889   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q132@2916   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q133@2937   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q134@2958   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q135@2979   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q136@3000   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L33: ## 第 1 题　<sub>常识判断</sub>
+## 第 1 题 <sub>常识判断</sub> (不定项选择)中国共产党第十八届中央委员会第六次全体会议，于2016年10月24日至27日在北京举行。全 会强调，严肃党内政治生活的组织保证是： - **A**. 遵守法律 - **B**. 坚持党内民主 - **C**. 坚持正确选人用人导向 - **D**. 坚持党内监督
+  ANS: C
+  ANA: 解析 第一步，本题考查时政。 第二步，党的十八届中央委员会第六次全体会议指出，坚持正确选人用人导向，是严肃党内政治生活的组织保证。 必须严格标准、健全制度、完善政策、规范程序，使选出来的干部组织放心、群众满意、干部服气。C项符合题意。 因此，选择C选项。 拓展 中国共产党第十八届中央委员会第六次全体会议，简称十八届六中全会，于2016年10月24日至27日召开。大 会的主要议程是：中共中央政治局向中央委员会报告工作，研究全面从严治党的重大问题，制定新形势下党内政 治生活若干准则，修订《中国共产党党内监督条例（试行）》。 --- </details>
+--- Q69 @L1513: ## 第 69 题　<sub>数量关系</sub>
+## 第 69 题 <sub>数量关系</sub> 快递员小丁要送1000份快递，成功送1份快递可得3元，如果送错地址或快递丢失要赔5元。1000份快递全 部送完后，小丁共获得2600元，则他共成功送了（ ）份快递。 - **A**. 880 - **B**. 900 - **C**. 950 - **D**. 980
+  ANS: C
+  ANA: 解析 解法一： 第一步，本题考查基础应用题。 第二步，设他共成功送了x份快递。由题意列式：3x－5×（1000－x）＝2600，解得x＝950。 因此，选择C选项。 解法二： 第一步，本题考查基础应用题。 第二步，若成功送1000份快递，小丁可获得1000×3＝3000（元），每送错地址或丢失1份快递损失3＋5＝8（元）， 则小丁送错地址或丢失的快递数为（3000－2600）÷8＝50（份），故小丁成功送了1000－50＝950（份）快递。 因此，选择C选项。 --- </details>
+--- Q136 @L3000: ### 第 136 题　<sub>资料分析</sub>
+### 第 136 题 <sub>资料分析</sub> 下列关于2016年3月上海市空气质量的说法，不正确的是： - **A**. AQI 最小值最低和最大值最低的日子是同一天 - **B**. 没有出现连续3 天AQI 最大值超过150 的情况 - **C**. 每日的AQI 最小值均在100 以下 - **D**. 全天空气质量变化最大的一天在当月下旬
+  ANS: D
+  ANA: 解析 第一步，本题考查综合分析，且需选出其中错误的一项。 第二步，A选项，读数比较，定位折线图，AQI最大值（三角形折线）最低的一天是3月8日，最小值（菱形折线） 最低的一天也是3月8日，正确。 B选项，读数比较，定位折线图中AQI最大值（三角形折线），没有连续3天最大值超过150的情况，正确。 C选项，读数比较，定位折线图中AQI最小值（菱形折线），该月所有的AQI最小值均小于100，正确。 D选项，读数比较，定位折线图中AQI最小值（菱形折线）和最大值（三角形折线），全天空气质量变化最大的一 天是3月5日，位于本月上旬，错误。 因此，选择D选项。 --- </details>
+--- Q2 @L54: ## 第 2 题　<sub>常识判断</sub>
+## 第 2 题 <sub>常识判断</sub> (不定项选择)《上海市国民经济和社会发展第十三个五年规划纲要》指出，要全方位拓展开放的广度和深度， 以中国（上海）自由贸易试验区为引领，加快探索以开放促改革、促发展的新路径，使对内对外开放相互促进， “引进来”与“走出去”更好结合，全面参与国家（ ）战略，促进长三角地区一体化发展。 - **A**. “一带一路” - **B**. 长江经济带 - **C**. 长三角经济区 - **D**. 中部崛起
+  ANS: AB
+  ANA: 解析 第一步，本题考查时政。 第二步，《上海市国民经济和社会发展第十三个五年规划纲要》指出，要全方位拓展开放的广度和深度，以中国 （上海）自由贸易试验区为引领，加快探索以开放促改革、促发展的新路径，使对内对外开放相互促进，“引进 来”与“走出去”更好结合，全面参与国家“一带一路”、长江经济带战略，促进长三角地区一体化发展。 选项中A项“一带一路”和B项长江经济带都是跟上海有关的重要国家战略，C项长三角经济区又叫长三角城市群， 不属于国家战略，故不符合题意。D项“中部崛起”是主要针对中部6省发展的国家战略，与上海无直接联系，因 此D不符合题意。 因此，选择AB选项。 拓展 A项：“一带一路”是“…(+100)
+--- Q135 @L2979: ### 第 135 题　<sub>资料分析</sub>
+### 第 135 题 <sub>资料分析</sub> 2016年3月7日至27日，上海市空气质量为轻度污染（AQI平均值为100~150）的天数为： - **A**. 3 - **B**. 4 - **C**. 5 - **D**. 6
+  ANS: A
+  ANA: 解析 第一步，本题考查读数比较。 第二步，定位图1中AQI平均值数据（正方形折线）。 第三步，观察折线图数据，2016年3月7日至27日AQI平均值在100—150之间的日期，有3月12日、3月18 日、3月27日，共计三天。 因此，选择A选项。 --- </details>

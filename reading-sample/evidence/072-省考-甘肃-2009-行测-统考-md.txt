@@ -1,0 +1,146 @@
+# PACKET 省考/甘肃/2009/行测-统考.md
+META {"path": "省考/甘肃/2009/行测-统考.md", "file_sha": "49e60b8165ab79ecc6bd666394a958ec0c026bc270af61554395bebeaeaa2bdd", "bytes": 119499, "pr140_sha": "49e60b8165ab79ecc6bd666394a958ec0c026bc270af61554395bebeaeaa2bdd", "pr140_same": true, "key": "xingce:145", "source_sha": "edd66bbf3f6e9af93185f70e81c8f44557b5424b0a4769476c438f424133c879", "area": "甘肃", "year": "2009", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 100, "h2": 5, "h3": 100, "tables": 29, "images": 4, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 414, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 100}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 甘肃
+- 年份: 2009
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3ur0t4g
+- 源试卷ID: 145
+- 采集时间: 2026-10-25T09:17:19.449Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2009年甘肃省公务员录用考试《行测》题
+  L33 ## 题型与作答说明
+  L59 ## 题目
+  L2963 ## 材料 1
+  L3141 ## 材料 2
+  L3325 ## 材料 3
+
+## QUESTION TABLE (100)
+  Q  1@61     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@91     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  3@119    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  4@147    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  5@175    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  6@213    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@241    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@269    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  9@297    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 10@331    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 11@361    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@391    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 13@421    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 14@451    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@483    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 16@525    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 17@563    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 18@597    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@631    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@669    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@703    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 22@737    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 23@771    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@803    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@839    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@877    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 27@913    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 28@949    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 29@979    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 30@1017   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1055   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@1093   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@1129   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 34@1167   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1201   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 36@1243   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 37@1281   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1319   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 39@1357   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1393   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1431   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1467   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1503   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1541   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 45@1579   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 46@1617   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 47@1647   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1675   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 49@1707   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 50@1743   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 51@1789   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 52@1819   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 53@1855   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 54@1895   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@1931   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 56@1965   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2003   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@2039   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 59@2071   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2115   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@2153   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 62@2183   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2213   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 64@2243   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@2279   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 66@2317   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@2353   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2385   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 69@2421   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2451   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2489   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2523   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2555   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 74@2585   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2623   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 76@2653   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 77@2691   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@2721   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 79@2751   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@2779   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2809   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 82@2839   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@2867   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 84@2897   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 85@2933   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@2971   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 87@3001   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@3031   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3061   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3105   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 91@3163   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3193   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3223   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3253   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3289   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 96@3341   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3371   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3407   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 99@3443   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3479   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L61: ### 第 1 题
+### 第 1 题 1，15，8，24，27，35，64，48，（ ），（ ） A. 65，24 B. 125，80 C. 125，63 D. 65，124
+  ANS: C
+  ANA: 数列中项数较多，大于等于7项，优先考虑多重数列。首先分奇偶项观察，发现所有奇数项1、8、27、64，分别为立方数1^3，2^3，3^3，4^3，下一个奇数项应为5^3=125。 偶数项15、24、35、48，没有明显规律，尝试作差后得到新数列9、11、13，是公差为2的等差数列，则新数列的下一项应为13+2=15。偶数项的下一项应为48+15=63。 故正确答案为C。 **来源**：2009年甘肃省公务员录用考试《行测》题第1题 </details>
+--- Q51 @L1789: ### 第 51 题
+### 第 51 题 认为行政组织要创造各种机制使组织成员介入决策与管理过程，这是行政组织建立的（ ）。 A. 指挥统一原则 B. 参与、沟通原则 C. 组织目标原则 D. 开放原则
+  ANS: B
+  ANA: 行政组织建立的参与、沟通原则要求组织要创造各种机制使组织成员介入决策与管理过程。 故正确答案为B。 此外组织内成员的沟通也是行政组织内部平行沟通的一环，这种平行沟通是指通过机关组织结构体系，在单位间或平行人员间互相交换讯息或意见的过程。如，科长与科长间、组织处与人事处间的沟通等。平行沟通可使单位和人员间互相了解，培养彼此间的友谊，增强彼此协调的机会。 **来源**：2009年甘肃省公务员录用考试《行测》题第51题 </details>
+--- Q100 @L3479: ### 第 100 题
+### 第 100 题 2005年该省集体单位工资总额为（ ）亿元。 A. 23.4 B. 24.4 C. 25.4 D. 26.4
+  ANS: C
+  ANA: 根据表格，2005年该省集体单位工资总额为25.9/(1 + 2.0%) ≈ 25.9 × (1 − 2.0%)= 25.9 - 25.9 × 2% = 25.9 - 0.518 ≈ 25.4亿元。 故正确答案为C。 **考点**：基期计算、统计表 **来源**：2009年甘肃省公务员录用考试《行测》题第100题 </details>
+--- Q2 @L91: ### 第 2 题
+### 第 2 题 1＋2，2＋4，3＋6，1＋8，2＋10，3＋12，…，（ ） A. 1+24 B. 2+24 C. 3+26 D. 1+26
+  ANS: D
+  ANA: 观察数列特征，有特殊符号“+”，考虑机械划分。前一个加数分别为1、2、3、1、2、3，是按照1、2、3的顺序循环出现在数列的第一个加数；后一个加数分别为2、4、6、8、10、12，是公差为2的等差数列。找到规律后观察选项，发现24、26的数据不大，可以采用枚举法将后续数据枚举出来，分别为：······、1+14、2+16、3+18、1+20、2+22、3+24、1+26、······ 故正确答案为D。 **来源**：2009年甘肃省公务员录用考试《行测》题第2题 </details>
+--- Q99 @L3443: ### 第 99 题
+### 第 99 题 对于该省在岗职工人数分析正确的一项是（ ）。 A. 国有单位在岗职工人数占在岗职工人数的一半以上 B. 集体单位在岗职工人数增加，但增幅较小 C. 其他单位在岗职工人数急剧增长 D. 随着在岗职工人数的增加，该省的就业率进一步提高
+  ANS: C
+  ANA: A项：定位统计表，2006年国有单位在岗职工人数为242.64 ÷ 16460 ≈ 0.0147亿=147万，占在岗职工人数比例为147/327.66＜1/2，错误； B项：定位统计表，2006年集体单位在岗职工人数为25.9 ÷ 11386 ≈ 0.0023亿=23万，2005年集体单位在岗职工人数为25.9/((1+2.0%)×10119) ≈ 25.9/(10100+200)=25.9/10300≈0.0025亿=25万＞23万，因此集体单位在岗职工人数没有增加，错误； C项：定位统计表，2005年其他单位在岗职工人数为158.15÷12719≈0.0124亿=124万，2006年其他单…(+98)

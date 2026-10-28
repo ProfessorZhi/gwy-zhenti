@@ -1,0 +1,148 @@
+# PACKET 省考/深圳/2008/行测-上半年.md
+META {"path": "省考/深圳/2008/行测-上半年.md", "file_sha": "20554c31af7f96c8adcc1a23203d06aa80a9c20efa68d82ef50c78181036c17f", "bytes": 106032, "pr140_sha": "20554c31af7f96c8adcc1a23203d06aa80a9c20efa68d82ef50c78181036c17f", "pr140_same": true, "key": "xingce:12811", "source_sha": "c2dd2c082ab785457084211a7fb48027d9ae897ec32b534b88379057c9ab44f0", "area": "深圳", "year": "2008", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 100, "h2": 7, "h3": 100, "tables": 21, "images": 14, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 420, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 99, "AABCD": 1}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 深圳
+- 年份: 2008
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3uqv646
+- 源试卷ID: 12811
+- 采集时间: 2026-10-25T08:58:10.072Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2008年深圳市公务员录用考试《行测》题（上半年）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L1027 ## 材料 1
+  L2363 ## 材料 2
+  L2531 ## 材料 3
+  L2699 ## 材料 4
+  L2867 ## 材料 5
+
+## QUESTION TABLE (100)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@104    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@132    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  4@160    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@188    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  6@216    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  7@250    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@280    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  9@310    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 10@340    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 11@379    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 12@409    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@439    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 14@467    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@497    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@527    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 17@565    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@605    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 19@641    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 20@675    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@711    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@741    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@773    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 24@809    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@839    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@869    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 27@901    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@931    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@965    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@995    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1037   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 32@1071   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@1107   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 34@1139   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 35@1175   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1209   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 37@1243   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 38@1281   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 39@1321   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 40@1363   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1405   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1441   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1477   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1513   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1553   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 46@1591   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 47@1625   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1657   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 49@1691   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 50@1727   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 51@1759   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1793   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1827   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 54@1859   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@1893   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 56@1927   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 57@1971   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@2015   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 59@2059   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2105   d=Y opts=AABCD  ans=D      ana=Y ref=
+  Q 61@2149   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 62@2189   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2237   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@2281   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@2325   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 66@2367   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@2397   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2427   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 69@2457   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2493   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2543   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 72@2573   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 73@2603   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2633   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 75@2663   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 76@2707   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2737   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 78@2767   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2797   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@2827   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@2881   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@2911   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@2941   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 84@2971   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 85@3001   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3037   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 87@3067   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3095   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@3131   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@3171   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 91@3199   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@3227   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 93@3255   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3299   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3329   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 96@3359   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3389   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3417   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 99@3445   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q100@3475   d=Y opts=ABCD   ans=A      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 1，4，27，16，125，36，( )。 A. 252 B. 343 C. 49 D. 108
+  ANS: B
+  ANA: 根据题目。 原数列可以变为1^3，2^2，3^3，4^2，5^3，6^2； 底数为：1，2，3，4，5，6，公差为1的等差数列； 指数为：3，2，3，2，3，2是周期数列。 所以( ) = 7^3 = 343。 故正确答案为B。 **来源**：2008年深圳市公务员录用考试《行测》题（上半年）第1题 </details>
+--- Q51 @L1759: ### 第 51 题
+### 第 51 题 请从所给的这几个选项中，选择最合适的一个填在问号处，使之呈现一定的规律： ![](assets-fenbi-12811/7d868a005882e1dc7254d1a13e76fcad78521caf52e7df5d1045987cfa856f0a.png) A. A B. B C. C D. D
+  ANS: C
+  ANA: 元素组成相似，考查元素。本题考查元素运算的去同存异。 第一组图形第一幅图与第二幅图相加，去掉相同的部分，得到第三幅图。第二组按照这个规律，只有C选项符合。 故正确答案为C。 **考点**：样式规律-加减同异 **来源**：2008年深圳市公务员录用考试《行测》题（上半年）第51题 </details>
+--- Q100 @L3475: ### 第 100 题
+### 第 100 题 中国共产党坚持独立自主的和平外交政策，坚持＿＿＿＿＿道路，坚持互利共赢的开放战略，统筹国内国际两个大局，积极发展对外关系，努力为我国的改革开放和现代化建设争取有利的国际环境： A. 和平发展 B. 和平合作 C. 和平崛起 D. 和谐发展
+  ANS: A
+  ANA: 中国共产党第十七次全国代表大会做部分修改的《中国共产党章程》规定：坚持独立自主的和平外交政策，坚持和平发展道路，为现代化建设营造良好的周边环境和国际环境。 故正确答案为A。 **考点**：其他建设 **来源**：2008年深圳市公务员录用考试《行测》题（上半年）第100题 </details>
+--- Q2 @L104: ### 第 2 题
+### 第 2 题 1，6，7，43，( )。 A. 90 B. 91 C. 92 D. 93
+  ANS: C
+  ANA: 根据题目，原数列可以化为1^2+6=7，6^2 + 7 = 43，即符合：A_n^2 + A_(n+1) = A_(n+2)。所以( ) = 7^2 + 43 = 92。 故正确答案为C。 **来源**：2008年深圳市公务员录用考试《行测》题（上半年）第2题 </details>
+--- Q99 @L3445: ### 第 99 题
+### 第 99 题 中国共产党第十七届中央委员会第一次全体会议选举产生了新一届中央领导机构，其中中央政治局常委共多少人： A. 7 B. 9 C. 11 D. 13
+  ANS: B
+  ANA: 十七届一中全会选举胡锦涛、吴邦国、温家宝、贾庆林、李长春、习近平、李克强、贺国强、周永康为中央政治局常委，共9人。 故正确答案为B。 **考点**：时事政治-其他 **来源**：2008年深圳市公务员录用考试《行测》题（上半年）第99题 </details>

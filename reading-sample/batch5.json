@@ -1,0 +1,355 @@
+[
+ {
+  "path": "省考/新疆兵团/2015/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "3 题；Q1 关联材料 2、3 与题干「资料2、3」一致，Q2 材料 4、5；3 张图未载入。来源 PARTIAL。"
+ },
+ {
+  "path": "省考/江苏/2008/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "SOURCE",
+  "status": "AI_PASS",
+  "issues": [
+   {
+    "path": "省考/江苏/2008/申论-统考.md",
+    "line": 143,
+    "code": "READ_NO_ANALYSIS",
+    "explanation": "4 题均无解析标记，只有参考答案；属源侧无文字解析，本 lane 不核实源可得性。",
+    "severity": "info"
+   }
+  ],
+  "notes": "4 题；题干「材料6/材料5/材料3」与关联材料一一对应。"
+ },
+ {
+  "path": "省考/江苏/2008/行测-A类.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "105 题全 ABCD；40 个表格列数一致；Q1 数列题 27,29,33,41,57 → 89，解析一致。"
+ },
+ {
+  "path": "省考/江苏/2009/行测-B类.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "155 题全 ABCD；46 个表格；56 张图未载入（图形/字符比对题）。"
+ },
+ {
+  "path": "省考/江苏/2012/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "SOURCE",
+  "status": "AI_PASS",
+  "issues": [
+   {
+    "path": "省考/江苏/2012/申论-统考.md",
+    "line": 157,
+    "code": "READ_MULTI_ANSWER",
+    "explanation": "参考答案有「参考答案一/二」多个版本，均在同一折叠块内顺序排列，读者可分。",
+    "severity": "info"
+   }
+  ],
+  "notes": "4 题；Q3 关联材料 6–9 与题干一致。来源索引 MISSING（无主快照），不据此判定内容缺失。"
+ },
+ {
+  "path": "省考/江苏/2012/行测-B类.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "FORMAT",
+  "status": "AI_PASS",
+  "issues": [
+   {
+    "path": "省考/江苏/2012/行测-B类.md",
+    "line": 1553,
+    "code": "READ_OPTION_LEGEND",
+    "explanation": "第 51–54 题各有一行「A. ☿ B. ♀ C. ▲ D. ●」图例行，是表格的符号图例，紧接其后才是真正的 A/B/C/D 选项行；不影响作答。",
+    "severity": "minor"
+   }
+  ],
+  "notes": "155 题；77 个表格（本卷资料分析表格多）；4 处图例行按 review 记录，非选项错配。"
+ },
+ {
+  "path": "省考/江苏/2016/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "CONTENT",
+  "status": "AI_ISSUE",
+  "issues": [
+   {
+    "path": "省考/江苏/2016/申论-统考.md",
+    "line": 256,
+    "code": "READ_KANGXI_RADICAL",
+    "explanation": "答案正文大量使用康熙部首码位（⻛ U+2EDB、⺠、⻓、⻔…），本卷 397 个；字形近似“风/民/长/门”，但搜索、复制、规范化都会失败。非排版层，本 lane 不改写。",
+    "severity": "minor"
+   }
+  ],
+  "notes": "6 题；R7 风格（<a id=\"r7-reference-N\"> + details），参考答案无「参考答案」小标题，直接从答文开始；Q6 末尾有「参考答案说明」。"
+ },
+ {
+  "path": "省考/江苏/2024/行测-C类.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "VISUAL"
+  },
+  "review_type": "FORMAT",
+  "status": "AI_ISSUE",
+  "issues": [
+   {
+    "path": "省考/江苏/2024/行测-C类.md",
+    "line": 33,
+    "code": "READ_MIXED_QLEVEL",
+    "explanation": "资料分析题用 ### 挂在 ## 材料 下（27 题），其余 103 题用 ##，同卷题目标题层级不一致（基线 HD008）。",
+    "severity": "minor"
+   },
+   {
+    "path": "省考/江苏/2024/行测-C类.md",
+    "line": 40,
+    "code": "READ_HR_IN_DETAILS",
+    "explanation": "129 个折叠块结尾有 `---` 分隔线；不影响内容。",
+    "severity": "minor"
+   }
+  ],
+  "notes": "130 题；59 张图（题干图/材料图，`<img>` 形式）；选项为 `- **A**.`；1 题无解析标记。",
+  "visual_pending": [
+   "59 张位图未载入"
+  ]
+ },
+ {
+  "path": "省考/江苏/2025/申论-C卷.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 关联材料已是「材料 1、2、3、4」，与题干「给定资料1-4」一致（R1 当初报的漏关联在当前 main 已修）；Q2 材料5、Q3 材料6、Q4 材料7。"
+ },
+ {
+  "path": "省考/江西/2012/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 材料1–5、Q2 材料5–8、Q3 材料1–5 与题干一致。"
+ },
+ {
+  "path": "省考/江西/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "135 题全 ABCD；31 个表格；解析含 a<b（ 数学比较（ES002 同源）。"
+ },
+ {
+  "path": "省考/河北/2008/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；关联材料覆盖题干范围。"
+ },
+ {
+  "path": "省考/河北/2016/行测-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "130 题全 ABCD；31 个表格。"
+ },
+ {
+  "path": "省考/河南/2012/申论-下半年.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "4 题；Q1 材料6、Q2 材料1–5、Q3 材料7 与题干一致。"
+ },
+ {
+  "path": "省考/河南/2016/行测-选调生.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "PASS",
+  "status": "AI_PASS",
+  "issues": [],
+  "notes": "120 题全 ABCD；25 个表格；解析含 a<b（ 数学比较。"
+ },
+ {
+  "path": "省考/河南/2018/申论-统考.md",
+  "read_mode": "spot",
+  "full_file": false,
+  "verdicts": {
+   "frontmatter": "OK",
+   "navigation": "OK",
+   "answer": "OK",
+   "option": "OK",
+   "material": "OK",
+   "table": "OK",
+   "image": "OK"
+  },
+  "review_type": "CONTENT",
+  "status": "AI_ISSUE",
+  "issues": [
+   {
+    "path": "省考/河南/2018/申论-统考.md",
+    "line": 77,
+    "code": "READ_MATERIAL_LABEL_MISMATCH",
+    "explanation": "材料小节标题与正文自带的资料号错位：「### 材料 4」正文首行是「资料5」，「### 材料 5」正文首行是「资料6」；全卷没有「资料4」（在卷末附录里）。读者会看到两级编号互相矛盾。",
+    "severity": "major"
+   },
+   {
+    "path": "省考/河南/2018/申论-统考.md",
+    "line": 102,
+    "code": "READ_SOURCE_NO_ANSWER",
+    "explanation": "4 题均无折叠块、无答案；卷首「参考作答与范文导读」表明确写「待补同题全文 / 暂未收录」，属源侧未收，未编造答案。",
+    "severity": "info"
+   }
+  ],
+  "notes": "R7 旧版式（无 details、无关联材料）；6 张表；frontmatter 写明「源含参考答案未收录」。材料编号错位是真实内容缺陷，需源侧核对后重建，不在本 lane 重排。"
+ }
+]

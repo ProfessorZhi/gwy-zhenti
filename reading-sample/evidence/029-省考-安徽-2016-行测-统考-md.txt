@@ -1,0 +1,156 @@
+# PACKET 省考/安徽/2016/行测-统考.md
+META {"path": "省考/安徽/2016/行测-统考.md", "file_sha": "0a3177cdaf67cee952bf46416d80df421e00ecac196f3a55f5f55ef63f48cd72", "bytes": 170497, "pr140_sha": "0a3177cdaf67cee952bf46416d80df421e00ecac196f3a55f5f55ef63f48cd72", "pr140_same": true, "key": "xingce:75898", "source_sha": "2f749a7275174cb4ef82c6a366de68e757dfeaa4b7b371ba18ddf1f337562d6d", "area": "安徽", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 110, "h2": 5, "h3": 110, "tables": 20, "images": 17, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 273, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 109, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 安徽
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8n015
+- 源试卷ID: 75898
+- 采集时间: 2026-10-19T05:23:09.655Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（安徽卷）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3722 ## 材料 1
+  L3892 ## 材料 2
+  L4067 ## 材料 3
+
+## QUESTION TABLE (110)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@108    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  3@140    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  4@176    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  5@208    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  6@244    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  7@280    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@316    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@352    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 10@388    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@426    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 12@462    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 13@498    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@528    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 15@566    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 16@602    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 17@640    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 18@676    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 19@712    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 20@750    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 21@786    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@828    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 23@868    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@904    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@940    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@974    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 27@1010   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 28@1046   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 29@1082   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 30@1118   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 31@1156   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1202   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1248   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@1286   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 35@1324   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 36@1362   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1394   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 38@1432   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 39@1472   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1512   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1550   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 42@1588   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 43@1626   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 44@1664   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1702   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 46@1734   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1770   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1806   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1844   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1876   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 51@1914   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@1944   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1976   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@2008   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 55@2038   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@2080   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2116   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2144   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@2178   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2206   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 61@2244   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 62@2276   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 63@2308   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 64@2342   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 65@2374   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 66@2406   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 67@2450   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2494   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 69@2538   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2582   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 71@2626   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 72@2670   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 73@2714   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2760   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 75@2804   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2848   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2890   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2932   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 79@2974   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@3016   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@3058   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@3100   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3138   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 84@3174   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 85@3212   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 86@3254   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3298   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 88@3344   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 89@3392   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 90@3440   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 91@3486   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3532   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 93@3580   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3626   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 95@3674   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 96@3734   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3764   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@3794   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3824   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3856   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3909   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@3939   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@3969   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3999   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q105@4029   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q106@4071   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q107@4101   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q108@4133   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@4163   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q110@4193   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 下列关于党的重要思想，按提出时间先后顺序排列正确的是： ①社会主义市场经济理论 ②“三个代表”重要思想 ③社会主义本质理论 ④构建社会主义和谐社会理念 A. ①②③④ B. ①②④③ C. ③①②④ D. ③②①④
+  ANS: C
+  ANA: ①社会主义市场经济理论：1992年10月12日，中共十四大报告明确指出，中国经济体制改革的目标是建立社会主义市场经济体制，以利于进一步解放和发展生产力。 ②“三个代表”重要思想：2000年2月，江泽民在广东考察工作，第一次提出“三个代表”要求。2002年11月，江泽民在党的十六大报告中进一步阐述了“三个代表”重要思想的时代背景、历史地位、精神实质和指导意义。党的十六大把“三个代表”重要思想同马克思列宁主义、毛泽东思想、邓小平理论一道，确立为党必须长期坚持的指导思想并写入党章。 ③社会主义本质理论：1992年初，邓小平在“南方谈话”中提出：“社会主义的本质，是解放生产力，发展生产力，消灭剥削，消…(+97)
+--- Q56 @L2080: ### 第 56 题
+### 第 56 题 某高校艺术学院分音乐系和美术系两个系别，已知学院男生人数占总人数的30%，且音乐系男女生人数之比为1：3，美术系男女生人数之比为2：3，问音乐系和美术系的总人数之比为多少？ A. 5：2 B. 5：1 C. 3：1 D. 2：1
+  ANS: D
+  ANA: 方法一：设音乐系X人，美术系Y人，根据题意音乐系与美术系男生之和占总人数的30%，可得：X/4 + 2Y/5 = 0.3 × (X + Y)，解得0.1Y=0.05X，故X:Y=2:1。 方法二：音乐系男生的比重为1/4=25%，美术系男生的比重为2/5=40%，混合后占的比重为30%，根据线段法画图如下： ![](assets-fenbi-75898/6642307739b7988a3341012350bd4cdc84e1ad0b3fe464cfcc36e59a72a89207.png) 量与距离成反比，因此音乐系:美术系=(40%-30%):(30%-25%)=10%:5%=2:1。 故正…(+63)
+--- Q110 @L4193: ### 第 110 题
+### 第 110 题 能够从上述资料中推出的是： A. 2015年4月全国租赁贸易进出口额比2013年4月翻了一番 B. 2015年1~4月月均全国租赁贸易进出口额超过8亿美元 C. 2013年8~9月全国租赁贸易进出口额超过20亿美元 D. 表中全国租赁贸易进出口额同比下降的月份占总数的三分之一
+  ANS: C
+  ANA: A项：由图形材料可知2015年4月，全国租赁贸易进出口额6.94亿美元，而2014年4月全国租赁贸易进出口额3.39亿美元，同比增长-41.7%，那么2015年4月全国租赁贸易进出口额是2013年4月的6.94/(3.39/(1−41.7%)) = 6.94×0.583/3.39≈ 1.2倍 ＜ 2倍，而非翻一番（2倍），错误； B项：由图形材料可知2015年1-4月，全国租赁贸易进出口总额分别为6.90、12.09、5.29、6.94亿美元，求平均可得(6.90+12.09+5.29+6.94)/4=31.22/4＜8，错误； C项：由图形材料可知2014年8月和9月，全国租赁贸易进出口额分…(+98)
+--- Q2 @L108: ### 第 2 题
+### 第 2 题 假如某国出现比较严重的经济衰退，该国当局却不能运用货币政策进行调节。这个国家可能是： A. 德国 B. 美国 C. 英国 D. 新加坡
+  ANS: A
+  ANA: 货币政策是指中央银行为实现既定的目标，运用各种工具调节货币供应量来调节市场利率，通过市场利率的变化来影响民间的资本投资，影响总需求来影响宏观经济运行的各种方针措施。 A项正确，德国属于欧元区国家，而欧洲中央银行负责制定欧盟欧元区的金融及货币政策。欧洲中央银行是超国家层面的中央银行和欧盟成员国的各国家中央银行的有机结合。因此一旦发生经济衰退，德国不能运用独立的货币政策进行调节，必须符合欧洲中央银行的整体政策要求。英国不属于欧元区国家，有自己独立的货币英镑。美国和新加坡均有自己的独立货币美元和新加坡元，三个国家都有独立的中央银行，可以使用货币政策调节本国经济。B、C、D三项不符合题意，排除。 故正…(+71)
+--- Q109 @L4163: ### 第 109 题
+### 第 109 题 2014年5月~2015年4月间，全国租赁贸易进出口总额及同比增速均高于上月的月份有几个？ A. 5 B. 6 C. 7 D. 8
+  ANS: B
+  ANA: 定位图形材料，全国租赁贸易进出口总额及增长率均高于上月的有2014年5、7、9、12月和2015年2、4月，总共6个月。 故正确答案为B。 **考点**：直接找数、统计图 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第109题 </details>

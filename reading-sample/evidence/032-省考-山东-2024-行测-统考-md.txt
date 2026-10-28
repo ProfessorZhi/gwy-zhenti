@@ -1,0 +1,167 @@
+# PACKET 省考/山东/2024/行测-统考.md
+META {"path": "省考/山东/2024/行测-统考.md", "file_sha": "79a7cd71d07fe8873a5278dc3926adcf02b1799a5395843fb3aa5f762e7d2886", "bytes": 235226, "pr140_sha": "79a7cd71d07fe8873a5278dc3926adcf02b1799a5395843fb3aa5f762e7d2886", "pr140_same": true, "key": "xingce:223193", "source_sha": "a4541d165112ec3c99e07e509845845625fb3d29c05caf8013e488a86f59d303", "area": "山东", "year": "2024", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 6, "h3": 120, "tables": 8, "images": 25, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 525, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 120}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 山东
+- 年份: 2024
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3uat028
+- 源试卷ID: 223193
+- 采集时间: 2026-10-19T17:56:16.686Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2024年山东省公务员录用考试《行测》试题（网友回忆版）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4070 ## 材料 1
+  L4238 ## 材料 2
+  L4446 ## 材料 3
+  L4624 ## 材料 4
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  2@114    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@152    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@200    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  5@252    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@290    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  7@332    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@380    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@428    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 10@466    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@504    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@542    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 13@580    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 14@620    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@658    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 16@694    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@732    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 18@770    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 19@812    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 20@850    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 21@888    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@924    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 23@960    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 24@996    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@1032   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@1068   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 27@1104   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 28@1140   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1176   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 30@1214   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 31@1252   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1292   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1332   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1372   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 35@1412   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 36@1452   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 37@1492   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 38@1540   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1580   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1620   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1660   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 42@1696   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1736   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 44@1776   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1816   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 46@1856   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 47@1896   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1934   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 49@1980   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@2026   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 51@2066   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 52@2098   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@2128   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 54@2158   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@2188   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 56@2218   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 57@2248   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@2278   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 59@2312   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 60@2344   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 61@2378   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2410   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2442   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2474   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@2506   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 66@2540   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 67@2572   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2614   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2654   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 70@2686   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 71@2718   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 72@2762   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 73@2806   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2850   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2894   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 76@2942   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2986   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@3030   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 79@3076   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 80@3120   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 81@3164   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 82@3212   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3256   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@3300   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@3342   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@3386   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3436   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 88@3480   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@3522   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 90@3560   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3598   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 92@3646   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@3694   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3738   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 95@3786   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3830   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3878   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@3922   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3972   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@4012   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q101@4080   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q102@4110   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@4140   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q104@4172   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q105@4202   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q106@4246   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q107@4286   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@4328   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q109@4370   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q110@4410   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q111@4454   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q112@4486   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4526   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@4556   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@4586   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4630   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q117@4660   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q118@4690   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q119@4720   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q120@4752   d=Y opts=ABCD   ans=A      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 习近平总书记在新时代文化建设方面提出一系列新思想新观点新论断，丰富和发展了马克思主义文化理论，构成了习近平新时代中国特色社会主义思想的文化篇，形成了习近平文化思想。关于习近平文化思想，下列理解正确的有： ①表明我们党的历史自信、文化自信达到了新高度 ②是马克思主义与中华优秀传统文化相结合的光辉典范 ③既有文化理论观点上的创新和突破，又有文化工作布局上的部署要求 ④标志着我们党对中国特色社会主义文化建设规律的认识达到了新高度 ⑤是一个不断展开的、开放式的思想体系，必将随着实践深入不断丰富发展 A. 2项 B. 3项 C. 4项 D. 5项
+  ANS: D
+  ANA: 本题考查政治常识。 ①③④⑤正确，2023年全国宣传思想文化工作会议提出，习近平文化思想既有文化理论观点上的创新和突破，又有文化工作布局上的部署要求，明体达用、体用贯通，明确了新时代文化建设的路线图和任务书，标志着我们党对中国特色社会主义文化建设规律的认识达到了新高度，表明我们党的历史自信、文化自信达到了新高度，并在我国社会主义文化建设中展现出了强大伟力，为做好新时代新征程宣传思想文化工作、担负起新的文化使命提供了强大思想武器和科学行动指南。习近平文化思想是一个不断展开的、开放式的思想体系，必将随着实践深入不断丰富发展。要深刻领悟“两个确立”的决定性意义，增强“四个意识”、坚定“四个自信”、做…(+98)
+--- Q61 @L2378: ### 第 61 题
+### 第 61 题 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性： ![](assets-fenbi-223193/9b14b67aabf263ec1cb369ee451da2f465a19dd0b92c1600e6fedca902ea14b5.png) A. A B. B C. C D. D
+  ANS: D
+  ANA: 元素组成不同，且无明显属性规律，考虑数量规律。题干每幅图形均出现直线，且直线数量较多，考虑直线数。题干图形的直线数依次为5、6、7、8、9，故“？”处图形的直线数应为10，只有D项符合。 故正确答案为D。 **考点**：数量规律-线 **来源**：2024年山东省公务员录用考试《行测》试题（网友回忆版）第61题 </details>
+--- Q120 @L4752: ### 第 120 题
+### 第 120 题 不能从上述资料中推出的是： A. 2021年，可再生能源发电量占全社会用电量的比重为11.8% B. 2022年，生物质发电装机规模同比增长约8.87% C. 截至2022年年底，非可再生能源装机超过12.13亿千瓦 D. 2022年，风电、光伏发电量基本可以满足全国城乡居民生活用电需求
+  ANS: A
+  ANA: A项：定位文字材料第二段可知，2022年，可再生能源发电量占全社会用电量的比重为31.6%，较2021年提高1.7个百分点。则2021年，可再生能源发电量占全社会用电量的比重为31.6%-1.7%=29.9%，错误； B项：定位文字材料第一段可知，2022年，生物质发电新增334万千瓦，截至2022年年底，生物质发电装机0.41亿千瓦。根据公式：r=增长量/(现期量-增长量)，则2022年，生物质发电装机规模同比增长率= 334万千瓦/(0.41亿千瓦 - 334万千瓦)= 334万千瓦/(4100万千瓦 - 334万千瓦)=334/3766≈8.87%，正确； C项：定位文字材料第一段可知，…(+98)
+--- Q2 @L114: ### 第 2 题
+### 第 2 题 建设自贸试验区是以习近平同志为核心的党中央在新时代推进改革开放的重要战略举措。十年来，国家层面共向全国复制推广三百多项制度创新成果，形成了改革红利共享、开放成果普惠的良好局面。从哲学上看，建设自贸试验区： A. 表明矛盾的特殊性决定事物的不同性质 B. 说明在一定条件下共性和个性可以相互转化 C. 体现了普遍性寓于特殊性之中的基本原理 D. 遵循了“共性——个性——共性”的认识发展规律
+  ANS: C
+  ANA: 本题考查政治常识。 A项错误，矛盾的特殊性是指各个具体事物的矛盾、每一个矛盾的各个方面在发展的不同阶段上各有其特点。但是事物的性质是由主要矛盾的主要方面所决定的。题干中“建设自贸试验区”“国家层面共向全国复制推广三百多项制度创新成果，形成了改革红利共享、开放成果普惠的良好局面”的表述并未涉及事物的不同性质。 B项错误，矛盾的普遍性和特殊性的关系，也就是共性与个性、一般与个别的关系。共性和个性在一定条件下可以互相转化。题干中“建设自贸试验区”转化为“国家层面共向全国复制推广三百多项制度创新成果”体现了个性转化为共性，但并未体现“相互转化”。 C项正确，矛盾普遍性与特殊性是互相联系的。普遍性寓于特…(+97)
+--- Q119 @L4720: ### 第 119 题
+### 第 119 题 2021年，除风电、光伏发电外的可再生能源发电量及其占全社会用电量的比重约为： A. 1.36万亿千瓦时，18.1% B. 1.36万亿千瓦时，14.2% C. 1.51万亿千瓦时，18.1% D. 1.51万亿千瓦时，14.2%
+  ANS: C
+  ANA: 根据题干“2021年······发电量及其占······比重约为”，结合材料时间为2022年，可判定本题为基期计算与基期比重问题。定位文字材料第二段可知，2022年，风电、光伏年发电量达到1.19万亿千瓦时，较2021年增加2073亿千瓦时，占全社会用电量的13.8%，同比提高2个百分点，可再生能源发电量占全社会用电量的比重为31.6%，较2021年提高1.7个百分点。可得2021年风电、光伏发电量占全社会用电量的比重为13.8%-2%=11.8%，可再生能源发电量占全社会用电量的比重为31.6%-1.7%=29.9%，则2021年除风电、光伏发电外的可再生能源发电量占全社会用电量的比重为29…(+99)

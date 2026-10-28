@@ -1,0 +1,166 @@
+# PACKET 省考/西藏/2016/行测-统考.md
+META {"path": "省考/西藏/2016/行测-统考.md", "file_sha": "f3d24b3de0fe186acfc28c38265d4aa4128f011dfd099882d99a616ff640d2cd", "bytes": 175978, "pr140_sha": "f3d24b3de0fe186acfc28c38265d4aa4128f011dfd099882d99a616ff640d2cd", "pr140_same": true, "key": "xingce:75858", "source_sha": "6a112a1120d1cef9e7a60b43f3db9bf0e3a6e8272b958e7cfeb75d7ee6d1ea9a", "area": "西藏", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "CONFLICT", "template": "fenbi", "qcount": 120, "h2": 5, "h3": 120, "tables": 25, "images": 16, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 290, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 119, "AABCD": 1}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 西藏
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3uatle5
+- 源试卷ID: 75858
+- 采集时间: 2026-10-19T20:26:51.381Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（网友回忆整理版）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L3676 ## 材料 1
+  L3831 ## 材料 2
+  L3981 ## 材料 3
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  2@102    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  3@134    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@166    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  5@198    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  6@230    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  7@256    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@288    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  9@320    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 10@352    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@384    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@418    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@446    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@480    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@508    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@542    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 17@570    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 18@602    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 19@634    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@666    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 21@704    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 22@742    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@774    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 24@810    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 25@842    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@874    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 27@906    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 28@938    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@970    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 30@1002   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1034   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@1072   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 33@1106   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 34@1136   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1174   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1208   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 37@1244   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 38@1276   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1308   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1342   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1374   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1408   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1442   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1476   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1510   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1546   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 47@1580   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1616   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1644   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 50@1678   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 51@1720   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 52@1752   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 53@1780   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 54@1814   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@1848   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@1882   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 57@1910   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@1944   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 59@1978   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 60@2010   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 61@2044   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2070   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2096   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2124   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@2150   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2176   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 67@2204   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2238   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2272   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 70@2298   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 71@2328   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2356   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2386   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 74@2414   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 75@2442   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 76@2470   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 77@2510   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@2550   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2590   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@2630   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2672   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@2714   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@2754   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@2794   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 85@2834   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@2874   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@2912   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@2950   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@2992   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 90@3024   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 91@3062   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 92@3100   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3138   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 94@3172   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3210   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 96@3248   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 97@3288   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3330   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3372   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q100@3414   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q101@3456   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q102@3500   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q103@3544   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3588   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q105@3632   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q106@3693   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@3719   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q108@3745   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q109@3779   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q110@3805   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q111@3843   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q112@3869   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q113@3895   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q114@3923   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q115@3949   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@3985   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q117@4011   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q118@4043   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q119@4071   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4097   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 关于生活知识，下列说法错误的是： A. 缺碘可能会患“大脖子病” B. 吃水果有助于补充维生素 C. 甲醛可以用作药品的防腐剂 D. 回收废电池可减少重金属污染
+  ANS: C
+  ANA: A项正确，“大脖子病”学名甲状腺肿，是碘缺乏病的主要表现之一。碘是甲状腺合成甲状腺激素的重要原料之一，碘缺乏时合成甲状腺激素不足，反馈引起垂体分泌过量的促甲状腺激素（TSH），刺激甲状腺增生肥大。 B项正确，维生素是维持人体生命活动必需的一类有机物质，也是保持人体健康的重要活性物质。 维生素具有外源性，人体自身只能合成维生素D，不能满足人体需要，大部分维生素以维生素原的形式存在于食物中，需要通过食物补充。蔬菜水果中含有多种维生素。 C项错误，甲醛有刺激性气味，对人体有害。低浓度就会使人产生不适感，长期、低浓度接触甲醛会引起头痛、头晕、乏力、感觉障碍、免疫力降低；长期接触甲醛可引发呼吸功能障碍和…(+95)
+--- Q61 @L2044: ### 第 61 题
+### 第 61 题 2014年父亲、母亲的年龄之和是年龄之差的23倍，年龄之差是儿子年龄的1/5，5年后母亲和儿子的年龄都是平方数。问2014年父亲的年龄是多少？（年龄都按整数计算） A. 36岁 B. 40岁 C. 44岁 D. 48岁
+  ANS: D
+  ANA: 由2014年父母年龄之差是儿子年龄的1/5，可得儿子的年龄是5的倍数，而5年后儿子的年龄也必然是5的倍数，是5的倍数且为平方数的只能为25，则可得到2014年儿子的年龄为20岁，父母年龄差即20 × 1/5 = 4岁，年龄和为4×23=92岁，假设父亲年龄比母亲年龄大，则可得父亲年龄-母亲年龄=4，可得父亲年龄=48岁，母亲年龄=44岁，5年后母亲年龄为49岁，是平方数，满足条件。 故正确答案为D。 </details>
+--- Q120 @L4097: ### 第 120 题
+### 第 120 题 2014年下半年全国租赁贸易进出口总额约为多少亿美元？ A. 55 B. 62 C. 67 D. 74
+  ANS: C
+  ANA: 根据图形可知2014年4月－2015年4月各月租赁贸易进出口总额，题干求2014年下半年进出口总额，可判定此题为简单加减计算问题。2014年下半年（7-12月）进出口总额=10.03+8.57+14.58+9.54+6.22+18.26≈10+9+15+10+6+18=68亿美元，与C项最接近。 故正确答案为C。 </details>
+--- Q2 @L102: ### 第 2 题
+### 第 2 题 关于水稻，下列说法错误的是： A. 是一年生的禾本科植物 B. 大多为自花授粉并结出种子 C. 中国、印度、日本都是主产国 D. 淀粉含量是早、中、晚品种的分类标准
+  ANS: D
+  ANA: A项正确，水稻是一年生禾本科植物，禾亚科稻属。水稻所结子实即稻谷，稻谷(粒)去壳后称大米、香米、稻米。世界上近一半人口都以大米为食。 B项正确，自花授粉指一株植物的花粉，对同一个体的雌蕊进行授粉的现象。大部分水稻是自花授粉并结出种子。 C项正确，水稻的主要生长区域是中国南方、朝鲜半岛、日本、东南亚、南亚、地中海沿岸、美国东南部、中美洲、大洋洲和非洲部分地区。 D项错误，早、中、晚稻主要根据播种期和收获期而划分。以中国长江中下游地区为例，早稻一般于3月底4月初播种，7月中下旬收获；中稻一般4月初至5月底播种，9月中下旬收获；晚稻一般于6月中下旬播种，10月上中旬收获。同一地区，种完早稻可以接着种…(+59)
+--- Q119 @L4071: ### 第 119 题
+### 第 119 题 2014年5月~2015年4月间，全国租赁贸易进出口总额及同比增速均高于上月的月份有几个？ A. 5 B. 6 C. 7 D. 8
+  ANS: B
+  ANA: 定位图形材料，全国租赁贸易进出口总额及增长率均高于上月的有2014年5、7、9、12月和2015年2、4月，总共6个月。 故正确答案为B。 </details>

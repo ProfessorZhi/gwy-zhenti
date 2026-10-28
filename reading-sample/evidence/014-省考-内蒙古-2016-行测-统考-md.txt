@@ -1,0 +1,166 @@
+# PACKET 省考/内蒙古/2016/行测-统考.md
+META {"path": "省考/内蒙古/2016/行测-统考.md", "file_sha": "a41b50468cb34d87d2bd2707dd6843846b3711b6c7ec087ff3785593fa2242d4", "bytes": 181313, "pr140_sha": "a41b50468cb34d87d2bd2707dd6843846b3711b6c7ec087ff3785593fa2242d4", "pr140_same": true, "key": "xingce:75900", "source_sha": "a0eadfe4b6947e0fb115090cca2183bd8a2475654b21f1809e64d6e315370333", "area": "内蒙古", "year": "2016", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 120, "h2": 5, "h3": 120, "tables": 25, "images": 15, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 290, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 119, "AABCD": 1}, "flags": ["ES002"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 内蒙古
+- 年份: 2016
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8oeji
+- 源试卷ID: 75900
+- 采集时间: 2026-10-19T05:47:01.513Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2016年423联考《行测》题（内蒙古网友回忆版）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4002 ## 材料 1
+  L4177 ## 材料 2
+  L4347 ## 材料 3
+
+## QUESTION TABLE (120)
+  Q  1@68     d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  2@104    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@142    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  4@180    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@220    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@256    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  7@292    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  8@330    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@360    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@396    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 11@432    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@468    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@500    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@536    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@572    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 16@604    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 17@640    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 18@676    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 19@712    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 20@748    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 21@778    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 22@814    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 23@850    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 24@888    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 25@920    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 26@956    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 27@998    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 28@1034   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 29@1070   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 30@1106   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@1142   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1178   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@1214   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 34@1250   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 35@1288   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1326   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 37@1360   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1396   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1432   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1468   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1504   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 42@1542   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1574   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1610   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1646   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1684   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 47@1718   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1756   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 49@1794   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1830   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 51@1870   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 52@1902   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 53@1942   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 54@1980   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 55@2018   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 56@2056   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2102   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@2140   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 59@2178   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 60@2216   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@2254   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 62@2292   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 63@2322   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@2358   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 65@2388   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 66@2420   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2450   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2480   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@2512   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2542   d=Y opts=AABCD  ans=A      ana=Y ref=
+  Q 71@2572   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 72@2604   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 73@2636   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2668   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 75@2700   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 76@2732   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2766   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 78@2800   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@2832   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@2876   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2920   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@2964   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@3010   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@3054   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@3098   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 86@3142   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 87@3184   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 88@3222   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 89@3264   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3306   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 91@3348   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 92@3390   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 93@3432   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 94@3470   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 95@3506   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3548   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3590   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@3636   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 99@3682   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q100@3728   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q101@3772   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q102@3820   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q103@3868   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@3916   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q105@3962   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q106@4019   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q107@4049   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@4079   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q109@4109   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q110@4139   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q111@4189   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q112@4219   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q113@4249   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q114@4279   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q115@4311   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4351   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q117@4381   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q118@4413   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q119@4443   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4473   d=Y opts=ABCD   ans=C      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 下列对诗词中的物理现象描述**错误**的是： A. 坐地日行八万里，巡天遥看一千河——地球的公转 B. 两岸青山相对出，孤帆一片日边来——运动的相对性 C. 八月秋高风怒号，卷我屋上三重茅——空气振动发声 D. 飞流直下三千尺，疑是银河落九天——势能转化为动能
+  ANS: A
+  ANA: A项错误，“坐地日行八万里”是指地球自转。地球赤道半径约6378公里，地球自转一周，人行的路程为周长值约为：2πr=2π×6378公里≈40000公里＝80000里。 B项正确，“两岸青山相对出”，研究的对象是“青山”，运动状态是“出”，青山是运动的，是相对于船来说的；“孤帆一片日边来”，研究的对象是“孤帆”，运动状态是“来”，船是运动的，相对于日（或两岸、青山）来说的。同一个物体，以不同的参照物，它的运动状态可能不同，这就是运动和静止的相对性。 C项正确，“八月秋高风怒号”中的风声是空气振动发出的声音。 D项正确，“飞流直下三千尺”，是因为水受到重力的作用，从高处往低处流，在此过程中势能减小…(+90)
+--- Q61 @L2254: ### 第 61 题
+### 第 61 题 某种商品原价25元，每半天可销售20个。现知道每降价1元，销量即增加5个。某日上午将该商品打八折，下午在上午价格的基础上再打八折出售，问其全天销售额为多少元？ A. 1760 B. 1940 C. 2160 D. 2560
+  ANS: B
+  ANA: 由题意可得，商品每降价1元销量增加5个。上午商品打八折出售，下午商品在上午价格的基础上再打八折，列表可得： ![](assets-fenbi-75900/e59389ee17fc8f4080de05813c34fde7af06f1afe390856316560a705a485517.png)商品全天销售额=900+1040=1940元。 | | 售价 | 销量（半天） | 销售额 | | --- | --- | --- | --- | | 原计划 | 25 | 20 | | | 上午 | 25×0.8=20 | 20+5×5=45 | 20×45=900 | | 下午 | 20×0.8=16 …(+92)
+--- Q120 @L4473: ### 第 120 题
+### 第 120 题 能够从上述资料中推出的是： A. 2015年4月全国租赁贸易进出口额比2013年4月翻了一番 B. 2015年1~4月月均全国租赁贸易进出口额超过8亿美元 C. 2013年8~9月全国租赁贸易进出口额超过20亿美元 D. 表中全国租赁贸易进出口额同比下降的月份占总数的三分之一
+  ANS: C
+  ANA: A项：由图形材料可知2015年4月，全国租赁贸易进出口额6.94亿美元，而2014年4月全国租赁贸易进出口额3.39亿美元，同比增长-41.7%，那么2015年4月全国租赁贸易进出口额是2013年4月的6.94/(3.39/(1 − 41.7%)) = (6.94 × 0.583)/3.39≈ 1.2倍 ＜ 2倍，而非翻一番（2倍），错误； B项：由图形材料可知2015年1-4月，全国租赁贸易进出口总额分别为6.90、12.09、5.29、6.94亿美元，求平均可得(6.90+12.09+5.29+6.94)/4= 31.22/4 ＜ 8，错误； C项：由图形材料可知2014年8月和9月，全国…(+98)
+--- Q2 @L104: ### 第 2 题
+### 第 2 题 关于生活知识，下列说法错误的是： A. 缺碘可能会患“大脖子病” B. 吃水果有助于补充维生素 C. 甲醛可以用作药品的防腐剂 D. 回收废电池可减少重金属污染
+  ANS: C
+  ANA: A项正确，“大脖子病”学名甲状腺肿，是碘缺乏病的主要表现之一。碘是甲状腺合成甲状腺激素的重要原料之一，碘缺乏时合成甲状腺激素不足，反馈引起垂体分泌过量的促甲状腺激素（TSH），刺激甲状腺增生肥大。 B项正确，维生素是维持人体生命活动必需的一类有机物质，也是保持人体健康的重要活性物质。 维生素具有外源性，人体自身只能合成维生素D，不能满足人体需要，大部分维生素以维生素原的形式存在于食物中，需要通过食物补充。蔬菜水果中含有多种维生素。 C项错误，甲醛有刺激性气味，对人体有害。低浓度就会使人产生不适感，长期、低浓度接触甲醛会引起头痛、头晕、乏力、感觉障碍、免疫力降低；长期接触甲醛可引发呼吸功能障碍和…(+95)
+--- Q119 @L4443: ### 第 119 题
+### 第 119 题 2014年5月~2015年4月间，全国租赁贸易进出口总额及同比增速均高于上月的月份有几个？ A. 5 B. 6 C. 7 D. 8
+  ANS: B
+  ANA: 定位图形材料，全国租赁贸易进出口总额及增长率均高于上月的有2014年5、7、9、12月和2015年2、4月，总共6个月。 故正确答案为B。 **考点**：统计图、直接找数 **来源**：2016年黑龙江省公务员录用考试《行测》题（公检法卷）第109题 </details>

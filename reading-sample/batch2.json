@@ -1,0 +1,47 @@
+[
+ {"path":"省考/云南/2009/行测-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"OK","material":"OK","table":"OK","image":"OK"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[{"path":"省考/云南/2009/行测-统考.md","line":128,"code":"READ_DUP_IMAGE","explanation":"同一图片在卷内被引用两次（材料图复用），不影响阅读。","severity":"info"}],
+  "notes":"130 题 ABCD 齐全、答案与解析连贯；15 个表格列数一致；资料分析材料按题组插入。"},
+
+ {"path":"省考/云南/2013/申论-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"VISUAL"},
+  "review_type":"SOURCE","status":"AI_PASS",
+  "issues":[],"notes":"4 题；Q1 关联材料 3、4 与题干「资料3—4」一致；解析位为「参考答案说明」。来源索引标 PARTIAL（部分快照），本 lane 不判定源可得性。2 张图片未载入。"},
+
+ {"path":"省考/云南/2026/行测-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"SOURCE_MISSING(3题)","option":"SOURCE_MISSING(3题)","material":"OK","table":"OK","image":"VISUAL"},
+  "review_type":"SOURCE","status":"SOURCE_EXCEPTION",
+  "issues":[{"path":"省考/云南/2026/行测-统考.md","line":175,"code":"READ_PLACEHOLDER","explanation":"第 3/6/94 题为「粉笔暂未收录本题（来源缺题，题位保留）」，折叠块内明确写「答案状态 unknown / 解析状态 unknown」，没有编造题或答案。","severity":"info"}],
+  "notes":"110 题中 107 题完整；3 题占位；40 个表格（多为资料分析）列数一致；Q1 题干-选项-答案-解析连贯。20 张图未载入。"},
+
+ {"path":"省考/公安招警和公检法/2016/申论-政法干警（专科类）.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"NA"},
+  "review_type":"SOURCE","status":"SOURCE_EXCEPTION",
+  "issues":[{"path":"省考/公安招警和公检法/2016/申论-政法干警（专科类）.md","line":101,"code":"READ_NO_ANALYSIS","explanation":"4 题均只有参考答案，没有解析标记；属源侧无文字解析，本 lane 不核实源可得性。","severity":"info"}],
+  "notes":"4 题、材料 1–6、关联材料与题干一致（Q1 资料1～2 → 材料 1、2）。"},
+
+ {"path":"省考/内蒙古/2012/申论-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"NA","material":"OK","table":"NA","image":"NA"},
+  "review_type":"SOURCE","status":"AI_PASS",
+  "issues":[{"path":"省考/内蒙古/2012/申论-统考.md","line":158,"code":"READ_SOURCE_NOTE","explanation":"解析位用引用块明写「粉笔页面在本题只提供参考答案与考点/来源，没有单独的文字解析」，措辞与内容一致。","severity":"info"}],
+  "notes":"4 题结构完整；Q2 参考答案以「问题：」开头但内容为空行后的分条，需读者顺序读——不影响正确性。"},
+
+ {"path":"省考/内蒙古/2016/行测-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"OK","material":"OK","table":"OK","image":"OK"},
+  "review_type":"FORMAT","status":"AI_PASS",
+  "issues":[{"path":"省考/内蒙古/2016/行测-统考.md","line":4352,"code":"READ_PSEUDO_TAG","explanation":"解析里出现 a（10.7%）<b（12.2%）的数学比较，`<b（` 不是 HTML 标签、会原样显示（基线 ES002 同源），不影响阅读。","severity":"info"}],
+  "notes":"120 题；Q70 题干以「A、B两辆列车」开头，选项仍被正确解析为 A–D（未被误判为选项）；25 个表格列数一致。"},
+
+ {"path":"省考/北京/2008/申论-应届.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK(过度)","answer":"OK","option":"NA","material":"OK","table":"NA","image":"NA"},
+  "review_type":"SOURCE","status":"AI_PASS",
+  "issues":[{"path":"省考/北京/2008/申论-应届.md","line":117,"code":"READ_MATREF_ALL","explanation":"每题都列「材料 1–16」，Q1 题干并未限定资料范围；属导航冗余，不是错配。","severity":"minor"}],
+  "notes":"4 题，答案齐全，无解析标记（源侧无文字解析）。"},
+
+ {"path":"省考/北京/2012/行测-统考.md","read_mode":"full","full_file":false,
+  "verdicts":{"frontmatter":"OK","navigation":"OK","answer":"OK","option":"OK","material":"OK","table":"OK","image":"OK"},
+  "review_type":"PASS","status":"AI_PASS",
+  "issues":[],"notes":"135 题全 ABCD；10 题为多选答案（如 AC/ABD），属该卷题型；8 个表格列数一致；同一图片两处引用。"}
+]

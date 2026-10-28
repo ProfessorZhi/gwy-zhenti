@@ -1,0 +1,186 @@
+# PACKET 省考/北京/2023/行测-统考.md
+META {"path": "省考/北京/2023/行测-统考.md", "file_sha": "9e5e9a2aa124eac60b01bf4c0f3e9a99ff1746523320aacb76bf3b935db89883", "bytes": 174186, "pr140_sha": "9e5e9a2aa124eac60b01bf4c0f3e9a99ff1746523320aacb76bf3b935db89883", "pr140_same": true, "key": "xingce:201397", "source_sha": "77e7e58432a2459d5423d8fca7d29dc4a1d3ccdbcb2f67bcc1706f1c546ac4f9", "area": "北京", "year": "2023", "subject": "行测", "variant": "统考", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "PARTIAL", "template": "fenbi", "qcount": 135, "h2": 10, "h3": 135, "tables": 8, "images": 18, "latex_dollars": 0, "placeholder_marks": 105, "longest_line": 394, "answers_empty": 35, "multi_answers": 0, "no_analysis_marker": 35, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 100, "-": 35}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 北京
+- 年份: 2023
+- 科目: 行测
+- 卷型: 统考
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8hmps
+- 源试卷ID: 201397
+- 采集时间: 2026-10-19T03:53:19.174Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2023年北京市公务员录用考试《行测》题（网友回忆版）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L744 ## 材料 1
+  L1064 ## 材料 2
+  L1246 ## 材料 3
+  L1430 ## 材料 4
+  L1598 ## 材料 5
+  L1780 ## 材料 6
+  L3714 ## 材料 7
+  L3838 ## 材料 8
+
+## QUESTION TABLE (135)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@108    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@140    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@184    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  5@228    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@270    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  7@306    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  8@334    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  9@376    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@404    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 11@434    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 12@464    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 13@498    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 14@532    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 15@566    d=Y opts=-      ans=       ana=N ref=
+  Q 16@578    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@612    d=Y opts=-      ans=       ana=N ref=
+  Q 18@624    d=Y opts=-      ans=       ana=N ref=
+  Q 19@636    d=Y opts=-      ans=       ana=N ref=
+  Q 20@648    d=Y opts=-      ans=       ana=N ref=
+  Q 21@660    d=Y opts=-      ans=       ana=N ref=
+  Q 22@672    d=Y opts=-      ans=       ana=N ref=
+  Q 23@684    d=Y opts=-      ans=       ana=N ref=
+  Q 24@696    d=Y opts=-      ans=       ana=N ref=
+  Q 25@708    d=Y opts=-      ans=       ana=N ref=
+  Q 26@720    d=Y opts=-      ans=       ana=N ref=
+  Q 27@732    d=Y opts=-      ans=       ana=N ref=
+  Q 28@750    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 29@798    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 30@840    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 31@884    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 32@918    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@954    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@988    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 35@1022   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 36@1080   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 37@1110   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1148   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1182   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 40@1218   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1266   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 42@1302   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 43@1336   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 44@1366   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 45@1400   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 46@1438   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 47@1468   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1498   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1528   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1564   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 51@1608   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 52@1642   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 53@1682   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 54@1716   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 55@1746   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 56@1788   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@1822   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 58@1852   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@1886   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@1920   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@1954   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 62@1980   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 63@2006   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2032   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 65@2058   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 66@2084   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2110   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 68@2138   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 69@2164   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 70@2190   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 71@2216   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 72@2242   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 73@2274   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 74@2300   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 75@2326   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2356   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 77@2406   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 78@2434   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 79@2460   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 80@2486   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2520   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 82@2548   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 83@2576   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@2604   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@2638   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@2666   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@2694   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 88@2724   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@2752   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@2780   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 91@2810   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 92@2856   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@2900   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@2944   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 95@2988   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 96@3032   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 97@3076   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 98@3120   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 99@3164   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@3200   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q101@3244   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q102@3284   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q103@3320   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q104@3356   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q105@3400   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q106@3452   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q107@3492   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q108@3532   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q109@3574   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q110@3614   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q111@3654   d=Y opts=-      ans=       ana=N ref=
+  Q112@3666   d=Y opts=-      ans=       ana=N ref=
+  Q113@3678   d=Y opts=-      ans=       ana=N ref=
+  Q114@3690   d=Y opts=-      ans=       ana=N ref=
+  Q115@3702   d=Y opts=-      ans=       ana=N ref=
+  Q116@3718   d=Y opts=-      ans=       ana=N ref=
+  Q117@3730   d=Y opts=-      ans=       ana=N ref=
+  Q118@3742   d=Y opts=-      ans=       ana=N ref=
+  Q119@3754   d=Y opts=-      ans=       ana=N ref=
+  Q120@3766   d=Y opts=-      ans=       ana=N ref=
+  Q121@3778   d=Y opts=-      ans=       ana=N ref=
+  Q122@3790   d=Y opts=-      ans=       ana=N ref=
+  Q123@3802   d=Y opts=-      ans=       ana=N ref=
+  Q124@3814   d=Y opts=-      ans=       ana=N ref=
+  Q125@3826   d=Y opts=-      ans=       ana=N ref=
+  Q126@3846   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q127@3872   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q128@3908   d=Y opts=-      ans=       ana=N ref=
+  Q129@3920   d=Y opts=-      ans=       ana=N ref=
+  Q130@3932   d=Y opts=-      ans=       ana=N ref=材料 7
+  Q131@3946   d=Y opts=-      ans=       ana=N ref=
+  Q132@3958   d=Y opts=-      ans=       ana=N ref=
+  Q133@3970   d=Y opts=-      ans=       ana=N ref=
+  Q134@3982   d=Y opts=-      ans=       ana=N ref=
+  Q135@3994   d=Y opts=-      ans=       ana=N ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 人民性是马克思主义的本质属性。始终同人民在一起，为人民利益而奋斗，是马克思主义政党同其他政党的根本区别。围绕开辟马克思主义中国化时代化新境界，党的二十大报告明确提出了“六个坚持”，其中居于首位的就是“必须坚持人民至上”。下列古语中，蕴含了“人民至上”观点的有： ①治国有常，利民为本 ②君子务本，本立而道生 ③民惟邦本，本固邦宁 ④天下之事无小大皆决于上 A. ①② B. ①③ C. ②③ D. ②④
+  ANS: B
+  ANA: 本题考查政治常识。 ①正确，“治国有常，利民为本”出自《淮南子·氾论训》，意思是治理国家有不变的法则，而让人民获得利益是其根本。二十大报告中“九、增进民生福祉，提高人民生活品质”部分指出：“江山就是人民，人民就是江山。中国共产党领导人民打江山、守江山，守的是人民的心。治国有常，利民为本。” ②错误，“君子务本，本立而道生”出自《论语·学而》，意思是君子致力于抓住做人的根本，根本既立，自然就能把握为人处世的道理。习近平主席在杜尚别出席亚洲相互协作与信任措施会议第五次峰会时，发表的题为《携手开创亚洲安全和发展新局面》讲话中指出：“‘君子务本，本立而道生。’2015年，我提出构筑亚洲命运共同体倡议，…(+98)
+--- Q68 @L2138: ### 第 68 题
+### 第 68 题 某个品牌的洗洁精分为大瓶、小瓶两种包装，5大瓶洗洁精的总容量与12小瓶相同，8大瓶洗洁精的总容量比20小瓶少320毫升，则一大瓶洗洁精的容量是多少毫升？ A. 960 B. 1000 C. 1080 D. 1200
+  ANS: A
+  ANA: 设大瓶洗洁精每瓶的容量为x毫升，小瓶洗洁精每瓶的容量为y毫升，根据题意可得：5x=12y……①，20y-8x=320……②，解得x=960，y=400，则大瓶洗洁精每瓶的容量为960毫升。 故正确答案为A。 </details>
+--- Q135 @L3994: ### 第 135 题
+### 第 135 题 粉笔暂未收录本题（来源缺题，题位保留）
+  ANS: (none)
+  ANA: (no 解析 marker)
+--- Q2 @L108: ### 第 2 题
+### 第 2 题 全面建设社会主义现代化国家，最艰巨最繁重的任务仍然在农村。党的二十大报告强调，要坚持农业农村优先发展，坚持城乡融合发展，畅通城乡要素流动。下列关于现代化进程中城乡关系的理解，不正确的是： A. 现代化进程中城乡将长期共生并存 B. 需要强化以工补农、以城带乡，加快形成工农互促、城乡互补、协调发展、共同繁荣的新型工农城乡关系 C. 现代化进程中应努力使城的比重和乡的比重保持稳定 D. 应不断缩小城乡发展差距和居民生活水平差距，扎实推进以县城为重要载体的城镇化
+  ANS: C
+  ANA: 本题考查政治常识。 A项正确，C项错误，习近平总书记强调：“在现代化进程中，城的比重上升，乡的比重下降，是客观规律，但在我国拥有近14亿人口的国情下，不管工业化、城镇化进展到哪一步，农业都要发展，乡村都不会消亡，城乡将长期共生并存，这也是客观规律。”故“使城的比重和乡的比重保持稳定”的说法错误。 B项正确，2022年习近平总书记在《求是》杂志上发表的《坚持把解决好“三农”问题作为全党工作重中之重 举全党全社会之力推动乡村振兴》文章中指出：“第六，推动城乡融合发展见实效。振兴乡村，不能就乡村论乡村，还是要强化以工补农、以城带乡，加快形成工农互促、城乡互补、协调发展、共同繁荣的新型工农城乡关系。”…(+97)
+--- Q134 @L3982: ### 第 134 题
+### 第 134 题 粉笔暂未收录本题（来源缺题，题位保留）
+  ANS: (none)
+  ANA: (no 解析 marker)

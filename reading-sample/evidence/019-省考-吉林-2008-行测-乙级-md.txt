@@ -1,0 +1,148 @@
+# PACKET 省考/吉林/2008/行测-乙级.md
+META {"path": "省考/吉林/2008/行测-乙级.md", "file_sha": "d03aaf1350466951a705f64349e449a3c88b8ad6d93b6dca9fe3a2b8043db2ae", "bytes": 115556, "pr140_sha": "d03aaf1350466951a705f64349e449a3c88b8ad6d93b6dca9fe3a2b8043db2ae", "pr140_same": true, "key": "xingce:103", "source_sha": "9f6bd215ce1b78fbb09e95bfda954bc2a522a7d492fc8a8e583e51a23f13c202", "area": "吉林", "year": "2008", "subject": "行测", "variant": "乙级", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 100, "h2": 7, "h3": 100, "tables": 44, "images": 13, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 237, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 100}, "flags": []}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 吉林
+- 年份: 2008
+- 科目: 行测
+- 卷型: 乙级
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/solution/1_1_3uque5b
+- 源试卷ID: 103
+- 采集时间: 2026-10-25T08:49:31.559Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2008年吉林省公务员录用考试《行测》题（乙级）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L1310 ## 材料 1
+  L2936 ## 材料 2
+  L3090 ## 材料 3
+  L3268 ## 材料 4
+  L3449 ## 材料 5
+
+## QUESTION TABLE (100)
+  Q  1@68     d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  2@96     d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@126    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  4@154    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  5@182    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  6@212    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  7@242    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  8@270    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  9@308    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@338    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 11@368    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 12@404    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 13@440    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@478    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 15@516    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 16@550    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@582    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 18@612    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@646    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 20@682    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 21@722    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 22@756    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@786    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 24@816    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@850    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 26@882    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 27@916    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 28@952    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 29@990    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 30@1026   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 31@1062   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 32@1098   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 33@1136   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 34@1172   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 35@1204   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 36@1238   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1272   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 38@1316   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 39@1348   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 40@1378   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 41@1414   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 42@1456   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 43@1498   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 44@1540   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 45@1574   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1616   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 47@1648   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 48@1678   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 49@1714   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 50@1754   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 51@1786   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 52@1830   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 53@1870   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 54@1912   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 55@1950   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 56@1990   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 57@2032   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 58@2074   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 59@2118   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2156   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 61@2194   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 62@2236   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 63@2278   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 64@2318   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 65@2360   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 66@2408   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 67@2458   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 68@2504   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 69@2546   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 70@2578   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2624   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 72@2654   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 73@2686   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 74@2722   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 75@2756   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 76@2786   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 77@2816   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 78@2846   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 79@2876   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@2906   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@2940   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 82@2970   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 83@3000   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 84@3030   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 85@3060   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 86@3114   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 87@3144   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 88@3174   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3204   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3234   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 91@3293   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 92@3323   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 93@3353   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 94@3383   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 95@3413   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 96@3453   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 97@3483   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 98@3513   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 99@3543   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q100@3579   d=Y opts=ABCD   ans=B      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 2，2√2，4，4√2，（ ） A. 6 B. 8 C. 714 D. 716
+  ANS: B
+  ANA: 这是一个以√2为公比的等比数列，所以第五项是8。 故正确答案为B。 **来源**：2008年吉林省公务员录用考试《行测》题（乙级）第1题 </details>
+--- Q51 @L1786: ### 第 51 题
+### 第 51 题 见义勇为是指非因法定职责或者约定义务，为保护国家利益、集体利益或者他人的人身、财产安全，不顾个人安危，与违法犯罪行为作斗争或者抢险救灾的行为。 以下一定不属于见义勇为行为的是： A. 制止犯罪 B. 抢险救灾 C. 救死扶伤 D. 监护人救助被监护人
+  ANS: D
+  ANA: 第一步：抓住定义中的关键词。 关键词包括“非因法定职责或者约定义务”、“为保护他人的人身、财产安全”、“与违法犯罪行为作斗争或者抢险救灾”。 第二步：逐一判断选项。 A项符合题干“与违法犯罪行为作斗争”； B项符合题干“抢险救灾”； C项“救死扶伤”符合题干为“为保护他人的人身、财产安全”； D项“监护人救助被监护人”是在法定职责范围之内，不符合“非因法定职责或者约定义务”。 故正确答案为D。 **考点**：拆词 **来源**：2008年吉林省公务员录用考试《行测》题（乙级）第51题 </details>
+--- Q100 @L3579: ### 第 100 题
+### 第 100 题 下列说法正确的是： A. 2006年索尼和三星两个品牌的受关注程度要高于佳能品牌 B. 2006年三星和柯达合计占所有品牌比重为16.6% C. 2006年富士和奥林巴斯合计占所有品牌的比重为12.6% D. 2006年理光和卡西欧合计占所有品牌的比重为10.2%
+  ANS: B
+  ANA: A选项错误，索尼19.0%，三星9.3%，小于佳能（28.9%）； B选项正确，三星9.3%，柯达7.3%，9.3%＋7.3%＝16.6%； C选项错误，富士5.8%，奥林巴斯5.2%，5.8%＋5.2%＝11%，并非12.6%； D选项错误，理光3.8%，卡西欧4.3%，3.8%＋4.3%＝8.1%，并非10.2%。 故正确答案为B。 **考点**：统计图、综合分析 **来源**：2008年吉林省公务员录用考试《行测》题（乙级）第100题 </details>
+--- Q2 @L96: ### 第 2 题
+### 第 2 题 0，4，5，11，14，（ ） A. 20 B. 21 C. 22 D. 23
+  ANS: C
+  ANA: ![](assets-fenbi-103/650e5af6ad026fb3d9e3b8ec40d4f350bb02ef46a679a0b5447191094f6169fc.png) 则数列下一项为6^2 − 14 = 22。 故正确答案为C。 **来源**：2008年吉林省公务员录用考试《行测》题（乙级）第2题 </details>
+--- Q99 @L3543: ### 第 99 题
+### 第 99 题 下列说法正确的是： A. 2006年富士和松下两个品牌合计受关注程度要高于索尼品牌 B. 2006年理光和卡西欧两个品牌合计受关注程度要高于三星品牌 C. 2006年尼康和柯达两个品牌合计受关注程度要高于索尼品牌 D. 以上选项都不正确
+  ANS: D
+  ANA: A选项错误，富士5.8%，松下5.9%，合计11.7%，小于索尼（19.0%）； B选项错误，理光3.8%，卡西欧4.3%，合计8.1%，小于三星（9.3%）； C选项错误，尼康6.4%，柯达7.3%，合计13.7%，小于索尼（19.0%）。 综上，A、B、C均不正确。 故正确答案为D。 **考点**：统计图、综合分析 **来源**：2008年吉林省公务员录用考试《行测》题（乙级）第99题 </details>

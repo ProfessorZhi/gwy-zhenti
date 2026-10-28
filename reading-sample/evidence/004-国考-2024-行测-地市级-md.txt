@@ -1,0 +1,178 @@
+# PACKET 国考/2024/行测-地市级.md
+META {"path": "国考/2024/行测-地市级.md", "file_sha": "c501f7d616e9fba63e6a7fe7f0eb19ec987215701ec5b78024272f02c96bbe08", "bytes": 247643, "pr140_sha": "c501f7d616e9fba63e6a7fe7f0eb19ec987215701ec5b78024272f02c96bbe08", "pr140_same": true, "key": "xingce:222387", "source_sha": "2da4ecdfc52fd01ef42ecb2101dfcd80c82aa95b02deefc07e5afc80c55cbf01", "area": "国考", "year": "2024", "subject": "行测", "variant": "地市级", "nature": "粉笔题库整理版本，未认证为官方原卷", "validation": "候选；机器结构验收通过，尚未人工核验或正式入库", "source_class": "SOURCE_COMPLETE", "template": "fenbi", "qcount": 130, "h2": 7, "h3": 130, "tables": 8, "images": 45, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 390, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 0, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"ABCD": 130}, "flags": ["IM004", "IM004"]}
+
+## FRONTMATTER
+- 考试: 国考
+- 地区: 国考
+- 年份: 2024
+- 科目: 行测
+- 卷型: 地市级
+- 真题性质: 粉笔题库整理版本，未认证为官方原卷
+- 来源: https://spa.fenbi.com/ti/exam/exercise/1_1_3u8jfqn
+- 源试卷ID: 222387
+- 采集时间: 2026-10-19T04:22:18.915Z
+- 校验状态: 候选；机器结构验收通过，尚未人工核验或正式入库
+
+## OUTLINE (non-question headings)
+  L15 # 2024年国家公务员录用考试《行测》题（地市级网友回忆版）
+  L34 ## 题型与作答说明
+  L66 ## 题目
+  L4260 ## 材料 1
+  L4520 ## 材料 2
+  L4694 ## 材料 3
+  L4864 ## 材料 4
+  L5036 ## 材料 5
+
+## QUESTION TABLE (130)
+  Q  1@68     d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  2@110    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  3@158    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  4@206    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q  5@256    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  6@296    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q  7@340    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q  8@382    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q  9@420    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 10@458    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 11@496    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 12@536    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 13@568    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 14@606    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 15@644    d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 16@682    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 17@720    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 18@764    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 19@802    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 20@840    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 21@878    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 22@918    d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 23@954    d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 24@990    d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 25@1026   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 26@1062   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 27@1098   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 28@1134   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 29@1170   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 30@1206   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 31@1242   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 32@1278   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 33@1314   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 34@1350   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 35@1386   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 36@1424   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 37@1462   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 38@1500   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 39@1538   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 40@1576   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 41@1614   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 42@1654   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 43@1694   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 44@1732   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 45@1772   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 46@1812   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 47@1852   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 48@1892   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 49@1932   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 50@1970   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 51@2010   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 52@2054   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 53@2100   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 54@2140   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 55@2178   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 56@2216   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 57@2256   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 58@2302   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 59@2342   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 60@2378   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 61@2418   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 62@2448   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 63@2478   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 64@2508   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 65@2546   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 66@2576   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 67@2610   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 68@2644   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 69@2678   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 70@2724   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 71@2762   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 72@2794   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 73@2826   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 74@2858   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 75@2918   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 76@2956   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 77@2990   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 78@3032   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 79@3064   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 80@3096   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 81@3128   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 82@3172   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 83@3218   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 84@3264   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 85@3318   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 86@3366   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 87@3418   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 88@3462   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 89@3506   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 90@3556   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 91@3608   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 92@3650   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 93@3692   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q 94@3734   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q 95@3776   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 96@3818   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 97@3860   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q 98@3902   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q 99@3944   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q100@3982   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q101@4020   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q102@4068   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q103@4116   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q104@4164   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q105@4212   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q106@4272   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q107@4320   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q108@4364   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q109@4416   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q110@4470   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q111@4528   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q112@4558   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q113@4588   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q114@4628   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q115@4658   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q116@4702   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q117@4732   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q118@4762   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q119@4792   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q120@4822   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q121@4870   d=Y opts=ABCD   ans=A      ana=Y ref=
+  Q122@4900   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q123@4936   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q124@4966   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q125@4996   d=Y opts=ABCD   ans=D      ana=Y ref=
+  Q126@5042   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q127@5072   d=Y opts=ABCD   ans=B      ana=Y ref=
+  Q128@5102   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q129@5142   d=Y opts=ABCD   ans=C      ana=Y ref=
+  Q130@5172   d=Y opts=ABCD   ans=D      ana=Y ref=
+
+## SAMPLED EXCERPTS (5)
+--- Q1 @L68: ### 第 1 题
+### 第 1 题 习近平总书记指出，我们要坚守人民至上理念，突出现代化方向的人民性。关于现代化方向的人民性，下列表述正确的有几项？ ①人民是历史的创造者，是推进现代化最坚实的根基、最深厚的力量 ②现代化道路最终能否走得通、行得稳，关键要看是否坚持以人民为中心 ③现代化不仅要看纸面上的指标数据，更要看人民的幸福安康 ④政党要锚定人民对美好生活的向往，让现代化更好回应人民各方面诉求和多层次需要 A. 1项 B. 2项 C. 3项 D. 4项
+  ANS: D
+  ANA: 本题考查政治常识。 习近平总书记在中国共产党与世界政党高层对话会上的主旨讲话中指出：“我们要坚守人民至上理念，突出现代化方向的人民性。人民是历史的创造者，是推进现代化最坚实的根基、最深厚的力量。现代化的最终目标是实现人自由而全面的发展。现代化道路最终能否走得通、行得稳，关键要看是否坚持以人民为中心。现代化不仅要看纸面上的指标数据，更要看人民的幸福安康。政党要锚定人民对美好生活的向往，顺应人民对文明进步的渴望，努力实现物质富裕、政治清明、精神富足、社会安定、生态宜人，让现代化更好回应人民各方面诉求和多层次需要，既增进当代人福祉，又保障子孙后代权益，促进人类社会可持续发展。” 故①②③④表述正确，…(+83)
+--- Q66 @L2576: ### 第 66 题
+### 第 66 题 2023年王的年龄比张的年龄的2倍小2岁，2025年张的年龄是李的年龄的1.5倍，2030年张和李的年龄之和与王的年龄相同。问3人的年龄之和在哪一年第一次超过120岁？ A. 2037年 B. 2036年 C. 2035年 D. 2034年
+  ANS: D
+  ANA: 设2025年李的年龄为x岁，根据题意列表如下： ![](assets-fenbi-222387/580b7534eba41abe810108cd02b87153932b80764bf7283ef9f034dbc64234f5.png) 根据“2030年张和李的年龄之和与王的年龄相同”，可列式：3x+1=1.5x+5+x+5，解得x=18，则2030年3人的年龄之和为2 × (3x+1) = 110岁。设从2030年起，再过n年3人的年龄之和超过120岁，则有110+3n>120，解得n 大于 10/3 = 3.3^+，取整为4年，即3人的年龄之和在2030+4=2034年第一次超过120岁。 …(+72)
+--- Q130 @L5172: ### 第 130 题
+### 第 130 题 以下折线图反映了2019~2022年全国哪一类电信业务收入同比增量的变化趋势？ ![](assets-fenbi-222387/c01ec01874768dbe30aa93f77c54d055d4efe2c19625765a48d16bc766345e9e.png) A. 新兴业务 B. 移动数据流量业务 C. 互联网宽带接入业务 D. 语音业务
+  ANS: D
+  ANA: 根据题干“······2019~2022年······同比增量的变化趋势”，可判定本题为增长量比较问题。定位图1可知2018~2022年全国主要电信业务收入。根据公式：增长量=现期量-基期量，可得2019~2022年全国主要电信业务收入的同比增量： A项：2019年，1374-1084=300^-亿元；2020年，1737−1374=300^+亿元。不符合折线图中第二个点低于第一个点的趋势，排除； B项：2021年，6381−6204=100^+亿元；2022年，6397 − 6381 = 10^+亿元。不符合折线图中第四个点高于第三个点的趋势，排除； C项：2019年，1855−1784 =…(+96)
+--- Q2 @L110: ### 第 2 题
+### 第 2 题 习近平总书记指出，农业强国是社会主义现代化强国的根基，满足人民美好生活需要、实现高质量发展、夯实国家安全基础，都离不开农业发展。下列关于建设农业强国的表述正确的是： ①农业科技创新要以农业关键核心技术攻关为引领，以促进大规模经营为导向 ②要坚持把增加农民收入作为“三农”工作的中心任务 ③要一体推进农业现代化和农村现代化，实现乡村由表及里、形神兼备的全面提升 ④扩大耕地面积是建设农业强国的首要任务 A. ①③ B. ①④ C. ②③ D. ②④
+  ANS: C
+  ANA: 本题考查政治常识。 ①错误，2022年中央农村工作会议上习近平主席强调：“要依靠科技和改革双轮驱动加快建设农业强国······要以农业关键核心技术攻关为引领，以产业急需为导向，聚焦底盘技术、核心种源、关键农机装备等领域，发挥新型举国体制优势，整合各级各类优势科研资源，强化企业科技创新主体地位，构建梯次分明、分工协作、适度竞争的农业科技创新体系。” ②正确，2022年中央农村工作会议上习近平主席指出：“全面推进乡村振兴是新时代建设农业强国的重要任务，人力投入、物力配置、财力保障都要转移到乡村振兴上来······要坚持把增加农民收入作为‘三农’工作的中心任务，千方百计拓宽农民增收致富渠道。” ③正…(+97)
+--- Q129 @L5142: ### 第 129 题
+### 第 129 题 如2022年内每个月移动电话用户数增量和蜂窝物联网终端用户数增量均为固定值，则2022年蜂窝物联网终端用户数第一次超过移动电话用户数是在哪个季度？ A. 第一季度 B. 第二季度 C. 第三季度 D. 第四季度
+  ANS: C
+  ANA: 根据题干“······2022年······第一次超过······是在哪个季度”，可判定本题为现期追赶问题。定位图2可得：2021~2022年，蜂窝物联网终端用户数分别为13.98亿户、18.45亿户，移动电话用户数分别为16.43亿户、16.83亿户。根据公式：月均增长量=(现期量-基期量)/月份差，则2022年蜂窝物联网终端用户数的月均增长量为(18.45 − 13.98)/12 = 4.47/12亿户，2022年移动电话用户数的月均增长量为(16.83 − 16.43)/12 = 0.4/12亿户。根据公式：现期量=基期量+增长量×n，可列式：13.98+4.47/12×n＞ 16.43…(+98)

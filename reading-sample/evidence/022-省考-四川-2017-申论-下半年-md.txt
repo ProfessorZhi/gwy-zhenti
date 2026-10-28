@@ -1,0 +1,44 @@
+# PACKET 省考/四川/2017/申论-下半年.md
+META {"path": "省考/四川/2017/申论-下半年.md", "file_sha": "9ea5e37d5235ff93ccd2993fd976481cdf62385b64ae5630053c69d4021caa0c", "bytes": 25453, "pr140_sha": "9ea5e37d5235ff93ccd2993fd976481cdf62385b64ae5630053c69d4021caa0c", "pr140_same": true, "key": "", "source_sha": "", "area": "四川", "year": "2017", "subject": "申论", "variant": "下半年", "nature": "正式真题", "validation": "机器校验（并卷/题号/去泄露/G1–G5）；未人工通读；材料截断 1 题（源内硬截断于 6000 字）；2026-10-11 按同题同年同地区 GitHub 固定源补回 1 处材料尾部；原材料归一化后完整前缀逐字相等；只消除该截断项，不代表整卷验收", "source_class": "", "template": "fenbi", "qcount": 2, "h2": 3, "h3": 10, "tables": 4, "images": 0, "latex_dollars": 0, "placeholder_marks": 0, "longest_line": 132, "answers_empty": 0, "multi_answers": 0, "no_analysis_marker": 2, "dup_jiexi_label": 0, "hr_inside_details": 0, "opt_label_hist": {"-": 2}, "flags": ["MT004"]}
+
+## FRONTMATTER
+- 考试: 省考
+- 地区: 四川
+- 年份: 2017
+- 科目: 申论
+- 卷型: 下半年
+- 真题性质: 正式真题
+- 来源: ["linfukai186"]
+- 校验状态: 机器校验（并卷/题号/去泄露/G1–G5）；未人工通读；材料截断 1 题（源内硬截断于 6000 字）；2026-10-11 按同题同年同地区 GitHub 固定源补回 1 处材料尾部；原材料归一化后完整前缀逐字相等；只消除该截断项，不代表整卷验收
+
+## OUTLINE (non-question headings)
+  L18 # 2017 四川省公务员录用考试 申论（下半年）
+  L28 ## 参考作答与范文导读
+  L45 ## 给定材料
+  L47 ### 材料 1
+  L101 ### 材料 2
+  L121 ### 材料 3
+  L167 ### 材料 4
+  L193 ### 材料 5
+  L225 ### 材料 6
+  L279 ### 材料 7
+  L329 ### 材料 8
+  L371 ## 题目
+
+## QUESTION TABLE (2)
+  Q  1@373    d=Y opts=-      ans=+主体（介绍 ana=N ref=
+  Q  2@423    d=Y opts=-      ans=质，服务到位 ana=N ref=
+
+## SAMPLED EXCERPTS (3)
+--- Q1 @L373: ### 第 1 题
+### 第 1 题 某市拟举办知识付费平台产品推介会，假定你是参会的“KJ”团队成员，请根据给定资料，撰写一份“KJ”产品推介书。 <a id="r7-reference-1"></a>
+  ANS: +主体（介绍了KJ产品的四个不同特点，按照“产品线”“选题”“版权”“用户需求”四方面分条撰写，每条要点之间内
+  ANA: (no 解析 marker)
+--- Q2 @L423: ### 第 2 题
+### 第 2 题 根据给定资料，概括目前我国知识付费平台快速发展的原因。 <a id="r7-reference-2"></a>
+  ANS: 质，服务到位”“知识产权和版权保护改善”等不同的原因进行了分条撰写。各条要点之间在内容上是并列关系。
+  ANA: (no 解析 marker)
+--- Q2 @L423: ### 第 2 题
+### 第 2 题 根据给定资料，概括目前我国知识付费平台快速发展的原因。 <a id="r7-reference-2"></a>
+  ANS: 质，服务到位”“知识产权和版权保护改善”等不同的原因进行了分条撰写。各条要点之间在内容上是并列关系。
+  ANA: (no 解析 marker)
