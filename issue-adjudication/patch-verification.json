@@ -1,0 +1,67 @@
+[
+ {
+  "patch": "0001",
+  "path": "省考/上海/2017/行测-统考.md",
+  "kind": "hr+dup",
+  "before_sha": "44fd3b845d5a5a30bdc798eca7b6d58d6005bcd4a3c8304b80b8f60fea10f9e5",
+  "after_sha": "0163b18c8079e4cd9486b625f514d292612dfbd7e1f8cbb4b946023bcb3ee3ce",
+  "bytes_before": 202804,
+  "bytes_after": 201310,
+  "questions": 136,
+  "answers_identical": true,
+  "pass": true,
+  "problems": []
+ },
+ {
+  "patch": "0002",
+  "path": "省考/广东/2016/行测-广州市考.md",
+  "kind": "hr",
+  "before_sha": "d92441b7bc86999ae77eeb6e20f103a259bd5f5527f858e5332ebd4f4596d157",
+  "after_sha": "047bfe70df93fb41cfc0e63193d8edf34ebb2c8f50c6933d211874994a8b29b2",
+  "bytes_before": 131423,
+  "bytes_after": 131023,
+  "questions": 100,
+  "answers_identical": true,
+  "pass": true,
+  "problems": []
+ },
+ {
+  "patch": "0003",
+  "path": "省考/江苏/2024/行测-C类.md",
+  "kind": "hr",
+  "before_sha": "71ed97ac900e1573d03b4a435b5182572047ed6702a0895b86056e4e7f506906",
+  "after_sha": "8b8929e54cec183c7ed4aa40d94996b624898df37aec88ac8d772271fda64003",
+  "bytes_before": 214901,
+  "bytes_after": 214385,
+  "questions": 130,
+  "answers_identical": true,
+  "pass": true,
+  "problems": []
+ },
+ {
+  "patch": "0004",
+  "path": "省考/北京/2026/申论-选调生.md",
+  "kind": "pr140",
+  "before_sha": "aaaf460eb8c0591a8eb742218254869a2b9d7c7c1b808ee6faa4ce097cc058d9",
+  "after_sha": "5542f020cce962653d3f2b4c67d5d0c05758c083b2cc720105836755ba7d740d",
+  "bytes_before": 77152,
+  "bytes_after": 77148,
+  "questions": 2,
+  "answers_identical": true,
+  "pass": true,
+  "problems": []
+ },
+ {
+  "patch": "0005",
+  "path": "省考/青海/2014/行测-统考.md",
+  "kind": "pr140",
+  "before_sha": "e5df15e5f9432475e9474c42357b3bb6f2329b4ab171e8f7efd991313d9e47e7",
+  "after_sha": "6189aa2190d511315fc43e23f958309b73d42becc61f587afe757e5a7957a210",
+  "bytes_before": 175104,
+  "bytes_after": 175108,
+  "questions": 120,
+  "answers_identical": true,
+  "pass": true,
+  "problems": []
+ }
+]

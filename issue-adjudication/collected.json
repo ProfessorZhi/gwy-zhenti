@@ -1,0 +1,415 @@
+[
+ {
+  "rank": 6,
+  "path": "省考/上海/2017/行测-统考.md",
+  "main_sha": "44fd3b845d5a5a30bdc798eca7b6d58d6005bcd4a3c8304b80b8f60fea10f9e5",
+  "pr140_sha": "44fd3b845d5a5a30bdc798eca7b6d58d6005bcd4a3c8304b80b8f60fea10f9e5",
+  "pr140_same": true,
+  "bytes": 202804,
+  "lines": 3020,
+  "area": "上海",
+  "year": "2017",
+  "subject": "行测",
+  "variant": "统考",
+  "nature": "正式真题",
+  "validation": "原卷重建：题干 PDF 136 题逐字抽取，答案 PDF 逐题回填答案+官方解析；题干区 38 张位图（35 题图 + 3 资料分析材料图）按原卷版面归属回填，原生像素入 <img width/height>；6 篇共用材料（言语理解 3 + 资料分析 3）按原卷版面重建，材料题降为 ### 级；图形推理类选项在图上，按库内惯例写 - **A**. A 占位；我方原文 110 题逐字保留，仅四类有据修订：删页脚伪影 35 处、纠正不定项选择答案 12 处（我方解析尾句自述「选择X选项」佐证）、补回空白选项 3 处（我方题号 38-D/42-D/106-D，来源缺字，据题干PDF回填）、纠正选项缺字/串入正文 5 处（我方 46-D 串入材料六正文、56-A~D 只余「只有」「、」，据题干PDF同题回填）；补回内联公式空缺 3 处（PDF#72 $CD=10\\sqrt{3}$米、PDF#75 $W_A$/$W_B$、PDF#81 $v^2$，见 FIX-TEX.jsonl）；题干/选项区 3 题（56/66/75）原卷为 MathType 位图，改用 $…$ 转写并留证；解析区公式碎片未重建（与我方原文既有状态一致）；证据 work/qa/sh2017/（CAND.md + FIX-*.jsonl + FIG-ASSIGN.json + CENSUS.json）；未人工通读.",
+  "source": {
+   "type": "[\"linfukai186\"]",
+   "source_id": "",
+   "key": "",
+   "class": "",
+   "doc_sha": "",
+   "doc_path": ""
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/上海/2017/行测-统考.md",
+    "line": 110,
+    "code": "READ_DUP_JIEXI_LABEL",
+    "explanation": "每个答案块标题为「**官方解析**」，正文又以「解析 第一步…」开头，渲染成“解析 / 解析 第一步”，全卷 134 处；纯可读性瑕疵，不改题干答案。",
+    "severity": "minor"
+   },
+   {
+    "path": "省考/上海/2017/行测-统考.md",
+    "line": 116,
+    "code": "READ_HR_IN_DETAILS",
+    "explanation": "每个折叠块结尾在 </details> 前有一行 `---`，展开后底部多一条分隔线（136 处），视觉冗余。",
+    "severity": "minor"
+   }
+  ],
+  "diff_lines": 0,
+  "diff_head": ""
+ },
+ {
+  "rank": 18,
+  "path": "省考/北京/2026/申论-选调生.md",
+  "main_sha": "aaaf460eb8c0591a8eb742218254869a2b9d7c7c1b808ee6faa4ce097cc058d9",
+  "pr140_sha": "5542f020cce962653d3f2b4c67d5d0c05758c083b2cc720105836755ba7d740d",
+  "pr140_same": false,
+  "bytes": 77152,
+  "lines": 438,
+  "area": "北京",
+  "year": "2026",
+  "subject": "申论",
+  "variant": "选调生",
+  "nature": "粉笔题库整理版本，未认证为官方原卷",
+  "validation": "候选；机器结构验收通过，尚未人工核验或正式入库",
+  "source": {
+   "type": "https://www.fenbi.com/ti/view/paper/6_2_79r1m",
+   "source_id": "7662646",
+   "key": "shenlun:7662646",
+   "class": "PARTIAL",
+   "doc_sha": "8379ae7156e10d0e967bf02226ba7ecbacfec239721ddc91c3f344f853906c02",
+   "doc_path": "/home/fjd/tmp/shenlun-verify-20261027-round3/7662646/document.json"
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/北京/2026/申论-选调生.md",
+    "line": 121,
+    "code": "READ_TAG_IMBALANCE",
+    "explanation": "main 上第 121 行 `给定<u>资料</u>4</u>中` 多一个 </u>（<u> 136 开 / 137 闭）；PR#140 head c5e11c44 已删去该多余标签，去标签后文字完全相同（差 4 字节）。",
+    "severity": "error"
+   }
+  ],
+  "diff_lines": 11,
+  "diff_head": "--- /home/fjd/scratch/gwy-format-final-20261028/structure/repo-main/省考/北京/2026/申论-选调生.md\t2026-10-28 02:30:53.111467420 +0800\n+++ /home/fjd/scratch/gwy-format-final-20261028/structure/reading-sample/repo-pr140/省考/北京/2026/申论-选调生.md\t2026-10-28 09:11:48.922490767 +0800\n@@ -118,7 +118,7 @@\n \n 通过勾画题干关键词，明确题型，题目的主题、答题要素、资料范围和作答要求等。\n \n-给定<u>资料</u>4</u>中<u>提到</u>【由“给定资料4中提到”可知，本题需重点阅读资料4，同时兼顾与主题相关的其他资料】：“<u>在守正中实现创造性转化与创新性发展</u>，<u>推动长城保护迈入提质的新阶段</u>。”请结合资料，<u>谈谈</u>你对这句话<u>的理解</u>【①“谈谈……的理解”提示本题为词句解释题。一般作答思路为：总体释义（结合资料和给定词语或句子的字面意思去解释）+展开解释（依据题干和资料去决定所需展开的要素，如问题、意义、危害等）+总结（一般为对策，资料中有则摘抄；资料中没有，字数允许则补充），但并非适用于所有题目，可根据资料进行适当调整。②结合本题，作答思路可能为：总体释义（解释给定句子的含义，其中，“守正”可能是坚守一些长城保护的原则与底线，“创造性转化与创新性发展”的本质是“创新”，初步理解这句话的意思是在长城保护中要做到守正创新）+展开解释（介绍长城保护守正创新的具体表现，可能是做法、意义等）+总结（一般为对策，资料中有则摘抄；资料中没有，字数允许则补充）。以上作答思路，具体还要结合资料来确定】。（15分）\n+给定<u>资料</u>4中<u>提到</u>【由“给定资料4中提到”可知，本题需重点阅读资料4，同时兼顾与主题相关的其他资料】：“<u>在守正中实现创造性转化与创新性发展</u>，<u>推动长城保护迈入提质的新阶段</u>。”请结合资料，<u>谈谈</u>你对这句话<u>的理解</u>【①“谈谈……的理解”提示本题为词句解释题。一般作答思路为：总体释义（结合资料和给定词语或句子的字面意思去解释）+展开解释（依据题干和资料去决定所需展开的要素，如问题、意义、危害等）+总结（一般为对策，资料中有则摘抄；资料中没有，字数允许则补充），但并非适用于所有题目，可根据资料进行适当调整。②结合本题，作答思路可能为：总体释义（解释给定句子的含义，其中，“守正”可能是坚守一些长城保护的原则与底线，“创造性转化与创新性发展”的本质是“创新”，初步理解这句话的意思是在长城保护中要做到守正创新）+展开解释（介绍长城保护守正创新的具体表现，可能是做法、意义等）+总结（一般为对策，资料中有则摘抄；资料中没有，字数允许则补充）。以上作答思路，具体还要结合资料来确定】。（15分）\n \n 要求：要点全面，分析深入，条理清晰，语言简明，不超过300字。\n "
+ },
+ {
+  "rank": 19,
+  "path": "省考/吉林/2008/行测-乙级.md",
+  "main_sha": "d03aaf1350466951a705f64349e449a3c88b8ad6d93b6dca9fe3a2b8043db2ae",
+  "pr140_sha": "d03aaf1350466951a705f64349e449a3c88b8ad6d93b6dca9fe3a2b8043db2ae",
+  "pr140_same": true,
+  "bytes": 115556,
+  "lines": 3614,
+  "area": "吉林",
+  "year": "2008",
+  "subject": "行测",
+  "variant": "乙级",
+  "nature": "粉笔题库整理版本，未认证为官方原卷",
+  "validation": "候选；机器结构验收通过，尚未人工核验或正式入库",
+  "source": {
+   "type": "https://spa.fenbi.com/ti/exam/solution/1_1_3uque5b",
+   "source_id": "103",
+   "key": "xingce:103",
+   "class": "SOURCE_COMPLETE",
+   "doc_sha": "9f6bd215ce1b78fbb09e95bfda954bc2a522a7d492fc8a8e583e51a23f13c202",
+   "doc_path": "/home/fjd/workspaces/gwy-zhenti-fenbi/repo/work/fenbi/repair-stage/x-吉林-2008-103/document.json"
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/吉林/2008/行测-乙级.md",
+    "line": 72,
+    "code": "READ_OPTION_TEXT_SUSPECT",
+    "explanation": "第 1 题选项 C/D 渲染为「714」「716」，按数列题应是带根号/乘方写法（丢失 √ 或 ^ 后变成整数样）；答案 B 不受影响，但选项文字对读者已不可解。",
+    "severity": "minor"
+   }
+  ],
+  "diff_lines": 0,
+  "diff_head": ""
+ },
+ {
+  "rank": 22,
+  "path": "省考/四川/2017/申论-下半年.md",
+  "main_sha": "9ea5e37d5235ff93ccd2993fd976481cdf62385b64ae5630053c69d4021caa0c",
+  "pr140_sha": "9ea5e37d5235ff93ccd2993fd976481cdf62385b64ae5630053c69d4021caa0c",
+  "pr140_same": true,
+  "bytes": 25453,
+  "lines": 446,
+  "area": "四川",
+  "year": "2017",
+  "subject": "申论",
+  "variant": "下半年",
+  "nature": "正式真题",
+  "validation": "机器校验（并卷/题号/去泄露/G1–G5）；未人工通读；材料截断 1 题（源内硬截断于 6000 字）；2026-10-11 按同题同年同地区 GitHub 固定源补回 1 处材料尾部；原材料归一化后完整前缀逐字相等；只消除该截断项，不代表整卷验收",
+  "source": {
+   "type": "[\"linfukai186\"]",
+   "source_id": "",
+   "key": "",
+   "class": "",
+   "doc_sha": "",
+   "doc_path": ""
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/四川/2017/申论-下半年.md",
+    "line": 373,
+    "code": "READ_NO_MATREF",
+    "explanation": "题干未写资料号、卷内也没有「关联材料」行（基线 MT004）；读者只能靠材料标题自行定位。",
+    "severity": "minor"
+   }
+  ],
+  "diff_lines": 0,
+  "diff_head": ""
+ },
+ {
+  "rank": 36,
+  "path": "省考/广东/2016/申论-广州市考.md",
+  "main_sha": "f96e2e366cebc0b06fc8470b9a381e84c5e9081aa789a0c87dc1211b5769563b",
+  "pr140_sha": "f96e2e366cebc0b06fc8470b9a381e84c5e9081aa789a0c87dc1211b5769563b",
+  "pr140_same": true,
+  "bytes": 42964,
+  "lines": 162,
+  "area": "广东",
+  "year": "2016",
+  "subject": "申论",
+  "variant": "单卷",
+  "nature": "正式真题",
+  "validation": "机器校验（结构/材料/分值/去重）；未人工通读；粉笔系上游，再分发条件未核实",
+  "source": {
+   "type": "[\"qiushi\"]",
+   "source_id": "",
+   "key": "",
+   "class": "",
+   "doc_sha": "",
+   "doc_path": ""
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/广东/2016/申论-广州市考.md",
+    "line": 97,
+    "code": "READ_NO_MATREF",
+    "explanation": "单题作文卷，题干写「参考给定材料」但卷内无「关联材料」行（基线 MT004）；不影响作答，只是少一处跳转。",
+    "severity": "minor"
+   }
+  ],
+  "diff_lines": 0,
+  "diff_head": ""
+ },
+ {
+  "rank": 37,
+  "path": "省考/广东/2016/行测-广州市考.md",
+  "main_sha": "d92441b7bc86999ae77eeb6e20f103a259bd5f5527f858e5332ebd4f4596d157",
+  "pr140_sha": "d92441b7bc86999ae77eeb6e20f103a259bd5f5527f858e5332ebd4f4596d157",
+  "pr140_same": true,
+  "bytes": 131423,
+  "lines": 2644,
+  "area": "广东",
+  "year": "2016",
+  "subject": "行测",
+  "variant": "统考",
+  "nature": "正式真题",
+  "validation": "机器校验（并卷/题号/图片/去泄露/G1–G5）；未人工通读",
+  "source": {
+   "type": "[\"xingcezhenti\"]",
+   "source_id": "",
+   "key": "",
+   "class": "",
+   "doc_sha": "",
+   "doc_path": ""
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/广东/2016/行测-广州市考.md",
+    "line": 38,
+    "code": "READ_HR_IN_DETAILS",
+    "explanation": "100 个折叠块在 </details> 前都有一行 `---`，展开后底部多一条分隔线；与上海 2017 同一模板习惯。",
+    "severity": "minor"
+   },
+   {
+    "path": "省考/广东/2016/行测-广州市考.md",
+    "line": 25,
+    "code": "READ_MIXED_QLEVEL",
+    "explanation": "资料分析题用 ### 挂在 ## 材料 下，其余题用 ##，卷内题目标题层级不一致（基线 HD008）。",
+    "severity": "minor"
+   }
+  ],
+  "diff_lines": 0,
+  "diff_head": ""
+ },
+ {
+  "rank": 51,
+  "path": "省考/江苏/2016/申论-统考.md",
+  "main_sha": "49fd9b0e00b5623f29a27e381c8d2148c1a377fbb0b43fa44fd96b33f30671e2",
+  "pr140_sha": "49fd9b0e00b5623f29a27e381c8d2148c1a377fbb0b43fa44fd96b33f30671e2",
+  "pr140_same": true,
+  "bytes": 63048,
+  "lines": 616,
+  "area": "江苏",
+  "year": "2016",
+  "subject": "申论",
+  "variant": "统考",
+  "nature": "正式真题",
+  "validation": "机器校验（并卷/题号/去泄露/G1–G5）；未人工通读；材料截断 3 题（源内硬截断于 6000 字）；2026-10-11 按同题同年同地区 GitHub 固定源补回 3 处材料尾部；原材料归一化后完整前缀逐字相等；只消除该截断项，不代表整卷验收",
+  "source": {
+   "type": "[\"linfukai186\"]",
+   "source_id": "",
+   "key": "",
+   "class": "",
+   "doc_sha": "",
+   "doc_path": ""
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/江苏/2016/申论-统考.md",
+    "line": 256,
+    "code": "READ_KANGXI_RADICAL",
+    "explanation": "答案正文大量使用康熙部首码位（⻛ U+2EDB、⺠、⻓、⻔…），本卷 397 个；字形近似“风/民/长/门”，但搜索、复制、规范化都会失败。非排版层，本 lane 不改写。",
+    "severity": "minor"
+   }
+  ],
+  "diff_lines": 0,
+  "diff_head": ""
+ },
+ {
+  "rank": 52,
+  "path": "省考/江苏/2024/行测-C类.md",
+  "main_sha": "71ed97ac900e1573d03b4a435b5182572047ed6702a0895b86056e4e7f506906",
+  "pr140_sha": "71ed97ac900e1573d03b4a435b5182572047ed6702a0895b86056e4e7f506906",
+  "pr140_same": true,
+  "bytes": 214901,
+  "lines": 3709,
+  "area": "江苏",
+  "year": "2024",
+  "subject": "行测",
+  "variant": "C类",
+  "nature": "正式真题",
+  "validation": "机器校验（并卷/题号/图片/去泄露/G1–G5）；未人工通读；2026-10-12 按固定版本逐题ID映射恢复顺序，答案及材料联动；既有正文逐块保留。",
+  "source": {
+   "type": "[\"linfukai186\", \"xingcezhenti\"]",
+   "source_id": "",
+   "key": "",
+   "class": "",
+   "doc_sha": "",
+   "doc_path": ""
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/江苏/2024/行测-C类.md",
+    "line": 33,
+    "code": "READ_MIXED_QLEVEL",
+    "explanation": "资料分析题用 ### 挂在 ## 材料 下（27 题），其余 103 题用 ##，同卷题目标题层级不一致（基线 HD008）。",
+    "severity": "minor"
+   },
+   {
+    "path": "省考/江苏/2024/行测-C类.md",
+    "line": 40,
+    "code": "READ_HR_IN_DETAILS",
+    "explanation": "129 个折叠块结尾有 `---` 分隔线；不影响内容。",
+    "severity": "minor"
+   }
+  ],
+  "diff_lines": 0,
+  "diff_head": ""
+ },
+ {
+  "rank": 60,
+  "path": "省考/河南/2018/申论-统考.md",
+  "main_sha": "8bcea15d055fcb9b2599439e7097097fba38a15815ddac816a691d954bbc3af5",
+  "pr140_sha": "8bcea15d055fcb9b2599439e7097097fba38a15815ddac816a691d954bbc3af5",
+  "pr140_same": true,
+  "bytes": 21462,
+  "lines": 136,
+  "area": "河南",
+  "year": "2018",
+  "subject": "申论",
+  "variant": "统考",
+  "nature": "正式真题",
+  "validation": "机器校验（结构/材料/分值/去重）；未人工通读；源含参考答案未收录；第三方文库转载，再分发条件未核实",
+  "source": {
+   "type": "[\"SGHCN0762\"]",
+   "source_id": "",
+   "key": "",
+   "class": "",
+   "doc_sha": "",
+   "doc_path": ""
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/河南/2018/申论-统考.md",
+    "line": 77,
+    "code": "READ_MATERIAL_LABEL_MISMATCH",
+    "explanation": "材料小节标题与正文自带的资料号错位：「### 材料 4」正文首行是「资料5」，「### 材料 5」正文首行是「资料6」；全卷没有「资料4」（在卷末附录里）。读者会看到两级编号互相矛盾。",
+    "severity": "major"
+   },
+   {
+    "path": "省考/河南/2018/申论-统考.md",
+    "line": 102,
+    "code": "READ_SOURCE_NO_ANSWER",
+    "explanation": "4 题均无折叠块、无答案；卷首「参考作答与范文导读」表明确写「待补同题全文 / 暂未收录」，属源侧未收，未编造答案。",
+    "severity": "info"
+   }
+  ],
+  "diff_lines": 0,
+  "diff_head": ""
+ },
+ {
+  "rank": 63,
+  "path": "省考/浙江/2023/申论-A类.md",
+  "main_sha": "dd71a541711535583581dc96a5622ea1f3b657692a4393b8ad79ce307f5cbc61",
+  "pr140_sha": "dd71a541711535583581dc96a5622ea1f3b657692a4393b8ad79ce307f5cbc61",
+  "pr140_same": true,
+  "bytes": 36977,
+  "lines": 290,
+  "area": "浙江",
+  "year": "2023",
+  "subject": "申论",
+  "variant": "A类",
+  "nature": "粉笔题库整理版本，未认证为官方原卷",
+  "validation": "候选；机器结构验收通过，尚未人工核验或正式入库",
+  "source": {
+   "type": "https://www.fenbi.com/ti/view/paper/6_2_6c57",
+   "source_id": "209063",
+   "key": "shenlun:209063",
+   "class": "PARTIAL",
+   "doc_sha": "0e773596501cb4de0c68af81e3ff22d607dd048df08b8a69a8c3da6b066a07d6",
+   "doc_path": "/home/fjd/tmp/shenlun-verify-20261027-round3/209063/document.json"
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/浙江/2023/申论-A类.md",
+    "line": 259,
+    "code": "READ_ARTICLE_IN_ANSWER",
+    "explanation": "第 3 题的文章分析（含【标题/开头/论述段的优点】批注）整块排在参考答案之后、没有「解析」小节，读者需要在答案折叠块里往后翻才能找到；同时全卷无「考点/来源」行（源侧有）。",
+    "severity": "minor"
+   }
+  ],
+  "diff_lines": 0,
+  "diff_head": ""
+ },
+ {
+  "rank": 88,
+  "path": "省考/青海/2014/行测-统考.md",
+  "main_sha": "e5df15e5f9432475e9474c42357b3bb6f2329b4ab171e8f7efd991313d9e47e7",
+  "pr140_sha": "6189aa2190d511315fc43e23f958309b73d42becc61f587afe757e5a7957a210",
+  "pr140_same": false,
+  "bytes": 175104,
+  "lines": 4596,
+  "area": "青海",
+  "year": "2014",
+  "subject": "行测",
+  "variant": "统考",
+  "nature": "粉笔题库整理版本，未认证为官方原卷",
+  "validation": "候选；机器结构验收通过，尚未人工核验或正式入库",
+  "source": {
+   "type": "https://spa.fenbi.com/ti/exam/solution/1_1_3ur5184",
+   "source_id": "43663",
+   "key": "xingce:43663",
+   "class": "SOURCE_COMPLETE",
+   "doc_sha": "ef11d244142dd3bcf32ac36ec2568758c617e01cc39f0c02238b13457049e9e6",
+   "doc_path": "/home/fjd/workspaces/gwy-zhenti-fenbi/repo/work/fenbi/repair-stage-xingce-blanks/x-青海-2014-43663/document.json"
+  },
+  "receipt_status": "AI_ISSUE",
+  "receipt_issues": [
+   {
+    "path": "省考/青海/2014/行测-统考.md",
+    "line": 2168,
+    "code": "READ_PIPE_MATH",
+    "explanation": "绝对值等式渲染为 `|甲-乙|=|丙-丁|`（行首行尾都是竖线），在 Markdown 里容易被误读成表格语法；PR#140 已改为反引号代码 `` `|甲-乙| = |丙-丁|` ``，可读性更好（代价是改了 2 个空格）。",
+    "severity": "minor"
+   }
+  ],
+  "diff_lines": 11,
+  "diff_head": "--- /home/fjd/scratch/gwy-format-final-20261028/structure/repo-main/省考/青海/2014/行测-统考.md\t2026-10-28 02:30:53.760468290 +0800\n+++ /home/fjd/scratch/gwy-format-final-20261028/structure/reading-sample/repo-pr140/省考/青海/2014/行测-统考.md\t2026-10-28 09:11:49.449224202 +0800\n@@ -2165,7 +2165,7 @@\n \n 24−240/(乙+丙)=9（得到乙+丙=16）\n \n-|甲-乙|=|丙-丁|\n+`|甲-乙| = |丙-丁|`\n \n 式子复杂难计算时，考虑代入法：\n "
+ }
+]
