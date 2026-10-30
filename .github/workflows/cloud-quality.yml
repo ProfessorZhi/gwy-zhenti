@@ -43,6 +43,8 @@ jobs:
         run: |
           python -m unittest discover -s tests -q
           python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test round3_repair_test -v
+      - name: Read-only question-content gap audit (A1/A2/B2)
+        run: python tools/gap_content_audit.py --limit 150
       - name: Read-only corpus and inventory verification
         run: python tools/cloud_quality.py --check --verify-images
       # Time-pinned audit: verify_repair_receipts.py asserts the exact corpus of the
