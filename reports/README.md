@@ -80,7 +80,7 @@
 | [REMOVED-AI-CONTENT-20261022.md](REMOVED-AI-CONTENT-20261022.md) | 10-22 | 第一阶段回退 14 卷 25 处 AI 答案 + 6 处解析；缺答位 426→451。 | **历史**（LEGACY 接续） |
 | [REMOVED-AI-CONTENT-LEGACY-20261022.md](REMOVED-AI-CONTENT-LEGACY-20261022.md) | 10-22 | 第二阶段回退 9 卷 24 块早期 AI 作答；全库 AI 标签归零，缺答位 451→475。 | **现行**（AI 清理最终回执）；1243 计数已过期 |
 
-> 机读汇总：[`QUALITY-SUMMARY.json`](QUALITY-SUMMARY.json) 当前记 1,683 份 / 19,439 处图片引用；[`DEFECTS.jsonl`](DEFECTS.jsonl) 是历史告警清单（250 行），待新基线重建；[`PRIORITY-MISSING.json`](PRIORITY-MISSING.json) 的重点年度科目格与非重点地区 23 缺卷槽位属于不同范围。`docs/COVERAGE.md` 曾显示 19,433，已按 manifest 回填 **19,439**（广东 +3、广州 +3），并新增 CI 回归测试。
+> 机读汇总：[`QUALITY-SUMMARY.json`](QUALITY-SUMMARY.json) 当前记 1,683 份 / 19,439 处图片引用；[`DEFECTS.jsonl`](DEFECTS.jsonl) 是历史告警清单（250 行），待新基线重建；[`PRIORITY-MISSING.json`](PRIORITY-MISSING.json) 的重点年度科目格与非重点地区 23 缺卷槽位属于不同范围。`docs/COVERAGE.md` 曾显示 19,433，已按 manifest 回填 **19,439**（广东 +3、广州 +3），并新增 CI 回归测试。**A1 机器统计也已修正**：质量汇总原字段 `confirmed_missing_original_questions` 曾因只读未填写的元数据而误显示 0；现从正文原题占位识别为 **280**，另保留前端声明缺号数量 0。
 
 ---
 
