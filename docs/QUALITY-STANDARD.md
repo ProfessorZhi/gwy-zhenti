@@ -87,4 +87,4 @@
 最新重新生成：历史 18 份 / 35 道受影响题；现仍 0 份 / 0 道受影响题。
 以前的阶段数字和规则记录是历史，不覆盖当前字段。机器检查通过不等于逐字、逐图、逐答案验真。
 有对照题本的卷同时核验 `对照题本题量`、`实有题数` 和 `缺失原题号`；已登记缺号是内容缺陷，不使用压缩连续号隐藏。
-当前证据：[逐卷清单](catalog/manifest.jsonl)、[告警](reports/QUALITY-AUDIT.md)、[历史尾部补全证据](reports/REPAIRS-20261011.jsonl)、[当前专项修复](reports/QUALITY-REPAIR-20261012.md)。
+当前证据：[逐卷清单](../catalog/manifest.jsonl)、[告警](../reports/QUALITY-AUDIT.md)、[历史尾部补全证据](../reports/REPAIRS-20261011.jsonl)、[当前专项修复](../reports/QUALITY-REPAIR-20261012.md)。

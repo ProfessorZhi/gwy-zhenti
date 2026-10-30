@@ -17,7 +17,7 @@
 
 ## 当前入口
 
-- [重点地区逐年图文试卷](../COVERAGE-PRIORITY.md)
+- [重点地区逐年图文试卷](COVERAGE-PRIORITY.md)
 - [当前质量事项](../reports/QUALITY-AUDIT.md)
 - [第二轮：早年申论补全与残余](../reports/QUALITY-REPAIR-20261012-R2.md)
 - [第一轮：题序与分卷修复](../reports/QUALITY-REPAIR-20261012.md)
