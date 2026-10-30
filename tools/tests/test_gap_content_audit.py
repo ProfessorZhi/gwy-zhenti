@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 """Conservative option/answer gap scanner regression tests."""
 from pathlib import Path
+import csv
 import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "tools"))
 from gap_content_audit import (A1_STUB, answer_findings, frontmatter,
-                               option_findings, question_blocks)
+                               option_findings, question_blocks, scan)
 
 
 class GapContentAuditTest(unittest.TestCase):
@@ -48,6 +49,39 @@ class GapContentAuditTest(unittest.TestCase):
     def test_metadata_missing_numbers_parse(self):
         text = '---\n科目: "申论"\n缺参考答案题号: [1, 4]\n---\n'
         self.assertEqual(frontmatter(text)["缺参考答案题号"], [1, 4])
+
+
+class LiveGapLedgerTest(unittest.TestCase):
+    def test_current_confirmed_ledger_matches_current_papers(self):
+        """Avoid publishing stale A2/B2 numbers after a future content change."""
+        with (ROOT / "reports/GAP-CURRENT-CONFIRMED-20261030.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            documented = list(csv.DictReader(handle))
+        self.assertEqual(293, len(documented))
+        keys = [(r["paper_path"], int(r["question_number"])) for r in documented]
+        self.assertEqual(len(keys), len(set(keys)), "issue keys must be unique")
+
+        findings, summary = scan(ROOT)
+        a2_types = {"a2_confirmed_option_placeholders",
+                    "a2_confirmed_single_option_placeholder"}
+        a2 = {(r["path"], r["question"]) for r in findings if r["type"] in a2_types}
+        b2 = {(r["path"], r["question"]) for r in findings
+              if r["type"] == "b2_confirmed_explicit_no_answer"}
+        expected_a2 = {(r["paper_path"], int(r["question_number"]))
+                       for r in documented if r["issue_type"] == "A2"}
+        expected_b2 = {(r["paper_path"], int(r["question_number"]))
+                       for r in documented if r["issue_type"] == "B2"}
+        self.assertEqual(expected_a2, a2)
+        self.assertEqual(expected_b2, b2)
+        self.assertEqual(280, summary["a1_open_body_placeholder"])
+        self.assertEqual(3, len([r for r in findings
+                                 if r["type"] == "a2_confirmed_single_option_placeholder"]))
+        self.assertEqual(13, summary["a2_excluded_valid_literal"])
+        self.assertEqual(7, len(b2))
+        self.assertEqual(6, len(a2))
+        self.assertEqual(90_123, summary["question_blocks"])
+        self.assertEqual(1_683, summary["inventory_papers"])
 
 
 if __name__ == "__main__":
