@@ -1,7 +1,7 @@
 # 报表索引（reports/）
 
-> 快照：2026-10-30。本目录共 **34 份报表 .md**（根目录 33 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 1 份逐题 `.csv` 台账、27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
-> 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。**缺原题与旧答案数勘误另以 [10-30 逐题报告](GAP-RECONCILIATION-20261030.md) 为准。** 本页只做入口和状态索引，不改写或移动历史报表。
+> 快照：2026-10-30。本目录共 **35 份报表 .md**（根目录 34 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 3 份逐题 `.csv` 台账、27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
+> 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。**当前内容缺口以 [10-30 最新 A1/A2/B2 审计](GAP-A2B2-RECHECK-20261030.md) 为准；A1 历史变更仍见 [原报告](GAP-RECONCILIATION-20261030.md)。** 本页只做入口和状态索引，不改写或移动历史报表。
 
 **状态口径**
 
@@ -13,7 +13,7 @@
 
 **快速入口**
 
-- **当前缺口**：[10-30 缺口对账/勘误](GAP-RECONCILIATION-20261030.md) · [291 个历史题位状态 CSV](GAP-QUESTION-LEDGER-20261030.csv)（其中当前仍缺原题 280）
+- **当前缺口**：[A1/A2/B2 现行审计](GAP-A2B2-RECHECK-20261030.md) · [293 处确认缺项总表](GAP-CURRENT-CONFIRMED-20261030.csv) · [历史 291 题位变更](GAP-RECONCILIATION-20261030.md)
 - 看当前规模与规则：[README](../README.md) · [PROGRESS](../docs/PROGRESS.md) · [质量报告](../docs/QUALITY.md)
 - 看还没补齐的题：[PAPER-MISSING-SOURCE-CHECK-20261011.md](PAPER-MISSING-SOURCE-CHECK-20261011.md) · [ROUND3-XINGCE-SOURCE-CHECK-20261012.md](ROUND3-XINGCE-SOURCE-CHECK-20261012.md)
 - 看最新质量告警与图片状态：[QUALITY-AUDIT.md](QUALITY-AUDIT.md) · [IMAGE-AUDIT-20261023.md](IMAGE-AUDIT-20261023.md)
@@ -25,7 +25,8 @@
 
 | 报表 | 日期 | 一句话说明 | 状态 |
 |---|---|---|---|
-| [GAP-RECONCILIATION-20261030.md](GAP-RECONCILIATION-20261030.md) | 10-30 | 逐卷重核历史 64 卷 291 个 A1 题位，现 60 卷 280 占位、11 处转出 A1；勘误旧 402 缺答与旧整卷无答案结论，列出 A2/B2 待重算事项。 | **现行**（A1 逐题基线与统计边界） |
+| [GAP-A2B2-RECHECK-20261030.md](GAP-A2B2-RECHECK-20261030.md) | 10-30 | 逐题全文扫描 1,683 卷与单个缺失词 16 题人工复核：A1 280 / A2 6 / B2 7，确认内容缺口 293 处；包含 [当前 CSV](GAP-CURRENT-CONFIRMED-20261030.csv) 和 [16 题判定表](GAP-A2-SINGLE-OPTION-REVIEW-20261030.csv)。 | **现行（已确认下限）** |
+| [GAP-RECONCILIATION-20261030.md](GAP-RECONCILIATION-20261030.md) | 10-30 | 逐卷重核历史 64 卷 291 个 A1 题位，现 60 卷 280 占位、11 处转出 A1；勘误旧 402 缺答与旧整卷无答案结论，列出 A2/B2 待重算事项。 | **历史证据**（A1 旧快照；A2/B2 请看后续专项） |
 | [PAPER-INTEGRITY-20261011.md](PAPER-INTEGRITY-20261011.md) | 10-11 | 四卷按第三方题本恢复题序与漏题（国考2022、江苏2023B、广东2020县级、浙江2020A），补 9 题；广东 69–75、浙江 49–50 仍缺。 | **现行**（专项结论） |
 | [PAPER-MISSING-SOURCE-CHECK-20261011.md](PAPER-MISSING-SOURCE-CHECK-20261011.md) | 10-11 | 上述 9 个缺号的查源记录；明确不拿“暂缺/默认 A”补答案，也不拿乡镇卷顶县级卷。 | **现行** |
 | [ROUND3-XINGCE-SOURCE-CHECK-20261012.md](ROUND3-XINGCE-SOURCE-CHECK-20261012.md) | 10-12 | 第三轮 18 个行测缺号的公开候选核查（浙江 2、江苏2024A 4、江苏2025C 12），并记录当轮申论交付验收。 | **现行**（缺号结论）；全库计数已过期 |
