@@ -20,6 +20,7 @@
 ## 当前入口
 
 - **[最新缺口总账（优先）](GAP-STATUS.md)**
+- [10 份试卷质量抽样：结构/材料/答案映射](../reports/QUALITY-SPOTCHECK-20261030.md)
 - [重点地区逐年图文试卷](COVERAGE-PRIORITY.md)
 - [当前质量事项](../reports/QUALITY-AUDIT.md)
 - [第二轮：早年申论补全与残余](../reports/QUALITY-REPAIR-20261012-R2.md)
