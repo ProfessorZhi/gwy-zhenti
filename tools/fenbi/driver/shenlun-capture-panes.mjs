@@ -60,6 +60,7 @@ const { values } = parseArgs({
     'source-id': { type: 'string' }, 'paper-id': { type: 'string' },
     'title-hash': { type: 'string' }, 'title-len': { type: 'string' },
     'list-page': { type: 'string' }, 'row-index': { type: 'string' }, out: { type: 'string' },
+    'list-tab': { type: 'string' },
     'gap-ms': { type: 'string' }, 'work-dir': { type: 'string' }, help: { type: 'boolean' },
   },
 });
@@ -76,6 +77,9 @@ if (!/^[0-9a-f]{12,64}$/u.test(String(values['title-hash']).toLowerCase())) {
   console.error('invalid-argument:--title-hash'); process.exit(2);
 }
 const AREA = values.area;
+// 顶层页签不一定等于地区名：选调生 / 公安招警和公检法 是独立目录。--list-tab 只换
+// 「点哪个页签」，卷的 area 元数据仍按 --area 记，落库路径不受影响。
+const LIST_TAB = values['list-tab'] ? String(values['list-tab']).trim() : AREA;
 const YEAR = Number(values.year);
 const VARIANT = values.variant.toLowerCase();
 const SOURCE_ID = String(values['source-id']);
@@ -92,7 +96,7 @@ for (const [label, root] of [['repo', REPO], ['work-dir', WORK_DIR]]) {
 }
 
 const receipt = {
-  at: new Date().toISOString(), sourceId: SOURCE_ID, area: AREA, year: YEAR, variant: VARIANT,
+  at: new Date().toISOString(), sourceId: SOURCE_ID, area: AREA, listTab: LIST_TAB, year: YEAR, variant: VARIANT,
   status: 'running', navigations: 1, clicks: 0, guarded: null, risk: { unauthorized: 0, rateLimited: 0 },
   titleCheck: null, structure: null, questions: [], panes: null, blocks: [], errors: [],
 };
@@ -164,8 +168,8 @@ try {
     const el = [...document.querySelectorAll('.category1-btn')].find((x) => norm(x.innerText) === region);
     if (!el || el.offsetParent === null) return false;
     el.click(); return true;
-  }, AREA);
-  if (!regionClicked) throw fail('REGION_NOT_FOUND', 'region button not visible');
+  }, LIST_TAB);
+  if (!regionClicked) throw fail('REGION_NOT_FOUND', `region button not visible: ${LIST_TAB}`);
   receipt.clicks += 1;
   await settle(3000);
   stopOnRisk();

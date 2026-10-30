@@ -189,8 +189,8 @@
   "historical_truncated_questions": 2,
   "image_decode_check_performed": false,
   "image_decode_errors": [],
-  "image_references": 19433,
-  "inventory_sha256": "14b9a60f941d3ea24a766c8fc472706270dc9859115a9c04f5237dea954a07c6",
+  "image_references": 19439,
+  "inventory_sha256": "fd32a657edae85da1b2fa1e7ee48a46298e6e5423f0e358b469d833198e16b3b",
   "missing_image_references": 0,
   "paper_files": 1683,
   "placeholder_files": 41,
@@ -204,6 +204,6 @@
     "申论": 944,
     "行测": 739
   },
-  "unique_referenced_images": 19240,
+  "unique_referenced_images": 19246,
   "whole_paper_acceptance": "not_established_by_structural_checks"
 }

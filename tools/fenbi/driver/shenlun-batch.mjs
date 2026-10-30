@@ -32,6 +32,7 @@ const { values } = parseArgs({
     'inventory-dir': { type: 'string' }, areas: { type: 'string' },
     limit: { type: 'string' }, 'gap-ms': { type: 'string' },
     'work-dir': { type: 'string' }, 'dry-run': { type: 'boolean' }, help: { type: 'boolean' },
+    'inventory-file': { type: 'string' }, 'list-tab': { type: 'string' },
   },
 });
 if (values.help) {
@@ -48,6 +49,11 @@ const GAP = Math.max(5000, Number(values['gap-ms'] || 30000));
 const LIMIT = Number(values.limit || 5);
 const DRY = Boolean(values['dry-run']);
 const inventoryDir = path.resolve(values['inventory-dir'] || path.join(WORK_DIR, 'shenlun-inventory'));
+// 独立目录（选调生 / 公安招警和公检法）不在任何地区页签下：候选卷的 id 只出现在那个
+// 顶层页签的列表里。给一份跨地区的固定 inventory，并让采集端点同一个页签。
+const INVENTORY_FILE = values['inventory-file'] ? path.resolve(values['inventory-file']) : null;
+const LIST_TAB = values['list-tab'] ? String(values['list-tab']).trim() : null;
+if (LIST_TAB && !INVENTORY_FILE) { console.error('missing-argument:--inventory-file'); process.exit(2); }
 
 // 采集产物只能落在仓库外。
 for (const [label, root] of [['repo', REPO], ['work-dir', WORK_DIR]]) {
@@ -78,7 +84,8 @@ for (const list of grouped.values()) list.sort((a, b) => (a.year - b.year) || St
 
 const receipt = {
   at: new Date().toISOString(), candidates: CANDIDATES, outRoot: OUT_ROOT, dryRun: DRY,
-  gapMs: GAP, limit: LIMIT, areas: [], captured: [], skipped: [], failed: [], aborted: null,
+  gapMs: GAP, limit: LIMIT, inventoryFile: INVENTORY_FILE, listTab: LIST_TAB,
+  areas: [], captured: [], skipped: [], failed: [], aborted: null,
 };
 const already = new Set();
 try {
@@ -99,12 +106,16 @@ for (const [area, list] of grouped) {
   if (!pending.length) { areaReceipt.note = 'all-already-captured'; continue; }
   if (done >= LIMIT) break;
 
-  const inventoryFile = path.join(inventoryDir, `inventory-${area}.json`);
+  const inventoryFile = INVENTORY_FILE || path.join(inventoryDir, `inventory-${area}.json`);
   let inventory;
   try {
     inventory = JSON.parse(await fs.readFile(inventoryFile, 'utf8'));
     if (inventory.status !== 'ok') throw new Error('inventory not ok');
-  } catch {
+  } catch (error) {
+    if (INVENTORY_FILE) {
+      receipt.failed.push({ area, step: 'inventory', detail: String(error?.message || error).slice(-300) });
+      continue;
+    }
     if (DRY) { areaReceipt.note = 'would-scan'; continue; }
     const scan = await run(process.execPath, [path.join(HERE, 'shenlun-inventory-scan.mjs'),
       '--area', area, '--out', inventoryFile, '--work-dir', WORK_DIR, '--gap-ms', String(GAP)]);
@@ -132,6 +143,7 @@ for (const [area, list] of grouped) {
       '--source-id', String(candidate.id), '--title-hash', hit.titleHash, '--title-len', String(hit.titleLen),
       '--list-page', String(hit.page), '--row-index', String(hit.index),
       '--out', out, '--work-dir', WORK_DIR];
+    if (LIST_TAB) args.push('--list-tab', LIST_TAB);
     if (DRY) { receipt.captured.push({ area, id: String(candidate.id), dryRun: true, args: args.slice(1) }); done += 1; continue; }
     const result = await run(process.execPath, args);
     const summary = result.stdout.trim().split('\n').pop();

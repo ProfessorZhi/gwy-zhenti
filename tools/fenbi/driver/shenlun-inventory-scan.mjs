@@ -42,7 +42,7 @@ function fail(code, message, extra = {}) {
 const { values } = parseArgs({
   allowPositionals: false,
   options: {
-    area: { type: 'string' }, out: { type: 'string' },
+    area: { type: 'string' }, out: { type: 'string' }, tab: { type: 'string' },
     'max-pages': { type: 'string' }, 'gap-ms': { type: 'string' }, 'work-dir': { type: 'string' },
     help: { type: 'boolean' },
   },
@@ -56,13 +56,16 @@ for (const required of ['area', 'out']) {
   if (!values[required]) { console.error(`missing-argument:--${required}`); process.exit(2); }
 }
 const AREA = String(values.area).trim();
+// 顶层页签不一定等于地区名：选调生 / 公安招警和公检法 是独立目录，点开它们列的是
+// 全国各地区的同名考试。--tab 只换「点哪个页签」，输出文件与回执里的 area 仍按 --area 记。
+const TAB = values.tab ? String(values.tab).trim() : AREA;
 const OUT = path.resolve(values.out);
 const GAP = Math.max(2500, Number(values['gap-ms'] || 2500));
 const MAX_PAGES = Math.max(1, Math.min(60, Number(values['max-pages'] || 20)));
 const WORK_DIR = values['work-dir'] ? path.resolve(values['work-dir']) : WORK;
 
 const receipt = {
-  schemaVersion: 1, at: new Date().toISOString(), area: AREA, entry: ENTRY,
+  schemaVersion: 1, at: new Date().toISOString(), area: AREA, tab: TAB, entry: ENTRY,
   status: 'running', pagesRead: 0, totalPage: null, totalItem: null,
   items: [], risk: { unauthorized: 0, rateLimited: 0 }, blockedWrites: 0, errors: [],
 };
@@ -127,8 +130,8 @@ try {
     const el = [...document.querySelectorAll('.category1-btn')].find((x) => norm(x.innerText) === region);
     if (!el || el.offsetParent === null) return false;
     el.click(); return true;
-  }, AREA);
-  if (!regionClicked) throw fail('REGION_NOT_FOUND', `region tab not visible: ${AREA}`);
+  }, TAB);
+  if (!regionClicked) throw fail('REGION_NOT_FOUND', `region tab not visible: ${TAB}`);
   await settle(3000);
   stopOnRisk();
 
