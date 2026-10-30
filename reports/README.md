@@ -1,7 +1,7 @@
 # 报表索引（reports/）
 
-> 快照：2026-10-30。本目录共 **33 份报表 .md**（根目录 32 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
-> 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。本页只做入口和状态索引，**不改写、不移动任何报表**。
+> 快照：2026-10-30。本目录共 **34 份报表 .md**（根目录 33 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
+> 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。**缺原题与旧答案数勘误另以 [10-30 逐题报告](GAP-RECONCILIATION-20261030.md) 为准。** 本页只做入口和状态索引，不改写或移动历史报表。
 
 **状态口径**
 
@@ -13,6 +13,7 @@
 
 **快速入口**
 
+- **当前缺口**：[10-30 缺口对账/勘误](GAP-RECONCILIATION-20261030.md) · [291 个历史题位状态 CSV](GAP-QUESTION-LEDGER-20261030.csv)（其中当前仍缺原题 280）
 - 看当前规模与规则：[README](../README.md) · [PROGRESS](../docs/PROGRESS.md) · [质量报告](../docs/QUALITY.md)
 - 看还没补齐的题：[PAPER-MISSING-SOURCE-CHECK-20261011.md](PAPER-MISSING-SOURCE-CHECK-20261011.md) · [ROUND3-XINGCE-SOURCE-CHECK-20261012.md](ROUND3-XINGCE-SOURCE-CHECK-20261012.md)
 - 看最新质量告警与图片状态：[QUALITY-AUDIT.md](QUALITY-AUDIT.md) · [IMAGE-AUDIT-20261023.md](IMAGE-AUDIT-20261023.md)
@@ -24,16 +25,17 @@
 
 | 报表 | 日期 | 一句话说明 | 状态 |
 |---|---|---|---|
+| [GAP-RECONCILIATION-20261030.md](GAP-RECONCILIATION-20261030.md) | 10-30 | 逐卷重核历史 64 卷 291 个 A1 题位，现 60 卷 280 占位、11 处转出 A1；勘误旧 402 缺答与旧整卷无答案结论，列出 A2/B2 待重算事项。 | **现行**（A1 逐题基线与统计边界） |
 | [PAPER-INTEGRITY-20261011.md](PAPER-INTEGRITY-20261011.md) | 10-11 | 四卷按第三方题本恢复题序与漏题（国考2022、江苏2023B、广东2020县级、浙江2020A），补 9 题；广东 69–75、浙江 49–50 仍缺。 | **现行**（专项结论） |
 | [PAPER-MISSING-SOURCE-CHECK-20261011.md](PAPER-MISSING-SOURCE-CHECK-20261011.md) | 10-11 | 上述 9 个缺号的查源记录；明确不拿“暂缺/默认 A”补答案，也不拿乡镇卷顶县级卷。 | **现行** |
 | [ROUND3-XINGCE-SOURCE-CHECK-20261012.md](ROUND3-XINGCE-SOURCE-CHECK-20261012.md) | 10-12 | 第三轮 18 个行测缺号的公开候选核查（浙江 2、江苏2024A 4、江苏2025C 12），并记录当轮申论交付验收。 | **现行**（缺号结论）；全库计数已过期 |
-| [ANSWER-GAP-AUDIT-20261026.md](ANSWER-GAP-AUDIT-20261026.md) | 10-26 | 全库行测 742 卷 / 86,867 题逐题判「有没有答案」：答案行缺失 0、空值 0；仅 64 卷 291 题在粉笔页面本身就是「全力以赴征集」占位，现场复核 7 卷题号逐一吻合。 | **现行** |
-| [ANSWER-GAP-AUDIT-20261027.md](ANSWER-GAP-AUDIT-20261027.md) | 10-27 | 26 份「整卷无答案」逐卷核对：21 份粉笔同卷可整卷对应（11 份已补，10 份是从属佐证版不重复抄录）、1 份部分可补、4 份粉笔目录里根本没有该卷。 | **现行** |
-| [MISSING-QUESTIONS-AUDIT-20261027.md](MISSING-QUESTIONS-AUDIT-20261027.md) | 10-27 | 291 个缺题题位（64 卷）全部是粉笔源侧「题目正在全力以赴征集」占位：`cache-has-it` 0、`off-by-index` 0、`source-absent` 291，无题可离线补。 | **现行** |
-| [SLOT-AUDIT-20261027.md](SLOT-AUDIT-20261027.md) | 10-27 | 槽位与同槽复核：政策范围内空白槽位 **0**（旧「41」实为 34 个行测标签别名槽 + 7 条 2027 模考条目）；95 组同槽多文件判为重复 71 / 不同卷 23 / 混合 1 / 存疑 0；四川 2017 申论 `78982` 身份待现场核。 | **现行** |
+| [ANSWER-GAP-AUDIT-20261026.md](ANSWER-GAP-AUDIT-20261026.md) | 10-26 | 全库行测 742 卷 / 86,867 题逐题判「有没有答案」：答案行缺失 0、空值 0；仅 64 卷 291 题在粉笔页面本身就是「全力以赴征集」占位，现场复核 7 卷题号逐一吻合。 | **历史**（64/291 是 10-26 快照；现 60/280） |
+| [ANSWER-GAP-AUDIT-20261027.md](ANSWER-GAP-AUDIT-20261027.md) | 10-27 | 26 份「整卷无答案」逐卷核对：21 份粉笔同卷可整卷对应（11 份已补，10 份是从属佐证版不重复抄录）、1 份部分可补、4 份粉笔目录里根本没有该卷。 | **历史**（旧整卷无答案数量已过时） |
+| [MISSING-QUESTIONS-AUDIT-20261027.md](MISSING-QUESTIONS-AUDIT-20261027.md) | 10-27 | 291 个缺题题位（64 卷）全部是粉笔源侧「题目正在全力以赴征集」占位：`cache-has-it` 0、`off-by-index` 0、`source-absent` 291，无题可离线补。 | **历史证据**（64/291 逐题在 10-30 更新为 60/280） |
+| [SLOT-AUDIT-20261027.md](SLOT-AUDIT-20261027.md) | 10-27 | 槽位与同槽复核：政策范围内空白槽位 **0**（旧「41」实为 34 个行测标签别名槽 + 7 条 2027 模考条目）；95 组同槽多文件判为重复 71 / 不同卷 23 / 混合 1 / 存疑 0；四川 2017 申论 `78982` 身份待现场核。 | **历史**（当前卷数已去重；78982 已实测会员墙） |
 | [fix-b1-8papers-20261022/RECEIPT.md](fix-b1-8papers-20261022/RECEIPT.md) | 10-22 | 八卷（四川2016–18、深圳2025、重庆2016–19）裸 `<` 转义、来源字段与 manifest 修复回执，含逐题指纹核验和深圳2025 q56↔q52 裁定。 | **现行**（已由 #122 合入）；§9 合并状态已过期 |
-| [GAP-VS-VERIFY-20261027.md](GAP-VS-VERIFY-20261027.md) | 10-27 | 内容缺失（清单 A）与验证待办（清单 B）分开记：A1 答案缺 71 卷 402 题、A2 申论材料（19 卷 114 则已补，剩 2 卷残卷 + 河南 2018 无原件）、A3 未取得原件 23 卷；B1 人工验收 0/1,850。 | **现行** |
-| [ACCEPTANCE-PROTOCOL-20261027.md](ACCEPTANCE-PROTOCOL-20261027.md) | 10-27 | 三层验收口径：L1 结构自洽全库跑完（1,758 过 + 92 卷全归因）、L2 来源一致全量跑完（1,257 卷 / 63,151 题，四类硬缺口 0）、L3 人工通读待做。 | **现行** |
+| [GAP-VS-VERIFY-20261027.md](GAP-VS-VERIFY-20261027.md) | 10-27 | 内容缺失（清单 A）与验证待办（清单 B）分开记：A1 答案缺 71 卷 402 题、A2 申论材料（19 卷 114 则已补，剩 2 卷残卷 + 河南 2018 无原件）、A3 未取得原件 23 卷；B1 人工验收 0/1,850。 | **历史**（402 缺答和 1,850 分母已过时；口径区分仍有用） |
+| [ACCEPTANCE-PROTOCOL-20261027.md](ACCEPTANCE-PROTOCOL-20261027.md) | 10-27 | 三层验收口径：L1 结构自洽全库跑完（1,758 过 + 92 卷全归因）、L2 来源一致全量跑完（1,257 卷 / 63,151 题，四类硬缺口 0）、L3 人工通读待做。 | **历史**（验收原则仍适用，基线数量过时） |
 
 ## 2. 材料与排版
 
@@ -72,18 +74,18 @@
 
 | 报表 | 日期 | 一句话说明 | 状态 |
 |---|---|---|---|
-| [QUALITY-AUDIT.md](QUALITY-AUDIT.md) | 10-23（#122 时点） | 规则生成的逐卷告警清单：250 份有告警，当前尾部截断 0；顶部“1291 份”是旧快照。 | **现行**（需按当前 1,422 份重算总数） |
+| [QUALITY-AUDIT.md](QUALITY-AUDIT.md) | 10-23（#122 时点） | 规则生成的逐卷告警清单：250 份有告警，当前尾部截断 0；顶部“1291 份”是旧快照。 | **历史**（告警数字与旧分母均待按 1,683 份重算） |
 | [PRIORITY-QUALITY-20261012.md](PRIORITY-QUALITY-20261012.md) | 10-12 | 国考/江苏/浙江逐卷质量台账，已接续到第五轮。 | **现行台账**（范围有限；未覆盖 R6/R7 与 AI 回退） |
 | [REMOVED-AI-CONTENT-20261022.md](REMOVED-AI-CONTENT-20261022.md) | 10-22 | 第一阶段回退 14 卷 25 处 AI 答案 + 6 处解析；缺答位 426→451。 | **历史**（LEGACY 接续） |
 | [REMOVED-AI-CONTENT-LEGACY-20261022.md](REMOVED-AI-CONTENT-LEGACY-20261022.md) | 10-22 | 第二阶段回退 9 卷 24 块早期 AI 作答；全库 AI 标签归零，缺答位 451→475。 | **现行**（AI 清理最终回执）；1243 计数已过期 |
 
-> 机读汇总：[`QUALITY-SUMMARY.json`](QUALITY-SUMMARY.json)、[`DEFECTS.jsonl`](DEFECTS.jsonl)（250 行）、[`PRIORITY-MISSING.json`](PRIORITY-MISSING.json)（10 个重点年度科目格）。其中 `QUALITY-SUMMARY.json` 仍是 1291 份 / 85,360 处引用的旧快照。
+> 机读汇总：[`QUALITY-SUMMARY.json`](QUALITY-SUMMARY.json) 当前记 1,683 份 / 19,439 处图片引用；[`DEFECTS.jsonl`](DEFECTS.jsonl) 是历史告警清单（250 行），待新基线重建；[`PRIORITY-MISSING.json`](PRIORITY-MISSING.json) 的重点年度科目格与非重点地区 23 缺卷槽位属于不同范围。另 `docs/COVERAGE.md` 图片引用展示 19,433，待生成器统一。
 
 ---
 
 ## 与当前状态不符的历史表述
 
-以下句子写在报表正文里，但按 2026-10-23 的仓库状态已经不成立。**本页只登记，不回改原报表**。
+以下句子写在历史报表正文里，原表「当前事实」列是 **2026-10-23 的再勘误快照**，其中「现为 1,422」到 2026-10-30 又更新成 **1,683 份**。**本页保留这些历史对照，不改写原始报表；最新规模/缺口见顶部入口。**
 
 | # | 报表与位置 | 过期原文 | 当前事实 |
 |---:|---|---|---|
