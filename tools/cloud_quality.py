@@ -18,6 +18,7 @@ import sys
 import unicodedata
 from urllib.parse import quote, unquote, urlsplit
 from paper_identity import reference_number_issues
+from gap_content_audit import A1_STUB, question_blocks
 
 SOURCE_REPO = 'zzcc-nb/gongkao-tiku'
 SOURCE_COMMIT = 'ef3c7def82544fb8fe8a4913bebc6024910a6dc0'
@@ -245,6 +246,7 @@ def tracked_paths(root: Path) -> set[str]:
 def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
     tracked=tracked_paths(root)
     rows=[];refs_all=[];hard=[];by_area=collections.defaultdict(collections.Counter)
+    source_stub_positions=0;declared_missing_positions=0;confirmed_missing_positions=0
     for p in papers(root):
         raw=p.read_bytes();t=raw.decode('utf-8-sig');fm=meta(t);rel=p.relative_to(root).as_posix()
         area='国考' if rel.startswith('国考/') else str(fm.get('地区',p.parent.parent.name))
@@ -252,6 +254,18 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
             area='广州'
         subject=str(fm.get('科目',''))
         qids=list(map(int,HEAD_Q.findall(t)))
+        # A missing stem is often represented by a *question block placeholder*,
+        # not by the frontmatter field 缺失原题号 (which is null for the current
+        # Fenbi corpus). Only inspect the stem, not the answer explanation.
+        stub_ids={number for number, body in question_blocks(t)
+                  if A1_STUB in body.split('<details>',1)[0].split('\n## 材料',1)[0]}
+        raw_missing=fm.get('缺失原题号')
+        declared_missing={int(n) for n in raw_missing} if isinstance(raw_missing,list) else set()
+        source_stub_positions+=len(stub_ids)
+        declared_missing_positions+=len(declared_missing)
+        # Deduplicate when the same per-paper question number is recorded in
+        # both source placeholder body and explicit frontmatter metadata.
+        confirmed_missing_positions+=len(stub_ids|declared_missing)
         declared=re.search(r'>\s*(?:行测|申论)\s*·\s*(\d+)\s*题',t)
         count=int(declared.group(1)) if declared else len(qids)
         details=DETAIL.findall(t)
@@ -333,7 +347,9 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
            'current_truncated_questions':sum(r['current_truncated_questions'] or 0 for r in rows),
            'files_with_machine_flags':sum(bool(r['issues']) for r in rows),
            'reference_numbered_papers':sum(r['reference_question_count'] is not None for r in rows),
-           'confirmed_missing_original_questions':sum(len(r['missing_original_numbers'] or []) for r in rows),
+           'confirmed_missing_original_questions':confirmed_missing_positions,
+           'source_placeholder_question_positions':source_stub_positions,
+           'missing_original_numbers_declared':declared_missing_positions,
            'whole_paper_acceptance':'not_established_by_structural_checks'}
     return rows,stats
 
