@@ -4,6 +4,8 @@
 
 本页是 README 对应的**当前缺口入口**，只统计仓库中实际保存的试卷内容及有证据支持的占位，不把「粉笔未收录」误写成「全网找不到」。当前 293 处确认缺项见 [统一逐题 CSV](../reports/GAP-CURRENT-CONFIRMED-20261030.csv)；如何排除误报见 [A2/B2 全文审计](../reports/GAP-A2B2-RECHECK-20261030.md)；A1 历史变更与跨源核查见 [旧缺题对账](../reports/GAP-RECONCILIATION-20261030.md)。
 
+**机器统计口径勘误**：旧 `reports/QUALITY-SUMMARY.json` 的 `confirmed_missing_original_questions = 0` 仅来自未填充的 frontmatter `缺失原题号` 字段，漏掉了正文中 280 个明确占位。现生成器同时识别逐题正文和已声明缺号：当前 `source_placeholder_question_positions = 280`、`missing_original_numbers_declared = 0`、`confirmed_missing_original_questions = 280`。这仍只是已识别占位数量，不代表所有题面已完整验收。
+
 ## 1. 当前规模与缺口
 
 | 对象 | 当前数据 | 证据状态 |
