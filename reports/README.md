@@ -1,6 +1,6 @@
 # 报表索引（reports/）
 
-> 快照：2026-10-27。本目录共 **32 份报表 .md**（根目录 31 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
+> 快照：2026-10-30。本目录共 **33 份报表 .md**（根目录 32 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
 > 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。本页只做入口和状态索引，**不改写、不移动任何报表**。
 
 **状态口径**
@@ -8,6 +8,8 @@
 - **现行**：结论仍适用，可作为当前依据。
 - **历史**：某轮过程记录，数字和范围停留在当时。
 - **已被 X 取代**：后续轮次已有同主题的新结论，旧数字不要再用。
+- **链接口径**：报表里的相对链接按**当时**的卷名生成。卷型改名（如「申论-统考」拆成 A/B 类）或旧卷删除后，
+  旧报表的链接会指向已不存在的路径；这些断链是历史痕迹，不回改报表正文，以本索引和 `catalog/manifest.jsonl` 为准。
 
 **快速入口**
 
@@ -40,8 +42,9 @@
 | [QUALITY-REPAIR-20261012.md](QUALITY-REPAIR-20261012.md) | 10-12 | 第一轮总报告：修改/新增 133 份、补回 113 题、30 份申论导航、23 份申论整卷重整。 | **历史**（R2–R7 接续） |
 | [QUALITY-REPAIR-20261012-R2.md](QUALITY-REPAIR-20261012-R2.md) | 10-12 | 第二轮：8 份早年申论残卷从 11 题恢复到 30 题（净补 19），另修江苏2019A 导航。 | **历史**（R3–R7 接续） |
 | [QUALITY-REPAIR-20261012-R3.md](QUALITY-REPAIR-20261012-R3.md) | 10-12 | 第三轮：23 份申论（国考2016–2023、浙江2016、江苏答案）题序/分值/字数归位；附浙江2016A 排版复读修正。 | **历史**（R4–R7 接续） |
+| [SHENLUN-PANE-RECAPTURE-20261030.md](SHENLUN-PANE-RECAPTURE-20261030.md) | 10-30 | 按同一 sourceId 重采全部材料页签：172 候选 → 实采 169 → 写入 57 份、材料段净增 326、新增图 6 张；91 无变化、23 门槛拒（sourceId 全部相符，源侧改版）；全库申论材料引用缺口 56 → 3 卷 5 处；另三卷限流卷实测为源侧下架 2 + 会员墙 1。 | **现行** |
 
-> 排版与空白类后续操作只有机读凭据：[`LAYOUT-FOLLOWUP-20261012.jsonl`](LAYOUT-FOLLOWUP-20261012.jsonl)（3 行）、[`ROUND3-LAYOUT-FOLLOWUP-20261012.jsonl`](ROUND3-LAYOUT-FOLLOWUP-20261012.jsonl)（1 行）、[`WHITESPACE-FOLLOWUP-20261012.jsonl`](WHITESPACE-FOLLOWUP-20261012.jsonl)（107 行），不单独设报表。
+> 排版与空白类后续操作只有机读凭据：[`LAYOUT-FOLLOWUP-20261012.jsonl`](LAYOUT-FOLLOWUP-20261012.jsonl)（3 行）、[`ROUND3-LAYOUT-FOLLOWUP-20261012.jsonl`](ROUND3-LAYOUT-FOLLOWUP-20261012.jsonl)（1 行）、[`WHITESPACE-FOLLOWUP-20261012.jsonl`](WHITESPACE-FOLLOWUP-20261012.jsonl)（107 行）、[`CHARNORM-20261030.jsonl`](CHARNORM-20261030.jsonl)（195 行 / 165 卷 / 553 处，两遍：① 223 处 PDF 转写残留的部首字 ⺠→民、⻓→长 等 19 种 + 小写形变 ﹢ ﹥ ﹤ ﹑ ﹣ + 兼容汉字 兀→兀；② 330 处零宽字符 ZWSP/ZWNJ/ZWJ/BOM/U+2028 直接删除），不单独设报表。
 
 ## 3. 申论修复与答案补录
 

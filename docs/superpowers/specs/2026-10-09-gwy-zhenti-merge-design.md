@@ -2,7 +2,7 @@
 
 - 日期：2026-10-09
 - 状态：**待复核**（本文件尚未提交）
-- 关联：本仓 `README.md`（定位与目录约定）、[`docs/QUALITY-STANDARD.md`](../QUALITY-STANDARD.md)（入库门槛）、[`docs/SOURCES.md`](../SOURCES.md)（候选来源）
+- 关联：本仓 `README.md`（定位与目录约定）、[`docs/QUALITY-STANDARD.md`](../../QUALITY-STANDARD.md)（入库门槛）、[`docs/SOURCES.md`](../../SOURCES.md)（候选来源）
 
 ## 0. 已定决策（用户裁决）
 
@@ -120,9 +120,9 @@
 2. **题号重建**：模块题数累加得连续原卷题号。
    - 当年**模块顺序表**查得到 → frontmatter 标 `题号口径: 原卷重建`；
    - 查不到 → 保留模块分节 + 模块内题号，标 `题号口径: 模块内序号`。
-3. **答案去泄露**：剥离选项行上的 `✅`；答案与解析移到卷末独立板块（`<details>` 折叠），满足 [`docs/QUALITY-STANDARD.md`](../QUALITY-STANDARD.md)「避免读题时提前泄露答案」。
+3. **答案去泄露**：剥离选项行上的 `✅`；答案与解析移到卷末独立板块（`<details>` 折叠），满足 [`docs/QUALITY-STANDARD.md`](../../QUALITY-STANDARD.md)「避免读题时提前泄露答案」。
 4. **图片重写**：**只复制被引用的图**（非 39k 全量），路径指向 `图片/<卷标识>/{题目,公式}/<hash>.png` 的**相对路径，按该文件所在目录深度计算**（国考卷 2 级 ⇒ `../../`；省考卷 3 级 ⇒ `../../../`），**不写死**。
-5. **frontmatter**：按 [`docs/QUALITY-STANDARD.md`](../QUALITY-STANDARD.md) 契约生成（考试 / 地区 / 年份 / 科目 / 卷型 / 真题性质 / 来源[] / 校验状态）。
+5. **frontmatter**：按 [`docs/QUALITY-STANDARD.md`](../../QUALITY-STANDARD.md) 契约生成（考试 / 地区 / 年份 / 科目 / 卷型 / 真题性质 / 来源[] / 校验状态）。
 
 **卷标识**：确定性 slug，如 `2016-浙江-行测-A类`。
 
@@ -182,7 +182,7 @@
 - **`linfukai186` 是题级 JSON、不是卷**，与 ERRRC 的卷对齐靠匹配规则，**会有误配** —— 故它只用于覆盖对照与补洞提示。
 - **申论整卷完整性是最大缺口**，M3 前不宣称申论覆盖。
 - **模块顺序表与地区别名表**为人工维护，未覆盖的年份/地区**如实降级**，不猜。
-- **公式是位图不是数学表达式**（源里 TeX 已丢），[`docs/QUALITY-STANDARD.md`](../QUALITY-STANDARD.md) 的「规范数学表达」在本批**无法达成**，以位图保真替代。
+- **公式是位图不是数学表达式**（源里 TeX 已丢），[`docs/QUALITY-STANDARD.md`](../../QUALITY-STANDARD.md) 的「规范数学表达」在本批**无法达成**，以位图保真替代。
 - 本仓私有；来源与再分发权限**逐卷登记**，不因 GitHub 公开可访问即视为可转载。
 
 ## 10. 两个待确认（已按建议取值，可推翻）

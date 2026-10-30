@@ -1,13 +1,13 @@
 {
   "areas": {
     "上海": {
-      "files": 82,
-      "申论": 49,
+      "files": 69,
+      "申论": 36,
       "行测": 33
     },
     "云南": {
-      "files": 36,
-      "申论": 21,
+      "files": 35,
+      "申论": 20,
       "行测": 15
     },
     "公安招警和公检法": {
@@ -15,24 +15,24 @@
       "申论": 9
     },
     "内蒙古": {
-      "files": 35,
-      "申论": 20,
+      "files": 32,
+      "申论": 17,
       "行测": 15
     },
     "北京": {
-      "files": 54,
-      "申论": 35,
+      "files": 44,
+      "申论": 25,
       "行测": 19
     },
     "吉林": {
-      "files": 59,
-      "申论": 30,
+      "files": 57,
+      "申论": 28,
       "行测": 29
     },
     "四川": {
-      "files": 89,
-      "申论": 59,
-      "行测": 30
+      "files": 70,
+      "申论": 42,
+      "行测": 28
     },
     "国考": {
       "files": 77,
@@ -40,8 +40,8 @@
       "行测": 36
     },
     "天津": {
-      "files": 59,
-      "申论": 36,
+      "files": 52,
+      "申论": 29,
       "行测": 23
     },
     "宁夏": {
@@ -50,23 +50,23 @@
       "行测": 12
     },
     "安徽": {
-      "files": 67,
-      "申论": 47,
+      "files": 66,
+      "申论": 46,
       "行测": 20
     },
     "山东": {
-      "files": 74,
-      "申论": 58,
+      "files": 61,
+      "申论": 45,
       "行测": 16
     },
     "山西": {
-      "files": 44,
-      "申论": 27,
+      "files": 38,
+      "申论": 21,
       "行测": 17
     },
     "广东": {
-      "files": 80,
-      "申论": 46,
+      "files": 70,
+      "申论": 36,
       "行测": 34
     },
     "广州": {
@@ -75,13 +75,13 @@
       "行测": 12
     },
     "广西": {
-      "files": 42,
-      "申论": 26,
+      "files": 40,
+      "申论": 24,
       "行测": 16
     },
     "新疆": {
-      "files": 46,
-      "申论": 24,
+      "files": 42,
+      "申论": 20,
       "行测": 22
     },
     "新疆兵团": {
@@ -89,58 +89,58 @@
       "申论": 9
     },
     "江苏": {
-      "files": 110,
-      "申论": 57,
+      "files": 94,
+      "申论": 41,
       "行测": 53
     },
     "江西": {
-      "files": 62,
-      "申论": 37,
+      "files": 57,
+      "申论": 32,
       "行测": 25
     },
     "河北": {
-      "files": 58,
-      "申论": 39,
+      "files": 53,
+      "申论": 34,
       "行测": 19
     },
     "河南": {
-      "files": 54,
-      "申论": 33,
+      "files": 49,
+      "申论": 28,
       "行测": 21
     },
     "浙江": {
-      "files": 89,
-      "申论": 47,
+      "files": 83,
+      "申论": 41,
       "行测": 42
     },
     "海南": {
-      "files": 33,
-      "申论": 20,
+      "files": 32,
+      "申论": 19,
       "行测": 13
     },
     "深圳": {
-      "files": 41,
-      "申论": 23,
+      "files": 39,
+      "申论": 21,
       "行测": 18
     },
     "湖北": {
-      "files": 51,
-      "申论": 27,
+      "files": 50,
+      "申论": 26,
       "行测": 24
     },
     "湖南": {
-      "files": 49,
-      "申论": 34,
+      "files": 43,
+      "申论": 28,
       "行测": 15
     },
     "甘肃": {
-      "files": 32,
-      "申论": 18,
+      "files": 30,
+      "申论": 16,
       "行测": 14
     },
     "福建": {
-      "files": 55,
-      "申论": 30,
+      "files": 50,
+      "申论": 25,
       "行测": 25
     },
     "西藏": {
@@ -159,8 +159,8 @@
       "行测": 15
     },
     "重庆": {
-      "files": 73,
-      "申论": 42,
+      "files": 70,
+      "申论": 39,
       "行测": 31
     },
     "陕西": {
@@ -169,41 +169,41 @@
       "行测": 15
     },
     "青海": {
-      "files": 35,
-      "申论": 18,
-      "行测": 17
+      "files": 32,
+      "申论": 16,
+      "行测": 16
     },
     "黑龙江": {
-      "files": 75,
-      "申论": 47,
+      "files": 59,
+      "申论": 31,
       "行测": 28
     }
   },
   "confirmed_missing_original_questions": 0,
   "current_truncated_files": 0,
   "current_truncated_questions": 0,
-  "files_with_machine_flags": 92,
+  "files_with_machine_flags": 70,
   "forbidden_tracked_files": [],
   "hard_integrity_errors": [],
-  "historical_truncated_files": 68,
-  "historical_truncated_questions": 140,
-  "image_decode_check_performed": true,
+  "historical_truncated_files": 2,
+  "historical_truncated_questions": 2,
+  "image_decode_check_performed": false,
   "image_decode_errors": [],
-  "image_references": 19551,
-  "inventory_sha256": "5221993aae2ea83fb76ed93fc2c73279f2449aec7d8a9dd1fa3af5292551f532",
+  "image_references": 19439,
+  "inventory_sha256": "fd32a657edae85da1b2fa1e7ee48a46298e6e5423f0e358b469d833198e16b3b",
   "missing_image_references": 0,
-  "paper_files": 1850,
+  "paper_files": 1683,
   "placeholder_files": 41,
   "placeholder_states": {
     "待核实": 18,
     "资料缺失": 23
   },
-  "reference_numbered_papers": 8,
+  "reference_numbered_papers": 2,
   "schema_version": 1,
   "subjects": {
-    "申论": 1108,
-    "行测": 742
+    "申论": 944,
+    "行测": 739
   },
-  "unique_referenced_images": 19314,
+  "unique_referenced_images": 19246,
   "whole_paper_acceptance": "not_established_by_structural_checks"
 }

@@ -13,6 +13,10 @@ const quote = value => JSON.stringify(value ?? '待核实');
 // 这里只保留真正的标签：已知空元素、闭合标签、以及本片段内存在配对闭合的开标签；
 // 其余一律转成 `&lt;`（渲染出来仍是 `<`，但不会再被当成标签起点）。
 const VOID_TAGS = new Set(['img', 'br', 'hr', 'source', 'input', 'meta', 'link', 'wbr', 'col', 'area', 'base', 'embed', 'param', 'track']);
+// 题库富文本里夹着零宽字符（ZWSP / ZWNJ / ZWJ / BOM）和行分隔符（U+2028/U+2029）。
+// 它们看不见，却会把「忍俊不<u>禁</u>」「足球比赛」这类词拆开，按词搜索和对齐都会漏。
+// NBSP 不在其列——选词填空用它当填空横线，全角空格同理。
+const INVISIBLE = /[\u200b\u200c\u200d\u2028\u2029\ufeff]/gu;
 const TAG_AT = /^<(\/?)([a-zA-Z][a-zA-Z0-9-]*)((?:[^<>"']|"[^"]*"|'[^']*')*)>/u;
 
 export function escapeStrayLt(text) {
@@ -84,7 +88,7 @@ export function markdown(html, assets = [], imagePrefix = 'assets', baseUrl = 'h
     filter: node => node.getAttribute?.('data-latex') !== null,
     replacement: (_content, node) => `$${node.getAttribute('data-latex')}$`,
   });
-  return escapeStrayLt(service.turndown($.html()).trim());
+  return escapeStrayLt(service.turndown($.html()).replace(INVISIBLE, '').trim());
 }
 
 // 申论的 explanationHtml 常把「参考答案说明」和「考点 / 来源 / 视频入口说明」放在一起，
