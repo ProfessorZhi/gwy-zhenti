@@ -11,6 +11,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import csv
 from collections import Counter
 import json
 from pathlib import Path
@@ -109,6 +110,15 @@ def scan(root: Path) -> tuple[list[dict], dict]:
     results = []
     counts = Counter()
     seen = set()
+    decisions_path = root / "reports/GAP-A2-SINGLE-OPTION-REVIEW-20261030.csv"
+    manual_decisions = {}
+    if decisions_path.exists():
+        with decisions_path.open(encoding="utf-8", newline="") as handle:
+            for decision in csv.DictReader(handle):
+                key = (decision["path"], int(decision["question_number"]))
+                if key in manual_decisions:
+                    raise ValueError("Duplicate single-option adjudication: " + str(key))
+                manual_decisions[key] = decision
     for row in inventory:
         path = row["path"]
         paper = root / path
@@ -146,6 +156,19 @@ def scan(root: Path) -> tuple[list[dict], dict]:
             counts["body_present"] += 1
             if subject == "行测":
                 state, data = option_findings(stem)
+                if state == "a2_review_single_option_word":
+                    decision = manual_decisions.get((path, number))
+                    if decision:
+                        if row.get("sha256") != decision["paper_sha256"]:
+                            state = "a2_review_changed_since_adjudication"
+                        elif decision["adjudication"] == "missing_option":
+                            state = "a2_confirmed_single_option_placeholder"
+                            data = {"manual_evidence": decision["evidence"]}
+                        elif decision["adjudication"] == "valid_literal":
+                            state = ""
+                            counts["a2_excluded_valid_literal"] += 1
+                        else:
+                            raise ValueError("Unknown manual option adjudication: " + decision["adjudication"])
                 if state:
                     results.append({"path": path, "question": number, "type": state, "details": data})
                     counts[state] += 1
