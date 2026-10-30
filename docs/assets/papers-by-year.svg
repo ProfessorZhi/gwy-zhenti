@@ -32,7 +32,7 @@
 <rect x="395.0" y="121.46067415730337" width="15.210526315789473" height="168.5" rx="2" fill="#f59e0b"/>
 <text x="394.0" y="306" font-size="10" fill="#64748b" text-anchor="middle">2017</text>
 <rect x="414.2105263157895" y="143.93258426966293" width="15.210526315789473" height="146.1" rx="2" fill="#3b82f6"/>
-<rect x="431.42105263157896" y="93.37078651685394" width="15.210526315789473" height="196.6" rx="2" fill="#f59e0b"/>
+<rect x="431.42105263157896" y="96.17977528089887" width="15.210526315789473" height="193.8" rx="2" fill="#f59e0b"/>
 <text x="430.42105263157896" y="306" font-size="10" fill="#64748b" text-anchor="middle">2018</text>
 <rect x="450.6315789473684" y="118.65168539325842" width="15.210526315789473" height="171.3" rx="2" fill="#3b82f6"/>
 <rect x="467.84210526315786" y="82.13483146067415" width="15.210526315789473" height="207.9" rx="2" fill="#f59e0b"/>
@@ -60,5 +60,5 @@
 <text x="721.7894736842105" y="306" font-size="10" fill="#64748b" text-anchor="middle">2026</text>
 <line x1="48" y1="290" x2="748" y2="290" stroke="#e2e8f0"/>
 <rect x="48" y="332" width="12" height="12" rx="2" fill="#3b82f6"/><text x="65" y="342" font-size="12" fill="#475569">行测 741</text>
-<rect x="158" y="332" width="12" height="12" rx="2" fill="#f59e0b"/><text x="175" y="342" font-size="12" fill="#475569">申论 980</text>
+<rect x="158" y="332" width="12" height="12" rx="2" fill="#f59e0b"/><text x="175" y="342" font-size="12" fill="#475569">申论 979</text>
 </svg>

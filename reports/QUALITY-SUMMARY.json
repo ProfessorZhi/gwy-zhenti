@@ -159,8 +159,8 @@
       "行测": 15
     },
     "重庆": {
-      "files": 72,
-      "申论": 41,
+      "files": 71,
+      "申论": 40,
       "行测": 31
     },
     "陕西": {
@@ -190,9 +190,9 @@
   "image_decode_check_performed": false,
   "image_decode_errors": [],
   "image_references": 19490,
-  "inventory_sha256": "06f6b926064f910db1444feebe891f1acd4b261d36d83dc06374aa38ae26d75e",
+  "inventory_sha256": "9e7fe2037f553043c2d64e23417627bcbd739cac21277f5d206d78cbf52dafca",
   "missing_image_references": 0,
-  "paper_files": 1721,
+  "paper_files": 1720,
   "placeholder_files": 41,
   "placeholder_states": {
     "待核实": 18,
@@ -201,7 +201,7 @@
   "reference_numbered_papers": 8,
   "schema_version": 1,
   "subjects": {
-    "申论": 980,
+    "申论": 979,
     "行测": 741
   },
   "unique_referenced_images": 19294,
