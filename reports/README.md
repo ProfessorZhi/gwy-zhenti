@@ -1,6 +1,6 @@
 # 报表索引（reports/）
 
-> 快照：2026-10-30。本目录共 **35 份报表 .md**（根目录 34 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 3 份逐题 `.csv` 台账、27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
+> 快照：2026-10-30。本目录共 **36 份报表 .md**（根目录 35 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 3 份逐题 `.csv` 台账、27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
 > 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。**当前内容缺口以 [10-30 最新 A1/A2/B2 审计](GAP-A2B2-RECHECK-20261030.md) 为准；A1 历史变更仍见 [原报告](GAP-RECONCILIATION-20261030.md)。** 本页只做入口和状态索引，不改写或移动历史报表。
 
 **状态口径**
@@ -16,7 +16,7 @@
 - **当前缺口**：[A1/A2/B2 现行审计](GAP-A2B2-RECHECK-20261030.md) · [293 处确认缺项总表](GAP-CURRENT-CONFIRMED-20261030.csv) · [历史 291 题位变更](GAP-RECONCILIATION-20261030.md)
 - 看当前规模与规则：[README](../README.md) · [PROGRESS](../docs/PROGRESS.md) · [质量报告](../docs/QUALITY.md)
 - 看还没补齐的题：[PAPER-MISSING-SOURCE-CHECK-20261011.md](PAPER-MISSING-SOURCE-CHECK-20261011.md) · [ROUND3-XINGCE-SOURCE-CHECK-20261012.md](ROUND3-XINGCE-SOURCE-CHECK-20261012.md)
-- 看最新质量告警与图片状态：[QUALITY-AUDIT.md](QUALITY-AUDIT.md) · [IMAGE-AUDIT-20261023.md](IMAGE-AUDIT-20261023.md)
+- 看最新质量告警与图片状态：[10 份试卷实读抽样](QUALITY-SPOTCHECK-20261030.md) · [QUALITY-AUDIT.md](QUALITY-AUDIT.md) · [IMAGE-AUDIT-20261023.md](IMAGE-AUDIT-20261023.md)
 - 看 AI 生成答案的清理结论：[REMOVED-AI-CONTENT-LEGACY-20261022.md](REMOVED-AI-CONTENT-LEGACY-20261022.md)
 
 ---
@@ -75,6 +75,7 @@
 
 | 报表 | 日期 | 一句话说明 | 状态 |
 |---|---|---|---|
+| [QUALITY-SPOTCHECK-20261030.md](QUALITY-SPOTCHECK-20261030.md) | 10-30 | 10卷 / 734题位结构核查、35题定向内容抽查、6道数学复核；福建2017材料区间漏检、国考2026申论第5题材料索引错误、北京2025答案映射风险；浙江2025 A/B/C共用题内部一致性验证。 | **现行（定向样本，不推算全库合格率）** |
 | [QUALITY-AUDIT.md](QUALITY-AUDIT.md) | 10-23（#122 时点） | 规则生成的逐卷告警清单：250 份有告警，当前尾部截断 0；顶部“1291 份”是旧快照。 | **历史**（告警数字与旧分母均待按 1,683 份重算） |
 | [PRIORITY-QUALITY-20261012.md](PRIORITY-QUALITY-20261012.md) | 10-12 | 国考/江苏/浙江逐卷质量台账，已接续到第五轮。 | **现行台账**（范围有限；未覆盖 R6/R7 与 AI 回退） |
 | [REMOVED-AI-CONTENT-20261022.md](REMOVED-AI-CONTENT-20261022.md) | 10-22 | 第一阶段回退 14 卷 25 处 AI 答案 + 6 处解析；缺答位 426→451。 | **历史**（LEGACY 接续） |
