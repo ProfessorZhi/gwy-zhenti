@@ -1,8 +1,8 @@
 {
   "areas": {
     "上海": {
-      "files": 72,
-      "申论": 39,
+      "files": 71,
+      "申论": 38,
       "行测": 33
     },
     "云南": {
@@ -20,13 +20,13 @@
       "行测": 15
     },
     "北京": {
-      "files": 45,
-      "申论": 26,
+      "files": 44,
+      "申论": 25,
       "行测": 19
     },
     "吉林": {
-      "files": 58,
-      "申论": 29,
+      "files": 57,
+      "申论": 28,
       "行测": 29
     },
     "四川": {
@@ -89,8 +89,8 @@
       "申论": 9
     },
     "江苏": {
-      "files": 104,
-      "申论": 51,
+      "files": 103,
+      "申论": 50,
       "行测": 53
     },
     "江西": {
@@ -109,8 +109,8 @@
       "行测": 21
     },
     "浙江": {
-      "files": 87,
-      "申论": 45,
+      "files": 86,
+      "申论": 44,
       "行测": 42
     },
     "海南": {
@@ -185,14 +185,14 @@
   "files_with_machine_flags": 73,
   "forbidden_tracked_files": [],
   "hard_integrity_errors": [],
-  "historical_truncated_files": 21,
-  "historical_truncated_questions": 41,
+  "historical_truncated_files": 18,
+  "historical_truncated_questions": 35,
   "image_decode_check_performed": false,
   "image_decode_errors": [],
   "image_references": 19490,
-  "inventory_sha256": "9e7fe2037f553043c2d64e23417627bcbd739cac21277f5d206d78cbf52dafca",
+  "inventory_sha256": "4886213965e665c504d8e9bccf909e3ee7029e07fae6a013f8e208f156695727",
   "missing_image_references": 0,
-  "paper_files": 1720,
+  "paper_files": 1715,
   "placeholder_files": 41,
   "placeholder_states": {
     "待核实": 18,
@@ -201,7 +201,7 @@
   "reference_numbered_papers": 8,
   "schema_version": 1,
   "subjects": {
-    "申论": 979,
+    "申论": 974,
     "行测": 741
   },
   "unique_referenced_images": 19294,
