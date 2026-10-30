@@ -60,6 +60,21 @@ REMOVED_ARTIFACTS = (
     "tools/tests/test_s5r3_original_answers.py",
     "tools/tests/test_round10_shenzhen.py",
 )
+# 回执里的旧来源卷，在 2026-10-30 的重复卷清理中被删掉（每年、每科目在粉笔侧都有同一份卷）。
+# 回执说的是「这些字节已回退到加 AI 内容之前」，卷本身不在了就无从违反；但消失必须留痕，
+# 所以这里逐条写明被哪份现存卷取代。
+RETIRED_AFTER_RECEIPT = {
+    "省考/上海/2017/申论-行政执法卷.md": "省考/上海/2017/申论-行政执法.md",
+    "省考/上海/2019/申论-行政执法卷.md": "省考/上海/2019/申论-行政执法.md",
+    "省考/上海/2020/申论-行政执法卷.md": "省考/上海/2020/申论-行政执法.md",
+    "省考/四川/2023/申论-省市.md": "省考/四川/2023/申论-上半年省市卷.md",
+    "省考/四川/2024/申论-县乡、普通选调卷.md": "省考/四川/2024/申论-县乡卷.md",
+    "省考/四川/2026/申论-县乡、普通选调卷.md": "省考/四川/2026/申论-县乡卷.md",
+    "省考/福建/2021/申论-乡镇.md": "省考/福建/2021/申论-乡镇卷.md",
+    "省考/福建/2021/申论-县级.md": "省考/福建/2021/申论-县级卷.md",
+    "省考/福建/2023/申论-县乡.md": "省考/福建/2023/申论-县乡卷.md",
+    "省考/福建/2023/申论-省市.md": "省考/福建/2023/申论-省市卷.md",
+}
 
 
 def sha(b):
@@ -93,7 +108,7 @@ class RemovedAIContent(unittest.TestCase):
     def test_delivered_files_carry_no_ai_labels(self):
         # Both receipts claim these papers were reverted to their pre-AI bytes. A label
         # coming back would mean an AI block was re-applied after the revert.
-        for rel in sorted({row["path"] for row in self.rows}):
+        for rel in sorted({row["path"] for row in self.rows} - set(RETIRED_AFTER_RECEIPT)):
             text = (ROOT / rel).read_text(encoding="utf-8")
             for label in AI_LABELS:
                 self.assertNotIn(label, text, rel)
@@ -107,8 +122,12 @@ class RemovedAIContent(unittest.TestCase):
         self.assertEqual(self.disk, set(manifest_paths),
                          "manifest and the .md files under 国考/省考 disagree")
         receipt_paths = {row["path"] for row in self.rows}
-        self.assertLessEqual(receipt_paths, set(manifest_paths),
+        self.assertLessEqual(receipt_paths - set(RETIRED_AFTER_RECEIPT), set(manifest_paths),
                              "a receipt paper is missing from the manifest")
+        # 退休卷只能是「删了旧卷、同卷粉笔版还在」，两层都要成立。
+        for retired, replacement in RETIRED_AFTER_RECEIPT.items():
+            self.assertNotIn(retired, self.disk, retired)
+            self.assertIn(replacement, set(manifest_paths), f"{retired} 无替代卷")
         for rel in sorted(self.disk):
             entry = self.manifest[rel]
             raw = (ROOT / rel).read_bytes()

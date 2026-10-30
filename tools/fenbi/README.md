@@ -171,7 +171,7 @@ SPA 的应用内片段路由（`#/exam/...`）会被保留；凭据片段（`#ac
 
 ## 已验证的行测DOM路线与逐题对齐
 
-[浙江2026行测C实站试跑](../../reports/FENBI-LIVE-TRIAL-20261016.md)已实际取得110题、4组材料和6段题型说明。该页面题面并未通过原JSON监听器取得，因此新增 `fenbi-xingce-v1` DOM适配器。它读取 `.tis-container` 内全部 `app-ti[data-question-key]`，不能只抓 `.questions-single-container`：本次后者仅93题，会漏组合题。
+浙江2026行测C实站试跑已实际取得110题、4组材料和6段题型说明。该页面题面并未通过原JSON监听器取得，因此新增 `fenbi-xingce-v1` DOM适配器。它读取 `.tis-container` 内全部 `app-ti[data-question-key]`，不能只抓 `.questions-single-container`：本次后者仅93题，会漏组合题。
 
 行测专用本地配置可设置 `contentSelector: ".tis-container"`、`domAdapter: "fenbi-xingce-v1"`，再使用 `capture --manual`。先从目录进入已存在的练习，回终端确认采集；本轮直接重开旧题本深链接未取得题面，不因此判登录失效。首次打开新卷可能需要练习初始化，默认只读保护不会自动放行；本次小样仅执行过一次明确限定到该卷的初始化，之后均复用原练习，未作答/交卷。
 

@@ -15,6 +15,10 @@ from dataclasses import dataclass, field
 from . import mdread
 from .model import PaperKey
 
+# 零宽字符与行分隔符：看不见，却会把「忍俊不禁」这类词拆开，按词搜索/对齐都会漏。
+# NBSP 与全角空格不在其列——选词填空用它们当填空横线。
+INVISIBLE = re.compile("[\\u200b\\u200c\\u200d\\u2028\\u2029\\ufeff]")
+
 MODULE_ORDER = (
     "政治理论", "常识判断", "言语理解与表达",
     "数量关系", "判断推理", "资料分析",
@@ -118,7 +122,7 @@ def render_paper(parts, key, *, nature, form, sources, modules, image_map):
         body += ["</details>", ""]
 
     # 合并相邻空行，去首尾空白，行尾统一 LF
-    text = "\n".join(body)
+    text = INVISIBLE.sub("", "\n".join(body))
     text = re.sub(r"\n{4,}", "\n\n\n", text).strip() + "\n"
     return RenderedPaper(text, used, offset, numbering)
 

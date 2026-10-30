@@ -22,7 +22,7 @@ from paper_identity import reference_number_issues
 SOURCE_REPO = 'zzcc-nb/gongkao-tiku'
 SOURCE_COMMIT = 'ef3c7def82544fb8fe8a4913bebc6024910a6dc0'
 PRIORITY = ('浙江','江苏','上海','北京','天津','广东','广州','深圳','福建')
-DATE = '2026-10-12'
+DATE = '2026-10-30'
 FM = re.compile(r'\A---\r?\n(.*?)\r?\n---(?:\r?\n|$)', re.S)
 QBLOCK = re.compile(r'^## 第 (\d+) 题[^\n]*\n(.*?)(?=^## |\Z)', re.M | re.S)
 MAT = re.compile(r'^### 给定材料[^\S\n]*\n(.*?)\n### 作答要求[^\S\n]*\n(.*)', re.M | re.S)
@@ -367,7 +367,8 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
                 else:
                     cells=[]
                     for r in selected:
-                        desc=md_link(r['paper_type'],r['path'])
+                        # 本表写到 docs/ 下，链接要相对 docs/ 指回库根
+                        desc=md_link(r['paper_type'],r['path'],'../')
                         if r['current_truncated_questions']:desc+=' · 材料截断 '+str(r['current_truncated_questions'])+' 题'
                         other=[x for x in r['issues'] if x!='材料尾部截断']
                         if other:desc+=' · '+'；'.join(other)
@@ -401,7 +402,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
               f'| 当前仍有该截断项 | {stats["current_truncated_files"]} 份 / {stats["current_truncated_questions"]} 道受影响题 |',
               f'| 重点区年度科目未收录 | {len(missing)} 格（不等于全部卷型缺口） |','',
               '## 当前入口','',
-              '- [重点地区逐年图文试卷](../COVERAGE-PRIORITY.md)',
+              '- [重点地区逐年图文试卷](COVERAGE-PRIORITY.md)',
               '- [当前质量事项](../reports/QUALITY-AUDIT.md)',
               '- [第二轮：早年申论补全与残余](../reports/QUALITY-REPAIR-20261012-R2.md)',
               '- [第一轮：题序与分卷修复](../reports/QUALITY-REPAIR-20261012.md)',
@@ -466,7 +467,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
         h+=f"最新重新生成：历史 {stats['historical_truncated_files']} 份 / {stats['historical_truncated_questions']} 道受影响题；现仍 {stats['current_truncated_files']} 份 / {stats['current_truncated_questions']} 道受影响题。\n"
         h+='以前的阶段数字和规则记录是历史，不覆盖当前字段。机器检查通过不等于逐字、逐图、逐答案验真。\n'
         h+='有对照题本的卷同时核验 `对照题本题量`、`实有题数` 和 `缺失原题号`；已登记缺号是内容缺陷，不使用压缩连续号隐藏。\n'
-        h+='当前证据：[逐卷清单](catalog/manifest.jsonl)、[告警](reports/QUALITY-AUDIT.md)、[历史尾部补全证据](reports/REPAIRS-20261011.jsonl)、[当前专项修复](reports/QUALITY-REPAIR-20261012.md)。\n'
+        h+='当前证据：[逐卷清单](../catalog/manifest.jsonl)、[告警](../reports/QUALITY-AUDIT.md)、[历史尾部补全证据](../reports/REPAIRS-20261011.jsonl)、[当前专项修复](../reports/QUALITY-REPAIR-20261012.md)。\n'
         t=re.sub(r'\n## GitHub 当前质量清单[\s\S]*\Z','',t)
         quality.write_text(t.rstrip()+'\n'+h,encoding='utf-8')
 
