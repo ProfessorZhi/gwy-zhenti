@@ -43,7 +43,7 @@
 | [QUALITY-REPAIR-20261012-R2.md](QUALITY-REPAIR-20261012-R2.md) | 10-12 | 第二轮：8 份早年申论残卷从 11 题恢复到 30 题（净补 19），另修江苏2019A 导航。 | **历史**（R3–R7 接续） |
 | [QUALITY-REPAIR-20261012-R3.md](QUALITY-REPAIR-20261012-R3.md) | 10-12 | 第三轮：23 份申论（国考2016–2023、浙江2016、江苏答案）题序/分值/字数归位；附浙江2016A 排版复读修正。 | **历史**（R4–R7 接续） |
 
-> 排版与空白类后续操作只有机读凭据：[`LAYOUT-FOLLOWUP-20261012.jsonl`](LAYOUT-FOLLOWUP-20261012.jsonl)（3 行）、[`ROUND3-LAYOUT-FOLLOWUP-20261012.jsonl`](ROUND3-LAYOUT-FOLLOWUP-20261012.jsonl)（1 行）、[`WHITESPACE-FOLLOWUP-20261012.jsonl`](WHITESPACE-FOLLOWUP-20261012.jsonl)（107 行），不单独设报表。
+> 排版与空白类后续操作只有机读凭据：[`LAYOUT-FOLLOWUP-20261012.jsonl`](LAYOUT-FOLLOWUP-20261012.jsonl)（3 行）、[`ROUND3-LAYOUT-FOLLOWUP-20261012.jsonl`](ROUND3-LAYOUT-FOLLOWUP-20261012.jsonl)（1 行）、[`WHITESPACE-FOLLOWUP-20261012.jsonl`](WHITESPACE-FOLLOWUP-20261012.jsonl)（107 行）、[`CHARNORM-20261030.jsonl`](CHARNORM-20261030.jsonl)（63 行 / 36 卷 / 223 处：PDF 转写残留的部首字 ⺠→民、⻓→长 等 19 种，小写形变 ﹢ ﹥ ﹤ ﹑ ﹣，兼容汉字 兀→兀），不单独设报表。
 
 ## 3. 申论修复与答案补录
 
