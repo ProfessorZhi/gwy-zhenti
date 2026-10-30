@@ -1,6 +1,6 @@
 # 报表索引（reports/）
 
-> 快照：2026-10-30。本目录共 **34 份报表 .md**（根目录 33 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
+> 快照：2026-10-30。本目录共 **34 份报表 .md**（根目录 33 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 1 份逐题 `.csv` 台账、27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
 > 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。**缺原题与旧答案数勘误另以 [10-30 逐题报告](GAP-RECONCILIATION-20261030.md) 为准。** 本页只做入口和状态索引，不改写或移动历史报表。
 
 **状态口径**
