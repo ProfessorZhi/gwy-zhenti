@@ -68,6 +68,11 @@ def option_findings(stem: str) -> tuple[str, dict]:
     choices = {}
     for letter, value in pairs:
         choices.setdefault(letter, value)
+    # Judgment questions deliberately have only two valid choices.
+    if set(choices) == {"A", "B"}:
+        values = {re.sub(r"\s+", "", x).rstrip("。.") for x in choices.values()}
+        if values <= {"正确", "错误", "对", "错", "是", "否"}:
+            return "", {}
     abc = [choices.get(letter) for letter in "ABCD"]
     stubs = [letter for letter, value in zip("ABCD", abc)
              if value is not None and (
@@ -120,6 +125,11 @@ def scan(root: Path) -> tuple[list[dict], dict]:
         counts["question_blocks"] += len(blocks)
         if len(blocks) != row.get("question_anchors"):
             counts["papers_anchor_mismatch"] += 1
+        if fm.get("从属佐证版") is True:
+            # Source witness copies are not independent missing-answer debt.
+            counts["dependent_copy_papers"] += 1
+            counts["dependent_copy_question_positions"] += len(blocks)
+            continue
         for number, block in blocks:
             key = (path, number)
             if key in seen:
@@ -139,6 +149,11 @@ def scan(root: Path) -> tuple[list[dict], dict]:
                 if state:
                     results.append({"path": path, "question": number, "type": state, "details": data})
                     counts[state] += 1
+                if state == "a2_confirmed_option_placeholders":
+                    results.append({"path": path, "question": number,
+                                    "type": "answer_mapping_unverified_due_to_missing_options",
+                                    "details": {}})
+                    counts["answer_mapping_unverified_due_to_missing_options"] += 1
                 if DEFAULT_ANSWER.search(block) and (
                     state == "a2_confirmed_option_placeholders" or "缺失" in stem
                 ):
@@ -180,6 +195,14 @@ def main() -> None:
     print("GAP_AUDIT_SUMMARY " + json.dumps(summary, ensure_ascii=False, sort_keys=True))
     for item in results[:args.limit]:
         print("GAP_AUDIT_FINDING " + json.dumps(item, ensure_ascii=False, sort_keys=True))
+    # Complete grouped index for review without flooding the Actions log.
+    by_type = {}
+    for item in results:
+        group = by_type.setdefault(item["type"], {})
+        group.setdefault(item["path"], []).append(item["question"])
+    for kind, group in sorted(by_type.items()):
+        print("GAP_AUDIT_GROUP " + json.dumps(
+            {"type": kind, "papers": group}, ensure_ascii=False, sort_keys=True))
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(
