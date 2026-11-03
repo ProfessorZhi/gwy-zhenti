@@ -1,7 +1,7 @@
 # 工作流设计思路：让粉笔整理一直跑，而不是一直断
 
 写给项目所有者和接手的 agent。前面几轮踩过的坑都总结在这里；新的做法以本文为准，
-`docs/WORKFLOW-GPT-DISPATCH.md` 里与本文冲突的部分（定时巡检、按批派单）不再适用。
+`docs/workflow/WORKFLOW-GPT-DISPATCH.md` 里与本文冲突的部分（定时巡检、按批派单）不再适用。
 
 > **2026-10-30 更新：** 文中的 `~/workspaces/gwy-zhenti-fenbi` 采集工作区（第二份克隆、独立 profile、
 > 测试用 Chrome、shenlun-harvest）已整体拆除，公考工作内容只保留在本仓库；下文的路径按「在原位置重建

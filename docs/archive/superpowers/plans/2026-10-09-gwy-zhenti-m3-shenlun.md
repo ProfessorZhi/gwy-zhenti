@@ -8,7 +8,7 @@
 
 **Tech Stack:** Python 3.12 标准库（`io`/`json`/`os`/`re`/`hashlib`/`shutil`/`unittest`）。
 
-**Spec:** `docs/superpowers/specs/2026-10-09-gwy-zhenti-merge-design.md`（本计划从它论证；冲突以 spec 为准）
+**Spec:** `docs/archive/superpowers/specs/2026-10-09-gwy-zhenti-merge-design.md`（本计划从它论证；冲突以 spec 为准）
 
 ## Global Constraints
 
