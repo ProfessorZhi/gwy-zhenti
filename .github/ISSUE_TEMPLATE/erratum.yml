@@ -1,0 +1,60 @@
+name: 勘误
+description: 报告试卷中的错字、错题、错误答案或解析、缺图、排版问题
+title: "[勘误] 地区 年份 科目 卷型 第 N 题"
+labels: ["勘误"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢指正。每份勘误都会核对后处理，处理结果回复在本 issue 下。
+        一个 issue 可以包含同一份试卷的多处问题。
+  - type: input
+    id: paper
+    attributes:
+      label: 试卷
+      description: 试卷文件的链接或路径
+      placeholder: 例：省考/浙江/2025/行测-A类.md
+    validations:
+      required: true
+  - type: input
+    id: question
+    attributes:
+      label: 题号
+      placeholder: 例：第 22 题；整卷问题填“整卷”
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      multiple: true
+      options:
+        - 题干错误或缺失
+        - 选项错误或缺失
+        - 参考答案错误
+        - 解析错误
+        - 给定材料错误或缺失
+        - 图片缺失或错误
+        - 题号或题序错误
+        - 卷别、年份或地区标注错误
+        - 排版问题
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 现在的内容
+      description: 摘录仓库中的原文，或说明哪里不对
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 应改为
+      description: 正确的内容；不确定时写出你的判断即可
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 依据
+      description: 官方原卷、题本、网页链接、截图等；有依据的勘误处理得更快

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 已知缺口
+    url: https://github.com/ProfessorZhi/gwy-zhenti/blob/main/docs/GAP-STATUS.md
+    about: 提交前可先查看已登记的缺题、缺答案与缺卷
