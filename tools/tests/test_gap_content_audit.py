@@ -80,8 +80,8 @@ class LiveGapLedgerTest(unittest.TestCase):
         self.assertEqual(13, summary["a2_excluded_valid_literal"])
         self.assertEqual(7, len(b2))
         self.assertEqual(6, len(a2))
-        self.assertEqual(90_123, summary["question_blocks"])
-        self.assertEqual(1_683, summary["inventory_papers"])
+        self.assertEqual(89_728, summary["question_blocks"])
+        self.assertEqual(1_674, summary["inventory_papers"])
 
 
 if __name__ == "__main__":

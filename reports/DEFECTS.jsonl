@@ -24,10 +24,6 @@
 {"area": "宁夏", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/宁夏/2026/行测-统考.md", "subject": "行测", "year": "2026"}
 {"area": "山东", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/山东/2022/行测-统考.md", "subject": "行测", "year": "2022"}
 {"area": "山东", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/山东/2025/行测-统考.md", "subject": "行测", "year": "2025"}
-{"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/广东/2016/行测-广州市考.md", "subject": "行测", "year": "2016"}
-{"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "单考区卷", "path": "省考/广东/2017/行测-广州市考-单考区.md", "subject": "行测", "year": "2017"}
-{"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月24日", "path": "省考/广东/2018/行测-广州市考-3月24日.md", "subject": "行测", "year": "2018"}
-{"area": "广州", "current_truncated_questions": null, "issues": ["历史模块拼接题序未获原卷证据核对"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "3月25日", "path": "省考/广东/2018/行测-广州市考-3月25日.md", "subject": "行测", "year": "2018"}
 {"area": "广东", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "县级卷", "path": "省考/广东/2020/行测-县级卷.md", "subject": "行测", "year": "2020"}
 {"area": "广东", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "乡镇卷", "path": "省考/广东/2021/行测-乡镇卷.md", "subject": "行测", "year": "2021"}
 {"area": "广西", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/广西/2022/行测-统考.md", "subject": "行测", "year": "2022"}
