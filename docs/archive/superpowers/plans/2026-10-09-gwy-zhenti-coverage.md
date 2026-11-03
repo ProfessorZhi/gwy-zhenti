@@ -8,7 +8,7 @@
 
 **Tech Stack:** Python 3.12 纯标准库；既有 `tools/gwyzhenti/` 包。
 
-**Spec:** 用户 2026-10-09「覆盖率优先」指令（见 `.superpowers/sdd/2026-10-09-gwy-zhenti-coverage/progress.md` 的逐条摘录）+ 既有 `docs/superpowers/specs/2026-10-09-gwy-zhenti-merge-design.md`。
+**Spec:** 用户 2026-10-09「覆盖率优先」指令（见 `.superpowers/sdd/2026-10-09-gwy-zhenti-coverage/progress.md` 的逐条摘录）+ 既有 `docs/archive/superpowers/specs/2026-10-09-gwy-zhenti-merge-design.md`。
 **侦察证据:** `work/COVERAGE-RECON.md`。
 
 ## Global Constraints

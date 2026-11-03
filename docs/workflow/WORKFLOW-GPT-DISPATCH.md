@@ -1,9 +1,9 @@
 # GPT 指挥手册：多 Claude Code 会话补齐整个题库
 
-> 状态：历史派工手册（2026-10-19 版），保留作流程参考；现行架构见 [ARCHITECTURE.md](ARCHITECTURE.md)，覆盖面见 [COVERAGE.md](COVERAGE.md)。
+> 状态：历史派工手册（2026-10-19 版），保留作流程参考；现行架构见 [ARCHITECTURE.md](../ARCHITECTURE.md)，覆盖面见 [COVERAGE.md](../COVERAGE.md)。
 
 GPT 是总指挥，按本手册给 Dell A6000 上的 Claude Code 会话派任务。
-抓取规则见 `docs/FENBI-FULL-CAPTURE-PLAN.md`；本手册只写**谁做什么、什么顺序、怎么判断该干什么**。
+抓取规则见 `docs/archive/FENBI-FULL-CAPTURE-PLAN.md`；本手册只写**谁做什么、什么顺序、怎么判断该干什么**。
 
 ## 一、目标
 

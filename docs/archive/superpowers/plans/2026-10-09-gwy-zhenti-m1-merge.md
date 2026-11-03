@@ -8,7 +8,7 @@
 
 **Tech Stack:** Python 3.12（**仅标准库**：`dataclasses` / `re` / `json` / `unittest` / `hashlib` / `pathlib`）。不引入第三方依赖 —— D 盘 + 深信服环境下装包是额外风险，且本任务的解析用不到。
 
-**Spec:** `docs/superpowers/specs/2026-10-09-gwy-zhenti-merge-design.md`
+**Spec:** `docs/archive/superpowers/specs/2026-10-09-gwy-zhenti-merge-design.md`
 
 ## Global Constraints
 
@@ -104,7 +104,7 @@ gwy-zhenti/
 │     ├─ test_render.py
 │     ├─ test_export.py
 │     └─ test_gates.py
-└─ docs/superpowers/{specs,plans}/…
+└─ docs/archive/superpowers/{specs,plans}/…
 ```
 
 ---
