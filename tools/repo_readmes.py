@@ -6,7 +6,7 @@
     国考/README.md                  国考逐年卷表
     省考/README.md                  省考地区总览
     省考/<地区>/README.md            该地区逐年卷表
-    README.md 中 <!-- gwy:regions --> 区块   首页地区入口
+    README.md 中 <!-- gwy:badges --> 与 <!-- gwy:regions --> 区块   首页徽章与地区入口
 
 用法：
     python3 -I tools/repo_readmes.py            # 写文件
@@ -21,6 +21,7 @@ import os
 import re
 import sys
 from collections import defaultdict
+from urllib.parse import quote
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -120,12 +121,12 @@ def year_table(rows, base):
 def area_page(area, rows, base, title, back):
     s = stats(rows)
     missing = sum(r['_missing'] for r in rows)
-    note = f'，其中 {missing} 个题位粉笔暂未收录（表中以 <sup>缺N</sup> 标出）' if missing else ''
+    note = f'，其中 {missing} 个题位来源未收录（以 <sup>缺N</sup> 标注）' if missing else ''
     lines = [f'# {title}', '',
              f"> {s['papers']} 份试卷（行测 {s['xingce']} · 申论 {s['shenlun']}）· {s['years'][0]}–{s['years'][1]} · {s['questions']:,} 个题位{note}。",
              '', f'{back}', '', '<!-- 由 tools/repo_readmes.py 生成，勿手改 -->', '']
     lines += year_table(rows, base)
-    lines += ['', '每份试卷：题目在前，**答案与解析**折叠在每题下方，点开即看。图片与试卷同目录存放。', '']
+    lines += ['', '每道题后附折叠的参考答案与解析；题图与试卷存放于同一目录。', '']
     return '\n'.join(lines)
 
 
@@ -143,7 +144,7 @@ def grouped(by_area, href):
 
 
 def province_index(by_area):
-    lines = ['# 省考', '', '> 按地区浏览；点进地区即可看到逐年、逐卷型的试卷表。', '',
+    lines = ['# 省考', '', '> 按地区浏览，进入地区可查看逐年、逐卷型的试卷表。', '',
              '[← 返回首页](../README.md) · [国考](../国考/README.md) · [全部试卷索引](../catalog/INDEX.md)', '',
              '<!-- 由 tools/repo_readmes.py 生成，勿手改 -->', '']
     lines += grouped({a: v for a, v in by_area.items() if a != '国考'}, lambda a: link(a) + '/')
@@ -161,6 +162,21 @@ def regions_block(by_area):
     lines += grouped({a: v for a, v in by_area.items() if a != '国考'}, lambda a: '省考/' + link(a) + '/')
     lines.append('<!-- gwy:regions:end -->')
     return '\n'.join(lines)
+
+
+def shield(label, message, color, href, style='for-the-badge'):
+    enc = lambda x: quote(str(x).replace('-', '--').replace('_', '__'), safe='')
+    return f'<a href="{href}"><img alt="{label} {message}" src="https://img.shields.io/badge/{enc(label)}-{enc(message)}-{color}?style={style}"></a>'
+
+
+def badges_block(rows):
+    s = stats(rows)
+    items = [shield('行测', f"{s['xingce']} 份", '2563eb', 'catalog/INDEX.md'),
+             shield('申论', f"{s['shenlun']} 份", 'd97706', 'catalog/INDEX.md'),
+             shield('格式', 'Markdown', '0f766e', 'docs/SCHEMA.md'),
+             shield('题图', '本地存储', '475569', 'docs/SCHEMA.md'),
+             shield('勘误', '欢迎提交', '7c3aed', 'https://github.com/ProfessorZhi/gwy-zhenti/issues/new?template=erratum.yml')]
+    return '\n'.join(['<!-- gwy:badges:start -->', '<p align="center">', *('  ' + x for x in items), '</p>', '<!-- gwy:badges:end -->'])
 
 
 def outputs(rows):
@@ -181,9 +197,10 @@ def outputs(rows):
                                               '[← 省考总览](../README.md) · [返回首页](../../README.md)')
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
     block = regions_block(by_area)
-    pattern = re.compile(r'<!-- gwy:regions:start -->.*?<!-- gwy:regions:end -->', re.S)
-    if pattern.search(readme):
-        files[ROOT / 'README.md'] = pattern.sub(lambda _: block, readme)
+    for name, content in (('regions', block), ('badges', badges_block(rows))):
+        pattern = re.compile(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', re.S)
+        readme = pattern.sub(lambda _: content, readme)
+    files[ROOT / 'README.md'] = readme
     return files
 
 

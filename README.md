@@ -2,26 +2,77 @@
   <img src="docs/assets/banner.svg" alt="全国公务员考试真题库：国考 · 省考，行测 · 申论" width="100%">
 </p>
 
+<!-- gwy:badges:start -->
 <p align="center">
-  本仓库将国考、省考的<b>行测</b>与<b>申论</b>真题整理为 Markdown，每份试卷一个文件，<br>
-  包含题干、选项、给定材料、题图、参考答案与解析；可在线阅读、离线使用，也便于程序与 AI 处理。
+  <a href="catalog/INDEX.md"><img alt="行测 735 份" src="https://img.shields.io/badge/%E8%A1%8C%E6%B5%8B-735%20%E4%BB%BD-2563eb?style=for-the-badge"></a>
+  <a href="catalog/INDEX.md"><img alt="申论 939 份" src="https://img.shields.io/badge/%E7%94%B3%E8%AE%BA-939%20%E4%BB%BD-d97706?style=for-the-badge"></a>
+  <a href="docs/SCHEMA.md"><img alt="格式 Markdown" src="https://img.shields.io/badge/%E6%A0%BC%E5%BC%8F-Markdown-0f766e?style=for-the-badge"></a>
+  <a href="docs/SCHEMA.md"><img alt="题图 本地存储" src="https://img.shields.io/badge/%E9%A2%98%E5%9B%BE-%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8-475569?style=for-the-badge"></a>
+  <a href="https://github.com/ProfessorZhi/gwy-zhenti/issues/new?template=erratum.yml"><img alt="勘误 欢迎提交" src="https://img.shields.io/badge/%E5%8B%98%E8%AF%AF-%E6%AC%A2%E8%BF%8E%E6%8F%90%E4%BA%A4-7c3aed?style=for-the-badge"></a>
+</p>
+<!-- gwy:badges:end -->
+
+<p align="center">
+  国家公务员考试与各省公务员考试<b>行测</b>、<b>申论</b>真题的 Markdown 整理本。<br>
+  每份试卷一个文件，题干、选项、给定材料、题图、参考答案与解析完整收录，支持在线阅读、离线使用与程序处理。
 </p>
 
 <p align="center">
-  <a href="国考/README.md">国考</a> ·
-  <a href="省考/README.md">省考</a> ·
-  <a href="catalog/INDEX.md">全部试卷索引</a> ·
-  <a href="docs/COVERAGE.md">覆盖报告</a> ·
-  <a href="docs/GAP-STATUS.md">已知缺口</a> ·
-  <a href="docs/README.md">文档</a> ·
-  <a href="tools/README.md">工具</a>
+  <a href="国考/README.md"><b>国考</b></a> &nbsp;·&nbsp;
+  <a href="省考/README.md"><b>省考</b></a> &nbsp;·&nbsp;
+  <a href="catalog/INDEX.md">试卷索引</a> &nbsp;·&nbsp;
+  <a href="docs/COVERAGE.md">收录统计</a> &nbsp;·&nbsp;
+  <a href="https://github.com/ProfessorZhi/gwy-zhenti/issues/148">缺口跟踪</a> &nbsp;·&nbsp;
+  <a href="#勘误与反馈">勘误</a> &nbsp;·&nbsp;
+  <a href="docs/README.md">文档</a>
 </p>
 
----
+<br>
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>📄 整卷收录</h3>
+      题干、选项、给定材料、题图、参考答案与解析收录于同一文件，按地区、年份、卷型归档。
+    </td>
+    <td width="33%" valign="top">
+      <h3>🧩 答案随题折叠</h3>
+      每道题后附折叠的参考答案与解析，作答后展开；资料分析、申论材料置于对应题目之前。
+    </td>
+    <td width="33%" valign="top">
+      <h3>🔎 来源可追溯</h3>
+      文件头标注来源链接、源试卷编号与采集时间；缺失内容保留题位并明确标注。
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h3>🖼️ 离线可用</h3>
+      题图与试卷存放于同一目录，以相对路径引用，克隆后无需联网即可完整显示。
+    </td>
+    <td valign="top">
+      <h3>🗂️ 结构化清单</h3>
+      <a href="catalog/manifest.jsonl"><code>manifest.jsonl</code></a> 逐卷记录题量、图片数与 SHA-256，便于检索、统计与校验。
+    </td>
+    <td valign="top">
+      <h3>🤝 开放勘误</h3>
+      欢迎任何读者指出错误或补充来源，勘误经核对后更新，处理结果公开记录。
+    </td>
+  </tr>
+</table>
+
+## 目录
+
+- [浏览试卷](#浏览试卷)
+- [试卷格式](#试卷格式)
+- [收录情况](#收录情况)
+- [已知缺口](#已知缺口)
+- [勘误与反馈](#勘误与反馈)
+- [仓库结构](#仓库结构)
+- [版权与免责声明](#版权与免责声明)
 
 ## 浏览试卷
 
-按地区进入，即可看到该地区逐年、逐卷型的试卷表；标有 <sup>缺N</sup> 的试卷有 N 道题粉笔暂未收录。
+选择地区后进入该地区的逐年卷表。标有 <sup>缺N</sup> 的试卷含 N 个来源未收录的题位。
 
 <!-- gwy:regions:start -->
 **[国考](国考/README.md)** 77 份 ｜ **[省考总览](省考/README.md)** ｜ [全部试卷索引](catalog/INDEX.md)
@@ -39,7 +90,7 @@
 
 ## 试卷格式
 
-每道题后面紧跟一个默认折叠的答案块。以下为 [国考 2025 行测地市级](国考/2025/行测-地市级.md) 第 22 题（解析有删节）：
+以 [国考 2025 行测地市级](国考/2025/行测-地市级.md) 第 22 题为例（解析有删节）：
 
 > ### 第 22 题
 >
@@ -61,93 +112,94 @@
 >
 > **解析**
 >
-> 本题考查法律常识。……C项错误，根据《中华人民共和国行政复议法》第十二条第三项规定：“下列事项不属于行政复议范围：（三）行政机关对行政机关工作人员的奖惩、任免等决定。”针对公务员丙作出的降职处理决定，不在行政复议范围之内。……本题为选非题，故正确答案为C。
+> 本题考查法律常识。……根据《中华人民共和国行政复议法》第十二条第三项规定：“下列事项不属于行政复议范围：（三）行政机关对行政机关工作人员的奖惩、任免等决定。”针对公务员丙作出的降职处理决定，不在行政复议范围之内。……本题为选非题，故正确答案为C。
 >
 > </details>
 
-每份试卷开头有题量与题型分布；资料分析、篇章阅读的材料放在对应题组之前，申论的给定材料放在全卷之前；题图与试卷放在同一目录，离线可显示；文件头注明来源链接与采集时间。
+文件结构与字段说明见 [文档格式](docs/SCHEMA.md)。
 
 ## 收录情况
 
 <p align="center">
-  <img src="docs/assets/papers-by-year.svg" alt="逐年入库的行测、申论试卷数" width="760">
+  <img src="docs/assets/papers-by-year.svg" alt="逐年收录的行测、申论试卷数" width="760">
 </p>
 
 <details>
-<summary><b>展开：地区 × 年份覆盖热力图</b></summary>
+<summary><b>地区 × 年份覆盖热力图</b></summary>
 <br>
 <p align="center">
   <img src="docs/assets/coverage-heatmap.svg" alt="各地区各年份的试卷数热力图" width="100%">
 </p>
 </details>
 
-粉笔题库目录中 2016–2026 年的国考、省考行测与申论已全部入库；浙江收录粉笔上的全部年份；2008–2015 年的试卷持续回补中。逐地区、逐年份的统计见 [覆盖报告](docs/COVERAGE.md)。
-
-## 目录结构
-
-| 路径 | 内容 |
+| 范围 | 收录状态 |
 | --- | --- |
-| `国考/<年份>/<科目>-<卷型>.md` | 国考整卷：副省级 · 地市级 · 行政执法 |
-| `省考/<地区>/<年份>/<科目>-<卷型>.md` | 省考整卷：A类 · B类 · 统考 · 县乡卷 · 选调生 … |
-| `…/assets-fenbi-<试卷ID>/` | 该卷的题图，和试卷放在同一目录 |
-| [`图片/`](图片/) | 早期整编试卷的题图 |
-| [`catalog/`](catalog/) | [全部试卷索引](catalog/INDEX.md) · 逐卷清单 `manifest.jsonl`（题数、图片数、sha256） |
-| [`docs/`](docs/) | 说明文档：覆盖、缺口、格式、质量标准，以及历史与协作记录 |
-| [`reports/`](reports/) | 历次审计与修复记录 |
-| [`资料缺失/`](资料缺失/) | 已知缺卷的占位索引（不是试卷） |
-| [`tools/`](tools/) | 统计、导航、质量检查与采集脚本 |
+| 2016–2026 年国考、省考 | 粉笔题库目录所列行测、申论试卷已全部收录 |
+| 浙江 | 收录粉笔题库所列全部年份 |
+| 2008–2015 年其他地区 | 部分收录 |
 
-广州市考、深圳市考是独立的考试序列，和广东省考并列，不互相替代。
+分地区、分年份的统计见 [收录统计](docs/COVERAGE.md)。
 
 ## 已知缺口
 
-| 类别 | 数量 | 跟踪 |
-| --- | ---: | --- |
-| 缺原题题干 | 280 题 · 60 卷 | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) · [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
-| 缺选项 / 答案对应待核 | 6 题 / 20 题 | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
-| 申论缺参考答案 | 7 题 · 3 卷 | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
-| 申论给定材料缺失 | 3 卷 | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
-| 整卷缺失 | 23 个卷次 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
-| 考试身份待核（西藏） | 18 个卷次 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
+| 类别 | 数量 | 处理方式 | 跟踪 |
+| --- | ---: | --- | :---: |
+| 原题题干缺失 | 280 题 · 60 卷 | 保留题位，标注“粉笔暂未收录本题” | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
+| 选项缺失 | 6 题 | 保留现有选项，标注缺失项 | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
+| 答案对应关系待核 | 20 题 | 卷首注明待核题号 | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
+| 申论参考答案缺失 | 7 题 · 3 卷 | 标注“来源未提供” | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
+| 申论给定材料缺失 | 3 卷 | 保留现有材料 | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
+| 整卷未收录 | 23 个卷次 | 在 [资料缺失](资料缺失/README.md) 登记占位 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
+| 考试身份待核 | 18 个卷次 | 在 [资料缺失](资料缺失/README.md) 登记占位 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
 
-缺口均来自来源本身未收录，卷内保留题位并标注“粉笔暂未收录本题”或“来源未提供”。汇总见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)，判定依据见 [缺口总账](docs/GAP-STATUS.md)。
+缺失内容不以其他卷型、默认答案或生成内容替代。汇总见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)，判定依据见 [缺口总账](docs/GAP-STATUS.md)。
 
 ## 勘误与反馈
 
-欢迎所有人指出错误：错字、错题、答案或解析有误、缺图、卷别标错、排版问题，都可以提交。
+本仓库欢迎所有读者提出勘误。错字、错题、参考答案或解析有误、题图缺失、卷别标注错误、排版问题，均可提交。
 
-- **提交勘误**：[使用勘误模板新建 issue](https://github.com/ProfessorZhi/gwy-zhenti/issues/new?template=erratum.yml)，填写试卷、题号、问题与依据。
-- **补充缺失内容**：手里有缺题、缺答案或缺卷的原卷或可靠来源，请在对应的缺口 issue 下留言。
-- **直接修改**：熟悉 Git 的话，也可以修改试卷 Markdown 后提交 Pull Request。
-
-每份勘误都会核对后处理，结果回复在原 issue 下。
-
-## 文档与工具
-
-| 入口 | 内容 |
+| 方式 | 说明 |
 | --- | --- |
-| [文档](docs/README.md) | 覆盖报告、缺口总账、文档格式、数据来源、质量标准、架构说明 |
-| [工具](tools/README.md) | 每个脚本的用途与用法：统计导航、质量检查、排版、采集落盘、历史修复 |
-| [报表](reports/README.md) | 历次审计、修复与查源报告，逐份标明现行或历史 |
-| [试卷索引](catalog/INDEX.md) | 按科目、地区、年份列出全部试卷 |
+| [提交勘误](https://github.com/ProfessorZhi/gwy-zhenti/issues/new?template=erratum.yml) | 按模板填写试卷、题号、问题类型与依据 |
+| 补充来源 | 持有缺失题目、答案或整卷的可靠来源，可在对应的缺口 issue 下提供 |
+| 提交修改 | 直接修改试卷 Markdown 并发起 Pull Request |
 
-## 说明
+勘误经核对后更新，处理结果在原 issue 中回复。
 
-- 内容来自粉笔题库整理版（多为考生回忆版）及少量其他公开题本，未经官方认证；参考答案与解析来自第三方题库，不代表官方答案。
-- 仅收国考、省考真题，不收模考、预测卷与讲义；缺失内容不以其他卷型、默认答案或 AI 生成内容填补。
-- 第三方题本、答案解析与图片的转载许可尚未逐项核实，详见 [数据来源与许可](docs/SOURCES.md)。
+## 仓库结构
+
+| 路径 | 内容 |
+| --- | --- |
+| `国考/<年份>/<科目>-<卷型>.md` | 国考试卷：副省级、地市级、行政执法 |
+| `省考/<地区>/<年份>/<科目>-<卷型>.md` | 省考试卷：A类、B类、统考、县乡卷、选调生等 |
+| `…/assets-fenbi-<试卷编号>/` | 该卷题图 |
+| [`图片/`](图片/) | 早期整理试卷的题图 |
+| [`catalog/`](catalog/) | [试卷索引](catalog/INDEX.md)与逐卷清单 `manifest.jsonl` |
+| [`docs/`](docs/README.md) | 收录统计、缺口总账、文档格式、数据来源、质量标准 |
+| [`reports/`](reports/README.md) | 审计、修复与查源记录 |
+| [`资料缺失/`](资料缺失/README.md) | 未收录卷次的占位索引 |
+| [`tools/`](tools/README.md) | 统计、导航生成、质量检查与采集脚本 |
+
+广州市考、深圳市考为独立考试序列，与广东省考分列。
 
 <details>
-<summary><b>维护：更新清单、索引与导航</b></summary>
+<summary><b>维护命令</b></summary>
 
 ```bash
 python3 -I tools/refresh_manifest.py --write                # 刷新清单的字节数与 sha256
-python3 -I tools/catalog_index.py --out catalog/INDEX.md     # 全部试卷索引
+python3 -I tools/catalog_index.py --out catalog/INDEX.md     # 试卷索引
 python3 -I tools/coverage_stats.py --svg docs/assets        # 逐年柱状图、覆盖热力图
-python3 -I tools/repo_readmes.py                            # 首页横幅、地区入口、国考/省考/各地区导航页
+python3 -I tools/repo_readmes.py                            # 横幅、徽章、地区入口与各目录导航页
 python3 tools/cloud_quality.py --check --verify-images      # 结构与图片引用检查
 ```
 
-采集与落盘流程见 [tools/fenbi/README.md](tools/fenbi/README.md)，验收标准见 [归档与质量标准](docs/QUALITY-STANDARD.md)。更新统计须注明 Git 基线与去重规则；补录原题须有同卷同题的来源证据。
+采集与入库流程见 [tools/fenbi/README.md](tools/fenbi/README.md)，入库标准见 [归档与质量标准](docs/QUALITY-STANDARD.md)。
 
 </details>
+
+## 版权与免责声明
+
+- 试卷内容主要整理自粉笔题库（多为考生回忆版）及其他公开题本，非官方发布版本；参考答案与解析来自第三方题库，不代表官方答案。
+- 本仓库仅供学习与研究使用，不得用于商业用途。
+- 试题、答案、解析及图片的著作权归原权利人所有。权利人如认为相关内容侵犯其合法权益，请通过 [issue](https://github.com/ProfessorZhi/gwy-zhenti/issues/new) 联系，核实后将及时处理。
+- 来源说明见 [数据来源与许可](docs/SOURCES.md)。
