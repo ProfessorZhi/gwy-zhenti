@@ -91,8 +91,10 @@ class RemovedAIContent(unittest.TestCase):
             if line.strip():
                 row = json.loads(line)
                 cls.manifest[row["path"]] = row
+        # 只有 行测-*/申论-* 是试卷；国考/、省考/ 下的 README.md 是目录导航页（tools/repo_readmes.py 生成）。
         cls.disk = {p.relative_to(ROOT).as_posix()
-                    for top in CORPUS_ROOTS for p in (ROOT / top).rglob("*.md")}
+                    for top in CORPUS_ROOTS for p in (ROOT / top).rglob("*.md")
+                    if p.name.startswith(("行测-", "申论-"))}
 
     def test_no_ai_labels_remain_in_corpus(self):
         found = []

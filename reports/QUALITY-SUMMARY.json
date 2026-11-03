@@ -70,9 +70,9 @@
       "行测": 34
     },
     "广州": {
-      "files": 25,
-      "申论": 13,
-      "行测": 12
+      "files": 16,
+      "申论": 8,
+      "行测": 8
     },
     "广西": {
       "files": 40,
@@ -182,18 +182,18 @@
   "confirmed_missing_original_questions": 280,
   "current_truncated_files": 0,
   "current_truncated_questions": 0,
-  "files_with_machine_flags": 70,
+  "files_with_machine_flags": 66,
   "forbidden_tracked_files": [],
   "hard_integrity_errors": [],
   "historical_truncated_files": 2,
   "historical_truncated_questions": 2,
-  "image_decode_check_performed": false,
+  "image_decode_check_performed": true,
   "image_decode_errors": [],
-  "image_references": 19439,
-  "inventory_sha256": "fd32a657edae85da1b2fa1e7ee48a46298e6e5423f0e358b469d833198e16b3b",
+  "image_references": 19345,
+  "inventory_sha256": "105694f6bdcb2b4e122abd8ce82e97b2f2a594ad1cefbde09a2fba4cfdc6f869",
   "missing_image_references": 0,
   "missing_original_numbers_declared": 0,
-  "paper_files": 1683,
+  "paper_files": 1674,
   "placeholder_files": 41,
   "placeholder_states": {
     "待核实": 18,
@@ -203,9 +203,9 @@
   "schema_version": 1,
   "source_placeholder_question_positions": 280,
   "subjects": {
-    "申论": 944,
-    "行测": 739
+    "申论": 939,
+    "行测": 735
   },
-  "unique_referenced_images": 19246,
+  "unique_referenced_images": 19152,
   "whole_paper_acceptance": "not_established_by_structural_checks"
 }
