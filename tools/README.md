@@ -26,7 +26,7 @@ python3 tools/cloud_quality.py --check --verify-images     # 结构与图片引�
 | [`refresh_manifest.py`](refresh_manifest.py) | 按试卷文件刷新清单的 `bytes` 与 `sha256` | — |
 | [`catalog_index.py`](catalog_index.py) | 生成 [全部试卷索引](../catalog/INDEX.md) | `--out`、`--check` |
 | [`coverage_stats.py`](coverage_stats.py) | 统计地区 × 年份覆盖，生成 `docs/assets` 下两张 SVG | `--svg`、`--json` |
-| [`gap_report.py`](gap_report.py) | 生成 [缺口总账](../docs/GAP-STATUS.md) 与首页缺口表：缺卷来自 `catalog/missing-papers.jsonl`，局部缺口从试卷正文逐题识别 | `--check` |
+| [`gap_report.py`](gap_report.py) | 生成 [缺口总账](../docs/GAP-STATUS.md) 与首页缺口表：生成槽位台账 `catalog/exam-slots.jsonl`（全部应有试卷，未收录部分维护于 `catalog/uncollected-slots.jsonl`），局部缺口从试卷正文逐题识别 | `--check` |
 | [`repo_readmes.py`](repo_readmes.py) | 生成首页横幅、首页地区入口、`国考/`、`省考/` 与各地区 README | `--check` |
 
 ### 质量检查

@@ -8,7 +8,7 @@
 
 ## 补充来源
 
-已登记的缺口见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)。持有缺失题目、答案或整卷的可靠来源，请在对应的缺口 issue 下提供链接或文件说明。补录只采用同年、同地区、同科目、同卷型且题序一致的来源。
+试卷来源以粉笔为主，华图与网络检索补充。已登记的缺口见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)。持有缺失题目、答案或整卷的可靠来源，请在对应的缺口 issue 下提供链接或文件说明。补录只采用同年、同地区、同科目、同卷型且题序一致的来源，并在文件头 `来源清单` 中登记。新发现的应有试卷（缺卷）请登记到 `catalog/uncollected-slots.jsonl`，写明依据。
 
 ## 提交修改
 
