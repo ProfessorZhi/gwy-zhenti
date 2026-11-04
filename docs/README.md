@@ -34,6 +34,7 @@
 
 | 文档 | 内容 |
 | --- | --- |
+| [任务卡：华图补题](workflow/HUATU-FILL.md) | 用华图同卷数据补全粉笔未收录的题目，含缓存格式与回报格式 |
 | [粉笔真题落盘总计划](workflow/ZHENTI-MASTER-PLAN.md) | 2026-10-21 起的落盘规则、分工与任务卡 |
 | [工作流设计思路](workflow/WORKFLOW-THINKING.md) | 采集服务持续运行的设计 |
 | [GPT 指挥手册](workflow/WORKFLOW-GPT-DISPATCH.md) | 多会话协作的派工方式（部分内容已被设计思路取代） |
