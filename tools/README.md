@@ -41,6 +41,12 @@ python3 tools/cloud_quality.py --check --verify-images     # 结构与图片引�
 | [`verify_image_pixels.py`](verify_image_pixels.py) | 完整解码每张被引用图片的像素（需 Pillow） |
 | [`paper_identity.py`](paper_identity.py) | 题号连续性与对照题量判断（供其他检查调用） |
 
+### 补录
+
+| 脚本 | 作用 |
+| --- | --- |
+| [`huatu_fill.py`](huatu_fill.py) | 用华图同卷缓存补入粉笔未收录的题目与材料：整卷锚点与邻题夹逼对齐，默认只出报告，`--write` 写入并更新来源清单；用法见 [任务卡](../docs/workflow/HUATU-FILL.md) |
+
 ### 排版
 
 | 脚本 | 作用 |
