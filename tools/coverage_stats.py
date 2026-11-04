@@ -5,6 +5,7 @@
     python3 tools/coverage_stats.py                     # 终端摘要
     python3 tools/coverage_stats.py --json stats.json   # 额外输出逐卷数据
     python3 tools/coverage_stats.py --svg docs/assets   # 重写覆盖热力图与逐年柱状图
+    python3 tools/coverage_stats.py --update-doc docs/COVERAGE.md   # 同步覆盖报告中的统计表
 """
 
 import argparse
@@ -190,10 +191,54 @@ def year_svg(stats):
     return '\n'.join(out)
 
 
+def update_doc(path, stats):
+    """同步 docs/COVERAGE.md 中由清单决定的表格：总量、分层、逐年、分地区。正文说明不改。"""
+    f = lambda n: f'{n:,}'
+    text = open(path, encoding='utf-8').read()
+    sub = lambda pattern, repl: re.sub(pattern, repl, text, count=1, flags=re.M)
+    subj = stats['subject']
+    for key, value in (('试卷文件', stats['files']), ('槽位', stats['slots']), ('题目', stats['questions']), ('图片引用', stats['images'])):
+        text = sub(rf'^\| {key} \| [\d,]+ \|$', f'| {key} | {f(value)} |')
+    text = sub(r'^\| 行测 / 申论 \| .* \|$', f"| 行测 / 申论 | {subj['行测']} / {subj['申论']} |")
+    text = sub(r'^\| 多层槽位（同槽多份） \| [\d,]+ \|$', f"| 多层槽位（同槽多份） | {stats['multi']} |")
+
+    def tier_row(m):
+        cells = m.group(0).strip('|').split('|')
+        d = stats['tiers'][cells[0].strip()]
+        cells[2], cells[3], cells[-1] = f" {f(d['slots'])} ", f" {f(d['files'])} ", f" {f(d['questions'])} "
+        return '|' + '|'.join(cells) + '|'
+    text = re.sub(r'^\| L[123] \|.*\|$', tier_row, text, flags=re.M)
+    text = sub(r'^(\| \*\*合计\*\* \| *\| )\*\*[\d,]+\*\* \| \*\*[\d,]+\*\* \| \*\*[\d,]+\*\* \|$',
+               rf"\g<1>**{f(stats['slots'])}** | **{f(stats['files'])}** | **{f(stats['questions'])}** |")
+    for year, d in stats['by_year'].items():
+        text = sub(rf'^\| {year} \| \d+ \| \d+ \| \d+ \|$', f"| {year} | {d['行测']} | {d['申论']} | {d['行测'] + d['申论']} |")
+    text = sub(r'^\| \*\*合计\*\* \| \*\*\d+\*\* \| \*\*\d+\*\* \| \*\*[\d,]+\*\* \|$',
+               f"| **合计** | **{subj['行测']}** | **{subj['申论']}** | **{f(stats['files'])}** |")
+    lines = text.split('\n')
+    start = lines.index('## 分地区')
+    idx, names = [], []
+    for i in range(start, len(lines)):
+        if i > start and lines[i].startswith('## '):
+            break
+        cells = [c.strip() for c in lines[i].strip('|').split('|')]
+        if len(cells) == 7 and re.fullmatch(r'[\d,]+', cells[2]):
+            idx.append(i); names.append((cells[0], cells[1]))
+    rows = []
+    for area, tier_label in names:
+        d = stats['by_area'].get(area)
+        if d:
+            rows.append((-d['files'], area, f"| {area} | {tier_label} | {d['files']} | {d['xingce']} | {d['shenlun']} | {f(d['questions'])} | {f(d['img'] if 'img' in d else d['images'])} |"))
+    rows.sort()
+    for i, (_, _, line) in zip(idx, rows):
+        lines[i] = line
+    open(path, 'w', encoding='utf-8').write('\n'.join(lines))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--json', help='把逐卷统计数据写到该路径')
     parser.add_argument('--svg', help='把 coverage-heatmap.svg / papers-by-year.svg 写到该目录')
+    parser.add_argument('--update-doc', help='同步该覆盖报告（如 docs/COVERAGE.md）中的统计表')
     args = parser.parse_args()
     stats = summarize(load_rows())
     print(f'文件 {stats["files"]} · 槽位 {stats["slots"]} · 地区 {stats["areas"]} · '
@@ -211,6 +256,9 @@ def main():
             with open(os.path.join(args.svg, name), 'w', encoding='utf-8') as handle:
                 handle.write(content + '\n')
             print('已写入', os.path.join(args.svg, name))
+    if args.update_doc:
+        update_doc(args.update_doc, stats)
+        print('已同步', args.update_doc)
     return 0
 
 

@@ -300,7 +300,7 @@ def dashboard_svg(rows, s, cov):
 
 
 # 试卷健康等级：每份试卷按最严重的缺口定级。
-GRADES = [('完整', '#34d399'), ('答案待补', '#fde047'), ('缺选项或材料', '#fb923c'), ('缺题干或题目', '#ef4444')]
+GRADES = [('完整', '#34d399'), ('答案待补', '#fcd34d'), ('缺选项或材料', '#fb923c'), ('缺题干或题目', '#f43f5e')]
 MISSING_COLOR = '#334155'
 
 
@@ -342,17 +342,17 @@ def health_table(rows, grade, papers):
     return L
 
 
-PENDING_COLOR = '#a78bfa'
-NO_EXAM_COLOR = '#ffffff'
-UNCOUNTED_COLOR = '#f1f5f9'
+PENDING_COLOR = '#c4b5fd'
+NO_EXAM_COLOR = '#f1f5f9'
+UNCOUNTED_COLOR = '#f8fafc'
 UNREGISTERED_COLOR = '#fecdd3'
 SUBJECTS = ('行测', '申论')
+FOCUS = ['国考', '浙江', '江苏', '上海', '北京', '天津', '广东', '广州', '深圳', '福建']
+SPECIAL = ['新疆兵团', '公安招警和公检法']
 
 
 def series(r):
-    """试卷所属的地图行：新疆目录下的兵团卷归入「新疆兵团」。"""
-    if r['area'] == '新疆' and '兵团' in (r.get('paper_type') or ''):
-        return '新疆兵团'
+    """试卷所属的地图行，即地区。"""
     return r['area']
 
 
@@ -389,64 +389,98 @@ def unregistered(rows, grade, papers):
 
 
 def health_svg(rows, grade, papers):
-    """上：全库试卷健康度条；下：地区 × 年份槽位图，每格左半为行测、右半为申论。"""
+    """试卷健康度：上方为全库分级，下方为 2016–2026 年地区 × 年份槽位图，每格左半行测、右半申论。"""
     slots = slot_status(rows, grade, papers)
-    names = sorted({k[0] for k in slots}, key=lambda a: (a != '国考', a != '浙江', a in ('新疆兵团', '公安招警和公检法'), a))
-    years = list(range(2008, 2027))
+    names = {k[0] for k in slots}
+    groups = [('国考与重点地区', [n for n in FOCUS if n in names]),
+              ('其他省份', sorted(n for n in names if n not in FOCUS and n not in SPECIAL)),
+              ('专项考试', [n for n in SPECIAL if n in names])]
+    years = list(range(2016, 2027))
     count = Counter(grade.values()); total = sum(count.values())
-    states = Counter(v[0] for v in slots.values())
-    cw, ch, lw, top = 40, 24, 132, 230
-    W = lw + len(years) * cw + 40
-    H = top + len(names) * ch + 60
+    status = Counter(p['status'] for p in papers)
+    cw, ch, lw, rw = 66, 22, 132, 92
+    gap_group = 34
+    top = 230
+    W = lw + len(years) * cw + rw + 24
+    H = top + sum(len(g) for _, g in groups) * ch + len(groups) * gap_group + 40
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">',
-           '<defs><pattern id="none" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-           '<line x1="0" y1="0" x2="0" y2="6" stroke="#cbd5e1" stroke-width="1.5"/></pattern></defs>',
-           f'<rect width="{W}" height="{H}" rx="14" fill="#ffffff"/>',
-           '<text x="24" y="38" font-size="20" font-weight="700" fill="#0f172a">试卷健康度</text>',
-           f'<text x="24" y="62" font-size="13" fill="#64748b">每份试卷按最严重的缺口定级 · 共 {total:,} 份</text>']
-    bx, by_, bw = 24, 80, W - 48
-    x = bx
+           '<defs><pattern id="none" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+           '<line x1="0" y1="0" x2="0" y2="5" stroke="#cbd5e1" stroke-width="1.2"/></pattern>'
+           '<clipPath id="bar"><rect x="24" y="96" width="{0}" height="18" rx="9"/></clipPath></defs>'.format(W - 48),
+           f'<rect width="{W}" height="{H}" rx="16" fill="#ffffff"/>',
+           '<text x="24" y="40" font-size="22" font-weight="800" fill="#0f172a">试卷健康度</text>',
+           f'<text x="24" y="66" font-size="13" fill="#64748b">已收录 {total:,} 份试卷，按最严重的缺口定级；完整率 '
+           f'<tspan font-weight="700" fill="#059669">{count[0] / total:.1%}</tspan></text>']
+    # 分级比例条
+    x = 24; bw = W - 48
+    out.append('<g clip-path="url(#bar)">')
     for g, (label, color) in enumerate(GRADES):
         w = bw * count[g] / total
         if w:
-            out.append(f'<rect x="{x:.1f}" y="{by_}" width="{max(w, 3):.1f}" height="20" fill="{color}"/>')
+            out.append(f'<rect x="{x:.1f}" y="96" width="{max(w, 4):.1f}" height="18" fill="{color}"/>')
         x += w
-    out.append(f'<rect x="{bx}" y="{by_}" width="{bw}" height="20" rx="6" fill="none" stroke="#e2e8f0"/>')
-    # 图例：两行，覆盖地图中出现的全部状态
-    legend = [(f'{label} {count[g]:,} 份', color, None) for g, (label, color) in enumerate(GRADES)]
-    status = Counter(p['status'] for p in papers)
-    legend += [(f"缺卷 {status['缺卷']} 卷", MISSING_COLOR, None), (f"待核 {status['待核']} 卷", PENDING_COLOR, None),
-               (f"无独立考试 {status['无独立考试']} 个科目年份", NO_EXAM_COLOR, 'url(#none)'), ('2015 年及以前未收录（不统计）', UNCOUNTED_COLOR, None)]
-    if states['未登记']:
-        legend.append((f"未登记 {states['未登记']}", UNREGISTERED_COLOR, None))
-    per = 4
-    for i, (txt, color, pattern) in enumerate(legend):
-        lx = bx + (i % per) * (bw / per)
-        ly = by_ + 36 + (i // per) * 24
-        out.append(f'<rect x="{lx:.1f}" y="{ly}" width="14" height="14" rx="3" fill="{color}" stroke="#cbd5e1"/>')
+    out.append('</g>')
+    # 图例药丸
+    pills = [(f'{label} {count[g]:,}', color, None) for g, (label, color) in enumerate(GRADES)]
+    pills += [(f"缺卷 {status['缺卷']}", MISSING_COLOR, None), (f"待核 {status['待核']}", PENDING_COLOR, None),
+              ('无独立考试', NO_EXAM_COLOR, 'url(#none)')]
+    px, py = 24, 132
+    for txt, color, pattern in pills:
+        w = 30 + len(txt) * 12.5
+        out.append(f'<rect x="{px:.1f}" y="{py}" width="{w:.1f}" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/>')
+        out.append(f'<rect x="{px + 9:.1f}" y="{py + 7}" width="12" height="12" rx="3" fill="{color}" stroke="#cbd5e1" stroke-width="0.6"/>')
         if pattern:
-            out.append(f'<rect x="{lx:.1f}" y="{ly}" width="14" height="14" rx="3" fill="{pattern}"/>')
-        out.append(f'<text x="{lx + 20:.1f}" y="{ly + 12}" font-size="12" fill="#334155">{txt}</text>')
-    out.append(f'<text x="24" y="{top - 34}" font-size="15" font-weight="700" fill="#0f172a">地区 × 年份槽位</text>')
-    out.append(f'<text x="{W - 24}" y="{top - 34}" font-size="12" fill="#64748b" text-anchor="end">每格左半为行测、右半为申论 · 角标表示同科目另有缺卷（深色）或待核（紫色）卷型</text>')
+            out.append(f'<rect x="{px + 9:.1f}" y="{py + 7}" width="12" height="12" rx="3" fill="{pattern}"/>')
+        out.append(f'<text x="{px + 26:.1f}" y="{py + 17.5}" font-size="12" fill="#334155">{txt}</text>')
+        px += w + 8
+    # 年份表头
+    out.append(f'<text x="24" y="{top - 26}" font-size="13" font-weight="700" fill="#0f172a">2016–2026 年槽位</text>')
     for i, y in enumerate(years):
-        out.append(f'<text x="{lw + i * cw + cw / 2}" y="{top - 8}" font-size="11" fill="#475569" text-anchor="middle">{y}</text>')
-    half = (cw - 9) / 2
-    for r, name in enumerate(names):
-        yy = top + r * ch
-        out.append(f'<text x="{lw - 12}" y="{yy + ch / 2 + 4}" font-size="12" fill="#334155" text-anchor="end">{name}</text>')
-        for i, y in enumerate(years):
-            for j, subj in enumerate(SUBJECTS):
-                state, g, led = slots[(name, y, subj)]
-                xx = lw + i * cw + 4 + j * (half + 1)
-                fill = {'收录': GRADES[g][1] if g is not None else None, '缺卷': MISSING_COLOR, '待核': PENDING_COLOR,
-                        '无独立考试': NO_EXAM_COLOR, '不统计': UNCOUNTED_COLOR, '未登记': UNREGISTERED_COLOR}[state]
-                out.append(f'<rect x="{xx:.1f}" y="{yy + 2}" width="{half:.1f}" height="{ch - 4}" rx="3" fill="{fill}"/>')
-                if state == '无独立考试':
-                    out.append(f'<rect x="{xx:.1f}" y="{yy + 2}" width="{half:.1f}" height="{ch - 4}" rx="3" fill="url(#none)" stroke="#e2e8f0"/>')
-                if state == '收录' and ('缺卷' in led or '待核' in led):
-                    c = MISSING_COLOR if '缺卷' in led else PENDING_COLOR
-                    out.append(f'<path d="M{xx + half - 8:.1f} {yy + 2} H{xx + half:.1f} V{yy + 10} Z" fill="{c}"/>')
+        cx = lw + i * cw + cw / 2
+        out.append(f'<text x="{cx}" y="{top - 24}" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">{y}</text>')
+        out.append(f'<text x="{cx - 15}" y="{top - 8}" font-size="10" fill="#94a3b8" text-anchor="middle">行测</text>')
+        out.append(f'<text x="{cx + 15}" y="{top - 8}" font-size="10" fill="#94a3b8" text-anchor="middle">申论</text>')
+    out.append(f'<text x="{lw + len(years) * cw + rw / 2 + 8}" y="{top - 16}" font-size="11" fill="#64748b" text-anchor="middle">完整 / 应有</text>')
+    y0 = top
+    half = (cw - 10) / 2
+    colors = {'缺卷': MISSING_COLOR, '待核': PENDING_COLOR, '无独立考试': NO_EXAM_COLOR, '不统计': UNCOUNTED_COLOR, '未登记': UNREGISTERED_COLOR}
+    complete_by = Counter(); expected_by = Counter()
+    for r in rows:
+        if int(r['year']) >= 2016:
+            expected_by[series(r)] += 1
+            complete_by[series(r)] += grade[r['path']] == 0
+    for p in papers:
+        if p['status'] == '缺卷':
+            expected_by[p['area']] += 1
+    for title, members in groups:
+        if not members:
+            continue
+        y0 += 6
+        out.append(f'<text x="24" y="{y0 + 12}" font-size="12" font-weight="700" fill="#64748b">{title}</text>')
+        out.append(f'<line x1="{24 + len(title) * 13 + 10}" y1="{y0 + 8}" x2="{W - 24}" y2="{y0 + 8}" stroke="#e2e8f0"/>')
+        y0 += gap_group - 6
+        for name in members:
+            out.append(f'<text x="{lw - 12}" y="{y0 + ch / 2 + 4}" font-size="12" fill="#1e293b" text-anchor="end">{name}</text>')
+            for i, y in enumerate(years):
+                for j, subj in enumerate(SUBJECTS):
+                    state, g, led = slots[(name, y, subj)]
+                    xx = lw + i * cw + 4 + j * (half + 2)
+                    fill = GRADES[g][1] if state == '收录' else colors[state]
+                    out.append(f'<rect x="{xx:.1f}" y="{y0 + 3}" width="{half:.1f}" height="{ch - 6}" rx="4" fill="{fill}"/>')
+                    if state == '无独立考试':
+                        out.append(f'<rect x="{xx:.1f}" y="{y0 + 3}" width="{half:.1f}" height="{ch - 6}" rx="4" fill="url(#none)"/>')
+                    if state == '收录' and ('缺卷' in led or '待核' in led):
+                        c = MISSING_COLOR if '缺卷' in led else '#8b5cf6'
+                        out.append(f'<circle cx="{xx + half - 4:.1f}" cy="{y0 + 7}" r="3" fill="{c}" stroke="#ffffff" stroke-width="1"/>')
+            # 行尾小结：完整卷 / 应有卷
+            done, need = complete_by[name], expected_by[name]
+            bx0 = lw + len(years) * cw + 16
+            out.append(f'<rect x="{bx0}" y="{y0 + 7}" width="44" height="8" rx="4" fill="#e2e8f0"/>')
+            if need:
+                out.append(f'<rect x="{bx0}" y="{y0 + 7}" width="{44 * done / need:.1f}" height="8" rx="4" fill="#34d399"/>')
+            out.append(f'<text x="{bx0 + 50}" y="{y0 + 15}" font-size="11" fill="#475569">{done}/{need}</text>')
+            y0 += ch
+    out.append(f'<text x="24" y="{H - 16}" font-size="11" fill="#94a3b8">圆点表示同一科目另有缺卷（深色）或待核（紫色）卷型 · 广州 2019 年起并入广东省考 · 2015 年及以前不统计缺卷</text>')
     out.append('</svg>')
     return '\n'.join(out) + '\n'
 
