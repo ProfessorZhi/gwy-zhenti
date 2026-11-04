@@ -157,8 +157,8 @@ def status_md(rows, xingce, shenlun, papers):
     grade = grades(rows, xingce, shenlun)
     L += ['## 试卷健康度', '',
           '每份试卷按最严重的缺口定级：**完整** → **答案待补**（缺参考答案或答案对应待核）→ **缺选项或材料** → **缺题干或题目**。', '',
-          '<p align="center"><img src="assets/health.svg" alt="2016–2026 年试卷健康度" width="100%"></p>', '',
-          '<p align="center"><img src="assets/health-2008-2015.svg" alt="2008–2015 年试卷健康度" width="100%"></p>', '']
+          ]
+    L += slots_md(rows, grade, papers, '###') + ['### 按地区汇总', '']
     L += health_table(rows, grade, papers) + ['']
     # 缺卷
     L += ['## 一、未收录卷次', '', '2016–2026 年每个「地区 × 年份 × 科目」槽位均须为已收录，或在台账中登记为缺卷、待核、无独立考试之一。', '',
@@ -305,9 +305,7 @@ def dashboard_svg(rows, s, cov):
     return '\n'.join(o for o in out if o) + '\n'
 
 
-# 试卷健康等级：每份试卷按最严重的缺口定级。
-GRADES = [('完整', '#34d399'), ('答案待补', '#fcd34d'), ('缺选项或材料', '#fb923c'), ('缺题干或题目', '#f43f5e')]
-MISSING_COLOR = '#334155'
+# 试卷健康等级：每份试卷按最严重的缺口定级，0 完整、1 答案待补、2 缺选项或材料、3 缺题干或题目。
 
 
 def grades(rows, xingce, shenlun):
@@ -348,10 +346,6 @@ def health_table(rows, grade, papers):
     return L
 
 
-PENDING_COLOR = '#c4b5fd'
-NO_EXAM_COLOR = '#f1f5f9'
-UNCOUNTED_COLOR = '#f8fafc'
-UNREGISTERED_COLOR = '#fecdd3'
 SUBJECTS = ('行测', '申论')
 FOCUS = ['国考', '浙江', '江苏', '上海', '北京', '天津', '广东', '广州', '深圳', '福建']
 SPECIAL = ['新疆兵团', '公安招警和公检法']
@@ -394,108 +388,66 @@ def unregistered(rows, grade, papers):
     return sorted(k for k, v in slot_status(rows, grade, papers).items() if v[0] == '未登记')
 
 
-def health_svg(rows, grade, papers, lo=2016, hi=2026):
-    """某年份段的试卷健康度：上方为该段试卷分级，下方为地区 × 年份槽位图，每格左半行测、右半申论。
-    2016 年起按台账显示缺卷、待核、无独立考试；2015 年及以前不判定缺卷，未收录的格子标为「未收录」。"""
+# 槽位表：地区 × 年份的 Markdown 表格，每格两个符号依次为行测、申论。
+# 表格在 GitHub 上过宽时可横向滑动，文字不随页面缩小。
+MARKS = [('🟩', '完整'), ('🟨', '答案待补'), ('🟧', '缺选项或材料'), ('🟥', '缺题干或题目'),
+         ('🟫', '已收录部分卷型，另有卷型缺卷'), ('⬛', '缺卷'), ('🟪', '待核'), ('➖', '无独立考试'),
+         ('⬜', '未收录（2015 年及以前不判定缺卷）')]
+MARK = dict((v, k) for k, v in MARKS)
+
+
+def slot_mark(state, g, led):
+    if state == '收录':
+        return MARK['已收录部分卷型，另有卷型缺卷'] if '缺卷' in led else MARKS[g][0]
+    return {'缺卷': '⬛', '待核': '🟪', '无独立考试': '➖', '不统计': '⬜'}.get(state, '❔')
+
+
+def slot_legend():
+    return ['图例：' + ' · '.join(f'{m} {t}' for m, t in MARKS), '']
+
+
+def slot_table(rows, grade, papers, lo, hi, prefix=''):
+    """地区 × 年份槽位表。2016 年起每行末尾为 完整/应有（应有 = 已收录 + 缺卷）；2015 年及以前为 完整/已收录。"""
     recent = lo >= 2016
     slots = slot_status(rows, grade, papers)
-    names = {k[0] for k in slots} if recent else {series(r) for r in rows if lo <= int(r['year']) <= hi}
-    groups = [('国考与重点地区', [n for n in FOCUS if n in names]),
-              ('其他省份', sorted(n for n in names if n not in FOCUS and n not in SPECIAL)),
-              ('专项考试', [n for n in SPECIAL if n in names])]
-    years = list(range(lo, hi + 1))
     period = [r for r in rows if lo <= int(r['year']) <= hi]
-    count = Counter(grade[r['path']] for r in period); total = sum(count.values())
-    status = Counter(p['status'] for p in papers if lo <= p['year'] <= hi)
-    cw, ch, lw, rw = 66, 22, 132, 92
-    gap_group = 34
-    top = 230
-    W = lw + len(years) * cw + rw + 24
-    H = top + sum(len(g) for _, g in groups) * ch + len(groups) * gap_group + 40
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">',
-           '<defs><pattern id="none" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-           '<line x1="0" y1="0" x2="0" y2="5" stroke="#cbd5e1" stroke-width="1.2"/></pattern>'
-           '<clipPath id="bar"><rect x="24" y="96" width="{0}" height="18" rx="9"/></clipPath></defs>'.format(W - 48),
-           f'<rect width="{W}" height="{H}" rx="16" fill="#ffffff"/>',
-           f'<text x="24" y="40" font-size="22" font-weight="800" fill="#0f172a">试卷健康度 · {lo}–{hi}</text>',
-           f'<text x="24" y="66" font-size="13" fill="#64748b">{lo}–{hi} 年已收录 {total:,} 份试卷，按最严重的缺口定级；完整率 '
-           f'<tspan font-weight="700" fill="#059669">{count[0] / total:.1%}</tspan></text>']
-    # 分级比例条
-    x = 24; bw = W - 48
-    out.append('<g clip-path="url(#bar)">')
-    for g, (label, color) in enumerate(GRADES):
-        w = bw * count[g] / total
-        if w:
-            out.append(f'<rect x="{x:.1f}" y="96" width="{max(w, 4):.1f}" height="18" fill="{color}"/>')
-        x += w
-    out.append('</g>')
-    # 图例药丸
-    pills = [(f'{label} {count[g]:,}', color, None) for g, (label, color) in enumerate(GRADES)]
-    if recent:
-        pills += [(f"缺卷 {status['缺卷']}", MISSING_COLOR, None), (f"待核 {status['待核']}", PENDING_COLOR, None),
-                  ('无独立考试', NO_EXAM_COLOR, 'url(#none)')]
-    else:
-        pills += [('未收录（不判定缺卷）', UNCOUNTED_COLOR, None)]
-    px, py = 24, 132
-    for txt, color, pattern in pills:
-        w = 30 + len(txt) * 12.5
-        out.append(f'<rect x="{px:.1f}" y="{py}" width="{w:.1f}" height="26" rx="13" fill="#f8fafc" stroke="#e2e8f0"/>')
-        out.append(f'<rect x="{px + 9:.1f}" y="{py + 7}" width="12" height="12" rx="3" fill="{color}" stroke="#cbd5e1" stroke-width="0.6"/>')
-        if pattern:
-            out.append(f'<rect x="{px + 9:.1f}" y="{py + 7}" width="12" height="12" rx="3" fill="{pattern}"/>')
-        out.append(f'<text x="{px + 26:.1f}" y="{py + 17.5}" font-size="12" fill="#334155">{txt}</text>')
-        px += w + 8
-    # 年份表头
-    out.append(f'<text x="24" y="{top - 52}" font-size="13" font-weight="700" fill="#0f172a">{lo}–{hi} 年槽位</text>')
-    for i, y in enumerate(years):
-        cx = lw + i * cw + cw / 2
-        out.append(f'<text x="{cx}" y="{top - 24}" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">{y}</text>')
-        out.append(f'<text x="{cx - 15}" y="{top - 8}" font-size="10" fill="#94a3b8" text-anchor="middle">行测</text>')
-        out.append(f'<text x="{cx + 15}" y="{top - 8}" font-size="10" fill="#94a3b8" text-anchor="middle">申论</text>')
-    out.append(f'<text x="{lw + len(years) * cw + rw / 2 + 8}" y="{top - 16}" font-size="11" fill="#64748b" text-anchor="middle">{"完整 / 应有" if recent else "完整 / 已收录"}</text>')
-    y0 = top
-    half = (cw - 10) / 2
-    colors = {'缺卷': MISSING_COLOR, '待核': PENDING_COLOR, '无独立考试': NO_EXAM_COLOR, '不统计': UNCOUNTED_COLOR, '未登记': UNREGISTERED_COLOR}
-    complete_by = Counter(); expected_by = Counter()
+    names = {k[0] for k in slots} if recent else {series(r) for r in period}
+    order = ([n for n in FOCUS if n in names] + sorted(n for n in names if n not in FOCUS and n not in SPECIAL)
+             + [n for n in SPECIAL if n in names])
+    done, have = Counter(), Counter()
     for r in period:
-        expected_by[series(r)] += 1
-        complete_by[series(r)] += grade[r['path']] == 0
-    for p in papers:
-        if p['status'] == '缺卷' and lo <= p['year'] <= hi:
-            expected_by[p['area']] += 1
-    for title, members in groups:
-        if not members:
-            continue
-        y0 += 6
-        out.append(f'<text x="24" y="{y0 + 12}" font-size="12" font-weight="700" fill="#64748b">{title}</text>')
-        out.append(f'<line x1="{24 + len(title) * 13 + 10}" y1="{y0 + 8}" x2="{W - 24}" y2="{y0 + 8}" stroke="#e2e8f0"/>')
-        y0 += gap_group - 6
-        for name in members:
-            out.append(f'<text x="{lw - 12}" y="{y0 + ch / 2 + 4}" font-size="12" fill="#1e293b" text-anchor="end">{name}</text>')
-            for i, y in enumerate(years):
-                for j, subj in enumerate(SUBJECTS):
-                    state, g, led = slots.get((name, y, subj), ('不统计', None, set()))
-                    xx = lw + i * cw + 4 + j * (half + 2)
-                    fill = GRADES[g][1] if state == '收录' else colors[state]
-                    out.append(f'<rect x="{xx:.1f}" y="{y0 + 3}" width="{half:.1f}" height="{ch - 6}" rx="4" fill="{fill}"/>')
-                    if state == '无独立考试':
-                        out.append(f'<rect x="{xx:.1f}" y="{y0 + 3}" width="{half:.1f}" height="{ch - 6}" rx="4" fill="url(#none)"/>')
-                    if state == '收录' and ('缺卷' in led or '待核' in led):
-                        c = MISSING_COLOR if '缺卷' in led else '#8b5cf6'
-                        out.append(f'<circle cx="{xx + half - 4:.1f}" cy="{y0 + 7}" r="3" fill="{c}" stroke="#ffffff" stroke-width="1"/>')
-            # 行尾小结：完整卷 / 应有卷
-            done, need = complete_by[name], expected_by[name]
-            bx0 = lw + len(years) * cw + 16
-            out.append(f'<rect x="{bx0}" y="{y0 + 7}" width="44" height="8" rx="4" fill="#e2e8f0"/>')
-            if need:
-                out.append(f'<rect x="{bx0}" y="{y0 + 7}" width="{44 * done / need:.1f}" height="8" rx="4" fill="#34d399"/>')
-            out.append(f'<text x="{bx0 + 50}" y="{y0 + 15}" font-size="11" fill="#475569">{done}/{need}</text>')
-            y0 += ch
-    note = ('圆点表示同一科目另有缺卷（深色）或待核（紫色）卷型 · 广州 2019 年起并入广东省考' if recent
-            else '2015 年及以前只统计已收录试卷的局部缺口，不判定缺卷；浅色格为未收录')
-    out.append(f'<text x="24" y="{H - 16}" font-size="11" fill="#94a3b8">{note}</text>')
-    out.append('</svg>')
-    return '\n'.join(out) + '\n'
+        have[series(r)] += 1
+        done[series(r)] += grade[r['path']] == 0
+    missing = Counter(p['area'] for p in papers if p['status'] == '缺卷' and lo <= p['year'] <= hi)
+    years = list(range(lo, hi + 1))
+    tail = ['完整\u2060/\u2060应有', '缺卷'] if recent else ['完整\u2060/\u2060已收录']
+    L = ['| 地区 | ' + ' | '.join(str(y) for y in years) + ' | ' + ' | '.join(tail) + ' |',
+         '| --- | ' + ' | '.join(':---:' for _ in years) + ' | ' + ' | '.join('---:' for _ in tail) + ' |']
+    nb = '\u2060'.join  # 字间插入不可断字符，表格变窄时整格不折行，改为横向滑动
+    for n in order:
+        cells = [nb(slot_mark(*slots[(n, y, s)]) for s in SUBJECTS) for y in years]
+        if recent:
+            end = [f'{done[n]}/{have[n] + missing[n]}', str(missing[n]) if missing[n] else '0']
+        else:
+            end = [f'{done[n]}/{have[n]}']
+        L.append(f'| {nb(n)} | ' + ' | '.join(cells) + ' | ' + ' | '.join(end) + ' |')
+    return L
+
+
+def slots_md(rows, grade, papers, h):
+    """两段槽位表：2016–2026 按台账，2008–2015 只看已收录试卷。"""
+    return (slot_legend()
+            + ['每格两个符号依次为**行测、申论**；同一科目有多个卷型时取最差的一份。表格较宽时可左右滑动。', '',
+               f'{h} 2016–2026 年', '']
+            + slot_table(rows, grade, papers, 2016, 2026)
+            + ['', '行末「完整/应有」中，应有 = 已收录 + 缺卷；广州 2019 年起并入广东省考，无独立考试。', '',
+               f'{h} 2008–2015 年', '']
+            + slot_table(rows, grade, papers, 2008, 2015)
+            + ['', '2015 年及以前只统计已收录试卷的局部缺口，不判定缺卷。', ''])
+
+
+def slots_block(rows, grade, papers):
+    return '\n'.join(['<!-- gwy:slots:start -->'] + slots_md(rows, grade, papers, '####') + ['<!-- gwy:slots:end -->'])
 
 
 def readme_block(new, old):
@@ -516,12 +468,12 @@ def main():
     readme = readme_path.read_text(encoding='utf-8')
     s_new = summary(data[0], data[1], data[2], data[3], 2016, 2026)
     s_old = summary(data[0], data[1], data[2], data[3], 0, 2015)
-    for name, block in (('gaps', readme_block(s_new, s_old)), ('coverage', coverage_block(cov))):
+    grade = grades(data[0], data[1], data[2])
+    for name, block in (('gaps', readme_block(s_new, s_old)), ('coverage', coverage_block(cov)),
+                        ('slots', slots_block(data[0], grade, data[3]))):
         readme = re.sub(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', lambda _: block, readme, flags=re.S)
     outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme,
                ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov),
-               ROOT / 'docs/assets/health.svg': health_svg(data[0], grades(data[0], data[1], data[2]), data[3], 2016, 2026),
-               ROOT / 'docs/assets/health-2008-2015.svg': health_svg(data[0], grades(data[0], data[1], data[2]), data[3], 2008, 2015),
                ROOT / 'catalog/exam-slots.jsonl': ''.join(json.dumps(r, ensure_ascii=False, sort_keys=True) + '\n' for r in cov['ledger'])}
     stale = [p for p, c in outputs.items() if not p.exists() or p.read_text(encoding='utf-8') != c]
     if args.check:
