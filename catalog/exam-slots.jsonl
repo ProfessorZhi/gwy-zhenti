@@ -52,7 +52,7 @@
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2016/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2016}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
 {"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2016}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2016/行测-兵团.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "兵团", "year": 2016}
+{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2016/申论-A类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A类", "year": 2016}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2016/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2016}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2016/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2016}
@@ -159,7 +159,7 @@
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2017/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2017}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2017/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2017}
 {"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2017/申论-兵团.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "兵团", "year": 2017}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2017/行测-兵团.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "兵团", "year": 2017}
+{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2017/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2017}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2017/申论-A类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A类", "year": 2017}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2017/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2017}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2017/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2017}
@@ -267,8 +267,8 @@
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2018/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2018}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2018/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2018}
 {"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2018/申论-下半年.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "下半年", "year": 2018}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2018/申论-兵团.md", "省考/新疆兵团/2018/申论-兵团.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "申论", "variant": "兵团", "year": 2018}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2018/行测-兵团.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "兵团", "year": 2018}
+{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2018/申论-兵团.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "兵团", "year": 2018}
+{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2018/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2018}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2018/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2018}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2018/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2018}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2018/申论-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "选调生", "year": 2018}
@@ -382,8 +382,7 @@
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2019/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2019}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2019/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2019}
 {"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2019/申论-下半年.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "下半年", "year": 2019}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2019/申论-兵团.md"], "sources": ["网络检索"], "status": "已收录", "subject": "申论", "variant": "兵团", "year": 2019}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2019/行测-兵团.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "兵团", "year": 2019}
+{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2019/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2019}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2019/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2019}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2019/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2019}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2019/申论-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "选调生", "year": 2019}
@@ -662,15 +661,12 @@
 {"area": "广西", "basis": null, "papers": ["省考/广西/2021/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2021}
 {"area": "广西", "basis": null, "papers": ["省考/广西/2021/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2021}
 {"area": "广西", "basis": null, "papers": ["省考/广西/2021/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2021}
-{"area": "新疆", "basis": null, "papers": ["省考/新疆/2021/申论-一卷.md"], "sources": ["网络检索"], "status": "已收录", "subject": "申论", "variant": "一卷", "year": 2021}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2021/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2021}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2021/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2021}
-{"area": "新疆", "basis": null, "papers": ["省考/新疆/2021/行测-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "行政执法", "year": 2021}
 {"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2021/申论-一卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "一卷", "year": 2021}
 {"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2021/申论-二卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "二卷", "year": 2021}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2021/申论-兵团一卷.md"], "sources": ["网络检索"], "status": "已收录", "subject": "申论", "variant": "兵团一卷", "year": 2021}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2021/申论-兵团二卷.md"], "sources": ["网络检索"], "status": "已收录", "subject": "申论", "variant": "兵团二卷", "year": 2021}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2021/行测-兵团.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "兵团", "year": 2021}
+{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2021/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2021}
+{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2021/行测-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "行政执法", "year": 2021}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2021/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2021}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2021/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2021}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2021/申论-名校优生选调.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "名校优生选调", "year": 2021}
@@ -1056,7 +1052,7 @@
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2024/申论-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "行政执法", "year": 2024}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2024/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2024}
 {"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2024/申论-A类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A类", "year": 2024}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2024/行测-兵团.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "兵团", "year": 2024}
+{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2024/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2024}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2024/申论-A、乡镇选调卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A、乡镇选调卷", "year": 2024}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2024/申论-B卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B卷", "year": 2024}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2024/申论-C卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C卷", "year": 2024}
@@ -1186,7 +1182,7 @@
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2025/申论-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "行政执法", "year": 2025}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2025/行测-统考.md"], "sources": ["粉笔", "华图"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
 {"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2025/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2025}
-{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆/2025/行测-兵团.md"], "sources": ["粉笔", "华图"], "status": "已收录", "subject": "行测", "variant": "兵团", "year": 2025}
+{"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2025/行测-统考.md"], "sources": ["粉笔", "华图"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2025/申论-A、乡镇选调卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A、乡镇选调卷", "year": 2025}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2025/申论-B卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B卷", "year": 2025}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2025/申论-C卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C卷", "year": 2025}

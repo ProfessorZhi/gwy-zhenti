@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="962" height="1150" viewBox="0 0 962 1150" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
 <rect width="962" height="1150" rx="14" fill="#ffffff"/>
 <text x="24" y="38" font-size="20" font-weight="700" fill="#0f172a">地区 × 年份收录分布</text>
-<text x="24" y="62" font-size="13" fill="#64748b">单元格为该地区当年收录的试卷份数 · 共 1,674 份 · 36 个地区 · 2008–2026</text>
+<text x="24" y="62" font-size="13" fill="#64748b">单元格为该地区当年收录的试卷份数 · 共 1,669 份 · 36 个地区 · 2008–2026</text>
 <text x="152.0" y="92" font-size="11" fill="#475569" text-anchor="middle">2008</text>
 <text x="192.0" y="92" font-size="11" fill="#475569" text-anchor="middle">2009</text>
 <text x="232.0" y="92" font-size="11" fill="#475569" text-anchor="middle">2010</text>
@@ -786,31 +786,31 @@
 <rect x="334" y="626" width="36" height="22" rx="5" fill="#f8fafc"/>
 <rect x="374" y="626" width="36" height="22" rx="5" fill="#dbeafe"/>
 <text x="392.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
-<rect x="414" y="626" width="36" height="22" rx="5" fill="#93c5fd"/>
-<text x="432.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
-<rect x="454" y="626" width="36" height="22" rx="5" fill="#3b82f6"/>
-<text x="472.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">3</text>
-<rect x="494" y="626" width="36" height="22" rx="5" fill="#3b82f6"/>
-<text x="512.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">3</text>
-<rect x="534" y="626" width="36" height="22" rx="5" fill="#1e3a8a"/>
-<text x="552.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">5</text>
-<rect x="574" y="626" width="36" height="22" rx="5" fill="#1e3a8a"/>
-<text x="592.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">6</text>
+<rect x="414" y="626" width="36" height="22" rx="5" fill="#dbeafe"/>
+<text x="432.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
+<rect x="454" y="626" width="36" height="22" rx="5" fill="#93c5fd"/>
+<text x="472.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
+<rect x="494" y="626" width="36" height="22" rx="5" fill="#93c5fd"/>
+<text x="512.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
+<rect x="534" y="626" width="36" height="22" rx="5" fill="#3b82f6"/>
+<text x="552.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="574" y="626" width="36" height="22" rx="5" fill="#1d4ed8"/>
+<text x="592.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">4</text>
 <rect x="614" y="626" width="36" height="22" rx="5" fill="#93c5fd"/>
 <text x="632.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
-<rect x="654" y="626" width="36" height="22" rx="5" fill="#1e3a8a"/>
-<text x="672.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">7</text>
+<rect x="654" y="626" width="36" height="22" rx="5" fill="#93c5fd"/>
+<text x="672.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
 <rect x="694" y="626" width="36" height="22" rx="5" fill="#dbeafe"/>
 <text x="712.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
 <rect x="734" y="626" width="36" height="22" rx="5" fill="#dbeafe"/>
 <text x="752.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
-<rect x="774" y="626" width="36" height="22" rx="5" fill="#1d4ed8"/>
-<text x="792.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">4</text>
-<rect x="814" y="626" width="36" height="22" rx="5" fill="#1d4ed8"/>
-<text x="832.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="774" y="626" width="36" height="22" rx="5" fill="#3b82f6"/>
+<text x="792.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="814" y="626" width="36" height="22" rx="5" fill="#3b82f6"/>
+<text x="832.0" y="641.0" font-size="11" fill="#ffffff" text-anchor="middle">3</text>
 <rect x="854" y="626" width="36" height="22" rx="5" fill="#dbeafe"/>
 <text x="872.0" y="641.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
-<text x="928" y="641.0" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">42</text>
+<text x="928" y="641.0" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">28</text>
 <text x="120" y="667.0" font-size="12" fill="#334155" text-anchor="end">新疆兵团</text>
 <rect x="134" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
 <rect x="174" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
@@ -819,26 +819,27 @@
 <rect x="294" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
 <rect x="334" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
 <rect x="374" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
-<rect x="414" y="652" width="36" height="22" rx="5" fill="#dbeafe"/>
-<text x="432.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
-<rect x="454" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
-<rect x="494" y="652" width="36" height="22" rx="5" fill="#dbeafe"/>
-<text x="512.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
-<rect x="534" y="652" width="36" height="22" rx="5" fill="#93c5fd"/>
-<text x="552.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
-<rect x="574" y="652" width="36" height="22" rx="5" fill="#dbeafe"/>
-<text x="592.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
+<rect x="414" y="652" width="36" height="22" rx="5" fill="#93c5fd"/>
+<text x="432.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
+<rect x="454" y="652" width="36" height="22" rx="5" fill="#dbeafe"/>
+<text x="472.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
+<rect x="494" y="652" width="36" height="22" rx="5" fill="#93c5fd"/>
+<text x="512.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
+<rect x="534" y="652" width="36" height="22" rx="5" fill="#3b82f6"/>
+<text x="552.0" y="667.0" font-size="11" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="574" y="652" width="36" height="22" rx="5" fill="#93c5fd"/>
+<text x="592.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
 <rect x="614" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
-<rect x="654" y="652" width="36" height="22" rx="5" fill="#93c5fd"/>
-<text x="672.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
+<rect x="654" y="652" width="36" height="22" rx="5" fill="#1d4ed8"/>
+<text x="672.0" y="667.0" font-size="11" fill="#ffffff" text-anchor="middle">4</text>
 <rect x="694" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
 <rect x="734" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
-<rect x="774" y="652" width="36" height="22" rx="5" fill="#dbeafe"/>
-<text x="792.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
-<rect x="814" y="652" width="36" height="22" rx="5" fill="#dbeafe"/>
-<text x="832.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
+<rect x="774" y="652" width="36" height="22" rx="5" fill="#93c5fd"/>
+<text x="792.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
+<rect x="814" y="652" width="36" height="22" rx="5" fill="#93c5fd"/>
+<text x="832.0" y="667.0" font-size="11" fill="#1e3a8a" text-anchor="middle">2</text>
 <rect x="854" y="652" width="36" height="22" rx="5" fill="#f8fafc"/>
-<text x="928" y="667.0" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">9</text>
+<text x="928" y="667.0" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">18</text>
 <text x="120" y="693.0" font-size="12" fill="#334155" text-anchor="end">江西</text>
 <rect x="134" y="678" width="36" height="22" rx="5" fill="#dbeafe"/>
 <text x="152.0" y="693.0" font-size="11" fill="#1e3a8a" text-anchor="middle">1</text>
@@ -1354,10 +1355,10 @@
 <text x="432.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">100</text>
 <text x="472.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">105</text>
 <text x="512.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">104</text>
-<text x="552.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">112</text>
-<text x="592.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">133</text>
+<text x="552.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">111</text>
+<text x="592.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">132</text>
 <text x="632.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">136</text>
-<text x="672.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">136</text>
+<text x="672.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">133</text>
 <text x="712.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">113</text>
 <text x="752.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">125</text>
 <text x="792.0" y="1062" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">122</text>
