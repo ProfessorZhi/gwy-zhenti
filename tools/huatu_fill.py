@@ -123,6 +123,17 @@ def frontmatter(text):
 
 # ---------- 对齐 ----------
 
+def monotone(matched):
+    """{本库题号: 华图题序} 中题序单调递增的最大子集（最长递增子序列）。"""
+    items = sorted(matched.items())
+    best = []                                   # best[i]：以 items[i] 结尾的最长链
+    for i, (n, h) in enumerate(items):
+        prev = max((best[j] for j in range(i) if items[j][1] < h), key=len, default=[])
+        best.append(prev + [i])
+    chain = max(best, key=len, default=[])
+    return {items[i][0]: items[i][1] for i in chain}
+
+
 def align(text, hq):
     """hq: 华图题目列表。返回 (报告, {本库题号: 华图题序})。"""
     blocks = split_questions(text)
@@ -141,16 +152,18 @@ def align(text, hq):
         best = max(range(len(hq)), key=scores.__getitem__) if hq else None
         if best is not None and scores[best] >= MIN_MATCH:
             matched[num] = best
-    offsets = Counter(h - n for n, h in matched.items())
-    offset, votes = offsets.most_common(1)[0] if offsets else (0, 0)
-    anchor = votes / len(present) if present else 0.0
-    anchors = {n: h for n, h in matched.items() if h - n == offset}
-    taken = set(matched.values())
+    # 回忆卷常有增删题，题序会局部错位：只保留题序单调递增的匹配（最长递增子序列）作锚点，
+    # 每道缺题按前后最近锚点的局部偏移推算，不要求整卷同一偏移。
+    anchors = monotone(matched)
+    anchor = len(anchors) / len(present) if present else 0.0
+    offsets = Counter(h - n for n, h in anchors.items())
+    offset = offsets.most_common(1)[0][0] if offsets else 0
+    taken = set(anchors.values())
     report = {'questions': len(blocks), 'present': len(present), 'missing': missing,
               'huatu_questions': len(hq), 'offset': offset + 1, 'anchor': round(anchor, 3), 'fills': [], 'skipped': []}
     plan = {}
     if anchor < MIN_ANCHOR:
-        report['skipped'] = [{'q': q, 'reason': f'卷级锚点 {anchor:.3f} 低于 {MIN_ANCHOR}，不是同一份卷或题序差异过大'} for q in missing]
+        report['skipped'] = [{'q': q, 'reason': f'卷级锚点 {anchor:.3f} 低于 {MIN_ANCHOR}，不是同一份卷'} for q in missing]
         return report, plan
     keys = sorted(anchors)
     last = max(n for n, _, _ in blocks)
@@ -162,7 +175,8 @@ def align(text, hq):
         h, k = tally.most_common(1)[0] if tally else (None, 0)
         sides = {('前' if n < q else '后') for n, p in preds if p == h}
         # 卷尾缺题：后面已无题可夹逼时，要求前侧 2 题一致，且华图总题量与本库对齐到最后一题。
-        tail = not after and all(n in missing for n in range(q, last + 1)) and last + offset == len(hq) - 1
+        local = (h - q) if h is not None else 0
+        tail = not after and all(n in missing for n in range(q, last + 1)) and last + local == len(hq) - 1
         reason = None
         if tail and k == 2 and len(before) == 2:
             pass

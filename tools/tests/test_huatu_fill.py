@@ -99,6 +99,28 @@ class HuatuFill(unittest.TestCase):
         self.assertEqual([], report["fills"])
         self.assertIn("卷级锚点", report["skipped"][0]["reason"])
 
+    def test_recall_paper_with_inserted_and_dropped_questions(self):
+        # 回忆卷：华图卷首和第 4、5 题之间各多一题，题数与本库不同；前后局部偏移不同，仍应逐题夹逼补入。
+        meta = huatu_paper(extra_front=1)
+        meta["questions"].insert(5, {"stem_html": "<p>华图回忆版多出的一题</p>", "options": [], "answer": "C"})
+        report = self.run_fill({2, 7}, meta, write=True)
+        self.assertEqual([(2, 3), (7, 9)], [(f["q"], f["huatu"]) for f in report["fills"]])
+        text = (self.root / self.rel).read_text(encoding="utf-8")
+        self.assertIn(STEMS[1], text)
+        self.assertIn(STEMS[6], text)
+        self.assertNotIn("华图回忆版多出的一题", text)
+
+    def test_crossing_match_is_not_an_anchor(self):
+        # 华图把第 3、4 题顺序对调：两题不能同时作锚点。
+        self.assertEqual(7, len(huatu_fill.monotone({1: 1, 2: 2, 3: 4, 4: 3, 5: 5, 6: 6, 7: 7, 8: 8})))
+
+    def test_one_sided_gap_is_skipped(self):
+        # 华图缺本库第 8 题：第 7 题后侧无锚点，只有前侧支持，不补。
+        meta = huatu_paper()
+        meta["questions"].pop()
+        report = self.run_fill({7}, meta, write=False)
+        self.assertEqual([], report["fills"])
+
     def test_tail_gap_needs_matching_paper_length(self):
         report = self.run_fill({7, 8}, huatu_paper(), write=False)
         self.assertEqual([7, 8], [f["q"] for f in report["fills"]])
