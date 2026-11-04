@@ -47,6 +47,8 @@ jobs:
         run: python tools/gap_content_audit.py --limit 150
       - name: Read-only corpus and inventory verification
         run: python tools/cloud_quality.py --check --verify-images
+      - name: Verify per-paper source provenance and Huatu supplements
+        run: python tools/source_provenance.py --check
       # Time-pinned audit: verify_repair_receipts.py asserts the exact corpus of the
       # 2026-10-13 deliveries (729 papers / 451 missing answers). The corpus has since
       # grown to 1291 papers, so it can only pass at its own commit (efbc2daa5). It is
