@@ -3,6 +3,7 @@
 
 缺口分两层：
     缺卷      真实开考、本库未收录的卷次，来自 catalog/missing-papers.jsonl（缺卷 / 待核）。
+同时写出 README 的收录区块与概览仪表盘 docs/assets/dashboard.svg。
     局部缺口  已收录试卷内的缺失，逐题从试卷正文识别：
               行测  缺题干 > 缺选项 > 缺答案，每题只计最严重的一级；
               申论  缺题目、缺材料、缺答案。
@@ -22,6 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'tools'))
 from gap_content_audit import scan  # noqa: E402
+from coverage_stats import FONT, norm_pt  # noqa: E402
 
 ISSUES = 'https://github.com/ProfessorZhi/gwy-zhenti/issues/'
 STUB = '粉笔暂未收录本题'
@@ -104,6 +106,7 @@ def summary(rows, xingce, shenlun, papers):
     s['missing'] = sum(p['status'] == '缺卷' for p in papers)
     s['pending'] = sum(p['status'] == '待核' for p in papers)
     s['unverified'] = sum(len(v) for v in ANSWER_UNVERIFIED.values())
+    s['questions'] = sum(int(r.get('declared_questions') or 0) for r in rows)
     return s
 
 
@@ -170,6 +173,86 @@ def status_md(rows, xingce, shenlun, papers):
     return '\n'.join(L), s
 
 
+def coverage(rows, papers):
+    """按年份段统计已收录试卷、已收录卷次（地区×年份×科目×归一化卷型）、缺卷与待核。"""
+    out = {}
+    for name, lo, hi in (('2016–2026', 2016, 2026), ('2008–2015', 2008, 2015)):
+        part = [r for r in rows if lo <= int(r['year']) <= hi]
+        slots = {(r['area'], r['year'], r['subject'], norm_pt(r.get('paper_type'))) for r in part}
+        miss = [p for p in papers if lo <= p['year'] <= hi]
+        out[name] = {'files': len(part), 'slots': len(slots),
+                     'missing': sum(p['status'] == '缺卷' for p in miss), 'pending': sum(p['status'] == '待核' for p in miss)}
+    recent = out['2016–2026']
+    recent['rate'] = recent['slots'] / (recent['slots'] + recent['missing'])
+    return out
+
+
+def coverage_block(cov):
+    r, h = cov['2016–2026'], cov['2008–2015']
+    return '\n'.join([
+        '<!-- gwy:coverage:start -->',
+        '| 年份 | 已收录试卷 | 已收录卷次 | 缺卷 | 待核 | 收录率 |',
+        '| :---: | ---: | ---: | ---: | ---: | ---: |',
+        f"| **2016–2026** | {r['files']:,} | {r['slots']:,} | {r['missing']} | {r['pending']} | **{r['rate']:.1%}** |",
+        f"| 2008–2015 | {h['files']:,} | {h['slots']:,} | — | — | — |",
+        '',
+        '卷次按「地区 × 年份 × 科目 × 卷型」计；收录率为已收录卷次占「已收录 + 缺卷」之比。2015 年及以前只统计已收录试卷。',
+        '<!-- gwy:coverage:end -->'])
+
+
+def dashboard_svg(rows, s, cov):
+    r = cov['2016–2026']
+    x = sum(row['subject'] == '行测' for row in rows); z = len(rows) - x
+    W, H = 920, 260
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">',
+           '<defs><linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>',
+           f'<rect width="{W}" height="{H}" rx="16" fill="#ffffff"/>']
+    def card(x0, w, title):
+        out.append(f'<rect x="{x0}" y="16" width="{w}" height="{H - 32}" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>')
+        out.append(f'<text x="{x0 + 20}" y="48" font-size="15" font-weight="700" fill="#0f172a">{title}</text>')
+    # 1. 收录率圆环
+    card(16, 280, '2016–2026 收录率')
+    cx, cy, rad = 96, 150, 54
+    import math
+    circ = 2 * math.pi * rad
+    out.append(f'<circle cx="{cx}" cy="{cy}" r="{rad}" fill="none" stroke="#e2e8f0" stroke-width="14"/>')
+    out.append(f'<circle cx="{cx}" cy="{cy}" r="{rad}" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="round" '
+               f'stroke-dasharray="{circ * r["rate"]:.1f} {circ:.1f}" transform="rotate(-90 {cx} {cy})"/>')
+    out.append(f'<text x="{cx}" y="{cy + 7}" font-size="21" font-weight="800" fill="#0f172a" text-anchor="middle">{r["rate"]:.1%}</text>')
+    for i, (k, v) in enumerate((('已收录卷次', f"{r['slots']:,}"), ('缺卷', r['missing']), ('待核', r['pending']))):
+        out.append(f'<text x="172" y="{122 + i * 30}" font-size="12" fill="#64748b">{k}</text>')
+        out.append(f'<text x="276" y="{122 + i * 30}" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">{v}</text>')
+    # 2. 科目构成
+    card(312, 280, '科目构成')
+    total = x + z
+    bw = 240
+    xw = bw * x / total
+    out.append(f'<text x="332" y="96" font-size="30" font-weight="800" fill="#0f172a">{total:,}</text>')
+    out.append(f'<text x="332" y="118" font-size="12" fill="#64748b">份试卷 · {s["questions"]:,} 个题位</text>' if 'questions' in s else '')
+    out.append(f'<rect x="332" y="140" width="{bw}" height="16" rx="8" fill="#f59e0b"/>')
+    out.append(f'<rect x="332" y="140" width="{xw:.1f}" height="16" rx="8" fill="#3b82f6"/>')
+    out.append(f'<rect x="{332 + xw - 8:.1f}" y="140" width="8" height="16" fill="#3b82f6"/>')
+    for i, (k, v, c) in enumerate((('行测', x, '#3b82f6'), ('申论', z, '#f59e0b'))):
+        yy = 186 + i * 28
+        out.append(f'<rect x="332" y="{yy - 10}" width="12" height="12" rx="3" fill="{c}"/>')
+        out.append(f'<text x="352" y="{yy}" font-size="13" fill="#334155">{k}</text>')
+        out.append(f'<text x="572" y="{yy}" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">{v} 份 · {v / total:.0%}</text>')
+    # 3. 局部缺口
+    card(608, 296, '已收录试卷的局部缺口')
+    items = [('行测 缺题干', s['x_stem'], '#ef4444'), ('行测 缺选项', s['x_option'], '#f97316'),
+             ('申论 缺材料', s['s_material'], '#eab308'), ('申论 缺答案', s['s_answer'], '#a855f7')]
+    peak = max([v for _, v, _ in items] + [1])
+    for i, (k, v, c) in enumerate(items):
+        yy = 84 + i * 38
+        out.append(f'<text x="628" y="{yy + 4}" font-size="12" fill="#334155">{k}</text>')
+        out.append(f'<rect x="712" y="{yy - 8}" width="140" height="14" rx="7" fill="#e2e8f0"/>')
+        out.append(f'<rect x="712" y="{yy - 8}" width="{max(6, 140 * v / peak):.1f}" height="14" rx="7" fill="{c}"/>')
+        out.append(f'<text x="884" y="{yy + 4}" font-size="13" font-weight="700" fill="#0f172a" text-anchor="end">{v}</text>')
+    out.append(f'<text x="628" y="{H - 30}" font-size="11" fill="#94a3b8">单位：题（缺材料为份）· 行测每题只计最严重一级</text>')
+    out.append('</svg>')
+    return '\n'.join(o for o in out if o) + '\n'
+
+
 def readme_block(s):
     lines = ['<!-- gwy:gaps:start -->'] + overview(s) + [
         '', '行测每题只计最严重的一级。缺卷以实际举行的考试为准（2016–2026 年）。'
@@ -181,11 +264,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
-    status, s = status_md(*collect())
+    data = collect()
+    status, s = status_md(*data)
+    cov = coverage(data[0], data[3])
     readme_path = ROOT / 'README.md'
     readme = readme_path.read_text(encoding='utf-8')
-    readme = re.sub(r'<!-- gwy:gaps:start -->.*?<!-- gwy:gaps:end -->', lambda _: readme_block(s), readme, flags=re.S)
-    outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme}
+    for name, block in (('gaps', readme_block(s)), ('coverage', coverage_block(cov))):
+        readme = re.sub(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', lambda _: block, readme, flags=re.S)
+    outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme,
+               ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov)}
     stale = [p for p, c in outputs.items() if not p.exists() or p.read_text(encoding='utf-8') != c]
     if args.check:
         print('最新' if not stale else '需要重新生成：' + '、'.join(p.relative_to(ROOT).as_posix() for p in stale))

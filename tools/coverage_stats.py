@@ -106,66 +106,86 @@ def summarize(rows):
 
 
 def heatmap_svg(stats):
+    """地区 × 年份热力图：每格为该地区该年的试卷份数，右侧为地区合计，底部为年份合计。"""
     areas = sorted(stats['by_area'], key=lambda a: ({'L1': 0, 'L2': 1}.get(stats['by_area'][a]['tier'], 2), a))
     years = [str(y) for y in range(min(stats['years']), max(stats['years']) + 1)]
-    cw, ch, lw, th = 34, 24, 92, 64
-    width = lw + len(years) * cw + 60
-    height = th + len(areas) * ch + 90
-    palette = ['#f1f5f9', '#dbeafe', '#93c5fd', '#3b82f6', '#1d4ed8', '#1e3a8a']
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
-           f'viewBox="0 0 {width} {height}" font-family="{FONT}">',
-           f'<rect width="{width}" height="{height}" fill="#ffffff"/>',
-           f'<text x="20" y="30" font-size="18" font-weight="700" fill="#0f172a">库内试卷分布（地区 × 年份，单元格数字＝MD 份数）</text>',
-           f'<text x="20" y="50" font-size="12" fill="#64748b">共 {stats["files"]} 份 · {stats["areas"]} 个地区 · '
-           f'{min(stats["years"])}–{max(stats["years"])} · 数据取自 catalog/manifest.jsonl</text>']
-    x0, y0 = lw, th
+    cw, ch, lw, top = 40, 26, 132, 104
+    gw = len(years) * cw
+    width = lw + gw + 70
+    height = top + len(areas) * ch + 110
+    palette = ['#eff6ff', '#dbeafe', '#93c5fd', '#3b82f6', '#1d4ed8', '#1e3a8a']
+    color = lambda n: palette[min(n, 5)] if n else '#f8fafc'
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" font-family="{FONT}">',
+           f'<rect width="{width}" height="{height}" rx="14" fill="#ffffff"/>',
+           f'<text x="24" y="38" font-size="20" font-weight="700" fill="#0f172a">地区 × 年份收录分布</text>',
+           f'<text x="24" y="62" font-size="13" fill="#64748b">单元格为该地区当年收录的试卷份数 · 共 {stats["files"]:,} 份 · '
+           f'{stats["areas"]} 个地区 · {min(stats["years"])}–{max(stats["years"])}</text>']
     for i, year in enumerate(years):
-        out.append(f'<text x="{x0 + i * cw + cw / 2}" y="{y0 - 8}" font-size="11" fill="#475569" text-anchor="middle">{year}</text>')
+        out.append(f'<text x="{lw + i * cw + cw / 2}" y="{top - 12}" font-size="11" fill="#475569" text-anchor="middle">{year}</text>')
+    out.append(f'<text x="{lw + gw + 36}" y="{top - 12}" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">合计</text>')
+    col = collections.Counter()
     for r, area in enumerate(areas):
-        yy = y0 + r * ch
+        y = top + r * ch
         if r and stats['by_area'][area]['tier'] != stats['by_area'][areas[r - 1]]['tier']:
-            out.append(f'<line x1="20" y1="{yy}" x2="{width - 30}" y2="{yy}" stroke="#cbd5e1" stroke-dasharray="3 3"/>')
-        out.append(f'<text x="20" y="{yy + ch - 8}" font-size="11" fill="#334155">{area}</text>')
+            out.append(f'<line x1="24" y1="{y}" x2="{width - 24}" y2="{y}" stroke="#cbd5e1" stroke-dasharray="4 4"/>')
+        out.append(f'<text x="{lw - 12}" y="{y + ch / 2 + 4}" font-size="12" fill="#334155" text-anchor="end">{area}</text>')
+        total = 0
         for i, year in enumerate(years):
             n = stats['grid'].get(f'{area}|{year}', 0)
-            out.append(f'<rect x="{x0 + i * cw + 2}" y="{yy + 2}" width="{cw - 4}" height="{ch - 4}" rx="4" '
-                       f'fill="{palette[min(n, 5)] if n else "#f8fafc"}"/>')
+            total += n; col[year] += n
+            x = lw + i * cw
+            out.append(f'<rect x="{x + 2}" y="{y + 2}" width="{cw - 4}" height="{ch - 4}" rx="5" fill="{color(n)}"/>')
             if n:
-                out.append(f'<text x="{x0 + i * cw + cw / 2}" y="{yy + ch - 9}" font-size="10" '
-                           f'fill="{"#ffffff" if n >= 3 else "#1e3a8a"}" text-anchor="middle">{n}</text>')
-    ly = y0 + len(areas) * ch + 30
-    out.append(f'<text x="20" y="{ly}" font-size="11" fill="#475569">份数</text>')
-    for i, (label, color) in enumerate([('0', '#f1f5f9'), ('1', '#dbeafe'), ('2', '#93c5fd'), ('3–4', '#3b82f6'), ('5+', '#1e3a8a')]):
-        xx = 60 + i * 62
-        out.append(f'<rect x="{xx}" y="{ly - 11}" width="16" height="14" rx="3" fill="{color}" stroke="#e2e8f0"/>')
-        out.append(f'<text x="{xx + 21}" y="{ly}" font-size="11" fill="#475569">{label}</text>')
-    out.append(f'<text x="20" y="{ly + 28}" font-size="11" fill="#94a3b8">虚线以上：L1 浙江 / L2 国考与重点地区 / 其余为 L3</text>')
+                out.append(f'<text x="{x + cw / 2}" y="{y + ch / 2 + 4}" font-size="11" fill="{"#ffffff" if n >= 3 else "#1e3a8a"}" text-anchor="middle">{n}</text>')
+        out.append(f'<text x="{lw + gw + 36}" y="{y + ch / 2 + 4}" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">{total}</text>')
+    yb = top + len(areas) * ch + 8
+    out.append(f'<line x1="24" y1="{yb - 4}" x2="{width - 24}" y2="{yb - 4}" stroke="#e2e8f0"/>')
+    out.append(f'<text x="{lw - 12}" y="{yb + 14}" font-size="12" font-weight="700" fill="#475569" text-anchor="end">合计</text>')
+    for i, year in enumerate(years):
+        out.append(f'<text x="{lw + i * cw + cw / 2}" y="{yb + 14}" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">{col[year]}</text>')
+    ly = yb + 52
+    out.append(f'<text x="24" y="{ly}" font-size="12" fill="#475569">份数</text>')
+    for i, (label, c) in enumerate([('0', '#f8fafc'), ('1', '#dbeafe'), ('2', '#93c5fd'), ('3', '#3b82f6'), ('4', '#1d4ed8'), ('5+', '#1e3a8a')]):
+        x = 64 + i * 58
+        out.append(f'<rect x="{x}" y="{ly - 12}" width="18" height="16" rx="4" fill="{c}" stroke="#e2e8f0"/>')
+        out.append(f'<text x="{x + 24}" y="{ly + 1}" font-size="12" fill="#475569">{label}</text>')
+    out.append(f'<text x="{width - 24}" y="{ly + 1}" font-size="12" fill="#94a3b8" text-anchor="end">虚线分隔：浙江 ｜ 国考与重点地区 ｜ 其余地区</text>')
     out.append('</svg>')
     return '\n'.join(out)
 
 
 def year_svg(stats):
+    """逐年柱状图：行测、申论并列，柱顶标数值。"""
     years = [str(y) for y in range(min(stats['years']), max(stats['years']) + 1)]
     x = [stats['by_year'].get(y, {}).get('行测', 0) for y in years]
     z = [stats['by_year'].get(y, {}).get('申论', 0) for y in years]
     peak = max(x + z + [1])
-    width, height, left, bottom = 760, 360, 48, 70
-    step = (width - left - 20) / len(years)
-    top = height - bottom - 40
+    step_v = 20 if peak <= 120 else 25
+    ceil = -(-peak // step_v) * step_v
+    width, height = 920, 400
+    left, right, top, bottom = 56, 24, 88, 52
+    plot_h = height - top - bottom
+    step = (width - left - right) / len(years)
+    bar = step / 2 - 4
+    ypos = lambda v: top + plot_h * (1 - v / ceil)
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" font-family="{FONT}">',
-           '<rect width="100%" height="100%" fill="#fff"/>',
-           f'<text x="16" y="26" font-size="16" font-weight="700" fill="#0f172a">逐年入库存量（份）</text>']
+           f'<rect width="{width}" height="{height}" rx="14" fill="#ffffff"/>',
+           '<text x="24" y="38" font-size="20" font-weight="700" fill="#0f172a">逐年收录试卷数</text>',
+           f'<text x="24" y="62" font-size="13" fill="#64748b">按考试年份统计 · 行测 {sum(x)} 份 · 申论 {sum(z)} 份</text>',
+           f'<rect x="{width - 196}" y="27" width="12" height="12" rx="3" fill="#3b82f6"/><text x="{width - 178}" y="38" font-size="13" fill="#334155">行测</text>',
+           f'<rect x="{width - 118}" y="27" width="12" height="12" rx="3" fill="#f59e0b"/><text x="{width - 100}" y="38" font-size="13" fill="#334155">申论</text>']
+    for v in range(0, ceil + 1, step_v):
+        yy = ypos(v)
+        out.append(f'<line x1="{left}" y1="{yy:.1f}" x2="{width - right}" y2="{yy:.1f}" stroke="{"#cbd5e1" if v == 0 else "#f1f5f9"}"/>')
+        out.append(f'<text x="{left - 8}" y="{yy + 4:.1f}" font-size="11" fill="#94a3b8" text-anchor="end">{v}</text>')
     for i, year in enumerate(years):
-        bx = left + i * step
-        for value, offset, color in ((x[i], 2, '#3b82f6'), (z[i], step / 2 + 1, '#f59e0b')):
-            h = top * value / peak
-            out.append(f'<rect x="{bx + offset}" y="{height - bottom - h}" width="{step / 2 - 3}" height="{h:.1f}" rx="2" fill="{color}"/>')
-        out.append(f'<text x="{bx + step / 2}" y="{height - bottom + 16}" font-size="10" fill="#64748b" text-anchor="middle">{year}</text>')
-    out.append(f'<line x1="{left}" y1="{height - bottom}" x2="{width - 12}" y2="{height - bottom}" stroke="#e2e8f0"/>')
-    out.append(f'<rect x="{left}" y="{height - 28}" width="12" height="12" rx="2" fill="#3b82f6"/>'
-               f'<text x="{left + 17}" y="{height - 18}" font-size="12" fill="#475569">行测 {sum(x)}</text>')
-    out.append(f'<rect x="{left + 110}" y="{height - 28}" width="12" height="12" rx="2" fill="#f59e0b"/>'
-               f'<text x="{left + 127}" y="{height - 18}" font-size="12" fill="#475569">申论 {sum(z)}</text>')
+        bx = left + i * step + 3
+        for value, offset, c in ((x[i], 0, '#3b82f6'), (z[i], bar + 2, '#f59e0b')):
+            yy = ypos(value)
+            out.append(f'<rect x="{bx + offset:.1f}" y="{yy:.1f}" width="{bar:.1f}" height="{top + plot_h - yy:.1f}" rx="3" fill="{c}"/>')
+            if value:
+                out.append(f'<text x="{bx + offset + bar / 2:.1f}" y="{yy - 5:.1f}" font-size="10" fill="#475569" text-anchor="middle">{value}</text>')
+        out.append(f'<text x="{left + i * step + step / 2:.1f}" y="{height - bottom + 20}" font-size="11" fill="#475569" text-anchor="middle">{year}</text>')
     out.append('</svg>')
     return '\n'.join(out)
 
