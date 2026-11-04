@@ -146,17 +146,20 @@
 
 ## 已知缺口
 
-| 类别 | 数量 | 处理方式 | 跟踪 |
-| --- | ---: | --- | :---: |
-| 原题题干缺失 | 280 题 · 60 卷 | 保留题位，标注“粉笔暂未收录本题” | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
-| 选项缺失 | 6 题 | 保留现有选项，标注缺失项 | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
-| 答案对应关系待核 | 20 题 | 卷首注明待核题号 | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
-| 申论参考答案缺失 | 7 题 · 3 卷 | 标注“来源未提供” | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
-| 申论给定材料缺失 | 3 卷 | 保留现有材料 | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
-| 既有整卷未收录台账 | 23 个卷次 | 全量口径下的历史占位，仍须逐卷复核考试身份与实际卷型 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
-| 原登记考试身份待核 | 18 个卷次 | 西藏旧占位；部分年份现已找到招录公告，待同步更新台账 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
+<!-- gwy:gaps:start -->
+| 层级 | 类别 | 数量 | 跟踪 |
+| --- | --- | ---: | :---: |
+| **缺卷** | 已确认缺卷 | 51 卷 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
+| | 考试身份待核 | 6 卷 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
+| **行测** | 缺题干 | 280 题 · 60 卷 | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
+| | 缺选项 | 6 题 · 6 卷 | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
+| | 缺答案 | — | |
+| **申论** | 缺题目 | — | |
+| | 缺材料 | 7 份材料 · 3 卷 | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
+| | 缺答案 | 7 题 · 3 卷 | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
 
-**另有**重点地区 8 个年度科目待核格；本轮独立公告核出至少 28 个尚未归档卷型位置（含部分旧待核格）。上述各项不直接相加，详见 [真实考试全量覆盖](docs/COVERAGE-ALL-EXAMS.md)。缺失内容不以其他卷型、默认答案或生成内容替代。内容缺项汇总见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148) 与 [缺口总账](docs/GAP-STATUS.md)。
+行测每题只计最严重的一级。缺卷以实际举行的考试为准（2016–2026 年）。逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)。
+<!-- gwy:gaps:end -->
 
 ## 勘误与反馈
 
@@ -194,6 +197,7 @@ python3 -I tools/refresh_manifest.py --write                # 刷新清单的字
 python3 -I tools/catalog_index.py --out catalog/INDEX.md     # 试卷索引
 python3 -I tools/coverage_stats.py --svg docs/assets        # 逐年柱状图、覆盖热力图
 python3 -I tools/repo_readmes.py                            # 横幅、徽章、地区入口与各目录导航页
+python3 -I tools/gap_report.py                              # 缺口总账与首页缺口表
 python3 tools/cloud_quality.py --check --verify-images      # 结构与图片引用检查
 python3 tools/source_provenance.py --check                   # 逐卷来源字段核查
 python3 tools/source_provenance.py --export /tmp/paper-sources.jsonl # 导出逐卷来源并集
