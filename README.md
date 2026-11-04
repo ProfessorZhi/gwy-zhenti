@@ -145,6 +145,10 @@
 
 ## 已知缺口
 
+<p align="center">
+  <img src="docs/assets/health.svg" alt="试卷健康度：全库分级与地区年份分布" width="100%">
+</p>
+
 <!-- gwy:gaps:start -->
 | 层级 | 类别 | 数量 | 跟踪 |
 | --- | --- | ---: | :---: |
