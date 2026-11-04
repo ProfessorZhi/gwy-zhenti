@@ -1,5 +1,7 @@
 # 真实公务员考试全量卷次覆盖（2026-11-04）
 
+> 缺卷的现行台账为 [`catalog/missing-papers.jsonl`](../catalog/missing-papers.jsonl)，汇总见 [缺口总账](GAP-STATUS.md)。本文记录建立台账时的公告核对依据。
+
 > **唯一覆盖口径：实际举行的公务员考试 × 科目 × 真实独立卷型。** 粉笔是主要整理题源、华图负责补充和交叉核对；来源的数量不构成覆盖分母。
 >
 > 仓库收录存量基线为 `catalog/manifest.jsonl`（2026-11-03，1,674 份），待核及缺卷记录来自 `资料缺失/INDEX.jsonl`、`reports/PRIORITY-MISSING.json` 和当年考试公告。历史发现清单未全量重审，不得据此推出已建立全国精确分母。
