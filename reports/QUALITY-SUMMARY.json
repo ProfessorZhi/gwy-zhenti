@@ -190,7 +190,7 @@
   "image_decode_check_performed": true,
   "image_decode_errors": [],
   "image_references": 19345,
-  "inventory_sha256": "d96c4cef8a47ff8732632303425c0897959dc78e0596e6a9f09c68d898fb81d1",
+  "inventory_sha256": "75a26d2346a2f13c56ffe208e178dac746647ef5ffc7a28047a4128ef8636b92",
   "missing_image_references": 0,
   "missing_original_numbers_declared": 0,
   "paper_files": 1674,
