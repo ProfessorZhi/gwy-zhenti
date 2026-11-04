@@ -106,51 +106,91 @@ def summarize(rows):
     return out
 
 
+def load_slots():
+    """未收录卷次台账（缺卷 / 待核 / 无独立考试），按 (地区, 年份) 汇总状态。"""
+    path = os.path.join(ROOT, 'catalog/uncollected-slots.jsonl')
+    out = collections.defaultdict(collections.Counter)
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as handle:
+            for line in handle:
+                if line.strip():
+                    r = json.loads(line)
+                    out[(r['area'], str(r['year']))][r['status']] += 1
+    return out
+
+
 def heatmap_svg(stats):
-    """地区 × 年份热力图：每格为该地区该年的试卷份数，右侧为地区合计，底部为年份合计。"""
-    areas = sorted(stats['by_area'], key=lambda a: ({'L1': 0, 'L2': 1}.get(stats['by_area'][a]['tier'], 2), a))
+    """地区 × 年份热力图：有卷的格子为收录份数；无卷的格子按槽位台账显示缺卷、待核、无独立考试或不统计。
+    右侧为地区合计，底部为年份合计；有卷但同年另有缺卷或待核的格子加角标。"""
+    slots = load_slots()
+    areas = sorted(set(stats['by_area']) | {a for a, _ in slots},
+                   key=lambda a: ({'L1': 0, 'L2': 1}.get(stats['by_area'].get(a, {}).get('tier'), 2), a))
     years = [str(y) for y in range(min(stats['years']), max(stats['years']) + 1)]
     cw, ch, lw, top = 40, 26, 132, 104
     gw = len(years) * cw
     width = lw + gw + 70
-    height = top + len(areas) * ch + 110
+    height = top + len(areas) * ch + 128
     palette = ['#eff6ff', '#dbeafe', '#93c5fd', '#3b82f6', '#1d4ed8', '#1e3a8a']
-    color = lambda n: palette[min(n, 5)] if n else '#f8fafc'
+    color = lambda n: palette[min(n, 5)]
+    MISSING, PENDING, NONE, UNCOUNTED = '#334155', '#c4b5fd', '#ffffff', '#f8fafc'
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" font-family="{FONT}">',
+           '<defs><pattern id="none" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+           '<line x1="0" y1="0" x2="0" y2="5" stroke="#cbd5e1" stroke-width="1.2"/></pattern></defs>',
            f'<rect width="{width}" height="{height}" rx="14" fill="#ffffff"/>',
            f'<text x="24" y="38" font-size="20" font-weight="700" fill="#0f172a">地区 × 年份收录分布</text>',
            f'<text x="24" y="62" font-size="13" fill="#64748b">单元格为该地区当年收录的试卷份数 · 共 {stats["files"]:,} 份 · '
-           f'{stats["areas"]} 个地区 · {min(stats["years"])}–{max(stats["years"])}</text>']
+           f'{len(areas)} 个地区 · {min(stats["years"])}–{max(stats["years"])}</text>']
     for i, year in enumerate(years):
         out.append(f'<text x="{lw + i * cw + cw / 2}" y="{top - 12}" font-size="11" fill="#475569" text-anchor="middle">{year}</text>')
     out.append(f'<text x="{lw + gw + 36}" y="{top - 12}" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">合计</text>')
     col = collections.Counter()
     for r, area in enumerate(areas):
         y = top + r * ch
-        if r and stats['by_area'][area]['tier'] != stats['by_area'][areas[r - 1]]['tier']:
+        tier_now = stats['by_area'].get(area, {}).get('tier')
+        tier_prev = stats['by_area'].get(areas[r - 1], {}).get('tier') if r else tier_now
+        if r and tier_now != tier_prev:
             out.append(f'<line x1="24" y1="{y}" x2="{width - 24}" y2="{y}" stroke="#cbd5e1" stroke-dasharray="4 4"/>')
         out.append(f'<text x="{lw - 12}" y="{y + ch / 2 + 4}" font-size="12" fill="#334155" text-anchor="end">{area}</text>')
         total = 0
         for i, year in enumerate(years):
             n = stats['grid'].get(f'{area}|{year}', 0)
+            st = slots.get((area, year), collections.Counter())
             total += n; col[year] += n
             x = lw + i * cw
-            out.append(f'<rect x="{x + 2}" y="{y + 2}" width="{cw - 4}" height="{ch - 4}" rx="5" fill="{color(n)}"/>')
+            rect = f'<rect x="{x + 2}" y="{y + 2}" width="{cw - 4}" height="{ch - 4}" rx="5" fill="{{}}"/>'
+            label = lambda t, c: out.append(f'<text x="{x + cw / 2}" y="{y + ch / 2 + 4}" font-size="11" fill="{c}" text-anchor="middle">{t}</text>')
             if n:
-                out.append(f'<text x="{x + cw / 2}" y="{y + ch / 2 + 4}" font-size="11" fill="{"#ffffff" if n >= 3 else "#1e3a8a"}" text-anchor="middle">{n}</text>')
+                out.append(rect.format(color(n)))
+                label(n, '#ffffff' if n >= 3 else '#1e3a8a')
+                if st['缺卷'] or st['待核']:
+                    out.append(f'<circle cx="{x + cw - 7}" cy="{y + 7}" r="3.2" fill="{MISSING if st["缺卷"] else "#8b5cf6"}" stroke="#ffffff" stroke-width="1"/>')
+            elif st['缺卷']:
+                out.append(rect.format(MISSING)); label('缺', '#ffffff')
+            elif st['待核']:
+                out.append(rect.format(PENDING)); label('核', '#4c1d95')
+            elif st['无独立考试']:
+                out.append(rect.format(NONE)); out.append(rect.format('url(#none)'))
+            else:
+                out.append(rect.format(UNCOUNTED))
         out.append(f'<text x="{lw + gw + 36}" y="{y + ch / 2 + 4}" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">{total}</text>')
     yb = top + len(areas) * ch + 8
     out.append(f'<line x1="24" y1="{yb - 4}" x2="{width - 24}" y2="{yb - 4}" stroke="#e2e8f0"/>')
     out.append(f'<text x="{lw - 12}" y="{yb + 14}" font-size="12" font-weight="700" fill="#475569" text-anchor="end">合计</text>')
     for i, year in enumerate(years):
         out.append(f'<text x="{lw + i * cw + cw / 2}" y="{yb + 14}" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">{col[year]}</text>')
-    ly = yb + 52
-    out.append(f'<text x="24" y="{ly}" font-size="12" fill="#475569">份数</text>')
-    for i, (label, c) in enumerate([('0', '#f8fafc'), ('1', '#dbeafe'), ('2', '#93c5fd'), ('3', '#3b82f6'), ('4', '#1d4ed8'), ('5+', '#1e3a8a')]):
-        x = 64 + i * 58
+    ly = yb + 50
+    items = [('1', palette[1], None), ('2', palette[2], None), ('3', palette[3], None), ('4', palette[4], None), ('5+', palette[5], None),
+             ('缺卷', MISSING, None), ('待核', PENDING, None), ('无独立考试', NONE, 'url(#none)'), ('2015 年及以前未收录', UNCOUNTED, None)]
+    x = 24
+    out.append(f'<text x="{x}" y="{ly + 1}" font-size="12" fill="#475569">图例</text>')
+    x += 40
+    for label_text, c, pattern in items:
         out.append(f'<rect x="{x}" y="{ly - 12}" width="18" height="16" rx="4" fill="{c}" stroke="#e2e8f0"/>')
-        out.append(f'<text x="{x + 24}" y="{ly + 1}" font-size="12" fill="#475569">{label}</text>')
-    out.append(f'<text x="{width - 24}" y="{ly + 1}" font-size="12" fill="#94a3b8" text-anchor="end">虚线分隔：浙江 ｜ 国考与重点地区 ｜ 其余地区</text>')
+        if pattern:
+            out.append(f'<rect x="{x}" y="{ly - 12}" width="18" height="16" rx="4" fill="{pattern}"/>')
+        out.append(f'<text x="{x + 24}" y="{ly + 1}" font-size="12" fill="#475569">{label_text}</text>')
+        x += 24 + len(label_text) * 12 + 16
+    out.append(f'<text x="24" y="{ly + 30}" font-size="12" fill="#94a3b8">圆点表示该年另有缺卷（深色）或待核（紫色）卷次 · 虚线分隔：浙江 ｜ 国考与重点地区 ｜ 其余地区 · 状态来自槽位台账</text>')
     out.append('</svg>')
     return '\n'.join(out)
 
