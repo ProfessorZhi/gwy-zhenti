@@ -147,6 +147,11 @@ def status_md(rows, xingce, shenlun, papers):
     L += overview(s)
     L += ['', f'已收录试卷 {files:,} 份（2016–2026 年 {len(recent):,} 份）。'
           f"另有 {s['unverified']} 题参考答案已收录、但与题目的对应关系待核，见 [#157]({ISSUES}157)。", '']
+    grade = grades(rows, xingce, shenlun)
+    L += ['## 试卷健康度', '',
+          '每份试卷按最严重的缺口定级：**完整** → **答案待补**（缺参考答案或答案对应待核）→ **缺选项或材料** → **缺题干或题目**。', '',
+          '<p align="center"><img src="assets/health.svg" alt="试卷健康度：全库分级与地区年份分布" width="100%"></p>', '']
+    L += health_table(rows, grade, papers) + ['']
     # 缺卷
     L += ['## 一、缺卷', '', '| 年份 | 地区 | 科目 | 卷型 | 状态 | 依据 |', '| :---: | --- | --- | --- | --- | --- |']
     for p in sorted(papers, key=lambda p: (p['status'] != '缺卷', -p['year'], p['area'], p['subject'], p['variant'] or '')):
@@ -253,6 +258,109 @@ def dashboard_svg(rows, s, cov):
     return '\n'.join(o for o in out if o) + '\n'
 
 
+# 试卷健康等级：每份试卷按最严重的缺口定级。
+GRADES = [('完整', '#34d399'), ('答案待补', '#fde047'), ('缺选项或材料', '#fb923c'), ('缺题干或题目', '#ef4444')]
+MISSING_COLOR = '#334155'
+
+
+def grades(rows, xingce, shenlun):
+    out = {}
+    for r in rows:
+        x, z = xingce.get(r['path'], {}), shenlun.get(r['path'], {})
+        if x.get('stem') or z.get('question'):
+            g = 3
+        elif x.get('option') or z.get('material'):
+            g = 2
+        elif x.get('answer') or z.get('answer') or r['path'] in ANSWER_UNVERIFIED:
+            g = 1
+        else:
+            g = 0
+        out[r['path']] = g
+    return out
+
+
+def health_table(rows, grade, papers):
+    by = defaultdict(lambda: Counter())
+    for r in rows:
+        by[r['area']][grade[r['path']]] += 1
+    for p in papers:
+        by[p['area']]['missing' if p['status'] == '缺卷' else 'pending'] += 1
+    order = sorted(by, key=lambda a: (a != '国考', -sum(by[a][g] for g in range(4)), a))
+    L = ['| 地区 | 已收录 | 完整 | 答案待补 | 缺选项或材料 | 缺题干或题目 | 缺卷 | 待核 |',
+         '| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |']
+    tot = Counter()
+    for a in order:
+        c = by[a]; n = sum(c[g] for g in range(4))
+        for k in list(range(4)) + ['missing', 'pending']:
+            tot[k] += c[k]
+        cell = lambda k: str(c[k]) if c[k] else '—'
+        L.append(f"| {a} | {n} | {cell(0)} | {cell(1)} | {cell(2)} | {cell(3)} | {cell('missing')} | {cell('pending')} |")
+    n = sum(tot[g] for g in range(4))
+    L.append(f"| **合计** | **{n:,}** | **{tot[0]:,}** | **{tot[1]}** | **{tot[2]}** | **{tot[3]}** | **{tot['missing']}** | **{tot['pending']}** |")
+    return L
+
+
+def health_svg(rows, grade, papers):
+    """上：全库试卷健康度条；下：地区 × 年份健康地图（每格取最差等级，▲ 表示该格有缺卷）。"""
+    areas = sorted({r['area'] for r in rows} | {p['area'] for p in papers},
+                   key=lambda a: (a != '国考', a not in ('浙江',), a))
+    years = list(range(2008, 2027))
+    cell = defaultdict(list)
+    for r in rows:
+        cell[(r['area'], int(r['year']))].append(grade[r['path']])
+    miss = Counter((p['area'], p['year']) for p in papers if p['status'] == '缺卷')
+    count = Counter(grade.values()); total = sum(count.values())
+    cw, ch, lw, top = 40, 24, 132, 200
+    W = lw + len(years) * cw + 40
+    H = top + len(areas) * ch + 70
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">',
+           f'<rect width="{W}" height="{H}" rx="14" fill="#ffffff"/>',
+           '<text x="24" y="38" font-size="20" font-weight="700" fill="#0f172a">试卷健康度</text>',
+           f'<text x="24" y="62" font-size="13" fill="#64748b">每份试卷按最严重的缺口定级 · 共 {total:,} 份</text>']
+    # 健康度条
+    bx, by_, bw = 24, 84, W - 48
+    x = bx
+    for g, (label, color) in enumerate(GRADES):
+        w = bw * count[g] / total
+        if w:
+            out.append(f'<rect x="{x:.1f}" y="{by_}" width="{max(w, 3):.1f}" height="22" fill="{color}"/>')
+        x += w
+    out.append(f'<rect x="{bx}" y="{by_}" width="{bw}" height="22" rx="6" fill="none" stroke="#e2e8f0"/>')
+    legend = [(f'{label} {count[g]:,} 份（{count[g] / total:.1%}）', color) for g, (label, color) in enumerate(GRADES)]
+    legend.append((f'缺卷 {sum(miss.values())} 卷', MISSING_COLOR))
+    col = bw / len(legend)
+    for i, (txt, color) in enumerate(legend):
+        lx = bx + i * col
+        out.append(f'<rect x="{lx:.1f}" y="{by_ + 36}" width="12" height="12" rx="3" fill="{color}"/>')
+        out.append(f'<text x="{lx + 18:.1f}" y="{by_ + 47}" font-size="12" fill="#334155">{txt}</text>')
+    # 地图
+    out.append(f'<text x="24" y="{top - 30}" font-size="15" font-weight="700" fill="#0f172a">地区 × 年份</text>')
+    out.append(f'<text x="{W - 24}" y="{top - 30}" font-size="12" fill="#64748b" text-anchor="end">格内数字为收录份数 · 颜色取该格最严重等级 · ▲ 该格另有缺卷</text>')
+    for i, y in enumerate(years):
+        out.append(f'<text x="{lw + i * cw + cw / 2}" y="{top - 8}" font-size="11" fill="#475569" text-anchor="middle">{y}</text>')
+    for r, area in enumerate(areas):
+        yy = top + r * ch
+        out.append(f'<text x="{lw - 12}" y="{yy + ch / 2 + 4}" font-size="12" fill="#334155" text-anchor="end">{area}</text>')
+        for i, y in enumerate(years):
+            xx = lw + i * cw
+            gs, m = cell.get((area, y), []), miss.get((area, y), 0)
+            if gs:
+                fill = GRADES[max(gs)][1]
+            elif m:
+                fill = MISSING_COLOR
+            else:
+                fill = '#f1f5f9'
+            out.append(f'<rect x="{xx + 2}" y="{yy + 2}" width="{cw - 4}" height="{ch - 4}" rx="5" fill="{fill}"/>')
+            if gs:
+                out.append(f'<text x="{xx + cw / 2}" y="{yy + ch / 2 + 4}" font-size="11" fill="#0f172a" text-anchor="middle">{len(gs)}</text>')
+            if m and gs:
+                out.append(f'<path d="M{xx + cw - 14} {yy + 2} H{xx + cw - 2} V{yy + 14} Z" fill="{MISSING_COLOR}"/>')
+            elif m:
+                out.append(f'<text x="{xx + cw / 2}" y="{yy + ch / 2 + 4}" font-size="11" fill="#ffffff" text-anchor="middle">缺</text>')
+    out.append('</svg>')
+    return '\n'.join(out) + '\n'
+
+
 def readme_block(s):
     lines = ['<!-- gwy:gaps:start -->'] + overview(s) + [
         '', '行测每题只计最严重的一级。缺卷以实际举行的考试为准（2016–2026 年）。'
@@ -272,7 +380,8 @@ def main():
     for name, block in (('gaps', readme_block(s)), ('coverage', coverage_block(cov))):
         readme = re.sub(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', lambda _: block, readme, flags=re.S)
     outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme,
-               ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov)}
+               ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov),
+               ROOT / 'docs/assets/health.svg': health_svg(data[0], grades(data[0], data[1], data[2]), data[3])}
     stale = [p for p, c in outputs.items() if not p.exists() or p.read_text(encoding='utf-8') != c]
     if args.check:
         print('最新' if not stale else '需要重新生成：' + '、'.join(p.relative_to(ROOT).as_posix() for p in stale))
