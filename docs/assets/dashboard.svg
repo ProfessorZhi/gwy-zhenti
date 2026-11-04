@@ -4,7 +4,7 @@
 <rect x="16" y="16" width="280" height="228" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="36" y="48" font-size="15" font-weight="700" fill="#0f172a">2016–2026 收录率</text>
 <circle cx="96" cy="150" r="54" fill="none" stroke="#e2e8f0" stroke-width="14"/>
-<circle cx="96" cy="150" r="54" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="round" stroke-dasharray="326.0 339.3" transform="rotate(-90 96 150)"/>
+<circle cx="96" cy="150" r="54" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="butt" stroke-dasharray="326.0 339.3" transform="rotate(-90 96 150)"/>
 <text x="96" y="157" font-size="21" font-weight="800" fill="#0f172a" text-anchor="middle">96.1%</text>
 <text x="172" y="108" font-size="12" fill="#64748b">应有试卷</text>
 <text x="276" y="108" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">1,306</text>

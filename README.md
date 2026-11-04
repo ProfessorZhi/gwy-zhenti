@@ -148,22 +148,26 @@
 ## 已知缺口
 
 <p align="center">
-  <img src="docs/assets/health.svg" alt="试卷健康度：全库分级与地区年份分布" width="100%">
+  <img src="docs/assets/health.svg" alt="2016–2026 年试卷健康度：按台账统计缺卷与局部缺口" width="100%">
+</p>
+
+<p align="center">
+  <img src="docs/assets/health-2008-2015.svg" alt="2008–2015 年试卷健康度：只统计已收录试卷的局部缺口" width="100%">
 </p>
 
 <!-- gwy:gaps:start -->
-| 层级 | 类别 | 数量 | 跟踪 |
-| --- | --- | ---: | :---: |
-| **缺卷** | 已确认缺卷 | 51 卷 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
-| | 考试身份待核 | 29 卷 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
-| **行测** | 缺题干 | 280 题 · 60 卷 | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
-| | 缺选项 | 6 题 · 6 卷 | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
-| | 缺答案 | — | |
-| **申论** | 缺题目 | — | |
-| | 缺材料 | 7 份材料 · 3 卷 | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
-| | 缺答案 | 7 题 · 3 卷 | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
+| 层级 | 类别 | 2016–2026 | 2008–2015 | 跟踪 |
+| --- | --- | ---: | ---: | :---: |
+| **缺卷** | 已确认缺卷 | 51 卷 | 不判定 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
+|  | 考试身份待核 | 29 卷 | 不判定 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
+| **行测** | 缺题干 | 280 题 · 60 卷 | — | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
+|  | 缺选项 | 6 题 · 6 卷 | — | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
+|  | 缺答案 | — | — |  |
+| **申论** | 缺题目 | — | — |  |
+|  | 缺材料 | 7 份材料 · 3 卷 | — | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
+|  | 缺答案 | 7 题 · 3 卷 | — | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
 
-行测每题只计最严重的一级。缺卷以实际举行的考试为准（2016–2026 年）。逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)。
+行测每题只计最严重的一级。缺卷以实际举行的考试为准，仅统计 2016–2026 年；2015 年及以前只统计已收录试卷的局部缺口。逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)。
 <!-- gwy:gaps:end -->
 
 ## 勘误与反馈

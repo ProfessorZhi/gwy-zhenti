@@ -97,16 +97,19 @@ def collect():
     return rows, xingce, shenlun, papers
 
 
-def summary(rows, xingce, shenlun, papers):
+def summary(rows, xingce, shenlun, papers, lo=0, hi=9999):
     s = Counter()
-    for v in xingce.values():
-        for k in ('stem', 'option', 'answer'):
-            s['x_' + k] += len(v[k]); s['xp_' + k] += bool(v[k])
-    for v in shenlun.values():
-        for k in ('question', 'material', 'answer'):
-            s['s_' + k] += len(v[k]); s['sp_' + k] += bool(v[k])
-    s['missing'] = sum(p['status'] == '缺卷' for p in papers)
-    s['pending'] = sum(p['status'] == '待核' for p in papers)
+    year = {r['path']: int(r['year']) for r in rows}
+    for path, v in xingce.items():
+        if lo <= year[path] <= hi:
+            for k in ('stem', 'option', 'answer'):
+                s['x_' + k] += len(v[k]); s['xp_' + k] += bool(v[k])
+    for path, v in shenlun.items():
+        if lo <= year[path] <= hi:
+            for k in ('question', 'material', 'answer'):
+                s['s_' + k] += len(v[k]); s['sp_' + k] += bool(v[k])
+    s['missing'] = sum(p['status'] == '缺卷' for p in papers if lo <= p['year'] <= hi)
+    s['pending'] = sum(p['status'] == '待核' for p in papers if lo <= p['year'] <= hi)
     s['unverified'] = sum(len(v) for v in ANSWER_UNVERIFIED.values())
     s['questions'] = sum(int(r.get('declared_questions') or 0) for r in rows)
     return s
@@ -116,21 +119,22 @@ def num(n, unit):
     return f'{n} {unit}' if n else '—'
 
 
-def overview(s, link_prefix=''):
+def overview(new, old):
+    """缺口总表：2016–2026 与 2008–2015 分列；2015 年及以前不判定缺卷。"""
     def pq(n, p, unit='题'):
         return f'{n} {unit} · {p} 卷' if n else '—'
-    return [
-        '| 层级 | 类别 | 数量 | 跟踪 |',
-        '| --- | --- | ---: | :---: |',
-        f"| **缺卷** | 已确认缺卷 | {num(s['missing'], '卷')} | [#160]({ISSUES}160) |",
-        f"| | 考试身份待核 | {num(s['pending'], '卷')} | [#161]({ISSUES}161) |",
-        f"| **行测** | 缺题干 | {pq(s['x_stem'], s['xp_stem'])} | [#155]({ISSUES}155) [#156]({ISSUES}156) |",
-        f"| | 缺选项 | {pq(s['x_option'], s['xp_option'])} | [#157]({ISSUES}157) |",
-        f"| | 缺答案 | {pq(s['x_answer'], s['xp_answer'])} | |",
-        f"| **申论** | 缺题目 | {pq(s['s_question'], s['sp_question'])} | |",
-        f"| | 缺材料 | {pq(s['s_material'], s['sp_material'], '份材料')} | [#159]({ISSUES}159) |",
-        f"| | 缺答案 | {pq(s['s_answer'], s['sp_answer'])} | [#158]({ISSUES}158) |",
-    ]
+    rows = [('**缺卷**', '已确认缺卷', num(new['missing'], '卷'), '不判定', f'[#160]({ISSUES}160)'),
+            ('', '考试身份待核', num(new['pending'], '卷'), '不判定', f'[#161]({ISSUES}161)')]
+    for label, key, unit, issue in (('**行测**|缺题干', 'stem', '题', f'[#155]({ISSUES}155) [#156]({ISSUES}156)'),
+                                    ('|缺选项', 'option', '题', f'[#157]({ISSUES}157)'), ('|缺答案', 'answer', '题', '')):
+        a, b_ = label.split('|')
+        rows.append((a, b_, pq(new['x_' + key], new['xp_' + key], unit), pq(old['x_' + key], old['xp_' + key], unit), issue))
+    for label, key, unit, issue in (('**申论**|缺题目', 'question', '题', ''), ('|缺材料', 'material', '份材料', f'[#159]({ISSUES}159)'),
+                                    ('|缺答案', 'answer', '题', f'[#158]({ISSUES}158)')):
+        a, b_ = label.split('|')
+        rows.append((a, b_, pq(new['s_' + key], new['sp_' + key], unit), pq(old['s_' + key], old['sp_' + key], unit), issue))
+    return ['| 层级 | 类别 | 2016–2026 | 2008–2015 | 跟踪 |', '| --- | --- | ---: | ---: | :---: |'] + \
+           [f'| {a} | {b_} | {c} | {d} | {e} |' for a, b_, c, d, e in rows]
 
 
 def status_md(rows, xingce, shenlun, papers):
@@ -146,13 +150,15 @@ def status_md(rows, xingce, shenlun, papers):
          '- **局部缺口**：已收录试卷内的缺失，按题计。行测分三级——缺题干、缺选项、缺答案，每题只计最严重的一级；申论分缺题目、缺材料、缺答案。',
          '- **来源**：以粉笔为主，华图与网络检索补充。每份试卷在文件头 `来源` 与 `来源清单` 中记录实际采用的全部来源；缺卷指上述来源均未取得的应有试卷。', '',
          '## 总览', '']
-    L += overview(s)
+    s_new, s_old = summary(rows, xingce, shenlun, papers, 2016, 2026), summary(rows, xingce, shenlun, papers, 0, 2015)
+    L += overview(s_new, s_old)
     L += ['', f'已收录试卷 {files:,} 份（2016–2026 年 {len(recent):,} 份）。'
           f"另有 {s['unverified']} 题参考答案已收录、但与题目的对应关系待核，见 [#157]({ISSUES}157)。", '']
     grade = grades(rows, xingce, shenlun)
     L += ['## 试卷健康度', '',
           '每份试卷按最严重的缺口定级：**完整** → **答案待补**（缺参考答案或答案对应待核）→ **缺选项或材料** → **缺题干或题目**。', '',
-          '<p align="center"><img src="assets/health.svg" alt="试卷健康度：全库分级与地区年份分布" width="100%"></p>', '']
+          '<p align="center"><img src="assets/health.svg" alt="2016–2026 年试卷健康度" width="100%"></p>', '',
+          '<p align="center"><img src="assets/health-2008-2015.svg" alt="2008–2015 年试卷健康度" width="100%"></p>', '']
     L += health_table(rows, grade, papers) + ['']
     # 缺卷
     L += ['## 一、未收录卷次', '', '2016–2026 年每个「地区 × 年份 × 科目」槽位均须为已收录，或在台账中登记为缺卷、待核、无独立考试之一。', '',
@@ -262,7 +268,7 @@ def dashboard_svg(rows, s, cov):
     import math
     circ = 2 * math.pi * rad
     out.append(f'<circle cx="{cx}" cy="{cy}" r="{rad}" fill="none" stroke="#e2e8f0" stroke-width="14"/>')
-    out.append(f'<circle cx="{cx}" cy="{cy}" r="{rad}" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="round" '
+    out.append(f'<circle cx="{cx}" cy="{cy}" r="{rad}" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="butt" '
                f'stroke-dasharray="{circ * r["rate"]:.1f} {circ:.1f}" transform="rotate(-90 {cx} {cy})"/>')
     out.append(f'<text x="{cx}" y="{cy + 7}" font-size="21" font-weight="800" fill="#0f172a" text-anchor="middle">{r["rate"]:.1%}</text>')
     for i, (k, v) in enumerate((('应有试卷', f"{r['expected']:,}"), ('已收录', f"{r['collected']:,}"), ('缺卷', r['missing']), ('待核', r['pending']))):
@@ -388,16 +394,19 @@ def unregistered(rows, grade, papers):
     return sorted(k for k, v in slot_status(rows, grade, papers).items() if v[0] == '未登记')
 
 
-def health_svg(rows, grade, papers):
-    """试卷健康度：上方为全库分级，下方为 2016–2026 年地区 × 年份槽位图，每格左半行测、右半申论。"""
+def health_svg(rows, grade, papers, lo=2016, hi=2026):
+    """某年份段的试卷健康度：上方为该段试卷分级，下方为地区 × 年份槽位图，每格左半行测、右半申论。
+    2016 年起按台账显示缺卷、待核、无独立考试；2015 年及以前不判定缺卷，未收录的格子标为「未收录」。"""
+    recent = lo >= 2016
     slots = slot_status(rows, grade, papers)
-    names = {k[0] for k in slots}
+    names = {k[0] for k in slots} if recent else {series(r) for r in rows if lo <= int(r['year']) <= hi}
     groups = [('国考与重点地区', [n for n in FOCUS if n in names]),
               ('其他省份', sorted(n for n in names if n not in FOCUS and n not in SPECIAL)),
               ('专项考试', [n for n in SPECIAL if n in names])]
-    years = list(range(2016, 2027))
-    count = Counter(grade.values()); total = sum(count.values())
-    status = Counter(p['status'] for p in papers)
+    years = list(range(lo, hi + 1))
+    period = [r for r in rows if lo <= int(r['year']) <= hi]
+    count = Counter(grade[r['path']] for r in period); total = sum(count.values())
+    status = Counter(p['status'] for p in papers if lo <= p['year'] <= hi)
     cw, ch, lw, rw = 66, 22, 132, 92
     gap_group = 34
     top = 230
@@ -408,8 +417,8 @@ def health_svg(rows, grade, papers):
            '<line x1="0" y1="0" x2="0" y2="5" stroke="#cbd5e1" stroke-width="1.2"/></pattern>'
            '<clipPath id="bar"><rect x="24" y="96" width="{0}" height="18" rx="9"/></clipPath></defs>'.format(W - 48),
            f'<rect width="{W}" height="{H}" rx="16" fill="#ffffff"/>',
-           '<text x="24" y="40" font-size="22" font-weight="800" fill="#0f172a">试卷健康度</text>',
-           f'<text x="24" y="66" font-size="13" fill="#64748b">已收录 {total:,} 份试卷，按最严重的缺口定级；完整率 '
+           f'<text x="24" y="40" font-size="22" font-weight="800" fill="#0f172a">试卷健康度 · {lo}–{hi}</text>',
+           f'<text x="24" y="66" font-size="13" fill="#64748b">{lo}–{hi} 年已收录 {total:,} 份试卷，按最严重的缺口定级；完整率 '
            f'<tspan font-weight="700" fill="#059669">{count[0] / total:.1%}</tspan></text>']
     # 分级比例条
     x = 24; bw = W - 48
@@ -422,8 +431,11 @@ def health_svg(rows, grade, papers):
     out.append('</g>')
     # 图例药丸
     pills = [(f'{label} {count[g]:,}', color, None) for g, (label, color) in enumerate(GRADES)]
-    pills += [(f"缺卷 {status['缺卷']}", MISSING_COLOR, None), (f"待核 {status['待核']}", PENDING_COLOR, None),
-              ('无独立考试', NO_EXAM_COLOR, 'url(#none)')]
+    if recent:
+        pills += [(f"缺卷 {status['缺卷']}", MISSING_COLOR, None), (f"待核 {status['待核']}", PENDING_COLOR, None),
+                  ('无独立考试', NO_EXAM_COLOR, 'url(#none)')]
+    else:
+        pills += [('未收录（不判定缺卷）', UNCOUNTED_COLOR, None)]
     px, py = 24, 132
     for txt, color, pattern in pills:
         w = 30 + len(txt) * 12.5
@@ -434,23 +446,22 @@ def health_svg(rows, grade, papers):
         out.append(f'<text x="{px + 26:.1f}" y="{py + 17.5}" font-size="12" fill="#334155">{txt}</text>')
         px += w + 8
     # 年份表头
-    out.append(f'<text x="24" y="{top - 26}" font-size="13" font-weight="700" fill="#0f172a">2016–2026 年槽位</text>')
+    out.append(f'<text x="24" y="{top - 52}" font-size="13" font-weight="700" fill="#0f172a">{lo}–{hi} 年槽位</text>')
     for i, y in enumerate(years):
         cx = lw + i * cw + cw / 2
         out.append(f'<text x="{cx}" y="{top - 24}" font-size="12" font-weight="600" fill="#334155" text-anchor="middle">{y}</text>')
         out.append(f'<text x="{cx - 15}" y="{top - 8}" font-size="10" fill="#94a3b8" text-anchor="middle">行测</text>')
         out.append(f'<text x="{cx + 15}" y="{top - 8}" font-size="10" fill="#94a3b8" text-anchor="middle">申论</text>')
-    out.append(f'<text x="{lw + len(years) * cw + rw / 2 + 8}" y="{top - 16}" font-size="11" fill="#64748b" text-anchor="middle">完整 / 应有</text>')
+    out.append(f'<text x="{lw + len(years) * cw + rw / 2 + 8}" y="{top - 16}" font-size="11" fill="#64748b" text-anchor="middle">{"完整 / 应有" if recent else "完整 / 已收录"}</text>')
     y0 = top
     half = (cw - 10) / 2
     colors = {'缺卷': MISSING_COLOR, '待核': PENDING_COLOR, '无独立考试': NO_EXAM_COLOR, '不统计': UNCOUNTED_COLOR, '未登记': UNREGISTERED_COLOR}
     complete_by = Counter(); expected_by = Counter()
-    for r in rows:
-        if int(r['year']) >= 2016:
-            expected_by[series(r)] += 1
-            complete_by[series(r)] += grade[r['path']] == 0
+    for r in period:
+        expected_by[series(r)] += 1
+        complete_by[series(r)] += grade[r['path']] == 0
     for p in papers:
-        if p['status'] == '缺卷':
+        if p['status'] == '缺卷' and lo <= p['year'] <= hi:
             expected_by[p['area']] += 1
     for title, members in groups:
         if not members:
@@ -463,7 +474,7 @@ def health_svg(rows, grade, papers):
             out.append(f'<text x="{lw - 12}" y="{y0 + ch / 2 + 4}" font-size="12" fill="#1e293b" text-anchor="end">{name}</text>')
             for i, y in enumerate(years):
                 for j, subj in enumerate(SUBJECTS):
-                    state, g, led = slots[(name, y, subj)]
+                    state, g, led = slots.get((name, y, subj), ('不统计', None, set()))
                     xx = lw + i * cw + 4 + j * (half + 2)
                     fill = GRADES[g][1] if state == '收录' else colors[state]
                     out.append(f'<rect x="{xx:.1f}" y="{y0 + 3}" width="{half:.1f}" height="{ch - 6}" rx="4" fill="{fill}"/>')
@@ -480,14 +491,16 @@ def health_svg(rows, grade, papers):
                 out.append(f'<rect x="{bx0}" y="{y0 + 7}" width="{44 * done / need:.1f}" height="8" rx="4" fill="#34d399"/>')
             out.append(f'<text x="{bx0 + 50}" y="{y0 + 15}" font-size="11" fill="#475569">{done}/{need}</text>')
             y0 += ch
-    out.append(f'<text x="24" y="{H - 16}" font-size="11" fill="#94a3b8">圆点表示同一科目另有缺卷（深色）或待核（紫色）卷型 · 广州 2019 年起并入广东省考 · 2015 年及以前不统计缺卷</text>')
+    note = ('圆点表示同一科目另有缺卷（深色）或待核（紫色）卷型 · 广州 2019 年起并入广东省考' if recent
+            else '2015 年及以前只统计已收录试卷的局部缺口，不判定缺卷；浅色格为未收录')
+    out.append(f'<text x="24" y="{H - 16}" font-size="11" fill="#94a3b8">{note}</text>')
     out.append('</svg>')
     return '\n'.join(out) + '\n'
 
 
-def readme_block(s):
-    lines = ['<!-- gwy:gaps:start -->'] + overview(s) + [
-        '', '行测每题只计最严重的一级。缺卷以实际举行的考试为准（2016–2026 年）。'
+def readme_block(new, old):
+    lines = ['<!-- gwy:gaps:start -->'] + overview(new, old) + [
+        '', '行测每题只计最严重的一级。缺卷以实际举行的考试为准，仅统计 2016–2026 年；2015 年及以前只统计已收录试卷的局部缺口。'
         f'逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148]({ISSUES}148)。', '<!-- gwy:gaps:end -->']
     return '\n'.join(lines)
 
@@ -501,11 +514,14 @@ def main():
     cov = coverage(data[0], data[3])
     readme_path = ROOT / 'README.md'
     readme = readme_path.read_text(encoding='utf-8')
-    for name, block in (('gaps', readme_block(s)), ('coverage', coverage_block(cov))):
+    s_new = summary(data[0], data[1], data[2], data[3], 2016, 2026)
+    s_old = summary(data[0], data[1], data[2], data[3], 0, 2015)
+    for name, block in (('gaps', readme_block(s_new, s_old)), ('coverage', coverage_block(cov))):
         readme = re.sub(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', lambda _: block, readme, flags=re.S)
     outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme,
                ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov),
-               ROOT / 'docs/assets/health.svg': health_svg(data[0], grades(data[0], data[1], data[2]), data[3]),
+               ROOT / 'docs/assets/health.svg': health_svg(data[0], grades(data[0], data[1], data[2]), data[3], 2016, 2026),
+               ROOT / 'docs/assets/health-2008-2015.svg': health_svg(data[0], grades(data[0], data[1], data[2]), data[3], 2008, 2015),
                ROOT / 'catalog/exam-slots.jsonl': ''.join(json.dumps(r, ensure_ascii=False, sort_keys=True) + '\n' for r in cov['ledger'])}
     stale = [p for p, c in outputs.items() if not p.exists() or p.read_text(encoding='utf-8') != c]
     if args.check:

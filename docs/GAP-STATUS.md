@@ -12,16 +12,16 @@
 
 ## 总览
 
-| 层级 | 类别 | 数量 | 跟踪 |
-| --- | --- | ---: | :---: |
-| **缺卷** | 已确认缺卷 | 51 卷 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
-| | 考试身份待核 | 29 卷 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
-| **行测** | 缺题干 | 280 题 · 60 卷 | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
-| | 缺选项 | 6 题 · 6 卷 | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
-| | 缺答案 | — | |
-| **申论** | 缺题目 | — | |
-| | 缺材料 | 7 份材料 · 3 卷 | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
-| | 缺答案 | 7 题 · 3 卷 | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
+| 层级 | 类别 | 2016–2026 | 2008–2015 | 跟踪 |
+| --- | --- | ---: | ---: | :---: |
+| **缺卷** | 已确认缺卷 | 51 卷 | 不判定 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
+|  | 考试身份待核 | 29 卷 | 不判定 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
+| **行测** | 缺题干 | 280 题 · 60 卷 | — | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
+|  | 缺选项 | 6 题 · 6 卷 | — | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
+|  | 缺答案 | — | — |  |
+| **申论** | 缺题目 | — | — |  |
+|  | 缺材料 | 7 份材料 · 3 卷 | — | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
+|  | 缺答案 | 7 题 · 3 卷 | — | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
 
 已收录试卷 1,669 份（2016–2026 年 1,264 份）。另有 18 题参考答案已收录、但与题目的对应关系待核，见 [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157)。
 
@@ -29,7 +29,9 @@
 
 每份试卷按最严重的缺口定级：**完整** → **答案待补**（缺参考答案或答案对应待核）→ **缺选项或材料** → **缺题干或题目**。
 
-<p align="center"><img src="assets/health.svg" alt="试卷健康度：全库分级与地区年份分布" width="100%"></p>
+<p align="center"><img src="assets/health.svg" alt="2016–2026 年试卷健康度" width="100%"></p>
+
+<p align="center"><img src="assets/health-2008-2015.svg" alt="2008–2015 年试卷健康度" width="100%"></p>
 
 | 地区 | 已收录 | 完整 | 答案待补 | 缺选项或材料 | 缺题干或题目 | 缺卷 | 待核 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
