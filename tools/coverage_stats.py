@@ -171,7 +171,7 @@ def heatmap_svg(stats):
             elif st['无独立考试']:
                 out.append(rect.format(NONE)); out.append(rect.format('url(#none)'))
             else:
-                out.append(rect.format(UNCOUNTED))
+                out.append(rect.format(UNCOUNTED).replace('/>', ' stroke="#94a3b8" stroke-dasharray="3 2"/>'))
         out.append(f'<text x="{lw + gw + 36}" y="{y + ch / 2 + 4}" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">{total}</text>')
     yb = top + len(areas) * ch + 8
     out.append(f'<line x1="24" y1="{yb - 4}" x2="{width - 24}" y2="{yb - 4}" stroke="#e2e8f0"/>')
@@ -180,16 +180,17 @@ def heatmap_svg(stats):
         out.append(f'<text x="{lw + i * cw + cw / 2}" y="{yb + 14}" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">{col[year]}</text>')
     ly = yb + 50
     items = [('1', palette[1], None), ('2', palette[2], None), ('3', palette[3], None), ('4', palette[4], None), ('5+', palette[5], None),
-             ('缺卷', MISSING, None), ('待核', PENDING, None), ('无独立考试', NONE, 'url(#none)'), ('2015 年及以前未收录', UNCOUNTED, None)]
+             ('缺卷', MISSING, None), ('待核', PENDING, None), ('无独立考试', NONE, 'url(#none)'), ('未收录（2015 年及以前不判定缺卷）', UNCOUNTED, 'dash')]
     x = 24
     out.append(f'<text x="{x}" y="{ly + 1}" font-size="12" fill="#475569">图例</text>')
     x += 40
     for label_text, c, pattern in items:
-        out.append(f'<rect x="{x}" y="{ly - 12}" width="18" height="16" rx="4" fill="{c}" stroke="#e2e8f0"/>')
-        if pattern:
+        dash = ' stroke-dasharray="3 2" stroke="#94a3b8"' if pattern == 'dash' else ' stroke="#e2e8f0"'
+        out.append(f'<rect x="{x}" y="{ly - 12}" width="18" height="16" rx="4" fill="{c}"{dash}/>')
+        if pattern and pattern != 'dash':
             out.append(f'<rect x="{x}" y="{ly - 12}" width="18" height="16" rx="4" fill="{pattern}"/>')
         out.append(f'<text x="{x + 24}" y="{ly + 1}" font-size="12" fill="#475569">{label_text}</text>')
-        x += 24 + len(label_text) * 12 + 16
+        x += 24 + sum(12 if ord(ch_) > 255 else 7 for ch_ in label_text) + 16
     out.append(f'<text x="24" y="{ly + 30}" font-size="12" fill="#94a3b8">圆点表示该年另有缺卷（深色）或待核（紫色）卷次 · 虚线分隔：浙江 ｜ 国考与重点地区 ｜ 其余地区 · 状态来自槽位台账</text>')
     out.append('</svg>')
     return '\n'.join(out)

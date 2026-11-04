@@ -157,8 +157,7 @@ def status_md(rows, xingce, shenlun, papers):
     grade = grades(rows, xingce, shenlun)
     L += ['## 试卷健康度', '',
           '每份试卷按最严重的缺口定级：**完整** → **答案待补**（缺参考答案或答案对应待核）→ **缺选项或材料** → **缺题干或题目**。', '',
-          ]
-    L += slots_md(rows, grade, papers, '###') + ['### 按地区汇总', '']
+          scroll_img('assets/health.svg', '试卷健康度：2008–2026 年地区 × 年份槽位', health_svg(rows, grade, papers)), '']
     L += health_table(rows, grade, papers) + ['']
     # 缺卷
     L += ['## 一、未收录卷次', '', '2016–2026 年每个「地区 × 年份 × 科目」槽位均须为已收录，或在台账中登记为缺卷、待核、无独立考试之一。', '',
@@ -305,7 +304,9 @@ def dashboard_svg(rows, s, cov):
     return '\n'.join(o for o in out if o) + '\n'
 
 
-# 试卷健康等级：每份试卷按最严重的缺口定级，0 完整、1 答案待补、2 缺选项或材料、3 缺题干或题目。
+# 试卷健康等级：每份试卷按最严重的缺口定级。
+GRADES = [('完整', '#34d399'), ('答案待补', '#fcd34d'), ('缺选项或材料', '#fb923c'), ('缺题干或题目', '#f43f5e')]
+MISSING_COLOR = '#334155'
 
 
 def grades(rows, xingce, shenlun):
@@ -346,6 +347,10 @@ def health_table(rows, grade, papers):
     return L
 
 
+PENDING_COLOR = '#c4b5fd'
+NO_EXAM_COLOR = '#f1f5f9'
+UNCOUNTED_COLOR = '#f8fafc'
+UNREGISTERED_COLOR = '#fecdd3'
 SUBJECTS = ('行测', '申论')
 FOCUS = ['国考', '浙江', '江苏', '上海', '北京', '天津', '广东', '广州', '深圳', '福建']
 SPECIAL = ['新疆兵团', '公安招警和公检法']
@@ -388,66 +393,161 @@ def unregistered(rows, grade, papers):
     return sorted(k for k, v in slot_status(rows, grade, papers).items() if v[0] == '未登记')
 
 
-# 槽位表：地区 × 年份的 Markdown 表格，每格两个符号依次为行测、申论。
-# 表格在 GitHub 上过宽时可横向滑动，文字不随页面缩小。
-MARKS = [('🟩', '完整'), ('🟨', '答案待补'), ('🟧', '缺选项或材料'), ('🟥', '缺题干或题目'),
-         ('🟫', '已收录部分卷型，另有卷型缺卷'), ('⬛', '缺卷'), ('🟪', '待核'), ('➖', '无独立考试'),
-         ('⬜', '未收录（2015 年及以前不判定缺卷）')]
-MARK = dict((v, k) for k, v in MARKS)
+SCROLL_HINT = '← 左右滑动查看全部年份 · 点击图片查看原图 →'
 
 
-def slot_mark(state, g, led):
-    if state == '收录':
-        return MARK['已收录部分卷型，另有卷型缺卷'] if '缺卷' in led else MARKS[g][0]
-    return {'缺卷': '⬛', '待核': '🟪', '无独立考试': '➖', '不统计': '⬜'}.get(state, '❔')
+def scroll_img(src, alt, svg):
+    """按原始尺寸嵌入宽图。GitHub 把表格设为可横向滚动，但图片默认按格宽缩小；
+    图上的提示行用不断行字符补足到图宽，撑开单元格，过宽时整张图左右滑动而不被压缩。"""
+    w = int(re.search(r'width="(\d+)"', svg).group(1))
+    hint = '\u2060'.join(SCROLL_HINT).replace(' ', '&nbsp;')
+    used = sum(12 if ord(c) > 255 else 6.5 for c in SCROLL_HINT)      # <sub> 字号约 12px
+    pad = '&nbsp;' * max(0, round((w - used) / 3.3))                  # 不断行空格约 3.1–3.4px，因字体而异
+    return (f'<table><tr><td><sub>{hint}{pad}</sub><br>'
+            f'<a href="{src}"><img src="{src}" alt="{alt}" width="{w}"></a></td></tr></table>')
 
 
-def slot_legend():
-    return ['图例：' + ' · '.join(f'{m} {t}' for m, t in MARKS), '']
+def cell_rect(out, x, y, w, h, state, g, led):
+    """画一个科目半格：收录按等级着色；缺卷、待核实心；无独立考试斜线；2015 年及以前未收录为虚线框。"""
+    if state == '不统计':
+        out.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h}" rx="4" fill="{UNCOUNTED_COLOR}" '
+                   f'stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 2"/>')
+        return
+    colors = {'缺卷': MISSING_COLOR, '待核': PENDING_COLOR, '无独立考试': NO_EXAM_COLOR, '未登记': UNREGISTERED_COLOR}
+    fill = GRADES[g][1] if state == '收录' else colors[state]
+    out.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h}" rx="4" fill="{fill}"/>')
+    if state == '无独立考试':
+        out.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h}" rx="4" fill="url(#none)" stroke="#cbd5e1"/>')
+    if state == '收录' and ('缺卷' in led or '待核' in led):
+        c = MISSING_COLOR if '缺卷' in led else '#8b5cf6'
+        out.append(f'<circle cx="{x + w - 4:.1f}" cy="{y + 4:.1f}" r="3" fill="{c}" stroke="#ffffff" stroke-width="1"/>')
 
 
-def slot_table(rows, grade, papers, lo, hi, prefix=''):
-    """地区 × 年份槽位表。2016 年起每行末尾为 完整/应有（应有 = 已收录 + 缺卷）；2015 年及以前为 完整/已收录。"""
-    recent = lo >= 2016
+def health_svg(rows, grade, papers):
+    """试卷健康度总图（2008–2026）：上方两段分别统计 2008–2015 与 2016–2026，下方为地区 × 年份槽位图，
+    每格左半行测、右半申论，每格都有图例状态。2016 年起按台账显示缺卷、待核、无独立考试；2015 年及以前不判定缺卷。"""
     slots = slot_status(rows, grade, papers)
-    period = [r for r in rows if lo <= int(r['year']) <= hi]
-    names = {k[0] for k in slots} if recent else {series(r) for r in period}
-    order = ([n for n in FOCUS if n in names] + sorted(n for n in names if n not in FOCUS and n not in SPECIAL)
-             + [n for n in SPECIAL if n in names])
-    done, have = Counter(), Counter()
-    for r in period:
-        have[series(r)] += 1
-        done[series(r)] += grade[r['path']] == 0
-    missing = Counter(p['area'] for p in papers if p['status'] == '缺卷' and lo <= p['year'] <= hi)
-    years = list(range(lo, hi + 1))
-    tail = ['完整\u2060/\u2060应有', '缺卷'] if recent else ['完整\u2060/\u2060已收录']
-    L = ['| 地区 | ' + ' | '.join(str(y) for y in years) + ' | ' + ' | '.join(tail) + ' |',
-         '| --- | ' + ' | '.join(':---:' for _ in years) + ' | ' + ' | '.join('---:' for _ in tail) + ' |']
-    nb = '\u2060'.join  # 字间插入不可断字符，表格变窄时整格不折行，改为横向滑动
-    for n in order:
-        cells = [nb(slot_mark(*slots[(n, y, s)]) for s in SUBJECTS) for y in years]
-        if recent:
-            end = [f'{done[n]}/{have[n] + missing[n]}', str(missing[n]) if missing[n] else '0']
+    names = {k[0] for k in slots}
+    groups = [('国考与重点地区', [n for n in FOCUS if n in names]),
+              ('其他省份', sorted(n for n in names if n not in FOCUS and n not in SPECIAL)),
+              ('专项考试', [n for n in SPECIAL if n in names])]
+    old, new = list(range(2008, 2016)), list(range(2016, 2027))
+    cw, ch, lw, split = 58, 24, 156, 22
+    xcol = {}
+    for i, y in enumerate(old):
+        xcol[y] = lw + i * cw
+    for i, y in enumerate(new):
+        xcol[y] = lw + len(old) * cw + split + i * cw
+    grid_r = xcol[2026] + cw
+    rx0 = grid_r + 20                                    # 行尾汇总区
+    W = rx0 + 250
+    top = 268
+    rows_n = sum(len(m) for _, m in groups)
+    H = top + rows_n * ch + len(groups) * 34 + 56
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">',
+           '<defs><pattern id="none" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+           '<line x1="0" y1="0" x2="0" y2="5" stroke="#cbd5e1" stroke-width="1.2"/></pattern></defs>',
+           f'<rect width="{W}" height="{H}" rx="18" fill="#ffffff" stroke="#e2e8f0"/>',
+           f'<text x="28" y="44" font-size="24" font-weight="800" fill="#0f172a">试卷健康度 · 2008–2026</text>',
+           f'<text x="28" y="70" font-size="13" fill="#64748b">每份试卷按最严重的缺口定级；2016 年起按槽位台账统计缺卷，2015 年及以前只统计已收录试卷</text>']
+    # 两段统计卡片
+    def card(x, w, title, sub, segs, total):
+        out.append(f'<rect x="{x}" y="90" width="{w}" height="86" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>')
+        out.append(f'<text x="{x + 18}" y="116" font-size="15" font-weight="800" fill="#0f172a">{title}</text>')
+        out.append(f'<text x="{x + w - 18}" y="116" font-size="12" fill="#475569" text-anchor="end">{sub}</text>')
+        out.append(f'<clipPath id="c{x}"><rect x="{x + 18}" y="130" width="{w - 36}" height="14" rx="7"/></clipPath>')
+        out.append(f'<g clip-path="url(#c{x})"><rect x="{x + 18}" y="130" width="{w - 36}" height="14" fill="#e2e8f0"/>')
+        xx = x + 18
+        for v, c, _ in segs:
+            ww = (w - 36) * v / total if total else 0
+            if v:
+                out.append(f'<rect x="{xx:.1f}" y="130" width="{max(ww, 3):.1f}" height="14" fill="{c}"/>')
+            xx += ww
+        out.append('</g>')
+        lx = x + 18
+        for v, c, label in segs:
+            if not v:
+                continue
+            out.append(f'<rect x="{lx}" y="155" width="10" height="10" rx="2" fill="{c}"/>')
+            out.append(f'<text x="{lx + 15}" y="164" font-size="11.5" fill="#475569">{label} '
+                       f'<tspan font-weight="700" fill="#0f172a">{v:,}</tspan></text>')
+            lx += 34 + len(label) * 11.5 + len(f'{v:,}') * 7
+    for lo, hi, x0, x1 in ((2008, 2015, 28, xcol[2015] + cw), (2016, 2026, xcol[2016], W - 28)):
+        period = [r for r in rows if lo <= int(r['year']) <= hi]
+        cnt = Counter(grade[r['path']] for r in period); n = len(period)
+        segs = [(cnt[g], c, label) for g, (label, c) in enumerate(GRADES)]
+        if lo >= 2016:
+            cov = coverage(rows, papers)['2016–2026']
+            segs.append((cov['missing'], MISSING_COLOR, '缺卷'))
+            card(x0, x1 - x0, f'{lo} – {hi} · 按槽位台账',
+                 f"应有 {cov['expected']:,} 卷 · 收录率 {cov['rate']:.1%} · 已收录试卷 {n:,} 份，完整率 {cnt[0] / n:.1%}",
+                 segs, n + cov['missing'])
         else:
-            end = [f'{done[n]}/{have[n]}']
-        L.append(f'| {nb(n)} | ' + ' | '.join(cells) + ' | ' + ' | '.join(end) + ' |')
-    return L
-
-
-def slots_md(rows, grade, papers, h):
-    """两段槽位表：2016–2026 按台账，2008–2015 只看已收录试卷。"""
-    return (slot_legend()
-            + ['每格两个符号依次为**行测、申论**；同一科目有多个卷型时取最差的一份。表格较宽时可左右滑动。', '',
-               f'{h} 2016–2026 年', '']
-            + slot_table(rows, grade, papers, 2016, 2026)
-            + ['', '行末「完整/应有」中，应有 = 已收录 + 缺卷；广州 2019 年起并入广东省考，无独立考试。', '',
-               f'{h} 2008–2015 年', '']
-            + slot_table(rows, grade, papers, 2008, 2015)
-            + ['', '2015 年及以前只统计已收录试卷的局部缺口，不判定缺卷。', ''])
-
-
-def slots_block(rows, grade, papers):
-    return '\n'.join(['<!-- gwy:slots:start -->'] + slots_md(rows, grade, papers, '####') + ['<!-- gwy:slots:end -->'])
+            card(x0, x1 - x0, f'{lo} – {hi} · 只计已收录', f'已收录试卷 {n:,} 份，完整率 {cnt[0] / n:.1%}', segs, n)
+    # 图例
+    pills = [(label, color, None) for label, color in GRADES] + [
+        ('缺卷', MISSING_COLOR, None), ('待核', PENDING_COLOR, None), ('无独立考试', NO_EXAM_COLOR, 'url(#none)'),
+        ('未收录（2015 年及以前不判定缺卷）', UNCOUNTED_COLOR, 'dash')]
+    px, py = 28, 190
+    for txt, color, pattern in pills:
+        w = 40 + sum(12.5 if ord(c) > 255 else 7 for c in txt)
+        out.append(f'<rect x="{px:.1f}" y="{py}" width="{w:.1f}" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>')
+        extra = ' stroke="#94a3b8" stroke-dasharray="3 2"' if pattern == 'dash' else ''
+        out.append(f'<rect x="{px + 10:.1f}" y="{py + 7}" width="14" height="12" rx="3" fill="{color}"{extra}/>')
+        if pattern and pattern != 'dash':
+            out.append(f'<rect x="{px + 10:.1f}" y="{py + 7}" width="14" height="12" rx="3" fill="{pattern}" stroke="#cbd5e1"/>')
+        out.append(f'<text x="{px + 30:.1f}" y="{py + 17.5}" font-size="12" fill="#334155">{txt}</text>')
+        px += w + 8
+    # 年份表头
+    for y, x in xcol.items():
+        cx = x + cw / 2
+        out.append(f'<text x="{cx}" y="{top - 22}" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">{y}</text>')
+        out.append(f'<text x="{cx - 13}" y="{top - 7}" font-size="9.5" fill="#94a3b8" text-anchor="middle">行测</text>')
+        out.append(f'<text x="{cx + 13}" y="{top - 7}" font-size="9.5" fill="#94a3b8" text-anchor="middle">申论</text>')
+    out.append(f'<text x="{rx0 + 8}" y="{top - 22}" font-size="11" font-weight="700" fill="#334155">2016–2026 完整 / 应有</text>')
+    out.append(f'<text x="{rx0 + 178}" y="{top - 22}" font-size="11" font-weight="700" fill="#334155">2008–2015</text>')
+    # 分段竖线
+    dx = xcol[2016] - split / 2
+    out.append(f'<line x1="{dx}" y1="{top - 36}" x2="{dx}" y2="{H - 40}" stroke="#cbd5e1" stroke-dasharray="4 3"/>')
+    done = defaultdict(Counter); need = defaultdict(Counter)
+    for r in rows:
+        k = 'new' if int(r['year']) >= 2016 else 'old'
+        need[series(r)][k] += 1
+        done[series(r)][k] += grade[r['path']] == 0
+    for p in papers:
+        if p['status'] == '缺卷':
+            need[p['area']]['new'] += 1
+    y0 = top
+    half = (cw - 10) / 2
+    stripe = 0
+    for title, members in groups:
+        if not members:
+            continue
+        y0 += 8
+        out.append(f'<text x="28" y="{y0 + 13}" font-size="12" font-weight="800" fill="#475569">{title}</text>')
+        out.append(f'<line x1="{28 + len(title) * 13 + 10}" y1="{y0 + 9}" x2="{W - 28}" y2="{y0 + 9}" stroke="#e2e8f0"/>')
+        y0 += 26
+        for name in members:
+            if stripe % 2:
+                out.append(f'<rect x="20" y="{y0}" width="{W - 40}" height="{ch}" rx="6" fill="#f8fafc"/>')
+            stripe += 1
+            out.append(f'<text x="{lw - 12}" y="{y0 + ch / 2 + 4.5}" font-size="12.5" fill="#1e293b" text-anchor="end">{name}</text>')
+            for y, x in xcol.items():
+                for j, subj in enumerate(SUBJECTS):
+                    state, g, led = slots.get((name, y, subj), ('不统计' if y < 2016 else '未登记', None, set()))
+                    cell_rect(out, x + 4 + j * (half + 2), y0 + 4, half, ch - 8, state, g, led)
+            d, n = done[name]['new'], need[name]['new']
+            out.append(f'<rect x="{rx0 + 8}" y="{y0 + 8}" width="90" height="8" rx="4" fill="#e2e8f0"/>')
+            if n:
+                out.append(f'<rect x="{rx0 + 8}" y="{y0 + 8}" width="{90 * d / n:.1f}" height="8" rx="4" fill="#34d399"/>')
+            out.append(f'<text x="{rx0 + 106}" y="{y0 + 16}" font-size="11.5" fill="#334155">{d}/{n}</text>')
+            do, no = done[name]['old'], need[name]['old']
+            out.append(f'<text x="{rx0 + 178}" y="{y0 + 16}" font-size="11.5" fill="#64748b">{f"{do}/{no}" if no else "—"}</text>')
+            y0 += ch
+    out.append(f'<text x="28" y="{H - 18}" font-size="11.5" fill="#94a3b8">圆点：同一科目另有缺卷（深色）或待核（紫色）卷型 · '
+               '行尾 2016–2026 为 完整/应有（应有 = 已收录 + 缺卷），2008–2015 为 完整/已收录 · 广州 2019 年起并入广东省考</text>')
+    out.append('</svg>')
+    return '\n'.join(out) + '\n'
 
 
 def readme_block(new, old):
@@ -468,12 +568,16 @@ def main():
     readme = readme_path.read_text(encoding='utf-8')
     s_new = summary(data[0], data[1], data[2], data[3], 2016, 2026)
     s_old = summary(data[0], data[1], data[2], data[3], 0, 2015)
-    grade = grades(data[0], data[1], data[2])
-    for name, block in (('gaps', readme_block(s_new, s_old)), ('coverage', coverage_block(cov)),
-                        ('slots', slots_block(data[0], grade, data[3]))):
+    health = health_svg(data[0], grades(data[0], data[1], data[2]), data[3])
+    health_block = '<!-- gwy:health:start -->\n' + scroll_img('docs/assets/health.svg', '试卷健康度：2008–2026 年地区 × 年份槽位', health) + '\n<!-- gwy:health:end -->'
+    heat = (ROOT / 'docs/assets/coverage-heatmap.svg').read_text(encoding='utf-8')
+    heat_block = '<!-- gwy:heatmap:start -->\n' + scroll_img('docs/assets/coverage-heatmap.svg', '地区 × 年份收录分布：各地区各年份收录的试卷数', heat) + '\n<!-- gwy:heatmap:end -->'
+    for name, block in (('gaps', readme_block(s_new, s_old)), ('coverage', coverage_block(cov)), ('health', health_block),
+                        ('heatmap', heat_block)):
         readme = re.sub(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', lambda _: block, readme, flags=re.S)
     outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme,
                ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov),
+               ROOT / 'docs/assets/health.svg': health_svg(data[0], grades(data[0], data[1], data[2]), data[3]),
                ROOT / 'catalog/exam-slots.jsonl': ''.join(json.dumps(r, ensure_ascii=False, sort_keys=True) + '\n' for r in cov['ledger'])}
     stale = [p for p, c in outputs.items() if not p.exists() or p.read_text(encoding='utf-8') != c]
     if args.check:
