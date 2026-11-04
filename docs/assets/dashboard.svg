@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="260" viewBox="0 0 920 260" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
+<defs><linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+<rect width="920" height="260" rx="16" fill="#ffffff"/>
+<rect x="16" y="16" width="280" height="228" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="36" y="48" font-size="15" font-weight="700" fill="#0f172a">2016–2026 收录率</text>
+<circle cx="96" cy="150" r="54" fill="none" stroke="#e2e8f0" stroke-width="14"/>
+<circle cx="96" cy="150" r="54" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="round" stroke-dasharray="326.1 339.3" transform="rotate(-90 96 150)"/>
+<text x="96" y="157" font-size="21" font-weight="800" fill="#0f172a" text-anchor="middle">96.1%</text>
+<text x="172" y="122" font-size="12" fill="#64748b">已收录卷次</text>
+<text x="276" y="122" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">1,260</text>
+<text x="172" y="152" font-size="12" fill="#64748b">缺卷</text>
+<text x="276" y="152" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">51</text>
+<text x="172" y="182" font-size="12" fill="#64748b">待核</text>
+<text x="276" y="182" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">6</text>
+<rect x="312" y="16" width="280" height="228" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="332" y="48" font-size="15" font-weight="700" fill="#0f172a">科目构成</text>
+<text x="332" y="96" font-size="30" font-weight="800" fill="#0f172a">1,674</text>
+<text x="332" y="118" font-size="12" fill="#64748b">份试卷 · 89,728 个题位</text>
+<rect x="332" y="140" width="240" height="16" rx="8" fill="#f59e0b"/>
+<rect x="332" y="140" width="105.4" height="16" rx="8" fill="#3b82f6"/>
+<rect x="429.4" y="140" width="8" height="16" fill="#3b82f6"/>
+<rect x="332" y="176" width="12" height="12" rx="3" fill="#3b82f6"/>
+<text x="352" y="186" font-size="13" fill="#334155">行测</text>
+<text x="572" y="186" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">735 份 · 44%</text>
+<rect x="332" y="204" width="12" height="12" rx="3" fill="#f59e0b"/>
+<text x="352" y="214" font-size="13" fill="#334155">申论</text>
+<text x="572" y="214" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">939 份 · 56%</text>
+<rect x="608" y="16" width="296" height="228" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="628" y="48" font-size="15" font-weight="700" fill="#0f172a">已收录试卷的局部缺口</text>
+<text x="628" y="88" font-size="12" fill="#334155">行测 缺题干</text>
+<rect x="712" y="76" width="140" height="14" rx="7" fill="#e2e8f0"/>
+<rect x="712" y="76" width="140.0" height="14" rx="7" fill="#ef4444"/>
+<text x="884" y="88" font-size="13" font-weight="700" fill="#0f172a" text-anchor="end">280</text>
+<text x="628" y="126" font-size="12" fill="#334155">行测 缺选项</text>
+<rect x="712" y="114" width="140" height="14" rx="7" fill="#e2e8f0"/>
+<rect x="712" y="114" width="6.0" height="14" rx="7" fill="#f97316"/>
+<text x="884" y="126" font-size="13" font-weight="700" fill="#0f172a" text-anchor="end">6</text>
+<text x="628" y="164" font-size="12" fill="#334155">申论 缺材料</text>
+<rect x="712" y="152" width="140" height="14" rx="7" fill="#e2e8f0"/>
+<rect x="712" y="152" width="6.0" height="14" rx="7" fill="#eab308"/>
+<text x="884" y="164" font-size="13" font-weight="700" fill="#0f172a" text-anchor="end">7</text>
+<text x="628" y="202" font-size="12" fill="#334155">申论 缺答案</text>
+<rect x="712" y="190" width="140" height="14" rx="7" fill="#e2e8f0"/>
+<rect x="712" y="190" width="6.0" height="14" rx="7" fill="#a855f7"/>
+<text x="884" y="202" font-size="13" font-weight="700" fill="#0f172a" text-anchor="end">7</text>
+<text x="628" y="230" font-size="11" fill="#94a3b8">单位：题（缺材料为份）· 行测每题只计最严重一级</text>
+</svg>
