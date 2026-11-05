@@ -1,0 +1,22 @@
+{
+  "paper": "省考/江苏/2026/申论-B类.md",
+  "questions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_url": "https://sjds.net/595993.html",
+  "source_html_sha256": "e4356cd85022b06e3f43bee5785855cde0e5ee4d5fd83c0fe4f1af1a6d1b1e85",
+  "source_identity": "四季读书网投稿，作者及是否使用AI未知，非官方",
+  "same_question_evidence": "四道题题干、分值和要求归一化后均对应；原材料与题面不改",
+  "before_sha256": "f06f55707f3d193c032ecd9432a38ecadadb23ce740a8fcfe7abd1f9ebcb4924",
+  "after_sha256": "0fa903fb0e37d727c14b88b562fc7e2f0efda9bfe4aa36d5c091b47f9fa8267c",
+  "answer_chars": [
+    250,
+    279,
+    351,
+    994
+  ],
+  "normalization": "移除来源中11个不可见 U+200C 控制字符；原始HTML仍保留，不改可见文本"
+}

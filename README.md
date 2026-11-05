@@ -161,7 +161,7 @@
 |  | 缺答案 | — | — |  |
 | **申论** | 缺题目 | — | — |  |
 |  | 缺材料 | 3 份材料 · 1 卷 | — | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
-|  | 缺答案 | 7 题 · 3 卷 | — | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
+|  | 缺答案 | 3 题 · 2 卷 | — | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
 
 行测每题只计最严重的一级。缺卷以实际举行的考试为准，仅统计 2016–2026 年；2015 年及以前只统计已收录试卷的局部缺口。逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)。
 <!-- gwy:gaps:end -->
