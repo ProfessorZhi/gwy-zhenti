@@ -62,7 +62,7 @@ python3 tools/cloud_quality.py --check --verify-images     # 结构与图片引�
 | 位置 | 作用 |
 | --- | --- |
 | [`fenbi/worker/`](fenbi/worker/) | 单卷流水线：`worker.mjs` 采集新卷；`land-cached.mjs` 把已采集的行测落盘；`land-shenlun.mjs` 把已采集的申论落盘 |
-| [`fenbi/driver/`](fenbi/driver/) | 目录巡检、候选生成、申论采集等驱动脚本 |
+| [`fenbi/driver/`](fenbi/driver/) | 目录巡检、候选生成、申论采集等驱动脚本；`huatu-capture.mjs` 抓取华图解析页整卷数据，见 [任务卡](../docs/workflow/HUATU-FILL.md) |
 | [`fenbi/src/`](fenbi/src/) | 解析、校验、渲染、闸门与发布的公共模块 |
 | [`fenbi/test/`](fenbi/test/) | 离线测试：`npm ci && node --test test/*.test.mjs` |
 | [`fenbi/policy.json`](fenbi/policy.json) | 年份范围、替换规则、缺题处理等入库策略 |
