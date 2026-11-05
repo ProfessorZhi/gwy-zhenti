@@ -160,7 +160,9 @@ def align(text, hq):
     anchor = len(anchors) / len(present) if present else 0.0
     offsets = Counter(h - n for n, h in anchors.items())
     offset = offsets.most_common(1)[0][0] if offsets else 0
-    taken = set(anchors.values())
+    # Even a match excluded from the monotone chain denotes existing content;
+    # using it as a fill would duplicate another question in a reordered paper.
+    taken = set(matched.values())
     report = {'questions': len(blocks), 'present': len(present), 'missing': missing,
               'huatu_questions': len(hq), 'offset': offset + 1, 'anchor': round(anchor, 3), 'fills': [], 'skipped': []}
     plan = {}
@@ -180,17 +182,15 @@ def align(text, hq):
         local = (h - q) if h is not None else 0
         tail = not after and all(n in missing for n in range(q, last + 1)) and last + local == len(hq) - 1
         reason = None
-        if tail and k == 2 and len(before) == 2:
-            pass
-        elif k < 3 or len(sides) < 2:
+        if not (tail and k == 2 and len(before) == 2) and (k < 3 or len(sides) < 2):
             reason = f'邻题夹逼 {k}/{len(preds)}，前后两侧未同时支持'
-        elif not 0 <= h < len(hq):
+        if reason is None and not 0 <= h < len(hq):
             reason = f'推算的华图题序 {h + 1} 超出范围'
-        elif h in taken:
+        elif reason is None and h in taken:
             reason = f'华图第 {h + 1} 题已与本库另一题对上'
-        elif not norm(hq[h].get('stem_html', '')) and not hq[h].get('options'):
+        elif reason is None and not norm(hq[h].get('stem_html', '')) and not hq[h].get('options'):
             reason = f'华图第 {h + 1} 题为空'
-        elif not hq[h].get('answer'):
+        elif reason is None and not hq[h].get('answer'):
             reason = f'华图第 {h + 1} 题无答案'
         if reason:
             report['skipped'].append({'q': q, 'reason': reason})
