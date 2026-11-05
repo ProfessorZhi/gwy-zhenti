@@ -14,6 +14,7 @@ agent 根据缺口清单在粉笔、华图找到卷子，进入解析页，把**
     "provider": "huatu",
     "session": "gwy-huatu",
     "key": "shanghai-2021-b",
+    "expectedCount": 127,
     "title": "页面上实际的完整试卷标题",
     "url": "https://v.huatu.com/tiku/analysis/已观察到的记录ID"
   }
@@ -22,7 +23,11 @@ agent 根据缺口清单在粉笔、华图找到卷子，进入解析页，把**
 
 粉笔填 `provider: fenbi`、独立 session 和实际 `/ti/exam/solution/...` 地址。`key` 是本地目录名，不是平台编号。每份卷一行；同卷两家来源两行。**不要猜链接，不要在清单里填写 Cookie、令牌或密码。**
 
+`expectedCount` 必须是源站该版本的目录题量，不是本库题量。程序会等到题目节点数达到这个数，并要求答案块覆盖题目节点；只渲染了前10题时不能报整卷成功。等待后仍不完整会保存为 `questions_incomplete` / `answers_incomplete`，退出码2。
+
 已有解析页直接复用。需要交白卷时遵守用户授权，每份练习只提交一次；会留下练习记录。未登录、验证码、无法进入解析页时记录原因并跳过该卷，不把它写成“平台没有”。
+
+粉笔后台交卷的固定备用步骤：若 OpenCLI 返回点击成功但确认框没有出现，用 Playwright MCP 的 `browser_run_code_unsafe`，`filename` 指向 `tools/fenbi/driver/fenbi-enter-solution.playwright.js`。它验证当前页面和交卷确认框，使用后台点击方式，并等待解析页出现；不会重新登录或自行换卷。不要反复运行未生效的数字索引点击，也不要仅凭点击成功就开始归档。这个备用步骤已在甘肃2026练习验证能进入解析页，但尚未覆盖全部站点流程。
 
 ## 2. 跑一条命令
 

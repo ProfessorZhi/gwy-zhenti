@@ -13,13 +13,14 @@ const concurrencyIndex=process.argv.indexOf('--concurrency');
 const concurrency=concurrencyIndex<0?2:Number(process.argv[concurrencyIndex+1]);
 for(const job of jobs){
  if(!['provider','session','key','title','url'].every(k=>typeof job[k]==='string'&&job[k]))throw new Error('Each job needs provider, session, key, title, url');
+ if(!Number.isInteger(job.expectedCount)||job.expectedCount<1)throw new Error('Each job needs expectedCount from source directory');
  if(!['huatu','fenbi'].includes(job.provider)||!/^\w[\w-]*$/.test(job.key)||!/^\w[\w-]*$/.test(job.session))throw new Error('Invalid provider, key or session');
 }
 const dir=path.join(root,'work','source-papers-v1');await mkdir(dir,{recursive:true});
 let failed=0;
 const started=Date.now();
 await runQueue(jobs,concurrency,async job=>{
- const args=[path.join(here,'archive-loaded.mjs'),'--provider',job.provider,'--session',job.session,'--key',job.key,'--expected-title',job.title,'--url',job.url,'--require-answers'];
+ const args=[path.join(here,'archive-loaded.mjs'),'--provider',job.provider,'--session',job.session,'--key',job.key,'--expected-title',job.title,'--expected-count',String(job.expectedCount),'--url',job.url,'--require-answers'];
  try{const {stdout}=await exec(process.execPath,args,{encoding:'utf8',timeout:240000,maxBuffer:1024*1024});console.log(stdout.trim())}
  catch(e){failed++;const result={provider:job.provider,key:job.key,status:'needs_attention',exitCode:e.code||null};
   // Successful partial captures already have a detailed manifest; never echo arbitrary stderr.

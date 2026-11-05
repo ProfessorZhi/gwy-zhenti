@@ -10,6 +10,13 @@ const exec = promisify(execFile);
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../../..');
 const norm=s=>s.replace(/\s+/g,'');
 const selectors={huatu:'.question-wrap,.exercise-main-topic[id^="question"]',fenbi:'app-ti'};
+export function contentStatus(a,expected,requireAnswers){
+ if(!Number.isInteger(expected)||expected<1)throw new Error('Invalid expected count');
+ if(a.questionCount!==expected)return 'questions_incomplete';
+ if(requireAnswers&&!a.answerBlockCount)return 'answers_missing';
+ if(requireAnswers&&a.answerBlockCount<a.questionCount)return 'answers_incomplete';
+ return 'archived';
+}
 
 export function prepareArchive(raw,provider,expectedTitle){
  if(!selectors[provider])throw new Error('Unsupported provider');
@@ -40,11 +47,13 @@ async function opencliEntry(override){
 async function main(){
  const opts={};for(let i=2;i<process.argv.length;i++){
   const k=process.argv[i];if(k==='--require-answers')opts.requireAnswers=true;
-  else if(['--provider','--session','--tab','--url','--key','--expected-title','--opencli-entry'].includes(k))opts[k.slice(2)]=process.argv[++i];
+  else if(['--provider','--session','--tab','--url','--key','--expected-title','--expected-count','--opencli-entry'].includes(k))opts[k.slice(2)]=process.argv[++i];
   else throw new Error('Unknown argument: '+k);
  }
  for(const k of ['provider','session','key','expected-title'])if(!opts[k])throw new Error('Missing --'+k);
  if(!opts.tab&&!opts.url)throw new Error('Supply --url or --tab');
+ const expected=Number(opts['expected-count']);
+ if(!Number.isInteger(expected)||expected<1)throw new Error('Supply valid --expected-count from source directory');
  if(!/^[\w-]+$/.test(opts.key)||!selectors[opts.provider])throw new Error('Invalid archive key/provider');
  const entry=await opencliEntry(opts['opencli-entry']);
  if(opts.url){
@@ -58,7 +67,7 @@ async function main(){
  for(let attempt=0;attempt<10;attempt++){
   const {stdout}=await exec(process.execPath,[entry,'browser',opts.session,'eval',js,'--tab',opts.tab],{encoding:'utf8',timeout:90000,maxBuffer:32*1024*1024});
   let raw=JSON.parse(stdout);if(typeof raw==='string')raw=JSON.parse(raw);
-  try{archive=prepareArchive(raw,opts.provider,opts['expected-title']);break}catch(e){lastError=e}
+  try{archive=prepareArchive(raw,opts.provider,opts['expected-title']);if(contentStatus(archive,expected,opts.requireAnswers)==='archived')break}catch(e){lastError=e}
   await new Promise(r=>setTimeout(r,1000));
  }
  if(!archive)throw lastError;
@@ -80,10 +89,10 @@ async function main(){
  await Promise.all(Array.from({length:4},()=>worker()));
  const failed=images.filter(x=>x.status==='failed').length;
  const manifest={schemaVersion:1,provider:opts.provider,archiveKey:opts.key,title:archive.title,url:archive.url,capturedAt:new Date().toISOString(),
-  method:'loaded question DOM; no network JSON claim',questionCount:archive.questionCount,answerBlockCount:archive.answerBlockCount,
+  method:'loaded question DOM; no network JSON claim',expectedQuestionCount:expected,questionCount:archive.questionCount,answerBlockCount:archive.answerBlockCount,
   sourcePlaceholderCount:archive.placeholderCount,answerStatus:archive.answerStatus,images,
   contentSha256:createHash('sha256').update(bytes).digest('hex'),elapsedMs:Date.now()-started,
-  status:failed?'images_incomplete':opts.requireAnswers&&!archive.answerBlockCount?'answers_missing':'archived',
+  status:failed?'images_incomplete':contentStatus(archive,expected,opts.requireAnswers),
   limitations:['source identity and answers not independently verified','source placeholders retained','no repository gap filled']};
  await writeFile(path.join(dir,'manifest.json'),JSON.stringify(manifest,null,2));
  const log=path.join(ROOT,'work','source-papers-v1','runs.jsonl');

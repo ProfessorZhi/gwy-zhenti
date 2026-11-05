@@ -1,6 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { prepareArchive } from '../driver/archive-loaded.mjs';
+import { prepareArchive, contentStatus } from '../driver/archive-loaded.mjs';
+
+test('partly hydrated pages cannot pass whole-paper validation',()=>{
+ assert.equal(contentStatus({questionCount:10,answerBlockCount:10},120,true),'questions_incomplete');
+ assert.equal(contentStatus({questionCount:120,answerBlockCount:10},120,true),'answers_incomplete');
+ assert.equal(contentStatus({questionCount:120,answerBlockCount:0},120,true),'answers_missing');
+ assert.equal(contentStatus({questionCount:120,answerBlockCount:120},120,true),'archived');
+});
 
 const input = {url:'https://v.huatu.com/tiku/analysis/123?token=secret',title:'测试卷',html:'<div class="exercise-main-topic" id="question1"><div class="main-topic-stem">测试题</div><div class="jiexi-answers">正确答案：A</div><img src="https://img.huatu.com/a.png"><script>secret</script><div class="videoAnalysis" data-token="secret">视频</div></div>'};
 test('archives question evidence, removes script and credentials, preserves image mapping',()=>{
