@@ -41,6 +41,15 @@ node driver/huatu-capture.mjs --login                      # 首次：在弹出�
 node driver/huatu-capture.mjs --paper-id <paperId> --url "<解析页地址>"
 ```
 
+专用窗口里登录不了华图时，改为连接自己启动的 Chrome：用调试端口和单独的配置目录启动 Chrome（Chrome 136 起默认配置不能开调试端口），在这个窗口里照常手动登录，再让脚本连上它：
+
+```bash
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir=D:\huatu-chrome
+node driver/huatu-capture.mjs --cdp http://127.0.0.1:9222 --paper-id <paperId> --url "<解析页地址>"
+```
+
+脚本只新开一个标签页抓取，结束时关闭该标签页并断开，不关闭浏览器；`--cdp` 只接受本机地址。
+
 - 每份卷只开一次练习、交一次白卷，复制解析页地址交给脚本；脚本只打开该地址、滚动到底、等待网络空闲，不点击、不提交。
 - 登录状态保存在 `work/profiles/huatu-main/`，与日常 Chrome 分开；脚本只保存响应体和图片，不保存请求头，记录的接口地址去掉查询参数。
 - 输出在 `work/huatu/<paperId>/raw/`：每个 JSON 响应一个文件、`images/` 下的图片、`index.json`（按「像题目数据」的程度打分，终端列出得分最高的 5 个）与 `page.html`。
