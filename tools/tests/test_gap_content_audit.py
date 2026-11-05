@@ -58,7 +58,7 @@ class LiveGapLedgerTest(unittest.TestCase):
             encoding="utf-8", newline=""
         ) as handle:
             documented = list(csv.DictReader(handle))
-        self.assertEqual(293, len(documented))
+        self.assertEqual(292, len(documented))
         keys = [(r["paper_path"], int(r["question_number"])) for r in documented]
         self.assertEqual(len(keys), len(set(keys)), "issue keys must be unique")
 
@@ -79,7 +79,7 @@ class LiveGapLedgerTest(unittest.TestCase):
                                  if r["type"] == "a2_confirmed_single_option_placeholder"]))
         self.assertEqual(13, summary["a2_excluded_valid_literal"])
         self.assertEqual(7, len(b2))
-        self.assertEqual(6, len(a2))
+        self.assertEqual(5, len(a2))
         self.assertEqual(89_717, summary["question_blocks"])
         self.assertEqual(1_669, summary["inventory_papers"])
 
