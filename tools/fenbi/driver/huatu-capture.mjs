@@ -6,6 +6,13 @@
 //             在弹出的浏览器里登录华图，完成后回到终端按回车。登录状态保存在 work/profiles/huatu-main/。
 //   抓取一卷：node driver/huatu-capture.mjs --paper-id 4056552 --url "<解析页地址>"
 //
+//   连接自己启动的 Chrome：用调试端口和单独的配置目录启动 Chrome，在这个窗口里照常手动登录华图，
+//   再让脚本连上它抓取：
+//     "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir=D:\huatu-chrome
+//     node driver/huatu-capture.mjs --cdp http://127.0.0.1:9222 --paper-id 4056552 --url "<解析页地址>"
+//   Chrome 136 起不允许在默认配置上开调试端口，所以 --user-data-dir 须是单独目录；登录一次后长期复用。
+//   脚本只新开一个标签页抓取，结束时关闭该标签页并断开连接，不关闭你的浏览器。
+//
 // 设计要点：
 // - 监听器在打开页面之前注册，并挂在整个浏览器上下文，页面跳转、刷新不会丢事件。
 // - 只保存响应体，不保存任何请求头或响应头；记录的 JSON 地址去掉查询参数，避免带出令牌。
@@ -31,9 +38,12 @@ export function args(argv) {
     else if (k === '--wait') out.wait = Number(argv[++i]);
     else if (k === '--executable') out.executable = argv[++i];
     else if (k === '--headless') out.headless = true;
+    else if (k === '--cdp') out.cdp = argv[++i];
     else throw new Error(`未知参数 ${k}`);
   }
   if (!out.login && (!/^\d+$/.test(out.paperId ?? '') || !out.url)) throw new Error('需要 --paper-id <数字> 与 --url <解析页地址>，或 --login');
+  if (out.cdp && !/^https?:\/\/(127\.0\.0\.1|localhost):\d+\/?$/.test(out.cdp)) throw new Error('--cdp 只接受本机地址，如 http://127.0.0.1:9222');
+  if (out.login && out.cdp) throw new Error('--cdp 模式请直接在自己启动的 Chrome 里登录，不需要 --login');
   if (!/^[\w-]+$/.test(out.profile)) throw new Error('--profile 只能含字母、数字、下划线和连字符');
   return out;
 }
@@ -63,6 +73,19 @@ function slug(text) {
   return text.replace(/^https?:\/\//, '').replace(/[^\w.-]+/g, '_').slice(0, 80);
 }
 
+/** 返回 { ctx, done }：done() 结束时调用。--cdp 时连接用户自己启动的 Chrome，只断开不关闭。 */
+async function open(opts) {
+  const { chromium } = await import('playwright-core');
+  if (opts.cdp) {
+    const browser = await chromium.connectOverCDP(opts.cdp);
+    const ctx = browser.contexts()[0];
+    if (!ctx) throw new Error('连上了 Chrome，但没有可用的浏览器窗口');
+    return { ctx, done: async (page) => { await page?.close().catch(() => {}); await browser.close(); } };
+  }
+  const ctx = await launch(opts);
+  return { ctx, done: async () => { await ctx.close(); } };
+}
+
 async function launch(opts) {
   const { chromium } = await import('playwright-core');
   const profileDir = path.join(WORK, 'profiles', opts.profile);
@@ -90,7 +113,7 @@ async function login(opts) {
 async function capture(opts) {
   const dir = path.join(WORK, 'huatu', opts.paperId, 'raw');
   await mkdir(path.join(dir, 'images'), { recursive: true });
-  const ctx = await launch(opts);
+  const { ctx, done } = await open(opts);
   const index = [];
   const images = [];
   const pending = new Set();
@@ -142,7 +165,7 @@ async function capture(opts) {
   await Promise.allSettled([...pending]);
   const html = await page.content();
   await writeFile(path.join(dir, 'page.html'), html);
-  await ctx.close();
+  await done(page);
   await writeFile(path.join(dir, 'index.json'), JSON.stringify({ paperId: opts.paperId, url: bareUrl(opts.url),
     capturedAt: new Date().toISOString(), responses: index, images }, null, 2));
   const top = [...index].sort((a, b) => b.score - a.score).slice(0, 5);

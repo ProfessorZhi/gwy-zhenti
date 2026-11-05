@@ -18,4 +18,6 @@ test('参数校验', () => {
   assert.throws(() => args(['--paper-id', 'abc', '--url', 'https://x/y']));
   assert.throws(() => args(['--paper-id', '1']));
   assert.throws(() => args(['--login', '--profile', '../evil']));
+  assert.equal(args(['--cdp', 'http://127.0.0.1:9222', '--paper-id', '1', '--url', 'https://x/y']).cdp, 'http://127.0.0.1:9222');
+  assert.throws(() => args(['--cdp', 'http://example.com:9222', '--paper-id', '1', '--url', 'https://x/y']));
 });
