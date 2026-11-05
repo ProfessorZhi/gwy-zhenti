@@ -52,8 +52,12 @@ def preview(plan: dict, target: bytes, source: bytes) -> bytes:
     if digest(target) != plan['before_sha256']: raise ValueError('Target changed since review')
     if digest(source) != plan['source_sha256']: raise ValueError('Source snapshot changed')
     url = urlsplit(plan['source_url'])
-    if url.scheme != 'https' or not (url.hostname or '').endswith('.huatu.com') or url.query or url.fragment:
-        raise ValueError('Source must be a public query-free Huatu URL')
+    host = url.hostname or ''
+    is_huatu = host.endswith('.huatu.com')
+    is_public_paper = host == 'gwy.gkzhenti.cn' and bool(re.fullmatch(r'/paper/\d+', url.path))
+    if url.scheme != 'https' or not (is_huatu or is_public_paper) or url.query or url.fragment:
+        raise ValueError('Source must be a supported public query-free paper URL')
+    provider = '华图教育' if is_huatu else '公开真题库'
     text = target.decode('utf-8'); evidence = source.decode('utf-8')
     if evidence.lstrip().startswith('{'):
         snapshot = json.loads(evidence)
@@ -67,6 +71,8 @@ def preview(plan: dict, target: bytes, source: bytes) -> bytes:
         match = re.search(r'^' + field + r':\s*"?([^"\n]+?)"?\s*$', text, re.M)
         if not match: raise ValueError('Missing target identity: ' + field)
         value = match.group(1).strip()
+        if field == '年份' and is_public_paper and int(value) < 2016:
+            raise ValueError('Third-party evidence is limited to 2016 onward')
         if field == '卷型' and value in ('统考', '综合'): continue
         if field == '卷型': value = value.removesuffix('卷')
         if norm(value) not in norm(plan['source_title']): raise ValueError('Source and target identity mismatch: ' + field)
@@ -139,7 +145,7 @@ def preview(plan: dict, target: bytes, source: bytes) -> bytes:
     original = re.search(r'^来源:\s*("(?:[^"\\]|\\.)*")\s*$', front, re.M)
     if not original or not isinstance(json.loads(original[1]), str): raise ValueError('Expected an existing scalar source')
     entry = ('\n来源清单:\n  - 来源方: "原有来源"\n    定位: ' + original[1] +
-             '\n    用途: "原有试卷内容"\n  - 来源方: "华图教育"\n    定位: "' + plan['source_url'] +
+             '\n    用途: "原有试卷内容"\n  - 来源方: "' + provider + '"\n    定位: "' + plan['source_url'] +
              '"\n    用途: "补充缺失申论材料"\n    核验: "同卷回忆整理，题目和材料锚点对应；原文异文保留、非官方原卷"')
     return (front + entry + text[fm_end:m_start] + material_out + questions).encode('utf-8')
 

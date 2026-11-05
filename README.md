@@ -136,7 +136,7 @@
 
 应有试卷以实际举行的考试为准，按「地区 × 年份 × 科目 × 卷型」逐卷登记于 [槽位台账](catalog/exam-slots.jsonl)，应有试卷 = 已收录 + 缺卷，收录率 = 已收录 ÷ 应有试卷；待核卷次确认开考后计入，当年无独立试卷的科目不计入。2015 年及以前只统计已收录试卷。
 
-来源以粉笔为主，华图与网络检索补充：2016–2026 年已收录试卷中，含粉笔来源 1,241 卷、华图补充 14 卷、网络检索来源 19 卷（一卷可有多个来源）。
+来源以粉笔为主，华图与网络检索补充：2016–2026 年已收录试卷中，含粉笔来源 1,241 卷、华图补充 14 卷、网络检索来源 20 卷（一卷可有多个来源）。
 <!-- gwy:coverage:end -->
 
 <p align="center">
@@ -160,7 +160,7 @@
 |  | 缺选项 | 5 题 · 5 卷 | — | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
 |  | 缺答案 | — | — |  |
 | **申论** | 缺题目 | — | — |  |
-|  | 缺材料 | 3 份材料 · 1 卷 | — | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
+|  | 缺材料 | — | — | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
 |  | 缺答案 | 7 题 · 3 卷 | — | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
 
 行测每题只计最严重的一级。缺卷以实际举行的考试为准，仅统计 2016–2026 年；2015 年及以前只统计已收录试卷的局部缺口。逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)。
