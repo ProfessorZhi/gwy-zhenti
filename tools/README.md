@@ -4,6 +4,8 @@
 
 题库的所有统计、导航、检查与采集都由本目录的脚本完成。Python 脚本只依赖标准库（图片像素校验另需 Pillow），建议用 `python3 -I` 运行；采集工具在 [`fenbi/`](fenbi/)，需要 Node.js 22+。
 
+先保存粉笔/华图题目与答案、暂不入库：使用[三步原始归档流程](../docs/workflow/SOURCE-ARCHIVE.md)。执行 `node tools/fenbi/driver/archive-jobs.mjs work/archive-jobs.json --concurrency 2`，程序复用 OpenCLI 登录态，按会话排队并下载图片，结果仅写入 `work/`。
+
 除特别注明外，脚本都以仓库根目录为工作目录，读取 [`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 和试卷文件，**默认只读**；会写文件的脚本都提供 `--check` 或 dry-run 模式。
 
 ## 日常维护

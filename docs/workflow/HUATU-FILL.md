@@ -95,6 +95,8 @@ work/huatu/<paperId>/
 
 ### 4. 对齐报告（不写入）
 
+选项缺口使用同一入口的 `--option-q <题号>`，必须先查看题干、邻题和图片校验结果；只采用来源完整选项组，不混排版本。申论材料缺口使用 `--essay-plan <本地计划.json>`，按华图原文和仓库锚点核对，先预览，再以 `--write --expect-after <预览哈希>` 写入。两个模式均不依据同号直接填入。
+
 ```bash
 python3 -I tools/huatu_fill.py --paper 省考/北京/2023/行测-统考.md --cache work/huatu/<paperId>
 ```
