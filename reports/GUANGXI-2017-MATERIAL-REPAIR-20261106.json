@@ -1,0 +1,20 @@
+{
+  "target": "省考/广西/2017/申论-统考.md",
+  "before_sha256": "ee07dcd26805d199f0257f5e9cdf7fda1e272b3c5e1f2093f41bb2fdd37e1e8b",
+  "source_url": "https://gwy.gkzhenti.cn/paper/1494401835671",
+  "source_title": "2017年422公务员联考《申论》广西卷",
+  "source_sha256": "b5db229befb0305adbe21f9c40d32b50e7f2a302b9bc7d0b54101613f975a3b0",
+  "renumber": {
+    "2": 4
+  },
+  "added_material_numbers": [
+    2,
+    3,
+    5
+  ],
+  "after_sha256": "bd63bb40cbb1d61092877a2e8f217e47f9acfcfbf95134364523b31b73965ef3",
+  "source_provider": "公开真题库，页面标注fenbi",
+  "question_anchors": 4,
+  "material_anchors": 2,
+  "note": "原材料2为原卷材料4；保留原有材料正文和异文。来源非官方原卷。"
+}
