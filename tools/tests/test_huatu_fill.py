@@ -6,6 +6,8 @@ import shutil
 import sys
 import tempfile
 import unittest
+import random
+import string
 from unittest.mock import patch
 from pathlib import Path
 
@@ -50,6 +52,30 @@ def huatu_paper(extra_front=1):
 
 
 class HuatuFill(unittest.TestCase):
+    def test_refuses_question_already_matched_outside_monotone_anchors(self):
+        rng = random.Random(981)
+        stems = [''.join(rng.choices(string.ascii_letters + string.digits, k=100)) for _ in range(7)]
+        target = ''.join(f'### 第 {i} 题\n\n' + (huatu_fill.STUB if i == 3 else stems[i-1]) + '\n\n' for i in range(1, 7))
+        source = [stems[0], stems[1], stems[5], stems[3], stems[4], stems[6]]
+        report, _ = huatu_fill.align(target, [{'stem_html': s, 'options': [], 'answer': 'A'} for s in source])
+        self.assertEqual(0.8, report['anchor'])
+        self.assertEqual([], report['fills'])
+        self.assertIn('已与本库另一题对上', report['skipped'][0]['reason'])
+
+    def test_tail_alignment_does_not_bypass_empty_source_check(self):
+        meta = huatu_paper(extra_front=0)
+        meta['questions'][-1] = {'stem_html': '', 'options': [], 'answer': ''}
+        report, _ = huatu_fill.align(paper_md({8}), meta['questions'])
+        self.assertEqual([], report['fills'])
+        self.assertTrue(any('为空' in row['reason'] for row in report['skipped']))
+
+    def test_tail_alignment_does_not_bypass_missing_answer_check(self):
+        meta = huatu_paper(extra_front=0)
+        meta['questions'][-1]['answer'] = ''
+        report, _ = huatu_fill.align(paper_md({8}), meta['questions'])
+        self.assertEqual([], report['fills'])
+        self.assertTrue(any('无答案' in row['reason'] for row in report['skipped']))
+
     def setUp(self):
         self.root = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, self.root)
