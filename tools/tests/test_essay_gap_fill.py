@@ -53,6 +53,23 @@ class EssayGapFillTest(unittest.TestCase):
         self.plan['additions'][0]['number']=3
         with self.assertRaisesRegex(ValueError,'replace existing'):self.run_preview()
 
+    def test_public_fenbi_republication_keeps_actual_provider(self):
+        self.plan['source_url']='https://gwy.gkzhenti.cn/paper/1494401835671'
+        out=self.run_preview()
+        self.assertIn('来源方: "公开真题库"',out)
+        self.assertNotIn('来源方: "华图教育"',out)
+
+    def test_republication_host_suffix_spoof_is_rejected(self):
+        self.plan['source_url']='https://gwy.gkzhenti.cn.evil.example/paper/1'
+        with self.assertRaises(ValueError):self.run_preview()
+
+    def test_third_party_pre2016_is_rejected(self):
+        self.target=self.target.replace('2019','2015');self.source=self.source.replace('2019','2015')
+        self.plan.update(before_sha256=sha(self.target),source_sha256=sha(self.source),
+                         source_title=self.plan['source_title'].replace('2019','2015'),
+                         source_url='https://gwy.gkzhenti.cn/paper/123')
+        with self.assertRaisesRegex(ValueError,'2016 onward'):self.run_preview()
+
     def test_source_body_truncation_at_either_end_is_rejected(self):
         whole = self.body * 3
         self.source = self.source.replace(self.body, whole)
