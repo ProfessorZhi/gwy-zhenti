@@ -25,15 +25,17 @@ import hashlib
 import html
 import json
 import re
+import runpy
 import shutil
 import sys
+from urllib.parse import urlsplit, urlunsplit
 from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 STUB = '粉笔暂未收录本题（来源缺题，题位保留）'
 MATERIAL_STUB = '题目正在全力以赴征集，将会在征集到后第一时间上传'
-QUESTION = re.compile(r'^### 第 (\d+) 题[^\n]*\n', re.M)
+QUESTION = re.compile(r'^#{2,3} 第 (\d+) 题[^\n]*\n', re.M)
 SECTION = re.compile(r'^(#{2,3}) ', re.M)
 MIN_ANCHOR = 0.8
 MIN_MATCH = 0.85
@@ -214,35 +216,210 @@ def question_md(q, h, hq, meta, report, image_map, prefix, sandwich):
     return '\n'.join(lines)
 
 
-def update_frontmatter(text, meta, filled):
+def update_frontmatter(text, meta, filled, mode='A1'):
     m = frontmatter(text)
     fm = m.group(1)
     nums = ', '.join(str(q) for q in filled)
+    u = urlsplit(meta.get('url', ''))
+    if u.scheme != 'https' or not u.hostname or not (u.hostname == 'huatu.com' or u.hostname.endswith('.huatu.com')) or u.username or u.password:
+        raise ValueError('华图来源链接缺失或不合法')
+    locator = urlunsplit((u.scheme, u.netloc, u.path, '', ''))
+    purpose = '补选项、参考答案及解析' if mode == 'A2' else '补题干、选项、参考答案及解析'
     entry = ('  - 来源方: "华图在线"\n'
              f'    来源试卷ID: "{meta["paperId"]}"\n'
+             f'    定位: {json.dumps(locator, ensure_ascii=False)}\n'
              f'    题号: [{nums}]\n'
-             '    用途: "补题干、选项、参考答案及解析"\n'
+             f'    用途: "{purpose}"\n'
              '    证据: "本卷对应题号的华图参考答案块（含 paperId、卷级锚点、邻题夹逼）"\n'
              '    核验: "逐题对齐记录在答案块；整卷未完成人工验收"\n')
     if '\n来源清单:' not in '\n' + fm:
         src = re.search(r'^来源: (.*)$', fm, re.M)
-        base = ('来源清单:\n  - 来源方: "粉笔"\n'
-                f'    定位: {src.group(1) if src else "未记录"}\n'
-                '    用途: "题面基础及原始参考内容；明确由华图补充的题目除外"\n'
-                '    核验: "沿用原有来源记录；未因本次修改重新验证整卷"\n')
+        if not src:
+            raise ValueError('未记录原有来源')
+        raw = src.group(1).strip()
+        try:
+            original = json.loads(raw)
+        except json.JSONDecodeError:
+            if raw.startswith(('[', '{', '"', "'")):
+                raise ValueError('不支持的原有来源格式')
+            original = raw
+        origins = original if isinstance(original, list) else [original]
+        if not origins or not all(isinstance(v, str) and v.strip() for v in origins):
+            raise ValueError('原有来源无效')
+        base = '来源清单:\n'
+        for origin in origins:
+            parsed = urlsplit(origin)
+            if parsed.scheme in ('http', 'https') and parsed.netloc:
+                host = parsed.hostname or ''
+                name = '粉笔' if host == 'fenbi.com' or host.endswith('.fenbi.com') else '原有来源'
+                base += ('  - 来源方: ' + json.dumps(name, ensure_ascii=False) + '\n'
+                         '    定位: ' + json.dumps(origin, ensure_ascii=False) + '\n')
+            else:
+                base += ('  - 来源方: ' + json.dumps(origin, ensure_ascii=False) + '\n'
+                         '    证据: "原有来源字段所列标识"\n')
+            base += ('    用途: "原有题面和参考内容"\n'
+                     '    核验: "沿用原有来源记录，未重新验证整卷"\n')
         fm = re.sub(r'^(来源: .*\n)', lambda x: x.group(1) + base + entry, fm + '\n', count=1, flags=re.M).rstrip('\n')
     else:
         # 插到来源清单最后一项之后（来源清单的条目均以两个空格缩进）
         fm = re.sub(r'(^来源清单:\n(?:  .*\n)+)', lambda x: x.group(1) + entry, fm + '\n', count=1, flags=re.M).rstrip('\n')
-    stamp = f'；{meta["capturedAt"][:10]} 由华图同卷补入 {len(filled)} 题（题 {ranges(filled)}）题干/选项/答案/解析，附 paperId 与对齐证据'
+    details = '选项/答案/解析' if mode == 'A2' else '题干/选项/答案/解析'
+    stamp = f'；{meta["capturedAt"][:10]} 由华图同卷补入 {len(filled)} 题（题 {ranges(filled)}）{details}，附 paperId 与对齐证据'
     fm = re.sub(r'^(校验状态: ".*?)"$', lambda x: x.group(1) + stamp + '"', fm, count=1, flags=re.M)
     return '---\n' + fm + '\n---\n' + text[m.end():]
 
 
-def fill(paper, cache, write=False, root=ROOT):
+OPTION_LINE = re.compile(r'^\s*(?:-\s*)?(?:\*\*)?([A-D])(?:\*\*)?\s*[.．、]\s*(.*)$', re.M)
+
+
+def equivalent_law_stem(old, source, old_options, source_options):
+    """Allow a narrow law-title reformulation only with two exact common options."""
+    def signature(text):
+        text = html.unescape(re.sub(r'<[^>]*>', '', text))
+        laws = re.findall(r'《([^》]+)》', text)
+        if len(laws) != 1 or not laws[0].endswith('法'):
+            return None
+        law = re.sub(r'^中华人民共和国', '', laws[0])
+        if re.search(r'错误|不正确|不恰当', text):
+            polarity = 'negative'
+        elif re.search(r'正确|恰当', text):
+            polarity = 'positive'
+        else:
+            return None
+        return law, polarity
+    a, b = signature(old), signature(source)
+    if not a or a != b:
+        return False
+    old_set = {norm(m.group(2)) for m in old_options if not re.search(r'缺失|暂缺|征集', m.group(2))}
+    source_set = {norm(o.get('html', '')) for o in source_options}
+    return len({s for s in old_set & source_set if len(s) >= 4}) >= 2
+
+
+def fill_option_gap(paper, cache, text, meta, target, write, root):
+    """Explicit A2 repair: whole source option sequence, never mixed versions."""
+    if not str(meta.get('paperId', '')).isdigit():
+        raise ValueError('华图试卷编号无效')
     path = root / paper
+    blocks = split_questions(text)
+    target_blocks = [(a, b) for n, a, b in blocks if n == target]
+    if len(target_blocks) != 1:
+        raise ValueError('选项缺口题号不存在或不唯一')
+    a, b = target_blocks[0]
+    original = text[a:b]
+    body = original.split('<details', 1)[0]
+    options = list(OPTION_LINE.finditer(body))
+    if not options or not any(re.match(r'^\s*(?:缺失|暂缺)(?:\s*$|题目正在)', m.group(2)) for m in options):
+        raise ValueError('指定题未发现选项占位，拒绝更改')
+    # Mark only this explicitly selected question missing; existing monotone
+    # alignment supplies the same bidirectional neighbor safeguards as A1.
+    heading = original.splitlines(keepends=True)[0]
+    trial = text[:a] + heading + '\n' + STUB + '\n\n' + text[b:]
+    report, plan = align(trial, meta['questions'])
+    report.update({'paper': paper, 'paperId': meta['paperId'], 'mode': 'A2', 'written': False})
+    # Other missing questions are irrelevant in explicit A2 mode.
+    report['fills'] = [x for x in report['fills'] if x['q'] == target]
+    report['skipped'] = [x for x in report['skipped'] if x['q'] == target]
+    if target not in plan:
+        return report
+    q = meta['questions'][plan[target]]
+    stem = body.split('\n', 1)[1][:options[0].start() - len(heading)]
+    if (similar(norm(stem), norm(q.get('stem_html', ''))) < MIN_MATCH
+            and not equivalent_law_stem(stem, q.get('stem_html', ''), options, q.get('options', []))):
+        report['fills'] = []
+        report['skipped'] = [{'q': target, 'reason': '目标题干与华图题干不匹配'}]
+        return report
+    source_opts = q.get('options', [])
+    if [o.get('label') for o in source_opts] != list('ABCD') or any(
+            not norm(o.get('html', '')) and '<img' not in o.get('html', '').lower()
+            or re.search(r'缺失|暂缺|征集|占位', re.sub(r'<[^>]*>', '', o.get('html', '')))
+            for o in source_opts) or q.get('answer', '').strip() not in 'ABCD' or len(q.get('answer', '').strip()) != 1:
+        report['fills'] = []
+        report['skipped'] = [{'q': target, 'reason': '华图选项顺序不完整或答案缺失'}]
+        return report
+    # Text-only "as shown" options require an explicitly identified shared figure.
+    figure = q.get('option_figure_html', '')
+    if any(re.search(r'如(?:上|下|左|右)?图', re.sub(r'<[^>]*>', '', o['html'])) for o in source_opts) and '<img' not in figure.lower():
+        report['fills'] = []
+        report['skipped'] = [{'q': target, 'reason': '图形选项缺共享图'}]
+        return report
+    prefix = f'assets-huatu-{meta["paperId"]}'
+    image_map, copies = {}, []
+    fragments = [figure, q.get('analysis_html', '')] + [o['html'] for o in source_opts]
+    needed = {html.unescape(src) for fragment in fragments for src in re.findall(
+        r'<img\b[^>]*?\bsrc\s*=\s*["\']([^"\']+)["\'][^>]*>', fragment or '', flags=re.I)}
+    for img in meta.get('images', []):
+        if img['url'] not in needed:
+            continue
+        if img['url'] in image_map:
+            raise ValueError('图片地址存在重复映射')
+        source = (cache / img['file']).resolve()
+        if not source.is_relative_to(cache.resolve()):
+            raise ValueError('图片路径超出缓存')
+        if not source.is_file():
+            raise ValueError('图片文件缺失：' + img['file'])
+        data = source.read_bytes()
+        name = hashlib.sha256(data).hexdigest() + Path(img['file']).suffix.lower()
+        image_map[img['url']] = name
+        copies.append((data, path.parent / prefix / name))
+    # All referenced images must exist in the archive before any file is written.
+    for fragment in fragments:
+        html_to_md(fragment, image_map, prefix)
+    original_name = hashlib.sha256(original.encode('utf-8')).hexdigest() + '-original.txt'
+    output = [heading.rstrip(), '', stem.strip(), '',
+              f'> 本题采用华图整组选项与参考答案；原题块保存在 [{original_name}]({prefix}/{original_name})。', '']
+    if figure:
+        output += [html_to_md(figure, image_map, prefix), '']
+    for o in source_opts:
+        output += [f"{o['label']}. {html_to_md(o['html'], image_map, prefix)}", '']
+    sandwich = next(f['sandwich'] for f in report['fills'] if f['q'] == target)
+    output += [f'<details><summary>第 {target} 题 · 答案与解析</summary>', '',
+               f'**参考答案（华图在线，paperId {meta["paperId"]}；卷级锚点 {report["anchor"]}，邻题夹逼 {sandwich}；题序与原版本可能不同）**', '',
+               q['answer'].strip(), '', '**解析**', '',
+               html_to_md(q.get('analysis_html', ''), image_map, prefix) or '来源未提供解析。', '', '</details>', '', '']
+    new = text[:a] + '\n'.join(output) + text[b:]
+    body_after = new[frontmatter(new).end():]
+    new = update_frontmatter(new, meta, [target], mode='A2')
+    if new[frontmatter(new).end():] != body_after:
+        raise RuntimeError('更新文件头时改动正文')
+    verify(text, new, {target: plan[target]})
+    planned = {dest.resolve() for _, dest in copies}
+    for ref in re.findall(r'!\[[^\]]*\]\(([^)\s]+)\)', new):
+        resolved = (path.parent / ref).resolve()
+        if resolved not in planned and not resolved.is_file():
+            raise ValueError(f'引用图片缺失：{ref}')
+    manifest = (root / 'catalog/manifest.jsonl').resolve()
+    if not manifest.is_relative_to(root.resolve()):
+        raise ValueError('清单路径超出仓库')
+    try:
+        rows = [json.loads(line) for line in manifest.read_text(encoding='utf8').splitlines() if line.strip()]
+    except (OSError, ValueError) as exc:
+        raise ValueError('清单不存在或无效') from exc
+    if sum(isinstance(row, dict) and row.get('path') == paper for row in rows) != 1:
+        raise ValueError('试卷在清单中不存在或不唯一')
+    if not write:
+        return report
+    for data, dest in copies:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(data)
+    original_path = path.parent / prefix / original_name
+    original_path.parent.mkdir(parents=True, exist_ok=True)
+    original_path.write_text(original, encoding='utf8')
+    path.write_text(new, encoding='utf8')
+    update_manifest(paper, new, root)
+    report['written'] = True
+    return report
+
+
+def fill(paper, cache, write=False, root=ROOT, option_q=None):
+    root = root.resolve()
+    path = (root / paper).resolve()
+    if not any(path.is_relative_to(root / section) for section in ('省考', '国考')) or path.suffix.lower() != '.md':
+        raise ValueError('试卷路径必须在省考或国考目录内')
+    paper = path.relative_to(root).as_posix()
     text = path.read_text(encoding='utf-8')
     meta = json.loads((cache / 'paper.json').read_text(encoding='utf-8'))
+    if option_q is not None:
+        return fill_option_gap(paper, cache, text, meta, option_q, write, root)
     hq = meta['questions']
     report, plan = align(text, hq)
     report.update({'paper': paper, 'paperId': meta['paperId']})
@@ -318,11 +495,32 @@ def update_manifest(paper, text, root=ROOT):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--paper', required=True, help='试卷路径，相对仓库根目录')
-    parser.add_argument('--cache', required=True, type=Path, help='华图试卷缓存目录（含 paper.json）')
+    parser.add_argument('--paper', help='试卷路径，相对仓库根目录')
+    parser.add_argument('--cache', type=Path, help='华图试卷缓存目录（含 paper.json）')
+    parser.add_argument('--essay-plan', help='申论材料补录计划 JSON')
+    parser.add_argument('--expect-after', help='申论写入时必须与预检后 SHA256 一致')
     parser.add_argument('--write', action='store_true', help='写入试卷；不加只输出对齐报告')
+    parser.add_argument('--option-q', type=int, help='显式指定一处 A2 选项缺口题号；采用来源整组选项')
     args = parser.parse_args()
-    report = fill(args.paper, args.cache.resolve(), args.write)
+    if args.essay_plan:
+        if args.paper or args.cache or args.option_q is not None:
+            parser.error('申论计划不能与行测参数同时使用')
+        previous = sys.argv
+        sys.argv = ['essay_gap_fill.py', '--plan', args.essay_plan]
+        if args.write:
+            sys.argv.append('--write')
+        if args.expect_after:
+            sys.argv.extend(['--expect-after', args.expect_after])
+        try:
+            runpy.run_path(str(Path(__file__).with_name('essay_gap_fill.py')), run_name='__main__')
+        finally:
+            sys.argv = previous
+        return 0
+    if not args.paper or not args.cache:
+        parser.error('行测模式需要 --paper 和 --cache')
+    if args.expect_after:
+        parser.error('--expect-after 仅适用于 --essay-plan')
+    report = fill(args.paper, args.cache.resolve(), args.write, option_q=args.option_q)
     print(json.dumps(report, ensure_ascii=False, indent=1))
     return 0
 
