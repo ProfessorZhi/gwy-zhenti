@@ -8,18 +8,18 @@
 <text x="1240" y="116" font-size="12" fill="#475569" text-anchor="end">应有 1,306 卷 · 收录率 96.1% · 已收录试卷 1,264 份，完整率 94.5%</text>
 <clipPath id="c28"><rect x="46" y="130" width="1194" height="14" rx="7"/></clipPath>
 <g clip-path="url(#c28)"><rect x="46" y="130" width="1194" height="14" fill="#e2e8f0"/>
-<rect x="46.0" y="130" width="1084.1" height="14" fill="#34d399"/>
-<rect x="1130.1" y="130" width="3.6" height="14" fill="#fcd34d"/>
-<rect x="1133.8" y="130" width="5.4" height="14" fill="#fb923c"/>
+<rect x="46.0" y="130" width="1085.0" height="14" fill="#34d399"/>
+<rect x="1131.0" y="130" width="3.6" height="14" fill="#fcd34d"/>
+<rect x="1134.7" y="130" width="4.5" height="14" fill="#fb923c"/>
 <rect x="1139.2" y="130" width="54.5" height="14" fill="#f43f5e"/>
 <rect x="1193.7" y="130" width="46.3" height="14" fill="#334155"/>
 </g>
 <rect x="46" y="155" width="10" height="10" rx="2" fill="#34d399"/>
-<text x="61" y="164" font-size="11.5" fill="#475569">完整 <tspan font-weight="700" fill="#0f172a">1,194</tspan></text>
+<text x="61" y="164" font-size="11.5" fill="#475569">完整 <tspan font-weight="700" fill="#0f172a">1,195</tspan></text>
 <rect x="138.0" y="155" width="10" height="10" rx="2" fill="#fcd34d"/>
 <text x="153.0" y="164" font-size="11.5" fill="#475569">答案待补 <tspan font-weight="700" fill="#0f172a">4</tspan></text>
 <rect x="225.0" y="155" width="10" height="10" rx="2" fill="#fb923c"/>
-<text x="240.0" y="164" font-size="11.5" fill="#475569">缺选项或材料 <tspan font-weight="700" fill="#0f172a">6</tspan></text>
+<text x="240.0" y="164" font-size="11.5" fill="#475569">缺选项或材料 <tspan font-weight="700" fill="#0f172a">5</tspan></text>
 <rect x="335.0" y="155" width="10" height="10" rx="2" fill="#f43f5e"/>
 <text x="350.0" y="164" font-size="11.5" fill="#475569">缺题干或题目 <tspan font-weight="700" fill="#0f172a">60</tspan></text>
 <rect x="452.0" y="155" width="10" height="10" rx="2" fill="#334155"/>
@@ -972,7 +972,7 @@
 <rect x="1905.0" y="678" width="10" height="10" rx="2" fill="#34d399"><title>省考/福建/2015/行测-统考 · 完整</title></rect>
 <text x="162" y="702" font-size="9.5" fill="#94a3b8" text-anchor="end">申论</text>
 <rect x="209.0" y="693" width="10" height="10" rx="2" fill="#34d399"><title>省考/福建/2016/申论-统考 · 完整</title></rect>
-<rect x="293.0" y="693" width="10" height="10" rx="2" fill="#fb923c"><title>省考/福建/2017/申论-统考 · 缺选项或材料</title></rect>
+<rect x="293.0" y="693" width="10" height="10" rx="2" fill="#34d399"><title>省考/福建/2017/申论-统考 · 完整</title></rect>
 <rect x="371.0" y="693" width="10" height="10" rx="2" fill="#34d399"><title>省考/福建/2018/申论-乡镇卷 · 完整</title></rect>
 <rect x="383.0" y="693" width="10" height="10" rx="2" fill="#34d399"><title>省考/福建/2018/申论-县级卷 · 完整</title></rect>
 <rect x="455.0" y="693" width="10" height="10" rx="2" fill="#34d399"><title>省考/福建/2019/申论-乡镇卷 · 完整</title></rect>
@@ -1002,8 +1002,8 @@
 <rect x="1821.0" y="693" width="10" height="10" rx="2" fill="#34d399"><title>省考/福建/2014/申论-统考 · 完整</title></rect>
 <rect x="1905.0" y="693" width="10" height="10" rx="2" fill="#34d399"><title>省考/福建/2015/申论-统考 · 完整</title></rect>
 <rect x="1116" y="685" width="76" height="8" rx="4" fill="#e2e8f0"/>
-<rect x="1116" y="685" width="73.9" height="8" rx="4" fill="#34d399"/>
-<text x="1200" y="693" font-size="11.5" fill="#334155">35/36</text>
+<rect x="1116" y="685" width="76.0" height="8" rx="4" fill="#34d399"/>
+<text x="1200" y="693" font-size="11.5" fill="#334155">36/36</text>
 <text x="1968" y="693" font-size="11.5" fill="#64748b">14/14</text>
 <text x="28" y="733" font-size="12" font-weight="800" fill="#475569">其他省份</text>
 <line x1="90" y1="729" x2="2026" y2="729" stroke="#e2e8f0"/>
