@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """华图补题工具：用合成试卷与合成华图缓存验证对齐、写入与保护。全部为虚构文本。"""
 import json
+import hashlib
 import shutil
 import sys
 import tempfile
@@ -290,6 +291,25 @@ class HuatuFill(unittest.TestCase):
         with self.assertRaises(ValueError):huatu_fill.fill(self.rel,self.cache,write=True,root=self.root,option_q=4)
         self.assertEqual(original,(self.root/self.rel).read_text(encoding='utf8'))
         self.assertFalse((self.root/self.rel).parent.joinpath('assets-huatu-999').exists())
+
+    def assert_manifest_matches_disk_bytes(self):
+        raw=(self.root/self.rel).read_bytes()
+        row=json.loads((self.root/'catalog/manifest.jsonl').read_text(encoding='utf8'))
+        self.assertEqual(hashlib.sha256(raw).hexdigest(),row['sha256'])
+        self.assertEqual(len(raw),row['bytes'])
+        self.assertNotIn(b'\r\n',raw)
+
+    def test_a1_manifest_matches_disk_bytes_on_all_platforms(self):
+        self.run_fill({3},huatu_paper())
+        self.assert_manifest_matches_disk_bytes()
+
+    def test_a2_manifest_and_original_evidence_match_disk_bytes_on_all_platforms(self):
+        self.option_fixture()
+        report=huatu_fill.fill(self.rel,self.cache,write=True,root=self.root,option_q=4)
+        self.assertTrue(report['written']);self.assert_manifest_matches_disk_bytes()
+        originals=list((self.root/self.rel).parent.glob('assets-huatu-999/*-original.txt'))
+        self.assertEqual(1,len(originals))
+        self.assertEqual(originals[0].name.split('-')[0],hashlib.sha256(originals[0].read_bytes()).hexdigest())
 
 
 if __name__ == "__main__":

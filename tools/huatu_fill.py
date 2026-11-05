@@ -403,8 +403,8 @@ def fill_option_gap(paper, cache, text, meta, target, write, root):
         dest.write_bytes(data)
     original_path = path.parent / prefix / original_name
     original_path.parent.mkdir(parents=True, exist_ok=True)
-    original_path.write_text(original, encoding='utf8')
-    path.write_text(new, encoding='utf8')
+    original_path.write_bytes(original.encode('utf8'))
+    path.write_bytes(new.encode('utf8'))
     update_manifest(paper, new, root)
     report['written'] = True
     return report
@@ -461,7 +461,7 @@ def fill(paper, cache, write=False, root=ROOT, option_q=None):
     for data, dest in copies:
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(data)
-    path.write_text(new, encoding='utf-8')
+    path.write_bytes(new.encode('utf-8'))
     for ref in re.findall(r'!\[[^\]]*\]\(([^)\s]+)\)', new):
         if not (path.parent / ref).exists():
             raise RuntimeError(f'图片缺失：{ref}')
