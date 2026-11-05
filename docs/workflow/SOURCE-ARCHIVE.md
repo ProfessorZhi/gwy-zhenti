@@ -6,6 +6,8 @@
 
 首次在 `tools/fenbi` 执行 `npm ci`，确认 `opencli doctor` 已连接用户指定的 Chrome 登录态。
 
+两平台统一入口，但数据通道自动区分：**粉笔用 Playwright MCP 扩展捕获 `/combine/static/solution` 整卷响应；华图用 OpenCLI 导出解析页题目区 DOM**。用户需在同一个指定 Chrome 配置中登录两平台；粉笔还需可执行的 `playwright mcp --extension` 和进程环境中的 `PLAYWRIGHT_MCP_EXTENSION_TOKEN`。令牌只配置在环境中，不写任务清单、代码或日志。需要 Python 3.10+；可用 `PYTHON` 环境变量指定解释器。
+
 agent 根据缺口清单在粉笔、华图找到卷子，进入解析页，把**实际看到的标题和解析链接**填入 `work/archive-jobs.json`：
 
 ```json
@@ -37,13 +39,17 @@ agent 根据缺口清单在粉笔、华图找到卷子，进入解析页，把**
 node tools/fenbi/driver/archive-jobs.mjs work/archive-jobs.json --concurrency 2
 ```
 
-程序自动使用后台标签，核对标题和来源域、等待题目加载、整卷提取、保存图片及 SHA-256，并检查是否有答案块。Windows 下直接通过 Node 启动 OpenCLI，不把 JavaScript 拼进 shell。
+程序自动选择对应平台采集器，核对标题和题量、保存图片及 SHA-256。粉笔还严格核对答题卡与题目 ID 的集合、唯一性、顺序、材料引用及每题答案记录。Windows 下直接通过 Node 启动 OpenCLI，不把 JavaScript 拼进 shell。
 
-默认两路浏览器会话并发；同一 session 的任务严格串行，避免相互覆盖页面。每卷图片四路下载，因此两卷最多八路图片下载。`--concurrency 1` 可降低负载，允许范围为 1–4；增加并发不保证更快。不要让另一个进程同时操纵队列中的 session。
+默认两路浏览器会话并发；同一华图 session 串行，全部粉笔 MCP 任务也串行，避免扩展会话相互覆盖。粉笔每卷图片八路下载，华图四路，因此两平台并行最多十二路图片下载。`--concurrency 1` 可降低浏览器负载，允许范围为 1–4；增加并发不保证更快。不要让另一个进程同时操纵队列中的 session。
+
+断点续跑：相同 key、标题和题量已有成功包，且原始文件和图片哈希仍有效时，默认返回 `already_archived`，不再访问浏览器。加 `--force` 才重新采集。旧的粉笔 DOM 包不会阻止升级为整卷 JSON 包。失败任务保留记录，修复登录或链接后重跑同一命令即可。
+
+2026-11-05 双平台统一命令实测：海南2024粉笔全卷 JSON（110题、110答案记录、3组材料、117图）与吉林2024华图解析页（82题、82答案块、225图）并发约29.3秒，失败0；随后断点续跑复核文件并跳过两卷，约0.13秒。耗时只代表本轮实测。
 
 2026-11-05 实测：北京2023粉笔解析页（135题位、135答案块、72图）与上海2021B华图解析页（127题位、127答案块、262图）两路运行总计约15.4秒，图片失败0。只计已知解析链接的导航及归档，不含找卷/登录；这不是全站吞吐保证，也不说明占位答案有效。
 
-不要让模型逐题复制、重新写爬虫或推算答案。华图有的页面把内容直接放在 HTML 中，所以本工具保存题目区 DOM，明确标识为 DOM 采集，不伪称接口 JSON。
+不要让模型逐题复制、重新写爬虫或推算答案。粉笔不能依赖页面渲染题数：可能只渲染首模块，但响应里已有全卷。华图 DOM 归档明确标识方法，不伪称接口 JSON。
 
 ## 3. 只看结果，交接文件
 
@@ -53,6 +59,8 @@ node tools/fenbi/driver/archive-jobs.mjs work/archive-jobs.json --concurrency 2
 - `images/`：原图。
 - `manifest.json`：来源、题目节点数、答案块数、占位数、图片映射、哈希、限制和状态。
 
+粉笔接口包另有 `raw-solution.json`（原始题本）、`ordered-questions.json`（答题卡顺序）、`whole-paper.html`（图片已改为本地路径，可离线阅读）。仅保存指定题本响应，不保存用户信息、会员接口、视频接口或请求头。
+
 汇总：`work/source-papers-v1/runs.jsonl`；队列失败：`queue-failures.jsonl`。
 
 | 结果 | 如何报告 |
@@ -61,6 +69,7 @@ node tools/fenbi/driver/archive-jobs.mjs work/archive-jobs.json --concurrency 2
 | `answers_missing` | 题目已存，答案未取得，不能算完整归档 |
 | `images_incomplete` | 保留已存内容，图片待补，见 manifest |
 | `needs_attention` | 需检查登录、标题、页面或连接，不能报成功 |
+| `already_archived` | 原有成功包通过文件复核，本次跳过，不能计为新增 |
 
 源侧占位和默认答案仍保留，后面清洗时处理；不要将默认 A 当真实答案。HTML 的图片地址仍为原 URL，离线清洗时按 manifest 映射替换。每次使用新时间戳目录，不覆盖旧包。归档包数与不同试卷数分别统计。
 
@@ -73,3 +82,5 @@ node tools/fenbi/driver/archive-jobs.mjs work/archive-jobs.json --concurrency 2
 即使换 Terra/Luna，也使用相同程序和验收状态。网站结构或内容变化时可能需维护程序，不能保证未验证页面得到相同结果。
 
 开发者测试：在 `tools/fenbi` 执行 `node --test test/archive-loaded.test.mjs test/archive-queue.test.mjs test/huatu-capture.test.mjs`。
+
+粉笔整卷校验测试（仓库根目录）：`python tools/fenbi/test/test_fenbi_full.py`。
