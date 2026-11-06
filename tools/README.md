@@ -87,6 +87,14 @@ python -X utf8 -m unittest discover -s tests -v                                 
 
 2026-10-11 至 10-22 各轮定向修复用的一次性脚本（`round3_*`～`round6_*`、`r7_*`、`verify_round*`、`paper_integrity_repair`、`essay_transcript_restore` 等）及其输入数据 `data/`，绑定当时的修复回执，只能在当时的语料上复现，已于 2026-11-06 从当前树移除。需要复现时检出 `9c1265ba4` 或更早的提交即可。对应报告仍在 [`reports/`](../reports/README.md)。
 
+## 仓库维护
+
+| 脚本 | 作用 |
+| --- | --- |
+| `fix_cjk_bold.py` | 修复 GitHub 不渲染的中文加粗（`**参考答案说明：**思路`），每行校验文字不变 |
+| `branch_cleanup_20261106.sh` | 远端旧分支转标签并删除（清单见 docs/archive/BRANCH-CLEANUP-20261106.md） |
+| `slim_history_20261106.sh` | 改写 main 历史、去掉已删除文件的旧版本以缩小 clone；先备份为 bundle，默认只演练 |
+
 ## 测试
 
 | 位置 | 内容 | 运行 |

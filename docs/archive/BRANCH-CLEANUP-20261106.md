@@ -15,6 +15,8 @@
 git push origin refs/tags/branch-archive/<名>:refs/heads/<原分支名>
 ```
 
+> **与历史改写二选一。** 若执行 [`tools/slim_history_20261106.sh`](../../tools/slim_history_20261106.sh)（改写 main 历史以缩小 clone），它会把全部远端分支与标签打进本地备份 bundle 后从 GitHub 删除，不再建 `branch-archive/*` 标签——标签会让每次 clone 都下载旧历史，抵消瘦身效果。此时不需要再运行下面的分支清理脚本。
+
 执行脚本：[`tools/branch_cleanup_20261106.sh`](../../tools/branch_cleanup_20261106.sh)。默认只打印计划；`--apply` 才执行，且只处理远端 SHA 与下表一致的分支，期间被推送过的分支会跳过。
 
 ## A 已在 main（21 个，删除）
