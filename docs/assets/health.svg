@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2054" height="1832" viewBox="0 0 2054 1832" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="2054" height="1794" viewBox="0 0 2054 1794" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
 <defs><pattern id="none" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="4" stroke="#94a3b8" stroke-width="1.2"/></pattern></defs>
-<rect width="2054" height="1832" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
+<rect width="2054" height="1794" rx="18" fill="#ffffff" stroke="#e2e8f0"/>
 <text x="28" y="44" font-size="24" font-weight="800" fill="#0f172a">逐卷分布与健康度 · 2008–2026</text>
 <text x="28" y="70" font-size="13" fill="#64748b">每个方块是一份试卷：方块数为该地区当年该科目的试卷数，颜色为健康等级或台账状态；左侧 2016–2026 按槽位台账统计缺卷，右侧 2008–2015 只统计已收录试卷</text>
 <rect x="28" y="90" width="1230" height="86" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="46" y="116" font-size="15" font-weight="800" fill="#0f172a">2016 – 2026 · 按槽位台账</text>
-<text x="1240" y="116" font-size="12" fill="#475569" text-anchor="end">应有 1,306 卷 · 收录率 96.1% · 已收录试卷 1,264 份，完整率 94.9%</text>
+<text x="1240" y="116" font-size="12" fill="#475569" text-anchor="end">应有 1,297 卷 · 收录率 96.1% · 已收录试卷 1,255 份，完整率 94.8%</text>
 <clipPath id="c28"><rect x="46" y="130" width="1194" height="14" rx="7"/></clipPath>
 <g clip-path="url(#c28)"><rect x="46" y="130" width="1194" height="14" fill="#e2e8f0"/>
-<rect x="46.0" y="130" width="1088.7" height="14" fill="#34d399"/>
-<rect x="1134.7" y="130" width="3.0" height="14" fill="#fcd34d"/>
-<rect x="1137.4" y="130" width="3.0" height="14" fill="#fb923c"/>
-<rect x="1139.2" y="130" width="54.5" height="14" fill="#f43f5e"/>
-<rect x="1193.7" y="130" width="46.3" height="14" fill="#334155"/>
+<rect x="46.0" y="130" width="1087.9" height="14" fill="#34d399"/>
+<rect x="1133.9" y="130" width="3.0" height="14" fill="#fcd34d"/>
+<rect x="1136.7" y="130" width="3.0" height="14" fill="#fb923c"/>
+<rect x="1138.5" y="130" width="54.9" height="14" fill="#f43f5e"/>
+<rect x="1193.4" y="130" width="46.6" height="14" fill="#334155"/>
 </g>
 <rect x="46" y="155" width="10" height="10" rx="2" fill="#34d399"/>
-<text x="61" y="164" font-size="11.5" fill="#475569">完整 <tspan font-weight="700" fill="#0f172a">1,199</tspan></text>
+<text x="61" y="164" font-size="11.5" fill="#475569">完整 <tspan font-weight="700" fill="#0f172a">1,190</tspan></text>
 <rect x="138.0" y="155" width="10" height="10" rx="2" fill="#fcd34d"/>
 <text x="153.0" y="164" font-size="11.5" fill="#475569">答案待补 <tspan font-weight="700" fill="#0f172a">3</tspan></text>
 <rect x="225.0" y="155" width="10" height="10" rx="2" fill="#fb923c"/>
@@ -79,7 +79,7 @@
 <text x="1910.0" y="286" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">2015</text>
 <text x="1116" y="286" font-size="11" font-weight="700" fill="#334155">完整 / 应有</text>
 <text x="1968" y="286" font-size="11" font-weight="700" fill="#334155">完整 / 已收录</text>
-<line x1="1269.0" y1="270" x2="1269.0" y2="1788" stroke="#cbd5e1" stroke-dasharray="4 3"/>
+<line x1="1269.0" y1="270" x2="1269.0" y2="1750" stroke="#cbd5e1" stroke-dasharray="4 3"/>
 <text x="28" y="317" font-size="12" font-weight="800" fill="#475569">国考与重点地区</text>
 <line x1="129" y1="313" x2="2026" y2="313" stroke="#e2e8f0"/>
 <text x="132" y="354.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">国考</text>
@@ -2938,7 +2938,7 @@
 <rect x="1116" y="1633" width="71.5" height="8" rx="4" fill="#34d399"/>
 <text x="1200" y="1641" font-size="11.5" fill="#334155">48/51</text>
 <text x="1968" y="1641" font-size="11.5" fill="#64748b">9/9</text>
-<text x="28" y="1681" font-size="12" font-weight="800" fill="#475569">专项考试</text>
+<text x="28" y="1681" font-size="12" font-weight="800" fill="#475569">新疆兵团</text>
 <line x1="90" y1="1677" x2="2026" y2="1677" stroke="#e2e8f0"/>
 <text x="132" y="1718.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">新疆兵团</text>
 <rect x="174" y="1697" width="80" height="32" rx="6" fill="#f1f5f9"/>
@@ -3007,71 +3007,5 @@
 <rect x="1116" y="1707" width="66.5" height="8" rx="4" fill="#34d399"/>
 <text x="1200" y="1715" font-size="11.5" fill="#334155">14/16</text>
 <text x="1968" y="1715" font-size="11.5" fill="#64748b">2/2</text>
-<rect x="20" y="1732" width="2014" height="36" rx="8" fill="#f8fafc"/>
-<text x="132" y="1756.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">公安招警和公检法</text>
-<rect x="174" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="258" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="342" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="426" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="510" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="594" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="678" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="762" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="846" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="930" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="1014" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="1282" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="1366" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="1450" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="1534" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="1618" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="1702" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="1786" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<rect x="1870" y="1735" width="80" height="32" rx="6" fill="#f1f5f9"/>
-<text x="162" y="1747" font-size="9.5" fill="#94a3b8" text-anchor="end">行测</text>
-<rect x="209.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2016 行测-卷型待定 · 待核</title></rect>
-<rect x="293.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2017 行测-卷型待定 · 待核</title></rect>
-<rect x="377.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2018 行测-卷型待定 · 待核</title></rect>
-<rect x="461.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2019 行测-卷型待定 · 待核</title></rect>
-<rect x="545.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2020 行测-卷型待定 · 待核</title></rect>
-<rect x="629.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2021 行测-卷型待定 · 待核</title></rect>
-<rect x="713.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2022 行测-卷型待定 · 待核</title></rect>
-<rect x="797.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2023 行测-卷型待定 · 待核</title></rect>
-<rect x="881.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2024 行测-卷型待定 · 待核</title></rect>
-<rect x="965.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2025 行测-卷型待定 · 待核</title></rect>
-<rect x="1049.0" y="1738" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2026 行测-卷型待定 · 待核</title></rect>
-<rect x="1317.5" y="1738.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2008 行测 · 未收录</title></rect>
-<rect x="1401.5" y="1738.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2009 行测 · 未收录</title></rect>
-<rect x="1485.5" y="1738.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2010 行测 · 未收录</title></rect>
-<rect x="1569.5" y="1738.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2011 行测 · 未收录</title></rect>
-<rect x="1653.5" y="1738.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2012 行测 · 未收录</title></rect>
-<rect x="1737.5" y="1738.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2013 行测 · 未收录</title></rect>
-<rect x="1821.5" y="1738.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2014 行测 · 未收录</title></rect>
-<rect x="1905.5" y="1738.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2015 行测 · 未收录</title></rect>
-<text x="162" y="1762" font-size="9.5" fill="#94a3b8" text-anchor="end">申论</text>
-<rect x="203.0" y="1753" width="10" height="10" rx="2" fill="#34d399"><title>省考/公安招警和公检法/2016/申论-政法干警（专科类） · 完整</title></rect>
-<rect x="215.0" y="1753" width="10" height="10" rx="2" fill="#34d399"><title>省考/公安招警和公检法/2016/申论-政法干警（本硕类） · 完整</title></rect>
-<rect x="293.0" y="1753" width="10" height="10" rx="2" fill="#34d399"><title>省考/公安招警和公检法/2017/申论-公安院校联考 · 完整</title></rect>
-<rect x="377.0" y="1753" width="10" height="10" rx="2" fill="#34d399"><title>省考/公安招警和公检法/2018/申论-公安院校联考 · 完整</title></rect>
-<rect x="461.0" y="1753" width="10" height="10" rx="2" fill="#34d399"><title>省考/公安招警和公检法/2019/申论-公安院校联考 · 完整</title></rect>
-<rect x="545.0" y="1753" width="10" height="10" rx="2" fill="#34d399"><title>省考/公安招警和公检法/2020/申论-公安院校联考 · 完整</title></rect>
-<rect x="629.0" y="1753" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2021 申论-卷型待定 · 待核</title></rect>
-<rect x="713.0" y="1753" width="10" height="10" rx="2" fill="#34d399"><title>省考/公安招警和公检法/2022/申论-公安院校联考 · 完整</title></rect>
-<rect x="797.0" y="1753" width="10" height="10" rx="2" fill="#34d399"><title>省考/公安招警和公检法/2023/申论-公安院校联考 · 完整</title></rect>
-<rect x="881.0" y="1753" width="10" height="10" rx="2" fill="#34d399"><title>省考/公安招警和公检法/2024/申论-公安院校联考 · 完整</title></rect>
-<rect x="965.0" y="1753" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2025 申论-卷型待定 · 待核</title></rect>
-<rect x="1049.0" y="1753" width="10" height="10" rx="2" fill="#c4b5fd"><title>公安招警和公检法 2026 申论-卷型待定 · 待核</title></rect>
-<rect x="1317.5" y="1753.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2008 申论 · 未收录</title></rect>
-<rect x="1401.5" y="1753.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2009 申论 · 未收录</title></rect>
-<rect x="1485.5" y="1753.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2010 申论 · 未收录</title></rect>
-<rect x="1569.5" y="1753.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2011 申论 · 未收录</title></rect>
-<rect x="1653.5" y="1753.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2012 申论 · 未收录</title></rect>
-<rect x="1737.5" y="1753.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2013 申论 · 未收录</title></rect>
-<rect x="1821.5" y="1753.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2014 申论 · 未收录</title></rect>
-<rect x="1905.5" y="1753.5" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>公安招警和公检法 2015 申论 · 未收录</title></rect>
-<rect x="1116" y="1745" width="76" height="8" rx="4" fill="#e2e8f0"/>
-<rect x="1116" y="1745" width="76.0" height="8" rx="4" fill="#34d399"/>
-<text x="1200" y="1753" font-size="11.5" fill="#334155">9/9</text>
-<text x="1968" y="1753" font-size="11.5" fill="#64748b">—</text>
-<text x="28" y="1812" font-size="11.5" fill="#94a3b8">2016–2026 汇总为 完整/应有（应有 = 已收录 + 缺卷），2008–2015 汇总为 完整/已收录 · 广州 2019 年起并入广东省考 · 状态来自槽位台账 catalog/exam-slots.jsonl</text>
+<text x="28" y="1774" font-size="11.5" fill="#94a3b8">2016–2026 汇总为 完整/应有（应有 = 已收录 + 缺卷），2008–2015 汇总为 完整/已收录 · 广州 2019 年起并入广东省考 · 公安招警和公检法为专项收录，不在本图 · 状态来自槽位台账 catalog/exam-slots.jsonl</text>
 </svg>

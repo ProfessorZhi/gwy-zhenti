@@ -61,8 +61,19 @@ def name(path):
     return f'{area} {parts[-2]} {subject} {label}'
 
 
+# 专项收录：非国考、省考的招录考试（公安院校联考、政法干警等）。试卷照常收录与浏览，
+# 但不进入槽位台账，不计入应有试卷、收录率与缺口统计。
+SPECIAL_COLLECTIONS = ('公安招警和公检法',)
+
+
+def special_rows():
+    rows = [json.loads(l) for l in (ROOT / 'catalog/manifest.jsonl').read_text(encoding='utf-8').splitlines() if l.strip()]
+    return [r for r in rows if r['area'] in SPECIAL_COLLECTIONS]
+
+
 def collect():
     rows = [json.loads(l) for l in (ROOT / 'catalog/manifest.jsonl').read_text(encoding='utf-8').splitlines() if l.strip()]
+    rows = [r for r in rows if r['area'] not in SPECIAL_COLLECTIONS]
     findings, _ = scan(ROOT)
     no_option = defaultdict(list)
     no_answer_confirmed = defaultdict(list)
@@ -95,6 +106,7 @@ def collect():
             if question or missing or answer:
                 shenlun[path] = {'question': question, 'material': sorted(missing), 'answer': answer}
     papers = [json.loads(l) for l in (ROOT / 'catalog/uncollected-slots.jsonl').read_text(encoding='utf-8').splitlines() if l.strip()]
+    papers = [p for p in papers if p['area'] not in SPECIAL_COLLECTIONS]
     return rows, xingce, shenlun, papers
 
 
@@ -148,6 +160,7 @@ def status_md(rows, xingce, shenlun, papers):
          '## 统计口径', '',
          '- **槽位台账**：以实际举行的考试为准，2016–2026 年每份应有试卷（地区 × 年份 × 科目 × 卷型）登记一行，状态为已收录、缺卷、待核或无独立考试。'
          '应有试卷 = 已收录 + 缺卷，缺卷即台账中尚未收录的应有试卷；考试身份或卷型未确认的列为待核，确认后计入。2015 年及以前只统计已收录试卷。',
+         f'- **专项收录**：公安招警和公检法（公安院校联考、政法干警等）不属于国考、省考，{len(special_rows())} 份试卷照常收录、可在目录中浏览，但不进入槽位台账，不计入应有试卷、收录率与缺口统计。',
          '- **局部缺口**：已收录试卷内的缺失，按题计。行测分三级——缺题干、缺选项、缺答案，每题只计最严重的一级；申论分缺题目、缺材料、缺答案。',
          '- **来源**：以粉笔为主，华图与网络检索补充。每份试卷在文件头 `来源` 与 `来源清单` 中记录实际采用的全部来源；缺卷指上述来源均未取得的应有试卷。', '',
          '## 总览', '']
@@ -245,7 +258,8 @@ def coverage_block(cov):
         f"| 2008–2015 | — | {h['collected']:,} | — | — | — |",
         '',
         '应有试卷以实际举行的考试为准，按「地区 × 年份 × 科目 × 卷型」逐卷登记于 [槽位台账](catalog/exam-slots.jsonl)，'
-        '应有试卷 = 已收录 + 缺卷，收录率 = 已收录 ÷ 应有试卷；待核卷次确认开考后计入，当年无独立试卷的科目不计入。2015 年及以前只统计已收录试卷。',
+        '应有试卷 = 已收录 + 缺卷，收录率 = 已收录 ÷ 应有试卷；待核卷次确认开考后计入，当年无独立试卷的科目不计入。2015 年及以前只统计已收录试卷。'
+        f'公安招警和公检法（公安院校联考、政法干警等）{len(special_rows())} 份为专项收录，可在目录中浏览，不计入台账与缺口统计。',
         '',
         f"来源以粉笔为主，华图与网络检索补充：2016–2026 年已收录试卷中，含粉笔来源 {src['粉笔']:,} 卷、"
         f"华图补充 {src['华图']} 卷、网络检索来源 {src['网络检索']} 卷（一卷可有多个来源）。",
@@ -354,7 +368,7 @@ UNCOUNTED_COLOR = '#f8fafc'
 UNREGISTERED_COLOR = '#fecdd3'
 SUBJECTS = ('行测', '申论')
 FOCUS = ['国考', '浙江', '江苏', '上海', '北京', '天津', '广东', '广州', '深圳', '福建']
-SPECIAL = ['新疆兵团', '公安招警和公检法']
+SPECIAL = ['新疆兵团']
 
 
 def series(r):
@@ -438,7 +452,7 @@ def health_svg(rows, grade, papers):
     names = {k[0] for k in marks}
     groups = [('国考与重点地区', [n for n in FOCUS if n in names]),
               ('其他省份', sorted(n for n in names if n not in FOCUS and n not in SPECIAL)),
-              ('专项考试', [n for n in SPECIAL if n in names])]
+              ('新疆兵团', [n for n in SPECIAL if n in names])]
     old, new = list(range(2008, 2016)), list(range(2016, 2027))
     sq, gap, pad = 10, 2, 5                                  # 方块边长、间距、格内边距
     per = max(len(v) for v in marks.values())
@@ -565,7 +579,7 @@ def health_svg(rows, grade, papers):
             out.append(f'<text x="{ox0 + 4}" y="{y0 + 19}" font-size="11.5" fill="#64748b">{f"{do}/{no}" if no else "—"}</text>')
             y0 += pair
     out.append(f'<text x="28" y="{H - 20}" font-size="11.5" fill="#94a3b8">2016–2026 汇总为 完整/应有（应有 = 已收录 + 缺卷），2008–2015 汇总为 完整/已收录 · '
-               '广州 2019 年起并入广东省考 · 状态来自槽位台账 catalog/exam-slots.jsonl</text>')
+               '广州 2019 年起并入广东省考 · 公安招警和公检法为专项收录，不在本图 · 状态来自槽位台账 catalog/exam-slots.jsonl</text>')
     out.append('</svg>')
     return '\n'.join(out) + '\n'
 

@@ -5,9 +5,6 @@
 {"area": "上海", "basis": null, "papers": ["省考/上海/2016/行测-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "行政执法", "year": 2016}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2016/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2016}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
-{"area": "公安招警和公检法", "basis": null, "papers": ["省考/公安招警和公检法/2016/申论-政法干警（专科类）.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "政法干警（专科类）", "year": 2016}
-{"area": "公安招警和公检法", "basis": null, "papers": ["省考/公安招警和公检法/2016/申论-政法干警（本硕类）.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "政法干警（本硕类）", "year": 2016}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2016}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2016/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2016}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
 {"area": "北京", "basis": null, "papers": ["省考/北京/2016/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2016}
@@ -113,8 +110,6 @@
 {"area": "上海", "basis": null, "papers": ["省考/上海/2017/行测-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "行政执法", "year": 2017}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2017/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2017}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2017/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2017}
-{"area": "公安招警和公检法", "basis": null, "papers": ["省考/公安招警和公检法/2017/申论-公安院校联考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "公安院校联考", "year": 2017}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2017}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2017/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2017}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2017/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2017}
 {"area": "北京", "basis": null, "papers": ["省考/北京/2017/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2017}
@@ -219,8 +214,6 @@
 {"area": "上海", "basis": null, "papers": ["省考/上海/2018/行测-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "行政执法", "year": 2018}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2018/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2018}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2018/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2018}
-{"area": "公安招警和公检法", "basis": null, "papers": ["省考/公安招警和公检法/2018/申论-公安院校联考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "公安院校联考", "year": 2018}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2018}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2018/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2018}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2018/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2018}
 {"area": "北京", "basis": null, "papers": ["省考/北京/2018/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2018}
@@ -333,8 +326,6 @@
 {"area": "云南", "basis": null, "papers": ["省考/云南/2019/申论-乡镇卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "乡镇卷", "year": 2019}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2019/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2019}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2019/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2019}
-{"area": "公安招警和公检法", "basis": null, "papers": ["省考/公安招警和公检法/2019/申论-公安院校联考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "公安院校联考", "year": 2019}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2019}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2019/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2019}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2019/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2019}
 {"area": "北京", "basis": null, "papers": ["省考/北京/2019/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2019}
@@ -467,8 +458,6 @@
 {"area": "云南", "basis": null, "papers": ["省考/云南/2020/申论-州县卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "州县卷", "year": 2020}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2020/申论-省级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省级卷", "year": 2020}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2020/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2020}
-{"area": "公安招警和公检法", "basis": null, "papers": ["省考/公安招警和公检法/2020/申论-公安院校联考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "公安院校联考", "year": 2020}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2020}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2020/申论-乡镇卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "乡镇卷", "year": 2020}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2020/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2020}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2020/行测-公安.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "公安", "year": 2020}
@@ -608,8 +597,6 @@
 {"area": "云南", "basis": null, "papers": ["省考/云南/2021/申论-乡镇卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "乡镇卷", "year": 2021}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2021/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2021}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2021/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2021}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2021}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2021}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2021/申论-乡镇卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "乡镇卷", "year": 2021}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2021/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2021}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2021/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2021}
@@ -743,8 +730,6 @@
 {"area": "云南", "basis": null, "papers": ["省考/云南/2022/申论-县乡卷.md"], "sources": ["网络检索"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2022}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2022/申论-省市卷.md"], "sources": ["网络检索"], "status": "已收录", "subject": "申论", "variant": "省市卷", "year": 2022}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2022/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2022}
-{"area": "公安招警和公检法", "basis": null, "papers": ["省考/公安招警和公检法/2022/申论-公安院校联考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "公安院校联考", "year": 2022}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2022}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2022/申论-旗县卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "旗县卷", "year": 2022}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2022/申论-盟市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "盟市卷", "year": 2022}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2022/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2022}
@@ -865,8 +850,6 @@
 {"area": "云南", "basis": null, "papers": ["省考/云南/2023/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2023}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2023/申论-省州市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省州市卷", "year": 2023}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2023/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2023}
-{"area": "公安招警和公检法", "basis": null, "papers": ["省考/公安招警和公检法/2023/申论-公安院校联考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "公安院校联考", "year": 2023}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2023}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2023/申论-旗县卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "旗县卷", "year": 2023}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2023/申论-盟市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "盟市卷", "year": 2023}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2023/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2023}
@@ -1000,8 +983,6 @@
 {"area": "云南", "basis": null, "papers": ["省考/云南/2024/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2024}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2024/申论-省州市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省州市卷", "year": 2024}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2024/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2024}
-{"area": "公安招警和公检法", "basis": null, "papers": ["省考/公安招警和公检法/2024/申论-公安院校联考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "公安院校联考", "year": 2024}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2024}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2024/申论-旗县卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "旗县卷", "year": 2024}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2024/申论-盟市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "盟市卷", "year": 2024}
 {"area": "内蒙古", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": null, "year": 2024}
@@ -1131,8 +1112,6 @@
 {"area": "上海", "basis": null, "papers": ["省考/上海/2025/行测-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "B类", "year": 2025}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2025/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2025}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2025/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2025}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2025}
 {"area": "内蒙古", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2025}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2025/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
 {"area": "北京", "basis": null, "papers": ["省考/北京/2025/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2025}
@@ -1254,8 +1233,6 @@
 {"area": "上海", "basis": null, "papers": ["省考/上海/2026/行测-统考.md"], "sources": ["粉笔", "华图"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "云南", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2026/行测-统考.md"], "sources": ["粉笔", "华图"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2026}
-{"area": "公安招警和公检法", "basis": "公安院校联考、政法干警考试的科目与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2026}
 {"area": "内蒙古", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
 {"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "北京", "basis": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251110_4267508.html", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "统考", "year": 2026}
