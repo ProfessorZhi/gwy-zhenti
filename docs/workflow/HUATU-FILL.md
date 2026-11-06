@@ -114,6 +114,29 @@ python3 -I tools/huatu_fill.py --paper 省考/北京/2023/行测-统考.md --cac
 
 对齐只采用题序单调递增的匹配作锚点；每道缺题按前后最近各 2 个锚点的局部偏移推算华图题号，前后两侧须同时支持。华图在中间增删题时，增删点前后的偏移各自成立；缺题恰好落在增删点、或华图同样缺这道题，工具会跳过并写明原因。
 
+#### 乱序卷的显式逐题复核计划
+
+自动模式仍要求 `anchor >= 0.8`。人工逐题核对已确认同卷、且有独立定位证据的乱序卷，可以另建 `--reviewed-plan` 计划。计划仅补列出的 A1 缺题，每题必须有完整题干、四选项、参考答案和解析。工具会检查全卷已有题及计划内目标，拒绝重复补入。当前人工模式要求题干含可比文字，纯图片题须停止补入。
+
+计划 JSON 使用 `schema_version: 1`，包含 `paper`、原卷 `paper_sha256`、缓存 `cache_sha256`、原始归档清单 `source_manifest_sha256`、原始 HTML `source_html_sha256`、目录文件 `source_catalog` 及 `source_catalog_sha256`、`reviewer`、`reviewed_at` 和 `items`。目录须提供与缓存一致的标题、题量及 `paperId`，或与原始解析页 URL 一致的 `answerid`。后一种情况下报告 `source_identity` 明确区分目录核验的 answerid 与缓存记录的 paperId。缓存须保留 `sourceArchive`、`sourceHtmlSha256`，每张被引用的图片须带 `sha256`。
+
+每个 item 记录 `q`、`huatu`、`method`、`rationale` 及 `anchors`，锚点记录本库 `q` 与来源 `huatu`，题号均从 1 开始。支持三种定位证据。
+
+- `neighbors` 使用前后最近各两道已有题，至少三票同偏移且两侧均支持。
+- `elimination` 声明闭区间 `local_range` 和 `source_range`，逐题核对整组，至少四个一一对应的已有题，唯一剩余题才能填入。
+- `material_group` 在整组排除法上增加 `local_material` 和 `source_material`，要求两侧材料实际覆盖的题号集合恰好等于计划范围、来源材料 ID 唯一，完整材料规范化相似度至少 0.95。目前仅接受文字材料，含图片材料须停止补入。
+
+锚点使用完整题干，相似度至少 0.85。已确认的同题异文若低于此值，必须在该锚点另列 `shared_passages` 与 `rationale`。共有条件须至少两段、每段至少十字、合计至少六十字，且组合在两卷中各唯一出现。复核记录应保留选项异文与弱证据排除理由。
+
+```bash
+python3 -I tools/huatu_fill.py --paper <试卷.md> --cache <缓存目录> --reviewed-plan <复核计划.json>
+python3 -I tools/huatu_fill.py --paper <试卷.md> --cache <缓存目录> --reviewed-plan <复核计划.json> --write --expect-after <预检的after_sha256>
+```
+
+A2 选项缺口可同时指定 `--option-q <题号>` 和 `--reviewed-plan`，计划须设置 `mode: "A2"`，且仅列出这一个目标。原卷须实际存在选项占位，目标仍须通过题干相似或同法律、同选非方向及至少两个相同选项的核对。工具采用华图整组选项、答案及解析，并保存粉笔原题块供追溯，预检与写入哈希规则相同。
+
+预检完成全部渲染和图片存在性检查，输出 `after_sha256`。写入必须带相同哈希，原卷或来源变化后必须重新复核。计划副本保存在 `assets-huatu-<paperId>/review-<sha256>.json`，各补题答案块链接该证据。人工复核写入串行锁定清单，先在同目录完整预写临时文件及恢复副本，再依次原子替换。I/O 异常时逐项回滚，某一路径回滚失败后仍继续恢复其他文件，并保留无法恢复路径的备份供排查。每卷仍单独提交 PR。
+
 ### 5. 写入
 
 对齐报告符合要求后执行：
@@ -149,7 +172,7 @@ content: 华图补入北京2023行测 35 题
 出现以下任一情况立即停止，回报原始信息，不自行绕过：
 
 - 验证码、登录失效，或一小时内累计 3 次 403/429；
-- 对齐报告 `anchor` < 0.8（该版本跳过，换下一个版本或下一份卷）；
+- 自动对齐报告 `anchor` < 0.8（该版本跳过；已完成上述显式逐题复核的卷使用独立计划入口）；
 - 工具报错。
 
 ## 回报格式

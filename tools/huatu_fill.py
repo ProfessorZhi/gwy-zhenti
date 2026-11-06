@@ -209,6 +209,10 @@ def question_md(q, h, hq, meta, report, image_map, prefix, sandwich):
         lines += [f"{o['label']}. {html_to_md(o.get('html', ''), image_map, prefix)}", '']
     note = (f"**参考答案（华图在线，{meta['capturedAt'][:10]} 采集；paperId {meta['paperId']}，对齐 hu{h + 1}，"
             f"卷级锚点 {report['anchor']}，邻题夹逼 {sandwich}）**")
+    if report.get('mode') == 'reviewed-A1':
+        note = (f"**参考答案（华图在线，{meta['capturedAt'][:10]} 采集；paperId {meta['paperId']}，对齐 hu{h + 1}，"
+                f"卷级锚点 {report['anchor']}；显式人工复核）**\n\n"
+                f"[逐题复核依据与来源哈希]({prefix}/review-{report['review_plan_sha256']}.json)")
     lines += [f'<details><summary>第 {q} 题 · 答案与解析</summary>', '', note, '', item['answer'].strip(), '']
     analysis = html_to_md(item.get('analysis_html', ''), image_map, prefix)
     lines += ['**解析**', '', analysis, ''] if analysis else ['**解析状态：unknown（来源未提供）**', '']
@@ -224,13 +228,14 @@ def update_frontmatter(text, meta, filled, mode='A1'):
     if u.scheme != 'https' or not u.hostname or not (u.hostname == 'huatu.com' or u.hostname.endswith('.huatu.com')) or u.username or u.password:
         raise ValueError('华图来源链接缺失或不合法')
     locator = urlunsplit((u.scheme, u.netloc, u.path, '', ''))
-    purpose = '补选项、参考答案及解析' if mode == 'A2' else '补题干、选项、参考答案及解析'
+    purpose = '补选项、参考答案及解析' if mode in ('A2', 'reviewed-A2') else '补题干、选项、参考答案及解析'
+    evidence = '含 paperId、卷级锚点、显式人工复核计划链接' if mode.startswith('reviewed-') else '含 paperId、卷级锚点、邻题夹逼'
     entry = ('  - 来源方: "华图在线"\n'
              f'    来源试卷ID: "{meta["paperId"]}"\n'
              f'    定位: {json.dumps(locator, ensure_ascii=False)}\n'
              f'    题号: [{nums}]\n'
              f'    用途: "{purpose}"\n'
-             '    证据: "本卷对应题号的华图参考答案块（含 paperId、卷级锚点、邻题夹逼）"\n'
+             f'    证据: "本卷对应题号的华图参考答案块（{evidence}）"\n'
              '    核验: "逐题对齐记录在答案块；整卷未完成人工验收"\n')
     if '\n来源清单:' not in '\n' + fm:
         src = re.search(r'^来源: (.*)$', fm, re.M)
@@ -263,7 +268,7 @@ def update_frontmatter(text, meta, filled, mode='A1'):
     else:
         # 插到来源清单最后一项之后（来源清单的条目均以两个空格缩进）
         fm = re.sub(r'(^来源清单:\n(?:  .*\n)+)', lambda x: x.group(1) + entry, fm + '\n', count=1, flags=re.M).rstrip('\n')
-    details = '选项/答案/解析' if mode == 'A2' else '题干/选项/答案/解析'
+    details = '选项/答案/解析' if mode in ('A2', 'reviewed-A2') else '题干/选项/答案/解析'
     stamp = f'；{meta["capturedAt"][:10]} 由华图同卷补入 {len(filled)} 题（题 {ranges(filled)}）{details}，附 paperId 与对齐证据'
     fm = re.sub(r'^(校验状态: ".*?)"$', lambda x: x.group(1) + stamp + '"', fm, count=1, flags=re.M)
     return '---\n' + fm + '\n---\n' + text[m.end():]
@@ -295,7 +300,7 @@ def equivalent_law_stem(old, source, old_options, source_options):
     return len({s for s in old_set & source_set if len(s) >= 4}) >= 2
 
 
-def fill_option_gap(paper, cache, text, meta, target, write, root):
+def fill_option_gap(paper, cache, text, meta, target, write, root, reviewed_plan=None, expect_after=None):
     """Explicit A2 repair: whole source option sequence, never mixed versions."""
     if not str(meta.get('paperId', '')).isdigit():
         raise ValueError('华图试卷编号无效')
@@ -316,6 +321,10 @@ def fill_option_gap(paper, cache, text, meta, target, write, root):
     trial = text[:a] + heading + '\n' + STUB + '\n\n' + text[b:]
     report, plan = align(trial, meta['questions'])
     report.update({'paper': paper, 'paperId': meta['paperId'], 'mode': 'A2', 'written': False})
+    review_tools, review_raw = None, None
+    if reviewed_plan:
+        review_tools = runpy.run_path(str(Path(__file__).with_name('huatu_reviewed_plan.py')))
+        plan, review_raw = review_tools['validate'](Path(reviewed_plan), paper, path, cache, trial, meta, report, sys.modules[__name__], option_q=target)
     # Other missing questions are irrelevant in explicit A2 mode.
     report['fills'] = [x for x in report['fills'] if x['q'] == target]
     report['skipped'] = [x for x in report['skipped'] if x['q'] == target]
@@ -358,12 +367,16 @@ def fill_option_gap(paper, cache, text, meta, target, write, root):
         if not source.is_file():
             raise ValueError('图片文件缺失：' + img['file'])
         data = source.read_bytes()
+        if reviewed_plan and img.get('sha256') != hashlib.sha256(data).hexdigest():
+            raise ValueError('人工复核来源图片哈希不匹配')
         name = hashlib.sha256(data).hexdigest() + Path(img['file']).suffix.lower()
         image_map[img['url']] = name
         copies.append((data, path.parent / prefix / name))
     # All referenced images must exist in the archive before any file is written.
     for fragment in fragments:
-        html_to_md(fragment, image_map, prefix)
+        rendered = html_to_md(fragment, image_map, prefix)
+        if reviewed_plan and fragment and not norm(rendered) and '![](' not in rendered:
+            raise ValueError('人工复核 A2 选项或解析渲染后为空')
     original_name = hashlib.sha256(original.encode('utf-8')).hexdigest() + '-original.txt'
     output = [heading.rstrip(), '', stem.strip(), '',
               f'> 本题采用华图整组选项与参考答案；原题块保存在 [{original_name}]({prefix}/{original_name})。', '']
@@ -372,13 +385,18 @@ def fill_option_gap(paper, cache, text, meta, target, write, root):
     for o in source_opts:
         output += [f"{o['label']}. {html_to_md(o['html'], image_map, prefix)}", '']
     sandwich = next(f['sandwich'] for f in report['fills'] if f['q'] == target)
+    review_note = ''
+    alignment_note = f'邻题夹逼 {sandwich}'
+    if reviewed_plan:
+        review_note = f"\n\n[逐题复核依据与来源哈希]({prefix}/review-{report['review_plan_sha256']}.json)"
+        alignment_note = '显式人工复核'
     output += [f'<details><summary>第 {target} 题 · 答案与解析</summary>', '',
-               f'**参考答案（华图在线，paperId {meta["paperId"]}；卷级锚点 {report["anchor"]}，邻题夹逼 {sandwich}；题序与原版本可能不同）**', '',
+               f'**参考答案（华图在线，paperId {meta["paperId"]}；卷级锚点 {report["anchor"]}，{alignment_note}；题序与原版本可能不同）**' + review_note, '',
                q['answer'].strip(), '', '**解析**', '',
                html_to_md(q.get('analysis_html', ''), image_map, prefix) or '来源未提供解析。', '', '</details>', '', '']
     new = text[:a] + '\n'.join(output) + text[b:]
     body_after = new[frontmatter(new).end():]
-    new = update_frontmatter(new, meta, [target], mode='A2')
+    new = update_frontmatter(new, meta, [target], mode='reviewed-A2' if reviewed_plan else 'A2')
     if new[frontmatter(new).end():] != body_after:
         raise RuntimeError('更新文件头时改动正文')
     verify(text, new, {target: plan[target]})
@@ -396,6 +414,17 @@ def fill_option_gap(paper, cache, text, meta, target, write, root):
         raise ValueError('清单不存在或无效') from exc
     if sum(isinstance(row, dict) and row.get('path') == paper for row in rows) != 1:
         raise ValueError('试卷在清单中不存在或不唯一')
+    if reviewed_plan:
+        report['after_sha256'] = hashlib.sha256(new.encode('utf8')).hexdigest()
+        if not write:
+            return report
+        if expect_after != report['after_sha256']:
+            raise ValueError('人工复核写入必须提供与预检一致的 --expect-after')
+        copies.extend([(original.encode('utf8'), path.parent / prefix / original_name),
+                       (review_raw, path.parent / prefix / f"review-{report['review_plan_sha256']}.json")])
+        review_tools['commit'](path, paper, new, root, copies, json.loads(review_raw)['paper_sha256'])
+        report['written'] = True
+        return report
     if not write:
         return report
     for data, dest in copies:
@@ -410,7 +439,7 @@ def fill_option_gap(paper, cache, text, meta, target, write, root):
     return report
 
 
-def fill(paper, cache, write=False, root=ROOT, option_q=None):
+def fill(paper, cache, write=False, root=ROOT, option_q=None, reviewed_plan=None, expect_after=None):
     root = root.resolve()
     path = (root / paper).resolve()
     if not any(path.is_relative_to(root / section) for section in ('省考', '国考')) or path.suffix.lower() != '.md':
@@ -419,20 +448,53 @@ def fill(paper, cache, write=False, root=ROOT, option_q=None):
     text = path.read_text(encoding='utf-8')
     meta = json.loads((cache / 'paper.json').read_text(encoding='utf-8'))
     if option_q is not None:
-        return fill_option_gap(paper, cache, text, meta, option_q, write, root)
+        return fill_option_gap(paper, cache, text, meta, option_q, write, root, reviewed_plan, expect_after)
     hq = meta['questions']
     report, plan = align(text, hq)
     report.update({'paper': paper, 'paperId': meta['paperId']})
-    if not write or not plan:
+    review_tools, review_raw = None, None
+    if reviewed_plan:
+        review_tools = runpy.run_path(str(Path(__file__).with_name('huatu_reviewed_plan.py')))
+        plan, review_raw = review_tools['validate'](Path(reviewed_plan), paper, path, cache, text, meta, report, sys.modules[__name__])
+    if (not write and not reviewed_plan) or not plan:
         report['written'] = False
         return report
     prefix = f'assets-huatu-{meta["paperId"]}'
     image_map, copies = {}, []
+    needed = set()
+    if reviewed_plan:
+        fragments = []
+        for h in plan.values():
+            source = hq[h]
+            fragments.extend([source.get('stem_html', ''), source.get('analysis_html', '')])
+            fragments.extend(o.get('html', '') for o in source.get('options', []))
+        if MATERIAL_STUB in text:
+            material_ids = {hq[h].get('material_id') for h in plan.values()}
+            fragments.extend(m['html'] for m in meta.get('materials', []) if m['id'] in material_ids)
+        needed = {html.unescape(src) for fragment in fragments for src in re.findall(
+            r'<img\b[^>]*?\bsrc\s*=\s*["\']([^"\']+)["\'][^>]*>', fragment, flags=re.I)}
     for img in meta.get('images', []):
-        data = (cache / img['file']).read_bytes()
+        if reviewed_plan and img['url'] not in needed:
+            continue
+        source_path = (cache / img['file']).resolve()
+        if reviewed_plan and not source_path.is_relative_to(cache.resolve()):
+            raise ValueError('图片路径超出缓存')
+        data = source_path.read_bytes()
+        if reviewed_plan and (img['url'] in image_map or img.get('sha256') != hashlib.sha256(data).hexdigest()):
+            raise ValueError('人工复核来源图片映射重复或哈希不匹配')
         name = hashlib.sha256(data).hexdigest() + Path(img['file']).suffix.lower()
         image_map[img['url']] = name
         copies.append((data, path.parent / prefix / name))
+    if reviewed_plan:
+        for h in plan.values():
+            source = hq[h]
+            fragments = [source.get('stem_html', '')] + [o.get('html', '') for o in source.get('options', [])]
+            rendered = [html_to_md(fragment, image_map, prefix) for fragment in fragments]
+            rendered_analysis = html_to_md(source.get('analysis_html', ''), image_map, prefix)
+            if any(not norm(fragment) and '![](' not in fragment for fragment in rendered + [rendered_analysis]):
+                raise ValueError(f'华图第 {h + 1} 题渲染后题干、选项或解析为空')
+            if any(re.search(r'如(?:上|下|左|右)?图', fragment) for fragment in rendered[1:]) and not any('![](' in fragment for fragment in rendered):
+                raise ValueError(f'华图第 {h + 1} 题图形选项缺共享图')
     materials = {m['id']: m for m in meta.get('materials', [])}
     fills = {f['q']: f for f in report['fills']}
     # 从后往前替换，偏移量不受影响
@@ -454,10 +516,25 @@ def fill(paper, cache, write=False, root=ROOT, option_q=None):
     for a, b, rep in sorted(edits, reverse=True):
         new = new[:a] + rep + new[b:]
     body = new[frontmatter(new).end():]
-    new = update_frontmatter(new, meta, sorted(plan))
+    new = update_frontmatter(new, meta, sorted(plan), mode='reviewed-A1' if reviewed_plan else 'A1')
     if new[frontmatter(new).end():] != body:
         raise RuntimeError('更新文件头时改动了正文')
     verify(text, new, plan)
+    if reviewed_plan:
+        copies.append((review_raw, path.parent / prefix / f"review-{report['review_plan_sha256']}.json"))
+        planned = {dest.resolve() for _, dest in copies}
+        for ref in re.findall(r'!\[[^\]]*\]\(([^)\s]+)\)', new):
+            resolved = (path.parent / ref).resolve()
+            if resolved not in planned and not resolved.is_file():
+                raise ValueError(f'图片缺失：{ref}')
+        report.update({'after_sha256': hashlib.sha256(new.encode('utf8')).hexdigest(), 'written': False})
+        if not write:
+            return report
+        if expect_after != report['after_sha256']:
+            raise ValueError('人工复核写入必须提供与预检一致的 --expect-after')
+        review_tools['commit'](path, paper, new, root, copies, json.loads(review_raw)['paper_sha256'])
+        report['written'] = True
+        return report
     for data, dest in copies:
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(data)
@@ -501,9 +578,10 @@ def main():
     parser.add_argument('--expect-after', help='申论写入时必须与预检后 SHA256 一致')
     parser.add_argument('--write', action='store_true', help='写入试卷；不加只输出对齐报告')
     parser.add_argument('--option-q', type=int, help='显式指定一处 A2 选项缺口题号；采用来源整组选项')
+    parser.add_argument('--reviewed-plan', type=Path, help='显式人工复核 A1 计划 JSON；锁定来源和原卷哈希')
     args = parser.parse_args()
     if args.essay_plan:
-        if args.paper or args.cache or args.option_q is not None:
+        if args.paper or args.cache or args.option_q is not None or args.reviewed_plan:
             parser.error('申论计划不能与行测参数同时使用')
         previous = sys.argv
         sys.argv = ['essay_gap_fill.py', '--plan', args.essay_plan]
@@ -518,9 +596,10 @@ def main():
         return 0
     if not args.paper or not args.cache:
         parser.error('行测模式需要 --paper 和 --cache')
-    if args.expect_after:
-        parser.error('--expect-after 仅适用于 --essay-plan')
-    report = fill(args.paper, args.cache.resolve(), args.write, option_q=args.option_q)
+    if args.expect_after and not args.reviewed_plan:
+        parser.error('--expect-after 仅适用于 --essay-plan 或 --reviewed-plan')
+    report = fill(args.paper, args.cache.resolve(), args.write, option_q=args.option_q,
+                  reviewed_plan=args.reviewed_plan, expect_after=args.expect_after)
     print(json.dumps(report, ensure_ascii=False, indent=1))
     return 0
 
