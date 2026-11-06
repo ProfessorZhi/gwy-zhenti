@@ -128,4 +128,6 @@
 
 按用户指定的华图整卷目录、粉笔行测目录、粉笔申论目录判断是否有对应卷。47份缺卷及2份已有申论卷标记为“粉笔、华图没有（三入口范围，已核查）”，见 #160 与 #158。考情文章已从判定依据移除。
 
-本地来源包、未提交改动、审核计划和旧稿保留为local-only，统一归档到gwyzhenti目录。
+本地来源包、未提交改动、审核计划和旧稿保留为local-only，统一归档到原本的gwy-zhenti目录。
+
+本地统一工作入口为 gwy-zhenti。其余副本及旧稿保存在 work/legacy-checkouts-20261106/，目录迁移映射与恢复说明保存在local-only的 work/RELOCATION-20261106.json 和 work/PAUSED-README.md。
