@@ -1,14 +1,6 @@
 name: Fenbi framework offline tests
+# 只在需要时手动运行（Actions 页 → Run workflow）。
 on:
-  pull_request:
-    paths:
-      - 'tools/fenbi/**'
-      - '.github/workflows/fenbi-framework.yml'
-  push:
-    branches: [main]
-    paths:
-      - 'tools/fenbi/**'
-      - '.github/workflows/fenbi-framework.yml'
   workflow_dispatch:
 permissions:
   contents: read

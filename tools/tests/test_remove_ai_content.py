@@ -20,10 +20,9 @@ The split is now:
   There are deliberately **no absolute corpus counts**: the corpus grew 1,243 -> 1,422 in
   one day, so a hard-coded number is a timer, not a test. What must not drift is the
   relation between the three sources, so that is what is asserted.
-* ``tools/verify_ai_removal_receipts.py`` (opt-in, time-pinned) keeps the byte-level
-  receipt snapshot. It passes only on the tree of commit de8832f57; run it by hand with
-  ``python tools/verify_ai_removal_receipts.py`` or from the ``ai_receipt_audit``
-  workflow_dispatch input.
+* The byte-level receipt snapshot verifier (``tools/verify_ai_removal_receipts.py``) only
+  passed on the tree of commit de8832f57 and was retired on 2026-11-06; check out that
+  commit to run it.
 """
 import hashlib
 import json

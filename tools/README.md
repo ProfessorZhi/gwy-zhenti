@@ -85,25 +85,13 @@ python -X utf8 -m unittest discover -s tests -v                                 
 
 ## 历史修复脚本
 
-以下脚本服务于 2026-10-11 至 10-22 的各轮定向修复，每个都绑定当时的修复回执，**只用于复现和核验历史结果，不要在当前语料上重新运行**。CI 仍会运行其中的回执校验，以保证历史修复没有被后续改动破坏。
-
-| 轮次 | 脚本 | 对应报告 |
-| --- | --- | --- |
-| 题序与漏题修复（10-11） | `paper_integrity_repair.py`、`reference_sequence_repair.py` | [PAPER-INTEGRITY](../reports/PAPER-INTEGRITY-20261011.md) |
-| 申论整卷整理 | `essay_layout.py`、`essay_source_structure.py`、`essay_transcript_restore.py`、`verify_essay_transcripts.py` | [报表索引](../reports/README.md) |
-| 第三轮（10-12） | `round3_*.py`、`verify_round3_repairs.py` | [ROUND3](../reports/ROUND3-XINGCE-SOURCE-CHECK-20261012.md) |
-| 来源补录（10-13） | `source_supplement_20261013.py`、`verify_sourced_supplement_20261013.py` | [报表索引](../reports/README.md) |
-| 第四至六轮 | `round4_*.py`、`round5_*.py`、`round6_*.py`、`verify_round{4,5,6}_repairs.py` | [报表索引](../reports/README.md) |
-| 第七轮 | `r7_*.py`、`verify_round7_repairs.py` | [报表索引](../reports/README.md) |
-| 回执总校验 | `verify_repair_receipts.py`、`verify_ai_removal_receipts.py` | [AI 内容清理](../reports/REMOVED-AI-CONTENT-LEGACY-20261022.md) |
-
-修复所用的输入数据在 [`data/`](data/)。
+2026-10-11 至 10-22 各轮定向修复用的一次性脚本（`round3_*`～`round6_*`、`r7_*`、`verify_round*`、`paper_integrity_repair`、`essay_transcript_restore` 等）及其输入数据 `data/`，绑定当时的修复回执，只能在当时的语料上复现，已于 2026-11-06 从当前树移除。需要复现时检出 `9c1265ba4` 或更早的提交即可。对应报告仍在 [`reports/`](../reports/README.md)。
 
 ## 测试
 
 | 位置 | 内容 | 运行 |
 | --- | --- | --- |
-| `*_test.py` | 质量检查、历史修复脚本的回归测试 | `cd tools && python -m unittest cloud_quality_test paper_integrity_repair_test priority_quality_test essay_transcript_restore_test round3_repair_test` |
+| `cloud_quality_test.py` | 质量检查的回归测试 | `cd tools && python -m unittest cloud_quality_test` |
 | [`tests/`](tests/) | 早期整编管线的单元测试与冒烟测试 | `cd tools && python -m unittest discover -s tests` |
 | [`fenbi/test/`](fenbi/test/) | 采集流水线的离线测试 | `cd tools/fenbi && node --test test/*.test.mjs` |
 
