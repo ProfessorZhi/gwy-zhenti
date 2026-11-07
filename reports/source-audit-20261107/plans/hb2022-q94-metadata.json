@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "paper": "省考/河北/2022/行测-统考.md",
+  "paper_sha256": "420b0e27d5f5fa0b9c5925925ae246fba6525e1d4e7e6dddb39e4a2b0208d666",
+  "target_q": 94,
+  "source_q": 95,
+  "source_platform": "考未来/32学苑",
+  "source_url": "https://kaoweilai.cn/zhenti-zj-2022-a.html",
+  "source_title": "2022年浙江省公务员录用考试《行测》A卷（公开页）",
+  "source_region": "浙江",
+  "source_year": 2022,
+  "source_variant": "A类",
+  "source_evidence": [
+    {
+      "path": "reports/source-audit-20261107/evidence/hb2022-q94.txt",
+      "sha256": "aecf01f167c527b6e4018f74c53753bdb0157f98cb21a1a3229e050dce6ff162",
+      "role": "stem_options_answer_anchors"
+    }
+  ],
+  "anchors": [
+    {
+      "local_q": 93,
+      "source_q": 93,
+      "local_text": "电脑：设备",
+      "source_text": "电脑：设备"
+    },
+    {
+      "local_q": 95,
+      "source_q": 95,
+      "local_text": "针线：布料：服饰",
+      "source_text": "针线：布料：服饰"
+    },
+    {
+      "local_q": 96,
+      "source_q": 96,
+      "local_text": "电影院：影片：放映",
+      "source_text": "电影院：影片：放映"
+    }
+  ],
+  "stem": "马匹：船只：车辆",
+  "options": {
+    "A": "银两：金钱：银币",
+    "B": "纸张：试卷：画册",
+    "C": "水杯：油瓶：饭碗",
+    "D": "官员：武将：首领"
+  },
+  "answer": "C",
+  "explanation": "题干三者均为交通工具，属于功能并列；C项三者均为容器，功能并列，逻辑关系一致。",
+  "source_note": "考未来/32学苑浙江2022 A卷跨省同题；答案来自公开题库解析，非官方",
+  "reviewer": "二次复核：依据原始来源页面/PDF题号及本库相邻题锚点修正来源题号",
+  "reviewed_at": "2026-11-07",
+  "images": []
+}

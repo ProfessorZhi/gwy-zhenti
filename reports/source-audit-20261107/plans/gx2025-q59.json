@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "paper": "省考/广西/2025/行测-统考.md",
+ "paper_sha256": "4c9c211e36dabaf510d5a0809954fa7e243c1ca6d4621b3812cc01af9466c423",
+ "target_q": 59,
+ "source_q": 59,
+ "source_platform": "星光公考/爱真题",
+ "source_url": "https://www.xingguanggongkao.com/pc/wb/quesView/id/51613.html",
+ "source_title": "2025年广西公务员考试行测真题（考生回忆版）·单题页",
+ "source_region": "广西",
+ "source_year": 2025,
+ "source_variant": "统考",
+ "source_evidence": [
+  {
+   "path": "reports/source-audit-20261107/evidence/gx2025-q59.txt",
+   "sha256": "132a78054725c90ded5dfe820a6091f05d763c9a3429652f0353b60613aa0c1d",
+   "role": "stem_options_answer_anchors"
+  }
+ ],
+ "anchors": [
+  {
+   "local_q": 58,
+   "source_q": 58,
+   "local_text": "甲和乙两条生产线的效率比为1：x",
+   "source_text": "甲和乙两条生产线的效率比为1：x"
+  },
+  {
+   "local_q": 60,
+   "source_q": 60,
+   "local_text": "五边形公园ABCDE的面积为4万平方米",
+   "source_text": "五边形公园ABCDE的面积为4万平方米"
+  }
+ ],
+ "stem": "甲和乙两个科研单位共有99名工作人员。其中甲单位研究人员占本单位工作人员总数的75%，乙单位研究人员占本单位工作人员总数的88%。问甲单位的非研究人员比乙单位的非研究人员：",
+ "options": {
+  "A": "少不到5人",
+  "B": "少5人以上",
+  "C": "多不到5人",
+  "D": "多5人以上"
+ },
+ "answer": "A",
+ "explanation": "设甲单位x人、乙单位99-x人；甲非研究0.25x，乙非研究0.12(99-x)。由人数整数及研究人数整数可定位甲24人、乙75人，非研究分别为6人和9人，故甲比乙少3人，即少不到5人，选A。",
+ "source_note": "星光公考单题页与爱真题公开页；网友回忆版，非官方",
+ "reviewer": "主会话逐题对照公开来源正文与本库前后锚点",
+ "reviewed_at": "2026-11-07",
+ "images": []
+}
