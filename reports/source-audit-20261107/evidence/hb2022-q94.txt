@@ -1,0 +1,13 @@
+来源：考未来2022浙江A整卷 q95；32学苑2022浙江A PDF q111；2022安徽 PDF q66（跨省同题）
+URL：https://kaoweilai.cn/zhenti-zj-2022-a.html
+URL2：https://static.32xueyuan.com/zq/u/cms/zj/202308/29155011jxqs.pdf
+题干：马匹：船只：车辆
+A. 银两：金钱：银币
+B. 纸张：试卷：画册
+C. 水杯：油瓶：饭碗
+D. 官员：武将：首领
+答案：C
+答案来源：https://www.shikaobang.cn/wp/search/detail?id=OkZyrndqaJ&type=question
+前锚（库q93）：电脑：设备
+后锚（库q95）：针线：布料：服饰
+后锚（库q96）：电影院：影片：放映

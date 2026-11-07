@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "paper": "省考/青海/2024/行测-统考.md",
+  "paper_sha256": "772bd666fb160e748483d56c876aef1cfc46783135b542c9ae37b0c455e14054",
+  "target_q": 90,
+  "source_q": 89,
+  "source_platform": "星光公考",
+  "source_url": "https://upload.xingguanggongkao.com/pdf/2024%E5%B9%B4%E6%B9%96%E5%8C%97%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88%E8%80%83%E7%94%9F%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+  "source_title": "2024年湖北省公务员录用考试《行测》真题（考生回忆版）·第89题",
+  "source_region": "湖北",
+  "source_year": 2024,
+  "source_variant": "统考",
+  "source_evidence": [
+    {
+      "path": "reports/source-audit-20261107/evidence/qh2024-q90.txt",
+      "sha256": "37af871eddb32a744956fb98398a70c6afc3afeca24a96e1f40f718b77dc18e8",
+      "role": "stem_options_answer_anchors"
+    }
+  ],
+  "anchors": [
+    {
+      "local_q": 89,
+      "source_q": 89,
+      "local_text": "兵符：信物",
+      "source_text": "兵符：信物"
+    },
+    {
+      "local_q": 91,
+      "source_q": 91,
+      "local_text": "泡沫经济：实体经济：通货膨胀",
+      "source_text": "泡沫经济：实体经济：通货膨胀"
+    }
+  ],
+  "stem": "虫害：植物受损",
+  "options": {
+    "A": "雾霾：慢性肺炎",
+    "B": "除名：查无此人",
+    "C": "赤潮：海水污染",
+    "D": "失眠：辗转反侧"
+  },
+  "answer": "A",
+  "explanation": "题干为因果关系：虫害导致植物受损；A项雾霾导致慢性肺炎，因果方向与题干一致。",
+  "source_note": "星光公考湖北2024 PDF跨省同题；答案来自公开题库解析，非官方",
+  "reviewer": "二次复核：依据原始来源页面/PDF题号及本库相邻题锚点修正来源题号",
+  "reviewed_at": "2026-11-07",
+  "images": []
+}
