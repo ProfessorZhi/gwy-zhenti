@@ -1,0 +1,46 @@
+{
+ "schema_version": 1,
+ "paper": "省考/河北/2022/行测-统考.md",
+ "paper_sha256": "579589eb18dd79352467ecc6246e6e77e619a2b5f9dcd49b6b5b2e4482c62b13",
+ "target_q": 94,
+ "source_q": 106,
+ "source_platform": "gkhenti 公开真题库（源标注 fenbi）",
+ "source_url": "https://gwy.gkzhenti.cn/paper/1706852966843",
+ "source_title": "2022年浙江省公务员录用考试《行测》题（C类）（网友回忆版）",
+ "source_region": "浙江",
+ "source_year": 2022,
+ "source_variant": "C类",
+ "source_evidence": [
+  {
+   "path": "reports/source-audit-20261108/evidence/hb2022-q94.txt",
+   "sha256": "17902bda28a97f650ae4e2b7a696873fa60318af2e6b29b5dd5c9721e1fa14ee",
+   "role": "stem_options_answer_anchors"
+  }
+ ],
+ "anchors": [
+  {
+   "local_q": 93,
+   "source_q": 105,
+   "local_text": "电脑：设备",
+   "source_text": "电脑：设备"
+  },
+  {
+   "local_q": 95,
+   "source_q": 107,
+   "local_text": "针线：布料：服饰",
+   "source_text": "针线：布料：服饰"
+  }
+ ],
+ "stem": "马匹：船只：车辆",
+ "options": {
+  "A": "银两：金钱：银币",
+  "B": "纸张：试卷：画册",
+  "C": "水杯：油瓶：饭碗",
+  "D": "官员：武将：首领"
+ },
+ "answer": "C",
+ "explanation": "第一步：判断题干词语间逻辑关系。\n\n马匹、船只和车辆都有运输的功能，三者在功能上是并列关系。\n\n第二步：判断选项词语间逻辑关系。\n\nA项：银两是以银锭为主要形式的一种秤量货币单位，金钱多指用金属铸成的钱，后泛指货币财富，银两是金钱，二者是种属关系，与题干逻辑关系不一致，排除；\n\nB项：纸张是制作试卷的原材料，二者是原材料与成品的对应关系，与题干逻辑关系不一致，排除；\n\nC项：水杯、油瓶和饭碗都有盛装物品的功能，三者在功能上是并列关系，与题干逻辑关系一致，当选；\n\nD项：武将是古代的军事将领或部队军官，武将是官员，二者是种属关系，与题干逻辑关系不一致，排除。\n\n故正确答案为C。",
+ "source_note": "公开真题库正文；库内来源注记 q93=浙江C105、q95=浙江C107；答案 C 取自同源题库参考键；非官方回忆版",
+ "reviewer": "Agent C",
+ "reviewed_at": "2026-11-08"
+}

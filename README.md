@@ -136,7 +136,7 @@
 
 应有试卷以实际举行的考试为准，按「地区 × 年份 × 科目 × 卷型」逐卷登记于 [槽位台账](catalog/exam-slots.jsonl)，应有试卷 = 已收录 + 缺卷，收录率 = 已收录 ÷ 应有试卷；待核卷次确认开考后计入，当年无独立试卷的科目不计入。2015 年及以前只统计已收录试卷。公安招警和公检法（公安院校联考、政法干警等）9 份为专项收录，可在目录中浏览，不计入台账与缺口统计。
 
-来源以粉笔为主，华图与网络检索补充：2016–2026 年已收录试卷中，含粉笔来源 1,232 卷、华图补充 15 卷、网络检索来源 20 卷（一卷可有多个来源）。
+来源以粉笔为主，华图与网络检索补充：2016–2026 年已收录试卷中，含粉笔来源 1,232 卷、华图补充 15 卷、网络检索来源 29 卷（一卷可有多个来源）。
 <!-- gwy:coverage:end -->
 
 <p align="center">
@@ -156,7 +156,7 @@
 | --- | --- | ---: | ---: | :---: |
 | **缺卷** | 已确认缺卷 | 51 卷 | 不判定 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
 |  | 考试身份待核 | 15 卷 | 不判定 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
-| **行测** | 缺题干 | 280 题 · 60 卷 | — | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
+| **行测** | 缺题干 | 262 题 · 58 卷 | — | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
 |  | 缺选项 | 4 题 · 4 卷 | — | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
 |  | 缺答案 | — | — |  |
 | **申论** | 缺题目 | — | — |  |

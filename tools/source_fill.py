@@ -215,13 +215,13 @@ def validate(plan, raw, root):
     lines = fm.splitlines()
     idx = next((i for i, l in enumerate(lines) if l.startswith('校验状态:')), None)
     if idx is None:
-        lines.append('校验状态: "2026-11-07 公开题本站补入第 ' + str(plan['target_q']) + ' 题；来源见来源清单；非官方"')
+        lines.append('校验状态: "' + (plan.get('reviewed_at') or '2026-11-08') + ' 公开题本站补入第 ' + str(plan['target_q']) + ' 题；来源见来源清单；非官方"')
     else:
         old = lines[idx]
         if old.rstrip().endswith('"'):
-            lines[idx] = old.rstrip()[:-1] + '；2026-11-07 公开题本站补入第 ' + str(plan['target_q']) + ' 题（非官方，来源见来源清单）"'
+            lines[idx] = old.rstrip()[:-1] + '；' + (plan.get('reviewed_at') or '2026-11-08') + ' 公开题本站补入第 ' + str(plan['target_q']) + ' 题（非官方，来源见来源清单）"'
         else:
-            lines[idx] = old + '；2026-11-07 公开题本站补入第 ' + str(plan['target_q']) + ' 题（非官方，来源见来源清单）'
+            lines[idx] = old + '；' + (plan.get('reviewed_at') or '2026-11-08') + ' 公开题本站补入第 ' + str(plan['target_q']) + ' 题（非官方，来源见来源清单）'
     fm = '\n'.join(lines)
     new_text = new_text[:fm_start] + fm + new_text[fm_end:]
     after = new_text.encode('utf-8')
