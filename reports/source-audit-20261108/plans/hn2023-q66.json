@@ -42,5 +42,17 @@
  "explanation": "根据条件（1）需要1位高三老师，排除含己、庚两人的D；根据科目各不相同，乙和丁同为地理、丙和己同为政治，排除A、C；B项符合全部条件。",
  "source_note": "海豚公考星光镜像PDF同卷 q65/q67 逐字夹逼；答案 B 由广东2023县级 q58 同题佐证（https://gwy.gkzhenti.cn/paper/1678839701700）；非官方回忆版",
  "reviewer": "Agent C",
- "reviewed_at": "2026-11-08"
+ "reviewed_at": "2026-11-08",
+ "source_snapshot": {
+  "path": "reports/source-audit-20261108/snapshots/hn2023pdf.json",
+  "sha256": "5fd63fa285fbe6fa10e8d8ab761266568099cff84f5db4add220e7f0fb67d904"
+ },
+ "answer_snapshot": {
+  "path": "reports/source-audit-20261108/snapshots/gd2023x.json",
+  "sha256": "eb5f65839f1db788ba14f8ffd5dda9a85a4cee798159ccff5cbf03238e287cda",
+  "source_q": 58,
+  "equivalence": "exact",
+  "url": "https://gwy.gkzhenti.cn/paper/1678839701700",
+  "note": "广东2023县级 q58 与湖南2023 q66 题干/选项逐字一致，答案 B"
+ }
 }

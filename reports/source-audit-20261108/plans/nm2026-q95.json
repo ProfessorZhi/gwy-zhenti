@@ -42,5 +42,17 @@
  "explanation": "A、B、C均表现为个体被沉浸式游戏、线上社交或虚拟身份控制并与现实分离；D只是身体疲惫导致注意力下降，不符合“自我异化”的定义。",
  "source_note": "杨柳真题gwyeasy单源正文；黑龙江2026 q89、辽宁2026 q85 同题佐证（措辞略有差异）；网友回忆版，单一公开来源，待第二来源逐字复核；非官方",
  "reviewer": "Agent C",
- "reviewed_at": "2026-11-08"
+ "reviewed_at": "2026-11-08",
+ "source_snapshot": {
+  "path": "reports/source-audit-20261108/snapshots/gw20446.json",
+  "sha256": "bbd7891ffc81b6a6a5d4b4b1c3a0d60fc8aa7407efbfa4ecc87bc51407cea9cc"
+ },
+ "answer_snapshot": {
+  "path": "reports/source-audit-20261108/snapshots/hlj2026.json",
+  "sha256": "cbd991133509de0914a99768c5d6568d9357ff6e0cf9b7b1c2eb8cf33aaaccc6",
+  "source_q": 89,
+  "equivalence": "minor_wording",
+  "url": "https://gwy.gkzhenti.cn/paper/1775360735949",
+  "note": "黑龙江2026 q89 与内蒙古2026 q95 为同题；“异己力/异己力量”“使无法/使得自己无法”等措辞略有差异"
+ }
 }

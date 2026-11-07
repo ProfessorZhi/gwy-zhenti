@@ -747,7 +747,7 @@
 {"area": "国考", "basis": null, "papers": ["国考/2022/申论-副省级.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "副省级", "year": 2022}
 {"area": "国考", "basis": null, "papers": ["国考/2022/申论-地市级.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "地市级", "year": 2022}
 {"area": "国考", "basis": null, "papers": ["国考/2022/申论-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "行政执法", "year": 2022}
-{"area": "国考", "basis": null, "papers": ["国考/2022/行测-副省级.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "副省级", "year": 2022}
+{"area": "国考", "basis": null, "papers": ["国考/2022/行测-副省级.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "副省级", "year": 2022}
 {"area": "国考", "basis": null, "papers": ["国考/2022/行测-地市级.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "地市级", "year": 2022}
 {"area": "国考", "basis": null, "papers": ["国考/2022/行测-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "行政执法", "year": 2022}
 {"area": "天津", "basis": null, "papers": ["省考/天津/2022/申论-区级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "区级卷", "year": 2022}

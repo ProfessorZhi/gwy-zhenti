@@ -1,0 +1,66 @@
+{
+ "schema_version": 1,
+ "paper": "国考/2022/行测-副省级.md",
+ "paper_sha256": "85e9fcda879e57e045c2513e028e9a4dfac6d0a4d99d80e3e6525fb92dd36884",
+ "target_q": 4,
+ "source_q": 4,
+ "source_platform": "GitHub 公开 PDF（Yaoyuan-Zhang319/AdministrativeAptitudeTest）",
+ "source_url": "https://github.com/Yaoyuan-Zhang319/AdministrativeAptitudeTest/blob/1896de17764058dc1199d668edbf9f7e96cbc77a/国考/试卷/2022年国家公务员考试《行测》真题（副省级）【真题】.pdf",
+ "source_title": "2022年国家公务员考试《行测》真题（副省级）",
+ "source_region": "国考",
+ "source_year": 2022,
+ "source_variant": "副省级",
+ "source_snapshot": {
+  "path": "reports/source-audit-20261108/snapshots/gk2022fs.json",
+  "sha256": "9e7c332f285072b785859678dad4e19ee9124f4de5f77dabd345c50fd9016281"
+ },
+ "anchors": [
+  {
+   "local_q": 3,
+   "source_q": 3,
+   "local_text": "进入新发展阶段，是中华民族伟大复兴历史进程的大跨越",
+   "source_text": "进入新发展阶段，是中华民族伟大复兴历史进程的大跨越"
+  },
+  {
+   "local_q": 5,
+   "source_q": 5,
+   "local_text": "2021年4月，在全党开展党史学习教育之际，习近平总书记在广西考察时强调",
+   "source_text": "2021年4月，在全党开展党史学习教育之际，习近平总书记在广西考察时强调"
+  }
+ ],
+ "stem": "习近平总书记在党史学习教育动员大会上的讲话指出：“历史充分证明，江山就是人民，人民就是江山，人心向背关系党的生死存亡。”佐证习近平总书记这一观点的以下两幅历史图片，其拍摄背景为哪一时期？\n\n{{IMG1}}\n\n{{IMG2}}",
+ "options": {
+  "A": "大革命时期",
+  "B": "土地革命时期",
+  "C": "抗日战争时期",
+  "D": "解放战争时期"
+ },
+ "answer": "D",
+ "explanation": "从图中推小车的群众可知图片来自于在淮海战争中支援前线的老乡，由此可知图片讲述的应是解放战争。因此，选择 D 选项。",
+ "source_note": "GitHub 公开 PDF 第1页原题；两幅图片由 PDF 第1页原始字节抽出（非 AI 生成）；答案 PDF 第4题 D；非官方整理版",
+ "reviewer": "Agent C",
+ "reviewed_at": "2026-11-08",
+ "assets_dir": "assets-fenbi-161695",
+ "source_pdf": {
+  "url": "https://github.com/Yaoyuan-Zhang319/AdministrativeAptitudeTest/blob/1896de17764058dc1199d668edbf9f7e96cbc77a/国考/试卷/2022年国家公务员考试《行测》真题（副省级）【真题】.pdf",
+  "sha256": "728c1d38a84c90a5a621c902061052bdd136c434052354b383116a3a5ae3ecef",
+  "answer_url": "https://github.com/Yaoyuan-Zhang319/AdministrativeAptitudeTest/blob/1896de17764058dc1199d668edbf9f7e96cbc77a/国考/答案/2022年国家公务员考试《行测》真题（副省级）【答案+解析】.pdf",
+  "answer_sha256": "c3ec4d6d6ff63ea1305dace4d73459d424922eb5084250789b8721d0c2d0a127"
+ },
+ "images": [
+  {
+   "source_path": "reports/source-audit-20261108/evidence/images/gk2022-q4-a.png",
+   "sha256": "9018fa7bf3b19869ec970e06d4a0eaffb9148e7b887e1be00ec2c373e668cc25",
+   "filename": "9018fa7bf3b19869ec970e06d4a0eaffb9148e7b887e1be00ec2c373e668cc25.png",
+   "alt": "历史图片1",
+   "marker": "{{IMG1}}"
+  },
+  {
+   "source_path": "reports/source-audit-20261108/evidence/images/gk2022-q4-b.png",
+   "sha256": "7f3f0f0155a00054c0284eebfe8c9b35f7deba1350e8ccd6413196b6d6905dd0",
+   "filename": "7f3f0f0155a00054c0284eebfe8c9b35f7deba1350e8ccd6413196b6d6905dd0.png",
+   "alt": "历史图片2",
+   "marker": "{{IMG2}}"
+  }
+ ]
+}

@@ -1,119 +1,127 @@
-# 2026-11-08 跨来源行测补录（PR #194 重建）
+# 2026-11-08 跨来源行测补录 · 第二轮（PR #194）
 
-## 结果
+## 结论
 
-本轮先**撤回 #194 原 6 题**（原 commit `8aa1dbf6`，备份分支 `backup/pr194-head-8aa1dbf6`），逐题独立复核后用 `tools/source_fill.py` 的 reviewed plan、证据 SHA、前后锚点、预检 `after_sha256` 与 `--expect-after` CAS 重新写入。
+- PR #194 最终 **19 道净新增行测题**（原 18 题重验 + 国考2022副省级 q4）。
+- 行测缺题干：**280 → 261**；缺选项 4、缺卷 51、待核 15 不变。
+- 原 18 题全部通过新的**源侧快照门禁**；没有因新门禁撤回的题（云南2025 q44、青海2024 q90 在上一轮已撤回，仍保持占位）。
+- 国考2022副省级 q4 用真实 GitHub PDF 第1页原题、两幅 PDF 原始图片、答案 PDF q4=D 写入；图片 SHA 与 PDF SHA 均已登记。
+- 青海2024 q90 仍**未写**：唯一可核的 dtiku 同卷页返回 anti-bot 202，未绕过。
+- 内蒙古2024 只登记 5 道完整候选，**未建题本、未写题卷**（源页 72 个可见条目、9–25 缺失、多题缺图/选项损坏）。
 
-最终写入 **18 题**：
+## A. 根因修复（source_fill.py）
 
-| # | 本库题位 | 来源原题位 | 来源性质 | 答案 |
-|---:|---|---|---|---|
-| 1 | 广西2025 q35 | 云南2025 q34 | 公开真题库镜像（源标注 fenbi） | D |
-| 2 | 广西2025 q59 | 甘肃2025 q67（同题云南2025 q59） | 公开真题库镜像 | C |
-| 3 | 河北2022 q94 | 浙江2022 C类 q106 | 公开真题库镜像 | C |
-| 4 | 青海2020 B q108 | 江西2020 县级 q108 | 公开真题库镜像 | B |
-| 5 | 青海2020 B q109 | 江西2020 县级 q109 | 公开真题库镜像 | C |
-| 6 | 青海2020 B q110 | 江西2020 县级 q110 | 公开真题库镜像 | C |
-| 7 | 青海2020 B q111 | 江西2020 县级 q111 | 公开真题库镜像 | B |
-| 8 | 青海2020 B q112 | 江西2020 县级 q112 | 公开真题库镜像 | D |
-| 9 | 青海2020 B q113 | 江西2020 县级 q113 | 公开真题库镜像 | B |
-| 10 | 青海2020 B q114 | 江西2020 县级 q114 | 公开真题库镜像 | C |
-| 11 | 青海2020 B q115 | 江西2020 县级 q115 | 公开真题库镜像 | A |
-| 12 | 黑龙江2025 q113 | 辽宁2025 q103 | 公开真题库镜像 | B |
-| 13 | 湖南2025 q54 | 新疆2025 q49 | 公开真题库镜像 | D |
-| 14 | 甘肃2026 q35 | 贵州2026 q30（同题云南2026 q31） | 公开真题库镜像 | B |
-| 15 | 青海2024 q50 | 山西2024 q49 | 公开真题库镜像 | B |
-| 16 | 青海2024 q60 | 山西2024 q60 | 公开真题库镜像 | C |
-| 17 | 内蒙古2026 q95 | 内蒙古2026 q95（gwyeasy） | 单源考生回忆版；黑龙江2026 q89/辽宁2026 q85 同题佐证（措辞略有差异） | D |
-| 18 | 湖南2023 q66 | 湖南2023 q66（海豚公考星光镜像 PDF）；答案由广东2023县级 q58 同题佐证 | 公开 PDF + 同题答案 | B |
+### A1. 源侧锚点验证改为快照绑定
 
-> 所有来源均为公开培训机构整理页/考生回忆版，**不冒充官方原卷**；答案来自同源题库参考键，非官方答案。
+新增 `tools/source_snapshot.py`，从公开源页抓取结构化快照（题号 → 题干/选项/答案）：
 
-## 原 6 题的复核结论
+- `gkhenti`：同时抓 paper 页与 answer 页；120/130 题可解析。
+- `gwyeasy`：解析 HTML 题号/选项（无答案时由 `answer_snapshot` 补）。
+- `text`：从公开 PDF 的文本抽取题号/选项（用于海豚公考湖南2023）。
 
-| 原题 | 复核结论 | 处理 |
+`source_fill.py` 现在要求每份 plan 带 `source_snapshot`（path + SHA256），并逐项验证：
+
+1. 快照文件 SHA 与 plan 一致；
+2. 快照 URL 与 `source_url` 规范化后一致；
+3. 快照必须含 **source_q-1 / source_q / source_q+1**；
+4. 目标题干/四选项/答案必须与快照的 source_q 记录一致；
+5. 每个 anchor 的 `source_text` 必须出现在它所声明的 source_q 记录内（不再接受“证据文件任意位置出现”）；
+6. 至少一个 anchor 在目标前、一个在后；
+7. 无答案时，`answer_snapshot` 必须有答案，且同题文本满足 `exact` 或 ≥0.90 的 `minor_wording`（必须写 note）。
+
+这直接堵住了上一轮 q59/q44/q90/q94 的错误：旧工具只查“文本在 evidence 文件里出现过”，不查它在源卷的哪一题。
+
+### A2. metadata-only 同步正文来源行
+
+`--metadata-only` 现在同时更新：
+
+- frontmatter 来源条目的 `题号: [N]`；
+- 目标题正文 `**来源**：... 第N题；` 中的题号。
+
+要求 plan 提供 `old_source_q`；正文缺少“第N题”、或当前 N 与 old 不一致时拒绝。新增参数化测试覆盖 **广西 q35 (35→34)、广西 q59 (59→67)、河北 q94 (95→106)** 三组历史不一致。
+
+### A3. fail-closed 撤回
+
+新增 `--withdraw`：仅当当前题块与 `expected_current` 的题干/选项/答案逐字匹配时，才恢复“粉笔暂未收录”占位、删除对应来源条目、在 `校验状态` 记撤回原因；CAS 仍要求 `--expect-after`。本轮用它修复了 q4 的图片路径错误。
+
+### A4. 写入回执
+
+新增 `--receipt`：每题一条 JSONL，含 action、target、source_q、**规范化 URL**、source_snapshot SHA、answer_snapshot SHA、plan SHA、before/after SHA、UTC 时间。19 条 verify 回执见 `verify-receipts.jsonl`。
+
+### A5. 图片题支持（fail-closed）
+
+`images` 计划现在要求：
+
+- 每张图 `source_path` + SHA256 + 安全 filename + `{{IMGn}}` marker（题干中恰好一次）；
+- `assets_dir` 必须是试卷同目录下的**单个** `assets-` 目录名，拒绝 `/`、`\`、`..`；
+- 目标同名文件已存在且 SHA 不同则拒绝覆盖；
+- `source_pdf` 记录公开 URL + PDF SHA（可选本地 path + SHA）；
+- 写入前按 SHA 校验并原子复制图片；`--verify-existing` 校验引用与目标文件 SHA。
+
+新增 4 个图片测试（写图/哈希不符/marker 缺失/路径穿越）。
+
+## B. 19 道题
+
+| # | 本库题位 | 来源原题位 | 答案 | 源侧快照 | 备注 |
+|---:|---|---|:---:|---|---|
+| 1 | 广西2025 q35 | 云南2025 q34 | D | `yn2025.json` q33/34/35 | 原 body 误写第35题，已修正 |
+| 2 | 广西2025 q59 | 甘肃2025 q67（同题云南 q59） | C | `gs2025.json` q66/67/68 | 原写入“99人/A”已撤回重写 |
+| 3 | 河北2022 q94 | 浙江2022 C类 q106 | C | `zj2022c.json` q105/106/107 | 原写浙江 A q95，已修正 |
+| 4–11 | 青海2020 B q108–q115 | 江西2020 县级 q108–q115 | B/C/C/B/D/B/C/A | `jx2020x.json` q107/116 边界 + q±1 | 连续 8 题整块 |
+| 12 | 黑龙江2025 q113 | 辽宁2025 q103 | B | `ln2025.json` q102/103/104 | 源页括号公式简写，已记录 minor wording |
+| 13 | 湖南2025 q54 | 新疆2025 q49 | D | `xj2025.json` q48/49/50 | |
+| 14 | 甘肃2026 q35 | 贵州2026 q30（同题云南 q31） | B | `gz2026.json` q29/30/31 | 锚点 q29 源页多“更”字，已缩短为公共前缀 |
+| 15 | 青海2024 q50 | 山西2024 q49 | B | `sx2024.json` q48/49/50 | |
+| 16 | 青海2024 q60 | 山西2024 q60 | C | `sx2024.json` q59/60/61 | 锚点 q61 源页分数被剥，已缩短为公共前缀 |
+| 17 | 内蒙古2026 q95 | 内蒙古2026 q95（gwyeasy） | D | `gw20446.json` q94/95/96 + `answer_snapshot` 黑龙江2026 q89 | 单源题干；答案由同题黑龙江 q89 佐证 |
+| 18 | 湖南2023 q66 | 湖南2023 q66（海豚PDF） | B | `hn2023pdf.json` q65/66/67 + `answer_snapshot` 广东2023县级 q58 | 同题逐字一致 |
+| 19 | 国考2022 副省级 q4 | 国考2022 副省级 q4（GitHub PDF） | D | `gk2022fs.json` q3/4/5 | 两幅 PDF 原图，SHA 登记 |
+
+## C. 未写入/阻塞
+
+| 项 | 原因 | 状态 |
 |---|---|---|
-| 广西2025 q35 | 题干/选项/答案 D 可读；原 body 来源行写“第35题”，实际来源为云南 q34 | **保留并修正**：source_q=34，body 与 frontmatter 均写 34 |
-| 广西2025 q59 | **原写入错误**：写成了“甲和乙两个科研单位共有99名工作人员…”（云南 q60/A）。库内来源注记 q58=甘肃66、q60=甘肃68，锁步指向甘肃 q67＝云南 q59“甲、乙、丙3名研究生…”，答案 C | **撤回后重写**为正确题目 |
-| 云南2025 q44 | **无法唯一映射**：库内 q43=免疫系统、q45=传统文博；海南 q47（创造力）所在序列为免疫(q46)→创造力(q47)→金融(q48)，与云南 q45 不符；dtiku q44 实为甘肃 q46 | **撤回**，保持占位 |
-| 青海2024 q90 | **锚点不成立**：湖北 q89 有“虫害”，但湖北无后锚“泡沫经济”；青海自身公开页 q90 仍为征集占位 | **撤回**，保持占位 |
-| 河北2022 q94 | 题干/选项/答案 C 可读；原 source 写浙江 A q95，但库内 q93=浙江C105、q95=浙江C107、q96=浙江C108，锁步指向浙江 C q106 | **保留并修正**：source_q=106，variant=C类 |
-| 内蒙古2026 q95 | 题干/选项/答案 D 可读；单源 gwyeasy | **保留**，标注单源；黑龙江 q89/辽宁 q85 同题佐证 |
+| 青海2024 q90 | dtiku 青海同卷页 `202 anti-bot`；gkhenti 青海页 q90 仍是“征集/默认A”占位；湖北 q89 无后锚泡沫经济 | **未写**，保持占位 |
+| 云南2025 q44 | 海南 q47 所在序列与云南 q45=传统文博不连接 | 上一轮已撤回，保持占位 |
+| 广西2025 q34 | 来源答案 A/C 冲突 | 跳过 |
+| 北京2020乡镇 q42/q89 | q89 与 2010 江西同题复用风险 | 跳过 |
+| 内蒙古2024 行测 | 源页不完整（72 个可见条目、9–25 缺失、多题缺图/选项损坏）；仓库规范允许“来源原缺”但不允许把 5 题误表成整卷 | **仅候选**，见 `candidates/nm2024/` |
 
-## 8 题整块的锚点证明（青海2020 B q108–115）
-
-库内 q106/q107/q116/q117 与江西2020县级同号逐字一致：
-
-- q106 联觉（答案 C）
-- q107 疼痛共情（答案 B）
-- q116 AI 市场规模（答案 B）
-- q117 AI 增长率（答案 D）
-
-中间 q108–q115 八题即缺口，逐题答案 B/C/C/B/D/B/C/A。该块是本轮唯一“连续 8 题”整块补录。
-
-## 质量门禁（实际命令与结果）
+## D. 质量门禁（实际输出）
 
 ```text
-# 1) 刷新
-python3 -I tools/refresh_manifest.py --write
-  → 共 1669 行 · 需刷新 9 · 文件缺失 0
-python3 -I tools/catalog_index.py --out catalog/INDEX.md
-  → 已写入 catalog/INDEX.md（3,563 行）
-python3 -I tools/coverage_stats.py --svg docs/assets
-  → 已写入 docs/assets/coverage-heatmap.svg / papers-by-year.svg
-python3 -I tools/repo_readmes.py
-  → 写入 8 个文件
-python3 -I tools/gap_report.py
-  → 缺卷 51、待核 15；行测 缺题干 262 缺选项 4 缺答案 0
-
-# 2) 一致性
-python3 -I tools/refresh_manifest.py --check      → 需刷新 0
-python3 -I tools/catalog_index.py --check         → 校验通过
-python3 -I tools/repo_readmes.py --check          → 最新
-python3 -I tools/gap_report.py --check            → 最新
-
-# 3) 质量/来源
+python3 -I tools/refresh_manifest.py --write   → 1669 行，需刷新 1，缺失 0
+python3 -I tools/catalog_index.py --out ...    → 3,563 行
+python3 -I tools/coverage_stats.py --svg ... --update-doc docs/COVERAGE.md
+  → 两张 SVG + COVERAGE.md 已同步
+python3 -I tools/repo_readmes.py               → 1 个文件
+python3 -I tools/gap_report.py                 → 缺卷 51、待核 15；缺题干 261、缺选项 4、缺答案 0
+python3 -I tools/refresh_manifest.py --check   → 需刷新 0
+python3 -I tools/catalog_index.py --check      → 校验通过（1669 卷；89,717 题；19,363 图）
+python3 -I tools/repo_readmes.py --check       → 最新
+python3 -I tools/gap_report.py --check         → 最新
 cd tools && python3 cloud_quality.py --check --verify-images
-  → hard_errors=0, forbidden_files=0, truncated_files=0,
-    truncated_questions=0, machine_flagged_files=61
+  → papers=1669, images=19170, image_refs=19363,
+    truncated_files=0, truncated_questions=0,
+    hard_errors=0, forbidden_files=0, machine_flagged_files=60
 cd tools && python3 source_provenance.py --check
-  → 试卷 1669 · 已登记结构化来源清单 24 · 来源问题 0
-
-# 4) 单元测试
+  → 试卷 1669 · 结构化来源清单 25 · 来源问题 0
 cd tools && python3 -m unittest discover -s tests
-  → Ran 422 tests in 36.057s · OK
-
-# 5) 空白
-git diff --check → 通过（rc=0）
+  → Ran 435 tests in 39.043s · OK
+git diff --check → 通过
 ```
 
-## 缺口变化
+测试基线由 262 更新为 **261**（新增 q4）；A2 字面“缺”排除数仍为 12，A2 确认项仍为 4。
 
-| 指标 | 写入前 | 写入后 |
-|---|---:|---:|
-| 行测缺题干 | 280 | **262** |
-| 行测缺选项 | 4 | 4 |
-| 缺卷 | 51 | 51 |
-| 考试身份待核 | 15 | 15 |
-| 申论缺题目/材料/答案 | 0/0/0 | 0/0/0 |
+## E. 产物
 
-`a2_excluded_valid_literal` 由 13 降为 12，原因是本轮补入的题中有一道此前含字面“缺”选项的题位被补齐；A2 确认项仍为 1+3=4，未变化。测试基线据此更新为 262/12。
+- `plans/*.json`：19 份 reviewed plan（q4 另有 withdraw 计划）。
+- `snapshots/*.json`：14 份源侧快照（按 q±1 窗口裁剪，含 URL/抓取方式/窗口）。
+- `evidence/images/gk2022-q4-*.png`：两幅真实 PDF 图片。
+- `verify-receipts.jsonl`：19 条逐题验证回执（URL 规范化、snapshot/plan/before/after SHA）。
+- `write-receipts-20261108.jsonl`：q4 的写入回执（含撤回后重写）。
+- `candidates/nm2024/`：内蒙古2024 的 5 道完整候选，明确 NOT_WRITTEN。
 
-## 未写入/跳过
+## F. 边界
 
-- 云南2025 q44：保持占位（见上）。
-- 青海2024 q90：保持占位（见上）。
-- 国考2022副省级 q4：含两幅图片，`source_fill.py` 当前拒绝图片题；未扩展工具，保持未补。
-- 北京2020乡镇 q42/q89：q89 与 2010 江西同题存在复用风险，未人工排除前不写。
-- 深圳2020 q7/q9：选项仍缺，不写。
-- 其余候选未在本轮写入。
-
-## 证据与计划
-
-- `plans/*.json`：18 份 reviewed plan（含 paper_sha256、source_q、anchors、证据 SHA）。
-- `evidence/*.txt`：每题题干/选项/答案/锚点快照。
-- `write-receipts.jsonl`：18 条写入回执，`before_sha256`/`after_sha256` 构成同卷写入链。
-
-## 边界
-
-未合并任何 PR；未关闭旧 PR；未使用生产服 Admin/Vince；未声称 DeepSeek；未绕验证码/会员/403/429。
+未合并 PR；未关闭旧 PR；未 force-push；未 reset/stash/clean 既有工作区；未使用生产服 Admin/Vince；未声称 DeepSeek；未绕验证码/会员/403/429/anti-bot；题卷正文只经 `tools/source_fill.py` 写入或撤回。

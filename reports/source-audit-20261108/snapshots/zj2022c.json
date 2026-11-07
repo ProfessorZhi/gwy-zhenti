@@ -1,0 +1,56 @@
+{
+ "schema_version": 1,
+ "capture_method": "gkhenti_html",
+ "url": "https://gwy.gkzhenti.cn/paper/1706852966843",
+ "answer_url": "https://gwy.gkzhenti.cn/answer/1706852966843",
+ "title": "2022年浙江省公务员录用考试《行测》题（C类）（网友回忆版）",
+ "captured_at": "2026-11-07T21:07:18+00:00",
+ "question_count": 4,
+ "questions": {
+  "104": {
+   "number": 104,
+   "stem": "帛书：简牍",
+   "options": {
+    "A": "日晷：秒表",
+    "B": "熊猫：银杏",
+    "C": "青铜：礼器",
+    "D": "牛车：轿子"
+   },
+   "answer": "D"
+  },
+  "105": {
+   "number": 105,
+   "stem": "电脑：设备",
+   "options": {
+    "A": "广播：传媒",
+    "B": "颜料：绘画",
+    "C": "文言：白话",
+    "D": "能源：煤炭"
+   },
+   "answer": "A"
+  },
+  "106": {
+   "number": 106,
+   "stem": "马匹：船只：车辆",
+   "options": {
+    "A": "银两：金钱：银币",
+    "B": "纸张：试卷：画册",
+    "C": "水杯：油瓶：饭碗",
+    "D": "官员：武将：首领"
+   },
+   "answer": "C"
+  },
+  "107": {
+   "number": 107,
+   "stem": "针线：布料：服饰",
+   "options": {
+    "A": "剪刀：彩纸：窗花",
+    "B": "刻刀：玺印：玉石",
+    "C": "玻璃：窗户：窗框",
+    "D": "鸡精：乌鸡：鸡汤"
+   },
+   "answer": "A"
+  }
+ },
+ "window": "104-107"
+}
