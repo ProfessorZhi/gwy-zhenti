@@ -1273,7 +1273,7 @@
 {"area": "广西", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
 {"area": "广西", "basis": null, "papers": ["省考/广西/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "新疆", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
-{"area": "新疆", "basis": null, "papers": ["省考/新疆/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
+{"area": "新疆", "basis": null, "papers": ["省考/新疆/2026/行测-统考.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2026}
 {"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2026}
 {"area": "江苏", "basis": "https://www.jsxf.gov.cn/tzgg/art/2025/art_4b4f6c1ef283b21741ec26bc3c0ecc30.html", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "A类", "year": 2026}

@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "paper": "省考/新疆/2026/行测-统考.md",
+ "paper_sha256": "282f86b714d0c0144be47e724c5dccd55320f9089364d1ed2ea6f11fd069f8bb",
+ "target_q": 23,
+ "source_q": 21,
+ "source_platform": "gkhenti 公开真题库（源标注 fenbi）",
+ "source_url": "https://gwy.gkzhenti.cn/paper/1775360736050",
+ "source_title": "2026年湖北省公务员录用考试《行测》题（网友回忆版）",
+ "source_region": "湖北",
+ "source_year": 2026,
+ "source_variant": "统考",
+ "source_snapshot": {
+  "path": "reports/agent-C-round6/snapshots/hb2026.json",
+  "sha256": "5decedd126477b0eca46d74d813a092e4550305e52157e32b11d3faf1460c201"
+ },
+ "anchors": [
+  {
+   "local_q": 22,
+   "source_q": 20,
+   "local_text": "极光是一种绚丽多彩的大气发光现象，一般只在南北两极的高纬度地区出现，它的形成与太阳活动、地球磁场和高层大气的相互作用有关。由此判断观测极光需要的条件是（ ）。 A. 太阳活动强烈，",
+   "source_text": "“二十四史”是中国历代史学家精心编撰的纪传体史书，是中华民族珍贵的文化遗产。下列说法正确的是："
+  },
+  {
+   "local_q": 24,
+   "source_q": 22,
+   "local_text": "下列异常的体检指标，与其关联的疾病最不可能对应的是（ ）。 A. 白细胞数量高于参考范围的上限——阑尾炎 B. 谷丙转氨酶高于参考范围的上限——冠心病 C. 红细胞数量低于参考范围",
+   "source_text": "下列选项体现的物理原理与其他选项不同的是（ ）。"
+  }
+ ],
+ "stem": "关于我国考古发现，下列说法错误的是:",
+ "options": {
+  "A": "良渚文化主要分布于太湖地区，其文化遗址最大特色是所出土的玉器",
+  "B": "仰韶文化主要分布在黄河支流汇集的中原地区，其中较著名的是元谋人遗址",
+  "C": "大汶口文化主要分布在泰山周围地区，氏族墓地中晚期出现了男女合葬现象",
+  "D": "龙山文化是新石器时代晚期的文化，其陶器已开始使用轮制技术，器型规整"
+ },
+ "answer": "B",
+ "explanation": "来源题库给出参考答案；题干/选项/答案见 source_snapshot。",
+ "source_note": "跨省同题（湖北2026 q21）；新疆q22/q24为前后锚；题干/四选项/答案B逐项核验；非官方回忆版",
+ "reviewer": "Agent C 2026-11-08",
+ "reviewed_at": "2026-11-08"
+}
