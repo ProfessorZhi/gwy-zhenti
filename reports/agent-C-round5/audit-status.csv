@@ -1,0 +1,7 @@
+﻿status,count,notes
+D_ACCEPT,139,D 逐条审计 accept；目标卷槽位仍阻塞，0 写入
+D_NEEDS_MORE_EVIDENCE,5,内蒙古2024 5 条无 q±1 锚点，保留 needs-more
+B_RESOLVED_PENDING_D_AUDIT,20,B round5 消除的低置信 20 条；D 尚未逐条审计，不等于 D accept
+B_NEW_PENDING_D_AUDIT,6,B round5 从 unresolved 新增 6 条；D 尚未审计
+TOTAL_170,170,139+5+20+6=170；不等于 170 可入库
+UNRESOLVED_B_REPORT,111,B round5 报告仍 unresolved；不抵扣缺口

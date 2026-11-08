@@ -32,3 +32,21 @@
 ## 边界
 
 未改题卷、未改槽位、未改缺口统计；未合并任何 PR；未绕验证码/会员/403/429；未用 AI 生成题干/选项/答案。
+
+## 2026-11-08 第六轮候选台账更新（B round5 / D 审计）
+
+`candidates.jsonl` 由 144 更新为 **170 条**，按证据等级分层（**不都是可入库**）：
+
+| 层级 | 数量 | 含义 |
+|---|---:|---|
+| `D_ACCEPT` | 139 | Agent D 逐条审计内容 accept；目标卷槽位仍阻塞 |
+| `D_NEEDS_MORE_EVIDENCE` | 5 | 内蒙古2024；D 认为无 q±1 锚点，保留 needs-more |
+| `B_RESOLVED_PENDING_D_AUDIT` | 20 | B round5 消除的旧低置信；**D 尚未逐条审计** |
+| `B_NEW_PENDING_D_AUDIT` | 6 | B round5 从 unresolved 新增；**D 尚未审计** |
+| **合计** | **170** | 139+5+20+6；不等于 170 可入库 |
+
+- B 的 26 条与旧 144 条按 `(target_paper,target_q)` 和 `(target_paper,source_q,answer)` 均 **0 重叠**；已合并且不重复计数。
+- **0 条写入 main**：兵团2022/2023 槽位仍待核，宁夏2022/内蒙古2024 仍缺卷；建卷/改槽位前 `source_fill.py` 无法写。
+- B 报告的 111 条 unresolved 继续留缺；20 低置信由 B 解决 **不等于** D 已审计通过。
+- 缺口不因候选抵扣：行测缺题干 261、缺选项 4、缺卷 51、待核 15（本分支基于 main）。
+- 明细：`audit-status.csv`；逐条 `d_verdict`/`d_audited`/`d_write_verdict` 在 `candidates.jsonl`。

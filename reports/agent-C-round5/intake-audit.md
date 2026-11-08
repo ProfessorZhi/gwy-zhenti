@@ -53,3 +53,11 @@
 - 内蒙古2024：`https://www.cgzj.com/examinfo/2537.cshtml` → `/sk/2537.html`，87,553 B，`725e067c…`
 
 答案表来自 Agent B 第四轮已读取的 dtiku 公开页（35091 / 17539 / 17537 / 52404 / 34858），逐题记录在 `candidates.jsonl` 的 `answer_source` 与 `audit.csv`。
+
+## 7. 第六轮更新（170 条分层）
+
+- 170 = **139 D_ACCEPT + 5 D_NEEDS_MORE_EVIDENCE + 20 B_RESOLVED_PENDING_D_AUDIT + 6 B_NEW_PENDING_D_AUDIT**。
+- 旧 144 与 B 新增 26 无键重叠/签名重叠，已合并且不重复计数。
+- 20 条“B 已解决低置信”与 6 条“B 新增”均标 `d_audited=false`；在 D 逐条审计前不得当作 accept。
+- 目标槽位：兵团2022/2023 待核，宁夏2022/内蒙古2024 缺卷；**0 写入 main**。
+- B 报告 111 unresolved；缺口仍按生成器为准，不抵扣。
