@@ -31,7 +31,7 @@ class MachineGapSummaryConsistency(unittest.TestCase):
             "The current corpus has no overlap/other metadata-only numbers.",
         )
         self.assertEqual(261, self.machine["confirmed_missing_original_questions"])
-        self.assertEqual(1669, self.machine["paper_files"])
+        self.assertEqual(1670, self.machine["paper_files"])
 
     def test_published_quality_summary_matches_live_scan(self):
         for key in (
