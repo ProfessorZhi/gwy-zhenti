@@ -16,6 +16,7 @@
 """
 
 import argparse
+import collections
 import html
 import json
 import re
@@ -165,10 +166,11 @@ def status_md(rows, xingce, shenlun, papers):
          '- **来源**：以粉笔为主，华图与网络检索补充。每份试卷在文件头 `来源` 与 `来源清单` 中记录实际采用的全部来源；缺卷指上述来源均未取得的应有试卷。', '',
          '## 总览', '']
     s_new, s_old = summary(rows, xingce, shenlun, papers, 2016, 2026), summary(rows, xingce, shenlun, papers, 0, 2015)
-    L += overview(s_new, s_old)
-    L += ['', f'已收录试卷 {files:,} 份（2016–2026 年 {len(recent):,} 份）。'
-          f"另有 {s['unverified']} 题参考答案已收录、但与题目的对应关系待核，见 [#157]({ISSUES}157)。", '']
     grade = grades(rows, xingce, shenlun)
+    L += [paper_summary(rows, grade, s_new, s['unverified']), '']
+    L += overview(s_new, s_old)
+    L += ['', f'已收录试卷中 2016–2026 年 {len(recent):,} 份。上表按题计，一份卷可同时出现在多行；'
+          f"答案对应待核的 {s['unverified']} 题见 [#157]({ISSUES}157)。", '']
     L += ['## 逐卷分布与健康度', '',
           '每份试卷按最严重的缺口定级：**完整** → **答案待补**（缺参考答案或答案对应待核）→ **缺选项或材料** → **缺题干或题目**。', '',
           scroll_img('assets/health.svg', '逐卷分布与健康度：2008–2026 年各地区各年份的每份试卷及其状态', health_svg(rows, grade, papers)), '']
@@ -584,9 +586,24 @@ def health_svg(rows, grade, papers):
     return '\n'.join(out) + '\n'
 
 
-def readme_block(new, old):
-    lines = ['<!-- gwy:gaps:start -->'] + overview(new, old) + [
-        '', '行测每题只计最严重的一级。缺卷以实际举行的考试为准，仅统计 2016–2026 年；2015 年及以前只统计已收录试卷的局部缺口。'
+def paper_summary(rows, grade, new, unverified):
+    """一句话说清：已收录卷里多少完整、多少有局部缺口（按最严重一级各计一次），以及未收录的卷。"""
+    cnt = collections.Counter(grade[r['path']] for r in rows)
+    parts = [f'{cnt[g]:,} 份{name}' for g, name in ((3, '缺题干或题目'), (2, '缺选项或材料'), (1, '答案待补')) if cnt[g]]
+    partial = len(rows) - cnt[0]
+    special = len(special_rows())
+    note = f'（不含公安招警等专项 {special} 份）' if special else ''
+    text = f'**已收录 {len(rows):,} 份试卷{note}：{cnt[0]:,} 份完整，{partial:,} 份有局部缺口**'
+    text += f"（{'、'.join(parts)}，每份按最严重一级只计一次）" if parts else ''
+    if unverified:
+        text += f'；另有 {unverified} 题参考答案已收录、但与题目的对应关系待核'
+    text += f"。**未收录：确认缺卷 {new['missing']:,} 份、考试身份待核 {new['pending']:,} 份**（2016–2026 年）。"
+    return text
+
+
+def readme_block(new, old, summary_line=''):
+    lines = ['<!-- gwy:gaps:start -->'] + ([summary_line, ''] if summary_line else []) + overview(new, old) + [
+        '', '上表按题计：行测每题只计最严重的一级，一份卷可同时出现在多行，各行卷数不能相加。缺卷以实际举行的考试为准，仅统计 2016–2026 年；2015 年及以前只统计已收录试卷的局部缺口。'
         f'逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148]({ISSUES}148)。', '<!-- gwy:gaps:end -->']
     return '\n'.join(lines)
 
@@ -604,7 +621,8 @@ def main():
     s_old = summary(data[0], data[1], data[2], data[3], 0, 2015)
     health = health_svg(data[0], grades(data[0], data[1], data[2]), data[3])
     health_block = '<!-- gwy:health:start -->\n' + scroll_img('docs/assets/health.svg', '逐卷分布与健康度：2008–2026 年各地区各年份的每份试卷及其状态', health) + '\n<!-- gwy:health:end -->'
-    for name, block in (('gaps', readme_block(s_new, s_old)), ('coverage', coverage_block(cov)), ('health', health_block)):
+    line = paper_summary(data[0], grades(data[0], data[1], data[2]), s_new, s['unverified'])
+    for name, block in (('gaps', readme_block(s_new, s_old, line)), ('coverage', coverage_block(cov)), ('health', health_block)):
         readme = re.sub(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', lambda _: block, readme, flags=re.S)
     outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme,
                ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov),
