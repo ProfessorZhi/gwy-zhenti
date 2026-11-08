@@ -142,8 +142,8 @@ def overview(new, old):
                                     ('|缺选项', 'option', '题', f'[#157]({ISSUES}157)'), ('|缺答案', 'answer', '题', '')):
         a, b_ = label.split('|')
         rows.append((a, b_, pq(new['x_' + key], new['xp_' + key], unit), pq(old['x_' + key], old['xp_' + key], unit), issue))
-    for label, key, unit, issue in (('**申论**|缺题目', 'question', '题', ''), ('|缺材料', 'material', '份材料', f'[#159]({ISSUES}159)'),
-                                    ('|缺答案', 'answer', '题', f'[#158]({ISSUES}158)')):
+    for label, key, unit, issue in (('**申论**|缺题目', 'question', '题', ''), ('|缺材料', 'material', '份材料', ''),
+                                    ('|缺答案', 'answer', '题', '')):
         a, b_ = label.split('|')
         rows.append((a, b_, pq(new['s_' + key], new['sp_' + key], unit), pq(old['s_' + key], old['sp_' + key], unit), issue))
     return ['| 层级 | 类别 | 2016–2026 | 2008–2015 | 跟踪 |', '| --- | --- | ---: | ---: | :---: |'] + \

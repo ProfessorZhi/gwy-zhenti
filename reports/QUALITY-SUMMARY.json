@@ -20,9 +20,9 @@
       "行测": 15
     },
     "北京": {
-      "files": 44,
+      "files": 45,
       "申论": 25,
-      "行测": 19
+      "行测": 20
     },
     "吉林": {
       "files": 57,
@@ -190,23 +190,23 @@
   "historical_truncated_questions": 2,
   "image_decode_check_performed": false,
   "image_decode_errors": [],
-  "image_references": 19363,
-  "inventory_sha256": "6ace62577f5e5739677266dc44f33458fe0f31858f3c9e99d21ea9733576692c",
+  "image_references": 19381,
+  "inventory_sha256": "81a6c5dca25084b0f4fce1e5000756804c977c3f2838f63ed06309bf575b0d5a",
   "missing_image_references": 0,
   "missing_original_numbers_declared": 0,
-  "paper_files": 1669,
+  "paper_files": 1670,
   "placeholder_files": 41,
   "placeholder_states": {
     "待核实": 18,
     "资料缺失": 23
   },
-  "reference_numbered_papers": 2,
+  "reference_numbered_papers": 3,
   "schema_version": 1,
   "source_placeholder_question_positions": 254,
   "subjects": {
     "申论": 934,
-    "行测": 735
+    "行测": 736
   },
-  "unique_referenced_images": 19170,
+  "unique_referenced_images": 19188,
   "whole_paper_acceptance": "not_established_by_structural_checks"
 }

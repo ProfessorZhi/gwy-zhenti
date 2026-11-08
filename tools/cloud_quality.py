@@ -407,73 +407,32 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
                 '未收录地区/年度科目详见 [重点区未收录清单](PRIORITY-MISSING.json)。其他地区不开展新卷搜索。',
                 '有答案内容不代表它是政府发布的官方答案；缺少可靠来源的仍需核实。','']
     (root/'reports/QUALITY-AUDIT.md').write_text('\n'.join(defect_md),encoding='utf-8')
-    progress=['# 真题库总进度','',f'更新批次：{DATE}。机器清单指纹：`{stats["inventory_sha256"]}`。','',
-              '**图文库已交付；内容质量分项维护，不宣称全国所有原卷已经完整。**','',
-              '| 指标 | 当前数量 |','|---|---:|',f'| 已收录 MD | {len(rows)} |',
-              f'| 行测 / 申论 | {stats["subjects"].get("行测",0)} / {stats["subjects"].get("申论",0)} |',
-              f'| 独立引用图片 | {stats["unique_referenced_images"]} |',
-              f'| 图片引用次数 | {stats["image_references"]} |',
-              f'| 缺失 / 待核实占位 | {stats["placeholder_files"]} |',
-              f'| 历史已标记材料截断 | {stats["historical_truncated_files"]} 份 / {stats["historical_truncated_questions"]} 道受影响题 |',
-              f'| 当前仍有该截断项 | {stats["current_truncated_files"]} 份 / {stats["current_truncated_questions"]} 道受影响题 |',
-              f'| 重点区年度科目未收录 | {len(missing)} 格（不等于全部卷型缺口） |','',
-              '## 当前入口','',
-              '- [重点地区逐年图文试卷](COVERAGE-PRIORITY.md)',
-              '- [当前质量事项](../reports/QUALITY-AUDIT.md)',
-              '- [第二轮：早年申论补全与残余](../reports/QUALITY-REPAIR-20261012-R2.md)',
-              '- [第一轮：题序与分卷修复](../reports/QUALITY-REPAIR-20261012.md)',
-              '- [逐卷机器清单及 SHA-256](../catalog/manifest.jsonl)',
-              '- [质量汇总数据](../reports/QUALITY-SUMMARY.json)',
-              '- [逐题补全来源与前后 SHA](../reports/REPAIRS-20261011.jsonl)',
-              '- [非重点地区资料缺失](../资料缺失/README.md)','',
-              '## 材料尾部补全专项（历史）','',
-              '仅对已标记尾部截断的既有材料，使用固定版本的同题来源逐题校对，补入原文尾部。题干、作答要求、答案、原题号和图片未由补全程序改写。',
-              '接回尾部不等于整卷原文已逐字验真，亦不等于已补全所有缺卷、缺答案或中间漏段。',
-              '来源候选中的模考、训练和题干/材料不能精确对齐的项不会自动入库。未收录状态继续保留；非重点地区不主动找新卷。',
-              '上海2017行测此前已恢复136题、38张题干/材料图片及6组共用材料，仍以卷内声明为质量边界。',
-              '原始 PDF/ZIP 不随仓库交付；MD和实际引用的图片一起维护。仓库保持私有。','',
+    progress=['# 总进度','','[← 返回首页](../README.md) · [文档](README.md)','',
+              '<!-- 由 tools/cloud_quality.py --build 生成，勿手改 -->','',
+              '本页只给当前机器统计和现行入口。缺卷、待核与局部缺口以 [缺口总账](GAP-STATUS.md) 为准；'
+              '各轮补录与修复的过程记录见 [报表索引](../reports/README.md)。','',
+              '| 指标 | 当前数量 |','| --- | ---: |',f'| 已收录试卷 | {len(rows):,} |',
+              f'| 行测 / 申论 | {stats["subjects"].get("行测",0):,} / {stats["subjects"].get("申论",0):,} |',
+              f'| 独立引用图片 | {stats["unique_referenced_images"]:,} |',
+              f'| 图片引用次数 | {stats["image_references"]:,} |',
+              f'| 材料尾部截断（现存） | {stats["current_truncated_files"]} 份 / {stats["current_truncated_questions"]} 题 |','',
+              f'机器清单指纹：`{stats["inventory_sha256"]}`（`reports/QUALITY-SUMMARY.json` 的 `inventory_sha256`，清单或试卷有改动即变化）。','',
+              '## 现行入口','',
+              '| 想看 | 去这里 |','| --- | --- |',
+              '| 缺卷、待核、缺题 | [缺口总账](GAP-STATUS.md) |',
+              '| 分地区、分年份统计 | [收录统计](COVERAGE.md) · [重点地区逐年卷表](COVERAGE-PRIORITY.md) |',
+              '| 机器告警明细 | [质量事项](../reports/QUALITY-AUDIT.md) · [质量汇总数据](../reports/QUALITY-SUMMARY.json) |',
+              '| 逐卷字节数与 SHA-256 | [逐卷清单](../catalog/manifest.jsonl) |',
+              '| 入库与验收标准 | [归档与质量标准](QUALITY-STANDARD.md) |','',
               '## 复现','',
-              '```bash','python tools/cloud_quality.py --build --verify-images',
-              'python tools/cloud_quality.py --check --verify-images','```','',
-              '`catalog/manifest.jsonl` 是 GitHub 可直接读取的版本化清单；Windows `work/manifest.jsonl` 是工作台副本，拉取新提交后须由本地管线刷新。','']
-    if (root/'reports/PAPER-INTEGRITY-20261011.jsonl').exists():
-        progress += ['## 原卷题序与漏题修复（2026-10-11）','',
-                     '已修国考2022副省级题序；江苏2023B类补1题至135；广东2020县级补3题至93；浙江2020A类补5题至98。',
-                     '合计新增9道真实题目、9张来源参考解析裁图；旧题干、选项、答案、19组共用材料保持原文并联动题序。',
-                     '广东原69—75、浙江原49—50仍缺，保留原题缺号，不能按连续重编号伪装完整。',
-                     '[四卷修复明细与边界](../reports/PAPER-INTEGRITY-20261011.md)','']
-    receipt_path=root/'reports/REFERENCE-SEQUENCE-20261012.jsonl'
-    if receipt_path.exists():
-        seq=[json.loads(l) for l in receipt_path.read_text(encoding='utf-8').splitlines() if l.strip()]
-        ew=[json.loads(l) for l in (root/'reports/ESSAY-WHOLE-20261012.jsonl').read_text(encoding='utf-8').splitlines() if l.strip()]
-        ef=[json.loads(l) for l in (root/'reports/ESSAY-REPAIR-20261012.jsonl').read_text(encoding='utf-8').splitlines() if l.strip()]
-        newp=[json.loads(l) for l in (root/'reports/NEW-PAPERS-20261012.jsonl').read_text(encoding='utf-8').splitlines() if l.strip()]
-        progress += ['## 重点区整卷与题序专项（2026-10-12）','',
-                     f"{len(set(r['path'] for r in seq))} 份行测恢复固定同题来源顺序、答案和共用材料关联；补回 {sum(len(r['additions']) for r in seq)} 道题。顺序依据为固定回忆题本，不冒充官方原件。",
-                     f"{len(ef)} 份申论整卷增加材料/题目导航，另 {len(ew)} 份按公开整卷来源恢复材料和作答要求（其中 {sum(r['action']=='new_variant' for r in ew)} 份为新分卷）。",
-                     f"新增江苏2026申论B类机构公开整理版 {len(newp)} 份；单一完整题面来源，未取得第二份完整原件，且没有参考答案。A/C及该年行测仍未取得。",
-                     '江苏2024行测A原76、96、110、111及江苏2025行测C的12题仍缺；广东2020原69—75、浙江2020A原49—50也仍未补到可靠原文。',
-                     '历史“统考”桶可能包含重叠小题；年度科目有文件不等于全部分卷齐全。',
-                     '[本轮修复与残余缺口](../reports/QUALITY-REPAIR-20261012.md)；[国考、江苏、浙江逐卷质量台账](../reports/PRIORITY-QUALITY-20261012.md)。','']
-    round2=root/'reports/REPAIR-SUMMARY-20261012-R2.json'
-    if round2.exists():
-        second=json.loads(round2.read_text(encoding='utf-8'))
-        progress += ['## 第二轮：早年申论残卷与导航（2026-10-12）','',
-                     f"本轮修改 {second['modified_paper_files']} 份既有试卷，未新增重复文件。江苏2016/2017 A/B/C及浙江2017 A/B共8份恢复完整公开题面，补回 {second['questions_added']} 道作答题。",
-                     f"江苏2019申论A类补齐题目导航；本轮新增 {second['reference_answers_added']} 份来源参考答案，保留 {second['existing_answer_bodies_preserved']} 份旧答案原文。",
-                     '江苏2016申论A/B第1题参考答案仍未核实收录；浙江2016A/B有来源编排异文，未强行拼接。标为浙江2022但内容/措辞异常的候选不入库。',
-                     '完整公开题面不等于官方原件逐字认证；10个年度科目缺口、25个明确行测缺题仍保留。',
-                     '[本轮范围与验收](../reports/QUALITY-REPAIR-20261012-R2.md)；[当前逐卷质量台账](../reports/PRIORITY-QUALITY-20261012.md)。','']
+              '```bash','python3 tools/cloud_quality.py --build --verify-images   # 重写本页与质量汇总',
+              'python3 tools/cloud_quality.py --check --verify-images   # 只读核对','```','']
     (root/'docs/PROGRESS.md').write_text('\n'.join(progress),encoding='utf-8')
     readme=root/'README.md'
     if readme.exists():
         t=readme.read_text(encoding='utf-8')
-        banner='<!-- CURRENT-STATUS -->\n> 当前数据以 [总进度](docs/PROGRESS.md)、[逐卷清单](catalog/manifest.jsonl) 和 [质量事项](reports/QUALITY-AUDIT.md) 为准。下方历史阶段叙述不作为现行完整率。\n<!-- /CURRENT-STATUS -->\n'
-        if '<!-- CURRENT-STATUS -->' in t:t=re.sub(r'<!-- CURRENT-STATUS -->.*?<!-- /CURRENT-STATUS -->\n?',banner,t,flags=re.S)
-        else:t=t.replace('\n','\n\n'+banner,1)
-        t=t.replace('逐卷见 `work/manifest.jsonl`','逐卷见 `catalog/manifest.jsonl`')
-        t=t.replace('详见下方「交付与同步」','当前核验见 [质量汇总](reports/QUALITY-SUMMARY.json)')
-        t=t.replace('95,892',format(stats['unique_referenced_images'],','))
+        # 旧版在首页横幅里插入「以总进度为准」提示；首页已有现行统计，清除即可
+        t=re.sub(r'\n?<!-- CURRENT-STATUS -->.*?<!-- /CURRENT-STATUS -->\n?','\n',t,flags=re.S)
         readme.write_text(t,encoding='utf-8')
     quality=root/'docs/QUALITY-STANDARD.md'
     if quality.exists():
