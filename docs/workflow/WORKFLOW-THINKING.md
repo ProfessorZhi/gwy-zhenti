@@ -5,7 +5,7 @@
 
 > **2026-10-30 更新：** 文中的 `~/workspaces/gwy-zhenti-fenbi` 采集工作区（第二份克隆、独立 profile、
 > 测试用 Chrome、shenlun-harvest）已整体拆除，公考工作内容只保留在本仓库；下文的路径按「在原位置重建
-> 同一套环境」来读，重建步骤见 [采集工具](tools/fenbi/README.md)。
+> 同一套环境」来读，重建步骤见 [采集工具](../../tools/fenbi/README.md)。
 
 ## 目标
 

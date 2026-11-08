@@ -1,8 +1,4 @@
 <p align="center">
-
-<!-- CURRENT-STATUS -->
-> 当前数据以 [总进度](docs/PROGRESS.md)、[逐卷清单](catalog/manifest.jsonl) 和 [质量事项](reports/QUALITY-AUDIT.md) 为准。下方历史阶段叙述不作为现行完整率。
-<!-- /CURRENT-STATUS -->
   <img src="docs/assets/banner.svg" alt="全国公务员考试真题库：国考 · 省考，行测 · 申论" width="100%">
 </p>
 
@@ -160,8 +156,8 @@
 |  | 缺选项 | 4 题 · 4 卷 | — | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
 |  | 缺答案 | — | — |  |
 | **申论** | 缺题目 | — | — |  |
-|  | 缺材料 | — | — | [#159](https://github.com/ProfessorZhi/gwy-zhenti/issues/159) |
-|  | 缺答案 | — | — | [#158](https://github.com/ProfessorZhi/gwy-zhenti/issues/158) |
+|  | 缺材料 | — | — |  |
+|  | 缺答案 | — | — |  |
 
 行测每题只计最严重的一级。缺卷以实际举行的考试为准，仅统计 2016–2026 年；2015 年及以前只统计已收录试卷的局部缺口。逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148](https://github.com/ProfessorZhi/gwy-zhenti/issues/148)。
 <!-- gwy:gaps:end -->
@@ -186,10 +182,10 @@
 | `省考/<地区>/<年份>/<科目>-<卷型>.md` | 省考试卷：A类、B类、统考、县乡卷、选调生等 |
 | `…/assets-fenbi-<试卷编号>/` | 该卷题图 |
 | [`图片/`](图片/) | 早期整理试卷的题图 |
-| [`catalog/`](catalog/) | [试卷索引](catalog/INDEX.md)、逐卷清单 `manifest.jsonl`；来源索引可由 `tools/source_provenance.py` 导出 |
+| [`catalog/`](catalog/) | [试卷索引](catalog/INDEX.md)、逐卷清单 `manifest.jsonl`、槽位台账 `exam-slots.jsonl`（含未收录 `uncollected-slots.jsonl`） |
 | [`docs/`](docs/README.md) | 收录统计、缺口总账、文档格式、数据来源、质量标准 |
 | [`reports/`](reports/README.md) | 审计、修复与查源记录 |
-| [`资料缺失/`](资料缺失/README.md) | 未收录卷次的占位索引 |
+| [`资料缺失/`](资料缺失/README.md) | 旧版未收录占位索引（已由槽位台账 `catalog/uncollected-slots.jsonl` 取代，仅存档） |
 | [`tools/`](tools/README.md) | 统计、导航生成、质量检查与采集脚本 |
 
 广州市考、深圳市考为独立考试序列，与广东省考分列。

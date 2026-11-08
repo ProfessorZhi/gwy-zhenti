@@ -681,8 +681,8 @@
 {"area": "海南", "basis": null, "papers": ["省考/海南/2021/申论-乡镇卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "乡镇卷", "year": 2021}
 {"area": "海南", "basis": null, "papers": ["省考/海南/2021/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2021}
 {"area": "海南", "basis": null, "papers": ["省考/海南/2021/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2021}
-{"area": "深圳", "basis": "考试身份与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2021}
-{"area": "深圳", "basis": "考试身份与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2021}
+{"area": "深圳", "basis": "待核：转载站显示深圳2020年11月招1069人（12月笔试）、2021年11月「2022年服务双区专项」招974人，未见独立2021年度市考；官网未能访问，待官方公告确认", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2021}
+{"area": "深圳", "basis": "待核：转载站显示深圳2020年11月招1069人（12月笔试）、2021年11月「2022年服务双区专项」招974人，未见独立2021年度市考；官网未能访问，待官方公告确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2021}
 {"area": "湖北", "basis": null, "papers": ["省考/湖北/2021/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2021}
 {"area": "湖北", "basis": null, "papers": ["省考/湖北/2021/申论-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "选调生", "year": 2021}
 {"area": "湖北", "basis": null, "papers": ["省考/湖北/2021/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2021}
@@ -1300,8 +1300,8 @@
 {"area": "浙江", "basis": null, "papers": ["省考/浙江/2026/行测-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "C类", "year": 2026}
 {"area": "海南", "basis": null, "papers": ["省考/海南/2026/申论-A类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A类", "year": 2026}
 {"area": "海南", "basis": null, "papers": ["省考/海南/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
-{"area": "深圳", "basis": "考试身份与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2026}
-{"area": "深圳", "basis": "考试身份与卷型待确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2026}
+{"area": "深圳", "basis": "待核：转载站显示2026年广东省考含深圳职位（692人），未见独立深圳市考；官网未能访问，待官方公告确认", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2026}
+{"area": "深圳", "basis": "待核：转载站显示2026年广东省考含深圳职位（692人），未见独立深圳市考；官网未能访问，待官方公告确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2026}
 {"area": "湖北", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
 {"area": "湖北", "basis": null, "papers": ["省考/湖北/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2026/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2026}

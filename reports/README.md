@@ -1,7 +1,6 @@
 # 报表索引（reports/）
 
-> 快照：2026-10-30。本目录共 **36 份报表 .md**（根目录 35 份 + `fix-b1-8papers-20261022/RECEIPT.md`），其中 3 份未进下表（`SHENLUN-CAPTURE-INVENTORY-20261022.md`、`SHENLUN-LOCAL-ARCHIVE-PREFLIGHT-20261022.md`、`STRUCTURE-AUDIT-20261023.md`）；另有 3 份逐题 `.csv` 台账、27 份 `.json`、20 份 `.jsonl` 机读凭据（含子目录回执）。
-> 当前库状态以 [README](../README.md)、[PROGRESS](../docs/PROGRESS.md)、[`catalog/manifest.jsonl`](../catalog/manifest.jsonl) 为准。**当前内容缺口以 [10-30 最新 A1/A2/B2 审计](GAP-A2B2-RECHECK-20261030.md) 为准；A1 历史变更仍见 [原报告](GAP-RECONCILIATION-20261030.md)。** 本页只做入口和状态索引，不改写或移动历史报表。
+> 本页是 `reports/` 的入口与状态索引，不改写或移动历史报表。**当前缺口一律以 [缺口总账](../docs/GAP-STATUS.md)（由 `tools/gap_report.py` 生成）为准**；当前规模见 [README](../README.md) 与 [总进度](../docs/PROGRESS.md)。下面 10 月各轮报表的数字都停留在当时。
 
 **状态口径**
 
@@ -13,13 +12,29 @@
 
 **快速入口**
 
-- **当前缺口**：[A1/A2/B2 现行审计](GAP-A2B2-RECHECK-20261030.md) · [293 处确认缺项总表](GAP-CURRENT-CONFIRMED-20261030.csv) · [历史 291 题位变更](GAP-RECONCILIATION-20261030.md)
-- 看当前规模与规则：[README](../README.md) · [PROGRESS](../docs/PROGRESS.md) · [质量报告](../docs/QUALITY.md)
+- **当前缺口**：[缺口总账](../docs/GAP-STATUS.md)（现行）· 10-30 基线：[A1/A2/B2 审计](GAP-A2B2-RECHECK-20261030.md) · [293 处确认缺项总表](GAP-CURRENT-CONFIRMED-20261030.csv) · [291 题位变更](GAP-RECONCILIATION-20261030.md)
+- **11 月补题轮次**：见下方 [§0](#0-2026-11-补题与查源轮次)
+- 看当前规模与规则：[README](../README.md) · [总进度](../docs/PROGRESS.md) · [归档与质量标准](../docs/QUALITY-STANDARD.md)
 - 看还没补齐的题：[PAPER-MISSING-SOURCE-CHECK-20261011.md](PAPER-MISSING-SOURCE-CHECK-20261011.md) · [ROUND3-XINGCE-SOURCE-CHECK-20261012.md](ROUND3-XINGCE-SOURCE-CHECK-20261012.md)
 - 看最新质量告警与图片状态：[10 份试卷实读抽样](QUALITY-SPOTCHECK-20261030.md) · [QUALITY-AUDIT.md](QUALITY-AUDIT.md) · [IMAGE-AUDIT-20261023.md](IMAGE-AUDIT-20261023.md)
 - 看 AI 生成答案的清理结论：[REMOVED-AI-CONTENT-LEGACY-20261022.md](REMOVED-AI-CONTENT-LEGACY-20261022.md)
 
 ---
+
+## 0. 2026-11 补题与查源轮次
+
+每轮一个目录：`README.md` 或 `*-summary.md` 是结论，`plans/` 是逐题写入计划，`snapshots/`、`evidence/` 是来源快照，`*-receipts.jsonl` 是写入与校验回执。
+
+| 目录 / 文件 | 内容 | 对应 PR | 状态 |
+| --- | --- | --- | --- |
+| [暂停检查点](PAUSED-PROGRESS-20261106.md) | 11-06 暂停采集时的缺口与进度归档 | — | 历史 |
+| [`source-audit-20261106/`](source-audit-20261106/) | 并行查源 Agent A/B 只读核查（重点区、北京2025 答案映射） | #193 | 历史 |
+| [`source-audit-20261108/`](source-audit-20261108/README.md) | 跨来源行测补录第二轮：19 道净新增、源侧快照门禁 | #194 | 现行 |
+| [`agent-C-round5/`](agent-C-round5/README.md) | 170 条候选来源审计台账（0 写入） | #198 | 现行 |
+| [`agent-C-round6/`](agent-C-round6/) | 7 道跨省同题行测、西藏2019 申论第 1/4 题答案的计划与回执 | #199 #200 | 现行 |
+| [`round5-beijing-20261108/`](round5-beijing-20261108/README.md) | 北京2024 行测第三方整理版候选整卷与数学勘误 | #197 | 现行 |
+| `GAP-RESOLVED-2026110{5,6}.jsonl` | 已补缺口逐条回执 | — | 机读 |
+| `GUANGXI-2017-MATERIAL-REPAIR-20261106.json` · `JIANGSU-2026B-ANSWER-REPAIR-20261106.json` | 广西2017 申论材料、江苏2026B 参考答案补录回执 | #185 #186 | 机读 |
 
 ## 1. 题序、完整性与查源
 
