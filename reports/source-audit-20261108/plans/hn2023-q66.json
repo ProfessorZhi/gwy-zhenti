@@ -1,0 +1,58 @@
+{
+ "schema_version": 1,
+ "paper": "省考/湖南/2023/行测-统考.md",
+ "paper_sha256": "948856ce3c5f414483ac9e30d34db116e9dee551c6719eb4289799f29a7635a7",
+ "target_q": 66,
+ "source_q": 66,
+ "source_platform": "海豚公考（星光公考镜像）",
+ "source_url": "https://upload.haitungwy.com/pdf/2023年湖南省公务员录用考试《行测》真题（考生回忆版）.pdf",
+ "source_title": "2023年湖南省公务员录用考试《行测》真题（考生回忆版）",
+ "source_region": "湖南",
+ "source_year": 2023,
+ "source_variant": "统考",
+ "source_evidence": [
+  {
+   "path": "reports/source-audit-20261108/evidence/hn2023-q66.txt",
+   "sha256": "5199387cc2e49941b3b584f38aba01a1cd31d14037b1595e2cb00c8d20e6eb94",
+   "role": "stem_options_answer_anchors"
+  }
+ ],
+ "anchors": [
+  {
+   "local_q": 65,
+   "source_q": 65,
+   "local_text": "桌上整齐摆放着若干只相同玻璃杯，除一只空杯外，其余杯中都放有彩色珠子，共有45颗。如果在有彩色珠子的每个杯中取1颗放入空杯，则只需调整玻璃杯的位置，即可与最初完全一样。问桌上共有几只玻璃杯？",
+   "source_text": "桌上整齐摆放着若干只相同玻璃杯，除一只空杯外，其余杯中都放有彩色珠子，共有45颗。"
+  },
+  {
+   "local_q": 67,
+   "source_q": 67,
+   "local_text": "某地交警大队原有甲、乙两个中队，随着城区的扩张，现在需要改编为3个新的交警中队。改编的方案是将原来甲中队的1/3队员与乙中队的1/4队员组成新的一中队，原甲中队的1/4队员和原乙中队的1/3队员组成新的二中队，余下的30人组成新的三中队。如",
+   "source_text": "某地交警大队原有甲、乙两个中队，随着城区的扩张，现在需要改编为3个新的交警中队"
+  }
+ ],
+ "stem": "某中学计划抽调一批骨干教师前往西部地区支教，学校计划抽调2位高一老师、1位高二老师和1位高三老师，并且这4位老师所教科目应各不相同。已知各年级候选人如下：①高一：历史老师甲、地理老师乙、政治老师丙。②高二：地理老师丁、语文老师戊。③高三：政治老师己、数学老师庚。则以下人选符合要求的是：",
+ "options": {
+  "A": "甲、乙、丁、庚",
+  "B": "甲、乙、戊、己",
+  "C": "乙、丙、戊、己",
+  "D": "乙、戊、己、庚"
+ },
+ "answer": "B",
+ "explanation": "根据条件（1）需要1位高三老师，排除含己、庚两人的D；根据科目各不相同，乙和丁同为地理、丙和己同为政治，排除A、C；B项符合全部条件。",
+ "source_note": "海豚公考星光镜像PDF同卷 q65/q67 逐字夹逼；答案 B 由广东2023县级 q58 同题佐证（https://gwy.gkzhenti.cn/paper/1678839701700）；非官方回忆版",
+ "reviewer": "Agent C",
+ "reviewed_at": "2026-11-08",
+ "source_snapshot": {
+  "path": "reports/source-audit-20261108/snapshots/hn2023pdf.json",
+  "sha256": "5fd63fa285fbe6fa10e8d8ab761266568099cff84f5db4add220e7f0fb67d904"
+ },
+ "answer_snapshot": {
+  "path": "reports/source-audit-20261108/snapshots/gd2023x.json",
+  "sha256": "eb5f65839f1db788ba14f8ffd5dda9a85a4cee798159ccff5cbf03238e287cda",
+  "source_q": 58,
+  "equivalence": "exact",
+  "url": "https://gwy.gkzhenti.cn/paper/1678839701700",
+  "note": "广东2023县级 q58 与湖南2023 q66 题干/选项逐字一致，答案 B"
+ }
+}

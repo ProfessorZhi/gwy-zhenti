@@ -180,18 +180,18 @@
       "行测": 28
     }
   },
-  "confirmed_missing_original_questions": 280,
+  "confirmed_missing_original_questions": 261,
   "current_truncated_files": 0,
   "current_truncated_questions": 0,
-  "files_with_machine_flags": 63,
+  "files_with_machine_flags": 60,
   "forbidden_tracked_files": [],
   "hard_integrity_errors": [],
   "historical_truncated_files": 2,
   "historical_truncated_questions": 2,
   "image_decode_check_performed": false,
   "image_decode_errors": [],
-  "image_references": 19361,
-  "inventory_sha256": "40c73381e07ed49670a7b84fd16114f803d4cf3995af3b661a868e5d15614dbb",
+  "image_references": 19363,
+  "inventory_sha256": "615c45f0a90401c0a30c336dccc4801db8303f29a67bee13fe3c438f78b59822",
   "missing_image_references": 0,
   "missing_original_numbers_declared": 0,
   "paper_files": 1669,
@@ -202,11 +202,11 @@
   },
   "reference_numbered_papers": 2,
   "schema_version": 1,
-  "source_placeholder_question_positions": 280,
+  "source_placeholder_question_positions": 261,
   "subjects": {
     "申论": 934,
     "行测": 735
   },
-  "unique_referenced_images": 19168,
+  "unique_referenced_images": 19170,
   "whole_paper_acceptance": "not_established_by_structural_checks"
 }

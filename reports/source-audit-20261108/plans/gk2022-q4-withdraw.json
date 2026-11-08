@@ -1,0 +1,20 @@
+{
+ "schema_version": 1,
+ "paper": "国考/2022/行测-副省级.md",
+ "paper_sha256": "988eb956b507fee682b9cef8c498e63b841d1592f163e0c16e5424bbd3890d31",
+ "target_q": 4,
+ "withdraw": true,
+ "reason": "图片引用路径重复（assets_dir 误含试卷目录），按 fail-closed 撤回后重写",
+ "expected_current": {
+  "stem": "习近平总书记在党史学习教育动员大会上的讲话指出：“历史充分证明，江山就是人民，人民就是江山，人心向背关系党的生死存亡。”佐证习近平总书记这一观点的以下两幅历史图片，其拍摄背景为哪一时期？",
+  "options": {
+   "A": "大革命时期",
+   "B": "土地革命时期",
+   "C": "抗日战争时期",
+   "D": "解放战争时期"
+  },
+  "answer": "D"
+ },
+ "reviewer": "Agent C",
+ "reviewed_at": "2026-11-08"
+}

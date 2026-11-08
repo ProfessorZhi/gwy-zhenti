@@ -583,7 +583,7 @@
 {"area": "青海", "basis": null, "papers": ["省考/青海/2020/申论-州县卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "州县卷", "year": 2020}
 {"area": "青海", "basis": null, "papers": ["省考/青海/2020/申论-省直.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省直", "year": 2020}
 {"area": "青海", "basis": null, "papers": ["省考/青海/2020/行测-A类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "A类", "year": 2020}
-{"area": "青海", "basis": null, "papers": ["省考/青海/2020/行测-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "B类", "year": 2020}
+{"area": "青海", "basis": null, "papers": ["省考/青海/2020/行测-B类.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "B类", "year": 2020}
 {"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2020/申论-乡镇卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "乡镇卷", "year": 2020}
 {"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2020/申论-市县卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "市县卷", "year": 2020}
 {"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2020/申论-省级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省级卷", "year": 2020}
@@ -747,7 +747,7 @@
 {"area": "国考", "basis": null, "papers": ["国考/2022/申论-副省级.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "副省级", "year": 2022}
 {"area": "国考", "basis": null, "papers": ["国考/2022/申论-地市级.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "地市级", "year": 2022}
 {"area": "国考", "basis": null, "papers": ["国考/2022/申论-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "行政执法", "year": 2022}
-{"area": "国考", "basis": null, "papers": ["国考/2022/行测-副省级.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "副省级", "year": 2022}
+{"area": "国考", "basis": null, "papers": ["国考/2022/行测-副省级.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "副省级", "year": 2022}
 {"area": "国考", "basis": null, "papers": ["国考/2022/行测-地市级.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "地市级", "year": 2022}
 {"area": "国考", "basis": null, "papers": ["国考/2022/行测-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "行政执法", "year": 2022}
 {"area": "天津", "basis": null, "papers": ["省考/天津/2022/申论-区级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "区级卷", "year": 2022}
@@ -796,7 +796,7 @@
 {"area": "河北", "basis": null, "papers": ["省考/河北/2022/申论-A类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A类", "year": 2022}
 {"area": "河北", "basis": null, "papers": ["省考/河北/2022/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2022}
 {"area": "河北", "basis": null, "papers": ["省考/河北/2022/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2022}
-{"area": "河北", "basis": null, "papers": ["省考/河北/2022/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2022}
+{"area": "河北", "basis": null, "papers": ["省考/河北/2022/行测-统考.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2022}
 {"area": "河南", "basis": null, "papers": ["省考/河南/2022/申论-乡镇卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "乡镇卷", "year": 2022}
 {"area": "河南", "basis": null, "papers": ["省考/河南/2022/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2022}
 {"area": "河南", "basis": null, "papers": ["省考/河南/2022/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2022}
@@ -947,7 +947,7 @@
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2023/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2023}
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2023/申论-省市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省市卷", "year": 2023}
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2023/申论-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "行政执法", "year": 2023}
-{"area": "湖南", "basis": null, "papers": ["省考/湖南/2023/行测-统考.md"], "sources": ["粉笔", "华图"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2023}
+{"area": "湖南", "basis": null, "papers": ["省考/湖南/2023/行测-统考.md"], "sources": ["粉笔", "华图", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2023}
 {"area": "甘肃", "basis": null, "papers": ["省考/甘肃/2023/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2023}
 {"area": "甘肃", "basis": null, "papers": ["省考/甘肃/2023/申论-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "选调生", "year": 2023}
 {"area": "甘肃", "basis": null, "papers": ["省考/甘肃/2023/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2023}
@@ -1099,7 +1099,7 @@
 {"area": "陕西", "basis": null, "papers": ["省考/陕西/2024/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2024}
 {"area": "陕西", "basis": null, "papers": ["省考/陕西/2024/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2024}
 {"area": "青海", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2024}
-{"area": "青海", "basis": null, "papers": ["省考/青海/2024/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2024}
+{"area": "青海", "basis": null, "papers": ["省考/青海/2024/行测-统考.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2024}
 {"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2024/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2024}
 {"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2024/申论-省市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省市卷", "year": 2024}
 {"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2024/申论-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "行政执法", "year": 2024}
@@ -1156,7 +1156,7 @@
 {"area": "广州", "basis": "2019 年起广州市公务员考试并入广东省考，使用广东省考试卷", "papers": [], "sources": [], "status": "无独立考试", "subject": "行测", "variant": null, "year": 2025}
 {"area": "广西", "basis": null, "papers": ["省考/广西/2025/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2025}
 {"area": "广西", "basis": null, "papers": ["省考/广西/2025/申论-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "选调生", "year": 2025}
-{"area": "广西", "basis": null, "papers": ["省考/广西/2025/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
+{"area": "广西", "basis": null, "papers": ["省考/广西/2025/行测-统考.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2025/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2025}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2025/申论-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "行政执法", "year": 2025}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2025/行测-统考.md"], "sources": ["粉笔", "华图"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
@@ -1201,7 +1201,7 @@
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2025/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2025}
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2025/申论-省市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省市卷", "year": 2025}
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2025/申论-行政执法.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "行政执法", "year": 2025}
-{"area": "湖南", "basis": null, "papers": ["省考/湖南/2025/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
+{"area": "湖南", "basis": null, "papers": ["省考/湖南/2025/行测-统考.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
 {"area": "甘肃", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2025}
 {"area": "甘肃", "basis": null, "papers": ["省考/甘肃/2025/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
 {"area": "福建", "basis": null, "papers": ["省考/福建/2025/申论-省市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省市卷", "year": 2025}
@@ -1228,13 +1228,13 @@
 {"area": "青海", "basis": null, "papers": ["省考/青海/2025/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
 {"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2025/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2025}
 {"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2025/申论-省市卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "省市卷", "year": 2025}
-{"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2025/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
+{"area": "黑龙江", "basis": null, "papers": ["省考/黑龙江/2025/行测-统考.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2025}
 {"area": "上海", "basis": null, "papers": ["省考/上海/2026/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2026}
 {"area": "上海", "basis": null, "papers": ["省考/上海/2026/行测-统考.md"], "sources": ["粉笔", "华图"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "云南", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
 {"area": "云南", "basis": null, "papers": ["省考/云南/2026/行测-统考.md"], "sources": ["粉笔", "华图"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "内蒙古", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
-{"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
+{"area": "内蒙古", "basis": null, "papers": ["省考/内蒙古/2026/行测-统考.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "北京", "basis": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251110_4267508.html", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "统考", "year": 2026}
 {"area": "北京", "basis": null, "papers": ["省考/北京/2026/申论-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "选调生", "year": 2026}
 {"area": "北京", "basis": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251110_4267508.html", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": "统考", "year": 2026}
@@ -1305,7 +1305,7 @@
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2026/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2026}
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "甘肃", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
-{"area": "甘肃", "basis": null, "papers": ["省考/甘肃/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
+{"area": "甘肃", "basis": null, "papers": ["省考/甘肃/2026/行测-统考.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "福建", "basis": null, "papers": ["省考/福建/2026/申论-通用卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "通用卷", "year": 2026}
 {"area": "福建", "basis": null, "papers": ["省考/福建/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "西藏", "basis": "https://hrss.xizang.gov.cn/xwzx/tzgg/202512/t20251202_512168.html", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "A类", "year": 2026}
