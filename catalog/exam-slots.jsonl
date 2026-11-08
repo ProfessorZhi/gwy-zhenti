@@ -48,7 +48,7 @@
 {"area": "广西", "basis": null, "papers": ["省考/广西/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2016/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2016}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
-{"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2016}
+{"area": "新疆兵团", "basis": "仅中国教育在线转载，缺兵团考试网官方原公告；2016 行测已由粉笔收录", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2016}
 {"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2016/申论-A类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A类", "year": 2016}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2016/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2016}
@@ -187,8 +187,8 @@
 {"area": "福建", "basis": null, "papers": ["省考/福建/2017/申论-统考.md"], "sources": ["粉笔", "华图", "网络检索"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2017}
 {"area": "福建", "basis": null, "papers": ["省考/福建/2017/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2017}
 {"area": "福建", "basis": null, "papers": ["省考/福建/2017/行测-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "选调生", "year": 2017}
-{"area": "西藏", "basis": "未找到当年招录公告", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": "统考", "year": 2017}
-{"area": "西藏", "basis": "未找到当年招录公告", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": "统考", "year": 2017}
+{"area": "西藏", "basis": "http://www.xznq.gov.cn/zxzx_yy_3432/201711/t20171109_2025419.html；常规第二批 2017-11-25；另 2017-09-09 藏汉双语专项单列待定", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "统考", "year": 2017}
+{"area": "西藏", "basis": "http://www.xznq.gov.cn/zxzx_yy_3432/201711/t20171109_2025419.html；常规第二批 2017-11-25；另 2017-09-09 藏汉双语专项单列待定", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": "统考", "year": 2017}
 {"area": "贵州", "basis": null, "papers": ["省考/贵州/2017/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2017}
 {"area": "贵州", "basis": null, "papers": ["省考/贵州/2017/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2017}
 {"area": "辽宁", "basis": null, "papers": ["省考/辽宁/2017/申论-公安.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "公安", "year": 2017}
@@ -514,8 +514,8 @@
 {"area": "广西", "basis": null, "papers": ["省考/广西/2020/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2020}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2020/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2020}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2020/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2020}
-{"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2020}
-{"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2020}
+{"area": "新疆兵团", "basis": "http://www.xjbt.gov.cn/c/2020-07-19/8033058.shtml；兵团政务网：2020-08-22/23 公共科目，1277人", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2020}
+{"area": "新疆兵团", "basis": "http://www.xjbt.gov.cn/c/2020-07-19/8033058.shtml；兵团政务网：2020-08-22/23 公共科目，1277人", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": null, "year": 2020}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2020/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2020}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2020/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2020}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2020/申论-名校优生选调.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "名校优生选调", "year": 2020}
@@ -780,8 +780,8 @@
 {"area": "广西", "basis": null, "papers": ["省考/广西/2022/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2022}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2022/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2022}
 {"area": "新疆", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": null, "year": 2022}
-{"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2022}
-{"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2022}
+{"area": "新疆兵团", "basis": "仅btzx.com.cn媒体转载，缺btpta.xjbt.gov.cn官方2022公告", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2022}
+{"area": "新疆兵团", "basis": "仅btzx.com.cn媒体转载，缺btpta.xjbt.gov.cn官方2022公告", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2022}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2022/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2022}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2022/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2022}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2022/申论-名校优生选调.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "名校优生选调", "year": 2022}
@@ -988,7 +988,7 @@
 {"area": "内蒙古", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": null, "year": 2024}
 {"area": "北京", "basis": null, "papers": ["省考/北京/2024/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2024}
 {"area": "北京", "basis": null, "papers": ["省考/北京/2024/申论-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "选调生", "year": 2024}
-{"area": "北京", "basis": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202311/t20231110_3299396.html", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": "统考", "year": 2024}
+{"area": "北京", "basis": null, "papers": ["省考/北京/2024/行测-统考.md"], "sources": ["网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2024}
 {"area": "吉林", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "统考", "year": 2024}
 {"area": "吉林", "basis": null, "papers": ["省考/吉林/2024/申论-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "选调生", "year": 2024}
 {"area": "吉林", "basis": null, "papers": ["省考/吉林/2024/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2024}
@@ -1274,8 +1274,10 @@
 {"area": "广西", "basis": null, "papers": ["省考/广西/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "新疆", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2026/行测-统考.md"], "sources": ["粉笔", "网络检索"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
-{"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2026}
-{"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2026}
+{"area": "新疆兵团", "basis": "http://btpta.xjbt.gov.cn/c/2026-01-27/8469267.shtml；官方页明确申论 A/B/C，2026-03-14 14:00-16:30", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "A类", "year": 2026}
+{"area": "新疆兵团", "basis": "http://btpta.xjbt.gov.cn/c/2026-01-27/8469267.shtml；官方页明确申论 A/B/C，2026-03-14 14:00-16:30", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "B类", "year": 2026}
+{"area": "新疆兵团", "basis": "http://btpta.xjbt.gov.cn/c/2026-01-27/8469267.shtml；官方页明确申论 A/B/C，2026-03-14 14:00-16:30", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "C类", "year": 2026}
+{"area": "新疆兵团", "basis": "http://btpta.xjbt.gov.cn/c/2026-01-27/8469267.shtml；兵团考试信息网：2026-03-14 09:00-11:00 行测；官方页未给总人数", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": null, "year": 2026}
 {"area": "江苏", "basis": "https://www.jsxf.gov.cn/tzgg/art/2025/art_4b4f6c1ef283b21741ec26bc3c0ecc30.html", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "A类", "year": 2026}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2026/申论-B类.md"], "sources": ["网络检索"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2026}
 {"area": "江苏", "basis": "https://www.jsxf.gov.cn/tzgg/art/2025/art_4b4f6c1ef283b21741ec26bc3c0ecc30.html", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": "C类", "year": 2026}

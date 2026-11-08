@@ -8,7 +8,7 @@
 
 <!-- gwy:badges:start -->
 <p align="center">
-  <a href="catalog/INDEX.md"><img alt="行测 735 份" src="https://img.shields.io/badge/%E8%A1%8C%E6%B5%8B-735%20%E4%BB%BD-2563eb?style=for-the-badge"></a>
+  <a href="catalog/INDEX.md"><img alt="行测 736 份" src="https://img.shields.io/badge/%E8%A1%8C%E6%B5%8B-736%20%E4%BB%BD-2563eb?style=for-the-badge"></a>
   <a href="catalog/INDEX.md"><img alt="申论 934 份" src="https://img.shields.io/badge/%E7%94%B3%E8%AE%BA-934%20%E4%BB%BD-d97706?style=for-the-badge"></a>
   <a href="docs/SCHEMA.md"><img alt="格式 Markdown" src="https://img.shields.io/badge/%E6%A0%BC%E5%BC%8F-Markdown-0f766e?style=for-the-badge"></a>
   <a href="docs/SCHEMA.md"><img alt="题图 本地存储" src="https://img.shields.io/badge/%E9%A2%98%E5%9B%BE-%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8-475569?style=for-the-badge"></a>
@@ -84,7 +84,7 @@
 | 区域 | 地区（试卷份数） |
 | --- | --- |
 | **华东** | [浙江](省考/浙江/) 83 · [江苏](省考/江苏/) 94 · [上海](省考/上海/) 69 · [安徽](省考/安徽/) 66 · [福建](省考/福建/) 50 · [江西](省考/江西/) 57 · [山东](省考/山东/) 61 |
-| **华北** | [北京](省考/北京/) 44 · [天津](省考/天津/) 52 · [河北](省考/河北/) 53 · [山西](省考/山西/) 38 · [内蒙古](省考/内蒙古/) 32 |
+| **华北** | [北京](省考/北京/) 45 · [天津](省考/天津/) 52 · [河北](省考/河北/) 53 · [山西](省考/山西/) 38 · [内蒙古](省考/内蒙古/) 32 |
 | **华中 · 华南** | [河南](省考/河南/) 49 · [湖北](省考/湖北/) 50 · [湖南](省考/湖南/) 43 · [广东](省考/广东/) 70 · [广州](省考/广州/) 16 · [深圳](省考/深圳/) 39 · [广西](省考/广西/) 40 · [海南](省考/海南/) 32 |
 | **西南** | [重庆](省考/重庆/) 70 · [四川](省考/四川/) 70 · [贵州](省考/贵州/) 36 · [云南](省考/云南/) 35 · [西藏](省考/西藏/) 3 |
 | **西北** | [陕西](省考/陕西/) 38 · [甘肃](省考/甘肃/) 30 · [青海](省考/青海/) 32 · [宁夏](省考/宁夏/) 34 · [新疆](省考/新疆/) 28 · [新疆兵团](省考/新疆兵团/) 18 |
@@ -131,12 +131,12 @@
 <!-- gwy:coverage:start -->
 | 年份 | 应有试卷 | 已收录 | 缺卷 | 待核 | 收录率 |
 | :---: | ---: | ---: | ---: | ---: | ---: |
-| **2016–2026** | 1,297 | 1,246 | 51 | 15 | **96.1%** |
+| **2016–2026** | 1,305 | 1,247 | 58 | 9 | **95.6%** |
 | 2008–2015 | — | 392 | — | — | — |
 
 应有试卷以实际举行的考试为准，按「地区 × 年份 × 科目 × 卷型」逐卷登记于 [槽位台账](catalog/exam-slots.jsonl)，应有试卷 = 已收录 + 缺卷，收录率 = 已收录 ÷ 应有试卷；待核卷次确认开考后计入，当年无独立试卷的科目不计入。2015 年及以前只统计已收录试卷。公安招警和公检法（公安院校联考、政法干警等）9 份为专项收录，可在目录中浏览，不计入台账与缺口统计。
 
-来源以粉笔为主，华图与网络检索补充：2016–2026 年已收录试卷中，含粉笔来源 1,232 卷、华图补充 16 卷、网络检索来源 31 卷（一卷可有多个来源）。
+来源以粉笔为主，华图与网络检索补充：2016–2026 年已收录试卷中，含粉笔来源 1,232 卷、华图补充 16 卷、网络检索来源 32 卷（一卷可有多个来源）。
 <!-- gwy:coverage:end -->
 
 <p align="center">
@@ -154,8 +154,8 @@
 <!-- gwy:gaps:start -->
 | 层级 | 类别 | 2016–2026 | 2008–2015 | 跟踪 |
 | --- | --- | ---: | ---: | :---: |
-| **缺卷** | 已确认缺卷 | 51 卷 | 不判定 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
-|  | 考试身份待核 | 15 卷 | 不判定 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
+| **缺卷** | 已确认缺卷 | 58 卷 | 不判定 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
+|  | 考试身份待核 | 9 卷 | 不判定 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
 | **行测** | 缺题干 | 254 题 · 55 卷 | — | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
 |  | 缺选项 | 4 题 · 4 卷 | — | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
 |  | 缺答案 | — | — |  |

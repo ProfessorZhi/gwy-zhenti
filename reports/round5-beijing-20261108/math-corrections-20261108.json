@@ -1,0 +1,37 @@
+{
+ "paper": "省考/北京/2024/行测-统考.md",
+ "before_sha256": "39c993cc6bd151cc0c5f8fa6af8fdb557bfed0c046bd1a21c241e2ce16aaf6f9",
+ "after_sha256": "e7824bfaf4182edea8787631f4b983254dccb0f1fbf3a5ca73cb01c289e7fdc2",
+ "q76_image": "assets-bj2024/5644e646791a4f2145e2911318b8863380c5e99a561aec1b61de263b8ef3026a.png",
+ "q76_image_sha256": "5644e646791a4f2145e2911318b8863380c5e99a561aec1b61de263b8ef3026a",
+ "corrections": [
+  {
+   "q": 61,
+   "change": "2/13 fraction inline; “同一类”按文义改为“一共”"
+  },
+  {
+   "q": 67,
+   "change": "options 1/5,1/6,4/5,5/6 inline"
+  },
+  {
+   "q": 68,
+   "change": "remove stray page-footnote 1"
+  },
+  {
+   "q": 69,
+   "change": "fractions 1/3,4/5,4/5 inline"
+  },
+  {
+   "q": 74,
+   "change": "fare table converted to Markdown table"
+  },
+  {
+   "q": 76,
+   "change": "π/√3 options restored; two-circle figure cropped from PDF p11"
+  }
+ ],
+ "sources": {
+  "question_pdf": "北京/2024北京市考行测真题.pdf",
+  "rendered_pages": "PDF pages 12-13 / printed pages 10-11"
+ }
+}
