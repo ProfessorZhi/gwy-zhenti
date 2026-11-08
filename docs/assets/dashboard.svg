@@ -4,26 +4,26 @@
 <rect x="16" y="16" width="280" height="228" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="36" y="48" font-size="15" font-weight="700" fill="#0f172a">2016–2026 收录率</text>
 <circle cx="96" cy="150" r="54" fill="none" stroke="#e2e8f0" stroke-width="14"/>
-<circle cx="96" cy="150" r="54" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="butt" stroke-dasharray="326.0 339.3" transform="rotate(-90 96 150)"/>
-<text x="96" y="157" font-size="21" font-weight="800" fill="#0f172a" text-anchor="middle">96.1%</text>
+<circle cx="96" cy="150" r="54" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="butt" stroke-dasharray="324.0 339.3" transform="rotate(-90 96 150)"/>
+<text x="96" y="157" font-size="21" font-weight="800" fill="#0f172a" text-anchor="middle">95.5%</text>
 <text x="172" y="108" font-size="12" fill="#64748b">应有试卷</text>
-<text x="276" y="108" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">1,297</text>
+<text x="276" y="108" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">1,306</text>
 <text x="172" y="134" font-size="12" fill="#64748b">已收录</text>
-<text x="276" y="134" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">1,246</text>
+<text x="276" y="134" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">1,247</text>
 <text x="172" y="160" font-size="12" fill="#64748b">缺卷</text>
-<text x="276" y="160" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">51</text>
+<text x="276" y="160" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">59</text>
 <text x="172" y="186" font-size="12" fill="#64748b">待核</text>
-<text x="276" y="186" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">15</text>
+<text x="276" y="186" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">6</text>
 <rect x="312" y="16" width="280" height="228" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="332" y="48" font-size="15" font-weight="700" fill="#0f172a">科目构成</text>
-<text x="332" y="96" font-size="30" font-weight="800" fill="#0f172a">1,660</text>
-<text x="332" y="118" font-size="12" fill="#64748b">份试卷 · 89,681 个题位</text>
+<text x="332" y="96" font-size="30" font-weight="800" fill="#0f172a">1,661</text>
+<text x="332" y="118" font-size="12" fill="#64748b">份试卷 · 89,816 个题位</text>
 <rect x="332" y="140" width="240" height="16" rx="8" fill="#f59e0b"/>
 <rect x="332" y="140" width="106.3" height="16" rx="8" fill="#3b82f6"/>
 <rect x="430.3" y="140" width="8" height="16" fill="#3b82f6"/>
 <rect x="332" y="176" width="12" height="12" rx="3" fill="#3b82f6"/>
 <text x="352" y="186" font-size="13" fill="#334155">行测</text>
-<text x="572" y="186" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">735 份 · 44%</text>
+<text x="572" y="186" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">736 份 · 44%</text>
 <rect x="332" y="204" width="12" height="12" rx="3" fill="#f59e0b"/>
 <text x="352" y="214" font-size="13" fill="#334155">申论</text>
 <text x="572" y="214" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">925 份 · 56%</text>
