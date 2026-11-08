@@ -1,0 +1,47 @@
+{
+ "schema_version": 1,
+ "capture_method": "offline_dtiku_text",
+ "url": "https://sydw.dtiku.cn/paper/35907",
+ "answer_url": "",
+ "title": "2024年0316青海公务员考试《行测》试题（网友回忆版）",
+ "captured_at": "2026-11-07",
+ "offline_file": "/tmp/gwy-agent-B-round2/pages/qh2024a.txt",
+ "offline_file_sha256": "6145db6dc0c31f65e11be475cf137554e6220d61297f5cd1faf6e1c9f3bb016c",
+ "note": "live dtiku page returns 202 anti-bot; this snapshot is the 2026-11-07 offline text capture; no live fetch this round",
+ "question_count": 3,
+ "questions": {
+  "89": {
+   "number": 89,
+   "stem": "兵符：信物",
+   "options": {
+    "A": "七律：绝句",
+    "B": "汉字：偏旁",
+    "C": "干戈：战争",
+    "D": "寒露：节气"
+   },
+   "answer": "D"
+  },
+  "90": {
+   "number": 90,
+   "stem": "虫害：植物受损",
+   "options": {
+    "A": "雾霾：慢性肺炎",
+    "B": "除名：查无此人",
+    "C": "赤潮：海水污染",
+    "D": "失眠：辗转反侧"
+   },
+   "answer": "A"
+  },
+  "91": {
+   "number": 91,
+   "stem": "泡沫经济：实体经济：通货膨胀",
+   "options": {
+    "A": "生态农业：传统农业：稻田养鱼",
+    "B": "清洁能源：传统能源：污染减少",
+    "C": "生理反应：心理反应：望梅止渴",
+    "D": "自然现象：社会现象：火山爆发"
+   },
+   "answer": "B"
+  }
+ }
+}

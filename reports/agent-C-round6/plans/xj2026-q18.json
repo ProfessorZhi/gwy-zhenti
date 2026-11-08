@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "paper": "省考/新疆/2026/行测-统考.md",
+ "paper_sha256": "63d1df9573493c66803369b7c8aefea3e89b461c86c765fc41d6b5ec7b2d0503",
+ "target_q": 18,
+ "source_q": 19,
+ "source_platform": "gkhenti 公开真题库（源标注 fenbi）",
+ "source_url": "https://gwy.gkzhenti.cn/paper/1775360736050",
+ "source_title": "2026年湖北省公务员录用考试《行测》题（网友回忆版）",
+ "source_region": "湖北",
+ "source_year": 2026,
+ "source_variant": "统考",
+ "source_snapshot": {
+  "path": "reports/agent-C-round6/snapshots/hb2026.json",
+  "sha256": "5decedd126477b0eca46d74d813a092e4550305e52157e32b11d3faf1460c201"
+ },
+ "anchors": [
+  {
+   "local_q": 14,
+   "source_q": 15,
+   "local_text": "优化政务服务、提升行政效能是优化营商环境、建设全国统一大市场的必然要求，对加快构建新发展格局、推动高质量发展具有重要意义。关于优化政务服务、提升行政效能，下列举措恰当的是： ①推进",
+   "source_text": "优化政务服务、提升行政效能是优化营商环境、建设全国统一大市场的必然要求，对加快构建新发展格局、推动高质量发展具有重要意义。关于优化政务服务、提升行政效能，下列举措恰当的是：\n①推进"
+  },
+  {
+   "local_q": 19,
+   "source_q": 20,
+   "local_text": "《民营经济促进法》规定平等对待民营经济组织，保障公平竞争。下列做法符合该规定的是： A. 某市规范性文件规定，限制信用等级B级以下的民营企业参加政府采购交易活动 B. 某市严格把控",
+   "source_text": "“二十四史”是中国历代史学家精心编撰的纪传体史书，是中华民族珍贵的文化遗产。下列说法正确的是："
+  }
+ ],
+ "stem": "下列语句与其所蕴含的经济学原理对应正确的是：",
+ "options": {
+  "A": "物以多为贱——沉没成本",
+  "B": "酒香不怕巷子深——买方市场",
+  "C": "众人拾柴火焰高——规模经济",
+  "D": "物至而反，冬夏是也。致至而危，累棋是也——边际效用递增"
+ },
+ "answer": "C",
+ "explanation": "来源题库给出参考答案；题干/选项/答案见 source_snapshot。",
+ "source_note": "跨省同题（湖北2026 q19）；题干/四选项/答案C逐项核验；非官方回忆版",
+ "reviewer": "Agent C 2026-11-08",
+ "reviewed_at": "2026-11-08"
+}

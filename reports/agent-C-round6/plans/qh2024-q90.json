@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "paper": "省考/青海/2024/行测-统考.md",
+ "paper_sha256": "91d5f6b64b11bbf7401536bb25ae0f494b43305d9acc065bd966f7efc64106f9",
+ "target_q": 90,
+ "source_q": 90,
+ "source_platform": "dtiku 公考加油站（离线文本，live 202 anti-bot）",
+ "source_url": "https://sydw.dtiku.cn/paper/35907",
+ "source_title": "2024年0316青海公务员考试《行测》试题（网友回忆版）",
+ "source_region": "青海",
+ "source_year": 2024,
+ "source_variant": "统考",
+ "source_snapshot": {
+  "path": "reports/agent-C-round6/snapshots/qh2024-offline.json",
+  "sha256": "a9fca294bba660e27481a4400cc802a9965b00c19ec520986b1126cf4525b5e2"
+ },
+ "anchors": [
+  {
+   "local_q": 89,
+   "source_q": 89,
+   "local_text": "兵符：信物 A. 七律：绝句 B. 汉字：偏旁 C. 干戈：战争 D. 寒露：节气",
+   "source_text": "兵符：信物"
+  },
+  {
+   "local_q": 91,
+   "source_q": 91,
+   "local_text": "泡沫经济：实体经济：通货膨胀 A. 生态农业：传统农业：稻田养鱼 B. 清洁能源：传统能源：污染减少 C. 生理反应：心理反应：望梅止渴 D. 自然现象：社会现象：火山爆发",
+   "source_text": "泡沫经济：实体经济：通货膨胀"
+  }
+ ],
+ "stem": "虫害：植物受损",
+ "options": {
+  "A": "雾霾：慢性肺炎",
+  "B": "除名：查无此人",
+  "C": "赤潮：海水污染",
+  "D": "失眠：辗转反侧"
+ },
+ "answer": "A",
+ "explanation": "来源题库给出参考答案；题干/选项/答案见 source_snapshot。",
+ "source_note": "dtiku 同卷 q89/q90/q91=兵符/虫害/泡沫；live 202 anti-bot，使用2026-11-07离线文本（SHA 6145db6d…）；答案A；非官方回忆版",
+ "reviewer": "Agent C 2026-11-08",
+ "reviewed_at": "2026-11-08"
+}

@@ -44,7 +44,6 @@
 {"area": "深圳", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "思维能力测验", "path": "省考/深圳/2020/行测-思维能力测验.md", "subject": "行测", "year": "2020"}
 {"area": "深圳", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "行测2", "path": "省考/深圳/2020/行测-行测2.md", "subject": "行测", "year": "2020"}
 {"area": "湖北", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/湖北/2025/行测-统考.md", "subject": "行测", "year": "2025"}
-{"area": "湖南", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/湖南/2023/行测-统考.md", "subject": "行测", "year": "2023"}
 {"area": "湖南", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/湖南/2024/行测-统考.md", "subject": "行测", "year": "2024"}
 {"area": "甘肃", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/甘肃/2019/行测-统考.md", "subject": "行测", "year": "2019"}
 {"area": "甘肃", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/甘肃/2024/行测-统考.md", "subject": "行测", "year": "2024"}
@@ -52,7 +51,6 @@
 {"area": "陕西", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/陕西/2025/行测-统考.md", "subject": "行测", "year": "2025"}
 {"area": "青海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/青海/2019/行测-统考.md", "subject": "行测", "year": "2019"}
 {"area": "青海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/青海/2022/行测-统考.md", "subject": "行测", "year": "2022"}
-{"area": "青海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/青海/2024/行测-统考.md", "subject": "行测", "year": "2024"}
 {"area": "青海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/青海/2025/行测-统考.md", "subject": "行测", "year": "2025"}
 {"area": "青海", "current_truncated_questions": null, "issues": ["答案数量与题量不一致"], "notes": ["内部未归属卷型标签，不自动视为独立原卷", "有参考答案不代表其为官方答案或已经验真"], "paper_type": "统考", "path": "省考/青海/2026/行测-统考.md", "subject": "行测", "year": "2026"}
 {"area": "黑龙江", "current_truncated_questions": null, "issues": ["未检测到参考答案（需复核正文）"], "notes": ["有参考答案不代表其为官方答案或已经验真"], "paper_type": "边境县", "path": "省考/黑龙江/2019/行测-边境县-shangantong.md", "subject": "行测", "year": "2019"}
