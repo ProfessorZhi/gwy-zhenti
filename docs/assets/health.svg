@@ -17,13 +17,13 @@
 <rect x="46" y="155" width="10" height="10" rx="2" fill="#34d399"/>
 <text x="61" y="164" font-size="11.5" fill="#475569">完整 <tspan font-weight="700" fill="#0f172a">1,198</tspan></text>
 <rect x="138.0" y="155" width="10" height="10" rx="2" fill="#fcd34d"/>
-<text x="153.0" y="164" font-size="11.5" fill="#475569">答案待补 <tspan font-weight="700" fill="#0f172a">1</tspan></text>
-<rect x="225.0" y="155" width="10" height="10" rx="2" fill="#fb923c"/>
-<text x="240.0" y="164" font-size="11.5" fill="#475569">缺选项或材料 <tspan font-weight="700" fill="#0f172a">2</tspan></text>
-<rect x="335.0" y="155" width="10" height="10" rx="2" fill="#f43f5e"/>
-<text x="350.0" y="164" font-size="11.5" fill="#475569">缺题干或题目 <tspan font-weight="700" fill="#0f172a">55</tspan></text>
-<rect x="452.0" y="155" width="10" height="10" rx="2" fill="#334155"/>
-<text x="467.0" y="164" font-size="11.5" fill="#475569">缺卷 <tspan font-weight="700" fill="#0f172a">63</tspan></text>
+<text x="153.0" y="164" font-size="11.5" fill="#475569">缺答案 <tspan font-weight="700" fill="#0f172a">1</tspan></text>
+<rect x="213.5" y="155" width="10" height="10" rx="2" fill="#fb923c"/>
+<text x="228.5" y="164" font-size="11.5" fill="#475569">缺选项或材料 <tspan font-weight="700" fill="#0f172a">2</tspan></text>
+<rect x="323.5" y="155" width="10" height="10" rx="2" fill="#f43f5e"/>
+<text x="338.5" y="164" font-size="11.5" fill="#475569">缺题干或题目 <tspan font-weight="700" fill="#0f172a">55</tspan></text>
+<rect x="440.5" y="155" width="10" height="10" rx="2" fill="#334155"/>
+<text x="455.5" y="164" font-size="11.5" fill="#475569">缺卷 <tspan font-weight="700" fill="#0f172a">63</tspan></text>
 <rect x="1280" y="90" width="746" height="86" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="1298" y="116" font-size="15" font-weight="800" fill="#0f172a">2008 – 2015 · 只计已收录</text>
 <text x="2008" y="116" font-size="12" fill="#475569" text-anchor="end">已收录试卷 405 份，完整率 100.0%</text>
@@ -36,27 +36,24 @@
 <rect x="28.0" y="192" width="61.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
 <rect x="39.0" y="200.5" width="10" height="10" rx="2" fill="#34d399"><title>完整</title></rect>
 <text x="55.0" y="209.5" font-size="12" fill="#334155">完整</text>
-<rect x="97.0" y="192" width="86.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
-<rect x="108.0" y="200.5" width="10" height="10" rx="2" fill="#fcd34d"><title>答案待补</title></rect>
-<text x="124.0" y="209.5" font-size="12" fill="#334155">答案待补</text>
-<rect x="191.0" y="192" width="111.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
-<rect x="202.0" y="200.5" width="10" height="10" rx="2" fill="#fb923c"><title>缺选项或材料</title></rect>
-<text x="218.0" y="209.5" font-size="12" fill="#334155">缺选项或材料</text>
-<rect x="310.0" y="192" width="111.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
-<rect x="321.0" y="200.5" width="10" height="10" rx="2" fill="#f43f5e"><title>缺题干或题目</title></rect>
-<text x="337.0" y="209.5" font-size="12" fill="#334155">缺题干或题目</text>
-<rect x="429.0" y="192" width="61.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
-<rect x="440.0" y="200.5" width="10" height="10" rx="2" fill="#334155"><title>缺卷</title></rect>
-<text x="456.0" y="209.5" font-size="12" fill="#334155">缺卷</text>
-<rect x="498.0" y="192" width="61.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
-<rect x="509.0" y="200.5" width="10" height="10" rx="2" fill="#c4b5fd"><title>待核</title></rect>
-<text x="525.0" y="209.5" font-size="12" fill="#334155">待核</text>
-<rect x="567.0" y="192" width="98.5" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
-<rect x="578.5" y="201.0" width="9" height="9" rx="2" fill="url(#none)" stroke="#94a3b8" stroke-width="0.8"><title>无独立考试</title></rect>
-<text x="594.0" y="209.5" font-size="12" fill="#334155">无独立考试</text>
-<rect x="673.5" y="192" width="246.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
-<rect x="685.0" y="201.0" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>未收录（2015 年及以前不判定缺卷）</title></rect>
-<text x="700.5" y="209.5" font-size="12" fill="#334155">未收录（2015 年及以前不判定缺卷）</text>
+<rect x="97.0" y="192" width="73.5" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="108.0" y="200.5" width="10" height="10" rx="2" fill="#fcd34d"><title>缺答案</title></rect>
+<text x="124.0" y="209.5" font-size="12" fill="#334155">缺答案</text>
+<rect x="178.5" y="192" width="111.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="189.5" y="200.5" width="10" height="10" rx="2" fill="#fb923c"><title>缺选项或材料</title></rect>
+<text x="205.5" y="209.5" font-size="12" fill="#334155">缺选项或材料</text>
+<rect x="297.5" y="192" width="111.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="308.5" y="200.5" width="10" height="10" rx="2" fill="#f43f5e"><title>缺题干或题目</title></rect>
+<text x="324.5" y="209.5" font-size="12" fill="#334155">缺题干或题目</text>
+<rect x="416.5" y="192" width="61.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="427.5" y="200.5" width="10" height="10" rx="2" fill="#334155"><title>缺卷</title></rect>
+<text x="443.5" y="209.5" font-size="12" fill="#334155">缺卷</text>
+<rect x="485.5" y="192" width="98.5" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="497.0" y="201.0" width="9" height="9" rx="2" fill="url(#none)" stroke="#94a3b8" stroke-width="0.8"><title>无独立考试</title></rect>
+<text x="512.5" y="209.5" font-size="12" fill="#334155">无独立考试</text>
+<rect x="592.0" y="192" width="246.0" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="603.5" y="201.0" width="9" height="9" rx="2" fill="#ffffff" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 1.5"><title>未收录（2015 年及以前不判定缺卷）</title></rect>
+<text x="619.0" y="209.5" font-size="12" fill="#334155">未收录（2015 年及以前不判定缺卷）</text>
 <text x="28" y="240" font-size="11.5" fill="#64748b">每个地区上行为行测、下行为申论；同格内方块按卷型排列。点击图片打开原图后，鼠标悬停方块可查看对应试卷。</text>
 <text x="214.0" y="286" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">2016</text>
 <text x="298.0" y="286" font-size="12.5" font-weight="700" fill="#334155" text-anchor="middle">2017</text>
@@ -555,7 +552,7 @@
 <rect x="713.0" y="488" width="10" height="10" rx="2" fill="#34d399"><title>省考/北京/2022/行测-统考 · 完整</title></rect>
 <rect x="797.0" y="488" width="10" height="10" rx="2" fill="#f43f5e"><title>省考/北京/2023/行测-统考 · 缺题干或题目</title></rect>
 <rect x="881.0" y="488" width="10" height="10" rx="2" fill="#34d399"><title>省考/北京/2024/行测-统考 · 完整</title></rect>
-<rect x="965.0" y="488" width="10" height="10" rx="2" fill="#fcd34d"><title>省考/北京/2025/行测-统考 · 答案待补</title></rect>
+<rect x="965.0" y="488" width="10" height="10" rx="2" fill="#fcd34d"><title>省考/北京/2025/行测-统考 · 缺答案</title></rect>
 <rect x="1049.0" y="488" width="10" height="10" rx="2" fill="#334155"><title>北京 2026 行测-统考 · 缺卷</title></rect>
 <rect x="1317.0" y="488" width="10" height="10" rx="2" fill="#34d399"><title>省考/北京/2008/行测-统考 · 完整</title></rect>
 <rect x="1395.0" y="488" width="10" height="10" rx="2" fill="#34d399"><title>省考/北京/2009/行测-应届 · 完整</title></rect>

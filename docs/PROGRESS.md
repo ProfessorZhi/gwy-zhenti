@@ -4,7 +4,7 @@
 
 <!-- 由 tools/cloud_quality.py --build 生成，勿手改 -->
 
-本页只给当前机器统计和现行入口。缺卷、待核与局部缺口以 [缺口总账](GAP-STATUS.md) 为准；各轮补录与修复的过程记录见 [报表索引](../reports/README.md)。
+本页只给当前机器统计和现行入口。缺卷与局部缺口以 [缺口总账](GAP-STATUS.md) 为准；各轮补录与修复的过程记录见 [报表索引](../reports/README.md)。
 
 | 指标 | 当前数量 |
 | --- | ---: |
@@ -20,7 +20,7 @@
 
 | 想看 | 去这里 |
 | --- | --- |
-| 缺卷、待核、缺题 | [缺口总账](GAP-STATUS.md) |
+| 缺卷、缺题 | [缺口总账](GAP-STATUS.md) |
 | 分地区、分年份统计 | [收录统计](COVERAGE.md) · [重点地区逐年卷表](COVERAGE-PRIORITY.md) |
 | 机器告警明细 | [质量事项](../reports/QUALITY-AUDIT.md) · [质量汇总数据](../reports/QUALITY-SUMMARY.json) |
 | 逐卷字节数与 SHA-256 | [逐卷清单](../catalog/manifest.jsonl) |

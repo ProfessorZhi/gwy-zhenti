@@ -6,19 +6,18 @@
 
 ## 统计口径
 
-- **槽位台账**：以实际举行的考试为准，2016–2026 年每份应有试卷（地区 × 年份 × 科目 × 卷型）登记一行，状态为已收录、缺卷、待核或无独立考试。应有试卷 = 已收录 + 缺卷，缺卷即台账中尚未收录的应有试卷；考试身份或卷型未确认的列为待核，确认后计入。2015 年及以前只统计已收录试卷。
+- **槽位台账**：以实际举行的考试为准，2016–2026 年每份应有试卷（地区 × 年份 × 科目 × 卷型）登记一行，状态为已收录、缺卷或无独立考试，每条均附官方公告等依据。应有试卷 = 已收录 + 缺卷，缺卷即台账中尚未收录的应有试卷；当年未单独组织考试的科目记为无独立考试，不计入应有试卷。2015 年及以前只统计已收录试卷。
 - **专项收录**：公安招警和公检法（公安院校联考、政法干警等）不属于国考、省考，9 份试卷照常收录、可在目录中浏览，但不进入槽位台账，不计入应有试卷、收录率与缺口统计。
 - **局部缺口**：已收录试卷内的缺失，按题计。行测分三级——缺题干、缺选项、缺答案，每题只计最严重的一级；申论分缺题目、缺材料、缺答案。
 - **来源**：以粉笔为主，华图与网络检索补充。每份试卷在文件头 `来源` 与 `来源清单` 中记录实际采用的全部来源；缺卷指上述来源均未取得的应有试卷。
 
 ## 总览
 
-**已收录 1,661 份试卷（不含公安招警等专项 9 份）：1,603 份完整，58 份有局部缺口**（55 份缺题干或题目、2 份缺选项或材料、1 份答案待补，每份按最严重一级只计一次）；另有 18 题参考答案已收录、但与题目的对应关系待核。**未收录：确认缺卷 63 份、考试身份待核 0 份**（2016–2026 年）。
+**已收录 1,661 份试卷（不含公安招警等专项 9 份）：1,603 份完整，58 份有局部缺口**（55 份缺题干或题目、2 份缺选项或材料、1 份缺答案，每份按最严重一级只计一次）；另有 18 题参考答案与题目的对应关系存疑。**未收录：缺卷 63 份**（2016–2026 年）。
 
 | 层级 | 类别 | 2016–2026 | 2008–2015 | 跟踪 |
 | --- | --- | ---: | ---: | :---: |
-| **缺卷** | 已确认缺卷 | 63 卷 | 不判定 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
-|  | 考试身份待核 | — | 不判定 | [#161](https://github.com/ProfessorZhi/gwy-zhenti/issues/161) |
+| **缺卷** | 未收录的应有试卷 | 63 卷 | 不判定 | [#160](https://github.com/ProfessorZhi/gwy-zhenti/issues/160) |
 | **行测** | 缺题干 | 254 题 · 55 卷 | — | [#155](https://github.com/ProfessorZhi/gwy-zhenti/issues/155) [#156](https://github.com/ProfessorZhi/gwy-zhenti/issues/156) |
 |  | 缺选项 | 4 题 · 4 卷 | — | [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157) |
 |  | 缺答案 | — | — |  |
@@ -26,56 +25,56 @@
 |  | 缺材料 | — | — |  |
 |  | 缺答案 | — | — |  |
 
-已收录试卷中 2016–2026 年 1,256 份。上表按题计，一份卷可同时出现在多行；答案对应待核的 18 题见 [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157)。
+已收录试卷中 2016–2026 年 1,256 份。上表按题计，一份卷可同时出现在多行；另有 18 题参考答案与题目的对应关系存疑，见 [#157](https://github.com/ProfessorZhi/gwy-zhenti/issues/157)。
 
 ## 逐卷分布与健康度
 
-每份试卷按最严重的缺口定级：**完整** → **答案待补**（缺参考答案或答案对应待核）→ **缺选项或材料** → **缺题干或题目**。
+每份试卷按最严重的缺口定级：**完整** → **缺答案**（缺参考答案，或参考答案与题目的对应关系存疑）→ **缺选项或材料** → **缺题干或题目**。
 
 <table><tr><td><sub>←⁠&nbsp;⁠左⁠右⁠滑⁠动⁠查⁠看⁠全⁠部⁠年⁠份⁠&nbsp;⁠·⁠&nbsp;⁠点⁠击⁠图⁠片⁠查⁠看⁠原⁠图⁠&nbsp;⁠→&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</sub><br><a href="assets/health.svg"><img src="assets/health.svg" alt="逐卷分布与健康度：2008–2026 年各地区各年份的每份试卷及其状态" width="2054"></a></td></tr></table>
 
-| 地区 | 已收录 | 完整 | 答案待补 | 缺选项或材料 | 缺题干或题目 | 缺卷 | 待核 |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 国考 | 77 | 76 | — | 1 | — | — | — |
-| 江苏 | 94 | 92 | — | — | 2 | 5 | — |
-| 浙江 | 83 | 82 | — | — | 1 | — | — |
-| 四川 | 70 | 69 | — | — | 1 | — | — |
-| 广东 | 70 | 68 | — | — | 2 | — | — |
-| 重庆 | 70 | 70 | — | — | — | — | — |
-| 上海 | 69 | 64 | — | — | 5 | 2 | — |
-| 安徽 | 66 | 66 | — | — | — | — | — |
-| 山东 | 61 | 59 | — | — | 2 | 1 | — |
-| 黑龙江 | 59 | 57 | — | — | 2 | 1 | — |
-| 吉林 | 57 | 56 | — | — | 1 | 3 | — |
-| 江西 | 57 | 56 | — | — | 1 | — | — |
-| 河北 | 53 | 52 | — | — | 1 | — | — |
-| 天津 | 52 | 52 | — | — | — | — | — |
-| 湖北 | 50 | 49 | — | — | 1 | 1 | — |
-| 福建 | 50 | 50 | — | — | — | — | — |
-| 河南 | 49 | 49 | — | — | — | — | — |
-| 北京 | 45 | 42 | 1 | — | 2 | 2 | — |
-| 湖南 | 43 | 42 | — | — | 1 | — | — |
-| 广西 | 40 | 37 | — | — | 3 | 1 | — |
-| 深圳 | 39 | 36 | — | 1 | 2 | — | — |
-| 山西 | 38 | 38 | — | — | — | — | — |
-| 陕西 | 38 | 37 | — | — | 1 | 1 | — |
-| 贵州 | 36 | 36 | — | — | — | — | — |
-| 云南 | 35 | 31 | — | — | 4 | 1 | — |
-| 辽宁 | 35 | 35 | — | — | — | — | — |
-| 宁夏 | 34 | 30 | — | — | 4 | 3 | — |
-| 内蒙古 | 32 | 29 | — | — | 3 | 3 | — |
-| 海南 | 32 | 29 | — | — | 3 | — | — |
-| 青海 | 32 | 28 | — | — | 4 | 2 | — |
-| 甘肃 | 30 | 27 | — | — | 3 | 2 | — |
-| 新疆 | 28 | 24 | — | — | 4 | 3 | — |
-| 新疆兵团 | 18 | 16 | — | — | 2 | 11 | — |
-| 广州 | 16 | 16 | — | — | — | — | — |
-| 西藏 | 3 | 3 | — | — | — | 21 | — |
-| **合计** | **1,661** | **1,603** | **1** | **2** | **55** | **63** | **0** |
+| 地区 | 已收录 | 完整 | 缺答案 | 缺选项或材料 | 缺题干或题目 | 缺卷 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 国考 | 77 | 76 | — | 1 | — | — |
+| 江苏 | 94 | 92 | — | — | 2 | 5 |
+| 浙江 | 83 | 82 | — | — | 1 | — |
+| 四川 | 70 | 69 | — | — | 1 | — |
+| 广东 | 70 | 68 | — | — | 2 | — |
+| 重庆 | 70 | 70 | — | — | — | — |
+| 上海 | 69 | 64 | — | — | 5 | 2 |
+| 安徽 | 66 | 66 | — | — | — | — |
+| 山东 | 61 | 59 | — | — | 2 | 1 |
+| 黑龙江 | 59 | 57 | — | — | 2 | 1 |
+| 吉林 | 57 | 56 | — | — | 1 | 3 |
+| 江西 | 57 | 56 | — | — | 1 | — |
+| 河北 | 53 | 52 | — | — | 1 | — |
+| 天津 | 52 | 52 | — | — | — | — |
+| 湖北 | 50 | 49 | — | — | 1 | 1 |
+| 福建 | 50 | 50 | — | — | — | — |
+| 河南 | 49 | 49 | — | — | — | — |
+| 北京 | 45 | 42 | 1 | — | 2 | 2 |
+| 湖南 | 43 | 42 | — | — | 1 | — |
+| 广西 | 40 | 37 | — | — | 3 | 1 |
+| 深圳 | 39 | 36 | — | 1 | 2 | — |
+| 山西 | 38 | 38 | — | — | — | — |
+| 陕西 | 38 | 37 | — | — | 1 | 1 |
+| 贵州 | 36 | 36 | — | — | — | — |
+| 云南 | 35 | 31 | — | — | 4 | 1 |
+| 辽宁 | 35 | 35 | — | — | — | — |
+| 宁夏 | 34 | 30 | — | — | 4 | 3 |
+| 内蒙古 | 32 | 29 | — | — | 3 | 3 |
+| 海南 | 32 | 29 | — | — | 3 | — |
+| 青海 | 32 | 28 | — | — | 4 | 2 |
+| 甘肃 | 30 | 27 | — | — | 3 | 2 |
+| 新疆 | 28 | 24 | — | — | 4 | 3 |
+| 新疆兵团 | 18 | 16 | — | — | 2 | 11 |
+| 广州 | 16 | 16 | — | — | — | — |
+| 西藏 | 3 | 3 | — | — | — | 21 |
+| **合计** | **1,661** | **1,603** | **1** | **2** | **55** | **63** |
 
 ## 一、未收录卷次
 
-2016–2026 年每个「地区 × 年份 × 科目」槽位均须为已收录，或在台账中登记为缺卷、待核、无独立考试之一。
+2016–2026 年每个「地区 × 年份 × 科目」槽位均须为已收录，或在台账中登记为缺卷、无独立考试之一。
 
 | 年份 | 地区 | 科目 | 卷型 | 状态 | 依据 |
 | :---: | --- | --- | --- | --- | --- |
