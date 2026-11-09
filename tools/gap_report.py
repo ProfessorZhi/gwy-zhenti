@@ -149,6 +149,53 @@ def overview(new, old):
            [f'| {a} | {b_} | {c} | {d} | {e} |' for a, b_, c, d, e in rows]
 
 
+# 补录优先级：浙江为重中之重；其次重点地区 2016 年起，再次重点地区早年，然后其他地区 2016 年起，其余最后。
+PRIORITIES = [('P0', '浙江（全部年份）'), ('P1', '其他重点地区 2016–2026'), ('P2', '其他重点地区 2015 年及以前'),
+              ('P3', '其他地区 2016–2026'), ('P4', '其他地区 2015 年及以前')]
+
+
+def priority(area, year):
+    if area == '浙江':
+        return 'P0'
+    recent = int(year) >= 2016
+    if area in FOCUS:
+        return 'P1' if recent else 'P2'
+    return 'P3' if recent else 'P4'
+
+
+def priority_table(rows, xingce, shenlun, papers):
+    """按优先级汇总：缺卷份数、有局部缺口的卷数与各类缺题数。"""
+    meta = {r['path']: (r['area'], r['year']) for r in rows}
+    c = {k: Counter() for k, _ in PRIORITIES}
+    for p in papers:
+        if p['status'] == '缺卷':
+            c[priority(p['area'], p['year'])]['missing'] += 1
+    partial = defaultdict(set)
+    for path, v in xingce.items():
+        k = priority(*meta[path])
+        c[k]['stem'] += len(v['stem']); c[k]['option'] += len(v['option']); c[k]['answer'] += len(v['answer'])
+        partial[k].add(path)
+    for path, v in shenlun.items():
+        k = priority(*meta[path])
+        c[k]['stem'] += len(v['question']); c[k]['option'] += len(v['material']); c[k]['answer'] += len(v['answer'])
+        partial[k].add(path)
+    for path, qs in ANSWER_UNVERIFIED.items():
+        if path in meta:
+            k = priority(*meta[path]); c[k]['doubt'] += len(qs); partial[k].add(path)
+    n = lambda v, u='': f'{v:,}{u}' if v else '—'
+    L = ['| 优先级 | 范围 | 缺卷 | 有局部缺口的卷 | 缺题干或题目 | 缺选项或材料 | 缺答案 | 答案对应存疑 |',
+         '| :---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |']
+    for k, label in PRIORITIES:
+        x = c[k]
+        L.append(f"| **{k}** | {label} | {n(x['missing'], ' 卷')} | {n(len(partial[k]), ' 卷')} | {n(x['stem'], ' 题')} | "
+                 f"{n(x['option'])} | {n(x['answer'], ' 题')} | {n(x['doubt'], ' 题')} |")
+    return L
+
+
+PRIORITY_NOTE = ('重点地区：国考、浙江、江苏、上海、北京、天津、广东、广州、深圳、福建，其中浙江为重中之重。'
+                 '2015 年及以前不判定缺卷，只计已收录试卷的局部缺口。「缺选项或材料」中，行测按题计、申论按材料份数计。')
+
+
 def status_md(rows, xingce, shenlun, papers):
     s = summary(rows, xingce, shenlun, papers)
     files = len(rows)
@@ -169,31 +216,35 @@ def status_md(rows, xingce, shenlun, papers):
     L += overview(s_new, s_old)
     L += ['', f'已收录试卷中 2016–2026 年 {len(recent):,} 份。上表按题计，一份卷可同时出现在多行；'
           f"另有 {s['unverified']} 题参考答案与题目的对应关系存疑，见 [#157]({ISSUES}157)。", '']
+    L += ['## 补录优先级', '', PRIORITY_NOTE, ''] + priority_table(rows, xingce, shenlun, papers) + [
+          '', '下列各表均按优先级排列。', '']
     L += ['## 逐卷分布与健康度', '',
           '每份试卷按最严重的缺口定级：**完整** → **缺答案**（缺参考答案，或参考答案与题目的对应关系存疑）→ **缺选项或材料** → **缺题干或题目**。', '',
           scroll_img('assets/health.svg', '逐卷分布与健康度：2008–2026 年各地区各年份的每份试卷及其状态', health_svg(rows, grade, papers)), '']
     L += health_table(rows, grade, papers) + ['']
     # 缺卷
     L += ['## 一、未收录卷次', '', '2016–2026 年每个「地区 × 年份 × 科目」槽位均须为已收录，或在台账中登记为缺卷、无独立考试之一。', '',
-          '| 年份 | 地区 | 科目 | 卷型 | 状态 | 依据 |', '| :---: | --- | --- | --- | --- | --- |']
+          '| 优先级 | 年份 | 地区 | 科目 | 卷型 | 状态 | 依据 |', '| :---: | :---: | --- | --- | --- | --- | --- |']
     rank = {'缺卷': 0, '无独立考试': 1}
-    for p in sorted(papers, key=lambda p: (rank[p['status']], -p['year'], p['area'], p['subject'], p['variant'] or '')):
+    for p in sorted(papers, key=lambda p: (rank[p['status']], priority(p['area'], p['year']), -p['year'], p['area'], p['subject'], p['variant'] or '')):
         basis = p['basis']
         basis = f'[招录公告]({basis})' if basis.startswith('http') else basis
-        L.append(f"| {p['year']} | {p['area']} | {p['subject']} | {p['variant'] or '待定'} | {p['status']} | {basis} |")
+        pr = priority(p['area'], p['year']) if p['status'] == '缺卷' else '—'
+        L.append(f"| {pr} | {p['year']} | {p['area']} | {p['subject']} | {p['variant'] or '待定'} | {p['status']} | {basis} |")
     L += ['', '完整台账见 [`catalog/exam-slots.jsonl`](../catalog/exam-slots.jsonl)（含已收录卷次）；未收录部分维护于 [`catalog/uncollected-slots.jsonl`](../catalog/uncollected-slots.jsonl)。', '']
     # 行测
-    L += ['## 二、行测局部缺口', '', '| 试卷 | 缺题干 | 缺选项 | 缺答案 |', '| --- | --- | --- | --- |']
-    for path, v in sorted(xingce.items(), key=lambda x: (-sum(map(len, x[1].values())), x[0])):
+    meta = {r['path']: (r['area'], r['year']) for r in rows}
+    L += ['## 二、行测局部缺口', '', '| 优先级 | 试卷 | 缺题干 | 缺选项 | 缺答案 |', '| :---: | --- | --- | --- | --- |']
+    for path, v in sorted(xingce.items(), key=lambda x: (priority(*meta[x[0]]), -sum(map(len, x[1].values())), x[0])):
         cell = lambda q: f'{len(q)} 题：{ranges(q)}' if q else '—'
-        L.append(f"| [{name(path)}](../{path}) | {cell(v['stem'])} | {cell(v['option'])} | {cell(v['answer'])} |")
+        L.append(f"| {priority(*meta[path])} | [{name(path)}](../{path}) | {cell(v['stem'])} | {cell(v['option'])} | {cell(v['answer'])} |")
     L += ['']
     # 申论
-    L += ['## 三、申论局部缺口', '', '| 试卷 | 缺题目 | 缺材料 | 缺答案 |', '| --- | --- | --- | --- |']
-    for path, v in sorted(shenlun.items()):
+    L += ['## 三、申论局部缺口', '', '| 优先级 | 试卷 | 缺题目 | 缺材料 | 缺答案 |', '| :---: | --- | --- | --- | --- |']
+    for path, v in sorted(shenlun.items(), key=lambda x: (priority(*meta[x[0]]), x[0])):
         cell = lambda q, u='题': f'第 {ranges(q)} {u}' if q else '—'
         mat = f"材料 {ranges(v['material'])}" if v['material'] else '—'
-        L.append(f"| [{name(path)}](../{path}) | {cell(v['question'])} | {mat} | {cell(v['answer'])} |")
+        L.append(f"| {priority(*meta[path])} | [{name(path)}](../{path}) | {cell(v['question'])} | {mat} | {cell(v['answer'])} |")
     L += ['', '## 补录原则', '',
           '- 只采用同年、同地区、同科目、同卷型且题序一致的来源；补录后在文件头 `来源清单` 中登记来源与所补题号。',
           '- 缺失内容不以其他卷型、默认答案或生成内容替代。',
@@ -596,8 +647,9 @@ def paper_summary(rows, grade, new, unverified):
     return text
 
 
-def readme_block(new, old, summary_line=''):
-    lines = ['<!-- gwy:gaps:start -->'] + ([summary_line, ''] if summary_line else []) + overview(new, old) + [
+def readme_block(new, old, summary_line='', prio=()):
+    lines = ['<!-- gwy:gaps:start -->'] + ([summary_line, ''] if summary_line else []) + overview(new, old) + (
+        ['', '**补录优先级**：' + PRIORITY_NOTE, ''] + list(prio) if prio else []) + [
         '', '上表按题计：行测每题只计最严重的一级，一份卷可同时出现在多行，各行卷数不能相加。缺卷以实际举行的考试为准，仅统计 2016–2026 年；2015 年及以前只统计已收录试卷的局部缺口。'
         f'逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148]({ISSUES}148)。', '<!-- gwy:gaps:end -->']
     return '\n'.join(lines)
@@ -617,7 +669,8 @@ def main():
     health = health_svg(data[0], grades(data[0], data[1], data[2]), data[3])
     health_block = '<!-- gwy:health:start -->\n' + scroll_img('docs/assets/health.svg', '逐卷分布与健康度：2008–2026 年各地区各年份的每份试卷及其状态', health) + '\n<!-- gwy:health:end -->'
     line = paper_summary(data[0], grades(data[0], data[1], data[2]), s_new, s['unverified'])
-    for name, block in (('gaps', readme_block(s_new, s_old, line)), ('coverage', coverage_block(cov)), ('health', health_block)):
+    prio = priority_table(*data)
+    for name, block in (('gaps', readme_block(s_new, s_old, line, prio)), ('coverage', coverage_block(cov)), ('health', health_block)):
         readme = re.sub(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', lambda _: block, readme, flags=re.S)
     outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme,
                ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov),
