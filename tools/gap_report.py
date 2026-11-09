@@ -163,8 +163,8 @@ def priority(area, year):
     return 'P3' if recent else 'P4'
 
 
-def priority_table(rows, xingce, shenlun, papers):
-    """按优先级汇总：缺卷份数、有局部缺口的卷数与各类缺题数。"""
+def priority_counts(rows, xingce, shenlun, papers):
+    """按优先级汇总：{级别或级别+浙江: Counter(missing/stem/option/answer/doubt)}，{同键: 有局部缺口的卷路径集合}。"""
     meta = {r['path']: (r['area'], r['year']) for r in rows}
     c = defaultdict(Counter)
     partial = defaultdict(set)
@@ -186,6 +186,12 @@ def priority_table(rows, xingce, shenlun, papers):
     for path, qs in ANSWER_UNVERIFIED.items():
         if path in meta:
             add(*meta[path], 'doubt', len(qs), path)
+    return c, partial
+
+
+def priority_table(rows, xingce, shenlun, papers):
+    """按优先级汇总：缺卷份数、有局部缺口的卷数与各类缺题数。"""
+    c, partial = priority_counts(rows, xingce, shenlun, papers)
     n = lambda v, u='': f'{v:,}{u}' if v else '—'
     cells = lambda k: (f"{n(c[k]['missing'], ' 卷')} | {n(len(partial[k]), ' 卷')} | {n(c[k]['stem'], ' 题')} | "
                        f"{n(c[k]['option'])} | {n(c[k]['answer'], ' 题')} | {n(c[k]['doubt'], ' 题')}")
@@ -666,11 +672,64 @@ def paper_summary(rows, grade, new, unverified):
     return text
 
 
-def readme_block(new, old, summary_line='', prio=()):
-    lines = ['<!-- gwy:gaps:start -->'] + ([summary_line, ''] if summary_line else []) + overview(new, old) + (
-        ['', '**补录优先级**：' + PRIORITY_NOTE, ''] + list(prio) if prio else []) + [
-        '', '上表按题计：行测每题只计最严重的一级，一份卷可同时出现在多行，各行卷数不能相加。缺卷以实际举行的考试为准，仅统计 2016–2026 年；2015 年及以前只统计已收录试卷的局部缺口。'
-        f'逐卷明细见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148]({ISSUES}148)。', '<!-- gwy:gaps:end -->']
+def gaps_svg(rows, xingce, shenlun, papers, s):
+    """首页缺口卡片：P1–P4 四张卡片，每张给缺卷与卷内缺题；重点地区两级内单列浙江；底部为缺口类型。"""
+    c, partial = priority_counts(rows, xingce, shenlun, papers)
+    W, H = 920, 318
+    cw, gap, x0, y0, ch = 205, 15, 24, 74, 180
+    tone = {'P1': '#e11d48', 'P2': '#f97316', 'P3': '#2563eb', 'P4': '#64748b'}
+    scope = {'P1': ('重点地区', '2016–2026'), 'P2': ('重点地区', '2015 年及以前'),
+             'P3': ('其他地区', '2016–2026'), 'P4': ('其他地区', '2015 年及以前')}
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">',
+           f'<rect width="{W}" height="{H}" rx="16" fill="#ffffff"/>',
+           '<text x="24" y="38" font-size="20" font-weight="800" fill="#0f172a">缺口与补录优先级</text>',
+           '<text x="24" y="60" font-size="12.5" fill="#64748b">按优先级从高到低补录；浙江为重中之重，在重点地区内单独列出</text>']
+    for i, (k, _) in enumerate(PRIORITIES):
+        x = x0 + i * (cw + gap)
+        v = c[k]; parts = len(partial[k]); col = tone[k]
+        empty = not (v['missing'] or parts)
+        out.append(f'<clipPath id="card{i}"><rect x="{x}" y="{y0}" width="{cw}" height="{ch}" rx="14"/></clipPath>')
+        out.append(f'<rect x="{x}" y="{y0}" width="{cw}" height="{ch}" rx="14" fill="#f8fafc"/>')
+        out.append(f'<rect x="{x}" y="{y0}" width="{cw}" height="5" fill="{col}" clip-path="url(#card{i})"/>')
+        out.append(f'<rect x="{x + .5}" y="{y0 + .5}" width="{cw - 1}" height="{ch - 1}" rx="13.5" fill="none" stroke="#e2e8f0"/>')
+        out.append(f'<rect x="{x + 16}" y="{y0 + 20}" width="34" height="22" rx="11" fill="{col}"/>')
+        out.append(f'<text x="{x + 33}" y="{y0 + 35.5}" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">{k}</text>')
+        out.append(f'<text x="{x + 60}" y="{y0 + 30}" font-size="13" font-weight="700" fill="#0f172a">{scope[k][0]}</text>')
+        out.append(f'<text x="{x + 60}" y="{y0 + 46}" font-size="11.5" fill="#64748b">{scope[k][1]}</text>')
+        if empty:
+            out.append(f'<text x="{x + cw / 2}" y="{y0 + 110}" font-size="20" font-weight="800" fill="#cbd5e1" text-anchor="middle">无缺口</text>')
+        else:
+            out.append(f'<text x="{x + 16}" y="{y0 + 92}" font-size="34" font-weight="800" fill="#0f172a">{v["missing"]}</text>')
+            out.append(f'<text x="{x + 16 + len(str(v["missing"])) * 21 + 8}" y="{y0 + 92}" font-size="13" fill="#475569">份缺卷</text>')
+            out.append(f'<text x="{x + 16}" y="{y0 + 120}" font-size="13" fill="#334155">卷内缺题 <tspan font-weight="800" fill="#0f172a">{v["stem"] + v["option"]}</tspan> 题'
+                       f' · <tspan font-weight="800" fill="#0f172a">{parts}</tspan> 卷</text>')
+        if k in ('P1', 'P2'):
+            z = c[k + KEY_AREA]; zp = len(partial[k + KEY_AREA])
+            out.append(f'<rect x="{x + 10}" y="{y0 + ch - 44}" width="{cw - 20}" height="32" rx="9" fill="#fef3c7"/>')
+            txt = (f'浙江 缺卷 {z["missing"]} · 缺题 {z["stem"] + z["option"]}' if (z['missing'] or zp) else '浙江 无缺口')
+            out.append(f'<text x="{x + 22}" y="{y0 + ch - 23}" font-size="12.5" font-weight="700" fill="#92400e">★ {txt}</text>')
+    yb = y0 + ch + 34
+    items = [('行测缺题干', s['x_stem'], '题'), ('行测缺选项', s['x_option'], '题'), ('行测缺答案', s['x_answer'], '题'),
+             ('申论缺题目、材料、答案', s['s_question'] + s['s_material'] + s['s_answer'], ''), ('答案对应存疑', s['unverified'], '题')]
+    out.append(f'<text x="24" y="{yb}" font-size="12.5" fill="#64748b">缺口类型</text>')
+    xx = 90
+    for label, v, u in items:
+        t = f'{label} {v:,}{(" " + u) if u and v else ""}' if v else f'{label} 0'
+        w = 22 + sum(12.5 if ord(ch_) > 255 else 7 for ch_ in t)
+        out.append(f'<rect x="{xx}" y="{yb - 16}" width="{w:.0f}" height="24" rx="12" fill="{"#fff1f2" if v else "#f1f5f9"}"/>')
+        out.append(f'<text x="{xx + 11}" y="{yb}" font-size="12" fill="{"#9f1239" if v else "#94a3b8"}">{t}</text>')
+        xx += w + 8
+    out.append('</svg>')
+    return '\n'.join(out) + '\n'
+
+
+def readme_block(new, summary_line):
+    lines = ['<!-- gwy:gaps:start -->',
+             '<p align="center"><img src="docs/assets/gaps.svg" alt="缺口与补录优先级" width="100%"></p>', '',
+             summary_line, '',
+             f'重点地区：国考、浙江、江苏、上海、北京、天津、广东、广州、深圳、福建。缺卷只统计 2016–2026 年。'
+             f'逐卷明细与分类统计见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148]({ISSUES}148)。',
+             '<!-- gwy:gaps:end -->']
     return '\n'.join(lines)
 
 
@@ -687,12 +746,14 @@ def main():
     s_old = summary(data[0], data[1], data[2], data[3], 0, 2015)
     health = health_svg(data[0], grades(data[0], data[1], data[2]), data[3])
     health_block = '<!-- gwy:health:start -->\n' + scroll_img('docs/assets/health.svg', '逐卷分布与健康度：2008–2026 年各地区各年份的每份试卷及其状态', health) + '\n<!-- gwy:health:end -->'
-    line = paper_summary(data[0], grades(data[0], data[1], data[2]), s_new, s['unverified'])
-    prio = priority_table(*data)
-    for name, block in (('gaps', readme_block(s_new, s_old, line, prio)), ('coverage', coverage_block(cov)), ('health', health_block)):
+    cnt = Counter(grades(data[0], data[1], data[2]).values())
+    line = (f"已收录 **{len(data[0]):,}** 份试卷，其中 **{cnt[0]:,}** 份完整、**{len(data[0]) - cnt[0]}** 份有局部缺口；"
+            f"2016–2026 年另有 **{s_new['missing']}** 份应有试卷尚未收录。")
+    for name, block in (('gaps', readme_block(s_new, line)), ('coverage', coverage_block(cov)), ('health', health_block)):
         readme = re.sub(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', lambda _: block, readme, flags=re.S)
     outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme,
                ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov),
+               ROOT / 'docs/assets/gaps.svg': gaps_svg(*data, s_new),
                ROOT / 'docs/assets/health.svg': health_svg(data[0], grades(data[0], data[1], data[2]), data[3]),
                ROOT / 'catalog/exam-slots.jsonl': ''.join(json.dumps(r, ensure_ascii=False, sort_keys=True) + '\n' for r in cov['ledger'])}
     stale = [p for p, c in outputs.items() if not p.exists() or p.read_text(encoding='utf-8') != c]
