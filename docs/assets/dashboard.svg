@@ -16,14 +16,14 @@
 <text x="276" y="186" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">258</text>
 <rect x="312" y="16" width="280" height="228" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
 <text x="332" y="48" font-size="15" font-weight="700" fill="#0f172a">科目构成</text>
-<text x="332" y="96" font-size="30" font-weight="800" fill="#0f172a">1,670</text>
-<text x="332" y="118" font-size="12" fill="#64748b">份试卷 · 89,852 道题</text>
+<text x="332" y="96" font-size="30" font-weight="800" fill="#0f172a">1,669</text>
+<text x="332" y="118" font-size="12" fill="#64748b">份试卷 · 89,732 道题</text>
 <rect x="332" y="140" width="240" height="16" rx="8" fill="#f59e0b"/>
-<rect x="332" y="140" width="105.8" height="16" rx="8" fill="#3b82f6"/>
-<rect x="429.8" y="140" width="8" height="16" fill="#3b82f6"/>
+<rect x="332" y="140" width="105.7" height="16" rx="8" fill="#3b82f6"/>
+<rect x="429.7" y="140" width="8" height="16" fill="#3b82f6"/>
 <rect x="332" y="176" width="12" height="12" rx="3" fill="#3b82f6"/>
 <text x="352" y="186" font-size="13" fill="#334155">行测</text>
-<text x="572" y="186" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">736 份 · 44%</text>
+<text x="572" y="186" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">735 份 · 44%</text>
 <rect x="332" y="204" width="12" height="12" rx="3" fill="#f59e0b"/>
 <text x="352" y="214" font-size="13" fill="#334155">申论</text>
 <text x="572" y="214" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">934 份 · 56%</text>
