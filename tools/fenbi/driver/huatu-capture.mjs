@@ -41,7 +41,7 @@ export function args(argv) {
     else if (k === '--cdp') out.cdp = argv[++i];
     else throw new Error(`未知参数 ${k}`);
   }
-  if (!out.login && (!/^\d+$/.test(out.paperId ?? '') || !out.url)) throw new Error('需要 --paper-id <数字> 与 --url <解析页地址>，或 --login');
+  if (!out.login && (!/^[A-Za-z0-9_-]+$/.test(out.paperId ?? '') || !out.url)) throw new Error('需要 --paper-id <字母数字编号> 与 --url <解析页地址>，或 --login');
   if (out.cdp && !/^https?:\/\/(127\.0\.0\.1|localhost):\d+\/?$/.test(out.cdp)) throw new Error('--cdp 只接受本机地址，如 http://127.0.0.1:9222');
   if (out.login && out.cdp) throw new Error('--cdp 模式请直接在自己启动的 Chrome 里登录，不需要 --login');
   if (!/^[\w-]+$/.test(out.profile)) throw new Error('--profile 只能含字母、数字、下划线和连字符');
