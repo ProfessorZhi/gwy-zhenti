@@ -1,60 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="318" viewBox="0 0 920 318" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
-<rect width="920" height="318" rx="16" fill="#ffffff"/>
-<text x="24" y="38" font-size="20" font-weight="800" fill="#0f172a">缺口与补录优先级</text>
-<text x="24" y="60" font-size="12.5" fill="#64748b">按优先级从高到低补录；浙江为重中之重，在重点地区内单独列出</text>
-<clipPath id="card0"><rect x="24" y="74" width="205" height="180" rx="14"/></clipPath>
-<rect x="24" y="74" width="205" height="180" rx="14" fill="#f8fafc"/>
-<rect x="24" y="74" width="205" height="5" fill="#e11d48" clip-path="url(#card0)"/>
-<rect x="24.5" y="74.5" width="204" height="179" rx="13.5" fill="none" stroke="#e2e8f0"/>
-<rect x="40" y="94" width="34" height="22" rx="11" fill="#e11d48"/>
-<text x="57" y="109.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">P1</text>
-<text x="84" y="104" font-size="13" font-weight="700" fill="#0f172a">重点地区</text>
-<text x="84" y="120" font-size="11.5" fill="#64748b">2016–2026</text>
-<text x="40" y="166" font-size="34" font-weight="800" fill="#0f172a">13</text>
-<text x="90" y="166" font-size="13" fill="#475569">份缺卷</text>
-<text x="40" y="194" font-size="13" fill="#334155">卷内缺题 <tspan font-weight="800" fill="#0f172a">94</tspan> 题 · <tspan font-weight="800" fill="#0f172a">17</tspan> 卷</text>
-<rect x="34" y="210" width="185" height="32" rx="9" fill="#fef3c7"/>
-<text x="46" y="231" font-size="12.5" font-weight="700" fill="#92400e">★ 浙江 缺卷 4 · 缺题 2</text>
-<clipPath id="card1"><rect x="244" y="74" width="205" height="180" rx="14"/></clipPath>
-<rect x="244" y="74" width="205" height="180" rx="14" fill="#f8fafc"/>
-<rect x="244" y="74" width="205" height="5" fill="#f97316" clip-path="url(#card1)"/>
-<rect x="244.5" y="74.5" width="204" height="179" rx="13.5" fill="none" stroke="#e2e8f0"/>
-<rect x="260" y="94" width="34" height="22" rx="11" fill="#f97316"/>
-<text x="277" y="109.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">P2</text>
-<text x="304" y="104" font-size="13" font-weight="700" fill="#0f172a">重点地区</text>
-<text x="304" y="120" font-size="11.5" fill="#64748b">2015 年及以前</text>
-<text x="346.5" y="184" font-size="20" font-weight="800" fill="#cbd5e1" text-anchor="middle">无缺口</text>
-<rect x="254" y="210" width="185" height="32" rx="9" fill="#fef3c7"/>
-<text x="266" y="231" font-size="12.5" font-weight="700" fill="#92400e">★ 浙江 无缺口</text>
-<clipPath id="card2"><rect x="464" y="74" width="205" height="180" rx="14"/></clipPath>
-<rect x="464" y="74" width="205" height="180" rx="14" fill="#f8fafc"/>
-<rect x="464" y="74" width="205" height="5" fill="#2563eb" clip-path="url(#card2)"/>
-<rect x="464.5" y="74.5" width="204" height="179" rx="13.5" fill="none" stroke="#e2e8f0"/>
-<rect x="480" y="94" width="34" height="22" rx="11" fill="#2563eb"/>
-<text x="497" y="109.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">P3</text>
-<text x="524" y="104" font-size="13" font-weight="700" fill="#0f172a">其他地区</text>
-<text x="524" y="120" font-size="11.5" fill="#64748b">2016–2026</text>
-<text x="480" y="166" font-size="34" font-weight="800" fill="#0f172a">54</text>
-<text x="530" y="166" font-size="13" fill="#475569">份缺卷</text>
-<text x="480" y="194" font-size="13" fill="#334155">卷内缺题 <tspan font-weight="800" fill="#0f172a">164</tspan> 题 · <tspan font-weight="800" fill="#0f172a">41</tspan> 卷</text>
-<clipPath id="card3"><rect x="684" y="74" width="205" height="180" rx="14"/></clipPath>
-<rect x="684" y="74" width="205" height="180" rx="14" fill="#f8fafc"/>
-<rect x="684" y="74" width="205" height="5" fill="#64748b" clip-path="url(#card3)"/>
-<rect x="684.5" y="74.5" width="204" height="179" rx="13.5" fill="none" stroke="#e2e8f0"/>
-<rect x="700" y="94" width="34" height="22" rx="11" fill="#64748b"/>
-<text x="717" y="109.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">P4</text>
-<text x="744" y="104" font-size="13" font-weight="700" fill="#0f172a">其他地区</text>
-<text x="744" y="120" font-size="11.5" fill="#64748b">2015 年及以前</text>
-<text x="786.5" y="184" font-size="20" font-weight="800" fill="#cbd5e1" text-anchor="middle">无缺口</text>
-<text x="24" y="288" font-size="12.5" fill="#64748b">缺口类型</text>
-<rect x="90" y="272" width="132" height="24" rx="12" fill="#fff1f2"/>
-<text x="101" y="288" font-size="12" fill="#9f1239">行测缺题干 254 题</text>
-<rect x="230.0" y="272" width="118" height="24" rx="12" fill="#fff1f2"/>
-<text x="241.0" y="288" font-size="12" fill="#9f1239">行测缺选项 4 题</text>
-<rect x="356.0" y="272" width="98" height="24" rx="12" fill="#f1f5f9"/>
-<text x="367.0" y="288" font-size="12" fill="#94a3b8">行测缺答案 0</text>
-<rect x="462.5" y="272" width="174" height="24" rx="12" fill="#f1f5f9"/>
-<text x="473.5" y="288" font-size="12" fill="#94a3b8">申论缺题目、材料、答案 0</text>
-<rect x="644.0" y="272" width="138" height="24" rx="12" fill="#fff1f2"/>
-<text x="655.0" y="288" font-size="12" fill="#9f1239">答案对应存疑 18 题</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="216" viewBox="0 0 920 216" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="920" height="216" rx="16" fill="#ffffff"/>
+<clipPath id="card0"><rect x="24" y="18" width="205" height="180" rx="14"/></clipPath>
+<rect x="24" y="18" width="205" height="180" rx="14" fill="#f8fafc"/>
+<rect x="24" y="18" width="205" height="5" fill="#e11d48" clip-path="url(#card0)"/>
+<rect x="24.5" y="18.5" width="204" height="179" rx="13.5" fill="none" stroke="#e2e8f0"/>
+<rect x="40" y="38" width="34" height="22" rx="11" fill="#e11d48"/>
+<text x="57" y="53.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">P1</text>
+<text x="84" y="48" font-size="13" font-weight="700" fill="#0f172a">重点地区</text>
+<text x="84" y="64" font-size="11.5" fill="#64748b">2016–2026</text>
+<text x="40" y="110" font-size="34" font-weight="800" fill="#0f172a">13</text>
+<text x="90" y="110" font-size="13" fill="#475569">份缺卷</text>
+<text x="40" y="138" font-size="13" fill="#334155">缺题 <tspan font-weight="800" fill="#0f172a">94</tspan> 题 · <tspan font-weight="800" fill="#0f172a">16</tspan> 卷</text>
+<rect x="34" y="154" width="185" height="32" rx="9" fill="#fef3c7"/>
+<text x="46" y="175" font-size="12.5" font-weight="700" fill="#92400e">★ 其中浙江：缺卷 4，缺题 2</text>
+<clipPath id="card1"><rect x="244" y="18" width="205" height="180" rx="14"/></clipPath>
+<rect x="244" y="18" width="205" height="180" rx="14" fill="#f8fafc"/>
+<rect x="244" y="18" width="205" height="5" fill="#f97316" clip-path="url(#card1)"/>
+<rect x="244.5" y="18.5" width="204" height="179" rx="13.5" fill="none" stroke="#e2e8f0"/>
+<rect x="260" y="38" width="34" height="22" rx="11" fill="#f97316"/>
+<text x="277" y="53.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">P2</text>
+<text x="304" y="48" font-size="13" font-weight="700" fill="#0f172a">重点地区</text>
+<text x="304" y="64" font-size="11.5" fill="#64748b">2015 年及以前</text>
+<text x="346.5" y="118" font-size="20" font-weight="800" fill="#cbd5e1" text-anchor="middle">无缺题</text>
+<text x="346.5" y="140" font-size="12" fill="#94a3b8" text-anchor="middle">缺卷未统计</text>
+<rect x="254" y="154" width="185" height="32" rx="9" fill="#fef3c7"/>
+<text x="266" y="175" font-size="12.5" font-weight="700" fill="#92400e">★ 其中浙江：无缺题</text>
+<clipPath id="card2"><rect x="464" y="18" width="205" height="180" rx="14"/></clipPath>
+<rect x="464" y="18" width="205" height="180" rx="14" fill="#f8fafc"/>
+<rect x="464" y="18" width="205" height="5" fill="#2563eb" clip-path="url(#card2)"/>
+<rect x="464.5" y="18.5" width="204" height="179" rx="13.5" fill="none" stroke="#e2e8f0"/>
+<rect x="480" y="38" width="34" height="22" rx="11" fill="#2563eb"/>
+<text x="497" y="53.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">P3</text>
+<text x="524" y="48" font-size="13" font-weight="700" fill="#0f172a">其他地区</text>
+<text x="524" y="64" font-size="11.5" fill="#64748b">2016–2026</text>
+<text x="480" y="110" font-size="34" font-weight="800" fill="#0f172a">54</text>
+<text x="530" y="110" font-size="13" fill="#475569">份缺卷</text>
+<text x="480" y="138" font-size="13" fill="#334155">缺题 <tspan font-weight="800" fill="#0f172a">164</tspan> 题 · <tspan font-weight="800" fill="#0f172a">41</tspan> 卷</text>
+<clipPath id="card3"><rect x="684" y="18" width="205" height="180" rx="14"/></clipPath>
+<rect x="684" y="18" width="205" height="180" rx="14" fill="#f8fafc"/>
+<rect x="684" y="18" width="205" height="5" fill="#64748b" clip-path="url(#card3)"/>
+<rect x="684.5" y="18.5" width="204" height="179" rx="13.5" fill="none" stroke="#e2e8f0"/>
+<rect x="700" y="38" width="34" height="22" rx="11" fill="#64748b"/>
+<text x="717" y="53.5" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">P4</text>
+<text x="744" y="48" font-size="13" font-weight="700" fill="#0f172a">其他地区</text>
+<text x="744" y="64" font-size="11.5" fill="#64748b">2015 年及以前</text>
+<text x="786.5" y="118" font-size="20" font-weight="800" fill="#cbd5e1" text-anchor="middle">无缺题</text>
+<text x="786.5" y="140" font-size="12" fill="#94a3b8" text-anchor="middle">缺卷未统计</text>
 </svg>
