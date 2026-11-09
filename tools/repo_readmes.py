@@ -62,14 +62,14 @@ def stats(rows):
         'xingce': sum(r['subject'] == '行测' for r in rows),
         'shenlun': sum(r['subject'] == '申论' for r in rows),
         'questions': sum(r['_questions'] for r in rows),
-        'areas': len({r['area'] for r in rows}),
+        'areas': len({r['area'] for r in rows} - {'国考', '公安招警和公检法'}),
         'years': (years[0], years[-1]),
     }
 
 
 def banner_svg(s):
-    tiles = [(f"{s['papers']:,}", '份试卷'), (f"{s['questions']:,}", '道题位'),
-             (str(s['areas']), '个地区'), (f"{s['years'][0]}–{s['years'][1]}", '年份跨度')]
+    tiles = [(f"{s['papers']:,}", '份试卷'), (f"{s['questions']:,}", '道题'),
+             (str(s['areas']), '个省考地区'), (f"{s['years'][0]}–{s['years'][1]}", '年份跨度')]
     w, h = 1200, 300
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" font-family="{FONT}">',
            '<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">'
@@ -121,9 +121,9 @@ def year_table(rows, base):
 def area_page(area, rows, base, title, back):
     s = stats(rows)
     missing = sum(r['_missing'] for r in rows)
-    note = f'，其中 {missing} 个题位来源未收录（以 <sup>缺N</sup> 标注）' if missing else ''
+    note = f'，其中 {missing} 道题尚未收录（以 <sup>缺N</sup> 标注）' if missing else ''
     lines = [f'# {title}', '',
-             f"> {s['papers']} 份试卷（行测 {s['xingce']} · 申论 {s['shenlun']}）· {s['years'][0]}–{s['years'][1]} · {s['questions']:,} 个题位{note}。",
+             f"> {s['papers']} 份试卷（行测 {s['xingce']} · 申论 {s['shenlun']}）· {s['years'][0]}–{s['years'][1]} · {s['questions']:,} 道题{note}。",
              '', f'{back}', '', '<!-- 由 tools/repo_readmes.py 生成，勿手改 -->', '']
     lines += year_table(rows, base)
     lines += ['', '每道题后附折叠的参考答案与解析；题图与试卷存放于同一目录。', '']
@@ -148,7 +148,7 @@ def province_index(by_area):
              '[← 返回首页](../README.md) · [国考](../国考/README.md) · [全部试卷索引](../catalog/INDEX.md)', '',
              '<!-- 由 tools/repo_readmes.py 生成，勿手改 -->', '']
     lines += grouped({a: v for a, v in by_area.items() if a != '国考'}, lambda a: link(a) + '/')
-    lines += ['', '| 地区 | 份数 | 行测 | 申论 | 年份 | 缺题位 |', '| --- | ---: | ---: | ---: | :---: | ---: |']
+    lines += ['', '| 地区 | 份数 | 行测 | 申论 | 年份 | 缺题 |', '| --- | ---: | ---: | ---: | :---: | ---: |']
     for area in sorted((a for a in by_area if a != '国考'), key=lambda a: (-len(by_area[a]), a)):
         s = stats(by_area[area])
         miss = sum(r['_missing'] for r in by_area[area])
