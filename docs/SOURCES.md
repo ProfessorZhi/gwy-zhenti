@@ -12,7 +12,7 @@
 | 来源 | 真正的数据形式 | 可验证的范围与价值 | 风险与取舍 |
 | --- | --- | --- | --- |
 | [ERRRC/xingcezhenti](https://github.com/ERRRC/xingcezhenti) | **Markdown + 本地 PNG**，按模块和试卷组织，含题干/答案/解析 | README 自报 **2016—2026、515 卷、58,890 题次、39,463 张图**；已抽查 2016 浙江 A 卷正文，图片相对路径、题号和答案存在 | 无明确标准 LICENSE；图片缺失清单含两张公式图片；“官方解析”是源站标签，不能当官方权威认证 |
-| [linfukai186-arch/gongkao-tiku](https://github.com/linfukai186-arch/gongkao-tiku) | 按年分片的结构化 **JSON** | 国考行测索引覆盖 **2000—2026**、省考行测索引覆盖 **2004—2025**；尤其用于老年份补缺与卷型对照 | 数据源与二次分发权限待核查；*国考申论索引中的 470 条全部属于名称含模考的卷组*；省考申论也混有真题/模考，不得直接按总数导入 |
+| [linfukai186-arch/gongkao-tiku](https://github.com/linfukai186-arch/gongkao-tiku) | 按年分片的结构化 **JSON** | 国考行测索引覆盖 **2000—2026**、省考行测索引覆盖 **2004—2025**；尤其用于老年份补缺与卷型对照 | 数据源与二次分发权限未确认；*国考申论索引中的 470 条全部属于名称含模考的卷组*；省考申论也混有真题/模考，不得直接按总数导入 |
 | [zzcc-nb/gongkao-tiku](https://github.com/zzcc-nb/gongkao-tiku) | **逐题 Markdown**，包含部分完整材料、参考答案、答题演示 | README 自报 **3,852 道申论题**；实际抽样含完整给定资料、参考答案和讲解，可用于补充申论题型与材料 | **包含 2027 模考**，须严格按考试真实年份、地区、卷别过滤；单题不等于完整试卷；来源说明为粉笔题库，版权限制需要核查 |
 | [shiwuooo/shangantong-papers-v2-c1](https://github.com/shiwuooo/shangantong-papers-v2-c1)、[c2](https://github.com/shiwuooo/shangantong-papers-v2-c2) | 每卷 **HTML + assets** | 自述包含国省考历年试卷，可转为可读 Markdown 和图文校验材料 | 同一系列的两个分片，只算**一个独立来源家族**；真实年份及版权、题图完整率尚未统计 |
 | [Yaoyuan-Zhang319/AdministrativeAptitudeTest](https://github.com/Yaoyuan-Zhang319/AdministrativeAptitudeTest) | **PDF**（国考、省考、选调分目录） | 已见国考 **2000—** 的历史 PDF，覆盖多个省份，可用于缺卷或争议题原件对照 | **不是 Markdown 源**；只能按缺口定向使用，不执行整库 PDF 重转 |
@@ -27,7 +27,7 @@
 - [ERRRC/kaogong-shuati](https://github.com/ERRRC/kaogong-shuati)：题库 APP，包含行测、申论和 SQLite 数据；README 表明内容仅限个人学习、不允许二次分发。可参考组织形式，不能直接整库并入。
 - [HuaXiLF/shenlun-trainer](https://github.com/HuaXiLF/shenlun-trainer)：小规模申论训练语料和方法体系，不是全国申论完整原卷。
 - [yshhsy/shenlunxuexi](https://github.com/yshhsy/shenlunxuexi)：国考申论训练 JS，明确采用**浓缩、改写后的给定材料**，不能用来替代原卷全文。
-- [shiwuooo/qiushi-shenlun](https://github.com/shiwuooo/qiushi-shenlun)：申论训练站点，含静态前端；真题整卷及材料完整率尚待核实。
+- [shiwuooo/qiushi-shenlun](https://github.com/shiwuooo/qiushi-shenlun)：申论训练站点，含静态前端；真题整卷及材料完整率未经本库核对，未采用。
 - 任何与 [ERRRC/xingcezhenti](https://github.com/ERRRC/xingcezhenti) 同内容的 fork（例如 `r1172464137/xingcezhenti`），仅计版本镜像，不计独立来源。
 
 ## 三、覆盖统计的正确口径
@@ -191,7 +191,7 @@
 | 其他（交叉补答案 3、上岸通 1、真题册转写 1、官方解析 PDF 1 等） | 13 | 见各卷 `校验状态` |
 | **合计** | **1,186** | 与 `work/manifest.jsonl` 行数一致 |
 
-**已知未解决的上游缺陷**（本轮**记录不改**，按用户「未解决的硬问题记为待核实后继续」执行）：
+**已知未解决的上游缺陷**（本轮**只记录、不修改**）：
 源内硬截断 427 份、`回忆版不全`（缺资料分析部分）1 份、`★来源无图片·题面未完整` 2 份、
 答案键整体偏移 1 份、`答案 104/120`、`117/120`、`123/125` 三份（已逐卷写明“未唯一命中者列为待修，
 不按题号套用”）。这些缺口的补全需要新的上游来源，不在本轮范围内。

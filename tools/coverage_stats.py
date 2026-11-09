@@ -107,7 +107,7 @@ def summarize(rows):
 
 
 def load_slots():
-    """未收录卷次台账（缺卷 / 待核 / 无独立考试），按 (地区, 年份) 汇总状态。"""
+    """未收录卷次台账（缺卷 / 无独立考试），按 (地区, 年份) 汇总状态。"""
     path = os.path.join(ROOT, 'catalog/uncollected-slots.jsonl')
     out = collections.defaultdict(collections.Counter)
     if os.path.exists(path):
@@ -120,8 +120,8 @@ def load_slots():
 
 
 def heatmap_svg(stats):
-    """地区 × 年份热力图：有卷的格子为收录份数；无卷的格子按槽位台账显示缺卷、待核、无独立考试或不统计。
-    右侧为地区合计，底部为年份合计；有卷但同年另有缺卷或待核的格子加角标。"""
+    """地区 × 年份热力图：有卷的格子为收录份数；无卷的格子按槽位台账显示缺卷、无独立考试或不统计。
+    右侧为地区合计，底部为年份合计；有卷但同年另有缺卷的格子加角标。"""
     slots = load_slots()
     areas = sorted(set(stats['by_area']) | {a for a, _ in slots},
                    key=lambda a: ({'L1': 0, 'L2': 1}.get(stats['by_area'].get(a, {}).get('tier'), 2), a))
@@ -132,7 +132,7 @@ def heatmap_svg(stats):
     height = top + len(areas) * ch + 128
     palette = ['#eff6ff', '#dbeafe', '#93c5fd', '#3b82f6', '#1d4ed8', '#1e3a8a']
     color = lambda n: palette[min(n, 5)]
-    MISSING, PENDING, NONE, UNCOUNTED = '#334155', '#c4b5fd', '#ffffff', '#f8fafc'
+    MISSING, NONE, UNCOUNTED = '#334155', '#ffffff', '#f8fafc'
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" font-family="{FONT}">',
            '<defs><pattern id="none" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
            '<line x1="0" y1="0" x2="0" y2="5" stroke="#cbd5e1" stroke-width="1.2"/></pattern></defs>',
@@ -162,12 +162,10 @@ def heatmap_svg(stats):
             if n:
                 out.append(rect.format(color(n)))
                 label(n, '#ffffff' if n >= 3 else '#1e3a8a')
-                if st['缺卷'] or st['待核']:
-                    out.append(f'<circle cx="{x + cw - 7}" cy="{y + 7}" r="3.2" fill="{MISSING if st["缺卷"] else "#8b5cf6"}" stroke="#ffffff" stroke-width="1"/>')
+                if st['缺卷']:
+                    out.append(f'<circle cx="{x + cw - 7}" cy="{y + 7}" r="3.2" fill="{MISSING}" stroke="#ffffff" stroke-width="1"/>')
             elif st['缺卷']:
                 out.append(rect.format(MISSING)); label('缺', '#ffffff')
-            elif st['待核']:
-                out.append(rect.format(PENDING)); label('核', '#4c1d95')
             elif st['无独立考试']:
                 out.append(rect.format(NONE)); out.append(rect.format('url(#none)'))
             else:
@@ -180,7 +178,7 @@ def heatmap_svg(stats):
         out.append(f'<text x="{lw + i * cw + cw / 2}" y="{yb + 14}" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">{col[year]}</text>')
     ly = yb + 50
     items = [('1', palette[1], None), ('2', palette[2], None), ('3', palette[3], None), ('4', palette[4], None), ('5+', palette[5], None),
-             ('缺卷', MISSING, None), ('待核', PENDING, None), ('无独立考试', NONE, 'url(#none)'), ('未收录（2015 年及以前不判定缺卷）', UNCOUNTED, 'dash')]
+             ('缺卷', MISSING, None), ('无独立考试', NONE, 'url(#none)'), ('未收录（2015 年及以前不判定缺卷）', UNCOUNTED, 'dash')]
     x = 24
     out.append(f'<text x="{x}" y="{ly + 1}" font-size="12" fill="#475569">图例</text>')
     x += 40
@@ -191,7 +189,7 @@ def heatmap_svg(stats):
             out.append(f'<rect x="{x}" y="{ly - 12}" width="18" height="16" rx="4" fill="{pattern}"/>')
         out.append(f'<text x="{x + 24}" y="{ly + 1}" font-size="12" fill="#475569">{label_text}</text>')
         x += 24 + sum(12 if ord(ch_) > 255 else 7 for ch_ in label_text) + 16
-    out.append(f'<text x="24" y="{ly + 30}" font-size="12" fill="#94a3b8">圆点表示该年另有缺卷（深色）或待核（紫色）卷次 · 虚线分隔：浙江 ｜ 国考与重点地区 ｜ 其余地区 · 状态来自槽位台账</text>')
+    out.append(f'<text x="24" y="{ly + 30}" font-size="12" fill="#94a3b8">圆点表示该年另有缺卷卷次 · 虚线分隔：浙江 ｜ 国考与重点地区 ｜ 其余地区 · 状态来自槽位台账</text>')
     out.append('</svg>')
     return '\n'.join(out)
 

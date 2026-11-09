@@ -22,7 +22,7 @@ class GapReport(unittest.TestCase):
         keys = [(r["area"], r["year"], r["subject"], r["variant"]) for r in rows]
         self.assertEqual(len(keys), len(set(keys)))
         for r in rows:
-            self.assertIn(r["status"], {"缺卷", "待核", "无独立考试"})
+            self.assertIn(r["status"], {"缺卷", "无独立考试"})
             self.assertIn(r["subject"], {"行测", "申论"})
             self.assertGreaterEqual(r["year"], 2016)
             self.assertTrue(r["basis"])
@@ -33,7 +33,7 @@ class GapReport(unittest.TestCase):
     def test_slot_ledger_partitions_expected_papers(self):
         rows = [json.loads(l) for l in (ROOT / "catalog/exam-slots.jsonl").read_text(encoding="utf-8").splitlines() if l]
         for r in rows:
-            self.assertIn(r["status"], {"已收录", "缺卷", "待核", "无独立考试"})
+            self.assertIn(r["status"], {"已收录", "缺卷", "无独立考试"})
             self.assertEqual(r["status"] == "已收录", bool(r["papers"]), r)
             if r["status"] == "已收录":
                 self.assertTrue(r["sources"], r)
@@ -43,7 +43,7 @@ class GapReport(unittest.TestCase):
                 self.assertTrue(r["basis"], r)
 
     def test_every_recent_slot_is_registered(self):
-        """2016–2026 每个地区×年份×科目要么已收录，要么在台账中登记为缺卷、待核或无独立考试。"""
+        """2016–2026 每个地区×年份×科目要么已收录，要么在台账中登记为缺卷或无独立考试。"""
         rows, xingce, shenlun, papers = collect()
         self.assertEqual([], unregistered(rows, grades(rows, xingce, shenlun), papers))
 

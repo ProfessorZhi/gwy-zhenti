@@ -2,7 +2,7 @@
 """生成缺口总账 docs/GAP-STATUS.md 与 README 的缺口区块。
 
 缺口分两层：
-    槽位台账  2016–2026 年全部应有试卷，每卷一行：已收录、缺卷、待核或无独立考试。
+    槽位台账  2016–2026 年全部应有试卷，每卷一行：已收录、缺卷或无独立考试。
               已收录部分来自 catalog/manifest.jsonl；未收录部分人工维护于 catalog/uncollected-slots.jsonl；
               合并后写出 catalog/exam-slots.jsonl。缺卷 = 台账中状态为「缺卷」的试卷。
 同时写出 README 的收录区块与概览仪表盘 docs/assets/dashboard.svg。
@@ -123,7 +123,6 @@ def summary(rows, xingce, shenlun, papers, lo=0, hi=9999):
             for k in ('question', 'material', 'answer'):
                 s['s_' + k] += len(v[k]); s['sp_' + k] += bool(v[k])
     s['missing'] = sum(p['status'] == '缺卷' for p in papers if lo <= p['year'] <= hi)
-    s['pending'] = sum(p['status'] == '待核' for p in papers if lo <= p['year'] <= hi)
     s['unverified'] = sum(len(v) for v in ANSWER_UNVERIFIED.values())
     s['questions'] = sum(int(r.get('declared_questions') or 0) for r in rows)
     return s
@@ -137,8 +136,7 @@ def overview(new, old):
     """缺口总表：2016–2026 与 2008–2015 分列；2015 年及以前不判定缺卷。"""
     def pq(n, p, unit='题'):
         return f'{n} {unit} · {p} 卷' if n else '—'
-    rows = [('**缺卷**', '已确认缺卷', num(new['missing'], '卷'), '不判定', f'[#160]({ISSUES}160)'),
-            ('', '考试身份待核', num(new['pending'], '卷'), '不判定', f'[#161]({ISSUES}161)')]
+    rows = [('**缺卷**', '未收录的应有试卷', num(new['missing'], '卷'), '不判定', f'[#160]({ISSUES}160)')]
     for label, key, unit, issue in (('**行测**|缺题干', 'stem', '题', f'[#155]({ISSUES}155) [#156]({ISSUES}156)'),
                                     ('|缺选项', 'option', '题', f'[#157]({ISSUES}157)'), ('|缺答案', 'answer', '题', '')):
         a, b_ = label.split('|')
@@ -159,8 +157,8 @@ def status_md(rows, xingce, shenlun, papers):
          '[← 返回首页](../README.md) · [文档](README.md)', '',
          '<!-- 由 tools/gap_report.py 生成，勿手改 -->', '',
          '## 统计口径', '',
-         '- **槽位台账**：以实际举行的考试为准，2016–2026 年每份应有试卷（地区 × 年份 × 科目 × 卷型）登记一行，状态为已收录、缺卷、待核或无独立考试。'
-         '应有试卷 = 已收录 + 缺卷，缺卷即台账中尚未收录的应有试卷；考试身份或卷型未确认的列为待核，确认后计入。2015 年及以前只统计已收录试卷。',
+         '- **槽位台账**：以实际举行的考试为准，2016–2026 年每份应有试卷（地区 × 年份 × 科目 × 卷型）登记一行，状态为已收录、缺卷或无独立考试，每条均附官方公告等依据。'
+         '应有试卷 = 已收录 + 缺卷，缺卷即台账中尚未收录的应有试卷；当年未单独组织考试的科目记为无独立考试，不计入应有试卷。2015 年及以前只统计已收录试卷。',
          f'- **专项收录**：公安招警和公检法（公安院校联考、政法干警等）不属于国考、省考，{len(special_rows())} 份试卷照常收录、可在目录中浏览，但不进入槽位台账，不计入应有试卷、收录率与缺口统计。',
          '- **局部缺口**：已收录试卷内的缺失，按题计。行测分三级——缺题干、缺选项、缺答案，每题只计最严重的一级；申论分缺题目、缺材料、缺答案。',
          '- **来源**：以粉笔为主，华图与网络检索补充。每份试卷在文件头 `来源` 与 `来源清单` 中记录实际采用的全部来源；缺卷指上述来源均未取得的应有试卷。', '',
@@ -170,15 +168,15 @@ def status_md(rows, xingce, shenlun, papers):
     L += [paper_summary(rows, grade, s_new, s['unverified']), '']
     L += overview(s_new, s_old)
     L += ['', f'已收录试卷中 2016–2026 年 {len(recent):,} 份。上表按题计，一份卷可同时出现在多行；'
-          f"答案对应待核的 {s['unverified']} 题见 [#157]({ISSUES}157)。", '']
+          f"另有 {s['unverified']} 题参考答案与题目的对应关系存疑，见 [#157]({ISSUES}157)。", '']
     L += ['## 逐卷分布与健康度', '',
-          '每份试卷按最严重的缺口定级：**完整** → **答案待补**（缺参考答案或答案对应待核）→ **缺选项或材料** → **缺题干或题目**。', '',
+          '每份试卷按最严重的缺口定级：**完整** → **缺答案**（缺参考答案，或参考答案与题目的对应关系存疑）→ **缺选项或材料** → **缺题干或题目**。', '',
           scroll_img('assets/health.svg', '逐卷分布与健康度：2008–2026 年各地区各年份的每份试卷及其状态', health_svg(rows, grade, papers)), '']
     L += health_table(rows, grade, papers) + ['']
     # 缺卷
-    L += ['## 一、未收录卷次', '', '2016–2026 年每个「地区 × 年份 × 科目」槽位均须为已收录，或在台账中登记为缺卷、待核、无独立考试之一。', '',
+    L += ['## 一、未收录卷次', '', '2016–2026 年每个「地区 × 年份 × 科目」槽位均须为已收录，或在台账中登记为缺卷、无独立考试之一。', '',
           '| 年份 | 地区 | 科目 | 卷型 | 状态 | 依据 |', '| :---: | --- | --- | --- | --- | --- |']
-    rank = {'缺卷': 0, '待核': 1, '无独立考试': 2}
+    rank = {'缺卷': 0, '无独立考试': 1}
     for p in sorted(papers, key=lambda p: (rank[p['status']], -p['year'], p['area'], p['subject'], p['variant'] or '')):
         basis = p['basis']
         basis = f'[招录公告]({basis})' if basis.startswith('http') else basis
@@ -236,12 +234,12 @@ def slot_ledger(rows, papers):
 
 
 def coverage(rows, papers):
-    """台账口径：应有试卷 = 已收录 + 缺卷；待核卷次确认开考后计入。2015 年及以前只统计已收录试卷。"""
+    """台账口径：应有试卷 = 已收录 + 缺卷。2015 年及以前只统计已收录试卷。"""
     ledger = slot_ledger(rows, papers)
     st = Counter(r['status'] for r in ledger)
     src = Counter(k for r in ledger for k in r['sources'])
     recent = {'files': sum(int(r['year']) >= 2016 for r in rows), 'collected': st['已收录'], 'missing': st['缺卷'],
-              'pending': st['待核'], 'no_exam': st['无独立考试'], 'sources': src}
+              'no_exam': st['无独立考试'], 'sources': src}
     recent['expected'] = recent['collected'] + recent['missing']
     recent['rate'] = recent['collected'] / recent['expected']
     old = [r for r in rows if int(r['year']) < 2016]
@@ -254,13 +252,13 @@ def coverage_block(cov):
     src = r['sources']
     return '\n'.join([
         '<!-- gwy:coverage:start -->',
-        '| 年份 | 应有试卷 | 已收录 | 缺卷 | 待核 | 收录率 |',
-        '| :---: | ---: | ---: | ---: | ---: | ---: |',
-        f"| **2016–2026** | {r['expected']:,} | {r['collected']:,} | {r['missing']} | {r['pending']} | **{r['rate']:.1%}** |",
-        f"| 2008–2015 | — | {h['collected']:,} | — | — | — |",
+        '| 年份 | 应有试卷 | 已收录 | 缺卷 | 收录率 |',
+        '| :---: | ---: | ---: | ---: | ---: |',
+        f"| **2016–2026** | {r['expected']:,} | {r['collected']:,} | {r['missing']} | **{r['rate']:.1%}** |",
+        f"| 2008–2015 | — | {h['collected']:,} | — | — |",
         '',
         '应有试卷以实际举行的考试为准，按「地区 × 年份 × 科目 × 卷型」逐卷登记于 [槽位台账](catalog/exam-slots.jsonl)，'
-        '应有试卷 = 已收录 + 缺卷，收录率 = 已收录 ÷ 应有试卷；待核卷次确认开考后计入，当年无独立试卷的科目不计入。2015 年及以前只统计已收录试卷。'
+        '应有试卷 = 已收录 + 缺卷，收录率 = 已收录 ÷ 应有试卷；当年未单独组织考试的科目不计入。2015 年及以前只统计已收录试卷。'
         f'公安招警和公检法（公安院校联考、政法干警等）{len(special_rows())} 份为专项收录，可在目录中浏览，不计入台账与缺口统计。',
         '',
         f"来源以粉笔为主，华图与网络检索补充：2016–2026 年已收录试卷中，含粉笔来源 {src['粉笔']:,} 卷、"
@@ -287,7 +285,7 @@ def dashboard_svg(rows, s, cov):
     out.append(f'<circle cx="{cx}" cy="{cy}" r="{rad}" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="butt" '
                f'stroke-dasharray="{circ * r["rate"]:.1f} {circ:.1f}" transform="rotate(-90 {cx} {cy})"/>')
     out.append(f'<text x="{cx}" y="{cy + 7}" font-size="21" font-weight="800" fill="#0f172a" text-anchor="middle">{r["rate"]:.1%}</text>')
-    for i, (k, v) in enumerate((('应有试卷', f"{r['expected']:,}"), ('已收录', f"{r['collected']:,}"), ('缺卷', r['missing']), ('待核', r['pending']))):
+    for i, (k, v) in enumerate((('应有试卷', f"{r['expected']:,}"), ('已收录', f"{r['collected']:,}"), ('缺卷', r['missing']), ('无独立考试', r['no_exam']))):
         out.append(f'<text x="172" y="{108 + i * 26}" font-size="12" fill="#64748b">{k}</text>')
         out.append(f'<text x="276" y="{108 + i * 26}" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">{v}</text>')
     # 2. 科目构成
@@ -322,7 +320,7 @@ def dashboard_svg(rows, s, cov):
 
 
 # 试卷健康等级：每份试卷按最严重的缺口定级。
-GRADES = [('完整', '#34d399'), ('答案待补', '#fcd34d'), ('缺选项或材料', '#fb923c'), ('缺题干或题目', '#f43f5e')]
+GRADES = [('完整', '#34d399'), ('缺答案', '#fcd34d'), ('缺选项或材料', '#fb923c'), ('缺题干或题目', '#f43f5e')]
 MISSING_COLOR = '#334155'
 
 
@@ -347,24 +345,23 @@ def health_table(rows, grade, papers):
     for r in rows:
         by[series(r)][grade[r['path']]] += 1
     for p in papers:
-        if p['status'] in ('缺卷', '待核'):
-            by[p['area']]['missing' if p['status'] == '缺卷' else 'pending'] += 1
+        if p['status'] == '缺卷':
+            by[p['area']]['missing'] += 1
     order = sorted(by, key=lambda a: (a != '国考', -sum(by[a][g] for g in range(4)), a))
-    L = ['| 地区 | 已收录 | 完整 | 答案待补 | 缺选项或材料 | 缺题干或题目 | 缺卷 | 待核 |',
-         '| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |']
+    L = ['| 地区 | 已收录 | 完整 | 缺答案 | 缺选项或材料 | 缺题干或题目 | 缺卷 |',
+         '| --- | ---: | ---: | ---: | ---: | ---: | ---: |']
     tot = Counter()
     for a in order:
         c = by[a]; n = sum(c[g] for g in range(4))
-        for k in list(range(4)) + ['missing', 'pending']:
+        for k in list(range(4)) + ['missing']:
             tot[k] += c[k]
         cell = lambda k: str(c[k]) if c[k] else '—'
-        L.append(f"| {a} | {n} | {cell(0)} | {cell(1)} | {cell(2)} | {cell(3)} | {cell('missing')} | {cell('pending')} |")
+        L.append(f"| {a} | {n} | {cell(0)} | {cell(1)} | {cell(2)} | {cell(3)} | {cell('missing')} |")
     n = sum(tot[g] for g in range(4))
-    L.append(f"| **合计** | **{n:,}** | **{tot[0]:,}** | **{tot[1]}** | **{tot[2]}** | **{tot[3]}** | **{tot['missing']}** | **{tot['pending']}** |")
+    L.append(f"| **合计** | **{n:,}** | **{tot[0]:,}** | **{tot[1]}** | **{tot[2]}** | **{tot[3]}** | **{tot['missing']}** |")
     return L
 
 
-PENDING_COLOR = '#c4b5fd'
 NO_EXAM_COLOR = '#f1f5f9'
 UNCOUNTED_COLOR = '#f8fafc'
 UNREGISTERED_COLOR = '#fecdd3'
@@ -379,7 +376,7 @@ def series(r):
 
 
 def slot_status(rows, grade, papers):
-    """{(行, 年份, 科目): (状态, 最差等级或 None, 台账状态集合)}；状态取 收录/缺卷/待核/无独立考试/不统计/未登记。"""
+    """{(行, 年份, 科目): (状态, 最差等级或 None, 台账状态集合)}；状态取 收录/缺卷/无独立考试/不统计/未登记。"""
     have = defaultdict(list)
     for r in rows:
         have[(series(r), int(r['year']), r['subject'])].append(grade[r['path']])
@@ -397,8 +394,6 @@ def slot_status(rows, grade, papers):
                     out[k] = ('收录', max(g), l)
                 elif '缺卷' in l:
                     out[k] = ('缺卷', None, l)
-                elif '待核' in l:
-                    out[k] = ('待核', None, l)
                 elif '无独立考试' in l:
                     out[k] = ('无独立考试', None, l)
                 else:
@@ -426,14 +421,14 @@ def scroll_img(src, alt, svg):
 
 def paper_marks(rows, grade, papers):
     """{(地区, 年份, 科目): [(状态, 等级, 提示)]}，一份试卷一个标记。
-    状态：收录、缺卷、待核；无试卷的槽位给一个 无独立考试 或 未收录 标记，保证每格都有图例状态。"""
+    状态：收录、缺卷；无试卷的槽位给一个 无独立考试 或 未收录 标记，保证每格都有图例状态。"""
     marks = defaultdict(list)
     for r in sorted(rows, key=lambda r: (norm_pt(r.get('paper_type')) or '', r['path'])):
         g = grade[r['path']]
         tip = f"{r['path'][:-3]} · {GRADES[g][0]}"
         marks[(series(r), int(r['year']), r['subject'])].append(('收录', g, tip))
     for p in sorted(papers, key=lambda p: (p['status'], p['variant'] or '')):
-        if p['status'] in ('缺卷', '待核'):
+        if p['status'] == '缺卷':
             tip = f"{p['area']} {p['year']} {p['subject']}-{p['variant'] or '卷型待定'} · {p['status']}"
             marks[(p['area'], p['year'], p['subject'])].append((p['status'], None, tip))
     for (name, y, subj), (state, _, _) in slot_status(rows, grade, papers).items():
@@ -443,7 +438,7 @@ def paper_marks(rows, grade, papers):
     return marks
 
 
-MARK_COLORS = {'缺卷': MISSING_COLOR, '待核': PENDING_COLOR}
+MARK_COLORS = {'缺卷': MISSING_COLOR}
 
 
 def health_svg(rows, grade, papers):
@@ -524,7 +519,7 @@ def health_svg(rows, grade, papers):
 
     # 图例
     legend = [(label, '收录', g) for g, (label, _) in enumerate(GRADES)] + [
-        ('缺卷', '缺卷', None), ('待核', '待核', None), ('无独立考试', '无独立考试', None), ('未收录（2015 年及以前不判定缺卷）', '未收录', None)]
+        ('缺卷', '缺卷', None), ('无独立考试', '无独立考试', None), ('未收录（2015 年及以前不判定缺卷）', '未收录', None)]
     px, py = 28, 192
     for txt, state, g in legend:
         w = 36 + sum(12.5 if ord(c) > 255 else 7 for c in txt)
@@ -589,15 +584,15 @@ def health_svg(rows, grade, papers):
 def paper_summary(rows, grade, new, unverified):
     """一句话说清：已收录卷里多少完整、多少有局部缺口（按最严重一级各计一次），以及未收录的卷。"""
     cnt = collections.Counter(grade[r['path']] for r in rows)
-    parts = [f'{cnt[g]:,} 份{name}' for g, name in ((3, '缺题干或题目'), (2, '缺选项或材料'), (1, '答案待补')) if cnt[g]]
+    parts = [f'{cnt[g]:,} 份{name}' for g, name in ((3, '缺题干或题目'), (2, '缺选项或材料'), (1, '缺答案')) if cnt[g]]
     partial = len(rows) - cnt[0]
     special = len(special_rows())
     note = f'（不含公安招警等专项 {special} 份）' if special else ''
     text = f'**已收录 {len(rows):,} 份试卷{note}：{cnt[0]:,} 份完整，{partial:,} 份有局部缺口**'
     text += f"（{'、'.join(parts)}，每份按最严重一级只计一次）" if parts else ''
     if unverified:
-        text += f'；另有 {unverified} 题参考答案已收录、但与题目的对应关系待核'
-    text += f"。**未收录：确认缺卷 {new['missing']:,} 份、考试身份待核 {new['pending']:,} 份**（2016–2026 年）。"
+        text += f'；另有 {unverified} 题参考答案与题目的对应关系存疑'
+    text += f"。**未收录：缺卷 {new['missing']:,} 份**（2016–2026 年）。"
     return text
 
 
@@ -634,7 +629,7 @@ def main():
         return 1 if stale else 0
     for p in stale:
         p.write_text(outputs[p], encoding='utf-8')
-    print(f'写入 {len(stale)} 个文件；缺卷 {s["missing"]}、待核 {s["pending"]}；'
+    print(f'写入 {len(stale)} 个文件；缺卷 {s["missing"]}；'
           f'行测 缺题干 {s["x_stem"]} 缺选项 {s["x_option"]} 缺答案 {s["x_answer"]}；'
           f'申论 缺题目 {s["s_question"]} 缺材料 {s["s_material"]} 缺答案 {s["s_answer"]}')
     return 0

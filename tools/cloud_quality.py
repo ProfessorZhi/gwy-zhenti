@@ -307,7 +307,7 @@ def scan(root: Path, verify_images: bool=False) -> tuple[list[dict],dict]:
         state=str(fm.get('校验状态',''))
         if '★来源无图片' in state:issues.append('来源声明题图或共用材料缺失')
         if '回忆版不全' in state:issues.append('来源声明回忆版不全')
-        if '解析区公式碎片未重建' in state:issues.append('解析公式尚待核验')
+        if '解析区公式碎片未重建' in state:issues.append('解析公式未重建')
         if fm.get('卷型')=='统考':notes.append('内部未归属卷型标签，不自动视为独立原卷')
         notes.append('有参考答案不代表其为官方答案或已经验真')
         row={'path':rel,'sha256':sha(raw),'bytes':len(raw),'area':area,'year':str(fm.get('年份',p.parent.name)),
@@ -409,7 +409,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
     (root/'reports/QUALITY-AUDIT.md').write_text('\n'.join(defect_md),encoding='utf-8')
     progress=['# 总进度','','[← 返回首页](../README.md) · [文档](README.md)','',
               '<!-- 由 tools/cloud_quality.py --build 生成，勿手改 -->','',
-              '本页只给当前机器统计和现行入口。缺卷、待核与局部缺口以 [缺口总账](GAP-STATUS.md) 为准；'
+              '本页只给当前机器统计和现行入口。缺卷与局部缺口以 [缺口总账](GAP-STATUS.md) 为准；'
               '各轮补录与修复的过程记录见 [报表索引](../reports/README.md)。','',
               '| 指标 | 当前数量 |','| --- | ---: |',f'| 已收录试卷 | {len(rows):,} |',
               f'| 行测 / 申论 | {stats["subjects"].get("行测",0):,} / {stats["subjects"].get("申论",0):,} |',
@@ -419,7 +419,7 @@ def build(root: Path, rows: list[dict], stats: dict) -> None:
               f'机器清单指纹：`{stats["inventory_sha256"]}`（`reports/QUALITY-SUMMARY.json` 的 `inventory_sha256`，清单或试卷有改动即变化）。','',
               '## 现行入口','',
               '| 想看 | 去这里 |','| --- | --- |',
-              '| 缺卷、待核、缺题 | [缺口总账](GAP-STATUS.md) |',
+              '| 缺卷、缺题 | [缺口总账](GAP-STATUS.md) |',
               '| 分地区、分年份统计 | [收录统计](COVERAGE.md) · [重点地区逐年卷表](COVERAGE-PRIORITY.md) |',
               '| 机器告警明细 | [质量事项](../reports/QUALITY-AUDIT.md) · [质量汇总数据](../reports/QUALITY-SUMMARY.json) |',
               '| 逐卷字节数与 SHA-256 | [逐卷清单](../catalog/manifest.jsonl) |',
