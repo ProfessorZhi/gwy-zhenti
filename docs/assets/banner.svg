@@ -11,10 +11,10 @@
 <text x="74" y="246" font-size="14" fill="#bfdbfe">份试卷</text>
 <rect x="268" y="176" width="196" height="84" rx="12" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.18"/>
 <text x="286" y="220" font-size="30" font-weight="700" fill="#ffffff">89,852</text>
-<text x="286" y="246" font-size="14" fill="#bfdbfe">道题位</text>
+<text x="286" y="246" font-size="14" fill="#bfdbfe">道题</text>
 <rect x="480" y="176" width="196" height="84" rx="12" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.18"/>
-<text x="498" y="220" font-size="30" font-weight="700" fill="#ffffff">36</text>
-<text x="498" y="246" font-size="14" fill="#bfdbfe">个地区</text>
+<text x="498" y="220" font-size="30" font-weight="700" fill="#ffffff">34</text>
+<text x="498" y="246" font-size="14" fill="#bfdbfe">个省考地区</text>
 <rect x="692" y="176" width="196" height="84" rx="12" fill="#ffffff" fill-opacity="0.09" stroke="#ffffff" stroke-opacity="0.18"/>
 <text x="710" y="220" font-size="26" font-weight="700" fill="#ffffff">2008–2026</text>
 <text x="710" y="246" font-size="14" fill="#bfdbfe">年份跨度</text>
