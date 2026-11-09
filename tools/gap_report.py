@@ -154,6 +154,7 @@ def overview(new, old):
 PRIORITIES = [('P1', '重点地区 2016–2026'), ('P2', '重点地区 2015 年及以前'),
               ('P3', '其他地区 2016–2026'), ('P4', '其他地区 2015 年及以前')]
 KEY_AREA = '浙江'
+TIER_NAME = {'P1': '一', 'P2': '二', 'P3': '三', 'P4': '四'}
 
 
 def priority(area, year):
@@ -214,10 +215,10 @@ def priority_table(rows, xingce, shenlun, papers):
     n = lambda v, u='': f'{v:,}{u}' if v else '—'
     cells = lambda k: (f"{n(c[k]['missing'], ' 卷')} | {n(len(partial[k]), ' 卷')} | {n(c[k]['stem'], ' 题')} | "
                        f"{n(c[k]['option'])} | {n(c[k]['answer'], ' 题')} | {n(c[k]['doubt'], ' 题')}")
-    L = ['| 优先级 | 范围 | 缺卷 | 有缺题的试卷 | 缺题干或题目 | 缺选项或材料 | 缺答案 | 答案可能错位 |',
+    L = ['| 层次 | 范围 | 缺卷 | 有缺题的试卷 | 缺题干或题目 | 缺选项或材料 | 缺答案 | 答案可能错位 |',
          '| :---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |']
     for k, label in PRIORITIES:
-        L.append(f"| **{k}** | {label} | {cells(k)} |")
+        L.append(f"| **{TIER_NAME[k]}** | {label} | {cells(k)} |")
         if k in ('P1', 'P2'):
             L.append(f"|  | ↳ 其中**{KEY_AREA}** | {cells(k + KEY_AREA)} |")
     return L
@@ -225,8 +226,8 @@ def priority_table(rows, xingce, shenlun, papers):
 
 def priority_label(area, year):
     """明细表中的优先级标注：浙江加注。"""
-    k = priority(area, year)
-    return f'{k} · {KEY_AREA}' if area == KEY_AREA else k
+    k = TIER_NAME[priority(area, year)]
+    return f'{k} · ★{KEY_AREA}' if area == KEY_AREA else k
 
 
 def priority_key(area, year):
@@ -258,15 +259,15 @@ def status_md(rows, xingce, shenlun, papers):
     L += overview(s_new, s_old)
     L += ['', f'已收录试卷中 2016–2026 年 {len(recent):,} 份。上表按题计，一份卷可同时出现在多行；'
           f"另有 {s['unverified']} 题参考答案与题目的对应关系存疑，见 [#157]({ISSUES}157)。", '']
-    L += ['## 补录优先级', '', PRIORITY_NOTE, ''] + priority_table(rows, xingce, shenlun, papers) + [
-          '', '下列各表均按优先级排列。', '']
+    L += ['## 补录层次', '', PRIORITY_NOTE, ''] + priority_table(rows, xingce, shenlun, papers) + [
+          '', '下列各表均按层次排列。', '']
     L += ['## 逐卷分布与健康度', '',
           '每份试卷按最严重的缺口定级：**完整** → **缺答案**（缺参考答案，或参考答案与题目的对应关系存疑）→ **缺选项或材料** → **缺题干或题目**。', '',
           scroll_img('assets/health.svg', '逐卷分布与健康度：2008–2026 年各地区各年份的每份试卷及其状态', health_svg(rows, grade, papers)), '']
     L += health_table(rows, grade, papers) + ['']
     # 缺卷
     L += ['## 一、未收录卷次', '', '2016–2026 年每个「地区 × 年份 × 科目」槽位均须为已收录，或在台账中登记为缺卷、无独立考试之一。', '',
-          '| 优先级 | 年份 | 地区 | 科目 | 卷型 | 状态 | 依据 |', '| :---: | :---: | --- | --- | --- | --- | --- |']
+          '| 层次 | 年份 | 地区 | 科目 | 卷型 | 状态 | 依据 |', '| :---: | :---: | --- | --- | --- | --- | --- |']
     rank = {'缺卷': 0, '无独立考试': 1}
     for p in sorted(papers, key=lambda p: (rank[p['status']], priority_key(p['area'], p['year']), -p['year'], p['area'], p['subject'], p['variant'] or '')):
         basis = p['basis']
@@ -278,13 +279,13 @@ def status_md(rows, xingce, shenlun, papers):
     L += ['', '完整台账见 [`catalog/exam-slots.jsonl`](../catalog/exam-slots.jsonl)（含已收录卷次）；未收录部分维护于 [`catalog/uncollected-slots.jsonl`](../catalog/uncollected-slots.jsonl)。', '']
     # 行测
     meta = {r['path']: (r['area'], r['year']) for r in rows}
-    L += ['## 二、行测局部缺口', '', '| 优先级 | 试卷 | 缺题干 | 缺选项 | 缺答案 |', '| :---: | --- | --- | --- | --- |']
+    L += ['## 二、行测局部缺口', '', '| 层次 | 试卷 | 缺题干 | 缺选项 | 缺答案 |', '| :---: | --- | --- | --- | --- |']
     for path, v in sorted(xingce.items(), key=lambda x: (priority_key(*meta[x[0]]), -sum(map(len, x[1].values())), x[0])):
         cell = lambda q: f'{len(q)} 题：{ranges(q)}' if q else '—'
         L.append(f"| {priority_label(*meta[path])} | [{name(path)}](../{path}) | {cell(v['stem'])} | {cell(v['option'])} | {cell(v['answer'])} |")
     L += ['']
     # 申论
-    L += ['## 三、申论局部缺口', '', '| 优先级 | 试卷 | 缺题目 | 缺材料 | 缺答案 |', '| :---: | --- | --- | --- | --- |']
+    L += ['## 三、申论局部缺口', '', '| 层次 | 试卷 | 缺题目 | 缺材料 | 缺答案 |', '| :---: | --- | --- | --- | --- |']
     for path, v in sorted(shenlun.items(), key=lambda x: (priority_key(*meta[x[0]]), x[0])):
         cell = lambda q, u='题': f'第 {ranges(q)} {u}' if q else '—'
         mat = f"材料 {ranges(v['material'])}" if v['material'] else '—'
@@ -294,7 +295,7 @@ def status_md(rows, xingce, shenlun, papers):
     L += ['', '## 四、2015 年及以前题量明显偏少的试卷', '',
           '早年试卷来源多按收录到的题目重新连续编号，缺失的题不留占位，按题号查不出来。以下试卷题量明显少于同类试卷，'
           '原卷题量尚未核对，暂不计入缺题数。', '',
-          '| 优先级 | 试卷 | 收录题数 | 参照 |', '| :---: | --- | ---: | --- |']
+          '| 层次 | 试卷 | 收录题数 | 参照 |', '| :---: | --- | ---: | --- |']
     for path, n, ref in sorted(short, key=lambda x: (priority_key(*meta[x[0]]), x[0])):
         L.append(f"| {priority_label(*meta[path])} | [{name(path)}](../{path}) | {n} | {ref} |")
     L += ['', '## 补录原则', '',
@@ -786,6 +787,29 @@ def readme_block(rows, xingce, shenlun, ledger, old_collected, health):
     a = scope_stats(rows, xingce, shenlun, ledger, lambda _: True, 2016, 2026)
     short = early_short(rows)
     doubt = sum(len(v) for v in ANSWER_UNVERIFIED.values())
+
+    def early_have(keep):   # 2015 年及以前已收录，按不同试卷计
+        return len({(series(r), r['year'], r['subject'], norm_pt(r.get('paper_type'))) for r in rows
+                    if keep(r['area']) and int(r['year']) <= 2015})
+
+    def new_row(label, scope, v, bold=False):
+        b = (lambda t: f'**{t}**') if bold else (lambda t: t)
+        have, miss, q, pp = v
+        return (f"| {b(label)} | {scope} | {b(f'{have + miss:,}')} | {b(f'{have:,}')} | {b(miss or '—')} | "
+                f"{b(f'{q} 道（{pp} 份）') if q else '—'} |")
+
+    def old_row(label, scope, keep):
+        return f"| {label} | {scope} | 未统计 | {early_have(keep):,} | 未统计 | 未统计 |"
+    other = lambda x: x not in focus
+    o3 = scope_stats(rows, xingce, shenlun, ledger, other, 2016, 2026)
+    tier_rows = ['| 层次 | 范围 | 应有试卷 | 已收录 | 缺卷 | 缺题 |', '| :---: | --- | ---: | ---: | ---: | ---: |',
+                 new_row('一', '重点地区 2016 年以来', f),
+                 new_row('', '↳ 其中 ★ 浙江', z),
+                 old_row('二', '重点地区 2015 年及以前', lambda x: x in focus),
+                 old_row('', '↳ 其中 ★ 浙江', lambda x: x == KEY_AREA),
+                 new_row('三', '其他地区 2016 年以来', o3),
+                 old_row('四', '其他地区 2015 年及以前', other),
+                 f"| **合计** | | 未统计 | **{a[0] + old_collected:,}** | 未统计 | 未统计 |"]
     lines = ['<!-- gwy:gaps:start -->',
              '缺口分两种：**缺卷**指考试举行过、但库里没有这份试卷；**缺题**指试卷已收录、但个别题目的题干、选项或答案不全。',
              '',
@@ -796,18 +820,16 @@ def readme_block(rows, xingce, shenlun, ledger, old_collected, health):
              '',
              '<p align="center"><img src="docs/assets/focus.svg" alt="重点地区 2016–2026 年每份试卷的状态" width="100%"></p>',
              '',
-             '### 全部地区、全部年份',
+             '### 全部地区、全部年份（分四个层次）',
              '',
-             '| 年份 | 应有试卷 | 已收录 | 缺卷 | 缺题 |', '| --- | ---: | ---: | ---: | ---: |',
-             f"| 2016–2026 | {a[0] + a[1]:,} | {a[0]:,} | {a[1]} | {a[2]} 道（{a[3]} 份） |",
-             f"| 2008–2015 | 未统计 | {old_collected:,} | 未统计 | 未统计 |",
+             *tier_rows,
+             '',
+             '层次即补录顺序，第一层最先，浙江在重点地区中最优先。重点地区为国考、浙江、江苏、上海、北京、天津、广东、广州、深圳、福建。',
              '',
              '2016 年以来每份应有试卷都依据当年招录公告登记，数字准确。2015 年及以前每年应有哪些试卷、每份原卷多少题，还没有逐份核对，'
              f'所以缺卷和缺题暂不统计；目前已发现 {len(short)} 份早年试卷题量明显偏少，列在缺口总账。',
              '',
              health,
-             '',
-             '补录顺序：重点地区 2016 年以来（浙江最先）→ 重点地区 2015 年及以前 → 其他地区 2016 年以来 → 其他地区 2015 年及以前。',
              '',
              ('以上按不同试卷计数，同一份试卷有多个版本时只算一次；公安招警和公检法等专项收录不计入。'
               + (f'另有北京 2025 年行测 {doubt} 道题的参考答案可能与题号错位，未计入缺题。' if doubt else '')
