@@ -185,7 +185,7 @@ def priority_counts(rows, xingce, shenlun, papers):
             add(*meta[path], g, len(v[f]), path)
     for path, qs in ANSWER_UNVERIFIED.items():
         if path in meta:
-            add(*meta[path], 'doubt', len(qs), path)
+            add(*meta[path], 'doubt', len(qs))
     return c, partial
 
 
@@ -195,7 +195,7 @@ def priority_table(rows, xingce, shenlun, papers):
     n = lambda v, u='': f'{v:,}{u}' if v else '—'
     cells = lambda k: (f"{n(c[k]['missing'], ' 卷')} | {n(len(partial[k]), ' 卷')} | {n(c[k]['stem'], ' 题')} | "
                        f"{n(c[k]['option'])} | {n(c[k]['answer'], ' 题')} | {n(c[k]['doubt'], ' 题')}")
-    L = ['| 优先级 | 范围 | 缺卷 | 有局部缺口的卷 | 缺题干或题目 | 缺选项或材料 | 缺答案 | 答案对应存疑 |',
+    L = ['| 优先级 | 范围 | 缺卷 | 有缺题的试卷 | 缺题干或题目 | 缺选项或材料 | 缺答案 | 答案可能错位 |',
          '| :---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |']
     for k, label in PRIORITIES:
         L.append(f"| **{k}** | {label} | {cells(k)} |")
@@ -323,28 +323,28 @@ def coverage(rows, papers):
     return {'2016–2026': recent, '2008–2015': history, 'ledger': ledger}
 
 
-def coverage_block(cov):
-    r, h = cov['2016–2026'], cov['2008–2015']
-    src = r['sources']
+def coverage_block(cov, rows):
+    """首页「收录情况」说明：收了多少、来源是什么。统计口径放在缺口总账。"""
+    src = cov['2016–2026']['sources']
+    every = rows + special_rows()
+    sub = Counter(r['subject'] for r in every)
+    areas = len({r['area'] for r in rows} - {'国考'})
     return '\n'.join([
         '<!-- gwy:coverage:start -->',
-        '| 年份 | 应有试卷 | 已收录 | 缺卷 | 收录率 |',
-        '| :---: | ---: | ---: | ---: | ---: |',
-        f"| **2016–2026** | {r['expected']:,} | {r['collected']:,} | {r['missing']} | **{r['rate']:.1%}** |",
-        f"| 2008–2015 | — | {h['collected']:,} | — | — |",
+        f"共收录 **{len(every):,}** 份试卷（行测 {sub['行测']:,} 份、申论 {sub['申论']:,} 份），"
+        f"覆盖 2008–2026 年的国考和 {areas} 个省考地区（含广州、深圳、新疆兵团）。",
         '',
-        '应有试卷以实际举行的考试为准，按「地区 × 年份 × 科目 × 卷型」逐卷登记于 [槽位台账](catalog/exam-slots.jsonl)，'
-        '应有试卷 = 已收录 + 缺卷，收录率 = 已收录 ÷ 应有试卷；当年未单独组织考试的科目不计入。2015 年及以前只统计已收录试卷。'
-        f'公安招警和公检法（公安院校联考、政法干警等）{len(special_rows())} 份为专项收录，可在目录中浏览，不计入台账与缺口统计。',
-        '',
-        f"来源以粉笔为主，华图与网络检索补充：2016–2026 年已收录试卷中，含粉笔来源 {src['粉笔']:,} 卷、"
-        f"华图补充 {src['华图']} 卷、网络检索来源 {src['网络检索']} 卷（一卷可有多个来源）。",
+        f"试卷以粉笔为主要来源，华图和公开网页补充：2016 年以来的试卷中，用到粉笔的 {src['粉笔']:,} 份、华图 {src['华图']} 份、"
+        f"公开网页 {src['网络检索']} 份（一份试卷可同时用到多个来源）。每份试卷在文件开头列出实际用到的全部来源。",
         '<!-- gwy:coverage:end -->'])
 
 
 def dashboard_svg(rows, s, cov):
     r = cov['2016–2026']
-    x = sum(row['subject'] == '行测' for row in rows); z = len(rows) - x
+    every = rows + special_rows()
+    x = sum(row['subject'] == '行测' for row in every); z = len(every) - x
+    questions = sum(int(row.get('declared_questions') or 0) for row in every)
+    missing_q = s['x_stem'] + s['x_option'] + s['x_answer'] + s['s_question'] + s['s_material'] + s['s_answer']
     W, H = 920, 260
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">',
            '<defs><linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>',
@@ -361,7 +361,7 @@ def dashboard_svg(rows, s, cov):
     out.append(f'<circle cx="{cx}" cy="{cy}" r="{rad}" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="butt" '
                f'stroke-dasharray="{circ * r["rate"]:.1f} {circ:.1f}" transform="rotate(-90 {cx} {cy})"/>')
     out.append(f'<text x="{cx}" y="{cy + 7}" font-size="21" font-weight="800" fill="#0f172a" text-anchor="middle">{r["rate"]:.1%}</text>')
-    for i, (k, v) in enumerate((('应有试卷', f"{r['expected']:,}"), ('已收录', f"{r['collected']:,}"), ('缺卷', r['missing']), ('无独立考试', r['no_exam']))):
+    for i, (k, v) in enumerate((('应有试卷', f"{r['expected']:,}"), ('已收录', f"{r['collected']:,}"), ('缺卷', r['missing']), ('缺题', missing_q))):
         out.append(f'<text x="172" y="{108 + i * 26}" font-size="12" fill="#64748b">{k}</text>')
         out.append(f'<text x="276" y="{108 + i * 26}" font-size="15" font-weight="700" fill="#0f172a" text-anchor="end">{v}</text>')
     # 2. 科目构成
@@ -370,7 +370,7 @@ def dashboard_svg(rows, s, cov):
     bw = 240
     xw = bw * x / total
     out.append(f'<text x="332" y="96" font-size="30" font-weight="800" fill="#0f172a">{total:,}</text>')
-    out.append(f'<text x="332" y="118" font-size="12" fill="#64748b">份试卷 · {s["questions"]:,} 个题位</text>' if 'questions' in s else '')
+    out.append(f'<text x="332" y="118" font-size="12" fill="#64748b">份试卷 · {questions:,} 道题</text>')
     out.append(f'<rect x="332" y="140" width="{bw}" height="16" rx="8" fill="#f59e0b"/>')
     out.append(f'<rect x="332" y="140" width="{xw:.1f}" height="16" rx="8" fill="#3b82f6"/>')
     out.append(f'<rect x="{332 + xw - 8:.1f}" y="140" width="8" height="16" fill="#3b82f6"/>')
@@ -380,7 +380,7 @@ def dashboard_svg(rows, s, cov):
         out.append(f'<text x="352" y="{yy}" font-size="13" fill="#334155">{k}</text>')
         out.append(f'<text x="572" y="{yy}" font-size="14" font-weight="700" fill="#0f172a" text-anchor="end">{v} 份 · {v / total:.0%}</text>')
     # 3. 局部缺口
-    card(608, 296, '已收录试卷的局部缺口')
+    card(608, 296, '缺题（按类型）')
     items = [('行测 缺题干', s['x_stem'], '#ef4444'), ('行测 缺选项', s['x_option'], '#f97316'),
              ('申论 缺材料', s['s_material'], '#eab308'), ('申论 缺答案', s['s_answer'], '#a855f7')]
     peak = max([v for _, v, _ in items] + [1])
@@ -546,7 +546,7 @@ def health_svg(rows, grade, papers):
            f'<rect width="{W}" height="{H}" rx="18" fill="#ffffff" stroke="#e2e8f0"/>',
            '<text x="28" y="44" font-size="24" font-weight="800" fill="#0f172a">逐卷分布与健康度 · 2008–2026</text>',
            '<text x="28" y="70" font-size="13" fill="#64748b">每个方块是一份试卷：方块数为该地区当年该科目的试卷数，颜色为健康等级或台账状态；'
-           '左侧 2016–2026 按槽位台账统计缺卷，右侧 2008–2015 只统计已收录试卷</text>']
+           '左侧 2016–2026 统计缺卷和缺题，右侧 2008–2015 只统计已收录试卷的缺题</text>']
 
     def card(x, w, title, sub_, segs, total):
         out.append(f'<rect x="{x}" y="90" width="{w}" height="86" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>')
@@ -576,11 +576,11 @@ def health_svg(rows, grade, papers):
         if lo >= 2016:
             cov = coverage(rows, papers)['2016–2026']
             segs.append((cov['missing'], MISSING_COLOR, '缺卷'))
-            card(x0, x1 - x0, f'{lo} – {hi} · 按槽位台账',
+            card(x0, x1 - x0, f'{lo} – {hi}',
                  f"应有 {cov['expected']:,} 卷 · 收录率 {cov['rate']:.1%} · 已收录试卷 {n:,} 份，完整率 {cnt[0] / n:.1%}",
                  segs, n + cov['missing'])
         else:
-            card(x0, x1 - x0, f'{lo} – {hi} · 只计已收录', f'已收录试卷 {n:,} 份，完整率 {cnt[0] / n:.1%}', segs, n)
+            card(x0, x1 - x0, f'{lo} – {hi}', f'已收录试卷 {n:,} 份，完整率 {cnt[0] / n:.1%}', segs, n)
 
     def square(x, y, state, g, tip):
         t = f'<title>{html.escape(tip)}</title>'
@@ -652,7 +652,7 @@ def health_svg(rows, grade, papers):
             out.append(f'<text x="{ox0 + 4}" y="{y0 + 19}" font-size="11.5" fill="#64748b">{f"{do}/{no}" if no else "—"}</text>')
             y0 += pair
     out.append(f'<text x="28" y="{H - 20}" font-size="11.5" fill="#94a3b8">2016–2026 汇总为 完整/应有（应有 = 已收录 + 缺卷），2008–2015 汇总为 完整/已收录 · '
-               '广州 2019 年起并入广东省考 · 公安招警和公检法为专项收录，不在本图 · 状态来自槽位台账 catalog/exam-slots.jsonl</text>')
+               '广州 2019 年起并入广东省考 · 公安招警和公检法为专项收录，不在本图 · 应有试卷依据各年招录公告登记</text>')
     out.append('</svg>')
     return '\n'.join(out) + '\n'
 
@@ -675,15 +675,13 @@ def paper_summary(rows, grade, new, unverified):
 def gaps_svg(rows, xingce, shenlun, papers, s):
     """首页缺口卡片：P1–P4 四张卡片，每张给缺卷与卷内缺题；重点地区两级内单列浙江；底部为缺口类型。"""
     c, partial = priority_counts(rows, xingce, shenlun, papers)
-    W, H = 920, 318
-    cw, gap, x0, y0, ch = 205, 15, 24, 74, 180
+    W, H = 920, 216
+    cw, gap, x0, y0, ch = 205, 15, 24, 18, 180
     tone = {'P1': '#e11d48', 'P2': '#f97316', 'P3': '#2563eb', 'P4': '#64748b'}
     scope = {'P1': ('重点地区', '2016–2026'), 'P2': ('重点地区', '2015 年及以前'),
              'P3': ('其他地区', '2016–2026'), 'P4': ('其他地区', '2015 年及以前')}
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="{FONT}">',
-           f'<rect width="{W}" height="{H}" rx="16" fill="#ffffff"/>',
-           '<text x="24" y="38" font-size="20" font-weight="800" fill="#0f172a">缺口与补录优先级</text>',
-           '<text x="24" y="60" font-size="12.5" fill="#64748b">按优先级从高到低补录；浙江为重中之重，在重点地区内单独列出</text>']
+           f'<rect width="{W}" height="{H}" rx="16" fill="#ffffff"/>']
     for i, (k, _) in enumerate(PRIORITIES):
         x = x0 + i * (cw + gap)
         v = c[k]; parts = len(partial[k]); col = tone[k]
@@ -696,39 +694,84 @@ def gaps_svg(rows, xingce, shenlun, papers, s):
         out.append(f'<text x="{x + 33}" y="{y0 + 35.5}" font-size="12.5" font-weight="800" fill="#ffffff" text-anchor="middle">{k}</text>')
         out.append(f'<text x="{x + 60}" y="{y0 + 30}" font-size="13" font-weight="700" fill="#0f172a">{scope[k][0]}</text>')
         out.append(f'<text x="{x + 60}" y="{y0 + 46}" font-size="11.5" fill="#64748b">{scope[k][1]}</text>')
+        old = k in ('P2', 'P4')
         if empty:
-            out.append(f'<text x="{x + cw / 2}" y="{y0 + 110}" font-size="20" font-weight="800" fill="#cbd5e1" text-anchor="middle">无缺口</text>')
+            out.append(f'<text x="{x + cw / 2}" y="{y0 + 100}" font-size="20" font-weight="800" fill="#cbd5e1" text-anchor="middle">{"无缺题" if old else "无缺口"}</text>')
+            if old:
+                out.append(f'<text x="{x + cw / 2}" y="{y0 + 122}" font-size="12" fill="#94a3b8" text-anchor="middle">缺卷未统计</text>')
         else:
             out.append(f'<text x="{x + 16}" y="{y0 + 92}" font-size="34" font-weight="800" fill="#0f172a">{v["missing"]}</text>')
             out.append(f'<text x="{x + 16 + len(str(v["missing"])) * 21 + 8}" y="{y0 + 92}" font-size="13" fill="#475569">份缺卷</text>')
-            out.append(f'<text x="{x + 16}" y="{y0 + 120}" font-size="13" fill="#334155">卷内缺题 <tspan font-weight="800" fill="#0f172a">{v["stem"] + v["option"]}</tspan> 题'
+            out.append(f'<text x="{x + 16}" y="{y0 + 120}" font-size="13" fill="#334155">缺题 <tspan font-weight="800" fill="#0f172a">{v["stem"] + v["option"]}</tspan> 题'
                        f' · <tspan font-weight="800" fill="#0f172a">{parts}</tspan> 卷</text>')
         if k in ('P1', 'P2'):
             z = c[k + KEY_AREA]; zp = len(partial[k + KEY_AREA])
             out.append(f'<rect x="{x + 10}" y="{y0 + ch - 44}" width="{cw - 20}" height="32" rx="9" fill="#fef3c7"/>')
-            txt = (f'浙江 缺卷 {z["missing"]} · 缺题 {z["stem"] + z["option"]}' if (z['missing'] or zp) else '浙江 无缺口')
+            txt = (f'其中浙江：缺卷 {z["missing"]}，缺题 {z["stem"] + z["option"]}' if (z['missing'] or zp)
+                   else '其中浙江：无缺题' if k == 'P2' else '其中浙江：无缺口')
             out.append(f'<text x="{x + 22}" y="{y0 + ch - 23}" font-size="12.5" font-weight="700" fill="#92400e">★ {txt}</text>')
-    yb = y0 + ch + 34
-    items = [('行测缺题干', s['x_stem'], '题'), ('行测缺选项', s['x_option'], '题'), ('行测缺答案', s['x_answer'], '题'),
-             ('申论缺题目、材料、答案', s['s_question'] + s['s_material'] + s['s_answer'], ''), ('答案对应存疑', s['unverified'], '题')]
-    out.append(f'<text x="24" y="{yb}" font-size="12.5" fill="#64748b">缺口类型</text>')
-    xx = 90
-    for label, v, u in items:
-        t = f'{label} {v:,}{(" " + u) if u and v else ""}' if v else f'{label} 0'
-        w = 22 + sum(12.5 if ord(ch_) > 255 else 7 for ch_ in t)
-        out.append(f'<rect x="{xx}" y="{yb - 16}" width="{w:.0f}" height="24" rx="12" fill="{"#fff1f2" if v else "#f1f5f9"}"/>')
-        out.append(f'<text x="{xx + 11}" y="{yb}" font-size="12" fill="{"#9f1239" if v else "#94a3b8"}">{t}</text>')
-        xx += w + 8
     out.append('</svg>')
     return '\n'.join(out) + '\n'
 
 
-def readme_block(new, summary_line):
+def scope_stats(rows, xingce, shenlun, ledger, keep, lo, hi):
+    """某范围内：已收录、缺卷、缺题数、有缺题的试卷数。"""
+    st = Counter(r['status'] for r in ledger if keep(r['area']) and lo <= r['year'] <= hi)
+    q, pp = 0, 0
+    for r in rows:
+        if keep(r['area']) and lo <= int(r['year']) <= hi:
+            v = xingce.get(r['path']) or shenlun.get(r['path']) or {}
+            n = sum(len(x) for x in v.values())
+            q += n; pp += bool(n)
+    return st['已收录'], st['缺卷'], q, pp
+
+
+def readme_block(rows, xingce, shenlun, ledger, old_collected, health):
+    focus = set(FOCUS)
+    a = scope_stats(rows, xingce, shenlun, ledger, lambda _: True, 2016, 2026)
+    f = scope_stats(rows, xingce, shenlun, ledger, lambda x: x in focus, 2016, 2026)
+    z = scope_stats(rows, xingce, shenlun, ledger, lambda x: x == KEY_AREA, 2016, 2026)
+    o = scope_stats(rows, xingce, shenlun, ledger, lambda _: True, 0, 2015)
+    def row(label, v):
+        have, miss, q, pp = v
+        rate = f'{have / (have + miss):.1%}' if have + miss else '—'
+        return f"| {label} | {have + miss:,} | {have:,} | {rate} | {miss or '—'} | {f'{q} 道（{pp} 份试卷）' if q else '—'} |"
+    head = ['| 范围 | 应有试卷 | 已收录 | 收录率 | 缺卷 | 缺题 |', '| --- | ---: | ---: | ---: | ---: | ---: |']
+    doubt = sum(len(v) for v in ANSWER_UNVERIFIED.values())
     lines = ['<!-- gwy:gaps:start -->',
-             '<p align="center"><img src="docs/assets/gaps.svg" alt="缺口与补录优先级" width="100%"></p>', '',
-             summary_line, '',
-             f'重点地区：国考、浙江、江苏、上海、北京、天津、广东、广州、深圳、福建。缺卷只统计 2016–2026 年。'
-             f'逐卷明细与分类统计见 [缺口总账](docs/GAP-STATUS.md)，汇总跟踪见 [#148]({ISSUES}148)。',
+             '缺口分两种：',
+             '',
+             '- **缺卷**：考试举行过，但库里没有这份试卷。',
+             '- **缺题**：试卷已收录，但个别题目的题干、选项或答案不全。',
+             '',
+             '### 2016 年以来',
+             '',
+             '每年每个地区应有哪些试卷，依据当年招录公告逐份登记，缺卷和缺题都有具体数字。',
+             '',
+             *head, row('全部地区', a), row('重点地区', f), row(f'其中{KEY_AREA}', z),
+             '',
+             f'重点地区为国考、浙江、江苏、上海、北京、天津、广东、广州、深圳、福建。另有北京 2025 年行测 {doubt} 道题的参考答案可能与题号错位，未计入缺题。'
+             if doubt else '重点地区为国考、浙江、江苏、上海、北京、天津、广东、广州、深圳、福建。',
+             '',
+             health,
+             '',
+             '### 全部年份',
+             '',
+             '| 年份 | 应有试卷 | 已收录 | 缺卷 | 缺题 |', '| --- | ---: | ---: | ---: | ---: |',
+             f"| 2016–2026 | {a[0] + a[1]:,} | {a[0]:,} | {a[1]} | {a[2]} 道 |",
+             f"| 2008–2015 | 未统计 | {old_collected:,} | 未统计 | {o[2] or 0} 道 |",
+             '',
+             f'2015 年及以前已收录的 {old_collected} 份试卷逐题核对过，没有缺题；但这几年每年应有多少份试卷还没有逐年核对，因此缺卷数暂不统计。',
+             '',
+             f'以上按不同试卷计数：同一份试卷有多个版本时只算一次，公安招警和公检法等 {len(special_rows())} 份专项收录不计入。',
+             '',
+             '### 补录顺序',
+             '',
+             '从 P1 到 P4 依次补录；浙江在重点地区中最优先。',
+             '',
+             '<p align="center"><img src="docs/assets/gaps.svg" alt="补录顺序：各级的缺卷与缺题" width="100%"></p>',
+             '',
+             f'逐份清单见 [缺口总账](docs/GAP-STATUS.md)，进展在 [#148]({ISSUES}148) 跟踪。',
              '<!-- gwy:gaps:end -->']
     return '\n'.join(lines)
 
@@ -745,11 +788,9 @@ def main():
     s_new = summary(data[0], data[1], data[2], data[3], 2016, 2026)
     s_old = summary(data[0], data[1], data[2], data[3], 0, 2015)
     health = health_svg(data[0], grades(data[0], data[1], data[2]), data[3])
-    health_block = '<!-- gwy:health:start -->\n' + scroll_img('docs/assets/health.svg', '逐卷分布与健康度：2008–2026 年各地区各年份的每份试卷及其状态', health) + '\n<!-- gwy:health:end -->'
-    cnt = Counter(grades(data[0], data[1], data[2]).values())
-    line = (f"已收录 **{len(data[0]):,}** 份试卷，其中 **{cnt[0]:,}** 份完整、**{len(data[0]) - cnt[0]}** 份有局部缺口；"
-            f"2016–2026 年另有 **{s_new['missing']}** 份应有试卷尚未收录。")
-    for name, block in (('gaps', readme_block(s_new, line)), ('coverage', coverage_block(cov)), ('health', health_block)):
+    health_img = scroll_img('docs/assets/health.svg', '逐卷分布：2008–2026 年各地区各年份的每份试卷及其状态', health)
+    gaps = readme_block(data[0], data[1], data[2], cov['ledger'], cov['2008–2015']['collected'], health_img)
+    for name, block in (('gaps', gaps), ('coverage', coverage_block(cov, data[0]))):
         readme = re.sub(rf'<!-- gwy:{name}:start -->.*?<!-- gwy:{name}:end -->', lambda _: block, readme, flags=re.S)
     outputs = {ROOT / 'docs/GAP-STATUS.md': status + '\n', readme_path: readme,
                ROOT / 'docs/assets/dashboard.svg': dashboard_svg(data[0], s, cov),
