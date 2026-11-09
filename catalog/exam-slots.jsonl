@@ -48,7 +48,7 @@
 {"area": "广西", "basis": null, "papers": ["省考/广西/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2016/申论-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "统考", "year": 2016}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
-{"area": "新疆兵团", "basis": "仅中国教育在线转载，缺兵团考试网官方原公告；2016 行测已由粉笔收录", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2016}
+{"area": "新疆兵团", "basis": "同年兵团考试录用行测已收录（省考/新疆兵团/2016/行测-统考.md，粉笔），兵团考录公共科目为行测、申论两科，故同年申论为应有试卷；官方原公告未能找回", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2016}
 {"area": "新疆兵团", "basis": null, "papers": ["省考/新疆兵团/2016/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2016}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2016/申论-A类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A类", "year": 2016}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2016/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2016}
@@ -681,8 +681,8 @@
 {"area": "海南", "basis": null, "papers": ["省考/海南/2021/申论-乡镇卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "乡镇卷", "year": 2021}
 {"area": "海南", "basis": null, "papers": ["省考/海南/2021/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2021}
 {"area": "海南", "basis": null, "papers": ["省考/海南/2021/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2021}
-{"area": "深圳", "basis": "待核：转载站显示深圳2020年11月招1069人（12月笔试）、2021年11月「2022年服务双区专项」招974人，未见独立2021年度市考；官网未能访问，待官方公告确认", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2021}
-{"area": "深圳", "basis": "待核：转载站显示深圳2020年11月招1069人（12月笔试）、2021年11月「2022年服务双区专项」招974人，未见独立2021年度市考；官网未能访问，待官方公告确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2021}
+{"area": "深圳", "basis": "http://hrss.sz.gov.cn/szksy/zwgk/tzgg/content/post_8528867.html；深圳市考试院 2021-01-30 转发《广东省2021年考试录用公务员公告》，深圳职位纳入广东省考（2021-03-14 笔试），各招录机关体检、拟录用公示均依广东省2021年考录；深圳单独的专项招录为「2020年服务双区建设专项」（2020-11 发布）与「2022年服务双区建设专项」，无以 2021 年命名的深圳单独考试", "papers": [], "sources": [], "status": "无独立考试", "subject": "申论", "variant": null, "year": 2021}
+{"area": "深圳", "basis": "http://hrss.sz.gov.cn/szksy/zwgk/tzgg/content/post_8528867.html；深圳市考试院 2021-01-30 转发《广东省2021年考试录用公务员公告》，深圳职位纳入广东省考（2021-03-14 笔试），各招录机关体检、拟录用公示均依广东省2021年考录；深圳单独的专项招录为「2020年服务双区建设专项」（2020-11 发布）与「2022年服务双区建设专项」，无以 2021 年命名的深圳单独考试", "papers": [], "sources": [], "status": "无独立考试", "subject": "行测", "variant": null, "year": 2021}
 {"area": "湖北", "basis": null, "papers": ["省考/湖北/2021/申论-县级卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县级卷", "year": 2021}
 {"area": "湖北", "basis": null, "papers": ["省考/湖北/2021/申论-选调生.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "选调生", "year": 2021}
 {"area": "湖北", "basis": null, "papers": ["省考/湖北/2021/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2021}
@@ -780,8 +780,8 @@
 {"area": "广西", "basis": null, "papers": ["省考/广西/2022/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2022}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2022/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2022}
 {"area": "新疆", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": null, "year": 2022}
-{"area": "新疆兵团", "basis": "仅btzx.com.cn媒体转载，缺btpta.xjbt.gov.cn官方2022公告", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2022}
-{"area": "新疆兵团", "basis": "仅btzx.com.cn媒体转载，缺btpta.xjbt.gov.cn官方2022公告", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2022}
+{"area": "新疆兵团", "basis": "https://www.huhst.edu.cn/chxy/info/1104/3501.htm；《2022年新疆生产建设兵团面向社会招录公务员公告》（高校转载原文）：兵团组织 2022 年考试录用，计划 1507 名，2022-03-26 笔试行测、申论，申论分一类、二类、三类卷；兵团考试信息网旧页已下线", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2022}
+{"area": "新疆兵团", "basis": "https://www.huhst.edu.cn/chxy/info/1104/3501.htm；《2022年新疆生产建设兵团面向社会招录公务员公告》（高校转载原文）：兵团组织 2022 年考试录用，计划 1507 名，2022-03-26 笔试行测、申论，申论分一类、二类、三类卷；兵团考试信息网旧页已下线", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": null, "year": 2022}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2022/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2022}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2022/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2022}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2022/申论-名校优生选调.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "名校优生选调", "year": 2022}
@@ -904,8 +904,8 @@
 {"area": "广西", "basis": null, "papers": ["省考/广西/2023/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2023}
 {"area": "新疆", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2023}
 {"area": "新疆", "basis": null, "papers": ["省考/新疆/2023/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2023}
-{"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2023}
-{"area": "新疆兵团", "basis": "兵团当年考试身份与卷型待确认（可能使用新疆统一试卷）", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2023}
+{"area": "新疆兵团", "basis": "http://btpta.xjbt.gov.cn/c/2023-03-16/8269716.shtml；兵团考试信息网《兵团2023年度考试录用公务员笔试成绩和资格复审等相关事项公告》及 http://btpta.xjbt.gov.cn/c/2023-04-04/8273047.shtml 面试公告：兵团单独组织 2023 年度考录并划定兵团机关、师市笔试合格线（官网旧页已下线，标题与摘要见搜索引擎收录）", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2023}
+{"area": "新疆兵团", "basis": "http://btpta.xjbt.gov.cn/c/2023-03-16/8269716.shtml；兵团考试信息网《兵团2023年度考试录用公务员笔试成绩和资格复审等相关事项公告》及 http://btpta.xjbt.gov.cn/c/2023-04-04/8273047.shtml 面试公告：兵团单独组织 2023 年度考录并划定兵团机关、师市笔试合格线（官网旧页已下线，标题与摘要见搜索引擎收录）", "papers": [], "sources": [], "status": "缺卷", "subject": "行测", "variant": null, "year": 2023}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2023/申论-B类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "B类", "year": 2023}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2023/申论-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "C类", "year": 2023}
 {"area": "江苏", "basis": null, "papers": ["省考/江苏/2023/申论-名校优生选调.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "名校优生选调", "year": 2023}
@@ -1300,8 +1300,8 @@
 {"area": "浙江", "basis": null, "papers": ["省考/浙江/2026/行测-C类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "C类", "year": 2026}
 {"area": "海南", "basis": null, "papers": ["省考/海南/2026/申论-A类.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "A类", "year": 2026}
 {"area": "海南", "basis": null, "papers": ["省考/海南/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
-{"area": "深圳", "basis": "待核：转载站显示2026年广东省考含深圳职位（692人），未见独立深圳市考；官网未能访问，待官方公告确认", "papers": [], "sources": [], "status": "待核", "subject": "申论", "variant": null, "year": 2026}
-{"area": "深圳", "basis": "待核：转载站显示2026年广东省考含深圳职位（692人），未见独立深圳市考；官网未能访问，待官方公告确认", "papers": [], "sources": [], "status": "待核", "subject": "行测", "variant": null, "year": 2026}
+{"area": "深圳", "basis": "http://www.zzb.sz.gov.cn/notice/announcement/content/post_1649287.html；深圳市委组织部《广东省2026年考试录用公务员深圳市职位资格审核等有关事项的公告》，深圳职位纳入广东省考；深圳市考试院考试列表中最新的深圳单独专项招录为 2025 年服务高质量发展专项，2026 年未见单独专项招录（核查于 2026-11-09）", "papers": [], "sources": [], "status": "无独立考试", "subject": "申论", "variant": null, "year": 2026}
+{"area": "深圳", "basis": "http://www.zzb.sz.gov.cn/notice/announcement/content/post_1649287.html；深圳市委组织部《广东省2026年考试录用公务员深圳市职位资格审核等有关事项的公告》，深圳职位纳入广东省考；深圳市考试院考试列表中最新的深圳单独专项招录为 2025 年服务高质量发展专项，2026 年未见单独专项招录（核查于 2026-11-09）", "papers": [], "sources": [], "status": "无独立考试", "subject": "行测", "variant": null, "year": 2026}
 {"area": "湖北", "basis": "同年另一科目已收录", "papers": [], "sources": [], "status": "缺卷", "subject": "申论", "variant": null, "year": 2026}
 {"area": "湖北", "basis": null, "papers": ["省考/湖北/2026/行测-统考.md"], "sources": ["粉笔"], "status": "已收录", "subject": "行测", "variant": "统考", "year": 2026}
 {"area": "湖南", "basis": null, "papers": ["省考/湖南/2026/申论-县乡卷.md"], "sources": ["粉笔"], "status": "已收录", "subject": "申论", "variant": "县乡卷", "year": 2026}
