@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="400" viewBox="0 0 920 400" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
 <rect width="920" height="400" rx="14" fill="#ffffff"/>
 <text x="24" y="38" font-size="20" font-weight="700" fill="#0f172a">逐年收录试卷数</text>
-<text x="24" y="62" font-size="13" fill="#64748b">按考试年份统计 · 行测 736 份 · 申论 934 份</text>
+<text x="24" y="62" font-size="13" fill="#64748b">按考试年份统计 · 行测 735 份 · 申论 934 份</text>
 <rect x="724" y="27" width="12" height="12" rx="3" fill="#3b82f6"/><text x="742" y="38" font-size="13" fill="#334155">行测</text>
 <rect x="802" y="27" width="12" height="12" rx="3" fill="#f59e0b"/><text x="820" y="38" font-size="13" fill="#334155">申论</text>
 <line x1="56" y1="348.0" x2="896" y2="348.0" stroke="#cbd5e1"/>
@@ -71,8 +71,8 @@
 <rect x="521.2" y="189.4" width="18.1" height="158.6" rx="3" fill="#f59e0b"/>
 <text x="530.3" y="184.4" font-size="10" fill="#475569" text-anchor="middle">61</text>
 <text x="520.2" y="368" font-size="11" fill="#475569" text-anchor="middle">2018</text>
-<rect x="545.3" y="189.4" width="18.1" height="158.6" rx="3" fill="#3b82f6"/>
-<text x="554.4" y="184.4" font-size="10" fill="#475569" text-anchor="middle">61</text>
+<rect x="545.3" y="192.0" width="18.1" height="156.0" rx="3" fill="#3b82f6"/>
+<text x="554.4" y="187.0" font-size="10" fill="#475569" text-anchor="middle">60</text>
 <rect x="565.4" y="163.4" width="18.1" height="184.6" rx="3" fill="#f59e0b"/>
 <text x="574.5" y="158.4" font-size="10" fill="#475569" text-anchor="middle">71</text>
 <text x="564.4" y="368" font-size="11" fill="#475569" text-anchor="middle">2019</text>
