@@ -1017,7 +1017,7 @@ C
 
 如图，在长方形的跑道上，甲乙两人分别从A处和B处同时出发，均按顺时针方向沿跑道匀速奔跑，已知甲的速度为5米/秒，且甲第一次追上乙时，甲恰好跑了5圈回到A处，则乙的速度为：
 
-![](assets-fenbi-26633/d37655bed8ca7fb8cc3f63fe0264e1834f551452af5c656cd543b1189b73da52.jpg)
+![](图片/assets-fenbi-26633/d37655bed8ca7fb8cc3f63fe0264e1834f551452af5c656cd543b1189b73da52.jpg)
 
 A. 4.8米/秒
 
@@ -1302,7 +1302,7 @@ D
 
 如图，A-BCD是棱长为3的正四面体，M是棱上的一点，且MB=2MA，G是三角形BCD的重心，动点P在棱BC上，则PM+PG的最小值：
 
-![](assets-fenbi-26633/8198c83db509586449d6c9f9ad509939c8cd4a0b72698b79d26f6ef61b096187.png)
+![](图片/assets-fenbi-26633/8198c83db509586449d6c9f9ad509939c8cd4a0b72698b79d26f6ef61b096187.png)
 
 A. √10
 
@@ -1326,7 +1326,7 @@ B
 
 展开图如下：
 
-![](assets-fenbi-26633/7054996425b6ecbaa32eba329d3b12e313049cceadf95a02f2373311a5fd84d2.png)
+![](图片/assets-fenbi-26633/7054996425b6ecbaa32eba329d3b12e313049cceadf95a02f2373311a5fd84d2.png)
 
 已知：∠ABC = 60°，∠GBC=30°，MB = 2AB/3 = 2 ,
 
@@ -1594,15 +1594,15 @@ A
 
 ### 第 48 题
 
-![](assets-fenbi-26633/0e6b9e8bb3d268275b53d78088bb29fd5874e90a12b59838aa34a8dbab0cc175.png)
+![](图片/assets-fenbi-26633/0e6b9e8bb3d268275b53d78088bb29fd5874e90a12b59838aa34a8dbab0cc175.png)
 
-A. ![](assets-fenbi-26633/e5051eb163eee1086d98bdef8fadbc5e88e7251a397648f21cc4ccea0bc41b7f.png)
+A. ![](图片/assets-fenbi-26633/e5051eb163eee1086d98bdef8fadbc5e88e7251a397648f21cc4ccea0bc41b7f.png)
 
-B. ![](assets-fenbi-26633/4c89157b58cfdeb0ba2076b03643800e03af728f9ce9ead3e07f92bfb17d5280.png)
+B. ![](图片/assets-fenbi-26633/4c89157b58cfdeb0ba2076b03643800e03af728f9ce9ead3e07f92bfb17d5280.png)
 
-C. ![](assets-fenbi-26633/761c2d330ca783a385fe8bcf8a45a4765fb0a0a9bb600a7aeb295825b57e6d6b.png)
+C. ![](图片/assets-fenbi-26633/761c2d330ca783a385fe8bcf8a45a4765fb0a0a9bb600a7aeb295825b57e6d6b.png)
 
-D. ![](assets-fenbi-26633/67080f8d3209b49d13b3c2f3000ed02f7607c93afa36203ebe28a865514adede.png)
+D. ![](图片/assets-fenbi-26633/67080f8d3209b49d13b3c2f3000ed02f7607c93afa36203ebe28a865514adede.png)
 
 <details><summary>第 48 题 · 答案与解析</summary>
 
@@ -1624,15 +1624,15 @@ A项与题干一致；B项第三个图形与第七个图形不相同；C项第�
 
 ### 第 49 题
 
-![](assets-fenbi-26633/d9e4cd5aeb0fb979dd52219f25860fd20568dba3ca14547bf37b1eedaa42e760.png)
+![](图片/assets-fenbi-26633/d9e4cd5aeb0fb979dd52219f25860fd20568dba3ca14547bf37b1eedaa42e760.png)
 
-A. ![](assets-fenbi-26633/139a65e13149cf812abaf0379abef2c9815bbba213beb8833e1ee6709b9513b2.png)
+A. ![](图片/assets-fenbi-26633/139a65e13149cf812abaf0379abef2c9815bbba213beb8833e1ee6709b9513b2.png)
 
-B. ![](assets-fenbi-26633/dbef94672441a84e4f62fb153df12199aa36f4af1cd88ace95021656ba2e4d12.png)
+B. ![](图片/assets-fenbi-26633/dbef94672441a84e4f62fb153df12199aa36f4af1cd88ace95021656ba2e4d12.png)
 
-C. ![](assets-fenbi-26633/8b7fedd46aa526126608abd259999db82b10c9c955fb6ceb1382f2cbe2cfd698.png)
+C. ![](图片/assets-fenbi-26633/8b7fedd46aa526126608abd259999db82b10c9c955fb6ceb1382f2cbe2cfd698.png)
 
-D. ![](assets-fenbi-26633/6c77188d54f41c57986ee4f63a1c563efd258536baebab686a94feef2e304669.png)
+D. ![](图片/assets-fenbi-26633/6c77188d54f41c57986ee4f63a1c563efd258536baebab686a94feef2e304669.png)
 
 <details><summary>第 49 题 · 答案与解析</summary>
 
@@ -1684,7 +1684,7 @@ A
 
 下面给出的一套图形，其中有四个图，从中选出唯一的一项作为保持上面五个图形规律的第六个图是：
 
-![](assets-fenbi-26633/52f63d5488ccf309992c1dac7ce41529f1f9846e2b6f00022758027507019d64.jpg)
+![](图片/assets-fenbi-26633/52f63d5488ccf309992c1dac7ce41529f1f9846e2b6f00022758027507019d64.jpg)
 
 A. A
 
@@ -1716,7 +1716,7 @@ D
 
 在下面给出的一套图形，其中有四个图，从中选出唯一的一项作为保持上面五个图形规律的第六个图：
 
-![](assets-fenbi-26633/cb3fb996eccc70f94385833d2355a6ae499511e01c5d069e0a84e93ed6fe7fb9.jpg)
+![](图片/assets-fenbi-26633/cb3fb996eccc70f94385833d2355a6ae499511e01c5d069e0a84e93ed6fe7fb9.jpg)
 
 A. A
 
@@ -1748,7 +1748,7 @@ A
 
 下面给出的一套图形，其中有四个图，从中选出唯一的一项作为保持上面五个图形规律的第六个图是：
 
-![](assets-fenbi-26633/41c76c1f63057f8b1b740f36c8a15e6c1296578da99a29d9b040485af6c46736.jpg)
+![](图片/assets-fenbi-26633/41c76c1f63057f8b1b740f36c8a15e6c1296578da99a29d9b040485af6c46736.jpg)
 
 A. A
 
@@ -1780,7 +1780,7 @@ C
 
 下面四个图形中，只有一个是由上面的四个图形拼合而成（只能通过上下左右平移），请把它找出来：
 
-![](assets-fenbi-26633/52b7bb85aa75295e8de71882c4bf3d38be55ecc52d5b16415d5dd5bd3236b98b.jpg)
+![](图片/assets-fenbi-26633/52b7bb85aa75295e8de71882c4bf3d38be55ecc52d5b16415d5dd5bd3236b98b.jpg)
 
 A. A
 
@@ -1800,7 +1800,7 @@ A
 
 方法一：本题考查的是平面拼合，可以采用平行等长消去的方式。消去平等长的线段后进行组合得到轮廓图，即为A项。平行等长消去方式如下图所示。
 
-![](assets-fenbi-26633/ea220e9efbb41c437eacca5a13031e4e3f3a6fd8548a10feaf991b67ef46c8b0.png)
+![](图片/assets-fenbi-26633/ea220e9efbb41c437eacca5a13031e4e3f3a6fd8548a10feaf991b67ef46c8b0.png)
 
 方法二：观察题干图形可发现有三个直角，因此，拼合后的图形可分割出三个直角，排除B、C、D三项。
 故正确答案为 A。
@@ -1813,7 +1813,7 @@ A
 
 下面四个图形中，只有一个是由上面的四个图形拼合而成（只能通过上下左右平移），请把它找出来：
 
-![](assets-fenbi-26633/3ae585862d8117c6906bda92e8bc39bc051adae0165d2e6af57a7389898732d6.png)
+![](图片/assets-fenbi-26633/3ae585862d8117c6906bda92e8bc39bc051adae0165d2e6af57a7389898732d6.png)
 
 A. A
 
@@ -1833,7 +1833,7 @@ B
 
 方法一：本题考查的是平面拼合，可以采用平行等长消去的方式。消去平行等长的线段后进行组合得到轮廓图，即为B项。平行等长消去方式如下图所示：
 
-![](assets-fenbi-26633/f16d79e8482278eb21e3b2faf014505fbb469a600791650f0f7b93e6e64b186b.png)
+![](图片/assets-fenbi-26633/f16d79e8482278eb21e3b2faf014505fbb469a600791650f0f7b93e6e64b186b.png)
 
 方法二：题干图形全为三角形，直接排除C项；观察A项，可切割成四个相同的三角形，与题干不符，排除；D项可切割成两组相同的三角形，与题干不符，排除。
 
@@ -1847,7 +1847,7 @@ B
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-26633/75d5efda76499d91cf77c0ec074cce01470ffc7920f6d22060ac28081b09d9ea.jpg)
+![](图片/assets-fenbi-26633/75d5efda76499d91cf77c0ec074cce01470ffc7920f6d22060ac28081b09d9ea.jpg)
 
 A. A
 
@@ -1869,17 +1869,17 @@ C
 
 A项：该项中出现的面是面d和面a，展开图中面d和和面a的公共边与面a的阴影不挨着，而选项中面a和面d的公共边和面a的阴影部分挨着，选项与题干不一致，排除；
 
-![](assets-fenbi-26633/6940aa8a715474df0132df50670848aa9883951672343441d41d87ed8c679d94.png)
+![](图片/assets-fenbi-26633/6940aa8a715474df0132df50670848aa9883951672343441d41d87ed8c679d94.png)
 
 B项：该项出现的是面d和面b，展开图中面d和面b的公共边与面d的短阴影边挨着，而选项中二者的公共边与面d的长阴影边挨着，选项与题干不一致，排除；
 
-![](assets-fenbi-26633/400bb69709c577bf10e638a8e3f10513bee1270c7d7feed44a4f42848cda4ae1.png)
+![](图片/assets-fenbi-26633/400bb69709c577bf10e638a8e3f10513bee1270c7d7feed44a4f42848cda4ae1.png)
 
 C项：与展开图一致，当选；
 
 D项：该项出现面a和面c，展开图中面a和面c的公共边与面c的阴影部分挨着，而选项中二者的公共边没有与面c的阴影挨着，选项与题干不一致，排除。
 
-![](assets-fenbi-26633/48730cd32e12ddcb052a4623b04154fd40a1a3cd15706562793a042b9a0b0d80.png)
+![](图片/assets-fenbi-26633/48730cd32e12ddcb052a4623b04154fd40a1a3cd15706562793a042b9a0b0d80.png)
 
 故正确答案为C。
 
@@ -1891,7 +1891,7 @@ D项：该项出现面a和面c，展开图中面a和面c的公共边与面c的�
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-26633/4b80525ab36c3c6df8e58b993019355cedbd0d99e95b8b7ede95c8ee065d6d71.png)
+![](图片/assets-fenbi-26633/4b80525ab36c3c6df8e58b993019355cedbd0d99e95b8b7ede95c8ee065d6d71.png)
 
 A. A
 
@@ -1911,11 +1911,11 @@ B
 
 本题考查空间重构能力。将原有平面展开图进行标面，即：
 
-![](assets-fenbi-26633/06c7622f522adff55edcd2f588ed544a53c47a814a07a0d2643670f7cfa82c53.png)
+![](图片/assets-fenbi-26633/06c7622f522adff55edcd2f588ed544a53c47a814a07a0d2643670f7cfa82c53.png)
 
 观察选项，发现选项中均存在面③，且面③是唯一面，将面③作为参考面。将面③由底面至顶点的垂线画一个箭头，如平面图所示（相同样式的线为同一条线）；①②④三面相对面③的位置关系为：面①位于面③的右方，面②位于面③的左边，面④位于面③下方。
 
-![](assets-fenbi-26633/8660c01cda5fd5e856d50563cf857f16060aa355d928b3265ddf90637f839020.png)
+![](图片/assets-fenbi-26633/8660c01cda5fd5e856d50563cf857f16060aa355d928b3265ddf90637f839020.png)
 
 A项：箭头的右方为面①，而非面②，排除；
 
@@ -1935,7 +1935,7 @@ D项：箭头的左方应为②，而非面①，排除。
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-26633/52c7055ed74427a2afcaa37480d52b094ccddb91ca3d05023ae1719d66205f4b.jpg)
+![](图片/assets-fenbi-26633/52c7055ed74427a2afcaa37480d52b094ccddb91ca3d05023ae1719d66205f4b.jpg)
 
 A. A
 
@@ -1963,7 +1963,7 @@ C项：与题干一致，当选；
 
 D项：该项中黑色正方形的面和白色正方形的面的公共边与黑色正方形挨着，而展开图中二者的公共边与白色正方形挨着，选项与题干不一致，排除。
 
-![](assets-fenbi-26633/537100d5716354b1a2c1074687b7c93b95698caf12d672691f9582ecdc780290.png)
+![](图片/assets-fenbi-26633/537100d5716354b1a2c1074687b7c93b95698caf12d672691f9582ecdc780290.png)
 
 故正确答案为C。
 
@@ -1977,7 +1977,7 @@ D项：该项中黑色正方形的面和白色正方形的面的公共边与黑�
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-26633/30b3098dab6dec2a71c1e956bf7aa5690b0cc8934c1e51431f757945a481cdff.jpg)
+![](图片/assets-fenbi-26633/30b3098dab6dec2a71c1e956bf7aa5690b0cc8934c1e51431f757945a481cdff.jpg)
 
 A. A
 
@@ -1997,7 +1997,7 @@ A
 
 本题属于空间重构类，主要考查六面体。
 
-![](assets-fenbi-26633/e4ff907d30a6aa668b3cc08adc6473c83bf1886d0a5ee4d9fc4af5f3cc436d4f.png)
+![](图片/assets-fenbi-26633/e4ff907d30a6aa668b3cc08adc6473c83bf1886d0a5ee4d9fc4af5f3cc436d4f.png)
 
 在平面展开图中标示出三组相对面，即①和⑥相对、②和④相对、③和⑤相对。根据相对面必然出现且只出现一次，相对面不相邻，排除B、C、D三项。
 
@@ -2013,7 +2013,7 @@ A
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-26633/e1eb3a90c26803374fc1358eab9645c5212aa861f151cfa0b33ff761e34ab8c8.png)
+![](图片/assets-fenbi-26633/e1eb3a90c26803374fc1358eab9645c5212aa861f151cfa0b33ff761e34ab8c8.png)
 
 A. A
 
@@ -2035,7 +2035,7 @@ D
 
 将此八面体的公共边用相同样式线条标示，发现所有含有阴影三角形的相邻面均为空白面。
 
-![](assets-fenbi-26633/7088074b2752cd584ac2b64313ec905a7987b6d7faf9d4a5ee5f3beba8fbe4cf.png)
+![](图片/assets-fenbi-26633/7088074b2752cd584ac2b64313ec905a7987b6d7faf9d4a5ee5f3beba8fbe4cf.png)
 
 即平面展开图中，空白面和空白面之间互不相邻，阴影面和阴影面互不相邻，因此折叠后不可能出现相邻的情况，排除A、B、C三项。
 
@@ -2363,7 +2363,7 @@ D项，说明人比电脑选号有优势，属于补充论据支持结论，不�
 
 在以下5×5矩阵中，每个小方格中可填入一个汉字，要求每行每列均含有金、木、水、火、土5个汉字，不能重复也不能遗漏，根据已经给到的条件，矩阵中①所在方格中应填入的汉字是：
 
-![](assets-fenbi-26633/f37d1a4160186257d32faff8185105128164bbb6db0c58cebc117336e2c99f93.png)
+![](图片/assets-fenbi-26633/f37d1a4160186257d32faff8185105128164bbb6db0c58cebc117336e2c99f93.png)
 
 A. 金
 
@@ -3058,7 +3058,7 @@ B
 
 ## 材料 4
 
-![](assets-fenbi-26633/445be0894565055aa83876ee02a017477c4a137b15d9ba3d0d6762ed790b091e.png)
+![](图片/assets-fenbi-26633/445be0894565055aa83876ee02a017477c4a137b15d9ba3d0d6762ed790b091e.png)
 
 | 年份 | 2005 | 2006 | 2007 | 2008 | 2009 | 2010 | 2011 | 2012 |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -3236,7 +3236,7 @@ C
 
 ## 材料 5
 
-![](assets-fenbi-26633/6f3eed41a9fca9faf9936372cb37c4fb70804ef08ab804c9b7d1a371f48dfedf.png)
+![](图片/assets-fenbi-26633/6f3eed41a9fca9faf9936372cb37c4fb70804ef08ab804c9b7d1a371f48dfedf.png)
 
 | 时期 | 1-2 月 | 1-3 月 | 1-4 月 | 1-5 月 | 1-6 月 | 1-7 月 | 1-8 月 | 1-9 月 | 1-10 月 | 1-11 月 | 1-12 月 | 同比增长 (%) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -3424,7 +3424,7 @@ B
 
 ## 材料 6
 
-![](assets-fenbi-26633/bedfd14019c53cc34b5f9dfe9535ef8569db9151f63c68c1513bf69dceacb48f.png)
+![](图片/assets-fenbi-26633/bedfd14019c53cc34b5f9dfe9535ef8569db9151f63c68c1513bf69dceacb48f.png)
 
 | 医疗卫生机构 | 诊疗人次（亿人次） 2011年 | 诊疗人次（亿人次） 2012年 | 入院人数（万人） 2011年 | 入院人数（万人） 2012年 |
 | --- | ---: | ---: | ---: | ---: |
@@ -3438,7 +3438,7 @@ B
 | 基层医疗卫生机构 | 38.1 | 41.1 | 3775 | 4209 |
 | 其他机构 | 2.0 | 2.4 | 768 | 876 |
 
-![](assets-fenbi-26633/8018cf0329b742d5b96b23cae9185adef39610ff647c2d595535d3d1afe59f9f.png)
+![](图片/assets-fenbi-26633/8018cf0329b742d5b96b23cae9185adef39610ff647c2d595535d3d1afe59f9f.png)
 
 ### 第 96 题
 
@@ -3598,7 +3598,7 @@ C
 
        2013年6月，全国互联网普及率为44.1%，同比增长2.0%；手机网民规模达46400万人，同比增加4379万人，网民中使用手机上网的人数占78.63%；农村网民占27.9%，规模达16500万人，同比增加908万人。韩国、日本互联网普及率分别为83.0%、79.0%。
 
-![](assets-fenbi-26633/0ddc29d3409db156f74de67e9d887ce220fe79fb4f30c18ceda565bc562cd2d8.png)
+![](图片/assets-fenbi-26633/0ddc29d3409db156f74de67e9d887ce220fe79fb4f30c18ceda565bc562cd2d8.png)
 
 ### 第 101 题
 

@@ -155,7 +155,7 @@ D
 
 ### 第 5 题
 
-![](assets-fenbi-133/507c505e957dbbdad5a5b7a993593a4640ef09c276c157866c21f3dc74cb45af.png)
+![](图片/assets-fenbi-133/507c505e957dbbdad5a5b7a993593a4640ef09c276c157866c21f3dc74cb45af.png)
 
 A. 5
 
@@ -291,7 +291,7 @@ B
 
 **解析**
 
-![](assets-fenbi-133/6904464a48a48bff8892d6af2b4e72ae3b76c5c38ef71142783e4e89f4a3ac60.png)
+![](图片/assets-fenbi-133/6904464a48a48bff8892d6af2b4e72ae3b76c5c38ef71142783e4e89f4a3ac60.png)
 
 如图所示，设两地相距x米，根据题意可列式：70%x+(2/3)x−220 = x，解得x=600，故两地相距600米。
 
@@ -353,7 +353,7 @@ B
 
 **解析**
 
-![](assets-fenbi-133/58d2c3e93b6545b0976896489e5ef876f37308012a09eab09c7b99c2b0bb676e.png)
+![](图片/assets-fenbi-133/58d2c3e93b6545b0976896489e5ef876f37308012a09eab09c7b99c2b0bb676e.png)
 
 根据表格显示：
 
@@ -397,7 +397,7 @@ B
 
 赋值浓度15%的溶液的量为100，设每次加水量为X，列表如下：
 
-![](assets-fenbi-133/4069db7bc13581062826ab469db33b3d1b40156aa01eefa694bea8e525a8a143.png)
+![](图片/assets-fenbi-133/4069db7bc13581062826ab469db33b3d1b40156aa01eefa694bea8e525a8a143.png)
 
 根据公式：浓度=溶质/溶液，则12% = 15/(100 + X)，解得X＝25。则第三次加入同样的水，浓度= 15/(100+25+25)=10%。
 
@@ -519,7 +519,7 @@ B
 
 设手机原来进价为a元，由进价、利润率和售价的关系，列表如下：
 
-![](assets-fenbi-133/25f04fa26b3bd101ee211e012101e0f833a94d4f72dfa83fa287f7a2c5b8bab3.png)
+![](图片/assets-fenbi-133/25f04fa26b3bd101ee211e012101e0f833a94d4f72dfa83fa287f7a2c5b8bab3.png)
 
 |  | 进价（元） | 售价（元） |
 | --- | --- | --- |
@@ -2506,7 +2506,7 @@ D项动物园虽然禁锢了猴子，但活动范围较大。
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-133/c9e203b67db1061282631dd9411de9b0bc779fb4a2e15b716a0e2f814e68298f.png)
+![](图片/assets-fenbi-133/c9e203b67db1061282631dd9411de9b0bc779fb4a2e15b716a0e2f814e68298f.png)
 
 A. A
 
@@ -2540,7 +2540,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-133/d062f100172e695feb39f2f04d56ad246b667a6eb29de1349880391487315938.png)
+![](图片/assets-fenbi-133/d062f100172e695feb39f2f04d56ad246b667a6eb29de1349880391487315938.png)
 
 A. A
 
@@ -2574,7 +2574,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-133/ae5a7084d152edae72bbb42bf542ede638959f61543b3419be0f76dfcad36585.png)
+![](图片/assets-fenbi-133/ae5a7084d152edae72bbb42bf542ede638959f61543b3419be0f76dfcad36585.png)
 
 A. A
 
@@ -2608,7 +2608,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-133/9ce2d980f888ad3132ff2f7b9113a93bbabd3e7efd97eda4429f9e98f5ece388.png)
+![](图片/assets-fenbi-133/9ce2d980f888ad3132ff2f7b9113a93bbabd3e7efd97eda4429f9e98f5ece388.png)
 
 A. A
 
@@ -2642,7 +2642,7 @@ C
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-133/7b43352f148bde68679d12ed628c3f9d1f360a080150da0e1693bb0bf6455122.png)
+![](图片/assets-fenbi-133/7b43352f148bde68679d12ed628c3f9d1f360a080150da0e1693bb0bf6455122.png)
 
 A. A
 
@@ -2682,7 +2682,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-133/1d0f8c83e572ecfa5b9d70f09787ac16c1c3a596db111b0bc27c0a9f6170a63c.png)
+![](图片/assets-fenbi-133/1d0f8c83e572ecfa5b9d70f09787ac16c1c3a596db111b0bc27c0a9f6170a63c.png)
 
 A. A
 
@@ -2716,7 +2716,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-133/74c4dce9a8754985ad39a33320909576669f56f1b708e58bac4df0aea90ae8d0.png)
+![](图片/assets-fenbi-133/74c4dce9a8754985ad39a33320909576669f56f1b708e58bac4df0aea90ae8d0.png)
 
 A. A
 
@@ -2750,7 +2750,7 @@ C
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-133/4552da589f6449d6211e53e0fc1f80e54ebb23b5f484a9d64ed6ebc099bb2c53.png)
+![](图片/assets-fenbi-133/4552da589f6449d6211e53e0fc1f80e54ebb23b5f484a9d64ed6ebc099bb2c53.png)
 
 A. A
 
@@ -2784,7 +2784,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-133/c33b8280fdc40c1d2759ca938b29fca90e5bc7d9a4b9b1b6f5711f6ceb9c7034.png)
+![](图片/assets-fenbi-133/c33b8280fdc40c1d2759ca938b29fca90e5bc7d9a4b9b1b6f5711f6ceb9c7034.png)
 
 A. A
 
@@ -2814,7 +2814,7 @@ C
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来。
 
-![](assets-fenbi-133/416b1d06ef19a2fcce9587d55bf4c16c9acbbf5b793bb7c61ff7ecfcd4a8efa0.png)
+![](图片/assets-fenbi-133/416b1d06ef19a2fcce9587d55bf4c16c9acbbf5b793bb7c61ff7ecfcd4a8efa0.png)
 
 A. A
 
@@ -3378,7 +3378,7 @@ D
 
 第一步：整理题干信息。
 
-![](assets-fenbi-133/66f0546468cb0495e5d5be317c810b6f2e3aa4adc445b25ad69b82480e53ddc7.png)
+![](图片/assets-fenbi-133/66f0546468cb0495e5d5be317c810b6f2e3aa4adc445b25ad69b82480e53ddc7.png)
 
 | 年份 | 1999年 | 2000年 | 2001年 | 2002年 | 2003年 | 2004年 | 2005年 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3390,7 +3390,7 @@ D
 
 A选项错误：
 
-![](assets-fenbi-133/dc1f57c05ac1d7e7e6a469d1671d7bad2fa00f48d28cc8048db9e83dfb7440cd.png)
+![](图片/assets-fenbi-133/dc1f57c05ac1d7e7e6a469d1671d7bad2fa00f48d28cc8048db9e83dfb7440cd.png)
 
 | 年份 | 1999年 | 2000年 | 2001年 | 2002年 | 2003年 | 2004年 | 2005年 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3400,7 +3400,7 @@ A选项错误：
 
 B选项错误：
 
-![](assets-fenbi-133/d6a09ce0057a0cdd8c0de02d962235028905ad5e650d7c0b7b96762956ff70aa.png)
+![](图片/assets-fenbi-133/d6a09ce0057a0cdd8c0de02d962235028905ad5e650d7c0b7b96762956ff70aa.png)
 
 | 年份 | 1999年 | 2000年 | 2001年 | 2002年 | 2003年 | 2004年 | 2005年 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3410,7 +3410,7 @@ B选项错误：
 
 C选项错误：
 
-![](assets-fenbi-133/34538c368ab5e41c1179e74881c42c84ea1e07b77294e782e0bdf3007fe5004a.png)
+![](图片/assets-fenbi-133/34538c368ab5e41c1179e74881c42c84ea1e07b77294e782e0bdf3007fe5004a.png)
 
 | 年份 | 1999年 | 2000年 | 2001年 | 2002年 | 2003年 | 2004年 | 2005年 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3420,7 +3420,7 @@ C选项错误：
 
 D选项正确：
 
-![](assets-fenbi-133/c2911e14e13c0c9d1d890c49928e09d8dde50cb98ceeedc84ec932ca8da45f0d.png)
+![](图片/assets-fenbi-133/c2911e14e13c0c9d1d890c49928e09d8dde50cb98ceeedc84ec932ca8da45f0d.png)
 
 | 年份 | 1999年 | 2000年 | 2001年 | 2002年 | 2003年 | 2004年 | 2005年 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4574,7 +4574,7 @@ D项： 定位文字材料，2007年，黑龙江省大中型工业企业共481�
 
 ## 材料 2
 
-![](assets-fenbi-133/d2a3cd9dd38ac6423e51eee931c4c49dd99d87deacbd6d671cdf6b61235a0da3.jpg)
+![](图片/assets-fenbi-133/d2a3cd9dd38ac6423e51eee931c4c49dd99d87deacbd6d671cdf6b61235a0da3.jpg)
 
 ### 第 126 题
 
@@ -4758,7 +4758,7 @@ D项：定位统计图，根据公式：利润＝出厂价-成本，则2004年�
 
 全国主要农业生产资料购买价格指数（上年同期=100）
 
-![](assets-fenbi-133/ddd8a0af14f2d2051b92c99fcd1989e692b0c23c1e0b1cae68cfa24500e9ae9d.jpg)
+![](图片/assets-fenbi-133/ddd8a0af14f2d2051b92c99fcd1989e692b0c23c1e0b1cae68cfa24500e9ae9d.jpg)
 
 | | 2006年全年 | 2007年 一季度 | 2007年 二季度 | 2007年 三季度 | 2007年 四季度 | 2007年 全年 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -4954,7 +4954,7 @@ D项：定位表格材料，可以知道工业产品农资价格的上涨速度�
 
 ## 材料 4
 
-![](assets-fenbi-133/a2904c4d0af0a54643b0c11840b80eb87b096ccde01840756a54fc6d1e6022a5.jpg)
+![](图片/assets-fenbi-133/a2904c4d0af0a54643b0c11840b80eb87b096ccde01840756a54fc6d1e6022a5.jpg)
 
 ### 第 136 题
 

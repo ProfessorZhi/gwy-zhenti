@@ -229,7 +229,7 @@ def check_images(plan, root):
         return []
     assets = _safe_assets_dir(plan)
     paper_dir = (root / plan['paper']).parent
-    assets_dir = paper_dir / assets
+    assets_dir = paper_dir / '图片' / assets
     spdf = plan['source_pdf']
     if not str(spdf.get('url', '')).startswith(('http://', 'https://')):
         raise ValueError('source_pdf.url 必须是公开 http(s) 地址')
@@ -278,7 +278,7 @@ def render_stem(plan):
         return stem
     assets = _safe_assets_dir(plan)
     for img in plan['images']:
-        stem = stem.replace(img['marker'], f"![{img['alt']}]({assets}/{img['filename']})")
+        stem = stem.replace(img['marker'], f"![{img['alt']}](图片/{assets}/{img['filename']})")
     if re.search(r'\{\{IMG\d+\}\}', stem):
         raise ValueError('题干仍有未替换的图片 marker')
     return stem

@@ -583,7 +583,7 @@ B
 
 **解析**
 
-![](assets-fenbi-213/7310b57305892ee1533bdce9787987e480ba51b6e9147a979ec256bd44d70a5a.png)
+![](图片/assets-fenbi-213/7310b57305892ee1533bdce9787987e480ba51b6e9147a979ec256bd44d70a5a.png)
 
 故正确答案为B。
 
@@ -611,7 +611,7 @@ A
 
 **解析**
 
-![](assets-fenbi-213/5ab1020bb2d04479687699dd8a4ca9b057be70bff682d2e9d62d88d3ea55bb30.png)
+![](图片/assets-fenbi-213/5ab1020bb2d04479687699dd8a4ca9b057be70bff682d2e9d62d88d3ea55bb30.png)
 
 故正确答案为A。
 
@@ -723,7 +723,7 @@ D
 
 **解析**
 
-![](assets-fenbi-213/969f2752334988833695a2489925ab0019ab34581ce9be306132f21f0b874dee.png)
+![](图片/assets-fenbi-213/969f2752334988833695a2489925ab0019ab34581ce9be306132f21f0b874dee.png)
 
 故正确答案为D。
 
@@ -751,7 +751,7 @@ C
 
 **解析**
 
-![](assets-fenbi-213/ce064a504bedb7a277ce08dd86df61bcbdd08a53b4c47cdfd8780499e199c3ab.png)
+![](图片/assets-fenbi-213/ce064a504bedb7a277ce08dd86df61bcbdd08a53b4c47cdfd8780499e199c3ab.png)
 
 故正确答案为C。
 
@@ -779,7 +779,7 @@ A
 
 **解析**
 
-![](assets-fenbi-213/3474e0f0b1a7694e4881e3e3cdfe0808cc62db00d382ab3df28eb7cdae2e3c5f.png)
+![](图片/assets-fenbi-213/3474e0f0b1a7694e4881e3e3cdfe0808cc62db00d382ab3df28eb7cdae2e3c5f.png)
 
 8=5+3，13=8+5，21=13+8，34=21+13，所以答案为54。
 
@@ -1091,7 +1091,7 @@ C
 
 长为8宽为5的长方形内有一内接阴影四边形（如图所示），则阴影四边形的面积是：
 
-![](assets-fenbi-213/2f9ee3bb595ce76b4a24d908962e6d65b4b9cabcdd7b9cc20d858c4d37736ce4.png)
+![](图片/assets-fenbi-213/2f9ee3bb595ce76b4a24d908962e6d65b4b9cabcdd7b9cc20d858c4d37736ce4.png)
 
 A. 15.5
 
@@ -1111,7 +1111,7 @@ B
 
 如图做辅助线，最中心的矩形面积为1×3=3，剩余阴影的面积等于空白的面积，即剩余阴影的面积为1/2×(5×8-3)。故阴影四边形的总面积为3 + 1/2 × (5 × 8 − 3) = 21.5。
 
-![](assets-fenbi-213/af9264bd56467668f06cc1889f30b26c5503094af6d09ffefb5a59c9ea8ff804.png)
+![](图片/assets-fenbi-213/af9264bd56467668f06cc1889f30b26c5503094af6d09ffefb5a59c9ea8ff804.png)
 
 故正确答案为B。
 
@@ -1215,7 +1215,7 @@ A
 
 如图，正四面体ABCD，P、Q分别是棱AB、CD的三等分点和四等分点(AB=3AP=4CQ)，棱AC上有一点M，要使M到P、Q距离之和最小，则MC:MA=（  ）。
 
-![](assets-fenbi-213/f785b06a0c00acd7adda7371665fe270a531903ea02b1bdcd691b8cdb8335248.png)
+![](图片/assets-fenbi-213/f785b06a0c00acd7adda7371665fe270a531903ea02b1bdcd691b8cdb8335248.png)
 
 A. 1:2
 
@@ -1235,7 +1235,7 @@ C
 
 如图展开，PQ为最短距离。△APM与△CQM相似，MC:MA=CQ:AP=3:4。
 
-![](assets-fenbi-213/2de0b00d52876e98e1665b26679af50d87a8c5f37c6de90ea80cafa0a01011cb.png)
+![](图片/assets-fenbi-213/2de0b00d52876e98e1665b26679af50d87a8c5f37c6de90ea80cafa0a01011cb.png)
 
 故正确答案为C。
 
@@ -1625,7 +1625,7 @@ D选项第2个字母和第3个字母不同，与题干规律不一致。
 
 ### 第 49 题
 
-![](assets-fenbi-213/f08ab4925bade2770e8caeb2a728f299087553b0fdef7e93b69d38b39b5a2065.jpg)
+![](图片/assets-fenbi-213/f08ab4925bade2770e8caeb2a728f299087553b0fdef7e93b69d38b39b5a2065.jpg)
 
 A. A
 
@@ -1659,7 +1659,7 @@ D选项倒数第二、三项都是数学符号，不是箭头，排除。
 
 ### 第 50 题
 
-![](assets-fenbi-213/c7ea5cf932f60637bfaf21b8b4728e6b01d633dfc47f52a715372da34e4b190f.jpg)
+![](图片/assets-fenbi-213/c7ea5cf932f60637bfaf21b8b4728e6b01d633dfc47f52a715372da34e4b190f.jpg)
 
 A. A
 
@@ -1689,7 +1689,7 @@ B
 
 请从所给的四个选项中，选择唯一的一个答案，使之呈现一定的规律性：
 
-![](assets-fenbi-213/34abc4a26bc65dbb6634eaf01150b8ea63e369375bd4ebc536d089ebbe6552e4.jpg)
+![](图片/assets-fenbi-213/34abc4a26bc65dbb6634eaf01150b8ea63e369375bd4ebc536d089ebbe6552e4.jpg)
 
 A. A
 
@@ -1723,7 +1723,7 @@ A
 
 请从所给的四个选项中，选择唯一的一个答案，使之呈现一定的规律性：
 
-![](assets-fenbi-213/e1bcef54870138c16fe4528b3050d4fc1d0896c0a270fda32e503c1e93f741f7.jpg)
+![](图片/assets-fenbi-213/e1bcef54870138c16fe4528b3050d4fc1d0896c0a270fda32e503c1e93f741f7.jpg)
 
 A. A
 
@@ -1755,7 +1755,7 @@ D
 
 请从所给的四个选项中，选择唯一的一个答案，使之呈现一定的规律性：
 
-![](assets-fenbi-213/9a4388d738bca505d82b2cbe63fe09acf92ff5a52a123cc5a65d9e082b980c58.jpg)
+![](图片/assets-fenbi-213/9a4388d738bca505d82b2cbe63fe09acf92ff5a52a123cc5a65d9e082b980c58.jpg)
 
 A. A
 
@@ -1785,7 +1785,7 @@ C
 
 请从所给的四个选项中，选择唯一的一个答案，使之呈现一定的规律性：
 
-![](assets-fenbi-213/aee23b99dc74de40c1d721b43e63ca4abb78f6a8d2e8f21f7c77f3df719b4e98.jpg)
+![](图片/assets-fenbi-213/aee23b99dc74de40c1d721b43e63ca4abb78f6a8d2e8f21f7c77f3df719b4e98.jpg)
 
 A. A
 
@@ -1817,7 +1817,7 @@ C
 
 请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-213/245d70ad9c6bf055b9df492db3126951231b8c3e0448d51c18bda6c402913e78.png)
+![](图片/assets-fenbi-213/245d70ad9c6bf055b9df492db3126951231b8c3e0448d51c18bda6c402913e78.png)
 
 A. A
 
@@ -1849,7 +1849,7 @@ C
 
 请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-213/598e1800c755e06ea8fbcff0fab3b4c59ce5fa01bf6d3600d81cb4370f6d3178.jpg)
+![](图片/assets-fenbi-213/598e1800c755e06ea8fbcff0fab3b4c59ce5fa01bf6d3600d81cb4370f6d3178.jpg)
 
 A. A
 
@@ -1881,7 +1881,7 @@ A
 
 请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-213/44fa6c39414878efe6e27dcbd08e195c6b1df896082ebdd3acf5ce6e08230810.jpg)
+![](图片/assets-fenbi-213/44fa6c39414878efe6e27dcbd08e195c6b1df896082ebdd3acf5ce6e08230810.jpg)
 
 A. A
 
@@ -1915,7 +1915,7 @@ B
 
 请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-213/c20e2fff7a534d0522e3ebbac7fb8bf574084dfdb1cdc9b084a709d63309307e.jpg)
+![](图片/assets-fenbi-213/c20e2fff7a534d0522e3ebbac7fb8bf574084dfdb1cdc9b084a709d63309307e.jpg)
 
 A. A
 
@@ -1947,7 +1947,7 @@ C
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-213/c9d6790b07922b7e651ce4ddb5b1dfeb67a5d0235300e8fb27b6b6123825db4c.jpg)
+![](图片/assets-fenbi-213/c9d6790b07922b7e651ce4ddb5b1dfeb67a5d0235300e8fb27b6b6123825db4c.jpg)
 
 A. A
 
@@ -1969,7 +1969,7 @@ C
 
 平面展开图中，1、2、3三个面的平分线交于一点，折叠后顶点也应相交。四个选项中，A、B、D三项均不符合这一条件，只有C项正确。
 
-![](assets-fenbi-213/50f9acf4f8fa947520dc5fa64e8368021f732d6d4aa0ece995493651b5905512.jpg)
+![](图片/assets-fenbi-213/50f9acf4f8fa947520dc5fa64e8368021f732d6d4aa0ece995493651b5905512.jpg)
 
 故正确答案为C。
 
@@ -1981,7 +1981,7 @@ C
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-213/3d9564cdf0d922061899a03e9a0abfae1188e868649fbf6ae1b77b8eef556e06.jpg)
+![](图片/assets-fenbi-213/3d9564cdf0d922061899a03e9a0abfae1188e868649fbf6ae1b77b8eef556e06.jpg)
 
 A. A
 
@@ -2001,7 +2001,7 @@ B
 
 本题考查折纸盒。四个选项中，只有B项能够根据左边的展开图折出来，A、C、D三项均有误（如下图所示）。假如A项的正面和右侧面是对的，顶面对应的是第2面；假如C项的正面和右侧面是对的，顶面对应的是第3面，但C项中顶面线条的方向反了；假如D项的正面和右侧面是对的，顶面对应的是第4面。因此，只有B项三个面均正确。
 
-![](assets-fenbi-213/f2d6029bab9d1d61d0497399288758a2de808ffb0863b5ab651d262373a7c32d.jpg)
+![](图片/assets-fenbi-213/f2d6029bab9d1d61d0497399288758a2de808ffb0863b5ab651d262373a7c32d.jpg)
 
 故正确答案为B。
 
@@ -3059,7 +3059,7 @@ D
 
 ## 材料 3
 
-![](assets-fenbi-213/ef8f975b4e4d8aa89fb52685c88e03859dda703d1b5beffe61be4174d31826a1.png)
+![](图片/assets-fenbi-213/ef8f975b4e4d8aa89fb52685c88e03859dda703d1b5beffe61be4174d31826a1.png)
 
 ### 第 86 题
 
@@ -3233,7 +3233,7 @@ B
 
 2011年第一季度我国建筑业产值为16096.4亿元。其中，建筑工程产值14220.0亿元，安装工程产值1405.2亿元，其他471.2亿元。华东六省一市数据如下表。
 
-![](assets-fenbi-213/9103afa6dcccfc543fd849762fba29802900007be7a107ba314f3eeab03436cf.png)
+![](图片/assets-fenbi-213/9103afa6dcccfc543fd849762fba29802900007be7a107ba314f3eeab03436cf.png)
 
 | 省（市） | 合计 | 建筑工程 | 安装工程 | 其他 |
 | --- | ---: | ---: | ---: | ---: |

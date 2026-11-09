@@ -2541,7 +2541,7 @@ A
 
 如图所示，长方形小屋为矩形ABDC，羊被绳栓在C点。则羊所能吃到草的面积包括以C为圆心的圆的3/4与以A和D为圆心的圆的1/4，其他区域的草均不能吃到。则所能吃到草的面积= 3/4π × 10^2 + 1/4π × 3^2 + 1/4π × 1^2 = 155/2π平方米。
 
-![](assets-fenbi-75402/7cde226fbb4cb66b382d299ce9c1112c637f4644f06d3924a3b6e90b57e26be6.png)
+![](图片/assets-fenbi-75402/7cde226fbb4cb66b382d299ce9c1112c637f4644f06d3924a3b6e90b57e26be6.png)
 
 故正确答案为A。
 
@@ -2847,7 +2847,7 @@ B
 
 右图中间阴影部分为长方形。它的四周是四个正方形，这四个正方形的周长和是320厘米，面积和是1700平方厘米，则阴影部分的面积是（ ）平方厘米。
 
-![](assets-fenbi-75402/e087299c27db1933ad660a549cbed8e67841782d343d1af7ab52705dd7d74b2f.png)
+![](图片/assets-fenbi-75402/e087299c27db1933ad660a549cbed8e67841782d343d1af7ab52705dd7d74b2f.png)
 
 A. 375
 
@@ -2879,7 +2879,7 @@ A
 
 如图，三角形木块顶住水泥墙壁后静置在水平地面上，现将小铁球从图中位置无初速度地放开，假设不考虑任何摩擦力，那么小球从释放到落至地面的过程中，下列说法正确的是（ ）。
 
-![](assets-fenbi-75402/236e195f21293376ce8a6dc78c4b4ec5236a689483177a57904695ac41e59c36.png)
+![](图片/assets-fenbi-75402/236e195f21293376ce8a6dc78c4b4ec5236a689483177a57904695ac41e59c36.png)
 
 A. 木块对小铁球的弹力不做功
 
@@ -2897,7 +2897,7 @@ C
 
 **解析**
 
-![](assets-fenbi-75402/c7e9a3923fd23eb11d5d997902c1937e2dcfb94d602df7960b718526acdfd9b7.png)
+![](图片/assets-fenbi-75402/c7e9a3923fd23eb11d5d997902c1937e2dcfb94d602df7960b718526acdfd9b7.png)
 
 先对整个系统相对运动情况分析如图①。
 
@@ -2951,7 +2951,7 @@ D项，声音的传播需要介质，真空下声音无法传播，玻璃抽成�
 
 下列四幅图中，属于近视眼成像原理和远视眼矫正方法的分别是（ ）。
 
-![](assets-fenbi-75402/2b9ff2a2713cb20809b6b68c1b46137bc52a44c9f46c797649786fd34aca6ece.png)
+![](图片/assets-fenbi-75402/2b9ff2a2713cb20809b6b68c1b46137bc52a44c9f46c797649786fd34aca6ece.png)
 
 A. ①和③
 
@@ -2981,7 +2981,7 @@ B
 
 如图，用绳子(质量忽略不计）将甲、乙两铁球挂在天花板上的同一个挂钩上，然后使两铁球在同一水平面上做匀速圆周运动，已知两铁球质量相等，那么下列说法中不正确的是（ ）。
 
-![](assets-fenbi-75402/e0b9669497d92d2a8d5b3b178c7c5feeae5ca37502b856e422c21b8b0c124aa5.png)
+![](图片/assets-fenbi-75402/e0b9669497d92d2a8d5b3b178c7c5feeae5ca37502b856e422c21b8b0c124aa5.png)
 
 A. 甲的角速度一定比乙的角速度大
 
@@ -3013,7 +3013,7 @@ A
 
 右图是煤气泄露报警装置原理图，R_1是对煤气敏感的半导体元件，其电阻随煤气浓度的增加而减小，R_2是一可变电阻，在ac间接12V的恒定电压，bc间接报警器，当煤气浓度增加到一定值时报警器发出警告。对此下列说法正确的是（ ）。
 
-![](assets-fenbi-75402/2714a524a9cbe02c5b61ac6c5bae41fcc84cd0d224e18913f3f4c185a38bb847.png)
+![](图片/assets-fenbi-75402/2714a524a9cbe02c5b61ac6c5bae41fcc84cd0d224e18913f3f4c185a38bb847.png)
 
 A. 减小R_2的阻值，b点的电势升高
 
@@ -3109,7 +3109,7 @@ D项，运动员下落过程中，高度降低，重力势能减小，即D项正
 
 如图，质量为65kg的小李站在重为3000N的铁皮船上，船体与陆地上的树木之间用滑轮组连接，小李用60N的拉力拉绳子（质量忽略不计）时，船体向前匀速移动，那么船在水中受到的阻力为（ ）N。
 
-![](assets-fenbi-75402/7989c9f391a7a81982a1b0847aeb8d90de06a21cfd68b4972317beae35cb8bc1.png)
+![](图片/assets-fenbi-75402/7989c9f391a7a81982a1b0847aeb8d90de06a21cfd68b4972317beae35cb8bc1.png)
 
 A. 39
 
@@ -3139,7 +3139,7 @@ D
 
 地球是一个巨大的磁体，它的磁场分布情况与一个条形磁铁的磁场分布情况相似。地理南极相当于条形磁铁的N极，地理北极相当于条形磁场的S极，那么上海上空的磁场方向是（ ）。
 
-![](assets-fenbi-75402/a14d4befd480ef502f577a4287fde0ef1bc2e4bf7638cec20b92df503f500df3.png)
+![](图片/assets-fenbi-75402/a14d4befd480ef502f577a4287fde0ef1bc2e4bf7638cec20b92df503f500df3.png)
 
 A. 由南至北斜向下沉
 
@@ -3461,7 +3461,7 @@ D项：“硕鼠硕鼠，无食我黍”是以硕鼠喻剥削者，并不是语�
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-75402/328cb277baae9a406aa27ba41899a60689c70501e5a1537c068caebd1acf0068.png)
+![](图片/assets-fenbi-75402/328cb277baae9a406aa27ba41899a60689c70501e5a1537c068caebd1acf0068.png)
 
 A. A
 
@@ -3493,7 +3493,7 @@ A
 
 左边给定的是图形外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-75402/0edf6950791cf23b9121b8992b6692b071ce856c5ecc17a6d5841f5b96c0c5ec.png)
+![](图片/assets-fenbi-75402/0edf6950791cf23b9121b8992b6692b071ce856c5ecc17a6d5841f5b96c0c5ec.png)
 
 A. A
 
@@ -3515,9 +3515,9 @@ B项：根据原图可知立体的底面应为两条对角线交叉的面，可�
 
 A项：应用描线法，
 
-![](assets-fenbi-75402/653bbea5755e7243cdbec96edd5e01758ee023b035a82a6f3bd1cfe79af5ee50.png)与![](assets-fenbi-75402/1905e93c172715ec707cf87d57e2d5a52bd229de7ed309d7d6f22d47a6c0ac04.png)中红线应为同一条，具有黑点的三角形位置不对，可直接排除；
+![](图片/assets-fenbi-75402/653bbea5755e7243cdbec96edd5e01758ee023b035a82a6f3bd1cfe79af5ee50.png)与![](图片/assets-fenbi-75402/1905e93c172715ec707cf87d57e2d5a52bd229de7ed309d7d6f22d47a6c0ac04.png)中红线应为同一条，具有黑点的三角形位置不对，可直接排除；
 
-C项：应用描线法，![](assets-fenbi-75402/87236a93056e4a2379a5b73b37e06caf27b46f513773f67099870f09361602d5.png)与![](assets-fenbi-75402/b275c36b86c5574ad02ad1fdb224751216e6359ef7c7dd1c4ab5ef7d6a78a680.png)中红线为同一条，具有黑点的三角形位置不对，可直接排除。
+C项：应用描线法，![](图片/assets-fenbi-75402/87236a93056e4a2379a5b73b37e06caf27b46f513773f67099870f09361602d5.png)与![](图片/assets-fenbi-75402/b275c36b86c5574ad02ad1fdb224751216e6359ef7c7dd1c4ab5ef7d6a78a680.png)中红线为同一条，具有黑点的三角形位置不对，可直接排除。
 
 故正确答案为D。
 
@@ -3531,7 +3531,7 @@ C项：应用描线法，![](assets-fenbi-75402/87236a93056e4a2379a5b73b37e06caf
 
 下列选项中，符合所给图形的变化规律的是（ ）。
 
-![](assets-fenbi-75402/0a957dc5769c0888e40f2f601dcab272230af436e528d55975fedcb967585d30.png)
+![](图片/assets-fenbi-75402/0a957dc5769c0888e40f2f601dcab272230af436e528d55975fedcb967585d30.png)
 
 A. A
 
@@ -3563,7 +3563,7 @@ B
 
 下列选项中，符合所给图形的变化规律的是：
 
-![](assets-fenbi-75402/d27416f553464eee3426372ca67bbf17f7550008683a28c1ec9dd5c243682f85.png)
+![](图片/assets-fenbi-75402/d27416f553464eee3426372ca67bbf17f7550008683a28c1ec9dd5c243682f85.png)
 
 A. A
 
@@ -3595,7 +3595,7 @@ A
 
 左边给定的是图形外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-75402/e7f40c8d7ac95a7ac4828fdf39fa8a404f5a2ea7006adb548f2ce0c863df1b1b.png)
+![](图片/assets-fenbi-75402/e7f40c8d7ac95a7ac4828fdf39fa8a404f5a2ea7006adb548f2ce0c863df1b1b.png)
 
 A. A
 
@@ -3627,7 +3627,7 @@ A项：原图中不存在三个白色的长方形，可直接排除；B项：两
 
 下列选项中，符合所给图形的变化规律的是（ ）。
 
-![](assets-fenbi-75402/37566316eb1a55d7d6e2ca3d565a3157677acf22c5987d14c9421a9699acd35f.png)
+![](图片/assets-fenbi-75402/37566316eb1a55d7d6e2ca3d565a3157677acf22c5987d14c9421a9699acd35f.png)
 
 A. A
 
@@ -3663,7 +3663,7 @@ D
 
 下列选项中，符合所给图形的变化规律的是（ ）。
 
-![](assets-fenbi-75402/22f8b05e68cdaf2e949f2bbdaad9498762070d05f1ff2156dd161cd7c95f3642.png)
+![](图片/assets-fenbi-75402/22f8b05e68cdaf2e949f2bbdaad9498762070d05f1ff2156dd161cd7c95f3642.png)
 
 A. A
 
@@ -3695,7 +3695,7 @@ D
 
 从所给的四个选项中，选择最合适的一个填入问号处。使之呈现一定的规律性。
 
-![](assets-fenbi-75402/b0b1b27d5917a7676d3cb474908520f369c8dade17eb82eb05f1373dd671054b.png)
+![](图片/assets-fenbi-75402/b0b1b27d5917a7676d3cb474908520f369c8dade17eb82eb05f1373dd671054b.png)
 
 A. A
 
@@ -3727,7 +3727,7 @@ B
 
 下列选项中，符合所给图形的变化规律的是（ ）。
 
-![](assets-fenbi-75402/7a499d984c70c2d81521ef0b2462eb152696ffa58afc306608822abe2981f2df.png)
+![](图片/assets-fenbi-75402/7a499d984c70c2d81521ef0b2462eb152696ffa58afc306608822abe2981f2df.png)
 
 A. A
 
@@ -3759,7 +3759,7 @@ C
 
 请从四个选项中选出最恰当的一项填在问号处，使图形呈现一定的规律性：
 
-![](assets-fenbi-75402/d53e67cdfc5b8e51316414e67b7b86333eb784ed5985510a68468ba34d5a6704.png)
+![](图片/assets-fenbi-75402/d53e67cdfc5b8e51316414e67b7b86333eb784ed5985510a68468ba34d5a6704.png)
 
 A. A
 
@@ -3799,7 +3799,7 @@ D项：五个元素位置不同，排除。
 
 下列选项中，符合所给图形的变化规律的是（ ）。
 
-![](assets-fenbi-75402/a1cd1ee60a172c7f16b93a240b0f6dcff08e8601bb22cf1ba113cdd149cde4c4.png)
+![](图片/assets-fenbi-75402/a1cd1ee60a172c7f16b93a240b0f6dcff08e8601bb22cf1ba113cdd149cde4c4.png)
 
 A. A
 
@@ -3819,7 +3819,7 @@ A
 
 第一组图形：第一幅和第二幅有两个元素相同，变到第三幅图，把相同的去掉，不同的保留下来；
 
-第二组图形：前两幅相同的是![](assets-fenbi-75402/88cbff6aeee67855ba8e36b77259f7cb48457d1d1fe115745d4a0d3416a7ed3f.png)和![](assets-fenbi-75402/b5e7ab6202fc83bb16fb6f89d414b9d3820cf7fa068f6c2d75d771058905f732.png)，去掉后把不同的元素组合起来，得到A项。
+第二组图形：前两幅相同的是![](图片/assets-fenbi-75402/88cbff6aeee67855ba8e36b77259f7cb48457d1d1fe115745d4a0d3416a7ed3f.png)和![](图片/assets-fenbi-75402/b5e7ab6202fc83bb16fb6f89d414b9d3820cf7fa068f6c2d75d771058905f732.png)，去掉后把不同的元素组合起来，得到A项。
 
 故正确答案为A。
 
@@ -3833,7 +3833,7 @@ A
 
 下列选项中，符合所给图形的变化规律的是（ ）。
 
-![](assets-fenbi-75402/846b6875f044788688bfc5cb3f8c32908e3ba5a0bc5f4683260e44b360a0da0b.png)
+![](图片/assets-fenbi-75402/846b6875f044788688bfc5cb3f8c32908e3ba5a0bc5f4683260e44b360a0da0b.png)
 
 A. A
 
@@ -3853,7 +3853,7 @@ B
 
 原图是由下往上，下面两幅图结合推出上面一幅图。其规律是：同一位置元素不同的就去掉变成空白，元素相同的就保留但方向变成相反的。
 
-根据这个规律来观察：![](assets-fenbi-75402/a0890dd4fd743bc20463410f60b4b5f8a311320abe2cc3c19097130ae76684ca.png)
+根据这个规律来观察：![](图片/assets-fenbi-75402/a0890dd4fd743bc20463410f60b4b5f8a311320abe2cc3c19097130ae76684ca.png)
 
 相同的地方只有中间列的最上面和最下面，把方向反过来，最上面的箭头变成→，最下面箭头变成←，其他的都去掉变成空白，只有B项符合要求。
 
@@ -4410,7 +4410,7 @@ A
 
 ## 材料 8
 
-![](assets-fenbi-75402/845d293bd675a4e996e20a3c6403328b2d6e9b3d2620c436eff5fb375679dfaa.png)![](assets-fenbi-75402/d0f2f498ad87fcf5677ffb646529e47321beadc3f450b0c6ea3938c816ac84d7.png)
+![](图片/assets-fenbi-75402/845d293bd675a4e996e20a3c6403328b2d6e9b3d2620c436eff5fb375679dfaa.png)![](图片/assets-fenbi-75402/d0f2f498ad87fcf5677ffb646529e47321beadc3f450b0c6ea3938c816ac84d7.png)
 
 ### 第 126 题
 
@@ -4572,9 +4572,9 @@ D项：定位图2饼状图，2013年现代交通的成交金额为968.3亿元，
 
 ## 材料 9
 
-![](assets-fenbi-75402/c58535736fe9d0a4f7467ebdcd5c758d0f90907d030c0560ecfd7dd4c9f9502b.png)
+![](图片/assets-fenbi-75402/c58535736fe9d0a4f7467ebdcd5c758d0f90907d030c0560ecfd7dd4c9f9502b.png)
 
-![](assets-fenbi-75402/7cd4ffb1552627397cd566501b6f4fe19ca41b1f9569ab2ed066f7d88933bc7a.png)
+![](图片/assets-fenbi-75402/7cd4ffb1552627397cd566501b6f4fe19ca41b1f9569ab2ed066f7d88933bc7a.png)
 
 | 国家 | 1970年 | 1980年 | 1990年 | 2000年 | 2010年 | 2011年 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -4763,7 +4763,7 @@ D项：定位表格2，中等收入国家2010年的城镇化率为48.99%，上�
 
 注：产值合计等于总成本与净利润之和。
 
-![](assets-fenbi-75402/697e05bf3de2023dacfee17feddf8a39742426cfa830d807edabab32165a7ed8.png)![](assets-fenbi-75402/4566661f76086e1be047c28fca5fd1f21f606faaf5af2b742aef625d7163fc1b.png)
+![](图片/assets-fenbi-75402/697e05bf3de2023dacfee17feddf8a39742426cfa830d807edabab32165a7ed8.png)![](图片/assets-fenbi-75402/4566661f76086e1be047c28fca5fd1f21f606faaf5af2b742aef625d7163fc1b.png)
 
 ### 第 136 题
 

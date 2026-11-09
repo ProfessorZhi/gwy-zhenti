@@ -1009,7 +1009,7 @@ D项，“以天下之目视，则无不见也；以天下之耳听，则无不�
 
 根据数表中的规律，“？”处应填        。
 
-![](assets-fenbi-198153/04c5f1437e64e0cbae98eb182b38a3b5bdff5fef1a5b9ffed09675f62884d1d3.png)
+![](图片/assets-fenbi-198153/04c5f1437e64e0cbae98eb182b38a3b5bdff5fef1a5b9ffed09675f62884d1d3.png)
 
 A. 5
 
@@ -1131,7 +1131,7 @@ A
 
 根据下列数字关系，“?”中的数字不可能是        。
 
-![](assets-fenbi-198153/57bbcc1b4b5000d5a3a5e4bb4f2b31684572596673daef4c9eb54fcd1b7026a4.png)
+![](图片/assets-fenbi-198153/57bbcc1b4b5000d5a3a5e4bb4f2b31684572596673daef4c9eb54fcd1b7026a4.png)
 
 A. 3
 
@@ -1163,7 +1163,7 @@ C
 
 小李父子俩佩戴智能手表跑步锻炼，同时从小区门口出发，绕小区一圈后又同时到达小区门口，手表给出如下锻炼“时间—配速”图线。根据图线分析，在        ，小李的跑动距离与父亲相同。
 
-![](assets-fenbi-198153/328731352d898ad668e627f60dd50de6a5ccdc51d80cad5a72829daad98eb3c1.png)
+![](图片/assets-fenbi-198153/328731352d898ad668e627f60dd50de6a5ccdc51d80cad5a72829daad98eb3c1.png)
 
 A. t_1时刻
 
@@ -1273,7 +1273,7 @@ C
 
 **解析**
 
-![](assets-fenbi-198153/c9c9f308d9fda62614233da8337843c385940a641e72d900ef5fcffd2685c131.png)
+![](图片/assets-fenbi-198153/c9c9f308d9fda62614233da8337843c385940a641e72d900ef5fcffd2685c131.png)
 
 根据题意，如上图所示，∠B ≈ 20°，已知泉眼距地面的垂直高度约为100米，即AC⊥BC，且AC=100米。因sin ∠B = AC/AB ≈ 0.34，则从泉眼开挖一条正对山脚向下到山脚的灌溉水渠AB ≈ 100/0.34米，故开挖整条水渠的土方量约为100/0.34 × 0.3 ≈ 88立方米。
 
@@ -1353,7 +1353,7 @@ A
 
 某公园有一个圆形的湖，在湖的直径EB处有一座观光桥，横穿整个湖。园区在平行于观光桥的MN处建造了一片雕塑群，用以介绍中国古代礼仪与民俗，其长度等于湖的半径。某游客在湖边与观光桥上边走边欣赏湖中的雕塑群，走过了A、B、C、D四处位置。如图所示，A为该湖的圆心，N、D、C在一条线上，且ND⊥AB。那么在这四处位置，游客的观察视角大于45°的有    处。（观察视角，即游客在该点处观看景物的视野张角，例如在D点处，其观察视角为∠MDN）
 
-![](assets-fenbi-198153/042c3ff68723548f7f4fb1144179e45dcb38e468556b5ddb7359a99e83496661.png)
+![](图片/assets-fenbi-198153/042c3ff68723548f7f4fb1144179e45dcb38e468556b5ddb7359a99e83496661.png)
 
 A. 1
 
@@ -1371,7 +1371,7 @@ B
 
 **解析**
 
-![](assets-fenbi-198153/b31ab21c6bbac4771965acfb20b1c29cd7b9f0f43c776fcc6463c2929b8f32dc.png)
+![](图片/assets-fenbi-198153/b31ab21c6bbac4771965acfb20b1c29cd7b9f0f43c776fcc6463c2929b8f32dc.png)
 
 如图，连接AM、AN、BM、BN、CM、DM，则游客在A、B、C、D四处位置的观察视角分析如下：
 
@@ -1471,9 +1471,9 @@ B
 
 独角兽公司是投资界术语，一般指成立不超过10年，估值超过10亿美元，少部分估值超过100亿美元的企业，其不仅是优质和市场潜力无限的绩优股，而且商业模式很难被复制。
 
-![](assets-fenbi-198153/e89695701ec19c7ab262a1393ede1cac4e7357d22c79a813e5d40cdee7e9dbe0.png)
+![](图片/assets-fenbi-198153/e89695701ec19c7ab262a1393ede1cac4e7357d22c79a813e5d40cdee7e9dbe0.png)
 
-![](assets-fenbi-198153/01f5c75b212bb0c197bc60e491455799147a5a18d181593b3ba7a3bb9c381152.png)
+![](图片/assets-fenbi-198153/01f5c75b212bb0c197bc60e491455799147a5a18d181593b3ba7a3bb9c381152.png)
 
 ### 第 41 题
 
@@ -1627,9 +1627,9 @@ D
 
 ## 材料 4
 
-![](assets-fenbi-198153/59659faa094834d6bc9290d89f015d8e10c6a985ecb194b72550555f7ace644f.png)
+![](图片/assets-fenbi-198153/59659faa094834d6bc9290d89f015d8e10c6a985ecb194b72550555f7ace644f.png)
 
-![](assets-fenbi-198153/39c916b8fd522b2a376dac3b50db5fc78e15969ab25dfc67f1a2c6e12272e200.png)
+![](图片/assets-fenbi-198153/39c916b8fd522b2a376dac3b50db5fc78e15969ab25dfc67f1a2c6e12272e200.png)
 
 ### 第 46 题
 
@@ -1725,13 +1725,13 @@ B
 
 若以上海、苏州、南京和温州这四个城市的教育文化娱乐市场为总体，假定各城市2021年人均教育文化娱乐支出都为3380元，那么下图中        最可能展示了这四个城市2021年教育文化娱乐市场规模的占比情况。
 
-A. ![](assets-fenbi-198153/8c39b98ac35fa0219cdad83b650a5d0d7f203a3625563f00514ba5e23acf4b43.png)
+A. ![](图片/assets-fenbi-198153/8c39b98ac35fa0219cdad83b650a5d0d7f203a3625563f00514ba5e23acf4b43.png)
 
-B. ![](assets-fenbi-198153/ef9d42f13257d5491677d8851820bcddfb8a726a639b6b9d1d580799bebed8c7.png)
+B. ![](图片/assets-fenbi-198153/ef9d42f13257d5491677d8851820bcddfb8a726a639b6b9d1d580799bebed8c7.png)
 
-C. ![](assets-fenbi-198153/26c2a36391ab674710cc5dc9cf9cff88b74b14bf7fc9a3074d849a56a507ce8d.png)
+C. ![](图片/assets-fenbi-198153/26c2a36391ab674710cc5dc9cf9cff88b74b14bf7fc9a3074d849a56a507ce8d.png)
 
-D. ![](assets-fenbi-198153/1b7e8fc26c7c02130fa663dde80c1ceaf6505483f16d2d2c29682fd0218a494e.png)
+D. ![](图片/assets-fenbi-198153/1b7e8fc26c7c02130fa663dde80c1ceaf6505483f16d2d2c29682fd0218a494e.png)
 
 <details><summary>第 49 题 · 答案与解析</summary>
 
@@ -1787,11 +1787,11 @@ D
 
 2022年2月，“东数西算”工程正式全面启动。云计算在“东数西算”产业链中游占据重要位置。2020年上半年和2021年上半年，中国整体云服务市场规模分别为1171亿元和1620亿元，其三个细分领域市场IaaS（基础设施即服务）、PaaS（平台即服务）和SaaS（软件即服务）的规模如下表1。
 
-![](assets-fenbi-198153/466e23fa390459434bde9e4fbcd62c390f47a020049f01f0b88f1aa3b26489bc.png)
+![](图片/assets-fenbi-198153/466e23fa390459434bde9e4fbcd62c390f47a020049f01f0b88f1aa3b26489bc.png)
 
 在中国整体云服务市场中，2020年上半年和2021年上半年，公有云市场规模分别为830亿元和1235亿元。在公有云市场份额方面，阿里云、华为云、腾讯云位列2021年上半年中国IaaS公有云市场和中国IaaS+PaaS公有云市场前三名，具体占比如下表2。
 
-![](assets-fenbi-198153/68e9fbba6518c95949a26a03c1c6605f9fe17d878c9fff4bcfcbaea04446016b.png)
+![](图片/assets-fenbi-198153/68e9fbba6518c95949a26a03c1c6605f9fe17d878c9fff4bcfcbaea04446016b.png)
 
 ### 第 51 题
 
@@ -1961,7 +1961,7 @@ D项：定位文字材料第一段，2020年上半年和2021年上半年，中�
 
 CO_2催化加氢可制取汽油，转化过程示意图如下（括号内是汽油中某些成分的球棍模型），根据图中的信息下列判断错误的是：
 
-![](assets-fenbi-198153/6976d443c748d45fcdebec954750b526a24cdf07b062cecc303a16d89cd1c753.png)
+![](图片/assets-fenbi-198153/6976d443c748d45fcdebec954750b526a24cdf07b062cecc303a16d89cd1c753.png)
 
 A. 反应①的生成物中，除了一氧化碳，可能还有水
 
@@ -1997,7 +1997,7 @@ D项：碳中和是指国家、企业、产品、活动或个人在一定时间�
 
 氢气是一种可持续发展的新能源和工业原料。利用太阳能将水转化为氢气是一种理想途径。某种光分解水技术的反应过程如图所示，下列判断错误的是：
 
-![](assets-fenbi-198153/f1b8ea6d77f8cc932b491162cc714c12e80b141c17da188124417a26efcabcab.png)
+![](图片/assets-fenbi-198153/f1b8ea6d77f8cc932b491162cc714c12e80b141c17da188124417a26efcabcab.png)
 
 A. Fe_3O_4的作用是作催化剂
 
@@ -2069,7 +2069,7 @@ D项：利用光催化将二氧化碳还原为甲酸不仅可以消耗二氧化�
 
 纯碱(Na2CO3)是化工之母，实验室中通过以下实验模拟工业制纯碱。向饱和NaCl溶液中先通入氨气再通入二氧化碳：
 
-发生反应的化学方程式为①![](assets-fenbi-198153/7bfeb816b909e208d968dca8f219a6e7cb97f6cc64fbacb5ead4f4d36d00a59e.png)，
+发生反应的化学方程式为①![](图片/assets-fenbi-198153/7bfeb816b909e208d968dca8f219a6e7cb97f6cc64fbacb5ead4f4d36d00a59e.png)，
 
 NaHCO3加热得到纯碱的反应方程式为②2NaHCO3 →(Δ) Na2CO3+CO2↑+H2O
 
@@ -2111,7 +2111,7 @@ D项：纯净物指的是由单一物质组成的物质，由上述分析可知�
 
 工业上经常需要研究和控制反应的速度，如通过添加抗氧化剂来减缓橡胶轮胎的老化速度；通过添加催化剂来加快反应速度。以下为探究外界因素对化学反应速度影响的实验方案，下列五组实验无法研究的影响因素是：
 
-![](assets-fenbi-198153/6b65d1589c4ae5f0d2b10808b9e979306fc8f78634d16932df7e1999fa16669d.png)
+![](图片/assets-fenbi-198153/6b65d1589c4ae5f0d2b10808b9e979306fc8f78634d16932df7e1999fa16669d.png)
 
 | 序号 | 条件 | 反应物 | 现象 |
 | ---: | --- | --- | --- |
@@ -2157,7 +2157,7 @@ D项：若研究酸的种类对反应速率的影响，则应选择酸的种类�
 
 下表中所示为部分燃料的热值。若要将10℃的水加热至60℃，假设燃料燃烧释放的能量全部给了水。已知水的比热容为4.2×10^3J/kg·℃。下列判断正确的是：
 
-![](assets-fenbi-198153/e2df72f2333e6b8dd5a08b5faa11b6939695008ba7ab467855a5b33b891912bd.png)
+![](图片/assets-fenbi-198153/e2df72f2333e6b8dd5a08b5faa11b6939695008ba7ab467855a5b33b891912bd.png)
 
 | 燃料 | 热值（J/kg） | 燃料 | 热值（J/kg） |
 | --- | ---: | --- | ---: |
@@ -2201,13 +2201,13 @@ D项：加热1.5kg的水需要的热量Q吸=cmΔt= 4.2×10^3×1.5×50=3.15×10^5
 
 “蹦极”是一项惊险刺激的娱乐项目。下列v-t图能基本正确反映出蹦极中人在到达最低点之前的速度随时间变化关系的是：
 
-A. ![](assets-fenbi-198153/db4564f60af48a9fd7a106304f6f1279fd9fde04d54bf01ee7ed89ea42efe3a5.png)
+A. ![](图片/assets-fenbi-198153/db4564f60af48a9fd7a106304f6f1279fd9fde04d54bf01ee7ed89ea42efe3a5.png)
 
-B. ![](assets-fenbi-198153/770dab393e2ec5b9835f6fe5baa5d05ee2ac950fe08fadb3f9601af6f43b9438.png)
+B. ![](图片/assets-fenbi-198153/770dab393e2ec5b9835f6fe5baa5d05ee2ac950fe08fadb3f9601af6f43b9438.png)
 
-C. ![](assets-fenbi-198153/49463bf0399908aa993a5ab2ae9898dfa8379a265218d02029d3abeccfaf8669.png)
+C. ![](图片/assets-fenbi-198153/49463bf0399908aa993a5ab2ae9898dfa8379a265218d02029d3abeccfaf8669.png)
 
-D. ![](assets-fenbi-198153/97dd8d61a95b1f0ed7ba282d9206631a5ad9564c2b247b89539e0a2cbdfcdec8.png)
+D. ![](图片/assets-fenbi-198153/97dd8d61a95b1f0ed7ba282d9206631a5ad9564c2b247b89539e0a2cbdfcdec8.png)
 
 <details><summary>第 62 题 · 答案与解析</summary>
 
@@ -2217,7 +2217,7 @@ D
 
 **解析**
 
-![](assets-fenbi-198153/be9279815974064ef26447e968e9d2d10b530887311461e6bc304dc86a3f538b.png)
+![](图片/assets-fenbi-198153/be9279815974064ef26447e968e9d2d10b530887311461e6bc304dc86a3f538b.png)
 
 蹦极的过程如上图所示，在人下落的过程中，记O点为人从平台由静止开始下落的位置，A点为弹性绳的原长位置，B点为人受到弹性绳的弹力与自身重力相等的位置，C点为人到达的最低点。
 
@@ -2239,7 +2239,7 @@ D
 
 如图所示是一种测定风速的装置，压力传感器固定在竖直墙上，弹簧一端固定在传感器上的M点，另一端N与迎风板相连，弹簧穿在光滑水平放置的电阻率较大的金属细杆上。根据以上信息推断下面说法正确的是：
 
-![](assets-fenbi-198153/150c193fa9dfb4347fb0846fd69fc6b43aef668903d662b3924dc3854016dd6e.jpg)
+![](图片/assets-fenbi-198153/150c193fa9dfb4347fb0846fd69fc6b43aef668903d662b3924dc3854016dd6e.jpg)
 
 A. 弹簧宜选用导电性良好的金属丝制成
 
@@ -2371,7 +2371,7 @@ D项：西藏拉萨（海拔约4000m），四川峨眉山（约3099m）与广西
 
 下列选项中，符合所给图形的变化规律的是        。
 
-![](assets-fenbi-198153/1a5cb8ea8c32720dd7af15b580117452388734117c00c28ecd91a4d9e2268a51.png)
+![](图片/assets-fenbi-198153/1a5cb8ea8c32720dd7af15b580117452388734117c00c28ecd91a4d9e2268a51.png)
 
 A. A
 
@@ -2403,7 +2403,7 @@ A
 
 下列选项中，符合所给图形的变化规律的是        。
 
-![](assets-fenbi-198153/e766570908edaac6ac654f72ea9999a44b21faf7560f4c44d423ec0497af536d.png)
+![](图片/assets-fenbi-198153/e766570908edaac6ac654f72ea9999a44b21faf7560f4c44d423ec0497af536d.png)
 
 A. A
 
@@ -2435,7 +2435,7 @@ B
 
 下列选项中，符合所给图形的变化规律的是        。
 
-![](assets-fenbi-198153/e23014f8381fee8758b36608db69faf5f92747f7b53c32cde32dcfd96bbee752.png)
+![](图片/assets-fenbi-198153/e23014f8381fee8758b36608db69faf5f92747f7b53c32cde32dcfd96bbee752.png)
 
 A. A
 
@@ -2467,7 +2467,7 @@ C
 
 下列选项中，符合所给图形的变化规律的是        。
 
-![](assets-fenbi-198153/9e9888ac0745eec5160c7a7eea423e8521409782d2b6a41d84df1565323079b7.png)
+![](图片/assets-fenbi-198153/9e9888ac0745eec5160c7a7eea423e8521409782d2b6a41d84df1565323079b7.png)
 
 A. A
 
@@ -2499,7 +2499,7 @@ C
 
 下列选项中，符合所给图形的变化规律的是        。
 
-![](assets-fenbi-198153/780e43a6e84f772caa205582324a054094d355e2355802d77750c515d7e1490a.png)
+![](图片/assets-fenbi-198153/780e43a6e84f772caa205582324a054094d355e2355802d77750c515d7e1490a.png)
 
 A. A
 
@@ -2531,7 +2531,7 @@ C
 
 下列选项中，符合所给图形的变化规律的是        。
 
-![](assets-fenbi-198153/32059886cf843e1beab13b866d8e06ca5b98ef3d79ca175fae7edd67db647be2.png)
+![](图片/assets-fenbi-198153/32059886cf843e1beab13b866d8e06ca5b98ef3d79ca175fae7edd67db647be2.png)
 
 A. A
 
@@ -2551,11 +2551,11 @@ B
 
 元素组成相似，优先考虑加减同异。观察发现，第一组图形中，图1与图2线条相加，再顺时针旋转90°，如下图所示：
 
-![](assets-fenbi-198153/787f0a0692f9fd2baea10acee4eb385a402c3f9957a3f0ec1192e82a99be0ed1.png)
+![](图片/assets-fenbi-198153/787f0a0692f9fd2baea10acee4eb385a402c3f9957a3f0ec1192e82a99be0ed1.png)
 
 然后外框线条及第一幅图、第二幅图的重合线条缩短，其余线条延长，即得第三幅图。第二组图形遵循此规律，即图1与图2线条相加，再顺时针旋转90°，如下图所示：
 
-![](assets-fenbi-198153/3b964835ece88b9af7a9135ea040dd1a3620dce1335058b641c8106ffa4aa3b1.png)
+![](图片/assets-fenbi-198153/3b964835ece88b9af7a9135ea040dd1a3620dce1335058b641c8106ffa4aa3b1.png)
 
 然后外框线条及第一幅图、第二幅图的重合线条缩短，其余线条延长，即得第三幅图。只有B项符合。
 
@@ -2571,7 +2571,7 @@ B
 
 下列选项中，可以由左图给定的平面图折叠而成的是        。
 
-![](assets-fenbi-198153/dfb575c0ddc8aef2d7baf312cbea257a3a36c1784a116020ad5988c0ba190859.png)
+![](图片/assets-fenbi-198153/dfb575c0ddc8aef2d7baf312cbea257a3a36c1784a116020ad5988c0ba190859.png)
 
 A. A
 
@@ -2591,7 +2591,7 @@ B
 
 将原展开图标上序号如下图，逐一进行分析。
 
-![](assets-fenbi-198153/5da54996c2fcb77fb748722b8456bc7028d78227dd2631b9090ea22df78f3517.png)
+![](图片/assets-fenbi-198153/5da54996c2fcb77fb748722b8456bc7028d78227dd2631b9090ea22df78f3517.png)
 
 A项：选项必然由面a、面e构成，其中面a和面e为相对面，不能同时出现，选项与题干展开图不一致，排除；
 
@@ -2599,11 +2599,11 @@ B项：选项由面c、面d和面e构成，选项与题干展开图一致，当�
 
 C项：选项由面a、面b和面c或面a、面b和面f构成，根据选项可知3个面内没有任何线条经过公共点，若由面a、面b和面c构成，在题干展开图中面b和面c内的两条斜线相交于公共点（如下图标记点1），选项与题干展开图不一致，若由面a、面b和面f构成，在题干展开图中面f中的斜线经过公共点（如下图标记点2），选项与题干展开图不一致，排除；
 
-![](assets-fenbi-198153/45636192b64ff96cfbae56a4e864fefcbff04a0b15a8ee903a2741a4bc9fc2d6.png)
+![](图片/assets-fenbi-198153/45636192b64ff96cfbae56a4e864fefcbff04a0b15a8ee903a2741a4bc9fc2d6.png)
 
 D项：选项由面a、面b和面c或面a、面b和面f构成，但由于面b和面c中的线相交于面a、面b和面c的公共点，而选项中只有一个面中的斜线交于这3个面的公共点，选项与题干展开图不一致，所以该项只能由面a、面b和面f构成，以面a、面b和面f三个面的公共点作为起始点，在面a上沿顺时针方向画边，选项中边1所对应的两个端点分别和面b和面f中的斜线相交，而题干展开图中边1只有一个端点与面f中的斜线相交，另一个端点不与面b中的斜线相交，选项与题干展开图不一致，排除。
 
-![](assets-fenbi-198153/84273016e7085548c2581d0d0d379fb3f0672f038cea25a46e353e915374579d.png)
+![](图片/assets-fenbi-198153/84273016e7085548c2581d0d0d379fb3f0672f038cea25a46e353e915374579d.png)
 
 故正确答案为B。
 
@@ -2617,7 +2617,7 @@ D项：选项由面a、面b和面c或面a、面b和面f构成，但由于面b和
 
 下列选项中，符合所给图形的规律的是        。
 
-![](assets-fenbi-198153/d6cdf99199e6b63ea7949d93eb32dd31430ad160ae889ab5ba1d0066eb26ad15.png)
+![](图片/assets-fenbi-198153/d6cdf99199e6b63ea7949d93eb32dd31430ad160ae889ab5ba1d0066eb26ad15.png)
 
 A. A
 
@@ -2637,7 +2637,7 @@ D
 
 元素组成不同，优先考虑属性规律。题干图形整体比较规整，优先考虑对称性。观察发现，题干图形均为轴对称图形且只存在一条对称轴，排除A、C两项。继续观察发现，题干图形对称轴的方向均为左下-右上，只有D项符合。
 
-![](assets-fenbi-198153/5e50f3862ec1db4607a372418b8d307b373abb533b0df05643633e45fd6096c6.png)
+![](图片/assets-fenbi-198153/5e50f3862ec1db4607a372418b8d307b373abb533b0df05643633e45fd6096c6.png)
 
 故正确答案为D。
 
@@ -2651,7 +2651,7 @@ D
 
 下列选项中，符合所给图形的变化规律的是        。
 
-![](assets-fenbi-198153/db86b7283eab47ed1fd1462e8ad32d79116e5233eb05c4edeb79d31eb174de8b.png)
+![](图片/assets-fenbi-198153/db86b7283eab47ed1fd1462e8ad32d79116e5233eb05c4edeb79d31eb174de8b.png)
 
 A. A
 
@@ -2671,13 +2671,13 @@ D
 
 元素组成相似，且图形的轮廓和分割区域相同，优先考虑样式规律中的黑白运算。本题为金字塔类题目，要从下到上找规律，即下层相邻的两幅图之间进行运算得到上面的一幅图，则问号处图形应由第二行的两幅图运算得到（详见下图）。
 
-![](assets-fenbi-198153/19b80cacd687840853c6c09f835724392f3a6a879932852697c825e4d7860fba.png)
+![](图片/assets-fenbi-198153/19b80cacd687840853c6c09f835724392f3a6a879932852697c825e4d7860fba.png)
 
-每幅图都由横向的5个区域构成，每个区域内的图案存在5种可能性：![](assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)、![](assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)、![](assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)、![](assets-fenbi-198153/71b2679f30fb3f894ee005a84cf1507dab976f42912e8ecbac6bddd48638feca.png)和![](assets-fenbi-198153/21676ac58a24edbeca7c9971706a6909e3a42e67d8417f90860604f97e1bd472.png)。将第二行两幅图的对应区域进行运算可知，问号处图形从左至右每个区域分别对应![](assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)、![](assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)、![](assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)+![](assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)、![](assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](assets-fenbi-198153/21676ac58a24edbeca7c9971706a6909e3a42e67d8417f90860604f97e1bd472.png)、![](assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](assets-fenbi-198153/71b2679f30fb3f894ee005a84cf1507dab976f42912e8ecbac6bddd48638feca.png)的运算结果，在下面三行的运算中找到以上运算对应的结果即可。观察下面三行的图形，根据第三行后两幅图中右侧第二个区域的运算可知：![](assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)\=![](assets-fenbi-198153/21676ac58a24edbeca7c9971706a6909e3a42e67d8417f90860604f97e1bd472.png)，则问号处左侧第二个区域应为![](assets-fenbi-198153/21676ac58a24edbeca7c9971706a6909e3a42e67d8417f90860604f97e1bd472.png)，排除A、B两项；根据第四行前两幅图中左侧第二个区域的运算可知：![](assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)+![](assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)\=![](assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)，则问号处中间区域应为![](assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)，排除C项。
+每幅图都由横向的5个区域构成，每个区域内的图案存在5种可能性：![](图片/assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)、![](图片/assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)、![](图片/assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)、![](图片/assets-fenbi-198153/71b2679f30fb3f894ee005a84cf1507dab976f42912e8ecbac6bddd48638feca.png)和![](图片/assets-fenbi-198153/21676ac58a24edbeca7c9971706a6909e3a42e67d8417f90860604f97e1bd472.png)。将第二行两幅图的对应区域进行运算可知，问号处图形从左至右每个区域分别对应![](图片/assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](图片/assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)、![](图片/assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](图片/assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)、![](图片/assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)+![](图片/assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)、![](图片/assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](图片/assets-fenbi-198153/21676ac58a24edbeca7c9971706a6909e3a42e67d8417f90860604f97e1bd472.png)、![](图片/assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](图片/assets-fenbi-198153/71b2679f30fb3f894ee005a84cf1507dab976f42912e8ecbac6bddd48638feca.png)的运算结果，在下面三行的运算中找到以上运算对应的结果即可。观察下面三行的图形，根据第三行后两幅图中右侧第二个区域的运算可知：![](图片/assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](图片/assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)\=![](图片/assets-fenbi-198153/21676ac58a24edbeca7c9971706a6909e3a42e67d8417f90860604f97e1bd472.png)，则问号处左侧第二个区域应为![](图片/assets-fenbi-198153/21676ac58a24edbeca7c9971706a6909e3a42e67d8417f90860604f97e1bd472.png)，排除A、B两项；根据第四行前两幅图中左侧第二个区域的运算可知：![](图片/assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)+![](图片/assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)\=![](图片/assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)，则问号处中间区域应为![](图片/assets-fenbi-198153/d897c66890e5fa672ad37ec968d33c8fe8452235d85655e8cdb6124473572c6b.png)，排除C项。
 
 故正确答案为D。
 
-注：本题不严谨，因为问号处左侧第一个区域![](assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)的运算结果在下面三行中无法验证，但四个选项中左侧第一个区域内的图案均相同，且根据其他区域的运算结果可以排除明显错误的A、B、C三项，因此，根据对比择优的原则，小粉笔建议选择D项。
+注：本题不严谨，因为问号处左侧第一个区域![](图片/assets-fenbi-198153/2c1014c57dac75686355cb7bce6c29372b85891cc1b7a876bca61a805bd39281.png)+![](图片/assets-fenbi-198153/69254d43f531c2b37461cc90a19474a38e3de828e145967147e86bf1ee67611e.png)的运算结果在下面三行中无法验证，但四个选项中左侧第一个区域内的图案均相同，且根据其他区域的运算结果可以排除明显错误的A、B、C三项，因此，根据对比择优的原则，小粉笔建议选择D项。
 
 **考点**：样式规律-黑白运算
 
@@ -2689,7 +2689,7 @@ D
 
 下列选项中，与其他三项不同的是        。
 
-![](assets-fenbi-198153/df27e2c8109b3b6dca88adade7cf184314912ec93da5144be831871b6fb0f064.png)
+![](图片/assets-fenbi-198153/df27e2c8109b3b6dca88adade7cf184314912ec93da5144be831871b6fb0f064.png)
 
 A. A
 
@@ -2721,7 +2721,7 @@ B
 
 下列选项中，符合所给图形的变化规律的是        。
 
-![](assets-fenbi-198153/ae3ec25801160e47d37a3ca0c566fe134273f2867cd7f14a66f44d2f06806d88.jpg)
+![](图片/assets-fenbi-198153/ae3ec25801160e47d37a3ca0c566fe134273f2867cd7f14a66f44d2f06806d88.jpg)
 
 A. A
 
@@ -2741,7 +2741,7 @@ D
 
 元素组成相同，优先考虑位置规律。将每行中左侧小元素由左到右标号（如下图所示），可知小元素在每行的右侧进行位置变动。第一行中，左侧标号为1、2、3、4、5、6、7的元素，变为右侧5、1、3/6、4/7、4/7、2、3/6。其中不确定的元素由第二行观察可知，左侧位置变动到右侧后应为5、1、6、4、7、2、3，故第三行也符合该规律，只有D项符合。
 
-![](assets-fenbi-198153/61f957b4431bd6f78a390740a5fc026a384b81c4e08e552f612716024a4603bb.jpg)
+![](图片/assets-fenbi-198153/61f957b4431bd6f78a390740a5fc026a384b81c4e08e552f612716024a4603bb.jpg)
 
 故正确答案为D。
 
@@ -2755,7 +2755,7 @@ D
 
 下列选项中，符合所给图形的变化规律的是        。
 
-![](assets-fenbi-198153/c36e7bbe142285a464468cd7ab2f28330cd83990961b7f6919dd3ddc17a33eb5.png)
+![](图片/assets-fenbi-198153/c36e7bbe142285a464468cd7ab2f28330cd83990961b7f6919dd3ddc17a33eb5.png)
 
 A. A
 
@@ -2775,7 +2775,7 @@ C
 
 九宫格优先横行看，第一行中图1、图2和图3的线条可以组成一个完整的六面体；第二行规律验证成立；因此第三行中图1、图2和图3的线条可以组成一个完整的六面体（如下图所示），只有C项符合。
 
-![](assets-fenbi-198153/a1004b413cece7165ff298c50e74855cda44ba2fa00d9ca1b4d407d0f730c21f.png)
+![](图片/assets-fenbi-198153/a1004b413cece7165ff298c50e74855cda44ba2fa00d9ca1b4d407d0f730c21f.png)
 
 故正确答案为C。
 
@@ -3221,15 +3221,15 @@ D
 
 第一种情况：投影仪 且 打印机，具体情况如下表所示，此时购买情况与其中4人的意见不冲突，故A项可能成立，排除A项；
 
-![](assets-fenbi-198153/cb73f57f17733ccac81c30a1c690bea31feeb5aca48a8bbe7fbd96bf854bc22a.png)
+![](图片/assets-fenbi-198153/cb73f57f17733ccac81c30a1c690bea31feeb5aca48a8bbe7fbd96bf854bc22a.png)
 
 第二种情况：-投影仪 且 -打印机，具体情况如下表所示，此时购买情况与其中2人的意见不冲突，故C项可能成立，排除C项；
 
-![](assets-fenbi-198153/24317c586b7722f4e30d42b3cb276ed6edb068393eb8c947dc5c3ad02bf83aa5.png)
+![](图片/assets-fenbi-198153/24317c586b7722f4e30d42b3cb276ed6edb068393eb8c947dc5c3ad02bf83aa5.png)
 
 第三种情况：投影仪 且 -打印机，具体情况如下表所示，此时购买情况与其中3人的意见不冲突，故B项可能成立，排除B项；
 
-![](assets-fenbi-198153/b0f1db5d1618ef0e34c80fe5a38c4db41978022c5e3239f965ddf3c4940d5ad1.png)
+![](图片/assets-fenbi-198153/b0f1db5d1618ef0e34c80fe5a38c4db41978022c5e3239f965ddf3c4940d5ad1.png)
 
 | 李 | 王 | 陈 | 宋（矛盾为投影仪且-打印机） | 文（王的矛盾） |
 | --- | --- | --- | --- | --- |
@@ -3237,7 +3237,7 @@ D
 
 第四种情况：打印机 且 -投影仪，具体情况如下表所示，此时购买情况与其中3人的意见不冲突，与第三种情况相同，可排除B项。
 
-![](assets-fenbi-198153/f2cb27f8702f506711e1749d6eed0506ef600351e8a5c1cda0e14ecaaf0231c8.png)
+![](图片/assets-fenbi-198153/f2cb27f8702f506711e1749d6eed0506ef600351e8a5c1cda0e14ecaaf0231c8.png)
 
 综合上述四种情况可知，A、B、C三项都是可能的，只有D项不可能。
 

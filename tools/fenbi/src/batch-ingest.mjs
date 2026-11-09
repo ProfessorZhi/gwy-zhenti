@@ -177,7 +177,7 @@ export async function ingestFolder({source,repo,dest,name,write=false}){
   if(known&&knownMd&&sha(knownMd)===known.markdownSha256&&known.sourceSha256===sha(raw)&&known.oldSha256===(prior?sha(prior):null))return known;
   const assembly=assemble(doc,prior);
   const verdict=await validateDocument(assembly.prepared,{assetRoot:path.join(base,'assets')});
-  const prefix='assets-fenbi-'+id.id;
+  const prefix='图片/assets-fenbi-'+id.id;
   const md=renderIngest(assembly,prior,prefix);
   const grade=structureGrade(assembly,md,verdict);
   const answerNumbers=assembly.prepared.questions.filter(q=>flat(q.answerHtml)).map(q=>q.number);

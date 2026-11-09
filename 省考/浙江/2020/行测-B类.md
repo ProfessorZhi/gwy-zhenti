@@ -193,7 +193,7 @@ D
 
 ### 第 6 题
 
-![](assets-fenbi-96455/fa1bb66e07cf1a08b54b277a4e7e87f55bf184889e1d2e8d853f9f506e3edbde.png)
+![](图片/assets-fenbi-96455/fa1bb66e07cf1a08b54b277a4e7e87f55bf184889e1d2e8d853f9f506e3edbde.png)
 
 A. 0
 
@@ -233,7 +233,7 @@ A
 
 ### 第 7 题
 
-![](assets-fenbi-96455/cc8a4639c4269c7110ab5f6fff7041e927305b663a2ab04053d00008a862c58d.png)
+![](图片/assets-fenbi-96455/cc8a4639c4269c7110ab5f6fff7041e927305b663a2ab04053d00008a862c58d.png)
 
 A. 1/5
 
@@ -273,7 +273,7 @@ C
 
 ### 第 8 题
 
-![](assets-fenbi-96455/72b8e82502ff2a985e5b17d92cbd05a5fd081e9b809b74f4736d3b13e264031b.png)
+![](图片/assets-fenbi-96455/72b8e82502ff2a985e5b17d92cbd05a5fd081e9b809b74f4736d3b13e264031b.png)
 
 A. 2
 
@@ -313,7 +313,7 @@ D
 
 ### 第 9 题
 
-![](assets-fenbi-96455/47a7b436f068bd9e5b6f3ac88e729504b6c6cf0cdce4e5a99efbd899b5ec6e97.png)
+![](图片/assets-fenbi-96455/47a7b436f068bd9e5b6f3ac88e729504b6c6cf0cdce4e5a99efbd899b5ec6e97.png)
 
 A. 11
 
@@ -353,7 +353,7 @@ C
 
 ### 第 10 题
 
-![](assets-fenbi-96455/c59aaff5cff17fcda41f553f680a3ecee3d218b1dc1c2f71a4dfbc143944cb9e.png)
+![](图片/assets-fenbi-96455/c59aaff5cff17fcda41f553f680a3ecee3d218b1dc1c2f71a4dfbc143944cb9e.png)
 
 A. 15
 
@@ -441,7 +441,7 @@ C
 
 **解析**
 
-![](assets-fenbi-96455/352364fbfca03d64a364899578a8fc9fd060bcb122607fc49a78b490bab972d5.png)
+![](图片/assets-fenbi-96455/352364fbfca03d64a364899578a8fc9fd060bcb122607fc49a78b490bab972d5.png)
 
 如图所示，单块正三角形地砖边长为0.2m，则高为0.1√3m，单块正三角形地砖面积=(1/2)×0.2×0.1√3=0.01√(3m)^2。正六边形地面总面积=6×(1/2×1×√3/2)= (3√3/2)m^2，则共需要地砖数量=正六边形地面总面积÷单块正三角形地砖面积= (3√3)/2 ÷ 0.01√3=150块。
 
@@ -513,7 +513,7 @@ A
 
 根据题意，设第一天与第二天行驶时间分别为3t、4t，设第二天、第三天行驶路程均为S。则这三天的路程、时间关系如下表所示：
 
-![](assets-fenbi-96455/2c137d3ee9aa873b2e91d2d7067cb681bc8a6aea61cde62c04c3dc26ac32834e.png)
+![](图片/assets-fenbi-96455/2c137d3ee9aa873b2e91d2d7067cb681bc8a6aea61cde62c04c3dc26ac32834e.png)
 
 根据公式：平均速度=总路程/总时间，可列方程，80 = (400 + S + S)/(3t + 4t + 5)，解得S=280t，则第二天平均速度为280t/4t=70千米/小时。
 
@@ -621,7 +621,7 @@ A
 
 某公园雇佣一名小丑表演骑独轮车。独轮车车轮直径为50厘米，小丑沿如图所示8字形轨迹骑行。轨迹为相切的两个圆，两个圆面积比是16：9，小圆直径为15米。问小丑沿8字形轨迹骑行一圈，车轮转动了多少圈？
 
-![](assets-fenbi-96455/990215bbce22d9e38b0a104519376fb9cbdaac3a8cbb1fc89b550bc8ecff01bd.png)
+![](图片/assets-fenbi-96455/990215bbce22d9e38b0a104519376fb9cbdaac3a8cbb1fc89b550bc8ecff01bd.png)
 
 A. 50
 
@@ -729,7 +729,7 @@ B
 
 第1-6次无领导小组面试确定成绩表：先把所有人分成5组进行5次无领导小组面试，可以得到5组的组内排名，标记为数字1-5；之后把各组的第一名再并成一组进行第6次无领导小组面试，可以得到每组第一名的组间排名，标记为字母A-E。之后按照分数排名把各组成绩列表如下：
 
-![](assets-fenbi-96455/7429a6a1956179d1a98a2e4456e5554c07684e8450839f7497105fc0b85e42a4.png)
+![](图片/assets-fenbi-96455/7429a6a1956179d1a98a2e4456e5554c07684e8450839f7497105fc0b85e42a4.png)
 
 | 组内排名 组间排名 | 第一名 | 第二名 | 第三名 | 第四名 | 第五名 |
 | --- | --- | --- | --- | --- | --- |
@@ -1711,7 +1711,7 @@ C项，文段强调的是移动学习的危害而非意义，与核心文意相�
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-96455/14d79d7046cf2136c2ecd5f7287a7ed1ca653a9d646e8b5576394a807dcf9bee.png)
+![](图片/assets-fenbi-96455/14d79d7046cf2136c2ecd5f7287a7ed1ca653a9d646e8b5576394a807dcf9bee.png)
 
 A. A
 
@@ -1743,7 +1743,7 @@ C
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-96455/1ca3de242a0fbd909e269f6edccff1f8155292ded3d1518374a5e773fcb417ef.png)
+![](图片/assets-fenbi-96455/1ca3de242a0fbd909e269f6edccff1f8155292ded3d1518374a5e773fcb417ef.png)
 
 A. A
 
@@ -1775,7 +1775,7 @@ A
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-96455/d0fcbb7a4937d86d8dc5880c4514a881cecca9425de795342eff3ea3b9fceb38.png)
+![](图片/assets-fenbi-96455/d0fcbb7a4937d86d8dc5880c4514a881cecca9425de795342eff3ea3b9fceb38.png)
 
 A. A
 
@@ -1795,7 +1795,7 @@ A
 
 图形元素组成不同，且无明显属性规律，考虑数量规律。题干中图形都是多边形，由多条直线构成，考虑直线数，但整体数直线没有规律，观察发现题干图形出现成对的平行线，故考虑平行线。如下图所示，第一组图中，每幅图均有2组平行线，第二组图前两幅图均有3组平行线，故问号处图形要满足有3组平行线，只有A选项符合。
 
-![](assets-fenbi-96455/b4ad03515b0af7ceab932317cfb8706925fc68ab1a9e38da72619c15ccc92d81.png)
+![](图片/assets-fenbi-96455/b4ad03515b0af7ceab932317cfb8706925fc68ab1a9e38da72619c15ccc92d81.png)
 
 故正确答案为A。
 
@@ -1809,7 +1809,7 @@ A
 
 把下面的六个图形分为两类，使每一组图形都有各自的共同特征或规律。分类正确的一项是：
 
-![](assets-fenbi-96455/f34cede87456b3e4155243d3068a057e9cd2688da54ba0e5509d86202bcf1b49.png)
+![](图片/assets-fenbi-96455/f34cede87456b3e4155243d3068a057e9cd2688da54ba0e5509d86202bcf1b49.png)
 
 A. ①②③，④⑤⑥
 
@@ -1841,7 +1841,7 @@ B
 
 把下面的六个图形分为两类，使每一组图形都有各自的共同特征或规律。分类正确的一项是：
 
-![](assets-fenbi-96455/070f223ed93ac894f7001e19cde25053e5c9dd0f90cf22e84928bb11c5415fe7.png)
+![](图片/assets-fenbi-96455/070f223ed93ac894f7001e19cde25053e5c9dd0f90cf22e84928bb11c5415fe7.png)
 
 A. ①②③，④⑤⑥
 
@@ -2991,7 +2991,7 @@ B
 
 下列关于图中日历中信息的说法错误的是：
 
-![](assets-fenbi-96455/c016d326ede36f6171555f64bed9a92d76b0ad36f04378bcfdb9532f87f700b9.png)
+![](图片/assets-fenbi-96455/c016d326ede36f6171555f64bed9a92d76b0ad36f04378bcfdb9532f87f700b9.png)
 
 A. 上一年是丙申年
 
@@ -3377,7 +3377,7 @@ D项错误，人能够看清远近不同的物体，是因为睫状体能够调�
 
 2017年1-4月，T地区批发和零售业商品销售总额为15220亿元，同比增长10.5%，其中，限额以上商品销售额达到11107亿元，同比增长10%；4月份，T地区批发和零售业商品销售总额和限额以上商品销售额分别为3339亿元和2554亿元。
 
-![](assets-fenbi-96455/41f2afdfd817b8409ba548058b1342cfee3767ebfaadefba2c91b9f0a3f4dc3d.png)
+![](图片/assets-fenbi-96455/41f2afdfd817b8409ba548058b1342cfee3767ebfaadefba2c91b9f0a3f4dc3d.png)
 
 | | | 1-3月 销售额 | 1-3月 同比增速 | 1-4月 销售额 | 1-4月 同比增速 |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -3484,13 +3484,13 @@ A
 
 以下哪个饼图最符合2017年4月T地区限额以上商品销售额中不同规模的企业销售额占比关系？
 
-A. ![](assets-fenbi-96455/87c375175fcdfd4f94d74a4e9ec9c8fa34c9d97e39f009bb125cfdd8cd577ae5.png)
+A. ![](图片/assets-fenbi-96455/87c375175fcdfd4f94d74a4e9ec9c8fa34c9d97e39f009bb125cfdd8cd577ae5.png)
 
-B. ![](assets-fenbi-96455/f9f3c3e63cd7be7b65c788100d0592156928451c8353accee4e6d94514d86290.png)
+B. ![](图片/assets-fenbi-96455/f9f3c3e63cd7be7b65c788100d0592156928451c8353accee4e6d94514d86290.png)
 
-C. ![](assets-fenbi-96455/3ed546c902fc479f6eca38732b5a68231a60a6f4f07e4558630c5daf449bab88.png)
+C. ![](图片/assets-fenbi-96455/3ed546c902fc479f6eca38732b5a68231a60a6f4f07e4558630c5daf449bab88.png)
 
-D. ![](assets-fenbi-96455/8f8f73eff0cee2e1ec7366d990bbd5aa463396f86fb5ee93d25b2648ea076553.png)
+D. ![](图片/assets-fenbi-96455/8f8f73eff0cee2e1ec7366d990bbd5aa463396f86fb5ee93d25b2648ea076553.png)
 
 <details><summary>第 89 题 · 答案与解析</summary>
 
@@ -3562,7 +3562,7 @@ D项：定位文字材料，2017年1-4月，T地区批发和零售业商品销�
 
 从主要清洁能源类型看，2017年全球对风能的投资为1070亿美元，风电新增装机容量52.5GW，同比下降3.8%；累计装机容量达到539.1GW，同比增长11%。2017年全球对光伏的投资为1608亿美元，同比增长18%；光伏新增装机容量99.1GW，同比增长29%；累计装机容量达到404.5GW。其中，亚太地区新增装机容量73.7GW，累计装机容量221.3GW。（累计装机容量不含报废机器的装机容量）
 
-![](assets-fenbi-96455/33c6c927fae9afd296c1825cc8911bacad65a6425ec3cf5ec907ed43823e172e.png)
+![](图片/assets-fenbi-96455/33c6c927fae9afd296c1825cc8911bacad65a6425ec3cf5ec907ed43823e172e.png)
 
 ### 第 91 题
 
@@ -3658,13 +3658,13 @@ D
 
 以下哪个折线图最符合2009-2012年全球光伏累计装机容量同比增速的变化趋势？
 
-A. ![](assets-fenbi-96455/567279757862598d3d0cc2fe5c07e0ad06f92274857bc35317986203b02a2c12.png)
+A. ![](图片/assets-fenbi-96455/567279757862598d3d0cc2fe5c07e0ad06f92274857bc35317986203b02a2c12.png)
 
-B. ![](assets-fenbi-96455/1999285abcdff5ce0539f57b351ca9853019a5ea059b009ec044799917766396.png)
+B. ![](图片/assets-fenbi-96455/1999285abcdff5ce0539f57b351ca9853019a5ea059b009ec044799917766396.png)
 
-C. ![](assets-fenbi-96455/e01fd58e05b121b2258ddb8581373ef1609cd74cbeff31a4c5523bbf081f5082.png)
+C. ![](图片/assets-fenbi-96455/e01fd58e05b121b2258ddb8581373ef1609cd74cbeff31a4c5523bbf081f5082.png)
 
-D. ![](assets-fenbi-96455/67efc69898418afc030b90cff6fec0d66efddfafd5c2fedee3be214c16a0744a.png)
+D. ![](图片/assets-fenbi-96455/67efc69898418afc030b90cff6fec0d66efddfafd5c2fedee3be214c16a0744a.png)
 
 <details><summary>第 94 题 · 答案与解析</summary>
 
@@ -3722,11 +3722,11 @@ D项：定位柱状图可得：2008年全球风电累计装机容量为120.7GW�
 
 ## 材料 3
 
-![](assets-fenbi-96455/8f2fe9407ad89cb36a33d8054e85cf18d94ef8be5333c553f7491f3629e39b92.png)
+![](图片/assets-fenbi-96455/8f2fe9407ad89cb36a33d8054e85cf18d94ef8be5333c553f7491f3629e39b92.png)
 
 2018年，从险种来看，财产险业务原保险保费收入10770.08亿元，同比增长9.51%；人身险原保险保费收入27246.54亿元，其中寿险业务原保险保费收入20722.86亿元，同比下降3.41%；健康险业务原保险保费收入5448.13亿元，同比增长24.12%；意外险业务原保险保费收入1075.55亿元，同比增长19.33%。从保费收入结构来看，人身险、财产险的保费占比与上年相比趋于稳定。
 
-![](assets-fenbi-96455/5c8499886ff0ec8dc0573a55846d8b142a8734f03c99777de546199e96072ea2.png)
+![](图片/assets-fenbi-96455/5c8499886ff0ec8dc0573a55846d8b142a8734f03c99777de546199e96072ea2.png)
 
 ### 第 96 题
 

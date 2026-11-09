@@ -79,7 +79,7 @@ class ReviewedPlan(unittest.TestCase):
         self.assertTrue(result['written'])
         self.assertEqual(preview['after_sha256'], sha(self.path.read_bytes()))
         self.assertIn('显式人工复核', self.path.read_text('utf8'))
-        self.assertTrue(list(self.path.parent.glob('assets-huatu-999/review-*.json')))
+        self.assertTrue(list(self.path.parent.glob('图片/assets-huatu-999/review-*.json')))
         with self.assertRaisesRegex(ValueError, '过期'):
             self.run_fill(write=True, expect_after=preview['after_sha256'])
 
@@ -277,7 +277,7 @@ class ReviewedPlan(unittest.TestCase):
         self.assertIn('B. 预备役人员退出预备役', new)
         self.assertIn('D. 预备役人员从事个体经营可以按照国家有关规定享受融资', new)
         self.assertIn('下列关于《预备役人员法》的说法错误的是', new)
-        original = next(self.path.parent.glob('assets-huatu-999/*-original.txt')).read_text('utf8')
+        original = next(self.path.parent.glob('图片/assets-huatu-999/*-original.txt')).read_text('utf8')
         self.assertIn('出资优惠', original)
         self.assertIn('C. 缺失', original)
         huatu_fill.verify(old, new, {6: 5})
@@ -321,7 +321,7 @@ class ReviewedPlan(unittest.TestCase):
         with patch('os.replace', fail_once), self.assertRaises(OSError):
             self.run_fill(write=True, expect_after=preview['after_sha256'])
         self.assertEqual(before, self.path.read_bytes())
-        self.assertFalse(list(self.path.parent.glob('assets-huatu-999/review-*.json')))
+        self.assertFalse(list(self.path.parent.glob('图片/assets-huatu-999/review-*.json')))
 
     def test_persistent_manifest_error_does_not_interrupt_paper_rollback(self):
         preview = self.run_fill()
@@ -339,7 +339,7 @@ class ReviewedPlan(unittest.TestCase):
             self.run_fill(write=True, expect_after=preview['after_sha256'])
         self.assertEqual(before, self.path.read_bytes())
         self.assertEqual(before_manifest, manifest.read_bytes())
-        self.assertFalse(list(self.path.parent.glob('assets-huatu-999/review-*.json')))
+        self.assertFalse(list(self.path.parent.glob('图片/assets-huatu-999/review-*.json')))
         self.assertFalse(list(self.root.rglob('.huatu-fill-*.tmp')))
 
 

@@ -322,7 +322,7 @@ node src/batch-ingest.mjs --source-root /path/to/owner/work/fenbi/papers --repo-
 node src/batch-ingest.mjs --source-root /path/to/owner/work/fenbi/papers --repo-root /path/to/repo --write
 ```
 
-默认 dry-run；`--write` 只创建 `work/fenbi/batch-ingest/<卷>/paper.md`、`assets-fenbi-<sourceId>/`、`receipt.json` 和 `legacy-original.md`（仅已有旧卷），不写正式 `国考/`、`省考/` 或 Git 索引。重复执行若文件哈希不同会拒绝覆盖。试卷图片逐件核 SHA。
+默认 dry-run；`--write` 只创建 `work/fenbi/batch-ingest/<卷>/paper.md`、`图片/assets-fenbi-<sourceId>/`、`receipt.json` 和 `legacy-original.md`（仅已有旧卷），不写正式 `国考/`、`省考/` 或 Git 索引。重复执行若文件哈希不同会拒绝覆盖。试卷图片逐件核 SHA。
 
 - 粉笔有题面就以来源题面生成；旧版答案仅在**题面与全部选项唯一匹配**时重挂，不按新旧题号硬搬。
 - 粉笔征集占位只有在其他多数题证实编号保持稳定且原库该号有真题时回退；旧图链接若尚未安全重绑定则记 C，不能假装完整。

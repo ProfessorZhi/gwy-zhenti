@@ -919,7 +919,7 @@ A
 
 下面是一扇防盗门的四种受力图，F_1、F_2为作用在上下两个铰链上的力，G为重力。防盗门的实际受力情况最接近：
 
-![](assets-fenbi-407/4fb9fab83a47bb7ead3e3a9ae38475fd6afee28e4367599c6c84f7a615456522.png)
+![](图片/assets-fenbi-407/4fb9fab83a47bb7ead3e3a9ae38475fd6afee28e4367599c6c84f7a615456522.png)
 
 A. A
 
@@ -949,7 +949,7 @@ B
 
 如图所示，在光滑桌面上有一轻质弹簧，它的两端连接质量不等的两个小球，用两手挤小球，使弹簧被压缩而静止在桌面上，然后同时放手，在弹簧恢复原长的任意时刻，两小球的：
 
-![](assets-fenbi-407/942e5abdcdf191ccef2d0319c41cdee18c8a44a2952fa53056320670421912cd.png)
+![](图片/assets-fenbi-407/942e5abdcdf191ccef2d0319c41cdee18c8a44a2952fa53056320670421912cd.png)
 
 A. 动能相等
 
@@ -981,7 +981,7 @@ B
 
 一台灯的插头在如图所示插座上，插座上有一个开关和一个指示灯（相当于电阻）的灯泡。若插座开关和指示灯用S_1、L_1表示，台灯开关和台灯用S_2、L_2表示，当断开或闭合S_1、S_2时，记录现象如下表。则符合事实的电路图是：
 
-![](assets-fenbi-407/2c9c48f6bfe2d478c12a9e32335b3710259be2d88f4b784144282c3e2d0c4604.png)
+![](图片/assets-fenbi-407/2c9c48f6bfe2d478c12a9e32335b3710259be2d88f4b784144282c3e2d0c4604.png)
 
 A. A
 
@@ -1011,7 +1011,7 @@ C
 
 某人准备了两杯等量的水及一些块状冰糖来与白糖粉末（两者成分均为蔗糖），做溶解速率与溶解度的实验。在25℃时，他将相同质量的冰糖与白糖粉末分别加入两个杯子中，并以相同的速度不断搅拌，最后两个杯子均有未溶解的糖。则下列糖的质量百分比浓度与搅拌时间的关系图，正确的是：
 
-![](assets-fenbi-407/eae571b66b5841e5802783df7e8eec06bb61d0ab0f62ab6b824062337665857e.png)
+![](图片/assets-fenbi-407/eae571b66b5841e5802783df7e8eec06bb61d0ab0f62ab6b824062337665857e.png)
 
 A. A
 
@@ -1041,7 +1041,7 @@ D
 
 两反射镜面I、II成5度角放置，光线入射镜面I的入射角为30度，然后在两个镜面中来回反射，则光线第一次从镜面I上面重新反射出来的出射角为：
 
-![](assets-fenbi-407/a62b3064a21ee0cf3bfb6dc061ecbc85dde2a39b6ff4114daaaac492edfc09d0.png)
+![](图片/assets-fenbi-407/a62b3064a21ee0cf3bfb6dc061ecbc85dde2a39b6ff4114daaaac492edfc09d0.png)
 
 A. 30度
 
@@ -1059,7 +1059,7 @@ B
 
 **解析**
 
-![](assets-fenbi-407/3272f63fd5d68e27035cb7b30161f302e5df5820f37e0927228cc213d76c0e5f.png)
+![](图片/assets-fenbi-407/3272f63fd5d68e27035cb7b30161f302e5df5820f37e0927228cc213d76c0e5f.png)
 
 画图分析，根据入射角等于出射角，可推算出光线第一次从镜面I上面重新反射后出射角为40度。
 
@@ -1277,7 +1277,7 @@ D项大学生创业现象与地理无关，不属于地缘文化学的研究对�
 
 下列选项中不能折成原图的是：
 
-![](assets-fenbi-407/be4cc8ce0b019b57998dbf4c423159d5bed2b1bdca3e59a779108786a70fda0f.jpg)
+![](图片/assets-fenbi-407/be4cc8ce0b019b57998dbf4c423159d5bed2b1bdca3e59a779108786a70fda0f.jpg)
 
 A. A
 
@@ -1297,7 +1297,7 @@ C
 
 本题考查六面体的空间重构能力。如下图所示，可用画边法解题，以菱形面和圆形面的公共边（即下图绿线）为起点，分别对题干和选项进行顺时针画边。
 
-![](assets-fenbi-407/13d2b5ba6ce91a3bfbbd9cb12d914075fbb6fc0478473dd2e65a95dd75e4ef5d.png)
+![](图片/assets-fenbi-407/13d2b5ba6ce91a3bfbbd9cb12d914075fbb6fc0478473dd2e65a95dd75e4ef5d.png)
 
 A项：与题干对应面一致，排除；
 
@@ -1319,7 +1319,7 @@ D项：与题干对应面一致，排除。
 
 下列选项中，符合所给图形的变化规律的是：
 
-![](assets-fenbi-407/d55397cb3dccd896a3a72ae2e00354cf0e719e4817c3fa0b54e2a651d4f3dbcb.png)
+![](图片/assets-fenbi-407/d55397cb3dccd896a3a72ae2e00354cf0e719e4817c3fa0b54e2a651d4f3dbcb.png)
 
 A. A
 
@@ -1351,7 +1351,7 @@ C
 
 下列选项中，符合所给图形变化规律的是：
 
-![](assets-fenbi-407/53b66f039c533b9c17ca24220fd0db75cabc76a4c08168bc9698fa6971f5745e.jpg)
+![](图片/assets-fenbi-407/53b66f039c533b9c17ca24220fd0db75cabc76a4c08168bc9698fa6971f5745e.jpg)
 
 A. A
 
@@ -1385,7 +1385,7 @@ C
 
 请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-407/754e8c997a7802aca45b81664cdf74ace189ea1336e53cb3bce07ee615cad424.jpg)
+![](图片/assets-fenbi-407/754e8c997a7802aca45b81664cdf74ace189ea1336e53cb3bce07ee615cad424.jpg)
 
 A. A
 
@@ -1417,7 +1417,7 @@ C
 
 下列选项中，符合所给图形的变化规律的是：
 
-![](assets-fenbi-407/e1e9d3755b57761e211793d8d716f4f85c83490351bd1dae67b63f33bf48e61e.png)
+![](图片/assets-fenbi-407/e1e9d3755b57761e211793d8d716f4f85c83490351bd1dae67b63f33bf48e61e.png)
 
 A. A
 
@@ -1451,7 +1451,7 @@ A项小黑圆与题干中第一行第一列图形中小黑圆的位置有重合�
 
 下列选项中，符合所给图形变化规律的是：
 
-![](assets-fenbi-407/34dbaa8719a41a0814a18e41a285e1b1681d36bf4922c3cf0a754b4d45363597.jpg)
+![](图片/assets-fenbi-407/34dbaa8719a41a0814a18e41a285e1b1681d36bf4922c3cf0a754b4d45363597.jpg)
 
 A. A
 
@@ -1485,7 +1485,7 @@ B
 
 下列选项中，符合所给图形的变化规律的是：
 
-![](assets-fenbi-407/1b66e4bc3a454fc15b3f6926ae060785be1aeed8951e4d39d32a3571769e3617.png)
+![](图片/assets-fenbi-407/1b66e4bc3a454fc15b3f6926ae060785be1aeed8951e4d39d32a3571769e3617.png)
 
 A. A
 
@@ -1517,7 +1517,7 @@ B
 
 下列选项中，符合所给图形的变化规律的是：
 
-![](assets-fenbi-407/5433225662af3a16c50c3fa2bd57aeacd1348e3be8ad1a321e0c335ab803855c.png)
+![](图片/assets-fenbi-407/5433225662af3a16c50c3fa2bd57aeacd1348e3be8ad1a321e0c335ab803855c.png)
 
 A. A
 
@@ -1535,7 +1535,7 @@ A
 
 **解析**
 
-![](assets-fenbi-407/7a15cb4e9590e9423319d398ae8a00b72cb228216fda7ff74a104b323342dc15.png)
+![](图片/assets-fenbi-407/7a15cb4e9590e9423319d398ae8a00b72cb228216fda7ff74a104b323342dc15.png)
 
 元素组成相同，看位置。元素位置对换规律，按照“左上右上、左下右下、左上左下、右上右下”的顺序循环。
 
@@ -1551,7 +1551,7 @@ A
 
 下列选项中，符合所给图形的变化规律的是：
 
-![](assets-fenbi-407/fbf1cc5317d278464d3c59ed868a78de6d38099aebb8aee379b8acc34fed76ab.png)
+![](图片/assets-fenbi-407/fbf1cc5317d278464d3c59ed868a78de6d38099aebb8aee379b8acc34fed76ab.png)
 
 A. A
 
@@ -1587,7 +1587,7 @@ B
 
 左边图形由四个部分组成，各部分通过平面上的变化可以组成新图形，下列选项中，不是由这四个部分组成的是：
 
-![](assets-fenbi-407/0803ee9343f5a77213b96db4009d77bcbcc8de2a7c0c144ea62f2f70020949a7.png)
+![](图片/assets-fenbi-407/0803ee9343f5a77213b96db4009d77bcbcc8de2a7c0c144ea62f2f70020949a7.png)
 
 A. A
 
@@ -2257,7 +2257,7 @@ B
 
 如图所示，A、B、C、D、E、F将圆六等分。圆内接一个正三角形。已知阴影部分的面积是100平方米，则圆面积为：
 
-![](assets-fenbi-407/21ab7d457f46b1fa2c9cd76d7a475c421ccdc6fb13fb78dd4d3233eb3c47012c.png)
+![](图片/assets-fenbi-407/21ab7d457f46b1fa2c9cd76d7a475c421ccdc6fb13fb78dd4d3233eb3c47012c.png)
 
 A. 180平方米
 
@@ -2277,7 +2277,7 @@ B
 
 设圆的半径为r，圆心为O点，弧AB和弧CD的中点分别为G和H，连接OG、OH、OB、OC，扇形OGH的面积为1/3πr^2，则扇形OBC的面积为(1/6)πr^2。三角形OGH面积=1/2×√3r×1/2r=(√3/4)r^2，三角形OBC的面积= 1/2 × r × √3/2 r = √3/4 r^2，则阴影部分的面积为：[(1/3)πr^2 − (√3/4)r^2 − ((1/6)πr^2 − (√3/4)r^2)]×3 = 100，化简得πr^2=200，因此圆的面积为200平方米。
 
-![](assets-fenbi-407/dfa10ffb324b447a8e7acf4a536d8d372f79dd8e6d6ba44d537ab44426d6fc4f.png)
+![](图片/assets-fenbi-407/dfa10ffb324b447a8e7acf4a536d8d372f79dd8e6d6ba44d537ab44426d6fc4f.png)
 
 故正确答案为B。
 
@@ -2477,7 +2477,7 @@ C
 
 ## 材料 4
 
-![](assets-fenbi-407/d712cdab2bbbf94cae20669fd103dd7cdb3b1aa9e54c25820764fd45dea95b1f.png)
+![](图片/assets-fenbi-407/d712cdab2bbbf94cae20669fd103dd7cdb3b1aa9e54c25820764fd45dea95b1f.png)
 
 ### 第 69 题
 
@@ -2615,7 +2615,7 @@ D项：定位表格第二列和最后一列，面积为90平方米左右的住�
 
 中国指数研究院数据信息中心检测显示2011年我国130个主要城市土地市场交易情况图如下所示：
 
-![](assets-fenbi-407/61b67d3b5202c2aaaae99f64f7d941bba692677e21b817fe3b71d0f894ef5872.png)
+![](图片/assets-fenbi-407/61b67d3b5202c2aaaae99f64f7d941bba692677e21b817fe3b71d0f894ef5872.png)
 
 ### 第 73 题
 
@@ -2725,9 +2725,9 @@ B
 
 据抽样调查，上海市城市居民家庭人均可支配收入构成情况及部分城市城镇居民家庭人均可支配收入增长情况如下所示：
 
-![](assets-fenbi-407/2eb38613f80ec0cc706f5ae1aeac1256086330e654c956600c0f9e925e6aba17.png)
+![](图片/assets-fenbi-407/2eb38613f80ec0cc706f5ae1aeac1256086330e654c956600c0f9e925e6aba17.png)
 
-![](assets-fenbi-407/af0d4bb177b33285782eb5bdfb7cb0fd95403861e87d48b9ed817d1f0b55a255.png)
+![](图片/assets-fenbi-407/af0d4bb177b33285782eb5bdfb7cb0fd95403861e87d48b9ed817d1f0b55a255.png)
 
 ### 第 76 题
 

@@ -33,7 +33,7 @@ export function shenlunBlockers(doc) {
   return out;
 }
 
-// 图片下载到候选目录的 assets-fenbi-<id>/<sha>.<ext>；遇到风控状态码立即停。
+// 图片下载到候选目录的 图片/assets-fenbi-<id>/<sha>.<ext>；遇到风控状态码立即停。
 async function downloadImages(doc, dir, fetchImpl) {
   for (const asset of doc.assets) {
     const res = await fetchImpl(asset.url, { signal: AbortSignal.timeout(30000) });
@@ -63,7 +63,7 @@ export async function shenlunCandidate({ captureDir, repo, dest, fetchImpl = fet
   const out = path.join(dest, name);
   await fs.rm(out, { recursive: true, force: true });
   if (row.issues.length) return row;
-  const prefix = 'assets-fenbi-' + id.id;
+  const prefix = '图片/assets-fenbi-' + id.id;
   try { await downloadImages(doc, path.join(out, prefix), fetchImpl); }
   catch (e) { if (e.risk) throw e; row.issues.push(e.message); await fs.rm(out, { recursive: true, force: true }); return row; }
   const md = renderCandidate(doc, { status: 'complete' }, { imagePrefix: prefix });

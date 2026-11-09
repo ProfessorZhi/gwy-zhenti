@@ -1518,7 +1518,7 @@ A
 
 ## 材料 1
 
-![](assets-fenbi-399/1c00d6d4a56507b7f01c40959706fca01f88ea686b9adbbf355afa35890abdd2.png)
+![](图片/assets-fenbi-399/1c00d6d4a56507b7f01c40959706fca01f88ea686b9adbbf355afa35890abdd2.png)
 
 根据图例和数字表回答下列各题。
 
@@ -1646,7 +1646,7 @@ D
 
 数字表中第4行出现次数最多的数字对应的符号是：
 
-![](assets-fenbi-399/14c6d936fc02d17c558758bcf00be7e3b482c125bb0170eec725ce0b818da08b.png)
+![](图片/assets-fenbi-399/14c6d936fc02d17c558758bcf00be7e3b482c125bb0170eec725ce0b818da08b.png)
 
 A. A
 
@@ -1732,7 +1732,7 @@ D
 
 与数字表第5列第2、3、4行的数字对应的符号依次是：
 
-![](assets-fenbi-399/978f95d92ea93189dcdb555e86996ffba777a00919dff3e01e00bb112cd07d86.png)★
+![](图片/assets-fenbi-399/978f95d92ea93189dcdb555e86996ffba777a00919dff3e01e00bb112cd07d86.png)★
 
 A. A
 
@@ -1762,7 +1762,7 @@ A
 
 下列符号中，数字表第2列数字对应的符号没有出现的是：
 
-![](assets-fenbi-399/0599599bb2b8f2c87f6d9150e2286ae92c9dcd8445cedd8408a7c7d1670d7353.png)
+![](图片/assets-fenbi-399/0599599bb2b8f2c87f6d9150e2286ae92c9dcd8445cedd8408a7c7d1670d7353.png)
 
 A. A
 
@@ -1792,7 +1792,7 @@ B
 
 数字表中数字之和最小的一列第4行中的数字对应的符号是：
 
-![](assets-fenbi-399/3b01591d0af1e8fd870037de8321e13f7c0c4f71e436cec8260b100769ccfde9.png)
+![](图片/assets-fenbi-399/3b01591d0af1e8fd870037de8321e13f7c0c4f71e436cec8260b100769ccfde9.png)
 
 A. A
 
@@ -2376,7 +2376,7 @@ C
 
 **解析**
 
-![](assets-fenbi-399/1ffb4d21eeae947c609fe71aaa10cedf37105050c6af4346bed2156fe8867c52.png)
+![](图片/assets-fenbi-399/1ffb4d21eeae947c609fe71aaa10cedf37105050c6af4346bed2156fe8867c52.png)
 
 故正确答案为C。
 
@@ -2622,7 +2622,7 @@ C
 
 **解析**
 
-![](assets-fenbi-399/1f195e990514cac689aa54dc56c39a23a02a7bac9ea83565740b51163d74ad08.jpg)
+![](图片/assets-fenbi-399/1f195e990514cac689aa54dc56c39a23a02a7bac9ea83565740b51163d74ad08.jpg)
 
 新数列的分子项和分母项均构成等差数列。
 
@@ -3348,7 +3348,7 @@ D
 
 在题干中给出一套图形，其中有五个图，这五个图呈现一定的规律性。在给出的另一套图形中，有四个图，从中选出唯一的一项作为保持左边五个图规律性的第六个图。
 
-![](assets-fenbi-399/b88d852fc742394914b161f2d3f8945f3b8f0f702e9d596857fecb321d7c5d10.jpg)
+![](图片/assets-fenbi-399/b88d852fc742394914b161f2d3f8945f3b8f0f702e9d596857fecb321d7c5d10.jpg)
 
 A. A
 
@@ -3380,7 +3380,7 @@ B
 
 在题干中给出一套图形，其中有五个图，这五个图呈现一定的规律性。在给出的另一套图形中，有四个图，从中选出唯一的一项作为保持左边五个图规律性的第六个图：
 
-![](assets-fenbi-399/5b5f9c87183af7b5a05e544f6a0be9b1f97108f0684698e4f8a0d7c4728784f7.jpg)
+![](图片/assets-fenbi-399/5b5f9c87183af7b5a05e544f6a0be9b1f97108f0684698e4f8a0d7c4728784f7.jpg)
 
 A. A
 
@@ -3412,7 +3412,7 @@ B
 
 请从所给的四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-399/dab12ca40c0f30ade73a60dc91e697e538681f50f2baa7d91254f04466351a11.jpg)
+![](图片/assets-fenbi-399/dab12ca40c0f30ade73a60dc91e697e538681f50f2baa7d91254f04466351a11.jpg)
 
 A. A
 
@@ -3444,7 +3444,7 @@ A
 
 请从所给的四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-399/15e4cc04566c489deb64064cbe664717252561c1f35db26f71ff2d3dbccb66f8.jpg)
+![](图片/assets-fenbi-399/15e4cc04566c489deb64064cbe664717252561c1f35db26f71ff2d3dbccb66f8.jpg)
 
 A. A
 
@@ -3474,7 +3474,7 @@ C
 
 请从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-399/92dd55208c87aaee88b17b60f1e12b354f9476d583592699a132bbd53fdce40b.jpg)
+![](图片/assets-fenbi-399/92dd55208c87aaee88b17b60f1e12b354f9476d583592699a132bbd53fdce40b.jpg)
 
 A. A
 
@@ -3506,7 +3506,7 @@ B
 
 请从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-399/afa565afc299c009879dbe71fb287cbdc37b4593a468a1a997bb7d5b92478955.jpg)
+![](图片/assets-fenbi-399/afa565afc299c009879dbe71fb287cbdc37b4593a468a1a997bb7d5b92478955.jpg)
 
 A. A
 
@@ -3538,7 +3538,7 @@ C
 
 请从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-399/043d89d7ddd5918313409a9eccc2d0d596c3dec9226bf6163de05222cc829461.jpg)
+![](图片/assets-fenbi-399/043d89d7ddd5918313409a9eccc2d0d596c3dec9226bf6163de05222cc829461.jpg)
 
 A. A
 
@@ -3570,7 +3570,7 @@ B
 
 请从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-399/ce78a5124d8b1ea441715c815f6f94d0e769a56b57fd3f047a8d0335da3fc0b1.jpg)
+![](图片/assets-fenbi-399/ce78a5124d8b1ea441715c815f6f94d0e769a56b57fd3f047a8d0335da3fc0b1.jpg)
 
 A. A
 
@@ -3602,7 +3602,7 @@ B
 
 右边所给的四个选项中，哪一个由左边第一个图形叠成？
 
-![](assets-fenbi-399/6b9144d488e414439b7462fb2caa2c7d5fbf9ab08b111698ed7aa1477c022a38.png)
+![](图片/assets-fenbi-399/6b9144d488e414439b7462fb2caa2c7d5fbf9ab08b111698ed7aa1477c022a38.png)
 
 A. A
 
@@ -3622,7 +3622,7 @@ C
 
 本题考查四面体的空间重构。对平面展开图中的面进行标记，用排除法解题。
 
-![](assets-fenbi-399/e9aed4d1098edf22335d0261239ba139eb87cc22d13ad5b5b814b40a9d0421a7.png)
+![](图片/assets-fenbi-399/e9aed4d1098edf22335d0261239ba139eb87cc22d13ad5b5b814b40a9d0421a7.png)
 
 A项：选项由面a与面b构成，展开图中面a中的小三角形的顶点E没有发出线，而选项中该点发出了一条线，选项与展开图不一致，排除；
 
@@ -3642,7 +3642,7 @@ D项：选项由面b与面c构成，展开图中面b的顶点F发出一条线，
 
 右边所给的四个选项中，哪一个由左边第一个图形叠成？
 
-![](assets-fenbi-399/f76989406d4ec4607ecf5b1837e7d2b17de0003f31765627e5f7630d95b04ac0.jpg)
+![](图片/assets-fenbi-399/f76989406d4ec4607ecf5b1837e7d2b17de0003f31765627e5f7630d95b04ac0.jpg)
 
 A. A
 
@@ -3662,11 +3662,11 @@ C
 
 相邻两面的线是相交的，
 
-故A项应为![](assets-fenbi-399/481819bd2fcf496f38b68d4006268952c65c52948189aad522931303308c5b8d.jpg)，
+故A项应为![](图片/assets-fenbi-399/481819bd2fcf496f38b68d4006268952c65c52948189aad522931303308c5b8d.jpg)，
 
-B项应为![](assets-fenbi-399/632fe77a395c5d36abb846a2ca4f1cb2de4c77f9f7e84aa99e2e092550f093fe.jpg)，
+B项应为![](图片/assets-fenbi-399/632fe77a395c5d36abb846a2ca4f1cb2de4c77f9f7e84aa99e2e092550f093fe.jpg)，
 
-D项应为![](assets-fenbi-399/c1f4f899146b3c571dd6ca826d74783dd961d98dbe842ce1f2a0306b8a6f0b10.jpg)。
+D项应为![](图片/assets-fenbi-399/c1f4f899146b3c571dd6ca826d74783dd961d98dbe842ce1f2a0306b8a6f0b10.jpg)。
 
 故正确答案为C。
 
@@ -4660,7 +4660,7 @@ D
 
 2011年一季度我国建筑业产值为16096.4亿元，其中，建筑工程产值14220.0亿元，安装工程产值1405.2亿元，其他471.2亿元。华东六省一市相关数据见下表：
 
-![](assets-fenbi-399/9103afa6dcccfc543fd849762fba29802900007be7a107ba314f3eeab03436cf.png)
+![](图片/assets-fenbi-399/9103afa6dcccfc543fd849762fba29802900007be7a107ba314f3eeab03436cf.png)
 
 | 省（市） | 合计 | 建筑工程 | 安装工程 | 其他 |
 | --- | ---: | ---: | ---: | ---: |
@@ -4838,7 +4838,7 @@ B
 
 ## 材料 5
 
-![](assets-fenbi-399/ef8f975b4e4d8aa89fb52685c88e03859dda703d1b5beffe61be4174d31826a1.png)
+![](图片/assets-fenbi-399/ef8f975b4e4d8aa89fb52685c88e03859dda703d1b5beffe61be4174d31826a1.png)
 
 ### 第 146 题
 
@@ -5012,7 +5012,7 @@ B
 
 **2010、2011年前三季度江苏城乡居民收入、消费情况**
 
-![](assets-fenbi-399/a5f481eafc362afb751bd8cd1f3f11f773134b13fee2df32956fd177020bc448.png)
+![](图片/assets-fenbi-399/a5f481eafc362afb751bd8cd1f3f11f773134b13fee2df32956fd177020bc448.png)
 
 ### 第 151 题
 

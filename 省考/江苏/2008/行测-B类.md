@@ -127,7 +127,7 @@ C
 
 ### 第 4 题
 
-![](assets-fenbi-81/78a7213c730ed324ab45d86e973efda652acfa5ddf9600b7cef8c1716b0112d8.png)
+![](图片/assets-fenbi-81/78a7213c730ed324ab45d86e973efda652acfa5ddf9600b7cef8c1716b0112d8.png)
 
 A. 2
 
@@ -295,7 +295,7 @@ A
 
 ### 第 10 题
 
-![](assets-fenbi-81/63cb08e2e7bb6bab9e4d31a837cd02847cbc2e39febf1f385652a3918721d532.png)
+![](图片/assets-fenbi-81/63cb08e2e7bb6bab9e4d31a837cd02847cbc2e39febf1f385652a3918721d532.png)
 
 A. 3
 
@@ -547,7 +547,7 @@ B
 
 ### 第 19 题
 
-![](assets-fenbi-81/5e7f855c5c00ad2f5cccb4e67d160618ce9dffe5fc88039a340e0f753343a77a.png)
+![](图片/assets-fenbi-81/5e7f855c5c00ad2f5cccb4e67d160618ce9dffe5fc88039a340e0f753343a77a.png)
 
 A. 0
 
@@ -575,7 +575,7 @@ C
 
 ### 第 20 题
 
-![](assets-fenbi-81/081354425d4e030aa64ec91d2dc2bfba980e3c9d165665ec7bf54812f57f1d9d.png)
+![](图片/assets-fenbi-81/081354425d4e030aa64ec91d2dc2bfba980e3c9d165665ec7bf54812f57f1d9d.png)
 
 A. 0
 
@@ -603,7 +603,7 @@ B
 
 ### 第 21 题
 
-![](assets-fenbi-81/3281e2ba763503b50c9a8e509b1eb7c8c8805f2df846e8e736cde4f2afa503c6.png)
+![](图片/assets-fenbi-81/3281e2ba763503b50c9a8e509b1eb7c8c8805f2df846e8e736cde4f2afa503c6.png)
 
 A. 1
 
@@ -631,7 +631,7 @@ A
 
 ### 第 22 题
 
-![](assets-fenbi-81/2734a566b4291ca8b3d4ac34ccd455c1ebff206ac9cc5c16d35c819e3d02a13a.png)
+![](图片/assets-fenbi-81/2734a566b4291ca8b3d4ac34ccd455c1ebff206ac9cc5c16d35c819e3d02a13a.png)
 
 A. 1
 
@@ -687,7 +687,7 @@ C
 
 ### 第 24 题
 
-![](assets-fenbi-81/e2aae393ec03e4bd888404fb402fffb1c0fbc6285d8f66b7c61bf1b17d3b2a0f.png)
+![](图片/assets-fenbi-81/e2aae393ec03e4bd888404fb402fffb1c0fbc6285d8f66b7c61bf1b17d3b2a0f.png)
 
 A. 5
 
@@ -715,7 +715,7 @@ D
 
 ### 第 25 题
 
-![](assets-fenbi-81/0890cc15dc7c72dca5550affe8817beb52a3c3eaa32e34c19e54966bdd7329f3.png)
+![](图片/assets-fenbi-81/0890cc15dc7c72dca5550affe8817beb52a3c3eaa32e34c19e54966bdd7329f3.png)
 
 A. 1
 
@@ -855,7 +855,7 @@ D
 
 ### 第 30 题
 
-![](assets-fenbi-81/3df0b02faeb87ae354ec04c9f1df78c4f53e5fa862924fa35cf5d816f4ef1dcf.png)
+![](图片/assets-fenbi-81/3df0b02faeb87ae354ec04c9f1df78c4f53e5fa862924fa35cf5d816f4ef1dcf.png)
 
 A. 0
 
@@ -883,7 +883,7 @@ C
 
 ### 第 31 题
 
-![](assets-fenbi-81/15c59701c4ad008b661eafd36963d23d12fbf2a6f0ab36411aa17f007b65787c.png)
+![](图片/assets-fenbi-81/15c59701c4ad008b661eafd36963d23d12fbf2a6f0ab36411aa17f007b65787c.png)
 
 A. 0
 
@@ -911,7 +911,7 @@ A
 
 ### 第 32 题
 
-![](assets-fenbi-81/acf51cdb2d5bb1470bbe06575e7803f9d0c58bb4b8a1f390d08ceaf36d0cd356.png)
+![](图片/assets-fenbi-81/acf51cdb2d5bb1470bbe06575e7803f9d0c58bb4b8a1f390d08ceaf36d0cd356.png)
 
 A. 0
 
@@ -939,7 +939,7 @@ B
 
 ### 第 33 题
 
-![](assets-fenbi-81/86e94ca3ca19b8b0b0a8a71dc10fbf14d4244bd694adabd571770240effc475b.png)
+![](图片/assets-fenbi-81/86e94ca3ca19b8b0b0a8a71dc10fbf14d4244bd694adabd571770240effc475b.png)
 
 A. 2
 
@@ -1023,7 +1023,7 @@ B
 
 ## 材料 1
 
-![](assets-fenbi-81/4877c49f3a1cdde4a0e525a76bc19af654a3d62363283d630c01d90ceadb580d.jpg)
+![](图片/assets-fenbi-81/4877c49f3a1cdde4a0e525a76bc19af654a3d62363283d630c01d90ceadb580d.jpg)
 
 | A | B | C | D |
 | --- | ---: | ---: | ---: |
@@ -1454,9 +1454,9 @@ A
 
 字符替换
 
-![](assets-fenbi-81/44b14698c9a180a344465fd80c29d2b1fb200792c63a300297ba8041aebbd737.png)
+![](图片/assets-fenbi-81/44b14698c9a180a344465fd80c29d2b1fb200792c63a300297ba8041aebbd737.png)
 
-![](assets-fenbi-81/99f4e2ce3b0bf550c22cd4cb418fa7d079d9c2c53c3ab1ff9739ef53854351e8.png)
+![](图片/assets-fenbi-81/99f4e2ce3b0bf550c22cd4cb418fa7d079d9c2c53c3ab1ff9739ef53854351e8.png)
 
 |  | 第1列 | 第2列 | 第3列 | 第4列 | 第5列 | 第6列 | 第7列 | 第8列 | 第9列 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -1541,7 +1541,7 @@ A
 
 **解析**
 
-数字表中第7列的数字分别为9、6、2、1，由对应表可知对应的符号分别为![](assets-fenbi-81/2744aa8b8588827f45826067d9d2435b075203fa5710405964829d1dd02fd6c5.png)，选项B、C、D均不符合。
+数字表中第7列的数字分别为9、6、2、1，由对应表可知对应的符号分别为![](图片/assets-fenbi-81/2744aa8b8588827f45826067d9d2435b075203fa5710405964829d1dd02fd6c5.png)，选项B、C、D均不符合。
 
 故正确答案为A。
 
@@ -1767,7 +1767,7 @@ C
 
 原数列为二级质数数列。
 
-![](assets-fenbi-81/7c9a4f818e9dce422dd862e533e6b1a5e9ca28e6310dd66785d0a1606dd9a430.png)
+![](图片/assets-fenbi-81/7c9a4f818e9dce422dd862e533e6b1a5e9ca28e6310dd66785d0a1606dd9a430.png)
 
 故正确答案为C。
 
@@ -1935,7 +1935,7 @@ C
 
 ### 第 67 题
 
-![](assets-fenbi-81/f6de0227c268c607a04dd6bbb57a2ada314effd7a0b15f47e8ebd63d16f7bf34.png)
+![](图片/assets-fenbi-81/f6de0227c268c607a04dd6bbb57a2ada314effd7a0b15f47e8ebd63d16f7bf34.png)
 
 A. 2
 
@@ -2049,7 +2049,7 @@ A
 
 原数列为二级等差数列。
 
-![](assets-fenbi-81/6b557a3b7b2fc2512d55b626c9080c9f28ae6fc73d452df69374b0f4938b9a6c.png)
+![](图片/assets-fenbi-81/6b557a3b7b2fc2512d55b626c9080c9f28ae6fc73d452df69374b0f4938b9a6c.png)
 
 故正确答案为A。
 
@@ -2371,7 +2371,7 @@ D项：售价为206元，应降价0元，(12 - 0) × 0^2 = 0；
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-81/1c9a39f63e28b71d2788109b61fc89d8c1e44a24ea5b733c1330226e64a82df6.png)
+![](图片/assets-fenbi-81/1c9a39f63e28b71d2788109b61fc89d8c1e44a24ea5b733c1330226e64a82df6.png)
 
 A. A
 
@@ -2405,7 +2405,7 @@ B
 
 请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性。
 
-![](assets-fenbi-81/411f0e2297c7dc76f83f025f0af7f608b9511eb0f274395479d74068c8ad4bb0.jpg)
+![](图片/assets-fenbi-81/411f0e2297c7dc76f83f025f0af7f608b9511eb0f274395479d74068c8ad4bb0.jpg)
 
 A. A
 
@@ -2437,7 +2437,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-81/282e86ad7b8469242a7e9892db21719f008cf946c6edfcf0a34491e21db5f89b.png)
+![](图片/assets-fenbi-81/282e86ad7b8469242a7e9892db21719f008cf946c6edfcf0a34491e21db5f89b.png)
 
 A. A
 
@@ -2471,7 +2471,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-81/f550a4b1384490fd0cfee88ec7035a711b28bfcaf1557b13485ac0033d53d85a.png)
+![](图片/assets-fenbi-81/f550a4b1384490fd0cfee88ec7035a711b28bfcaf1557b13485ac0033d53d85a.png)
 
 A. A
 
@@ -2505,7 +2505,7 @@ D
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-81/339033bdacc8de7dd7b17e4edc53b67197d0f0981abb2e8de6b3b61217dab5ad.png)
+![](图片/assets-fenbi-81/339033bdacc8de7dd7b17e4edc53b67197d0f0981abb2e8de6b3b61217dab5ad.png)
 
 A. A
 
@@ -2539,7 +2539,7 @@ D
 
 左边给定的是正方体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/9aa9728dc6c833ad4b7f15bcb3ad2f6d273b396fd4efd81ade282b8c670fd3db.png)
+![](图片/assets-fenbi-81/9aa9728dc6c833ad4b7f15bcb3ad2f6d273b396fd4efd81ade282b8c670fd3db.png)
 
 A. A
 
@@ -2573,7 +2573,7 @@ C
 
 左边给定的是正方体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/646beb125e43ef6b53e84304d0665731b1eba8d9fc6afe44b5bf81a0e30cf3e1.png)
+![](图片/assets-fenbi-81/646beb125e43ef6b53e84304d0665731b1eba8d9fc6afe44b5bf81a0e30cf3e1.png)
 
 A. A
 
@@ -2611,7 +2611,7 @@ D项：与A项一样，顶面应为白色，与题干不一致，排除。
 
 左边给定的是纸盒的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/3036297cd858c79df0ff85d6ba3fe15ed316ecdbe7c9469fce1edbadd3dd5b58.png)
+![](图片/assets-fenbi-81/3036297cd858c79df0ff85d6ba3fe15ed316ecdbe7c9469fce1edbadd3dd5b58.png)
 
 A. A
 
@@ -2641,7 +2641,7 @@ A
 
 左边给定的是正方体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/88c3a1257d2b32ebffb6bbe8c4e20ea3fe6a417908416441a3191bdcfe228a6f.png)
+![](图片/assets-fenbi-81/88c3a1257d2b32ebffb6bbe8c4e20ea3fe6a417908416441a3191bdcfe228a6f.png)
 
 A. A
 
@@ -2663,7 +2663,7 @@ D
 
 故正确答案为D。
 
-![](assets-fenbi-81/4047382f5697a16d2a16c69f137935b72383f232a98754c229e8520de301339b.png)
+![](图片/assets-fenbi-81/4047382f5697a16d2a16c69f137935b72383f232a98754c229e8520de301339b.png)
 
 **考点**：空间类-空间重构-六面体
 
@@ -2675,7 +2675,7 @@ D
 
 左边给定的是纸盒的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/cbbfac15935c928d5eef3c6ebab366d41f2d14fe726f247eeabb7a7862d314bb.png)
+![](图片/assets-fenbi-81/cbbfac15935c928d5eef3c6ebab366d41f2d14fe726f247eeabb7a7862d314bb.png)
 
 A. A
 
@@ -2705,7 +2705,7 @@ B
 
 左边给定的是八面体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/d7edc9f45b3ab6688ee2855bc274f50943ee5092aae7b98c943c9109d3ce7644.png)
+![](图片/assets-fenbi-81/d7edc9f45b3ab6688ee2855bc274f50943ee5092aae7b98c943c9109d3ce7644.png)
 
 A. A
 
@@ -2735,7 +2735,7 @@ C
 
 左边给定的是八面体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/e88a799aec83d9611f29417becba31b9d8b20ca0c2465d12bc99bf1aa456192e.png)
+![](图片/assets-fenbi-81/e88a799aec83d9611f29417becba31b9d8b20ca0c2465d12bc99bf1aa456192e.png)
 
 A. A
 
@@ -2771,7 +2771,7 @@ C项，数字4的方向不对，且与其相邻的面不可能上下都是空白
 
 左边给定的是六面体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/b741dc5e5eda28f3826dcfdcc6c4b15d9af098ce511ad59f13192afb8bd5e54a.png)
+![](图片/assets-fenbi-81/b741dc5e5eda28f3826dcfdcc6c4b15d9af098ce511ad59f13192afb8bd5e54a.png)
 
 A. A
 
@@ -2801,7 +2801,7 @@ B
 
 左边给定的是六面体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/a93e91472ba41391ecaf67ad767c877d65c743bdae06507b5b595451bf41ad97.png)
+![](图片/assets-fenbi-81/a93e91472ba41391ecaf67ad767c877d65c743bdae06507b5b595451bf41ad97.png)
 
 A. A
 
@@ -2831,7 +2831,7 @@ A
 
 左边给定的是六面体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-81/171992fa0517d13ca95b065c30f479bfc90df75dbd8ff1843758d7277c0f1c5a.png)
+![](图片/assets-fenbi-81/171992fa0517d13ca95b065c30f479bfc90df75dbd8ff1843758d7277c0f1c5a.png)
 
 A. A
 
@@ -3217,7 +3217,7 @@ B
 
 第二步：列举情况，并将信息列于表中。
 
-![](assets-fenbi-81/059403d52290800bcb4386513791c518a98b24c697a5a7dad7cb6ccc75bed9d3.jpg)
+![](图片/assets-fenbi-81/059403d52290800bcb4386513791c518a98b24c697a5a7dad7cb6ccc75bed9d3.jpg)
 
 第三步：分析表格并判断选项。
 
@@ -4777,7 +4777,7 @@ D
 
 ## 材料 5
 
-![](assets-fenbi-81/c3b32998763c147cf4e8ef598f8f6264c37ea0f02c34f79fec376d0ef35a7f3f.png)
+![](图片/assets-fenbi-81/c3b32998763c147cf4e8ef598f8f6264c37ea0f02c34f79fec376d0ef35a7f3f.png)
 
 | 职称 | 合计 | 其中女 | 25岁以下 | 26-30 | 31-35 | 36-40 | 41-45 | 46-50 | 51-55 | 56-60 | 61岁及以上 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -4939,7 +4939,7 @@ D项错误：定位统计表可得，表格中未体现少数民族教师从事�
 
 ## 材料 6
 
-![](assets-fenbi-81/4ec18dd402020a055b2729f548f5448f0ee7a1d2efb77e7a8cafe66c7a3e6604.png)
+![](图片/assets-fenbi-81/4ec18dd402020a055b2729f548f5448f0ee7a1d2efb77e7a8cafe66c7a3e6604.png)
 
 |  | 客运量（万人） 自年初累计 | 客运量（万人） 当月完成 | 客运量（万人） 累计为去年周期（%） | 旅客周转量（万人公里） 自年初累计 | 旅客周转量（万人公里） 当月完成 | 旅客周转量（万人公里） 累计为去年周期（%） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -5018,7 +5018,7 @@ B
 
 **解析**
 
-根据题干“华东地区自年初累计旅客周转量最大省份的当月旅客周转量比东北地区自年初累计旅客周转量最大省份的当月旅客周转量多”，结合选项为百分数，可判定本题为一般增长率问题。华东地区包括山东、江苏、安徽、浙江、江西、福建和上海。东北地区包括黑龙江、吉林、辽宁和内蒙古自治区。定位统计表可得，华东地区自年初累计旅客周转量最大的省份是江苏，当月旅客周转量为939116万人；东北地区自年初累计旅客周转量最大的省份是黑龙江，当月旅客周转量为259877万人。增长率= (现期量−基期量)/基期量=(939116−259877)/259877![](assets-fenbi-81/c575aceec7f13eeb567fe3e2fc64525c4f881b81e97a1e13a5162ebf2ad592a4.png)![](assets-fenbi-81/a4eac7843a5e864031cddd73608d40e849341579e84ae146e5e3791c5f9972d3.png)，与B项最为接近。
+根据题干“华东地区自年初累计旅客周转量最大省份的当月旅客周转量比东北地区自年初累计旅客周转量最大省份的当月旅客周转量多”，结合选项为百分数，可判定本题为一般增长率问题。华东地区包括山东、江苏、安徽、浙江、江西、福建和上海。东北地区包括黑龙江、吉林、辽宁和内蒙古自治区。定位统计表可得，华东地区自年初累计旅客周转量最大的省份是江苏，当月旅客周转量为939116万人；东北地区自年初累计旅客周转量最大的省份是黑龙江，当月旅客周转量为259877万人。增长率= (现期量−基期量)/基期量=(939116−259877)/259877![](图片/assets-fenbi-81/c575aceec7f13eeb567fe3e2fc64525c4f881b81e97a1e13a5162ebf2ad592a4.png)![](图片/assets-fenbi-81/a4eac7843a5e864031cddd73608d40e849341579e84ae146e5e3791c5f9972d3.png)，与B项最为接近。
 
 故正确答案为B。
 
@@ -5118,7 +5118,7 @@ B
 
 ## 材料 7
 
-![](assets-fenbi-81/e2a5eb5a10e2a931b9fa619f9086a9e7e448d3630aba94b8ec438df3b6ab7647.jpg)
+![](图片/assets-fenbi-81/e2a5eb5a10e2a931b9fa619f9086a9e7e448d3630aba94b8ec438df3b6ab7647.jpg)
 
 ### 第 151 题
 

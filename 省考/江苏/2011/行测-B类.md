@@ -463,7 +463,7 @@ C
 
 ### 第 16 题
 
-![](assets-fenbi-193/394eee1b9eab2ff80ddd361236aa99c3dac5a0a325de540ffef0ad122b99c4a0.png)
+![](图片/assets-fenbi-193/394eee1b9eab2ff80ddd361236aa99c3dac5a0a325de540ffef0ad122b99c4a0.png)
 
 A. 1
 
@@ -603,7 +603,7 @@ D
 
 ### 第 21 题
 
-![](assets-fenbi-193/5818eed1c23e1a6be37103642b8a4e5e9fb029247b7e4f01ca097265732c413a.png)
+![](图片/assets-fenbi-193/5818eed1c23e1a6be37103642b8a4e5e9fb029247b7e4f01ca097265732c413a.png)
 
 A. 0
 
@@ -631,7 +631,7 @@ A
 
 ### 第 22 题
 
-![](assets-fenbi-193/e2fb1f30001ca71d441ceab33ff7558726e6429dac632149cf90d3a2dc606b1f.png)
+![](图片/assets-fenbi-193/e2fb1f30001ca71d441ceab33ff7558726e6429dac632149cf90d3a2dc606b1f.png)
 
 A. 0
 
@@ -911,7 +911,7 @@ B
 
 ### 第 32 题
 
-![](assets-fenbi-193/42eac5be680de64043aa6afd6dec2d6ffe0e8af10af233414830422722afefc3.png)
+![](图片/assets-fenbi-193/42eac5be680de64043aa6afd6dec2d6ffe0e8af10af233414830422722afefc3.png)
 
 A. 0
 
@@ -939,7 +939,7 @@ C
 
 ### 第 33 题
 
-![](assets-fenbi-193/876cfbad450e044886391f70a679eb6c903bab5fcc99d9825cf230a1b0996c67.png)
+![](图片/assets-fenbi-193/876cfbad450e044886391f70a679eb6c903bab5fcc99d9825cf230a1b0996c67.png)
 
 A. 2
 
@@ -967,7 +967,7 @@ B
 
 ### 第 34 题
 
-![](assets-fenbi-193/a17b1f6fca6e41d81431d5fc5c7c1cb0fcbd6be4bc87aea86d743f433974a97f.png)
+![](图片/assets-fenbi-193/a17b1f6fca6e41d81431d5fc5c7c1cb0fcbd6be4bc87aea86d743f433974a97f.png)
 
 A. 0
 
@@ -995,7 +995,7 @@ D
 
 ### 第 35 题
 
-![](assets-fenbi-193/379edd0fc2a69eec48baba78e9971fd56de5cfcc57110a7b94d73a67a5028f21.png)
+![](图片/assets-fenbi-193/379edd0fc2a69eec48baba78e9971fd56de5cfcc57110a7b94d73a67a5028f21.png)
 
 A. 0
 
@@ -1013,7 +1013,7 @@ B
 
 **解析**
 
-题干中给出的三个字符组中重复的字符为![](assets-fenbi-193/e6e44c9a4ca7535c90904636f6acd16180777d46762a31075a64a4f482ba5ea7.png)，共4个。
+题干中给出的三个字符组中重复的字符为![](图片/assets-fenbi-193/e6e44c9a4ca7535c90904636f6acd16180777d46762a31075a64a4f482ba5ea7.png)，共4个。
 
 故正确答案为B。
 
@@ -1023,7 +1023,7 @@ B
 
 ## 材料 1
 
-![](assets-fenbi-193/ee99eef3eaf3616d4d6c70d44db89d52b595351d2aa5f34196823a275460c5b2.png)
+![](图片/assets-fenbi-193/ee99eef3eaf3616d4d6c70d44db89d52b595351d2aa5f34196823a275460c5b2.png)
 
 | A | B | C | D |
 | --- | --- | --- | --- |
@@ -1452,7 +1452,7 @@ D
 
 ## 材料 2
 
-![](assets-fenbi-193/2bc6c80d1fe981f74cda6a7529828f91d9124debf80ca6687c2756a080ae7082.jpg)
+![](图片/assets-fenbi-193/2bc6c80d1fe981f74cda6a7529828f91d9124debf80ca6687c2756a080ae7082.jpg)
 
 ### 第 51 题
 
@@ -2354,7 +2354,7 @@ C
 
 解析2：把本题作为三级等比数列处理。
 
-![](assets-fenbi-193/f51055aecac09ee670bb3825fa216ad9b19606ee8176612207aef712ed305d37.png)
+![](图片/assets-fenbi-193/f51055aecac09ee670bb3825fa216ad9b19606ee8176612207aef712ed305d37.png)
 
 因此原数列的未知项为113。
 
@@ -3198,7 +3198,7 @@ B
 
 ### 第 104 题
 
-![](assets-fenbi-193/3e167147184ecd81fa8c8b1ba77970a5b8415be8387315ef3b46b8c54f8736a4.jpg)
+![](图片/assets-fenbi-193/3e167147184ecd81fa8c8b1ba77970a5b8415be8387315ef3b46b8c54f8736a4.jpg)
 
 A. A
 
@@ -3232,7 +3232,7 @@ A
 
 下面所给出的四个选项中，只有一个与题干所给出的题目相对应，请找出。
 
-![](assets-fenbi-193/21ca1e48ea2d031c0ce1571cdc33cc5e775e88255811704eb9bf928276967f62.png)
+![](图片/assets-fenbi-193/21ca1e48ea2d031c0ce1571cdc33cc5e775e88255811704eb9bf928276967f62.png)
 
 A. A
 
@@ -3266,7 +3266,7 @@ A
 
 下面的四个选项的平面图形中，只有一个是由题干所给出的四个图形拼合而成的，请选出。
 
-![](assets-fenbi-193/d7d87ae3bbf9f64551e190f186a96c0b2f92299dbd51ef43229946acc59eacb9.png)
+![](图片/assets-fenbi-193/d7d87ae3bbf9f64551e190f186a96c0b2f92299dbd51ef43229946acc59eacb9.png)
 
 A. A
 
@@ -3286,7 +3286,7 @@ D
 
 由于D项中的图形可划分为如下部分。
 
-![](assets-fenbi-193/82a59a27412da72cf63ca3cac628b46de98c8743d9f8da18cbc74d5afcd69405.png)
+![](图片/assets-fenbi-193/82a59a27412da72cf63ca3cac628b46de98c8743d9f8da18cbc74d5afcd69405.png)
 
 因此正确答案为D。
 
@@ -3298,7 +3298,7 @@ D
 
 下面的四个选项的平面图形中，只有一个是由题干所给出的四个图形拼合而成的，请选出。
 
-![](assets-fenbi-193/a312c809289bee95556de88bd11202a4e01f3e437aca8daf28d92934a2216b2d.jpg)
+![](图片/assets-fenbi-193/a312c809289bee95556de88bd11202a4e01f3e437aca8daf28d92934a2216b2d.jpg)
 
 A. A
 
@@ -3318,7 +3318,7 @@ A
 
 题干中图②、图③与图④经过适当旋转，可与图①拼合成A项，如下所示。
 
-![](assets-fenbi-193/b5eef0f1622670cacdb274a3c36fa07e3342a0f893c4e2f7b16ee2e7c1cbea46.jpg)
+![](图片/assets-fenbi-193/b5eef0f1622670cacdb274a3c36fa07e3342a0f893c4e2f7b16ee2e7c1cbea46.jpg)
 
 故正确答案为A。
 
@@ -3330,7 +3330,7 @@ A
 
 下面的四个选项的平面图形中，只有一个是由题干所给出的四个图形拼合而成的，请选出。
 
-![](assets-fenbi-193/24bb758663708578c947533e4d64cfb2b11c55735242b914d103bb572ec8bfba.png)
+![](图片/assets-fenbi-193/24bb758663708578c947533e4d64cfb2b11c55735242b914d103bb572ec8bfba.png)
 
 A. A
 
@@ -3352,7 +3352,7 @@ C
 
 因此正确答案为C。
 
-![](assets-fenbi-193/ccb00428a19814b8c94177100a7030623ae94a726a27a49c6d4f57cf4ee553b9.png)
+![](图片/assets-fenbi-193/ccb00428a19814b8c94177100a7030623ae94a726a27a49c6d4f57cf4ee553b9.png)
 
 **来源**：2011年江苏省公务员录用考试《行测》题（B类）第108题
 
@@ -3362,7 +3362,7 @@ C
 
 下列所给出的一组图形中，均按一定的规律组合而成，请从所给出的四个选项中选择一个符合此种规律的选项。
 
-![](assets-fenbi-193/e3d26fa5342fa4a657668d8b70681b644203464b40b453e1521a3712bd05c73b.png)
+![](图片/assets-fenbi-193/e3d26fa5342fa4a657668d8b70681b644203464b40b453e1521a3712bd05c73b.png)
 
 A. A
 
@@ -3394,7 +3394,7 @@ B
 
 下列所给出的一组图形中，均按一定的规律组合而成，请从所给出的四个选项中选择一个符合此种规律的选项。
 
-![](assets-fenbi-193/b3845621fac7ba0232e497b9ee2f6278af07b5226037a2e0f7316348166491b0.png)
+![](图片/assets-fenbi-193/b3845621fac7ba0232e497b9ee2f6278af07b5226037a2e0f7316348166491b0.png)
 
 A. A
 
@@ -3416,7 +3416,7 @@ A
 
 故正确答案为A。
 
-![](assets-fenbi-193/7b877353f40eb51d41ceb83086fe6e9ca3c88eede6bd20e422c69e4672decf83.png)
+![](图片/assets-fenbi-193/7b877353f40eb51d41ceb83086fe6e9ca3c88eede6bd20e422c69e4672decf83.png)
 
 **考点**：样式规律-遍历
 
@@ -3428,7 +3428,7 @@ A
 
 请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性。
 
-![](assets-fenbi-193/ebb5adf9f3f19e2f06513c4fdf40e29b7e89f84ef2a3a81382c7d22c5e658224.png)
+![](图片/assets-fenbi-193/ebb5adf9f3f19e2f06513c4fdf40e29b7e89f84ef2a3a81382c7d22c5e658224.png)
 
 A. A
 
@@ -3466,7 +3466,7 @@ A
 
 下列所给出的一组图形中，均按一定的规律组合而成，请从所给出的四个选项中选择一个符合此种规律的选项。
 
-![](assets-fenbi-193/308448aeb9e562e03b2f0714b2b2f7458d2699eb9a38bd253aff8f31f4dd5ba6.png)
+![](图片/assets-fenbi-193/308448aeb9e562e03b2f0714b2b2f7458d2699eb9a38bd253aff8f31f4dd5ba6.png)
 
 A. A
 
@@ -3498,7 +3498,7 @@ B
 
 右边所给出的四个选项中，只有一个与题干所给出的题目相对应，请找出。
 
-![](assets-fenbi-193/79b74e077764294f5a2efa6cbd07937012c8926c113aff02aaa755980b48800a.png)
+![](图片/assets-fenbi-193/79b74e077764294f5a2efa6cbd07937012c8926c113aff02aaa755980b48800a.png)
 
 A. A
 
@@ -3526,7 +3526,7 @@ C
 
 ### 第 114 题
 
-如下面题干所示三个图形给出了同一个立体图形的不同侧面，所给出的四个选项图形中只有一个与该立体图形相同，请把它找出来。![](assets-fenbi-193/c98af694b62783f7276dbc0557060dd1646293ae60151ddfe2ed9e03e0e4d7d7.jpg)
+如下面题干所示三个图形给出了同一个立体图形的不同侧面，所给出的四个选项图形中只有一个与该立体图形相同，请把它找出来。![](图片/assets-fenbi-193/c98af694b62783f7276dbc0557060dd1646293ae60151ddfe2ed9e03e0e4d7d7.jpg)
 
 A. A
 
@@ -3556,7 +3556,7 @@ A
 
 ### 第 115 题
 
-如下面题干所示三个图形给出了同一个立体图形的不同侧面，所给出的四个选项图形中只有一个与该立体图形相同，请把它找出来。![](assets-fenbi-193/37bdc6ddcf2f3102b8576bbd8ac12706abe4af3581e421467685e842557337df.jpg)
+如下面题干所示三个图形给出了同一个立体图形的不同侧面，所给出的四个选项图形中只有一个与该立体图形相同，请把它找出来。![](图片/assets-fenbi-193/37bdc6ddcf2f3102b8576bbd8ac12706abe4af3581e421467685e842557337df.jpg)
 
 A. A
 
@@ -3766,13 +3766,13 @@ A
 
 由条件（1）可知，王不与赵、李相邻，则王的左右必为张、郭。如下图所示。
 
-![](assets-fenbi-193/8eb60f52f2a53f53a3fbd0db0f8a90d318a5a510d5603434bb2e13319d70c1b0.jpg)
+![](图片/assets-fenbi-193/8eb60f52f2a53f53a3fbd0db0f8a90d318a5a510d5603434bb2e13319d70c1b0.jpg)
 
 第二步：根据其余信息得出结论。
 
 由上图可知，李与张相邻，赵必与郭相邻，因此与条件（2）矛盾。因此最终的位置顺序如下图所示。
 
-![](assets-fenbi-193/e26da6f128643430e6f28bec311adb743f16cfca1aa8e9c2bd36a22f6de49a95.jpg)
+![](图片/assets-fenbi-193/e26da6f128643430e6f28bec311adb743f16cfca1aa8e9c2bd36a22f6de49a95.jpg)
 
 因此正确答案为A。
 
@@ -4596,7 +4596,7 @@ C
 
 东部地区2010年商品房销售面积和销售额增长情况
 
-![](assets-fenbi-193/dfe1de82af44d1a1d575843e8e1ec08f4d24a12712f941bca94bd118eb1a2435.png)
+![](图片/assets-fenbi-193/dfe1de82af44d1a1d575843e8e1ec08f4d24a12712f941bca94bd118eb1a2435.png)
 
 | 地区 | 商品房销售面积（万平方米） | 销售面积增速（%） | 商品房销售额（亿元） | 销售额增速（%） |
 | --- | ---: | ---: | ---: | ---: |
@@ -4784,7 +4784,7 @@ D项正确，由表格可求出2010年海南商品房单位面积平均售价比
 
 2010年各种运输方式完成运输量（江苏与全国对照）
 
-![](assets-fenbi-193/4d75d78c3192a2124da146270a2cb24595e812e1478ec4d7d9fcb20f506e735e.png)
+![](图片/assets-fenbi-193/4d75d78c3192a2124da146270a2cb24595e812e1478ec4d7d9fcb20f506e735e.png)
 
 ### 第 146 题
 
@@ -4936,9 +4936,9 @@ B
 
 四、根据以下资料，完成各题。
 
-![](assets-fenbi-193/0e57b4adeb9ed947dbc50614bc5494ed65fc3e15f42a636e5bcab167bd7f6ccf.png)
+![](图片/assets-fenbi-193/0e57b4adeb9ed947dbc50614bc5494ed65fc3e15f42a636e5bcab167bd7f6ccf.png)
 
-![](assets-fenbi-193/17a0ccdd18e1dc674e84a93d865f0b07e63ae5790e2afce126a64fddb9849e04.png)
+![](图片/assets-fenbi-193/17a0ccdd18e1dc674e84a93d865f0b07e63ae5790e2afce126a64fddb9849e04.png)
 
 ### 第 151 题
 

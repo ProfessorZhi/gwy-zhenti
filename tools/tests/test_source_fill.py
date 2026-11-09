@@ -274,10 +274,10 @@ class SourceFillTest(unittest.TestCase):
         report = json.loads(r.stdout)
         r = self.run_tool('--write', '--expect-after', report['after_sha256'])
         self.assertEqual(r.returncode, 0, r.stderr)
-        target = self.root/'assets-test'/(sha(self.img.read_bytes()) + '.png')
+        target = self.root/'图片'/'assets-test'/(sha(self.img.read_bytes()) + '.png')
         self.assertTrue(target.is_file())
         text = (self.root/'p.md').read_text(encoding='utf-8')
-        self.assertIn('![图1](assets-test/' + sha(self.img.read_bytes()) + '.png)', text)
+        self.assertIn('![图1](图片/assets-test/' + sha(self.img.read_bytes()) + '.png)', text)
 
     def test_image_sha_mismatch_rejected(self):
         self._enable_image()

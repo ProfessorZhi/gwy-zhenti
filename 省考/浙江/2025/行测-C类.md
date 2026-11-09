@@ -499,7 +499,7 @@ D项正确，会议指出，我国经济的基本面及市场广阔、经济韧�
 
 2024年是红军长征出发90周年。某博物馆在“重走长征路”展厅展出了如下路线图。下列与图中地点有关的表述，不正确的是：
 
-![](assets-fenbi-7623631/9b21242c423e243ae4d6cd5cb2b689ae73c9c03f07e36d7873cfb7b073d82f42.png)
+![](图片/assets-fenbi-7623631/9b21242c423e243ae4d6cd5cb2b689ae73c9c03f07e36d7873cfb7b073d82f42.png)
 
 A. 地点①是红军长征的主要出发地，也是中国共产党创建的第一个全国性红色政权的所在地
 
@@ -1489,13 +1489,13 @@ B项“蛋白质清除机制失效的原因”、C项“基因突变对泛素-�
 
 根据上述描述，下列器具图片与名称对应正确的是：
 
-A. 尊![](assets-fenbi-7623631/f709f8317d369a5eefd5834f7e8715a323e2a688e0b7f5ca5d4b033ddf9fe501.png)
+A. 尊![](图片/assets-fenbi-7623631/f709f8317d369a5eefd5834f7e8715a323e2a688e0b7f5ca5d4b033ddf9fe501.png)
 
-B. 卣![](assets-fenbi-7623631/d7766a897d18f8dc1993bb57435278f858c383fc33674a654866e393ba39d535.png)
+B. 卣![](图片/assets-fenbi-7623631/d7766a897d18f8dc1993bb57435278f858c383fc33674a654866e393ba39d535.png)
 
-C. 瓿![](assets-fenbi-7623631/21544d3afcbbbb5d97f690cb9a702a08d8866f93cf255a81674816bcc0d206f8.png)
+C. 瓿![](图片/assets-fenbi-7623631/21544d3afcbbbb5d97f690cb9a702a08d8866f93cf255a81674816bcc0d206f8.png)
 
-D. 瓶![](assets-fenbi-7623631/b491a72db2787e9bdfeb6a9891a7744a4b71fd02d689fe5b5ef53bfdaa24c725.png)
+D. 瓶![](图片/assets-fenbi-7623631/b491a72db2787e9bdfeb6a9891a7744a4b71fd02d689fe5b5ef53bfdaa24c725.png)
 
 <details><summary>第 38 题 · 答案与解析</summary>
 
@@ -2205,7 +2205,7 @@ B
 
 因每个基层单位最少分配3人且任意2个基层单位分配到的人数都不相同，则15个基层单位最少分配情况如下：
 
-![](assets-fenbi-7623631/0c82f666a9ddf8af4b32ebfaa3510230229d6c1e38fbfd4767d85408ae251574.png)
+![](图片/assets-fenbi-7623631/0c82f666a9ddf8af4b32ebfaa3510230229d6c1e38fbfd4767d85408ae251574.png)
 
 | (1) | (2) | (3) | (4) | (5) | (6) | (7) | (8) | (9) | (10) | (11) | (12) | (13) | (14) | (15) |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -2225,13 +2225,13 @@ B
 
 甲、乙两名工人同时开始生产相同数量的零件，两人手工生产的效率都是2个/小时，用机器生产的效率都是6个/小时。已知甲先用机器生产任务总量的一半，然后换手工生产直至完成；乙先手工生产t小时，然后再用机器生产t小时，正好完成任务。问以下折线图中，最能准确反映甲（实线）和乙（虚线）两人生产用时和产量之间关系的是：
 
-A. ![](assets-fenbi-7623631/3b5eaf900e24a5fb0818b33fa9a660cfcdf39372a4fd1f6b9fb16eda16f96cd9.png)
+A. ![](图片/assets-fenbi-7623631/3b5eaf900e24a5fb0818b33fa9a660cfcdf39372a4fd1f6b9fb16eda16f96cd9.png)
 
-B. ![](assets-fenbi-7623631/efdd311085a44bdf628881e026264769ef00a426829d4e6bc6d2ec4a59e0c800.png)
+B. ![](图片/assets-fenbi-7623631/efdd311085a44bdf628881e026264769ef00a426829d4e6bc6d2ec4a59e0c800.png)
 
-C. ![](assets-fenbi-7623631/a6b57a9c4edda02cb704a2967d5f05fd3c7b8d5e9e21bb4a1add441068d822f2.png)
+C. ![](图片/assets-fenbi-7623631/a6b57a9c4edda02cb704a2967d5f05fd3c7b8d5e9e21bb4a1add441068d822f2.png)
 
-D. ![](assets-fenbi-7623631/a8f049f5f39a5e057ff83fd7fa48bced2a71235b640ee744a7a107e37c5e9e0e.png)
+D. ![](图片/assets-fenbi-7623631/a8f049f5f39a5e057ff83fd7fa48bced2a71235b640ee744a7a107e37c5e9e0e.png)
 
 <details><summary>第 58 题 · 答案与解析</summary>
 
@@ -2369,7 +2369,7 @@ C
 
 设在队伍中小明距离该商店门口x米，妈妈距离该商店门口y米，根据题干可列式：abs(x-y) ≤ 25，即x - y ≤ 25或y − x ≤ 25，如下图所示：
 
-![](assets-fenbi-7623631/3040a04bc90be5a5dbe84406ba58f87c6df7c912cf1f3a33bdc1c6f4a75e5ef9.png)
+![](图片/assets-fenbi-7623631/3040a04bc90be5a5dbe84406ba58f87c6df7c912cf1f3a33bdc1c6f4a75e5ef9.png)
 
 则只有在阴影部分区域小明能听到他妈妈的呼喊，即所求概率为阴影部分面积所占比例。由上图可知正方形面积=100×100，阴影部分面积= 100 × 100 − (75 × 75)/2 × 2 = 4375，故阴影部分面积所占比例=4375/(100×100)=7/16，即小明听到他妈妈呼喊的概率为7/16。
 
@@ -2403,7 +2403,7 @@ D
 
 按照购买商品的种类，根据题意可列表枚举如下：
 
-![](assets-fenbi-7623631/63ced971a3671c483fd16bbb54d53c1e6db5b96aec95c8c0534338e717a42d3c.png)
+![](图片/assets-fenbi-7623631/63ced971a3671c483fd16bbb54d53c1e6db5b96aec95c8c0534338e717a42d3c.png)
 
 综上可知，消费不超过1600元的组合共有20种，其中一次购买1000元及以上的组合有14种。则题干所求概率= 满足要求的情况数/总的情况数 = 14/20 = 7/10。
 
@@ -2437,7 +2437,7 @@ D
 
 方法一：已知2024年1月1日是周一，则2024年1月3日是周三。因为单位每周三组织篮球活动，则2024年（闰年）1-12月的周三枚举如下：
 
-![](assets-fenbi-7623631/48b17dce9529d12a4fe3aa986630870e28e5643a8ca62e239c77f3e1b07b68e9.png)
+![](图片/assets-fenbi-7623631/48b17dce9529d12a4fe3aa986630870e28e5643a8ca62e239c77f3e1b07b68e9.png)
 
 | 月份 | 周三的日期 |
 | --- | --- |
@@ -2470,7 +2470,7 @@ D
 
 一块直角梯形空地ABCD如右图所示，其中AD=AC=2AB。现准备在图中三角形区域ABC建设特色生态园，并在图中与两条边相切的圆形区域建设特色花坛。已知D点到圆上任一点最短距离为AB长度的一半，那么特色生态园与特色花坛的面积比值在以下哪个范围？
 
-![](assets-fenbi-7623631/911d4f6c915963ad6fe8290fed6ed81621ef06c61c9553c054e30f21a56f8993.png)
+![](图片/assets-fenbi-7623631/911d4f6c915963ad6fe8290fed6ed81621ef06c61c9553c054e30f21a56f8993.png)
 
 A. 小于1
 
@@ -2490,7 +2490,7 @@ B
 
 根据题意，赋值AB=2，AD=AC=4。ABCD为直角梯形，则∠ABC = ∠BCD = 90°。在直角△ABC中，AC=2AB，则∠ACB=30°，则BC = 2√3，S△ABC = (2×2√3)/2 = 2√3。在△ADC中，AD=AC，∠ACD = 90° − 30° = 60°，则该三角形为等边三角形。如下图所示，连接OD与圆相交于点G，根据题意“已知D点到圆上任一点最短距离为AB长度的一半”，则DG = 1/2 AB = 1。E、F为切点，OE ⊥ DE，OF⊥DF，OE=OF，OD为公共边，则△OED与△OFD全等，∠ODE = 1/2 ∠ADC = 30°，则DO=2OE，即1+r=2r，则圆的半径r=1，圆的面积=π。因此特色生态园与特色花坛的面积比值= 2√3/π ≈ 1.1，在B项范围内。
 
-![](assets-fenbi-7623631/6e3ad004bbd93e8f10fa7f6d18d0911dff5a456f6b1df1dd4f8ad2433bab48bd.png)
+![](图片/assets-fenbi-7623631/6e3ad004bbd93e8f10fa7f6d18d0911dff5a456f6b1df1dd4f8ad2433bab48bd.png)
 
 故正确答案为B。
 
@@ -2504,7 +2504,7 @@ B
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。
 
-![](assets-fenbi-7623631/0b931368a511b07cdae1c79bbbb8bc4fbe6174ac3eccad8a155d7b8f620a1695.png)
+![](图片/assets-fenbi-7623631/0b931368a511b07cdae1c79bbbb8bc4fbe6174ac3eccad8a155d7b8f620a1695.png)
 
 A. A
 
@@ -2536,7 +2536,7 @@ D
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-7623631/4c9dfddfbd64c7fbd81cfc1ef505ac964ca493ddfee1cbc0339f41779ac18f0d.png)
+![](图片/assets-fenbi-7623631/4c9dfddfbd64c7fbd81cfc1ef505ac964ca493ddfee1cbc0339f41779ac18f0d.png)
 
 A. A
 
@@ -2568,7 +2568,7 @@ A
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。
 
-![](assets-fenbi-7623631/cfff18ca67665d5dbd4701ef09b876d3da6ce14a4a0d66de659c519dbb8769d4.png)
+![](图片/assets-fenbi-7623631/cfff18ca67665d5dbd4701ef09b876d3da6ce14a4a0d66de659c519dbb8769d4.png)
 
 A. A
 
@@ -2600,7 +2600,7 @@ D
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。
 
-![](assets-fenbi-7623631/6bceb6b764f0109d7a4a753d6e01861ca947e00523ea98a74a1997d7fe732af0.png)
+![](图片/assets-fenbi-7623631/6bceb6b764f0109d7a4a753d6e01861ca947e00523ea98a74a1997d7fe732af0.png)
 
 A. A
 
@@ -2632,7 +2632,7 @@ A
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。
 
-![](assets-fenbi-7623631/1b2ef5a1d0f90e742490113fac432b7c487521e5921fdbdec577b37f612fe76f.png)
+![](图片/assets-fenbi-7623631/1b2ef5a1d0f90e742490113fac432b7c487521e5921fdbdec577b37f612fe76f.png)
 
 A. A
 
@@ -2664,7 +2664,7 @@ B
 
 把下面的六个图形分为两类，使每一类图形都有各自的共同特征或规律，分类正确的一项是：
 
-![](assets-fenbi-7623631/bebdc1a1cd8373579429d28b19873fe57cbd508345fe4b0ff4640fede04dc641.png)
+![](图片/assets-fenbi-7623631/bebdc1a1cd8373579429d28b19873fe57cbd508345fe4b0ff4640fede04dc641.png)
 
 A. ①②③，④⑤⑥
 
@@ -2696,7 +2696,7 @@ C
 
 左图为一个实心长方体、一个挖孔长方体和一个四面体组合成的多面体，问下列哪一个不可能是其视图？
 
-![](assets-fenbi-7623631/6bda3e716bd7db796ee87b80f2a0f01de67dffd22158b468cffa2f1727fd1af6.png)
+![](图片/assets-fenbi-7623631/6bda3e716bd7db796ee87b80f2a0f01de67dffd22158b468cffa2f1727fd1af6.png)
 
 A. A
 
@@ -2720,19 +2720,19 @@ D
 
 A项按照箭头所指示方向，可从正面观察，为题干多面体的主视图，排除；
 
-![](assets-fenbi-7623631/52b8019b2f512340ce4f50100d701f61566feb0c5ca5579ae43348f5acd08260.png)
+![](图片/assets-fenbi-7623631/52b8019b2f512340ce4f50100d701f61566feb0c5ca5579ae43348f5acd08260.png)
 
 B项按照箭头所指示方向，可从上往下观察，为题干多面体的俯视图，排除；
 
-![](assets-fenbi-7623631/b5e2c9080cb88863afaea251f8c5c3feb4a151b084bd648f37e538872e47da0b.png)
+![](图片/assets-fenbi-7623631/b5e2c9080cb88863afaea251f8c5c3feb4a151b084bd648f37e538872e47da0b.png)
 
 C项按照箭头所指示方向，可从右往左观察，为题干多面体的右视图，排除；
 
-![](assets-fenbi-7623631/39d003d568321e2ef65787346f67cd3ca0a098ed364b4aa17ecb3bf198d9d3de.png)
+![](图片/assets-fenbi-7623631/39d003d568321e2ef65787346f67cd3ca0a098ed364b4aa17ecb3bf198d9d3de.png)
 
 D项按照箭头所指示方向，应是从左往右观察题干所得图形，最中间四边形内部不存在竖线，不可能为题干多面体的视图，当选。
 
-![](assets-fenbi-7623631/333969f17470508de6538ad8161d961c5393ea5afa3cdb17650e99ad722f7484.png)
+![](图片/assets-fenbi-7623631/333969f17470508de6538ad8161d961c5393ea5afa3cdb17650e99ad722f7484.png)
 
 本题为选非题，故正确答案为D。
 
@@ -2746,7 +2746,7 @@ D项按照箭头所指示方向，应是从左往右观察题干所得图形，�
 
 墙角堆码共计15个纸箱，左侧为堆码的效果图，堆码纸箱的俯视图可能是：
 
-![](assets-fenbi-7623631/45f4f5ec1de2fb8fe4db5104651eedbb26759b0c54d792af8723f4b3e0cdafe1.png)
+![](图片/assets-fenbi-7623631/45f4f5ec1de2fb8fe4db5104651eedbb26759b0c54d792af8723f4b3e0cdafe1.png)
 
 A. A
 
@@ -2768,9 +2768,9 @@ C
 
 视野中能看到的已知纸箱的俯视图为下图中的1、2、3、4、5、6，共计六个区域的集合。
 
-![](assets-fenbi-7623631/057a64ab7ee4301784b7625dc7348a6a7750f7c656e4f6328d74b03fa6b636a6.png)
+![](图片/assets-fenbi-7623631/057a64ab7ee4301784b7625dc7348a6a7750f7c656e4f6328d74b03fa6b636a6.png)
 
-![](assets-fenbi-7623631/8b4b94c971b92a59d339c66a17af796a308d5b2546f665e90a9e7b39633e8366.png)
+![](图片/assets-fenbi-7623631/8b4b94c971b92a59d339c66a17af796a308d5b2546f665e90a9e7b39633e8366.png)
 
 A项：对比已知俯视图，仅在7号区域多了纸箱，最多在7号区域对应的最下层和中间层堆放2个纸箱，无法堆放剩余3个纸箱，排除；
 
@@ -4048,7 +4048,7 @@ D项：该项说家庭成员先后患同类癌症的案例大多数是因为家�
 
 2023年一季度，我国民航、公路、铁路、水路旅客运输量分别为1.29亿人次、9.79亿人次、7.53亿人次和0.51亿人次，同比分别增长68.9%，1.0%，66.0%和93.3%。
 
-![](assets-fenbi-7623631/0ff00e080b46bdf4f1bf7aa63a296ac561865c1368f7e7118843a39feb6a202c.png)
+![](图片/assets-fenbi-7623631/0ff00e080b46bdf4f1bf7aa63a296ac561865c1368f7e7118843a39feb6a202c.png)
 
 | | 2022年12月 | 2022年1-12月 | 2023年1月 | 2023年2月 | 2023年3月 |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -4201,13 +4201,13 @@ D
 
 以下柱状图中，最能准确反映2023年1-3月我国民航港澳台航线货邮运输量环比增量变化趋势的是（横轴位置代表增量为0）：
 
-A. ![](assets-fenbi-7623631/88d9b6d875c3a0235e8b924ac81078bffb105c3824a07d9f99f739efd9ed1fad.png)
+A. ![](图片/assets-fenbi-7623631/88d9b6d875c3a0235e8b924ac81078bffb105c3824a07d9f99f739efd9ed1fad.png)
 
-B. ![](assets-fenbi-7623631/b2866ce9f199f341cbdc09968b96ca0e33ce1b8ea8384ce127980bcdcb1201c5.png)
+B. ![](图片/assets-fenbi-7623631/b2866ce9f199f341cbdc09968b96ca0e33ce1b8ea8384ce127980bcdcb1201c5.png)
 
-C. ![](assets-fenbi-7623631/3d4e448ad9f0c855e99c6f4d0205f054c523dcd96d4e7224884fd531abdef4f4.png)
+C. ![](图片/assets-fenbi-7623631/3d4e448ad9f0c855e99c6f4d0205f054c523dcd96d4e7224884fd531abdef4f4.png)
 
-D. ![](assets-fenbi-7623631/525481d4834cd1e7a43b156c80e958fedb124b05ef905d89d014cc6e0750c5f0.png)
+D. ![](图片/assets-fenbi-7623631/525481d4834cd1e7a43b156c80e958fedb124b05ef905d89d014cc6e0750c5f0.png)
 
 <details><summary>第 105 题 · 答案与解析</summary>
 
@@ -4233,7 +4233,7 @@ B
 
 从出口目的地看，美国（37.4%）、英国（8.7%）、德国（4.7%）、俄罗斯（4.6%）、法国（3.7%），合计占出口总额近6成；泰国（2.5%）、越南（2.4%）、马来西亚（2.4%）、澳大利亚（2.1%）等新兴市场活跃。美国（15.6%）、日本（13.5%）、澳大利亚（11.2%）、法国（7.9%）、韩国（7.2%）、新西兰（7%）、德国（6.4%）、意大利（3.6%）、英国（3.4%）、荷兰（3.3%）是主要进口来源地。
 
-![](assets-fenbi-7623631/eb3ec4d0ee1187e0323477b0776090c462a4b0672563d789012e539ecec35b12.png)
+![](图片/assets-fenbi-7623631/eb3ec4d0ee1187e0323477b0776090c462a4b0672563d789012e539ecec35b12.png)
 
 | 年份 | 金额（亿元）进出口 | 金额（亿元）出口 | 金额（亿元）进口 |
 | --- | ---: | ---: | ---: |
@@ -4434,9 +4434,9 @@ D项：定位文字材料第一段可得，“2023年，我国跨境电商进出
 
 2023年，全国检察机关共受理行政诉讼监督案件79209件。
 
-![](assets-fenbi-7623631/b1b800559b7283ba08a1f8b4856bc7c43d5b322302537e12a1a5420d637c706c.png)
+![](图片/assets-fenbi-7623631/b1b800559b7283ba08a1f8b4856bc7c43d5b322302537e12a1a5420d637c706c.png)
 
-![](assets-fenbi-7623631/d10e21e10317dd270c8cedee100bf06a780c16b179b756e9810803feb75d66f8.png)
+![](图片/assets-fenbi-7623631/d10e21e10317dd270c8cedee100bf06a780c16b179b756e9810803feb75d66f8.png)
 
 ### 第 111 题
 

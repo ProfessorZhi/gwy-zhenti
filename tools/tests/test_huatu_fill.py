@@ -103,9 +103,9 @@ class HuatuFill(unittest.TestCase):
         self.assertIn("对齐 hu4", text)
         self.assertIn('来源方: "华图在线"', text)
         self.assertIn("题号: [3, 6]", text)
-        img = list((self.root / self.rel).parent.glob("assets-huatu-999/*.png"))
+        img = list((self.root / self.rel).parent.glob("图片/assets-huatu-999/*.png"))
         self.assertEqual(1, len(img))
-        self.assertIn(f"assets-huatu-999/{img[0].name}", text)
+        self.assertIn(f"图片/assets-huatu-999/{img[0].name}", text)
         row = json.loads((self.root / "catalog/manifest.jsonl").read_text(encoding='utf8'))
         self.assertEqual(len(text.encode("utf-8")), row["bytes"])
         # 未补的题逐字节不变
@@ -182,7 +182,7 @@ class HuatuFill(unittest.TestCase):
         after={n:new[a:b] for n,a,b in huatu_fill.split_questions(new)}
         for n in before:
             if n!=4:self.assertEqual(before[n],after[n])
-        self.assertEqual(1,len(list((self.root/self.rel).parent.glob('assets-huatu-999/*-original.txt'))))
+        self.assertEqual(1,len(list((self.root/self.rel).parent.glob('图片/assets-huatu-999/*-original.txt'))))
 
     def test_a2_mismatched_stem_and_missing_neighbors_are_refused(self):
         original,meta=self.option_fixture();meta['questions'][3]['stem_html']='完全不同的题干'
@@ -220,7 +220,7 @@ class HuatuFill(unittest.TestCase):
         meta['questions'][3]['option_figure_html']='<img src="https://img.example/3.png">'
         (self.cache/'paper.json').write_text(json.dumps(meta,ensure_ascii=False),encoding='utf8')
         report=huatu_fill.fill(self.rel,self.cache,write=True,root=self.root,option_q=4)
-        self.assertTrue(report['written']);self.assertIn('assets-huatu-999/',(self.root/self.rel).read_text(encoding='utf8'))
+        self.assertTrue(report['written']);self.assertIn('图片/assets-huatu-999/',(self.root/self.rel).read_text(encoding='utf8'))
 
     def test_a2_above_figure_wording_requires_shared_figure(self):
         original,meta=self.option_fixture()
@@ -234,7 +234,7 @@ class HuatuFill(unittest.TestCase):
         (self.cache/'paper.json').write_text(json.dumps(meta,ensure_ascii=False),encoding='utf8')
         with self.assertRaises(ValueError):huatu_fill.fill(self.rel,self.cache,write=True,root=self.root,option_q=4)
         self.assertEqual(original,(self.root/self.rel).read_text(encoding='utf8'))
-        self.assertFalse((self.root/self.rel).parent.joinpath('assets-huatu-999').exists())
+        self.assertFalse((self.root/self.rel).parent.joinpath('图片', 'assets-huatu-999').exists())
 
     def test_a2_does_not_treat_valid_literal_word_as_missing(self):
         original,meta=self.option_fixture();original=original.replace('C. 缺失','C. 缺失是题目中的实际词语')
@@ -307,7 +307,7 @@ class HuatuFill(unittest.TestCase):
         (self.cache/'paper.json').write_text(json.dumps(meta,ensure_ascii=False),encoding='utf8')
         report=huatu_fill.fill(self.rel,self.cache,write=True,root=self.root,option_q=4)
         self.assertTrue(report['written'])
-        self.assertFalse(list((self.root/self.rel).parent.glob('assets-huatu-999/*.png')))
+        self.assertFalse(list((self.root/self.rel).parent.glob('图片/assets-huatu-999/*.png')))
 
     def test_target_outside_exam_tree_rejected_before_read_or_write(self):
         with self.assertRaises(ValueError):huatu_fill.fill('../external.md',self.cache,write=True,root=self.root,option_q=4)
@@ -316,7 +316,7 @@ class HuatuFill(unittest.TestCase):
         original,meta=self.option_fixture();(self.root/'catalog/manifest.jsonl').write_text('bad json',encoding='utf8')
         with self.assertRaises(ValueError):huatu_fill.fill(self.rel,self.cache,write=True,root=self.root,option_q=4)
         self.assertEqual(original,(self.root/self.rel).read_text(encoding='utf8'))
-        self.assertFalse((self.root/self.rel).parent.joinpath('assets-huatu-999').exists())
+        self.assertFalse((self.root/self.rel).parent.joinpath('图片', 'assets-huatu-999').exists())
 
     def assert_manifest_matches_disk_bytes(self):
         raw=(self.root/self.rel).read_bytes()
@@ -333,7 +333,7 @@ class HuatuFill(unittest.TestCase):
         self.option_fixture()
         report=huatu_fill.fill(self.rel,self.cache,write=True,root=self.root,option_q=4)
         self.assertTrue(report['written']);self.assert_manifest_matches_disk_bytes()
-        originals=list((self.root/self.rel).parent.glob('assets-huatu-999/*-original.txt'))
+        originals=list((self.root/self.rel).parent.glob('图片/assets-huatu-999/*-original.txt'))
         self.assertEqual(1,len(originals))
         self.assertEqual(originals[0].name.split('-')[0],hashlib.sha256(originals[0].read_bytes()).hexdigest())
 

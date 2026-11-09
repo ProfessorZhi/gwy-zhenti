@@ -71,7 +71,7 @@ C
 
 ### 第 2 题
 
-![](assets-fenbi-111/343715669385198669796b7e6ad5832e29c47bfc739e9882d98dd8ba8098ae65.png)
+![](图片/assets-fenbi-111/343715669385198669796b7e6ad5832e29c47bfc739e9882d98dd8ba8098ae65.png)
 
 A. 3
 
@@ -89,7 +89,7 @@ D
 
 **解析**
 
-题干给出的两个字符组中重复的字符为![](assets-fenbi-111/91fa29ecc8a83185554a665478eef9e90bbd3a2d2396ef3366d29e9676db0584.png)，共6个。
+题干给出的两个字符组中重复的字符为![](图片/assets-fenbi-111/91fa29ecc8a83185554a665478eef9e90bbd3a2d2396ef3366d29e9676db0584.png)，共6个。
 
 故正确答案为D。
 
@@ -99,7 +99,7 @@ D
 
 ### 第 3 题
 
-![](assets-fenbi-111/c33fd714d62f933b06f07709c0d20d467fea79380bcbeb23b28f5c5ca5d90820.png)
+![](图片/assets-fenbi-111/c33fd714d62f933b06f07709c0d20d467fea79380bcbeb23b28f5c5ca5d90820.png)
 
 A. 3
 
@@ -127,7 +127,7 @@ A
 
 ### 第 4 题
 
-![](assets-fenbi-111/d6cce094f09d474d0744f6f50f1118806cfc82073056a92cc0797a2301dfdfca.png)
+![](图片/assets-fenbi-111/d6cce094f09d474d0744f6f50f1118806cfc82073056a92cc0797a2301dfdfca.png)
 
 A. 6
 
@@ -145,7 +145,7 @@ C
 
 **解析**
 
-题干给出的两个字符组中重复的字符为![](assets-fenbi-111/7ce3851f0ac88483c8f11d8e1f99c6929aef9b31a31ca7c01e09def2b19305e7.png)，共8个。
+题干给出的两个字符组中重复的字符为![](图片/assets-fenbi-111/7ce3851f0ac88483c8f11d8e1f99c6929aef9b31a31ca7c01e09def2b19305e7.png)，共8个。
 
 故正确答案为C。
 
@@ -183,7 +183,7 @@ A
 
 ### 第 6 题
 
-![](assets-fenbi-111/09d0ed1cbb18266f9217a99175a363629cfe65363ed71c6f02a679b9cab7f97b.png)
+![](图片/assets-fenbi-111/09d0ed1cbb18266f9217a99175a363629cfe65363ed71c6f02a679b9cab7f97b.png)
 
 A. 1
 
@@ -211,7 +211,7 @@ C
 
 ### 第 7 题
 
-![](assets-fenbi-111/e340848755948c6c2c9cd669a4c0c1c8298bdf76246d4bd16910e7bb633298ae.png)
+![](图片/assets-fenbi-111/e340848755948c6c2c9cd669a4c0c1c8298bdf76246d4bd16910e7bb633298ae.png)
 
 A. 0
 
@@ -239,7 +239,7 @@ C
 
 ### 第 8 题
 
-![](assets-fenbi-111/69a0f8e62f97f17949509e1b9d8f64823601524e0adaf8bd7abc325d6fc31c06.png)
+![](图片/assets-fenbi-111/69a0f8e62f97f17949509e1b9d8f64823601524e0adaf8bd7abc325d6fc31c06.png)
 
 A. 1
 
@@ -257,7 +257,7 @@ D
 
 **解析**
 
-题干给出的两个字符组中重复字符为![](assets-fenbi-111/f6bb7e9620c6ae08a2c233275fd62168b825ad12b29c8a79bae45566d3507e48.png)，共4个。
+题干给出的两个字符组中重复字符为![](图片/assets-fenbi-111/f6bb7e9620c6ae08a2c233275fd62168b825ad12b29c8a79bae45566d3507e48.png)，共4个。
 
 故正确答案为D。
 
@@ -267,7 +267,7 @@ D
 
 ### 第 9 题
 
-![](assets-fenbi-111/dad69bf766ee303e953331e290a68a1ce5886c8a159dbf4cef8a018f496f2f84.png)
+![](图片/assets-fenbi-111/dad69bf766ee303e953331e290a68a1ce5886c8a159dbf4cef8a018f496f2f84.png)
 
 A. 0
 
@@ -407,7 +407,7 @@ D
 
 ### 第 14 题
 
-![](assets-fenbi-111/322b08f6a17aeba756872b2ccb31c3b55e7981ef3e4151a41de37675cff421b1.png)
+![](图片/assets-fenbi-111/322b08f6a17aeba756872b2ccb31c3b55e7981ef3e4151a41de37675cff421b1.png)
 
 A. 0
 
@@ -631,7 +631,7 @@ A
 
 ### 第 22 题
 
-![](assets-fenbi-111/09d12a317870bd1782d4b63e7f14393a8fcee120c1c646f35be50e5cf5b99624.png)
+![](图片/assets-fenbi-111/09d12a317870bd1782d4b63e7f14393a8fcee120c1c646f35be50e5cf5b99624.png)
 
 A. 0
 
@@ -659,7 +659,7 @@ C
 
 ### 第 23 题
 
-![](assets-fenbi-111/47f9531a8ddc8bef5dcd571c7bb8ae051be636cfa4a0b6543e6ae97c103f900a.png)
+![](图片/assets-fenbi-111/47f9531a8ddc8bef5dcd571c7bb8ae051be636cfa4a0b6543e6ae97c103f900a.png)
 
 A. 3
 
@@ -715,7 +715,7 @@ D
 
 ### 第 25 题
 
-![](assets-fenbi-111/eeb89fa538ab6bbb6e50b2352dab770a5e087b429f349035c33000f09573581b.png)
+![](图片/assets-fenbi-111/eeb89fa538ab6bbb6e50b2352dab770a5e087b429f349035c33000f09573581b.png)
 
 A. 1
 
@@ -743,7 +743,7 @@ B
 
 ### 第 26 题
 
-![](assets-fenbi-111/82fc06be9800b21932260fe3a09ad56909bd107b87f5a2987f6c568e8ad415ac.png)
+![](图片/assets-fenbi-111/82fc06be9800b21932260fe3a09ad56909bd107b87f5a2987f6c568e8ad415ac.png)
 
 A. 1
 
@@ -771,7 +771,7 @@ A
 
 ### 第 27 题
 
-![](assets-fenbi-111/d23f39d30ae60772ebfafb98a055d4d641c4e7a56cc88242d628c319e196db6d.png)
+![](图片/assets-fenbi-111/d23f39d30ae60772ebfafb98a055d4d641c4e7a56cc88242d628c319e196db6d.png)
 
 A. 1
 
@@ -799,7 +799,7 @@ A
 
 ### 第 28 题
 
-![](assets-fenbi-111/8c259ff9b224edda8005dce01e19c0c904da3f79e5fed793aeacfd79b22c1dc3.png)
+![](图片/assets-fenbi-111/8c259ff9b224edda8005dce01e19c0c904da3f79e5fed793aeacfd79b22c1dc3.png)
 
 A. 0
 
@@ -827,7 +827,7 @@ B
 
 ### 第 29 题
 
-![](assets-fenbi-111/c4aed5a8c6a36f471430385b6c055763be73e94af1545e20992af9cb8fe1c4b2.png)
+![](图片/assets-fenbi-111/c4aed5a8c6a36f471430385b6c055763be73e94af1545e20992af9cb8fe1c4b2.png)
 
 A. 1
 
@@ -855,7 +855,7 @@ A
 
 ### 第 30 题
 
-![](assets-fenbi-111/443a508950395ceda2f656505755a3be38044494c12388dab68fb51c3d1b7bcf.png)
+![](图片/assets-fenbi-111/443a508950395ceda2f656505755a3be38044494c12388dab68fb51c3d1b7bcf.png)
 
 A. 1
 
@@ -883,7 +883,7 @@ B
 
 ### 第 31 题
 
-![](assets-fenbi-111/960b8b64904acf0f68c1797cf04ec406ab18f9505967582bd69a871cb94ebfb0.png)
+![](图片/assets-fenbi-111/960b8b64904acf0f68c1797cf04ec406ab18f9505967582bd69a871cb94ebfb0.png)
 
 A. 1
 
@@ -939,7 +939,7 @@ C
 
 ### 第 33 题
 
-![](assets-fenbi-111/675081ffefb57b7860ff4f9d446be224e98b893e5fa0ab25881a1d39f2f143a5.png)
+![](图片/assets-fenbi-111/675081ffefb57b7860ff4f9d446be224e98b893e5fa0ab25881a1d39f2f143a5.png)
 
 A. 0
 
@@ -957,7 +957,7 @@ D
 
 **解析**
 
-题干给出的三个字符组中重复的字符为![](assets-fenbi-111/c4ef9d1298ac11c76287104a0128cac077e6ab7e21237b1153329c43213ad5ac.png)，共3个。
+题干给出的三个字符组中重复的字符为![](图片/assets-fenbi-111/c4ef9d1298ac11c76287104a0128cac077e6ab7e21237b1153329c43213ad5ac.png)，共3个。
 
 故正确答案为D。
 
@@ -995,7 +995,7 @@ B
 
 ### 第 35 题
 
-![](assets-fenbi-111/750ed556af9e463deda0d23cb9878ddcd81f997f06218f56c7dc266cf97bcc50.png)
+![](图片/assets-fenbi-111/750ed556af9e463deda0d23cb9878ddcd81f997f06218f56c7dc266cf97bcc50.png)
 
 A. 3
 
@@ -1445,7 +1445,7 @@ A
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1481,7 +1481,7 @@ B
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1517,7 +1517,7 @@ D
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1553,7 +1553,7 @@ C
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1565,7 +1565,7 @@ A. 】♀∮♂
 
 B. 】♂∮♀
 
-C. ![](assets-fenbi-111/e5425911a4fe6889d6e2c194e64a1fc0d96d3f564fc2dd773a191a5396fe82c5.png)
+C. ![](图片/assets-fenbi-111/e5425911a4fe6889d6e2c194e64a1fc0d96d3f564fc2dd773a191a5396fe82c5.png)
 
 D. ∮♂】≅
 
@@ -1589,7 +1589,7 @@ A
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1625,7 +1625,7 @@ D
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1661,7 +1661,7 @@ A
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1697,7 +1697,7 @@ C
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1705,7 +1705,7 @@ C
 
 逻电春发
 
-A. ![](assets-fenbi-111/ea4da09ad7d87d8c575e8ceb92eae52c3f9054201c331e607e4ef41d180af443.png)
+A. ![](图片/assets-fenbi-111/ea4da09ad7d87d8c575e8ceb92eae52c3f9054201c331e607e4ef41d180af443.png)
 
 B. ┚≌∮♂
 
@@ -1733,7 +1733,7 @@ B
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1769,7 +1769,7 @@ C
 
 图例：
 
-![](assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
+![](图片/assets-fenbi-111/b7bb91a20adccfe41a4adc2d0b2d2c7c9173bc54f9151dc94575642e98abe96f.png)
 
 | 春 | 电 | 粉 | 哲 | 心 | 年 | 逻 | 无 | 发 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1859,7 +1859,7 @@ C
 
 ### 第 63 题
 
-![](assets-fenbi-111/477eeca5aa527e0087d96a0f8622f12c1928474aa986ba4e87f35dbf3b9fbd2c.png)
+![](图片/assets-fenbi-111/477eeca5aa527e0087d96a0f8622f12c1928474aa986ba4e87f35dbf3b9fbd2c.png)
 
 A. 11
 
@@ -2141,7 +2141,7 @@ C
 
 **解析**
 
-1/(1×2)=1/1−1/2；1/(2 × 3) = 1/2 − 1/3；![](assets-fenbi-111/1e73d31e4227b774a6ab654067f3b134820d734b553d6cf092481aafb4b1ea7a.png)。则1/(1×2) + 1/(2×3) + …… + 1/(n×(n+1))+...... = 1/1 − 1/2 + 1/2 − 1/3![](assets-fenbi-111/822a18bd15feb87ca03bf540868ce186cf0a887d1d5df3dbe968ce1a4c50e3b2.png)。
+1/(1×2)=1/1−1/2；1/(2 × 3) = 1/2 − 1/3；![](图片/assets-fenbi-111/1e73d31e4227b774a6ab654067f3b134820d734b553d6cf092481aafb4b1ea7a.png)。则1/(1×2) + 1/(2×3) + …… + 1/(n×(n+1))+...... = 1/1 − 1/2 + 1/2 − 1/3![](图片/assets-fenbi-111/822a18bd15feb87ca03bf540868ce186cf0a887d1d5df3dbe968ce1a4c50e3b2.png)。
 
 故正确答案为C。
 
@@ -2201,7 +2201,7 @@ B
 
 方阵问题。相邻两层人数相差为8。最外层与中间层相差68-44=24人，即最外层与中间层相隔两层，如图：
 
-![](assets-fenbi-111/541cb2bc407ecda658fabc4a7aa3e2b8ec095cf339994290358fb933f801865d.png)
+![](图片/assets-fenbi-111/541cb2bc407ecda658fabc4a7aa3e2b8ec095cf339994290358fb933f801865d.png)
 
 则一共有7层，方阵是公差为8的等差数列，根据等差数列求和公式：S_n=项数×中位数=7×44=308人。即方阵总人数是308人。
 
@@ -2817,7 +2817,7 @@ D项中，“松”象征“高洁”，“高洁”是一种“品质”，符�
 
 请从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-111/8f330a887c02cb17ac0700abd4a09f8d8704887fdefa9b607bf14752231977aa.jpg)
+![](图片/assets-fenbi-111/8f330a887c02cb17ac0700abd4a09f8d8704887fdefa9b607bf14752231977aa.jpg)
 
 A. A
 
@@ -2851,7 +2851,7 @@ B
 
 请从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-111/805a9d9e4759d10465d202c7599ea11d608ae6f45fb3925e34180a2e85af34e7.jpg)
+![](图片/assets-fenbi-111/805a9d9e4759d10465d202c7599ea11d608ae6f45fb3925e34180a2e85af34e7.jpg)
 
 A. A
 
@@ -2883,7 +2883,7 @@ C
 
 请从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-111/42d8ab110a182918a8101abdf4201ebe504044a6cd42cd1a394946069f6650ba.jpg)
+![](图片/assets-fenbi-111/42d8ab110a182918a8101abdf4201ebe504044a6cd42cd1a394946069f6650ba.jpg)
 
 A. A
 
@@ -2917,7 +2917,7 @@ D
 
 请从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-111/5ad18d176648fa0b6ad72bc8754bbacb5e9559d7bd9cc985e72fe200f400908f.jpg)
+![](图片/assets-fenbi-111/5ad18d176648fa0b6ad72bc8754bbacb5e9559d7bd9cc985e72fe200f400908f.jpg)
 
 A. A
 
@@ -2951,7 +2951,7 @@ C
 
 请从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-111/3aa76d9390dab180aeadb7251be70e0901410b78dfd3d6782d4c13ad4e516ea3.jpg)
+![](图片/assets-fenbi-111/3aa76d9390dab180aeadb7251be70e0901410b78dfd3d6782d4c13ad4e516ea3.jpg)
 
 A. A
 
@@ -2985,7 +2985,7 @@ D
 
 选项四个图形中，只有一个是由题干的四个图形拼合而成的，请把它找出来。
 
-![](assets-fenbi-111/f2f6b517e53ffde70c94e8e9d178cfa56de4bb66b6aa22b7d9f4084aeb6f81b1.png)
+![](图片/assets-fenbi-111/f2f6b517e53ffde70c94e8e9d178cfa56de4bb66b6aa22b7d9f4084aeb6f81b1.png)
 
 A. A
 
@@ -3017,7 +3017,7 @@ A
 
 选项四个图形中，只有一个是由题干的四个图形拼合而成的，请把它找出来。
 
-![](assets-fenbi-111/f58e376a80fa824bad5fd863814706dcabf49ec4a1a97bb1852d660063ba1a8f.png)
+![](图片/assets-fenbi-111/f58e376a80fa824bad5fd863814706dcabf49ec4a1a97bb1852d660063ba1a8f.png)
 
 A. A
 
@@ -3049,7 +3049,7 @@ B
 
 选项四个图形中，只有一个是由题干的四个图形拼合而成的，请把它找出来。
 
-![](assets-fenbi-111/5c0f58b9037fd8c1858ffcbf0b995e56c59dae69602fa6ba15c725442b7bef92.png)
+![](图片/assets-fenbi-111/5c0f58b9037fd8c1858ffcbf0b995e56c59dae69602fa6ba15c725442b7bef92.png)
 
 A. A
 
@@ -3081,7 +3081,7 @@ A
 
 选项四个图形中，只有一个是由题干的四个图形拼合（只能通过上、下、左、右平移）而成的，请把它找出来。
 
-![](assets-fenbi-111/d74df4704d17499292bb457d11f57c9a92775c53bdeee7b663296d722437f39a.png)
+![](图片/assets-fenbi-111/d74df4704d17499292bb457d11f57c9a92775c53bdeee7b663296d722437f39a.png)
 
 A. A
 
@@ -3113,7 +3113,7 @@ C
 
 选项四个图形中，只有一个是由题干的四个图形拼合而成的，请把它找出来。
 
-![](assets-fenbi-111/48cb5776033892686fdbd92cf929dc2a1d641ab2c210b6823e181731e316c551.png)
+![](图片/assets-fenbi-111/48cb5776033892686fdbd92cf929dc2a1d641ab2c210b6823e181731e316c551.png)
 
 A. A
 
@@ -3133,7 +3133,7 @@ B
 
 本题考查平面拼合，可采用平行且等长相消的方式解题。消去平行且等长的线段后进行组合，即可得到轮廓图，即为B选项。平行且等长相消的方式如下图所示：
 
- ![](assets-fenbi-111/8246540d5bc80983c58713d60443b8620ec0e01e01c649b64903d26f5208c833.png)
+ ![](图片/assets-fenbi-111/8246540d5bc80983c58713d60443b8620ec0e01e01c649b64903d26f5208c833.png)
 
 故正确答案为B。
 
@@ -4755,7 +4755,7 @@ C
 
 **解析**
 
-根据题干“2008年······比······多”，结合选项都是百分数，可判定本题为一般增长率问题。定位材料第一段：“（2008年）全年生产故事影片406部，科教、纪录、动画和特种影片73部”。根据增长率![](assets-fenbi-111/0cad0094375eea1d96cfa265d75f3b029efc8674d6cec2673fe40786f3b8bdf3.png)= 333/73 ≈ 4^+，只有C项符合。
+根据题干“2008年······比······多”，结合选项都是百分数，可判定本题为一般增长率问题。定位材料第一段：“（2008年）全年生产故事影片406部，科教、纪录、动画和特种影片73部”。根据增长率![](图片/assets-fenbi-111/0cad0094375eea1d96cfa265d75f3b029efc8674d6cec2673fe40786f3b8bdf3.png)= 333/73 ≈ 4^+，只有C项符合。
 
 故正确答案为C。
 
@@ -4867,7 +4867,7 @@ D
 
 **2007年江苏省各类教育招生、在校和毕业生情况**
 
-![](assets-fenbi-111/3f02b0dbdd5b79d6557ca16b056feceae2184fccb157a923e7943d6f649b0d5d.png)
+![](图片/assets-fenbi-111/3f02b0dbdd5b79d6557ca16b056feceae2184fccb157a923e7943d6f649b0d5d.png)
 
 | 教育类型 | 招生数 绝对数（万人） | 招生数 增长率（%） | 在校生数 绝对数（万人） | 在校生数 增长率（%） | 毕业生数 绝对数（万人） | 毕业生数 增长率（%） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -5044,7 +5044,7 @@ D
 
 **2008年我国居民消费价格涨跌幅度单位：％**
 
-![](assets-fenbi-111/5bf5c029bcd5f97527d7f50817c1614e84b4e1c8726e7a5cdb5e6f6b9981adfa.png)
+![](图片/assets-fenbi-111/5bf5c029bcd5f97527d7f50817c1614e84b4e1c8726e7a5cdb5e6f6b9981adfa.png)
 
 ### 第 146 题
 
@@ -5124,7 +5124,7 @@ A
 
 **解析**
 
-根据题干“2008年我国城市、农村······消费量······”，结合统计表数据给的是全国、城市和农村的消费价格涨跌幅度，可判定本题为混合增长率问题。定位统计表可知，2008年全国、城市和农村的娱乐教育文化用品服务消费价格涨跌幅度分别为：-0.7%、-0.9%和-0.1%，设2007年我国城市和农村的教育文化用品服务消费量分别为x、y，根据混合增长率“量与距离成反比”可知，![](assets-fenbi-111/0e8b2157328afd9ed23214ce0d82183cfec87e84a99e8f502940b1409d5b3e21.png)，可推出x/y=3/1，则2008年城市娱乐教育文化用品服务消费量= x × (1 − 0.9%)=3y×(1−0.9%)=2.973y，2008年农村娱乐教育文化用品服务消费量= y × (1−0.1%)=0.999y，2.973y＞0.999y，由此可知2008年城市娱乐教育文化用品服务消费量高于农村。
+根据题干“2008年我国城市、农村······消费量······”，结合统计表数据给的是全国、城市和农村的消费价格涨跌幅度，可判定本题为混合增长率问题。定位统计表可知，2008年全国、城市和农村的娱乐教育文化用品服务消费价格涨跌幅度分别为：-0.7%、-0.9%和-0.1%，设2007年我国城市和农村的教育文化用品服务消费量分别为x、y，根据混合增长率“量与距离成反比”可知，![](图片/assets-fenbi-111/0e8b2157328afd9ed23214ce0d82183cfec87e84a99e8f502940b1409d5b3e21.png)，可推出x/y=3/1，则2008年城市娱乐教育文化用品服务消费量= x × (1 − 0.9%)=3y×(1−0.9%)=2.973y，2008年农村娱乐教育文化用品服务消费量= y × (1−0.1%)=0.999y，2.973y＞0.999y，由此可知2008年城市娱乐教育文化用品服务消费量高于农村。
 
 故正确答案为A。
 
@@ -5192,9 +5192,9 @@ A
 
 ## 材料 5
 
-![](assets-fenbi-111/51ff79810d0aefbf261830853d5af73cd3b6dbff6ce3d2e9585b9e2e55a1a610.png)
+![](图片/assets-fenbi-111/51ff79810d0aefbf261830853d5af73cd3b6dbff6ce3d2e9585b9e2e55a1a610.png)
 
-![](assets-fenbi-111/663175df454cadc4f1784bf02506c54c62b07d44961ebbcafcee0525423c3b7c.png)
+![](图片/assets-fenbi-111/663175df454cadc4f1784bf02506c54c62b07d44961ebbcafcee0525423c3b7c.png)
 
 ### 第 151 题
 

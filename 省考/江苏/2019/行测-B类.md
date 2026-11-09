@@ -2229,7 +2229,7 @@ D
 
 平行四边形ABCD如右图所示，E为AB上的一点，F、G分别为AC与DE、DB的交点。若AB=3AE，则四边形BEFG与ABCD的面积之比是
 
-![](assets-fenbi-89293/85f1e2978eb92b2cc39215658057f3847a4694ef645b40ae286c68ed9d640b0f.png)
+![](图片/assets-fenbi-89293/85f1e2978eb92b2cc39215658057f3847a4694ef645b40ae286c68ed9d640b0f.png)
 
 A. 2∶7
 
@@ -2249,7 +2249,7 @@ D
 
 因为G是平行四边形对角线的交点，则S△ABC=1/2 平行四边形ABCD，又因为AB＝3AE，所以S△AED = 1/3 S△ABD=1/6平行四边形ABCD。因为AE//CD，所以△AEF相似△CDF，故EF：FD＝AE：CD＝1:3，即EF:ED=1:4，且△AEF与△AED同高，所以S△AEF=1/4S△AED，则S△AEF=1/24平行四边形ABCD。S四边形EFGB＝S△AGB－S△AEF=1/4平行四边形ABCD-1/24平行四边形ABCD=5/24平行四边形ABCD。
 
-![](assets-fenbi-89293/85f1e2978eb92b2cc39215658057f3847a4694ef645b40ae286c68ed9d640b0f.png)
+![](图片/assets-fenbi-89293/85f1e2978eb92b2cc39215658057f3847a4694ef645b40ae286c68ed9d640b0f.png)
 
 故正确答案为D。
 
@@ -2293,7 +2293,7 @@ C
 
 某班举行数学测验，试题全部是选择题，共10题，每题1分，得分的部分统计结果如下：
 
-![](assets-fenbi-89293/d7f48b59cbedb3c04143893a76395bb4ccf977d4c319a328cde8a13d878e64f0.png)
+![](图片/assets-fenbi-89293/d7f48b59cbedb3c04143893a76395bb4ccf977d4c319a328cde8a13d878e64f0.png)
 
 已知，得分至少为3分的，人均2x分；得分最多为7分的，人均x分。这个班级总人数是
 
@@ -2757,15 +2757,15 @@ D项：位置7、8的符号不相同，与题干不一致，排除。
 
 ### 第 75 题
 
-![](assets-fenbi-89293/ad53fd3936cc871495a8cfed2e1d72014e337224da507a110ba05623ea42b138.png)
+![](图片/assets-fenbi-89293/ad53fd3936cc871495a8cfed2e1d72014e337224da507a110ba05623ea42b138.png)
 
-A. ![](assets-fenbi-89293/ca1b9d6a719ec9000e3b2368282ea5d142abdb99ae91c116b88d5685c1586863.png)
+A. ![](图片/assets-fenbi-89293/ca1b9d6a719ec9000e3b2368282ea5d142abdb99ae91c116b88d5685c1586863.png)
 
-B. ![](assets-fenbi-89293/f6b0afd642d41607e815d797f71bdba2dff9140eaa0903e30c122c902309dda2.png)
+B. ![](图片/assets-fenbi-89293/f6b0afd642d41607e815d797f71bdba2dff9140eaa0903e30c122c902309dda2.png)
 
-C. ![](assets-fenbi-89293/f09a3608fb4e6d458e0bcf7dae454586c7e3a4b114db06eb24984c3321c79c49.png)
+C. ![](图片/assets-fenbi-89293/f09a3608fb4e6d458e0bcf7dae454586c7e3a4b114db06eb24984c3321c79c49.png)
 
-D. ![](assets-fenbi-89293/f5e9b44dab2853119095f1df0c352b0098a0e103814e817e737c7a7f341251f4.png)
+D. ![](图片/assets-fenbi-89293/f5e9b44dab2853119095f1df0c352b0098a0e103814e817e737c7a7f341251f4.png)
 
 <details><summary>第 75 题 · 答案与解析</summary>
 
@@ -2799,7 +2799,7 @@ D项：位置6、7的符号不相同，与题干不一致，排除。
 
 从四个图中选出唯一的一项，填入问号处，使其呈现一定的规律性:
 
-![](assets-fenbi-89293/b14edf671777a50a3d52cf3698b23f7dcbf398be693b5a886b904241d788f4f0.png)
+![](图片/assets-fenbi-89293/b14edf671777a50a3d52cf3698b23f7dcbf398be693b5a886b904241d788f4f0.png)
 
 A. A
 
@@ -2829,7 +2829,7 @@ D
 
 从四个图中选出唯一的一项，填入问号处，使其呈现一定的规律性:
 
-![](assets-fenbi-89293/0b9cd4aa8273ed2509adbd961f57134d8d459589433292add6b1de8ea88911c2.jpg)
+![](图片/assets-fenbi-89293/0b9cd4aa8273ed2509adbd961f57134d8d459589433292add6b1de8ea88911c2.jpg)
 
 A. A
 
@@ -2861,7 +2861,7 @@ C
 
 从四个图中选出唯一的一项，填入问号处，使其呈现一定的规律性:
 
-![](assets-fenbi-89293/199de3eadf8fa670b8a27390ef8b37f1a3e99e18a15500698ab77d460881b2a5.png)
+![](图片/assets-fenbi-89293/199de3eadf8fa670b8a27390ef8b37f1a3e99e18a15500698ab77d460881b2a5.png)
 
 A. A
 
@@ -2893,7 +2893,7 @@ B
 
 从四个图中选出唯一的一项，填入问号处，使其呈现一定的规律性:
 
-![](assets-fenbi-89293/59f9c489e4f3775031d089f4816588f8d0c01bb41af03757e85bffa92b930f3b.png)
+![](图片/assets-fenbi-89293/59f9c489e4f3775031d089f4816588f8d0c01bb41af03757e85bffa92b930f3b.png)
 
 A. A
 
@@ -2925,7 +2925,7 @@ C
 
 选项四个图形中，只有一个是由题干的四个图形拼合（只能通过上、下、左、右）而成的，请把它找出来。
 
-![](assets-fenbi-89293/51fe9f1c99b04e83c7c198ed7301b0f9e1d7905f967f6661e809e2c3bb0b148c.png)
+![](图片/assets-fenbi-89293/51fe9f1c99b04e83c7c198ed7301b0f9e1d7905f967f6661e809e2c3bb0b148c.png)
 
 A. A
 
@@ -2944,7 +2944,7 @@ B
 **解析**
 
 本题考查平面拼合，可采用平行且等长相消的方式解题。消去平行且等长的线段后进行组合即可得到轮廓图，即为B项。平行且等长相消的方式如下图所示：
-![](assets-fenbi-89293/a082f0c86e5616b6102b36611750c4e857285afc9279acbfe18d1265b6abaf4c.png)
+![](图片/assets-fenbi-89293/a082f0c86e5616b6102b36611750c4e857285afc9279acbfe18d1265b6abaf4c.png)
 故正确答案为B。
 
 **来源**：2019年江苏省公务员录用考试《行测》题（B类）（网友回忆版）第80题
@@ -2955,7 +2955,7 @@ B
 
 选项四个图形中，只有一个是由题干的四个图形拼合（只能通过上、下、左、右）而成的，请把它找出来。
 
-![](assets-fenbi-89293/b19dbee8489ace44103e8b7a65ca29b7a4acaa880a77c9f834224efffc8724e9.png)
+![](图片/assets-fenbi-89293/b19dbee8489ace44103e8b7a65ca29b7a4acaa880a77c9f834224efffc8724e9.png)
 
 A. A
 
@@ -2974,7 +2974,7 @@ B
 **解析**
 
 本题考查平面拼合，可采用平行且等长相消的方式解题。消去平行且等长的线段后进行组合即可得到轮廓图，即为B项。平行且等长相消的方式如下图所示：
-![](assets-fenbi-89293/a8de89579944644e04ee8e4eebcaf0eb8ee9db8783c970ebb73be43efb0b8336.png)故正确答案为B。
+![](图片/assets-fenbi-89293/a8de89579944644e04ee8e4eebcaf0eb8ee9db8783c970ebb73be43efb0b8336.png)故正确答案为B。
 
 **来源**：2019年江苏省公务员录用考试《行测》题（B类）（网友回忆版）第81题
 
@@ -2984,7 +2984,7 @@ B
 
 选项四个图形中，只有一个是由题干的四个图形拼合（只能通过上、下、左、右平移）而成的，请把它找出来。
 
-![](assets-fenbi-89293/0adf4b05edf7bd91c13e73d7da3b89bed4191f5af8a485ed10552a1a4334838a.png)
+![](图片/assets-fenbi-89293/0adf4b05edf7bd91c13e73d7da3b89bed4191f5af8a485ed10552a1a4334838a.png)
 
 A. A
 
@@ -3004,9 +3004,9 @@ D
 
 本题考查平面拼合，可采用平行且等长相消的方式解题。消去平行且等长的线段后进行组合即可得到轮廓图，即为D项。平行且等长相消的方式如下图所示：
 
-![](assets-fenbi-89293/723db193bcc4044e71ce17fb61632a29649ce045aea0a9d525b0b54569a0268c.png)
+![](图片/assets-fenbi-89293/723db193bcc4044e71ce17fb61632a29649ce045aea0a9d525b0b54569a0268c.png)
 
-![](assets-fenbi-89293/2c2e87d61034b539963275b544452ddeabc63b5ab31a213c4c4bfe38846ff978.png)
+![](图片/assets-fenbi-89293/2c2e87d61034b539963275b544452ddeabc63b5ab31a213c4c4bfe38846ff978.png)
 
 故正确答案为D。
 
@@ -3018,7 +3018,7 @@ D
 
 选项四个图形中，只有一个是由题干的四个图形拼合（只能通过上、下、左、右）而成的，请把它找出来。
 
-![](assets-fenbi-89293/9aa100eba164dc294ac656b5b32a763def6fffa59c07b3ec31814e9cd53ed114.png)
+![](图片/assets-fenbi-89293/9aa100eba164dc294ac656b5b32a763def6fffa59c07b3ec31814e9cd53ed114.png)
 
 A. A
 
@@ -3038,9 +3038,9 @@ B
 
 本题考查俄罗斯方块平面拼合。从方块最多的图形入手，贴边代入选项。在题干的4个图形中，图④的方块最多，将它贴边代入各个选项中，只有B项能够把所有图形都代入进去，拼合方式如下图所示。
 
-![](assets-fenbi-89293/19b5c39c258568e5d6c1c138c80f3b741f2a04bf3072ec3b9a5bf245892b7d18.png)
+![](图片/assets-fenbi-89293/19b5c39c258568e5d6c1c138c80f3b741f2a04bf3072ec3b9a5bf245892b7d18.png)
 
-![](assets-fenbi-89293/aa830b92ed97f01e38af594aceb63f3f474fefbfe4790e0424759dea106f3801.png)
+![](图片/assets-fenbi-89293/aa830b92ed97f01e38af594aceb63f3f474fefbfe4790e0424759dea106f3801.png)
 
 故正确答案为B。
 
@@ -3052,7 +3052,7 @@ B
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来。
 
-![](assets-fenbi-89293/9aa104b36beb59dad4220938eb63bdc7fed2b265fe2454cba068f3dad6da2aba.png)
+![](图片/assets-fenbi-89293/9aa104b36beb59dad4220938eb63bdc7fed2b265fe2454cba068f3dad6da2aba.png)
 
 A. A
 
@@ -3072,17 +3072,17 @@ B
 
 将题干展开图中的面依次标注为面a、b、c、d，如下图所示：
 
-![](assets-fenbi-89293/b213f76c6d056d8979b8457e27f0a13f11413dd29de0de1bb54212ab182e439c.png)
+![](图片/assets-fenbi-89293/b213f76c6d056d8979b8457e27f0a13f11413dd29de0de1bb54212ab182e439c.png)
 
 A项：该项由面a和面c构成，选项面c的右侧是面a，而在展开图中面c的右侧是面d，选项与题干展开图不一致，排除；
 
-![](assets-fenbi-89293/3de8a2b5265ab8df4c4a6ff9b340e864715d751af3a93bd431babb7b4102a88c.png)
+![](图片/assets-fenbi-89293/3de8a2b5265ab8df4c4a6ff9b340e864715d751af3a93bd431babb7b4102a88c.png)
 
 B项：由面a和面b构成，与题干展开图一致，当选；
 
 C项：该项由面c和面d构成，选项面c的左侧是面d，而展开图中面c的左侧是面a，选项与题干展开图不一致，排除；
 
-![](assets-fenbi-89293/46dd9fc25d573e9a46a44c3570f9698e70441aee92f79f2b6ddc85916cbc4cae.png)
+![](图片/assets-fenbi-89293/46dd9fc25d573e9a46a44c3570f9698e70441aee92f79f2b6ddc85916cbc4cae.png)
 
 D项：该项由面b和面d构成，选项面d中的短线与面b中的三角形有交点，而展开图中无交点，选项与题干展开图不一致，排除。
 
@@ -3098,7 +3098,7 @@ D项：该项由面b和面d构成，选项面d中的短线与面b中的三角形
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来。
 
-![](assets-fenbi-89293/021c1d92a3ecacaaf97cd3aa70e640eecee8a79224266ed8849d12db0fee7bf3.png)
+![](图片/assets-fenbi-89293/021c1d92a3ecacaaf97cd3aa70e640eecee8a79224266ed8849d12db0fee7bf3.png)
 
 A. A
 
@@ -3118,13 +3118,13 @@ A
 
 将题干展开图中的面依次标注为面a、b、c、d，如下图所示：
 
-![](assets-fenbi-89293/d69fc5c663ab43956a5cc9b912041698b9ed266bbfc549d0e2d7fd23d2f580b3.png)
+![](图片/assets-fenbi-89293/d69fc5c663ab43956a5cc9b912041698b9ed266bbfc549d0e2d7fd23d2f580b3.png)
 
 A项：与题干一致，当选；
 
 B项：该项由面a和面b组成，在展开图中面b中的直线不垂直于面a和面b的公共边，而选项面b中的直线垂直于面a和面b的公共边，选项与题干不一致，排除；
 
-![](assets-fenbi-89293/a93d12e25ef81fe181902dafbdb4d462a111732934ccd83dddd7119e8f33b2a4.png)
+![](图片/assets-fenbi-89293/a93d12e25ef81fe181902dafbdb4d462a111732934ccd83dddd7119e8f33b2a4.png)
 
 C项：该项由面a和面d组成，在展开图中面d中的箭头指向的是面b，而选项中面d的箭头指向的是面a，选项与题干不一致，排除；
 
@@ -3142,7 +3142,7 @@ D项：该项由面a和面c组成，在展开图中面c中的箭头指向面b，
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来。
 
-![](assets-fenbi-89293/37d0d73c95a2b3c37302bf5d2dc41fc75c1b7fe453a9d346fdf045958ced8fe4.png)
+![](图片/assets-fenbi-89293/37d0d73c95a2b3c37302bf5d2dc41fc75c1b7fe453a9d346fdf045958ced8fe4.png)
 
 A. A
 
@@ -3162,11 +3162,11 @@ B
 
 将原展开图标上序号，逐一分析。
 
-![](assets-fenbi-89293/4000a33f3b73b7fefaa302a73b27b9df351a4ac1a4972d92cb7392e99ec70638.png)
+![](图片/assets-fenbi-89293/4000a33f3b73b7fefaa302a73b27b9df351a4ac1a4972d92cb7392e99ec70638.png)
 
 A项：该项必然存在面e和面f，由于面f和面b是相对面，故右侧面只能是面d，以面d和面e的公共边为唯一边，对面d进行顺时针画边，如下图所示，选项中边4对应的是面f，而在展开图中边4对应的是面b，故选项与题干不一致，排除；
 
-![](assets-fenbi-89293/350ecc10203294f0b7c7ccd7993ad4a591ff954475ff4a630a1242a490915a21.png)
+![](图片/assets-fenbi-89293/350ecc10203294f0b7c7ccd7993ad4a591ff954475ff4a630a1242a490915a21.png)
 
 B项：与题干一致，当选；
 
@@ -3174,7 +3174,7 @@ C项：该项由面f、面b、面d组成，面f和面b是相对面，在选项�
 
 D项：该项必然存在面e和面f，由于面e和面c是相对面，故顶面只能是面a，以面a和面f的公共边为唯一边（如下图所示），对面f进行顺时针画边，选项中边2对应的是面e，而展开图中边2对应的是面c，故选项与展开图不一致，排除。
 
-![](assets-fenbi-89293/dd2c460610ebb51a335c525c738a71c5b9532e9123a509774c3143485af78b53.png)
+![](图片/assets-fenbi-89293/dd2c460610ebb51a335c525c738a71c5b9532e9123a509774c3143485af78b53.png)
 
 故正确答案为B。
 
@@ -3188,7 +3188,7 @@ D项：该项必然存在面e和面f，由于面e和面c是相对面，故顶面
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来。
 
-![](assets-fenbi-89293/e88f8d27f029951d1e94555af6ee865930e1662bf4d8adf511c69fab7546b4f6.png)
+![](图片/assets-fenbi-89293/e88f8d27f029951d1e94555af6ee865930e1662bf4d8adf511c69fab7546b4f6.png)
 
 A. A
 
@@ -3208,11 +3208,11 @@ B
 
 将原展开图标上序号，逐一分析。
 
-![](assets-fenbi-89293/356015f29da7a272cd8a0f57be07644b96d3de6c623762802710294dc9bd3c9a.png)
+![](图片/assets-fenbi-89293/356015f29da7a272cd8a0f57be07644b96d3de6c623762802710294dc9bd3c9a.png)
 
 A项：该项出现面a、面e和面c，在展开图中面a和面c的公共边与面a的黑色直角边重合（如下图），而选项中面a和面c的公共边不与面a的黑色直角边重合，选项与题干不一致，排除；
 
-![](assets-fenbi-89293/86efd2a5101acab2bd317d390e22c645ae8ad0798781435b2ee1aa78dd6fc835.png)
+![](图片/assets-fenbi-89293/86efd2a5101acab2bd317d390e22c645ae8ad0798781435b2ee1aa78dd6fc835.png)
 
 B项：与题干一致，当选；
 
@@ -3220,7 +3220,7 @@ C项：该项由面c、面b和面f组成，在展开图中面c和面f是相对�
 
 D项：该项出现面e、面d、面f，选项中面e与面d公共边与面e中阴影三角形的直角边重合（如下图），而展开图中没有重合，选项与题干不一致，排除。
 
-![](assets-fenbi-89293/6c3cb1bfaef13aeb3213fa49ce75a1eaab00199efdedd6c1ba5224ec338e0a4d.png)
+![](图片/assets-fenbi-89293/6c3cb1bfaef13aeb3213fa49ce75a1eaab00199efdedd6c1ba5224ec338e0a4d.png)
 
 故正确答案为B。
 
@@ -3234,7 +3234,7 @@ D项：该项出现面e、面d、面f，选项中面e与面d公共边与面e中�
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。
 
-![](assets-fenbi-89293/aafaabe76e69e96b7217740a4e889eae2770240933abb605c62db130a3f13af9.png)
+![](图片/assets-fenbi-89293/aafaabe76e69e96b7217740a4e889eae2770240933abb605c62db130a3f13af9.png)
 
 A. A
 
@@ -3266,7 +3266,7 @@ A
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。
 
-![](assets-fenbi-89293/a9a3f4c4d0beac2e2a58a1be13ec5c6ddfe3ebf15c3d8d293c31f5918ae74c85.png)
+![](图片/assets-fenbi-89293/a9a3f4c4d0beac2e2a58a1be13ec5c6ddfe3ebf15c3d8d293c31f5918ae74c85.png)
 
 A. A
 
@@ -3296,7 +3296,7 @@ D
 
 左图为给定的立体，从任意角度剖开，右边哪一项不可能是它的截面图？
 
-![](assets-fenbi-89293/dfe76e8f7f9aa246b3fe82f12948eaaaf0df95b1f1c27cba7d828d555ad2deef.png)
+![](图片/assets-fenbi-89293/dfe76e8f7f9aa246b3fe82f12948eaaaf0df95b1f1c27cba7d828d555ad2deef.png)
 
 A. A
 
@@ -3318,7 +3318,7 @@ D
 
 如下图所示，A、B、C三项均可截出，D项无法截出，因为竖着切中间的空的，所以D项左右两侧中间是看不到竖线的。
 
-![](assets-fenbi-89293/a252ac30e8f5db1c7ca08fd1a1f6f71d2bbeda26c6f60cec5a199674af15a545.png)
+![](图片/assets-fenbi-89293/a252ac30e8f5db1c7ca08fd1a1f6f71d2bbeda26c6f60cec5a199674af15a545.png)
 
 本题为选非题，故正确答案为D。
 
@@ -3802,7 +3802,7 @@ B
 
 根据99题结论可知，条件⑥甲选西河路和北海路，不选东风路和南塘路，又条件①乙与丙始终没有在一组，对于东风路和南塘路，甲不选，乙和丙也不能同时选，则丁必然要选东风路和南塘路，又根据条件⑤ -乙东风，可填写表格如下：
 
-![](assets-fenbi-89293/de21e5d652488f0214e13cda72eb0b5add21bcdcdc25e0cdf0dd561fbde14048.png)
+![](图片/assets-fenbi-89293/de21e5d652488f0214e13cda72eb0b5add21bcdcdc25e0cdf0dd561fbde14048.png)
 
 第二步：逐一分析选项。
 
@@ -4640,7 +4640,7 @@ D项：定位材料第二段可得，“看病就医平均用时4分钟，参与
 
 2018年江苏第一、二、三产业增加值分别为4142亿元、41248亿元和47205亿元；城镇常住居民人均可支配收入47200元，增长8.2%，农村常住居民人均可支配收入20845元，增长8.8%；一般公共预算收入8630亿元，一般公共预算支出11658亿元。
 
-![](assets-fenbi-89293/9364ca1501fa9fdc7f557c23c153d091f711105b6c378190c44c9b61770fcf02.png)
+![](图片/assets-fenbi-89293/9364ca1501fa9fdc7f557c23c153d091f711105b6c378190c44c9b61770fcf02.png)
 
 | 指标 | 单位 | 苏南 | 苏中 | 苏北 |
 | --- | --- | ---: | ---: | ---: |
@@ -4659,7 +4659,7 @@ D项：定位材料第二段可得，“看病就医平均用时4分钟，参与
 | 农村常住居民人均可支配收入 | 元 | 26759 | 20000 | 16501 |
 | 农村常住居民人均生活消费支出 | 元 | 18872 | 14644 | 11763 |
 
-![](assets-fenbi-89293/8bd714a30f8f4503c5234f91f80d9febab3fe4c03ee13da1c3ec7e302ed3f4cc.png)![](assets-fenbi-89293/c82b0e47814cdfc9f69633b565bbc6be12d503b178902ddf2f3e98d7fa875660.png)
+![](图片/assets-fenbi-89293/8bd714a30f8f4503c5234f91f80d9febab3fe4c03ee13da1c3ec7e302ed3f4cc.png)![](图片/assets-fenbi-89293/c82b0e47814cdfc9f69633b565bbc6be12d503b178902ddf2f3e98d7fa875660.png)
 
 ### 第 121 题
 
@@ -4851,7 +4851,7 @@ D项：定位表格材料可知，2017年苏中农村常住居民人均可支配
 
 2018年全国互联网业务收入9562亿元，比上年增长21.0%。其中，广东、上海、北京互联网业务收入分别增长26.5%、20.0%和25.2%。2018年互联网企业信息服务收入8594亿元，比上年增长20.7%。其中，电子商务平台收入3667亿元，增长13.1%；网络游戏业务收入1948亿元，增长17.8%。2018年互联网行业研发投入490亿元，比上年增长19.0%。
 
-![](assets-fenbi-89293/40f1879add1868e34479a7db789a5431bed700a72f29fcefb732dee824ab7180.jpg)
+![](图片/assets-fenbi-89293/40f1879add1868e34479a7db789a5431bed700a72f29fcefb732dee824ab7180.jpg)
 
 ### 第 126 题
 
@@ -5013,7 +5013,7 @@ D项：定位文字材料可得，2018年互联网企业信息服务收入8594�
 
 2017年某市调查总队对全市服务业小微企业的抽样调查显示，2017年全市服务业小微样本企业总资产938.6亿元，销售总收入105.4亿元，销售总费用6.8亿元；人员薪酬19.3亿元，比上年增长9.3%；从业人员29028人，与上年持平；营业税金及附加1.1亿元，比上年下降29.5%；缴纳增值税2.3亿元，比上年增长11.6%。
 
-![](assets-fenbi-89293/bc0be4434f2ea29303f25b0779d0b7ff196b5d6a063c49c9bdaee5df8dade700.png)
+![](图片/assets-fenbi-89293/bc0be4434f2ea29303f25b0779d0b7ff196b5d6a063c49c9bdaee5df8dade700.png)
 
 ### 第 131 题
 
@@ -5111,7 +5111,7 @@ B. 103.1%×118.8%×109.3%×114.0%−100%
 
 C. 100%-3.1%×18.8%×9.3%×14.0%×11.4%
 
-D. ![](assets-fenbi-89293/92e0876b9b91875e887d92a4935d32f2575d1ada049c012447411149985967c5.png)
+D. ![](图片/assets-fenbi-89293/92e0876b9b91875e887d92a4935d32f2575d1ada049c012447411149985967c5.png)
 
 <details><summary>第 134 题 · 答案与解析</summary>
 
