@@ -145,7 +145,7 @@ A2 选项缺口可同时指定 `--option-q <题号>` 和 `--reviewed-plan`，计
 python3 -I tools/huatu_fill.py --paper 省考/北京/2023/行测-统考.md --cache work/huatu/<paperId> --write
 ```
 
-工具会：替换题目与材料占位；图片复制到试卷目录下的 `assets-huatu-<paperId>/`；在文件头 `来源清单` 增加华图条目并更新 `校验状态`；刷新 `catalog/manifest.jsonl`。除被补题目与材料外，其余内容逐字节不变，否则工具报错且不写入。
+工具会：替换题目与材料占位；图片复制到试卷目录下的 `图片/assets-huatu-<paperId>/`；在文件头 `来源清单` 增加华图条目并更新 `校验状态`；刷新 `catalog/manifest.jsonl`。除被补题目与材料外，其余内容逐字节不变，否则工具报错且不写入。
 
 ### 6. 校验与重新生成
 

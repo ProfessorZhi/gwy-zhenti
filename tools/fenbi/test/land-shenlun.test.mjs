@@ -75,9 +75,9 @@ test('申论采集卷覆盖本库同一卷并推进 main：图片落地、缺解
   const md = execFileSync('git', ['--git-dir', w.origin, 'show', 'main:省考/浙江/2025/申论-A类.md'], { encoding: 'utf8' });
   assert.match(md, /合成参考答案1/u);
   assert.match(md, /解析状态：unknown（来源未提供）/u, 'second question has no textual analysis and is marked');
-  assert.match(md, new RegExp(`assets-fenbi-1001/${sha(PNG)}\\.png`, 'u'));
+  assert.match(md, new RegExp(`图片/assets-fenbi-1001/${sha(PNG)}\\.png`, 'u'));
   const files = execFileSync('git', ['-c', 'core.quotePath=false', '--git-dir', w.origin, 'ls-tree', '-r', '--name-only', 'main'], { encoding: 'utf8' });
-  assert.match(files, new RegExp(`省考/浙江/2025/assets-fenbi-1001/${sha(PNG)}\\.png`, 'u'));
+  assert.match(files, new RegExp(`省考/浙江/2025/图片/assets-fenbi-1001/${sha(PNG)}\\.png`, 'u'));
   const manifest = execFileSync('git', ['--git-dir', w.origin, 'show', 'main:catalog/manifest.jsonl'], { encoding: 'utf8' }).trim().split('\n');
   assert.equal(manifest.length, 1, 'the old row is replaced, not duplicated');
 });

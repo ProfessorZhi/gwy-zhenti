@@ -1275,7 +1275,7 @@ A项“原因分析”和C项“演变过程”文段均没有谈，属于无关
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-163/6d0429136df09139d676fb1d587bea2b2bbdfac57734233bd8ababfc40d95223.png)
+![](图片/assets-fenbi-163/6d0429136df09139d676fb1d587bea2b2bbdfac57734233bd8ababfc40d95223.png)
 
 A. A
 
@@ -1311,7 +1311,7 @@ D
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-163/7f013b0a5ae9e225a6bcc4f2e43ba162ba1865a0a54447c2a825393dd0368c62.png)
+![](图片/assets-fenbi-163/7f013b0a5ae9e225a6bcc4f2e43ba162ba1865a0a54447c2a825393dd0368c62.png)
 
 A. A
 
@@ -1343,7 +1343,7 @@ A
 
 请从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-163/21a5e101b925af1c0758956d0e52aaec7903b2fff41df832cb17bbdd5d2b7081.png)
+![](图片/assets-fenbi-163/21a5e101b925af1c0758956d0e52aaec7903b2fff41df832cb17bbdd5d2b7081.png)
 
 A. A
 
@@ -1375,7 +1375,7 @@ D
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-163/47c89c972487e498f645a6ab6254b8adbd932fbcb320744229f6af532ac1d748.png)
+![](图片/assets-fenbi-163/47c89c972487e498f645a6ab6254b8adbd932fbcb320744229f6af532ac1d748.png)
 
 A. A
 
@@ -1407,7 +1407,7 @@ B
 
 从所给的四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-163/4eb1bd0d0d60aa80d3e8d72770f589e2c8e67351b771049eef9ac9fc2f43c29c.png)
+![](图片/assets-fenbi-163/4eb1bd0d0d60aa80d3e8d72770f589e2c8e67351b771049eef9ac9fc2f43c29c.png)
 
 A. A
 
@@ -1439,7 +1439,7 @@ A
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-163/e4dcb129a24e1a825fd6a479c5771193fc096e7206239af39858adc2433a1542.png)
+![](图片/assets-fenbi-163/e4dcb129a24e1a825fd6a479c5771193fc096e7206239af39858adc2433a1542.png)
 
 A. A
 
@@ -1473,7 +1473,7 @@ A
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-163/f8e0f84896acc17e166a254217316b2b47078304e1f6625a16c56bb0438dd270.png)
+![](图片/assets-fenbi-163/f8e0f84896acc17e166a254217316b2b47078304e1f6625a16c56bb0438dd270.png)
 
 A. A
 
@@ -1505,7 +1505,7 @@ C
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-163/afa2b7e48207e987b68497221e30e4fa138aa38aef2c1e1a826bac4980f1e7a0.png)
+![](图片/assets-fenbi-163/afa2b7e48207e987b68497221e30e4fa138aa38aef2c1e1a826bac4980f1e7a0.png)
 
 A. A
 
@@ -3025,7 +3025,7 @@ A
 
 如下图所示，△ABC是等腰直角三角形，AB=12，AD的长度是CD的2倍，四边形EBCD与△AED的面积之比为3:2，AE的长度是：
 
-![](assets-fenbi-163/b2aa7d0428799b9aa874c78e99f099de203505eafdc211f9261e51c95861ba20.png)
+![](图片/assets-fenbi-163/b2aa7d0428799b9aa874c78e99f099de203505eafdc211f9261e51c95861ba20.png)
 
 A. 6.9
 
@@ -3045,7 +3045,7 @@ C
 
 四边形EBCD与三角形AED的面积之比为3:2，则三角形ABC与三角形AED的面积之比为5:2。已知AD的长度是CD的2倍，则AD的长度是AC的2/3。作DF垂直AB于点F，则DF = 2/3 BC（相似三角形原理），三角形ABC的面积＝1/2 × AB × BC，三角形AED的面积＝1/2×AE×DF = 1/2×AE×2/3BC代入之前的比例式，可得AE = 3/5 AB = 36/5 = 7.2。
 
-![](assets-fenbi-163/7fa7ab67e489953629d8bfba101197e6b86ad6ee755283d0ce8facd8895147a2.png)
+![](图片/assets-fenbi-163/7fa7ab67e489953629d8bfba101197e6b86ad6ee755283d0ce8facd8895147a2.png)
 
 故正确答案为C。
 
@@ -3119,7 +3119,7 @@ B
 
 如图所示，△ABC是直角三角形，四边形IBFD和四边形HFGE都是正方形，已知AI=1cm，IB=4cm，正方形HFGE的面积是：
 
-![](assets-fenbi-163/bbaeaeab2486c76b6e6277663abfe5e82370a7c6283fef06eb57a34e0692b6b8.png)
+![](图片/assets-fenbi-163/bbaeaeab2486c76b6e6277663abfe5e82370a7c6283fef06eb57a34e0692b6b8.png)
 
 A. 10 16/25
 
@@ -4333,7 +4333,7 @@ D项：定位文字资料第四段可得，2008年乙烯消费量998万吨，下
 
 ## 材料 3
 
-![](assets-fenbi-163/92937a1e52300f8d88062216deabacbc0938e13f00ebc568aabfce3e7ea51438.jpg)
+![](图片/assets-fenbi-163/92937a1e52300f8d88062216deabacbc0938e13f00ebc568aabfce3e7ea51438.jpg)
 
 | 地区 | 2007年度 财政收入（万元） | 2007年度 房地产开发企业施工房屋面积（万平方米） | 2008年度 财政收入（万元） | 2008年度 房地产开发企业施工房屋面积（万平方米） |
 | --- | ---: | ---: | ---: | ---: |
@@ -4499,7 +4499,7 @@ D
 
 ## 材料 4
 
-![](assets-fenbi-163/4671afb44c28a2d1f1fb19aa345805c685a87892f18f990225ddbd4b0cf2df9f.png)
+![](图片/assets-fenbi-163/4671afb44c28a2d1f1fb19aa345805c685a87892f18f990225ddbd4b0cf2df9f.png)
 
 ### 第 126 题
 
@@ -4613,7 +4613,7 @@ A
 
 2008年浙江省合同外资与实际外资的差可转换为1-12月每月两者的差值之和。定位图表可得2008年1-12月浙江省实际外资和合同外资，则1-12月各月合同外资减实际外资的差值见下表（单位为亿美元）：
 
-![](assets-fenbi-163/f461add2e7a7d6922fd7e5c72b7015853529c6626e302b29446c4fdbc1bd6ecd.png)
+![](图片/assets-fenbi-163/f461add2e7a7d6922fd7e5c72b7015853529c6626e302b29446c4fdbc1bd6ecd.png)
 
 | 1月 | 2月 | 3月 | 4月 | 5月 | 6月 | 7月 | 8月 | 9月 | 10月 | 11月 | 12月 |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

@@ -61,7 +61,7 @@ C
 
 本题为二级作差数列，原数列后项减去前项，可得次生数列2、4、8、16，为等比数列，下一列为32。因此原数列下一项为89。
 
-![](assets-fenbi-79/339e16d03c23af77bf4320abebabe2b690cccb9a78e875162d677d14add76cb6.png)
+![](图片/assets-fenbi-79/339e16d03c23af77bf4320abebabe2b690cccb9a78e875162d677d14add76cb6.png)
 
 故正确答案为C。
 
@@ -223,7 +223,7 @@ C
 
 本题为二级作差多级数列，原数列后项减去前项，可得次生数列7、13、19、(25)、(31)，后者为等差数列，因此原数列未知项为65。
 
-![](assets-fenbi-79/5c6d6048f44372a3cf17f685d1be22d841bb735abb56c9ce072bb9bea60d6dcc.png)
+![](图片/assets-fenbi-79/5c6d6048f44372a3cf17f685d1be22d841bb735abb56c9ce072bb9bea60d6dcc.png)
 
 故正确答案为C。
 
@@ -261,7 +261,7 @@ B
 
 ### 第 8 题
 
-![](assets-fenbi-79/c52fb9372f698efafc09746b06de070870791ff6493938205a67e47d8bf38f24.png)
+![](图片/assets-fenbi-79/c52fb9372f698efafc09746b06de070870791ff6493938205a67e47d8bf38f24.png)
 
 A. 8
 
@@ -711,7 +711,7 @@ B
 
 如图所示：AB=40km，所以BH=20√2km＜ 30 km，所以BC=BD=30km，当台风在C点与D点之间的时候B城处于危险之中，那么CH = √(BC^2 − BH^2) = 10km，同理DH=10km，所以CD=20km，那么B城处于危险的时间为20÷20=1小时。
 
-![](assets-fenbi-79/3577851979cf9b4ee20a0b29b088ac13232f7a7281a59dc705f0e9d70ea15d4a.png)
+![](图片/assets-fenbi-79/3577851979cf9b4ee20a0b29b088ac13232f7a7281a59dc705f0e9d70ea15d4a.png)
 
 故正确答案为B。
 
@@ -1431,7 +1431,7 @@ B、C两项，第一个词都不是动物。
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/95575c1b4cc7347b738bb933c664116043de02c188964b0f3dd5c93d415f3835.png)
+![](图片/assets-fenbi-79/95575c1b4cc7347b738bb933c664116043de02c188964b0f3dd5c93d415f3835.png)
 
 A. A
 
@@ -1463,7 +1463,7 @@ C
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/d6e9894da8d1e939bf2783d942d263d8950766c2335ed5b4ac0b4fe93fff8a8e.png)
+![](图片/assets-fenbi-79/d6e9894da8d1e939bf2783d942d263d8950766c2335ed5b4ac0b4fe93fff8a8e.png)
 
 A. A
 
@@ -1495,7 +1495,7 @@ B
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/109f939d3916e1b6d868c568c125ddd925db683ba8b3c4a2baece66e6b72a2ef.png)
+![](图片/assets-fenbi-79/109f939d3916e1b6d868c568c125ddd925db683ba8b3c4a2baece66e6b72a2ef.png)
 
 A. A
 
@@ -1527,7 +1527,7 @@ A
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/26af9af4a1215fc0f90f2748c3c0cb07103f7cce99b2ffe57aa2708ee548e94f.png)
+![](图片/assets-fenbi-79/26af9af4a1215fc0f90f2748c3c0cb07103f7cce99b2ffe57aa2708ee548e94f.png)
 
 A. A
 
@@ -1559,7 +1559,7 @@ A
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/bd83acb0e33bd0802a55cc62a0418702e2a708fdc07ec55fed3dba07f71448eb.png)
+![](图片/assets-fenbi-79/bd83acb0e33bd0802a55cc62a0418702e2a708fdc07ec55fed3dba07f71448eb.png)
 
 A. A
 
@@ -1591,7 +1591,7 @@ B
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/14ff24d548ff8cc92447b6aea5053412f980a1ac9375770274432f54d550fe88.png)
+![](图片/assets-fenbi-79/14ff24d548ff8cc92447b6aea5053412f980a1ac9375770274432f54d550fe88.png)
 
 A. A
 
@@ -1623,7 +1623,7 @@ C
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/12c6bfaa8c773d5dc0d1707aa3d2120bb4ce0fadeda04b60e366cedff8f5e41f.png)
+![](图片/assets-fenbi-79/12c6bfaa8c773d5dc0d1707aa3d2120bb4ce0fadeda04b60e366cedff8f5e41f.png)
 
 A. A
 
@@ -1655,7 +1655,7 @@ B
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/8c51a7723acd7e2900c1acef489d5492a099f8ca5e8e1fdf3f04b0faf5990527.png)
+![](图片/assets-fenbi-79/8c51a7723acd7e2900c1acef489d5492a099f8ca5e8e1fdf3f04b0faf5990527.png)
 
 A. A
 
@@ -1687,7 +1687,7 @@ A
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/257a073db2bd5e6ea06dcdb47fa65e7b83d609f04cc62937d57508c7f3cc9a60.png)
+![](图片/assets-fenbi-79/257a073db2bd5e6ea06dcdb47fa65e7b83d609f04cc62937d57508c7f3cc9a60.png)
 
 A. A
 
@@ -1719,7 +1719,7 @@ D
 
 从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-79/a71de0fbd6a498811fee94a76348433f532c47831a1c3be9db70fdc9a0a03182.png)
+![](图片/assets-fenbi-79/a71de0fbd6a498811fee94a76348433f532c47831a1c3be9db70fdc9a0a03182.png)
 
 A. A
 
@@ -2151,7 +2151,7 @@ C
 
 第二步：抄信息于表中，即将题干和第一步的所有信息放在一个表中。
 
-![](assets-fenbi-79/9a805ff0354a52f25b86472cf06d2b7fbfd3091602ff8da1e80d8265383bbe90.jpg)
+![](图片/assets-fenbi-79/9a805ff0354a52f25b86472cf06d2b7fbfd3091602ff8da1e80d8265383bbe90.jpg)
 
 | 科室成员 | 副科长 | 科长 | 科员 |
 | --- | --- | --- | --- |
@@ -2159,7 +2159,7 @@ C
 
 第三步：根据条件（4）“科员与孙姓同志是小学同学”可知，科员不姓孙，所以科员只能是老钱。所以剩下的科长就是老孙。将信息填入表格补齐。
 
-![](assets-fenbi-79/7e662a5c99e320d50adcd2c17f9724d953fa0725defa4598bc91e598fe90d8bd.jpg)
+![](图片/assets-fenbi-79/7e662a5c99e320d50adcd2c17f9724d953fa0725defa4598bc91e598fe90d8bd.jpg)
 
 | 科室成员 | 副科长 | 科长 | 科员 |
 | --- | --- | --- | --- |
@@ -3531,7 +3531,7 @@ A
 
 二、表格资料（完成以下各题）：
 
-![](assets-fenbi-79/ab2893391d8b0debc7a66b964f6d1268754f7ca1dad1adbb6e611dfb0586e3cb.png)
+![](图片/assets-fenbi-79/ab2893391d8b0debc7a66b964f6d1268754f7ca1dad1adbb6e611dfb0586e3cb.png)
 
 | 地区 | 7月份城镇居民最低生活保障人数 （人） | 7月份城镇居民最低生活保障家庭数 （户） | 7月份城镇最低生活保障累计支出 （万元） | 7月份人均支出水平 （元） |
 | --- | ---: | ---: | ---: | ---: |
@@ -3701,7 +3701,7 @@ D
 
 国库券发行之后，可以在证券交易所上市交易（买卖）。请根据下表提供的信息回答下述问题（计算时交易佣金不计。另根据我国银行系统计息方法，不计复息，即每一年所得利息不作为第二年计息的本金）。
 
-![](assets-fenbi-79/cfc7f6e7b684b79c1c313f1e64c6592f7b4a2dc88d1819ca64edf495155d211e.png)
+![](图片/assets-fenbi-79/cfc7f6e7b684b79c1c313f1e64c6592f7b4a2dc88d1819ca64edf495155d211e.png)
 
 | 券种 | 发行日期 | 兑付日期 | 年利率 | 上海证券交易所100元国库券价格 2004年4月1日 | 上海证券交易所100元国库券价格 2004年6月1日 |
 | --- | --- | --- | ---: | ---: | ---: |
@@ -3860,7 +3860,7 @@ A
 
 三、图形资料（完成以下各题）：
 
-![](assets-fenbi-79/64f35c6b23a3129983fd5b8333823429cb7f459a7501250b5abf007ce215a9a0.png)
+![](图片/assets-fenbi-79/64f35c6b23a3129983fd5b8333823429cb7f459a7501250b5abf007ce215a9a0.png)
 
 ### 第 101 题
 

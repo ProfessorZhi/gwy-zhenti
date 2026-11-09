@@ -75,9 +75,9 @@ test('queue: resume cached unsubmitted papers first, never resubmit, skip cached
 const git = (repo, ...args) => execFileSync('git', ['-C', repo, '-c', 'user.name=F', '-c', 'user.email=f@example.invalid', ...args], { encoding: 'utf8' });
 const REL = '国考/2025/行测-dishiji.md';
 const IMG = Buffer.from('fake-png-bytes');
-const IMG_REL = `国考/2025/assets-fenbi-123/${sha(IMG)}.png`;
+const IMG_REL = `国考/2025/图片/assets-fenbi-123/${sha(IMG)}.png`;
 const paperMd = n => '# 卷\n\n## 题目\n\n' + Array.from({ length: n }, (_, i) => `### 第 ${i + 1} 题\n\n题干。\n`).join('\n') +
-  `\n![图](assets-fenbi-123/${sha(IMG)}.png)\n`;
+  `\n![图](图片/assets-fenbi-123/${sha(IMG)}.png)\n`;
 
 async function world(t, { baseQuestions = 0 } = {}) {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), 'fenbi-worker-'));

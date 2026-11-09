@@ -2961,9 +2961,9 @@ D项：某野生动物园分片区建了许多防护围栏，符合“人们做�
 驳岸：指用砖石、植被或混凝土等材料建造在水体边缘与陆地交界处的保护性工程设施。江河湖泊驳岸用来防止堤岸因被水流长时间冲刷而塌方；园林驳岸用于遮挡园内建筑物，增加景观层次感和丰富度。
 下列不属于驳岸的是：
 
-> 本题采用华图整组选项与参考答案；原题块保存在 [aaaa73af6e98e52643b355a2623a02d53b3b17c8e3c1c66c13a7588008829e93-original.txt](assets-huatu-4056559/aaaa73af6e98e52643b355a2623a02d53b3b17c8e3c1c66c13a7588008829e93-original.txt)。
+> 本题采用华图整组选项与参考答案；原题块保存在 [aaaa73af6e98e52643b355a2623a02d53b3b17c8e3c1c66c13a7588008829e93-original.txt](图片/assets-huatu-4056559/aaaa73af6e98e52643b355a2623a02d53b3b17c8e3c1c66c13a7588008829e93-original.txt)。
 
-![](assets-huatu-4056559/4fc77ee646d4febfac03f25cf849a42d36bba45d0a1aec8c53c4b5d4ae1eaf66.png)
+![](图片/assets-huatu-4056559/4fc77ee646d4febfac03f25cf849a42d36bba45d0a1aec8c53c4b5d4ae1eaf66.png)
 
 A. 如上图所示
 

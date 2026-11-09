@@ -991,7 +991,7 @@ C项“时刻警惕无所松懈”指不能松懈，与文段“冠胄衣甲，�
 
 如图所示，木板AB放置在水平地面上，一铅块位于木块上，抓住木板A点，使其以B点为支点向上抬起直至与地面垂直，那么铅块所受的摩擦力f的变化情况为      。
 
-![](assets-fenbi-82932/25533ce08b98711ba6ddb4414fd9a2cf6be253a783165081f5e173d359302b48.png)
+![](图片/assets-fenbi-82932/25533ce08b98711ba6ddb4414fd9a2cf6be253a783165081f5e173d359302b48.png)
 
 A. 铅块滑动前后，f均随木板倾角的增大而减小
 
@@ -1013,7 +1013,7 @@ C
 
 随着木板抬起至铅块滑动前，铅块受的是静摩擦力。如图所示，根据受力分析可知，静摩擦力f = mgsinα。随着木板抬起，木块倾角α变大，sinα变大，则静摩擦力f变大，据此可以排除A、B两项；
 
-![](assets-fenbi-82932/62f6000d9c976c81fcd88e4687bb95c896ffb0bd16bc79d9a12204c7c9687592.png)
+![](图片/assets-fenbi-82932/62f6000d9c976c81fcd88e4687bb95c896ffb0bd16bc79d9a12204c7c9687592.png)
 
 铅块开始滑动后，所受摩擦力变为动摩擦力，动摩擦力f = μF_N = μmgcosα。随着木块倾角α变大，cosα变小，则动摩擦力变小，直至与地面垂直时，动摩擦力变为0，据此可排除D项，C项正确。
 
@@ -1027,7 +1027,7 @@ C
 
 如图所示，太阳光与水平地面成50°角入射，利用平面镜反射的原理可使太阳光沿井照亮下水道，则下列关于平面镜放置正确的是      。
 
-![](assets-fenbi-82932/520a4f8c5a296b7838a49a8a69ce058aa18bfb80e3b938174d4f6a69f23442ae.png)
+![](图片/assets-fenbi-82932/520a4f8c5a296b7838a49a8a69ce058aa18bfb80e3b938174d4f6a69f23442ae.png)
 
 A. 与竖直方向成50°
 
@@ -1045,7 +1045,7 @@ C
 
 **解析**
 
-![](assets-fenbi-82932/3070f6b2b30b61744663ceb66f270cb15437083eb08406e8ba14a6954d5e3960.png)
+![](图片/assets-fenbi-82932/3070f6b2b30b61744663ceb66f270cb15437083eb08406e8ba14a6954d5e3960.png)
 
 如图所示，法线（虚线）和镜子垂直，入射角和反射角相等，则镜面与水平方向成20°+50°=70°，ABD三项错误，C项正确。
 
@@ -1059,7 +1059,7 @@ C
 
 蜻蜓点水后在平静的水面上会出现波纹。下面四张图是蜻蜓点水时的俯视照片，照片反映了蜻蜓连续三次点水后某瞬间的水面波纹。不考虑蜻蜓每次点水所用的时间，则下列描述与对应图片相符的是       。
 
-![](assets-fenbi-82932/f26762c99a197cb3f4a688267f6ce76548294932beb726daaf90909e7937ec75.png)
+![](图片/assets-fenbi-82932/f26762c99a197cb3f4a688267f6ce76548294932beb726daaf90909e7937ec75.png)
 
 A. A图中蜻蜓向右飞行，且飞行速度和水波的传播速度相等
 
@@ -1121,7 +1121,7 @@ C
 
 某司机驾车在如下图所示的路面上前行，已知AB段为下凹路段，BC段是上凸路段，当汽车依次经过M、N、O、P（M为最低点，P为最高点）四点时对路面的压力分别为FM、FN、FO、FP，汽车重力为G，前进过程中速率保持不变，那么下列关系式一定成立的是       。
 
-![](assets-fenbi-82932/f6daf3bd85e9d067a62dc0d1182b7e847ef708b2d03aa0f06578fbc7f4827da3.png)
+![](图片/assets-fenbi-82932/f6daf3bd85e9d067a62dc0d1182b7e847ef708b2d03aa0f06578fbc7f4827da3.png)
 
 A. FM≥G
 
@@ -1155,7 +1155,7 @@ D项，汽车在P点，由重力G和支持力FP提供向心力，则G＞FP，错
 
 备注：各选项的受力分析图如图所示：
 
-![](assets-fenbi-82932/609f9c9546973b0187d303cff6243f560b5a09db4eb4f85eb3fcdceced62a495.jpg)
+![](图片/assets-fenbi-82932/609f9c9546973b0187d303cff6243f560b5a09db4eb4f85eb3fcdceced62a495.jpg)
 
 **来源**：2018年上海市公务员录用考试《行测》题（A类）（网友回忆版）第35题
 
@@ -1165,7 +1165,7 @@ D项，汽车在P点，由重力G和支持力FP提供向心力，则G＞FP，错
 
 如图所示，一皮球从粗糙的曲线形坡面的a点开始无初速度地向下滚动，由于摩擦力作用，皮球滚到b点后开始折返到c点，已知a、b两点的高差为h1，b、c两点的高差为h2，那么      。
 
-![](assets-fenbi-82932/14ce356eee97c308c8f530edb280018a16bd14da7d7704c849190e0d7ebaaaa5.png)
+![](图片/assets-fenbi-82932/14ce356eee97c308c8f530edb280018a16bd14da7d7704c849190e0d7ebaaaa5.png)
 
 A. h1=h2
 
@@ -1243,7 +1243,7 @@ B
 
 从班级合照转向单人照，则拍照视野由大变小，根据常识，相机要离人近一些，排除C、D两项。同时对于镜头而言，照单人照，则使人在底片中尽量大，如图所示，应该是镜头前伸，A项排除，B项当选。
 
-![](assets-fenbi-82932/d983dad5093ac65581a047ae0d405c25b244508887bb99ac0d3e85c3af6f2a66.png)
+![](图片/assets-fenbi-82932/d983dad5093ac65581a047ae0d405c25b244508887bb99ac0d3e85c3af6f2a66.png)
 
 故本题答案为B。
 
@@ -1255,7 +1255,7 @@ B
 
 如图所示，在水平台面上放置有一光滑斜面，倾角为α，在斜面上某处放了一根垂直于纸面的直导线，在导线中通有垂直纸面向里的电流，图中a点在导线正下方，b点与导线的连线与斜面垂直，c点在a点左侧，d点在b点右侧。现欲使导线静止在斜面上，下列措施可行的是      。
 
-![](assets-fenbi-82932/6111467ed8e1e5b8a8f0b7139a278eff664fd4718b3e486441cd206a1d14af89.png)
+![](图片/assets-fenbi-82932/6111467ed8e1e5b8a8f0b7139a278eff664fd4718b3e486441cd206a1d14af89.png)
 
 A. 在a处放置一电流方向垂直纸面向里的直导线
 
@@ -1279,7 +1279,7 @@ D
 
 若在d处放置导线，则斜面上导线受磁场对导线向d的力，存在斜面方向向上的分力，可能静止，D项正确。
 
-![](assets-fenbi-82932/f2021ee526c66af55c9f8229848c676d80468fe87772e1ce67d8eb2463bf7fe7.png)
+![](图片/assets-fenbi-82932/f2021ee526c66af55c9f8229848c676d80468fe87772e1ce67d8eb2463bf7fe7.png)
 
 故正确答案为D。
 
@@ -1291,7 +1291,7 @@ D
 
 三盏灯泡L1（110V、100W）、L2（110V、40W）和L3（110V、25W），电源所能提供的电压为220V，在图示的四个电路中，能通过调节变阻器R使电路中各灯泡均能够正常发光且最省电的一种电路是      。
 
-![](assets-fenbi-82932/c82f277b57cb732863dd7b18f58900058de119caac7e6033c9fc732ee3090fb2.jpg)
+![](图片/assets-fenbi-82932/c82f277b57cb732863dd7b18f58900058de119caac7e6033c9fc732ee3090fb2.jpg)
 
 A. A
 
@@ -1349,7 +1349,7 @@ A
 
 题干要求判断地磁场对避雷针的作用力方向，则要使用左手定则来判断受力方向。当乌云经过避雷针上方开始放电时会产生电流，电流方向由正电荷流向负电荷，也就是指向地心；而地磁场的方向是由地理南极指向地理北极。使用左手定则，让磁感线穿入手心，四指指向电流方向，那么大拇指的方向就是受力方向，由图中可知，大拇指所指方向为正东，所以地磁场对避雷针的作用力方向为正东。
 
-![](assets-fenbi-82932/abc0b0a12cf37502962b189156ff4db967e94379966466b50782533a2695d12e.jpg)
+![](图片/assets-fenbi-82932/abc0b0a12cf37502962b189156ff4db967e94379966466b50782533a2695d12e.jpg)
 
 故正确答案为A。
 
@@ -1377,7 +1377,7 @@ B
 
 **解析**
 
-![](assets-fenbi-82932/2e5b8f5b94835f34383cb366c95f6d8862623d0c6f916632b710ce893b68fe1a.jpg)
+![](图片/assets-fenbi-82932/2e5b8f5b94835f34383cb366c95f6d8862623d0c6f916632b710ce893b68fe1a.jpg)
 
 逐项分析：
 
@@ -1397,7 +1397,7 @@ D项：都是实心的情况下，根据沉浮状态可以判定ρC＞ρB＞ρA�
 
 下列选项中，符合所给图形的变化规律的是      。
 
-![](assets-fenbi-82932/decd02e684dca27bc24c64f604f697019e514e8bf8a5b215aabe2ac12e635b6e.png)
+![](图片/assets-fenbi-82932/decd02e684dca27bc24c64f604f697019e514e8bf8a5b215aabe2ac12e635b6e.png)
 
 A. A
 
@@ -1429,7 +1429,7 @@ D
 
 下列选项中，符合所给图形的变化规律的是（ ）。
 
-![](assets-fenbi-82932/07645cf86e6f11a1055a017bd96e1f8ff6842fbe012d390c878a0d18355e2432.png)
+![](图片/assets-fenbi-82932/07645cf86e6f11a1055a017bd96e1f8ff6842fbe012d390c878a0d18355e2432.png)
 
 A. A
 
@@ -1461,7 +1461,7 @@ B
 
 下列选项中，符合所给图形的变化规律的是      。
 
-![](assets-fenbi-82932/5a0a280eef7a83e25e9bdc5e0d510d2c9fd61a7c04e1c4f73ec8529e62736fc8.png)
+![](图片/assets-fenbi-82932/5a0a280eef7a83e25e9bdc5e0d510d2c9fd61a7c04e1c4f73ec8529e62736fc8.png)
 
 A. A
 
@@ -1479,7 +1479,7 @@ C
 
 **解析**
 
-元素组成相同，考虑位置关系。题干为金字塔型，考了紧邻形成三角形图形之间的关系，观察发现，从下往上数第一层左边两个图形内部相同位置的小图形叠加的规律：![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)和![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为第二层左边图形的![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为第二层左边图形的![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为第二层左边图形的![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，第一层中间两个图内部图形按照![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加变为![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，从而组成第二层中间图的内部三个小图，第一层右边两个图形的内部小图也是按照![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加后变为![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)和![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)的规律最后形成了第二行最右侧的图形。照此规律，第二层的左边相邻两个图形内部小图相互叠加则变为第三层的左边图形，第二层右边相邻两图形内部小图相互叠加则变为第三层右边的图形，叠加规律为：![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加变为![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加后变为![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，以此类推，第三层的两个图形内部小图相同位置进行叠加后变为顶层的图形，叠加规律为：![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为的![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加后变为![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，![](assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，只有C项符合。
+元素组成相同，考虑位置关系。题干为金字塔型，考了紧邻形成三角形图形之间的关系，观察发现，从下往上数第一层左边两个图形内部相同位置的小图形叠加的规律：![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)和![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为第二层左边图形的![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为第二层左边图形的![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为第二层左边图形的![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，第一层中间两个图内部图形按照![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加变为![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，从而组成第二层中间图的内部三个小图，第一层右边两个图形的内部小图也是按照![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加后变为![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)和![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)的规律最后形成了第二行最右侧的图形。照此规律，第二层的左边相邻两个图形内部小图相互叠加则变为第三层的左边图形，第二层右边相邻两图形内部小图相互叠加则变为第三层右边的图形，叠加规律为：![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)和![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加变为![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加后变为![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，以此类推，第三层的两个图形内部小图相同位置进行叠加后变为顶层的图形，叠加规律为：![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)叠加后变为的![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)，![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)叠加后变为![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)，![](图片/assets-fenbi-82932/38825e9dcbed3fc7087894f11df97a523afbaad98a447e0a608d1b9b63d335e2.jpg)和![](图片/assets-fenbi-82932/cc375ad96a0d877973b8bb8cd9e011045d27959986be0f3094172c968eee614c.jpg)叠加后变为![](图片/assets-fenbi-82932/8cea8d4474f34244259f2864f7552b127011f11f17b051b8c5d415fe27e701be.jpg)，只有C项符合。
 
 故正确答案为C.
 
@@ -1493,7 +1493,7 @@ C
 
 如下图所示，由图1折叠成图2，再折叠成图3，然后剪去图4的阴影三角部分，现将其完全展开后得到的图形是      。
 
-![](assets-fenbi-82932/e8fc0b31f2b7dd1162569e8d0b615a43cfc6f07b83b5fc22a3acbd311eb16fef.png)
+![](图片/assets-fenbi-82932/e8fc0b31f2b7dd1162569e8d0b615a43cfc6f07b83b5fc22a3acbd311eb16fef.png)
 
 A. A
 
@@ -1513,7 +1513,7 @@ D
 
 观察题干发现，从图1到图3折叠两次，且剪去一三角形得到图4，现想知将其完全展开后的图形形状，只需将折叠部分依次展开即可，如下图所示：
 
-![](assets-fenbi-82932/0189979f689022324d759a12d91cc72cdc75290bc4baeba5a849e0f0651322e9.png)
+![](图片/assets-fenbi-82932/0189979f689022324d759a12d91cc72cdc75290bc4baeba5a849e0f0651322e9.png)
 
 故正确答案为D。
 
@@ -1525,7 +1525,7 @@ D
 
 下列选项中，符合所给图形的变化规律的是      。
 
-![](assets-fenbi-82932/cd2ef4fb94a8705a6849e912b07f1a8302b33bebc550b64a12cc7987312649ab.png)
+![](图片/assets-fenbi-82932/cd2ef4fb94a8705a6849e912b07f1a8302b33bebc550b64a12cc7987312649ab.png)
 
 A. A
 
@@ -1557,7 +1557,7 @@ D
 
 下列选项中，符合所给图形的变化规律的是      。
 
-![](assets-fenbi-82932/503d0ac989e601e5f13ed167c0c34861baa4254de3fa07c7027c5120c7250d31.png)
+![](图片/assets-fenbi-82932/503d0ac989e601e5f13ed167c0c34861baa4254de3fa07c7027c5120c7250d31.png)
 
 A. A
 
@@ -1589,7 +1589,7 @@ C
 
 下列选项中，符合所给图形的变化规律的是      。
 
-![](assets-fenbi-82932/11a68d61925d0ef883d77b7e7329e24d9a935014066f570e792ae52bac612dd5.png)
+![](图片/assets-fenbi-82932/11a68d61925d0ef883d77b7e7329e24d9a935014066f570e792ae52bac612dd5.png)
 
 A. A
 
@@ -1621,7 +1621,7 @@ D
 
 下列选项中，由所给图形叠加而成的图形是      。
 
-![](assets-fenbi-82932/6def80b4c6181734c2517970140b5c097c470642470cda39f43b3dc0a1e38779.png)
+![](图片/assets-fenbi-82932/6def80b4c6181734c2517970140b5c097c470642470cda39f43b3dc0a1e38779.png)
 
 A. A
 
@@ -1641,7 +1641,7 @@ C
 
 本题考查图形相加，题干前三幅图相加得到第四幅图。观察选项发现，相加后的图形主要有4个小矩形组成，可对比选项差异，回到题干去验证。观察选项发现，右下角的小矩形有差异，A、D两项里面为空白，而B、C两项里面有条竖线。回到题干，图3右下角有条竖线，故排除A、D两项。继续对比B、C两项发现右上角的矩形有差异，B项右上角矩形内有条小竖线，C项右上角矩形内没有小竖线，回到题干，3幅图的右上角均没有小竖线，排除B项。如下图所示，只有C项符合。
 
-![](assets-fenbi-82932/b4e96f99d817c8b4bc056a7a76e837917fbfc817845f34c2a6eb74e3eb1ee98c.png)
+![](图片/assets-fenbi-82932/b4e96f99d817c8b4bc056a7a76e837917fbfc817845f34c2a6eb74e3eb1ee98c.png)
 
 故正确答案为C。
 
@@ -1655,7 +1655,7 @@ C
 
 下列选项中，符合所给图形的变化规律的是      。
 
-![](assets-fenbi-82932/2eea0ffa1b6fefae375b38fd1cf0d2fe4c1f29dc50dc5672f175068597521f78.png)
+![](图片/assets-fenbi-82932/2eea0ffa1b6fefae375b38fd1cf0d2fe4c1f29dc50dc5672f175068597521f78.png)
 
 A. A
 
@@ -1695,7 +1695,7 @@ D
 
 下列选项中，符合所给图形的变化规律的是      。
 
-![](assets-fenbi-82932/9fc2a064b66906ea6029e8d9895487a61aa9838f3e726391b15111e166a14f41.png)
+![](图片/assets-fenbi-82932/9fc2a064b66906ea6029e8d9895487a61aa9838f3e726391b15111e166a14f41.png)
 
 A. A
 
@@ -1727,7 +1727,7 @@ A
 
 下列选项中，根据图1和图2的关系，与图3对应的图形是      。
 
-![](assets-fenbi-82932/7834c01a9faca60cbf386040087bbcd5928d38523e9719705d06d49e35fdb6a3.png)
+![](图片/assets-fenbi-82932/7834c01a9faca60cbf386040087bbcd5928d38523e9719705d06d49e35fdb6a3.png)
 
 A. A
 
@@ -1759,7 +1759,7 @@ C
 
 左边给定的平面图折叠后的立体图形是      。
 
-![](assets-fenbi-82932/45c716ec70b3aac179dd2b78eec4dbcc2bf788b21c0fb637bb3b72d3cabe5fcd.png)
+![](图片/assets-fenbi-82932/45c716ec70b3aac179dd2b78eec4dbcc2bf788b21c0fb637bb3b72d3cabe5fcd.png)
 
 A. A
 
@@ -1779,7 +1779,7 @@ A
 
 将题干展开图标上序号（题干中四个小三角形移动拼成一个完整的面i），如下图所示，逐一进行分析。
 
-![](assets-fenbi-82932/b8d56fba912868150708f98b00f714319efad362799e24cd7d41d082fbc3635c.png)
+![](图片/assets-fenbi-82932/b8d56fba912868150708f98b00f714319efad362799e24cd7d41d082fbc3635c.png)
 
 A项：选项由面i、面h与面k或面i、面e与面f构成，选项与题干展开图一致，当选；
 
@@ -2261,7 +2261,7 @@ D
 
 6月一共有30天，那下旬一共10天，即21-30日。根据甲的话可知，10天中会有两个周一，任意连续的7天必然有且只有一个周一，可知24-30号必然有且只有一个周一，则21-23日必然存在周一，有三种情况，如下图：
 
-![](assets-fenbi-82932/cb5a55cacf558ca9894a5b60ce8348d120afba98304de00fe49378a39fec333b.png)
+![](图片/assets-fenbi-82932/cb5a55cacf558ca9894a5b60ce8348d120afba98304de00fe49378a39fec333b.png)
 
 |  | 21日 | 22日 | 23日 | 24日 | 25日 | 26日 | 27日 | 28日 | 29日 | 30日 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2379,7 +2379,7 @@ D项：朗朗上口的曲调、副歌以及标准化节奏（一节四拍）只�
 
 根据下图数字之间的规律，问号处应填        。
 
-![](assets-fenbi-82932/6eb77f51d3fd81c7020d00c94714273dbf17abddeff58b0c650972ba633ea8ad.jpg)
+![](图片/assets-fenbi-82932/6eb77f51d3fd81c7020d00c94714273dbf17abddeff58b0c650972ba633ea8ad.jpg)
 
 A. 22
 
@@ -2439,7 +2439,7 @@ C
 
 ### 第 63 题
 
-![](assets-fenbi-82932/259635e30543ad7f6cbba8b4ddfc9c52cbb5c761500dbf247d4bbaac2f42cd19.jpg)
+![](图片/assets-fenbi-82932/259635e30543ad7f6cbba8b4ddfc9c52cbb5c761500dbf247d4bbaac2f42cd19.jpg)
 
 按此规律，第7行的数字和为        。
 
@@ -2475,7 +2475,7 @@ C
 
 根据下表数字之间的规律，问号处应填        。
 
-![](assets-fenbi-82932/3c238364631d5d070717ac9148edc4520c8936bf4361db40370b582e2f8c5be3.png)
+![](图片/assets-fenbi-82932/3c238364631d5d070717ac9148edc4520c8936bf4361db40370b582e2f8c5be3.png)
 
 A. 32
 
@@ -2661,7 +2661,7 @@ C
 
 6支队伍进行单循环的足球比赛，比赛结束后，战绩如下：
 
-![](assets-fenbi-82932/1b4045fc1acf36869c85a9febb4872dc6de360d8575f59aee8017e5352048012.png)
+![](图片/assets-fenbi-82932/1b4045fc1acf36869c85a9febb4872dc6de360d8575f59aee8017e5352048012.png)
 
 则F队的战绩为      。
 
@@ -2843,7 +2843,7 @@ B
 
 如图，两个同心圆构成的圆环被均匀地分割成7份，连同中间的小圆共8个区域。若要给这8个区域着色，至少需要      种颜色，才能使相邻区域颜色不同。
 
-![](assets-fenbi-82932/b55cd5a33039b6ad75d892d2ae53a412a2a3eb71ef2e5c6c210df8d00c1b7604.png)
+![](图片/assets-fenbi-82932/b55cd5a33039b6ad75d892d2ae53a412a2a3eb71ef2e5c6c210df8d00c1b7604.png)
 
 A. 3
 
@@ -2863,7 +2863,7 @@ B
 
 要求相邻区域颜色不同，优先涂相邻面最多的区域，即中间的圆。为了使得所用颜色最少，则其他7个区域涂色如下：
 
-![](assets-fenbi-82932/e18a15891077ec7a3fb33f4b741f15b1f7bb8d12b9fbb5f589a4c83b5ed17068.png)
+![](图片/assets-fenbi-82932/e18a15891077ec7a3fb33f4b741f15b1f7bb8d12b9fbb5f589a4c83b5ed17068.png)
 
 由上图可知，至少需要4种颜色。
 
@@ -2917,15 +2917,15 @@ B
 
 （一）根据下列资料，回答76-80题。
 
-![](assets-fenbi-82932/52677bdf42490b46601c40d1ecc63d7c378f6dc62ded088577b1104e624e0304.png)
+![](图片/assets-fenbi-82932/52677bdf42490b46601c40d1ecc63d7c378f6dc62ded088577b1104e624e0304.png)
 
 | 年份 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | 贸易额 | 3423.1 | 3528.9 | 3644.1 | 3823.2 | 3675.2 | 3616.2 |
 
-![](assets-fenbi-82932/22c60c76e826acf6a4324b08afd8ad2528f4d67431ac47e89ffc13e053746b93.png)
+![](图片/assets-fenbi-82932/22c60c76e826acf6a4324b08afd8ad2528f4d67431ac47e89ffc13e053746b93.png)
 
-![](assets-fenbi-82932/8b3cb948201ab39a16efae7c4058f941bde15cd22407da45f2cc9402dae54d31.png)
+![](图片/assets-fenbi-82932/8b3cb948201ab39a16efae7c4058f941bde15cd22407da45f2cc9402dae54d31.png)
 
 注：前十大出口国和进口国均按2016年数据排列。
 
@@ -3089,7 +3089,7 @@ D项：定位图1，2016年华东对新加坡、菲律宾出口额分别是163.0
 
 （二）根据下列资料，回答81—85题。
 
-![](assets-fenbi-82932/e49b8be432eb7eec63ef1f69a137ff51638d37ee878c850566baac561bdd37d4.png)
+![](图片/assets-fenbi-82932/e49b8be432eb7eec63ef1f69a137ff51638d37ee878c850566baac561bdd37d4.png)
 
 | 网站 | 武汉 日到达人数 | 武汉 日到达率（%） | 南京 日到达人数 | 南京 日到达率（%） |
 | --- | ---: | ---: | ---: | ---: |
@@ -4941,7 +4941,7 @@ X市质监局扣押甲公司的货物这一行政行为的作出主体是“X市
 
 ## 材料 10
 
-![](assets-fenbi-82932/2c51c71843b1168b912e965169e3e245cfd8c79cded4f4441b6289b925e81d43.png)
+![](图片/assets-fenbi-82932/2c51c71843b1168b912e965169e3e245cfd8c79cded4f4441b6289b925e81d43.png)
 
 ### 第 132 题
 

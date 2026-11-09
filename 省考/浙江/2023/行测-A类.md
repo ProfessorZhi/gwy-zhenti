@@ -279,19 +279,19 @@ D项正确，根据《行政许可法》第三十二条第一款第二项规定�
 
 ①
 
-![](assets-fenbi-198517/27a4cc177e2f14593602a749770949e93c46ea4fb354aeac0b0a82ce98ebfa2a.png)
+![](图片/assets-fenbi-198517/27a4cc177e2f14593602a749770949e93c46ea4fb354aeac0b0a82ce98ebfa2a.png)
 
 ②
 
-![](assets-fenbi-198517/55b594fb0a5ae26901138eeebb1c478f4ac1e571337fce2b97750bdf272c75d4.png)
+![](图片/assets-fenbi-198517/55b594fb0a5ae26901138eeebb1c478f4ac1e571337fce2b97750bdf272c75d4.png)
 
 ③
 
-![](assets-fenbi-198517/04c8446b61a671f41c6c86966372f19ffd96af1fb2f1103ea684aa5c415dd4cc.png)
+![](图片/assets-fenbi-198517/04c8446b61a671f41c6c86966372f19ffd96af1fb2f1103ea684aa5c415dd4cc.png)
 
 ④
 
-![](assets-fenbi-198517/7682e98a5c2e5962f0c0686f4248252199cb68fe783c09051fc51120f9a04529.png)
+![](图片/assets-fenbi-198517/7682e98a5c2e5962f0c0686f4248252199cb68fe783c09051fc51120f9a04529.png)
 
 A. ①②④③
 
@@ -601,19 +601,19 @@ D项错误，“烟霄微月澹长空，银汉秋期万古同”出自唐代白�
 
 A. 朝鲜族
 
-![](assets-fenbi-198517/ad94f2e453cbfa671bf842855c9f2e89201e2c59df158c991db1329de33d1780.png)
+![](图片/assets-fenbi-198517/ad94f2e453cbfa671bf842855c9f2e89201e2c59df158c991db1329de33d1780.png)
 
 B. 傣族
 
-![](assets-fenbi-198517/03cd0c03c464b47dc6c247477d70fde180e85efff3e4d08057126ec3a3cbb2c5.png)
+![](图片/assets-fenbi-198517/03cd0c03c464b47dc6c247477d70fde180e85efff3e4d08057126ec3a3cbb2c5.png)
 
 C. 回族
 
-![](assets-fenbi-198517/ef6eb7f557f8f9bb03b3e526fbbb7cb0ea5237432ed3ab4da5847bb01736b1b7.png)
+![](图片/assets-fenbi-198517/ef6eb7f557f8f9bb03b3e526fbbb7cb0ea5237432ed3ab4da5847bb01736b1b7.png)
 
 D. 苗族
 
-![](assets-fenbi-198517/ce54814d654b6a00ee95ffe40eb75d95a90e47adc6eba82bdea3c0f2d8394681.png)
+![](图片/assets-fenbi-198517/ce54814d654b6a00ee95ffe40eb75d95a90e47adc6eba82bdea3c0f2d8394681.png)
 
 <details><summary>第 15 题 · 答案与解析</summary>
 
@@ -2343,7 +2343,7 @@ D
 
 某地打算在绿地上建两个圆形花坛，如下图所示，大圆的直径为6米，小圆的直径为2米，修建期间暂时在外围设置围栏。已知围栏呈矩形，大圆与围栏的三条边相切，小圆与围栏的两条边相切，且两圆相切，那么矩形围栏的面积是多少平方米？
 
-![](assets-fenbi-198517/4e3fe382fd139ec99b2b34673c25f38d0fa7ddf6471c6b677edfaea7323b88de.png)
+![](图片/assets-fenbi-198517/4e3fe382fd139ec99b2b34673c25f38d0fa7ddf6471c6b677edfaea7323b88de.png)
 
 A. 12(2+√3)
 
@@ -2363,7 +2363,7 @@ A
 
 如图所示，过大圆的圆心O作平行于矩形长的AB，过小圆的圆心Q作平行于矩形宽的CD，AB与CD相交于G点，△OQG为直角三角形。大圆的半径为6/2=3米，小圆的半径为2/2=1米。由题干圆与矩形围栏的相切关系可知，CQ=1米，GB=1米，GD=3米，AO=3米，CD=6米，OQ=3+1=4米，QG=CD-CQ-GD=6-1-3=2米。在直角三角形OQG中，OG = √(OQ^2 − QG^2)= √(4^2 − 2^2) = 2√3米。则矩形围栏的长=AB=AO+OG+GB= 3 + 2√3 + 1 = (4 + 2√3)米，矩形围栏的面积=CD×AB= 6 × (4 + 2√3) = 12(2 + √3)平方米。
 
-![](assets-fenbi-198517/d33e568a409892f478c22f70cc8a38f9330b2e53f65f9668e5f6179d6d6a2722.png)
+![](图片/assets-fenbi-198517/d33e568a409892f478c22f70cc8a38f9330b2e53f65f9668e5f6179d6d6a2722.png)
 
 故正确答案为A。
 
@@ -2515,7 +2515,7 @@ B
 
 如图所示，乙车与甲车在C地相遇后，乙车沿CD段行驶，甲车继续沿AC方向，即沿CB段行驶，甲车到达B地时与乙车之间的距离，即为BD的距离。
 
-![](assets-fenbi-198517/262ae3513c4039f6a0d3a53af42cbdb6f7b0864cdb2ec0943b6747da4c972a8b.png)
+![](图片/assets-fenbi-198517/262ae3513c4039f6a0d3a53af42cbdb6f7b0864cdb2ec0943b6747da4c972a8b.png)
 
 根据“甲车的速度是乙车的3倍”及“时间一定，路程与速度成正比”，可知甲、乙两车相遇时，甲车所走的路程是乙车的3倍，全程为320千米，即AC = 320/(1+3) × 3 = 240千米，BC=320-240=80千米。同理，BC=3CD，即CD = 80/3千米，根据勾股定理可得：BD=√(BC^2+CD^2)=√(80^2+(80/3)^2)=√(6400+6400/9)＜ √(6400 + 800) = √7200＜ √8100 = 90千米，在B项范围内。
 
@@ -2611,7 +2611,7 @@ C
 
 根据题意，12个人重新排1列纵队，要求新号码与原来不完全相同且每个人的新号码与原始号码相差≤1，则每个人要么为原号码，要么只能与相邻的人交换号码。故讨论除与原纵队号码一致的情况外，不同人数交换情况，因12人情况较复杂，从1人至多人情况枚举如下：
 
-![](assets-fenbi-198517/6d802aab0a18140175b6332fab89e2526dd6d01904ca7d146d8c906ac6053273.png)
+![](图片/assets-fenbi-198517/6d802aab0a18140175b6332fab89e2526dd6d01904ca7d146d8c906ac6053273.png)
 
 由上表可知，纵队每增加1人，总情况数构成一个简单的递推和数列，即1、2、3、5、8、13、21、34、55、89、144、233，故12人的纵队加上初始编号情况共有233种。已知重新编队后不能与原纵队的顺序完全一致，则符合题意的情况有233-1=232种。
 
@@ -2627,7 +2627,7 @@ C
 
 从所给的四个选项中选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-198517/6ff012d05cad11044c5a9e484bcabeb8ffd165098d3f32d3dca887e920411798.png)
+![](图片/assets-fenbi-198517/6ff012d05cad11044c5a9e484bcabeb8ffd165098d3f32d3dca887e920411798.png)
 
 A. A
 
@@ -2647,7 +2647,7 @@ A
 
 观察发现，题干图形均出现黑块与白块，但数量、位置等均无规律，将两幅图相邻比较发现，黑块的位置存在规律，即题干图形的每个拐角处均为黑块，故“？”处图形的每个拐角处应均为黑块，B、C、D三项均有拐角处不是黑块（如下图所示），只有A项满足规律。
 
-![](assets-fenbi-198517/1c96f8510277b6df4024c15d3e54724ae028e1ae888a57bf599e9fed01b7d3b3.png)
+![](图片/assets-fenbi-198517/1c96f8510277b6df4024c15d3e54724ae028e1ae888a57bf599e9fed01b7d3b3.png)
 
 故正确答案为A。
 
@@ -2661,7 +2661,7 @@ A
 
 从所给的四个选项中选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-198517/c37b976e4a0c0b4d3685bd508209131f0a664fb5a709dc625f8d959434441bdc.png)
+![](图片/assets-fenbi-198517/c37b976e4a0c0b4d3685bd508209131f0a664fb5a709dc625f8d959434441bdc.png)
 
 A. A
 
@@ -2693,7 +2693,7 @@ B
 
 从所给的四个选项中选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-198517/dcbb8f6cb4056672e99f5e4785f447b6910b378a6b3cb1cfb02731759bc9c057.png)
+![](图片/assets-fenbi-198517/dcbb8f6cb4056672e99f5e4785f447b6910b378a6b3cb1cfb02731759bc9c057.png)
 
 A. A
 
@@ -2713,7 +2713,7 @@ A
 
 元素组成相同，优先考虑位置规律。题干图形均出现了二十五宫格，考虑内外分开看平移。观察发现，内圈的黑块每次逆时针平移1格，外圈的黑块每次顺时针平移2格，只有A项符合。
 
-![](assets-fenbi-198517/7e08d80b2adfe709dbe8418045e81be13019d2a410c1270b7a89cdd5722224aa.png)
+![](图片/assets-fenbi-198517/7e08d80b2adfe709dbe8418045e81be13019d2a410c1270b7a89cdd5722224aa.png)
 
 故正确答案为A。
 
@@ -2727,7 +2727,7 @@ A
 
 从所给的四个选项中选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-198517/32185265a920e783b4b018eeb4aaf8fb353b0a933e745bf87b6de4bdc4ef100f.png)
+![](图片/assets-fenbi-198517/32185265a920e783b4b018eeb4aaf8fb353b0a933e745bf87b6de4bdc4ef100f.png)
 
 A. A
 
@@ -2759,7 +2759,7 @@ C
 
 从所给的四个选项中选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-198517/21deef6cdd60fe39238c5d9e54837a012fc4983fbe04047718fd057d2966aa13.png)
+![](图片/assets-fenbi-198517/21deef6cdd60fe39238c5d9e54837a012fc4983fbe04047718fd057d2966aa13.png)
 
 A. A
 
@@ -2791,7 +2791,7 @@ C
 
 把下面的六个图形分为两类，使每一类图形都有各自的共同特征或规律，分类正确的一项是：
 
-![](assets-fenbi-198517/f207373eb04932c92053aaf6a4b5fc5e9b75b0606a4d114b856f9e6c9acd8568.png)
+![](图片/assets-fenbi-198517/f207373eb04932c92053aaf6a4b5fc5e9b75b0606a4d114b856f9e6c9acd8568.png)
 
 A. ①③⑤，②④⑥
 
@@ -2823,7 +2823,7 @@ D
 
 把下面的六个图形分为两类，使每一类图形都有各自的共同特征或规律，分类正确的一项是：
 
-![](assets-fenbi-198517/8ee122de5374ba918ad5b033f261f836f7a346191324799c5d24288f3fa5dbe5.png)
+![](图片/assets-fenbi-198517/8ee122de5374ba918ad5b033f261f836f7a346191324799c5d24288f3fa5dbe5.png)
 
 A. ①②⑤，③④⑥
 
@@ -2855,7 +2855,7 @@ A
 
 从所给的四个选项中选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-198517/19ad437055c65e058e083fb7ddbaad8fe4703af4796d6057e0855a471cf24e58.png)
+![](图片/assets-fenbi-198517/19ad437055c65e058e083fb7ddbaad8fe4703af4796d6057e0855a471cf24e58.png)
 
 A. A
 
@@ -2887,7 +2887,7 @@ B
 
 左图给定的是纸盒的外表面，右边哪项能由它折叠而成？
 
-![](assets-fenbi-198517/990a965f21611eca35075aa77927b0ff350e1ec1ef9520ce1208f75a58163713.png)
+![](图片/assets-fenbi-198517/990a965f21611eca35075aa77927b0ff350e1ec1ef9520ce1208f75a58163713.png)
 
 A. A
 
@@ -2907,21 +2907,21 @@ C
 
 将原展开图标上序号如下图，逐一进行分析。
 
-![](assets-fenbi-198517/f4229f29b8ed85af7fe9f3e0a4529040f05cc13369d3ba203ffc92d41cbb607e.png)
+![](图片/assets-fenbi-198517/f4229f29b8ed85af7fe9f3e0a4529040f05cc13369d3ba203ffc92d41cbb607e.png)
 
 A项：选项右侧为面b，左侧为面a或面c，选项中左侧面上的实线与其和面b的公共边中点不相交，而展开图中面a与面c上的实线均和该面与面b的公共边中点相交，选项与展开图不一致，排除；
 
-![](assets-fenbi-198517/1dfdf683953d9b477a70ddacbad132ebe02b87efe7f175027eaa56e99ae3c534.png)
+![](图片/assets-fenbi-198517/1dfdf683953d9b477a70ddacbad132ebe02b87efe7f175027eaa56e99ae3c534.png)
 
 B项：选项左侧为面d，右侧为面a或面c，选项中面d上的虚线与其和右侧面（面a或面c）的公共边中点相交，而展开图中面d上虚线与其和面b的公共边中点相交，选项与展开图不一致，排除；
 
-![](assets-fenbi-198517/d2ab4db3787d23721ce7b3c19b6b64f0e188a5f67e9e5aec9f852986cb2fac94.png)
+![](图片/assets-fenbi-198517/d2ab4db3787d23721ce7b3c19b6b64f0e188a5f67e9e5aec9f852986cb2fac94.png)
 
 C项：选项由面b和面c构成，与展开图一致，当选；
 
 D项：选项由面b和面d构成，以面b中引出实线的顶点为起点，沿面b顺时针画边（如下图所示），展开图中边3对应面d，而选项中边1对应面d，选项与展开图不一致，排除。
 
-![](assets-fenbi-198517/90c450d0f7bf43cbede93720fb75da1b94373899874bb13932d5f810bd277cbe.png)
+![](图片/assets-fenbi-198517/90c450d0f7bf43cbede93720fb75da1b94373899874bb13932d5f810bd277cbe.png)
 
 故正确答案为C。
 
@@ -2935,7 +2935,7 @@ D项：选项由面b和面d构成，以面b中引出实线的顶点为起点，�
 
 左图为给定的多面体，将其从任一面剖开，哪项不可能是该多面体的截面？
 
-![](assets-fenbi-198517/f942298ffa924d6e2762c20716d1145bee530b06cd0989c72fd17c6b3d194e56.png)
+![](图片/assets-fenbi-198517/f942298ffa924d6e2762c20716d1145bee530b06cd0989c72fd17c6b3d194e56.png)
 
 A. A
 
@@ -2957,15 +2957,15 @@ D
 
 A项：如下图所示，可以截出，排除；
 
-![](assets-fenbi-198517/f4d7376746efc2a28e2acd8739459df0ab80f0618fa036cade0c49f4f1134352.png)
+![](图片/assets-fenbi-198517/f4d7376746efc2a28e2acd8739459df0ab80f0618fa036cade0c49f4f1134352.png)
 
 B项：如下图所示，可以截出，排除；
 
-![](assets-fenbi-198517/0a59248dcd1d79fd14eece9e7e6f0504ef825fef9b88eb40ba39898ce56b1556.png)
+![](图片/assets-fenbi-198517/0a59248dcd1d79fd14eece9e7e6f0504ef825fef9b88eb40ba39898ce56b1556.png)
 
 C项：如下图所示，可以截出，排除；
 
-![](assets-fenbi-198517/2d612460e220a83b1ef303afd7b25c6b5f75a8aa56ba8ed13ac7ed6362a70c91.png)
+![](图片/assets-fenbi-198517/2d612460e220a83b1ef303afd7b25c6b5f75a8aa56ba8ed13ac7ed6362a70c91.png)
 
 D项：无法截出，当选。
 
@@ -4163,7 +4163,7 @@ D项：选项举了一名受试者的例子证明该新设备确实可以在人�
 
 对比B、D两项，本题论点中存在现在和以前设备之间的比较关系，B项补充了此前设备的情况，D项虽然举了一个例子但仍然在表述当前设备的情况，因此择优选择B项。注：B选项属于原文中的论述原话，用于说明可穿戴电子产品确实向更实用、更方便、更大众化的方向发展了，如下图所示。
 
-![](assets-fenbi-198517/1ae40c57adde53dfefbf9a0035768ff560e803b7837fc199795cee7a96d3c64d.jpg)
+![](图片/assets-fenbi-198517/1ae40c57adde53dfefbf9a0035768ff560e803b7837fc199795cee7a96d3c64d.jpg)
 
 故正确答案为B。
 
@@ -4263,7 +4263,7 @@ D项：该项讨论的是在大灭绝中幸存下来的恐龙的具体分布位�
 
 https://baijiahao.baidu.com/s?id=1737217080173007095&wfr=spider&for=pc（涉及题干、A项和C项，A项恐龙确实生活在北极地区是可以通过论据中的脚印直接推测出的，A项并没有讨论恐龙是否已经适应严寒，而C项讨论了恐龙是否已适应严寒，与论点话题更为一致。）
 
-![](assets-fenbi-198517/d735b49f33fecec155e4ec6bca5154beece7391cb6f0035cc544f46b8ebb25cd.png)
+![](图片/assets-fenbi-198517/d735b49f33fecec155e4ec6bca5154beece7391cb6f0035cc544f46b8ebb25cd.png)
 
 **考点**：搭桥
 
@@ -4321,7 +4321,7 @@ D项：该项指出工作记忆强的人面对繁多的网页内容也能成功�
 
 ## 材料 1
 
-![](assets-fenbi-198517/0902ec4ce70a16e6cec02cdf4ad65119f15b945b4160a22ed9a5b732d01cf036.png)
+![](图片/assets-fenbi-198517/0902ec4ce70a16e6cec02cdf4ad65119f15b945b4160a22ed9a5b732d01cf036.png)
 
 |  | 2018年 | 2019年 | 2020年 |
 | --- | ---: | ---: | ---: |
@@ -4669,9 +4669,9 @@ D项：定位文字材料第一段可得：2021年上半年，S市工业战略�
 
 零售药店终端包含实体药店和网上药店两大市场。2021年，全国零售药店终端药品销售额4774亿元，同比增长10.3%。其中，实体药店市场药品销售额4405亿元，同比增长7.8%；网上药店市场药品销售额368亿元，同比增长51.5%。
 
-![](assets-fenbi-198517/0b9fc7f3ea844fa47e91a8e49735cd20756456ef926e48674b4ee61c68c1a52b.png)
+![](图片/assets-fenbi-198517/0b9fc7f3ea844fa47e91a8e49735cd20756456ef926e48674b4ee61c68c1a52b.png)
 
-![](assets-fenbi-198517/4f916cac3929f420b109b7ca27ced0603aff5547a0089cf0c2ca0581653d2d17.png)
+![](图片/assets-fenbi-198517/4f916cac3929f420b109b7ca27ced0603aff5547a0089cf0c2ca0581653d2d17.png)
 
 ### 第 121 题
 

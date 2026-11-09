@@ -1031,7 +1031,7 @@ B
 
 **解析**
 
-![](assets-fenbi-99/244775612a161099f8954e63d66945ac6ce723c434ed98a155fc51bbacc2655a.png)
+![](图片/assets-fenbi-99/244775612a161099f8954e63d66945ac6ce723c434ed98a155fc51bbacc2655a.png)
 
 第5项和第6项为11和13，因此原数列第6项应为38+11=49。
 
@@ -1121,7 +1121,7 @@ D
 
 **解析**
 
-![](assets-fenbi-99/e09e94320c8b82dd065edc75f0cf001f0e8ef6a3cbcd8bac774cef28bdec534f.png)
+![](图片/assets-fenbi-99/e09e94320c8b82dd065edc75f0cf001f0e8ef6a3cbcd8bac774cef28bdec534f.png)
 
 二级数列为首项为13，公比为2的等比数列，第3项和第4项为52和104，因此原数列第4项应为55+52=107。
 
@@ -1179,7 +1179,7 @@ C
 
 **解析**
 
-![](assets-fenbi-99/54471af5bdb6a84c2eadbc67bdffb81cc7fb2b832104d35bc63eea5459283572.png)
+![](图片/assets-fenbi-99/54471af5bdb6a84c2eadbc67bdffb81cc7fb2b832104d35bc63eea5459283572.png)
 
 三级数列为首项为5，公差为-1的等差数列，可反推出二级数列的第二项和第三项分别为9和13，因此原数列的第三项为12+9=21。
 
@@ -1243,7 +1243,7 @@ C
 
 **解析**
 
-![](assets-fenbi-99/a4d618b6be5e7b6644cb44da01ee28aabd7a9d5fd0e9898c11acbe8286e304be.png)
+![](图片/assets-fenbi-99/a4d618b6be5e7b6644cb44da01ee28aabd7a9d5fd0e9898c11acbe8286e304be.png)
 
 如图所示：三条直线两两交叉，最多可将平面分成7部分，C项正确。
 
@@ -1275,7 +1275,7 @@ B
 
 **解析**
 
-![](assets-fenbi-99/27ec5cfd3174a4fc7456fc24d26b07af042d63df62c27d421f6b3c3efe885dc9.jpg)
+![](图片/assets-fenbi-99/27ec5cfd3174a4fc7456fc24d26b07af042d63df62c27d421f6b3c3efe885dc9.jpg)
 
 如图所示从4点到5点时针在4点和5点之间的30°范围内，若分针与时针成直角，则分针必须在1点和2点、7点和8点之间，因为分针的速度是时针的12倍，所以分针在1点和2点、7点和8点之间范围内不可能2次与时针成直角，因此共有2次机会。
 
@@ -1545,7 +1545,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-99/d9098c1591abec7e3f8ec564241494a35f3e80065b021c0dc0aa8b1ce295cf7f.png)
+![](图片/assets-fenbi-99/d9098c1591abec7e3f8ec564241494a35f3e80065b021c0dc0aa8b1ce295cf7f.png)
 
 A. A
 
@@ -1577,7 +1577,7 @@ C
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-99/7dc090c60124ecf8775a4734ec63dcd54eefe67247a9c517ef86163a502055d4.png)
+![](图片/assets-fenbi-99/7dc090c60124ecf8775a4734ec63dcd54eefe67247a9c517ef86163a502055d4.png)
 
 A. A
 
@@ -1609,7 +1609,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-99/c1adfb673da8082b0b2ba485cc3b5067544601469bbd74881a1832eeea808cfc.png)
+![](图片/assets-fenbi-99/c1adfb673da8082b0b2ba485cc3b5067544601469bbd74881a1832eeea808cfc.png)
 
 A. A
 
@@ -1641,7 +1641,7 @@ D
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-99/5d8b5d209db42fcd4433738141661a1ee993ce2113889abcd71969087bd187ae.png)
+![](图片/assets-fenbi-99/5d8b5d209db42fcd4433738141661a1ee993ce2113889abcd71969087bd187ae.png)
 
 A. A
 
@@ -1675,7 +1675,7 @@ B
 
 从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-99/936a23c0222e71f913a421afa5e6a605ad0994b0ebb88af7d3879daa697356f0.png)
+![](图片/assets-fenbi-99/936a23c0222e71f913a421afa5e6a605ad0994b0ebb88af7d3879daa697356f0.png)
 
 A. A
 
@@ -1709,7 +1709,7 @@ C
 
 请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-99/45727cfbcc521e3d6c62381a448cec25634c04b0290837d8b6b8fec5982472e4.png)
+![](图片/assets-fenbi-99/45727cfbcc521e3d6c62381a448cec25634c04b0290837d8b6b8fec5982472e4.png)
 
 A. A
 
@@ -1741,7 +1741,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-99/38a3edf91dd8386f05b840a23411019a769efc6f65ace01d106e147f0f6c4a93.png)
+![](图片/assets-fenbi-99/38a3edf91dd8386f05b840a23411019a769efc6f65ace01d106e147f0f6c4a93.png)
 
 A. A
 
@@ -1775,7 +1775,7 @@ C
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-99/54339a94146b4aba87346bf2adac3e4d22aa49b239d0d27bcc096f0ef6e7a2cf.png)
+![](图片/assets-fenbi-99/54339a94146b4aba87346bf2adac3e4d22aa49b239d0d27bcc096f0ef6e7a2cf.png)
 
 A. A
 
@@ -1809,7 +1809,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-99/4c5840b64d8107221d27e85747cc8246f7b1aeb9d5a5e48fea85c84aa1998686.png)
+![](图片/assets-fenbi-99/4c5840b64d8107221d27e85747cc8246f7b1aeb9d5a5e48fea85c84aa1998686.png)
 
 A. A
 
@@ -1843,7 +1843,7 @@ A
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来。
 
-![](assets-fenbi-99/783e0bcf78b2ec666f3a4ee04f9b4aaf0c2a6140349d26794d1e67bf4e3e9505.png)
+![](图片/assets-fenbi-99/783e0bcf78b2ec666f3a4ee04f9b4aaf0c2a6140349d26794d1e67bf4e3e9505.png)
 
 A. A
 
@@ -3909,7 +3909,7 @@ A
 
 下图为2000一2006年我国两种层次货币供应量M1和M2的增长率。根据此图回答下面的各题。(注：该图中M1和M2的增长率都为百分数)
 
-![](assets-fenbi-99/f48c5b55d2ef75e17463d193a180d269e177090c7d0a63f3e7f137982ff65576.png)
+![](图片/assets-fenbi-99/f48c5b55d2ef75e17463d193a180d269e177090c7d0a63f3e7f137982ff65576.png)
 
 ### 第 111 题
 
@@ -4069,7 +4069,7 @@ D
 
 ## 材料 2
 
-![](assets-fenbi-99/4a700b747fe1bc8ab8e815ecf23a0eb5dd7f8e44e58006c144bc9a22e21b9fe9.png)
+![](图片/assets-fenbi-99/4a700b747fe1bc8ab8e815ecf23a0eb5dd7f8e44e58006c144bc9a22e21b9fe9.png)
 
 ### 第 116 题
 

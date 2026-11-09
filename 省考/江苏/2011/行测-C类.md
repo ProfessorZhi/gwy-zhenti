@@ -603,7 +603,7 @@ D
 
 观察数列没有明显规律，可以考虑多级数列。因为数列呈递减趋势，为方便计算，可用前项减后项，相减后得到二级数列：13，11，7，5，二级数列为质数数列，因此下一项应该是3，所以10-（7）=3。
 
-![](assets-fenbi-195/85a7e23c1373b65da59ef8e015d058fef410c52bd440708a941c708c6fa05461.png)
+![](图片/assets-fenbi-195/85a7e23c1373b65da59ef8e015d058fef410c52bd440708a941c708c6fa05461.png)
 
 故正确答案为D。
 
@@ -1525,7 +1525,7 @@ D
 
 ### 第 44 题
 
-![](assets-fenbi-195/7e4606da4e0f56c69b3c30cb93c1f113ff0bd0ce8a25c0ac9afc73103864336b.jpg)
+![](图片/assets-fenbi-195/7e4606da4e0f56c69b3c30cb93c1f113ff0bd0ce8a25c0ac9afc73103864336b.jpg)
 
 A. A
 
@@ -1559,7 +1559,7 @@ A
 
 ### 第 45 题
 
-![](assets-fenbi-195/406900ee5dd49c0954e6103d1480fd2196a86d34785c2b62cc7c37c9f7907706.png)
+![](图片/assets-fenbi-195/406900ee5dd49c0954e6103d1480fd2196a86d34785c2b62cc7c37c9f7907706.png)
 
 A. A
 
@@ -1595,7 +1595,7 @@ C
 
 下列四个图形中，只有一个是由所给出的四个图形拼合而成的，请把它找出来。
 
-![](assets-fenbi-195/719180506f463e540c9bc30798a174c5c42b1d2443f4772a204c17a49ebfb236.jpg)
+![](图片/assets-fenbi-195/719180506f463e540c9bc30798a174c5c42b1d2443f4772a204c17a49ebfb236.jpg)
 
 A. A
 
@@ -1613,7 +1613,7 @@ A
 
 **解析**
 
-本题考查平面拼图，A项可分解为如下图形：![](assets-fenbi-195/834f33253bde2a5f297f0ec425dfc0ff7703f375886904f2ff4fb46f6daa8793.png)
+本题考查平面拼图，A项可分解为如下图形：![](图片/assets-fenbi-195/834f33253bde2a5f297f0ec425dfc0ff7703f375886904f2ff4fb46f6daa8793.png)
 
 故正确答案为A。
 
@@ -1625,7 +1625,7 @@ A
 
 下面的四个图形中，只有一个是由所给出的四个图形拼合而成的，请把它找出来。
 
-![](assets-fenbi-195/0dfe2a21f6af8536f6baaf327ef2ea5d28b684e0e5e61d480eba399a18c4b464.png)
+![](图片/assets-fenbi-195/0dfe2a21f6af8536f6baaf327ef2ea5d28b684e0e5e61d480eba399a18c4b464.png)
 
 A. A
 
@@ -1645,7 +1645,7 @@ C
 
 本题考查平面拼图。由于C项中的图形可以分割为如下图形：
 
-![](assets-fenbi-195/50ba9559040c6486d5b0f4e9fe596ac0c0a04a7355589ac1a0dd73aaaaada8c5.png)
+![](图片/assets-fenbi-195/50ba9559040c6486d5b0f4e9fe596ac0c0a04a7355589ac1a0dd73aaaaada8c5.png)
 
 故正确答案为C。
 
@@ -1657,7 +1657,7 @@ C
 
 下面的四个图形中，只有一个是由所给出的四个图形拼合而成的，请把它找出来。
 
-![](assets-fenbi-195/839ba93c129cf931dd205779f5f809626eb626b0472935c952a48dda50596078.jpg)
+![](图片/assets-fenbi-195/839ba93c129cf931dd205779f5f809626eb626b0472935c952a48dda50596078.jpg)
 
 A. A
 
@@ -1677,7 +1677,7 @@ B
 
 本题考查平面拼图，由于B项可分割为如下图形：
 
-![](assets-fenbi-195/db8c21a835ba77489fd6689d0ec2cd86c76a6594419fafbc97fa678a1957d4d3.png)
+![](图片/assets-fenbi-195/db8c21a835ba77489fd6689d0ec2cd86c76a6594419fafbc97fa678a1957d4d3.png)
 
 故正确答案为B。
 
@@ -1689,7 +1689,7 @@ B
 
 下面的四个图形中，只有一个是由所给出的四个图形拼合而成的，请把它找出来。
 
-![](assets-fenbi-195/b082027dbe7f2b2f04b471b75026d4336574029fd314058c96984cad0ac38520.png)
+![](图片/assets-fenbi-195/b082027dbe7f2b2f04b471b75026d4336574029fd314058c96984cad0ac38520.png)
 
 A. A
 
@@ -1709,7 +1709,7 @@ A
 
 本题考查平面拼图。由于A项可分解为如下图形：
 
-![](assets-fenbi-195/6b04746fa76960dfa8d5b873023c4866bb0d90bfb5a427be9a589747d8165555.png)
+![](图片/assets-fenbi-195/6b04746fa76960dfa8d5b873023c4866bb0d90bfb5a427be9a589747d8165555.png)
 
 故正确答案为A。
 
@@ -1721,7 +1721,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-195/30772500acb0931bd78fecb92795395f255d8cc9071dd44b62f499a1ac73cdf6.png)
+![](图片/assets-fenbi-195/30772500acb0931bd78fecb92795395f255d8cc9071dd44b62f499a1ac73cdf6.png)
 
 A. A
 
@@ -1753,7 +1753,7 @@ C
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-195/3ea11140e92c5d835a75549c63ca16dc331408197031c942a7c4e120dacad924.png)
+![](图片/assets-fenbi-195/3ea11140e92c5d835a75549c63ca16dc331408197031c942a7c4e120dacad924.png)
 
 A. A
 
@@ -1785,7 +1785,7 @@ D
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-195/43cc791fd4fe54f9b477367ac658212a99e38c656ff54098f3497db3df9a700c.png)
+![](图片/assets-fenbi-195/43cc791fd4fe54f9b477367ac658212a99e38c656ff54098f3497db3df9a700c.png)
 
 A. A
 
@@ -1817,7 +1817,7 @@ A
 
 左边给定的是四面体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-195/64385d4801e7e8ce1f2db590930915b43aa3422b7349996aacbc25327e3f09fb.png)
+![](图片/assets-fenbi-195/64385d4801e7e8ce1f2db590930915b43aa3422b7349996aacbc25327e3f09fb.png)
 
 A. A
 
@@ -1849,7 +1849,7 @@ C
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-195/21af0afd2086220846d8e891767dabac3e41b9d4884df54819e055980d20d06e.png)
+![](图片/assets-fenbi-195/21af0afd2086220846d8e891767dabac3e41b9d4884df54819e055980d20d06e.png)
 
 A. A
 
@@ -1881,7 +1881,7 @@ D
 
 从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-195/37bdc6ddcf2f3102b8576bbd8ac12706abe4af3581e421467685e842557337df.jpg)
+![](图片/assets-fenbi-195/37bdc6ddcf2f3102b8576bbd8ac12706abe4af3581e421467685e842557337df.jpg)
 
 A. A
 
@@ -2179,13 +2179,13 @@ A
 
 由条件（1）可知，王与赵、李均不相邻，因此王和张、郭相邻。具体如下图所示：
 
-![](assets-fenbi-195/30dd4cbe3878cde0e4ff3ed0a3eaf227c9d2c49a6978ca6b51d66e0020da4680.jpg)
+![](图片/assets-fenbi-195/30dd4cbe3878cde0e4ff3ed0a3eaf227c9d2c49a6978ca6b51d66e0020da4680.jpg)
 
 第二步：根据其余信息推出结论。
 
 由上图可知，如果李与张相邻，赵与郭必相邻，与条件（2）相悖。因此李与郭相邻，赵与张相邻。如下图所示：
 
-![](assets-fenbi-195/1cea92d64253614c6108eb81ce02ddaa53022a552a603ab65c24e60e876ca136.jpg)
+![](图片/assets-fenbi-195/1cea92d64253614c6108eb81ce02ddaa53022a552a603ab65c24e60e876ca136.jpg)
 
 故正确答案为A。
 
@@ -2941,7 +2941,7 @@ D
 
 二、根据以下资料，完成各题。
 
-![](assets-fenbi-195/ad7c50f50b1de0e3ed8530120a2a40fdd923a8973e987d2828380bcf48f20936.png)
+![](图片/assets-fenbi-195/ad7c50f50b1de0e3ed8530120a2a40fdd923a8973e987d2828380bcf48f20936.png)
 
 | 年份 | 农村居民人均纯收入 江苏 收入（元） | 农村居民人均纯收入 江苏 增长（%） | 农村居民人均纯收入 全国 收入（元） | 农村居民人均纯收入 全国 增长（%） | 城镇居民人均可支配收入 江苏 收入（元） | 城镇居民人均可支配收入 江苏 增长（%） | 城镇居民人均可支配收入 全国 收入（元） | 城镇居民人均可支配收入 全国 增长（%） |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -3071,7 +3071,7 @@ D
 
 根据表格估算2007—2010年各指标年增长量，得到如下表格：
 
-![](assets-fenbi-195/98f2c23f1a33554112be5dd46784199965aa7d0a82866187aa3ba40c839e9d44.jpg)
+![](图片/assets-fenbi-195/98f2c23f1a33554112be5dd46784199965aa7d0a82866187aa3ba40c839e9d44.jpg)
 
 | 年份 | 农村居民人均纯收入增长量（元） 江苏 | 农村居民人均纯收入增长量（元） 全国 | 城镇居民人均可支配收入增长量（元） 江苏 | 城镇居民人均可支配收入增长量（元） 全国 |
 | --- | --- | --- | --- | --- |
@@ -3136,7 +3136,7 @@ A
 
 三、根据以下资料，完成各题。
 
-![](assets-fenbi-195/13a98d08b9c0566214913d4b373141b96c04ef275568d94d615510ec0fadc453.png)
+![](图片/assets-fenbi-195/13a98d08b9c0566214913d4b373141b96c04ef275568d94d615510ec0fadc453.png)
 
 | 年份 | 年份 | 2006 | 2007 | 2008 | 2009 | 2010 |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
@@ -3326,9 +3326,9 @@ A
 
 四、根据以下资料，完成各题。
 
-![](assets-fenbi-195/79c03c3091a99db2055c380c32eb394851d44e4a2a4ebab1f2f8a555a8b03cf6.png)
+![](图片/assets-fenbi-195/79c03c3091a99db2055c380c32eb394851d44e4a2a4ebab1f2f8a555a8b03cf6.png)
 
-![](assets-fenbi-195/3550175b8b6828a46b4c4fd6c87d28ca0bffa2b7593edf76cae238ce7cf0c148.png)
+![](图片/assets-fenbi-195/3550175b8b6828a46b4c4fd6c87d28ca0bffa2b7593edf76cae238ce7cf0c148.png)
 
 ### 第 91 题
 
@@ -3488,9 +3488,9 @@ D
 
 五、根据以下资料，完成各题。
 
-![](assets-fenbi-195/cda1ecc62ba563cd7695809d4fba628c67072d3e60208f36996ed924d0c1239b.png)
+![](图片/assets-fenbi-195/cda1ecc62ba563cd7695809d4fba628c67072d3e60208f36996ed924d0c1239b.png)
 
-![](assets-fenbi-195/5ab3e70075c16319d2b5e83aaf323dbee67f1e1edd20f43fd6425ca6823c9f50.png)
+![](图片/assets-fenbi-195/5ab3e70075c16319d2b5e83aaf323dbee67f1e1edd20f43fd6425ca6823c9f50.png)
 
 ### 第 96 题
 

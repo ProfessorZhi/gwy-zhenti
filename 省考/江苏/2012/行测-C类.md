@@ -593,7 +593,7 @@ B
 
 **解析**
 
-![](assets-fenbi-401/aa21b2c52535677e04f6ac361feee861b4e858e5cc2eaf4b2ff75af3cb68c656.png)
+![](图片/assets-fenbi-401/aa21b2c52535677e04f6ac361feee861b4e858e5cc2eaf4b2ff75af3cb68c656.png)
 
 故正确答案为B。
 
@@ -651,7 +651,7 @@ B
 
 **解析**
 
-![](assets-fenbi-401/030abe514ee428f190a2fae44140232498bbd1b1fa9f0e524bdf15d3e9d84740.png)
+![](图片/assets-fenbi-401/030abe514ee428f190a2fae44140232498bbd1b1fa9f0e524bdf15d3e9d84740.png)
 
 故正确答案为B。
 
@@ -831,7 +831,7 @@ C
 
 **解析**
 
-![](assets-fenbi-401/89b66a2459507d835541697587233515eeadcb36ee5422195686c90b49c7cd5c.png)
+![](图片/assets-fenbi-401/89b66a2459507d835541697587233515eeadcb36ee5422195686c90b49c7cd5c.png)
 
 新数列每一项的分子为前一项的分母，分母为分子减1。
 
@@ -863,7 +863,7 @@ C
 
 依据已知数列分析可得：
 
-![](assets-fenbi-401/281ce31639bbb15c985e7e897a65f9b1412fecdc29d4e35dfc3c89f9aeee94d7.png)
+![](图片/assets-fenbi-401/281ce31639bbb15c985e7e897a65f9b1412fecdc29d4e35dfc3c89f9aeee94d7.png)
 
 故正确答案为C。
 
@@ -937,7 +937,7 @@ C
 
 小张从华兴园到软件公司上班要经过多条街道（软件公司在华兴园的东北方）。假如他只能向东或者向北行走，则他上班不同走法共有：
 
-![](assets-fenbi-401/a155d48c9a4aac346bdf8d0ea8c28f42ac7ff6b34b6c0c33eb2643377cf07b1e.png)
+![](图片/assets-fenbi-401/a155d48c9a4aac346bdf8d0ea8c28f42ac7ff6b34b6c0c33eb2643377cf07b1e.png)
 
 A. 12种
 
@@ -1555,7 +1555,7 @@ C
 
 上边的题干中给出一套图形，其中有五个图，这五个图呈现一定的规律性。在下边给出一套图形，从中选出唯一的一项作为保持上边五个图规律性的第六个图。
 
-![](assets-fenbi-401/73ce6d5037c08bcc30b61a1ac8f1655085daa3345aa55090a0836720e28bd447.jpg)
+![](图片/assets-fenbi-401/73ce6d5037c08bcc30b61a1ac8f1655085daa3345aa55090a0836720e28bd447.jpg)
 
 A. A
 
@@ -1587,7 +1587,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-401/91516f0295a1673c76ed55b0f81c92a0a102930cc9531c6b2c25a0d047fe3554.png)
+![](图片/assets-fenbi-401/91516f0295a1673c76ed55b0f81c92a0a102930cc9531c6b2c25a0d047fe3554.png)
 
 A. A
 
@@ -1619,7 +1619,7 @@ C
 
 从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-401/4cc8b0e1e6a98191a8b1aa2573c314b57efc360e1cf2b827b6d754185abed5ff.jpg)
+![](图片/assets-fenbi-401/4cc8b0e1e6a98191a8b1aa2573c314b57efc360e1cf2b827b6d754185abed5ff.jpg)
 
 A. A
 
@@ -1651,7 +1651,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-401/51d537198e6a561310120468d769f996b13e9c2e0ca854e9b67859c8434feb5c.jpg)
+![](图片/assets-fenbi-401/51d537198e6a561310120468d769f996b13e9c2e0ca854e9b67859c8434feb5c.jpg)
 
 A. A
 
@@ -1683,7 +1683,7 @@ C
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-401/edf5cb625c33d0ba4aa911b2023ffcde363d0e89dc0eec4c3883483e147d5e6a.png)
+![](图片/assets-fenbi-401/edf5cb625c33d0ba4aa911b2023ffcde363d0e89dc0eec4c3883483e147d5e6a.png)
 
 A. A
 
@@ -1715,7 +1715,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-401/ec917a0ee143af680fd1ed31bb01ae5ad900abc7deef08d18d4ff45ba321203b.jpg)
+![](图片/assets-fenbi-401/ec917a0ee143af680fd1ed31bb01ae5ad900abc7deef08d18d4ff45ba321203b.jpg)
 
 A. A
 
@@ -1747,7 +1747,7 @@ C
 
 选项的四个图形中，只有一个是由题干中的四个图形拼合（只能上、下、左、右平移）而成的，请把它找出来：
 
-![](assets-fenbi-401/6821c86faa16e371cb79cbb0ea6e5c1c76cef189abe54a1d2aac831a44265cb5.jpg)
+![](图片/assets-fenbi-401/6821c86faa16e371cb79cbb0ea6e5c1c76cef189abe54a1d2aac831a44265cb5.jpg)
 
 A. A
 
@@ -1769,7 +1769,7 @@ D
 
 故正确答案为D。
 
-![](assets-fenbi-401/55af7825edacc7339eba3334852c26828e3e92345b32b46c376b495925467930.png)
+![](图片/assets-fenbi-401/55af7825edacc7339eba3334852c26828e3e92345b32b46c376b495925467930.png)
 
 **来源**：2012年江苏省公务员录用考试《行测》题（C类）第52题
 
@@ -1779,7 +1779,7 @@ D
 
 选项的四个图形中，只有一个是由题干中的四个图形拼合（只能上、下、左、右平移）而成的，请把它找出来：
 
-![](assets-fenbi-401/0dc0232d9e512ee4cae0c9c25215d18c97fbf26a3d54e7c0b6206a02f11faab8.jpg)
+![](图片/assets-fenbi-401/0dc0232d9e512ee4cae0c9c25215d18c97fbf26a3d54e7c0b6206a02f11faab8.jpg)
 
 A. A
 
@@ -1801,7 +1801,7 @@ C
 
 故正确答案为C。
 
-![](assets-fenbi-401/03e6d709d218e79f60647958ce1176b87ee91d8109da73a47efae871d62f32be.jpg)
+![](图片/assets-fenbi-401/03e6d709d218e79f60647958ce1176b87ee91d8109da73a47efae871d62f32be.jpg)
 
 **来源**：2012年江苏省公务员录用考试《行测》题（C类）第53题
 
@@ -1811,7 +1811,7 @@ C
 
 选项的四个图形中，只有一个是由题干中的四个图形拼合（只能上、下、左、右平移）而成的，请把它找出来：
 
-![](assets-fenbi-401/2ecc6b5fe55f165bb95583524b99ec2052fd90160838ab1e5ff5ee5f85be4c31.png)
+![](图片/assets-fenbi-401/2ecc6b5fe55f165bb95583524b99ec2052fd90160838ab1e5ff5ee5f85be4c31.png)
 
 A. A
 
@@ -1831,7 +1831,7 @@ A
 
 题干中四个图形拼合在一起得到如下图形。
 
-![](assets-fenbi-401/453a0e6c45e2f59d16ecee68f830f559706f3455aa8312ce71aa511dee73dcde.jpg)
+![](图片/assets-fenbi-401/453a0e6c45e2f59d16ecee68f830f559706f3455aa8312ce71aa511dee73dcde.jpg)
 
 故正确答案为A。
 
@@ -2735,7 +2735,7 @@ D
 
 2010年江苏各种运输方式运输量统计
 
-![](assets-fenbi-401/cb191aaa8b54d34900ac79b0ee6d99a965881ec4f3039e97584a211b7e97d97b.png)
+![](图片/assets-fenbi-401/cb191aaa8b54d34900ac79b0ee6d99a965881ec4f3039e97584a211b7e97d97b.png)
 
 | 运输方式 | 货运周转量 绝对数（亿吨公里） | 货运周转量 比上年增长（%） | 货运量 绝对数（万吨） | 货运量 比上年增长（%） | 旅客周转量 绝对数（亿人公里） | 旅客周转量 比上年增长（%） | 客运量 绝对数（万人） | 客运量 比上年增长（%） |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -2886,7 +2886,7 @@ D
 
 2011年一季度我国建筑业产值为16096.4亿元，其中，建筑工程产值14220.0亿元，安装工程产值1405.2亿元，其他471.2亿元。华东六省一市相关数据见下表：
 
-![](assets-fenbi-401/9103afa6dcccfc543fd849762fba29802900007be7a107ba314f3eeab03436cf.png)
+![](图片/assets-fenbi-401/9103afa6dcccfc543fd849762fba29802900007be7a107ba314f3eeab03436cf.png)
 
 | 省（市） | 合计 | 建筑工程 | 安装工程 | 其他 |
 | --- | ---: | ---: | ---: | ---: |

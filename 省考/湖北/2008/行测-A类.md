@@ -1157,7 +1157,7 @@ B
 
 题干中数列符合以下多级数列规律：
 
-![](assets-fenbi-97/c6d584798709063074fb28637d15d2eacf866e3b5e463bd899157b9352b3f205.png)
+![](图片/assets-fenbi-97/c6d584798709063074fb28637d15d2eacf866e3b5e463bd899157b9352b3f205.png)
 
 故正确答案为B。
 
@@ -1185,7 +1185,7 @@ D
 
 **解析**
 
-![](assets-fenbi-97/c75d3c6b11b09850bb004956c132c359cacc4bfd33e4e6ce1b1d23250b8466c1.png)
+![](图片/assets-fenbi-97/c75d3c6b11b09850bb004956c132c359cacc4bfd33e4e6ce1b1d23250b8466c1.png)
 
 用后一项减去前一项，分别得到5、6、7、5、6，可见，所给数列中，相邻两项的差是以5、6、7为一个循环，则数列第七项减去第六项应该为7，38-31=7。
 
@@ -1217,7 +1217,7 @@ B
 
 题干中数列符合以下多级数列规律：
 
-![](assets-fenbi-97/9a537b53467abb3fb033a719fc8c866cc0b835c6258296572b388f03d72b5154.png)
+![](图片/assets-fenbi-97/9a537b53467abb3fb033a719fc8c866cc0b835c6258296572b388f03d72b5154.png)
 
 故正确答案为B。
 
@@ -1245,7 +1245,7 @@ C
 
 **解析**
 
-![](assets-fenbi-97/abe5983f97c1ac0b576dad48cf3198080c23765af83d147634437fcd8a72a200.png)
+![](图片/assets-fenbi-97/abe5983f97c1ac0b576dad48cf3198080c23765af83d147634437fcd8a72a200.png)
 
 故正确答案为C。
 
@@ -1275,7 +1275,7 @@ C
 
 题干中数列符合以下三级数列规律：
 
-![](assets-fenbi-97/9f7f1e08c9902688e483241c9e74164ab5b4d0e0bb93da81ac5d645813d93fd5.png)
+![](图片/assets-fenbi-97/9f7f1e08c9902688e483241c9e74164ab5b4d0e0bb93da81ac5d645813d93fd5.png)
 
 可见三级数列的分母为等比数列，往上递推可得正确答案为C。
 
@@ -1367,9 +1367,9 @@ A
 
 原数列为交叉数列。
 
-![](assets-fenbi-97/dd646bb34732d914d0e3878a494a19abf7af4bd55308b96281b474a3ffb563d7.png)
+![](图片/assets-fenbi-97/dd646bb34732d914d0e3878a494a19abf7af4bd55308b96281b474a3ffb563d7.png)
 
-![](assets-fenbi-97/99ed85f6e7e73dfbc1c88d60f592ae10db6d278ea3cd3cd9ed348685a01bda03.png)
+![](图片/assets-fenbi-97/99ed85f6e7e73dfbc1c88d60f592ae10db6d278ea3cd3cd9ed348685a01bda03.png)
 
 往上递推得答案为A。
 
@@ -1401,7 +1401,7 @@ D
 
 题干中数列符合以下多级数列规律：
 
-![](assets-fenbi-97/16bfd96900f9567eb6ea2087bfff2b891c5cc4a45d4a0021aa69a7751652103f.png)
+![](图片/assets-fenbi-97/16bfd96900f9567eb6ea2087bfff2b891c5cc4a45d4a0021aa69a7751652103f.png)
 
 故正确答案为D。
 
@@ -1753,7 +1753,7 @@ C
 
 **解析**
 
-![](assets-fenbi-97/7c011761e8416cabeca939bacb7b684d1775f5aeb66cdb738e3484781570557a.png)
+![](图片/assets-fenbi-97/7c011761e8416cabeca939bacb7b684d1775f5aeb66cdb738e3484781570557a.png)
 
 如上图所示，小鸟的飞行路径应为A-B-C-D-A，根据勾股定理知：DA = √(20^2 + 20^2 + 20^2) = 20√3。故小鸟的飞行总长AB + BC + CD + DA=20×3+20√3，易知最终计算值大于80且小于100。
 
@@ -1799,7 +1799,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-97/7b188faa017f62a9b168f9ab65d3e0d029b6b3123a4417b956e8881130dd4206.png)
+![](图片/assets-fenbi-97/7b188faa017f62a9b168f9ab65d3e0d029b6b3123a4417b956e8881130dd4206.png)
 
 A. A
 
@@ -1833,7 +1833,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-97/66841bbfd872f91163b0bf805ce058d53d447d69f232bc1ca07dc7a8a89180a2.png)
+![](图片/assets-fenbi-97/66841bbfd872f91163b0bf805ce058d53d447d69f232bc1ca07dc7a8a89180a2.png)
 
 A. A
 
@@ -1867,7 +1867,7 @@ D
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-97/9a069fd6993bf5337f209a12f2c85d0209ab255859f25d15f66503677e7956ea.jpg)
+![](图片/assets-fenbi-97/9a069fd6993bf5337f209a12f2c85d0209ab255859f25d15f66503677e7956ea.jpg)
 
 A. A
 
@@ -1901,7 +1901,7 @@ C
 
 从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-97/0751a8530a3a10bda058e654de4edf5d9c707de62310eef4ec47d27c1f638d75.png)
+![](图片/assets-fenbi-97/0751a8530a3a10bda058e654de4edf5d9c707de62310eef4ec47d27c1f638d75.png)
 
 A. A
 
@@ -1933,7 +1933,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-97/f3f6135df26ca43758dd8295e1a6cb56da81706edc8d6ac0e49fd9625835a0d9.png)
+![](图片/assets-fenbi-97/f3f6135df26ca43758dd8295e1a6cb56da81706edc8d6ac0e49fd9625835a0d9.png)
 
 A. A
 
@@ -1967,7 +1967,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-97/9f86d4703847f33aa98ab367f83c9ce3d190853867589089e2e2e15b969d4f59.png)
+![](图片/assets-fenbi-97/9f86d4703847f33aa98ab367f83c9ce3d190853867589089e2e2e15b969d4f59.png)
 
 A. A
 
@@ -1999,7 +1999,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-97/2cdece9db6d301f80df3dc3dd615a06c4e6655c5b5e8cbe5e62c0a4e7f01dc5d.png)
+![](图片/assets-fenbi-97/2cdece9db6d301f80df3dc3dd615a06c4e6655c5b5e8cbe5e62c0a4e7f01dc5d.png)
 
 A. A
 
@@ -2031,7 +2031,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-97/1efdecfffc1797f3ecd7b9826a96d33dcca0109560d3e97721d51e0f47187890.png)
+![](图片/assets-fenbi-97/1efdecfffc1797f3ecd7b9826a96d33dcca0109560d3e97721d51e0f47187890.png)
 
 A. A
 
@@ -2063,7 +2063,7 @@ C
 
 左边给定的是纸盒的外表面，下面哪一项能由它折叠而成？（  ）
 
-![](assets-fenbi-97/ead4e89b35bb2a9461c4d40a14c1328365c426357855f52afb15d098a31f6681.png)
+![](图片/assets-fenbi-97/ead4e89b35bb2a9461c4d40a14c1328365c426357855f52afb15d098a31f6681.png)
 
 A. A
 
@@ -2095,7 +2095,7 @@ B
 
 从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-97/66e29d4ee920960eab432151ef215edefcade30f384488e0610d48c2a0d78f3d.png)
+![](图片/assets-fenbi-97/66e29d4ee920960eab432151ef215edefcade30f384488e0610d48c2a0d78f3d.png)
 
 A. A
 
@@ -4345,7 +4345,7 @@ D
 
 2003年全球研发投入700强企业概况：
 
-![](assets-fenbi-97/cce06c347e43c911f6b0046da34dbce1daa355731247938d6885ea5d554551f9.png)
+![](图片/assets-fenbi-97/cce06c347e43c911f6b0046da34dbce1daa355731247938d6885ea5d554551f9.png)
 
 ### 第 121 题
 
@@ -4523,7 +4523,7 @@ B
 
 单位：元
 
-![](assets-fenbi-97/db0c9ee4dbda9e28d68b1d3af11d9a327be1ef1ed1b627b921910426ce445515.png)
+![](图片/assets-fenbi-97/db0c9ee4dbda9e28d68b1d3af11d9a327be1ef1ed1b627b921910426ce445515.png)
 
 | 年份 | 城市居民人均可支配 | 农村居民人均纯收入 | 城乡比率 |
 | --- | ---: | ---: | ---: |
@@ -4735,7 +4735,7 @@ D选项错误，1978-2003年，城乡居民收入比率明显呈非递增趋势�
 
 ## 材料 4
 
-![](assets-fenbi-97/ca9a1360cfc5a24957dbd72f31e9f25967e9a80827e9974f6b8a09bf82e37283.png)
+![](图片/assets-fenbi-97/ca9a1360cfc5a24957dbd72f31e9f25967e9a80827e9974f6b8a09bf82e37283.png)
 
 ### 第 131 题
 

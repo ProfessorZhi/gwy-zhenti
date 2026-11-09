@@ -181,7 +181,7 @@ D
 
 ### 第 6 题
 
-![](assets-fenbi-83/c9c0a3d04fdd84a8376a3c0bc36dec710d582a060eaa90d75e37d8cd7a11e81f.png)
+![](图片/assets-fenbi-83/c9c0a3d04fdd84a8376a3c0bc36dec710d582a060eaa90d75e37d8cd7a11e81f.png)
 
 A. 13
 
@@ -441,7 +441,7 @@ D
 
 因为圆面积S = πr^2 = 2π，所以圆的半径为√2，如下图所示，设圆内接长方形边为a，b，根据圆的性质有a^2 + b^2 = (2r)^2 = 8，2ab ≤ a^2 + b^2 = 8，则长方形面积ab≤4。
 
-![](assets-fenbi-83/ef18dd20e981ddb9b5bc12e4a8b0505d49c91dcbcc1835a30d5a50fcaf2f9687.png)
+![](图片/assets-fenbi-83/ef18dd20e981ddb9b5bc12e4a8b0505d49c91dcbcc1835a30d5a50fcaf2f9687.png)
 
 解析2：
 
@@ -1255,7 +1255,7 @@ D
 
 从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-83/2ef8eb26bcf712c5a59aa757f0ae012307a62c0801b71c4af2426b339013ad0a.png)
+![](图片/assets-fenbi-83/2ef8eb26bcf712c5a59aa757f0ae012307a62c0801b71c4af2426b339013ad0a.png)
 
 A. A
 
@@ -1287,7 +1287,7 @@ C
 
 ### 第 37 题
 
-从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：![](assets-fenbi-83/f0320046f8c5d2422efb52cf8a981342d67e66a43a4518257513c9cf2f283229.png)
+从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：![](图片/assets-fenbi-83/f0320046f8c5d2422efb52cf8a981342d67e66a43a4518257513c9cf2f283229.png)
 
 A. A
 
@@ -1319,7 +1319,7 @@ B
 
 从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-83/1a9d054450680feb17a95f7c9cf0ae53fd743c2ef1cb853ed925e67a6894ae0a.png)
+![](图片/assets-fenbi-83/1a9d054450680feb17a95f7c9cf0ae53fd743c2ef1cb853ed925e67a6894ae0a.png)
 
 A. A
 
@@ -1351,7 +1351,7 @@ C
 
 从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-83/c1b9ace3d0a5d56dc4ede59542336cdac84640f0af20ee1430ddce86eb0a80a8.png)
+![](图片/assets-fenbi-83/c1b9ace3d0a5d56dc4ede59542336cdac84640f0af20ee1430ddce86eb0a80a8.png)
 
 A. A
 
@@ -1383,7 +1383,7 @@ C
 
 从所给四个选项中，选择最合适的一个，使之呈现一定的规律性：
 
-![](assets-fenbi-83/111573c1d000b959c0e46e3ec693f07bca9450c7bff529015582206b78bddd40.png)
+![](图片/assets-fenbi-83/111573c1d000b959c0e46e3ec693f07bca9450c7bff529015582206b78bddd40.png)
 
 A. A
 
@@ -1417,7 +1417,7 @@ A
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-83/0dc0efea1fc0af0392d47d7bc8146179fdb360a0f7948fd6f314e7eb5694ecc1.png)
+![](图片/assets-fenbi-83/0dc0efea1fc0af0392d47d7bc8146179fdb360a0f7948fd6f314e7eb5694ecc1.png)
 
 A. A
 
@@ -1451,7 +1451,7 @@ D
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-83/1e5fa194961ba1f88d57b2544a1900faf24e14ee27b1594f00eb718ec656f217.png)
+![](图片/assets-fenbi-83/1e5fa194961ba1f88d57b2544a1900faf24e14ee27b1594f00eb718ec656f217.png)
 
 A. A
 
@@ -1485,7 +1485,7 @@ B
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-83/a386c16096dae479428bb301531dd229599f4907f5d272bc7c5899c4212b91e8.png)
+![](图片/assets-fenbi-83/a386c16096dae479428bb301531dd229599f4907f5d272bc7c5899c4212b91e8.png)
 
 A. A
 
@@ -1519,7 +1519,7 @@ C
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-83/0151f029a747d3aab73e76ac19b562b72f03a42cd999fba2d9a3ad19fb0b65c1.png)
+![](图片/assets-fenbi-83/0151f029a747d3aab73e76ac19b562b72f03a42cd999fba2d9a3ad19fb0b65c1.png)
 
 A. A
 
@@ -1553,7 +1553,7 @@ D
 
 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-83/c26af945770e788f19fd7e93d23ab2cd404fa0b94f3e0d2b7ca517b0d364c490.png)
+![](图片/assets-fenbi-83/c26af945770e788f19fd7e93d23ab2cd404fa0b94f3e0d2b7ca517b0d364c490.png)
 
 A. A
 
@@ -3171,7 +3171,7 @@ D
 
 ## 材料 2
 
-![](assets-fenbi-83/4e36044bf56701a6d91e4fabe00e24319623e9bf7827d18e557ff8b196e88fb8.png)
+![](图片/assets-fenbi-83/4e36044bf56701a6d91e4fabe00e24319623e9bf7827d18e557ff8b196e88fb8.png)
 
 | 年份 | 诊疗人次（亿次） 合计 | 诊疗人次（亿次） 医院 | 诊疗人次（亿次） 卫生院 | 入院人数（万人） 合计 | 入院人数（万人） 医院 | 入院人数（万人） 卫生院 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -3342,7 +3342,7 @@ D项：从材料中无法推出，说法错误，排除。
 
 ## 材料 3
 
-![](assets-fenbi-83/e135e871a466f5f75450c69c63093042f5a49a23118e5333ac19faecafdcd394.png)
+![](图片/assets-fenbi-83/e135e871a466f5f75450c69c63093042f5a49a23118e5333ac19faecafdcd394.png)
 
 | 年份 | 入境旅游人数（单位：万人次） 总计 | 入境旅游人数（单位：万人次） 外国人 | 入境旅游人数（单位：万人次） 港澳台同胞 | 国际旅游（外汇）收入 旅游（外汇）收入（亿美元） | 国际旅游（外汇）收入 旅游（外汇）收入世界排名 |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -3502,7 +3502,7 @@ B
 
 ## 材料 4
 
-![](assets-fenbi-83/b6a145e64f0fec210e63c563399812dfb3eac1f7c50857f6de29eeafa50ab76b.png)
+![](图片/assets-fenbi-83/b6a145e64f0fec210e63c563399812dfb3eac1f7c50857f6de29eeafa50ab76b.png)
 
 ### 第 96 题
 

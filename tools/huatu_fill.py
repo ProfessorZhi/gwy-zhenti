@@ -9,7 +9,7 @@
     1. 对齐：本库已有题与华图题逐题比对，求整卷偏移（华图题号 − 本库题号）；「卷级锚点」= 按该偏移对上的已有题占比，须 ≥ 0.8。
     2. 定位：每道缺题取前后各 2 道已对齐的已有题推算华图题号（邻题夹逼），至少 3 票一致且前后两侧都有支持才补；
        卷尾缺题（其后已无题）要求前侧 2 题一致，且华图总题量与本库对齐到最后一题。
-    3. 写入（--write）：替换题目占位与其所在题组的材料占位；图片复制到 assets-huatu-<paperId>/；
+    3. 写入（--write）：替换题目占位与其所在题组的材料占位；图片复制到 图片/assets-huatu-<paperId>/；
        更新文件头「来源清单」「校验状态」与 catalog/manifest.jsonl。
     4. 校验：题号不变；除被补题目与材料外，其余内容逐字节不变；引用图片均存在。
 
@@ -351,7 +351,7 @@ def fill_option_gap(paper, cache, text, meta, target, write, root, reviewed_plan
         report['fills'] = []
         report['skipped'] = [{'q': target, 'reason': '图形选项缺共享图'}]
         return report
-    prefix = f'assets-huatu-{meta["paperId"]}'
+    prefix = f'图片/assets-huatu-{meta["paperId"]}'
     image_map, copies = {}, []
     fragments = [figure, q.get('analysis_html', '')] + [o['html'] for o in source_opts]
     needed = {html.unescape(src) for fragment in fragments for src in re.findall(
@@ -459,7 +459,7 @@ def fill(paper, cache, write=False, root=ROOT, option_q=None, reviewed_plan=None
     if (not write and not reviewed_plan) or not plan:
         report['written'] = False
         return report
-    prefix = f'assets-huatu-{meta["paperId"]}'
+    prefix = f'图片/assets-huatu-{meta["paperId"]}'
     image_map, copies = {}, []
     needed = set()
     if reviewed_plan:

@@ -935,7 +935,7 @@ B、C、D均未抓住主体。
 
 如图所示，在已接地的电路上，有甲、乙、丙三个可为通路或断路的接点。若人站在地上，而手碰触到金属外壳形成通路，则当此三个接点为下列哪种情况时，此人会有触电危险：
 
-![](assets-fenbi-405/48fb0257f7be48f131b2fa8f96831a598e593a6f48db2f26c9a0d25709c28747.png)
+![](图片/assets-fenbi-405/48fb0257f7be48f131b2fa8f96831a598e593a6f48db2f26c9a0d25709c28747.png)
 
 A. 接点甲断路，接点乙通路，接点丙断路
 
@@ -965,7 +965,7 @@ A
 
 某人准备了两杯等量的水及一些块状冰糖与白糖粉末（两者成分均为蔗糖），做溶解速率与溶解度的实验。在25℃时，他将相同质量的冰糖与白糖粉末分别加入两个杯子中，并以相同的速率不断搅拌，最后两个杯子中均有未溶解的糖。则下列糖的质量百分比溶度与搅拌时间的关系图，正确的是：
 
-![](assets-fenbi-405/7d3a87401c5000e84a1dda2e3d21ffc945b3d1eb9d3b8bea750e448cfcbd2a1f.jpg)
+![](图片/assets-fenbi-405/7d3a87401c5000e84a1dda2e3d21ffc945b3d1eb9d3b8bea750e448cfcbd2a1f.jpg)
 
 A. A
 
@@ -995,7 +995,7 @@ D
 
 两反射镜面I、II成5度角放置，光线入射镜面I的入射角为30度，然后在两个镜面中来回反射，则光线第一次从镜面I上面重新反射出来的出射角为：
 
-![](assets-fenbi-405/a62b3064a21ee0cf3bfb6dc061ecbc85dde2a39b6ff4114daaaac492edfc09d0.png)
+![](图片/assets-fenbi-405/a62b3064a21ee0cf3bfb6dc061ecbc85dde2a39b6ff4114daaaac492edfc09d0.png)
 
 A. 30度
 
@@ -1013,7 +1013,7 @@ B
 
 **解析**
 
-![](assets-fenbi-405/3272f63fd5d68e27035cb7b30161f302e5df5820f37e0927228cc213d76c0e5f.png)
+![](图片/assets-fenbi-405/3272f63fd5d68e27035cb7b30161f302e5df5820f37e0927228cc213d76c0e5f.png)
 
 画图分析，根据入射角等于出射角，可推算出光线第一次从镜面I上面重新反射后出射角为40度。
 
@@ -1027,7 +1027,7 @@ B
 
 如图所示，ABC三个实心正方体分别放在水平地面上，他们对水平地面的压强相等。若沿水平方向分别在ABC三个实心正方体上部切去厚度相等的部分，则三个正方体剩余部分对水平地面压强大小的关系是：
 
-![](assets-fenbi-405/6b969e2c4f7f0bf59c7be7056cbfc1c286e1deca8ac43d3e3d79084a3b50bffc.png)
+![](图片/assets-fenbi-405/6b969e2c4f7f0bf59c7be7056cbfc1c286e1deca8ac43d3e3d79084a3b50bffc.png)
 
 A. P_A ＜ P_B ＜ P_C
 
@@ -1059,7 +1059,7 @@ B
 
 下面是一扇防盗门的四种受力图，F1、F2为作用在上下两个铰链上的力，G为重力。防盗门的实际受力情况最接近为：
 
-![](assets-fenbi-405/fad2842774d38dc036ef6c57c6bf5c8903e43a9138083842b22ccad0cc56e53b.jpg)
+![](图片/assets-fenbi-405/fad2842774d38dc036ef6c57c6bf5c8903e43a9138083842b22ccad0cc56e53b.jpg)
 
 A. A
 
@@ -1287,7 +1287,7 @@ C项中的桃子符合“果实与动物的出产物”、“与原物分离前�
 
 下列选项中，符合所给图形的变化规律的是：
 
-![](assets-fenbi-405/752887ec651d43fd13030c74447894b819b850c1ce7801e37db45ff72031b9c3.png)
+![](图片/assets-fenbi-405/752887ec651d43fd13030c74447894b819b850c1ce7801e37db45ff72031b9c3.png)
 
 A. A
 
@@ -1319,7 +1319,7 @@ C
 
 下列选项中不能折成原图的是：
 
-![](assets-fenbi-405/be4cc8ce0b019b57998dbf4c423159d5bed2b1bdca3e59a779108786a70fda0f.jpg)
+![](图片/assets-fenbi-405/be4cc8ce0b019b57998dbf4c423159d5bed2b1bdca3e59a779108786a70fda0f.jpg)
 
 A. A
 
@@ -1339,7 +1339,7 @@ C
 
 本题考查六面体的空间重构能力。如下图所示，可用画边法解题，以菱形面和圆形面的公共边（即下图绿线）为起点，分别对题干和选项进行顺时针画边。
 
-![](assets-fenbi-405/13d2b5ba6ce91a3bfbbd9cb12d914075fbb6fc0478473dd2e65a95dd75e4ef5d.png)
+![](图片/assets-fenbi-405/13d2b5ba6ce91a3bfbbd9cb12d914075fbb6fc0478473dd2e65a95dd75e4ef5d.png)
 
 A项：与题干对应面一致，排除；
 
@@ -1361,7 +1361,7 @@ D项：与题干对应面一致，排除。
 
 下列选项中，符合所给图形变化规律的是：
 
-![](assets-fenbi-405/b76509884740e88ac00532a233b145745f36c91cbd5d56de78dabc4f0f120604.jpg)
+![](图片/assets-fenbi-405/b76509884740e88ac00532a233b145745f36c91cbd5d56de78dabc4f0f120604.jpg)
 
 A. A
 
@@ -1393,7 +1393,7 @@ B
 
 请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性：
 
-![](assets-fenbi-405/754e8c997a7802aca45b81664cdf74ace189ea1336e53cb3bce07ee615cad424.jpg)
+![](图片/assets-fenbi-405/754e8c997a7802aca45b81664cdf74ace189ea1336e53cb3bce07ee615cad424.jpg)
 
 A. A
 
@@ -1425,7 +1425,7 @@ C
 
 下列选项中，符合所给图形的变化规律的是：
 
-![](assets-fenbi-405/4b174d98a6e4ee30038d74ab15df6a8ca10fccf9d568a0f461b7431af436eab1.jpg)
+![](图片/assets-fenbi-405/4b174d98a6e4ee30038d74ab15df6a8ca10fccf9d568a0f461b7431af436eab1.jpg)
 
 A. A
 
@@ -1459,7 +1459,7 @@ B
 
 左边图形由四个部分组成，各部分通过平面上的变化可以组成新图，下列选项中，不是由这四个部分组成的是：
 
-![](assets-fenbi-405/026a120f70483a07dfc73689f704ab105e32dcecfc4cea359d8c82eeddb63db0.jpg)
+![](图片/assets-fenbi-405/026a120f70483a07dfc73689f704ab105e32dcecfc4cea359d8c82eeddb63db0.jpg)
 
 A. A
 
@@ -1491,7 +1491,7 @@ D
 
 符合下列所给图形变化规律的是：
 
-![](assets-fenbi-405/70faedb3974e8ed150c7777d7b447e44eeee76d71070ef0f7e71b3ba9ebc681e.png)
+![](图片/assets-fenbi-405/70faedb3974e8ed150c7777d7b447e44eeee76d71070ef0f7e71b3ba9ebc681e.png)
 
 A. A
 
@@ -1525,7 +1525,7 @@ A
 
 下列选项中，符合所给图形变化规律的是：
 
-![](assets-fenbi-405/53b66f039c533b9c17ca24220fd0db75cabc76a4c08168bc9698fa6971f5745e.jpg)
+![](图片/assets-fenbi-405/53b66f039c533b9c17ca24220fd0db75cabc76a4c08168bc9698fa6971f5745e.jpg)
 
 A. A
 
@@ -1559,7 +1559,7 @@ C
 
 下列选项中，符合所给图形变化规律的是：
 
-![](assets-fenbi-405/34dbaa8719a41a0814a18e41a285e1b1681d36bf4922c3cf0a754b4d45363597.jpg)
+![](图片/assets-fenbi-405/34dbaa8719a41a0814a18e41a285e1b1681d36bf4922c3cf0a754b4d45363597.jpg)
 
 A. A
 
@@ -1593,7 +1593,7 @@ B
 
 下列选项中，符合所给图形的变化规律的是：
 
-![](assets-fenbi-405/427988b80043490c12a3f1c76a7fc93e2c1864b61bf1405b5135e2a75bde0c75.png)
+![](图片/assets-fenbi-405/427988b80043490c12a3f1c76a7fc93e2c1864b61bf1405b5135e2a75bde0c75.png)
 
 A. A
 
@@ -2157,7 +2157,7 @@ B
 
 下列图形均是由正方形与圆形所构成的，图形中阴影部分的面积最大的是：
 
-![](assets-fenbi-405/22633d13e5060da34dd4ec87a61feda209e195ea752d0b872165cb2f221f80b3.png)
+![](图片/assets-fenbi-405/22633d13e5060da34dd4ec87a61feda209e195ea752d0b872165cb2f221f80b3.png)
 
 A. A最大
 
@@ -2257,7 +2257,7 @@ B
 
 如图，是一个工厂内的道路平面图，每天下班后，保卫科长都要从p点处开始不要重复的沿道路检查一圈，他每分钟走70米。若中间不停留，则走一圈需要：
 
-![](assets-fenbi-405/d4cfc454e24fae563cc4641190c95892c119ae57b624573de019709e40aff539.png)
+![](图片/assets-fenbi-405/d4cfc454e24fae563cc4641190c95892c119ae57b624573de019709e40aff539.png)
 
 A. 24分钟
 
@@ -2505,7 +2505,7 @@ C
 
 ## 材料 4
 
-![](assets-fenbi-405/d712cdab2bbbf94cae20669fd103dd7cdb3b1aa9e54c25820764fd45dea95b1f.png)
+![](图片/assets-fenbi-405/d712cdab2bbbf94cae20669fd103dd7cdb3b1aa9e54c25820764fd45dea95b1f.png)
 
 ### 第 70 题
 
@@ -2645,9 +2645,9 @@ D项：定位表格第二列和最后一列，面积为90平方米左右的住�
 
 图：成长型基金和价值型基金某年收益的百分比分布
 
-![](assets-fenbi-405/0c46a95ef443ff1f6990bd4df14178e63a8e21982eeab2e1765005f31781f6ee.png)
+![](图片/assets-fenbi-405/0c46a95ef443ff1f6990bd4df14178e63a8e21982eeab2e1765005f31781f6ee.png)
 
-![](assets-fenbi-405/f71c1f76d241c22e64bdb695ed001cf4232e25b3f82da5762266414a8307abb6.png)
+![](图片/assets-fenbi-405/f71c1f76d241c22e64bdb695ed001cf4232e25b3f82da5762266414a8307abb6.png)
 
 ### 第 74 题
 
@@ -2723,7 +2723,7 @@ D项：定位折线图，价值型基金的年收益率总体要高于成长型�
 
 ## 材料 6
 
-![](assets-fenbi-405/7c99f820b8ba7a0419572f13f36b8f1f5d4d79434486a47b89ce63c0a3a30c95.png)
+![](图片/assets-fenbi-405/7c99f820b8ba7a0419572f13f36b8f1f5d4d79434486a47b89ce63c0a3a30c95.png)
 
 |  | 2005年 | 2006年 | 2007年 | 2008年 | 2009年 | 2010年 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -2807,7 +2807,7 @@ D
 
 下图表示2006、2008、2010三年金砖国家GDP情况，5个顶点1、2、3、4、5代表的国家依次是：
 
-![](assets-fenbi-405/7b48cfb90bb10b133a5d9fc723b9924fea55f29a92219b638d964ba2b56b8645.png)
+![](图片/assets-fenbi-405/7b48cfb90bb10b133a5d9fc723b9924fea55f29a92219b638d964ba2b56b8645.png)
 
 A. 中、南、俄、印、巴
 
@@ -2869,7 +2869,7 @@ D
 
 下图为2010年金砖国家GDP的比重构成图，环形部分2与5对应的国家是：
 
-![](assets-fenbi-405/947a440848ed055cd3bc0bd5a1a6a391788bc925963dd8203af619f7b9f645b3.png)
+![](图片/assets-fenbi-405/947a440848ed055cd3bc0bd5a1a6a391788bc925963dd8203af619f7b9f645b3.png)
 
 A. 俄罗斯、巴西
 

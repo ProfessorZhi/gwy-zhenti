@@ -14,13 +14,13 @@ async function fixture(t, { old = false, rights }) {
   t.after(() => fs.rm(root, { recursive: true, force: true }));
   const repo = path.join(root, 'repo'), candidateRoot = path.join(root, 'candidates'), cand = path.join(candidateRoot, 'p1');
   await fs.mkdir(path.join(repo, 'catalog'), { recursive: true });
-  await fs.mkdir(path.join(cand, 'assets-fenbi-123'), { recursive: true });
+  await fs.mkdir(path.join(cand, '图片', 'assets-fenbi-123'), { recursive: true });
   execFileSync('git', ['init', '-q', '-b', 'integ', repo]);
   await fs.writeFile(path.join(repo, 'catalog/manifest.jsonl'), '');
   const rel = '省考/浙江/2026/行测-C类.md', oldMd = '旧版\n';
   if (old) { await fs.mkdir(path.dirname(path.join(repo, rel)), { recursive: true }); await fs.writeFile(path.join(repo, rel), oldMd); }
-  const md = '# 合成卷\n\n## 题目\n\n### 第 1 题\n\n题干。\n\n![图](assets-fenbi-123/q.png)\n';
-  await fs.writeFile(path.join(cand, 'assets-fenbi-123/q.png'), 'img');
+  const md = '# 合成卷\n\n## 题目\n\n### 第 1 题\n\n题干。\n\n![图](图片/assets-fenbi-123/q.png)\n';
+  await fs.writeFile(path.join(cand, '图片/assets-fenbi-123/q.png'), 'img');
   await fs.writeFile(path.join(cand, 'paper.md'), md);
   await fs.writeFile(path.join(cand, 'receipt.json'), JSON.stringify({ sourceId: '123', path: rel, area: '浙江', year: 2026,
     subject: 'xingce', variant: 'C类', grade: 'A', counts: { sourceQuestions: 1 }, answerNumbers: [],

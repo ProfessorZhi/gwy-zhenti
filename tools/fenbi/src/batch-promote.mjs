@@ -61,7 +61,7 @@ function validateReceipt(receipt,md){
 }
 
 async function candidateImages(candidate,receipt,md){
-  const prefix='assets-fenbi-'+receipt.sourceId+'/';
+  const prefix='图片/assets-fenbi-'+receipt.sourceId+'/';
   const out=new Map();
   for(const match of md.toString('utf8').matchAll(/!\[[^\]]*\]\(([^)\s]+)\)|<img\b[^>]*\bsrc=["']([^"']+)["']/gmu)){
     const ref=match[1]||match[2];

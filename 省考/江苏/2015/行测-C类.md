@@ -1105,7 +1105,7 @@ B
 
 如图，在△ABC中，已知BD＝2DC，EC＝2AE，则△BFD与△AEF面积的比值为（    ）。
 
-![](assets-fenbi-74396/8f69947899fe92c5f9fb9935f04b22216cc06bb6452ba3b13d2717b1727a0e36.png)
+![](图片/assets-fenbi-74396/8f69947899fe92c5f9fb9935f04b22216cc06bb6452ba3b13d2717b1727a0e36.png)
 
 A. 4
 
@@ -1447,15 +1447,15 @@ C
 
 ### 第 44 题
 
-![](assets-fenbi-74396/f2dc0ba1a83fc549a0ebaaaded156632e3116bc3360558ce71e24012e138da72.png)
+![](图片/assets-fenbi-74396/f2dc0ba1a83fc549a0ebaaaded156632e3116bc3360558ce71e24012e138da72.png)
 
-A. ![](assets-fenbi-74396/7e0b75abe78e2c46385e6ec3430291ec8e95eaa6d82dd6bf932694b128daccd6.png)
+A. ![](图片/assets-fenbi-74396/7e0b75abe78e2c46385e6ec3430291ec8e95eaa6d82dd6bf932694b128daccd6.png)
 
-B. ![](assets-fenbi-74396/2a60f83ea09ddcd3ed1e191cdfda4e9596bf30937209b9323d3cf6f3da3dd77c.png)
+B. ![](图片/assets-fenbi-74396/2a60f83ea09ddcd3ed1e191cdfda4e9596bf30937209b9323d3cf6f3da3dd77c.png)
 
-C. ![](assets-fenbi-74396/a7f6a06aac98485efce508721c1231154bb63708cb1a90636224a6cdf16fae9e.png)
+C. ![](图片/assets-fenbi-74396/a7f6a06aac98485efce508721c1231154bb63708cb1a90636224a6cdf16fae9e.png)
 
-D. ![](assets-fenbi-74396/c44039de9d7b33ec09548a63e0f6c3e9988ffb978e3c20c03b547361d8e6326d.png)
+D. ![](图片/assets-fenbi-74396/c44039de9d7b33ec09548a63e0f6c3e9988ffb978e3c20c03b547361d8e6326d.png)
 
 <details><summary>第 44 题 · 答案与解析</summary>
 
@@ -1477,15 +1477,15 @@ A
 
 ### 第 45 题
 
-![](assets-fenbi-74396/8f90a6e57ce72a22ffa1442df96c776bdb6a020ca01d7402be27b976f251974e.png)
+![](图片/assets-fenbi-74396/8f90a6e57ce72a22ffa1442df96c776bdb6a020ca01d7402be27b976f251974e.png)
 
-A. ![](assets-fenbi-74396/658157be502e021597fd570e58a1e41edb5eecddb8e53c43f56d9a0935207ff1.png)
+A. ![](图片/assets-fenbi-74396/658157be502e021597fd570e58a1e41edb5eecddb8e53c43f56d9a0935207ff1.png)
 
-B. ![](assets-fenbi-74396/93bdfa7a662a9c6cbc71336c6cd2cfe1bd9913261cbf880df8266075035d3181.png)
+B. ![](图片/assets-fenbi-74396/93bdfa7a662a9c6cbc71336c6cd2cfe1bd9913261cbf880df8266075035d3181.png)
 
-C. ![](assets-fenbi-74396/be845f0edf119f5c8980860ada8fb840c70e35c535861abb8aa6d295d9c7253a.png)
+C. ![](图片/assets-fenbi-74396/be845f0edf119f5c8980860ada8fb840c70e35c535861abb8aa6d295d9c7253a.png)
 
-D. ![](assets-fenbi-74396/74a152caf5aefabfb222b09ac0e3f790240cfb63e2a9e62ae9dde237c0ba3864.png)
+D. ![](图片/assets-fenbi-74396/74a152caf5aefabfb222b09ac0e3f790240cfb63e2a9e62ae9dde237c0ba3864.png)
 
 <details><summary>第 45 题 · 答案与解析</summary>
 
@@ -1509,7 +1509,7 @@ A
 
 请从所给的四个选项中，选择唯一的一个答案，使之呈现一定的规律性：
 
-![](assets-fenbi-74396/3c0f21cac5729ec76804e536b987760ba1c21fa1d52b90b526628a1b70fde51b.png)
+![](图片/assets-fenbi-74396/3c0f21cac5729ec76804e536b987760ba1c21fa1d52b90b526628a1b70fde51b.png)
 
 A. A
 
@@ -1543,7 +1543,7 @@ D
 
 请从所给的四个选项中，选择唯一的一个答案，使之呈现一定的规律性：
 
-![](assets-fenbi-74396/7f263c69a167cba44d3e7aac5a84c79ed631c85415f508a89f30c3db3e88e73b.png)
+![](图片/assets-fenbi-74396/7f263c69a167cba44d3e7aac5a84c79ed631c85415f508a89f30c3db3e88e73b.png)
 
 A. A
 
@@ -1577,7 +1577,7 @@ B
 
 请从四个选项中选出正确的一项，其特征或规律与题干给出的一串符号的特征或规律最为相似。
 
-![](assets-fenbi-74396/1c69c379185523848569a61645153028f2d0dec6b366e3741680f8fcf70c1150.png)
+![](图片/assets-fenbi-74396/1c69c379185523848569a61645153028f2d0dec6b366e3741680f8fcf70c1150.png)
 
 A. A
 
@@ -1609,7 +1609,7 @@ C
 
 请从四个选项中选出正确的一项，其特征或规律与题干给出的一串符号的特征或规律最为相似。
 
-![](assets-fenbi-74396/8c64de60be726b73e00bdb32ed4a22ac015e646a21109022c2e51f82793a3864.png)
+![](图片/assets-fenbi-74396/8c64de60be726b73e00bdb32ed4a22ac015e646a21109022c2e51f82793a3864.png)
 
 A. A
 
@@ -1643,7 +1643,7 @@ D
 
 右边四个图形中，只有一个是由左边的四个图形拼合（只能通过上、下、左、右平移）而成的，请把它找出来。
 
-![](assets-fenbi-74396/61dbc10dcd59efed505561cabf139fd98dc00a69e122249cb4716f0580991ab9.png)
+![](图片/assets-fenbi-74396/61dbc10dcd59efed505561cabf139fd98dc00a69e122249cb4716f0580991ab9.png)
 
 A. A
 
@@ -1663,7 +1663,7 @@ B
 
 本题考查的是平面拼合，可以采用平行且等长相消的方式。消去平行且等长的线段（相同颜色标注）后进行组合即可得到轮廓图，即为B项。平行且等长相消的方式如下图所示：
 
-![](assets-fenbi-74396/538791f3b884ed12ef9a192e53fce73bd66154815156f95d2800a71835866456.png)
+![](图片/assets-fenbi-74396/538791f3b884ed12ef9a192e53fce73bd66154815156f95d2800a71835866456.png)
 
 故正确答案为B。
 
@@ -1675,7 +1675,7 @@ B
 
 选项的四个图形中，只有一个是由下边的四个图形拼合（只能通过上、下、左、右平移）而成的，请把它找出来。
 
-![](assets-fenbi-74396/530fc38d196f3cbda47a8436b2170b70d56cd29bdacf89c9036f9ea88f83d2d3.png)
+![](图片/assets-fenbi-74396/530fc38d196f3cbda47a8436b2170b70d56cd29bdacf89c9036f9ea88f83d2d3.png)
 
 A. A
 
@@ -1695,7 +1695,7 @@ D
 
 本题考查的是平面拼合，可以采用平行且等长相消的方式。消去平行且等长的线段（相同颜色标注）后进行组合即可得到轮廓图，即为D项。平行且等长相消的方式如下图所示：
 
-![](assets-fenbi-74396/bd20077d1c02dc677d5b3c44dd46c1549673da63603ca7d1c6c7c362e0335d13.png)
+![](图片/assets-fenbi-74396/bd20077d1c02dc677d5b3c44dd46c1549673da63603ca7d1c6c7c362e0335d13.png)
 
 故正确答案为D。
 
@@ -1707,7 +1707,7 @@ D
 
 右边四个图形中，只有一个是由左边的四个图形拼合（只能通过上、下、左、右平移）而成的，请把它找出来。
 
-![](assets-fenbi-74396/9de2ce4845e88a24e431a17bd267314e2facbb6e13b3dcb1071e710dfa0f3d3f.png)
+![](图片/assets-fenbi-74396/9de2ce4845e88a24e431a17bd267314e2facbb6e13b3dcb1071e710dfa0f3d3f.png)
 
 A. A
 
@@ -1725,7 +1725,7 @@ D
 
 **解析**
 
-左边四个图可以按照如下方式进行拼合：![](assets-fenbi-74396/0415a3afb6c615427a6909e98830b1fa905f66abc8d0b5f21ba4141add082927.png)
+左边四个图可以按照如下方式进行拼合：![](图片/assets-fenbi-74396/0415a3afb6c615427a6909e98830b1fa905f66abc8d0b5f21ba4141add082927.png)
 
 故正确答案为D。
 
@@ -1737,7 +1737,7 @@ D
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来。
 
-![](assets-fenbi-74396/dd423afaeaf39dbfa35bfe2cf80090f0304e97c024f906b1f18b2b971f4821f8.png)
+![](图片/assets-fenbi-74396/dd423afaeaf39dbfa35bfe2cf80090f0304e97c024f906b1f18b2b971f4821f8.png)
 
 A. A
 
@@ -1759,7 +1759,7 @@ A
 
 将平面展开图中的六面体进行标面，即：
 
-![](assets-fenbi-74396/64aaef89d71146f3b228e43b72fab878fa38b37311c7edb4ab87e22e0b20b378.png)
+![](图片/assets-fenbi-74396/64aaef89d71146f3b228e43b72fab878fa38b37311c7edb4ab87e22e0b20b378.png)
 
 三组相对面为：①③；②④；⑤⑥，可知三个相同阴影面或者三个相同点状面中必然存在一组相对面，根据相对面不相邻，排除B、C两项。
 
@@ -1777,7 +1777,7 @@ A
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成?请把它找出来。
 
-![](assets-fenbi-74396/5ace974c9a589751ea39791906d8a3a78fe5f12ab99be6b413c99c8d00eef5c2.png)
+![](图片/assets-fenbi-74396/5ace974c9a589751ea39791906d8a3a78fe5f12ab99be6b413c99c8d00eef5c2.png)
 
 A. A
 
@@ -1797,7 +1797,7 @@ A
 
 如图所示：
 
-![](assets-fenbi-74396/ef4a557d6b4e44798c8cc76c226ae5ecd5dee0a96603391378305455353d1664.png)
+![](图片/assets-fenbi-74396/ef4a557d6b4e44798c8cc76c226ae5ecd5dee0a96603391378305455353d1664.png)
 
 ②、④为相对面，③、⑥为相对面，①、⑤为相对面，即三条虚线和三条实线分别为相对面。
 
@@ -1817,7 +1817,7 @@ A项：由于3条虚线交于一点，故底面应为虚线，而虚线的相对
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来。
 
-![](assets-fenbi-74396/4cfef50fa905663cfb0d1a582d10fb97b38105cf37e5841cf3ea8469a9dc9285.png)
+![](图片/assets-fenbi-74396/4cfef50fa905663cfb0d1a582d10fb97b38105cf37e5841cf3ea8469a9dc9285.png)
 
 A. A
 
@@ -1839,7 +1839,7 @@ D
 
 在平面展开图中标示出所有面，即：
 
-![](assets-fenbi-74396/0e6d15a469f856c49d950767499e760dccdd3016e87379eefd1f1aea9590c65a.jpg)
+![](图片/assets-fenbi-74396/0e6d15a469f856c49d950767499e760dccdd3016e87379eefd1f1aea9590c65a.jpg)
 
 观察平面展开图，由图可知，面①面④为相对面，面③面⑤为相对面，面②面⑥为相对面。
 
@@ -2149,7 +2149,7 @@ B
 
 根据已经给定的条件，可以推出矩阵中①②③④方格中依次填入的汉字是（    ）。
 
-         ![](assets-fenbi-74396/8be47e027ff3f183f9b0c54515d9337e6eef0387c80c975f92413c3756665a57.png)
+         ![](图片/assets-fenbi-74396/8be47e027ff3f183f9b0c54515d9337e6eef0387c80c975f92413c3756665a57.png)
 
 A. 竹梅松菊
 
@@ -2221,7 +2221,7 @@ D
 
 “文化”和“教育”安排在第四天，结合（3）“环境”和“教育”同一天，可知第四天为：文化、教育、环境；根据（2）可知“社会”在第二天。列表如下：
 
-![](assets-fenbi-74396/158233973d91b4d6dbbe8436f2a7884266b61762b9cc5d82e64456b92ca83bac.png)
+![](图片/assets-fenbi-74396/158233973d91b4d6dbbe8436f2a7884266b61762b9cc5d82e64456b92ca83bac.png)
 
 | 第一天 | 第二天 | 第三天 | 第四天 |
 | --- | --- | --- | --- |
@@ -2265,7 +2265,7 @@ D
 
 “环境”在第三天，结合（3）“环境”和“教育”同一天，可知第三天为：教育、环境；根据（2）可知“社会”在第二天。列表如下：
 
-![](assets-fenbi-74396/97e90f9fea069c234c03f13d2175a6c4212866500ea3e84ed021b95809fd4b2f.png)
+![](图片/assets-fenbi-74396/97e90f9fea069c234c03f13d2175a6c4212866500ea3e84ed021b95809fd4b2f.png)
 
 此时，还剩“经济”“文化”“政法”“交通”，根据（4）“社会”在“经济”专题之后，可知“经济”只能在第一天或者第二天，不可能在第三天或第四天；根据（5）和（4）“文化”在“环境”之前，在“政法”之后并且在“社会”之后，可知“文化”可能在第二天或第三天，“政法”可能在第一天或第二天或第三天，不可能在第四天；根据以上信息，可知“经济”“文化”“政法”都不可能在第四天，所以只能是“交通”在第四天。
 
@@ -2281,13 +2281,13 @@ D
 
 下列建筑属于水榭的是（  ）。
 
-A. ![](assets-fenbi-74396/346fc604051d9a89248aa3839428b9ec5d8111ba84b0d449c3b177c5a5edf23e.png)
+A. ![](图片/assets-fenbi-74396/346fc604051d9a89248aa3839428b9ec5d8111ba84b0d449c3b177c5a5edf23e.png)
 
-B. ![](assets-fenbi-74396/8cb433295e31a096414d1093bfdfe80e54e10692cbc122ddbb765125b8164b09.png)
+B. ![](图片/assets-fenbi-74396/8cb433295e31a096414d1093bfdfe80e54e10692cbc122ddbb765125b8164b09.png)
 
-C. ![](assets-fenbi-74396/abcc5bebad1ad36971ebf6bc9ee0562e372b6be3e1b03c7a506f3ec7005a765b.png)
+C. ![](图片/assets-fenbi-74396/abcc5bebad1ad36971ebf6bc9ee0562e372b6be3e1b03c7a506f3ec7005a765b.png)
 
-D. ![](assets-fenbi-74396/79b79697af96e5f0431b2e984ad49399e8279fa4aa2cb11ea5871f154ffff439.png)
+D. ![](图片/assets-fenbi-74396/79b79697af96e5f0431b2e984ad49399e8279fa4aa2cb11ea5871f154ffff439.png)
 
 <details><summary>第 66 题 · 答案与解析</summary>
 
@@ -2859,7 +2859,7 @@ D项：材料中只提到江苏快递业务收入，而没有提到全国快递�
 
 2014年1—9月我国入境外国人共有1922万人，其中来自亚洲、美洲、欧洲、大洋洲、非洲的外国人分别为1184万人、229万人、408万人、58万人和43万人。分不同目的的入境外国人数见下表。
 
-![](assets-fenbi-74396/e2ffdc45b4f77c9c0c4a0decbdb70e0a46e330c2c397248f1cae72ce7720e258.png)
+![](图片/assets-fenbi-74396/e2ffdc45b4f77c9c0c4a0decbdb70e0a46e330c2c397248f1cae72ce7720e258.png)
 
 | 来源 | 会议（商务） | 观光休闲 | 探亲访友 | 服务员工 | 其他 |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -3021,7 +3021,7 @@ D项：来自会议（商务）的非洲人数是15万人，是非洲入境人�
 
 2014年前9个月江苏钢材产量稳步增长，其中1—2月产量为1932万吨，累计同比增长10.0％；3月产量为1127万吨，1—3月累计同比增长8.5％；4月产量为1013万吨，1—4月累计同比增长7.3％；5月产量为1156万吨，1—5月累计同比增长6.1％；6月产量为1236万吨，1—6月累计同比增长6.3％；7月产量为1094万吨，1—7月累计同比增长4.9％；8月产量为1050万吨，1—8月累计同比增长3.8％；9月产量为1149万吨，1—9月累计同比增长3.7％。1—9月江苏生铁、粗钢产量及其同比增长情况如下图：
 
-![](assets-fenbi-74396/73cfd65b3216f3c2f9f5b6dbecc14a332c042da93d2e43aa44845bea984e9aac.png)
+![](图片/assets-fenbi-74396/73cfd65b3216f3c2f9f5b6dbecc14a332c042da93d2e43aa44845bea984e9aac.png)
 
 2014年1—9月江苏生铁、粗钢产量及同比增长率
 
@@ -3197,7 +3197,7 @@ D项：从文字材料“2014年1—2月产量为1932万吨”，可得1月和2�
 
 某市统计局在针对噪音扰民的一次调查中，当问及受访市民对哪一类噪音反感时，选择社区广场舞活动噪音的占8.6%，比选择居民社区宠物狗叫声的低2.9个百分点。当问及是否支持广场舞活动时，12.8%的受访市民表示无所谓或者不知道，12.0%的受访者回答表示反对，其他为支持者。在支持的市民中，当被问及支持的主要原因（多选）时，不同年龄段受访者的回答如下图所示。
 
-![](assets-fenbi-74396/064e48a98ebff84d678e5e3c0b8139e58f6081e036716def8428f2bbe8853240.png)
+![](图片/assets-fenbi-74396/064e48a98ebff84d678e5e3c0b8139e58f6081e036716def8428f2bbe8853240.png)
 
 | 指标 | 青年 （13\~40 周岁） | 中年 （41\~60 周岁） | 老年 （61 周岁以上） |
 | --- | ---: | ---: | ---: |
@@ -3210,7 +3210,7 @@ D项：从文字材料“2014年1—2月产量为1932万吨”，可得1月和2�
 
        在反对的市民中，被问及反对的主要原因（多选）时，不同区域受访者回答如下。
 
-![](assets-fenbi-74396/ea1c11a93ae51a15c3ef174f430326998f5802b9e68ce2f64f6844df663daf11.png)
+![](图片/assets-fenbi-74396/ea1c11a93ae51a15c3ef174f430326998f5802b9e68ce2f64f6844df663daf11.png)
 
 ### 第 91 题
 

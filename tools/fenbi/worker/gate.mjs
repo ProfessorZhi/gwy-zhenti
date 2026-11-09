@@ -4,7 +4,7 @@
 //   - 题数等于回执题数且连续编号，且不少于 base 上同一路径的题数（不倒退）
 //   - 没有残留"征集中"之类的占位文字
 //   - 清单里该路径的 sha256 与文件一致
-//   - 新增图片只能是 assets-fenbi-<sourceId>/<sha256>.<扩展名>，内容哈希与文件名一致；已有图片不允许改写
+//   - 新增图片只能是 图片/assets-fenbi-<sourceId>/<sha256>.<扩展名>，内容哈希与文件名一致；已有图片不允许改写
 // 任何一项不过，整批不合入 main（仍推送集成分支），原因写进回执。
 import fs from 'node:fs/promises';
 import path from 'node:path';

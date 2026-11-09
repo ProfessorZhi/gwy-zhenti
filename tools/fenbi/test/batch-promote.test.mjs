@@ -20,9 +20,9 @@ async function fixture(t,{old=false,branch='ingest-staging'}={}){
   const rel='省考/浙江/2026/行测-C类.md';
   const oldMd='旧版内容，不可静默覆盖。\n';
   if(old){await fs.mkdir(path.dirname(path.join(repo,rel)),{recursive:true});await fs.writeFile(path.join(repo,rel),oldMd);}
-  const md='# 合成卷\n\n## 题目\n\n### 第 1 题\n\n测试题干。\n\n- A. 测试\n\n![图](assets-fenbi-123/q.png)\n';
-  const bytes=Buffer.from('synthetic-image'),imgRoot=path.join(candidateDir,'assets-fenbi-123');
-  await fs.mkdir(imgRoot);await fs.writeFile(path.join(imgRoot,'q.png'),bytes);
+  const md='# 合成卷\n\n## 题目\n\n### 第 1 题\n\n测试题干。\n\n- A. 测试\n\n![图](图片/assets-fenbi-123/q.png)\n';
+  const bytes=Buffer.from('synthetic-image'),imgRoot=path.join(candidateDir,'图片','assets-fenbi-123');
+  await fs.mkdir(imgRoot,{recursive:true});await fs.writeFile(path.join(imgRoot,'q.png'),bytes);
   const receipt={name:'synthetic',sourceId:'123',path:rel,area:'浙江',year:2026,subject:'xingce',variant:'C类',
     grade:'A',counts:{sourceQuestions:1},answerNumbers:[],markdownSha256:sha(md),oldSha256:old?sha(oldMd):null};
   await fs.writeFile(path.join(candidateDir,'paper.md'),md);
@@ -65,7 +65,7 @@ test('verified promotion writes candidate and manifest to isolated branch',async
   assert.equal(rows.length,1);
   assert.equal(rows[0].sha256,sha(f.md));
   assert.deepEqual(rows[0].missing_answer_numbers,[1]);
-  assert.equal((await fs.readFile(path.join(f.repo,'省考/浙江/2026/assets-fenbi-123/q.png'))).toString(),'synthetic-image');
+  assert.equal((await fs.readFile(path.join(f.repo,'省考/浙江/2026/图片/assets-fenbi-123/q.png'))).toString(),'synthetic-image');
 });
 test('existing paper refuses destructive replacement until explicitly allowed',async t=>{
   const f=await fixture(t,{old:true});

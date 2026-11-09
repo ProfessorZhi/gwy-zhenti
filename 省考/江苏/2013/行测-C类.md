@@ -1397,13 +1397,13 @@ C
 
 请从四个选项中选出正确的一项，其特征或规律与题干给出的一串符号的特征或规律最为相似。
 
-![](assets-fenbi-431/121475c8cb1daa96f63679a38aa3af437a0a91c71b42a622bf033c1f35787d64.png)
+![](图片/assets-fenbi-431/121475c8cb1daa96f63679a38aa3af437a0a91c71b42a622bf033c1f35787d64.png)
 
-A. ![](assets-fenbi-431/c1f1af5a35f0ceebcb941c9fb1f1290d081cccb9b8e14f7202989c999e945b47.png)
+A. ![](图片/assets-fenbi-431/c1f1af5a35f0ceebcb941c9fb1f1290d081cccb9b8e14f7202989c999e945b47.png)
 
 B. ＞P×≦＞×≦
 
-C. ![](assets-fenbi-431/207bb138eee7d9d83446be29c7f6fb53032af8e4af00c6e2f761c36d2591d230.png)
+C. ![](图片/assets-fenbi-431/207bb138eee7d9d83446be29c7f6fb53032af8e4af00c6e2f761c36d2591d230.png)
 
 D. #HΔ≠∴≠Δ
 
@@ -1463,7 +1463,7 @@ D选项第2个字母和第3个字母不同，与题干规律不一致。
 
 请从所给的四个选项中，选择唯一的一个答案，使之呈现一定的规律性：
 
-![](assets-fenbi-431/053b9c01db7f98382ce556f81ddd2a0349b2c342da6b746a923789956c3f00eb.png)
+![](图片/assets-fenbi-431/053b9c01db7f98382ce556f81ddd2a0349b2c342da6b746a923789956c3f00eb.png)
 
 A. A
 
@@ -1495,7 +1495,7 @@ C
 
 请从所给的四个选项中，选择唯一的一个答案，使之呈现一定的规律性：
 
-![](assets-fenbi-431/d0fb1af77de1e2e5c436e106a37faf8492c569833b85a7ec2b9af62b904af831.png)
+![](图片/assets-fenbi-431/d0fb1af77de1e2e5c436e106a37faf8492c569833b85a7ec2b9af62b904af831.png)
 
 A. A
 
@@ -1527,7 +1527,7 @@ A
 
 下边四个图形中，只有一个是由上边的四个图形拼合（只能通过上、下、左、右平移）而成的，请把它找出来。
 
-![](assets-fenbi-431/1616e78fc7c210248dafde09bce3f80c50ae8694a4fbaf321e31ba0eea950e38.jpg)
+![](图片/assets-fenbi-431/1616e78fc7c210248dafde09bce3f80c50ae8694a4fbaf321e31ba0eea950e38.jpg)
 
 A. A
 
@@ -1547,7 +1547,7 @@ A
 
 本题考查拼图。题干中一、四图形上下叠放，二、三图形上下叠放，然后组合可得A。如图所示：
 
-![](assets-fenbi-431/f2dea44099e35f7edd21d21aa67f6ba103fe0a838d41d7b856d73bdf05356f89.png)
+![](图片/assets-fenbi-431/f2dea44099e35f7edd21d21aa67f6ba103fe0a838d41d7b856d73bdf05356f89.png)
 
 故正确答案为A。
 
@@ -1559,7 +1559,7 @@ A
 
 下边的四个图形中，只有一个是由上边的四个图形拼合（只能通过上、下、左、右平移）而成的，请把它找出来：
 
-![](assets-fenbi-431/052d33f633ed7151c67ef92873a39252abe891138653a796dd79bb9de15ff7b3.png)
+![](图片/assets-fenbi-431/052d33f633ed7151c67ef92873a39252abe891138653a796dd79bb9de15ff7b3.png)
 
 A. A
 
@@ -1579,7 +1579,7 @@ D
 
 本题考查拼图。将上边各部分拼起来，形成的图形如下图所示。
 
-![](assets-fenbi-431/09f21709573a7afe1975ebc374aec1b3c83e5524007370780faeb84230961d80.png)
+![](图片/assets-fenbi-431/09f21709573a7afe1975ebc374aec1b3c83e5524007370780faeb84230961d80.png)
 
 故正确答案为D。
 
@@ -1591,7 +1591,7 @@ D
 
 选项的四个图形中，只有一个是由题干中的四个图形拼合（只能上、下、左、右平移）而成的，请把它找出来：
 
-![](assets-fenbi-431/02c189fa5cbbedc38e6b5eb81a3bc67e8b4b057f408694448bdd4bf39377a860.png)
+![](图片/assets-fenbi-431/02c189fa5cbbedc38e6b5eb81a3bc67e8b4b057f408694448bdd4bf39377a860.png)
 
 A. A
 
@@ -1611,7 +1611,7 @@ D
 
 本题考查拼图，根据各部分大小，可确定为D项，如图所示：
 
-![](assets-fenbi-431/01f0e50ff2ba7d43b7b496a4a3322345c16f4ae300737d939257abcfdf893d5d.png)
+![](图片/assets-fenbi-431/01f0e50ff2ba7d43b7b496a4a3322345c16f4ae300737d939257abcfdf893d5d.png)
 
 故正确答案为D。
 
@@ -1623,7 +1623,7 @@ D
 
 右边图形哪一个是由左边图形折叠而来：
 
-![](assets-fenbi-431/f316a7a5632b8ec5f37423ba2c1b363826da49a4b99cf623ee2db7b713dc54b7.png)
+![](图片/assets-fenbi-431/f316a7a5632b8ec5f37423ba2c1b363826da49a4b99cf623ee2db7b713dc54b7.png)
 
 A. A
 
@@ -1655,7 +1655,7 @@ B项可由展开图折成。
 
 左边给定的是正方体的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-431/23525e8d23928f3f8dd7b6bcbb5eb98ba4ccb2148abc0935515ae260bb198640.jpg)
+![](图片/assets-fenbi-431/23525e8d23928f3f8dd7b6bcbb5eb98ba4ccb2148abc0935515ae260bb198640.jpg)
 
 A. A
 
@@ -1675,7 +1675,7 @@ A
 
 本题考查空间重构能力，通常采用排除的思想。A项可以由左侧图形折成。如下图所示，第1面和第5面为相对面，根据相对面不相邻的原则，排除B、D。C项错误，假设左侧面和右侧面是对的，那么顶面应该是第5面而非第1面。
 
-![](assets-fenbi-431/2bee560fd2ed045f99f2e9790168bef8e34329c603169b3d410b0c0862cda95a.jpg)
+![](图片/assets-fenbi-431/2bee560fd2ed045f99f2e9790168bef8e34329c603169b3d410b0c0862cda95a.jpg)
 
 故正确答案为A。
 
@@ -1689,7 +1689,7 @@ A
 
 左边给定的是三棱锥的外表面展开图，右边哪一项能由它折叠而成？
 
-![](assets-fenbi-431/964bc00714087ec2ff17363adc0c26cb435bab978aaf1eeb8cda707c7756af06.jpg)
+![](图片/assets-fenbi-431/964bc00714087ec2ff17363adc0c26cb435bab978aaf1eeb8cda707c7756af06.jpg)
 
 A. A
 
@@ -1709,7 +1709,7 @@ C
 
 将题干展开图标上序号，如下图所示，逐一分析选项。
 
-![](assets-fenbi-431/02590618ecc71cf83afd2d4c5f630ab1a0dbb04b706dd82a54379100373d1cdb.png)
+![](图片/assets-fenbi-431/02590618ecc71cf83afd2d4c5f630ab1a0dbb04b706dd82a54379100373d1cdb.png)
 
 A项：选项由面h和面g构成，如图所示，以面g中箭头指向的边为起始边，对面g进行顺时针画边。题干展开图中边2挨着面h，而选项中边3挨着面h，选项与题干不一致，排除；
 
@@ -1729,7 +1729,7 @@ D项：选项由面f和面g构成，如图所示，题干展开图面g中的箭�
 
 左边给定的是纸盒外表面的展开图，右边哪一项能由它折叠而成？请把它找出来：
 
-![](assets-fenbi-431/f10ab830734f302da62b983cbb626fbe6c8e3fa8022e9af3d418bcde99405a2e.jpg)
+![](图片/assets-fenbi-431/f10ab830734f302da62b983cbb626fbe6c8e3fa8022e9af3d418bcde99405a2e.jpg)
 
 A. A
 
@@ -1749,7 +1749,7 @@ A
 
 将题干展开图中的面依次标注为面e、f、g、h，如下图：
 
-![](assets-fenbi-431/59e362e0a76cb196c28c9ac730f78ca76e3583d7ef5bbbd320d64ef50c03fd88.png)
+![](图片/assets-fenbi-431/59e362e0a76cb196c28c9ac730f78ca76e3583d7ef5bbbd320d64ef50c03fd88.png)
 
 A项：选项由面f、g构成，与题干一致，当选；
 
@@ -1757,11 +1757,11 @@ B项：右侧的面是无中生有的面，与题干不一致，排除；
 
 C项：选项由面e、g构成，展开图中面g中黑色三角形与面e中的竖线正对，选项中面g中黑色三角形与面e中的竖线不正对，与题干不一致，排除；
 
-![](assets-fenbi-431/15bb536b69bf93786f2c399770c5c66cb75313ce4b9945a09b5522706b4d855d.png)
+![](图片/assets-fenbi-431/15bb536b69bf93786f2c399770c5c66cb75313ce4b9945a09b5522706b4d855d.png)
 
 D项：选项由面f、g构成，题干展开图中面f和面g的公共边挨着面f的直角三角形的斜边，而选项中面f和面g的公共边没有挨着面f的直角三角形的斜边，与题干不一致，排除。
 
-![](assets-fenbi-431/8ee10b69136026d149a2e687f9ae7a4fcdfb1a089d8846ae84764605015a46c5.png)
+![](图片/assets-fenbi-431/8ee10b69136026d149a2e687f9ae7a4fcdfb1a089d8846ae84764605015a46c5.png)
 
 故正确答案为A。
 
@@ -1773,7 +1773,7 @@ D项：选项由面f、g构成，题干展开图中面f和面g的公共边挨着
 
 右边图形哪一个是由左边图形折叠而来：
 
-![](assets-fenbi-431/ec408fdfe23355696ba5486747229a8840c761bb99c7501c12841ce34e9a5d75.png)
+![](图片/assets-fenbi-431/ec408fdfe23355696ba5486747229a8840c761bb99c7501c12841ce34e9a5d75.png)
 
 A. A
 
@@ -3045,7 +3045,7 @@ D项，定位文字材料第二段可得：“2011年全国粮食产量57121万�
 
 **2010年江苏省各市人口分布情况**
 
-![](assets-fenbi-431/880bc28c3112690e5eb1ea130e5820c670bef4db905840c7bbc8a3862cd6089d.png)
+![](图片/assets-fenbi-431/880bc28c3112690e5eb1ea130e5820c670bef4db905840c7bbc8a3862cd6089d.png)
 
 ### 第 86 题
 
@@ -3227,7 +3227,7 @@ B
 
 ## 材料 5
 
-![](assets-fenbi-431/70251e0d5b599b8ae2b0a6e5dd26743589bce3c7b24da3e376f6320d287a521b.jpg)
+![](图片/assets-fenbi-431/70251e0d5b599b8ae2b0a6e5dd26743589bce3c7b24da3e376f6320d287a521b.jpg)
 
 ### 第 91 题
 
@@ -3401,9 +3401,9 @@ D
 
 ## 材料 6
 
-![](assets-fenbi-431/5f5254d77bced618b030ad3e3a56d2786ff360b43b4e0f4396f834cd303dd392.png)
+![](图片/assets-fenbi-431/5f5254d77bced618b030ad3e3a56d2786ff360b43b4e0f4396f834cd303dd392.png)
 
-![](assets-fenbi-431/ba10ccc256c72715e7a44847344079caa797bc3a426eb7ea6401be67f7567b10.png)
+![](图片/assets-fenbi-431/ba10ccc256c72715e7a44847344079caa797bc3a426eb7ea6401be67f7567b10.png)
 
 ### 第 96 题
 

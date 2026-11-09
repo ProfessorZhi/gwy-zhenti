@@ -154,7 +154,7 @@
 
 日本：利用自动称重技术。实行“一超三罚”制度。对超载超限按违规等级处罚。
 
-![](assets-fenbi-43695/142d10541c32aa7ef4c828e3b2d9f658715bf12384e8e0f42c2d05c432677613.png)
+![](图片/assets-fenbi-43695/142d10541c32aa7ef4c828e3b2d9f658715bf12384e8e0f42c2d05c432677613.png)
 
 **解析**
 
@@ -190,7 +190,7 @@
 
 XXXX年XX月XX日
 
-![](assets-fenbi-43695/8e1b923c81460beb1be8317b27b39d5663c3bc57c328b859c1df57ffc1f2d925.jpg)
+![](图片/assets-fenbi-43695/8e1b923c81460beb1be8317b27b39d5663c3bc57c328b859c1df57ffc1f2d925.jpg)
 
 **解析**
 
