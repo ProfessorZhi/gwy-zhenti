@@ -1,0 +1,616 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="842" height="498" viewBox="0 0 842 498" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
+<defs><pattern id="nf" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="4" stroke="#94a3b8" stroke-width="1.2"/></pattern></defs>
+<rect width="842" height="498" rx="16" fill="#ffffff"/>
+<text x="20" y="34" font-size="19" font-weight="800" fill="#0f172a">重点地区 · 2016–2026</text>
+<text x="20" y="56" font-size="12" fill="#64748b">每个方块是一份试卷，上行行测、下行申论；颜色表示完整程度</text>
+<rect x="20.0" y="72" width="9" height="9" rx="2" fill="#34d399"><title>完整</title></rect>
+<text x="34" y="80.5" font-size="11.5" fill="#334155">完整</text>
+<rect x="74.0" y="72" width="9" height="9" rx="2" fill="#fcd34d"><title>缺答案</title></rect>
+<text x="88" y="80.5" font-size="11.5" fill="#334155">缺答案</text>
+<rect x="140.0" y="72" width="9" height="9" rx="2" fill="#fb923c"><title>缺选项或材料</title></rect>
+<text x="154" y="80.5" font-size="11.5" fill="#334155">缺选项或材料</text>
+<rect x="242.0" y="72" width="9" height="9" rx="2" fill="#f43f5e"><title>缺题干或题目</title></rect>
+<text x="256" y="80.5" font-size="11.5" fill="#334155">缺题干或题目</text>
+<rect x="344.0" y="72" width="9" height="9" rx="2" fill="#334155"><title>缺卷</title></rect>
+<text x="358" y="80.5" font-size="11.5" fill="#334155">缺卷</text>
+<rect x="398.5" y="72.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>无独立考试</title></rect>
+<text x="412" y="80.5" font-size="11.5" fill="#334155">无独立考试</text>
+<text x="119.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2016</text>
+<text x="173.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2017</text>
+<text x="227.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2018</text>
+<text x="281.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2019</text>
+<text x="335.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2020</text>
+<text x="389.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2021</text>
+<text x="443.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2022</text>
+<text x="497.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2023</text>
+<text x="551.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2024</text>
+<text x="605.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2025</text>
+<text x="659.0" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">2026</text>
+<text x="700" y="110" font-size="11.5" font-weight="700" fill="#334155">缺卷 · 缺题</text>
+<rect x="10" y="117" width="822" height="34" rx="8" fill="#fffbeb" stroke="#fde68a"/>
+<text x="80" y="139.0" font-size="13" font-weight="800" fill="#1e293b" text-anchor="end">★ 浙江</text>
+<rect x="94" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="109.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2016/行测-A类 · 完整</title></rect>
+<rect x="120.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2016/行测-B类 · 完整</title></rect>
+<rect x="109.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2016/申论-A类 · 完整</title></rect>
+<rect x="120.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2016/申论-B类 · 完整</title></rect>
+<rect x="148" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="163.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2017/行测-A类 · 完整</title></rect>
+<rect x="174.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2017/行测-B类 · 完整</title></rect>
+<rect x="163.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2017/申论-A类 · 完整</title></rect>
+<rect x="174.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2017/申论-B类 · 完整</title></rect>
+<rect x="202" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="217.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2018/行测-A类 · 完整</title></rect>
+<rect x="228.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2018/行测-B类 · 完整</title></rect>
+<rect x="217.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2018/申论-A类 · 完整</title></rect>
+<rect x="228.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2018/申论-B类 · 完整</title></rect>
+<rect x="256" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="271.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2019/行测-A类 · 完整</title></rect>
+<rect x="282.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2019/行测-B类 · 完整</title></rect>
+<rect x="271.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2019/申论-A类 · 完整</title></rect>
+<rect x="282.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2019/申论-B类 · 完整</title></rect>
+<rect x="310" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="319.5" y="123" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/浙江/2020/行测-A类 · 缺题干或题目</title></rect>
+<rect x="330.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2020/行测-B类 · 完整</title></rect>
+<rect x="341.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2020/行测-选调生 · 完整</title></rect>
+<rect x="319.5" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2020/申论-A类 · 完整</title></rect>
+<rect x="330.5" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2020/申论-B类 · 完整</title></rect>
+<rect x="341.5" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2020/申论-选调生 · 完整</title></rect>
+<rect x="364" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="368.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2021/行测-A类 · 完整</title></rect>
+<rect x="379.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2021/行测-B类 · 完整</title></rect>
+<rect x="390.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2021/行测-C类 · 完整</title></rect>
+<rect x="401.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2021/行测-选调生 · 完整</title></rect>
+<rect x="373.5" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2021/申论-A类 · 完整</title></rect>
+<rect x="384.5" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2021/申论-B类 · 完整</title></rect>
+<rect x="395.5" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2021/申论-C类 · 完整</title></rect>
+<rect x="418" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="427.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2022/行测-A类 · 完整</title></rect>
+<rect x="438.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2022/行测-C类 · 完整</title></rect>
+<rect x="449.5" y="123" width="9" height="9" rx="2" fill="#334155"><title>浙江 2022 行测-B类 · 缺卷</title></rect>
+<rect x="422.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2022/申论-选调生 · 完整</title></rect>
+<rect x="433.0" y="136" width="9" height="9" rx="2" fill="#334155"><title>浙江 2022 申论-A类 · 缺卷</title></rect>
+<rect x="444.0" y="136" width="9" height="9" rx="2" fill="#334155"><title>浙江 2022 申论-B类 · 缺卷</title></rect>
+<rect x="455.0" y="136" width="9" height="9" rx="2" fill="#334155"><title>浙江 2022 申论-C类 · 缺卷</title></rect>
+<rect x="472" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="476.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2023/行测-A类 · 完整</title></rect>
+<rect x="487.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2023/行测-B类 · 完整</title></rect>
+<rect x="498.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2023/行测-C类 · 完整</title></rect>
+<rect x="509.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2023/行测-选调生 · 完整</title></rect>
+<rect x="476.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2023/申论-A类 · 完整</title></rect>
+<rect x="487.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2023/申论-B类 · 完整</title></rect>
+<rect x="498.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2023/申论-C类 · 完整</title></rect>
+<rect x="509.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2023/申论-选调生 · 完整</title></rect>
+<rect x="526" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="530.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2024/行测-A类 · 完整</title></rect>
+<rect x="541.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2024/行测-B类 · 完整</title></rect>
+<rect x="552.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2024/行测-C类 · 完整</title></rect>
+<rect x="563.0" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2024/行测-选调生 · 完整</title></rect>
+<rect x="530.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2024/申论-A类 · 完整</title></rect>
+<rect x="541.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2024/申论-B类 · 完整</title></rect>
+<rect x="552.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2024/申论-C类 · 完整</title></rect>
+<rect x="563.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2024/申论-选调生 · 完整</title></rect>
+<rect x="580" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="589.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2025/行测-A类 · 完整</title></rect>
+<rect x="600.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2025/行测-B类 · 完整</title></rect>
+<rect x="611.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2025/行测-C类 · 完整</title></rect>
+<rect x="584.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2025/申论-A类 · 完整</title></rect>
+<rect x="595.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2025/申论-B类 · 完整</title></rect>
+<rect x="606.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2025/申论-C类 · 完整</title></rect>
+<rect x="617.0" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2025/申论-选调生 · 完整</title></rect>
+<rect x="634" y="120" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="643.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2026/行测-A类 · 完整</title></rect>
+<rect x="654.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2026/行测-B类 · 完整</title></rect>
+<rect x="665.5" y="123" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2026/行测-C类 · 完整</title></rect>
+<rect x="643.5" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2026/申论-A类 · 完整</title></rect>
+<rect x="654.5" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2026/申论-B类 · 完整</title></rect>
+<rect x="665.5" y="136" width="9" height="9" rx="2" fill="#34d399"><title>省考/浙江/2026/申论-C类 · 完整</title></rect>
+<text x="700" y="139.0" font-size="13"><tspan fill="#334155" font-weight="800">4</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#e11d48" font-weight="800">2</tspan></text>
+<text x="80" y="173.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">国考</text>
+<rect x="94" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="109.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2016/行测-副省级 · 完整</title></rect>
+<rect x="120.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2016/行测-地市级 · 完整</title></rect>
+<rect x="109.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2016/申论-副省级 · 完整</title></rect>
+<rect x="120.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2016/申论-地市级 · 完整</title></rect>
+<rect x="148" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="163.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2017/行测-副省级 · 完整</title></rect>
+<rect x="174.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2017/行测-地市级 · 完整</title></rect>
+<rect x="163.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2017/申论-副省级 · 完整</title></rect>
+<rect x="174.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2017/申论-地市级 · 完整</title></rect>
+<rect x="202" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="217.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2018/行测-副省级 · 完整</title></rect>
+<rect x="228.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2018/行测-地市级 · 完整</title></rect>
+<rect x="217.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2018/申论-副省级 · 完整</title></rect>
+<rect x="228.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2018/申论-地市级 · 完整</title></rect>
+<rect x="256" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="271.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2019/行测-副省级 · 完整</title></rect>
+<rect x="282.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2019/行测-地市级 · 完整</title></rect>
+<rect x="271.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2019/申论-副省级 · 完整</title></rect>
+<rect x="282.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2019/申论-地市级 · 完整</title></rect>
+<rect x="310" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="325.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2020/行测-副省级 · 完整</title></rect>
+<rect x="336.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2020/行测-地市级 · 完整</title></rect>
+<rect x="325.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2020/申论-副省级 · 完整</title></rect>
+<rect x="336.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2020/申论-地市级 · 完整</title></rect>
+<rect x="364" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="379.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2021/行测-副省级 · 完整</title></rect>
+<rect x="390.0" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2021/行测-地市级 · 完整</title></rect>
+<rect x="379.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2021/申论-副省级 · 完整</title></rect>
+<rect x="390.0" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2021/申论-地市级 · 完整</title></rect>
+<rect x="418" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="427.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2022/行测-副省级 · 完整</title></rect>
+<rect x="438.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2022/行测-地市级 · 完整</title></rect>
+<rect x="449.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2022/行测-行政执法 · 完整</title></rect>
+<rect x="427.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2022/申论-副省级 · 完整</title></rect>
+<rect x="438.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2022/申论-地市级 · 完整</title></rect>
+<rect x="449.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2022/申论-行政执法 · 完整</title></rect>
+<rect x="472" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="481.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2023/行测-副省级 · 完整</title></rect>
+<rect x="492.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2023/行测-地市级 · 完整</title></rect>
+<rect x="503.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2023/行测-行政执法 · 完整</title></rect>
+<rect x="481.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2023/申论-副省级 · 完整</title></rect>
+<rect x="492.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2023/申论-地市级 · 完整</title></rect>
+<rect x="503.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2023/申论-行政执法 · 完整</title></rect>
+<rect x="526" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="535.5" y="157" width="9" height="9" rx="2" fill="#fb923c"><title>国考/2024/行测-副省级 · 缺选项或材料</title></rect>
+<rect x="546.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2024/行测-地市级 · 完整</title></rect>
+<rect x="557.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2024/行测-行政执法 · 完整</title></rect>
+<rect x="535.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2024/申论-副省级 · 完整</title></rect>
+<rect x="546.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2024/申论-地市级 · 完整</title></rect>
+<rect x="557.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2024/申论-行政执法 · 完整</title></rect>
+<rect x="580" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="589.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2025/行测-副省级 · 完整</title></rect>
+<rect x="600.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2025/行测-地市级 · 完整</title></rect>
+<rect x="611.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2025/行测-行政执法 · 完整</title></rect>
+<rect x="589.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2025/申论-副省级 · 完整</title></rect>
+<rect x="600.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2025/申论-地市级 · 完整</title></rect>
+<rect x="611.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2025/申论-行政执法 · 完整</title></rect>
+<rect x="634" y="154" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="643.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2026/行测-副省级 · 完整</title></rect>
+<rect x="654.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2026/行测-地市级 · 完整</title></rect>
+<rect x="665.5" y="157" width="9" height="9" rx="2" fill="#34d399"><title>国考/2026/行测-行政执法 · 完整</title></rect>
+<rect x="643.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2026/申论-副省级 · 完整</title></rect>
+<rect x="654.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2026/申论-地市级 · 完整</title></rect>
+<rect x="665.5" y="170" width="9" height="9" rx="2" fill="#34d399"><title>国考/2026/申论-行政执法 · 完整</title></rect>
+<text x="700" y="173.0" font-size="13"><tspan fill="#94a3b8" font-weight="400">—</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#e11d48" font-weight="800">1</tspan></text>
+<rect x="10" y="185" width="822" height="34" rx="8" fill="#f8fafc"/>
+<text x="80" y="207.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">江苏</text>
+<rect x="94" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="103.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2016/行测-A类 · 完整</title></rect>
+<rect x="114.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2016/行测-B类 · 完整</title></rect>
+<rect x="125.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2016/行测-C类 · 完整</title></rect>
+<rect x="103.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2016/申论-A类 · 完整</title></rect>
+<rect x="114.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2016/申论-B类 · 完整</title></rect>
+<rect x="125.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2016/申论-C类 · 完整</title></rect>
+<rect x="148" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="157.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2017/行测-A类 · 完整</title></rect>
+<rect x="168.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2017/行测-B类 · 完整</title></rect>
+<rect x="179.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2017/行测-C类 · 完整</title></rect>
+<rect x="157.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2017/申论-A类 · 完整</title></rect>
+<rect x="168.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2017/申论-B类 · 完整</title></rect>
+<rect x="179.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2017/申论-C类 · 完整</title></rect>
+<rect x="202" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="211.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2018/行测-A类 · 完整</title></rect>
+<rect x="222.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2018/行测-B类 · 完整</title></rect>
+<rect x="233.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2018/行测-C类 · 完整</title></rect>
+<rect x="211.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2018/申论-选调生 · 完整</title></rect>
+<rect x="222.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2018/申论-B类 · 完整</title></rect>
+<rect x="233.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2018/申论-C类 · 完整</title></rect>
+<rect x="256" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="265.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2019/行测-A类 · 完整</title></rect>
+<rect x="276.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2019/行测-B类 · 完整</title></rect>
+<rect x="287.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2019/行测-C类 · 完整</title></rect>
+<rect x="265.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2019/申论-B类 · 完整</title></rect>
+<rect x="276.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2019/申论-C类 · 完整</title></rect>
+<rect x="287.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2019/申论-选调生 · 完整</title></rect>
+<rect x="310" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="319.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2020/行测-A类 · 完整</title></rect>
+<rect x="330.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2020/行测-B类 · 完整</title></rect>
+<rect x="341.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2020/行测-C类 · 完整</title></rect>
+<rect x="314.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2020/申论-选调生 · 完整</title></rect>
+<rect x="325.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2020/申论-B类 · 完整</title></rect>
+<rect x="336.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2020/申论-C类 · 完整</title></rect>
+<rect x="347.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2020/申论-名校优生选调 · 完整</title></rect>
+<rect x="364" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="373.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2021/行测-A类 · 完整</title></rect>
+<rect x="384.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2021/行测-B类 · 完整</title></rect>
+<rect x="395.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2021/行测-C类 · 完整</title></rect>
+<rect x="368.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2021/申论-选调生 · 完整</title></rect>
+<rect x="379.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2021/申论-B类 · 完整</title></rect>
+<rect x="390.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2021/申论-C类 · 完整</title></rect>
+<rect x="401.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2021/申论-名校优生选调 · 完整</title></rect>
+<rect x="418" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="427.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2022/行测-A类 · 完整</title></rect>
+<rect x="438.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2022/行测-B类 · 完整</title></rect>
+<rect x="449.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2022/行测-C类 · 完整</title></rect>
+<rect x="422.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2022/申论-选调生 · 完整</title></rect>
+<rect x="433.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2022/申论-B类 · 完整</title></rect>
+<rect x="444.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2022/申论-C类 · 完整</title></rect>
+<rect x="455.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2022/申论-名校优生选调 · 完整</title></rect>
+<rect x="472" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="487.0" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2023/行测-A类 · 完整</title></rect>
+<rect x="498.0" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2023/行测-B类 · 完整</title></rect>
+<rect x="476.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2023/申论-选调生 · 完整</title></rect>
+<rect x="487.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2023/申论-B类 · 完整</title></rect>
+<rect x="498.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2023/申论-C类 · 完整</title></rect>
+<rect x="509.0" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2023/申论-名校优生选调 · 完整</title></rect>
+<rect x="526" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="535.5" y="191" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/江苏/2024/行测-A类 · 缺题干或题目</title></rect>
+<rect x="546.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2024/行测-B类 · 完整</title></rect>
+<rect x="557.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2024/行测-C类 · 完整</title></rect>
+<rect x="535.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2024/申论-A、乡镇选调卷 · 完整</title></rect>
+<rect x="546.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2024/申论-B卷 · 完整</title></rect>
+<rect x="557.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2024/申论-C卷 · 完整</title></rect>
+<rect x="580" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="589.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2025/行测-A类 · 完整</title></rect>
+<rect x="600.5" y="191" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2025/行测-B类 · 完整</title></rect>
+<rect x="611.5" y="191" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/江苏/2025/行测-C类 · 缺题干或题目</title></rect>
+<rect x="589.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2025/申论-A、乡镇选调卷 · 完整</title></rect>
+<rect x="600.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2025/申论-B卷 · 完整</title></rect>
+<rect x="611.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2025/申论-C卷 · 完整</title></rect>
+<rect x="634" y="188" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="643.5" y="191" width="9" height="9" rx="2" fill="#334155"><title>江苏 2026 行测-A类 · 缺卷</title></rect>
+<rect x="654.5" y="191" width="9" height="9" rx="2" fill="#334155"><title>江苏 2026 行测-B类 · 缺卷</title></rect>
+<rect x="665.5" y="191" width="9" height="9" rx="2" fill="#334155"><title>江苏 2026 行测-C类 · 缺卷</title></rect>
+<rect x="643.5" y="204" width="9" height="9" rx="2" fill="#34d399"><title>省考/江苏/2026/申论-B类 · 完整</title></rect>
+<rect x="654.5" y="204" width="9" height="9" rx="2" fill="#334155"><title>江苏 2026 申论-A类 · 缺卷</title></rect>
+<rect x="665.5" y="204" width="9" height="9" rx="2" fill="#334155"><title>江苏 2026 申论-C类 · 缺卷</title></rect>
+<text x="700" y="207.0" font-size="13"><tspan fill="#334155" font-weight="800">5</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#e11d48" font-weight="800">16</tspan></text>
+<text x="80" y="241.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">上海</text>
+<rect x="94" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="103.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2016/行测-A类 · 完整</title></rect>
+<rect x="114.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2016/行测-B类 · 完整</title></rect>
+<rect x="125.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2016/行测-行政执法 · 完整</title></rect>
+<rect x="109.0" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2016/申论-A类 · 完整</title></rect>
+<rect x="120.0" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2016/申论-B类 · 完整</title></rect>
+<rect x="148" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="163.0" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2017/行测-统考 · 完整</title></rect>
+<rect x="174.0" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2017/行测-行政执法 · 完整</title></rect>
+<rect x="157.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2017/申论-A类 · 完整</title></rect>
+<rect x="168.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2017/申论-B类 · 完整</title></rect>
+<rect x="179.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2017/申论-行政执法 · 完整</title></rect>
+<rect x="202" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="211.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2018/行测-A类 · 完整</title></rect>
+<rect x="222.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2018/行测-B类 · 完整</title></rect>
+<rect x="233.5" y="225" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/上海/2018/行测-行政执法 · 缺题干或题目</title></rect>
+<rect x="211.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2018/申论-A类 · 完整</title></rect>
+<rect x="222.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2018/申论-行政执法 · 完整</title></rect>
+<rect x="233.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2018/申论-选调生 · 完整</title></rect>
+<rect x="256" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="265.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2019/行测-A类 · 完整</title></rect>
+<rect x="276.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2019/行测-B类 · 完整</title></rect>
+<rect x="287.5" y="225" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/上海/2019/行测-行政执法 · 缺题干或题目</title></rect>
+<rect x="265.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2019/申论-A类 · 完整</title></rect>
+<rect x="276.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2019/申论-行政执法 · 完整</title></rect>
+<rect x="287.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2019/申论-选调生 · 完整</title></rect>
+<rect x="310" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="319.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2020/行测-A类 · 完整</title></rect>
+<rect x="330.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2020/行测-B类 · 完整</title></rect>
+<rect x="341.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2020/行测-行政执法 · 完整</title></rect>
+<rect x="319.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2020/申论-A类 · 完整</title></rect>
+<rect x="330.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2020/申论-行政执法 · 完整</title></rect>
+<rect x="341.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2020/申论-选调生 · 完整</title></rect>
+<rect x="364" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="373.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2021/行测-A类 · 完整</title></rect>
+<rect x="384.5" y="225" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/上海/2021/行测-B类 · 缺题干或题目</title></rect>
+<rect x="395.5" y="225" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/上海/2021/行测-行政执法 · 缺题干或题目</title></rect>
+<rect x="373.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2021/申论-A类 · 完整</title></rect>
+<rect x="384.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2021/申论-行政执法 · 完整</title></rect>
+<rect x="395.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2021/申论-选调生 · 完整</title></rect>
+<rect x="418" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="438.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2022/行测-B类 · 完整</title></rect>
+<rect x="438.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2022/申论-选调生 · 完整</title></rect>
+<rect x="472" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="492.5" y="225" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/上海/2023/行测-A类 · 缺题干或题目</title></rect>
+<rect x="492.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2023/申论-A类 · 完整</title></rect>
+<rect x="526" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="541.0" y="225" width="9" height="9" rx="2" fill="#334155"><title>上海 2024 行测-A类 · 缺卷</title></rect>
+<rect x="552.0" y="225" width="9" height="9" rx="2" fill="#334155"><title>上海 2024 行测-B类 · 缺卷</title></rect>
+<rect x="541.0" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2024/申论-A卷 · 完整</title></rect>
+<rect x="552.0" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2024/申论-B卷 · 完整</title></rect>
+<rect x="580" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="595.0" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2025/行测-A类 · 完整</title></rect>
+<rect x="606.0" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2025/行测-B类 · 完整</title></rect>
+<rect x="595.0" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2025/申论-A卷 · 完整</title></rect>
+<rect x="606.0" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2025/申论-B卷 · 完整</title></rect>
+<rect x="634" y="222" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="654.5" y="225" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2026/行测-统考 · 完整</title></rect>
+<rect x="654.5" y="238" width="9" height="9" rx="2" fill="#34d399"><title>省考/上海/2026/申论-统考 · 完整</title></rect>
+<text x="700" y="241.0" font-size="13"><tspan fill="#334155" font-weight="800">2</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#e11d48" font-weight="800">18</tspan></text>
+<rect x="10" y="253" width="822" height="34" rx="8" fill="#f8fafc"/>
+<text x="80" y="275.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">北京</text>
+<rect x="94" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="114.5" y="259" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2016/行测-统考 · 完整</title></rect>
+<rect x="114.5" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2016/申论-统考 · 完整</title></rect>
+<rect x="148" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="168.5" y="259" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2017/行测-统考 · 完整</title></rect>
+<rect x="168.5" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2017/申论-统考 · 完整</title></rect>
+<rect x="202" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="222.5" y="259" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2018/行测-统考 · 完整</title></rect>
+<rect x="222.5" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2018/申论-统考 · 完整</title></rect>
+<rect x="256" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="276.5" y="259" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2019/行测-统考 · 完整</title></rect>
+<rect x="276.5" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2019/申论-统考 · 完整</title></rect>
+<rect x="310" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="325.0" y="259" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/北京/2020/行测-乡镇卷 · 缺题干或题目</title></rect>
+<rect x="336.0" y="259" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2020/行测-区级及以上 · 完整</title></rect>
+<rect x="325.0" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2020/申论-乡镇卷 · 完整</title></rect>
+<rect x="336.0" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2020/申论-区级 · 完整</title></rect>
+<rect x="364" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="379.0" y="259" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2021/行测-乡镇卷 · 完整</title></rect>
+<rect x="390.0" y="259" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2021/行测-区级及以上 · 完整</title></rect>
+<rect x="379.0" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2021/申论-乡镇卷 · 完整</title></rect>
+<rect x="390.0" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2021/申论-区级 · 完整</title></rect>
+<rect x="418" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="438.5" y="259" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2022/行测-统考 · 完整</title></rect>
+<rect x="438.5" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2022/申论-区级 · 完整</title></rect>
+<rect x="472" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="492.5" y="259" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/北京/2023/行测-统考 · 缺题干或题目</title></rect>
+<rect x="492.5" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2023/申论-统考 · 完整</title></rect>
+<rect x="526" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="546.5" y="259" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2024/行测-统考 · 完整</title></rect>
+<rect x="541.0" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2024/申论-统考 · 完整</title></rect>
+<rect x="552.0" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2024/申论-选调生 · 完整</title></rect>
+<rect x="580" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="600.5" y="259" width="9" height="9" rx="2" fill="#fcd34d"><title>省考/北京/2025/行测-统考 · 缺答案</title></rect>
+<rect x="595.0" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2025/申论-统考 · 完整</title></rect>
+<rect x="606.0" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2025/申论-选调生 · 完整</title></rect>
+<rect x="634" y="256" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="654.5" y="259" width="9" height="9" rx="2" fill="#334155"><title>北京 2026 行测-统考 · 缺卷</title></rect>
+<rect x="649.0" y="272" width="9" height="9" rx="2" fill="#34d399"><title>省考/北京/2026/申论-选调生 · 完整</title></rect>
+<rect x="660.0" y="272" width="9" height="9" rx="2" fill="#334155"><title>北京 2026 申论-统考 · 缺卷</title></rect>
+<text x="700" y="275.0" font-size="13"><tspan fill="#334155" font-weight="800">2</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#e11d48" font-weight="800">37</tspan></text>
+<text x="80" y="309.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">天津</text>
+<rect x="94" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="109.0" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2016/行测-统考 · 完整</title></rect>
+<rect x="120.0" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2016/行测-选调生 · 完整</title></rect>
+<rect x="114.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2016/申论-统考 · 完整</title></rect>
+<rect x="148" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="157.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2017/行测-滨海新区 · 完整</title></rect>
+<rect x="168.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2017/行测-联考天津卷 · 完整</title></rect>
+<rect x="179.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2017/行测-选调生 · 完整</title></rect>
+<rect x="163.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2017/申论-滨海新区 · 完整</title></rect>
+<rect x="174.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2017/申论-联考天津卷 · 完整</title></rect>
+<rect x="202" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="217.0" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2018/行测-统考 · 完整</title></rect>
+<rect x="228.0" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2018/行测-选调生 · 完整</title></rect>
+<rect x="217.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2018/申论-统考 · 完整</title></rect>
+<rect x="228.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2018/申论-选调生 · 完整</title></rect>
+<rect x="256" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="271.0" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2019/行测-统考 · 完整</title></rect>
+<rect x="282.0" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2019/行测-选调生 · 完整</title></rect>
+<rect x="276.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2019/申论-统考 · 完整</title></rect>
+<rect x="310" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="330.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2020/行测-统考 · 完整</title></rect>
+<rect x="325.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2020/申论-A类 · 完整</title></rect>
+<rect x="336.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2020/申论-B类 · 完整</title></rect>
+<rect x="364" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="384.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2021/行测-统考 · 完整</title></rect>
+<rect x="373.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2021/申论-区县卷 · 完整</title></rect>
+<rect x="384.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2021/申论-市级卷 · 完整</title></rect>
+<rect x="395.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2021/申论-行政执法 · 完整</title></rect>
+<rect x="418" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="438.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2022/行测-统考 · 完整</title></rect>
+<rect x="427.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2022/申论-区级卷 · 完整</title></rect>
+<rect x="438.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2022/申论-市级卷 · 完整</title></rect>
+<rect x="449.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2022/申论-选调生 · 完整</title></rect>
+<rect x="472" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="492.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2023/行测-统考 · 完整</title></rect>
+<rect x="476.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2023/申论-乡镇卷 · 完整</title></rect>
+<rect x="487.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2023/申论-市区卷 · 完整</title></rect>
+<rect x="498.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2023/申论-行政执法 · 完整</title></rect>
+<rect x="509.0" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2023/申论-选调生 · 完整</title></rect>
+<rect x="526" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="546.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2024/行测-统考 · 完整</title></rect>
+<rect x="535.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2024/申论-市区卷 · 完整</title></rect>
+<rect x="546.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2024/申论-行政执法 · 完整</title></rect>
+<rect x="557.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2024/申论-选调生 · 完整</title></rect>
+<rect x="580" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="600.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2025/行测-统考 · 完整</title></rect>
+<rect x="589.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2025/申论-市区卷 · 完整</title></rect>
+<rect x="600.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2025/申论-街镇卷 · 完整</title></rect>
+<rect x="611.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2025/申论-选调生 · 完整</title></rect>
+<rect x="634" y="290" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="654.5" y="293" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2026/行测-统考 · 完整</title></rect>
+<rect x="654.5" y="306" width="9" height="9" rx="2" fill="#34d399"><title>省考/天津/2026/申论-行政执法 · 完整</title></rect>
+<text x="700" y="309.0" font-size="13"><tspan fill="#94a3b8" font-weight="400">—</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#94a3b8" font-weight="400">—</tspan></text>
+<rect x="10" y="321" width="822" height="34" rx="8" fill="#f8fafc"/>
+<text x="80" y="343.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">广东</text>
+<rect x="94" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="109.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2016/行测-乡镇卷 · 完整</title></rect>
+<rect x="120.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2016/行测-县级以上 · 完整</title></rect>
+<rect x="109.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2016/申论-乡镇卷 · 完整</title></rect>
+<rect x="120.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2016/申论-县级卷 · 完整</title></rect>
+<rect x="148" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="168.5" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2017/行测-县级、乡镇统一卷 · 完整</title></rect>
+<rect x="163.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2017/申论-乡镇卷 · 完整</title></rect>
+<rect x="174.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2017/申论-县级卷 · 完整</title></rect>
+<rect x="202" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="222.5" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2018/行测-县级、乡镇统一卷 · 完整</title></rect>
+<rect x="222.5" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2018/申论-统考 · 完整</title></rect>
+<rect x="256" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="260.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2019/行测-乡镇卷 · 完整</title></rect>
+<rect x="271.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2019/行测-县级卷 · 完整</title></rect>
+<rect x="282.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2019/行测-选调生-思维能力 · 完整</title></rect>
+<rect x="293.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2019/行测-选调生-综合行政能力 · 完整</title></rect>
+<rect x="271.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2019/申论-乡镇卷 · 完整</title></rect>
+<rect x="282.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2019/申论-县级卷 · 完整</title></rect>
+<rect x="310" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="314.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2020/行测-乡镇卷 · 完整</title></rect>
+<rect x="325.0" y="327" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/广东/2020/行测-县级卷 · 缺题干或题目</title></rect>
+<rect x="336.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2020/行测-选调生-思维能力 · 完整</title></rect>
+<rect x="347.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2020/行测-选调生-综合行政能力 · 完整</title></rect>
+<rect x="325.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2020/申论-乡镇卷 · 完整</title></rect>
+<rect x="336.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2020/申论-县级卷 · 完整</title></rect>
+<rect x="364" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="368.0" y="327" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/广东/2021/行测-乡镇卷 · 缺题干或题目</title></rect>
+<rect x="379.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2021/行测-县级卷 · 完整</title></rect>
+<rect x="390.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2021/行测-选调生-思维能力 · 完整</title></rect>
+<rect x="401.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2021/行测-选调生-综合行政能力 · 完整</title></rect>
+<rect x="379.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2021/申论-乡镇卷 · 完整</title></rect>
+<rect x="390.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2021/申论-县级卷 · 完整</title></rect>
+<rect x="418" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="433.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2022/行测-乡镇卷 · 完整</title></rect>
+<rect x="444.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2022/行测-县级卷 · 完整</title></rect>
+<rect x="433.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2022/申论-乡镇卷 · 完整</title></rect>
+<rect x="444.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2022/申论-县级卷 · 完整</title></rect>
+<rect x="472" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="487.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2023/行测-乡镇卷 · 完整</title></rect>
+<rect x="498.0" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2023/行测-县级卷 · 完整</title></rect>
+<rect x="487.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2023/申论-乡镇卷 · 完整</title></rect>
+<rect x="498.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2023/申论-县级卷 · 完整</title></rect>
+<rect x="526" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="546.5" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2024/行测-统考 · 完整</title></rect>
+<rect x="530.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2024/申论-公安 · 完整</title></rect>
+<rect x="541.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2024/申论-县镇 · 完整</title></rect>
+<rect x="552.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2024/申论-省市 · 完整</title></rect>
+<rect x="563.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2024/申论-行政执法 · 完整</title></rect>
+<rect x="580" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="600.5" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2025/行测-统考 · 完整</title></rect>
+<rect x="584.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2025/申论-公安 · 完整</title></rect>
+<rect x="595.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2025/申论-县镇 · 完整</title></rect>
+<rect x="606.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2025/申论-省市 · 完整</title></rect>
+<rect x="617.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2025/申论-行政执法 · 完整</title></rect>
+<rect x="634" y="324" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="654.5" y="327" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2026/行测-统考 · 完整</title></rect>
+<rect x="638.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2026/申论-公安 · 完整</title></rect>
+<rect x="649.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2026/申论-县镇 · 完整</title></rect>
+<rect x="660.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2026/申论-省市 · 完整</title></rect>
+<rect x="671.0" y="340" width="9" height="9" rx="2" fill="#34d399"><title>省考/广东/2026/申论-行政执法 · 完整</title></rect>
+<text x="700" y="343.0" font-size="13"><tspan fill="#94a3b8" font-weight="400">—</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#e11d48" font-weight="800">12</tspan></text>
+<text x="80" y="377.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">广州</text>
+<rect x="94" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="114.5" y="361" width="9" height="9" rx="2" fill="#34d399"><title>省考/广州/2016/行测-统考 · 完整</title></rect>
+<rect x="114.5" y="374" width="9" height="9" rx="2" fill="#34d399"><title>省考/广州/2016/申论-统考 · 完整</title></rect>
+<rect x="148" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="168.5" y="361" width="9" height="9" rx="2" fill="#34d399"><title>省考/广州/2017/行测-单考区 · 完整</title></rect>
+<rect x="163.0" y="374" width="9" height="9" rx="2" fill="#34d399"><title>省考/广州/2017/申论-单考区 · 完整</title></rect>
+<rect x="174.0" y="374" width="9" height="9" rx="2" fill="#34d399"><title>省考/广州/2017/申论-双考区 · 完整</title></rect>
+<rect x="202" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="217.0" y="361" width="9" height="9" rx="2" fill="#34d399"><title>省考/广州/2018/行测-3月24日 · 完整</title></rect>
+<rect x="228.0" y="361" width="9" height="9" rx="2" fill="#34d399"><title>省考/广州/2018/行测-3月25日 · 完整</title></rect>
+<rect x="217.0" y="374" width="9" height="9" rx="2" fill="#34d399"><title>省考/广州/2018/申论-3月24日 · 完整</title></rect>
+<rect x="228.0" y="374" width="9" height="9" rx="2" fill="#34d399"><title>省考/广州/2018/申论-3月25日 · 完整</title></rect>
+<rect x="256" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="277.0" y="361.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2019 行测 · 无独立考试</title></rect>
+<rect x="277.0" y="374.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2019 申论 · 无独立考试</title></rect>
+<rect x="310" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="331.0" y="361.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2020 行测 · 无独立考试</title></rect>
+<rect x="331.0" y="374.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2020 申论 · 无独立考试</title></rect>
+<rect x="364" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="385.0" y="361.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2021 行测 · 无独立考试</title></rect>
+<rect x="385.0" y="374.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2021 申论 · 无独立考试</title></rect>
+<rect x="418" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="439.0" y="361.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2022 行测 · 无独立考试</title></rect>
+<rect x="439.0" y="374.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2022 申论 · 无独立考试</title></rect>
+<rect x="472" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="493.0" y="361.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2023 行测 · 无独立考试</title></rect>
+<rect x="493.0" y="374.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2023 申论 · 无独立考试</title></rect>
+<rect x="526" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="547.0" y="361.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2024 行测 · 无独立考试</title></rect>
+<rect x="547.0" y="374.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2024 申论 · 无独立考试</title></rect>
+<rect x="580" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="601.0" y="361.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2025 行测 · 无独立考试</title></rect>
+<rect x="601.0" y="374.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2025 申论 · 无独立考试</title></rect>
+<rect x="634" y="358" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="655.0" y="361.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2026 行测 · 无独立考试</title></rect>
+<rect x="655.0" y="374.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>广州 2026 申论 · 无独立考试</title></rect>
+<text x="700" y="377.0" font-size="13"><tspan fill="#94a3b8" font-weight="400">—</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#94a3b8" font-weight="400">—</tspan></text>
+<rect x="10" y="389" width="822" height="34" rx="8" fill="#f8fafc"/>
+<text x="80" y="411.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">深圳</text>
+<rect x="94" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="114.5" y="395" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2016/行测-统考 · 完整</title></rect>
+<rect x="109.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2016/申论-A类 · 完整</title></rect>
+<rect x="120.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2016/申论-B类 · 完整</title></rect>
+<rect x="148" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="168.5" y="395" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2017/行测-统考 · 完整</title></rect>
+<rect x="163.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2017/申论-A类 · 完整</title></rect>
+<rect x="174.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2017/申论-B类 · 完整</title></rect>
+<rect x="202" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="222.5" y="395" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2018/行测-统考 · 完整</title></rect>
+<rect x="217.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2018/申论-A类 · 完整</title></rect>
+<rect x="228.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2018/申论-B类 · 完整</title></rect>
+<rect x="256" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="276.5" y="395" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2019/行测-统考 · 完整</title></rect>
+<rect x="271.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2019/申论-一卷 · 完整</title></rect>
+<rect x="282.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2019/申论-二卷 · 完整</title></rect>
+<rect x="310" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="319.5" y="395" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/深圳/2020/行测-思维能力测验 · 缺题干或题目</title></rect>
+<rect x="330.5" y="395" width="9" height="9" rx="2" fill="#fb923c"><title>省考/深圳/2020/行测-行测1 · 缺选项或材料</title></rect>
+<rect x="341.5" y="395" width="9" height="9" rx="2" fill="#f43f5e"><title>省考/深圳/2020/行测-行测2 · 缺题干或题目</title></rect>
+<rect x="325.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2020/申论-一卷 · 完整</title></rect>
+<rect x="336.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2020/申论-二卷 · 完整</title></rect>
+<rect x="364" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="385.0" y="395.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>深圳 2021 行测 · 无独立考试</title></rect>
+<rect x="385.0" y="408.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>深圳 2021 申论 · 无独立考试</title></rect>
+<rect x="418" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="438.5" y="395" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2022/行测-统考 · 完整</title></rect>
+<rect x="433.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2022/申论-一卷 · 完整</title></rect>
+<rect x="444.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2022/申论-二卷 · 完整</title></rect>
+<rect x="472" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="492.5" y="395" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2023/行测-统考 · 完整</title></rect>
+<rect x="487.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2023/申论-一卷 · 完整</title></rect>
+<rect x="498.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2023/申论-二卷 · 完整</title></rect>
+<rect x="526" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="546.5" y="395" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2024/行测-统考 · 完整</title></rect>
+<rect x="541.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2024/申论-一卷 · 完整</title></rect>
+<rect x="552.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2024/申论-二卷 · 完整</title></rect>
+<rect x="580" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="600.5" y="395" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2025/行测-统考 · 完整</title></rect>
+<rect x="595.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2025/申论-一卷 · 完整</title></rect>
+<rect x="606.0" y="408" width="9" height="9" rx="2" fill="#34d399"><title>省考/深圳/2025/申论-二卷 · 完整</title></rect>
+<rect x="634" y="392" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="655.0" y="395.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>深圳 2026 行测 · 无独立考试</title></rect>
+<rect x="655.0" y="408.5" width="8" height="8" rx="2" fill="url(#nf)" stroke="#94a3b8" stroke-width="0.8"><title>深圳 2026 申论 · 无独立考试</title></rect>
+<text x="700" y="411.0" font-size="13"><tspan fill="#94a3b8" font-weight="400">—</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#e11d48" font-weight="800">8</tspan></text>
+<text x="80" y="445.0" font-size="13" font-weight="600" fill="#1e293b" text-anchor="end">福建</text>
+<rect x="94" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="114.5" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2016/行测-统考 · 完整</title></rect>
+<rect x="114.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2016/申论-统考 · 完整</title></rect>
+<rect x="148" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="163.0" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2017/行测-统考 · 完整</title></rect>
+<rect x="174.0" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2017/行测-选调生 · 完整</title></rect>
+<rect x="168.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2017/申论-统考 · 完整</title></rect>
+<rect x="202" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="217.0" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2018/行测-统考 · 完整</title></rect>
+<rect x="228.0" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2018/行测-选调生 · 完整</title></rect>
+<rect x="217.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2018/申论-乡镇卷 · 完整</title></rect>
+<rect x="228.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2018/申论-县级卷 · 完整</title></rect>
+<rect x="256" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="271.0" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2019/行测-统考 · 完整</title></rect>
+<rect x="282.0" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2019/行测-选调生 · 完整</title></rect>
+<rect x="271.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2019/申论-乡镇卷 · 完整</title></rect>
+<rect x="282.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2019/申论-县级卷 · 完整</title></rect>
+<rect x="310" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="330.5" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2020/行测-统考 · 完整</title></rect>
+<rect x="325.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2020/申论-乡镇卷 · 完整</title></rect>
+<rect x="336.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2020/申论-县级卷 · 完整</title></rect>
+<rect x="364" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="384.5" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2021/行测-统考 · 完整</title></rect>
+<rect x="379.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2021/申论-乡镇卷 · 完整</title></rect>
+<rect x="390.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2021/申论-县级卷 · 完整</title></rect>
+<rect x="418" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="438.5" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2022/行测-统考 · 完整</title></rect>
+<rect x="427.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2022/申论-县乡卷 · 完整</title></rect>
+<rect x="438.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2022/申论-省市卷 · 完整</title></rect>
+<rect x="449.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2022/申论-行政执法 · 完整</title></rect>
+<rect x="472" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="492.5" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2023/行测-统考 · 完整</title></rect>
+<rect x="481.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2023/申论-县乡卷 · 完整</title></rect>
+<rect x="492.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2023/申论-省市卷 · 完整</title></rect>
+<rect x="503.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2023/申论-行政执法 · 完整</title></rect>
+<rect x="526" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="546.5" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2024/行测-统考 · 完整</title></rect>
+<rect x="535.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2024/申论-县乡卷 · 完整</title></rect>
+<rect x="546.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2024/申论-省市卷 · 完整</title></rect>
+<rect x="557.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2024/申论-行政执法 · 完整</title></rect>
+<rect x="580" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="600.5" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2025/行测-统考 · 完整</title></rect>
+<rect x="595.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2025/申论-省市卷 · 完整</title></rect>
+<rect x="606.0" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2025/申论-通用卷 · 完整</title></rect>
+<rect x="634" y="426" width="50" height="28" rx="5" fill="#f1f5f9"/>
+<rect x="654.5" y="429" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2026/行测-统考 · 完整</title></rect>
+<rect x="654.5" y="442" width="9" height="9" rx="2" fill="#34d399"><title>省考/福建/2026/申论-通用卷 · 完整</title></rect>
+<text x="700" y="445.0" font-size="13"><tspan fill="#94a3b8" font-weight="400">—</tspan><tspan fill="#94a3b8"> · </tspan><tspan fill="#94a3b8" font-weight="400">—</tspan></text>
+<text x="20" y="484" font-size="11" fill="#94a3b8">缺卷按份计，缺题按题计 · 广州 2019 年起、深圳 2021 年与 2026 年并入广东省考</text>
+</svg>
