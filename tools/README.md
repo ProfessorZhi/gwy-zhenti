@@ -54,7 +54,7 @@ python3 tools/cloud_quality.py --check --verify-images     # 结构与图片引�
 | 脚本 | 作用 |
 | --- | --- |
 | [`polish_markdown.py`](polish_markdown.py) | 统一卷面：答案随题折叠、卷首概览、统一空行；不改动任何正文字符 |
-| [`tidy_markdown.py`](tidy_markdown.py) | 修正 GitHub 显示问题：转义区间里的 `~`（否则显示为删除线）、合并「题型与作答说明」；写入前逐字校验，文字不变 |
+| [`tidy_markdown.py`](tidy_markdown.py) | 修正 GitHub 显示问题：转义区间里的 `~`（否则显示为删除线）、合并「题型与作答说明」、`<u>` 改为 GitHub 支持的 `<ins>`、「画横线」题的空白显示为横线；写入前逐字校验，文字不变 |
 | [`verify_polish.py`](verify_polish.py) | 与 Git 旧版逐项比对，证明排版只搬位置、没改文字 |
 | [`relayout_papers.py`](relayout_papers.py) | 把堆在卷首的材料移到对应题组前；`--check` 只报告 |
 

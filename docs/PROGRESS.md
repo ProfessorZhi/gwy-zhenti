@@ -14,7 +14,7 @@
 | 图片引用次数 | 19,368 |
 | 材料尾部截断（现存） | 0 份 / 0 题 |
 
-机器清单指纹：`d175d68715b60bafa2adf6cd99881b3f74d903582ee3e00837b3b607700e8163`（`reports/QUALITY-SUMMARY.json` 的 `inventory_sha256`，清单或试卷有改动即变化）。
+机器清单指纹：`59085b2a979fda08ffed251444f1039fff948e537f879d9cdfe5d4107a563975`（`reports/QUALITY-SUMMARY.json` 的 `inventory_sha256`，清单或试卷有改动即变化）。
 
 ## 现行入口
 
