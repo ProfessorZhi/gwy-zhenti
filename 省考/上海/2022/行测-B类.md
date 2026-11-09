@@ -43,7 +43,7 @@
 
 ### 第 1 题
 
-科技一直在改变社会：通讯技术        了时空的距离，互联网等新科技        了学习知识的成本，人工智能        了越来越多的工作岗位，基因技术        了人类的价值观······这些改变有的已经发生，有的愈演愈烈。
+科技一直在改变社会：通讯技术<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>了时空的距离，互联网等新科技<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>了学习知识的成本，人工智能<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>了越来越多的工作岗位，基因技术<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>了人类的价值观······这些改变有的已经发生，有的愈演愈烈。
 
 填入画横线处的词语最恰当的一项是：
 
@@ -83,7 +83,7 @@ B
 
 ### 第 2 题
 
-真正的精英，有一种夯实金字塔基础的抱负，有一种纠正时代错误的使命感。他们离成功的标尺越远，就越能心无旁骛地实现宏图大志。        ，        精英与世俗意义上的成功无缘，        成功实在        精英坚守自身信念的副产品而已。
+真正的精英，有一种夯实金字塔基础的抱负，有一种纠正时代错误的使命感。他们离成功的标尺越远，就越能心无旁骛地实现宏图大志。<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>，<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>精英与世俗意义上的成功无缘，<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>成功实在<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>精英坚守自身信念的副产品而已。
 
 填入画横线处的词语最恰当的一项是：
 
@@ -121,7 +121,7 @@ B
 
 ### 第 3 题
 
-在5000多年文明发展中        的中华优秀传统文化，        着中华民族最深层的精神追求，代表着中华民族        的精神标识。
+在5000多年文明发展中<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>的中华优秀传统文化，<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>着中华民族最深层的精神追求，代表着中华民族<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>的精神标识。
 
 填入画横线处的词语最恰当的一项是：
 
@@ -159,7 +159,7 @@ D
 
 ### 第 4 题
 
-一部真正意义上的通史，决非只是对史事的            ，而是要努力探求历史变迁的内在联系。所以通史不仅指史事在时序上的先后承继、转合        ，而且还包括历史文化中各重要问题的        与变迁的            ，即所谓“通古今之变，成一家之言”。
+一部真正意义上的通史，决非只是对史事的<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>，而是要努力探求历史变迁的内在联系。所以通史不仅指史事在时序上的先后承继、转合<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>，而且还包括历史文化中各重要问题的<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>与变迁的<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>，即所谓“通古今之变，成一家之言”。
 
 填入画横线处的词语最恰当的一项是：
 
@@ -199,7 +199,7 @@ A
 
 ### 第 5 题
 
-“两弹一星”功勋奖章获得者于敏院士回忆起研发的往事时说：“一个人的名字，早晚是要没有的，能把        的力量融进祖国的强盛之中，便足以自慰了。”这样的            至今仍            。
+“两弹一星”功勋奖章获得者于敏院士回忆起研发的往事时说：“一个人的名字，早晚是要没有的，能把<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>的力量融进祖国的强盛之中，便足以自慰了。”这样的<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>至今仍<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>。
 
 依次填入画横线处的词语最恰当的一项是：
 
